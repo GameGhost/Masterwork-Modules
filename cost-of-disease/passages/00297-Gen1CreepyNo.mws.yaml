@@ -1,0 +1,117 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30596
+---
+format: 'mws/0.4'
+passage_id: 'Gen1CreepyNo'
+# ../en-US.restext:2457 | "Ridiculous!"
+title: 'restext://Gen1CreepyNo_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30603
+- type: 'assign'
+  var: 'seedy'
+  # ../en-US.restext:27 | "no"
+  expr: '"restext://Choice_No_Lower"'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30605
+- type: 'text'
+  # ../en-US.restext:2458 | "As one might expect, the ..."
+  value: 'restext://Gen1CreepyNo_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30611
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30613
+- type: 'text'
+  # ../en-US.restext:2459 | "An individual has no alle..."
+  value: 'restext://Gen1CreepyNo_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30615
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30617
+- type: 'text'
+  # ../en-US.restext:2460 | "However, unbeknownst to t..."
+  value: 'restext://Gen1CreepyNo_004'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30620
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30622
+- type: 'conditional'
+  if: 'Gen1CreepyNonextPsg == "" || Gen1CreepyNonextPsg == 0'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30622
+  - type: 'assign'
+    var: 'Gen1CreepyNonextPsg'
+    expr: 'rand_between(1, 2, "Gen1CreepyNo_0")'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30623
+- type: 'assign'
+  var: 'randrew'
+  expr: 'Gen1CreepyNonextPsg'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30624
+- type: 'conditional'
+  conditions:
+  - if: 'randrew == 1'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30628
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:36 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
+      target: '${round == 1 ? "Fever1" : round == 2 ? "Fever2" : "Fever3"}'
+      # ../en-US.restext:344 | "Close"
+      okay: 'restext://UIButton_Close'
+      snapshot: true
+      header:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30662
+      - type: 'image'
+        asset: 'image://setup/Creepy_Icon'
+        style: 'setup-image'
+      content:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30654
+      - type: 'assign'
+        var: 'creepy4'
+        expr: '1'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30663
+      - type: 'break'
+        style: 'paragraph'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30665
+      - type: 'text'
+        # ../en-US.restext:2461 | "Lose **1** {icon:creepy_i..."
+        value: 'restext://Gen1CreepyNo_005'
+  else:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30632
+  - type: 'switch'
+    on: 'round'
+    cases:
+    - match: 1
+      nodes:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30634
+      - type: 'assign'
+        var: 'creepy4'
+        expr: '1'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30635
+      - type: 'link'
+        # ../en-US.restext:52 | "Click to return..."
+        label: 'restext://Click_Return'
+        target: 'Fever1' # ./00002-Fever1.mws.yaml
+        snapshot: true
+    - match: 2
+      nodes:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30639
+      - type: 'assign'
+        var: 'creepy4'
+        expr: '1'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30640
+      - type: 'link'
+        # ../en-US.restext:52 | "Click to return..."
+        label: 'restext://Click_Return'
+        target: 'Fever2' # ./00029-Fever2.mws.yaml
+        snapshot: true
+    default:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30645
+    - type: 'assign'
+      var: 'creepy4'
+      expr: '1'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30646
+    - type: 'link'
+      # ../en-US.restext:52 | "Click to return..."
+      label: 'restext://Click_Return'
+      target: 'Fever3' # ./00030-Fever3.mws.yaml
+      snapshot: true

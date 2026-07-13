@@ -1,0 +1,44 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22993
+---
+format: 'mws/0.4'
+passage_id: 'UniEquity'
+# ../en-US.restext:1812 | "The Guiding Hand of Science"
+title: 'restext://UniEquity_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23000
+- type: 'text'
+  # ../en-US.restext:1813 | "At the behest of the univ..."
+  value: 'restext://UniEquity_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23003
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23005
+- type: 'text'
+  # ../en-US.restext:1814 | "The family was disgusted ..."
+  value: 'restext://UniEquity_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23008
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23012
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: 'InsanitySign'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close' # ./00315-InsanitySign.mws.yaml
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23026
+  - type: 'image'
+    asset: 'image://setup/ScoreTrackMarker'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23027
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23029
+  - type: 'text'
+    # ../en-US.restext:353 | "Starting with the player(..."
+    value: 'restext://VP_LastPlaceCatchUp_Rule'

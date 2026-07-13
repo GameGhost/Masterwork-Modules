@@ -1,0 +1,131 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23176
+---
+format: 'mws/0.4'
+passage_id: 'UniEvent2-UltimateDisease'
+# ../en-US.restext:1829 | "The Ultimate Disease"
+title: 'restext://UniEvent2_UltimateDisease_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23184
+- type: 'text'
+  # ../en-US.restext:1830 | "As the oppressive sunshin..."
+  value: 'restext://UniEvent2_UltimateDisease_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23185
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23187
+    - type: 'let'
+      var: '_rnd_UniEvent2_UltimateDisease_0'
+      expr: '[nameA, nameB].shuffled("UniEvent2-UltimateDisease_0")[0]'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23187
+    - type: 'text'
+      # ../en-US.restext:1832 | "{_rnd_UniEvent2_UltimateD..."
+      value: 'restext://UniEvent2_UltimateDisease_004'
+      lets:
+      - '_rnd_UniEvent2_UltimateDisease_0'
+  - match: 3
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23192
+    - type: 'let'
+      var: '_rnd_UniEvent2_UltimateDisease_1'
+      expr: '[nameA, nameB, nameC].shuffled("UniEvent2-UltimateDisease_1")[0]'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23192
+    - type: 'text'
+      # ../en-US.restext:1833 | "{_rnd_UniEvent2_UltimateD..."
+      value: 'restext://UniEvent2_UltimateDisease_005'
+      lets:
+      - '_rnd_UniEvent2_UltimateDisease_1'
+  - match: 4
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23197
+    - type: 'let'
+      var: '_rnd_UniEvent2_UltimateDisease_2'
+      expr: '[nameA, nameB, nameC, nameD].shuffled("UniEvent2-UltimateDisease_2")[0]'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23197
+    - type: 'text'
+      # ../en-US.restext:1834 | "{_rnd_UniEvent2_UltimateD..."
+      value: 'restext://UniEvent2_UltimateDisease_006'
+      lets:
+      - '_rnd_UniEvent2_UltimateDisease_2'
+  - match: 5
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23202
+    - type: 'let'
+      var: '_rnd_UniEvent2_UltimateDisease_3'
+      expr: '[nameA, nameB, nameC, nameD, nameE].shuffled("UniEvent2-UltimateDisease_3")[0]'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23202
+    - type: 'text'
+      # ../en-US.restext:1835 | "{_rnd_UniEvent2_UltimateD..."
+      value: 'restext://UniEvent2_UltimateDisease_007'
+      lets:
+      - '_rnd_UniEvent2_UltimateDisease_3'
+  default:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23207
+  - type: 'let'
+    var: '_rnd_UniEvent2_UltimateDisease_4'
+    expr: '[nameA, nameB].shuffled("UniEvent2-UltimateDisease_4")[0]'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23207
+  - type: 'text'
+    # ../en-US.restext:1831 | "{_rnd_UniEvent2_UltimateD..."
+    value: 'restext://UniEvent2_UltimateDisease_003'
+    lets:
+    - '_rnd_UniEvent2_UltimateDisease_4'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23210
+- type: 'text'
+  # ../en-US.restext:1836 | "III, the cousins assemble..."
+  value: 'restext://UniEvent2_UltimateDisease_008'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23211
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23213
+- type: 'text'
+  # ../en-US.restext:1837 | "Some, however, were more ..."
+  value: 'restext://UniEvent2_UltimateDisease_009'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23214
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23218
+- type: 'text'
+  # ../en-US.restext:179 | "**VOTE**"
+  value: 'restext://Heading_Vote'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23220
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23221
+- type: 'text'
+  # ../en-US.restext:1838 | "Players will now vote to ..."
+  value: 'restext://UniEvent2_UltimateDisease_010'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23222
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23224
+- type: 'text'
+  # ../en-US.restext:1839 | "A **Yay** vote is a vote ..."
+  value: 'restext://UniEvent2_UltimateDisease_011'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23236
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23237
+- type: 'text'
+  # ../en-US.restext:1840 | "A **Nay** vote is a vote ..."
+  value: 'restext://UniEvent2_UltimateDisease_012'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23244
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23246
+- type: 'text'
+  # ../en-US.restext:1841 | "When all players have cho..."
+  value: 'restext://UniEvent2_UltimateDisease_013'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23255
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23259
+- type: 'popup'
+  layout: 'voting'
+  # ../en-US.restext:60 | "Click here to start the v..."
+  label: 'restext://Click_StartVote'
+  target: 'UniEvent2-UltimateDisease2'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close' # ./00348-UniEvent2-UltimateDisease2.mws.yaml
+  snapshot: false

@@ -1,0 +1,88 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8036
+---
+format: 'mws/0.4'
+passage_id: 'Dubious'
+# ../en-US.restext:856 | "Dubious Bartering"
+title: 'restext://Dubious_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8043
+- type: 'text'
+  # ../en-US.restext:857 | "Within days of their sett..."
+  value: 'restext://Dubious_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8044
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8046
+- type: 'text'
+  # ../en-US.restext:858 | "Having an extensive backg..."
+  value: 'restext://Dubious_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8050
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8054
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: 'SpecialGen1'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close' # ./00254-SpecialGen1.mws.yaml
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8089
+  - type: 'image'
+    asset: 'image://setup/S1_DubiousBartering'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8062
+  - type: 'switch'
+    on: 'townname'
+    cases:
+    - match: 'Rage'
+      nodes:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8064
+      - type: 'assign'
+        var: 'wolves'
+        # ../en-US.restext:25 | "evil"
+        expr: '"restext://Choice_Evil_Lower"'
+    - match: 'Kraven'
+      nodes:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8068
+      - type: 'assign'
+        var: 'wolves'
+        # ../en-US.restext:26 | "good"
+        expr: '"restext://Choice_Good_Lower"'
+    default:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8072
+    - type: 'assign'
+      var: 'wolves'
+      # ../en-US.restext:25 | Choice_Evil_Lower | "evil"
+      # ../en-US.restext:26 | Choice_Good_Lower | "good"
+      expr: '["restext://Choice_Evil_Lower", "restext://Choice_Good_Lower"].shuffled("Dubious_0")[0]'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8075
+  - type: 'conditional'
+    conditions:
+    # ../en-US.restext:26 | "good"
+    - if: 'wolves == "restext://Choice_Good_Lower"'
+      then:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8077
+      - type: 'assign'
+        var: 'hunters'
+        # ../en-US.restext:25 | "evil"
+        expr: '"restext://Choice_Evil_Lower"'
+    # ../en-US.restext:25 | "evil"
+    - if: 'wolves == "restext://Choice_Evil_Lower"'
+      then:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8081
+      - type: 'assign'
+        var: 'hunters'
+        # ../en-US.restext:26 | "good"
+        expr: '"restext://Choice_Good_Lower"'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8090
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8092
+  - type: 'text'
+    # ../en-US.restext:859 | "Retrieve the Dubious Bart..."
+    value: 'restext://Dubious_004'

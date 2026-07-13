@@ -1,0 +1,161 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18143
+---
+format: 'mws/0.4'
+passage_id: 'NewMaster2D'
+# ../en-US.restext:341 | "What Type of Glorious Creation"
+title: 'restext://Title_WhatTypeOfGloriousCreation'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18151
+- type: 'text'
+  # ../en-US.restext:1403 | "With my unique {disD} ski..."
+  value: 'restext://NewMaster2D_001'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18156
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18158
+- type: 'text'
+  # ../en-US.restext:210 | "My creation could be desc..."
+  value: 'restext://Masterwork_ChooseType_Prompt'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18159
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18161
+- type: 'switch'
+  on: 'disD'
+  cases:
+  # ../en-US.restext:119 | "biology"
+  - match: 'restext://Focus_Biology_Lower'
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18163
+    - type: 'assign'
+      var: 'costD'
+      # ../en-US.restext:124 | Focus_Engineering | "Engineering"
+      # ../en-US.restext:121 | Focus_Chemistry | "Chemistry"
+      expr: '["restext://Focus_Engineering", "restext://Focus_Chemistry"].shuffled("NewMaster2D_0")[0]'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18165
+    - type: 'link'
+      # ../en-US.restext:218 | "Creature."
+      label: 'restext://Masterwork_Type_Creature'
+      target: 'NewMaster3D' # ./00157-NewMaster3D.mws.yaml
+      snapshot: true
+      onclick:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18211
+      - type: 'assign'
+        var: 'typeD'
+        expr: '"creature"'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18166
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18169
+    - type: 'link'
+      # ../en-US.restext:225 | "Superpower."
+      label: 'restext://Masterwork_Type_Superpower'
+      target: 'NewMaster3D' # ./00157-NewMaster3D.mws.yaml
+      snapshot: true
+      onclick:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18218
+      - type: 'assign'
+        var: 'typeD'
+        expr: '"power"'
+  # ../en-US.restext:125 | "engineering"
+  - match: 'restext://Focus_Engineering_Lower'
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18174
+    - type: 'assign'
+      var: 'costD'
+      # ../en-US.restext:118 | Focus_Biology | "Biology"
+      # ../en-US.restext:121 | Focus_Chemistry | "Chemistry"
+      expr: '["restext://Focus_Biology", "restext://Focus_Chemistry"].shuffled("NewMaster2D_1")[0]'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18176
+    - type: 'link'
+      # ../en-US.restext:224 | "Robot."
+      label: 'restext://Masterwork_Type_Robot'
+      target: 'NewMaster3D' # ./00157-NewMaster3D.mws.yaml
+      snapshot: true
+      onclick:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18225
+      - type: 'assign'
+        var: 'typeD'
+        expr: '"robot"'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18177
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18180
+    - type: 'link'
+      # ../en-US.restext:226 | "Weapon."
+      label: 'restext://Masterwork_Type_Weapon'
+      target: 'NewMaster3D' # ./00157-NewMaster3D.mws.yaml
+      snapshot: true
+      onclick:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18232
+      - type: 'assign'
+        var: 'typeD'
+        expr: '"weapon"'
+  # ../en-US.restext:122 | "chemistry"
+  - match: 'restext://Focus_Chemistry_Lower'
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18185
+    - type: 'assign'
+      var: 'costD'
+      # ../en-US.restext:124 | Focus_Engineering | "Engineering"
+      # ../en-US.restext:118 | Focus_Biology | "Biology"
+      expr: '["restext://Focus_Engineering", "restext://Focus_Biology"].shuffled("NewMaster2D_2")[0]'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18187
+    - type: 'link'
+      # ../en-US.restext:222 | "Medicine."
+      label: 'restext://Masterwork_Type_Medicine'
+      target: 'NewMaster3D' # ./00157-NewMaster3D.mws.yaml
+      snapshot: true
+      onclick:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18239
+      - type: 'assign'
+        var: 'typeD'
+        expr: '"medicine"'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18188
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18191
+    - type: 'link'
+      # ../en-US.restext:220 | "Drug."
+      label: 'restext://Masterwork_Type_Drug'
+      target: 'NewMaster3D' # ./00157-NewMaster3D.mws.yaml
+      snapshot: true
+      onclick:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18246
+      - type: 'assign'
+        var: 'typeD'
+        expr: '"drug"'
+  default:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18196
+  - type: 'assign'
+    var: 'costD'
+    # ../en-US.restext:124 | Focus_Engineering | "Engineering"
+    # ../en-US.restext:121 | Focus_Chemistry | "Chemistry"
+    # ../en-US.restext:118 | Focus_Biology | "Biology"
+    expr: '["restext://Focus_Engineering", "restext://Focus_Chemistry", "restext://Focus_Biology"].shuffled("NewMaster2D_3")[0]'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18198
+  - type: 'link'
+    # ../en-US.restext:219 | "Demonic Creature."
+    label: 'restext://Masterwork_Type_DemonicCreature'
+    target: 'NewMaster3D' # ./00157-NewMaster3D.mws.yaml
+    snapshot: true
+    onclick:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18253
+    - type: 'assign'
+      var: 'typeD'
+      expr: '"demon"'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18199
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18202
+  - type: 'link'
+    # ../en-US.restext:223 | "Ritual."
+    label: 'restext://Masterwork_Type_Ritual'
+    target: 'NewMaster3D' # ./00157-NewMaster3D.mws.yaml
+    snapshot: true
+    onclick:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18260
+    - type: 'assign'
+      var: 'typeD'
+      expr: '"ritual"'

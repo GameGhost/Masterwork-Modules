@@ -1,0 +1,302 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20711
+---
+format: 'mws/0.4'
+passage_id: 'Variable List CoD'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20713
+- type: 'text'
+  # ../en-US.restext:1554 | "{nameA}/B/C/D/E = chosen ..."
+  value: 'restext://Variable_List_CoD_001'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20715
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20716
+- type: 'text'
+  # ../en-US.restext:1555 | "{players} = number of players"
+  value: 'restext://Variable_List_CoD_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20719
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20720
+- type: 'text'
+  # ../en-US.restext:1556 | "{playtxt} = text version ..."
+  value: 'restext://Variable_List_CoD_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20723
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20724
+- type: 'text'
+  # ../en-US.restext:1557 | "{randomplayer} = array of..."
+  value: 'restext://Variable_List_CoD_004'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20727
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20728
+- type: 'text'
+  # ../en-US.restext:1558 | "{randomname} = used with ..."
+  value: 'restext://Variable_List_CoD_005'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20731
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20733
+- type: 'text'
+  # ../en-US.restext:1559 | "{townname} = name of the ..."
+  value: 'restext://Variable_List_CoD_006'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20736
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20739
+- type: 'text'
+  # ../en-US.restext:1560 | "{nameA} II (remember to m..."
+  value: 'restext://Variable_List_CoD_007'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20742
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20743
+- type: 'text'
+  # ../en-US.restext:1561 | "{nameA} III (remember to ..."
+  value: 'restext://Variable_List_CoD_008'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20746
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20750
+- type: 'text'
+  # ../en-US.restext:1562 | "**GEN I**"
+  value: 'restext://Variable_List_CoD_009'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20752
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20753
+- type: 'text'
+  # ../en-US.restext:1563 | "{mayor} = player elected mayor"
+  value: 'restext://Variable_List_CoD_010'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20756
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20757
+- type: 'text'
+  # ../en-US.restext:1564 | "{charity} = player most c..."
+  value: 'restext://Variable_List_CoD_011'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20760
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20761
+- type: 'text'
+  # ../en-US.restext:1565 | "{building} = \"bank\" or ..."
+  value: 'restext://Variable_List_CoD_012'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20764
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20765
+- type: 'text'
+  # ../en-US.restext:1566 | "{gen1creep} = tracks play..."
+  value: 'restext://Variable_List_CoD_013'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20768
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20769
+- type: 'text'
+  # ../en-US.restext:1567 | "{creepy4} = on/off switch..."
+  value: 'restext://Variable_List_CoD_014'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20772
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20773
+- type: 'text'
+  # ../en-US.restext:1568 | "{seedy} = confirmation of..."
+  value: 'restext://Variable_List_CoD_015'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20776
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20777
+- type: 'text'
+  # ../en-US.restext:1569 | "{gen1sane} = tracks playe..."
+  value: 'restext://Variable_List_CoD_016'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20780
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20781
+- type: 'text'
+  # ../en-US.restext:1570 | "{sane3} = on/off switch f..."
+  value: 'restext://Variable_List_CoD_017'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20784
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20785
+- type: 'text'
+  # ../en-US.restext:1571 | "{vacation} = confirmation..."
+  value: 'restext://Variable_List_CoD_018'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20788
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20792
+- type: 'text'
+  # ../en-US.restext:1572 | "**Devastation GEN II**"
+  value: 'restext://Variable_List_CoD_019'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20794
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20795
+- type: 'text'
+  # ../en-US.restext:1573 | "{wolves} = good or evil"
+  value: 'restext://Variable_List_CoD_020'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20798
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20799
+- type: 'text'
+  # ../en-US.restext:1574 | "{hunters} = good or evil"
+  value: 'restext://Variable_List_CoD_021'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20802
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20803
+- type: 'text'
+  # ../en-US.restext:1575 | "{allyA}/B/C/D/E = player ..."
+  value: 'restext://Variable_List_CoD_022'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20805
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20806
+- type: 'text'
+  # ../en-US.restext:1576 | "{refusaltoken} = whether ..."
+  value: 'restext://Variable_List_CoD_023'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20809
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20810
+- type: 'text'
+  # ../en-US.restext:1577 | "{devpage} = turns off SET..."
+  value: 'restext://Variable_List_CoD_024'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20813
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20815
+- type: 'text'
+  # ../en-US.restext:1578 | "{pa}/b/c/d/e = Letter car..."
+  value: 'restext://Variable_List_CoD_025'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20817
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20818
+- type: 'text'
+  # ../en-US.restext:1579 | "{password} = card passwor..."
+  value: 'restext://Variable_List_CoD_026'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20821
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20822
+- type: 'text'
+  # ../en-US.restext:1580 | "{ba}/b/c ="
+  value: 'restext://Variable_List_CoD_027'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20824
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20825
+- type: 'text'
+  # ../en-US.restext:1581 | "{letA}/B/C = Building A, ..."
+  value: 'restext://Variable_List_CoD_028'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20827
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20828
+- type: 'text'
+  # ../en-US.restext:1582 | "{inv} = Building to be in..."
+  value: 'restext://Variable_List_CoD_029'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20831
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20833
+- type: 'text'
+  # ../en-US.restext:1583 | "{exposeA}/B/C = count for..."
+  value: 'restext://Variable_List_CoD_030'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20835
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20836
+- type: 'text'
+  # ../en-US.restext:1584 | "{playA}/B/C/D/E = count f..."
+  value: 'restext://Variable_List_CoD_031'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20838
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20839
+- type: 'text'
+  # ../en-US.restext:1585 | "{pAA}/B/C = Player A \"ye..."
+  value: 'restext://Variable_List_CoD_032'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20841
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20842
+- type: 'text'
+  # ../en-US.restext:1586 | "{goodcount} = how many ti..."
+  value: 'restext://Variable_List_CoD_033'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20845
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20849
+- type: 'text'
+  # ../en-US.restext:1587 | "**Thriving GEN II**"
+  value: 'restext://Variable_List_CoD_034'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20851
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20852
+- type: 'text'
+  # ../en-US.restext:1588 | "{sym} = 1 Success or 2 Fa..."
+  value: 'restext://Variable_List_CoD_035'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20855
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20856
+- type: 'text'
+  # ../en-US.restext:1589 | "{fevervp} = Yellow Fever ..."
+  value: 'restext://Variable_List_CoD_036'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20859
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20860
+- type: 'text'
+  # ../en-US.restext:1590 | "{fevermoney} = Yellow Fev..."
+  value: 'restext://Variable_List_CoD_037'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20863
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20864
+- type: 'text'
+  # ../en-US.restext:1591 | "{fevercure} = the player ..."
+  value: 'restext://Variable_List_CoD_038'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20867
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20868
+- type: 'text'
+  # ../en-US.restext:1592 | "{panacure} = the player t..."
+  value: 'restext://Variable_List_CoD_039'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20871
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20875
+- type: 'text'
+  # ../en-US.restext:1593 | "**Gen III - Hunters & Wolves**"
+  value: 'restext://Variable_List_CoD_040'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20877
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20878
+- type: 'text'
+  # ../en-US.restext:1594 | "{eviltax} = Evil Hunters ..."
+  value: 'restext://Variable_List_CoD_041'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20881
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20882
+- type: 'text'
+  # ../en-US.restext:1595 | "{society} = which faction..."
+  value: 'restext://Variable_List_CoD_042'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20885
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20887
+- type: 'text'
+  # ../en-US.restext:1596 | "Hunting code"
+  value: 'restext://Variable_List_CoD_043'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20888
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20889
+- type: 'text'
+  # ../en-US.restext:1597 | "{h1a} & {h1b} = 1st hunt names"
+  value: 'restext://Variable_List_CoD_044'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20895
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20896
+- type: 'text'
+  # ../en-US.restext:1598 | "{h2a} & {h2b} = 2nd hunt names"
+  value: 'restext://Variable_List_CoD_045'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20902
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20903
+- type: 'text'
+  # ../en-US.restext:1599 | "{huntname} = randomly cho..."
+  value: 'restext://Variable_List_CoD_046'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20906
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20910
+- type: 'text'
+  # ../en-US.restext:1600 | "**ENDINGS**"
+  value: 'restext://Variable_List_CoD_047'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20912
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20913
+- type: 'text'
+  # ../en-US.restext:1601 | "{winner} = Winner of the ..."
+  value: 'restext://Variable_List_CoD_048'

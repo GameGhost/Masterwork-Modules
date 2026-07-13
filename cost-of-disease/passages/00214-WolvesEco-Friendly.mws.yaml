@@ -1,0 +1,64 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24068
+---
+format: 'mws/0.4'
+passage_id: 'WolvesEco-Friendly'
+# ../en-US.restext:1903 | "A Message"
+title: 'restext://WolvesEco_Friendly_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24075
+- type: 'text'
+  # ../en-US.restext:1904 | "As the new decade began, ..."
+  value: 'restext://WolvesEco_Friendly_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24076
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24078
+- type: 'text'
+  # ../en-US.restext:1905 | "For most, however, this n..."
+  value: 'restext://WolvesEco_Friendly_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24081
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24083
+- type: 'text'
+  # ../en-US.restext:1906 | "\"Our brethren; abused, s..."
+  value: 'restext://WolvesEco_Friendly_004'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24085
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24087
+- type: 'text'
+  # ../en-US.restext:1907 | "Most had adopted a Pythag..."
+  value: 'restext://WolvesEco_Friendly_005'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24088
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24090
+- type: 'text'
+  # ../en-US.restext:1908 | "Yet still roiling beneath..."
+  value: 'restext://WolvesEco_Friendly_006'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24092
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24096
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: '${building == "library" ? "MayoralAward" : "WolvesBankMayorGood"}'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close'
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24111
+  - type: 'image'
+    asset: 'image://setup/Creepy_Icon'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24112
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24113
+  - type: 'text'
+    # ../en-US.restext:1909 | "Put a {icon:creepy_icon} ..."
+    value: 'restext://WolvesEco_Friendly_007'

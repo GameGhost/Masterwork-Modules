@@ -1,0 +1,52 @@
+# Masterwork-authored onboarding passage (not extractor output) — see Modules/cost-of-disease/README.md.
+# Entry point for the module (tagged Begins-Here) since Masterwork moves player/town setup into the
+# module itself, inverting the original app's app-shell-level setup flow (masterwork-plan Q19/Q24).
+---
+format: 'mws/0.4'
+passage_id: 'Setup_01_PlayerCountSelect'
+title: 'Setup - Players'
+tags:
+- 'Begins-Here'
+layout: 'setup_player_count'
+nodes:
+- type: 'text'
+  value: '**Players**'
+- type: 'break'
+  style: 'paragraph'
+- type: 'text'
+  value: 'How many individuals will be sharing this experience today?'
+- type: 'break'
+  style: 'paragraph'
+# TODO(chrome): style as a large image button using assets/images/2Players.png, centered with the
+# other two — no engine support yet for image-backed navigation buttons (masterwork-plan-rev20.md).
+- type: 'link'
+  label: '2 Players'
+  style: 'button'
+  target: 'Setup_02_PlayerNameIntro'
+  snapshot: false
+  onclick:
+  - type: 'assign'
+    var: 'players'
+    expr: '2'
+- type: 'break'
+# TODO(chrome): assets/images/3Players.png — see TODO above.
+- type: 'link'
+  label: '3 Players'
+  style: 'button'
+  target: 'Setup_02_PlayerNameIntro'
+  snapshot: false
+  onclick:
+  - type: 'assign'
+    var: 'players'
+    expr: '3'
+- type: 'break'
+# TODO(chrome): assets/images/4Players.png — see TODO above.
+- type: 'link'
+  label: '4 Players'
+  style: 'button'
+  target: 'Setup_02_PlayerNameIntro'
+  snapshot: false
+  onclick:
+  - type: 'assign'
+    var: 'players'
+    expr: '4'

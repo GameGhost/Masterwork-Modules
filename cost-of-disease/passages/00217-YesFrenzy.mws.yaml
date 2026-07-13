@@ -1,0 +1,41 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24330
+---
+format: 'mws/0.4'
+passage_id: 'YesFrenzy'
+# ../en-US.restext:1932 | "The FRENZY"
+title: 'restext://YesFrenzy_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24337
+- type: 'text'
+  # ../en-US.restext:1933 | "The townsfolk who chose n..."
+  value: 'restext://YesFrenzy_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24343
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24345
+- type: 'text'
+  # ../en-US.restext:1934 | "Indulging in latent urges..."
+  value: 'restext://YesFrenzy_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24346
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24348
+- type: 'text'
+  # ../en-US.restext:1935 | "The thin line between civ..."
+  value: 'restext://YesFrenzy_004'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24351
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24354
+- type: 'link'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: 'Prosperity3b' # ./00316-Prosperity3b.mws.yaml
+  snapshot: true
+  onclick:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24361
+  - type: 'assign'
+    var: 'frenzy'
+    # ../en-US.restext:31 | "yes"
+    expr: '"restext://Choice_Yes_Lower"'

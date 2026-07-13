@@ -1,0 +1,53 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28939
+---
+format: 'mws/0.4'
+passage_id: 'EffectRandomizer'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28941
+- type: 'assign'
+  var: 'effect'
+  expr: '["DetEffect1", "DetEffect2", "DetEffect3", "DetEffect4"]'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28943
+- type: 'conditional'
+  if: 'det1 == "visited"'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28945
+  - type: 'assign'
+    var: 'effect'
+    expr: 'effect.except("DetEffect1")'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28948
+- type: 'conditional'
+  if: 'det2 == "visited"'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28950
+  - type: 'assign'
+    var: 'effect'
+    expr: 'effect.except("DetEffect2")'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28953
+- type: 'conditional'
+  if: 'det3 == "visited"'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28955
+  - type: 'assign'
+    var: 'effect'
+    expr: 'effect.except("DetEffect3")'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28958
+- type: 'conditional'
+  if: 'det4 == "visited"'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28960
+  - type: 'assign'
+    var: 'effect'
+    expr: 'effect.except("DetEffect4")'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28964
+- type: 'assign'
+  var: 'effect'
+  expr: 'effect.shuffled("EffectRandomizer_0")'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28966
+- type: 'assign'
+  var: 'tempeffect'
+  expr: 'effect[0]'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28969
+- type: 'goto'
+  target: '${tempeffect}'

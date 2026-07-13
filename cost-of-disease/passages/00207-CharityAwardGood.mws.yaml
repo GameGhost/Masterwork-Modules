@@ -1,0 +1,54 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23468
+---
+format: 'mws/0.4'
+passage_id: 'CharityAwardGood'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23473
+- type: 'text'
+  # ../en-US.restext:306 | "**Carefully hand the Stor..."
+  value: 'restext://Storybook_HandToCharity_ReadAloud'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23477
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23481
+- type: 'text'
+  # ../en-US.restext:1862 | "**Consideration of Righte..."
+  value: 'restext://CharityAwardGood_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23483
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23484
+- type: 'text'
+  # ../en-US.restext:1863 | "The Fraternity was correc..."
+  value: 'restext://CharityAwardGood_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23488
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23490
+- type: 'text'
+  # ../en-US.restext:1864 | "{charity} III's familial ..."
+  value: 'restext://CharityAwardGood_004'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23499
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23503
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: 'CureMoonSick1'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close' # ./00047-CureMoonSick1.mws.yaml
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23517
+  - type: 'image'
+    asset: 'image://setup/S1_EstateUpgradeBACK'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23518
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23519
+  - type: 'text'
+    # ../en-US.restext:1865 | "Retrieve the **Personal L..."
+    value: 'restext://CharityAwardGood_005'

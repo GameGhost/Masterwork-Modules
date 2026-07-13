@@ -1,0 +1,299 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19491
+---
+format: 'mws/0.4'
+passage_id: 'EvilConsequences'
+# ../en-US.restext:1504 | "The Consequences of Disob..."
+title: 'restext://EvilConsequences_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19499
+- type: 'conditional'
+  conditions:
+  # ../en-US.restext:110 | "Fraternity of Hunters"
+  - if: 'society == "restext://Faction_FraternityOfHunters_Plain"'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19501
+    - type: 'text'
+      # ../en-US.restext:243 | "In the evenings, the Frat..."
+      value: 'restext://Narrative_FraternityRevelry'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19502
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19504
+    - type: 'text'
+      # ../en-US.restext:1507 | "For the family members th..."
+      value: 'restext://EvilConsequences_005'
+  else:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19511
+  - type: 'text'
+    # ../en-US.restext:1505 | "In the center of town, in..."
+    value: 'restext://EvilConsequences_002'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19512
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19514
+  - type: 'text'
+    # ../en-US.restext:1506 | "The Order had revealed it..."
+    value: 'restext://EvilConsequences_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19516
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19521
+- type: 'conditional'
+  conditions:
+  # ../en-US.restext:110 | "Fraternity of Hunters"
+  - if: 'society == "restext://Faction_FraternityOfHunters_Plain"'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19524
+    - type: 'conditional'
+      conditions:
+      # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+      # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+      # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+      # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+      # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+      # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+      # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+      # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+      # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+      # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+      # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+      # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+      # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+      # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+      - if: "players > 4 ? allyA == \"restext://Faction_Hunters_Lower\" && allyB == \"restext://Faction_Hunters_Lower\" && allyC == \"restext://Faction_Hunters_Lower\" && allyD == \"restext://Faction_Hunters_Lower\" && allyE == \"restext://Faction_Hunters_Lower\" :\r\n                    players > 3 ? allyA == \"restext://Faction_Hunters_Lower\" && allyB == \"restext://Faction_Hunters_Lower\" && allyC == \"restext://Faction_Hunters_Lower\" && allyD == \"restext://Faction_Hunters_Lower\" :\r\n                    players > 2 ? allyA == \"restext://Faction_Hunters_Lower\" && allyB == \"restext://Faction_Hunters_Lower\" && allyC == \"restext://Faction_Hunters_Lower\" :\r\n                    allyA == \"restext://Faction_Hunters_Lower\" && allyB == \"restext://Faction_Hunters_Lower\""
+        then:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19529
+        - type: 'link'
+          # ../en-US.restext:37 | "click here to continue..."
+          label: 'restext://Click_ContinueEllipsis_Lower1'
+          target: 'EvilMayor' # ./00174-EvilMayor.mws.yaml
+          snapshot: true
+      else:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19534
+      - type: 'popup'
+        layout: 'setup'
+        # ../en-US.restext:36 | "Click to continue..."
+        label: 'restext://Click_ContinueEllipsis_C'
+        target: 'EvilMayor'
+        # ../en-US.restext:344 | "Close"
+        okay: 'restext://UIButton_Close' # ./00174-EvilMayor.mws.yaml
+        snapshot: true
+        header:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19567
+        - type: 'image'
+          asset: 'image://setup/Creepy_Icon'
+          style: 'setup-image'
+        content:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19568
+        - type: 'break'
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19569
+        - type: 'conditional'
+          # ../en-US.restext:111 | "hunters"
+          if: 'allyA != "restext://Faction_Hunters_Lower"'
+          then:
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19571
+          - type: 'text'
+            # ../en-US.restext:1508 | "{nameA} III gains 1 {icon..."
+            value: 'restext://EvilConsequences_006'
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19576
+        - type: 'break'
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19577
+        - type: 'conditional'
+          # ../en-US.restext:111 | "hunters"
+          if: 'allyB != "restext://Faction_Hunters_Lower"'
+          then:
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19579
+          - type: 'text'
+            # ../en-US.restext:1509 | "{nameB} III gains 1 {icon..."
+            value: 'restext://EvilConsequences_007'
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19584
+        - type: 'break'
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19585
+        - type: 'conditional'
+          if: 'players >= 3'
+          then:
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19587
+          - type: 'conditional'
+            # ../en-US.restext:111 | "hunters"
+            if: 'allyC != "restext://Faction_Hunters_Lower"'
+            then:
+            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19589
+            - type: 'text'
+              # ../en-US.restext:1510 | "{nameC} III gains 1 {icon..."
+              value: 'restext://EvilConsequences_008'
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19596
+        - type: 'conditional'
+          if: 'players >= 4'
+          then:
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19598
+          - type: 'conditional'
+            # ../en-US.restext:111 | "hunters"
+            if: 'allyD != "restext://Faction_Hunters_Lower"'
+            then:
+            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19600
+            - type: 'text'
+              # ../en-US.restext:1511 | "{nameD} III gains 1 {icon..."
+              value: 'restext://EvilConsequences_009'
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19607
+        - type: 'conditional'
+          if: 'players >= 5'
+          then:
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19609
+          - type: 'conditional'
+            # ../en-US.restext:111 | "hunters"
+            if: 'allyE != "restext://Faction_Hunters_Lower"'
+            then:
+            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19611
+            - type: 'text'
+              # ../en-US.restext:1512 | "{nameE} III gains 1 {icon..."
+              value: 'restext://EvilConsequences_010'
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19618
+        - type: 'conditional'
+          # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+          # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+          # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+          # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+          # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+          # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+          # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+          # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+          # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+          # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+          # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+          # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+          # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+          # ../en-US.restext:111 | Faction_Hunters_Lower | "hunters"
+          if: "players > 4 ? allyA == \"restext://Faction_Hunters_Lower\" && allyB == \"restext://Faction_Hunters_Lower\" && allyC == \"restext://Faction_Hunters_Lower\" && allyD == \"restext://Faction_Hunters_Lower\" && allyE == \"restext://Faction_Hunters_Lower\" :\r\n                    players > 3 ? allyA == \"restext://Faction_Hunters_Lower\" && allyB == \"restext://Faction_Hunters_Lower\" && allyC == \"restext://Faction_Hunters_Lower\" && allyD == \"restext://Faction_Hunters_Lower\" :\r\n                    players > 2 ? allyA == \"restext://Faction_Hunters_Lower\" && allyB == \"restext://Faction_Hunters_Lower\" && allyC == \"restext://Faction_Hunters_Lower\" :\r\n                    allyA == \"restext://Faction_Hunters_Lower\" && allyB == \"restext://Faction_Hunters_Lower\""
+          then:
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19623
+          - type: 'text'
+            # ../en-US.restext:1508 | "{nameA} III gains 1 {icon..."
+            value: 'restext://EvilConsequences_006'
+  else:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19541
+  - type: 'conditional'
+    conditions:
+    # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+    - if: "players > 4 ? allyA == \"restext://Faction_Wolves_Lower\" && allyB == \"restext://Faction_Wolves_Lower\" && allyC == \"restext://Faction_Wolves_Lower\" && allyD == \"restext://Faction_Wolves_Lower\" && allyE == \"restext://Faction_Wolves_Lower\" :\r\n                    players > 3 ? allyA == \"restext://Faction_Wolves_Lower\" && allyB == \"restext://Faction_Wolves_Lower\" && allyC == \"restext://Faction_Wolves_Lower\" && allyD == \"restext://Faction_Wolves_Lower\" :\r\n                    players > 2 ? allyA == \"restext://Faction_Wolves_Lower\" && allyB == \"restext://Faction_Wolves_Lower\" && allyC == \"restext://Faction_Wolves_Lower\" :\r\n                    allyA == \"restext://Faction_Wolves_Lower\" && allyB == \"restext://Faction_Wolves_Lower\""
+      then:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19546
+      - type: 'link'
+        # ../en-US.restext:37 | "click here to continue..."
+        label: 'restext://Click_ContinueEllipsis_Lower1'
+        target: 'EvilMayor' # ./00174-EvilMayor.mws.yaml
+        snapshot: true
+    else:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19551
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:36 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
+      target: 'EvilMayor'
+      # ../en-US.restext:344 | "Close"
+      okay: 'restext://UIButton_Close' # ./00174-EvilMayor.mws.yaml
+      snapshot: true
+      header:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19650
+      - type: 'image'
+        asset: 'image://setup/Creepy_Icon'
+        style: 'setup-image'
+      content:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19651
+      - type: 'break'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19652
+      - type: 'conditional'
+        # ../en-US.restext:116 | "wolves"
+        if: 'allyA != "restext://Faction_Wolves_Lower"'
+        then:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19654
+        - type: 'text'
+          # ../en-US.restext:1508 | "{nameA} III gains 1 {icon..."
+          value: 'restext://EvilConsequences_006'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19659
+      - type: 'break'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19660
+      - type: 'conditional'
+        # ../en-US.restext:116 | "wolves"
+        if: 'allyB != "restext://Faction_Wolves_Lower"'
+        then:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19662
+        - type: 'text'
+          # ../en-US.restext:1509 | "{nameB} III gains 1 {icon..."
+          value: 'restext://EvilConsequences_007'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19667
+      - type: 'break'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19668
+      - type: 'conditional'
+        if: 'players >= 3'
+        then:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19670
+        - type: 'conditional'
+          # ../en-US.restext:116 | "wolves"
+          if: 'allyC != "restext://Faction_Wolves_Lower"'
+          then:
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19672
+          - type: 'text'
+            # ../en-US.restext:1510 | "{nameC} III gains 1 {icon..."
+            value: 'restext://EvilConsequences_008'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19679
+      - type: 'conditional'
+        if: 'players >= 4'
+        then:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19681
+        - type: 'conditional'
+          # ../en-US.restext:116 | "wolves"
+          if: 'allyD != "restext://Faction_Wolves_Lower"'
+          then:
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19683
+          - type: 'text'
+            # ../en-US.restext:1511 | "{nameD} III gains 1 {icon..."
+            value: 'restext://EvilConsequences_009'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19690
+      - type: 'conditional'
+        if: 'players >= 5'
+        then:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19692
+        - type: 'conditional'
+          # ../en-US.restext:116 | "wolves"
+          if: 'allyE != "restext://Faction_Wolves_Lower"'
+          then:
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19694
+          - type: 'text'
+            # ../en-US.restext:1512 | "{nameE} III gains 1 {icon..."
+            value: 'restext://EvilConsequences_010'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19701
+      - type: 'conditional'
+        # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
+        if: "players > 4 ? allyA == \"restext://Faction_Wolves_Lower\" && allyB == \"restext://Faction_Wolves_Lower\" && allyC == \"restext://Faction_Wolves_Lower\" && allyD == \"restext://Faction_Wolves_Lower\" && allyE == \"restext://Faction_Wolves_Lower\" :\r\n                    players > 3 ? allyA == \"restext://Faction_Wolves_Lower\" && allyB == \"restext://Faction_Wolves_Lower\" && allyC == \"restext://Faction_Wolves_Lower\" && allyD == \"restext://Faction_Wolves_Lower\" :\r\n                    players > 2 ? allyA == \"restext://Faction_Wolves_Lower\" && allyB == \"restext://Faction_Wolves_Lower\" && allyC == \"restext://Faction_Wolves_Lower\" :\r\n                    allyA == \"restext://Faction_Wolves_Lower\" && allyB == \"restext://Faction_Wolves_Lower\""
+        then:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19706
+        - type: 'text'
+          # ../en-US.restext:1508 | "{nameA} III gains 1 {icon..."
+          value: 'restext://EvilConsequences_006'

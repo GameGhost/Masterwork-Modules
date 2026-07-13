@@ -1,0 +1,71 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8218
+---
+format: 'mws/0.4'
+passage_id: 'ElecN'
+# ../en-US.restext:870 | "Celebration and Anger"
+title: 'restext://ElecN_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8226
+- type: 'text'
+  # ../en-US.restext:871 | "The townspeople sifted th..."
+  value: 'restext://ElecN_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8235
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8237
+- type: 'text'
+  # ../en-US.restext:872 | "Fueled by alcohol and ins..."
+  value: 'restext://ElecN_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8241
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8243
+- type: 'text'
+  # ../en-US.restext:873 | "In the morning, as the mi..."
+  value: 'restext://ElecN_004'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8244
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8248
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: '${imm == "none" ? "NoUni3" : "DetEffectRandom"}'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close'
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8264
+  - type: 'image'
+    asset: 'image://setup/AngryMob_Icon'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8256
+  - type: 'assign'
+    var: 'peeps'
+    expr: '1'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8265
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8266
+  - type: 'text'
+    # ../en-US.restext:874 | "Return the {icon:angrymob..."
+    value: 'restext://ElecN_005'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8270
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8272
+  - type: 'conditional'
+    conditions:
+    - if: 'players == 2'
+      then:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8274
+      - type: 'text'
+        # ../en-US.restext:876 | "The player that won the v..."
+        value: 'restext://ElecN_007'
+    else:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8283
+    - type: 'text'
+      # ../en-US.restext:875 | "Any player that voted **Y..."
+      value: 'restext://ElecN_006'

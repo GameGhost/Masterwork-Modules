@@ -1,0 +1,47 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31993
+---
+format: 'mws/0.4'
+passage_id: 'WolvesVoteChange'
+# ../en-US.restext:2537 | "A Vote for Change"
+title: 'restext://WolvesVoteChange_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32000
+- type: 'assign'
+  var: 'vialuse'
+  # ../en-US.restext:31 | "yes"
+  expr: '"restext://Choice_Yes_Lower"'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32002
+- type: 'text'
+  # ../en-US.restext:2538 | "And it was decided by the..."
+  value: 'restext://WolvesVoteChange_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32003
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32005
+- type: 'text'
+  # ../en-US.restext:229 | "The liquid was introduced..."
+  value: 'restext://Narrative_CleansingLiquid_Introduced'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32010
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32012
+- type: 'text'
+  # ../en-US.restext:228 | "After less than a day's p..."
+  value: 'restext://Narrative_CleansingLiquid_Bloom'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32013
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32015
+- type: 'text'
+  # ../en-US.restext:230 | "Those of the Order that r..."
+  value: 'restext://Narrative_CleansingLiquid_OrderFled'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32016
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32018
+- type: 'link'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: 'VialSoldforLess' # ./00311-VialSoldforLess.mws.yaml
+  snapshot: true

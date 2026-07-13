@@ -1,0 +1,106 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26034
+---
+format: 'mws/0.4'
+passage_id: 'S5HospA3'
+tags:
+- 'END'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26043
+- type: 'conditional'
+  conditions:
+  - if: '!pana'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26047
+    - type: 'text'
+      # ../en-US.restext:2062 | "**Relentless Opposition**"
+      value: 'restext://S5HospA3_004'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26049
+    - type: 'break'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26050
+    - type: 'text'
+      # ../en-US.restext:2063 | "The church's distrust of ..."
+      value: 'restext://S5HospA3_005'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26059
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26061
+    - type: 'text'
+      # ../en-US.restext:2064 | "A most pitiful display th..."
+      value: 'restext://S5HospA3_006'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26063
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26065
+    - type: 'link'
+      # ../en-US.restext:35 | "Click here to continue..."
+      label: 'restext://Click_ContinueEllipsis_B'
+      target: 'RippedMasterwork' # ./00164-RippedMasterwork.mws.yaml
+      snapshot: true
+  - if: 'pana == "unleash"'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26071
+    - type: 'text'
+      # ../en-US.restext:2062 | "**Relentless Opposition**"
+      value: 'restext://S5HospA3_004'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26073
+    - type: 'break'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26074
+    - type: 'text'
+      # ../en-US.restext:2065 | "The church's distrust of ..."
+      value: 'restext://S5HospA3_007'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26088
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26090
+    - type: 'text'
+      # ../en-US.restext:2064 | "A most pitiful display th..."
+      value: 'restext://S5HospA3_006'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26092
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26094
+    - type: 'link'
+      # ../en-US.restext:35 | "Click here to continue..."
+      label: 'restext://Click_ContinueEllipsis_B'
+      target: 'RippedMasterwork' # ./00164-RippedMasterwork.mws.yaml
+      snapshot: true
+  else:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26101
+  - type: 'text'
+    # ../en-US.restext:2059 | "**The Allure of Discovery**"
+    value: 'restext://S5HospA3_001'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26103
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26104
+  - type: 'text'
+    # ../en-US.restext:2060 | "While the Panacea propose..."
+    value: 'restext://S5HospA3_002'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26105
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26107
+  - type: 'text'
+    # ../en-US.restext:2061 | "The family soon found a r..."
+    value: 'restext://S5HospA3_003'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26110
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26112
+  - type: 'link'
+    # ../en-US.restext:35 | "Click here to continue..."
+    label: 'restext://Click_ContinueEllipsis_B'
+    target: 'UniversityIntro' # ./00014-UniversityIntro.mws.yaml
+    snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26115
+- type: 'popup'
+  layout: 'end_of_generation'
+  # ../en-US.restext:345 | "Confirm"
+  okay: 'restext://UIButton_Confirm'
+  content:
+  - type: 'text'
+    # ../en-US.restext:82 | "Remove all player pieces ..."
+    value: 'restext://Directive_EndGeneration_JournalTrackTokens'
+  - type: 'let'
+    var: 'generation'
+    expr: '6'

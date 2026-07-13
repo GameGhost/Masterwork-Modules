@@ -1,0 +1,86 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31366
+---
+format: 'mws/0.4'
+passage_id: 'Gen1Insanity-Yes2'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31368
+- type: 'conditional'
+  conditions:
+  # ../en-US.restext:31 | "yes"
+  - if: 'vacation == "restext://Choice_Yes_Lower"'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31372
+    - type: 'text'
+      # ../en-US.restext:129 | "**Absent Parent**"
+      value: 'restext://Heading_AbsentParent'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31374
+    - type: 'break'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31377
+    - type: 'text'
+      # ../en-US.restext:308 | "**Carefully hand this sto..."
+      value: 'restext://Storybook_HandToGen1Sane'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31381
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31391
+    - type: 'conditional'
+      if: 'Gen1Insanity_Yes2nextPsg == "" || Gen1Insanity_Yes2nextPsg == 0'
+      then:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31393
+      - type: 'assign'
+        var: 'Gen1Insanity_Yes2nextPsg'
+        expr: 'rand_between(1, 2, "Gen1Insanity-Yes2_0")'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31383
+    - type: 'text'
+      # ../en-US.restext:2497 | "An investment in a summer..."
+      value: 'restext://Gen1Insanity_Yes2_001'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31395
+    - type: 'assign'
+      var: 'instemp'
+      expr: 'Gen1Insanity_Yes2nextPsg'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31400
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:36 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
+      target: 'Hospital1'
+      # ../en-US.restext:344 | "Close"
+      okay: 'restext://UIButton_Close' # ./00003-Hospital1.mws.yaml
+      snapshot: true
+      header:
+      - type: 'conditional'
+        conditions:
+        - if: 'instemp == 1'
+          then:
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31421
+          - type: 'image'
+            asset: 'image://setup/MaladjustmentBack'
+            style: 'setup-image'
+        else:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31429
+        - type: 'image'
+          asset: 'image://setup/ScoreTrackMarker'
+          style: 'setup-image'
+      content:
+      - type: 'conditional'
+        conditions:
+        - if: 'instemp == 1'
+          then:
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31422
+          - type: 'break'
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31423
+          - type: 'text'
+            # ../en-US.restext:84 | "Gain a Maladjustment card..."
+            value: 'restext://Directive_GainMaladjustmentCard'
+        else:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31430
+        - type: 'break'
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31431
+        - type: 'text'
+          # ../en-US.restext:354 | "Lose 3VP."
+          value: 'restext://VP_Lose3'
+  else:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31404
+  - type: 'goto'
+    target: 'Hospital1' # ./00003-Hospital1.mws.yaml

@@ -1,0 +1,72 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33784
+---
+format: 'mws/0.4'
+passage_id: '2p-FrenzyALT'
+# ../en-US.restext:2693 | "Frenzy Decision"
+title: 'restext://_2p_FrenzyALT_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33793
+- type: 'text'
+  # ../en-US.restext:244 | "The Order suggested a sin..."
+  value: 'restext://Narrative_FrenzyProposal'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33794
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33796
+- type: 'text'
+  # ../en-US.restext:231 | "Given the scientific expe..."
+  value: 'restext://Narrative_ConsultedCousins'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33799
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33803
+- type: 'text'
+  # ../en-US.restext:2694 | "**BID**"
+  value: 'restext://_2p_FrenzyALT_004'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33805
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33806
+- type: 'text'
+  # ../en-US.restext:2695 | "All players take all of t..."
+  value: 'restext://_2p_FrenzyALT_005'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33808
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33812
+- type: 'text'
+  # ../en-US.restext:2696 | "**Encouraging** the Frenz..."
+  value: 'restext://_2p_FrenzyALT_006'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33817
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33821
+- type: 'text'
+  # ../en-US.restext:2697 | "**Not encouraging** the F..."
+  value: 'restext://_2p_FrenzyALT_007'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33825
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33827
+- type: 'text'
+  # ../en-US.restext:2698 | "Once all players are read..."
+  value: 'restext://_2p_FrenzyALT_008'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33839
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33841
+- type: 'text'
+  # ../en-US.restext:109 | "Only the player that wins..."
+  value: 'restext://Election_WinnerPaysBid_Rule'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33843
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33847
+- type: 'popup'
+  layout: 'bidding'
+  # ../en-US.restext:59 | "Click to start the bid..."
+  label: 'restext://Click_StartBid'
+  target: '2p-FrenzyALTb'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close' # ./00344-2p-FrenzyALTb.mws.yaml
+  snapshot: false

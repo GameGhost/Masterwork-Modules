@@ -1,0 +1,36 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24675
+---
+format: 'mws/0.4'
+passage_id: 'ImmortalitySetup'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24678
+- type: 'popup'
+  layout: 'setup'
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24689
+  - type: 'image'
+    asset: 'image://setup/StorybookToken'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24683
+  - type: 'text'
+    # ../en-US.restext:1972 | "**To Infinity**"
+    value: 'restext://ImmortalitySetup_001'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24690
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24691
+  - type: 'text'
+    # ../en-US.restext:85 | "Give each player a {icon:..."
+    value: 'restext://Directive_GiveEachPlayerStorybookToken'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24699
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24701
+  - type: 'text'
+    # ../en-US.restext:86 | "Each player chooses an in..."
+    value: 'restext://Directive_JournalToken_ThirdLevel'
+  # ../en-US.restext:343 | "Accept"
+  okay: 'restext://UIButton_Accept'
+  target: '${(seedy == "no") ? "Gen1Creepy-RefuseBonus" : (seedy == "yes") ? "Gen1Creepy-AgreedReturn" : "Hospital2"}'
+  snapshot: true

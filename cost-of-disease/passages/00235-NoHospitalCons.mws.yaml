@@ -1,0 +1,123 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25871
+---
+format: 'mws/0.4'
+passage_id: 'NoHospitalCons'
+# ../en-US.restext:2049 | "A Steady Focus"
+title: 'restext://NoHospitalCons_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25878
+- type: 'text'
+  # ../en-US.restext:2050 | "For members of this ignob..."
+  value: 'restext://NoHospitalCons_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25879
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25883
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: '${NoHospitalConsnextPsg}'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close'
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25910
+  - type: 'image'
+    asset: 'image://setup/AdvanceJournalTrack'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25899
+  - type: 'conditional'
+    if: 'NoHospitalConsnextPsg == "" || NoHospitalConsnextPsg == 0'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25901
+    - type: 'assign'
+      var: 'NoHospitalConsnextPsg'
+      expr: '["S5HospA1", "S5HospA2", "S5HospA3"].shuffled("NoHospitalCons_0")[0]'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25911
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25913
+  - type: 'conditional'
+    if: '!hospA'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25917
+    - type: 'text'
+      # ../en-US.restext:2051 | "**Dr. {nameA} III**"
+      value: 'restext://NoHospitalCons_003'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25921
+    - type: 'break'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25922
+    - type: 'text'
+      # ../en-US.restext:2052 | "Move forward **1 level on..."
+      value: 'restext://NoHospitalCons_004'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25931
+  - type: 'conditional'
+    if: '!hospB'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25935
+    - type: 'text'
+      # ../en-US.restext:2053 | "**Dr. {nameB} III**"
+      value: 'restext://NoHospitalCons_005'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25939
+    - type: 'break'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25940
+    - type: 'text'
+      # ../en-US.restext:2052 | "Move forward **1 level on..."
+      value: 'restext://NoHospitalCons_004'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25949
+  - type: 'conditional'
+    if: 'players > 2'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25951
+    - type: 'conditional'
+      if: '!hospC'
+      then:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25955
+      - type: 'text'
+        # ../en-US.restext:2054 | "**Dr. {nameC} III**"
+        value: 'restext://NoHospitalCons_006'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25959
+      - type: 'break'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25960
+      - type: 'text'
+        # ../en-US.restext:2052 | "Move forward **1 level on..."
+        value: 'restext://NoHospitalCons_004'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25970
+  - type: 'conditional'
+    if: 'players > 3'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25972
+    - type: 'conditional'
+      if: '!hospD'
+      then:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25976
+      - type: 'text'
+        # ../en-US.restext:2055 | "**Dr. {nameD} III**"
+        value: 'restext://NoHospitalCons_007'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25980
+      - type: 'break'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25981
+      - type: 'text'
+        # ../en-US.restext:2052 | "Move forward **1 level on..."
+        value: 'restext://NoHospitalCons_004'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25991
+  - type: 'conditional'
+    if: 'players > 4'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25993
+    - type: 'conditional'
+      if: '!hospE'
+      then:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25997
+      - type: 'text'
+        # ../en-US.restext:2056 | "**Dr. {nameE} III**"
+        value: 'restext://NoHospitalCons_008'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26001
+      - type: 'break'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26002
+      - type: 'text'
+        # ../en-US.restext:2052 | "Move forward **1 level on..."
+        value: 'restext://NoHospitalCons_004'

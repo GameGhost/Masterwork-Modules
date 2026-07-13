@@ -1,0 +1,51 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7397
+---
+format: 'mws/0.4'
+passage_id: 'Unicure2'
+# ../en-US.restext:814 | "Patented!"
+title: 'restext://Unicure2_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7404
+- type: 'text'
+  # ../en-US.restext:815 | "{fevercure} Jr. was known..."
+  value: 'restext://Unicure2_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7411
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7415
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: 'PanaceaIntro'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close' # ./00167-PanaceaIntro.mws.yaml
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7432
+  - type: 'image'
+    asset: 'image://setup/AngryMob_Icon'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7423
+  - type: 'assign'
+    var: 'pub'
+    # ../en-US.restext:27 | "no"
+    expr: '"restext://Choice_No_Lower"'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7424
+  - type: 'assign'
+    var: 'cured'
+    expr: '1'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7433
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7436
+  - type: 'text'
+    # ../en-US.restext:816 | "**Gain ${fevermoney}.**"
+    value: 'restext://Unicure2_003'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7440
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7441
+  - type: 'text'
+    # ../en-US.restext:817 | "Then, move the {icon:angr..."
+    value: 'restext://Unicure2_004'

@@ -1,0 +1,88 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13884
+---
+format: 'mws/0.4'
+passage_id: 'Trigger3Experiments'
+# ../en-US.restext:315 | "Advancements in {sci3}"
+title: 'restext://Title_AdvancementsIn'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13893
+- type: 'text'
+  # ../en-US.restext:1227 | "Please click on the name ..."
+  value: 'restext://Trigger3Experiments_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13902
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13905
+- type: 'link'
+  # ../en-US.restext:15 | "Dr. {nameA} Jr."
+  label: 'restext://Character_DrNameA_Jr'
+  target: '3ExperimentsRes' # ./00249-3ExperimentsRes.mws.yaml
+  snapshot: true
+  onclick:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13938
+  - type: 'assign'
+    var: 'gen2exp'
+    expr: 'nameA'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13906
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13909
+- type: 'link'
+  # ../en-US.restext:16 | "Dr. {nameB} Jr."
+  label: 'restext://Character_DrNameB_Jr'
+  target: '3ExperimentsRes' # ./00249-3ExperimentsRes.mws.yaml
+  snapshot: true
+  onclick:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13945
+  - type: 'assign'
+    var: 'gen2exp'
+    expr: 'nameB'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13910
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13912
+- type: 'conditional'
+  if: 'players > 2'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13915
+  - type: 'link'
+    # ../en-US.restext:17 | "Dr. {nameC} Jr."
+    label: 'restext://Character_DrNameC_Jr'
+    target: '3ExperimentsRes' # ./00249-3ExperimentsRes.mws.yaml
+    snapshot: true
+    onclick:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13952
+    - type: 'assign'
+      var: 'gen2exp'
+      expr: 'nameC'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13919
+- type: 'conditional'
+  if: 'players > 3'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13922
+  - type: 'link'
+    # ../en-US.restext:18 | "Dr. {nameD} Jr."
+    label: 'restext://Character_DrNameD_Jr'
+    target: '3ExperimentsRes' # ./00249-3ExperimentsRes.mws.yaml
+    snapshot: true
+    onclick:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13959
+    - type: 'assign'
+      var: 'gen2exp'
+      expr: 'nameD'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13926
+- type: 'conditional'
+  if: 'players > 4'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13929
+  - type: 'link'
+    # ../en-US.restext:19 | "Dr. {nameE} Jr."
+    label: 'restext://Character_DrNameE_Jr'
+    target: '3ExperimentsRes' # ./00249-3ExperimentsRes.mws.yaml
+    snapshot: true
+    onclick:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13966
+    - type: 'assign'
+      var: 'gen2exp'
+      expr: 'nameE'

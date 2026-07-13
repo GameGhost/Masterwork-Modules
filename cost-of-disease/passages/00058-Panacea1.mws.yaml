@@ -1,0 +1,47 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7060
+---
+format: 'mws/0.4'
+passage_id: 'Panacea1'
+# ../en-US.restext:778 | "A Weapon Published"
+title: 'restext://Panacea1_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7067
+- type: 'text'
+  # ../en-US.restext:779 | "In a shocking display of ..."
+  value: 'restext://Panacea1_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7077
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7079
+- type: 'text'
+  # ../en-US.restext:780 | "The local population, whi..."
+  value: 'restext://Panacea1_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7083
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7087
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: '${round == 7 ? "Hospital1" : round == 8 ? "Hospital2" : "Hospital3"}'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close'
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7102
+  - type: 'image'
+    asset: 'image://setup/S1_Pancea'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7108
+  - type: 'let'
+    var: '_rnd_Panacea1_0'
+    expr: 'rand_between(2, 4, "Panacea1_0")'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7107
+  - type: 'text'
+    # ../en-US.restext:781 | "**Gain {_rnd_Panacea1_0}V..."
+    value: 'restext://Panacea1_004'
+    lets:
+    - '_rnd_Panacea1_0'

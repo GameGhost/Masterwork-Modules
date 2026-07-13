@@ -1,0 +1,103 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7806
+---
+format: 'mws/0.4'
+passage_id: 'S5Special1b'
+# ../en-US.restext:839 | "Humble Beginnings"
+title: 'restext://S5Special1b_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7813
+- type: 'text'
+  # ../en-US.restext:840 | "The family had made their..."
+  value: 'restext://S5Special1b_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7819
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7823
+- type: 'text'
+  # ../en-US.restext:841 | "**The player that bid the..."
+  value: 'restext://S5Special1b_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7830
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7832
+- type: 'text'
+  # ../en-US.restext:842 | "Which player became the e..."
+  value: 'restext://S5Special1b_004'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7833
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7836
+- type: 'link'
+  label: '{nameA}'
+  target: 'S5SpecialSetup1' # ./00007-S5SpecialSetup1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7868
+  - type: 'assign'
+    var: 'mayor'
+    expr: 'nameA'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7837
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7840
+- type: 'link'
+  label: '{nameB}'
+  target: 'S5SpecialSetup1' # ./00007-S5SpecialSetup1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7875
+  - type: 'assign'
+    var: 'mayor'
+    expr: 'nameB'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7841
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7843
+- type: 'conditional'
+  if: 'players > 2'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7846
+  - type: 'link'
+    label: '{nameC}'
+    target: 'S5SpecialSetup1' # ./00007-S5SpecialSetup1.mws.yaml
+    snapshot: true
+    onclick:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7882
+    - type: 'assign'
+      var: 'mayor'
+      expr: 'nameC'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7848
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7850
+- type: 'conditional'
+  if: 'players > 3'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7853
+  - type: 'link'
+    label: '{nameD}'
+    target: 'S5SpecialSetup1' # ./00007-S5SpecialSetup1.mws.yaml
+    snapshot: true
+    onclick:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7889
+    - type: 'assign'
+      var: 'mayor'
+      expr: 'nameD'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7855
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7857
+- type: 'conditional'
+  if: 'players > 4'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7860
+  - type: 'link'
+    label: '{nameE}'
+    target: 'S5SpecialSetup1' # ./00007-S5SpecialSetup1.mws.yaml
+    snapshot: true
+    onclick:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7896
+    - type: 'assign'
+      var: 'mayor'
+      expr: 'nameE'

@@ -1,0 +1,123 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14936
+---
+format: 'mws/0.4'
+passage_id: 'HospitalNegative'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14938
+- type: 'conditional'
+  conditions:
+  - if: 'hospcount == players'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14940
+    - type: 'conditional'
+      if: 'HospitalNegativenextPsg == "" || HospitalNegativenextPsg == 0'
+      then:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14942
+      - type: 'assign'
+        var: 'HospitalNegativenextPsg'
+        expr: '["S5HospA1", "S5HospA2", "S5HospA3"].shuffled("HospitalNegative_0")[0]'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14944
+    - type: 'goto'
+      target: '${HospitalNegativenextPsg}'
+  else:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14950
+  - type: 'text'
+    # ../en-US.restext:1282 | "**Lack of Hospitality**"
+    value: 'restext://HospitalNegative_001'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14952
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14953
+  - type: 'text'
+    # ../en-US.restext:1283 | "Unfortunately, the lack o..."
+    value: 'restext://HospitalNegative_002'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14956
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14959
+  - type: 'conditional'
+    conditions:
+    - if: "(players > 4 ? hospA == \"\" || hospB == \"\" || hospC == \"\" || hospD == \"\" || hospE == \"\" || hospA == 0 || hospB == 0 || hospC == 0 || hospD == 0 || hospE == 0 :\r\n                    players > 3 ? hospA == \"\" || hospB == \"\" || hospC == \"\" || hospD == \"\" || hospA == 0 || hospB == 0 || hospC == 0 || hospD == 0 :\r\n                    players > 2 ? hospA == \"\" || hospB == \"\" || hospC == \"\" || hospA == 0 || hospB == 0 || hospC == 0 : hospA == \"\" || hospB == \"\" || hospA == 0 || hospB == 0)"
+      then:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14964
+      - type: 'popup'
+        layout: 'setup'
+        # ../en-US.restext:35 | "Click here to continue..."
+        label: 'restext://Click_ContinueEllipsis_B'
+        target: 'NoHospitalCons'
+        # ../en-US.restext:344 | "Close"
+        okay: 'restext://UIButton_Close' # ./00235-NoHospitalCons.mws.yaml
+        snapshot: true
+        header:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14987
+        - type: 'image'
+          asset: 'image://setup/DiscardEstateUpgrade_Icon'
+          style: 'setup-image'
+        content:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14988
+        - type: 'conditional'
+          if: '!hospA'
+          then:
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14990
+          - type: 'text'
+            # ../en-US.restext:1284 | "Dr. {nameA} Jr. must imme..."
+            value: 'restext://HospitalNegative_003'
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14996
+        - type: 'conditional'
+          if: '!hospB'
+          then:
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14998
+          - type: 'text'
+            # ../en-US.restext:1285 | "Dr. {nameB} Jr. must imme..."
+            value: 'restext://HospitalNegative_004'
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15004
+        - type: 'conditional'
+          if: 'players > 2'
+          then:
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15006
+          - type: 'conditional'
+            if: '!hospC'
+            then:
+            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15008
+            - type: 'text'
+              # ../en-US.restext:1286 | "Dr. {nameC} Jr. must imme..."
+              value: 'restext://HospitalNegative_005'
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15015
+        - type: 'conditional'
+          if: 'players > 3'
+          then:
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15017
+          - type: 'conditional'
+            if: '!hospD'
+            then:
+            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15019
+            - type: 'text'
+              # ../en-US.restext:1287 | "Dr. {nameD} Jr. must imme..."
+              value: 'restext://HospitalNegative_006'
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15026
+        - type: 'conditional'
+          if: 'players > 4'
+          then:
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15028
+          - type: 'conditional'
+            if: '!hospE'
+            then:
+            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15030
+            - type: 'text'
+              # ../en-US.restext:1288 | "Dr. {nameE} Jr. must imme..."
+              value: 'restext://HospitalNegative_007'
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15037
+        - type: 'conditional'
+          if: "!(players > 4 ? hospA == \"\" || hospB == \"\" || hospC == \"\" || hospD == \"\" || hospE == \"\" || hospA == 0 || hospB == 0 || hospC == 0 || hospD == 0 || hospE == 0 :\r\n                    players > 3 ? hospA == \"\" || hospB == \"\" || hospC == \"\" || hospD == \"\" || hospA == 0 || hospB == 0 || hospC == 0 || hospD == 0 :\r\n                    players > 2 ? hospA == \"\" || hospB == \"\" || hospC == \"\" || hospA == 0 || hospB == 0 || hospC == 0 : hospA == \"\" || hospB == \"\" || hospA == 0 || hospB == 0)"
+          then:
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15041
+          - type: 'text'
+            # ../en-US.restext:1284 | "Dr. {nameA} Jr. must imme..."
+            value: 'restext://HospitalNegative_003'
+    else:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14968
+    - type: 'link'
+      # ../en-US.restext:35 | "Click here to continue..."
+      label: 'restext://Click_ContinueEllipsis_B'
+      target: 'NoHospitalCons' # ./00235-NoHospitalCons.mws.yaml
+      snapshot: true

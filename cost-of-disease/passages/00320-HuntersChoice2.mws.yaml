@@ -1,0 +1,119 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32888
+---
+format: 'mws/0.4'
+passage_id: 'HuntersChoice2'
+# ../en-US.restext:2614 | "The Second Night of the Hunt"
+title: 'restext://HuntersChoice2_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32896
+- type: 'text'
+  # ../en-US.restext:234 | "The horses reared as a bl..."
+  value: 'restext://Narrative_Crossroads_Storm'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32897
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32899
+- type: 'text'
+  # ../en-US.restext:232 | "To the north, a thick fog..."
+  value: 'restext://Narrative_Crossroads_Directions'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32900
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32902
+- type: 'text'
+  # ../en-US.restext:233 | "It was also possible to r..."
+  value: 'restext://Narrative_Crossroads_ReturnSouth'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32908
+- type: 'let'
+  var: '_rnd_HuntersChoice2_0'
+  expr: '[h2a, h2b].shuffled("HuntersChoice2_0")[0]'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32908
+- type: 'text'
+  # ../en-US.restext:2615 | "**{_rnd_HuntersChoice2_0}..."
+  value: 'restext://HuntersChoice2_002'
+  lets:
+  - '_rnd_HuntersChoice2_0'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32915
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32919
+- type: 'text'
+  # ../en-US.restext:136 | "**CHOOSE**"
+  value: 'restext://Heading_Choose'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32921
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32924
+- type: 'link'
+  # ../en-US.restext:2616 | "North to the moors. Both ..."
+  label: 'restext://HuntersChoice2_003'
+  target: 'HuntNight2' # ./00322-HuntNight2.mws.yaml
+  snapshot: true
+  onclick:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32944
+  - type: 'assign'
+    var: 'huntreward2'
+    expr: 'reward5'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32945
+  - type: 'assign'
+    var: 'direction'
+    expr: '"HuntNorth"' # ./00265-HuntNorth.mws.yaml
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32925
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32928
+- type: 'link'
+  # ../en-US.restext:2617 | "East to the dark forest. ..."
+  label: 'restext://HuntersChoice2_004'
+  target: 'HuntNight2' # ./00322-HuntNight2.mws.yaml
+  snapshot: true
+  onclick:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32952
+  - type: 'assign'
+    var: 'huntreward2'
+    expr: 'reward6'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32953
+  - type: 'assign'
+    var: 'direction'
+    expr: '"HuntEast"' # ./00267-HuntEast.mws.yaml
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32929
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32932
+- type: 'link'
+  # ../en-US.restext:2618 | "West to the mountains. Bo..."
+  label: 'restext://HuntersChoice2_005'
+  target: 'HuntNight2' # ./00322-HuntNight2.mws.yaml
+  snapshot: true
+  onclick:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32960
+  - type: 'assign'
+    var: 'huntreward2'
+    expr: 'reward7'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32961
+  - type: 'assign'
+    var: 'direction'
+    expr: '"HuntWest"' # ./00266-HuntWest.mws.yaml
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32933
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32936
+- type: 'link'
+  # ../en-US.restext:2619 | "South, back to the town. ..."
+  label: 'restext://HuntersChoice2_006'
+  target: 'HuntNight2' # ./00322-HuntNight2.mws.yaml
+  snapshot: true
+  onclick:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32968
+  - type: 'assign'
+    var: 'huntreward2'
+    expr: 'reward8'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32969
+  - type: 'assign'
+    var: 'direction'
+    expr: '"HuntSouth"' # ./00268-HuntSouth.mws.yaml
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32938
+- type: 'assign'
+  var: 'huntname'
+  expr: '[h2a, h2b].shuffled("HuntersChoice2_1")[0]'

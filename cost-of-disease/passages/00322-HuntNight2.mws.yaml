@@ -1,0 +1,93 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33087
+---
+format: 'mws/0.4'
+passage_id: 'HuntNight2'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33089
+- type: 'include_passage'
+  target: '${direction}'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33090
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33093
+- type: 'text'
+  # ../en-US.restext:2630 | "**{huntreward2}.**"
+  value: 'restext://HuntNight2_001'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33096
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33100
+- type: 'text'
+  # ../en-US.restext:179 | "**VOTE**"
+  value: 'restext://Heading_Vote'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33102
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33103
+- type: 'text'
+  # ../en-US.restext:2631 | "Both players on the Hunt ..."
+  value: 'restext://HuntNight2_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33106
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33108
+- type: 'text'
+  # ../en-US.restext:361 | "A **Yay** vote is a vote ..."
+  value: 'restext://Vote_YayMeaning_Hunt'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33121
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33122
+- type: 'text'
+  # ../en-US.restext:356 | "A **Nay** vote is a vote ..."
+  value: 'restext://Vote_NayMeaning_Hunt'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33134
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33136
+- type: 'text'
+  # ../en-US.restext:2632 | "If BOTH players choose to..."
+  value: 'restext://HuntNight2_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33145
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33147
+- type: 'text'
+  # ../en-US.restext:2633 | "If 1 player chooses to co..."
+  value: 'restext://HuntNight2_004'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33156
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33158
+- type: 'text'
+  # ../en-US.restext:2634 | "If neither player choose ..."
+  value: 'restext://HuntNight2_005'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33165
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33169
+- type: 'text'
+  # ../en-US.restext:2635 | "**The Result of the Vote:**"
+  value: 'restext://HuntNight2_006'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33171
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33172
+- type: 'text'
+  # ../en-US.restext:355 | "Did at least one player v..."
+  value: 'restext://Vote_CheckContributedToHunt'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33173
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33175
+- type: 'link'
+  # ../en-US.restext:32 | "Yes."
+  label: 'restext://Choice_Yes_Period'
+  target: 'HuntSuccess1' # ./00277-HuntSuccess1.mws.yaml
+  snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33176
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33178
+- type: 'link'
+  # ../en-US.restext:28 | "No."
+  label: 'restext://Choice_No_Period'
+  target: 'HuntFail1' # ./00278-HuntFail1.mws.yaml
+  snapshot: true

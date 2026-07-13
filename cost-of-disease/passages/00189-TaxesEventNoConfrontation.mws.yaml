@@ -1,0 +1,51 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21967
+---
+format: 'mws/0.4'
+passage_id: 'TaxesEventNoConfrontation'
+# ../en-US.restext:1686 | "Rising Cost of Living"
+title: 'restext://TaxesEventNoConfrontation_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21975
+- type: 'text'
+  # ../en-US.restext:1687 | "While the townsfolk grumb..."
+  value: 'restext://TaxesEventNoConfrontation_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21976
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21980
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: '${TaxesEventNoConfrontationnextPsg}'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close'
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22005
+  - type: 'image'
+    asset: 'image://setup/S1_HunterToken'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21994
+  - type: 'conditional'
+    if: 'TaxesEventNoConfrontationnextPsg == "" || TaxesEventNoConfrontationnextPsg == 0'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21996
+    - type: 'assign'
+      var: 'TaxesEventNoConfrontationnextPsg'
+      expr: '["TaxesEventNoConfrontation2", "GloomyGothic3"].shuffled("TaxesEventNoConfrontation_0")[0]'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22006
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22007
+  - type: 'text'
+    # ../en-US.restext:186 | "Any player that does not ..."
+    value: 'restext://HuntersRest_PayOrLoseVP_Rule'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22031
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22033
+  - type: 'text'
+    # ../en-US.restext:1688 | "Alternatively, any player..."
+    value: 'restext://TaxesEventNoConfrontation_004'

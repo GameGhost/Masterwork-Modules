@@ -1,0 +1,88 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23917
+---
+format: 'mws/0.4'
+passage_id: 'EquitableValues'
+# ../en-US.restext:1888 | "Deplorable Equity"
+title: 'restext://EquitableValues_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23923
+- type: 'assign'
+  var: 'gen3pg'
+  expr: '0'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23925
+- type: 'text'
+  # ../en-US.restext:1889 | "For the first time in dec..."
+  value: 'restext://EquitableValues_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23927
+- type: 'conditional'
+  conditions:
+  # ../en-US.restext:114 | "Order of St. Hubertus"
+  - if: 'society == "restext://Faction_OrderOfStHubertus_Plain"'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23929
+    - type: 'text'
+      # ../en-US.restext:1891 | "The Order of St. Hubertus..."
+      value: 'restext://EquitableValues_004'
+  else:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23936
+  - type: 'text'
+    # ../en-US.restext:1890 | "While members of the Frat..."
+    value: 'restext://EquitableValues_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23940
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23942
+- type: 'text'
+  # ../en-US.restext:1892 | "Unlike previous generatio..."
+  value: 'restext://EquitableValues_005'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23943
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23945
+- type: 'text'
+  # ../en-US.restext:1893 | "While they would never ad..."
+  value: 'restext://EquitableValues_006'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23947
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23951
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: 'LycanMessageGood'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close' # ./00213-LycanMessageGood.mws.yaml
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23966
+  - type: 'image'
+    asset: 'image://setup/Creepy_Icon'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23967
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23969
+  - type: 'conditional'
+    conditions:
+    - if: 'players <= 3'
+      then:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23969
+      - type: 'text'
+        # ../en-US.restext:1894 | "The player with the fewes..."
+        value: 'restext://EquitableValues_007'
+    - if: 'players >= 4'
+      then:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23969
+      - type: 'text'
+        # ../en-US.restext:1895 | "The **2** players with th..."
+        value: 'restext://EquitableValues_008'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23988
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23990
+  - type: 'text'
+    # ../en-US.restext:1896 | "The player with the most ..."
+    value: 'restext://EquitableValues_009'

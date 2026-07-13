@@ -1,0 +1,10 @@
+# Stub — no chrome authored yet. Popup layout: 'bidding' (4 popups). Note: RenderedPopupView.razor
+# currently renders 'bidding' through its own bespoke VotingPopupContent component, which doesn't
+# reference RenderedPopup.Chrome — any chrome authored here won't be displayed unless that
+# component is updated to render it too.
+format: 'mws/0.4'
+layout_id: 'bidding'
+header: []
+footer: []
+before_content: []
+after_content: []

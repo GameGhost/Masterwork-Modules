@@ -1,0 +1,36 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22466
+---
+format: 'mws/0.4'
+passage_id: 'TaxesEventNoConfrontation2'
+# ../en-US.restext:1743 | "A Pittance"
+title: 'restext://TaxesEventNoConfrontation2_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22473
+- type: 'text'
+  # ../en-US.restext:1744 | "While it amounted to litt..."
+  value: 'restext://TaxesEventNoConfrontation2_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22481
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22485
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: 'GloomyGothic3'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close' # ./00173-GloomyGothic3.mws.yaml
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22500
+  - type: 'image'
+    asset: 'image://setup/Creepy_Icon'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22501
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22502
+  - type: 'text'
+    # ../en-US.restext:1745 | "All players, in turn orde..."
+    value: 'restext://TaxesEventNoConfrontation2_003'

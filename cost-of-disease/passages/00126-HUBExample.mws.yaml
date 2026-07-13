@@ -1,0 +1,256 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14108
+---
+format: 'mws/0.4'
+passage_id: 'HUBExample'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14110
+- type: 'conditional'
+  if: 'round == 1'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14112
+  - type: 'link'
+    # ../en-US.restext:52 | "Click to return..."
+    label: 'restext://Click_Return'
+    target: 'Fever1' # ./00002-Fever1.mws.yaml
+    snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14114
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14115
+- type: 'conditional'
+  if: 'round == 2'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14117
+  - type: 'link'
+    # ../en-US.restext:52 | "Click to return..."
+    label: 'restext://Click_Return'
+    target: 'Fever2' # ./00029-Fever2.mws.yaml
+    snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14119
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14120
+- type: 'conditional'
+  if: 'round == 3'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14122
+  - type: 'link'
+    # ../en-US.restext:52 | "Click to return..."
+    label: 'restext://Click_Return'
+    target: 'Fever3' # ./00030-Fever3.mws.yaml
+    snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14124
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14125
+- type: 'conditional'
+  if: 'round == 4'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14127
+  - type: 'link'
+    # ../en-US.restext:52 | "Click to return..."
+    label: 'restext://Click_Return'
+    target: 'Devastation1' # ./00004-Devastation1.mws.yaml
+    snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14129
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14130
+- type: 'conditional'
+  if: 'round == 5'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14132
+  - type: 'link'
+    # ../en-US.restext:52 | "Click to return..."
+    label: 'restext://Click_Return'
+    target: 'Devastation2' # ./00033-Devastation2.mws.yaml
+    snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14134
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14135
+- type: 'conditional'
+  if: 'round == 6'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14137
+  - type: 'link'
+    # ../en-US.restext:52 | "Click to return..."
+    label: 'restext://Click_Return'
+    target: 'Devastation3' # ./00032-Devastation3.mws.yaml
+    snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14139
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14140
+- type: 'conditional'
+  if: 'round == 7'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14142
+  - type: 'link'
+    # ../en-US.restext:52 | "Click to return..."
+    label: 'restext://Click_Return'
+    target: 'Hospital1' # ./00003-Hospital1.mws.yaml
+    snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14144
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14145
+- type: 'conditional'
+  if: 'round == 8'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14147
+  - type: 'link'
+    # ../en-US.restext:52 | "Click to return..."
+    label: 'restext://Click_Return'
+    target: 'Hospital2' # ./00034-Hospital2.mws.yaml
+    snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14149
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14150
+- type: 'conditional'
+  if: 'round == 9'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14152
+  - type: 'link'
+    # ../en-US.restext:52 | "Click to return..."
+    label: 'restext://Click_Return'
+    target: 'Hospital3' # ./00035-Hospital3.mws.yaml
+    snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14154
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14155
+- type: 'conditional'
+  if: 'round == 10'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14157
+  - type: 'link'
+    # ../en-US.restext:52 | "Click to return..."
+    label: 'restext://Click_Return'
+    target: 'GloomyGothic1' # ./00171-GloomyGothic1.mws.yaml
+    snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14159
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14160
+- type: 'conditional'
+  if: 'round == 11'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14162
+  - type: 'link'
+    # ../en-US.restext:52 | "Click to return..."
+    label: 'restext://Click_Return'
+    target: 'GloomyGothic2' # ./00172-GloomyGothic2.mws.yaml
+    snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14164
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14165
+- type: 'conditional'
+  if: 'round == 12'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14167
+  - type: 'link'
+    # ../en-US.restext:52 | "Click to return..."
+    label: 'restext://Click_Return'
+    target: 'GloomyGothic3' # ./00173-GloomyGothic3.mws.yaml
+    snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14169
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14170
+- type: 'conditional'
+  if: 'round == 13'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14172
+  - type: 'link'
+    # ../en-US.restext:52 | "Click to return..."
+    label: 'restext://Click_Return'
+    target: 'Prosperity1' # ./00352-Prosperity1.mws.yaml
+    snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14174
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14175
+- type: 'conditional'
+  if: 'round == 14'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14177
+  - type: 'link'
+    # ../en-US.restext:52 | "Click to return..."
+    label: 'restext://Click_Return'
+    target: 'Prosperity2' # ./00120-Prosperity2.mws.yaml
+    snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14179
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14180
+- type: 'conditional'
+  if: 'round == 15'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14182
+  - type: 'link'
+    # ../en-US.restext:52 | "Click to return..."
+    label: 'restext://Click_Return'
+    target: 'Prosperity3' # ./00121-Prosperity3.mws.yaml
+    snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14184
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14185
+- type: 'conditional'
+  if: 'round == 16'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14187
+  - type: 'link'
+    # ../en-US.restext:52 | "Click to return..."
+    label: 'restext://Click_Return'
+    target: 'NoUni1' # ./00011-NoUni1.mws.yaml
+    snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14189
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14190
+- type: 'conditional'
+  if: 'round == 17'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14192
+  - type: 'link'
+    # ../en-US.restext:52 | "Click to return..."
+    label: 'restext://Click_Return'
+    target: 'NoUni2' # ./00036-NoUni2.mws.yaml
+    snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14194
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14195
+- type: 'conditional'
+  if: 'round == 18'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14197
+  - type: 'link'
+    # ../en-US.restext:52 | "Click to return..."
+    label: 'restext://Click_Return'
+    target: 'NoUni3' # ./00037-NoUni3.mws.yaml
+    snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14199
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14200
+- type: 'conditional'
+  if: 'round == 19'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14202
+  - type: 'link'
+    # ../en-US.restext:52 | "Click to return..."
+    label: 'restext://Click_Return'
+    target: 'University1' # ./00257-University1.mws.yaml
+    snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14204
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14205
+- type: 'conditional'
+  if: 'round == 20'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14207
+  - type: 'link'
+    # ../en-US.restext:52 | "Click to return..."
+    label: 'restext://Click_Return'
+    target: 'University2' # ./00038-University2.mws.yaml
+    snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14209
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14210
+- type: 'conditional'
+  if: 'round == 21'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14212
+  - type: 'link'
+    # ../en-US.restext:52 | "Click to return..."
+    label: 'restext://Click_Return'
+    target: 'University3' # ./00039-University3.mws.yaml
+    snapshot: true

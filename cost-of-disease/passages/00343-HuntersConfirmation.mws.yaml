@@ -1,0 +1,52 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34304
+---
+format: 'mws/0.4'
+passage_id: 'HuntersConfirmation'
+tags:
+- 'NEW'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34309
+- type: 'text'
+  # ../en-US.restext:305 | "**Continue to not allow o..."
+  value: 'restext://Storybook_ContinuePrivate'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34311
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34313
+- type: 'conditional'
+  conditions:
+  # ../en-US.restext:26 | "good"
+  - if: 'hunters == "restext://Choice_Good_Lower"'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34317
+    - type: 'text'
+      # ../en-US.restext:159 | "**A Message of Confirmation**"
+      value: 'restext://Heading_MessageOfConfirmation'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34319
+    - type: 'break'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34320
+    - type: 'text'
+      # ../en-US.restext:2753 | "Several weeks hence, {mee..."
+      value: 'restext://HuntersConfirmation_002'
+  else:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34335
+  - type: 'text'
+    # ../en-US.restext:159 | "**A Message of Confirmation**"
+    value: 'restext://Heading_MessageOfConfirmation'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34337
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34338
+  - type: 'text'
+    # ../en-US.restext:2752 | "Several weeks hence, {mee..."
+    value: 'restext://HuntersConfirmation_001'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34350
+- type: 'assign'
+  var: 'hcount'
+  expr: 'hcount + 1'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34352
+- type: 'link'
+  # ../en-US.restext:52 | "Click to return..."
+  label: 'restext://Click_Return'
+  target: 'Gen1Insanity-NoAction' # ./00305-Gen1Insanity-NoAction.mws.yaml
+  snapshot: true

@@ -1,0 +1,141 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14719
+---
+format: 'mws/0.4'
+passage_id: 'HospitalVisitCheck2'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14746
+- type: 'text'
+  # ../en-US.restext:311 | "**Carefully pick up the S..."
+  value: 'restext://Storybook_PickUpPrivate_Bold'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14750
+- type: 'assign'
+  var: 'hospentry'
+  expr: 'rand_between(1, 2, "HospitalVisitCheck2_0")'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14752
+- type: 'conditional'
+  conditions:
+  - if: 'hospentry == 1'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14756
+    - type: 'text'
+      # ../en-US.restext:1271 | "**Visitation Report: Dr. ..."
+      value: 'restext://HospitalVisitCheck2_001'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14760
+    - type: 'break'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14761
+    - type: 'text'
+      # ../en-US.restext:1276 | "Dr. {hospsign} seemed in ..."
+      value: 'restext://HospitalVisitCheck2_006'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14766
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14768
+    - type: 'conditional'
+      conditions:
+      - if: 'macros1.either(1, 2) == 1'
+        then:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14770
+        - type: 'text'
+          # ../en-US.restext:1278 | "\"This is all wrong. What..."
+          value: 'restext://HospitalVisitCheck2_008'
+      else:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14778
+      - type: 'text'
+        # ../en-US.restext:1277 | "Their response was muffle..."
+        value: 'restext://HospitalVisitCheck2_007'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14780
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14782
+    - type: 'text'
+      # ../en-US.restext:1279 | "At this point, {hospsign}..."
+      value: 'restext://HospitalVisitCheck2_009'
+  else:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14792
+  - type: 'text'
+    # ../en-US.restext:1271 | "**Visitation Report: Dr. ..."
+    value: 'restext://HospitalVisitCheck2_001'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14796
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14797
+  - type: 'text'
+    # ../en-US.restext:1272 | "Relatively uneventful vis..."
+    value: 'restext://HospitalVisitCheck2_002'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14800
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14802
+  - type: 'conditional'
+    conditions:
+    - if: 'macros1.either(1, 2) == 1'
+      then:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14804
+      - type: 'text'
+        # ../en-US.restext:1274 | "Mostly disinterested and ..."
+        value: 'restext://HospitalVisitCheck2_004'
+    else:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14813
+    - type: 'text'
+      # ../en-US.restext:1273 | "At one juncture, Dr. {hos..."
+      value: 'restext://HospitalVisitCheck2_003'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14817
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14819
+  - type: 'text'
+    # ../en-US.restext:1275 | "After requesting access t..."
+    value: 'restext://HospitalVisitCheck2_005'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14824
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14828
+- type: 'link'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: 'Gen1Insanity-NoExtraAction' # ./00304-Gen1Insanity-NoExtraAction.mws.yaml
+  snapshot: true
+  onclick:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14836
+  - type: 'assign'
+    var: 'hospcount'
+    expr: 'hospcount + 1'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14837
+  - type: 'switch'
+    on: 'hospsign'
+    cases:
+    - match: 'nameA'
+      nodes:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14839
+      - type: 'assign'
+        var: 'hospA'
+        # ../en-US.restext:31 | "yes"
+        expr: '"restext://Choice_Yes_Lower"'
+    - match: 'nameB'
+      nodes:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14843
+      - type: 'assign'
+        var: 'hospB'
+        # ../en-US.restext:31 | "yes"
+        expr: '"restext://Choice_Yes_Lower"'
+    - match: 'nameC'
+      nodes:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14847
+      - type: 'assign'
+        var: 'hospC'
+        # ../en-US.restext:31 | "yes"
+        expr: '"restext://Choice_Yes_Lower"'
+    - match: 'nameD'
+      nodes:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14851
+      - type: 'assign'
+        var: 'hospD'
+        # ../en-US.restext:31 | "yes"
+        expr: '"restext://Choice_Yes_Lower"'
+    - match: 'nameE'
+      nodes:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14855
+      - type: 'assign'
+        var: 'hospE'
+        # ../en-US.restext:31 | "yes"
+        expr: '"restext://Choice_Yes_Lower"'

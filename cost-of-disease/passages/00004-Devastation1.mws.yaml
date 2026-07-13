@@ -1,0 +1,182 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2093
+---
+format: 'mws/0.4'
+passage_id: 'Devastation1'
+# ../en-US.restext:318 | "Devastation"
+title: 'restext://Title_Devastation'
+# ../en-US.restext:319 | "Early Years"
+subtitle: 'restext://Title_EarlyYears'
+tags:
+- 'HUB'
+layout: 'hub_early'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2101
+- type: 'assign'
+  var: 'round'
+  expr: '4'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2103
+- type: 'conditional'
+  if: '!devpage'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2107
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:343 | "Accept"
+    okay: 'restext://UIButton_Accept'
+    header:
+    - type: 'conditional'
+      conditions:
+      - if: 'seedy == "yes"'
+        then:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2113
+        - type: 'image'
+          asset: 'image://setup/AngryMobSetup2'
+          style: 'setup-image'
+      else:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2118
+      - type: 'image'
+        asset: 'image://setup/AngryMobSetup1'
+        style: 'setup-image'
+    content:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2121
+    - type: 'text'
+      # ../en-US.restext:100 | "Turn to page "
+      value: 'restext://Directive_TurnToPage'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2122
+    - type: 'conditional'
+      conditions:
+      # ../en-US.restext:194 | "bank"
+      - if: 'building == "restext://Location_Bank_Lower"'
+        then:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2126
+        - type: 'text'
+          # ../en-US.restext:396 | "**12**"
+          value: 'restext://Devastation1_004'
+      else:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2134
+      - type: 'text'
+        # ../en-US.restext:395 | "**13**"
+        value: 'restext://Devastation1_003'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2137
+    - type: 'text'
+      # ../en-US.restext:397 | " of the Village Chronicle..."
+      value: 'restext://Devastation1_005'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2140
+    - type: 'conditional'
+      if: '!Devastation1'
+      then:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2142
+      - type: 'assign'
+        var: 'Devastation1'
+        expr: '1'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2143
+      - type: 'assign'
+        var: 'tracker'
+        expr: 'tracker + 2'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2144
+      - type: 'switch'
+        on: 'players'
+        cases:
+        - match: 4
+          nodes:
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2146
+          - type: 'assign'
+            var: 'tracker'
+            expr: 'tracker + 3'
+        - match: 5
+          nodes:
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2150
+          - type: 'assign'
+            var: 'tracker'
+            expr: 'tracker + 3'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2153
+    - type: 'text'
+      # ../en-US.restext:398 | "**{tracker}** and the {ic..."
+      value: 'restext://Devastation1_006'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2158
+    - type: 'conditional'
+      conditions:
+      # ../en-US.restext:31 | "yes"
+      - if: 'seedy == "restext://Choice_Yes_Lower"'
+        then:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2162
+        - type: 'text'
+          # ../en-US.restext:89 | "**two** spaces to the lef..."
+          value: 'restext://Directive_MoveTwoSpacesLeft_Seedy'
+      else:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2168
+      - type: 'text'
+        # ../en-US.restext:88 | "one space to the left."
+        value: 'restext://Directive_MoveOneSpaceLeft'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2170
+    - type: 'text'
+      # ../en-US.restext:399 | " Pass the Start Player to..."
+      value: 'restext://Devastation1_007'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2175
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2179
+- type: 'section'
+  # ../en-US.restext:400 | "{icon:storybook} **Clande..."
+  title: 'restext://Devastation1_008'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2188
+  - type: 'text'
+    # ../en-US.restext:401 | "When a player reveals the..."
+    value: 'restext://Devastation1_009'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2190
+  - type: 'link'
+    # ../en-US.restext:402 | "click here for a special ..."
+    label: 'restext://Devastation1_010'
+    target: 'Envelopes' # ./00073-Envelopes.mws.yaml
+    snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2192
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2196
+- type: 'section'
+  # ../en-US.restext:166 | "{icon:storybook} **Relief..."
+  title: 'restext://Heading_ReliefFromDisease'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2205
+  - type: 'text'
+    # ../en-US.restext:105 | "A \"Hereditary Disease\" ..."
+    value: 'restext://Disease_HereditaryExperiment_Rule'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2213
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2215
+  - type: 'text'
+    # ../en-US.restext:104 | "When a player completes t..."
+    value: 'restext://Disease_HereditaryExperiment_Lead'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2216
+  - type: 'link'
+    # ../en-US.restext:55 | "click here for a special ..."
+    label: 'restext://Click_SpecialMessage_Generic1'
+    target: 'HereditaryDiseaseComplete' # ./00341-HereditaryDiseaseComplete.mws.yaml
+    snapshot: true
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2217
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2221
+  - type: 'popup'
+    layout: 'end_of_round'
+    # ../en-US.restext:46 | "Click here at the end of ..."
+    label: 'restext://Click_EndRound_NextRound'
+    target: 'Changes'
+    # ../en-US.restext:348 | "End of Round"
+    okay: 'restext://UIButton_EndOfRound'
+    onclose:
+    - type: 'assign'
+      var: '_ProgressRound'
+      expr: '4' # ./00031-Changes.mws.yaml
+    snapshot: true
+    content:
+    - type: 'text'
+      # ../en-US.restext:298 | "The Early Years of the Se..."
+      value: 'restext://Round_GenerationII_EarlyEnded'
+    - type: 'break'
+      style: 'paragraph'
+    - type: 'text'
+      # ../en-US.restext:302 | "Then, perform all Start o..."
+      value: 'restext://Round_StartMiddleYears_Rule'

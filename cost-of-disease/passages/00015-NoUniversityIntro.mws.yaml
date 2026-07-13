@@ -1,0 +1,51 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3086
+---
+format: 'mws/0.4'
+passage_id: 'NoUniversityIntro'
+# ../en-US.restext:322 | "GENERATION III"
+title: 'restext://Title_GenerationIII'
+# ../en-US.restext:482 | "DROWN YOUR SORROWS"
+subtitle: 'restext://NoUniversityIntro_001'
+tags:
+- 'INTRO'
+layout: 'introduction'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3097
+- type: 'text'
+  # ../en-US.restext:483 | "They arrived by coach on ..."
+  value: 'restext://NoUniversityIntro_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3098
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3100
+- type: 'text'
+  # ../en-US.restext:484 | "Not much is written about..."
+  value: 'restext://NoUniversityIntro_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3101
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3103
+- type: 'text'
+  # ../en-US.restext:485 | "In fact, several public h..."
+  value: 'restext://NoUniversityIntro_004'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3104
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3106
+- type: 'text'
+  # ../en-US.restext:486 | "There was an emptiness in..."
+  value: 'restext://NoUniversityIntro_005'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3109
+- type: 'assign'
+  var: 'final5'
+  expr: '3'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3110
+- type: 'assign'
+  var: 'bar'
+  expr: '0'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3112
+- type: 'link'
+  # ../en-US.restext:347 | "Continue..."
+  label: 'restext://UIButton_ContinueEllipsis'
+  target: 'CreepyStar' # ./00163-CreepyStar.mws.yaml
+  snapshot: true

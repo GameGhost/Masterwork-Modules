@@ -1,0 +1,131 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32619
+---
+format: 'mws/0.4'
+passage_id: 'HuntSuccessCheck'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32621
+- type: 'switch'
+  on: 'huntcount'
+  cases:
+  - match: 2
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32623
+    - type: 'assign'
+      var: 'huntresult'
+      expr: '"success"'
+  - match: 1
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32627
+    - type: 'assign'
+      var: 'huntresult'
+      expr: '["success", "failure"].shuffled("HuntSuccessCheck_0")[0]'
+  - match: 0
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32631
+    - type: 'assign'
+      var: 'huntresult'
+      expr: '"failure"'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32633
+- type: 'conditional'
+  conditions:
+  - if: 'huntresult == "success"'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32638
+    - type: 'let'
+      var: '_rnd_HuntSuccessCheck_0'
+      # ../en-US.restext:2584 | HuntSuccessCheck_009 | "Righteous"
+      # ../en-US.restext:2585 | HuntSuccessCheck_010 | "Wondrous"
+      expr: '["restext://HuntSuccessCheck_009", "restext://HuntSuccessCheck_010"].shuffled("HuntSuccessCheck_1")[0]'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32637
+    - type: 'text'
+      # ../en-US.restext:2586 | "**A {_rnd_HuntSuccessChec..."
+      value: 'restext://HuntSuccessCheck_011'
+      lets:
+      - '_rnd_HuntSuccessCheck_0'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32641
+    - type: 'break'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32642
+    - type: 'text'
+      # ../en-US.restext:2587 | "One by one, the steel wea..."
+      value: 'restext://HuntSuccessCheck_012'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32643
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32645
+    - type: 'text'
+      # ../en-US.restext:2588 | "They would remain vigilan..."
+      value: 'restext://HuntSuccessCheck_013'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32649
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32653
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:36 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
+      target: 'Prosperity3'
+      # ../en-US.restext:344 | "Close"
+      okay: 'restext://UIButton_Close' # ./00121-Prosperity3.mws.yaml
+      snapshot: true
+      header:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32695
+      - type: 'image'
+        asset: 'image://setup/S1_MastersStudy'
+        style: 'setup-image'
+      content:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32688
+      - type: 'assign'
+        var: 'overrun'
+        # ../en-US.restext:27 | "no"
+        expr: '"restext://Choice_No_Lower"'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32696
+      - type: 'break'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32697
+      - type: 'text'
+        # ../en-US.restext:2589 | "Retrieve the **Chemistry*..."
+        value: 'restext://HuntSuccessCheck_014'
+  else:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32661
+  - type: 'let'
+    var: '_rnd_HuntSuccessCheck_1'
+    # ../en-US.restext:2578 | HuntSuccessCheck_003 | "Demons"
+    # ../en-US.restext:2579 | HuntSuccessCheck_004 | "Monsters"
+    expr: '["restext://HuntSuccessCheck_003", "restext://HuntSuccessCheck_004"].shuffled("HuntSuccessCheck_2")[0]'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32660
+  - type: 'text'
+    # ../en-US.restext:2580 | "**Overrun By {_rnd_HuntSu..."
+    value: 'restext://HuntSuccessCheck_005'
+    lets:
+    - '_rnd_HuntSuccessCheck_1'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32663
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32664
+  - type: 'text'
+    # ../en-US.restext:2581 | "The scud banked across th..."
+    value: 'restext://HuntSuccessCheck_006'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32666
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32668
+  - type: 'text'
+    # ../en-US.restext:2582 | "The townsfolk had placed ..."
+    value: 'restext://HuntSuccessCheck_007'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32673
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32675
+  - type: 'text'
+    # ../en-US.restext:2583 | "Embittered by what had be..."
+    value: 'restext://HuntSuccessCheck_008'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32678
+  - type: 'assign'
+    var: 'overrun'
+    # ../en-US.restext:31 | "yes"
+    expr: '"restext://Choice_Yes_Lower"'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32679
+  - type: 'link'
+    # ../en-US.restext:36 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
+    target: 'Prosperity3b' # ./00316-Prosperity3b.mws.yaml
+    snapshot: true

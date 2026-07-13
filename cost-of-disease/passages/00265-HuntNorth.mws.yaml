@@ -1,0 +1,24 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28383
+---
+format: 'mws/0.4'
+passage_id: 'HuntNorth'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28385
+- type: 'text'
+  # ../en-US.restext:2269 | "The Hunting party explore..."
+  value: 'restext://HuntNorth_001'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28386
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28388
+- type: 'conditional'
+  if: 'HuntNorthnextPsg == "" || HuntNorthnextPsg == 0'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28390
+  - type: 'assign'
+    var: 'HuntNorthnextPsg'
+    expr: '["Wight", "Moon Presence"].shuffled("HuntNorth_0")[0]'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28392
+- type: 'include_passage'
+  target: '${HuntNorthnextPsg}'

@@ -1,0 +1,55 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29682
+---
+format: 'mws/0.4'
+passage_id: 'VialChanged'
+# ../en-US.restext:2421 | "Selflessness for Change"
+title: 'restext://VialChanged_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29689
+- type: 'assign'
+  var: 'vialuse'
+  # ../en-US.restext:31 | "yes"
+  expr: '"restext://Choice_Yes_Lower"'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29691
+- type: 'text'
+  # ../en-US.restext:229 | "The liquid was introduced..."
+  value: 'restext://Narrative_CleansingLiquid_Introduced'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29696
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29698
+- type: 'text'
+  # ../en-US.restext:228 | "After less than a day's p..."
+  value: 'restext://Narrative_CleansingLiquid_Bloom'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29699
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29701
+- type: 'text'
+  # ../en-US.restext:230 | "Those of the Order that r..."
+  value: 'restext://Narrative_CleansingLiquid_OrderFled'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29702
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29706
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: 'GloomyGothic3'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close' # ./00173-GloomyGothic3.mws.yaml
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29721
+  - type: 'image'
+    asset: 'image://setup/S1_VialToken'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29722
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29723
+  - type: 'text'
+    # ../en-US.restext:2422 | "{charity} III gains 1VP."
+    value: 'restext://VialChanged_005'

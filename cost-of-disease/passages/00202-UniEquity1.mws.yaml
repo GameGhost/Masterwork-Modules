@@ -1,0 +1,43 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23057
+---
+format: 'mws/0.4'
+passage_id: 'UniEquity1'
+# ../en-US.restext:1817 | "Another Competitive Assessment"
+title: 'restext://UniEquity1_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23064
+- type: 'text'
+  # ../en-US.restext:1818 | "The University insisted u..."
+  value: 'restext://UniEquity1_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23065
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23067
+- type: 'text'
+  # ../en-US.restext:1819 | "However, the pitiable hon..."
+  value: 'restext://UniEquity1_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23069
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23073
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: 'UniEvent1-UltimateDisease'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close' # ./00203-UniEvent1-UltimateDisease.mws.yaml
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23088
+  - type: 'image'
+    asset: 'image://setup/ScoreTrackMarker'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23089
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23090
+  - type: 'text'
+    # ../en-US.restext:353 | "Starting with the player(..."
+    value: 'restext://VP_LastPlaceCatchUp_Rule'

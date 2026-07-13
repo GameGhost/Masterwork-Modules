@@ -1,0 +1,14 @@
+# Smoke-test chrome only — proves the layouts/ pipeline end-to-end (extraction -> module
+# directory -> ModuleLoader -> PassageRenderer -> App). Not a visual design pass: the actual
+# 9-sprite progress bar treatment (matching the reference app's I1-3/II1-3/III1-3 assets) is a
+# separate content-authoring/CSS-tuning task, same as the setup-popup layout needed after its own
+# mechanism landed.
+# TIMING: _ProgressRound updates on the link that LEAVES a round's hub, not on hub entry — so while
+# this Early-Years hub is being displayed, the value still reflects the *previous* round's exit (0
+# the very first time). See progress-map.json's _comment and docs/mws-format-latest.md §8.
+format: 'mws/0.4'
+layout_id: 'hub_early'
+footer:
+- type: 'text'
+  value: 'Progress: {_ProgressRound} / 9'
+  style: 'progress-placeholder'

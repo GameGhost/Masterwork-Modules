@@ -1,0 +1,40 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27229
+---
+format: 'mws/0.4'
+passage_id: 'ImmortalityMWUpdate2'
+# ../en-US.restext:2149 | "The Possibility Exists"
+title: 'restext://ImmortalityMWUpdate2_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27236
+- type: 'text'
+  # ../en-US.restext:2150 | "The thoughts consumed the..."
+  value: 'restext://ImmortalityMWUpdate2_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27247
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27251
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: '${round == 8 ? "Hospital2" : "Hospital3"}'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close'
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27281
+  - type: 'image'
+    asset: 'image://setup/S1_MWUpdateImmortality'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27273
+  - type: 'assign'
+    var: 'setinf'
+    expr: '1'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27282
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27283
+  - type: 'text'
+    # ../en-US.restext:2151 | "Retrieve the **Immortalit..."
+    value: 'restext://ImmortalityMWUpdate2_003'

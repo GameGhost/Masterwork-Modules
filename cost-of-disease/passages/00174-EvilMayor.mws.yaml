@@ -1,0 +1,57 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20539
+---
+format: 'mws/0.4'
+passage_id: 'EvilMayor'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20541
+- type: 'conditional'
+  conditions:
+  # ../en-US.restext:194 | "bank"
+  - if: 'building == "restext://Location_Bank_Lower"'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20546
+    - type: 'text'
+      # ../en-US.restext:309 | "**Carefully hand the Stor..."
+      value: 'restext://Storybook_HandToMayor'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20551
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20555
+    - type: 'text'
+      # ../en-US.restext:1541 | "**Avarice Aplently**"
+      value: 'restext://EvilMayor_002'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20557
+    - type: 'break'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20558
+    - type: 'text'
+      # ../en-US.restext:1542 | "The Bank had proven a val..."
+      value: 'restext://EvilMayor_003'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20567
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20571
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:36 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
+      target: '${hcount == 0 && society == "Order of St. Hubertus" ? "EvilWolvesEventStart" : "LosingOrderAid"}'
+      # ../en-US.restext:344 | "Close"
+      okay: 'restext://UIButton_Close'
+      snapshot: true
+      header:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20591
+      - type: 'image'
+        asset: 'image://setup/S1_MayorCoin'
+        style: 'setup-image'
+      content:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20592
+      - type: 'break'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20593
+      - type: 'text'
+        # ../en-US.restext:1543 | "Retrieve the **Curious Su..."
+        value: 'restext://EvilMayor_004'
+  else:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20575
+  - type: 'goto'
+    target: 'MayorLibraryEvil' # ./00355-MayorLibraryEvil.mws.yaml

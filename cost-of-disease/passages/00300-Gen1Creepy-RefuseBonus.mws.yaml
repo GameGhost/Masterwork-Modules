@@ -1,0 +1,122 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30895
+---
+format: 'mws/0.4'
+passage_id: 'Gen1Creepy-RefuseBonus'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30902
+- type: 'text'
+  # ../en-US.restext:307 | "**Carefully hand this sto..."
+  value: 'restext://Storybook_HandToGen1Creep_Private'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30907
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30912
+- type: 'popup'
+  # ../en-US.restext:53 | "Once you are ready, click..."
+  label: 'restext://Click_RevealSecretConversation'
+  snapshot: true
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31024
+  - type: 'conditional'
+    conditions:
+    # ../en-US.restext:26 | "good"
+    - if: 'wolves == "restext://Choice_Good_Lower"'
+      then:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31028
+      - type: 'text'
+        # ../en-US.restext:2476 | "**A Strange Visit**"
+        value: 'restext://Gen1Creepy_RefuseBonus_001'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31030
+      - type: 'break'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31031
+      - type: 'text'
+        # ../en-US.restext:2477 | "Consumed by the immense s..."
+        value: 'restext://Gen1Creepy_RefuseBonus_002'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31036
+      - type: 'break'
+        style: 'paragraph'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31038
+      - type: 'text'
+        # ../en-US.restext:2481 | "It appeared that they wer..."
+        value: 'restext://Gen1Creepy_RefuseBonus_006'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31049
+      - type: 'break'
+        style: 'paragraph'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31053
+      - type: 'popup'
+        layout: 'setup'
+        # ../en-US.restext:36 | "Click to continue..."
+        label: 'restext://Click_ContinueEllipsis_C'
+        target: '${(seedy == "yes") ? "Gen1Creepy-AgreedReturn" : "Hospital2"}'
+        # ../en-US.restext:344 | "Close"
+        okay: 'restext://UIButton_Close'
+        snapshot: true
+        header:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30931
+        - type: 'image'
+          asset: 'image://setup/Insanity_Icon'
+          style: 'setup-image'
+        content:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30932
+        - type: 'break'
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30933
+        - type: 'text'
+          # ../en-US.restext:2482 | "You may choose to immedia..."
+          value: 'restext://Gen1Creepy_RefuseBonus_007'
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30944
+        - type: 'break'
+          style: 'paragraph'
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30946
+        - type: 'text'
+          # ../en-US.restext:2483 | "The **Reading Room** acts..."
+          value: 'restext://Gen1Creepy_RefuseBonus_008'
+    else:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31060
+    - type: 'text'
+      # ../en-US.restext:2476 | "**A Strange Visit**"
+      value: 'restext://Gen1Creepy_RefuseBonus_001'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31062
+    - type: 'break'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31063
+    - type: 'text'
+      # ../en-US.restext:2477 | "Consumed by the immense s..."
+      value: 'restext://Gen1Creepy_RefuseBonus_002'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31068
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31070
+    - type: 'text'
+      # ../en-US.restext:2478 | "It appeared that they wer..."
+      value: 'restext://Gen1Creepy_RefuseBonus_003'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31080
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31084
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:36 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
+      target: '${(seedy == "yes") ? "Gen1Creepy-AgreedReturn" : "Hospital2"}'
+      # ../en-US.restext:344 | "Close"
+      okay: 'restext://UIButton_Close'
+      snapshot: true
+      header:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30981
+      - type: 'image'
+        asset: 'image://setup/Creepy_Icon'
+        style: 'setup-image'
+      content:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30982
+      - type: 'break'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30983
+      - type: 'text'
+        # ../en-US.restext:2479 | "You may choose to immedia..."
+        value: 'restext://Gen1Creepy_RefuseBonus_004'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30994
+      - type: 'break'
+        style: 'paragraph'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30996
+      - type: 'text'
+        # ../en-US.restext:2480 | "The **Shrine** acts the s..."
+        value: 'restext://Gen1Creepy_RefuseBonus_005'

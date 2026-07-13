@@ -1,0 +1,24 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28427
+---
+format: 'mws/0.4'
+passage_id: 'HuntEast'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28429
+- type: 'text'
+  # ../en-US.restext:2275 | "The Hunting party explore..."
+  value: 'restext://HuntEast_001'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28430
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28432
+- type: 'conditional'
+  if: 'HuntEastnextPsg == "" || HuntEastnextPsg == 0'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28434
+  - type: 'assign'
+    var: 'HuntEastnextPsg'
+    expr: '["Pricolici", "Troll"].shuffled("HuntEast_0")[0]'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28436
+- type: 'include_passage'
+  target: '${HuntEastnextPsg}'

@@ -1,0 +1,86 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10950
+---
+format: 'mws/0.4'
+passage_id: 'S5HospA1'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10952
+- type: 'conditional'
+  if: 'S5HospA1nextPsg == "" || S5HospA1nextPsg == 0'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10954
+  - type: 'switch'
+    on: 'players'
+    cases:
+    - match: 2
+      nodes:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10956
+      - type: 'conditional'
+        conditions:
+        - if: 'life >= int.Parse(macros1.either(1, 2))'
+          then:
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10959
+          - type: 'assign'
+            var: 'S5HospA1nextPsg'
+            expr: '"S5HospA1Yes"' # ./00024-S5HospA1Yes.mws.yaml
+        else:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10964
+        - type: 'assign'
+          var: 'S5HospA1nextPsg'
+          expr: '"S5HospA1No"' # ./00100-S5HospA1No.mws.yaml
+    - match: 3
+      nodes:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10969
+      - type: 'conditional'
+        conditions:
+        - if: 'life >= 2'
+          then:
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10972
+          - type: 'assign'
+            var: 'S5HospA1nextPsg'
+            expr: '"S5HospA1Yes"' # ./00024-S5HospA1Yes.mws.yaml
+        else:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10977
+        - type: 'assign'
+          var: 'S5HospA1nextPsg'
+          expr: '"S5HospA1No"' # ./00100-S5HospA1No.mws.yaml
+    - match: 4
+      nodes:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10982
+      - type: 'conditional'
+        conditions:
+        - if: 'life >= int.Parse(macros1.either(2, 3))'
+          then:
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10985
+          - type: 'assign'
+            var: 'S5HospA1nextPsg'
+            expr: '"S5HospA1Yes"' # ./00024-S5HospA1Yes.mws.yaml
+        else:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10990
+        - type: 'assign'
+          var: 'S5HospA1nextPsg'
+          expr: '"S5HospA1No"' # ./00100-S5HospA1No.mws.yaml
+    - match: 5
+      nodes:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10995
+      - type: 'conditional'
+        conditions:
+        - if: 'life >= int.Parse(macros1.either(2, 3, 4))'
+          then:
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10998
+          - type: 'assign'
+            var: 'S5HospA1nextPsg'
+            expr: '"S5HospA1Yes"' # ./00024-S5HospA1Yes.mws.yaml
+        else:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11003
+        - type: 'assign'
+          var: 'S5HospA1nextPsg'
+          expr: '"S5HospA1No"' # ./00100-S5HospA1No.mws.yaml
+    default:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11009
+    - type: 'assign'
+      var: 'S5HospA1nextPsg'
+      expr: '"S5HospA1No"' # ./00100-S5HospA1No.mws.yaml
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11012
+- type: 'goto'
+  target: '${S5HospA1nextPsg}'

@@ -1,0 +1,95 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24966
+---
+format: 'mws/0.4'
+passage_id: 'WolfJoin'
+# ../en-US.restext:114 | "Order of St. Hubertus"
+title: 'restext://Faction_OrderOfStHubertus_Plain'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24973
+- type: 'text'
+  # ../en-US.restext:1990 | "A messenger in a gray clo..."
+  value: 'restext://WolfJoin_001'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24976
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24979
+- type: 'popup'
+  # ../en-US.restext:1991 | "Pledge your service to th..."
+  label: 'restext://WolfJoin_002'
+  snapshot: true
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24990
+  - type: 'assign'
+    var: 'wcount'
+    expr: 'wcount + 1'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24991
+  - type: 'switch'
+    on: 'meet'
+    cases:
+    - match: 'nameA'
+      nodes:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24993
+      - type: 'assign'
+        var: 'allyA'
+        # ../en-US.restext:116 | "wolves"
+        expr: '"restext://Faction_Wolves_Lower"'
+    - match: 'nameB'
+      nodes:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24997
+      - type: 'assign'
+        var: 'allyB'
+        # ../en-US.restext:116 | "wolves"
+        expr: '"restext://Faction_Wolves_Lower"'
+    - match: 'nameC'
+      nodes:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25001
+      - type: 'assign'
+        var: 'allyC'
+        # ../en-US.restext:116 | "wolves"
+        expr: '"restext://Faction_Wolves_Lower"'
+    - match: 'nameD'
+      nodes:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25005
+      - type: 'assign'
+        var: 'allyD'
+        # ../en-US.restext:116 | "wolves"
+        expr: '"restext://Faction_Wolves_Lower"'
+    - match: 'nameE'
+      nodes:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25009
+      - type: 'assign'
+        var: 'allyE'
+        # ../en-US.restext:116 | "wolves"
+        expr: '"restext://Faction_Wolves_Lower"'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25011
+  - type: 'conditional'
+    conditions:
+    - if: 'round == 5'
+      then:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25013
+      - type: 'goto'
+        target: 'Devastation2' # ./00033-Devastation2.mws.yaml
+    else:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25018
+    - type: 'goto'
+      target: 'Devastation3' # ./00032-Devastation3.mws.yaml
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24980
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24983
+- type: 'conditional'
+  conditions:
+  - if: 'round == 5'
+    then:
+    - type: 'link'
+      # ../en-US.restext:77 | "Decide to do nothing instead."
+      label: 'restext://Directive_DoNothingInstead'
+      target: 'Devastation2'
+      snapshot: true # ./00033-Devastation2.mws.yaml
+  else:
+  - type: 'link'
+    # ../en-US.restext:77 | "Decide to do nothing instead."
+    label: 'restext://Directive_DoNothingInstead'
+    target: 'Devastation3'
+    snapshot: true # ./00032-Devastation3.mws.yaml

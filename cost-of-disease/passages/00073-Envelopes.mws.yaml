@@ -1,0 +1,42 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8740
+---
+format: 'mws/0.4'
+passage_id: 'Envelopes'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8745
+- type: 'text'
+  # ../en-US.restext:311 | "**Carefully pick up the S..."
+  value: 'restext://Storybook_PickUpPrivate_Bold'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8748
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8753
+- type: 'popup'
+  # ../en-US.restext:53 | "Once you are ready, click..."
+  label: 'restext://Click_RevealSecretConversation'
+  snapshot: true
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8763
+  - type: 'text'
+    # ../en-US.restext:896 | "**Secret Meeting**"
+    value: 'restext://Envelopes_002'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8765
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8766
+  - type: 'text'
+    # ../en-US.restext:897 | "When I arrived at the loc..."
+    value: 'restext://Envelopes_003'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8769
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8773
+  - type: 'link'
+    # ../en-US.restext:35 | "Click here to continue..."
+    label: 'restext://Click_ContinueEllipsis_B'
+    target: 'EnvPasscode' # ./00102-EnvPasscode.mws.yaml
+    snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8755
+- type: 'assign'
+  var: 'devpage'
+  expr: '1'

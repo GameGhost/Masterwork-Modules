@@ -1,0 +1,63 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34706
+---
+format: 'mws/0.4'
+passage_id: 'MayorResolveHunters'
+# ../en-US.restext:2805 | "Recompense for Past Leadership"
+title: 'restext://MayorResolveHunters_001'
+tags:
+- 'revised'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34715
+- type: 'text'
+  # ../en-US.restext:310 | "**Carefully hand the Stor..."
+  value: 'restext://Storybook_HandToMayor_ReadAloud'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34720
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34722
+- type: 'text'
+  # ../en-US.restext:2806 | "Though memories of the pa..."
+  value: 'restext://MayorResolveHunters_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34729
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34731
+- type: 'text'
+  # ../en-US.restext:2807 | "{mayor}'s family legacy, ..."
+  value: 'restext://MayorResolveHunters_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34734
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34737
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: 'Huntround2'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close' # ./00324-Huntround2.mws.yaml
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34754
+  - type: 'image'
+    asset: 'image://setup/S1_MayorCoin'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34760
+  - type: 'let'
+    var: '_rnd_MayorResolveHunters_0'
+    expr: 'rand_between(1, 2, "MayorResolveHunters_0")'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34755
+  - type: 'text'
+    # ../en-US.restext:2808 | "{mayor} gains **{_rnd_May..."
+    value: 'restext://MayorResolveHunters_004'
+    lets:
+    - '_rnd_MayorResolveHunters_0'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34766
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34768
+  - type: 'text'
+    # ../en-US.restext:2809 | "Return the **Commemorativ..."
+    value: 'restext://MayorResolveHunters_005'

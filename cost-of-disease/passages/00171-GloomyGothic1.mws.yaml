@@ -1,0 +1,218 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19732
+---
+format: 'mws/0.4'
+passage_id: 'GloomyGothic1'
+# ../en-US.restext:335 | "A Taste of Evil"
+title: 'restext://Title_TasteOfEvil'
+# ../en-US.restext:319 | "Early Years"
+subtitle: 'restext://Title_EarlyYears'
+tags:
+- 'checkinfinal'
+- 'HUB'
+layout: 'hub_early'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19739
+- type: 'assign'
+  var: 'round'
+  expr: '10'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19741
+- type: 'conditional'
+  if: '!gen3pg'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19745
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:343 | "Accept"
+    okay: 'restext://UIButton_Accept'
+    header:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19749
+    - type: 'image'
+      asset: 'image://setup/StartPlayerToken'
+      style: 'setup-image'
+    content:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19750
+    - type: 'break'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19751
+    - type: 'conditional'
+      conditions:
+      # ../en-US.restext:110 | "Fraternity of Hunters"
+      - if: 'society == "restext://Faction_FraternityOfHunters_Plain"'
+        then:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19755
+        - type: 'text'
+          # ../en-US.restext:1516 | "**Turn to Page 16 of the ..."
+          value: 'restext://GloomyGothic1_003'
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19762
+        - type: 'conditional'
+          if: 'players == 3'
+          then:
+          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19764
+          - type: 'text'
+            # ../en-US.restext:69 | "Then, since this is a 3 p..."
+            value: 'restext://Directive_3Player_PassMarker_A'
+      else:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19773
+      - type: 'text'
+        # ../en-US.restext:1515 | "**Turn to Page 18 of the ..."
+        value: 'restext://GloomyGothic1_002'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19785
+      - type: 'conditional'
+        if: 'players == 3'
+        then:
+        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19787
+        - type: 'text'
+          # ../en-US.restext:69 | "Then, since this is a 3 p..."
+          value: 'restext://Directive_3Player_PassMarker_A'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19791
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19793
+    - type: 'conditional'
+      if: 'exposeA <= 1'
+      then:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19795
+      - type: 'text'
+        # ../en-US.restext:92 | "Place the {ba} tile over ..."
+        value: 'restext://Directive_PlaceTile_A'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19800
+    - type: 'conditional'
+      if: 'exposeB <= 1'
+      then:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19802
+      - type: 'text'
+        # ../en-US.restext:93 | "Place the {bb} tile over ..."
+        value: 'restext://Directive_PlaceTile_B'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19807
+    - type: 'conditional'
+      if: 'exposeC <= 1'
+      then:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19809
+      - type: 'text'
+        # ../en-US.restext:94 | "Place the {bc} tile over ..."
+        value: 'restext://Directive_PlaceTile_C'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19814
+    - type: 'break'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19815
+    - type: 'text'
+      # ../en-US.restext:1517 | "Return all other Building..."
+      value: 'restext://GloomyGothic1_007'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19818
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19820
+- type: 'conditional'
+  conditions:
+  # ../en-US.restext:110 | "Fraternity of Hunters"
+  - if: 'society == "restext://Faction_FraternityOfHunters_Plain"'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19825
+    - type: 'section'
+      # ../en-US.restext:150 | "**The Hunter's Rest**"
+      title: 'restext://Heading_HuntersRest'
+      content:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19833
+      - type: 'text'
+        # ../en-US.restext:1518 | "You may only place a Serv..."
+        value: 'restext://GloomyGothic1_016'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19841
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19846
+    - type: 'section'
+      # ../en-US.restext:173 | "**Taxation**"
+      title: 'restext://Heading_Taxation'
+      content:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19854
+      - type: 'text'
+        # ../en-US.restext:187 | "At the end of each round,..."
+        value: 'restext://HuntersRest_PenaltyRule'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19861
+      - type: 'break'
+        style: 'paragraph'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19865
+      - type: 'popup'
+        layout: 'end_of_round'
+        # ../en-US.restext:45 | "Click at the end of the r..."
+        label: 'restext://Click_EndRound_Continue'
+        target: 'GloomyPenalty1'
+        # ../en-US.restext:348 | "End of Round"
+        okay: 'restext://UIButton_EndOfRound'
+        onclose:
+        - type: 'assign'
+          var: '_ProgressRound'
+          expr: '7' # ./00306-GloomyPenalty1.mws.yaml
+        snapshot: true
+        content:
+        - type: 'text'
+          # ../en-US.restext:295 | "The Early Years of the Th..."
+          value: 'restext://Round_GenerationIII_EarlyEnded'
+        - type: 'break'
+          style: 'paragraph'
+        - type: 'text'
+          # ../en-US.restext:302 | "Then, perform all Start o..."
+          value: 'restext://Round_StartMiddleYears_Rule'
+  else:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19888
+  - type: 'section'
+    # ../en-US.restext:157 | "{icon:storybook} **Master..."
+    title: 'restext://Heading_MasterworkCompletion'
+    content:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19897
+    - type: 'text'
+      # ../en-US.restext:211 | "When a player completes t..."
+      value: 'restext://Masterwork_CompleteLead'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19898
+    - type: 'link'
+      # ../en-US.restext:58 | "click here for a special ..."
+      label: 'restext://Click_SpecialMessage_Order'
+      target: 'MWTokenResolve' # ./00229-MWTokenResolve.mws.yaml
+      snapshot: true
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19900
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19904
+  - type: 'section'
+    # ../en-US.restext:160 | "**MONSTER SPAWN**"
+    title: 'restext://Heading_MonsterSpawn'
+    content:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19912
+    - type: 'text'
+      # ../en-US.restext:269 | "The Town Hall of the vill..."
+      value: 'restext://Narrative_MonsterSpawn_Flavor'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19920
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19924
+  - type: 'section'
+    # ../en-US.restext:148 | "**A Gift of Spawning**"
+    title: 'restext://Heading_GiftOfSpawning'
+    content:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19932
+    - type: 'text'
+      # ../en-US.restext:293 | "At the end of the Generat..."
+      value: 'restext://Reward_MostOccultExperiments_SpawningPods'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19943
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19947
+    - type: 'popup'
+      layout: 'end_of_round'
+      # ../en-US.restext:45 | "Click at the end of the r..."
+      label: 'restext://Click_EndRound_Continue'
+      target: 'WolvesEvil1'
+      # ../en-US.restext:348 | "End of Round"
+      okay: 'restext://UIButton_EndOfRound'
+      onclose:
+      - type: 'assign'
+        var: '_ProgressRound'
+        expr: '7' # ./00187-WolvesEvil1.mws.yaml
+      snapshot: true
+      content:
+      - type: 'text'
+        # ../en-US.restext:295 | "The Early Years of the Th..."
+        value: 'restext://Round_GenerationIII_EarlyEnded'
+      - type: 'break'
+        style: 'paragraph'
+      - type: 'text'
+        # ../en-US.restext:302 | "Then, perform all Start o..."
+        value: 'restext://Round_StartMiddleYears_Rule'

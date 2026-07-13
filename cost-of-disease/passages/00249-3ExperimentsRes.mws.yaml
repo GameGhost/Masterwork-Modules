@@ -1,0 +1,83 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26910
+---
+format: 'mws/0.4'
+passage_id: '3ExperimentsRes'
+# ../en-US.restext:315 | "Advancements in {sci3}"
+title: 'restext://Title_AdvancementsIn'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26918
+- type: 'text'
+  # ../en-US.restext:2125 | "As the years ambled onwar..."
+  value: 'restext://_3ExperimentsRes_001'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26919
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26921
+- type: 'text'
+  # ../en-US.restext:2126 | "One such visitation occur..."
+  value: 'restext://_3ExperimentsRes_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26925
+- type: 'switch'
+  on: 'sci3'
+  cases:
+  # ../en-US.restext:118 | "Biology"
+  - match: 'restext://Focus_Biology'
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26927
+    - type: 'text'
+      # ../en-US.restext:2127 | "display of colorful Chemi..."
+      value: 'restext://_3ExperimentsRes_003'
+  # ../en-US.restext:121 | "Chemistry"
+  - match: 'restext://Focus_Chemistry'
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26932
+    - type: 'text'
+      # ../en-US.restext:2128 | "labyrinthine weaving of r..."
+      value: 'restext://_3ExperimentsRes_004'
+  # ../en-US.restext:124 | "Engineering"
+  - match: 'restext://Focus_Engineering'
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26937
+    - type: 'text'
+      # ../en-US.restext:2129 | "vestibule filled with ele..."
+      value: 'restext://_3ExperimentsRes_005'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26940
+- type: 'text'
+  # ../en-US.restext:2130 | " Certainly immense stride..."
+  value: 'restext://_3ExperimentsRes_006'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26944
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26946
+- type: 'text'
+  # ../en-US.restext:2131 | "It was only natural that ..."
+  value: 'restext://_3ExperimentsRes_007'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26949
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26953
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: '${round == 7 ? "Hospital1" : round == 8 ? "Hospital2" : "Hospital3"}'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close'
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26994
+  - type: 'image'
+    asset: 'image://setup/S1_MastersStudy'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26986
+  - type: 'assign'
+    var: 'sciadv'
+    expr: '1'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26995
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26998
+  - type: 'text'
+    # ../en-US.restext:2132 | "**Retrieve the {sci3} Mas..."
+    value: 'restext://_3ExperimentsRes_008'

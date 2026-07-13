@@ -1,0 +1,75 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29747
+---
+format: 'mws/0.4'
+passage_id: 'TieredRewards2'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29749
+- type: 'popup'
+  layout: 'setup'
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29756
+  - type: 'image'
+    asset: 'image://setup/Creepy_Icon'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29757
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29759
+  - type: 'text'
+    # ../en-US.restext:78 | "Any player that donated a..."
+    value: 'restext://Directive_DonatedAExperiment_Lead'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29766
+  - type: 'let'
+    var: '_rnd_TieredRewards2_0'
+    expr: '["Gain 1VP.", "Gain an ingredient of your choice.", "Receives no bonus.", "Loses 1VP. The Order is unpleased with this meager offering."].shuffled("TieredRewards2_0")[0]'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29766
+  - type: 'text'
+    value: '{_rnd_TieredRewards2_0}'
+    lets:
+    - '_rnd_TieredRewards2_0'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29767
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29769
+  - type: 'text'
+    # ../en-US.restext:79 | "Any player that donated a..."
+    value: 'restext://Directive_DonatedBExperiment_Lead'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29776
+  - type: 'let'
+    var: '_rnd_TieredRewards2_1'
+    # ../en-US.restext:285 | "Gain $2."
+    expr: '["Gain a Knowledge of your choice.", "restext://Resource_Gain2Dollars", "Gain 2VP."].shuffled("TieredRewards2_1")[0]'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29776
+  - type: 'text'
+    value: '{_rnd_TieredRewards2_1}'
+    lets:
+    - '_rnd_TieredRewards2_1'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29777
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29779
+  - type: 'text'
+    # ../en-US.restext:80 | "Any player that donated a..."
+    value: 'restext://Directive_DonatedCExperiment_Lead'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29786
+  - type: 'let'
+    var: '_rnd_TieredRewards2_2'
+    expr: '["Gain 4VP.", "Gain $4."].shuffled("TieredRewards2_2")[0]'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29786
+  - type: 'text'
+    value: '{_rnd_TieredRewards2_2}'
+    lets:
+    - '_rnd_TieredRewards2_2'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29787
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29789
+  - type: 'text'
+    # ../en-US.restext:2425 | "Any player that chose not..."
+    value: 'restext://TieredRewards2_001'
+  # ../en-US.restext:343 | "Accept"
+  okay: 'restext://UIButton_Accept'
+  target: 'GloomyGothic3' # ./00173-GloomyGothic3.mws.yaml
+  snapshot: true

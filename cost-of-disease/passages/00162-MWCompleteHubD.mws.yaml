@@ -1,0 +1,75 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18938
+---
+format: 'mws/0.4'
+passage_id: 'MWCompleteHubD'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18942
+- type: 'let'
+  var: '_rnd_MWCompleteHubD_0'
+  # ../en-US.restext:268 | Narrative_MasterworkExclaim_WorkDone | "The Work is Done"
+  # ../en-US.restext:265 | Narrative_MasterworkExclaim_Impossible | "I Have Done the Impossible"
+  # ../en-US.restext:267 | Narrative_MasterworkExclaim_LegacyEnsured | "My Legacy is Ensured"
+  # ../en-US.restext:266 | Narrative_MasterworkExclaim_Laugh | "AH HA HA HAAAAA!!!"
+  # ../en-US.restext:263 | Narrative_MasterworkExclaim_GloriousCreation | "My Glorious Creation"
+  # ../en-US.restext:264 | Narrative_MasterworkExclaim_GloryForever | "The Glory is Mine Forever!"
+  expr: '["restext://Narrative_MasterworkExclaim_WorkDone", "restext://Narrative_MasterworkExclaim_Impossible", "restext://Narrative_MasterworkExclaim_LegacyEnsured", "restext://Narrative_MasterworkExclaim_Laugh", "restext://Narrative_MasterworkExclaim_GloriousCreation", "restext://Narrative_MasterworkExclaim_GloryForever"].shuffled("MWCompleteHubD_0")[0]'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18942
+- type: 'text'
+  # ../en-US.restext:1442 | "**{_rnd_MWCompleteHubD_0}..."
+  value: 'restext://MWCompleteHubD_001'
+  lets:
+  - '_rnd_MWCompleteHubD_0'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18949
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18950
+- type: 'switch'
+  on: 'typeD'
+  cases:
+  - match: 'creature'
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18952
+    - type: 'text'
+      # ../en-US.restext:261 | "Upon the stroke of midnig..."
+      value: 'restext://Narrative_MasterworkCreation_Lightning'
+  - match: 'power'
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18958
+    - type: 'text'
+      # ../en-US.restext:1444 | "To see my work in the fle..."
+      value: 'restext://MWCompleteHubD_003'
+  - match: 'robot'
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18966
+    - type: 'text'
+      # ../en-US.restext:1445 | "A brief, blinding flash a..."
+      value: 'restext://MWCompleteHubD_004'
+  - match: 'weapon'
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18975
+    - type: 'text'
+      # ../en-US.restext:262 | "I seized the firing mecha..."
+      value: 'restext://Narrative_MasterworkCreation_Weapon'
+  - match: 'medicine'
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18979
+    - type: 'text'
+      # ../en-US.restext:1446 | "I tapped the glass bottle..."
+      value: 'restext://MWCompleteHubD_005'
+  - match: 'drug'
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18988
+    - type: 'text'
+      # ../en-US.restext:1447 | "I observed the effects as..."
+      value: 'restext://MWCompleteHubD_006'
+  - match: 'demon'
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18994
+    - type: 'text'
+      # ../en-US.restext:1448 | "The world darkened around..."
+      value: 'restext://MWCompleteHubD_007'
+  default:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19002
+  - type: 'text'
+    # ../en-US.restext:1443 | "The preparations proved t..."
+    value: 'restext://MWCompleteHubD_002'

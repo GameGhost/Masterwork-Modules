@@ -1,0 +1,85 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1555
+---
+format: 'mws/0.4'
+passage_id: 'Start2'
+# ../en-US.restext:330 | "MY FATHER'S WORK"
+title: 'restext://Title_MyFathersWork'
+tags:
+- 'ck'
+- 'updated'
+layout: 'hub'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1569
+- type: 'text'
+  # ../en-US.restext:364 | "**Choose a Scenario** "
+  value: 'restext://Start2_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1570
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1572
+    - type: 'text'
+      # ../en-US.restext:365 | "**for 2 players:**"
+      value: 'restext://Start2_003'
+  - match: 3
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1576
+    - type: 'text'
+      # ../en-US.restext:366 | "**for 3 players:**"
+      value: 'restext://Start2_004'
+  - match: 4
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1580
+    - type: 'text'
+      # ../en-US.restext:367 | "**for 4 players:**"
+      value: 'restext://Start2_005'
+  - match: 5
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1584
+    - type: 'text'
+      # ../en-US.restext:368 | "**for 5 players:**"
+      value: 'restext://Start2_006'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1587
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1589
+- type: 'link'
+  # ../en-US.restext:369 | "A Time of War"
+  label: 'restext://Start2_007'
+  target: 'NoLink' # ./00340-NoLink.mws.yaml
+  snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1590
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1591
+- type: 'link'
+  # ../en-US.restext:370 | "Fear and Politics"
+  label: 'restext://Start2_008'
+  target: 'NoLink' # ./00340-NoLink.mws.yaml
+  snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1592
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1593
+- type: 'link'
+  # ../en-US.restext:371 | "The Cost of Disease"
+  label: 'restext://Start2_009'
+  target: 'Preparations-TCOD' # ./00222-Preparations-TCOD.mws.yaml
+  snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1594
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1599
+- type: 'text'
+  # ../en-US.restext:372 | "_For an explanation of ho..."
+  value: 'restext://Start2_010'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1604
+- type: 'link'
+  # ../en-US.restext:48 | "click here."
+  label: 'restext://Click_Here_Period'
+  target: 'StoryBook' # ./00040-StoryBook.mws.yaml
+  snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1606
+- type: 'assign'
+  var: 'tracker'
+  expr: '0'

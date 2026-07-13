@@ -1,0 +1,52 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26551
+---
+format: 'mws/0.4'
+passage_id: 'CureNegCons'
+# ../en-US.restext:2092 | "Distrust in Medicine"
+title: 'restext://CureNegCons_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26560
+- type: 'text'
+  # ../en-US.restext:2093 | "With the Hospital slowly ..."
+  value: 'restext://CureNegCons_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26561
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26563
+- type: 'text'
+  # ../en-US.restext:2094 | "Having no target for thei..."
+  value: 'restext://CureNegCons_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26566
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26570
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: 'OptiontoKillStart'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close' # ./00281-OptiontoKillStart.mws.yaml
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26592
+  - type: 'image'
+    asset: 'image://setup/AngryMob_Icon'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26593
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26601
+  - type: 'conditional'
+    if: 'fevercure == "" || fevercure == 0'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26602
+    - type: 'assign'
+      var: 'fevercure'
+      expr: 'nameA'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26597
+  - type: 'text'
+    # ../en-US.restext:2095 | "**Move the** {icon:angrym..."
+    value: 'restext://CureNegCons_004'

@@ -1,0 +1,34 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25308
+---
+format: 'mws/0.4'
+passage_id: 'HelpingEvil2'
+tags:
+- 'revised'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25310
+- type: 'section'
+  style: 'panel'
+  content: []
+- type: 'link'
+  # ../en-US.restext:346 | "Continue"
+  label: 'restext://UIButton_Continue'
+  target: '${society == "Fraternity of Hunters" ? "GloomyHunterIntro" : "GloomyWolvesIntro"}'
+  snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25315
+- type: 'image'
+  asset: 'image://setup/S1_EstateUpgradeBACK'
+  style: 'setup-image'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25317
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25321
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:343 | "Accept"
+  okay: 'restext://UIButton_Accept'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25321
+  - type: 'text'
+    # ../en-US.restext:2825 | "Then, starting with the p..."
+    value: 'restext://HelpingEvil2_001'

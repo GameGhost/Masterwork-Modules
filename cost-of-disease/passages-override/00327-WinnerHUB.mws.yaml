@@ -1,0 +1,44 @@
+# TheCostofDisease.cs:33418
+---
+format: 'mws/0.4'
+passage_id: 'WinnerHUB'
+tags:
+- 'CODINGHELP'
+layout: 'narration'
+# Override: WinnerHUB uses a ranking algorithm (ascending sort + manual reversal + nested loops)
+# that cannot be auto-extracted. This hand-authored file implements equivalent logic using
+# toSorted and foreach on an ad-hoc record array.
+#
+# Players A and B are always included. C is included when players >= 3; D when players >= 4.
+# Sorted descending by points (highest first).
+nodes:
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: '>3'
+    nodes:
+    - type: 'let'
+      var: 'players_raw'
+      expr: '[{ player_name: nameA, points: scoreA }, { player_name: nameB, points: scoreB }, { player_name: nameC, points: scoreC }, { player_name: nameD, points: scoreD }]'
+  - match: '>2'
+    nodes:
+    - type: 'let'
+      var: 'players_raw'
+      expr: '[{ player_name: nameA, points: scoreA }, { player_name: nameB, points: scoreB }, { player_name: nameC, points: scoreC }]'
+  default:
+  - type: 'let'
+    var: 'players_raw'
+    expr: '[{ player_name: nameA, points: scoreA }, { player_name: nameB, points: scoreB }]'
+# TODO ViewRankingPage.instance.playerRankList.Clear();
+- type: 'let'
+  var: 'players_ranked'
+  expr: 'players_raw.toSorted("descending", "points")'
+- type: 'foreach'
+  var: 'entry'
+  in: 'players_ranked'
+  do:
+  # TODO ViewRankingPage.instance.playerRankList.Add(entry.player_name);
+  - type: 'text'
+    value: 'Player Name: {entry.player_name} — Points: {entry.points}'
+  - type: 'break'
+- type: 'break'

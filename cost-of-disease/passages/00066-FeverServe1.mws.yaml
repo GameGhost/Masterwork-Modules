@@ -1,0 +1,44 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7909
+---
+format: 'mws/0.4'
+passage_id: 'FeverServe1'
+# ../en-US.restext:845 | "Fortuitous Assistance"
+title: 'restext://FeverServe1_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7916
+- type: 'text'
+  # ../en-US.restext:846 | "The small village certain..."
+  value: 'restext://FeverServe1_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7920
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7922
+- type: 'text'
+  # ../en-US.restext:847 | "The family was overjoyed ..."
+  value: 'restext://FeverServe1_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7923
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7927
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: 'Fever2'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close' # ./00029-Fever2.mws.yaml
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7941
+  - type: 'image'
+    asset: 'image://setup/GainServantFromLost'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7942
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7944
+  - type: 'text'
+    # ../en-US.restext:848 | "Each player **pays $1 and..."
+    value: 'restext://FeverServe1_004'

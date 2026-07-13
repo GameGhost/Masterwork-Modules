@@ -1,0 +1,44 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10439
+---
+format: 'mws/0.4'
+passage_id: 'DetEffect3'
+# ../en-US.restext:327 | "Minor Deleterious Effect"
+title: 'restext://Title_MinorDeleteriousEffect'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10447
+- type: 'text'
+  # ../en-US.restext:1071 | "All and all, the continue..."
+  value: 'restext://DetEffect3_001'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10448
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10452
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: 'DeteriorationHub'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close' # ./00090-DeteriorationHub.mws.yaml
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10473
+  - type: 'image'
+    asset: 'image://setup/S1_Immortality'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10465
+  - type: 'assign'
+    var: 'det3'
+    expr: '"visited"'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10484
+  - type: 'let'
+    var: '_rnd_DetEffect3_0'
+    expr: 'rand_between(1, 2, "DetEffect3_0")'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10475
+  - type: 'text'
+    # ../en-US.restext:1072 | "Any player with an **Immo..."
+    value: 'restext://DetEffect3_002'
+    lets:
+    - '_rnd_DetEffect3_0'

@@ -1,0 +1,37 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34400
+---
+format: 'mws/0.4'
+passage_id: 'GoodFrenzyEvent2b'
+# ../en-US.restext:339 | "VOTE OUTCOME"
+title: 'restext://Title_VoteOutcome_Caps'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34408
+- type: 'text'
+  # ../en-US.restext:358 | "Once all players have cho..."
+  value: 'restext://Vote_TallyRule_B'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34414
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34418
+- type: 'text'
+  # ../en-US.restext:139 | "**Click on the result of ..."
+  value: 'restext://Heading_ClickOnResultOfYourVote'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34420
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34422
+- type: 'link'
+  # ../en-US.restext:2762 | "We encouraged this frenzi..."
+  label: 'restext://GoodFrenzyEvent2b_002'
+  target: 'YesFrenzy' # ./00217-YesFrenzy.mws.yaml
+  snapshot: true
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34423
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34425
+- type: 'link'
+  # ../en-US.restext:237 | "For God's sake, we did no..."
+  label: 'restext://Narrative_DidNotEncourage'
+  target: 'NoFrenzy' # ./00218-NoFrenzy.mws.yaml
+  snapshot: true

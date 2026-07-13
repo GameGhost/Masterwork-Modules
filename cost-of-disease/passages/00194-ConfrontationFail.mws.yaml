@@ -1,0 +1,104 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22278
+---
+format: 'mws/0.4'
+passage_id: 'ConfrontationFail'
+# ../en-US.restext:1720 | "A Hero's Welcome"
+title: 'restext://ConfrontationFail_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22285
+- type: 'assign'
+  var: 'taxes'
+  # ../en-US.restext:31 | "yes"
+  expr: '"restext://Choice_Yes_Lower"'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22287
+- type: 'text'
+  # ../en-US.restext:1721 | "The Hunters return relati..."
+  value: 'restext://ConfrontationFail_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22288
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22290
+- type: 'text'
+  # ../en-US.restext:1722 | "For a family that until n..."
+  value: 'restext://ConfrontationFail_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22294
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22298
+- type: 'text'
+  # ../en-US.restext:1723 | "**Experimental Bonus**"
+  value: 'restext://ConfrontationFail_004'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22300
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22301
+- type: 'text'
+  # ../en-US.restext:1724 | "The player(s) who contrib..."
+  value: 'restext://ConfrontationFail_005'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22311
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22313
+- type: 'text'
+  # ../en-US.restext:1725 | "All contributed Experimen..."
+  value: 'restext://ConfrontationFail_006'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22314
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22318
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: 'GloomyGothic3'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close' # ./00173-GloomyGothic3.mws.yaml
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22333
+  - type: 'image'
+    asset: 'image://setup/AngryMob_Icon'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22339
+  - type: 'let'
+    var: '_rnd_ConfrontationFail_0'
+    expr: 'rand_between(2, 3, "ConfrontationFail_0")'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22335
+  - type: 'text'
+    # ../en-US.restext:1726 | "Move the {icon:angrymob_i..."
+    value: 'restext://ConfrontationFail_007'
+    lets:
+    - '_rnd_ConfrontationFail_0'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22342
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22346
+  - type: 'text'
+    # ../en-US.restext:1727 | "**ALL players must choose..."
+    value: 'restext://ConfrontationFail_008'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22348
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22349
+  - type: 'text'
+    # ../en-US.restext:1728 | "Pay $3."
+    value: 'restext://ConfrontationFail_009'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22350
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22351
+  - type: 'text'
+    # ../en-US.restext:1729 | "Return 3 resources to the..."
+    value: 'restext://ConfrontationFail_010'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22352
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22353
+  - type: 'text'
+    # ../en-US.restext:1730 | "Discard 2 Estate Upgrades."
+    value: 'restext://ConfrontationFail_011'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22354
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22358
+  - type: 'text'
+    # ../en-US.restext:1731 | "_If this is not possible,..."
+    value: 'restext://ConfrontationFail_012'

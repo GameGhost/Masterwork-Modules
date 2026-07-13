@@ -1,0 +1,61 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3372
+---
+format: 'mws/0.4'
+passage_id: 'SymposiumFail'
+# ../en-US.restext:530 | "Symposium Failure"
+title: 'restext://SymposiumFail_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3382
+- type: 'let'
+  var: '_rnd_SymposiumFail_0'
+  # ../en-US.restext:531 | SymposiumFail_002 | "Then, we were treated to ..."
+  # ../en-US.restext:532 | SymposiumFail_003 | "Steam shot from the abomi..."
+  expr: '["restext://SymposiumFail_002", "restext://SymposiumFail_003"].shuffled("SymposiumFail_0")[0]'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3380
+- type: 'text'
+  # ../en-US.restext:533 | "\"Preposterous. A vaudevi..."
+  value: 'restext://SymposiumFail_004'
+  lets:
+  - '_rnd_SymposiumFail_0'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3387
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3389
+- type: 'text'
+  # ../en-US.restext:534 | "A professional scolding s..."
+  value: 'restext://SymposiumFail_005'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3395
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3397
+- type: 'text'
+  # ../en-US.restext:535 | "The family returned home,..."
+  value: 'restext://SymposiumFail_006'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3402
+- type: 'assign'
+  var: 'uni'
+  # ../en-US.restext:27 | "no"
+  expr: '"restext://Choice_No_Lower"'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3403
+- type: 'assign'
+  var: 'final5'
+  expr: '5'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3404
+- type: 'conditional'
+  conditions:
+  - if: 'pana == "unleash"'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3406
+    - type: 'link'
+      # ../en-US.restext:36 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
+      target: 'PanaceaUnleash' # ./00060-PanaceaUnleash.mws.yaml
+      snapshot: true
+  else:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3410
+  - type: 'link'
+    # ../en-US.restext:36 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
+    target: 'Hospital3' # ./00035-Hospital3.mws.yaml
+    snapshot: true

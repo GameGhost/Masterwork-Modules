@@ -1,0 +1,103 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30796
+---
+format: 'mws/0.4'
+passage_id: 'Gen1SanityNo'
+# ../en-US.restext:2471 | "Time is Precious"
+title: 'restext://Gen1SanityNo_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30803
+- type: 'assign'
+  var: 'vacation'
+  # ../en-US.restext:27 | "no"
+  expr: '"restext://Choice_No_Lower"'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30805
+- type: 'text'
+  # ../en-US.restext:2472 | "There was no time to rest..."
+  value: 'restext://Gen1SanityNo_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30810
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30812
+- type: 'conditional'
+  if: 'Gen1SanityNonextPsg == "" || Gen1SanityNonextPsg == 0'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30814
+  - type: 'assign'
+    var: 'Gen1SanityNonextPsg'
+    expr: 'rand_between(1, 2, "Gen1SanityNo_0")'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30816
+- type: 'assign'
+  var: 'randrew'
+  expr: 'Gen1SanityNonextPsg'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30817
+- type: 'conditional'
+  conditions:
+  - if: 'randrew == 1'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30821
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:36 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
+      target: '${round == 1 ? "Fever1" : round == 2 ? "Fever2" : "Fever3"}'
+      # ../en-US.restext:344 | "Close"
+      okay: 'restext://UIButton_Close'
+      snapshot: true
+      header:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30857
+      - type: 'image'
+        asset: 'image://setup/Creepy_Icon'
+        style: 'setup-image'
+      content:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30849
+      - type: 'assign'
+        var: 'sane3'
+        expr: '1'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30858
+      - type: 'break'
+        style: 'paragraph'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30860
+      - type: 'text'
+        # ../en-US.restext:2473 | "Gain **$1**. Gain **1** {..."
+        value: 'restext://Gen1SanityNo_003'
+  else:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30826
+  - type: 'switch'
+    on: 'round'
+    cases:
+    - match: 1
+      nodes:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30828
+      - type: 'assign'
+        var: 'sane3'
+        expr: '1'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30829
+      - type: 'link'
+        # ../en-US.restext:52 | "Click to return..."
+        label: 'restext://Click_Return'
+        target: 'Fever1' # ./00002-Fever1.mws.yaml
+        snapshot: true
+    - match: 2
+      nodes:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30833
+      - type: 'assign'
+        var: 'sane3'
+        expr: '1'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30834
+      - type: 'link'
+        # ../en-US.restext:52 | "Click to return..."
+        label: 'restext://Click_Return'
+        target: 'Fever2' # ./00029-Fever2.mws.yaml
+        snapshot: true
+    default:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30839
+    - type: 'assign'
+      var: 'sane3'
+      expr: '1'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30840
+    - type: 'link'
+      # ../en-US.restext:52 | "Click to return..."
+      label: 'restext://Click_Return'
+      target: 'Fever3' # ./00030-Fever3.mws.yaml
+      snapshot: true

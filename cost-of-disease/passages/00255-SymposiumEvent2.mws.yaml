@@ -1,0 +1,94 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27432
+---
+format: 'mws/0.4'
+passage_id: 'SymposiumEvent2'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27434
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27436
+    - type: 'assign'
+      var: 'symp'
+      expr: 'rand_between(3, 4, "SymposiumEvent2_0")'
+  - match: 3
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27440
+    - type: 'assign'
+      var: 'symp'
+      expr: 'rand_between(4, 6, "SymposiumEvent2_1")'
+  - match: 4
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27444
+    - type: 'assign'
+      var: 'symp'
+      expr: 'rand_between(6, 8, "SymposiumEvent2_2")'
+  - match: 5
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27448
+    - type: 'assign'
+      var: 'symp'
+      expr: 'rand_between(8, 10, "SymposiumEvent2_3")'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27452
+- type: 'text'
+  # ../en-US.restext:2167 | "**For the Advancement of ..."
+  value: 'restext://SymposiumEvent2_001'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27455
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27456
+- type: 'text'
+  # ../en-US.restext:2168 | "The symposium began with ..."
+  value: 'restext://SymposiumEvent2_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27457
+- type: 'switch'
+  on: 'sci3'
+  cases:
+  # ../en-US.restext:118 | "Biology"
+  - match: 'restext://Focus_Biology'
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27459
+    - type: 'text'
+      # ../en-US.restext:2170 | "biologists"
+      value: 'restext://SymposiumEvent2_004'
+  # ../en-US.restext:121 | "Chemistry"
+  - match: 'restext://Focus_Chemistry'
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27463
+    - type: 'text'
+      # ../en-US.restext:2171 | "chemists"
+      value: 'restext://SymposiumEvent2_005'
+  default:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27468
+  - type: 'text'
+    # ../en-US.restext:2169 | "engineers"
+    value: 'restext://SymposiumEvent2_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27470
+- type: 'text'
+  # ../en-US.restext:2172 | " from Eastern Europe. Whe..."
+  value: 'restext://SymposiumEvent2_006'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27474
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27476
+- type: 'text'
+  # ../en-US.restext:2173 | "As noted by several criti..."
+  value: 'restext://SymposiumEvent2_007'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27477
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27479
+- type: 'text'
+  # ../en-US.restext:2174 | "The spirited presentation..."
+  value: 'restext://SymposiumEvent2_008'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27480
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27482
+- type: 'link'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: 'SymposiumEvent3' # ./00061-SymposiumEvent3.mws.yaml
+  snapshot: true

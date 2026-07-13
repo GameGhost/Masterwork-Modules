@@ -1,0 +1,69 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23280
+---
+format: 'mws/0.4'
+passage_id: 'UniEvent2-Success'
+# ../en-US.restext:1844 | "A Wondrous Success"
+title: 'restext://UniEvent2_Success_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23287
+- type: 'text'
+  # ../en-US.restext:1845 | "Symptoms: Nausea, fever, ..."
+  value: 'restext://UniEvent2_Success_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23288
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23290
+- type: 'text'
+  # ../en-US.restext:1846 | "The following week, the d..."
+  value: 'restext://UniEvent2_Success_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23293
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23295
+- type: 'text'
+  # ../en-US.restext:1847 | "However, the effect was n..."
+  value: 'restext://UniEvent2_Success_004'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23296
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23298
+- type: 'text'
+  # ../en-US.restext:1848 | "It wasn't long before the..."
+  value: 'restext://UniEvent2_Success_005'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23299
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23303
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: 'DetEffectRandom'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close' # ./00166-DetEffectRandom.mws.yaml
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23325
+  - type: 'image'
+    asset: 'image://setup/Creepy_Icon'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23317
+  - type: 'assign'
+    var: 'ultimate'
+    # ../en-US.restext:31 | "yes"
+    expr: '"restext://Choice_Yes_Lower"'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23326
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23327
+  - type: 'text'
+    # ../en-US.restext:1849 | "Any player that voted to ..."
+    value: 'restext://UniEvent2_Success_006'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23340
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23342
+  - type: 'text'
+    # ../en-US.restext:1850 | "Any player that did not c..."
+    value: 'restext://UniEvent2_Success_007'

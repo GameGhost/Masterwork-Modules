@@ -1,0 +1,57 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24014
+---
+format: 'mws/0.4'
+passage_id: 'LycanMessageGood'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24016
+- type: 'conditional'
+  conditions:
+  # ../en-US.restext:26 | "good"
+  - if: 'wolves == "restext://Choice_Good_Lower"'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24020
+    - type: 'text'
+      # ../en-US.restext:1899 | "**The Form of the Wolf**"
+      value: 'restext://LycanMessageGood_001'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24022
+    - type: 'break'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24023
+    - type: 'text'
+      # ../en-US.restext:1900 | "Though the sight had now ..."
+      value: 'restext://LycanMessageGood_002'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24026
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24029
+    - type: 'text'
+      # ../en-US.restext:73 | "Does any player have the ..."
+      value: 'restext://Directive_CheckLycanthropicStrength'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24036
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24039
+    - type: 'link'
+      # ../en-US.restext:32 | "Yes."
+      label: 'restext://Choice_Yes_Period'
+      target: 'LycanGood' # ./00181-LycanGood.mws.yaml
+      snapshot: true
+      onclick:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24055
+      - type: 'assign'
+        var: 'lycan'
+        # ../en-US.restext:31 | "yes"
+        expr: '"restext://Choice_Yes_Lower"'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24040
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24042
+    - type: 'link'
+      # ../en-US.restext:28 | "No."
+      label: 'restext://Choice_No_Period'
+      target: 'Prosperity1' # ./00352-Prosperity1.mws.yaml
+      snapshot: true
+  else:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24047
+  - type: 'goto'
+    target: 'Prosperity1' # ./00352-Prosperity1.mws.yaml

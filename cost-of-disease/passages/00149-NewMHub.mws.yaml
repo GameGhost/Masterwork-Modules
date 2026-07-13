@@ -1,0 +1,39 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:17359
+---
+format: 'mws/0.4'
+passage_id: 'NewMHub'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:17361
+- type: 'switch'
+  on: 'trig'
+  cases:
+  - match: 'players'
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:17363
+    - type: 'goto'
+      target: 'NoUni1' # ./00011-NoUni1.mws.yaml
+  - match: 1
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:17367
+    - type: 'goto'
+      target: 'NewMaster1B' # ./00139-NewMaster1B.mws.yaml
+  - match: 2
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:17371
+    - type: 'goto'
+      target: 'NewMaster1C' # ./00150-NewMaster1C.mws.yaml
+  - match: 3
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:17375
+    - type: 'goto'
+      target: 'NewMaster1D' # ./00153-NewMaster1D.mws.yaml
+  - match: 4
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:17379
+    - type: 'goto'
+      target: 'NewMaster1E' # ./00158-NewMaster1E.mws.yaml
+  default:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:17383
+  - type: 'goto'
+    target: 'NoUni1' # ./00011-NoUni1.mws.yaml

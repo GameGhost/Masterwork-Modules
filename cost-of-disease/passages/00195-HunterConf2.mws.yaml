@@ -1,0 +1,79 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22386
+---
+format: 'mws/0.4'
+passage_id: 'HunterConf2'
+# ../en-US.restext:1734 | "EXPERIMENTS UNLEASHED"
+title: 'restext://HunterConf2_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22394
+- type: 'text'
+  # ../en-US.restext:1735 | "All remaining eligible pl..."
+  value: 'restext://HunterConf2_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22407
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22409
+- type: 'text'
+  # ../en-US.restext:1736 | "Once all players have cho..."
+  value: 'restext://HunterConf2_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22411
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22414
+- type: 'text'
+  # ../en-US.restext:1737 | "Then, players will **coun..."
+  value: 'restext://HunterConf2_004'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22419
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22422
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22424
+    - type: 'assign'
+      var: 'huntnum'
+      expr: 'rand_between(3, 7, "HunterConf2_0")'
+  - match: 3
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22428
+    - type: 'assign'
+      var: 'huntnum'
+      expr: 'rand_between(8, 12, "HunterConf2_1")'
+  - match: 4
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22432
+    - type: 'assign'
+      var: 'huntnum'
+      expr: 'rand_between(11, 15, "HunterConf2_2")'
+  - match: 5
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22436
+    - type: 'assign'
+      var: 'huntnum'
+      expr: 'rand_between(13, 19, "HunterConf2_3")'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22421
+- type: 'text'
+  # ../en-US.restext:1738 | "If the value is equal to ..."
+  value: 'restext://HunterConf2_005'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22441
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22442
+- type: 'text'
+  # ../en-US.restext:1739 | "If the value is less, the..."
+  value: 'restext://HunterConf2_006'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22443
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22447
+- type: 'popup'
+  layout: 'bidding'
+  # ../en-US.restext:1740 | "Click to start the bid."
+  label: 'restext://HunterConf2_007'
+  target: 'HunterConf3'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close' # ./00350-HunterConf3.mws.yaml
+  snapshot: false

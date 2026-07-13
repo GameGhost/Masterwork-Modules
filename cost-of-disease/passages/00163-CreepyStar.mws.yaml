@@ -1,0 +1,44 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19019
+---
+format: 'mws/0.4'
+passage_id: 'CreepyStar'
+# ../en-US.restext:1451 | "A Grudge Towards Intellect"
+title: 'restext://CreepyStar_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19026
+- type: 'text'
+  # ../en-US.restext:1452 | "As many found solace in d..."
+  value: 'restext://CreepyStar_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19027
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19029
+- type: 'text'
+  # ../en-US.restext:1453 | "The reputation of a famed..."
+  value: 'restext://CreepyStar_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19030
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19034
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: '${life == 0 ? pana == "unleash" ? "PanaceaUnleashCons1" : "NewMaster" : "ImmortalNoUni"}'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close'
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19049
+  - type: 'image'
+    asset: 'image://setup/Creepy_Icon'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19050
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19052
+  - type: 'text'
+    # ../en-US.restext:1454 | "The player(s) with the mo..."
+    value: 'restext://CreepyStar_004'

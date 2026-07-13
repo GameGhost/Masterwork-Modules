@@ -1,0 +1,34 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2295
+---
+format: 'mws/0.4'
+passage_id: 'S5Special1'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2299
+- type: 'text'
+  # ../en-US.restext:414 | "**The Town Is in Need of ..."
+  value: 'restext://S5Special1_001'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2303
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2305
+- type: 'text'
+  # ../en-US.restext:415 | "After the untimely death ..."
+  value: 'restext://S5Special1_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2306
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2308
+- type: 'text'
+  # ../en-US.restext:416 | "This was especially press..."
+  value: 'restext://S5Special1_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2336
+- type: 'assign'
+  var: 'tcodgen1'
+  expr: '0'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2338
+- type: 'link'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: 'S5Special1a' # ./00081-S5Special1a.mws.yaml
+  snapshot: true

@@ -1,0 +1,86 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11335
+---
+format: 'mws/0.4'
+passage_id: 'Diseases1'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11337
+- type: 'assign'
+  var: 'disease1'
+  expr: 'rand_between(1, 2, "Diseases1_0")'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11338
+- type: 'switch'
+  on: 'disease1'
+  cases:
+  - match: 1
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11342
+    - type: 'text'
+      # ../en-US.restext:1143 | "**A Year of Sickness**"
+      value: 'restext://Diseases1_001'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11344
+    - type: 'break'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11345
+    - type: 'text'
+      # ../en-US.restext:1144 | "Even the most agile mind ..."
+      value: 'restext://Diseases1_002'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11348
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11352
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:36 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
+      target: '${seedy == "no" ? "Gen1Creepy-RefusalBuild" : "Devastation2"}'
+      # ../en-US.restext:344 | "Close"
+      okay: 'restext://UIButton_Close'
+      snapshot: true
+      header:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11385
+      - type: 'image'
+        asset: 'image://setup/S1_DiseaseExperiment'
+        style: 'setup-image'
+      content:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11386
+      - type: 'break'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11387
+      - type: 'text'
+        # ../en-US.restext:1145 | "All players that have not..."
+        value: 'restext://Diseases1_003'
+  - match: 2
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11358
+    - type: 'text'
+      # ../en-US.restext:1146 | "**Rest and Time**"
+      value: 'restext://Diseases1_004'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11360
+    - type: 'break'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11361
+    - type: 'text'
+      # ../en-US.restext:1147 | "It seemed that the cousin..."
+      value: 'restext://Diseases1_005'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11365
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11369
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:36 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
+      target: '${seedy == "no" ? "Gen1Creepy-RefusalBuild" : "Devastation2"}'
+      # ../en-US.restext:344 | "Close"
+      okay: 'restext://UIButton_Close'
+      snapshot: true
+      header:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11423
+      - type: 'image'
+        asset: 'image://setup/S1_DiseaseExperiment'
+        style: 'setup-image'
+      content:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11424
+      - type: 'break'
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11425
+      - type: 'text'
+        # ../en-US.restext:1148 | "The Hereditary disease ha..."
+        value: 'restext://Diseases1_006'

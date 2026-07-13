@@ -1,0 +1,44 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7153
+---
+format: 'mws/0.4'
+passage_id: 'PanaceaTooOld'
+# ../en-US.restext:784 | "Too Old"
+title: 'restext://PanaceaTooOld_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7160
+- type: 'text'
+  # ../en-US.restext:785 | "With only a few years lef..."
+  value: 'restext://PanaceaTooOld_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7166
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7168
+- type: 'text'
+  # ../en-US.restext:786 | "This crucial realization ..."
+  value: 'restext://PanaceaTooOld_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7171
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7175
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: 'Hospital3'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close' # ./00035-Hospital3.mws.yaml
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7189
+  - type: 'image'
+    asset: 'image://setup/S1_Pancea'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7190
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7194
+  - type: 'text'
+    # ../en-US.restext:787 | "**Move forward 1 space on..."
+    value: 'restext://PanaceaTooOld_004'

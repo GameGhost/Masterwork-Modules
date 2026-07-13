@@ -1,0 +1,43 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19269
+---
+format: 'mws/0.4'
+passage_id: 'PanaceaIntro'
+# ../en-US.restext:1484 | "Eradication Forever"
+title: 'restext://PanaceaIntro_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19277
+- type: 'text'
+  # ../en-US.restext:1485 | "Were they still not satis..."
+  value: 'restext://PanaceaIntro_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19278
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19280
+- type: 'text'
+  # ../en-US.restext:1486 | "A Cure-All, or Grecian Pa..."
+  value: 'restext://PanaceaIntro_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19283
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19287
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: '${round == 7 ? "Hospital1" : round == 8 ? "Hospital2" : "Hospital3"}'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close'
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19302
+  - type: 'image'
+    asset: 'image://setup/S1_Pancea'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19303
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19304
+  - type: 'text'
+    # ../en-US.restext:1487 | "Retrieve the **Panacea: C..."
+    value: 'restext://PanaceaIntro_004'

@@ -1,0 +1,55 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24453
+---
+format: 'mws/0.4'
+passage_id: 'WolvesEvil2'
+# ../en-US.restext:1944 | "Once More the Accursed Co..."
+title: 'restext://WolvesEvil2_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24461
+- type: 'text'
+  # ../en-US.restext:1945 | "The messenger did not app..."
+  value: 'restext://WolvesEvil2_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24462
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24464
+- type: 'text'
+  # ../en-US.restext:1946 | "The family could delay th..."
+  value: 'restext://WolvesEvil2_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24466
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24470
+- type: 'text'
+  # ../en-US.restext:138 | "**CHOOSE:**"
+  value: 'restext://Heading_ChooseColon_Caps'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24472
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24473
+- type: 'text'
+  # ../en-US.restext:74 | "In turn order, each playe..."
+  value: 'restext://Directive_ContributeExperiment_Rule'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24475
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24477
+- type: 'text'
+  # ../en-US.restext:1947 | "If a player donates, they..."
+  value: 'restext://WolvesEvil2_004'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24484
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24486
+- type: 'text'
+  # ../en-US.restext:75 | "If a player chooses not t..."
+  value: 'restext://Directive_DeclineDonation_Penalty'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24499
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24501
+- type: 'link'
+  # ../en-US.restext:50 | "Click here to receive bon..."
+  label: 'restext://Click_ReceiveBonusesPenalties'
+  target: 'TieredRewards2' # ./00293-TieredRewards2.mws.yaml
+  snapshot: true

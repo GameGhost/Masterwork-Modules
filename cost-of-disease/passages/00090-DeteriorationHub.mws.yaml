@@ -1,0 +1,29 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10232
+---
+format: 'mws/0.4'
+passage_id: 'DeteriorationHub'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10234
+- type: 'switch'
+  on: 'round'
+  cases:
+  - match: 16
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10236
+    - type: 'goto'
+      target: 'NoUni2' # ./00036-NoUni2.mws.yaml
+  - match: 17
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10241
+    - type: 'goto'
+      target: 'NoUni3' # ./00037-NoUni3.mws.yaml
+  - match: 19
+    nodes:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10245
+    - type: 'goto'
+      target: 'University2' # ./00038-University2.mws.yaml
+  default:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10251
+  - type: 'goto'
+    target: 'University3' # ./00039-University3.mws.yaml

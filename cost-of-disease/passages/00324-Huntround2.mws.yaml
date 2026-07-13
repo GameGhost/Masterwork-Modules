@@ -1,0 +1,43 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33261
+---
+format: 'mws/0.4'
+passage_id: 'Huntround2'
+# ../en-US.restext:324 | "In Preparation for the Hunt"
+title: 'restext://Title_InPreparationForTheHunt'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33269
+- type: 'text'
+  # ../en-US.restext:2642 | "As the full moon rose aga..."
+  value: 'restext://Huntround2_001'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33279
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33283
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: 'HuntersChoice2'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close' # ./00320-HuntersChoice2.mws.yaml
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33298
+  - type: 'image'
+    asset: 'image://setup/Spouse_Servant'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33299
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33300
+  - type: 'text'
+    # ../en-US.restext:2643 | "{h2a} III and {h2b} III e..."
+    value: 'restext://Huntround2_002'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33306
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33308
+  - type: 'text'
+    # ../en-US.restext:71 | "If a player cannot perfor..."
+    value: 'restext://Directive_CannotPerform_LoseVPGainServant'

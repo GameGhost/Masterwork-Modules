@@ -1,0 +1,79 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11082
+---
+format: 'mws/0.4'
+passage_id: 'DevEventCure'
+# ../en-US.restext:1127 | "An Alternative Cure"
+title: 'restext://DevEventCure_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11089
+- type: 'text'
+  # ../en-US.restext:1128 | "An envoy from the "
+  value: 'restext://DevEventCure_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11090
+- type: 'conditional'
+  # ../en-US.restext:25 | "evil"
+  if: 'wolves == "restext://Choice_Evil_Lower"'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11094
+  - type: 'text'
+    # ../en-US.restext:163 | "**Order of St. Hubertus**"
+    value: 'restext://Heading_OrderOfStHubertus_'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11097
+- type: 'conditional'
+  # ../en-US.restext:25 | "evil"
+  if: 'hunters == "restext://Choice_Evil_Lower"'
+  then:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11101
+  - type: 'text'
+    # ../en-US.restext:147 | "**Fraternity of Hunters**"
+    value: 'restext://Heading_FraternityOfHunters'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11104
+- type: 'text'
+  # ../en-US.restext:1129 | " arrived bearing an inter..."
+  value: 'restext://DevEventCure_005'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11108
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11110
+- type: 'text'
+  # ../en-US.restext:1130 | "\"The brotherhood has hea..."
+  value: 'restext://DevEventCure_006'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11114
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11118
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: 'Diseases2'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close' # ./00225-Diseases2.mws.yaml
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11133
+  - type: 'image'
+    asset: 'image://setup/ExperimentBBack'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11134
+  - type: 'break'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11135
+  - type: 'text'
+    # ../en-US.restext:1131 | "Each player, in turn orde..."
+    value: 'restext://DevEventCure_007'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11154
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11156
+  - type: 'text'
+    # ../en-US.restext:1132 | "Any player that has alrea..."
+    value: 'restext://DevEventCure_008'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11157
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11159
+  - type: 'text'
+    # ../en-US.restext:1133 | "Continue once all players..."
+    value: 'restext://DevEventCure_009'

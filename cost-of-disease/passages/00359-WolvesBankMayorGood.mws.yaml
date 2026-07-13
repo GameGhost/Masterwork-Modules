@@ -1,0 +1,64 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34970
+---
+format: 'mws/0.4'
+passage_id: 'WolvesBankMayorGood'
+tags:
+- 'revised'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34972
+- type: 'conditional'
+  conditions:
+  # ../en-US.restext:194 | "bank"
+  - if: 'building == "restext://Location_Bank_Lower"'
+    then:
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34976
+    - type: 'text'
+      # ../en-US.restext:2838 | "**The Stench of Man's Ava..."
+      value: 'restext://WolvesBankMayorGood_001'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34978
+    - type: 'break'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34981
+    - type: 'text'
+      # ../en-US.restext:310 | "**Carefully hand the Stor..."
+      value: 'restext://Storybook_HandToMayor_ReadAloud'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34986
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34988
+    - type: 'text'
+      # ../en-US.restext:2839 | "These beastly apparitions..."
+      value: 'restext://WolvesBankMayorGood_002'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34989
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34991
+    - type: 'text'
+      # ../en-US.restext:2840 | "For they abhored all form..."
+      value: 'restext://WolvesBankMayorGood_003'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34997
+    - type: 'break'
+      style: 'paragraph'
+    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:35002
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:36 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
+      target: 'ResolveCharityWolves'
+      # ../en-US.restext:344 | "Close"
+      okay: 'restext://UIButton_Close' # ./00354-ResolveCharityWolves.mws.yaml
+      snapshot: true
+      header:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:35022
+      - type: 'image'
+        asset: 'image://setup/S1_EstateUpgradeBACK'
+        style: 'setup-image'
+      content:
+      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:35026
+      - type: 'text'
+        # ../en-US.restext:2841 | "{mayor} gains 1 {icon:cre..."
+        value: 'restext://WolvesBankMayorGood_004'
+  else:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:35008
+  - type: 'goto'
+    target: 'ResolveCharityWolves' # ./00354-ResolveCharityWolves.mws.yaml

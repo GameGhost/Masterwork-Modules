@@ -1,0 +1,85 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31838
+---
+format: 'mws/0.4'
+passage_id: 'WolvesVote'
+# ../en-US.restext:2517 | "An Opportunity"
+title: 'restext://WolvesVote_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31846
+- type: 'text'
+  # ../en-US.restext:2518 | "With a shrill squeal, the..."
+  value: 'restext://WolvesVote_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31847
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31849
+- type: 'text'
+  # ../en-US.restext:2519 | "\"Do not fear me. I am no..."
+  value: 'restext://WolvesVote_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31850
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31852
+- type: 'text'
+  # ../en-US.restext:2520 | "\"With your help, we can ..."
+  value: 'restext://WolvesVote_004'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31854
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31856
+- type: 'text'
+  # ../en-US.restext:2521 | "Though they took exceptio..."
+  value: 'restext://WolvesVote_005'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31859
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31863
+- type: 'text'
+  # ../en-US.restext:179 | "**VOTE**"
+  value: 'restext://Heading_Vote'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31865
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31866
+- type: 'text'
+  # ../en-US.restext:2522 | "Players will now vote on ..."
+  value: 'restext://WolvesVote_006'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31868
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31870
+- type: 'text'
+  # ../en-US.restext:2523 | "A **Yay** vote is a vote ..."
+  value: 'restext://WolvesVote_007'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31877
+- type: 'break'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31878
+- type: 'text'
+  # ../en-US.restext:2524 | "A **Nay** vote is a vote ..."
+  value: 'restext://WolvesVote_008'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31885
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31887
+- type: 'text'
+  # ../en-US.restext:2525 | "All players take their Vo..."
+  value: 'restext://WolvesVote_009'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31890
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31892
+- type: 'text'
+  # ../en-US.restext:357 | "When all players have cho..."
+  value: 'restext://Vote_TallyRule_A'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31898
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31902
+- type: 'popup'
+  layout: 'voting'
+  # ../en-US.restext:2526 | "Click to start the vote..."
+  label: 'restext://WolvesVote_010'
+  target: 'WolvesVote2'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close' # ./00349-WolvesVote2.mws.yaml
+  snapshot: false

@@ -1,0 +1,51 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28297
+---
+format: 'mws/0.4'
+passage_id: 'CannotParticipate'
+# ../en-US.restext:2262 | "In the Blood"
+title: 'restext://CannotParticipate_001'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28304
+- type: 'text'
+  # ../en-US.restext:2263 | "However, at their final m..."
+  value: 'restext://CannotParticipate_002'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28307
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28309
+- type: 'text'
+  # ../en-US.restext:2264 | "In the interim evenings b..."
+  value: 'restext://CannotParticipate_003'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28310
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28312
+- type: 'text'
+  # ../en-US.restext:2265 | "But, how could their pare..."
+  value: 'restext://CannotParticipate_004'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28320
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28324
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:36 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
+  target: 'HunterConf2'
+  # ../en-US.restext:344 | "Close"
+  okay: 'restext://UIButton_Close' # ./00195-HunterConf2.mws.yaml
+  snapshot: true
+  header:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28339
+  - type: 'image'
+    asset: 'image://setup/S1_DiseaseExperiment'
+    style: 'setup-image'
+  content:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28340
+  - type: 'break'
+    style: 'paragraph'
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28342
+  - type: 'text'
+    # ../en-US.restext:2266 | "Any player with a **STORE..."
+    value: 'restext://CannotParticipate_005'

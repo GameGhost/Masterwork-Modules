@@ -1,0 +1,49 @@
+﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34653
+---
+format: 'mws/0.4'
+passage_id: 'EvilHunter1Event2'
+# ../en-US.restext:340 | "Vote Outcome"
+title: 'restext://Title_VoteOutcome_Mixed'
+layout: 'narration'
+nodes:
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34661
+- type: 'text'
+  # ../en-US.restext:359 | "Tally all the votes and t..."
+  value: 'restext://Vote_TallyRule_C'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34666
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34670
+- type: 'text'
+  # ../en-US.restext:139 | "**Click on the result of ..."
+  value: 'restext://Heading_ClickOnResultOfYourVote'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34672
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34675
+- type: 'link'
+  # ../en-US.restext:2792 | "Click here if you voted t..."
+  label: 'restext://EvilHunter1Event2_001'
+  target: 'EvilHunter1EventYes' # ./00191-EvilHunter1EventYes.mws.yaml
+  snapshot: true
+  onclick:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34685
+  - type: 'assign'
+    var: 'confront'
+    # ../en-US.restext:31 | "yes"
+    expr: '"restext://Choice_Yes_Lower"'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34676
+- type: 'break'
+  style: 'paragraph'
+# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34679
+- type: 'link'
+  # ../en-US.restext:2793 | "Click here if you voted t..."
+  label: 'restext://EvilHunter1Event2_002'
+  target: 'GloomyGothic2' # ./00172-GloomyGothic2.mws.yaml
+  snapshot: true
+  onclick:
+  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34692
+  - type: 'assign'
+    var: 'confront'
+    # ../en-US.restext:27 | "no"
+    expr: '"restext://Choice_No_Lower"'
