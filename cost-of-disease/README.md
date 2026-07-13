@@ -1,9 +1,11 @@
 # The Cost of Disease
 
 Extracted MWS module for *The Cost of Disease*, one of the scenario scripts for the boardgame
-*My Father's Work* (Renegade Game Studios). Source content under this module (and everything it was
-derived from in `Reference/`) is CC BY-NC-SA 4.0 — see the repo-level `CLAUDE.md` for the licensing
-boundary between this repo and the `Masterwork` code repo (never commit this module's content there).
+*My Father's Work* (Renegade Game Studios). This module's own content (passages, overrides, layout
+chrome, assets) is project-internal to this repo. The `.source/` Cradle file it's extracted from is
+CC BY-NC-SA 4.0 (derived from `Masterwork-Design/Reference/`) — see the repo-level `CLAUDE.md` for
+the full licensing boundary (never commit `.source/` or anything CC BY-NC-SA-derived to the
+`Masterwork` code repo).
 
 ## Layout
 
@@ -17,7 +19,7 @@ boundary between this repo and the `Masterwork` code repo (never commit this mod
 | `_variables.yaml` | extractor-owned | All session variables discovered during extraction, with inferred types/defaults. Overwritten on every re-extraction |
 | `en-US.restext` | extractor-owned | Extracted locale strings (`Key=Value`, one per line). Overwritten on every re-extraction — `Common_NNN` keys can renumber between runs as the set of shared strings shifts, which is exactly why `en-US.common.restext` exists below |
 | `en-US.common.restext` | hand-maintained | Curated `Key=Value` file giving *stable* names to strings that would otherwise get an auto-renumbered `Common_NNN` id on every re-extraction (fed to `--common-restext`). Any override passage referencing a Common string should use one of these curated names, not a raw `Common_NNN` |
-| `.source/TheCostofDisease_Eng_v10.cs` | reference input | The Cradle 2.0.2.0 complete-class C# source this module is extracted from — CC BY-NC-SA, never commit to the code repo |
+| `.source/TheCostofDisease_Eng_v10.cs` | extraction input | The Cradle 2.0.2.0 complete-class C# source this module is extracted from — CC BY-NC-SA, never commit to the code repo. This is the canonical copy re-extraction reads from; `Masterwork-Design/Reference/ScriptsComplete/` is now historical reference only (see repo-level `CLAUDE.md`) |
 
 `361` passages as of the last extraction (`passages/` + `passages-override/`).
 
@@ -26,10 +28,10 @@ boundary between this repo and the `Masterwork` code repo (never commit this mod
 Run from `c:\Projects\Masterwork` (the code repo) after building the extractor:
 
 ```powershell
-$base        = "c:\Projects\Masterwork-Design\Modules\cost-of-disease\.source"
+$base        = "c:\Projects\Masterwork-Modules\cost-of-disease\.source"
 $spritemap   = "c:\Projects\Masterwork-Design\Reference\UnityOriginalApp\Assets\Resources\TheCostOfDisease_ItemObtain.json"
-$progressmap = "c:\Projects\Masterwork-Design\Modules\progress-map.json"
-$modules     = "c:\Projects\Masterwork-Design\Modules"
+$progressmap = "c:\Projects\Masterwork-Modules\progress-map.json"
+$modules     = "c:\Projects\Masterwork-Modules"
 
 dotnet run --project src/Masterwork.Extractor -- `
   "$base\TheCostofDisease_Eng_v10.cs" `
@@ -48,8 +50,9 @@ This only touches `passages/`, `_variables.yaml`, and `en-US.restext` — `passa
 
 ## `progress-map.json`
 
-Lives at `Modules/progress-map.json` (module-root-shared, not nested under this module) since it's
-keyed by passage name and could in principle cover more than one module. For Cost of Disease it
+Lives at the repo root (`Masterwork-Modules/progress-map.json`, module-root-shared, not nested
+under this module) since it's keyed by passage name and could in principle cover more than one
+module. For Cost of Disease it
 drives two things per hub passage, both derived from `Reference/UnityOriginalApp/Assets/Scenes/
 Main.unity`'s `PassageTracker` MonoBehaviour:
 

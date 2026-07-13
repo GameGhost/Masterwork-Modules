@@ -1,96 +1,96 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26635
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:26635
 ---
 format: 'mws/0.4'
 passage_id: 'YellowFeverCureSignin'
-# ../en-US.restext:2098 | "Yellow Fever Inoculation"
+# ../en-US.restext:2097 | "Yellow Fever Inoculation"
 title: 'restext://YellowFeverCureSignin_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26642
+# ../.source/TheCostofDisease_Eng_v10.cs:26642
 - type: 'text'
-  # ../en-US.restext:2099 | "Through sheer perseveranc..."
+  # ../en-US.restext:2098 | "Through sheer perseveranc..."
   value: 'restext://YellowFeverCureSignin_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26644
+# ../.source/TheCostofDisease_Eng_v10.cs:26644
 - type: 'assign'
   var: 'twopage'
   expr: '1'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26648
+# ../.source/TheCostofDisease_Eng_v10.cs:26648
 - type: 'text'
-  # ../en-US.restext:2100 | "**Which individual comple..."
+  # ../en-US.restext:2099 | "**Which individual comple..."
   value: 'restext://YellowFeverCureSignin_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26650
+# ../.source/TheCostofDisease_Eng_v10.cs:26650
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26653
+# ../.source/TheCostofDisease_Eng_v10.cs:26653
 - type: 'link'
   # ../en-US.restext:15 | "Dr. {nameA} Jr."
   label: 'restext://Character_DrNameA_Jr'
   target: 'Unicure' # ./00056-Unicure.mws.yaml
   snapshot: true
   onclick:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26686
+  # ../.source/TheCostofDisease_Eng_v10.cs:26686
   - type: 'assign'
     var: 'fevercure'
     expr: 'nameA'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26654
+# ../.source/TheCostofDisease_Eng_v10.cs:26654
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26657
+# ../.source/TheCostofDisease_Eng_v10.cs:26657
 - type: 'link'
   # ../en-US.restext:16 | "Dr. {nameB} Jr."
   label: 'restext://Character_DrNameB_Jr'
   target: 'Unicure' # ./00056-Unicure.mws.yaml
   snapshot: true
   onclick:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26693
+  # ../.source/TheCostofDisease_Eng_v10.cs:26693
   - type: 'assign'
     var: 'fevercure'
     expr: 'nameB'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26658
+# ../.source/TheCostofDisease_Eng_v10.cs:26658
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26660
+# ../.source/TheCostofDisease_Eng_v10.cs:26660
 - type: 'conditional'
   if: 'players > 2'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26663
+  # ../.source/TheCostofDisease_Eng_v10.cs:26663
   - type: 'link'
     # ../en-US.restext:17 | "Dr. {nameC} Jr."
     label: 'restext://Character_DrNameC_Jr'
     target: 'Unicure' # ./00056-Unicure.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26700
+    # ../.source/TheCostofDisease_Eng_v10.cs:26700
     - type: 'assign'
       var: 'fevercure'
       expr: 'nameC'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26667
+# ../.source/TheCostofDisease_Eng_v10.cs:26667
 - type: 'conditional'
   if: 'players > 3'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26670
+  # ../.source/TheCostofDisease_Eng_v10.cs:26670
   - type: 'link'
     # ../en-US.restext:18 | "Dr. {nameD} Jr."
     label: 'restext://Character_DrNameD_Jr'
     target: 'Unicure' # ./00056-Unicure.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26707
+    # ../.source/TheCostofDisease_Eng_v10.cs:26707
     - type: 'assign'
       var: 'fevercure'
       expr: 'nameD'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26674
+# ../.source/TheCostofDisease_Eng_v10.cs:26674
 - type: 'conditional'
   if: 'players > 4'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26677
+  # ../.source/TheCostofDisease_Eng_v10.cs:26677
   - type: 'link'
     # ../en-US.restext:19 | "Dr. {nameE} Jr."
     label: 'restext://Character_DrNameE_Jr'
     target: 'Unicure' # ./00056-Unicure.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26714
+    # ../.source/TheCostofDisease_Eng_v10.cs:26714
     - type: 'assign'
       var: 'fevercure'
       expr: 'nameE'

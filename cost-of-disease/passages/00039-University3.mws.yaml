@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5684
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:5684
 ---
 format: 'mws/0.4'
 passage_id: 'University3'
@@ -10,68 +10,68 @@ tags:
 - 'HUB'
 layout: 'hub_late'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5691
+# ../.source/TheCostofDisease_Eng_v10.cs:5691
 - type: 'assign'
   var: 'round'
   expr: '21'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5693
+# ../.source/TheCostofDisease_Eng_v10.cs:5693
 - type: 'conditional'
   # ../en-US.restext:31 | "yes"
   if: 'ultimate == "restext://Choice_Yes_Lower"'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5697
+  # ../.source/TheCostofDisease_Eng_v10.cs:5697
   - type: 'popup'
     layout: 'setup'
     # ../en-US.restext:343 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5701
+    # ../.source/TheCostofDisease_Eng_v10.cs:5701
     - type: 'image'
       asset: 'image://setup/VillageChronicleCover'
       style: 'setup-image'
     content:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5702
+    # ../.source/TheCostofDisease_Eng_v10.cs:5702
     - type: 'break'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5703
+    # ../.source/TheCostofDisease_Eng_v10.cs:5703
     - type: 'text'
-      # ../en-US.restext:646 | "Turn to page **11**in the..."
+      # ../en-US.restext:645 | "Turn to page **11**in the..."
       value: 'restext://University3_001'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5711
+# ../.source/TheCostofDisease_Eng_v10.cs:5711
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5715
+# ../.source/TheCostofDisease_Eng_v10.cs:5715
 - type: 'section'
   # ../en-US.restext:162 | "**Nobel Prize in Medicine**"
   title: 'restext://Heading_NobelPrizeInMedicine'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5723
+  # ../.source/TheCostofDisease_Eng_v10.cs:5723
   - type: 'text'
     # ../en-US.restext:272 | "The scientific world has ..."
     value: 'restext://Narrative_ScientificWorldNotices'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5731
+  # ../.source/TheCostofDisease_Eng_v10.cs:5731
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5733
+  # ../.source/TheCostofDisease_Eng_v10.cs:5733
   - type: 'text'
     # ../en-US.restext:291 | "At the End of the Generat..."
     value: 'restext://Reward_LeastCreepy_NobelPrize_Lose7VP'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5746
+# ../.source/TheCostofDisease_Eng_v10.cs:5746
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5750
+# ../.source/TheCostofDisease_Eng_v10.cs:5750
 - type: 'section'
   # ../en-US.restext:164 | "**Perfect Mental Balance**"
   title: 'restext://Heading_PerfectMentalBalance'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5758
+  # ../.source/TheCostofDisease_Eng_v10.cs:5758
   - type: 'text'
     # ../en-US.restext:290 | "At the end of the Generat..."
     value: 'restext://Reward_InsanityTrackSpace_5VP'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5771
+  # ../.source/TheCostofDisease_Eng_v10.cs:5771
   - type: 'assign'
     var: 'ending'
     expr: '"END-UniGood"' # ./00318-END-UniGood.mws.yaml
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5774
+  # ../.source/TheCostofDisease_Eng_v10.cs:5774
   - type: 'popup'
     layout: 'end_of_round'
     # ../en-US.restext:44 | "Click here at the end of ..."

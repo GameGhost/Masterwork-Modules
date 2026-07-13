@@ -1,32 +1,32 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21858
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:21858
 ---
 format: 'mws/0.4'
 passage_id: 'DiseaseEffect'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21860
+# ../.source/TheCostofDisease_Eng_v10.cs:21860
 - type: 'assign'
   var: 'tempdisease'
   expr: 'rand_between(1, 2, "DiseaseEffect_0")'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21863
+# ../.source/TheCostofDisease_Eng_v10.cs:21863
 - type: 'conditional'
   conditions:
   - if: 'tempdisease == 1'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21867
+    # ../.source/TheCostofDisease_Eng_v10.cs:21867
     - type: 'text'
-      # ../en-US.restext:1681 | "**A Continuing Malady**"
+      # ../en-US.restext:1680 | "**A Continuing Malady**"
       value: 'restext://DiseaseEffect_005'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21869
+    # ../.source/TheCostofDisease_Eng_v10.cs:21869
     - type: 'break'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21870
+    # ../.source/TheCostofDisease_Eng_v10.cs:21870
     - type: 'text'
-      # ../en-US.restext:1682 | "It appeared that the effe..."
+      # ../en-US.restext:1681 | "It appeared that the effe..."
       value: 'restext://DiseaseEffect_006'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21873
+    # ../.source/TheCostofDisease_Eng_v10.cs:21873
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21877
+    # ../.source/TheCostofDisease_Eng_v10.cs:21877
     - type: 'popup'
       layout: 'setup'
       # ../en-US.restext:36 | "Click to continue..."
@@ -36,39 +36,39 @@ nodes:
       okay: 'restext://UIButton_Close' # ./00107-DevastationFate1.mws.yaml
       snapshot: true
       header:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21911
+      # ../.source/TheCostofDisease_Eng_v10.cs:21911
       - type: 'image'
         asset: 'image://setup/MaladjustmentBack'
         style: 'setup-image'
       content:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21912
+      # ../.source/TheCostofDisease_Eng_v10.cs:21912
       - type: 'break'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21913
+      # ../.source/TheCostofDisease_Eng_v10.cs:21913
       - type: 'text'
-        # ../en-US.restext:1683 | "Any player who did not co..."
+        # ../en-US.restext:1682 | "Any player who did not co..."
         value: 'restext://DiseaseEffect_007'
   else:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21884
+  # ../.source/TheCostofDisease_Eng_v10.cs:21884
   - type: 'text'
-    # ../en-US.restext:1677 | "**Not Passed Down**"
+    # ../en-US.restext:1676 | "**Not Passed Down**"
     value: 'restext://DiseaseEffect_001'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21886
+  # ../.source/TheCostofDisease_Eng_v10.cs:21886
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21887
+  # ../.source/TheCostofDisease_Eng_v10.cs:21887
   - type: 'text'
-    # ../en-US.restext:1678 | "Twenty years passed witho..."
+    # ../en-US.restext:1677 | "Twenty years passed witho..."
     value: 'restext://DiseaseEffect_002'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21888
+  # ../.source/TheCostofDisease_Eng_v10.cs:21888
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21890
+  # ../.source/TheCostofDisease_Eng_v10.cs:21890
   - type: 'text'
-    # ../en-US.restext:1679 | "Family curse? They dismis..."
+    # ../en-US.restext:1678 | "Family curse? They dismis..."
     value: 'restext://DiseaseEffect_003'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21891
+  # ../.source/TheCostofDisease_Eng_v10.cs:21891
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21895
+  # ../.source/TheCostofDisease_Eng_v10.cs:21895
   - type: 'popup'
     layout: 'setup'
     # ../en-US.restext:36 | "Click to continue..."
@@ -78,14 +78,14 @@ nodes:
     okay: 'restext://UIButton_Close' # ./00107-DevastationFate1.mws.yaml
     snapshot: true
     header:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21940
+    # ../.source/TheCostofDisease_Eng_v10.cs:21940
     - type: 'image'
       asset: 'image://setup/S1_DiseaseExperiment'
       style: 'setup-image'
     content:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21941
+    # ../.source/TheCostofDisease_Eng_v10.cs:21941
     - type: 'break'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21942
+    # ../.source/TheCostofDisease_Eng_v10.cs:21942
     - type: 'text'
-      # ../en-US.restext:1680 | "All players who did not c..."
+      # ../en-US.restext:1679 | "All players who did not c..."
       value: 'restext://DiseaseEffect_004'

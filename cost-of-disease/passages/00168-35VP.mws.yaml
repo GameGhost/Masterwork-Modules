@@ -1,85 +1,85 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19349
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:19349
 ---
 format: 'mws/0.4'
 passage_id: '35VP'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19354
+# ../.source/TheCostofDisease_Eng_v10.cs:19354
 - type: 'text'
-  # ../en-US.restext:1490 | "**Carefully hand the Stor..."
+  # ../en-US.restext:1489 | "**Carefully hand the Stor..."
   value: 'restext://_35VP_001'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19362
+# ../.source/TheCostofDisease_Eng_v10.cs:19362
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19368
+# ../.source/TheCostofDisease_Eng_v10.cs:19368
 - type: 'popup'
   # ../en-US.restext:53 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   snapshot: true
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19391
+  # ../.source/TheCostofDisease_Eng_v10.cs:19391
   - type: 'text'
-    # ../en-US.restext:1491 | "**Planned Destruction**"
+    # ../en-US.restext:1490 | "**Planned Destruction**"
     value: 'restext://_35VP_002'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19393
+  # ../.source/TheCostofDisease_Eng_v10.cs:19393
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19394
+  # ../.source/TheCostofDisease_Eng_v10.cs:19394
   - type: 'text'
-    # ../en-US.restext:1492 | "From the letters and jour..."
+    # ../en-US.restext:1491 | "From the letters and jour..."
     value: 'restext://_35VP_003'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19395
+  # ../.source/TheCostofDisease_Eng_v10.cs:19395
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19399
+  # ../.source/TheCostofDisease_Eng_v10.cs:19399
   - type: 'text'
     # ../en-US.restext:138 | "**CHOOSE:**"
     value: 'restext://Heading_ChooseColon_Caps'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19401
+  # ../.source/TheCostofDisease_Eng_v10.cs:19401
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19404
+  # ../.source/TheCostofDisease_Eng_v10.cs:19404
   - type: 'text'
-    # ../en-US.restext:1493 | "**The first player that r..."
+    # ../en-US.restext:1492 | "**The first player that r..."
     value: 'restext://_35VP_005'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19406
+  # ../.source/TheCostofDisease_Eng_v10.cs:19406
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19409
+  # ../.source/TheCostofDisease_Eng_v10.cs:19409
   - type: 'link'
-    # ../en-US.restext:1494 | "Has a Nasty Rumor spread ..."
+    # ../en-US.restext:1493 | "Has a Nasty Rumor spread ..."
     label: 'restext://_35VP_006'
     target: 'Gen1Insanity-Yes2' # ./00303-Gen1Insanity-Yes2.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19375
+    # ../.source/TheCostofDisease_Eng_v10.cs:19375
     - type: 'assign'
       var: 'thirtyFivevp'
       expr: '"creep"'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19410
+  # ../.source/TheCostofDisease_Eng_v10.cs:19410
   - type: 'text'
-    # ../en-US.restext:1495 | " _(They gain 2 {icon:cree..."
+    # ../en-US.restext:1494 | " _(They gain 2 {icon:cree..."
     value: 'restext://_35VP_008'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19420
+  # ../.source/TheCostofDisease_Eng_v10.cs:19420
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19422
+  # ../.source/TheCostofDisease_Eng_v10.cs:19422
   - type: 'text'
     # ../en-US.restext:349 | "OR"
     value: 'restext://UIButton_Or'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19423
+  # ../.source/TheCostofDisease_Eng_v10.cs:19423
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19426
+  # ../.source/TheCostofDisease_Eng_v10.cs:19426
   - type: 'link'
-    # ../en-US.restext:1496 | "Has an unfortunate accident."
+    # ../en-US.restext:1495 | "Has an unfortunate accident."
     label: 'restext://_35VP_010'
     target: 'Gen1Insanity-Yes2' # ./00303-Gen1Insanity-Yes2.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19382
+    # ../.source/TheCostofDisease_Eng_v10.cs:19382
     - type: 'assign'
       var: 'thirtyFivevp'
       expr: '"vp"'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19427
+  # ../.source/TheCostofDisease_Eng_v10.cs:19427
   - type: 'text'
-    # ../en-US.restext:1497 | " _(They immediately lose ..."
+    # ../en-US.restext:1496 | " _(They immediately lose ..."
     value: 'restext://_35VP_012'

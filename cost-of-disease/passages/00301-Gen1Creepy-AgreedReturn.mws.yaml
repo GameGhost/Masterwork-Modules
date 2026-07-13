@@ -1,50 +1,50 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31103
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:31103
 ---
 format: 'mws/0.4'
 passage_id: 'Gen1Creepy-AgreedReturn'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31110
+# ../.source/TheCostofDisease_Eng_v10.cs:31110
 - type: 'text'
   # ../en-US.restext:307 | "**Carefully hand this sto..."
   value: 'restext://Storybook_HandToGen1Creep_Private'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31115
+# ../.source/TheCostofDisease_Eng_v10.cs:31115
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31117
+# ../.source/TheCostofDisease_Eng_v10.cs:31117
 - type: 'conditional'
   conditions:
   # ../en-US.restext:25 | "evil"
   - if: 'wolves == "restext://Choice_Evil_Lower"'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31121
+    # ../.source/TheCostofDisease_Eng_v10.cs:31121
     - type: 'text'
       # ../en-US.restext:163 | "**Order of St. Hubertus**"
       value: 'restext://Heading_OrderOfStHubertus_'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31123
+    # ../.source/TheCostofDisease_Eng_v10.cs:31123
     - type: 'break'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31124
+    # ../.source/TheCostofDisease_Eng_v10.cs:31124
     - type: 'text'
-      # ../en-US.restext:2489 | "On an unseasonably warm e..."
+      # ../en-US.restext:2488 | "On an unseasonably warm e..."
       value: 'restext://Gen1Creepy_AgreedReturn_005'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31130
+    # ../.source/TheCostofDisease_Eng_v10.cs:31130
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31132
+    # ../.source/TheCostofDisease_Eng_v10.cs:31132
     - type: 'text'
-      # ../en-US.restext:2490 | "The man peered out from u..."
+      # ../en-US.restext:2489 | "The man peered out from u..."
       value: 'restext://Gen1Creepy_AgreedReturn_006'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31133
+    # ../.source/TheCostofDisease_Eng_v10.cs:31133
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31137
+    # ../.source/TheCostofDisease_Eng_v10.cs:31137
     - type: 'text'
-      # ../en-US.restext:2491 | "It seemed that decision o..."
+      # ../en-US.restext:2490 | "It seemed that decision o..."
       value: 'restext://Gen1Creepy_AgreedReturn_007'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31142
+    # ../.source/TheCostofDisease_Eng_v10.cs:31142
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31148
+    # ../.source/TheCostofDisease_Eng_v10.cs:31148
     - type: 'popup'
       layout: 'setup'
       # ../en-US.restext:36 | "Click to continue..."
@@ -54,47 +54,47 @@ nodes:
       okay: 'restext://UIButton_Close' # ./00034-Hospital2.mws.yaml
       snapshot: true
       header:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31202
+      # ../.source/TheCostofDisease_Eng_v10.cs:31202
       - type: 'image'
         asset: 'image://setup/DiscardEstateUpgrade_Icon'
         style: 'setup-image'
       content:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31203
+      # ../.source/TheCostofDisease_Eng_v10.cs:31203
       - type: 'break'
         style: 'paragraph'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31205
+      # ../.source/TheCostofDisease_Eng_v10.cs:31205
       - type: 'text'
         # ../en-US.restext:76 | "Discard a **completed Exp..."
         value: 'restext://Directive_DiscardExperimentOrUpgrade'
   else:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31156
+  # ../.source/TheCostofDisease_Eng_v10.cs:31156
   - type: 'text'
     # ../en-US.restext:147 | "**Fraternity of Hunters**"
     value: 'restext://Heading_FraternityOfHunters'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31158
+  # ../.source/TheCostofDisease_Eng_v10.cs:31158
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31159
+  # ../.source/TheCostofDisease_Eng_v10.cs:31159
   - type: 'text'
-    # ../en-US.restext:2486 | "On an unseasonably warm e..."
+    # ../en-US.restext:2485 | "On an unseasonably warm e..."
     value: 'restext://Gen1Creepy_AgreedReturn_001'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31165
+  # ../.source/TheCostofDisease_Eng_v10.cs:31165
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31167
+  # ../.source/TheCostofDisease_Eng_v10.cs:31167
   - type: 'text'
-    # ../en-US.restext:2487 | "\"Though we no longer hav..."
+    # ../en-US.restext:2486 | "\"Though we no longer hav..."
     value: 'restext://Gen1Creepy_AgreedReturn_002'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31168
+  # ../.source/TheCostofDisease_Eng_v10.cs:31168
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31172
+  # ../.source/TheCostofDisease_Eng_v10.cs:31172
   - type: 'text'
     # ../en-US.restext:235 | "The gentlemen were kind e..."
     value: 'restext://Narrative_DebtRepaymentOffer'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31176
+  # ../.source/TheCostofDisease_Eng_v10.cs:31176
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31182
+  # ../.source/TheCostofDisease_Eng_v10.cs:31182
   - type: 'popup'
     layout: 'setup'
     # ../en-US.restext:36 | "Click to continue..."
@@ -104,15 +104,15 @@ nodes:
     okay: 'restext://UIButton_Close' # ./00034-Hospital2.mws.yaml
     snapshot: true
     header:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31240
+    # ../.source/TheCostofDisease_Eng_v10.cs:31240
     - type: 'image'
       asset: 'image://setup/DiscardEstateUpgrade_Icon'
       style: 'setup-image'
     content:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31241
+    # ../.source/TheCostofDisease_Eng_v10.cs:31241
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31243
+    # ../.source/TheCostofDisease_Eng_v10.cs:31243
     - type: 'text'
-      # ../en-US.restext:2488 | "Pay **$2 to the supply** ..."
+      # ../en-US.restext:2487 | "Pay **$2 to the supply** ..."
       value: 'restext://Gen1Creepy_AgreedReturn_004'

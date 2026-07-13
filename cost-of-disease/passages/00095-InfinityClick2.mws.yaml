@@ -1,53 +1,53 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10544
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:10544
 ---
 format: 'mws/0.4'
 passage_id: 'InfinityClick2'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10549
+# ../.source/TheCostofDisease_Eng_v10.cs:10549
 - type: 'let'
   var: '_rnd_InfinityClick2_0'
-  # ../en-US.restext:1080 | InfinityClick2_001 | "Secret to"
-  # ../en-US.restext:1081 | InfinityClick2_002 | "Marvelous"
-  # ../en-US.restext:1082 | InfinityClick2_003 | "Discovering"
-  # ../en-US.restext:1083 | InfinityClick2_004 | "Forward to"
+  # ../en-US.restext:1079 | InfinityClick2_001 | "Secret to"
+  # ../en-US.restext:1080 | InfinityClick2_002 | "Marvelous"
+  # ../en-US.restext:1081 | InfinityClick2_003 | "Discovering"
+  # ../en-US.restext:1082 | InfinityClick2_004 | "Forward to"
   expr: '["restext://InfinityClick2_001", "restext://InfinityClick2_002", "restext://InfinityClick2_003", "restext://InfinityClick2_004"].shuffled("InfinityClick2_0")[0]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10548
+# ../.source/TheCostofDisease_Eng_v10.cs:10548
 - type: 'text'
-  # ../en-US.restext:1084 | "**The {_rnd_InfinityClick..."
+  # ../en-US.restext:1083 | "**The {_rnd_InfinityClick..."
   value: 'restext://InfinityClick2_005'
   lets:
   - '_rnd_InfinityClick2_0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10557
+# ../.source/TheCostofDisease_Eng_v10.cs:10557
 - type: 'let'
   var: '_rnd_InfinityClick2_1'
-  # ../en-US.restext:1085 | InfinityClick2_006 | "immaculate brain"
-  # ../en-US.restext:1086 | InfinityClick2_007 | "inestimable mind"
+  # ../en-US.restext:1084 | InfinityClick2_006 | "immaculate brain"
+  # ../en-US.restext:1085 | InfinityClick2_007 | "inestimable mind"
   expr: '["restext://InfinityClick2_006", "restext://InfinityClick2_007"].shuffled("InfinityClick2_1")[0]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10559
+# ../.source/TheCostofDisease_Eng_v10.cs:10559
 - type: 'let'
   var: '_rnd_InfinityClick2_2'
-  # ../en-US.restext:1087 | InfinityClick2_008 | "I have surely unlocked a ..."
-  # ../en-US.restext:1088 | InfinityClick2_009 | "the world will tremble at..."
+  # ../en-US.restext:1086 | InfinityClick2_008 | "I have surely unlocked a ..."
+  # ../en-US.restext:1087 | InfinityClick2_009 | "the world will tremble at..."
   expr: '["restext://InfinityClick2_008", "restext://InfinityClick2_009"].shuffled("InfinityClick2_2")[0]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10564
+# ../.source/TheCostofDisease_Eng_v10.cs:10564
 - type: 'let'
   var: '_rnd_InfinityClick2_3'
-  # ../en-US.restext:1089 | InfinityClick2_010 | "infinite"
-  # ../en-US.restext:1090 | InfinityClick2_011 | "future"
+  # ../en-US.restext:1088 | InfinityClick2_010 | "infinite"
+  # ../en-US.restext:1089 | InfinityClick2_011 | "future"
   expr: '["restext://InfinityClick2_010", "restext://InfinityClick2_011"].shuffled("InfinityClick2_3")[0]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10556
+# ../.source/TheCostofDisease_Eng_v10.cs:10556
 - type: 'text'
-  # ../en-US.restext:1091 | "There is no doubt in my {..."
+  # ../en-US.restext:1090 | "There is no doubt in my {..."
   value: 'restext://InfinityClick2_012'
   lets:
   - '_rnd_InfinityClick2_1'
   - '_rnd_InfinityClick2_2'
   - '_rnd_InfinityClick2_3'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10567
+# ../.source/TheCostofDisease_Eng_v10.cs:10567
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10571
+# ../.source/TheCostofDisease_Eng_v10.cs:10571
 - type: 'popup'
   layout: 'setup'
   # ../en-US.restext:36 | "Click to continue..."
@@ -57,25 +57,25 @@ nodes:
   okay: 'restext://UIButton_Close' # ./00251-ImmortalityMWUpdate.mws.yaml
   snapshot: true
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10586
+  # ../.source/TheCostofDisease_Eng_v10.cs:10586
   - type: 'image'
     asset: 'image://setup/S1_Immortality'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10587
+  # ../.source/TheCostofDisease_Eng_v10.cs:10587
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10588
+  # ../.source/TheCostofDisease_Eng_v10.cs:10588
   - type: 'conditional'
     if: 'setinf == 0'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10590
+    # ../.source/TheCostofDisease_Eng_v10.cs:10590
     - type: 'text'
-      # ../en-US.restext:1092 | "Retrieve the **Immortalit..."
+      # ../en-US.restext:1091 | "Retrieve the **Immortalit..."
       value: 'restext://InfinityClick2_013'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10597
+  # ../.source/TheCostofDisease_Eng_v10.cs:10597
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10601
+  # ../.source/TheCostofDisease_Eng_v10.cs:10601
   - type: 'text'
-    # ../en-US.restext:1093 | "**Draw 2 Immortality card..."
+    # ../en-US.restext:1092 | "**Draw 2 Immortality card..."
     value: 'restext://InfinityClick2_014'

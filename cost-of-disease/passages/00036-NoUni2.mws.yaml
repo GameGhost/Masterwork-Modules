@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5205
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:5205
 ---
 format: 'mws/0.4'
 passage_id: 'NoUni2'
@@ -10,97 +10,97 @@ tags:
 - 'HUB'
 layout: 'hub_middle'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5212
+# ../.source/TheCostofDisease_Eng_v10.cs:5212
 - type: 'assign'
   var: 'round'
   expr: '17'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5216
+# ../.source/TheCostofDisease_Eng_v10.cs:5216
 - type: 'section'
   # ../en-US.restext:165 | "{icon:storybook} **PUB**"
   title: 'restext://Heading_Pub'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5226
+  # ../.source/TheCostofDisease_Eng_v10.cs:5226
   - type: 'text'
     # ../en-US.restext:279 | "If your token is overtake..."
     value: 'restext://Pub_ResetCreepy_Rule'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5242
+  # ../.source/TheCostofDisease_Eng_v10.cs:5242
   - type: 'link'
     # ../en-US.restext:33 | "click here for a Bar-venture."
     label: 'restext://Click_BarVenture'
     target: 'Barventures' # ./00027-Barventures.mws.yaml
     snapshot: true
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5244
+# ../.source/TheCostofDisease_Eng_v10.cs:5244
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5248
+# ../.source/TheCostofDisease_Eng_v10.cs:5248
 - type: 'section'
   # ../en-US.restext:156 | "**MASTERWORK**"
   title: 'restext://Heading_Masterwork'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5256
+  # ../.source/TheCostofDisease_Eng_v10.cs:5256
   - type: 'text'
     # ../en-US.restext:212 | "A Masterwork can be compl..."
     value: 'restext://Masterwork_CompleteRule'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5259
+# ../.source/TheCostofDisease_Eng_v10.cs:5259
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5263
+# ../.source/TheCostofDisease_Eng_v10.cs:5263
 - type: 'section'
   # ../en-US.restext:158 | "{icon:storybook} **Master..."
   title: 'restext://Heading_MasterworkRecipe'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5273
+  # ../.source/TheCostofDisease_Eng_v10.cs:5273
   - type: 'text'
     # ../en-US.restext:208 | "To check your Masterwork ..."
     value: 'restext://Masterwork_CheckCost_Lead'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5274
+  # ../.source/TheCostofDisease_Eng_v10.cs:5274
   - type: 'link'
     # ../en-US.restext:48 | "click here."
     label: 'restext://Click_Here_Period'
     target: 'MWTemp' # ./00142-MWTemp.mws.yaml
     snapshot: true
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5276
+# ../.source/TheCostofDisease_Eng_v10.cs:5276
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5280
+# ../.source/TheCostofDisease_Eng_v10.cs:5280
 - type: 'section'
   # ../en-US.restext:140 | "{icon:storybook} **Comple..."
   title: 'restext://Heading_CompletedMasterwork'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5290
+  # ../.source/TheCostofDisease_Eng_v10.cs:5290
   - type: 'text'
     # ../en-US.restext:213 | "If you are completing a M..."
     value: 'restext://Masterwork_Completing_Lead'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5291
+  # ../.source/TheCostofDisease_Eng_v10.cs:5291
   - type: 'link'
     # ../en-US.restext:51 | "click here to receive you..."
     label: 'restext://Click_ReceiveRewards'
     target: 'MWCompleteName' # ./00143-MWCompleteName.mws.yaml
     snapshot: true
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5293
+# ../.source/TheCostofDisease_Eng_v10.cs:5293
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5298
+# ../.source/TheCostofDisease_Eng_v10.cs:5298
 - type: 'section'
   # ../en-US.restext:153 | "**Knowledge**"
   title: 'restext://Heading_Knowledge'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5306
+  # ../.source/TheCostofDisease_Eng_v10.cs:5306
   - type: 'text'
     # ../en-US.restext:289 | "At the end of each round,..."
     value: 'restext://Resource_KnowledgeMovesCreepyTrack_Rule'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5316
+# ../.source/TheCostofDisease_Eng_v10.cs:5316
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5320
+# ../.source/TheCostofDisease_Eng_v10.cs:5320
 - type: 'section'
-  # ../en-US.restext:628 | "{icon:storybook} **Second..."
+  # ../en-US.restext:627 | "{icon:storybook} **Second..."
   title: 'restext://NoUni2_001'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5332
+  # ../.source/TheCostofDisease_Eng_v10.cs:5332
   - type: 'popup'
     layout: 'end_of_round'
-    # ../en-US.restext:629 | "Click here at the end of ..."
+    # ../en-US.restext:628 | "Click here at the end of ..."
     label: 'restext://NoUni2_002'
     target: 'roundEndKnowledge'
     # ../en-US.restext:348 | "End of Round"

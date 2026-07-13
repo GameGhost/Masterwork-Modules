@@ -1,31 +1,31 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12375
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:12375
 ---
 format: 'mws/0.4'
 passage_id: 'ConcealConfirmation'
-# ../en-US.restext:1186 | "Concealed"
+# ../en-US.restext:1185 | "Concealed"
 title: 'restext://ConcealConfirmation_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12382
+# ../.source/TheCostofDisease_Eng_v10.cs:12382
 - type: 'text'
-  # ../en-US.restext:1187 | "Knowledge may have been m..."
+  # ../en-US.restext:1186 | "Knowledge may have been m..."
   value: 'restext://ConcealConfirmation_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12385
+# ../.source/TheCostofDisease_Eng_v10.cs:12385
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12387
+# ../.source/TheCostofDisease_Eng_v10.cs:12387
 - type: 'conditional'
   conditions:
   - if: 'round == 5'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12389
+    # ../.source/TheCostofDisease_Eng_v10.cs:12389
     - type: 'link'
       # ../en-US.restext:35 | "Click here to continue..."
       label: 'restext://Click_ContinueEllipsis_B'
       target: 'Devastation2' # ./00033-Devastation2.mws.yaml
       snapshot: true
   else:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12395
+  # ../.source/TheCostofDisease_Eng_v10.cs:12395
   - type: 'link'
     # ../en-US.restext:35 | "Click here to continue..."
     label: 'restext://Click_ContinueEllipsis_B'

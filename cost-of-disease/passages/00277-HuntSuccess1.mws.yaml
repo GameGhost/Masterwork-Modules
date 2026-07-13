@@ -1,45 +1,45 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28776
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:28776
 ---
 format: 'mws/0.4'
 passage_id: 'HuntSuccess1'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28780
+# ../.source/TheCostofDisease_Eng_v10.cs:28780
 - type: 'let'
   var: '_rnd_HuntSuccess1_0'
-  # ../en-US.restext:2321 | HuntSuccess1_001 | "Majestic"
+  # ../en-US.restext:2320 | HuntSuccess1_001 | "Majestic"
   # ../en-US.restext:204 | Masterwork_Adjective_Stunning | "Stunning"
-  # ../en-US.restext:2322 | HuntSuccess1_002 | "Grand"
+  # ../en-US.restext:2321 | HuntSuccess1_002 | "Grand"
   # ../en-US.restext:200 | Masterwork_Adjective_Monumental | "Monumental"
-  # ../en-US.restext:2323 | HuntSuccess1_003 | "Extraordinary"
+  # ../en-US.restext:2322 | HuntSuccess1_003 | "Extraordinary"
   expr: '["restext://HuntSuccess1_001", "restext://Masterwork_Adjective_Stunning", "restext://HuntSuccess1_002", "restext://Masterwork_Adjective_Monumental", "restext://HuntSuccess1_003"].shuffled("HuntSuccess1_0")[0]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28780
+# ../.source/TheCostofDisease_Eng_v10.cs:28780
 - type: 'text'
-  # ../en-US.restext:2324 | "**{_rnd_HuntSuccess1_0} S..."
+  # ../en-US.restext:2323 | "**{_rnd_HuntSuccess1_0} S..."
   value: 'restext://HuntSuccess1_004'
   lets:
   - '_rnd_HuntSuccess1_0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28785
+# ../.source/TheCostofDisease_Eng_v10.cs:28785
 - type: 'assign'
   var: 'huntcount'
   expr: 'huntcount + 1'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28791
+# ../.source/TheCostofDisease_Eng_v10.cs:28791
 - type: 'let'
   var: '_rnd_HuntSuccess1_1'
-  # ../en-US.restext:2325 | HuntSuccess1_005 | "loud shriek"
-  # ../en-US.restext:2326 | HuntSuccess1_006 | "low, rumbling growl"
-  # ../en-US.restext:2327 | HuntSuccess1_007 | "strained gasp for air"
+  # ../en-US.restext:2324 | HuntSuccess1_005 | "loud shriek"
+  # ../en-US.restext:2325 | HuntSuccess1_006 | "low, rumbling growl"
+  # ../en-US.restext:2326 | HuntSuccess1_007 | "strained gasp for air"
   expr: '["restext://HuntSuccess1_005", "restext://HuntSuccess1_006", "restext://HuntSuccess1_007"].shuffled("HuntSuccess1_1")[0]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28787
+# ../.source/TheCostofDisease_Eng_v10.cs:28787
 - type: 'text'
-  # ../en-US.restext:2328 | "The foul {huntbeast} emit..."
+  # ../en-US.restext:2327 | "The foul {huntbeast} emit..."
   value: 'restext://HuntSuccess1_008'
   lets:
   - '_rnd_HuntSuccess1_1'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28799
+# ../.source/TheCostofDisease_Eng_v10.cs:28799
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28803
+# ../.source/TheCostofDisease_Eng_v10.cs:28803
 - type: 'popup'
   layout: 'setup'
   # ../en-US.restext:36 | "Click to continue..."
@@ -49,21 +49,21 @@ nodes:
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28817
+  # ../.source/TheCostofDisease_Eng_v10.cs:28817
   - type: 'image'
     asset: 'image://setup/Creepy_Icon'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28831
+  # ../.source/TheCostofDisease_Eng_v10.cs:28831
   - type: 'let'
     var: '_rnd_HuntSuccess1_0'
-    # ../en-US.restext:2329 | HuntSuccess1_009 | "2VP"
-    # ../en-US.restext:2330 | HuntSuccess1_010 | "3VP"
-    # ../en-US.restext:2331 | HuntSuccess1_011 | "a Knowledge of your choice"
+    # ../en-US.restext:2328 | HuntSuccess1_009 | "2VP"
+    # ../en-US.restext:2329 | HuntSuccess1_010 | "3VP"
+    # ../en-US.restext:2330 | HuntSuccess1_011 | "a Knowledge of your choice"
     expr: '["restext://HuntSuccess1_009", "restext://HuntSuccess1_010", "restext://HuntSuccess1_011"].shuffled("HuntSuccess1_2")[0]'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28819
+  # ../.source/TheCostofDisease_Eng_v10.cs:28819
   - type: 'text'
-    # ../en-US.restext:2332 | "Each player participating..."
+    # ../en-US.restext:2331 | "Each player participating..."
     value: 'restext://HuntSuccess1_012'
     lets:
     - '_rnd_HuntSuccess1_0'

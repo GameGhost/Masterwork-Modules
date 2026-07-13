@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4814
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:4814
 ---
 format: 'mws/0.4'
 passage_id: 'Hospital2'
@@ -10,51 +10,51 @@ tags:
 - 'HUB'
 layout: 'hub_middle'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4821
+# ../.source/TheCostofDisease_Eng_v10.cs:4821
 - type: 'assign'
   var: 'round'
   expr: '8'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4825
+# ../.source/TheCostofDisease_Eng_v10.cs:4825
 - type: 'section'
   # ../en-US.restext:134 | "{icon:storybook} **Board ..."
   title: 'restext://Heading_BoardOfTrustees'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4834
+  # ../.source/TheCostofDisease_Eng_v10.cs:4834
   - type: 'text'
     # ../en-US.restext:183 | "All players MUST place th..."
     value: 'restext://Hospital_MustVisit_Rule'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4841
+  # ../.source/TheCostofDisease_Eng_v10.cs:4841
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4843
+  # ../.source/TheCostofDisease_Eng_v10.cs:4843
   - type: 'text'
-    # ../en-US.restext:182 | "The first time you visit ..."
+    # ../en-US.restext:182 | "The **first time** you vi..."
     value: 'restext://Hospital_FirstVisit_Lead'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4844
+  # ../.source/TheCostofDisease_Eng_v10.cs:4844
   - type: 'link'
     # ../en-US.restext:34 | "click here to confirm."
     label: 'restext://Click_Confirm'
     target: 'HospitalVisitCheck' # ./00130-HospitalVisitCheck.mws.yaml
     snapshot: true
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4846
+# ../.source/TheCostofDisease_Eng_v10.cs:4846
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4848
+# ../.source/TheCostofDisease_Eng_v10.cs:4848
 - type: 'switch'
   on: 'cured'
   cases:
   - match: 0
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4852
+    # ../.source/TheCostofDisease_Eng_v10.cs:4852
     - type: 'section'
       # ../en-US.restext:174 | "{icon:storybook} **The Cure**"
       title: 'restext://Heading_TheCure'
       content:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4861
+      # ../.source/TheCostofDisease_Eng_v10.cs:4861
       - type: 'text'
         # ../en-US.restext:107 | "Whenever a player complet..."
         value: 'restext://Disease_YellowFeverInoculation_Lead'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4866
+      # ../.source/TheCostofDisease_Eng_v10.cs:4866
       - type: 'link'
         # ../en-US.restext:55 | "click here for a special ..."
         label: 'restext://Click_SpecialMessage_Generic1'
@@ -62,99 +62,99 @@ nodes:
         snapshot: true
   - match: 1
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4875
+    # ../.source/TheCostofDisease_Eng_v10.cs:4875
     - type: 'section'
       # ../en-US.restext:176 | "{icon:storybook} **The Pa..."
       title: 'restext://Heading_ThePanacea'
       content:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4884
+      # ../.source/TheCostofDisease_Eng_v10.cs:4884
       - type: 'text'
         # ../en-US.restext:106 | "Whenever a player complet..."
         value: 'restext://Disease_PanaceaComplete_Lead'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4889
+      # ../.source/TheCostofDisease_Eng_v10.cs:4889
       - type: 'link'
         # ../en-US.restext:56 | "click here for a special ..."
         label: 'restext://Click_SpecialMessage_Generic2'
         target: 'Panacea' # ./00057-Panacea.mws.yaml
         snapshot: true
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4892
+# ../.source/TheCostofDisease_Eng_v10.cs:4892
 - type: 'conditional'
   if: 'trigger35 == 0'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4898
+  # ../.source/TheCostofDisease_Eng_v10.cs:4898
   - type: 'section'
     # ../en-US.restext:178 | "{icon:storybook} **Victor..."
     title: 'restext://Heading_VictoryAhead'
     content:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4907
+    # ../.source/TheCostofDisease_Eng_v10.cs:4907
     - type: 'text'
       # ../en-US.restext:102 | "If a player reaches or pa..."
       value: 'restext://Directive_VPTrack35_Lead'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4909
+    # ../.source/TheCostofDisease_Eng_v10.cs:4909
     - type: 'link'
       # ../en-US.restext:57 | "click here for a special ..."
       label: 'restext://Click_SpecialMessage_Generic3'
       target: 'Trigger35Points' # ./00122-Trigger35Points.mws.yaml
       snapshot: true
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4914
+# ../.source/TheCostofDisease_Eng_v10.cs:4914
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4918
+# ../.source/TheCostofDisease_Eng_v10.cs:4918
 - type: 'section'
-  # ../en-US.restext:614 | "{icon:storybook} **The Se..."
+  # ../en-US.restext:613 | "{icon:storybook} **The Se..."
   title: 'restext://Hospital2_003'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4928
+  # ../.source/TheCostofDisease_Eng_v10.cs:4928
   - type: 'text'
     # ../en-US.restext:87 | "If any player reaches the..."
     value: 'restext://Directive_JournalTrackLevel3_Lead'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4930
+  # ../.source/TheCostofDisease_Eng_v10.cs:4930
   - type: 'link'
-    # ../en-US.restext:615 | "click here for a reward."
+    # ../en-US.restext:614 | "click here for a reward."
     label: 'restext://Hospital2_005'
     target: 'InfinityClick1' # ./00096-InfinityClick1.mws.yaml
     snapshot: true
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4932
+# ../.source/TheCostofDisease_Eng_v10.cs:4932
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4934
+# ../.source/TheCostofDisease_Eng_v10.cs:4934
 - type: 'conditional'
   if: 'sciadv == 0'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4938
+  # ../.source/TheCostofDisease_Eng_v10.cs:4938
   - type: 'section'
     # ../en-US.restext:170 | "{icon:storybook} **Scient..."
     title: 'restext://Heading_ScientificAdvances'
     content:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4947
+    # ../.source/TheCostofDisease_Eng_v10.cs:4947
     - type: 'text'
       # ../en-US.restext:103 | "If a player completes a t..."
       value: 'restext://Disease_3Experiments_Lead'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4950
+    # ../.source/TheCostofDisease_Eng_v10.cs:4950
     - type: 'link'
-      # ../en-US.restext:616 | "Click here for a special ..."
+      # ../en-US.restext:615 | "Click here for a special ..."
       label: 'restext://Hospital2_006'
       target: 'Trigger3Experiments' # ./00123-Trigger3Experiments.mws.yaml
       snapshot: true
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4953
+# ../.source/TheCostofDisease_Eng_v10.cs:4953
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4957
+# ../.source/TheCostofDisease_Eng_v10.cs:4957
 - type: 'section'
   # ../en-US.restext:177 | "**University Symposium**"
   title: 'restext://Heading_UniversitySymposium'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4965
+  # ../.source/TheCostofDisease_Eng_v10.cs:4965
   - type: 'text'
     # ../en-US.restext:313 | "At the end of the second ..."
     value: 'restext://Symposium_Rule'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4979
+  # ../.source/TheCostofDisease_Eng_v10.cs:4979
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4983
+  # ../.source/TheCostofDisease_Eng_v10.cs:4983
   - type: 'popup'
     layout: 'end_of_round'
-    # ../en-US.restext:617 | "Click here at the end of ..."
+    # ../en-US.restext:616 | "Click here at the end of ..."
     label: 'restext://Hospital2_007'
     target: 'SymposiumEvent1'
     # ../en-US.restext:348 | "End of Round"

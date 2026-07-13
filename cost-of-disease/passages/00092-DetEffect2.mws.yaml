@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10358
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:10358
 ---
 format: 'mws/0.4'
 passage_id: 'DetEffect2'
@@ -6,14 +6,14 @@ passage_id: 'DetEffect2'
 title: 'restext://Title_MinorDeleteriousEffect'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10366
+# ../.source/TheCostofDisease_Eng_v10.cs:10366
 - type: 'text'
-  # ../en-US.restext:1067 | "They feared that their ha..."
+  # ../en-US.restext:1066 | "They feared that their ha..."
   value: 'restext://DetEffect2_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10367
+# ../.source/TheCostofDisease_Eng_v10.cs:10367
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10371
+# ../.source/TheCostofDisease_Eng_v10.cs:10371
 - type: 'popup'
   layout: 'setup'
   # ../en-US.restext:36 | "Click to continue..."
@@ -23,18 +23,18 @@ nodes:
   okay: 'restext://UIButton_Close' # ./00090-DeteriorationHub.mws.yaml
   snapshot: true
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10392
+  # ../.source/TheCostofDisease_Eng_v10.cs:10392
   - type: 'image'
     asset: 'image://setup/S1_Immortality'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10384
+  # ../.source/TheCostofDisease_Eng_v10.cs:10384
   - type: 'assign'
     var: 'det2'
     expr: '"visited"'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10393
+  # ../.source/TheCostofDisease_Eng_v10.cs:10393
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10394
+  # ../.source/TheCostofDisease_Eng_v10.cs:10394
   - type: 'text'
-    # ../en-US.restext:1068 | "Any player with an **Immo..."
+    # ../en-US.restext:1067 | "Any player with an **Immo..."
     value: 'restext://DetEffect2_003'

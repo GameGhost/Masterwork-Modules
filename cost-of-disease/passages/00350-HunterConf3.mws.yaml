@@ -1,42 +1,42 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34598
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:34598
 ---
 format: 'mws/0.4'
 passage_id: 'HunterConf3'
-# ../en-US.restext:2784 | "Donation Outcome"
+# ../en-US.restext:2783 | "Donation Outcome"
 title: 'restext://HunterConf3_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34609
+# ../.source/TheCostofDisease_Eng_v10.cs:34609
 - type: 'text'
-  # ../en-US.restext:2785 | "**Count up the total valu..."
+  # ../en-US.restext:2784 | "**Count up the total valu..."
   value: 'restext://HunterConf3_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34611
+# ../.source/TheCostofDisease_Eng_v10.cs:34611
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34613
+# ../.source/TheCostofDisease_Eng_v10.cs:34613
 - type: 'text'
-  # ../en-US.restext:2786 | "If the value is equal to ..."
+  # ../en-US.restext:2785 | "If the value is equal to ..."
   value: 'restext://HunterConf3_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34633
+# ../.source/TheCostofDisease_Eng_v10.cs:34633
 - type: 'link'
-  # ../en-US.restext:2787 | "click here to continue."
+  # ../en-US.restext:2786 | "click here to continue."
   label: 'restext://HunterConf3_004'
   target: 'OhYesTheyDead' # ./00193-OhYesTheyDead.mws.yaml
   snapshot: true
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34634
+# ../.source/TheCostofDisease_Eng_v10.cs:34634
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34636
+# ../.source/TheCostofDisease_Eng_v10.cs:34636
 - type: 'text'
-  # ../en-US.restext:2788 | "If the value is less, "
+  # ../en-US.restext:2787 | "If the value is less, "
   value: 'restext://HunterConf3_005'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34637
+# ../.source/TheCostofDisease_Eng_v10.cs:34637
 - type: 'link'
   # ../en-US.restext:39 | "click here to continue"
   label: 'restext://Click_ContinueNoPunct'
   target: 'ConfrontationFail' # ./00194-ConfrontationFail.mws.yaml
   snapshot: true
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34638
+# ../.source/TheCostofDisease_Eng_v10.cs:34638
 - type: 'text'
-  # ../en-US.restext:2789 | " instead."
+  # ../en-US.restext:2788 | " instead."
   value: 'restext://HunterConf3_006'

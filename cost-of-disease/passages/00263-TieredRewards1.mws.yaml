@@ -1,19 +1,19 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28200
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:28200
 ---
 format: 'mws/0.4'
 passage_id: 'TieredRewards1'
-# ../en-US.restext:2257 | "Reckoning"
+# ../en-US.restext:2256 | "Reckoning"
 title: 'restext://TieredRewards1_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28207
+# ../.source/TheCostofDisease_Eng_v10.cs:28207
 - type: 'text'
-  # ../en-US.restext:2258 | "The messenger from the Or..."
+  # ../en-US.restext:2257 | "The messenger from the Or..."
   value: 'restext://TieredRewards1_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28209
+# ../.source/TheCostofDisease_Eng_v10.cs:28209
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28213
+# ../.source/TheCostofDisease_Eng_v10.cs:28213
 - type: 'popup'
   layout: 'setup'
   # ../en-US.restext:36 | "Click to continue..."
@@ -23,64 +23,64 @@ nodes:
   okay: 'restext://UIButton_Close' # ./00172-GloomyGothic2.mws.yaml
   snapshot: true
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28229
+  # ../.source/TheCostofDisease_Eng_v10.cs:28229
   - type: 'image'
     asset: 'image://setup/S1_WolfToken'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28230
+  # ../.source/TheCostofDisease_Eng_v10.cs:28230
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28232
+  # ../.source/TheCostofDisease_Eng_v10.cs:28232
   - type: 'text'
     # ../en-US.restext:78 | "Any player that donated a..."
     value: 'restext://Directive_DonatedAExperiment_Lead'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28239
+  # ../.source/TheCostofDisease_Eng_v10.cs:28239
   - type: 'let'
     var: '_rnd_TieredRewards1_0'
     expr: '["Gain 1VP.", "Gain an ingredient of your choice.", "Receives no bonus.", "Loses 1VP. The Order is unpleased with this meager offering."].shuffled("TieredRewards1_0")[0]'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28239
+  # ../.source/TheCostofDisease_Eng_v10.cs:28239
   - type: 'text'
     value: '{_rnd_TieredRewards1_0}'
     lets:
     - '_rnd_TieredRewards1_0'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28240
+  # ../.source/TheCostofDisease_Eng_v10.cs:28240
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28242
+  # ../.source/TheCostofDisease_Eng_v10.cs:28242
   - type: 'text'
     # ../en-US.restext:79 | "Any player that donated a..."
     value: 'restext://Directive_DonatedBExperiment_Lead'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28249
+  # ../.source/TheCostofDisease_Eng_v10.cs:28249
   - type: 'let'
     var: '_rnd_TieredRewards1_1'
     # ../en-US.restext:285 | "Gain $2."
     expr: '["Gain a Knowledge of your choice.", "restext://Resource_Gain2Dollars", "Gain 2VP."].shuffled("TieredRewards1_1")[0]'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28249
+  # ../.source/TheCostofDisease_Eng_v10.cs:28249
   - type: 'text'
     value: '{_rnd_TieredRewards1_1}'
     lets:
     - '_rnd_TieredRewards1_1'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28250
+  # ../.source/TheCostofDisease_Eng_v10.cs:28250
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28252
+  # ../.source/TheCostofDisease_Eng_v10.cs:28252
   - type: 'text'
     # ../en-US.restext:80 | "Any player that donated a..."
     value: 'restext://Directive_DonatedCExperiment_Lead'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28259
+  # ../.source/TheCostofDisease_Eng_v10.cs:28259
   - type: 'let'
     var: '_rnd_TieredRewards1_2'
     expr: '["Gain 4VP.", "Gain $4."].shuffled("TieredRewards1_2")[0]'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28259
+  # ../.source/TheCostofDisease_Eng_v10.cs:28259
   - type: 'text'
     value: '{_rnd_TieredRewards1_2}'
     lets:
     - '_rnd_TieredRewards1_2'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28260
+  # ../.source/TheCostofDisease_Eng_v10.cs:28260
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28262
+  # ../.source/TheCostofDisease_Eng_v10.cs:28262
   - type: 'text'
-    # ../en-US.restext:2259 | "Any player that chose not..."
+    # ../en-US.restext:2258 | "Any player that chose not..."
     value: 'restext://TieredRewards1_014'

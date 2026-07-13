@@ -1,87 +1,87 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15952
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:15952
 ---
 format: 'mws/0.4'
 passage_id: 'MWTemp'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15957
+# ../.source/TheCostofDisease_Eng_v10.cs:15957
 - type: 'text'
-  # ../en-US.restext:1335 | "**Click on your name belo..."
+  # ../en-US.restext:1334 | "**Click on your name belo..."
   value: 'restext://MWTemp_001'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15959
+# ../.source/TheCostofDisease_Eng_v10.cs:15959
 - type: 'assign'
   var: 'gen3pg'
   expr: '1'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15964
+# ../.source/TheCostofDisease_Eng_v10.cs:15964
 - type: 'link'
   # ../en-US.restext:20 | "{nameA} III"
   label: 'restext://Character_NameA_III'
   target: 'MWCheck' # ./00141-MWCheck.mws.yaml
   snapshot: true
   onclick:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15997
+  # ../.source/TheCostofDisease_Eng_v10.cs:15997
   - type: 'assign'
     var: 'tempcheck'
     expr: 'nameA'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15965
+# ../.source/TheCostofDisease_Eng_v10.cs:15965
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15968
+# ../.source/TheCostofDisease_Eng_v10.cs:15968
 - type: 'link'
   # ../en-US.restext:21 | "{nameB} III"
   label: 'restext://Character_NameB_III'
   target: 'MWCheck' # ./00141-MWCheck.mws.yaml
   snapshot: true
   onclick:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16004
+  # ../.source/TheCostofDisease_Eng_v10.cs:16004
   - type: 'assign'
     var: 'tempcheck'
     expr: 'nameB'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15969
+# ../.source/TheCostofDisease_Eng_v10.cs:15969
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15971
+# ../.source/TheCostofDisease_Eng_v10.cs:15971
 - type: 'conditional'
   if: 'players > 2'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15974
+  # ../.source/TheCostofDisease_Eng_v10.cs:15974
   - type: 'link'
     # ../en-US.restext:22 | "{nameC} III"
     label: 'restext://Character_NameC_III'
     target: 'MWCheck' # ./00141-MWCheck.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16011
+    # ../.source/TheCostofDisease_Eng_v10.cs:16011
     - type: 'assign'
       var: 'tempcheck'
       expr: 'nameC'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15978
+# ../.source/TheCostofDisease_Eng_v10.cs:15978
 - type: 'conditional'
   if: 'players > 3'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15981
+  # ../.source/TheCostofDisease_Eng_v10.cs:15981
   - type: 'link'
     # ../en-US.restext:23 | "{nameD} III"
     label: 'restext://Character_NameD_III'
     target: 'MWCheck' # ./00141-MWCheck.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16018
+    # ../.source/TheCostofDisease_Eng_v10.cs:16018
     - type: 'assign'
       var: 'tempcheck'
       expr: 'nameD'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15985
+# ../.source/TheCostofDisease_Eng_v10.cs:15985
 - type: 'conditional'
   if: 'players > 4'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15988
+  # ../.source/TheCostofDisease_Eng_v10.cs:15988
   - type: 'link'
     # ../en-US.restext:24 | "{nameE} III"
     label: 'restext://Character_NameE_III'
     target: 'MWCheck' # ./00141-MWCheck.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16025
+    # ../.source/TheCostofDisease_Eng_v10.cs:16025
     - type: 'assign'
       var: 'tempcheck'
       expr: 'nameE'

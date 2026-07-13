@@ -1,94 +1,94 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21029
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:21029
 ---
 format: 'mws/0.4'
 passage_id: 'Gen1-SanityTrack'
-# ../en-US.restext:1609 | "To Quell the Mind"
+# ../en-US.restext:1608 | "To Quell the Mind"
 title: 'restext://Gen1_SanityTrack_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21036
+# ../.source/TheCostofDisease_Eng_v10.cs:21036
 - type: 'assign'
   var: 'tcodgen1'
   expr: '1'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21037
+# ../.source/TheCostofDisease_Eng_v10.cs:21037
 - type: 'text'
-  # ../en-US.restext:1610 | "Just as a sharpened blade..."
+  # ../en-US.restext:1609 | "Just as a sharpened blade..."
   value: 'restext://Gen1_SanityTrack_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21038
+# ../.source/TheCostofDisease_Eng_v10.cs:21038
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21040
+# ../.source/TheCostofDisease_Eng_v10.cs:21040
 - type: 'text'
-  # ../en-US.restext:1611 | "Please click on the name ..."
+  # ../en-US.restext:1610 | "Please click on the name ..."
   value: 'restext://Gen1_SanityTrack_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21050
+# ../.source/TheCostofDisease_Eng_v10.cs:21050
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21053
+# ../.source/TheCostofDisease_Eng_v10.cs:21053
 - type: 'link'
   label: '{nameA}'
   target: 'Gen1-SanityTrackRes' # ./00180-Gen1-SanityTrackRes.mws.yaml
   snapshot: true
   onclick:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21086
+  # ../.source/TheCostofDisease_Eng_v10.cs:21086
   - type: 'assign'
     var: 'gen1sane'
     expr: 'nameA'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21054
+# ../.source/TheCostofDisease_Eng_v10.cs:21054
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21057
+# ../.source/TheCostofDisease_Eng_v10.cs:21057
 - type: 'link'
   label: '{nameB}'
   target: 'Gen1-SanityTrackRes' # ./00180-Gen1-SanityTrackRes.mws.yaml
   snapshot: true
   onclick:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21093
+  # ../.source/TheCostofDisease_Eng_v10.cs:21093
   - type: 'assign'
     var: 'gen1sane'
     expr: 'nameB'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21058
+# ../.source/TheCostofDisease_Eng_v10.cs:21058
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21060
+# ../.source/TheCostofDisease_Eng_v10.cs:21060
 - type: 'conditional'
   if: 'players > 2'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21063
+  # ../.source/TheCostofDisease_Eng_v10.cs:21063
   - type: 'link'
     label: '{nameC}'
     target: 'Gen1-SanityTrackRes' # ./00180-Gen1-SanityTrackRes.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21100
+    # ../.source/TheCostofDisease_Eng_v10.cs:21100
     - type: 'assign'
       var: 'gen1sane'
       expr: 'nameC'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21067
+# ../.source/TheCostofDisease_Eng_v10.cs:21067
 - type: 'conditional'
   if: 'players > 3'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21070
+  # ../.source/TheCostofDisease_Eng_v10.cs:21070
   - type: 'link'
     label: '{nameD}'
     target: 'Gen1-SanityTrackRes' # ./00180-Gen1-SanityTrackRes.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21107
+    # ../.source/TheCostofDisease_Eng_v10.cs:21107
     - type: 'assign'
       var: 'gen1sane'
       expr: 'nameD'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21074
+# ../.source/TheCostofDisease_Eng_v10.cs:21074
 - type: 'conditional'
   if: 'players > 4'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21077
+  # ../.source/TheCostofDisease_Eng_v10.cs:21077
   - type: 'link'
     label: '{nameE}'
     target: 'Gen1-SanityTrackRes' # ./00180-Gen1-SanityTrackRes.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21114
+    # ../.source/TheCostofDisease_Eng_v10.cs:21114
     - type: 'assign'
       var: 'gen1sane'
       expr: 'nameE'

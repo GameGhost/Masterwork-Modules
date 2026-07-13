@@ -1,122 +1,122 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12050
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:12050
 ---
 format: 'mws/0.4'
 passage_id: 'Passcodechk'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12053
+# ../.source/TheCostofDisease_Eng_v10.cs:12053
 - type: 'switch'
   on: 'password'
   cases:
   - match: 'alpha'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12055
+    # ../.source/TheCostofDisease_Eng_v10.cs:12055
     - type: 'assign'
       var: 'meet'
       expr: 'let1'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12056
+    # ../.source/TheCostofDisease_Eng_v10.cs:12056
     - type: 'goto'
       target: 'HubertusWolves1' # ./00046-HubertusWolves1.mws.yaml
   - match: 'moon'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12060
+    # ../.source/TheCostofDisease_Eng_v10.cs:12060
     - type: 'assign'
       var: 'meet'
       expr: 'let2'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12061
+    # ../.source/TheCostofDisease_Eng_v10.cs:12061
     - type: 'goto'
       target: 'HubertusWolves2' # ./00103-HubertusWolves2.mws.yaml
   - match: 'howl'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12065
+    # ../.source/TheCostofDisease_Eng_v10.cs:12065
     - type: 'assign'
       var: 'meet'
       expr: 'let3'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12066
+    # ../.source/TheCostofDisease_Eng_v10.cs:12066
     - type: 'goto'
       target: 'HubertusWolves3' # ./00105-HubertusWolves3.mws.yaml
   - match: 'right'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12070
+    # ../.source/TheCostofDisease_Eng_v10.cs:12070
     - type: 'assign'
       var: 'meet'
       expr: 'let4'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12071
+    # ../.source/TheCostofDisease_Eng_v10.cs:12071
     - type: 'goto'
       target: 'HubertusHunters1' # ./00106-HubertusHunters1.mws.yaml
   - match: 'cross'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12075
+    # ../.source/TheCostofDisease_Eng_v10.cs:12075
     - type: 'assign'
       var: 'meet'
       expr: 'let5'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12076
+    # ../.source/TheCostofDisease_Eng_v10.cs:12076
     - type: 'goto'
       target: 'HubertusHunters2' # ./00108-HubertusHunters2.mws.yaml
   - match: 'bolt'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12080
+    # ../.source/TheCostofDisease_Eng_v10.cs:12080
     - type: 'assign'
       var: 'meet'
       expr: 'let6'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12081
+    # ../.source/TheCostofDisease_Eng_v10.cs:12081
     - type: 'goto'
       target: 'HubertusHunters3' # ./00109-HubertusHunters3.mws.yaml
   - match: 'Alpha'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12085
+    # ../.source/TheCostofDisease_Eng_v10.cs:12085
     - type: 'assign'
       var: 'meet'
       expr: 'let1'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12086
+    # ../.source/TheCostofDisease_Eng_v10.cs:12086
     - type: 'goto'
       target: 'HubertusWolves1' # ./00046-HubertusWolves1.mws.yaml
   - match: 'Moon'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12090
+    # ../.source/TheCostofDisease_Eng_v10.cs:12090
     - type: 'assign'
       var: 'meet'
       expr: 'let2'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12091
+    # ../.source/TheCostofDisease_Eng_v10.cs:12091
     - type: 'goto'
       target: 'HubertusWolves2' # ./00103-HubertusWolves2.mws.yaml
   - match: 'Howl'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12095
+    # ../.source/TheCostofDisease_Eng_v10.cs:12095
     - type: 'assign'
       var: 'meet'
       expr: 'let3'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12096
+    # ../.source/TheCostofDisease_Eng_v10.cs:12096
     - type: 'goto'
       target: 'HubertusWolves3' # ./00105-HubertusWolves3.mws.yaml
   - match: 'Right'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12100
+    # ../.source/TheCostofDisease_Eng_v10.cs:12100
     - type: 'assign'
       var: 'meet'
       expr: 'let4'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12101
+    # ../.source/TheCostofDisease_Eng_v10.cs:12101
     - type: 'goto'
       target: 'HubertusHunters1' # ./00106-HubertusHunters1.mws.yaml
   - match: 'Cross'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12105
+    # ../.source/TheCostofDisease_Eng_v10.cs:12105
     - type: 'assign'
       var: 'meet'
       expr: 'let5'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12106
+    # ../.source/TheCostofDisease_Eng_v10.cs:12106
     - type: 'goto'
       target: 'HubertusHunters2' # ./00108-HubertusHunters2.mws.yaml
   - match: 'Bolt'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12110
+    # ../.source/TheCostofDisease_Eng_v10.cs:12110
     - type: 'assign'
       var: 'meet'
       expr: 'let6'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12111
+    # ../.source/TheCostofDisease_Eng_v10.cs:12111
     - type: 'goto'
       target: 'HubertusHunters3' # ./00109-HubertusHunters3.mws.yaml
   default:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12115
+  # ../.source/TheCostofDisease_Eng_v10.cs:12115
   - type: 'goto'
     target: 'FailedMeeting' # ./00313-FailedMeeting.mws.yaml

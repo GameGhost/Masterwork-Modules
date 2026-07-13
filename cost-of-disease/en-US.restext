@@ -68,7 +68,7 @@ Common_Private_Decision_Warning=**Do not allow the other players to see the Stor
 Common_Private_Decision_Warning_Typo=**Do not allow the other player's to see the Storybook while making the decision below.**
 Directive_3Player_PassMarker_A=Then, since this is a 3 player game, pass the starting player marker clockwise 1 additional time.
 Directive_3Player_PassMarker_B=Then, since this is a 3-player game, pass the starting player marker clockwise 1 additional time.
-Directive_CannotPerform_LoseVPGainServant=If a player cannot perform this action, they lose 3VP and gain a Servant/Spouse piece from Lost to place onto the Hunter's Haven.
+Directive_CannotPerform_LoseVPGainServant=_If a player cannot perform this action, they lose 3VP and gain a Servant/Spouse piece from Lost to place onto the Hunter's Haven._
 Directive_CaretakerTownActions_Rule=Caretaker pieces can now take actions in Town as well as in the Estates. _The same Town placement rules for Servants apply to Caretaker pieces._
 Directive_CheckLycanthropicStrength=Does any player have the **Lycanthropic Strength** Masterwork Experiment?
 Directive_ContributeExperiment_Rule=In turn order, each player decides whether to contribute an Experiment. Donated Experiments are turned face-down and placed under your Masterwork card.
@@ -78,8 +78,8 @@ Directive_DoNothingInstead=Decide to do nothing instead.
 Directive_DonatedAExperiment_Lead=Any player that donated an **A Experiment**:
 Directive_DonatedBExperiment_Lead=Any player that donated a **B Experiment**:
 Directive_DonatedCExperiment_Lead=Any player that donated a **C Experiment**:
-Directive_EndGeneration_DubiousBartering=Remove all player pieces from the board and Perform the End of a Generation. Return all <b>Dubious Bartering</b> cards to the box. Return any remaining <sprite="StorybookToken" index=0> tokens to the supply.
-Directive_EndGeneration_JournalTrackTokens=Remove all player pieces from the board and perform the End of a Generation. Any <sprite="StorybookToken" index=0> tokens remaining on a player's Journal Track are returned to the supply.
+Directive_EndGeneration_DubiousBartering=Remove all player pieces from the board and Perform the End of a Generation. Return all **Dubious Bartering** cards to the box. Return any remaining {icon:storybook} tokens to the supply.
+Directive_EndGeneration_JournalTrackTokens=Remove all player pieces from the board and perform the End of a Generation. Any {icon:storybook} tokens remaining on a player's Journal Track are returned to the supply.
 Directive_EngineeringMastersStudy_Rule=When you gain a Vanity Estate Upgrade, the **Engineering Master's Study** is part of the available pool to build as normal.
 Directive_GainMaladjustmentCard=Gain a Maladjustment card and place it into play immediately for this Generation.
 Directive_GiveEachPlayerStorybookToken=Give each player a {icon:storybook} **token**.
@@ -94,7 +94,7 @@ Directive_PlaceTile_B=Place the {bb} tile over spot B on the Village Chronicle.
 Directive_PlaceTile_C=Place the {bc} tile over spot C on the Village Chronicle.
 Directive_RetrieveLycanthropicStrengthCard=Retrieve the **Lycanthropic Strength** Update card from the scenario box and give it to the player working towards this Masterwork.
 Directive_ReturnExposedBuildingTiles=Return all other Exposed Building tiles to the scenario box.
-Directive_ReturnHeartToken=Return the Heart{icon:s1_hearttoken}token to the scenario box.
+Directive_ReturnHeartToken=Return the **Heart{icon:s1_hearttoken}token** to the scenario box.
 Directive_ReturnHeartToken_Bold=Return the **Heart** {icon:s1_hearttoken} **token** to the scenario box.
 Directive_ServantOnlyBuilding_Rule=You may only place a Servant/Spouse piece on this building. This action causes you to pay $1 to the supply. Then, at the end of the round, any piece on this building will become Lost.
 Directive_TurnToPage=Turn to page 
@@ -179,7 +179,7 @@ Heading_VictoryAhead={icon:storybook} **Victory Ahead**
 Heading_Vote=**VOTE**
 Heading_WhispersAbate=**Whispers Abate**
 Hospital_ChurchExpansion_Rule=The church can no longer handle the influx of the diseased and needs to expand their facilities. Each time a player visits the church, they may donate funds and assistance towards building a new Hospital by paying money to the supply. Depending on the amount spent ($0, $1, or $2), the player will receive 1, 2, or 3 {icon:s1_hearttoken} and lose 1, 2, or 3 {icon:creepy_icon}. _You do not pay extra ($) for placing a piece if another player has already placed at the church._
-Hospital_FirstVisit_Lead=The first time you visit the Hospital with your Self,
+Hospital_FirstVisit_Lead=The **first time** you visit the Hospital with your Self,
 Hospital_MustVisit_Rule=All players MUST place their Self on the Hospital space in town once this generation. _(If, for any reason, you have not visited the Hospital by the end of this Generation, lose 6VP and an Estate Upgrade of your choice, if possible.)_
 Hunt_NightOfTheHunt_Selection=At the end of the round, two of the scientists will be chosen to participate in the **Night of the Hunt.** This invitation cannot be refused.
 HuntersHaven_PayKnowledgeLoseInsanity_Rule=For each visit to the Hunter's Haven, pay 1 Occult Knowledge cube to lose 2 {icon:insanity_icon}. _(You cannot use Journaled Knowledge to pay this cost.)_
@@ -212,7 +212,7 @@ Masterwork_CompleteLead=When a player completes their Masterwork,
 Masterwork_CompleteRule=A Masterwork can be completed by taking the Perform Experiment action and paying all of its costs.
 Masterwork_Completing_Lead=If you are completing a Masterwork, 
 Masterwork_NamePrompt=Give your creation a new, majestic name:
-Masterwork_RequiresExperimentsNote=Note: This Masterwork still requires 1 A Experiment, 2 B Experiments, and 3 C Experiments to be completed.
+Masterwork_RequiresExperimentsNote=_Note: This Masterwork still requires 1 A Experiment, 2 B Experiments, and 3 C Experiments to be completed._
 Masterwork_Type_Animal=Animal
 Masterwork_Type_Bottle=Bottle
 Masterwork_Type_Creature=Creature.
@@ -432,14 +432,13 @@ S5Fate1_007=With additional financial capital from the **Bank**, the church obta
 
 # 00009-S5Fate2.mws.yaml
 S5Fate2_001=FATE of the Infected
-S5Fate2_002={heart} + {_rnd_S5Fate2_0}
-S5Fate2_003=The congregation and citizenry, stricken with the weight of those lost in the battle with Yellow Fever, could only provide a meager sum, which placed the financial future of the village into the hands of the most charitable scientists.
-S5Fate2_004=**FAILURE!**
-S5Fate2_005=With charitable contributions failing to exceed **{hearttotal}**{icon:s1_hearttoken}, the Hospital was not built. This ill-timed news was delivered just as several new cases of influenza spread across the region. Without the Hospital, the results were drastic.
-S5Fate2_006=Failed to Build the Hospital
-S5Fate2_007=**SUCCESS!**
-S5Fate2_008=With charitable contributions totaling over **{hearttotal}**{icon:s1_hearttoken}, the Hospital was built. The additional medical infrastructure provided the town a respite from another severe outbreak and ushered in a new era.
-S5Fate2_009=Succeeded in Building the Hospital
+S5Fate2_002=The congregation and citizenry, stricken with the weight of those lost in the battle with Yellow Fever, could only provide a meager sum, which placed the financial future of the village into the hands of the most charitable scientists.
+S5Fate2_003=**FAILURE!**
+S5Fate2_004=With charitable contributions failing to exceed **{hearttotal}**{icon:s1_hearttoken}, the Hospital was not built. This ill-timed news was delivered just as several new cases of influenza spread across the region. Without the Hospital, the results were drastic.
+S5Fate2_005=Failed to Build the Hospital
+S5Fate2_006=**SUCCESS!**
+S5Fate2_007=With charitable contributions totaling over **{hearttotal}**{icon:s1_hearttoken}, the Hospital was built. The additional medical infrastructure provided the town a respite from another severe outbreak and ushered in a new era.
+S5Fate2_008=Succeeded in Building the Hospital
 
 # 00010-TITLE_SCREEN.mws.yaml
 TITLE_SCREEN_002=_A clever game by_ T. C. Petty III.
@@ -961,7 +960,7 @@ DiseaseConsequence_004=Retrieve the Hereditary Disease cards from the Scenario b
 # 00085-HospitalDefine.mws.yaml
 HospitalDefine_001=Hospital
 HospitalDefine_002=Look through the Experiment deck of your choice to find an Experiment of your choice and draw it into your hand. _(Once complete, shuffle the deck.)_
-HospitalDefine_003=NOTE: You may take the Hospital action with any legal token, but you must only click on the Storybook prompt the first time you visit the Hospital with your Self.
+HospitalDefine_003=NOTE: You may take the Hospital action with any legal token, but you must only click on the Storybook prompt the **first time** you visit the Hospital with your Self.
 HospitalDefine_004=Click here to return...
 
 # 00086-DevastationIntro.mws.yaml
@@ -1128,8 +1127,8 @@ DevEventCure_001=An Alternative Cure
 DevEventCure_002=An envoy from the 
 DevEventCure_005= arrived bearing an interesting narrative and a shimmering tincture of liquid. She visited each of the manors in turn unable to conceal her wicked grin and laughter as she did so.
 DevEventCure_006="The brotherhood has heard of your suffering and we wish to offer an exchange. For a meager bit of knowledge, we present a cure. Drink of this liquid and your dreaded affliction will cease," she said as a bolt of lightning arced across the sky above.
-DevEventCure_007=Each player, in turn order, may choose to discard a completed B-Level Experiment _(to the bottom of the deck)_ to place their **Hereditary Disease Experiment** into their **Stored Experiments**. They will no longer be affected by Disease events.
-DevEventCure_008=Any player that has already completed their Hereditary Disease Experiment cannot choose this action.
+DevEventCure_007=Each player, in turn order, may choose to discard a completed B-Level Experiment _(to the bottom of the deck)_ to place their **Hereditary Disease Experiment** into their **Stored Experiments**. _They will no longer be affected by Disease events._
+DevEventCure_008=Any player that has already completed their **Hereditary Disease Experiment** cannot choose this action.
 DevEventCure_009=Continue once all players have made their decision.
 
 # 00102-EnvPasscode.mws.yaml
@@ -1156,7 +1155,7 @@ HubertusHunters1_004=amusingly exploitative. The Fraternity hopes to use the rec
 
 # 00107-DevastationFate1.mws.yaml
 DevastationFate1_001=Strong Alliance
-DevastationFate1_002=Remove all player pieces from the board and Perform the End of a Generation. Return any remaining <sprite="StorybookToken" index=0> tokens to the supply.
+DevastationFate1_002=Remove all player pieces from the board and Perform the End of a Generation. Return any remaining {icon:storybook} tokens to the supply.
 DevastationFate1_003=The ties that bound the family to these secret warring factions changed the course of history.
 DevastationFate1_004=By exposing the insidious deeds of the **Fraternity of Hunters,** the additional attention forced them to quit the region. Motivated by the promise of swift justice, the **Order of St. Hubertus** created a stronghold in the town. They swore to provide a haven for all outcasts.
 DevastationFate1_005=While secrets could not forever be kept, the silent assistance of {playtxt} influential members of the upper crust ensured that the **Order** could progress in their endeavors long enough to make their presence integral to the town. They immediately began to advance their schemes.
@@ -1209,7 +1208,7 @@ MostInvestigated_005=**{most} immediately gains 4VP.**
 
 # 00121-Prosperity3.mws.yaml
 Prosperity3_001=**Scientific Achievement**
-Prosperity3_002=When you gain a Vanity Estate Upgrade, all remaining Master's Study tiles are part of theavailable pool to build as normal (not Occult).
+Prosperity3_002=When you gain a Vanity Estate Upgrade, all remaining **Master's Study** tiles are part of theavailable pool to build as normal _(not Occult)_.
 
 # 00122-Trigger35Points.mws.yaml
 Trigger35Points_001=**Carefully hand this storybook device to the player that just reached 35VP. This is read within view of all players.**
@@ -1540,7 +1539,7 @@ GloomyGothic3_012=Visiting the remodeled Hunter's Lodge allows you to **pay 1 Oc
 # 00174-EvilMayor.mws.yaml
 EvilMayor_002=**Avarice Aplently**
 EvilMayor_003=The Bank had proven a valuable investment in the town's future, and since its construction was facilitated by the {mayor} name, the {society} could not help but offer thanks. As a token of their appreciation, they felt it best to help construct an expansion to their Estate.
-EvilMayor_004=Retrieve the **Curious Supply Room** Estate Upgrade from the scenario box. _You may immediately build it in the next empty plot on your Estate board at no additional cost._ Then, return the Commemorative Mayoral Coin to the box.
+EvilMayor_004=Retrieve the **Curious Supply Room** Estate Upgrade from the scenario box. _You may immediately build it in the next empty plot on your Estate board at no additional cost._ Then, return the **Commemorative Mayoral Coin** to the box.
 
 # 00175-CharityNegCons.mws.yaml
 CharityNegCons_001=Condescending Patronage
@@ -1805,7 +1804,7 @@ UniCharity_002=It seemed the festivities in {townname} could scarcely cease befo
 UniCharity_003=In honor of {charity}'s legacy of charity, another memorial was revealed at a prestigious ceremony, celebrating the continued medical contributions of {townname}. As a university town, the small village hosted an impressive pedigree of scholars who worked with the most advanced methodology in treatment and disease prevention.
 UniCharity_004=It seemed the festivities in {townname} could scarcely cease before another bright and joyous event occurred. Only a few years after a memorial had been erected in the honor of {mayor} III, the Hospital could not contain its admiration as well. It was surprised and overjoyed to discover that the same individual's family was not only responsible for guiding the town politically, but cemented their important legacy of giving.
 UniCharity_005={mayor} III was visibly agitated by the intrusion into their affairs, but when offered assistance from top researchers in the region, their surly demeanor softened temporarily. Perhaps the minor inconvenience of friendship and celebration would be worth the boon to their inventions.
-UniCharity_006=Retrieve a **Charity Memorial** Estate Tile from the scenario box. {charity} III may build this in their next available plot. They do not have to pay the costto open a new plot. Return the Heart{icon:s1_hearttoken}token to the scenario box.
+UniCharity_006=Retrieve a **Charity Memorial** Estate Tile from the scenario box. {charity} III may build this in their next available plot. They do not have to pay the costto open a new plot. Return the **Heart{icon:s1_hearttoken}token** to the scenario box.
 UniCharity_007=Immediately move **1 space forward** on the Journal track of your choice _for no cost_. Then, lose **2VP**.
 
 # 00201-UniEquity.mws.yaml
@@ -1868,7 +1867,7 @@ CharityAwardGood_005=Retrieve the **Personal Library** Estate Upgrade from the s
 MayoralAward_002=**The Benefit of Knowledge**
 MayoralAward_003=The path to enlightenment is a not without its humble beginnings, and the creatures that now embraced a gentler path could not have done so without an intense pursuit of knowledge. The deviant machinations of a cruel world may have doomed them to these egregious forms, but to find peace with one's self is a struggle all beings face.
 MayoralAward_004=The townsfolk appreciated {mayor} III's lineage as partly responsible for spearheading the gift of **knowledge** above all else in the generations past. They desire to repay this Librarian lineage with a contribution of their own.
-MayoralAward_005=Retrieve the **Personal Library** Estate Upgrade from the scenario box. You may immediately build it in the next empty plot on your Estate board at no additional cost. Then, return the Commemorative Mayoral Coin to the box.
+MayoralAward_005=Retrieve the **Personal Library** Estate Upgrade from the scenario box. You may immediately build it in the next empty plot on your Estate board at no additional cost. Then, return the **Commemorative Mayoral Coin** to the box.
 MayoralAward_006=Whenever you take the Perform Experiment action, the **Personal Library** provides one free Knowledge of your choice from the supply. This Knowledge can be used immediately towards the cost of Performing that Experiment.
 
 # 00209-HunterJoin.mws.yaml
@@ -2256,7 +2255,7 @@ roundEndKnowledge_004=Each player gains **1** {icon:creepy_icon} for **each** Kn
 # 00263-TieredRewards1.mws.yaml
 TieredRewards1_001=Reckoning
 TieredRewards1_002=The messenger from the Order thanked the scientists and vowed to return once again after a time.
-TieredRewards1_014=Any player that chose not to donate **returns a Servant to Lost** and **gains 1** {icon:creepy_icon}. If you cannot lose a Servant, lose 3VP instead.
+TieredRewards1_014=Any player that chose not to donate **returns a Servant to Lost** and **gains 1** {icon:creepy_icon}. _If you cannot lose a Servant, lose 3VP instead._
 
 # 00264-CannotParticipate.mws.yaml
 CannotParticipate_001=In the Blood
@@ -2350,7 +2349,7 @@ OptiontoKillYes_002=While I struggle to insinuate such an onerous deed, the cous
 OptiontoKillYes_003=Did they take this opportunity to experiment upon their own flesh and blood? Or was this only coincidental, and was the continued promise of additional help around the Estate worth the potential negatives to come?
 OptiontoKillYes_004=In turn order, any player with an **Immortality card** can choose to discard it to the scenario box.
 OptiontoKillYes_005=If a player **discards an Immortality card**, they immediately:
-OptiontoKillYes_006=**Gain 1 Body,** Lose 1{icon:insanity_icon}, and Gain 1VP. Then they must return a Caretaker piece to Lost. If a player chooses to keep their Immortality card, they receive no special bonus and also keep their Caretaker piece. Once all players have chosen
+OptiontoKillYes_006=**Gain 1 Body,** Lose 1{icon:insanity_icon}, and Gain 1VP. Then they must return a Caretaker piece to Lost. If a player chooses to keep their Immortality card, they receive no special bonus and also keep their **Caretaker** piece. Once all players have chosen
 
 # 00281-OptiontoKillStart.mws.yaml
 OptiontoKillStart_001=A Peculiar Biological Study
@@ -2542,7 +2541,7 @@ VialSoldforLess_001=Valuable Keepsake
 VialSoldforLess_002=Due to the surprising and uncharacteristically good nature of the ill-tempered family of scientists, the blight from the land was removed.
 VialSoldforLess_003=The seemingly important crystal vial of holy water, while not pivotal to the tale of the cousins, was interesting to note nonetheless. For this bohemian glass piece represented the finest hand-blown 17th century crystal, and as the Austro-Hungarian Empire waned, these commanded prices that rivaled the most precious jewelry of the time.
 VialSoldforLess_004=The cousin took this opportunity to sell the vial for a significant sum of money.
-VialSoldforLess_005={charity} III gains **$2**. Return the Vial token to the scenario box.
+VialSoldforLess_005={charity} III gains **$2**. Return the **Vial token** to the scenario box.
 
 # 00312-AwardSpawningPods.mws.yaml
 AwardSpawningPods_001=An Award For Research

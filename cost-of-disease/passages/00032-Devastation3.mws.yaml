@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4460
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:4460
 ---
 format: 'mws/0.4'
 passage_id: 'Devastation3'
@@ -10,122 +10,122 @@ tags:
 - 'HUB'
 layout: 'hub_late'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4467
+# ../.source/TheCostofDisease_Eng_v10.cs:4467
 - type: 'assign'
   var: 'round'
   expr: '6'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4471
+# ../.source/TheCostofDisease_Eng_v10.cs:4471
 - type: 'section'
   # ../en-US.restext:172 | "{icon:storybook} **Suspicion**"
   title: 'restext://Heading_Suspicion'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4481
+  # ../.source/TheCostofDisease_Eng_v10.cs:4481
   - type: 'text'
     # ../en-US.restext:193 | "When a player visits one ..."
     value: 'restext://Investigate_SuspiciousLocation_Rule'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4482
+  # ../.source/TheCostofDisease_Eng_v10.cs:4482
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4485
+  # ../.source/TheCostofDisease_Eng_v10.cs:4485
   - type: 'link'
     # ../en-US.restext:190 | "Investigate {ba}"
     label: 'restext://Investigate_A'
     target: 'BuildingSignin' # ./00111-BuildingSignin.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4571
+    # ../.source/TheCostofDisease_Eng_v10.cs:4571
     - type: 'assign'
       var: 'inv'
       expr: 'ba'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4486
+  # ../.source/TheCostofDisease_Eng_v10.cs:4486
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4489
+  # ../.source/TheCostofDisease_Eng_v10.cs:4489
   - type: 'link'
     # ../en-US.restext:191 | "Investigate {bb}"
     label: 'restext://Investigate_B'
     target: 'BuildingSignin' # ./00111-BuildingSignin.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4578
+    # ../.source/TheCostofDisease_Eng_v10.cs:4578
     - type: 'assign'
       var: 'inv'
       expr: 'bb'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4490
+  # ../.source/TheCostofDisease_Eng_v10.cs:4490
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4493
+  # ../.source/TheCostofDisease_Eng_v10.cs:4493
   - type: 'link'
     # ../en-US.restext:192 | "Investigate {bc}"
     label: 'restext://Investigate_C'
     target: 'BuildingSignin' # ./00111-BuildingSignin.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4585
+    # ../.source/TheCostofDisease_Eng_v10.cs:4585
     - type: 'assign'
       var: 'inv'
       expr: 'bc'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4494
+  # ../.source/TheCostofDisease_Eng_v10.cs:4494
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4498
+  # ../.source/TheCostofDisease_Eng_v10.cs:4498
   - type: 'text'
     # ../en-US.restext:7 | "_You may visit the same B..."
     value: 'restext://Building_ExposeConcealRule'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4510
+# ../.source/TheCostofDisease_Eng_v10.cs:4510
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4514
+# ../.source/TheCostofDisease_Eng_v10.cs:4514
 - type: 'section'
   # ../en-US.restext:166 | "{icon:storybook} **Relief..."
   title: 'restext://Heading_ReliefFromDisease'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4524
+  # ../.source/TheCostofDisease_Eng_v10.cs:4524
   - type: 'text'
     # ../en-US.restext:105 | "A \"Hereditary Disease\" ..."
     value: 'restext://Disease_HereditaryExperiment_Rule'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4532
+  # ../.source/TheCostofDisease_Eng_v10.cs:4532
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4534
+  # ../.source/TheCostofDisease_Eng_v10.cs:4534
   - type: 'text'
     # ../en-US.restext:104 | "When a player completes t..."
     value: 'restext://Disease_HereditaryExperiment_Lead'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4535
+  # ../.source/TheCostofDisease_Eng_v10.cs:4535
   - type: 'link'
     # ../en-US.restext:55 | "click here for a special ..."
     label: 'restext://Click_SpecialMessage_Generic1'
     target: 'HereditaryDiseaseComplete' # ./00341-HereditaryDiseaseComplete.mws.yaml
     snapshot: true
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4537
+# ../.source/TheCostofDisease_Eng_v10.cs:4537
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4541
+# ../.source/TheCostofDisease_Eng_v10.cs:4541
 - type: 'section'
   # ../en-US.restext:171 | "{icon:storybook} **Stable..."
   title: 'restext://Heading_StableHand'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4551
+  # ../.source/TheCostofDisease_Eng_v10.cs:4551
   - type: 'text'
     # ../en-US.restext:304 | "When a player visits the ..."
     value: 'restext://Stables_VisitLead'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4552
+  # ../.source/TheCostofDisease_Eng_v10.cs:4552
   - type: 'link'
     # ../en-US.restext:54 | "click here to speak with ..."
     label: 'restext://Click_SpeakStableHand'
     target: 'RefusalEvent' # ./00210-RefusalEvent.mws.yaml
     snapshot: true
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4553
+  # ../.source/TheCostofDisease_Eng_v10.cs:4553
   - type: 'text'
     # ../en-US.restext:113 | " _If you have joined a fa..."
     value: 'restext://Faction_NoEffectIfJoined'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4558
+  # ../.source/TheCostofDisease_Eng_v10.cs:4558
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4562
+  # ../.source/TheCostofDisease_Eng_v10.cs:4562
   - type: 'popup'
     layout: 'end_of_round'
-    # ../en-US.restext:602 | "Click here at the end of ..."
+    # ../en-US.restext:601 | "Click here at the end of ..."
     label: 'restext://Devastation3_011'
     target: 'BuildingsEnd'
     # ../en-US.restext:348 | "End of Round"

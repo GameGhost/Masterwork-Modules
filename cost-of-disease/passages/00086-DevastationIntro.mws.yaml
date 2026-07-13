@@ -1,187 +1,187 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9535
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:9535
 ---
 format: 'mws/0.4'
 passage_id: 'DevastationIntro'
 # ../en-US.restext:321 | "GENERATION II"
 title: 'restext://Title_GenerationII'
-# ../en-US.restext:968 | "The Epidemic Strikes"
+# ../en-US.restext:967 | "The Epidemic Strikes"
 subtitle: 'restext://DevastationIntro_001'
 tags:
 - 'INTRO'
 layout: 'introduction'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9546
+# ../.source/TheCostofDisease_Eng_v10.cs:9546
 - type: 'text'
-  # ../en-US.restext:969 | "Following a bitter winter..."
+  # ../en-US.restext:968 | "Following a bitter winter..."
   value: 'restext://DevastationIntro_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9547
+# ../.source/TheCostofDisease_Eng_v10.cs:9547
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9549
+# ../.source/TheCostofDisease_Eng_v10.cs:9549
 - type: 'text'
-  # ../en-US.restext:970 | "The desolation to which t..."
+  # ../en-US.restext:969 | "The desolation to which t..."
   value: 'restext://DevastationIntro_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9550
+# ../.source/TheCostofDisease_Eng_v10.cs:9550
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9552
+# ../.source/TheCostofDisease_Eng_v10.cs:9552
 - type: 'text'
-  # ../en-US.restext:971 | "For most, this environmen..."
+  # ../en-US.restext:970 | "For most, this environmen..."
   value: 'restext://DevastationIntro_004'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9553
+# ../.source/TheCostofDisease_Eng_v10.cs:9553
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9555
+# ../.source/TheCostofDisease_Eng_v10.cs:9555
 - type: 'text'
-  # ../en-US.restext:972 | "And the country began to ..."
+  # ../en-US.restext:971 | "And the country began to ..."
   value: 'restext://DevastationIntro_005'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9556
+# ../.source/TheCostofDisease_Eng_v10.cs:9556
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9558
+# ../.source/TheCostofDisease_Eng_v10.cs:9558
 - type: 'link'
   # ../en-US.restext:347 | "Continue..."
   label: 'restext://UIButton_ContinueEllipsis'
   target: 'DiseaseConsequence' # ./00084-DiseaseConsequence.mws.yaml
   snapshot: true
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9560
+# ../.source/TheCostofDisease_Eng_v10.cs:9560
 - type: 'assign'
   var: 'letter'
   expr: '[1, 2, 3, 4, 5]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9561
+# ../.source/TheCostofDisease_Eng_v10.cs:9561
 - type: 'assign'
   var: 'letter'
   expr: 'letter.shuffled("DevastationIntro_0")'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9562
+# ../.source/TheCostofDisease_Eng_v10.cs:9562
 - type: 'assign'
   var: 'letterA'
   expr: 'letter[0]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9563
+# ../.source/TheCostofDisease_Eng_v10.cs:9563
 - type: 'assign'
   var: 'letterB'
   expr: 'letter[1]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9564
+# ../.source/TheCostofDisease_Eng_v10.cs:9564
 - type: 'assign'
   var: 'letterC'
   expr: 'letter[2]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9565
+# ../.source/TheCostofDisease_Eng_v10.cs:9565
 - type: 'assign'
   var: 'letA'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9566
+# ../.source/TheCostofDisease_Eng_v10.cs:9566
 - type: 'assign'
   var: 'letB'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9567
+# ../.source/TheCostofDisease_Eng_v10.cs:9567
 - type: 'assign'
   var: 'letC'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9568
+# ../.source/TheCostofDisease_Eng_v10.cs:9568
 - type: 'assign'
   var: 'goodcount'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9569
+# ../.source/TheCostofDisease_Eng_v10.cs:9569
 - type: 'assign'
   var: 'refusaltoken'
   # ../en-US.restext:27 | "no"
   expr: '"restext://Choice_No_Lower"'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9570
+# ../.source/TheCostofDisease_Eng_v10.cs:9570
 - type: 'assign'
   var: 'sick'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9571
+# ../.source/TheCostofDisease_Eng_v10.cs:9571
 - type: 'assign'
   var: 'devpage'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9572
+# ../.source/TheCostofDisease_Eng_v10.cs:9572
 - type: 'assign'
   var: 'let1'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9573
+# ../.source/TheCostofDisease_Eng_v10.cs:9573
 - type: 'assign'
   var: 'let2'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9574
+# ../.source/TheCostofDisease_Eng_v10.cs:9574
 - type: 'assign'
   var: 'let3'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9575
+# ../.source/TheCostofDisease_Eng_v10.cs:9575
 - type: 'assign'
   var: 'let4'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9576
+# ../.source/TheCostofDisease_Eng_v10.cs:9576
 - type: 'assign'
   var: 'let5'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9577
+# ../.source/TheCostofDisease_Eng_v10.cs:9577
 - type: 'assign'
   var: 'let6'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9578
+# ../.source/TheCostofDisease_Eng_v10.cs:9578
 - type: 'assign'
   var: 'wcount'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9579
+# ../.source/TheCostofDisease_Eng_v10.cs:9579
 - type: 'assign'
   var: 'hcount'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9580
+# ../.source/TheCostofDisease_Eng_v10.cs:9580
 - type: 'assign'
   var: 'gen3pg'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9581
+# ../.source/TheCostofDisease_Eng_v10.cs:9581
 - type: 'assign'
   var: 'allyA'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9582
+# ../.source/TheCostofDisease_Eng_v10.cs:9582
 - type: 'assign'
   var: 'allyB'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9583
+# ../.source/TheCostofDisease_Eng_v10.cs:9583
 - type: 'assign'
   var: 'allyC'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9584
+# ../.source/TheCostofDisease_Eng_v10.cs:9584
 - type: 'assign'
   var: 'allyD'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9585
+# ../.source/TheCostofDisease_Eng_v10.cs:9585
 - type: 'assign'
   var: 'allyE'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9586
+# ../.source/TheCostofDisease_Eng_v10.cs:9586
 - type: 'assign'
   var: 'most'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9587
+# ../.source/TheCostofDisease_Eng_v10.cs:9587
 - type: 'assign'
   var: 'playA'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9588
+# ../.source/TheCostofDisease_Eng_v10.cs:9588
 - type: 'assign'
   var: 'playB'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9589
+# ../.source/TheCostofDisease_Eng_v10.cs:9589
 - type: 'assign'
   var: 'playC'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9590
+# ../.source/TheCostofDisease_Eng_v10.cs:9590
 - type: 'assign'
   var: 'playD'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9591
+# ../.source/TheCostofDisease_Eng_v10.cs:9591
 - type: 'assign'
   var: 'playE'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9592
+# ../.source/TheCostofDisease_Eng_v10.cs:9592
 - type: 'assign'
   var: 'exposeA'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9593
+# ../.source/TheCostofDisease_Eng_v10.cs:9593
 - type: 'assign'
   var: 'exposeB'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9594
+# ../.source/TheCostofDisease_Eng_v10.cs:9594
 - type: 'assign'
   var: 'exposeC'
   expr: '0'

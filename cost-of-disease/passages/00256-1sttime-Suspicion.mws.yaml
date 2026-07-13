@@ -1,65 +1,65 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27496
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:27496
 ---
 format: 'mws/0.4'
 passage_id: '1sttime-Suspicion'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27498
+# ../.source/TheCostofDisease_Eng_v10.cs:27498
 - type: 'popup'
   layout: 'setup'
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27505
+  # ../.source/TheCostofDisease_Eng_v10.cs:27505
   - type: 'image'
     asset: 'image://setup/AngryMobSetup1'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27506
+  # ../.source/TheCostofDisease_Eng_v10.cs:27506
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27511
+  # ../.source/TheCostofDisease_Eng_v10.cs:27511
   - type: 'switch'
     on: 'players'
     cases:
     - match: 2
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27513
+      # ../.source/TheCostofDisease_Eng_v10.cs:27513
       - type: 'assign'
         var: 'tracker'
         expr: 'rand_between(6, 7, "1sttime-Suspicion_0")'
     - match: 3
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27517
+      # ../.source/TheCostofDisease_Eng_v10.cs:27517
       - type: 'assign'
         var: 'tracker'
         expr: 'rand_between(7, 8, "1sttime-Suspicion_1")'
     - match: 4
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27521
+      # ../.source/TheCostofDisease_Eng_v10.cs:27521
       - type: 'assign'
         var: 'tracker'
         expr: 'rand_between(9, 11, "1sttime-Suspicion_2")'
     - match: 5
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27525
+      # ../.source/TheCostofDisease_Eng_v10.cs:27525
       - type: 'assign'
         var: 'tracker'
         expr: 'rand_between(10, 12, "1sttime-Suspicion_3")'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27508
+  # ../.source/TheCostofDisease_Eng_v10.cs:27508
   - type: 'text'
-    # ../en-US.restext:2177 | "Place the Suspicion marke..."
+    # ../en-US.restext:2176 | "Place the Suspicion marke..."
     value: 'restext://_1sttime_Suspicion_001'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27534
+  # ../.source/TheCostofDisease_Eng_v10.cs:27534
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27538
+  # ../.source/TheCostofDisease_Eng_v10.cs:27538
   - type: 'text'
-    # ../en-US.restext:2178 | "**Suspicion Marker**"
+    # ../en-US.restext:2177 | "**Suspicion Marker**"
     value: 'restext://_1sttime_Suspicion_002'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27540
+  # ../.source/TheCostofDisease_Eng_v10.cs:27540
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27541
+  # ../.source/TheCostofDisease_Eng_v10.cs:27541
   - type: 'text'
-    # ../en-US.restext:2179 | "The Suspicion Marker repr..."
+    # ../en-US.restext:2178 | "The Suspicion Marker repr..."
     value: 'restext://_1sttime_Suspicion_003'
   # ../en-US.restext:343 | "Accept"
   okay: 'restext://UIButton_Accept'

@@ -1,73 +1,73 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6237
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:6237
 ---
 format: 'mws/0.4'
 passage_id: 'bar1'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6242
+# ../.source/TheCostofDisease_Eng_v10.cs:6242
 - type: 'let'
   var: '_rnd_bar1_0'
   expr: 'rand_between(1, 999, "bar1_0")'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6244
+# ../.source/TheCostofDisease_Eng_v10.cs:6244
 - type: 'let'
   var: '_rnd_bar1_1'
   expr: 'rand_between(1, 999, "bar1_1")'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6241
+# ../.source/TheCostofDisease_Eng_v10.cs:6241
 - type: 'text'
-  # ../en-US.restext:682 | "**SWORN STATEMENT - Case ..."
+  # ../en-US.restext:681 | "**SWORN STATEMENT - Case ..."
   value: 'restext://bar1_001'
   lets:
   - '_rnd_bar1_0'
   - '_rnd_bar1_1'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6247
+# ../.source/TheCostofDisease_Eng_v10.cs:6247
 - type: 'assign'
   var: 'bar1'
   expr: 'rand_between(1, 2, "bar1_2")'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6249
+# ../.source/TheCostofDisease_Eng_v10.cs:6249
 - type: 'conditional'
   conditions:
   - if: 'bar1 == 1'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6251
+    # ../.source/TheCostofDisease_Eng_v10.cs:6251
     - type: 'text'
-      # ../en-US.restext:685 | "After a brief excursion t..."
+      # ../en-US.restext:684 | "After a brief excursion t..."
       value: 'restext://bar1_004'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6258
+    # ../.source/TheCostofDisease_Eng_v10.cs:6258
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6260
+    # ../.source/TheCostofDisease_Eng_v10.cs:6260
     - type: 'text'
-      # ../en-US.restext:686 | "We both decided to disrob..."
+      # ../en-US.restext:685 | "We both decided to disrob..."
       value: 'restext://bar1_005'
   else:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6265
+  # ../.source/TheCostofDisease_Eng_v10.cs:6265
   - type: 'text'
-    # ../en-US.restext:683 | "After a brief excursion t..."
+    # ../en-US.restext:682 | "After a brief excursion t..."
     value: 'restext://bar1_002'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6272
+  # ../.source/TheCostofDisease_Eng_v10.cs:6272
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6274
+  # ../.source/TheCostofDisease_Eng_v10.cs:6274
   - type: 'text'
-    # ../en-US.restext:684 | "It was around midnight th..."
+    # ../en-US.restext:683 | "It was around midnight th..."
     value: 'restext://bar1_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6276
+# ../.source/TheCostofDisease_Eng_v10.cs:6276
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6280
+# ../.source/TheCostofDisease_Eng_v10.cs:6280
 - type: 'popup'
   layout: 'setup'
   # ../en-US.restext:343 | "Accept"
   okay: 'restext://UIButton_Accept'
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6284
+  # ../.source/TheCostofDisease_Eng_v10.cs:6284
   - type: 'image'
     asset: 'image://setup/Creepy_Icon'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6285
+  # ../.source/TheCostofDisease_Eng_v10.cs:6285
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6286
+  # ../.source/TheCostofDisease_Eng_v10.cs:6286
   - type: 'text'
-    # ../en-US.restext:687 | "Place a {icon:creepy_icon..."
+    # ../en-US.restext:686 | "Place a {icon:creepy_icon..."
     value: 'restext://bar1_006'

@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2642
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:2642
 ---
 format: 'mws/0.4'
 passage_id: 'TITLE SCREEN'
@@ -8,60 +8,60 @@ tags:
 - 'ck'
 layout: 'hub'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2653
+# ../.source/TheCostofDisease_Eng_v10.cs:2653
 - type: 'section'
   # ../en-US.restext:238 | "ERROR!"
   title: 'restext://Narrative_ErrorExclaim'
   content: []
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2657
+# ../.source/TheCostofDisease_Eng_v10.cs:2657
 - type: 'text'
-  # ../en-US.restext:445 | "_A clever game by_ T. C. ..."
+  # ../en-US.restext:444 | "_A clever game by_ T. C. ..."
   value: 'restext://TITLE_SCREEN_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2662
+# ../.source/TheCostofDisease_Eng_v10.cs:2662
 - type: 'assign'
   var: 'players'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2668
+# ../.source/TheCostofDisease_Eng_v10.cs:2668
 - type: 'text'
-  # ../en-US.restext:446 | "How many individuals will..."
+  # ../en-US.restext:445 | "How many individuals will..."
   value: 'restext://TITLE_SCREEN_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2669
+# ../.source/TheCostofDisease_Eng_v10.cs:2669
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2672
+# ../.source/TheCostofDisease_Eng_v10.cs:2672
 - type: 'link'
-  # ../en-US.restext:447 | "2 Players."
+  # ../en-US.restext:446 | "2 Players."
   label: 'restext://TITLE_SCREEN_004'
   target: 'PlayerNameIntro' # ./00075-PlayerNameIntro.mws.yaml
   snapshot: true
   onclick:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2684
+  # ../.source/TheCostofDisease_Eng_v10.cs:2684
   - type: 'assign'
     var: 'players'
     expr: '2'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2673
+# ../.source/TheCostofDisease_Eng_v10.cs:2673
 - type: 'break'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2675
+# ../.source/TheCostofDisease_Eng_v10.cs:2675
 - type: 'link'
-  # ../en-US.restext:448 | "3 Players."
+  # ../en-US.restext:447 | "3 Players."
   label: 'restext://TITLE_SCREEN_005'
   target: 'PlayerNameIntro' # ./00075-PlayerNameIntro.mws.yaml
   snapshot: true
   onclick:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2691
+  # ../.source/TheCostofDisease_Eng_v10.cs:2691
   - type: 'assign'
     var: 'players'
     expr: '3'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2676
+# ../.source/TheCostofDisease_Eng_v10.cs:2676
 - type: 'break'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2678
+# ../.source/TheCostofDisease_Eng_v10.cs:2678
 - type: 'link'
-  # ../en-US.restext:449 | "4 Players."
+  # ../en-US.restext:448 | "4 Players."
   label: 'restext://TITLE_SCREEN_006'
   target: 'PlayerNameIntro' # ./00075-PlayerNameIntro.mws.yaml
   snapshot: true
   onclick:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2698
+  # ../.source/TheCostofDisease_Eng_v10.cs:2698
   - type: 'assign'
     var: 'players'
     expr: '4'

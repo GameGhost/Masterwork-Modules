@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1822
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:1822
 ---
 format: 'mws/0.4'
 passage_id: 'Hospital1'
@@ -10,15 +10,15 @@ tags:
 - 'HUB'
 layout: 'hub_early'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1829
+# ../.source/TheCostofDisease_Eng_v10.cs:1829
 - type: 'assign'
   var: 'round'
   expr: '7'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1831
+# ../.source/TheCostofDisease_Eng_v10.cs:1831
 - type: 'conditional'
   if: '!twopage'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1835
+  # ../.source/TheCostofDisease_Eng_v10.cs:1835
   - type: 'popup'
     layout: 'setup'
     # ../en-US.restext:343 | "Accept"
@@ -28,150 +28,150 @@ nodes:
       conditions:
       - if: 'seedy == "yes"'
         then:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1841
+        # ../.source/TheCostofDisease_Eng_v10.cs:1841
         - type: 'image'
           asset: 'image://setup/AngryMobSetup2'
           style: 'setup-image'
       else:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1846
+      # ../.source/TheCostofDisease_Eng_v10.cs:1846
       - type: 'image'
         asset: 'image://setup/AngryMobSetup1'
         style: 'setup-image'
     content:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1849
+    # ../.source/TheCostofDisease_Eng_v10.cs:1849
     - type: 'break'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1850
+    # ../.source/TheCostofDisease_Eng_v10.cs:1850
     - type: 'conditional'
       conditions:
       # ../en-US.restext:194 | "bank"
       - if: 'building == "restext://Location_Bank_Lower"'
         then:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1852
+        # ../.source/TheCostofDisease_Eng_v10.cs:1852
         - type: 'text'
           # ../en-US.restext:384 | "Turn to page 4 of the Vil..."
           value: 'restext://Hospital1_003'
       else:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1857
+      # ../.source/TheCostofDisease_Eng_v10.cs:1857
       - type: 'text'
         # ../en-US.restext:383 | "Turn to page 5 of the Vil..."
         value: 'restext://Hospital1_002'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1859
+    # ../.source/TheCostofDisease_Eng_v10.cs:1859
     - type: 'break'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1863
+    # ../.source/TheCostofDisease_Eng_v10.cs:1863
     - type: 'conditional'
       if: 'players > 3 && (!Hospital1)'
       then:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1865
+      # ../.source/TheCostofDisease_Eng_v10.cs:1865
       - type: 'assign'
         var: 'Hospital1'
         expr: '1'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1866
+      # ../.source/TheCostofDisease_Eng_v10.cs:1866
       - type: 'assign'
         var: 'tracker'
         expr: 'tracker - 1'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1860
+    # ../.source/TheCostofDisease_Eng_v10.cs:1860
     - type: 'text'
       # ../en-US.restext:385 | "Place the Suspicion marke..."
       value: 'restext://Hospital1_004'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1875
+    # ../.source/TheCostofDisease_Eng_v10.cs:1875
     - type: 'conditional'
       conditions:
       # ../en-US.restext:31 | "yes"
       - if: 'seedy == "restext://Choice_Yes_Lower"'
         then:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1879
+        # ../.source/TheCostofDisease_Eng_v10.cs:1879
         - type: 'text'
           # ../en-US.restext:89 | "**two** spaces to the lef..."
           value: 'restext://Directive_MoveTwoSpacesLeft_Seedy'
       else:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1885
+      # ../.source/TheCostofDisease_Eng_v10.cs:1885
       - type: 'text'
         # ../en-US.restext:88 | "one space to the left."
         value: 'restext://Directive_MoveOneSpaceLeft'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1887
+    # ../.source/TheCostofDisease_Eng_v10.cs:1887
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1889
+    # ../.source/TheCostofDisease_Eng_v10.cs:1889
     - type: 'text'
       # ../en-US.restext:386 | "Then, place a {icon:story..."
       value: 'restext://Hospital1_007'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1899
+    # ../.source/TheCostofDisease_Eng_v10.cs:1899
     - type: 'conditional'
       if: 'players == 3'
       then:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1901
+      # ../.source/TheCostofDisease_Eng_v10.cs:1901
       - type: 'text'
         # ../en-US.restext:69 | "Then, since this is a 3 p..."
         value: 'restext://Directive_3Player_PassMarker_A'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1906
+# ../.source/TheCostofDisease_Eng_v10.cs:1906
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1910
+# ../.source/TheCostofDisease_Eng_v10.cs:1910
 - type: 'section'
   # ../en-US.restext:134 | "{icon:storybook} **Board ..."
   title: 'restext://Heading_BoardOfTrustees'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1919
+  # ../.source/TheCostofDisease_Eng_v10.cs:1919
   - type: 'text'
     # ../en-US.restext:387 | "Due to the efforts of you..."
     value: 'restext://Hospital1_010'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1920
+  # ../.source/TheCostofDisease_Eng_v10.cs:1920
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1922
+  # ../.source/TheCostofDisease_Eng_v10.cs:1922
   - type: 'text'
     # ../en-US.restext:388 | "The **first time** you vi..."
     value: 'restext://Hospital1_011'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1929
+  # ../.source/TheCostofDisease_Eng_v10.cs:1929
   - type: 'link'
     # ../en-US.restext:34 | "click here to confirm."
     label: 'restext://Click_Confirm'
     target: 'HospitalVisitCheck' # ./00130-HospitalVisitCheck.mws.yaml
     snapshot: true
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1931
+  # ../.source/TheCostofDisease_Eng_v10.cs:1931
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1935
+  # ../.source/TheCostofDisease_Eng_v10.cs:1935
   - type: 'text'
     # ../en-US.restext:389 | "_(If, for any reason, you..."
     value: 'restext://Hospital1_013'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1939
+# ../.source/TheCostofDisease_Eng_v10.cs:1939
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1943
+# ../.source/TheCostofDisease_Eng_v10.cs:1943
 - type: 'section'
   # ../en-US.restext:390 | "**Hospital**"
   title: 'restext://Hospital1_014'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1951
+  # ../.source/TheCostofDisease_Eng_v10.cs:1951
   - type: 'text'
     # ../en-US.restext:391 | "For an explanation of the..."
     value: 'restext://Hospital1_015'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1952
+  # ../.source/TheCostofDisease_Eng_v10.cs:1952
   - type: 'link'
     # ../en-US.restext:48 | "click here."
     label: 'restext://Click_Here_Period'
     target: 'HospitalDefine' # ./00085-HospitalDefine.mws.yaml
     snapshot: true
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1954
+# ../.source/TheCostofDisease_Eng_v10.cs:1954
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1956
+# ../.source/TheCostofDisease_Eng_v10.cs:1956
 - type: 'switch'
   on: 'cured'
   cases:
   - match: 0
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1960
+    # ../.source/TheCostofDisease_Eng_v10.cs:1960
     - type: 'section'
       # ../en-US.restext:174 | "{icon:storybook} **The Cure**"
       title: 'restext://Heading_TheCure'
       content:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1969
+      # ../.source/TheCostofDisease_Eng_v10.cs:1969
       - type: 'text'
         # ../en-US.restext:107 | "Whenever a player complet..."
         value: 'restext://Disease_YellowFeverInoculation_Lead'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1974
+      # ../.source/TheCostofDisease_Eng_v10.cs:1974
       - type: 'link'
         # ../en-US.restext:55 | "click here for a special ..."
         label: 'restext://Click_SpecialMessage_Generic1'
@@ -179,77 +179,77 @@ nodes:
         snapshot: true
   - match: 1
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1982
+    # ../.source/TheCostofDisease_Eng_v10.cs:1982
     - type: 'section'
       # ../en-US.restext:176 | "{icon:storybook} **The Pa..."
       title: 'restext://Heading_ThePanacea'
       content:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1991
+      # ../.source/TheCostofDisease_Eng_v10.cs:1991
       - type: 'text'
         # ../en-US.restext:106 | "Whenever a player complet..."
         value: 'restext://Disease_PanaceaComplete_Lead'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1996
+      # ../.source/TheCostofDisease_Eng_v10.cs:1996
       - type: 'link'
         # ../en-US.restext:56 | "click here for a special ..."
         label: 'restext://Click_SpecialMessage_Generic2'
         target: 'Panacea' # ./00057-Panacea.mws.yaml
         snapshot: true
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:1999
+# ../.source/TheCostofDisease_Eng_v10.cs:1999
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2001
+# ../.source/TheCostofDisease_Eng_v10.cs:2001
 - type: 'conditional'
   if: 'sciadv == 0'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2005
+  # ../.source/TheCostofDisease_Eng_v10.cs:2005
   - type: 'section'
     # ../en-US.restext:170 | "{icon:storybook} **Scient..."
     title: 'restext://Heading_ScientificAdvances'
     content:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2014
+    # ../.source/TheCostofDisease_Eng_v10.cs:2014
     - type: 'text'
       # ../en-US.restext:103 | "If a player completes a t..."
       value: 'restext://Disease_3Experiments_Lead'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2017
+    # ../.source/TheCostofDisease_Eng_v10.cs:2017
     - type: 'link'
       # ../en-US.restext:392 | "click here for a special ..."
       label: 'restext://Hospital1_024'
       target: 'Trigger3Experiments' # ./00123-Trigger3Experiments.mws.yaml
       snapshot: true
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2023
+# ../.source/TheCostofDisease_Eng_v10.cs:2023
 - type: 'conditional'
   if: 'trigger35 == 0'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2027
+  # ../.source/TheCostofDisease_Eng_v10.cs:2027
   - type: 'section'
     # ../en-US.restext:178 | "{icon:storybook} **Victor..."
     title: 'restext://Heading_VictoryAhead'
     content:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2036
+    # ../.source/TheCostofDisease_Eng_v10.cs:2036
     - type: 'text'
       # ../en-US.restext:102 | "If a player reaches or pa..."
       value: 'restext://Directive_VPTrack35_Lead'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2038
+    # ../.source/TheCostofDisease_Eng_v10.cs:2038
     - type: 'link'
       # ../en-US.restext:57 | "click here for a special ..."
       label: 'restext://Click_SpecialMessage_Generic3'
       target: 'Trigger35Points' # ./00122-Trigger35Points.mws.yaml
       snapshot: true
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2043
+# ../.source/TheCostofDisease_Eng_v10.cs:2043
 - type: 'break'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2046
+# ../.source/TheCostofDisease_Eng_v10.cs:2046
 - type: 'section'
   # ../en-US.restext:177 | "**University Symposium**"
   title: 'restext://Heading_UniversitySymposium'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2054
+  # ../.source/TheCostofDisease_Eng_v10.cs:2054
   - type: 'text'
     # ../en-US.restext:313 | "At the end of the second ..."
     value: 'restext://Symposium_Rule'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2068
+  # ../.source/TheCostofDisease_Eng_v10.cs:2068
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2072
+  # ../.source/TheCostofDisease_Eng_v10.cs:2072
   - type: 'popup'
     layout: 'end_of_round'
     # ../en-US.restext:46 | "Click here at the end of ..."

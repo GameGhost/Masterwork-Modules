@@ -1,44 +1,44 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9484
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:9484
 ---
 format: 'mws/0.4'
 passage_id: 'HospitalDefine'
-# ../en-US.restext:962 | "Hospital"
+# ../en-US.restext:961 | "Hospital"
 title: 'restext://HospitalDefine_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9496
+# ../.source/TheCostofDisease_Eng_v10.cs:9496
 - type: 'image'
   asset: 'icon://hospital1'
   size: '200'
   align: 'center'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9500
+# ../.source/TheCostofDisease_Eng_v10.cs:9500
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9502
+# ../.source/TheCostofDisease_Eng_v10.cs:9502
 - type: 'text'
-  # ../en-US.restext:963 | "Look through the Experime..."
+  # ../en-US.restext:962 | "Look through the Experime..."
   value: 'restext://HospitalDefine_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9509
+# ../.source/TheCostofDisease_Eng_v10.cs:9509
 - type: 'assign'
   var: 'twopage'
   expr: '1'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9511
+# ../.source/TheCostofDisease_Eng_v10.cs:9511
 - type: 'text'
   # ../en-US.restext:101 | "You have until the beginn..."
   value: 'restext://Directive_UntilNextTurn_Rule'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9516
+# ../.source/TheCostofDisease_Eng_v10.cs:9516
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9518
+# ../.source/TheCostofDisease_Eng_v10.cs:9518
 - type: 'text'
-  # ../en-US.restext:964 | "NOTE: You may take the Ho..."
+  # ../en-US.restext:963 | "NOTE: You may take the Ho..."
   value: 'restext://HospitalDefine_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9519
+# ../.source/TheCostofDisease_Eng_v10.cs:9519
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9521
+# ../.source/TheCostofDisease_Eng_v10.cs:9521
 - type: 'link'
-  # ../en-US.restext:965 | "Click here to return..."
+  # ../en-US.restext:964 | "Click here to return..."
   label: 'restext://HospitalDefine_004'
   target: 'Hospital1' # ./00003-Hospital1.mws.yaml
   snapshot: true

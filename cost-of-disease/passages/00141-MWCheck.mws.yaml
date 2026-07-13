@@ -1,48 +1,48 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15903
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:15903
 ---
 format: 'mws/0.4'
 passage_id: 'MWCheck'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15905
+# ../.source/TheCostofDisease_Eng_v10.cs:15905
 - type: 'switch'
   on: 'tempcheck'
   cases:
   - match: 'nameA'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15907
+    # ../.source/TheCostofDisease_Eng_v10.cs:15907
     - type: 'include_passage'
       target: 'MWCreationHubA' # ./00137-MWCreationHubA.mws.yaml
   - match: 'nameB'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15911
+    # ../.source/TheCostofDisease_Eng_v10.cs:15911
     - type: 'include_passage'
       target: 'MWCreationHubB' # ./00147-MWCreationHubB.mws.yaml
   - match: 'nameC'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15915
+    # ../.source/TheCostofDisease_Eng_v10.cs:15915
     - type: 'include_passage'
       target: 'MWCreationHubC' # ./00154-MWCreationHubC.mws.yaml
   - match: 'nameD'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15919
+    # ../.source/TheCostofDisease_Eng_v10.cs:15919
     - type: 'include_passage'
       target: 'MWCreationHubD' # ./00161-MWCreationHubD.mws.yaml
   - match: 'nameE'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15923
+    # ../.source/TheCostofDisease_Eng_v10.cs:15923
     - type: 'include_passage'
       target: 'MWCreationHubE' # ./00238-MWCreationHubE.mws.yaml
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15925
+# ../.source/TheCostofDisease_Eng_v10.cs:15925
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15927
+# ../.source/TheCostofDisease_Eng_v10.cs:15927
 - type: 'switch'
   on: 'round'
   cases:
   - match: 16
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15929
+    # ../.source/TheCostofDisease_Eng_v10.cs:15929
     - type: 'link'
       # ../en-US.restext:52 | "Click to return..."
       label: 'restext://Click_Return'
@@ -50,14 +50,14 @@ nodes:
       snapshot: true
   - match: 17
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15933
+    # ../.source/TheCostofDisease_Eng_v10.cs:15933
     - type: 'link'
       # ../en-US.restext:52 | "Click to return..."
       label: 'restext://Click_Return'
       target: 'NoUni2' # ./00036-NoUni2.mws.yaml
       snapshot: true
   default:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15938
+  # ../.source/TheCostofDisease_Eng_v10.cs:15938
   - type: 'link'
     # ../en-US.restext:52 | "Click to return..."
     label: 'restext://Click_Return'

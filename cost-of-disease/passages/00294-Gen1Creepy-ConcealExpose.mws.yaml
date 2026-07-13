@@ -1,327 +1,327 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29819
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:29819
 ---
 format: 'mws/0.4'
 passage_id: 'Gen1Creepy-ConcealExpose'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29826
+# ../.source/TheCostofDisease_Eng_v10.cs:29826
 - type: 'text'
   # ../en-US.restext:307 | "**Carefully hand this sto..."
   value: 'restext://Storybook_HandToGen1Creep_Private'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29831
+# ../.source/TheCostofDisease_Eng_v10.cs:29831
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29836
+# ../.source/TheCostofDisease_Eng_v10.cs:29836
 - type: 'popup'
   # ../en-US.restext:53 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   snapshot: true
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29849
+  # ../.source/TheCostofDisease_Eng_v10.cs:29849
   - type: 'text'
-    # ../en-US.restext:2428 | "**Under Cover of Darkness**"
+    # ../en-US.restext:2427 | "**Under Cover of Darkness**"
     value: 'restext://Gen1Creepy_ConcealExpose_001'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29851
+  # ../.source/TheCostofDisease_Eng_v10.cs:29851
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29852
+  # ../.source/TheCostofDisease_Eng_v10.cs:29852
   - type: 'text'
-    # ../en-US.restext:2429 | "On an unseasonably warm e..."
+    # ../en-US.restext:2428 | "On an unseasonably warm e..."
     value: 'restext://Gen1Creepy_ConcealExpose_002'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29854
+  # ../.source/TheCostofDisease_Eng_v10.cs:29854
   - type: 'conditional'
     # ../en-US.restext:25 | "evil"
     if: 'wolves == "restext://Choice_Evil_Lower"'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29856
+    # ../.source/TheCostofDisease_Eng_v10.cs:29856
     - type: 'text'
       # ../en-US.restext:114 | "Order of St. Hubertus"
       value: 'restext://Faction_OrderOfStHubertus_Plain'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29858
+  # ../.source/TheCostofDisease_Eng_v10.cs:29858
   - type: 'conditional'
     # ../en-US.restext:25 | "evil"
     if: 'hunters == "restext://Choice_Evil_Lower"'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29860
+    # ../.source/TheCostofDisease_Eng_v10.cs:29860
     - type: 'text'
       # ../en-US.restext:110 | "Fraternity of Hunters"
       value: 'restext://Faction_FraternityOfHunters_Plain'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29862
+  # ../.source/TheCostofDisease_Eng_v10.cs:29862
   - type: 'text'
-    # ../en-US.restext:2430 | " knocked upon the estate ..."
+    # ../en-US.restext:2429 | " knocked upon the estate ..."
     value: 'restext://Gen1Creepy_ConcealExpose_003'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29868
+  # ../.source/TheCostofDisease_Eng_v10.cs:29868
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29870
+  # ../.source/TheCostofDisease_Eng_v10.cs:29870
   - type: 'conditional'
     # ../en-US.restext:25 | "evil"
     if: 'wolves == "restext://Choice_Evil_Lower"'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29872
+    # ../.source/TheCostofDisease_Eng_v10.cs:29872
     - type: 'switch'
       on: 'gen1creep'
       cases:
       - match: 'nameA'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29874
+        # ../.source/TheCostofDisease_Eng_v10.cs:29874
         - type: 'conditional'
           conditions:
           # ../en-US.restext:111 | "hunters"
           - if: 'allyA == "restext://Faction_Hunters_Lower" || !allyA'
             then:
-            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29876
+            # ../.source/TheCostofDisease_Eng_v10.cs:29876
             - type: 'include_passage'
               target: 'Gen1Creepy-EvilCollect' # ./00314-Gen1Creepy-EvilCollect.mws.yaml
           else:
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29880
+          # ../.source/TheCostofDisease_Eng_v10.cs:29880
           - type: 'text'
-            # ../en-US.restext:2431 | "\"We have decided to forg..."
+            # ../en-US.restext:2430 | "\"We have decided to forg..."
             value: 'restext://Gen1Creepy_ConcealExpose_004'
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29881
+          # ../.source/TheCostofDisease_Eng_v10.cs:29881
           - type: 'break'
             style: 'paragraph'
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29883
+          # ../.source/TheCostofDisease_Eng_v10.cs:29883
           - type: 'text'
-            # ../en-US.restext:2432 | "After {gen1creep} and the..."
+            # ../en-US.restext:2431 | "After {gen1creep} and the..."
             value: 'restext://Gen1Creepy_ConcealExpose_005'
       - match: 'nameB'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29891
+        # ../.source/TheCostofDisease_Eng_v10.cs:29891
         - type: 'conditional'
           conditions:
           # ../en-US.restext:111 | "hunters"
           - if: 'allyB == "restext://Faction_Hunters_Lower" || !allyB'
             then:
-            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29893
+            # ../.source/TheCostofDisease_Eng_v10.cs:29893
             - type: 'include_passage'
               target: 'Gen1Creepy-EvilCollect' # ./00314-Gen1Creepy-EvilCollect.mws.yaml
           else:
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29897
+          # ../.source/TheCostofDisease_Eng_v10.cs:29897
           - type: 'text'
-            # ../en-US.restext:2433 | "We have decided to forgiv..."
+            # ../en-US.restext:2432 | "We have decided to forgiv..."
             value: 'restext://Gen1Creepy_ConcealExpose_006'
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29898
+          # ../.source/TheCostofDisease_Eng_v10.cs:29898
           - type: 'break'
             style: 'paragraph'
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29900
+          # ../.source/TheCostofDisease_Eng_v10.cs:29900
           - type: 'text'
-            # ../en-US.restext:2432 | "After {gen1creep} and the..."
+            # ../en-US.restext:2431 | "After {gen1creep} and the..."
             value: 'restext://Gen1Creepy_ConcealExpose_005'
       - match: 'nameC'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29908
+        # ../.source/TheCostofDisease_Eng_v10.cs:29908
         - type: 'conditional'
           conditions:
           # ../en-US.restext:111 | "hunters"
           - if: 'allyC == "restext://Faction_Hunters_Lower" || !allyC'
             then:
-            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29910
+            # ../.source/TheCostofDisease_Eng_v10.cs:29910
             - type: 'include_passage'
               target: 'Gen1Creepy-EvilCollect' # ./00314-Gen1Creepy-EvilCollect.mws.yaml
           else:
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29914
+          # ../.source/TheCostofDisease_Eng_v10.cs:29914
           - type: 'text'
-            # ../en-US.restext:2431 | "\"We have decided to forg..."
+            # ../en-US.restext:2430 | "\"We have decided to forg..."
             value: 'restext://Gen1Creepy_ConcealExpose_004'
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29915
+          # ../.source/TheCostofDisease_Eng_v10.cs:29915
           - type: 'break'
             style: 'paragraph'
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29917
+          # ../.source/TheCostofDisease_Eng_v10.cs:29917
           - type: 'text'
-            # ../en-US.restext:2432 | "After {gen1creep} and the..."
+            # ../en-US.restext:2431 | "After {gen1creep} and the..."
             value: 'restext://Gen1Creepy_ConcealExpose_005'
       - match: 'nameD'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29925
+        # ../.source/TheCostofDisease_Eng_v10.cs:29925
         - type: 'conditional'
           conditions:
           # ../en-US.restext:111 | "hunters"
           - if: 'allyD == "restext://Faction_Hunters_Lower" || !allyD'
             then:
-            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29927
+            # ../.source/TheCostofDisease_Eng_v10.cs:29927
             - type: 'include_passage'
               target: 'Gen1Creepy-EvilCollect' # ./00314-Gen1Creepy-EvilCollect.mws.yaml
           else:
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29931
+          # ../.source/TheCostofDisease_Eng_v10.cs:29931
           - type: 'text'
-            # ../en-US.restext:2431 | "\"We have decided to forg..."
+            # ../en-US.restext:2430 | "\"We have decided to forg..."
             value: 'restext://Gen1Creepy_ConcealExpose_004'
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29932
+          # ../.source/TheCostofDisease_Eng_v10.cs:29932
           - type: 'break'
             style: 'paragraph'
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29934
+          # ../.source/TheCostofDisease_Eng_v10.cs:29934
           - type: 'text'
-            # ../en-US.restext:2432 | "After {gen1creep} and the..."
+            # ../en-US.restext:2431 | "After {gen1creep} and the..."
             value: 'restext://Gen1Creepy_ConcealExpose_005'
       - match: 'nameE'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29942
+        # ../.source/TheCostofDisease_Eng_v10.cs:29942
         - type: 'conditional'
           conditions:
           # ../en-US.restext:111 | "hunters"
           - if: 'allyE == "restext://Faction_Hunters_Lower" || !allyE'
             then:
-            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29944
+            # ../.source/TheCostofDisease_Eng_v10.cs:29944
             - type: 'include_passage'
               target: 'Gen1Creepy-EvilCollect' # ./00314-Gen1Creepy-EvilCollect.mws.yaml
           else:
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29948
+          # ../.source/TheCostofDisease_Eng_v10.cs:29948
           - type: 'text'
-            # ../en-US.restext:2431 | "\"We have decided to forg..."
+            # ../en-US.restext:2430 | "\"We have decided to forg..."
             value: 'restext://Gen1Creepy_ConcealExpose_004'
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29949
+          # ../.source/TheCostofDisease_Eng_v10.cs:29949
           - type: 'break'
             style: 'paragraph'
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29951
+          # ../.source/TheCostofDisease_Eng_v10.cs:29951
           - type: 'text'
-            # ../en-US.restext:2432 | "After {gen1creep} and the..."
+            # ../en-US.restext:2431 | "After {gen1creep} and the..."
             value: 'restext://Gen1Creepy_ConcealExpose_005'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29958
+  # ../.source/TheCostofDisease_Eng_v10.cs:29958
   - type: 'conditional'
     # ../en-US.restext:25 | "evil"
     if: 'hunters == "restext://Choice_Evil_Lower"'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29960
+    # ../.source/TheCostofDisease_Eng_v10.cs:29960
     - type: 'switch'
       on: 'gen1creep'
       cases:
       - match: 'nameA'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29962
+        # ../.source/TheCostofDisease_Eng_v10.cs:29962
         - type: 'conditional'
           conditions:
           # ../en-US.restext:116 | "wolves"
           - if: 'allyA == "restext://Faction_Wolves_Lower" || !allyA'
             then:
-            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29964
+            # ../.source/TheCostofDisease_Eng_v10.cs:29964
             - type: 'include_passage'
               target: 'Gen1Creepy-EvilCollect' # ./00314-Gen1Creepy-EvilCollect.mws.yaml
           else:
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29968
+          # ../.source/TheCostofDisease_Eng_v10.cs:29968
           - type: 'text'
-            # ../en-US.restext:2431 | "\"We have decided to forg..."
+            # ../en-US.restext:2430 | "\"We have decided to forg..."
             value: 'restext://Gen1Creepy_ConcealExpose_004'
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29969
+          # ../.source/TheCostofDisease_Eng_v10.cs:29969
           - type: 'break'
             style: 'paragraph'
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29971
+          # ../.source/TheCostofDisease_Eng_v10.cs:29971
           - type: 'text'
-            # ../en-US.restext:2432 | "After {gen1creep} and the..."
+            # ../en-US.restext:2431 | "After {gen1creep} and the..."
             value: 'restext://Gen1Creepy_ConcealExpose_005'
       - match: 'nameB'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29979
+        # ../.source/TheCostofDisease_Eng_v10.cs:29979
         - type: 'conditional'
           conditions:
           # ../en-US.restext:116 | "wolves"
           - if: 'allyB == "restext://Faction_Wolves_Lower" || !allyB'
             then:
-            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29981
+            # ../.source/TheCostofDisease_Eng_v10.cs:29981
             - type: 'include_passage'
               target: 'Gen1Creepy-EvilCollect' # ./00314-Gen1Creepy-EvilCollect.mws.yaml
           else:
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29985
+          # ../.source/TheCostofDisease_Eng_v10.cs:29985
           - type: 'text'
-            # ../en-US.restext:2431 | "\"We have decided to forg..."
+            # ../en-US.restext:2430 | "\"We have decided to forg..."
             value: 'restext://Gen1Creepy_ConcealExpose_004'
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29986
+          # ../.source/TheCostofDisease_Eng_v10.cs:29986
           - type: 'break'
             style: 'paragraph'
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29988
+          # ../.source/TheCostofDisease_Eng_v10.cs:29988
           - type: 'text'
-            # ../en-US.restext:2432 | "After {gen1creep} and the..."
+            # ../en-US.restext:2431 | "After {gen1creep} and the..."
             value: 'restext://Gen1Creepy_ConcealExpose_005'
       - match: 'nameC'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29996
+        # ../.source/TheCostofDisease_Eng_v10.cs:29996
         - type: 'conditional'
           conditions:
           # ../en-US.restext:116 | "wolves"
           - if: 'allyC == "restext://Faction_Wolves_Lower" || !allyC'
             then:
-            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29998
+            # ../.source/TheCostofDisease_Eng_v10.cs:29998
             - type: 'include_passage'
               target: 'Gen1Creepy-EvilCollect' # ./00314-Gen1Creepy-EvilCollect.mws.yaml
           else:
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30002
+          # ../.source/TheCostofDisease_Eng_v10.cs:30002
           - type: 'text'
-            # ../en-US.restext:2431 | "\"We have decided to forg..."
+            # ../en-US.restext:2430 | "\"We have decided to forg..."
             value: 'restext://Gen1Creepy_ConcealExpose_004'
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30003
+          # ../.source/TheCostofDisease_Eng_v10.cs:30003
           - type: 'break'
             style: 'paragraph'
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30005
+          # ../.source/TheCostofDisease_Eng_v10.cs:30005
           - type: 'text'
-            # ../en-US.restext:2432 | "After {gen1creep} and the..."
+            # ../en-US.restext:2431 | "After {gen1creep} and the..."
             value: 'restext://Gen1Creepy_ConcealExpose_005'
       - match: 'nameD'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30013
+        # ../.source/TheCostofDisease_Eng_v10.cs:30013
         - type: 'conditional'
           conditions:
           # ../en-US.restext:116 | "wolves"
           - if: 'allyD == "restext://Faction_Wolves_Lower" || !allyD'
             then:
-            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30015
+            # ../.source/TheCostofDisease_Eng_v10.cs:30015
             - type: 'include_passage'
               target: 'Gen1Creepy-EvilCollect' # ./00314-Gen1Creepy-EvilCollect.mws.yaml
           else:
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30019
+          # ../.source/TheCostofDisease_Eng_v10.cs:30019
           - type: 'text'
-            # ../en-US.restext:2431 | "\"We have decided to forg..."
+            # ../en-US.restext:2430 | "\"We have decided to forg..."
             value: 'restext://Gen1Creepy_ConcealExpose_004'
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30020
+          # ../.source/TheCostofDisease_Eng_v10.cs:30020
           - type: 'break'
             style: 'paragraph'
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30022
+          # ../.source/TheCostofDisease_Eng_v10.cs:30022
           - type: 'text'
-            # ../en-US.restext:2432 | "After {gen1creep} and the..."
+            # ../en-US.restext:2431 | "After {gen1creep} and the..."
             value: 'restext://Gen1Creepy_ConcealExpose_005'
       - match: 'nameE'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30030
+        # ../.source/TheCostofDisease_Eng_v10.cs:30030
         - type: 'conditional'
           conditions:
           # ../en-US.restext:116 | "wolves"
           - if: 'allyE == "restext://Faction_Wolves_Lower" || !allyE'
             then:
-            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30032
+            # ../.source/TheCostofDisease_Eng_v10.cs:30032
             - type: 'include_passage'
               target: 'Gen1Creepy-EvilCollect' # ./00314-Gen1Creepy-EvilCollect.mws.yaml
           else:
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30036
+          # ../.source/TheCostofDisease_Eng_v10.cs:30036
           - type: 'text'
-            # ../en-US.restext:2431 | "\"We have decided to forg..."
+            # ../en-US.restext:2430 | "\"We have decided to forg..."
             value: 'restext://Gen1Creepy_ConcealExpose_004'
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30037
+          # ../.source/TheCostofDisease_Eng_v10.cs:30037
           - type: 'break'
             style: 'paragraph'
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30039
+          # ../.source/TheCostofDisease_Eng_v10.cs:30039
           - type: 'text'
-            # ../en-US.restext:2432 | "After {gen1creep} and the..."
+            # ../en-US.restext:2431 | "After {gen1creep} and the..."
             value: 'restext://Gen1Creepy_ConcealExpose_005'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30046
+  # ../.source/TheCostofDisease_Eng_v10.cs:30046
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30048
+  # ../.source/TheCostofDisease_Eng_v10.cs:30048
   - type: 'conditional'
     conditions:
     # ../en-US.restext:25 | "evil"
     - if: 'wolves == "restext://Choice_Evil_Lower"'
       then:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30050
+      # ../.source/TheCostofDisease_Eng_v10.cs:30050
       - type: 'switch'
         on: 'gen1creep'
         cases:
         - match: 'nameA'
           nodes:
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30052
+          # ../.source/TheCostofDisease_Eng_v10.cs:30052
           - type: 'conditional'
             conditions:
             # ../en-US.restext:111 | "hunters"
             - if: 'allyA == "restext://Faction_Hunters_Lower" || !allyA'
               then:
-              # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30055
+              # ../.source/TheCostofDisease_Eng_v10.cs:30055
               - type: 'popup'
                 layout: 'setup'
                 # ../en-US.restext:36 | "Click to continue..."
@@ -335,7 +335,7 @@ nodes:
                   conditions:
                   - if: 'wolves == "evil"'
                     then:
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30190
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30190
                     - type: 'image'
                       asset: 'image://setup/DiscardEstateUpgrade_Icon'
                       style: 'setup-image'
@@ -346,46 +346,46 @@ nodes:
                   # ../en-US.restext:25 | "evil"
                   - if: 'wolves == "restext://Choice_Evil_Lower"'
                     then:
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30191
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30191
                     - type: 'break'
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30192
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30192
                     - type: 'text'
                       # ../en-US.restext:76 | "Discard a **completed Exp..."
                       value: 'restext://Directive_DiscardExperimentOrUpgrade'
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30203
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30203
                     - type: 'break'
                       style: 'paragraph'
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30205
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30205
                     - type: 'text'
-                      # ../en-US.restext:2436 | "Also, **Lose 1VP.**"
+                      # ../en-US.restext:2435 | "Also, **Lose 1VP.**"
                       value: 'restext://Gen1Creepy_ConcealExpose_010'
                   else:
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30215
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30215
                   - type: 'popup'
                     layout: 'setup'
                     # ../en-US.restext:343 | "Accept"
                     okay: 'restext://UIButton_Accept'
                     header:
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30219
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30219
                     - type: 'image'
                       asset: 'image://setup/DiscardEstateUpgrade_Icon'
                       style: 'setup-image'
                     content:
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30220
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30220
                     - type: 'break'
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30221
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30221
                     - type: 'text'
-                      # ../en-US.restext:2434 | "Pay $2 to the supply OR *..."
+                      # ../en-US.restext:2433 | "Pay $2 to the supply OR *..."
                       value: 'restext://Gen1Creepy_ConcealExpose_007'
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30227
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30227
                     - type: 'break'
                       style: 'paragraph'
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30229
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30229
                     - type: 'text'
-                      # ../en-US.restext:2435 | "Also, **Gain 1** {icon:in..."
+                      # ../en-US.restext:2434 | "Also, **Gain 1** {icon:in..."
                       value: 'restext://Gen1Creepy_ConcealExpose_008'
             else:
-            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30059
+            # ../.source/TheCostofDisease_Eng_v10.cs:30059
             - type: 'link'
               # ../en-US.restext:36 | "Click to continue..."
               label: 'restext://Click_ContinueEllipsis_C'
@@ -393,13 +393,13 @@ nodes:
               snapshot: true
         - match: 'nameB'
           nodes:
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30064
+          # ../.source/TheCostofDisease_Eng_v10.cs:30064
           - type: 'conditional'
             conditions:
             # ../en-US.restext:111 | "hunters"
             - if: 'allyB == "restext://Faction_Hunters_Lower" || !allyB'
               then:
-              # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30067
+              # ../.source/TheCostofDisease_Eng_v10.cs:30067
               - type: 'popup'
                 layout: 'setup'
                 # ../en-US.restext:36 | "Click to continue..."
@@ -413,7 +413,7 @@ nodes:
                   conditions:
                   - if: 'wolves == "evil"'
                     then:
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30190
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30190
                     - type: 'image'
                       asset: 'image://setup/DiscardEstateUpgrade_Icon'
                       style: 'setup-image'
@@ -424,46 +424,46 @@ nodes:
                   # ../en-US.restext:25 | "evil"
                   - if: 'wolves == "restext://Choice_Evil_Lower"'
                     then:
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30191
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30191
                     - type: 'break'
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30192
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30192
                     - type: 'text'
                       # ../en-US.restext:76 | "Discard a **completed Exp..."
                       value: 'restext://Directive_DiscardExperimentOrUpgrade'
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30203
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30203
                     - type: 'break'
                       style: 'paragraph'
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30205
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30205
                     - type: 'text'
-                      # ../en-US.restext:2436 | "Also, **Lose 1VP.**"
+                      # ../en-US.restext:2435 | "Also, **Lose 1VP.**"
                       value: 'restext://Gen1Creepy_ConcealExpose_010'
                   else:
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30215
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30215
                   - type: 'popup'
                     layout: 'setup'
                     # ../en-US.restext:343 | "Accept"
                     okay: 'restext://UIButton_Accept'
                     header:
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30219
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30219
                     - type: 'image'
                       asset: 'image://setup/DiscardEstateUpgrade_Icon'
                       style: 'setup-image'
                     content:
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30220
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30220
                     - type: 'break'
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30221
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30221
                     - type: 'text'
-                      # ../en-US.restext:2434 | "Pay $2 to the supply OR *..."
+                      # ../en-US.restext:2433 | "Pay $2 to the supply OR *..."
                       value: 'restext://Gen1Creepy_ConcealExpose_007'
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30227
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30227
                     - type: 'break'
                       style: 'paragraph'
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30229
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30229
                     - type: 'text'
-                      # ../en-US.restext:2435 | "Also, **Gain 1** {icon:in..."
+                      # ../en-US.restext:2434 | "Also, **Gain 1** {icon:in..."
                       value: 'restext://Gen1Creepy_ConcealExpose_008'
             else:
-            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30071
+            # ../.source/TheCostofDisease_Eng_v10.cs:30071
             - type: 'link'
               # ../en-US.restext:36 | "Click to continue..."
               label: 'restext://Click_ContinueEllipsis_C'
@@ -471,13 +471,13 @@ nodes:
               snapshot: true
         - match: 'nameC'
           nodes:
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30076
+          # ../.source/TheCostofDisease_Eng_v10.cs:30076
           - type: 'conditional'
             conditions:
             # ../en-US.restext:111 | "hunters"
             - if: 'allyC == "restext://Faction_Hunters_Lower" || !allyC'
               then:
-              # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30079
+              # ../.source/TheCostofDisease_Eng_v10.cs:30079
               - type: 'popup'
                 layout: 'setup'
                 # ../en-US.restext:36 | "Click to continue..."
@@ -491,7 +491,7 @@ nodes:
                   conditions:
                   - if: 'wolves == "evil"'
                     then:
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30190
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30190
                     - type: 'image'
                       asset: 'image://setup/DiscardEstateUpgrade_Icon'
                       style: 'setup-image'
@@ -502,46 +502,46 @@ nodes:
                   # ../en-US.restext:25 | "evil"
                   - if: 'wolves == "restext://Choice_Evil_Lower"'
                     then:
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30191
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30191
                     - type: 'break'
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30192
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30192
                     - type: 'text'
                       # ../en-US.restext:76 | "Discard a **completed Exp..."
                       value: 'restext://Directive_DiscardExperimentOrUpgrade'
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30203
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30203
                     - type: 'break'
                       style: 'paragraph'
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30205
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30205
                     - type: 'text'
-                      # ../en-US.restext:2436 | "Also, **Lose 1VP.**"
+                      # ../en-US.restext:2435 | "Also, **Lose 1VP.**"
                       value: 'restext://Gen1Creepy_ConcealExpose_010'
                   else:
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30215
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30215
                   - type: 'popup'
                     layout: 'setup'
                     # ../en-US.restext:343 | "Accept"
                     okay: 'restext://UIButton_Accept'
                     header:
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30219
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30219
                     - type: 'image'
                       asset: 'image://setup/DiscardEstateUpgrade_Icon'
                       style: 'setup-image'
                     content:
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30220
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30220
                     - type: 'break'
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30221
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30221
                     - type: 'text'
-                      # ../en-US.restext:2434 | "Pay $2 to the supply OR *..."
+                      # ../en-US.restext:2433 | "Pay $2 to the supply OR *..."
                       value: 'restext://Gen1Creepy_ConcealExpose_007'
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30227
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30227
                     - type: 'break'
                       style: 'paragraph'
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30229
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30229
                     - type: 'text'
-                      # ../en-US.restext:2435 | "Also, **Gain 1** {icon:in..."
+                      # ../en-US.restext:2434 | "Also, **Gain 1** {icon:in..."
                       value: 'restext://Gen1Creepy_ConcealExpose_008'
             else:
-            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30083
+            # ../.source/TheCostofDisease_Eng_v10.cs:30083
             - type: 'link'
               # ../en-US.restext:36 | "Click to continue..."
               label: 'restext://Click_ContinueEllipsis_C'
@@ -549,13 +549,13 @@ nodes:
               snapshot: true
         - match: 'nameD'
           nodes:
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30088
+          # ../.source/TheCostofDisease_Eng_v10.cs:30088
           - type: 'conditional'
             conditions:
             # ../en-US.restext:111 | "hunters"
             - if: 'allyD == "restext://Faction_Hunters_Lower" || !allyD'
               then:
-              # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30091
+              # ../.source/TheCostofDisease_Eng_v10.cs:30091
               - type: 'popup'
                 layout: 'setup'
                 # ../en-US.restext:36 | "Click to continue..."
@@ -569,7 +569,7 @@ nodes:
                   conditions:
                   - if: 'wolves == "evil"'
                     then:
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30190
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30190
                     - type: 'image'
                       asset: 'image://setup/DiscardEstateUpgrade_Icon'
                       style: 'setup-image'
@@ -580,59 +580,59 @@ nodes:
                   # ../en-US.restext:25 | "evil"
                   - if: 'wolves == "restext://Choice_Evil_Lower"'
                     then:
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30191
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30191
                     - type: 'break'
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30192
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30192
                     - type: 'text'
                       # ../en-US.restext:76 | "Discard a **completed Exp..."
                       value: 'restext://Directive_DiscardExperimentOrUpgrade'
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30203
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30203
                     - type: 'break'
                       style: 'paragraph'
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30205
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30205
                     - type: 'text'
-                      # ../en-US.restext:2436 | "Also, **Lose 1VP.**"
+                      # ../en-US.restext:2435 | "Also, **Lose 1VP.**"
                       value: 'restext://Gen1Creepy_ConcealExpose_010'
                   else:
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30215
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30215
                   - type: 'popup'
                     layout: 'setup'
                     # ../en-US.restext:343 | "Accept"
                     okay: 'restext://UIButton_Accept'
                     header:
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30219
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30219
                     - type: 'image'
                       asset: 'image://setup/DiscardEstateUpgrade_Icon'
                       style: 'setup-image'
                     content:
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30220
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30220
                     - type: 'break'
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30221
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30221
                     - type: 'text'
-                      # ../en-US.restext:2434 | "Pay $2 to the supply OR *..."
+                      # ../en-US.restext:2433 | "Pay $2 to the supply OR *..."
                       value: 'restext://Gen1Creepy_ConcealExpose_007'
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30227
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30227
                     - type: 'break'
                       style: 'paragraph'
-                    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30229
+                    # ../.source/TheCostofDisease_Eng_v10.cs:30229
                     - type: 'text'
-                      # ../en-US.restext:2435 | "Also, **Gain 1** {icon:in..."
+                      # ../en-US.restext:2434 | "Also, **Gain 1** {icon:in..."
                       value: 'restext://Gen1Creepy_ConcealExpose_008'
             else:
-            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30095
+            # ../.source/TheCostofDisease_Eng_v10.cs:30095
             - type: 'link'
               # ../en-US.restext:36 | "Click to continue..."
               label: 'restext://Click_ContinueEllipsis_C'
               target: 'Devastation3' # ./00032-Devastation3.mws.yaml
               snapshot: true
         default:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30100
+        # ../.source/TheCostofDisease_Eng_v10.cs:30100
         - type: 'conditional'
           conditions:
           # ../en-US.restext:111 | "hunters"
           - if: 'allyE == "restext://Faction_Hunters_Lower" || !allyE'
             then:
-            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30103
+            # ../.source/TheCostofDisease_Eng_v10.cs:30103
             - type: 'popup'
               layout: 'setup'
               # ../en-US.restext:36 | "Click to continue..."
@@ -646,7 +646,7 @@ nodes:
                 conditions:
                 - if: 'wolves == "evil"'
                   then:
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30190
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30190
                   - type: 'image'
                     asset: 'image://setup/DiscardEstateUpgrade_Icon'
                     style: 'setup-image'
@@ -657,65 +657,65 @@ nodes:
                 # ../en-US.restext:25 | "evil"
                 - if: 'wolves == "restext://Choice_Evil_Lower"'
                   then:
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30191
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30191
                   - type: 'break'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30192
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30192
                   - type: 'text'
                     # ../en-US.restext:76 | "Discard a **completed Exp..."
                     value: 'restext://Directive_DiscardExperimentOrUpgrade'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30203
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30203
                   - type: 'break'
                     style: 'paragraph'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30205
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30205
                   - type: 'text'
-                    # ../en-US.restext:2436 | "Also, **Lose 1VP.**"
+                    # ../en-US.restext:2435 | "Also, **Lose 1VP.**"
                     value: 'restext://Gen1Creepy_ConcealExpose_010'
                 else:
-                # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30215
+                # ../.source/TheCostofDisease_Eng_v10.cs:30215
                 - type: 'popup'
                   layout: 'setup'
                   # ../en-US.restext:343 | "Accept"
                   okay: 'restext://UIButton_Accept'
                   header:
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30219
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30219
                   - type: 'image'
                     asset: 'image://setup/DiscardEstateUpgrade_Icon'
                     style: 'setup-image'
                   content:
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30220
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30220
                   - type: 'break'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30221
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30221
                   - type: 'text'
-                    # ../en-US.restext:2434 | "Pay $2 to the supply OR *..."
+                    # ../en-US.restext:2433 | "Pay $2 to the supply OR *..."
                     value: 'restext://Gen1Creepy_ConcealExpose_007'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30227
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30227
                   - type: 'break'
                     style: 'paragraph'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30229
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30229
                   - type: 'text'
-                    # ../en-US.restext:2435 | "Also, **Gain 1** {icon:in..."
+                    # ../en-US.restext:2434 | "Also, **Gain 1** {icon:in..."
                     value: 'restext://Gen1Creepy_ConcealExpose_008'
           else:
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30107
+          # ../.source/TheCostofDisease_Eng_v10.cs:30107
           - type: 'link'
             # ../en-US.restext:36 | "Click to continue..."
             label: 'restext://Click_ContinueEllipsis_C'
             target: 'Devastation3' # ./00032-Devastation3.mws.yaml
             snapshot: true
     else:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30113
+    # ../.source/TheCostofDisease_Eng_v10.cs:30113
     - type: 'switch'
       on: 'gen1creep'
       cases:
       - match: 'nameA'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30115
+        # ../.source/TheCostofDisease_Eng_v10.cs:30115
         - type: 'conditional'
           conditions:
           # ../en-US.restext:116 | "wolves"
           - if: 'allyA == "restext://Faction_Wolves_Lower" || !allyA'
             then:
-            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30118
+            # ../.source/TheCostofDisease_Eng_v10.cs:30118
             - type: 'popup'
               layout: 'setup'
               # ../en-US.restext:36 | "Click to continue..."
@@ -729,7 +729,7 @@ nodes:
                 conditions:
                 - if: 'wolves == "evil"'
                   then:
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30190
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30190
                   - type: 'image'
                     asset: 'image://setup/DiscardEstateUpgrade_Icon'
                     style: 'setup-image'
@@ -740,46 +740,46 @@ nodes:
                 # ../en-US.restext:25 | "evil"
                 - if: 'wolves == "restext://Choice_Evil_Lower"'
                   then:
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30191
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30191
                   - type: 'break'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30192
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30192
                   - type: 'text'
                     # ../en-US.restext:76 | "Discard a **completed Exp..."
                     value: 'restext://Directive_DiscardExperimentOrUpgrade'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30203
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30203
                   - type: 'break'
                     style: 'paragraph'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30205
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30205
                   - type: 'text'
-                    # ../en-US.restext:2436 | "Also, **Lose 1VP.**"
+                    # ../en-US.restext:2435 | "Also, **Lose 1VP.**"
                     value: 'restext://Gen1Creepy_ConcealExpose_010'
                 else:
-                # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30215
+                # ../.source/TheCostofDisease_Eng_v10.cs:30215
                 - type: 'popup'
                   layout: 'setup'
                   # ../en-US.restext:343 | "Accept"
                   okay: 'restext://UIButton_Accept'
                   header:
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30219
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30219
                   - type: 'image'
                     asset: 'image://setup/DiscardEstateUpgrade_Icon'
                     style: 'setup-image'
                   content:
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30220
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30220
                   - type: 'break'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30221
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30221
                   - type: 'text'
-                    # ../en-US.restext:2434 | "Pay $2 to the supply OR *..."
+                    # ../en-US.restext:2433 | "Pay $2 to the supply OR *..."
                     value: 'restext://Gen1Creepy_ConcealExpose_007'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30227
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30227
                   - type: 'break'
                     style: 'paragraph'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30229
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30229
                   - type: 'text'
-                    # ../en-US.restext:2435 | "Also, **Gain 1** {icon:in..."
+                    # ../en-US.restext:2434 | "Also, **Gain 1** {icon:in..."
                     value: 'restext://Gen1Creepy_ConcealExpose_008'
           else:
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30122
+          # ../.source/TheCostofDisease_Eng_v10.cs:30122
           - type: 'link'
             # ../en-US.restext:36 | "Click to continue..."
             label: 'restext://Click_ContinueEllipsis_C'
@@ -787,13 +787,13 @@ nodes:
             snapshot: true
       - match: 'nameB'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30127
+        # ../.source/TheCostofDisease_Eng_v10.cs:30127
         - type: 'conditional'
           conditions:
           # ../en-US.restext:116 | "wolves"
           - if: 'allyB == "restext://Faction_Wolves_Lower" || !allyB'
             then:
-            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30130
+            # ../.source/TheCostofDisease_Eng_v10.cs:30130
             - type: 'popup'
               layout: 'setup'
               # ../en-US.restext:36 | "Click to continue..."
@@ -807,7 +807,7 @@ nodes:
                 conditions:
                 - if: 'wolves == "evil"'
                   then:
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30190
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30190
                   - type: 'image'
                     asset: 'image://setup/DiscardEstateUpgrade_Icon'
                     style: 'setup-image'
@@ -818,46 +818,46 @@ nodes:
                 # ../en-US.restext:25 | "evil"
                 - if: 'wolves == "restext://Choice_Evil_Lower"'
                   then:
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30191
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30191
                   - type: 'break'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30192
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30192
                   - type: 'text'
                     # ../en-US.restext:76 | "Discard a **completed Exp..."
                     value: 'restext://Directive_DiscardExperimentOrUpgrade'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30203
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30203
                   - type: 'break'
                     style: 'paragraph'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30205
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30205
                   - type: 'text'
-                    # ../en-US.restext:2436 | "Also, **Lose 1VP.**"
+                    # ../en-US.restext:2435 | "Also, **Lose 1VP.**"
                     value: 'restext://Gen1Creepy_ConcealExpose_010'
                 else:
-                # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30215
+                # ../.source/TheCostofDisease_Eng_v10.cs:30215
                 - type: 'popup'
                   layout: 'setup'
                   # ../en-US.restext:343 | "Accept"
                   okay: 'restext://UIButton_Accept'
                   header:
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30219
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30219
                   - type: 'image'
                     asset: 'image://setup/DiscardEstateUpgrade_Icon'
                     style: 'setup-image'
                   content:
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30220
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30220
                   - type: 'break'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30221
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30221
                   - type: 'text'
-                    # ../en-US.restext:2434 | "Pay $2 to the supply OR *..."
+                    # ../en-US.restext:2433 | "Pay $2 to the supply OR *..."
                     value: 'restext://Gen1Creepy_ConcealExpose_007'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30227
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30227
                   - type: 'break'
                     style: 'paragraph'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30229
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30229
                   - type: 'text'
-                    # ../en-US.restext:2435 | "Also, **Gain 1** {icon:in..."
+                    # ../en-US.restext:2434 | "Also, **Gain 1** {icon:in..."
                     value: 'restext://Gen1Creepy_ConcealExpose_008'
           else:
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30134
+          # ../.source/TheCostofDisease_Eng_v10.cs:30134
           - type: 'link'
             # ../en-US.restext:36 | "Click to continue..."
             label: 'restext://Click_ContinueEllipsis_C'
@@ -865,13 +865,13 @@ nodes:
             snapshot: true
       - match: 'nameC'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30139
+        # ../.source/TheCostofDisease_Eng_v10.cs:30139
         - type: 'conditional'
           conditions:
           # ../en-US.restext:116 | "wolves"
           - if: 'allyC == "restext://Faction_Wolves_Lower" || !allyC'
             then:
-            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30142
+            # ../.source/TheCostofDisease_Eng_v10.cs:30142
             - type: 'popup'
               layout: 'setup'
               # ../en-US.restext:36 | "Click to continue..."
@@ -885,7 +885,7 @@ nodes:
                 conditions:
                 - if: 'wolves == "evil"'
                   then:
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30190
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30190
                   - type: 'image'
                     asset: 'image://setup/DiscardEstateUpgrade_Icon'
                     style: 'setup-image'
@@ -896,46 +896,46 @@ nodes:
                 # ../en-US.restext:25 | "evil"
                 - if: 'wolves == "restext://Choice_Evil_Lower"'
                   then:
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30191
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30191
                   - type: 'break'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30192
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30192
                   - type: 'text'
                     # ../en-US.restext:76 | "Discard a **completed Exp..."
                     value: 'restext://Directive_DiscardExperimentOrUpgrade'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30203
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30203
                   - type: 'break'
                     style: 'paragraph'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30205
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30205
                   - type: 'text'
-                    # ../en-US.restext:2436 | "Also, **Lose 1VP.**"
+                    # ../en-US.restext:2435 | "Also, **Lose 1VP.**"
                     value: 'restext://Gen1Creepy_ConcealExpose_010'
                 else:
-                # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30215
+                # ../.source/TheCostofDisease_Eng_v10.cs:30215
                 - type: 'popup'
                   layout: 'setup'
                   # ../en-US.restext:343 | "Accept"
                   okay: 'restext://UIButton_Accept'
                   header:
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30219
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30219
                   - type: 'image'
                     asset: 'image://setup/DiscardEstateUpgrade_Icon'
                     style: 'setup-image'
                   content:
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30220
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30220
                   - type: 'break'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30221
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30221
                   - type: 'text'
-                    # ../en-US.restext:2434 | "Pay $2 to the supply OR *..."
+                    # ../en-US.restext:2433 | "Pay $2 to the supply OR *..."
                     value: 'restext://Gen1Creepy_ConcealExpose_007'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30227
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30227
                   - type: 'break'
                     style: 'paragraph'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30229
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30229
                   - type: 'text'
-                    # ../en-US.restext:2435 | "Also, **Gain 1** {icon:in..."
+                    # ../en-US.restext:2434 | "Also, **Gain 1** {icon:in..."
                     value: 'restext://Gen1Creepy_ConcealExpose_008'
           else:
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30146
+          # ../.source/TheCostofDisease_Eng_v10.cs:30146
           - type: 'link'
             # ../en-US.restext:36 | "Click to continue..."
             label: 'restext://Click_ContinueEllipsis_C'
@@ -943,13 +943,13 @@ nodes:
             snapshot: true
       - match: 'nameD'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30151
+        # ../.source/TheCostofDisease_Eng_v10.cs:30151
         - type: 'conditional'
           conditions:
           # ../en-US.restext:116 | "wolves"
           - if: 'allyD == "restext://Faction_Wolves_Lower" || !allyD'
             then:
-            # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30154
+            # ../.source/TheCostofDisease_Eng_v10.cs:30154
             - type: 'popup'
               layout: 'setup'
               # ../en-US.restext:36 | "Click to continue..."
@@ -963,7 +963,7 @@ nodes:
                 conditions:
                 - if: 'wolves == "evil"'
                   then:
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30190
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30190
                   - type: 'image'
                     asset: 'image://setup/DiscardEstateUpgrade_Icon'
                     style: 'setup-image'
@@ -974,59 +974,59 @@ nodes:
                 # ../en-US.restext:25 | "evil"
                 - if: 'wolves == "restext://Choice_Evil_Lower"'
                   then:
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30191
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30191
                   - type: 'break'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30192
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30192
                   - type: 'text'
                     # ../en-US.restext:76 | "Discard a **completed Exp..."
                     value: 'restext://Directive_DiscardExperimentOrUpgrade'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30203
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30203
                   - type: 'break'
                     style: 'paragraph'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30205
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30205
                   - type: 'text'
-                    # ../en-US.restext:2436 | "Also, **Lose 1VP.**"
+                    # ../en-US.restext:2435 | "Also, **Lose 1VP.**"
                     value: 'restext://Gen1Creepy_ConcealExpose_010'
                 else:
-                # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30215
+                # ../.source/TheCostofDisease_Eng_v10.cs:30215
                 - type: 'popup'
                   layout: 'setup'
                   # ../en-US.restext:343 | "Accept"
                   okay: 'restext://UIButton_Accept'
                   header:
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30219
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30219
                   - type: 'image'
                     asset: 'image://setup/DiscardEstateUpgrade_Icon'
                     style: 'setup-image'
                   content:
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30220
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30220
                   - type: 'break'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30221
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30221
                   - type: 'text'
-                    # ../en-US.restext:2434 | "Pay $2 to the supply OR *..."
+                    # ../en-US.restext:2433 | "Pay $2 to the supply OR *..."
                     value: 'restext://Gen1Creepy_ConcealExpose_007'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30227
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30227
                   - type: 'break'
                     style: 'paragraph'
-                  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30229
+                  # ../.source/TheCostofDisease_Eng_v10.cs:30229
                   - type: 'text'
-                    # ../en-US.restext:2435 | "Also, **Gain 1** {icon:in..."
+                    # ../en-US.restext:2434 | "Also, **Gain 1** {icon:in..."
                     value: 'restext://Gen1Creepy_ConcealExpose_008'
           else:
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30158
+          # ../.source/TheCostofDisease_Eng_v10.cs:30158
           - type: 'link'
             # ../en-US.restext:36 | "Click to continue..."
             label: 'restext://Click_ContinueEllipsis_C'
             target: 'Devastation3' # ./00032-Devastation3.mws.yaml
             snapshot: true
       default:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30163
+      # ../.source/TheCostofDisease_Eng_v10.cs:30163
       - type: 'conditional'
         conditions:
         # ../en-US.restext:116 | "wolves"
         - if: 'allyE == "restext://Faction_Wolves_Lower" || !allyE'
           then:
-          # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30166
+          # ../.source/TheCostofDisease_Eng_v10.cs:30166
           - type: 'popup'
             layout: 'setup'
             # ../en-US.restext:36 | "Click to continue..."
@@ -1040,7 +1040,7 @@ nodes:
               conditions:
               - if: 'wolves == "evil"'
                 then:
-                # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30190
+                # ../.source/TheCostofDisease_Eng_v10.cs:30190
                 - type: 'image'
                   asset: 'image://setup/DiscardEstateUpgrade_Icon'
                   style: 'setup-image'
@@ -1051,46 +1051,46 @@ nodes:
               # ../en-US.restext:25 | "evil"
               - if: 'wolves == "restext://Choice_Evil_Lower"'
                 then:
-                # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30191
+                # ../.source/TheCostofDisease_Eng_v10.cs:30191
                 - type: 'break'
-                # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30192
+                # ../.source/TheCostofDisease_Eng_v10.cs:30192
                 - type: 'text'
                   # ../en-US.restext:76 | "Discard a **completed Exp..."
                   value: 'restext://Directive_DiscardExperimentOrUpgrade'
-                # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30203
+                # ../.source/TheCostofDisease_Eng_v10.cs:30203
                 - type: 'break'
                   style: 'paragraph'
-                # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30205
+                # ../.source/TheCostofDisease_Eng_v10.cs:30205
                 - type: 'text'
-                  # ../en-US.restext:2436 | "Also, **Lose 1VP.**"
+                  # ../en-US.restext:2435 | "Also, **Lose 1VP.**"
                   value: 'restext://Gen1Creepy_ConcealExpose_010'
               else:
-              # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30215
+              # ../.source/TheCostofDisease_Eng_v10.cs:30215
               - type: 'popup'
                 layout: 'setup'
                 # ../en-US.restext:343 | "Accept"
                 okay: 'restext://UIButton_Accept'
                 header:
-                # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30219
+                # ../.source/TheCostofDisease_Eng_v10.cs:30219
                 - type: 'image'
                   asset: 'image://setup/DiscardEstateUpgrade_Icon'
                   style: 'setup-image'
                 content:
-                # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30220
+                # ../.source/TheCostofDisease_Eng_v10.cs:30220
                 - type: 'break'
-                # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30221
+                # ../.source/TheCostofDisease_Eng_v10.cs:30221
                 - type: 'text'
-                  # ../en-US.restext:2434 | "Pay $2 to the supply OR *..."
+                  # ../en-US.restext:2433 | "Pay $2 to the supply OR *..."
                   value: 'restext://Gen1Creepy_ConcealExpose_007'
-                # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30227
+                # ../.source/TheCostofDisease_Eng_v10.cs:30227
                 - type: 'break'
                   style: 'paragraph'
-                # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30229
+                # ../.source/TheCostofDisease_Eng_v10.cs:30229
                 - type: 'text'
-                  # ../en-US.restext:2435 | "Also, **Gain 1** {icon:in..."
+                  # ../en-US.restext:2434 | "Also, **Gain 1** {icon:in..."
                   value: 'restext://Gen1Creepy_ConcealExpose_008'
         else:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30170
+        # ../.source/TheCostofDisease_Eng_v10.cs:30170
         - type: 'link'
           # ../en-US.restext:36 | "Click to continue..."
           label: 'restext://Click_ContinueEllipsis_C'

@@ -1,55 +1,55 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6651
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:6651
 ---
 format: 'mws/0.4'
 passage_id: 'bar6'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6656
+# ../.source/TheCostofDisease_Eng_v10.cs:6656
 - type: 'let'
   var: '_rnd_bar6_0'
   expr: 'rand_between(1, 999, "bar6_0")'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6658
+# ../.source/TheCostofDisease_Eng_v10.cs:6658
 - type: 'let'
   var: '_rnd_bar6_1'
   expr: 'rand_between(1, 999, "bar6_1")'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6655
+# ../.source/TheCostofDisease_Eng_v10.cs:6655
 - type: 'text'
-  # ../en-US.restext:725 | "**SWORN STATEMENT - Case ..."
+  # ../en-US.restext:724 | "**SWORN STATEMENT - Case ..."
   value: 'restext://bar6_001'
   lets:
   - '_rnd_bar6_0'
   - '_rnd_bar6_1'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6660
+# ../.source/TheCostofDisease_Eng_v10.cs:6660
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6662
+# ../.source/TheCostofDisease_Eng_v10.cs:6662
 - type: 'text'
-  # ../en-US.restext:726 | "Although witnesses claim ..."
+  # ../en-US.restext:725 | "Although witnesses claim ..."
   value: 'restext://bar6_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6663
+# ../.source/TheCostofDisease_Eng_v10.cs:6663
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6665
+# ../.source/TheCostofDisease_Eng_v10.cs:6665
 - type: 'text'
-  # ../en-US.restext:727 | "Honestly, the Laborer’s U..."
+  # ../en-US.restext:726 | "Honestly, the Laborer’s U..."
   value: 'restext://bar6_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6674
+# ../.source/TheCostofDisease_Eng_v10.cs:6674
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6678
+# ../.source/TheCostofDisease_Eng_v10.cs:6678
 - type: 'popup'
   layout: 'setup'
   # ../en-US.restext:343 | "Accept"
   okay: 'restext://UIButton_Accept'
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6682
+  # ../.source/TheCostofDisease_Eng_v10.cs:6682
   - type: 'image'
     asset: 'image://setup/Creepy_Icon'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6683
+  # ../.source/TheCostofDisease_Eng_v10.cs:6683
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6684
+  # ../.source/TheCostofDisease_Eng_v10.cs:6684
   - type: 'text'
-    # ../en-US.restext:728 | "Place a {icon:creepy_icon..."
+    # ../en-US.restext:727 | "Place a {icon:creepy_icon..."
     value: 'restext://bar6_004'

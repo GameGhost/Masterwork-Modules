@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33192
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:33192
 ---
 format: 'mws/0.4'
 passage_id: 'Huntround1'
@@ -6,14 +6,14 @@ passage_id: 'Huntround1'
 title: 'restext://Title_InPreparationForTheHunt'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33200
+# ../.source/TheCostofDisease_Eng_v10.cs:33200
 - type: 'text'
-  # ../en-US.restext:2638 | "As the full moon rose aga..."
+  # ../en-US.restext:2637 | "As the full moon rose aga..."
   value: 'restext://Huntround1_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33210
+# ../.source/TheCostofDisease_Eng_v10.cs:33210
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33214
+# ../.source/TheCostofDisease_Eng_v10.cs:33214
 - type: 'popup'
   layout: 'setup'
   # ../en-US.restext:36 | "Click to continue..."
@@ -23,21 +23,21 @@ nodes:
   okay: 'restext://UIButton_Close' # ./00319-HuntersChoice1.mws.yaml
   snapshot: true
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33229
+  # ../.source/TheCostofDisease_Eng_v10.cs:33229
   - type: 'image'
     asset: 'image://setup/Spouse_Servant'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33230
+  # ../.source/TheCostofDisease_Eng_v10.cs:33230
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33231
+  # ../.source/TheCostofDisease_Eng_v10.cs:33231
   - type: 'text'
-    # ../en-US.restext:2639 | "{h1a} III and {h1b} III e..."
+    # ../en-US.restext:2638 | "{h1a} III and {h1b} III e..."
     value: 'restext://Huntround1_003'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33237
+  # ../.source/TheCostofDisease_Eng_v10.cs:33237
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33239
+  # ../.source/TheCostofDisease_Eng_v10.cs:33239
   - type: 'text'
-    # ../en-US.restext:71 | "If a player cannot perfor..."
+    # ../en-US.restext:71 | "_If a player cannot perfo..."
     value: 'restext://Directive_CannotPerform_LoseVPGainServant'

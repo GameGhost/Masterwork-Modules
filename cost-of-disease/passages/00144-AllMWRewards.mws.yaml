@@ -1,755 +1,755 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16128
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:16128
 ---
 format: 'mws/0.4'
 passage_id: 'AllMWRewards'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16130
+# ../.source/TheCostofDisease_Eng_v10.cs:16130
 - type: 'switch'
   on: 'tempcomp'
   cases:
   - match: 'nameA'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16132
+    # ../.source/TheCostofDisease_Eng_v10.cs:16132
     - type: 'switch'
       on: 'typeA'
       cases:
       - match: 'creature'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16136
+        # ../.source/TheCostofDisease_Eng_v10.cs:16136
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16138
+        # ../.source/TheCostofDisease_Eng_v10.cs:16138
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16139
+        # ../.source/TheCostofDisease_Eng_v10.cs:16139
         - type: 'text'
           # ../en-US.restext:351 | "Gain 20VP."
           value: 'restext://VP_Gain20'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16140
+        # ../.source/TheCostofDisease_Eng_v10.cs:16140
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16141
+        # ../.source/TheCostofDisease_Eng_v10.cs:16141
         - type: 'text'
           # ../en-US.restext:283 | "Gain 1 {icon:insanity_ico..."
           value: 'restext://Resource_Gain1Insanity2Creepy_MoveMob'
       - match: 'power'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16154
+        # ../.source/TheCostofDisease_Eng_v10.cs:16154
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16156
+        # ../.source/TheCostofDisease_Eng_v10.cs:16156
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16157
+        # ../.source/TheCostofDisease_Eng_v10.cs:16157
         - type: 'text'
           # ../en-US.restext:350 | "Gain 19VP."
           value: 'restext://VP_Gain19'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16158
+        # ../.source/TheCostofDisease_Eng_v10.cs:16158
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16159
+        # ../.source/TheCostofDisease_Eng_v10.cs:16159
         - type: 'text'
           # ../en-US.restext:282 | "Gain 1 {icon:insanity_ico..."
           value: 'restext://Resource_Gain1Insanity2Creepy'
       - match: 'robot'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16170
+        # ../.source/TheCostofDisease_Eng_v10.cs:16170
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16172
+        # ../.source/TheCostofDisease_Eng_v10.cs:16172
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16173
+        # ../.source/TheCostofDisease_Eng_v10.cs:16173
         - type: 'text'
           # ../en-US.restext:351 | "Gain 20VP."
           value: 'restext://VP_Gain20'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16174
+        # ../.source/TheCostofDisease_Eng_v10.cs:16174
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16175
+        # ../.source/TheCostofDisease_Eng_v10.cs:16175
         - type: 'text'
           # ../en-US.restext:282 | "Gain 1 {icon:insanity_ico..."
           value: 'restext://Resource_Gain1Insanity2Creepy'
       - match: 'weapon'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16186
+        # ../.source/TheCostofDisease_Eng_v10.cs:16186
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16188
+        # ../.source/TheCostofDisease_Eng_v10.cs:16188
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16189
+        # ../.source/TheCostofDisease_Eng_v10.cs:16189
         - type: 'text'
           # ../en-US.restext:350 | "Gain 19VP."
           value: 'restext://VP_Gain19'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16190
+        # ../.source/TheCostofDisease_Eng_v10.cs:16190
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16191
+        # ../.source/TheCostofDisease_Eng_v10.cs:16191
         - type: 'text'
           # ../en-US.restext:286 | "Gain 2 {icon:insanity_ico..."
           value: 'restext://Resource_Gain2Insanity1Creepy'
       - match: 'medicine'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16202
+        # ../.source/TheCostofDisease_Eng_v10.cs:16202
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16204
+        # ../.source/TheCostofDisease_Eng_v10.cs:16204
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16205
+        # ../.source/TheCostofDisease_Eng_v10.cs:16205
         - type: 'text'
           # ../en-US.restext:352 | "Gain 21VP."
           value: 'restext://VP_Gain21'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16206
+        # ../.source/TheCostofDisease_Eng_v10.cs:16206
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16207
+        # ../.source/TheCostofDisease_Eng_v10.cs:16207
         - type: 'text'
           # ../en-US.restext:287 | "Gain 2 {icon:insanity_ico..."
           value: 'restext://Resource_Gain2Insanity2Creepy'
       - match: 'drug'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16218
+        # ../.source/TheCostofDisease_Eng_v10.cs:16218
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16220
+        # ../.source/TheCostofDisease_Eng_v10.cs:16220
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16221
+        # ../.source/TheCostofDisease_Eng_v10.cs:16221
         - type: 'text'
           # ../en-US.restext:350 | "Gain 19VP."
           value: 'restext://VP_Gain19'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16222
+        # ../.source/TheCostofDisease_Eng_v10.cs:16222
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16223
+        # ../.source/TheCostofDisease_Eng_v10.cs:16223
         - type: 'text'
           # ../en-US.restext:282 | "Gain 1 {icon:insanity_ico..."
           value: 'restext://Resource_Gain1Insanity2Creepy'
       - match: 'demon'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16234
+        # ../.source/TheCostofDisease_Eng_v10.cs:16234
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16236
+        # ../.source/TheCostofDisease_Eng_v10.cs:16236
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16237
+        # ../.source/TheCostofDisease_Eng_v10.cs:16237
         - type: 'text'
           # ../en-US.restext:352 | "Gain 21VP."
           value: 'restext://VP_Gain21'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16238
+        # ../.source/TheCostofDisease_Eng_v10.cs:16238
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16239
+        # ../.source/TheCostofDisease_Eng_v10.cs:16239
         - type: 'text'
           # ../en-US.restext:284 | "Gain 2 {icon:creepy_icon}."
           value: 'restext://Resource_Gain2Creepy'
       default:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16248
+      # ../.source/TheCostofDisease_Eng_v10.cs:16248
       - type: 'text'
         # ../en-US.restext:167 | "**Reward:**"
         value: 'restext://Heading_Reward'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16250
+      # ../.source/TheCostofDisease_Eng_v10.cs:16250
       - type: 'break'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16251
+      # ../.source/TheCostofDisease_Eng_v10.cs:16251
       - type: 'text'
         # ../en-US.restext:351 | "Gain 20VP."
         value: 'restext://VP_Gain20'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16252
+      # ../.source/TheCostofDisease_Eng_v10.cs:16252
       - type: 'break'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16253
+      # ../.source/TheCostofDisease_Eng_v10.cs:16253
       - type: 'text'
         # ../en-US.restext:283 | "Gain 1 {icon:insanity_ico..."
         value: 'restext://Resource_Gain1Insanity2Creepy_MoveMob'
   - match: 'nameB'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16265
+    # ../.source/TheCostofDisease_Eng_v10.cs:16265
     - type: 'switch'
       on: 'typeB'
       cases:
       - match: 'creature'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16269
+        # ../.source/TheCostofDisease_Eng_v10.cs:16269
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16271
+        # ../.source/TheCostofDisease_Eng_v10.cs:16271
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16272
+        # ../.source/TheCostofDisease_Eng_v10.cs:16272
         - type: 'text'
           # ../en-US.restext:351 | "Gain 20VP."
           value: 'restext://VP_Gain20'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16273
+        # ../.source/TheCostofDisease_Eng_v10.cs:16273
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16274
+        # ../.source/TheCostofDisease_Eng_v10.cs:16274
         - type: 'text'
           # ../en-US.restext:283 | "Gain 1 {icon:insanity_ico..."
           value: 'restext://Resource_Gain1Insanity2Creepy_MoveMob'
       - match: 'power'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16287
+        # ../.source/TheCostofDisease_Eng_v10.cs:16287
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16289
+        # ../.source/TheCostofDisease_Eng_v10.cs:16289
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16290
+        # ../.source/TheCostofDisease_Eng_v10.cs:16290
         - type: 'text'
           # ../en-US.restext:350 | "Gain 19VP."
           value: 'restext://VP_Gain19'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16291
+        # ../.source/TheCostofDisease_Eng_v10.cs:16291
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16292
+        # ../.source/TheCostofDisease_Eng_v10.cs:16292
         - type: 'text'
           # ../en-US.restext:282 | "Gain 1 {icon:insanity_ico..."
           value: 'restext://Resource_Gain1Insanity2Creepy'
       - match: 'robot'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16303
+        # ../.source/TheCostofDisease_Eng_v10.cs:16303
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16305
+        # ../.source/TheCostofDisease_Eng_v10.cs:16305
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16306
+        # ../.source/TheCostofDisease_Eng_v10.cs:16306
         - type: 'text'
           # ../en-US.restext:351 | "Gain 20VP."
           value: 'restext://VP_Gain20'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16307
+        # ../.source/TheCostofDisease_Eng_v10.cs:16307
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16308
+        # ../.source/TheCostofDisease_Eng_v10.cs:16308
         - type: 'text'
           # ../en-US.restext:282 | "Gain 1 {icon:insanity_ico..."
           value: 'restext://Resource_Gain1Insanity2Creepy'
       - match: 'weapon'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16319
+        # ../.source/TheCostofDisease_Eng_v10.cs:16319
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16321
+        # ../.source/TheCostofDisease_Eng_v10.cs:16321
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16322
+        # ../.source/TheCostofDisease_Eng_v10.cs:16322
         - type: 'text'
           # ../en-US.restext:350 | "Gain 19VP."
           value: 'restext://VP_Gain19'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16323
+        # ../.source/TheCostofDisease_Eng_v10.cs:16323
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16324
+        # ../.source/TheCostofDisease_Eng_v10.cs:16324
         - type: 'text'
           # ../en-US.restext:286 | "Gain 2 {icon:insanity_ico..."
           value: 'restext://Resource_Gain2Insanity1Creepy'
       - match: 'medicine'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16335
+        # ../.source/TheCostofDisease_Eng_v10.cs:16335
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16337
+        # ../.source/TheCostofDisease_Eng_v10.cs:16337
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16338
+        # ../.source/TheCostofDisease_Eng_v10.cs:16338
         - type: 'text'
           # ../en-US.restext:352 | "Gain 21VP."
           value: 'restext://VP_Gain21'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16339
+        # ../.source/TheCostofDisease_Eng_v10.cs:16339
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16340
+        # ../.source/TheCostofDisease_Eng_v10.cs:16340
         - type: 'text'
           # ../en-US.restext:287 | "Gain 2 {icon:insanity_ico..."
           value: 'restext://Resource_Gain2Insanity2Creepy'
       - match: 'drug'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16351
+        # ../.source/TheCostofDisease_Eng_v10.cs:16351
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16353
+        # ../.source/TheCostofDisease_Eng_v10.cs:16353
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16354
+        # ../.source/TheCostofDisease_Eng_v10.cs:16354
         - type: 'text'
           # ../en-US.restext:350 | "Gain 19VP."
           value: 'restext://VP_Gain19'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16355
+        # ../.source/TheCostofDisease_Eng_v10.cs:16355
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16356
+        # ../.source/TheCostofDisease_Eng_v10.cs:16356
         - type: 'text'
           # ../en-US.restext:282 | "Gain 1 {icon:insanity_ico..."
           value: 'restext://Resource_Gain1Insanity2Creepy'
       - match: 'demon'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16367
+        # ../.source/TheCostofDisease_Eng_v10.cs:16367
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16369
+        # ../.source/TheCostofDisease_Eng_v10.cs:16369
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16370
+        # ../.source/TheCostofDisease_Eng_v10.cs:16370
         - type: 'text'
           # ../en-US.restext:352 | "Gain 21VP."
           value: 'restext://VP_Gain21'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16371
+        # ../.source/TheCostofDisease_Eng_v10.cs:16371
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16372
+        # ../.source/TheCostofDisease_Eng_v10.cs:16372
         - type: 'text'
           # ../en-US.restext:284 | "Gain 2 {icon:creepy_icon}."
           value: 'restext://Resource_Gain2Creepy'
       default:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16381
+      # ../.source/TheCostofDisease_Eng_v10.cs:16381
       - type: 'text'
         # ../en-US.restext:167 | "**Reward:**"
         value: 'restext://Heading_Reward'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16383
+      # ../.source/TheCostofDisease_Eng_v10.cs:16383
       - type: 'break'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16384
+      # ../.source/TheCostofDisease_Eng_v10.cs:16384
       - type: 'text'
         # ../en-US.restext:351 | "Gain 20VP."
         value: 'restext://VP_Gain20'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16385
+      # ../.source/TheCostofDisease_Eng_v10.cs:16385
       - type: 'break'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16386
+      # ../.source/TheCostofDisease_Eng_v10.cs:16386
       - type: 'text'
         # ../en-US.restext:283 | "Gain 1 {icon:insanity_ico..."
         value: 'restext://Resource_Gain1Insanity2Creepy_MoveMob'
   - match: 'nameC'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16398
+    # ../.source/TheCostofDisease_Eng_v10.cs:16398
     - type: 'switch'
       on: 'typeC'
       cases:
       - match: 'creature'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16402
+        # ../.source/TheCostofDisease_Eng_v10.cs:16402
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16404
+        # ../.source/TheCostofDisease_Eng_v10.cs:16404
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16405
+        # ../.source/TheCostofDisease_Eng_v10.cs:16405
         - type: 'text'
           # ../en-US.restext:351 | "Gain 20VP."
           value: 'restext://VP_Gain20'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16406
+        # ../.source/TheCostofDisease_Eng_v10.cs:16406
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16407
+        # ../.source/TheCostofDisease_Eng_v10.cs:16407
         - type: 'text'
           # ../en-US.restext:283 | "Gain 1 {icon:insanity_ico..."
           value: 'restext://Resource_Gain1Insanity2Creepy_MoveMob'
       - match: 'power'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16420
+        # ../.source/TheCostofDisease_Eng_v10.cs:16420
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16422
+        # ../.source/TheCostofDisease_Eng_v10.cs:16422
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16423
+        # ../.source/TheCostofDisease_Eng_v10.cs:16423
         - type: 'text'
           # ../en-US.restext:350 | "Gain 19VP."
           value: 'restext://VP_Gain19'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16424
+        # ../.source/TheCostofDisease_Eng_v10.cs:16424
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16425
+        # ../.source/TheCostofDisease_Eng_v10.cs:16425
         - type: 'text'
           # ../en-US.restext:282 | "Gain 1 {icon:insanity_ico..."
           value: 'restext://Resource_Gain1Insanity2Creepy'
       - match: 'robot'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16436
+        # ../.source/TheCostofDisease_Eng_v10.cs:16436
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16438
+        # ../.source/TheCostofDisease_Eng_v10.cs:16438
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16439
+        # ../.source/TheCostofDisease_Eng_v10.cs:16439
         - type: 'text'
           # ../en-US.restext:351 | "Gain 20VP."
           value: 'restext://VP_Gain20'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16440
+        # ../.source/TheCostofDisease_Eng_v10.cs:16440
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16441
+        # ../.source/TheCostofDisease_Eng_v10.cs:16441
         - type: 'text'
           # ../en-US.restext:282 | "Gain 1 {icon:insanity_ico..."
           value: 'restext://Resource_Gain1Insanity2Creepy'
       - match: 'weapon'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16452
+        # ../.source/TheCostofDisease_Eng_v10.cs:16452
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16454
+        # ../.source/TheCostofDisease_Eng_v10.cs:16454
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16455
+        # ../.source/TheCostofDisease_Eng_v10.cs:16455
         - type: 'text'
           # ../en-US.restext:350 | "Gain 19VP."
           value: 'restext://VP_Gain19'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16456
+        # ../.source/TheCostofDisease_Eng_v10.cs:16456
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16457
+        # ../.source/TheCostofDisease_Eng_v10.cs:16457
         - type: 'text'
           # ../en-US.restext:286 | "Gain 2 {icon:insanity_ico..."
           value: 'restext://Resource_Gain2Insanity1Creepy'
       - match: 'medicine'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16468
+        # ../.source/TheCostofDisease_Eng_v10.cs:16468
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16470
+        # ../.source/TheCostofDisease_Eng_v10.cs:16470
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16471
+        # ../.source/TheCostofDisease_Eng_v10.cs:16471
         - type: 'text'
           # ../en-US.restext:352 | "Gain 21VP."
           value: 'restext://VP_Gain21'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16472
+        # ../.source/TheCostofDisease_Eng_v10.cs:16472
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16473
+        # ../.source/TheCostofDisease_Eng_v10.cs:16473
         - type: 'text'
           # ../en-US.restext:287 | "Gain 2 {icon:insanity_ico..."
           value: 'restext://Resource_Gain2Insanity2Creepy'
       - match: 'drug'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16484
+        # ../.source/TheCostofDisease_Eng_v10.cs:16484
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16486
+        # ../.source/TheCostofDisease_Eng_v10.cs:16486
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16487
+        # ../.source/TheCostofDisease_Eng_v10.cs:16487
         - type: 'text'
           # ../en-US.restext:350 | "Gain 19VP."
           value: 'restext://VP_Gain19'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16488
+        # ../.source/TheCostofDisease_Eng_v10.cs:16488
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16489
+        # ../.source/TheCostofDisease_Eng_v10.cs:16489
         - type: 'text'
           # ../en-US.restext:282 | "Gain 1 {icon:insanity_ico..."
           value: 'restext://Resource_Gain1Insanity2Creepy'
       - match: 'demon'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16500
+        # ../.source/TheCostofDisease_Eng_v10.cs:16500
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16502
+        # ../.source/TheCostofDisease_Eng_v10.cs:16502
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16503
+        # ../.source/TheCostofDisease_Eng_v10.cs:16503
         - type: 'text'
           # ../en-US.restext:352 | "Gain 21VP."
           value: 'restext://VP_Gain21'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16504
+        # ../.source/TheCostofDisease_Eng_v10.cs:16504
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16505
+        # ../.source/TheCostofDisease_Eng_v10.cs:16505
         - type: 'text'
           # ../en-US.restext:284 | "Gain 2 {icon:creepy_icon}."
           value: 'restext://Resource_Gain2Creepy'
       default:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16514
+      # ../.source/TheCostofDisease_Eng_v10.cs:16514
       - type: 'text'
         # ../en-US.restext:167 | "**Reward:**"
         value: 'restext://Heading_Reward'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16516
+      # ../.source/TheCostofDisease_Eng_v10.cs:16516
       - type: 'break'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16517
+      # ../.source/TheCostofDisease_Eng_v10.cs:16517
       - type: 'text'
         # ../en-US.restext:351 | "Gain 20VP."
         value: 'restext://VP_Gain20'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16518
+      # ../.source/TheCostofDisease_Eng_v10.cs:16518
       - type: 'break'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16519
+      # ../.source/TheCostofDisease_Eng_v10.cs:16519
       - type: 'text'
         # ../en-US.restext:283 | "Gain 1 {icon:insanity_ico..."
         value: 'restext://Resource_Gain1Insanity2Creepy_MoveMob'
   - match: 'nameD'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16531
+    # ../.source/TheCostofDisease_Eng_v10.cs:16531
     - type: 'switch'
       on: 'typeD'
       cases:
       - match: 'creature'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16535
+        # ../.source/TheCostofDisease_Eng_v10.cs:16535
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16537
+        # ../.source/TheCostofDisease_Eng_v10.cs:16537
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16538
+        # ../.source/TheCostofDisease_Eng_v10.cs:16538
         - type: 'text'
           # ../en-US.restext:351 | "Gain 20VP."
           value: 'restext://VP_Gain20'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16539
+        # ../.source/TheCostofDisease_Eng_v10.cs:16539
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16540
+        # ../.source/TheCostofDisease_Eng_v10.cs:16540
         - type: 'text'
           # ../en-US.restext:283 | "Gain 1 {icon:insanity_ico..."
           value: 'restext://Resource_Gain1Insanity2Creepy_MoveMob'
       - match: 'power'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16553
+        # ../.source/TheCostofDisease_Eng_v10.cs:16553
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16555
+        # ../.source/TheCostofDisease_Eng_v10.cs:16555
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16556
+        # ../.source/TheCostofDisease_Eng_v10.cs:16556
         - type: 'text'
           # ../en-US.restext:350 | "Gain 19VP."
           value: 'restext://VP_Gain19'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16557
+        # ../.source/TheCostofDisease_Eng_v10.cs:16557
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16558
+        # ../.source/TheCostofDisease_Eng_v10.cs:16558
         - type: 'text'
           # ../en-US.restext:282 | "Gain 1 {icon:insanity_ico..."
           value: 'restext://Resource_Gain1Insanity2Creepy'
       - match: 'robot'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16569
+        # ../.source/TheCostofDisease_Eng_v10.cs:16569
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16571
+        # ../.source/TheCostofDisease_Eng_v10.cs:16571
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16572
+        # ../.source/TheCostofDisease_Eng_v10.cs:16572
         - type: 'text'
           # ../en-US.restext:351 | "Gain 20VP."
           value: 'restext://VP_Gain20'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16573
+        # ../.source/TheCostofDisease_Eng_v10.cs:16573
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16574
+        # ../.source/TheCostofDisease_Eng_v10.cs:16574
         - type: 'text'
           # ../en-US.restext:282 | "Gain 1 {icon:insanity_ico..."
           value: 'restext://Resource_Gain1Insanity2Creepy'
       - match: 'weapon'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16585
+        # ../.source/TheCostofDisease_Eng_v10.cs:16585
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16587
+        # ../.source/TheCostofDisease_Eng_v10.cs:16587
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16588
+        # ../.source/TheCostofDisease_Eng_v10.cs:16588
         - type: 'text'
           # ../en-US.restext:350 | "Gain 19VP."
           value: 'restext://VP_Gain19'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16589
+        # ../.source/TheCostofDisease_Eng_v10.cs:16589
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16590
+        # ../.source/TheCostofDisease_Eng_v10.cs:16590
         - type: 'text'
           # ../en-US.restext:286 | "Gain 2 {icon:insanity_ico..."
           value: 'restext://Resource_Gain2Insanity1Creepy'
       - match: 'medicine'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16601
+        # ../.source/TheCostofDisease_Eng_v10.cs:16601
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16603
+        # ../.source/TheCostofDisease_Eng_v10.cs:16603
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16604
+        # ../.source/TheCostofDisease_Eng_v10.cs:16604
         - type: 'text'
           # ../en-US.restext:352 | "Gain 21VP."
           value: 'restext://VP_Gain21'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16605
+        # ../.source/TheCostofDisease_Eng_v10.cs:16605
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16606
+        # ../.source/TheCostofDisease_Eng_v10.cs:16606
         - type: 'text'
           # ../en-US.restext:287 | "Gain 2 {icon:insanity_ico..."
           value: 'restext://Resource_Gain2Insanity2Creepy'
       - match: 'drug'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16617
+        # ../.source/TheCostofDisease_Eng_v10.cs:16617
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16619
+        # ../.source/TheCostofDisease_Eng_v10.cs:16619
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16620
+        # ../.source/TheCostofDisease_Eng_v10.cs:16620
         - type: 'text'
           # ../en-US.restext:350 | "Gain 19VP."
           value: 'restext://VP_Gain19'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16621
+        # ../.source/TheCostofDisease_Eng_v10.cs:16621
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16622
+        # ../.source/TheCostofDisease_Eng_v10.cs:16622
         - type: 'text'
           # ../en-US.restext:282 | "Gain 1 {icon:insanity_ico..."
           value: 'restext://Resource_Gain1Insanity2Creepy'
       - match: 'demon'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16633
+        # ../.source/TheCostofDisease_Eng_v10.cs:16633
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16635
+        # ../.source/TheCostofDisease_Eng_v10.cs:16635
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16636
+        # ../.source/TheCostofDisease_Eng_v10.cs:16636
         - type: 'text'
           # ../en-US.restext:352 | "Gain 21VP."
           value: 'restext://VP_Gain21'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16637
+        # ../.source/TheCostofDisease_Eng_v10.cs:16637
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16638
+        # ../.source/TheCostofDisease_Eng_v10.cs:16638
         - type: 'text'
           # ../en-US.restext:284 | "Gain 2 {icon:creepy_icon}."
           value: 'restext://Resource_Gain2Creepy'
       default:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16647
+      # ../.source/TheCostofDisease_Eng_v10.cs:16647
       - type: 'text'
         # ../en-US.restext:167 | "**Reward:**"
         value: 'restext://Heading_Reward'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16649
+      # ../.source/TheCostofDisease_Eng_v10.cs:16649
       - type: 'break'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16650
+      # ../.source/TheCostofDisease_Eng_v10.cs:16650
       - type: 'text'
         # ../en-US.restext:351 | "Gain 20VP."
         value: 'restext://VP_Gain20'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16651
+      # ../.source/TheCostofDisease_Eng_v10.cs:16651
       - type: 'break'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16652
+      # ../.source/TheCostofDisease_Eng_v10.cs:16652
       - type: 'text'
         # ../en-US.restext:283 | "Gain 1 {icon:insanity_ico..."
         value: 'restext://Resource_Gain1Insanity2Creepy_MoveMob'
   - match: 'nameE'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16664
+    # ../.source/TheCostofDisease_Eng_v10.cs:16664
     - type: 'switch'
       on: 'typeE'
       cases:
       - match: 'creature'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16668
+        # ../.source/TheCostofDisease_Eng_v10.cs:16668
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16670
+        # ../.source/TheCostofDisease_Eng_v10.cs:16670
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16671
+        # ../.source/TheCostofDisease_Eng_v10.cs:16671
         - type: 'text'
           # ../en-US.restext:351 | "Gain 20VP."
           value: 'restext://VP_Gain20'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16672
+        # ../.source/TheCostofDisease_Eng_v10.cs:16672
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16673
+        # ../.source/TheCostofDisease_Eng_v10.cs:16673
         - type: 'text'
           # ../en-US.restext:283 | "Gain 1 {icon:insanity_ico..."
           value: 'restext://Resource_Gain1Insanity2Creepy_MoveMob'
       - match: 'power'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16686
+        # ../.source/TheCostofDisease_Eng_v10.cs:16686
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16688
+        # ../.source/TheCostofDisease_Eng_v10.cs:16688
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16689
+        # ../.source/TheCostofDisease_Eng_v10.cs:16689
         - type: 'text'
           # ../en-US.restext:350 | "Gain 19VP."
           value: 'restext://VP_Gain19'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16690
+        # ../.source/TheCostofDisease_Eng_v10.cs:16690
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16691
+        # ../.source/TheCostofDisease_Eng_v10.cs:16691
         - type: 'text'
           # ../en-US.restext:282 | "Gain 1 {icon:insanity_ico..."
           value: 'restext://Resource_Gain1Insanity2Creepy'
       - match: 'robot'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16702
+        # ../.source/TheCostofDisease_Eng_v10.cs:16702
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16704
+        # ../.source/TheCostofDisease_Eng_v10.cs:16704
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16705
+        # ../.source/TheCostofDisease_Eng_v10.cs:16705
         - type: 'text'
           # ../en-US.restext:351 | "Gain 20VP."
           value: 'restext://VP_Gain20'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16706
+        # ../.source/TheCostofDisease_Eng_v10.cs:16706
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16707
+        # ../.source/TheCostofDisease_Eng_v10.cs:16707
         - type: 'text'
           # ../en-US.restext:282 | "Gain 1 {icon:insanity_ico..."
           value: 'restext://Resource_Gain1Insanity2Creepy'
       - match: 'weapon'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16718
+        # ../.source/TheCostofDisease_Eng_v10.cs:16718
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16720
+        # ../.source/TheCostofDisease_Eng_v10.cs:16720
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16721
+        # ../.source/TheCostofDisease_Eng_v10.cs:16721
         - type: 'text'
           # ../en-US.restext:350 | "Gain 19VP."
           value: 'restext://VP_Gain19'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16722
+        # ../.source/TheCostofDisease_Eng_v10.cs:16722
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16723
+        # ../.source/TheCostofDisease_Eng_v10.cs:16723
         - type: 'text'
           # ../en-US.restext:286 | "Gain 2 {icon:insanity_ico..."
           value: 'restext://Resource_Gain2Insanity1Creepy'
       - match: 'medicine'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16734
+        # ../.source/TheCostofDisease_Eng_v10.cs:16734
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16736
+        # ../.source/TheCostofDisease_Eng_v10.cs:16736
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16737
+        # ../.source/TheCostofDisease_Eng_v10.cs:16737
         - type: 'text'
           # ../en-US.restext:352 | "Gain 21VP."
           value: 'restext://VP_Gain21'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16738
+        # ../.source/TheCostofDisease_Eng_v10.cs:16738
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16739
+        # ../.source/TheCostofDisease_Eng_v10.cs:16739
         - type: 'text'
           # ../en-US.restext:287 | "Gain 2 {icon:insanity_ico..."
           value: 'restext://Resource_Gain2Insanity2Creepy'
       - match: 'drug'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16750
+        # ../.source/TheCostofDisease_Eng_v10.cs:16750
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16752
+        # ../.source/TheCostofDisease_Eng_v10.cs:16752
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16753
+        # ../.source/TheCostofDisease_Eng_v10.cs:16753
         - type: 'text'
           # ../en-US.restext:350 | "Gain 19VP."
           value: 'restext://VP_Gain19'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16754
+        # ../.source/TheCostofDisease_Eng_v10.cs:16754
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16755
+        # ../.source/TheCostofDisease_Eng_v10.cs:16755
         - type: 'text'
           # ../en-US.restext:282 | "Gain 1 {icon:insanity_ico..."
           value: 'restext://Resource_Gain1Insanity2Creepy'
       - match: 'demon'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16766
+        # ../.source/TheCostofDisease_Eng_v10.cs:16766
         - type: 'text'
           # ../en-US.restext:167 | "**Reward:**"
           value: 'restext://Heading_Reward'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16768
+        # ../.source/TheCostofDisease_Eng_v10.cs:16768
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16769
+        # ../.source/TheCostofDisease_Eng_v10.cs:16769
         - type: 'text'
           # ../en-US.restext:352 | "Gain 21VP."
           value: 'restext://VP_Gain21'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16770
+        # ../.source/TheCostofDisease_Eng_v10.cs:16770
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16771
+        # ../.source/TheCostofDisease_Eng_v10.cs:16771
         - type: 'text'
           # ../en-US.restext:284 | "Gain 2 {icon:creepy_icon}."
           value: 'restext://Resource_Gain2Creepy'
       default:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16780
+      # ../.source/TheCostofDisease_Eng_v10.cs:16780
       - type: 'text'
         # ../en-US.restext:167 | "**Reward:**"
         value: 'restext://Heading_Reward'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16782
+      # ../.source/TheCostofDisease_Eng_v10.cs:16782
       - type: 'break'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16783
+      # ../.source/TheCostofDisease_Eng_v10.cs:16783
       - type: 'text'
         # ../en-US.restext:351 | "Gain 20VP."
         value: 'restext://VP_Gain20'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16784
+      # ../.source/TheCostofDisease_Eng_v10.cs:16784
       - type: 'break'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:16785
+      # ../.source/TheCostofDisease_Eng_v10.cs:16785
       - type: 'text'
         # ../en-US.restext:283 | "Gain 1 {icon:insanity_ico..."
         value: 'restext://Resource_Gain1Insanity2Creepy_MoveMob'

@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31666
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:31666
 ---
 format: 'mws/0.4'
 passage_id: 'GloomyPenalty1'
@@ -6,21 +6,21 @@ passage_id: 'GloomyPenalty1'
 title: 'restext://Title_HuntersTax'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31673
+# ../.source/TheCostofDisease_Eng_v10.cs:31673
 - type: 'text'
-  # ../en-US.restext:2510 | "Set amid an unseasonably ..."
+  # ../en-US.restext:2509 | "Set amid an unseasonably ..."
   value: 'restext://GloomyPenalty1_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31674
+# ../.source/TheCostofDisease_Eng_v10.cs:31674
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31676
+# ../.source/TheCostofDisease_Eng_v10.cs:31676
 - type: 'text'
-  # ../en-US.restext:2511 | "The leader spoke again, o..."
+  # ../en-US.restext:2510 | "The leader spoke again, o..."
   value: 'restext://GloomyPenalty1_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31677
+# ../.source/TheCostofDisease_Eng_v10.cs:31677
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31681
+# ../.source/TheCostofDisease_Eng_v10.cs:31681
 - type: 'popup'
   layout: 'setup'
   # ../en-US.restext:36 | "Click to continue..."
@@ -30,21 +30,21 @@ nodes:
   okay: 'restext://UIButton_Close' # ./00288-Preposterous.mws.yaml
   snapshot: true
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31696
+  # ../.source/TheCostofDisease_Eng_v10.cs:31696
   - type: 'image'
     asset: 'image://setup/S1_HunterToken'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31697
+  # ../.source/TheCostofDisease_Eng_v10.cs:31697
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31698
+  # ../.source/TheCostofDisease_Eng_v10.cs:31698
   - type: 'text'
     # ../en-US.restext:186 | "Any player that does not ..."
     value: 'restext://HuntersRest_PayOrLoseVP_Rule'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31722
+  # ../.source/TheCostofDisease_Eng_v10.cs:31722
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:31724
+  # ../.source/TheCostofDisease_Eng_v10.cs:31724
   - type: 'text'
     # ../en-US.restext:188 | "Alternatively, any player..."
     value: 'restext://HuntersTax_TokenWaiver'

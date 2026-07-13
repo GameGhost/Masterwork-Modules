@@ -1,96 +1,96 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6965
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:6965
 ---
 format: 'mws/0.4'
 passage_id: 'Panacea'
-# ../en-US.restext:773 | "A Cure for All"
+# ../en-US.restext:772 | "A Cure for All"
 title: 'restext://Panacea_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6972
+# ../.source/TheCostofDisease_Eng_v10.cs:6972
 - type: 'text'
-  # ../en-US.restext:774 | "It seemed that finally, a..."
+  # ../en-US.restext:773 | "It seemed that finally, a..."
   value: 'restext://Panacea_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6977
+# ../.source/TheCostofDisease_Eng_v10.cs:6977
 - type: 'assign'
   var: 'twopage'
   expr: '1'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6981
+# ../.source/TheCostofDisease_Eng_v10.cs:6981
 - type: 'text'
-  # ../en-US.restext:775 | "**Which individual comple..."
+  # ../en-US.restext:774 | "**Which individual comple..."
   value: 'restext://Panacea_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6983
+# ../.source/TheCostofDisease_Eng_v10.cs:6983
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6986
+# ../.source/TheCostofDisease_Eng_v10.cs:6986
 - type: 'link'
   # ../en-US.restext:15 | "Dr. {nameA} Jr."
   label: 'restext://Character_DrNameA_Jr'
   target: 'PanaceaMessage' # ./00250-PanaceaMessage.mws.yaml
   snapshot: true
   onclick:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7019
+  # ../.source/TheCostofDisease_Eng_v10.cs:7019
   - type: 'assign'
     var: 'panacure'
     expr: 'nameA'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6987
+# ../.source/TheCostofDisease_Eng_v10.cs:6987
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6990
+# ../.source/TheCostofDisease_Eng_v10.cs:6990
 - type: 'link'
   # ../en-US.restext:16 | "Dr. {nameB} Jr."
   label: 'restext://Character_DrNameB_Jr'
   target: 'PanaceaMessage' # ./00250-PanaceaMessage.mws.yaml
   snapshot: true
   onclick:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7026
+  # ../.source/TheCostofDisease_Eng_v10.cs:7026
   - type: 'assign'
     var: 'panacure'
     expr: 'nameB'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6991
+# ../.source/TheCostofDisease_Eng_v10.cs:6991
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6993
+# ../.source/TheCostofDisease_Eng_v10.cs:6993
 - type: 'conditional'
   if: 'players > 2'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6996
+  # ../.source/TheCostofDisease_Eng_v10.cs:6996
   - type: 'link'
     # ../en-US.restext:17 | "Dr. {nameC} Jr."
     label: 'restext://Character_DrNameC_Jr'
     target: 'PanaceaMessage' # ./00250-PanaceaMessage.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7033
+    # ../.source/TheCostofDisease_Eng_v10.cs:7033
     - type: 'assign'
       var: 'panacure'
       expr: 'nameC'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7000
+# ../.source/TheCostofDisease_Eng_v10.cs:7000
 - type: 'conditional'
   if: 'players > 3'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7003
+  # ../.source/TheCostofDisease_Eng_v10.cs:7003
   - type: 'link'
     # ../en-US.restext:18 | "Dr. {nameD} Jr."
     label: 'restext://Character_DrNameD_Jr'
     target: 'PanaceaMessage' # ./00250-PanaceaMessage.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7040
+    # ../.source/TheCostofDisease_Eng_v10.cs:7040
     - type: 'assign'
       var: 'panacure'
       expr: 'nameD'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7007
+# ../.source/TheCostofDisease_Eng_v10.cs:7007
 - type: 'conditional'
   if: 'players > 4'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7010
+  # ../.source/TheCostofDisease_Eng_v10.cs:7010
   - type: 'link'
     # ../en-US.restext:19 | "Dr. {nameE} Jr."
     label: 'restext://Character_DrNameE_Jr'
     target: 'PanaceaMessage' # ./00250-PanaceaMessage.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7047
+    # ../.source/TheCostofDisease_Eng_v10.cs:7047
     - type: 'assign'
       var: 'panacure'
       expr: 'nameE'

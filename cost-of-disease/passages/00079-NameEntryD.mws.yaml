@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9176
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:9176
 ---
 format: 'mws/0.4'
 passage_id: 'NameEntryD'
@@ -6,52 +6,52 @@ tags:
 - 'ck'
 layout: 'hub'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9178
+# ../.source/TheCostofDisease_Eng_v10.cs:9178
 - type: 'assign'
   var: 'nameD'
   expr: 'global:nameD'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9179
+# ../.source/TheCostofDisease_Eng_v10.cs:9179
 - type: 'assign'
   var: 'players'
   expr: '4'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9183
+# ../.source/TheCostofDisease_Eng_v10.cs:9183
 - type: 'section'
   # ../en-US.restext:238 | "ERROR!"
   title: 'restext://Narrative_ErrorExclaim'
   content: []
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9185
+# ../.source/TheCostofDisease_Eng_v10.cs:9185
 - type: 'text'
   # ../en-US.restext:274 | "Welcome to _My Father's Work_,"
   value: 'restext://Narrative_WelcomeToMyFathersWork'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9191
+# ../.source/TheCostofDisease_Eng_v10.cs:9191
 - type: 'break'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9192
+# ../.source/TheCostofDisease_Eng_v10.cs:9192
 - type: 'text'
-  # ../en-US.restext:932 | "{nameD}."
+  # ../en-US.restext:931 | "{nameD}."
   value: 'restext://NameEntryD_001'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9194
+# ../.source/TheCostofDisease_Eng_v10.cs:9194
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9196
+# ../.source/TheCostofDisease_Eng_v10.cs:9196
 - type: 'text'
   # ../en-US.restext:251 | "Be sure to leave your mar..."
   value: 'restext://Narrative_LeaveYourMark'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9197
+# ../.source/TheCostofDisease_Eng_v10.cs:9197
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9203
+# ../.source/TheCostofDisease_Eng_v10.cs:9203
 - type: 'conditional'
   conditions:
   - if: 'players > 4'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9205
+    # ../.source/TheCostofDisease_Eng_v10.cs:9205
     - type: 'link'
       # ../en-US.restext:38 | "Click to Continue..."
       label: 'restext://Click_ContinueEllipsis_Title'
       target: 'NameEntryE' # ./00080-NameEntryE.mws.yaml
       snapshot: true
   else:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9209
+  # ../.source/TheCostofDisease_Eng_v10.cs:9209
   - type: 'link'
     # ../en-US.restext:38 | "Click to Continue..."
     label: 'restext://Click_ContinueEllipsis_Title'

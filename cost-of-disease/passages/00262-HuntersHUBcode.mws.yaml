@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28029
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:28029
 ---
 format: 'mws/0.4'
 passage_id: 'HuntersHUBcode'
@@ -6,362 +6,362 @@ tags:
 - 'CHECK'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28031
+# ../.source/TheCostofDisease_Eng_v10.cs:28031
 - type: 'assign'
   var: 'mon'
   expr: '["Strigoi", "Moon Presence", "Manticore", "Golem", "Wight", "Pricolici", "Troll", "Priest"]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28032
+# ../.source/TheCostofDisease_Eng_v10.cs:28032
 - type: 'assign'
   var: 'mon'
   expr: 'mon.shuffled("HuntersHUBcode_0")'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28033
+# ../.source/TheCostofDisease_Eng_v10.cs:28033
 - type: 'assign'
   var: 'monster1'
   expr: 'mon[0]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28034
+# ../.source/TheCostofDisease_Eng_v10.cs:28034
 - type: 'assign'
   var: 'monster2'
   expr: 'mon[1]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28035
+# ../.source/TheCostofDisease_Eng_v10.cs:28035
 - type: 'assign'
   var: 'monster3'
   expr: 'mon[2]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28036
+# ../.source/TheCostofDisease_Eng_v10.cs:28036
 - type: 'assign'
   var: 'monster4'
   expr: 'mon[3]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28037
+# ../.source/TheCostofDisease_Eng_v10.cs:28037
 - type: 'assign'
   var: 'monster5'
   expr: 'mon[4]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28038
+# ../.source/TheCostofDisease_Eng_v10.cs:28038
 - type: 'assign'
   var: 'monster3'
   expr: 'mon[5]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28039
+# ../.source/TheCostofDisease_Eng_v10.cs:28039
 - type: 'assign'
   var: 'monster4'
   expr: 'mon[6]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28040
+# ../.source/TheCostofDisease_Eng_v10.cs:28040
 - type: 'assign'
   var: 'monster5'
   expr: 'mon[7]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28041
+# ../.source/TheCostofDisease_Eng_v10.cs:28041
 - type: 'assign'
   var: 'rew'
   expr: '["Occult Knowledge", "Chemistry Knowledge", "Biology Knowledge", "Engineering Knowledge", "Chemicals", "Animals", "Gears", "$"]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28042
+# ../.source/TheCostofDisease_Eng_v10.cs:28042
 - type: 'assign'
   var: 'rew'
   expr: 'rew.shuffled("HuntersHUBcode_1")'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28043
+# ../.source/TheCostofDisease_Eng_v10.cs:28043
 - type: 'assign'
   var: 'reward1'
   expr: 'rew[0]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28044
+# ../.source/TheCostofDisease_Eng_v10.cs:28044
 - type: 'assign'
   var: 'reward2'
   expr: 'rew[1]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28045
+# ../.source/TheCostofDisease_Eng_v10.cs:28045
 - type: 'assign'
   var: 'reward3'
   expr: 'rew[2]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28046
+# ../.source/TheCostofDisease_Eng_v10.cs:28046
 - type: 'assign'
   var: 'reward4'
   expr: 'rew[3]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28047
+# ../.source/TheCostofDisease_Eng_v10.cs:28047
 - type: 'assign'
   var: 'reward5'
   expr: 'rew[4]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28048
+# ../.source/TheCostofDisease_Eng_v10.cs:28048
 - type: 'assign'
   var: 'reward6'
   expr: 'rew[5]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28049
+# ../.source/TheCostofDisease_Eng_v10.cs:28049
 - type: 'assign'
   var: 'reward7'
   expr: 'rew[6]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28050
+# ../.source/TheCostofDisease_Eng_v10.cs:28050
 - type: 'assign'
   var: 'reward8'
   expr: 'rew[7]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28051
+# ../.source/TheCostofDisease_Eng_v10.cs:28051
 - type: 'switch'
   on: 'players'
   cases:
   - match: 3
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28053
+    # ../.source/TheCostofDisease_Eng_v10.cs:28053
     - type: 'assign'
       var: 'hunttemp'
       expr: '[1, 2, 3]'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28054
+    # ../.source/TheCostofDisease_Eng_v10.cs:28054
     - type: 'assign'
       var: 'hunttemp'
       expr: 'hunttemp.shuffled("HuntersHUBcode_2")'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28055
+    # ../.source/TheCostofDisease_Eng_v10.cs:28055
     - type: 'assign'
       var: 'hunt1a'
       expr: 'hunttemp[0]'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28056
+    # ../.source/TheCostofDisease_Eng_v10.cs:28056
     - type: 'assign'
       var: 'hunt1b'
       expr: 'hunttemp[1]'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28057
+    # ../.source/TheCostofDisease_Eng_v10.cs:28057
     - type: 'assign'
       var: 'hunt2a'
       expr: 'hunttemp[2]'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28058
+    # ../.source/TheCostofDisease_Eng_v10.cs:28058
     - type: 'assign'
       var: 'hunt2b'
       expr: 'hunttemp[1]'
   - match: 4
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28062
+    # ../.source/TheCostofDisease_Eng_v10.cs:28062
     - type: 'assign'
       var: 'hunttemp'
       expr: '[1, 2, 3, 4]'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28063
+    # ../.source/TheCostofDisease_Eng_v10.cs:28063
     - type: 'assign'
       var: 'hunttemp'
       expr: 'hunttemp.shuffled("HuntersHUBcode_3")'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28064
+    # ../.source/TheCostofDisease_Eng_v10.cs:28064
     - type: 'assign'
       var: 'hunt1a'
       expr: 'hunttemp[0]'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28065
+    # ../.source/TheCostofDisease_Eng_v10.cs:28065
     - type: 'assign'
       var: 'hunt1b'
       expr: 'hunttemp[1]'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28066
+    # ../.source/TheCostofDisease_Eng_v10.cs:28066
     - type: 'assign'
       var: 'hunt2a'
       expr: 'hunttemp[2]'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28067
+    # ../.source/TheCostofDisease_Eng_v10.cs:28067
     - type: 'assign'
       var: 'hunt2b'
       expr: 'hunttemp[3]'
   - match: 5
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28071
+    # ../.source/TheCostofDisease_Eng_v10.cs:28071
     - type: 'assign'
       var: 'hunttemp'
       expr: '[1, 2, 3, 4, 5]'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28072
+    # ../.source/TheCostofDisease_Eng_v10.cs:28072
     - type: 'assign'
       var: 'hunttemp'
       expr: 'hunttemp.shuffled("HuntersHUBcode_4")'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28073
+    # ../.source/TheCostofDisease_Eng_v10.cs:28073
     - type: 'assign'
       var: 'hunt1a'
       expr: 'hunttemp[0]'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28074
+    # ../.source/TheCostofDisease_Eng_v10.cs:28074
     - type: 'assign'
       var: 'hunt1b'
       expr: 'hunttemp[1]'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28075
+    # ../.source/TheCostofDisease_Eng_v10.cs:28075
     - type: 'assign'
       var: 'hunt2a'
       expr: 'hunttemp[2]'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28076
+    # ../.source/TheCostofDisease_Eng_v10.cs:28076
     - type: 'assign'
       var: 'hunt2b'
       expr: 'hunttemp[3]'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28077
+    # ../.source/TheCostofDisease_Eng_v10.cs:28077
     - type: 'assign'
       var: 'hunt3a'
       expr: 'hunttemp[4]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28079
+# ../.source/TheCostofDisease_Eng_v10.cs:28079
 - type: 'switch'
   on: 'hunt1a'
   cases:
   - match: 1
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28081
+    # ../.source/TheCostofDisease_Eng_v10.cs:28081
     - type: 'assign'
       var: 'h1a'
       expr: 'nameA'
   - match: 2
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28085
+    # ../.source/TheCostofDisease_Eng_v10.cs:28085
     - type: 'assign'
       var: 'h1a'
       expr: 'nameB'
   - match: 3
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28089
+    # ../.source/TheCostofDisease_Eng_v10.cs:28089
     - type: 'assign'
       var: 'h1a'
       expr: 'nameC'
   - match: 4
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28093
+    # ../.source/TheCostofDisease_Eng_v10.cs:28093
     - type: 'assign'
       var: 'h1a'
       expr: 'nameD'
   - match: 5
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28097
+    # ../.source/TheCostofDisease_Eng_v10.cs:28097
     - type: 'assign'
       var: 'h1a'
       expr: 'nameE'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28099
+# ../.source/TheCostofDisease_Eng_v10.cs:28099
 - type: 'switch'
   on: 'hunt1b'
   cases:
   - match: 1
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28101
+    # ../.source/TheCostofDisease_Eng_v10.cs:28101
     - type: 'assign'
       var: 'h1b'
       expr: 'nameA'
   - match: 2
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28105
+    # ../.source/TheCostofDisease_Eng_v10.cs:28105
     - type: 'assign'
       var: 'h1b'
       expr: 'nameB'
   - match: 3
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28109
+    # ../.source/TheCostofDisease_Eng_v10.cs:28109
     - type: 'assign'
       var: 'h1b'
       expr: 'nameC'
   - match: 4
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28113
+    # ../.source/TheCostofDisease_Eng_v10.cs:28113
     - type: 'assign'
       var: 'h1b'
       expr: 'nameD'
   - match: 5
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28117
+    # ../.source/TheCostofDisease_Eng_v10.cs:28117
     - type: 'assign'
       var: 'h1b'
       expr: 'nameE'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28119
+# ../.source/TheCostofDisease_Eng_v10.cs:28119
 - type: 'switch'
   on: 'hunt2a'
   cases:
   - match: 1
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28121
+    # ../.source/TheCostofDisease_Eng_v10.cs:28121
     - type: 'assign'
       var: 'h2a'
       expr: 'nameA'
   - match: 2
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28125
+    # ../.source/TheCostofDisease_Eng_v10.cs:28125
     - type: 'assign'
       var: 'h2a'
       expr: 'nameB'
   - match: 3
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28129
+    # ../.source/TheCostofDisease_Eng_v10.cs:28129
     - type: 'assign'
       var: 'h2a'
       expr: 'nameC'
   - match: 4
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28133
+    # ../.source/TheCostofDisease_Eng_v10.cs:28133
     - type: 'assign'
       var: 'h2a'
       expr: 'nameD'
   - match: 5
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28137
+    # ../.source/TheCostofDisease_Eng_v10.cs:28137
     - type: 'assign'
       var: 'h2a'
       expr: 'nameE'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28139
+# ../.source/TheCostofDisease_Eng_v10.cs:28139
 - type: 'switch'
   on: 'hunt2b'
   cases:
   - match: 1
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28141
+    # ../.source/TheCostofDisease_Eng_v10.cs:28141
     - type: 'assign'
       var: 'h2b'
       expr: 'nameA'
   - match: 2
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28145
+    # ../.source/TheCostofDisease_Eng_v10.cs:28145
     - type: 'assign'
       var: 'h2b'
       expr: 'nameB'
   - match: 3
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28149
+    # ../.source/TheCostofDisease_Eng_v10.cs:28149
     - type: 'assign'
       var: 'h2b'
       expr: 'nameC'
   - match: 4
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28153
+    # ../.source/TheCostofDisease_Eng_v10.cs:28153
     - type: 'assign'
       var: 'h2b'
       expr: 'nameD'
   - match: 5
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28157
+    # ../.source/TheCostofDisease_Eng_v10.cs:28157
     - type: 'assign'
       var: 'h2b'
       expr: 'nameE'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28159
+# ../.source/TheCostofDisease_Eng_v10.cs:28159
 - type: 'switch'
   on: 'hunt1c'
   cases:
   - match: 1
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28161
+    # ../.source/TheCostofDisease_Eng_v10.cs:28161
     - type: 'assign'
       var: 'h2c'
       expr: 'nameA'
   - match: 2
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28165
+    # ../.source/TheCostofDisease_Eng_v10.cs:28165
     - type: 'assign'
       var: 'h2c'
       expr: 'nameB'
   - match: 3
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28169
+    # ../.source/TheCostofDisease_Eng_v10.cs:28169
     - type: 'assign'
       var: 'h2c'
       expr: 'nameC'
   - match: 4
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28173
+    # ../.source/TheCostofDisease_Eng_v10.cs:28173
     - type: 'assign'
       var: 'h2c'
       expr: 'nameD'
   - match: 5
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28177
+    # ../.source/TheCostofDisease_Eng_v10.cs:28177
     - type: 'assign'
       var: 'h2c'
       expr: 'nameE'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28179
+# ../.source/TheCostofDisease_Eng_v10.cs:28179
 - type: 'conditional'
   if: 'players == 2'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28181
+  # ../.source/TheCostofDisease_Eng_v10.cs:28181
   - type: 'assign'
     var: 'h1a'
     expr: 'nameA'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28182
+  # ../.source/TheCostofDisease_Eng_v10.cs:28182
   - type: 'assign'
     var: 'h2a'
     expr: 'nameA'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28183
+  # ../.source/TheCostofDisease_Eng_v10.cs:28183
   - type: 'assign'
     var: 'h1b'
     expr: 'nameB'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28184
+  # ../.source/TheCostofDisease_Eng_v10.cs:28184
   - type: 'assign'
     var: 'h2b'
     expr: 'nameB'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28187
+# ../.source/TheCostofDisease_Eng_v10.cs:28187
 - type: 'goto'
   target: 'Evilsforgive' # ./00230-Evilsforgive.mws.yaml

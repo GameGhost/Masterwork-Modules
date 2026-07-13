@@ -1,118 +1,118 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21471
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:21471
 ---
 format: 'mws/0.4'
 passage_id: 'RefusalReveal'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21476
+# ../.source/TheCostofDisease_Eng_v10.cs:21476
 - type: 'text'
   # ../en-US.restext:311 | "**Carefully pick up the S..."
   value: 'restext://Storybook_PickUpPrivate_Bold'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21479
+# ../.source/TheCostofDisease_Eng_v10.cs:21479
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21484
+# ../.source/TheCostofDisease_Eng_v10.cs:21484
 - type: 'popup'
   # ../en-US.restext:53 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   snapshot: true
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21516
+  # ../.source/TheCostofDisease_Eng_v10.cs:21516
   - type: 'text'
-    # ../en-US.restext:1649 | "\"You do well to proceed ..."
+    # ../en-US.restext:1648 | "\"You do well to proceed ..."
     value: 'restext://RefusalReveal_001'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21522
+  # ../.source/TheCostofDisease_Eng_v10.cs:21522
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21524
+  # ../.source/TheCostofDisease_Eng_v10.cs:21524
   - type: 'conditional'
     conditions:
     # ../en-US.restext:26 | "good"
     - if: 'wolves == "restext://Choice_Good_Lower"'
       then:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21526
+      # ../.source/TheCostofDisease_Eng_v10.cs:21526
       - type: 'text'
-        # ../en-US.restext:1651 | "\"The Order wants the vil..."
+        # ../en-US.restext:1650 | "\"The Order wants the vil..."
         value: 'restext://RefusalReveal_003'
     else:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21543
+    # ../.source/TheCostofDisease_Eng_v10.cs:21543
     - type: 'text'
-      # ../en-US.restext:1650 | "\"The Order - not sure wh..."
+      # ../en-US.restext:1649 | "\"The Order - not sure wh..."
       value: 'restext://RefusalReveal_002'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21558
+  # ../.source/TheCostofDisease_Eng_v10.cs:21558
   - type: 'conditional'
     conditions:
     # ../en-US.restext:26 | "good"
     - if: 'hunters == "restext://Choice_Good_Lower"'
       then:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21560
+      # ../.source/TheCostofDisease_Eng_v10.cs:21560
       - type: 'text'
-        # ../en-US.restext:1653 | "\" The Fraternity; the us..."
+        # ../en-US.restext:1652 | "\" The Fraternity; the us..."
         value: 'restext://RefusalReveal_005'
     else:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21577
+    # ../.source/TheCostofDisease_Eng_v10.cs:21577
     - type: 'text'
-      # ../en-US.restext:1652 | "\" **Money**, power, infl..."
+      # ../en-US.restext:1651 | "\" **Money**, power, infl..."
       value: 'restext://RefusalReveal_004'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21590
+  # ../.source/TheCostofDisease_Eng_v10.cs:21590
   - type: 'text'
-    # ../en-US.restext:1654 | " He punctuated his final ..."
+    # ../en-US.restext:1653 | " He punctuated his final ..."
     value: 'restext://RefusalReveal_006'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21592
+  # ../.source/TheCostofDisease_Eng_v10.cs:21592
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21594
+  # ../.source/TheCostofDisease_Eng_v10.cs:21594
   - type: 'text'
-    # ../en-US.restext:1655 | "{meet} was fascinated by ..."
+    # ../en-US.restext:1654 | "{meet} was fascinated by ..."
     value: 'restext://RefusalReveal_007'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21602
+  # ../.source/TheCostofDisease_Eng_v10.cs:21602
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21606
+  # ../.source/TheCostofDisease_Eng_v10.cs:21606
   - type: 'text'
-    # ../en-US.restext:1656 | "**You may choose to:**"
+    # ../en-US.restext:1655 | "**You may choose to:**"
     value: 'restext://RefusalReveal_008'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21608
+  # ../.source/TheCostofDisease_Eng_v10.cs:21608
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21611
+  # ../.source/TheCostofDisease_Eng_v10.cs:21611
   - type: 'link'
-    # ../en-US.restext:1657 | "Join the Order of St. Hub..."
+    # ../en-US.restext:1656 | "Join the Order of St. Hub..."
     label: 'restext://RefusalReveal_009'
     target: 'WolfJoin' # ./00227-WolfJoin.mws.yaml
     snapshot: true
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21612
+  # ../.source/TheCostofDisease_Eng_v10.cs:21612
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21615
+  # ../.source/TheCostofDisease_Eng_v10.cs:21615
   - type: 'link'
-    # ../en-US.restext:1658 | "Join the Fraternity of Hu..."
+    # ../en-US.restext:1657 | "Join the Fraternity of Hu..."
     label: 'restext://RefusalReveal_010'
     target: 'HunterJoin' # ./00209-HunterJoin.mws.yaml
     snapshot: true
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21616
+  # ../.source/TheCostofDisease_Eng_v10.cs:21616
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21618
+  # ../.source/TheCostofDisease_Eng_v10.cs:21618
   - type: 'text'
     # ../en-US.restext:349 | "OR"
     value: 'restext://UIButton_Or'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21619
+  # ../.source/TheCostofDisease_Eng_v10.cs:21619
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21622
+  # ../.source/TheCostofDisease_Eng_v10.cs:21622
   - type: 'conditional'
     conditions:
     - if: 'round == 5'
       then:
       - type: 'link'
-        # ../en-US.restext:1659 | "Leave and do Nothing."
+        # ../en-US.restext:1658 | "Leave and do Nothing."
         label: 'restext://RefusalReveal_011'
         target: 'Devastation2'
         snapshot: true # ./00033-Devastation2.mws.yaml
     else:
     - type: 'link'
-      # ../en-US.restext:1659 | "Leave and do Nothing."
+      # ../en-US.restext:1658 | "Leave and do Nothing."
       label: 'restext://RefusalReveal_011'
       target: 'Devastation3'
       snapshot: true # ./00032-Devastation3.mws.yaml

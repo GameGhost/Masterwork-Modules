@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2545
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:2545
 ---
 format: 'mws/0.4'
 passage_id: 'S5Fate2'
@@ -8,7 +8,7 @@ tags:
 - 'END'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2560
+# ../.source/TheCostofDisease_Eng_v10.cs:2560
 - type: 'popup'
   layout: 'end_of_generation'
   # ../en-US.restext:345 | "Confirm"
@@ -20,99 +20,98 @@ nodes:
   - type: 'let'
     var: 'generation'
     expr: '3'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2561
+# ../.source/TheCostofDisease_Eng_v10.cs:2561
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2563
+# ../.source/TheCostofDisease_Eng_v10.cs:2563
 - type: 'switch'
   on: 'players'
   cases:
   - match: 2
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2565
+    # ../.source/TheCostofDisease_Eng_v10.cs:2565
     - type: 'assign'
       var: 'heart'
       expr: '3'
   - match: 3
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2569
+    # ../.source/TheCostofDisease_Eng_v10.cs:2569
     - type: 'assign'
       var: 'heart'
       expr: '6'
   - match: 4
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2573
+    # ../.source/TheCostofDisease_Eng_v10.cs:2573
     - type: 'assign'
       var: 'heart'
       expr: '8'
   - match: 5
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2577
+    # ../.source/TheCostofDisease_Eng_v10.cs:2577
     - type: 'assign'
       var: 'heart'
       expr: '10'
   default:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2581
+  # ../.source/TheCostofDisease_Eng_v10.cs:2581
   - type: 'assign'
     var: 'heart'
     expr: '3'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2583
+# ../.source/TheCostofDisease_Eng_v10.cs:2583
 - type: 'let'
   var: '_rnd_S5Fate2_0'
   expr: 'rand_between(1, 6, "S5Fate2_0")'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2583
+# ../.source/TheCostofDisease_Eng_v10.cs:2583
 - type: 'assign'
   var: 'hearttotal'
-  # ../en-US.restext:435 | "{heart} + {_rnd_S5Fate2_0}"
-  expr: 'restext://S5Fate2_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2585
+  expr: 'heart + _rnd_S5Fate2_0'
+# ../.source/TheCostofDisease_Eng_v10.cs:2585
 - type: 'text'
-  # ../en-US.restext:436 | "The congregation and citi..."
-  value: 'restext://S5Fate2_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2588
+  # ../en-US.restext:435 | "The congregation and citi..."
+  value: 'restext://S5Fate2_002'
+# ../.source/TheCostofDisease_Eng_v10.cs:2588
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2590
+# ../.source/TheCostofDisease_Eng_v10.cs:2590
 - type: 'conditional'
   conditions:
   - if: 'charitytotal > hearttotal'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2594
+    # ../.source/TheCostofDisease_Eng_v10.cs:2594
     - type: 'text'
-      # ../en-US.restext:440 | "**SUCCESS!**"
-      value: 'restext://S5Fate2_007'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2596
+      # ../en-US.restext:439 | "**SUCCESS!**"
+      value: 'restext://S5Fate2_006'
+    # ../.source/TheCostofDisease_Eng_v10.cs:2596
     - type: 'break'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2597
+    # ../.source/TheCostofDisease_Eng_v10.cs:2597
     - type: 'text'
-      # ../en-US.restext:441 | "With charitable contribut..."
-      value: 'restext://S5Fate2_008'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2605
+      # ../en-US.restext:440 | "With charitable contribut..."
+      value: 'restext://S5Fate2_007'
+    # ../.source/TheCostofDisease_Eng_v10.cs:2605
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2607
+    # ../.source/TheCostofDisease_Eng_v10.cs:2607
     - type: 'link'
-      # ../en-US.restext:442 | "Succeeded in Building the..."
-      label: 'restext://S5Fate2_009'
+      # ../en-US.restext:441 | "Succeeded in Building the..."
+      label: 'restext://S5Fate2_008'
       target: 'Hospitalintro' # ./00012-Hospitalintro.mws.yaml
       snapshot: true
   else:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2614
+  # ../.source/TheCostofDisease_Eng_v10.cs:2614
   - type: 'text'
-    # ../en-US.restext:437 | "**FAILURE!**"
-    value: 'restext://S5Fate2_004'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2616
+    # ../en-US.restext:436 | "**FAILURE!**"
+    value: 'restext://S5Fate2_003'
+  # ../.source/TheCostofDisease_Eng_v10.cs:2616
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2617
+  # ../.source/TheCostofDisease_Eng_v10.cs:2617
   - type: 'text'
-    # ../en-US.restext:438 | "With charitable contribut..."
-    value: 'restext://S5Fate2_005'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2626
+    # ../en-US.restext:437 | "With charitable contribut..."
+    value: 'restext://S5Fate2_004'
+  # ../.source/TheCostofDisease_Eng_v10.cs:2626
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2628
+  # ../.source/TheCostofDisease_Eng_v10.cs:2628
   - type: 'link'
-    # ../en-US.restext:439 | "Failed to Build the Hospital"
-    label: 'restext://S5Fate2_006'
+    # ../en-US.restext:438 | "Failed to Build the Hospital"
+    label: 'restext://S5Fate2_005'
     target: 'DevastationIntro' # ./00086-DevastationIntro.mws.yaml
     snapshot: true

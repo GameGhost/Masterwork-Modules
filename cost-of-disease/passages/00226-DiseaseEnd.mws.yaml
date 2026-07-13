@@ -1,43 +1,43 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24887
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:24887
 ---
 format: 'mws/0.4'
 passage_id: 'DiseaseEnd'
-# ../en-US.restext:1983 | "Longevity and Clarity"
+# ../en-US.restext:1982 | "Longevity and Clarity"
 title: 'restext://DiseaseEnd_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24894
+# ../.source/TheCostofDisease_Eng_v10.cs:24894
 - type: 'text'
-  # ../en-US.restext:1984 | "Notes from this time peri..."
+  # ../en-US.restext:1983 | "Notes from this time peri..."
   value: 'restext://DiseaseEnd_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24895
+# ../.source/TheCostofDisease_Eng_v10.cs:24895
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24899
+# ../.source/TheCostofDisease_Eng_v10.cs:24899
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:1985 | "Click here to determine t..."
+  # ../en-US.restext:1984 | "Click here to determine t..."
   label: 'restext://DiseaseEnd_003'
   target: 'DiseaseEffect'
   # ../en-US.restext:344 | "Close"
   okay: 'restext://UIButton_Close' # ./00188-DiseaseEffect.mws.yaml
   snapshot: true
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24913
+  # ../.source/TheCostofDisease_Eng_v10.cs:24913
   - type: 'image'
     asset: 'image://setup/S1_EstateUpgradeBACK'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24914
+  # ../.source/TheCostofDisease_Eng_v10.cs:24914
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24915
+  # ../.source/TheCostofDisease_Eng_v10.cs:24915
   - type: 'text'
-    # ../en-US.restext:1986 | "Retrieve the **Stasis Cha..."
+    # ../en-US.restext:1985 | "Retrieve the **Stasis Cha..."
     value: 'restext://DiseaseEnd_004'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24940
+  # ../.source/TheCostofDisease_Eng_v10.cs:24940
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24942
+  # ../.source/TheCostofDisease_Eng_v10.cs:24942
   - type: 'text'
-    # ../en-US.restext:1987 | "Then, discard any face-do..."
+    # ../en-US.restext:1986 | "Then, discard any face-do..."
     value: 'restext://DiseaseEnd_005'

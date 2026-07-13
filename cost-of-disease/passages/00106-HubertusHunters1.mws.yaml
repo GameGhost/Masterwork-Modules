@@ -1,152 +1,152 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11570
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:11570
 ---
 format: 'mws/0.4'
 passage_id: 'HubertusHunters1'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11572
+# ../.source/TheCostofDisease_Eng_v10.cs:11572
 - type: 'conditional'
   if: '!meet'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11574
+  # ../.source/TheCostofDisease_Eng_v10.cs:11574
   - type: 'goto'
     target: 'FailedMeeting' # ./00313-FailedMeeting.mws.yaml
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11576
+# ../.source/TheCostofDisease_Eng_v10.cs:11576
 - type: 'break'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11579
+# ../.source/TheCostofDisease_Eng_v10.cs:11579
 - type: 'text'
   # ../en-US.restext:312 | "**Carefully pick up the s..."
   value: 'restext://Storybook_PickUpPrivate_Plain'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11582
+# ../.source/TheCostofDisease_Eng_v10.cs:11582
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11587
+# ../.source/TheCostofDisease_Eng_v10.cs:11587
 - type: 'popup'
   # ../en-US.restext:53 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   snapshot: true
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11623
+  # ../.source/TheCostofDisease_Eng_v10.cs:11623
   - type: 'let'
     var: '_rnd_HubertusHunters1_0'
     # ../en-US.restext:12 | Calendar_April | "April"
     # ../en-US.restext:13 | Calendar_August | "August"
     # ../en-US.restext:14 | Calendar_October | "October"
     expr: '["restext://Calendar_April", "restext://Calendar_August", "restext://Calendar_October"].shuffled("HubertusHunters1_0")[0]'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11625
+  # ../.source/TheCostofDisease_Eng_v10.cs:11625
   - type: 'let'
     var: '_rnd_HubertusHunters1_1'
     expr: 'rand_between(1, 29, "HubertusHunters1_1")'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11622
+  # ../.source/TheCostofDisease_Eng_v10.cs:11622
   - type: 'text'
-    # ../en-US.restext:1154 | "**Upon a Secret Meeting -..."
+    # ../en-US.restext:1153 | "**Upon a Secret Meeting -..."
     value: 'restext://HubertusHunters1_001'
     lets:
     - '_rnd_HubertusHunters1_0'
     - '_rnd_HubertusHunters1_1'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11628
+  # ../.source/TheCostofDisease_Eng_v10.cs:11628
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11629
+  # ../.source/TheCostofDisease_Eng_v10.cs:11629
   - type: 'text'
     # ../en-US.restext:255 | "I, {meet}, am writing thi..."
     value: 'restext://Narrative_Letter_FraternityMeeting'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11634
+  # ../.source/TheCostofDisease_Eng_v10.cs:11634
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11636
+  # ../.source/TheCostofDisease_Eng_v10.cs:11636
   - type: 'text'
     # ../en-US.restext:259 | "It has been revealed to m..."
     value: 'restext://Narrative_Letter_IntentionsLead'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11637
+  # ../.source/TheCostofDisease_Eng_v10.cs:11637
   - type: 'conditional'
     conditions:
     # ../en-US.restext:25 | "evil"
     - if: 'hunters == "restext://Choice_Evil_Lower"'
       then:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11639
+      # ../.source/TheCostofDisease_Eng_v10.cs:11639
       - type: 'text'
-        # ../en-US.restext:1155 | "amusingly exploitative. T..."
+        # ../en-US.restext:1154 | "amusingly exploitative. T..."
         value: 'restext://HubertusHunters1_004'
     else:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11649
+    # ../.source/TheCostofDisease_Eng_v10.cs:11649
     - type: 'text'
       # ../en-US.restext:254 | "good. It was astute for y..."
       value: 'restext://Narrative_Letter_FraternityIntentGood'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11656
+  # ../.source/TheCostofDisease_Eng_v10.cs:11656
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11658
+  # ../.source/TheCostofDisease_Eng_v10.cs:11658
   - type: 'text'
     # ../en-US.restext:252 | "Being an entrepreneur mys..."
     value: 'restext://Narrative_Letter_EntrepreneurApprehension'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11661
+  # ../.source/TheCostofDisease_Eng_v10.cs:11661
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11665
+  # ../.source/TheCostofDisease_Eng_v10.cs:11665
   - type: 'text'
     # ../en-US.restext:152 | "**It is with sincerity th..."
     value: 'restext://Heading_ItIsWithSincerity'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11667
+  # ../.source/TheCostofDisease_Eng_v10.cs:11667
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11669
+  # ../.source/TheCostofDisease_Eng_v10.cs:11669
   - type: 'text'
     # ../en-US.restext:236 | "...have decided to "
     value: 'restext://Narrative_DecidedTo_Lead'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11671
+  # ../.source/TheCostofDisease_Eng_v10.cs:11671
   - type: 'link'
     # ../en-US.restext:112 | "join and pledge my servic..."
     label: 'restext://Faction_JoinPledgeService'
     target: 'HuntersConfirmation' # ./00343-HuntersConfirmation.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11594
+    # ../.source/TheCostofDisease_Eng_v10.cs:11594
     - type: 'switch'
       on: 'meet'
       cases:
       - match: 'nameA'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11596
+        # ../.source/TheCostofDisease_Eng_v10.cs:11596
         - type: 'assign'
           var: 'allyA'
           # ../en-US.restext:111 | "hunters"
           expr: '"restext://Faction_Hunters_Lower"'
       - match: 'nameB'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11600
+        # ../.source/TheCostofDisease_Eng_v10.cs:11600
         - type: 'assign'
           var: 'allyB'
           # ../en-US.restext:111 | "hunters"
           expr: '"restext://Faction_Hunters_Lower"'
       - match: 'nameC'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11604
+        # ../.source/TheCostofDisease_Eng_v10.cs:11604
         - type: 'assign'
           var: 'allyC'
           # ../en-US.restext:111 | "hunters"
           expr: '"restext://Faction_Hunters_Lower"'
       - match: 'nameD'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11608
+        # ../.source/TheCostofDisease_Eng_v10.cs:11608
         - type: 'assign'
           var: 'allyD'
           # ../en-US.restext:111 | "hunters"
           expr: '"restext://Faction_Hunters_Lower"'
       - match: 'nameE'
         nodes:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11612
+        # ../.source/TheCostofDisease_Eng_v10.cs:11612
         - type: 'assign'
           var: 'allyE'
           # ../en-US.restext:111 | "hunters"
           expr: '"restext://Faction_Hunters_Lower"'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11672
+  # ../.source/TheCostofDisease_Eng_v10.cs:11672
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11674
+  # ../.source/TheCostofDisease_Eng_v10.cs:11674
   - type: 'text'
     # ../en-US.restext:236 | "...have decided to "
     value: 'restext://Narrative_DecidedTo_Lead'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:11675
+  # ../.source/TheCostofDisease_Eng_v10.cs:11675
   - type: 'link'
     # ../en-US.restext:115 | "refuse this ridiculous offer."
     label: 'restext://Faction_RefuseOffer'

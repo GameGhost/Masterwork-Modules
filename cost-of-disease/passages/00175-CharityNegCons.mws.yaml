@@ -1,34 +1,34 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20629
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:20629
 ---
 format: 'mws/0.4'
 passage_id: 'CharityNegCons'
-# ../en-US.restext:1546 | "Condescending Patronage"
+# ../en-US.restext:1545 | "Condescending Patronage"
 title: 'restext://CharityNegCons_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20636
+# ../.source/TheCostofDisease_Eng_v10.cs:20636
 - type: 'assign'
   var: 'gen3pg'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20637
+# ../.source/TheCostofDisease_Eng_v10.cs:20637
 - type: 'assign'
   var: 'conpat'
   expr: 'rand_between(1, 2, "CharityNegCons_0")'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20639
+# ../.source/TheCostofDisease_Eng_v10.cs:20639
 - type: 'text'
-  # ../en-US.restext:1547 | "It should be expected tha..."
+  # ../en-US.restext:1546 | "It should be expected tha..."
   value: 'restext://CharityNegCons_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20640
+# ../.source/TheCostofDisease_Eng_v10.cs:20640
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20642
+# ../.source/TheCostofDisease_Eng_v10.cs:20642
 - type: 'text'
-  # ../en-US.restext:1548 | "{charity} III's family le..."
+  # ../en-US.restext:1547 | "{charity} III's family le..."
   value: 'restext://CharityNegCons_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20652
+# ../.source/TheCostofDisease_Eng_v10.cs:20652
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20656
+# ../.source/TheCostofDisease_Eng_v10.cs:20656
 - type: 'popup'
   layout: 'setup'
   # ../en-US.restext:36 | "Click to continue..."
@@ -38,38 +38,38 @@ nodes:
   okay: 'restext://UIButton_Close' # ./00171-GloomyGothic1.mws.yaml
   snapshot: true
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20670
+  # ../.source/TheCostofDisease_Eng_v10.cs:20670
   - type: 'image'
     asset: 'image://setup/S1_HeartToken'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20671
+  # ../.source/TheCostofDisease_Eng_v10.cs:20671
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20673
+  # ../.source/TheCostofDisease_Eng_v10.cs:20673
   - type: 'text'
-    # ../en-US.restext:1549 | "At the start of the round..."
+    # ../en-US.restext:1548 | "At the start of the round..."
     value: 'restext://CharityNegCons_004'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20677
+  # ../.source/TheCostofDisease_Eng_v10.cs:20677
   - type: 'switch'
     on: 'conpat'
     cases:
     - match: 1
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20679
+      # ../.source/TheCostofDisease_Eng_v10.cs:20679
       - type: 'text'
-        # ../en-US.restext:1550 | "pay $1 to the supply."
+        # ../en-US.restext:1549 | "pay $1 to the supply."
         value: 'restext://CharityNegCons_005'
     - match: 2
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20683
+      # ../.source/TheCostofDisease_Eng_v10.cs:20683
       - type: 'text'
-        # ../en-US.restext:1551 | "gain 1 {icon:creepy_icon}."
+        # ../en-US.restext:1550 | "gain 1 {icon:creepy_icon}."
         value: 'restext://CharityNegCons_006'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20687
+  # ../.source/TheCostofDisease_Eng_v10.cs:20687
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:20689
+  # ../.source/TheCostofDisease_Eng_v10.cs:20689
   - type: 'text'
-    # ../en-US.restext:97 | "Return the Heart{icon:s1_..."
+    # ../en-US.restext:97 | "Return the **Heart{icon:s..."
     value: 'restext://Directive_ReturnHeartToken'

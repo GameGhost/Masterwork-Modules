@@ -1,20 +1,20 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34172
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:34172
 ---
 format: 'mws/0.4'
 passage_id: 'HereditaryDiseaseComplete'
-# ../en-US.restext:2742 | "Successful Treatment"
+# ../en-US.restext:2741 | "Successful Treatment"
 title: 'restext://HereditaryDiseaseComplete_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34179
+# ../.source/TheCostofDisease_Eng_v10.cs:34179
 - type: 'text'
-  # ../en-US.restext:2743 | "While they could never fu..."
+  # ../en-US.restext:2742 | "While they could never fu..."
   value: 'restext://HereditaryDiseaseComplete_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34180
+# ../.source/TheCostofDisease_Eng_v10.cs:34180
 - type: 'assign'
   var: 'devpage'
   expr: '1'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34185
+# ../.source/TheCostofDisease_Eng_v10.cs:34185
 - type: 'popup'
   layout: 'setup'
   # ../en-US.restext:36 | "Click to continue..."
@@ -24,21 +24,21 @@ nodes:
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34199
+  # ../.source/TheCostofDisease_Eng_v10.cs:34199
   - type: 'image'
     asset: 'image://setup/S1_DiseaseExperiment'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34200
+  # ../.source/TheCostofDisease_Eng_v10.cs:34200
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34201
+  # ../.source/TheCostofDisease_Eng_v10.cs:34201
   - type: 'text'
-    # ../en-US.restext:2744 | "After gaining your VP rew..."
+    # ../en-US.restext:2743 | "After gaining your VP rew..."
     value: 'restext://HereditaryDiseaseComplete_003'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34203
+  # ../.source/TheCostofDisease_Eng_v10.cs:34203
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:34207
+  # ../.source/TheCostofDisease_Eng_v10.cs:34207
   - type: 'text'
-    # ../en-US.restext:2745 | "_At the end of the Genera..."
+    # ../en-US.restext:2744 | "_At the end of the Genera..."
     value: 'restext://HereditaryDiseaseComplete_004'

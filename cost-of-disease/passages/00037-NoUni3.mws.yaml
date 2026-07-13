@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5353
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:5353
 ---
 format: 'mws/0.4'
 passage_id: 'NoUni3'
@@ -10,167 +10,167 @@ tags:
 - 'HUB'
 layout: 'hub_late'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5360
+# ../.source/TheCostofDisease_Eng_v10.cs:5360
 - type: 'assign'
   var: 'round'
   expr: '18'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5362
+# ../.source/TheCostofDisease_Eng_v10.cs:5362
 - type: 'conditional'
   if: '!gen3pg'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5366
+  # ../.source/TheCostofDisease_Eng_v10.cs:5366
   - type: 'popup'
     layout: 'setup'
     # ../en-US.restext:343 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5370
+    # ../.source/TheCostofDisease_Eng_v10.cs:5370
     - type: 'image'
       asset: 'image://setup/Creepy_Icon'
       style: 'setup-image'
     content:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5371
+    # ../.source/TheCostofDisease_Eng_v10.cs:5371
     - type: 'break'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5372
+    # ../.source/TheCostofDisease_Eng_v10.cs:5372
     - type: 'text'
-      # ../en-US.restext:632 | "Remove all {icon:creepy_i..."
+      # ../en-US.restext:631 | "Remove all {icon:creepy_i..."
       value: 'restext://NoUni3_001'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5384
+# ../.source/TheCostofDisease_Eng_v10.cs:5384
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5386
+# ../.source/TheCostofDisease_Eng_v10.cs:5386
 - type: 'switch'
   on: 'peeps'
   cases:
   - match: 1
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5390
+    # ../.source/TheCostofDisease_Eng_v10.cs:5390
     - type: 'section'
-      # ../en-US.restext:633 | "**Like Us**"
+      # ../en-US.restext:632 | "**Like Us**"
       title: 'restext://NoUni3_002'
       content:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5398
+      # ../.source/TheCostofDisease_Eng_v10.cs:5398
       - type: 'text'
-        # ../en-US.restext:634 | "The townspeople express r..."
+        # ../en-US.restext:633 | "The townspeople express r..."
         value: 'restext://NoUni3_003'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5402
+      # ../.source/TheCostofDisease_Eng_v10.cs:5402
       - type: 'assign'
         var: 'ending'
         expr: '"END-NoUniGood"' # ./00020-END-NoUniGood.mws.yaml
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5403
+      # ../.source/TheCostofDisease_Eng_v10.cs:5403
       - type: 'text'
-        # ../en-US.restext:635 | "Any player with a token t..."
+        # ../en-US.restext:634 | "Any player with a token t..."
         value: 'restext://NoUni3_004'
   - match: 0
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5417
+    # ../.source/TheCostofDisease_Eng_v10.cs:5417
     - type: 'section'
-      # ../en-US.restext:636 | "**A Step Forward**"
+      # ../en-US.restext:635 | "**A Step Forward**"
       title: 'restext://NoUni3_005'
       content:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5425
+      # ../.source/TheCostofDisease_Eng_v10.cs:5425
       - type: 'text'
-        # ../en-US.restext:637 | "The townspeople begrudgin..."
+        # ../en-US.restext:636 | "The townspeople begrudgin..."
         value: 'restext://NoUni3_006'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5431
+    # ../.source/TheCostofDisease_Eng_v10.cs:5431
     - type: 'assign'
       var: 'ending'
       expr: '"END-NoUniGood"' # ./00020-END-NoUniGood.mws.yaml
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5434
+    # ../.source/TheCostofDisease_Eng_v10.cs:5434
     - type: 'section'
-      # ../en-US.restext:638 | "**The Power of Electricity**"
+      # ../en-US.restext:637 | "**The Power of Electricity**"
       title: 'restext://NoUni3_007'
       content:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5442
+      # ../.source/TheCostofDisease_Eng_v10.cs:5442
       - type: 'text'
-        # ../en-US.restext:639 | "During a **Perform Experi..."
+        # ../en-US.restext:638 | "During a **Perform Experi..."
         value: 'restext://NoUni3_008'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5459
+# ../.source/TheCostofDisease_Eng_v10.cs:5459
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5463
+# ../.source/TheCostofDisease_Eng_v10.cs:5463
 - type: 'section'
   # ../en-US.restext:165 | "{icon:storybook} **PUB**"
   title: 'restext://Heading_Pub'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5473
+  # ../.source/TheCostofDisease_Eng_v10.cs:5473
   - type: 'text'
     # ../en-US.restext:279 | "If your token is overtake..."
     value: 'restext://Pub_ResetCreepy_Rule'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5489
+  # ../.source/TheCostofDisease_Eng_v10.cs:5489
   - type: 'link'
     # ../en-US.restext:33 | "click here for a Bar-venture."
     label: 'restext://Click_BarVenture'
     target: 'Barventures' # ./00027-Barventures.mws.yaml
     snapshot: true
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5491
+# ../.source/TheCostofDisease_Eng_v10.cs:5491
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5495
+# ../.source/TheCostofDisease_Eng_v10.cs:5495
 - type: 'section'
   # ../en-US.restext:156 | "**MASTERWORK**"
   title: 'restext://Heading_Masterwork'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5503
+  # ../.source/TheCostofDisease_Eng_v10.cs:5503
   - type: 'text'
     # ../en-US.restext:212 | "A Masterwork can be compl..."
     value: 'restext://Masterwork_CompleteRule'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5506
+# ../.source/TheCostofDisease_Eng_v10.cs:5506
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5510
+# ../.source/TheCostofDisease_Eng_v10.cs:5510
 - type: 'section'
   # ../en-US.restext:158 | "{icon:storybook} **Master..."
   title: 'restext://Heading_MasterworkRecipe'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5520
+  # ../.source/TheCostofDisease_Eng_v10.cs:5520
   - type: 'text'
     # ../en-US.restext:208 | "To check your Masterwork ..."
     value: 'restext://Masterwork_CheckCost_Lead'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5521
+  # ../.source/TheCostofDisease_Eng_v10.cs:5521
   - type: 'link'
     # ../en-US.restext:48 | "click here."
     label: 'restext://Click_Here_Period'
     target: 'MWTemp' # ./00142-MWTemp.mws.yaml
     snapshot: true
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5523
+# ../.source/TheCostofDisease_Eng_v10.cs:5523
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5527
+# ../.source/TheCostofDisease_Eng_v10.cs:5527
 - type: 'section'
   # ../en-US.restext:140 | "{icon:storybook} **Comple..."
   title: 'restext://Heading_CompletedMasterwork'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5537
+  # ../.source/TheCostofDisease_Eng_v10.cs:5537
   - type: 'text'
     # ../en-US.restext:213 | "If you are completing a M..."
     value: 'restext://Masterwork_Completing_Lead'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5538
+  # ../.source/TheCostofDisease_Eng_v10.cs:5538
   - type: 'link'
     # ../en-US.restext:51 | "click here to receive you..."
     label: 'restext://Click_ReceiveRewards'
     target: 'MWCompleteName' # ./00143-MWCompleteName.mws.yaml
     snapshot: true
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5539
+  # ../.source/TheCostofDisease_Eng_v10.cs:5539
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5542
+  # ../.source/TheCostofDisease_Eng_v10.cs:5542
   - type: 'popup'
     # ../en-US.restext:44 | "Click here at the end of ..."
     label: 'restext://Click_EndGeneration_FinalScoringFateOfTown'
     snapshot: true
     content:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5551
+    # ../.source/TheCostofDisease_Eng_v10.cs:5551
     - type: 'conditional'
       conditions:
       - if: 'peeps == 1'
         then:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5554
+        # ../.source/TheCostofDisease_Eng_v10.cs:5554
         - type: 'assign'
           var: '_ProgressRound'
           expr: '9'
       else:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5559
+      # ../.source/TheCostofDisease_Eng_v10.cs:5559
       - type: 'assign'
         var: '_ProgressRound'
         expr: '9'

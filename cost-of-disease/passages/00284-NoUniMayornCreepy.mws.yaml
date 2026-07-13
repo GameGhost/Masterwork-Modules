@@ -1,27 +1,27 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29194
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:29194
 ---
 format: 'mws/0.4'
 passage_id: 'NoUniMayornCreepy'
-# ../en-US.restext:2373 | "A Somber End"
+# ../en-US.restext:2372 | "A Somber End"
 title: 'restext://NoUniMayornCreepy_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29202
+# ../.source/TheCostofDisease_Eng_v10.cs:29202
 - type: 'text'
-  # ../en-US.restext:2374 | "\"Fat lot of good your fa..."
+  # ../en-US.restext:2373 | "\"Fat lot of good your fa..."
   value: 'restext://NoUniMayornCreepy_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29205
+# ../.source/TheCostofDisease_Eng_v10.cs:29205
 - type: 'assign'
   var: 'gen3pg'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29208
+# ../.source/TheCostofDisease_Eng_v10.cs:29208
 - type: 'text'
-  # ../en-US.restext:2375 | "The townsfolk showed litt..."
+  # ../en-US.restext:2374 | "The townsfolk showed litt..."
   value: 'restext://NoUniMayornCreepy_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29211
+# ../.source/TheCostofDisease_Eng_v10.cs:29211
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29215
+# ../.source/TheCostofDisease_Eng_v10.cs:29215
 - type: 'popup'
   layout: 'setup'
   # ../en-US.restext:36 | "Click to continue..."
@@ -31,21 +31,21 @@ nodes:
   okay: 'restext://UIButton_Close' # ./00021-S5Specialbar1.mws.yaml
   snapshot: true
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29230
+  # ../.source/TheCostofDisease_Eng_v10.cs:29230
   - type: 'image'
     asset: 'image://setup/CompulsionBack'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29231
+  # ../.source/TheCostofDisease_Eng_v10.cs:29231
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29232
+  # ../.source/TheCostofDisease_Eng_v10.cs:29232
   - type: 'text'
-    # ../en-US.restext:2376 | "{mayor} III **draws 1 Com..."
+    # ../en-US.restext:2375 | "{mayor} III **draws 1 Com..."
     value: 'restext://NoUniMayornCreepy_004'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29247
+  # ../.source/TheCostofDisease_Eng_v10.cs:29247
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:29249
+  # ../.source/TheCostofDisease_Eng_v10.cs:29249
   - type: 'text'
-    # ../en-US.restext:2377 | "{charity} III **draws 1 C..."
+    # ../en-US.restext:2376 | "{charity} III **draws 1 C..."
     value: 'restext://NoUniMayornCreepy_005'

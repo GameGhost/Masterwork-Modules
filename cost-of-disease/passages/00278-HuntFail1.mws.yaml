@@ -1,41 +1,41 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28862
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:28862
 ---
 format: 'mws/0.4'
 passage_id: 'HuntFail1'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28866
+# ../.source/TheCostofDisease_Eng_v10.cs:28866
 - type: 'let'
   var: '_rnd_HuntFail1_0'
-  # ../en-US.restext:2335 | HuntFail1_001 | "Miserable"
-  # ../en-US.restext:2336 | HuntFail1_002 | "Woeful"
-  # ../en-US.restext:2337 | HuntFail1_003 | "Dismal"
-  # ../en-US.restext:2338 | HuntFail1_004 | "Pathetic"
-  # ../en-US.restext:2339 | HuntFail1_005 | "Grim"
+  # ../en-US.restext:2334 | HuntFail1_001 | "Miserable"
+  # ../en-US.restext:2335 | HuntFail1_002 | "Woeful"
+  # ../en-US.restext:2336 | HuntFail1_003 | "Dismal"
+  # ../en-US.restext:2337 | HuntFail1_004 | "Pathetic"
+  # ../en-US.restext:2338 | HuntFail1_005 | "Grim"
   expr: '["restext://HuntFail1_001", "restext://HuntFail1_002", "restext://HuntFail1_003", "restext://HuntFail1_004", "restext://HuntFail1_005"].shuffled("HuntFail1_0")[0]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28866
+# ../.source/TheCostofDisease_Eng_v10.cs:28866
 - type: 'text'
-  # ../en-US.restext:2340 | "**{_rnd_HuntFail1_0} Fail..."
+  # ../en-US.restext:2339 | "**{_rnd_HuntFail1_0} Fail..."
   value: 'restext://HuntFail1_006'
   lets:
   - '_rnd_HuntFail1_0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28876
+# ../.source/TheCostofDisease_Eng_v10.cs:28876
 - type: 'let'
   var: '_rnd_HuntFail1_1'
-  # ../en-US.restext:2341 | HuntFail1_007 | "seemed to cackle to itself"
-  # ../en-US.restext:2342 | HuntFail1_008 | "issued a triumphant wail"
-  # ../en-US.restext:2343 | HuntFail1_009 | "smiled with an unsettling grin"
+  # ../en-US.restext:2340 | HuntFail1_007 | "seemed to cackle to itself"
+  # ../en-US.restext:2341 | HuntFail1_008 | "issued a triumphant wail"
+  # ../en-US.restext:2342 | HuntFail1_009 | "smiled with an unsettling grin"
   expr: '["restext://HuntFail1_007", "restext://HuntFail1_008", "restext://HuntFail1_009"].shuffled("HuntFail1_1")[0]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28872
+# ../.source/TheCostofDisease_Eng_v10.cs:28872
 - type: 'text'
-  # ../en-US.restext:2344 | "It had all occurred so qu..."
+  # ../en-US.restext:2343 | "It had all occurred so qu..."
   value: 'restext://HuntFail1_010'
   lets:
   - '_rnd_HuntFail1_1'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28885
+# ../.source/TheCostofDisease_Eng_v10.cs:28885
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28889
+# ../.source/TheCostofDisease_Eng_v10.cs:28889
 - type: 'popup'
   layout: 'setup'
   # ../en-US.restext:36 | "Click to continue..."
@@ -45,14 +45,14 @@ nodes:
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28903
+  # ../.source/TheCostofDisease_Eng_v10.cs:28903
   - type: 'image'
     asset: 'image://setup/Servant'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28904
+  # ../.source/TheCostofDisease_Eng_v10.cs:28904
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28905
+  # ../.source/TheCostofDisease_Eng_v10.cs:28905
   - type: 'text'
-    # ../en-US.restext:2345 | "All players participating..."
+    # ../en-US.restext:2344 | "All players participating..."
     value: 'restext://HuntFail1_011'

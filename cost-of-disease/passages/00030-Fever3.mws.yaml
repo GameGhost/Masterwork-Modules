@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4090
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:4090
 ---
 format: 'mws/0.4'
 passage_id: 'Fever3'
@@ -10,157 +10,157 @@ tags:
 - 'HUB'
 layout: 'hub_late'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4097
+# ../.source/TheCostofDisease_Eng_v10.cs:4097
 - type: 'assign'
   var: 'round'
   expr: '3'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4099
+# ../.source/TheCostofDisease_Eng_v10.cs:4099
 - type: 'conditional'
   if: '!tcodgen1'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4103
+  # ../.source/TheCostofDisease_Eng_v10.cs:4103
   - type: 'popup'
     layout: 'setup'
     # ../en-US.restext:343 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4107
+    # ../.source/TheCostofDisease_Eng_v10.cs:4107
     - type: 'image'
       asset: 'image://setup/VillageChronicleCover'
       style: 'setup-image'
     content:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4108
+    # ../.source/TheCostofDisease_Eng_v10.cs:4108
     - type: 'break'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4109
+    # ../.source/TheCostofDisease_Eng_v10.cs:4109
     - type: 'text'
       # ../en-US.restext:100 | "Turn to page "
       value: 'restext://Directive_TurnToPage'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4110
+    # ../.source/TheCostofDisease_Eng_v10.cs:4110
     - type: 'conditional'
       conditions:
       # ../en-US.restext:194 | "bank"
       - if: 'building == "restext://Location_Bank_Lower"'
         then:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4114
+        # ../.source/TheCostofDisease_Eng_v10.cs:4114
         - type: 'text'
-          # ../en-US.restext:587 | "**2**"
+          # ../en-US.restext:586 | "**2**"
           value: 'restext://Fever3_003'
       else:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4122
+      # ../.source/TheCostofDisease_Eng_v10.cs:4122
       - type: 'text'
-        # ../en-US.restext:586 | "**3**"
+        # ../en-US.restext:585 | "**3**"
         value: 'restext://Fever3_002'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4125
+    # ../.source/TheCostofDisease_Eng_v10.cs:4125
     - type: 'text'
-      # ../en-US.restext:588 | " of the Village Chronicle."
+      # ../en-US.restext:587 | " of the Village Chronicle."
       value: 'restext://Fever3_004'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4127
+    # ../.source/TheCostofDisease_Eng_v10.cs:4127
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4129
+    # ../.source/TheCostofDisease_Eng_v10.cs:4129
     - type: 'conditional'
       # ../en-US.restext:194 | "bank"
       if: 'building == "restext://Location_Bank_Lower"'
       then:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4131
+      # ../.source/TheCostofDisease_Eng_v10.cs:4131
       - type: 'text'
-        # ../en-US.restext:589 | "{mayor} gains 1VP."
+        # ../en-US.restext:588 | "{mayor} gains 1VP."
         value: 'restext://Fever3_005'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4136
+# ../.source/TheCostofDisease_Eng_v10.cs:4136
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4138
+# ../.source/TheCostofDisease_Eng_v10.cs:4138
 - type: 'conditional'
   conditions:
   # ../en-US.restext:194 | "bank"
   - if: 'building == "restext://Location_Bank_Lower"'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4144
+    # ../.source/TheCostofDisease_Eng_v10.cs:4144
     - type: 'section'
       # ../en-US.restext:133 | "**BANK**"
       title: 'restext://Heading_Bank'
       content:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4152
+      # ../.source/TheCostofDisease_Eng_v10.cs:4152
       - type: 'text'
-        # ../en-US.restext:591 | "A new Bank has been built..."
+        # ../en-US.restext:590 | "A new Bank has been built..."
         value: 'restext://Fever3_007'
   else:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4165
+  # ../.source/TheCostofDisease_Eng_v10.cs:4165
   - type: 'section'
     # ../en-US.restext:154 | "**LIBRARY**"
     title: 'restext://Heading_Library'
     content:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4173
+    # ../.source/TheCostofDisease_Eng_v10.cs:4173
     - type: 'text'
-      # ../en-US.restext:590 | "A new Library has been bu..."
+      # ../en-US.restext:589 | "A new Library has been bu..."
       value: 'restext://Fever3_006'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4185
+# ../.source/TheCostofDisease_Eng_v10.cs:4185
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4189
+# ../.source/TheCostofDisease_Eng_v10.cs:4189
 - type: 'section'
   # ../en-US.restext:135 | "**BUILD A HOSPITAL**"
   title: 'restext://Heading_BuildHospital'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4197
+  # ../.source/TheCostofDisease_Eng_v10.cs:4197
   - type: 'text'
     # ../en-US.restext:181 | "The church can no longer ..."
     value: 'restext://Hospital_ChurchExpansion_Rule'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4209
+  # ../.source/TheCostofDisease_Eng_v10.cs:4209
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4211
+  # ../.source/TheCostofDisease_Eng_v10.cs:4211
   - type: 'text'
     # ../en-US.restext:292 | "At the end of the Generat..."
     value: 'restext://Reward_MostHeartTokens_5VP'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4225
+# ../.source/TheCostofDisease_Eng_v10.cs:4225
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4227
+# ../.source/TheCostofDisease_Eng_v10.cs:4227
 - type: 'conditional'
   if: 'creepy4 == 0'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4231
+  # ../.source/TheCostofDisease_Eng_v10.cs:4231
   - type: 'section'
     # ../en-US.restext:132 | "{icon:storybook} **Attrac..."
     title: 'restext://Heading_AttractingAttention'
     content:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4240
+    # ../.source/TheCostofDisease_Eng_v10.cs:4240
     - type: 'text'
       # ../en-US.restext:280 | "If a player reaches the *..."
       value: 'restext://Resource_CreepyTrack_4thSpace_Lead'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4248
+    # ../.source/TheCostofDisease_Eng_v10.cs:4248
     - type: 'link'
       # ../en-US.restext:49 | "click here"
       label: 'restext://Click_Here_Plain'
       target: 'Gen1-CreepyTrack' # ./00177-Gen1-CreepyTrack.mws.yaml
       snapshot: true
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4253
+# ../.source/TheCostofDisease_Eng_v10.cs:4253
 - type: 'conditional'
   if: 'sane3 == 0'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4257
+  # ../.source/TheCostofDisease_Eng_v10.cs:4257
   - type: 'section'
     # ../en-US.restext:155 | "{icon:storybook} **The Ma..."
     title: 'restext://Heading_MarkOfGenius'
     content:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4266
+    # ../.source/TheCostofDisease_Eng_v10.cs:4266
     - type: 'text'
       # ../en-US.restext:288 | "If a player reaches the *..."
       value: 'restext://Resource_InsanityTrack_3rdSpace_Lead'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4274
+    # ../.source/TheCostofDisease_Eng_v10.cs:4274
     - type: 'link'
       # ../en-US.restext:48 | "click here."
       label: 'restext://Click_Here_Period'
       target: 'Gen1-SanityTrack' # ./00178-Gen1-SanityTrack.mws.yaml
       snapshot: true
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4277
+# ../.source/TheCostofDisease_Eng_v10.cs:4277
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4281
+# ../.source/TheCostofDisease_Eng_v10.cs:4281
 - type: 'section'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4290
+  # ../.source/TheCostofDisease_Eng_v10.cs:4290
   - type: 'popup'
     layout: 'end_of_round'
     # ../en-US.restext:42 | "Click here at the end of ..."
@@ -175,7 +175,7 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:592 | "The Late Years of the Fir..."
+      # ../en-US.restext:591 | "The Late Years of the Fir..."
       value: 'restext://Fever3_009'
     - type: 'break'
       style: 'paragraph'

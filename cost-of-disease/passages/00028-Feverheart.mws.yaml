@@ -1,22 +1,22 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3750
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:3750
 ---
 format: 'mws/0.4'
 passage_id: 'Feverheart'
-# ../en-US.restext:577 | "Legacy of Charity"
+# ../en-US.restext:576 | "Legacy of Charity"
 title: 'restext://Feverheart_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3758
+# ../.source/TheCostofDisease_Eng_v10.cs:3758
 - type: 'conditional'
   if: '!charitytotal_submitted'
   then:
   - type: 'popup'
     content:
     - type: 'text'
-      # ../en-US.restext:578 | "Count up all the heart to..."
+      # ../en-US.restext:577 | "Count up all the heart to..."
       value: 'restext://Feverheart_003'
     - type: 'input'
-      # ../en-US.restext:579 | "Feverheart"
+      # ../en-US.restext:578 | "Feverheart"
       label: 'restext://Feverheart_004'
       var: 'charitytotal'
     # ../en-US.restext:346 | "Continue"
@@ -27,18 +27,18 @@ nodes:
       expr: 'true'
     snapshot: true
     target: 'Feverheart' # ./00028-Feverheart.mws.yaml
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3769
+# ../.source/TheCostofDisease_Eng_v10.cs:3769
 - type: 'assign'
   var: 'charitytotal'
   expr: 'charitytotal'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3771
+# ../.source/TheCostofDisease_Eng_v10.cs:3771
 - type: 'text'
-  # ../en-US.restext:580 | "Now count up the {icon:s1..."
+  # ../en-US.restext:579 | "Now count up the {icon:s1..."
   value: 'restext://Feverheart_005'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3787
+# ../.source/TheCostofDisease_Eng_v10.cs:3787
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3789
+# ../.source/TheCostofDisease_Eng_v10.cs:3789
 - type: 'link'
   # ../en-US.restext:36 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'

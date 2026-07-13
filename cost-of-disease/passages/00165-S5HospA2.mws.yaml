@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19159
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:19159
 ---
 format: 'mws/0.4'
 passage_id: 'S5HospA2'
@@ -6,52 +6,52 @@ tags:
 - 'END'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19168
+# ../.source/TheCostofDisease_Eng_v10.cs:19168
 - type: 'conditional'
   conditions:
   # ../en-US.restext:31 | "yes"
   - if: 'uni == "restext://Choice_Yes_Lower"'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19172
+    # ../.source/TheCostofDisease_Eng_v10.cs:19172
     - type: 'text'
-      # ../en-US.restext:1469 | "**A Foundation for Science**"
+      # ../en-US.restext:1468 | "**A Foundation for Science**"
       value: 'restext://S5HospA2_004'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19174
+    # ../.source/TheCostofDisease_Eng_v10.cs:19174
     - type: 'break'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19177
+    # ../.source/TheCostofDisease_Eng_v10.cs:19177
     - type: 'text'
-      # ../en-US.restext:1470 | "**With the University bui..."
+      # ../en-US.restext:1469 | "**With the University bui..."
       value: 'restext://S5HospA2_005'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19180
+    # ../.source/TheCostofDisease_Eng_v10.cs:19180
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19182
+    # ../.source/TheCostofDisease_Eng_v10.cs:19182
     - type: 'link'
-      # ../en-US.restext:1471 | "Click to move to a more m..."
+      # ../en-US.restext:1470 | "Click to move to a more m..."
       label: 'restext://S5HospA2_006'
       target: 'UniversityIntro' # ./00014-UniversityIntro.mws.yaml
       snapshot: true
   else:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19189
+  # ../.source/TheCostofDisease_Eng_v10.cs:19189
   - type: 'text'
-    # ../en-US.restext:1466 | "**The Foundation Crumbles**"
+    # ../en-US.restext:1465 | "**The Foundation Crumbles**"
     value: 'restext://S5HospA2_001'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19191
+  # ../.source/TheCostofDisease_Eng_v10.cs:19191
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19194
+  # ../.source/TheCostofDisease_Eng_v10.cs:19194
   - type: 'text'
-    # ../en-US.restext:1467 | "**With the University unb..."
+    # ../en-US.restext:1466 | "**With the University unb..."
     value: 'restext://S5HospA2_002'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19199
+  # ../.source/TheCostofDisease_Eng_v10.cs:19199
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19201
+  # ../.source/TheCostofDisease_Eng_v10.cs:19201
   - type: 'link'
-    # ../en-US.restext:1468 | "Click to move to a more d..."
+    # ../en-US.restext:1467 | "Click to move to a more d..."
     label: 'restext://S5HospA2_003'
     target: 'RippedMasterwork' # ./00164-RippedMasterwork.mws.yaml
     snapshot: true
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:19204
+# ../.source/TheCostofDisease_Eng_v10.cs:19204
 - type: 'popup'
   layout: 'end_of_generation'
   # ../en-US.restext:345 | "Confirm"

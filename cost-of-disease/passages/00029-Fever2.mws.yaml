@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3951
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:3951
 ---
 format: 'mws/0.4'
 passage_id: 'Fever2'
@@ -10,84 +10,84 @@ tags:
 - 'HUB'
 layout: 'hub_middle'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3958
+# ../.source/TheCostofDisease_Eng_v10.cs:3958
 - type: 'assign'
   var: 'round'
   expr: '2'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3962
+# ../.source/TheCostofDisease_Eng_v10.cs:3962
 - type: 'section'
   # ../en-US.restext:135 | "**BUILD A HOSPITAL**"
   title: 'restext://Heading_BuildHospital'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3970
+  # ../.source/TheCostofDisease_Eng_v10.cs:3970
   - type: 'text'
     # ../en-US.restext:181 | "The church can no longer ..."
     value: 'restext://Hospital_ChurchExpansion_Rule'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3982
+  # ../.source/TheCostofDisease_Eng_v10.cs:3982
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3984
+  # ../.source/TheCostofDisease_Eng_v10.cs:3984
   - type: 'text'
     # ../en-US.restext:292 | "At the end of the Generat..."
     value: 'restext://Reward_MostHeartTokens_5VP'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3999
+# ../.source/TheCostofDisease_Eng_v10.cs:3999
 - type: 'assign'
   var: '_icon'
   expr: '"storybooktoken"'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4001
+# ../.source/TheCostofDisease_Eng_v10.cs:4001
 - type: 'conditional'
   if: 'creepy4 == 0'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4005
+  # ../.source/TheCostofDisease_Eng_v10.cs:4005
   - type: 'section'
     # ../en-US.restext:132 | "{icon:storybook} **Attrac..."
     title: 'restext://Heading_AttractingAttention'
     content:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4014
+    # ../.source/TheCostofDisease_Eng_v10.cs:4014
     - type: 'text'
       # ../en-US.restext:280 | "If a player reaches the *..."
       value: 'restext://Resource_CreepyTrack_4thSpace_Lead'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4022
+    # ../.source/TheCostofDisease_Eng_v10.cs:4022
     - type: 'link'
       # ../en-US.restext:49 | "click here"
       label: 'restext://Click_Here_Plain'
       target: 'Gen1-CreepyTrack' # ./00177-Gen1-CreepyTrack.mws.yaml
       snapshot: true
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4027
+# ../.source/TheCostofDisease_Eng_v10.cs:4027
 - type: 'conditional'
   if: 'sane3 == 0'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4031
+  # ../.source/TheCostofDisease_Eng_v10.cs:4031
   - type: 'section'
     # ../en-US.restext:155 | "{icon:storybook} **The Ma..."
     title: 'restext://Heading_MarkOfGenius'
     content:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4040
+    # ../.source/TheCostofDisease_Eng_v10.cs:4040
     - type: 'text'
       # ../en-US.restext:288 | "If a player reaches the *..."
       value: 'restext://Resource_InsanityTrack_3rdSpace_Lead'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4048
+    # ../.source/TheCostofDisease_Eng_v10.cs:4048
     - type: 'link'
       # ../en-US.restext:48 | "click here."
       label: 'restext://Click_Here_Period'
       target: 'Gen1-SanityTrack' # ./00178-Gen1-SanityTrack.mws.yaml
       snapshot: true
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4051
+# ../.source/TheCostofDisease_Eng_v10.cs:4051
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4055
+# ../.source/TheCostofDisease_Eng_v10.cs:4055
 - type: 'section'
   # ../en-US.restext:142 | "**Second round Event - El..."
   title: 'restext://Heading_ElectionSeason'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4063
+  # ../.source/TheCostofDisease_Eng_v10.cs:4063
   - type: 'text'
     # ../en-US.restext:108 | "Political pandering may r..."
     value: 'restext://Election_PanderingFlavor'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4065
+  # ../.source/TheCostofDisease_Eng_v10.cs:4065
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:4069
+  # ../.source/TheCostofDisease_Eng_v10.cs:4069
   - type: 'popup'
     layout: 'end_of_round'
     # ../en-US.restext:47 | "Click here at the end of ..."
@@ -102,7 +102,7 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:583 | "The Middle Years of the F..."
+      # ../en-US.restext:582 | "The Middle Years of the F..."
       value: 'restext://Fever2_005'
     - type: 'break'
       style: 'paragraph'

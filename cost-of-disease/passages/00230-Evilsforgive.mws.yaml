@@ -1,43 +1,43 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25443
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:25443
 ---
 format: 'mws/0.4'
 passage_id: 'Evilsforgive'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25445
+# ../.source/TheCostofDisease_Eng_v10.cs:25445
 - type: 'conditional'
   conditions:
   # ../en-US.restext:114 | "Order of St. Hubertus"
   - if: 'society == "restext://Faction_OrderOfStHubertus_Plain"'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25449
+    # ../.source/TheCostofDisease_Eng_v10.cs:25449
     - type: 'text'
-      # ../en-US.restext:2018 | "**Forgiveness**"
+      # ../en-US.restext:2017 | "**Forgiveness**"
       value: 'restext://Evilsforgive_008'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25451
+    # ../.source/TheCostofDisease_Eng_v10.cs:25451
     - type: 'break'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25452
+    # ../.source/TheCostofDisease_Eng_v10.cs:25452
     - type: 'text'
-      # ../en-US.restext:2019 | "The scientists' doubts we..."
+      # ../en-US.restext:2018 | "The scientists' doubts we..."
       value: 'restext://Evilsforgive_009'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25453
+    # ../.source/TheCostofDisease_Eng_v10.cs:25453
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25455
+    # ../.source/TheCostofDisease_Eng_v10.cs:25455
     - type: 'text'
-      # ../en-US.restext:2020 | "\"We want to shatter thos..."
+      # ../en-US.restext:2019 | "\"We want to shatter thos..."
       value: 'restext://Evilsforgive_010'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25456
+    # ../.source/TheCostofDisease_Eng_v10.cs:25456
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25458
+    # ../.source/TheCostofDisease_Eng_v10.cs:25458
     - type: 'text'
-      # ../en-US.restext:2021 | "As a token of this myth-s..."
+      # ../en-US.restext:2020 | "As a token of this myth-s..."
       value: 'restext://Evilsforgive_011'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25461
+    # ../.source/TheCostofDisease_Eng_v10.cs:25461
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25465
+    # ../.source/TheCostofDisease_Eng_v10.cs:25465
     - type: 'popup'
       layout: 'setup'
       # ../en-US.restext:36 | "Click to continue..."
@@ -47,61 +47,61 @@ nodes:
       okay: 'restext://UIButton_Close' # ./00212-EquitableValues.mws.yaml
       snapshot: true
       header:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25510
+      # ../.source/TheCostofDisease_Eng_v10.cs:25510
       - type: 'image'
         asset: 'image://setup/S1_MastersStudy'
         style: 'setup-image'
       content:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25511
+      # ../.source/TheCostofDisease_Eng_v10.cs:25511
       - type: 'break'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25512
+      # ../.source/TheCostofDisease_Eng_v10.cs:25512
       - type: 'text'
-        # ../en-US.restext:2022 | "Retrieve the **Master's S..."
+        # ../en-US.restext:2021 | "Retrieve the **Master's S..."
         value: 'restext://Evilsforgive_012'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25518
+      # ../.source/TheCostofDisease_Eng_v10.cs:25518
       - type: 'break'
         style: 'paragraph'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25522
+      # ../.source/TheCostofDisease_Eng_v10.cs:25522
       - type: 'text'
         # ../en-US.restext:137 | "**Choose:**"
         value: 'restext://Heading_ChooseColon'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25524
+      # ../.source/TheCostofDisease_Eng_v10.cs:25524
       - type: 'break'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25525
+      # ../.source/TheCostofDisease_Eng_v10.cs:25525
       - type: 'text'
-        # ../en-US.restext:2023 | "Starting with the player ..."
+        # ../en-US.restext:2022 | "Starting with the player ..."
         value: 'restext://Evilsforgive_013'
   else:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25470
+  # ../.source/TheCostofDisease_Eng_v10.cs:25470
   - type: 'conditional'
     conditions:
     - if: 'hcount == 0'
       then:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25472
+      # ../.source/TheCostofDisease_Eng_v10.cs:25472
       - type: 'goto'
         target: 'EquitableValues' # ./00212-EquitableValues.mws.yaml
     else:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25478
+    # ../.source/TheCostofDisease_Eng_v10.cs:25478
     - type: 'text'
-      # ../en-US.restext:2011 | "**Still Wary**"
+      # ../en-US.restext:2010 | "**Still Wary**"
       value: 'restext://Evilsforgive_001'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25480
+    # ../.source/TheCostofDisease_Eng_v10.cs:25480
     - type: 'break'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25481
+    # ../.source/TheCostofDisease_Eng_v10.cs:25481
     - type: 'text'
       # ../en-US.restext:243 | "In the evenings, the Frat..."
       value: 'restext://Narrative_FraternityRevelry'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25482
+    # ../.source/TheCostofDisease_Eng_v10.cs:25482
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25484
+    # ../.source/TheCostofDisease_Eng_v10.cs:25484
     - type: 'text'
-      # ../en-US.restext:2012 | "For the family members th..."
+      # ../en-US.restext:2011 | "For the family members th..."
       value: 'restext://Evilsforgive_002'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25487
+    # ../.source/TheCostofDisease_Eng_v10.cs:25487
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25491
+    # ../.source/TheCostofDisease_Eng_v10.cs:25491
     - type: 'popup'
       layout: 'setup'
       # ../en-US.restext:36 | "Click to continue..."
@@ -111,59 +111,59 @@ nodes:
       okay: 'restext://UIButton_Close' # ./00212-EquitableValues.mws.yaml
       snapshot: true
       header:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25557
+      # ../.source/TheCostofDisease_Eng_v10.cs:25557
       - type: 'image'
         asset: 'image://setup/Creepy_Icon'
         style: 'setup-image'
       content:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25558
+      # ../.source/TheCostofDisease_Eng_v10.cs:25558
       - type: 'break'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25559
+      # ../.source/TheCostofDisease_Eng_v10.cs:25559
       - type: 'conditional'
         # ../en-US.restext:116 | "wolves"
         if: 'allyA == "restext://Faction_Wolves_Lower"'
         then:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25561
+        # ../.source/TheCostofDisease_Eng_v10.cs:25561
         - type: 'text'
-          # ../en-US.restext:2013 | "{nameA} III **immediately..."
+          # ../en-US.restext:2012 | "{nameA} III **immediately..."
           value: 'restext://Evilsforgive_003'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25571
+      # ../.source/TheCostofDisease_Eng_v10.cs:25571
       - type: 'conditional'
         # ../en-US.restext:116 | "wolves"
         if: 'allyB == "restext://Faction_Wolves_Lower"'
         then:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25573
+        # ../.source/TheCostofDisease_Eng_v10.cs:25573
         - type: 'text'
-          # ../en-US.restext:2014 | "{nameB} III **immediately..."
+          # ../en-US.restext:2013 | "{nameB} III **immediately..."
           value: 'restext://Evilsforgive_004'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25583
+      # ../.source/TheCostofDisease_Eng_v10.cs:25583
       - type: 'conditional'
         # ../en-US.restext:116 | "wolves"
         if: 'allyC == "restext://Faction_Wolves_Lower"'
         then:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25585
+        # ../.source/TheCostofDisease_Eng_v10.cs:25585
         - type: 'text'
-          # ../en-US.restext:2015 | "{nameC} III **immediately..."
+          # ../en-US.restext:2014 | "{nameC} III **immediately..."
           value: 'restext://Evilsforgive_005'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25595
+      # ../.source/TheCostofDisease_Eng_v10.cs:25595
       - type: 'conditional'
         # ../en-US.restext:116 | "wolves"
         if: 'allyD == "restext://Faction_Wolves_Lower"'
         then:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25597
+        # ../.source/TheCostofDisease_Eng_v10.cs:25597
         - type: 'text'
-          # ../en-US.restext:2016 | "{nameD} III **immediately..."
+          # ../en-US.restext:2015 | "{nameD} III **immediately..."
           value: 'restext://Evilsforgive_006'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25607
+      # ../.source/TheCostofDisease_Eng_v10.cs:25607
       - type: 'conditional'
         # ../en-US.restext:116 | "wolves"
         if: 'allyE == "restext://Faction_Wolves_Lower"'
         then:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25609
+        # ../.source/TheCostofDisease_Eng_v10.cs:25609
         - type: 'text'
-          # ../en-US.restext:2017 | "{nameE} III **immediately..."
+          # ../en-US.restext:2016 | "{nameE} III **immediately..."
           value: 'restext://Evilsforgive_007'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25618
+      # ../.source/TheCostofDisease_Eng_v10.cs:25618
       - type: 'conditional'
         # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
         # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
@@ -172,7 +172,7 @@ nodes:
         # ../en-US.restext:116 | Faction_Wolves_Lower | "wolves"
         if: '!(allyA == "restext://Faction_Wolves_Lower" && allyB == "restext://Faction_Wolves_Lower" && allyC == "restext://Faction_Wolves_Lower" && allyD == "restext://Faction_Wolves_Lower" && allyE == "restext://Faction_Wolves_Lower")'
         then:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25620
+        # ../.source/TheCostofDisease_Eng_v10.cs:25620
         - type: 'text'
-          # ../en-US.restext:2013 | "{nameA} III **immediately..."
+          # ../en-US.restext:2012 | "{nameA} III **immediately..."
           value: 'restext://Evilsforgive_003'

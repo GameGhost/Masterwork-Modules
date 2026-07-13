@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14389
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:14389
 ---
 format: 'mws/0.4'
 passage_id: 'LycanEvil'
@@ -6,14 +6,14 @@ passage_id: 'LycanEvil'
 title: 'restext://Title_StrengthCanBeMine'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14396
+# ../.source/TheCostofDisease_Eng_v10.cs:14396
 - type: 'text'
-  # ../en-US.restext:1261 | "Their existence was prove..."
+  # ../en-US.restext:1260 | "Their existence was prove..."
   value: 'restext://LycanEvil_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14398
+# ../.source/TheCostofDisease_Eng_v10.cs:14398
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14402
+# ../.source/TheCostofDisease_Eng_v10.cs:14402
 - type: 'popup'
   layout: 'setup'
   # ../en-US.restext:36 | "Click to continue..."
@@ -23,14 +23,14 @@ nodes:
   okay: 'restext://UIButton_Close' # ./00357-WolvesSetupGen3.mws.yaml
   snapshot: true
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14417
+  # ../.source/TheCostofDisease_Eng_v10.cs:14417
   - type: 'image'
     asset: 'image://setup/S1_MWUpdateLycanthropic'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14418
+  # ../.source/TheCostofDisease_Eng_v10.cs:14418
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14419
+  # ../.source/TheCostofDisease_Eng_v10.cs:14419
   - type: 'text'
     # ../en-US.restext:95 | "Retrieve the **Lycanthrop..."
     value: 'restext://Directive_RetrieveLycanthropicStrengthCard'

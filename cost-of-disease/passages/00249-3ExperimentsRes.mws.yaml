@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26910
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:26910
 ---
 format: 'mws/0.4'
 passage_id: '3ExperimentsRes'
@@ -6,57 +6,57 @@ passage_id: '3ExperimentsRes'
 title: 'restext://Title_AdvancementsIn'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26918
+# ../.source/TheCostofDisease_Eng_v10.cs:26918
 - type: 'text'
-  # ../en-US.restext:2125 | "As the years ambled onwar..."
+  # ../en-US.restext:2124 | "As the years ambled onwar..."
   value: 'restext://_3ExperimentsRes_001'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26919
+# ../.source/TheCostofDisease_Eng_v10.cs:26919
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26921
+# ../.source/TheCostofDisease_Eng_v10.cs:26921
 - type: 'text'
-  # ../en-US.restext:2126 | "One such visitation occur..."
+  # ../en-US.restext:2125 | "One such visitation occur..."
   value: 'restext://_3ExperimentsRes_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26925
+# ../.source/TheCostofDisease_Eng_v10.cs:26925
 - type: 'switch'
   on: 'sci3'
   cases:
   # ../en-US.restext:118 | "Biology"
   - match: 'restext://Focus_Biology'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26927
+    # ../.source/TheCostofDisease_Eng_v10.cs:26927
     - type: 'text'
-      # ../en-US.restext:2127 | "display of colorful Chemi..."
+      # ../en-US.restext:2126 | "display of colorful Chemi..."
       value: 'restext://_3ExperimentsRes_003'
   # ../en-US.restext:121 | "Chemistry"
   - match: 'restext://Focus_Chemistry'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26932
+    # ../.source/TheCostofDisease_Eng_v10.cs:26932
     - type: 'text'
-      # ../en-US.restext:2128 | "labyrinthine weaving of r..."
+      # ../en-US.restext:2127 | "labyrinthine weaving of r..."
       value: 'restext://_3ExperimentsRes_004'
   # ../en-US.restext:124 | "Engineering"
   - match: 'restext://Focus_Engineering'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26937
+    # ../.source/TheCostofDisease_Eng_v10.cs:26937
     - type: 'text'
-      # ../en-US.restext:2129 | "vestibule filled with ele..."
+      # ../en-US.restext:2128 | "vestibule filled with ele..."
       value: 'restext://_3ExperimentsRes_005'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26940
+# ../.source/TheCostofDisease_Eng_v10.cs:26940
 - type: 'text'
-  # ../en-US.restext:2130 | " Certainly immense stride..."
+  # ../en-US.restext:2129 | " Certainly immense stride..."
   value: 'restext://_3ExperimentsRes_006'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26944
+# ../.source/TheCostofDisease_Eng_v10.cs:26944
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26946
+# ../.source/TheCostofDisease_Eng_v10.cs:26946
 - type: 'text'
-  # ../en-US.restext:2131 | "It was only natural that ..."
+  # ../en-US.restext:2130 | "It was only natural that ..."
   value: 'restext://_3ExperimentsRes_007'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26949
+# ../.source/TheCostofDisease_Eng_v10.cs:26949
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26953
+# ../.source/TheCostofDisease_Eng_v10.cs:26953
 - type: 'popup'
   layout: 'setup'
   # ../en-US.restext:36 | "Click to continue..."
@@ -66,18 +66,18 @@ nodes:
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26994
+  # ../.source/TheCostofDisease_Eng_v10.cs:26994
   - type: 'image'
     asset: 'image://setup/S1_MastersStudy'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26986
+  # ../.source/TheCostofDisease_Eng_v10.cs:26986
   - type: 'assign'
     var: 'sciadv'
     expr: '1'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26995
+  # ../.source/TheCostofDisease_Eng_v10.cs:26995
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:26998
+  # ../.source/TheCostofDisease_Eng_v10.cs:26998
   - type: 'text'
-    # ../en-US.restext:2132 | "**Retrieve the {sci3} Mas..."
+    # ../en-US.restext:2131 | "**Retrieve the {sci3} Mas..."
     value: 'restext://_3ExperimentsRes_008'

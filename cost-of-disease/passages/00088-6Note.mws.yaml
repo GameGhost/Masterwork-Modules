@@ -1,85 +1,85 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10034
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:10034
 ---
 format: 'mws/0.4'
 passage_id: '6Note'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10036
+# ../.source/TheCostofDisease_Eng_v10.cs:10036
 - type: 'text'
-  # ../en-US.restext:1029 | "Choose 35VP negative - la..."
+  # ../en-US.restext:1028 | "Choose 35VP negative - la..."
   value: 'restext://_6Note_001'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10037
+# ../.source/TheCostofDisease_Eng_v10.cs:10037
 - type: 'break'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10038
+# ../.source/TheCostofDisease_Eng_v10.cs:10038
 - type: 'text'
-  # ../en-US.restext:1030 | "Introduce Yellow Fever In..."
+  # ../en-US.restext:1029 | "Introduce Yellow Fever In..."
   value: 'restext://_6Note_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10039
+# ../.source/TheCostofDisease_Eng_v10.cs:10039
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10041
+# ../.source/TheCostofDisease_Eng_v10.cs:10041
 - type: 'text'
-  # ../en-US.restext:1031 | "Charity/Mayor? choose 3 S..."
+  # ../en-US.restext:1030 | "Charity/Mayor? choose 3 S..."
   value: 'restext://_6Note_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10042
+# ../.source/TheCostofDisease_Eng_v10.cs:10042
 - type: 'break'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10043
+# ../.source/TheCostofDisease_Eng_v10.cs:10043
 - type: 'text'
-  # ../en-US.restext:1032 | "End of Generation Science..."
+  # ../en-US.restext:1031 | "End of Generation Science..."
   value: 'restext://_6Note_004'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10044
+# ../.source/TheCostofDisease_Eng_v10.cs:10044
 - type: 'break'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10045
+# ../.source/TheCostofDisease_Eng_v10.cs:10045
 - type: 'text'
-  # ../en-US.restext:1033 | "1st Immortality token. In..."
+  # ../en-US.restext:1032 | "1st Immortality token. In..."
   value: 'restext://_6Note_005'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10046
+# ../.source/TheCostofDisease_Eng_v10.cs:10046
 - type: 'break'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10047
+# ../.source/TheCostofDisease_Eng_v10.cs:10047
 - type: 'text'
-  # ../en-US.restext:1034 | "2nd Symposium - If more, ..."
+  # ../en-US.restext:1033 | "2nd Symposium - If more, ..."
   value: 'restext://_6Note_006'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10049
+# ../.source/TheCostofDisease_Eng_v10.cs:10049
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10052
+# ../.source/TheCostofDisease_Eng_v10.cs:10052
 - type: 'text'
-  # ../en-US.restext:1035 | "Could potentially write a..."
+  # ../en-US.restext:1034 | "Could potentially write a..."
   value: 'restext://_6Note_007'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10054
+# ../.source/TheCostofDisease_Eng_v10.cs:10054
 - type: 'break'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10055
+# ../.source/TheCostofDisease_Eng_v10.cs:10055
 - type: 'conditional'
   # ../en-US.restext:118 | "Biology"
   if: 'sci3 == "restext://Focus_Biology"'
   then: []
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10058
+# ../.source/TheCostofDisease_Eng_v10.cs:10058
 - type: 'break'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10059
+# ../.source/TheCostofDisease_Eng_v10.cs:10059
 - type: 'conditional'
   # ../en-US.restext:121 | "Chemistry"
   if: 'sci3 == "restext://Focus_Chemistry"'
   then: []
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10062
+# ../.source/TheCostofDisease_Eng_v10.cs:10062
 - type: 'break'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10063
+# ../.source/TheCostofDisease_Eng_v10.cs:10063
 - type: 'conditional'
   # ../en-US.restext:124 | "Engineering"
   if: 'sci3 == "restext://Focus_Engineering"'
   then: []
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10066
+# ../.source/TheCostofDisease_Eng_v10.cs:10066
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10068
+# ../.source/TheCostofDisease_Eng_v10.cs:10068
 - type: 'switch'
   on: 'sci3'
   cases:
   # ../en-US.restext:118 | "Biology"
   - match: 'restext://Focus_Biology'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10070
+    # ../.source/TheCostofDisease_Eng_v10.cs:10070
     - type: 'text'
-      # ../en-US.restext:1036 | "Within minutes, a pool of..."
+      # ../en-US.restext:1035 | "Within minutes, a pool of..."
       value: 'restext://_6Note_008'
   # ../en-US.restext:121 | "Chemistry"
   - match: 'restext://Focus_Chemistry'
@@ -87,89 +87,89 @@ nodes:
   # ../en-US.restext:124 | "Engineering"
   - match: 'restext://Focus_Engineering'
     nodes: []
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10078
+# ../.source/TheCostofDisease_Eng_v10.cs:10078
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10081
+# ../.source/TheCostofDisease_Eng_v10.cs:10081
 - type: 'text'
-  # ../en-US.restext:1037 | "NOTE: Do not have a thing..."
+  # ../en-US.restext:1036 | "NOTE: Do not have a thing..."
   value: 'restext://_6Note_009'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10082
+# ../.source/TheCostofDisease_Eng_v10.cs:10082
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10085
+# ../.source/TheCostofDisease_Eng_v10.cs:10085
 - type: 'text'
-  # ../en-US.restext:1038 | "Replace Stasis Chamber to..."
+  # ../en-US.restext:1037 | "Replace Stasis Chamber to..."
   value: 'restext://_6Note_010'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10086
+# ../.source/TheCostofDisease_Eng_v10.cs:10086
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10088
+# ../.source/TheCostofDisease_Eng_v10.cs:10088
 - type: 'text'
-  # ../en-US.restext:1039 | "Also, now that this side ..."
+  # ../en-US.restext:1038 | "Also, now that this side ..."
   value: 'restext://_6Note_011'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10090
+# ../.source/TheCostofDisease_Eng_v10.cs:10090
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10107
+# ../.source/TheCostofDisease_Eng_v10.cs:10107
 - type: 'text'
-  # ../en-US.restext:1040 | "Scientific \"biological i..."
+  # ../en-US.restext:1039 | "Scientific \"biological i..."
   value: 'restext://_6Note_012'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10108
+# ../.source/TheCostofDisease_Eng_v10.cs:10108
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10111
+# ../.source/TheCostofDisease_Eng_v10.cs:10111
 - type: 'text'
-  # ../en-US.restext:1041 | "WHO WANTS TO LIVE FOREVER"
+  # ../en-US.restext:1040 | "WHO WANTS TO LIVE FOREVER"
   value: 'restext://_6Note_013'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10112
+# ../.source/TheCostofDisease_Eng_v10.cs:10112
 - type: 'break'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10113
+# ../.source/TheCostofDisease_Eng_v10.cs:10113
 - type: 'text'
-  # ../en-US.restext:1042 | "Ways to become Immortal:"
+  # ../en-US.restext:1041 | "Ways to become Immortal:"
   value: 'restext://_6Note_014'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10114
+# ../.source/TheCostofDisease_Eng_v10.cs:10114
 - type: 'break'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10115
+# ../.source/TheCostofDisease_Eng_v10.cs:10115
 - type: 'text'
-  # ../en-US.restext:1043 | "Biology -"
+  # ../en-US.restext:1042 | "Biology -"
   value: 'restext://_6Note_015'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10116
+# ../.source/TheCostofDisease_Eng_v10.cs:10116
 - type: 'break'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10117
+# ../.source/TheCostofDisease_Eng_v10.cs:10117
 - type: 'text'
-  # ../en-US.restext:1044 | "Chemistry -"
+  # ../en-US.restext:1043 | "Chemistry -"
   value: 'restext://_6Note_016'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10118
+# ../.source/TheCostofDisease_Eng_v10.cs:10118
 - type: 'break'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10119
+# ../.source/TheCostofDisease_Eng_v10.cs:10119
 - type: 'text'
-  # ../en-US.restext:1045 | "Engineering -"
+  # ../en-US.restext:1044 | "Engineering -"
   value: 'restext://_6Note_017'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10120
+# ../.source/TheCostofDisease_Eng_v10.cs:10120
 - type: 'break'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10121
+# ../.source/TheCostofDisease_Eng_v10.cs:10121
 - type: 'text'
-  # ../en-US.restext:1046 | "Occult -"
+  # ../en-US.restext:1045 | "Occult -"
   value: 'restext://_6Note_018'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10122
+# ../.source/TheCostofDisease_Eng_v10.cs:10122
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10124
+# ../.source/TheCostofDisease_Eng_v10.cs:10124
 - type: 'text'
-  # ../en-US.restext:1047 | "Put a Storybook token on ..."
+  # ../en-US.restext:1046 | "Put a Storybook token on ..."
   value: 'restext://_6Note_019'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10126
+# ../.source/TheCostofDisease_Eng_v10.cs:10126
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10128
+# ../.source/TheCostofDisease_Eng_v10.cs:10128
 - type: 'text'
-  # ../en-US.restext:1048 | "Gift of immortality is of..."
+  # ../en-US.restext:1047 | "Gift of immortality is of..."
   value: 'restext://_6Note_020'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10130
+# ../.source/TheCostofDisease_Eng_v10.cs:10130
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10134
+# ../.source/TheCostofDisease_Eng_v10.cs:10134
 - type: 'text'
-  # ../en-US.restext:1049 | "Maybe move up the Panacea..."
+  # ../en-US.restext:1048 | "Maybe move up the Panacea..."
   value: 'restext://_6Note_021'

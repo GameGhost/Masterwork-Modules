@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2482
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:2482
 ---
 format: 'mws/0.4'
 passage_id: 'S5Fate1'
@@ -8,7 +8,7 @@ tags:
 - 'END'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2491
+# ../.source/TheCostofDisease_Eng_v10.cs:2491
 - type: 'popup'
   layout: 'end_of_generation'
   # ../en-US.restext:345 | "Confirm"
@@ -20,44 +20,44 @@ nodes:
   - type: 'let'
     var: 'generation'
     expr: '3'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2499
+# ../.source/TheCostofDisease_Eng_v10.cs:2499
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2501
+# ../.source/TheCostofDisease_Eng_v10.cs:2501
 - type: 'text'
   # ../en-US.restext:429 | "The village of {townname}..."
   value: 'restext://S5Fate1_004'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2505
+# ../.source/TheCostofDisease_Eng_v10.cs:2505
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2507
+# ../.source/TheCostofDisease_Eng_v10.cs:2507
 - type: 'conditional'
   conditions:
   # ../en-US.restext:194 | "bank"
   - if: 'building == "restext://Location_Bank_Lower"'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2509
+    # ../.source/TheCostofDisease_Eng_v10.cs:2509
     - type: 'text'
       # ../en-US.restext:431 | "With additional financial..."
       value: 'restext://S5Fate1_007'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2515
+    # ../.source/TheCostofDisease_Eng_v10.cs:2515
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2517
+    # ../.source/TheCostofDisease_Eng_v10.cs:2517
     - type: 'link'
       # ../en-US.restext:35 | "Click here to continue..."
       label: 'restext://Click_ContinueEllipsis_B'
       target: 'Hospitalintro' # ./00012-Hospitalintro.mws.yaml
       snapshot: true
   else:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2522
+  # ../.source/TheCostofDisease_Eng_v10.cs:2522
   - type: 'text'
     # ../en-US.restext:430 | "The addition of a **Libra..."
     value: 'restext://S5Fate1_005'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2528
+  # ../.source/TheCostofDisease_Eng_v10.cs:2528
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:2530
+  # ../.source/TheCostofDisease_Eng_v10.cs:2530
   - type: 'link'
     # ../en-US.restext:35 | "Click here to continue..."
     label: 'restext://Click_ContinueEllipsis_B'

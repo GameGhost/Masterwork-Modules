@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9041
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:9041
 ---
 format: 'mws/0.4'
 passage_id: 'NameEntryA'
@@ -6,42 +6,42 @@ tags:
 - 'ck'
 layout: 'hub'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9043
+# ../.source/TheCostofDisease_Eng_v10.cs:9043
 - type: 'assign'
   var: 'nameA'
   expr: 'global:nameA'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9044
+# ../.source/TheCostofDisease_Eng_v10.cs:9044
 - type: 'assign'
   var: 'players'
   expr: '1'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9048
+# ../.source/TheCostofDisease_Eng_v10.cs:9048
 - type: 'section'
   # ../en-US.restext:238 | "ERROR!"
   title: 'restext://Narrative_ErrorExclaim'
   content: []
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9050
+# ../.source/TheCostofDisease_Eng_v10.cs:9050
 - type: 'text'
   # ../en-US.restext:274 | "Welcome to _My Father's Work_,"
   value: 'restext://Narrative_WelcomeToMyFathersWork'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9056
+# ../.source/TheCostofDisease_Eng_v10.cs:9056
 - type: 'break'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9057
+# ../.source/TheCostofDisease_Eng_v10.cs:9057
 - type: 'text'
-  # ../en-US.restext:919 | "{nameA}."
+  # ../en-US.restext:918 | "{nameA}."
   value: 'restext://NameEntryA_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9059
+# ../.source/TheCostofDisease_Eng_v10.cs:9059
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9061
+# ../.source/TheCostofDisease_Eng_v10.cs:9061
 - type: 'text'
-  # ../en-US.restext:920 | "Our warmest regards."
+  # ../en-US.restext:919 | "Our warmest regards."
   value: 'restext://NameEntryA_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9062
+# ../.source/TheCostofDisease_Eng_v10.cs:9062
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9067
+# ../.source/TheCostofDisease_Eng_v10.cs:9067
 - type: 'link'
-  # ../en-US.restext:921 | "Click to Continue"
+  # ../en-US.restext:920 | "Click to Continue"
   label: 'restext://NameEntryA_004'
   target: 'NameEntryB' # ./00077-NameEntryB.mws.yaml
   snapshot: true

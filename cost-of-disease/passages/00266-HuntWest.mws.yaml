@@ -1,24 +1,24 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28405
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:28405
 ---
 format: 'mws/0.4'
 passage_id: 'HuntWest'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28407
+# ../.source/TheCostofDisease_Eng_v10.cs:28407
 - type: 'text'
-  # ../en-US.restext:2272 | "The Hunting party explore..."
+  # ../en-US.restext:2271 | "The Hunting party explore..."
   value: 'restext://HuntWest_001'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28408
+# ../.source/TheCostofDisease_Eng_v10.cs:28408
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28410
+# ../.source/TheCostofDisease_Eng_v10.cs:28410
 - type: 'conditional'
   if: 'HuntWestnextPsg == "" || HuntWestnextPsg == 0'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28412
+  # ../.source/TheCostofDisease_Eng_v10.cs:28412
   - type: 'assign'
     var: 'HuntWestnextPsg'
     expr: '["Golem", "Manticore"].shuffled("HuntWest_0")[0]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28414
+# ../.source/TheCostofDisease_Eng_v10.cs:28414
 - type: 'include_passage'
   target: '${HuntWestnextPsg}'

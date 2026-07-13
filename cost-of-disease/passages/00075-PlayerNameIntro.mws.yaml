@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8996
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:8996
 ---
 format: 'mws/0.4'
 passage_id: 'PlayerNameIntro'
@@ -6,53 +6,53 @@ tags:
 - 'ck'
 layout: 'hub'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8998
+# ../.source/TheCostofDisease_Eng_v10.cs:8998
 - type: 'switch'
   on: 'players'
   cases:
   - match: 2
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9000
+    # ../.source/TheCostofDisease_Eng_v10.cs:9000
     - type: 'assign'
       var: 'playtxt'
       # ../en-US.restext:278 | "two"
       expr: '"restext://Number_Two_Lower"'
   - match: 3
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9004
+    # ../.source/TheCostofDisease_Eng_v10.cs:9004
     - type: 'assign'
       var: 'playtxt'
       # ../en-US.restext:277 | "three"
       expr: '"restext://Number_Three_Lower"'
   - match: 4
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9008
+    # ../.source/TheCostofDisease_Eng_v10.cs:9008
     - type: 'assign'
       var: 'playtxt'
       # ../en-US.restext:276 | "four"
       expr: '"restext://Number_Four_Lower"'
   - match: 5
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9012
+    # ../.source/TheCostofDisease_Eng_v10.cs:9012
     - type: 'assign'
       var: 'playtxt'
       # ../en-US.restext:275 | "five"
       expr: '"restext://Number_Five_Lower"'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9014
+# ../.source/TheCostofDisease_Eng_v10.cs:9014
 - type: 'text'
-  # ../en-US.restext:915 | "As siblings of an influen..."
+  # ../en-US.restext:914 | "As siblings of an influen..."
   value: 'restext://PlayerNameIntro_005'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9021
+# ../.source/TheCostofDisease_Eng_v10.cs:9021
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9023
+# ../.source/TheCostofDisease_Eng_v10.cs:9023
 - type: 'text'
-  # ../en-US.restext:916 | "Before we begin, let us m..."
+  # ../en-US.restext:915 | "Before we begin, let us m..."
   value: 'restext://PlayerNameIntro_006'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9025
+# ../.source/TheCostofDisease_Eng_v10.cs:9025
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9027
+# ../.source/TheCostofDisease_Eng_v10.cs:9027
 - type: 'link'
   # ../en-US.restext:36 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'

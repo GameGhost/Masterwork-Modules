@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9224
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:9224
 ---
 format: 'mws/0.4'
 passage_id: 'NameEntryE'
@@ -7,40 +7,40 @@ tags:
 - 'ck'
 layout: 'hub'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9226
+# ../.source/TheCostofDisease_Eng_v10.cs:9226
 - type: 'assign'
   var: 'nameE'
   expr: 'global:nameE'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9227
+# ../.source/TheCostofDisease_Eng_v10.cs:9227
 - type: 'assign'
   var: 'players'
   expr: '5'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9231
+# ../.source/TheCostofDisease_Eng_v10.cs:9231
 - type: 'section'
   # ../en-US.restext:238 | "ERROR!"
   title: 'restext://Narrative_ErrorExclaim'
   content: []
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9233
+# ../.source/TheCostofDisease_Eng_v10.cs:9233
 - type: 'text'
   # ../en-US.restext:274 | "Welcome to _My Father's Work_,"
   value: 'restext://Narrative_WelcomeToMyFathersWork'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9239
+# ../.source/TheCostofDisease_Eng_v10.cs:9239
 - type: 'break'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9240
+# ../.source/TheCostofDisease_Eng_v10.cs:9240
 - type: 'text'
-  # ../en-US.restext:935 | "{nameE}."
+  # ../en-US.restext:934 | "{nameE}."
   value: 'restext://NameEntryE_001'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9242
+# ../.source/TheCostofDisease_Eng_v10.cs:9242
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9244
+# ../.source/TheCostofDisease_Eng_v10.cs:9244
 - type: 'text'
   # ../en-US.restext:251 | "Be sure to leave your mar..."
   value: 'restext://Narrative_LeaveYourMark'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9245
+# ../.source/TheCostofDisease_Eng_v10.cs:9245
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9250
+# ../.source/TheCostofDisease_Eng_v10.cs:9250
 - type: 'link'
   # ../en-US.restext:38 | "Click to Continue..."
   label: 'restext://Click_ContinueEllipsis_Title'

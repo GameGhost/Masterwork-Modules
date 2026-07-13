@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5572
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:5572
 ---
 format: 'mws/0.4'
 passage_id: 'University2'
@@ -10,54 +10,54 @@ tags:
 - 'HUB'
 layout: 'hub_middle'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5579
+# ../.source/TheCostofDisease_Eng_v10.cs:5579
 - type: 'assign'
   var: 'round'
   expr: '20'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5584
+# ../.source/TheCostofDisease_Eng_v10.cs:5584
 - type: 'section'
-  # ../en-US.restext:642 | "**The Ultimate Disease**"
+  # ../en-US.restext:641 | "**The Ultimate Disease**"
   title: 'restext://University2_002'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5592
+  # ../.source/TheCostofDisease_Eng_v10.cs:5592
   - type: 'text'
-    # ../en-US.restext:643 | "At the end of this round,..."
+    # ../en-US.restext:642 | "At the end of this round,..."
     value: 'restext://University2_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5600
+# ../.source/TheCostofDisease_Eng_v10.cs:5600
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5604
+# ../.source/TheCostofDisease_Eng_v10.cs:5604
 - type: 'section'
   # ../en-US.restext:162 | "**Nobel Prize in Medicine**"
   title: 'restext://Heading_NobelPrizeInMedicine'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5612
+  # ../.source/TheCostofDisease_Eng_v10.cs:5612
   - type: 'text'
     # ../en-US.restext:272 | "The scientific world has ..."
     value: 'restext://Narrative_ScientificWorldNotices'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5620
+  # ../.source/TheCostofDisease_Eng_v10.cs:5620
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5622
+  # ../.source/TheCostofDisease_Eng_v10.cs:5622
   - type: 'text'
     # ../en-US.restext:291 | "At the End of the Generat..."
     value: 'restext://Reward_LeastCreepy_NobelPrize_Lose7VP'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5635
+# ../.source/TheCostofDisease_Eng_v10.cs:5635
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5639
+# ../.source/TheCostofDisease_Eng_v10.cs:5639
 - type: 'section'
   # ../en-US.restext:164 | "**Perfect Mental Balance**"
   title: 'restext://Heading_PerfectMentalBalance'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5647
+  # ../.source/TheCostofDisease_Eng_v10.cs:5647
   - type: 'text'
     # ../en-US.restext:290 | "At the end of the Generat..."
     value: 'restext://Reward_InsanityTrackSpace_5VP'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5659
+  # ../.source/TheCostofDisease_Eng_v10.cs:5659
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:5663
+  # ../.source/TheCostofDisease_Eng_v10.cs:5663
   - type: 'popup'
     layout: 'end_of_round'
     # ../en-US.restext:47 | "Click here at the end of ..."

@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9372
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:9372
 ---
 format: 'mws/0.4'
 passage_id: 'ProsperityHunterIntro'
@@ -10,56 +10,56 @@ tags:
 - 'INTRO'
 layout: 'introduction'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9383
+# ../.source/TheCostofDisease_Eng_v10.cs:9383
 - type: 'text'
   # ../en-US.restext:240 | "The disease had revealed ..."
   value: 'restext://Narrative_FraternityOrigin_DeeperEvil'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9384
+# ../.source/TheCostofDisease_Eng_v10.cs:9384
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9386
+# ../.source/TheCostofDisease_Eng_v10.cs:9386
 - type: 'text'
   # ../en-US.restext:241 | "That was until the Frater..."
   value: 'restext://Narrative_FraternityOrigin_Emergence'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9387
+# ../.source/TheCostofDisease_Eng_v10.cs:9387
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9389
+# ../.source/TheCostofDisease_Eng_v10.cs:9389
 - type: 'text'
   # ../en-US.restext:242 | "Their stated goal: to sla..."
   value: 'restext://Narrative_FraternityOrigin_StatedGoal'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9390
+# ../.source/TheCostofDisease_Eng_v10.cs:9390
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9392
+# ../.source/TheCostofDisease_Eng_v10.cs:9392
 - type: 'text'
-  # ../en-US.restext:952 | "While they did not requir..."
+  # ../en-US.restext:951 | "While they did not requir..."
   value: 'restext://ProsperityHunterIntro_005'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9393
+# ../.source/TheCostofDisease_Eng_v10.cs:9393
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9395
+# ../.source/TheCostofDisease_Eng_v10.cs:9395
 - type: 'text'
-  # ../en-US.restext:953 | "Perhaps driven by a sense..."
+  # ../en-US.restext:952 | "Perhaps driven by a sense..."
   value: 'restext://ProsperityHunterIntro_006'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9396
+# ../.source/TheCostofDisease_Eng_v10.cs:9396
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9398
+# ../.source/TheCostofDisease_Eng_v10.cs:9398
 - type: 'link'
   # ../en-US.restext:36 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'HuntersHUBcode' # ./00262-HuntersHUBcode.mws.yaml
   snapshot: true
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9401
+# ../.source/TheCostofDisease_Eng_v10.cs:9401
 - type: 'assign'
   var: 'prosp'
   expr: '1'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9402
+# ../.source/TheCostofDisease_Eng_v10.cs:9402
 - type: 'assign'
   var: 'huntcount'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:9403
+# ../.source/TheCostofDisease_Eng_v10.cs:9403
 - type: 'assign'
   var: 'gen3pg'
   expr: '0'

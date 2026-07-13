@@ -1,19 +1,19 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7974
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:7974
 ---
 format: 'mws/0.4'
 passage_id: 'FeverServe2'
-# ../en-US.restext:851 | "Daughters Entrusted"
+# ../en-US.restext:850 | "Daughters Entrusted"
 title: 'restext://FeverServe2_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7981
+# ../.source/TheCostofDisease_Eng_v10.cs:7981
 - type: 'text'
-  # ../en-US.restext:852 | "During the heat of summer..."
+  # ../en-US.restext:851 | "During the heat of summer..."
   value: 'restext://FeverServe2_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7982
+# ../.source/TheCostofDisease_Eng_v10.cs:7982
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:7986
+# ../.source/TheCostofDisease_Eng_v10.cs:7986
 - type: 'popup'
   layout: 'setup'
   # ../en-US.restext:36 | "Click to continue..."
@@ -23,15 +23,15 @@ nodes:
   okay: 'restext://UIButton_Close' # ./00030-Fever3.mws.yaml
   snapshot: true
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8000
+  # ../.source/TheCostofDisease_Eng_v10.cs:8000
   - type: 'image'
     asset: 'image://setup/GainServantFromLost'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8001
+  # ../.source/TheCostofDisease_Eng_v10.cs:8001
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8003
+  # ../.source/TheCostofDisease_Eng_v10.cs:8003
   - type: 'text'
-    # ../en-US.restext:853 | "Each player **gains a SER..."
+    # ../en-US.restext:852 | "Each player **gains a SER..."
     value: 'restext://FeverServe2_003'

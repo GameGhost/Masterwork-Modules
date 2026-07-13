@@ -1,69 +1,69 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21243
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:21243
 ---
 format: 'mws/0.4'
 passage_id: 'Gen1-SanityTrackRes'
-# ../en-US.restext:1630 | "A Letter From an Old Friend"
+# ../en-US.restext:1629 | "A Letter From an Old Friend"
 title: 'restext://Gen1_SanityTrackRes_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21252
+# ../.source/TheCostofDisease_Eng_v10.cs:21252
 - type: 'text'
-  # ../en-US.restext:1631 | "**Carefully hand this sto..."
+  # ../en-US.restext:1630 | "**Carefully hand this sto..."
   value: 'restext://Gen1_SanityTrackRes_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21257
+# ../.source/TheCostofDisease_Eng_v10.cs:21257
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21262
+# ../.source/TheCostofDisease_Eng_v10.cs:21262
 - type: 'popup'
   # ../en-US.restext:53 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   snapshot: true
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21270
+  # ../.source/TheCostofDisease_Eng_v10.cs:21270
   - type: 'text'
-    # ../en-US.restext:1632 | "\"You shouldn't drive you..."
+    # ../en-US.restext:1631 | "\"You shouldn't drive you..."
     value: 'restext://Gen1_SanityTrackRes_003'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21273
+  # ../.source/TheCostofDisease_Eng_v10.cs:21273
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21275
+  # ../.source/TheCostofDisease_Eng_v10.cs:21275
   - type: 'text'
-    # ../en-US.restext:1633 | "While the nature of their..."
+    # ../en-US.restext:1632 | "While the nature of their..."
     value: 'restext://Gen1_SanityTrackRes_004'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21278
+  # ../.source/TheCostofDisease_Eng_v10.cs:21278
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21280
+  # ../.source/TheCostofDisease_Eng_v10.cs:21280
   - type: 'text'
-    # ../en-US.restext:1634 | "While this time away coul..."
+    # ../en-US.restext:1633 | "While this time away coul..."
     value: 'restext://Gen1_SanityTrackRes_005'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21294
+  # ../.source/TheCostofDisease_Eng_v10.cs:21294
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21298
+  # ../.source/TheCostofDisease_Eng_v10.cs:21298
   - type: 'text'
     # ../en-US.restext:138 | "**CHOOSE:**"
     value: 'restext://Heading_ChooseColon_Caps'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21300
+  # ../.source/TheCostofDisease_Eng_v10.cs:21300
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21302
+  # ../.source/TheCostofDisease_Eng_v10.cs:21302
   - type: 'link'
-    # ../en-US.restext:1635 | "Accept the offer and pay ..."
+    # ../en-US.restext:1634 | "Accept the offer and pay ..."
     label: 'restext://Gen1_SanityTrackRes_006'
     target: 'Gen1SanityYes' # ./00298-Gen1SanityYes.mws.yaml
     snapshot: true
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21303
+  # ../.source/TheCostofDisease_Eng_v10.cs:21303
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21304
+  # ../.source/TheCostofDisease_Eng_v10.cs:21304
   - type: 'text'
     # ../en-US.restext:349 | "OR"
     value: 'restext://UIButton_Or'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21305
+  # ../.source/TheCostofDisease_Eng_v10.cs:21305
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21306
+  # ../.source/TheCostofDisease_Eng_v10.cs:21306
   - type: 'link'
-    # ../en-US.restext:1636 | "Refuse. (Avoid the penalt..."
+    # ../en-US.restext:1635 | "Refuse. (Avoid the penalt..."
     label: 'restext://Gen1_SanityTrackRes_007'
     target: 'Gen1SanityNo' # ./00299-Gen1SanityNo.mws.yaml
     snapshot: true

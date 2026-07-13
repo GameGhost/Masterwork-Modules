@@ -1,65 +1,65 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18572
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:18572
 ---
 format: 'mws/0.4'
 passage_id: 'EradicateDisease'
-# ../en-US.restext:1419 | "The Cure"
+# ../en-US.restext:1418 | "The Cure"
 title: 'restext://EradicateDisease_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18580
+# ../.source/TheCostofDisease_Eng_v10.cs:18580
 - type: 'text'
-  # ../en-US.restext:1420 | "They dined together on we..."
+  # ../en-US.restext:1419 | "They dined together on we..."
   value: 'restext://EradicateDisease_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18581
+# ../.source/TheCostofDisease_Eng_v10.cs:18581
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18583
+# ../.source/TheCostofDisease_Eng_v10.cs:18583
 - type: 'text'
-  # ../en-US.restext:1421 | "While they agreed that for a "
+  # ../en-US.restext:1420 | "While they agreed that for a "
   value: 'restext://EradicateDisease_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18584
+# ../.source/TheCostofDisease_Eng_v10.cs:18584
 - type: 'switch'
   on: 'players'
   cases:
   - match: 2
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18586
+    # ../.source/TheCostofDisease_Eng_v10.cs:18586
     - type: 'text'
-      # ../en-US.restext:1422 | "duo"
+      # ../en-US.restext:1421 | "duo"
       value: 'restext://EradicateDisease_004'
   - match: 3
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18590
+    # ../.source/TheCostofDisease_Eng_v10.cs:18590
     - type: 'text'
-      # ../en-US.restext:1423 | "trio"
+      # ../en-US.restext:1422 | "trio"
       value: 'restext://EradicateDisease_005'
   - match: 4
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18594
+    # ../.source/TheCostofDisease_Eng_v10.cs:18594
     - type: 'text'
-      # ../en-US.restext:1424 | "quartet"
+      # ../en-US.restext:1423 | "quartet"
       value: 'restext://EradicateDisease_006'
   - match: 5
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18598
+    # ../.source/TheCostofDisease_Eng_v10.cs:18598
     - type: 'text'
-      # ../en-US.restext:1425 | "quintet"
+      # ../en-US.restext:1424 | "quintet"
       value: 'restext://EradicateDisease_007'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18600
+# ../.source/TheCostofDisease_Eng_v10.cs:18600
 - type: 'text'
-  # ../en-US.restext:1426 | " of respectable, infamous..."
+  # ../en-US.restext:1425 | " of respectable, infamous..."
   value: 'restext://EradicateDisease_008'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18602
+# ../.source/TheCostofDisease_Eng_v10.cs:18602
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18604
+# ../.source/TheCostofDisease_Eng_v10.cs:18604
 - type: 'text'
-  # ../en-US.restext:1427 | "They decided to leave the..."
+  # ../en-US.restext:1426 | "They decided to leave the..."
   value: 'restext://EradicateDisease_009'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18606
+# ../.source/TheCostofDisease_Eng_v10.cs:18606
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18610
+# ../.source/TheCostofDisease_Eng_v10.cs:18610
 - type: 'popup'
   layout: 'setup'
   # ../en-US.restext:36 | "Click to continue..."
@@ -69,14 +69,14 @@ nodes:
   okay: 'restext://UIButton_Close' # ./00124-ChooseScience.mws.yaml
   snapshot: true
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18626
+  # ../.source/TheCostofDisease_Eng_v10.cs:18626
   - type: 'image'
     asset: 'image://setup/S1_YellowFeverInnoculation'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18627
+  # ../.source/TheCostofDisease_Eng_v10.cs:18627
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18628
+  # ../.source/TheCostofDisease_Eng_v10.cs:18628
   - type: 'text'
-    # ../en-US.restext:1428 | "Place the **Yellow Fever ..."
+    # ../en-US.restext:1427 | "Place the **Yellow Fever ..."
     value: 'restext://EradicateDisease_010'

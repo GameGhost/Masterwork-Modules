@@ -1,44 +1,44 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24766
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:24766
 ---
 format: 'mws/0.4'
 passage_id: 'Diseases2'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24768
+# ../.source/TheCostofDisease_Eng_v10.cs:24768
 - type: 'conditional'
   if: 'Diseases2nextPsg == "" || Diseases2nextPsg == 0'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24769
+  # ../.source/TheCostofDisease_Eng_v10.cs:24769
   - type: 'assign'
     var: 'Diseases2nextPsg'
     expr: 'rand_between(1, 2, "Diseases2_0")'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24770
+# ../.source/TheCostofDisease_Eng_v10.cs:24770
 - type: 'assign'
   var: 'disease2'
   expr: 'Diseases2nextPsg'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24771
+# ../.source/TheCostofDisease_Eng_v10.cs:24771
 - type: 'assign'
   var: 'devpage'
   expr: '0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24772
+# ../.source/TheCostofDisease_Eng_v10.cs:24772
 - type: 'conditional'
   conditions:
   - if: 'disease2 == 1'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24776
+    # ../.source/TheCostofDisease_Eng_v10.cs:24776
     - type: 'text'
-      # ../en-US.restext:1978 | "**A Cleansing**"
+      # ../en-US.restext:1977 | "**A Cleansing**"
       value: 'restext://Diseases2_004'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24778
+    # ../.source/TheCostofDisease_Eng_v10.cs:24778
     - type: 'break'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24779
+    # ../.source/TheCostofDisease_Eng_v10.cs:24779
     - type: 'text'
-      # ../en-US.restext:1979 | "When the symptoms grew to..."
+      # ../en-US.restext:1978 | "When the symptoms grew to..."
       value: 'restext://Diseases2_005'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24780
+    # ../.source/TheCostofDisease_Eng_v10.cs:24780
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24784
+    # ../.source/TheCostofDisease_Eng_v10.cs:24784
     - type: 'popup'
       layout: 'setup'
       # ../en-US.restext:36 | "Click to continue..."
@@ -48,32 +48,32 @@ nodes:
       okay: 'restext://UIButton_Close'
       snapshot: true
       header:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24817
+      # ../.source/TheCostofDisease_Eng_v10.cs:24817
       - type: 'image'
         asset: 'image://setup/DiscardEstateUpgrade_Icon'
         style: 'setup-image'
       content:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24818
+      # ../.source/TheCostofDisease_Eng_v10.cs:24818
       - type: 'break'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24819
+      # ../.source/TheCostofDisease_Eng_v10.cs:24819
       - type: 'text'
-        # ../en-US.restext:1980 | "All players that have not..."
+        # ../en-US.restext:1979 | "All players that have not..."
         value: 'restext://Diseases2_006'
   else:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24791
+  # ../.source/TheCostofDisease_Eng_v10.cs:24791
   - type: 'text'
-    # ../en-US.restext:1975 | "**Wasted Potential**"
+    # ../en-US.restext:1974 | "**Wasted Potential**"
     value: 'restext://Diseases2_001'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24793
+  # ../.source/TheCostofDisease_Eng_v10.cs:24793
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24794
+  # ../.source/TheCostofDisease_Eng_v10.cs:24794
   - type: 'text'
-    # ../en-US.restext:1976 | "While the disease that pl..."
+    # ../en-US.restext:1975 | "While the disease that pl..."
     value: 'restext://Diseases2_002'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24798
+  # ../.source/TheCostofDisease_Eng_v10.cs:24798
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24802
+  # ../.source/TheCostofDisease_Eng_v10.cs:24802
   - type: 'popup'
     layout: 'setup'
     # ../en-US.restext:36 | "Click to continue..."
@@ -83,14 +83,14 @@ nodes:
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24855
+    # ../.source/TheCostofDisease_Eng_v10.cs:24855
     - type: 'image'
       asset: 'image://setup/S1_DiseaseExperiment'
       style: 'setup-image'
     content:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24856
+    # ../.source/TheCostofDisease_Eng_v10.cs:24856
     - type: 'break'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24857
+    # ../.source/TheCostofDisease_Eng_v10.cs:24857
     - type: 'text'
-      # ../en-US.restext:1977 | "All players that have not..."
+      # ../en-US.restext:1976 | "All players that have not..."
       value: 'restext://Diseases2_003'

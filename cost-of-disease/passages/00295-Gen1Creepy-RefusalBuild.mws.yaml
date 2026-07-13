@@ -1,49 +1,49 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30251
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:30251
 ---
 format: 'mws/0.4'
 passage_id: 'Gen1Creepy-RefusalBuild'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30258
+# ../.source/TheCostofDisease_Eng_v10.cs:30258
 - type: 'text'
   # ../en-US.restext:307 | "**Carefully hand this sto..."
   value: 'restext://Storybook_HandToGen1Creep_Private'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30263
+# ../.source/TheCostofDisease_Eng_v10.cs:30263
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30268
+# ../.source/TheCostofDisease_Eng_v10.cs:30268
 - type: 'popup'
   # ../en-US.restext:53 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   snapshot: true
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30378
+  # ../.source/TheCostofDisease_Eng_v10.cs:30378
   - type: 'conditional'
     conditions:
     # ../en-US.restext:26 | "good"
     - if: 'wolves == "restext://Choice_Good_Lower"'
       then:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30382
+      # ../.source/TheCostofDisease_Eng_v10.cs:30382
       - type: 'text'
         # ../en-US.restext:163 | "**Order of St. Hubertus**"
         value: 'restext://Heading_OrderOfStHubertus_'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30384
+      # ../.source/TheCostofDisease_Eng_v10.cs:30384
       - type: 'break'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30385
+      # ../.source/TheCostofDisease_Eng_v10.cs:30385
       - type: 'text'
-        # ../en-US.restext:2443 | "Consumed by the immense s..."
+        # ../en-US.restext:2442 | "Consumed by the immense s..."
         value: 'restext://Gen1Creepy_RefusalBuild_005'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30390
+      # ../.source/TheCostofDisease_Eng_v10.cs:30390
       - type: 'break'
         style: 'paragraph'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30392
+      # ../.source/TheCostofDisease_Eng_v10.cs:30392
       - type: 'text'
-        # ../en-US.restext:2444 | "It appeared that they wer..."
+        # ../en-US.restext:2443 | "It appeared that they wer..."
         value: 'restext://Gen1Creepy_RefusalBuild_006'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30401
+      # ../.source/TheCostofDisease_Eng_v10.cs:30401
       - type: 'break'
         style: 'paragraph'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30405
+      # ../.source/TheCostofDisease_Eng_v10.cs:30405
       - type: 'popup'
         layout: 'setup'
         # ../en-US.restext:36 | "Click to continue..."
@@ -53,46 +53,46 @@ nodes:
         okay: 'restext://UIButton_Close' # ./00033-Devastation2.mws.yaml
         snapshot: true
         header:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30287
+        # ../.source/TheCostofDisease_Eng_v10.cs:30287
         - type: 'image'
           asset: 'image://setup/S1_EstateUpgradeBACK'
           style: 'setup-image'
         content:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30288
+        # ../.source/TheCostofDisease_Eng_v10.cs:30288
         - type: 'break'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30289
+        # ../.source/TheCostofDisease_Eng_v10.cs:30289
         - type: 'text'
-          # ../en-US.restext:2445 | "You may choose to immedia..."
+          # ../en-US.restext:2444 | "You may choose to immedia..."
           value: 'restext://Gen1Creepy_RefusalBuild_007'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30300
+        # ../.source/TheCostofDisease_Eng_v10.cs:30300
         - type: 'break'
           style: 'paragraph'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30302
+        # ../.source/TheCostofDisease_Eng_v10.cs:30302
         - type: 'text'
-          # ../en-US.restext:2446 | "The **Reading Room** acts..."
+          # ../en-US.restext:2445 | "The **Reading Room** acts..."
           value: 'restext://Gen1Creepy_RefusalBuild_008'
     else:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30412
+    # ../.source/TheCostofDisease_Eng_v10.cs:30412
     - type: 'text'
       # ../en-US.restext:147 | "**Fraternity of Hunters**"
       value: 'restext://Heading_FraternityOfHunters'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30414
+    # ../.source/TheCostofDisease_Eng_v10.cs:30414
     - type: 'break'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30415
+    # ../.source/TheCostofDisease_Eng_v10.cs:30415
     - type: 'text'
-      # ../en-US.restext:2439 | "Consumed by the immense s..."
+      # ../en-US.restext:2438 | "Consumed by the immense s..."
       value: 'restext://Gen1Creepy_RefusalBuild_001'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30420
+    # ../.source/TheCostofDisease_Eng_v10.cs:30420
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30422
+    # ../.source/TheCostofDisease_Eng_v10.cs:30422
     - type: 'text'
-      # ../en-US.restext:2440 | "It appeared that they wer..."
+      # ../en-US.restext:2439 | "It appeared that they wer..."
       value: 'restext://Gen1Creepy_RefusalBuild_002'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30431
+    # ../.source/TheCostofDisease_Eng_v10.cs:30431
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30435
+    # ../.source/TheCostofDisease_Eng_v10.cs:30435
     - type: 'popup'
       layout: 'setup'
       # ../en-US.restext:36 | "Click to continue..."
@@ -102,21 +102,21 @@ nodes:
       okay: 'restext://UIButton_Close' # ./00033-Devastation2.mws.yaml
       snapshot: true
       header:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30336
+      # ../.source/TheCostofDisease_Eng_v10.cs:30336
       - type: 'image'
         asset: 'image://setup/S1_EstateUpgradeBACK'
         style: 'setup-image'
       content:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30337
+      # ../.source/TheCostofDisease_Eng_v10.cs:30337
       - type: 'break'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30338
+      # ../.source/TheCostofDisease_Eng_v10.cs:30338
       - type: 'text'
-        # ../en-US.restext:2441 | "You may choose to immedia..."
+        # ../en-US.restext:2440 | "You may choose to immedia..."
         value: 'restext://Gen1Creepy_RefusalBuild_003'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30349
+      # ../.source/TheCostofDisease_Eng_v10.cs:30349
       - type: 'break'
         style: 'paragraph'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:30351
+      # ../.source/TheCostofDisease_Eng_v10.cs:30351
       - type: 'text'
-        # ../en-US.restext:2442 | "The **Shrine** acts the s..."
+        # ../en-US.restext:2441 | "The **Shrine** acts the s..."
         value: 'restext://Gen1Creepy_RefusalBuild_004'

@@ -1,92 +1,92 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3667
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:3667
 ---
 format: 'mws/0.4'
 passage_id: 'Barventures'
-# ../en-US.restext:568 | "Bar-venture"
+# ../en-US.restext:567 | "Bar-venture"
 title: 'restext://Barventures_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3673
+# ../.source/TheCostofDisease_Eng_v10.cs:3673
 - type: 'assign'
   var: 'barin'
   expr: 'rand_between(1, 3, "Barventures_0")'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3674
+# ../.source/TheCostofDisease_Eng_v10.cs:3674
 - type: 'assign'
   var: 'gen3pg'
   expr: '1'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3676
+# ../.source/TheCostofDisease_Eng_v10.cs:3676
 - type: 'switch'
   on: 'barin'
   cases:
   - match: 1
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3680
+    # ../.source/TheCostofDisease_Eng_v10.cs:3680
     - type: 'text'
-      # ../en-US.restext:573 | "_Local records from this ..."
+      # ../en-US.restext:572 | "_Local records from this ..."
       value: 'restext://Barventures_006'
   - match: 2
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3689
+    # ../.source/TheCostofDisease_Eng_v10.cs:3689
     - type: 'text'
-      # ../en-US.restext:574 | "_As your historical curat..."
+      # ../en-US.restext:573 | "_As your historical curat..."
       value: 'restext://Barventures_007'
   default:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3701
+  # ../.source/TheCostofDisease_Eng_v10.cs:3701
   - type: 'let'
     var: '_rnd_Barventures_0'
-    # ../en-US.restext:569 | Barventures_002 | "historical"
-    # ../en-US.restext:570 | Barventures_003 | "comical"
-    # ../en-US.restext:571 | Barventures_004 | "scientific"
+    # ../en-US.restext:568 | Barventures_002 | "historical"
+    # ../en-US.restext:569 | Barventures_003 | "comical"
+    # ../en-US.restext:570 | Barventures_004 | "scientific"
     expr: '["restext://Barventures_002", "restext://Barventures_003", "restext://Barventures_004"].shuffled("Barventures_1")[0]'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3699
+  # ../.source/TheCostofDisease_Eng_v10.cs:3699
   - type: 'text'
-    # ../en-US.restext:572 | "_It is in the interest of..."
+    # ../en-US.restext:571 | "_It is in the interest of..."
     value: 'restext://Barventures_005'
     lets:
     - '_rnd_Barventures_0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3707
+# ../.source/TheCostofDisease_Eng_v10.cs:3707
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3709
+# ../.source/TheCostofDisease_Eng_v10.cs:3709
 - type: 'switch'
   on: 'round'
   cases:
   - match: 16
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3711
+    # ../.source/TheCostofDisease_Eng_v10.cs:3711
     - type: 'let'
       var: '_rnd_Barventures_1'
       expr: '["bar1", "bar2", "bar3", "bar4", "bar5", "bar6", "bar7"].shuffled("Barventures_2")[0]'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3711
+    # ../.source/TheCostofDisease_Eng_v10.cs:3711
     - type: 'include_passage'
       target: '${_rnd_Barventures_1}'
   - match: 17
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3715
+    # ../.source/TheCostofDisease_Eng_v10.cs:3715
     - type: 'let'
       var: '_rnd_Barventures_2'
       expr: '["bar1", "bar2", "bar3", "bar4", "bar5", "bar6", "bar7"].shuffled("Barventures_3")[0]'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3715
+    # ../.source/TheCostofDisease_Eng_v10.cs:3715
     - type: 'include_passage'
       target: '${_rnd_Barventures_2}'
   default:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3720
+  # ../.source/TheCostofDisease_Eng_v10.cs:3720
   - type: 'let'
     var: '_rnd_Barventures_3'
     expr: '["bar1", "bar2", "bar3", "bar4", "bar6", "bar7"].shuffled("Barventures_4")[0]'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3720
+  # ../.source/TheCostofDisease_Eng_v10.cs:3720
   - type: 'include_passage'
     target: '${_rnd_Barventures_3}'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3722
+# ../.source/TheCostofDisease_Eng_v10.cs:3722
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3724
+# ../.source/TheCostofDisease_Eng_v10.cs:3724
 - type: 'switch'
   on: 'round'
   cases:
   - match: 16
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3726
+    # ../.source/TheCostofDisease_Eng_v10.cs:3726
     - type: 'link'
       # ../en-US.restext:36 | "Click to continue..."
       label: 'restext://Click_ContinueEllipsis_C'
@@ -94,14 +94,14 @@ nodes:
       snapshot: true
   - match: 17
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3730
+    # ../.source/TheCostofDisease_Eng_v10.cs:3730
     - type: 'link'
       # ../en-US.restext:36 | "Click to continue..."
       label: 'restext://Click_ContinueEllipsis_C'
       target: 'NoUni2' # ./00036-NoUni2.mws.yaml
       snapshot: true
   default:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3735
+  # ../.source/TheCostofDisease_Eng_v10.cs:3735
   - type: 'link'
     # ../en-US.restext:36 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'

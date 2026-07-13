@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21325
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:21325
 ---
 format: 'mws/0.4'
 passage_id: 'LycanGood'
@@ -6,14 +6,14 @@ passage_id: 'LycanGood'
 title: 'restext://Title_StrengthCanBeMine'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21332
+# ../.source/TheCostofDisease_Eng_v10.cs:21332
 - type: 'text'
-  # ../en-US.restext:1639 | "Their existence was prove..."
+  # ../en-US.restext:1638 | "Their existence was prove..."
   value: 'restext://LycanGood_001'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21334
+# ../.source/TheCostofDisease_Eng_v10.cs:21334
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21338
+# ../.source/TheCostofDisease_Eng_v10.cs:21338
 - type: 'popup'
   layout: 'setup'
   # ../en-US.restext:36 | "Click to continue..."
@@ -23,14 +23,14 @@ nodes:
   okay: 'restext://UIButton_Close' # ./00352-Prosperity1.mws.yaml
   snapshot: true
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21353
+  # ../.source/TheCostofDisease_Eng_v10.cs:21353
   - type: 'image'
     asset: 'image://setup/S1_MWUpdateLycanthropic'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21354
+  # ../.source/TheCostofDisease_Eng_v10.cs:21354
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:21355
+  # ../.source/TheCostofDisease_Eng_v10.cs:21355
   - type: 'text'
     # ../en-US.restext:95 | "Retrieve the **Lycanthrop..."
     value: 'restext://Directive_RetrieveLycanthropicStrengthCard'

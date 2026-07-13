@@ -1,41 +1,41 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14344
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:14344
 ---
 format: 'mws/0.4'
 passage_id: 'LycanthropicMessage'
-# ../en-US.restext:1257 | "The Form of the Wolf"
+# ../en-US.restext:1256 | "The Form of the Wolf"
 title: 'restext://LycanthropicMessage_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14351
+# ../.source/TheCostofDisease_Eng_v10.cs:14351
 - type: 'text'
-  # ../en-US.restext:1258 | "Confirming the existence ..."
+  # ../en-US.restext:1257 | "Confirming the existence ..."
   value: 'restext://LycanthropicMessage_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14354
+# ../.source/TheCostofDisease_Eng_v10.cs:14354
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14356
+# ../.source/TheCostofDisease_Eng_v10.cs:14356
 - type: 'text'
   # ../en-US.restext:73 | "Does any player have the ..."
   value: 'restext://Directive_CheckLycanthropicStrength'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14363
+# ../.source/TheCostofDisease_Eng_v10.cs:14363
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14366
+# ../.source/TheCostofDisease_Eng_v10.cs:14366
 - type: 'link'
   # ../en-US.restext:32 | "Yes."
   label: 'restext://Choice_Yes_Period'
   target: 'LycanEvil' # ./00129-LycanEvil.mws.yaml
   snapshot: true
   onclick:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14376
+  # ../.source/TheCostofDisease_Eng_v10.cs:14376
   - type: 'assign'
     var: 'lycan'
     # ../en-US.restext:31 | "yes"
     expr: '"restext://Choice_Yes_Lower"'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14367
+# ../.source/TheCostofDisease_Eng_v10.cs:14367
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14369
+# ../.source/TheCostofDisease_Eng_v10.cs:14369
 - type: 'link'
   # ../en-US.restext:28 | "No."
   label: 'restext://Choice_No_Period'

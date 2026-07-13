@@ -1,97 +1,97 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18338
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:18338
 ---
 format: 'mws/0.4'
 passage_id: 'NewMaster1E'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18343
+# ../.source/TheCostofDisease_Eng_v10.cs:18343
 - type: 'text'
-  # ../en-US.restext:1410 | "**Carefully hand this Sto..."
+  # ../en-US.restext:1409 | "**Carefully hand this Sto..."
   value: 'restext://NewMaster1E_001'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18349
+# ../.source/TheCostofDisease_Eng_v10.cs:18349
 - type: 'assign'
   var: 'trig'
   expr: '5'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18354
+# ../.source/TheCostofDisease_Eng_v10.cs:18354
 - type: 'popup'
   # ../en-US.restext:53 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   snapshot: true
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18393
+  # ../.source/TheCostofDisease_Eng_v10.cs:18393
   - type: 'text'
-    # ../en-US.restext:1411 | "**A Masterwork of My Own ..."
+    # ../en-US.restext:1410 | "**A Masterwork of My Own ..."
     value: 'restext://NewMaster1E_002'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18397
+  # ../.source/TheCostofDisease_Eng_v10.cs:18397
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18399
+  # ../.source/TheCostofDisease_Eng_v10.cs:18399
   - type: 'text'
     # ../en-US.restext:273 | "I was no longer constrain..."
     value: 'restext://Narrative_UnconstrainedImagination'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18400
+  # ../.source/TheCostofDisease_Eng_v10.cs:18400
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18404
+  # ../.source/TheCostofDisease_Eng_v10.cs:18404
   - type: 'text'
-    # ../en-US.restext:1412 | "**My creation is from whi..."
+    # ../en-US.restext:1411 | "**My creation is from whi..."
     value: 'restext://NewMaster1E_003'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18406
+  # ../.source/TheCostofDisease_Eng_v10.cs:18406
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18409
+  # ../.source/TheCostofDisease_Eng_v10.cs:18409
   - type: 'link'
     # ../en-US.restext:120 | "Biology."
     label: 'restext://Focus_Biology_Period'
     target: 'NewMaster2E' # ./00159-NewMaster2E.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18363
+    # ../.source/TheCostofDisease_Eng_v10.cs:18363
     - type: 'assign'
       var: 'disE'
       # ../en-US.restext:119 | "biology"
       expr: '"restext://Focus_Biology_Lower"'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18410
+  # ../.source/TheCostofDisease_Eng_v10.cs:18410
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18413
+  # ../.source/TheCostofDisease_Eng_v10.cs:18413
   - type: 'link'
     # ../en-US.restext:126 | "Engineering."
     label: 'restext://Focus_Engineering_Period'
     target: 'NewMaster2E' # ./00159-NewMaster2E.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18370
+    # ../.source/TheCostofDisease_Eng_v10.cs:18370
     - type: 'assign'
       var: 'disE'
       # ../en-US.restext:125 | "engineering"
       expr: '"restext://Focus_Engineering_Lower"'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18414
+  # ../.source/TheCostofDisease_Eng_v10.cs:18414
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18417
+  # ../.source/TheCostofDisease_Eng_v10.cs:18417
   - type: 'link'
     # ../en-US.restext:123 | "Chemistry."
     label: 'restext://Focus_Chemistry_Period'
     target: 'NewMaster2E' # ./00159-NewMaster2E.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18377
+    # ../.source/TheCostofDisease_Eng_v10.cs:18377
     - type: 'assign'
       var: 'disE'
       # ../en-US.restext:122 | "chemistry"
       expr: '"restext://Focus_Chemistry_Lower"'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18418
+  # ../.source/TheCostofDisease_Eng_v10.cs:18418
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18421
+  # ../.source/TheCostofDisease_Eng_v10.cs:18421
   - type: 'link'
     # ../en-US.restext:128 | "Occult."
     label: 'restext://Focus_Occult_Period'
     target: 'NewMaster2E' # ./00159-NewMaster2E.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:18384
+    # ../.source/TheCostofDisease_Eng_v10.cs:18384
     - type: 'assign'
       var: 'disE'
       # ../en-US.restext:127 | "occult"

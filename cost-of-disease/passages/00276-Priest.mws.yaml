@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28735
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:28735
 ---
 format: 'mws/0.4'
 passage_id: 'Priest'
@@ -6,22 +6,22 @@ passage_id: 'Priest'
 title: 'restext://Title_ATownEncounter'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28742
+# ../.source/TheCostofDisease_Eng_v10.cs:28742
 - type: 'text'
-  # ../en-US.restext:2316 | "The doors to the church s..."
+  # ../en-US.restext:2315 | "The doors to the church s..."
   value: 'restext://Priest_001'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28745
+# ../.source/TheCostofDisease_Eng_v10.cs:28745
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28747
+# ../.source/TheCostofDisease_Eng_v10.cs:28747
 - type: 'text'
-  # ../en-US.restext:2317 | "Positioned like sentinels..."
+  # ../en-US.restext:2316 | "Positioned like sentinels..."
   value: 'restext://Priest_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28755
+# ../.source/TheCostofDisease_Eng_v10.cs:28755
 - type: 'assign'
   var: 'huntbeast'
   expr: '"Priest"' # ./00276-Priest.mws.yaml
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:28757
+# ../.source/TheCostofDisease_Eng_v10.cs:28757
 - type: 'text'
-  # ../en-US.restext:2318 | "The **Priest** required a..."
+  # ../en-US.restext:2317 | "The **Priest** required a..."
   value: 'restext://Priest_003'

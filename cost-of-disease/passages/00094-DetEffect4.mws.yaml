@@ -1,33 +1,33 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10510
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:10510
 ---
 format: 'mws/0.4'
 passage_id: 'DetEffect4'
-# ../en-US.restext:1075 | "No Effect"
+# ../en-US.restext:1074 | "No Effect"
 title: 'restext://DetEffect4_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10518
+# ../.source/TheCostofDisease_Eng_v10.cs:10518
 - type: 'text'
-  # ../en-US.restext:1076 | "The unthinkable had been ..."
+  # ../en-US.restext:1075 | "The unthinkable had been ..."
   value: 'restext://DetEffect4_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10519
+# ../.source/TheCostofDisease_Eng_v10.cs:10519
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10521
+# ../.source/TheCostofDisease_Eng_v10.cs:10521
 - type: 'text'
-  # ../en-US.restext:1077 | "At least, for now."
+  # ../en-US.restext:1076 | "At least, for now."
   value: 'restext://DetEffect4_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10522
+# ../.source/TheCostofDisease_Eng_v10.cs:10522
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10525
+# ../.source/TheCostofDisease_Eng_v10.cs:10525
 - type: 'link'
   # ../en-US.restext:36 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'DeteriorationHub' # ./00090-DeteriorationHub.mws.yaml
   snapshot: true
   onclick:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:10531
+  # ../.source/TheCostofDisease_Eng_v10.cs:10531
   - type: 'assign'
     var: 'det4'
     expr: '"visited"'

@@ -1,89 +1,89 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13979
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:13979
 ---
 format: 'mws/0.4'
 passage_id: 'ChooseScience'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13984
+# ../.source/TheCostofDisease_Eng_v10.cs:13984
 - type: 'text'
-  # ../en-US.restext:1230 | "**Carefully hand the Stor..."
+  # ../en-US.restext:1229 | "**Carefully hand the Stor..."
   value: 'restext://ChooseScience_001'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13988
+# ../.source/TheCostofDisease_Eng_v10.cs:13988
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13992
+# ../.source/TheCostofDisease_Eng_v10.cs:13992
 - type: 'text'
-  # ../en-US.restext:1231 | "**\"Universal Interest\" ..."
+  # ../en-US.restext:1230 | "**\"Universal Interest\" ..."
   value: 'restext://ChooseScience_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13995
+# ../.source/TheCostofDisease_Eng_v10.cs:13995
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13997
+# ../.source/TheCostofDisease_Eng_v10.cs:13997
 - type: 'text'
-  # ../en-US.restext:1232 | "It has been three days si..."
+  # ../en-US.restext:1231 | "It has been three days si..."
   value: 'restext://ChooseScience_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:13998
+# ../.source/TheCostofDisease_Eng_v10.cs:13998
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14000
+# ../.source/TheCostofDisease_Eng_v10.cs:14000
 - type: 'text'
-  # ../en-US.restext:1233 | "I am not some groveler wh..."
+  # ../en-US.restext:1232 | "I am not some groveler wh..."
   value: 'restext://ChooseScience_004'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14016
+# ../.source/TheCostofDisease_Eng_v10.cs:14016
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14018
+# ../.source/TheCostofDisease_Eng_v10.cs:14018
 - type: 'text'
-  # ../en-US.restext:1234 | "My parents instilled into..."
+  # ../en-US.restext:1233 | "My parents instilled into..."
   value: 'restext://ChooseScience_005'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14019
+# ../.source/TheCostofDisease_Eng_v10.cs:14019
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14023
+# ../.source/TheCostofDisease_Eng_v10.cs:14023
 - type: 'text'
-  # ../en-US.restext:1235 | "**Choose which of the Sci..."
+  # ../en-US.restext:1234 | "**Choose which of the Sci..."
   value: 'restext://ChooseScience_006'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14025
+# ../.source/TheCostofDisease_Eng_v10.cs:14025
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14028
+# ../.source/TheCostofDisease_Eng_v10.cs:14028
 - type: 'link'
   # ../en-US.restext:121 | "Chemistry"
   label: 'restext://Focus_Chemistry'
   target: '35VP' # ./00168-35VP.mws.yaml
   snapshot: true
   onclick:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14043
+  # ../.source/TheCostofDisease_Eng_v10.cs:14043
   - type: 'assign'
     var: 'sci3'
     # ../en-US.restext:121 | "Chemistry"
     expr: '"restext://Focus_Chemistry"'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14029
+# ../.source/TheCostofDisease_Eng_v10.cs:14029
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14032
+# ../.source/TheCostofDisease_Eng_v10.cs:14032
 - type: 'link'
   # ../en-US.restext:124 | "Engineering"
   label: 'restext://Focus_Engineering'
   target: '35VP' # ./00168-35VP.mws.yaml
   snapshot: true
   onclick:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14050
+  # ../.source/TheCostofDisease_Eng_v10.cs:14050
   - type: 'assign'
     var: 'sci3'
     # ../en-US.restext:124 | "Engineering"
     expr: '"restext://Focus_Engineering"'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14033
+# ../.source/TheCostofDisease_Eng_v10.cs:14033
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14036
+# ../.source/TheCostofDisease_Eng_v10.cs:14036
 - type: 'link'
   # ../en-US.restext:118 | "Biology"
   label: 'restext://Focus_Biology'
   target: '35VP' # ./00168-35VP.mws.yaml
   snapshot: true
   onclick:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:14057
+  # ../.source/TheCostofDisease_Eng_v10.cs:14057
   - type: 'assign'
     var: 'sci3'
     # ../en-US.restext:118 | "Biology"

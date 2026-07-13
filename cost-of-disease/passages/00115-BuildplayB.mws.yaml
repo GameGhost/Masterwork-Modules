@@ -1,136 +1,136 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12410
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:12410
 ---
 format: 'mws/0.4'
 passage_id: 'BuildplayB'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12415
+# ../.source/TheCostofDisease_Eng_v10.cs:12415
 - type: 'text'
   # ../en-US.restext:68 | "**Do not allow the other ..."
   value: 'restext://Common_Private_Decision_Warning_Typo'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12418
+# ../.source/TheCostofDisease_Eng_v10.cs:12418
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12422
+# ../.source/TheCostofDisease_Eng_v10.cs:12422
 - type: 'text'
-  # ../en-US.restext:1190 | "**Continuing Investigatio..."
+  # ../en-US.restext:1189 | "**Continuing Investigatio..."
   value: 'restext://BuildplayB_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12425
+# ../.source/TheCostofDisease_Eng_v10.cs:12425
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12427
+# ../.source/TheCostofDisease_Eng_v10.cs:12427
 - type: 'switch'
   on: 'inv'
   cases:
   - match: 'ba'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12429
+    # ../.source/TheCostofDisease_Eng_v10.cs:12429
     - type: 'text'
       # ../en-US.restext:248 | "I arrived at the {ba} und..."
       value: 'restext://Narrative_Investigate_A_Arrival'
   - match: 'bb'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12437
+    # ../.source/TheCostofDisease_Eng_v10.cs:12437
     - type: 'text'
       # ../en-US.restext:249 | "A thick fog shrouded my a..."
       value: 'restext://Narrative_Investigate_B_Arrival'
   default:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12448
+  # ../.source/TheCostofDisease_Eng_v10.cs:12448
   - type: 'let'
     var: '_rnd_BuildplayB_0'
     # ../en-US.restext:65 | Common_Gentleman | "gentleman"
     # ../en-US.restext:66 | Common_Gentlewoman | "gentlewoman"
     expr: '["restext://Common_Gentleman", "restext://Common_Gentlewoman"].shuffled("BuildplayB_0")[0]'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12447
+  # ../.source/TheCostofDisease_Eng_v10.cs:12447
   - type: 'text'
-    # ../en-US.restext:1191 | "To my chagrin, a {_rnd_Bu..."
+    # ../en-US.restext:1190 | "To my chagrin, a {_rnd_Bu..."
     value: 'restext://BuildplayB_003'
     lets:
     - '_rnd_BuildplayB_0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12451
+# ../.source/TheCostofDisease_Eng_v10.cs:12451
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12453
+# ../.source/TheCostofDisease_Eng_v10.cs:12453
 - type: 'text'
   # ../en-US.restext:250 | "I could either provide ev..."
   value: 'restext://Narrative_Investigate_ExposeOrConceal'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12472
+# ../.source/TheCostofDisease_Eng_v10.cs:12472
 - type: 'assign'
   var: 'playB'
   expr: 'playB + 1'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12474
+# ../.source/TheCostofDisease_Eng_v10.cs:12474
 - type: 'link'
   # ../en-US.restext:29 | "I exposed the truth."
   label: 'restext://Choice_Truth_Exposed'
   target: 'ExposeConfirmation' # ./00113-ExposeConfirmation.mws.yaml
   snapshot: true
   onclick:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12485
+  # ../.source/TheCostofDisease_Eng_v10.cs:12485
   - type: 'switch'
     on: 'inv'
     cases:
     - match: 'ba'
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12487
+      # ../.source/TheCostofDisease_Eng_v10.cs:12487
       - type: 'assign'
         var: 'pBA'
         # ../en-US.restext:31 | "yes"
         expr: '"restext://Choice_Yes_Lower"'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12488
+      # ../.source/TheCostofDisease_Eng_v10.cs:12488
       - type: 'assign'
         var: 'exposeA'
         expr: 'exposeA + 1'
     - match: 'bb'
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12492
+      # ../.source/TheCostofDisease_Eng_v10.cs:12492
       - type: 'assign'
         var: 'pBB'
         # ../en-US.restext:31 | "yes"
         expr: '"restext://Choice_Yes_Lower"'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12493
+      # ../.source/TheCostofDisease_Eng_v10.cs:12493
       - type: 'assign'
         var: 'exposeB'
         expr: 'exposeB + 1'
     - match: 'bc'
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12497
+      # ../.source/TheCostofDisease_Eng_v10.cs:12497
       - type: 'assign'
         var: 'pBC'
         # ../en-US.restext:31 | "yes"
         expr: '"restext://Choice_Yes_Lower"'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12498
+      # ../.source/TheCostofDisease_Eng_v10.cs:12498
       - type: 'assign'
         var: 'exposeC'
         expr: 'exposeC + 1'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12475
+# ../.source/TheCostofDisease_Eng_v10.cs:12475
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12478
+# ../.source/TheCostofDisease_Eng_v10.cs:12478
 - type: 'link'
   # ../en-US.restext:30 | "I concealed the true purpose."
   label: 'restext://Choice_Truth_Hidden'
   target: 'ConcealConfirmation' # ./00114-ConcealConfirmation.mws.yaml
   snapshot: true
   onclick:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12506
+  # ../.source/TheCostofDisease_Eng_v10.cs:12506
   - type: 'switch'
     on: 'inv'
     cases:
     - match: 'ba'
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12508
+      # ../.source/TheCostofDisease_Eng_v10.cs:12508
       - type: 'assign'
         var: 'exposeA'
         expr: 'exposeA - 1'
     - match: 'bb'
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12512
+      # ../.source/TheCostofDisease_Eng_v10.cs:12512
       - type: 'assign'
         var: 'exposeB'
         expr: 'exposeB - 1'
     - match: 'bc'
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12516
+      # ../.source/TheCostofDisease_Eng_v10.cs:12516
       - type: 'assign'
         var: 'exposeC'
         expr: 'exposeC - 1'

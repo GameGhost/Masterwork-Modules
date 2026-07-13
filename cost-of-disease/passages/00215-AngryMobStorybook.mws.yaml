@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24143
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:24143
 ---
 format: 'mws/0.4'
 passage_id: 'AngryMobStorybook'
@@ -6,78 +6,78 @@ tags:
 - 'ck2'
 layout: 'event'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24147
+# ../.source/TheCostofDisease_Eng_v10.cs:24147
 - type: 'text'
-  # ../en-US.restext:1912 | "**A Frightful Day**"
+  # ../en-US.restext:1911 | "**A Frightful Day**"
   value: 'restext://AngryMobStorybook_001'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24150
+# ../.source/TheCostofDisease_Eng_v10.cs:24150
 - type: 'assign'
   var: 'amtoken'
   expr: 'rand_between(1, 2, "AngryMobStorybook_0")'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24151
+# ../.source/TheCostofDisease_Eng_v10.cs:24151
 - type: 'assign'
   var: 'gen3pg'
   expr: '1'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24153
+# ../.source/TheCostofDisease_Eng_v10.cs:24153
 - type: 'conditional'
   conditions:
   - if: 'amtoken == 1'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24155
+    # ../.source/TheCostofDisease_Eng_v10.cs:24155
     - type: 'text'
-      # ../en-US.restext:1917 | "There were moments when t..."
+      # ../en-US.restext:1916 | "There were moments when t..."
       value: 'restext://AngryMobStorybook_006'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24160
+    # ../.source/TheCostofDisease_Eng_v10.cs:24160
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24162
+    # ../.source/TheCostofDisease_Eng_v10.cs:24162
     - type: 'text'
-      # ../en-US.restext:1918 | "As such, it was a calm Su..."
+      # ../en-US.restext:1917 | "As such, it was a calm Su..."
       value: 'restext://AngryMobStorybook_007'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24164
+    # ../.source/TheCostofDisease_Eng_v10.cs:24164
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24166
+    # ../.source/TheCostofDisease_Eng_v10.cs:24166
     - type: 'text'
-      # ../en-US.restext:1919 | "He placed the scrap onto ..."
+      # ../en-US.restext:1918 | "He placed the scrap onto ..."
       value: 'restext://AngryMobStorybook_008'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24169
+    # ../.source/TheCostofDisease_Eng_v10.cs:24169
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24171
+    # ../.source/TheCostofDisease_Eng_v10.cs:24171
     - type: 'text'
-      # ../en-US.restext:1920 | "Another good servant gone..."
+      # ../en-US.restext:1919 | "Another good servant gone..."
       value: 'restext://AngryMobStorybook_009'
   else:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24177
+  # ../.source/TheCostofDisease_Eng_v10.cs:24177
   - type: 'text'
-    # ../en-US.restext:1913 | "To be awakened early morn..."
+    # ../en-US.restext:1912 | "To be awakened early morn..."
     value: 'restext://AngryMobStorybook_002'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24179
+  # ../.source/TheCostofDisease_Eng_v10.cs:24179
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24181
+  # ../.source/TheCostofDisease_Eng_v10.cs:24181
   - type: 'text'
-    # ../en-US.restext:1914 | "A woman in a modest blue ..."
+    # ../en-US.restext:1913 | "A woman in a modest blue ..."
     value: 'restext://AngryMobStorybook_003'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24182
+  # ../.source/TheCostofDisease_Eng_v10.cs:24182
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24184
+  # ../.source/TheCostofDisease_Eng_v10.cs:24184
   - type: 'text'
-    # ../en-US.restext:1915 | "A monster stood nearby, c..."
+    # ../en-US.restext:1914 | "A monster stood nearby, c..."
     value: 'restext://AngryMobStorybook_004'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24188
+  # ../.source/TheCostofDisease_Eng_v10.cs:24188
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24190
+  # ../.source/TheCostofDisease_Eng_v10.cs:24190
   - type: 'text'
-    # ../en-US.restext:1916 | "Perhaps it was unavoidabl..."
+    # ../en-US.restext:1915 | "Perhaps it was unavoidabl..."
     value: 'restext://AngryMobStorybook_005'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24193
+# ../.source/TheCostofDisease_Eng_v10.cs:24193
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24197
+# ../.source/TheCostofDisease_Eng_v10.cs:24197
 - type: 'popup'
   layout: 'setup'
   # ../en-US.restext:36 | "Click to continue..."
@@ -87,35 +87,35 @@ nodes:
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24229
+  # ../.source/TheCostofDisease_Eng_v10.cs:24229
   - type: 'image'
     asset: 'image://setup/Creepy_Icon'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24230
+  # ../.source/TheCostofDisease_Eng_v10.cs:24230
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24231
+  # ../.source/TheCostofDisease_Eng_v10.cs:24231
   - type: 'text'
-    # ../en-US.restext:1921 | "Return a Servant to Lost. "
+    # ../en-US.restext:1920 | "Return a Servant to Lost. "
     value: 'restext://AngryMobStorybook_010'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24232
+  # ../.source/TheCostofDisease_Eng_v10.cs:24232
   - type: 'conditional'
     if: 'round == 15'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24237
+    # ../.source/TheCostofDisease_Eng_v10.cs:24237
     - type: 'let'
       var: '_rnd_AngryMobStorybook_0'
       expr: 'rand_between(2, 3, "AngryMobStorybook_1")'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24234
+    # ../.source/TheCostofDisease_Eng_v10.cs:24234
     - type: 'text'
-      # ../en-US.restext:1922 | "Then lose **{_rnd_AngryMo..."
+      # ../en-US.restext:1921 | "Then lose **{_rnd_AngryMo..."
       value: 'restext://AngryMobStorybook_011'
       lets:
       - '_rnd_AngryMobStorybook_0'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24242
+  # ../.source/TheCostofDisease_Eng_v10.cs:24242
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:24244
+  # ../.source/TheCostofDisease_Eng_v10.cs:24244
   - type: 'text'
-    # ../en-US.restext:1923 | "Move your {icon:creepy_ic..."
+    # ../en-US.restext:1922 | "Move your {icon:creepy_ic..."
     value: 'restext://AngryMobStorybook_012'

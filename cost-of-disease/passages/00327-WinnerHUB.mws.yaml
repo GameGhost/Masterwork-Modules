@@ -1,4 +1,4 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33425
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:33425
 ---
 format: 'mws/0.4'
 passage_id: 'WinnerHUB'
@@ -6,53 +6,53 @@ tags:
 - 'CODINGHELP'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33459
+# ../.source/TheCostofDisease_Eng_v10.cs:33459
 - type: 'unknown'
   original_code: 'List<float> playerPoints = new List<float>();'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33460
+# ../.source/TheCostofDisease_Eng_v10.cs:33460
 - type: 'unknown'
   original_code: 'List<float> winnerPlayerPoints = new List<float>();'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33461
+# ../.source/TheCostofDisease_Eng_v10.cs:33461
 - type: 'unknown'
   original_code: 'List<NamePoints> PlayerNameAndPoint = new List<NamePoints>();'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33462
+# ../.source/TheCostofDisease_Eng_v10.cs:33462
 - type: 'unknown'
   original_code: 'playerPoints.Add(Vars.scoreA);'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33463
+# ../.source/TheCostofDisease_Eng_v10.cs:33463
 - type: 'unknown'
   original_code: 'PlayerNameAndPoint.Add(new NamePoints { playerName = Vars.nameA, Points = Vars.scoreA });'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33464
+# ../.source/TheCostofDisease_Eng_v10.cs:33464
 - type: 'unknown'
   original_code: 'playerPoints.Add(Vars.scoreB);'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33465
+# ../.source/TheCostofDisease_Eng_v10.cs:33465
 - type: 'unknown'
   original_code: 'PlayerNameAndPoint.Add(new NamePoints { playerName = Vars.nameB, Points = Vars.scoreB });'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33466
+# ../.source/TheCostofDisease_Eng_v10.cs:33466
 - type: 'conditional'
   if: 'scoreC > 0 && nameC != null'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33468
+  # ../.source/TheCostofDisease_Eng_v10.cs:33468
   - type: 'unknown'
     original_code: 'playerPoints.Add(Vars.scoreC);'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33469
+  # ../.source/TheCostofDisease_Eng_v10.cs:33469
   - type: 'unknown'
     original_code: 'PlayerNameAndPoint.Add(new NamePoints { playerName = Vars.nameC, Points = Vars.scoreC });'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33471
+# ../.source/TheCostofDisease_Eng_v10.cs:33471
 - type: 'conditional'
   if: 'scoreD > 0 && nameD != null'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33473
+  # ../.source/TheCostofDisease_Eng_v10.cs:33473
   - type: 'unknown'
     original_code: 'playerPoints.Add(Vars.scoreD);'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33474
+  # ../.source/TheCostofDisease_Eng_v10.cs:33474
   - type: 'unknown'
     original_code: 'PlayerNameAndPoint.Add(new NamePoints { playerName = Vars.nameD, Points = Vars.scoreD });'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33477
+# ../.source/TheCostofDisease_Eng_v10.cs:33477
 - type: 'unknown'
   original_code: 'playerPoints.Sort();'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33478
+# ../.source/TheCostofDisease_Eng_v10.cs:33478
 - type: 'unknown'
   original_code: "for (int i = playerPoints.Count - 1; i >= 0; i--)\r\n        {\r\n            winnerPlayerPoints.Add(playerPoints[i]);\r\n        }"
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:33482
+# ../.source/TheCostofDisease_Eng_v10.cs:33482
 - type: 'unknown'
   original_code: "for (int j = 0; j < winnerPlayerPoints.Count; j++)\r\n        {\r\n            for (int k = 0; k < PlayerNameAndPoint.Count; k++)\r\n            {\r\n                if (winnerPlayerPoints[j] == PlayerNameAnd…"

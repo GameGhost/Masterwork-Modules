@@ -1,79 +1,79 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27156
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:27156
 ---
 format: 'mws/0.4'
 passage_id: 'ImmortalityMWUpdate'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27158
+# ../.source/TheCostofDisease_Eng_v10.cs:27158
 - type: 'conditional'
   if: 'setinf > 0'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27160
+  # ../.source/TheCostofDisease_Eng_v10.cs:27160
   - type: 'conditional'
     conditions:
     - if: 'round == 8'
       then:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27162
+      # ../.source/TheCostofDisease_Eng_v10.cs:27162
       - type: 'goto'
         target: 'Hospital2' # ./00034-Hospital2.mws.yaml
     else:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27167
+    # ../.source/TheCostofDisease_Eng_v10.cs:27167
     - type: 'goto'
       target: 'Hospital3' # ./00035-Hospital3.mws.yaml
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27172
+# ../.source/TheCostofDisease_Eng_v10.cs:27172
 - type: 'text'
-  # ../en-US.restext:2144 | "**The True Secret**"
+  # ../en-US.restext:2143 | "**The True Secret**"
   value: 'restext://ImmortalityMWUpdate_001'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27174
+# ../.source/TheCostofDisease_Eng_v10.cs:27174
 - type: 'break'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27175
+# ../.source/TheCostofDisease_Eng_v10.cs:27175
 - type: 'text'
-  # ../en-US.restext:2145 | "The family's pursuit of e..."
+  # ../en-US.restext:2144 | "The family's pursuit of e..."
   value: 'restext://ImmortalityMWUpdate_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27178
+# ../.source/TheCostofDisease_Eng_v10.cs:27178
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27180
+# ../.source/TheCostofDisease_Eng_v10.cs:27180
 - type: 'text'
-  # ../en-US.restext:2146 | "Does any player have the ..."
+  # ../en-US.restext:2145 | "Does any player have the ..."
   value: 'restext://ImmortalityMWUpdate_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27187
+# ../.source/TheCostofDisease_Eng_v10.cs:27187
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27190
+# ../.source/TheCostofDisease_Eng_v10.cs:27190
 - type: 'link'
   # ../en-US.restext:32 | "Yes."
   label: 'restext://Choice_Yes_Period'
   target: 'ImmortalityMWUpdate2' # ./00252-ImmortalityMWUpdate2.mws.yaml
   snapshot: true
   onclick:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27201
+  # ../.source/TheCostofDisease_Eng_v10.cs:27201
   - type: 'assign'
     var: 'immort'
     # ../en-US.restext:31 | "yes"
     expr: '"restext://Choice_Yes_Lower"'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27191
+# ../.source/TheCostofDisease_Eng_v10.cs:27191
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27194
+# ../.source/TheCostofDisease_Eng_v10.cs:27194
 - type: 'popup'
   # ../en-US.restext:28 | "No."
   label: 'restext://Choice_No_Period'
   snapshot: true
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27208
+  # ../.source/TheCostofDisease_Eng_v10.cs:27208
   - type: 'assign'
     var: 'setinf'
     expr: '1'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27209
+  # ../.source/TheCostofDisease_Eng_v10.cs:27209
   - type: 'conditional'
     conditions:
     - if: 'round == 8'
       then:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27211
+      # ../.source/TheCostofDisease_Eng_v10.cs:27211
       - type: 'goto'
         target: 'Hospital2' # ./00034-Hospital2.mws.yaml
     else:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27216
+    # ../.source/TheCostofDisease_Eng_v10.cs:27216
     - type: 'goto'
       target: 'Hospital3' # ./00035-Hospital3.mws.yaml

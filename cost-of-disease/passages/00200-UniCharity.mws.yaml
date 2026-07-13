@@ -1,43 +1,43 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22858
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:22858
 ---
 format: 'mws/0.4'
 passage_id: 'UniCharity'
-# ../en-US.restext:1803 | "Charity's Legacy"
+# ../en-US.restext:1802 | "Charity's Legacy"
 title: 'restext://UniCharity_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22866
+# ../.source/TheCostofDisease_Eng_v10.cs:22866
 - type: 'conditional'
   conditions:
   - if: 'mayor == charity'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22868
+    # ../.source/TheCostofDisease_Eng_v10.cs:22868
     - type: 'text'
-      # ../en-US.restext:1806 | "It seemed the festivities..."
+      # ../en-US.restext:1805 | "It seemed the festivities..."
       value: 'restext://UniCharity_004'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22877
+    # ../.source/TheCostofDisease_Eng_v10.cs:22877
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22879
+    # ../.source/TheCostofDisease_Eng_v10.cs:22879
     - type: 'text'
-      # ../en-US.restext:1807 | "{mayor} III was visibly a..."
+      # ../en-US.restext:1806 | "{mayor} III was visibly a..."
       value: 'restext://UniCharity_005'
   else:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22885
+  # ../.source/TheCostofDisease_Eng_v10.cs:22885
   - type: 'text'
-    # ../en-US.restext:1804 | "It seemed the festivities..."
+    # ../en-US.restext:1803 | "It seemed the festivities..."
     value: 'restext://UniCharity_002'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22896
+  # ../.source/TheCostofDisease_Eng_v10.cs:22896
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22898
+  # ../.source/TheCostofDisease_Eng_v10.cs:22898
   - type: 'text'
-    # ../en-US.restext:1805 | "In honor of {charity}'s l..."
+    # ../en-US.restext:1804 | "In honor of {charity}'s l..."
     value: 'restext://UniCharity_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22907
+# ../.source/TheCostofDisease_Eng_v10.cs:22907
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22911
+# ../.source/TheCostofDisease_Eng_v10.cs:22911
 - type: 'popup'
   layout: 'setup'
   # ../en-US.restext:36 | "Click to continue..."
@@ -47,32 +47,32 @@ nodes:
   okay: 'restext://UIButton_Close' # ./00166-DetEffectRandom.mws.yaml
   snapshot: true
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22926
+  # ../.source/TheCostofDisease_Eng_v10.cs:22926
   - type: 'image'
     asset: 'image://setup/S1_HeartToken'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22927
+  # ../.source/TheCostofDisease_Eng_v10.cs:22927
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22929
+  # ../.source/TheCostofDisease_Eng_v10.cs:22929
   - type: 'conditional'
     conditions:
     - if: 'mayor == charity'
       then:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22931
+      # ../.source/TheCostofDisease_Eng_v10.cs:22931
       - type: 'text'
-        # ../en-US.restext:1809 | "Immediately move **1 spac..."
+        # ../en-US.restext:1808 | "Immediately move **1 spac..."
         value: 'restext://UniCharity_007'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22947
+      # ../.source/TheCostofDisease_Eng_v10.cs:22947
       - type: 'break'
         style: 'paragraph'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22949
+      # ../.source/TheCostofDisease_Eng_v10.cs:22949
       - type: 'text'
         # ../en-US.restext:98 | "Return the **Heart** {ico..."
         value: 'restext://Directive_ReturnHeartToken_Bold'
     else:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22960
+    # ../.source/TheCostofDisease_Eng_v10.cs:22960
     - type: 'text'
-      # ../en-US.restext:1808 | "Retrieve a **Charity Memo..."
+      # ../en-US.restext:1807 | "Retrieve a **Charity Memo..."
       value: 'restext://UniCharity_006'

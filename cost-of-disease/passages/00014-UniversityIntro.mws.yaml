@@ -1,48 +1,48 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3046
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:3046
 ---
 format: 'mws/0.4'
 passage_id: 'UniversityIntro'
 # ../en-US.restext:322 | "GENERATION III"
 title: 'restext://Title_GenerationIII'
-# ../en-US.restext:475 | "The University Advances"
+# ../en-US.restext:474 | "The University Advances"
 subtitle: 'restext://UniversityIntro_002'
 tags:
 - 'INTRO'
 layout: 'introduction'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3057
+# ../.source/TheCostofDisease_Eng_v10.cs:3057
 - type: 'assign'
   var: 'theme'
   expr: '["\"Chemistry\"", "\"Engineering\"", "\"Biology\""].shuffled("UniversityIntro_0")[0]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3059
+# ../.source/TheCostofDisease_Eng_v10.cs:3059
 - type: 'text'
-  # ../en-US.restext:476 | "They observed the city fr..."
+  # ../en-US.restext:475 | "They observed the city fr..."
   value: 'restext://UniversityIntro_006'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3060
+# ../.source/TheCostofDisease_Eng_v10.cs:3060
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3062
+# ../.source/TheCostofDisease_Eng_v10.cs:3062
 - type: 'text'
-  # ../en-US.restext:477 | "And yet, it was that very..."
+  # ../en-US.restext:476 | "And yet, it was that very..."
   value: 'restext://UniversityIntro_007'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3063
+# ../.source/TheCostofDisease_Eng_v10.cs:3063
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3065
+# ../.source/TheCostofDisease_Eng_v10.cs:3065
 - type: 'text'
-  # ../en-US.restext:478 | "Still the townsfolk eyed ..."
+  # ../en-US.restext:477 | "Still the townsfolk eyed ..."
   value: 'restext://UniversityIntro_008'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3066
+# ../.source/TheCostofDisease_Eng_v10.cs:3066
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3068
+# ../.source/TheCostofDisease_Eng_v10.cs:3068
 - type: 'text'
-  # ../en-US.restext:479 | "Science should not be con..."
+  # ../en-US.restext:478 | "Science should not be con..."
   value: 'restext://UniversityIntro_009'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3069
+# ../.source/TheCostofDisease_Eng_v10.cs:3069
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:3071
+# ../.source/TheCostofDisease_Eng_v10.cs:3071
 - type: 'link'
   # ../en-US.restext:36 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'

@@ -1,27 +1,27 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23871
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:23871
 ---
 format: 'mws/0.4'
 passage_id: 'JoinedAlready'
-# ../en-US.restext:1884 | "A Busy Day"
+# ../en-US.restext:1883 | "A Busy Day"
 title: 'restext://JoinedAlready_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23878
+# ../.source/TheCostofDisease_Eng_v10.cs:23878
 - type: 'conditional'
   if: 'String.IsNullOrEmpty(meet)'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23878
+  # ../.source/TheCostofDisease_Eng_v10.cs:23878
   - type: 'assign'
     var: 'meet'
     expr: 'nameA'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23879
+# ../.source/TheCostofDisease_Eng_v10.cs:23879
 - type: 'text'
-  # ../en-US.restext:1885 | "The man looked at {meet} ..."
+  # ../en-US.restext:1884 | "The man looked at {meet} ..."
   value: 'restext://JoinedAlready_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23887
+# ../.source/TheCostofDisease_Eng_v10.cs:23887
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:23890
+# ../.source/TheCostofDisease_Eng_v10.cs:23890
 - type: 'conditional'
   conditions:
   - if: 'round == 5'

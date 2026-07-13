@@ -1,26 +1,26 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8323
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:8323
 ---
 format: 'mws/0.4'
 passage_id: 'Lettercode'
-# ../en-US.restext:879 | "Surprising Correspondence"
+# ../en-US.restext:878 | "Surprising Correspondence"
 title: 'restext://Lettercode_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8331
+# ../.source/TheCostofDisease_Eng_v10.cs:8331
 - type: 'text'
-  # ../en-US.restext:880 | "As the welcome from the t..."
+  # ../en-US.restext:879 | "As the welcome from the t..."
   value: 'restext://Lettercode_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8332
+# ../.source/TheCostofDisease_Eng_v10.cs:8332
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8334
+# ../.source/TheCostofDisease_Eng_v10.cs:8334
 - type: 'text'
-  # ../en-US.restext:881 | "Little did they realize h..."
+  # ../en-US.restext:880 | "Little did they realize h..."
   value: 'restext://Lettercode_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8336
+# ../.source/TheCostofDisease_Eng_v10.cs:8336
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8340
+# ../.source/TheCostofDisease_Eng_v10.cs:8340
 - type: 'popup'
   layout: 'setup'
   # ../en-US.restext:35 | "Click here to continue..."
@@ -30,416 +30,416 @@ nodes:
   okay: 'restext://UIButton_Close' # ./00302-Gen1Insanity-Yes.mws.yaml
   snapshot: true
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8486
+  # ../.source/TheCostofDisease_Eng_v10.cs:8486
   - type: 'image'
     asset: 'image://setup/S1_LetterBACK'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8487
+  # ../.source/TheCostofDisease_Eng_v10.cs:8487
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8488
+  # ../.source/TheCostofDisease_Eng_v10.cs:8488
   - type: 'text'
-    # ../en-US.restext:882 | "Retrieve the **Letter** c..."
+    # ../en-US.restext:881 | "Retrieve the **Letter** c..."
     value: 'restext://Lettercode_004'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8496
+  # ../.source/TheCostofDisease_Eng_v10.cs:8496
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8497
+  # ../.source/TheCostofDisease_Eng_v10.cs:8497
   - type: 'conditional'
     if: '!letterSetRandomize'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8499
+    # ../.source/TheCostofDisease_Eng_v10.cs:8499
     - type: 'assign'
       var: 'letter'
       expr: '[1, 2, 3, 4, 5, 6]'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8500
+    # ../.source/TheCostofDisease_Eng_v10.cs:8500
     - type: 'assign'
       var: 'letter'
       expr: 'letter.shuffled("Lettercode_0")'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8501
+    # ../.source/TheCostofDisease_Eng_v10.cs:8501
     - type: 'assign'
       var: 'pa'
       expr: 'letter[0]'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8502
+    # ../.source/TheCostofDisease_Eng_v10.cs:8502
     - type: 'assign'
       var: 'pb'
       expr: 'letter[1]'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8503
+    # ../.source/TheCostofDisease_Eng_v10.cs:8503
     - type: 'assign'
       var: 'pc'
       expr: 'letter[2]'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8504
+    # ../.source/TheCostofDisease_Eng_v10.cs:8504
     - type: 'assign'
       var: 'pd'
       expr: 'letter[3]'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8505
+    # ../.source/TheCostofDisease_Eng_v10.cs:8505
     - type: 'assign'
       var: 'pe'
       expr: 'letter[4]'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8507
+  # ../.source/TheCostofDisease_Eng_v10.cs:8507
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8510
+  # ../.source/TheCostofDisease_Eng_v10.cs:8510
   - type: 'text'
-    # ../en-US.restext:883 | "**{nameA} collects letter..."
+    # ../en-US.restext:882 | "**{nameA} collects letter..."
     value: 'restext://Lettercode_005'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8516
+  # ../.source/TheCostofDisease_Eng_v10.cs:8516
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8519
+  # ../.source/TheCostofDisease_Eng_v10.cs:8519
   - type: 'text'
-    # ../en-US.restext:884 | "**{nameB} collects letter..."
+    # ../en-US.restext:883 | "**{nameB} collects letter..."
     value: 'restext://Lettercode_006'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8525
+  # ../.source/TheCostofDisease_Eng_v10.cs:8525
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8526
+  # ../.source/TheCostofDisease_Eng_v10.cs:8526
   - type: 'conditional'
     if: 'players > 2'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8530
+    # ../.source/TheCostofDisease_Eng_v10.cs:8530
     - type: 'text'
-      # ../en-US.restext:885 | "**{nameC} collects letter..."
+      # ../en-US.restext:884 | "**{nameC} collects letter..."
       value: 'restext://Lettercode_007'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8537
+  # ../.source/TheCostofDisease_Eng_v10.cs:8537
   - type: 'conditional'
     if: 'players > 3'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8541
+    # ../.source/TheCostofDisease_Eng_v10.cs:8541
     - type: 'text'
-      # ../en-US.restext:886 | "**{nameD} collects letter..."
+      # ../en-US.restext:885 | "**{nameD} collects letter..."
       value: 'restext://Lettercode_008'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8548
+  # ../.source/TheCostofDisease_Eng_v10.cs:8548
   - type: 'conditional'
     if: 'players > 4'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8552
+    # ../.source/TheCostofDisease_Eng_v10.cs:8552
     - type: 'text'
-      # ../en-US.restext:887 | "**{nameE} collects letter..."
+      # ../en-US.restext:886 | "**{nameE} collects letter..."
       value: 'restext://Lettercode_009'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8559
+  # ../.source/TheCostofDisease_Eng_v10.cs:8559
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8560
+  # ../.source/TheCostofDisease_Eng_v10.cs:8560
   - type: 'text'
-    # ../en-US.restext:888 | "Once all players have rec..."
+    # ../en-US.restext:887 | "Once all players have rec..."
     value: 'restext://Lettercode_010'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8563
+  # ../.source/TheCostofDisease_Eng_v10.cs:8563
   - type: 'switch'
     on: 'pa'
     cases:
     - match: 1
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8565
+      # ../.source/TheCostofDisease_Eng_v10.cs:8565
       - type: 'assign'
         var: 'let1'
         expr: 'nameA'
     - match: 2
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8569
+      # ../.source/TheCostofDisease_Eng_v10.cs:8569
       - type: 'assign'
         var: 'let2'
         expr: 'nameA'
     - match: 3
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8573
+      # ../.source/TheCostofDisease_Eng_v10.cs:8573
       - type: 'assign'
         var: 'let3'
         expr: 'nameA'
     - match: 4
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8577
+      # ../.source/TheCostofDisease_Eng_v10.cs:8577
       - type: 'assign'
         var: 'let4'
         expr: 'nameA'
     - match: 5
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8581
+      # ../.source/TheCostofDisease_Eng_v10.cs:8581
       - type: 'assign'
         var: 'let5'
         expr: 'nameA'
     - match: 6
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8585
+      # ../.source/TheCostofDisease_Eng_v10.cs:8585
       - type: 'assign'
         var: 'let6'
         expr: 'nameA'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8587
+  # ../.source/TheCostofDisease_Eng_v10.cs:8587
   - type: 'switch'
     on: 'pb'
     cases:
     - match: 1
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8589
+      # ../.source/TheCostofDisease_Eng_v10.cs:8589
       - type: 'assign'
         var: 'let1'
         expr: 'nameB'
     - match: 2
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8593
+      # ../.source/TheCostofDisease_Eng_v10.cs:8593
       - type: 'assign'
         var: 'let2'
         expr: 'nameB'
     - match: 3
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8597
+      # ../.source/TheCostofDisease_Eng_v10.cs:8597
       - type: 'assign'
         var: 'let3'
         expr: 'nameB'
     - match: 4
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8601
+      # ../.source/TheCostofDisease_Eng_v10.cs:8601
       - type: 'assign'
         var: 'let4'
         expr: 'nameB'
     - match: 5
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8605
+      # ../.source/TheCostofDisease_Eng_v10.cs:8605
       - type: 'assign'
         var: 'let5'
         expr: 'nameB'
     - match: 6
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8609
+      # ../.source/TheCostofDisease_Eng_v10.cs:8609
       - type: 'assign'
         var: 'let6'
         expr: 'nameB'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8611
+  # ../.source/TheCostofDisease_Eng_v10.cs:8611
   - type: 'switch'
     on: 'pc'
     cases:
     - match: 1
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8613
+      # ../.source/TheCostofDisease_Eng_v10.cs:8613
       - type: 'assign'
         var: 'let1'
         expr: 'nameC'
     - match: 2
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8617
+      # ../.source/TheCostofDisease_Eng_v10.cs:8617
       - type: 'assign'
         var: 'let2'
         expr: 'nameC'
     - match: 3
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8621
+      # ../.source/TheCostofDisease_Eng_v10.cs:8621
       - type: 'assign'
         var: 'let3'
         expr: 'nameC'
     - match: 4
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8625
+      # ../.source/TheCostofDisease_Eng_v10.cs:8625
       - type: 'assign'
         var: 'let4'
         expr: 'nameC'
     - match: 5
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8629
+      # ../.source/TheCostofDisease_Eng_v10.cs:8629
       - type: 'assign'
         var: 'let5'
         expr: 'nameC'
     - match: 6
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8633
+      # ../.source/TheCostofDisease_Eng_v10.cs:8633
       - type: 'assign'
         var: 'let6'
         expr: 'nameC'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8635
+  # ../.source/TheCostofDisease_Eng_v10.cs:8635
   - type: 'switch'
     on: 'pd'
     cases:
     - match: 1
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8637
+      # ../.source/TheCostofDisease_Eng_v10.cs:8637
       - type: 'assign'
         var: 'let1'
         expr: 'nameD'
     - match: 2
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8641
+      # ../.source/TheCostofDisease_Eng_v10.cs:8641
       - type: 'assign'
         var: 'let2'
         expr: 'nameD'
     - match: 3
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8645
+      # ../.source/TheCostofDisease_Eng_v10.cs:8645
       - type: 'assign'
         var: 'let3'
         expr: 'nameD'
     - match: 4
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8649
+      # ../.source/TheCostofDisease_Eng_v10.cs:8649
       - type: 'assign'
         var: 'let4'
         expr: 'nameD'
     - match: 5
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8653
+      # ../.source/TheCostofDisease_Eng_v10.cs:8653
       - type: 'assign'
         var: 'let5'
         expr: 'nameD'
     - match: 6
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8657
+      # ../.source/TheCostofDisease_Eng_v10.cs:8657
       - type: 'assign'
         var: 'let6'
         expr: 'nameD'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8659
+  # ../.source/TheCostofDisease_Eng_v10.cs:8659
   - type: 'switch'
     on: 'pe'
     cases:
     - match: 1
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8661
+      # ../.source/TheCostofDisease_Eng_v10.cs:8661
       - type: 'assign'
         var: 'let1'
         expr: 'nameE'
     - match: 2
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8665
+      # ../.source/TheCostofDisease_Eng_v10.cs:8665
       - type: 'assign'
         var: 'let2'
         expr: 'nameE'
     - match: 3
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8669
+      # ../.source/TheCostofDisease_Eng_v10.cs:8669
       - type: 'assign'
         var: 'let3'
         expr: 'nameE'
     - match: 4
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8673
+      # ../.source/TheCostofDisease_Eng_v10.cs:8673
       - type: 'assign'
         var: 'let4'
         expr: 'nameE'
     - match: 5
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8677
+      # ../.source/TheCostofDisease_Eng_v10.cs:8677
       - type: 'assign'
         var: 'let5'
         expr: 'nameE'
     - match: 6
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8681
+      # ../.source/TheCostofDisease_Eng_v10.cs:8681
       - type: 'assign'
         var: 'let6'
         expr: 'nameE'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8341
+# ../.source/TheCostofDisease_Eng_v10.cs:8341
 - type: 'break'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8342
+# ../.source/TheCostofDisease_Eng_v10.cs:8342
 - type: 'conditional'
   if: '!letterSetRandomize'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8344
+  # ../.source/TheCostofDisease_Eng_v10.cs:8344
   - type: 'assign'
     var: 'letter'
     expr: '[1, 2, 3, 4, 5, 6]'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8345
+  # ../.source/TheCostofDisease_Eng_v10.cs:8345
   - type: 'assign'
     var: 'letter'
     expr: 'letter.shuffled("Lettercode_1")'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8346
+  # ../.source/TheCostofDisease_Eng_v10.cs:8346
   - type: 'assign'
     var: 'pa'
     expr: 'letter[0]'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8347
+  # ../.source/TheCostofDisease_Eng_v10.cs:8347
   - type: 'assign'
     var: 'pb'
     expr: 'letter[1]'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8348
+  # ../.source/TheCostofDisease_Eng_v10.cs:8348
   - type: 'assign'
     var: 'pc'
     expr: 'letter[2]'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8349
+  # ../.source/TheCostofDisease_Eng_v10.cs:8349
   - type: 'assign'
     var: 'pd'
     expr: 'letter[3]'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8350
+  # ../.source/TheCostofDisease_Eng_v10.cs:8350
   - type: 'assign'
     var: 'pe'
     expr: 'letter[4]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8352
+# ../.source/TheCostofDisease_Eng_v10.cs:8352
 - type: 'switch'
   on: 'pa'
   cases:
   - match: 1
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8354
+    # ../.source/TheCostofDisease_Eng_v10.cs:8354
     - type: 'assign'
       var: 'let1'
       expr: 'nameA'
   - match: 2
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8358
+    # ../.source/TheCostofDisease_Eng_v10.cs:8358
     - type: 'assign'
       var: 'let2'
       expr: 'nameA'
   - match: 3
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8362
+    # ../.source/TheCostofDisease_Eng_v10.cs:8362
     - type: 'assign'
       var: 'let3'
       expr: 'nameA'
   - match: 4
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8366
+    # ../.source/TheCostofDisease_Eng_v10.cs:8366
     - type: 'assign'
       var: 'let4'
       expr: 'nameA'
   - match: 5
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8370
+    # ../.source/TheCostofDisease_Eng_v10.cs:8370
     - type: 'assign'
       var: 'let5'
       expr: 'nameA'
   - match: 6
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8374
+    # ../.source/TheCostofDisease_Eng_v10.cs:8374
     - type: 'assign'
       var: 'let6'
       expr: 'nameA'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8376
+# ../.source/TheCostofDisease_Eng_v10.cs:8376
 - type: 'switch'
   on: 'pb'
   cases:
   - match: 1
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8378
+    # ../.source/TheCostofDisease_Eng_v10.cs:8378
     - type: 'assign'
       var: 'let1'
       expr: 'nameB'
   - match: 2
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8382
+    # ../.source/TheCostofDisease_Eng_v10.cs:8382
     - type: 'assign'
       var: 'let2'
       expr: 'nameB'
   - match: 3
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8386
+    # ../.source/TheCostofDisease_Eng_v10.cs:8386
     - type: 'assign'
       var: 'let3'
       expr: 'nameB'
   - match: 4
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8390
+    # ../.source/TheCostofDisease_Eng_v10.cs:8390
     - type: 'assign'
       var: 'let4'
       expr: 'nameB'
   - match: 5
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8394
+    # ../.source/TheCostofDisease_Eng_v10.cs:8394
     - type: 'assign'
       var: 'let5'
       expr: 'nameB'
   - match: 6
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8398
+    # ../.source/TheCostofDisease_Eng_v10.cs:8398
     - type: 'assign'
       var: 'let6'
       expr: 'nameB'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8400
+# ../.source/TheCostofDisease_Eng_v10.cs:8400
 - type: 'switch'
   on: 'pc'
   cases:
   - match: 1
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8402
+    # ../.source/TheCostofDisease_Eng_v10.cs:8402
     - type: 'conditional'
       conditions:
       - if: 'players == 3'
@@ -453,7 +453,7 @@ nodes:
         expr: '[nameA, nameB].shuffled("Lettercode_2")[0]'
   - match: 2
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8406
+    # ../.source/TheCostofDisease_Eng_v10.cs:8406
     - type: 'conditional'
       conditions:
       - if: 'players == 3'
@@ -467,7 +467,7 @@ nodes:
         expr: '[nameA, nameB].shuffled("Lettercode_3")[0]'
   - match: 3
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8410
+    # ../.source/TheCostofDisease_Eng_v10.cs:8410
     - type: 'conditional'
       conditions:
       - if: 'players == 3'
@@ -481,7 +481,7 @@ nodes:
         expr: '[nameA, nameB].shuffled("Lettercode_4")[0]'
   - match: 4
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8414
+    # ../.source/TheCostofDisease_Eng_v10.cs:8414
     - type: 'conditional'
       conditions:
       - if: 'players == 3'
@@ -495,7 +495,7 @@ nodes:
         expr: '[nameA, nameB].shuffled("Lettercode_5")[0]'
   - match: 5
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8418
+    # ../.source/TheCostofDisease_Eng_v10.cs:8418
     - type: 'conditional'
       conditions:
       - if: 'players == 3'
@@ -509,7 +509,7 @@ nodes:
         expr: '[nameA, nameB].shuffled("Lettercode_6")[0]'
   - match: 6
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8422
+    # ../.source/TheCostofDisease_Eng_v10.cs:8422
     - type: 'conditional'
       conditions:
       - if: 'players == 3'
@@ -521,13 +521,13 @@ nodes:
       - type: 'assign'
         var: 'let6'
         expr: '[nameA, nameB].shuffled("Lettercode_7")[0]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8424
+# ../.source/TheCostofDisease_Eng_v10.cs:8424
 - type: 'switch'
   on: 'pd'
   cases:
   - match: 1
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8426
+    # ../.source/TheCostofDisease_Eng_v10.cs:8426
     - type: 'switch'
       on: 'players'
       cases:
@@ -547,7 +547,7 @@ nodes:
         expr: '[nameA, nameB].shuffled("Lettercode_9")[0]'
   - match: 2
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8430
+    # ../.source/TheCostofDisease_Eng_v10.cs:8430
     - type: 'switch'
       on: 'players'
       cases:
@@ -567,7 +567,7 @@ nodes:
         expr: '[nameA, nameB].shuffled("Lettercode_11")[0]'
   - match: 3
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8434
+    # ../.source/TheCostofDisease_Eng_v10.cs:8434
     - type: 'switch'
       on: 'players'
       cases:
@@ -587,7 +587,7 @@ nodes:
         expr: '[nameA, nameB].shuffled("Lettercode_13")[0]'
   - match: 4
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8438
+    # ../.source/TheCostofDisease_Eng_v10.cs:8438
     - type: 'switch'
       on: 'players'
       cases:
@@ -607,7 +607,7 @@ nodes:
         expr: '[nameA, nameB].shuffled("Lettercode_15")[0]'
   - match: 5
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8442
+    # ../.source/TheCostofDisease_Eng_v10.cs:8442
     - type: 'switch'
       on: 'players'
       cases:
@@ -627,7 +627,7 @@ nodes:
         expr: '[nameA, nameB].shuffled("Lettercode_17")[0]'
   - match: 6
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8446
+    # ../.source/TheCostofDisease_Eng_v10.cs:8446
     - type: 'switch'
       on: 'players'
       cases:
@@ -645,13 +645,13 @@ nodes:
       - type: 'assign'
         var: 'let6'
         expr: '[nameA, nameB].shuffled("Lettercode_19")[0]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8448
+# ../.source/TheCostofDisease_Eng_v10.cs:8448
 - type: 'switch'
   on: 'pe'
   cases:
   - match: 1
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8450
+    # ../.source/TheCostofDisease_Eng_v10.cs:8450
     - type: 'switch'
       on: 'players'
       cases:
@@ -676,7 +676,7 @@ nodes:
         expr: '[nameA, nameB].shuffled("Lettercode_22")[0]'
   - match: 2
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8454
+    # ../.source/TheCostofDisease_Eng_v10.cs:8454
     - type: 'switch'
       on: 'players'
       cases:
@@ -701,7 +701,7 @@ nodes:
         expr: '[nameA, nameB].shuffled("Lettercode_25")[0]'
   - match: 3
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8458
+    # ../.source/TheCostofDisease_Eng_v10.cs:8458
     - type: 'switch'
       on: 'players'
       cases:
@@ -726,7 +726,7 @@ nodes:
         expr: '[nameA, nameB].shuffled("Lettercode_28")[0]'
   - match: 4
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8462
+    # ../.source/TheCostofDisease_Eng_v10.cs:8462
     - type: 'switch'
       on: 'players'
       cases:
@@ -751,7 +751,7 @@ nodes:
         expr: '[nameA, nameB].shuffled("Lettercode_31")[0]'
   - match: 5
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8466
+    # ../.source/TheCostofDisease_Eng_v10.cs:8466
     - type: 'switch'
       on: 'players'
       cases:
@@ -776,7 +776,7 @@ nodes:
         expr: '[nameA, nameB].shuffled("Lettercode_34")[0]'
   - match: 6
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:8470
+    # ../.source/TheCostofDisease_Eng_v10.cs:8470
     - type: 'switch'
       on: 'players'
       cases:

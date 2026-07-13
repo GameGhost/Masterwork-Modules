@@ -1,33 +1,33 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22189
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:22189
 ---
 format: 'mws/0.4'
 passage_id: 'OhYesTheyDead'
-# ../en-US.restext:1711 | "A \"Hero's\" Welcome"
+# ../en-US.restext:1710 | "A \"Hero's\" Welcome"
 title: 'restext://OhYesTheyDead_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22197
+# ../.source/TheCostofDisease_Eng_v10.cs:22197
 - type: 'text'
-  # ../en-US.restext:1712 | "The cousins enjoyed fresh..."
+  # ../en-US.restext:1711 | "The cousins enjoyed fresh..."
   value: 'restext://OhYesTheyDead_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22198
+# ../.source/TheCostofDisease_Eng_v10.cs:22198
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22200
+# ../.source/TheCostofDisease_Eng_v10.cs:22200
 - type: 'text'
-  # ../en-US.restext:1713 | "The town gallows had fall..."
+  # ../en-US.restext:1712 | "The town gallows had fall..."
   value: 'restext://OhYesTheyDead_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22201
+# ../.source/TheCostofDisease_Eng_v10.cs:22201
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22203
+# ../.source/TheCostofDisease_Eng_v10.cs:22203
 - type: 'text'
-  # ../en-US.restext:1714 | "The people would speak of..."
+  # ../en-US.restext:1713 | "The people would speak of..."
   value: 'restext://OhYesTheyDead_004'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22208
+# ../.source/TheCostofDisease_Eng_v10.cs:22208
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22212
+# ../.source/TheCostofDisease_Eng_v10.cs:22212
 - type: 'popup'
   layout: 'setup'
   # ../en-US.restext:36 | "Click to continue..."
@@ -37,33 +37,33 @@ nodes:
   okay: 'restext://UIButton_Close' # ./00173-GloomyGothic3.mws.yaml
   snapshot: true
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22228
+  # ../.source/TheCostofDisease_Eng_v10.cs:22228
   - type: 'image'
     asset: 'image://setup/ScoreTrackMarker'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22221
+  # ../.source/TheCostofDisease_Eng_v10.cs:22221
   - type: 'assign'
     var: 'taxes'
     # ../en-US.restext:27 | "no"
     expr: '"restext://Choice_No_Lower"'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22229
+  # ../.source/TheCostofDisease_Eng_v10.cs:22229
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22230
+  # ../.source/TheCostofDisease_Eng_v10.cs:22230
   - type: 'text'
-    # ../en-US.restext:1715 | "The player(s) who contrib..."
+    # ../en-US.restext:1714 | "The player(s) who contrib..."
     value: 'restext://OhYesTheyDead_005'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22241
+  # ../.source/TheCostofDisease_Eng_v10.cs:22241
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22243
+  # ../.source/TheCostofDisease_Eng_v10.cs:22243
   - type: 'text'
-    # ../en-US.restext:1716 | "Move the {icon:angrymob_i..."
+    # ../en-US.restext:1715 | "Move the {icon:angrymob_i..."
     value: 'restext://OhYesTheyDead_006'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22253
+  # ../.source/TheCostofDisease_Eng_v10.cs:22253
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:22255
+  # ../.source/TheCostofDisease_Eng_v10.cs:22255
   - type: 'text'
-    # ../en-US.restext:1717 | "All contributed Experimen..."
+    # ../en-US.restext:1716 | "All contributed Experimen..."
     value: 'restext://OhYesTheyDead_007'

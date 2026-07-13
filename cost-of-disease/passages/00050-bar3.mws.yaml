@@ -1,73 +1,73 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6408
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:6408
 ---
 format: 'mws/0.4'
 passage_id: 'bar3'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6413
+# ../.source/TheCostofDisease_Eng_v10.cs:6413
 - type: 'let'
   var: '_rnd_bar3_0'
   expr: 'rand_between(1, 999, "bar3_0")'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6415
+# ../.source/TheCostofDisease_Eng_v10.cs:6415
 - type: 'let'
   var: '_rnd_bar3_1'
   expr: 'rand_between(1, 999, "bar3_1")'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6412
+# ../.source/TheCostofDisease_Eng_v10.cs:6412
 - type: 'text'
-  # ../en-US.restext:700 | "**SWORN STATEMENT - Case ..."
+  # ../en-US.restext:699 | "**SWORN STATEMENT - Case ..."
   value: 'restext://bar3_001'
   lets:
   - '_rnd_bar3_0'
   - '_rnd_bar3_1'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6418
+# ../.source/TheCostofDisease_Eng_v10.cs:6418
 - type: 'assign'
   var: 'bar3'
   expr: 'rand_between(1, 2, "bar3_2")'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6420
+# ../.source/TheCostofDisease_Eng_v10.cs:6420
 - type: 'conditional'
   conditions:
   - if: 'bar3 == 1'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6422
+    # ../.source/TheCostofDisease_Eng_v10.cs:6422
     - type: 'text'
-      # ../en-US.restext:703 | "It was very much in poor ..."
+      # ../en-US.restext:702 | "It was very much in poor ..."
       value: 'restext://bar3_004'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6428
+    # ../.source/TheCostofDisease_Eng_v10.cs:6428
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6430
+    # ../.source/TheCostofDisease_Eng_v10.cs:6430
     - type: 'text'
-      # ../en-US.restext:704 | "I have since reimbursed t..."
+      # ../en-US.restext:703 | "I have since reimbursed t..."
       value: 'restext://bar3_005'
   else:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6438
+  # ../.source/TheCostofDisease_Eng_v10.cs:6438
   - type: 'text'
-    # ../en-US.restext:701 | "During a spirited convers..."
+    # ../en-US.restext:700 | "During a spirited convers..."
     value: 'restext://bar3_002'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6439
+  # ../.source/TheCostofDisease_Eng_v10.cs:6439
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6441
+  # ../.source/TheCostofDisease_Eng_v10.cs:6441
   - type: 'text'
-    # ../en-US.restext:702 | "An exchange of bitter wor..."
+    # ../en-US.restext:701 | "An exchange of bitter wor..."
     value: 'restext://bar3_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6448
+# ../.source/TheCostofDisease_Eng_v10.cs:6448
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6452
+# ../.source/TheCostofDisease_Eng_v10.cs:6452
 - type: 'popup'
   layout: 'setup'
   # ../en-US.restext:343 | "Accept"
   okay: 'restext://UIButton_Accept'
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6456
+  # ../.source/TheCostofDisease_Eng_v10.cs:6456
   - type: 'image'
     asset: 'image://setup/Creepy_Icon'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6457
+  # ../.source/TheCostofDisease_Eng_v10.cs:6457
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6458
+  # ../.source/TheCostofDisease_Eng_v10.cs:6458
   - type: 'text'
-    # ../en-US.restext:705 | "Place a {icon:creepy_icon..."
+    # ../en-US.restext:704 | "Place a {icon:creepy_icon..."
     value: 'restext://bar3_006'

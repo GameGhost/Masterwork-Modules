@@ -1,10 +1,10 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15671
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:15671
 ---
 format: 'mws/0.4'
 passage_id: 'MWCompleteHubA'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15676
+# ../.source/TheCostofDisease_Eng_v10.cs:15676
 - type: 'let'
   var: '_rnd_MWCompleteHubA_0'
   # ../en-US.restext:268 | Narrative_MasterworkExclaim_WorkDone | "The Work is Done"
@@ -14,62 +14,62 @@ nodes:
   # ../en-US.restext:263 | Narrative_MasterworkExclaim_GloriousCreation | "My Glorious Creation"
   # ../en-US.restext:264 | Narrative_MasterworkExclaim_GloryForever | "The Glory is Mine Forever!"
   expr: '["restext://Narrative_MasterworkExclaim_WorkDone", "restext://Narrative_MasterworkExclaim_Impossible", "restext://Narrative_MasterworkExclaim_LegacyEnsured", "restext://Narrative_MasterworkExclaim_Laugh", "restext://Narrative_MasterworkExclaim_GloriousCreation", "restext://Narrative_MasterworkExclaim_GloryForever"].shuffled("MWCompleteHubA_0")[0]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15676
+# ../.source/TheCostofDisease_Eng_v10.cs:15676
 - type: 'text'
-  # ../en-US.restext:1319 | "**{_rnd_MWCompleteHubA_0}..."
+  # ../en-US.restext:1318 | "**{_rnd_MWCompleteHubA_0}..."
   value: 'restext://MWCompleteHubA_007'
   lets:
   - '_rnd_MWCompleteHubA_0'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15683
+# ../.source/TheCostofDisease_Eng_v10.cs:15683
 - type: 'break'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15684
+# ../.source/TheCostofDisease_Eng_v10.cs:15684
 - type: 'switch'
   on: 'typeA'
   cases:
   - match: 'creature'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15686
+    # ../.source/TheCostofDisease_Eng_v10.cs:15686
     - type: 'text'
       # ../en-US.restext:261 | "Upon the stroke of midnig..."
       value: 'restext://Narrative_MasterworkCreation_Lightning'
   - match: 'power'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15692
+    # ../.source/TheCostofDisease_Eng_v10.cs:15692
     - type: 'text'
-      # ../en-US.restext:1321 | "To see my work in the fle..."
+      # ../en-US.restext:1320 | "To see my work in the fle..."
       value: 'restext://MWCompleteHubA_010'
   - match: 'robot'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15700
+    # ../.source/TheCostofDisease_Eng_v10.cs:15700
     - type: 'text'
-      # ../en-US.restext:1322 | "A brief, blinding flash a..."
+      # ../en-US.restext:1321 | "A brief, blinding flash a..."
       value: 'restext://MWCompleteHubA_011'
   - match: 'weapon'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15709
+    # ../.source/TheCostofDisease_Eng_v10.cs:15709
     - type: 'text'
       # ../en-US.restext:262 | "I seized the firing mecha..."
       value: 'restext://Narrative_MasterworkCreation_Weapon'
   - match: 'medicine'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15713
+    # ../.source/TheCostofDisease_Eng_v10.cs:15713
     - type: 'text'
-      # ../en-US.restext:1323 | "I tapped the glass bottle..."
+      # ../en-US.restext:1322 | "I tapped the glass bottle..."
       value: 'restext://MWCompleteHubA_013'
   - match: 'drug'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15722
+    # ../.source/TheCostofDisease_Eng_v10.cs:15722
     - type: 'text'
-      # ../en-US.restext:1324 | "I observed the effects as..."
+      # ../en-US.restext:1323 | "I observed the effects as..."
       value: 'restext://MWCompleteHubA_014'
   - match: 'demon'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15728
+    # ../.source/TheCostofDisease_Eng_v10.cs:15728
     - type: 'text'
-      # ../en-US.restext:1325 | "The world darkened around..."
+      # ../en-US.restext:1324 | "The world darkened around..."
       value: 'restext://MWCompleteHubA_015'
   default:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:15736
+  # ../.source/TheCostofDisease_Eng_v10.cs:15736
   - type: 'text'
-    # ../en-US.restext:1320 | "The preparations proved t..."
+    # ../en-US.restext:1319 | "The preparations proved t..."
     value: 'restext://MWCompleteHubA_008'

@@ -1,90 +1,90 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32337
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:32337
 ---
 format: 'mws/0.4'
 passage_id: 'InsanitySign'
-# ../en-US.restext:2566 | "Another Opportunity"
+# ../en-US.restext:2565 | "Another Opportunity"
 title: 'restext://InsanitySign_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32344
+# ../.source/TheCostofDisease_Eng_v10.cs:32344
 - type: 'text'
-  # ../en-US.restext:2567 | "Along with a newfound sen..."
+  # ../en-US.restext:2566 | "Along with a newfound sen..."
   value: 'restext://InsanitySign_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32347
+# ../.source/TheCostofDisease_Eng_v10.cs:32347
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32351
+# ../.source/TheCostofDisease_Eng_v10.cs:32351
 - type: 'text'
-  # ../en-US.restext:2568 | "**Please choose the playe..."
+  # ../en-US.restext:2567 | "**Please choose the playe..."
   value: 'restext://InsanitySign_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32359
+# ../.source/TheCostofDisease_Eng_v10.cs:32359
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32362
+# ../.source/TheCostofDisease_Eng_v10.cs:32362
 - type: 'link'
   label: '{nameA}'
   target: 'SanityChoice' # ./00127-SanityChoice.mws.yaml
   snapshot: true
   onclick:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32394
+  # ../.source/TheCostofDisease_Eng_v10.cs:32394
   - type: 'assign'
     var: 'saneplayer'
     expr: 'nameA'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32363
+# ../.source/TheCostofDisease_Eng_v10.cs:32363
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32366
+# ../.source/TheCostofDisease_Eng_v10.cs:32366
 - type: 'link'
   label: '{nameB}'
   target: 'SanityChoice' # ./00127-SanityChoice.mws.yaml
   snapshot: true
   onclick:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32401
+  # ../.source/TheCostofDisease_Eng_v10.cs:32401
   - type: 'assign'
     var: 'saneplayer'
     expr: 'nameB'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32367
+# ../.source/TheCostofDisease_Eng_v10.cs:32367
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32369
+# ../.source/TheCostofDisease_Eng_v10.cs:32369
 - type: 'conditional'
   if: 'players > 2'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32372
+  # ../.source/TheCostofDisease_Eng_v10.cs:32372
   - type: 'link'
     label: '{nameC}'
     target: 'SanityChoice' # ./00127-SanityChoice.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32408
+    # ../.source/TheCostofDisease_Eng_v10.cs:32408
     - type: 'assign'
       var: 'saneplayer'
       expr: 'nameC'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32376
+# ../.source/TheCostofDisease_Eng_v10.cs:32376
 - type: 'conditional'
   if: 'players > 3'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32379
+  # ../.source/TheCostofDisease_Eng_v10.cs:32379
   - type: 'link'
     label: '{nameD}'
     target: 'SanityChoice' # ./00127-SanityChoice.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32415
+    # ../.source/TheCostofDisease_Eng_v10.cs:32415
     - type: 'assign'
       var: 'saneplayer'
       expr: 'nameD'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32383
+# ../.source/TheCostofDisease_Eng_v10.cs:32383
 - type: 'conditional'
   if: 'players > 4'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32386
+  # ../.source/TheCostofDisease_Eng_v10.cs:32386
   - type: 'link'
     label: '{nameE}'
     target: 'SanityChoice' # ./00127-SanityChoice.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32422
+    # ../.source/TheCostofDisease_Eng_v10.cs:32422
     - type: 'assign'
       var: 'saneplayer'
       expr: 'nameE'

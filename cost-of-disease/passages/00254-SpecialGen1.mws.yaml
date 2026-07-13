@@ -1,45 +1,45 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27365
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:27365
 ---
 format: 'mws/0.4'
 passage_id: 'SpecialGen1'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27367
+# ../.source/TheCostofDisease_Eng_v10.cs:27367
 - type: 'popup'
   layout: 'setup'
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27374
+  # ../.source/TheCostofDisease_Eng_v10.cs:27374
   - type: 'image'
     asset: 'image://setup/StorybookToken'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27375
+  # ../.source/TheCostofDisease_Eng_v10.cs:27375
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27380
+  # ../.source/TheCostofDisease_Eng_v10.cs:27380
   - type: 'text'
-    # ../en-US.restext:2161 | "**Retrieve the {icon:stor..."
+    # ../en-US.restext:2160 | "**Retrieve the {icon:stor..."
     value: 'restext://SpecialGen1_001'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27385
+  # ../.source/TheCostofDisease_Eng_v10.cs:27385
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27387
+  # ../.source/TheCostofDisease_Eng_v10.cs:27387
+  - type: 'text'
+    # ../en-US.restext:2161 | "Place one token on **spac..."
+    value: 'restext://SpecialGen1_002'
+  # ../.source/TheCostofDisease_Eng_v10.cs:27397
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/TheCostofDisease_Eng_v10.cs:27399
   - type: 'text'
     # ../en-US.restext:2162 | "Place one token on **spac..."
-    value: 'restext://SpecialGen1_002'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27397
-  - type: 'break'
-    style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27399
-  - type: 'text'
-    # ../en-US.restext:2163 | "Place one token on **spac..."
     value: 'restext://SpecialGen1_003'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27409
+  # ../.source/TheCostofDisease_Eng_v10.cs:27409
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27413
+  # ../.source/TheCostofDisease_Eng_v10.cs:27413
   - type: 'text'
-    # ../en-US.restext:2164 | "_When a player's piece re..."
+    # ../en-US.restext:2163 | "_When a player's piece re..."
     value: 'restext://SpecialGen1_004'
   # ../en-US.restext:343 | "Accept"
   okay: 'restext://UIButton_Accept'

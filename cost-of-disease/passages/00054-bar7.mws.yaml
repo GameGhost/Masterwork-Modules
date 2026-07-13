@@ -1,55 +1,55 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6717
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:6717
 ---
 format: 'mws/0.4'
 passage_id: 'bar7'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6722
+# ../.source/TheCostofDisease_Eng_v10.cs:6722
 - type: 'let'
   var: '_rnd_bar7_0'
   expr: 'rand_between(1, 999, "bar7_0")'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6724
+# ../.source/TheCostofDisease_Eng_v10.cs:6724
 - type: 'let'
   var: '_rnd_bar7_1'
   expr: 'rand_between(1, 999, "bar7_1")'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6721
+# ../.source/TheCostofDisease_Eng_v10.cs:6721
 - type: 'text'
-  # ../en-US.restext:731 | "**SWORN STATEMENT - Case ..."
+  # ../en-US.restext:730 | "**SWORN STATEMENT - Case ..."
   value: 'restext://bar7_001'
   lets:
   - '_rnd_bar7_0'
   - '_rnd_bar7_1'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6726
+# ../.source/TheCostofDisease_Eng_v10.cs:6726
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6728
+# ../.source/TheCostofDisease_Eng_v10.cs:6728
 - type: 'text'
-  # ../en-US.restext:732 | "While the cemetery has ce..."
+  # ../en-US.restext:731 | "While the cemetery has ce..."
   value: 'restext://bar7_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6729
+# ../.source/TheCostofDisease_Eng_v10.cs:6729
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6731
+# ../.source/TheCostofDisease_Eng_v10.cs:6731
 - type: 'text'
-  # ../en-US.restext:733 | "After being treated for a..."
+  # ../en-US.restext:732 | "After being treated for a..."
   value: 'restext://bar7_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6739
+# ../.source/TheCostofDisease_Eng_v10.cs:6739
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6743
+# ../.source/TheCostofDisease_Eng_v10.cs:6743
 - type: 'popup'
   layout: 'setup'
   # ../en-US.restext:343 | "Accept"
   okay: 'restext://UIButton_Accept'
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6747
+  # ../.source/TheCostofDisease_Eng_v10.cs:6747
   - type: 'image'
     asset: 'image://setup/Creepy_Icon'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6748
+  # ../.source/TheCostofDisease_Eng_v10.cs:6748
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:6749
+  # ../.source/TheCostofDisease_Eng_v10.cs:6749
   - type: 'text'
-    # ../en-US.restext:734 | "Place a {icon:creepy_icon..."
+    # ../en-US.restext:733 | "Place a {icon:creepy_icon..."
     value: 'restext://bar7_004'

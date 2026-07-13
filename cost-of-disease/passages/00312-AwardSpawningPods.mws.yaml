@@ -1,37 +1,37 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32100
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:32100
 ---
 format: 'mws/0.4'
 passage_id: 'AwardSpawningPods'
-# ../en-US.restext:2548 | "An Award For Research"
+# ../en-US.restext:2547 | "An Award For Research"
 title: 'restext://AwardSpawningPods_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32108
+# ../.source/TheCostofDisease_Eng_v10.cs:32108
 - type: 'conditional'
   conditions:
   # ../en-US.restext:31 | "yes"
   - if: 'vialuse == "restext://Choice_Yes_Lower"'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32110
+    # ../.source/TheCostofDisease_Eng_v10.cs:32110
     - type: 'text'
-      # ../en-US.restext:2550 | "The monsters felt guilty ..."
+      # ../en-US.restext:2549 | "The monsters felt guilty ..."
       value: 'restext://AwardSpawningPods_003'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32111
+    # ../.source/TheCostofDisease_Eng_v10.cs:32111
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32113
+    # ../.source/TheCostofDisease_Eng_v10.cs:32113
     - type: 'text'
-      # ../en-US.restext:2551 | "Within hours, the new str..."
+      # ../en-US.restext:2550 | "Within hours, the new str..."
       value: 'restext://AwardSpawningPods_004'
   else:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32119
+  # ../.source/TheCostofDisease_Eng_v10.cs:32119
   - type: 'text'
-    # ../en-US.restext:2549 | "Though uninterested in th..."
+    # ../en-US.restext:2548 | "Though uninterested in th..."
     value: 'restext://AwardSpawningPods_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32121
+# ../.source/TheCostofDisease_Eng_v10.cs:32121
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32125
+# ../.source/TheCostofDisease_Eng_v10.cs:32125
 - type: 'popup'
   layout: 'setup'
   # ../en-US.restext:41 | "Click to continue to Fina..."
@@ -41,21 +41,21 @@ nodes:
   okay: 'restext://UIButton_Close' # ./00013-Scoring.mws.yaml
   snapshot: true
   header:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32140
+  # ../.source/TheCostofDisease_Eng_v10.cs:32140
   - type: 'image'
     asset: 'image://setup/MFWlogo'
     style: 'setup-image'
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32141
+  # ../.source/TheCostofDisease_Eng_v10.cs:32141
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32142
+  # ../.source/TheCostofDisease_Eng_v10.cs:32142
   - type: 'text'
-    # ../en-US.restext:2552 | "Award the **Spawning Pods..."
+    # ../en-US.restext:2551 | "Award the **Spawning Pods..."
     value: 'restext://AwardSpawningPods_005'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32161
+  # ../.source/TheCostofDisease_Eng_v10.cs:32161
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:32163
+  # ../.source/TheCostofDisease_Eng_v10.cs:32163
   - type: 'text'
-    # ../en-US.restext:2553 | "Ignore all plot costs whe..."
+    # ../en-US.restext:2552 | "Ignore all plot costs whe..."
     value: 'restext://AwardSpawningPods_006'

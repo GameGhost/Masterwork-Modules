@@ -1,131 +1,131 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27037
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:27037
 ---
 format: 'mws/0.4'
 passage_id: 'PanaceaMessage'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27042
+# ../.source/TheCostofDisease_Eng_v10.cs:27042
 - type: 'text'
   # ../en-US.restext:311 | "**Carefully pick up the S..."
   value: 'restext://Storybook_PickUpPrivate_Bold'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27045
+# ../.source/TheCostofDisease_Eng_v10.cs:27045
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27050
+# ../.source/TheCostofDisease_Eng_v10.cs:27050
 - type: 'popup'
   # ../en-US.restext:53 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   snapshot: true
   content:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27090
+  # ../.source/TheCostofDisease_Eng_v10.cs:27090
   - type: 'text'
-    # ../en-US.restext:2135 | "**Unintended Results**"
+    # ../en-US.restext:2134 | "**Unintended Results**"
     value: 'restext://PanaceaMessage_001'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27092
+  # ../.source/TheCostofDisease_Eng_v10.cs:27092
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27093
+  # ../.source/TheCostofDisease_Eng_v10.cs:27093
   - type: 'text'
-    # ../en-US.restext:2136 | "The dedication to the tas..."
+    # ../en-US.restext:2135 | "The dedication to the tas..."
     value: 'restext://PanaceaMessage_002'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27094
+  # ../.source/TheCostofDisease_Eng_v10.cs:27094
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27096
+  # ../.source/TheCostofDisease_Eng_v10.cs:27096
   - type: 'text'
-    # ../en-US.restext:2137 | "While technically the res..."
+    # ../en-US.restext:2136 | "While technically the res..."
     value: 'restext://PanaceaMessage_003'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27100
+  # ../.source/TheCostofDisease_Eng_v10.cs:27100
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27102
+  # ../.source/TheCostofDisease_Eng_v10.cs:27102
   - type: 'text'
-    # ../en-US.restext:2138 | "A concoction such as this..."
+    # ../en-US.restext:2137 | "A concoction such as this..."
     value: 'restext://PanaceaMessage_004'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27105
+  # ../.source/TheCostofDisease_Eng_v10.cs:27105
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27109
+  # ../.source/TheCostofDisease_Eng_v10.cs:27109
   - type: 'text'
     # ../en-US.restext:138 | "**CHOOSE:**"
     value: 'restext://Heading_ChooseColon_Caps'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27111
+  # ../.source/TheCostofDisease_Eng_v10.cs:27111
   - type: 'break'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27114
+  # ../.source/TheCostofDisease_Eng_v10.cs:27114
   - type: 'text'
-    # ../en-US.restext:2139 | "**Do you wish to publish ..."
+    # ../en-US.restext:2138 | "**Do you wish to publish ..."
     value: 'restext://PanaceaMessage_005'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27117
+  # ../.source/TheCostofDisease_Eng_v10.cs:27117
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27120
+  # ../.source/TheCostofDisease_Eng_v10.cs:27120
   - type: 'link'
-    # ../en-US.restext:2140 | "Publish my findings for fame."
+    # ../en-US.restext:2139 | "Publish my findings for fame."
     label: 'restext://PanaceaMessage_006'
     target: 'Panacea1' # ./00058-Panacea1.mws.yaml
     snapshot: true
     onclick:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27056
+    # ../.source/TheCostofDisease_Eng_v10.cs:27056
     - type: 'assign'
       var: 'cured'
       expr: '2'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27057
+    # ../.source/TheCostofDisease_Eng_v10.cs:27057
     - type: 'assign'
       var: 'pana'
       expr: '"publish"'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27121
+  # ../.source/TheCostofDisease_Eng_v10.cs:27121
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27123
+  # ../.source/TheCostofDisease_Eng_v10.cs:27123
   - type: 'switch'
     on: 'round'
     cases:
     - match: 7
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27126
+      # ../.source/TheCostofDisease_Eng_v10.cs:27126
       - type: 'link'
-        # ../en-US.restext:2141 | "Unleash my creation!"
+        # ../en-US.restext:2140 | "Unleash my creation!"
         label: 'restext://PanaceaMessage_008'
         target: 'Hospital1' # ./00003-Hospital1.mws.yaml
         snapshot: true
         onclick:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27064
+        # ../.source/TheCostofDisease_Eng_v10.cs:27064
         - type: 'assign'
           var: 'cured'
           expr: '2'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27065
+        # ../.source/TheCostofDisease_Eng_v10.cs:27065
         - type: 'assign'
           var: 'pana'
           expr: '"unleash"'
     - match: 8
       nodes:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27131
+      # ../.source/TheCostofDisease_Eng_v10.cs:27131
       - type: 'link'
-        # ../en-US.restext:2141 | "Unleash my creation!"
+        # ../en-US.restext:2140 | "Unleash my creation!"
         label: 'restext://PanaceaMessage_008'
         target: 'Hospital2' # ./00034-Hospital2.mws.yaml
         snapshot: true
         onclick:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27072
+        # ../.source/TheCostofDisease_Eng_v10.cs:27072
         - type: 'assign'
           var: 'cured'
           expr: '2'
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27073
+        # ../.source/TheCostofDisease_Eng_v10.cs:27073
         - type: 'assign'
           var: 'pana'
           expr: '"unleash"'
     default:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27136
+    # ../.source/TheCostofDisease_Eng_v10.cs:27136
     - type: 'link'
-      # ../en-US.restext:2141 | "Unleash my creation!"
+      # ../en-US.restext:2140 | "Unleash my creation!"
       label: 'restext://PanaceaMessage_008'
       target: 'PanaceaTooOld' # ./00059-PanaceaTooOld.mws.yaml
       snapshot: true
       onclick:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27080
+      # ../.source/TheCostofDisease_Eng_v10.cs:27080
       - type: 'assign'
         var: 'cured'
         expr: '2'
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:27081
+      # ../.source/TheCostofDisease_Eng_v10.cs:27081
       - type: 'assign'
         var: 'pana'
         expr: '"unleash"'

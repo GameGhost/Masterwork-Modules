@@ -1,93 +1,93 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25648
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:25648
 ---
 format: 'mws/0.4'
 passage_id: 'SymposiumMiddle'
-# ../en-US.restext:2026 | "A Cure for Yellow Fever"
+# ../en-US.restext:2025 | "A Cure for Yellow Fever"
 title: 'restext://SymposiumMiddle_001'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25655
+# ../.source/TheCostofDisease_Eng_v10.cs:25655
 - type: 'conditional'
   if: 'SymposiumMiddlenextPsg == "" || SymposiumMiddlenextPsg == 0'
   then:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25657
+  # ../.source/TheCostofDisease_Eng_v10.cs:25657
   - type: 'assign'
     var: 'SymposiumMiddlenextPsg'
     expr: 'rand_between(1, 3, "SymposiumMiddle_0")'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25659
+# ../.source/TheCostofDisease_Eng_v10.cs:25659
 - type: 'assign'
   var: 'midquote'
   expr: 'SymposiumMiddlenextPsg'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25661
+# ../.source/TheCostofDisease_Eng_v10.cs:25661
 - type: 'text'
-  # ../en-US.restext:2027 | "\"Vague, tawdry.\" The no..."
+  # ../en-US.restext:2026 | "\"Vague, tawdry.\" The no..."
   value: 'restext://SymposiumMiddle_002'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25663
+# ../.source/TheCostofDisease_Eng_v10.cs:25663
 - type: 'switch'
   on: 'midquote'
   cases:
   - match: 1
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25665
+    # ../.source/TheCostofDisease_Eng_v10.cs:25665
     - type: 'text'
-      # ../en-US.restext:2029 | "\"All angst and ambition ..."
+      # ../en-US.restext:2028 | "\"All angst and ambition ..."
       value: 'restext://SymposiumMiddle_004'
   - match: 2
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25670
+    # ../.source/TheCostofDisease_Eng_v10.cs:25670
     - type: 'text'
-      # ../en-US.restext:2030 | "\"Of note, however, was o..."
+      # ../en-US.restext:2029 | "\"Of note, however, was o..."
       value: 'restext://SymposiumMiddle_005'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25673
+    # ../.source/TheCostofDisease_Eng_v10.cs:25673
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25675
+    # ../.source/TheCostofDisease_Eng_v10.cs:25675
     - type: 'text'
-      # ../en-US.restext:2031 | "'It's simple. Wash your h..."
+      # ../en-US.restext:2030 | "'It's simple. Wash your h..."
       value: 'restext://SymposiumMiddle_006'
   default:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25680
+  # ../.source/TheCostofDisease_Eng_v10.cs:25680
   - type: 'text'
-    # ../en-US.restext:2028 | "\"Delightfully crude, but..."
+    # ../en-US.restext:2027 | "\"Delightfully crude, but..."
     value: 'restext://SymposiumMiddle_003'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25683
+# ../.source/TheCostofDisease_Eng_v10.cs:25683
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25685
+# ../.source/TheCostofDisease_Eng_v10.cs:25685
 - type: 'text'
-  # ../en-US.restext:2032 | "At first they seemed intr..."
+  # ../en-US.restext:2031 | "At first they seemed intr..."
   value: 'restext://SymposiumMiddle_007'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25686
+# ../.source/TheCostofDisease_Eng_v10.cs:25686
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25688
+# ../.source/TheCostofDisease_Eng_v10.cs:25688
 - type: 'conditional'
   conditions:
   # ../en-US.restext:31 | "yes"
   - if: 'pub == "restext://Choice_Yes_Lower"'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25690
+    # ../.source/TheCostofDisease_Eng_v10.cs:25690
     - type: 'text'
-      # ../en-US.restext:2034 | "And it was the **publicat..."
+      # ../en-US.restext:2033 | "And it was the **publicat..."
       value: 'restext://SymposiumMiddle_009'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25702
+    # ../.source/TheCostofDisease_Eng_v10.cs:25702
     - type: 'break'
       style: 'paragraph'
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25704
+    # ../.source/TheCostofDisease_Eng_v10.cs:25704
     - type: 'link'
       # ../en-US.restext:35 | "Click here to continue..."
       label: 'restext://Click_ContinueEllipsis_B'
       target: 'SymposiumSuccess' # ./00023-SymposiumSuccess.mws.yaml
       snapshot: true
   else:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25708
+  # ../.source/TheCostofDisease_Eng_v10.cs:25708
   - type: 'text'
-    # ../en-US.restext:2033 | "And without the publicati..."
+    # ../en-US.restext:2032 | "And without the publicati..."
     value: 'restext://SymposiumMiddle_008'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25715
+  # ../.source/TheCostofDisease_Eng_v10.cs:25715
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:25717
+  # ../.source/TheCostofDisease_Eng_v10.cs:25717
   - type: 'link'
     # ../en-US.restext:35 | "Click here to continue..."
     label: 'restext://Click_ContinueEllipsis_B'

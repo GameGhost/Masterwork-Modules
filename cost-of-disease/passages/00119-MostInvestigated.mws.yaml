@@ -1,78 +1,78 @@
-﻿# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12890
+﻿# ../.source/TheCostofDisease_Eng_v10.cs:12890
 ---
 format: 'mws/0.4'
 passage_id: 'MostInvestigated'
 layout: 'narration'
 nodes:
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12892
+# ../.source/TheCostofDisease_Eng_v10.cs:12892
 - type: 'let'
   var: 'play'
   expr: '[playA, playB, playC, playD, playE]'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12893
+# ../.source/TheCostofDisease_Eng_v10.cs:12893
 - type: 'let'
   var: 'max_play'
   expr: 'max(play)'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12902
+# ../.source/TheCostofDisease_Eng_v10.cs:12902
 - type: 'conditional'
   conditions:
   - if: 'countif(=max_play, play) > 1'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12904
+    # ../.source/TheCostofDisease_Eng_v10.cs:12904
     - type: 'assign'
       var: 'most'
       expr: '0'
   else:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12908
+  # ../.source/TheCostofDisease_Eng_v10.cs:12908
   - type: 'conditional'
     conditions:
     - if: 'playA > max(playB, playC, playD, playE)'
       then:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12910
+      # ../.source/TheCostofDisease_Eng_v10.cs:12910
       - type: 'assign'
         var: 'most'
         expr: 'nameA'
     - if: 'playB > max(playC, playD, playE)'
       then:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12914
+      # ../.source/TheCostofDisease_Eng_v10.cs:12914
       - type: 'assign'
         var: 'most'
         expr: 'nameB'
     - if: 'playC > max(playD, playE)'
       then:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12918
+      # ../.source/TheCostofDisease_Eng_v10.cs:12918
       - type: 'assign'
         var: 'most'
         expr: 'nameC'
     - if: 'playD > max(playE)'
       then:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12922
+      # ../.source/TheCostofDisease_Eng_v10.cs:12922
       - type: 'assign'
         var: 'most'
         expr: 'nameD'
     else:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12926
+    # ../.source/TheCostofDisease_Eng_v10.cs:12926
     - type: 'assign'
       var: 'most'
       expr: 'nameE'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12933
+# ../.source/TheCostofDisease_Eng_v10.cs:12933
 - type: 'switch'
   on: 'hunters'
   cases:
   # ../en-US.restext:25 | "evil"
   - match: 'restext://Choice_Evil_Lower'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12935
+    # ../.source/TheCostofDisease_Eng_v10.cs:12935
     - type: 'conditional'
       conditions:
       - if: 'goodcount < 2'
         then:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12937
+        # ../.source/TheCostofDisease_Eng_v10.cs:12937
         - type: 'assign'
           var: 'society'
           # ../en-US.restext:110 | "Fraternity of Hunters"
           expr: '"restext://Faction_FraternityOfHunters_Plain"'
       else:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12941
+      # ../.source/TheCostofDisease_Eng_v10.cs:12941
       - type: 'assign'
         var: 'society'
         # ../en-US.restext:114 | "Order of St. Hubertus"
@@ -80,53 +80,53 @@ nodes:
   # ../en-US.restext:26 | "good"
   - match: 'restext://Choice_Good_Lower'
     nodes:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12946
+    # ../.source/TheCostofDisease_Eng_v10.cs:12946
     - type: 'conditional'
       conditions:
       - if: 'goodcount > 1'
         then:
-        # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12948
+        # ../.source/TheCostofDisease_Eng_v10.cs:12948
         - type: 'assign'
           var: 'society'
           # ../en-US.restext:110 | "Fraternity of Hunters"
           expr: '"restext://Faction_FraternityOfHunters_Plain"'
       else:
-      # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12952
+      # ../.source/TheCostofDisease_Eng_v10.cs:12952
       - type: 'assign'
         var: 'society'
         # ../en-US.restext:114 | "Order of St. Hubertus"
         expr: '"restext://Faction_OrderOfStHubertus_Plain"'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12955
+# ../.source/TheCostofDisease_Eng_v10.cs:12955
 - type: 'conditional'
   conditions:
   - if: '!most || String.IsNullOrEmpty(most)'
     then:
-    # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12957
+    # ../.source/TheCostofDisease_Eng_v10.cs:12957
     - type: 'goto'
       target: 'DiseaseEnd' # ./00226-DiseaseEnd.mws.yaml
   else:
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12963
+  # ../.source/TheCostofDisease_Eng_v10.cs:12963
   - type: 'text'
-    # ../en-US.restext:1206 | "**Most Investigations**"
+    # ../en-US.restext:1205 | "**Most Investigations**"
     value: 'restext://MostInvestigated_003'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12965
+  # ../.source/TheCostofDisease_Eng_v10.cs:12965
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12967
+  # ../.source/TheCostofDisease_Eng_v10.cs:12967
   - type: 'text'
-    # ../en-US.restext:1207 | "{most} performed the most..."
+    # ../en-US.restext:1206 | "{most} performed the most..."
     value: 'restext://MostInvestigated_004'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12973
+  # ../.source/TheCostofDisease_Eng_v10.cs:12973
   - type: 'break'
     style: 'paragraph'
-  # ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12977
+  # ../.source/TheCostofDisease_Eng_v10.cs:12977
   - type: 'text'
-    # ../en-US.restext:1208 | "**{most} immediately gain..."
+    # ../en-US.restext:1207 | "**{most} immediately gain..."
     value: 'restext://MostInvestigated_005'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12982
+# ../.source/TheCostofDisease_Eng_v10.cs:12982
 - type: 'break'
   style: 'paragraph'
-# ../../../Reference/ScriptsComplete/TheCostofDisease_Eng_v10.cs:12984
+# ../.source/TheCostofDisease_Eng_v10.cs:12984
 - type: 'link'
   # ../en-US.restext:35 | "Click here to continue..."
   label: 'restext://Click_ContinueEllipsis_B'
