@@ -109,39 +109,38 @@ nodes:
     var: 'hospcount'
     expr: 'hospcount + 1'
   # ../.source/TheCostofDisease_Eng_v10.cs:14837
-  - type: 'switch'
-    on: 'hospsign'
-    cases:
-    - match: 'nameA'
-      nodes:
+  - type: 'conditional'
+    conditions:
+    - if: 'hospsign == nameA'
+      then:
       # ../.source/TheCostofDisease_Eng_v10.cs:14839
       - type: 'assign'
         var: 'hospA'
         # ../en-US.restext:31 | "yes"
         expr: '"restext://Choice_Yes_Lower"'
-    - match: 'nameB'
-      nodes:
+    - if: 'hospsign == nameB'
+      then:
       # ../.source/TheCostofDisease_Eng_v10.cs:14843
       - type: 'assign'
         var: 'hospB'
         # ../en-US.restext:31 | "yes"
         expr: '"restext://Choice_Yes_Lower"'
-    - match: 'nameC'
-      nodes:
+    - if: 'hospsign == nameC'
+      then:
       # ../.source/TheCostofDisease_Eng_v10.cs:14847
       - type: 'assign'
         var: 'hospC'
         # ../en-US.restext:31 | "yes"
         expr: '"restext://Choice_Yes_Lower"'
-    - match: 'nameD'
-      nodes:
+    - if: 'hospsign == nameD'
+      then:
       # ../.source/TheCostofDisease_Eng_v10.cs:14851
       - type: 'assign'
         var: 'hospD'
         # ../en-US.restext:31 | "yes"
         expr: '"restext://Choice_Yes_Lower"'
-    - match: 'nameE'
-      nodes:
+    - if: 'hospsign == nameE'
+      then:
       # ../.source/TheCostofDisease_Eng_v10.cs:14855
       - type: 'assign'
         var: 'hospE'

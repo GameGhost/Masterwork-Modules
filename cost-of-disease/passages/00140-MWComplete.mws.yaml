@@ -5,34 +5,40 @@ passage_id: 'MWComplete'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:15851
-- type: 'switch'
-  on: 'tempcomp'
-  cases:
-  - match: 'nameA'
-    nodes:
-    # ../.source/TheCostofDisease_Eng_v10.cs:15853
-    - type: 'include_passage'
-      target: 'MWCompleteHubA' # ./00138-MWCompleteHubA.mws.yaml
-  - match: 'nameB'
-    nodes:
-    # ../.source/TheCostofDisease_Eng_v10.cs:15857
-    - type: 'include_passage'
-      target: 'MWCompleteHubB' # ./00148-MWCompleteHubB.mws.yaml
-  - match: 'nameC'
-    nodes:
-    # ../.source/TheCostofDisease_Eng_v10.cs:15861
-    - type: 'include_passage'
-      target: 'MWCompleteHubC' # ./00155-MWCompleteHubC.mws.yaml
-  - match: 'nameD'
-    nodes:
-    # ../.source/TheCostofDisease_Eng_v10.cs:15865
-    - type: 'include_passage'
-      target: 'MWCompleteHubD' # ./00162-MWCompleteHubD.mws.yaml
-  - match: 'nameE'
-    nodes:
-    # ../.source/TheCostofDisease_Eng_v10.cs:15869
-    - type: 'include_passage'
-      target: 'MWCompleteHubE' # ./00239-MWCompleteHubE.mws.yaml
+- type: 'conditional'
+  if: 'tempcomp == nameA'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:15853
+  - type: 'include_passage'
+    target: 'MWCompleteHubA' # ./00138-MWCompleteHubA.mws.yaml
+# ../.source/TheCostofDisease_Eng_v10.cs:15855
+- type: 'conditional'
+  if: 'tempcomp == nameB'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:15857
+  - type: 'include_passage'
+    target: 'MWCompleteHubB' # ./00148-MWCompleteHubB.mws.yaml
+# ../.source/TheCostofDisease_Eng_v10.cs:15859
+- type: 'conditional'
+  if: 'tempcomp == nameC'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:15861
+  - type: 'include_passage'
+    target: 'MWCompleteHubC' # ./00155-MWCompleteHubC.mws.yaml
+# ../.source/TheCostofDisease_Eng_v10.cs:15863
+- type: 'conditional'
+  if: 'tempcomp == nameD'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:15865
+  - type: 'include_passage'
+    target: 'MWCompleteHubD' # ./00162-MWCompleteHubD.mws.yaml
+# ../.source/TheCostofDisease_Eng_v10.cs:15867
+- type: 'conditional'
+  if: 'tempcomp == nameE'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:15869
+  - type: 'include_passage'
+    target: 'MWCompleteHubE' # ./00239-MWCompleteHubE.mws.yaml
 # ../.source/TheCostofDisease_Eng_v10.cs:15871
 - type: 'break'
   style: 'paragraph'

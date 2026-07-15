@@ -98,44 +98,50 @@ nodes:
     snapshot: true
     onclick:
     # ../.source/TheCostofDisease_Eng_v10.cs:11594
-    - type: 'switch'
-      on: 'meet'
-      cases:
-      - match: 'nameA'
-        nodes:
-        # ../.source/TheCostofDisease_Eng_v10.cs:11596
-        - type: 'assign'
-          var: 'allyA'
-          # ../en-US.restext:111 | "hunters"
-          expr: '"restext://Faction_Hunters_Lower"'
-      - match: 'nameB'
-        nodes:
-        # ../.source/TheCostofDisease_Eng_v10.cs:11600
-        - type: 'assign'
-          var: 'allyB'
-          # ../en-US.restext:111 | "hunters"
-          expr: '"restext://Faction_Hunters_Lower"'
-      - match: 'nameC'
-        nodes:
-        # ../.source/TheCostofDisease_Eng_v10.cs:11604
-        - type: 'assign'
-          var: 'allyC'
-          # ../en-US.restext:111 | "hunters"
-          expr: '"restext://Faction_Hunters_Lower"'
-      - match: 'nameD'
-        nodes:
-        # ../.source/TheCostofDisease_Eng_v10.cs:11608
-        - type: 'assign'
-          var: 'allyD'
-          # ../en-US.restext:111 | "hunters"
-          expr: '"restext://Faction_Hunters_Lower"'
-      - match: 'nameE'
-        nodes:
-        # ../.source/TheCostofDisease_Eng_v10.cs:11612
-        - type: 'assign'
-          var: 'allyE'
-          # ../en-US.restext:111 | "hunters"
-          expr: '"restext://Faction_Hunters_Lower"'
+    - type: 'conditional'
+      if: 'meet == nameA'
+      then:
+      # ../.source/TheCostofDisease_Eng_v10.cs:11596
+      - type: 'assign'
+        var: 'allyA'
+        # ../en-US.restext:111 | "hunters"
+        expr: '"restext://Faction_Hunters_Lower"'
+    # ../.source/TheCostofDisease_Eng_v10.cs:11598
+    - type: 'conditional'
+      if: 'meet == nameB'
+      then:
+      # ../.source/TheCostofDisease_Eng_v10.cs:11600
+      - type: 'assign'
+        var: 'allyB'
+        # ../en-US.restext:111 | "hunters"
+        expr: '"restext://Faction_Hunters_Lower"'
+    # ../.source/TheCostofDisease_Eng_v10.cs:11602
+    - type: 'conditional'
+      if: 'meet == nameC'
+      then:
+      # ../.source/TheCostofDisease_Eng_v10.cs:11604
+      - type: 'assign'
+        var: 'allyC'
+        # ../en-US.restext:111 | "hunters"
+        expr: '"restext://Faction_Hunters_Lower"'
+    # ../.source/TheCostofDisease_Eng_v10.cs:11606
+    - type: 'conditional'
+      if: 'meet == nameD'
+      then:
+      # ../.source/TheCostofDisease_Eng_v10.cs:11608
+      - type: 'assign'
+        var: 'allyD'
+        # ../en-US.restext:111 | "hunters"
+        expr: '"restext://Faction_Hunters_Lower"'
+    # ../.source/TheCostofDisease_Eng_v10.cs:11610
+    - type: 'conditional'
+      if: 'meet == nameE'
+      then:
+      # ../.source/TheCostofDisease_Eng_v10.cs:11612
+      - type: 'assign'
+        var: 'allyE'
+        # ../en-US.restext:111 | "hunters"
+        expr: '"restext://Faction_Hunters_Lower"'
   # ../.source/TheCostofDisease_Eng_v10.cs:11672
   - type: 'break'
     style: 'paragraph'

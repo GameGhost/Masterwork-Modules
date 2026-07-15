@@ -12,31 +12,30 @@ nodes:
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:29312
-- type: 'switch'
-  on: 'tempcomp'
-  cases:
-  - match: 'nameA'
-    nodes:
+- type: 'conditional'
+  conditions:
+  - if: 'tempcomp == nameA'
+    then:
     # ../.source/TheCostofDisease_Eng_v10.cs:29314
     - type: 'include_passage'
       target: 'MWCreationHubA' # ./00137-MWCreationHubA.mws.yaml
-  - match: 'nameB'
-    nodes:
+  - if: 'tempcomp == nameB'
+    then:
     # ../.source/TheCostofDisease_Eng_v10.cs:29318
     - type: 'include_passage'
       target: 'MWCreationHubB' # ./00147-MWCreationHubB.mws.yaml
-  - match: 'nameC'
-    nodes:
+  - if: 'tempcomp == nameC'
+    then:
     # ../.source/TheCostofDisease_Eng_v10.cs:29322
     - type: 'include_passage'
       target: 'MWCreationHubC' # ./00154-MWCreationHubC.mws.yaml
-  - match: 'nameD'
-    nodes:
+  - if: 'tempcomp == nameD'
+    then:
     # ../.source/TheCostofDisease_Eng_v10.cs:29326
     - type: 'include_passage'
       target: 'MWCreationHubD' # ./00161-MWCreationHubD.mws.yaml
-  - match: 'nameE'
-    nodes:
+  - if: 'tempcomp == nameE'
+    then:
     # ../.source/TheCostofDisease_Eng_v10.cs:29330
     - type: 'include_passage'
       target: 'MWCreationHubE' # ./00238-MWCreationHubE.mws.yaml

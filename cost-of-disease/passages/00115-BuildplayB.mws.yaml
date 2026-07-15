@@ -19,22 +19,21 @@ nodes:
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:12427
-- type: 'switch'
-  on: 'inv'
-  cases:
-  - match: 'ba'
-    nodes:
+- type: 'conditional'
+  conditions:
+  - if: 'inv == ba'
+    then:
     # ../.source/TheCostofDisease_Eng_v10.cs:12429
     - type: 'text'
       # ../en-US.restext:248 | "I arrived at the {ba} und..."
       value: 'restext://Narrative_Investigate_A_Arrival'
-  - match: 'bb'
-    nodes:
+  - if: 'inv == bb'
+    then:
     # ../.source/TheCostofDisease_Eng_v10.cs:12437
     - type: 'text'
       # ../en-US.restext:249 | "A thick fog shrouded my a..."
       value: 'restext://Narrative_Investigate_B_Arrival'
-  default:
+  else:
   # ../.source/TheCostofDisease_Eng_v10.cs:12448
   - type: 'let'
     var: '_rnd_BuildplayB_0'
@@ -69,42 +68,44 @@ nodes:
   snapshot: true
   onclick:
   # ../.source/TheCostofDisease_Eng_v10.cs:12485
-  - type: 'switch'
-    on: 'inv'
-    cases:
-    - match: 'ba'
-      nodes:
-      # ../.source/TheCostofDisease_Eng_v10.cs:12487
-      - type: 'assign'
-        var: 'pBA'
-        # ../en-US.restext:31 | "yes"
-        expr: '"restext://Choice_Yes_Lower"'
-      # ../.source/TheCostofDisease_Eng_v10.cs:12488
-      - type: 'assign'
-        var: 'exposeA'
-        expr: 'exposeA + 1'
-    - match: 'bb'
-      nodes:
-      # ../.source/TheCostofDisease_Eng_v10.cs:12492
-      - type: 'assign'
-        var: 'pBB'
-        # ../en-US.restext:31 | "yes"
-        expr: '"restext://Choice_Yes_Lower"'
-      # ../.source/TheCostofDisease_Eng_v10.cs:12493
-      - type: 'assign'
-        var: 'exposeB'
-        expr: 'exposeB + 1'
-    - match: 'bc'
-      nodes:
-      # ../.source/TheCostofDisease_Eng_v10.cs:12497
-      - type: 'assign'
-        var: 'pBC'
-        # ../en-US.restext:31 | "yes"
-        expr: '"restext://Choice_Yes_Lower"'
-      # ../.source/TheCostofDisease_Eng_v10.cs:12498
-      - type: 'assign'
-        var: 'exposeC'
-        expr: 'exposeC + 1'
+  - type: 'conditional'
+    if: 'inv == ba'
+    then:
+    # ../.source/TheCostofDisease_Eng_v10.cs:12487
+    - type: 'assign'
+      var: 'pBA'
+      # ../en-US.restext:31 | "yes"
+      expr: '"restext://Choice_Yes_Lower"'
+    # ../.source/TheCostofDisease_Eng_v10.cs:12488
+    - type: 'assign'
+      var: 'exposeA'
+      expr: 'exposeA + 1'
+  # ../.source/TheCostofDisease_Eng_v10.cs:12490
+  - type: 'conditional'
+    if: 'inv == bb'
+    then:
+    # ../.source/TheCostofDisease_Eng_v10.cs:12492
+    - type: 'assign'
+      var: 'pBB'
+      # ../en-US.restext:31 | "yes"
+      expr: '"restext://Choice_Yes_Lower"'
+    # ../.source/TheCostofDisease_Eng_v10.cs:12493
+    - type: 'assign'
+      var: 'exposeB'
+      expr: 'exposeB + 1'
+  # ../.source/TheCostofDisease_Eng_v10.cs:12495
+  - type: 'conditional'
+    if: 'inv == bc'
+    then:
+    # ../.source/TheCostofDisease_Eng_v10.cs:12497
+    - type: 'assign'
+      var: 'pBC'
+      # ../en-US.restext:31 | "yes"
+      expr: '"restext://Choice_Yes_Lower"'
+    # ../.source/TheCostofDisease_Eng_v10.cs:12498
+    - type: 'assign'
+      var: 'exposeC'
+      expr: 'exposeC + 1'
 # ../.source/TheCostofDisease_Eng_v10.cs:12475
 - type: 'break'
   style: 'paragraph'
@@ -116,24 +117,26 @@ nodes:
   snapshot: true
   onclick:
   # ../.source/TheCostofDisease_Eng_v10.cs:12506
-  - type: 'switch'
-    on: 'inv'
-    cases:
-    - match: 'ba'
-      nodes:
-      # ../.source/TheCostofDisease_Eng_v10.cs:12508
-      - type: 'assign'
-        var: 'exposeA'
-        expr: 'exposeA - 1'
-    - match: 'bb'
-      nodes:
-      # ../.source/TheCostofDisease_Eng_v10.cs:12512
-      - type: 'assign'
-        var: 'exposeB'
-        expr: 'exposeB - 1'
-    - match: 'bc'
-      nodes:
-      # ../.source/TheCostofDisease_Eng_v10.cs:12516
-      - type: 'assign'
-        var: 'exposeC'
-        expr: 'exposeC - 1'
+  - type: 'conditional'
+    if: 'inv == ba'
+    then:
+    # ../.source/TheCostofDisease_Eng_v10.cs:12508
+    - type: 'assign'
+      var: 'exposeA'
+      expr: 'exposeA - 1'
+  # ../.source/TheCostofDisease_Eng_v10.cs:12510
+  - type: 'conditional'
+    if: 'inv == bb'
+    then:
+    # ../.source/TheCostofDisease_Eng_v10.cs:12512
+    - type: 'assign'
+      var: 'exposeB'
+      expr: 'exposeB - 1'
+  # ../.source/TheCostofDisease_Eng_v10.cs:12514
+  - type: 'conditional'
+    if: 'inv == bc'
+    then:
+    # ../.source/TheCostofDisease_Eng_v10.cs:12516
+    - type: 'assign'
+      var: 'exposeC'
+      expr: 'exposeC - 1'

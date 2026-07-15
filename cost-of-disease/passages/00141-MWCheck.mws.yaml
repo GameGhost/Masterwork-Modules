@@ -5,31 +5,30 @@ passage_id: 'MWCheck'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:15905
-- type: 'switch'
-  on: 'tempcheck'
-  cases:
-  - match: 'nameA'
-    nodes:
+- type: 'conditional'
+  conditions:
+  - if: 'tempcheck == nameA'
+    then:
     # ../.source/TheCostofDisease_Eng_v10.cs:15907
     - type: 'include_passage'
       target: 'MWCreationHubA' # ./00137-MWCreationHubA.mws.yaml
-  - match: 'nameB'
-    nodes:
+  - if: 'tempcheck == nameB'
+    then:
     # ../.source/TheCostofDisease_Eng_v10.cs:15911
     - type: 'include_passage'
       target: 'MWCreationHubB' # ./00147-MWCreationHubB.mws.yaml
-  - match: 'nameC'
-    nodes:
+  - if: 'tempcheck == nameC'
+    then:
     # ../.source/TheCostofDisease_Eng_v10.cs:15915
     - type: 'include_passage'
       target: 'MWCreationHubC' # ./00154-MWCreationHubC.mws.yaml
-  - match: 'nameD'
-    nodes:
+  - if: 'tempcheck == nameD'
+    then:
     # ../.source/TheCostofDisease_Eng_v10.cs:15919
     - type: 'include_passage'
       target: 'MWCreationHubD' # ./00161-MWCreationHubD.mws.yaml
-  - match: 'nameE'
-    nodes:
+  - if: 'tempcheck == nameE'
+    then:
     # ../.source/TheCostofDisease_Eng_v10.cs:15923
     - type: 'include_passage'
       target: 'MWCreationHubE' # ./00238-MWCreationHubE.mws.yaml
