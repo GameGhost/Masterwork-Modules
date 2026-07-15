@@ -33,12 +33,12 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:32638
   - type: 'let'
     var: '_rnd_HuntSuccessCheck_0'
-    # ../en-US.restext:2576 | HuntSuccessCheck_009 | "Righteous"
-    # ../en-US.restext:2577 | HuntSuccessCheck_010 | "Wondrous"
+    # ../en-US.restext:2578 | HuntSuccessCheck_009 | "Righteous"
+    # ../en-US.restext:2579 | HuntSuccessCheck_010 | "Wondrous"
     expr: '["restext://HuntSuccessCheck_009", "restext://HuntSuccessCheck_010"].shuffled("HuntSuccessCheck_1")[0]'
   # ../.source/TheCostofDisease_Eng_v10.cs:32637
   - type: 'text'
-    # ../en-US.restext:2578 | "**A {_rnd_HuntSuccessChec..."
+    # ../en-US.restext:2580 | "**A {_rnd_HuntSuccessChec..."
     value: 'restext://HuntSuccessCheck_011'
     lets:
     - '_rnd_HuntSuccessCheck_0'
@@ -46,14 +46,14 @@ nodes:
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:32642
   - type: 'text'
-    # ../en-US.restext:2579 | "One by one, the steel wea..."
+    # ../en-US.restext:2581 | "One by one, the steel wea..."
     value: 'restext://HuntSuccessCheck_012'
   # ../.source/TheCostofDisease_Eng_v10.cs:32643
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:32645
   - type: 'text'
-    # ../en-US.restext:2580 | "They would remain vigilan..."
+    # ../en-US.restext:2582 | "They would remain vigilan..."
     value: 'restext://HuntSuccessCheck_013'
   # ../.source/TheCostofDisease_Eng_v10.cs:32649
   - type: 'break'
@@ -82,18 +82,18 @@ nodes:
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:32697
     - type: 'text'
-      # ../en-US.restext:2581 | "Retrieve the **Chemistry*..."
+      # ../en-US.restext:2583 | "Retrieve the **Chemistry*..."
       value: 'restext://HuntSuccessCheck_014'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:32661
   - type: 'let'
     var: '_rnd_HuntSuccessCheck_1'
-    # ../en-US.restext:2570 | HuntSuccessCheck_003 | "Demons"
-    # ../en-US.restext:2571 | HuntSuccessCheck_004 | "Monsters"
+    # ../en-US.restext:2572 | HuntSuccessCheck_003 | "Demons"
+    # ../en-US.restext:2573 | HuntSuccessCheck_004 | "Monsters"
     expr: '["restext://HuntSuccessCheck_003", "restext://HuntSuccessCheck_004"].shuffled("HuntSuccessCheck_2")[0]'
   # ../.source/TheCostofDisease_Eng_v10.cs:32660
   - type: 'text'
-    # ../en-US.restext:2572 | "**Overrun By {_rnd_HuntSu..."
+    # ../en-US.restext:2574 | "**Overrun By {_rnd_HuntSu..."
     value: 'restext://HuntSuccessCheck_005'
     lets:
     - '_rnd_HuntSuccessCheck_1'
@@ -101,21 +101,21 @@ nodes:
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:32664
   - type: 'text'
-    # ../en-US.restext:2573 | "The scud banked across th..."
+    # ../en-US.restext:2575 | "The scud banked across th..."
     value: 'restext://HuntSuccessCheck_006'
   # ../.source/TheCostofDisease_Eng_v10.cs:32666
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:32668
   - type: 'text'
-    # ../en-US.restext:2574 | "The townsfolk had placed ..."
+    # ../en-US.restext:2576 | "The townsfolk had placed ..."
     value: 'restext://HuntSuccessCheck_007'
   # ../.source/TheCostofDisease_Eng_v10.cs:32673
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:32675
   - type: 'text'
-    # ../en-US.restext:2575 | "Embittered by what had be..."
+    # ../en-US.restext:2577 | "Embittered by what had be..."
     value: 'restext://HuntSuccessCheck_008'
   # ../.source/TheCostofDisease_Eng_v10.cs:32678
   - type: 'assign'
