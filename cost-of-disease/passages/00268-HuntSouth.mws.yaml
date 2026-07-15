@@ -6,11 +6,8 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:28451
 - type: 'text'
-  # ../en-US.restext:2277 | "The Hunting party explore..."
+  # ../en-US.restext:2270 | "The Hunting party explore..."
   value: 'restext://HuntSouth_001'
-# ../.source/TheCostofDisease_Eng_v10.cs:28454
-- type: 'break'
-  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:28456
 - type: 'conditional'
   if: 'HuntSouthnextPsg == "" || HuntSouthnextPsg == 0'
@@ -19,6 +16,9 @@ nodes:
   - type: 'assign'
     var: 'HuntSouthnextPsg'
     expr: '["Strigoi", "Priest"].shuffled("HuntSouth_0")[0]'
+# ../.source/TheCostofDisease_Eng_v10.cs:28454
+- type: 'break'
+  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:28460
 - type: 'include_passage'
   target: '${HuntSouthnextPsg}'

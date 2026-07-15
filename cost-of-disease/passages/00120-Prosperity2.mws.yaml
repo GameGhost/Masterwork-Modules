@@ -14,92 +14,91 @@ nodes:
   expr: '14'
 # ../.source/TheCostofDisease_Eng_v10.cs:13349
 - type: 'conditional'
-  conditions:
   # ../en-US.restext:114 | "Order of St. Hubertus"
-  - if: 'society == "restext://Faction_OrderOfStHubertus_Plain"'
-    then:
-    # ../.source/TheCostofDisease_Eng_v10.cs:13353
-    - type: 'section'
-      # ../en-US.restext:130 | "**Acceptance**"
-      title: 'restext://Heading_Acceptance'
-      content:
-      # ../.source/TheCostofDisease_Eng_v10.cs:13361
-      - type: 'text'
-        # ../en-US.restext:72 | "Caretaker pieces can now ..."
-        value: 'restext://Directive_CaretakerTownActions_Rule'
-    # ../.source/TheCostofDisease_Eng_v10.cs:13367
+  if: 'society == "restext://Faction_OrderOfStHubertus_Plain"'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:13353
+  - type: 'section'
+    # ../en-US.restext:130 | "**Acceptance**"
+    title: 'restext://Heading_Acceptance'
+    content:
+    # ../.source/TheCostofDisease_Eng_v10.cs:13361
+    - type: 'text'
+      # ../en-US.restext:72 | "Caretaker pieces can now ..."
+      value: 'restext://Directive_CaretakerTownActions_Rule'
+  # ../.source/TheCostofDisease_Eng_v10.cs:13367
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/TheCostofDisease_Eng_v10.cs:13371
+  - type: 'section'
+    # ../en-US.restext:169 | "**School for Hybridized I..."
+    title: 'restext://Heading_SchoolForHybridizedIndividuals'
+    content:
+    # ../.source/TheCostofDisease_Eng_v10.cs:13379
+    - type: 'text'
+      # ../en-US.restext:303 | "When a player visits the ..."
+      value: 'restext://SchoolForHybridizedIndividuals_Rule'
+  # ../.source/TheCostofDisease_Eng_v10.cs:13396
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/TheCostofDisease_Eng_v10.cs:13400
+  - type: 'section'
+    # ../en-US.restext:145 | "**Experiments are Feared**"
+    title: 'restext://Heading_ExperimentsAreFeared'
+    content:
+    # ../.source/TheCostofDisease_Eng_v10.cs:13407
+    - type: 'text'
+      # ../en-US.restext:281 | "Anytime a player takes th..."
+      value: 'restext://Resource_ExperimentGainsCreepy_Rule'
+  # ../.source/TheCostofDisease_Eng_v10.cs:13413
+  - type: 'section'
+    # ../en-US.restext:146 | "**Farmer's Market**"
+    title: 'restext://Heading_FarmersMarket'
+    content:
+    # ../.source/TheCostofDisease_Eng_v10.cs:13420
+    - type: 'text'
+      # ../en-US.restext:117 | "Due to the associated soc..."
+      value: 'restext://FarmersMarket_CreepyRule'
+  # ../.source/TheCostofDisease_Eng_v10.cs:13431
+  - type: 'section'
+    # ../en-US.restext:131 | "{icon:storybook} **Angry Mob**"
+    title: 'restext://Heading_AngryMob'
+    content:
+    # ../.source/TheCostofDisease_Eng_v10.cs:13440
+    - type: 'text'
+      # ../en-US.restext:5 | "Any time the {icon:angrym..."
+      value: 'restext://AngryMob_MoveRule_Lead'
+    # ../.source/TheCostofDisease_Eng_v10.cs:13447
+    - type: 'link'
+      # ../en-US.restext:61 | "click here for a Storyboo..."
+      label: 'restext://Click_StorybookMessage'
+      target: 'AngryMobStorybook' # ./00215-AngryMobStorybook.mws.yaml
+      snapshot: true
+    # ../.source/TheCostofDisease_Eng_v10.cs:13448
     - type: 'break'
       style: 'paragraph'
-    # ../.source/TheCostofDisease_Eng_v10.cs:13371
-    - type: 'section'
-      # ../en-US.restext:169 | "**School for Hybridized I..."
-      title: 'restext://Heading_SchoolForHybridizedIndividuals'
+    # ../.source/TheCostofDisease_Eng_v10.cs:13452
+    - type: 'popup'
+      layout: 'end_of_round'
+      # ../en-US.restext:45 | "Click at the end of the r..."
+      label: 'restext://Click_EndRound_Continue'
+      target: 'GoodFrenzyEvent'
+      # ../en-US.restext:348 | "End of Round"
+      okay: 'restext://UIButton_EndOfRound'
+      onclose:
+      - type: 'assign'
+        var: '_ProgressRound'
+        expr: '8' # ./00216-GoodFrenzyEvent.mws.yaml
+      snapshot: true
       content:
-      # ../.source/TheCostofDisease_Eng_v10.cs:13379
       - type: 'text'
-        # ../en-US.restext:303 | "When a player visits the ..."
-        value: 'restext://SchoolForHybridizedIndividuals_Rule'
-    # ../.source/TheCostofDisease_Eng_v10.cs:13396
-    - type: 'break'
-      style: 'paragraph'
-    # ../.source/TheCostofDisease_Eng_v10.cs:13400
-    - type: 'section'
-      # ../en-US.restext:145 | "**Experiments are Feared**"
-      title: 'restext://Heading_ExperimentsAreFeared'
-      content:
-      # ../.source/TheCostofDisease_Eng_v10.cs:13407
-      - type: 'text'
-        # ../en-US.restext:281 | "Anytime a player takes th..."
-        value: 'restext://Resource_ExperimentGainsCreepy_Rule'
-    # ../.source/TheCostofDisease_Eng_v10.cs:13413
-    - type: 'section'
-      # ../en-US.restext:146 | "**Farmer's Market**"
-      title: 'restext://Heading_FarmersMarket'
-      content:
-      # ../.source/TheCostofDisease_Eng_v10.cs:13420
-      - type: 'text'
-        # ../en-US.restext:117 | "Due to the associated soc..."
-        value: 'restext://FarmersMarket_CreepyRule'
-    # ../.source/TheCostofDisease_Eng_v10.cs:13431
-    - type: 'section'
-      # ../en-US.restext:131 | "{icon:storybook} **Angry Mob**"
-      title: 'restext://Heading_AngryMob'
-      content:
-      # ../.source/TheCostofDisease_Eng_v10.cs:13440
-      - type: 'text'
-        # ../en-US.restext:5 | "Any time the {icon:angrym..."
-        value: 'restext://AngryMob_MoveRule_Lead'
-      # ../.source/TheCostofDisease_Eng_v10.cs:13447
-      - type: 'link'
-        # ../en-US.restext:61 | "click here for a Storyboo..."
-        label: 'restext://Click_StorybookMessage'
-        target: 'AngryMobStorybook' # ./00215-AngryMobStorybook.mws.yaml
-        snapshot: true
-      # ../.source/TheCostofDisease_Eng_v10.cs:13448
+        # ../en-US.restext:297 | "The Middle Years of the T..."
+        value: 'restext://Round_GenerationIII_MiddleEnded'
       - type: 'break'
         style: 'paragraph'
-      # ../.source/TheCostofDisease_Eng_v10.cs:13452
-      - type: 'popup'
-        layout: 'end_of_round'
-        # ../en-US.restext:45 | "Click at the end of the r..."
-        label: 'restext://Click_EndRound_Continue'
-        target: 'GoodFrenzyEvent'
-        # ../en-US.restext:348 | "End of Round"
-        okay: 'restext://UIButton_EndOfRound'
-        onclose:
-        - type: 'assign'
-          var: '_ProgressRound'
-          expr: '8' # ./00216-GoodFrenzyEvent.mws.yaml
-        snapshot: true
-        content:
-        - type: 'text'
-          # ../en-US.restext:297 | "The Middle Years of the T..."
-          value: 'restext://Round_GenerationIII_MiddleEnded'
-        - type: 'break'
-          style: 'paragraph'
-        - type: 'text'
-          # ../en-US.restext:301 | "Then, perform all Start o..."
-          value: 'restext://Round_StartLateYears_Rule'
+      - type: 'text'
+        # ../en-US.restext:301 | "Then, perform all Start o..."
+        value: 'restext://Round_StartLateYears_Rule'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:13462
   - type: 'section'

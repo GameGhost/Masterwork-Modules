@@ -37,13 +37,13 @@ nodes:
   if: '!creationA_submitted'
   then:
   - type: 'popup'
+    layout: 'input-popup'
     content:
     - type: 'text'
       # ../en-US.restext:214 | "Give your creation a new,..."
       value: 'restext://Masterwork_NamePrompt'
     - type: 'input'
-      # ../en-US.restext:1297 | "NewMaster3A"
-      label: 'restext://NewMaster3A_005'
+      label: ''
       var: 'creationA'
     # ../en-US.restext:346 | "Continue"
     okay: 'restext://UIButton_Continue'
@@ -70,8 +70,8 @@ nodes:
   expr: '["restext://Masterwork_Adjective_Infamous", "restext://Masterwork_Adjective_Transcendent", "restext://Masterwork_Adjective_Monumental", "restext://Masterwork_Adjective_Nefarious", "restext://Masterwork_Adjective_Unspeakable", "restext://Masterwork_Adjective_Legendary", "restext://Masterwork_Adjective_Noble", "restext://Masterwork_Adjective_Phenomenal", "restext://Masterwork_Adjective_Stunning", "restext://Masterwork_Adjective_Masterful", "restext://Masterwork_Adjective_Insidious"].shuffled("NewMaster3A_0")[0]'
 # ../.source/TheCostofDisease_Eng_v10.cs:15329
 - type: 'text'
-  # ../en-US.restext:1298 | "**The {_rnd_NewMaster3A_0..."
-  value: 'restext://NewMaster3A_017'
+  # ../en-US.restext:1295 | "**The {_rnd_NewMaster3A_0..."
+  value: 'restext://NewMaster3A_016'
   lets:
   - '_rnd_NewMaster3A_0'
 # ../.source/TheCostofDisease_Eng_v10.cs:15334

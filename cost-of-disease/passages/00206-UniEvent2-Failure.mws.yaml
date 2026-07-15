@@ -2,27 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: 'UniEvent2-Failure'
-# ../en-US.restext:1852 | "Unfortunate Failure"
+# ../en-US.restext:1846 | "Unfortunate Failure"
 title: 'restext://UniEvent2_Failure_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:23378
 - type: 'text'
-  # ../en-US.restext:1853 | "With the cousins guarding..."
+  # ../en-US.restext:1847 | "With the cousins guarding..."
   value: 'restext://UniEvent2_Failure_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:23379
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:23381
 - type: 'text'
-  # ../en-US.restext:1854 | "As the science was unsucc..."
+  # ../en-US.restext:1848 | "As the science was unsucc..."
   value: 'restext://UniEvent2_Failure_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:23383
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:23385
 - type: 'text'
-  # ../en-US.restext:1855 | "The town remained unaffec..."
+  # ../en-US.restext:1849 | "The town remained unaffec..."
   value: 'restext://UniEvent2_Failure_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:23388
 - type: 'break'
@@ -42,8 +42,6 @@ nodes:
     asset: 'image://setup/Creepy_Icon'
     style: 'setup-image'
   content:
-  # ../.source/TheCostofDisease_Eng_v10.cs:23408
-  - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:23409
   - type: 'conditional'
     conditions:
@@ -51,18 +49,18 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:23409
       - type: 'text'
-        # ../en-US.restext:1856 | "Each player counts the to..."
+        # ../en-US.restext:1850 | "Each player counts the to..."
         value: 'restext://UniEvent2_Failure_005'
     - if: 'players > 3'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:23409
       - type: 'text'
-        # ../en-US.restext:1857 | "Each player counts the to..."
+        # ../en-US.restext:1851 | "Each player counts the to..."
         value: 'restext://UniEvent2_Failure_006'
   # ../.source/TheCostofDisease_Eng_v10.cs:23437
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:23439
   - type: 'text'
-    # ../en-US.restext:1858 | "Any player that voted \"y..."
+    # ../en-US.restext:1852 | "Any player that voted \"y..."
     value: 'restext://UniEvent2_Failure_007'

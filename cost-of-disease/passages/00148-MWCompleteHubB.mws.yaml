@@ -16,7 +16,7 @@ nodes:
   expr: '["restext://Narrative_MasterworkExclaim_WorkDone", "restext://Narrative_MasterworkExclaim_Impossible", "restext://Narrative_MasterworkExclaim_LegacyEnsured", "restext://Narrative_MasterworkExclaim_Laugh", "restext://Narrative_MasterworkExclaim_GloriousCreation", "restext://Narrative_MasterworkExclaim_GloryForever"].shuffled("MWCompleteHubB_0")[0]'
 # ../.source/TheCostofDisease_Eng_v10.cs:17282
 - type: 'text'
-  # ../en-US.restext:1358 | "**{_rnd_MWCompleteHubB_0}..."
+  # ../en-US.restext:1354 | "**{_rnd_MWCompleteHubB_0}..."
   value: 'restext://MWCompleteHubB_001'
   lets:
   - '_rnd_MWCompleteHubB_0'
@@ -36,13 +36,13 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:17298
     - type: 'text'
-      # ../en-US.restext:1360 | "To see my work in the fle..."
+      # ../en-US.restext:1356 | "To see my work in the fle..."
       value: 'restext://MWCompleteHubB_003'
   - match: 'robot'
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:17306
     - type: 'text'
-      # ../en-US.restext:1361 | "A brief, blinding flash a..."
+      # ../en-US.restext:1357 | "A brief, blinding flash a..."
       value: 'restext://MWCompleteHubB_004'
   - match: 'weapon'
     nodes:
@@ -54,22 +54,22 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:17319
     - type: 'text'
-      # ../en-US.restext:1362 | "I tapped the glass bottle..."
+      # ../en-US.restext:1358 | "I tapped the glass bottle..."
       value: 'restext://MWCompleteHubB_005'
   - match: 'drug'
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:17328
     - type: 'text'
-      # ../en-US.restext:1363 | "I observed the effects as..."
+      # ../en-US.restext:1359 | "I observed the effects as..."
       value: 'restext://MWCompleteHubB_006'
   - match: 'demon'
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:17334
     - type: 'text'
-      # ../en-US.restext:1364 | "The world darkened around..."
+      # ../en-US.restext:1360 | "The world darkened around..."
       value: 'restext://MWCompleteHubB_007'
   default:
   # ../.source/TheCostofDisease_Eng_v10.cs:17342
   - type: 'text'
-    # ../en-US.restext:1359 | "The preparations proved t..."
+    # ../en-US.restext:1355 | "The preparations proved t..."
     value: 'restext://MWCompleteHubB_002'

@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Gen1-CreepyTrack'
-# ../en-US.restext:1603 | "Enemy of the People"
+# ../en-US.restext:1597 | "Enemy of the People"
 title: 'restext://Gen1_CreepyTrack_001'
 layout: 'narration'
 nodes:
@@ -12,14 +12,14 @@ nodes:
   expr: '1'
 # ../.source/TheCostofDisease_Eng_v10.cs:20939
 - type: 'text'
-  # ../en-US.restext:1604 | "The increasingly eccentri..."
+  # ../en-US.restext:1598 | "The increasingly eccentri..."
   value: 'restext://Gen1_CreepyTrack_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:20940
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:20942
 - type: 'text'
-  # ../en-US.restext:1605 | "Please click on the name ..."
+  # ../en-US.restext:1599 | "Please click on the name ..."
   value: 'restext://Gen1_CreepyTrack_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:20952
 - type: 'break'
@@ -64,6 +64,9 @@ nodes:
     - type: 'assign'
       var: 'gen1creep'
       expr: 'nameC'
+  # ../.source/TheCostofDisease_Eng_v10.cs:20966
+  - type: 'break'
+    style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:20969
 - type: 'conditional'
   if: 'players > 3'
@@ -78,6 +81,9 @@ nodes:
     - type: 'assign'
       var: 'gen1creep'
       expr: 'nameD'
+  # ../.source/TheCostofDisease_Eng_v10.cs:20973
+  - type: 'break'
+    style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:20976
 - type: 'conditional'
   if: 'players > 4'

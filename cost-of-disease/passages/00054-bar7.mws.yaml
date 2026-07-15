@@ -14,7 +14,7 @@ nodes:
   expr: 'rand_between(1, 999, "bar7_1")'
 # ../.source/TheCostofDisease_Eng_v10.cs:6721
 - type: 'text'
-  # ../en-US.restext:730 | "**SWORN STATEMENT - Case ..."
+  # ../en-US.restext:729 | "**SWORN STATEMENT - Case ..."
   value: 'restext://bar7_001'
   lets:
   - '_rnd_bar7_0'
@@ -24,14 +24,14 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:6728
 - type: 'text'
-  # ../en-US.restext:731 | "While the cemetery has ce..."
+  # ../en-US.restext:730 | "While the cemetery has ce..."
   value: 'restext://bar7_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:6729
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:6731
 - type: 'text'
-  # ../en-US.restext:732 | "After being treated for a..."
+  # ../en-US.restext:731 | "After being treated for a..."
   value: 'restext://bar7_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:6739
 - type: 'break'
@@ -47,9 +47,7 @@ nodes:
     asset: 'image://setup/Creepy_Icon'
     style: 'setup-image'
   content:
-  # ../.source/TheCostofDisease_Eng_v10.cs:6748
-  - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:6749
   - type: 'text'
-    # ../en-US.restext:733 | "Place a {icon:creepy_icon..."
+    # ../en-US.restext:732 | "Place a {icon:creepy_icon..."
     value: 'restext://bar7_004'

@@ -6,60 +6,71 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:13753
 - type: 'text'
-  # ../en-US.restext:1214 | "**Carefully hand this sto..."
+  # ../en-US.restext:1212 | "**Carefully hand this sto..."
   value: 'restext://Trigger35Points_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:13756
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:13758
 - type: 'conditional'
-  conditions:
-  - if: 'thirtyFivevp == "creep"'
-    then:
-    # ../.source/TheCostofDisease_Eng_v10.cs:13762
-    - type: 'text'
-      # ../en-US.restext:1219 | "**\"Nasty Rumors\" - Jour..."
-      value: 'restext://Trigger35Points_006'
-    # ../.source/TheCostofDisease_Eng_v10.cs:13764
-    - type: 'break'
-    # ../.source/TheCostofDisease_Eng_v10.cs:13765
-    - type: 'text'
-      # ../en-US.restext:1220 | "To reach the pinnacle of ..."
-      value: 'restext://Trigger35Points_007'
-    # ../.source/TheCostofDisease_Eng_v10.cs:13769
-    - type: 'assign'
-      var: 'twopage'
-      expr: '1'
-    # ../.source/TheCostofDisease_Eng_v10.cs:13771
-    - type: 'text'
-      # ../en-US.restext:1221 | "I do not have time for th..."
-      value: 'restext://Trigger35Points_008'
+  if: 'thirtyFivevp == "creep"'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:13762
+  - type: 'text'
+    # ../en-US.restext:1217 | "**\"Nasty Rumors\" - Jour..."
+    value: 'restext://Trigger35Points_006'
+  # ../.source/TheCostofDisease_Eng_v10.cs:13764
+  - type: 'break'
+  # ../.source/TheCostofDisease_Eng_v10.cs:13765
+  - type: 'text'
+    # ../en-US.restext:1218 | "To reach the pinnacle of ..."
+    value: 'restext://Trigger35Points_007'
+  # ../.source/TheCostofDisease_Eng_v10.cs:13769
+  - type: 'assign'
+    var: 'twopage'
+    expr: '1'
+  # ../.source/TheCostofDisease_Eng_v10.cs:13768
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/TheCostofDisease_Eng_v10.cs:13771
+  - type: 'text'
+    # ../en-US.restext:1219 | "I do not have time for th..."
+    value: 'restext://Trigger35Points_008'
+  # ../.source/TheCostofDisease_Eng_v10.cs:13774
+  - type: 'break'
+    style: 'paragraph'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:13781
   - type: 'text'
-    # ../en-US.restext:1215 | "**\"Unfortunate Accident\..."
+    # ../en-US.restext:1213 | "**\"Unfortunate Accident\..."
     value: 'restext://Trigger35Points_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:13783
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:13784
   - type: 'text'
-    # ../en-US.restext:1216 | "My work! My property! Sab..."
+    # ../en-US.restext:1214 | "My work! My property! Sab..."
     value: 'restext://Trigger35Points_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:13786
   - type: 'assign'
     var: 'twopage'
     expr: '1'
+  # ../.source/TheCostofDisease_Eng_v10.cs:13785
+  - type: 'break'
+    style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:13788
   - type: 'text'
-    # ../en-US.restext:1217 | "I awoke this evening to f..."
+    # ../en-US.restext:1215 | "I awoke this evening to f..."
     value: 'restext://Trigger35Points_004'
   # ../.source/TheCostofDisease_Eng_v10.cs:13789
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:13791
   - type: 'text'
-    # ../en-US.restext:1218 | "It will take weeks for my..."
+    # ../en-US.restext:1216 | "It will take weeks for my..."
     value: 'restext://Trigger35Points_005'
+  # ../.source/TheCostofDisease_Eng_v10.cs:13793
+  - type: 'break'
+    style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:13799
 - type: 'popup'
   layout: 'setup'
@@ -71,13 +82,12 @@ nodes:
   snapshot: true
   header:
   - type: 'conditional'
-    conditions:
-    - if: 'thirtyFivevp == "creep"'
-      then:
-      # ../.source/TheCostofDisease_Eng_v10.cs:13816
-      - type: 'image'
-        asset: 'image://setup/Creepy_Icon'
-        style: 'setup-image'
+    if: 'thirtyFivevp == "creep"'
+    then:
+    # ../.source/TheCostofDisease_Eng_v10.cs:13816
+    - type: 'image'
+      asset: 'image://setup/Creepy_Icon'
+      style: 'setup-image'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:13838
     - type: 'image'
@@ -89,19 +99,18 @@ nodes:
     var: 'trigger35'
     expr: '1'
   - type: 'conditional'
-    conditions:
-    - if: 'thirtyFivevp == "creep"'
-      then:
-      # ../.source/TheCostofDisease_Eng_v10.cs:13817
-      - type: 'break'
-      # ../.source/TheCostofDisease_Eng_v10.cs:13818
-      - type: 'text'
-        # ../en-US.restext:1223 | "Immediately **gain 2** {i..."
-        value: 'restext://Trigger35Points_010'
+    if: 'thirtyFivevp == "creep"'
+    then:
+    # ../.source/TheCostofDisease_Eng_v10.cs:13817
+    - type: 'break'
+    # ../.source/TheCostofDisease_Eng_v10.cs:13818
+    - type: 'text'
+      # ../en-US.restext:1221 | "Immediately **gain 2** {i..."
+      value: 'restext://Trigger35Points_010'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:13839
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:13840
     - type: 'text'
-      # ../en-US.restext:1222 | "Immediately **lose 4VP** ..."
+      # ../en-US.restext:1220 | "Immediately **lose 4VP** ..."
       value: 'restext://Trigger35Points_009'

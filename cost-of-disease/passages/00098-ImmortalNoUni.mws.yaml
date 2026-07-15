@@ -6,12 +6,11 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:10846
 - type: 'conditional'
-  conditions:
-  - if: 'life == 0'
-    then:
-    # ../.source/TheCostofDisease_Eng_v10.cs:10848
-    - type: 'goto'
-      target: 'PanaceaUnleashCons1' # ./00232-PanaceaUnleashCons1.mws.yaml
+  if: 'life == 0'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:10848
+  - type: 'goto'
+    target: 'PanaceaUnleashCons1' # ./00232-PanaceaUnleashCons1.mws.yaml
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:10854
   - type: 'text'
@@ -48,8 +47,6 @@ nodes:
       asset: 'image://setup/Creepy_Icon'
       style: 'setup-image'
     content:
-    # ../.source/TheCostofDisease_Eng_v10.cs:10883
-    - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10884
     - type: 'conditional'
       # ../en-US.restext:31 | "yes"
@@ -57,8 +54,10 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10886
       - type: 'text'
-        # ../en-US.restext:1112 | "{nameA} III retrieves a C..."
+        # ../en-US.restext:1111 | "{nameA} III retrieves a C..."
         value: 'restext://ImmortalNoUni_001'
+      # ../.source/TheCostofDisease_Eng_v10.cs:10888
+      - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10890
     - type: 'conditional'
       # ../en-US.restext:31 | "yes"
@@ -66,8 +65,10 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10892
       - type: 'text'
-        # ../en-US.restext:1113 | "{nameB} III retrieves a C..."
+        # ../en-US.restext:1112 | "{nameB} III retrieves a C..."
         value: 'restext://ImmortalNoUni_002'
+      # ../.source/TheCostofDisease_Eng_v10.cs:10894
+      - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10896
     - type: 'conditional'
       # ../en-US.restext:31 | "yes"
@@ -75,8 +76,10 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10898
       - type: 'text'
-        # ../en-US.restext:1114 | "{nameC} III retrieves a C..."
+        # ../en-US.restext:1113 | "{nameC} III retrieves a C..."
         value: 'restext://ImmortalNoUni_003'
+      # ../.source/TheCostofDisease_Eng_v10.cs:10900
+      - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10902
     - type: 'conditional'
       # ../en-US.restext:31 | "yes"
@@ -84,8 +87,10 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10904
       - type: 'text'
-        # ../en-US.restext:1115 | "{nameD} III retrieves a C..."
+        # ../en-US.restext:1114 | "{nameD} III retrieves a C..."
         value: 'restext://ImmortalNoUni_004'
+      # ../.source/TheCostofDisease_Eng_v10.cs:10906
+      - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10908
     - type: 'conditional'
       # ../en-US.restext:31 | "yes"
@@ -93,8 +98,10 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10910
       - type: 'text'
-        # ../en-US.restext:1116 | "{nameE} III retrieves a C..."
+        # ../en-US.restext:1115 | "{nameE} III retrieves a C..."
         value: 'restext://ImmortalNoUni_005'
+      # ../.source/TheCostofDisease_Eng_v10.cs:10912
+      - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10914
     - type: 'break'
       style: 'paragraph'

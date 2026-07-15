@@ -11,8 +11,6 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:11449
   - type: 'goto'
     target: 'FailedMeeting' # ./00313-FailedMeeting.mws.yaml
-# ../.source/TheCostofDisease_Eng_v10.cs:11451
-- type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:11454
 - type: 'text'
   # ../en-US.restext:312 | "**Carefully pick up the s..."
@@ -39,7 +37,7 @@ nodes:
     expr: 'rand_between(1, 29, "HubertusWolves3_1")'
   # ../.source/TheCostofDisease_Eng_v10.cs:11496
   - type: 'text'
-    # ../en-US.restext:1150 | "**Upon a Secret Meeting -..."
+    # ../en-US.restext:1148 | "**Upon a Secret Meeting -..."
     value: 'restext://HubertusWolves3_001'
     lets:
     - '_rnd_HubertusWolves3_0'
@@ -59,14 +57,13 @@ nodes:
     value: 'restext://Narrative_Letter_IntentionsLead'
   # ../.source/TheCostofDisease_Eng_v10.cs:11511
   - type: 'conditional'
-    conditions:
     # ../en-US.restext:25 | "evil"
-    - if: 'wolves == "restext://Choice_Evil_Lower"'
-      then:
-      # ../.source/TheCostofDisease_Eng_v10.cs:11513
-      - type: 'text'
-        # ../en-US.restext:256 | "nefarious. The malevolent..."
-        value: 'restext://Narrative_Letter_HubertusIntentNefarious'
+    if: 'wolves == "restext://Choice_Evil_Lower"'
+    then:
+    # ../.source/TheCostofDisease_Eng_v10.cs:11513
+    - type: 'text'
+      # ../en-US.restext:256 | "nefarious. The malevolent..."
+      value: 'restext://Narrative_Letter_HubertusIntentNefarious'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:11526
     - type: 'text'

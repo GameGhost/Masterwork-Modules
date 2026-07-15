@@ -15,14 +15,17 @@ nodes:
     - match: 2
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:10956
+      - type: 'let'
+        var: '_rnd_S5HospA1_0'
+        expr: 'rand_between(1, 2, "S5HospA1_0")'
+      # ../.source/TheCostofDisease_Eng_v10.cs:10956
       - type: 'conditional'
-        conditions:
-        - if: 'life >= int.Parse(macros1.either(1, 2))'
-          then:
-          # ../.source/TheCostofDisease_Eng_v10.cs:10959
-          - type: 'assign'
-            var: 'S5HospA1nextPsg'
-            expr: '"S5HospA1Yes"' # ./00024-S5HospA1Yes.mws.yaml
+        if: 'life >= _rnd_S5HospA1_0'
+        then:
+        # ../.source/TheCostofDisease_Eng_v10.cs:10959
+        - type: 'assign'
+          var: 'S5HospA1nextPsg'
+          expr: '"S5HospA1Yes"' # ./00024-S5HospA1Yes.mws.yaml
         else:
         # ../.source/TheCostofDisease_Eng_v10.cs:10964
         - type: 'assign'
@@ -32,13 +35,12 @@ nodes:
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:10969
       - type: 'conditional'
-        conditions:
-        - if: 'life >= 2'
-          then:
-          # ../.source/TheCostofDisease_Eng_v10.cs:10972
-          - type: 'assign'
-            var: 'S5HospA1nextPsg'
-            expr: '"S5HospA1Yes"' # ./00024-S5HospA1Yes.mws.yaml
+        if: 'life >= 2'
+        then:
+        # ../.source/TheCostofDisease_Eng_v10.cs:10972
+        - type: 'assign'
+          var: 'S5HospA1nextPsg'
+          expr: '"S5HospA1Yes"' # ./00024-S5HospA1Yes.mws.yaml
         else:
         # ../.source/TheCostofDisease_Eng_v10.cs:10977
         - type: 'assign'
@@ -47,14 +49,17 @@ nodes:
     - match: 4
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:10982
+      - type: 'let'
+        var: '_rnd_S5HospA1_1'
+        expr: 'rand_between(2, 3, "S5HospA1_1")'
+      # ../.source/TheCostofDisease_Eng_v10.cs:10982
       - type: 'conditional'
-        conditions:
-        - if: 'life >= int.Parse(macros1.either(2, 3))'
-          then:
-          # ../.source/TheCostofDisease_Eng_v10.cs:10985
-          - type: 'assign'
-            var: 'S5HospA1nextPsg'
-            expr: '"S5HospA1Yes"' # ./00024-S5HospA1Yes.mws.yaml
+        if: 'life >= _rnd_S5HospA1_1'
+        then:
+        # ../.source/TheCostofDisease_Eng_v10.cs:10985
+        - type: 'assign'
+          var: 'S5HospA1nextPsg'
+          expr: '"S5HospA1Yes"' # ./00024-S5HospA1Yes.mws.yaml
         else:
         # ../.source/TheCostofDisease_Eng_v10.cs:10990
         - type: 'assign'
@@ -63,14 +68,17 @@ nodes:
     - match: 5
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:10995
+      - type: 'let'
+        var: '_rnd_S5HospA1_2'
+        expr: 'rand_between(2, 4, "S5HospA1_2")'
+      # ../.source/TheCostofDisease_Eng_v10.cs:10995
       - type: 'conditional'
-        conditions:
-        - if: 'life >= int.Parse(macros1.either(2, 3, 4))'
-          then:
-          # ../.source/TheCostofDisease_Eng_v10.cs:10998
-          - type: 'assign'
-            var: 'S5HospA1nextPsg'
-            expr: '"S5HospA1Yes"' # ./00024-S5HospA1Yes.mws.yaml
+        if: 'life >= _rnd_S5HospA1_2'
+        then:
+        # ../.source/TheCostofDisease_Eng_v10.cs:10998
+        - type: 'assign'
+          var: 'S5HospA1nextPsg'
+          expr: '"S5HospA1Yes"' # ./00024-S5HospA1Yes.mws.yaml
         else:
         # ../.source/TheCostofDisease_Eng_v10.cs:11003
         - type: 'assign'

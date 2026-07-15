@@ -29,9 +29,6 @@ nodes:
       asset: 'image://setup/StartPlayerToken'
       style: 'setup-image'
     content:
-    # ../.source/TheCostofDisease_Eng_v10.cs:1636
-    - type: 'break'
-      style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:1638
     - type: 'text'
       # ../en-US.restext:375 | "Turn to **The Cost of Dis..."
@@ -42,8 +39,6 @@ nodes:
     - type: 'text'
       # ../en-US.restext:376 | "Retrieve the {icon:s1_hea..."
       value: 'restext://Fever1_005'
-    # ../.source/TheCostofDisease_Eng_v10.cs:1662
-    - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:1672
     - type: 'switch'
       on: 'players'
@@ -72,6 +67,8 @@ nodes:
         - type: 'let'
           var: '_rnd_Fever1_0'
           expr: '[nameA, nameB, nameC, nameD, nameE].shuffled("Fever1_3")[0]'
+    # ../.source/TheCostofDisease_Eng_v10.cs:1662
+    - type: 'break'
     - type: 'text'
       # ../en-US.restext:377 | "Give the **Start Player**..."
       value: 'restext://Fever1_006'
@@ -118,6 +115,9 @@ nodes:
       label: 'restext://Click_Here_Plain'
       target: 'Gen1-CreepyTrack' # ./00177-Gen1-CreepyTrack.mws.yaml
       snapshot: true
+  # ../.source/TheCostofDisease_Eng_v10.cs:1755
+  - type: 'break'
+    style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:1758
 - type: 'conditional'
   if: 'sane3 == 0'

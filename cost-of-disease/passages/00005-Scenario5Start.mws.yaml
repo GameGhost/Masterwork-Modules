@@ -59,15 +59,14 @@ nodes:
   expr: '["restext://Choice_Evil_Lower", "restext://Choice_Good_Lower"].shuffled("Scenario5Start_0")[0]'
 # ../.source/TheCostofDisease_Eng_v10.cs:2272
 - type: 'conditional'
-  conditions:
   # ../en-US.restext:26 | "good"
-  - if: 'wolves == "restext://Choice_Good_Lower"'
-    then:
-    # ../.source/TheCostofDisease_Eng_v10.cs:2274
-    - type: 'assign'
-      var: 'hunters'
-      # ../en-US.restext:25 | "evil"
-      expr: '"restext://Choice_Evil_Lower"'
+  if: 'wolves == "restext://Choice_Good_Lower"'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:2274
+  - type: 'assign'
+    var: 'hunters'
+    # ../en-US.restext:25 | "evil"
+    expr: '"restext://Choice_Evil_Lower"'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:2279
   - type: 'assign'

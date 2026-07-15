@@ -2,21 +2,24 @@
 ---
 format: 'mws/0.4'
 passage_id: 'RefusalEvent'
-# ../en-US.restext:1878 | "An Illuminating Conversation"
+# ../en-US.restext:1872 | "An Illuminating Conversation"
 title: 'restext://RefusalEvent_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:23737
 - type: 'text'
-  # ../en-US.restext:1879 | "As the black carriage app..."
+  # ../en-US.restext:1873 | "As the black carriage app..."
   value: 'restext://RefusalEvent_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:23738
 - type: 'assign'
   var: 'devpage'
   expr: '1'
+# ../.source/TheCostofDisease_Eng_v10.cs:23739
+- type: 'break'
+  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:23743
 - type: 'text'
-  # ../en-US.restext:1880 | "**I introduced myself as:**"
+  # ../en-US.restext:1874 | "**I introduced myself as:**"
   value: 'restext://RefusalEvent_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:23745
 - type: 'break'
@@ -28,16 +31,15 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:23781
   - type: 'conditional'
-    conditions:
-    - if: '!allyA || String.IsNullOrEmpty(allyA)'
-      then:
-      # ../.source/TheCostofDisease_Eng_v10.cs:23783
-      - type: 'assign'
-        var: 'meet'
-        expr: 'nameA'
-      # ../.source/TheCostofDisease_Eng_v10.cs:23784
-      - type: 'goto'
-        target: 'RefusalReveal' # ./00183-RefusalReveal.mws.yaml
+    if: '!allyA || String.IsNullOrEmpty(allyA)'
+    then:
+    # ../.source/TheCostofDisease_Eng_v10.cs:23783
+    - type: 'assign'
+      var: 'meet'
+      expr: 'nameA'
+    # ../.source/TheCostofDisease_Eng_v10.cs:23784
+    - type: 'goto'
+      target: 'RefusalReveal' # ./00183-RefusalReveal.mws.yaml
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:23788
     - type: 'assign'
@@ -56,16 +58,15 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:23798
   - type: 'conditional'
-    conditions:
-    - if: '!allyB || String.IsNullOrEmpty(allyB)'
-      then:
-      # ../.source/TheCostofDisease_Eng_v10.cs:23800
-      - type: 'assign'
-        var: 'meet'
-        expr: 'nameB'
-      # ../.source/TheCostofDisease_Eng_v10.cs:23801
-      - type: 'goto'
-        target: 'RefusalReveal' # ./00183-RefusalReveal.mws.yaml
+    if: '!allyB || String.IsNullOrEmpty(allyB)'
+    then:
+    # ../.source/TheCostofDisease_Eng_v10.cs:23800
+    - type: 'assign'
+      var: 'meet'
+      expr: 'nameB'
+    # ../.source/TheCostofDisease_Eng_v10.cs:23801
+    - type: 'goto'
+      target: 'RefusalReveal' # ./00183-RefusalReveal.mws.yaml
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:23805
     - type: 'assign'
@@ -88,16 +89,15 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:23815
     - type: 'conditional'
-      conditions:
-      - if: '!allyC || String.IsNullOrEmpty(allyC)'
-        then:
-        # ../.source/TheCostofDisease_Eng_v10.cs:23817
-        - type: 'assign'
-          var: 'meet'
-          expr: 'nameC'
-        # ../.source/TheCostofDisease_Eng_v10.cs:23818
-        - type: 'goto'
-          target: 'RefusalReveal' # ./00183-RefusalReveal.mws.yaml
+      if: '!allyC || String.IsNullOrEmpty(allyC)'
+      then:
+      # ../.source/TheCostofDisease_Eng_v10.cs:23817
+      - type: 'assign'
+        var: 'meet'
+        expr: 'nameC'
+      # ../.source/TheCostofDisease_Eng_v10.cs:23818
+      - type: 'goto'
+        target: 'RefusalReveal' # ./00183-RefusalReveal.mws.yaml
       else:
       # ../.source/TheCostofDisease_Eng_v10.cs:23822
       - type: 'assign'
@@ -106,6 +106,8 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:23823
       - type: 'goto'
         target: 'JoinedAlready' # ./00211-JoinedAlready.mws.yaml
+  # ../.source/TheCostofDisease_Eng_v10.cs:23759
+  - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:23761
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:23762
@@ -119,16 +121,15 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:23832
     - type: 'conditional'
-      conditions:
-      - if: '!allyD || String.IsNullOrEmpty(allyD)'
-        then:
-        # ../.source/TheCostofDisease_Eng_v10.cs:23834
-        - type: 'assign'
-          var: 'meet'
-          expr: 'nameD'
-        # ../.source/TheCostofDisease_Eng_v10.cs:23835
-        - type: 'goto'
-          target: 'RefusalReveal' # ./00183-RefusalReveal.mws.yaml
+      if: '!allyD || String.IsNullOrEmpty(allyD)'
+      then:
+      # ../.source/TheCostofDisease_Eng_v10.cs:23834
+      - type: 'assign'
+        var: 'meet'
+        expr: 'nameD'
+      # ../.source/TheCostofDisease_Eng_v10.cs:23835
+      - type: 'goto'
+        target: 'RefusalReveal' # ./00183-RefusalReveal.mws.yaml
       else:
       # ../.source/TheCostofDisease_Eng_v10.cs:23839
       - type: 'assign'
@@ -137,6 +138,8 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:23840
       - type: 'goto'
         target: 'JoinedAlready' # ./00211-JoinedAlready.mws.yaml
+  # ../.source/TheCostofDisease_Eng_v10.cs:23766
+  - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:23768
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:23769
@@ -144,22 +147,21 @@ nodes:
   if: 'players > 4'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:23772
-  - type: 'popup'
+  - type: 'link'
     label: '{nameE}'
     snapshot: true
-    content:
+    onclick:
     # ../.source/TheCostofDisease_Eng_v10.cs:23849
     - type: 'conditional'
-      conditions:
-      - if: '!allyE || String.IsNullOrEmpty(allyE)'
-        then:
-        # ../.source/TheCostofDisease_Eng_v10.cs:23851
-        - type: 'assign'
-          var: 'meet'
-          expr: 'nameE'
-        # ../.source/TheCostofDisease_Eng_v10.cs:23852
-        - type: 'goto'
-          target: 'RefusalReveal' # ./00183-RefusalReveal.mws.yaml
+      if: '!allyE || String.IsNullOrEmpty(allyE)'
+      then:
+      # ../.source/TheCostofDisease_Eng_v10.cs:23851
+      - type: 'assign'
+        var: 'meet'
+        expr: 'nameE'
+      # ../.source/TheCostofDisease_Eng_v10.cs:23852
+      - type: 'goto'
+        target: 'RefusalReveal' # ./00183-RefusalReveal.mws.yaml
       else:
       # ../.source/TheCostofDisease_Eng_v10.cs:23856
       - type: 'assign'

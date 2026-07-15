@@ -2,21 +2,24 @@
 ---
 format: 'mws/0.4'
 passage_id: 'HospitalVisitCheck'
-# ../en-US.restext:1263 | "A Compulsory Visitation"
+# ../en-US.restext:1261 | "A Compulsory Visitation"
 title: 'restext://HospitalVisitCheck_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:14501
 - type: 'text'
-  # ../en-US.restext:1264 | "The {townname} General Ho..."
+  # ../en-US.restext:1262 | "The {townname} General Ho..."
   value: 'restext://HospitalVisitCheck_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:14509
 - type: 'assign'
   var: 'twopage'
   expr: '1'
+# ../.source/TheCostofDisease_Eng_v10.cs:14508
+- type: 'break'
+  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:14511
 - type: 'text'
-  # ../en-US.restext:1265 | "On the day of the visit, ..."
+  # ../en-US.restext:1263 | "On the day of the visit, ..."
   value: 'restext://HospitalVisitCheck_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:14513
 - type: 'conditional'
@@ -25,7 +28,7 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:14515
   - type: 'text'
-    # ../en-US.restext:1266 | " and using the innoculati..."
+    # ../en-US.restext:1264 | " and using the innoculati..."
     value: 'restext://HospitalVisitCheck_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:14517
 - type: 'text'
@@ -35,17 +38,17 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:14520
 - type: 'text'
-  # ../en-US.restext:1267 | "Click on the name of the ..."
+  # ../en-US.restext:1265 | "Click on the name of the ..."
   value: 'restext://HospitalVisitCheck_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:14527
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:14530
-- type: 'popup'
+- type: 'link'
   # ../en-US.restext:15 | "Dr. {nameA} Jr."
   label: 'restext://Character_DrNameA_Jr'
   snapshot: true
-  content:
+  onclick:
   # ../.source/TheCostofDisease_Eng_v10.cs:14563
   - type: 'assign'
     var: 'hospsign'
@@ -91,11 +94,11 @@ nodes:
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:14534
-- type: 'popup'
+- type: 'link'
   # ../en-US.restext:16 | "Dr. {nameB} Jr."
   label: 'restext://Character_DrNameB_Jr'
   snapshot: true
-  content:
+  onclick:
   # ../.source/TheCostofDisease_Eng_v10.cs:14593
   - type: 'assign'
     var: 'hospsign'
@@ -145,11 +148,11 @@ nodes:
   if: 'players > 2'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:14540
-  - type: 'popup'
+  - type: 'link'
     # ../en-US.restext:17 | "Dr. {nameC} Jr."
     label: 'restext://Character_DrNameC_Jr'
     snapshot: true
-    content:
+    onclick:
     # ../.source/TheCostofDisease_Eng_v10.cs:14623
     - type: 'assign'
       var: 'hospsign'
@@ -191,16 +194,19 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:14646
       - type: 'goto'
         target: 'HospitalVisitCheck2' # ./00131-HospitalVisitCheck2.mws.yaml
+  # ../.source/TheCostofDisease_Eng_v10.cs:14541
+  - type: 'break'
+    style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:14544
 - type: 'conditional'
   if: 'players > 3'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:14547
-  - type: 'popup'
+  - type: 'link'
     # ../en-US.restext:18 | "Dr. {nameD} Jr."
     label: 'restext://Character_DrNameD_Jr'
     snapshot: true
-    content:
+    onclick:
     # ../.source/TheCostofDisease_Eng_v10.cs:14653
     - type: 'assign'
       var: 'hospsign'
@@ -242,16 +248,19 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:14676
       - type: 'goto'
         target: 'HospitalVisitCheck2' # ./00131-HospitalVisitCheck2.mws.yaml
+  # ../.source/TheCostofDisease_Eng_v10.cs:14548
+  - type: 'break'
+    style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:14551
 - type: 'conditional'
   if: 'players > 4'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:14554
-  - type: 'popup'
+  - type: 'link'
     # ../en-US.restext:19 | "Dr. {nameE} Jr."
     label: 'restext://Character_DrNameE_Jr'
     snapshot: true
-    content:
+    onclick:
     # ../.source/TheCostofDisease_Eng_v10.cs:14683
     - type: 'assign'
       var: 'hospsign'

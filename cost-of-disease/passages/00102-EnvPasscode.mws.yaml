@@ -9,13 +9,13 @@ nodes:
   if: '!password_submitted'
   then:
   - type: 'popup'
+    layout: 'input-popup'
     content:
     - type: 'text'
-      # ../en-US.restext:1135 | "Enter the secret password..."
+      # ../en-US.restext:1134 | "Enter the secret password..."
       value: 'restext://EnvPasscode_001'
     - type: 'input'
-      # ../en-US.restext:1136 | "EnvPasscode"
-      label: 'restext://EnvPasscode_002'
+      label: ''
       var: 'password'
     # ../en-US.restext:346 | "Continue"
     okay: 'restext://UIButton_Continue'

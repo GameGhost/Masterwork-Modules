@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'CharityNegCons'
-# ../en-US.restext:1545 | "Condescending Patronage"
+# ../en-US.restext:1539 | "Condescending Patronage"
 title: 'restext://CharityNegCons_001'
 layout: 'narration'
 nodes:
@@ -16,14 +16,14 @@ nodes:
   expr: 'rand_between(1, 2, "CharityNegCons_0")'
 # ../.source/TheCostofDisease_Eng_v10.cs:20639
 - type: 'text'
-  # ../en-US.restext:1546 | "It should be expected tha..."
+  # ../en-US.restext:1540 | "It should be expected tha..."
   value: 'restext://CharityNegCons_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:20640
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:20642
 - type: 'text'
-  # ../en-US.restext:1547 | "{charity} III's family le..."
+  # ../en-US.restext:1541 | "{charity} III's family le..."
   value: 'restext://CharityNegCons_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:20652
 - type: 'break'
@@ -43,12 +43,9 @@ nodes:
     asset: 'image://setup/S1_HeartToken'
     style: 'setup-image'
   content:
-  # ../.source/TheCostofDisease_Eng_v10.cs:20671
-  - type: 'break'
-    style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:20673
   - type: 'text'
-    # ../en-US.restext:1548 | "At the start of the round..."
+    # ../en-US.restext:1542 | "At the start of the round..."
     value: 'restext://CharityNegCons_004'
   # ../.source/TheCostofDisease_Eng_v10.cs:20677
   - type: 'switch'
@@ -58,13 +55,13 @@ nodes:
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:20679
       - type: 'text'
-        # ../en-US.restext:1549 | "pay $1 to the supply."
+        # ../en-US.restext:1543 | "pay $1 to the supply."
         value: 'restext://CharityNegCons_005'
     - match: 2
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:20683
       - type: 'text'
-        # ../en-US.restext:1550 | "gain 1 {icon:creepy_icon}."
+        # ../en-US.restext:1544 | "gain 1 {icon:creepy_icon}."
         value: 'restext://CharityNegCons_006'
   # ../.source/TheCostofDisease_Eng_v10.cs:20687
   - type: 'break'

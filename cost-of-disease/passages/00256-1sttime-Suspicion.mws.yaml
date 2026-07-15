@@ -13,9 +13,6 @@ nodes:
     asset: 'image://setup/AngryMobSetup1'
     style: 'setup-image'
   content:
-  # ../.source/TheCostofDisease_Eng_v10.cs:27506
-  - type: 'break'
-    style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:27511
   - type: 'switch'
     on: 'players'
@@ -44,22 +41,25 @@ nodes:
       - type: 'assign'
         var: 'tracker'
         expr: 'rand_between(10, 12, "1sttime-Suspicion_3")'
+  # ../.source/TheCostofDisease_Eng_v10.cs:27506
+  - type: 'break'
+    style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:27508
   - type: 'text'
-    # ../en-US.restext:2176 | "Place the Suspicion marke..."
+    # ../en-US.restext:2169 | "Place the Suspicion marke..."
     value: 'restext://_1sttime_Suspicion_001'
   # ../.source/TheCostofDisease_Eng_v10.cs:27534
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:27538
   - type: 'text'
-    # ../en-US.restext:2177 | "**Suspicion Marker**"
+    # ../en-US.restext:2170 | "**Suspicion Marker**"
     value: 'restext://_1sttime_Suspicion_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:27540
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:27541
   - type: 'text'
-    # ../en-US.restext:2178 | "The Suspicion Marker repr..."
+    # ../en-US.restext:2171 | "The Suspicion Marker repr..."
     value: 'restext://_1sttime_Suspicion_003'
   # ../en-US.restext:343 | "Accept"
   okay: 'restext://UIButton_Accept'

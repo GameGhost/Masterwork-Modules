@@ -2,31 +2,28 @@
 ---
 format: 'mws/0.4'
 passage_id: 'HunterConf2'
-# ../en-US.restext:1733 | "EXPERIMENTS UNLEASHED"
+# ../en-US.restext:1727 | "EXPERIMENTS UNLEASHED"
 title: 'restext://HunterConf2_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:22394
 - type: 'text'
-  # ../en-US.restext:1734 | "All remaining eligible pl..."
+  # ../en-US.restext:1728 | "All remaining eligible pl..."
   value: 'restext://HunterConf2_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:22407
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:22409
 - type: 'text'
-  # ../en-US.restext:1735 | "Once all players have cho..."
+  # ../en-US.restext:1729 | "Once all players have cho..."
   value: 'restext://HunterConf2_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:22411
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:22414
 - type: 'text'
-  # ../en-US.restext:1736 | "Then, players will **coun..."
+  # ../en-US.restext:1730 | "Then, players will **coun..."
   value: 'restext://HunterConf2_004'
-# ../.source/TheCostofDisease_Eng_v10.cs:22419
-- type: 'break'
-  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:22422
 - type: 'switch'
   on: 'players'
@@ -55,15 +52,18 @@ nodes:
     - type: 'assign'
       var: 'huntnum'
       expr: 'rand_between(13, 19, "HunterConf2_3")'
+# ../.source/TheCostofDisease_Eng_v10.cs:22419
+- type: 'break'
+  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:22421
 - type: 'text'
-  # ../en-US.restext:1737 | "If the value is equal to ..."
+  # ../en-US.restext:1731 | "If the value is equal to ..."
   value: 'restext://HunterConf2_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:22441
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:22442
 - type: 'text'
-  # ../en-US.restext:1738 | "If the value is less, the..."
+  # ../en-US.restext:1732 | "If the value is less, the..."
   value: 'restext://HunterConf2_006'
 # ../.source/TheCostofDisease_Eng_v10.cs:22443
 - type: 'break'
@@ -71,7 +71,7 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:22447
 - type: 'popup'
   layout: 'bidding'
-  # ../en-US.restext:1739 | "Click to start the bid."
+  # ../en-US.restext:1733 | "Click to start the bid."
   label: 'restext://HunterConf2_007'
   target: 'HunterConf3'
   # ../en-US.restext:344 | "Close"

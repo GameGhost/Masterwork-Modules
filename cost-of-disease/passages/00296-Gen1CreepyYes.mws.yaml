@@ -6,77 +6,76 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:30457
 - type: 'conditional'
-  conditions:
   # ../en-US.restext:25 | "evil"
-  - if: 'hunters == "restext://Choice_Evil_Lower"'
-    then:
-    # ../.source/TheCostofDisease_Eng_v10.cs:30461
-    - type: 'text'
-      # ../en-US.restext:2448 | "**Agreed**"
-      value: 'restext://Gen1CreepyYes_001'
-    # ../.source/TheCostofDisease_Eng_v10.cs:30463
+  if: 'hunters == "restext://Choice_Evil_Lower"'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:30461
+  - type: 'text'
+    # ../en-US.restext:2441 | "**Agreed**"
+    value: 'restext://Gen1CreepyYes_001'
+  # ../.source/TheCostofDisease_Eng_v10.cs:30463
+  - type: 'break'
+  # ../.source/TheCostofDisease_Eng_v10.cs:30464
+  - type: 'text'
+    # ../en-US.restext:2445 | "The individual produced a..."
+    value: 'restext://Gen1CreepyYes_005'
+  # ../.source/TheCostofDisease_Eng_v10.cs:30465
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/TheCostofDisease_Eng_v10.cs:30467
+  - type: 'text'
+    # ../en-US.restext:2443 | "Perhaps it had been a cha..."
+    value: 'restext://Gen1CreepyYes_003'
+  # ../.source/TheCostofDisease_Eng_v10.cs:30469
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/TheCostofDisease_Eng_v10.cs:30473
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:36 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
+    target: '${round == 1 ? "Fever1" : round == 2 ? "Fever2" : "Fever3"}'
+    # ../en-US.restext:344 | "Close"
+    okay: 'restext://UIButton_Close'
+    snapshot: true
+    header:
+    # ../.source/TheCostofDisease_Eng_v10.cs:30514
+    - type: 'image'
+      asset: 'image://setup/Money_Icon'
+      style: 'setup-image'
+    content:
+    # ../.source/TheCostofDisease_Eng_v10.cs:30506
+    - type: 'assign'
+      var: 'seedy'
+      # ../en-US.restext:31 | "yes"
+      expr: '"restext://Choice_Yes_Lower"'
+    # ../.source/TheCostofDisease_Eng_v10.cs:30507
+    - type: 'assign'
+      var: 'creepy4'
+      expr: '1'
+    # ../.source/TheCostofDisease_Eng_v10.cs:30515
     - type: 'break'
-    # ../.source/TheCostofDisease_Eng_v10.cs:30464
+    # ../.source/TheCostofDisease_Eng_v10.cs:30516
     - type: 'text'
-      # ../en-US.restext:2452 | "The individual produced a..."
-      value: 'restext://Gen1CreepyYes_005'
-    # ../.source/TheCostofDisease_Eng_v10.cs:30465
-    - type: 'break'
-      style: 'paragraph'
-    # ../.source/TheCostofDisease_Eng_v10.cs:30467
-    - type: 'text'
-      # ../en-US.restext:2450 | "Perhaps it had been a cha..."
-      value: 'restext://Gen1CreepyYes_003'
-    # ../.source/TheCostofDisease_Eng_v10.cs:30469
-    - type: 'break'
-      style: 'paragraph'
-    # ../.source/TheCostofDisease_Eng_v10.cs:30473
-    - type: 'popup'
-      layout: 'setup'
-      # ../en-US.restext:36 | "Click to continue..."
-      label: 'restext://Click_ContinueEllipsis_C'
-      target: '${round == 1 ? "Fever1" : round == 2 ? "Fever2" : "Fever3"}'
-      # ../en-US.restext:344 | "Close"
-      okay: 'restext://UIButton_Close'
-      snapshot: true
-      header:
-      # ../.source/TheCostofDisease_Eng_v10.cs:30514
-      - type: 'image'
-        asset: 'image://setup/Money_Icon'
-        style: 'setup-image'
-      content:
-      # ../.source/TheCostofDisease_Eng_v10.cs:30506
-      - type: 'assign'
-        var: 'seedy'
-        # ../en-US.restext:31 | "yes"
-        expr: '"restext://Choice_Yes_Lower"'
-      # ../.source/TheCostofDisease_Eng_v10.cs:30507
-      - type: 'assign'
-        var: 'creepy4'
-        expr: '1'
-      # ../.source/TheCostofDisease_Eng_v10.cs:30515
-      - type: 'break'
-      # ../.source/TheCostofDisease_Eng_v10.cs:30516
-      - type: 'text'
-        # ../en-US.restext:2453 | "Gain $2. Then, return the..."
-        value: 'restext://Gen1CreepyYes_006'
+      # ../en-US.restext:2446 | "Gain $2. Then, return the..."
+      value: 'restext://Gen1CreepyYes_006'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:30480
   - type: 'text'
-    # ../en-US.restext:2448 | "**Agreed**"
+    # ../en-US.restext:2441 | "**Agreed**"
     value: 'restext://Gen1CreepyYes_001'
   # ../.source/TheCostofDisease_Eng_v10.cs:30482
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:30483
   - type: 'text'
-    # ../en-US.restext:2449 | "The representative was ap..."
+    # ../en-US.restext:2442 | "The representative was ap..."
     value: 'restext://Gen1CreepyYes_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:30489
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:30491
   - type: 'text'
-    # ../en-US.restext:2450 | "Perhaps it had been a cha..."
+    # ../en-US.restext:2443 | "Perhaps it had been a cha..."
     value: 'restext://Gen1CreepyYes_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:30493
   - type: 'break'
@@ -109,5 +108,5 @@ nodes:
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:30556
     - type: 'text'
-      # ../en-US.restext:2451 | "You may immediately take ..."
+      # ../en-US.restext:2444 | "You may immediately take ..."
       value: 'restext://Gen1CreepyYes_004'

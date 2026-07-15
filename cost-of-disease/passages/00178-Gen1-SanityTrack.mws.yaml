@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Gen1-SanityTrack'
-# ../en-US.restext:1608 | "To Quell the Mind"
+# ../en-US.restext:1602 | "To Quell the Mind"
 title: 'restext://Gen1_SanityTrack_001'
 layout: 'narration'
 nodes:
@@ -12,14 +12,14 @@ nodes:
   expr: '1'
 # ../.source/TheCostofDisease_Eng_v10.cs:21037
 - type: 'text'
-  # ../en-US.restext:1609 | "Just as a sharpened blade..."
+  # ../en-US.restext:1603 | "Just as a sharpened blade..."
   value: 'restext://Gen1_SanityTrack_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:21038
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:21040
 - type: 'text'
-  # ../en-US.restext:1610 | "Please click on the name ..."
+  # ../en-US.restext:1604 | "Please click on the name ..."
   value: 'restext://Gen1_SanityTrack_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:21050
 - type: 'break'
@@ -64,6 +64,9 @@ nodes:
     - type: 'assign'
       var: 'gen1sane'
       expr: 'nameC'
+  # ../.source/TheCostofDisease_Eng_v10.cs:21064
+  - type: 'break'
+    style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:21067
 - type: 'conditional'
   if: 'players > 3'
@@ -78,6 +81,9 @@ nodes:
     - type: 'assign'
       var: 'gen1sane'
       expr: 'nameD'
+  # ../.source/TheCostofDisease_Eng_v10.cs:21071
+  - type: 'break'
+    style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:21074
 - type: 'conditional'
   if: 'players > 4'

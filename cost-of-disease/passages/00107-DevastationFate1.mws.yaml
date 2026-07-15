@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'DevastationFate1'
-# ../en-US.restext:1157 | "Strong Alliance"
+# ../en-US.restext:1155 | "Strong Alliance"
 title: 'restext://DevastationFate1_001'
 tags:
 - 'END'
@@ -15,84 +15,78 @@ nodes:
   okay: 'restext://UIButton_Confirm'
   content:
   - type: 'text'
-    # ../en-US.restext:1158 | "Remove all player pieces ..."
+    # ../en-US.restext:1156 | "Remove all player pieces ..."
     value: 'restext://DevastationFate1_002'
   - type: 'let'
     var: 'generation'
     expr: '6'
-# ../.source/TheCostofDisease_Eng_v10.cs:11708
-- type: 'break'
-  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:11710
 - type: 'text'
-  # ../en-US.restext:1159 | "The ties that bound the f..."
+  # ../en-US.restext:1157 | "The ties that bound the f..."
   value: 'restext://DevastationFate1_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:11712
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:11714
 - type: 'conditional'
-  conditions:
   # ../en-US.restext:110 | "Fraternity of Hunters"
-  - if: 'society == "restext://Faction_FraternityOfHunters_Plain"'
+  if: 'society == "restext://Faction_FraternityOfHunters_Plain"'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:11716
+  - type: 'conditional'
+    # ../en-US.restext:25 | "evil"
+    if: 'hunters == "restext://Choice_Evil_Lower"'
     then:
-    # ../.source/TheCostofDisease_Eng_v10.cs:11716
-    - type: 'conditional'
-      conditions:
-      # ../en-US.restext:25 | "evil"
-      - if: 'hunters == "restext://Choice_Evil_Lower"'
-        then:
-        # ../.source/TheCostofDisease_Eng_v10.cs:11718
-        - type: 'text'
-          # ../en-US.restext:1163 | "While secrets could not f..."
-          value: 'restext://DevastationFate1_007'
-        # ../.source/TheCostofDisease_Eng_v10.cs:11728
-        - type: 'break'
-          style: 'paragraph'
-        # ../.source/TheCostofDisease_Eng_v10.cs:11730
-        - type: 'link'
-          # ../en-US.restext:36 | "Click to continue..."
-          label: 'restext://Click_ContinueEllipsis_C'
-          target: 'HelpingEvil' # ./00228-HelpingEvil.mws.yaml
-          snapshot: true
-      else:
-      # ../.source/TheCostofDisease_Eng_v10.cs:11735
-      - type: 'text'
-        # ../en-US.restext:1162 | "By exposing the nefarious..."
-        value: 'restext://DevastationFate1_006'
-      # ../.source/TheCostofDisease_Eng_v10.cs:11748
-      - type: 'break'
-        style: 'paragraph'
-      # ../.source/TheCostofDisease_Eng_v10.cs:11750
-      - type: 'link'
-        # ../en-US.restext:36 | "Click to continue..."
-        label: 'restext://Click_ContinueEllipsis_C'
-        target: 'ProsperityHunterIntro' # ./00083-ProsperityHunterIntro.mws.yaml
-        snapshot: true
+    # ../.source/TheCostofDisease_Eng_v10.cs:11718
+    - type: 'text'
+      # ../en-US.restext:1161 | "While secrets could not f..."
+      value: 'restext://DevastationFate1_007'
+    # ../.source/TheCostofDisease_Eng_v10.cs:11728
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/TheCostofDisease_Eng_v10.cs:11730
+    - type: 'link'
+      # ../en-US.restext:36 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
+      target: 'HelpingEvil' # ./00228-HelpingEvil.mws.yaml
+      snapshot: true
+    else:
+    # ../.source/TheCostofDisease_Eng_v10.cs:11735
+    - type: 'text'
+      # ../en-US.restext:1160 | "By exposing the nefarious..."
+      value: 'restext://DevastationFate1_006'
+    # ../.source/TheCostofDisease_Eng_v10.cs:11748
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/TheCostofDisease_Eng_v10.cs:11750
+    - type: 'link'
+      # ../en-US.restext:36 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
+      target: 'ProsperityHunterIntro' # ./00083-ProsperityHunterIntro.mws.yaml
+      snapshot: true
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:11756
   - type: 'conditional'
-    conditions:
     # ../en-US.restext:25 | "evil"
-    - if: 'wolves == "restext://Choice_Evil_Lower"'
-      then:
-      # ../.source/TheCostofDisease_Eng_v10.cs:11758
-      - type: 'text'
-        # ../en-US.restext:1161 | "While secrets could not f..."
-        value: 'restext://DevastationFate1_005'
-      # ../.source/TheCostofDisease_Eng_v10.cs:11767
-      - type: 'break'
-        style: 'paragraph'
-      # ../.source/TheCostofDisease_Eng_v10.cs:11769
-      - type: 'link'
-        # ../en-US.restext:36 | "Click to continue..."
-        label: 'restext://Click_ContinueEllipsis_C'
-        target: 'HelpingEvil' # ./00228-HelpingEvil.mws.yaml
-        snapshot: true
+    if: 'wolves == "restext://Choice_Evil_Lower"'
+    then:
+    # ../.source/TheCostofDisease_Eng_v10.cs:11758
+    - type: 'text'
+      # ../en-US.restext:1159 | "While secrets could not f..."
+      value: 'restext://DevastationFate1_005'
+    # ../.source/TheCostofDisease_Eng_v10.cs:11767
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/TheCostofDisease_Eng_v10.cs:11769
+    - type: 'link'
+      # ../en-US.restext:36 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
+      target: 'HelpingEvil' # ./00228-HelpingEvil.mws.yaml
+      snapshot: true
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:11774
     - type: 'text'
-      # ../en-US.restext:1160 | "By exposing the insidious..."
+      # ../en-US.restext:1158 | "By exposing the insidious..."
       value: 'restext://DevastationFate1_004'
     # ../.source/TheCostofDisease_Eng_v10.cs:11787
     - type: 'break'

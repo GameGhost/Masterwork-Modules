@@ -43,17 +43,19 @@ nodes:
 - type: 'assign'
   var: 'final5'
   expr: '6'
+# ../.source/TheCostofDisease_Eng_v10.cs:3450
+- type: 'break'
+  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:3454
 - type: 'conditional'
-  conditions:
-  - if: 'pana == "unleash"'
-    then:
-    # ../.source/TheCostofDisease_Eng_v10.cs:3456
-    - type: 'link'
-      # ../en-US.restext:36 | "Click to continue..."
-      label: 'restext://Click_ContinueEllipsis_C'
-      target: 'PanaceaUnleash' # ./00060-PanaceaUnleash.mws.yaml
-      snapshot: true
+  if: 'pana == "unleash"'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:3456
+  - type: 'link'
+    # ../en-US.restext:36 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
+    target: 'PanaceaUnleash' # ./00060-PanaceaUnleash.mws.yaml
+    snapshot: true
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:3460
   - type: 'link'

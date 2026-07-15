@@ -13,7 +13,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:12782
 - type: 'text'
-  # ../en-US.restext:1201 | "**Continuing Investigatio..."
+  # ../en-US.restext:1199 | "**Continuing Investigatio..."
   value: 'restext://BuildplayE_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:12785
 - type: 'break'
@@ -43,7 +43,7 @@ nodes:
     expr: '["restext://Common_Gentleman", "restext://Common_Gentlewoman"].shuffled("BuildplayE_0")[0]'
   # ../.source/TheCostofDisease_Eng_v10.cs:12807
   - type: 'text'
-    # ../en-US.restext:1202 | "To my chagrin, a {_rnd_Bu..."
+    # ../en-US.restext:1200 | "To my chagrin, a {_rnd_Bu..."
     value: 'restext://BuildplayE_002'
     lets:
     - '_rnd_BuildplayE_0'
@@ -58,6 +58,9 @@ nodes:
 - type: 'assign'
   var: 'playE'
   expr: 'playE + 1'
+# ../.source/TheCostofDisease_Eng_v10.cs:12830
+- type: 'break'
+  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:12834
 - type: 'link'
   # ../en-US.restext:29 | "I exposed the truth."

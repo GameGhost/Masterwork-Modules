@@ -34,6 +34,9 @@ nodes:
 - type: 'assign'
   var: '_icon'
   expr: '"storybooktoken"'
+# ../.source/TheCostofDisease_Eng_v10.cs:3998
+- type: 'break'
+  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:4001
 - type: 'conditional'
   if: 'creepy4 == 0'
@@ -53,6 +56,9 @@ nodes:
       label: 'restext://Click_Here_Plain'
       target: 'Gen1-CreepyTrack' # ./00177-Gen1-CreepyTrack.mws.yaml
       snapshot: true
+  # ../.source/TheCostofDisease_Eng_v10.cs:4024
+  - type: 'break'
+    style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:4027
 - type: 'conditional'
   if: 'sane3 == 0'
@@ -102,7 +108,7 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:582 | "The Middle Years of the F..."
+      # ../en-US.restext:581 | "The Middle Years of the F..."
       value: 'restext://Fever2_005'
     - type: 'break'
       style: 'paragraph'

@@ -30,11 +30,9 @@ nodes:
       asset: 'image://setup/VillageChronicleCover'
       style: 'setup-image'
     content:
-    # ../.source/TheCostofDisease_Eng_v10.cs:5702
-    - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:5703
     - type: 'text'
-      # ../en-US.restext:645 | "Turn to page **11**in the..."
+      # ../en-US.restext:644 | "Turn to page **11**in the..."
       value: 'restext://University3_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:5711
 - type: 'break'
@@ -71,6 +69,9 @@ nodes:
   - type: 'assign'
     var: 'ending'
     expr: '"END-UniGood"' # ./00318-END-UniGood.mws.yaml
+  # ../.source/TheCostofDisease_Eng_v10.cs:5770
+  - type: 'break'
+    style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:5774
   - type: 'popup'
     layout: 'end_of_round'

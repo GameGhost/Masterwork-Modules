@@ -2,27 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ElecN'
-# ../en-US.restext:869 | "Celebration and Anger"
+# ../en-US.restext:868 | "Celebration and Anger"
 title: 'restext://ElecN_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:8226
 - type: 'text'
-  # ../en-US.restext:870 | "The townspeople sifted th..."
+  # ../en-US.restext:869 | "The townspeople sifted th..."
   value: 'restext://ElecN_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:8235
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:8237
 - type: 'text'
-  # ../en-US.restext:871 | "Fueled by alcohol and ins..."
+  # ../en-US.restext:870 | "Fueled by alcohol and ins..."
   value: 'restext://ElecN_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:8241
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:8243
 - type: 'text'
-  # ../en-US.restext:872 | "In the morning, as the mi..."
+  # ../en-US.restext:871 | "In the morning, as the mi..."
   value: 'restext://ElecN_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:8244
 - type: 'break'
@@ -50,22 +50,21 @@ nodes:
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:8266
   - type: 'text'
-    # ../en-US.restext:873 | "Return the {icon:angrymob..."
+    # ../en-US.restext:872 | "Return the {icon:angrymob..."
     value: 'restext://ElecN_005'
   # ../.source/TheCostofDisease_Eng_v10.cs:8270
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:8272
   - type: 'conditional'
-    conditions:
-    - if: 'players == 2'
-      then:
-      # ../.source/TheCostofDisease_Eng_v10.cs:8274
-      - type: 'text'
-        # ../en-US.restext:875 | "The player that won the v..."
-        value: 'restext://ElecN_007'
+    if: 'players == 2'
+    then:
+    # ../.source/TheCostofDisease_Eng_v10.cs:8274
+    - type: 'text'
+      # ../en-US.restext:874 | "The player that won the v..."
+      value: 'restext://ElecN_007'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:8283
     - type: 'text'
-      # ../en-US.restext:874 | "Any player that voted **Y..."
+      # ../en-US.restext:873 | "Any player that voted **Y..."
       value: 'restext://ElecN_006'

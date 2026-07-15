@@ -34,23 +34,23 @@ nodes:
         asset: 'image://setup/VillageChronicleCover'
         style: 'setup-image'
       content:
-      # ../.source/TheCostofDisease_Eng_v10.cs:5025
-      - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:5026
       - type: 'conditional'
-        conditions:
         # ../en-US.restext:194 | "bank"
-        - if: 'building == "restext://Location_Bank_Lower"'
-          then:
-          # ../.source/TheCostofDisease_Eng_v10.cs:5028
-          - type: 'text'
-            # ../en-US.restext:620 | "Turn to page **6** of the..."
-            value: 'restext://Hospital3_002'
+        if: 'building == "restext://Location_Bank_Lower"'
+        then:
+        # ../.source/TheCostofDisease_Eng_v10.cs:5028
+        - type: 'text'
+          # ../en-US.restext:619 | "Turn to page **6** of the..."
+          value: 'restext://Hospital3_002'
         else:
         # ../.source/TheCostofDisease_Eng_v10.cs:5038
         - type: 'text'
-          # ../en-US.restext:619 | "Turn to page **7** of the..."
+          # ../en-US.restext:618 | "Turn to page **7** of the..."
           value: 'restext://Hospital3_001'
+    # ../.source/TheCostofDisease_Eng_v10.cs:5046
+    - type: 'break'
+      style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:5052
 - type: 'section'
   # ../en-US.restext:134 | "{icon:storybook} **Board ..."
@@ -106,7 +106,7 @@ nodes:
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:5110
       - type: 'text'
-        # ../en-US.restext:621 | "Whenever a player complet..."
+        # ../en-US.restext:620 | "Whenever a player complet..."
         value: 'restext://Hospital3_003'
       # ../.source/TheCostofDisease_Eng_v10.cs:5115
       - type: 'link'
@@ -136,6 +136,9 @@ nodes:
       label: 'restext://Click_SpecialMessage_Generic3'
       target: 'Trigger35Points' # ./00122-Trigger35Points.mws.yaml
       snapshot: true
+  # ../.source/TheCostofDisease_Eng_v10.cs:5138
+  - type: 'break'
+    style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:5141
 - type: 'break'
   style: 'paragraph'
@@ -154,7 +157,7 @@ nodes:
       value: 'restext://Disease_3Experiments_Lead'
     # ../.source/TheCostofDisease_Eng_v10.cs:5159
     - type: 'link'
-      # ../en-US.restext:622 | "Click here for a special ..."
+      # ../en-US.restext:621 | "Click here for a special ..."
       label: 'restext://Hospital3_004'
       target: 'Trigger3Experiments' # ./00123-Trigger3Experiments.mws.yaml
       snapshot: true
@@ -163,7 +166,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:5168
 - type: 'section'
-  # ../en-US.restext:623 | "{icon:storybook} **The Se..."
+  # ../en-US.restext:622 | "{icon:storybook} **The Se..."
   title: 'restext://Hospital3_005'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5178
@@ -172,7 +175,7 @@ nodes:
     value: 'restext://Directive_JournalTrackLevel3_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:5180
   - type: 'link'
-    # ../en-US.restext:624 | "click here for a reward..."
+    # ../en-US.restext:623 | "click here for a reward..."
     label: 'restext://Hospital3_006'
     target: 'InfinityClick1' # ./00096-InfinityClick1.mws.yaml
     snapshot: true

@@ -42,18 +42,15 @@ nodes:
 - type: 'text'
   # ../en-US.restext:464 | "The possibilities for adv..."
   value: 'restext://Hospitalintro_007'
-# ../.source/TheCostofDisease_Eng_v10.cs:2930
-- type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:2931
 - type: 'conditional'
-  conditions:
   # ../en-US.restext:194 | "bank"
-  - if: 'building == "restext://Location_Bank_Lower"'
-    then:
-    # ../.source/TheCostofDisease_Eng_v10.cs:2933
-    - type: 'assign'
-      var: 'hos'
-      expr: '4'
+  if: 'building == "restext://Location_Bank_Lower"'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:2933
+  - type: 'assign'
+    var: 'hos'
+    expr: '4'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:2938
   - type: 'assign'
@@ -147,6 +144,9 @@ nodes:
 - type: 'assign'
   var: 'hospcount'
   expr: '0'
+# ../.source/TheCostofDisease_Eng_v10.cs:2930
+- type: 'break'
+  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:2963
 - type: 'link'
   # ../en-US.restext:36 | "Click to continue..."

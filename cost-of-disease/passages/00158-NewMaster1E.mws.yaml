@@ -6,12 +6,15 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:18343
 - type: 'text'
-  # ../en-US.restext:1409 | "**Carefully hand this Sto..."
+  # ../en-US.restext:1403 | "**Carefully hand this Sto..."
   value: 'restext://NewMaster1E_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:18349
 - type: 'assign'
   var: 'trig'
   expr: '5'
+# ../.source/TheCostofDisease_Eng_v10.cs:18348
+- type: 'break'
+  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:18354
 - type: 'popup'
   # ../en-US.restext:53 | "Once you are ready, click..."
@@ -20,7 +23,7 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:18393
   - type: 'text'
-    # ../en-US.restext:1410 | "**A Masterwork of My Own ..."
+    # ../en-US.restext:1404 | "**A Masterwork of My Own ..."
     value: 'restext://NewMaster1E_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:18397
   - type: 'break'
@@ -34,7 +37,7 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:18404
   - type: 'text'
-    # ../en-US.restext:1411 | "**My creation is from whi..."
+    # ../en-US.restext:1405 | "**My creation is from whi..."
     value: 'restext://NewMaster1E_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:18406
   - type: 'break'

@@ -8,17 +8,17 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:24973
 - type: 'text'
-  # ../en-US.restext:1989 | "A messenger in a gray clo..."
+  # ../en-US.restext:1983 | "A messenger in a gray clo..."
   value: 'restext://WolfJoin_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:24976
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:24979
-- type: 'popup'
-  # ../en-US.restext:1990 | "Pledge your service to th..."
+- type: 'link'
+  # ../en-US.restext:1984 | "Pledge your service to th..."
   label: 'restext://WolfJoin_002'
   snapshot: true
-  content:
+  onclick:
   # ../.source/TheCostofDisease_Eng_v10.cs:24990
   - type: 'assign'
     var: 'wcount'
@@ -64,12 +64,11 @@ nodes:
         expr: '"restext://Faction_Wolves_Lower"'
   # ../.source/TheCostofDisease_Eng_v10.cs:25011
   - type: 'conditional'
-    conditions:
-    - if: 'round == 5'
-      then:
-      # ../.source/TheCostofDisease_Eng_v10.cs:25013
-      - type: 'goto'
-        target: 'Devastation2' # ./00033-Devastation2.mws.yaml
+    if: 'round == 5'
+    then:
+    # ../.source/TheCostofDisease_Eng_v10.cs:25013
+    - type: 'goto'
+      target: 'Devastation2' # ./00033-Devastation2.mws.yaml
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:25018
     - type: 'goto'
@@ -79,14 +78,13 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:24983
 - type: 'conditional'
-  conditions:
-  - if: 'round == 5'
-    then:
-    - type: 'link'
-      # ../en-US.restext:77 | "Decide to do nothing instead."
-      label: 'restext://Directive_DoNothingInstead'
-      target: 'Devastation2'
-      snapshot: true # ./00033-Devastation2.mws.yaml
+  if: 'round == 5'
+  then:
+  - type: 'link'
+    # ../en-US.restext:77 | "Decide to do nothing instead."
+    label: 'restext://Directive_DoNothingInstead'
+    target: 'Devastation2'
+    snapshot: true # ./00033-Devastation2.mws.yaml
   else:
   - type: 'link'
     # ../en-US.restext:77 | "Decide to do nothing instead."

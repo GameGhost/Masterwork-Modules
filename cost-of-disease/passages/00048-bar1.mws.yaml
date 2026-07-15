@@ -14,7 +14,7 @@ nodes:
   expr: 'rand_between(1, 999, "bar1_1")'
 # ../.source/TheCostofDisease_Eng_v10.cs:6241
 - type: 'text'
-  # ../en-US.restext:681 | "**SWORN STATEMENT - Case ..."
+  # ../en-US.restext:680 | "**SWORN STATEMENT - Case ..."
   value: 'restext://bar1_001'
   lets:
   - '_rnd_bar1_0'
@@ -23,33 +23,35 @@ nodes:
 - type: 'assign'
   var: 'bar1'
   expr: 'rand_between(1, 2, "bar1_2")'
+# ../.source/TheCostofDisease_Eng_v10.cs:6246
+- type: 'break'
+  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:6249
 - type: 'conditional'
-  conditions:
-  - if: 'bar1 == 1'
-    then:
-    # ../.source/TheCostofDisease_Eng_v10.cs:6251
-    - type: 'text'
-      # ../en-US.restext:684 | "After a brief excursion t..."
-      value: 'restext://bar1_004'
-    # ../.source/TheCostofDisease_Eng_v10.cs:6258
-    - type: 'break'
-      style: 'paragraph'
-    # ../.source/TheCostofDisease_Eng_v10.cs:6260
-    - type: 'text'
-      # ../en-US.restext:685 | "We both decided to disrob..."
-      value: 'restext://bar1_005'
+  if: 'bar1 == 1'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:6251
+  - type: 'text'
+    # ../en-US.restext:683 | "After a brief excursion t..."
+    value: 'restext://bar1_004'
+  # ../.source/TheCostofDisease_Eng_v10.cs:6258
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/TheCostofDisease_Eng_v10.cs:6260
+  - type: 'text'
+    # ../en-US.restext:684 | "We both decided to disrob..."
+    value: 'restext://bar1_005'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:6265
   - type: 'text'
-    # ../en-US.restext:682 | "After a brief excursion t..."
+    # ../en-US.restext:681 | "After a brief excursion t..."
     value: 'restext://bar1_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:6272
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:6274
   - type: 'text'
-    # ../en-US.restext:683 | "It was around midnight th..."
+    # ../en-US.restext:682 | "It was around midnight th..."
     value: 'restext://bar1_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:6276
 - type: 'break'
@@ -65,9 +67,7 @@ nodes:
     asset: 'image://setup/Creepy_Icon'
     style: 'setup-image'
   content:
-  # ../.source/TheCostofDisease_Eng_v10.cs:6285
-  - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:6286
   - type: 'text'
-    # ../en-US.restext:686 | "Place a {icon:creepy_icon..."
+    # ../en-US.restext:685 | "Place a {icon:creepy_icon..."
     value: 'restext://bar1_006'

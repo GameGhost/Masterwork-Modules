@@ -22,53 +22,50 @@ nodes:
   expr: '0'
 # ../.source/TheCostofDisease_Eng_v10.cs:24772
 - type: 'conditional'
-  conditions:
-  - if: 'disease2 == 1'
-    then:
-    # ../.source/TheCostofDisease_Eng_v10.cs:24776
+  if: 'disease2 == 1'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:24776
+  - type: 'text'
+    # ../en-US.restext:1971 | "**A Cleansing**"
+    value: 'restext://Diseases2_004'
+  # ../.source/TheCostofDisease_Eng_v10.cs:24778
+  - type: 'break'
+  # ../.source/TheCostofDisease_Eng_v10.cs:24779
+  - type: 'text'
+    # ../en-US.restext:1972 | "When the symptoms grew to..."
+    value: 'restext://Diseases2_005'
+  # ../.source/TheCostofDisease_Eng_v10.cs:24780
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/TheCostofDisease_Eng_v10.cs:24784
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:36 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
+    target: '${seedy == "yes" ? "Gen1Creepy-ConcealExpose" : "Devastation3"}'
+    # ../en-US.restext:344 | "Close"
+    okay: 'restext://UIButton_Close'
+    snapshot: true
+    header:
+    # ../.source/TheCostofDisease_Eng_v10.cs:24817
+    - type: 'image'
+      asset: 'image://setup/DiscardEstateUpgrade_Icon'
+      style: 'setup-image'
+    content:
+    # ../.source/TheCostofDisease_Eng_v10.cs:24819
     - type: 'text'
-      # ../en-US.restext:1977 | "**A Cleansing**"
-      value: 'restext://Diseases2_004'
-    # ../.source/TheCostofDisease_Eng_v10.cs:24778
-    - type: 'break'
-    # ../.source/TheCostofDisease_Eng_v10.cs:24779
-    - type: 'text'
-      # ../en-US.restext:1978 | "When the symptoms grew to..."
-      value: 'restext://Diseases2_005'
-    # ../.source/TheCostofDisease_Eng_v10.cs:24780
-    - type: 'break'
-      style: 'paragraph'
-    # ../.source/TheCostofDisease_Eng_v10.cs:24784
-    - type: 'popup'
-      layout: 'setup'
-      # ../en-US.restext:36 | "Click to continue..."
-      label: 'restext://Click_ContinueEllipsis_C'
-      target: '${seedy == "yes" ? "Gen1Creepy-ConcealExpose" : "Devastation3"}'
-      # ../en-US.restext:344 | "Close"
-      okay: 'restext://UIButton_Close'
-      snapshot: true
-      header:
-      # ../.source/TheCostofDisease_Eng_v10.cs:24817
-      - type: 'image'
-        asset: 'image://setup/DiscardEstateUpgrade_Icon'
-        style: 'setup-image'
-      content:
-      # ../.source/TheCostofDisease_Eng_v10.cs:24818
-      - type: 'break'
-      # ../.source/TheCostofDisease_Eng_v10.cs:24819
-      - type: 'text'
-        # ../en-US.restext:1979 | "All players that have not..."
-        value: 'restext://Diseases2_006'
+      # ../en-US.restext:1973 | "All players that have not..."
+      value: 'restext://Diseases2_006'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:24791
   - type: 'text'
-    # ../en-US.restext:1974 | "**Wasted Potential**"
+    # ../en-US.restext:1968 | "**Wasted Potential**"
     value: 'restext://Diseases2_001'
   # ../.source/TheCostofDisease_Eng_v10.cs:24793
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:24794
   - type: 'text'
-    # ../en-US.restext:1975 | "While the disease that pl..."
+    # ../en-US.restext:1969 | "While the disease that pl..."
     value: 'restext://Diseases2_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:24798
   - type: 'break'
@@ -88,9 +85,7 @@ nodes:
       asset: 'image://setup/S1_DiseaseExperiment'
       style: 'setup-image'
     content:
-    # ../.source/TheCostofDisease_Eng_v10.cs:24856
-    - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:24857
     - type: 'text'
-      # ../en-US.restext:1976 | "All players that have not..."
+      # ../en-US.restext:1970 | "All players that have not..."
       value: 'restext://Diseases2_003'

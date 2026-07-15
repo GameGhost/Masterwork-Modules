@@ -29,15 +29,14 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:3351
 - type: 'conditional'
-  conditions:
-  - if: 'players == 2'
-    then:
-    # ../.source/TheCostofDisease_Eng_v10.cs:3353
-    - type: 'link'
-      # ../en-US.restext:36 | "Click to continue..."
-      label: 'restext://Click_ContinueEllipsis_C'
-      target: '2p-S5SpecialVoteALT' # ./00336-2p-S5SpecialVoteALT.mws.yaml
-      snapshot: true
+  if: 'players == 2'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:3353
+  - type: 'link'
+    # ../en-US.restext:36 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
+    target: '2p-S5SpecialVoteALT' # ./00336-2p-S5SpecialVoteALT.mws.yaml
+    snapshot: true
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:3357
   - type: 'link'

@@ -25,11 +25,9 @@ nodes:
     asset: 'image://setup/AngryMobSetup1'
     style: 'setup-image'
   content:
-  # ../.source/TheCostofDisease_Eng_v10.cs:27588
-  - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:27589
   - type: 'text'
-    # ../en-US.restext:2181 | "Turn to page **10** of th..."
+    # ../en-US.restext:2174 | "Turn to page **10** of th..."
     value: 'restext://University1_001'
   # ../.source/TheCostofDisease_Eng_v10.cs:27596
   - type: 'break'
@@ -67,7 +65,7 @@ nodes:
           expr: 'tracker + 1'
   # ../.source/TheCostofDisease_Eng_v10.cs:27613
   - type: 'text'
-    # ../en-US.restext:2182 | "**{tracker}** and the {ic..."
+    # ../en-US.restext:2175 | "**{tracker}** and the {ic..."
     value: 'restext://University1_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:27620
   - type: 'conditional'

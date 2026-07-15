@@ -29,30 +29,27 @@ nodes:
       asset: 'image://setup/VillageChronicleCover'
       style: 'setup-image'
     content:
-    # ../.source/TheCostofDisease_Eng_v10.cs:4108
-    - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:4109
     - type: 'text'
       # ../en-US.restext:100 | "Turn to page "
       value: 'restext://Directive_TurnToPage'
     # ../.source/TheCostofDisease_Eng_v10.cs:4110
     - type: 'conditional'
-      conditions:
       # ../en-US.restext:194 | "bank"
-      - if: 'building == "restext://Location_Bank_Lower"'
-        then:
-        # ../.source/TheCostofDisease_Eng_v10.cs:4114
-        - type: 'text'
-          # ../en-US.restext:586 | "**2**"
-          value: 'restext://Fever3_003'
+      if: 'building == "restext://Location_Bank_Lower"'
+      then:
+      # ../.source/TheCostofDisease_Eng_v10.cs:4114
+      - type: 'text'
+        # ../en-US.restext:585 | "**2**"
+        value: 'restext://Fever3_003'
       else:
       # ../.source/TheCostofDisease_Eng_v10.cs:4122
       - type: 'text'
-        # ../en-US.restext:585 | "**3**"
+        # ../en-US.restext:584 | "**3**"
         value: 'restext://Fever3_002'
     # ../.source/TheCostofDisease_Eng_v10.cs:4125
     - type: 'text'
-      # ../en-US.restext:587 | " of the Village Chronicle."
+      # ../en-US.restext:586 | " of the Village Chronicle."
       value: 'restext://Fever3_004'
     # ../.source/TheCostofDisease_Eng_v10.cs:4127
     - type: 'break'
@@ -64,26 +61,25 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:4131
       - type: 'text'
-        # ../en-US.restext:588 | "{mayor} gains 1VP."
+        # ../en-US.restext:587 | "{mayor} gains 1VP."
         value: 'restext://Fever3_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:4136
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:4138
 - type: 'conditional'
-  conditions:
   # ../en-US.restext:194 | "bank"
-  - if: 'building == "restext://Location_Bank_Lower"'
-    then:
-    # ../.source/TheCostofDisease_Eng_v10.cs:4144
-    - type: 'section'
-      # ../en-US.restext:133 | "**BANK**"
-      title: 'restext://Heading_Bank'
-      content:
-      # ../.source/TheCostofDisease_Eng_v10.cs:4152
-      - type: 'text'
-        # ../en-US.restext:590 | "A new Bank has been built..."
-        value: 'restext://Fever3_007'
+  if: 'building == "restext://Location_Bank_Lower"'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:4144
+  - type: 'section'
+    # ../en-US.restext:133 | "**BANK**"
+    title: 'restext://Heading_Bank'
+    content:
+    # ../.source/TheCostofDisease_Eng_v10.cs:4152
+    - type: 'text'
+      # ../en-US.restext:589 | "A new Bank has been built..."
+      value: 'restext://Fever3_007'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:4165
   - type: 'section'
@@ -92,7 +88,7 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:4173
     - type: 'text'
-      # ../en-US.restext:589 | "A new Library has been bu..."
+      # ../en-US.restext:588 | "A new Library has been bu..."
       value: 'restext://Fever3_006'
 # ../.source/TheCostofDisease_Eng_v10.cs:4185
 - type: 'break'
@@ -135,6 +131,9 @@ nodes:
       label: 'restext://Click_Here_Plain'
       target: 'Gen1-CreepyTrack' # ./00177-Gen1-CreepyTrack.mws.yaml
       snapshot: true
+  # ../.source/TheCostofDisease_Eng_v10.cs:4250
+  - type: 'break'
+    style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:4253
 - type: 'conditional'
   if: 'sane3 == 0'
@@ -175,7 +174,7 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:591 | "The Late Years of the Fir..."
+      # ../en-US.restext:590 | "The Late Years of the Fir..."
       value: 'restext://Fever3_009'
     - type: 'break'
       style: 'paragraph'

@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'HelpingEvil'
-# ../en-US.restext:1993 | "A Reward for Service"
+# ../en-US.restext:1987 | "A Reward for Service"
 title: 'restext://HelpingEvil_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:25052
 - type: 'text'
-  # ../en-US.restext:1994 | "Upon receipt of their inh..."
+  # ../en-US.restext:1988 | "Upon receipt of their inh..."
   value: 'restext://HelpingEvil_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:25058
 - type: 'break'
@@ -24,89 +24,97 @@ nodes:
   snapshot: true
   header:
   - type: 'conditional'
-    conditions:
-    - if: 'society == "Fraternity of Hunters"'
-      then:
-      - type: 'image'
-        asset: 'image://setup/S1_HunterToken'
-        style: 'setup-image'
+    if: 'society == "Fraternity of Hunters"'
+    then:
+    - type: 'image'
+      asset: 'image://setup/S1_HunterToken'
+      style: 'setup-image'
     else:
     - type: 'image'
       asset: 'image://setup/S1_WolfToken'
       style: 'setup-image'
   content:
-  # ../.source/TheCostofDisease_Eng_v10.cs:25077
-  - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:25078
   - type: 'text'
-    # ../en-US.restext:1995 | "Retrieve the **{society}*..."
+    # ../en-US.restext:1989 | "Retrieve the **{society}*..."
     value: 'restext://HelpingEvil_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:25091
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:25093
   - type: 'conditional'
-    conditions:
     # ../en-US.restext:110 | "Fraternity of Hunters"
-    - if: 'society == "restext://Faction_FraternityOfHunters_Plain"'
+    if: 'society == "restext://Faction_FraternityOfHunters_Plain"'
+    then:
+    # ../.source/TheCostofDisease_Eng_v10.cs:25095
+    - type: 'conditional'
+      # ../en-US.restext:111 | "hunters"
+      if: 'allyA == "restext://Faction_Hunters_Lower"'
       then:
-      # ../.source/TheCostofDisease_Eng_v10.cs:25095
+      # ../.source/TheCostofDisease_Eng_v10.cs:25097
+      - type: 'text'
+        # ../en-US.restext:1990 | "{nameA} III gains **4VP**..."
+        value: 'restext://HelpingEvil_004'
+      # ../.source/TheCostofDisease_Eng_v10.cs:25106
+      - type: 'break'
+        style: 'paragraph'
+    # ../.source/TheCostofDisease_Eng_v10.cs:25109
+    - type: 'conditional'
+      # ../en-US.restext:111 | "hunters"
+      if: 'allyB == "restext://Faction_Hunters_Lower"'
+      then:
+      # ../.source/TheCostofDisease_Eng_v10.cs:25111
+      - type: 'text'
+        # ../en-US.restext:1991 | "{nameB} III gains **4VP**..."
+        value: 'restext://HelpingEvil_005'
+      # ../.source/TheCostofDisease_Eng_v10.cs:25120
+      - type: 'break'
+        style: 'paragraph'
+    # ../.source/TheCostofDisease_Eng_v10.cs:25123
+    - type: 'conditional'
+      if: 'players > 2'
+      then:
+      # ../.source/TheCostofDisease_Eng_v10.cs:25125
       - type: 'conditional'
         # ../en-US.restext:111 | "hunters"
-        if: 'allyA == "restext://Faction_Hunters_Lower"'
+        if: 'allyC == "restext://Faction_Hunters_Lower"'
         then:
-        # ../.source/TheCostofDisease_Eng_v10.cs:25097
+        # ../.source/TheCostofDisease_Eng_v10.cs:25127
         - type: 'text'
-          # ../en-US.restext:1996 | "{nameA} III gains **4VP**..."
-          value: 'restext://HelpingEvil_004'
-      # ../.source/TheCostofDisease_Eng_v10.cs:25109
+          # ../en-US.restext:1992 | "{nameC} III gains **4VP**..."
+          value: 'restext://HelpingEvil_006'
+        # ../.source/TheCostofDisease_Eng_v10.cs:25136
+        - type: 'break'
+          style: 'paragraph'
+    # ../.source/TheCostofDisease_Eng_v10.cs:25140
+    - type: 'conditional'
+      if: 'players > 3'
+      then:
+      # ../.source/TheCostofDisease_Eng_v10.cs:25142
       - type: 'conditional'
         # ../en-US.restext:111 | "hunters"
-        if: 'allyB == "restext://Faction_Hunters_Lower"'
+        if: 'allyD == "restext://Faction_Hunters_Lower"'
         then:
-        # ../.source/TheCostofDisease_Eng_v10.cs:25111
+        # ../.source/TheCostofDisease_Eng_v10.cs:25144
         - type: 'text'
-          # ../en-US.restext:1997 | "{nameB} III gains **4VP**..."
-          value: 'restext://HelpingEvil_005'
-      # ../.source/TheCostofDisease_Eng_v10.cs:25123
+          # ../en-US.restext:1993 | "{nameD} III gains **4VP**..."
+          value: 'restext://HelpingEvil_007'
+        # ../.source/TheCostofDisease_Eng_v10.cs:25153
+        - type: 'break'
+          style: 'paragraph'
+    # ../.source/TheCostofDisease_Eng_v10.cs:25157
+    - type: 'conditional'
+      if: 'players > 4'
+      then:
+      # ../.source/TheCostofDisease_Eng_v10.cs:25159
       - type: 'conditional'
-        if: 'players > 2'
+        # ../en-US.restext:111 | "hunters"
+        if: 'allyE == "restext://Faction_Hunters_Lower"'
         then:
-        # ../.source/TheCostofDisease_Eng_v10.cs:25125
-        - type: 'conditional'
-          # ../en-US.restext:111 | "hunters"
-          if: 'allyC == "restext://Faction_Hunters_Lower"'
-          then:
-          # ../.source/TheCostofDisease_Eng_v10.cs:25127
-          - type: 'text'
-            # ../en-US.restext:1998 | "{nameC} III gains **4VP**..."
-            value: 'restext://HelpingEvil_006'
-      # ../.source/TheCostofDisease_Eng_v10.cs:25140
-      - type: 'conditional'
-        if: 'players > 3'
-        then:
-        # ../.source/TheCostofDisease_Eng_v10.cs:25142
-        - type: 'conditional'
-          # ../en-US.restext:111 | "hunters"
-          if: 'allyD == "restext://Faction_Hunters_Lower"'
-          then:
-          # ../.source/TheCostofDisease_Eng_v10.cs:25144
-          - type: 'text'
-            # ../en-US.restext:1999 | "{nameD} III gains **4VP**..."
-            value: 'restext://HelpingEvil_007'
-      # ../.source/TheCostofDisease_Eng_v10.cs:25157
-      - type: 'conditional'
-        if: 'players > 4'
-        then:
-        # ../.source/TheCostofDisease_Eng_v10.cs:25159
-        - type: 'conditional'
-          # ../en-US.restext:111 | "hunters"
-          if: 'allyE == "restext://Faction_Hunters_Lower"'
-          then:
-          # ../.source/TheCostofDisease_Eng_v10.cs:25161
-          - type: 'text'
-            # ../en-US.restext:2000 | "{nameE} III gains **4VP**..."
-            value: 'restext://HelpingEvil_008'
+        # ../.source/TheCostofDisease_Eng_v10.cs:25161
+        - type: 'text'
+          # ../en-US.restext:1994 | "{nameE} III gains **4VP**..."
+          value: 'restext://HelpingEvil_008'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:25178
     - type: 'conditional'
@@ -115,8 +123,11 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:25180
       - type: 'text'
-        # ../en-US.restext:1996 | "{nameA} III gains **4VP**..."
+        # ../en-US.restext:1990 | "{nameA} III gains **4VP**..."
         value: 'restext://HelpingEvil_004'
+      # ../.source/TheCostofDisease_Eng_v10.cs:25189
+      - type: 'break'
+        style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:25192
     - type: 'conditional'
       # ../en-US.restext:116 | "wolves"
@@ -124,8 +135,11 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:25194
       - type: 'text'
-        # ../en-US.restext:1997 | "{nameB} III gains **4VP**..."
+        # ../en-US.restext:1991 | "{nameB} III gains **4VP**..."
         value: 'restext://HelpingEvil_005'
+      # ../.source/TheCostofDisease_Eng_v10.cs:25203
+      - type: 'break'
+        style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:25206
     - type: 'conditional'
       if: 'players > 2'
@@ -137,8 +151,11 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25210
         - type: 'text'
-          # ../en-US.restext:1998 | "{nameC} III gains **4VP**..."
+          # ../en-US.restext:1992 | "{nameC} III gains **4VP**..."
           value: 'restext://HelpingEvil_006'
+        # ../.source/TheCostofDisease_Eng_v10.cs:25219
+        - type: 'break'
+          style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:25223
     - type: 'conditional'
       if: 'players > 3'
@@ -150,8 +167,11 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25227
         - type: 'text'
-          # ../en-US.restext:1999 | "{nameD} III gains **4VP**..."
+          # ../en-US.restext:1993 | "{nameD} III gains **4VP**..."
           value: 'restext://HelpingEvil_007'
+        # ../.source/TheCostofDisease_Eng_v10.cs:25236
+        - type: 'break'
+          style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:25240
     - type: 'conditional'
       if: 'players > 4'
@@ -163,5 +183,5 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25244
         - type: 'text'
-          # ../en-US.restext:2000 | "{nameE} III gains **4VP**..."
+          # ../en-US.restext:1994 | "{nameE} III gains **4VP**..."
           value: 'restext://HelpingEvil_008'

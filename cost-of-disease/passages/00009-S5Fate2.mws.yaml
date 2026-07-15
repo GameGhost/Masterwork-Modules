@@ -20,9 +20,6 @@ nodes:
   - type: 'let'
     var: 'generation'
     expr: '3'
-# ../.source/TheCostofDisease_Eng_v10.cs:2561
-- type: 'break'
-  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:2563
 - type: 'switch'
   on: 'players'
@@ -73,28 +70,27 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:2590
 - type: 'conditional'
-  conditions:
-  - if: 'charitytotal > hearttotal'
-    then:
-    # ../.source/TheCostofDisease_Eng_v10.cs:2594
-    - type: 'text'
-      # ../en-US.restext:439 | "**SUCCESS!**"
-      value: 'restext://S5Fate2_006'
-    # ../.source/TheCostofDisease_Eng_v10.cs:2596
-    - type: 'break'
-    # ../.source/TheCostofDisease_Eng_v10.cs:2597
-    - type: 'text'
-      # ../en-US.restext:440 | "With charitable contribut..."
-      value: 'restext://S5Fate2_007'
-    # ../.source/TheCostofDisease_Eng_v10.cs:2605
-    - type: 'break'
-      style: 'paragraph'
-    # ../.source/TheCostofDisease_Eng_v10.cs:2607
-    - type: 'link'
-      # ../en-US.restext:441 | "Succeeded in Building the..."
-      label: 'restext://S5Fate2_008'
-      target: 'Hospitalintro' # ./00012-Hospitalintro.mws.yaml
-      snapshot: true
+  if: 'charitytotal > hearttotal'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:2594
+  - type: 'text'
+    # ../en-US.restext:439 | "**SUCCESS!**"
+    value: 'restext://S5Fate2_006'
+  # ../.source/TheCostofDisease_Eng_v10.cs:2596
+  - type: 'break'
+  # ../.source/TheCostofDisease_Eng_v10.cs:2597
+  - type: 'text'
+    # ../en-US.restext:440 | "With charitable contribut..."
+    value: 'restext://S5Fate2_007'
+  # ../.source/TheCostofDisease_Eng_v10.cs:2605
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/TheCostofDisease_Eng_v10.cs:2607
+  - type: 'link'
+    # ../en-US.restext:441 | "Succeeded in Building the..."
+    label: 'restext://S5Fate2_008'
+    target: 'Hospitalintro' # ./00012-Hospitalintro.mws.yaml
+    snapshot: true
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:2614
   - type: 'text'

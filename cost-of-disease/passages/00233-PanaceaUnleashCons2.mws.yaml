@@ -6,44 +6,40 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:25796
 - type: 'conditional'
-  conditions:
-  - if: 'pana == "unleash"'
-    then:
-    # ../.source/TheCostofDisease_Eng_v10.cs:25800
+  if: 'pana == "unleash"'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:25800
+  - type: 'text'
+    # ../en-US.restext:180 | "**Whispers Abate**"
+    value: 'restext://Heading_WhispersAbate'
+  # ../.source/TheCostofDisease_Eng_v10.cs:25802
+  - type: 'break'
+  # ../.source/TheCostofDisease_Eng_v10.cs:25803
+  - type: 'text'
+    # ../en-US.restext:2034 | "With the passing of the g..."
+    value: 'restext://PanaceaUnleashCons2_001'
+  # ../.source/TheCostofDisease_Eng_v10.cs:25804
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/TheCostofDisease_Eng_v10.cs:25808
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:36 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
+    target: 'University1'
+    # ../en-US.restext:344 | "Close"
+    okay: 'restext://UIButton_Close' # ./00257-University1.mws.yaml
+    snapshot: true
+    header:
+    # ../.source/TheCostofDisease_Eng_v10.cs:25830
+    - type: 'image'
+      asset: 'image://setup/Servant'
+      style: 'setup-image'
+    content:
+    # ../.source/TheCostofDisease_Eng_v10.cs:25833
     - type: 'text'
-      # ../en-US.restext:180 | "**Whispers Abate**"
-      value: 'restext://Heading_WhispersAbate'
-    # ../.source/TheCostofDisease_Eng_v10.cs:25802
-    - type: 'break'
-    # ../.source/TheCostofDisease_Eng_v10.cs:25803
-    - type: 'text'
-      # ../en-US.restext:2040 | "With the passing of the g..."
-      value: 'restext://PanaceaUnleashCons2_001'
-    # ../.source/TheCostofDisease_Eng_v10.cs:25804
-    - type: 'break'
-      style: 'paragraph'
-    # ../.source/TheCostofDisease_Eng_v10.cs:25808
-    - type: 'popup'
-      layout: 'setup'
-      # ../en-US.restext:36 | "Click to continue..."
-      label: 'restext://Click_ContinueEllipsis_C'
-      target: 'University1'
-      # ../en-US.restext:344 | "Close"
-      okay: 'restext://UIButton_Close' # ./00257-University1.mws.yaml
-      snapshot: true
-      header:
-      # ../.source/TheCostofDisease_Eng_v10.cs:25830
-      - type: 'image'
-        asset: 'image://setup/Servant'
-        style: 'setup-image'
-      content:
-      # ../.source/TheCostofDisease_Eng_v10.cs:25831
-      - type: 'break'
-        style: 'paragraph'
-      # ../.source/TheCostofDisease_Eng_v10.cs:25833
-      - type: 'text'
-        # ../en-US.restext:2041 | "Any players with a Servan..."
-        value: 'restext://PanaceaUnleashCons2_002'
+      # ../en-US.restext:2035 | "Any players with a Servan..."
+      value: 'restext://PanaceaUnleashCons2_002'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:25812
   - type: 'goto'

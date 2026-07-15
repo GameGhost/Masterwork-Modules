@@ -9,13 +9,13 @@ nodes:
   if: '!scoreC_submitted'
   then:
   - type: 'popup'
+    layout: 'input-popup'
     content:
     - type: 'text'
-      # ../en-US.restext:2664 | "Please enter the final sc..."
+      # ../en-US.restext:2655 | "Please enter the final sc..."
       value: 'restext://ScoreEntryP3_001'
     - type: 'input'
-      # ../en-US.restext:2665 | "ScoreEntryP3"
-      label: 'restext://ScoreEntryP3_002'
+      label: ''
       var: 'scoreC'
     # ../en-US.restext:346 | "Continue"
     okay: 'restext://UIButton_Continue'
@@ -27,22 +27,21 @@ nodes:
     target: 'ScoreEntryP3' # ./00329-ScoreEntryP3.mws.yaml
 # ../.source/TheCostofDisease_Eng_v10.cs:33597
 - type: 'text'
-  # ../en-US.restext:2666 | "Thank you for recording t..."
-  value: 'restext://ScoreEntryP3_003'
+  # ../en-US.restext:2656 | "Thank you for recording t..."
+  value: 'restext://ScoreEntryP3_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:33600
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:33602
 - type: 'conditional'
-  conditions:
-  - if: 'players < 4'
-    then:
-    # ../.source/TheCostofDisease_Eng_v10.cs:33604
-    - type: 'link'
-      # ../en-US.restext:36 | "Click to continue..."
-      label: 'restext://Click_ContinueEllipsis_C'
-      target: 'WinnerHUB' # ./00327-WinnerHUB.mws.yaml
-      snapshot: true
+  if: 'players < 4'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:33604
+  - type: 'link'
+    # ../en-US.restext:36 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
+    target: 'WinnerHUB' # ./00327-WinnerHUB.mws.yaml
+    snapshot: true
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:33608
   - type: 'link'

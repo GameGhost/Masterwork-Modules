@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Lettercode'
-# ../en-US.restext:878 | "Surprising Correspondence"
+# ../en-US.restext:877 | "Surprising Correspondence"
 title: 'restext://Lettercode_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:8331
 - type: 'text'
-  # ../en-US.restext:879 | "As the welcome from the t..."
+  # ../en-US.restext:878 | "As the welcome from the t..."
   value: 'restext://Lettercode_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:8332
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:8334
 - type: 'text'
-  # ../en-US.restext:880 | "Little did they realize h..."
+  # ../en-US.restext:879 | "Little did they realize h..."
   value: 'restext://Lettercode_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:8336
 - type: 'break'
@@ -35,14 +35,10 @@ nodes:
     asset: 'image://setup/S1_LetterBACK'
     style: 'setup-image'
   content:
-  # ../.source/TheCostofDisease_Eng_v10.cs:8487
-  - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:8488
   - type: 'text'
-    # ../en-US.restext:881 | "Retrieve the **Letter** c..."
+    # ../en-US.restext:880 | "Retrieve the **Letter** c..."
     value: 'restext://Lettercode_004'
-  # ../.source/TheCostofDisease_Eng_v10.cs:8496
-  - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:8497
   - type: 'conditional'
     if: '!letterSetRandomize'
@@ -75,17 +71,18 @@ nodes:
     - type: 'assign'
       var: 'pe'
       expr: 'letter[4]'
-  # ../.source/TheCostofDisease_Eng_v10.cs:8507
+  # ../.source/TheCostofDisease_Eng_v10.cs:8496
   - type: 'break'
+    style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:8510
   - type: 'text'
-    # ../en-US.restext:882 | "**{nameA} collects letter..."
+    # ../en-US.restext:881 | "**{nameA} collects letter..."
     value: 'restext://Lettercode_005'
   # ../.source/TheCostofDisease_Eng_v10.cs:8516
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:8519
   - type: 'text'
-    # ../en-US.restext:883 | "**{nameB} collects letter..."
+    # ../en-US.restext:882 | "**{nameB} collects letter..."
     value: 'restext://Lettercode_006'
   # ../.source/TheCostofDisease_Eng_v10.cs:8525
   - type: 'break'
@@ -95,29 +92,35 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:8530
     - type: 'text'
-      # ../en-US.restext:884 | "**{nameC} collects letter..."
+      # ../en-US.restext:883 | "**{nameC} collects letter..."
       value: 'restext://Lettercode_007'
+    # ../.source/TheCostofDisease_Eng_v10.cs:8535
+    - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:8537
   - type: 'conditional'
     if: 'players > 3'
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:8541
     - type: 'text'
-      # ../en-US.restext:885 | "**{nameD} collects letter..."
+      # ../en-US.restext:884 | "**{nameD} collects letter..."
       value: 'restext://Lettercode_008'
+    # ../.source/TheCostofDisease_Eng_v10.cs:8546
+    - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:8548
   - type: 'conditional'
     if: 'players > 4'
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:8552
     - type: 'text'
-      # ../en-US.restext:886 | "**{nameE} collects letter..."
+      # ../en-US.restext:885 | "**{nameE} collects letter..."
       value: 'restext://Lettercode_009'
+    # ../.source/TheCostofDisease_Eng_v10.cs:8557
+    - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:8559
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:8560
   - type: 'text'
-    # ../en-US.restext:887 | "Once all players have rec..."
+    # ../en-US.restext:886 | "Once all players have rec..."
     value: 'restext://Lettercode_010'
   # ../.source/TheCostofDisease_Eng_v10.cs:8563
   - type: 'switch'
@@ -319,8 +322,6 @@ nodes:
       - type: 'assign'
         var: 'let6'
         expr: 'nameE'
-# ../.source/TheCostofDisease_Eng_v10.cs:8341
-- type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:8342
 - type: 'conditional'
   if: '!letterSetRandomize'
@@ -441,12 +442,11 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:8402
     - type: 'conditional'
-      conditions:
-      - if: 'players == 3'
-        then:
-        - type: 'assign'
-          var: 'let1'
-          expr: 'nameC'
+      if: 'players == 3'
+      then:
+      - type: 'assign'
+        var: 'let1'
+        expr: 'nameC'
       else:
       - type: 'assign'
         var: 'let1'
@@ -455,12 +455,11 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:8406
     - type: 'conditional'
-      conditions:
-      - if: 'players == 3'
-        then:
-        - type: 'assign'
-          var: 'let2'
-          expr: 'nameC'
+      if: 'players == 3'
+      then:
+      - type: 'assign'
+        var: 'let2'
+        expr: 'nameC'
       else:
       - type: 'assign'
         var: 'let2'
@@ -469,12 +468,11 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:8410
     - type: 'conditional'
-      conditions:
-      - if: 'players == 3'
-        then:
-        - type: 'assign'
-          var: 'let3'
-          expr: 'nameC'
+      if: 'players == 3'
+      then:
+      - type: 'assign'
+        var: 'let3'
+        expr: 'nameC'
       else:
       - type: 'assign'
         var: 'let3'
@@ -483,12 +481,11 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:8414
     - type: 'conditional'
-      conditions:
-      - if: 'players == 3'
-        then:
-        - type: 'assign'
-          var: 'let4'
-          expr: 'nameC'
+      if: 'players == 3'
+      then:
+      - type: 'assign'
+        var: 'let4'
+        expr: 'nameC'
       else:
       - type: 'assign'
         var: 'let4'
@@ -497,12 +494,11 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:8418
     - type: 'conditional'
-      conditions:
-      - if: 'players == 3'
-        then:
-        - type: 'assign'
-          var: 'let5'
-          expr: 'nameC'
+      if: 'players == 3'
+      then:
+      - type: 'assign'
+        var: 'let5'
+        expr: 'nameC'
       else:
       - type: 'assign'
         var: 'let5'
@@ -511,12 +507,11 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:8422
     - type: 'conditional'
-      conditions:
-      - if: 'players == 3'
-        then:
-        - type: 'assign'
-          var: 'let6'
-          expr: 'nameC'
+      if: 'players == 3'
+      then:
+      - type: 'assign'
+        var: 'let6'
+        expr: 'nameC'
       else:
       - type: 'assign'
         var: 'let6'

@@ -2,28 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ConcealConfirmation'
-# ../en-US.restext:1185 | "Concealed"
+# ../en-US.restext:1183 | "Concealed"
 title: 'restext://ConcealConfirmation_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:12382
 - type: 'text'
-  # ../en-US.restext:1186 | "Knowledge may have been m..."
+  # ../en-US.restext:1184 | "Knowledge may have been m..."
   value: 'restext://ConcealConfirmation_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:12385
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:12387
 - type: 'conditional'
-  conditions:
-  - if: 'round == 5'
-    then:
-    # ../.source/TheCostofDisease_Eng_v10.cs:12389
-    - type: 'link'
-      # ../en-US.restext:35 | "Click here to continue..."
-      label: 'restext://Click_ContinueEllipsis_B'
-      target: 'Devastation2' # ./00033-Devastation2.mws.yaml
-      snapshot: true
+  if: 'round == 5'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:12389
+  - type: 'link'
+    # ../en-US.restext:35 | "Click here to continue..."
+    label: 'restext://Click_ContinueEllipsis_B'
+    target: 'Devastation2' # ./00033-Devastation2.mws.yaml
+    snapshot: true
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:12395
   - type: 'link'

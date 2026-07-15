@@ -2,18 +2,21 @@
 ---
 format: 'mws/0.4'
 passage_id: 'HereditaryDiseaseComplete'
-# ../en-US.restext:2741 | "Successful Treatment"
+# ../en-US.restext:2729 | "Successful Treatment"
 title: 'restext://HereditaryDiseaseComplete_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:34179
 - type: 'text'
-  # ../en-US.restext:2742 | "While they could never fu..."
+  # ../en-US.restext:2730 | "While they could never fu..."
   value: 'restext://HereditaryDiseaseComplete_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:34180
 - type: 'assign'
   var: 'devpage'
   expr: '1'
+# ../.source/TheCostofDisease_Eng_v10.cs:34181
+- type: 'break'
+  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:34185
 - type: 'popup'
   layout: 'setup'
@@ -29,16 +32,14 @@ nodes:
     asset: 'image://setup/S1_DiseaseExperiment'
     style: 'setup-image'
   content:
-  # ../.source/TheCostofDisease_Eng_v10.cs:34200
-  - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:34201
   - type: 'text'
-    # ../en-US.restext:2743 | "After gaining your VP rew..."
+    # ../en-US.restext:2731 | "After gaining your VP rew..."
     value: 'restext://HereditaryDiseaseComplete_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:34203
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:34207
   - type: 'text'
-    # ../en-US.restext:2744 | "_At the end of the Genera..."
+    # ../en-US.restext:2732 | "_At the end of the Genera..."
     value: 'restext://HereditaryDiseaseComplete_004'

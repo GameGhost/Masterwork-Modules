@@ -12,79 +12,87 @@ nodes:
 - type: 'assign'
   var: 'hospentry'
   expr: 'rand_between(1, 2, "HospitalVisitCheck2_0")'
+# ../.source/TheCostofDisease_Eng_v10.cs:14749
+- type: 'break'
+  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:14752
 - type: 'conditional'
-  conditions:
-  - if: 'hospentry == 1'
+  if: 'hospentry == 1'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:14756
+  - type: 'text'
+    # ../en-US.restext:1268 | "**Visitation Report: Dr. ..."
+    value: 'restext://HospitalVisitCheck2_001'
+  # ../.source/TheCostofDisease_Eng_v10.cs:14760
+  - type: 'break'
+  # ../.source/TheCostofDisease_Eng_v10.cs:14761
+  - type: 'text'
+    # ../en-US.restext:1273 | "Dr. {hospsign} seemed in ..."
+    value: 'restext://HospitalVisitCheck2_006'
+  # ../.source/TheCostofDisease_Eng_v10.cs:14768
+  - type: 'let'
+    var: '_rnd_HospitalVisitCheck2_0'
+    expr: 'rand_between(1, 2, "HospitalVisitCheck2_1")'
+  # ../.source/TheCostofDisease_Eng_v10.cs:14766
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/TheCostofDisease_Eng_v10.cs:14768
+  - type: 'conditional'
+    if: '_rnd_HospitalVisitCheck2_0 == 1'
     then:
-    # ../.source/TheCostofDisease_Eng_v10.cs:14756
+    # ../.source/TheCostofDisease_Eng_v10.cs:14770
     - type: 'text'
-      # ../en-US.restext:1270 | "**Visitation Report: Dr. ..."
-      value: 'restext://HospitalVisitCheck2_001'
-    # ../.source/TheCostofDisease_Eng_v10.cs:14760
-    - type: 'break'
-    # ../.source/TheCostofDisease_Eng_v10.cs:14761
+      # ../en-US.restext:1275 | "\"This is all wrong. What..."
+      value: 'restext://HospitalVisitCheck2_008'
+    else:
+    # ../.source/TheCostofDisease_Eng_v10.cs:14778
     - type: 'text'
-      # ../en-US.restext:1275 | "Dr. {hospsign} seemed in ..."
-      value: 'restext://HospitalVisitCheck2_006'
-    # ../.source/TheCostofDisease_Eng_v10.cs:14766
-    - type: 'break'
-      style: 'paragraph'
-    # ../.source/TheCostofDisease_Eng_v10.cs:14768
-    - type: 'conditional'
-      conditions:
-      - if: 'macros1.either(1, 2) == 1'
-        then:
-        # ../.source/TheCostofDisease_Eng_v10.cs:14770
-        - type: 'text'
-          # ../en-US.restext:1277 | "\"This is all wrong. What..."
-          value: 'restext://HospitalVisitCheck2_008'
-      else:
-      # ../.source/TheCostofDisease_Eng_v10.cs:14778
-      - type: 'text'
-        # ../en-US.restext:1276 | "Their response was muffle..."
-        value: 'restext://HospitalVisitCheck2_007'
-    # ../.source/TheCostofDisease_Eng_v10.cs:14780
-    - type: 'break'
-      style: 'paragraph'
-    # ../.source/TheCostofDisease_Eng_v10.cs:14782
-    - type: 'text'
-      # ../en-US.restext:1278 | "At this point, {hospsign}..."
-      value: 'restext://HospitalVisitCheck2_009'
+      # ../en-US.restext:1274 | "Their response was muffle..."
+      value: 'restext://HospitalVisitCheck2_007'
+  # ../.source/TheCostofDisease_Eng_v10.cs:14780
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/TheCostofDisease_Eng_v10.cs:14782
+  - type: 'text'
+    # ../en-US.restext:1276 | "At this point, {hospsign}..."
+    value: 'restext://HospitalVisitCheck2_009'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:14792
   - type: 'text'
-    # ../en-US.restext:1270 | "**Visitation Report: Dr. ..."
+    # ../en-US.restext:1268 | "**Visitation Report: Dr. ..."
     value: 'restext://HospitalVisitCheck2_001'
   # ../.source/TheCostofDisease_Eng_v10.cs:14796
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:14797
   - type: 'text'
-    # ../en-US.restext:1271 | "Relatively uneventful vis..."
+    # ../en-US.restext:1269 | "Relatively uneventful vis..."
     value: 'restext://HospitalVisitCheck2_002'
+  # ../.source/TheCostofDisease_Eng_v10.cs:14802
+  - type: 'let'
+    var: '_rnd_HospitalVisitCheck2_1'
+    expr: 'rand_between(1, 2, "HospitalVisitCheck2_2")'
   # ../.source/TheCostofDisease_Eng_v10.cs:14800
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:14802
   - type: 'conditional'
-    conditions:
-    - if: 'macros1.either(1, 2) == 1'
-      then:
-      # ../.source/TheCostofDisease_Eng_v10.cs:14804
-      - type: 'text'
-        # ../en-US.restext:1273 | "Mostly disinterested and ..."
-        value: 'restext://HospitalVisitCheck2_004'
+    if: '_rnd_HospitalVisitCheck2_1 == 1'
+    then:
+    # ../.source/TheCostofDisease_Eng_v10.cs:14804
+    - type: 'text'
+      # ../en-US.restext:1271 | "Mostly disinterested and ..."
+      value: 'restext://HospitalVisitCheck2_004'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:14813
     - type: 'text'
-      # ../en-US.restext:1272 | "At one juncture, Dr. {hos..."
+      # ../en-US.restext:1270 | "At one juncture, Dr. {hos..."
       value: 'restext://HospitalVisitCheck2_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:14817
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:14819
   - type: 'text'
-    # ../en-US.restext:1274 | "After requesting access t..."
+    # ../en-US.restext:1272 | "After requesting access t..."
     value: 'restext://HospitalVisitCheck2_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:14824
 - type: 'break'

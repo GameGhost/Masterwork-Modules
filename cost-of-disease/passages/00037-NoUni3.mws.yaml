@@ -29,11 +29,9 @@ nodes:
       asset: 'image://setup/Creepy_Icon'
       style: 'setup-image'
     content:
-    # ../.source/TheCostofDisease_Eng_v10.cs:5371
-    - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:5372
     - type: 'text'
-      # ../en-US.restext:631 | "Remove all {icon:creepy_i..."
+      # ../en-US.restext:630 | "Remove all {icon:creepy_i..."
       value: 'restext://NoUni3_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:5384
 - type: 'break'
@@ -46,44 +44,50 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:5390
     - type: 'section'
-      # ../en-US.restext:632 | "**Like Us**"
+      # ../en-US.restext:631 | "**Like Us**"
       title: 'restext://NoUni3_002'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:5398
       - type: 'text'
-        # ../en-US.restext:633 | "The townspeople express r..."
+        # ../en-US.restext:632 | "The townspeople express r..."
         value: 'restext://NoUni3_003'
       # ../.source/TheCostofDisease_Eng_v10.cs:5402
       - type: 'assign'
         var: 'ending'
         expr: '"END-NoUniGood"' # ./00020-END-NoUniGood.mws.yaml
+      # ../.source/TheCostofDisease_Eng_v10.cs:5400
+      - type: 'break'
+        style: 'paragraph'
       # ../.source/TheCostofDisease_Eng_v10.cs:5403
       - type: 'text'
-        # ../en-US.restext:634 | "Any player with a token t..."
+        # ../en-US.restext:633 | "Any player with a token t..."
         value: 'restext://NoUni3_004'
   - match: 0
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:5417
     - type: 'section'
-      # ../en-US.restext:635 | "**A Step Forward**"
+      # ../en-US.restext:634 | "**A Step Forward**"
       title: 'restext://NoUni3_005'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:5425
       - type: 'text'
-        # ../en-US.restext:636 | "The townspeople begrudgin..."
+        # ../en-US.restext:635 | "The townspeople begrudgin..."
         value: 'restext://NoUni3_006'
     # ../.source/TheCostofDisease_Eng_v10.cs:5431
     - type: 'assign'
       var: 'ending'
       expr: '"END-NoUniGood"' # ./00020-END-NoUniGood.mws.yaml
+    # ../.source/TheCostofDisease_Eng_v10.cs:5429
+    - type: 'break'
+      style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:5434
     - type: 'section'
-      # ../en-US.restext:637 | "**The Power of Electricity**"
+      # ../en-US.restext:636 | "**The Power of Electricity**"
       title: 'restext://NoUni3_007'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:5442
       - type: 'text'
-        # ../en-US.restext:638 | "During a **Perform Experi..."
+        # ../en-US.restext:637 | "During a **Perform Experi..."
         value: 'restext://NoUni3_008'
 # ../.source/TheCostofDisease_Eng_v10.cs:5459
 - type: 'break'
@@ -162,13 +166,12 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:5551
     - type: 'conditional'
-      conditions:
-      - if: 'peeps == 1'
-        then:
-        # ../.source/TheCostofDisease_Eng_v10.cs:5554
-        - type: 'assign'
-          var: '_ProgressRound'
-          expr: '9'
+      if: 'peeps == 1'
+      then:
+      # ../.source/TheCostofDisease_Eng_v10.cs:5554
+      - type: 'assign'
+        var: '_ProgressRound'
+        expr: '9'
       else:
       # ../.source/TheCostofDisease_Eng_v10.cs:5559
       - type: 'assign'

@@ -6,12 +6,11 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:10733
 - type: 'conditional'
-  conditions:
-  - if: 'life == 0'
-    then:
-    # ../.source/TheCostofDisease_Eng_v10.cs:10735
-    - type: 'goto'
-      target: 'UniEquity' # ./00201-UniEquity.mws.yaml
+  if: 'life == 0'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:10735
+  - type: 'goto'
+    target: 'UniEquity' # ./00201-UniEquity.mws.yaml
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:10741
   - type: 'text'
@@ -49,8 +48,6 @@ nodes:
       asset: 'image://setup/GainCaretakerFromLost'
       style: 'setup-image'
     content:
-    # ../.source/TheCostofDisease_Eng_v10.cs:10771
-    - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10772
     - type: 'conditional'
       # ../en-US.restext:31 | "yes"
@@ -58,8 +55,10 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10774
       - type: 'text'
-        # ../en-US.restext:1105 | "{nameA} retrieves a Caret..."
+        # ../en-US.restext:1104 | "{nameA} retrieves a Caret..."
         value: 'restext://UniImmortal_004'
+      # ../.source/TheCostofDisease_Eng_v10.cs:10776
+      - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10778
     - type: 'conditional'
       # ../en-US.restext:31 | "yes"
@@ -67,8 +66,10 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10780
       - type: 'text'
-        # ../en-US.restext:1106 | "{nameB} retrieves a Caret..."
+        # ../en-US.restext:1105 | "{nameB} retrieves a Caret..."
         value: 'restext://UniImmortal_005'
+      # ../.source/TheCostofDisease_Eng_v10.cs:10782
+      - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10784
     - type: 'conditional'
       # ../en-US.restext:31 | "yes"
@@ -76,8 +77,10 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10786
       - type: 'text'
-        # ../en-US.restext:1107 | "{nameC} retrieves a Caret..."
+        # ../en-US.restext:1106 | "{nameC} retrieves a Caret..."
         value: 'restext://UniImmortal_006'
+      # ../.source/TheCostofDisease_Eng_v10.cs:10788
+      - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10790
     - type: 'conditional'
       # ../en-US.restext:31 | "yes"
@@ -85,8 +88,10 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10792
       - type: 'text'
-        # ../en-US.restext:1108 | "{nameD} retrieves a Caret..."
+        # ../en-US.restext:1107 | "{nameD} retrieves a Caret..."
         value: 'restext://UniImmortal_007'
+      # ../.source/TheCostofDisease_Eng_v10.cs:10794
+      - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10796
     - type: 'conditional'
       # ../en-US.restext:31 | "yes"
@@ -94,8 +99,10 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10798
       - type: 'text'
-        # ../en-US.restext:1109 | "{nameE} retrieves a Caret..."
+        # ../en-US.restext:1108 | "{nameE} retrieves a Caret..."
         value: 'restext://UniImmortal_008'
+      # ../.source/TheCostofDisease_Eng_v10.cs:10800
+      - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10802
     - type: 'conditional'
       # ../en-US.restext:31 | Choice_Yes_Lower | "yes"
@@ -107,8 +114,10 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10804
       - type: 'text'
-        # ../en-US.restext:1105 | "{nameA} retrieves a Caret..."
+        # ../en-US.restext:1104 | "{nameA} retrieves a Caret..."
         value: 'restext://UniImmortal_004'
+      # ../.source/TheCostofDisease_Eng_v10.cs:10806
+      - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10808
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10809

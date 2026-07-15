@@ -8,7 +8,7 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:13893
 - type: 'text'
-  # ../en-US.restext:1226 | "Please click on the name ..."
+  # ../en-US.restext:1224 | "Please click on the name ..."
   value: 'restext://Trigger3Experiments_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:13902
 - type: 'break'
@@ -56,6 +56,9 @@ nodes:
     - type: 'assign'
       var: 'gen2exp'
       expr: 'nameC'
+  # ../.source/TheCostofDisease_Eng_v10.cs:13916
+  - type: 'break'
+    style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:13919
 - type: 'conditional'
   if: 'players > 3'
@@ -71,6 +74,9 @@ nodes:
     - type: 'assign'
       var: 'gen2exp'
       expr: 'nameD'
+  # ../.source/TheCostofDisease_Eng_v10.cs:13923
+  - type: 'break'
+    style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:13926
 - type: 'conditional'
   if: 'players > 4'

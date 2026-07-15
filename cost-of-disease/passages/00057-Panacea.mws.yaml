@@ -2,21 +2,24 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Panacea'
-# ../en-US.restext:772 | "A Cure for All"
+# ../en-US.restext:771 | "A Cure for All"
 title: 'restext://Panacea_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:6972
 - type: 'text'
-  # ../en-US.restext:773 | "It seemed that finally, a..."
+  # ../en-US.restext:772 | "It seemed that finally, a..."
   value: 'restext://Panacea_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:6977
 - type: 'assign'
   var: 'twopage'
   expr: '1'
+# ../.source/TheCostofDisease_Eng_v10.cs:6976
+- type: 'break'
+  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:6981
 - type: 'text'
-  # ../en-US.restext:774 | "**Which individual comple..."
+  # ../en-US.restext:773 | "**Which individual comple..."
   value: 'restext://Panacea_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:6983
 - type: 'break'
@@ -64,6 +67,9 @@ nodes:
     - type: 'assign'
       var: 'panacure'
       expr: 'nameC'
+  # ../.source/TheCostofDisease_Eng_v10.cs:6997
+  - type: 'break'
+    style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:7000
 - type: 'conditional'
   if: 'players > 3'
@@ -79,6 +85,9 @@ nodes:
     - type: 'assign'
       var: 'panacure'
       expr: 'nameD'
+  # ../.source/TheCostofDisease_Eng_v10.cs:7004
+  - type: 'break'
+    style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:7007
 - type: 'conditional'
   if: 'players > 4'

@@ -6,72 +6,70 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:31582
 - type: 'conditional'
-  conditions:
-  - if: 'meet == gen1sane'
+  if: 'meet == gen1sane'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:31585
+  - type: 'conditional'
+    # ../en-US.restext:27 | "no"
+    if: 'vacation == "restext://Choice_No_Lower"'
     then:
-    # ../.source/TheCostofDisease_Eng_v10.cs:31585
-    - type: 'conditional'
-      conditions:
-      # ../en-US.restext:27 | "no"
-      - if: 'vacation == "restext://Choice_No_Lower"'
-        then:
-        # ../.source/TheCostofDisease_Eng_v10.cs:31589
-        - type: 'text'
-          # ../en-US.restext:161 | "**More Time Than Ever**"
-          value: 'restext://Heading_MoreTimeThanEver'
-        # ../.source/TheCostofDisease_Eng_v10.cs:31591
-        - type: 'break'
-        # ../.source/TheCostofDisease_Eng_v10.cs:31592
-        - type: 'text'
-          # ../en-US.restext:245 | "{gen1sane} II's parent ha..."
-          value: 'restext://Narrative_Gen1Sane_WorkEthic'
-        # ../.source/TheCostofDisease_Eng_v10.cs:31597
-        - type: 'break'
-          style: 'paragraph'
-        # ../.source/TheCostofDisease_Eng_v10.cs:31599
-        - type: 'text'
-          # ../en-US.restext:2503 | "And so this matter of wri..."
-          value: 'restext://Gen1Insanity_NoAction_001'
-        # ../.source/TheCostofDisease_Eng_v10.cs:31601
-        - type: 'break'
-          style: 'paragraph'
-        # ../.source/TheCostofDisease_Eng_v10.cs:31605
-        - type: 'popup'
-          layout: 'setup'
-          # ../en-US.restext:36 | "Click to continue..."
-          label: 'restext://Click_ContinueEllipsis_C'
-          target: 'Devastation1'
-          # ../en-US.restext:344 | "Close"
-          okay: 'restext://UIButton_Close' # ./00004-Devastation1.mws.yaml
-          snapshot: true
-          header:
-          # ../.source/TheCostofDisease_Eng_v10.cs:31632
-          - type: 'image'
-            asset: 'image://setup/WhenYouPlaceThisPiece'
-            style: 'setup-image'
-          content:
-          # ../.source/TheCostofDisease_Eng_v10.cs:31625
-          - type: 'assign'
-            var: 'vacation'
-            # ../en-US.restext:2504 | "complete"
-            expr: '"restext://Gen1Insanity_NoAction_002"'
-          # ../.source/TheCostofDisease_Eng_v10.cs:31633
-          - type: 'break'
-          # ../.source/TheCostofDisease_Eng_v10.cs:31634
-          - type: 'text'
-            # ../en-US.restext:2505 | "Return the piece you plac..."
-            value: 'restext://Gen1Insanity_NoAction_003'
-          # ../.source/TheCostofDisease_Eng_v10.cs:31636
-          - type: 'break'
-            style: 'paragraph'
-          # ../.source/TheCostofDisease_Eng_v10.cs:31638
-          - type: 'text'
-            # ../en-US.restext:2506 | "Also, **gain 1VP**."
-            value: 'restext://Gen1Insanity_NoAction_004'
-      else:
-      # ../.source/TheCostofDisease_Eng_v10.cs:31609
-      - type: 'goto'
-        target: 'Devastation1' # ./00004-Devastation1.mws.yaml
+    # ../.source/TheCostofDisease_Eng_v10.cs:31589
+    - type: 'text'
+      # ../en-US.restext:161 | "**More Time Than Ever**"
+      value: 'restext://Heading_MoreTimeThanEver'
+    # ../.source/TheCostofDisease_Eng_v10.cs:31591
+    - type: 'break'
+    # ../.source/TheCostofDisease_Eng_v10.cs:31592
+    - type: 'text'
+      # ../en-US.restext:245 | "{gen1sane} II's parent ha..."
+      value: 'restext://Narrative_Gen1Sane_WorkEthic'
+    # ../.source/TheCostofDisease_Eng_v10.cs:31597
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/TheCostofDisease_Eng_v10.cs:31599
+    - type: 'text'
+      # ../en-US.restext:2496 | "And so this matter of wri..."
+      value: 'restext://Gen1Insanity_NoAction_001'
+    # ../.source/TheCostofDisease_Eng_v10.cs:31601
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/TheCostofDisease_Eng_v10.cs:31605
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:36 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
+      target: 'Devastation1'
+      # ../en-US.restext:344 | "Close"
+      okay: 'restext://UIButton_Close' # ./00004-Devastation1.mws.yaml
+      snapshot: true
+      header:
+      # ../.source/TheCostofDisease_Eng_v10.cs:31632
+      - type: 'image'
+        asset: 'image://setup/WhenYouPlaceThisPiece'
+        style: 'setup-image'
+      content:
+      # ../.source/TheCostofDisease_Eng_v10.cs:31625
+      - type: 'assign'
+        var: 'vacation'
+        # ../en-US.restext:2497 | "complete"
+        expr: '"restext://Gen1Insanity_NoAction_002"'
+      # ../.source/TheCostofDisease_Eng_v10.cs:31633
+      - type: 'break'
+      # ../.source/TheCostofDisease_Eng_v10.cs:31634
+      - type: 'text'
+        # ../en-US.restext:2498 | "Return the piece you plac..."
+        value: 'restext://Gen1Insanity_NoAction_003'
+      # ../.source/TheCostofDisease_Eng_v10.cs:31636
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/TheCostofDisease_Eng_v10.cs:31638
+      - type: 'text'
+        # ../en-US.restext:2499 | "Also, **gain 1VP**."
+        value: 'restext://Gen1Insanity_NoAction_004'
+    else:
+    # ../.source/TheCostofDisease_Eng_v10.cs:31609
+    - type: 'goto'
+      target: 'Devastation1' # ./00004-Devastation1.mws.yaml
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:31615
   - type: 'goto'

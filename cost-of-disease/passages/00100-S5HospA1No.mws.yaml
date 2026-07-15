@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S5HospA1No'
-# ../en-US.restext:1119 | "Death Becomes Us"
+# ../en-US.restext:1118 | "Death Becomes Us"
 title: 'restext://S5HospA1No_001'
 tags:
 - 'END'
@@ -20,11 +20,9 @@ nodes:
   - type: 'let'
     var: 'generation'
     expr: '6'
-# ../.source/TheCostofDisease_Eng_v10.cs:11041
-- type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:11042
 - type: 'text'
-  # ../en-US.restext:1120 | "As their bodies withered ..."
+  # ../en-US.restext:1119 | "As their bodies withered ..."
   value: 'restext://S5HospA1No_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:11055
 - type: 'break'
@@ -36,18 +34,18 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:11059
   - type: 'text'
-    # ../en-US.restext:1121 | "With no further push from..."
+    # ../en-US.restext:1120 | "With no further push from..."
     value: 'restext://S5HospA1No_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:11063
 - type: 'text'
-  # ../en-US.restext:1122 | "With no sounds of screams..."
+  # ../en-US.restext:1121 | "With no sounds of screams..."
   value: 'restext://S5HospA1No_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:11066
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:11068
 - type: 'link'
-  # ../en-US.restext:1123 | "Click to continue to a mo..."
+  # ../en-US.restext:1122 | "Click to continue to a mo..."
   label: 'restext://S5HospA1No_005'
   target: 'RippedMasterwork' # ./00164-RippedMasterwork.mws.yaml
   snapshot: true

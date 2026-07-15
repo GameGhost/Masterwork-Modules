@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'HuntersChoice1'
-# ../en-US.restext:2605 | "The First Night of the Hunt"
+# ../en-US.restext:2598 | "The First Night of the Hunt"
 title: 'restext://HuntersChoice1_001'
 layout: 'narration'
 nodes:
@@ -28,9 +28,12 @@ nodes:
 - type: 'let'
   var: '_rnd_HuntersChoice1_0'
   expr: '[h1a, h1b].shuffled("HuntersChoice1_0")[0]'
+# ../.source/TheCostofDisease_Eng_v10.cs:32810
+- type: 'break'
+  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:32814
 - type: 'text'
-  # ../en-US.restext:2606 | "**{_rnd_HuntersChoice1_0}..."
+  # ../en-US.restext:2599 | "**{_rnd_HuntersChoice1_0}..."
   value: 'restext://HuntersChoice1_005'
   lets:
   - '_rnd_HuntersChoice1_0'
@@ -46,7 +49,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:32830
 - type: 'link'
-  # ../en-US.restext:2607 | "North to the moors. Both ..."
+  # ../en-US.restext:2600 | "North to the moors. Both ..."
   label: 'restext://HuntersChoice1_006'
   target: 'HuntNight1' # ./00321-HuntNight1.mws.yaml
   snapshot: true
@@ -64,7 +67,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:32834
 - type: 'link'
-  # ../en-US.restext:2608 | "East to the dark forest. ..."
+  # ../en-US.restext:2601 | "East to the dark forest. ..."
   label: 'restext://HuntersChoice1_007'
   target: 'HuntNight1' # ./00321-HuntNight1.mws.yaml
   snapshot: true
@@ -82,7 +85,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:32838
 - type: 'link'
-  # ../en-US.restext:2609 | "West to the mountains. Bo..."
+  # ../en-US.restext:2602 | "West to the mountains. Bo..."
   label: 'restext://HuntersChoice1_008'
   target: 'HuntNight1' # ./00321-HuntNight1.mws.yaml
   snapshot: true
@@ -100,7 +103,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:32842
 - type: 'link'
-  # ../en-US.restext:2610 | "South, back to the town. ..."
+  # ../en-US.restext:2603 | "South, back to the town. ..."
   label: 'restext://HuntersChoice1_009'
   target: 'HuntNight1' # ./00321-HuntNight1.mws.yaml
   snapshot: true

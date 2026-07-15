@@ -11,8 +11,6 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:11574
   - type: 'goto'
     target: 'FailedMeeting' # ./00313-FailedMeeting.mws.yaml
-# ../.source/TheCostofDisease_Eng_v10.cs:11576
-- type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:11579
 - type: 'text'
   # ../en-US.restext:312 | "**Carefully pick up the s..."
@@ -39,7 +37,7 @@ nodes:
     expr: 'rand_between(1, 29, "HubertusHunters1_1")'
   # ../.source/TheCostofDisease_Eng_v10.cs:11622
   - type: 'text'
-    # ../en-US.restext:1153 | "**Upon a Secret Meeting -..."
+    # ../en-US.restext:1151 | "**Upon a Secret Meeting -..."
     value: 'restext://HubertusHunters1_001'
     lets:
     - '_rnd_HubertusHunters1_0'
@@ -59,14 +57,13 @@ nodes:
     value: 'restext://Narrative_Letter_IntentionsLead'
   # ../.source/TheCostofDisease_Eng_v10.cs:11637
   - type: 'conditional'
-    conditions:
     # ../en-US.restext:25 | "evil"
-    - if: 'hunters == "restext://Choice_Evil_Lower"'
-      then:
-      # ../.source/TheCostofDisease_Eng_v10.cs:11639
-      - type: 'text'
-        # ../en-US.restext:1154 | "amusingly exploitative. T..."
-        value: 'restext://HubertusHunters1_004'
+    if: 'hunters == "restext://Choice_Evil_Lower"'
+    then:
+    # ../.source/TheCostofDisease_Eng_v10.cs:11639
+    - type: 'text'
+      # ../en-US.restext:1152 | "amusingly exploitative. T..."
+      value: 'restext://HubertusHunters1_004'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:11649
     - type: 'text'

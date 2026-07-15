@@ -62,6 +62,9 @@ nodes:
         snapshot: true
   - match: 1
     nodes:
+    # ../.source/TheCostofDisease_Eng_v10.cs:4871
+    - type: 'break'
+      style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:4875
     - type: 'section'
       # ../en-US.restext:176 | "{icon:storybook} **The Pa..."
@@ -81,6 +84,9 @@ nodes:
 - type: 'conditional'
   if: 'trigger35 == 0'
   then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:4894
+  - type: 'break'
+    style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:4898
   - type: 'section'
     # ../en-US.restext:178 | "{icon:storybook} **Victor..."
@@ -96,12 +102,15 @@ nodes:
       label: 'restext://Click_SpecialMessage_Generic3'
       target: 'Trigger35Points' # ./00122-Trigger35Points.mws.yaml
       snapshot: true
+  # ../.source/TheCostofDisease_Eng_v10.cs:4911
+  - type: 'break'
+    style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:4914
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:4918
 - type: 'section'
-  # ../en-US.restext:613 | "{icon:storybook} **The Se..."
+  # ../en-US.restext:612 | "{icon:storybook} **The Se..."
   title: 'restext://Hospital2_003'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:4928
@@ -110,7 +119,7 @@ nodes:
     value: 'restext://Directive_JournalTrackLevel3_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:4930
   - type: 'link'
-    # ../en-US.restext:614 | "click here for a reward."
+    # ../en-US.restext:613 | "click here for a reward."
     label: 'restext://Hospital2_005'
     target: 'InfinityClick1' # ./00096-InfinityClick1.mws.yaml
     snapshot: true
@@ -132,7 +141,7 @@ nodes:
       value: 'restext://Disease_3Experiments_Lead'
     # ../.source/TheCostofDisease_Eng_v10.cs:4950
     - type: 'link'
-      # ../en-US.restext:615 | "Click here for a special ..."
+      # ../en-US.restext:614 | "Click here for a special ..."
       label: 'restext://Hospital2_006'
       target: 'Trigger3Experiments' # ./00123-Trigger3Experiments.mws.yaml
       snapshot: true
@@ -154,7 +163,7 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:4983
   - type: 'popup'
     layout: 'end_of_round'
-    # ../en-US.restext:616 | "Click here at the end of ..."
+    # ../en-US.restext:615 | "Click here at the end of ..."
     label: 'restext://Hospital2_007'
     target: 'SymposiumEvent1'
     # ../en-US.restext:348 | "End of Round"

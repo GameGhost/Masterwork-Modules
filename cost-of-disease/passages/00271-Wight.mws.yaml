@@ -8,13 +8,16 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:28559
 - type: 'text'
-  # ../en-US.restext:2291 | "The stifling mist dissolv..."
+  # ../en-US.restext:2284 | "The stifling mist dissolv..."
   value: 'restext://Wight_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:28573
 - type: 'assign'
   var: 'huntbeast'
   expr: '"Wight"' # ./00271-Wight.mws.yaml
+# ../.source/TheCostofDisease_Eng_v10.cs:28572
+- type: 'break'
+  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:28575
 - type: 'text'
-  # ../en-US.restext:2292 | "The **Shambling Wight** r..."
+  # ../en-US.restext:2285 | "The **Shambling Wight** r..."
   value: 'restext://Wight_002'

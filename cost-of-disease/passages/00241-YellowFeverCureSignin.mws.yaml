@@ -2,21 +2,24 @@
 ---
 format: 'mws/0.4'
 passage_id: 'YellowFeverCureSignin'
-# ../en-US.restext:2097 | "Yellow Fever Inoculation"
+# ../en-US.restext:2090 | "Yellow Fever Inoculation"
 title: 'restext://YellowFeverCureSignin_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:26642
 - type: 'text'
-  # ../en-US.restext:2098 | "Through sheer perseveranc..."
+  # ../en-US.restext:2091 | "Through sheer perseveranc..."
   value: 'restext://YellowFeverCureSignin_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:26644
 - type: 'assign'
   var: 'twopage'
   expr: '1'
+# ../.source/TheCostofDisease_Eng_v10.cs:26643
+- type: 'break'
+  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:26648
 - type: 'text'
-  # ../en-US.restext:2099 | "**Which individual comple..."
+  # ../en-US.restext:2092 | "**Which individual comple..."
   value: 'restext://YellowFeverCureSignin_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:26650
 - type: 'break'
@@ -64,6 +67,9 @@ nodes:
     - type: 'assign'
       var: 'fevercure'
       expr: 'nameC'
+  # ../.source/TheCostofDisease_Eng_v10.cs:26664
+  - type: 'break'
+    style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:26667
 - type: 'conditional'
   if: 'players > 3'
@@ -79,6 +85,9 @@ nodes:
     - type: 'assign'
       var: 'fevercure'
       expr: 'nameD'
+  # ../.source/TheCostofDisease_Eng_v10.cs:26671
+  - type: 'break'
+    style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:26674
 - type: 'conditional'
   if: 'players > 4'

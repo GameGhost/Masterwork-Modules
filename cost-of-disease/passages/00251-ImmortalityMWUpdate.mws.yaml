@@ -10,32 +10,31 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:27160
   - type: 'conditional'
-    conditions:
-    - if: 'round == 8'
-      then:
-      # ../.source/TheCostofDisease_Eng_v10.cs:27162
-      - type: 'goto'
-        target: 'Hospital2' # ./00034-Hospital2.mws.yaml
+    if: 'round == 8'
+    then:
+    # ../.source/TheCostofDisease_Eng_v10.cs:27162
+    - type: 'goto'
+      target: 'Hospital2' # ./00034-Hospital2.mws.yaml
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:27167
     - type: 'goto'
       target: 'Hospital3' # ./00035-Hospital3.mws.yaml
 # ../.source/TheCostofDisease_Eng_v10.cs:27172
 - type: 'text'
-  # ../en-US.restext:2143 | "**The True Secret**"
+  # ../en-US.restext:2136 | "**The True Secret**"
   value: 'restext://ImmortalityMWUpdate_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:27174
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:27175
 - type: 'text'
-  # ../en-US.restext:2144 | "The family's pursuit of e..."
+  # ../en-US.restext:2137 | "The family's pursuit of e..."
   value: 'restext://ImmortalityMWUpdate_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:27178
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:27180
 - type: 'text'
-  # ../en-US.restext:2145 | "Does any player have the ..."
+  # ../en-US.restext:2138 | "Does any player have the ..."
   value: 'restext://ImmortalityMWUpdate_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:27187
 - type: 'break'
@@ -56,23 +55,22 @@ nodes:
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:27194
-- type: 'popup'
+- type: 'link'
   # ../en-US.restext:28 | "No."
   label: 'restext://Choice_No_Period'
   snapshot: true
-  content:
+  onclick:
   # ../.source/TheCostofDisease_Eng_v10.cs:27208
   - type: 'assign'
     var: 'setinf'
     expr: '1'
   # ../.source/TheCostofDisease_Eng_v10.cs:27209
   - type: 'conditional'
-    conditions:
-    - if: 'round == 8'
-      then:
-      # ../.source/TheCostofDisease_Eng_v10.cs:27211
-      - type: 'goto'
-        target: 'Hospital2' # ./00034-Hospital2.mws.yaml
+    if: 'round == 8'
+    then:
+    # ../.source/TheCostofDisease_Eng_v10.cs:27211
+    - type: 'goto'
+      target: 'Hospital2' # ./00034-Hospital2.mws.yaml
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:27216
     - type: 'goto'

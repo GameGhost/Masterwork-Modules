@@ -14,13 +14,12 @@ nodes:
   expr: 'max(play)'
 # ../.source/TheCostofDisease_Eng_v10.cs:12902
 - type: 'conditional'
-  conditions:
-  - if: 'countif(=max_play, play) > 1'
-    then:
-    # ../.source/TheCostofDisease_Eng_v10.cs:12904
-    - type: 'assign'
-      var: 'most'
-      expr: '0'
+  if: 'countif(=max_play, play) > 1'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:12904
+  - type: 'assign'
+    var: 'most'
+    expr: '0'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:12908
   - type: 'conditional'
@@ -63,14 +62,13 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:12935
     - type: 'conditional'
-      conditions:
-      - if: 'goodcount < 2'
-        then:
-        # ../.source/TheCostofDisease_Eng_v10.cs:12937
-        - type: 'assign'
-          var: 'society'
-          # ../en-US.restext:110 | "Fraternity of Hunters"
-          expr: '"restext://Faction_FraternityOfHunters_Plain"'
+      if: 'goodcount < 2'
+      then:
+      # ../.source/TheCostofDisease_Eng_v10.cs:12937
+      - type: 'assign'
+        var: 'society'
+        # ../en-US.restext:110 | "Fraternity of Hunters"
+        expr: '"restext://Faction_FraternityOfHunters_Plain"'
       else:
       # ../.source/TheCostofDisease_Eng_v10.cs:12941
       - type: 'assign'
@@ -82,14 +80,13 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:12946
     - type: 'conditional'
-      conditions:
-      - if: 'goodcount > 1'
-        then:
-        # ../.source/TheCostofDisease_Eng_v10.cs:12948
-        - type: 'assign'
-          var: 'society'
-          # ../en-US.restext:110 | "Fraternity of Hunters"
-          expr: '"restext://Faction_FraternityOfHunters_Plain"'
+      if: 'goodcount > 1'
+      then:
+      # ../.source/TheCostofDisease_Eng_v10.cs:12948
+      - type: 'assign'
+        var: 'society'
+        # ../en-US.restext:110 | "Fraternity of Hunters"
+        expr: '"restext://Faction_FraternityOfHunters_Plain"'
       else:
       # ../.source/TheCostofDisease_Eng_v10.cs:12952
       - type: 'assign'
@@ -98,30 +95,29 @@ nodes:
         expr: '"restext://Faction_OrderOfStHubertus_Plain"'
 # ../.source/TheCostofDisease_Eng_v10.cs:12955
 - type: 'conditional'
-  conditions:
-  - if: '!most || String.IsNullOrEmpty(most)'
-    then:
-    # ../.source/TheCostofDisease_Eng_v10.cs:12957
-    - type: 'goto'
-      target: 'DiseaseEnd' # ./00226-DiseaseEnd.mws.yaml
+  if: '!most || String.IsNullOrEmpty(most)'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:12957
+  - type: 'goto'
+    target: 'DiseaseEnd' # ./00226-DiseaseEnd.mws.yaml
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:12963
   - type: 'text'
-    # ../en-US.restext:1205 | "**Most Investigations**"
+    # ../en-US.restext:1203 | "**Most Investigations**"
     value: 'restext://MostInvestigated_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:12965
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:12967
   - type: 'text'
-    # ../en-US.restext:1206 | "{most} performed the most..."
+    # ../en-US.restext:1204 | "{most} performed the most..."
     value: 'restext://MostInvestigated_004'
   # ../.source/TheCostofDisease_Eng_v10.cs:12973
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:12977
   - type: 'text'
-    # ../en-US.restext:1207 | "**{most} immediately gain..."
+    # ../en-US.restext:1205 | "**{most} immediately gain..."
     value: 'restext://MostInvestigated_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:12982
 - type: 'break'

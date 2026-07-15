@@ -6,12 +6,15 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:16043
 - type: 'text'
-  # ../en-US.restext:1337 | "**Click on your name belo..."
+  # ../en-US.restext:1334 | "**Click on your name belo..."
   value: 'restext://MWCompleteName_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:16046
 - type: 'assign'
   var: 'gen3pg'
   expr: '1'
+# ../.source/TheCostofDisease_Eng_v10.cs:16047
+- type: 'break'
+  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:16050
 - type: 'link'
   # ../en-US.restext:20 | "{nameA} III"
@@ -67,6 +70,9 @@ nodes:
     - type: 'assign'
       var: 'tempcheck'
       expr: 'nameC'
+  # ../.source/TheCostofDisease_Eng_v10.cs:16061
+  - type: 'break'
+    style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:16064
 - type: 'conditional'
   if: 'players > 3'
@@ -86,6 +92,9 @@ nodes:
     - type: 'assign'
       var: 'tempcheck'
       expr: 'nameD'
+  # ../.source/TheCostofDisease_Eng_v10.cs:16068
+  - type: 'break'
+    style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:16071
 - type: 'conditional'
   if: 'players > 4'

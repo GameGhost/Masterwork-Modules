@@ -25,13 +25,12 @@ nodes:
     okay: 'restext://UIButton_Accept'
     header:
     - type: 'conditional'
-      conditions:
-      - if: 'seedy == "yes"'
-        then:
-        # ../.source/TheCostofDisease_Eng_v10.cs:2113
-        - type: 'image'
-          asset: 'image://setup/AngryMobSetup2'
-          style: 'setup-image'
+      if: 'seedy == "yes"'
+      then:
+      # ../.source/TheCostofDisease_Eng_v10.cs:2113
+      - type: 'image'
+        asset: 'image://setup/AngryMobSetup2'
+        style: 'setup-image'
       else:
       # ../.source/TheCostofDisease_Eng_v10.cs:2118
       - type: 'image'
@@ -44,14 +43,13 @@ nodes:
       value: 'restext://Directive_TurnToPage'
     # ../.source/TheCostofDisease_Eng_v10.cs:2122
     - type: 'conditional'
-      conditions:
       # ../en-US.restext:194 | "bank"
-      - if: 'building == "restext://Location_Bank_Lower"'
-        then:
-        # ../.source/TheCostofDisease_Eng_v10.cs:2126
-        - type: 'text'
-          # ../en-US.restext:396 | "**12**"
-          value: 'restext://Devastation1_004'
+      if: 'building == "restext://Location_Bank_Lower"'
+      then:
+      # ../.source/TheCostofDisease_Eng_v10.cs:2126
+      - type: 'text'
+        # ../en-US.restext:396 | "**12**"
+        value: 'restext://Devastation1_004'
       else:
       # ../.source/TheCostofDisease_Eng_v10.cs:2134
       - type: 'text'
@@ -95,14 +93,13 @@ nodes:
       value: 'restext://Devastation1_006'
     # ../.source/TheCostofDisease_Eng_v10.cs:2158
     - type: 'conditional'
-      conditions:
       # ../en-US.restext:31 | "yes"
-      - if: 'seedy == "restext://Choice_Yes_Lower"'
-        then:
-        # ../.source/TheCostofDisease_Eng_v10.cs:2162
-        - type: 'text'
-          # ../en-US.restext:89 | "**two** spaces to the lef..."
-          value: 'restext://Directive_MoveTwoSpacesLeft_Seedy'
+      if: 'seedy == "restext://Choice_Yes_Lower"'
+      then:
+      # ../.source/TheCostofDisease_Eng_v10.cs:2162
+      - type: 'text'
+        # ../en-US.restext:89 | "**two** spaces to the lef..."
+        value: 'restext://Directive_MoveTwoSpacesLeft_Seedy'
       else:
       # ../.source/TheCostofDisease_Eng_v10.cs:2168
       - type: 'text'

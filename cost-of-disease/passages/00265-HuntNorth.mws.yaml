@@ -6,11 +6,8 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:28385
 - type: 'text'
-  # ../en-US.restext:2268 | "The Hunting party explore..."
+  # ../en-US.restext:2261 | "The Hunting party explore..."
   value: 'restext://HuntNorth_001'
-# ../.source/TheCostofDisease_Eng_v10.cs:28386
-- type: 'break'
-  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:28388
 - type: 'conditional'
   if: 'HuntNorthnextPsg == "" || HuntNorthnextPsg == 0'
@@ -19,6 +16,9 @@ nodes:
   - type: 'assign'
     var: 'HuntNorthnextPsg'
     expr: '["Wight", "Moon Presence"].shuffled("HuntNorth_0")[0]'
+# ../.source/TheCostofDisease_Eng_v10.cs:28386
+- type: 'break'
+  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:28392
 - type: 'include_passage'
   target: '${HuntNorthnextPsg}'
