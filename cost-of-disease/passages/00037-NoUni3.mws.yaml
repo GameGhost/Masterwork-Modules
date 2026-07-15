@@ -160,20 +160,23 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:5542
   - type: 'popup'
+    layout: 'end_of_round'
     # ../en-US.restext:44 | "Click here at the end of ..."
     label: 'restext://Click_EndGeneration_FinalScoringFateOfTown'
+    target: '${peeps == 1 ? "NoUni3b" : "Scoring"}'
+    # ../en-US.restext:348 | "End of Round"
+    okay: 'restext://UIButton_EndOfRound'
+    onclose:
+    - type: 'assign'
+      var: '_ProgressRound'
+      expr: '9'
     snapshot: true
     content:
-    # ../.source/TheCostofDisease_Eng_v10.cs:5551
-    - type: 'conditional'
-      if: 'peeps == 1'
-      then:
-      # ../.source/TheCostofDisease_Eng_v10.cs:5554
-      - type: 'assign'
-        var: '_ProgressRound'
-        expr: '9'
-      else:
-      # ../.source/TheCostofDisease_Eng_v10.cs:5559
-      - type: 'assign'
-        var: '_ProgressRound'
-        expr: '9'
+    - type: 'text'
+      # ../en-US.restext:296 | "The Late Years of the Thi..."
+      value: 'restext://Round_GenerationIII_LateEnded'
+    - type: 'break'
+      style: 'paragraph'
+    - type: 'text'
+      # ../en-US.restext:294 | "Perform any End of Round ..."
+      value: 'restext://Round_EndOfRoundActions_Rule'
