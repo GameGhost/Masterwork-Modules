@@ -36,7 +36,7 @@ nodes:
   layout: 'setup'
   # ../en-US.restext:36 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
-  target: '${round == 10 ? "GloomyGothic1" : round == 11 ? "GloomyGothic2" : "GloomyGothic3"}'
+  target: '${round == 10 ? "GloomyGothic1" : round == 11 ? "GloomyGothic2" : "GloomyGothic3"}' # ./00171-GloomyGothic1.mws.yaml, ./00172-GloomyGothic2.mws.yaml, ./00173-GloomyGothic3.mws.yaml
   # ../en-US.restext:344 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true

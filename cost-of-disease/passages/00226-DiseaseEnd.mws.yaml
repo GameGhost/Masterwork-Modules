@@ -18,9 +18,9 @@ nodes:
   layout: 'setup'
   # ../en-US.restext:1978 | "Click here to determine t..."
   label: 'restext://DiseaseEnd_003'
-  target: 'DiseaseEffect'
+  target: 'DiseaseEffect' # ./00188-DiseaseEffect.mws.yaml
   # ../en-US.restext:344 | "Close"
-  okay: 'restext://UIButton_Close' # ./00188-DiseaseEffect.mws.yaml
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/TheCostofDisease_Eng_v10.cs:24913

@@ -82,13 +82,13 @@ nodes:
       layout: 'end_of_round'
       # ../en-US.restext:45 | "Click at the end of the r..."
       label: 'restext://Click_EndRound_Continue'
-      target: 'GoodFrenzyEvent'
+      target: 'GoodFrenzyEvent' # ./00216-GoodFrenzyEvent.mws.yaml
       # ../en-US.restext:348 | "End of Round"
       okay: 'restext://UIButton_EndOfRound'
       onclose:
       - type: 'assign'
         var: '_ProgressRound'
-        expr: '8' # ./00216-GoodFrenzyEvent.mws.yaml
+        expr: '8'
       snapshot: true
       content:
       - type: 'text'
@@ -141,13 +141,13 @@ nodes:
       layout: 'end_of_round'
       # ../en-US.restext:45 | "Click at the end of the r..."
       label: 'restext://Click_EndRound_Continue'
-      target: 'CureMoonSick1'
+      target: 'CureMoonSick1' # ./00047-CureMoonSick1.mws.yaml
       # ../en-US.restext:348 | "End of Round"
       okay: 'restext://UIButton_EndOfRound'
       onclose:
       - type: 'assign'
         var: '_ProgressRound'
-        expr: '8' # ./00047-CureMoonSick1.mws.yaml
+        expr: '8'
       snapshot: true
       content:
       - type: 'text'

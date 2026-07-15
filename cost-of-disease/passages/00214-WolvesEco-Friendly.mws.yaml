@@ -46,7 +46,7 @@ nodes:
   layout: 'setup'
   # ../en-US.restext:36 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
-  target: '${building == "library" ? "MayoralAward" : "WolvesBankMayorGood"}'
+  target: '${building == "library" ? "MayoralAward" : "WolvesBankMayorGood"}' # ./00208-MayoralAward.mws.yaml, ./00359-WolvesBankMayorGood.mws.yaml
   # ../en-US.restext:344 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true

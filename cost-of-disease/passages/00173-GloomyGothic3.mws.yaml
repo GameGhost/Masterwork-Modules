@@ -96,13 +96,13 @@ nodes:
         layout: 'end_of_round'
         # ../en-US.restext:1520 | "Click at the end of the G..."
         label: 'restext://GloomyGothic3_001'
-        target: 'Scoring'
+        target: 'Scoring' # ./00013-Scoring.mws.yaml
         # ../en-US.restext:348 | "End of Round"
         okay: 'restext://UIButton_EndOfRound'
         onclose:
         - type: 'assign'
           var: '_ProgressRound'
-          expr: '9' # ./00013-Scoring.mws.yaml
+          expr: '9'
         snapshot: true
         content:
         - type: 'text'
@@ -156,13 +156,13 @@ nodes:
         layout: 'end_of_round'
         # ../en-US.restext:1520 | "Click at the end of the G..."
         label: 'restext://GloomyGothic3_001'
-        target: 'GloomyPenalty3'
+        target: 'GloomyPenalty3' # ./00307-GloomyPenalty3.mws.yaml
         # ../en-US.restext:348 | "End of Round"
         okay: 'restext://UIButton_EndOfRound'
         onclose:
         - type: 'assign'
           var: '_ProgressRound'
-          expr: '9' # ./00307-GloomyPenalty3.mws.yaml
+          expr: '9'
         snapshot: true
         content:
         - type: 'text'
@@ -261,13 +261,13 @@ nodes:
         layout: 'end_of_round'
         # ../en-US.restext:1520 | "Click at the end of the G..."
         label: 'restext://GloomyGothic3_001'
-        target: 'AwardSpawningPods'
+        target: 'AwardSpawningPods' # ./00312-AwardSpawningPods.mws.yaml
         # ../en-US.restext:348 | "End of Round"
         okay: 'restext://UIButton_EndOfRound'
         onclose:
         - type: 'assign'
           var: '_ProgressRound'
-          expr: '9' # ./00312-AwardSpawningPods.mws.yaml
+          expr: '9'
         snapshot: true
         content:
         - type: 'text'
@@ -330,13 +330,13 @@ nodes:
         layout: 'end_of_round'
         # ../en-US.restext:1520 | "Click at the end of the G..."
         label: 'restext://GloomyGothic3_001'
-        target: 'AwardSpawningPods'
+        target: 'AwardSpawningPods' # ./00312-AwardSpawningPods.mws.yaml
         # ../en-US.restext:348 | "End of Round"
         okay: 'restext://UIButton_EndOfRound'
         onclose:
         - type: 'assign'
           var: '_ProgressRound'
-          expr: '9' # ./00312-AwardSpawningPods.mws.yaml
+          expr: '9'
         snapshot: true
         content:
         - type: 'text'

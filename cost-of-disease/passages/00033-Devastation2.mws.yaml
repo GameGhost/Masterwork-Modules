@@ -182,13 +182,13 @@ nodes:
     layout: 'end_of_round'
     # ../en-US.restext:609 | "Click here at the end of ..."
     label: 'restext://Devastation2_007'
-    target: 'DevEventCure'
+    target: 'DevEventCure' # ./00101-DevEventCure.mws.yaml
     # ../en-US.restext:348 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
       var: '_ProgressRound'
-      expr: '5' # ./00101-DevEventCure.mws.yaml
+      expr: '5'
     snapshot: true
     content:
     - type: 'text'

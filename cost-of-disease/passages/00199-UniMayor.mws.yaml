@@ -46,7 +46,7 @@ nodes:
   layout: 'setup'
   # ../en-US.restext:36 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
-  target: '${life == 0 ? "UniEquity" : "UniImmortal"}'
+  target: '${life == 0 ? "UniEquity" : "UniImmortal"}' # ./00201-UniEquity.mws.yaml, ./00097-UniImmortal.mws.yaml
   # ../en-US.restext:344 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true

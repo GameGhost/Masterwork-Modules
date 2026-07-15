@@ -25,7 +25,7 @@ nodes:
   layout: 'setup'
   # ../en-US.restext:36 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
-  target: '${life == 0 ? pana == "unleash" ? "PanaceaUnleashCons1" : "NewMaster" : "ImmortalNoUni"}'
+  target: '${life == 0 ? pana == "unleash" ? "PanaceaUnleashCons1" : "NewMaster" : "ImmortalNoUni"}' # ./00232-PanaceaUnleashCons1.mws.yaml, ./00136-NewMaster.mws.yaml, ./00098-ImmortalNoUni.mws.yaml
   # ../en-US.restext:344 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true

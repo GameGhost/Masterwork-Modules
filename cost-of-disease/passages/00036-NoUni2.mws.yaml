@@ -102,13 +102,13 @@ nodes:
     layout: 'end_of_round'
     # ../en-US.restext:627 | "Click here at the end of ..."
     label: 'restext://NoUni2_002'
-    target: 'roundEndKnowledge'
+    target: 'roundEndKnowledge' # ./00261-roundEndKnowledge.mws.yaml
     # ../en-US.restext:348 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
       var: '_ProgressRound'
-      expr: '8' # ./00261-roundEndKnowledge.mws.yaml
+      expr: '8'
     snapshot: true
     content:
     - type: 'text'

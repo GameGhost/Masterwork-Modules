@@ -163,7 +163,7 @@ nodes:
     layout: 'end_of_round'
     # ../en-US.restext:44 | "Click here at the end of ..."
     label: 'restext://Click_EndGeneration_FinalScoringFateOfTown'
-    target: '${peeps == 1 ? "NoUni3b" : "Scoring"}'
+    target: '${peeps == 1 ? "NoUni3b" : "Scoring"}' # ./00072-NoUni3b.mws.yaml, ./00013-Scoring.mws.yaml
     # ../en-US.restext:348 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:

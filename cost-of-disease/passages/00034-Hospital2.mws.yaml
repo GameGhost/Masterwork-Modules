@@ -165,13 +165,13 @@ nodes:
     layout: 'end_of_round'
     # ../en-US.restext:615 | "Click here at the end of ..."
     label: 'restext://Hospital2_007'
-    target: 'SymposiumEvent1'
+    target: 'SymposiumEvent1' # ./00125-SymposiumEvent1.mws.yaml
     # ../en-US.restext:348 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
       var: '_ProgressRound'
-      expr: '5' # ./00125-SymposiumEvent1.mws.yaml
+      expr: '5'
     snapshot: true
     content:
     - type: 'text'

@@ -77,13 +77,13 @@ nodes:
     layout: 'end_of_round'
     # ../en-US.restext:44 | "Click here at the end of ..."
     label: 'restext://Click_EndGeneration_FinalScoringFateOfTown'
-    target: 'SanityCheck'
+    target: 'SanityCheck' # ./00026-SanityCheck.mws.yaml
     # ../en-US.restext:348 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
       var: '_ProgressRound'
-      expr: '9' # ./00026-SanityCheck.mws.yaml
+      expr: '9'
     snapshot: true
     content:
     - type: 'text'

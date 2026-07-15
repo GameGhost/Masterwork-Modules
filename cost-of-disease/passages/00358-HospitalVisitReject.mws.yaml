@@ -27,7 +27,7 @@ nodes:
   layout: 'setup'
   # ../en-US.restext:52 | "Click to return..."
   label: 'restext://Click_Return'
-  target: '${round == 7 ? "Hospital1" : round == 8 ? "Hospital2" : "Hospital3"}'
+  target: '${round == 7 ? "Hospital1" : round == 8 ? "Hospital2" : "Hospital3"}' # ./00003-Hospital1.mws.yaml, ./00034-Hospital2.mws.yaml, ./00035-Hospital3.mws.yaml
   # ../en-US.restext:344 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true

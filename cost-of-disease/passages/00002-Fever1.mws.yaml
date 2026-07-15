@@ -157,13 +157,13 @@ nodes:
     layout: 'end_of_round'
     # ../en-US.restext:379 | "Click here to continue to..."
     label: 'restext://Fever1_017'
-    target: 'FeverServe1'
+    target: 'FeverServe1' # ./00066-FeverServe1.mws.yaml
     # ../en-US.restext:348 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
       var: '_ProgressRound'
-      expr: '1' # ./00066-FeverServe1.mws.yaml
+      expr: '1'
     snapshot: true
     content:
     - type: 'text'

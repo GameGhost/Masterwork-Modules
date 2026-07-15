@@ -127,13 +127,13 @@ nodes:
     layout: 'end_of_round'
     # ../en-US.restext:600 | "Click here at the end of ..."
     label: 'restext://Devastation3_011'
-    target: 'BuildingsEnd'
+    target: 'BuildingsEnd' # ./00074-BuildingsEnd.mws.yaml
     # ../en-US.restext:348 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
       var: '_ProgressRound'
-      expr: '6' # ./00074-BuildingsEnd.mws.yaml
+      expr: '6'
     snapshot: true
     content:
     - type: 'text'

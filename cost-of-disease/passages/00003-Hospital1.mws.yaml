@@ -252,13 +252,13 @@ nodes:
     layout: 'end_of_round'
     # ../en-US.restext:46 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
-    target: 'Immortality'
+    target: 'Immortality' # ./00089-Immortality.mws.yaml
     # ../en-US.restext:348 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
       var: '_ProgressRound'
-      expr: '4' # ./00089-Immortality.mws.yaml
+      expr: '4'
     snapshot: true
     content:
     - type: 'text'

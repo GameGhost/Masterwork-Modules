@@ -32,7 +32,7 @@ nodes:
       layout: 'setup'
       # ../en-US.restext:36 | "Click to continue..."
       label: 'restext://Click_ContinueEllipsis_C'
-      target: '${seedy == "no" ? "Gen1Creepy-RefusalBuild" : "Devastation2"}'
+      target: '${seedy == "no" ? "Gen1Creepy-RefusalBuild" : "Devastation2"}' # ./00295-Gen1Creepy-RefusalBuild.mws.yaml, ./00033-Devastation2.mws.yaml
       # ../en-US.restext:344 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
@@ -66,7 +66,7 @@ nodes:
       layout: 'setup'
       # ../en-US.restext:36 | "Click to continue..."
       label: 'restext://Click_ContinueEllipsis_C'
-      target: '${seedy == "no" ? "Gen1Creepy-RefusalBuild" : "Devastation2"}'
+      target: '${seedy == "no" ? "Gen1Creepy-RefusalBuild" : "Devastation2"}' # ./00295-Gen1Creepy-RefusalBuild.mws.yaml, ./00033-Devastation2.mws.yaml
       # ../en-US.restext:344 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true

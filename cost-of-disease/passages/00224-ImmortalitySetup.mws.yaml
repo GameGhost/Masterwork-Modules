@@ -32,5 +32,5 @@ nodes:
     value: 'restext://Directive_JournalToken_ThirdLevel'
   # ../en-US.restext:343 | "Accept"
   okay: 'restext://UIButton_Accept'
-  target: '${(seedy == "no") ? "Gen1Creepy-RefuseBonus" : (seedy == "yes") ? "Gen1Creepy-AgreedReturn" : "Hospital2"}'
+  target: '${(seedy == "no") ? "Gen1Creepy-RefuseBonus" : (seedy == "yes") ? "Gen1Creepy-AgreedReturn" : "Hospital2"}' # ./00300-Gen1Creepy-RefuseBonus.mws.yaml, ./00301-Gen1Creepy-AgreedReturn.mws.yaml, ./00034-Hospital2.mws.yaml
   snapshot: true

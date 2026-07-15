@@ -164,13 +164,13 @@ nodes:
     layout: 'end_of_round'
     # ../en-US.restext:42 | "Click here at the end of ..."
     label: 'restext://Click_EndGeneration_Continue'
-    target: 'Feverheart'
+    target: 'Feverheart' # ./00028-Feverheart.mws.yaml
     # ../en-US.restext:348 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
       var: '_ProgressRound'
-      expr: '3' # ./00028-Feverheart.mws.yaml
+      expr: '3'
     snapshot: true
     content:
     - type: 'text'

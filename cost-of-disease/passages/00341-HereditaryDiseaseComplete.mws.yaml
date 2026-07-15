@@ -22,7 +22,7 @@ nodes:
   layout: 'setup'
   # ../en-US.restext:36 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
-  target: '${round == 4 ? "Devastation1" : round == 5 ? "Devastation2" : "Devastation3"}'
+  target: '${round == 4 ? "Devastation1" : round == 5 ? "Devastation2" : "Devastation3"}' # ./00004-Devastation1.mws.yaml, ./00033-Devastation2.mws.yaml, ./00032-Devastation3.mws.yaml
   # ../en-US.restext:344 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true

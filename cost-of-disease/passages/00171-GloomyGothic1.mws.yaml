@@ -136,13 +136,13 @@ nodes:
       layout: 'end_of_round'
       # ../en-US.restext:45 | "Click at the end of the r..."
       label: 'restext://Click_EndRound_Continue'
-      target: 'GloomyPenalty1'
+      target: 'GloomyPenalty1' # ./00306-GloomyPenalty1.mws.yaml
       # ../en-US.restext:348 | "End of Round"
       okay: 'restext://UIButton_EndOfRound'
       onclose:
       - type: 'assign'
         var: '_ProgressRound'
-        expr: '7' # ./00306-GloomyPenalty1.mws.yaml
+        expr: '7'
       snapshot: true
       content:
       - type: 'text'
@@ -201,13 +201,13 @@ nodes:
       layout: 'end_of_round'
       # ../en-US.restext:45 | "Click at the end of the r..."
       label: 'restext://Click_EndRound_Continue'
-      target: 'WolvesEvil1'
+      target: 'WolvesEvil1' # ./00187-WolvesEvil1.mws.yaml
       # ../en-US.restext:348 | "End of Round"
       okay: 'restext://UIButton_EndOfRound'
       onclose:
       - type: 'assign'
         var: '_ProgressRound'
-        expr: '7' # ./00187-WolvesEvil1.mws.yaml
+        expr: '7'
       snapshot: true
       content:
       - type: 'text'

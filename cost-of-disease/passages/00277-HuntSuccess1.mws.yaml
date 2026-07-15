@@ -47,7 +47,7 @@ nodes:
   layout: 'setup'
   # ../en-US.restext:36 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
-  target: '${round == 13 ? "Prosperity2" : "HuntSuccessCheck"}'
+  target: '${round == 13 ? "Prosperity2" : "HuntSuccessCheck"}' # ./00120-Prosperity2.mws.yaml, ./00317-HuntSuccessCheck.mws.yaml
   # ../en-US.restext:344 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
