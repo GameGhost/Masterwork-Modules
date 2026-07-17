@@ -1,0 +1,127 @@
+# Masterwork-authored passage (not extractor output) — replaces the reference app's native
+# ViewTieBreaker UI's second round (OnTieBreaker2/OnContinueButton's !isTieBreaker1 branch).
+# Reached from _TieBreaker1.mws.yaml when two or more players both completed their Masterwork.
+# Re-prompts just those still-tied players (mwX flags from round 1) for an "Estate Upgrades"
+# count, added into their scoreX total — matching ViewTieBreaker.cs's ScoreDatas[...].score +=
+# scr. Still tied after this -> family win; otherwise the new high scorer wins. Unlike round 1,
+# this doesn't recurse into a third round (matches the reference app).
+---
+format: 'mws/0.4'
+passage_id: 'TieBreaker2'
+title: 'Tie Breaker'
+subtitle: 'Estate Upgrades'
+layout: 'score_panel'
+nodes:
+- type: 'text'
+  value: 'Player'
+  style: 'player-heading'
+- type: 'text'
+  value: 'Estate Upgrades'
+  style: 'score-heading'
+- type: 'break'
+- type: 'let'
+  var: 'needs_break'
+  expr: 'false'
+- type: 'conditional'
+  if: 'winnerA'
+  then:
+  - type: 'text'
+    value: '{nameA}'
+    style: 'player-label'
+  - type: 'input'
+    style: 'count-input'
+    var: 'score_euA'
+    min: 0
+  - type: 'let'
+    var: 'needs_break'
+    expr: 'true'
+- type: 'conditional'
+  if: 'winnerB'
+  then:
+  - type: 'conditional'
+    if: 'needs_break'
+    then:
+    - type: 'break'
+  - type: 'text'
+    value: '{nameB}'
+    style: 'player-label'
+  - type: 'input'
+    style: 'count-input'
+    var: 'score_euB'
+    min: 0
+  - type: 'let'
+    var: 'needs_break'
+    expr: 'true'
+- type: 'conditional'
+  if: 'winnerC'
+  then:
+  - type: 'conditional'
+    if: 'needs_break'
+    then:
+    - type: 'break'
+  - type: 'text'
+    value: '{nameC}'
+    style: 'player-label'
+  - type: 'input'
+    style: 'count-input'
+    var: 'score_euC'
+    min: 0
+  - type: 'let'
+    var: 'needs_break'
+    expr: 'true'
+- type: 'conditional'
+  if: 'winnerD'
+  then:
+  - type: 'conditional'
+    if: 'needs_break'
+    then:
+    - type: 'break'
+  - type: 'input'
+    label: '{nameD}'
+    var: 'score_euD'
+    min: 0
+- type: 'break'
+- type: 'link'
+  label: 'Continue'
+  snapshot: true
+  target: 'Ranking'
+  onclick:
+  - type: 'let'
+    var: 'max_estate_upgrades'
+    expr: 'max(score_euA, score_euB, score_euC, score_euD)'
+  - type: 'conditional'
+    if: 'winnerA && score_euA != max_estate_upgrades'
+    then:
+    - type: 'assign'
+      var: 'winnerA'
+      expr: 'false'
+    - type: 'assign'
+      var: 'winnerCount'
+      expr: 'winnerCount - 1'
+  - type: 'conditional'
+    if: 'winnerB && score_euB != max_estate_upgrades'
+    then:
+    - type: 'assign'
+      var: 'winnerB'
+      expr: 'false'
+    - type: 'assign'
+      var: 'winnerCount'
+      expr: 'winnerCount - 1'
+  - type: 'conditional'
+    if: 'winnerC && score_euC != max_estate_upgrades'
+    then:
+    - type: 'assign'
+      var: 'winnerC'
+      expr: 'false'
+    - type: 'assign'
+      var: 'winnerCount'
+      expr: 'winnerCount - 1'
+  - type: 'conditional'
+    if: 'winnerD && score_euD != max_estate_upgrades'
+    then:
+    - type: 'assign'
+      var: 'winnerD'
+      expr: 'false'
+    - type: 'assign'
+      var: 'winnerCount'
+      expr: 'winnerCount - 1'

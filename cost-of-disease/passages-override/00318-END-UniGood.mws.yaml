@@ -1,0 +1,95 @@
+# Override — extracted content unchanged, plus an appended "Ending Unlocked" popup. See
+# 00020-END-NoUniGood.mws.yaml's own comment for the full rationale (same for every ending
+# override in this module).
+# ../.source/TheCostofDisease_Eng_v10.cs:32730
+---
+format: 'mws/0.4'
+passage_id: 'END-UniGood'
+# ../en-US.restext:2586 | "Editor's note"
+title: 'restext://END_UniGood_001'
+# ../en-US.restext:2587 | "August 1923"
+subtitle: 'restext://END_UniGood_002'
+layout: 'narration'
+nodes:
+# ../.source/TheCostofDisease_Eng_v10.cs:32739
+- type: 'text'
+  # ../en-US.restext:2588 | "Hello Ensign,"
+  value: 'restext://END_UniGood_003'
+# ../.source/TheCostofDisease_Eng_v10.cs:32740
+- type: 'break'
+# ../.source/TheCostofDisease_Eng_v10.cs:32741
+- type: 'text'
+  # ../en-US.restext:2589 | "I've looked over the manu..."
+  value: 'restext://END_UniGood_004'
+# ../.source/TheCostofDisease_Eng_v10.cs:32742
+- type: 'break'
+  style: 'paragraph'
+# ../.source/TheCostofDisease_Eng_v10.cs:32744
+- type: 'text'
+  # ../en-US.restext:2590 | "If I may paraphrase: A sc..."
+  value: 'restext://END_UniGood_005'
+# ../.source/TheCostofDisease_Eng_v10.cs:32747
+- type: 'conditional'
+  if: 'cured == 1'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:32749
+  - type: 'text'
+    # ../en-US.restext:2591 | "\"which is further improv..."
+    value: 'restext://END_UniGood_006'
+# ../.source/TheCostofDisease_Eng_v10.cs:32752
+- type: 'conditional'
+  # ../en-US.restext:31 | "yes"
+  if: 'uni == "restext://Choice_Yes_Lower"'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:32754
+  - type: 'text'
+    # ../en-US.restext:2592 | "After which, they put on ..."
+    value: 'restext://END_UniGood_007'
+# ../.source/TheCostofDisease_Eng_v10.cs:32757
+- type: 'conditional'
+  # ../en-US.restext:31 | "yes"
+  if: 'ultimate == "restext://Choice_Yes_Lower"'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:32759
+  - type: 'text'
+    # ../en-US.restext:2593 | "They even create an unint..."
+    value: 'restext://END_UniGood_008'
+# ../.source/TheCostofDisease_Eng_v10.cs:32762
+- type: 'text'
+  # ../en-US.restext:2594 | "Ultimately, their work is..."
+  value: 'restext://END_UniGood_009'
+# ../.source/TheCostofDisease_Eng_v10.cs:32767
+- type: 'break'
+  style: 'paragraph'
+# ../.source/TheCostofDisease_Eng_v10.cs:32769
+- type: 'text'
+  # ../en-US.restext:2595 | "Recommendation - alter de..."
+  value: 'restext://END_UniGood_010'
+# ../.source/TheCostofDisease_Eng_v10.cs:32771
+- type: 'break'
+  style: 'paragraph'
+# ../.source/TheCostofDisease_Eng_v10.cs:32773
+- type: 'text'
+  # ../en-US.restext:2596 | "I look forward to seeing ..."
+  value: 'restext://END_UniGood_011'
+# ../.source/TheCostofDisease_Eng_v10.cs:32774
+- type: 'break'
+  style: 'paragraph'
+# ../.source/TheCostofDisease_Eng_v10.cs:32779
+- type: 'text'
+  # ../en-US.restext:2597 | "**THE END?**"
+  value: 'restext://END_UniGood_012'
+# - type: 'record'
+#   id: 'ending_uni_good'
+# - type: 'record'
+#   id: 'endings_discovered'
+- type: 'popup'
+  layout: 'game_complete'
+  header:
+  - type: 'image'
+    asset: 'image://picture_tcod_dirty'
+  content:
+  - type: 'text'
+    value: 'You have unlocked **restext://END_UniGood_001** ending.'
+  okay: 'Close'
+  target: 'app::gameover'

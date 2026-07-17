@@ -1,0 +1,33 @@
+# Override — replaces broken extraction. The original Cradle body (Vars.winner =
+# GLOBALS.winnerName; abort(goToPassage: Vars.ending);) extracted to `expr: 'global:winnerName'`,
+# not valid MWS syntax — a dead extraction placeholder for reading Unity's GLOBALS static class,
+# which this module no longer has (or needs) any equivalent of. _Ranking.mws.yaml now sets
+# Vars.winner directly before navigating here, so this override needs nothing but the navigation
+# that was always the real point of this passage: Vars.ending was already decided by earlier
+# story branching, long before scoring.
+---
+format: 'mws/0.4'
+passage_id: 'VarEndingsPassage'
+title: 'Game Over'
+layout: 'narration'
+nodes:
+- type: 'text'
+  value: '{winner} has won the day.'
+- type: 'conditional'
+  if: 'winnerCount > 1'
+  then:
+  - type: 'text'
+    value: 'There were {winnerCount} siblings who will share the glory.'
+- type: 'break'
+  style: 'paragraph'
+- type: 'popup'
+  layout: 'game_complete'
+  label: 'The End'
+  header:
+  - type: 'text'
+    value: 'Congratulations!'
+  content:
+  - type: 'text'
+    value: 'Close this popup to end the game.'
+  okay: 'Close'
+  target: 'app::gameover'

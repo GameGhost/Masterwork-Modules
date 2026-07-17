@@ -1,0 +1,83 @@
+# Masterwork-authored passage (not extractor output) — replaces the reference app's native
+# ViewRankingPage UI. Reached once Vars.winner is already set (by _ScoreEntry.mws.yaml,
+# _TieBreaker1.mws.yaml, or _TieBreaker2.mws.yaml). Builds a ranked player list the same way
+# passages-override/00327-WinnerHUB.mws.yaml already validated (array-of-record + toSorted), then
+# displays each player's rank position with a crown on whoever shares the top score — covers both
+# a single winner and a family win. Continue hands off to VarEndingsPassage, which navigates to
+# whichever ending was already decided by the story (Vars.ending) — Ranking itself never picks
+# an ending, only the winner display.
+---
+format: 'mws/0.4'
+passage_id: 'Ranking'
+layout: 'ranking'
+nodes:
+- type: 'let'
+  var: 'players_raw'
+  expr: '[{ player_name: nameA, points: scoreA + (winnerA ? 1 : 0) }, { player_name: nameB, points: scoreB + (winnerB ? 1 : 0) }, { player_name: nameC, points: scoreC + (winnerC ? 1 : 0) }, { player_name: nameD, points: scoreD + (winnerD ? 1 : 0) }]'
+- type: 'let'
+  var: 'players_ranked'
+  expr: 'players_raw.toSorted("descending", "points")'
+- type: 'assign'
+  var: 'winner'
+  expr: 'winnerCount > 1 ? "The family" : players_ranked[0].player_name'
+- type: 'let'
+  var: 'top_score'
+  expr: 'players_ranked[0].points'
+- type: 'text'
+  value: '1st'
+  style: 'rank-degree'
+- type: 'text'
+  value: '{players_ranked[0].player_name}'
+  style: 'rank-name'
+- type: 'conditional'
+  if: 'players_ranked[0].points == top_score'
+  then:
+  - type: 'text'
+    value: '{icon:crown}'
+- type: 'break'
+- type: 'text'
+  value: '2nd'
+  style: 'rank-degree'
+- type: 'text'
+  value: '{players_ranked[1].player_name}'
+  style: 'rank-name'
+- type: 'conditional'
+  if: 'players_ranked[1].points == top_score'
+  then:
+  - type: 'text'
+    value: ' {icon:crown}'
+- type: 'break'
+- type: 'conditional'
+  if: 'players >= 3'
+  then:
+  - type: 'text'
+    value: '3rd'
+    style: 'rank-degree'
+  - type: 'text'
+    value: '{players_ranked[2].player_name}'
+    style: 'rank-name'
+  - type: 'conditional'
+    if: 'players_ranked[2].points == top_score'
+    then:
+    - type: 'text'
+      value: ' {icon:crown}'
+  - type: 'break'
+- type: 'conditional'
+  if: 'players >= 4'
+  then:
+  - type: 'text'
+    value: '4th'
+    style: 'rank-degree'
+  - type: 'text'
+    value: '{players_ranked[3].player_name}'
+    style: 'rank-name'
+  - type: 'conditional'
+    if: 'players_ranked[3].points == top_score'
+    then:
+    - type: 'text'
+      value: ' {icon:crown}'
+  - type: 'break'
+- type: 'link'
+  label: 'Continue'
+  target: 'VarEndingsPassage'
+  snapshot: true

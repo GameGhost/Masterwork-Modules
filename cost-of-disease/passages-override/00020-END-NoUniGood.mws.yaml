@@ -1,0 +1,85 @@
+# Override — extracted content unchanged, plus an appended "Ending Unlocked" acknowledgement
+# popup (matches the reference app's ViewShareEnding.OpenSharePopupMenu, reached via
+# ViewGenerationEnding's generation-end flow — Assets/Scripts/UI/ViewShareEnding.cs). The image
+# asset is picked directly here per the user's preference (not any shared good/bad/per-module
+# selection mechanism the reference app doesn't actually use either — ViewShareEnding just
+# indexes photoclipImages by which of the 3 modules is playing, not by ending). record nodes are
+# forward-compatible placeholders for the Phase-3 achievement engine (currently a no-op — see
+# RecordNode's own doc comment); the "N of M endings" count is deferred until that lands, so this
+# popup only shows the ending-specific message.
+# ../.source/TheCostofDisease_Eng_v10.cs:3280
+---
+format: 'mws/0.4'
+passage_id: 'END-NoUniGood'
+# ../en-US.restext:513 | "A Legacy Will Live On"
+title: 'restext://END_NoUniGood_001'
+layout: 'narration'
+nodes:
+# ../.source/TheCostofDisease_Eng_v10.cs:3289
+- type: 'text'
+  # ../en-US.restext:514 | "This manuscript is dedica..."
+  value: 'restext://END_NoUniGood_002'
+# ../.source/TheCostofDisease_Eng_v10.cs:3290
+- type: 'break'
+  style: 'paragraph'
+# ../.source/TheCostofDisease_Eng_v10.cs:3292
+- type: 'text'
+  # ../en-US.restext:515 | "The family that commissio..."
+  value: 'restext://END_NoUniGood_003'
+# ../.source/TheCostofDisease_Eng_v10.cs:3294
+- type: 'conditional'
+  # ../en-US.restext:31 | "yes"
+  if: 'uni == "restext://Choice_Yes_Lower"'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:3296
+  - type: 'text'
+    # ../en-US.restext:516 | ", as individuals associat..."
+    value: 'restext://END_NoUniGood_004'
+# ../.source/TheCostofDisease_Eng_v10.cs:3298
+- type: 'text'
+  # ../en-US.restext:517 | " the absolute least they ..."
+  value: 'restext://END_NoUniGood_005'
+# ../.source/TheCostofDisease_Eng_v10.cs:3300
+- type: 'break'
+  style: 'paragraph'
+# ../.source/TheCostofDisease_Eng_v10.cs:3302
+- type: 'switch'
+  on: 'peeps'
+  cases:
+  - match: 0
+    nodes:
+    # ../.source/TheCostofDisease_Eng_v10.cs:3304
+    - type: 'text'
+      # ../en-US.restext:518 | "With the introduction of ..."
+      value: 'restext://END_NoUniGood_006'
+  - match: 1
+    nodes:
+    # ../.source/TheCostofDisease_Eng_v10.cs:3310
+    - type: 'text'
+      # ../en-US.restext:519 | "While we do not have hope..."
+      value: 'restext://END_NoUniGood_007'
+# ../.source/TheCostofDisease_Eng_v10.cs:3312
+- type: 'text'
+  # ../en-US.restext:520 | " The eccentric and infamo..."
+  value: 'restext://END_NoUniGood_008'
+# ../.source/TheCostofDisease_Eng_v10.cs:3315
+- type: 'break'
+  style: 'paragraph'
+# ../.source/TheCostofDisease_Eng_v10.cs:3318
+- type: 'text'
+  # ../en-US.restext:175 | "THE END?"
+  value: 'restext://Heading_TheEndQuestion'
+# - type: 'record'
+#   id: 'ending_nouni_good'
+# - type: 'record'
+#   id: 'endings_discovered'
+- type: 'popup'
+  layout: 'game_complete'
+  header:
+  - type: 'image'
+    asset: 'image://picture_tcod_dirty'
+  content:
+  - type: 'text'
+    value: 'You have unlocked **restext://END_NoUniGood_001** ending.'
+  okay: 'Close'
+  target: 'app::gameover'

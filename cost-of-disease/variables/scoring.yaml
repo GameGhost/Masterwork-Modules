@@ -1,0 +1,27 @@
+# Hand-authored session variables backing the score-entry/tie-break/ranking passages
+# (passages-override/_ScoreEntry.mws.yaml, _TieBreaker1.mws.yaml, _TieBreaker2.mws.yaml,
+# _Ranking.mws.yaml) — not discovered by extraction, so they live here instead of
+# _variables.yaml (regenerated wholesale on every re-extraction). scoreA-D already exist in
+# _variables.yaml (populated only by the never-reached ScoreEntryP1..P5 chain today) and get
+# reused for real by _ScoreEntry.mws.yaml.
+variables:
+  # Tie round 1: did this player complete their Masterwork? Self-reported by the players at the
+  # table, not derived from any tracked game state.
+  score_mwA: bool
+  score_mwB: bool
+  score_mwC: bool
+  score_mwD: bool
+
+  # Tie round 2: "Estate Upgrades" count for whichever players are still tied after round 1 —
+  # added into their scoreA-D total, never used standalone.
+  score_euA: int
+  score_euB: int
+  score_euC: int
+  score_euD: int
+
+  # Winner Tracking
+  winnerA: bool
+  winnerB: bool
+  winnerC: bool
+  winnerD: bool
+  winnerCount: int

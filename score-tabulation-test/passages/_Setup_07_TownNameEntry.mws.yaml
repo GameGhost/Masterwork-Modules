@@ -1,0 +1,39 @@
+# Masterwork-authored onboarding passage (not extractor output) — see Modules/cost-of-disease/README.md.
+# Same self-navigating input pattern as the player-name passages. Acknowledgement text reuses
+# NameEntryTownConfirm_001/002's existing restext (passages/00221-NameEntryTownConfirm.mws.yaml).
+---
+format: 'mws/0.4'
+passage_id: 'Setup_07_TownNameEntry'
+layout: 'setup_town_name'
+nodes:
+- type: 'conditional'
+  if: 'townname == ""'
+  then:
+  - type: 'text'
+    value: 'restext://TCOD_TownName_001'
+    style: 'heading-large'
+  - type: 'break'
+  - type: 'text'
+    value: 'restext://TCOD_TownName_002'
+  - type: 'break'
+    style: 'paragraph'
+  - type: 'input'
+    label: 'Please collectively enter the name of the town in which your inheritance resides.'
+    var: 'townname'
+  - type: 'link'
+    label: 'Continue'
+    target: 'Setup_07_TownNameEntry'
+    snapshot: false
+  else:
+  - type: 'text'
+    value: 'restext://NameEntryTownConfirm_001'
+  - type: 'break'
+    style: 'paragraph'
+  - type: 'text'
+    value: 'restext://NameEntryTownConfirm_002'
+  - type: 'break'
+    style: 'paragraph'
+  - type: 'link'
+    label: 'Continue'
+    target: '00_Preparations' # TODO replace with module scope passage
+    snapshot: true

@@ -53,11 +53,12 @@ Each module directory (e.g. `cost-of-disease/`) follows the same shape:
 | `passages/` | extractor-owned | One `{NNN}-{PassageId}.mws.yaml` per passage — overwritten wholesale on every re-extraction. Never hand-edit files here |
 | `passages-override/` | hand-maintained | `.mws.yaml` files applied after `passages/` at module load time (`ModuleLoader.LoadFromDirectory`) — a matching `passage_id` replaces the extracted version, a new one is simply added. Never touched by extraction, so it survives re-extraction, but can drift stale against the current MWS format version since nothing re-checks it automatically |
 | `layouts/` | hand-authored | Layout-chrome files (`layouts/{layout_id}.mws.yaml`) rendered around passages/popups sharing that `layout` value — see `docs/mws-format-latest.md` §8 in the code repo |
+| `variables/` | hand-authored | Zero or more `.yaml` files declaring session variables the module needs that aren't discovered by extraction (e.g. bookkeeping variables for hand-authored passages) — same `variables:` schema as `_variables.yaml`, loaded after it with the same add/override-by-key semantics as `passages-override/`. See `docs/mws-format-latest.md` §9 in the code repo |
 | `assets/` | hand-authored | `style.css` plus `audio/`, `fonts/`, `icons/`, `images/` — the app only emits structural `layout-{value}`/`style-{value}` CSS class hooks, everything they actually look like lives here |
 | `_variables.yaml` | extractor-owned | All session variables discovered during extraction, with inferred types/defaults |
-| `en-US.restext` | extractor-owned | Extracted locale strings (`Key=Value`). `Common_NNN` keys can renumber between runs — see `en-US.common.restext` |
-| `en-US.common.restext` | hand-maintained | Curated `Key=Value` file giving *stable* names to strings that would otherwise get an auto-renumbered `Common_NNN` id (fed to `--common-restext`). Any override passage referencing a Common string should use one of these curated names |
+| `en-US.restext` | extractor-owned | Extracted locale strings (`Key=Value`). `Common_NNN` keys can renumber between runs — see `.source/en-US.common.restext` |
 | `.source/*.cs` | extraction input | The canonical Cradle complete-class C# source this module is extracted from — CC BY-NC-SA, see Licensing above |
+| `.source/en-US.common.restext` | hand-maintained | Curated `Key=Value` file giving *stable* names to strings that would otherwise get an auto-renumbered `Common_NNN` id (fed to `--common-restext`). Any override passage referencing a Common string should use one of these curated names. Lives in `.source/` because, like the Cradle source itself, it's an extraction *input*, not output — but unlike the `.cs` file it's hand-maintained, not CC BY-NC-SA |
 
 Extraction only ever writes `passages/`, `_variables.yaml`, and `en-US.restext` — everything else in
 a module directory is hand-maintained and safe from being overwritten by a re-run.
@@ -79,7 +80,7 @@ $modules     = "c:\Projects\Masterwork-Modules"
 
 # The Cost of Disease — passages go into the module's passages/ subfolder; _variables.yaml and
 # en-US.restext go into the module root, next to manifest.yaml and passages-override/.
-# --common-restext gives stable IDs to Common strings (cost-of-disease/en-US.common.restext);
+# --common-restext gives stable IDs to Common strings (cost-of-disease/.source/en-US.common.restext);
 # --progress-map gives hub_early/hub_middle/hub_late layout overrides + end_of_round popups at the
 # reference app's real progress-bar checkpoints (progress-map.json, see below).
 dotnet run --project src/Masterwork.Extractor -- `
@@ -89,7 +90,7 @@ dotnet run --project src/Masterwork.Extractor -- `
   --restext-out "$modules\cost-of-disease" `
   --module-title "The Cost of Disease" `
   --sprite-map $spritemap `
-  --common-restext "$modules\cost-of-disease\en-US.common.restext" `
+  --common-restext "$base\en-US.common.restext" `
   --progress-map $progressmap
 ```
 
@@ -141,9 +142,10 @@ the code repo); when the format advances, update overrides before the next modul
 
 `Masterwork.ModuleFormat.ModulePackage` (code repo) reads/writes a module directory as a `.mwm` zip
 — `ModulePackage.WriteToBytes(moduleDir)` bundles a module folder's `passages/`,
-`passages-override/`, `layouts/`, `assets/`, `manifest.yaml`, `_variables.yaml`, and
-`{locale}.restext` files directly into the archive; `ModulePackage.ReadFromBytes(bytes)` is the
-inverse, returning a `ModulePackageContents` record the app loads via
+`passages-override/`, `layouts/`, `variables/`, `assets/`, `manifest.yaml`, `_variables.yaml`, and
+`{locale}.restext` files directly into the archive (explicitly excluding `.source/` and a root
+`README.md`, neither of which belongs in a distributable bundle); `ModulePackage.ReadFromBytes(bytes)`
+is the inverse, returning a `ModulePackageContents` record the app loads via
 `ModuleLoader.LoadFromSources`. Bundling is a pure repackaging step — it doesn't re-run extraction
 or validate content, so re-bundle after every content change you want reflected in the `.mwm`.
 

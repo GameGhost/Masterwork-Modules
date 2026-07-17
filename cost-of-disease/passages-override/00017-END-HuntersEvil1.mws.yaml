@@ -1,0 +1,50 @@
+# Override — extracted content unchanged, plus an appended "Ending Unlocked" popup. See
+# 00020-END-NoUniGood.mws.yaml's own comment for the full rationale (same for every ending
+# override in this module).
+# ../.source/TheCostofDisease_Eng_v10.cs:3165
+---
+format: 'mws/0.4'
+passage_id: 'END-HuntersEvil1'
+# ../en-US.restext:494 | "Their Own Destiny"
+title: 'restext://END_HuntersEvil1_001'
+layout: 'narration'
+nodes:
+# ../.source/TheCostofDisease_Eng_v10.cs:3173
+- type: 'text'
+  # ../en-US.restext:495 | "The impressive victory ov..."
+  value: 'restext://END_HuntersEvil1_002'
+# ../.source/TheCostofDisease_Eng_v10.cs:3174
+- type: 'break'
+  style: 'paragraph'
+# ../.source/TheCostofDisease_Eng_v10.cs:3176
+- type: 'text'
+  # ../en-US.restext:496 | "Tall tales once told to f..."
+  value: 'restext://END_HuntersEvil1_003'
+# ../.source/TheCostofDisease_Eng_v10.cs:3177
+- type: 'break'
+  style: 'paragraph'
+# ../.source/TheCostofDisease_Eng_v10.cs:3179
+- type: 'text'
+  # ../en-US.restext:497 | "But their fame was merely..."
+  value: 'restext://END_HuntersEvil1_004'
+# ../.source/TheCostofDisease_Eng_v10.cs:3180
+- type: 'break'
+  style: 'paragraph'
+# ../.source/TheCostofDisease_Eng_v10.cs:3183
+- type: 'text'
+  # ../en-US.restext:175 | "THE END?"
+  value: 'restext://Heading_TheEndQuestion'
+# - type: 'record'
+#   id: 'ending_hunters_evil1'
+# - type: 'record'
+#   id: 'endings_discovered'
+- type: 'popup'
+  layout: 'game_complete'
+  header:
+  - type: 'image'
+    asset: 'image://picture_tcod_dirty'
+  content:
+  - type: 'text'
+    value: 'You have unlocked **restext://END_HuntersEvil1_001** ending.'
+  okay: 'Close'
+  target: 'app::gameover'
