@@ -1,0 +1,22 @@
+# Same round-tracker footer as narration.mws.yaml. hub_early/hub_middle/hub_late differ only in
+# CSS border color (green/amber/red, matching the reference app's per-generation theming).
+format: 'mws/0.4'
+layout_id: 'hub_late'
+footer:
+- type: 'let'
+  var: 'roundLabels'
+  expr: '["I-1", "I-2", "I-3", "II-1", "II-2", "II-3", "III-1", "III-2", "III-3"]'
+- type: 'foreach'
+  var: 'label'
+  in: 'roundLabels'
+  do:
+  - type: 'conditional'
+    if: 'label == roundLabel'
+    then:
+    - type: 'text'
+      value: '{label}'
+      style: 'progress-pip-current'
+    else:
+    - type: 'text'
+      value: '{label}'
+      style: 'progress-pip'

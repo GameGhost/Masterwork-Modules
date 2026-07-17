@@ -1,0 +1,51 @@
+# Replaces the reference app's bespoke ViewBiddingSystem (voting/bidding) component — see
+# README.md "Voting/bidding" for the full writeup. Two stages, chained via the same
+# self-navigating-passage pattern _Setup_03_PlayerNameA.mws.yaml already uses (re-navigate to this
+# same passage_id; a conditional keyed on session state picks which branch renders): stage 0 is a
+# click-triggered "place your bids" popup whose onclose bumps revealStage and self-navigates; stage
+# 1 is the auto-display countdown/reveal popup (no `label`), whose Okay button is inert until a
+# CSS animation finishes (see .layout-reveal_countdown in style.css) — no engine support needed for
+# either half of the original bespoke component.
+format: 'mws/0.4'
+passage_id: 'Showcase_Popup_RevealCountdown'
+title: 'Reveal Countdown Popup'
+layout: 'narration'
+nodes:
+- type: 'assign'
+  var: 'roundLabel'
+  expr: '"II-1"'
+- type: 'text'
+  value: 'A countdown plays via CSS animation before the reveal button becomes clickable — no bespoke component needed.'
+- type: 'break'
+  style: 'paragraph'
+- type: 'conditional'
+  if: 'revealStage == 0'
+  then:
+  - type: 'popup'
+    layout: 'reveal_countdown'
+    label: 'Start the Reveal'
+    content:
+    - type: 'text'
+      value: 'Place your bids now.'
+      style: 'popup-title'
+    okay: 'Lock In Bids'
+    onclose:
+    - type: 'assign'
+      var: 'revealStage'
+      expr: '1'
+    target: 'Showcase_Popup_RevealCountdown'
+  else:
+  - type: 'popup'
+    layout: 'reveal_countdown'
+    content:
+    - type: 'text'
+      value: '3… 2… 1…'
+      style: 'countdown-text'
+    okay: 'Reveal'
+    onclose:
+    - type: 'assign'
+      var: 'revealStage'
+      expr: '0'
+- type: 'link'
+  label: '← Back to Showcase'
+  target: 'Example_Entry'

@@ -1,0 +1,35 @@
+# The reference "Choose Audio Voice" popup is a 2-option radio choice — MWS has no native
+# radio-group input, so this demonstrates the same dark-box "settings choice" shape with a boolean
+# checkbox instead (checked = Feminine, unchecked = Masculine). Close enough to prove out the
+# layout; a real radio-group input type would be a format addition, not a template concern.
+format: 'mws/0.4'
+passage_id: 'Showcase_Popup_Choice'
+title: 'Choice Popup'
+layout: 'narration'
+nodes:
+- type: 'assign'
+  var: 'roundLabel'
+  expr: '"I-1"'
+- type: 'text'
+  value: 'A dark bordered box for settings-style choices, as opposed to the parchment-note popups elsewhere in this showcase.'
+- type: 'break'
+  style: 'paragraph'
+- type: 'popup'
+  layout: 'choice'
+  label: 'Preview: Choice Popup'
+  content:
+  - type: 'text'
+    value: 'Choose Audio Voice'
+    style: 'popup-title'
+  - type: 'text'
+    value: 'Feminine'
+    style: 'choice-label'
+  - type: 'input'
+    var: 'demoVoiceFeminine'
+    style: 'choice-checkbox'
+  okay: 'Continue'
+- type: 'break'
+  style: 'paragraph'
+- type: 'link'
+  label: '← Back to Showcase'
+  target: 'Example_Entry'

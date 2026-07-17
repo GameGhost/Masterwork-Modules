@@ -1,0 +1,584 @@
+/* My Father's Work — Template. A design workbench, not a playable scenario: one demo
+ * passage/popup per layout the app needs to support, styled for real, so visual treatment can be
+ * iterated on and screenshotted here before being copied into real scenario modules (see
+ * README.md and scripts/apply-template.ps1 at the Masterwork-Modules repo root).
+ *
+ * The app's own chrome only ever emits structural class hooks — layout-{value} on passages/popups,
+ * style-{value} on link/input/text/break/image/section nodes, plus (for popups) always-present
+ * .mws-popup-container/-header/-content/-footer regions — this file is what actually gives those
+ * hooks a visual treatment. url(icon://slug) / url(image://slug) / url(font://slug) references are
+ * resolved by JsModuleStyleInjector before this file is injected into the page.
+ *
+ * FONT-SCALING CONVENTION — read before adding rules here (see also `docs/mws-format-latest.md`):
+ * the app's only font-scaling mechanism is `body { font-size: calc(1rem * var(--mws-text-scale)) }`
+ * — nothing else responds to the player's system/browser text-size preference. A `rem` value is
+ * relative to the *root* element, not `body`, so it will NOT scale with that preference. Text-bearing
+ * rules below therefore use `em` (relative to the inherited, already-scaled computed size) wherever
+ * the rule sizes actual reading text; `rem` is reserved for chrome that deliberately should NOT grow
+ * with text — border widths, fixed-aspect button/backing art sized to match a background image.
+ */
+
+/* ── Fonts ────────────────────────────────────────────────────────────────
+ * Loaded but never wired to any font-family anywhere in the codebase until this module — see
+ * font://slug resolution in AssetResolver.cs (assets/fonts/{slug}.{woff2,woff,ttf,otf}). Only a
+ * woff2 source is declared per face: every browser/WebView this app targets supports it, and
+ * AssetResolver only ever returns one resolved data: URI per slug (the first extension it finds),
+ * so a second url()/format() fallback for the same slug would just resolve to the identical bytes. */
+
+@font-face {
+    font-family: 'Averia Libre';
+    font-style: normal;
+    font-weight: 300;
+    src: url(font://averia-libre-v16-latin-300) format('woff2');
+}
+@font-face {
+    font-family: 'Averia Libre';
+    font-style: italic;
+    font-weight: 300;
+    src: url(font://averia-libre-v16-latin-300italic) format('woff2');
+}
+@font-face {
+    font-family: 'Averia Libre';
+    font-style: normal;
+    font-weight: 400;
+    src: url(font://averia-libre-v16-latin-regular) format('woff2');
+}
+@font-face {
+    font-family: 'Averia Libre';
+    font-style: italic;
+    font-weight: 400;
+    src: url(font://averia-libre-v16-latin-italic) format('woff2');
+}
+@font-face {
+    font-family: 'Averia Libre';
+    font-style: normal;
+    font-weight: 700;
+    src: url(font://averia-libre-v16-latin-700) format('woff2');
+}
+@font-face {
+    font-family: 'Averia Libre';
+    font-style: italic;
+    font-weight: 700;
+    src: url(font://averia-libre-v16-latin-700italic) format('woff2');
+}
+@font-face {
+    font-family: 'Averia Gruesa Libre';
+    font-style: normal;
+    font-weight: 400;
+    src: url(font://averia-gruesa-libre-v22-latin_latin-ext-regular) format('woff2');
+}
+
+/* Body-copy font everywhere inside a passage/popup; titles/headings override to the display face
+   below. Scoped to .mws-passage/.mws-popup-container (not `body`) — this file only ever styles
+   module content, never app chrome. */
+.mws-passage,
+.mws-popup-container {
+    font-family: 'Averia Libre', serif;
+}
+
+.mws-passage-title,
+.mws-popup-header {
+    font-family: 'Averia Gruesa Libre', 'Averia Libre', serif;
+}
+
+/* ── Passage layouts ─────────────────────────────────────────────────────── */
+
+/* narration/introduction/event: see the dedicated block further down — these are new template
+   content, not copied from cost-of-disease (which leaves narration intentionally unstyled). */
+
+/* setup_player_count: the 2/3/4-player picker. Centered column, large prominent buttons — see the
+   .mws-link.style-button rule below for the buttons themselves. Copied as-is from cost-of-disease. */
+.mws-passage.layout-setup_player_count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5em;
+    padding: 2rem 1rem;
+}
+
+/* ── Popup layouts ───────────────────────────────────────────────────────── */
+
+/* setup: a torn-paper note pinned to the passage, composed from three chrome images
+   (assets/images/popup/) plus whatever image the popup's own header carries. Copied as-is from
+   cost-of-disease — this is the one popup layout with a fully worked example already. */
+
+.mws-popup-overlay.layout-setup .mws-popup-container {
+    position: relative;
+    width: 100%;
+    max-width: 32rem;
+    min-height: 16rem;
+    height: auto;
+    overflow: unset;
+    background-color: transparent;
+    background-image: url(image://backgrounds/popup_parchment_border);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 1.5rem;
+    padding-top: 3.5rem;
+}
+
+.mws-popup-overlay.layout-setup .mws-popup-header {
+    position: absolute;
+    top: -0.1rem;
+    left: -0.6em;
+    width: 10rem;
+    height: 10rem;
+    background-image: url(image://popup/setup_icon_background);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mws-popup-overlay.layout-setup .mws-popup-header::before {
+    content: '';
+    position: absolute;
+    top: 0.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1.2rem;
+    height: 1.2rem;
+    background-image: url(image://popup/setup_brass_stud);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.mws-popup-overlay.layout-setup .mws-popup-header::after {
+    content: 'SETUP';
+    position: absolute;
+    top: 1.5rem;
+    left: 10rem;
+    font-weight: 700;
+    font-size: 2em;
+    color: #1a130c;
+}
+
+.mws-popup-overlay.layout-setup .mws-image.style-setup-image {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+}
+
+.mws-popup-overlay.layout-setup .mws-popup-content {
+    max-height: 18rem;
+    overflow-y: auto;
+    color: #2b2016;
+    padding-left: 9rem;
+}
+
+.mws-popup-overlay.layout-setup .mws-popup-footer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -4.2em;
+    justify-content: center;
+    margin-top: 1.25rem;
+}
+
+.mws-popup-overlay.layout-setup .mws-popup-okay {
+    background-image: url(image://inputs/button_green);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    appearance: none;
+    color: #152218;
+    font-weight: 700;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    width: 13rem;
+    aspect-ratio: 17 / 6;
+    flex-shrink: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* ── Link styles ──────────────────────────────────────────────────────────── */
+
+/* style: 'button' — used for the player-count picker and other prominent choices, as opposed to
+   the default inline-link treatment. Copied as-is from cost-of-disease. */
+.mws-link.style-button {
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    padding: 0.9em 1.5em;
+    margin: 0.35em 0;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #b8860b;
+    border-radius: 0.5rem;
+    background: #fdf3d0;
+}
+
+.mws-link.style-button:hover:not(:disabled) {
+    background: #fbe8a6;
+}
+
+/* ── narration / introduction ────────────────────────────────────────────── */
+
+.mws-passage.layout-narration,
+.mws-passage.layout-introduction {
+    background-image: url(image://backgrounds/image_weathered_paper);
+    background-size: cover;
+    background-position: center;
+    color: #2b2016;
+    padding: 2rem 2rem 3rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.mws-passage.layout-introduction {
+    border: 4px solid #7a1f1f;
+}
+
+/* ── event ────────────────────────────────────────────────────────────────
+   app.css already gives .layout-event a purple left border; this adds the full-bleed dramatic
+   tone on top of it. */
+
+.mws-passage.layout-event {
+    background: #1c1013;
+    color: #f0e6e6;
+    padding: 2rem;
+}
+
+/* ── hub_early / hub_middle / hub_late ───────────────────────────────────── */
+
+.mws-passage.layout-hub_early,
+.mws-passage.layout-hub_middle,
+.mws-passage.layout-hub_late {
+    background: #17171a;
+    color: #e5e0d8;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.mws-passage.layout-hub_early {
+    border: 3px solid #2f7d5c;
+}
+
+.mws-passage.layout-hub_middle {
+    border: 3px solid #b5842a;
+}
+
+.mws-passage.layout-hub_late {
+    border: 3px solid #8f2c2c;
+}
+
+.mws-section.style-hub-card {
+    background: #232327;
+    border: 1px solid #3a3a3f;
+    border-radius: 0.4rem;
+    padding: 0.75em 1em;
+    margin: 0.75em 0;
+}
+
+.mws-section.style-hub-card > h3 {
+    margin: 0 0 0.35em;
+    color: #e0a94a;
+    font-size: 1.1em;
+}
+
+.mws-link.style-hub-continue {
+    display: block;
+    text-align: center;
+    margin-top: 1em;
+    color: #6fb8e0;
+    font-style: italic;
+}
+
+/* ── Round tracker footer (narration/introduction/hub_*) ─────────────────── */
+
+.mws-layout-footer {
+    display: flex;
+    justify-content: center;
+    gap: 0.25rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.mws-text.style-progress-pip,
+.mws-text.style-progress-pip-current {
+    display: inline-block;
+    padding: 0.15em 0.5em;
+    border-radius: 0.75rem;
+    font-size: 0.75em;
+    font-weight: 700;
+    background: #4b4b4b;
+    color: #cfcfcf;
+}
+
+.mws-text.style-progress-pip-current {
+    background: #d4af37;
+    color: #1a130c;
+}
+
+/* ── Shared popup title (choice / reveal_countdown / end_of_round) ──────── */
+
+.style-popup-title {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+
+/* ── choice popup ("Choose Audio Voice") ─────────────────────────────────── */
+
+.mws-popup-overlay.layout-choice .mws-popup-container {
+    background: #14161c;
+    color: #e8c9a0;
+    border: 3px solid #5a5142;
+    border-radius: 0.3rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.mws-popup-overlay.layout-choice .style-popup-title {
+    color: #f2c879;
+}
+
+.mws-popup-overlay.layout-choice .style-choice-label {
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+.mws-popup-overlay.layout-choice .mws-popup-footer {
+    justify-content: center;
+    margin-top: 1em;
+}
+
+/* ── reveal_countdown popup (replaces the bespoke voting/bidding component) ─
+   Two-stage flow authored via a self-navigating passage (see
+   Showcase_Popup_RevealCountdown.mws.yaml) — this file only owns the countdown animation and the
+   delayed Okay-button enable, both pure CSS. */
+
+.mws-popup-overlay.layout-reveal_countdown .mws-popup-container {
+    background: #14161c;
+    color: #e8c9a0;
+    border: 3px solid #5a5142;
+    border-radius: 0.3rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.mws-popup-overlay.layout-reveal_countdown .style-countdown-text {
+    display: block;
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    animation: mws-countdown-pulse 3s ease-in-out;
+}
+
+@keyframes mws-countdown-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    16%, 50%, 83% { transform: scale(1.3); }
+}
+
+.mws-popup-overlay.layout-reveal_countdown .mws-popup-footer {
+    justify-content: center;
+    margin-top: 1em;
+}
+
+/* Inert until the countdown animation's own timeline finishes — nothing to keep in sync with the
+   visible countdown text above, since both run off the same fixed 3s duration. */
+.mws-popup-overlay.layout-reveal_countdown .mws-popup-okay {
+    pointer-events: none;
+    opacity: 0.5;
+    animation: mws-reveal-enable 3s steps(1) forwards;
+}
+
+@keyframes mws-reveal-enable {
+    to { pointer-events: auto; opacity: 1; }
+}
+
+/* ── end_of_round popup ──────────────────────────────────────────────────── */
+
+.mws-popup-overlay.layout-end_of_round .mws-popup-container {
+    background-image: url(image://backgrounds/popup_parchment_ragged);
+    background-size: 100% 100%;
+    background-color: transparent;
+    color: #2b2016;
+    padding: 2rem;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.mws-popup-overlay.layout-end_of_round .mws-popup-header .mws-image {
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    margin: 0 auto 0.5em;
+    background: transparent;
+    padding: 0;
+}
+
+.mws-popup-overlay.layout-end_of_round .mws-popup-footer {
+    justify-content: center;
+}
+
+/* ── score_panel popup (ScoreEntry / TieBreaker1 / TieBreaker2) ──────────── */
+
+.mws-passage.layout-score_panel {
+    background: radial-gradient(ellipse at center, #6b2d91 0%, #3a1550 70%, #24102e 100%);
+    padding: 2rem 1rem;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mws-passage.layout-score_panel .mws-passage-title {
+    color: #f2e6c8;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.mws-passage.layout-score_panel .mws-passage-body {
+    background-image: url(image://backgrounds/scoring);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #f2e6c8;
+    color: #2b2016;
+    padding: 2.5rem 2rem 3rem;
+    width: 100%;
+    max-width: 34rem;
+    box-sizing: border-box;
+}
+
+.mws-passage.layout-score_panel .style-player-heading,
+.mws-passage.layout-score_panel .style-player-label {
+    display: inline-block;
+    width: 55%;
+    font-weight: 700;
+}
+
+.mws-passage.layout-score_panel .style-score-heading,
+.mws-passage.layout-score_panel .style-score-input,
+.mws-passage.layout-score_panel .style-check-input,
+.mws-passage.layout-score_panel .style-count-input {
+    display: inline-block;
+    width: 40%;
+}
+
+.mws-passage.layout-score_panel .style-score-input,
+.mws-passage.layout-score_panel .style-count-input {
+    padding: 0.3em 0.5em;
+    border: 1px solid #8a6d3b;
+    border-radius: 0.2rem;
+    background: #ece0c0;
+}
+
+.mws-passage.layout-score_panel .mws-link {
+    display: block;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+/* ── ranking popup ────────────────────────────────────────────────────────── */
+
+.mws-passage.layout-ranking {
+    background: linear-gradient(180deg, #2b2b2e 0%, #1a1a1c 100%);
+    color: #e5e0d8;
+    padding: 2rem;
+    border: 3px solid #55555a;
+    border-radius: 0.5rem;
+}
+
+.mws-passage.layout-ranking .mws-passage-title {
+    text-align: center;
+    color: #e5e0d8;
+}
+
+.mws-passage.layout-ranking .style-rank-degree {
+    display: inline-block;
+    width: 3em;
+    color: #e0a94a;
+    font-weight: 700;
+}
+
+.mws-passage.layout-ranking .style-rank-name {
+    display: inline-block;
+    min-width: 10em;
+}
+
+.mws-passage.layout-ranking .mws-link {
+    display: block;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+/* ── game_complete popup ("ending unlocked") ─────────────────────────────── */
+
+.mws-popup-overlay.layout-game_complete .mws-popup-container {
+    position: relative;
+    background: #1a1310;
+    color: #e8dcc8;
+    border: 3px solid #6b5636;
+    border-radius: 0.4rem;
+    padding: 2rem;
+    max-width: 30rem;
+}
+
+.mws-popup-overlay.layout-game_complete .mws-popup-header .mws-image {
+    display: block;
+    width: 100%;
+    border: 4px solid #fff;
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.5);
+    margin-bottom: 1em;
+    transform: rotate(-1deg);
+    background: transparent;
+    padding: 0;
+}
+
+.style-popup-title-highlight {
+    font-weight: 700;
+    color: #f2c879;
+}
+
+.mws-popup-overlay.layout-game_complete .mws-popup-footer {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    margin: 0;
+}
+
+.mws-popup-overlay.layout-game_complete .mws-popup-okay {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: #7a1f1f;
+    color: transparent;
+    border: none;
+    position: relative;
+    padding: 0;
+}
+
+.mws-popup-overlay.layout-game_complete .mws-popup-okay::after {
+    content: '✕';
+    color: #fff;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}

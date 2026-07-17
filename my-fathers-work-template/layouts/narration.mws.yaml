@@ -1,0 +1,23 @@
+# Shared chrome for narration/introduction/hub_early/hub_middle/hub_late — a purely decorative
+# 9-pip round tracker (I-1..III-3), highlighting whichever pip matches the passage's own
+# `roundLabel` variable. See variables/progress.yaml.
+format: 'mws/0.4'
+layout_id: 'narration'
+footer:
+- type: 'let'
+  var: 'roundLabels'
+  expr: '["I-1", "I-2", "I-3", "II-1", "II-2", "II-3", "III-1", "III-2", "III-3"]'
+- type: 'foreach'
+  var: 'label'
+  in: 'roundLabels'
+  do:
+  - type: 'conditional'
+    if: 'label == roundLabel'
+    then:
+    - type: 'text'
+      value: '{label}'
+      style: 'progress-pip-current'
+    else:
+    - type: 'text'
+      value: '{label}'
+      style: 'progress-pip'
