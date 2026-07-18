@@ -9,15 +9,15 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TieBreaker1'
-title: 'Tie Breaker'
-subtitle: 'Masterwork Completed'
+title: 'restext://Scoring_TieBreaker_Title'
+subtitle: 'restext://Scoring_TieBreaker1_Subtitle'
 layout: 'score_panel'
 nodes:
 - type: 'text'
-  value: 'Player'
+  value: 'restext://Scoring_Header_Player'
   style: 'player-heading'
 - type: 'text'
-  value: 'Completed Masterwork'
+  value: 'restext://Scoring_TieBreaker1_HeaderCompleted'
   style: 'score-heading'
 - type: 'break'
 - type: 'let'
@@ -82,7 +82,7 @@ nodes:
     var: 'score_mwD'
 - type: 'break'
 - type: 'link'
-  label: 'Continue'
+  label: 'restext://Common_Continue'
   onclick:
   - type: 'let'
     var: 'checked_count'

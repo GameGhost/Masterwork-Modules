@@ -109,6 +109,7 @@
  * Safari (what this app actually runs in). */
 .mws-section.style-setup-choices,
 .mws-popup-overlay.layout-note .mws-popup-content,
+.mws-popup-overlay.layout-note_clear .mws-popup-content,
 .mws-popup-overlay.layout-setup .mws-popup-content {
     scrollbar-width: thin;
     scrollbar-color: rgba(230, 220, 195, 0.6) transparent;
@@ -116,18 +117,21 @@
 
 .mws-section.style-setup-choices::-webkit-scrollbar,
 .mws-popup-overlay.layout-note .mws-popup-content::-webkit-scrollbar,
+.mws-popup-overlay.layout-note_clear .mws-popup-content::-webkit-scrollbar,
 .mws-popup-overlay.layout-setup .mws-popup-content::-webkit-scrollbar {
     width: 0.35rem;
 }
 
 .mws-section.style-setup-choices::-webkit-scrollbar-track,
 .mws-popup-overlay.layout-note .mws-popup-content::-webkit-scrollbar-track,
+.mws-popup-overlay.layout-note_clear .mws-popup-content::-webkit-scrollbar-track,
 .mws-popup-overlay.layout-setup .mws-popup-content::-webkit-scrollbar-track {
     background: transparent;
 }
 
 .mws-section.style-setup-choices::-webkit-scrollbar-thumb,
 .mws-popup-overlay.layout-note .mws-popup-content::-webkit-scrollbar-thumb,
+.mws-popup-overlay.layout-note_clear .mws-popup-content::-webkit-scrollbar-thumb,
 .mws-popup-overlay.layout-setup .mws-popup-content::-webkit-scrollbar-thumb {
     background-color: rgba(230, 220, 195, 0.6);
     border-radius: 999px;
@@ -389,35 +393,149 @@
 
 /* ── Popup layouts ───────────────────────────────────────────────────────── */
 
-/* note: simple torn-parchment message popup (screenshots: Setup-02/04/06) — header-free, just body
-   text and a single brown Continue button. Distinct from `setup` (popup, below), which has an
-   icon/pin illustration and a different background asset. */
+/* Pressed state for every popup Okay/Cancel button, regardless of which graphical style (green/
+   brown/red) a given layout uses — same shrink/fade as the player-count buttons (transform/opacity
+   only, never width/height, so it can't reflow anything around it). General, not layout-scoped, so
+   new popup layouts get this for free. */
+.mws-popup-okay,
+.mws-popup-cancel {
+    transition: transform 0.12s ease, opacity 0.12s ease;
+}
 
-.mws-popup-overlay.layout-note .mws-popup-container {
+.mws-popup-okay:active:not(:disabled),
+.mws-popup-cancel:active:not(:disabled) {
+    transform: scale(0.85);
+    opacity: 0.75;
+}
+
+/* Button text always uses the display face, matching titles/subtitles (§1.5). */
+.mws-popup-okay,
+.mws-popup-cancel {
+    font-family: 'Germania One', 'Averia Gruesa Libre', 'Averia Libre', serif;
+}
+
+/* note / note_clear: simple torn-parchment message popup (screenshots: Setup-02/04/06) —
+   header-free, just body text and a single brown Continue button. Distinct from `setup` (popup,
+   below), which has an icon/pin illustration and a different background asset.
+
+   Two variants sharing every rule below except the backdrop: `note` keeps the standard darkened
+   backdrop (app.css's .mws-popup-overlay background); `note_clear` (see the override at the end of
+   this block) strips it to transparent — for the player-setup passages, where the popup shows over
+   an already-empty `setup`-layout passage (no meaningful content underneath to dim/focus away
+   from), matching Module-04B's "auto-show over empty passage" screenshot. */
+
+/* font-size: 0.8em is deliberate, not redundant — .mws-popup-container inherits from wherever the
+   popup node sits in the passage tree (position: fixed only escapes layout/containing-block, not
+   CSS inheritance), so without an explicit reset here it was compounding on top of layout-setup's
+   own 1.6em body bump. Popups get their own independent (and, for a short note card, smaller than
+   body-copy) scale instead of inheriting whatever the host passage happens to be running at — most
+   short note content should fit without needing .mws-popup-content's own scroll at all. aspect-ratio
+   matches popup_paper_torn.png's own proportions (1291×603) on wide viewports so
+   background-size: 100% 100% stretches it evenly instead of distorting it; narrow viewports (media
+   query below) use a viewport-anchored box instead, so the parchment claims a large, predictable
+   share of the screen regardless of how much text a given note happens to have. */
+.mws-popup-overlay.layout-note .mws-popup-container,
+.mws-popup-overlay.layout-note_clear .mws-popup-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    max-width: 30rem;
+    max-width: 34rem;
+    aspect-ratio: 1291 / 603;
+    height: auto;
     background-color: transparent;
     background-image: url(image://backgrounds/popup_paper_torn);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border-radius: 0;
     box-shadow: none;
-    padding: 2.5rem 2rem;
-    color: #2b2016;
+    padding: 2.5rem 2.5rem 2rem;
+    color: #410404;
+    font-size: 0.8em;
+    font-weight: 600;
     text-align: center;
 }
 
-.mws-popup-overlay.layout-note .mws-popup-content {
-    max-height: 20rem;
+/* Narrow: pinned a fixed percent from the top (position: absolute against the fixed overlay,
+   which already establishes a containing block — this opts the container out of the overlay's own
+   flex-centering, which would otherwise re-center it as its height changes with content) instead of
+   vertically centered, so its position doesn't jump around as content length changes. No fixed
+   aspect-ratio — height: auto lets it size to content up to the max-height cap ("up to 90% of the
+   view"); once content would exceed that cap, the capped height becomes definite and
+   .mws-popup-content's flex: 1 + overflow-y: auto (below) correctly scrolls *within* it instead of
+   growing the box past the visible area. Horizontally centered via left/right insets rather than
+   left: 50% + transform: translateX(-50%) — deliberate: a `transform` on this element would make it
+   the containing block for any position: fixed descendant (the footer, below), hijacking it away
+   from the real viewport and reintroducing the exact bug fixed positioning was meant to avoid. 6%
+   top / 90vh cap / 2% side insets are starting points, tune here. */
+@media (max-width: 47.99rem) {
+    .mws-popup-overlay.layout-note .mws-popup-container,
+    .mws-popup-overlay.layout-note_clear .mws-popup-container {
+        aspect-ratio: unset;
+        position: absolute;
+        top: 6%;
+        left: 2%;
+        right: 2%;
+        width: auto;
+        max-width: none;
+        height: auto;
+        max-height: 90vh;
+    }
+}
+
+/* Very narrow (phone portrait) gets extra horizontal breathing room on top of the side insets
+   above — 2% of a ~360px-wide screen is only a handful of pixels, not enough margin for
+   comfortable reading once combined with the container's own fixed-rem padding. */
+@media (max-width: 30rem) {
+    .mws-popup-overlay.layout-note .mws-popup-content,
+    .mws-popup-overlay.layout-note_clear .mws-popup-content {
+        padding-left: 1.2em;
+        padding-right: 1.2em;
+    }
+}
+
+/* Small inset so scrolled text never touches the box edges (or the thin scrollbar) — separate from
+   the container's own outer padding, which only guards the unscrolled edges. Narrow gets extra
+   top/bottom clearance via clamp(..., Nvh, ...): the box's own height now scales with viewport
+   height (up to the 90vh cap above), so the torn/ragged portions of the background image stretch
+   more on a taller box than on the wide aspect-ratio-locked one — this keeps the safe text area
+   scaling roughly in step with that stretch instead of a single fixed value that would be too
+   tight on a tall box or too loose on a short one. */
+.mws-popup-overlay.layout-note .mws-popup-content,
+.mws-popup-overlay.layout-note_clear .mws-popup-content {
+    flex: 1;
+    min-height: 0;
     overflow-y: auto;
+    padding: 1em 0.6em 2.4em;
 }
 
-.mws-popup-overlay.layout-note .mws-popup-footer {
+@media (max-width: 47.99rem) {
+    .mws-popup-overlay.layout-note .mws-popup-content,
+    .mws-popup-overlay.layout-note_clear .mws-popup-content {
+        padding: clamp(1.5em, 5vh, 4em) 0.6em clamp(2em, 6vh, 4.5em);
+    }
+}
+
+/* position: fixed (not absolute) — anchored to the actual browser viewport, not to
+   .mws-popup-container. Deliberate: the container can be taller than the viewport or have its own
+   text scrolling inside .mws-popup-content; an absolutely-positioned footer hanging off *the
+   container's* bottom edge scrolled off-screen along with it. Fixed positioning keeps the button
+   visible and reachable at all times regardless of any scrolling happening above it. On a
+   wide-but-shallow container this naturally overlaps the parchment's own bottom edge — fine,
+   matches the reference screenshots where the button hangs off/over the card. */
+.mws-popup-overlay.layout-note .mws-popup-footer,
+.mws-popup-overlay.layout-note_clear .mws-popup-footer {
+    position: fixed;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
     justify-content: center;
-    margin-top: 1em;
+    margin: 0;
+    z-index: 1001;
 }
 
-.mws-popup-overlay.layout-note .mws-popup-okay {
+.mws-popup-overlay.layout-note .mws-popup-okay,
+.mws-popup-overlay.layout-note_clear .mws-popup-okay {
     background-image: url(image://inputs/button_brown);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -441,8 +559,14 @@
     cursor: pointer;
 }
 
-.mws-popup-overlay.layout-note .mws-popup-okay:hover:not(:disabled) {
+.mws-popup-overlay.layout-note .mws-popup-okay:hover:not(:disabled),
+.mws-popup-overlay.layout-note_clear .mws-popup-okay:hover:not(:disabled) {
     filter: brightness(1.15);
+}
+
+/* The only difference from `note` — no darkened backdrop (see the block comment above). */
+.mws-popup-overlay.layout-note_clear {
+    background: transparent;
 }
 
 /* setup: a torn-paper note pinned to the passage, composed from three chrome images

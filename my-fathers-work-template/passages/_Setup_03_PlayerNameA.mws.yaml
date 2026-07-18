@@ -11,27 +11,27 @@ nodes:
   if: 'nameA == ""'
   then:
   - type: 'text'
-    value: '{icon:alert} **Carefully pass the storybook to Player A**'
+    value: '{icon:alert} **restext://Setup_PassBook_A**'
     style: 'setup-alert'
   - type: 'break'
     style: 'paragraph'
   - type: 'input'
-    label: 'Player A - Please enter your given name:'
+    label: 'restext://Setup_NameEntry_LabelA'
     var: 'nameA'
     style: 'setup-input'
   - type: 'link'
-    label: 'Continue'
+    label: 'restext://Common_Continue'
     target: 'Setup_03_PlayerNameA'
     snapshot: false
   # Torn-parchment note popup (screenshot: Setup-04) — auto-displays once nameA is set, replacing
   # this passage's own re-render of the input branch above.
   else:
   - type: 'popup'
-    layout: 'note'
+    layout: 'note_clear'
     content:
     - type: 'let'
       var: 'nameGreeting'
-      expr: '["Welcome to My Father''s Work,", "Greetings and welcome to My Father''s Work,", "We are delighted to receive you,", "Welcome, dear sibling,"].shuffled("Setup03Greeting")[0]'
+      expr: '["restext://Setup_Greeting_1", "restext://Setup_Greeting_2", "restext://Setup_Greeting_3", "restext://Setup_Greeting_4"].shuffled("Setup03Greeting")[0]'
     - type: 'text'
       value: '{nameGreeting}'
     - type: 'break'
@@ -41,7 +41,7 @@ nodes:
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      value: 'Our warmest regards.'
-    okay: 'Continue'
+      value: 'restext://Setup_WarmRegards'
+    okay: 'restext://Common_Continue'
     target: 'Setup_04_PlayerNameB'
     snapshot: false
