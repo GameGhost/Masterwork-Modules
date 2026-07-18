@@ -1,0 +1,13 @@
+# Shared chrome for all setup passages (player count / name entry / town name — VIEW-REQUIREMENTS.md
+# §2 "setup passage layout" decided these collapse into one layout, chrome differs only by content).
+# Background + border image layer per §1.2's three-layer composite; `main.png` has no progress-bar
+# cutout (§1.3), so there's no progress-bar layer here, unlike narration/hub.
+format: 'mws/0.4'
+layout_id: 'setup'
+header:
+- type: 'image'
+  asset: 'image://backgrounds/leather_large'
+  style: 'setup-background'
+- type: 'image'
+  asset: 'image://borders/main'
+  style: 'setup-border'

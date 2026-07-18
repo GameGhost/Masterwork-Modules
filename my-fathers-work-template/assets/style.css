@@ -67,6 +67,12 @@
     font-weight: 400;
     src: url(font://averia-gruesa-libre-v22-latin_latin-ext-regular) format('woff2');
 }
+@font-face {
+    font-family: 'Germania One';
+    font-style: normal;
+    font-weight: 400;
+    src: url(font://germania-one-v21-latin-regular) format('woff2');
+}
 
 /* Body-copy font everywhere inside a passage/popup; titles/headings override to the display face
    below. Scoped to .mws-passage/.mws-popup-container (not `body`) — this file only ever styles
@@ -77,8 +83,54 @@
 }
 
 .mws-passage-title,
+.mws-passage-subtitle,
 .mws-popup-header {
-    font-family: 'Averia Gruesa Libre', 'Averia Libre', serif;
+    font-family: 'Germania One', 'Averia Gruesa Libre', 'Averia Libre', serif;
+}
+
+/* ── Type scale utilities ─────────────────────────────────────────────────
+ * Base 100% scale = 16pt (set on body by the app shell, see the font-scaling convention note up
+ * top). `text-lg`/`text-xl` are for content that should read larger than body copy by default —
+ * hand-authored (e.g. a name echoed back large in a note popup) or extractor-generated (e.g.
+ * end-of-round/generation popup headers) — sized in `em` so they still track --mws-text-scale. */
+.mws-text.style-text-lg {
+    font-size: 1.25em;
+}
+
+.mws-text.style-text-xl {
+    font-size: 1.75em;
+    font-weight: 700;
+}
+
+/* ── Thin scrollbar utility ───────────────────────────────────────────────
+ * Applied to every internally-scrolling region below (setup's choice section, note/setup popup
+ * content) — a slim mobile-style overlay bar instead of the browser's default chunky one.
+ * scrollbar-width/-color cover Firefox; the ::-webkit-scrollbar-* rules cover Chromium/WebView2/
+ * Safari (what this app actually runs in). */
+.mws-section.style-setup-choices,
+.mws-popup-overlay.layout-note .mws-popup-content,
+.mws-popup-overlay.layout-setup .mws-popup-content {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(230, 220, 195, 0.6) transparent;
+}
+
+.mws-section.style-setup-choices::-webkit-scrollbar,
+.mws-popup-overlay.layout-note .mws-popup-content::-webkit-scrollbar,
+.mws-popup-overlay.layout-setup .mws-popup-content::-webkit-scrollbar {
+    width: 0.35rem;
+}
+
+.mws-section.style-setup-choices::-webkit-scrollbar-track,
+.mws-popup-overlay.layout-note .mws-popup-content::-webkit-scrollbar-track,
+.mws-popup-overlay.layout-setup .mws-popup-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.mws-section.style-setup-choices::-webkit-scrollbar-thumb,
+.mws-popup-overlay.layout-note .mws-popup-content::-webkit-scrollbar-thumb,
+.mws-popup-overlay.layout-setup .mws-popup-content::-webkit-scrollbar-thumb {
+    background-color: rgba(230, 220, 195, 0.6);
+    border-radius: 999px;
 }
 
 /* ── Passage layouts ─────────────────────────────────────────────────────── */
@@ -86,18 +138,312 @@
 /* narration/introduction/event: see the dedicated block further down — these are new template
    content, not copied from cost-of-disease (which leaves narration intentionally unstyled). */
 
-/* setup_player_count: the 2/3/4-player picker. Centered column, large prominent buttons — see the
-   .mws-link.style-button rule below for the buttons themselves. Copied as-is from cost-of-disease. */
-.mws-passage.layout-setup_player_count {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 0.5em;
-    padding: 2rem 1rem;
+/* setup: shared chrome for player-count / name-entry / town-name passages (VIEW-REQUIREMENTS.md §2
+ * "setup passage layout" — one layout, content differs per passage). Real three-layer composite
+ * (§1.2): layouts/setup.mws.yaml's header region supplies the background + border images as plain
+ * `image` nodes, fixed-positioned to the actual browser viewport (not just `.mws-passage`'s own
+ * content-sized box) and z-indexed so they sit behind/above .mws-passage-body regardless of DOM
+ * order — independent of `main.png` having no progress-bar cutout (§1.3 — no progress-bar layer
+ * needed for this layout). Wide-viewport treatment only for this pass — the narrow-viewport
+ * top/bottom-strip treatment (§1.1) is cross-cutting infrastructure shared by every bordered
+ * layout and is deferred to when we build narration/hub, so as not to duplicate it here first. */
+.mws-passage.layout-setup {
+    position: relative;
+    isolation: isolate;
+    min-height: 32rem;
+    padding: 3rem 2.5rem 2.5rem;
+    color: #f2e6c8;
+    font-size: 1.6em;
+    box-sizing: border-box;
 }
 
+/* `position: fixed` (not `absolute`) so these cover the actual browser viewport, not just
+   `.mws-passage`'s own content-sized box — matches §1.1's "background/border stretch to the edge
+   of the viewport" (letterboxed wide-viewport treatment). `isolation: isolate` above still scopes
+   z-index ordering to this stacking context (fixed positioning only affects layout/placement, not
+   which stacking context governs paint order), so this can't bleed above the app's own chrome. */
+.mws-passage.layout-setup .mws-image.style-setup-background,
+.mws-passage.layout-setup .mws-image.style-setup-border {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill;
+    pointer-events: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mws-passage.layout-setup .mws-image.style-setup-background {
+    z-index: -1;
+}
+
+.mws-passage.layout-setup .mws-image.style-setup-border {
+    z-index: 1;
+}
+
+.mws-passage.layout-setup .mws-passage-header {
+    text-align: center;
+}
+
+.mws-passage.layout-setup .mws-passage-title {
+    font-size: 2.5em;
+    letter-spacing: 0.05em;
+    text-shadow: 4px 6px 4px rgba(0, 0, 0, 0.8);
+    color: #ffbc53;
+}
+
+.mws-passage.layout-setup .mws-passage-body {
+    max-width: 40rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem 1rem 1.4rem;
+}
+
+/* Only the choice/button cluster scrolls (screenshot feedback: not the whole body, so the prompt
+   text above stays put). */
+.mws-section.style-setup-choices {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    max-height: 45vh;
+    overflow-y: auto;
+}
+
+/* ── Narrow viewport (§1.1's alternate treatment) ─────────────────────────
+ * Below the app's existing 48rem breakpoint. Earlier attempts at "let the choices section reach
+ * the bottom" kept leaving a second, OUTER page-level scrollbar alongside the section's own —
+ * `min-height: 100vh` is a floor, not a ceiling; a `calc(100vh - Nrem)` guess at the app's own
+ * `.mws-play-chrome` (back/gear bar) height was still just a guess, and if it undershoots, total
+ * page content still exceeds one viewport. Root fix: `Play.razor` renders `.mws-play-chrome` and
+ * `.mws-passage` as *direct children of `<body>`* (confirmed in Masterwork.App.Shared — no
+ * wrapping element between them), so `body` itself can become the exact-fit flex container instead
+ * of guessing any element's height — `.mws-play-chrome` keeps its natural size (flex-shrink: 0),
+ * `.mws-passage.layout-setup` gets exactly whatever's left (flex: 1; min-height: 0), and that in
+ * turn hands all of *its* left-over space to `.style-setup-choices` the same way. Every level has
+ * `overflow: hidden` except the choices section itself (`overflow-y: auto`), so there is exactly
+ * one scrollbar, no matter how tall the chrome bar actually renders. This only touches `body` while
+ * this module's own CSS is actually injected (cleared on leaving /play — see
+ * JsModuleStyleInjector/Play.razor's `StyleInjector.ApplyAsync(null)` calls), so it can't bleed
+ * into the main menu or other pages. Padding is dropped to 0 on both this layout and the base
+ * `.mws-passage` (app.css) — narrow view content should reach the screen edges, per §1.1's "basic
+ * margin for readability" being the content's own job, not the passage shell's. The border crops
+ * its left/right 20% and stretches the remaining 60% to fill the width — hiding the side posts so
+ * only the top/bottom bars show; 20% is a starting point, tune here (or switch to real pre-cropped
+ * top/bottom assets later if the stretch looks soft). */
+@media (max-width: 47.99rem) {
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .mws-play-chrome {
+        flex-shrink: 0;
+    }
+
+    .mws-passage {
+        padding: 0;
+    }
+
+    .mws-passage.layout-setup {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        min-height: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .mws-passage.layout-setup .mws-passage-header {
+        flex-shrink: 0;
+    }
+
+    .mws-passage.layout-setup .mws-passage-body {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        min-height: 0;
+    }
+
+    .mws-section.style-setup-choices {
+        flex: 1;
+        min-height: 0;
+        max-height: none;
+        padding-bottom: 2rem;
+    }
+
+    .mws-passage.layout-setup .mws-image.style-setup-border {
+        transform: scaleX(1.6667);
+    }
+}
+
+/* Inline heading text authored directly in a passage's nodes (as opposed to the passage's own
+   `title:` field) — used where the heading only shows in one branch of a conditional, so it can't
+   live in the always-visible .mws-passage-header (e.g. Setup_07's "The Village"). */
+.mws-text.style-setup-title {
+    display: block;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-shadow: 4px 6px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 0.25em;
+}
+
+/* Darkened, semi-transparent alert row with gold text (screenshot: Setup-03) — {icon:alert} +
+   "Carefully pass the storybook to Player X". */
+.mws-text.style-setup-alert {
+    display: block;
+    background: rgba(0, 0, 0, 0.45);
+    color: #e8c97a;
+    padding: 0.6em 1em;
+    border-radius: 0.3rem;
+}
+
+.mws-input.style-setup-input {
+    display: block;
+    margin: 0.75em auto;
+    max-width: 24rem;
+}
+
+.mws-input.style-setup-input input {
+    display: block;
+    width: 100%;
+    margin-top: 0.35em;
+    padding: 0.6em 0.9em;
+    box-sizing: border-box;
+    text-align: center;
+    background-image: url(image://inputs/input_large);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    color: #2b2016;
+    font-size: 1.1em;
+}
+
+/* Player-count picker buttons (screenshot: Setup-01) — the players_N.png asset fills the entire
+   button (a ::before pseudo-element sized to the button's own full width, no color fill behind
+   it), with the "N Players" label — the link's real text content — flowing below it as a separate
+   flex row, not overlaid on the image. */
+.mws-link.style-btn-players-2,
+.mws-link.style-btn-players-3,
+.mws-link.style-btn-players-4 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 9rem;
+    margin: 0.5em;
+    padding: 0;
+    background: none;
+    border: none;
+    color: #ffbc53;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.12s ease, opacity 0.12s ease;
+}
+
+/* transform/opacity only — never width/height/padding — so the shrink is purely visual and never
+   reflows the other two buttons or the label text sitting below this one. */
+.mws-link.style-btn-players-2:active:not(:disabled),
+.mws-link.style-btn-players-3:active:not(:disabled),
+.mws-link.style-btn-players-4:active:not(:disabled) {
+    transform: scale(0.85);
+    opacity: 0.75;
+}
+
+.mws-link.style-btn-players-2::before,
+.mws-link.style-btn-players-3::before,
+.mws-link.style-btn-players-4::before {
+    content: '';
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 0.4em;
+}
+
+/* Hover text color sampled directly from the players_N.png icon fill (#ffbc53) rather than a
+   guessed gold, so the label and the icon read as the same color family on hover. */
+.mws-link.style-btn-players-2:hover:not(:disabled),
+.mws-link.style-btn-players-3:hover:not(:disabled),
+.mws-link.style-btn-players-4:hover:not(:disabled) {
+    color: #ffff71;
+}
+
+.mws-link.style-btn-players-2:hover:not(:disabled)::before,
+.mws-link.style-btn-players-3:hover:not(:disabled)::before,
+.mws-link.style-btn-players-4:hover:not(:disabled)::before {
+    filter: brightness(1.35);
+}
+
+.mws-link.style-btn-players-2::before { background-image: url(image://inputs/players_2); }
+.mws-link.style-btn-players-3::before { background-image: url(image://inputs/players_3); }
+.mws-link.style-btn-players-4::before { background-image: url(image://inputs/players_4); }
+
 /* ── Popup layouts ───────────────────────────────────────────────────────── */
+
+/* note: simple torn-parchment message popup (screenshots: Setup-02/04/06) — header-free, just body
+   text and a single brown Continue button. Distinct from `setup` (popup, below), which has an
+   icon/pin illustration and a different background asset. */
+
+.mws-popup-overlay.layout-note .mws-popup-container {
+    width: 100%;
+    max-width: 30rem;
+    background-color: transparent;
+    background-image: url(image://backgrounds/popup_paper_torn);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 2.5rem 2rem;
+    color: #2b2016;
+    text-align: center;
+}
+
+.mws-popup-overlay.layout-note .mws-popup-content {
+    max-height: 20rem;
+    overflow-y: auto;
+}
+
+.mws-popup-overlay.layout-note .mws-popup-footer {
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.mws-popup-overlay.layout-note .mws-popup-okay {
+    background-image: url(image://inputs/button_brown);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    appearance: none;
+    color: #2b2016;
+    font-weight: 700;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+    width: 13rem;
+    aspect-ratio: 17 / 6;
+    flex-shrink: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mws-popup-overlay.layout-note .mws-popup-okay:hover:not(:disabled) {
+    filter: brightness(1.15);
+}
 
 /* setup: a torn-paper note pinned to the passage, composed from three chrome images
    (assets/images/popup/) plus whatever image the popup's own header carries. Copied as-is from
@@ -449,7 +795,7 @@
     color: #f2e6c8;
     text-align: center;
     font-size: 2em;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    text-shadow: 4px 6px 4px rgba(0, 0, 0, 0.8);
 }
 
 .mws-passage.layout-score_panel .mws-passage-body {
