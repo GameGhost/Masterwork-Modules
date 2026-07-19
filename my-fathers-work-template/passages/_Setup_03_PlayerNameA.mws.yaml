@@ -15,12 +15,15 @@ nodes:
     style: 'setup-alert'
   - type: 'break'
     style: 'paragraph'
+  - type: 'text'
+    value: 'restext://Setup_NameEntry_LabelA'
+    style: 'setup-input-label'
   - type: 'input'
-    label: 'restext://Setup_NameEntry_LabelA'
     var: 'nameA'
     style: 'setup-input'
   - type: 'link'
     label: 'restext://Common_Continue'
+    style: 'btn-brown'
     target: 'Setup_03_PlayerNameA'
     snapshot: false
   # Torn-parchment note popup (screenshot: Setup-04) — auto-displays once nameA is set, replacing

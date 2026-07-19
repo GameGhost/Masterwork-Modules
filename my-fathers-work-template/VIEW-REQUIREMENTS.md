@@ -31,10 +31,12 @@ mobile/desktop split — no new breakpoint needed):
   progress-bar segment (see §1.4) rather than the full frame. Content extends to the left/right
   edges with just a basic reading margin — no side border art at all in this mode.
 
-**OPEN QUESTION**: the narrow-mode border strip is a *crop* of the same border PNG used in wide
-mode (not a separate asset) — need to confirm the crop rectangle (pixel/percentage row range) is
-consistent enough across all border images to do this with one CSS rule (e.g. `object-position`)
-rather than per-image tuning.
+**Resolved (proven on `setup`)**: not a pre-cropped asset — a pure CSS `transform: scaleX(1.6667)`
+on the border `<img>` under the narrow media query, which crops 20% off each side and stretches the
+remaining 60% to fill the width. `1.6667` is a starting value (20%-off-each-side), easy to retune
+per layout if a different border's usable frame proportions differ; switch to real pre-cropped
+top/bottom assets later only if the stretch starts looking soft. This is now a proven, reusable
+pattern — see §1.7.
 
 ### 1.2 Three-layer composite per view — confirmed
 
@@ -104,39 +106,88 @@ picks the bar-background's clip-path class.
 Last session's rough pass (`layouts/narration.mws.yaml` etc.) used a `foreach` over all 9 labels as
 colored text pills, always showing all 9. That gets replaced by the above.
 
-### 1.5 Type system — resolved
+### 1.5 Type system — resolved and built
 
 - Base scale: 100% = **16pt**, applied via the existing `--mws-text-scale` custom property on
   `body`. Content sized in `em` inherits this; border art (fixed-proportion raster) doesn't respond
   and isn't expected to.
-- Add `text-lg` / `text-xl` utility classes (em-based, relative to the scaled base) — usable both in
-  hand-authored passages/popups and in extractor-generated output (e.g. end-of-round/generation
-  popup headers).
-- New font **`germania-one`** (already added: `assets/fonts/germania-one-v21-latin-regular.{ttf,woff2}`
-  + `germania-one.css`) — use for most title/subtitle styling and button text (matches the
-  metal-embossed look in every screenshot's title bar and the `CONTINUE`/`CONFIRM` button faces).
-  Not yet wired into `style.css` — needs a `font-family` rule on the title/subtitle/button classes.
+- `text-sm` / `text-lg` / `text-xl` utility classes built (`style.css`, em-based, relative to the
+  scaled base) — usable both in hand-authored passages/popups and in extractor-generated output
+  (e.g. end-of-round/generation popup headers). `text-sm` added this session for content that reads
+  better smaller (a long intro paragraph on `setup`'s town-name screen).
+- Font **`germania-one`** wired into `style.css`: `.mws-passage-title`/`.mws-passage-subtitle`/
+  `.mws-popup-header` and every standard graphical button (§1.6) use it. Body copy stays
+  `Averia Libre` throughout, including form inputs (which don't inherit `font-family` from
+  ancestors by default in most browsers — needs an explicit rule on the `<input>` itself, not just
+  its wrapper).
 
-### 1.6 Links, actions, and buttons — new, from `screenshot-summary.md`'s style notes
+### 1.6 Links, actions, and buttons
 
-- **Inline links/popup triggers** always render wrapped in square-bracket images, color keyed to
-  context: **brown** (`inputs/bracket-brown-left.png` / `bracket-brown-right.png`) on any
-  parchment-background surface (narration, introduction, popups, setup, scoring, ending); **blue**
-  (`inputs/bracket-blue-left.png` / `bracket-blue-right.png`) inside hub sections. Hover = brighter
-  text, pressed = darker text, no visited state.
-- **Popup action buttons** (okay/cancel) use one of three graphical button styles with text overlay:
-  `inputs/button_green.png`, `inputs/button_brown.png`, `inputs/button_red.png`. Red is always
-  Cancel unless otherwise noted. Popups in the original app never show a Cancel action, but
-  Masterwork's popup model allows one — needs a sane default style when present. Hover = brighter
-  text (optionally grow slightly, staying centered, content must not shift). Pressed = text returns
-  to normal, button fades to 60% opacity.
-- Need generic utility classes (e.g. `.mws-button-green` / `-brown` / `-red`) so any link or popup
-  trigger can be turned into a standard button, plus the existing bracket-link styling as a second,
-  separate utility axis (a node can be a bracketed inline link, a graphical button, or neither).
-- `inputs/bracket-metal-left.png` / `bracket-metal-right.png` also exist but aren't called out by
-  any screenshot yet — **OPEN QUESTION**: guess is these are for the hub's non-section top-level
-  links (as opposed to blue-bracketed links inside a hub `section`)? Need confirmation or another
-  screenshot.
+**Standard graphical buttons — resolved and built.** One shared rule in `style.css` (keyed by a
+combined selector across every popup Okay button using this shape plus `.mws-link.style-btn-brown`
+/ `-green` / `-red`) covers sizing/shape/states; each color variant only sets its own
+`background-image`/`color`/`text-shadow`:
+- `inputs/button_brown.png`, `inputs/button_green.png`, `inputs/button_red.png` — sizing is
+  **`rem`-based, not `em`** (see §1.7 for why — this was the fix for buttons rendering at different
+  sizes depending on which layout hosted them).
+- Labels are **uppercase** (`text-transform: uppercase`).
+- Hover = `brightness(1.15)` filter + an explicit per-variant `:hover` color (needed because
+  app.css's own `.mws-link:hover` rule otherwise wins on specificity and silently reverts a link
+  button's color to the default link blue).
+- Pressed = `transform: scale(0.85); opacity: 0.75` (transform/opacity only, never
+  width/height/padding, so it can't reflow neighboring content) — applied generally to every
+  `.mws-popup-okay`/`.mws-popup-cancel` and every `.style-btn-{color}` link.
+- Still open: red is built but not yet exercised by any real content (no popup here sets a
+  `cancel:` field yet) — matches the general style note that Red should default to Cancel.
+
+**Inline bracketed links — still not built** (deferred along with narration/hub, per §1.1). Always
+render wrapped in square-bracket images, color keyed to context: **brown**
+(`inputs/bracket-brown-left.png` / `bracket-brown-right.png`) on any parchment-background surface
+(narration, introduction, popups, setup, scoring, ending); **blue**
+(`inputs/bracket-blue-left.png` / `bracket-blue-right.png`) inside hub sections. Hover = brighter
+text, pressed = darker text, no visited state.
+
+`inputs/bracket-metal-left.png` / `bracket-metal-right.png` also exist but aren't called out by any
+screenshot yet — **OPEN QUESTION**: guess is these are for the hub's non-section top-level links (as
+opposed to blue-bracketed links inside a hub `section`)? Need confirmation or another screenshot.
+
+### 1.7 App chrome & single-scroll architecture — proven on `setup`, reuse for every future layout
+
+Built and visually approved (not just planned) on `setup` — this is now the reference
+implementation for every other bordered layout, not something to re-derive per-layout:
+
+- **`.mws-play-chrome` must be `position: fixed; top/left/right: 0`** in module CSS. App.css's
+  default is `position: sticky`, which still occupies its own space in normal document flow and
+  pushes `.mws-passage` down by however tall it renders — `sticky` alone doesn't give a
+  layout-independent top clearance. Safe to override from module CSS since it's only injected while
+  this module is actually playing (cleared on leaving `/play`).
+- **`body { height: 100vh; overflow: hidden; }`** + the layout's own root class as
+  `display: flex; flex-direction: column; height: 100vh; overflow: hidden;` with
+  `padding-top` reserving clearance for the now-fixed chrome bar, and `.mws-passage-body` as the
+  `flex: 1; min-height: 0; overflow-y: auto` child, is what gives a layout **exactly one
+  scrollbar** (never a second, outer page-level one) and lets content scroll internally if it's
+  taller than the available space — unified across wide and narrow, no per-breakpoint duplication
+  needed.
+- **A known app.css bug**: `@media (min-width: 48rem) { .mws-passage { max-width: 40rem;
+  margin: 0 auto; padding: 1.5rem; } }` is a *generic* rule (no `layout-` qualifier) that silently
+  caps every passage's outer box to 640px wide on anything ≥48rem. Every bordered layout needs its
+  own `.mws-passage.layout-{id} { max-width: none; margin: 0; ... }` to override it (2-class
+  selectors beat the bare 1-class one regardless of which sits in a media query) — **worth fixing
+  in app.css directly instead of re-overriding per layout**, flagged under §3.
+- **Popups must reset their own `font-size`.** A popup node's DOM position is a descendant of
+  whatever passage hosts it — `position: fixed` only escapes layout/containing-block, not CSS
+  inheritance — so a popup silently inherits the host passage's own font-size bump (e.g.
+  `setup`'s `1.6em`) unless its own container rule sets an explicit `font-size`. Every popup layout
+  needs this reset; `note`/`note_clear` do it (`font-size: 0.8em` on `.mws-popup-container`).
+- **A `transform` on any ancestor hijacks `position: fixed` descendants.** If an element needs to
+  center itself via `left: 50%; transform: translateX(-50%)` *and* contains a `position: fixed`
+  descendant (e.g. a popup footer that must stay anchored to the true viewport), that transform
+  makes the element the fixed descendant's containing block instead of the viewport — silently
+  breaking the fixed positioning. Center via `left`/`right` insets instead when this applies (see
+  `note`'s narrow-mode container).
+- **Standard graphical buttons must size in `rem`, not `em`**, for the identical reason — sizing
+  otherwise compounds against whatever ambient font-size the *hosting* layout happens to use, so
+  the same button renders at different sizes in a popup vs. inline in a passage. See §1.6.
 
 ---
 
@@ -216,18 +267,19 @@ Screenshot filenames below are exact, from `Masterwork-Design/Reference/Screensh
 - Gold background highlight seen in the screenshot is a Unity-only effect with no corresponding
   asset — per your note, omit it for now.
 
-### `setup` passage layout (player count / name entry / town name) — 🟡 built, needs visual verification
+### `setup` passage layout (player count / name entry / town name) — ✅ built and visually approved
 
-Built: `layouts/setup.mws.yaml` (background + border image layer), `style.css`'s `layout-setup`
-block (three-layer composite, real `leather_large.png`/`main.png` assets), `setup-title`/
-`setup-alert`/`setup-input` content styles, and `btn-players-2/3/4` picker-button styles using the
-real `players_2/3/4.png` icon assets (closes the old "no engine support for image-backed nav
-buttons" TODO — it's a CSS `background-image` on the link, no engine change needed). All
-`Setup_01`–`Setup_07` passages now use `layout: 'setup'`. Verified against the scratch test harness
-(module loads with no new warnings, all asset references resolve, full setup→showcase flow drives
-through) — **not yet viewed in a browser**, so treat as unverified visually until you've looked at
-it. Narrow-viewport top/bottom-strip treatment (§1.1) deliberately deferred — shared infrastructure
-better built once when we hit narration/hub, not duplicated here first.
+Built and confirmed across multiple rounds of screenshot feedback, wide and narrow: real
+three-layer composite (`leather_large.png` background + `main.png` border, `main.png` has no
+progress-bar cutout per §1.3), the single-scrollbar/fixed-chrome architecture (§1.7), narrow-mode
+border crop (§1.1), `setup-alert`/`setup-input`/`setup-input-label` content styles, and
+`btn-players-2/3/4` picker buttons using the real `players_2/3/4.png` assets (the old "no engine
+support for image-backed nav buttons" note was overly cautious — it's a plain CSS `background-image`
+on the link, no engine change needed). All `Setup_01`–`Setup_07` passages use `layout: 'setup'` with
+a shared title mechanism (passage-level `title:` field, not an inline text node, so every setup
+screen's heading is pixel-identical). Input text color `#F2B781`, no native focus outline. Continue
+links use the standard `btn-brown` button (§1.6) everywhere — every setup passage was previously
+missing a `style:` on this link entirely, silently falling back to the default blue underlined link.
 
 - **Reference**: `Setup-01-Player-Count.png`, `Setup-03A/B-Player-Name-Entry*.png`,
   `Setup-05-Town-Name-Entry.png`.
@@ -246,13 +298,20 @@ better built once when we hit narration/hub, not duplicated here first.
   - **Town name entry** (`Setup-05`): same shape as name entry, plus a large "The Village" title.
 - A gold background highlight is again a Unity-only effect — omit per your note.
 
-### `note` (popup) — 🟡 built, needs visual verification
+### `note` / `note_clear` (popup) — ✅ built and visually approved
 
-Built: `layouts/note.mws.yaml` (empty chrome, CSS-only) and `style.css`'s `layout-note` block —
-`popup_paper_torn.png` background, `button_brown.png` Okay button. `Setup_02`'s intro blurb and the
-greeting branches of `Setup_03`–`Setup_07` now render as auto-display `note` popups instead of
-inline passage text (matches the reference screenshots more closely — see below). Same verification
-caveat as `setup` above: passes the scratch harness, not yet seen in a browser.
+Built and confirmed across multiple rounds: `layouts/note.mws.yaml` + `layouts/note_clear.mws.yaml`
+(both empty chrome, CSS-only) and `style.css`'s shared `layout-note`/`layout-note_clear` rules —
+`popup_paper_torn.png` background sized to its own aspect ratio on wide, a viewport-percentage box
+on narrow (§1.7's fixed-footer pattern), standard `btn-brown` Okay button.
+
+**`note_clear` is a new layout not in the original plan** — identical to `note` in every rule except
+the backdrop, which is transparent instead of the standard darkened one (a single
+`.mws-popup-overlay.layout-note_clear { background: transparent; }` override). Used for
+`Setup_02`'s intro popup and the greeting popups of `Setup_03`–`Setup_06`, which show over an
+already-empty `setup`-layout passage — nothing underneath worth dimming. `Setup_07`'s town-name
+confirmation popup uses plain `note` (with backdrop) instead — it's the moment that hands off out of
+the setup flow into real module content, where dimming the passage behind it reads better.
 
 - **Reference**: `Setup-02-Player-Intro.png`, `Setup-04-Player-Greeting.png`,
   `Setup-06-Town-Name-Greeting.png` — three different moments (scenario intro blurb, per-player
@@ -398,8 +457,17 @@ caveat as `setup` above: passes the scratch harness, not yet seen in a browser.
 
 ## 3. Hand-authored passage / extractor-pipeline implications
 
-Flagging up front, per your note, since these are code changes layered on top of the pure
-CSS/asset/layout work above and probably deserve separate scoping:
+**Done this session**: `en-US.restext` written for the template, covering every user-facing string
+in the seven `Setup_*` and four `Scoring_*` hand-authored passages (`Setup_*`/`Scoring_*`/
+`Common_*` keys — one shared `Common_Continue` reused everywhere the label is literally
+"Continue"). None of these passages reference cost-of-disease's extracted restext keys
+(`TCOD_TownName_*`, `PlayerNameIntro_*`, `NameEntryTownConfirm_*`, `Number_*_Lower`) anymore. Still
+to do: copy this restext (plus the passages/layouts themselves) back into the real modules during
+template integration — the keys are namespaced specifically so they won't collide with a target
+module's own extracted restext.
+
+Still open, layered on top of the pure CSS/asset/layout work above and probably deserving separate
+scoping:
 
 1. **`event` layout mapping** (§2 `event`) — decided: fold `ck2` into the `narration` branch of
    `CradleExtractor.InferLayout`, replacing the separate `"event"` layout value with some other
@@ -409,10 +477,15 @@ CSS/asset/layout work above and probably deserve separate scoping:
 2. **Score/tie-break row `section` wrapping** (§2 `score_panel`) — `ScoreEntry`, `TieBreaker1`,
    `TieBreaker2` passage overrides need each player row restructured from flat `text`/`input`
    sequences into `section`-wrapped rows so `player_highlight.png` can be applied as a per-row
-   background. Hand-authored override change, not extractor.
-3. **Radio-group input** (§2 `choice`) — format-level question (new input type vs. styled
+   background. Hand-authored override change, not extractor. Not started — `score_panel`/`ranking`
+   only got their restext keys this session, no visual/structural work yet.
+3. **`Scoring_04_Ranking.mws.yaml` still uses `{icon:crown}`**, which doesn't resolve — the asset is
+   `assets/images/inputs/ranking_crown.png` (an `image://inputs/ranking_crown` reference), not an
+   `icons/` asset. Needs an `image` node instead of the `{icon:...}` inline pattern. Confirmed still
+   present, not yet fixed — will render as a missing-icon placeholder until it is.
+4. **Radio-group input** (§2 `choice`) — format-level question (new input type vs. styled
    booleans); not blocking, but worth a decision before building `choice` for real.
-4. **Standard-name-with-fallback background pattern** (§2 `narration`/`introduction`) —
+5. **Standard-name-with-fallback background pattern** (§2 `narration`/`introduction`) —
    `scenario_narration_background.png` (module-specific) falling back to `backgrounds/leather_large.png`
    (shared) needs to be a supported resolution behavior, not just a convention — **OPEN QUESTION**:
    does `AssetResolver`/CSS already support an image-not-found fallback chain, or does this need new
@@ -420,6 +493,11 @@ CSS/asset/layout work above and probably deserve separate scoping:
    standard — more likely this means the module CSS always references
    `image://scenario_narration_background`, and each real module supplies that file, with
    `leather_large.png` used only in the *template* module where no module-specific art exists)?
+6. **app.css's `.mws-passage` wide-viewport bug** (§1.7) — `@media (min-width: 48rem) {
+   .mws-passage { max-width: 40rem; margin: 0 auto; padding: 1.5rem; } }` has no `layout-`
+   qualifier, so it silently caps every passage to 640px wide unless that specific layout overrides
+   it. `setup` does; every future layout will need to as well unless this gets fixed once in
+   app.css directly instead. Worth doing since it'll otherwise bite every new layout the same way.
 
 ## 4. Not in scope here (app-level, not module content)
 

@@ -14,12 +14,15 @@ nodes:
     style: 'setup-alert'
   - type: 'break'
     style: 'paragraph'
+  - type: 'text'
+    value: 'restext://Setup_NameEntry_LabelB'
+    style: 'setup-input-label'
   - type: 'input'
-    label: 'restext://Setup_NameEntry_LabelB'
     var: 'nameB'
     style: 'setup-input'
   - type: 'link'
     label: 'restext://Common_Continue'
+    style: 'btn-brown'
     target: 'Setup_04_PlayerNameB'
     snapshot: false
   else:

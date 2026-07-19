@@ -4,31 +4,32 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Setup_07_TownNameEntry'
+title: 'restext://Setup_TownName_Title'
 layout: 'setup'
 nodes:
 - type: 'conditional'
   if: 'townname == ""'
   then:
   - type: 'text'
-    value: 'restext://Setup_TownName_Title'
-    style: 'setup-title'
-  - type: 'break'
-  - type: 'text'
     value: 'restext://Setup_TownName_Intro'
+    style: 'text-sm'
   - type: 'break'
     style: 'paragraph'
+  - type: 'text'
+    value: 'restext://Setup_TownName_InputLabel'
+    style: 'setup-input-label'
   - type: 'input'
-    label: 'restext://Setup_TownName_InputLabel'
     var: 'townname'
     style: 'setup-input'
   - type: 'link'
     label: 'restext://Common_Continue'
+    style: 'btn-brown'
     target: 'Setup_07_TownNameEntry'
     snapshot: false
   # Torn-parchment note popup (screenshot: Setup-06) — auto-displays once townname is set.
   else:
   - type: 'popup'
-    layout: 'note_clear'
+    layout: 'note'
     content:
     - type: 'text'
       value: 'restext://Setup_TownName_ConfirmBody1'
