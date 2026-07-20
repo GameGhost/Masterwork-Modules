@@ -1,4 +1,10 @@
-# Bookkeeping variables for the popup showcase demos only — not real game state.
+# Bookkeeping variables for the showcase demos only — not real game state.
+# demoRoundNum: the round selector on Example_Entry (01_Entry.mws.yaml) sets this; every
+# narration/introduction-layout showcase demo reads it for its own roundNum assign, so picking a
+# round on the hub carries through to whichever demo you open next. Initialized to 1 the first time
+# Example_Entry itself renders (see its own conditional) — every Showcase_* passage is only ever
+# reached via a link from there, so it's never read unset.
 variables:
   demoVoiceFeminine: bool
   revealStage: int
+  demoRoundNum: int

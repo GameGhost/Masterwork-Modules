@@ -10,8 +10,99 @@ nodes:
 - type: 'assign'
   var: 'roundLabel'
   expr: '"I-1"'
+- type: 'conditional'
+  if: 'demoRoundNum == 0'
+  then:
+  - type: 'assign'
+    var: 'demoRoundNum'
+    expr: '1'
 - type: 'text'
   value: 'Jump into any layout below to see it styled for real. Each demo links back here.'
+- type: 'break'
+  style: 'paragraph'
+# Drives the progress bar shown by every narration/introduction-layout demo below — each one reads
+# demoRoundNum for its own roundNum assign, so picking a round here carries through to whichever
+# demo you open next. Plain standard nodes in a hub-card section, same as any other hub content —
+# this is a manual-testing aid, not real content, so no dedicated styling.
+- type: 'section'
+  style: 'hub-card'
+  title: 'Round Selector (testing only)'
+  content:
+  - type: 'text'
+    value: 'Currently previewing round {demoRoundNum}. Pick a different one:'
+  - type: 'break'
+  - type: 'link'
+    label: 'I-1'
+    target: 'Example_Entry'
+    snapshot: false
+    onclick:
+    - type: 'assign'
+      var: 'demoRoundNum'
+      expr: '1'
+  - type: 'link'
+    label: 'I-2'
+    target: 'Example_Entry'
+    snapshot: false
+    onclick:
+    - type: 'assign'
+      var: 'demoRoundNum'
+      expr: '2'
+  - type: 'link'
+    label: 'I-3'
+    target: 'Example_Entry'
+    snapshot: false
+    onclick:
+    - type: 'assign'
+      var: 'demoRoundNum'
+      expr: '3'
+  - type: 'link'
+    label: 'II-1'
+    target: 'Example_Entry'
+    snapshot: false
+    onclick:
+    - type: 'assign'
+      var: 'demoRoundNum'
+      expr: '4'
+  - type: 'link'
+    label: 'II-2'
+    target: 'Example_Entry'
+    snapshot: false
+    onclick:
+    - type: 'assign'
+      var: 'demoRoundNum'
+      expr: '5'
+  - type: 'link'
+    label: 'II-3'
+    target: 'Example_Entry'
+    snapshot: false
+    onclick:
+    - type: 'assign'
+      var: 'demoRoundNum'
+      expr: '6'
+  - type: 'link'
+    label: 'III-1'
+    target: 'Example_Entry'
+    snapshot: false
+    onclick:
+    - type: 'assign'
+      var: 'demoRoundNum'
+      expr: '7'
+  - type: 'link'
+    label: 'III-2'
+    target: 'Example_Entry'
+    snapshot: false
+    onclick:
+    - type: 'assign'
+      var: 'demoRoundNum'
+      expr: '8'
+  - type: 'link'
+    label: 'III-3'
+    target: 'Example_Entry'
+    snapshot: false
+    onclick:
+    - type: 'assign'
+      var: 'demoRoundNum'
+      expr: '9'
 - type: 'break'
   style: 'paragraph'
 - type: 'link'

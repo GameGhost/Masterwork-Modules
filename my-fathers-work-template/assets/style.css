@@ -144,17 +144,18 @@
 
 /* ── Passage layouts ─────────────────────────────────────────────────────── */
 
-/* narration/introduction/event: see the dedicated block further down — these are new template
-   content, not copied from cost-of-disease (which leaves narration intentionally unstyled). */
+/* event: see the dedicated block further down — new template content, not copied from
+   cost-of-disease (which leaves narration intentionally unstyled). */
 
-/* setup: shared chrome for player-count / name-entry / town-name passages (VIEW-REQUIREMENTS.md §2
- * "setup passage layout" — one layout, content differs per passage). Three-layer composite (§1.2):
- * layouts/setup.mws.yaml's header region supplies the background + border images as plain `image`
- * nodes, fixed-positioned to the actual viewport and z-indexed so they sit behind/above
- * .mws-passage-body regardless of DOM order. `main.png` has no progress-bar cutout (§1.3), so
- * there's no progress-bar layer here. The narrow-viewport top/bottom-strip border treatment (§1.1)
- * is cross-cutting infrastructure shared by every bordered layout — built here first, still to be
- * reused (not re-derived) when narration/hub land. */
+/* setup/narration/introduction: every bordered passage layout (VIEW-REQUIREMENTS.md §1.2/§1.7's
+ * three-layer composite + single-scroll shell) shares this same structural skeleton — background +
+ * border images from the layout's own header region (style-layer-bg/-border), fixed to the
+ * viewport and z-indexed above/below .mws-passage-body; .mws-play-chrome pinned out of flow;
+ * height: 100vh + flex column + overflow: hidden so there's exactly one scrollbar, never a second
+ * outer one; the narrow-viewport top/bottom-strip border treatment (§1.1). Proven on `setup`
+ * first, now shared rather than re-derived per layout — see §1.7 for why each piece is here.
+ * `main.png` (setup) has no progress-bar cutout (§1.3), so setup alone skips the progress-bar
+ * layer narration/introduction/hub all need. */
 
 /* Fixed to the viewport, out of document flow — app.css's default is `position: sticky`, which
    still occupies its own space in normal flow and pushes .mws-passage down by however tall it
@@ -168,7 +169,7 @@
     z-index: 1002;
 }
 
-/* Defensive rather than load-bearing — .mws-passage.layout-setup below is self-contained at
+/* Defensive rather than load-bearing — every .layout-{bordered} rule below is self-contained at
    height: 100vh with chrome out of flow, so body shouldn't need to scroll at all. Cheap insurance
    against a second, outer page-level scrollbar if anything else ever contributes stray height. */
 body {
@@ -178,14 +179,18 @@ body {
 
 /* max-width: none + margin: 0 override app.css's `@media (min-width: 48rem) { .mws-passage {
    max-width: 40rem; margin: 0 auto; padding: 1.5rem; } }` — a generic (no layout- qualifier) rule
-   that otherwise caps every passage to 640px wide on anything ≥48rem. `.mws-passage.layout-setup`
-   (2 classes) beats bare `.mws-passage` (1 class) regardless of which one sits in a media query.
-   No min-height — an ordinary top-down page, not a modal that needs a reserved box to center
-   within. height: 100vh + flex column + overflow: hidden here, with .mws-passage-body as the
-   flex: 1 / overflow-y: auto child below, is what gives every setup passage exactly one scrollbar
-   and keeps it clear of the now-fixed chrome bar — padding-top accounts for that bar's height
-   (4rem is a starting point, tune here if it doesn't clear the actual rendered height). */
-.mws-passage.layout-setup {
+   that otherwise caps every passage to 640px wide on anything ≥48rem. A 2-class `.layout-{id}`
+   selector beats the bare 1-class one regardless of which sits in a media query (§3 flags this as
+   worth fixing in app.css directly instead of re-overriding per layout). No min-height — an
+   ordinary top-down page, not a modal that needs a reserved box to center within. height: 100vh +
+   flex column + overflow: hidden, with .mws-passage-body as the flex: 1 / overflow-y: auto child
+   below, is what gives every passage exactly one scrollbar and keeps it clear of the fixed chrome
+   bar — padding-top reserves that bar's height (4rem is a starting point, tune here). Color/
+   font-size/padding are the one part that's genuinely per-layout (short labels on setup read fine
+   larger; long-form prose on narration/introduction wants a smaller, more book-like size). */
+.mws-passage.layout-setup,
+.mws-passage.layout-narration,
+.mws-passage.layout-introduction {
     position: relative;
     isolation: isolate;
     display: flex;
@@ -193,20 +198,41 @@ body {
     height: 100vh;
     max-width: none;
     margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.mws-passage.layout-setup {
     padding: 4rem 2.5rem 2.5rem;
     color: #f2e6c8;
     font-size: 1.6em;
-    box-sizing: border-box;
-    overflow: hidden;
+}
+
+/* vh/vw, not rem — the border image itself scales with the viewport (object-fit: fill at
+   100vw/100vh), so padding needs to track it in the same units to stay visually consistent as the
+   window resizes, rather than holding a fixed pixel gap while the border's own proportions shift
+   around it. 10vh 4vw is a tuned value for narration_normal.png/narration_intro.png specifically —
+   not necessarily right for other borders if their frame thickness differs. */
+.mws-passage.layout-narration,
+.mws-passage.layout-introduction {
+    padding: 10vh 4vw;
+    color: #2b2016;
+    font-size: 1.25em;
 }
 
 /* `position: fixed` (not `absolute`) so these cover the actual browser viewport, not just
    `.mws-passage`'s own content-sized box — matches §1.1's "background/border stretch to the edge
    of the viewport" (letterboxed wide-viewport treatment). `isolation: isolate` above still scopes
    z-index ordering to this stacking context (fixed positioning only affects layout/placement, not
-   which stacking context governs paint order), so this can't bleed above the app's own chrome. */
-.mws-passage.layout-setup .mws-image.style-setup-background,
-.mws-passage.layout-setup .mws-image.style-setup-border {
+   which stacking context governs paint order), so this can't bleed above the app's own chrome.
+   Shared by every bordered layout — only the `asset:` on the image node (set per layout.mws.yaml)
+   actually changes what's shown. */
+.mws-passage.layout-setup .mws-image.style-layer-bg,
+.mws-passage.layout-narration .mws-image.style-layer-bg,
+.mws-passage.layout-introduction .mws-image.style-layer-bg,
+.mws-passage.layout-setup .mws-image.style-layer-border,
+.mws-passage.layout-narration .mws-image.style-layer-border,
+.mws-passage.layout-introduction .mws-image.style-layer-border {
     position: fixed;
     inset: 0;
     width: 100vw;
@@ -218,17 +244,24 @@ body {
     margin: 0;
 }
 
-.mws-passage.layout-setup .mws-image.style-setup-background {
+.mws-passage.layout-setup .mws-image.style-layer-bg,
+.mws-passage.layout-narration .mws-image.style-layer-bg,
+.mws-passage.layout-introduction .mws-image.style-layer-bg {
     z-index: -1;
 }
 
-.mws-passage.layout-setup .mws-image.style-setup-border {
+.mws-passage.layout-setup .mws-image.style-layer-border,
+.mws-passage.layout-narration .mws-image.style-layer-border,
+.mws-passage.layout-introduction .mws-image.style-layer-border {
     z-index: 1;
 }
 
-.mws-passage.layout-setup .mws-passage-header {
+.mws-passage.layout-setup .mws-passage-header,
+.mws-passage.layout-narration .mws-passage-header,
+.mws-passage.layout-introduction .mws-passage-header {
     flex-shrink: 0;
     text-align: center;
+    z-index: 5;
 }
 
 .mws-passage.layout-setup .mws-passage-title {
@@ -238,10 +271,37 @@ body {
     color: #ffbc53;
 }
 
-/* The one scrollable region — flex: 1 claims whatever's left after the header inside
-   .layout-setup's fixed 100vh box, and overflow-y: auto engages if a given setup passage's full
-   content (prompt text + the choices section together, on Setup_01; everything, on the others) is
-   taller than that. */
+/* Embossed/carved-metal look, matching the reference title bars — -webkit-text-stroke gives a
+   crisp dark outline (well-supported in the Chromium/WebView2 targets this app actually runs in;
+   text just loses the stroke on a browser without it, still readable), text-shadow adds depth. */
+.mws-passage.layout-narration .mws-passage-title,
+.mws-passage.layout-introduction .mws-passage-title {
+    font-size: 1.6em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #828C93;
+    opacity: 1;
+    text-shadow: 0.04em -0.04em 0.04em rgba(255, 255, 255, 0.8),
+        -0.1em 0 0 #111, 0.1em 0 0 #111, 0 -0.15em 0 #111, 0 0.1em 0 #111, 
+        -0.1em -0.1em 0 #111, 0.1em -0.1em 0 #111, -0.1em 0.1em 0 #111, 0.1em 0.1em 0 #111
+}
+
+.mws-passage.layout-narration .mws-passage-subtitle,
+.mws-passage.layout-introduction .mws-passage-subtitle {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #828C93;
+    opacity: 1;
+    text-shadow:
+        -0.1em 0 0 #111, 0.1em 0 0 #111, 0 -0.15em 0 #111, 0 0.1em 0 #111, 
+        -0.1em -0.1em 0 #111, 0.1em -0.1em 0 #111, -0.1em 0.1em 0 #111, 0.1em 0.1em 0 #111
+}
+
+/* The one scrollable region (setup only — narration/introduction's own .mws-passage-body is
+   position: fixed below, not a flex participant) — flex: 1 claims whatever's left after the header
+   inside the fixed 100vh box, and overflow-y: auto engages if a given setup passage's full content
+   is taller than that. */
 .mws-passage.layout-setup .mws-passage-body {
     flex: 1;
     min-height: 0;
@@ -249,6 +309,137 @@ body {
     max-width: min(96%, 72rem);
     text-align: center;
     padding: 1rem 1rem 2em;
+}
+
+/* panel_parchment.png as its own image node (layouts/narration.mws.yaml), not a CSS background on
+   .mws-passage-body — the asset has a real transparent gutter + drop-shadow baked into its own
+   canvas (measured: solid paper occupies roughly x 5–95% / y 8–92% of the file, not the full
+   image). Using it as background-size: 100% 100% on a flow-positioned, percentage-width,
+   flex-height box meant that gutter resized by a different factor on each axis as the window
+   changed shape, compounding with the box's own padding/margins — the visible card drifted out of
+   alignment with the border in a way plain scaling didn't explain. Fixed positioning (both this
+   and .mws-passage-body below share the exact same box) removes that: the image and the text
+   content it holds are locked to the same coordinates regardless of viewport size, the same way
+   the background/border layers already are. z-index: 0 — above the leather background (-1), below
+   the border (1) and the text content (see .mws-passage-body's own z-index below). */
+.mws-passage.layout-narration .mws-image.style-layer-parchment,
+.mws-passage.layout-introduction .mws-image.style-layer-parchment {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    z-index: 0;
+    object-fit: fill;
+    pointer-events: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mws-passage.layout-narration .mws-image.style-layer-parchment {
+    top: 15vh;
+    height: 82vh;
+}
+
+.mws-passage.layout-introduction .mws-image.style-layer-parchment {
+    top: 15vh;
+    height: 82vh;
+}
+
+/* Same box as .style-layer-parchment above, so the two stay aligned at any viewport size — padding
+   (not the box position itself) insets the actual text so it lands within the parchment's solid
+   paper area instead of over its transparent/shadow edge. z-index: 1 puts text above the parchment
+   image (0) — still below the border (also 1, but the border image has no readable content of its
+   own to be occluded by text, and in practice doesn't overlap this box). Values here are a
+   starting-point estimate from the measured gutter, not pixel-exact — tune together with the
+   .style-layer-parchment box above if either changes. */
+.mws-passage.layout-narration .mws-passage-body,
+.mws-passage.layout-introduction .mws-passage-body {
+    position: fixed;
+    top: 26vh;
+    bottom: 15vh;
+    left: 10vw;
+    right: 7vw;
+    z-index: 1;
+    overflow-y: auto;
+    text-align: left;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(208, 192, 166, 1.00) rgba(63, 31, 21, 1.00);
+}
+
+/* Bracket-wrapped inline links (§1.6) — brown on any parchment surface. Covers both plain `link`
+   nodes (.mws-link) and click-triggered popups (.mws-popup-trigger — a separate class, not
+   .mws-link, per RenderedPopupView.razor) so a popup trigger reads identically to a regular link.
+   Real examples of the latter inside narration exist already: Showcase_Popup_Rounds.mws.yaml's
+   "Preview: End of Round"/"Preview: End of Generation" popups both render as .mws-popup-trigger
+   buttons inline in narration content.
+   Brackets are ::before/::after pseudo-elements (bracket-brown-{left,right}.png, own aspect ratio
+   53:92 ≈ 0.42:1 preserved via background-size: 100% 100% on a box already cut to that ratio) —
+   absolutely positioned within the link's own padding so they don't affect its text layout/line
+   height. text-decoration: none — the brackets alone signal "this is a link", no underline needed
+   (matches the reference screenshots). No :visited state per the style notes. */
+.mws-passage.layout-narration .mws-link,
+.mws-passage.layout-introduction .mws-link,
+.mws-passage.layout-narration .mws-popup-trigger,
+.mws-passage.layout-introduction .mws-popup-trigger {
+    display: inline;
+    position: relative;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0 0.75em;
+    font: inherit;
+    color: #8b4a1f;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mws-passage.layout-narration .mws-link::before,
+.mws-passage.layout-introduction .mws-link::before,
+.mws-passage.layout-narration .mws-popup-trigger::before,
+.mws-passage.layout-introduction .mws-popup-trigger::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.8em;
+    height: 1.5em;
+    background-image: url(image://inputs/bracket-brown-left);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.mws-passage.layout-narration .mws-link::after,
+.mws-passage.layout-introduction .mws-link::after,
+.mws-passage.layout-narration .mws-popup-trigger::after,
+.mws-passage.layout-introduction .mws-popup-trigger::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.8em;
+    height: 1.5em;
+    background-image: url(image://inputs/bracket-brown-right);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.mws-passage.layout-narration .mws-link:hover:not(:disabled),
+.mws-passage.layout-introduction .mws-link:hover:not(:disabled),
+.mws-passage.layout-narration .mws-popup-trigger:hover:not(:disabled),
+.mws-passage.layout-introduction .mws-popup-trigger:hover:not(:disabled) {
+    color: #b06a35;
+}
+
+.mws-passage.layout-narration .mws-link:active:not(:disabled),
+.mws-passage.layout-introduction .mws-link:active:not(:disabled),
+.mws-passage.layout-narration .mws-popup-trigger:active:not(:disabled),
+.mws-passage.layout-introduction .mws-popup-trigger:active:not(:disabled) {
+    color: #5c3216;
 }
 
 /* Layout wrapper only, not a scroll region (see .mws-passage-body above) — groups the three
@@ -262,19 +453,102 @@ body {
     border: none;
 }
 
+/* ── Round progress bar (narration/introduction, §1.4) ────────────────────
+ * Both layers are position: fixed against the true viewport, same as the border itself, so they
+ * stay aligned with the border's built-in bottom cutout regardless of .mws-passage-body's own
+ * scroll position. left/width/bottom/height percentages are a visual estimate of that cutout's
+ * bounds from the border art (main.png/narration_normal.png/narration_intro.png share the same
+ * cutout geometry) — a starting point, tune here once seen live. z-index: 0 sits between the
+ * background layer (-1) and the border layer (1), so the border's own frame (which slightly
+ * overlaps the cutout's edges) still paints on top of both.
+ *
+ * progress/background.png is one wide strip pre-divided into 3 equal color segments (green/amber/
+ * red, one per generation) — clip-path reveals width proportional to roundNum out of 9 total
+ * rounds (round N reveals N/9 of the bar), not tied to the color-segment boundaries directly (they
+ * happen to land on exact thirds anyway, since 9 rounds / 3 generations = 3 rounds each).
+ *
+ * Label overlays (progress/{label}-{glow,diffuse}.png) are square (128×128) — width matches one
+ * bar-slot (100% / 9 ≈ 11.11%) with aspect-ratio: 1 so they preserve their own proportions instead
+ * of being squashed to fit, per §1.4. -glow = current round, -diffuse = a passed round; a round
+ * not yet reached renders no image node at all (see the layout .mws.yaml's conditionals). */
+.mws-passage.layout-narration .mws-image[class*="style-progress-bg-"],
+.mws-passage.layout-introduction .mws-image[class*="style-progress-bg-"] {
+    position: fixed;
+    left: 22.5vw;
+    bottom: 2vh;
+    width: 55vw;
+    height: 4vh;
+    z-index: 0;
+    object-fit: fill;
+    pointer-events: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mws-passage.layout-narration .mws-image[class*="style-progress-label-"],
+.mws-passage.layout-introduction .mws-image[class*="style-progress-label-"] {
+    position: fixed;
+    bottom: 3.8vh;
+    width: 6.3vw;
+    height: 10vh;
+    transform: translateX(-50%) translateY(50%);
+    aspect-ratio: 1;
+    z-index: 0;
+    object-fit: contain;
+    pointer-events: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mws-image.style-progress-bg-1 { clip-path: inset(0 88.89% 0 0); }
+.mws-image.style-progress-bg-2 { clip-path: inset(0 77.78% 0 0); }
+.mws-image.style-progress-bg-3 { clip-path: inset(0 66.67% 0 0); }
+.mws-image.style-progress-bg-4 { clip-path: inset(0 55.56% 0 0); }
+.mws-image.style-progress-bg-5 { clip-path: inset(0 44.44% 0 0); }
+.mws-image.style-progress-bg-6 { clip-path: inset(0 33.33% 0 0); }
+.mws-image.style-progress-bg-7 { clip-path: inset(0 22.22% 0 0); }
+.mws-image.style-progress-bg-8 { clip-path: inset(0 11.11% 0 0); }
+.mws-image.style-progress-bg-9 { clip-path: inset(0 0% 0 0); }
+
+.mws-image.style-progress-label-1 { left: 25.6vw; }
+.mws-image.style-progress-label-2 { left: 31.8vw; }
+.mws-image.style-progress-label-3 { left: 37.9vw; }
+.mws-image.style-progress-label-4 { left: 43.9vw; }
+.mws-image.style-progress-label-5 { left: 50.1vw; }
+.mws-image.style-progress-label-6 { left: 56.1vw; }
+.mws-image.style-progress-label-7 { left: 62.1vw; }
+.mws-image.style-progress-label-8 { left: 68.3vw; }
+.mws-image.style-progress-label-9 { left: 74.4vw; }
+
 /* ── Narrow viewport (§1.1's alternate treatment) ─────────────────────────
  * Below the app's existing 48rem breakpoint — only what genuinely differs from wide (everything
  * else, including the fixed chrome and the scroll architecture above, is already unconditional):
- * side/bottom padding drop to 0 (top clearance for the chrome bar stays); the body needs
+ * side/bottom padding drop to 0 (top clearance for the chrome bar stays); setup's body needs
  * `align-items: center` because a flex container ignores `text-align` (that only centers inline
  * content inside a block box), so flex's own default (`align-items: stretch`, which degrades to
  * `flex-start` for children with an explicit width, like the buttons) would otherwise left-align
- * everything; and the border crops its left/right 20% and stretches the remaining 60% to fill the
- * width, hiding the side posts so only the top/bottom bars show — 20% is a starting point, tune
- * here, or switch to real pre-cropped top/bottom assets later if the stretch looks soft. */
+ * everything — narration/introduction don't need this (their body is plain block prose, no
+ * inline-flex buttons to mis-align); and the border crops its left/right 20% and stretches the
+ * remaining 60% to fill the width, hiding the side posts so only the top/bottom bars show — 20% is
+ * a starting point, tune here, or switch to real pre-cropped top/bottom assets later if the
+ * stretch looks soft.
+ *
+ * The progress-bar layer (narration/introduction only) needs its own recomputed position here:
+ * it's a separate image from the border, so scaling the border via transform doesn't move it to
+ * match — the numbers below are the same 20%-crop/60%-stretch scaleX(1.6667) math applied to the
+ * wide-mode tray position/cell centers from above (new = 50% + (old - 50%) × 1.6667), so the bar
+ * and its labels re-align with where the now-stretched border's cutout actually ends up. Doubly a
+ * starting point — tune together with the border crop percentage above if either changes. */
 @media (max-width: 45.99rem) {
     .mws-passage.layout-setup {
         padding: 4rem 0 0;
+    }
+
+    .mws-passage.layout-narration,
+    .mws-passage.layout-introduction {
+        padding: 10vh 0 0;
     }
 
     .mws-passage.layout-setup .mws-passage-body {
@@ -283,9 +557,32 @@ body {
         align-items: center;
     }
 
-    .mws-passage.layout-setup .mws-image.style-setup-border {
+    .mws-passage.layout-setup .mws-image.style-layer-border,
+    .mws-passage.layout-narration .mws-image.style-layer-border,
+    .mws-passage.layout-introduction .mws-image.style-layer-border {
         transform: scaleX(1.6667);
     }
+
+    .mws-passage.layout-narration .mws-image[class*="style-progress-bg-"],
+    .mws-passage.layout-introduction .mws-image[class*="style-progress-bg-"] {
+        width: 91vw;
+        left: 4.4vw;
+    }
+
+    .mws-passage.layout-narration .mws-image[class*="style-progress-label-"],
+    .mws-passage.layout-introduction .mws-image[class*="style-progress-label-"] {
+        width: 10vw;
+    }
+
+    .mws-image.style-progress-label-1 { left: 9.3vw; }
+    .mws-image.style-progress-label-2 { left: 19.5vw; }
+    .mws-image.style-progress-label-3 { left: 29.7vw; }
+    .mws-image.style-progress-label-4 { left: 39.9vw; }
+    .mws-image.style-progress-label-5 { left: 50vw; }
+    .mws-image.style-progress-label-6 { left: 60.1vw; }
+    .mws-image.style-progress-label-7 { left: 70.3vw; }
+    .mws-image.style-progress-label-8 { left: 80.4vw; }
+    .mws-image.style-progress-label-9 { left: 90.4vw; }
 }
 
 /* Darkened, semi-transparent alert row with gold text (screenshot: Setup-03) — {icon:alert} +
@@ -741,25 +1038,6 @@ body {
 .mws-link.style-btn-red:active:not(:disabled) {
     transform: scale(0.85);
     opacity: 0.75;
-}
-
-/* ── narration / introduction ────────────────────────────────────────────── */
-
-.mws-passage.layout-narration,
-.mws-passage.layout-introduction {
-    background-image: url(image://backgrounds/image_weathered_paper);
-    background-size: cover;
-    background-position: center;
-    color: #2b2016;
-    padding: 2rem 2rem 3rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
-    max-height: 70vh;
-    overflow-y: auto;
-}
-
-.mws-passage.layout-introduction {
-    border: 4px solid #7a1f1f;
 }
 
 /* ── event ────────────────────────────────────────────────────────────────

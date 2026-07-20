@@ -82,29 +82,51 @@ on setup/scoring screens at all, which checks out — those happen outside any g
 yet): `narration_gold.png`, `ending_gold.png`, `ending_normal.png`, `ending_circle_highlight.png`,
 `vignette.png`. Leaving them in the pack for now per your note — fine to stay unreferenced.
 
-### 1.4 Round progress bar (`narration`, `introduction`, `hub_early`/`middle`/`late`, `event`) — confirmed
+### 1.4 Round progress bar (`narration`, `introduction`) — ✅ built and visually approved
 
-Three parts, confirmed against `assets/images/progress/`:
+Built and confirmed against `assets/images/progress/`, driven by an integer `roundNum` session
+variable (1–9) each layout's `footer` region reads (see `layouts/narration.mws.yaml`/
+`introduction.mws.yaml`):
 
 1. **Bar background** (`progress/background.png`) — one wide strip, pre-divided into 3 color
-   segments (green/amber/red — one per generation). Clipped (`clip-path`) to reveal only up to the
-   current round; sized/positioned to match the border, adjusting for aspect-ratio changes caused by
-   viewport size (confirmed — not a set of pre-clipped images).
+   segments (green/amber/red — one per generation). A `switch on: roundNum` with 9 cases picks one
+   of 9 `.style-progress-bg-N` classes, each a `clip-path: inset(0 X% 0 0)` revealing `N/9` of the
+   strip. Both the shared positioning rule (`[class*="style-progress-bg-"]`, `left`/`bottom`/`width`/
+   `height`, all `vh`/`vw`) and the 9 individual `clip-path` rules are `position: fixed` against the
+   true viewport, same box the border image itself occupies, so they stay aligned regardless of
+   `.mws-passage-body`'s own scroll position.
 2. **Per-round label overlays** (`progress/{I1,I2,I3,II1,II2,II3,III1,III2,III3}-{diffuse,glow}.png`)
-   — `-glow` = current round, `-diffuse` = a passed round, unreached rounds get no overlay. Must be
-   sized/positioned to fit their border-cutout slot **while preserving their own aspect ratio** (for
-   legibility) — confirmed, don't stretch these to fill the slot. The `I2-diffuse.png` filename typo
-   from the first draft has been fixed on disk.
-3. **Border cutout** — fixed-aspect image; progress-bar layer must be positioned relative to the
-   same box the border image occupies (not the scrollable content) to stay aligned.
+   — `-glow` = current round, `-diffuse` = a passed round, unreached rounds get no image node at all
+   (a pair of nested `conditional`s per round in the layout `.mws.yaml`, not a single `switch`, since
+   "not yet reached" needs to render nothing). `aspect-ratio: 1` on the shared sizing rule preserves
+   each label's own square proportions instead of stretching it to fill its slot. Each of the 9
+   `.style-progress-label-N` rules sets only its own `left` (in `vw`, tuned per-label against the
+   live bar) — the shared rule must **not** also set `left`, see the specificity note below.
+3. **Border cutout** — the label/bar-background boxes are positioned in the same `vh`/`vw` coordinate
+   space as the border layer itself (§1.7), so they track it as the viewport resizes instead of
+   drifting apart from it.
 
-**Implementation sketch** (unchanged from first draft, still the plan): layout chrome computes
-"reached" rounds from an integer session variable (1–9), renders one `image` node per reached round
-with a `style` selecting a hard-coded CSS position/slot, and a `switch`/`conditional` on round count
-picks the bar-background's clip-path class.
+**Narrow-viewport variant**: a `@media (max-width: 45.99rem)` block recomputes `left`/`width` for
+both the bar background and each of the 9 labels, matching the border's own narrow-mode
+`scaleX(1.6667)` crop-and-stretch (§1.1) so the bar continues to land inside the now-stretched
+cutout. Same shared-rule-vs-per-variant split as the wide rules.
 
-Last session's rough pass (`layouts/narration.mws.yaml` etc.) used a `foreach` over all 9 labels as
-colored text pills, always showing all 9. That gets replaced by the above.
+**CSS specificity pitfall hit and fixed this session** — worth calling out since it'll recur:
+the shared `[class*="style-progress-label-"]` rule briefly also set `left`, "as a placeholder."
+Because that selector (`.mws-passage.layout-narration .mws-image[class*="..."]`) has *higher*
+specificity than the individual `.mws-image.style-progress-label-N { left: ...; }` rules (4
+class-level selector components vs. 2), the shared rule's `left` silently won regardless of which
+label was rendered — every label sat at the same spot no matter the round. **Rule of thumb**: a
+shared/grouped rule must only set properties every variant needs *identically* (position, sizing,
+z-index); the one property that's supposed to differ per variant must never also appear in the
+shared rule, or the per-variant override becomes dead code. A related, separate bug hit earlier in
+the same area: hand-edited per-label narrow-mode overrides missing the comma between grouped
+selector lines (`.layout-introduction .mws-image.style-progress-label-1\n.layout-narration ...`
+without a `,` between them merges two selectors into one invalid combined descendant selector,
+silently matching nothing).
+
+Last session's rough pass (`layouts/narration.mws.yaml` etc., pre-dating this work) used a `foreach`
+over all 9 labels as colored text pills, always showing all 9 — fully replaced by the above.
 
 ### 1.5 Type system — resolved and built
 
@@ -188,6 +210,60 @@ implementation for every other bordered layout, not something to re-derive per-l
 - **Standard graphical buttons must size in `rem`, not `em`**, for the identical reason — sizing
   otherwise compounds against whatever ambient font-size the *hosting* layout happens to use, so
   the same button renders at different sizes in a popup vs. inline in a passage. See §1.6.
+- **A decorative image with a baked-in transparent gutter/drop-shadow must be its own `position:
+  fixed` `image` node, never a CSS `background-image` on a flow-positioned, padding/percentage/
+  flex-sized box.** Hit on `narration`/`introduction`'s parchment content-panel
+  (`backgrounds/panel_parchment.png`, real solid-paper area roughly x 5–95% / y 8–92% of the file,
+  not the full canvas): using it as `background-size: 100% 100%` on `.mws-passage-body` meant the
+  gutter resized by a *different* factor on each axis as the window changed shape, compounding with
+  the box's own padding/margins — the visible card drifted out of alignment with the border in a way
+  plain scaling didn't explain. Fix: add the image as its own `image` node in the layout `.mws.yaml`
+  (`style: 'layer-parchment'`), give it `position: fixed` at the exact same `vh`/`vw` coordinates as
+  `.mws-passage-body` (which is *also* `position: fixed` now, not a flex participant) — both boxes
+  then move together at any viewport size, the same way the background/border layers already do.
+  `z-index` order: background (-1) → parchment (0) → border (1) → text content (1, same layer as the
+  border since it never visually overlaps it). This is now the reference pattern for any future
+  layout with a similar panel-with-gutter asset — see §1.8 for when a box like this should use
+  `vh`/`vw` at all vs. an `aspect-ratio` lock instead.
+
+### 1.8 `vh`/`vw` vs `rem`/`em` — sizing convention
+
+Two independent scaling mechanisms are in play in this file, and mixing them up is what caused most
+of the positioning bugs this session (the parchment gutter drift, the progress-bar padding not
+tracking the border, buttons sized differently per host layout). Pick the unit by asking **what is
+this element's size actually relative to?**
+
+- **`vh`/`vw` — for anything whose size or position must track the *viewport-scaled border/
+  background art*.** The background/border/parchment layers themselves are `100vw`/`100vh` with
+  `object-fit: fill`, so they stretch/squash to the window on every resize (§1.1, §1.2). Anything
+  that has to stay visually locked to a specific spot on that art — the round-progress-bar tray and
+  its 9 labels (§1.4), the parchment content-panel and the `.mws-passage-body` box matched to it
+  (§1.7), a bordered layout's own outer padding (`narration`/`introduction`'s `10vh 4vw` — the
+  border's own frame thickness grows/shrinks with the viewport, so the padding keeping content clear
+  of it has to grow/shrink the same way, or it drifts under/over the frame as the window resizes) —
+  needs `vh`/`vw`, not `rem`/`em`/`%`. A `%` value is relative to the *element's own box*, which
+  usually isn't the same thing as "the viewport the border art is scaled to," so it doesn't
+  substitute for `vh`/`vw` here even though it looks similar.
+- **`rem`/`em` — for text, and for chrome/art that should scale with the reading-text baseline
+  rather than the viewport.** Already documented at the top of `style.css` (the FONT-SCALING
+  CONVENTION note): `em` for anything sizing actual reading text (inherits the already-scaled
+  computed size, so it tracks `--mws-text-scale`); `rem` for chrome that deliberately should *not*
+  grow with text — border widths on small UI chrome, and fixed-aspect button/backing art (§1.6's
+  standard buttons, sized in `rem` specifically so the same button doesn't render at a different
+  size depending on which layout's own font-size happens to host it).
+- **A third case that looks like it needs `vh`/`vw` but doesn't: centered floating dialogs sized to
+  their own art's aspect ratio.** `note`/`note_clear` and the `setup` popup use `rem`-based
+  `max-width` plus `aspect-ratio` locked to their background image's real proportions
+  (`popup_paper_torn.png` is 1291×603, so the container is `aspect-ratio: 1291 / 603`), not `vh`/`vw`
+  fixed coordinates. This is deliberate, not an inconsistency to fix — a popup isn't pinned to a
+  specific spot on a full-viewport border image the way `.mws-passage-body` is; it's a centered
+  dialog that should size itself relative to the space available, and locking its box to the image's
+  own aspect ratio (rather than decoupling into a separate `vh`/`vw`-positioned image node) already
+  prevents the same gutter-distortion problem §1.7's parchment fix solves, without tying the dialog's
+  size to the viewport the way a full-bleed layout needs to be. If a future popup's own art turns
+  out to need viewport-locked positioning instead (e.g. something meant to always sit flush against
+  a screen edge), reach for `vh`/`vw` then — the choice is about what the element's size is
+  *conceptually* relative to, not a blanket rule.
 
 ---
 
@@ -195,7 +271,17 @@ implementation for every other bordered layout, not something to re-derive per-l
 
 Screenshot filenames below are exact, from `Masterwork-Design/Reference/Screenshots/`.
 
-### `narration` — 🟡 needs the layered-frame rework (§1.2–1.4)
+### `narration` — ✅ built and visually approved
+
+Built and confirmed across many rounds of screenshot feedback: real three-layer composite
+(`leather_large.png` background + `panel_parchment.png` content panel, both as separate `position:
+fixed` `image` nodes per §1.7's gutter-alignment fix + `narration_normal.png` border), the
+single-scrollbar/fixed-chrome architecture (§1.7), narrow-mode border crop (§1.1), the real round
+progress bar (§1.4), embossed uppercase title/subtitle styling (multi-directional `text-shadow`
+stack), and brown-bracket inline links (§1.6). Passage outer padding is `10vh 4vw` (§1.8) so it
+tracks the border's own viewport-scaled frame thickness instead of holding a fixed gap. `.mws-image
+.style-layer-parchment` and `.mws-passage-body` share the identical `vh`/`vw` box coordinates so the
+visible text always lands on the solid-paper part of the parchment art regardless of viewport size.
 
 - **Reference**: `Module-01A/B-Preparations*.png`, `Module-03A-Standard-Narration.png`,
   `Module-03B/C` (hidden section behind a guard link, then revealed), `Module-03E` (inline centered
@@ -203,31 +289,37 @@ Screenshot filenames below are exact, from `Masterwork-Design/Reference/Screensh
 - **Structure**: title across the top edge of the frame (not scrolling) → scrollable parchment-page
   content region → round-tracker footer in the border's bottom cutout. Back + pause buttons pinned
   top-left (app chrome, not layout content).
-- **Assets**: border `narration_normal.png`; content background — module-specific
-  `scenario_narration_background.png` with fallback to `backgrounds/leather_large.png` (the
-  standard-name-with-fallback pattern needs support, see §3); content-panel `backgrounds/panel_parchment.png`;
-  scrollbar — no image asset, just a thin CSS bar (white) over a dark track, per the summary notes.
-  Inline links: brown brackets (§1.6).
+- **Assets**: border `narration_normal.png`; content background `backgrounds/leather_large.png`
+  (the module-specific-background-with-fallback idea from the first draft is deferred, see §3 item
+  5 — the template currently just uses the shared leather background directly); content-panel
+  `backgrounds/panel_parchment.png`; scrollbar — no image asset, just a thin CSS bar (white) over a
+  dark track, per the summary notes. Inline links: brown brackets (§1.6).
 - **`Module-01` "Preparations"** is just `narration` with a slightly larger title — no separate
   layout needed, treat as a narration passage.
-- No subtitle appears in any narration screenshot, but the format should still support one (per the
-  summary notes) — confirm subtitle styling once we have a screenshot that uses it (the ending
-  narration, `Module-13`, does use both title and subtitle — see below).
+- No subtitle appears in any narration screenshot, but the format still supports one — confirm
+  subtitle styling once we have a screenshot that uses it (the ending narration, `Module-13`, does
+  use both title and subtitle — see below).
 
-### `introduction` — 🟡 needs full rework against real reference now available
+### `introduction` — ✅ built and visually approved
+
+Same shape as `narration` above, sharing every rule via the combined `.layout-narration,
+.layout-introduction` selectors in `style.css` — only the border asset differs
+(`narration_intro.png`'s ornate gold Celtic-knot border vs. `narration_normal.png`). Built and
+confirmed alongside `narration` in the same rounds of feedback.
 
 - **Reference**: `Module-02A/B-Generation-I-Introduction*.png`.
-- **Structure**: same frame shape as `narration` but with `narration_intro.png`'s ornate gold
-  Celtic-knot border. Content panel is `backgrounds/panel_parchment.png` inside a scrollable area.
-  Links use the same brown-bracket styling as narration.
+- **Structure**: same frame shape as `narration` but with `narration_intro.png`. Content panel is
+  `backgrounds/panel_parchment.png` inside a scrollable area. Links use the same brown-bracket
+  styling as narration.
 - **OPEN QUESTION — title/subtitle prominence**: your note says title/subtitle are *inverted* in
   prominence here vs. elsewhere. Looking at `Module-02A`, "YELLOW FEVER" (large) sits above
   "GENERATION I" (small) — the same large-over-small relationship as the hub screenshots
   ("YELLOW FEVER" / "EARLY YEARS"). I don't see an inversion in the image itself, so I may be
   missing what you meant (a different screenshot? a CSS-class-naming inversion rather than a visual
-  one?) — flagging rather than guessing.
-- **Assets**: background — same standard-name-with-fallback pattern as narration
-  (`scenario_narration_background.png` → `leather_large.png`).
+  one?) — flagging rather than guessing. Still unresolved; the built version uses the same
+  large-title/small-subtitle relationship as narration.
+- **Assets**: background `backgrounds/leather_large.png`, same as narration (see its own entry
+  above re: the deferred module-specific-background-with-fallback idea).
 
 ### `event` (`ck2`-tagged passages) — 🔲 not started — **decision made, needs an extractor change**
 
@@ -498,6 +590,17 @@ scoping:
    qualifier, so it silently caps every passage to 640px wide unless that specific layout overrides
    it. `setup` does; every future layout will need to as well unless this gets fixed once in
    app.css directly instead. Worth doing since it'll otherwise bite every new layout the same way.
+7. **`setup`'s own outer padding is still `rem`-based (`4rem 2.5rem 2.5rem`), not `vh`/`vw`** —
+   unlike `narration`/`introduction`'s padding, which was switched to `vh`/`vw` this session for the
+   §1.8 reason (it needs to track `main.png`'s own viewport-scaled frame thickness the same way
+   `narration_normal.png`'s does). `setup` shares the identical fixed full-bleed border mechanism, so
+   the same reasoning applies to it in principle. **Not changed this session** — `setup` is already
+   ✅ visually approved from its own dedicated round of screenshot tuning, and blindly converting
+   units risks a silent regression (the exact top/side/bottom values need the same live-tune-against-
+   screenshots pass `narration`'s `10vh 4vw` got, not a blind unit conversion) that nothing here can
+   verify without a fresh look. Worth doing next time `setup` is revisited, not urgent on its own.
+   `note`/`note_clear`/the `setup` popup are a **different, intentional** case — see §1.8's third
+   bullet — their `rem` + `aspect-ratio` sizing is correct as-is, not a gap to close.
 
 ## 4. Not in scope here (app-level, not module content)
 

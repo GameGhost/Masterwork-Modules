@@ -1,23 +1,184 @@
-# Shared chrome for narration/introduction/hub_early/hub_middle/hub_late — a purely decorative
-# 9-pip round tracker (I-1..III-3), highlighting whichever pip matches the passage's own
-# `roundLabel` variable. See variables/progress.yaml.
+# Real three-layer composite (VIEW-REQUIREMENTS.md §1.2/§1.7) — background + parchment + border
+# images via the shared style-layer-bg/-parchment/-border hooks also used by setup/introduction
+# (style.css). panel_parchment.png is its own fixed-position image node, not a CSS background on
+# .mws-passage-body — the asset has a sizeable transparent gutter + drop-shadow baked in, so
+# treating it as a background stretched to a flow-positioned, padding/margin-affected box made the
+# gutter resize unpredictably with the window and compound with the body's own padding. .mws-image
+# nodes here are all position: fixed with dedicated CSS, matching the parchment's own coordinates
+# to .mws-passage-body's (also fixed now) so the two stay aligned regardless of viewport size. Footer
+# is the real round progress bar (§1.4): a single background/border/round.mws.yaml-owned decision —
+# `roundNum` is an integer 1-9 (matching the module-scoped session variable a real module's chrome
+# would read; the showcase demo passages assign it directly). The switch picks how much of the bar
+# is revealed; the nine conditionals each add a label overlay (glow = current round, diffuse = a
+# passed round, nothing for a round not yet reached).
 format: 'mws/0.4'
 layout_id: 'narration'
+header:
+- type: 'image'
+  asset: 'image://backgrounds/leather_large'
+  style: 'layer-bg'
+- type: 'image'
+  asset: 'image://backgrounds/panel_parchment'
+  style: 'layer-parchment'
+- type: 'image'
+  asset: 'image://borders/narration_normal'
+  style: 'layer-border'
 footer:
-- type: 'let'
-  var: 'roundLabels'
-  expr: '["I-1", "I-2", "I-3", "II-1", "II-2", "II-3", "III-1", "III-2", "III-3"]'
-- type: 'foreach'
-  var: 'label'
-  in: 'roundLabels'
-  do:
+- type: 'switch'
+  on: 'roundNum'
+  cases:
+  - match: 1
+    nodes:
+    - type: 'image'
+      asset: 'image://progress/background'
+      style: 'progress-bg-1'
+  - match: 2
+    nodes:
+    - type: 'image'
+      asset: 'image://progress/background'
+      style: 'progress-bg-2'
+  - match: 3
+    nodes:
+    - type: 'image'
+      asset: 'image://progress/background'
+      style: 'progress-bg-3'
+  - match: 4
+    nodes:
+    - type: 'image'
+      asset: 'image://progress/background'
+      style: 'progress-bg-4'
+  - match: 5
+    nodes:
+    - type: 'image'
+      asset: 'image://progress/background'
+      style: 'progress-bg-5'
+  - match: 6
+    nodes:
+    - type: 'image'
+      asset: 'image://progress/background'
+      style: 'progress-bg-6'
+  - match: 7
+    nodes:
+    - type: 'image'
+      asset: 'image://progress/background'
+      style: 'progress-bg-7'
+  - match: 8
+    nodes:
+    - type: 'image'
+      asset: 'image://progress/background'
+      style: 'progress-bg-8'
+  - match: 9
+    nodes:
+    - type: 'image'
+      asset: 'image://progress/background'
+      style: 'progress-bg-9'
+- type: 'conditional'
+  if: 'roundNum == 1'
+  then:
+  - type: 'image'
+    asset: 'image://progress/I1-glow'
+    style: 'progress-label-1'
+  else:
   - type: 'conditional'
-    if: 'label == roundLabel'
+    if: 'roundNum > 1'
     then:
-    - type: 'text'
-      value: '{label}'
-      style: 'progress-pip-current'
-    else:
-    - type: 'text'
-      value: '{label}'
-      style: 'progress-pip'
+    - type: 'image'
+      asset: 'image://progress/I1-diffuse'
+      style: 'progress-label-1'
+- type: 'conditional'
+  if: 'roundNum == 2'
+  then:
+  - type: 'image'
+    asset: 'image://progress/I2-glow'
+    style: 'progress-label-2'
+  else:
+  - type: 'conditional'
+    if: 'roundNum > 2'
+    then:
+    - type: 'image'
+      asset: 'image://progress/I2-diffuse'
+      style: 'progress-label-2'
+- type: 'conditional'
+  if: 'roundNum == 3'
+  then:
+  - type: 'image'
+    asset: 'image://progress/I3-glow'
+    style: 'progress-label-3'
+  else:
+  - type: 'conditional'
+    if: 'roundNum > 3'
+    then:
+    - type: 'image'
+      asset: 'image://progress/I3-diffuse'
+      style: 'progress-label-3'
+- type: 'conditional'
+  if: 'roundNum == 4'
+  then:
+  - type: 'image'
+    asset: 'image://progress/II1-glow'
+    style: 'progress-label-4'
+  else:
+  - type: 'conditional'
+    if: 'roundNum > 4'
+    then:
+    - type: 'image'
+      asset: 'image://progress/II1-diffuse'
+      style: 'progress-label-4'
+- type: 'conditional'
+  if: 'roundNum == 5'
+  then:
+  - type: 'image'
+    asset: 'image://progress/II2-glow'
+    style: 'progress-label-5'
+  else:
+  - type: 'conditional'
+    if: 'roundNum > 5'
+    then:
+    - type: 'image'
+      asset: 'image://progress/II2-diffuse'
+      style: 'progress-label-5'
+- type: 'conditional'
+  if: 'roundNum == 6'
+  then:
+  - type: 'image'
+    asset: 'image://progress/II3-glow'
+    style: 'progress-label-6'
+  else:
+  - type: 'conditional'
+    if: 'roundNum > 6'
+    then:
+    - type: 'image'
+      asset: 'image://progress/II3-diffuse'
+      style: 'progress-label-6'
+- type: 'conditional'
+  if: 'roundNum == 7'
+  then:
+  - type: 'image'
+    asset: 'image://progress/III1-glow'
+    style: 'progress-label-7'
+  else:
+  - type: 'conditional'
+    if: 'roundNum > 7'
+    then:
+    - type: 'image'
+      asset: 'image://progress/III1-diffuse'
+      style: 'progress-label-7'
+- type: 'conditional'
+  if: 'roundNum == 8'
+  then:
+  - type: 'image'
+    asset: 'image://progress/III2-glow'
+    style: 'progress-label-8'
+  else:
+  - type: 'conditional'
+    if: 'roundNum > 8'
+    then:
+    - type: 'image'
+      asset: 'image://progress/III2-diffuse'
+      style: 'progress-label-8'
+- type: 'conditional'
+  if: 'roundNum == 9'
+  then:
+  - type: 'image'
+    asset: 'image://progress/III3-glow'
+    style: 'progress-label-9'
