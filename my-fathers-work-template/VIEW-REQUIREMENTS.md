@@ -82,29 +82,40 @@ on setup/scoring screens at all, which checks out — those happen outside any g
 yet): `narration_gold.png`, `ending_gold.png`, `ending_normal.png`, `ending_circle_highlight.png`,
 `vignette.png`. Leaving them in the pack for now per your note — fine to stay unreferenced.
 
-### 1.4 Round progress bar (`narration`, `introduction`) — ✅ built and visually approved
+**Border rendering, updated**: every bordered layout's frame (`main.png` included, even though
+setup has no progress bar) now renders via one shared CSS `border-image` 9-slice, not a per-layout
+`image` node — see §1.7/§1.8's amendment for why, and for how this let the round progress bar
+(§1.4) assume one fixed frame thickness across every layout that has one.
+
+### 1.4 Round progress bar (`narration`, `introduction`, `hub_early`/`middle`/`late`) — ✅ built and visually approved
 
 Built and confirmed against `assets/images/progress/`, driven by an integer `roundNum` session
 variable (1–9) each layout's `footer` region reads (see `layouts/narration.mws.yaml`/
-`introduction.mws.yaml`):
+`introduction.mws.yaml`/`layouts/hub_early.mws.yaml` et al. — hub's own progress bar was built and
+visually confirmed this round, reusing the identical mechanism):
 
 1. **Bar background** (`progress/background.png`) — one wide strip, pre-divided into 3 color
    segments (green/amber/red — one per generation). A `switch on: roundNum` with 9 cases picks one
    of 9 `.style-progress-bg-N` classes, each a `clip-path: inset(0 X% 0 0)` revealing `N/9` of the
-   strip. Both the shared positioning rule (`[class*="style-progress-bg-"]`, `left`/`bottom`/`width`/
-   `height`, all `vh`/`vw`) and the 9 individual `clip-path` rules are `position: fixed` against the
-   true viewport, same box the border image itself occupies, so they stay aligned regardless of
-   `.mws-passage-body`'s own scroll position.
+   strip. Both the shared positioning rule (`[class*="style-progress-bg-"]`) and the 9 individual
+   `clip-path` rules are `position: fixed` against the true viewport, same box the border image
+   itself occupies, so they stay aligned regardless of `.mws-passage-body`'s own scroll position.
 2. **Per-round label overlays** (`progress/{I1,I2,I3,II1,II2,II3,III1,III2,III3}-{diffuse,glow}.png`)
    — `-glow` = current round, `-diffuse` = a passed round, unreached rounds get no image node at all
    (a pair of nested `conditional`s per round in the layout `.mws.yaml`, not a single `switch`, since
-   "not yet reached" needs to render nothing). `aspect-ratio: 1` on the shared sizing rule preserves
-   each label's own square proportions instead of stretching it to fill its slot. Each of the 9
-   `.style-progress-label-N` rules sets only its own `left` (in `vw`, tuned per-label against the
-   live bar) — the shared rule must **not** also set `left`, see the specificity note below.
-3. **Border cutout** — the label/bar-background boxes are positioned in the same `vh`/`vw` coordinate
-   space as the border layer itself (§1.7), so they track it as the viewport resizes instead of
-   drifting apart from it.
+   "not yet reached" needs to render nothing). Each of the 9 `.style-progress-label-N` rules sets
+   only its own `left` (tuned per-label against the live bar) — the shared rule must **not** also
+   set `left`, see the specificity note below.
+3. **Border cutout, fixed-width-aware positioning**: every bordered layout's frame now renders at
+   the same shared fixed `border-image-width` (px, §1.7/§1.8's amendment), so `left`/`width` here
+   use `calc((100vw - Npx) / 100vw * Xvw + Ypx)` instead of a plain `Xvw + Ypx` — the
+   `(100vw - Npx) / 100vw` factor rescales the usual vw-based proportion down to the viewport's
+   *remaining* width after the border's own fixed margins, and `+ Ypx` shifts in by that same fixed
+   margin, so the bar's position stays constant *relative to the border's own inner edge* at any
+   viewport size, the same way a plain vh/vw value keeps something constant relative to the whole
+   viewport. `N`/`Y` differ slightly between hub_* and narration/introduction — same shared
+   border-image-width, but the bar's own cutout position within it isn't pixel-identical between the
+   border assets (style.css's own comment has the exact numbers).
 
 **Narrow-viewport variant**: a `@media (max-width: 45.99rem)` block recomputes `left`/`width` for
 both the bar background and each of the 9 labels, matching the border's own narrow-mode
@@ -210,21 +221,22 @@ implementation for every other bordered layout, not something to re-derive per-l
 - **Standard graphical buttons must size in `rem`, not `em`**, for the identical reason — sizing
   otherwise compounds against whatever ambient font-size the *hosting* layout happens to use, so
   the same button renders at different sizes in a popup vs. inline in a passage. See §1.6.
-- **A decorative image with a baked-in transparent gutter/drop-shadow must be its own `position:
-  fixed` `image` node, never a CSS `background-image` on a flow-positioned, padding/percentage/
-  flex-sized box.** Hit on `narration`/`introduction`'s parchment content-panel
-  (`backgrounds/panel_parchment.png`, real solid-paper area roughly x 5–95% / y 8–92% of the file,
-  not the full canvas): using it as `background-size: 100% 100%` on `.mws-passage-body` meant the
-  gutter resized by a *different* factor on each axis as the window changed shape, compounding with
-  the box's own padding/margins — the visible card drifted out of alignment with the border in a way
-  plain scaling didn't explain. Fix: add the image as its own `image` node in the layout `.mws.yaml`
-  (`style: 'layer-parchment'`), give it `position: fixed` at the exact same `vh`/`vw` coordinates as
-  `.mws-passage-body` (which is *also* `position: fixed` now, not a flex participant) — both boxes
-  then move together at any viewport size, the same way the background/border layers already do.
-  `z-index` order: background (-1) → parchment (0) → border (1) → text content (1, same layer as the
-  border since it never visually overlaps it). This is now the reference pattern for any future
-  layout with a similar panel-with-gutter asset — see §1.8 for when a box like this should use
-  `vh`/`vw` at all vs. an `aspect-ratio` lock instead.
+- **A decorative image with a baked-in transparent gutter/drop-shadow, or a full-viewport border
+  frame, needs `border-image` 9-slicing, not `object-fit: fill`/`background-size: 100% 100%` — and
+  `border-image` can't live on an `image` node, so it moved to a CSS pseudo-element.** Superseded
+  from an earlier version of this note (originally: "give the gutter-y image its own `position:
+  fixed` `image` node, matched to `.mws-passage-body`'s box" — that fixed *alignment* but not the
+  gutter's own internal stretch distortion). Both `narration`/`introduction`'s parchment panel
+  (`backgrounds/panel_parchment.png`) and every layout's outer border frame now render via
+  `border-image`: the slice marks off a fixed region from each source edge, `border-image-width`
+  renders it at a fixed on-screen thickness, and only the flat straight runs between corners
+  stretch — each along a single axis only. `border-image` and an `<img>`'s own `src` bitmap don't
+  mix (the `<img>` still paints its own content, undistorted-border or not), so this lives on a
+  `content: ''` `::before`/`::after` pseudo-element instead — the `style-layer-border`/
+  `style-layer-parchment` `image` nodes have been removed from every layout `.mws.yaml`. `z-index`
+  order unchanged: background (-1) → parchment pseudo-element (0) → border pseudo-element (1) → text
+  content (1, same layer as the border since it never visually overlaps it). See §1.8's amendment
+  for the unit this settled on (fixed `px`, not `vh`/`vw`) and why.
 
 ### 1.8 `vh`/`vw` vs `rem`/`em` — sizing convention
 
@@ -252,18 +264,38 @@ this element's size actually relative to?**
   standard buttons, sized in `rem` specifically so the same button doesn't render at a different
   size depending on which layout's own font-size happens to host it).
 - **A third case that looks like it needs `vh`/`vw` but doesn't: centered floating dialogs sized to
-  their own art's aspect ratio.** `note`/`note_clear` and the `setup` popup use `rem`-based
-  `max-width` plus `aspect-ratio` locked to their background image's real proportions
-  (`popup_paper_torn.png` is 1291×603, so the container is `aspect-ratio: 1291 / 603`), not `vh`/`vw`
-  fixed coordinates. This is deliberate, not an inconsistency to fix — a popup isn't pinned to a
-  specific spot on a full-viewport border image the way `.mws-passage-body` is; it's a centered
-  dialog that should size itself relative to the space available, and locking its box to the image's
-  own aspect ratio (rather than decoupling into a separate `vh`/`vw`-positioned image node) already
-  prevents the same gutter-distortion problem §1.7's parchment fix solves, without tying the dialog's
-  size to the viewport the way a full-bleed layout needs to be. If a future popup's own art turns
-  out to need viewport-locked positioning instead (e.g. something meant to always sit flush against
-  a screen edge), reach for `vh`/`vw` then — the choice is about what the element's size is
+  their own art's aspect ratio.** `note`/`note_clear`'s container no longer even needs a fixed
+  `aspect-ratio` (see the amendment below — it moved to `border-image`, so `height: auto` sizes to
+  content now), but the underlying point still holds: a popup isn't pinned to a specific spot on a
+  full-viewport border image the way `.mws-passage-body` is, so it doesn't need viewport-locked
+  coordinates at all — `rem`-based `max-width` plus `height: auto` already lets it size itself
+  relative to the space available. If a future popup's own art needs to sit flush against a screen
+  edge instead, reach for `vh`/`vw` then — the choice is about what the element's size is
   *conceptually* relative to, not a blanket rule.
+
+**Amendment — border-image sizing settled on fixed `px`, not `vh`/`vw`, and this section's earlier
+guidance is superseded for that specific case.** Every bordered layout's outer frame, and
+narration/introduction's parchment panel, moved to `border-image` 9-slicing this round (§1.2/§1.3/
+§1.7's own amendment) — `object-fit: fill`/`background-size: 100% 100%` stretched a border's corners
+and straight edges by whatever non-uniform factor the current viewport aspect ratio produced;
+`border-image` keeps each corner at a fixed on-screen thickness and only stretches the straight
+edge runs between them, each along a single axis. That fix only works cleanly if
+`border-image-width` is a *single* value shared across both axes (or literally the same computed
+`px` regardless of viewport) — pairing `vh` for top/bottom with `vw` for left/right (this section's
+original recommendation) still leaves the four *corner* regions scaling non-uniformly, since `vh`
+and `vw` track different axes at different rates unless the viewport happens to be square. The
+fix actually shipped: every bordered layout (`setup` included) now shares one fixed-`px`
+`border-image-width`/`-slice`, and the content-clearance padding/box insets that have to stay
+flush against that border (passage padding, the parchment panel's own box, `.mws-passage-body`'s
+inset) moved to matching fixed `px` alongside it — a `vh`/`vw` clearance value paired with a
+now-fixed-`px` border would drift out of sync with it as the viewport resized, the same class of
+problem this section originally used `vh`/`vw` to solve, just inverted (now the border is the fixed
+reference, not the viewport). The round progress bar (§1.4) still needs to track the *viewport*
+proportionally (a bar filling `N/9` of the available width), so it uses `calc()` to combine both:
+`(100vw - border-margin-px) / 100vw * Xvw + border-margin-px` rescales a normal vw-based proportion
+down to the space remaining after the border's fixed margins, then shifts in by that same fixed
+margin — the general shape to reach for whenever something needs to be proportional to the
+viewport **and** flush against a fixed-thickness border at the same time.
 
 ---
 
@@ -274,14 +306,13 @@ Screenshot filenames below are exact, from `Masterwork-Design/Reference/Screensh
 ### `narration` — ✅ built and visually approved
 
 Built and confirmed across many rounds of screenshot feedback: real three-layer composite
-(`leather_large.png` background + `panel_parchment.png` content panel, both as separate `position:
-fixed` `image` nodes per §1.7's gutter-alignment fix + `narration_normal.png` border), the
-single-scrollbar/fixed-chrome architecture (§1.7), narrow-mode border crop (§1.1), the real round
-progress bar (§1.4), embossed uppercase title/subtitle styling (multi-directional `text-shadow`
-stack), and brown-bracket inline links (§1.6). Passage outer padding is `10vh 4vw` (§1.8) so it
-tracks the border's own viewport-scaled frame thickness instead of holding a fixed gap. `.mws-image
-.style-layer-parchment` and `.mws-passage-body` share the identical `vh`/`vw` box coordinates so the
-visible text always lands on the solid-paper part of the parchment art regardless of viewport size.
+(`leather_large.png` background image node + a `panel_parchment.png` content-panel `border-image`
+and a `narration_normal.png` outer-frame `border-image`, both CSS pseudo-elements — §1.7/§1.8's
+amendment), the single-scrollbar/fixed-chrome architecture (§1.7), narrow-mode border crop (§1.1),
+the real round progress bar (§1.4), embossed uppercase title/subtitle styling (multi-directional
+`text-shadow` stack), and brown-bracket inline links (§1.6). Passage outer padding, the parchment
+panel's own box, and `.mws-passage-body`'s inset are all fixed `px` now (§1.8's amendment) so they
+stay flush against the border's own now-fixed-`px` thickness at any viewport size.
 
 - **Reference**: `Module-01A/B-Preparations*.png`, `Module-03A-Standard-Narration.png`,
   `Module-03B/C` (hidden section behind a guard link, then revealed), `Module-03E` (inline centered
@@ -343,21 +374,37 @@ confirmed alongside `narration` in the same rounds of feedback.
   it need to be re-triggerable (e.g. on `StepBack`/replay)? Assuming "plays once per render" is fine
   unless you say otherwise.
 
-### `hub_early` / `hub_middle` / `hub_late` — 🟡 needs border-image + real progress bar
+### `hub_early` / `hub_middle` / `hub_late` — ✅ built and visually approved
+
+Built and confirmed: real three-layer composite (`leather_splattered.png` background + a
+`border-image` outer frame on a `.mws-passage::after` pseudo-element, §1.2/§1.7/§1.8 — no parchment
+panel, unlike narration/introduction: content is a left-aligned, scrollable stack of individually
+bordered `hub-card` sections directly over the leather background), the single-scrollbar/
+fixed-chrome architecture (§1.7) with a real `scroll_bar_lg.png` scrollbar-thumb image, narrow-mode
+border crop (§1.1), the real round progress bar (§1.4, using the same fixed-`px`-aware `calc()`
+positioning as narration/introduction), the same embossed title/subtitle treatment as narration/
+introduction, and blue-bracket inline links (§1.6). Each `hub-card` section frame
+(`borders/hub_section.png`) is its own `border-image` 9-slice too — its interior is fully
+transparent (no baked-in gutter/shadow the way `panel_parchment.png` has), filled with a plain
+translucent color behind the border-image layer for legibility over the leather background.
 
 - **Reference**: `Module-05A/B-Hub-Early-Years*.png` (red), `Module-06-Hub-Middle-Years.png` (blue),
   `Module-07-Hub-Late-Years.png` (brown).
 - **Structure**: title + subtitle (e.g. "Yellow Fever" / "Early Years") pinned to the top → 
   scrollable vertical stack of bordered sections → round-tracker footer in the border cutout.
-- **Assets**: background `backgrounds/leather_splattered.png`; section border
-  `borders/hub_section.png` (also carries its own transparent dark background — no separate flat
-  panel color needed); scrollbar `inputs/scroll_bar_lg.png` (a real image asset here, unlike
-  narration's plain-CSS scrollbar); inline links use **blue** brackets
-  (`bracket-blue-left/right.png`), matching hub's distinct link-color rule from §1.6.
+- **Assets**: background `backgrounds/leather_splattered.png`; outer border `hub_red.png` /
+  `hub_blue.png` / `hub_brown.png` (per-generation, same shared `border-image` slice/width as every
+  other bordered layout — §1.8's amendment); section border `borders/hub_section.png`; scrollbar
+  `inputs/scroll_bar_lg.png` (a real image asset here, unlike narration's plain-CSS scrollbar);
+  inline links use **blue** brackets (`bracket-blue-left/right.png`), matching hub's distinct
+  link-color rule from §1.6.
 - Sections are not collapsible — full text always visible, matches using `section` nodes with
-  `collapsed: false` (as last session's rough pass already did).
+  `collapsed: false`.
 - Gold background highlight seen in the screenshot is a Unity-only effect with no corresponding
   asset — per your note, omit it for now.
+- The showcase index (`Example_Entry`/`01_Entry.mws.yaml`) itself uses `layout: 'hub_early'` and was
+  restructured into grouped `hub-card` sections (Story Passages / Hub Passages / Popups) with an
+  explicit round selector, so it doubles as an extra live example of this layout's card styling.
 
 ### `setup` passage layout (player count / name entry / town name) — ✅ built and visually approved
 
@@ -389,6 +436,22 @@ missing a `style:` on this link entirely, silently falling back to the default b
     Continue.
   - **Town name entry** (`Setup-05`): same shape as name entry, plus a large "The Village" title.
 - A gold background highlight is again a Unity-only effect — omit per your note.
+
+### `setup_scenario` — 🔲 not started — newly identified gap, not in the original catalog
+
+`00_Preparations.mws.yaml` (title "Setup - Scenario Box") is real content, not a throwaway
+placeholder — it's the actual bridge passage the setup flow (`_Setup_07_TownNameEntry.mws.yaml`)
+hands off to before reaching the showcase hub, matching the reference app's real "get ready to
+play" moment between finishing setup and starting round 1. It correctly uses `layout:
+'setup_scenario'` — confirmed against `cost-of-disease/layouts/setup_scenario.mws.yaml` (a real,
+distinct layout id there too, still an unbuilt stub in that module as well) — this is **not** the
+same thing as this template's own `setup` layout (that one covers player-count/name/town-entry
+chrome specifically; cost-of-disease's own `layout: 'setup'` is actually a *popup* layout, an
+unrelated reuse of the word). Since no `layouts/setup_scenario.mws.yaml` exists in this module yet,
+the passage currently renders with no bordered chrome at all — flagging as a real gap this session's
+question surfaced, not fixing blind: needs its own small round of the same three-layer-composite
+treatment (likely `main.png`/`leather_large.png`, matching its sibling setup screens, but not
+confirmed against a reference screenshot yet) before it can be marked built.
 
 ### `note` / `note_clear` (popup) — ✅ built and visually approved
 

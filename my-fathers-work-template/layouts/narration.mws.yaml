@@ -1,28 +1,23 @@
-# Real three-layer composite (VIEW-REQUIREMENTS.md §1.2/§1.7) — background + parchment + border
-# images via the shared style-layer-bg/-parchment/-border hooks also used by setup/introduction
-# (style.css). panel_parchment.png is its own fixed-position image node, not a CSS background on
-# .mws-passage-body — the asset has a sizeable transparent gutter + drop-shadow baked in, so
-# treating it as a background stretched to a flow-positioned, padding/margin-affected box made the
-# gutter resize unpredictably with the window and compound with the body's own padding. .mws-image
-# nodes here are all position: fixed with dedicated CSS, matching the parchment's own coordinates
-# to .mws-passage-body's (also fixed now) so the two stay aligned regardless of viewport size. Footer
-# is the real round progress bar (§1.4): a single background/border/round.mws.yaml-owned decision —
-# `roundNum` is an integer 1-9 (matching the module-scoped session variable a real module's chrome
-# would read; the showcase demo passages assign it directly). The switch picks how much of the bar
-# is revealed; the nine conditionals each add a label overlay (glow = current round, diffuse = a
-# passed round, nothing for a round not yet reached).
+# Real three-layer composite (VIEW-REQUIREMENTS.md §1.2/§1.7/§1.8) — leather background image node
+# (style-layer-bg, shared hook with setup/introduction/hub) plus TWO border-image 9-slices applied
+# via CSS pseudo-elements, not image nodes: the outer frame (narration_normal.png, on
+# `.mws-passage::after`) and the parchment content panel (panel_parchment.png, on
+# `.mws-passage-body`'s own border — see style.css). Both used to be separate `image` nodes
+# stretched via object-fit: fill, which non-uniformly squashed every frame edge (and, for the
+# parchment specifically, its baked-in transparent gutter + drop-shadow) as the viewport resized.
+# border-image only stretches each straight edge along its own single axis, and keeps corners at a
+# constant on-screen thickness — see style.css's own comment for the full reasoning and the
+# measured slice values. Footer is the real round progress bar (§1.4): `roundNum` is an integer 1-9
+# (matching the module-scoped session variable a real module's chrome would read; the showcase demo
+# passages assign it directly). The switch picks how much of the bar is revealed; the nine
+# conditionals each add a label overlay (glow = current round, diffuse = a passed round, nothing
+# for a round not yet reached).
 format: 'mws/0.4'
 layout_id: 'narration'
 header:
 - type: 'image'
   asset: 'image://backgrounds/leather_large'
   style: 'layer-bg'
-- type: 'image'
-  asset: 'image://backgrounds/panel_parchment'
-  style: 'layer-parchment'
-- type: 'image'
-  asset: 'image://borders/narration_normal'
-  style: 'layer-border'
 footer:
 - type: 'switch'
   on: 'roundNum'

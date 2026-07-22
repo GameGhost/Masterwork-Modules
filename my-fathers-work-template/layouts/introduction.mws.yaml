@@ -1,18 +1,13 @@
 # Same shape as narration.mws.yaml — only the border asset differs (narration_intro.png's ornate
-# gold Celtic-knot border vs. narration_normal.png). See narration.mws.yaml for the progress-bar
-# mechanism's own comment.
+# gold Celtic-knot border vs. narration_normal.png). Both the outer frame and the parchment panel
+# are CSS border-image pseudo-elements now, not image nodes — see narration.mws.yaml and style.css
+# for the full reasoning. See narration.mws.yaml for the progress-bar mechanism's own comment.
 format: 'mws/0.4'
 layout_id: 'introduction'
 header:
 - type: 'image'
   asset: 'image://backgrounds/leather_large'
   style: 'layer-bg'
-- type: 'image'
-  asset: 'image://backgrounds/panel_parchment'
-  style: 'layer-parchment'
-- type: 'image'
-  asset: 'image://borders/narration_intro'
-  style: 'layer-border'
 footer:
 - type: 'switch'
   on: 'roundNum'

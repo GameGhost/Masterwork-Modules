@@ -1,29 +1,40 @@
 # Was a one-link stub ("click here to start scoring"). Now the layout showcase index — the "main
-# play passages between setup and scoring" bridge. Every demo below links back here; the last link
-# continues into the existing scoring flow (Scoring_01_ScoreEntry.mws.yaml etc.), unchanged.
+# play passages between setup and scoring" bridge. Every demo below links back here (either via its
+# own explicit "Back to Showcase" link, or — for the hub demos — the "Click here..." link that's
+# itself part of what's being demoed); the final link continues into the existing scoring flow
+# (Scoring_01_ScoreEntry.mws.yaml etc.), unchanged. Demo links deliberately have no `style:` — the
+# bracket-link look (inherited from the hub_early layout this passage itself uses) already reads
+# fine for a plain list of choices, and matches every other hub-card link on this page instead of
+# introducing a second, mismatched button look.
 ---
 format: 'mws/0.4'
 passage_id: 'Example_Entry'
 title: 'Layout Showcase'
 layout: 'hub_early'
 nodes:
-- type: 'assign'
-  var: 'roundLabel'
-  expr: '"I-1"'
 - type: 'conditional'
   if: 'demoRoundNum == 0'
   then:
   - type: 'assign'
     var: 'demoRoundNum'
     expr: '1'
+# This passage's own layout (hub_early) switches its footer's progress bar on `roundNum`, same as
+# every other demo — without this assign, `roundNum` keeps whatever stale value a previous demo
+# passage last set it to, so the round-selector's onclick links (below) visibly update
+# `demoRoundNum`/the "Currently previewing round N" text but the progress bar looked stuck (it
+# wasn't a stale-render bug — RenderInPlace re-evaluates chrome fresh on every navigation — the
+# chrome was just switching on a variable this passage never re-derived).
+- type: 'assign'
+  var: 'roundNum'
+  expr: 'demoRoundNum'
 - type: 'text'
   value: 'Jump into any layout below to see it styled for real. Each demo links back here.'
 - type: 'break'
   style: 'paragraph'
-# Drives the progress bar shown by every narration/introduction-layout demo below — each one reads
-# demoRoundNum for its own roundNum assign, so picking a round here carries through to whichever
-# demo you open next. Plain standard nodes in a hub-card section, same as any other hub content —
-# this is a manual-testing aid, not real content, so no dedicated styling.
+# Drives the progress bar shown by every narration/introduction/hub_*-layout demo below — each one
+# reads demoRoundNum for its own roundNum assign, so picking a round here carries through to
+# whichever demo you open next. Plain standard nodes in a hub-card section, same as any other hub
+# content — this is a manual-testing aid, not real content, so no dedicated styling of its own.
 - type: 'section'
   style: 'hub-card'
   title: 'Round Selector (testing only)'
@@ -105,49 +116,68 @@ nodes:
       expr: '9'
 - type: 'break'
   style: 'paragraph'
-- type: 'link'
-  label: 'Narration — short'
-  target: 'Showcase_Narration_Short'
-  style: 'button'
-- type: 'link'
-  label: 'Narration — long (scroll test)'
-  target: 'Showcase_Narration_Long'
-  style: 'button'
-- type: 'link'
-  label: 'Introduction'
-  target: 'Showcase_Introduction'
-  style: 'button'
-- type: 'link'
-  label: 'Event'
-  target: 'Showcase_Event'
-  style: 'button'
-- type: 'link'
-  label: 'Hub — early years'
-  target: 'Showcase_Hub_Early'
-  style: 'button'
-- type: 'link'
-  label: 'Hub — middle years'
-  target: 'Showcase_Hub_Middle'
-  style: 'button'
-- type: 'link'
-  label: 'Hub — late years (scroll test)'
-  target: 'Showcase_Hub_Late'
-  style: 'button'
-- type: 'link'
-  label: 'Popups — end of round / end of generation'
-  target: 'Showcase_Popup_Rounds'
-  style: 'button'
-- type: 'link'
-  label: 'Popup — choice'
-  target: 'Showcase_Popup_Choice'
-  style: 'button'
-- type: 'link'
-  label: 'Popup — reveal countdown'
-  target: 'Showcase_Popup_RevealCountdown'
-  style: 'button'
+- type: 'section'
+  style: 'hub-card'
+  title: 'Story Passages'
+  content:
+  - type: 'text'
+    value: 'Full-frame narration, introduction, and special-event content.'
+  - type: 'break'
+  - type: 'link'
+    label: 'Narration — short'
+    target: 'Showcase_Narration_Short'
+  - type: 'break'
+  - type: 'link'
+    label: 'Narration — long (scroll test)'
+    target: 'Showcase_Narration_Long'
+  - type: 'break'
+  - type: 'link'
+    label: 'Introduction'
+    target: 'Showcase_Introduction'
+  - type: 'break'
+  - type: 'link'
+    label: 'Event'
+    target: 'Showcase_Event'
+- type: 'section'
+  style: 'hub-card'
+  title: 'Hub Passages'
+  content:
+  - type: 'text'
+    value: 'The per-generation location hub — card stack, blue links, real progress bar.'
+  - type: 'break'
+  - type: 'link'
+    label: 'Hub — early years'
+    target: 'Showcase_Hub_Early'
+  - type: 'break'
+  - type: 'link'
+    label: 'Hub — middle years'
+    target: 'Showcase_Hub_Middle'
+  - type: 'break'
+  - type: 'link'
+    label: 'Hub — late years (scroll test)'
+    target: 'Showcase_Hub_Late'
+- type: 'section'
+  style: 'hub-card'
+  title: 'Popups'
+  content:
+  - type: 'text'
+    value: 'End-of-round/generation, a choice dialog, and the reveal-countdown flow.'
+  - type: 'break'
+  - type: 'link'
+    label: 'Popups — end of round / end of generation'
+    target: 'Showcase_Popup_Rounds'
+  - type: 'break'
+  - type: 'link'
+    label: 'Popup — choice'
+    target: 'Showcase_Popup_Choice'
+  - type: 'break'
+  - type: 'link'
+    label: 'Popup — reveal countdown'
+    target: 'Showcase_Popup_RevealCountdown'
 - type: 'break'
   style: 'paragraph'
 - type: 'link'
-  label: 'Continue to scoring →'
+  label: 'Continue →'
   target: 'ScoreEntry'
   snapshot: true
+  style: 'btn-green'

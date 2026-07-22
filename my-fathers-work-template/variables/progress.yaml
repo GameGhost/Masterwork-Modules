@@ -1,9 +1,7 @@
 # Purely decorative for this template — no real round-by-round game state being simulated here.
-# roundLabel: read by hub_early/hub_middle/hub_late's still-rough-pass footer (pip highlight).
-# roundNum: read by narration/introduction's real progress-bar chrome (layouts/narration.mws.yaml)
-# — an integer 1-9, "reached" rounds are 1..roundNum. Each demo passage assigns whatever round
-# makes sense for its own screenshot, or (narration/introduction demos) reads demoRoundNum — see
-# variables/showcase.yaml — so the showcase hub's round selector can drive them live.
+# roundNum: read by narration/introduction/hub_early/hub_middle/hub_late's real progress-bar
+# chrome (layouts/narration.mws.yaml et al.) — an integer 1-9, "reached" rounds are 1..roundNum.
+# Each demo passage reads demoRoundNum — see variables/showcase.yaml — so the showcase hub's round
+# selector can drive every layout's progress bar live.
 variables:
-  roundLabel: 'string'
   roundNum: int
