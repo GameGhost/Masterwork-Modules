@@ -437,21 +437,26 @@ missing a `style:` on this link entirely, silently falling back to the default b
   - **Town name entry** (`Setup-05`): same shape as name entry, plus a large "The Village" title.
 - A gold background highlight is again a Unity-only effect — omit per your note.
 
-### `setup_scenario` — 🔲 not started — newly identified gap, not in the original catalog
+### `setup_scenario` — resolved, not a real layout need
 
-`00_Preparations.mws.yaml` (title "Setup - Scenario Box") is real content, not a throwaway
-placeholder — it's the actual bridge passage the setup flow (`_Setup_07_TownNameEntry.mws.yaml`)
-hands off to before reaching the showcase hub, matching the reference app's real "get ready to
-play" moment between finishing setup and starting round 1. It correctly uses `layout:
-'setup_scenario'` — confirmed against `cost-of-disease/layouts/setup_scenario.mws.yaml` (a real,
-distinct layout id there too, still an unbuilt stub in that module as well) — this is **not** the
-same thing as this template's own `setup` layout (that one covers player-count/name/town-entry
-chrome specifically; cost-of-disease's own `layout: 'setup'` is actually a *popup* layout, an
-unrelated reuse of the word). Since no `layouts/setup_scenario.mws.yaml` exists in this module yet,
-the passage currently renders with no bordered chrome at all — flagging as a real gap this session's
-question surfaced, not fixing blind: needs its own small round of the same three-layer-composite
-treatment (likely `main.png`/`leather_large.png`, matching its sibling setup screens, but not
-confirmed against a reference screenshot yet) before it can be marked built.
+`00_Preparations.mws.yaml` was using `layout: 'setup_scenario'` (a genuine, distinct layout id —
+confirmed against `cost-of-disease/layouts/setup_scenario.mws.yaml`, a real if still-unbuilt stub
+there too), which read as a gap needing its own chrome built. Checked against the actual reference
+screenshot (`Module-01A-Preparations.png`) instead of assuming: it's visually identical to any
+other `narration` passage — same border/parchment/progress-bar chrome (footer shows "I-1"), just a
+slightly larger title — matching what this doc's own `narration` entry already said about
+`Module-01`. Repointed to `layout: 'narration'` directly; `setup_scenario` as a distinct built
+layout isn't needed by this template after all.
+
+`00_Preparations` is also now the one live example of `image` node `size`/`align` (format spec §6)
+in this module — the reference screenshot shows the scenario-box art centered and modestly sized
+mid-paragraph. Investigating this surfaced a real render gap in the code repo, now fixed: the
+extractor and format reader already carried `size`/`align` correctly through the full pipeline
+(`ImageNode` → `RenderedImage`), but `RenderedImageView.razor` silently dropped both when
+generating the `<img>` tag. Fixed there (mirrors `RenderedTextView.razor`'s existing `AlignClass`
+pattern; `size` applies as an inline `width: {N}px` — the most direct reading of the format spec's
+"unitless size hint, units unspecified") plus matching `.mws-image.align-*` rules added to
+`app.css`. Full `dotnet test` suite (526 tests) still green.
 
 ### `note` / `note_clear` (popup) — ✅ built and visually approved
 
@@ -478,7 +483,24 @@ the setup flow into real module content, where dimming the passage behind it rea
   `popup_paper_torn.png`). These are two different popup shapes that happen to share the word
   "setup" informally.
 
-### `setup` (popup) — 🟡 needs asset-name reconciliation, otherwise close
+### `setup_info` (popup) — ✅ built and visually approved
+
+Built and confirmed. Renamed from `setup` to `setup_info` this round — `setup` is already this
+template's own *passage*-level layout id (player-count/name/town-entry chrome,
+`layouts/setup.mws.yaml`), and layout chrome lookup is by string regardless of whether a passage or
+a popup uses the name (`docs/mws-format-latest.md` §8: "layout... on both passages and popups...
+the value is only ever carried through as a `layout-{value}` CSS class"). Reusing `setup` for the
+popup too would have spliced the passage layout's own `layer-bg` header image node into this
+popup's rendering the moment it was actually wired up to real content — caught before it shipped,
+not after. CSS selectors renamed `.mws-popup-overlay.layout-setup` → `.layout-setup_info`
+throughout; no other module currently references the old name.
+
+Demoed directly on the Layout Showcase hub (`Example_Entry`) now, not a separate passage — two
+click-triggered variants side by side ("Okay only" / "Okay + Cancel") so both button counts are
+exercised against the same layout. Okay always `target: 'Example_Entry', snapshot: false` — since
+the trigger already lives on the hub, this is a no-op navigation that just closes the popup in
+place; still explicit (not omitted) for consistency with how a real module's own end_of_round-style
+popups use `target`.
 
 - **Reference**: `Module-04A/B/C-Setup-Popup*.png` — instructional popup with a pinned icon
   illustration, appearing (A) triggered by a link, (B) auto-shown over an empty passage, (C)
@@ -487,21 +509,35 @@ the setup flow into real module content, where dimming the passage behind it rea
   icon image with extra pin/stud decoration, two buttons centered on the bottom edge.
 - **Assets**: `backgrounds/popup_parchment_border.png`; `popup/setup_icon_background.png`;
   `popup/setup_brass_stud.png` (there's also a `popup/setup_paperclip.png` not mentioned in the
-  summary table — **OPEN QUESTION**: is the paperclip used here too, or a leftover from a different
-  screen?); standard green Okay / red Cancel buttons.
+  summary table — **OPEN QUESTION**, still unresolved: is the paperclip used here too, or a
+  leftover from a different screen?); standard green Okay / red Cancel buttons.
 
-### `end_of_round` / `end_of_generation` (popups) — 🟡 rework with the short-popup asset
+### `end_of_round` / `end_of_generation` (popups) — ✅ built and visually approved
+
+Built and confirmed — corrected a real asset-name bug found while rebuilding: the previous rough
+pass referenced `backgrounds/popup_parchment_ragged.png`, which doesn't exist in this pack at all
+(the popup silently fell back to no background). Now uses the correct
+`popup_parchment_border_short.png` per the summary table. Two distinct layout ids sharing one CSS
+block via combined selectors (identical sizing, only header/body text differs per instance) — see
+`docs/mws-format-latest.md` §7's own worked examples, which already treat `end_of_round` and
+`end_of_generation` as separate layout values, not one shared name. The clock icon is a
+`.style-popup-title::before` CSS pseudo-element now, not a separate `header:` region image node —
+`{icon:...}` inline syntax only ever resolves `icon://`, and `generation_time.png` lives under
+`assets/images/popup/`, so a header region would have needed extra CSS just to sit inline with the
+title text on one row anyway; the pseudo-element sidesteps both problems.
+
+Demoed directly on the Layout Showcase hub, same okay-only/okay+cancel pairing as `setup_info`.
 
 - **Reference**: `Module-08A/B-End-of-Round-popup*.png` (alt B = different body text, same layout),
-  `Module-12-End-of-Generation-popup.png` (same layout, different header text — should be the same
-  popup layout with header text supplied by the popup node, not two separate layouts).
-- **Structure**: fixed-size popup, header with clock icon, body text, single button centered on the
+  `Module-12-End-of-Generation-popup.png` (same layout, different header text — confirmed the same
+  popup layout *shape*, header text supplied by the popup node itself, but still two layout ids per
+  the format spec's own examples — see above).
+- **Structure**: fixed-size popup, icon + title on one row, body text, single button centered on the
   bottom edge.
-- **Assets**: `backgrounds/popup_parchment_border_short.png` (note: **short** variant — different
-  from the plain `popup_parchment_border.png` used by `setup`/score-help; first draft had this
-  slightly wrong), `popup/generation_time.png` (clock icon), standard green button.
+- **Assets**: `backgrounds/popup_parchment_border_short.png`, `popup/generation_time.png` (clock
+  icon), standard green button.
 
-### Bidding preamble popup — `Module-09` — 🟡 rework, reuses `end_of_round`'s short-popup shape
+### Bidding preamble popup — `Module-09` — 🟡 still open, not built this round
 
 - **Reference**: `Module-09-Bidding-Preamble-popup.png`.
 - **Structure**: parchment popup, text, single standard green button — structurally identical to
@@ -527,32 +563,49 @@ the setup flow into real module content, where dimming the passage behind it rea
   after the countdown animation completes (same `animation-fill-mode: forwards` timing trick, applied
   to the popup's click-catcher rather than a button).
 
-### `prompt` (popup) — 🔲 not started — new layout, decided name
+### `prompt` (popup) — ✅ built and visually approved
+
+Built and confirmed. `popup_bordered.png` (961×299, corner-bracket ornaments only — measured: opaque
+art touches the canvas edge with no connecting frame between corners, so `border-image` mostly just
+keeps the corners themselves from stretching) holds the instructional prompt text, no scroll. The
+`<input>` itself is a **fixed size** (`20rem` × `3.2rem`, not a percentage/`max-width`-constrained
+box like `.style-setup-input`) per your note — reads as the same prominent, centered field
+regardless of the popup's own container width, reusing `input_large.png` (same asset/technique as
+setup's own input). Demoed directly on the Layout Showcase hub, okay-only/okay+cancel pair, bound
+to a dedicated `demoInputValue` session variable.
 
 - **Reference**: `Module-11A-Input-popup.png`, `Module-11B-Input-popup-with-numeric-value.png`.
 - **Structure**: fixed border popup, larger-than-normal prompt text (centered, no scrolling), a
-  large input field centered on/below the bottom edge (text centered inside it, no numeric
-  spinners), action buttons centered near the bottom (below the input).
+  large fixed-size input field below it, action buttons anchored to the true viewport (same
+  fixed-footer technique `note` uses) below that.
 - **Assets**: `backgrounds/popup_bordered.png`, `inputs/input_large.png`, standard brown (okay) /
   red (cancel) buttons.
-- **Decided**: a genuinely new layout the first draft missed entirely (used for in-game numeric/text
-  prompts, e.g. the bidding amount or the "Legacy of Charity" heart-token count shown in one of the
-  reference screenshots), named `prompt`, kept separate from `choice` — `choice` is a dark box for
-  radio-style selection, `prompt` is a parchment numeric/text input, visually and functionally
-  different.
+- Named `prompt`, not `input` — `input` is already a node type name (format spec §6), and this
+  layout's own content always includes an `input` node; keeping the two distinct avoids "input the
+  layout" vs. "input the node" ambiguity in prose/comments elsewhere.
 
-### `choice` — 🟡 rework, now has real assets for the previously-missing radio group
+### `choice` — ✅ downgraded and built — not a real requirement, generic bordered popup only
 
-- **Reference**: `General-Standaline-Select-Dialog.png` ("Choose Audio Voice").
-- **Structure**: dark bordered box (`backgrounds/panel_general.png`, window background
-  `leather_large.png` if used as a passage rather than a popup), large centered header, centered
-  content, Continue button.
-- **Assets now exist for real radio buttons**: `inputs/radio_selected.png` / `radio_unselected.png`
-  — the first draft's "no radio-group input type, using a checkbox as a stand-in" gap can likely be
-  closed now, **but** this is still an MWS-format question: does the format need an actual
-  radio-group input type, or can this be built as N boolean/checkbox-style inputs styled with the
-  radio assets and app-level logic ensuring only one is set? **Flagging as a format discussion**,
-  not blocking the CSS/asset work.
+Re-scoped this round, not fully reworked: per your note, this was never a real requirement beyond
+*at most* `General-Standalone-Select-Dialog.png` itself (screenshot-summary.md's own General-01
+breakdown: "could be adapted to either a passage or popup layout as needed... Fixed size panel.
+Large header, centered. Content, centered") — a generic bordered popup, not a bespoke radio-select
+UI worth building out. The radio-button assets (`radio_selected.png`/`radio_unselected.png`)
+mentioned in the prior draft are **not** used — a true radio-group input type is still an open
+MWS-format question (unchanged from before, not blocking), and this layout's real ongoing job is
+exercising the **checkbox** input style, which scoring's Tie-Break 1 genuinely needs
+(`Scoring-03A/B`). Built a general (not choice-specific) `.mws-input input[type="checkbox"]` style
+using `checkbox_outline.png`/`checkbox_checkmark.png` — reusable as-is once `score_panel` is built.
+
+- **Reference**: `General-Standalone-Select-Dialog.png` ("Choose Audio Voice") — filename corrected
+  from the first draft's "Standaline" typo.
+- **Structure**: dark bordered box (`backgrounds/panel_general.png`, measured: opaque right to every
+  edge, no transparent gutter — a solid riveted-metal frame, still moved to `border-image` so the
+  corner rivets don't stretch into ovals at a different aspect ratio than the card's own), centered
+  header, centered content, Continue button.
+- Demoed directly on the Layout Showcase hub — a single trigger (not an okay-only/okay+cancel pair
+  like the other popups this round, since it's not one of the four real requirements), showing the
+  checkbox styling via the existing "Feminine" boolean demo content.
 
 ### `score_panel` (`ScoreEntry` / `TieBreaker1` / `TieBreaker2`) — 🟡 rework with real assets
 

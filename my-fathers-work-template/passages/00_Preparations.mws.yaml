@@ -4,17 +4,47 @@
 # already set all of those directly through play. The playtxt derivation (switch on players) is
 # kept since it's a real derived value, not a global-sourced one. Continues to the original,
 # unmodified Preface-TCOD — the existing module content takes over from there.
+#
+# layout: 'narration', not 'setup_scenario' — confirmed against the real reference screenshot
+# (Masterwork-Design/Reference/Screenshots/Module-01A-Preparations.png): visually identical to any
+# other narration passage (same border/parchment/progress-bar chrome, "I-1" shown in the footer),
+# just with a slightly larger title. `setup_scenario` is a real, distinct layout id elsewhere (see
+# cost-of-disease/layouts/setup_scenario.mws.yaml) but was never the right one for this specific
+# passage — VIEW-REQUIREMENTS.md's own narration entry already said as much. roundNum is hardcoded
+# to 1 (matching the reference screenshot's own footer) rather than derived from demoRoundNum like
+# the Showcase_* narration demos — this passage is reached before Example_Entry ever initializes
+# that variable, upstream of the round selector entirely.
+#
+# Also doubles as the one live example of `image` node `size`/`align` (format spec §6) — the
+# reference screenshot shows the scenario box art centered and modestly sized mid-paragraph;
+# RenderedImageView.razor previously dropped both fields when rendering (fixed in the code repo
+# this session, see docs/mws-format-latest.md's own field descriptions — the extractor and format
+# reader already handled them correctly, only the final render step didn't).
 ---
 format: 'mws/0.4'
 passage_id: '00_Preparations'
-title: 'Setup - Scenario Box'
-layout: 'setup_scenario'
+title: 'Preparations'
+layout: 'narration'
 nodes:
+- type: 'assign'
+  var: 'roundNum'
+  expr: '1'
 - type: 'text'
-  value: 'Setup the game and get ready to play.'
+  value: 'Complete the standard setup for the chosen player count as shown in the rulebook.'
+- type: 'break'
+  style: 'paragraph'
+- type: 'image'
+  asset: 'image://_demo/scenariobox3d_disease'
+  size: '200'
+  align: 'center'
+  title: 'The Cost of Disease scenario box'
+- type: 'break'
+  style: 'paragraph'
+- type: 'text'
+  value: 'Then retrieve the scenario box, which contains all components needed for this story. Keep it nearby — the Storybook will ask you to put items into play from it as the story progresses.'
 - type: 'break'
   style: 'paragraph'
 - type: 'link'
-  label: 'Click here to start'
+  label: 'Click here to continue...'
   target: 'Example_Entry'
   snapshot: true

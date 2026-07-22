@@ -129,7 +129,7 @@
 .mws-passage.layout-hub_late .mws-passage-body,
 .mws-popup-overlay.layout-note .mws-popup-content,
 .mws-popup-overlay.layout-note_clear .mws-popup-content,
-.mws-popup-overlay.layout-setup .mws-popup-content {
+.mws-popup-overlay.layout-setup_info .mws-popup-content {
     scrollbar-width: thin;
     scrollbar-color: rgba(230, 220, 195, 0.6) transparent;
 }
@@ -140,7 +140,7 @@
 .mws-passage.layout-hub_late .mws-passage-body::-webkit-scrollbar,
 .mws-popup-overlay.layout-note .mws-popup-content::-webkit-scrollbar,
 .mws-popup-overlay.layout-note_clear .mws-popup-content::-webkit-scrollbar,
-.mws-popup-overlay.layout-setup .mws-popup-content::-webkit-scrollbar {
+.mws-popup-overlay.layout-setup_info .mws-popup-content::-webkit-scrollbar {
     width: 0.35rem;
 }
 
@@ -150,14 +150,14 @@
 .mws-passage.layout-hub_late .mws-passage-body::-webkit-scrollbar-track,
 .mws-popup-overlay.layout-note .mws-popup-content::-webkit-scrollbar-track,
 .mws-popup-overlay.layout-note_clear .mws-popup-content::-webkit-scrollbar-track,
-.mws-popup-overlay.layout-setup .mws-popup-content::-webkit-scrollbar-track {
+.mws-popup-overlay.layout-setup_info .mws-popup-content::-webkit-scrollbar-track {
     background: transparent;
 }
 
 .mws-passage.layout-setup .mws-passage-body::-webkit-scrollbar-thumb,
 .mws-popup-overlay.layout-note .mws-popup-content::-webkit-scrollbar-thumb,
 .mws-popup-overlay.layout-note_clear .mws-popup-content::-webkit-scrollbar-thumb,
-.mws-popup-overlay.layout-setup .mws-popup-content::-webkit-scrollbar-thumb {
+.mws-popup-overlay.layout-setup_info .mws-popup-content::-webkit-scrollbar-thumb {
     background-color: rgba(230, 220, 195, 0.6);
     border-radius: 999px;
 }
@@ -519,7 +519,7 @@ body {
 .mws-passage.layout-introduction .mws-passage-body {
     position: fixed;
     top: 145px;
-    bottom: 8px;
+    bottom: 70px;
     left: 85px;
     right: 75px;
     padding-bottom: 3em;
@@ -534,9 +534,11 @@ body {
 /* Bracket-wrapped inline links (§1.6) — brown on any parchment surface. Covers both plain `link`
    nodes (.mws-link) and click-triggered popups (.mws-popup-trigger — a separate class, not
    .mws-link, per RenderedPopupView.razor) so a popup trigger reads identically to a regular link.
-   Real examples of the latter inside narration exist already: Showcase_Popup_Rounds.mws.yaml's
-   "Preview: End of Round"/"Preview: End of Generation" popups both render as .mws-popup-trigger
-   buttons inline in narration content.
+   Real examples of the latter inside narration exist already: Showcase_Popup_RevealCountdown.
+   mws.yaml's "Start the Reveal" popup renders as a .mws-popup-trigger button inline in narration
+   content (the end_of_round/end_of_generation/setup_info/prompt/choice popup demos moved onto
+   Example_Entry itself, a hub_early passage, so they exercise the blue hub bracket rule below
+   instead — see that block's own comment).
    Brackets are ::before/::after pseudo-elements (bracket-brown-{left,right}.png, own aspect ratio
    53:92 ≈ 0.42:1 preserved via background-size: 100% 100% on a box already cut to that ratio) —
    absolutely positioned within the link's own padding so they don't affect its text layout/line
@@ -946,9 +948,12 @@ body {
 
 /* ── Standard graphical buttons (brown/green/red) ─────────────────────────
  * Shared by every "standard rectangular" graphical button — popup Okay buttons that use this
- * shape (note/note_clear, the setup popup) and any inline `link` styled as one (setup passage's
- * Continue, style: 'btn-brown'/'btn-green'/'btn-red'). NOT applied to popup buttons with their own
- * distinct shape (game_complete's circular close, reveal_countdown's plain animated one).
+ * shape (note/note_clear, setup_info, end_of_round/end_of_generation, prompt), every popup's
+ * Cancel button (unscoped by layout — Cancel is always red, "unless otherwise noted" per the
+ * reference style notes, so one rule covers it everywhere rather than repeating per layout), and
+ * any inline `link` styled as one (setup passage's Continue, style: 'btn-brown'/'btn-green'/
+ * 'btn-red'). NOT applied to popup buttons with their own distinct shape (game_complete's circular
+ * close, reveal_countdown's plain animated one).
  *
  * Sizing is rem-based, not em: an em value compounds against whatever ambient font-size the
  * *hosting* layout happens to use (a popup's own 0.8em vs. a passage's own 1.6em, etc.), so the
@@ -958,7 +963,11 @@ body {
  * grow with body text). Color/background-image are the only things each variant sets itself. */
 .mws-popup-overlay.layout-note .mws-popup-okay,
 .mws-popup-overlay.layout-note_clear .mws-popup-okay,
-.mws-popup-overlay.layout-setup .mws-popup-okay,
+.mws-popup-overlay.layout-setup_info .mws-popup-okay,
+.mws-popup-overlay.layout-end_of_round .mws-popup-okay,
+.mws-popup-overlay.layout-end_of_generation .mws-popup-okay,
+.mws-popup-overlay.layout-prompt .mws-popup-okay,
+.mws-popup-cancel,
 .mws-link.style-btn-brown,
 .mws-link.style-btn-green,
 .mws-link.style-btn-red {
@@ -987,19 +996,23 @@ body {
 
 .mws-popup-overlay.layout-note .mws-popup-okay,
 .mws-popup-overlay.layout-note_clear .mws-popup-okay,
+.mws-popup-overlay.layout-prompt .mws-popup-okay,
 .mws-link.style-btn-brown {
     background-image: url(image://inputs/button_brown);
     color: #2b2016;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
 }
 
-.mws-popup-overlay.layout-setup .mws-popup-okay,
+.mws-popup-overlay.layout-setup_info .mws-popup-okay,
+.mws-popup-overlay.layout-end_of_round .mws-popup-okay,
+.mws-popup-overlay.layout-end_of_generation .mws-popup-okay,
 .mws-link.style-btn-green {
     background-image: url(image://inputs/button_green);
     color: #152218;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
+.mws-popup-cancel,
 .mws-link.style-btn-red {
     background-image: url(image://inputs/button_red);
     color: #2b0d0d;
@@ -1009,11 +1022,15 @@ body {
 /* Explicit :hover color (not just a filter) on every variant — without this, app.css's own
    .mws-link:hover:not(:disabled) rule (higher specificity: an extra :hover/:not pseudo-class) wins
    over a plain .style-btn-brown color declaration, silently replacing it with the default link
-   hover blue. Popup Okay buttons aren't `.mws-link` at all so were never affected — only the
-   btn-brown/green/red *link* variants needed this. */
+   hover blue. Popup Okay/Cancel buttons aren't `.mws-link` at all so were never affected — only
+   the btn-brown/green/red *link* variants needed this. */
 .mws-popup-overlay.layout-note .mws-popup-okay:hover:not(:disabled),
 .mws-popup-overlay.layout-note_clear .mws-popup-okay:hover:not(:disabled),
-.mws-popup-overlay.layout-setup .mws-popup-okay:hover:not(:disabled),
+.mws-popup-overlay.layout-setup_info .mws-popup-okay:hover:not(:disabled),
+.mws-popup-overlay.layout-end_of_round .mws-popup-okay:hover:not(:disabled),
+.mws-popup-overlay.layout-end_of_generation .mws-popup-okay:hover:not(:disabled),
+.mws-popup-overlay.layout-prompt .mws-popup-okay:hover:not(:disabled),
+.mws-popup-cancel:hover:not(:disabled),
 .mws-link.style-btn-brown:hover:not(:disabled),
 .mws-link.style-btn-green:hover:not(:disabled),
 .mws-link.style-btn-red:hover:not(:disabled) {
@@ -1022,7 +1039,8 @@ body {
 
 .mws-link.style-btn-brown:hover:not(:disabled) { color: #2b2016; }
 .mws-link.style-btn-green:hover:not(:disabled) { color: #152218; }
-.mws-link.style-btn-red:hover:not(:disabled) { color: #2b0d0d; }
+.mws-link.style-btn-red:hover:not(:disabled),
+.mws-popup-cancel:hover:not(:disabled) { color: #2b0d0d; }
 
 /* note / note_clear: simple torn-parchment message popup (screenshots: Setup-02/04/06) —
    header-free, just body text and a single brown Continue button. Distinct from `setup` (popup,
@@ -1129,7 +1147,7 @@ body {
    (assets/images/popup/) plus whatever image the popup's own header carries. Copied as-is from
    cost-of-disease — this is the one popup layout with a fully worked example already. */
 
-.mws-popup-overlay.layout-setup .mws-popup-container {
+.mws-popup-overlay.layout-setup_info .mws-popup-container {
     position: relative;
     width: 100%;
     max-width: 32rem;
@@ -1146,7 +1164,7 @@ body {
     padding-top: 3.5rem;
 }
 
-.mws-popup-overlay.layout-setup .mws-popup-header {
+.mws-popup-overlay.layout-setup_info .mws-popup-header {
     position: absolute;
     top: -0.1rem;
     left: -0.6em;
@@ -1160,7 +1178,7 @@ body {
     justify-content: center;
 }
 
-.mws-popup-overlay.layout-setup .mws-popup-header::before {
+.mws-popup-overlay.layout-setup_info .mws-popup-header::before {
     content: '';
     position: absolute;
     top: 0.8rem;
@@ -1174,7 +1192,7 @@ body {
     z-index: 1;
 }
 
-.mws-popup-overlay.layout-setup .mws-popup-header::after {
+.mws-popup-overlay.layout-setup_info .mws-popup-header::after {
     content: 'SETUP';
     position: absolute;
     top: 1.5rem;
@@ -1184,7 +1202,7 @@ body {
     color: #1a130c;
 }
 
-.mws-popup-overlay.layout-setup .mws-image.style-setup-image {
+.mws-popup-overlay.layout-setup_info .mws-image.style-setup-image {
     max-width: 80%;
     max-height: 80%;
     object-fit: contain;
@@ -1194,14 +1212,14 @@ body {
     font-style: normal;
 }
 
-.mws-popup-overlay.layout-setup .mws-popup-content {
+.mws-popup-overlay.layout-setup_info .mws-popup-content {
     max-height: 18rem;
     overflow-y: auto;
     color: #2b2016;
     padding-left: 9rem;
 }
 
-.mws-popup-overlay.layout-setup .mws-popup-footer {
+.mws-popup-overlay.layout-setup_info .mws-popup-footer {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -1387,14 +1405,39 @@ body {
     margin-bottom: 0.5em;
 }
 
-/* ── choice popup ("Choose Audio Voice") ─────────────────────────────────── */
-
+/* ── choice popup ─────────────────────────────────────────────────────────
+ * Downgraded from a bespoke "Choose Audio Voice" radio-select dialog to what's actually needed: a
+ * generic bordered popup (General-Standalone-Select-Dialog.png / screenshot-summary.md's own
+ * General-01 breakdown — "could be adapted to either a passage or popup layout as needed... Fixed
+ * size panel. Large header, centered. Content, centered"). Its real ongoing job in this template is
+ * exercising the checkbox input style real scoring views need (Tie-Break 1) — not faithfully
+ * reproducing a radio-group UI the format doesn't have an input type for anyway (still an open
+ * question, VIEW-REQUIREMENTS.md §2). panel_general.png (866×688) is a solid riveted-metal frame
+ * with no transparent gutter (measured: opaque right to every edge) — border-image still applies
+ * (§1.8) so the corner rivets don't stretch into ovals on a viewport with a different aspect ratio
+ * than the card's own. */
 .mws-popup-overlay.layout-choice .mws-popup-container {
+    position: relative;
+    width: 100%;
+    max-width: 28rem;
+    aspect-ratio: 866 / 688;
+    height: auto;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1.6rem;
+    border-image-source: url(image://backgrounds/panel_general);
+    border-image-slice: 18%;
+    border-image-width: 1.6rem;
+    border-image-repeat: stretch;
+    box-sizing: border-box;
     background: #14161c;
+    box-shadow: none;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: #e8c9a0;
-    border: 3px solid #5a5142;
-    border-radius: 0.3rem;
-    padding: 2rem;
+    font-size: 0.8em;
     text-align: center;
 }
 
@@ -1405,11 +1448,35 @@ body {
 .mws-popup-overlay.layout-choice .style-choice-label {
     display: inline-block;
     margin-right: 0.5em;
+    vertical-align: middle;
 }
 
 .mws-popup-overlay.layout-choice .mws-popup-footer {
     justify-content: center;
     margin-top: 1em;
+}
+
+/* Custom checkbox appearance shared by any input's checkbox rendering (a boolean-typed var) —
+   general-purpose, not choice-specific, since scoring's Tie-Break 1 needs the identical treatment
+   (screenshot-summary.md Scoring-03) once that view is built. checkbox_checkmark.png layers over
+   checkbox_outline.png only when :checked, rather than swapping to a whole separate "checked"
+   image — the checkmark glyph and the box outline are independent assets. */
+.mws-input input[type="checkbox"] {
+    appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+    background-image: url(image://inputs/checkbox_outline);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.mws-input input[type="checkbox"]:checked {
+    background-image: url(image://inputs/checkbox_checkmark), url(image://inputs/checkbox_outline);
 }
 
 /* ── reveal_countdown popup (replaces the bespoke voting/bidding component) ─
@@ -1456,29 +1523,154 @@ body {
     to { pointer-events: auto; opacity: 1; }
 }
 
-/* ── end_of_round popup ──────────────────────────────────────────────────── */
-
-.mws-popup-overlay.layout-end_of_round .mws-popup-container {
-    background-image: url(image://backgrounds/popup_parchment_ragged);
-    background-size: 100% 100%;
-    background-color: transparent;
-    color: #2b2016;
-    padding: 2rem;
-    border-radius: 0;
-    box-shadow: none;
-}
-
-.mws-popup-overlay.layout-end_of_round .mws-popup-header .mws-image {
-    width: 3rem;
-    height: 3rem;
-    display: block;
-    margin: 0 auto 0.5em;
+/* ── end_of_round / end_of_generation popups ───────────────────────────────
+ * Share identical sizing (per your note — same card art, same clock-icon + title header row, same
+ * single button hanging off the bottom edge) — only the header/body text differs per instance,
+ * supplied by the popup node itself. Two distinct layout ids (matching how docs/mws-format-
+ * latest.md's own §7 worked examples treat them as separate layout values, and how VIEW-
+ * REQUIREMENTS.md already catalogs them) sharing one CSS block via combined selectors throughout.
+ *
+ * `popup_parchment_border_short.png` (985×634, corrected from an earlier rough pass that
+ * referenced a `popup_parchment_ragged.png` asset that doesn't actually exist in this pack) has a
+ * much smaller gutter than panel_parchment.png/popup_paper_torn.png (~1.3% each side, measured) —
+ * still moved to border-image for consistency with every other bordered surface in this file
+ * (§1.8), even though the distortion risk is low here regardless of technique given how thin the
+ * gutter is. aspect-ratio locked (unlike note's height: auto) since this content is always a short,
+ * fairly consistent acknowledgement message, not arbitrary-length user content. */
+.mws-popup-overlay.layout-end_of_round .mws-popup-container,
+.mws-popup-overlay.layout-end_of_generation .mws-popup-container {
+    position: relative;
+    width: 100%;
+    max-width: 30rem;
+    aspect-ratio: 985 / 634;
+    height: auto;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0.7rem;
+    border-image-source: url(image://backgrounds/popup_parchment_border_short);
+    border-image-slice: 8;
+    border-image-width: 0.7rem;
+    border-image-repeat: stretch;
+    box-sizing: border-box;
     background: transparent;
-    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #2b2016;
+    font-size: 0.8em;
+    text-align: center;
 }
 
-.mws-popup-overlay.layout-end_of_round .mws-popup-footer {
+/* Clock icon as a title-adjacent ::before, not a separate `header:` region node — {icon:...} can
+   only ever resolve icon://, but generation_time.png lives under assets/images/popup/, and a
+   separate header region would need extra CSS just to sit inline with the title text on one row
+   anyway. Scoped to these two layouts only — .style-popup-title is shared with choice/
+   reveal_countdown, which don't want this icon. */
+.mws-popup-overlay.layout-end_of_round .style-popup-title,
+.mws-popup-overlay.layout-end_of_generation .style-popup-title {
+    display: flex;
+    align-items: center;
     justify-content: center;
+    gap: 0.5em;
+}
+
+.mws-popup-overlay.layout-end_of_round .style-popup-title::before,
+.mws-popup-overlay.layout-end_of_generation .style-popup-title::before {
+    content: '';
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    flex-shrink: 0;
+    background-image: url(image://popup/generation_time);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.mws-popup-overlay.layout-end_of_round .mws-popup-content,
+.mws-popup-overlay.layout-end_of_generation .mws-popup-content {
+    overflow-y: auto;
+}
+
+.mws-popup-overlay.layout-end_of_round .mws-popup-footer,
+.mws-popup-overlay.layout-end_of_generation .mws-popup-footer {
+    position: fixed;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    justify-content: center;
+    margin: 0;
+    z-index: 1001;
+}
+
+/* ── prompt popup (single input — numeric or text) ─────────────────────────
+ * Module-11: a small bracket-cornered card (popup_bordered.png — corner ornaments only, measured:
+ * opaque art touches the canvas edge with no connecting frame between corners, so border-image
+ * mostly just keeps those corners from stretching; a starting-point slice, tune here once seen
+ * live) holds the instructional prompt text (no scroll — deliberately short, centered per the
+ * reference), with the input field itself and the action button(s) both anchored to the true
+ * viewport below it, same fixed-footer technique `note` already uses. */
+.mws-popup-overlay.layout-prompt .mws-popup-container {
+    position: relative;
+    width: 100%;
+    max-width: 26rem;
+    height: auto;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1.6rem;
+    border-image-source: url(image://backgrounds/popup_bordered);
+    border-image-slice: 20%;
+    border-image-width: 1.6rem;
+    border-image-repeat: stretch;
+    box-sizing: border-box;
+    background: rgba(20, 16, 14, 0.85);
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0.5rem;
+    color: #e8dcc8;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* The input element itself is a fixed size (per your note) — not a percentage/max-width-constrained
+   box like .style-setup-input — so it always reads as the same prominent, centered field regardless
+   of the popup's own container width. Reuses input_large.png (same asset/technique as
+   .style-setup-input) rather than a new asset. */
+.mws-popup-overlay.layout-prompt .mws-input {
+    display: block;
+    width: 20rem;
+    margin: 1.5rem auto 0;
+    background: none;
+}
+
+.mws-popup-overlay.layout-prompt .mws-input input {
+    display: block;
+    width: 20rem;
+    height: 3.2rem;
+    box-sizing: border-box;
+    padding: 0.6em 0.9em;
+    text-align: center;
+    background-image: url(image://inputs/input_large);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #F2B781;
+    font-family: 'Averia Libre', serif;
+    font-size: 1.2em;
+}
+
+.mws-popup-overlay.layout-prompt .mws-popup-footer {
+    position: fixed;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    justify-content: center;
+    margin: 0;
+    z-index: 1001;
 }
 
 /* ── score_panel popup (ScoreEntry / TieBreaker1 / TieBreaker2) ──────────── */

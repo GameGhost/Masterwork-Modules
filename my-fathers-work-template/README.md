@@ -28,11 +28,13 @@ of the catalog.
 | `introduction` | `Showcase_Introduction` | Same shape as `narration`, distinct border accent |
 | `event` | `Showcase_Event` | Full-bleed dramatic passage, no card frame |
 | `hub_early` / `hub_middle` / `hub_late` | `Showcase_Hub_Early` (2 cards), `Showcase_Hub_Middle` (3 cards), `Showcase_Hub_Late` (5 cards — scroll test) | Vertical stack of bordered `section` cards; border color is the only difference between the three (green/amber/red) |
-| `setup_player_count` / `setup_player_names` / `setup_town_name` / `setup_scenario` | The real `_Setup_0N_*.mws.yaml` passages | Not separately demoed — already exercised by normal play |
-| `setup` (popup) | Any `_Setup_0N_*` passage's own popups | Torn-paper note — the one layout that was already fully styled before this module existed |
-| `end_of_round` / `end_of_generation` | `Showcase_Popup_Rounds` | Parchment note with an icon header, single Confirm |
-| `choice` (new) | `Showcase_Popup_Choice` | Dark bordered box for settings-style choices (reference: "Choose Audio Voice") |
-| `reveal_countdown` (new) | `Showcase_Popup_RevealCountdown` | Replaces the reference app's bespoke bidding/voting component — see below |
+| `setup` | The real `_Setup_0N_*.mws.yaml` passages | Not separately demoed — already exercised by normal play. One shared layout for player-count/name/town-entry chrome (00_Preparations, the "get ready to play" bridge passage, uses `narration` instead — confirmed against the real reference screenshot, not a separate layout) |
+| `note` / `note_clear` (popup) | `_Setup_0N_*` passages' own popups | Torn-paper note — the one popup layout that was already fully styled before this module existed |
+| `setup_info` (popup) | Layout Showcase hub's own "Setup info" pair | Parchment note with a pinned icon + "SETUP" title (reference: Module-04). Named `setup_info`, not `setup` — that layout_id is already the passage-level one above, and layout chrome is looked up by string regardless of passage vs. popup context |
+| `end_of_round` / `end_of_generation` (popups) | Layout Showcase hub's own pairs | Parchment note with a clock-icon title, single Confirm — the two layouts share identical sizing (reference: Module-08/12) |
+| `prompt` (popup) | Layout Showcase hub's own pair | Bracket-cornered card + a fixed-size numeric input (reference: Module-11) |
+| `choice` (popup) | Layout Showcase hub's own trigger | Downgraded from a bespoke radio-select dialog to a generic bordered popup (reference: General-Standalone-Select-Dialog) — its real job is exercising the checkbox input style scoring needs |
+| `reveal_countdown` | `Showcase_Popup_RevealCountdown` | Replaces the reference app's bespoke bidding/voting component — see below. Kept as its own demo passage (not inlined on the hub like the popups above) since its two-stage auto-display needs the self-navigating-passage pattern |
 | `score_panel` | `Scoring_01_ScoreEntry`, `Scoring_02_TieBreaker1`, `Scoring_03_TieBreaker2` | Parchment scroll on a purple gradient |
 | `ranking` | `Scoring_04_Ranking` | Dark stone list panel |
 | `game_complete` (popup) | `02_Ending`'s own popup | Pinned collage image + text + circular X close |
