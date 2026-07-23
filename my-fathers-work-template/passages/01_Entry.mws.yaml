@@ -171,6 +171,11 @@ nodes:
   - type: 'popup'
     layout: 'setup'
     label: 'Okay only'
+    header:
+    - type: 'image'
+      asset: 'image://_demo/setup_dubious_bartering'
+      style: 'setup-image'
+      title: 'Dubious Bartering card'
     content:
     - type: 'text'
       value: 'Retrieve the Dubious Bartering cards from the scenario box. Shuffle them and give each player a card. This card is placed face-up near their Estate and is activated each time the listed action is taken.'
@@ -180,6 +185,11 @@ nodes:
   - type: 'popup'
     layout: 'setup'
     label: 'Okay + Cancel'
+    header:
+    - type: 'image'
+      asset: 'image://_demo/setup_dubious_bartering'
+      style: 'setup-image'
+      title: 'Dubious Bartering card'
     content:
     - type: 'text'
       value: 'Retrieve the Dubious Bartering cards from the scenario box. Shuffle them and give each player a card. This card is placed face-up near their Estate and is activated each time the listed action is taken.'
@@ -300,6 +310,7 @@ nodes:
       var: 'demoVoiceFeminine'
       style: 'choice-checkbox'
     okay: 'Continue'
+    cancel: 'Cancel'
     target: 'Example_Entry'
     snapshot: false
   - type: 'break'

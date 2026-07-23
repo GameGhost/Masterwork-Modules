@@ -74,6 +74,12 @@
     src: url(font://germania-one-v21-latin-regular) format('woff2');
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 /* Body-copy font everywhere inside a passage/popup; titles/headings override to the display face
    below. Scoped to .mws-passage/.mws-popup-container (not `body`) — this file only ever styles
    module content, never app chrome. */
@@ -259,7 +265,7 @@ body {
 .mws-passage.layout-narration,
 .mws-passage.layout-introduction {
     padding: 50px 30px 40px;
-    color: #2b2016;
+    color: #1F1F1E;
     font-size: 1.25em;
 }
 
@@ -447,7 +453,7 @@ body {
     min-height: 0;
     overflow-y: auto;
     text-align: center;
-    padding: 0.75em 12px 7em;
+    padding: 0.75em 12px 3em;
 }
 
 /* hub_early/middle/late: same flex-based scroll region as `setup` above (not the fixed-box-
@@ -466,7 +472,7 @@ body {
     overflow-y: auto;
     text-align: left;
     color: white;
-    padding: 0.5em 12px 7em;
+    padding: 0.5em 12px 3em;
 }
 
 /* panel_parchment.png used to be its own image node (layouts/narration.mws.yaml), not a CSS
@@ -832,6 +838,10 @@ body {
     margin-bottom: 0.5em;
 }
 
+.mws-input {
+  background: none;
+}
+
 /* background: none overrides app.css's base .mws-input { background: #f0f0f0 } — this rule (being
    more specific) wins for every OTHER property already, but background was never actually set
    here, so that base gray/white fill was quietly showing through around the input. */
@@ -840,7 +850,6 @@ body {
     margin: 0.75em auto;
     width: 22rem;
     max-width: 90%;
-    background: none;
 }
 
 .mws-input.style-setup-input input {
@@ -948,7 +957,7 @@ body {
 
 /* ── Standard graphical buttons (brown/green/red) ─────────────────────────
  * Shared by every "standard rectangular" graphical button — popup Okay buttons that use this
- * shape (note/note_clear, setup, end_of_round/end_of_generation, prompt), every popup's
+ * shape (note/note_clear, setup, end_of_round/end_of_generation, prompt, choice), every popup's
  * Cancel button (unscoped by layout — Cancel is always red, "unless otherwise noted" per the
  * reference style notes, so one rule covers it everywhere rather than repeating per layout), and
  * any inline `link` styled as one (setup passage's Continue, style: 'btn-brown'/'btn-green'/
@@ -967,6 +976,7 @@ body {
 .mws-popup-overlay.layout-end_of_round .mws-popup-okay,
 .mws-popup-overlay.layout-end_of_generation .mws-popup-okay,
 .mws-popup-overlay.layout-prompt .mws-popup-okay,
+.mws-popup-overlay.layout-choice .mws-popup-okay,
 .mws-popup-cancel,
 .mws-link.style-btn-brown,
 .mws-link.style-btn-green,
@@ -997,6 +1007,7 @@ body {
 .mws-popup-overlay.layout-note .mws-popup-okay,
 .mws-popup-overlay.layout-note_clear .mws-popup-okay,
 .mws-popup-overlay.layout-prompt .mws-popup-okay,
+.mws-popup-overlay.layout-choice .mws-popup-okay,
 .mws-link.style-btn-brown {
     background-image: url(image://inputs/button_brown);
     color: #2b2016;
@@ -1030,6 +1041,7 @@ body {
 .mws-popup-overlay.layout-end_of_round .mws-popup-okay:hover:not(:disabled),
 .mws-popup-overlay.layout-end_of_generation .mws-popup-okay:hover:not(:disabled),
 .mws-popup-overlay.layout-prompt .mws-popup-okay:hover:not(:disabled),
+.mws-popup-overlay.layout-choice .mws-popup-okay:hover:not(:disabled),
 .mws-popup-cancel:hover:not(:disabled),
 .mws-link.style-btn-brown:hover:not(:disabled),
 .mws-link.style-btn-green:hover:not(:disabled),
@@ -1051,19 +1063,6 @@ body {
    this block) strips it to transparent — for the player-setup passages, where the popup shows over
    an already-empty `setup`-layout passage (no meaningful content underneath to dim/focus away
    from), matching Module-04B's "auto-show over empty passage" screenshot. */
-
-/* font-size: 0.8em is deliberate, not redundant — .mws-popup-container inherits from wherever the
-   popup node sits in the passage tree (position: fixed only escapes layout/containing-block, not
-   CSS inheritance), so without an explicit reset here it was compounding on top of
-   layout-player_setup's own 1.6em body bump. Popups get their own independent (and, for a short note card, smaller than
-   body-copy) scale instead of inheriting whatever the host passage happens to be running at — most
-   short note content should fit without needing .mws-popup-content's own scroll at all.
-   popup_paper_torn.png is now rendered via border-image (same 9-slice reasoning as every other
-   bordered surface on this page — see the outer-border rule above) rather than a
-   background-size: 100% 100% stretch locked to the image's own 1291×603 aspect ratio, so the
-   container no longer needs a fixed aspect-ratio at all: height: auto sizes to content, and the
-   torn-paper frame stays a constant on-screen thickness regardless of how tall a given note's text
-   makes the box. Narrow viewports (media query below) still get their own tuned position/size. */
 .mws-popup-overlay.layout-note .mws-popup-container,
 .mws-popup-overlay.layout-note_clear .mws-popup-container {
     position: relative;
@@ -1083,7 +1082,7 @@ body {
     background: transparent;
     box-shadow: none;
     color: #410404;
-    font-size: 0.8em;
+    font-size: 1.2rem; /* don't inherit the passage text size */
     font-weight: 600;
     text-align: center;
 }
@@ -1157,17 +1156,19 @@ body {
 
 .mws-popup-overlay.layout-setup .mws-popup-container {
     position: relative;
+    top: -5vh;
     width: 100%;
-    max-width: 32rem;
-    min-height: 16rem;
+    max-width: 550px;
+    min-height: 250px;
+    max-height: 60vh;
     height: auto;
     overflow: unset;
     border-style: solid;
     border-color: transparent;
-    border-width: 0.6rem;
-    border-image-source: url(image://backgrounds/popup_parchment_border);
-    border-image-slice: 8;
-    border-image-width: 0.6rem;
+    border-width: 15px;
+    border-image-source: url(image://backgrounds/popup_parchment_border_short);
+    border-image-slice: 6% 4% fill;
+    border-image-width: 20px;
     border-image-repeat: stretch;
     box-sizing: border-box;
     background-color: transparent;
@@ -1176,7 +1177,6 @@ body {
     padding: 1rem;
     padding-top: 3rem;
     color: #2b2016;
-    font-size: 0.8em;
 }
 
 .mws-popup-overlay.layout-setup .mws-popup-header {
@@ -1234,10 +1234,12 @@ body {
     padding-left: 9rem;
 }
 
-.mws-popup-overlay.layout-setup .mws-popup-footer {
-    position: fixed;
+.mws-popup-overlay.layout-setup .mws-popup-footer,
+.mws-popup-overlay.layout-end_of_round .mws-popup-footer,
+.mws-popup-overlay.layout-end_of_generation .mws-popup-footer {
+    position: absolute;
     left: 50%;
-    bottom: 8%;
+    bottom: -4em;
     transform: translateX(-50%);
     justify-content: center;
     margin: 0;
@@ -1338,8 +1340,9 @@ body {
     margin: 0 0 0.35em;
     color: #f2b17b;
     font-size: 1.1em;
-    letter-spacing: 0.1em;
-    font-family: 'Germania One', 'Averia Gruesa Libre', 'Averia Libre', serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 /* Bracket-wrapped inline links, same mechanism as narration/introduction's brown brackets (§1.6)
@@ -1440,10 +1443,10 @@ body {
     height: auto;
     border-style: solid;
     border-color: transparent;
-    border-width: 1.6rem;
+    border-width: 20px;
     border-image-source: url(image://backgrounds/panel_general);
-    border-image-slice: 18%;
-    border-image-width: 1.6rem;
+    border-image-slice: 11.6% 9.2% fill;
+    border-image-width: 40px;
     border-image-repeat: stretch;
     box-sizing: border-box;
     background: #14161c;
@@ -1453,18 +1456,19 @@ body {
     flex-direction: column;
     justify-content: center;
     color: #e8c9a0;
-    font-size: 0.8em;
     text-align: center;
 }
 
 .mws-popup-overlay.layout-choice .style-popup-title {
     color: #f2c879;
+    font-size: 2em;
 }
 
 .mws-popup-overlay.layout-choice .style-choice-label {
     display: inline-block;
     margin-right: 0.5em;
     vertical-align: middle;
+    font-size: 1.5em;
 }
 
 .mws-popup-overlay.layout-choice .mws-popup-footer {
@@ -1479,8 +1483,8 @@ body {
    image — the checkmark glyph and the box outline are independent assets. */
 .mws-input input[type="checkbox"] {
     appearance: none;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
     flex-shrink: 0;
     background-image: url(image://inputs/checkbox_outline);
     background-size: 100% 100%;
@@ -1493,6 +1497,8 @@ body {
 
 .mws-input input[type="checkbox"]:checked {
     background-image: url(image://inputs/checkbox_checkmark), url(image://inputs/checkbox_outline);
+    background-size: 75% 75%, 100% 100%;
+    background-position: 1em -0.05em, 0;
 }
 
 /* ── reveal_countdown popup (replaces the bespoke voting/bidding component) ─
@@ -1558,14 +1564,14 @@ body {
     position: relative;
     width: 100%;
     max-width: 30rem;
-    aspect-ratio: 985 / 634;
+    min-height: 5rem;
     height: auto;
     border-style: solid;
     border-color: transparent;
-    border-width: 0.7rem;
+    border-width: 15px;
     border-image-source: url(image://backgrounds/popup_parchment_border_short);
-    border-image-slice: 8;
-    border-image-width: 0.7rem;
+    border-image-slice: 6% 4% fill;
+    border-image-width: 20px;
     border-image-repeat: stretch;
     box-sizing: border-box;
     background: transparent;
@@ -1575,7 +1581,6 @@ body {
     flex-direction: column;
     justify-content: center;
     color: #2b2016;
-    font-size: 0.8em;
     text-align: center;
 }
 
@@ -1607,17 +1612,7 @@ body {
 .mws-popup-overlay.layout-end_of_round .mws-popup-content,
 .mws-popup-overlay.layout-end_of_generation .mws-popup-content {
     overflow-y: auto;
-}
-
-.mws-popup-overlay.layout-end_of_round .mws-popup-footer,
-.mws-popup-overlay.layout-end_of_generation .mws-popup-footer {
-    position: fixed;
-    left: 50%;
-    bottom: 8%;
-    transform: translateX(-50%);
-    justify-content: center;
-    margin: 0;
-    z-index: 1001;
+    font-size: 1.2em;
 }
 
 /* ── prompt popup (single input — numeric or text) ─────────────────────────
@@ -1629,23 +1624,22 @@ body {
  * viewport below it, same fixed-footer technique `note` already uses. */
 .mws-popup-overlay.layout-prompt .mws-popup-container {
     position: relative;
-    width: 100%;
-    max-width: 26rem;
+    top: -15vh;
     height: auto;
     border-style: solid;
     border-color: transparent;
-    border-width: 1.6rem;
+    border-width: 7px;
     border-image-source: url(image://backgrounds/popup_bordered);
-    border-image-slice: 20%;
-    border-image-width: 1.6rem;
+    border-image-slice: 19.4% 6% fill;
+    border-image-width: 38px;
     border-image-repeat: stretch;
     box-sizing: border-box;
     background: rgba(20, 16, 14, 0.85);
     box-shadow: none;
     border-radius: 0;
-    padding: 0.5rem;
-    color: #e8dcc8;
-    font-size: 0.9em;
+    padding: 18px;
+    color: #1F1F1E;
+    font-size: 1.2em;
     font-weight: 600;
     text-align: center;
 }
@@ -1682,7 +1676,7 @@ body {
 .mws-popup-overlay.layout-prompt .mws-popup-footer {
     position: fixed;
     left: 50%;
-    bottom: 8%;
+    bottom: 8vh;
     transform: translateX(-50%);
     justify-content: center;
     margin: 0;
