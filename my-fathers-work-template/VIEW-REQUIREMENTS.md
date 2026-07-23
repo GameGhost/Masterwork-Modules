@@ -493,7 +493,7 @@ the setup flow into real module content, where dimming the passage behind it rea
   `popup_paper_torn.png`). These are two different popup shapes that happen to share the word
   "setup" informally.
 
-### `setup` (popup) — ✅ built and visually approved, modernized this round
+### `setup` (popup) — ✅ locked in
 
 This is the **real, widely-used-across-modules** instructional icon popup — brought across from
 `cost-of-disease` (not template-specific content), so this layout_id has to stay exactly `setup` to
@@ -530,7 +530,7 @@ popups use `target`.
   summary table — **OPEN QUESTION**, still unresolved: is the paperclip used here too, or a
   leftover from a different screen?); standard green Okay / red Cancel buttons.
 
-### `end_of_round` / `end_of_generation` (popups) — ✅ built and visually approved
+### `end_of_round` / `end_of_generation` (popups) — ✅ locked in
 
 Built and confirmed — corrected a real asset-name bug found while rebuilding: the previous rough
 pass referenced `backgrounds/popup_parchment_ragged.png`, which doesn't exist in this pack at all
@@ -581,7 +581,7 @@ Demoed directly on the Layout Showcase hub, same okay-only/okay+cancel pairing a
   after the countdown animation completes (same `animation-fill-mode: forwards` timing trick, applied
   to the popup's click-catcher rather than a button).
 
-### `prompt` (popup) — ✅ built and visually approved
+### `prompt` (popup) — ✅ locked in
 
 Built and confirmed. `popup_bordered.png` (961×299, corner-bracket ornaments only — measured: opaque
 art touches the canvas edge with no connecting frame between corners, so `border-image` mostly just
@@ -602,7 +602,7 @@ to a dedicated `demoInputValue` session variable.
   layout's own content always includes an `input` node; keeping the two distinct avoids "input the
   layout" vs. "input the node" ambiguity in prose/comments elsewhere.
 
-### `choice` — ✅ downgraded and built — not a real requirement, generic bordered popup only
+### `choice` — ✅ locked in — not a real requirement, generic bordered popup only
 
 Re-scoped this round, not fully reworked: per your note, this was never a real requirement beyond
 *at most* `General-Standalone-Select-Dialog.png` itself (screenshot-summary.md's own General-01

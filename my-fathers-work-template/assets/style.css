@@ -1174,15 +1174,15 @@ body {
     background-color: transparent;
     border-radius: 0;
     box-shadow: none;
-    padding: 1rem;
-    padding-top: 3rem;
+    padding: 1em;
+    padding-top: 2.5em;
     color: #2b2016;
 }
 
 .mws-popup-overlay.layout-setup .mws-popup-header {
     position: absolute;
-    top: -0.1rem;
-    left: -0.6em;
+    top: -1rem;
+    left: -1em;
     width: 10rem;
     height: 10rem;
     background-image: url(image://popup/setup_icon_background);
@@ -1211,9 +1211,9 @@ body {
     content: 'SETUP';
     position: absolute;
     top: 1.5rem;
-    left: 10rem;
+    left: 10.2rem;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1.8em;
     color: #1a130c;
 }
 
@@ -1438,8 +1438,6 @@ body {
 .mws-popup-overlay.layout-choice .mws-popup-container {
     position: relative;
     width: 100%;
-    max-width: 28rem;
-    aspect-ratio: 866 / 688;
     height: auto;
     border-style: solid;
     border-color: transparent;
