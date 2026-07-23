@@ -123,41 +123,41 @@
  * content) — a slim mobile-style overlay bar instead of the browser's default chunky one.
  * scrollbar-width/-color cover Firefox; the ::-webkit-scrollbar-* rules cover Chromium/WebView2/
  * Safari (what this app actually runs in). */
-.mws-passage.layout-setup .mws-passage-body,
+.mws-passage.layout-player_setup .mws-passage-body,
 .mws-passage.layout-hub_early .mws-passage-body,
 .mws-passage.layout-hub_middle .mws-passage-body,
 .mws-passage.layout-hub_late .mws-passage-body,
 .mws-popup-overlay.layout-note .mws-popup-content,
 .mws-popup-overlay.layout-note_clear .mws-popup-content,
-.mws-popup-overlay.layout-setup_info .mws-popup-content {
+.mws-popup-overlay.layout-setup .mws-popup-content {
     scrollbar-width: thin;
     scrollbar-color: rgba(230, 220, 195, 0.6) transparent;
 }
 
-.mws-passage.layout-setup .mws-passage-body::-webkit-scrollbar,
+.mws-passage.layout-player_setup .mws-passage-body::-webkit-scrollbar,
 .mws-passage.layout-hub_early .mws-passage-body::-webkit-scrollbar,
 .mws-passage.layout-hub_middle .mws-passage-body::-webkit-scrollbar,
 .mws-passage.layout-hub_late .mws-passage-body::-webkit-scrollbar,
 .mws-popup-overlay.layout-note .mws-popup-content::-webkit-scrollbar,
 .mws-popup-overlay.layout-note_clear .mws-popup-content::-webkit-scrollbar,
-.mws-popup-overlay.layout-setup_info .mws-popup-content::-webkit-scrollbar {
+.mws-popup-overlay.layout-setup .mws-popup-content::-webkit-scrollbar {
     width: 0.35rem;
 }
 
-.mws-passage.layout-setup .mws-passage-body::-webkit-scrollbar-track,
+.mws-passage.layout-player_setup .mws-passage-body::-webkit-scrollbar-track,
 .mws-passage.layout-hub_early .mws-passage-body::-webkit-scrollbar-track,
 .mws-passage.layout-hub_middle .mws-passage-body::-webkit-scrollbar-track,
 .mws-passage.layout-hub_late .mws-passage-body::-webkit-scrollbar-track,
 .mws-popup-overlay.layout-note .mws-popup-content::-webkit-scrollbar-track,
 .mws-popup-overlay.layout-note_clear .mws-popup-content::-webkit-scrollbar-track,
-.mws-popup-overlay.layout-setup_info .mws-popup-content::-webkit-scrollbar-track {
+.mws-popup-overlay.layout-setup .mws-popup-content::-webkit-scrollbar-track {
     background: transparent;
 }
 
-.mws-passage.layout-setup .mws-passage-body::-webkit-scrollbar-thumb,
+.mws-passage.layout-player_setup .mws-passage-body::-webkit-scrollbar-thumb,
 .mws-popup-overlay.layout-note .mws-popup-content::-webkit-scrollbar-thumb,
 .mws-popup-overlay.layout-note_clear .mws-popup-content::-webkit-scrollbar-thumb,
-.mws-popup-overlay.layout-setup_info .mws-popup-content::-webkit-scrollbar-thumb {
+.mws-popup-overlay.layout-setup .mws-popup-content::-webkit-scrollbar-thumb {
     background-color: rgba(230, 220, 195, 0.6);
     border-radius: 999px;
 }
@@ -224,7 +224,7 @@ body {
    bar — padding-top reserves that bar's height (4rem is a starting point, tune here). Color/
    font-size/padding are the one part that's genuinely per-layout (short labels on setup read fine
    larger; long-form prose on narration/introduction wants a smaller, more book-like size). */
-.mws-passage.layout-setup,
+.mws-passage.layout-player_setup,
 .mws-passage.layout-narration,
 .mws-passage.layout-introduction,
 .mws-passage.layout-hub_early,
@@ -241,7 +241,7 @@ body {
     overflow: hidden;
 }
 
-.mws-passage.layout-setup {
+.mws-passage.layout-player_setup {
     padding: 50px 30px 25px;
     color: #f2e6c8;
     font-size: 1.6em;
@@ -285,7 +285,7 @@ body {
    changes what's shown. The leather background is a plain seamless-ish texture with no frame/
    corner detail to protect, so object-fit: fill (uniform full-image stretch) is still the right
    tool for it — only the *border* below needed to move off this technique, see its own comment. */
-.mws-passage.layout-setup .mws-image.style-layer-bg,
+.mws-passage.layout-player_setup .mws-image.style-layer-bg,
 .mws-passage.layout-narration .mws-image.style-layer-bg,
 .mws-passage.layout-introduction .mws-image.style-layer-bg,
 .mws-passage.layout-hub_early .mws-image.style-layer-bg,
@@ -339,7 +339,7 @@ body {
  * removed image node used (`position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: 1`),
  * so nothing about where the frame sits changed — only how its own pixels get mapped onto that
  * box. Only border-image-source differs per layout (below) — everything else is shared. */
-.mws-passage.layout-setup::after,
+.mws-passage.layout-player_setup::after,
 .mws-passage.layout-narration::after,
 .mws-passage.layout-introduction::after,
 .mws-passage.layout-hub_early::after,
@@ -361,7 +361,7 @@ body {
     border-image-width: 42px 40px;
 }
 
-.mws-passage.layout-setup::after {
+.mws-passage.layout-player_setup::after {
     border-image-source: url(image://borders/main);
 }
 
@@ -385,7 +385,7 @@ body {
     border-image-source: url(image://borders/hub_brown);
 }
 
-.mws-passage.layout-setup .mws-passage-header,
+.mws-passage.layout-player_setup .mws-passage-header,
 .mws-passage.layout-narration .mws-passage-header,
 .mws-passage.layout-introduction .mws-passage-header,
 .mws-passage.layout-hub_early .mws-passage-header,
@@ -398,7 +398,7 @@ body {
     margin-top: 0;
 }
 
-.mws-passage.layout-setup .mws-passage-title {
+.mws-passage.layout-player_setup .mws-passage-title {
     font-size: 2.5em;
     letter-spacing: 0.05em;
     text-shadow: 4px 6px 4px rgba(0, 0, 0, 0.8);
@@ -442,7 +442,7 @@ body {
    position: fixed below, not a flex participant) — flex: 1 claims whatever's left after the header
    inside the fixed 100vh box, and overflow-y: auto engages if a given setup passage's full content
    is taller than that. */
-.mws-passage.layout-setup .mws-passage-body {
+.mws-passage.layout-player_setup .mws-passage-body {
     flex: 1;
     min-height: 0;
     overflow-y: auto;
@@ -536,7 +536,7 @@ body {
    .mws-link, per RenderedPopupView.razor) so a popup trigger reads identically to a regular link.
    Real examples of the latter inside narration exist already: Showcase_Popup_RevealCountdown.
    mws.yaml's "Start the Reveal" popup renders as a .mws-popup-trigger button inline in narration
-   content (the end_of_round/end_of_generation/setup_info/prompt/choice popup demos moved onto
+   content (the setup/end_of_round/end_of_generation/prompt/choice popup demos moved onto
    Example_Entry itself, a hub_early passage, so they exercise the blue hub bracket rule below
    instead — see that block's own comment).
    Brackets are ::before/::after pseudo-elements (bracket-brown-{left,right}.png, own aspect ratio
@@ -735,7 +735,7 @@ body {
  * and its labels re-align with where the now-stretched border's cutout actually ends up. Doubly a
  * starting point — tune together with the border crop percentage above if either changes. */
 @media (max-width: 45.99rem) {
-    .mws-passage.layout-setup {
+    .mws-passage.layout-player_setup {
         padding: 50px 0 25px;
     }
 
@@ -747,7 +747,7 @@ body {
         padding: 50px 0 40px;
     }
 
-    .mws-passage.layout-setup .mws-passage-body {
+    .mws-passage.layout-player_setup .mws-passage-body {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -770,7 +770,7 @@ body {
        the old <img> — the crop-and-stretch trick doesn't care how the border's own pixels got onto
        the box, just retargeted from the removed .style-layer-border image node to the ::after
        pseudo-element that replaced it (see the outer-border rule above). */
-    .mws-passage.layout-setup::after,
+    .mws-passage.layout-player_setup::after,
     .mws-passage.layout-narration::after,
     .mws-passage.layout-introduction::after,
     .mws-passage.layout-hub_early::after,
@@ -948,7 +948,7 @@ body {
 
 /* ── Standard graphical buttons (brown/green/red) ─────────────────────────
  * Shared by every "standard rectangular" graphical button — popup Okay buttons that use this
- * shape (note/note_clear, setup_info, end_of_round/end_of_generation, prompt), every popup's
+ * shape (note/note_clear, setup, end_of_round/end_of_generation, prompt), every popup's
  * Cancel button (unscoped by layout — Cancel is always red, "unless otherwise noted" per the
  * reference style notes, so one rule covers it everywhere rather than repeating per layout), and
  * any inline `link` styled as one (setup passage's Continue, style: 'btn-brown'/'btn-green'/
@@ -963,7 +963,7 @@ body {
  * grow with body text). Color/background-image are the only things each variant sets itself. */
 .mws-popup-overlay.layout-note .mws-popup-okay,
 .mws-popup-overlay.layout-note_clear .mws-popup-okay,
-.mws-popup-overlay.layout-setup_info .mws-popup-okay,
+.mws-popup-overlay.layout-setup .mws-popup-okay,
 .mws-popup-overlay.layout-end_of_round .mws-popup-okay,
 .mws-popup-overlay.layout-end_of_generation .mws-popup-okay,
 .mws-popup-overlay.layout-prompt .mws-popup-okay,
@@ -1003,7 +1003,7 @@ body {
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
 }
 
-.mws-popup-overlay.layout-setup_info .mws-popup-okay,
+.mws-popup-overlay.layout-setup .mws-popup-okay,
 .mws-popup-overlay.layout-end_of_round .mws-popup-okay,
 .mws-popup-overlay.layout-end_of_generation .mws-popup-okay,
 .mws-link.style-btn-green {
@@ -1026,7 +1026,7 @@ body {
    the btn-brown/green/red *link* variants needed this. */
 .mws-popup-overlay.layout-note .mws-popup-okay:hover:not(:disabled),
 .mws-popup-overlay.layout-note_clear .mws-popup-okay:hover:not(:disabled),
-.mws-popup-overlay.layout-setup_info .mws-popup-okay:hover:not(:disabled),
+.mws-popup-overlay.layout-setup .mws-popup-okay:hover:not(:disabled),
 .mws-popup-overlay.layout-end_of_round .mws-popup-okay:hover:not(:disabled),
 .mws-popup-overlay.layout-end_of_generation .mws-popup-okay:hover:not(:disabled),
 .mws-popup-overlay.layout-prompt .mws-popup-okay:hover:not(:disabled),
@@ -1054,8 +1054,8 @@ body {
 
 /* font-size: 0.8em is deliberate, not redundant — .mws-popup-container inherits from wherever the
    popup node sits in the passage tree (position: fixed only escapes layout/containing-block, not
-   CSS inheritance), so without an explicit reset here it was compounding on top of layout-setup's
-   own 1.6em body bump. Popups get their own independent (and, for a short note card, smaller than
+   CSS inheritance), so without an explicit reset here it was compounding on top of
+   layout-player_setup's own 1.6em body bump. Popups get their own independent (and, for a short note card, smaller than
    body-copy) scale instead of inheriting whatever the host passage happens to be running at — most
    short note content should fit without needing .mws-popup-content's own scroll at all.
    popup_paper_torn.png is now rendered via border-image (same 9-slice reasoning as every other
@@ -1143,28 +1143,43 @@ body {
     background: transparent;
 }
 
-/* setup: a torn-paper note pinned to the passage, composed from three chrome images
-   (assets/images/popup/) plus whatever image the popup's own header carries. Copied as-is from
-   cost-of-disease — this is the one popup layout with a fully worked example already. */
+/* setup: the real, widely-used-across-modules instructional popup (icon + "SETUP" title +
+   scrollable body + two buttons) — copied from cost-of-disease, not template-specific; this
+   layout_id must stay exactly `setup` (see layouts/setup.mws.yaml's own comment). Modernized this
+   round to match the current bordered-popup approach every other popup on this page now uses:
+   border-image instead of background-size: 100% 100% (popup_parchment_border.png's own gutter is
+   thin and uniform, ~1–1.5% each side, measured — same "keep corners from stretching non-uniformly"
+   reasoning as everywhere else, §1.8), an explicit font-size reset (missing before — §1.7's own
+   rule that every popup layout needs one, silently skipped here until now), and a fixed-viewport
+   footer (position: fixed + transform: translateX(-50%), matching `note`) instead of position:
+   absolute relative to the container, so the buttons stay reachable regardless of how tall the
+   scrollable content area gets instead of drifting with the container's own bottom edge. */
 
-.mws-popup-overlay.layout-setup_info .mws-popup-container {
+.mws-popup-overlay.layout-setup .mws-popup-container {
     position: relative;
     width: 100%;
     max-width: 32rem;
     min-height: 16rem;
     height: auto;
     overflow: unset;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0.6rem;
+    border-image-source: url(image://backgrounds/popup_parchment_border);
+    border-image-slice: 8;
+    border-image-width: 0.6rem;
+    border-image-repeat: stretch;
+    box-sizing: border-box;
     background-color: transparent;
-    background-image: url(image://backgrounds/popup_parchment_border);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
     border-radius: 0;
     box-shadow: none;
-    padding: 1.5rem;
-    padding-top: 3.5rem;
+    padding: 1rem;
+    padding-top: 3rem;
+    color: #2b2016;
+    font-size: 0.8em;
 }
 
-.mws-popup-overlay.layout-setup_info .mws-popup-header {
+.mws-popup-overlay.layout-setup .mws-popup-header {
     position: absolute;
     top: -0.1rem;
     left: -0.6em;
@@ -1178,7 +1193,7 @@ body {
     justify-content: center;
 }
 
-.mws-popup-overlay.layout-setup_info .mws-popup-header::before {
+.mws-popup-overlay.layout-setup .mws-popup-header::before {
     content: '';
     position: absolute;
     top: 0.8rem;
@@ -1192,7 +1207,7 @@ body {
     z-index: 1;
 }
 
-.mws-popup-overlay.layout-setup_info .mws-popup-header::after {
+.mws-popup-overlay.layout-setup .mws-popup-header::after {
     content: 'SETUP';
     position: absolute;
     top: 1.5rem;
@@ -1202,7 +1217,7 @@ body {
     color: #1a130c;
 }
 
-.mws-popup-overlay.layout-setup_info .mws-image.style-setup-image {
+.mws-popup-overlay.layout-setup .mws-image.style-setup-image {
     max-width: 80%;
     max-height: 80%;
     object-fit: contain;
@@ -1212,20 +1227,21 @@ body {
     font-style: normal;
 }
 
-.mws-popup-overlay.layout-setup_info .mws-popup-content {
+.mws-popup-overlay.layout-setup .mws-popup-content {
     max-height: 18rem;
     overflow-y: auto;
     color: #2b2016;
     padding-left: 9rem;
 }
 
-.mws-popup-overlay.layout-setup_info .mws-popup-footer {
-    position: absolute;
+.mws-popup-overlay.layout-setup .mws-popup-footer {
+    position: fixed;
     left: 50%;
+    bottom: 8%;
     transform: translateX(-50%);
-    bottom: -4.2em;
     justify-content: center;
-    margin-top: 1.25rem;
+    margin: 0;
+    z-index: 1001;
 }
 
 /* ── Link styles ──────────────────────────────────────────────────────────── */

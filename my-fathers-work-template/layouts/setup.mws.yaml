@@ -1,15 +1,12 @@
-# Shared chrome for all setup passages (player count / name entry / town name — VIEW-REQUIREMENTS.md
-# §2 "setup passage layout" decided these collapse into one layout, chrome differs only by content).
-# Background image layer per §1.2's three-layer composite (style-layer-bg, shared with narration/
-# introduction/hub in style.css — same mechanism, only the asset: differs per layout). The border
-# itself is NOT an image node — style.css renders it as a border-image 9-slice on a
-# `.mws-passage::after` pseudo-element instead (§1.2/§1.8), so its frame edges stretch in only one
-# direction instead of the whole PNG (frame included) being non-uniformly squashed via
-# object-fit: fill; see style.css's own comment for the full reasoning. `main.png` has no
-# progress-bar cutout (§1.3), so there's no progress-bar layer here, unlike narration/introduction/hub.
+# No chrome regions needed — the parchment/icon-pin visual treatment (screenshot: Module-04,
+# "Dubious Bartering" popup) lives entirely in style.css against .mws-popup-overlay.layout-setup.
+# This is the real, widely-used-across-modules instructional popup — copied here from
+# cost-of-disease, not template-specific — so this layout_id must stay exactly `setup`, matching
+# every other module. The passage-level player-count/name/town-entry chrome is `player_setup`
+# instead (layouts/player_setup.mws.yaml) specifically so it doesn't collide with this one — layout
+# chrome is looked up purely by string regardless of whether a passage or a popup uses it (format
+# spec §8), so the two names must stay distinct even though this template briefly (incorrectly)
+# named the popup `setup_info` to work around that collision from the wrong side. Empty chrome file
+# kept for discoverability, matching the convention already established by layouts/choice.mws.yaml.
 format: 'mws/0.4'
 layout_id: 'setup'
-header:
-- type: 'image'
-  asset: 'image://backgrounds/leather_large'
-  style: 'layer-bg'

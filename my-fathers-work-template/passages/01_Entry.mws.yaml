@@ -165,11 +165,11 @@ nodes:
   - type: 'break'
     style: 'paragraph'
   - type: 'text'
-    value: 'Setup info:'
+    value: 'Setup (instructional popup):'
     style: 'text-sm'
   - type: 'break'
   - type: 'popup'
-    layout: 'setup_info'
+    layout: 'setup'
     label: 'Okay only'
     content:
     - type: 'text'
@@ -178,7 +178,7 @@ nodes:
     target: 'Example_Entry'
     snapshot: false
   - type: 'popup'
-    layout: 'setup_info'
+    layout: 'setup'
     label: 'Okay + Cancel'
     content:
     - type: 'text'

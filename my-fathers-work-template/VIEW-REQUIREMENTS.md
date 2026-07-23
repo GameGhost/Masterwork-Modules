@@ -31,7 +31,7 @@ mobile/desktop split — no new breakpoint needed):
   progress-bar segment (see §1.4) rather than the full frame. Content extends to the left/right
   edges with just a basic reading margin — no side border art at all in this mode.
 
-**Resolved (proven on `setup`)**: not a pre-cropped asset — a pure CSS `transform: scaleX(1.6667)`
+**Resolved (proven on `player_setup`)**: not a pre-cropped asset — a pure CSS `transform: scaleX(1.6667)`
 on the border `<img>` under the narrow media query, which crops 20% off each side and stretches the
 remaining 60% to fill the width. `1.6667` is a starting value (20%-off-each-side), easy to retune
 per layout if a different border's usable frame proportions differ; switch to real pre-cropped
@@ -147,7 +147,7 @@ over all 9 labels as colored text pills, always showing all 9 — fully replaced
 - `text-sm` / `text-lg` / `text-xl` utility classes built (`style.css`, em-based, relative to the
   scaled base) — usable both in hand-authored passages/popups and in extractor-generated output
   (e.g. end-of-round/generation popup headers). `text-sm` added this session for content that reads
-  better smaller (a long intro paragraph on `setup`'s town-name screen).
+  better smaller (a long intro paragraph on `player_setup`'s town-name screen).
 - Font **`germania-one`** wired into `style.css`: `.mws-passage-title`/`.mws-passage-subtitle`/
   `.mws-popup-header` and every standard graphical button (§1.6) use it. Body copy stays
   `Averia Libre` throughout, including form inputs (which don't inherit `font-family` from
@@ -184,9 +184,9 @@ text, pressed = darker text, no visited state.
 screenshot yet — **OPEN QUESTION**: guess is these are for the hub's non-section top-level links (as
 opposed to blue-bracketed links inside a hub `section`)? Need confirmation or another screenshot.
 
-### 1.7 App chrome & single-scroll architecture — proven on `setup`, reuse for every future layout
+### 1.7 App chrome & single-scroll architecture — proven on `player_setup`, reuse for every future layout
 
-Built and visually approved (not just planned) on `setup` — this is now the reference
+Built and visually approved (not just planned) on `player_setup` — this is now the reference
 implementation for every other bordered layout, not something to re-derive per-layout:
 
 - **`.mws-play-chrome` must be `position: fixed; top/left/right: 0`** in module CSS. App.css's
@@ -210,8 +210,9 @@ implementation for every other bordered layout, not something to re-derive per-l
 - **Popups must reset their own `font-size`.** A popup node's DOM position is a descendant of
   whatever passage hosts it — `position: fixed` only escapes layout/containing-block, not CSS
   inheritance — so a popup silently inherits the host passage's own font-size bump (e.g.
-  `setup`'s `1.6em`) unless its own container rule sets an explicit `font-size`. Every popup layout
-  needs this reset; `note`/`note_clear` do it (`font-size: 0.8em` on `.mws-popup-container`).
+  `player_setup`'s `1.6em`) unless its own container rule sets an explicit `font-size`. Every popup
+  layout needs this reset; `note`/`note_clear`/`setup` all do it now (`font-size: 0.8em` on
+  `.mws-popup-container`) — `setup` was missing this until this round, see its own entry below.
 - **A `transform` on any ancestor hijacks `position: fixed` descendants.** If an element needs to
   center itself via `left: 50%; transform: translateX(-50%)` *and* contains a `position: fixed`
   descendant (e.g. a popup footer that must stay anchored to the true viewport), that transform
@@ -284,7 +285,7 @@ edge runs between them, each along a single axis. That fix only works cleanly if
 `px` regardless of viewport) — pairing `vh` for top/bottom with `vw` for left/right (this section's
 original recommendation) still leaves the four *corner* regions scaling non-uniformly, since `vh`
 and `vw` track different axes at different rates unless the viewport happens to be square. The
-fix actually shipped: every bordered layout (`setup` included) now shares one fixed-`px`
+fix actually shipped: every bordered layout (`player_setup` included) now shares one fixed-`px`
 `border-image-width`/`-slice`, and the content-clearance padding/box insets that have to stay
 flush against that border (passage padding, the parchment panel's own box, `.mws-passage-body`'s
 inset) moved to matching fixed `px` alongside it — a `vh`/`vw` clearance value paired with a
@@ -406,7 +407,7 @@ translucent color behind the border-image layer for legibility over the leather 
   restructured into grouped `hub-card` sections (Story Passages / Hub Passages / Popups) with an
   explicit round selector, so it doubles as an extra live example of this layout's card styling.
 
-### `setup` passage layout (player count / name entry / town name) — ✅ built and visually approved
+### `player_setup` passage layout (player count / name entry / town name) — ✅ built and visually approved
 
 Built and confirmed across multiple rounds of screenshot feedback, wide and narrow: real
 three-layer composite (`leather_large.png` background + `main.png` border, `main.png` has no
@@ -414,20 +415,29 @@ progress-bar cutout per §1.3), the single-scrollbar/fixed-chrome architecture (
 border crop (§1.1), `setup-alert`/`setup-input`/`setup-input-label` content styles, and
 `btn-players-2/3/4` picker buttons using the real `players_2/3/4.png` assets (the old "no engine
 support for image-backed nav buttons" note was overly cautious — it's a plain CSS `background-image`
-on the link, no engine change needed). All `Setup_01`–`Setup_07` passages use `layout: 'setup'` with
-a shared title mechanism (passage-level `title:` field, not an inline text node, so every setup
-screen's heading is pixel-identical). Input text color `#F2B781`, no native focus outline. Continue
-links use the standard `btn-brown` button (§1.6) everywhere — every setup passage was previously
-missing a `style:` on this link entirely, silently falling back to the default blue underlined link.
+on the link, no engine change needed). All `Setup_01`–`Setup_07` passages use `layout:
+'player_setup'` with a shared title mechanism (passage-level `title:` field, not an inline text
+node, so every setup screen's heading is pixel-identical). Input text color `#F2B781`, no native
+focus outline. Continue links use the standard `btn-brown` button (§1.6) everywhere — every setup
+passage was previously missing a `style:` on this link entirely, silently falling back to the
+default blue underlined link.
+
+**Renamed from `setup` to `player_setup` this round** — `setup` is the real, widely-used-across-
+modules *popup* layout (the instructional icon popup, copied from cost-of-disease — see its own
+entry below), and layout chrome is looked up purely by string regardless of whether a passage or a
+popup uses the name (`docs/mws-format-latest.md` §8). This template's own passage-level chrome has
+no equivalent real cross-module name to match (the `_Setup_0N_*.mws.yaml` passages are hand-rolled,
+mirroring the reference app's player onboarding directly, and supersede whatever similarly-named
+passages the extractor produces from leftover/unused Cradle source) — `player_setup` is a
+template-only name, chosen just to stay clearly distinct from the popup.
 
 - **Reference**: `Setup-01-Player-Count.png`, `Setup-03A/B-Player-Name-Entry*.png`,
   `Setup-05-Town-Name-Entry.png`.
-- **Decided**: one shared `setup` passage layout, not three separate layout files — chrome
+- **Decided**: one shared `player_setup` passage layout, not three separate layout files — chrome
   (`backgrounds/leather_large.png` background, `main.png` border, no progress-bar cutout, see §1.3)
   is identical across all three; content differences are per-passage authoring, same pattern
-  `narration` already uses for varying content. No layout files exist yet for these, so this is a
-  clean start, not a rename.
-- **Screen-specific content** (authored per-passage against the shared `setup` chrome):
+  `narration` already uses for varying content.
+- **Screen-specific content** (authored per-passage against the shared `player_setup` chrome):
   - **Player count** (`Setup-01`): 3 large buttons (`inputs/players_2.png` / `players_3.png` /
     `players_4.png`, each with a "N Players" caption below), centered on one row, reflowing to
     stacked on narrow viewports.
@@ -469,7 +479,7 @@ on narrow (§1.7's fixed-footer pattern), standard `btn-brown` Okay button.
 the backdrop, which is transparent instead of the standard darkened one (a single
 `.mws-popup-overlay.layout-note_clear { background: transparent; }` override). Used for
 `Setup_02`'s intro popup and the greeting popups of `Setup_03`–`Setup_06`, which show over an
-already-empty `setup`-layout passage — nothing underneath worth dimming. `Setup_07`'s town-name
+already-empty `player_setup`-layout passage — nothing underneath worth dimming. `Setup_07`'s town-name
 confirmation popup uses plain `note` (with backdrop) instead — it's the moment that hands off out of
 the setup flow into real module content, where dimming the passage behind it reads better.
 
@@ -483,17 +493,25 @@ the setup flow into real module content, where dimming the passage behind it rea
   `popup_paper_torn.png`). These are two different popup shapes that happen to share the word
   "setup" informally.
 
-### `setup_info` (popup) — ✅ built and visually approved
+### `setup` (popup) — ✅ built and visually approved, modernized this round
 
-Built and confirmed. Renamed from `setup` to `setup_info` this round — `setup` is already this
-template's own *passage*-level layout id (player-count/name/town-entry chrome,
-`layouts/setup.mws.yaml`), and layout chrome lookup is by string regardless of whether a passage or
-a popup uses the name (`docs/mws-format-latest.md` §8: "layout... on both passages and popups...
-the value is only ever carried through as a `layout-{value}` CSS class"). Reusing `setup` for the
-popup too would have spliced the passage layout's own `layer-bg` header image node into this
-popup's rendering the moment it was actually wired up to real content — caught before it shipped,
-not after. CSS selectors renamed `.mws-popup-overlay.layout-setup` → `.layout-setup_info`
-throughout; no other module currently references the old name.
+This is the **real, widely-used-across-modules** instructional icon popup — brought across from
+`cost-of-disease` (not template-specific content), so this layout_id has to stay exactly `setup` to
+match every other module; renaming it (as an earlier pass in this session briefly, incorrectly did,
+to `setup_info`) isn't an option — that would need an extractor change to match everywhere else
+`setup` is already emitted, and this template is supposed to demonstrate the real names, not invent
+new ones. The collision this created with this template's own passage-level chrome was real, but
+belonged to the *other* side — see `player_setup`'s own entry above for how that got renamed
+instead.
+
+Modernized to match the current bordered-popup approach every other popup on this page now uses,
+on top of the cost-of-disease original: `border-image` instead of `background-size: 100% 100%`
+(measured `popup_parchment_border.png`'s own gutter: thin and uniform, ~1–1.5% each side — same
+corner-distortion reasoning as everywhere else, §1.8), an explicit `font-size` reset (§1.7's own
+rule that every popup layout needs one — missing here until now, silently inheriting whatever the
+host passage's own ambient size happened to be), and a fixed-viewport footer (`position: fixed` +
+`transform: translateX(-50%)`, matching `note`) instead of `position: absolute` relative to the
+container, so the buttons stay reachable regardless of how tall the scrollable content area gets.
 
 Demoed directly on the Layout Showcase hub (`Example_Entry`) now, not a separate passage — two
 click-triggered variants side by side ("Okay only" / "Okay + Cancel") so both button counts are
@@ -526,7 +544,7 @@ block via combined selectors (identical sizing, only header/body text differs pe
 `assets/images/popup/`, so a header region would have needed extra CSS just to sit inline with the
 title text on one row anyway; the pseudo-element sidesteps both problems.
 
-Demoed directly on the Layout Showcase hub, same okay-only/okay+cancel pairing as `setup_info`.
+Demoed directly on the Layout Showcase hub, same okay-only/okay+cancel pairing as `setup`.
 
 - **Reference**: `Module-08A/B-End-of-Round-popup*.png` (alt B = different body text, same layout),
   `Module-12-End-of-Generation-popup.png` (same layout, different header text — confirmed the same
@@ -704,19 +722,15 @@ scoping:
 6. **app.css's `.mws-passage` wide-viewport bug** (§1.7) — `@media (min-width: 48rem) {
    .mws-passage { max-width: 40rem; margin: 0 auto; padding: 1.5rem; } }` has no `layout-`
    qualifier, so it silently caps every passage to 640px wide unless that specific layout overrides
-   it. `setup` does; every future layout will need to as well unless this gets fixed once in
+   it. `player_setup` does; every future layout will need to as well unless this gets fixed once in
    app.css directly instead. Worth doing since it'll otherwise bite every new layout the same way.
-7. **`setup`'s own outer padding is still `rem`-based (`4rem 2.5rem 2.5rem`), not `vh`/`vw`** —
-   unlike `narration`/`introduction`'s padding, which was switched to `vh`/`vw` this session for the
-   §1.8 reason (it needs to track `main.png`'s own viewport-scaled frame thickness the same way
-   `narration_normal.png`'s does). `setup` shares the identical fixed full-bleed border mechanism, so
-   the same reasoning applies to it in principle. **Not changed this session** — `setup` is already
-   ✅ visually approved from its own dedicated round of screenshot tuning, and blindly converting
-   units risks a silent regression (the exact top/side/bottom values need the same live-tune-against-
-   screenshots pass `narration`'s `10vh 4vw` got, not a blind unit conversion) that nothing here can
-   verify without a fresh look. Worth doing next time `setup` is revisited, not urgent on its own.
-   `note`/`note_clear`/the `setup` popup are a **different, intentional** case — see §1.8's third
-   bullet — their `rem` + `aspect-ratio` sizing is correct as-is, not a gap to close.
+7. ~~`setup`'s own outer padding is still `rem`-based, not `vh`/`vw`~~ — **resolved**: superseded by
+   §1.8's amendment, which moved every bordered layout's padding to fixed `px` (not `vh`/`vw`) to
+   stay in sync with the now-fixed-`px` `border-image-width`. `player_setup`'s own padding is
+   already `px` (`50px 30px 25px`) as of this round, consistent with `narration`/`introduction`/
+   `hub_*`'s `50px 30px 40px` — no longer an open gap. `note`/`note_clear`/the `setup` popup remain
+   a **different, intentional** case — see §1.8's third bullet — their `rem` + `border-image`/
+   `height: auto` sizing is correct as-is, not meant to match the fixed-viewport-border layouts.
 
 ## 4. Not in scope here (app-level, not module content)
 
