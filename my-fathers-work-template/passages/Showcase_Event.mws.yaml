@@ -1,14 +1,30 @@
+# Special event — no longer a distinct layout (the old `event` layout is retired). A "ck2"-tagged
+# Cradle passage is `narration` now, same as any other; the extractor prepends a single synthesized
+# `text` node (style: 'special-event') to the passage's own content instead — see
+# CradleExtractor.InsertSpecialEventOverlay (code repo) and style.css's own comment for the full
+# mechanism. This demo hand-authors that same node shape directly, matching what extraction would
+# now produce for a real "ck2" passage.
 format: 'mws/0.4'
 passage_id: 'Showcase_Event'
-title: 'A Stranger at the Door'
-layout: 'event'
+title: 'A Bid for Mayor'
+layout: 'narration'
 nodes:
+- type: 'assign'
+  var: 'roundNum'
+  expr: 'demoRoundNum'
 - type: 'text'
-  value: 'A knock, unannounced and unwelcome, echoes through the halls just as the household sits to dinner.'
+  value: 'Special Event'
+  style: 'special-event'
+- type: 'text'
+  value: 'All players take all their money into their hands. They then secretly choose any amount to place into their right hand to bid on becoming Mayor.'
 - type: 'break'
   style: 'paragraph'
 - type: 'text'
-  value: 'Whoever waits outside has chosen their moment with unsettling precision.'
+  value: 'Once all players are ready, reveal the amounts simultaneously. The player that bid the most wins the election. (In the event of a tie, the tied player who went last in turn order the previous round wins the bid.)'
+- type: 'break'
+  style: 'paragraph'
+- type: 'text'
+  value: 'Only the player that wins the election must pay their bid to supply. All others return their money to their Estates.'
 - type: 'break'
   style: 'paragraph'
 - type: 'link'

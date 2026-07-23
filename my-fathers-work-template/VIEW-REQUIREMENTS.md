@@ -70,7 +70,7 @@ is an implementation detail — "whatever is easiest and most maintainable" per 
 | `hub_early` | `hub_red.png` | Yes | Module-05 |
 | `hub_middle` | `hub_blue.png` | Yes | Module-06 |
 | `hub_late` | `hub_brown.png` | Yes | Module-07 |
-| `event` (`ck2`-tagged passages) | *same as `narration`* — see §2 `event`, this is not a distinct border | Yes | Module-03D |
+| `ck2`-tagged ("special event") passages | *same as `narration`* — not a distinct layout at all, see §2 | Yes | Module-03D |
 | Setup passages (count/name/town) | `main.png` | **No** — plain perimeter border, no bottom notch | Setup-01/03/05 |
 | Scoring/Ranking passages | `main.png` | No | Scoring-05 |
 
@@ -353,27 +353,51 @@ confirmed alongside `narration` in the same rounds of feedback.
 - **Assets**: background `backgrounds/leather_large.png`, same as narration (see its own entry
   above re: the deferred module-specific-background-with-fallback idea).
 
-### `event` (`ck2`-tagged passages) — 🔲 not started — **decision made, needs an extractor change**
+### Special event overlay (`ck2`-tagged passages) — ✅ built, extractor change shipped
+
+**How Cradle marks it**: purely a passage-registration tag, nothing inside the passage body itself.
+Every Cradle passage registers via `base.Passages["Name"] = new StoryPassage("Name", new string[]
+{ "tag1", ... }, mainMethod)` in its own `_Init` method; `"ck2"` in that array (alongside `"ck"` for
+hub) is the tag. Confirmed against the two real `ck2` passages in `cost-of-disease`
+(`AngryMobStorybook`, `TipsnTricks`) — their own bodies are ordinary text/lineBreak/link content
+with no special call. The actual "show overlay + play sound" behavior lived entirely in the
+original Unity app's own passage-tracking code, outside Cradle/MWS — the tag alone is the signal.
+
+**Extractor change, implemented**: `CradleExtractor.InferLayout` no longer maps `ck2` → a distinct
+`"event"` layout — a `ck2`-tagged passage gets `layout: "narration"` like any other (the old
+`event` layout is retired, including this template's own `layouts/event.mws.yaml`). A new
+`InsertSpecialEventOverlay` step (called from `BuildPassages`, after node-list finalization —
+title/subtitle heading-hoisting already ran and still works normally, so a `ck2` passage's own
+leading bold heading still becomes its `Title` exactly as before) prepends a single synthesized
+`text` node — `{ Template: "Special Event", Style: "special-event" }` — to the passage's own
+content when the tag is present. Nothing engine-side changed; `layout`/`style` were already
+generic, module-CSS-driven hooks (format spec §8), so this needed no new node type or reader
+change, only the extractor decision of *what* to emit.
+
+**Template-side implementation, built and demoed** (`Showcase_Event.mws.yaml`, now `layout:
+'narration'`, hand-authoring the same node shape extraction would produce): the synthesized text
+node's own content is visually hidden (`color: transparent`, kept for accessibility — a screen
+reader still announces "Special Event") in favor of the three overlay images — the center banner
+as the node's own `background-image`, the two flanking light-beam lines as `::before`/`::after`
+(the same technique the bracket links already use, chosen specifically because `::before`/`::after`
+don't render on a *replaced* element like an `image` node's `<img>` — a `text` node avoids that).
+`position: fixed; inset: 0` makes it a full-viewport layer regardless of where in the passage's
+scrollable content it was authored, both for the centered-on-screen placement the reference shows
+and so a `steps(1)`-keyframed `pointer-events` animation running on the same 3.5s timeline as the
+opacity fade can block clicks on the rest of the passage for the display's duration ("non-
+interactive during the display") without touching every link's own styling — `z-index: 999`, above
+the passage's own content but below `.mws-play-chrome` (1002), so back/pause navigation stays
+reachable throughout.
 
 - **Reference**: `Module-03D-Standard-Narration-with-Special-Event-Overlay.png`.
-- **What the screenshot actually shows**: a passage that is visually identical to a normal
-  `narration` passage (same `narration_normal.png` border, same progress bar, same parchment
-  content) with a large "SPECIAL EVENT" banner (orange embossed text, flanked by
-  `popup/special_event_line_left.png` / `special_event_text.png` / `special_event_line_right.png`)
-  overlaid across the middle of the page. Per the historical Unity behavior (`ViewSpecialEvent`),
-  this banner fades in then fades out, leaving the ordinary narration content visible underneath —
-  it is a **transient overlay effect**, not a distinct background/border treatment.
-- **Decided**: fold `ck2` into the `narration` branch of `CradleExtractor.InferLayout`
-  (`CradleExtractor.cs:1050-1053`) rather than aliasing a separate `event` layout — `event` stops
-  existing as a distinct `layout:` value. A `ck2`-tagged passage instead needs some other marker
-  (`style` field on the passage, or a dedicated flag) that `narration`'s chrome/CSS can key the
-  banner overlay off of. **This is an extractor code change** — not yet made; needs to happen before
-  re-extracting `cost-of-disease` (which currently has passages tagged `layout: event` from the old
-  behavior) or any other module with `ck2`-tagged content.
-- **OPEN QUESTION**: is the banner's fade-in/out timing/trigger meant to play once on passage entry
-  (CSS animation, `animation-fill-mode: forwards` ending in `display: none` or `opacity: 0`), or does
-  it need to be re-triggerable (e.g. on `StepBack`/replay)? Assuming "plays once per render" is fine
-  unless you say otherwise.
+- **Sound cue — deferred** (per your note): would attach to the same synthesized node, since it
+  plays on the same "passage just rendered" trigger as the fade-in: no mechanism designed yet.
+- **Not yet done**: `cost-of-disease`'s own `AngryMobStorybook`/`TipsnTricks` passages still carry
+  `layout: 'event'` from the old extraction — that only updates on a real re-extraction run, a
+  separate, bigger action on a module this session hasn't otherwise touched, not done as a side
+  effect of this change. `app.css`'s own `.mws-passage.layout-event` rule (a purple left border)
+  is deliberately left in place until then, so those two passages don't go fully unstyled in the
+  interim.
 
 ### `hub_early` / `hub_middle` / `hub_late` — ✅ built and visually approved
 
@@ -695,11 +719,10 @@ module's own extracted restext.
 Still open, layered on top of the pure CSS/asset/layout work above and probably deserving separate
 scoping:
 
-1. **`event` layout mapping** (§2 `event`) — decided: fold `ck2` into the `narration` branch of
-   `CradleExtractor.InferLayout`, replacing the separate `"event"` layout value with some other
-   marker `narration`'s chrome can key its banner overlay off of. Not yet implemented — re-running
-   extraction on any module with `ck2`-tagged passages (`cost-of-disease` currently has some tagged
-   `layout: event` from the old behavior) will need this landed first.
+1. ~~`event` layout mapping~~ — **done**, see §2's special event overlay entry. Still outstanding:
+   re-running extraction on `cost-of-disease` (its `AngryMobStorybook`/`TipsnTricks` passages still
+   carry the old `layout: event` until that happens) — a separate, bigger action not taken as a
+   side effect of the extractor change itself.
 2. **Score/tie-break row `section` wrapping** (§2 `score_panel`) — `ScoreEntry`, `TieBreaker1`,
    `TieBreaker2` passage overrides need each player row restructured from flat `text`/`input`
    sequences into `section`-wrapped rows so `player_highlight.png` can be applied as a per-row

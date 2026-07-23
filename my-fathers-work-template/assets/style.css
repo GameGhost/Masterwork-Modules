@@ -1289,14 +1289,82 @@ body {
     opacity: 0.75;
 }
 
-/* ── event ────────────────────────────────────────────────────────────────
-   app.css already gives .layout-event a purple left border; this adds the full-bleed dramatic
-   tone on top of it. */
+/* ── special event overlay (narration passages, "ck2"-tagged in Cradle) ────
+ * The reference app (ViewSpecialEvent) shows this as a transient banner fading in then out over
+ * ~3.5s on top of whatever narration content is already on screen — not a distinct passage
+ * background/border. The old full-bleed `event` layout is retired: a "ck2"-tagged passage is
+ * `narration` now, same as any other (see CradleExtractor.InsertSpecialEventOverlay in the code
+ * repo) — the extractor prepends a single synthesized `text` node (`style: 'special-event'`) to
+ * the passage's own content instead of picking a different layout.
+ *
+ * That text node's own content ("Special Event") is kept for accessibility — a screen reader
+ * still announces it — but visually hidden (`color: transparent`) in favor of the three overlay
+ * images: the center banner as this element's own `background-image`, the two flanking light-beam
+ * lines as `::before`/`::after`. This is the same "background-image + flanking pseudo-elements"
+ * technique the bracket links already use elsewhere in this file, chosen specifically because
+ * `::before`/`::after` don't render on a *replaced* element (an `image` node's `<img>`) — a `text`
+ * node avoids that entirely.
+ *
+ * `position: fixed; inset: 0` makes this a full-viewport layer regardless of where in the
+ * passage's scrollable content it was authored (prepended = renders "first", but fixed
+ * positioning takes it out of flow immediately, leaving no gap) — both for the centered-on-screen
+ * placement the reference shows, and so its own `pointer-events` can block clicks on the rest of
+ * the passage while visible ("non-interactive during the display") without touching every link's
+ * own styling. `z-index: 999` — above the passage's own border/content (≤1) and popups (1000/1001
+ * territory would be a real popup; this isn't one), below `.mws-play-chrome` (1002) so back/pause
+ * navigation stays reachable throughout. Sound cue deferred (per your note) — would attach here
+ * too, since it plays on the same "passage just rendered" trigger as the fade-in. */
+.mws-text.style-special-event {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    color: transparent;
+    background-image: url(image://popup/special_event_text);
+    background-repeat: no-repeat;
+    background-position: center 50vh;
+    background-size: 42vw auto;
+    pointer-events: none;
+    opacity: 0;
+    animation:
+        mws-special-event-fade 3.5s ease-in-out forwards,
+        mws-special-event-block 3.5s steps(1) forwards;
+}
 
-.mws-passage.layout-event {
-    background: #1c1013;
-    color: #f0e6e6;
-    padding: 2rem;
+.mws-text.style-special-event::before,
+.mws-text.style-special-event::after {
+    content: '';
+    position: fixed;
+    top: 50vh;
+    width: 24vw;
+    height: 3vh;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.mws-text.style-special-event::before {
+    right: calc(50% + 19vw);
+    background-image: url(image://popup/special_event_line_left);
+}
+
+.mws-text.style-special-event::after {
+    left: calc(50% + 19vw);
+    background-image: url(image://popup/special_event_line_right);
+}
+
+@keyframes mws-special-event-fade {
+    0% { opacity: 0; }
+    12% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Blocks clicks on the rest of the passage for basically the whole display — flips back to none
+   right as the fade-out (above) finishes, rather than staying inert a beat too long. */
+@keyframes mws-special-event-block {
+    0%, 99% { pointer-events: auto; }
+    100% { pointer-events: none; }
 }
 
 /* ── hub_early / hub_middle / hub_late ─────────────────────────────────────
