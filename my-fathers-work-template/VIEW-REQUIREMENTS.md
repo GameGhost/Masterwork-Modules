@@ -353,51 +353,79 @@ confirmed alongside `narration` in the same rounds of feedback.
 - **Assets**: background `backgrounds/leather_large.png`, same as narration (see its own entry
   above re: the deferred module-specific-background-with-fallback idea).
 
-### Special event overlay (`ck2`-tagged passages) — ✅ built, extractor change shipped
+### Special event overlay — ✅ built, verified working end-to-end
 
-**How Cradle marks it**: purely a passage-registration tag, nothing inside the passage body itself.
-Every Cradle passage registers via `base.Passages["Name"] = new StoryPassage("Name", new string[]
-{ "tag1", ... }, mainMethod)` in its own `_Init` method; `"ck2"` in that array (alongside `"ck"` for
-hub) is the tag. Confirmed against the two real `ck2` passages in `cost-of-disease`
-(`AngryMobStorybook`, `TipsnTricks`) — their own bodies are ordinary text/lineBreak/link content
-with no special call. The actual "show overlay + play sound" behavior lived entirely in the
-original Unity app's own passage-tracking code, outside Cradle/MWS — the tag alone is the signal.
+**How Cradle marks it**: NOT a passage tag — `"ck2"` was an earlier, wrong guess (it looked
+plausible sitting next to `"ck"`→hub, but is unrelated). The real signal is a bare
+`ViewSpecialEvent.instance.ShowEventPopup();` statement inside the passage body itself — a
+non-yield-returned call, so it produces no story output of its own in Cradle. Confirmed against
+all 9 real call sites in `cost-of-disease` (`S5Special1a`, `EvilHunter1Event`, `HunterConf2`,
+`UniEvent2-UltimateDisease`, `S5SpecialVote`, `WolvesVote`, `2p-FrenzyALT`, `GoodFrenzyEvent2`,
+`2p-S5SpecialVoteALT`): every one of them has an *empty* tags array, and neither `ck2`-tagged
+passage (`AngryMobStorybook`, `TipsnTricks`) contains the call at all — the two are completely
+disjoint. A `ck2`-tagged passage is just ordinary narration, nothing synthesized into it.
 
-**Extractor change, implemented**: `CradleExtractor.InferLayout` no longer maps `ck2` → a distinct
-`"event"` layout — a `ck2`-tagged passage gets `layout: "narration"` like any other (the old
-`event` layout is retired, including this template's own `layouts/event.mws.yaml`). A new
-`InsertSpecialEventOverlay` step (called from `BuildPassages`, after node-list finalization —
-title/subtitle heading-hoisting already ran and still works normally, so a `ck2` passage's own
-leading bold heading still becomes its `Title` exactly as before) prepends a single synthesized
-`text` node — `{ Template: "Special Event", Style: "special-event" }` — to the passage's own
-content when the tag is present. Nothing engine-side changed; `layout`/`style` were already
-generic, module-CSS-driven hooks (format spec §8), so this needed no new node type or reader
-change, only the extractor decision of *what* to emit.
+**Extractor change, implemented**: `PassageBodyVisitor.IsShowEventPopupCall` detects the call at
+its exact position in the body dispatch (checked before the generic ignorable-call fallback, since
+the call used to be silently swallowed there) and emits a synthesized `text` node —
+`{ Template: "Special Event", Style: "special-event" }` — at that call-site position, not forced to
+the front of the passage — some call sites (e.g. `S5Special1a`) have real narrative content (a bold
+title) before them. `CradleExtractor.InferLayout` never had a `ck2`→`"event"` mapping to begin with
+once this landed; a passage with the call still gets `layout: "narration"` like any other (the old
+`"event"` layout is retired, including this template's own `layouts/event.mws.yaml` and
+`cost-of-disease`'s own now-orphaned `layouts/event.mws.yaml` stub). One extra wrinkle:
+`CradleExtractor.CanJoinGroup`'s text-consolidation pass had to be taught to never merge a
+`style: "special-event"` node into an adjacent `TextNode` group (e.g. `S5Special1a`'s bold title
+immediately preceding it with no break) — otherwise the synthesized marker gets silently absorbed
+into the preceding heading's "dominant style" group and loses its own identity. Nothing engine-side
+changed; `layout`/`style` were already generic, module-CSS-driven hooks (format spec §8), so this
+needed no new node type or reader change, only the extractor decision of *what* to emit and *where*.
 
-**Template-side implementation, built and demoed** (`Showcase_Event.mws.yaml`, now `layout:
-'narration'`, hand-authoring the same node shape extraction would produce): the synthesized text
-node's own content is visually hidden (`color: transparent`, kept for accessibility — a screen
-reader still announces "Special Event") in favor of the three overlay images — the center banner
-as the node's own `background-image`, the two flanking light-beam lines as `::before`/`::after`
-(the same technique the bracket links already use, chosen specifically because `::before`/`::after`
-don't render on a *replaced* element like an `image` node's `<img>` — a `text` node avoids that).
-`position: fixed; inset: 0` makes it a full-viewport layer regardless of where in the passage's
-scrollable content it was authored, both for the centered-on-screen placement the reference shows
-and so a `steps(1)`-keyframed `pointer-events` animation running on the same 3.5s timeline as the
-opacity fade can block clicks on the rest of the passage for the display's duration ("non-
+**Serializer bug found and fixed along the way**: `MwsNodes.TextNode.ToDict()` only ever consumed
+`Style` to decide bold/italic markdown wrapping (`**...**`/`_..._`) and never wrote a `style:` key
+to the v0.3 output at all — so even with call-site detection correct, the synthesized overlay node's
+`special-event` style was silently dropped during serialization and never reached the YAML (caught
+via the `codcheck` scratch harness loading the module through the real `ModuleLoader`, not just the
+extractor-internal-type checks in `ExtractorTests.cs`, which is exactly the kind of gap that test
+strategy accepts in exchange for format-revision stability — see `V2SerializerTests.cs`, which now
+has regression coverage for both the emphasis-baked and real-`style:`-field cases). Fixed by emitting
+`style:` for any non-emphasis `TextNode.Style` value.
+
+**Template-side implementation, built, demoed, and tuned against the real extracted content**
+(`Showcase_Event.mws.yaml`, `layout: 'narration'`, hand-authoring the same node shape extraction
+produces): the synthesized text node's own content is visually hidden (`color: transparent`, kept
+for accessibility — a screen reader still announces "Special Event") in favor of the three overlay
+images — the center banner as the node's own `background-image`, the two flanking light-beam lines
+as `::before`/`::after` (the same technique the bracket links already use, chosen specifically
+because `::before`/`::after` don't render on a *replaced* element like an `image` node's `<img>` — a
+`text` node avoids that). `position: fixed; inset: 0` makes it a full-viewport layer regardless of
+where in the passage's scrollable content it was authored, both for the centered placement the
+reference shows and so a `steps(1)`-keyframed `pointer-events` animation running on the same timeline
+as the opacity fade can block clicks on the rest of the passage for the display's duration ("non-
 interactive during the display") without touching every link's own styling — `z-index: 999`, above
 the passage's own content but below `.mws-play-chrome` (1002), so back/pause navigation stays
-reachable throughout.
+reachable throughout. Tuned after seeing it play against real extracted passages (`S5Special1a` etc.):
+a `rgba(0, 0, 0, 0.8)` full-screen scrim behind the banner (the reference app's own narration text
+underneath was too legible/distracting through a fully transparent overlay), banner
+`background-position` centered on the viewport rather than pinned to `50vh` (reads better once real
+passage content of varying length sits underneath), taller flanking light-beam lines (`9vh`, up from
+`3vh`, centered via `calc(50% - 5vh)` instead of a `translateY` transform now that the box itself
+carries the height), and a slower fade (`6s`, up from `3.5s`, ramping to full opacity by `5%` instead
+of `12%`) so the "non-interactive" window feels intentional rather than a stutter before the passage
+becomes clickable.
 
 - **Reference**: `Module-03D-Standard-Narration-with-Special-Event-Overlay.png`.
 - **Sound cue — deferred** (per your note): would attach to the same synthesized node, since it
   plays on the same "passage just rendered" trigger as the fade-in: no mechanism designed yet.
-- **Not yet done**: `cost-of-disease`'s own `AngryMobStorybook`/`TipsnTricks` passages still carry
-  `layout: 'event'` from the old extraction — that only updates on a real re-extraction run, a
-  separate, bigger action on a module this session hasn't otherwise touched, not done as a side
-  effect of this change. `app.css`'s own `.mws-passage.layout-event` rule (a purple left border)
-  is deliberately left in place until then, so those two passages don't go fully unstyled in the
-  interim.
+- **Done**: `cost-of-disease` has been re-extracted with the corrected, call-site-based detection.
+  `AngryMobStorybook`/`TipsnTricks` are back to plain `layout: 'narration'` with no overlay node
+  (they were never real special events); all 9 real `ShowEventPopup()` passages now carry the
+  overlay node — with a real `style: 'special-event'` field, once the serializer bug above was also
+  fixed — at their correct call-site position. The now-dead `app.css` `.mws-passage.layout-event`
+  rule and `cost-of-disease/layouts/event.mws.yaml` stub (both kept around only for those two
+  passages' old, incorrect `layout: 'event'`) have been removed.
+- **Confirmed working in-browser** against the real re-extracted content, CSS tuned per the notes
+  above. Locked in.
 
 ### `hub_early` / `hub_middle` / `hub_late` — ✅ built and visually approved
 
@@ -719,10 +747,8 @@ module's own extracted restext.
 Still open, layered on top of the pure CSS/asset/layout work above and probably deserving separate
 scoping:
 
-1. ~~`event` layout mapping~~ — **done**, see §2's special event overlay entry. Still outstanding:
-   re-running extraction on `cost-of-disease` (its `AngryMobStorybook`/`TipsnTricks` passages still
-   carry the old `layout: event` until that happens) — a separate, bigger action not taken as a
-   side effect of the extractor change itself.
+1. ~~`event` layout mapping~~ — **done**, see §2's special event overlay entry, including the
+   re-extraction of `cost-of-disease` with the corrected call-site-based detection.
 2. **Score/tie-break row `section` wrapping** (§2 `score_panel`) — `ScoreEntry`, `TieBreaker1`,
    `TieBreaker2` passage overrides need each player row restructured from flat `text`/`input`
    sequences into `section`-wrapped rows so `player_highlight.png` can be applied as a per-row

@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'FailedMeeting'
-# ../en-US.restext:2550 | "Failed Meeting"
+# ../en-US.restext:2551 | "Failed Meeting"
 title: 'restext://FailedMeeting_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:32192
 - type: 'text'
-  # ../en-US.restext:2551 | "The family's eccentriciti..."
+  # ../en-US.restext:2552 | "The family's eccentriciti..."
   value: 'restext://FailedMeeting_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:32195
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:32197
 - type: 'text'
-  # ../en-US.restext:2552 | "Their presence was more h..."
+  # ../en-US.restext:2553 | "Their presence was more h..."
   value: 'restext://FailedMeeting_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:32199
 - type: 'break'
@@ -26,7 +26,7 @@ nodes:
   # ../en-US.restext:36 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'Devastation1' # ./00004-Devastation1.mws.yaml
-  # ../en-US.restext:344 | "Close"
+  # ../en-US.restext:345 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -37,5 +37,5 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:32222
   - type: 'text'
-    # ../en-US.restext:2553 | "**You gain 1 {icon:creepy..."
+    # ../en-US.restext:2554 | "**You gain 1 {icon:creepy..."
     value: 'restext://FailedMeeting_004'

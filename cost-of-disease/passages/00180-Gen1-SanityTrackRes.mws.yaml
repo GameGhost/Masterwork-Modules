@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Gen1-SanityTrackRes'
-# ../en-US.restext:1623 | "A Letter From an Old Friend"
+# ../en-US.restext:1624 | "A Letter From an Old Friend"
 title: 'restext://Gen1_SanityTrackRes_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:21252
 - type: 'text'
-  # ../en-US.restext:1624 | "**Carefully hand this sto..."
+  # ../en-US.restext:1625 | "**Carefully hand this sto..."
   value: 'restext://Gen1_SanityTrackRes_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:21257
 - type: 'break'
@@ -21,21 +21,21 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:21270
   - type: 'text'
-    # ../en-US.restext:1625 | "\"You shouldn't drive you..."
+    # ../en-US.restext:1626 | "\"You shouldn't drive you..."
     value: 'restext://Gen1_SanityTrackRes_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:21273
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:21275
   - type: 'text'
-    # ../en-US.restext:1626 | "While the nature of their..."
+    # ../en-US.restext:1627 | "While the nature of their..."
     value: 'restext://Gen1_SanityTrackRes_004'
   # ../.source/TheCostofDisease_Eng_v10.cs:21278
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:21280
   - type: 'text'
-    # ../en-US.restext:1627 | "While this time away coul..."
+    # ../en-US.restext:1628 | "While this time away coul..."
     value: 'restext://Gen1_SanityTrackRes_005'
   # ../.source/TheCostofDisease_Eng_v10.cs:21294
   - type: 'break'
@@ -49,7 +49,7 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:21302
   - type: 'link'
-    # ../en-US.restext:1628 | "Accept the offer and pay ..."
+    # ../en-US.restext:1629 | "Accept the offer and pay ..."
     label: 'restext://Gen1_SanityTrackRes_006'
     target: 'Gen1SanityYes' # ./00298-Gen1SanityYes.mws.yaml
     snapshot: true
@@ -57,13 +57,13 @@ nodes:
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:21304
   - type: 'text'
-    # ../en-US.restext:349 | "OR"
+    # ../en-US.restext:350 | "OR"
     value: 'restext://UIButton_Or'
   # ../.source/TheCostofDisease_Eng_v10.cs:21305
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:21306
   - type: 'link'
-    # ../en-US.restext:1629 | "Refuse. (Avoid the penalt..."
+    # ../en-US.restext:1630 | "Refuse. (Avoid the penalt..."
     label: 'restext://Gen1_SanityTrackRes_007'
     target: 'Gen1SanityNo' # ./00299-Gen1SanityNo.mws.yaml
     snapshot: true

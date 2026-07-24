@@ -45,7 +45,7 @@ nodes:
     - type: 'input'
       label: ''
       var: 'creationC'
-    # ../en-US.restext:346 | "Continue"
+    # ../en-US.restext:347 | "Continue"
     okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'
@@ -70,7 +70,7 @@ nodes:
   expr: '["restext://Masterwork_Adjective_Infamous", "restext://Masterwork_Adjective_Transcendent", "restext://Masterwork_Adjective_Monumental", "restext://Masterwork_Adjective_Nefarious", "restext://Masterwork_Adjective_Unspeakable", "restext://Masterwork_Adjective_Legendary", "restext://Masterwork_Adjective_Noble", "restext://Masterwork_Adjective_Phenomenal", "restext://Masterwork_Adjective_Stunning", "restext://Masterwork_Adjective_Masterful", "restext://Masterwork_Adjective_Insidious"].shuffled("NewMaster3C_0")[0]'
 # ../.source/TheCostofDisease_Eng_v10.cs:17655
 - type: 'text'
-  # ../en-US.restext:1370 | "**The {_rnd_NewMaster3C_0..."
+  # ../en-US.restext:1371 | "**The {_rnd_NewMaster3C_0..."
   value: 'restext://NewMaster3C_001'
   lets:
   - '_rnd_NewMaster3C_0'

@@ -15,7 +15,7 @@ nodes:
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:19228
   - type: 'text'
-    # ../en-US.restext:1467 | "**The Effects of Immortal..."
+    # ../en-US.restext:1468 | "**The Effects of Immortal..."
     value: 'restext://DetEffectRandom_001'
   # ../.source/TheCostofDisease_Eng_v10.cs:19229
   - type: 'switch'
@@ -25,27 +25,27 @@ nodes:
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:19231
       - type: 'text'
-        # ../en-US.restext:1468 | "**- Early Years**"
+        # ../en-US.restext:1469 | "**- Early Years**"
         value: 'restext://DetEffectRandom_002'
     - match: 17
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:19236
       - type: 'text'
-        # ../en-US.restext:1469 | "**- Middle Years**"
+        # ../en-US.restext:1470 | "**- Middle Years**"
         value: 'restext://DetEffectRandom_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:19248
   - type: 'let'
     var: '_rnd_DetEffectRandom_0'
-    # ../en-US.restext:1470 | DetEffectRandom_004 | "as a spider held by a thr..."
-    # ../en-US.restext:1471 | DetEffectRandom_005 | "as a candle flame amongst..."
-    # ../en-US.restext:1472 | DetEffectRandom_006 | "as a pendulous dagger per..."
+    # ../en-US.restext:1471 | DetEffectRandom_004 | "as a spider held by a thr..."
+    # ../en-US.restext:1472 | DetEffectRandom_005 | "as a candle flame amongst..."
+    # ../en-US.restext:1473 | DetEffectRandom_006 | "as a pendulous dagger per..."
     expr: '["restext://DetEffectRandom_004", "restext://DetEffectRandom_005", "restext://DetEffectRandom_006"].shuffled("DetEffectRandom_0")[0]'
   # ../.source/TheCostofDisease_Eng_v10.cs:19239
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:19247
   - type: 'text'
-    # ../en-US.restext:1473 | "It cannot be overstated: ..."
+    # ../en-US.restext:1474 | "It cannot be overstated: ..."
     value: 'restext://DetEffectRandom_007'
     lets:
     - '_rnd_DetEffectRandom_0'
@@ -54,7 +54,7 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:19251
   - type: 'link'
-    # ../en-US.restext:1474 | "Click to see the effects..."
+    # ../en-US.restext:1475 | "Click to see the effects..."
     label: 'restext://DetEffectRandom_008'
     target: 'EffectRandomizer' # ./00279-EffectRandomizer.mws.yaml
     snapshot: true

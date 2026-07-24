@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'EradicateDisease'
-# ../en-US.restext:1412 | "The Cure"
+# ../en-US.restext:1413 | "The Cure"
 title: 'restext://EradicateDisease_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:18580
 - type: 'text'
-  # ../en-US.restext:1413 | "They dined together on we..."
+  # ../en-US.restext:1414 | "They dined together on we..."
   value: 'restext://EradicateDisease_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:18581
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:18583
 - type: 'text'
-  # ../en-US.restext:1414 | "While they agreed that for a "
+  # ../en-US.restext:1415 | "While they agreed that for a "
   value: 'restext://EradicateDisease_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:18584
 - type: 'switch'
@@ -25,36 +25,36 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:18586
     - type: 'text'
-      # ../en-US.restext:1415 | "duo"
+      # ../en-US.restext:1416 | "duo"
       value: 'restext://EradicateDisease_004'
   - match: 3
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:18590
     - type: 'text'
-      # ../en-US.restext:1416 | "trio"
+      # ../en-US.restext:1417 | "trio"
       value: 'restext://EradicateDisease_005'
   - match: 4
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:18594
     - type: 'text'
-      # ../en-US.restext:1417 | "quartet"
+      # ../en-US.restext:1418 | "quartet"
       value: 'restext://EradicateDisease_006'
   - match: 5
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:18598
     - type: 'text'
-      # ../en-US.restext:1418 | "quintet"
+      # ../en-US.restext:1419 | "quintet"
       value: 'restext://EradicateDisease_007'
 # ../.source/TheCostofDisease_Eng_v10.cs:18600
 - type: 'text'
-  # ../en-US.restext:1419 | " of respectable, infamous..."
+  # ../en-US.restext:1420 | " of respectable, infamous..."
   value: 'restext://EradicateDisease_008'
 # ../.source/TheCostofDisease_Eng_v10.cs:18602
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:18604
 - type: 'text'
-  # ../en-US.restext:1420 | "They decided to leave the..."
+  # ../en-US.restext:1421 | "They decided to leave the..."
   value: 'restext://EradicateDisease_009'
 # ../.source/TheCostofDisease_Eng_v10.cs:18606
 - type: 'break'
@@ -65,7 +65,7 @@ nodes:
   # ../en-US.restext:36 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'ChooseScience' # ./00124-ChooseScience.mws.yaml
-  # ../en-US.restext:344 | "Close"
+  # ../en-US.restext:345 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -76,5 +76,5 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:18628
   - type: 'text'
-    # ../en-US.restext:1421 | "Place the **Yellow Fever ..."
+    # ../en-US.restext:1422 | "Place the **Yellow Fever ..."
     value: 'restext://EradicateDisease_010'

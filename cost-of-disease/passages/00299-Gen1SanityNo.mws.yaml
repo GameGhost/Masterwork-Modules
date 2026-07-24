@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Gen1SanityNo'
-# ../en-US.restext:2465 | "Time is Precious"
+# ../en-US.restext:2466 | "Time is Precious"
 title: 'restext://Gen1SanityNo_001'
 layout: 'narration'
 nodes:
@@ -13,7 +13,7 @@ nodes:
   expr: '"restext://Choice_No_Lower"'
 # ../.source/TheCostofDisease_Eng_v10.cs:30805
 - type: 'text'
-  # ../en-US.restext:2466 | "There was no time to rest..."
+  # ../en-US.restext:2467 | "There was no time to rest..."
   value: 'restext://Gen1SanityNo_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:30812
 - type: 'conditional'
@@ -40,7 +40,7 @@ nodes:
     # ../en-US.restext:36 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: '${round == 1 ? "Fever1" : round == 2 ? "Fever2" : "Fever3"}' # ./00002-Fever1.mws.yaml, ./00029-Fever2.mws.yaml, ./00030-Fever3.mws.yaml
-    # ../en-US.restext:344 | "Close"
+    # ../en-US.restext:345 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -58,7 +58,7 @@ nodes:
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:30860
     - type: 'text'
-      # ../en-US.restext:2467 | "Gain **$1**. Gain **1** {..."
+      # ../en-US.restext:2468 | "Gain **$1**. Gain **1** {..."
       value: 'restext://Gen1SanityNo_003'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:30826

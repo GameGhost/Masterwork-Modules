@@ -19,12 +19,12 @@ nodes:
     layout: 'input-popup'
     content:
     - type: 'text'
-      # ../en-US.restext:2665 | "Please enter the final sc..."
+      # ../en-US.restext:2666 | "Please enter the final sc..."
       value: 'restext://ScoreEntryP5_001'
     - type: 'input'
       label: ''
       var: 'scoreE'
-    # ../en-US.restext:346 | "Continue"
+    # ../en-US.restext:347 | "Continue"
     okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'
@@ -34,7 +34,7 @@ nodes:
     target: 'ScoreEntryP5' # ./00331-ScoreEntryP5.mws.yaml
 # ../.source/TheCostofDisease_Eng_v10.cs:33691
 - type: 'text'
-  # ../en-US.restext:2666 | "Thank you for recording t..."
+  # ../en-US.restext:2667 | "Thank you for recording t..."
   value: 'restext://ScoreEntryP5_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:33694
 - type: 'break'

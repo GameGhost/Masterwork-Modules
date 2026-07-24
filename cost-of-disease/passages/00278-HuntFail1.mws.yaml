@@ -7,31 +7,31 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:28866
 - type: 'let'
   var: '_rnd_HuntFail1_0'
-  # ../en-US.restext:2327 | HuntFail1_001 | "Miserable"
-  # ../en-US.restext:2328 | HuntFail1_002 | "Woeful"
-  # ../en-US.restext:2329 | HuntFail1_003 | "Dismal"
-  # ../en-US.restext:2330 | HuntFail1_004 | "Pathetic"
-  # ../en-US.restext:2331 | HuntFail1_005 | "Grim"
+  # ../en-US.restext:2328 | HuntFail1_001 | "Miserable"
+  # ../en-US.restext:2329 | HuntFail1_002 | "Woeful"
+  # ../en-US.restext:2330 | HuntFail1_003 | "Dismal"
+  # ../en-US.restext:2331 | HuntFail1_004 | "Pathetic"
+  # ../en-US.restext:2332 | HuntFail1_005 | "Grim"
   expr: '["restext://HuntFail1_001", "restext://HuntFail1_002", "restext://HuntFail1_003", "restext://HuntFail1_004", "restext://HuntFail1_005"].shuffled("HuntFail1_0")[0]'
 # ../.source/TheCostofDisease_Eng_v10.cs:28866
 - type: 'text'
-  # ../en-US.restext:2332 | "**{_rnd_HuntFail1_0} Fail..."
+  # ../en-US.restext:2333 | "**{_rnd_HuntFail1_0} Fail..."
   value: 'restext://HuntFail1_006'
   lets:
   - '_rnd_HuntFail1_0'
 # ../.source/TheCostofDisease_Eng_v10.cs:28876
 - type: 'let'
   var: '_rnd_HuntFail1_1'
-  # ../en-US.restext:2333 | HuntFail1_007 | "seemed to cackle to itself"
-  # ../en-US.restext:2334 | HuntFail1_008 | "issued a triumphant wail"
-  # ../en-US.restext:2335 | HuntFail1_009 | "smiled with an unsettling grin"
+  # ../en-US.restext:2334 | HuntFail1_007 | "seemed to cackle to itself"
+  # ../en-US.restext:2335 | HuntFail1_008 | "issued a triumphant wail"
+  # ../en-US.restext:2336 | HuntFail1_009 | "smiled with an unsettling grin"
   expr: '["restext://HuntFail1_007", "restext://HuntFail1_008", "restext://HuntFail1_009"].shuffled("HuntFail1_1")[0]'
 # ../.source/TheCostofDisease_Eng_v10.cs:28870
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:28872
 - type: 'text'
-  # ../en-US.restext:2336 | "It had all occurred so qu..."
+  # ../en-US.restext:2337 | "It had all occurred so qu..."
   value: 'restext://HuntFail1_010'
   lets:
   - '_rnd_HuntFail1_1'
@@ -44,7 +44,7 @@ nodes:
   # ../en-US.restext:36 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 13 ? "Prosperity2" : "HuntSuccessCheck"}' # ./00120-Prosperity2.mws.yaml, ./00317-HuntSuccessCheck.mws.yaml
-  # ../en-US.restext:344 | "Close"
+  # ../en-US.restext:345 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -55,5 +55,5 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:28905
   - type: 'text'
-    # ../en-US.restext:2337 | "All players participating..."
+    # ../en-US.restext:2338 | "All players participating..."
     value: 'restext://HuntFail1_011'

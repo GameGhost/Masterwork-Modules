@@ -2,14 +2,12 @@
 ---
 format: 'mws/0.4'
 passage_id: 'AngryMobStorybook'
+# ../en-US.restext:1906 | "A Frightful Day"
+title: 'restext://AngryMobStorybook_001'
 tags:
 - 'ck2'
-layout: 'event'
+layout: 'narration'
 nodes:
-# ../.source/TheCostofDisease_Eng_v10.cs:24147
-- type: 'text'
-  # ../en-US.restext:1905 | "**A Frightful Day**"
-  value: 'restext://AngryMobStorybook_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:24150
 - type: 'assign'
   var: 'amtoken'
@@ -18,63 +16,60 @@ nodes:
 - type: 'assign'
   var: 'gen3pg'
   expr: '1'
-# ../.source/TheCostofDisease_Eng_v10.cs:24149
-- type: 'break'
-  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:24153
 - type: 'conditional'
   if: 'amtoken == 1'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:24155
   - type: 'text'
-    # ../en-US.restext:1910 | "There were moments when t..."
+    # ../en-US.restext:1911 | "There were moments when t..."
     value: 'restext://AngryMobStorybook_006'
   # ../.source/TheCostofDisease_Eng_v10.cs:24160
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:24162
   - type: 'text'
-    # ../en-US.restext:1911 | "As such, it was a calm Su..."
+    # ../en-US.restext:1912 | "As such, it was a calm Su..."
     value: 'restext://AngryMobStorybook_007'
   # ../.source/TheCostofDisease_Eng_v10.cs:24164
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:24166
   - type: 'text'
-    # ../en-US.restext:1912 | "He placed the scrap onto ..."
+    # ../en-US.restext:1913 | "He placed the scrap onto ..."
     value: 'restext://AngryMobStorybook_008'
   # ../.source/TheCostofDisease_Eng_v10.cs:24169
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:24171
   - type: 'text'
-    # ../en-US.restext:1913 | "Another good servant gone..."
+    # ../en-US.restext:1914 | "Another good servant gone..."
     value: 'restext://AngryMobStorybook_009'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:24177
   - type: 'text'
-    # ../en-US.restext:1906 | "To be awakened early morn..."
+    # ../en-US.restext:1907 | "To be awakened early morn..."
     value: 'restext://AngryMobStorybook_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:24179
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:24181
   - type: 'text'
-    # ../en-US.restext:1907 | "A woman in a modest blue ..."
+    # ../en-US.restext:1908 | "A woman in a modest blue ..."
     value: 'restext://AngryMobStorybook_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:24182
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:24184
   - type: 'text'
-    # ../en-US.restext:1908 | "A monster stood nearby, c..."
+    # ../en-US.restext:1909 | "A monster stood nearby, c..."
     value: 'restext://AngryMobStorybook_004'
   # ../.source/TheCostofDisease_Eng_v10.cs:24188
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:24190
   - type: 'text'
-    # ../en-US.restext:1909 | "Perhaps it was unavoidabl..."
+    # ../en-US.restext:1910 | "Perhaps it was unavoidabl..."
     value: 'restext://AngryMobStorybook_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:24193
 - type: 'break'
@@ -85,7 +80,7 @@ nodes:
   # ../en-US.restext:36 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 13 ? "Prosperity1" : round == 14 ? "Prosperity2" : "Prosperity3"}' # ./00352-Prosperity1.mws.yaml, ./00120-Prosperity2.mws.yaml, ./00121-Prosperity3.mws.yaml
-  # ../en-US.restext:344 | "Close"
+  # ../en-US.restext:345 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -96,7 +91,7 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:24231
   - type: 'text'
-    # ../en-US.restext:1914 | "Return a Servant to Lost. "
+    # ../en-US.restext:1915 | "Return a Servant to Lost. "
     value: 'restext://AngryMobStorybook_010'
   # ../.source/TheCostofDisease_Eng_v10.cs:24232
   - type: 'conditional'
@@ -108,7 +103,7 @@ nodes:
       expr: 'rand_between(2, 3, "AngryMobStorybook_1")'
     # ../.source/TheCostofDisease_Eng_v10.cs:24234
     - type: 'text'
-      # ../en-US.restext:1915 | "Then lose **{_rnd_AngryMo..."
+      # ../en-US.restext:1916 | "Then lose **{_rnd_AngryMo..."
       value: 'restext://AngryMobStorybook_011'
       lets:
       - '_rnd_AngryMobStorybook_0'
@@ -117,5 +112,5 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:24244
   - type: 'text'
-    # ../en-US.restext:1916 | "Move your {icon:creepy_ic..."
+    # ../en-US.restext:1917 | "Move your {icon:creepy_ic..."
     value: 'restext://AngryMobStorybook_012'

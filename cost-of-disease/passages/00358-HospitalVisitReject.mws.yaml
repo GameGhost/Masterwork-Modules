@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'HospitalVisitReject'
-# ../en-US.restext:2821 | "Kind Rejection"
+# ../en-US.restext:2822 | "Kind Rejection"
 title: 'restext://HospitalVisitReject_001'
 tags:
 - 'revised'
@@ -10,14 +10,14 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:14877
 - type: 'text'
-  # ../en-US.restext:2822 | "Legal proceedings were st..."
+  # ../en-US.restext:2823 | "Legal proceedings were st..."
   value: 'restext://HospitalVisitReject_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:14883
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:14885
 - type: 'text'
-  # ../en-US.restext:2823 | "Was it madness that drove..."
+  # ../en-US.restext:2824 | "Was it madness that drove..."
   value: 'restext://HospitalVisitReject_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:14888
 - type: 'break'
@@ -28,7 +28,7 @@ nodes:
   # ../en-US.restext:52 | "Click to return..."
   label: 'restext://Click_Return'
   target: '${round == 7 ? "Hospital1" : round == 8 ? "Hospital2" : "Hospital3"}' # ./00003-Hospital1.mws.yaml, ./00034-Hospital2.mws.yaml, ./00035-Hospital3.mws.yaml
-  # ../en-US.restext:344 | "Close"
+  # ../en-US.restext:345 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -39,5 +39,5 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:14919
   - type: 'text'
-    # ../en-US.restext:2824 | "Gain 1 {icon:creepy_icon}."
+    # ../en-US.restext:2825 | "Gain 1 {icon:creepy_icon}."
     value: 'restext://HospitalVisitReject_004'

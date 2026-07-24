@@ -2,20 +2,25 @@
 ---
 format: 'mws/0.4'
 passage_id: 'EvilHunter1Event'
-# ../en-US.restext:1655 | "Preposterous"
+# ../en-US.restext:1656 | "Preposterous"
 title: 'restext://EvilHunter1Event_001'
 layout: 'narration'
 nodes:
+# ../.source/TheCostofDisease_Eng_v10.cs:21714
+- type: 'text'
+  # ../en-US.restext:304 | "Special Event"
+  value: 'restext://SpecialEvent_Title'
+  style: 'special-event'
 # ../.source/TheCostofDisease_Eng_v10.cs:21715
 - type: 'text'
-  # ../en-US.restext:1656 | "And how could they be sur..."
+  # ../en-US.restext:1657 | "And how could they be sur..."
   value: 'restext://EvilHunter1Event_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:21720
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:21722
 - type: 'text'
-  # ../en-US.restext:1657 | "But, perhaps a sense of s..."
+  # ../en-US.restext:1658 | "But, perhaps a sense of s..."
   value: 'restext://EvilHunter1Event_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:21723
 - type: 'break'
@@ -28,27 +33,27 @@ nodes:
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:21730
 - type: 'text'
-  # ../en-US.restext:1658 | "All players take their Vo..."
+  # ../en-US.restext:1659 | "All players take their Vo..."
   value: 'restext://EvilHunter1Event_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:21733
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:21735
 - type: 'text'
-  # ../en-US.restext:1659 | "A **Yay** vote is a vote ..."
+  # ../en-US.restext:1660 | "A **Yay** vote is a vote ..."
   value: 'restext://EvilHunter1Event_006'
 # ../.source/TheCostofDisease_Eng_v10.cs:21748
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:21749
 - type: 'text'
-  # ../en-US.restext:1660 | "A **Nay** vote is a vote ..."
+  # ../en-US.restext:1661 | "A **Nay** vote is a vote ..."
   value: 'restext://EvilHunter1Event_007'
 # ../.source/TheCostofDisease_Eng_v10.cs:21761
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:21763
 - type: 'text'
-  # ../en-US.restext:357 | "When all players have cho..."
+  # ../en-US.restext:358 | "When all players have cho..."
   value: 'restext://Vote_TallyRule_A'
 # ../.source/TheCostofDisease_Eng_v10.cs:21769
 - type: 'break'
@@ -59,6 +64,6 @@ nodes:
   # ../en-US.restext:60 | "Click here to start the v..."
   label: 'restext://Click_StartVote'
   target: 'EvilHunter1Event2' # ./00351-EvilHunter1Event2.mws.yaml
-  # ../en-US.restext:344 | "Close"
+  # ../en-US.restext:345 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: false

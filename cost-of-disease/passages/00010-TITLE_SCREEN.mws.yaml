@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TITLE SCREEN'
-# ../en-US.restext:330 | "MY FATHER'S WORK"
+# ../en-US.restext:331 | "MY FATHER'S WORK"
 title: 'restext://Title_MyFathersWork'
 tags:
 - 'ck'
@@ -15,7 +15,7 @@ nodes:
   content: []
 # ../.source/TheCostofDisease_Eng_v10.cs:2657
 - type: 'text'
-  # ../en-US.restext:444 | "_A clever game by_ T. C. ..."
+  # ../en-US.restext:445 | "_A clever game by_ T. C. ..."
   value: 'restext://TITLE_SCREEN_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:2662
 - type: 'assign'
@@ -26,14 +26,14 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:2668
 - type: 'text'
-  # ../en-US.restext:445 | "How many individuals will..."
+  # ../en-US.restext:446 | "How many individuals will..."
   value: 'restext://TITLE_SCREEN_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:2669
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:2672
 - type: 'link'
-  # ../en-US.restext:446 | "2 Players."
+  # ../en-US.restext:447 | "2 Players."
   label: 'restext://TITLE_SCREEN_004'
   target: 'PlayerNameIntro' # ./00075-PlayerNameIntro.mws.yaml
   snapshot: true
@@ -46,7 +46,7 @@ nodes:
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:2675
 - type: 'link'
-  # ../en-US.restext:447 | "3 Players."
+  # ../en-US.restext:448 | "3 Players."
   label: 'restext://TITLE_SCREEN_005'
   target: 'PlayerNameIntro' # ./00075-PlayerNameIntro.mws.yaml
   snapshot: true
@@ -59,7 +59,7 @@ nodes:
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:2678
 - type: 'link'
-  # ../en-US.restext:448 | "4 Players."
+  # ../en-US.restext:449 | "4 Players."
   label: 'restext://TITLE_SCREEN_006'
   target: 'PlayerNameIntro' # ./00075-PlayerNameIntro.mws.yaml
   snapshot: true

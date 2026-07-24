@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'CureNegCons'
-# ../en-US.restext:2084 | "Distrust in Medicine"
+# ../en-US.restext:2085 | "Distrust in Medicine"
 title: 'restext://CureNegCons_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:26560
 - type: 'text'
-  # ../en-US.restext:2085 | "With the Hospital slowly ..."
+  # ../en-US.restext:2086 | "With the Hospital slowly ..."
   value: 'restext://CureNegCons_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:26561
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:26563
 - type: 'text'
-  # ../en-US.restext:2086 | "Having no target for thei..."
+  # ../en-US.restext:2087 | "Having no target for thei..."
   value: 'restext://CureNegCons_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:26566
 - type: 'break'
@@ -26,7 +26,7 @@ nodes:
   # ../en-US.restext:36 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'OptiontoKillStart' # ./00281-OptiontoKillStart.mws.yaml
-  # ../en-US.restext:344 | "Close"
+  # ../en-US.restext:345 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -48,5 +48,5 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:26597
   - type: 'text'
-    # ../en-US.restext:2087 | "**Move the** {icon:angrym..."
+    # ../en-US.restext:2088 | "**Move the** {icon:angrym..."
     value: 'restext://CureNegCons_004'

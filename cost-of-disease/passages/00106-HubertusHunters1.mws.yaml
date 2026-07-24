@@ -13,7 +13,7 @@ nodes:
     target: 'FailedMeeting' # ./00313-FailedMeeting.mws.yaml
 # ../.source/TheCostofDisease_Eng_v10.cs:11579
 - type: 'text'
-  # ../en-US.restext:312 | "**Carefully pick up the s..."
+  # ../en-US.restext:313 | "**Carefully pick up the s..."
   value: 'restext://Storybook_PickUpPrivate_Plain'
 # ../.source/TheCostofDisease_Eng_v10.cs:11582
 - type: 'break'
@@ -37,7 +37,7 @@ nodes:
     expr: 'rand_between(1, 29, "HubertusHunters1_1")'
   # ../.source/TheCostofDisease_Eng_v10.cs:11622
   - type: 'text'
-    # ../en-US.restext:1151 | "**Upon a Secret Meeting -..."
+    # ../en-US.restext:1152 | "**Upon a Secret Meeting -..."
     value: 'restext://HubertusHunters1_001'
     lets:
     - '_rnd_HubertusHunters1_0'
@@ -62,7 +62,7 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:11639
     - type: 'text'
-      # ../en-US.restext:1152 | "amusingly exploitative. T..."
+      # ../en-US.restext:1153 | "amusingly exploitative. T..."
       value: 'restext://HubertusHunters1_004'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:11649

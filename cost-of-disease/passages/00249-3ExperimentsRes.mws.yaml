@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: '3ExperimentsRes'
-# ../en-US.restext:315 | "Advancements in {sci3}"
+# ../en-US.restext:316 | "Advancements in {sci3}"
 title: 'restext://Title_AdvancementsIn'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:26918
 - type: 'text'
-  # ../en-US.restext:2117 | "As the years ambled onwar..."
+  # ../en-US.restext:2118 | "As the years ambled onwar..."
   value: 'restext://_3ExperimentsRes_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:26919
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:26921
 - type: 'text'
-  # ../en-US.restext:2118 | "One such visitation occur..."
+  # ../en-US.restext:2119 | "One such visitation occur..."
   value: 'restext://_3ExperimentsRes_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:26925
 - type: 'switch'
@@ -26,32 +26,32 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:26927
     - type: 'text'
-      # ../en-US.restext:2119 | "display of colorful Chemi..."
+      # ../en-US.restext:2120 | "display of colorful Chemi..."
       value: 'restext://_3ExperimentsRes_003'
   # ../en-US.restext:121 | "Chemistry"
   - match: 'restext://Focus_Chemistry'
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:26932
     - type: 'text'
-      # ../en-US.restext:2120 | "labyrinthine weaving of r..."
+      # ../en-US.restext:2121 | "labyrinthine weaving of r..."
       value: 'restext://_3ExperimentsRes_004'
   # ../en-US.restext:124 | "Engineering"
   - match: 'restext://Focus_Engineering'
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:26937
     - type: 'text'
-      # ../en-US.restext:2121 | "vestibule filled with ele..."
+      # ../en-US.restext:2122 | "vestibule filled with ele..."
       value: 'restext://_3ExperimentsRes_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:26940
 - type: 'text'
-  # ../en-US.restext:2122 | " Certainly immense stride..."
+  # ../en-US.restext:2123 | " Certainly immense stride..."
   value: 'restext://_3ExperimentsRes_006'
 # ../.source/TheCostofDisease_Eng_v10.cs:26944
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:26946
 - type: 'text'
-  # ../en-US.restext:2123 | "It was only natural that ..."
+  # ../en-US.restext:2124 | "It was only natural that ..."
   value: 'restext://_3ExperimentsRes_007'
 # ../.source/TheCostofDisease_Eng_v10.cs:26949
 - type: 'break'
@@ -62,7 +62,7 @@ nodes:
   # ../en-US.restext:36 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 7 ? "Hospital1" : round == 8 ? "Hospital2" : "Hospital3"}' # ./00003-Hospital1.mws.yaml, ./00034-Hospital2.mws.yaml, ./00035-Hospital3.mws.yaml
-  # ../en-US.restext:344 | "Close"
+  # ../en-US.restext:345 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -79,5 +79,5 @@ nodes:
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:26998
   - type: 'text'
-    # ../en-US.restext:2124 | "**Retrieve the {sci3} Mas..."
+    # ../en-US.restext:2125 | "**Retrieve the {sci3} Mas..."
     value: 'restext://_3ExperimentsRes_008'

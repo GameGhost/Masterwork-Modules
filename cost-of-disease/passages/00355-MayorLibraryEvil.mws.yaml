@@ -13,21 +13,21 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:34878
   - type: 'text'
-    # ../en-US.restext:2807 | "**Detestable Education**"
+    # ../en-US.restext:2808 | "**Detestable Education**"
     value: 'restext://MayorLibraryEvil_001'
   # ../.source/TheCostofDisease_Eng_v10.cs:34880
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:34884
   - type: 'text'
-    # ../en-US.restext:309 | "**Carefully hand the Stor..."
+    # ../en-US.restext:310 | "**Carefully hand the Stor..."
     value: 'restext://Storybook_HandToMayor'
   # ../.source/TheCostofDisease_Eng_v10.cs:34889
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:34891
   - type: 'text'
-    # ../en-US.restext:2808 | "It was impossible for {ma..."
+    # ../en-US.restext:2809 | "It was impossible for {ma..."
     value: 'restext://MayorLibraryEvil_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:34898
   - type: 'break'
@@ -38,12 +38,12 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:34901
     - type: 'text'
-      # ../en-US.restext:2810 | "For with knowledge came a..."
+      # ../en-US.restext:2811 | "For with knowledge came a..."
       value: 'restext://MayorLibraryEvil_004'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:34907
     - type: 'text'
-      # ../en-US.restext:2809 | "For with knowledge came a..."
+      # ../en-US.restext:2810 | "For with knowledge came a..."
       value: 'restext://MayorLibraryEvil_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:34909
   - type: 'break'
@@ -54,7 +54,7 @@ nodes:
     # ../en-US.restext:36 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: '${hcount == 0 && society == "Order of St. Hubertus" ? "EvilWolvesEventStart" : "LosingOrderAid"}' # ./00259-EvilWolvesEventStart.mws.yaml, ./00064-LosingOrderAid.mws.yaml
-    # ../en-US.restext:344 | "Close"
+    # ../en-US.restext:345 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -65,7 +65,7 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:34945
     - type: 'text'
-      # ../en-US.restext:2811 | "{mayor} gains 2 {icon:cre..."
+      # ../en-US.restext:2812 | "{mayor} gains 2 {icon:cre..."
       value: 'restext://MayorLibraryEvil_005'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:34919

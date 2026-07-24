@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Hospital2'
-# ../en-US.restext:338 | "THRIVING IN ADVERSITY"
+# ../en-US.restext:339 | "THRIVING IN ADVERSITY"
 title: 'restext://Title_ThrivingInAdversity'
-# ../en-US.restext:326 | "Middle Years"
+# ../en-US.restext:327 | "Middle Years"
 subtitle: 'restext://Title_MiddleYears'
 tags:
 - 'HUB'
@@ -110,7 +110,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:4918
 - type: 'section'
-  # ../en-US.restext:612 | "{icon:storybook} **The Se..."
+  # ../en-US.restext:613 | "{icon:storybook} **The Se..."
   title: 'restext://Hospital2_003'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:4928
@@ -119,7 +119,7 @@ nodes:
     value: 'restext://Directive_JournalTrackLevel3_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:4930
   - type: 'link'
-    # ../en-US.restext:613 | "click here for a reward."
+    # ../en-US.restext:614 | "click here for a reward."
     label: 'restext://Hospital2_005'
     target: 'InfinityClick1' # ./00096-InfinityClick1.mws.yaml
     snapshot: true
@@ -141,7 +141,7 @@ nodes:
       value: 'restext://Disease_3Experiments_Lead'
     # ../.source/TheCostofDisease_Eng_v10.cs:4950
     - type: 'link'
-      # ../en-US.restext:614 | "Click here for a special ..."
+      # ../en-US.restext:615 | "Click here for a special ..."
       label: 'restext://Hospital2_006'
       target: 'Trigger3Experiments' # ./00123-Trigger3Experiments.mws.yaml
       snapshot: true
@@ -155,7 +155,7 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:4965
   - type: 'text'
-    # ../en-US.restext:313 | "At the end of the second ..."
+    # ../en-US.restext:314 | "At the end of the second ..."
     value: 'restext://Symposium_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:4979
   - type: 'break'
@@ -163,10 +163,10 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:4983
   - type: 'popup'
     layout: 'end_of_round'
-    # ../en-US.restext:615 | "Click here at the end of ..."
+    # ../en-US.restext:616 | "Click here at the end of ..."
     label: 'restext://Hospital2_007'
     target: 'SymposiumEvent1' # ./00125-SymposiumEvent1.mws.yaml
-    # ../en-US.restext:348 | "End of Round"
+    # ../en-US.restext:349 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'

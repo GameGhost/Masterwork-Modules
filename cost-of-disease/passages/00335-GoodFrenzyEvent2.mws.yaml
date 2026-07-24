@@ -2,10 +2,17 @@
 ---
 format: 'mws/0.4'
 passage_id: 'GoodFrenzyEvent2'
-# ../en-US.restext:2690 | "A Frenzied Decision"
+# ../en-US.restext:2691 | "A Frenzied Decision"
 title: 'restext://GoodFrenzyEvent2_001'
 layout: 'narration'
 nodes:
+# ../.source/TheCostofDisease_Eng_v10.cs:33873
+- type: 'text'
+  # ../en-US.restext:304 | "Special Event"
+  value: 'restext://SpecialEvent_Title'
+  style: 'special-event'
+# ../.source/TheCostofDisease_Eng_v10.cs:33874
+- type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:33875
 - type: 'text'
   # ../en-US.restext:244 | "The Order suggested a sin..."
@@ -28,27 +35,27 @@ nodes:
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:33888
 - type: 'text'
-  # ../en-US.restext:2691 | "All players take their Vo..."
+  # ../en-US.restext:2692 | "All players take their Vo..."
   value: 'restext://GoodFrenzyEvent2_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:33891
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:33893
 - type: 'text'
-  # ../en-US.restext:2692 | "A **Yay** vote is a vote ..."
+  # ../en-US.restext:2693 | "A **Yay** vote is a vote ..."
   value: 'restext://GoodFrenzyEvent2_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:33905
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:33906
 - type: 'text'
-  # ../en-US.restext:2693 | "A **Nay** vote is a vote ..."
+  # ../en-US.restext:2694 | "A **Nay** vote is a vote ..."
   value: 'restext://GoodFrenzyEvent2_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:33923
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:33925
 - type: 'text'
-  # ../en-US.restext:358 | "Once all players have cho..."
+  # ../en-US.restext:359 | "Once all players have cho..."
   value: 'restext://Vote_TallyRule_B'
 # ../.source/TheCostofDisease_Eng_v10.cs:33931
 - type: 'break'
@@ -59,6 +66,6 @@ nodes:
   # ../en-US.restext:60 | "Click here to start the v..."
   label: 'restext://Click_StartVote'
   target: 'GoodFrenzyEvent2b' # ./00345-GoodFrenzyEvent2b.mws.yaml
-  # ../en-US.restext:344 | "Close"
+  # ../en-US.restext:345 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: false

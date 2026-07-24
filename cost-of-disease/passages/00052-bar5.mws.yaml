@@ -14,7 +14,7 @@ nodes:
   expr: 'rand_between(1, 999, "bar5_1")'
 # ../.source/TheCostofDisease_Eng_v10.cs:6576
 - type: 'text'
-  # ../en-US.restext:715 | "**SWORN STATEMENT - Case ..."
+  # ../en-US.restext:716 | "**SWORN STATEMENT - Case ..."
   value: 'restext://bar5_001'
   lets:
   - '_rnd_bar5_0'
@@ -34,27 +34,27 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:6586
     - type: 'text'
-      # ../en-US.restext:716 | "I vaguely remember the ph..."
+      # ../en-US.restext:717 | "I vaguely remember the ph..."
       value: 'restext://bar5_002'
     # ../.source/TheCostofDisease_Eng_v10.cs:6587
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:6589
     - type: 'text'
-      # ../en-US.restext:717 | "My displeased spouse info..."
+      # ../en-US.restext:718 | "My displeased spouse info..."
       value: 'restext://bar5_003'
   - match: 2
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:6598
     - type: 'text'
-      # ../en-US.restext:718 | "I should not have attempt..."
+      # ../en-US.restext:719 | "I should not have attempt..."
       value: 'restext://bar5_004'
     # ../.source/TheCostofDisease_Eng_v10.cs:6599
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:6601
     - type: 'text'
-      # ../en-US.restext:719 | "The demonstration of my e..."
+      # ../en-US.restext:720 | "The demonstration of my e..."
       value: 'restext://bar5_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:6608
 - type: 'break'
@@ -62,7 +62,7 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:6612
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:343 | "Accept"
+  # ../en-US.restext:344 | "Accept"
   okay: 'restext://UIButton_Accept'
   header:
   # ../.source/TheCostofDisease_Eng_v10.cs:6616
@@ -72,5 +72,5 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:6618
   - type: 'text'
-    # ../en-US.restext:720 | "Place a {icon:creepy_icon..."
+    # ../en-US.restext:721 | "Place a {icon:creepy_icon..."
     value: 'restext://bar5_006'

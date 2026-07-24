@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S5HospA1Yes'
-# ../en-US.restext:547 | "Immortality Advances"
+# ../en-US.restext:548 | "Immortality Advances"
 title: 'restext://S5HospA1Yes_001'
 tags:
 - 'END'
@@ -11,7 +11,7 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:3487
 - type: 'popup'
   layout: 'end_of_generation'
-  # ../en-US.restext:345 | "Confirm"
+  # ../en-US.restext:346 | "Confirm"
   okay: 'restext://UIButton_Confirm'
   content:
   - type: 'text'
@@ -22,21 +22,21 @@ nodes:
     expr: '6'
 # ../.source/TheCostofDisease_Eng_v10.cs:3490
 - type: 'text'
-  # ../en-US.restext:548 | "The **{life}** scientists..."
+  # ../en-US.restext:549 | "The **{life}** scientists..."
   value: 'restext://S5HospA1Yes_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:3499
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:3501
 - type: 'text'
-  # ../en-US.restext:549 | "They remained in the vill..."
+  # ../en-US.restext:550 | "They remained in the vill..."
   value: 'restext://S5HospA1Yes_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:3502
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:3504
 - type: 'link'
-  # ../en-US.restext:550 | "Click to continue to a mo..."
+  # ../en-US.restext:551 | "Click to continue to a mo..."
   label: 'restext://S5HospA1Yes_005'
   target: 'UniversityIntro' # ./00014-UniversityIntro.mws.yaml
   snapshot: true

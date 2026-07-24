@@ -12,12 +12,12 @@ nodes:
     layout: 'input-popup'
     content:
     - type: 'text'
-      # ../en-US.restext:1134 | "Enter the secret password..."
+      # ../en-US.restext:1135 | "Enter the secret password..."
       value: 'restext://EnvPasscode_001'
     - type: 'input'
       label: ''
       var: 'password'
-    # ../en-US.restext:346 | "Continue"
+    # ../en-US.restext:347 | "Continue"
     okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'

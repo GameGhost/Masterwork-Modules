@@ -14,13 +14,13 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:21867
   - type: 'text'
-    # ../en-US.restext:1674 | "**A Continuing Malady**"
+    # ../en-US.restext:1675 | "**A Continuing Malady**"
     value: 'restext://DiseaseEffect_005'
   # ../.source/TheCostofDisease_Eng_v10.cs:21869
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:21870
   - type: 'text'
-    # ../en-US.restext:1675 | "It appeared that the effe..."
+    # ../en-US.restext:1676 | "It appeared that the effe..."
     value: 'restext://DiseaseEffect_006'
   # ../.source/TheCostofDisease_Eng_v10.cs:21873
   - type: 'break'
@@ -31,7 +31,7 @@ nodes:
     # ../en-US.restext:36 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: 'DevastationFate1' # ./00107-DevastationFate1.mws.yaml
-    # ../en-US.restext:344 | "Close"
+    # ../en-US.restext:345 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -42,25 +42,25 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:21913
     - type: 'text'
-      # ../en-US.restext:1676 | "Any player who did not co..."
+      # ../en-US.restext:1677 | "Any player who did not co..."
       value: 'restext://DiseaseEffect_007'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:21884
   - type: 'text'
-    # ../en-US.restext:1670 | "**Not Passed Down**"
+    # ../en-US.restext:1671 | "**Not Passed Down**"
     value: 'restext://DiseaseEffect_001'
   # ../.source/TheCostofDisease_Eng_v10.cs:21886
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:21887
   - type: 'text'
-    # ../en-US.restext:1671 | "Twenty years passed witho..."
+    # ../en-US.restext:1672 | "Twenty years passed witho..."
     value: 'restext://DiseaseEffect_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:21888
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:21890
   - type: 'text'
-    # ../en-US.restext:1672 | "Family curse? They dismis..."
+    # ../en-US.restext:1673 | "Family curse? They dismis..."
     value: 'restext://DiseaseEffect_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:21891
   - type: 'break'
@@ -71,7 +71,7 @@ nodes:
     # ../en-US.restext:36 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: 'DevastationFate1' # ./00107-DevastationFate1.mws.yaml
-    # ../en-US.restext:344 | "Close"
+    # ../en-US.restext:345 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -82,5 +82,5 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:21942
     - type: 'text'
-      # ../en-US.restext:1673 | "All players who did not c..."
+      # ../en-US.restext:1674 | "All players who did not c..."
       value: 'restext://DiseaseEffect_004'

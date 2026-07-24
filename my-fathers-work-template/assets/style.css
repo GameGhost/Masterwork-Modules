@@ -399,7 +399,7 @@ body {
 .mws-passage.layout-hub_late .mws-passage-header {
     flex-shrink: 0;
     text-align: center;
-    z-index: 5;
+    z-index: 1;
     margin-bottom: 0.75rem;
     margin-top: 0;
 }
@@ -1320,25 +1320,25 @@ body {
     inset: 0;
     z-index: 999;
     color: transparent;
+    background: rgba(0, 0, 0, 0.8);
     background-image: url(image://popup/special_event_text);
     background-repeat: no-repeat;
-    background-position: center 50vh;
+    background-position: center;
     background-size: 42vw auto;
     pointer-events: none;
     opacity: 0;
     animation:
-        mws-special-event-fade 3.5s ease-in-out forwards,
-        mws-special-event-block 3.5s steps(1) forwards;
+        mws-special-event-fade 6s ease-in-out forwards,
+        mws-special-event-block 6s steps(1) forwards;
 }
 
 .mws-text.style-special-event::before,
 .mws-text.style-special-event::after {
     content: '';
     position: fixed;
-    top: 50vh;
-    width: 24vw;
-    height: 3vh;
-    transform: translateY(-50%);
+    top: calc(50% - 5vh);
+    width: 22vw;
+    height: 9vh;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -1355,7 +1355,7 @@ body {
 
 @keyframes mws-special-event-fade {
     0% { opacity: 0; }
-    12% { opacity: 1; }
+    5% { opacity: 1; }
     80% { opacity: 1; }
     100% { opacity: 0; }
 }

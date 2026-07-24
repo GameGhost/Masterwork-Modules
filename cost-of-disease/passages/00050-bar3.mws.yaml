@@ -14,7 +14,7 @@ nodes:
   expr: 'rand_between(1, 999, "bar3_1")'
 # ../.source/TheCostofDisease_Eng_v10.cs:6412
 - type: 'text'
-  # ../en-US.restext:698 | "**SWORN STATEMENT - Case ..."
+  # ../en-US.restext:699 | "**SWORN STATEMENT - Case ..."
   value: 'restext://bar3_001'
   lets:
   - '_rnd_bar3_0'
@@ -32,26 +32,26 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:6422
   - type: 'text'
-    # ../en-US.restext:701 | "It was very much in poor ..."
+    # ../en-US.restext:702 | "It was very much in poor ..."
     value: 'restext://bar3_004'
   # ../.source/TheCostofDisease_Eng_v10.cs:6428
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:6430
   - type: 'text'
-    # ../en-US.restext:702 | "I have since reimbursed t..."
+    # ../en-US.restext:703 | "I have since reimbursed t..."
     value: 'restext://bar3_005'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:6438
   - type: 'text'
-    # ../en-US.restext:699 | "During a spirited convers..."
+    # ../en-US.restext:700 | "During a spirited convers..."
     value: 'restext://bar3_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:6439
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:6441
   - type: 'text'
-    # ../en-US.restext:700 | "An exchange of bitter wor..."
+    # ../en-US.restext:701 | "An exchange of bitter wor..."
     value: 'restext://bar3_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:6448
 - type: 'break'
@@ -59,7 +59,7 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:6452
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:343 | "Accept"
+  # ../en-US.restext:344 | "Accept"
   okay: 'restext://UIButton_Accept'
   header:
   # ../.source/TheCostofDisease_Eng_v10.cs:6456
@@ -69,5 +69,5 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:6458
   - type: 'text'
-    # ../en-US.restext:703 | "Place a {icon:creepy_icon..."
+    # ../en-US.restext:704 | "Place a {icon:creepy_icon..."
     value: 'restext://bar3_006'

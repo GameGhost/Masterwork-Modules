@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'SanityCheck'
-# ../en-US.restext:560 | "Final Clarity"
+# ../en-US.restext:561 | "Final Clarity"
 title: 'restext://SanityCheck_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:3602
 - type: 'text'
-  # ../en-US.restext:561 | "The boundary between ment..."
+  # ../en-US.restext:562 | "The boundary between ment..."
   value: 'restext://SanityCheck_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:3603
 - type: 'break'
@@ -16,10 +16,10 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:3607
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:562 | "Continue to Final Scoring"
+  # ../en-US.restext:563 | "Continue to Final Scoring"
   label: 'restext://SanityCheck_003'
   target: 'ForScience' # ./00025-ForScience.mws.yaml
-  # ../en-US.restext:344 | "Close"
+  # ../en-US.restext:345 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -30,7 +30,7 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:3626
   - type: 'text'
-    # ../en-US.restext:563 | "All players with their to..."
+    # ../en-US.restext:564 | "All players with their to..."
     value: 'restext://SanityCheck_004'
   # ../.source/TheCostofDisease_Eng_v10.cs:3650
   - type: 'let'
@@ -41,7 +41,7 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:3641
   - type: 'text'
-    # ../en-US.restext:564 | "If {saneplayer} has their..."
+    # ../en-US.restext:565 | "If {saneplayer} has their..."
     value: 'restext://SanityCheck_005'
     lets:
     - '_rnd_SanityCheck_0'
