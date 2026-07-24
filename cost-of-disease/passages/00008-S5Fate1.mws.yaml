@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S5Fate1'
-# ../en-US.restext:429 | "Financial Woes"
+# ../en-US.restext:438 | "Financial Woes"
 title: 'restext://S5Fate1_001'
 tags:
 - 'END'
@@ -11,51 +11,51 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:2491
 - type: 'popup'
   layout: 'end_of_generation'
-  # ../en-US.restext:346 | "Confirm"
+  # ../en-US.restext:353 | "Confirm"
   okay: 'restext://UIButton_Confirm'
   content:
   - type: 'text'
-    # ../en-US.restext:81 | "Remove all player pieces ..."
+    # ../en-US.restext:88 | "Remove all player pieces ..."
     value: 'restext://Directive_EndGeneration_DubiousBartering'
   - type: 'let'
     var: 'generation'
     expr: '3'
 # ../.source/TheCostofDisease_Eng_v10.cs:2501
 - type: 'text'
-  # ../en-US.restext:430 | "The village of {townname}..."
+  # ../en-US.restext:439 | "The village of {townname}..."
   value: 'restext://S5Fate1_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:2505
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:2507
 - type: 'conditional'
-  # ../en-US.restext:194 | "bank"
+  # ../en-US.restext:201 | "bank"
   if: 'building == "restext://Location_Bank_Lower"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:2509
   - type: 'text'
-    # ../en-US.restext:432 | "With additional financial..."
+    # ../en-US.restext:441 | "With additional financial..."
     value: 'restext://S5Fate1_007'
   # ../.source/TheCostofDisease_Eng_v10.cs:2515
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:2517
   - type: 'link'
-    # ../en-US.restext:35 | "Click here to continue..."
+    # ../en-US.restext:38 | "Click here to continue..."
     label: 'restext://Click_ContinueEllipsis_B'
     target: 'Hospitalintro' # ./00012-Hospitalintro.mws.yaml
     snapshot: true
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:2522
   - type: 'text'
-    # ../en-US.restext:431 | "The addition of a **Libra..."
+    # ../en-US.restext:440 | "The addition of a **Libra..."
     value: 'restext://S5Fate1_005'
   # ../.source/TheCostofDisease_Eng_v10.cs:2528
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:2530
   - type: 'link'
-    # ../en-US.restext:35 | "Click here to continue..."
+    # ../en-US.restext:38 | "Click here to continue..."
     label: 'restext://Click_ContinueEllipsis_B'
     target: 'DevastationIntro' # ./00086-DevastationIntro.mws.yaml
     snapshot: true

@@ -6,18 +6,18 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:31368
 - type: 'conditional'
-  # ../en-US.restext:31 | "yes"
+  # ../en-US.restext:34 | "yes"
   if: 'vacation == "restext://Choice_Yes_Lower"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:31372
   - type: 'text'
-    # ../en-US.restext:129 | "**Absent Parent**"
+    # ../en-US.restext:136 | "**Absent Parent**"
     value: 'restext://Heading_AbsentParent'
   # ../.source/TheCostofDisease_Eng_v10.cs:31374
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:31377
   - type: 'text'
-    # ../en-US.restext:309 | "**Carefully hand this sto..."
+    # ../en-US.restext:316 | "**Carefully hand this sto..."
     value: 'restext://Storybook_HandToGen1Sane'
   # ../.source/TheCostofDisease_Eng_v10.cs:31391
   - type: 'conditional'
@@ -32,7 +32,7 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:31383
   - type: 'text'
-    # ../en-US.restext:2492 | "An investment in a summer..."
+    # ../en-US.restext:2500 | "An investment in a summer..."
     value: 'restext://Gen1Insanity_Yes2_001'
   # ../.source/TheCostofDisease_Eng_v10.cs:31395
   - type: 'assign'
@@ -44,10 +44,10 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:31400
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:36 | "Click to continue..."
+    # ../en-US.restext:39 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: 'Hospital1' # ./00003-Hospital1.mws.yaml
-    # ../en-US.restext:345 | "Close"
+    # ../en-US.restext:352 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -71,14 +71,14 @@ nodes:
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:31423
       - type: 'text'
-        # ../en-US.restext:84 | "Gain a Maladjustment card..."
+        # ../en-US.restext:91 | "Gain a Maladjustment card..."
         value: 'restext://Directive_GainMaladjustmentCard'
       else:
       # ../.source/TheCostofDisease_Eng_v10.cs:31430
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:31431
       - type: 'text'
-        # ../en-US.restext:355 | "Lose 3VP."
+        # ../en-US.restext:362 | "Lose 3VP."
         value: 'restext://VP_Lose3'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:31404

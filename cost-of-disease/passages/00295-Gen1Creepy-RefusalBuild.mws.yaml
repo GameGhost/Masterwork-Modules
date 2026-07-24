@@ -6,38 +6,38 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:30258
 - type: 'text'
-  # ../en-US.restext:308 | "**Carefully hand this sto..."
+  # ../en-US.restext:315 | "**Carefully hand this sto..."
   value: 'restext://Storybook_HandToGen1Creep_Private'
 # ../.source/TheCostofDisease_Eng_v10.cs:30263
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:30268
 - type: 'popup'
-  # ../en-US.restext:53 | "Once you are ready, click..."
+  # ../en-US.restext:56 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   snapshot: true
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:30378
   - type: 'conditional'
-    # ../en-US.restext:26 | "good"
+    # ../en-US.restext:29 | "good"
     if: 'wolves == "restext://Choice_Good_Lower"'
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:30382
     - type: 'text'
-      # ../en-US.restext:163 | "**Order of St. Hubertus**"
+      # ../en-US.restext:170 | "**Order of St. Hubertus**"
       value: 'restext://Heading_OrderOfStHubertus_'
     # ../.source/TheCostofDisease_Eng_v10.cs:30384
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:30385
     - type: 'text'
-      # ../en-US.restext:2438 | "Consumed by the immense s..."
+      # ../en-US.restext:2446 | "Consumed by the immense s..."
       value: 'restext://Gen1Creepy_RefusalBuild_005'
     # ../.source/TheCostofDisease_Eng_v10.cs:30390
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:30392
     - type: 'text'
-      # ../en-US.restext:2439 | "It appeared that they wer..."
+      # ../en-US.restext:2447 | "It appeared that they wer..."
       value: 'restext://Gen1Creepy_RefusalBuild_006'
     # ../.source/TheCostofDisease_Eng_v10.cs:30401
     - type: 'break'
@@ -45,10 +45,10 @@ nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:30405
     - type: 'popup'
       layout: 'setup'
-      # ../en-US.restext:36 | "Click to continue..."
+      # ../en-US.restext:39 | "Click to continue..."
       label: 'restext://Click_ContinueEllipsis_C'
       target: 'Devastation2' # ./00033-Devastation2.mws.yaml
-      # ../en-US.restext:345 | "Close"
+      # ../en-US.restext:352 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
       header:
@@ -59,32 +59,32 @@ nodes:
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:30289
       - type: 'text'
-        # ../en-US.restext:2440 | "You may choose to immedia..."
+        # ../en-US.restext:2448 | "You may choose to immedia..."
         value: 'restext://Gen1Creepy_RefusalBuild_007'
       # ../.source/TheCostofDisease_Eng_v10.cs:30300
       - type: 'break'
         style: 'paragraph'
       # ../.source/TheCostofDisease_Eng_v10.cs:30302
       - type: 'text'
-        # ../en-US.restext:2441 | "The **Reading Room** acts..."
+        # ../en-US.restext:2449 | "The **Reading Room** acts..."
         value: 'restext://Gen1Creepy_RefusalBuild_008'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:30412
     - type: 'text'
-      # ../en-US.restext:147 | "**Fraternity of Hunters**"
+      # ../en-US.restext:154 | "**Fraternity of Hunters**"
       value: 'restext://Heading_FraternityOfHunters'
     # ../.source/TheCostofDisease_Eng_v10.cs:30414
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:30415
     - type: 'text'
-      # ../en-US.restext:2434 | "Consumed by the immense s..."
+      # ../en-US.restext:2442 | "Consumed by the immense s..."
       value: 'restext://Gen1Creepy_RefusalBuild_001'
     # ../.source/TheCostofDisease_Eng_v10.cs:30420
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:30422
     - type: 'text'
-      # ../en-US.restext:2435 | "It appeared that they wer..."
+      # ../en-US.restext:2443 | "It appeared that they wer..."
       value: 'restext://Gen1Creepy_RefusalBuild_002'
     # ../.source/TheCostofDisease_Eng_v10.cs:30431
     - type: 'break'
@@ -92,10 +92,10 @@ nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:30435
     - type: 'popup'
       layout: 'setup'
-      # ../en-US.restext:36 | "Click to continue..."
+      # ../en-US.restext:39 | "Click to continue..."
       label: 'restext://Click_ContinueEllipsis_C'
       target: 'Devastation2' # ./00033-Devastation2.mws.yaml
-      # ../en-US.restext:345 | "Close"
+      # ../en-US.restext:352 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
       header:
@@ -106,12 +106,12 @@ nodes:
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:30338
       - type: 'text'
-        # ../en-US.restext:2436 | "You may choose to immedia..."
+        # ../en-US.restext:2444 | "You may choose to immedia..."
         value: 'restext://Gen1Creepy_RefusalBuild_003'
       # ../.source/TheCostofDisease_Eng_v10.cs:30349
       - type: 'break'
         style: 'paragraph'
       # ../.source/TheCostofDisease_Eng_v10.cs:30351
       - type: 'text'
-        # ../en-US.restext:2437 | "The **Shrine** acts the s..."
+        # ../en-US.restext:2445 | "The **Shrine** acts the s..."
         value: 'restext://Gen1Creepy_RefusalBuild_004'

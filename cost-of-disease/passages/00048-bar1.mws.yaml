@@ -14,7 +14,7 @@ nodes:
   expr: 'rand_between(1, 999, "bar1_1")'
 # ../.source/TheCostofDisease_Eng_v10.cs:6241
 - type: 'text'
-  # ../en-US.restext:681 | "**SWORN STATEMENT - Case ..."
+  # ../en-US.restext:690 | "**SWORN STATEMENT - Case ..."
   value: 'restext://bar1_001'
   lets:
   - '_rnd_bar1_0'
@@ -32,26 +32,26 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:6251
   - type: 'text'
-    # ../en-US.restext:684 | "After a brief excursion t..."
+    # ../en-US.restext:693 | "After a brief excursion t..."
     value: 'restext://bar1_004'
   # ../.source/TheCostofDisease_Eng_v10.cs:6258
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:6260
   - type: 'text'
-    # ../en-US.restext:685 | "We both decided to disrob..."
+    # ../en-US.restext:694 | "We both decided to disrob..."
     value: 'restext://bar1_005'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:6265
   - type: 'text'
-    # ../en-US.restext:682 | "After a brief excursion t..."
+    # ../en-US.restext:691 | "After a brief excursion t..."
     value: 'restext://bar1_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:6272
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:6274
   - type: 'text'
-    # ../en-US.restext:683 | "It was around midnight th..."
+    # ../en-US.restext:692 | "It was around midnight th..."
     value: 'restext://bar1_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:6276
 - type: 'break'
@@ -59,7 +59,7 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:6280
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:344 | "Accept"
+  # ../en-US.restext:351 | "Accept"
   okay: 'restext://UIButton_Accept'
   header:
   # ../.source/TheCostofDisease_Eng_v10.cs:6284
@@ -69,5 +69,5 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:6286
   - type: 'text'
-    # ../en-US.restext:686 | "Place a {icon:creepy_icon..."
+    # ../en-US.restext:695 | "Place a {icon:creepy_icon..."
     value: 'restext://bar1_006'

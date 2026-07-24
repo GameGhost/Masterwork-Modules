@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'NoUni3'
-# ../en-US.restext:337 | "THE CRAWL"
+# ../en-US.restext:344 | "THE CRAWL"
 title: 'restext://Title_TheCrawl'
-# ../en-US.restext:326 | "Late Years"
+# ../en-US.restext:333 | "Late Years"
 subtitle: 'restext://Title_LateYears'
 tags:
 - 'HUB'
@@ -21,7 +21,7 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:5366
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:344 | "Accept"
+    # ../en-US.restext:351 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/TheCostofDisease_Eng_v10.cs:5370
@@ -31,7 +31,7 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:5372
     - type: 'text'
-      # ../en-US.restext:631 | "Remove all {icon:creepy_i..."
+      # ../en-US.restext:640 | "Remove all {icon:creepy_i..."
       value: 'restext://NoUni3_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:5384
 - type: 'break'
@@ -44,12 +44,12 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:5390
     - type: 'section'
-      # ../en-US.restext:632 | "**Like Us**"
+      # ../en-US.restext:641 | "**Like Us**"
       title: 'restext://NoUni3_002'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:5398
       - type: 'text'
-        # ../en-US.restext:633 | "The townspeople express r..."
+        # ../en-US.restext:642 | "The townspeople express r..."
         value: 'restext://NoUni3_003'
       # ../.source/TheCostofDisease_Eng_v10.cs:5402
       - type: 'assign'
@@ -60,18 +60,18 @@ nodes:
         style: 'paragraph'
       # ../.source/TheCostofDisease_Eng_v10.cs:5403
       - type: 'text'
-        # ../en-US.restext:634 | "Any player with a token t..."
+        # ../en-US.restext:643 | "Any player with a token t..."
         value: 'restext://NoUni3_004'
   - match: 0
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:5417
     - type: 'section'
-      # ../en-US.restext:635 | "**A Step Forward**"
+      # ../en-US.restext:644 | "**A Step Forward**"
       title: 'restext://NoUni3_005'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:5425
       - type: 'text'
-        # ../en-US.restext:636 | "The townspeople begrudgin..."
+        # ../en-US.restext:645 | "The townspeople begrudgin..."
         value: 'restext://NoUni3_006'
     # ../.source/TheCostofDisease_Eng_v10.cs:5431
     - type: 'assign'
@@ -82,28 +82,28 @@ nodes:
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:5434
     - type: 'section'
-      # ../en-US.restext:637 | "**The Power of Electricity**"
+      # ../en-US.restext:646 | "**The Power of Electricity**"
       title: 'restext://NoUni3_007'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:5442
       - type: 'text'
-        # ../en-US.restext:638 | "During a **Perform Experi..."
+        # ../en-US.restext:647 | "During a **Perform Experi..."
         value: 'restext://NoUni3_008'
 # ../.source/TheCostofDisease_Eng_v10.cs:5459
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:5463
 - type: 'section'
-  # ../en-US.restext:165 | "{icon:storybook} **PUB**"
+  # ../en-US.restext:172 | "{icon:storybook} **PUB**"
   title: 'restext://Heading_Pub'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5473
   - type: 'text'
-    # ../en-US.restext:279 | "If your token is overtake..."
+    # ../en-US.restext:286 | "If your token is overtake..."
     value: 'restext://Pub_ResetCreepy_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:5489
   - type: 'link'
-    # ../en-US.restext:33 | "click here for a Bar-venture."
+    # ../en-US.restext:36 | "click here for a Bar-venture."
     label: 'restext://Click_BarVenture'
     target: 'Barventures' # ./00027-Barventures.mws.yaml
     snapshot: true
@@ -112,28 +112,28 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:5495
 - type: 'section'
-  # ../en-US.restext:156 | "**MASTERWORK**"
+  # ../en-US.restext:163 | "**MASTERWORK**"
   title: 'restext://Heading_Masterwork'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5503
   - type: 'text'
-    # ../en-US.restext:212 | "A Masterwork can be compl..."
+    # ../en-US.restext:219 | "A Masterwork can be compl..."
     value: 'restext://Masterwork_CompleteRule'
 # ../.source/TheCostofDisease_Eng_v10.cs:5506
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:5510
 - type: 'section'
-  # ../en-US.restext:158 | "{icon:storybook} **Master..."
+  # ../en-US.restext:165 | "{icon:storybook} **Master..."
   title: 'restext://Heading_MasterworkRecipe'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5520
   - type: 'text'
-    # ../en-US.restext:208 | "To check your Masterwork ..."
+    # ../en-US.restext:215 | "To check your Masterwork ..."
     value: 'restext://Masterwork_CheckCost_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:5521
   - type: 'link'
-    # ../en-US.restext:48 | "click here."
+    # ../en-US.restext:51 | "click here."
     label: 'restext://Click_Here_Period'
     target: 'MWTemp' # ./00142-MWTemp.mws.yaml
     snapshot: true
@@ -142,16 +142,16 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:5527
 - type: 'section'
-  # ../en-US.restext:140 | "{icon:storybook} **Comple..."
+  # ../en-US.restext:147 | "{icon:storybook} **Comple..."
   title: 'restext://Heading_CompletedMasterwork'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5537
   - type: 'text'
-    # ../en-US.restext:213 | "If you are completing a M..."
+    # ../en-US.restext:220 | "If you are completing a M..."
     value: 'restext://Masterwork_Completing_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:5538
   - type: 'link'
-    # ../en-US.restext:51 | "click here to receive you..."
+    # ../en-US.restext:54 | "click here to receive you..."
     label: 'restext://Click_ReceiveRewards'
     target: 'MWCompleteName' # ./00143-MWCompleteName.mws.yaml
     snapshot: true
@@ -161,10 +161,10 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:5542
   - type: 'popup'
     layout: 'end_of_round'
-    # ../en-US.restext:44 | "Click here at the end of ..."
+    # ../en-US.restext:47 | "Click here at the end of ..."
     label: 'restext://Click_EndGeneration_FinalScoringFateOfTown'
     target: '${peeps == 1 ? "NoUni3b" : "Scoring"}' # ./00072-NoUni3b.mws.yaml, ./00013-Scoring.mws.yaml
-    # ../en-US.restext:349 | "End of Round"
+    # ../en-US.restext:356 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -173,10 +173,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:296 | "The Late Years of the Thi..."
+      # ../en-US.restext:303 | "The Late Years of the Thi..."
       value: 'restext://Round_GenerationIII_LateEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:294 | "Perform any End of Round ..."
+      # ../en-US.restext:301 | "Perform any End of Round ..."
       value: 'restext://Round_EndOfRoundActions_Rule'

@@ -15,22 +15,22 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:24683
   - type: 'text'
-    # ../en-US.restext:1966 | "**To Infinity**"
+    # ../en-US.restext:1974 | "**To Infinity**"
     value: 'restext://ImmortalitySetup_001'
   # ../.source/TheCostofDisease_Eng_v10.cs:24690
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:24691
   - type: 'text'
-    # ../en-US.restext:85 | "Give each player a {icon:..."
+    # ../en-US.restext:92 | "Give each player a {icon:..."
     value: 'restext://Directive_GiveEachPlayerStorybookToken'
   # ../.source/TheCostofDisease_Eng_v10.cs:24699
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:24701
   - type: 'text'
-    # ../en-US.restext:86 | "Each player chooses an in..."
+    # ../en-US.restext:93 | "Each player chooses an in..."
     value: 'restext://Directive_JournalToken_ThirdLevel'
-  # ../en-US.restext:344 | "Accept"
+  # ../en-US.restext:351 | "Accept"
   okay: 'restext://UIButton_Accept'
   target: '${(seedy == "no") ? "Gen1Creepy-RefuseBonus" : (seedy == "yes") ? "Gen1Creepy-AgreedReturn" : "Hospital2"}' # ./00300-Gen1Creepy-RefuseBonus.mws.yaml, ./00301-Gen1Creepy-AgreedReturn.mws.yaml, ./00034-Hospital2.mws.yaml
   snapshot: true

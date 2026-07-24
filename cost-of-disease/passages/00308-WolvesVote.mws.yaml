@@ -2,89 +2,121 @@
 ---
 format: 'mws/0.4'
 passage_id: 'WolvesVote'
-# ../en-US.restext:2512 | "An Opportunity"
+# ../en-US.restext:2520 | "An Opportunity"
 title: 'restext://WolvesVote_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:31845
 - type: 'text'
-  # ../en-US.restext:304 | "Special Event"
+  # ../en-US.restext:311 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/TheCostofDisease_Eng_v10.cs:31846
 - type: 'text'
-  # ../en-US.restext:2513 | "With a shrill squeal, the..."
+  # ../en-US.restext:2521 | "With a shrill squeal, the..."
   value: 'restext://WolvesVote_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:31847
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:31849
 - type: 'text'
-  # ../en-US.restext:2514 | "\"Do not fear me. I am no..."
+  # ../en-US.restext:2522 | "\"Do not fear me. I am no..."
   value: 'restext://WolvesVote_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:31850
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:31852
 - type: 'text'
-  # ../en-US.restext:2515 | "\"With your help, we can ..."
+  # ../en-US.restext:2523 | "\"With your help, we can ..."
   value: 'restext://WolvesVote_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:31854
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:31856
 - type: 'text'
-  # ../en-US.restext:2516 | "Though they took exceptio..."
+  # ../en-US.restext:2524 | "Though they took exceptio..."
   value: 'restext://WolvesVote_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:31859
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:31863
 - type: 'text'
-  # ../en-US.restext:179 | "**VOTE**"
+  # ../en-US.restext:186 | "**VOTE**"
   value: 'restext://Heading_Vote'
 # ../.source/TheCostofDisease_Eng_v10.cs:31865
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:31866
 - type: 'text'
-  # ../en-US.restext:2517 | "Players will now vote on ..."
+  # ../en-US.restext:2525 | "Players will now vote on ..."
   value: 'restext://WolvesVote_006'
 # ../.source/TheCostofDisease_Eng_v10.cs:31868
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:31870
 - type: 'text'
-  # ../en-US.restext:2518 | "A **Yay** vote is a vote ..."
+  # ../en-US.restext:2526 | "A **Yay** vote is a vote ..."
   value: 'restext://WolvesVote_007'
 # ../.source/TheCostofDisease_Eng_v10.cs:31877
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:31878
 - type: 'text'
-  # ../en-US.restext:2519 | "A **Nay** vote is a vote ..."
+  # ../en-US.restext:2527 | "A **Nay** vote is a vote ..."
   value: 'restext://WolvesVote_008'
 # ../.source/TheCostofDisease_Eng_v10.cs:31885
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:31887
 - type: 'text'
-  # ../en-US.restext:2520 | "All players take their Vo..."
+  # ../en-US.restext:2528 | "All players take their Vo..."
   value: 'restext://WolvesVote_009'
 # ../.source/TheCostofDisease_Eng_v10.cs:31890
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:31892
 - type: 'text'
-  # ../en-US.restext:358 | "When all players have cho..."
+  # ../en-US.restext:365 | "When all players have cho..."
   value: 'restext://Vote_TallyRule_A'
 # ../.source/TheCostofDisease_Eng_v10.cs:31898
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:31902
 - type: 'popup'
-  layout: 'voting'
-  # ../en-US.restext:2521 | "Click to start the vote..."
+  layout: 'countdown_instructions'
+  # ../en-US.restext:2529 | "Click to start the vote..."
   label: 'restext://WolvesVote_010'
-  target: 'WolvesVote2' # ./00349-WolvesVote2.mws.yaml
-  # ../en-US.restext:345 | "Close"
-  okay: 'restext://UIButton_Close'
-  snapshot: false
+  content:
+  - type: 'text'
+    # ../en-US.restext:370 | "Click on the 'Start Votin..."
+    value: 'restext://Voting_Instructions'
+  - type: 'break'
+    style: 'paragraph'
+  - type: 'text'
+    # ../en-US.restext:7 | "When you see the word 'RE..."
+    value: 'restext://Bidding_RevealInstructions'
+  - type: 'break'
+    style: 'paragraph'
+  - type: 'popup'
+    layout: 'countdown_action'
+    # ../en-US.restext:371 | "Start Voting"
+    label: 'restext://Voting_StartButton'
+    content:
+    - type: 'text'
+      # ../en-US.restext:74 | "3"
+      value: 'restext://Countdown_Three'
+      style: 'countdown-3'
+    - type: 'text'
+      # ../en-US.restext:75 | "2"
+      value: 'restext://Countdown_Two'
+      style: 'countdown-2'
+    - type: 'text'
+      # ../en-US.restext:72 | "1"
+      value: 'restext://Countdown_One'
+      style: 'countdown-1'
+    - type: 'text'
+      # ../en-US.restext:73 | "REVEAL"
+      value: 'restext://Countdown_Reveal'
+      style: 'countdown-reveal'
+    # ../en-US.restext:73 | "REVEAL"
+    okay: 'restext://Countdown_Reveal'
+    target: 'WolvesVote2' # ./00349-WolvesVote2.mws.yaml
+    snapshot: false

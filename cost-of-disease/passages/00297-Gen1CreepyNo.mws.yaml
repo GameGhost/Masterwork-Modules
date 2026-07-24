@@ -2,32 +2,32 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Gen1CreepyNo'
-# ../en-US.restext:2452 | "Ridiculous!"
+# ../en-US.restext:2460 | "Ridiculous!"
 title: 'restext://Gen1CreepyNo_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:30603
 - type: 'assign'
   var: 'seedy'
-  # ../en-US.restext:27 | "no"
+  # ../en-US.restext:30 | "no"
   expr: '"restext://Choice_No_Lower"'
 # ../.source/TheCostofDisease_Eng_v10.cs:30605
 - type: 'text'
-  # ../en-US.restext:2453 | "As one might expect, the ..."
+  # ../en-US.restext:2461 | "As one might expect, the ..."
   value: 'restext://Gen1CreepyNo_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:30611
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:30613
 - type: 'text'
-  # ../en-US.restext:2454 | "An individual has no alle..."
+  # ../en-US.restext:2462 | "An individual has no alle..."
   value: 'restext://Gen1CreepyNo_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:30615
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:30617
 - type: 'text'
-  # ../en-US.restext:2455 | "However, unbeknownst to t..."
+  # ../en-US.restext:2463 | "However, unbeknownst to t..."
   value: 'restext://Gen1CreepyNo_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:30622
 - type: 'conditional'
@@ -51,10 +51,10 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:30628
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:36 | "Click to continue..."
+    # ../en-US.restext:39 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: '${round == 1 ? "Fever1" : round == 2 ? "Fever2" : "Fever3"}' # ./00002-Fever1.mws.yaml, ./00029-Fever2.mws.yaml, ./00030-Fever3.mws.yaml
-    # ../en-US.restext:345 | "Close"
+    # ../en-US.restext:352 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -72,7 +72,7 @@ nodes:
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:30665
     - type: 'text'
-      # ../en-US.restext:2456 | "Lose **1** {icon:creepy_i..."
+      # ../en-US.restext:2464 | "Lose **1** {icon:creepy_i..."
       value: 'restext://Gen1CreepyNo_005'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:30632
@@ -87,7 +87,7 @@ nodes:
         expr: '1'
       # ../.source/TheCostofDisease_Eng_v10.cs:30635
       - type: 'link'
-        # ../en-US.restext:52 | "Click to return..."
+        # ../en-US.restext:55 | "Click to return..."
         label: 'restext://Click_Return'
         target: 'Fever1' # ./00002-Fever1.mws.yaml
         snapshot: true
@@ -99,7 +99,7 @@ nodes:
         expr: '1'
       # ../.source/TheCostofDisease_Eng_v10.cs:30640
       - type: 'link'
-        # ../en-US.restext:52 | "Click to return..."
+        # ../en-US.restext:55 | "Click to return..."
         label: 'restext://Click_Return'
         target: 'Fever2' # ./00029-Fever2.mws.yaml
         snapshot: true
@@ -110,7 +110,7 @@ nodes:
       expr: '1'
     # ../.source/TheCostofDisease_Eng_v10.cs:30646
     - type: 'link'
-      # ../en-US.restext:52 | "Click to return..."
+      # ../en-US.restext:55 | "Click to return..."
       label: 'restext://Click_Return'
       target: 'Fever3' # ./00030-Fever3.mws.yaml
       snapshot: true

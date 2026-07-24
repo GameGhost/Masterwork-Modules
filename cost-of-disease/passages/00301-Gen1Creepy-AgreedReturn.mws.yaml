@@ -6,39 +6,39 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:31110
 - type: 'text'
-  # ../en-US.restext:308 | "**Carefully hand this sto..."
+  # ../en-US.restext:315 | "**Carefully hand this sto..."
   value: 'restext://Storybook_HandToGen1Creep_Private'
 # ../.source/TheCostofDisease_Eng_v10.cs:31115
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:31117
 - type: 'conditional'
-  # ../en-US.restext:25 | "evil"
+  # ../en-US.restext:28 | "evil"
   if: 'wolves == "restext://Choice_Evil_Lower"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:31121
   - type: 'text'
-    # ../en-US.restext:163 | "**Order of St. Hubertus**"
+    # ../en-US.restext:170 | "**Order of St. Hubertus**"
     value: 'restext://Heading_OrderOfStHubertus_'
   # ../.source/TheCostofDisease_Eng_v10.cs:31123
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:31124
   - type: 'text'
-    # ../en-US.restext:2484 | "On an unseasonably warm e..."
+    # ../en-US.restext:2492 | "On an unseasonably warm e..."
     value: 'restext://Gen1Creepy_AgreedReturn_005'
   # ../.source/TheCostofDisease_Eng_v10.cs:31130
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:31132
   - type: 'text'
-    # ../en-US.restext:2485 | "The man peered out from u..."
+    # ../en-US.restext:2493 | "The man peered out from u..."
     value: 'restext://Gen1Creepy_AgreedReturn_006'
   # ../.source/TheCostofDisease_Eng_v10.cs:31133
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:31137
   - type: 'text'
-    # ../en-US.restext:2486 | "It seemed that decision o..."
+    # ../en-US.restext:2494 | "It seemed that decision o..."
     value: 'restext://Gen1Creepy_AgreedReturn_007'
   # ../.source/TheCostofDisease_Eng_v10.cs:31142
   - type: 'break'
@@ -46,10 +46,10 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:31148
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:36 | "Click to continue..."
+    # ../en-US.restext:39 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: 'Hospital2' # ./00034-Hospital2.mws.yaml
-    # ../en-US.restext:345 | "Close"
+    # ../en-US.restext:352 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -60,32 +60,32 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:31205
     - type: 'text'
-      # ../en-US.restext:76 | "Discard a **completed Exp..."
+      # ../en-US.restext:83 | "Discard a **completed Exp..."
       value: 'restext://Directive_DiscardExperimentOrUpgrade'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:31156
   - type: 'text'
-    # ../en-US.restext:147 | "**Fraternity of Hunters**"
+    # ../en-US.restext:154 | "**Fraternity of Hunters**"
     value: 'restext://Heading_FraternityOfHunters'
   # ../.source/TheCostofDisease_Eng_v10.cs:31158
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:31159
   - type: 'text'
-    # ../en-US.restext:2481 | "On an unseasonably warm e..."
+    # ../en-US.restext:2489 | "On an unseasonably warm e..."
     value: 'restext://Gen1Creepy_AgreedReturn_001'
   # ../.source/TheCostofDisease_Eng_v10.cs:31165
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:31167
   - type: 'text'
-    # ../en-US.restext:2482 | "\"Though we no longer hav..."
+    # ../en-US.restext:2490 | "\"Though we no longer hav..."
     value: 'restext://Gen1Creepy_AgreedReturn_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:31168
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:31172
   - type: 'text'
-    # ../en-US.restext:235 | "The gentlemen were kind e..."
+    # ../en-US.restext:242 | "The gentlemen were kind e..."
     value: 'restext://Narrative_DebtRepaymentOffer'
   # ../.source/TheCostofDisease_Eng_v10.cs:31176
   - type: 'break'
@@ -93,10 +93,10 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:31182
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:36 | "Click to continue..."
+    # ../en-US.restext:39 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: 'Hospital2' # ./00034-Hospital2.mws.yaml
-    # ../en-US.restext:345 | "Close"
+    # ../en-US.restext:352 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -107,5 +107,5 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:31243
     - type: 'text'
-      # ../en-US.restext:2483 | "Pay **$2 to the supply** ..."
+      # ../en-US.restext:2491 | "Pay **$2 to the supply** ..."
       value: 'restext://Gen1Creepy_AgreedReturn_004'

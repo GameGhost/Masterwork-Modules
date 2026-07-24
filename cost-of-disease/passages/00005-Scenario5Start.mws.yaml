@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Scenario5Start'
-# ../en-US.restext:406 | "GENERATION I"
+# ../en-US.restext:415 | "GENERATION I"
 title: 'restext://Scenario5Start_001'
-# ../en-US.restext:407 | "Yellow Fever"
+# ../en-US.restext:416 | "Yellow Fever"
 subtitle: 'restext://Scenario5Start_002'
 tags:
 - 'INTRO'
@@ -12,66 +12,66 @@ layout: 'introduction'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:2254
 - type: 'text'
-  # ../en-US.restext:408 | "The siblings' arrival to ..."
+  # ../en-US.restext:417 | "The siblings' arrival to ..."
   value: 'restext://Scenario5Start_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:2255
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:2257
 - type: 'text'
-  # ../en-US.restext:409 | "Upon reaching the village..."
+  # ../en-US.restext:418 | "Upon reaching the village..."
   value: 'restext://Scenario5Start_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:2258
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:2260
 - type: 'text'
-  # ../en-US.restext:410 | "The Yellow Fever had stru..."
+  # ../en-US.restext:419 | "The Yellow Fever had stru..."
   value: 'restext://Scenario5Start_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:2261
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:2263
 - type: 'text'
-  # ../en-US.restext:411 | "While the prevailing mood..."
+  # ../en-US.restext:420 | "While the prevailing mood..."
   value: 'restext://Scenario5Start_006'
 # ../.source/TheCostofDisease_Eng_v10.cs:2264
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:2266
 - type: 'text'
-  # ../en-US.restext:412 | "As the kindred surveyed t..."
+  # ../en-US.restext:421 | "As the kindred surveyed t..."
   value: 'restext://Scenario5Start_007'
 # ../.source/TheCostofDisease_Eng_v10.cs:2267
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:2269
 - type: 'link'
-  # ../en-US.restext:36 | "Click to continue..."
+  # ../en-US.restext:39 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'Dubious' # ./00068-Dubious.mws.yaml
   snapshot: true
 # ../.source/TheCostofDisease_Eng_v10.cs:2271
 - type: 'assign'
   var: 'wolves'
-  # ../en-US.restext:25 | Choice_Evil_Lower | "evil"
-  # ../en-US.restext:26 | Choice_Good_Lower | "good"
+  # ../en-US.restext:28 | Choice_Evil_Lower | "evil"
+  # ../en-US.restext:29 | Choice_Good_Lower | "good"
   expr: '["restext://Choice_Evil_Lower", "restext://Choice_Good_Lower"].shuffled("Scenario5Start_0")[0]'
 # ../.source/TheCostofDisease_Eng_v10.cs:2272
 - type: 'conditional'
-  # ../en-US.restext:26 | "good"
+  # ../en-US.restext:29 | "good"
   if: 'wolves == "restext://Choice_Good_Lower"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:2274
   - type: 'assign'
     var: 'hunters'
-    # ../en-US.restext:25 | "evil"
+    # ../en-US.restext:28 | "evil"
     expr: '"restext://Choice_Evil_Lower"'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:2279
   - type: 'assign'
     var: 'hunters'
-    # ../en-US.restext:26 | "good"
+    # ../en-US.restext:29 | "good"
     expr: '"restext://Choice_Good_Lower"'
 # ../.source/TheCostofDisease_Eng_v10.cs:2281
 - type: 'assign'

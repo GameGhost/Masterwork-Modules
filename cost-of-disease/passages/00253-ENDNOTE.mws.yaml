@@ -6,40 +6,40 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:27316
 - type: 'text'
-  # ../en-US.restext:2147 | "Add to SCORING"
+  # ../en-US.restext:2155 | "Add to SCORING"
   value: 'restext://ENDNOTE_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:27317
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:27319
 - type: 'conditional'
-  # ../en-US.restext:31 | "yes"
+  # ../en-US.restext:34 | "yes"
   if: 'lycan == "restext://Choice_Yes_Lower"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:27321
   - type: 'text'
-    # ../en-US.restext:2148 | "Check to make sure the pl..."
+    # ../en-US.restext:2156 | "Check to make sure the pl..."
     value: 'restext://ENDNOTE_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:27332
 - type: 'conditional'
-  # ../en-US.restext:31 | "yes"
+  # ../en-US.restext:34 | "yes"
   if: 'immort == "restext://Choice_Yes_Lower"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:27334
   - type: 'text'
-    # ../en-US.restext:2149 | "Check to make sure the pl..."
+    # ../en-US.restext:2157 | "Check to make sure the pl..."
     value: 'restext://ENDNOTE_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:27345
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:27348
 - type: 'text'
-  # ../en-US.restext:2150 | "NOT SURE HOW TO CODE TIE-..."
+  # ../en-US.restext:2158 | "NOT SURE HOW TO CODE TIE-..."
   value: 'restext://ENDNOTE_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:27349
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:27351
 - type: 'text'
-  # ../en-US.restext:2151 | "I can compare scores with..."
+  # ../en-US.restext:2159 | "I can compare scores with..."
   value: 'restext://ENDNOTE_005'

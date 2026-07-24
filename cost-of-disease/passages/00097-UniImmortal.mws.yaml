@@ -14,21 +14,21 @@ nodes:
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:10741
   - type: 'text'
-    # ../en-US.restext:151 | "**Immortality**"
+    # ../en-US.restext:158 | "**Immortality**"
     value: 'restext://Heading_Immortality'
   # ../.source/TheCostofDisease_Eng_v10.cs:10743
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:10745
   - type: 'text'
-    # ../en-US.restext:246 | "Claiming an inheritance w..."
+    # ../en-US.restext:253 | "Claiming an inheritance w..."
     value: 'restext://Narrative_ImmortalityInheritance'
   # ../.source/TheCostofDisease_Eng_v10.cs:10746
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:10748
   - type: 'text'
-    # ../en-US.restext:247 | "For those whose parents h..."
+    # ../en-US.restext:254 | "For those whose parents h..."
     value: 'restext://Narrative_ImmortalityNoSecrets'
   # ../.source/TheCostofDisease_Eng_v10.cs:10750
   - type: 'break'
@@ -36,10 +36,10 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:10754
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:36 | "Click to continue..."
+    # ../en-US.restext:39 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: 'UniEquity' # ./00201-UniEquity.mws.yaml
-    # ../en-US.restext:345 | "Close"
+    # ../en-US.restext:352 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -50,71 +50,71 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:10772
     - type: 'conditional'
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       if: 'lifeA == "restext://Choice_Yes_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10774
       - type: 'text'
-        # ../en-US.restext:1105 | "{nameA} retrieves a Caret..."
+        # ../en-US.restext:1114 | "{nameA} retrieves a Caret..."
         value: 'restext://UniImmortal_004'
       # ../.source/TheCostofDisease_Eng_v10.cs:10776
       - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10778
     - type: 'conditional'
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       if: 'lifeB == "restext://Choice_Yes_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10780
       - type: 'text'
-        # ../en-US.restext:1106 | "{nameB} retrieves a Caret..."
+        # ../en-US.restext:1115 | "{nameB} retrieves a Caret..."
         value: 'restext://UniImmortal_005'
       # ../.source/TheCostofDisease_Eng_v10.cs:10782
       - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10784
     - type: 'conditional'
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       if: 'lifeC == "restext://Choice_Yes_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10786
       - type: 'text'
-        # ../en-US.restext:1107 | "{nameC} retrieves a Caret..."
+        # ../en-US.restext:1116 | "{nameC} retrieves a Caret..."
         value: 'restext://UniImmortal_006'
       # ../.source/TheCostofDisease_Eng_v10.cs:10788
       - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10790
     - type: 'conditional'
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       if: 'lifeD == "restext://Choice_Yes_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10792
       - type: 'text'
-        # ../en-US.restext:1108 | "{nameD} retrieves a Caret..."
+        # ../en-US.restext:1117 | "{nameD} retrieves a Caret..."
         value: 'restext://UniImmortal_007'
       # ../.source/TheCostofDisease_Eng_v10.cs:10794
       - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10796
     - type: 'conditional'
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       if: 'lifeE == "restext://Choice_Yes_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10798
       - type: 'text'
-        # ../en-US.restext:1109 | "{nameE} retrieves a Caret..."
+        # ../en-US.restext:1118 | "{nameE} retrieves a Caret..."
         value: 'restext://UniImmortal_008'
       # ../.source/TheCostofDisease_Eng_v10.cs:10800
       - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10802
     - type: 'conditional'
-      # ../en-US.restext:31 | Choice_Yes_Lower | "yes"
-      # ../en-US.restext:31 | Choice_Yes_Lower | "yes"
-      # ../en-US.restext:31 | Choice_Yes_Lower | "yes"
-      # ../en-US.restext:31 | Choice_Yes_Lower | "yes"
-      # ../en-US.restext:31 | Choice_Yes_Lower | "yes"
+      # ../en-US.restext:34 | Choice_Yes_Lower | "yes"
+      # ../en-US.restext:34 | Choice_Yes_Lower | "yes"
+      # ../en-US.restext:34 | Choice_Yes_Lower | "yes"
+      # ../en-US.restext:34 | Choice_Yes_Lower | "yes"
+      # ../en-US.restext:34 | Choice_Yes_Lower | "yes"
       if: 'lifeA != "restext://Choice_Yes_Lower" && lifeB != "restext://Choice_Yes_Lower" && lifeC != "restext://Choice_Yes_Lower" && lifeD != "restext://Choice_Yes_Lower" && lifeE != "restext://Choice_Yes_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10804
       - type: 'text'
-        # ../en-US.restext:1105 | "{nameA} retrieves a Caret..."
+        # ../en-US.restext:1114 | "{nameA} retrieves a Caret..."
         value: 'restext://UniImmortal_004'
       # ../.source/TheCostofDisease_Eng_v10.cs:10806
       - type: 'break'
@@ -122,5 +122,5 @@ nodes:
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10809
     - type: 'text'
-      # ../en-US.restext:189 | "Any player who did not re..."
+      # ../en-US.restext:196 | "Any player who did not re..."
       value: 'restext://Immortality_NoCaretakerPenalty_Rule'

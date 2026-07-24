@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'DiseaseConsequence'
-# ../en-US.restext:955 | "Inescapable Plague"
+# ../en-US.restext:964 | "Inescapable Plague"
 title: 'restext://DiseaseConsequence_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:9425
 - type: 'text'
-  # ../en-US.restext:956 | "While their parents may h..."
+  # ../en-US.restext:965 | "While their parents may h..."
   value: 'restext://DiseaseConsequence_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:9426
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:9428
 - type: 'text'
-  # ../en-US.restext:957 | "In their individual ways,..."
+  # ../en-US.restext:966 | "In their individual ways,..."
   value: 'restext://DiseaseConsequence_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:9434
 - type: 'break'
@@ -23,10 +23,10 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:9438
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:36 | "Click to continue..."
+  # ../en-US.restext:39 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'Lettercode' # ./00071-Lettercode.mws.yaml
-  # ../en-US.restext:345 | "Close"
+  # ../en-US.restext:352 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -37,5 +37,5 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:9455
   - type: 'text'
-    # ../en-US.restext:958 | "Retrieve the Hereditary D..."
+    # ../en-US.restext:967 | "Retrieve the Hereditary D..."
     value: 'restext://DiseaseConsequence_004'

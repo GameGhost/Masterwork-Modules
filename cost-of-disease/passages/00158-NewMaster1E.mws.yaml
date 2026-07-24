@@ -6,7 +6,7 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:18343
 - type: 'text'
-  # ../en-US.restext:1404 | "**Carefully hand this Sto..."
+  # ../en-US.restext:1412 | "**Carefully hand this Sto..."
   value: 'restext://NewMaster1E_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:18349
 - type: 'assign'
@@ -17,34 +17,34 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:18354
 - type: 'popup'
-  # ../en-US.restext:53 | "Once you are ready, click..."
+  # ../en-US.restext:56 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   snapshot: true
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:18393
   - type: 'text'
-    # ../en-US.restext:1405 | "**A Masterwork of My Own ..."
+    # ../en-US.restext:1413 | "**A Masterwork of My Own ..."
     value: 'restext://NewMaster1E_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:18397
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:18399
   - type: 'text'
-    # ../en-US.restext:273 | "I was no longer constrain..."
+    # ../en-US.restext:280 | "I was no longer constrain..."
     value: 'restext://Narrative_UnconstrainedImagination'
   # ../.source/TheCostofDisease_Eng_v10.cs:18400
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:18404
   - type: 'text'
-    # ../en-US.restext:1406 | "**My creation is from whi..."
+    # ../en-US.restext:1414 | "**My creation is from whi..."
     value: 'restext://NewMaster1E_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:18406
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:18409
   - type: 'link'
-    # ../en-US.restext:120 | "Biology."
+    # ../en-US.restext:127 | "Biology."
     label: 'restext://Focus_Biology_Period'
     target: 'NewMaster2E' # ./00159-NewMaster2E.mws.yaml
     snapshot: true
@@ -52,14 +52,14 @@ nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:18363
     - type: 'assign'
       var: 'disE'
-      # ../en-US.restext:119 | "biology"
+      # ../en-US.restext:126 | "biology"
       expr: '"restext://Focus_Biology_Lower"'
   # ../.source/TheCostofDisease_Eng_v10.cs:18410
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:18413
   - type: 'link'
-    # ../en-US.restext:126 | "Engineering."
+    # ../en-US.restext:133 | "Engineering."
     label: 'restext://Focus_Engineering_Period'
     target: 'NewMaster2E' # ./00159-NewMaster2E.mws.yaml
     snapshot: true
@@ -67,14 +67,14 @@ nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:18370
     - type: 'assign'
       var: 'disE'
-      # ../en-US.restext:125 | "engineering"
+      # ../en-US.restext:132 | "engineering"
       expr: '"restext://Focus_Engineering_Lower"'
   # ../.source/TheCostofDisease_Eng_v10.cs:18414
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:18417
   - type: 'link'
-    # ../en-US.restext:123 | "Chemistry."
+    # ../en-US.restext:130 | "Chemistry."
     label: 'restext://Focus_Chemistry_Period'
     target: 'NewMaster2E' # ./00159-NewMaster2E.mws.yaml
     snapshot: true
@@ -82,14 +82,14 @@ nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:18377
     - type: 'assign'
       var: 'disE'
-      # ../en-US.restext:122 | "chemistry"
+      # ../en-US.restext:129 | "chemistry"
       expr: '"restext://Focus_Chemistry_Lower"'
   # ../.source/TheCostofDisease_Eng_v10.cs:18418
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:18421
   - type: 'link'
-    # ../en-US.restext:128 | "Occult."
+    # ../en-US.restext:135 | "Occult."
     label: 'restext://Focus_Occult_Period'
     target: 'NewMaster2E' # ./00159-NewMaster2E.mws.yaml
     snapshot: true
@@ -97,5 +97,5 @@ nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:18384
     - type: 'assign'
       var: 'disE'
-      # ../en-US.restext:127 | "occult"
+      # ../en-US.restext:134 | "occult"
       expr: '"restext://Focus_Occult_Lower"'

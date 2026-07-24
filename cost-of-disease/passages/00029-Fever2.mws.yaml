@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Fever2'
-# ../en-US.restext:343 | "YELLOW FEVER"
+# ../en-US.restext:350 | "YELLOW FEVER"
 title: 'restext://Title_YellowFever'
-# ../en-US.restext:327 | "Middle Years"
+# ../en-US.restext:334 | "Middle Years"
 subtitle: 'restext://Title_MiddleYears'
 tags:
 - 'HUB'
@@ -16,19 +16,19 @@ nodes:
   expr: '2'
 # ../.source/TheCostofDisease_Eng_v10.cs:3962
 - type: 'section'
-  # ../en-US.restext:135 | "**BUILD A HOSPITAL**"
+  # ../en-US.restext:142 | "**BUILD A HOSPITAL**"
   title: 'restext://Heading_BuildHospital'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:3970
   - type: 'text'
-    # ../en-US.restext:181 | "The church can no longer ..."
+    # ../en-US.restext:188 | "The church can no longer ..."
     value: 'restext://Hospital_ChurchExpansion_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:3982
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:3984
   - type: 'text'
-    # ../en-US.restext:292 | "At the end of the Generat..."
+    # ../en-US.restext:299 | "At the end of the Generat..."
     value: 'restext://Reward_MostHeartTokens_5VP'
 # ../.source/TheCostofDisease_Eng_v10.cs:3999
 - type: 'assign'
@@ -43,16 +43,16 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:4005
   - type: 'section'
-    # ../en-US.restext:132 | "{icon:storybook} **Attrac..."
+    # ../en-US.restext:139 | "{icon:storybook} **Attrac..."
     title: 'restext://Heading_AttractingAttention'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:4014
     - type: 'text'
-      # ../en-US.restext:280 | "If a player reaches the *..."
+      # ../en-US.restext:287 | "If a player reaches the *..."
       value: 'restext://Resource_CreepyTrack_4thSpace_Lead'
     # ../.source/TheCostofDisease_Eng_v10.cs:4022
     - type: 'link'
-      # ../en-US.restext:49 | "click here"
+      # ../en-US.restext:52 | "click here"
       label: 'restext://Click_Here_Plain'
       target: 'Gen1-CreepyTrack' # ./00177-Gen1-CreepyTrack.mws.yaml
       snapshot: true
@@ -65,16 +65,16 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:4031
   - type: 'section'
-    # ../en-US.restext:155 | "{icon:storybook} **The Ma..."
+    # ../en-US.restext:162 | "{icon:storybook} **The Ma..."
     title: 'restext://Heading_MarkOfGenius'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:4040
     - type: 'text'
-      # ../en-US.restext:288 | "If a player reaches the *..."
+      # ../en-US.restext:295 | "If a player reaches the *..."
       value: 'restext://Resource_InsanityTrack_3rdSpace_Lead'
     # ../.source/TheCostofDisease_Eng_v10.cs:4048
     - type: 'link'
-      # ../en-US.restext:48 | "click here."
+      # ../en-US.restext:51 | "click here."
       label: 'restext://Click_Here_Period'
       target: 'Gen1-SanityTrack' # ./00178-Gen1-SanityTrack.mws.yaml
       snapshot: true
@@ -83,12 +83,12 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:4055
 - type: 'section'
-  # ../en-US.restext:142 | "**Second round Event - El..."
+  # ../en-US.restext:149 | "**Second round Event - El..."
   title: 'restext://Heading_ElectionSeason'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:4063
   - type: 'text'
-    # ../en-US.restext:108 | "Political pandering may r..."
+    # ../en-US.restext:115 | "Political pandering may r..."
     value: 'restext://Election_PanderingFlavor'
   # ../.source/TheCostofDisease_Eng_v10.cs:4065
   - type: 'break'
@@ -96,10 +96,10 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:4069
   - type: 'popup'
     layout: 'end_of_round'
-    # ../en-US.restext:47 | "Click here at the end of ..."
+    # ../en-US.restext:50 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_SpecialEvent'
     target: 'S5Special1' # ./00006-S5Special1.mws.yaml
-    # ../en-US.restext:349 | "End of Round"
+    # ../en-US.restext:356 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -108,10 +108,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:582 | "The Middle Years of the F..."
+      # ../en-US.restext:591 | "The Middle Years of the F..."
       value: 'restext://Fever2_005'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:301 | "Then, perform all Start o..."
+      # ../en-US.restext:308 | "Then, perform all Start o..."
       value: 'restext://Round_StartLateYears_Rule'

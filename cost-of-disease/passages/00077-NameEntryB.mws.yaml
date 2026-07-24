@@ -16,25 +16,25 @@ nodes:
   expr: '2'
 # ../.source/TheCostofDisease_Eng_v10.cs:9088
 - type: 'section'
-  # ../en-US.restext:238 | "ERROR!"
+  # ../en-US.restext:245 | "ERROR!"
   title: 'restext://Narrative_ErrorExclaim'
   content: []
 # ../.source/TheCostofDisease_Eng_v10.cs:9090
 - type: 'text'
-  # ../en-US.restext:274 | "Welcome to _My Father's Work_,"
+  # ../en-US.restext:281 | "Welcome to _My Father's Work_,"
   value: 'restext://Narrative_WelcomeToMyFathersWork'
 # ../.source/TheCostofDisease_Eng_v10.cs:9096
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:9097
 - type: 'text'
-  # ../en-US.restext:923 | "{nameB}."
+  # ../en-US.restext:932 | "{nameB}."
   value: 'restext://NameEntryB_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:9099
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:9101
 - type: 'text'
-  # ../en-US.restext:924 | "Please enjoy your experience."
+  # ../en-US.restext:933 | "Please enjoy your experience."
   value: 'restext://NameEntryB_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:9102
 - type: 'break'
@@ -45,14 +45,14 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:9110
   - type: 'link'
-    # ../en-US.restext:38 | "Click to Continue..."
+    # ../en-US.restext:41 | "Click to Continue..."
     label: 'restext://Click_ContinueEllipsis_Title'
     target: 'NameEntryC' # ./00078-NameEntryC.mws.yaml
     snapshot: true
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:9114
   - type: 'link'
-    # ../en-US.restext:38 | "Click to Continue..."
+    # ../en-US.restext:41 | "Click to Continue..."
     label: 'restext://Click_ContinueEllipsis_Title'
     target: 'TCOD-TownName' # ./00220-TCOD-TownName.mws.yaml
     snapshot: true

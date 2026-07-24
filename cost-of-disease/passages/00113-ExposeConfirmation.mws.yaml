@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ExposeConfirmation'
-# ../en-US.restext:1180 | "Exposed"
+# ../en-US.restext:1189 | "Exposed"
 title: 'restext://ExposeConfirmation_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:12347
 - type: 'text'
-  # ../en-US.restext:1181 | "I knew it was the correct..."
+  # ../en-US.restext:1190 | "I knew it was the correct..."
   value: 'restext://ExposeConfirmation_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:12350
 - type: 'break'
@@ -19,14 +19,14 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:12354
   - type: 'link'
-    # ../en-US.restext:35 | "Click here to continue..."
+    # ../en-US.restext:38 | "Click here to continue..."
     label: 'restext://Click_ContinueEllipsis_B'
     target: 'Devastation2' # ./00033-Devastation2.mws.yaml
     snapshot: true
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:12360
   - type: 'link'
-    # ../en-US.restext:35 | "Click here to continue..."
+    # ../en-US.restext:38 | "Click here to continue..."
     label: 'restext://Click_ContinueEllipsis_B'
     target: 'Devastation3' # ./00032-Devastation3.mws.yaml
     snapshot: true

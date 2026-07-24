@@ -2,27 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: 'LycanthropicMessage'
-# ../en-US.restext:1255 | "The Form of the Wolf"
+# ../en-US.restext:1263 | "The Form of the Wolf"
 title: 'restext://LycanthropicMessage_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:14351
 - type: 'text'
-  # ../en-US.restext:1256 | "Confirming the existence ..."
+  # ../en-US.restext:1264 | "Confirming the existence ..."
   value: 'restext://LycanthropicMessage_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:14354
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:14356
 - type: 'text'
-  # ../en-US.restext:73 | "Does any player have the ..."
+  # ../en-US.restext:80 | "Does any player have the ..."
   value: 'restext://Directive_CheckLycanthropicStrength'
 # ../.source/TheCostofDisease_Eng_v10.cs:14363
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:14366
 - type: 'link'
-  # ../en-US.restext:32 | "Yes."
+  # ../en-US.restext:35 | "Yes."
   label: 'restext://Choice_Yes_Period'
   target: 'LycanEvil' # ./00129-LycanEvil.mws.yaml
   snapshot: true
@@ -30,14 +30,14 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:14376
   - type: 'assign'
     var: 'lycan'
-    # ../en-US.restext:31 | "yes"
+    # ../en-US.restext:34 | "yes"
     expr: '"restext://Choice_Yes_Lower"'
 # ../.source/TheCostofDisease_Eng_v10.cs:14367
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:14369
 - type: 'link'
-  # ../en-US.restext:28 | "No."
+  # ../en-US.restext:31 | "No."
   label: 'restext://Choice_No_Period'
   target: 'WolvesSetupGen3' # ./00357-WolvesSetupGen3.mws.yaml
   snapshot: true

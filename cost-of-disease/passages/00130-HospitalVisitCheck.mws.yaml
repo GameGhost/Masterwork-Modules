@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'HospitalVisitCheck'
-# ../en-US.restext:1262 | "A Compulsory Visitation"
+# ../en-US.restext:1270 | "A Compulsory Visitation"
 title: 'restext://HospitalVisitCheck_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:14501
 - type: 'text'
-  # ../en-US.restext:1263 | "The {townname} General Ho..."
+  # ../en-US.restext:1271 | "The {townname} General Ho..."
   value: 'restext://HospitalVisitCheck_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:14509
 - type: 'assign'
@@ -19,16 +19,16 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:14511
 - type: 'text'
-  # ../en-US.restext:1264 | "On the day of the visit, ..."
+  # ../en-US.restext:1272 | "On the day of the visit, ..."
   value: 'restext://HospitalVisitCheck_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:14513
 - type: 'conditional'
-  # ../en-US.restext:31 | "yes"
+  # ../en-US.restext:34 | "yes"
   if: 'pub == "restext://Choice_Yes_Lower"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:14515
   - type: 'text'
-    # ../en-US.restext:1265 | " and using the innoculati..."
+    # ../en-US.restext:1273 | " and using the innoculati..."
     value: 'restext://HospitalVisitCheck_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:14517
 - type: 'text'
@@ -38,14 +38,14 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:14520
 - type: 'text'
-  # ../en-US.restext:1266 | "Click on the name of the ..."
+  # ../en-US.restext:1274 | "Click on the name of the ..."
   value: 'restext://HospitalVisitCheck_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:14527
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:14530
 - type: 'link'
-  # ../en-US.restext:15 | "Dr. {nameA} Jr."
+  # ../en-US.restext:18 | "Dr. {nameA} Jr."
   label: 'restext://Character_DrNameA_Jr'
   snapshot: true
   onclick:
@@ -56,31 +56,31 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:14564
   - type: 'conditional'
     conditions:
-    # ../en-US.restext:31 | "yes"
+    # ../en-US.restext:34 | "yes"
     - if: 'hospsign == nameA && hospA == "restext://Choice_Yes_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:14566
       - type: 'goto'
         target: 'HospitalVisitReject' # ./00358-HospitalVisitReject.mws.yaml
-    # ../en-US.restext:31 | "yes"
+    # ../en-US.restext:34 | "yes"
     - if: 'hospsign == nameB && hospB == "restext://Choice_Yes_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:14570
       - type: 'goto'
         target: 'HospitalVisitReject' # ./00358-HospitalVisitReject.mws.yaml
-    # ../en-US.restext:31 | "yes"
+    # ../en-US.restext:34 | "yes"
     - if: 'hospsign == nameC && hospC == "restext://Choice_Yes_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:14574
       - type: 'goto'
         target: 'HospitalVisitReject' # ./00358-HospitalVisitReject.mws.yaml
-    # ../en-US.restext:31 | "yes"
+    # ../en-US.restext:34 | "yes"
     - if: 'hospsign == nameD && hospD == "restext://Choice_Yes_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:14578
       - type: 'goto'
         target: 'HospitalVisitReject' # ./00358-HospitalVisitReject.mws.yaml
-    # ../en-US.restext:31 | "yes"
+    # ../en-US.restext:34 | "yes"
     - if: 'hospsign == nameE && hospE == "restext://Choice_Yes_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:14582
@@ -95,7 +95,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:14534
 - type: 'link'
-  # ../en-US.restext:16 | "Dr. {nameB} Jr."
+  # ../en-US.restext:19 | "Dr. {nameB} Jr."
   label: 'restext://Character_DrNameB_Jr'
   snapshot: true
   onclick:
@@ -106,31 +106,31 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:14594
   - type: 'conditional'
     conditions:
-    # ../en-US.restext:31 | "yes"
+    # ../en-US.restext:34 | "yes"
     - if: 'hospsign == nameA && hospA == "restext://Choice_Yes_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:14596
       - type: 'goto'
         target: 'HospitalVisitReject' # ./00358-HospitalVisitReject.mws.yaml
-    # ../en-US.restext:31 | "yes"
+    # ../en-US.restext:34 | "yes"
     - if: 'hospsign == nameB && hospB == "restext://Choice_Yes_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:14600
       - type: 'goto'
         target: 'HospitalVisitReject' # ./00358-HospitalVisitReject.mws.yaml
-    # ../en-US.restext:31 | "yes"
+    # ../en-US.restext:34 | "yes"
     - if: 'hospsign == nameC && hospC == "restext://Choice_Yes_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:14604
       - type: 'goto'
         target: 'HospitalVisitReject' # ./00358-HospitalVisitReject.mws.yaml
-    # ../en-US.restext:31 | "yes"
+    # ../en-US.restext:34 | "yes"
     - if: 'hospsign == nameD && hospD == "restext://Choice_Yes_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:14608
       - type: 'goto'
         target: 'HospitalVisitReject' # ./00358-HospitalVisitReject.mws.yaml
-    # ../en-US.restext:31 | "yes"
+    # ../en-US.restext:34 | "yes"
     - if: 'hospsign == nameE && hospE == "restext://Choice_Yes_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:14612
@@ -149,7 +149,7 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:14540
   - type: 'link'
-    # ../en-US.restext:17 | "Dr. {nameC} Jr."
+    # ../en-US.restext:20 | "Dr. {nameC} Jr."
     label: 'restext://Character_DrNameC_Jr'
     snapshot: true
     onclick:
@@ -160,31 +160,31 @@ nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:14624
     - type: 'conditional'
       conditions:
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       - if: 'hospsign == nameA && hospA == "restext://Choice_Yes_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:14626
         - type: 'goto'
           target: 'HospitalVisitReject' # ./00358-HospitalVisitReject.mws.yaml
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       - if: 'hospsign == nameB && hospB == "restext://Choice_Yes_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:14630
         - type: 'goto'
           target: 'HospitalVisitReject' # ./00358-HospitalVisitReject.mws.yaml
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       - if: 'hospsign == nameC && hospC == "restext://Choice_Yes_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:14634
         - type: 'goto'
           target: 'HospitalVisitReject' # ./00358-HospitalVisitReject.mws.yaml
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       - if: 'hospsign == nameD && hospD == "restext://Choice_Yes_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:14638
         - type: 'goto'
           target: 'HospitalVisitReject' # ./00358-HospitalVisitReject.mws.yaml
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       - if: 'hospsign == nameE && hospE == "restext://Choice_Yes_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:14642
@@ -203,7 +203,7 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:14547
   - type: 'link'
-    # ../en-US.restext:18 | "Dr. {nameD} Jr."
+    # ../en-US.restext:21 | "Dr. {nameD} Jr."
     label: 'restext://Character_DrNameD_Jr'
     snapshot: true
     onclick:
@@ -214,31 +214,31 @@ nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:14654
     - type: 'conditional'
       conditions:
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       - if: 'hospsign == nameA && hospA == "restext://Choice_Yes_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:14656
         - type: 'goto'
           target: 'HospitalVisitReject' # ./00358-HospitalVisitReject.mws.yaml
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       - if: 'hospsign == nameB && hospB == "restext://Choice_Yes_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:14660
         - type: 'goto'
           target: 'HospitalVisitReject' # ./00358-HospitalVisitReject.mws.yaml
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       - if: 'hospsign == nameC && hospC == "restext://Choice_Yes_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:14664
         - type: 'goto'
           target: 'HospitalVisitReject' # ./00358-HospitalVisitReject.mws.yaml
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       - if: 'hospsign == nameD && hospD == "restext://Choice_Yes_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:14668
         - type: 'goto'
           target: 'HospitalVisitReject' # ./00358-HospitalVisitReject.mws.yaml
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       - if: 'hospsign == nameE && hospE == "restext://Choice_Yes_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:14672
@@ -257,7 +257,7 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:14554
   - type: 'link'
-    # ../en-US.restext:19 | "Dr. {nameE} Jr."
+    # ../en-US.restext:22 | "Dr. {nameE} Jr."
     label: 'restext://Character_DrNameE_Jr'
     snapshot: true
     onclick:
@@ -268,31 +268,31 @@ nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:14684
     - type: 'conditional'
       conditions:
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       - if: 'hospsign == nameA && hospA == "restext://Choice_Yes_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:14686
         - type: 'goto'
           target: 'HospitalVisitReject' # ./00358-HospitalVisitReject.mws.yaml
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       - if: 'hospsign == nameB && hospB == "restext://Choice_Yes_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:14690
         - type: 'goto'
           target: 'HospitalVisitReject' # ./00358-HospitalVisitReject.mws.yaml
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       - if: 'hospsign == nameC && hospC == "restext://Choice_Yes_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:14694
         - type: 'goto'
           target: 'HospitalVisitReject' # ./00358-HospitalVisitReject.mws.yaml
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       - if: 'hospsign == nameD && hospD == "restext://Choice_Yes_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:14698
         - type: 'goto'
           target: 'HospitalVisitReject' # ./00358-HospitalVisitReject.mws.yaml
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       - if: 'hospsign == nameE && hospE == "restext://Choice_Yes_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:14702

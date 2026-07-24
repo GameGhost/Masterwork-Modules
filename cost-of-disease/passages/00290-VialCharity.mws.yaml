@@ -6,33 +6,33 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:29520
 - type: 'text'
-  # ../en-US.restext:2404 | "**Carefully hand this sto..."
+  # ../en-US.restext:2412 | "**Carefully hand this sto..."
   value: 'restext://VialCharity_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:29525
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:29530
 - type: 'popup'
-  # ../en-US.restext:53 | "Once you are ready, click..."
+  # ../en-US.restext:56 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   snapshot: true
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:29571
   - type: 'text'
-    # ../en-US.restext:2405 | "**A Legacy of Charity**"
+    # ../en-US.restext:2413 | "**A Legacy of Charity**"
     value: 'restext://VialCharity_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:29573
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:29574
   - type: 'text'
-    # ../en-US.restext:2406 | "While inspecting a wooden..."
+    # ../en-US.restext:2414 | "While inspecting a wooden..."
     value: 'restext://VialCharity_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:29580
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:29582
   - type: 'text'
-    # ../en-US.restext:2407 | "The note stated, \"A gift..."
+    # ../en-US.restext:2415 | "The note stated, \"A gift..."
     value: 'restext://VialCharity_004'
   # ../.source/TheCostofDisease_Eng_v10.cs:29588
   - type: 'break'
@@ -40,10 +40,10 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:29592
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:36 | "Click to continue..."
+    # ../en-US.restext:39 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: 'LycanthropicMessage' # ./00128-LycanthropicMessage.mws.yaml
-    # ../en-US.restext:345 | "Close"
+    # ../en-US.restext:352 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -54,12 +54,12 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:29546
     - type: 'text'
-      # ../en-US.restext:2408 | "Retrieve the **Vial** tok..."
+      # ../en-US.restext:2416 | "Retrieve the **Vial** tok..."
       value: 'restext://VialCharity_005'
     # ../.source/TheCostofDisease_Eng_v10.cs:29553
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:29555
     - type: 'text'
-      # ../en-US.restext:97 | "Return the **Heart{icon:s..."
+      # ../en-US.restext:104 | "Return the **Heart{icon:s..."
       value: 'restext://Directive_ReturnHeartToken'

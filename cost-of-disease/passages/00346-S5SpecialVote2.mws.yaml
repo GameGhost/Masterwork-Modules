@@ -2,37 +2,37 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S5SpecialVote2'
-# ../en-US.restext:341 | "Vote Outcome"
+# ../en-US.restext:348 | "Vote Outcome"
 title: 'restext://Title_VoteOutcome_Mixed'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:34447
 - type: 'text'
-  # ../en-US.restext:2755 | "Tally the votes from all ..."
+  # ../en-US.restext:2763 | "Tally the votes from all ..."
   value: 'restext://S5SpecialVote2_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:34448
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:34451
 - type: 'text'
-  # ../en-US.restext:361 | "_(Ties are broken, by the..."
+  # ../en-US.restext:368 | "_(Ties are broken, by the..."
   value: 'restext://Vote_TieBreakNote_A'
 # ../.source/TheCostofDisease_Eng_v10.cs:34453
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:34457
 - type: 'text'
-  # ../en-US.restext:2756 | "**Choose the option below..."
+  # ../en-US.restext:2764 | "**Choose the option below..."
   value: 'restext://S5SpecialVote2_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:34459
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:34461
 - type: 'text'
-  # ../en-US.restext:2757 | "If the majority of votes ..."
+  # ../en-US.restext:2765 | "If the majority of votes ..."
   value: 'restext://S5SpecialVote2_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:34462
 - type: 'link'
-  # ../en-US.restext:2758 | "click here for electricity."
+  # ../en-US.restext:2766 | "click here for electricity."
   label: 'restext://S5SpecialVote2_005'
   target: 'ElecY' # ./00069-ElecY.mws.yaml
   snapshot: true
@@ -41,11 +41,11 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:34465
 - type: 'text'
-  # ../en-US.restext:2759 | "If the majority of votes ..."
+  # ../en-US.restext:2767 | "If the majority of votes ..."
   value: 'restext://S5SpecialVote2_006'
 # ../.source/TheCostofDisease_Eng_v10.cs:34466
 - type: 'link'
-  # ../en-US.restext:48 | "click here."
+  # ../en-US.restext:51 | "click here."
   label: 'restext://Click_Here_Period'
   target: 'ElecN' # ./00070-ElecN.mws.yaml
   snapshot: true

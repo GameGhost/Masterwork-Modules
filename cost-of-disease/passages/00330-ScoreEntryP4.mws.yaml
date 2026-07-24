@@ -12,12 +12,12 @@ nodes:
     layout: 'input-popup'
     content:
     - type: 'text'
-      # ../en-US.restext:2662 | "Please enter the final sc..."
+      # ../en-US.restext:2670 | "Please enter the final sc..."
       value: 'restext://ScoreEntryP4_001'
     - type: 'input'
       label: ''
       var: 'scoreD'
-    # ../en-US.restext:347 | "Continue"
+    # ../en-US.restext:354 | "Continue"
     okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'
@@ -27,7 +27,7 @@ nodes:
     target: 'ScoreEntryP4' # ./00330-ScoreEntryP4.mws.yaml
 # ../.source/TheCostofDisease_Eng_v10.cs:33642
 - type: 'text'
-  # ../en-US.restext:2663 | "Thank you for recording t..."
+  # ../en-US.restext:2671 | "Thank you for recording t..."
   value: 'restext://ScoreEntryP4_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:33645
 - type: 'break'
@@ -38,14 +38,14 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:33649
   - type: 'link'
-    # ../en-US.restext:36 | "Click to continue..."
+    # ../en-US.restext:39 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: 'WinnerHUB' # ./00327-WinnerHUB.mws.yaml
     snapshot: true
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:33653
   - type: 'link'
-    # ../en-US.restext:36 | "Click to continue..."
+    # ../en-US.restext:39 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: 'ScoreEntryP5' # ./00331-ScoreEntryP5.mws.yaml
     snapshot: true

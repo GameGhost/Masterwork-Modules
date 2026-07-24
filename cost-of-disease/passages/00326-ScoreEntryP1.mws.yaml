@@ -12,12 +12,12 @@ nodes:
     layout: 'input-popup'
     content:
     - type: 'text'
-      # ../en-US.restext:2650 | "Please enter the final sc..."
+      # ../en-US.restext:2658 | "Please enter the final sc..."
       value: 'restext://ScoreEntryP1_001'
     - type: 'input'
       label: ''
       var: 'scoreA'
-    # ../en-US.restext:347 | "Continue"
+    # ../en-US.restext:354 | "Continue"
     okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'
@@ -27,14 +27,14 @@ nodes:
     target: 'ScoreEntryP1' # ./00326-ScoreEntryP1.mws.yaml
 # ../.source/TheCostofDisease_Eng_v10.cs:33406
 - type: 'text'
-  # ../en-US.restext:2651 | "Thank you for recording t..."
+  # ../en-US.restext:2659 | "Thank you for recording t..."
   value: 'restext://ScoreEntryP1_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:33409
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:33411
 - type: 'link'
-  # ../en-US.restext:40 | "Click to continue."
+  # ../en-US.restext:43 | "Click to continue."
   label: 'restext://Click_ContinuePeriod_A'
   target: 'ScoreEntryP2' # ./00328-ScoreEntryP2.mws.yaml
   snapshot: true

@@ -6,33 +6,33 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:8745
 - type: 'text'
-  # ../en-US.restext:312 | "**Carefully pick up the S..."
+  # ../en-US.restext:319 | "**Carefully pick up the S..."
   value: 'restext://Storybook_PickUpPrivate_Bold'
 # ../.source/TheCostofDisease_Eng_v10.cs:8748
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:8753
 - type: 'popup'
-  # ../en-US.restext:53 | "Once you are ready, click..."
+  # ../en-US.restext:56 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   snapshot: true
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:8763
   - type: 'text'
-    # ../en-US.restext:895 | "**Secret Meeting**"
+    # ../en-US.restext:904 | "**Secret Meeting**"
     value: 'restext://Envelopes_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:8765
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:8766
   - type: 'text'
-    # ../en-US.restext:896 | "When I arrived at the loc..."
+    # ../en-US.restext:905 | "When I arrived at the loc..."
     value: 'restext://Envelopes_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:8769
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:8773
   - type: 'link'
-    # ../en-US.restext:35 | "Click here to continue..."
+    # ../en-US.restext:38 | "Click here to continue..."
     label: 'restext://Click_ContinueEllipsis_B'
     target: 'EnvPasscode' # ./00102-EnvPasscode.mws.yaml
     snapshot: true

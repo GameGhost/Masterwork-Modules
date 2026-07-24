@@ -26,13 +26,13 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:24776
   - type: 'text'
-    # ../en-US.restext:1972 | "**A Cleansing**"
+    # ../en-US.restext:1980 | "**A Cleansing**"
     value: 'restext://Diseases2_004'
   # ../.source/TheCostofDisease_Eng_v10.cs:24778
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:24779
   - type: 'text'
-    # ../en-US.restext:1973 | "When the symptoms grew to..."
+    # ../en-US.restext:1981 | "When the symptoms grew to..."
     value: 'restext://Diseases2_005'
   # ../.source/TheCostofDisease_Eng_v10.cs:24780
   - type: 'break'
@@ -40,10 +40,10 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:24784
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:36 | "Click to continue..."
+    # ../en-US.restext:39 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: '${seedy == "yes" ? "Gen1Creepy-ConcealExpose" : "Devastation3"}' # ./00294-Gen1Creepy-ConcealExpose.mws.yaml, ./00032-Devastation3.mws.yaml
-    # ../en-US.restext:345 | "Close"
+    # ../en-US.restext:352 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -54,18 +54,18 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:24819
     - type: 'text'
-      # ../en-US.restext:1974 | "All players that have not..."
+      # ../en-US.restext:1982 | "All players that have not..."
       value: 'restext://Diseases2_006'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:24791
   - type: 'text'
-    # ../en-US.restext:1969 | "**Wasted Potential**"
+    # ../en-US.restext:1977 | "**Wasted Potential**"
     value: 'restext://Diseases2_001'
   # ../.source/TheCostofDisease_Eng_v10.cs:24793
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:24794
   - type: 'text'
-    # ../en-US.restext:1970 | "While the disease that pl..."
+    # ../en-US.restext:1978 | "While the disease that pl..."
     value: 'restext://Diseases2_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:24798
   - type: 'break'
@@ -73,10 +73,10 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:24802
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:36 | "Click to continue..."
+    # ../en-US.restext:39 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: '${seedy == "yes" ? "Gen1Creepy-ConcealExpose" : "Devastation3"}' # ./00294-Gen1Creepy-ConcealExpose.mws.yaml, ./00032-Devastation3.mws.yaml
-    # ../en-US.restext:345 | "Close"
+    # ../en-US.restext:352 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -87,5 +87,5 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:24857
     - type: 'text'
-      # ../en-US.restext:1971 | "All players that have not..."
+      # ../en-US.restext:1979 | "All players that have not..."
       value: 'restext://Diseases2_003'

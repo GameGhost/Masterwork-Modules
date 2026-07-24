@@ -2,34 +2,34 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Immortality'
-# ../en-US.restext:1051 | "Overcoming Death"
+# ../en-US.restext:1060 | "Overcoming Death"
 title: 'restext://Immortality_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:10165
 - type: 'text'
-  # ../en-US.restext:1052 | "If not now, then when? Th..."
+  # ../en-US.restext:1061 | "If not now, then when? Th..."
   value: 'restext://Immortality_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:10166
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:10168
 - type: 'text'
-  # ../en-US.restext:1053 | "It was trivial to discuss..."
+  # ../en-US.restext:1062 | "It was trivial to discuss..."
   value: 'restext://Immortality_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:10171
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:10173
 - type: 'text'
-  # ../en-US.restext:1054 | "They vowed to accumulate ..."
+  # ../en-US.restext:1063 | "They vowed to accumulate ..."
   value: 'restext://Immortality_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:10174
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:10176
 - type: 'text'
-  # ../en-US.restext:1055 | "For if life can be taken ..."
+  # ../en-US.restext:1064 | "For if life can be taken ..."
   value: 'restext://Immortality_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:10178
 - type: 'break'
@@ -37,10 +37,10 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:10182
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:36 | "Click to continue..."
+  # ../en-US.restext:39 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${(seedy == "no") ? "Gen1Creepy-RefuseBonus" : (seedy == "yes") ? "Gen1Creepy-AgreedReturn" : "Hospital2"}' # ./00300-Gen1Creepy-RefuseBonus.mws.yaml, ./00301-Gen1Creepy-AgreedReturn.mws.yaml, ./00034-Hospital2.mws.yaml
-  # ../en-US.restext:345 | "Close"
+  # ../en-US.restext:352 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -51,12 +51,12 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:10199
   - type: 'text'
-    # ../en-US.restext:85 | "Give each player a {icon:..."
+    # ../en-US.restext:92 | "Give each player a {icon:..."
     value: 'restext://Directive_GiveEachPlayerStorybookToken'
   # ../.source/TheCostofDisease_Eng_v10.cs:10207
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:10209
   - type: 'text'
-    # ../en-US.restext:86 | "Each player chooses an in..."
+    # ../en-US.restext:93 | "Each player chooses an in..."
     value: 'restext://Directive_JournalToken_ThirdLevel'

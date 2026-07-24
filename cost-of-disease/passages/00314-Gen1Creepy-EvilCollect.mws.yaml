@@ -6,29 +6,29 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:32250
 - type: 'conditional'
-  # ../en-US.restext:25 | "evil"
+  # ../en-US.restext:28 | "evil"
   if: 'wolves == "restext://Choice_Evil_Lower"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:32252
   - type: 'text'
-    # ../en-US.restext:2558 | "The man peered out from u..."
+    # ../en-US.restext:2566 | "The man peered out from u..."
     value: 'restext://Gen1Creepy_EvilCollect_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:32253
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:32255
   - type: 'text'
-    # ../en-US.restext:235 | "The gentlemen were kind e..."
+    # ../en-US.restext:242 | "The gentlemen were kind e..."
     value: 'restext://Narrative_DebtRepaymentOffer'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:32291
   - type: 'text'
-    # ../en-US.restext:2557 | "\"We are displeased with ..."
+    # ../en-US.restext:2565 | "\"We are displeased with ..."
     value: 'restext://Gen1Creepy_EvilCollect_001'
   # ../.source/TheCostofDisease_Eng_v10.cs:32292
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:32294
   - type: 'text'
-    # ../en-US.restext:235 | "The gentlemen were kind e..."
+    # ../en-US.restext:242 | "The gentlemen were kind e..."
     value: 'restext://Narrative_DebtRepaymentOffer'

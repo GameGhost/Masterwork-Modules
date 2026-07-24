@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Unicure1'
-# ../en-US.restext:819 | "Published!"
+# ../en-US.restext:828 | "Published!"
 title: 'restext://Unicure1_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:7484
 - type: 'text'
-  # ../en-US.restext:820 | "While inevitably the find..."
+  # ../en-US.restext:829 | "While inevitably the find..."
   value: 'restext://Unicure1_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:7490
 - type: 'break'
@@ -16,10 +16,10 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:7494
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:36 | "Click to continue..."
+  # ../en-US.restext:39 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'PanaceaIntro' # ./00167-PanaceaIntro.mws.yaml
-  # ../en-US.restext:345 | "Close"
+  # ../en-US.restext:352 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -31,7 +31,7 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:7501
   - type: 'assign'
     var: 'pub'
-    # ../en-US.restext:31 | "yes"
+    # ../en-US.restext:34 | "yes"
     expr: '"restext://Choice_Yes_Lower"'
   # ../.source/TheCostofDisease_Eng_v10.cs:7502
   - type: 'assign'
@@ -41,11 +41,11 @@ nodes:
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:7514
   - type: 'text'
-    # ../en-US.restext:821 | "**Gain {fevervp}VP.**"
+    # ../en-US.restext:830 | "**Gain {fevervp}VP.**"
     value: 'restext://Unicure1_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:7518
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:7519
   - type: 'text'
-    # ../en-US.restext:822 | "Then, move the {icon:angr..."
+    # ../en-US.restext:831 | "Then, move the {icon:angr..."
     value: 'restext://Unicure1_004'

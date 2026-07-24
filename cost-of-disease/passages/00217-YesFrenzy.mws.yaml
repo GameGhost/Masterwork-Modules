@@ -2,34 +2,34 @@
 ---
 format: 'mws/0.4'
 passage_id: 'YesFrenzy'
-# ../en-US.restext:1926 | "The FRENZY"
+# ../en-US.restext:1934 | "The FRENZY"
 title: 'restext://YesFrenzy_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:24337
 - type: 'text'
-  # ../en-US.restext:1927 | "The townsfolk who chose n..."
+  # ../en-US.restext:1935 | "The townsfolk who chose n..."
   value: 'restext://YesFrenzy_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:24343
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:24345
 - type: 'text'
-  # ../en-US.restext:1928 | "Indulging in latent urges..."
+  # ../en-US.restext:1936 | "Indulging in latent urges..."
   value: 'restext://YesFrenzy_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:24346
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:24348
 - type: 'text'
-  # ../en-US.restext:1929 | "The thin line between civ..."
+  # ../en-US.restext:1937 | "The thin line between civ..."
   value: 'restext://YesFrenzy_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:24351
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:24354
 - type: 'link'
-  # ../en-US.restext:36 | "Click to continue..."
+  # ../en-US.restext:39 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'Prosperity3b' # ./00316-Prosperity3b.mws.yaml
   snapshot: true
@@ -37,5 +37,5 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:24361
   - type: 'assign'
     var: 'frenzy'
-    # ../en-US.restext:31 | "yes"
+    # ../en-US.restext:34 | "yes"
     expr: '"restext://Choice_Yes_Lower"'

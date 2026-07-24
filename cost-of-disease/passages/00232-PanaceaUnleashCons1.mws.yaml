@@ -10,13 +10,13 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:25740
   - type: 'text'
-    # ../en-US.restext:180 | "**Whispers Abate**"
+    # ../en-US.restext:187 | "**Whispers Abate**"
     value: 'restext://Heading_WhispersAbate'
   # ../.source/TheCostofDisease_Eng_v10.cs:25742
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:25743
   - type: 'text'
-    # ../en-US.restext:2031 | "With the passing of the g..."
+    # ../en-US.restext:2039 | "With the passing of the g..."
     value: 'restext://PanaceaUnleashCons1_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:25744
   - type: 'break'
@@ -24,10 +24,10 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:25748
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:36 | "Click to continue..."
+    # ../en-US.restext:39 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: 'NewMaster' # ./00136-NewMaster.mws.yaml
-    # ../en-US.restext:345 | "Close"
+    # ../en-US.restext:352 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -38,7 +38,7 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:25774
     - type: 'text'
-      # ../en-US.restext:2032 | "Any players with a Servan..."
+      # ../en-US.restext:2040 | "Any players with a Servan..."
       value: 'restext://PanaceaUnleashCons1_003'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:25752

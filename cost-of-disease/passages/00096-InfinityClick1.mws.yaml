@@ -2,27 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: 'InfinityClick1'
-# ../en-US.restext:1095 | "Research Completed"
+# ../en-US.restext:1104 | "Research Completed"
 title: 'restext://InfinityClick1_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:10638
 - type: 'text'
-  # ../en-US.restext:1096 | "It seemed unimaginable; n..."
+  # ../en-US.restext:1105 | "It seemed unimaginable; n..."
   value: 'restext://InfinityClick1_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:10639
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:10643
 - type: 'text'
-  # ../en-US.restext:1097 | "**Which player has comple..."
+  # ../en-US.restext:1106 | "**Which player has comple..."
   value: 'restext://InfinityClick1_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:10645
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:10648
 - type: 'link'
-  # ../en-US.restext:1098 | "Dr. {nameA}"
+  # ../en-US.restext:1107 | "Dr. {nameA}"
   label: 'restext://InfinityClick1_004'
   target: 'InfinityClick2' # ./00095-InfinityClick2.mws.yaml
   snapshot: true
@@ -34,7 +34,7 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:10681
   - type: 'assign'
     var: 'lifeA'
-    # ../en-US.restext:31 | "yes"
+    # ../en-US.restext:34 | "yes"
     expr: '"restext://Choice_Yes_Lower"'
   # ../.source/TheCostofDisease_Eng_v10.cs:10682
   - type: 'assign'
@@ -45,7 +45,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:10652
 - type: 'link'
-  # ../en-US.restext:1099 | "Dr. {nameB}"
+  # ../en-US.restext:1108 | "Dr. {nameB}"
   label: 'restext://InfinityClick1_005'
   target: 'InfinityClick2' # ./00095-InfinityClick2.mws.yaml
   snapshot: true
@@ -57,7 +57,7 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:10690
   - type: 'assign'
     var: 'lifeB'
-    # ../en-US.restext:31 | "yes"
+    # ../en-US.restext:34 | "yes"
     expr: '"restext://Choice_Yes_Lower"'
   # ../.source/TheCostofDisease_Eng_v10.cs:10691
   - type: 'assign'
@@ -72,7 +72,7 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:10658
   - type: 'link'
-    # ../en-US.restext:1100 | "Dr. {nameC}"
+    # ../en-US.restext:1109 | "Dr. {nameC}"
     label: 'restext://InfinityClick1_006'
     target: 'InfinityClick2' # ./00095-InfinityClick2.mws.yaml
     snapshot: true
@@ -84,7 +84,7 @@ nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:10699
     - type: 'assign'
       var: 'lifeC'
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       expr: '"restext://Choice_Yes_Lower"'
     # ../.source/TheCostofDisease_Eng_v10.cs:10700
     - type: 'assign'
@@ -99,7 +99,7 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:10665
   - type: 'link'
-    # ../en-US.restext:1101 | "Dr. {nameD}"
+    # ../en-US.restext:1110 | "Dr. {nameD}"
     label: 'restext://InfinityClick1_007'
     target: 'InfinityClick2' # ./00095-InfinityClick2.mws.yaml
     snapshot: true
@@ -111,7 +111,7 @@ nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:10708
     - type: 'assign'
       var: 'lifeD'
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       expr: '"restext://Choice_Yes_Lower"'
     # ../.source/TheCostofDisease_Eng_v10.cs:10709
     - type: 'assign'
@@ -126,7 +126,7 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:10672
   - type: 'link'
-    # ../en-US.restext:1102 | "Dr. {nameE}"
+    # ../en-US.restext:1111 | "Dr. {nameE}"
     label: 'restext://InfinityClick1_008'
     target: 'InfinityClick2' # ./00095-InfinityClick2.mws.yaml
     snapshot: true
@@ -138,7 +138,7 @@ nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:10717
     - type: 'assign'
       var: 'lifeE'
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       expr: '"restext://Choice_Yes_Lower"'
     # ../.source/TheCostofDisease_Eng_v10.cs:10718
     - type: 'assign'

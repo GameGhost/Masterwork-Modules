@@ -2,27 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: 'GoodFrenzyEvent'
-# ../en-US.restext:1920 | "A Reasoned Proposal"
+# ../en-US.restext:1928 | "A Reasoned Proposal"
 title: 'restext://GoodFrenzyEvent_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:24298
 - type: 'text'
-  # ../en-US.restext:1921 | "While the system of progr..."
+  # ../en-US.restext:1929 | "While the system of progr..."
   value: 'restext://GoodFrenzyEvent_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:24299
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:24301
 - type: 'text'
-  # ../en-US.restext:1922 | "It was clear that humans ..."
+  # ../en-US.restext:1930 | "It was clear that humans ..."
   value: 'restext://GoodFrenzyEvent_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:24302
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:24304
 - type: 'text'
-  # ../en-US.restext:1923 | "Perhaps, they suggested, ..."
+  # ../en-US.restext:1931 | "Perhaps, they suggested, ..."
   value: 'restext://GoodFrenzyEvent_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:24307
 - type: 'break'
@@ -33,14 +33,14 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:24311
   - type: 'link'
-    # ../en-US.restext:35 | "Click here to continue..."
+    # ../en-US.restext:38 | "Click here to continue..."
     label: 'restext://Click_ContinueEllipsis_B'
     target: '2p-FrenzyALT' # ./00334-2p-FrenzyALT.mws.yaml
     snapshot: true
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:24315
   - type: 'link'
-    # ../en-US.restext:35 | "Click here to continue..."
+    # ../en-US.restext:38 | "Click here to continue..."
     label: 'restext://Click_ContinueEllipsis_B'
     target: 'GoodFrenzyEvent2' # ./00335-GoodFrenzyEvent2.mws.yaml
     snapshot: true

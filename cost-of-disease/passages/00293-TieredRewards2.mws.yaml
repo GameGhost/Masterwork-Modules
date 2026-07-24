@@ -15,7 +15,7 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:29759
   - type: 'text'
-    # ../en-US.restext:78 | "Any player that donated a..."
+    # ../en-US.restext:85 | "Any player that donated a..."
     value: 'restext://Directive_DonatedAExperiment_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:29766
   - type: 'let'
@@ -31,12 +31,12 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:29769
   - type: 'text'
-    # ../en-US.restext:79 | "Any player that donated a..."
+    # ../en-US.restext:86 | "Any player that donated a..."
     value: 'restext://Directive_DonatedBExperiment_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:29776
   - type: 'let'
     var: '_rnd_TieredRewards2_1'
-    # ../en-US.restext:285 | "Gain $2."
+    # ../en-US.restext:292 | "Gain $2."
     expr: '["Gain a Knowledge of your choice.", "restext://Resource_Gain2Dollars", "Gain 2VP."].shuffled("TieredRewards2_1")[0]'
   # ../.source/TheCostofDisease_Eng_v10.cs:29776
   - type: 'text'
@@ -48,7 +48,7 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:29779
   - type: 'text'
-    # ../en-US.restext:80 | "Any player that donated a..."
+    # ../en-US.restext:87 | "Any player that donated a..."
     value: 'restext://Directive_DonatedCExperiment_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:29786
   - type: 'let'
@@ -64,9 +64,9 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:29789
   - type: 'text'
-    # ../en-US.restext:2420 | "Any player that chose not..."
+    # ../en-US.restext:2428 | "Any player that chose not..."
     value: 'restext://TieredRewards2_001'
-  # ../en-US.restext:344 | "Accept"
+  # ../en-US.restext:351 | "Accept"
   okay: 'restext://UIButton_Accept'
   target: 'GloomyGothic3' # ./00173-GloomyGothic3.mws.yaml
   snapshot: true

@@ -6,14 +6,14 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:12655
 - type: 'text'
-  # ../en-US.restext:67 | "**Do not allow the other ..."
+  # ../en-US.restext:70 | "**Do not allow the other ..."
   value: 'restext://Common_Private_Decision_Warning'
 # ../.source/TheCostofDisease_Eng_v10.cs:12658
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:12662
 - type: 'text'
-  # ../en-US.restext:1196 | "**Continuing Investigatio..."
+  # ../en-US.restext:1205 | "**Continuing Investigatio..."
   value: 'restext://BuildplayD_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:12665
 - type: 'break'
@@ -25,24 +25,24 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:12669
     - type: 'text'
-      # ../en-US.restext:248 | "I arrived at the {ba} und..."
+      # ../en-US.restext:255 | "I arrived at the {ba} und..."
       value: 'restext://Narrative_Investigate_A_Arrival'
   - if: 'inv == bb'
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:12677
     - type: 'text'
-      # ../en-US.restext:249 | "A thick fog shrouded my a..."
+      # ../en-US.restext:256 | "A thick fog shrouded my a..."
       value: 'restext://Narrative_Investigate_B_Arrival'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:12688
   - type: 'let'
     var: '_rnd_BuildplayD_0'
-    # ../en-US.restext:65 | Common_Gentleman | "gentleman"
-    # ../en-US.restext:66 | Common_Gentlewoman | "gentlewoman"
+    # ../en-US.restext:68 | Common_Gentleman | "gentleman"
+    # ../en-US.restext:69 | Common_Gentlewoman | "gentlewoman"
     expr: '["restext://Common_Gentleman", "restext://Common_Gentlewoman"].shuffled("BuildplayD_0")[0]'
   # ../.source/TheCostofDisease_Eng_v10.cs:12687
   - type: 'text'
-    # ../en-US.restext:1197 | "To my chagrin, a {_rnd_Bu..."
+    # ../en-US.restext:1206 | "To my chagrin, a {_rnd_Bu..."
     value: 'restext://BuildplayD_002'
     lets:
     - '_rnd_BuildplayD_0'
@@ -51,7 +51,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:12693
 - type: 'text'
-  # ../en-US.restext:250 | "I could either provide ev..."
+  # ../en-US.restext:257 | "I could either provide ev..."
   value: 'restext://Narrative_Investigate_ExposeOrConceal'
 # ../.source/TheCostofDisease_Eng_v10.cs:12712
 - type: 'assign'
@@ -62,7 +62,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:12714
 - type: 'link'
-  # ../en-US.restext:29 | "I exposed the truth."
+  # ../en-US.restext:32 | "I exposed the truth."
   label: 'restext://Choice_Truth_Exposed'
   target: 'ExposeConfirmation' # ./00113-ExposeConfirmation.mws.yaml
   snapshot: true
@@ -74,7 +74,7 @@ nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:12727
     - type: 'assign'
       var: 'pDA'
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       expr: '"restext://Choice_Yes_Lower"'
     # ../.source/TheCostofDisease_Eng_v10.cs:12728
     - type: 'assign'
@@ -87,7 +87,7 @@ nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:12732
     - type: 'assign'
       var: 'pDB'
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       expr: '"restext://Choice_Yes_Lower"'
     # ../.source/TheCostofDisease_Eng_v10.cs:12733
     - type: 'assign'
@@ -100,7 +100,7 @@ nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:12737
     - type: 'assign'
       var: 'pDC'
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       expr: '"restext://Choice_Yes_Lower"'
     # ../.source/TheCostofDisease_Eng_v10.cs:12738
     - type: 'assign'
@@ -111,7 +111,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:12718
 - type: 'link'
-  # ../en-US.restext:30 | "I concealed the true purpose."
+  # ../en-US.restext:33 | "I concealed the true purpose."
   label: 'restext://Choice_Truth_Hidden'
   target: 'ConcealConfirmation' # ./00114-ConcealConfirmation.mws.yaml
   snapshot: true

@@ -2,27 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Changes'
-# ../en-US.restext:594 | "A Return to Civility"
+# ../en-US.restext:603 | "A Return to Civility"
 title: 'restext://Changes_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:4319
 - type: 'text'
-  # ../en-US.restext:595 | "Though the decayed trails..."
+  # ../en-US.restext:604 | "Though the decayed trails..."
   value: 'restext://Changes_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:4320
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:4322
 - type: 'text'
-  # ../en-US.restext:596 | "It was upon these morning..."
+  # ../en-US.restext:605 | "It was upon these morning..."
   value: 'restext://Changes_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:4323
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:4325
 - type: 'text'
-  # ../en-US.restext:597 | "Armed with an inimitable ..."
+  # ../en-US.restext:606 | "Armed with an inimitable ..."
   value: 'restext://Changes_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:4328
 - type: 'assign'
@@ -34,10 +34,10 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:4332
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:36 | "Click to continue..."
+  # ../en-US.restext:39 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'Diseases1' # ./00104-Diseases1.mws.yaml
-  # ../en-US.restext:345 | "Close"
+  # ../en-US.restext:352 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -48,7 +48,7 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:4348
   - type: 'text'
-    # ../en-US.restext:598 | "All players discard their..."
+    # ../en-US.restext:607 | "All players discard their..."
     value: 'restext://Changes_005'
   # ../.source/TheCostofDisease_Eng_v10.cs:4354
   - type: 'assign'
@@ -56,7 +56,7 @@ nodes:
     expr: '[1, 2, 3, 4, 5]'
   # ../.source/TheCostofDisease_Eng_v10.cs:4355
   - type: 'conditional'
-    # ../en-US.restext:194 | "bank"
+    # ../en-US.restext:201 | "bank"
     if: 'building == "restext://Location_Bank_Lower"'
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:4357
@@ -84,14 +84,14 @@ nodes:
   - type: 'switch'
     on: 'building'
     cases:
-    # ../en-US.restext:194 | "bank"
+    # ../en-US.restext:201 | "bank"
     - match: 'restext://Location_Bank_Lower'
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:4369
       - type: 'assign'
         var: 'buildC'
         expr: '2'
-    # ../en-US.restext:195 | "library"
+    # ../en-US.restext:202 | "library"
     - match: 'restext://Location_Library_Lower'
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:4373
@@ -112,34 +112,34 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:4381
       - type: 'assign'
         var: 'ba'
-        # ../en-US.restext:8 | "Hardware Store"
+        # ../en-US.restext:11 | "Hardware Store"
         expr: '"restext://Building_HardwareStore"'
     - match: 2
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:4385
       - type: 'assign'
         var: 'ba'
-        # ../en-US.restext:11 | "Wire Service"
+        # ../en-US.restext:14 | "Wire Service"
         expr: '"restext://Building_WireService"'
     - match: 3
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:4389
       - type: 'assign'
         var: 'ba'
-        # ../en-US.restext:6 | "Book Store"
+        # ../en-US.restext:9 | "Book Store"
         expr: '"restext://Building_BookStore"'
     - match: 4
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:4393
       - type: 'assign'
         var: 'ba'
-        # ../en-US.restext:10 | "Warehouse"
+        # ../en-US.restext:13 | "Warehouse"
         expr: '"restext://Building_Warehouse"'
     default:
     # ../.source/TheCostofDisease_Eng_v10.cs:4398
     - type: 'assign'
       var: 'ba'
-      # ../en-US.restext:9 | "Pet Store"
+      # ../en-US.restext:12 | "Pet Store"
       expr: '"restext://Building_PetStore"'
   # ../.source/TheCostofDisease_Eng_v10.cs:4400
   - type: 'switch'
@@ -150,34 +150,34 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:4402
       - type: 'assign'
         var: 'bb'
-        # ../en-US.restext:8 | "Hardware Store"
+        # ../en-US.restext:11 | "Hardware Store"
         expr: '"restext://Building_HardwareStore"'
     - match: 2
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:4406
       - type: 'assign'
         var: 'bb'
-        # ../en-US.restext:11 | "Wire Service"
+        # ../en-US.restext:14 | "Wire Service"
         expr: '"restext://Building_WireService"'
     - match: 3
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:4410
       - type: 'assign'
         var: 'bb'
-        # ../en-US.restext:6 | "Book Store"
+        # ../en-US.restext:9 | "Book Store"
         expr: '"restext://Building_BookStore"'
     - match: 4
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:4414
       - type: 'assign'
         var: 'bb'
-        # ../en-US.restext:10 | "Warehouse"
+        # ../en-US.restext:13 | "Warehouse"
         expr: '"restext://Building_Warehouse"'
     default:
     # ../.source/TheCostofDisease_Eng_v10.cs:4419
     - type: 'assign'
       var: 'bb'
-      # ../en-US.restext:9 | "Pet Store"
+      # ../en-US.restext:12 | "Pet Store"
       expr: '"restext://Building_PetStore"'
   # ../.source/TheCostofDisease_Eng_v10.cs:4421
   - type: 'switch'
@@ -188,32 +188,32 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:4423
       - type: 'assign'
         var: 'bc'
-        # ../en-US.restext:8 | "Hardware Store"
+        # ../en-US.restext:11 | "Hardware Store"
         expr: '"restext://Building_HardwareStore"'
     - match: 2
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:4427
       - type: 'assign'
         var: 'bc'
-        # ../en-US.restext:11 | "Wire Service"
+        # ../en-US.restext:14 | "Wire Service"
         expr: '"restext://Building_WireService"'
     - match: 3
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:4431
       - type: 'assign'
         var: 'bc'
-        # ../en-US.restext:6 | "Book Store"
+        # ../en-US.restext:9 | "Book Store"
         expr: '"restext://Building_BookStore"'
     - match: 4
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:4435
       - type: 'assign'
         var: 'bc'
-        # ../en-US.restext:10 | "Warehouse"
+        # ../en-US.restext:13 | "Warehouse"
         expr: '"restext://Building_Warehouse"'
     default:
     # ../.source/TheCostofDisease_Eng_v10.cs:4440
     - type: 'assign'
       var: 'bc'
-      # ../en-US.restext:9 | "Pet Store"
+      # ../en-US.restext:12 | "Pet Store"
       expr: '"restext://Building_PetStore"'

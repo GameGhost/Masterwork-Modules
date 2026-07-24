@@ -6,46 +6,46 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:2986
 - type: 'text'
-  # ../en-US.restext:468 | "Each Estate Upgrade is wo..."
+  # ../en-US.restext:477 | "Each Estate Upgrade is wo..."
   value: 'restext://Scoring_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:2987
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:2988
 - type: 'text'
-  # ../en-US.restext:469 | "Add any additional points..."
+  # ../en-US.restext:478 | "Add any additional points..."
   value: 'restext://Scoring_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:2989
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:2990
 - type: 'text'
-  # ../en-US.restext:470 | "Score -3VP for any Maladj..."
+  # ../en-US.restext:479 | "Score -3VP for any Maladj..."
   value: 'restext://Scoring_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:2991
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:2992
 - type: 'conditional'
-  # ../en-US.restext:31 | "yes"
+  # ../en-US.restext:34 | "yes"
   if: 'lycan == "restext://Choice_Yes_Lower"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:2994
   - type: 'text'
-    # ../en-US.restext:471 | "Check to make sure the pl..."
+    # ../en-US.restext:480 | "Check to make sure the pl..."
     value: 'restext://Scoring_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:3005
 - type: 'conditional'
-  # ../en-US.restext:31 | "yes"
+  # ../en-US.restext:34 | "yes"
   if: 'immort == "restext://Choice_Yes_Lower"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:3007
   - type: 'text'
-    # ../en-US.restext:472 | "Check to make sure the pl..."
+    # ../en-US.restext:481 | "Check to make sure the pl..."
     value: 'restext://Scoring_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:3018
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:3024
 - type: 'link'
-  # ../en-US.restext:62 | "Click to tabulate scores ..."
+  # ../en-US.restext:65 | "Click to tabulate scores ..."
   label: 'restext://Click_TabulateScores'
   target: 'ScoreEntry'
   snapshot: true

@@ -2,32 +2,32 @@
 ---
 format: 'mws/0.4'
 passage_id: 'HunterConf2'
-# ../en-US.restext:1728 | "EXPERIMENTS UNLEASHED"
+# ../en-US.restext:1736 | "EXPERIMENTS UNLEASHED"
 title: 'restext://HunterConf2_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:22393
 - type: 'text'
-  # ../en-US.restext:304 | "Special Event"
+  # ../en-US.restext:311 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/TheCostofDisease_Eng_v10.cs:22394
 - type: 'text'
-  # ../en-US.restext:1729 | "All remaining eligible pl..."
+  # ../en-US.restext:1737 | "All remaining eligible pl..."
   value: 'restext://HunterConf2_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:22407
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:22409
 - type: 'text'
-  # ../en-US.restext:1730 | "Once all players have cho..."
+  # ../en-US.restext:1738 | "Once all players have cho..."
   value: 'restext://HunterConf2_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:22411
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:22414
 - type: 'text'
-  # ../en-US.restext:1731 | "Then, players will **coun..."
+  # ../en-US.restext:1739 | "Then, players will **coun..."
   value: 'restext://HunterConf2_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:22422
 - type: 'switch'
@@ -62,23 +62,55 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:22421
 - type: 'text'
-  # ../en-US.restext:1732 | "If the value is equal to ..."
+  # ../en-US.restext:1740 | "If the value is equal to ..."
   value: 'restext://HunterConf2_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:22441
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:22442
 - type: 'text'
-  # ../en-US.restext:1733 | "If the value is less, the..."
+  # ../en-US.restext:1741 | "If the value is less, the..."
   value: 'restext://HunterConf2_006'
 # ../.source/TheCostofDisease_Eng_v10.cs:22443
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:22447
 - type: 'popup'
-  layout: 'bidding'
-  # ../en-US.restext:1734 | "Click to start the bid."
+  layout: 'countdown_instructions'
+  # ../en-US.restext:1742 | "Click to start the bid."
   label: 'restext://HunterConf2_007'
-  target: 'HunterConf3' # ./00350-HunterConf3.mws.yaml
-  # ../en-US.restext:345 | "Close"
-  okay: 'restext://UIButton_Close'
-  snapshot: false
+  content:
+  - type: 'text'
+    # ../en-US.restext:6 | "Click on the 'Start Biddi..."
+    value: 'restext://Bidding_Instructions'
+  - type: 'break'
+    style: 'paragraph'
+  - type: 'text'
+    # ../en-US.restext:7 | "When you see the word 'RE..."
+    value: 'restext://Bidding_RevealInstructions'
+  - type: 'break'
+    style: 'paragraph'
+  - type: 'popup'
+    layout: 'countdown_action'
+    # ../en-US.restext:8 | "Start Bidding"
+    label: 'restext://Bidding_StartButton'
+    content:
+    - type: 'text'
+      # ../en-US.restext:74 | "3"
+      value: 'restext://Countdown_Three'
+      style: 'countdown-3'
+    - type: 'text'
+      # ../en-US.restext:75 | "2"
+      value: 'restext://Countdown_Two'
+      style: 'countdown-2'
+    - type: 'text'
+      # ../en-US.restext:72 | "1"
+      value: 'restext://Countdown_One'
+      style: 'countdown-1'
+    - type: 'text'
+      # ../en-US.restext:73 | "REVEAL"
+      value: 'restext://Countdown_Reveal'
+      style: 'countdown-reveal'
+    # ../en-US.restext:73 | "REVEAL"
+    okay: 'restext://Countdown_Reveal'
+    target: 'HunterConf3' # ./00350-HunterConf3.mws.yaml
+    snapshot: false

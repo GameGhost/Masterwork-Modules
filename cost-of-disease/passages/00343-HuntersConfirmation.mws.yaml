@@ -8,36 +8,36 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:34309
 - type: 'text'
-  # ../en-US.restext:306 | "**Continue to not allow o..."
+  # ../en-US.restext:313 | "**Continue to not allow o..."
   value: 'restext://Storybook_ContinuePrivate'
 # ../.source/TheCostofDisease_Eng_v10.cs:34311
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:34313
 - type: 'conditional'
-  # ../en-US.restext:26 | "good"
+  # ../en-US.restext:29 | "good"
   if: 'hunters == "restext://Choice_Good_Lower"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:34317
   - type: 'text'
-    # ../en-US.restext:159 | "**A Message of Confirmation**"
+    # ../en-US.restext:166 | "**A Message of Confirmation**"
     value: 'restext://Heading_MessageOfConfirmation'
   # ../.source/TheCostofDisease_Eng_v10.cs:34319
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:34320
   - type: 'text'
-    # ../en-US.restext:2743 | "Several weeks hence, {mee..."
+    # ../en-US.restext:2751 | "Several weeks hence, {mee..."
     value: 'restext://HuntersConfirmation_002'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:34335
   - type: 'text'
-    # ../en-US.restext:159 | "**A Message of Confirmation**"
+    # ../en-US.restext:166 | "**A Message of Confirmation**"
     value: 'restext://Heading_MessageOfConfirmation'
   # ../.source/TheCostofDisease_Eng_v10.cs:34337
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:34338
   - type: 'text'
-    # ../en-US.restext:2742 | "Several weeks hence, {mee..."
+    # ../en-US.restext:2750 | "Several weeks hence, {mee..."
     value: 'restext://HuntersConfirmation_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:34350
 - type: 'assign'
@@ -48,7 +48,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:34352
 - type: 'link'
-  # ../en-US.restext:52 | "Click to return..."
+  # ../en-US.restext:55 | "Click to return..."
   label: 'restext://Click_Return'
   target: 'Gen1Insanity-NoAction' # ./00305-Gen1Insanity-NoAction.mws.yaml
   snapshot: true

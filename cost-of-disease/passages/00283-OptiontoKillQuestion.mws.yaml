@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'OptiontoKillQuestion'
-# ../en-US.restext:2364 | "Immortality Check"
+# ../en-US.restext:2372 | "Immortality Check"
 title: 'restext://OptiontoKillQuestion_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:29166
 - type: 'text'
-  # ../en-US.restext:2365 | "**Are there any players w..."
+  # ../en-US.restext:2373 | "**Are there any players w..."
   value: 'restext://OptiontoKillQuestion_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:29168
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:29170
 - type: 'link'
-  # ../en-US.restext:32 | "Yes."
+  # ../en-US.restext:35 | "Yes."
   label: 'restext://Choice_Yes_Period'
   target: 'DetEffectRandom' # ./00166-DetEffectRandom.mws.yaml
   snapshot: true
@@ -24,7 +24,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:29174
 - type: 'link'
-  # ../en-US.restext:28 | "No."
+  # ../en-US.restext:31 | "No."
   label: 'restext://Choice_No_Period'
   target: 'NoUni2' # ./00036-NoUni2.mws.yaml
   snapshot: true

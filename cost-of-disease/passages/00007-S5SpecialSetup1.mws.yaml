@@ -2,14 +2,14 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S5SpecialSetup1'
-# ../en-US.restext:420 | "Direction of the Town"
+# ../en-US.restext:429 | "Direction of the Town"
 title: 'restext://S5SpecialSetup1_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:2361
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:344 | "Accept"
+  # ../en-US.restext:351 | "Accept"
   okay: 'restext://UIButton_Accept'
   header:
   # ../.source/TheCostofDisease_Eng_v10.cs:2365
@@ -19,7 +19,7 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:2367
   - type: 'text'
-    # ../en-US.restext:421 | "{mayor} receives **3VP** ..."
+    # ../en-US.restext:430 | "{mayor} receives **3VP** ..."
     value: 'restext://S5SpecialSetup1_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:2384
 - type: 'break'
@@ -33,13 +33,13 @@ nodes:
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:2398
 - type: 'text'
-  # ../en-US.restext:133 | "**BANK**"
+  # ../en-US.restext:140 | "**BANK**"
   value: 'restext://Heading_Bank'
 # ../.source/TheCostofDisease_Eng_v10.cs:2400
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:2401
 - type: 'text'
-  # ../en-US.restext:422 | "For each visit to the Ban..."
+  # ../en-US.restext:431 | "For each visit to the Ban..."
   value: 'restext://S5SpecialSetup1_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:2414
 - type: 'break'
@@ -53,27 +53,27 @@ nodes:
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:2429
 - type: 'text'
-  # ../en-US.restext:154 | "**LIBRARY**"
+  # ../en-US.restext:161 | "**LIBRARY**"
   value: 'restext://Heading_Library'
 # ../.source/TheCostofDisease_Eng_v10.cs:2431
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:2432
 - type: 'text'
-  # ../en-US.restext:423 | "For each visit to the Lib..."
+  # ../en-US.restext:432 | "For each visit to the Lib..."
   value: 'restext://S5SpecialSetup1_006'
 # ../.source/TheCostofDisease_Eng_v10.cs:2442
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:2446
 - type: 'text'
-  # ../en-US.restext:424 | "**Which building would th..."
+  # ../en-US.restext:433 | "**Which building would th..."
   value: 'restext://S5SpecialSetup1_007'
 # ../.source/TheCostofDisease_Eng_v10.cs:2448
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:2451
 - type: 'link'
-  # ../en-US.restext:425 | "Bank."
+  # ../en-US.restext:434 | "Bank."
   label: 'restext://S5SpecialSetup1_008'
   target: 'FeverServe2' # ./00067-FeverServe2.mws.yaml
   snapshot: true
@@ -81,14 +81,14 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:2462
   - type: 'assign'
     var: 'building'
-    # ../en-US.restext:194 | "bank"
+    # ../en-US.restext:201 | "bank"
     expr: '"restext://Location_Bank_Lower"'
 # ../.source/TheCostofDisease_Eng_v10.cs:2452
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:2455
 - type: 'link'
-  # ../en-US.restext:426 | "Library."
+  # ../en-US.restext:435 | "Library."
   label: 'restext://S5SpecialSetup1_010'
   target: 'FeverServe2' # ./00067-FeverServe2.mws.yaml
   snapshot: true
@@ -96,5 +96,5 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:2469
   - type: 'assign'
     var: 'building'
-    # ../en-US.restext:195 | "library"
+    # ../en-US.restext:202 | "library"
     expr: '"restext://Location_Library_Lower"'

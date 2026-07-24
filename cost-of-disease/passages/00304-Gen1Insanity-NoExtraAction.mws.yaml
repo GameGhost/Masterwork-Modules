@@ -10,25 +10,25 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:31460
   - type: 'conditional'
-    # ../en-US.restext:27 | "no"
+    # ../en-US.restext:30 | "no"
     if: 'vacation == "restext://Choice_No_Lower"'
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:31464
     - type: 'text'
-      # ../en-US.restext:161 | "**More Time Than Ever**"
+      # ../en-US.restext:168 | "**More Time Than Ever**"
       value: 'restext://Heading_MoreTimeThanEver'
     # ../.source/TheCostofDisease_Eng_v10.cs:31466
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:31467
     - type: 'text'
-      # ../en-US.restext:245 | "{gen1sane} II's parent ha..."
+      # ../en-US.restext:252 | "{gen1sane} II's parent ha..."
       value: 'restext://Narrative_Gen1Sane_WorkEthic'
     # ../.source/TheCostofDisease_Eng_v10.cs:31472
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:31474
     - type: 'text'
-      # ../en-US.restext:2495 | "And so this matter of adm..."
+      # ../en-US.restext:2503 | "And so this matter of adm..."
       value: 'restext://Gen1Insanity_NoExtraAction_003'
     # ../.source/TheCostofDisease_Eng_v10.cs:31476
     - type: 'break'
@@ -36,10 +36,10 @@ nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:31480
     - type: 'popup'
       layout: 'setup'
-      # ../en-US.restext:36 | "Click to continue..."
+      # ../en-US.restext:39 | "Click to continue..."
       label: 'restext://Click_ContinueEllipsis_C'
       target: '${round == 7 ? "Hospital1" : round == 8 ? "Hospital2" : "Hospital3"}' # ./00003-Hospital1.mws.yaml, ./00034-Hospital2.mws.yaml, ./00035-Hospital3.mws.yaml
-      # ../en-US.restext:345 | "Close"
+      # ../en-US.restext:352 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
       header:
@@ -50,7 +50,7 @@ nodes:
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:31541
       - type: 'text'
-        # ../en-US.restext:2496 | "You may immediately retur..."
+        # ../en-US.restext:2504 | "You may immediately retur..."
         value: 'restext://Gen1Insanity_NoExtraAction_004'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:31485

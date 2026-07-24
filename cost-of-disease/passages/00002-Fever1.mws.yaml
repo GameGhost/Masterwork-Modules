@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Fever1'
-# ../en-US.restext:343 | "YELLOW FEVER"
+# ../en-US.restext:350 | "YELLOW FEVER"
 title: 'restext://Title_YellowFever'
-# ../en-US.restext:320 | "Early Years"
+# ../en-US.restext:327 | "Early Years"
 subtitle: 'restext://Title_EarlyYears'
 tags:
 - 'HUB'
@@ -21,7 +21,7 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:1631
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:344 | "Accept"
+    # ../en-US.restext:351 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/TheCostofDisease_Eng_v10.cs:1635
@@ -31,13 +31,13 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:1638
     - type: 'text'
-      # ../en-US.restext:376 | "Turn to **The Cost of Dis..."
+      # ../en-US.restext:385 | "Turn to **The Cost of Dis..."
       value: 'restext://Fever1_004'
     # ../.source/TheCostofDisease_Eng_v10.cs:1657
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:1658
     - type: 'text'
-      # ../en-US.restext:377 | "Retrieve the {icon:s1_hea..."
+      # ../en-US.restext:386 | "Retrieve the {icon:s1_hea..."
       value: 'restext://Fever1_005'
     # ../.source/TheCostofDisease_Eng_v10.cs:1672
     - type: 'switch'
@@ -70,7 +70,7 @@ nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:1662
     - type: 'break'
     - type: 'text'
-      # ../en-US.restext:378 | "Give the **Start Player**..."
+      # ../en-US.restext:387 | "Give the **Start Player**..."
       value: 'restext://Fever1_006'
       lets:
       - '_rnd_Fever1_0'
@@ -79,19 +79,19 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:1696
 - type: 'section'
-  # ../en-US.restext:135 | "**BUILD A HOSPITAL**"
+  # ../en-US.restext:142 | "**BUILD A HOSPITAL**"
   title: 'restext://Heading_BuildHospital'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:1704
   - type: 'text'
-    # ../en-US.restext:181 | "The church can no longer ..."
+    # ../en-US.restext:188 | "The church can no longer ..."
     value: 'restext://Hospital_ChurchExpansion_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:1714
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:1716
   - type: 'text'
-    # ../en-US.restext:379 | "At the end of the Generat..."
+    # ../en-US.restext:388 | "At the end of the Generat..."
     value: 'restext://Fever1_009'
 # ../.source/TheCostofDisease_Eng_v10.cs:1730
 - type: 'break'
@@ -102,16 +102,16 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:1736
   - type: 'section'
-    # ../en-US.restext:132 | "{icon:storybook} **Attrac..."
+    # ../en-US.restext:139 | "{icon:storybook} **Attrac..."
     title: 'restext://Heading_AttractingAttention'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:1745
     - type: 'text'
-      # ../en-US.restext:280 | "If a player reaches the *..."
+      # ../en-US.restext:287 | "If a player reaches the *..."
       value: 'restext://Resource_CreepyTrack_4thSpace_Lead'
     # ../.source/TheCostofDisease_Eng_v10.cs:1753
     - type: 'link'
-      # ../en-US.restext:49 | "click here"
+      # ../en-US.restext:52 | "click here"
       label: 'restext://Click_Here_Plain'
       target: 'Gen1-CreepyTrack' # ./00177-Gen1-CreepyTrack.mws.yaml
       snapshot: true
@@ -124,16 +124,16 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:1762
   - type: 'section'
-    # ../en-US.restext:155 | "{icon:storybook} **The Ma..."
+    # ../en-US.restext:162 | "{icon:storybook} **The Ma..."
     title: 'restext://Heading_MarkOfGenius'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:1771
     - type: 'text'
-      # ../en-US.restext:288 | "If a player reaches the *..."
+      # ../en-US.restext:295 | "If a player reaches the *..."
       value: 'restext://Resource_InsanityTrack_3rdSpace_Lead'
     # ../.source/TheCostofDisease_Eng_v10.cs:1779
     - type: 'link'
-      # ../en-US.restext:48 | "click here."
+      # ../en-US.restext:51 | "click here."
       label: 'restext://Click_Here_Period'
       target: 'Gen1-SanityTrack' # ./00178-Gen1-SanityTrack.mws.yaml
       snapshot: true
@@ -142,12 +142,12 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:1786
 - type: 'section'
-  # ../en-US.restext:142 | "**Second round Event - El..."
+  # ../en-US.restext:149 | "**Second round Event - El..."
   title: 'restext://Heading_ElectionSeason'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:1794
   - type: 'text'
-    # ../en-US.restext:108 | "Political pandering may r..."
+    # ../en-US.restext:115 | "Political pandering may r..."
     value: 'restext://Election_PanderingFlavor'
   # ../.source/TheCostofDisease_Eng_v10.cs:1797
   - type: 'break'
@@ -155,10 +155,10 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:1801
   - type: 'popup'
     layout: 'end_of_round'
-    # ../en-US.restext:380 | "Click here to continue to..."
+    # ../en-US.restext:389 | "Click here to continue to..."
     label: 'restext://Fever1_017'
     target: 'FeverServe1' # ./00066-FeverServe1.mws.yaml
-    # ../en-US.restext:349 | "End of Round"
+    # ../en-US.restext:356 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -167,10 +167,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:381 | "The Early Years of the Fi..."
+      # ../en-US.restext:390 | "The Early Years of the Fi..."
       value: 'restext://Fever1_019'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:302 | "Then, perform all Start o..."
+      # ../en-US.restext:309 | "Then, perform all Start o..."
       value: 'restext://Round_StartMiddleYears_Rule'

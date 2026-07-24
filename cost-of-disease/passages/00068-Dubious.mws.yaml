@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Dubious'
-# ../en-US.restext:855 | "Dubious Bartering"
+# ../en-US.restext:864 | "Dubious Bartering"
 title: 'restext://Dubious_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:8043
 - type: 'text'
-  # ../en-US.restext:856 | "Within days of their sett..."
+  # ../en-US.restext:865 | "Within days of their sett..."
   value: 'restext://Dubious_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:8044
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:8046
 - type: 'text'
-  # ../en-US.restext:857 | "Having an extensive backg..."
+  # ../en-US.restext:866 | "Having an extensive backg..."
   value: 'restext://Dubious_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:8050
 - type: 'break'
@@ -23,10 +23,10 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:8054
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:36 | "Click to continue..."
+  # ../en-US.restext:39 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'SpecialGen1' # ./00254-SpecialGen1.mws.yaml
-  # ../en-US.restext:345 | "Close"
+  # ../en-US.restext:352 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -44,45 +44,45 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:8064
       - type: 'assign'
         var: 'wolves'
-        # ../en-US.restext:25 | "evil"
+        # ../en-US.restext:28 | "evil"
         expr: '"restext://Choice_Evil_Lower"'
     - match: 'Kraven'
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:8068
       - type: 'assign'
         var: 'wolves'
-        # ../en-US.restext:26 | "good"
+        # ../en-US.restext:29 | "good"
         expr: '"restext://Choice_Good_Lower"'
     default:
     # ../.source/TheCostofDisease_Eng_v10.cs:8072
     - type: 'assign'
       var: 'wolves'
-      # ../en-US.restext:25 | Choice_Evil_Lower | "evil"
-      # ../en-US.restext:26 | Choice_Good_Lower | "good"
+      # ../en-US.restext:28 | Choice_Evil_Lower | "evil"
+      # ../en-US.restext:29 | Choice_Good_Lower | "good"
       expr: '["restext://Choice_Evil_Lower", "restext://Choice_Good_Lower"].shuffled("Dubious_0")[0]'
   # ../.source/TheCostofDisease_Eng_v10.cs:8075
   - type: 'conditional'
     conditions:
-    # ../en-US.restext:26 | "good"
+    # ../en-US.restext:29 | "good"
     - if: 'wolves == "restext://Choice_Good_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:8077
       - type: 'assign'
         var: 'hunters'
-        # ../en-US.restext:25 | "evil"
+        # ../en-US.restext:28 | "evil"
         expr: '"restext://Choice_Evil_Lower"'
-    # ../en-US.restext:25 | "evil"
+    # ../en-US.restext:28 | "evil"
     - if: 'wolves == "restext://Choice_Evil_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:8081
       - type: 'assign'
         var: 'hunters'
-        # ../en-US.restext:26 | "good"
+        # ../en-US.restext:29 | "good"
         expr: '"restext://Choice_Good_Lower"'
   # ../.source/TheCostofDisease_Eng_v10.cs:8090
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:8092
   - type: 'text'
-    # ../en-US.restext:858 | "Retrieve the Dubious Bart..."
+    # ../en-US.restext:867 | "Retrieve the Dubious Bart..."
     value: 'restext://Dubious_004'

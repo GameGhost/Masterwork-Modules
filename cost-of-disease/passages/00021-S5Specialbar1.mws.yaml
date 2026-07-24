@@ -2,27 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S5Specialbar1'
-# ../en-US.restext:524 | "Hungarian Bright"
+# ../en-US.restext:533 | "Hungarian Bright"
 title: 'restext://S5Specialbar1_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:3339
 - type: 'text'
-  # ../en-US.restext:525 | "While the cousins thrived..."
+  # ../en-US.restext:534 | "While the cousins thrived..."
   value: 'restext://S5Specialbar1_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:3340
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:3342
 - type: 'text'
-  # ../en-US.restext:526 | "One particularly chill ev..."
+  # ../en-US.restext:535 | "One particularly chill ev..."
   value: 'restext://S5Specialbar1_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:3343
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:3345
 - type: 'text'
-  # ../en-US.restext:527 | "With their influence amon..."
+  # ../en-US.restext:536 | "With their influence amon..."
   value: 'restext://S5Specialbar1_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:3349
 - type: 'break'
@@ -33,14 +33,14 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:3353
   - type: 'link'
-    # ../en-US.restext:36 | "Click to continue..."
+    # ../en-US.restext:39 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: '2p-S5SpecialVoteALT' # ./00336-2p-S5SpecialVoteALT.mws.yaml
     snapshot: true
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:3357
   - type: 'link'
-    # ../en-US.restext:36 | "Click to continue..."
+    # ../en-US.restext:39 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: 'S5SpecialVote' # ./00282-S5SpecialVote.mws.yaml
     snapshot: true

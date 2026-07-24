@@ -21,27 +21,27 @@ nodes:
       target: 'Hospital3' # ./00035-Hospital3.mws.yaml
 # ../.source/TheCostofDisease_Eng_v10.cs:27172
 - type: 'text'
-  # ../en-US.restext:2137 | "**The True Secret**"
+  # ../en-US.restext:2145 | "**The True Secret**"
   value: 'restext://ImmortalityMWUpdate_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:27174
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:27175
 - type: 'text'
-  # ../en-US.restext:2138 | "The family's pursuit of e..."
+  # ../en-US.restext:2146 | "The family's pursuit of e..."
   value: 'restext://ImmortalityMWUpdate_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:27178
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:27180
 - type: 'text'
-  # ../en-US.restext:2139 | "Does any player have the ..."
+  # ../en-US.restext:2147 | "Does any player have the ..."
   value: 'restext://ImmortalityMWUpdate_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:27187
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:27190
 - type: 'link'
-  # ../en-US.restext:32 | "Yes."
+  # ../en-US.restext:35 | "Yes."
   label: 'restext://Choice_Yes_Period'
   target: 'ImmortalityMWUpdate2' # ./00252-ImmortalityMWUpdate2.mws.yaml
   snapshot: true
@@ -49,14 +49,14 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:27201
   - type: 'assign'
     var: 'immort'
-    # ../en-US.restext:31 | "yes"
+    # ../en-US.restext:34 | "yes"
     expr: '"restext://Choice_Yes_Lower"'
 # ../.source/TheCostofDisease_Eng_v10.cs:27191
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:27194
 - type: 'link'
-  # ../en-US.restext:28 | "No."
+  # ../en-US.restext:31 | "No."
   label: 'restext://Choice_No_Period'
   snapshot: true
   onclick:

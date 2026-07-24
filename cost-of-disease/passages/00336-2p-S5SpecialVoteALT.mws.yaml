@@ -2,63 +2,95 @@
 ---
 format: 'mws/0.4'
 passage_id: '2p-S5SpecialVoteALT'
-# ../en-US.restext:2697 | "BID"
+# ../en-US.restext:2705 | "BID"
 title: 'restext://_2p_S5SpecialVoteALT_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:33961
 - type: 'text'
-  # ../en-US.restext:304 | "Special Event"
+  # ../en-US.restext:311 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/TheCostofDisease_Eng_v10.cs:33962
 - type: 'text'
-  # ../en-US.restext:2698 | "All players take all of t..."
+  # ../en-US.restext:2706 | "All players take all of t..."
   value: 'restext://_2p_S5SpecialVoteALT_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:33964
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:33966
 - type: 'text'
-  # ../en-US.restext:2699 | "The winning player will *..."
+  # ../en-US.restext:2707 | "The winning player will *..."
   value: 'restext://_2p_S5SpecialVoteALT_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:33979
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:33981
 - type: 'text'
-  # ../en-US.restext:2700 | "Accepting electricity whi..."
+  # ../en-US.restext:2708 | "Accepting electricity whi..."
   value: 'restext://_2p_S5SpecialVoteALT_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:33993
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:33995
 - type: 'text'
-  # ../en-US.restext:2701 | "Rejecting electricity wil..."
+  # ../en-US.restext:2709 | "Rejecting electricity wil..."
   value: 'restext://_2p_S5SpecialVoteALT_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:34001
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:34004
 - type: 'text'
-  # ../en-US.restext:2702 | "Once all players are read..."
+  # ../en-US.restext:2710 | "Once all players are read..."
   value: 'restext://_2p_S5SpecialVoteALT_006'
 # ../.source/TheCostofDisease_Eng_v10.cs:34006
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:34008
 - type: 'text'
-  # ../en-US.restext:2703 | "Only the player that wins..."
+  # ../en-US.restext:2711 | "Only the player that wins..."
   value: 'restext://_2p_S5SpecialVoteALT_007'
 # ../.source/TheCostofDisease_Eng_v10.cs:34009
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:34013
 - type: 'popup'
-  layout: 'bidding'
-  # ../en-US.restext:59 | "Click to start the bid..."
+  layout: 'countdown_instructions'
+  # ../en-US.restext:62 | "Click to start the bid..."
   label: 'restext://Click_StartBid'
-  target: '2p-S5SpecialVoteALT2' # ./00347-2p-S5SpecialVoteALT2.mws.yaml
-  # ../en-US.restext:345 | "Close"
-  okay: 'restext://UIButton_Close'
-  snapshot: false
+  content:
+  - type: 'text'
+    # ../en-US.restext:6 | "Click on the 'Start Biddi..."
+    value: 'restext://Bidding_Instructions'
+  - type: 'break'
+    style: 'paragraph'
+  - type: 'text'
+    # ../en-US.restext:7 | "When you see the word 'RE..."
+    value: 'restext://Bidding_RevealInstructions'
+  - type: 'break'
+    style: 'paragraph'
+  - type: 'popup'
+    layout: 'countdown_action'
+    # ../en-US.restext:8 | "Start Bidding"
+    label: 'restext://Bidding_StartButton'
+    content:
+    - type: 'text'
+      # ../en-US.restext:74 | "3"
+      value: 'restext://Countdown_Three'
+      style: 'countdown-3'
+    - type: 'text'
+      # ../en-US.restext:75 | "2"
+      value: 'restext://Countdown_Two'
+      style: 'countdown-2'
+    - type: 'text'
+      # ../en-US.restext:72 | "1"
+      value: 'restext://Countdown_One'
+      style: 'countdown-1'
+    - type: 'text'
+      # ../en-US.restext:73 | "REVEAL"
+      value: 'restext://Countdown_Reveal'
+      style: 'countdown-reveal'
+    # ../en-US.restext:73 | "REVEAL"
+    okay: 'restext://Countdown_Reveal'
+    target: '2p-S5SpecialVoteALT2' # ./00347-2p-S5SpecialVoteALT2.mws.yaml
+    snapshot: false

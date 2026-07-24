@@ -6,7 +6,7 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:13753
 - type: 'text'
-  # ../en-US.restext:1213 | "**Carefully hand this sto..."
+  # ../en-US.restext:1222 | "**Carefully hand this sto..."
   value: 'restext://Trigger35Points_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:13756
 - type: 'break'
@@ -17,13 +17,13 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:13762
   - type: 'text'
-    # ../en-US.restext:1218 | "**\"Nasty Rumors\" - Jour..."
+    # ../en-US.restext:1227 | "**\"Nasty Rumors\" - Jour..."
     value: 'restext://Trigger35Points_006'
   # ../.source/TheCostofDisease_Eng_v10.cs:13764
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:13765
   - type: 'text'
-    # ../en-US.restext:1219 | "To reach the pinnacle of ..."
+    # ../en-US.restext:1228 | "To reach the pinnacle of ..."
     value: 'restext://Trigger35Points_007'
   # ../.source/TheCostofDisease_Eng_v10.cs:13769
   - type: 'assign'
@@ -34,7 +34,7 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:13771
   - type: 'text'
-    # ../en-US.restext:1220 | "I do not have time for th..."
+    # ../en-US.restext:1229 | "I do not have time for th..."
     value: 'restext://Trigger35Points_008'
   # ../.source/TheCostofDisease_Eng_v10.cs:13774
   - type: 'break'
@@ -42,13 +42,13 @@ nodes:
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:13781
   - type: 'text'
-    # ../en-US.restext:1214 | "**\"Unfortunate Accident\..."
+    # ../en-US.restext:1223 | "**\"Unfortunate Accident\..."
     value: 'restext://Trigger35Points_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:13783
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:13784
   - type: 'text'
-    # ../en-US.restext:1215 | "My work! My property! Sab..."
+    # ../en-US.restext:1224 | "My work! My property! Sab..."
     value: 'restext://Trigger35Points_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:13786
   - type: 'assign'
@@ -59,14 +59,14 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:13788
   - type: 'text'
-    # ../en-US.restext:1216 | "I awoke this evening to f..."
+    # ../en-US.restext:1225 | "I awoke this evening to f..."
     value: 'restext://Trigger35Points_004'
   # ../.source/TheCostofDisease_Eng_v10.cs:13789
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:13791
   - type: 'text'
-    # ../en-US.restext:1217 | "It will take weeks for my..."
+    # ../en-US.restext:1226 | "It will take weeks for my..."
     value: 'restext://Trigger35Points_005'
   # ../.source/TheCostofDisease_Eng_v10.cs:13793
   - type: 'break'
@@ -74,10 +74,10 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:13799
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:52 | "Click to return..."
+  # ../en-US.restext:55 | "Click to return..."
   label: 'restext://Click_Return'
   target: '${round == 7 ? "Hospital1" : round == 8 ? "Hospital2" : "Hospital3"}' # ./00003-Hospital1.mws.yaml, ./00034-Hospital2.mws.yaml, ./00035-Hospital3.mws.yaml
-  # ../en-US.restext:345 | "Close"
+  # ../en-US.restext:352 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -105,12 +105,12 @@ nodes:
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:13818
     - type: 'text'
-      # ../en-US.restext:1222 | "Immediately **gain 2** {i..."
+      # ../en-US.restext:1231 | "Immediately **gain 2** {i..."
       value: 'restext://Trigger35Points_010'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:13839
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:13840
     - type: 'text'
-      # ../en-US.restext:1221 | "Immediately **lose 4VP** ..."
+      # ../en-US.restext:1230 | "Immediately **lose 4VP** ..."
       value: 'restext://Trigger35Points_009'

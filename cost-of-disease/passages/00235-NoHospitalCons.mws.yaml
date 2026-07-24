@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'NoHospitalCons'
-# ../en-US.restext:2043 | "A Steady Focus"
+# ../en-US.restext:2051 | "A Steady Focus"
 title: 'restext://NoHospitalCons_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:25878
 - type: 'text'
-  # ../en-US.restext:2044 | "For members of this ignob..."
+  # ../en-US.restext:2052 | "For members of this ignob..."
   value: 'restext://NoHospitalCons_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:25879
 - type: 'break'
@@ -16,10 +16,10 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:25883
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:36 | "Click to continue..."
+  # ../en-US.restext:39 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${NoHospitalConsnextPsg}'
-  # ../en-US.restext:345 | "Close"
+  # ../en-US.restext:352 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -45,13 +45,13 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:25917
     - type: 'text'
-      # ../en-US.restext:2045 | "**Dr. {nameA} III**"
+      # ../en-US.restext:2053 | "**Dr. {nameA} III**"
       value: 'restext://NoHospitalCons_003'
     # ../.source/TheCostofDisease_Eng_v10.cs:25921
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:25922
     - type: 'text'
-      # ../en-US.restext:2046 | "Move forward **1 level on..."
+      # ../en-US.restext:2054 | "Move forward **1 level on..."
       value: 'restext://NoHospitalCons_004'
     # ../.source/TheCostofDisease_Eng_v10.cs:25928
     - type: 'break'
@@ -62,13 +62,13 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:25935
     - type: 'text'
-      # ../en-US.restext:2047 | "**Dr. {nameB} III**"
+      # ../en-US.restext:2055 | "**Dr. {nameB} III**"
       value: 'restext://NoHospitalCons_005'
     # ../.source/TheCostofDisease_Eng_v10.cs:25939
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:25940
     - type: 'text'
-      # ../en-US.restext:2046 | "Move forward **1 level on..."
+      # ../en-US.restext:2054 | "Move forward **1 level on..."
       value: 'restext://NoHospitalCons_004'
     # ../.source/TheCostofDisease_Eng_v10.cs:25946
     - type: 'break'
@@ -83,13 +83,13 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:25955
       - type: 'text'
-        # ../en-US.restext:2048 | "**Dr. {nameC} III**"
+        # ../en-US.restext:2056 | "**Dr. {nameC} III**"
         value: 'restext://NoHospitalCons_006'
       # ../.source/TheCostofDisease_Eng_v10.cs:25959
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:25960
       - type: 'text'
-        # ../en-US.restext:2046 | "Move forward **1 level on..."
+        # ../en-US.restext:2054 | "Move forward **1 level on..."
         value: 'restext://NoHospitalCons_004'
       # ../.source/TheCostofDisease_Eng_v10.cs:25966
       - type: 'break'
@@ -104,13 +104,13 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:25976
       - type: 'text'
-        # ../en-US.restext:2049 | "**Dr. {nameD} III**"
+        # ../en-US.restext:2057 | "**Dr. {nameD} III**"
         value: 'restext://NoHospitalCons_007'
       # ../.source/TheCostofDisease_Eng_v10.cs:25980
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:25981
       - type: 'text'
-        # ../en-US.restext:2046 | "Move forward **1 level on..."
+        # ../en-US.restext:2054 | "Move forward **1 level on..."
         value: 'restext://NoHospitalCons_004'
       # ../.source/TheCostofDisease_Eng_v10.cs:25987
       - type: 'break'
@@ -125,11 +125,11 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:25997
       - type: 'text'
-        # ../en-US.restext:2050 | "**Dr. {nameE} III**"
+        # ../en-US.restext:2058 | "**Dr. {nameE} III**"
         value: 'restext://NoHospitalCons_008'
       # ../.source/TheCostofDisease_Eng_v10.cs:26001
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:26002
       - type: 'text'
-        # ../en-US.restext:2046 | "Move forward **1 level on..."
+        # ../en-US.restext:2054 | "Move forward **1 level on..."
         value: 'restext://NoHospitalCons_004'

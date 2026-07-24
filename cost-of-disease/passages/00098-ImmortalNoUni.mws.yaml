@@ -14,20 +14,20 @@ nodes:
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:10854
   - type: 'text'
-    # ../en-US.restext:151 | "**Immortality**"
+    # ../en-US.restext:158 | "**Immortality**"
     value: 'restext://Heading_Immortality'
   # ../.source/TheCostofDisease_Eng_v10.cs:10856
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:10857
   - type: 'text'
-    # ../en-US.restext:246 | "Claiming an inheritance w..."
+    # ../en-US.restext:253 | "Claiming an inheritance w..."
     value: 'restext://Narrative_ImmortalityInheritance'
   # ../.source/TheCostofDisease_Eng_v10.cs:10858
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:10860
   - type: 'text'
-    # ../en-US.restext:247 | "For those whose parents h..."
+    # ../en-US.restext:254 | "For those whose parents h..."
     value: 'restext://Narrative_ImmortalityNoSecrets'
   # ../.source/TheCostofDisease_Eng_v10.cs:10862
   - type: 'break'
@@ -35,10 +35,10 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:10866
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:36 | "Click to continue..."
+    # ../en-US.restext:39 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: 'PanaceaUnleashCons1' # ./00232-PanaceaUnleashCons1.mws.yaml
-    # ../en-US.restext:345 | "Close"
+    # ../en-US.restext:352 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -49,56 +49,56 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:10884
     - type: 'conditional'
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       if: 'lifeA == "restext://Choice_Yes_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10886
       - type: 'text'
-        # ../en-US.restext:1112 | "{nameA} III retrieves a C..."
+        # ../en-US.restext:1121 | "{nameA} III retrieves a C..."
         value: 'restext://ImmortalNoUni_001'
       # ../.source/TheCostofDisease_Eng_v10.cs:10888
       - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10890
     - type: 'conditional'
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       if: 'lifeB == "restext://Choice_Yes_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10892
       - type: 'text'
-        # ../en-US.restext:1113 | "{nameB} III retrieves a C..."
+        # ../en-US.restext:1122 | "{nameB} III retrieves a C..."
         value: 'restext://ImmortalNoUni_002'
       # ../.source/TheCostofDisease_Eng_v10.cs:10894
       - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10896
     - type: 'conditional'
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       if: 'lifeC == "restext://Choice_Yes_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10898
       - type: 'text'
-        # ../en-US.restext:1114 | "{nameC} III retrieves a C..."
+        # ../en-US.restext:1123 | "{nameC} III retrieves a C..."
         value: 'restext://ImmortalNoUni_003'
       # ../.source/TheCostofDisease_Eng_v10.cs:10900
       - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10902
     - type: 'conditional'
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       if: 'lifeD == "restext://Choice_Yes_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10904
       - type: 'text'
-        # ../en-US.restext:1115 | "{nameD} III retrieves a C..."
+        # ../en-US.restext:1124 | "{nameD} III retrieves a C..."
         value: 'restext://ImmortalNoUni_004'
       # ../.source/TheCostofDisease_Eng_v10.cs:10906
       - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10908
     - type: 'conditional'
-      # ../en-US.restext:31 | "yes"
+      # ../en-US.restext:34 | "yes"
       if: 'lifeE == "restext://Choice_Yes_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10910
       - type: 'text'
-        # ../en-US.restext:1116 | "{nameE} III retrieves a C..."
+        # ../en-US.restext:1125 | "{nameE} III retrieves a C..."
         value: 'restext://ImmortalNoUni_005'
       # ../.source/TheCostofDisease_Eng_v10.cs:10912
       - type: 'break'
@@ -107,5 +107,5 @@ nodes:
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:10916
     - type: 'text'
-      # ../en-US.restext:189 | "Any player who did not re..."
+      # ../en-US.restext:196 | "Any player who did not re..."
       value: 'restext://Immortality_NoCaretakerPenalty_Rule'

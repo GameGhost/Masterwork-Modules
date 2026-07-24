@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Barventures'
-# ../en-US.restext:568 | "Bar-venture"
+# ../en-US.restext:577 | "Bar-venture"
 title: 'restext://Barventures_001'
 layout: 'narration'
 nodes:
@@ -22,25 +22,25 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:3680
     - type: 'text'
-      # ../en-US.restext:573 | "_Local records from this ..."
+      # ../en-US.restext:582 | "_Local records from this ..."
       value: 'restext://Barventures_006'
   - match: 2
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:3689
     - type: 'text'
-      # ../en-US.restext:574 | "_As your historical curat..."
+      # ../en-US.restext:583 | "_As your historical curat..."
       value: 'restext://Barventures_007'
   default:
   # ../.source/TheCostofDisease_Eng_v10.cs:3701
   - type: 'let'
     var: '_rnd_Barventures_0'
-    # ../en-US.restext:569 | Barventures_002 | "historical"
-    # ../en-US.restext:570 | Barventures_003 | "comical"
-    # ../en-US.restext:571 | Barventures_004 | "scientific"
+    # ../en-US.restext:578 | Barventures_002 | "historical"
+    # ../en-US.restext:579 | Barventures_003 | "comical"
+    # ../en-US.restext:580 | Barventures_004 | "scientific"
     expr: '["restext://Barventures_002", "restext://Barventures_003", "restext://Barventures_004"].shuffled("Barventures_1")[0]'
   # ../.source/TheCostofDisease_Eng_v10.cs:3699
   - type: 'text'
-    # ../en-US.restext:572 | "_It is in the interest of..."
+    # ../en-US.restext:581 | "_It is in the interest of..."
     value: 'restext://Barventures_005'
     lets:
     - '_rnd_Barventures_0'
@@ -88,7 +88,7 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:3726
     - type: 'link'
-      # ../en-US.restext:36 | "Click to continue..."
+      # ../en-US.restext:39 | "Click to continue..."
       label: 'restext://Click_ContinueEllipsis_C'
       target: 'NoUni1' # ./00011-NoUni1.mws.yaml
       snapshot: true
@@ -96,14 +96,14 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:3730
     - type: 'link'
-      # ../en-US.restext:36 | "Click to continue..."
+      # ../en-US.restext:39 | "Click to continue..."
       label: 'restext://Click_ContinueEllipsis_C'
       target: 'NoUni2' # ./00036-NoUni2.mws.yaml
       snapshot: true
   default:
   # ../.source/TheCostofDisease_Eng_v10.cs:3735
   - type: 'link'
-    # ../en-US.restext:36 | "Click to continue..."
+    # ../en-US.restext:39 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: 'NoUni3' # ./00037-NoUni3.mws.yaml
     snapshot: true
