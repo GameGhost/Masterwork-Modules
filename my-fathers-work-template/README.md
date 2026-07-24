@@ -34,34 +34,65 @@ of the catalog.
 | `end_of_round` / `end_of_generation` (popups) | Layout Showcase hub's own pairs | Parchment note with a clock-icon title, single Confirm — the two layouts share identical sizing (reference: Module-08/12) |
 | `prompt` (popup) | Layout Showcase hub's own pair | Bracket-cornered card + a fixed-size numeric input (reference: Module-11) |
 | `choice` (popup) | Layout Showcase hub's own trigger | Downgraded from a bespoke radio-select dialog to a generic bordered popup (reference: General-Standalone-Select-Dialog) — its real job is exercising the checkbox input style scoring needs |
-| `reveal_countdown` | `Showcase_Popup_RevealCountdown` | Replaces the reference app's bespoke bidding/voting component — see below. Kept as its own demo passage (not inlined on the hub like the popups above) since its two-stage auto-display needs the self-navigating-passage pattern |
+| `countdown_instructions` / `countdown_action` (popups, nested) | `Showcase_Popup_RevealCountdown` | Replaces the reference app's bespoke bidding/voting component — see below. Kept as its own demo passage since the nesting needs room a hub-inlined trigger doesn't have |
 | `score_panel` | `Scoring_01_ScoreEntry`, `Scoring_02_TieBreaker1`, `Scoring_03_TieBreaker2` | Parchment scroll on a purple gradient |
 | `ranking` | `Scoring_04_Ranking` | Dark stone list panel |
 | `game_complete` (popup) | `02_Ending`'s own popup | Pinned collage image + text + circular X close |
 
 `voting`/`bidding` are intentionally absent — the engine renders those two names through a bespoke
 `VotingPopupContent` component (see `RenderedPopupView.razor`), so no `layouts/` chrome or module
-CSS for them has any effect. `reveal_countdown` above replaces what they were used for.
+CSS for them has any effect. `countdown_instructions`/`countdown_action` above replace what they
+were used for.
 
-### Replacing voting/bidding: no engine change needed
+### Replacing voting/bidding: a genuinely nested popup, no engine change needed
 
-Both halves of the reference app's `ViewBiddingSystem` (instructions → countdown → reveal) are
-achievable with patterns the format already supports:
+The reference app's `ViewBiddingSystem` (Module-09/10A/10B) is ONE continuous-looking parchment
+note the whole time — the instructions text never disappears or changes; only a small dark
+countdown pill appears over the button once clicked. An earlier pass tried to fake this with two
+separate popups chained via a self-navigating passage (matching the pattern
+`_Setup_03_PlayerNameA.mws.yaml` uses for a different reason) — it worked, but looked like two
+distinct popups swapping, not one continuous note, because the two stages had different content
+and the close/reopen was a real (if fast) unmount/remount.
 
-- **Chaining a popup from another popup's close** — `Showcase_Popup_RevealCountdown.mws.yaml` uses
-  the same self-navigating-passage pattern `_Setup_03_PlayerNameA.mws.yaml` already relies on: a
-  `revealStage` session variable and a `conditional` picking between two popups. Stage 0's popup
-  (click-triggered) sets `revealStage = 1` in its `onclose` and `goto`s back to its own
-  `passage_id`; the re-render falls into the conditional's other branch, whose popup has no
-  `label` and so auto-displays immediately. No new node type.
-- **CSS-animated countdown, then an inert-until-ready Okay button** — pure CSS
-  (`.layout-reveal_countdown` in `assets/style.css`): the Okay button starts with
-  `pointer-events: none` and a fixed-duration `animation`, whose final keyframe step flips
-  `pointer-events: auto`. The visible countdown text runs off the same duration, so there's
-  nothing to keep in sync with JavaScript or an engine timer.
+`Showcase_Popup_RevealCountdown.mws.yaml` now does this with a real **nested popup** instead: a
+`type: popup` node sitting directly inside another popup's own `content:` list. This isn't
+special-cased anywhere — it falls out of the engine already treating node lists uniformly:
+- `PassageYamlParser.BuildNode` is a single recursive dispatcher; nothing stops a `content:` list
+  from containing another `popup` node.
+- `PassageRenderer.RenderPopup` renders a popup's `content:` through the same `RenderNodeList` entry
+  point used for passage-level nodes, which dispatches back to `RenderPopup` for any nested one —
+  its sandboxed clone naturally chains (the inner popup's sandbox is cloned from the outer's, which
+  is cloned from the live store), so state composes correctly regardless of nesting depth.
+- `GameSession.FindAction` resolves one level into any top-level popup's own `Actions` list — which
+  already includes a nested popup as a direct member, since the inner popup registers itself into
+  the `RenderContext` created for rendering the outer's own content, and the outer folds that into
+  its own `Actions`. So a click on the inner popup's Okay button resolves correctly.
+- `ClosePopupAsync` commits via a *full snapshot restore* of the accepted popup's own sandbox
+  (`_store.RestoreSession(popup.Sandbox.SessionSnapshot())`) — which already reflects everything
+  from every ancestor sandbox it was cloned from, so accepting the inner popup correctly carries
+  forward anything the outer would have (nothing, in this demo — the outer is pure instructional
+  content with no state effects of its own).
 
-If you find a real gap in either mechanism while extending this further, that's worth raising as
-an actual engine change — but nothing here required one.
+Concretely: `countdown_instructions` (the outer note) is click-triggered off the passage's own
+link, holds the instructions text, and has **no `okay`/`cancel` of its own** — it's a pure
+container, only ever carried away by the inner popup's own navigation. `countdown_action` (the
+inner popup) sits at the end of the outer's `content:`; its own `label` ("Start Bidding") renders
+as an ordinary trigger button *inline within the outer's content* — exactly where the reference's
+green "START BIDDING" button sits. Clicking it opens the inner popup; its `mws-popup-okay` covers
+the full viewport, invisibly (`position: fixed; inset: 0; background: none; color: transparent`),
+staying `pointer-events: none` until a `steps(1)` keyframe animation on the same duration as the
+visible countdown pill (`content: '3' → '2' → '1' → 'REVEAL'` on a `::before`, also `steps(1)` per
+segment since text can't meaningfully cross-fade) flips it to `pointer-events: auto`. Nothing to
+keep in sync with JavaScript or an engine timer — both animations share one fixed duration.
+
+Verified via a scratch xUnit harness driving `GameSession` directly (find the outer popup on
+`Showcase_Popup_RevealCountdown`, find the inner nested inside its own `Actions`, accept it,
+confirm it navigates) — passes. Visual confirmation against the real reference screenshots still
+needs a real browser pass (`dotnet run --project src/Masterwork.App.Web`) — the CSS above is a
+first cut, not yet screenshot-verified.
+
+If you find a real gap in this mechanism while extending it further, that's worth raising as an
+actual engine change — but nesting one level deep (which is all this needs) already works today.
 
 ## Font scaling / responsive design
 

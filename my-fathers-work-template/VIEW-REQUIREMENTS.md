@@ -607,31 +607,55 @@ Demoed directly on the Layout Showcase hub, same okay-only/okay+cancel pairing a
 - **Assets**: `backgrounds/popup_parchment_border_short.png`, `popup/generation_time.png` (clock
   icon), standard green button.
 
-### Bidding preamble popup — `Module-09` — 🟡 still open, not built this round
+### Bidding/voting popups — `Module-09`/`10A`/`10B` — ✅ locked in
 
-- **Reference**: `Module-09-Bidding-Preamble-popup.png`.
-- **Structure**: parchment popup, text, single standard green button — structurally identical to
-  `end_of_round`'s shape. **OPEN QUESTION**: should this literally be the same layout as
-  `end_of_round`/`end_of_generation` (same `popup_parchment_border_short.png`), just with different
-  content, or does it deserve its own layout id since it's semantically a different moment? Leaning
-  toward reusing the same layout — no visual difference identified.
+Both reference screenshots turned out to be ONE continuous parchment note the whole time — the
+instructions text never disappears or changes; only a small dark countdown pill appears over the
+button once clicked. The two layouts below realize that as a real `type: popup` node nested inside
+another popup's own `content:` — not the self-navigating-passage chain originally planned (that
+worked, but visibly looked like two popups swapping, since the two stages had different content and
+the close/reopen was a real, if fast, unmount/remount). Nesting needed **zero engine changes** —
+confirmed by reading `PassageYamlParser`/`PassageRenderer`/`GameSession` (all three already treat
+node lists recursively/uniformly with no special-casing needed) and by a passing scratch xUnit test
+driving `GameSession` directly through the nested accept. This also let the code repo retire the
+old bespoke `VotingPopupContent` component and its `layout == "voting"/"bidding"` special case in
+`RenderedPopupView.razor` entirely — every layout now renders through the one generic path, no
+exceptions (see `docs/mws-format-latest.md` §6/§8 and `README.md`'s "Replacing voting/bidding"
+section for the full writeup).
 
-### `reveal_countdown` — 🟡 rework against real reference (now available)
-
-- **Reference**: `Module-10A-Bidding-Popup-countdown.png` (shows a number, e.g. "1"),
-  `Module-10B-Bidding-Popup-reveal.png` (shows "REVEAL" text).
-- **Structure**: fixed background image (`backgrounds/popup_reveal.png`), large centered text (the
-  countdown digit, then "REVEAL"), sized to fit the panel. Backdrop is a **lightened**
-  semi-transparent overlay — unusual, most popups darken the background; this one brightens it.
-  Dismissed by clicking **anywhere** on the popup once the countdown completes (not a specific
-  button) — confirms the earlier note that this needs the whole-popup-clickable interaction, not
-  just an unlocked button.
-- **Confirms the two-stage chaining approach** from the original implementation plan (self-navigating
-  passage flipping a `_revealStage` variable between two auto-display popups) is still the right
-  mechanism — no engine change needed. The CSS detail changes though: instead of a hidden/disabled
-  button becoming clickable, the **entire popup surface** needs `pointer-events` re-enabled only
-  after the countdown animation completes (same `animation-fill-mode: forwards` timing trick, applied
-  to the popup's click-catcher rather than a button).
+- **`countdown_instructions`** (outer) — **Reference**: `Module-09-Bidding-Preamble-popup.png`.
+  Reuses `popup_parchment_border_short.png` — same asset/technique as `end_of_round`/
+  `end_of_generation` (resolves the open question from the previous pass: yes, reuse that shape,
+  just as its own distinct layout id since it composes differently — no `okay`/`cancel` of its own,
+  since it's a pure container only ever carried away by the nested popup's own navigation). Its
+  content ends with the nested `countdown_action` popup, whose own `label` ("Start Bidding") renders
+  inline as a standard green button — exactly where the reference's "START BIDDING" sits.
+- **`countdown_action`** (inner, nested) — **Reference**: `Module-10A-Bidding-Popup-countdown.png`
+  (shows a digit, e.g. "1"), `Module-10B-Bidding-Popup-reveal.png` (shows "REVEAL"). Uses the real
+  `backgrounds/popup_reveal.png` asset (676×338, a weathered dark pill) for the countdown display.
+  Text/shadow match the narration passage title's own embossed-metal look, at 2x size, per your
+  note. Its own backdrop is darker than the outer note's, so opening it visibly deepens the dim —
+  marking the transition into "the reveal is happening now." Dismissed by a click that's
+  effectively "anywhere on the popup" per the earlier note — realized as the `mws-popup-okay`
+  button covering the full viewport, invisibly (`position: fixed; inset: 0; background: none;
+  color: transparent`), `pointer-events: none` until a `steps(1)` keyframe on the same duration as
+  the countdown pill flips it to `auto`. Nothing to keep in sync with JavaScript or an engine timer.
+- **REVEAL (and the digits) are real, restext-backed text**, not a value baked into `style.css`,
+  per your note — a CSS `content`-cycling pseudo-element can't be localized. Realized as four
+  stacked text nodes (`Countdown_Three`/`Countdown_Two`/`Countdown_One`/`Countdown_Reveal` in
+  `en-US.restext`, styled `countdown-3`/`-2`/`-1`/`-reveal`), each `position: absolute` over the
+  same spot, individually timed via a discrete (`steps(1)`) opacity keyframe instead of the text
+  itself changing.
+- **Two real bugs found and fixed against your feedback**: (1) the outer's own
+  `.mws-popup-container` CSS selector was a plain descendant selector, so it *also* matched the
+  inner popup's own container (nested inside the outer's DOM subtree) — leaked the outer's
+  parchment border-image onto the inner pill. Fixed with `>` (direct-child) combinators throughout
+  the outer's own rules — a real pitfall worth remembering anywhere popup CSS nests. (2) the
+  countdown's keyframes only defined stops through 75%, so the missing 100% endpoint fell back to
+  the element's *unanimated* base value — visibly resetting the display right after reaching REVEAL
+  instead of holding there. Fixed by giving every keyframe set an explicit 100% stop.
+- Visually confirmed in-browser against the real reference screenshots and iterated to final with
+  your own hands-on tweaks (pill size, backdrop darkness, timing, vertical offset).
 
 ### `prompt` (popup) — ✅ locked in
 

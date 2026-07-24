@@ -7,7 +7,15 @@
 # which was never appropriate for shared template content. Copy this file alongside the
 # passages/layouts when integrating the template into a real module (see
 # scripts/apply-template.ps1) — a target module's own extracted en-US.restext is a separate file
-# and these keys are namespaced (Setup_/Scoring_/Common_) to avoid colliding with it.
+# and these keys are namespaced (Setup_/Scoring_/Common_/Countdown_) to avoid colliding with it.
+#
+# Countdown_* backs the countdown_action popup's own digit/REVEAL text (Showcase_Popup_
+# RevealCountdown.mws.yaml) — these are displayed via CSS-timed opacity, not markdown/template
+# substitution, but the display strings themselves still need to be real restext, not literal CSS
+# `content` values, so they're actually localizable. The real extractor should synthesize
+# equivalent keys the same way it does for SpecialEvent_Title (ViewSpecialEvent has no Cradle
+# text() call for its own overlay text either — this is app-side UI text, not story content, in
+# both cases).
 
 Common_Continue=Continue
 
@@ -60,3 +68,8 @@ Scoring_Rank_1st=1st
 Scoring_Rank_2nd=2nd
 Scoring_Rank_3rd=3rd
 Scoring_Rank_4th=4th
+
+Countdown_Three=3
+Countdown_Two=2
+Countdown_One=1
+Countdown_Reveal=REVEAL

@@ -962,7 +962,7 @@ body {
  * reference style notes, so one rule covers it everywhere rather than repeating per layout), and
  * any inline `link` styled as one (setup passage's Continue, style: 'btn-brown'/'btn-green'/
  * 'btn-red'). NOT applied to popup buttons with their own distinct shape (game_complete's circular
- * close, reveal_countdown's plain animated one).
+ * close, countdown_action's invisible full-viewport one).
  *
  * Sizing is rem-based, not em: an em value compounds against whatever ambient font-size the
  * *hosting* layout happens to use (a popup's own 0.8em vs. a passage's own 1.6em, etc.), so the
@@ -1020,7 +1020,7 @@ body {
 .mws-link.style-btn-green {
     background-image: url(image://inputs/button_green);
     color: #152218;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
 }
 
 .mws-popup-cancel,
@@ -1482,7 +1482,7 @@ body {
     margin-top: 1.5em;
 }
 
-/* ── Shared popup title (choice / reveal_countdown / end_of_round) ──────── */
+/* ── Shared popup title (choice / end_of_round) ──────── */
 
 .style-popup-title {
     display: block;
@@ -1567,48 +1567,197 @@ body {
     background-position: 1em -0.05em, 0;
 }
 
-/* ── reveal_countdown popup (replaces the bespoke voting/bidding component) ─
-   Two-stage flow authored via a self-navigating passage (see
-   Showcase_Popup_RevealCountdown.mws.yaml) — this file only owns the countdown animation and the
-   delayed Okay-button enable, both pure CSS. */
+/* ── countdown_instructions / countdown_action popups (replace the bespoke voting/bidding
+   component) ─ Module-09/10A/10B: ONE continuous-looking parchment note stays on screen the whole
+   time — instructions never disappear or change. Built as a genuinely NESTED popup (see
+   Showcase_Popup_RevealCountdown.mws.yaml's own comment for why this needs no engine change):
+   countdown_instructions is the OUTER note; countdown_action is nested directly in its content and
+   supplies the dark countdown pill + invisible full-screen Okay button. */
 
-.mws-popup-overlay.layout-reveal_countdown .mws-popup-container {
-    background: #14161c;
-    color: #e8c9a0;
-    border: 3px solid #5a5142;
-    border-radius: 0.3rem;
-    padding: 2rem;
+/* OUTER: reuses popup_parchment_border_short.png — same asset/technique as `end_of_round`/
+   `end_of_generation` (see that block's own comment for the border-image reasoning) — matches
+   Module-09's own thin-red-line-on-aged-paper look more closely than note's heavier torn-edge
+   frame. No footer of its own: this popup is never explicitly closed, only carried away by the
+   nested popup's own navigation.
+
+   Direct-child combinator throughout this whole OUTER block (not a plain descendant selector) —
+   the nested countdown_action popup, sitting inside this content region, has its own `.mws-popup-
+   container`/`.mws-popup-content` divs too, and a descendant selector would match those as well
+   (nothing about DOM nesting stops a CSS descendant combinator at a `.mws-popup-overlay`
+   boundary), leaking the outer parchment border-image onto the inner popup's own pill. */
+.mws-popup-overlay.layout-countdown_instructions > .mws-popup-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 34rem;
+    height: auto;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 15px;
+    border-image-source: url(image://backgrounds/popup_parchment_border_short);
+    border-image-slice: 6% 4% fill;
+    border-image-width: 20px;
+    border-image-repeat: stretch;
+    box-sizing: border-box;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    color: #410404;
+    font-size: 1.2rem;
+    font-weight: 600;
     text-align: center;
 }
 
-.mws-popup-overlay.layout-reveal_countdown .style-countdown-text {
-    display: block;
-    font-size: 2.5em;
-    font-weight: 700;
-    letter-spacing: 0.2em;
-    animation: mws-countdown-pulse 3s ease-in-out;
+.mws-popup-overlay.layout-countdown_instructions > .mws-popup-container > .mws-popup-content {
+    max-height: 50vh;
+    overflow-y: auto;
+    padding: 1rem;
 }
 
-@keyframes mws-countdown-pulse {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    16%, 50%, 83% { transform: scale(1.3); }
+@media (max-width: 45.99rem) {
+    .mws-popup-overlay.layout-countdown_instructions > .mws-popup-container {
+        max-width: 94vw;
+    }
 }
 
-.mws-popup-overlay.layout-reveal_countdown .mws-popup-footer {
+/* The nested countdown_action popup's own trigger button ("Start Bidding"/"Cast Vote") renders
+   inline within this content, in its normal (unopened) closed state — matches the reference's
+   green "START BIDDING" button sitting directly below the instructions text. Reuses the shared
+   button sizing block and the green variant image (see that block's own comment). */
+.mws-popup-overlay.layout-countdown_instructions .mws-popup-trigger {
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
-    margin-top: 1em;
+    width: 13rem;
+    aspect-ratio: 17 / 6;
+    flex-shrink: 0;
+    padding: 0;
+    background-image: url(image://inputs/button_green);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    appearance: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    letter-spacing: 0.02rem;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #152218;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    margin: 0.5em auto 0;
 }
 
-/* Inert until the countdown animation's own timeline finishes — nothing to keep in sync with the
-   visible countdown text above, since both run off the same fixed 3s duration. */
-.mws-popup-overlay.layout-reveal_countdown .mws-popup-okay {
+/* Own backdrop (not app.css's default rgba(0,0,0,0.6)) — stacks on top of the outer note's already
+   -dimmed one, so opening the inner popup visibly deepens the dim, marking the transition into
+   "the reveal is happening now." */
+.mws-popup-overlay.layout-countdown_action {
+    background: rgba(32, 32, 32, 0.6);
+}
+
+/* INNER: its own visible content is the small dark countdown pill, positioned over roughly where
+   the outer's own trigger button sits. The real click target is the Okay button below, which
+   covers the full viewport, invisibly. */
+.mws-popup-overlay.layout-countdown_action > .mws-popup-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24rem;
+    height: auto;
+    aspect-ratio: 676 / 338; /* popup_reveal.png's own pixel dimensions — a real weathered-metal
+                                pill asset (blood-spattered rim), not a flat CSS approximation */
+    padding: 0;
+    background: transparent;
+    background-image: url(image://backgrounds/popup_reveal);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #e8dcc4;
+}
+
+/* Four real, restext-backed text nodes (style-countdown-3/-2/-1/-reveal — see
+   Showcase_Popup_RevealCountdown.mws.yaml), not a single CSS `content`-cycling pseudo-element (the
+   earlier cut, reverted): REVEAL needs to be localizable, and a value baked directly into
+   style.css never can be — same reason a real Cradle extraction would restext this uniformly
+   regardless of content (see en-US.restext's own Countdown_* comment). All four stack in the exact
+   same spot via position: absolute against the container's own position: relative, each visible
+   only during its own quarter of the shared animation via a discrete (steps(1), not cross-faded)
+   opacity swap — text can't meaningfully interpolate anyway, and steps(1) is what previously kept
+   each digit reading as a flat value rather than a fade. Text/shadow match the narration passage
+   title's own embossed-metal look (.layout-narration .mws-passage-title), at 2x its 1.6em size,
+   per your note. Every keyframe set below has an explicit 100% stop — an earlier version of this
+   omitted one and silently fell back to the element's unanimated base value there instead of
+   holding the animated one, which is what caused the countdown to visibly reset after REVEAL. */
+.mws-popup-overlay.layout-countdown_action .mws-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    line-height: 1;
+    font-size: 3.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #828C93;
+    text-shadow: 0.04em -0.04em 0.04em rgba(255, 255, 255, 0.8),
+        -0.1em 0 0 #111, 0.1em 0 0 #111, 0 -0.15em 0 #111, 0 0.1em 0 #111,
+        -0.1em -0.1em 0 #111, 0.1em -0.1em 0 #111, -0.1em 0.1em 0 #111, 0.1em 0.1em 0 #111;
+    opacity: 0;
+}
+
+.mws-popup-overlay.layout-countdown_action .style-countdown-3 { animation: mws-countdown-3 4s steps(1) forwards; }
+.mws-popup-overlay.layout-countdown_action .style-countdown-2 { animation: mws-countdown-2 4s steps(1) forwards; }
+.mws-popup-overlay.layout-countdown_action .style-countdown-1 { animation: mws-countdown-1 4s steps(1) forwards; }
+.mws-popup-overlay.layout-countdown_action .style-countdown-reveal { animation: mws-countdown-reveal 4s steps(1) forwards; }
+
+@keyframes mws-countdown-3 {
+    0% { opacity: 1; }
+    25% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes mws-countdown-2 {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes mws-countdown-1 {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    75% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes mws-countdown-reveal {
+    0% { opacity: 0; }
+    75% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+/* The real click target — invisible and full-viewport, inert until the countdown pill's own
+   animation timeline finishes (same 3s duration, so nothing needs to stay in sync via JavaScript
+   or an engine timer). */
+.mws-popup-overlay.layout-countdown_action .mws-popup-okay {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    aspect-ratio: auto;
+    background: none;
+    border: none;
+    color: transparent;
     pointer-events: none;
-    opacity: 0.5;
-    animation: mws-reveal-enable 3s steps(1) forwards;
+    animation: mws-reveal-enable 4s steps(1) forwards;
 }
 
 @keyframes mws-reveal-enable {
-    to { pointer-events: auto; opacity: 1; }
+    to { pointer-events: auto; }
 }
 
 /* ── end_of_round / end_of_generation popups ───────────────────────────────
@@ -1653,8 +1802,8 @@ body {
 /* Clock icon as a title-adjacent ::before, not a separate `header:` region node — {icon:...} can
    only ever resolve icon://, but generation_time.png lives under assets/images/popup/, and a
    separate header region would need extra CSS just to sit inline with the title text on one row
-   anyway. Scoped to these two layouts only — .style-popup-title is shared with choice/
-   reveal_countdown, which don't want this icon. */
+   anyway. Scoped to these two layouts only — .style-popup-title is shared with choice, which
+   doesn't want this icon. */
 .mws-popup-overlay.layout-end_of_round .style-popup-title,
 .mws-popup-overlay.layout-end_of_generation .style-popup-title {
     display: flex;
