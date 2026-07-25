@@ -1,4 +1,4 @@
-# View Requirements — Template Reference
+# Template Guidelines & Reference
 
 All layouts below are built and visually approved. This doc is no longer a working log — it's the
 reference companion to `assets/style.css` and `layouts/*.mws.yaml`: the conventions every layout
@@ -25,6 +25,18 @@ needed):
   off each side, stretches the remaining 60% to fill the width — retune per-border if a different
   border's usable frame proportions differ). No side border art in this mode; content runs edge to
   edge with a basic reading margin.
+
+A third, independent breakpoint — **short (`max-height: 40rem`, phone landscape)** — sits alongside
+the two above rather than replacing either: width and height are orthogonal (a landscape phone is
+often *wide* by the ≥48rem test above while still being short), so a layout can need both a wide- and
+a narrow-width treatment *and* its own short-height tightening. Already used by `score_panel`/
+`ranking` (outer padding and header spacing shrink toward a minimal buffer) and `note`/`note_clear`
+(their own popup-container top offset switches from viewport-relative to a fixed px one — see that
+rule's own comment for why: on a short viewport the popup needs to clear the *hosting passage's own
+border*, a fixed-thickness frame regardless of viewport height, the same reasoning the narrow-width
+variant already uses for the same property). Reach for this breakpoint whenever a layout's own
+vertical spacing was tuned assuming a portrait-ish aspect ratio and would either overflow or waste
+proportionally too much space once height gets scarce independent of width.
 
 ### 1.2 Three-layer composite
 

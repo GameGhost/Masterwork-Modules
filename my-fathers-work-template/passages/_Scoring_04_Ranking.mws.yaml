@@ -16,6 +16,13 @@
 # (image://inputs/ranking_crown) replaces the old `{icon:crown}` reference, which never resolved:
 # `{icon:...}` inline syntax only ever resolves icon://, and this asset lives under
 # assets/images/inputs/ranking_crown.png, not an icons/ path.
+#
+# All four `rank-row` sections always render, even in a 2-3 player game — only their *content* is
+# conditional (empty for a rank position that doesn't exist). This is deliberate, not an oversight:
+# style.css's row layout divides the panel's fixed height evenly across however many row sections
+# actually exist, to stay in registration with the panel art's own pixel-baked divider lines — with
+# only 2-3 rows present, the same math would spread them across the *whole* panel height instead of
+# just the top 2-3 of 4 slots, sliding them out of alignment with where the dividers actually are.
 ---
 format: 'mws/0.4'
 passage_id: 'Ranking'
@@ -65,12 +72,12 @@ nodes:
       then:
       - type: 'image'
         asset: 'image://inputs/ranking_crown'
-  - type: 'conditional'
-    if: 'players >= 3'
-    then:
-    - type: 'section'
-      style: 'rank-row'
-      content:
+  - type: 'section'
+    style: 'rank-row'
+    content:
+    - type: 'conditional'
+      if: 'players >= 3'
+      then:
       - type: 'text'
         value: 'restext://Scoring_Rank_3rd'
         style: 'rank-degree'
@@ -82,12 +89,12 @@ nodes:
         then:
         - type: 'image'
           asset: 'image://inputs/ranking_crown'
-  - type: 'conditional'
-    if: 'players >= 4'
-    then:
-    - type: 'section'
-      style: 'rank-row'
-      content:
+  - type: 'section'
+    style: 'rank-row'
+    content:
+    - type: 'conditional'
+      if: 'players >= 4'
+      then:
       - type: 'text'
         value: 'restext://Scoring_Rank_4th'
         style: 'rank-degree'

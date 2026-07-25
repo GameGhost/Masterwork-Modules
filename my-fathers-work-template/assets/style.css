@@ -149,13 +149,20 @@ input::-webkit-inner-spin-button {
  * Applied to every internally-scrolling region below (setup's own passage body, note/setup popup
  * content) — a slim mobile-style overlay bar instead of the browser's default chunky one.
  * scrollbar-width/-color cover Firefox; the ::-webkit-scrollbar-* rules cover Chromium/WebView2/
- * Safari (what this app actually runs in). */
+ * Safari (what this app actually runs in). ranking's own entry targets .mws-passage-body (the
+ * actual scroll region, per its own CSS block further down) — NOT hub_early/middle/late's grouping
+ * below, which gets a different, image-based thumb (scroll_bar_lg.png) instead of this plain color
+ * pill; the two are intentionally different treatments, not a shared one. ranking was previously
+ * missing a comma between its own selector line and the next one below, silently merging them into
+ * one invalid combined descendant selector that matched nothing — the exact "missing comma between
+ * grouped selector lines" pitfall §1.4 (progress-bar labels) already documents; ranking's own
+ * scrollbar was completely unstyled as a result. */
 .mws-passage.layout-player_setup .mws-passage-body,
 .mws-passage.layout-hub_early .mws-passage-body,
 .mws-passage.layout-hub_middle .mws-passage-body,
 .mws-passage.layout-hub_late .mws-passage-body,
 .mws-passage.layout-score_panel .mws-passage-body,
-.mws-passage.layout-ranking .mws-section.style-rank-panel
+.mws-passage.layout-ranking .mws-passage-body,
 .mws-popup-overlay.layout-note .mws-popup-content,
 .mws-popup-overlay.layout-note_clear .mws-popup-content,
 .mws-popup-overlay.layout-setup .mws-popup-content,
@@ -169,7 +176,7 @@ input::-webkit-inner-spin-button {
 .mws-passage.layout-hub_middle .mws-passage-body::-webkit-scrollbar,
 .mws-passage.layout-hub_late .mws-passage-body::-webkit-scrollbar,
 .mws-passage.layout-score_panel .mws-passage-body::-webkit-scrollbar,
-.mws-passage.layout-ranking .mws-section.style-rank-panel::-webkit-scrollbar,
+.mws-passage.layout-ranking .mws-passage-body::-webkit-scrollbar,
 .mws-popup-overlay.layout-note .mws-popup-content::-webkit-scrollbar,
 .mws-popup-overlay.layout-note_clear .mws-popup-content::-webkit-scrollbar,
 .mws-popup-overlay.layout-setup .mws-popup-content::-webkit-scrollbar,
@@ -182,7 +189,7 @@ input::-webkit-inner-spin-button {
 .mws-passage.layout-hub_middle .mws-passage-body::-webkit-scrollbar-track,
 .mws-passage.layout-hub_late .mws-passage-body::-webkit-scrollbar-track,
 .mws-passage.layout-score_panel .mws-passage-body::-webkit-scrollbar-track,
-.mws-passage.layout-ranking .mws-section.style-rank-panel::-webkit-scrollbar-track,
+.mws-passage.layout-ranking .mws-passage-body::-webkit-scrollbar-track,
 .mws-popup-overlay.layout-note .mws-popup-content::-webkit-scrollbar-track,
 .mws-popup-overlay.layout-note_clear .mws-popup-content::-webkit-scrollbar-track,
 .mws-popup-overlay.layout-setup .mws-popup-content::-webkit-scrollbar-track,
@@ -192,7 +199,7 @@ input::-webkit-inner-spin-button {
 
 .mws-passage.layout-player_setup .mws-passage-body::-webkit-scrollbar-thumb,
 .mws-passage.layout-score_panel .mws-passage-body::-webkit-scrollbar-thumb,
-.mws-passage.layout-ranking .mws-section.style-rank-panel::-webkit-scrollbar-thumb,
+.mws-passage.layout-ranking .mws-passage-body::-webkit-scrollbar-thumb,
 .mws-popup-overlay.layout-note .mws-popup-content::-webkit-scrollbar-thumb,
 .mws-popup-overlay.layout-note_clear .mws-popup-content::-webkit-scrollbar-thumb,
 .mws-popup-overlay.layout-setup .mws-popup-content::-webkit-scrollbar-thumb,
@@ -1121,6 +1128,29 @@ body {
 .mws-link.style-btn-red:hover:not(:disabled),
 .mws-popup-cancel:hover:not(:disabled) { color: #2b0d0d; }
 
+/* ── Disabled state — every button/link, file-wide ─────────────────────────
+ * One rule for all four real underlying button classes (.mws-link, .mws-popup-trigger,
+ * .mws-popup-okay, .mws-popup-cancel — confirmed real `<button disabled>` elements, no `<a>` tags or
+ * class-toggled fake-disabled anywhere in the rendering code), not one per graphical variant:
+ * `filter: grayscale(1)` transforms an element's entire rendered output — background-image, text
+ * color, text-shadow, AND its own ::before/::after pseudo-elements — as a single compositing step,
+ * so this one rule covers every image-backed button (standard brown/green/red, the various
+ * button_close.png-based Okay/Cancel buttons, help-trigger, btn-forward, countdown-trigger,
+ * btn-players-2/3/4, ...) and every bracket-styled inline link *and its own brackets* (the
+ * ::before/::after bracket images further up/down this file) without needing a single
+ * background-color/color override written out per variant. cursor: default matches app.css's own
+ * `.mws-link:disabled` precedent (app.css's own rule only covers plain `.mws-link`, not
+ * `.mws-popup-trigger`/`-okay`/`-cancel`, and its color: #888 doesn't suit this module's own
+ * parchment/brown theming anyway — this rule's grayscale filter supersedes it here the same way
+ * every other `.mws-link` color already gets overridden by this file). */
+.mws-link:disabled,
+.mws-popup-trigger:disabled,
+.mws-popup-okay:disabled,
+.mws-popup-cancel:disabled {
+    filter: grayscale(1);
+    cursor: default;
+}
+
 /* note / note_clear: simple torn-parchment message popup (screenshots: Setup-02/04/06) —
    header-free, just body text and a single brown Continue button. Distinct from `setup` (popup,
    below), which has an icon/pin illustration and a different background asset.
@@ -1132,10 +1162,24 @@ body {
    from), matching Module-04B's "auto-show over empty passage" screenshot. */
 .mws-popup-overlay.layout-note .mws-popup-container,
 .mws-popup-overlay.layout-note_clear .mws-popup-container {
-    position: relative;
+    /* position: absolute + top: 15vh (not the vertically-centered flex alignment app.css's
+       .mws-popup-overlay would otherwise give it) — pinned nearer the top rather than dead-center.
+       Overridden by the short-viewport and narrow-viewport media queries below (mutually exclusive
+       breakpoints — a device matching neither gets this rule; one matching either gets that one
+       instead), same mechanism (and same "left/right stay auto, relying on the flex container's own
+       static-position alignment for horizontal centering" trick) both already use.
+       max-height caps the box itself (not just .mws-popup-content's own internal 50vh scroll region
+       below) — without it, .mws-popup-footer's own position: fixed; bottom: 10% (further down) has
+       no relationship to this container's actual height at all, so a container tall enough could
+       grow to overlap the footer badly instead of just sliding partway under it (which is fine, see
+       that rule's own comment) — 70vh here + 15vh top leaves a firm 15vh clear above the true
+       viewport bottom. */
+    position: absolute;
+    top: 10vh;
+    max-height: 70vh;
     display: flex;
     flex-direction: column;
-    min-width: 50vh;
+    min-width: 75vh;
     max-width: 550px;
     height: auto;
     border-style: solid;
@@ -1151,6 +1195,21 @@ body {
     color: #410404;
     font-weight: 600;
     text-align: center;
+}
+
+/* Short/landscape-phone variant — see VIEW-REQUIREMENTS.md §1.1's own documentation of this as a
+   standard, reusable third breakpoint alongside narrow-width below (score_panel/ranking already use
+   the same max-height: 40rem query for their own short-viewport tightening). A fixed px top offset,
+   not vh, for the same reason the narrow-width variant below uses a fixed px one: on a short
+   viewport the popup needs to clear the *hosting passage's own border* — a fixed-thickness frame
+   regardless of viewport height — not track a proportion of the (now scarce) viewport height itself.
+   20px / 80vh are starting points, tune here. */
+@media (max-height: 30rem) {
+    .mws-popup-overlay.layout-note .mws-popup-container,
+    .mws-popup-overlay.layout-note_clear .mws-popup-container {
+        top: 20px;
+        max-height: calc(100vh - 120px);
+    }
 }
 
 /* Narrow: pinned a fixed percent from the top (position: absolute against the fixed overlay,
@@ -2047,7 +2106,7 @@ body {
 /* Shorter viewports: the card's own top/bottom breathing room shrinks toward a minimal buffer
    before its internal scrollbar has to engage — matches the outer .mws-passage padding above,
    which does the same thing for the space around the whole card. */
-@media (max-height: 40rem) {
+@media (max-height: 30rem) {
     .mws-passage.layout-score_panel {
         padding-top: 10px;
         padding-bottom: 20px;
@@ -2379,7 +2438,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0.5em 12px 3em;
+    /* Bottom padding kept deliberately small (not matching e.g. score_panel's own 3em) — less
+       reserved space here means less chance the fixed-height panel + button trips this region into
+       scrolling at all on a viewport that's merely a little short, not genuinely too short to fit. */
+    padding: 0.5em 12px 0.5em;
 }
 
 /* height: 18em = 6 row-units × 3em/unit (see the block comment above) — fixed, not aspect-ratio-
@@ -2411,19 +2473,30 @@ body {
     padding: 0 5vw;
 }
 
-/* flex: 0 0 1.5em is 3em (one row-unit) expressed in THIS element's own font-size (2em, set right
-   here) rather than its parent's — 1.5 × 2em = 3em in the parent's terms, so the row still claims
-   exactly one row-unit of the panel's height despite the nested font-size doubling. That doubling
-   is the actual "text 2x larger" request: everything below inherits it, so rank-degree/rank-name
-   (no font-size of their own) and the crown image's existing `width: 1.4em` (style-rank-panel's own
-   .mws-image rule, unchanged) all render at exactly 2x their old size as a side effect, without
-   needing their own separate size bump. Grid, not flex, for the row's own three cells — the crown
-   column is a fixed 1.4em track whether or not a given row's conditional crown node actually
-   rendered, which is what keeps every row's name flush against the same right edge regardless of
-   who's tied for first; a flex row with margin-right: auto (the old approach) shifted the name over
-   whenever a neighboring row's crown added extra trailing width. */
+/* flex: 1 (shorthand for grow:1 shrink:1 basis:0%) — NOT flex: auto. auto derives each row's base
+   size from its own content, so an *empty* row (a rank position that doesn't exist — see the
+   passage's own comment on why all 4 rank-row sections always render) computed a near-zero base
+   size; growth was then only ever measured relative to that already-collapsed base, which in
+   practice left the populated rows hugging the top of the panel and every empty row's "share"
+   piling up as one leftover gap at the bottom instead of each row (empty or not) claiming an equal
+   quarter of the panel — sliding populated rows out of registration with the art's own divider
+   lines for anything less than 4 players. basis: 0% makes every row's height a pure 1/4-of-available
+   -space ratio, completely independent of its own content, which is what actually keeps all 4 rows
+   (and the dividers between them) evenly spaced regardless of player count. min-height: 0 alongside
+   it for the same reason every flex:1 scroll region in this file needs it (§1.7) — a flex item's
+   default min-height: auto floors it at its own content's min-content size, which for an empty grid
+   row should already be 0 but isn't worth leaving to chance.
+   font-size: 2em: doubling is the actual "text 2x larger" request: everything below inherits it, so
+   rank-degree/rank-name (no font-size of their own) and the crown image's existing `width: 1.4em`
+   (style-rank-panel's own .mws-image rule, unchanged) all render at exactly 2x their old size as a
+   side effect, without needing their own separate size bump. Grid, not flex, for the row's own three
+   cells — the crown column is a fixed 1.4em track whether or not a given row's conditional crown
+   node actually rendered, which is what keeps every row's name flush against the same right edge
+   regardless of who's tied for first; a flex row with margin-right: auto (the old approach) shifted
+   the name over whenever a neighboring row's crown added extra trailing width. */
 .mws-passage.layout-ranking .mws-section.style-rank-row {
-    flex: auto;
+    flex: 1;
+    min-height: 0;
     font-size: 2em;
     display: grid;
     grid-template-columns: auto 1fr 1.4em;
@@ -2458,6 +2531,18 @@ body {
     display: block;
     text-align: center;
     margin: 0 auto;
+}
+
+/* Placed *after* the base rule above (not grouped into the shared max-height media query further
+   up, where every other layout's own short-viewport tweaks live) — tied specificity means the later
+   rule in source order wins on a cascade conflict, so putting this before the base rule would
+   silently nullify it, the same cascade-order pitfall score_help/game_complete's own identical
+   comments already document. Pulls the button up toward the fixed-height panel, on top of the
+   .mws-passage-body bottom-padding trim above, when vertical space is already tight. */
+@media (max-height: 30rem) {
+    .mws-passage.layout-ranking .mws-link {
+        margin-top: -0.5em;
+    }
 }
 
 /* ── game_complete popup ("ending unlocked") ───────────────────────────────
