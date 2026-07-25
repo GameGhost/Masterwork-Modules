@@ -15,15 +15,16 @@
 format: 'mws/0.4'
 layout_id: 'narration'
 header:
-# cost-of-disease-specific: the template's own copy of this layout assumes a module already
-# supplies roundNum (1-9) directly. This module's extractor-synthesized progress tracking
-# (progress-map.json, --progress-map) instead sets _ProgressRound, a 0-based "rounds completed
-# so far" count (0 while playing round 1, ..., 8 while playing round 9, reaching 9 only once round
-# 9's hub has been left) -- so roundNum is derived here rather than being a real module variable.
-# min(..., 9) clamps the ending/scoring narration (rendered after _ProgressRound reaches 9) to a
-# full bar instead of an out-of-range 10th case the switch below has no match for. Reproduced by
-# scripts/apply-template.ps1 -ProgressVariable _ProgressRound (see that script's own .DESCRIPTION)
-# -- re-running it regenerates this exact block, so hand-edits here don't need to survive a re-run.
+# cost-of-disease-specific: the template's own copy of this layout assumes a module already supplies
+# roundNum (1-9) directly. This module's extractor-synthesized progress tracking (progress-map.json,
+# --progress-map) instead sets _ProgressRound, a 0-based "rounds completed so far" count (0 while
+# playing round 1, ..., 8 while playing round 9, reaching 9 only once round 9's hub has been left) --
+# so roundNum is derived here rather than being a real module variable. min(..., 9) clamps the
+# ending/scoring narration (rendered after _ProgressRound reaches 9) to a full bar instead of an
+# out-of-range 10th case the switch below has no match for. Reproduced by
+# scripts/apply-template.ps1 -ProgressVariable _ProgressRound (see that script's own
+# .DESCRIPTION) -- re-running it regenerates this exact block, so hand-edits here don't need to
+# survive a re-run.
 - type: 'let'
   var: 'roundNum'
   expr: 'min(_ProgressRound + 1, 9)'
