@@ -4,49 +4,44 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Setup_01_PlayerCountSelect'
-title: 'Setup - Players'
+title: 'restext://Setup_PlayerCount_Title'
 tags:
 - 'Begins-Here'
-layout: 'setup_player_count'
+layout: 'player_setup'
 nodes:
 - type: 'text'
-  value: '**Players**'
+  value: 'restext://Setup_PlayerCount_Prompt'
 - type: 'break'
   style: 'paragraph'
-- type: 'text'
-  value: 'How many individuals will be sharing this experience today?'
-- type: 'break'
-  style: 'paragraph'
-# TODO(chrome): style as a large image button using assets/images/2Players.png, centered with the
-# other two — no engine support yet for image-backed navigation buttons (masterwork-plan-rev20.md).
-- type: 'link'
-  label: '2 Players'
-  style: 'button'
-  target: 'Setup_02_PlayerNameIntro'
-  snapshot: false
-  onclick:
-  - type: 'assign'
-    var: 'players'
-    expr: '2'
-- type: 'break'
-# TODO(chrome): assets/images/3Players.png — see TODO above.
-- type: 'link'
-  label: '3 Players'
-  style: 'button'
-  target: 'Setup_02_PlayerNameIntro'
-  snapshot: false
-  onclick:
-  - type: 'assign'
-    var: 'players'
-    expr: '3'
-- type: 'break'
-# TODO(chrome): assets/images/4Players.png — see TODO above.
-- type: 'link'
-  label: '4 Players'
-  style: 'button'
-  target: 'Setup_02_PlayerNameIntro'
-  snapshot: false
-  onclick:
-  - type: 'assign'
-    var: 'players'
-    expr: '4'
+# Only this section scrolls (style.css's .style-setup-choices) — the question text above stays
+# fixed, matching the "scrollable area is just the buttons" request rather than the whole body.
+- type: 'section'
+  style: 'setup-choices'
+  content:
+  - type: 'link'
+    label: 'restext://Setup_PlayerCount_Two'
+    style: 'btn-players-2'
+    target: 'Setup_02_PlayerNameIntro'
+    snapshot: false
+    onclick:
+    - type: 'assign'
+      var: 'players'
+      expr: '2'
+  - type: 'link'
+    label: 'restext://Setup_PlayerCount_Three'
+    style: 'btn-players-3'
+    target: 'Setup_02_PlayerNameIntro'
+    snapshot: false
+    onclick:
+    - type: 'assign'
+      var: 'players'
+      expr: '3'
+  - type: 'link'
+    label: 'restext://Setup_PlayerCount_Four'
+    style: 'btn-players-4'
+    target: 'Setup_02_PlayerNameIntro'
+    snapshot: false
+    onclick:
+    - type: 'assign'
+      var: 'players'
+      expr: '4'

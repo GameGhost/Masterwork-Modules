@@ -1,12 +1,11 @@
-# Stub — no chrome authored yet. Shared layout for _ScoreEntry.mws.yaml/_TieBreaker1.mws.yaml/
-# _TieBreaker2.mws.yaml (passages-override/) — per the reference screenshots
-# (Masterwork-Design/Reference/Screenshots/Score and Ending/), these three share identical
-# structural chrome (title bar, player/value two-column table, single Continue button); module
-# CSS keyed on .layout-score_panel does the actual "parchment scroll on purple" visual
-# treatment — a follow-up pass, not part of the mechanism landing here.
+# Real three-layer composite, same technique as narration (VIEW-REQUIREMENTS.md §1.2/§1.7/§1.8):
+# leather_purple background image node (style-layer-bg, shared hook — see style.css), the outer
+# main.png frame and the popup_parchment_border.png inner panel both applied via border-image CSS
+# pseudo-elements, not image nodes (see style.css's own comments for why). No footer — score_panel
+# has no round progress bar.
 format: 'mws/0.4'
 layout_id: 'score_panel'
-header: []
-footer: []
-before_content: []
-after_content: []
+header:
+- type: 'image'
+  asset: 'image://backgrounds/leather_purple'
+  style: 'layer-bg'

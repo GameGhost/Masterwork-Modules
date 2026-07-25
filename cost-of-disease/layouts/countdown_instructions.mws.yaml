@@ -1,11 +1,9 @@
-# Stub — no chrome authored yet. Popup layout: 'countdown_instructions' (9 occurrences) — the outer
-# half of the bidding/voting nested-popup pattern (replaces the old flat 'bidding'/'voting' layouts
-# and the bespoke VotingPopupContent component, both retired). See
-# Masterwork-Modules/my-fathers-work-template's own countdown_instructions.mws.yaml for the
-# real, styled version this can be based on.
+# The OUTER popup in the bidding/voting pattern (see README.md "Voting/bidding" for the full
+# writeup, and Showcase_Popup_RevealCountdown.mws.yaml for the worked example) — a plain parchment
+# note holding instruction text, with a countdown_action popup nested directly in its own content:
+# list. Deliberately has no okay/cancel of its own (see the demo passage) — it's only ever
+# dismissed by the nested popup's own navigation carrying the whole passage away, matching the
+# reference app where the instructions panel never has its own close button (Module-09). No chrome
+# regions needed; everything lives in style.css against .mws-popup-overlay.layout-countdown_instructions.
 format: 'mws/0.4'
 layout_id: 'countdown_instructions'
-header: []
-footer: []
-before_content: []
-after_content: []

@@ -1,9 +1,180 @@
-# Stub — no chrome authored yet. Passage layout: 'hub_late' (8 passages, via progress-map.json's
-# --progress-map override — Late Years round hub screens). See layouts/hub_early.mws.yaml for the
-# sibling Early-Years chrome (currently the only one with a working example).
+# Same shape as narration.mws.yaml/introduction.mws.yaml — background image node (no parchment
+# layer: hub's content is a scrollable stack of individually-bordered hub-card sections directly
+# over the leather background, not one big panel) plus a border-image 9-slice on
+# `.mws-passage::after` (CSS, not an image node — see narration.mws.yaml/style.css) plus the
+# identical round progress bar mechanism. hub_early/hub_middle/hub_late differ only in border asset
+# (hub_red/hub_blue/hub_brown.png, matching the reference app's per-generation theming) — CSS keys
+# off layout_id for the rest. See narration.mws.yaml for the progress-bar comment.
 format: 'mws/0.4'
 layout_id: 'hub_late'
+header:
+# cost-of-disease-specific: see layouts/narration.mws.yaml's own identical comment — roundNum is
+# derived from the extractor's _ProgressRound (0-based rounds-completed count) rather than being a
+# real module variable, and min(..., 9) clamps post-round-9 rendering to a full bar. Reproduced by
+# scripts/apply-template.ps1 -ProgressVariable _ProgressRound — re-running it regenerates this
+# exact block.
+- type: 'let'
+  var: 'roundNum'
+  expr: 'min(_ProgressRound + 1, 9)'
+- type: 'image'
+  asset: 'image://backgrounds/leather_splattered'
+  style: 'layer-bg'
 footer:
-- type: 'text'
-  value: 'Progress: {_ProgressRound} / 9'
-  style: 'progress-placeholder'
+- type: 'switch'
+  on: 'roundNum'
+  cases:
+  - match: 1
+    nodes:
+    - type: 'image'
+      asset: 'image://progress/background'
+      style: 'progress-bg-1'
+  - match: 2
+    nodes:
+    - type: 'image'
+      asset: 'image://progress/background'
+      style: 'progress-bg-2'
+  - match: 3
+    nodes:
+    - type: 'image'
+      asset: 'image://progress/background'
+      style: 'progress-bg-3'
+  - match: 4
+    nodes:
+    - type: 'image'
+      asset: 'image://progress/background'
+      style: 'progress-bg-4'
+  - match: 5
+    nodes:
+    - type: 'image'
+      asset: 'image://progress/background'
+      style: 'progress-bg-5'
+  - match: 6
+    nodes:
+    - type: 'image'
+      asset: 'image://progress/background'
+      style: 'progress-bg-6'
+  - match: 7
+    nodes:
+    - type: 'image'
+      asset: 'image://progress/background'
+      style: 'progress-bg-7'
+  - match: 8
+    nodes:
+    - type: 'image'
+      asset: 'image://progress/background'
+      style: 'progress-bg-8'
+  - match: 9
+    nodes:
+    - type: 'image'
+      asset: 'image://progress/background'
+      style: 'progress-bg-9'
+- type: 'conditional'
+  if: 'roundNum == 1'
+  then:
+  - type: 'image'
+    asset: 'image://progress/I1-glow'
+    style: 'progress-label-1'
+  else:
+  - type: 'conditional'
+    if: 'roundNum > 1'
+    then:
+    - type: 'image'
+      asset: 'image://progress/I1-diffuse'
+      style: 'progress-label-1'
+- type: 'conditional'
+  if: 'roundNum == 2'
+  then:
+  - type: 'image'
+    asset: 'image://progress/I2-glow'
+    style: 'progress-label-2'
+  else:
+  - type: 'conditional'
+    if: 'roundNum > 2'
+    then:
+    - type: 'image'
+      asset: 'image://progress/I2-diffuse'
+      style: 'progress-label-2'
+- type: 'conditional'
+  if: 'roundNum == 3'
+  then:
+  - type: 'image'
+    asset: 'image://progress/I3-glow'
+    style: 'progress-label-3'
+  else:
+  - type: 'conditional'
+    if: 'roundNum > 3'
+    then:
+    - type: 'image'
+      asset: 'image://progress/I3-diffuse'
+      style: 'progress-label-3'
+- type: 'conditional'
+  if: 'roundNum == 4'
+  then:
+  - type: 'image'
+    asset: 'image://progress/II1-glow'
+    style: 'progress-label-4'
+  else:
+  - type: 'conditional'
+    if: 'roundNum > 4'
+    then:
+    - type: 'image'
+      asset: 'image://progress/II1-diffuse'
+      style: 'progress-label-4'
+- type: 'conditional'
+  if: 'roundNum == 5'
+  then:
+  - type: 'image'
+    asset: 'image://progress/II2-glow'
+    style: 'progress-label-5'
+  else:
+  - type: 'conditional'
+    if: 'roundNum > 5'
+    then:
+    - type: 'image'
+      asset: 'image://progress/II2-diffuse'
+      style: 'progress-label-5'
+- type: 'conditional'
+  if: 'roundNum == 6'
+  then:
+  - type: 'image'
+    asset: 'image://progress/II3-glow'
+    style: 'progress-label-6'
+  else:
+  - type: 'conditional'
+    if: 'roundNum > 6'
+    then:
+    - type: 'image'
+      asset: 'image://progress/II3-diffuse'
+      style: 'progress-label-6'
+- type: 'conditional'
+  if: 'roundNum == 7'
+  then:
+  - type: 'image'
+    asset: 'image://progress/III1-glow'
+    style: 'progress-label-7'
+  else:
+  - type: 'conditional'
+    if: 'roundNum > 7'
+    then:
+    - type: 'image'
+      asset: 'image://progress/III1-diffuse'
+      style: 'progress-label-7'
+- type: 'conditional'
+  if: 'roundNum == 8'
+  then:
+  - type: 'image'
+    asset: 'image://progress/III2-glow'
+    style: 'progress-label-8'
+  else:
+  - type: 'conditional'
+    if: 'roundNum > 8'
+    then:
+    - type: 'image'
+      asset: 'image://progress/III2-diffuse'
+      style: 'progress-label-8'
+- type: 'conditional'
+  if: 'roundNum == 9'
+  then:
+  - type: 'image'
+    asset: 'image://progress/III3-glow'
+    style: 'progress-label-9'

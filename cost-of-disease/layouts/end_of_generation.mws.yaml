@@ -1,7 +1,7 @@
-# Stub — no chrome authored yet. Popup layout: 'end_of_generation' (7 popups).
+# No chrome regions needed — the parchment-card visual treatment (screenshot: Module-12) lives
+# entirely in style.css against .mws-popup-overlay.layout-end_of_generation. A distinct layout id
+# from end_of_round (matching docs/mws-format-latest.md §7's own worked examples, which treat the
+# two as separate layout values) but shares every CSS rule via combined selectors — same card art,
+# same sizing, only the header/body text differs, supplied by the popup node itself.
 format: 'mws/0.4'
 layout_id: 'end_of_generation'
-header: []
-footer: []
-before_content: []
-after_content: []

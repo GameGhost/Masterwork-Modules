@@ -1,69 +1,1254 @@
-/* The Cost of Disease — module stylesheet.
+/* My Father's Work — Template. A design workbench, not a playable scenario: one demo
+ * passage/popup per layout the app needs to support, styled for real, so visual treatment can be
+ * iterated on and screenshotted here before being copied into real scenario modules (see
+ * README.md and scripts/apply-template.ps1 at the Masterwork-Modules repo root).
  *
- * Layout/placement styling (see Masterwork-Design's masterwork-plan-rev20.md, Milestone C). The
- * app's own chrome (Masterwork.App.Shared) only ever emits structural class hooks — layout-{value}
- * on passages/popups, style-{value} on link/input/text/break/image/section nodes, plus (for popups)
- * always-present .mws-popup-container/-header/-content/-footer regions — this file is what
- * actually gives those hooks a visual treatment. Most of it is still flat (borders/background
- * tints); the setup popup layout below is the first to reference module assets directly via
- * url(icon://slug) / url(image://slug) — JsModuleStyleInjector resolves those before this file is
- * injected into the page.
+ * The app's own chrome only ever emits structural class hooks — layout-{value} on passages/popups,
+ * style-{value} on link/input/text/break/image/section nodes, plus (for popups) always-present
+ * .mws-popup-container/-header/-content/-footer regions — this file is what actually gives those
+ * hooks a visual treatment. url(icon://slug) / url(image://slug) / url(font://slug) references are
+ * resolved by JsModuleStyleInjector before this file is injected into the page.
+ *
+ * FONT-SCALING CONVENTION — read before adding rules here (see also `docs/mws-format-latest.md`):
+ * the app's only font-scaling mechanism is `body { font-size: calc(1rem * var(--mws-text-scale)) }`
+ * — nothing else responds to the player's system/browser text-size preference. A `rem` value is
+ * relative to the *root* element, not `body`, so it will NOT scale with that preference. Text-bearing
+ * rules below therefore use `em` (relative to the inherited, already-scaled computed size) wherever
+ * the rule sizes actual reading text; `rem` is reserved for chrome that deliberately should NOT grow
+ * with text — border widths, fixed-aspect button/backing art sized to match a background image.
+ *
+ * SIZING CONVENTION — which unit for which kind of value (not comprehensive; exceptions can exist,
+ * but any exception should have a reason, not just be whatever was convenient):
+ *   - Borders themselves: fixed `px` (border-image-width etc.) — every bordered layout/popup in
+ *     this file shares this already, so their corners scale identically regardless of viewport.
+ *   - Offsets *from* a border (the viewport's own outer frame, or a content box's own
+ *     border/background — a popup card, a bordered panel): fixed `px`, matching the border's own
+ *     px thickness, so the offset never drifts out of sync with it as the viewport resizes. The one
+ *     exception is text that overhangs a border on purpose (a title straddling a card's top edge) —
+ *     that offset may reasonably use `em`/`rem` of the *text's own* size instead, since it's tracking
+ *     the text, not the border.
+ *   - Popup *areas* (their own max-width/max-height, and their edge offsets from the viewport):
+ *     `vh`/`vw`, capped by a fixed max — e.g. `width: 94vw; max-width: 32rem` reads as "shrink with
+ *     a narrow viewport, but never grow past a sane fixed size on a wide one." `note`'s own
+ *     `min-width`/`max-width` pair (this file, further down) is the reference example.
+ *   - Padding/margin on elements sitting in ordinary relative flow (not tracking a border, not a
+ *     popup's own outer area): `rem`, not `em` — favored over `em` specifically so a later
+ *     font-size override on some ancestor can never silently compound into an unexpectedly large
+ *     padding/margin the way stacked `em` values can. Font-*size* itself is unaffected by this —
+ *     that still follows the FONT-SCALING CONVENTION above (`em` for reading text) — this rule is
+ *     about spacing values only.
  */
+
+/* ── Fonts ────────────────────────────────────────────────────────────────
+ * Loaded but never wired to any font-family anywhere in the codebase until this module — see
+ * font://slug resolution in AssetResolver.cs (assets/fonts/{slug}.{woff2,woff,ttf,otf}). Only a
+ * woff2 source is declared per face: every browser/WebView this app targets supports it, and
+ * AssetResolver only ever returns one resolved data: URI per slug (the first extension it finds),
+ * so a second url()/format() fallback for the same slug would just resolve to the identical bytes. */
+
+@font-face {
+    font-family: 'Averia Libre';
+    font-style: normal;
+    font-weight: 300;
+    src: url(font://averia-libre-v16-latin-300) format('woff2');
+}
+@font-face {
+    font-family: 'Averia Libre';
+    font-style: italic;
+    font-weight: 300;
+    src: url(font://averia-libre-v16-latin-300italic) format('woff2');
+}
+@font-face {
+    font-family: 'Averia Libre';
+    font-style: normal;
+    font-weight: 400;
+    src: url(font://averia-libre-v16-latin-regular) format('woff2');
+}
+@font-face {
+    font-family: 'Averia Libre';
+    font-style: italic;
+    font-weight: 400;
+    src: url(font://averia-libre-v16-latin-italic) format('woff2');
+}
+@font-face {
+    font-family: 'Averia Libre';
+    font-style: normal;
+    font-weight: 700;
+    src: url(font://averia-libre-v16-latin-700) format('woff2');
+}
+@font-face {
+    font-family: 'Averia Libre';
+    font-style: italic;
+    font-weight: 700;
+    src: url(font://averia-libre-v16-latin-700italic) format('woff2');
+}
+@font-face {
+    font-family: 'Averia Gruesa Libre';
+    font-style: normal;
+    font-weight: 400;
+    src: url(font://averia-gruesa-libre-v22-latin_latin-ext-regular) format('woff2');
+}
+@font-face {
+    font-family: 'Germania One';
+    font-style: normal;
+    font-weight: 400;
+    src: url(font://germania-one-v21-latin-regular) format('woff2');
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Body-copy font everywhere inside a passage/popup; titles/headings override to the display face
+   below. Scoped to .mws-passage/.mws-popup-container (not `body`) — this file only ever styles
+   module content, never app chrome. */
+.mws-passage,
+.mws-popup-container {
+    font-family: 'Averia Libre', serif;
+}
+
+.mws-passage-title,
+.mws-passage-subtitle,
+.mws-popup-header {
+    font-family: 'Germania One', 'Averia Gruesa Libre', 'Averia Libre', serif;
+}
+
+/* ── Type scale utilities ─────────────────────────────────────────────────
+ * Base 100% scale = 16pt (set on body by the app shell, see the font-scaling convention note up
+ * top). `text-sm`/`text-lg`/`text-xl` size content relative to body copy — hand-authored (a name
+ * echoed back large in a note popup, a long paragraph that reads better smaller) or
+ * extractor-generated (e.g. end-of-round/generation popup headers) — in `em` so they still track
+ * --mws-text-scale. */
+.mws-text.style-text-sm {
+    font-size: 0.85em;
+}
+
+.mws-text.style-text-lg {
+    font-size: 1.25em;
+}
+
+.mws-text.style-text-xl {
+    font-size: 1.75em;
+    font-weight: 700;
+}
+
+/* app.css's plain (no-style) `break` is a deliberate zero-margin <br>-equivalent
+   (`.mws-break { display: block; }`, no spacing rule — only `style: 'paragraph'` gets one, via
+   app.css's own `.mws-break.style-paragraph { margin-top: 0.75rem; }`). That reads as too cramped
+   for this module's link lists (hub-card sections, popup content) where a plain `break` is used to
+   put one link per line — module-wide, not just hub, since narration/introduction content lists
+   the same way. `em`, not `rem` — this is reading-adjacent spacing that should track
+   --mws-text-scale like the text around it (§1.8), not fixed chrome. */
+.mws-break.style-default {
+    margin-top: 0.4em;
+}
+
+/* ── Thin scrollbar utility ───────────────────────────────────────────────
+ * Applied to every internally-scrolling region below (setup's own passage body, note/setup popup
+ * content) — a slim mobile-style overlay bar instead of the browser's default chunky one.
+ * scrollbar-width/-color cover Firefox; the ::-webkit-scrollbar-* rules cover Chromium/WebView2/
+ * Safari (what this app actually runs in). */
+.mws-passage.layout-player_setup .mws-passage-body,
+.mws-passage.layout-hub_early .mws-passage-body,
+.mws-passage.layout-hub_middle .mws-passage-body,
+.mws-passage.layout-hub_late .mws-passage-body,
+.mws-passage.layout-score_panel .mws-passage-body,
+.mws-passage.layout-ranking .mws-section.style-rank-panel
+.mws-popup-overlay.layout-note .mws-popup-content,
+.mws-popup-overlay.layout-note_clear .mws-popup-content,
+.mws-popup-overlay.layout-setup .mws-popup-content,
+.mws-popup-overlay.layout-score_help .mws-popup-content {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(230, 220, 195, 0.6) transparent;
+}
+
+.mws-passage.layout-player_setup .mws-passage-body::-webkit-scrollbar,
+.mws-passage.layout-hub_early .mws-passage-body::-webkit-scrollbar,
+.mws-passage.layout-hub_middle .mws-passage-body::-webkit-scrollbar,
+.mws-passage.layout-hub_late .mws-passage-body::-webkit-scrollbar,
+.mws-passage.layout-score_panel .mws-passage-body::-webkit-scrollbar,
+.mws-passage.layout-ranking .mws-section.style-rank-panel::-webkit-scrollbar,
+.mws-popup-overlay.layout-note .mws-popup-content::-webkit-scrollbar,
+.mws-popup-overlay.layout-note_clear .mws-popup-content::-webkit-scrollbar,
+.mws-popup-overlay.layout-setup .mws-popup-content::-webkit-scrollbar,
+.mws-popup-overlay.layout-score_help .mws-popup-content::-webkit-scrollbar {
+    width: 0.35rem;
+}
+
+.mws-passage.layout-player_setup .mws-passage-body::-webkit-scrollbar-track,
+.mws-passage.layout-hub_early .mws-passage-body::-webkit-scrollbar-track,
+.mws-passage.layout-hub_middle .mws-passage-body::-webkit-scrollbar-track,
+.mws-passage.layout-hub_late .mws-passage-body::-webkit-scrollbar-track,
+.mws-passage.layout-score_panel .mws-passage-body::-webkit-scrollbar-track,
+.mws-passage.layout-ranking .mws-section.style-rank-panel::-webkit-scrollbar-track,
+.mws-popup-overlay.layout-note .mws-popup-content::-webkit-scrollbar-track,
+.mws-popup-overlay.layout-note_clear .mws-popup-content::-webkit-scrollbar-track,
+.mws-popup-overlay.layout-setup .mws-popup-content::-webkit-scrollbar-track,
+.mws-popup-overlay.layout-score_help .mws-popup-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.mws-passage.layout-player_setup .mws-passage-body::-webkit-scrollbar-thumb,
+.mws-passage.layout-score_panel .mws-passage-body::-webkit-scrollbar-thumb,
+.mws-passage.layout-ranking .mws-section.style-rank-panel::-webkit-scrollbar-thumb,
+.mws-popup-overlay.layout-note .mws-popup-content::-webkit-scrollbar-thumb,
+.mws-popup-overlay.layout-note_clear .mws-popup-content::-webkit-scrollbar-thumb,
+.mws-popup-overlay.layout-setup .mws-popup-content::-webkit-scrollbar-thumb,
+.mws-popup-overlay.layout-score_help .mws-popup-content::-webkit-scrollbar-thumb {
+    background-color: rgba(230, 220, 195, 0.6);
+    border-radius: 999px;
+}
+
+/* hub_early/middle/late get the real scroll_bar_lg.png thumb asset instead of a plain color pill
+   (VIEW-REQUIREMENTS.md §2 hub_*) — width matches the image's own narrow aspect (128×640). Firefox
+   has no image-thumb equivalent for scrollbar-color, so it still falls back to the plain color
+   thumb via the shared rule above (Chromium/WebView2, this app's actual targets, get the real
+   asset). */
+.mws-passage.layout-hub_early .mws-passage-body::-webkit-scrollbar-thumb,
+.mws-passage.layout-hub_middle .mws-passage-body::-webkit-scrollbar-thumb,
+.mws-passage.layout-hub_late .mws-passage-body::-webkit-scrollbar-thumb {
+    background-image: url(image://inputs/scroll_bar_lg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-radius: 0;
+}
 
 /* ── Passage layouts ─────────────────────────────────────────────────────── */
 
-/* narration: intentionally left unstyled — minimal chrome, per the app's own default. */
+/* event: see the dedicated block further down — new template content, not copied from
+   cost-of-disease (which leaves narration intentionally unstyled). */
 
-/* setup_player_count: the 2/3/4-player picker (_Setup_01_PlayerCountSelect). Centered column,
-   large prominent buttons — see the .mws-link.style-button rule below for the buttons themselves. */
-.mws-passage.layout-setup_player_count {
+/* setup/narration/introduction/hub_*: every bordered passage layout (VIEW-REQUIREMENTS.md
+ * §1.2/§1.7/§1.8's three-layer composite + single-scroll shell) shares this same structural
+ * skeleton — a background image from the layout's own header region (style-layer-bg), fixed to the
+ * viewport; the border itself is a CSS border-image pseudo-element, not an image node (see its own
+ * rule further down); .mws-play-chrome pinned out of flow; height: 100vh + flex column +
+ * overflow: hidden so there's exactly one scrollbar, never a second outer one; the narrow-viewport
+ * top/bottom-strip border treatment (§1.1). Proven on `setup` first, now shared rather than
+ * re-derived per layout — see §1.7 for why each piece is here. `main.png` (setup) has no
+ * progress-bar cutout (§1.3), so setup alone skips the progress-bar layer narration/introduction/
+ * hub all need. */
+
+/* Fixed to the viewport, out of document flow — app.css's default is `position: sticky`, which
+   still occupies its own space in normal flow and pushes .mws-passage down by however tall it
+   renders. z-index above the popup footer (1001) so it always stays reachable. Scoped here (not a
+   change to app.css) since module CSS is only injected while this module is actually playing. */
+.mws-play-chrome {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1002;
+}
+
+/* Defensive rather than load-bearing — every .layout-{bordered} rule below is self-contained at
+   height: 100vh with chrome out of flow, so body shouldn't need to scroll at all. Cheap insurance
+   against a second, outer page-level scrollbar if anything else ever contributes stray height. */
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.mws-section {
+    border: none;
+}
+
+/* max-width: none + margin: 0 override app.css's `@media (min-width: 48rem) { .mws-passage {
+   max-width: 40rem; margin: 0 auto; padding: 1.5rem; } }` — a generic (no layout- qualifier) rule
+   that otherwise caps every passage to 640px wide on anything ≥48rem. A 2-class `.layout-{id}`
+   selector beats the bare 1-class one regardless of which sits in a media query (§3 flags this as
+   worth fixing in app.css directly instead of re-overriding per layout). No min-height — an
+   ordinary top-down page, not a modal that needs a reserved box to center within. height: 100vh +
+   flex column + overflow: hidden, with .mws-passage-body as the flex: 1 / overflow-y: auto child
+   below, is what gives every passage exactly one scrollbar and keeps it clear of the fixed chrome
+   bar — padding-top reserves that bar's height (4rem is a starting point, tune here). Color/
+   font-size/padding are the one part that's genuinely per-layout (short labels on setup read fine
+   larger; long-form prose on narration/introduction wants a smaller, more book-like size). */
+.mws-passage.layout-player_setup,
+.mws-passage.layout-narration,
+.mws-passage.layout-introduction,
+.mws-passage.layout-hub_early,
+.mws-passage.layout-hub_middle,
+.mws-passage.layout-hub_late,
+.mws-passage.layout-score_panel,
+.mws-passage.layout-ranking {
+    position: relative;
+    isolation: isolate;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 0.5rem;
-    padding: 2rem 1rem;
+    height: 100vh;
+    max-width: none;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
 }
+
+.mws-passage.layout-player_setup {
+    padding: 50px 30px 25px;
+    color: #f2e6c8;
+    font-size: 1.6em;
+}
+
+/* Fixed px, not vh/vw — this session's border-image rework (§1.8, below) moved every border to a
+   fixed border-image-width in real CSS px rather than tracking the viewport in vh/vw, specifically
+   so its frame corners stay a constant on-screen size (see that rule's own comment for why vh/vw
+   there caused corner distortion). Padding needs to match that unit exactly, not just approximate
+   it, so the content-safe area stays flush with the border's now-fixed inner edge at every
+   viewport size instead of drifting in or out of sync with it the way a vh/vw padding paired with
+   a px-based border eventually would. 50px 30px 40px is shared across narration/introduction/
+   hub_early/middle/late now that every one of those borders renders at the same fixed thickness
+   (see the outer-border rule below) — only their text color/scale still differs per surface. */
+.mws-passage.layout-narration,
+.mws-passage.layout-introduction {
+    padding: 50px 30px 40px;
+    color: #1F1F1E;
+    font-size: 1.25em;
+}
+
+/* hub_early/middle/late: same fixed-px border-tracking padding as narration/introduction above
+   (all five bordered layouts now share one border-image-width, see the outer-border rule below),
+   but their own text color/scale — content sits directly over the dark leather background (no
+   light parchment panel here, see .mws-passage-body below), not the parchment's
+   near-black-on-cream palette. */
+.mws-passage.layout-hub_early,
+.mws-passage.layout-hub_middle,
+.mws-passage.layout-hub_late {
+    color: #e5e0d8;
+    font-size: 1.25em;
+    padding: 50px 30px 40px;
+}
+
+/* `position: fixed` (not `absolute`) so this covers the actual browser viewport, not just
+   `.mws-passage`'s own content-sized box — matches §1.1's "background stretches to the edge of the
+   viewport" (letterboxed wide-viewport treatment). `isolation: isolate` above still scopes z-index
+   ordering to this stacking context (fixed positioning only affects layout/placement, not which
+   stacking context governs paint order), so this can't bleed above the app's own chrome. Shared by
+   every bordered layout — only the `asset:` on the image node (set per layout.mws.yaml) actually
+   changes what's shown. The leather background is a plain seamless-ish texture with no frame/
+   corner detail to protect, so object-fit: fill (uniform full-image stretch) is still the right
+   tool for it — only the *border* below needed to move off this technique, see its own comment. */
+.mws-passage.layout-player_setup .mws-image.style-layer-bg,
+.mws-passage.layout-narration .mws-image.style-layer-bg,
+.mws-passage.layout-introduction .mws-image.style-layer-bg,
+.mws-passage.layout-hub_early .mws-image.style-layer-bg,
+.mws-passage.layout-hub_middle .mws-image.style-layer-bg,
+.mws-passage.layout-hub_late .mws-image.style-layer-bg,
+.mws-passage.layout-score_panel .mws-image.style-layer-bg,
+.mws-passage.layout-ranking .mws-image.style-layer-bg {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill;
+    pointer-events: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+}
+
+/* ── Outer border frame — CSS border-image, not an image node (§1.2/§1.8) ─────────────────────
+ * Every bordered layout used to carry a `style-layer-border` `image` node, stretched full-viewport
+ * via object-fit: fill exactly like the leather background above. That's fine for a plain texture,
+ * but a border PNG's whole point is its frame — object-fit: fill stretches the frame's corners and
+ * straight edges by whatever non-uniform factor the viewport's current aspect ratio happens to
+ * produce, so a corner medallion or a straight edge could warp differently on every resize.
+ *
+ * border-image fixes this the standard way: border-image-slice marks off a fixed-size region from
+ * each edge of the *source* image; border-image-width sets the *rendered* on-screen thickness of
+ * that region (independent of the slice's own source-pixel size). The four corner regions render
+ * at that fixed thickness, never stretched along their own length; only the straight edge segments
+ * between corners stretch, and each one stretches along a single axis only (top/bottom edges scale
+ * horizontally, left/right edges scale vertically) — the "edges only stretch in a single direction"
+ * behavior asked for. All six bordered layouts (setup included, even though it has no progress bar)
+ * now share the exact same border-image-slice/-width — a deliberate simplification over each
+ * border having its own individually-measured values: it means every corner scales *uniformly*
+ * (both slice and width are single fixed numbers, not a different vh for top/bottom vs vw for
+ * left/right), so there's no per-axis corner distortion left at all, and — just as importantly —
+ * it lets the round progress bar (below) use one shared calc() formula referencing this same fixed
+ * border-image-width across narration/introduction/hub_*, instead of needing per-layout position
+ * math for each border's own individually-measured frame thickness. The tradeoff: a border whose
+ * own art doesn't actually have this exact frame thickness gets a *slightly* cropped or padded
+ * slice relative to its native proportions — accepted deliberately for the positioning simplicity,
+ * per this session's visual pass across every layout using it.
+ *
+ * This needs to be a pseudo-element, not the existing image node, because border-image and an
+ * `<img>`'s own `src` content don't mix: an `<img>` always paints its own bitmap (via object-fit)
+ * in its content-box *in addition to* whatever border-image renders around it, so simply adding
+ * border-image to the old layer-border node would show a second, still-distorted copy of the same
+ * artwork squeezed into the interior. A `::after` with `content: ''` has no content-box bitmap of
+ * its own to fight with — it only ever paints what border-image (and background, if any) give it.
+ * The old `style-layer-border` image nodes have been removed from every layout .mws.yaml; this
+ * pseudo-element owns the border going forward. Position/sizing/z-index is identical to what the
+ * removed image node used (`position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: 1`),
+ * so nothing about where the frame sits changed — only how its own pixels get mapped onto that
+ * box. Only border-image-source differs per layout (below) — everything else is shared. */
+.mws-passage.layout-player_setup::after,
+.mws-passage.layout-narration::after,
+.mws-passage.layout-introduction::after,
+.mws-passage.layout-hub_early::after,
+.mws-passage.layout-hub_middle::after,
+.mws-passage.layout-hub_late::after,
+.mws-passage.layout-score_panel::after,
+.mws-passage.layout-ranking::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    pointer-events: none;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 7.8% 4.2% fill;
+    border-image-width: 42px 40px;
+}
+
+.mws-passage.layout-player_setup::after {
+    border-image-source: url(image://borders/main);
+}
+
+.mws-passage.layout-narration::after {
+    border-image-source: url(image://borders/narration_normal);
+}
+
+.mws-passage.layout-introduction::after {
+    border-image-source: url(image://borders/narration_intro);
+}
+
+.mws-passage.layout-hub_early::after {
+    border-image-source: url(image://borders/hub_red);
+}
+
+.mws-passage.layout-hub_middle::after {
+    border-image-source: url(image://borders/hub_blue);
+}
+
+.mws-passage.layout-hub_late::after {
+    border-image-source: url(image://borders/hub_brown);
+}
+
+.mws-passage.layout-score_panel::after,
+.mws-passage.layout-ranking::after {
+    border-image-source: url(image://borders/main);
+}
+
+.mws-passage.layout-player_setup .mws-passage-header,
+.mws-passage.layout-narration .mws-passage-header,
+.mws-passage.layout-introduction .mws-passage-header,
+.mws-passage.layout-hub_early .mws-passage-header,
+.mws-passage.layout-hub_middle .mws-passage-header,
+.mws-passage.layout-hub_late .mws-passage-header,
+.mws-passage.layout-score_panel .mws-passage-header,
+.mws-passage.layout-ranking .mws-passage-header {
+    flex-shrink: 0;
+    text-align: center;
+    z-index: 1;
+    margin-bottom: 0.75rem;
+    margin-top: 0;
+}
+
+.mws-passage.layout-player_setup .mws-passage-title {
+    font-size: 2.5em;
+    letter-spacing: 0.05em;
+    text-shadow: 4px 6px 4px rgba(0, 0, 0, 0.8);
+    color: #ffbc53;
+}
+
+/* Embossed/carved-metal look, matching the reference title bars — -webkit-text-stroke gives a
+   crisp dark outline (well-supported in the Chromium/WebView2 targets this app actually runs in;
+   text just loses the stroke on a browser without it, still readable), text-shadow adds depth. */
+.mws-passage.layout-narration .mws-passage-title,
+.mws-passage.layout-introduction .mws-passage-title,
+.mws-passage.layout-hub_early .mws-passage-title,
+.mws-passage.layout-hub_middle .mws-passage-title,
+.mws-passage.layout-hub_late .mws-passage-title,
+.mws-passage.layout-score_panel .mws-passage-title,
+.mws-passage.layout-ranking .mws-passage-title {
+    font-size: 1.6em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #828C93;
+    opacity: 1;
+    text-shadow: 0.04em -0.04em 0.04em rgba(255, 255, 255, 0.8),
+        -0.1em 0 0 #111, 0.1em 0 0 #111, 0 -0.15em 0 #111, 0 0.1em 0 #111,
+        -0.1em -0.1em 0 #111, 0.1em -0.1em 0 #111, -0.1em 0.1em 0 #111, 0.1em 0.1em 0 #111
+}
+
+.mws-passage.layout-narration .mws-passage-subtitle,
+.mws-passage.layout-introduction .mws-passage-subtitle,
+.mws-passage.layout-hub_early .mws-passage-subtitle,
+.mws-passage.layout-hub_middle .mws-passage-subtitle,
+.mws-passage.layout-hub_late .mws-passage-subtitle,
+.mws-passage.layout-score_panel .mws-passage-subtitle {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #828C93;
+    opacity: 1;
+    text-shadow:
+        -0.1em 0 0 #111, 0.1em 0 0 #111, 0 -0.15em 0 #111, 0 0.1em 0 #111,
+        -0.1em -0.1em 0 #111, 0.1em -0.1em 0 #111, -0.1em 0.1em 0 #111, 0.1em 0.1em 0 #111
+}
+
+/* The one scrollable region (setup only — narration/introduction's own .mws-passage-body is
+   position: fixed below, not a flex participant) — flex: 1 claims whatever's left after the header
+   inside the fixed 100vh box, and overflow-y: auto engages if a given setup passage's full content
+   is taller than that. */
+.mws-passage.layout-player_setup .mws-passage-body {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    text-align: center;
+    padding: 0.75em 12px 3em;
+}
+
+/* hub_early/middle/late: same flex-based scroll region as `setup` above (not the fixed-box-
+   matched-to-a-parchment-image technique narration/introduction use, §1.7) — there's no separate
+   panel image to keep aligned here, just a left-aligned vertical stack of individually-framed
+   hub-card sections (below) sitting directly over the leather background. The border layer still
+   paints in front of this in document/stacking order (it's position: fixed + z-index: 1, this is
+   plain in-flow content) exactly like it already does over `setup`'s body — harmless since the
+   border art is transparent everywhere except its own opaque frame edges, which the outer vh/vw
+   padding above already keeps content clear of. */
+.mws-passage.layout-hub_early .mws-passage-body,
+.mws-passage.layout-hub_middle .mws-passage-body,
+.mws-passage.layout-hub_late .mws-passage-body {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    text-align: left;
+    color: white;
+    padding: 0.5em 12px 3em;
+}
+
+/* panel_parchment.png used to be its own image node (layouts/narration.mws.yaml), not a CSS
+   background on .mws-passage-body — the asset has a real transparent gutter + drop-shadow baked
+   into its own canvas. Using it as background-size: 100% 100% on a flow-positioned,
+   percentage-width, flex-height box meant that gutter resized by a different factor on each axis
+   as the window changed shape, compounding with the box's own padding/margins. border-image fixes
+   it the same way the outer border above does: the gutter/shadow slice renders at a fixed
+   thickness regardless of box size, only the flat straight runs between corners stretch (each
+   along one axis only). Kept as its own pseudo-element (not merged into .mws-passage-body's own
+   border) so .mws-passage-body's box — already screenshot-approved — doesn't need to change
+   structurally, just swap units alongside it (see that rule's own comment). Fixed px, not vh/vw,
+   for the same reason the outer border/padding moved to px above — this box's own thickness and
+   the outer border's are meant to read as consistent, and a vh/vw box paired with a now-px-based
+   border would drift out of sync with it as the viewport resized. z-index: 0 — above the leather
+   background (-1), below the border (1) and the text content (see .mws-passage-body's own z-index
+   below). border-width here is independent of .mws-passage-body's own inset below — it only
+   controls how thick the parchment texture's own gutter renders. */
+.mws-passage.layout-narration::before,
+.mws-passage.layout-introduction::before {
+    content: '';
+    position: fixed;
+    top: 85px;
+    bottom: 25px;
+    left: 36px;
+    right: 36px;
+    z-index: 0;
+    pointer-events: none;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0;
+    border-image-source: url(image://backgrounds/panel_parchment);
+    border-image-slice: 8% fill;
+    border-image-width: 25px;
+    border-image-repeat: stretch;
+}
+
+/* Independent of the parchment pseudo-element above (not the same box — that one is purely
+   decorative background art; this is the real text-safe area) — padding was never used here, this
+   box's own inset already sits within the parchment's solid-paper area. Fixed px, not vh/vw, same
+   reasoning as the parchment box and the outer border/padding above — this box, the parchment
+   behind it, and the border around both are all meant to track together at a fixed thickness now,
+   not scale independently with the viewport. z-index: 1 puts text above the parchment
+   pseudo-element (0) — still below the border (also 1, but the border image has no readable
+   content of its own to be occluded by text, and in practice doesn't overlap this box). Values
+   here are a starting-point estimate, not pixel-exact — tune here if either this or the parchment
+   box above change. */
+.mws-passage.layout-narration .mws-passage-body,
+.mws-passage.layout-introduction .mws-passage-body {
+    position: fixed;
+    top: 145px;
+    bottom: 70px;
+    left: 85px;
+    right: 75px;
+    padding-bottom: 3em;
+    z-index: 1;
+    overflow-y: auto;
+    text-align: left;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(208, 192, 166, 1.00) rgba(63, 31, 21, 1.00);
+}
+
+/* Bracket-wrapped inline links (§1.6) — brown on any parchment surface. Covers both plain `link`
+   nodes (.mws-link) and click-triggered popups (.mws-popup-trigger — a separate class, not
+   .mws-link, per RenderedPopupView.razor) so a popup trigger reads identically to a regular link.
+   Real examples of the latter inside narration exist already: Showcase_Popup_RevealCountdown.
+   mws.yaml's "Start the Reveal" popup renders as a .mws-popup-trigger button inline in narration
+   content (the setup/end_of_round/end_of_generation/prompt/choice popup demos moved onto
+   Example_Entry itself, a hub_early passage, so they exercise the blue hub bracket rule below
+   instead — see that block's own comment).
+   Brackets are ::before/::after pseudo-elements (bracket-brown-{left,right}.png, own aspect ratio
+   53:92 ≈ 0.42:1 preserved via background-size: 100% 100% on a box already cut to that ratio) —
+   absolutely positioned within the link's own padding so they don't affect its text layout/line
+   height. text-decoration: none — the brackets alone signal "this is a link", no underline needed
+   (matches the reference screenshots). No :visited state per the style notes.
+
+   The ancestor part of every selector below is wrapped in :where(...) — that makes it contribute
+   zero specificity, so the bracket treatment is exactly as specific as a bare `.mws-link` and a
+   more specific `.mws-link.style-button`/`.style-btn-*` link naturally wins instead of being
+   silently overridden by it. That alone isn't enough, though: :where() only fixes *conflicting*
+   properties (color, display, ...) — it does nothing about the ::before/::after bracket
+   pseudo-elements, which are a completely separate selector the button rule never touches, so a
+   `.style-button`/`.style-btn-*` link was still getting brackets glued onto its own graphical
+   button art on top of everything else. `:not(.style-button):not(.style-btn-brown):not
+   (.style-btn-green):not(.style-btn-red)` on `.mws-link` (`:not(.style-btn-forward):not
+   (.style-countdown-trigger)` on `.mws-popup-trigger` — the ending's own floating round arrow
+   button, and countdown_action's own "Start Bidding" trigger nested inside a countdown_instructions
+   popup hosted on a narration passage; see the "Ending narration" block near the end of this file
+   and the countdown_action block further up) excludes those variants from every rule here,
+   brackets included — a graphical button never wants inline brackets regardless of specificity.
+   Note this exclusion only works at all because RenderedPopupView.razor now puts
+   `style-@Node.Style` on the closed-state trigger button too, not just the open overlay div — a
+   real gap fixed alongside this layout's own work (see the code repo's own commit). */
+:where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red),
+:where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-popup-trigger:not(.style-btn-forward):not(.style-countdown-trigger) {
+    display: inline;
+    position: relative;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0 0.75em;
+    font: inherit;
+    color: #8b4a1f;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+:where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red)::before,
+:where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-popup-trigger:not(.style-btn-forward):not(.style-countdown-trigger)::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.8em;
+    height: 1.5em;
+    background-image: url(image://inputs/bracket-brown-left);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+:where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red)::after,
+:where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-popup-trigger:not(.style-btn-forward):not(.style-countdown-trigger)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.8em;
+    height: 1.5em;
+    background-image: url(image://inputs/bracket-brown-right);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+:where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red):hover:not(:disabled),
+:where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-popup-trigger:not(.style-btn-forward):not(.style-countdown-trigger):hover:not(:disabled) {
+    color: #b06a35;
+}
+
+:where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red):active:not(:disabled),
+:where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-popup-trigger:not(.style-btn-forward):not(.style-countdown-trigger):active:not(:disabled) {
+    color: #5c3216;
+}
+
+/* Layout wrapper only, not a scroll region (see .mws-passage-body above) — groups the three
+   player-count buttons (inline-flex, natural inline wrapping) as a block, so on narrow they wrap
+   2-per-row inside it instead of each becoming an individual flex item of .mws-passage-body (one
+   per row). */
+.mws-section.style-setup-choices {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* ── Round progress bar (narration/introduction/hub_early/middle/late, §1.4) ──────────────────
+ * Both layers are position: fixed against the true viewport, same as the border itself, so they
+ * stay aligned with the border's built-in bottom cutout regardless of .mws-passage-body's own
+ * scroll position. z-index: 0 sits between the background layer (-1) and the border layer (1), so
+ * the border's own frame (which slightly overlaps the cutout's edges) still paints on top of both.
+ *
+ * left/width use calc((100vw - Npx) / 100vw * Xvw + Ypx) rather than a plain `Xvw + Ypx`, because
+ * every border below now renders at the same fixed border-image-width (px, not vh/vw — see the
+ * outer-border rule above) regardless of viewport size. The bar has to sit within the border's own
+ * fixed-width inner cutout, not just "X% across the viewport" — plain vw math would drift out from
+ * under the cutout as the viewport got narrower (the border's own fixed-px margin becomes a bigger
+ * proportion of a smaller viewport, but a pure-vw bar position wouldn't account for that). The
+ * `(100vw - Npx) / 100vw` factor rescales the usual vw-based proportion down to the viewport's
+ * *remaining* width after subtracting the border's fixed margins, and the trailing `+ Ypx` shifts
+ * it in from the true edge by that same fixed margin — together they keep the bar's position
+ * *relative to the border's own inner edge* constant regardless of viewport size, the same way a
+ * pure vh/vw value keeps something relative to the *whole viewport* constant. N/Y differ slightly
+ * between hub_* (80px/40px, matching the shared border-image-width) and narration/introduction
+ * (75px/37.5px, tuned separately — same border-image-width, but the bar's own cutout position
+ * within it isn't pixel-identical between the border assets) — see the override below.
+ *
+ * progress/background.png is one wide strip pre-divided into 3 equal color segments (green/amber/
+ * red, one per generation) — clip-path reveals width proportional to roundNum out of 9 total
+ * rounds (round N reveals N/9 of the bar), not tied to the color-segment boundaries directly (they
+ * happen to land on exact thirds anyway, since 9 rounds / 3 generations = 3 rounds each).
+ *
+ * Label overlays (progress/{label}-{glow,diffuse}.png) are square (128×128) — the same calc()
+ * technique sizes/positions each one so it tracks the border's fixed-width inner cutout the same
+ * way the bar itself does. -glow = current round, -diffuse = a passed round; a round not yet
+ * reached renders no image node at all (see the layout .mws.yaml's conditionals). */
+.mws-passage.layout-narration .mws-image[class*="style-progress-bg-"],
+.mws-passage.layout-introduction .mws-image[class*="style-progress-bg-"],
+.mws-passage.layout-hub_early .mws-image[class*="style-progress-bg-"],
+.mws-passage.layout-hub_middle .mws-image[class*="style-progress-bg-"],
+.mws-passage.layout-hub_late .mws-image[class*="style-progress-bg-"] {
+    position: fixed;
+    left: calc((100vw - 80px) / 100vw * 20vw + 40px);
+    width: calc((100vw - 80px) / 100vw * 60vw);
+    height: 20px;
+    bottom: 11px;
+    z-index: 0;
+    object-fit: fill;
+    pointer-events: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* hub_early/middle/late use the base rule's 80px-based formula as-is (nothing to override); only
+   narration/introduction differ, by 5px — kept as an explicit override rather than folded into the
+   base rule since it's real, deliberate per-border tuning (the frame width is now uniform across
+   every layout, but the bar's own cutout position within that frame isn't pixel-identical between
+   hub_*.png and narration_normal.png/narration_intro.png). */
+.mws-passage.layout-narration .mws-image[class*="style-progress-bg-"],
+.mws-passage.layout-introduction .mws-image[class*="style-progress-bg-"] {
+    left: calc((100vw - 75px) / 100vw * 20vw + 37.50px);
+    width: calc((100vw - 75px) / 100vw * 60vw);
+}
+
+.mws-passage.layout-narration .mws-image[class*="style-progress-label-"],
+.mws-passage.layout-introduction .mws-image[class*="style-progress-label-"],
+.mws-passage.layout-hub_early .mws-image[class*="style-progress-label-"],
+.mws-passage.layout-hub_middle .mws-image[class*="style-progress-label-"],
+.mws-passage.layout-hub_late .mws-image[class*="style-progress-label-"] {
+    position: fixed;
+    bottom: 8px;
+    height: 26px;
+    width: calc((100vw - 80px) / 100vw * 6.6vw);
+    z-index: 0;
+    object-fit: contain;
+    pointer-events: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mws-image.style-progress-bg-1 { clip-path: inset(0 88.89% 0 0); }
+.mws-image.style-progress-bg-2 { clip-path: inset(0 77.78% 0 0); }
+.mws-image.style-progress-bg-3 { clip-path: inset(0 66.67% 0 0); }
+.mws-image.style-progress-bg-4 { clip-path: inset(0 55.56% 0 0); }
+.mws-image.style-progress-bg-5 { clip-path: inset(0 44.44% 0 0); }
+.mws-image.style-progress-bg-6 { clip-path: inset(0 33.33% 0 0); }
+.mws-image.style-progress-bg-7 { clip-path: inset(0 22.22% 0 0); }
+.mws-image.style-progress-bg-8 { clip-path: inset(0 11.11% 0 0); }
+.mws-image.style-progress-bg-9 { clip-path: inset(0 0% 0 0); }
+
+.mws-image.style-progress-label-1 { left: calc((100vw - 80px) / 100vw * 20vw + 40px) }
+.mws-image.style-progress-label-2 { left: calc((100vw - 80px) / 100vw * 26.7vw + 40px) }
+.mws-image.style-progress-label-3 { left: calc((100vw - 80px) / 100vw * 33.2vw + 40px) }
+.mws-image.style-progress-label-4 { left: calc((100vw - 80px) / 100vw * 40.2vw + 40px) }
+.mws-image.style-progress-label-5 { left: calc((100vw - 80px) / 100vw * 46.8vw + 40px) }
+.mws-image.style-progress-label-6 { left: calc((100vw - 80px) / 100vw * 53.2vw + 40px) }
+.mws-image.style-progress-label-7 { left: calc((100vw - 80px) / 100vw * 59.9vw + 40px) }
+.mws-image.style-progress-label-8 { left: calc((100vw - 80px) / 100vw * 66.5vw + 40px) }
+.mws-image.style-progress-label-9 { left: calc((100vw - 80px) / 100vw * 73.1vw + 40px) }
+
+/* ── Narrow viewport (§1.1's alternate treatment) ─────────────────────────
+ * Below the app's existing 48rem breakpoint — only what genuinely differs from wide (everything
+ * else, including the fixed chrome and the scroll architecture above, is already unconditional):
+ * side/bottom padding drop to 0 (top clearance for the chrome bar stays); setup's body needs
+ * `align-items: center` because a flex container ignores `text-align` (that only centers inline
+ * content inside a block box), so flex's own default (`align-items: stretch`, which degrades to
+ * `flex-start` for children with an explicit width, like the buttons) would otherwise left-align
+ * everything — narration/introduction/hub_* don't need this (their bodies are plain block content,
+ * no inline-flex buttons to mis-align); and the border crops its left/right 20% and stretches the
+ * remaining 60% to fill the width, hiding the side posts so only the top/bottom bars show — 20% is
+ * a starting point, tune here, or switch to real pre-cropped top/bottom assets later if the
+ * stretch looks soft.
+ *
+ * The progress-bar layer (narration/introduction/hub_*) needs its own recomputed position here:
+ * it's a separate image from the border, so scaling the border via transform doesn't move it to
+ * match — the numbers below are the same 20%-crop/60%-stretch scaleX(1.6667) math applied to the
+ * wide-mode tray position/cell centers from above (new = 50% + (old - 50%) × 1.6667), so the bar
+ * and its labels re-align with where the now-stretched border's cutout actually ends up. Doubly a
+ * starting point — tune together with the border crop percentage above if either changes. */
+@media (max-width: 45.99rem) {
+    .mws-passage.layout-player_setup {
+        padding: 50px 0 25px;
+    }
+
+    .mws-passage.layout-narration,
+    .mws-passage.layout-introduction,
+    .mws-passage.layout-hub_early,
+    .mws-passage.layout-hub_middle,
+    .mws-passage.layout-hub_late {
+        padding: 50px 0 40px;
+    }
+
+    .mws-passage.layout-score_panel,
+    .mws-passage.layout-ranking {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .mws-passage.layout-player_setup .mws-passage-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mws-passage.layout-narration::before,
+    .mws-passage.layout-introduction::before {
+        left: 0;
+        right: 0;
+        width: 100vw - 72px;
+    }
+
+    .mws-passage.layout-narration .mws-passage-body,
+    .mws-passage.layout-introduction .mws-passage-body {
+        left: 49px;
+        right: 39px;
+    }
+
+    /* transform applies to the already-rendered box (border-image included) the same way it did to
+       the old <img> — the crop-and-stretch trick doesn't care how the border's own pixels got onto
+       the box, just retargeted from the removed .style-layer-border image node to the ::after
+       pseudo-element that replaced it (see the outer-border rule above). */
+    .mws-passage.layout-player_setup::after,
+    .mws-passage.layout-narration::after,
+    .mws-passage.layout-introduction::after,
+    .mws-passage.layout-hub_early::after,
+    .mws-passage.layout-hub_middle::after,
+    .mws-passage.layout-hub_late::after,
+    .mws-passage.layout-score_panel::after,
+    .mws-passage.layout-ranking::after {
+        transform: scaleX(1.6667);
+    }
+
+    .mws-passage.layout-narration .mws-image[class*="style-progress-bg-"],
+    .mws-passage.layout-introduction .mws-image[class*="style-progress-bg-"],
+    .mws-passage.layout-hub_early .mws-image[class*="style-progress-bg-"],
+    .mws-passage.layout-hub_middle .mws-image[class*="style-progress-bg-"],
+    .mws-passage.layout-hub_late .mws-image[class*="style-progress-bg-"] {
+        width: calc((100vw - 80px) / 100vw * 100vw);
+        left: calc((100vw - 80px) / 100vw * 0vw + 40px);
+    }
+
+    .mws-passage.layout-narration .mws-image[class*="style-progress-label-"],
+    .mws-passage.layout-introduction .mws-image[class*="style-progress-label-"],
+    .mws-passage.layout-hub_early .mws-image[class*="style-progress-label-"],
+    .mws-passage.layout-hub_middle .mws-image[class*="style-progress-label-"],
+    .mws-passage.layout-hub_late .mws-image[class*="style-progress-label-"] {
+        width: calc((100vw - 80px) / 100vw * 11.5vw);
+    }
+
+    .mws-image.style-progress-label-1 { left: calc((100vw - 80px) / 100vw * -0.2vw + 40px) }
+    .mws-image.style-progress-label-2 { left: calc((100vw - 80px) / 100vw * 10.9vw + 40px) }
+    .mws-image.style-progress-label-3 { left: calc((100vw - 80px) / 100vw * 21.9vw + 40px) }
+    .mws-image.style-progress-label-4 { left: calc((100vw - 80px) / 100vw * 33.1vw + 40px) }
+    .mws-image.style-progress-label-5 { left: calc((100vw - 80px) / 100vw * 44.3vw + 40px) }
+    .mws-image.style-progress-label-6 { left: calc((100vw - 80px) / 100vw * 55.0vw + 40px) }
+    .mws-image.style-progress-label-7 { left: calc((100vw - 80px) / 100vw * 66.1vw + 40px) }
+    .mws-image.style-progress-label-8 { left: calc((100vw - 80px) / 100vw * 77.2vw + 40px) }
+    .mws-image.style-progress-label-9 { left: calc((100vw - 80px) / 100vw * 88.2vw + 40px) }
+}
+
+/* Darkened, semi-transparent alert row with gold text (screenshot: Setup-03) — {icon:alert} +
+   "Carefully pass the storybook to Player X". margin-top: 8vh (not a fixed rem/em) offsets it a
+   consistent *proportion* of the viewport below the top border bar regardless of screen height —
+   the border art is itself viewport-fixed and scales with vh, so an offset in the same unit stays
+   visually anchored to it instead of drifting relative to the border as the screen gets taller. */
+.mws-text.style-setup-alert {
+    display: block;
+    margin-top: 3vh;
+    background: rgba(0, 0, 0, 0.45);
+    color: #e8c97a;
+    padding: 0.6em 1em;
+    border-radius: 0.3rem;
+}
+
+/* Separate text node for an input's visible label (format spec: label is optional on `input`,
+   "omit when a module renders the visible label itself as a separate text node beside the field
+   instead") — lets the label text wrap at the body's own (now much wider) max-width instead of
+   being squeezed inside .style-setup-input's narrower max-width alongside the field itself. */
+.mws-text.style-setup-input-label {
+    display: block;
+    color: #e8dcc8;
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+.mws-input {
+  background: none;
+}
+
+/* background: none overrides app.css's base .mws-input { background: #f0f0f0 } — this rule (being
+   more specific) wins for every OTHER property already, but background was never actually set
+   here, so that base gray/white fill was quietly showing through around the input. */
+.mws-input.style-setup-input {
+    display: block;
+    margin: 0.75em auto;
+    width: 22rem;
+    max-width: 90%;
+}
+
+.mws-input.style-setup-input input {
+    display: block;
+    width: 100%;
+    margin-top: 0.35em;
+    padding: 0.6em 0.9em;
+    box-sizing: border-box;
+    text-align: center;
+    background-image: url(image://inputs/input_large);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #F2B781;
+    font-family: 'Averia Libre', serif;
+    font-size: 1.1em;
+}
+
+/* Player-count picker buttons (screenshot: Setup-01) — the players_N.png asset fills the entire
+   button (a ::before pseudo-element sized to the button's own full width, no color fill behind
+   it), with the "N Players" label — the link's real text content — flowing below it as a separate
+   flex row, not overlaid on the image. */
+.mws-link.style-btn-players-2,
+.mws-link.style-btn-players-3,
+.mws-link.style-btn-players-4 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 9rem;
+    margin: 0.5em;
+    padding: 0;
+    background: none;
+    border: none;
+    color: #ffbc53;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.12s ease, opacity 0.12s ease;
+}
+
+/* transform/opacity only — never width/height/padding — so the shrink is purely visual and never
+   reflows the other two buttons or the label text sitting below this one. */
+.mws-link.style-btn-players-2:active:not(:disabled),
+.mws-link.style-btn-players-3:active:not(:disabled),
+.mws-link.style-btn-players-4:active:not(:disabled) {
+    transform: scale(0.85);
+    opacity: 0.75;
+}
+
+.mws-link.style-btn-players-2::before,
+.mws-link.style-btn-players-3::before,
+.mws-link.style-btn-players-4::before {
+    content: '';
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 0.4em;
+}
+
+/* Hover text color sampled directly from the players_N.png icon fill (#ffbc53) rather than a
+   guessed gold, so the label and the icon read as the same color family on hover. */
+.mws-link.style-btn-players-2:hover:not(:disabled),
+.mws-link.style-btn-players-3:hover:not(:disabled),
+.mws-link.style-btn-players-4:hover:not(:disabled) {
+    color: #ffff71;
+}
+
+.mws-link.style-btn-players-2:hover:not(:disabled)::before,
+.mws-link.style-btn-players-3:hover:not(:disabled)::before,
+.mws-link.style-btn-players-4:hover:not(:disabled)::before {
+    filter: brightness(1.35);
+}
+
+.mws-link.style-btn-players-2::before { background-image: url(image://inputs/players_2); }
+.mws-link.style-btn-players-3::before { background-image: url(image://inputs/players_3); }
+.mws-link.style-btn-players-4::before { background-image: url(image://inputs/players_4); }
 
 /* ── Popup layouts ───────────────────────────────────────────────────────── */
-/* end_of_generation still renders through the app's generic flat chrome — only setup has the full
-   torn-paper-note treatment below. */
 
-.mws-popup-overlay.layout-end_of_generation > * {
-    border: 2px solid #7c3aed;
-    background: #f5f0ff;
-    max-width: 40rem;
+/* Pressed state for every popup Okay/Cancel button, regardless of which graphical style (green/
+   brown/red) a given layout uses — same shrink/fade as the player-count buttons (transform/opacity
+   only, never width/height, so it can't reflow anything around it). General, not layout-scoped, so
+   new popup layouts get this for free. */
+.mws-popup-okay,
+.mws-popup-cancel {
+    transition: transform 0.12s ease, opacity 0.12s ease;
 }
 
-/* setup: a torn-paper note pinned to the passage, composed from three chrome images
-   (assets/images/popup/) plus whatever image the extractor placed in the popup's own header
-   (assets/images/setup/ — see PopupNode.Header in docs/mws-format-latest.md). The app itself never
-   looks at any of this; .mws-popup-header/-content/-footer are just the generic structural regions
-   RenderedPopupView.razor always renders, and this is the module deciding what they look like.
-   Positioning here is a best-effort match against the reference app screenshots — no browser
-   available while authoring this, so it's expected to need a visual tuning pass. */
+.mws-popup-okay:active:not(:disabled),
+.mws-popup-cancel:active:not(:disabled) {
+    transform: scale(0.85);
+    opacity: 0.75;
+}
+
+/* Button text always uses the display face, matching titles/subtitles (§1.5). */
+.mws-popup-okay,
+.mws-popup-cancel {
+    font-family: 'Germania One', 'Averia Gruesa Libre', 'Averia Libre', serif;
+}
+
+/* ── Standard graphical buttons (brown/green/red) ─────────────────────────
+ * Shared by every "standard rectangular" graphical button — popup Okay buttons that use this
+ * shape (note/note_clear, setup, end_of_round/end_of_generation, prompt, choice), every popup's
+ * Cancel button (unscoped by layout — Cancel is always red, "unless otherwise noted" per the
+ * reference style notes, so one rule covers it everywhere rather than repeating per layout), and
+ * any inline `link` styled as one (setup passage's Continue, style: 'btn-brown'/'btn-green'/
+ * 'btn-red'). NOT applied to popup buttons with their own distinct shape (game_complete's circular
+ * close, countdown_action's invisible full-viewport one).
+ *
+ * Sizing is rem-based, not em: an em value compounds against whatever ambient font-size the
+ * *hosting* layout happens to use (a popup's own 0.8em vs. a passage's own 1.6em, etc.), so the
+ * same button would render at different sizes in a popup vs. inline in a passage. rem ties sizing
+ * to the true root font-size only, so every standard button is visually identical everywhere it's
+ * used — matches this file's own font-scaling convention (rem reserved for chrome that shouldn't
+ * grow with body text). Color/background-image are the only things each variant sets itself. */
+.mws-popup-overlay.layout-note .mws-popup-okay,
+.mws-popup-overlay.layout-note_clear .mws-popup-okay,
+.mws-popup-overlay.layout-setup .mws-popup-okay,
+.mws-popup-overlay.layout-end_of_round .mws-popup-okay,
+.mws-popup-overlay.layout-end_of_generation .mws-popup-okay,
+.mws-popup-overlay.layout-prompt .mws-popup-okay,
+.mws-popup-overlay.layout-choice .mws-popup-okay,
+.mws-popup-cancel,
+.mws-link.style-btn-brown,
+.mws-link.style-btn-green,
+.mws-link.style-btn-red {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 13rem;
+    aspect-ratio: 17 / 6;
+    flex-shrink: 0;
+    padding: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    appearance: none;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.mws-popup-overlay.layout-note .mws-popup-okay,
+.mws-popup-overlay.layout-note_clear .mws-popup-okay,
+.mws-popup-overlay.layout-prompt .mws-popup-okay,
+.mws-popup-overlay.layout-choice .mws-popup-okay,
+.mws-link.style-btn-brown {
+    background-image: url(image://inputs/button_brown);
+    color: #2b2016;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.mws-popup-overlay.layout-setup .mws-popup-okay,
+.mws-popup-overlay.layout-end_of_round .mws-popup-okay,
+.mws-popup-overlay.layout-end_of_generation .mws-popup-okay,
+.mws-link.style-btn-green {
+    background-image: url(image://inputs/button_green);
+    color: #152218;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.mws-popup-cancel,
+.mws-link.style-btn-red {
+    background-image: url(image://inputs/button_red);
+    color: #2b0d0d;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+}
+
+/* Explicit :hover color (not just a filter) on every variant — without this, app.css's own
+   .mws-link:hover:not(:disabled) rule (higher specificity: an extra :hover/:not pseudo-class) wins
+   over a plain .style-btn-brown color declaration, silently replacing it with the default link
+   hover blue. Popup Okay/Cancel buttons aren't `.mws-link` at all so were never affected — only
+   the btn-brown/green/red *link* variants needed this. */
+.mws-popup-overlay.layout-note .mws-popup-okay:hover:not(:disabled),
+.mws-popup-overlay.layout-note_clear .mws-popup-okay:hover:not(:disabled),
+.mws-popup-overlay.layout-setup .mws-popup-okay:hover:not(:disabled),
+.mws-popup-overlay.layout-end_of_round .mws-popup-okay:hover:not(:disabled),
+.mws-popup-overlay.layout-end_of_generation .mws-popup-okay:hover:not(:disabled),
+.mws-popup-overlay.layout-prompt .mws-popup-okay:hover:not(:disabled),
+.mws-popup-overlay.layout-choice .mws-popup-okay:hover:not(:disabled),
+.mws-popup-cancel:hover:not(:disabled),
+.mws-link.style-btn-brown:hover:not(:disabled),
+.mws-link.style-btn-green:hover:not(:disabled),
+.mws-link.style-btn-red:hover:not(:disabled) {
+    filter: brightness(1.15);
+}
+
+.mws-link.style-btn-brown:hover:not(:disabled) { color: #2b2016; }
+.mws-link.style-btn-green:hover:not(:disabled) { color: #152218; }
+.mws-link.style-btn-red:hover:not(:disabled),
+.mws-popup-cancel:hover:not(:disabled) { color: #2b0d0d; }
+
+/* note / note_clear: simple torn-parchment message popup (screenshots: Setup-02/04/06) —
+   header-free, just body text and a single brown Continue button. Distinct from `setup` (popup,
+   below), which has an icon/pin illustration and a different background asset.
+
+   Two variants sharing every rule below except the backdrop: `note` keeps the standard darkened
+   backdrop (app.css's .mws-popup-overlay background); `note_clear` (see the override at the end of
+   this block) strips it to transparent — for the player-setup passages, where the popup shows over
+   an already-empty `setup`-layout passage (no meaningful content underneath to dim/focus away
+   from), matching Module-04B's "auto-show over empty passage" screenshot. */
+.mws-popup-overlay.layout-note .mws-popup-container,
+.mws-popup-overlay.layout-note_clear .mws-popup-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 50vh;
+    max-width: 550px;
+    height: auto;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0;
+    border-image-source: url(image://backgrounds/popup_paper_torn);
+    border-image-slice: 15.6% 7% 22.5% 7% fill;
+    border-image-width: 47px 45px 69px 45px;
+    border-image-repeat: stretch;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    color: #410404;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Narrow: pinned a fixed percent from the top (position: absolute against the fixed overlay,
+   which already establishes a containing block) instead of vertically centered, so position
+   doesn't jump around as content length changes. No fixed aspect-ratio — height: auto sizes to
+   content up to the max-height cap; past that, .mws-popup-content's flex: 1 + overflow-y: auto
+   (below) scrolls within it instead of growing the box past the visible area. Horizontally
+   centered via left/right insets, not left: 50% + transform — a transform here would make this
+   element the containing block for the footer's position: fixed below, hijacking it away from the
+   real viewport. 6% top / 90vh cap / 2% side insets are starting points, tune here. */
+@media (max-width: 45.99rem) {
+    .mws-popup-overlay.layout-note .mws-popup-container,
+    .mws-popup-overlay.layout-note_clear .mws-popup-container {
+        position: absolute;
+        top: 30px;
+        max-height: 50vh;
+        min-width: 94vw;
+        max-width: 94vw;
+    }
+}
+
+/* Small inset so scrolled text never touches the box edges (or the thin scrollbar) — separate from
+   the container's own outer padding, which only guards the unscrolled edges. Narrow gets extra
+   top/bottom clearance via clamp(..., Nvh, ...): the box's own height now scales with viewport
+   height (up to the 90vh cap above), so the torn/ragged portions of the background image stretch
+   more on a taller box than on the wide aspect-ratio-locked one — this keeps the safe text area
+   scaling roughly in step with that stretch instead of a single fixed value that would be too
+   tight on a tall box or too loose on a short one. */
+.mws-popup-overlay.layout-note .mws-popup-content,
+.mws-popup-overlay.layout-note_clear .mws-popup-content {
+    min-height: 25vh;
+    max-height: 50vh;
+    overflow-y: auto;
+    margin: 45px 40px 51px;
+}
+
+/* position: fixed (not absolute) — anchored to the actual browser viewport, not to
+   .mws-popup-container, so the button stays visible and reachable regardless of any scrolling
+   happening inside the (possibly taller-than-viewport) container above it. On a wide-but-shallow
+   container this naturally overlaps the parchment's own bottom edge — fine, matches the reference
+   screenshots where the button hangs off/over the card. */
+.mws-popup-overlay.layout-note .mws-popup-footer,
+.mws-popup-overlay.layout-note_clear .mws-popup-footer {
+    position: fixed;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    justify-content: center;
+    margin: 0;
+    z-index: 1001;
+}
+
+/* The only difference from `note` — no darkened backdrop (see the block comment above). */
+.mws-popup-overlay.layout-note_clear {
+    background: transparent;
+}
+
+/* setup: the real, widely-used-across-modules instructional popup (icon + "SETUP" title +
+   scrollable body + two buttons) — copied from cost-of-disease, not template-specific; this
+   layout_id must stay exactly `setup` (see layouts/setup.mws.yaml's own comment). Modernized this
+   round to match the current bordered-popup approach every other popup on this page now uses:
+   border-image instead of background-size: 100% 100% (popup_parchment_border.png's own gutter is
+   thin and uniform, ~1–1.5% each side, measured — same "keep corners from stretching non-uniformly"
+   reasoning as everywhere else, §1.8), an explicit font-size reset (missing before — §1.7's own
+   rule that every popup layout needs one, silently skipped here until now), and a fixed-viewport
+   footer (position: fixed + transform: translateX(-50%), matching `note`) instead of position:
+   absolute relative to the container, so the buttons stay reachable regardless of how tall the
+   scrollable content area gets instead of drifting with the container's own bottom edge. */
 
 .mws-popup-overlay.layout-setup .mws-popup-container {
     position: relative;
+    top: -5vh;
     width: 100%;
-    max-width: 32rem;
-    min-height: 16rem;
+    max-width: 550px;
+    min-height: 250px;
+    max-height: 60vh;
     height: auto;
     overflow: unset;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 15px;
+    border-image-source: url(image://backgrounds/popup_parchment_border_short);
+    border-image-slice: 6% 4% fill;
+    border-image-width: 20px;
+    border-image-repeat: stretch;
+    box-sizing: border-box;
     background-color: transparent;
-    background-image: url(image://backgrounds/popup_parchment_border);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
     border-radius: 0;
     box-shadow: none;
-    padding: 1.5rem;
-    padding-top: 3.5rem;
+    padding: 1em;
+    padding-top: 2.5em;
+    color: #2b2016;
 }
 
 .mws-popup-overlay.layout-setup .mws-popup-header {
     position: absolute;
-    top: -0.1rem;
-    left: -0.6em;
+    top: -1rem;
+    left: -1em;
     width: 10rem;
     height: 10rem;
     background-image: url(image://popup/setup_icon_background);
@@ -92,16 +1277,12 @@
     content: 'SETUP';
     position: absolute;
     top: 1.5rem;
-    left: 10rem;
+    left: 10.2rem;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.8em;
     color: #1a130c;
 }
 
-/* The extractor-emitted image inside the header (style: 'setup-image') — sized to sit within the
-   setup_icon_background backing. It's an <img>, so it inherits the generic .mws-image rule's
-   background/padding (meant for standalone content images) — that opaque tint was painting over
-   the paperClip backing behind it, which read as the backing "missing"; reset both here. */
 .mws-popup-overlay.layout-setup .mws-image.style-setup-image {
     max-width: 80%;
     max-height: 80%;
@@ -118,65 +1299,30 @@
     color: #2b2016;
     padding-left: 9rem;
 }
-/*
-.mws-popup-overlay.layout-setup .mws-popup-content::before {
-    content: 'SETUP';
-    display: block;
-    font-weight: 700;
-    font-size: 2rem;
-    color: #1a130c;
-    margin-left: -0.8rem;
-    margin-bottom: -0.8rem;
-}
-*/
 
-.mws-popup-overlay.layout-setup .mws-popup-footer {
+.mws-popup-overlay.layout-setup .mws-popup-footer,
+.mws-popup-overlay.layout-end_of_round .mws-popup-footer,
+.mws-popup-overlay.layout-end_of_generation .mws-popup-footer {
     position: absolute;
     left: 50%;
+    bottom: -4em;
     transform: translateX(-50%);
-    bottom: -4.2em;
     justify-content: center;
-    margin-top: 1.25rem;
-}
-
-/* Sized to the buttons's own aspect ratio (aspect-ratio, not a fixed height) so the
-   plaque artwork is never stretched/squashed regardless of font metrics; flex-centers the label so
-   it sits in the middle of the plaque instead of following the button's native text-align. */
-.mws-popup-overlay.layout-setup .mws-popup-okay {
-    background-image: url(image://inputs/button_green);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    appearance: none;
-    color: #152218;
-    font-weight: 700;
-    font-size: 18pt;
-    letter-spacing: 0.1em;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-    width: 13rem;
-    aspect-ratio: 17 / 6;
-    flex-shrink: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    cursor: pointer;
+    margin: 0;
+    z-index: 1001;
 }
 
 /* ── Link styles ──────────────────────────────────────────────────────────── */
 
 /* style: 'button' — used for the player-count picker and other prominent choices, as opposed to
-   the default inline-link treatment. */
+   the default inline-link treatment. Copied as-is from cost-of-disease. */
 .mws-link.style-button {
     display: block;
     width: 100%;
     max-width: 20rem;
-    padding: 0.9rem 1.5rem;
-    margin: 0.35rem 0;
-    font-size: 1.1rem;
+    padding: 0.9em 1.5em;
+    margin: 0.35em 0;
+    font-size: 1.1em;
     font-weight: 600;
     text-align: center;
     border: 1px solid #b8860b;
@@ -186,4 +1332,1240 @@
 
 .mws-link.style-button:hover:not(:disabled) {
     background: #fbe8a6;
+}
+
+/* style: 'btn-brown'/'btn-green'/'btn-red' — same graphical treatment as the popup Okay buttons
+   (structural sizing/color in the "standard graphical buttons" block above), for an inline `link`
+   instead — e.g. setup's player-name-entry Continue. Centered via the parent's own
+   text-align: center. Only what's specific to being a link rather than a popup button lives here:
+   spacing, display font, and its own pressed state (the general .mws-popup-okay/.mws-popup-cancel
+   pressed-state rule doesn't cover .mws-link elements). */
+.mws-link.style-btn-brown,
+.mws-link.style-btn-green,
+.mws-link.style-btn-red {
+    margin-top: 1rem;
+    font-family: 'Germania One', 'Averia Gruesa Libre', 'Averia Libre', serif;
+    transition: transform 0.12s ease, opacity 0.12s ease;
+}
+
+.mws-link.style-btn-brown:active:not(:disabled),
+.mws-link.style-btn-green:active:not(:disabled),
+.mws-link.style-btn-red:active:not(:disabled) {
+    transform: scale(0.85);
+    opacity: 0.75;
+}
+
+/* ── special event overlay (narration passages, "ck2"-tagged in Cradle) ────
+ * The reference app (ViewSpecialEvent) shows this as a transient banner fading in then out over
+ * ~3.5s on top of whatever narration content is already on screen — not a distinct passage
+ * background/border. The old full-bleed `event` layout is retired: a "ck2"-tagged passage is
+ * `narration` now, same as any other (see CradleExtractor.InsertSpecialEventOverlay in the code
+ * repo) — the extractor prepends a single synthesized `text` node (`style: 'special-event'`) to
+ * the passage's own content instead of picking a different layout.
+ *
+ * That text node's own content ("Special Event") is kept for accessibility — a screen reader
+ * still announces it — but visually hidden (`color: transparent`) in favor of the three overlay
+ * images: the center banner as this element's own `background-image`, the two flanking light-beam
+ * lines as `::before`/`::after`. This is the same "background-image + flanking pseudo-elements"
+ * technique the bracket links already use elsewhere in this file, chosen specifically because
+ * `::before`/`::after` don't render on a *replaced* element (an `image` node's `<img>`) — a `text`
+ * node avoids that entirely.
+ *
+ * `position: fixed; inset: 0` makes this a full-viewport layer regardless of where in the
+ * passage's scrollable content it was authored (prepended = renders "first", but fixed
+ * positioning takes it out of flow immediately, leaving no gap) — both for the centered-on-screen
+ * placement the reference shows, and so its own `pointer-events` can block clicks on the rest of
+ * the passage while visible ("non-interactive during the display") without touching every link's
+ * own styling. `z-index: 999` — above the passage's own border/content (≤1) and popups (1000/1001
+ * territory would be a real popup; this isn't one), below `.mws-play-chrome` (1002) so back/pause
+ * navigation stays reachable throughout. Sound cue deferred (per your note) — would attach here
+ * too, since it plays on the same "passage just rendered" trigger as the fade-in. */
+.mws-text.style-special-event {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    color: transparent;
+    background: rgba(0, 0, 0, 0.8);
+    background-image: url(image://popup/special_event_text);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 42vw auto;
+    pointer-events: none;
+    opacity: 0;
+    animation:
+        mws-special-event-fade 6s ease-in-out forwards,
+        mws-special-event-block 6s steps(1) forwards;
+}
+
+.mws-text.style-special-event::before,
+.mws-text.style-special-event::after {
+    content: '';
+    position: fixed;
+    top: calc(50% - 5vh);
+    width: 22vw;
+    height: 9vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.mws-text.style-special-event::before {
+    right: calc(50% + 19vw);
+    background-image: url(image://popup/special_event_line_left);
+}
+
+.mws-text.style-special-event::after {
+    left: calc(50% + 19vw);
+    background-image: url(image://popup/special_event_line_right);
+}
+
+@keyframes mws-special-event-fade {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Blocks clicks on the rest of the passage for basically the whole display — flips back to none
+   right as the fade-out (above) finishes, rather than staying inert a beat too long. */
+@keyframes mws-special-event-block {
+    0%, 99% { pointer-events: auto; }
+    100% { pointer-events: none; }
+}
+
+/* ── hub_early / hub_middle / hub_late ─────────────────────────────────────
+ * Real three-layer composite (background/border, see the shared rules above) — no separate
+ * parchment-panel layer, unlike narration/introduction: content is a left-aligned, scrollable
+ * vertical stack of individually-framed "location" cards (`section style: 'hub-card'`) directly
+ * over the leather_splattered.png background, matching the reference screenshots. Only the border
+ * asset differs per generation (hub_red/hub_blue/hub_brown.png, set per layout .mws.yaml) — every
+ * CSS rule below is shared across all three via the combined selectors. */
+
+/* hub_section.png (VIEW-REQUIREMENTS.md §2 hub_*) is a thin decorative frame with a fully
+   transparent interior (measured precisely: opaque 0–14px from every edge on the 1366×633 canvas,
+   fully transparent from 14px to 14px-from-the-far-edge on all four sides — a uniform 14px frame,
+   not a panel with a baked-in gutter like panel_parchment.png, so it doesn't need the
+   separate-fixed-image-node treatment (§1.7/§1.8). Two things fixed here from the first pass:
+   (1) the translucent fill must be the *last* `background` layer, not the first — CSS paints
+   multiple background layers with the first-listed on top, so a `linear-gradient(...)` listed
+   before the frame image was painting over it and dimming it; (2) `background-size: 100% 100%`
+   stretched the *entire* image including its frame, so the rendered border thickness changed with
+   every card's own size instead of staying a constant 14px. `border-image` (9-slice: slice the
+   source at the same 14px the frame actually measures, but render it at a fixed
+   `border-image-width` — corners/edges render at a constant on-screen thickness regardless of the
+   card's height, and only the flat middle of each edge stretches to fill the remaining length.
+   `border-radius` has no effect on the border-image itself (border-image ignores border-radius per
+   spec — it's a fallback for the plain border-color/style, not something border-image respects),
+   left in place harmlessly. */
+.mws-section.style-hub-card {
+    position: relative;
+    background: rgba(18, 15, 13, 0.55);
+    border: 7px silver solid;
+    border-image-source: url(image://borders/hub_section);
+    border-image-slice: 14;
+    border-image-width: 7px;
+    border-image-repeat: stretch;
+    border-radius: 15px;
+    padding: 1.2em;
+    margin: 1em 0;
+}
+
+.mws-section.style-hub-card > h3 {
+    margin: 0 0 0.35em;
+    color: #f2b17b;
+    font-size: 1.1em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Bracket-wrapped inline links, same mechanism as narration/introduction's brown brackets (§1.6)
+   but blue (bracket-blue-left/right.png) — hub's own distinct link-color rule. Ancestor part
+   wrapped in :where(...) for the same reason as the narration/introduction block above — keeps
+   this rule's specificity down at plain-`.mws-link` level so `.style-button`/`.style-btn-*` links
+   still win when explicitly used inside a hub layout — and `:not(.style-button):not(.style-btn-
+   brown):not(.style-btn-green):not(.style-btn-red)` excludes those variants from getting brackets
+   glued onto their own graphical button art in the first place (a specificity fix alone doesn't
+   stop the ::before/::after rules below from still matching them — see the narration/introduction
+   block above for the full explanation). */
+:where(.mws-passage.layout-hub_early, .mws-passage.layout-hub_middle, .mws-passage.layout-hub_late) .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red),
+:where(.mws-passage.layout-hub_early, .mws-passage.layout-hub_middle, .mws-passage.layout-hub_late) .mws-popup-trigger {
+    display: inline;
+    position: relative;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0 0.75em;
+    font: inherit;
+    color: #6fb8e0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+:where(.mws-passage.layout-hub_early, .mws-passage.layout-hub_middle, .mws-passage.layout-hub_late) .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red)::before,
+:where(.mws-passage.layout-hub_early, .mws-passage.layout-hub_middle, .mws-passage.layout-hub_late) .mws-popup-trigger::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.8em;
+    height: 1.5em;
+    background-image: url(image://inputs/bracket-blue-left);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+:where(.mws-passage.layout-hub_early, .mws-passage.layout-hub_middle, .mws-passage.layout-hub_late) .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red)::after,
+:where(.mws-passage.layout-hub_early, .mws-passage.layout-hub_middle, .mws-passage.layout-hub_late) .mws-popup-trigger::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.8em;
+    height: 1.5em;
+    background-image: url(image://inputs/bracket-blue-right);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+:where(.mws-passage.layout-hub_early, .mws-passage.layout-hub_middle, .mws-passage.layout-hub_late) .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red):hover:not(:disabled),
+:where(.mws-passage.layout-hub_early, .mws-passage.layout-hub_middle, .mws-passage.layout-hub_late) .mws-popup-trigger:hover:not(:disabled) {
+    color: #9ad4f0;
+}
+
+:where(.mws-passage.layout-hub_early, .mws-passage.layout-hub_middle, .mws-passage.layout-hub_late) .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red):active:not(:disabled),
+:where(.mws-passage.layout-hub_early, .mws-passage.layout-hub_middle, .mws-passage.layout-hub_late) .mws-popup-trigger:active:not(:disabled) {
+    color: #4a86a8;
+}
+
+/* The "continue to next round" link — same bracket treatment as any other hub link above (color
+   comes from there), just centered and given clearance from the last card. */
+.mws-link.style-hub-continue {
+    display: block;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+/* ── Shared popup title (choice / end_of_round) ──────── */
+
+.style-popup-title {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+
+/* ── choice popup ─────────────────────────────────────────────────────────
+ * Downgraded from a bespoke "Choose Audio Voice" radio-select dialog to what's actually needed: a
+ * generic bordered popup (General-Standalone-Select-Dialog.png / screenshot-summary.md's own
+ * General-01 breakdown — "could be adapted to either a passage or popup layout as needed... Fixed
+ * size panel. Large header, centered. Content, centered"). Its real ongoing job in this template is
+ * exercising the checkbox input style real scoring views need (Tie-Break 1) — not faithfully
+ * reproducing a radio-group UI the format doesn't have an input type for anyway (still an open
+ * question, VIEW-REQUIREMENTS.md §2). panel_general.png (866×688) is a solid riveted-metal frame
+ * with no transparent gutter (measured: opaque right to every edge) — border-image still applies
+ * (§1.8) so the corner rivets don't stretch into ovals on a viewport with a different aspect ratio
+ * than the card's own. */
+.mws-popup-overlay.layout-choice .mws-popup-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 20px;
+    border-image-source: url(image://backgrounds/panel_general);
+    border-image-slice: 11.6% 9.2% fill;
+    border-image-width: 40px;
+    border-image-repeat: stretch;
+    box-sizing: border-box;
+    background: #14161c;
+    box-shadow: none;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #e8c9a0;
+    text-align: center;
+}
+
+.mws-popup-overlay.layout-choice .style-popup-title {
+    color: #f2c879;
+    font-size: 2em;
+}
+
+.mws-popup-overlay.layout-choice .style-choice-label {
+    display: inline-block;
+    margin-right: 0.5em;
+    vertical-align: middle;
+    font-size: 1.5em;
+}
+
+.mws-popup-overlay.layout-choice .mws-popup-footer {
+    justify-content: center;
+    margin-top: 1em;
+}
+
+/* Custom checkbox appearance shared by any input's checkbox rendering (a boolean-typed var) —
+   general-purpose, not choice-specific, since scoring's Tie-Break 1 needs the identical treatment
+   (screenshot-summary.md Scoring-03) once that view is built. checkbox_checkmark.png layers over
+   checkbox_outline.png only when :checked, rather than swapping to a whole separate "checked"
+   image — the checkmark glyph and the box outline are independent assets. */
+.mws-input input[type="checkbox"] {
+    appearance: none;
+    width: 3.5rem;
+    height: 3.5rem;
+    flex-shrink: 0;
+    background-image: url(image://inputs/checkbox_outline);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.mws-input input[type="checkbox"]:checked {
+    background-image: url(image://inputs/checkbox_checkmark), url(image://inputs/checkbox_outline);
+    background-size: 75% 75%, 100% 100%;
+    background-position: 1em -0.05em, 0;
+}
+
+/* ── countdown_instructions / countdown_action popups (replace the bespoke voting/bidding
+   component) ─ Module-09/10A/10B: ONE continuous-looking parchment note stays on screen the whole
+   time — instructions never disappear or change. Built as a genuinely NESTED popup (see
+   Showcase_Popup_RevealCountdown.mws.yaml's own comment for why this needs no engine change):
+   countdown_instructions is the OUTER note; countdown_action is nested directly in its content and
+   supplies the dark countdown pill + invisible full-screen Okay button. */
+
+/* OUTER: reuses popup_parchment_border_short.png — same asset/technique as `end_of_round`/
+   `end_of_generation` (see that block's own comment for the border-image reasoning) — matches
+   Module-09's own thin-red-line-on-aged-paper look more closely than note's heavier torn-edge
+   frame. No footer of its own: this popup is never explicitly closed, only carried away by the
+   nested popup's own navigation.
+
+   Direct-child combinator throughout this whole OUTER block (not a plain descendant selector) —
+   the nested countdown_action popup, sitting inside this content region, has its own `.mws-popup-
+   container`/`.mws-popup-content` divs too, and a descendant selector would match those as well
+   (nothing about DOM nesting stops a CSS descendant combinator at a `.mws-popup-overlay`
+   boundary), leaking the outer parchment border-image onto the inner popup's own pill. */
+.mws-popup-overlay.layout-countdown_instructions > .mws-popup-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 34rem;
+    height: auto;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 15px;
+    border-image-source: url(image://backgrounds/popup_parchment_border_short);
+    border-image-slice: 6% 4% fill;
+    border-image-width: 20px;
+    border-image-repeat: stretch;
+    box-sizing: border-box;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    color: #410404;
+    font-weight: 600;
+    text-align: center;
+}
+
+.mws-popup-overlay.layout-countdown_instructions > .mws-popup-container > .mws-popup-content {
+    max-height: 50vh;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+@media (max-width: 45.99rem) {
+    .mws-popup-overlay.layout-countdown_instructions > .mws-popup-container {
+        max-width: 94vw;
+    }
+}
+
+/* The nested countdown_action popup's own trigger button ("Start Bidding"/"Cast Vote") renders
+   inline within this content, in its normal (unopened) closed state — matches the reference's
+   green "START BIDDING" button sitting directly below the instructions text. Reuses the shared
+   button sizing block and the green variant image (see that block's own comment). */
+.mws-popup-overlay.layout-countdown_instructions .mws-popup-trigger.style-countdown-trigger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 13rem;
+    aspect-ratio: 17 / 6;
+    flex-shrink: 0;
+    padding: 0;
+    background-image: url(image://inputs/button_green);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    appearance: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    letter-spacing: 0.02rem;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #152218;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    margin: 0.5em auto 0;
+}
+
+/* Own backdrop (not app.css's default rgba(0,0,0,0.6)) — stacks on top of the outer note's already
+   -dimmed one, so opening the inner popup visibly deepens the dim, marking the transition into
+   "the reveal is happening now." */
+.mws-popup-overlay.layout-countdown_action {
+    background: rgba(32, 32, 32, 0.6);
+}
+
+/* INNER: its own visible content is the small dark countdown pill, positioned over roughly where
+   the outer's own trigger button sits. The real click target is the Okay button below, which
+   covers the full viewport, invisibly. */
+.mws-popup-overlay.layout-countdown_action > .mws-popup-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24rem;
+    height: auto;
+    aspect-ratio: 676 / 338; /* popup_reveal.png's own pixel dimensions — a real weathered-metal
+                                pill asset (blood-spattered rim), not a flat CSS approximation */
+    padding: 0;
+    background: transparent;
+    background-image: url(image://backgrounds/popup_reveal);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #e8dcc4;
+}
+
+/* Four real, restext-backed text nodes (style-countdown-3/-2/-1/-reveal — see
+   Showcase_Popup_RevealCountdown.mws.yaml), not a single CSS `content`-cycling pseudo-element (the
+   earlier cut, reverted): REVEAL needs to be localizable, and a value baked directly into
+   style.css never can be — same reason a real Cradle extraction would restext this uniformly
+   regardless of content (see en-US.restext's own Countdown_* comment). All four stack in the exact
+   same spot via position: absolute against the container's own position: relative, each visible
+   only during its own quarter of the shared animation via a discrete (steps(1), not cross-faded)
+   opacity swap — text can't meaningfully interpolate anyway, and steps(1) is what previously kept
+   each digit reading as a flat value rather than a fade. Text/shadow match the narration passage
+   title's own embossed-metal look (.layout-narration .mws-passage-title), at 2x its 1.6em size,
+   per your note. Every keyframe set below has an explicit 100% stop — an earlier version of this
+   omitted one and silently fell back to the element's unanimated base value there instead of
+   holding the animated one, which is what caused the countdown to visibly reset after REVEAL. */
+.mws-popup-overlay.layout-countdown_action .mws-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    margin: 0;
+    margin-top: -1.3rem;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #828C93;
+    text-shadow: 0.1rem -0.1rem 0.1rem rgba(255, 255, 255, 0.8),
+        -0.2rem 0 0 #111, 0.2rem 0 0 #111, 0 -0.2rem 0 #111, 0 0.2rem 0 #111,
+        -0.2rem -0.2rem 0 #111, 0.2rem -0.2rem 0 #111, -0.2rem 0.2rem 0 #111, 0.2rem 0.2rem 0 #111;
+    opacity: 0;
+}
+
+.mws-popup-overlay.layout-countdown_action .style-countdown-3 { animation: mws-countdown-3 4s steps(1) forwards; }
+.mws-popup-overlay.layout-countdown_action .style-countdown-2 { animation: mws-countdown-2 4s steps(1) forwards; }
+.mws-popup-overlay.layout-countdown_action .style-countdown-1 { animation: mws-countdown-1 4s steps(1) forwards; }
+.mws-popup-overlay.layout-countdown_action .style-countdown-reveal { animation: mws-countdown-reveal 4s steps(1) forwards; }
+
+@keyframes mws-countdown-3 {
+    0% { opacity: 1; }
+    25% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes mws-countdown-2 {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes mws-countdown-1 {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    75% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes mws-countdown-reveal {
+    0% { opacity: 0; }
+    75% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+/* The real click target — invisible and full-viewport, inert until the countdown pill's own
+   animation timeline finishes (same 3s duration, so nothing needs to stay in sync via JavaScript
+   or an engine timer). */
+.mws-popup-overlay.layout-countdown_action .mws-popup-okay {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    aspect-ratio: auto;
+    background: none;
+    border: none;
+    color: transparent;
+    pointer-events: none;
+    animation: mws-reveal-enable 4s steps(1) forwards;
+}
+
+@keyframes mws-reveal-enable {
+    to { pointer-events: auto; }
+}
+
+/* ── end_of_round / end_of_generation popups ───────────────────────────────
+ * Share identical sizing (per your note — same card art, same clock-icon + title header row, same
+ * single button hanging off the bottom edge) — only the header/body text differs per instance,
+ * supplied by the popup node itself. Two distinct layout ids (matching how docs/mws-format-
+ * latest.md's own §7 worked examples treat them as separate layout values, and how VIEW-
+ * REQUIREMENTS.md already catalogs them) sharing one CSS block via combined selectors throughout.
+ *
+ * `popup_parchment_border_short.png` (985×634, corrected from an earlier rough pass that
+ * referenced a `popup_parchment_ragged.png` asset that doesn't actually exist in this pack) has a
+ * much smaller gutter than panel_parchment.png/popup_paper_torn.png (~1.3% each side, measured) —
+ * still moved to border-image for consistency with every other bordered surface in this file
+ * (§1.8), even though the distortion risk is low here regardless of technique given how thin the
+ * gutter is. aspect-ratio locked (unlike note's height: auto) since this content is always a short,
+ * fairly consistent acknowledgement message, not arbitrary-length user content. */
+.mws-popup-overlay.layout-end_of_round .mws-popup-container,
+.mws-popup-overlay.layout-end_of_generation .mws-popup-container {
+    position: relative;
+    width: 100%;
+    max-width: 30rem;
+    min-height: 5rem;
+    height: auto;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 15px;
+    border-image-source: url(image://backgrounds/popup_parchment_border_short);
+    border-image-slice: 6% 4% fill;
+    border-image-width: 20px;
+    border-image-repeat: stretch;
+    box-sizing: border-box;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #2b2016;
+    text-align: center;
+}
+
+/* Clock icon as a title-adjacent ::before, not a separate `header:` region node — {icon:...} can
+   only ever resolve icon://, but generation_time.png lives under assets/images/popup/, and a
+   separate header region would need extra CSS just to sit inline with the title text on one row
+   anyway. Scoped to these two layouts only — .style-popup-title is shared with choice, which
+   doesn't want this icon. */
+.mws-popup-overlay.layout-end_of_round .style-popup-title,
+.mws-popup-overlay.layout-end_of_generation .style-popup-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.mws-popup-overlay.layout-end_of_round .style-popup-title::before,
+.mws-popup-overlay.layout-end_of_generation .style-popup-title::before {
+    content: '';
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    flex-shrink: 0;
+    background-image: url(image://popup/generation_time);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.mws-popup-overlay.layout-end_of_round .mws-popup-content,
+.mws-popup-overlay.layout-end_of_generation .mws-popup-content {
+    overflow-y: auto;
+    font-size: 1.2em;
+}
+
+/* ── prompt popup (single input — numeric or text) ─────────────────────────
+ * Module-11: a small bracket-cornered card (popup_bordered.png — corner ornaments only, measured:
+ * opaque art touches the canvas edge with no connecting frame between corners, so border-image
+ * mostly just keeps those corners from stretching; a starting-point slice, tune here once seen
+ * live) holds the instructional prompt text (no scroll — deliberately short, centered per the
+ * reference), with the input field itself and the action button(s) both anchored to the true
+ * viewport below it, same fixed-footer technique `note` already uses. */
+.mws-popup-overlay.layout-prompt .mws-popup-container {
+    position: relative;
+    top: -15vh;
+    height: auto;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 7px;
+    border-image-source: url(image://backgrounds/popup_bordered);
+    border-image-slice: 19.4% 6% fill;
+    border-image-width: 38px;
+    border-image-repeat: stretch;
+    box-sizing: border-box;
+    background: rgba(20, 16, 14, 0.85);
+    box-shadow: none;
+    border-radius: 0;
+    padding: 18px;
+    color: #1F1F1E;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* The input element itself is a fixed size (per your note) — not a percentage/max-width-constrained
+   box like .style-setup-input — so it always reads as the same prominent, centered field regardless
+   of the popup's own container width. Reuses input_large.png (same asset/technique as
+   .style-setup-input) rather than a new asset. */
+.mws-popup-overlay.layout-prompt .mws-input {
+    display: block;
+    width: 20rem;
+    margin: 1.5rem auto 0;
+    background: none;
+}
+
+.mws-popup-overlay.layout-prompt .mws-input input {
+    display: block;
+    width: 20rem;
+    height: 3.2rem;
+    box-sizing: border-box;
+    padding: 0.6em 0.9em;
+    text-align: center;
+    background-image: url(image://inputs/input_large);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #F2B781;
+    font-family: 'Averia Libre', serif;
+    font-size: 1.2em;
+}
+
+.mws-popup-overlay.layout-prompt .mws-popup-footer {
+    position: fixed;
+    left: 50%;
+    bottom: 8vh;
+    transform: translateX(-50%);
+    justify-content: center;
+    margin: 0;
+    z-index: 1001;
+}
+
+/* ── score_panel (ScoreEntry / TieBreaker1 / TieBreaker2) ──────────────────
+ * Real assets throughout, replacing the earlier flat-gradient placeholder pass: leather_purple.png
+ * background (layout chrome, style-layer-bg — see the .mws-image.style-layer-bg/::after rules
+ * above, now shared with this layout), the same main.png outer frame as every other bordered
+ * layout, and popup_parchment_border.png as the actual score-table card.
+ *
+ * The card is now a real `section style: 'score-card'` (see the passages' own comment), not
+ * `.mws-passage-body` itself — `.mws-passage-body` is just a plain flex column laying out the
+ * card and Continue as two ordinary siblings, so Continue sits in normal document flow right
+ * where the card's own (possibly shrunk-and-scrolling) bottom edge actually ends, rather than
+ * needing to be pinned to the true viewport edge to "track" it. Title enlarged and pulled down
+ * over the card's own top border via a negative margin on the header (kept at a higher z-index
+ * than the card so it paints on top, not under it — normal flow paint order would otherwise put
+ * the later card above it). */
+.mws-passage.layout-score_panel {
+    padding: 20px 30px 40px;
+    color: #e5e0d8;
+    font-size: 1.25em;
+    align-items: center;
+}
+
+.mws-passage.layout-score_panel .mws-passage-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+}
+
+.mws-passage.layout-score_panel .mws-passage-header,
+.mws-passage.layout-ranking .mws-passage-header {
+    position: relative;
+    z-index: 2;
+    margin-top: 70px;
+    margin-bottom: -3rem;
+}
+
+.mws-passage.layout-score_panel .mws-passage-title,
+.mws-passage.layout-ranking .mws-passage-title {
+    font-size: 3.5em;
+    text-transform: none;
+    font-variant: small-caps;
+}
+
+/* Shrinks on narrow viewports (§ narrow-viewport media query further up) so a long title doesn't
+   wrap onto a second line within the card-width-constrained header. */
+@media (max-width: 35rem) {
+    .mws-passage.layout-score_panel .mws-passage-title,
+    .mws-passage.layout-ranking .mws-passage-title {
+        font-size: 2.2em;
+    }
+}
+
+/* The card itself — was .mws-passage-body's own border/scroll treatment, now on this inner
+   section instead so Continue (a sibling below it, not inside it) can sit in normal flow right
+   at its actual bottom edge. flex: 0 1 auto + min-height: 0 + overflow-y: auto is the usual
+   "shrink and scroll before overflowing the flex column" trio (§1.7) — max-height is a firm cap
+   (content this short rarely needs it), the flex-shrink is what actually saves a short viewport. */
+.mws-passage.layout-score_panel .mws-section.style-score-card {
+    flex: 0 1 auto;
+    min-height: 0;
+    width: 100%;
+    max-width: 34rem;
+    max-height: calc(100vh - 170px);
+    overflow-y: auto;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 20px;
+    border-image-source: url(image://backgrounds/popup_parchment_border);
+    border-image-slice: 6% 4% fill;
+    border-image-width: 20px;
+    border-image-repeat: stretch;
+    background: transparent;
+    color: #2b2016;
+    text-align: center;
+    padding: 8px 24px 24px;
+}
+
+/* Shorter viewports: the card's own top/bottom breathing room shrinks toward a minimal buffer
+   before its internal scrollbar has to engage — matches the outer .mws-passage padding above,
+   which does the same thing for the space around the whole card. */
+@media (max-height: 40rem) {
+    .mws-passage.layout-score_panel {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .mws-passage.layout-score_panel .mws-passage-header,
+    .mws-passage.layout-ranking .mws-passage-header {
+        margin-top: 20px;
+    }
+
+    .mws-passage.layout-score_panel .mws-section.style-score-card {
+        padding-top: 4px;
+        padding-bottom: 8px;
+    }
+}
+
+/* Header row is a section too (`score-header-row`, no highlight) — sharing the exact same flex
+   geometry as the data rows below (see .style-score-row further down) is the only way to
+   guarantee the value-column heading lands centered directly over its own input/checkbox column,
+   rather than two independently-positioned pieces that only approximately lined up before. Both
+   the heading and its row counterparts (.style-score-input/-count-input/-check-input, further
+   down) share one `flex: 0 1 8.5rem` value-column basis — shrinking together off the exact same
+   starting width, not independently, is what keeps the heading centered over its column even as
+   the row narrows, rather than the two drifting apart. */
+.mws-passage.layout-score_panel .mws-section.style-score-header-row,
+.mws-passage.layout-score_panel .mws-section.style-score-row {
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 1rem 0.3rem 1.5rem;
+}
+
+.mws-passage.layout-score_panel .mws-section.style-score-header-row {
+    font-size: 1.4em;
+    align-items: flex-end;
+    margin-bottom: 0;
+}
+
+@media (max-width: 35rem) {
+    .mws-passage.layout-score_panel .mws-section.style-score-header-row,
+    .mws-passage.layout-score_panel .mws-section.style-score-row {
+        padding-left: 0.75rem;
+    }
+}
+
+.mws-passage.layout-score_panel .style-player-heading {
+    flex: 1;
+    text-align: left;
+}
+
+.mws-passage.layout-score_panel .style-player-heading,
+.mws-passage.layout-score_panel .style-score-heading {
+    font-weight: 700;
+}
+
+.mws-passage.layout-score_panel .style-score-heading {
+    flex: 0 1 9.5rem;
+    min-width: 0;
+    text-align: center;
+}
+
+/* Each row is a real `section` (not a flat text/input pair) so player_highlight.png — a white
+   alpha shape, not a colored sprite (measured: solid ~251,251,251 RGB, alpha varying only at the
+   soft brush edges) — can be applied as a per-row background via mask-image instead of being
+   painted directly (which would just show a faint white wash, not the reference's purple band).
+   The purple fill color comes from CSS (leather_purple.png's own dominant hue, sampled, darkened
+   further per your note), not the asset — "color inverted" in the original design note. A
+   ::before behind the row's own z-index:0 stacking context (not the section element itself) since
+   mask-image would otherwise mask the row's real text/input content too, not just its background.
+   The left border sits on the row's own border-box, outside the ::before's inset:0 padding-box —
+   the two don't fight over the same edge pixels. */
+.mws-passage.layout-score_panel .mws-section.style-score-row {
+    position: relative;
+    z-index: 0;
+    margin: 0;
+}
+
+.mws-passage.layout-score_panel .mws-section.style-score-row::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    -webkit-mask-image: url(image://inputs/player_highlight);
+    mask-image: url(image://inputs/player_highlight);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    background-color: rgba(55, 20, 80, 0.7);
+    margin: -5px 0;
+}
+
+.mws-passage.layout-score_panel .style-player-label {
+    flex: 1;
+    text-align: left;
+    color: #f2e6c8;
+    font-size: 1.05em;
+}
+
+.mws-passage.layout-score_panel .style-score-input,
+.mws-passage.layout-score_panel .style-count-input,
+.mws-passage.layout-score_panel .style-check-input {
+    flex: 0 1 8.5rem;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+/* max-width (not a fixed width) + a fixed height, no aspect-ratio lock — per your note, the input
+   itself can shrink narrower on a tight viewport (its own value-column above already shrinks
+   first, in lockstep with the heading; this is the fallback once the column itself has nowhere
+   left to give) without needing to preserve input_small.png's own native proportions doing it. */
+.mws-passage.layout-score_panel .style-score-input input,
+.mws-passage.layout-score_panel .style-count-input input {
+    display: block;
+    width: 100%;
+    max-width: 8rem;
+    height: 2.6rem;
+    background-image: url(image://inputs/input_small);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    color: #F2B781;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 700;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+}
+
+/* Smaller than the shared 3.5rem checkbox (that size is tuned for the `choice` popup's own
+   looser layout) — at full size it was inflating this layout's own, deliberately tighter row
+   height. */
+.mws-passage.layout-score_panel .style-check-input input[type="checkbox"] {
+    margin: -0.5em;
+}
+
+/* Normal flow (not position: fixed) — a plain sibling of .style-score-card, so it naturally sits
+   right below the card's own actual bottom edge (which itself may be shorter than its own
+   max-height, or scrolling internally) instead of a fixed distance from the true viewport edge. */
+.mws-passage.layout-score_panel .mws-link {
+    flex-shrink: 0;
+    margin: -2rem 0 0;
+}
+
+/* Help trigger (Scoring-02-Score-Entry-Help-popup.png) — a plain round question-mark button
+   fixed to the viewport corner, matching every other graphical floating trigger in this file
+   (note's own fixed footer, the ending's forward button below). right/bottom in px, not rem —
+   every other fixed-position edge offset in this file is px, matching the outer border's own
+   fixed border-image-width (42px/40px); rem would drift out of sync with that border's actual
+   on-screen thickness if the browser's own root font-size ever differs from 16px, even though
+   --mws-text-scale itself doesn't affect rem (it scales body's font-size, not the root's). Scoped
+   by style (not just layout) for the same reason the ending's own forward button is — relies on
+   RenderedPopupView.razor now putting style-@Node.Style on the closed-state trigger button too
+   (see that block's own note). */
+.mws-passage.layout-score_panel .mws-popup-trigger.style-help-trigger {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 1001;
+    width: 3.5rem;
+    aspect-ratio: 1;
+    background-image: url(image://inputs/button_question);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+@media (max-width: 45.99rem) {
+    .mws-passage.layout-score_panel .mws-popup-trigger.style-help-trigger {
+        right: 0;
+        bottom: 30px;
+    }
+}
+
+/* score_help popup — same parchment card as score_panel's own body. min-width (not width: 100%)
+   for the same reason `note`'s own container uses it, not the width: 100% every other popup here
+   gets away with: .mws-popup-overlay is a display: flex; row (app.css), and a flex item's own
+   width: 100% can resolve against its content's min-content size instead of the intended
+   percentage in that context, which is what was silently causing the "long sentence refuses to
+   wrap, horizontal scrollbar appears instead" bug — min-width sidesteps the ambiguity entirely.
+   min-width: 50vh / max-width: 512px matches `note`'s own popup-area sizing exactly (SIZING
+   CONVENTION at the top of this file) — vh/vw normally, capped at a fixed px size, with a
+   dedicated 94vw override below. font-size: em, not rem — rem doesn't respond to
+   --mws-text-scale (FONT-SCALING CONVENTION at the top of this file); this is reading text
+   (the help body), not chrome, so it needs to track the player's own text-size preference. */
+.mws-popup-overlay.layout-score_help .mws-popup-container {
+    position: relative;
+    min-width: 50vh;
+    max-width: 512px;
+    height: auto;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 20px;
+    border-image-source: url(image://backgrounds/popup_parchment_border);
+    border-image-slice: 6% 4% fill;
+    border-image-width: 20px;
+    border-image-repeat: stretch;
+    background: transparent;
+    color: #2b2016;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 24px;
+}
+
+/* Placed *after* the base rule above (not grouped into note's own earlier media query, where this
+   used to live) — with tied specificity, the later rule in source order wins on a cascade
+   conflict, so putting this before the base rule was silently nullifying it whenever the media
+   query matched (the actual cause of "close button ends up positioned inside the content area on
+   narrow" — the container was never actually shrinking to 94vw, the base rule's own 512px cap was
+   winning instead). */
+@media (max-width: 45.99rem) {
+    .mws-popup-overlay.layout-score_help .mws-popup-container {
+        min-width: 94vw;
+        max-width: 94vw;
+        overflow: visible;
+        max-height: 84vh;
+    }
+}
+
+/* Text sits in its own dark-highlighted section — same player_highlight.png mask technique as
+   score_panel's own rows, just black/transparent instead of purple. */
+.mws-popup-overlay.layout-score_help .mws-section.style-help-highlight {
+    position: relative;
+    z-index: 0;
+    padding: 1rem 1.25rem;
+    margin: 0.5rem 0;
+}
+
+.mws-popup-overlay.layout-score_help .mws-section.style-help-highlight::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    -webkit-mask-image: url(image://inputs/player_highlight);
+    mask-image: url(image://inputs/player_highlight);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+/* Positioned over the card's own top-right *corner* (negative offset, overlapping the border
+   itself) rather than inset within the padding — matches Scoring-02's own reference more closely
+   than an inset placement does. px, not rem — the card's own border-width (above) is 20px, and
+   this needs to track that same fixed edge, not the root font-size. font-size: 0 alongside
+   color: transparent — belt and suspenders against the button's own text ("Close") ever becoming
+   visible; the button_close.png background image is the only thing meant to render. */
+.mws-popup-overlay.layout-score_help .mws-popup-footer {
+    position: absolute;
+    top: -26px;
+    right: -26px;
+    margin: 0;
+}
+
+/* At 94vw the card leaves almost no slack outside itself (.mws-popup-overlay's own padding is a
+   fixed 16px, app.css) — nowhere near the 26px+40px the corner-overlap offset above needs, so the
+   button was rendering past the actual viewport edge, invisible without a horizontal scroll.
+   Narrow mode pulls it to a small positive inset instead, guaranteed to sit inside the card's own
+   24px padding regardless of viewport width. */
+@media (max-width: 45.99rem) {
+    .mws-popup-overlay.layout-score_help .mws-popup-footer {
+        top: 8px;
+        right: 8px;
+    }
+}
+
+.mws-popup-overlay.layout-score_help .mws-popup-cancel {
+    width: 2.5rem;
+    aspect-ratio: 1;
+    background-image: url(image://inputs/button_close);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: transparent;
+    font-size: 0;
+    line-height: 0;
+    padding: 0;
+}
+
+/* ── ranking ─────────────────────────────────────────────────────────────
+ * leather_large.png background (same asset as narration/hub, not a distinct "dark stone panel" —
+ * see layouts/ranking.mws.yaml's own comment) + the shared main.png outer frame.
+ *
+ * Unlike score_panel's card (or any other bordered panel in this file), panel_ranking.png's three
+ * gold divider lines are pixel-baked into the art itself, not drawn by CSS — so this is the one
+ * panel that can't be allowed to shrink to fit a short viewport the way every other card here does
+ * (shrinking would slide the rows out of registration with the lines). Measured directly off the
+ * asset (System.Drawing.Bitmap.GetPixel down the vertical center, looking for the bright gold
+ * highlight pixel of each line): divider centers sit at y=234.5/350.5/465.5 of the image's 698px
+ * height — i.e. at exactly 1/3, 1/2, and 2/3 of the way from y=6em to y=15em if the image is
+ * treated as 6 equal "row units" tall (6 × 115.5 ≈ 698) with the outer unit at each end left blank
+ * and the middle four holding one row each, dividers falling exactly on the row boundaries. That
+ * "6 units, blank-row/row/row/row/row/blank-row" model is what .style-rank-panel/.style-rank-row
+ * below reconstruct — not a coincidence, it's what the asset's own proportions came out to.
+ *
+ * Because that alignment is pixel-exact, the panel's own height must scale in lockstep with the
+ * text/crown it holds (not with the viewport) — height and .style-rank-row's font-size (below) are
+ * both expressed in em for exactly that reason, unlike every fixed-px measurement elsewhere in this
+ * file. width is left to aspect-ratio rather than an independent responsive cap: the divider lines
+ * are full-width horizontal lines, so stretching width alone never moves their vertical position,
+ * but letting height and width scale by different factors (the old aspect-ratio-locked-to-a-
+ * shrinkable-width approach) would have — hence the panel no longer shrinks on any axis, and the
+ * .mws-passage-body wrapper is a plain scroll region instead (§1.7 single-scroll-shell, same
+ * flex:1;min-height:0;overflow pattern as hub_early/middle/late's own body) so a viewport too small
+ * for the fixed panel scrolls to it rather than squeezing it. 2-3 player games leave the unused
+ * row(s) blank rather than resizing the panel — no baked-in 2-row/3-row art exists to switch to. */
+.mws-passage.layout-ranking {
+    padding: 30px;
+    color: #e5e0d8;
+    font-size: 1.25em;
+    align-items: center;
+}
+
+.mws-passage.layout-ranking .mws-passage-body {
+    flex: 1;
+    min-height: 0;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em 12px 3em;
+}
+
+/* height: 18em = 6 row-units × 3em/unit (see the block comment above) — fixed, not aspect-ratio-
+   driven-by-width, so it never goes out of registration with the baked divider lines. width follows
+   from height via aspect-ratio, at the image's own native ratio (measured: 1734×698px), so the
+   panel never stretches non-uniformly on either axis. box-sizing: border-box so the 3em top/bottom
+   padding below (one blank row-unit each, per the model above) is *inside* that 18em, not additive
+   to it — the content box is exactly 12em = 4 row-units, matching .style-rank-row's own flex-basis
+   total (below) once its font-size nesting is accounted for. Left/right padding is independent of
+   the row-unit math (just breathing room off the frame's own side border) — em, not px, since
+   (unlike every other border-offset in this file) this whole panel is deliberately text-scaled, not
+   viewport-scaled; a px value here would drift out of proportion with the frame as text-scale
+   changes while the frame itself (part of this same em-sized image) grows or shrinks around it. */
+.mws-passage.layout-ranking .mws-section.style-rank-panel {
+    flex-shrink: 0;
+    height: 18em;
+    width: 800px;
+    max-width: 96vw;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 75px 60px;
+    border-image-source: url(image://backgrounds/panel_ranking);
+    border-image-slice: 10.75% 3.1% fill;
+    border-image-width: 60px 45px;
+    border-image-repeat: stretch;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5vw;
+}
+
+/* flex: 0 0 1.5em is 3em (one row-unit) expressed in THIS element's own font-size (2em, set right
+   here) rather than its parent's — 1.5 × 2em = 3em in the parent's terms, so the row still claims
+   exactly one row-unit of the panel's height despite the nested font-size doubling. That doubling
+   is the actual "text 2x larger" request: everything below inherits it, so rank-degree/rank-name
+   (no font-size of their own) and the crown image's existing `width: 1.4em` (style-rank-panel's own
+   .mws-image rule, unchanged) all render at exactly 2x their old size as a side effect, without
+   needing their own separate size bump. Grid, not flex, for the row's own three cells — the crown
+   column is a fixed 1.4em track whether or not a given row's conditional crown node actually
+   rendered, which is what keeps every row's name flush against the same right edge regardless of
+   who's tied for first; a flex row with margin-right: auto (the old approach) shifted the name over
+   whenever a neighboring row's crown added extra trailing width. */
+.mws-passage.layout-ranking .mws-section.style-rank-row {
+    flex: auto;
+    font-size: 2em;
+    display: grid;
+    grid-template-columns: auto 1fr 1.4em;
+    column-gap: 0.5em;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.mws-passage.layout-ranking .style-rank-degree {
+    color: #e0a94a;
+    font-weight: 700;
+}
+
+.mws-passage.layout-ranking .style-rank-name {
+    color: #e5e0d8;
+    text-align: right;
+}
+
+.mws-passage.layout-ranking .mws-image {
+    display: inline-block;
+    width: 1.4em;
+    justify-self: center;
+    background: transparent;
+    padding: 0;
+    margin: -0.6em 0 0;
+}
+
+.mws-passage.layout-ranking .mws-link {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* ── game_complete popup ("ending unlocked") ───────────────────────────────
+ * Module-14-Ending-Gameover-popup.png: the *long* popup_parchment_border.png (984×731 — not the
+ * `_short` 985×634 variant end_of_round/end_of_generation use; the earlier placeholder pass used
+ * neither, a flat #1a1310 fill), pinned photo-collage header image, and a real button_close.png
+ * Okay button positioned over the card's own top-right corner instead of a CSS-drawn circle.
+ * min-width, not width: 100% — see score_help's own identical comment for why (a flex-row
+ * ancestor, .mws-popup-overlay, can otherwise resolve width: 100% against content size instead of
+ * the intended percentage). min-width: 50vh / max-width: 512px matches note's/score_help's own
+ * popup-area sizing (SIZING CONVENTION at the top of this file); the narrow-viewport 94vw override
+ * sits right after this rule (not grouped into note's own earlier media query) for the same
+ * cascade-order reason explained in score_help's own identical comment. font-size: em, not rem —
+ * same FONT-SCALING CONVENTION reasoning as score_help. */
+.mws-popup-overlay.layout-game_complete .mws-popup-container {
+    position: relative;
+    min-width: 50vh;
+    max-width: 512px;
+    height: auto;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 20px;
+    border-image-source: url(image://backgrounds/popup_parchment_border);
+    border-image-slice: 6% 4% fill;
+    border-image-width: 20px;
+    border-image-repeat: stretch;
+    background: transparent;
+    color: #2b2016;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 24px;
+}
+
+@media (max-width: 45.99rem) {
+    .mws-popup-overlay.layout-game_complete .mws-popup-container {
+        min-width: 94vw;
+        max-width: 94vw;
+        overflow: visible;
+    }
+}
+
+.mws-popup-overlay.layout-game_complete .mws-popup-header .mws-image {
+    display: block;
+    width: 85%;
+    margin: -3.5rem auto 1rem;
+    background: transparent;
+    padding: 0;
+}
+
+.style-popup-title-highlight {
+    font-weight: 700;
+    color: #7a1f1f;
+}
+
+/* Overlapping the card's own top-right corner (negative offset), not inset within the padding —
+   matches score_help's own identical correction, and Module-14's own reference more closely. px,
+   not rem — same reasoning as score_help's own identical rule. */
+.mws-popup-overlay.layout-game_complete .mws-popup-footer {
+    position: absolute;
+    top: -26px;
+    right: -26px;
+    margin: 0;
+}
+
+.mws-popup-overlay.layout-game_complete .mws-popup-okay {
+    width: 2.5rem;
+    aspect-ratio: 1;
+    background-image: url(image://inputs/button_close);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: transparent;
+    font-size: 0;
+    line-height: 0;
+    padding: 0;
+}
+
+/* ── Ending narration — the "continue to game over" trigger ─────────────────
+ * Module-13A/B-Ending*.png: identical to narration otherwise (same layout, same title+subtitle —
+ * see the shared .mws-passage-title/-subtitle rules above), just this one graphical floating
+ * button (button_forward_orange.png) instead of an inline bracketed link/popup trigger. Fixed to
+ * the viewport corner like score_panel's own help trigger above, not the content flow, so it stays
+ * reachable regardless of scroll position (Module-13B's own "scrolled to bottom" screenshot shows
+ * it in the exact same spot as 13A's "scrolled to top" one). Works for either a `link` or a
+ * (auto-display or label-triggered) `popup` — VarEndingsPassage uses it on the popup that shows
+ * the game_complete unlock. right/bottom in px — see score_panel's own help-trigger comment for
+ * why every fixed-position edge offset in this file matches the outer border's own px units
+ * instead of rem. */
+.mws-passage.layout-narration .mws-link.style-btn-forward,
+.mws-passage.layout-narration .mws-popup-trigger.style-btn-forward,
+.mws-passage.layout-introduction .mws-link.style-btn-forward,
+.mws-passage.layout-introduction .mws-popup-trigger.style-btn-forward {
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+    z-index: 1001;
+    width: 4rem;
+    aspect-ratio: 1;
+    background-image: url(image://inputs/button_forward_orange);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: transparent;
+    padding: 0;
+    cursor: pointer;
 }
