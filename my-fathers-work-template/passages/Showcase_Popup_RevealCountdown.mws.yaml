@@ -43,6 +43,7 @@ nodes:
   - type: 'popup'
     layout: 'countdown_action'
     label: 'Start Bidding'
+    style: 'countdown-trigger'
     # Four stacked text nodes, not a single CSS `content`-cycling pseudo-element (the earlier cut)
     # — REVEAL (and the digits, for the same reason a real Cradle extraction would restext them
     # uniformly regardless of content) must be real, localizable text, not a literal baked into

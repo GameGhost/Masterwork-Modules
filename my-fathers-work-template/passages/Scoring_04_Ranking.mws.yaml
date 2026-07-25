@@ -6,9 +6,20 @@
 # a single winner and a family win. Continue hands off to VarEndingsPassage, which navigates to
 # whichever ending was already decided by the story (Vars.ending) — Ranking itself never picks
 # an ending, only the winner display.
+#
+# All four rows sit inside one outer `section style: 'rank-panel'` — the fixed-size element carrying
+# panel_ranking.png's own background (style.css's own comment on .style-rank-panel explains why this
+# one panel can't shrink to fit the viewport like every other card in this module does: its divider
+# lines are pixel-baked into the art, not drawn by CSS). Each row is its own `section style:
+# 'rank-row'` (grid, not flex — see that rule's own comment for why) so rank-degree/name/crown lay
+# out as one row instead of an inline run of text nodes — a real `image` node
+# (image://inputs/ranking_crown) replaces the old `{icon:crown}` reference, which never resolved:
+# `{icon:...}` inline syntax only ever resolves icon://, and this asset lives under
+# assets/images/inputs/ranking_crown.png, not an icons/ path.
 ---
 format: 'mws/0.4'
 passage_id: 'Ranking'
+title: 'restext://Scoring_Rank_Title'
 layout: 'ranking'
 nodes:
 - type: 'let'
@@ -23,61 +34,73 @@ nodes:
 - type: 'let'
   var: 'top_score'
   expr: 'players_ranked[0].points'
-- type: 'text'
-  value: 'restext://Scoring_Rank_1st'
-  style: 'rank-degree'
-- type: 'text'
-  value: '{players_ranked[0].player_name}'
-  style: 'rank-name'
-- type: 'conditional'
-  if: 'players_ranked[0].points == top_score'
-  then:
-  - type: 'text'
-    value: '{icon:crown}'
-- type: 'break'
-- type: 'text'
-  value: 'restext://Scoring_Rank_2nd'
-  style: 'rank-degree'
-- type: 'text'
-  value: '{players_ranked[1].player_name}'
-  style: 'rank-name'
-- type: 'conditional'
-  if: 'players_ranked[1].points == top_score'
-  then:
-  - type: 'text'
-    value: ' {icon:crown}'
-- type: 'break'
-- type: 'conditional'
-  if: 'players >= 3'
-  then:
-  - type: 'text'
-    value: 'restext://Scoring_Rank_3rd'
-    style: 'rank-degree'
-  - type: 'text'
-    value: '{players_ranked[2].player_name}'
-    style: 'rank-name'
-  - type: 'conditional'
-    if: 'players_ranked[2].points == top_score'
-    then:
+- type: 'section'
+  style: 'rank-panel'
+  content:
+  - type: 'section'
+    style: 'rank-row'
+    content:
     - type: 'text'
-      value: ' {icon:crown}'
-  - type: 'break'
-- type: 'conditional'
-  if: 'players >= 4'
-  then:
-  - type: 'text'
-    value: 'restext://Scoring_Rank_4th'
-    style: 'rank-degree'
-  - type: 'text'
-    value: '{players_ranked[3].player_name}'
-    style: 'rank-name'
-  - type: 'conditional'
-    if: 'players_ranked[3].points == top_score'
-    then:
+      value: 'restext://Scoring_Rank_1st'
+      style: 'rank-degree'
     - type: 'text'
-      value: ' {icon:crown}'
-  - type: 'break'
+      value: '{players_ranked[0].player_name}'
+      style: 'rank-name'
+    - type: 'conditional'
+      if: 'players_ranked[0].points == top_score'
+      then:
+      - type: 'image'
+        asset: 'image://inputs/ranking_crown'
+  - type: 'section'
+    style: 'rank-row'
+    content:
+    - type: 'text'
+      value: 'restext://Scoring_Rank_2nd'
+      style: 'rank-degree'
+    - type: 'text'
+      value: '{players_ranked[1].player_name}'
+      style: 'rank-name'
+    - type: 'conditional'
+      if: 'players_ranked[1].points == top_score'
+      then:
+      - type: 'image'
+        asset: 'image://inputs/ranking_crown'
+  - type: 'conditional'
+    if: 'players >= 3'
+    then:
+    - type: 'section'
+      style: 'rank-row'
+      content:
+      - type: 'text'
+        value: 'restext://Scoring_Rank_3rd'
+        style: 'rank-degree'
+      - type: 'text'
+        value: '{players_ranked[2].player_name}'
+        style: 'rank-name'
+      - type: 'conditional'
+        if: 'players_ranked[2].points == top_score'
+        then:
+        - type: 'image'
+          asset: 'image://inputs/ranking_crown'
+  - type: 'conditional'
+    if: 'players >= 4'
+    then:
+    - type: 'section'
+      style: 'rank-row'
+      content:
+      - type: 'text'
+        value: 'restext://Scoring_Rank_4th'
+        style: 'rank-degree'
+      - type: 'text'
+        value: '{players_ranked[3].player_name}'
+        style: 'rank-name'
+      - type: 'conditional'
+        if: 'players_ranked[3].points == top_score'
+        then:
+        - type: 'image'
+          asset: 'image://inputs/ranking_crown'
 - type: 'link'
   label: 'restext://Common_Continue'
+  style: 'btn-brown'
   target: 'VarEndingsPassage'
   snapshot: true

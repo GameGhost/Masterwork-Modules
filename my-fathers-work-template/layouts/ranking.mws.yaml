@@ -1,0 +1,13 @@
+# Real three-layer composite, same technique as narration (VIEW-REQUIREMENTS.md §1.2/§1.7/§1.8):
+# leather_large background image node (style-layer-bg, same asset as narration/hub — confirmed
+# against Scoring-05-Rankings-dual-winner.png, not a distinct "dark stone panel" as an earlier pass
+# guessed). Outer main.png frame and the inner panel_ranking.png ranking table both applied via CSS
+# (see style.css's own comments — the table isn't border-image since its baked-in gold divider
+# lines need a uniform full-box stretch, not an edge-slice treatment). No footer — ranking has no
+# round progress bar.
+format: 'mws/0.4'
+layout_id: 'ranking'
+header:
+- type: 'image'
+  asset: 'image://backgrounds/leather_large'
+  style: 'layer-bg'

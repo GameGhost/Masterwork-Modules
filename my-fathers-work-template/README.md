@@ -35,9 +35,9 @@ of the catalog.
 | `prompt` (popup) | Layout Showcase hub's own pair | Bracket-cornered card + a fixed-size numeric input (reference: Module-11) |
 | `choice` (popup) | Layout Showcase hub's own trigger | Downgraded from a bespoke radio-select dialog to a generic bordered popup (reference: General-Standalone-Select-Dialog) — its real job is exercising the checkbox input style scoring needs |
 | `countdown_instructions` / `countdown_action` (popups, nested) | `Showcase_Popup_RevealCountdown` | Replaces the reference app's bespoke bidding/voting component — see below. Kept as its own demo passage since the nesting needs room a hub-inlined trigger doesn't have |
-| `score_panel` | `Scoring_01_ScoreEntry`, `Scoring_02_TieBreaker1`, `Scoring_03_TieBreaker2` | Parchment scroll on a purple gradient |
-| `ranking` | `Scoring_04_Ranking` | Dark stone list panel |
-| `game_complete` (popup) | `02_Ending`'s own popup | Pinned collage image + text + circular X close |
+| `score_panel` | `Scoring_01_ScoreEntry`, `Scoring_02_TieBreaker1`, `Scoring_03_TieBreaker2` | Purple leather background, parchment score card, section-wrapped highlighted rows |
+| `ranking` | `Scoring_04_Ranking` | Leather background, `panel_ranking.png` table with baked-in row dividers |
+| `game_complete` (popup) | `02_Ending`'s own popup | Pinned collage image + text + real close-button okay |
 
 `voting`/`bidding` are intentionally absent — the engine renders those two names through a bespoke
 `VotingPopupContent` component (see `RenderedPopupView.razor`), so no `layouts/` chrome or module

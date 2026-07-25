@@ -5,10 +5,20 @@
 # Vars.winner directly before navigating here, so this override needs nothing but the navigation
 # that was always the real point of this passage: Vars.ending was already decided by earlier
 # story branching, long before scoring.
+#
+# Styled per Module-13A/B-Ending*.png: plain `narration` (title AND subtitle both used, unlike
+# every other narration demo — the one screenshot that actually exercises the subtitle) with the
+# "continue to game over" action as the floating round orange arrow (button_forward_orange.png,
+# style: 'btn-forward' — see style.css's own "Ending narration" block) instead of an inline
+# bracketed link/popup trigger, fixed to the viewport corner regardless of scroll position
+# (matches 13A's "scrolled to top" and 13B's "scrolled to bottom" showing the button in the same
+# spot). Module-14-Ending-Gameover-popup.png shows this same button opening the game_complete
+# unlock popup directly — no separate confirmation step.
 ---
 format: 'mws/0.4'
 passage_id: 'VarEndingsPassage'
-title: 'Game Over'
+title: "Editor's Note"
+subtitle: 'August 1923'
 layout: 'narration'
 nodes:
 - type: 'assign'
@@ -26,6 +36,7 @@ nodes:
 - type: 'popup'
   layout: 'game_complete'
   label: 'The End'
+  style: 'btn-forward'
   header:
   - type: 'image'
     asset: 'image://backgrounds/image_photo'

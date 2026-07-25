@@ -16,6 +16,27 @@
  * rules below therefore use `em` (relative to the inherited, already-scaled computed size) wherever
  * the rule sizes actual reading text; `rem` is reserved for chrome that deliberately should NOT grow
  * with text — border widths, fixed-aspect button/backing art sized to match a background image.
+ *
+ * SIZING CONVENTION — which unit for which kind of value (not comprehensive; exceptions can exist,
+ * but any exception should have a reason, not just be whatever was convenient):
+ *   - Borders themselves: fixed `px` (border-image-width etc.) — every bordered layout/popup in
+ *     this file shares this already, so their corners scale identically regardless of viewport.
+ *   - Offsets *from* a border (the viewport's own outer frame, or a content box's own
+ *     border/background — a popup card, a bordered panel): fixed `px`, matching the border's own
+ *     px thickness, so the offset never drifts out of sync with it as the viewport resizes. The one
+ *     exception is text that overhangs a border on purpose (a title straddling a card's top edge) —
+ *     that offset may reasonably use `em`/`rem` of the *text's own* size instead, since it's tracking
+ *     the text, not the border.
+ *   - Popup *areas* (their own max-width/max-height, and their edge offsets from the viewport):
+ *     `vh`/`vw`, capped by a fixed max — e.g. `width: 94vw; max-width: 32rem` reads as "shrink with
+ *     a narrow viewport, but never grow past a sane fixed size on a wide one." `note`'s own
+ *     `min-width`/`max-width` pair (this file, further down) is the reference example.
+ *   - Padding/margin on elements sitting in ordinary relative flow (not tracking a border, not a
+ *     popup's own outer area): `rem`, not `em` — favored over `em` specifically so a later
+ *     font-size override on some ancestor can never silently compound into an unexpectedly large
+ *     padding/margin the way stacked `em` values can. Font-*size* itself is unaffected by this —
+ *     that still follows the FONT-SCALING CONVENTION above (`em` for reading text) — this rule is
+ *     about spacing values only.
  */
 
 /* ── Fonts ────────────────────────────────────────────────────────────────
@@ -133,9 +154,12 @@ input::-webkit-inner-spin-button {
 .mws-passage.layout-hub_early .mws-passage-body,
 .mws-passage.layout-hub_middle .mws-passage-body,
 .mws-passage.layout-hub_late .mws-passage-body,
+.mws-passage.layout-score_panel .mws-passage-body,
+.mws-passage.layout-ranking .mws-section.style-rank-panel
 .mws-popup-overlay.layout-note .mws-popup-content,
 .mws-popup-overlay.layout-note_clear .mws-popup-content,
-.mws-popup-overlay.layout-setup .mws-popup-content {
+.mws-popup-overlay.layout-setup .mws-popup-content,
+.mws-popup-overlay.layout-score_help .mws-popup-content {
     scrollbar-width: thin;
     scrollbar-color: rgba(230, 220, 195, 0.6) transparent;
 }
@@ -144,9 +168,12 @@ input::-webkit-inner-spin-button {
 .mws-passage.layout-hub_early .mws-passage-body::-webkit-scrollbar,
 .mws-passage.layout-hub_middle .mws-passage-body::-webkit-scrollbar,
 .mws-passage.layout-hub_late .mws-passage-body::-webkit-scrollbar,
+.mws-passage.layout-score_panel .mws-passage-body::-webkit-scrollbar,
+.mws-passage.layout-ranking .mws-section.style-rank-panel::-webkit-scrollbar,
 .mws-popup-overlay.layout-note .mws-popup-content::-webkit-scrollbar,
 .mws-popup-overlay.layout-note_clear .mws-popup-content::-webkit-scrollbar,
-.mws-popup-overlay.layout-setup .mws-popup-content::-webkit-scrollbar {
+.mws-popup-overlay.layout-setup .mws-popup-content::-webkit-scrollbar,
+.mws-popup-overlay.layout-score_help .mws-popup-content::-webkit-scrollbar {
     width: 0.35rem;
 }
 
@@ -154,16 +181,22 @@ input::-webkit-inner-spin-button {
 .mws-passage.layout-hub_early .mws-passage-body::-webkit-scrollbar-track,
 .mws-passage.layout-hub_middle .mws-passage-body::-webkit-scrollbar-track,
 .mws-passage.layout-hub_late .mws-passage-body::-webkit-scrollbar-track,
+.mws-passage.layout-score_panel .mws-passage-body::-webkit-scrollbar-track,
+.mws-passage.layout-ranking .mws-section.style-rank-panel::-webkit-scrollbar-track,
 .mws-popup-overlay.layout-note .mws-popup-content::-webkit-scrollbar-track,
 .mws-popup-overlay.layout-note_clear .mws-popup-content::-webkit-scrollbar-track,
-.mws-popup-overlay.layout-setup .mws-popup-content::-webkit-scrollbar-track {
+.mws-popup-overlay.layout-setup .mws-popup-content::-webkit-scrollbar-track,
+.mws-popup-overlay.layout-score_help .mws-popup-content::-webkit-scrollbar-track {
     background: transparent;
 }
 
 .mws-passage.layout-player_setup .mws-passage-body::-webkit-scrollbar-thumb,
+.mws-passage.layout-score_panel .mws-passage-body::-webkit-scrollbar-thumb,
+.mws-passage.layout-ranking .mws-section.style-rank-panel::-webkit-scrollbar-thumb,
 .mws-popup-overlay.layout-note .mws-popup-content::-webkit-scrollbar-thumb,
 .mws-popup-overlay.layout-note_clear .mws-popup-content::-webkit-scrollbar-thumb,
-.mws-popup-overlay.layout-setup .mws-popup-content::-webkit-scrollbar-thumb {
+.mws-popup-overlay.layout-setup .mws-popup-content::-webkit-scrollbar-thumb,
+.mws-popup-overlay.layout-score_help .mws-popup-content::-webkit-scrollbar-thumb {
     background-color: rgba(230, 220, 195, 0.6);
     border-radius: 999px;
 }
@@ -219,6 +252,10 @@ body {
     overflow: hidden;
 }
 
+.mws-section {
+    border: none;
+}
+
 /* max-width: none + margin: 0 override app.css's `@media (min-width: 48rem) { .mws-passage {
    max-width: 40rem; margin: 0 auto; padding: 1.5rem; } }` — a generic (no layout- qualifier) rule
    that otherwise caps every passage to 640px wide on anything ≥48rem. A 2-class `.layout-{id}`
@@ -235,7 +272,9 @@ body {
 .mws-passage.layout-introduction,
 .mws-passage.layout-hub_early,
 .mws-passage.layout-hub_middle,
-.mws-passage.layout-hub_late {
+.mws-passage.layout-hub_late,
+.mws-passage.layout-score_panel,
+.mws-passage.layout-ranking {
     position: relative;
     isolation: isolate;
     display: flex;
@@ -296,7 +335,9 @@ body {
 .mws-passage.layout-introduction .mws-image.style-layer-bg,
 .mws-passage.layout-hub_early .mws-image.style-layer-bg,
 .mws-passage.layout-hub_middle .mws-image.style-layer-bg,
-.mws-passage.layout-hub_late .mws-image.style-layer-bg {
+.mws-passage.layout-hub_late .mws-image.style-layer-bg,
+.mws-passage.layout-score_panel .mws-image.style-layer-bg,
+.mws-passage.layout-ranking .mws-image.style-layer-bg {
     position: fixed;
     inset: 0;
     width: 100vw;
@@ -350,7 +391,9 @@ body {
 .mws-passage.layout-introduction::after,
 .mws-passage.layout-hub_early::after,
 .mws-passage.layout-hub_middle::after,
-.mws-passage.layout-hub_late::after {
+.mws-passage.layout-hub_late::after,
+.mws-passage.layout-score_panel::after,
+.mws-passage.layout-ranking::after {
     content: '';
     position: fixed;
     inset: 0;
@@ -391,12 +434,19 @@ body {
     border-image-source: url(image://borders/hub_brown);
 }
 
+.mws-passage.layout-score_panel::after,
+.mws-passage.layout-ranking::after {
+    border-image-source: url(image://borders/main);
+}
+
 .mws-passage.layout-player_setup .mws-passage-header,
 .mws-passage.layout-narration .mws-passage-header,
 .mws-passage.layout-introduction .mws-passage-header,
 .mws-passage.layout-hub_early .mws-passage-header,
 .mws-passage.layout-hub_middle .mws-passage-header,
-.mws-passage.layout-hub_late .mws-passage-header {
+.mws-passage.layout-hub_late .mws-passage-header,
+.mws-passage.layout-score_panel .mws-passage-header,
+.mws-passage.layout-ranking .mws-passage-header {
     flex-shrink: 0;
     text-align: center;
     z-index: 1;
@@ -418,14 +468,16 @@ body {
 .mws-passage.layout-introduction .mws-passage-title,
 .mws-passage.layout-hub_early .mws-passage-title,
 .mws-passage.layout-hub_middle .mws-passage-title,
-.mws-passage.layout-hub_late .mws-passage-title {
+.mws-passage.layout-hub_late .mws-passage-title,
+.mws-passage.layout-score_panel .mws-passage-title,
+.mws-passage.layout-ranking .mws-passage-title {
     font-size: 1.6em;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     color: #828C93;
     opacity: 1;
     text-shadow: 0.04em -0.04em 0.04em rgba(255, 255, 255, 0.8),
-        -0.1em 0 0 #111, 0.1em 0 0 #111, 0 -0.15em 0 #111, 0 0.1em 0 #111, 
+        -0.1em 0 0 #111, 0.1em 0 0 #111, 0 -0.15em 0 #111, 0 0.1em 0 #111,
         -0.1em -0.1em 0 #111, 0.1em -0.1em 0 #111, -0.1em 0.1em 0 #111, 0.1em 0.1em 0 #111
 }
 
@@ -433,14 +485,15 @@ body {
 .mws-passage.layout-introduction .mws-passage-subtitle,
 .mws-passage.layout-hub_early .mws-passage-subtitle,
 .mws-passage.layout-hub_middle .mws-passage-subtitle,
-.mws-passage.layout-hub_late .mws-passage-subtitle {
+.mws-passage.layout-hub_late .mws-passage-subtitle,
+.mws-passage.layout-score_panel .mws-passage-subtitle {
     font-size: 1.2em;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     color: #828C93;
     opacity: 1;
     text-shadow:
-        -0.1em 0 0 #111, 0.1em 0 0 #111, 0 -0.15em 0 #111, 0 0.1em 0 #111, 
+        -0.1em 0 0 #111, 0.1em 0 0 #111, 0 -0.15em 0 #111, 0 0.1em 0 #111,
         -0.1em -0.1em 0 #111, 0.1em -0.1em 0 #111, -0.1em 0.1em 0 #111, 0.1em 0.1em 0 #111
 }
 
@@ -559,11 +612,17 @@ body {
    pseudo-elements, which are a completely separate selector the button rule never touches, so a
    `.style-button`/`.style-btn-*` link was still getting brackets glued onto its own graphical
    button art on top of everything else. `:not(.style-button):not(.style-btn-brown):not
-   (.style-btn-green):not(.style-btn-red)` on the `.mws-link`/`.mws-popup-trigger` part excludes
-   those variants from every rule here, brackets included — a graphical button never wants inline
-   brackets regardless of specificity. */
+   (.style-btn-green):not(.style-btn-red)` on `.mws-link` (`:not(.style-btn-forward):not
+   (.style-countdown-trigger)` on `.mws-popup-trigger` — the ending's own floating round arrow
+   button, and countdown_action's own "Start Bidding" trigger nested inside a countdown_instructions
+   popup hosted on a narration passage; see the "Ending narration" block near the end of this file
+   and the countdown_action block further up) excludes those variants from every rule here,
+   brackets included — a graphical button never wants inline brackets regardless of specificity.
+   Note this exclusion only works at all because RenderedPopupView.razor now puts
+   `style-@Node.Style` on the closed-state trigger button too, not just the open overlay div — a
+   real gap fixed alongside this layout's own work (see the code repo's own commit). */
 :where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red),
-:where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-popup-trigger {
+:where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-popup-trigger:not(.style-btn-forward):not(.style-countdown-trigger) {
     display: inline;
     position: relative;
     background: none;
@@ -577,7 +636,7 @@ body {
 }
 
 :where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red)::before,
-:where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-popup-trigger::before {
+:where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-popup-trigger:not(.style-btn-forward):not(.style-countdown-trigger)::before {
     content: '';
     position: absolute;
     left: 0;
@@ -591,7 +650,7 @@ body {
 }
 
 :where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red)::after,
-:where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-popup-trigger::after {
+:where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-popup-trigger:not(.style-btn-forward):not(.style-countdown-trigger)::after {
     content: '';
     position: absolute;
     right: 0;
@@ -605,12 +664,12 @@ body {
 }
 
 :where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red):hover:not(:disabled),
-:where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-popup-trigger:hover:not(:disabled) {
+:where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-popup-trigger:not(.style-btn-forward):not(.style-countdown-trigger):hover:not(:disabled) {
     color: #b06a35;
 }
 
 :where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red):active:not(:disabled),
-:where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-popup-trigger:active:not(:disabled) {
+:where(.mws-passage.layout-narration, .mws-passage.layout-introduction) .mws-popup-trigger:not(.style-btn-forward):not(.style-countdown-trigger):active:not(:disabled) {
     color: #5c3216;
 }
 
@@ -753,6 +812,12 @@ body {
         padding: 50px 0 40px;
     }
 
+    .mws-passage.layout-score_panel,
+    .mws-passage.layout-ranking {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .mws-passage.layout-player_setup .mws-passage-body {
         display: flex;
         flex-direction: column;
@@ -781,7 +846,9 @@ body {
     .mws-passage.layout-introduction::after,
     .mws-passage.layout-hub_early::after,
     .mws-passage.layout-hub_middle::after,
-    .mws-passage.layout-hub_late::after {
+    .mws-passage.layout-hub_late::after,
+    .mws-passage.layout-score_panel::after,
+    .mws-passage.layout-ranking::after {
         transform: scaleX(1.6667);
     }
 
@@ -1082,7 +1149,6 @@ body {
     background: transparent;
     box-shadow: none;
     color: #410404;
-    font-size: 1.2rem; /* don't inherit the passage text size */
     font-weight: 600;
     text-align: center;
 }
@@ -1604,7 +1670,6 @@ body {
     box-shadow: none;
     border-radius: 0;
     color: #410404;
-    font-size: 1.2rem;
     font-weight: 600;
     text-align: center;
 }
@@ -1625,7 +1690,7 @@ body {
    inline within this content, in its normal (unopened) closed state — matches the reference's
    green "START BIDDING" button sitting directly below the instructions text. Reuses the shared
    button sizing block and the green variant image (see that block's own comment). */
-.mws-popup-overlay.layout-countdown_instructions .mws-popup-trigger {
+.mws-popup-overlay.layout-countdown_instructions .mws-popup-trigger.style-countdown-trigger {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -1698,15 +1763,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 4rem;
     margin: 0;
+    margin-top: -1.3rem;
     line-height: 1;
-    font-size: 3.2em;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: #828C93;
-    text-shadow: 0.04em -0.04em 0.04em rgba(255, 255, 255, 0.8),
-        -0.1em 0 0 #111, 0.1em 0 0 #111, 0 -0.15em 0 #111, 0 0.1em 0 #111,
-        -0.1em -0.1em 0 #111, 0.1em -0.1em 0 #111, -0.1em 0.1em 0 #111, 0.1em 0.1em 0 #111;
+    text-shadow: 0.1rem -0.1rem 0.1rem rgba(255, 255, 255, 0.8),
+        -0.2rem 0 0 #111, 0.2rem 0 0 #111, 0 -0.2rem 0 #111, 0 0.2rem 0 #111,
+        -0.2rem -0.2rem 0 #111, 0.2rem -0.2rem 0 #111, -0.2rem 0.2rem 0 #111, 0.2rem 0.2rem 0 #111;
     opacity: 0;
 }
 
@@ -1898,151 +1964,608 @@ body {
     z-index: 1001;
 }
 
-/* ── score_panel popup (ScoreEntry / TieBreaker1 / TieBreaker2) ──────────── */
-
+/* ── score_panel (ScoreEntry / TieBreaker1 / TieBreaker2) ──────────────────
+ * Real assets throughout, replacing the earlier flat-gradient placeholder pass: leather_purple.png
+ * background (layout chrome, style-layer-bg — see the .mws-image.style-layer-bg/::after rules
+ * above, now shared with this layout), the same main.png outer frame as every other bordered
+ * layout, and popup_parchment_border.png as the actual score-table card.
+ *
+ * The card is now a real `section style: 'score-card'` (see the passages' own comment), not
+ * `.mws-passage-body` itself — `.mws-passage-body` is just a plain flex column laying out the
+ * card and Continue as two ordinary siblings, so Continue sits in normal document flow right
+ * where the card's own (possibly shrunk-and-scrolling) bottom edge actually ends, rather than
+ * needing to be pinned to the true viewport edge to "track" it. Title enlarged and pulled down
+ * over the card's own top border via a negative margin on the header (kept at a higher z-index
+ * than the card so it paints on top, not under it — normal flow paint order would otherwise put
+ * the later card above it). */
 .mws-passage.layout-score_panel {
-    background: radial-gradient(ellipse at center, #6b2d91 0%, #3a1550 70%, #24102e 100%);
-    padding: 2rem 1rem;
-    min-height: 60vh;
-    display: flex;
-    flex-direction: column;
+    padding: 20px 30px 40px;
+    color: #e5e0d8;
+    font-size: 1.25em;
     align-items: center;
 }
 
-.mws-passage.layout-score_panel .mws-passage-title {
-    color: #f2e6c8;
-    text-align: center;
-    font-size: 2em;
-    text-shadow: 4px 6px 4px rgba(0, 0, 0, 0.8);
+.mws-passage.layout-score_panel .mws-passage-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-height: 0;
+    width: 100%;
 }
 
-.mws-passage.layout-score_panel .mws-passage-body {
-    background-image: url(image://backgrounds/scoring);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-color: #f2e6c8;
-    color: #2b2016;
-    padding: 2.5rem 2rem 3rem;
+.mws-passage.layout-score_panel .mws-passage-header,
+.mws-passage.layout-ranking .mws-passage-header {
+    position: relative;
+    z-index: 2;
+    margin-top: 70px;
+    margin-bottom: -3rem;
+}
+
+.mws-passage.layout-score_panel .mws-passage-title,
+.mws-passage.layout-ranking .mws-passage-title {
+    font-size: 3.5em;
+    text-transform: none;
+    font-variant: small-caps;
+}
+
+/* Shrinks on narrow viewports (§ narrow-viewport media query further up) so a long title doesn't
+   wrap onto a second line within the card-width-constrained header. */
+@media (max-width: 35rem) {
+    .mws-passage.layout-score_panel .mws-passage-title,
+    .mws-passage.layout-ranking .mws-passage-title {
+        font-size: 2.2em;
+    }
+}
+
+/* The card itself — was .mws-passage-body's own border/scroll treatment, now on this inner
+   section instead so Continue (a sibling below it, not inside it) can sit in normal flow right
+   at its actual bottom edge. flex: 0 1 auto + min-height: 0 + overflow-y: auto is the usual
+   "shrink and scroll before overflowing the flex column" trio (§1.7) — max-height is a firm cap
+   (content this short rarely needs it), the flex-shrink is what actually saves a short viewport. */
+.mws-passage.layout-score_panel .mws-section.style-score-card {
+    flex: 0 1 auto;
+    min-height: 0;
     width: 100%;
     max-width: 34rem;
+    max-height: calc(100vh - 170px);
+    overflow-y: auto;
     box-sizing: border-box;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 20px;
+    border-image-source: url(image://backgrounds/popup_parchment_border);
+    border-image-slice: 6% 4% fill;
+    border-image-width: 20px;
+    border-image-repeat: stretch;
+    background: transparent;
+    color: #2b2016;
+    text-align: center;
+    padding: 8px 24px 24px;
+}
+
+/* Shorter viewports: the card's own top/bottom breathing room shrinks toward a minimal buffer
+   before its internal scrollbar has to engage — matches the outer .mws-passage padding above,
+   which does the same thing for the space around the whole card. */
+@media (max-height: 40rem) {
+    .mws-passage.layout-score_panel {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .mws-passage.layout-score_panel .mws-passage-header,
+    .mws-passage.layout-ranking .mws-passage-header {
+        margin-top: 20px;
+    }
+
+    .mws-passage.layout-score_panel .mws-section.style-score-card {
+        padding-top: 4px;
+        padding-bottom: 8px;
+    }
+}
+
+/* Header row is a section too (`score-header-row`, no highlight) — sharing the exact same flex
+   geometry as the data rows below (see .style-score-row further down) is the only way to
+   guarantee the value-column heading lands centered directly over its own input/checkbox column,
+   rather than two independently-positioned pieces that only approximately lined up before. Both
+   the heading and its row counterparts (.style-score-input/-count-input/-check-input, further
+   down) share one `flex: 0 1 8.5rem` value-column basis — shrinking together off the exact same
+   starting width, not independently, is what keeps the heading centered over its column even as
+   the row narrows, rather than the two drifting apart. */
+.mws-passage.layout-score_panel .mws-section.style-score-header-row,
+.mws-passage.layout-score_panel .mws-section.style-score-row {
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 1rem 0.3rem 1.5rem;
+}
+
+.mws-passage.layout-score_panel .mws-section.style-score-header-row {
+    font-size: 1.4em;
+    align-items: flex-end;
+    margin-bottom: 0;
+}
+
+@media (max-width: 35rem) {
+    .mws-passage.layout-score_panel .mws-section.style-score-header-row,
+    .mws-passage.layout-score_panel .mws-section.style-score-row {
+        padding-left: 0.75rem;
+    }
+}
+
+.mws-passage.layout-score_panel .style-player-heading {
+    flex: 1;
+    text-align: left;
 }
 
 .mws-passage.layout-score_panel .style-player-heading,
-.mws-passage.layout-score_panel .style-player-label {
-    display: inline-block;
-    width: 55%;
+.mws-passage.layout-score_panel .style-score-heading {
     font-weight: 700;
 }
 
-.mws-passage.layout-score_panel .style-score-heading,
-.mws-passage.layout-score_panel .style-score-input,
-.mws-passage.layout-score_panel .style-check-input,
-.mws-passage.layout-score_panel .style-count-input {
-    display: inline-block;
-    width: 40%;
+.mws-passage.layout-score_panel .style-score-heading {
+    flex: 0 1 9.5rem;
+    min-width: 0;
+    text-align: center;
+}
+
+/* Each row is a real `section` (not a flat text/input pair) so player_highlight.png — a white
+   alpha shape, not a colored sprite (measured: solid ~251,251,251 RGB, alpha varying only at the
+   soft brush edges) — can be applied as a per-row background via mask-image instead of being
+   painted directly (which would just show a faint white wash, not the reference's purple band).
+   The purple fill color comes from CSS (leather_purple.png's own dominant hue, sampled, darkened
+   further per your note), not the asset — "color inverted" in the original design note. A
+   ::before behind the row's own z-index:0 stacking context (not the section element itself) since
+   mask-image would otherwise mask the row's real text/input content too, not just its background.
+   The left border sits on the row's own border-box, outside the ::before's inset:0 padding-box —
+   the two don't fight over the same edge pixels. */
+.mws-passage.layout-score_panel .mws-section.style-score-row {
+    position: relative;
+    z-index: 0;
+    margin: 0;
+}
+
+.mws-passage.layout-score_panel .mws-section.style-score-row::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    -webkit-mask-image: url(image://inputs/player_highlight);
+    mask-image: url(image://inputs/player_highlight);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    background-color: rgba(55, 20, 80, 0.7);
+    margin: -5px 0;
+}
+
+.mws-passage.layout-score_panel .style-player-label {
+    flex: 1;
+    text-align: left;
+    color: #f2e6c8;
+    font-size: 1.05em;
 }
 
 .mws-passage.layout-score_panel .style-score-input,
-.mws-passage.layout-score_panel .style-count-input {
-    padding: 0.3em 0.5em;
-    border: 1px solid #8a6d3b;
-    border-radius: 0.2rem;
-    background: #ece0c0;
+.mws-passage.layout-score_panel .style-count-input,
+.mws-passage.layout-score_panel .style-check-input {
+    flex: 0 1 8.5rem;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
 
-.mws-passage.layout-score_panel .mws-link {
+/* max-width (not a fixed width) + a fixed height, no aspect-ratio lock — per your note, the input
+   itself can shrink narrower on a tight viewport (its own value-column above already shrinks
+   first, in lockstep with the heading; this is the fallback once the column itself has nowhere
+   left to give) without needing to preserve input_small.png's own native proportions doing it. */
+.mws-passage.layout-score_panel .style-score-input input,
+.mws-passage.layout-score_panel .style-count-input input {
     display: block;
+    width: 100%;
+    max-width: 8rem;
+    height: 2.6rem;
+    background-image: url(image://inputs/input_small);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    color: #F2B781;
     text-align: center;
-    margin-top: 1.5em;
+    font-size: 0.9em;
+    font-weight: 700;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
 }
 
-/* ── ranking popup ────────────────────────────────────────────────────────── */
+/* Smaller than the shared 3.5rem checkbox (that size is tuned for the `choice` popup's own
+   looser layout) — at full size it was inflating this layout's own, deliberately tighter row
+   height. */
+.mws-passage.layout-score_panel .style-check-input input[type="checkbox"] {
+    margin: -0.5em;
+}
 
+/* Normal flow (not position: fixed) — a plain sibling of .style-score-card, so it naturally sits
+   right below the card's own actual bottom edge (which itself may be shorter than its own
+   max-height, or scrolling internally) instead of a fixed distance from the true viewport edge. */
+.mws-passage.layout-score_panel .mws-link {
+    flex-shrink: 0;
+    margin: -2rem 0 0;
+}
+
+/* Help trigger (Scoring-02-Score-Entry-Help-popup.png) — a plain round question-mark button
+   fixed to the viewport corner, matching every other graphical floating trigger in this file
+   (note's own fixed footer, the ending's forward button below). right/bottom in px, not rem —
+   every other fixed-position edge offset in this file is px, matching the outer border's own
+   fixed border-image-width (42px/40px); rem would drift out of sync with that border's actual
+   on-screen thickness if the browser's own root font-size ever differs from 16px, even though
+   --mws-text-scale itself doesn't affect rem (it scales body's font-size, not the root's). Scoped
+   by style (not just layout) for the same reason the ending's own forward button is — relies on
+   RenderedPopupView.razor now putting style-@Node.Style on the closed-state trigger button too
+   (see that block's own note). */
+.mws-passage.layout-score_panel .mws-popup-trigger.style-help-trigger {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 1001;
+    width: 3.5rem;
+    aspect-ratio: 1;
+    background-image: url(image://inputs/button_question);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+@media (max-width: 45.99rem) {
+    .mws-passage.layout-score_panel .mws-popup-trigger.style-help-trigger {
+        right: 0;
+        bottom: 30px;
+    }
+}
+
+/* score_help popup — same parchment card as score_panel's own body. min-width (not width: 100%)
+   for the same reason `note`'s own container uses it, not the width: 100% every other popup here
+   gets away with: .mws-popup-overlay is a display: flex; row (app.css), and a flex item's own
+   width: 100% can resolve against its content's min-content size instead of the intended
+   percentage in that context, which is what was silently causing the "long sentence refuses to
+   wrap, horizontal scrollbar appears instead" bug — min-width sidesteps the ambiguity entirely.
+   min-width: 50vh / max-width: 512px matches `note`'s own popup-area sizing exactly (SIZING
+   CONVENTION at the top of this file) — vh/vw normally, capped at a fixed px size, with a
+   dedicated 94vw override below. font-size: em, not rem — rem doesn't respond to
+   --mws-text-scale (FONT-SCALING CONVENTION at the top of this file); this is reading text
+   (the help body), not chrome, so it needs to track the player's own text-size preference. */
+.mws-popup-overlay.layout-score_help .mws-popup-container {
+    position: relative;
+    min-width: 50vh;
+    max-width: 512px;
+    height: auto;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 20px;
+    border-image-source: url(image://backgrounds/popup_parchment_border);
+    border-image-slice: 6% 4% fill;
+    border-image-width: 20px;
+    border-image-repeat: stretch;
+    background: transparent;
+    color: #2b2016;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 24px;
+}
+
+/* Placed *after* the base rule above (not grouped into note's own earlier media query, where this
+   used to live) — with tied specificity, the later rule in source order wins on a cascade
+   conflict, so putting this before the base rule was silently nullifying it whenever the media
+   query matched (the actual cause of "close button ends up positioned inside the content area on
+   narrow" — the container was never actually shrinking to 94vw, the base rule's own 512px cap was
+   winning instead). */
+@media (max-width: 45.99rem) {
+    .mws-popup-overlay.layout-score_help .mws-popup-container {
+        min-width: 94vw;
+        max-width: 94vw;
+        overflow: visible;
+        max-height: 84vh;
+    }
+}
+
+/* Text sits in its own dark-highlighted section — same player_highlight.png mask technique as
+   score_panel's own rows, just black/transparent instead of purple. */
+.mws-popup-overlay.layout-score_help .mws-section.style-help-highlight {
+    position: relative;
+    z-index: 0;
+    padding: 1rem 1.25rem;
+    margin: 0.5rem 0;
+}
+
+.mws-popup-overlay.layout-score_help .mws-section.style-help-highlight::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    -webkit-mask-image: url(image://inputs/player_highlight);
+    mask-image: url(image://inputs/player_highlight);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+/* Positioned over the card's own top-right *corner* (negative offset, overlapping the border
+   itself) rather than inset within the padding — matches Scoring-02's own reference more closely
+   than an inset placement does. px, not rem — the card's own border-width (above) is 20px, and
+   this needs to track that same fixed edge, not the root font-size. font-size: 0 alongside
+   color: transparent — belt and suspenders against the button's own text ("Close") ever becoming
+   visible; the button_close.png background image is the only thing meant to render. */
+.mws-popup-overlay.layout-score_help .mws-popup-footer {
+    position: absolute;
+    top: -26px;
+    right: -26px;
+    margin: 0;
+}
+
+/* At 94vw the card leaves almost no slack outside itself (.mws-popup-overlay's own padding is a
+   fixed 16px, app.css) — nowhere near the 26px+40px the corner-overlap offset above needs, so the
+   button was rendering past the actual viewport edge, invisible without a horizontal scroll.
+   Narrow mode pulls it to a small positive inset instead, guaranteed to sit inside the card's own
+   24px padding regardless of viewport width. */
+@media (max-width: 45.99rem) {
+    .mws-popup-overlay.layout-score_help .mws-popup-footer {
+        top: 8px;
+        right: 8px;
+    }
+}
+
+.mws-popup-overlay.layout-score_help .mws-popup-cancel {
+    width: 2.5rem;
+    aspect-ratio: 1;
+    background-image: url(image://inputs/button_close);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: transparent;
+    font-size: 0;
+    line-height: 0;
+    padding: 0;
+}
+
+/* ── ranking ─────────────────────────────────────────────────────────────
+ * leather_large.png background (same asset as narration/hub, not a distinct "dark stone panel" —
+ * see layouts/ranking.mws.yaml's own comment) + the shared main.png outer frame.
+ *
+ * Unlike score_panel's card (or any other bordered panel in this file), panel_ranking.png's three
+ * gold divider lines are pixel-baked into the art itself, not drawn by CSS — so this is the one
+ * panel that can't be allowed to shrink to fit a short viewport the way every other card here does
+ * (shrinking would slide the rows out of registration with the lines). Measured directly off the
+ * asset (System.Drawing.Bitmap.GetPixel down the vertical center, looking for the bright gold
+ * highlight pixel of each line): divider centers sit at y=234.5/350.5/465.5 of the image's 698px
+ * height — i.e. at exactly 1/3, 1/2, and 2/3 of the way from y=6em to y=15em if the image is
+ * treated as 6 equal "row units" tall (6 × 115.5 ≈ 698) with the outer unit at each end left blank
+ * and the middle four holding one row each, dividers falling exactly on the row boundaries. That
+ * "6 units, blank-row/row/row/row/row/blank-row" model is what .style-rank-panel/.style-rank-row
+ * below reconstruct — not a coincidence, it's what the asset's own proportions came out to.
+ *
+ * Because that alignment is pixel-exact, the panel's own height must scale in lockstep with the
+ * text/crown it holds (not with the viewport) — height and .style-rank-row's font-size (below) are
+ * both expressed in em for exactly that reason, unlike every fixed-px measurement elsewhere in this
+ * file. width is left to aspect-ratio rather than an independent responsive cap: the divider lines
+ * are full-width horizontal lines, so stretching width alone never moves their vertical position,
+ * but letting height and width scale by different factors (the old aspect-ratio-locked-to-a-
+ * shrinkable-width approach) would have — hence the panel no longer shrinks on any axis, and the
+ * .mws-passage-body wrapper is a plain scroll region instead (§1.7 single-scroll-shell, same
+ * flex:1;min-height:0;overflow pattern as hub_early/middle/late's own body) so a viewport too small
+ * for the fixed panel scrolls to it rather than squeezing it. 2-3 player games leave the unused
+ * row(s) blank rather than resizing the panel — no baked-in 2-row/3-row art exists to switch to. */
 .mws-passage.layout-ranking {
-    background: linear-gradient(180deg, #2b2b2e 0%, #1a1a1c 100%);
+    padding: 30px;
     color: #e5e0d8;
-    padding: 2rem;
-    border: 3px solid #55555a;
-    border-radius: 0.5rem;
+    font-size: 1.25em;
+    align-items: center;
 }
 
-.mws-passage.layout-ranking .mws-passage-title {
-    text-align: center;
-    color: #e5e0d8;
+.mws-passage.layout-ranking .mws-passage-body {
+    flex: 1;
+    min-height: 0;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em 12px 3em;
+}
+
+/* height: 18em = 6 row-units × 3em/unit (see the block comment above) — fixed, not aspect-ratio-
+   driven-by-width, so it never goes out of registration with the baked divider lines. width follows
+   from height via aspect-ratio, at the image's own native ratio (measured: 1734×698px), so the
+   panel never stretches non-uniformly on either axis. box-sizing: border-box so the 3em top/bottom
+   padding below (one blank row-unit each, per the model above) is *inside* that 18em, not additive
+   to it — the content box is exactly 12em = 4 row-units, matching .style-rank-row's own flex-basis
+   total (below) once its font-size nesting is accounted for. Left/right padding is independent of
+   the row-unit math (just breathing room off the frame's own side border) — em, not px, since
+   (unlike every other border-offset in this file) this whole panel is deliberately text-scaled, not
+   viewport-scaled; a px value here would drift out of proportion with the frame as text-scale
+   changes while the frame itself (part of this same em-sized image) grows or shrinks around it. */
+.mws-passage.layout-ranking .mws-section.style-rank-panel {
+    flex-shrink: 0;
+    height: 18em;
+    width: 800px;
+    max-width: 96vw;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 75px 60px;
+    border-image-source: url(image://backgrounds/panel_ranking);
+    border-image-slice: 10.75% 3.1% fill;
+    border-image-width: 60px 45px;
+    border-image-repeat: stretch;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5vw;
+}
+
+/* flex: 0 0 1.5em is 3em (one row-unit) expressed in THIS element's own font-size (2em, set right
+   here) rather than its parent's — 1.5 × 2em = 3em in the parent's terms, so the row still claims
+   exactly one row-unit of the panel's height despite the nested font-size doubling. That doubling
+   is the actual "text 2x larger" request: everything below inherits it, so rank-degree/rank-name
+   (no font-size of their own) and the crown image's existing `width: 1.4em` (style-rank-panel's own
+   .mws-image rule, unchanged) all render at exactly 2x their old size as a side effect, without
+   needing their own separate size bump. Grid, not flex, for the row's own three cells — the crown
+   column is a fixed 1.4em track whether or not a given row's conditional crown node actually
+   rendered, which is what keeps every row's name flush against the same right edge regardless of
+   who's tied for first; a flex row with margin-right: auto (the old approach) shifted the name over
+   whenever a neighboring row's crown added extra trailing width. */
+.mws-passage.layout-ranking .mws-section.style-rank-row {
+    flex: auto;
+    font-size: 2em;
+    display: grid;
+    grid-template-columns: auto 1fr 1.4em;
+    column-gap: 0.5em;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .mws-passage.layout-ranking .style-rank-degree {
-    display: inline-block;
-    width: 3em;
     color: #e0a94a;
     font-weight: 700;
 }
 
 .mws-passage.layout-ranking .style-rank-name {
+    color: #e5e0d8;
+    text-align: right;
+}
+
+.mws-passage.layout-ranking .mws-image {
     display: inline-block;
-    min-width: 10em;
+    width: 1.4em;
+    justify-self: center;
+    background: transparent;
+    padding: 0;
+    margin: -0.6em 0 0;
 }
 
 .mws-passage.layout-ranking .mws-link {
     display: block;
     text-align: center;
-    margin-top: 1.5em;
+    margin: 0 auto;
 }
 
-/* ── game_complete popup ("ending unlocked") ─────────────────────────────── */
-
+/* ── game_complete popup ("ending unlocked") ───────────────────────────────
+ * Module-14-Ending-Gameover-popup.png: the *long* popup_parchment_border.png (984×731 — not the
+ * `_short` 985×634 variant end_of_round/end_of_generation use; the earlier placeholder pass used
+ * neither, a flat #1a1310 fill), pinned photo-collage header image, and a real button_close.png
+ * Okay button positioned over the card's own top-right corner instead of a CSS-drawn circle.
+ * min-width, not width: 100% — see score_help's own identical comment for why (a flex-row
+ * ancestor, .mws-popup-overlay, can otherwise resolve width: 100% against content size instead of
+ * the intended percentage). min-width: 50vh / max-width: 512px matches note's/score_help's own
+ * popup-area sizing (SIZING CONVENTION at the top of this file); the narrow-viewport 94vw override
+ * sits right after this rule (not grouped into note's own earlier media query) for the same
+ * cascade-order reason explained in score_help's own identical comment. font-size: em, not rem —
+ * same FONT-SCALING CONVENTION reasoning as score_help. */
 .mws-popup-overlay.layout-game_complete .mws-popup-container {
     position: relative;
-    background: #1a1310;
-    color: #e8dcc8;
-    border: 3px solid #6b5636;
-    border-radius: 0.4rem;
-    padding: 2rem;
-    max-width: 30rem;
+    min-width: 50vh;
+    max-width: 512px;
+    height: auto;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 20px;
+    border-image-source: url(image://backgrounds/popup_parchment_border);
+    border-image-slice: 6% 4% fill;
+    border-image-width: 20px;
+    border-image-repeat: stretch;
+    background: transparent;
+    color: #2b2016;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 24px;
+}
+
+@media (max-width: 45.99rem) {
+    .mws-popup-overlay.layout-game_complete .mws-popup-container {
+        min-width: 94vw;
+        max-width: 94vw;
+        overflow: visible;
+    }
 }
 
 .mws-popup-overlay.layout-game_complete .mws-popup-header .mws-image {
     display: block;
-    width: 100%;
-    border: 4px solid #fff;
-    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.5);
-    margin-bottom: 1em;
-    transform: rotate(-1deg);
+    width: 85%;
+    margin: -3.5rem auto 1rem;
     background: transparent;
     padding: 0;
 }
 
 .style-popup-title-highlight {
     font-weight: 700;
-    color: #f2c879;
+    color: #7a1f1f;
 }
 
+/* Overlapping the card's own top-right corner (negative offset), not inset within the padding —
+   matches score_help's own identical correction, and Module-14's own reference more closely. px,
+   not rem — same reasoning as score_help's own identical rule. */
 .mws-popup-overlay.layout-game_complete .mws-popup-footer {
     position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
+    top: -26px;
+    right: -26px;
     margin: 0;
 }
 
 .mws-popup-overlay.layout-game_complete .mws-popup-okay {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    background: #7a1f1f;
-    color: transparent;
+    width: 2.5rem;
+    aspect-ratio: 1;
+    background-image: url(image://inputs/button_close);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
     border: none;
-    position: relative;
+    border-radius: 0;
+    color: transparent;
+    font-size: 0;
+    line-height: 0;
     padding: 0;
 }
 
-.mws-popup-overlay.layout-game_complete .mws-popup-okay::after {
-    content: '✕';
-    color: #fff;
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
+/* ── Ending narration — the "continue to game over" trigger ─────────────────
+ * Module-13A/B-Ending*.png: identical to narration otherwise (same layout, same title+subtitle —
+ * see the shared .mws-passage-title/-subtitle rules above), just this one graphical floating
+ * button (button_forward_orange.png) instead of an inline bracketed link/popup trigger. Fixed to
+ * the viewport corner like score_panel's own help trigger above, not the content flow, so it stays
+ * reachable regardless of scroll position (Module-13B's own "scrolled to bottom" screenshot shows
+ * it in the exact same spot as 13A's "scrolled to top" one). Works for either a `link` or a
+ * (auto-display or label-triggered) `popup` — VarEndingsPassage uses it on the popup that shows
+ * the game_complete unlock. right/bottom in px — see score_panel's own help-trigger comment for
+ * why every fixed-position edge offset in this file matches the outer border's own px units
+ * instead of rem. */
+.mws-passage.layout-narration .mws-link.style-btn-forward,
+.mws-passage.layout-narration .mws-popup-trigger.style-btn-forward,
+.mws-passage.layout-introduction .mws-link.style-btn-forward,
+.mws-passage.layout-introduction .mws-popup-trigger.style-btn-forward {
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+    z-index: 1001;
+    width: 4rem;
+    aspect-ratio: 1;
+    background-image: url(image://inputs/button_forward_orange);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: transparent;
+    padding: 0;
+    cursor: pointer;
 }
