@@ -5,6 +5,11 @@
 # _variables.yaml (populated only by the never-reached ScoreEntryP1..P5 chain today) and get
 # reused for real by _ScoreEntry.mws.yaml.
 variables:
+  scoreA: int
+  scoreB: int
+  scoreC: int
+  scoreD: int
+
   # Tie round 1: did this player complete their Masterwork? Self-reported by the players at the
   # table, not derived from any tracked game state.
   score_mwA: bool
@@ -25,3 +30,5 @@ variables:
   winnerC: bool
   winnerD: bool
   winnerCount: int
+
+  winner: 'string'

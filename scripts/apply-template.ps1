@@ -12,10 +12,14 @@
     images/setup/ — those are the target module's own scenario-specific content.
 
     Also copies the template's _Setup_01..07/_Scoring_01..04 passages verbatim (same filenames) into
-    the target's passages-override/, and merges every restext key they reference — plus
-    Common_Close/Common_Continue — from the template's own en-US.restext into the target's
-    en-US.restext (and its .source/en-US.common.restext, if present), add-only: an existing target
-    key is never overwritten, and a fresh re-run only ever adds what's still missing.
+    the target's passages-override/, the variables/players.yaml and variables/scoring.yaml
+    declarations backing them (under a template-owned filename, so an existing same-concern file in
+    the target is never overwritten — see that copy step's own comment for why a module without
+    those variables already declared will otherwise crash the first time it reads one), and merges
+    every restext key the copied passages reference — plus Common_Close/Common_Continue — from the
+    template's own en-US.restext into the target's en-US.restext (and its
+    .source/en-US.common.restext, if present), add-only: an existing target key is never overwritten,
+    and a fresh re-run only ever adds what's still missing.
 
     -ProgressVariable handles a real integration gap this repo's own progress-bar layouts have: they
     read a 1-based `roundNum` (1-9), but a module extracted with --progress-map support instead sets
@@ -184,6 +188,26 @@ $overridePassages = @(
 foreach ($file in $overridePassages) {
     Copy-TrackedFile "passages/$file" "passages-override/$file"
 }
+
+# ── Variable declarations backing the copied override passages ───────────────
+# players.yaml (nameA-D/players/playtxt/townname) and scoring.yaml (score_mwA-D/score_euA-D/
+# winnerA-D/winnerCount) back the Setup/Scoring passages just copied above — without them, any
+# session variable a target module hasn't already declared via extraction throws
+# Masterwork.Engine.StoryEvalException ("Unknown variable") the first time a passage reads it (this
+# is exactly the bug that motivated adding this section — cost-of-disease happened to already have
+# every name covered via its own extraction + its own pre-existing variables/scoring.yaml, so it
+# never hit this, but a module without that luck will). progress.yaml (roundNum) and game.yaml
+# (ending) are template-showcase-only — every module-facing layout derives roundNum via a 'let' (see
+# the roundNum patch above), never a persistent declaration, and ending-selection is each module's
+# own responsibility, not something the showcase demonstrates — and showcase.yaml is demo-only
+# bookkeeping, same as assets/images/_demo/ — so none of those three are copied.
+#
+# Copied under a template-owned filename, not e.g. "scoring.yaml", so a target module's own
+# same-concern file is never overwritten (cost-of-disease's own variables/scoring.yaml predates this
+# template and is more specific to that module) — MWS loads every variables/*.yaml regardless of
+# name, and a harmlessly-redundant duplicate declaration of an already-covered variable is fine.
+Copy-TrackedFile 'variables/players.yaml' 'variables/template-players.yaml'
+Copy-TrackedFile 'variables/scoring.yaml' 'variables/template-scoring.yaml'
 
 # ── Restext merge (add-only) ──────────────────────────────────────────────────
 function Get-RestextKeys {
