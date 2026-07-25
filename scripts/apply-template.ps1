@@ -143,8 +143,21 @@ Copy-TrackedFile 'assets/style.css'
 # template's own copy of these files currently looks like — never hand-maintained separately.
 if ($ProgressVariable) {
     $roundNumLayouts = @('narration', 'introduction', 'hub_early', 'hub_middle', 'hub_late')
+    # The comment is baked into the patch itself (not left for a human to re-add after every
+    # re-run, which is what earlier invocations of this script did) — it's regenerated fresh each
+    # time alongside the code it explains, so it can never drift stale.
     $letBlock = @"
 header:
+# $TargetModule-specific: the template's own copy of this layout assumes a module already supplies
+# roundNum (1-9) directly. This module's extractor-synthesized progress tracking (progress-map.json,
+# --progress-map) instead sets $ProgressVariable, a 0-based "rounds completed so far" count (0 while
+# playing round 1, ..., 8 while playing round 9, reaching 9 only once round 9's hub has been left) --
+# so roundNum is derived here rather than being a real module variable. min(..., 9) clamps the
+# ending/scoring narration (rendered after $ProgressVariable reaches 9) to a full bar instead of an
+# out-of-range 10th case the switch below has no match for. Reproduced by
+# scripts/apply-template.ps1 -ProgressVariable $ProgressVariable (see that script's own
+# .DESCRIPTION) -- re-running it regenerates this exact block, so hand-edits here don't need to
+# survive a re-run.
 - type: 'let'
   var: 'roundNum'
   expr: 'min($ProgressVariable + 1, 9)'
