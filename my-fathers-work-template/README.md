@@ -16,9 +16,10 @@ from the code repo (`c:\Projects\Masterwork`), then install `my-fathers-work-tem
 (rebuild it first with `..\Masterwork-Modules\scripts\repack.ps1 -Module my-fathers-work-template`
 if you've changed anything) via the app's "Upload Module" flow. Play through 2-player setup —
 any names/town will do — and you'll land on the **Layout Showcase**, a hub screen linking to one
-demo passage per layout below. Each demo links back to the showcase; the showcase's own last link
-continues into the real scoring flow (`Scoring_01_ScoreEntry.mws.yaml` etc.), which is itself part
-of the catalog.
+demo passage per layout below, plus a "Demo Module" section (see below) that's a separate,
+self-contained scenario rather than another layout demo. Each layout demo links back to the
+showcase; the showcase's own last link continues into the real scoring flow
+(`Scoring_01_ScoreEntry.mws.yaml` etc.), which is itself part of the catalog.
 
 ## Layout catalog
 
@@ -93,6 +94,41 @@ first cut, not yet screenshot-verified.
 
 If you find a real gap in this mechanism while extending it further, that's worth raising as an
 actual engine change — but nesting one level deep (which is all this needs) already works today.
+
+## Demo Module (logic/expression showcase)
+
+`Demo_Hub.mws.yaml` and the passages it links to (`Demo_Well`, `Demo_Survey`, `Demo_SurveyResult`,
+`Demo_Rumors`, `Demo_Ending`) are a separate, small, actually-playable scenario — not another entry
+in the layout catalog above (they reuse the plain `narration` layout throughout, aside from the
+popup layouts noted below). Reached from the Layout Showcase hub's own "Demo Module" section. Where
+the layout catalog exercises *visual* chrome, this exercises MWS *logic and expression* capability:
+
+- An evolving hub whose text is gated on a visit count (`demoWellVisits`).
+- A random flavor line picked via `.shuffled(...)[0]`, and a `rand_between()` roll dispatched
+  through `switch` (`Demo_Well`), plus a `checkpoint`.
+- An `input` field collected inside a real `prompt`-layout popup (`Demo_Survey`), rather than
+  inline on the passage — matching how every other input in this module is actually presented.
+- Both popup shapes on `Demo_SurveyResult`: a generic no-layout popup, and the real 2-part vote
+  pattern (an outer `countdown_instructions` popup — pure instructional container, no okay/cancel
+  of its own — holding an inner `countdown_action` popup directly in its own content). This is the
+  same nested-popup mechanism `Showcase_Popup_RevealCountdown` demonstrates for bidding; see
+  "Replacing voting/bidding" above — `voting`/`bidding` themselves are retired, no longer
+  engine-special-cased, so this is the *only* correct way to build a reveal-countdown interaction
+  now.
+- A `.shuffled()` array iterated in full via `foreach` (`Demo_Rumors`).
+- An intentionally-unresolved `{icon:...}` reference on `Demo_Hub` (shown as the engine's own
+  fallback icon).
+- A real terminal passage (`Demo_Ending`, reached only once `demoWellVisits >= 3`) mirroring
+  `02_Ending.mws.yaml`'s own real-ending pattern exactly: `narration` with title *and* subtitle, a
+  `game_complete` popup carrying the assign-driven ending name, and an Okay resolving to the
+  `app::gameover` sentinel target — this genuinely ends the playthrough (deletes the autosave,
+  returns to the main menu), the same as any real scenario's true ending.
+
+This set mirrors what the Masterwork app's own former built-in demo module exercised end-to-end,
+before that app-level concept was retired in favor of real, playable module content — see
+`Masterwork.Tests/FixtureModuleTests.cs` in the code repo for the same coverage, ported to an
+inline test fixture. `scripts/apply-template.ps1` does **not** copy these passages into target
+modules (it only maps setup + scoring) — they're template-only, same as the layout catalog itself.
 
 ## Font scaling / responsive design
 

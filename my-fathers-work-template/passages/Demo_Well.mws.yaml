@@ -1,0 +1,51 @@
+# Exercises let+.shuffled() (a flavor line drawn from a shuffled array), rand_between()+switch (a
+# random encounter), assign (accumulating demoWellVisits, which Demo_Hub gates its own text and its
+# ending link on), and checkpoint. Part of the Demo Module logic/expression showcase — see
+# Demo_Hub.mws.yaml.
+format: 'mws/0.4'
+passage_id: 'Demo_Well'
+title: 'The Old Well'
+layout: 'narration'
+nodes:
+- type: 'assign'
+  var: 'roundNum'
+  expr: 'demoRoundNum'
+- type: 'let'
+  var: 'demoWellFlavor'
+  expr: '["The water is ice cold tonight.", "A frog watches you from the mossy rim.", "The echo takes far too long to return."].shuffled("demo_well_flavor")[0]'
+- type: 'text'
+  value: '{demoWellFlavor}'
+- type: 'let'
+  var: 'demoEncounterRoll'
+  expr: 'rand_between(1, 3, "demo_well_encounter")'
+- type: 'switch'
+  on: 'demoEncounterRoll'
+  cases:
+  - match: 1
+    nodes:
+    - type: 'text'
+      value: 'The bucket comes up empty, but the rope is oddly warm.'
+  - match: 2
+    nodes:
+    - type: 'text'
+      value: 'A coin glints at the bottom of the well. You toss in another for luck.'
+  - match: 3
+    nodes:
+    - type: 'text'
+      value: 'Something brushes against the bucket in the dark water below.'
+  default:
+  - type: 'text'
+    value: 'The well is silent today.'
+- type: 'assign'
+  var: 'demoWellVisits'
+  expr: 'demoWellVisits + 1'
+- type: 'checkpoint'
+  id: 'demo_visited_well'
+  display: 'Visited the well'
+  diagnostic: 'checkpoint:demo_well'
+- type: 'break'
+  style: 'paragraph'
+- type: 'link'
+  label: '← Back to the square'
+  target: 'Demo_Hub'
+  snapshot: true

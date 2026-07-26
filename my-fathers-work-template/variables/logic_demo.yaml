@@ -1,0 +1,9 @@
+# Bookkeeping variables for the Demo Module logic/expression showcase only (Demo_Hub.mws.yaml and
+# its linked passages) — not real game state, and unrelated to variables/showcase.yaml's
+# layout-showcase testing aids (demoRoundNum et al.). Kept in their own file since this is a
+# distinct concern from the layout catalog: this demo exercises MWS logic/expression capability
+# (gated conditionals, random/shuffled draws, checkpoints, input, foreach) rather than visual chrome.
+variables:
+  demoWellVisits: int
+  demoSurveyCount: int
+  demoEnding: 'string'

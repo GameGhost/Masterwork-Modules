@@ -1,0 +1,50 @@
+# A real terminal passage — no outgoing links except the one the game_complete popup itself
+# provides, reached only via Demo_Hub's gated "Confront what waits in the well" link
+# (demoWellVisits >= 3). Mirrors 02_Ending.mws.yaml's own real-ending pattern exactly: `narration`
+# with both title and subtitle set, a fixed roundNum (the round-tracker footer fully filled, same as
+# the real ending — there's no dedicated "ending" layout_id, this narration+game_complete pairing
+# *is* the ending pattern), and a `game_complete` popup whose Okay resolves to the `app::gameover`
+# sentinel target (see docs/mws-format-latest.md §"app::gameover" in the code repo) — this actually
+# ends the playthrough (deletes the autosave, returns to the main menu), faithfully exercising the
+# real mechanic rather than a demo-only stand-in. Exercises an assign whose new value is only ever
+# visible in this same render (see Masterwork/CLAUDE.md's SessionSnapshot remarks on precision —
+# session.Current.Variables reflects state from just *before* a passage renders, not after). Part
+# of the Demo Module logic/expression showcase — see Demo_Hub.mws.yaml.
+format: 'mws/0.4'
+passage_id: 'Demo_Ending'
+title: 'What Waits Below'
+subtitle: 'A Demo Ending'
+layout: 'narration'
+nodes:
+- type: 'assign'
+  var: 'roundNum'
+  expr: '9'
+- type: 'assign'
+  var: 'demoEnding'
+  expr: '"END-WellDepths"'
+- type: 'text'
+  value: 'You lower a lantern into the well and finally see it — pale eyes, patient and old, staring back from the depths beneath {townname}.'
+- type: 'break'
+  style: 'paragraph'
+- type: 'popup'
+  layout: 'game_complete'
+  label: 'The End'
+  style: 'btn-forward'
+  header:
+  - type: 'image'
+    asset: 'image://backgrounds/image_photo'
+  content:
+  - type: 'text'
+    value: 'You have unlocked the '
+    style: 'popup-title'
+  - type: 'text'
+    value: '"{demoEnding}"'
+    style: 'popup-title-highlight'
+  - type: 'text'
+    value: ' ending.'
+    style: 'popup-title'
+  - type: 'break'
+  - type: 'text'
+    value: 'Close this popup to end this demo playthrough.'
+  okay: 'Close'
+  target: 'app::gameover'

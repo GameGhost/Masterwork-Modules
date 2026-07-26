@@ -1,0 +1,66 @@
+# Exercises both popup variants: a generic popup with no named layout (just content + a dismiss
+# button), and the real 2-part nested-popup vote pattern (`countdown_instructions` holding
+# `countdown_action` directly in its own content — see README.md "Replacing voting/bidding" and
+# Showcase_Popup_RevealCountdown.mws.yaml for the full writeup of why this replaces the old
+# `voting`/`bidding` layouts, which are retired/no longer engine-special-cased). The outer popup is
+# a pure instructional container (no okay/cancel of its own); the inner popup's Okay navigates
+# onward with snapshot: true once its countdown finishes. Part of the Demo Module logic/expression
+# showcase — see Demo_Hub.mws.yaml.
+format: 'mws/0.4'
+passage_id: 'Demo_SurveyResult'
+title: 'Thanks!'
+layout: 'narration'
+nodes:
+- type: 'assign'
+  var: 'roundNum'
+  expr: 'demoRoundNum'
+- type: 'text'
+  value: 'Thanks! You said there are {demoSurveyCount} people in your group.'
+- type: 'break'
+  style: 'paragraph'
+- type: 'popup'
+  label: 'What happens next?'
+  cancel: 'Got it'
+  snapshot: false
+  content:
+  - type: 'text'
+    value: 'This is a generic popup with no named layout — just its content nodes and a dismiss button.'
+- type: 'break'
+- type: 'popup'
+  layout: 'countdown_instructions'
+  label: 'Cast your vote'
+  content:
+  - type: 'text'
+    value: 'Everyone secretly decide who to vote for. When ready, press "Reveal Votes" — this starts a 3-second countdown.'
+  - type: 'break'
+    style: 'paragraph'
+  - type: 'text'
+    value: "When you see the word 'REVEAL', show your vote simultaneously."
+  - type: 'break'
+    style: 'paragraph'
+  - type: 'popup'
+    layout: 'countdown_action'
+    label: 'Reveal Votes'
+    style: 'countdown-trigger'
+    content:
+    - type: 'text'
+      value: 'restext://Countdown_Three'
+      style: 'countdown-3'
+    - type: 'text'
+      value: 'restext://Countdown_Two'
+      style: 'countdown-2'
+    - type: 'text'
+      value: 'restext://Countdown_One'
+      style: 'countdown-1'
+    - type: 'text'
+      value: 'restext://Countdown_Reveal'
+      style: 'countdown-reveal'
+    okay: 'Reveal'
+    target: 'Demo_Hub'
+    snapshot: true
+- type: 'break'
+  style: 'paragraph'
+- type: 'link'
+  label: '← Back to the square'
+  target: 'Demo_Hub'
+  snapshot: true

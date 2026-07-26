@@ -1,0 +1,75 @@
+# Logic/expression showcase — evolving hub whose text changes with demoWellVisits (gated
+# conditionals), reached only from the Layout Showcase hub's own "Demo Module" section (see
+# 01_Entry.mws.yaml). This whole Demo_* passage set mirrors what the app's own former built-in demo
+# module (retired — see Masterwork/CLAUDE.md) exercised end-to-end: an evolving hub, random/shuffled
+# events, checkpoints, both popup variants, foreach over a shuffled array, and a terminal passage.
+# Ported into this template so that coverage survives as real, playable module content instead of
+# depending on an app-level concept.
+format: 'mws/0.4'
+passage_id: 'Demo_Hub'
+title: 'Town Square'
+layout: 'narration'
+nodes:
+- type: 'assign'
+  var: 'roundNum'
+  expr: 'demoRoundNum'
+- type: 'text'
+  value: 'Welcome to {townname}, home of this small logic-and-expression demo.'
+- type: 'break'
+  style: 'paragraph'
+- type: 'image'
+  asset: 'icon://hospital1'
+  size: '300'
+  align: 'center'
+- type: 'break'
+  style: 'paragraph'
+- type: 'text'
+  value: 'The town crest bears the mark of {icon:storybook} — and, on this old copy, a faded {icon:nonexistent_test_icon} nobody can identify anymore (an unresolved icon reference, shown here as the engine''s own fallback).'
+- type: 'break'
+  style: 'paragraph'
+- type: 'conditional'
+  conditions:
+  - if: 'demoWellVisits == 0'
+    then:
+    - type: 'text'
+      value: 'The old well at the square has been quiet for as long as anyone remembers.'
+  - if: 'demoWellVisits == 1'
+    then:
+    - type: 'text'
+      value: 'Villagers murmur about strange sounds from the well after your last visit.'
+  - if: 'demoWellVisits == 2'
+    then:
+    - type: 'text'
+      value: 'The murmurs have turned to whispers. Something is stirring beneath {townname}.'
+  else:
+  - type: 'text'
+    value: 'The town is on edge. Whatever lives in the well is close to the surface now.'
+- type: 'break'
+  style: 'paragraph'
+- type: 'link'
+  label: 'Visit the old well'
+  target: 'Demo_Well'
+  snapshot: true
+- type: 'break'
+- type: 'link'
+  label: 'Take the survey'
+  target: 'Demo_Survey'
+  snapshot: true
+- type: 'break'
+- type: 'link'
+  label: 'Listen to the rumors'
+  target: 'Demo_Rumors'
+  snapshot: true
+- type: 'conditional'
+  if: 'demoWellVisits >= 3'
+  then:
+  - type: 'break'
+  - type: 'link'
+    label: 'Confront what waits in the well'
+    target: 'Demo_Ending'
+    snapshot: true
+- type: 'break'
+  style: 'paragraph'
+- type: 'link'
+  label: '← Back to Showcase'
+  target: 'Example_Entry'
