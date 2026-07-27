@@ -1054,7 +1054,10 @@ body {
 .mws-popup-cancel,
 .mws-link.style-btn-brown,
 .mws-link.style-btn-green,
-.mws-link.style-btn-red {
+.mws-link.style-btn-red,
+.style-btn-brown,
+.style-btn-green,
+.style-btn-red {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -1082,7 +1085,8 @@ body {
 .mws-popup-overlay.layout-note_clear .mws-popup-okay,
 .mws-popup-overlay.layout-prompt .mws-popup-okay,
 .mws-popup-overlay.layout-choice .mws-popup-okay,
-.mws-link.style-btn-brown {
+.mws-link.style-btn-brown,
+.style-btn-brown {
     background-image: url(image://inputs/button_brown);
     color: #2b2016;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
@@ -1091,14 +1095,16 @@ body {
 .mws-popup-overlay.layout-setup .mws-popup-okay,
 .mws-popup-overlay.layout-end_of_round .mws-popup-okay,
 .mws-popup-overlay.layout-end_of_generation .mws-popup-okay,
-.mws-link.style-btn-green {
+.mws-link.style-btn-green,
+.style-btn-green {
     background-image: url(image://inputs/button_green);
     color: #152218;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
 }
 
 .mws-popup-cancel,
-.mws-link.style-btn-red {
+.mws-link.style-btn-red,
+.style-btn-red {
     background-image: url(image://inputs/button_red);
     color: #2b0d0d;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
@@ -1119,13 +1125,17 @@ body {
 .mws-popup-cancel:hover:not(:disabled),
 .mws-link.style-btn-brown:hover:not(:disabled),
 .mws-link.style-btn-green:hover:not(:disabled),
-.mws-link.style-btn-red:hover:not(:disabled) {
+.mws-link.style-btn-red:hover:not(:disabled),
+.style-btn-brown:hover:not(:disabled),
+.style-btn-green:hover:not(:disabled),
+.style-btn-red:hover:not(:disabled) {
     filter: brightness(1.15);
 }
 
-.mws-link.style-btn-brown:hover:not(:disabled) { color: #2b2016; }
-.mws-link.style-btn-green:hover:not(:disabled) { color: #152218; }
+.mws-link.style-btn-brown:hover:not(:disabled), .style-btn-brown:hover:not(:disabled) { color: #2b2016; }
+.mws-link.style-btn-green:hover:not(:disabled), .style-btn-green:hover:not(:disabled) { color: #152218; }
 .mws-link.style-btn-red:hover:not(:disabled),
+.style-btn-red:hover:not(:disabled),
 .mws-popup-cancel:hover:not(:disabled) { color: #2b0d0d; }
 
 /* ── Disabled state — every button/link, file-wide ─────────────────────────
@@ -1146,7 +1156,10 @@ body {
 .mws-link:disabled,
 .mws-popup-trigger:disabled,
 .mws-popup-okay:disabled,
-.mws-popup-cancel:disabled {
+.mws-popup-cancel:disabled,
+.style-btn-brown:disabled,
+.style-btn-green:disabled,
+.style-btn-red:disabled {
     filter: grayscale(1);
     cursor: default;
 }
@@ -2654,4 +2667,457 @@ body {
     color: transparent;
     padding: 0;
     cursor: pointer;
+}
+
+/* ── App chrome (pause bar / options / quit / resume) ───────────────────────
+ * The app's chrome (Play.razor's header, PauseBar.razor, OptionsDialog.razor) only ever emits
+ * structural class hooks here too — .mws-pause-button/.mws-options-button, .mws-pause-back/
+ * -forward/-jump-to-present, .mws-quit-button/.mws-resume-button, .mws-dialog--sm (small quit/
+ * resume/save-name prompts) vs. .mws-options-dialog (the big Options panel), .mws-options-row/
+ * -controls/-input/-value, .mws-mute-checkbox, .mws-timeline-entry/-label, .mws-save-name-input —
+ * same split as every module-content hook above. app.css keeps only generic layout mechanics (flex
+ * positions, the pause bar's open/closed slide transform) with no images/colors of its own; this
+ * file is what actually skins it, same as everywhere else in this document. */
+
+/* Chrome buttons (Quit/Resume/Apply/Cancel/Save/Abandon) reuse the exact same style-btn-brown/
+   -green/-red hook module link buttons already use (see the "standard graphical buttons" block far
+   above) — bare (no .mws-link requirement) versions were added to that block's selector lists
+   specifically so a plain chrome <button> gets identical sizing/color/hover/disabled treatment.
+   Only the link-specific margin-top/font/press-state block further down doesn't extend to these
+   (that spacing is for an inline link sitting in flowing text, not a button in a flex row) — given
+   its own equivalent here instead. */
+.style-btn-brown:not(.mws-link),
+.style-btn-green:not(.mws-link),
+.style-btn-red:not(.mws-link) {
+    font-family: 'Germania One', 'Averia Gruesa Libre', 'Averia Libre', serif;
+    transition: transform 0.12s ease, opacity 0.12s ease;
+}
+
+.style-btn-brown:not(.mws-link):active:not(:disabled),
+.style-btn-green:not(.mws-link):active:not(:disabled),
+.style-btn-red:not(.mws-link):active:not(:disabled) {
+    transform: scale(0.85);
+    opacity: 0.75;
+}
+
+/* "20% smaller" per spec — scales both width and font-size by 0.8; aspect-ratio: 17/6 is inherited
+   from the base rule, so height follows automatically without repeating it here. Reduced further
+   from an original 10.4rem/1.28rem — two of these plus the pause bar's own padding didn't fit at
+   narrow viewport widths (the panel is inset 20px + 1.5rem padding per side); this size plus
+   .mws-pause-actions-row's flex-wrap below (belt-and-suspenders) keeps the row from overflowing. */
+.mws-btn-sm.style-btn-brown,
+.mws-btn-sm.style-btn-green,
+.mws-btn-sm.style-btn-red {
+    width: 9rem;
+    font-size: 1.1rem;
+}
+
+/* "Resume From Here" (shown once rewound) is longer than "Resume" — rather than growing the button
+   itself (which made it visibly larger than Quit sitting right next to it — the actual "wonky"
+   look), the text is horizontally compressed via scaleX on its own wrapping span (Razor wraps the
+   label in .mws-resume-button-text) so both buttons stay identically sized while the glyphs
+   themselves narrow just enough to clear the button art. Font-size/weight stay the same as Quit's
+   text, so legibility (height, weight) is unaffected — only width is condensed. */
+.mws-resume-button--long .mws-resume-button-text {
+    display: inline-block;
+    transform: scaleX(0.74);
+    white-space: nowrap;
+}
+
+/* Belt-and-suspenders for the narrowest viewports (see .mws-btn-sm's own comment above) — if two
+   sm buttons still don't fit side by side, wrap to a second line instead of overflowing the panel. */
+.mws-pause-actions-row {
+    flex-wrap: wrap;
+}
+
+/* Pause/Options header buttons (Play.razor) — icon-only, no visible text (the Razor markup dropped
+   the ⏸/⚙ glyphs; aria-label/title carry the accessible name). Resets app.css's own padding/
+   font-size fallback since these are pure image buttons now. Both sit on the right at normal
+   widths, inset to nest inside the outer passage frame's own border-image-width (42px top / 40px
+   sides, see the shared `::after` frame rule above) rather than overlapping its corner ornament.
+   .mws-play-chrome itself is `position: fixed` (see the base rule further up this file) — floating
+   over the passage rather than reserving flow space — so .mws-passage-header below gives titles
+   their own horizontal clearance instead of colliding with whichever corner these end up in. */
+.mws-play-chrome {
+    justify-content: flex-end;
+    padding: 44px 60px 0 0;
+}
+
+/* At the narrow-viewport breakpoint (where the outer frame crops its side posts away — see that
+   breakpoint's own comment further up) the buttons split back to opposite corners (pause left,
+   options right) rather than clustering together on the right, which left too little width for
+   the title between them; both insets shrink to a plain small gap since there's no frame to nest
+   inside of anymore. */
+@media (max-width: 45.99rem) {
+    .mws-play-chrome {
+        justify-content: space-between;
+        padding: 44px 10px 0 10px;
+    }
+}
+
+.mws-pause-button,
+.mws-options-button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+/* Net +12.5% over the original 2.4rem/2.6rem (+50%, then -25% of that per follow-up feedback). */
+.mws-pause-button {
+    width: 2.5rem;
+    aspect-ratio: 1;
+    background-image: url(image://inputs/button_pause);
+}
+
+.mws-options-button {
+    width: 2.5rem;
+    aspect-ratio: 1;
+    background-image: url(image://inputs/button_book);
+}
+
+/* Reserves room under the fixed top corners for both header buttons so a long/centered title
+   doesn't run under them — .mws-passage-header has no explicit white-space, so text already wraps
+   onto a second line by default once it doesn't fit this narrowed box. */
+.mws-passage.layout-narration .mws-passage-header,
+.mws-passage.layout-introduction .mws-passage-header,
+.mws-passage.layout-hub_early .mws-passage-header,
+.mws-passage.layout-hub_middle .mws-passage-header,
+.mws-passage.layout-hub_late .mws-passage-header,
+.mws-passage.layout-score_panel .mws-passage-header,
+.mws-passage.layout-ranking .mws-passage-header {
+    padding: 0 145px;
+}
+
+@media (max-width: 35rem) {
+    .mws-passage.layout-narration .mws-passage-header,
+    .mws-passage.layout-introduction .mws-passage-header,
+    .mws-passage.layout-hub_early .mws-passage-header,
+    .mws-passage.layout-hub_middle .mws-passage-header,
+    .mws-passage.layout-hub_late .mws-passage-header,
+    .mws-passage.layout-score_panel .mws-passage-header,
+    .mws-passage.layout-ranking .mws-passage-header {
+        padding: 0 60px;
+    }
+}
+
+/* Pause bar scrubber nav buttons — same icon-only treatment, using arrow_left/arrow_right.png
+   (176×144, a rounded arrow-button glyph) rather than the flatter arrow-previous/next-page.png
+   originally wired up here. */
+.mws-pause-nav-button {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.mws-pause-back,
+.mws-pause-forward {
+    width: 2.3rem;
+    aspect-ratio: 176 / 144;
+}
+
+.mws-pause-back { background-image: url(image://inputs/arrow_left); }
+.mws-pause-forward { background-image: url(image://inputs/arrow_right); }
+
+/* Smaller than the ending narration's floating 4rem button_forward_orange.png trigger (further up
+   this file) — this one sits inline in the scrubber row alongside the other nav buttons rather than
+   floating fixed over content. */
+.mws-pause-jump-to-present {
+    width: 2.2rem;
+    aspect-ratio: 1;
+    background-image: url(image://inputs/button_forward_orange);
+}
+
+.mws-pause-nav-button:disabled {
+    filter: grayscale(1);
+}
+
+/* Scrubber panel itself — popup_bordered.png (961×299), same border-image numbers as the existing
+   `prompt` popup further up this file (same asset, already tuned there). 20px left/right per spec;
+   `bottom` is negative so the border art's own bottom edge sits below the true viewport edge,
+   leaving only the top + side borders visible even when fully open (first-pass offset, tune live)
+   — the extra bottom padding keeps the actual button rows fully visible above that overflow. Slide
+   transform itself (translateY, transition, .mws-pause-bar--open) stays app.css's generic default;
+   only the visual specifics are overridden here. */
+.mws-pause-bar {
+    left: 20px;
+    right: 20px;
+    bottom: -40px; /* tune live */
+    padding: 0.75rem 1.5rem calc(40px + 0.75rem + env(safe-area-inset-bottom));
+    background: rgba(20, 16, 14, 0.92);
+    border-style: solid;
+    border-color: transparent;
+    border-width: 7px;
+    border-image-source: url(image://backgrounds/popup_bordered);
+    border-image-slice: 19.4% 6% fill;
+    border-image-width: 38px;
+    border-image-repeat: stretch;
+    box-sizing: border-box;
+    box-shadow: none;
+}
+
+/* Timeline entries — input_small.png (317×74), stretched (not border-image — these are short,
+   fixed-ish labels, not a variable-width free-typed field like the save-name input below), sized to
+   fit their own text rather than a fixed column width. Grey (inactive) vs. hub-link blue (active) —
+   app.css's own .mws-timeline-entry.current sets `background: #7c3aed` (the shorthand, which resets
+   background-image to none), so re-declaring the image here on the exact same 2-class selector is
+   required, not just a color override; it wins by cascade order like everything else in this
+   section. */
+.mws-timeline-entry {
+    width: auto;
+    max-width: 6rem;
+    padding: 0.3rem 0.6rem;
+    /* app.css sets 0.8rem, which (per this file's own FONT-SCALING CONVENTION further up) is
+       root-relative and deliberately doesn't track --mws-text-scale. These labels are reading text,
+       not fixed chrome, so they should track the player's text-size setting like everything else —
+       em instead, against the same 0.8 multiplier. */
+    font-size: 0.8em;
+    background-image: url(image://inputs/input_small);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.mws-timeline-label {
+    color: #9a9a9a;
+}
+
+.mws-timeline-entry.current {
+    background-image: url(image://inputs/input_small);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    font-weight: 700;
+}
+
+.mws-timeline-entry.current .mws-timeline-label {
+    color: #6fb8e0;
+}
+
+/* Small general panel — quit-confirm, resume-confirm, and the save-name prompt all share this
+   (panel_general_small.png, 866×417). Title/content colors and resolved sizes match hub-card's own
+   h3/body treatment (further up this file) — hub-card's 1.1em/1.25em are relative to its own ambient
+   passage font-size, which this dialog doesn't have, so the equivalent resolved values are used
+   directly instead. */
+.mws-dialog--sm {
+    position: relative;
+    /* Comfortably fits quit-confirm's 3 sm buttons (9rem × 3 + gaps ≈ 28rem of content alone) on one
+       line at normal desktop widths — see the narrow-viewport media query further down for when
+       they still need to stack. */
+    max-width: 36rem;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 20px;
+    border-image-source: url(image://backgrounds/panel_general_small);
+    /* tune live — scaled from panel_general.png's tuned 11.6%/9.2% for this asset's shorter 417px
+       height (same 866px width), assuming the same absolute corner-art thickness */
+    border-image-slice: 19.2% 9.2% fill;
+    border-image-width: 40px;
+    border-image-repeat: stretch;
+    box-sizing: border-box;
+    background: #14161c;
+    box-shadow: none;
+    border-radius: 0;
+    text-align: center;
+    font-family: 'Averia Libre', serif;
+}
+
+.mws-dialog--sm h3 {
+    margin: 0 0 0.5em;
+    color: #f2b17b;
+    font-size: 1.375em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: 'Germania One', 'Averia Gruesa Libre', 'Averia Libre', serif;
+}
+
+.mws-dialog--sm p {
+    color: white;
+    font-size: 1.25em;
+}
+
+.mws-dialog--sm .mws-dialog-actions {
+    justify-content: center;
+}
+
+/* Narrow viewport only — a short-but-wide landscape view has plenty of horizontal room for the
+   button row even though it's vertically cramped, so this is width-only, not also max-height like
+   the panel's own scroll region below (a short viewport is handled by that scroll, not by
+   stacking buttons that already fit fine side by side). */
+@media (max-width: 35rem) {
+    .mws-dialog--sm .mws-dialog-actions,
+    .mws-options-dialog .mws-dialog-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Save-name prompt's text input — input_small.png again, but border-image (9-slice) instead of the
+   plain stretch the timeline entries above use: unlike those short fixed-ish labels, a typed name
+   can make this input render wide, and a plain stretch would distort the asset's rounded end caps.
+   No existing 9-slice precedent for this asset (its only other use is the plain stretch above), so
+   the slice is a first-pass estimate — tune live. Text color matches the file's established
+   "standard input text" color (same as the prompt popup's input and the score/count inputs). */
+.mws-save-name-input {
+    display: block;
+    width: 100%;
+    height: 3rem;
+    margin-top: 0.75rem;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 15px;
+    border-image-source: url(image://inputs/input_small);
+    border-image-slice: 20% 15% fill; /* tune live */
+    border-image-width: 15px 48px;
+    border-image-repeat: stretch;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 0 0.75rem;
+    text-align: center;
+    color: #F2B781;
+    font-family: 'Averia Libre', serif;
+    font-size: 1.2em;
+    outline: none;
+}
+
+/* Big Options panel — panel_general.png (866×688), the exact same border-image numbers as the
+   `choice` popup further up this file (same asset, already tuned there). */
+.mws-options-dialog {
+    position: relative;
+    max-width: 32rem;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 20px;
+    border-image-source: url(image://backgrounds/panel_general);
+    border-image-slice: 11.6% 9.2% fill;
+    border-image-width: 40px;
+    border-image-repeat: stretch;
+    box-sizing: border-box;
+    background: #14161c;
+    box-shadow: none;
+    border-radius: 0;
+    color: #e8c9a0;
+    font-family: 'Averia Libre', serif;
+}
+
+.mws-options-dialog h3 {
+    margin: 0 0 0.75em;
+    color: #f2c879;
+    font-size: 1.6em;
+    text-align: center;
+    font-family: 'Germania One', 'Averia Gruesa Libre', 'Averia Libre', serif;
+}
+
+.mws-options-dialog .mws-dialog-actions {
+    justify-content: center;
+}
+
+/* Volume/text-size sliders — slider_base.png (400×28) track, slider_button.png (64×64) thumb, round.
+   Both -webkit/-moz pseudo-elements needed since there's no unprefixed standard yet with equivalent
+   browser support. */
+.mws-options-input[type="range"] {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 28px;
+    background-image: url(image://inputs/slider_base);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.mws-options-input[type="range"]::-webkit-slider-runnable-track,
+.mws-options-input[type="range"]::-moz-range-track {
+    height: 28px;
+    background: transparent;
+    border: none;
+}
+
+.mws-options-input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 28px;
+    height: 28px;
+    background-image: url(image://inputs/slider_button);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mws-options-input[type="range"]::-moz-range-thumb {
+    width: 28px;
+    height: 28px;
+    background-image: url(image://inputs/slider_button);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Muted volume disables its own slider (see OptionsDialog.razor) — greyed out to match every other
+   disabled control in this file (filter: grayscale(1), the same technique the standard button
+   system and every other disabled input/link already use). */
+.mws-options-input[type="range"]:disabled {
+    filter: grayscale(1);
+    cursor: default;
+}
+
+.mws-options-input[type="range"]:disabled::-webkit-slider-thumb,
+.mws-options-input[type="range"]:disabled::-moz-range-thumb {
+    cursor: default;
+}
+
+/* Fixed-width value readout next to each slider — 3ch comfortably fits "100" without the row
+   reflowing as the number changes. */
+.mws-options-value {
+    display: inline-block;
+    width: 3ch;
+    flex-shrink: 0;
+    text-align: right;
+    color: #F2B781;
+    font-weight: 700;
+}
+
+/* Mute checkbox — same checkbox_outline/checkmark technique as .mws-input input[type="checkbox"]
+   (score/scoring views, further up this file), scaled down to the slider's own 28px height instead
+   of that rule's 3.5rem (tuned for a looser layout this row doesn't have). */
+.mws-mute-checkbox {
+    appearance: none;
+    width: 1.75rem;
+    height: 1.75rem;
+    flex-shrink: 0;
+    background-image: url(image://inputs/checkbox_outline);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.mws-mute-checkbox:checked {
+    background-image: url(image://inputs/checkbox_checkmark), url(image://inputs/checkbox_outline);
+    background-size: 75% 75%, 100% 100%;
+    background-position: center, 0;
+}
+
+.mws-mute-label {
+    color: #e8c9a0;
+    font-size: 0.9em;
 }
