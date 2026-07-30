@@ -81,6 +81,7 @@ nodes:
 - type: 'section'
   # ../en-US.restext:142 | "**BUILD A HOSPITAL**"
   title: 'restext://Heading_BuildHospital'
+  style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:1704
   - type: 'text'
@@ -104,10 +105,11 @@ nodes:
   - type: 'section'
     # ../en-US.restext:139 | "{icon:storybook} **Attrac..."
     title: 'restext://Heading_AttractingAttention'
+    style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:1745
     - type: 'text'
-      # ../en-US.restext:287 | "If a player reaches the *..."
+      # ../en-US.restext:284 | "If a player reaches the *..."
       value: 'restext://Resource_CreepyTrack_4thSpace_Lead'
     # ../.source/TheCostofDisease_Eng_v10.cs:1753
     - type: 'link'
@@ -126,10 +128,11 @@ nodes:
   - type: 'section'
     # ../en-US.restext:162 | "{icon:storybook} **The Ma..."
     title: 'restext://Heading_MarkOfGenius'
+    style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:1771
     - type: 'text'
-      # ../en-US.restext:295 | "If a player reaches the *..."
+      # ../en-US.restext:292 | "If a player reaches the *..."
       value: 'restext://Resource_InsanityTrack_3rdSpace_Lead'
     # ../.source/TheCostofDisease_Eng_v10.cs:1779
     - type: 'link'
@@ -144,6 +147,7 @@ nodes:
 - type: 'section'
   # ../en-US.restext:149 | "**Second round Event - El..."
   title: 'restext://Heading_ElectionSeason'
+  style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:1794
   - type: 'text'
@@ -172,5 +176,5 @@ nodes:
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:309 | "Then, perform all Start o..."
+      # ../en-US.restext:306 | "Then, perform all Start o..."
       value: 'restext://Round_StartMiddleYears_Rule'

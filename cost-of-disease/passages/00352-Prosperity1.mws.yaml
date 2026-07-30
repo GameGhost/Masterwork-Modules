@@ -133,6 +133,7 @@ nodes:
   - type: 'section'
     # ../en-US.restext:137 | "**Acceptance**"
     title: 'restext://Heading_Acceptance'
+    style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:13108
     - type: 'text'
@@ -145,10 +146,11 @@ nodes:
   - type: 'section'
     # ../en-US.restext:176 | "**School for Hybridized I..."
     title: 'restext://Heading_SchoolForHybridizedIndividuals'
+    style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:13126
     - type: 'text'
-      # ../en-US.restext:310 | "When a player visits the ..."
+      # ../en-US.restext:307 | "When a player visits the ..."
       value: 'restext://SchoolForHybridizedIndividuals_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:13143
   - type: 'break'
@@ -157,15 +159,17 @@ nodes:
   - type: 'section'
     # ../en-US.restext:152 | "**Experiments are Feared**"
     title: 'restext://Heading_ExperimentsAreFeared'
+    style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:13154
     - type: 'text'
-      # ../en-US.restext:288 | "Anytime a player takes th..."
+      # ../en-US.restext:285 | "Anytime a player takes th..."
       value: 'restext://Resource_ExperimentGainsCreepy_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:13160
   - type: 'section'
     # ../en-US.restext:138 | "{icon:storybook} **Angry Mob**"
     title: 'restext://Heading_AngryMob'
+    style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:13170
     - type: 'text'
@@ -195,12 +199,12 @@ nodes:
       snapshot: true
       content:
       - type: 'text'
-        # ../en-US.restext:302 | "The Early Years of the Th..."
+        # ../en-US.restext:299 | "The Early Years of the Th..."
         value: 'restext://Round_GenerationIII_EarlyEnded'
       - type: 'break'
         style: 'paragraph'
       - type: 'text'
-        # ../en-US.restext:309 | "Then, perform all Start o..."
+        # ../en-US.restext:306 | "Then, perform all Start o..."
         value: 'restext://Round_StartMiddleYears_Rule'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:13188
@@ -276,6 +280,7 @@ nodes:
   - type: 'section'
     # ../en-US.restext:156 | "**Hunter's Haven**"
     title: 'restext://Heading_HuntersHaven'
+    style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:13260
     - type: 'text'
@@ -288,6 +293,7 @@ nodes:
   - type: 'section'
     # ../en-US.restext:151 | "**Engineering Achievement**"
     title: 'restext://Heading_EngineeringAchievement'
+    style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:13280
     - type: 'text'
@@ -300,6 +306,7 @@ nodes:
   - type: 'section'
     # ../en-US.restext:150 | "**Endless Hunt**"
     title: 'restext://Heading_EndlessHunt'
+    style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:13300
     - type: 'text'
@@ -323,10 +330,10 @@ nodes:
       snapshot: true
       content:
       - type: 'text'
-        # ../en-US.restext:302 | "The Early Years of the Th..."
+        # ../en-US.restext:299 | "The Early Years of the Th..."
         value: 'restext://Round_GenerationIII_EarlyEnded'
       - type: 'break'
         style: 'paragraph'
       - type: 'text'
-        # ../en-US.restext:309 | "Then, perform all Start o..."
+        # ../en-US.restext:306 | "Then, perform all Start o..."
         value: 'restext://Round_StartMiddleYears_Rule'

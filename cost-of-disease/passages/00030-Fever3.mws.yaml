@@ -75,6 +75,7 @@ nodes:
   - type: 'section'
     # ../en-US.restext:140 | "**BANK**"
     title: 'restext://Heading_Bank'
+    style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:4152
     - type: 'text'
@@ -85,6 +86,7 @@ nodes:
   - type: 'section'
     # ../en-US.restext:161 | "**LIBRARY**"
     title: 'restext://Heading_Library'
+    style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:4173
     - type: 'text'
@@ -97,6 +99,7 @@ nodes:
 - type: 'section'
   # ../en-US.restext:142 | "**BUILD A HOSPITAL**"
   title: 'restext://Heading_BuildHospital'
+  style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:4197
   - type: 'text'
@@ -107,7 +110,7 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:4211
   - type: 'text'
-    # ../en-US.restext:299 | "At the end of the Generat..."
+    # ../en-US.restext:296 | "At the end of the Generat..."
     value: 'restext://Reward_MostHeartTokens_5VP'
 # ../.source/TheCostofDisease_Eng_v10.cs:4225
 - type: 'break'
@@ -120,10 +123,11 @@ nodes:
   - type: 'section'
     # ../en-US.restext:139 | "{icon:storybook} **Attrac..."
     title: 'restext://Heading_AttractingAttention'
+    style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:4240
     - type: 'text'
-      # ../en-US.restext:287 | "If a player reaches the *..."
+      # ../en-US.restext:284 | "If a player reaches the *..."
       value: 'restext://Resource_CreepyTrack_4thSpace_Lead'
     # ../.source/TheCostofDisease_Eng_v10.cs:4248
     - type: 'link'
@@ -142,10 +146,11 @@ nodes:
   - type: 'section'
     # ../en-US.restext:162 | "{icon:storybook} **The Ma..."
     title: 'restext://Heading_MarkOfGenius'
+    style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:4266
     - type: 'text'
-      # ../en-US.restext:295 | "If a player reaches the *..."
+      # ../en-US.restext:292 | "If a player reaches the *..."
       value: 'restext://Resource_InsanityTrack_3rdSpace_Lead'
     # ../.source/TheCostofDisease_Eng_v10.cs:4274
     - type: 'link'
@@ -158,6 +163,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:4281
 - type: 'section'
+  style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:4290
   - type: 'popup'
@@ -179,5 +185,5 @@ nodes:
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:301 | "Perform any End of Round ..."
+      # ../en-US.restext:298 | "Perform any End of Round ..."
       value: 'restext://Round_EndOfRoundActions_Rule'

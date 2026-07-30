@@ -111,6 +111,7 @@ nodes:
   - type: 'section'
     # ../en-US.restext:157 | "**The Hunter's Rest**"
     title: 'restext://Heading_HuntersRest'
+    style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:19833
     - type: 'text'
@@ -123,6 +124,7 @@ nodes:
   - type: 'section'
     # ../en-US.restext:180 | "**Taxation**"
     title: 'restext://Heading_Taxation'
+    style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:19854
     - type: 'text'
@@ -146,18 +148,19 @@ nodes:
       snapshot: true
       content:
       - type: 'text'
-        # ../en-US.restext:302 | "The Early Years of the Th..."
+        # ../en-US.restext:299 | "The Early Years of the Th..."
         value: 'restext://Round_GenerationIII_EarlyEnded'
       - type: 'break'
         style: 'paragraph'
       - type: 'text'
-        # ../en-US.restext:309 | "Then, perform all Start o..."
+        # ../en-US.restext:306 | "Then, perform all Start o..."
         value: 'restext://Round_StartMiddleYears_Rule'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:19888
   - type: 'section'
     # ../en-US.restext:164 | "{icon:storybook} **Master..."
     title: 'restext://Heading_MasterworkCompletion'
+    style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:19897
     - type: 'text'
@@ -176,6 +179,7 @@ nodes:
   - type: 'section'
     # ../en-US.restext:167 | "**MONSTER SPAWN**"
     title: 'restext://Heading_MonsterSpawn'
+    style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:19912
     - type: 'text'
@@ -188,10 +192,11 @@ nodes:
   - type: 'section'
     # ../en-US.restext:155 | "**A Gift of Spawning**"
     title: 'restext://Heading_GiftOfSpawning'
+    style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:19932
     - type: 'text'
-      # ../en-US.restext:300 | "At the end of the Generat..."
+      # ../en-US.restext:297 | "At the end of the Generat..."
       value: 'restext://Reward_MostOccultExperiments_SpawningPods'
     # ../.source/TheCostofDisease_Eng_v10.cs:19943
     - type: 'break'
@@ -211,10 +216,10 @@ nodes:
       snapshot: true
       content:
       - type: 'text'
-        # ../en-US.restext:302 | "The Early Years of the Th..."
+        # ../en-US.restext:299 | "The Early Years of the Th..."
         value: 'restext://Round_GenerationIII_EarlyEnded'
       - type: 'break'
         style: 'paragraph'
       - type: 'text'
-        # ../en-US.restext:309 | "Then, perform all Start o..."
+        # ../en-US.restext:306 | "Then, perform all Start o..."
         value: 'restext://Round_StartMiddleYears_Rule'

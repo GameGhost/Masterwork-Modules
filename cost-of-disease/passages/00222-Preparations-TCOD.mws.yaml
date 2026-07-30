@@ -54,20 +54,20 @@ nodes:
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:285 | "two"
-      expr: '"restext://Number_Two_Lower"'
+      # ../en-US.restext:310 | "two"
+      expr: '"restext://Setup_Number_Two"'
   - match: 3
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:284 | "three"
-      expr: '"restext://Number_Three_Lower"'
+      # ../en-US.restext:309 | "three"
+      expr: '"restext://Setup_Number_Three"'
   - match: 4
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:283 | "four"
-      expr: '"restext://Number_Four_Lower"'
+      # ../en-US.restext:308 | "four"
+      expr: '"restext://Setup_Number_Four"'
   - match: 5
     nodes:
     - type: 'assign'
@@ -77,8 +77,8 @@ nodes:
   default:
   - type: 'assign'
     var: 'playtxt'
-    # ../en-US.restext:285 | "two"
-    expr: '"restext://Number_Two_Lower"'
+    # ../en-US.restext:310 | "two"
+    expr: '"restext://Setup_Number_Two"'
 # ../.source/TheCostofDisease_Eng_v10.cs:24589
 - type: 'text'
   # ../en-US.restext:1962 | "Complete the standard set..."

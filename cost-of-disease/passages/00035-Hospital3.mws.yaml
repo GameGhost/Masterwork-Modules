@@ -55,6 +55,7 @@ nodes:
 - type: 'section'
   # ../en-US.restext:141 | "{icon:storybook} **Board ..."
   title: 'restext://Heading_BoardOfTrustees'
+  style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5062
   - type: 'text'
@@ -86,6 +87,7 @@ nodes:
     - type: 'section'
       # ../en-US.restext:181 | "{icon:storybook} **The Cure**"
       title: 'restext://Heading_TheCure'
+      style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:5089
       - type: 'text'
@@ -103,6 +105,7 @@ nodes:
     - type: 'section'
       # ../en-US.restext:183 | "{icon:storybook} **The Pa..."
       title: 'restext://Heading_ThePanacea'
+      style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:5110
       - type: 'text'
@@ -125,6 +128,7 @@ nodes:
   - type: 'section'
     # ../en-US.restext:185 | "{icon:storybook} **Victor..."
     title: 'restext://Heading_VictoryAhead'
+    style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:5134
     - type: 'text'
@@ -150,6 +154,7 @@ nodes:
   - type: 'section'
     # ../en-US.restext:177 | "{icon:storybook} **Scient..."
     title: 'restext://Heading_ScientificAdvances'
+    style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:5156
     - type: 'text'
@@ -168,6 +173,7 @@ nodes:
 - type: 'section'
   # ../en-US.restext:632 | "{icon:storybook} **The Se..."
   title: 'restext://Hospital3_005'
+  style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5178
   - type: 'text'
@@ -197,10 +203,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:306 | "The Late Years of the Sec..."
+      # ../en-US.restext:303 | "The Late Years of the Sec..."
       value: 'restext://Round_GenerationII_LateEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:301 | "Perform any End of Round ..."
+      # ../en-US.restext:298 | "Perform any End of Round ..."
       value: 'restext://Round_EndOfRoundActions_Rule'

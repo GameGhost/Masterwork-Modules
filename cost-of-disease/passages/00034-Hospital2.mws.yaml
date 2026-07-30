@@ -18,6 +18,7 @@ nodes:
 - type: 'section'
   # ../en-US.restext:141 | "{icon:storybook} **Board ..."
   title: 'restext://Heading_BoardOfTrustees'
+  style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:4834
   - type: 'text'
@@ -49,6 +50,7 @@ nodes:
     - type: 'section'
       # ../en-US.restext:181 | "{icon:storybook} **The Cure**"
       title: 'restext://Heading_TheCure'
+      style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:4861
       - type: 'text'
@@ -69,6 +71,7 @@ nodes:
     - type: 'section'
       # ../en-US.restext:183 | "{icon:storybook} **The Pa..."
       title: 'restext://Heading_ThePanacea'
+      style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:4884
       - type: 'text'
@@ -91,6 +94,7 @@ nodes:
   - type: 'section'
     # ../en-US.restext:185 | "{icon:storybook} **Victor..."
     title: 'restext://Heading_VictoryAhead'
+    style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:4907
     - type: 'text'
@@ -112,6 +116,7 @@ nodes:
 - type: 'section'
   # ../en-US.restext:622 | "{icon:storybook} **The Se..."
   title: 'restext://Hospital2_003'
+  style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:4928
   - type: 'text'
@@ -134,6 +139,7 @@ nodes:
   - type: 'section'
     # ../en-US.restext:177 | "{icon:storybook} **Scient..."
     title: 'restext://Heading_ScientificAdvances'
+    style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:4947
     - type: 'text'
@@ -152,6 +158,7 @@ nodes:
 - type: 'section'
   # ../en-US.restext:184 | "**University Symposium**"
   title: 'restext://Heading_UniversitySymposium'
+  style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:4965
   - type: 'text'
@@ -175,10 +182,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:307 | "The Middle Years of the S..."
+      # ../en-US.restext:304 | "The Middle Years of the S..."
       value: 'restext://Round_GenerationII_MiddleEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:308 | "Then, perform all Start o..."
+      # ../en-US.restext:305 | "Then, perform all Start o..."
       value: 'restext://Round_StartLateYears_Rule'

@@ -46,6 +46,7 @@ nodes:
     - type: 'section'
       # ../en-US.restext:641 | "**Like Us**"
       title: 'restext://NoUni3_002'
+      style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:5398
       - type: 'text'
@@ -68,6 +69,7 @@ nodes:
     - type: 'section'
       # ../en-US.restext:644 | "**A Step Forward**"
       title: 'restext://NoUni3_005'
+      style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:5425
       - type: 'text'
@@ -84,6 +86,7 @@ nodes:
     - type: 'section'
       # ../en-US.restext:646 | "**The Power of Electricity**"
       title: 'restext://NoUni3_007'
+      style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:5442
       - type: 'text'
@@ -96,10 +99,11 @@ nodes:
 - type: 'section'
   # ../en-US.restext:172 | "{icon:storybook} **PUB**"
   title: 'restext://Heading_Pub'
+  style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5473
   - type: 'text'
-    # ../en-US.restext:286 | "If your token is overtake..."
+    # ../en-US.restext:283 | "If your token is overtake..."
     value: 'restext://Pub_ResetCreepy_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:5489
   - type: 'link'
@@ -114,6 +118,7 @@ nodes:
 - type: 'section'
   # ../en-US.restext:163 | "**MASTERWORK**"
   title: 'restext://Heading_Masterwork'
+  style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5503
   - type: 'text'
@@ -126,6 +131,7 @@ nodes:
 - type: 'section'
   # ../en-US.restext:165 | "{icon:storybook} **Master..."
   title: 'restext://Heading_MasterworkRecipe'
+  style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5520
   - type: 'text'
@@ -144,6 +150,7 @@ nodes:
 - type: 'section'
   # ../en-US.restext:147 | "{icon:storybook} **Comple..."
   title: 'restext://Heading_CompletedMasterwork'
+  style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5537
   - type: 'text'
@@ -173,10 +180,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:303 | "The Late Years of the Thi..."
+      # ../en-US.restext:300 | "The Late Years of the Thi..."
       value: 'restext://Round_GenerationIII_LateEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:301 | "Perform any End of Round ..."
+      # ../en-US.restext:298 | "Perform any End of Round ..."
       value: 'restext://Round_EndOfRoundActions_Rule'

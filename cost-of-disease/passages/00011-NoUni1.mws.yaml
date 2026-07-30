@@ -91,10 +91,11 @@ nodes:
 - type: 'section'
   # ../en-US.restext:172 | "{icon:storybook} **PUB**"
   title: 'restext://Heading_Pub'
+  style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:2792
   - type: 'text'
-    # ../en-US.restext:286 | "If your token is overtake..."
+    # ../en-US.restext:283 | "If your token is overtake..."
     value: 'restext://Pub_ResetCreepy_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:2808
   - type: 'link'
@@ -109,6 +110,7 @@ nodes:
 - type: 'section'
   # ../en-US.restext:163 | "**MASTERWORK**"
   title: 'restext://Heading_Masterwork'
+  style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:2822
   - type: 'text'
@@ -121,6 +123,7 @@ nodes:
 - type: 'section'
   # ../en-US.restext:165 | "{icon:storybook} **Master..."
   title: 'restext://Heading_MasterworkRecipe'
+  style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:2839
   - type: 'text'
@@ -139,6 +142,7 @@ nodes:
 - type: 'section'
   # ../en-US.restext:147 | "{icon:storybook} **Comple..."
   title: 'restext://Heading_CompletedMasterwork'
+  style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:2856
   - type: 'text'
@@ -157,10 +161,11 @@ nodes:
 - type: 'section'
   # ../en-US.restext:160 | "**Knowledge**"
   title: 'restext://Heading_Knowledge'
+  style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:2872
   - type: 'text'
-    # ../en-US.restext:296 | "At the end of each round,..."
+    # ../en-US.restext:293 | "At the end of each round,..."
     value: 'restext://Resource_KnowledgeMovesCreepyTrack_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:2881
   - type: 'break'
@@ -180,10 +185,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:302 | "The Early Years of the Th..."
+      # ../en-US.restext:299 | "The Early Years of the Th..."
       value: 'restext://Round_GenerationIII_EarlyEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:309 | "Then, perform all Start o..."
+      # ../en-US.restext:306 | "Then, perform all Start o..."
       value: 'restext://Round_StartMiddleYears_Rule'
