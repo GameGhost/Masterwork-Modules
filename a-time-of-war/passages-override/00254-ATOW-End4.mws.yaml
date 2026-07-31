@@ -1,0 +1,93 @@
+﻿# Override — extracted content unchanged, plus an appended "Ending Unlocked" popup. See
+# 00251-ATOW-End1.mws.yaml's own comment for the full rationale.
+# ../.source/ATimeofWar_Eng_v8.cs:25140
+---
+format: 'mws/0.4'
+passage_id: 'ATOW-End4'
+# ../en-US.restext:2032 | "A Timeline Unbound"
+title: 'restext://ATOW_End4_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:25149
+- type: 'text'
+  # ../en-US.restext:2033 | "The words scatter and ref..."
+  value: 'restext://ATOW_End4_002'
+# ../.source/ATimeofWar_Eng_v8.cs:25150
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25152
+- type: 'text'
+  # ../en-US.restext:2034 | "I cannot know if this mem..."
+  value: 'restext://ATOW_End4_003'
+# ../.source/ATimeofWar_Eng_v8.cs:25158
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25160
+- type: 'text'
+  # ../en-US.restext:2035 | "Can you read this?"
+  value: 'restext://ATOW_End4_004'
+# ../.source/ATimeofWar_Eng_v8.cs:25161
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25163
+- type: 'text'
+  # ../en-US.restext:2036 | "Can you read these words?"
+  value: 'restext://ATOW_End4_005'
+# ../.source/ATimeofWar_Eng_v8.cs:25164
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25166
+- type: 'text'
+  # ../en-US.restext:2037 | "Is there no response? Who..."
+  value: 'restext://ATOW_End4_006'
+# ../.source/ATimeofWar_Eng_v8.cs:25167
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25169
+- type: 'text'
+  # ../en-US.restext:2035 | "Can you read this?"
+  value: 'restext://ATOW_End4_004'
+# ../.source/ATimeofWar_Eng_v8.cs:25170
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25172
+- type: 'text'
+  # ../en-US.restext:2038 | "I cannot know if anyone w..."
+  value: 'restext://ATOW_End4_007'
+# ../.source/ATimeofWar_Eng_v8.cs:25174
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25176
+- type: 'text'
+  # ../en-US.restext:2039 | "Can you page the about pe..."
+  value: 'restext://ATOW_End4_008'
+# ../.source/ATimeofWar_Eng_v8.cs:25177
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25179
+- type: 'text'
+  # ../en-US.restext:2035 | "Can you read this?"
+  value: 'restext://ATOW_End4_004'
+# ../.source/ATimeofWar_Eng_v8.cs:25180
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25184
+- type: 'text'
+  # ../en-US.restext:19 | "THE END?"
+  value: 'restext://Common_015'
+# - type: 'record'
+#   id: 'ending_atow_end4'
+# - type: 'record'
+#   id: 'endings_discovered'
+- type: 'popup'
+  layout: 'game_complete'
+  label: 'The End'
+  style: 'btn-forward'
+  header:
+  - type: 'image'
+    asset: 'icon://scenariobox3d_war'
+  content:
+  - type: 'text'
+    value: 'You have unlocked **restext://ATOW_End4_001** ending.'
+  okay: 'Close'
+  target: 'app::gameover'

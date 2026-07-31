@@ -1,0 +1,152 @@
+﻿# Override — extracted content unchanged, plus an appended "Ending Unlocked" popup. See
+# 00210-FOTU-End2.mws.yaml's own comment for the full rationale.
+# ../.source/FearoftheUnknown_Eng_v15.cs:31007
+---
+format: 'mws/0.4'
+passage_id: 'FOTU-End5'
+# ../en-US.restext:2255 | "Peace in Defiance"
+title: 'restext://FOTU_End5_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:31018
+- type: 'text'
+  # ../en-US.restext:2256 | "**Journal Entry - {winner..."
+  value: 'restext://FOTU_End5_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:31023
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:31025
+- type: 'text'
+  # ../en-US.restext:2257 | "Sunday: I had the gloriou..."
+  value: 'restext://FOTU_End5_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:31028
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:31030
+- type: 'text'
+  # ../en-US.restext:2258 | "I watch with steady eyes ..."
+  value: 'restext://FOTU_End5_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:31031
+- type: 'conditional'
+  conditions:
+  - if: 'winner == nameA'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:31034
+    - type: 'let'
+      var: '_rpl_FOTU_End5_0'
+      expr: 'warriorA.replace("_1", "")'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:31034
+    - type: 'text'
+      value: '{_rpl_FOTU_End5_0}'
+      lets:
+      - '_rpl_FOTU_End5_0'
+  - if: 'winner == nameB'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:31040
+    - type: 'let'
+      var: '_rpl_FOTU_End5_1'
+      expr: 'warriorB.replace("_2", "")'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:31040
+    - type: 'text'
+      value: '{_rpl_FOTU_End5_1}'
+      lets:
+      - '_rpl_FOTU_End5_1'
+  - if: 'winner == nameC'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:31046
+    - type: 'let'
+      var: '_rpl_FOTU_End5_2'
+      expr: 'warriorC.replace("_3", "")'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:31046
+    - type: 'text'
+      value: '{_rpl_FOTU_End5_2}'
+      lets:
+      - '_rpl_FOTU_End5_2'
+  - if: 'winner == nameD'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:31052
+    - type: 'let'
+      var: '_rpl_FOTU_End5_3'
+      expr: 'warriorD.replace("_4", "")'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:31052
+    - type: 'text'
+      value: '{_rpl_FOTU_End5_3}'
+      lets:
+      - '_rpl_FOTU_End5_3'
+  - if: 'winner == nameE'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:31058
+    - type: 'let'
+      var: '_rpl_FOTU_End5_4'
+      expr: 'warriorE.replace("_5", "")'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:31058
+    - type: 'text'
+      value: '{_rpl_FOTU_End5_4}'
+      lets:
+      - '_rpl_FOTU_End5_4'
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31064
+  - type: 'let'
+    var: '_rpl_FOTU_End5_5'
+    expr: 'warriorA.replace("_1", "")'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31064
+  - type: 'text'
+    value: '{_rpl_FOTU_End5_5}'
+    lets:
+    - '_rpl_FOTU_End5_5'
+# ../.source/FearoftheUnknown_Eng_v15.cs:31067
+- type: 'text'
+  # ../en-US.restext:2259 | ", with cathartic ambivale..."
+  value: 'restext://FOTU_End5_005'
+# ../.source/FearoftheUnknown_Eng_v15.cs:31071
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:31073
+- type: 'text'
+  # ../en-US.restext:2260 | "These images appear in my..."
+  value: 'restext://FOTU_End5_006'
+# ../.source/FearoftheUnknown_Eng_v15.cs:31074
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:31076
+- type: 'text'
+  # ../en-US.restext:2261 | "The inmates have moved on..."
+  value: 'restext://FOTU_End5_007'
+# ../.source/FearoftheUnknown_Eng_v15.cs:31079
+- type: 'conditional'
+  if: 'creature == 2'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31081
+  - type: 'text'
+    # ../en-US.restext:2262 | "An old man visits now and..."
+    value: 'restext://FOTU_End5_008'
+# ../.source/FearoftheUnknown_Eng_v15.cs:31084
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:31086
+- type: 'text'
+  # ../en-US.restext:2263 | "What a waste contentment ..."
+  value: 'restext://FOTU_End5_009'
+# ../.source/FearoftheUnknown_Eng_v15.cs:31088
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:31091
+- type: 'text'
+  # ../en-US.restext:74 | "THE END?"
+  value: 'restext://Common_070'
+# - type: 'record'
+#   id: 'ending_fotu_end5'
+# - type: 'record'
+#   id: 'endings_discovered'
+- type: 'popup'
+  layout: 'game_complete'
+  label: 'The End'
+  style: 'btn-forward'
+  header:
+  - type: 'image'
+    asset: 'icon://scenariobox3d_fear'
+  content:
+  - type: 'text'
+    value: 'You have unlocked **restext://FOTU_End5_001** ending.'
+  okay: 'Close'
+  target: 'app::gameover'

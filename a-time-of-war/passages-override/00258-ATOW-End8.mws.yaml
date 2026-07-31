@@ -1,0 +1,78 @@
+﻿# Override — extracted content unchanged, plus an appended "Ending Unlocked" popup. See
+# 00251-ATOW-End1.mws.yaml's own comment for the full rationale.
+# ../.source/ATimeofWar_Eng_v8.cs:25481
+---
+format: 'mws/0.4'
+passage_id: 'ATOW-End8'
+# ../en-US.restext:2083 | "Local Legend"
+title: 'restext://ATOW_End8_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:25490
+- type: 'text'
+  # ../en-US.restext:2084 | "I submit this post-script..."
+  value: 'restext://ATOW_End8_002'
+# ../.source/ATimeofWar_Eng_v8.cs:25502
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25504
+- type: 'text'
+  # ../en-US.restext:2085 | "With the inability for le..."
+  value: 'restext://ATOW_End8_003'
+# ../.source/ATimeofWar_Eng_v8.cs:25511
+- type: 'conditional'
+  if: 'peacecount == 1'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:25513
+  - type: 'conditional'
+    if: 'peac == 2'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:25515
+    - type: 'text'
+      # ../en-US.restext:2087 | "I can only hope those los..."
+      value: 'restext://ATOW_End8_005'
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:25520
+    - type: 'text'
+      # ../en-US.restext:2086 | "While practical in theory..."
+      value: 'restext://ATOW_End8_004'
+  # ../.source/ATimeofWar_Eng_v8.cs:25524
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25527
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25529
+- type: 'text'
+  # ../en-US.restext:2088 | "I am aware of what my lin..."
+  value: 'restext://ATOW_End8_006'
+# ../.source/ATimeofWar_Eng_v8.cs:25530
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25532
+- type: 'text'
+  # ../en-US.restext:2089 | "With righteous conviction..."
+  value: 'restext://ATOW_End8_007'
+# ../.source/ATimeofWar_Eng_v8.cs:25535
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25538
+- type: 'text'
+  # ../en-US.restext:19 | "THE END?"
+  value: 'restext://Common_015'
+# - type: 'record'
+#   id: 'ending_atow_end8'
+# - type: 'record'
+#   id: 'endings_discovered'
+- type: 'popup'
+  layout: 'game_complete'
+  label: 'The End'
+  style: 'btn-forward'
+  header:
+  - type: 'image'
+    asset: 'icon://scenariobox3d_war'
+  content:
+  - type: 'text'
+    value: 'You have unlocked **restext://ATOW_End8_001** ending.'
+  okay: 'Close'
+  target: 'app::gameover'

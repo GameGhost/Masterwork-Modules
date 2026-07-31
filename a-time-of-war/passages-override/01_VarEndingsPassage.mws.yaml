@@ -1,0 +1,14 @@
+# Override — replaces broken extraction. The original Cradle body (Vars.winner =
+# GLOBALS.winnerName; abort(goToPassage: Vars.ending);) extracted to `expr: 'global:winnerName'`,
+# not valid MWS syntax — a dead extraction placeholder for reading Unity's GLOBALS static class,
+# which this module no longer has (or needs) any equivalent of. Whichever passage sets Vars.ending
+# already does so before navigating here, so this override needs nothing but the navigation that
+# was always the real point of this passage. Same pattern as Cost of Disease's own override —
+# passage1008/VarEndingsPassage is a shared Cradle utility passage present in all three scenarios.
+---
+format: 'mws/0.4'
+passage_id: 'VarEndingsPassage'
+layout: 'narration'
+nodes:
+- type: 'goto'
+  target: '${ending}'

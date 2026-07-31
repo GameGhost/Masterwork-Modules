@@ -1,0 +1,67 @@
+﻿# Override — extracted content unchanged, plus an appended "Ending Unlocked" popup (game_complete
+# layout, target: app::gameover — see Play.razor's GameSession.IsGameOverRequested). Header image
+# is a placeholder (this module's own scenariobox3d_fear icon) pending real curated ending art;
+# same for every ending override in this module.
+# ../.source/FearoftheUnknown_Eng_v15.cs:23631
+---
+format: 'mws/0.4'
+passage_id: 'FOTU-End2'
+# ../en-US.restext:1773 | "A Model City"
+title: 'restext://FOTU_End2_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:23642
+- type: 'text'
+  # ../en-US.restext:1774 | "**Journal Entry: {winner}..."
+  value: 'restext://FOTU_End2_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23652
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23654
+- type: 'text'
+  # ../en-US.restext:1775 | "I see now how wrong I had..."
+  value: 'restext://FOTU_End2_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23655
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23657
+- type: 'text'
+  # ../en-US.restext:1776 | "The citizens of {townname..."
+  value: 'restext://FOTU_End2_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23662
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23664
+- type: 'text'
+  # ../en-US.restext:1777 | "One must be self-reliant ..."
+  value: 'restext://FOTU_End2_005'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23667
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23669
+- type: 'text'
+  # ../en-US.restext:1778 | "The rest of the world may..."
+  value: 'restext://FOTU_End2_006'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23673
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23676
+- type: 'text'
+  # ../en-US.restext:74 | "THE END?"
+  value: 'restext://Common_070'
+# - type: 'record'
+#   id: 'ending_fotu_end2'
+# - type: 'record'
+#   id: 'endings_discovered'
+- type: 'popup'
+  layout: 'game_complete'
+  label: 'The End'
+  style: 'btn-forward'
+  header:
+  - type: 'image'
+    asset: 'icon://scenariobox3d_fear'
+  content:
+  - type: 'text'
+    value: 'You have unlocked **restext://FOTU_End2_001** ending.'
+  okay: 'Close'
+  target: 'app::gameover'

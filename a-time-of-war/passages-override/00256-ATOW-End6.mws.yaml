@@ -1,0 +1,58 @@
+﻿# Override — extracted content unchanged, plus an appended "Ending Unlocked" popup. See
+# 00251-ATOW-End1.mws.yaml's own comment for the full rationale.
+# ../.source/ATimeofWar_Eng_v8.cs:25315
+---
+format: 'mws/0.4'
+passage_id: 'ATOW-End6'
+# ../en-US.restext:2063 | "Tipping the Scales"
+title: 'restext://ATOW_End6_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:25324
+- type: 'text'
+  # ../en-US.restext:2064 | "This is not a story of Ic..."
+  value: 'restext://ATOW_End6_002'
+# ../.source/ATimeofWar_Eng_v8.cs:25325
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25327
+- type: 'text'
+  # ../en-US.restext:2065 | "This is a story of three ..."
+  value: 'restext://ATOW_End6_003'
+# ../.source/ATimeofWar_Eng_v8.cs:25334
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25336
+- type: 'text'
+  # ../en-US.restext:2066 | "Oh, how I wish I could vi..."
+  value: 'restext://ATOW_End6_004'
+# ../.source/ATimeofWar_Eng_v8.cs:25340
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25342
+- type: 'text'
+  # ../en-US.restext:2067 | "But even as I, {winner}, ..."
+  value: 'restext://ATOW_End6_005'
+# ../.source/ATimeofWar_Eng_v8.cs:25348
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25351
+- type: 'text'
+  # ../en-US.restext:19 | "THE END?"
+  value: 'restext://Common_015'
+# - type: 'record'
+#   id: 'ending_atow_end6'
+# - type: 'record'
+#   id: 'endings_discovered'
+- type: 'popup'
+  layout: 'game_complete'
+  label: 'The End'
+  style: 'btn-forward'
+  header:
+  - type: 'image'
+    asset: 'icon://scenariobox3d_war'
+  content:
+  - type: 'text'
+    value: 'You have unlocked **restext://ATOW_End6_001** ending.'
+  okay: 'Close'
+  target: 'app::gameover'
