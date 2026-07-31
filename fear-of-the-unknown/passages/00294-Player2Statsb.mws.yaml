@@ -12,13 +12,13 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:230 | "Please enter the VP of yo..."
-      value: 'restext://Common_226'
+      # ../en-US.restext:239 | "Please enter the VP of yo..."
+      value: 'restext://Common_235'
     - type: 'input'
       label: ''
       var: 'strB'
-    # ../en-US.restext:277 | "Continue"
-    okay: 'restext://Common_273'
+    # ../en-US.restext:286 | "Continue"
+    okay: 'restext://Common_282'
     onclose:
     - type: 'assign'
       var: 'strB_submitted'
@@ -29,21 +29,21 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32506
 - type: 'text'
-  # ../en-US.restext:231 | "**Strength Confirmed**"
-  value: 'restext://Common_227'
+  # ../en-US.restext:240 | "**Strength Confirmed**"
+  value: 'restext://Common_236'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32508
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32512
 - type: 'text'
-  # ../en-US.restext:2389 | "**{strB}** is locked in a..."
+  # ../en-US.restext:2404 | "**{strB}** is locked in a..."
   value: 'restext://Player2Statsb_001'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32516
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32518
 - type: 'link'
-  # ../en-US.restext:286 | "Click to continue..."
-  label: 'restext://Common_282'
+  # ../en-US.restext:295 | "Click to continue..."
+  label: 'restext://Common_291'
   target: 'Player2Statsc' # ./00295-Player2Statsc.mws.yaml
   snapshot: true

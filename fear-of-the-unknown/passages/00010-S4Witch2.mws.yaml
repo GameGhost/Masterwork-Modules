@@ -12,15 +12,15 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2515
   - type: 'text'
-    # ../en-US.restext:442 | "**More Secrets to Quell**"
+    # ../en-US.restext:453 | "**More Secrets to Quell**"
     value: 'restext://S4Witch2_006'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2517
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2521
   - type: 'text'
-    # ../en-US.restext:297 | "**Collected Letters -** _..."
-    value: 'restext://Common_293'
+    # ../en-US.restext:306 | "**Collected Letters -** _..."
+    value: 'restext://Common_302'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2531
   - type: 'switch'
     on: 'players'
@@ -58,48 +58,48 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2529
   - type: 'text'
-    # ../en-US.restext:298 | "My dear {randomname} II,"
-    value: 'restext://Common_294'
+    # ../en-US.restext:307 | "My dear {randomname} II,"
+    value: 'restext://Common_303'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2550
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2552
   - type: 'text'
-    # ../en-US.restext:443 | "You must forgive the late..."
+    # ../en-US.restext:454 | "You must forgive the late..."
     value: 'restext://S4Witch2_007'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2557
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2559
   - type: 'text'
-    # ../en-US.restext:444 | "For a few years, I watche..."
+    # ../en-US.restext:455 | "For a few years, I watche..."
     value: 'restext://S4Witch2_008'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2562
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2564
   - type: 'text'
-    # ../en-US.restext:445 | "With **no one overtaken t..."
+    # ../en-US.restext:456 | "With **no one overtaken t..."
     value: 'restext://S4Witch2_009'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2570
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2573
   - type: 'link'
-    # ../en-US.restext:446 | "I fear their suspicions h..."
+    # ../en-US.restext:457 | "I fear their suspicions h..."
     label: 'restext://S4Witch2_010'
     target: 'ForeignIntro' # ./00013-ForeignIntro.mws.yaml
     snapshot: true
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2580
   - type: 'text'
-    # ../en-US.restext:437 | "**A Return to Civility**"
+    # ../en-US.restext:448 | "**A Return to Civility**"
     value: 'restext://S4Witch2_001'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2582
   - type: 'break'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2585
   - type: 'text'
-    # ../en-US.restext:438 | "**Collected Letters -** _..."
+    # ../en-US.restext:449 | "**Collected Letters -** _..."
     value: 'restext://S4Witch2_002'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2595
   - type: 'switch'
@@ -138,28 +138,28 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2593
   - type: 'text'
-    # ../en-US.restext:296 | "My dear, {randomname} II,"
-    value: 'restext://Common_292'
+    # ../en-US.restext:305 | "My dear, {randomname} II,"
+    value: 'restext://Common_301'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2614
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2616
   - type: 'text'
-    # ../en-US.restext:439 | "You must forgive me for n..."
+    # ../en-US.restext:450 | "You must forgive me for n..."
     value: 'restext://S4Witch2_003'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2617
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2619
   - type: 'text'
-    # ../en-US.restext:440 | "However, these rumors wer..."
+    # ../en-US.restext:451 | "However, these rumors wer..."
     value: 'restext://S4Witch2_004'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2626
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2629
   - type: 'link'
-    # ../en-US.restext:441 | "There is no need to rush ..."
+    # ../en-US.restext:452 | "There is no need to rush ..."
     label: 'restext://S4Witch2_005'
     target: 'CreatureIntro' # ./00014-CreatureIntro.mws.yaml
     snapshot: true
@@ -170,12 +170,12 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:2633
 - type: 'popup'
   layout: 'end_of_generation'
-  # ../en-US.restext:299 | "Confirm"
-  okay: 'restext://Common_295'
+  # ../en-US.restext:308 | "Confirm"
+  okay: 'restext://Common_304'
   content:
   - type: 'text'
-    # ../en-US.restext:300 | "Remove all player pieces ..."
-    value: 'restext://Common_296'
+    # ../en-US.restext:309 | "Remove all player pieces ..."
+    value: 'restext://Common_305'
   - type: 'let'
     var: 'generation'
     expr: '3'

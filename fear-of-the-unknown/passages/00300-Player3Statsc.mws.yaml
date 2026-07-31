@@ -12,13 +12,13 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:232 | "Please enter the VP of yo..."
-      value: 'restext://Common_228'
+      # ../en-US.restext:241 | "Please enter the VP of yo..."
+      value: 'restext://Common_237'
     - type: 'input'
       label: ''
       var: 'hitC'
-    # ../en-US.restext:277 | "Continue"
-    okay: 'restext://Common_273'
+    # ../en-US.restext:286 | "Continue"
+    okay: 'restext://Common_282'
     onclose:
     - type: 'assign'
       var: 'hitC_submitted'
@@ -29,28 +29,28 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32800
 - type: 'text'
-  # ../en-US.restext:233 | "**Life Total Confirmed**"
-  value: 'restext://Common_229'
+  # ../en-US.restext:242 | "**Life Total Confirmed**"
+  value: 'restext://Common_238'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32802
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32806
 - type: 'text'
-  # ../en-US.restext:2412 | "**{hitC}** is locked in a..."
+  # ../en-US.restext:2427 | "**{hitC}** is locked in a..."
   value: 'restext://Player3Statsc_001'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32810
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32812
 - type: 'text'
-  # ../en-US.restext:2413 | "{nameC}'s Warrior is buil..."
+  # ../en-US.restext:2428 | "{nameC}'s Warrior is buil..."
   value: 'restext://Player3Statsc_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32815
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32817
 - type: 'link'
-  # ../en-US.restext:286 | "Click to continue..."
-  label: 'restext://Common_282'
+  # ../en-US.restext:295 | "Click to continue..."
+  label: 'restext://Common_291'
   target: 'Player3Statsfin' # ./00301-Player3Statsfin.mws.yaml
   snapshot: true

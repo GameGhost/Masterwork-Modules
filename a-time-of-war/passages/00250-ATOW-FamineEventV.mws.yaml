@@ -8,34 +8,34 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:24940
 - type: 'text'
-  # ../en-US.restext:194 | "Special Event"
-  value: 'restext://Common_190'
+  # ../en-US.restext:197 | "Special Event"
+  value: 'restext://Common_193'
   style: 'special-event'
 # ../.source/ATimeofWar_Eng_v8.cs:24941
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:24942
 - type: 'text'
-  # ../en-US.restext:2000 | "Each player takes a Votin..."
+  # ../en-US.restext:2014 | "Each player takes a Votin..."
   value: 'restext://ATOW_FamineEventV_002'
 # ../.source/ATimeofWar_Eng_v8.cs:24944
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:24948
 - type: 'text'
-  # ../en-US.restext:2001 | "**YAY** is a vote to crea..."
+  # ../en-US.restext:2015 | "**YAY** is a vote to crea..."
   value: 'restext://ATOW_FamineEventV_003'
 # ../.source/ATimeofWar_Eng_v8.cs:24953
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:24956
 - type: 'text'
-  # ../en-US.restext:2002 | "**NAY** is a vote to weat..."
+  # ../en-US.restext:2016 | "**NAY** is a vote to weat..."
   value: 'restext://ATOW_FamineEventV_004'
 # ../.source/ATimeofWar_Eng_v8.cs:24965
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:24967
 - type: 'text'
-  # ../en-US.restext:2003 | "Tally the vote count _(ti..."
+  # ../en-US.restext:2017 | "Tally the vote count _(ti..."
   value: 'restext://ATOW_FamineEventV_005'
 # ../.source/ATimeofWar_Eng_v8.cs:24972
 - type: 'break'
@@ -47,38 +47,38 @@ nodes:
   label: 'restext://Common_019'
   content:
   - type: 'text'
-    # ../en-US.restext:195 | "Click on the 'Start Votin..."
-    value: 'restext://Common_191'
+    # ../en-US.restext:198 | "Click on the 'Start Votin..."
+    value: 'restext://Common_194'
   - type: 'break'
     style: 'paragraph'
   - type: 'text'
-    # ../en-US.restext:196 | "When you see the word 'RE..."
-    value: 'restext://Common_192'
+    # ../en-US.restext:199 | "When you see the word 'RE..."
+    value: 'restext://Common_195'
   - type: 'break'
     style: 'paragraph'
   - type: 'popup'
     layout: 'countdown_action'
-    # ../en-US.restext:197 | "Start Voting"
-    label: 'restext://Common_193'
+    # ../en-US.restext:200 | "Start Voting"
+    label: 'restext://Common_196'
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:199 | "3"
-      value: 'restext://Common_195'
+      # ../en-US.restext:202 | "3"
+      value: 'restext://Common_198'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:200 | "2"
-      value: 'restext://Common_196'
+      # ../en-US.restext:203 | "2"
+      value: 'restext://Common_199'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:201 | "1"
-      value: 'restext://Common_197'
+      # ../en-US.restext:204 | "1"
+      value: 'restext://Common_200'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:198 | "REVEAL"
-      value: 'restext://Common_194'
+      # ../en-US.restext:201 | "REVEAL"
+      value: 'restext://Common_197'
       style: 'countdown-reveal'
-    # ../en-US.restext:198 | "REVEAL"
-    okay: 'restext://Common_194'
+    # ../en-US.restext:201 | "REVEAL"
+    okay: 'restext://Common_197'
     target: 'ATOW-FamineEventRes' # ./00249-ATOW-FamineEventRes.mws.yaml
     snapshot: false

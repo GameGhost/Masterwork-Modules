@@ -20,7 +20,7 @@ nodes:
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:13811
 - type: 'text'
-  # ../en-US.restext:1031 | "{nameD}."
+  # ../en-US.restext:1045 | "{nameD}."
   value: 'restext://NameEntryD_001'
 # ../.source/ATimeofWar_Eng_v8.cs:13813
 - type: 'break'
@@ -38,14 +38,14 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:13824
   - type: 'link'
-    # ../en-US.restext:138 | "Click to Continue..."
-    label: 'restext://Common_134'
+    # ../en-US.restext:139 | "Click to Continue..."
+    label: 'restext://Common_135'
     target: 'NameEntryE' # ./00120-NameEntryE.mws.yaml
     snapshot: true
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:13828
   - type: 'link'
-    # ../en-US.restext:138 | "Click to Continue..."
-    label: 'restext://Common_134'
+    # ../en-US.restext:139 | "Click to Continue..."
+    label: 'restext://Common_135'
     target: 'Start2' # ./00001-Start2.mws.yaml
     snapshot: true

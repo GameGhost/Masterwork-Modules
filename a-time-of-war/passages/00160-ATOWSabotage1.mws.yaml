@@ -2,27 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ATOWSabotage1'
-# ../en-US.restext:1400 | "The Choice for Resistance"
+# ../en-US.restext:1414 | "The Choice for Resistance"
 title: 'restext://ATOWSabotage1_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:17801
 - type: 'text'
-  # ../en-US.restext:1401 | "I could not be swayed. It..."
+  # ../en-US.restext:1415 | "I could not be swayed. It..."
   value: 'restext://ATOWSabotage1_002'
 # ../.source/ATimeofWar_Eng_v8.cs:17804
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:17808
 - type: 'text'
-  # ../en-US.restext:1402 | "**The choice was clear:**"
+  # ../en-US.restext:1416 | "**The choice was clear:**"
   value: 'restext://ATOWSabotage1_003'
 # ../.source/ATimeofWar_Eng_v8.cs:17810
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:17813
 - type: 'link'
-  # ../en-US.restext:1403 | "The Barracks was a worthy..."
+  # ../en-US.restext:1417 | "The Barracks was a worthy..."
   label: 'restext://ATOWSabotage1_004'
   target: 'ATOWSabotageConfirm' # ./00161-ATOWSabotageConfirm.mws.yaml
   snapshot: true
@@ -41,7 +41,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:17817
 - type: 'link'
-  # ../en-US.restext:1404 | "The Laborer's Union was a..."
+  # ../en-US.restext:1418 | "The Laborer's Union was a..."
   label: 'restext://ATOWSabotage1_005'
   target: 'ATOWSabotageConfirm' # ./00161-ATOWSabotageConfirm.mws.yaml
   snapshot: true
@@ -49,7 +49,7 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:17831
   - type: 'assign'
     var: 'bldg1'
-    # ../en-US.restext:1405 | "Laborer's Union"
+    # ../en-US.restext:1419 | "Laborer's Union"
     expr: '"restext://ATOWSabotage1_006"'
   # ../.source/ATimeofWar_Eng_v8.cs:17832
   - type: 'assign'

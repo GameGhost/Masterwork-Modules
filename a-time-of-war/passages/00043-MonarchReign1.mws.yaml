@@ -4,11 +4,11 @@ format: 'mws/0.4'
 passage_id: 'MonarchReign1'
 # ../en-US.restext:86 | "Monarchy Reigns"
 title: 'restext://Common_082'
-# ../en-US.restext:210 | "Early Years"
-subtitle: 'restext://Common_206'
+# ../en-US.restext:214 | "Early Years"
+subtitle: 'restext://Common_210'
 tags:
 - 'format'
-layout: 'narration'
+layout: 'hub_early'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:5659
 - type: 'assign'
@@ -21,8 +21,8 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:5665
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:211 | "Accept"
-    okay: 'restext://Common_207'
+    # ../en-US.restext:215 | "Accept"
+    okay: 'restext://Common_211'
     header:
     # ../.source/ATimeofWar_Eng_v8.cs:5669
     - type: 'image'
@@ -31,7 +31,7 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:5671
     - type: 'text'
-      # ../en-US.restext:580 | "Turn to page **9** of the..."
+      # ../en-US.restext:594 | "Turn to page **9** of the..."
       value: 'restext://MonarchReign1_002'
     # ../.source/ATimeofWar_Eng_v8.cs:5678
     - type: 'conditional'
@@ -41,8 +41,8 @@ nodes:
       - type: 'break'
       # ../.source/ATimeofWar_Eng_v8.cs:5681
       - type: 'text'
-        # ../en-US.restext:230 | "Then, since this is a 3 p..."
-        value: 'restext://Common_226'
+        # ../en-US.restext:238 | "Then, since this is a 3 p..."
+        value: 'restext://Common_234'
 # ../.source/ATimeofWar_Eng_v8.cs:5685
 - type: 'break'
   style: 'paragraph'
@@ -103,7 +103,7 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:5784
   - type: 'text'
-    # ../en-US.restext:581 | "The player who makes the ..."
+    # ../en-US.restext:595 | "The player who makes the ..."
     value: 'restext://MonarchReign1_010'
 # ../.source/ATimeofWar_Eng_v8.cs:5792
 - type: 'break'
@@ -163,7 +163,7 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:5864
     - type: 'text'
-      # ../en-US.restext:582 | "Any player with a {icon:c..."
+      # ../en-US.restext:596 | "Any player with a {icon:c..."
       value: 'restext://MonarchReign1_017'
   # ../.source/ATimeofWar_Eng_v8.cs:5875
   - type: 'break'
@@ -204,17 +204,21 @@ nodes:
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:5924
-  - type: 'conditional'
-    if: 'crazy == 0'
-    then:
-    - type: 'link'
-      # ../en-US.restext:217 | "Click here at the end of ..."
-      label: 'restext://Common_213'
-      target: 'CoWEvent' # ./00139-CoWEvent.mws.yaml
-      snapshot: true
-    else:
-    - type: 'link'
-      # ../en-US.restext:217 | "Click here at the end of ..."
-      label: 'restext://Common_213'
-      target: 'Stickfun' # ./00114-Stickfun.mws.yaml
-      snapshot: true
+  - type: 'link'
+    # ../en-US.restext:221 | "Click here at the end of ..."
+    label: 'restext://Common_217'
+    snapshot: true
+    onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:5934
+    - type: 'assign'
+      var: '_ProgressRound'
+      expr: '7'
+    # ../.source/ATimeofWar_Eng_v8.cs:5934
+    - type: 'conditional'
+      if: 'crazy == 0'
+      then:
+      - type: 'goto'
+        target: 'CoWEvent' # ./00139-CoWEvent.mws.yaml
+      else:
+      - type: 'goto'
+        target: 'Stickfun' # ./00114-Stickfun.mws.yaml

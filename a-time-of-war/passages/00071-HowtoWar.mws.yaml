@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'HowtoWar'
-# ../en-US.restext:772 | "Deploying Advanced Weaponry"
+# ../en-US.restext:786 | "Deploying Advanced Weaponry"
 title: 'restext://HowtoWar_001'
 tags:
 - 'format'
@@ -15,13 +15,13 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:9635
     - type: 'text'
-      # ../en-US.restext:773 | "At the end of each round,..."
+      # ../en-US.restext:787 | "At the end of each round,..."
       value: 'restext://HowtoWar_002'
   - if: 'players >= 4'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:9635
     - type: 'text'
-      # ../en-US.restext:774 | "At the end of each round,..."
+      # ../en-US.restext:788 | "At the end of each round,..."
       value: 'restext://HowtoWar_003'
 # ../.source/ATimeofWar_Eng_v8.cs:9649
 - type: 'switch'
@@ -31,13 +31,13 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:9651
     - type: 'text'
-      # ../en-US.restext:775 | "The first Battle of each ..."
+      # ../en-US.restext:789 | "The first Battle of each ..."
       value: 'restext://HowtoWar_004'
   - match: 3
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:9655
     - type: 'text'
-      # ../en-US.restext:776 | "The first Battle of each ..."
+      # ../en-US.restext:790 | "The first Battle of each ..."
       value: 'restext://HowtoWar_005'
 # ../.source/ATimeofWar_Eng_v8.cs:9657
 - type: 'conditional'
@@ -45,11 +45,11 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:9659
   - type: 'text'
-    # ../en-US.restext:777 | "The first Battle of each ..."
+    # ../en-US.restext:791 | "The first Battle of each ..."
     value: 'restext://HowtoWar_006'
 # ../.source/ATimeofWar_Eng_v8.cs:9662
 - type: 'text'
-  # ../en-US.restext:778 | " During the Late Years, t..."
+  # ../en-US.restext:792 | " During the Late Years, t..."
   value: 'restext://HowtoWar_007'
 # ../.source/ATimeofWar_Eng_v8.cs:9664
 - type: 'break'
@@ -69,7 +69,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:9677
 - type: 'text'
-  # ../en-US.restext:779 | "The player(s) who reveale..."
+  # ../en-US.restext:793 | "The player(s) who reveale..."
   value: 'restext://HowtoWar_010'
 # ../.source/ATimeofWar_Eng_v8.cs:9680
 - type: 'conditional'
@@ -77,11 +77,11 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:9682
   - type: 'text'
-    # ../en-US.restext:780 | "For the Final Battle, the..."
+    # ../en-US.restext:794 | "For the Final Battle, the..."
     value: 'restext://HowtoWar_011'
 # ../.source/ATimeofWar_Eng_v8.cs:9698
 - type: 'text'
-  # ../en-US.restext:781 | "_ALL revealed tokens are ..."
+  # ../en-US.restext:795 | "_ALL revealed tokens are ..."
   value: 'restext://HowtoWar_012'
 # ../.source/ATimeofWar_Eng_v8.cs:9702
 - type: 'break'

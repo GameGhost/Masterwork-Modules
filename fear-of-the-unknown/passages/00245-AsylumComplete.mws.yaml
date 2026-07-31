@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'AsylumComplete'
-# ../en-US.restext:2051 | "Perhaps Stubborn, Perhaps..."
+# ../en-US.restext:2066 | "Perhaps Stubborn, Perhaps..."
 title: 'restext://AsylumComplete_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:27998
 - type: 'text'
-  # ../en-US.restext:2052 | "**Collected Letters - {te..."
+  # ../en-US.restext:2067 | "**Collected Letters - {te..."
   value: 'restext://AsylumComplete_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28004
 - type: 'include_passage'
@@ -18,21 +18,21 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28009
 - type: 'text'
-  # ../en-US.restext:2053 | "The most unusual thing ha..."
+  # ../en-US.restext:2068 | "The most unusual thing ha..."
   value: 'restext://AsylumComplete_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28011
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28013
 - type: 'text'
-  # ../en-US.restext:2054 | "I decided to visit the ne..."
+  # ../en-US.restext:2069 | "I decided to visit the ne..."
   value: 'restext://AsylumComplete_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28014
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28016
 - type: 'text'
-  # ../en-US.restext:2055 | "Suddenly it came back to ..."
+  # ../en-US.restext:2070 | "Suddenly it came back to ..."
   value: 'restext://AsylumComplete_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28019
 - type: 'break'
@@ -40,11 +40,11 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:28023
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:286 | "Click to continue..."
-  label: 'restext://Common_282'
+  # ../en-US.restext:295 | "Click to continue..."
+  label: 'restext://Common_291'
   target: '${round == 8 ? "Creature2" : "Creature3"}' # ./00158-Creature2.mws.yaml, ./00045-Creature3.mws.yaml
-  # ../en-US.restext:275 | "Close"
-  okay: 'restext://Common_271'
+  # ../en-US.restext:284 | "Close"
+  okay: 'restext://Common_280'
   snapshot: true
   header:
   # ../.source/FearoftheUnknown_Eng_v15.cs:28038
@@ -54,5 +54,5 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:28041
   - type: 'text'
-    # ../en-US.restext:2056 | "{tempas} loses **1VP** _a..."
+    # ../en-US.restext:2071 | "{tempas} loses **1VP** _a..."
     value: 'restext://AsylumComplete_006'

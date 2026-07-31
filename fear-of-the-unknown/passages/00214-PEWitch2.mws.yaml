@@ -10,7 +10,7 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:23977
   - type: 'text'
-    # ../en-US.restext:1804 | "**Progression**"
+    # ../en-US.restext:1819 | "**Progression**"
     value: 'restext://PEWitch2_003'
   # ../.source/FearoftheUnknown_Eng_v15.cs:23979
   - type: 'break'
@@ -23,7 +23,7 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:23984
   - type: 'text'
-    # ../en-US.restext:1805 | "I find with each passing ..."
+    # ../en-US.restext:1820 | "I find with each passing ..."
     value: 'restext://PEWitch2_004'
   # ../.source/FearoftheUnknown_Eng_v15.cs:23985
   - type: 'break'
@@ -31,7 +31,7 @@ nodes:
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:23993
   - type: 'text'
-    # ../en-US.restext:1802 | "**Regression**"
+    # ../en-US.restext:1817 | "**Regression**"
     value: 'restext://PEWitch2_001'
   # ../.source/FearoftheUnknown_Eng_v15.cs:23995
   - type: 'break'
@@ -44,7 +44,7 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:24000
   - type: 'text'
-    # ../en-US.restext:1803 | "The relapse of paranoid d..."
+    # ../en-US.restext:1818 | "The relapse of paranoid d..."
     value: 'restext://PEWitch2_002'
   # ../.source/FearoftheUnknown_Eng_v15.cs:24001
   - type: 'break'
@@ -52,11 +52,11 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:24006
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:286 | "Click to continue..."
-  label: 'restext://Common_282'
+  # ../en-US.restext:295 | "Click to continue..."
+  label: 'restext://Common_291'
   target: 'PEWitch2PlayerA' # ./00354-PEWitch2PlayerA.mws.yaml
-  # ../en-US.restext:275 | "Close"
-  okay: 'restext://Common_271'
+  # ../en-US.restext:284 | "Close"
+  okay: 'restext://Common_280'
   snapshot: true
   header:
   # ../.source/FearoftheUnknown_Eng_v15.cs:24020
@@ -66,5 +66,5 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:24027
   - type: 'text'
-    # ../en-US.restext:1806 | "**Retrieve the Obsession ..."
+    # ../en-US.restext:1821 | "**Retrieve the Obsession ..."
     value: 'restext://PEWitch2_005'

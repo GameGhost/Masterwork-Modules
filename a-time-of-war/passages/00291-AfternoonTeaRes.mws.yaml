@@ -2,27 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: 'AfternoonTeaRes'
-# ../en-US.restext:2206 | "Vote Complete"
+# ../en-US.restext:2220 | "Vote Complete"
 title: 'restext://AfternoonTeaRes_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:26983
 - type: 'text'
-  # ../en-US.restext:2207 | "**Tally your votes.** _A ..."
+  # ../en-US.restext:2221 | "**Tally your votes.** _A ..."
   value: 'restext://AfternoonTeaRes_002'
 # ../.source/ATimeofWar_Eng_v8.cs:26997
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:27001
 - type: 'text'
-  # ../en-US.restext:2208 | "**Choose the outcome of y..."
+  # ../en-US.restext:2222 | "**Choose the outcome of y..."
   value: 'restext://AfternoonTeaRes_003'
 # ../.source/ATimeofWar_Eng_v8.cs:27003
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:27005
 - type: 'link'
-  # ../en-US.restext:2209 | "We voted to (YAY) destroy..."
+  # ../en-US.restext:2223 | "We voted to (YAY) destroy..."
   label: 'restext://AfternoonTeaRes_004'
   target: 'AfternoonTeaResolutionYAY' # ./00174-AfternoonTeaResolutionYAY.mws.yaml
   snapshot: true
@@ -31,7 +31,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:27008
 - type: 'link'
-  # ../en-US.restext:2210 | "We voted to (NAY) keep th..."
+  # ../en-US.restext:2224 | "We voted to (NAY) keep th..."
   label: 'restext://AfternoonTeaRes_005'
   target: 'AfternoonTeaResolutionNAY' # ./00175-AfternoonTeaResolutionNAY.mws.yaml
   snapshot: true

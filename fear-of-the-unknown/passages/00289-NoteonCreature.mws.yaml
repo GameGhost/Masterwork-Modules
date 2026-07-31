@@ -11,13 +11,13 @@ nodes:
   if: 'creature == 2'
   then:
   - type: 'link'
-    # ../en-US.restext:286 | "Click to continue..."
-    label: 'restext://Common_282'
+    # ../en-US.restext:295 | "Click to continue..."
+    label: 'restext://Common_291'
     target: 'S4GoodCreature' # ./00028-S4GoodCreature.mws.yaml
     snapshot: true
   else:
   - type: 'link'
-    # ../en-US.restext:286 | "Click to continue..."
-    label: 'restext://Common_282'
+    # ../en-US.restext:295 | "Click to continue..."
+    label: 'restext://Common_291'
     target: 'S4BadCreature' # ./00029-S4BadCreature.mws.yaml
     snapshot: true

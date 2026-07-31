@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TriggerParadox'
-# ../en-US.restext:1180 | "Ease of Anxiety"
+# ../en-US.restext:1194 | "Ease of Anxiety"
 title: 'restext://TriggerParadox_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:15513
 - type: 'text'
-  # ../en-US.restext:1181 | "The feeling was unlike an..."
+  # ../en-US.restext:1195 | "The feeling was unlike an..."
   value: 'restext://TriggerParadox_002'
 # ../.source/ATimeofWar_Eng_v8.cs:15514
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:15516
 - type: 'text'
-  # ../en-US.restext:1182 | "Unfettered by the pressur..."
+  # ../en-US.restext:1196 | "Unfettered by the pressur..."
   value: 'restext://TriggerParadox_003'
 # ../.source/ATimeofWar_Eng_v8.cs:15518
 - type: 'break'
@@ -25,8 +25,8 @@ nodes:
   # ../en-US.restext:24 | "Click to continue..."
   label: 'restext://Common_020'
   layout: 'reveal'
-  # ../en-US.restext:182 | "Close"
-  cancel: 'restext://Common_178'
+  # ../en-US.restext:185 | "Close"
+  cancel: 'restext://Common_181'
   snapshot: true
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:15584
@@ -53,8 +53,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:169 | "Continue"
-        label: 'restext://Common_165'
+        # ../en-US.restext:172 | "Continue"
+        label: 'restext://Common_168'
         target: 'TimeTravel' # ./00017-TimeTravel.mws.yaml
         snapshot: true
     - match: 5
@@ -68,8 +68,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:169 | "Continue"
-        label: 'restext://Common_165'
+        # ../en-US.restext:172 | "Continue"
+        label: 'restext://Common_168'
         target: 'TimeTravel2' # ./00032-TimeTravel2.mws.yaml
         snapshot: true
     default:
@@ -86,8 +86,8 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:169 | "Continue"
-      label: 'restext://Common_165'
+      # ../en-US.restext:172 | "Continue"
+      label: 'restext://Common_168'
       target: 'TimeTravel3' # ./00018-TimeTravel3.mws.yaml
       snapshot: true
   # ../.source/ATimeofWar_Eng_v8.cs:15589
@@ -96,7 +96,7 @@ nodes:
     expr: 'rand_between(3, 4, "TriggerParadox_0")'
   # ../.source/ATimeofWar_Eng_v8.cs:15586
   - type: 'text'
-    # ../en-US.restext:1183 | "Gain **{_rnd_TriggerParad..."
+    # ../en-US.restext:1197 | "Gain **{_rnd_TriggerParad..."
     value: 'restext://TriggerParadox_004'
     lets:
     - '_rnd_TriggerParadox_0'

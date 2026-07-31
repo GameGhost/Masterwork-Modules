@@ -6,42 +6,42 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:2445
 - type: 'text'
-  # ../en-US.restext:180 | "**Carefully pick up this ..."
-  value: 'restext://Common_176'
+  # ../en-US.restext:183 | "**Carefully pick up this ..."
+  value: 'restext://Common_179'
 # ../.source/ATimeofWar_Eng_v8.cs:2448
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:2453
 - type: 'popup'
-  # ../en-US.restext:181 | "Once you are ready, click..."
-  label: 'restext://Common_177'
+  # ../en-US.restext:184 | "Once you are ready, click..."
+  label: 'restext://Common_180'
   layout: 'reveal'
-  # ../en-US.restext:182 | "Close"
-  cancel: 'restext://Common_178'
+  # ../en-US.restext:185 | "Close"
+  cancel: 'restext://Common_181'
   snapshot: true
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:2469
   - type: 'text'
-    # ../en-US.restext:377 | "\"Down with the Monarchy!..."
+    # ../en-US.restext:387 | "\"Down with the Monarchy!..."
     value: 'restext://RumorD4_001'
   # ../.source/ATimeofWar_Eng_v8.cs:2472
   - type: 'let'
     var: '_rnd_RumorD4_0'
-    # ../en-US.restext:378 | RumorD4_002 | "My intrusion was met with..."
-    # ../en-US.restext:379 | RumorD4_003 | "I was quick to explain to..."
+    # ../en-US.restext:388 | RumorD4_002 | "My intrusion was met with..."
+    # ../en-US.restext:389 | RumorD4_003 | "I was quick to explain to..."
     expr: '["restext://RumorD4_002", "restext://RumorD4_003"].shuffled("RumorD4_0")[0]'
   # ../.source/ATimeofWar_Eng_v8.cs:2478
   - type: 'let'
     var: '_rnd_RumorD4_1'
-    # ../en-US.restext:380 | RumorD4_004 | "They became especially ex..."
-    # ../en-US.restext:381 | RumorD4_005 | "After a moment of stunned..."
+    # ../en-US.restext:390 | RumorD4_004 | "They became especially ex..."
+    # ../en-US.restext:391 | RumorD4_005 | "After a moment of stunned..."
     expr: '["restext://RumorD4_004", "restext://RumorD4_005"].shuffled("RumorD4_1")[0]'
   # ../.source/ATimeofWar_Eng_v8.cs:2470
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:2472
   - type: 'text'
-    # ../en-US.restext:382 | "{_rnd_RumorD4_0} {_rnd_Ru..."
+    # ../en-US.restext:392 | "{_rnd_RumorD4_0} {_rnd_Ru..."
     value: 'restext://RumorD4_006'
     lets:
     - '_rnd_RumorD4_0'
@@ -51,15 +51,15 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:2485
   - type: 'text'
-    # ../en-US.restext:383 | "I was able to discern one..."
+    # ../en-US.restext:393 | "I was able to discern one..."
     value: 'restext://RumorD4_007'
   # ../.source/ATimeofWar_Eng_v8.cs:2490
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:2493
   - type: 'link'
-    # ../en-US.restext:184 | "When you have finished re..."
-    label: 'restext://Common_180'
+    # ../en-US.restext:187 | "When you have finished re..."
+    label: 'restext://Common_183'
     target: '${RumorD4nextPsg}'
     snapshot: true
     onclick:

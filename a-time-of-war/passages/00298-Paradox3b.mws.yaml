@@ -4,12 +4,12 @@ format: 'mws/0.4'
 passage_id: 'Paradox3b'
 # ../en-US.restext:117 | "Forward to Progress"
 title: 'restext://Common_113'
-# ../en-US.restext:207 | "Late Years"
-subtitle: 'restext://Common_203'
+# ../en-US.restext:211 | "Late Years"
+subtitle: 'restext://Common_207'
 tags:
 - 'revised'
 - 'added'
-layout: 'narration'
+layout: 'hub_late'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:27277
 - type: 'assign'
@@ -68,24 +68,24 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:27335
   - type: 'section'
-    # ../en-US.restext:129 | "**In Memoriam**"
-    title: 'restext://Common_125'
+    # ../en-US.restext:130 | "**In Memoriam**"
+    title: 'restext://Common_126'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:27343
     - type: 'text'
-      # ../en-US.restext:2246 | "With the near-total destr..."
+      # ../en-US.restext:2260 | "With the near-total destr..."
       value: 'restext://Paradox3b_004'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:27357
   - type: 'section'
-    # ../en-US.restext:2243 | "**Angry Mob Return**"
+    # ../en-US.restext:2257 | "**Angry Mob Return**"
     title: 'restext://Paradox3b_001'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:27365
     - type: 'text'
-      # ../en-US.restext:2244 | "All {icon:angrymob_icon} ..."
+      # ../en-US.restext:2258 | "All {icon:angrymob_icon} ..."
       value: 'restext://Paradox3b_002'
   # ../.source/ATimeofWar_Eng_v8.cs:27370
   - type: 'break'
@@ -118,7 +118,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:27413
   - type: 'section'
-    # ../en-US.restext:2245 | "{icon:storybooktoken}**Un..."
+    # ../en-US.restext:2259 | "{icon:storybooktoken}**Un..."
     title: 'restext://Paradox3b_003'
     style: 'hub-card'
     content:
@@ -137,31 +137,31 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:27429
   - type: 'section'
-    # ../en-US.restext:129 | "**In Memoriam**"
-    title: 'restext://Common_125'
+    # ../en-US.restext:130 | "**In Memoriam**"
+    title: 'restext://Common_126'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:27437
     - type: 'text'
-      # ../en-US.restext:130 | "With our brand of ethical..."
-      value: 'restext://Common_126'
+      # ../en-US.restext:131 | "With our brand of ethical..."
+      value: 'restext://Common_127'
     # ../.source/ATimeofWar_Eng_v8.cs:27439
     - type: 'conditional'
       if: 'release >= 1'
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:27443
       - type: 'text'
-        # ../en-US.restext:132 | "**The player who has move..."
-        value: 'restext://Common_128'
+        # ../en-US.restext:133 | "**The player who has move..."
+        value: 'restext://Common_129'
       else:
       # ../.source/ATimeofWar_Eng_v8.cs:27452
       - type: 'text'
-        # ../en-US.restext:131 | "**The player with the mos..."
-        value: 'restext://Common_127'
+        # ../en-US.restext:132 | "**The player with the mos..."
+        value: 'restext://Common_128'
     # ../.source/ATimeofWar_Eng_v8.cs:27455
     - type: 'text'
-      # ../en-US.restext:133 | " at the end of the Genera..."
-      value: 'restext://Common_129'
+      # ../en-US.restext:134 | " at the end of the Genera..."
+      value: 'restext://Common_130'
   # ../.source/ATimeofWar_Eng_v8.cs:27463
   - type: 'break'
     style: 'paragraph'
@@ -171,7 +171,7 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:27470
   - type: 'link'
-    # ../en-US.restext:272 | "Click here at the End of ..."
-    label: 'restext://Common_268'
+    # ../en-US.restext:280 | "Click here at the End of ..."
+    label: 'restext://Common_276'
     target: 'ParadoxGiantCheck' # ./00282-ParadoxGiantCheck.mws.yaml
     snapshot: true

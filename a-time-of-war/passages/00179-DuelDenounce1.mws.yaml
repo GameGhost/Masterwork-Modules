@@ -6,27 +6,27 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:19186
 - type: 'text'
-  # ../en-US.restext:1567 | "**Carefully hand the Stor..."
+  # ../en-US.restext:1581 | "**Carefully hand the Stor..."
   value: 'restext://DuelDenounce1_001'
 # ../.source/ATimeofWar_Eng_v8.cs:19190
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:19194
 - type: 'text'
-  # ../en-US.restext:1568 | "**Firm Rebuke**"
+  # ../en-US.restext:1582 | "**Firm Rebuke**"
   value: 'restext://DuelDenounce1_002'
 # ../.source/ATimeofWar_Eng_v8.cs:19196
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:19197
 - type: 'text'
-  # ../en-US.restext:1569 | "I remember the morning up..."
+  # ../en-US.restext:1583 | "I remember the morning up..."
   value: 'restext://DuelDenounce1_003'
 # ../.source/ATimeofWar_Eng_v8.cs:19198
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:19200
 - type: 'text'
-  # ../en-US.restext:1570 | "Perhaps I had craved the ..."
+  # ../en-US.restext:1584 | "Perhaps I had craved the ..."
   value: 'restext://DuelDenounce1_004'
 # ../.source/ATimeofWar_Eng_v8.cs:19201
 - type: 'break'
@@ -37,8 +37,8 @@ nodes:
   # ../en-US.restext:24 | "Click to continue..."
   label: 'restext://Common_020'
   target: '${round == 7 ? "Martia1Pre2" : "MartialPre3"}' # ./00294-Martia1Pre2.mws.yaml, ./00295-MartialPre3.mws.yaml
-  # ../en-US.restext:182 | "Close"
-  okay: 'restext://Common_178'
+  # ../en-US.restext:185 | "Close"
+  okay: 'restext://Common_181'
   snapshot: true
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:19219
@@ -48,5 +48,5 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:19221
   - type: 'text'
-    # ../en-US.restext:1571 | "{playersabotage1} gains *..."
+    # ../en-US.restext:1585 | "{playersabotage1} gains *..."
     value: 'restext://DuelDenounce1_005'

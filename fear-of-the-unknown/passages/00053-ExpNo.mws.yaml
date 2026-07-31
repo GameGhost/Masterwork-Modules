@@ -2,27 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ExpNo'
-# ../en-US.restext:765 | "The Creature Escapes"
+# ../en-US.restext:780 | "The Creature Escapes"
 title: 'restext://ExpNo_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:8266
 - type: 'text'
-  # ../en-US.restext:766 | "**Journal of** _name ille..."
+  # ../en-US.restext:781 | "**Journal of** _name ille..."
   value: 'restext://ExpNo_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:8278
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:8280
 - type: 'text'
-  # ../en-US.restext:767 | "I saw the silhouette of t..."
+  # ../en-US.restext:782 | "I saw the silhouette of t..."
   value: 'restext://ExpNo_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:8283
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:8285
 - type: 'text'
-  # ../en-US.restext:768 | "I reached for my pistol, ..."
+  # ../en-US.restext:783 | "I reached for my pistol, ..."
   value: 'restext://ExpNo_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:8286
 - type: 'break'
@@ -33,11 +33,11 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:8292
   - type: 'popup'
-    # ../en-US.restext:286 | "Click to continue..."
-    label: 'restext://Common_282'
+    # ../en-US.restext:295 | "Click to continue..."
+    label: 'restext://Common_291'
     layout: 'reveal'
-    # ../en-US.restext:275 | "Close"
-    cancel: 'restext://Common_271'
+    # ../en-US.restext:284 | "Close"
+    cancel: 'restext://Common_280'
     snapshot: true
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:8366
@@ -56,8 +56,8 @@ nodes:
           style: 'panel'
           content: []
         - type: 'link'
-          # ../en-US.restext:277 | "Continue"
-          label: 'restext://Common_273'
+          # ../en-US.restext:286 | "Continue"
+          label: 'restext://Common_282'
           target: 'JailEventA' # ./00290-JailEventA.mws.yaml
           snapshot: true
       - match: 19
@@ -67,8 +67,8 @@ nodes:
           style: 'panel'
           content: []
         - type: 'link'
-          # ../en-US.restext:277 | "Continue"
-          label: 'restext://Common_273'
+          # ../en-US.restext:286 | "Continue"
+          label: 'restext://Common_282'
           target: 'LiberalEvent3' # ./00258-LiberalEvent3.mws.yaml
           snapshot: true
       - match: 20
@@ -86,8 +86,8 @@ nodes:
           style: 'panel'
           content: []
         - type: 'link'
-          # ../en-US.restext:277 | "Continue"
-          label: 'restext://Common_273'
+          # ../en-US.restext:286 | "Continue"
+          label: 'restext://Common_282'
           target: '${exponextpsg}'
           snapshot: true
       default:
@@ -96,24 +96,24 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:277 | "Continue"
-        label: 'restext://Common_273'
+        # ../en-US.restext:286 | "Continue"
+        label: 'restext://Common_282'
         target: 'LiberalBonus' # ./00093-LiberalBonus.mws.yaml
         snapshot: true
     # ../.source/FearoftheUnknown_Eng_v15.cs:8367
     - type: 'break'
     # ../.source/FearoftheUnknown_Eng_v15.cs:8368
     - type: 'text'
-      # ../en-US.restext:771 | "Collect and return all Hu..."
+      # ../en-US.restext:786 | "Collect and return all Hu..."
       value: 'restext://ExpNo_007'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:8298
   - type: 'popup'
-    # ../en-US.restext:286 | "Click to continue..."
-    label: 'restext://Common_282'
+    # ../en-US.restext:295 | "Click to continue..."
+    label: 'restext://Common_291'
     layout: 'reveal'
-    # ../en-US.restext:275 | "Close"
-    cancel: 'restext://Common_271'
+    # ../en-US.restext:284 | "Close"
+    cancel: 'restext://Common_280'
     snapshot: true
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:8444
@@ -132,8 +132,8 @@ nodes:
           style: 'panel'
           content: []
         - type: 'link'
-          # ../en-US.restext:277 | "Continue"
-          label: 'restext://Common_273'
+          # ../en-US.restext:286 | "Continue"
+          label: 'restext://Common_282'
           target: 'JailEventA' # ./00290-JailEventA.mws.yaml
           snapshot: true
       - match: 19
@@ -143,8 +143,8 @@ nodes:
           style: 'panel'
           content: []
         - type: 'link'
-          # ../en-US.restext:277 | "Continue"
-          label: 'restext://Common_273'
+          # ../en-US.restext:286 | "Continue"
+          label: 'restext://Common_282'
           target: 'LiberalEvent3' # ./00258-LiberalEvent3.mws.yaml
           snapshot: true
       - match: 20
@@ -162,8 +162,8 @@ nodes:
           style: 'panel'
           content: []
         - type: 'link'
-          # ../en-US.restext:277 | "Continue"
-          label: 'restext://Common_273'
+          # ../en-US.restext:286 | "Continue"
+          label: 'restext://Common_282'
           target: '${exponextpsg}'
           snapshot: true
       default:
@@ -172,20 +172,20 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:277 | "Continue"
-        label: 'restext://Common_273'
+        # ../en-US.restext:286 | "Continue"
+        label: 'restext://Common_282'
         target: 'LiberalBonus' # ./00093-LiberalBonus.mws.yaml
         snapshot: true
     # ../.source/FearoftheUnknown_Eng_v15.cs:8445
     - type: 'break'
     # ../.source/FearoftheUnknown_Eng_v15.cs:8446
     - type: 'text'
-      # ../en-US.restext:769 | "Collect all Hunt tokens {..."
+      # ../en-US.restext:784 | "Collect all Hunt tokens {..."
       value: 'restext://ExpNo_005'
     # ../.source/FearoftheUnknown_Eng_v15.cs:8449
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:8451
     - type: 'text'
-      # ../en-US.restext:770 | "Shuffle them and randomly..."
+      # ../en-US.restext:785 | "Shuffle them and randomly..."
       value: 'restext://ExpNo_006'

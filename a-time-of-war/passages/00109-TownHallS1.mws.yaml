@@ -48,7 +48,7 @@ nodes:
     target: 'GunsAnnouncement' # ./00145-GunsAnnouncement.mws.yaml
 # ../.source/ATimeofWar_Eng_v8.cs:13039
 - type: 'text'
-  # ../en-US.restext:974 | "**Carefully hand this Sto..."
+  # ../en-US.restext:988 | "**Carefully hand this Sto..."
   value: 'restext://TownHallS1_001'
   lets:
   - '_rnd_TownHallS1_0'
@@ -57,7 +57,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:13068
 - type: 'text'
-  # ../en-US.restext:975 | "I decided to converse with:"
+  # ../en-US.restext:989 | "I decided to converse with:"
   value: 'restext://TownHallS1_002'
 # ../.source/ATimeofWar_Eng_v8.cs:13071
 - type: 'assign'
@@ -110,47 +110,47 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:13089
     - type: 'link'
-      # ../en-US.restext:185 | "A guard dressed in milita..."
-      label: 'restext://Common_181'
+      # ../en-US.restext:188 | "A guard dressed in milita..."
+      label: 'restext://Common_184'
       target: 'RumorD1' # ./00008-RumorD1.mws.yaml
       snapshot: true
   - match: 2
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:13093
     - type: 'link'
-      # ../en-US.restext:186 | "A distinguished gentleman..."
-      label: 'restext://Common_182'
+      # ../en-US.restext:189 | "A distinguished gentleman..."
+      label: 'restext://Common_185'
       target: 'RumorD2' # ./00010-RumorD2.mws.yaml
       snapshot: true
   - match: 5
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:13097
     - type: 'link'
-      # ../en-US.restext:187 | "A somber elderly woman si..."
-      label: 'restext://Common_183'
+      # ../en-US.restext:190 | "A somber elderly woman si..."
+      label: 'restext://Common_186'
       target: 'RumorD3' # ./00011-RumorD3.mws.yaml
       snapshot: true
   - match: 4
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:13101
     - type: 'link'
-      # ../en-US.restext:188 | "A spirited group of conce..."
-      label: 'restext://Common_184'
+      # ../en-US.restext:191 | "A spirited group of conce..."
+      label: 'restext://Common_187'
       target: 'RumorD4' # ./00012-RumorD4.mws.yaml
       snapshot: true
   - match: 6
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:13106
     - type: 'link'
-      # ../en-US.restext:190 | "A conservatively dressed ..."
-      label: 'restext://Common_186'
+      # ../en-US.restext:193 | "A conservatively dressed ..."
+      label: 'restext://Common_189'
       target: 'RumorD6Guns' # ./00143-RumorD6Guns.mws.yaml
       snapshot: true
   default:
   # ../.source/ATimeofWar_Eng_v8.cs:13110
   - type: 'link'
-    # ../en-US.restext:189 | "A hunched figure with a b..."
-    label: 'restext://Common_185'
+    # ../en-US.restext:192 | "A hunched figure with a b..."
+    label: 'restext://Common_188'
     target: 'RumorD5' # ./00013-RumorD5.mws.yaml
     snapshot: true
 # ../.source/ATimeofWar_Eng_v8.cs:13113
@@ -164,46 +164,46 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:13117
     - type: 'link'
-      # ../en-US.restext:185 | "A guard dressed in milita..."
-      label: 'restext://Common_181'
+      # ../en-US.restext:188 | "A guard dressed in milita..."
+      label: 'restext://Common_184'
       target: 'RumorD1' # ./00008-RumorD1.mws.yaml
       snapshot: true
   - match: 2
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:13121
     - type: 'link'
-      # ../en-US.restext:186 | "A distinguished gentleman..."
-      label: 'restext://Common_182'
+      # ../en-US.restext:189 | "A distinguished gentleman..."
+      label: 'restext://Common_185'
       target: 'RumorD2' # ./00010-RumorD2.mws.yaml
       snapshot: true
   - match: 5
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:13125
     - type: 'link'
-      # ../en-US.restext:187 | "A somber elderly woman si..."
-      label: 'restext://Common_183'
+      # ../en-US.restext:190 | "A somber elderly woman si..."
+      label: 'restext://Common_186'
       target: 'RumorD3' # ./00011-RumorD3.mws.yaml
       snapshot: true
   - match: 4
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:13129
     - type: 'link'
-      # ../en-US.restext:188 | "A spirited group of conce..."
-      label: 'restext://Common_184'
+      # ../en-US.restext:191 | "A spirited group of conce..."
+      label: 'restext://Common_187'
       target: 'RumorD4' # ./00012-RumorD4.mws.yaml
       snapshot: true
   - match: 3
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:13133
     - type: 'link'
-      # ../en-US.restext:189 | "A hunched figure with a b..."
-      label: 'restext://Common_185'
+      # ../en-US.restext:192 | "A hunched figure with a b..."
+      label: 'restext://Common_188'
       target: 'RumorD5' # ./00013-RumorD5.mws.yaml
       snapshot: true
   default:
   # ../.source/ATimeofWar_Eng_v8.cs:13139
   - type: 'link'
-    # ../en-US.restext:190 | "A conservatively dressed ..."
-    label: 'restext://Common_186'
+    # ../en-US.restext:193 | "A conservatively dressed ..."
+    label: 'restext://Common_189'
     target: 'RumorD6Guns' # ./00143-RumorD6Guns.mws.yaml
     snapshot: true

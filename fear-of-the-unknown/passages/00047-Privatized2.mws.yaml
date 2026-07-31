@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Privatized2'
-# ../en-US.restext:273 | "Private Investors"
-title: 'restext://Common_269'
-# ../en-US.restext:151 | "Middle Years"
-subtitle: 'restext://Common_147'
+# ../en-US.restext:282 | "Private Investors"
+title: 'restext://Common_278'
+# ../en-US.restext:156 | "Middle Years"
+subtitle: 'restext://Common_152'
 tags:
 - 'HUB'
-layout: 'hub'
+layout: 'hub_middle'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:7303
 - type: 'assign'
@@ -21,8 +21,8 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7310
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:156 | "Accept"
-    okay: 'restext://Common_152'
+    # ../en-US.restext:163 | "Accept"
+    okay: 'restext://Common_159'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:7314
     - type: 'image'
@@ -31,35 +31,35 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:7317
     - type: 'text'
-      # ../en-US.restext:734 | "Remove the **Suspicion Ma..."
+      # ../en-US.restext:749 | "Remove the **Suspicion Ma..."
       value: 'restext://Privatized2_001'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7337
 - type: 'section'
-  # ../en-US.restext:252 | "**Everything You Know is ..."
-  title: 'restext://Common_248'
+  # ../en-US.restext:261 | "**Everything You Know is ..."
+  title: 'restext://Common_257'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7345
   - type: 'text'
-    # ../en-US.restext:253 | "You cannot place Servants..."
-    value: 'restext://Common_249'
+    # ../en-US.restext:262 | "You cannot place Servants..."
+    value: 'restext://Common_258'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7354
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7358
 - type: 'section'
-  # ../en-US.restext:254 | "{icon:storybooktoken} **I..."
-  title: 'restext://Common_250'
+  # ../en-US.restext:263 | "{icon:storybooktoken} **I..."
+  title: 'restext://Common_259'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7369
   - type: 'text'
-    # ../en-US.restext:255 | "In this town, creepy acti..."
-    value: 'restext://Common_251'
+    # ../en-US.restext:264 | "In this town, creepy acti..."
+    value: 'restext://Common_260'
   # ../.source/FearoftheUnknown_Eng_v15.cs:7375
   - type: 'link'
-    # ../en-US.restext:256 | "click here for a reward."
-    label: 'restext://Common_252'
+    # ../en-US.restext:265 | "click here for a reward."
+    label: 'restext://Common_261'
     target: 'PrivateRewardSignIn' # ./00233-PrivateRewardSignIn.mws.yaml
     snapshot: true
 # ../.source/FearoftheUnknown_Eng_v15.cs:7377
@@ -71,29 +71,29 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7384
   - type: 'section'
-    # ../en-US.restext:260 | "**The Junk Palace**"
-    title: 'restext://Common_256'
+    # ../en-US.restext:269 | "**The Junk Palace**"
+    title: 'restext://Common_265'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:7392
     - type: 'text'
-      # ../en-US.restext:261 | "When a player visits this..."
-      value: 'restext://Common_257'
+      # ../en-US.restext:270 | "When a player visits this..."
+      value: 'restext://Common_266'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7402
   - type: 'section'
-    # ../en-US.restext:257 | "{icon:storybooktoken} **T..."
-    title: 'restext://Common_253'
+    # ../en-US.restext:266 | "{icon:storybooktoken} **T..."
+    title: 'restext://Common_262'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:7411
     - type: 'text'
-      # ../en-US.restext:258 | "When a player visits the ..."
-      value: 'restext://Common_254'
+      # ../en-US.restext:267 | "When a player visits the ..."
+      value: 'restext://Common_263'
     # ../.source/FearoftheUnknown_Eng_v15.cs:7412
     - type: 'link'
-      # ../en-US.restext:259 | "click here to talk to {wa..."
-      label: 'restext://Common_255'
+      # ../en-US.restext:268 | "click here to talk to {wa..."
+      label: 'restext://Common_264'
       target: 'JunkPalaceSignIn' # ./00234-JunkPalaceSignIn.mws.yaml
       snapshot: true
 # ../.source/FearoftheUnknown_Eng_v15.cs:7415
@@ -101,18 +101,18 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7421
 - type: 'section'
-  # ../en-US.restext:262 | "{icon:storybooktoken} **B..."
-  title: 'restext://Common_258'
+  # ../en-US.restext:271 | "{icon:storybooktoken} **B..."
+  title: 'restext://Common_267'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7431
   - type: 'text'
-    # ../en-US.restext:735 | "At the End of the Generat..."
+    # ../en-US.restext:750 | "At the End of the Generat..."
     value: 'restext://Privatized2_013'
   # ../.source/FearoftheUnknown_Eng_v15.cs:7434
   - type: 'link'
-    # ../en-US.restext:308 | "click here."
-    label: 'restext://Common_304'
+    # ../en-US.restext:317 | "click here."
+    label: 'restext://Common_313'
     target: 'BattleDomeExplanation' # ./00232-BattleDomeExplanation.mws.yaml
     snapshot: true
 # ../.source/FearoftheUnknown_Eng_v15.cs:7436
@@ -128,14 +128,14 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:7444
     - type: 'section'
-      # ../en-US.restext:263 | "**The Hunt**"
-      title: 'restext://Common_259'
+      # ../en-US.restext:272 | "**The Hunt**"
+      title: 'restext://Common_268'
       style: 'hub-card'
       content:
       # ../.source/FearoftheUnknown_Eng_v15.cs:7452
       - type: 'text'
-        # ../en-US.restext:264 | "With the land changed, th..."
-        value: 'restext://Common_260'
+        # ../en-US.restext:273 | "With the land changed, th..."
+        value: 'restext://Common_269'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7456
 - type: 'break'
   style: 'paragraph'
@@ -144,8 +144,24 @@ nodes:
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7465
-  - type: 'link'
+  - type: 'popup'
+    layout: 'end_of_round'
     # ../en-US.restext:69 | "Click here at the end of ..."
     label: 'restext://Common_065'
     target: 'CreaturePleased' # ./00201-CreaturePleased.mws.yaml
+    # ../en-US.restext:181 | "End of Round"
+    okay: 'restext://Common_177'
+    onclose:
+    - type: 'assign'
+      var: '_ProgressRound'
+      expr: '8'
     snapshot: true
+    content:
+    - type: 'text'
+      # ../en-US.restext:323 | "The Middle Years of the T..."
+      value: 'restext://Common_319'
+    - type: 'break'
+      style: 'paragraph'
+    - type: 'text'
+      # ../en-US.restext:158 | "Then, perform all Start o..."
+      value: 'restext://Common_154'

@@ -6,8 +6,8 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:2529
 - type: 'text'
-  # ../en-US.restext:180 | "**Carefully pick up this ..."
-  value: 'restext://Common_176'
+  # ../en-US.restext:183 | "**Carefully pick up this ..."
+  value: 'restext://Common_179'
 # ../.source/ATimeofWar_Eng_v8.cs:2533
 - type: 'assign'
   var: 'crazy'
@@ -17,11 +17,11 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:2538
 - type: 'popup'
-  # ../en-US.restext:181 | "Once you are ready, click..."
-  label: 'restext://Common_177'
+  # ../en-US.restext:184 | "Once you are ready, click..."
+  label: 'restext://Common_180'
   layout: 'reveal'
-  # ../en-US.restext:182 | "Close"
-  cancel: 'restext://Common_178'
+  # ../en-US.restext:185 | "Close"
+  cancel: 'restext://Common_181'
   snapshot: true
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:2600
@@ -30,14 +30,14 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:2602
     - type: 'text'
-      # ../en-US.restext:390 | "The snaggle-toothed gentl..."
+      # ../en-US.restext:400 | "The snaggle-toothed gentl..."
       value: 'restext://RumorD5_005'
     # ../.source/ATimeofWar_Eng_v8.cs:2605
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:2607
     - type: 'text'
-      # ../en-US.restext:391 | "Suddenly, he reached into..."
+      # ../en-US.restext:401 | "Suddenly, he reached into..."
       value: 'restext://RumorD5_006'
     # ../.source/ATimeofWar_Eng_v8.cs:2611
     - type: 'break'
@@ -45,11 +45,11 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:2615
     - type: 'popup'
       layout: 'setup'
-      # ../en-US.restext:184 | "When you have finished re..."
-      label: 'restext://Common_180'
+      # ../en-US.restext:187 | "When you have finished re..."
+      label: 'restext://Common_183'
       target: 'RumorCreep' # ./00086-RumorCreep.mws.yaml
-      # ../en-US.restext:182 | "Close"
-      okay: 'restext://Common_178'
+      # ../en-US.restext:185 | "Close"
+      okay: 'restext://Common_181'
       snapshot: true
       header:
       # ../.source/ATimeofWar_Eng_v8.cs:2553
@@ -59,26 +59,26 @@ nodes:
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:2555
       - type: 'text'
-        # ../en-US.restext:389 | "Gain a {icon:s3_woodenfig..."
+        # ../en-US.restext:399 | "Gain a {icon:s3_woodenfig..."
         value: 'restext://RumorD5_004'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:2620
     - type: 'text'
-      # ../en-US.restext:386 | "The snaggle-toothed gentl..."
+      # ../en-US.restext:396 | "The snaggle-toothed gentl..."
       value: 'restext://RumorD5_001'
     # ../.source/ATimeofWar_Eng_v8.cs:2623
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:2625
     - type: 'text'
-      # ../en-US.restext:387 | "\"Repent, young fisher,\"..."
+      # ../en-US.restext:397 | "\"Repent, young fisher,\"..."
       value: 'restext://RumorD5_002'
     # ../.source/ATimeofWar_Eng_v8.cs:2627
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:2629
     - type: 'text'
-      # ../en-US.restext:388 | "I felt it may have been a..."
+      # ../en-US.restext:398 | "I felt it may have been a..."
       value: 'restext://RumorD5_003'
     # ../.source/ATimeofWar_Eng_v8.cs:2632
     - type: 'break'
@@ -86,11 +86,11 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:2636
     - type: 'popup'
       layout: 'setup'
-      # ../en-US.restext:184 | "When you have finished re..."
-      label: 'restext://Common_180'
+      # ../en-US.restext:187 | "When you have finished re..."
+      label: 'restext://Common_183'
       target: 'RumorCreep' # ./00086-RumorCreep.mws.yaml
-      # ../en-US.restext:182 | "Close"
-      okay: 'restext://Common_178'
+      # ../en-US.restext:185 | "Close"
+      okay: 'restext://Common_181'
       snapshot: true
       header:
       # ../.source/ATimeofWar_Eng_v8.cs:2580
@@ -100,5 +100,5 @@ nodes:
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:2582
       - type: 'text'
-        # ../en-US.restext:389 | "Gain a {icon:s3_woodenfig..."
+        # ../en-US.restext:399 | "Gain a {icon:s3_woodenfig..."
         value: 'restext://RumorD5_004'

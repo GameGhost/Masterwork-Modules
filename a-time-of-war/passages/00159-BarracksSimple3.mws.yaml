@@ -34,11 +34,11 @@ nodes:
       # ../.source/ATimeofWar_Eng_v8.cs:17601
       - type: 'popup'
         layout: 'setup'
-        # ../en-US.restext:183 | "Click here to continue..."
-        label: 'restext://Common_179'
+        # ../en-US.restext:186 | "Click here to continue..."
+        label: 'restext://Common_182'
         target: 'ResistSides' # ./00039-ResistSides.mws.yaml
-        # ../en-US.restext:182 | "Close"
-        okay: 'restext://Common_178'
+        # ../en-US.restext:185 | "Close"
+        okay: 'restext://Common_181'
         snapshot: true
         header:
         # ../.source/ATimeofWar_Eng_v8.cs:17647
@@ -62,7 +62,7 @@ nodes:
               expr: 'rand_between(1, 2, "BarracksSimple3_1")'
             # ../.source/ATimeofWar_Eng_v8.cs:17652
             - type: 'text'
-              # ../en-US.restext:1396 | "gains **{_rnd_BarracksSim..."
+              # ../en-US.restext:1410 | "gains **{_rnd_BarracksSim..."
               value: 'restext://BarracksSimple3_001'
               lets:
               - '_rnd_BarracksSimple3_0'
@@ -80,7 +80,7 @@ nodes:
               expr: 'rand_between(2, 3, "BarracksSimple3_2")'
             # ../.source/ATimeofWar_Eng_v8.cs:17673
             - type: 'text'
-              # ../en-US.restext:1397 | "**must** immediately lose..."
+              # ../en-US.restext:1411 | "**must** immediately lose..."
               value: 'restext://BarracksSimple3_002'
               lets:
               - '_rnd_BarracksSimple3_1'
@@ -122,11 +122,11 @@ nodes:
       # ../.source/ATimeofWar_Eng_v8.cs:17621
       - type: 'popup'
         layout: 'setup'
-        # ../en-US.restext:183 | "Click here to continue..."
-        label: 'restext://Common_179'
+        # ../en-US.restext:186 | "Click here to continue..."
+        label: 'restext://Common_182'
         target: 'ResistSides' # ./00039-ResistSides.mws.yaml
-        # ../en-US.restext:182 | "Close"
-        okay: 'restext://Common_178'
+        # ../en-US.restext:185 | "Close"
+        okay: 'restext://Common_181'
         snapshot: true
         header:
         # ../.source/ATimeofWar_Eng_v8.cs:17721
@@ -150,7 +150,7 @@ nodes:
               expr: 'rand_between(1, 2, "BarracksSimple3_3")'
             # ../.source/ATimeofWar_Eng_v8.cs:17726
             - type: 'text'
-              # ../en-US.restext:1396 | "gains **{_rnd_BarracksSim..."
+              # ../en-US.restext:1410 | "gains **{_rnd_BarracksSim..."
               value: 'restext://BarracksSimple3_001'
               lets:
               - '_rnd_BarracksSimple3_0'
@@ -168,7 +168,7 @@ nodes:
               expr: 'rand_between(2, 3, "BarracksSimple3_4")'
             # ../.source/ATimeofWar_Eng_v8.cs:17747
             - type: 'text'
-              # ../en-US.restext:1397 | "**must** immediately lose..."
+              # ../en-US.restext:1411 | "**must** immediately lose..."
               value: 'restext://BarracksSimple3_002'
               lets:
               - '_rnd_BarracksSimple3_1'

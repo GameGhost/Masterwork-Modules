@@ -4,11 +4,11 @@ format: 'mws/0.4'
 passage_id: 'Paradox3'
 # ../en-US.restext:117 | "Forward to Progress"
 title: 'restext://Common_113'
-# ../en-US.restext:207 | "Late Years"
-subtitle: 'restext://Common_203'
+# ../en-US.restext:211 | "Late Years"
+subtitle: 'restext://Common_207'
 tags:
 - 'HUB'
-layout: 'hub'
+layout: 'hub_late'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:10173
 - type: 'assign'
@@ -91,37 +91,53 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:10275
 - type: 'section'
-  # ../en-US.restext:129 | "**In Memoriam**"
-  title: 'restext://Common_125'
+  # ../en-US.restext:130 | "**In Memoriam**"
+  title: 'restext://Common_126'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:10284
   - type: 'text'
-    # ../en-US.restext:130 | "With our brand of ethical..."
-    value: 'restext://Common_126'
+    # ../en-US.restext:131 | "With our brand of ethical..."
+    value: 'restext://Common_127'
   # ../.source/ATimeofWar_Eng_v8.cs:10286
   - type: 'conditional'
     if: 'release >= 1'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:10290
     - type: 'text'
-      # ../en-US.restext:132 | "**The player who has move..."
-      value: 'restext://Common_128'
+      # ../en-US.restext:133 | "**The player who has move..."
+      value: 'restext://Common_129'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:10299
     - type: 'text'
-      # ../en-US.restext:131 | "**The player with the mos..."
-      value: 'restext://Common_127'
+      # ../en-US.restext:132 | "**The player with the mos..."
+      value: 'restext://Common_128'
   # ../.source/ATimeofWar_Eng_v8.cs:10302
   - type: 'text'
-    # ../en-US.restext:133 | " at the end of the Genera..."
-    value: 'restext://Common_129'
+    # ../en-US.restext:134 | " at the end of the Genera..."
+    value: 'restext://Common_130'
   # ../.source/ATimeofWar_Eng_v8.cs:10308
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:10312
-  - type: 'link'
-    # ../en-US.restext:272 | "Click here at the End of ..."
-    label: 'restext://Common_268'
+  - type: 'popup'
+    layout: 'end_of_round'
+    # ../en-US.restext:280 | "Click here at the End of ..."
+    label: 'restext://Common_276'
     target: 'ParadoxGiantCheck' # ./00282-ParadoxGiantCheck.mws.yaml
+    # ../en-US.restext:222 | "End of Round"
+    okay: 'restext://Common_218'
+    onclose:
+    - type: 'assign'
+      var: '_ProgressRound'
+      expr: '9'
     snapshot: true
+    content:
+    - type: 'text'
+      # ../en-US.restext:153 | "The Late Years of the Thi..."
+      value: 'restext://Common_149'
+    - type: 'break'
+      style: 'paragraph'
+    - type: 'text'
+      # ../en-US.restext:233 | "Perform any End of Round ..."
+      value: 'restext://Common_229'

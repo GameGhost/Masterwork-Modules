@@ -10,25 +10,25 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:28850
   - type: 'text'
-    # ../en-US.restext:2114 | "**Minor Compassion**"
+    # ../en-US.restext:2129 | "**Minor Compassion**"
     value: 'restext://RareCreatureBonus_001'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28852
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28854
   - type: 'text'
-    # ../en-US.restext:2115 | "The Creature was not unre..."
+    # ../en-US.restext:2130 | "The Creature was not unre..."
     value: 'restext://RareCreatureBonus_002'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28855
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28859
   - type: 'popup'
-    # ../en-US.restext:286 | "Click to continue..."
-    label: 'restext://Common_282'
+    # ../en-US.restext:295 | "Click to continue..."
+    label: 'restext://Common_291'
     layout: 'reveal'
-    # ../en-US.restext:275 | "Close"
-    cancel: 'restext://Common_271'
+    # ../en-US.restext:284 | "Close"
+    cancel: 'restext://Common_280'
     snapshot: true
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:28912
@@ -45,8 +45,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:277 | "Continue"
-        label: 'restext://Common_273'
+        # ../en-US.restext:286 | "Continue"
+        label: 'restext://Common_282'
         target: 'LiberalIntro' # ./00024-LiberalIntro.mws.yaml
         snapshot: true
       else:
@@ -55,8 +55,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:277 | "Continue"
-        label: 'restext://Common_273'
+        # ../en-US.restext:286 | "Continue"
+        label: 'restext://Common_282'
         target: 'PrivatizedIntro' # ./00023-PrivatizedIntro.mws.yaml
         snapshot: true
     # ../.source/FearoftheUnknown_Eng_v15.cs:28913
@@ -64,14 +64,14 @@ nodes:
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28915
     - type: 'text'
-      # ../en-US.restext:2116 | "The player with a complet..."
+      # ../en-US.restext:2131 | "The player with a complet..."
       value: 'restext://RareCreatureBonus_003'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28928
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28930
     - type: 'text'
-      # ../en-US.restext:2117 | "They **move one space for..."
+      # ../en-US.restext:2132 | "They **move one space for..."
       value: 'restext://RareCreatureBonus_004'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:28864

@@ -4,11 +4,11 @@ format: 'mws/0.4'
 passage_id: 'Creature3'
 # ../en-US.restext:63 | "The Creature Re emerges"
 title: 'restext://Common_059'
-# ../en-US.restext:153 | "Late Years"
-subtitle: 'restext://Common_149'
+# ../en-US.restext:159 | "Late Years"
+subtitle: 'restext://Common_155'
 tags:
 - 'HUB'
-layout: 'hub'
+layout: 'hub_late'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:7092
 - type: 'assign'
@@ -106,8 +106,24 @@ nodes:
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:7223
-  - type: 'link'
-    # ../en-US.restext:86 | "Click here at the End of ..."
-    label: 'restext://Common_082'
+  - type: 'popup'
+    layout: 'end_of_round'
+    # ../en-US.restext:87 | "Click here at the End of ..."
+    label: 'restext://Common_083'
     target: 'S4Creature1' # ./00022-S4Creature1.mws.yaml
+    # ../en-US.restext:181 | "End of Round"
+    okay: 'restext://Common_177'
+    onclose:
+    - type: 'assign'
+      var: '_ProgressRound'
+      expr: '6'
     snapshot: true
+    content:
+    - type: 'text'
+      # ../en-US.restext:88 | "The Late Years of the Sec..."
+      value: 'restext://Common_084'
+    - type: 'break'
+      style: 'paragraph'
+    - type: 'text'
+      # ../en-US.restext:160 | "Perform any End of Round ..."
+      value: 'restext://Common_156'

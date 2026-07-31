@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ParadoxFirst'
-# ../en-US.restext:887 | "New Science"
+# ../en-US.restext:901 | "New Science"
 title: 'restext://ParadoxFirst_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:11911
 - type: 'text'
-  # ../en-US.restext:888 | "When I discovered the jou..."
+  # ../en-US.restext:902 | "When I discovered the jou..."
   value: 'restext://ParadoxFirst_002'
 # ../.source/ATimeofWar_Eng_v8.cs:11912
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:11914
 - type: 'text'
-  # ../en-US.restext:889 | "I decided to improve upon..."
+  # ../en-US.restext:903 | "I decided to improve upon..."
   value: 'restext://ParadoxFirst_003'
 # ../.source/ATimeofWar_Eng_v8.cs:11916
 - type: 'break'
@@ -25,8 +25,8 @@ nodes:
   # ../en-US.restext:24 | "Click to continue..."
   label: 'restext://Common_020'
   layout: 'reveal'
-  # ../en-US.restext:182 | "Close"
-  cancel: 'restext://Common_178'
+  # ../en-US.restext:185 | "Close"
+  cancel: 'restext://Common_181'
   snapshot: true
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:11960
@@ -51,8 +51,8 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:169 | "Continue"
-      label: 'restext://Common_165'
+      # ../en-US.restext:172 | "Continue"
+      label: 'restext://Common_168'
       target: '${ParadoxFirstnextPsg}'
       snapshot: true
     else:
@@ -61,13 +61,13 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:169 | "Continue"
-      label: 'restext://Common_165'
+      # ../en-US.restext:172 | "Continue"
+      label: 'restext://Common_168'
       target: 'MonumentVote' # ./00200-MonumentVote.mws.yaml
       snapshot: true
   # ../.source/ATimeofWar_Eng_v8.cs:11961
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:11962
   - type: 'text'
-    # ../en-US.restext:890 | "Retrieve the **Giant Mast..."
+    # ../en-US.restext:904 | "Retrieve the **Giant Mast..."
     value: 'restext://ParadoxFirst_004'

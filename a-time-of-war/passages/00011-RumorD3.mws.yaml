@@ -6,37 +6,37 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:2354
 - type: 'text'
-  # ../en-US.restext:180 | "**Carefully pick up this ..."
-  value: 'restext://Common_176'
+  # ../en-US.restext:183 | "**Carefully pick up this ..."
+  value: 'restext://Common_179'
 # ../.source/ATimeofWar_Eng_v8.cs:2357
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:2362
 - type: 'popup'
-  # ../en-US.restext:181 | "Once you are ready, click..."
-  label: 'restext://Common_177'
+  # ../en-US.restext:184 | "Once you are ready, click..."
+  label: 'restext://Common_180'
   layout: 'reveal'
-  # ../en-US.restext:182 | "Close"
-  cancel: 'restext://Common_178'
+  # ../en-US.restext:185 | "Close"
+  cancel: 'restext://Common_181'
   snapshot: true
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:2378
   - type: 'text'
-    # ../en-US.restext:371 | "The older woman smiled as..."
+    # ../en-US.restext:381 | "The older woman smiled as..."
     value: 'restext://RumorD3_001'
   # ../.source/ATimeofWar_Eng_v8.cs:2380
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:2382
   - type: 'text'
-    # ../en-US.restext:372 | "\"The rumor is that the U..."
+    # ../en-US.restext:382 | "\"The rumor is that the U..."
     value: 'restext://RumorD3_002'
   # ../.source/ATimeofWar_Eng_v8.cs:2384
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:2386
   - type: 'text'
-    # ../en-US.restext:373 | "I was able to interpret h..."
+    # ../en-US.restext:383 | "I was able to interpret h..."
     value: 'restext://RumorD3_003'
   # ../.source/ATimeofWar_Eng_v8.cs:2392
   - type: 'break'
@@ -51,15 +51,15 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:2398
       - type: 'text'
-        # ../en-US.restext:374 | "She continued, \"And if t..."
+        # ../en-US.restext:384 | "She continued, \"And if t..."
         value: 'restext://RumorD3_004'
       # ../.source/ATimeofWar_Eng_v8.cs:2405
       - type: 'break'
         style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:2410
   - type: 'link'
-    # ../en-US.restext:184 | "When you have finished re..."
-    label: 'restext://Common_180'
+    # ../en-US.restext:187 | "When you have finished re..."
+    label: 'restext://Common_183'
     target: '${RumorD3nextPsg}'
     snapshot: true
     onclick:

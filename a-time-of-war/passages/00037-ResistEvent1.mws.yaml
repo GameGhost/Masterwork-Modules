@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ResistEvent1'
-# ../en-US.restext:538 | "Quartering Enforced"
+# ../en-US.restext:552 | "Quartering Enforced"
 title: 'restext://ResistEvent1_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:5197
 - type: 'text'
-  # ../en-US.restext:539 | "The military accepts our ..."
+  # ../en-US.restext:553 | "The military accepts our ..."
   value: 'restext://ResistEvent1_002'
 # ../.source/ATimeofWar_Eng_v8.cs:5199
 - type: 'break'
@@ -18,8 +18,8 @@ nodes:
   # ../en-US.restext:24 | "Click to continue..."
   label: 'restext://Common_020'
   layout: 'reveal'
-  # ../en-US.restext:182 | "Close"
-  cancel: 'restext://Common_178'
+  # ../en-US.restext:185 | "Close"
+  cancel: 'restext://Common_181'
   snapshot: true
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:5229
@@ -37,8 +37,8 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:169 | "Continue"
-      label: 'restext://Common_165'
+      # ../en-US.restext:172 | "Continue"
+      label: 'restext://Common_168'
       target: 'MartialSepEvent' # ./00070-MartialSepEvent.mws.yaml
       snapshot: true
     else:
@@ -47,8 +47,8 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:169 | "Continue"
-      label: 'restext://Common_165'
+      # ../en-US.restext:172 | "Continue"
+      label: 'restext://Common_168'
       target: 'BarracksSimple2' # ./00158-BarracksSimple2.mws.yaml
       snapshot: true
   # ../.source/ATimeofWar_Eng_v8.cs:5235
@@ -60,7 +60,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:5234
   - type: 'text'
-    # ../en-US.restext:540 | "**Award {_rnd_ResistEvent..."
+    # ../en-US.restext:554 | "**Award {_rnd_ResistEvent..."
     value: 'restext://ResistEvent1_004'
     lets:
     - '_rnd_ResistEvent1_0'
@@ -69,5 +69,5 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:5240
   - type: 'text'
-    # ../en-US.restext:541 | "All other players **MUST*..."
+    # ../en-US.restext:555 | "All other players **MUST*..."
     value: 'restext://ResistEvent1_005'

@@ -14,26 +14,26 @@ nodes:
   expr: '2'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13548
 - type: 'section'
-  # ../en-US.restext:310 | "ERROR!"
-  title: 'restext://Common_306'
+  # ../en-US.restext:319 | "ERROR!"
+  title: 'restext://Common_315'
   style: 'hub-card'
   content: []
 # ../.source/FearoftheUnknown_Eng_v15.cs:13550
 - type: 'text'
-  # ../en-US.restext:174 | "Welcome to My Father's Work,"
-  value: 'restext://Common_170'
+  # ../en-US.restext:183 | "Welcome to My Father's Work,"
+  value: 'restext://Common_179'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13551
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13552
 - type: 'text'
-  # ../en-US.restext:1114 | "{nameB}."
+  # ../en-US.restext:1129 | "{nameB}."
   value: 'restext://NameEntryB_001'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13554
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13556
 - type: 'text'
-  # ../en-US.restext:1115 | "Please enjoy your experience."
+  # ../en-US.restext:1130 | "Please enjoy your experience."
   value: 'restext://NameEntryB_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13557
 - type: 'break'
@@ -44,14 +44,14 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:13565
   - type: 'link'
-    # ../en-US.restext:286 | "Click to continue..."
-    label: 'restext://Common_282'
+    # ../en-US.restext:295 | "Click to continue..."
+    label: 'restext://Common_291'
     target: 'NameEntryC' # ./00108-NameEntryC.mws.yaml
     snapshot: true
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:13569
   - type: 'link'
-    # ../en-US.restext:286 | "Click to continue..."
-    label: 'restext://Common_282'
+    # ../en-US.restext:295 | "Click to continue..."
+    label: 'restext://Common_291'
     target: 'NameEntryTown' # ./00187-NameEntryTown.mws.yaml
     snapshot: true

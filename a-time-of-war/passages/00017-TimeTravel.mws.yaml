@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TimeTravel'
-# ../en-US.restext:229 | "Tides of War 2"
-title: 'restext://Common_225'
-# ../en-US.restext:210 | "Early Years"
-subtitle: 'restext://Common_206'
+# ../en-US.restext:237 | "Tides of War 2"
+title: 'restext://Common_233'
+# ../en-US.restext:214 | "Early Years"
+subtitle: 'restext://Common_210'
 tags:
 - 'HUB'
-layout: 'hub'
+layout: 'hub_early'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:2875
 - type: 'assign'
@@ -25,8 +25,8 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:2884
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:211 | "Accept"
-    okay: 'restext://Common_207'
+    # ../en-US.restext:215 | "Accept"
+    okay: 'restext://Common_211'
     header:
     # ../.source/ATimeofWar_Eng_v8.cs:2888
     - type: 'image'
@@ -35,7 +35,7 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:2890
     - type: 'text'
-      # ../en-US.restext:418 | "Turn to page **13** of th..."
+      # ../en-US.restext:428 | "Turn to page **13** of th..."
       value: 'restext://TimeTravel_002'
     # ../.source/ATimeofWar_Eng_v8.cs:2897
     - type: 'conditional'
@@ -45,31 +45,31 @@ nodes:
       - type: 'break'
       # ../.source/ATimeofWar_Eng_v8.cs:2900
       - type: 'text'
-        # ../en-US.restext:230 | "Then, since this is a 3 p..."
-        value: 'restext://Common_226'
+        # ../en-US.restext:238 | "Then, since this is a 3 p..."
+        value: 'restext://Common_234'
     # ../.source/ATimeofWar_Eng_v8.cs:2902
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:2906
     - type: 'text'
-      # ../en-US.restext:419 | "**Each player retrieves t..."
+      # ../en-US.restext:429 | "**Each player retrieves t..."
       value: 'restext://TimeTravel_004'
 # ../.source/ATimeofWar_Eng_v8.cs:2916
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:2919
 - type: 'section'
-  # ../en-US.restext:231 | "{icon:storybooktoken} **P..."
-  title: 'restext://Common_227'
+  # ../en-US.restext:239 | "{icon:storybooktoken} **P..."
+  title: 'restext://Common_235'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:2929
   - type: 'text'
-    # ../en-US.restext:232 | "For more detailed rules o..."
-    value: 'restext://Common_228'
+    # ../en-US.restext:240 | "For more detailed rules o..."
+    value: 'restext://Common_236'
   # ../.source/ATimeofWar_Eng_v8.cs:2933
   - type: 'link'
-    # ../en-US.restext:192 | "click here."
-    label: 'restext://Common_188'
+    # ../en-US.restext:195 | "click here."
+    label: 'restext://Common_191'
     target: 'ParadoxExReminder' # ./00192-ParadoxExReminder.mws.yaml
     snapshot: true
 # ../.source/ATimeofWar_Eng_v8.cs:2935
@@ -81,26 +81,26 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:2942
   - type: 'section'
-    # ../en-US.restext:233 | "{icon:storybooktoken} **P..."
-    title: 'restext://Common_229'
+    # ../en-US.restext:241 | "{icon:storybooktoken} **P..."
+    title: 'restext://Common_237'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:2951
     - type: 'text'
-      # ../en-US.restext:234 | "Fixing the timestream has..."
-      value: 'restext://Common_230'
+      # ../en-US.restext:242 | "Fixing the timestream has..."
+      value: 'restext://Common_238'
     # ../.source/ATimeofWar_Eng_v8.cs:2959
     - type: 'link'
-      # ../en-US.restext:235 | "click here to receive a s..."
-      label: 'restext://Common_231'
+      # ../en-US.restext:243 | "click here to receive a s..."
+      label: 'restext://Common_239'
       target: 'TriggerParadox' # ./00141-TriggerParadox.mws.yaml
       snapshot: true
     # ../.source/ATimeofWar_Eng_v8.cs:2960
     - type: 'break'
     # ../.source/ATimeofWar_Eng_v8.cs:2963
     - type: 'text'
-      # ../en-US.restext:236 | "_You must remove at least..."
-      value: 'restext://Common_232'
+      # ../en-US.restext:244 | "_You must remove at least..."
+      value: 'restext://Common_240'
   # ../.source/ATimeofWar_Eng_v8.cs:2968
   - type: 'break'
     style: 'paragraph'
@@ -109,8 +109,24 @@ nodes:
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:2978
-  - type: 'link'
-    # ../en-US.restext:217 | "Click here at the end of ..."
-    label: 'restext://Common_213'
+  - type: 'popup'
+    layout: 'end_of_round'
+    # ../en-US.restext:221 | "Click here at the end of ..."
+    label: 'restext://Common_217'
     target: 'FixIt' # ./00123-FixIt.mws.yaml
+    # ../en-US.restext:222 | "End of Round"
+    okay: 'restext://Common_218'
+    onclose:
+    - type: 'assign'
+      var: '_ProgressRound'
+      expr: '4'
     snapshot: true
+    content:
+    - type: 'text'
+      # ../en-US.restext:430 | "The Early Years of the Se..."
+      value: 'restext://TimeTravel_011'
+    - type: 'break'
+      style: 'paragraph'
+    - type: 'text'
+      # ../en-US.restext:223 | "Then, perform all Start o..."
+      value: 'restext://Common_219'

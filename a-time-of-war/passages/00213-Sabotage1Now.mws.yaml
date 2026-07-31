@@ -23,17 +23,17 @@ nodes:
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:21958
   - type: 'text'
-    # ../en-US.restext:1797 | "**Cruel Betrayal**"
+    # ../en-US.restext:1811 | "**Cruel Betrayal**"
     value: 'restext://Sabotage1Now_001'
   # ../.source/ATimeofWar_Eng_v8.cs:21963
   - type: 'let'
     var: '_rnd_Sabotage1Now_0'
-    # ../en-US.restext:1798 | Sabotage1Now_002 | "The exterior wall near th..."
-    # ../en-US.restext:1799 | Sabotage1Now_003 | "The papers within my labo..."
+    # ../en-US.restext:1812 | Sabotage1Now_002 | "The exterior wall near th..."
+    # ../en-US.restext:1813 | Sabotage1Now_003 | "The papers within my labo..."
     expr: '["restext://Sabotage1Now_002", "restext://Sabotage1Now_003"].shuffled("Sabotage1Now_0")[0]'
   # ../.source/ATimeofWar_Eng_v8.cs:21962
   - type: 'text'
-    # ../en-US.restext:1800 | "I awoke to discover a sec..."
+    # ../en-US.restext:1814 | "I awoke to discover a sec..."
     value: 'restext://Sabotage1Now_004'
     lets:
     - '_rnd_Sabotage1Now_0'
@@ -42,7 +42,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:21966
   - type: 'text'
-    # ../en-US.restext:1801 | "Though the repairs would ..."
+    # ../en-US.restext:1815 | "Though the repairs would ..."
     value: 'restext://Sabotage1Now_005'
   # ../.source/ATimeofWar_Eng_v8.cs:21969
   - type: 'break'
@@ -53,8 +53,8 @@ nodes:
     # ../en-US.restext:24 | "Click to continue..."
     label: 'restext://Common_020'
     target: 'Player1BeenSabotaged' # ./00177-Player1BeenSabotaged.mws.yaml
-    # ../en-US.restext:182 | "Close"
-    okay: 'restext://Common_178'
+    # ../en-US.restext:185 | "Close"
+    okay: 'restext://Common_181'
     snapshot: true
     header:
     # ../.source/ATimeofWar_Eng_v8.cs:21991
@@ -65,14 +65,14 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:22000
     - type: 'let'
       var: '_rnd_Sabotage1Now_0'
-      # ../en-US.restext:1802 | " and must <b>discard 1 Ex..."
+      # ../en-US.restext:1816 | " and must <b>discard 1 Ex..."
       expr: '[".", "restext://Sabotage1Now_006"].shuffled("Sabotage1Now_1")[0]'
     # ../.source/ATimeofWar_Eng_v8.cs:21992
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:21994
     - type: 'text'
-      # ../en-US.restext:1803 | "{sabotagee1} **loses 3VP*..."
+      # ../en-US.restext:1817 | "{sabotagee1} **loses 3VP*..."
       value: 'restext://Sabotage1Now_007'
       lets:
       - '_rnd_Sabotage1Now_0'

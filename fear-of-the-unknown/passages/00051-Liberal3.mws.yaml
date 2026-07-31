@@ -2,53 +2,53 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Liberal3'
-# ../en-US.restext:141 | "Acceptance"
-title: 'restext://Common_137'
-# ../en-US.restext:153 | "Late Years"
-subtitle: 'restext://Common_149'
+# ../en-US.restext:146 | "Acceptance"
+title: 'restext://Common_142'
+# ../en-US.restext:159 | "Late Years"
+subtitle: 'restext://Common_155'
 tags:
 - 'HUB'
-layout: 'hub'
+layout: 'hub_late'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:7927
 - type: 'section'
-  # ../en-US.restext:142 | "**Special Servant Rule**"
-  title: 'restext://Common_138'
+  # ../en-US.restext:147 | "**Special Servant Rule**"
+  title: 'restext://Common_143'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7936
   - type: 'text'
-    # ../en-US.restext:143 | "Due to the government-fun..."
-    value: 'restext://Common_139'
+    # ../en-US.restext:148 | "Due to the government-fun..."
+    value: 'restext://Common_144'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7944
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7947
 - type: 'section'
-  # ../en-US.restext:751 | "**RehabilitationToken**"
+  # ../en-US.restext:766 | "**RehabilitationToken**"
   title: 'restext://Liberal3_001'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7956
   - type: 'text'
-    # ../en-US.restext:145 | "The {icon:s2_rehabilitati..."
-    value: 'restext://Common_141'
+    # ../en-US.restext:150 | "The {icon:s2_rehabilitati..."
+    value: 'restext://Common_146'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7965
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7969
 - type: 'section'
-  # ../en-US.restext:146 | "{icon:storybooktoken} **A..."
-  title: 'restext://Common_142'
+  # ../en-US.restext:151 | "{icon:storybooktoken} **A..."
+  title: 'restext://Common_147'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7980
   - type: 'text'
-    # ../en-US.restext:147 | "When a player's token ove..."
-    value: 'restext://Common_143'
+    # ../en-US.restext:152 | "When a player's token ove..."
+    value: 'restext://Common_148'
   # ../.source/FearoftheUnknown_Eng_v15.cs:7989
   - type: 'link'
-    # ../en-US.restext:148 | "click here to be committed."
-    label: 'restext://Common_144'
+    # ../en-US.restext:153 | "click here to be committed."
+    label: 'restext://Common_149'
     target: 'AsylumTreatment' # ./00179-AsylumTreatment.mws.yaml
     snapshot: true
 # ../.source/FearoftheUnknown_Eng_v15.cs:7992
@@ -64,25 +64,25 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:8000
     - type: 'section'
-      # ../en-US.restext:268 | "{icon:storybooktoken}**Th..."
-      title: 'restext://Common_264'
+      # ../en-US.restext:277 | "{icon:storybooktoken}**Th..."
+      title: 'restext://Common_273'
       style: 'hub-card'
       content:
       # ../.source/FearoftheUnknown_Eng_v15.cs:8010
       - type: 'text'
-        # ../en-US.restext:269 | "Any time a player visits ..."
-        value: 'restext://Common_265'
+        # ../en-US.restext:278 | "Any time a player visits ..."
+        value: 'restext://Common_274'
       # ../.source/FearoftheUnknown_Eng_v15.cs:8013
       - type: 'break'
         style: 'paragraph'
       # ../.source/FearoftheUnknown_Eng_v15.cs:8015
       - type: 'text'
-        # ../en-US.restext:752 | "At the end of each round,..."
+        # ../en-US.restext:767 | "At the end of each round,..."
         value: 'restext://Liberal3_002'
       # ../.source/FearoftheUnknown_Eng_v15.cs:8022
       - type: 'link'
-        # ../en-US.restext:308 | "click here."
-        label: 'restext://Common_304'
+        # ../en-US.restext:317 | "click here."
+        label: 'restext://Common_313'
         target: 'HuntExplanation' # ./00076-HuntExplanation.mws.yaml
         snapshot: true
     # ../.source/FearoftheUnknown_Eng_v15.cs:8025
@@ -93,22 +93,22 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:8033
 - type: 'section'
-  # ../en-US.restext:131 | "**The** **{menname}** **P..."
-  title: 'restext://Common_127'
+  # ../en-US.restext:136 | "**The** **{menname}** **P..."
+  title: 'restext://Common_132'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:8044
   - type: 'text'
-    # ../en-US.restext:132 | "At the End of the Generat..."
-    value: 'restext://Common_128'
+    # ../en-US.restext:137 | "At the End of the Generat..."
+    value: 'restext://Common_133'
   # ../.source/FearoftheUnknown_Eng_v15.cs:8059
   - type: 'conditional'
     if: 'players >= 4'
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:8061
     - type: 'text'
-      # ../en-US.restext:133 | "The player who has the se..."
-      value: 'restext://Common_129'
+      # ../en-US.restext:138 | "The player who has the se..."
+      value: 'restext://Common_134'
   # ../.source/FearoftheUnknown_Eng_v15.cs:8064
   - type: 'break'
     style: 'paragraph'
@@ -121,25 +121,73 @@ nodes:
       if: 'exped == 1'
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:8074
-      - type: 'link'
-        # ../en-US.restext:118 | "Click here at the End of ..."
-        label: 'restext://Common_114'
+      - type: 'popup'
+        layout: 'end_of_round'
+        # ../en-US.restext:121 | "Click here at the End of ..."
+        label: 'restext://Common_117'
         target: 'LiberalBonus' # ./00093-LiberalBonus.mws.yaml
+        # ../en-US.restext:181 | "End of Round"
+        okay: 'restext://Common_177'
+        onclose:
+        - type: 'assign'
+          var: '_ProgressRound'
+          expr: '9'
         snapshot: true
+        content:
+        - type: 'text'
+          # ../en-US.restext:122 | "The Late Years of the Thi..."
+          value: 'restext://Common_118'
+        - type: 'break'
+          style: 'paragraph'
+        - type: 'text'
+          # ../en-US.restext:160 | "Perform any End of Round ..."
+          value: 'restext://Common_156'
       else:
       # ../.source/FearoftheUnknown_Eng_v15.cs:8081
-      - type: 'link'
-        # ../en-US.restext:753 | "Click here at the end of ..."
+      - type: 'popup'
+        layout: 'end_of_round'
+        # ../en-US.restext:768 | "Click here at the end of ..."
         label: 'restext://Liberal3_003'
         target: 'Expedition1' # ./00049-Expedition1.mws.yaml
+        # ../en-US.restext:181 | "End of Round"
+        okay: 'restext://Common_177'
+        onclose:
+        - type: 'assign'
+          var: '_ProgressRound'
+          expr: '9'
         snapshot: true
+        content:
+        - type: 'text'
+          # ../en-US.restext:122 | "The Late Years of the Thi..."
+          value: 'restext://Common_118'
+        - type: 'break'
+          style: 'paragraph'
+        - type: 'text'
+          # ../en-US.restext:160 | "Perform any End of Round ..."
+          value: 'restext://Common_156'
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:8089
-    - type: 'link'
-      # ../en-US.restext:118 | "Click here at the End of ..."
-      label: 'restext://Common_114'
+    - type: 'popup'
+      layout: 'end_of_round'
+      # ../en-US.restext:121 | "Click here at the End of ..."
+      label: 'restext://Common_117'
       target: 'LiberalBonus' # ./00093-LiberalBonus.mws.yaml
+      # ../en-US.restext:181 | "End of Round"
+      okay: 'restext://Common_177'
+      onclose:
+      - type: 'assign'
+        var: '_ProgressRound'
+        expr: '9'
       snapshot: true
+      content:
+      - type: 'text'
+        # ../en-US.restext:122 | "The Late Years of the Thi..."
+        value: 'restext://Common_118'
+      - type: 'break'
+        style: 'paragraph'
+      - type: 'text'
+        # ../en-US.restext:160 | "Perform any End of Round ..."
+        value: 'restext://Common_156'
 # ../.source/FearoftheUnknown_Eng_v15.cs:8094
 - type: 'assign'
   var: 'round'

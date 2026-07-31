@@ -2,60 +2,60 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TakeEvent'
-# ../en-US.restext:193 | "Military Protection"
-title: 'restext://Common_189'
+# ../en-US.restext:196 | "Military Protection"
+title: 'restext://Common_192'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:2738
 - type: 'text'
-  # ../en-US.restext:194 | "Special Event"
-  value: 'restext://Common_190'
+  # ../en-US.restext:197 | "Special Event"
+  value: 'restext://Common_193'
   style: 'special-event'
 # ../.source/ATimeofWar_Eng_v8.cs:2739
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:2740
 - type: 'text'
-  # ../en-US.restext:402 | "On a brisk April morning,..."
+  # ../en-US.restext:412 | "On a brisk April morning,..."
   value: 'restext://TakeEvent_003'
 # ../.source/ATimeofWar_Eng_v8.cs:2742
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:2744
 - type: 'text'
-  # ../en-US.restext:403 | "Being conscious of the do..."
+  # ../en-US.restext:413 | "Being conscious of the do..."
   value: 'restext://TakeEvent_004'
 # ../.source/ATimeofWar_Eng_v8.cs:2752
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:2756
 - type: 'text'
-  # ../en-US.restext:404 | "**Vote**"
+  # ../en-US.restext:414 | "**Vote**"
   value: 'restext://TakeEvent_005'
 # ../.source/ATimeofWar_Eng_v8.cs:2758
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:2759
 - type: 'text'
-  # ../en-US.restext:405 | "Each player takes a {warw..."
+  # ../en-US.restext:415 | "Each player takes a {warw..."
   value: 'restext://TakeEvent_006'
 # ../.source/ATimeofWar_Eng_v8.cs:2767
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:2771
 - type: 'text'
-  # ../en-US.restext:406 | "**{warwinner}**: Is a vot..."
+  # ../en-US.restext:416 | "**{warwinner}**: Is a vot..."
   value: 'restext://TakeEvent_007'
 # ../.source/ATimeofWar_Eng_v8.cs:2774
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:2777
 - type: 'text'
-  # ../en-US.restext:407 | "**{warloser}**: Is a vote..."
+  # ../en-US.restext:417 | "**{warloser}**: Is a vote..."
   value: 'restext://TakeEvent_008'
 # ../.source/ATimeofWar_Eng_v8.cs:2780
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:2782
 - type: 'text'
-  # ../en-US.restext:408 | "Tally the vote count (tie..."
+  # ../en-US.restext:418 | "Tally the vote count (tie..."
   value: 'restext://TakeEvent_009'
 # ../.source/ATimeofWar_Eng_v8.cs:2784
 - type: 'break'
@@ -63,42 +63,42 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:2788
 - type: 'popup'
   layout: 'countdown_instructions'
-  # ../en-US.restext:409 | "Click to begin the vote..."
+  # ../en-US.restext:419 | "Click to begin the vote..."
   label: 'restext://TakeEvent_010'
   content:
   - type: 'text'
-    # ../en-US.restext:195 | "Click on the 'Start Votin..."
-    value: 'restext://Common_191'
+    # ../en-US.restext:198 | "Click on the 'Start Votin..."
+    value: 'restext://Common_194'
   - type: 'break'
     style: 'paragraph'
   - type: 'text'
-    # ../en-US.restext:196 | "When you see the word 'RE..."
-    value: 'restext://Common_192'
+    # ../en-US.restext:199 | "When you see the word 'RE..."
+    value: 'restext://Common_195'
   - type: 'break'
     style: 'paragraph'
   - type: 'popup'
     layout: 'countdown_action'
-    # ../en-US.restext:197 | "Start Voting"
-    label: 'restext://Common_193'
+    # ../en-US.restext:200 | "Start Voting"
+    label: 'restext://Common_196'
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:199 | "3"
-      value: 'restext://Common_195'
+      # ../en-US.restext:202 | "3"
+      value: 'restext://Common_198'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:200 | "2"
-      value: 'restext://Common_196'
+      # ../en-US.restext:203 | "2"
+      value: 'restext://Common_199'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:201 | "1"
-      value: 'restext://Common_197'
+      # ../en-US.restext:204 | "1"
+      value: 'restext://Common_200'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:198 | "REVEAL"
-      value: 'restext://Common_194'
+      # ../en-US.restext:201 | "REVEAL"
+      value: 'restext://Common_197'
       style: 'countdown-reveal'
-    # ../en-US.restext:198 | "REVEAL"
-    okay: 'restext://Common_194'
+    # ../en-US.restext:201 | "REVEAL"
+    okay: 'restext://Common_197'
     target: 'TakeEventb' # ./00186-TakeEventb.mws.yaml
     snapshot: false

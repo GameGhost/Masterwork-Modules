@@ -2,8 +2,8 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S4Asylum'
-# ../en-US.restext:273 | "Private Investors"
-title: 'restext://Common_269'
+# ../en-US.restext:282 | "Private Investors"
+title: 'restext://Common_278'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:4076
@@ -14,14 +14,14 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4079
 - type: 'text'
-  # ../en-US.restext:544 | "The Asylum, while margina..."
+  # ../en-US.restext:555 | "The Asylum, while margina..."
   value: 'restext://S4Asylum_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4080
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4082
 - type: 'text'
-  # ../en-US.restext:545 | "Of course, I was once aga..."
+  # ../en-US.restext:556 | "Of course, I was once aga..."
   value: 'restext://S4Asylum_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4083
 - type: 'break'
@@ -29,11 +29,11 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:4087
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:286 | "Click to continue..."
-  label: 'restext://Common_282'
+  # ../en-US.restext:295 | "Click to continue..."
+  label: 'restext://Common_291'
   target: 'S4Asylum2' # ./00248-S4Asylum2.mws.yaml
-  # ../en-US.restext:275 | "Close"
-  okay: 'restext://Common_271'
+  # ../en-US.restext:284 | "Close"
+  okay: 'restext://Common_280'
   snapshot: true
   header:
   # ../.source/FearoftheUnknown_Eng_v15.cs:4102
@@ -43,5 +43,5 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:4105
   - type: 'text'
-    # ../en-US.restext:546 | "Retrieve the **{asylumup}..."
+    # ../en-US.restext:557 | "Retrieve the **{asylumup}..."
     value: 'restext://S4Asylum_004'

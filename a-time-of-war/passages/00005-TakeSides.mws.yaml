@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TakeSides'
-# ../en-US.restext:209 | "TAKING SIDES"
-title: 'restext://Common_205'
-# ../en-US.restext:210 | "Early Years"
-subtitle: 'restext://Common_206'
+# ../en-US.restext:213 | "TAKING SIDES"
+title: 'restext://Common_209'
+# ../en-US.restext:214 | "Early Years"
+subtitle: 'restext://Common_210'
 tags:
 - 'HUB'
-layout: 'hub'
+layout: 'hub_early'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:1493
 - type: 'assign'
@@ -21,8 +21,8 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:1499
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:211 | "Accept"
-    okay: 'restext://Common_207'
+    # ../en-US.restext:215 | "Accept"
+    okay: 'restext://Common_211'
     header:
     # ../.source/ATimeofWar_Eng_v8.cs:1503
     - type: 'image'
@@ -31,7 +31,7 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:1505
     - type: 'text'
-      # ../en-US.restext:322 | "Turn to the **A Time of W..."
+      # ../en-US.restext:330 | "Turn to the **A Time of W..."
       value: 'restext://TakeSides_004'
     # ../.source/ATimeofWar_Eng_v8.cs:1537
     - type: 'switch'
@@ -93,7 +93,7 @@ nodes:
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:323 | "Place the Suspicion Marke..."
+      # ../en-US.restext:331 | "Place the Suspicion Marke..."
       value: 'restext://TakeSides_005'
       lets:
       - '_rnd_TakeSides_0'
@@ -102,25 +102,25 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:1589
 - type: 'section'
-  # ../en-US.restext:212 | "{icon:storybooktoken} **T..."
-  title: 'restext://Common_208'
+  # ../en-US.restext:216 | "{icon:storybooktoken} **T..."
+  title: 'restext://Common_212'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:1599
   - type: 'text'
-    # ../en-US.restext:213 | "When you visit the Town H..."
-    value: 'restext://Common_209'
+    # ../en-US.restext:217 | "When you visit the Town H..."
+    value: 'restext://Common_213'
   # ../.source/ATimeofWar_Eng_v8.cs:1607
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:1609
   - type: 'text'
-    # ../en-US.restext:214 | "In addition, you will spe..."
-    value: 'restext://Common_210'
+    # ../en-US.restext:218 | "In addition, you will spe..."
+    value: 'restext://Common_214'
   # ../.source/ATimeofWar_Eng_v8.cs:1611
   - type: 'link'
-    # ../en-US.restext:215 | "Click here whenever you v..."
-    label: 'restext://Common_211'
+    # ../en-US.restext:219 | "Click here whenever you v..."
+    label: 'restext://Common_215'
     target: 'RumorD' # ./00006-RumorD.mws.yaml
     snapshot: true
 # ../.source/ATimeofWar_Eng_v8.cs:1613
@@ -128,20 +128,36 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:1617
 - type: 'section'
-  # ../en-US.restext:216 | "**Second Round - Pledge o..."
-  title: 'restext://Common_212'
+  # ../en-US.restext:220 | "**Second Round - Pledge o..."
+  title: 'restext://Common_216'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:1625
   - type: 'text'
-    # ../en-US.restext:324 | "The village is at a cross..."
+    # ../en-US.restext:332 | "The village is at a cross..."
     value: 'restext://TakeSides_011'
   # ../.source/ATimeofWar_Eng_v8.cs:1627
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:1631
-  - type: 'link'
-    # ../en-US.restext:217 | "Click here at the end of ..."
-    label: 'restext://Common_213'
+  - type: 'popup'
+    layout: 'end_of_round'
+    # ../en-US.restext:221 | "Click here at the end of ..."
+    label: 'restext://Common_217'
     target: 'TownHallSpecial' # ./00108-TownHallSpecial.mws.yaml
+    # ../en-US.restext:222 | "End of Round"
+    okay: 'restext://Common_218'
+    onclose:
+    - type: 'assign'
+      var: '_ProgressRound'
+      expr: '1'
     snapshot: true
+    content:
+    - type: 'text'
+      # ../en-US.restext:333 | "The Early Years of the Fi..."
+      value: 'restext://TakeSides_014'
+    - type: 'break'
+      style: 'paragraph'
+    - type: 'text'
+      # ../en-US.restext:223 | "Then, perform all Start o..."
+      value: 'restext://Common_219'

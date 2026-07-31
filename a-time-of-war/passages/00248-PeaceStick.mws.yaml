@@ -10,27 +10,27 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:24798
   - type: 'text'
-    # ../en-US.restext:1988 | "**An Old, Failed Sabotage**"
+    # ../en-US.restext:2002 | "**An Old, Failed Sabotage**"
     value: 'restext://PeaceStick_001'
   # ../.source/ATimeofWar_Eng_v8.cs:24800
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:24801
   - type: 'text'
-    # ../en-US.restext:1989 | "For as long as I could re..."
+    # ../en-US.restext:2003 | "For as long as I could re..."
     value: 'restext://PeaceStick_002'
   # ../.source/ATimeofWar_Eng_v8.cs:24804
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:24806
   - type: 'text'
-    # ../en-US.restext:1990 | "I discovered a thin circu..."
+    # ../en-US.restext:2004 | "I discovered a thin circu..."
     value: 'restext://PeaceStick_003'
   # ../.source/ATimeofWar_Eng_v8.cs:24807
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:24809
   - type: 'text'
-    # ../en-US.restext:1991 | "Why some individual would..."
+    # ../en-US.restext:2005 | "Why some individual would..."
     value: 'restext://PeaceStick_004'
   # ../.source/ATimeofWar_Eng_v8.cs:24813
   - type: 'break'
@@ -41,8 +41,8 @@ nodes:
     # ../en-US.restext:24 | "Click to continue..."
     label: 'restext://Common_020'
     target: 'BattleTime' # ./00072-BattleTime.mws.yaml
-    # ../en-US.restext:182 | "Close"
-    okay: 'restext://Common_178'
+    # ../en-US.restext:185 | "Close"
+    okay: 'restext://Common_181'
     snapshot: true
     header:
     # ../.source/ATimeofWar_Eng_v8.cs:24836
@@ -56,16 +56,16 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:24841
       - type: 'text'
-        # ../en-US.restext:1993 | "The player with the {icon..."
+        # ../en-US.restext:2007 | "The player with the {icon..."
         value: 'restext://PeaceStick_006'
       else:
       # ../.source/ATimeofWar_Eng_v8.cs:24850
       - type: 'text'
-        # ../en-US.restext:1992 | "Each player with a {icon:..."
+        # ../en-US.restext:2006 | "Each player with a {icon:..."
         value: 'restext://PeaceStick_005'
     # ../.source/ATimeofWar_Eng_v8.cs:24856
     - type: 'text'
-      # ../en-US.restext:1994 | "Then, discard the tokens ..."
+      # ../en-US.restext:2008 | "Then, discard the tokens ..."
       value: 'restext://PeaceStick_007'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:24821

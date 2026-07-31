@@ -2,14 +2,14 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S4Con2'
-# ../en-US.restext:622 | "The Trial"
+# ../en-US.restext:633 | "The Trial"
 title: 'restext://S4Con2_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:5194
 - type: 'text'
-  # ../en-US.restext:276 | "**Letter from {tempid} -** "
-  value: 'restext://Common_272'
+  # ../en-US.restext:285 | "**Letter from {tempid} -** "
+  value: 'restext://Common_281'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5200
 - type: 'include_passage'
   target: 'date1a' # ./00207-date1a.mws.yaml
@@ -18,22 +18,22 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5205
 - type: 'text'
-  # ../en-US.restext:623 | "I have been served a noti..."
+  # ../en-US.restext:634 | "I have been served a noti..."
   value: 'restext://S4Con2_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5206
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5210
 - type: 'text'
-  # ../en-US.restext:278 | "**Choose:**"
-  value: 'restext://Common_274'
+  # ../en-US.restext:287 | "**Choose:**"
+  value: 'restext://Common_283'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5217
 - type: 'let'
   var: '_rnd_S4Con2_0'
   expr: 'rand_between(1, 2, "S4Con2_0")'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5213
 - type: 'text'
-  # ../en-US.restext:624 | "You may pay **${_rnd_S4Co..."
+  # ../en-US.restext:635 | "You may pay **${_rnd_S4Co..."
   value: 'restext://S4Con2_004'
   lets:
   - '_rnd_S4Con2_0'
@@ -42,7 +42,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5225
 - type: 'link'
-  # ../en-US.restext:625 | "Pay the $ to the supply a..."
+  # ../en-US.restext:636 | "Pay the $ to the supply a..."
   label: 'restext://S4Con2_005'
   target: 'S4Con2A' # ./00091-S4Con2A.mws.yaml
   snapshot: true
@@ -56,7 +56,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5229
 - type: 'link'
-  # ../en-US.restext:626 | "Accept the Outcome."
+  # ../en-US.restext:637 | "Accept the Outcome."
   label: 'restext://S4Con2_006'
   target: 'S4Con2A' # ./00091-S4Con2A.mws.yaml
   snapshot: true

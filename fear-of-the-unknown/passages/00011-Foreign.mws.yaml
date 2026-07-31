@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Foreign'
-# ../en-US.restext:93 | "Blame it on the Foreigners"
-title: 'restext://Common_089'
-# ../en-US.restext:155 | "Early Years"
-subtitle: 'restext://Common_151'
+# ../en-US.restext:95 | "Blame it on the Foreigners"
+title: 'restext://Common_091'
+# ../en-US.restext:162 | "Early Years"
+subtitle: 'restext://Common_158'
 tags:
 - 'HUB'
-layout: 'hub'
+layout: 'hub_early'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:2665
 - type: 'assign'
@@ -25,8 +25,8 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2672
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:156 | "Accept"
-    okay: 'restext://Common_152'
+    # ../en-US.restext:163 | "Accept"
+    okay: 'restext://Common_159'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2676
     - type: 'image'
@@ -35,7 +35,7 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2678
     - type: 'text'
-      # ../en-US.restext:449 | "Retrieve the **Memorial B..."
+      # ../en-US.restext:460 | "Retrieve the **Memorial B..."
       value: 'restext://Foreign_002'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2689
     - type: 'conditional'
@@ -43,14 +43,14 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:2691
       - type: 'text'
-        # ../en-US.restext:450 | "For {playtxt} players, yo..."
+        # ../en-US.restext:461 | "For {playtxt} players, yo..."
         value: 'restext://Foreign_003'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2700
     - type: 'break'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2701
     - type: 'text'
-      # ../en-US.restext:94 | "Place the Suspicion Marke..."
-      value: 'restext://Common_090'
+      # ../en-US.restext:96 | "Place the Suspicion Marke..."
+      value: 'restext://Common_092'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2704
     - type: 'conditional'
       if: '!Foreign'
@@ -77,8 +77,8 @@ nodes:
             expr: 'tracker + 1'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2716
     - type: 'text'
-      # ../en-US.restext:95 | "**{tracker}** and the {ic..."
-      value: 'restext://Common_091'
+      # ../en-US.restext:97 | "**{tracker}** and the {ic..."
+      value: 'restext://Common_093'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2721
     - type: 'break'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2722
@@ -87,76 +87,76 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:2724
       - type: 'text'
-        # ../en-US.restext:96 | "Then, since this is a 3 p..."
-        value: 'restext://Common_092'
+        # ../en-US.restext:98 | "Then, since this is a 3 p..."
+        value: 'restext://Common_094'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2732
 - type: 'section'
-  # ../en-US.restext:97 | "**Witching Hour**"
-  title: 'restext://Common_093'
+  # ../en-US.restext:99 | "**Witching Hour**"
+  title: 'restext://Common_095'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2741
   - type: 'text'
-    # ../en-US.restext:451 | "The **{witch1}** has been..."
+    # ../en-US.restext:462 | "The **{witch1}** has been..."
     value: 'restext://Foreign_008'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2749
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2751
 - type: 'conditional'
-  # ../en-US.restext:87 | "Church"
-  if: 'witch1 == "restext://Common_083"'
+  # ../en-US.restext:89 | "Church"
+  if: 'witch1 == "restext://Common_085"'
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2755
   - type: 'section'
-    # ../en-US.restext:98 | "{icon:storybooktoken} **R..."
-    title: 'restext://Common_094'
+    # ../en-US.restext:100 | "{icon:storybooktoken} **R..."
+    title: 'restext://Common_096'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2764
     - type: 'text'
-      # ../en-US.restext:453 | "With the Church placed un..."
+      # ../en-US.restext:464 | "With the Church placed un..."
       value: 'restext://Foreign_013'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2772
   - type: 'section'
-    # ../en-US.restext:98 | "{icon:storybooktoken} **R..."
-    title: 'restext://Common_094'
+    # ../en-US.restext:100 | "{icon:storybooktoken} **R..."
+    title: 'restext://Common_096'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2781
     - type: 'text'
-      # ../en-US.restext:99 | "When you visit the Church, "
-      value: 'restext://Common_095'
+      # ../en-US.restext:101 | "When you visit the Church, "
+      value: 'restext://Common_097'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2782
     - type: 'link'
-      # ../en-US.restext:100 | "click here to spy on anot..."
-      label: 'restext://Common_096'
+      # ../en-US.restext:102 | "click here to spy on anot..."
+      label: 'restext://Common_098'
       target: 'CheckW1' # ./00079-CheckW1.mws.yaml
       snapshot: true
     # ../.source/FearoftheUnknown_Eng_v15.cs:2783
     - type: 'break'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2784
     - type: 'text'
-      # ../en-US.restext:452 | "This will allow you to se..."
+      # ../en-US.restext:463 | "This will allow you to se..."
       value: 'restext://Foreign_012'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2787
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2791
 - type: 'section'
-  # ../en-US.restext:101 | "{icon:storybooktoken} **T..."
-  title: 'restext://Common_097'
+  # ../en-US.restext:103 | "{icon:storybooktoken} **T..."
+  title: 'restext://Common_099'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2802
   - type: 'text'
-    # ../en-US.restext:102 | "Players may visit the Tow..."
-    value: 'restext://Common_098'
+    # ../en-US.restext:104 | "Players may visit the Tow..."
+    value: 'restext://Common_100'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2812
   - type: 'link'
-    # ../en-US.restext:308 | "click here."
-    label: 'restext://Common_304'
+    # ../en-US.restext:317 | "click here."
+    label: 'restext://Common_313'
     target: 'TownHallExplanation' # ./00228-TownHallExplanation.mws.yaml
     snapshot: true
 # ../.source/FearoftheUnknown_Eng_v15.cs:2814
@@ -164,39 +164,39 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2818
 - type: 'section'
-  # ../en-US.restext:103 | "**Key to the City**"
-  title: 'restext://Common_099'
+  # ../en-US.restext:105 | "**Key to the City**"
+  title: 'restext://Common_101'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2826
   - type: 'text'
-    # ../en-US.restext:104 | "At the End of the Generat..."
-    value: 'restext://Common_100'
+    # ../en-US.restext:106 | "At the End of the Generat..."
+    value: 'restext://Common_102'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2838
   - type: 'conditional'
     if: 'players >= 4'
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2840
     - type: 'text'
-      # ../en-US.restext:105 | "The player who has the se..."
-      value: 'restext://Common_101'
+      # ../en-US.restext:107 | "The player who has the se..."
+      value: 'restext://Common_103'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2844
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2849
 - type: 'section'
-  # ../en-US.restext:454 | "{icon:storybooktoken} **B..."
+  # ../en-US.restext:465 | "{icon:storybooktoken} **B..."
   title: 'restext://Foreign_019'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2860
   - type: 'text'
-    # ../en-US.restext:455 | "The only signs of moderni..."
+    # ../en-US.restext:466 | "The only signs of moderni..."
     value: 'restext://Foreign_020'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2862
   - type: 'link'
-    # ../en-US.restext:162 | "click here"
-    label: 'restext://Common_158'
+    # ../en-US.restext:169 | "click here"
+    label: 'restext://Common_165'
     target: 'BankLibExplain' # ./00280-BankLibExplain.mws.yaml
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:2863
@@ -207,14 +207,14 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2870
 - type: 'section'
-  # ../en-US.restext:106 | "**Second Round Event - Ac..."
-  title: 'restext://Common_102'
+  # ../en-US.restext:108 | "**Second Round Event - Ac..."
+  title: 'restext://Common_104'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2879
   - type: 'text'
-    # ../en-US.restext:107 | "With a hideous hex upon t..."
-    value: 'restext://Common_103'
+    # ../en-US.restext:109 | "With a hideous hex upon t..."
+    value: 'restext://Common_105'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2889
 - type: 'break'
   style: 'paragraph'
@@ -224,27 +224,27 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2895
   - type: 'section'
-    # ../en-US.restext:108 | "{icon:storybooktoken} **P..."
-    title: 'restext://Common_104'
+    # ../en-US.restext:110 | "{icon:storybooktoken} **P..."
+    title: 'restext://Common_106'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2905
     - type: 'text'
-      # ../en-US.restext:109 | "If a player reaches 35VP, "
-      value: 'restext://Common_105'
+      # ../en-US.restext:111 | "If a player reaches 35VP, "
+      value: 'restext://Common_107'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2907
     - type: 'conditional'
       if: 'revplot == "fortune"'
       then:
       - type: 'link'
-        # ../en-US.restext:170 | "click here..."
-        label: 'restext://Common_166'
+        # ../en-US.restext:177 | "click here..."
+        label: 'restext://Common_173'
         target: '35Fortune' # ./00193-35Fortune.mws.yaml
         snapshot: true
       else:
       - type: 'link'
-        # ../en-US.restext:170 | "click here..."
-        label: 'restext://Common_166'
+        # ../en-US.restext:177 | "click here..."
+        label: 'restext://Common_173'
         target: '35Misfortune' # ./00194-35Misfortune.mws.yaml
         snapshot: true
 # ../.source/FearoftheUnknown_Eng_v15.cs:2911
@@ -255,8 +255,24 @@ nodes:
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2920
-  - type: 'link'
-    # ../en-US.restext:173 | "Click here at the end of ..."
-    label: 'restext://Common_169'
+  - type: 'popup'
+    layout: 'end_of_round'
+    # ../en-US.restext:180 | "Click here at the end of ..."
+    label: 'restext://Common_176'
     target: 'WallEvent' # ./00071-WallEvent.mws.yaml
+    # ../en-US.restext:181 | "End of Round"
+    okay: 'restext://Common_177'
+    onclose:
+    - type: 'assign'
+      var: '_ProgressRound'
+      expr: '4'
     snapshot: true
+    content:
+    - type: 'text'
+      # ../en-US.restext:112 | "The Early Years of the Se..."
+      value: 'restext://Common_108'
+    - type: 'break'
+      style: 'paragraph'
+    - type: 'text'
+      # ../en-US.restext:182 | "Then, perform all Start o..."
+      value: 'restext://Common_178'

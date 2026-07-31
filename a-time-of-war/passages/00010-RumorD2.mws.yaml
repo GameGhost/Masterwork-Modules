@@ -6,37 +6,37 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:2274
 - type: 'text'
-  # ../en-US.restext:180 | "**Carefully pick up this ..."
-  value: 'restext://Common_176'
+  # ../en-US.restext:183 | "**Carefully pick up this ..."
+  value: 'restext://Common_179'
 # ../.source/ATimeofWar_Eng_v8.cs:2277
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:2282
 - type: 'popup'
-  # ../en-US.restext:181 | "Once you are ready, click..."
-  label: 'restext://Common_177'
+  # ../en-US.restext:184 | "Once you are ready, click..."
+  label: 'restext://Common_180'
   layout: 'reveal'
-  # ../en-US.restext:182 | "Close"
-  cancel: 'restext://Common_178'
+  # ../en-US.restext:185 | "Close"
+  cancel: 'restext://Common_181'
   snapshot: true
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:2308
   - type: 'text'
-    # ../en-US.restext:365 | "No matter how I attempted..."
+    # ../en-US.restext:375 | "No matter how I attempted..."
     value: 'restext://RumorD2_001'
   # ../.source/ATimeofWar_Eng_v8.cs:2311
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:2313
   - type: 'text'
-    # ../en-US.restext:366 | "However, the moment I piv..."
+    # ../en-US.restext:376 | "However, the moment I piv..."
     value: 'restext://RumorD2_002'
   # ../.source/ATimeofWar_Eng_v8.cs:2317
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:2319
   - type: 'text'
-    # ../en-US.restext:367 | "\"Resist.\" He stated wit..."
+    # ../en-US.restext:377 | "\"Resist.\" He stated wit..."
     value: 'restext://RumorD2_003'
   # ../.source/ATimeofWar_Eng_v8.cs:2329
   - type: 'assign'
@@ -48,11 +48,11 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:2331
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:184 | "When you have finished re..."
-    label: 'restext://Common_180'
+    # ../en-US.restext:187 | "When you have finished re..."
+    label: 'restext://Common_183'
     target: '${RumorD2nextPsg}'
-    # ../en-US.restext:182 | "Close"
-    okay: 'restext://Common_178'
+    # ../en-US.restext:185 | "Close"
+    okay: 'restext://Common_181'
     snapshot: true
     header:
     - type: 'conditional'
@@ -76,5 +76,5 @@ nodes:
         expr: '["RumorIngredient", "RumorKnowledge", "RumorPitch"].shuffled("RumorD2_0")[0]'
     # ../.source/ATimeofWar_Eng_v8.cs:2298
     - type: 'text'
-      # ../en-US.restext:368 | "Gain the {figure} token."
+      # ../en-US.restext:378 | "Gain the {figure} token."
       value: 'restext://RumorD2_005'

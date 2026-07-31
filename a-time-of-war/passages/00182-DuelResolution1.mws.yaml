@@ -6,21 +6,21 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:19424
 - type: 'text'
-  # ../en-US.restext:1591 | "**This and the subsequent..."
+  # ../en-US.restext:1605 | "**This and the subsequent..."
   value: 'restext://DuelResolution1_001'
 # ../.source/ATimeofWar_Eng_v8.cs:19426
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:19430
 - type: 'text'
-  # ../en-US.restext:1592 | "**The Bloody Business**"
+  # ../en-US.restext:1606 | "**The Bloody Business**"
   value: 'restext://DuelResolution1_002'
 # ../.source/ATimeofWar_Eng_v8.cs:19432
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:19434
 - type: 'text'
-  # ../en-US.restext:1593 | "As quick as the sun rose ..."
+  # ../en-US.restext:1607 | "As quick as the sun rose ..."
   value: 'restext://DuelResolution1_003'
 # ../.source/ATimeofWar_Eng_v8.cs:19438
 - type: 'break'
@@ -32,19 +32,19 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:19442
   - type: 'text'
-    # ../en-US.restext:1595 | "I opened the hatch on my ..."
+    # ../en-US.restext:1609 | "I opened the hatch on my ..."
     value: 'restext://DuelResolution1_005'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:19448
   - type: 'text'
-    # ../en-US.restext:1594 | "I once again checked the ..."
+    # ../en-US.restext:1608 | "I once again checked the ..."
     value: 'restext://DuelResolution1_004'
 # ../.source/ATimeofWar_Eng_v8.cs:19450
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:19452
 - type: 'link'
-  # ../en-US.restext:1596 | "Click to begin the duel..."
+  # ../en-US.restext:1610 | "Click to begin the duel..."
   label: 'restext://DuelResolution1_006'
   target: 'DuelResolution1a' # ./00183-DuelResolution1a.mws.yaml
   snapshot: true
@@ -59,7 +59,7 @@ nodes:
     # ../en-US.restext:48 | Common_044 | "Engineering"
     # ../en-US.restext:49 | Common_045 | "Chemistry"
     # ../en-US.restext:50 | Common_046 | "Biology"
-    # ../en-US.restext:1597 | DuelResolution1_010 | "Occult"
+    # ../en-US.restext:1611 | DuelResolution1_010 | "Occult"
     expr: '["restext://Common_044", "restext://Common_045", "restext://Common_046", "restext://DuelResolution1_010"].shuffled("DuelResolution1_0")[0]'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:19460

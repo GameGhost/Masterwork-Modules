@@ -14,13 +14,13 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:2358 | "Please enter your brand n..."
+      # ../en-US.restext:2372 | "Please enter your brand n..."
       value: 'restext://Reign7c_001'
     - type: 'input'
       label: ''
       var: 'title'
-    # ../en-US.restext:169 | "Continue"
-    okay: 'restext://Common_165'
+    # ../en-US.restext:172 | "Continue"
+    okay: 'restext://Common_168'
     onclose:
     - type: 'assign'
       var: 'title_submitted'

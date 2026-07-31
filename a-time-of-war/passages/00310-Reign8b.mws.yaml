@@ -2,15 +2,15 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Reign8b'
-# ../en-US.restext:159 | "Thanks from the Advisor"
-title: 'restext://Common_155'
+# ../en-US.restext:162 | "Thanks from the Advisor"
+title: 'restext://Common_158'
 tags:
 - 'revised'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:28587
 - type: 'text'
-  # ../en-US.restext:2344 | "The advisor thanked me fo..."
+  # ../en-US.restext:2358 | "The advisor thanked me fo..."
   value: 'restext://Reign8b_001'
 # ../.source/ATimeofWar_Eng_v8.cs:28589
 - type: 'switch'
@@ -20,13 +20,13 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:28591
     - type: 'text'
-      # ../en-US.restext:2345 | "But, in this case, it was..."
+      # ../en-US.restext:2359 | "But, in this case, it was..."
       value: 'restext://Reign8b_002'
   - match: 2
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:28596
     - type: 'text'
-      # ../en-US.restext:2346 | "In the end, however, I co..."
+      # ../en-US.restext:2360 | "In the end, however, I co..."
       value: 'restext://Reign8b_003'
 # ../.source/ATimeofWar_Eng_v8.cs:28600
 - type: 'break'
@@ -37,8 +37,8 @@ nodes:
   # ../en-US.restext:24 | "Click to continue..."
   label: 'restext://Common_020'
   target: '${round == 16 ? "MonarchReign1" : round == 17 ? "MonarchReign2" : "MonarchReign3"}' # ./00043-MonarchReign1.mws.yaml, ./00068-MonarchReign2.mws.yaml, ./00069-MonarchReign3.mws.yaml
-  # ../en-US.restext:182 | "Close"
-  okay: 'restext://Common_178'
+  # ../en-US.restext:185 | "Close"
+  okay: 'restext://Common_181'
   snapshot: true
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:28629
@@ -52,7 +52,7 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:28635
     - type: 'text'
-      # ../en-US.restext:2348 | "{crownL}Gain 1 {icon:s3_w..."
+      # ../en-US.restext:2362 | "{crownL}Gain 1 {icon:s3_w..."
       value: 'restext://Reign8b_006'
     # ../.source/ATimeofWar_Eng_v8.cs:28643
     - type: 'assign'
@@ -61,7 +61,7 @@ nodes:
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:28647
     - type: 'text'
-      # ../en-US.restext:2347 | "{crownR} Gain 1 {icon:s3_..."
+      # ../en-US.restext:2361 | "{crownR} Gain 1 {icon:s3_..."
       value: 'restext://Reign8b_004'
     # ../.source/ATimeofWar_Eng_v8.cs:28656
     - type: 'assign'
@@ -72,5 +72,5 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:28662
   - type: 'text'
-    # ../en-US.restext:162 | "_Reminder: The {icon:s3_c..."
-    value: 'restext://Common_158'
+    # ../en-US.restext:165 | "_Reminder: The {icon:s3_c..."
+    value: 'restext://Common_161'

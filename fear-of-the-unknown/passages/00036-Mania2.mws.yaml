@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Mania2'
-# ../en-US.restext:154 | "WITCH HUNT"
-title: 'restext://Common_150'
-# ../en-US.restext:151 | "Middle Years"
-subtitle: 'restext://Common_147'
+# ../en-US.restext:161 | "WITCH HUNT"
+title: 'restext://Common_157'
+# ../en-US.restext:156 | "Middle Years"
+subtitle: 'restext://Common_152'
 tags:
 - 'HUB'
-layout: 'hub'
+layout: 'hub_middle'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:5579
 - type: 'assign'
@@ -16,18 +16,18 @@ nodes:
   expr: '2'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5584
 - type: 'section'
-  # ../en-US.restext:157 | "{icon:storybooktoken} **F..."
-  title: 'restext://Common_153'
+  # ../en-US.restext:164 | "{icon:storybooktoken} **F..."
+  title: 'restext://Common_160'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:5595
   - type: 'text'
-    # ../en-US.restext:158 | "Any time a player is over..."
-    value: 'restext://Common_154'
+    # ../en-US.restext:165 | "Any time a player is over..."
+    value: 'restext://Common_161'
   # ../.source/FearoftheUnknown_Eng_v15.cs:5599
   - type: 'link'
-    # ../en-US.restext:159 | "click here for a special ..."
-    label: 'restext://Common_155'
+    # ../en-US.restext:166 | "click here for a special ..."
+    label: 'restext://Common_162'
     target: 'PlotPlayerCheckin' # ./00202-PlotPlayerCheckin.mws.yaml
     snapshot: true
 # ../.source/FearoftheUnknown_Eng_v15.cs:5602
@@ -39,18 +39,18 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:5609
   - type: 'section'
-    # ../en-US.restext:160 | "{icon:storybooktoken} **10VP**"
-    title: 'restext://Common_156'
+    # ../en-US.restext:167 | "{icon:storybooktoken} **10VP**"
+    title: 'restext://Common_163'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:5620
     - type: 'text'
-      # ../en-US.restext:161 | "Whenever a player reaches..."
-      value: 'restext://Common_157'
+      # ../en-US.restext:168 | "Whenever a player reaches..."
+      value: 'restext://Common_164'
     # ../.source/FearoftheUnknown_Eng_v15.cs:5621
     - type: 'link'
-      # ../en-US.restext:162 | "click here"
-      label: 'restext://Common_158'
+      # ../en-US.restext:169 | "click here"
+      label: 'restext://Common_165'
       target: 'FP10VP' # ./00129-FP10VP.mws.yaml
       snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:5624
@@ -61,18 +61,18 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:5630
   - type: 'section'
-    # ../en-US.restext:163 | "{icon:storybooktoken} **R..."
-    title: 'restext://Common_159'
+    # ../en-US.restext:170 | "{icon:storybooktoken} **R..."
+    title: 'restext://Common_166'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:5641
     - type: 'text'
-      # ../en-US.restext:164 | "Whenever a player reaches..."
-      value: 'restext://Common_160'
+      # ../en-US.restext:171 | "Whenever a player reaches..."
+      value: 'restext://Common_167'
     # ../.source/FearoftheUnknown_Eng_v15.cs:5642
     - type: 'link'
-      # ../en-US.restext:308 | "click here."
-      label: 'restext://Common_304'
+      # ../en-US.restext:317 | "click here."
+      label: 'restext://Common_313'
       target: 'FPResearch2' # ./00130-FPResearch2.mws.yaml
       snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:5645
@@ -83,18 +83,18 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:5652
   - type: 'section'
-    # ../en-US.restext:165 | "{icon:storybooktoken} **I..."
-    title: 'restext://Common_161'
+    # ../en-US.restext:172 | "{icon:storybooktoken} **I..."
+    title: 'restext://Common_168'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:5663
     - type: 'text'
-      # ../en-US.restext:166 | "Whenever a player reaches..."
-      value: 'restext://Common_162'
+      # ../en-US.restext:173 | "Whenever a player reaches..."
+      value: 'restext://Common_169'
     # ../.source/FearoftheUnknown_Eng_v15.cs:5666
     - type: 'link'
-      # ../en-US.restext:152 | "Click here..."
-      label: 'restext://Common_148'
+      # ../en-US.restext:157 | "Click here..."
+      label: 'restext://Common_153'
       target: 'FPSanity3' # ./00131-FPSanity3.mws.yaml
       snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:5669
@@ -105,18 +105,18 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:5675
   - type: 'section'
-    # ../en-US.restext:168 | "{icon:storybooktoken} **C..."
-    title: 'restext://Common_164'
+    # ../en-US.restext:175 | "{icon:storybooktoken} **C..."
+    title: 'restext://Common_171'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:5686
     - type: 'text'
-      # ../en-US.restext:169 | "Whenever a player reaches..."
-      value: 'restext://Common_165'
+      # ../en-US.restext:176 | "Whenever a player reaches..."
+      value: 'restext://Common_172'
     # ../.source/FearoftheUnknown_Eng_v15.cs:5689
     - type: 'link'
-      # ../en-US.restext:167 | "Click here…"
-      label: 'restext://Common_163'
+      # ../en-US.restext:174 | "Click here…"
+      label: 'restext://Common_170'
       target: 'FPCreepy3' # ./00132-FPCreepy3.mws.yaml
       snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:5692
@@ -126,19 +126,35 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5698
 - type: 'section'
-  # ../en-US.restext:171 | "**Second Round Event**"
-  title: 'restext://Common_167'
+  # ../en-US.restext:178 | "**Second Round Event**"
+  title: 'restext://Common_174'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:5706
   - type: 'text'
-    # ../en-US.restext:172 | "As tensions rise and accu..."
-    value: 'restext://Common_168'
+    # ../en-US.restext:179 | "As tensions rise and accu..."
+    value: 'restext://Common_175'
   # ../.source/FearoftheUnknown_Eng_v15.cs:5708
   - type: 'break'
   # ../.source/FearoftheUnknown_Eng_v15.cs:5711
-  - type: 'link'
-    # ../en-US.restext:150 | "Click here to continue to..."
-    label: 'restext://Common_146'
+  - type: 'popup'
+    layout: 'end_of_round'
+    # ../en-US.restext:155 | "Click here to continue to..."
+    label: 'restext://Common_151'
     target: 'S4Kill1' # ./00006-S4Kill1.mws.yaml
+    # ../en-US.restext:181 | "End of Round"
+    okay: 'restext://Common_177'
+    onclose:
+    - type: 'assign'
+      var: '_ProgressRound'
+      expr: '2'
     snapshot: true
+    content:
+    - type: 'text'
+      # ../en-US.restext:660 | "The Middle Years of the F..."
+      value: 'restext://Mania2_003'
+    - type: 'break'
+      style: 'paragraph'
+    - type: 'text'
+      # ../en-US.restext:158 | "Then, perform all Start o..."
+      value: 'restext://Common_154'

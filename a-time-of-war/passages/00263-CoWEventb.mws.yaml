@@ -8,8 +8,8 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:25785
 - type: 'text'
-  # ../en-US.restext:194 | "Special Event"
-  value: 'restext://Common_190'
+  # ../en-US.restext:197 | "Special Event"
+  value: 'restext://Common_193'
   style: 'special-event'
 # ../.source/ATimeofWar_Eng_v8.cs:25786
 - type: 'break'
@@ -22,28 +22,28 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:25791
 - type: 'text'
-  # ../en-US.restext:2111 | "A **YAY** vote is a vote ..."
+  # ../en-US.restext:2125 | "A **YAY** vote is a vote ..."
   value: 'restext://CoWEventb_002'
 # ../.source/ATimeofWar_Eng_v8.cs:25806
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:25808
 - type: 'text'
-  # ../en-US.restext:2112 | "A **NAY** vote is a vote ..."
+  # ../en-US.restext:2126 | "A **NAY** vote is a vote ..."
   value: 'restext://CoWEventb_003'
 # ../.source/ATimeofWar_Eng_v8.cs:25823
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:25825
 - type: 'text'
-  # ../en-US.restext:2113 | "This will provide a **{de..."
+  # ../en-US.restext:2127 | "This will provide a **{de..."
   value: 'restext://CoWEventb_004'
 # ../.source/ATimeofWar_Eng_v8.cs:25850
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:25854
 - type: 'text'
-  # ../en-US.restext:2114 | "_A tied vote will result ..."
+  # ../en-US.restext:2128 | "_A tied vote will result ..."
   value: 'restext://CoWEventb_005'
 # ../.source/ATimeofWar_Eng_v8.cs:25862
 - type: 'break'
@@ -55,38 +55,38 @@ nodes:
   label: 'restext://Common_019'
   content:
   - type: 'text'
-    # ../en-US.restext:195 | "Click on the 'Start Votin..."
-    value: 'restext://Common_191'
+    # ../en-US.restext:198 | "Click on the 'Start Votin..."
+    value: 'restext://Common_194'
   - type: 'break'
     style: 'paragraph'
   - type: 'text'
-    # ../en-US.restext:196 | "When you see the word 'RE..."
-    value: 'restext://Common_192'
+    # ../en-US.restext:199 | "When you see the word 'RE..."
+    value: 'restext://Common_195'
   - type: 'break'
     style: 'paragraph'
   - type: 'popup'
     layout: 'countdown_action'
-    # ../en-US.restext:197 | "Start Voting"
-    label: 'restext://Common_193'
+    # ../en-US.restext:200 | "Start Voting"
+    label: 'restext://Common_196'
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:199 | "3"
-      value: 'restext://Common_195'
+      # ../en-US.restext:202 | "3"
+      value: 'restext://Common_198'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:200 | "2"
-      value: 'restext://Common_196'
+      # ../en-US.restext:203 | "2"
+      value: 'restext://Common_199'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:201 | "1"
-      value: 'restext://Common_197'
+      # ../en-US.restext:204 | "1"
+      value: 'restext://Common_200'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:198 | "REVEAL"
-      value: 'restext://Common_194'
+      # ../en-US.restext:201 | "REVEAL"
+      value: 'restext://Common_197'
       style: 'countdown-reveal'
-    # ../en-US.restext:198 | "REVEAL"
-    okay: 'restext://Common_194'
+    # ../en-US.restext:201 | "REVEAL"
+    okay: 'restext://Common_197'
     target: 'COWRes' # ./00246-COWRes.mws.yaml
     snapshot: false

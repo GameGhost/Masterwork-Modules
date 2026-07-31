@@ -8,28 +8,28 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:10389
 - type: 'text'
-  # ../en-US.restext:858 | "At the end of each round,..."
+  # ../en-US.restext:873 | "At the end of each round,..."
   value: 'restext://HuntExplanation_001'
 # ../.source/FearoftheUnknown_Eng_v15.cs:10401
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:10403
 - type: 'text'
-  # ../en-US.restext:859 | "The player(s) leading the..."
+  # ../en-US.restext:874 | "The player(s) leading the..."
   value: 'restext://HuntExplanation_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:10422
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:10424
 - type: 'text'
-  # ../en-US.restext:860 | "All players on a successf..."
+  # ../en-US.restext:875 | "All players on a successf..."
   value: 'restext://HuntExplanation_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:10429
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:10431
 - type: 'text'
-  # ../en-US.restext:861 | "If unsuccessful, another ..."
+  # ../en-US.restext:876 | "If unsuccessful, another ..."
   value: 'restext://HuntExplanation_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:10433
 - type: 'assign'
@@ -46,30 +46,30 @@ nodes:
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:10437
     - type: 'link'
-      # ../en-US.restext:309 | "Click to return..."
-      label: 'restext://Common_305'
+      # ../en-US.restext:318 | "Click to return..."
+      label: 'restext://Common_314'
       target: 'Privatized' # ./00025-Privatized.mws.yaml
       snapshot: true
   - match: 19
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:10441
     - type: 'link'
-      # ../en-US.restext:309 | "Click to return..."
-      label: 'restext://Common_305'
+      # ../en-US.restext:318 | "Click to return..."
+      label: 'restext://Common_314'
       target: 'Liberal' # ./00026-Liberal.mws.yaml
       snapshot: true
   - match: 20
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:10445
     - type: 'link'
-      # ../en-US.restext:309 | "Click to return..."
-      label: 'restext://Common_305'
+      # ../en-US.restext:318 | "Click to return..."
+      label: 'restext://Common_314'
       target: 'Liberal2' # ./00050-Liberal2.mws.yaml
       snapshot: true
   default:
   # ../.source/FearoftheUnknown_Eng_v15.cs:10450
   - type: 'link'
-    # ../en-US.restext:309 | "Click to return..."
-    label: 'restext://Common_305'
+    # ../en-US.restext:318 | "Click to return..."
+    label: 'restext://Common_314'
     target: 'Liberal3' # ./00051-Liberal3.mws.yaml
     snapshot: true

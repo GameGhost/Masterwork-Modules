@@ -4,11 +4,11 @@ format: 'mws/0.4'
 passage_id: 'Creature'
 # ../en-US.restext:63 | "The Creature Re emerges"
 title: 'restext://Common_059'
-# ../en-US.restext:155 | "Early Years"
-subtitle: 'restext://Common_151'
+# ../en-US.restext:162 | "Early Years"
+subtitle: 'restext://Common_158'
 tags:
 - 'HUB'
-layout: 'hub'
+layout: 'hub_early'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:2963
 - type: 'assign'
@@ -21,8 +21,8 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2969
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:156 | "Accept"
-    okay: 'restext://Common_152'
+    # ../en-US.restext:163 | "Accept"
+    okay: 'restext://Common_159'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2973
     - type: 'image'
@@ -35,16 +35,16 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:2977
       - type: 'text'
-        # ../en-US.restext:459 | "Turn to page **4** of the..."
+        # ../en-US.restext:470 | "Turn to page **4** of the..."
         value: 'restext://Creature_003'
       else:
       # ../.source/FearoftheUnknown_Eng_v15.cs:2987
       - type: 'text'
-        # ../en-US.restext:458 | "Turn to page **5** of the..."
+        # ../en-US.restext:469 | "Turn to page **5** of the..."
         value: 'restext://Creature_002'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2994
     - type: 'text'
-      # ../en-US.restext:460 | " Retrieve the **Puppy** a..."
+      # ../en-US.restext:471 | " Retrieve the **Puppy** a..."
       value: 'restext://Creature_004'
     # ../.source/FearoftheUnknown_Eng_v15.cs:3013
     - type: 'conditional'
@@ -76,8 +76,8 @@ nodes:
             expr: 'tracker + 1'
     # ../.source/FearoftheUnknown_Eng_v15.cs:3026
     - type: 'text'
-      # ../en-US.restext:95 | "**{tracker}** and the {ic..."
-      value: 'restext://Common_091'
+      # ../en-US.restext:97 | "**{tracker}** and the {ic..."
+      value: 'restext://Common_093'
     # ../.source/FearoftheUnknown_Eng_v15.cs:3031
     - type: 'break'
     # ../.source/FearoftheUnknown_Eng_v15.cs:3032
@@ -86,8 +86,8 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:3034
       - type: 'text'
-        # ../en-US.restext:96 | "Then, since this is a 3 p..."
-        value: 'restext://Common_092'
+        # ../en-US.restext:98 | "Then, since this is a 3 p..."
+        value: 'restext://Common_094'
       # ../.source/FearoftheUnknown_Eng_v15.cs:3035
       - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3039
@@ -101,14 +101,14 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3055
   - type: 'text'
-    # ../en-US.restext:461 | "When taking the **Perform..."
+    # ../en-US.restext:472 | "When taking the **Perform..."
     value: 'restext://Creature_006'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3079
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3081
   - type: 'text'
-    # ../en-US.restext:462 | "However, if a player comp..."
+    # ../en-US.restext:473 | "However, if a player comp..."
     value: 'restext://Creature_007'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3082
   - type: 'link'
@@ -140,13 +140,13 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3108
 - type: 'section'
-  # ../en-US.restext:463 | "**The Asylum**"
+  # ../en-US.restext:474 | "**The Asylum**"
   title: 'restext://Creature_012'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3116
   - type: 'text'
-    # ../en-US.restext:464 | "The town has resolved to ..."
+    # ../en-US.restext:475 | "The town has resolved to ..."
     value: 'restext://Creature_013'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3120
 - type: 'break'
@@ -156,8 +156,24 @@ nodes:
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3130
-  - type: 'link'
+  - type: 'popup'
+    layout: 'end_of_round'
     # ../en-US.restext:69 | "Click here at the end of ..."
     label: 'restext://Common_065'
     target: 'AsylumOpps' # ./00145-AsylumOpps.mws.yaml
+    # ../en-US.restext:181 | "End of Round"
+    okay: 'restext://Common_177'
+    onclose:
+    - type: 'assign'
+      var: '_ProgressRound'
+      expr: '4'
     snapshot: true
+    content:
+    - type: 'text'
+      # ../en-US.restext:112 | "The Early Years of the Se..."
+      value: 'restext://Common_108'
+    - type: 'break'
+      style: 'paragraph'
+    - type: 'text'
+      # ../en-US.restext:182 | "Then, perform all Start o..."
+      value: 'restext://Common_178'

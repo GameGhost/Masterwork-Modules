@@ -10,7 +10,7 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:30650
   - type: 'text'
-    # ../en-US.restext:2227 | "**Merciful Heritage**"
+    # ../en-US.restext:2242 | "**Merciful Heritage**"
     value: 'restext://JailEvent1c_004'
   # ../.source/FearoftheUnknown_Eng_v15.cs:30652
   - type: 'break'
@@ -24,29 +24,29 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:30666
   - type: 'text'
-    # ../en-US.restext:2228 | "{warden} has made one exc..."
+    # ../en-US.restext:2243 | "{warden} has made one exc..."
     value: 'restext://JailEvent1c_005'
   # ../.source/FearoftheUnknown_Eng_v15.cs:30674
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:30679
   - type: 'text'
-    # ../en-US.restext:2229 | "**{asylumup} Rule**"
+    # ../en-US.restext:2244 | "**{asylumup} Rule**"
     value: 'restext://JailEvent1c_006'
   # ../.source/FearoftheUnknown_Eng_v15.cs:30682
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:30684
   - type: 'text'
-    # ../en-US.restext:2230 | "When a player with the {a..."
+    # ../en-US.restext:2245 | "When a player with the {a..."
     value: 'restext://JailEvent1c_007'
   # ../.source/FearoftheUnknown_Eng_v15.cs:30687
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:30689
   - type: 'link'
-    # ../en-US.restext:286 | "Click to continue..."
-    label: 'restext://Common_282'
+    # ../en-US.restext:295 | "Click to continue..."
+    label: 'restext://Common_291'
     target: 'EndtotheCount' # ./00273-EndtotheCount.mws.yaml
     snapshot: true
   else:
@@ -56,7 +56,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:30697
     - type: 'text'
-      # ../en-US.restext:2224 | "**A Sacrifice is Required**"
+      # ../en-US.restext:2239 | "**A Sacrifice is Required**"
       value: 'restext://JailEvent1c_001'
     # ../.source/FearoftheUnknown_Eng_v15.cs:30699
     - type: 'break'
@@ -70,7 +70,7 @@ nodes:
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:30713
     - type: 'text'
-      # ../en-US.restext:2225 | "What will I do with this ..."
+      # ../en-US.restext:2240 | "What will I do with this ..."
       value: 'restext://JailEvent1c_002'
     # ../.source/FearoftheUnknown_Eng_v15.cs:30716
     - type: 'break'
@@ -78,11 +78,11 @@ nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:30720
     - type: 'popup'
       layout: 'setup'
-      # ../en-US.restext:286 | "Click to continue..."
-      label: 'restext://Common_282'
+      # ../en-US.restext:295 | "Click to continue..."
+      label: 'restext://Common_291'
       target: 'EndtotheCount' # ./00273-EndtotheCount.mws.yaml
-      # ../en-US.restext:275 | "Close"
-      okay: 'restext://Common_271'
+      # ../en-US.restext:284 | "Close"
+      okay: 'restext://Common_280'
       snapshot: true
       header:
       # ../.source/FearoftheUnknown_Eng_v15.cs:30741
@@ -92,7 +92,7 @@ nodes:
       content:
       # ../.source/FearoftheUnknown_Eng_v15.cs:30744
       - type: 'text'
-        # ../en-US.restext:2226 | "All players return their ..."
+        # ../en-US.restext:2241 | "All players return their ..."
         value: 'restext://JailEvent1c_003'
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:30724

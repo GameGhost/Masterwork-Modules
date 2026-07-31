@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ATOW-Preparations'
-# ../en-US.restext:2097 | "Preparations"
+# ../en-US.restext:2111 | "Preparations"
 title: 'restext://ATOW_Preparations_001'
 tags:
 - 'Begins-Here'
@@ -56,34 +56,34 @@ nodes:
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:153 | "two"
-      expr: '"restext://Common_149"'
+      # ../en-US.restext:156 | "two"
+      expr: '"restext://Common_152"'
   - match: 3
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:154 | "three"
-      expr: '"restext://Common_150"'
+      # ../en-US.restext:157 | "three"
+      expr: '"restext://Common_153"'
   - match: 4
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:155 | "four"
-      expr: '"restext://Common_151"'
+      # ../en-US.restext:158 | "four"
+      expr: '"restext://Common_154"'
   - match: 5
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:156 | "five"
-      expr: '"restext://Common_152"'
+      # ../en-US.restext:159 | "five"
+      expr: '"restext://Common_155"'
   default:
   - type: 'assign'
     var: 'playtxt'
-    # ../en-US.restext:153 | "two"
-    expr: '"restext://Common_149"'
+    # ../en-US.restext:156 | "two"
+    expr: '"restext://Common_152"'
 # ../.source/ATimeofWar_Eng_v8.cs:25598
 - type: 'text'
-  # ../en-US.restext:2098 | "Complete the standard set..."
+  # ../en-US.restext:2112 | "Complete the standard set..."
   value: 'restext://ATOW_Preparations_002'
 # ../.source/ATimeofWar_Eng_v8.cs:25609
 - type: 'break'
@@ -97,14 +97,14 @@ nodes:
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:25619
 - type: 'text'
-  # ../en-US.restext:2099 | "Then, retrieve the **A Ti..."
+  # ../en-US.restext:2113 | "Then, retrieve the **A Ti..."
   value: 'restext://ATOW_Preparations_003'
 # ../.source/ATimeofWar_Eng_v8.cs:25628
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:25630
 - type: 'link'
-  # ../en-US.restext:183 | "Click here to continue..."
-  label: 'restext://Common_179'
+  # ../en-US.restext:186 | "Click here to continue..."
+  label: 'restext://Common_182'
   target: 'ForewordScen2' # ./00142-ForewordScen2.mws.yaml
   snapshot: true

@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ATOWSabotageNO'
-# ../en-US.restext:1785 | "Avoid Indulgence"
+# ../en-US.restext:1799 | "Avoid Indulgence"
 title: 'restext://ATOWSabotageNO_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:21681
 - type: 'text'
-  # ../en-US.restext:1786 | "Study was essential! Alas..."
+  # ../en-US.restext:1800 | "Study was essential! Alas..."
   value: 'restext://ATOWSabotageNO_002'
 # ../.source/ATimeofWar_Eng_v8.cs:21682
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:21684
 - type: 'text'
-  # ../en-US.restext:1787 | "There was no need for pom..."
+  # ../en-US.restext:1801 | "There was no need for pom..."
   value: 'restext://ATOWSabotageNO_003'
 # ../.source/ATimeofWar_Eng_v8.cs:21687
 - type: 'break'
@@ -26,8 +26,8 @@ nodes:
   # ../en-US.restext:24 | "Click to continue..."
   label: 'restext://Common_020'
   target: '${round == 7 ? "AMessenger" : "ResistEvent"}' # ./00022-AMessenger.mws.yaml, ./00034-ResistEvent.mws.yaml
-  # ../en-US.restext:182 | "Close"
-  okay: 'restext://Common_178'
+  # ../en-US.restext:185 | "Close"
+  okay: 'restext://Common_181'
   snapshot: true
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:21708
@@ -37,11 +37,11 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:21711
   - type: 'text'
-    # ../en-US.restext:1788 | "Gain **1 Knowledge cube o..."
+    # ../en-US.restext:1802 | "Gain **1 Knowledge cube o..."
     value: 'restext://ATOWSabotageNO_004'
   # ../.source/ATimeofWar_Eng_v8.cs:21717
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:21718
   - type: 'text'
-    # ../en-US.restext:1789 | "Gain **1 Compulsion**."
+    # ../en-US.restext:1803 | "Gain **1 Compulsion**."
     value: 'restext://ATOWSabotageNO_005'

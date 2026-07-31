@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Isolation3'
-# ../en-US.restext:124 | "Walled City"
-title: 'restext://Common_120'
-# ../en-US.restext:153 | "Late Years"
-subtitle: 'restext://Common_149'
+# ../en-US.restext:128 | "Walled City"
+title: 'restext://Common_124'
+# ../en-US.restext:159 | "Late Years"
+subtitle: 'restext://Common_155'
 tags:
 - 'HUB'
-layout: 'hub'
+layout: 'hub_late'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:6944
 - type: 'assign'
@@ -25,8 +25,8 @@ nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6952
     - type: 'popup'
       layout: 'setup'
-      # ../en-US.restext:156 | "Accept"
-      okay: 'restext://Common_152'
+      # ../en-US.restext:163 | "Accept"
+      okay: 'restext://Common_159'
       header:
       # ../.source/FearoftheUnknown_Eng_v15.cs:6956
       - type: 'image'
@@ -35,7 +35,7 @@ nodes:
       content:
       # ../.source/FearoftheUnknown_Eng_v15.cs:6958
       - type: 'text'
-        # ../en-US.restext:724 | "Turn to page **{dev}** of..."
+        # ../en-US.restext:739 | "Turn to page **{dev}** of..."
         value: 'restext://Isolation3_001'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6969
 - type: 'conditional'
@@ -43,25 +43,25 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6973
   - type: 'section'
-    # ../en-US.restext:125 | "{icon:storybooktoken} **V..."
-    title: 'restext://Common_121'
+    # ../en-US.restext:129 | "{icon:storybooktoken} **V..."
+    title: 'restext://Common_125'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6982
     - type: 'text'
-      # ../en-US.restext:126 | "As a registered citizen w..."
-      value: 'restext://Common_122'
+      # ../en-US.restext:130 | "As a registered citizen w..."
+      value: 'restext://Common_126'
     # ../.source/FearoftheUnknown_Eng_v15.cs:6984
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:6986
     - type: 'text'
-      # ../en-US.restext:127 | "You MUST place your **Sel..."
-      value: 'restext://Common_123'
+      # ../en-US.restext:131 | "You MUST place your **Sel..."
+      value: 'restext://Common_127'
     # ../.source/FearoftheUnknown_Eng_v15.cs:6992
     - type: 'link'
-      # ../en-US.restext:128 | "click here to complete ve..."
-      label: 'restext://Common_124'
+      # ../en-US.restext:132 | "click here to complete ve..."
+      label: 'restext://Common_128'
       target: 'IsoIdentificationSignIn' # ./00211-IsoIdentificationSignIn.mws.yaml
       snapshot: true
     # ../.source/FearoftheUnknown_Eng_v15.cs:6993
@@ -69,8 +69,8 @@ nodes:
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:6997
     - type: 'text'
-      # ../en-US.restext:129 | "_(If you have not verifie..."
-      value: 'restext://Common_125'
+      # ../en-US.restext:133 | "_(If you have not verifie..."
+      value: 'restext://Common_129'
   # ../.source/FearoftheUnknown_Eng_v15.cs:7005
   - type: 'break'
     style: 'paragraph'
@@ -95,18 +95,18 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7029
 - type: 'section'
-  # ../en-US.restext:115 | "{icon:storybooktoken} **B..."
-  title: 'restext://Common_111'
+  # ../en-US.restext:118 | "{icon:storybooktoken} **B..."
+  title: 'restext://Common_114'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7039
   - type: 'text'
-    # ../en-US.restext:116 | "Once per round, each play..."
-    value: 'restext://Common_112'
+    # ../en-US.restext:119 | "Once per round, each play..."
+    value: 'restext://Common_115'
   # ../.source/FearoftheUnknown_Eng_v15.cs:7059
   - type: 'link'
-    # ../en-US.restext:117 | "click here for the conseq..."
-    label: 'restext://Common_113'
+    # ../en-US.restext:120 | "click here for the conseq..."
+    label: 'restext://Common_116'
     target: 'SmugConsequence' # ./00090-SmugConsequence.mws.yaml
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:7060
@@ -116,8 +116,24 @@ nodes:
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:7064
-  - type: 'link'
-    # ../en-US.restext:118 | "Click here at the End of ..."
-    label: 'restext://Common_114'
+  - type: 'popup'
+    layout: 'end_of_round'
+    # ../en-US.restext:121 | "Click here at the End of ..."
+    label: 'restext://Common_117'
     target: 'IsolationCaravanResolve' # ./00241-IsolationCaravanResolve.mws.yaml
+    # ../en-US.restext:181 | "End of Round"
+    okay: 'restext://Common_177'
+    onclose:
+    - type: 'assign'
+      var: '_ProgressRound'
+      expr: '9'
     snapshot: true
+    content:
+    - type: 'text'
+      # ../en-US.restext:122 | "The Late Years of the Thi..."
+      value: 'restext://Common_118'
+    - type: 'break'
+      style: 'paragraph'
+    - type: 'text'
+      # ../en-US.restext:160 | "Perform any End of Round ..."
+      value: 'restext://Common_156'

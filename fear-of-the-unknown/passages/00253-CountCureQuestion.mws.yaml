@@ -16,13 +16,13 @@ nodes:
   # ../en-US.restext:46 | "Once you are ready, click..."
   label: 'restext://Common_042'
   layout: 'reveal'
-  # ../en-US.restext:275 | "Close"
-  cancel: 'restext://Common_271'
+  # ../en-US.restext:284 | "Close"
+  cancel: 'restext://Common_280'
   snapshot: true
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:28792
   - type: 'text'
-    # ../en-US.restext:2106 | "**To Remove A Curse**"
+    # ../en-US.restext:2121 | "**To Remove A Curse**"
     value: 'restext://CountCureQuestion_001'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28794
   - type: 'break'
@@ -36,21 +36,21 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28809
   - type: 'text'
-    # ../en-US.restext:2107 | "Before I returned to my c..."
+    # ../en-US.restext:2122 | "Before I returned to my c..."
     value: 'restext://CountCureQuestion_002'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28810
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28812
   - type: 'text'
-    # ../en-US.restext:2108 | "How he knew of my secret ..."
+    # ../en-US.restext:2123 | "How he knew of my secret ..."
     value: 'restext://CountCureQuestion_003'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28815
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28817
   - type: 'text'
-    # ../en-US.restext:2109 | "\"I have lived too many y..."
+    # ../en-US.restext:2124 | "\"I have lived too many y..."
     value: 'restext://CountCureQuestion_004'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28821
   - type: 'assign'
@@ -66,11 +66,11 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:28826
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:286 | "Click to continue..."
-    label: 'restext://Common_282'
+    # ../en-US.restext:295 | "Click to continue..."
+    label: 'restext://Common_291'
     target: '${round == 8 ? "Creature2" : "Creature3"}' # ./00158-Creature2.mws.yaml, ./00045-Creature3.mws.yaml
-    # ../en-US.restext:275 | "Close"
-    okay: 'restext://Common_271'
+    # ../en-US.restext:284 | "Close"
+    okay: 'restext://Common_280'
     snapshot: true
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:28746
@@ -80,12 +80,12 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:28748
     - type: 'text'
-      # ../en-US.restext:2110 | "Place the {icon:storybook..."
+      # ../en-US.restext:2125 | "Place the {icon:storybook..."
       value: 'restext://CountCureQuestion_005'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28757
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28759
     - type: 'text'
-      # ../en-US.restext:2111 | "At the End of this Genera..."
+      # ../en-US.restext:2126 | "At the End of this Genera..."
       value: 'restext://CountCureQuestion_006'

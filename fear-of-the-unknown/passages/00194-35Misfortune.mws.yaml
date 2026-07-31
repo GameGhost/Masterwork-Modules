@@ -2,34 +2,34 @@
 ---
 format: 'mws/0.4'
 passage_id: '35Misfortune'
-# ../en-US.restext:1617 | "Misfortune"
+# ../en-US.restext:1632 | "Misfortune"
 title: 'restext://_35Misfortune_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:22237
 - type: 'text'
-  # ../en-US.restext:356 | "**Brief Journal Entry -**..."
-  value: 'restext://Common_352'
+  # ../en-US.restext:366 | "**Brief Journal Entry -**..."
+  value: 'restext://Common_362'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22243
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22245
 - type: 'text'
-  # ../en-US.restext:357 | "Quick note:"
-  value: 'restext://Common_353'
+  # ../en-US.restext:367 | "Quick note:"
+  value: 'restext://Common_363'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22246
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22248
 - type: 'text'
-  # ../en-US.restext:1618 | "Today, I awoke to the unf..."
+  # ../en-US.restext:1633 | "Today, I awoke to the unf..."
   value: 'restext://_35Misfortune_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22249
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22251
 - type: 'text'
-  # ../en-US.restext:1619 | "Suspect foul play. Will r..."
+  # ../en-US.restext:1634 | "Suspect foul play. Will r..."
   value: 'restext://_35Misfortune_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22252
 - type: 'break'
@@ -37,11 +37,11 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:22256
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:309 | "Click to return..."
-  label: 'restext://Common_305'
+  # ../en-US.restext:318 | "Click to return..."
+  label: 'restext://Common_314'
   target: '${round == 4 ? "Foreign" : round == 5 ? "Foreign2" : "Foreign3"}' # ./00011-Foreign.mws.yaml, ./00039-Foreign2.mws.yaml, ./00040-Foreign3.mws.yaml
-  # ../en-US.restext:275 | "Close"
-  okay: 'restext://Common_271'
+  # ../en-US.restext:284 | "Close"
+  okay: 'restext://Common_280'
   snapshot: true
   header:
   # ../.source/FearoftheUnknown_Eng_v15.cs:22272
@@ -61,5 +61,5 @@ nodes:
   - type: 'break'
   # ../.source/FearoftheUnknown_Eng_v15.cs:22274
   - type: 'text'
-    # ../en-US.restext:1620 | "Immediately **lose 3VP** ..."
+    # ../en-US.restext:1635 | "Immediately **lose 3VP** ..."
     value: 'restext://_35Misfortune_004'

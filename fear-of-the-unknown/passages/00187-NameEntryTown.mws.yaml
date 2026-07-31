@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'NameEntryTown'
-# ../en-US.restext:1581 | "The Village"
+# ../en-US.restext:1596 | "The Village"
 title: 'restext://NameEntryTown_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:21792
 - type: 'text'
-  # ../en-US.restext:1582 | "Now that our given names ..."
+  # ../en-US.restext:1597 | "Now that our given names ..."
   value: 'restext://NameEntryTown_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21793
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21795
 - type: 'link'
-  # ../en-US.restext:1583 | "Click here to name the vi..."
+  # ../en-US.restext:1598 | "Click here to name the vi..."
   label: 'restext://NameEntryTown_003'
   target: 'NameEntryTownConfirm' # ./00188-NameEntryTownConfirm.mws.yaml
   snapshot: true

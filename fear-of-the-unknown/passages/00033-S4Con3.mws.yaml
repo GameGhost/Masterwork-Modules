@@ -2,14 +2,14 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S4Con3'
-# ../en-US.restext:629 | "Politics as Usual"
+# ../en-US.restext:640 | "Politics as Usual"
 title: 'restext://S4Con3_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:5267
 - type: 'text'
-  # ../en-US.restext:276 | "**Letter from {tempid} -** "
-  value: 'restext://Common_272'
+  # ../en-US.restext:285 | "**Letter from {tempid} -** "
+  value: 'restext://Common_281'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5273
 - type: 'include_passage'
   target: 'date1a' # ./00207-date1a.mws.yaml
@@ -18,14 +18,14 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5278
 - type: 'text'
-  # ../en-US.restext:630 | "I will not carry on this ..."
+  # ../en-US.restext:641 | "I will not carry on this ..."
   value: 'restext://S4Con3_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5282
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5284
 - type: 'text'
-  # ../en-US.restext:631 | "It does not matter. The p..."
+  # ../en-US.restext:642 | "It does not matter. The p..."
   value: 'restext://S4Con3_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5287
 - type: 'assign'
@@ -36,11 +36,11 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5292
 - type: 'popup'
-  # ../en-US.restext:286 | "Click to continue..."
-  label: 'restext://Common_282'
+  # ../en-US.restext:295 | "Click to continue..."
+  label: 'restext://Common_291'
   layout: 'reveal'
-  # ../en-US.restext:275 | "Close"
-  cancel: 'restext://Common_271'
+  # ../en-US.restext:284 | "Close"
+  cancel: 'restext://Common_280'
   snapshot: true
   header:
   # ../.source/FearoftheUnknown_Eng_v15.cs:5318
@@ -57,8 +57,8 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:277 | "Continue"
-      label: 'restext://Common_273'
+      # ../en-US.restext:286 | "Continue"
+      label: 'restext://Common_282'
       target: 'Isolation2' # ./00043-Isolation2.mws.yaml
       snapshot: true
     else:
@@ -67,8 +67,8 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:277 | "Continue"
-      label: 'restext://Common_273'
+      # ../en-US.restext:286 | "Continue"
+      label: 'restext://Common_282'
       target: 'Isolation3' # ./00044-Isolation3.mws.yaml
       snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:5319
@@ -80,10 +80,10 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:5323
     - type: 'text'
-      # ../en-US.restext:279 | "Nothing happens."
-      value: 'restext://Common_275'
+      # ../en-US.restext:288 | "Nothing happens."
+      value: 'restext://Common_284'
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:5328
     - type: 'text'
-      # ../en-US.restext:632 | "Gain 1 {icon:creepy_icon}..."
+      # ../en-US.restext:643 | "Gain 1 {icon:creepy_icon}..."
       value: 'restext://S4Con3_004'

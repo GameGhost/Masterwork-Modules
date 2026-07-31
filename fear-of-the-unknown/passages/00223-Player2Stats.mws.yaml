@@ -12,13 +12,13 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:228 | "Please enter the VP of yo..."
-      value: 'restext://Common_224'
+      # ../en-US.restext:237 | "Please enter the VP of yo..."
+      value: 'restext://Common_233'
     - type: 'input'
       label: ''
       var: 'agiB'
-    # ../en-US.restext:277 | "Continue"
-    okay: 'restext://Common_273'
+    # ../en-US.restext:286 | "Continue"
+    okay: 'restext://Common_282'
     onclose:
     - type: 'assign'
       var: 'agiB_submitted'
@@ -29,21 +29,21 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25764
 - type: 'text'
-  # ../en-US.restext:229 | "**Agility Confirmed**"
-  value: 'restext://Common_225'
+  # ../en-US.restext:238 | "**Agility Confirmed**"
+  value: 'restext://Common_234'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25766
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25770
 - type: 'text'
-  # ../en-US.restext:1859 | "**{agiB}** is locked in a..."
+  # ../en-US.restext:1874 | "**{agiB}** is locked in a..."
   value: 'restext://Player2Stats_001'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25774
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25776
 - type: 'link'
-  # ../en-US.restext:286 | "Click to continue..."
-  label: 'restext://Common_282'
+  # ../en-US.restext:295 | "Click to continue..."
+  label: 'restext://Common_291'
   target: 'Player2Statsb' # ./00294-Player2Statsb.mws.yaml
   snapshot: true

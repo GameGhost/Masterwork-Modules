@@ -8,14 +8,14 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:16218
 - type: 'text'
-  # ../en-US.restext:1297 | "**Destiny Awaits**Your ch..."
+  # ../en-US.restext:1312 | "**Destiny Awaits**Your ch..."
   value: 'restext://FPYesHub_001'
 # ../.source/FearoftheUnknown_Eng_v15.cs:16223
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:16227
 - type: 'text'
-  # ../en-US.restext:1298 | "**Immediately Gain 1VP.**"
+  # ../en-US.restext:1313 | "**Immediately Gain 1VP.**"
   value: 'restext://FPYesHub_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:16231
 - type: 'assign'
@@ -32,22 +32,22 @@ nodes:
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:16234
     - type: 'link'
-      # ../en-US.restext:309 | "Click to return..."
-      label: 'restext://Common_305'
+      # ../en-US.restext:318 | "Click to return..."
+      label: 'restext://Common_314'
       target: 'Mania' # ./00005-Mania.mws.yaml
       snapshot: true
   - match: 2
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:16238
     - type: 'link'
-      # ../en-US.restext:309 | "Click to return..."
-      label: 'restext://Common_305'
+      # ../en-US.restext:318 | "Click to return..."
+      label: 'restext://Common_314'
       target: 'Mania2' # ./00036-Mania2.mws.yaml
       snapshot: true
   default:
   # ../.source/FearoftheUnknown_Eng_v15.cs:16242
   - type: 'link'
-    # ../en-US.restext:309 | "Click to return..."
-    label: 'restext://Common_305'
+    # ../en-US.restext:318 | "Click to return..."
+    label: 'restext://Common_314'
     target: 'Mania3' # ./00037-Mania3.mws.yaml
     snapshot: true

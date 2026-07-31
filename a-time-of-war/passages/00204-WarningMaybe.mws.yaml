@@ -2,27 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: 'WarningMaybe'
-# ../en-US.restext:1760 | "One Last Opportunity"
+# ../en-US.restext:1774 | "One Last Opportunity"
 title: 'restext://WarningMaybe_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:21112
 - type: 'text'
-  # ../en-US.restext:1761 | "In the weeks previous, I ..."
+  # ../en-US.restext:1775 | "In the weeks previous, I ..."
   value: 'restext://WarningMaybe_002'
 # ../.source/ATimeofWar_Eng_v8.cs:21113
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:21115
 - type: 'text'
-  # ../en-US.restext:1762 | "Things were about to chan..."
+  # ../en-US.restext:1776 | "Things were about to chan..."
   value: 'restext://WarningMaybe_003'
 # ../.source/ATimeofWar_Eng_v8.cs:21117
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:21121
 - type: 'text'
-  # ../en-US.restext:1763 | "**WARNING: You will not b..."
+  # ../en-US.restext:1777 | "**WARNING: You will not b..."
   value: 'restext://WarningMaybe_004'
 # ../.source/ATimeofWar_Eng_v8.cs:21128
 - type: 'break'
@@ -33,8 +33,8 @@ nodes:
   # ../en-US.restext:24 | "Click to continue..."
   label: 'restext://Common_020'
   target: 'Warning2' # ./00056-Warning2.mws.yaml
-  # ../en-US.restext:182 | "Close"
-  okay: 'restext://Common_178'
+  # ../en-US.restext:185 | "Close"
+  okay: 'restext://Common_181'
   snapshot: true
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:21148
@@ -44,5 +44,5 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:21151
   - type: 'text'
-    # ../en-US.restext:1764 | "Each player may decide to..."
+    # ../en-US.restext:1778 | "Each player may decide to..."
     value: 'restext://WarningMaybe_005'

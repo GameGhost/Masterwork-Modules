@@ -10,33 +10,33 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:27601
   - type: 'text'
-    # ../en-US.restext:2033 | "**Neglected by the Caravan**"
+    # ../en-US.restext:2048 | "**Neglected by the Caravan**"
     value: 'restext://IsolationCaravanResolve_001'
   # ../.source/FearoftheUnknown_Eng_v15.cs:27603
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:27607
   - type: 'text'
-    # ../en-US.restext:119 | "**Newsprint - {newspaper}..."
-    value: 'restext://Common_115'
+    # ../en-US.restext:123 | "**Newsprint - {newspaper}..."
+    value: 'restext://Common_119'
   # ../.source/FearoftheUnknown_Eng_v15.cs:27617
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:27619
   - type: 'text'
-    # ../en-US.restext:120 | "{newspaper} regrets to re..."
-    value: 'restext://Common_116'
+    # ../en-US.restext:124 | "{newspaper} regrets to re..."
+    value: 'restext://Common_120'
   # ../.source/FearoftheUnknown_Eng_v15.cs:27627
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:27631
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:286 | "Click to continue..."
-    label: 'restext://Common_282'
+    # ../en-US.restext:295 | "Click to continue..."
+    label: 'restext://Common_291'
     target: 'IsoVerify' # ./00282-IsoVerify.mws.yaml
-    # ../en-US.restext:275 | "Close"
-    okay: 'restext://Common_271'
+    # ../en-US.restext:284 | "Close"
+    okay: 'restext://Common_280'
     snapshot: true
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:27651
@@ -46,8 +46,8 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:27654
     - type: 'text'
-      # ../en-US.restext:121 | "Any player who has a **Ma..."
-      value: 'restext://Common_117'
+      # ../en-US.restext:125 | "Any player who has a **Ma..."
+      value: 'restext://Common_121'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:27635
   - type: 'goto'

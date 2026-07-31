@@ -2,8 +2,8 @@
 ---
 format: 'mws/0.4'
 passage_id: 'LiberalEventGood'
-# ../en-US.restext:140 | "The Creature Intervenes"
-title: 'restext://Common_136'
+# ../en-US.restext:145 | "The Creature Intervenes"
+title: 'restext://Common_141'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:29118
@@ -15,32 +15,32 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29129
 - type: 'text'
-  # ../en-US.restext:2128 | "Perhaps the world has som..."
+  # ../en-US.restext:2143 | "Perhaps the world has som..."
   value: 'restext://LiberalEventGood_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29131
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29133
 - type: 'text'
-  # ../en-US.restext:2129 | "All I received was a brie..."
+  # ../en-US.restext:2144 | "All I received was a brie..."
   value: 'restext://LiberalEventGood_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29136
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29138
 - type: 'text'
-  # ../en-US.restext:2130 | "He signed his letter only..."
+  # ../en-US.restext:2145 | "He signed his letter only..."
   value: 'restext://LiberalEventGood_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29145
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29149
 - type: 'popup'
-  # ../en-US.restext:286 | "Click to continue..."
-  label: 'restext://Common_282'
+  # ../en-US.restext:295 | "Click to continue..."
+  label: 'restext://Common_291'
   layout: 'reveal'
-  # ../en-US.restext:275 | "Close"
-  cancel: 'restext://Common_271'
+  # ../en-US.restext:284 | "Close"
+  cancel: 'restext://Common_280'
   snapshot: true
   header:
   # ../.source/FearoftheUnknown_Eng_v15.cs:29189
@@ -61,8 +61,8 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:277 | "Continue"
-      label: 'restext://Common_273'
+      # ../en-US.restext:286 | "Continue"
+      label: 'restext://Common_282'
       target: 'LiberalEventA' # ./00086-LiberalEventA.mws.yaml
       snapshot: true
     else:
@@ -71,8 +71,8 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:277 | "Continue"
-      label: 'restext://Common_273'
+      # ../en-US.restext:286 | "Continue"
+      label: 'restext://Common_282'
       target: 'LiberalEventB' # ./00087-LiberalEventB.mws.yaml
       snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:29190
@@ -80,5 +80,5 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:29192
   - type: 'text'
-    # ../en-US.restext:2131 | "Any player who offered mo..."
+    # ../en-US.restext:2146 | "Any player who offered mo..."
     value: 'restext://LiberalEventGood_005'

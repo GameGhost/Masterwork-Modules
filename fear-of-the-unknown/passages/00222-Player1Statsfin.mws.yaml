@@ -12,13 +12,13 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:234 | "Please enter the epic nam..."
-      value: 'restext://Common_230'
+      # ../en-US.restext:243 | "Please enter the epic nam..."
+      value: 'restext://Common_239'
     - type: 'input'
       label: ''
       var: 'warriorA'
-    # ../en-US.restext:277 | "Continue"
-    okay: 'restext://Common_273'
+    # ../en-US.restext:286 | "Continue"
+    okay: 'restext://Common_282'
     onclose:
     - type: 'assign'
       var: 'warriorA_submitted'
@@ -37,51 +37,51 @@ nodes:
     expr: 'warriorA.replace("_1", "")'
   # ../.source/FearoftheUnknown_Eng_v15.cs:25695
   - type: 'text'
-    # ../en-US.restext:1853 | "**{_rpl_Player1Statsfin_0}**"
+    # ../en-US.restext:1868 | "**{_rpl_Player1Statsfin_0}**"
     value: 'restext://Player1Statsfin_002'
     lets:
     - '_rpl_Player1Statsfin_0'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25696
 - type: 'text'
-  # ../en-US.restext:235 | " **Complete**"
-  value: 'restext://Common_231'
+  # ../en-US.restext:244 | " **Complete**"
+  value: 'restext://Common_240'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25699
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25701
 - type: 'text'
-  # ../en-US.restext:1854 | "Agility: **{agiA}**"
+  # ../en-US.restext:1869 | "Agility: **{agiA}**"
   value: 'restext://Player1Statsfin_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25706
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25707
 - type: 'text'
-  # ../en-US.restext:1855 | "Strength: **{strA}**"
+  # ../en-US.restext:1870 | "Strength: **{strA}**"
   value: 'restext://Player1Statsfin_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25712
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25713
 - type: 'text'
-  # ../en-US.restext:1856 | "Life: **{hitA}**"
+  # ../en-US.restext:1871 | "Life: **{hitA}**"
   value: 'restext://Player1Statsfin_006'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25718
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25722
 - type: 'text'
-  # ../en-US.restext:236 | "**You are ready for a tri..."
-  value: 'restext://Common_232'
+  # ../en-US.restext:245 | "**You are ready for a tri..."
+  value: 'restext://Common_241'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25724
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25726
 - type: 'text'
-  # ../en-US.restext:237 | "If this is correct, please "
-  value: 'restext://Common_233'
+  # ../en-US.restext:246 | "If this is correct, please "
+  value: 'restext://Common_242'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25727
 - type: 'link'
-  # ../en-US.restext:238 | "click to continue..."
-  label: 'restext://Common_234'
+  # ../en-US.restext:247 | "click to continue..."
+  label: 'restext://Common_243'
   target: 'Player2StatEntry' # ./00293-Player2StatEntry.mws.yaml
   snapshot: true
 # ../.source/FearoftheUnknown_Eng_v15.cs:25728
@@ -89,11 +89,11 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25731
 - type: 'text'
-  # ../en-US.restext:239 | "If this is in error, please "
-  value: 'restext://Common_235'
+  # ../en-US.restext:248 | "If this is in error, please "
+  value: 'restext://Common_244'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25732
 - type: 'link'
-  # ../en-US.restext:240 | "return to the start..."
-  label: 'restext://Common_236'
+  # ../en-US.restext:249 | "return to the start..."
+  label: 'restext://Common_245'
   target: 'Player1StatEntry' # ./00292-Player1StatEntry.mws.yaml
   snapshot: true

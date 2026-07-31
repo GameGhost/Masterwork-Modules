@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TakeSides3'
-# ../en-US.restext:209 | "TAKING SIDES"
-title: 'restext://Common_205'
-# ../en-US.restext:207 | "Late Years"
-subtitle: 'restext://Common_203'
+# ../en-US.restext:213 | "TAKING SIDES"
+title: 'restext://Common_209'
+# ../en-US.restext:211 | "Late Years"
+subtitle: 'restext://Common_207'
 tags:
 - 'HUB'
-layout: 'hub'
+layout: 'hub_late'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:2065
 - type: 'assign'
@@ -21,8 +21,8 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:2071
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:211 | "Accept"
-    okay: 'restext://Common_207'
+    # ../en-US.restext:215 | "Accept"
+    okay: 'restext://Common_211'
     header:
     # ../.source/ATimeofWar_Eng_v8.cs:2075
     - type: 'image'
@@ -31,14 +31,14 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:2077
     - type: 'text'
-      # ../en-US.restext:353 | "Turn to page **2** of the..."
+      # ../en-US.restext:363 | "Turn to page **2** of the..."
       value: 'restext://TakeSides3_003'
     # ../.source/ATimeofWar_Eng_v8.cs:2083
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:2085
     - type: 'text'
-      # ../en-US.restext:354 | "Each player takes a Caret..."
+      # ../en-US.restext:364 | "Each player takes a Caret..."
       value: 'restext://TakeSides3_004'
   # ../.source/ATimeofWar_Eng_v8.cs:2096
   - type: 'break'
@@ -49,13 +49,13 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:2102
     - type: 'section'
-      # ../en-US.restext:208 | "**Military Demands**"
-      title: 'restext://Common_204'
+      # ../en-US.restext:212 | "**Military Demands**"
+      title: 'restext://Common_208'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:2110
       - type: 'text'
-        # ../en-US.restext:358 | "Before the end of the Gen..."
+        # ../en-US.restext:368 | "Before the end of the Gen..."
         value: 'restext://TakeSides3_009'
     # ../.source/ATimeofWar_Eng_v8.cs:2119
     - type: 'break'
@@ -63,27 +63,27 @@ nodes:
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:2127
     - type: 'section'
-      # ../en-US.restext:355 | "**Military Service**"
+      # ../en-US.restext:365 | "**Military Service**"
       title: 'restext://TakeSides3_005'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:2135
       - type: 'text'
-        # ../en-US.restext:356 | "Before the end of the Gen..."
+        # ../en-US.restext:366 | "Before the end of the Gen..."
         value: 'restext://TakeSides3_006'
       # ../.source/ATimeofWar_Eng_v8.cs:2143
       - type: 'break'
         style: 'paragraph'
       # ../.source/ATimeofWar_Eng_v8.cs:2145
       - type: 'text'
-        # ../en-US.restext:357 | "If your Caretaker piece r..."
+        # ../en-US.restext:367 | "If your Caretaker piece r..."
         value: 'restext://TakeSides3_007'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:2156
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:211 | "Accept"
-    okay: 'restext://Common_207'
+    # ../en-US.restext:215 | "Accept"
+    okay: 'restext://Common_211'
     header:
     # ../.source/ATimeofWar_Eng_v8.cs:2160
     - type: 'image'
@@ -92,7 +92,7 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:2162
     - type: 'text'
-      # ../en-US.restext:352 | "Turn to page **3** of the..."
+      # ../en-US.restext:362 | "Turn to page **3** of the..."
       value: 'restext://TakeSides3_002'
 # ../.source/ATimeofWar_Eng_v8.cs:2170
 - type: 'break'
@@ -105,13 +105,13 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:2176
     - type: 'section'
-      # ../en-US.restext:204 | "**Knowledge Bonus**"
-      title: 'restext://Common_200'
+      # ../en-US.restext:207 | "**Knowledge Bonus**"
+      title: 'restext://Common_203'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:2186
       - type: 'text'
-        # ../en-US.restext:359 | "At the End of the Generat..."
+        # ../en-US.restext:369 | "At the End of the Generat..."
         value: 'restext://TakeSides3_010'
     # ../.source/ATimeofWar_Eng_v8.cs:2189
     - type: 'break'
@@ -119,13 +119,13 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:2196
     - type: 'section'
-      # ../en-US.restext:205 | "**Ingredient Bonus**"
-      title: 'restext://Common_201'
+      # ../en-US.restext:208 | "**Ingredient Bonus**"
+      title: 'restext://Common_204'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:2205
       - type: 'text'
-        # ../en-US.restext:360 | "At the End of the Generat..."
+        # ../en-US.restext:370 | "At the End of the Generat..."
         value: 'restext://TakeSides3_011'
     # ../.source/ATimeofWar_Eng_v8.cs:2208
     - type: 'break'
@@ -133,13 +133,13 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:2215
     - type: 'section'
-      # ../en-US.restext:206 | "**Wealth Bonus**"
-      title: 'restext://Common_202'
+      # ../en-US.restext:209 | "**Wealth Bonus**"
+      title: 'restext://Common_205'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:2224
       - type: 'text'
-        # ../en-US.restext:361 | "At the End of the Generat..."
+        # ../en-US.restext:371 | "At the End of the Generat..."
         value: 'restext://TakeSides3_012'
     # ../.source/ATimeofWar_Eng_v8.cs:2227
     - type: 'break'
@@ -151,7 +151,7 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:2236
   - type: 'link'
-    # ../en-US.restext:362 | "Click here at the End of ..."
+    # ../en-US.restext:372 | "Click here at the End of ..."
     label: 'restext://TakeSides3_013'
     snapshot: true
     onclick:
@@ -175,6 +175,10 @@ nodes:
           - type: 'assign'
             var: 'war'
             expr: '2'
+    # ../.source/ATimeofWar_Eng_v8.cs:2257
+    - type: 'assign'
+      var: '_ProgressRound'
+      expr: '3'
     # ../.source/ATimeofWar_Eng_v8.cs:2257
     - type: 'conditional'
       if: 'barracks != "yes"'

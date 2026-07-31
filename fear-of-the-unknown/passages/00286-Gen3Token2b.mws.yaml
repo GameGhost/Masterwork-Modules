@@ -2,14 +2,14 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Gen3Token2b'
-# ../en-US.restext:2338 | "Rejecting My Fate"
+# ../en-US.restext:2353 | "Rejecting My Fate"
 title: 'restext://Gen3Token2b_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:31845
 - type: 'text'
-  # ../en-US.restext:110 | "**Letter from {tempid} - _**"
-  value: 'restext://Common_106'
+  # ../en-US.restext:113 | "**Letter from {tempid} - _**"
+  value: 'restext://Common_109'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31849
 - type: 'include_passage'
   target: 'date1a' # ./00207-date1a.mws.yaml
@@ -18,20 +18,20 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31854
 - type: 'text'
-  # ../en-US.restext:2339 | "Yes. For too long I have ..."
+  # ../en-US.restext:2354 | "Yes. For too long I have ..."
   value: 'restext://Gen3Token2b_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31860
 - type: 'let'
   var: '_rnd_Gen3Token2b_0'
-  # ../en-US.restext:2340 | Gen3Token2b_003 | "I will allow my thoughts ..."
-  # ../en-US.restext:2341 | Gen3Token2b_004 | "I will allow the seed of ..."
+  # ../en-US.restext:2355 | Gen3Token2b_003 | "I will allow my thoughts ..."
+  # ../en-US.restext:2356 | Gen3Token2b_004 | "I will allow the seed of ..."
   expr: '["restext://Gen3Token2b_003", "restext://Gen3Token2b_004"].shuffled("Gen3Token2b_0")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31857
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31859
 - type: 'text'
-  # ../en-US.restext:2342 | "My mind is made up. {_rnd..."
+  # ../en-US.restext:2357 | "My mind is made up. {_rnd..."
   value: 'restext://Gen3Token2b_005'
   lets:
   - '_rnd_Gen3Token2b_0'
@@ -40,11 +40,11 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31869
 - type: 'popup'
-  # ../en-US.restext:309 | "Click to return..."
-  label: 'restext://Common_305'
+  # ../en-US.restext:318 | "Click to return..."
+  label: 'restext://Common_314'
   layout: 'reveal'
-  # ../en-US.restext:275 | "Close"
-  cancel: 'restext://Common_271'
+  # ../en-US.restext:284 | "Close"
+  cancel: 'restext://Common_280'
   snapshot: true
   header:
   # ../.source/FearoftheUnknown_Eng_v15.cs:31933
@@ -63,8 +63,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:277 | "Continue"
-        label: 'restext://Common_273'
+        # ../en-US.restext:286 | "Continue"
+        label: 'restext://Common_282'
         target: 'Isolation' # ./00019-Isolation.mws.yaml
         snapshot: true
     - match: 11
@@ -74,8 +74,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:277 | "Continue"
-        label: 'restext://Common_273'
+        # ../en-US.restext:286 | "Continue"
+        label: 'restext://Common_282'
         target: 'Isolation2' # ./00043-Isolation2.mws.yaml
         snapshot: true
     - match: 12
@@ -85,8 +85,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:277 | "Continue"
-        label: 'restext://Common_273'
+        # ../en-US.restext:286 | "Continue"
+        label: 'restext://Common_282'
         target: 'Isolation3' # ./00044-Isolation3.mws.yaml
         snapshot: true
     - match: 13
@@ -96,8 +96,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:277 | "Continue"
-        label: 'restext://Common_273'
+        # ../en-US.restext:286 | "Continue"
+        label: 'restext://Common_282'
         target: 'Tension' # ./00020-Tension.mws.yaml
         snapshot: true
     - match: 14
@@ -107,8 +107,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:277 | "Continue"
-        label: 'restext://Common_273'
+        # ../en-US.restext:286 | "Continue"
+        label: 'restext://Common_282'
         target: 'Tension2' # ./00041-Tension2.mws.yaml
         snapshot: true
     - match: 15
@@ -118,8 +118,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:277 | "Continue"
-        label: 'restext://Common_273'
+        # ../en-US.restext:286 | "Continue"
+        label: 'restext://Common_282'
         target: 'Tension3' # ./00127-Tension3.mws.yaml
         snapshot: true
     - match: 16
@@ -129,8 +129,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:277 | "Continue"
-        label: 'restext://Common_273'
+        # ../en-US.restext:286 | "Continue"
+        label: 'restext://Common_282'
         target: 'Privatized' # ./00025-Privatized.mws.yaml
         snapshot: true
     - match: 17
@@ -140,8 +140,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:277 | "Continue"
-        label: 'restext://Common_273'
+        # ../en-US.restext:286 | "Continue"
+        label: 'restext://Common_282'
         target: 'Privatized2' # ./00047-Privatized2.mws.yaml
         snapshot: true
     - match: 18
@@ -151,8 +151,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:277 | "Continue"
-        label: 'restext://Common_273'
+        # ../en-US.restext:286 | "Continue"
+        label: 'restext://Common_282'
         target: 'Privatized3' # ./00048-Privatized3.mws.yaml
         snapshot: true
     - match: 19
@@ -162,8 +162,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:277 | "Continue"
-        label: 'restext://Common_273'
+        # ../en-US.restext:286 | "Continue"
+        label: 'restext://Common_282'
         target: 'Liberal' # ./00026-Liberal.mws.yaml
         snapshot: true
     - match: 20
@@ -173,8 +173,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:277 | "Continue"
-        label: 'restext://Common_273'
+        # ../en-US.restext:286 | "Continue"
+        label: 'restext://Common_282'
         target: 'Liberal2' # ./00050-Liberal2.mws.yaml
         snapshot: true
     default:
@@ -183,8 +183,8 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:277 | "Continue"
-      label: 'restext://Common_273'
+      # ../en-US.restext:286 | "Continue"
+      label: 'restext://Common_282'
       target: 'Liberal3' # ./00051-Liberal3.mws.yaml
       snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:31934
@@ -192,12 +192,12 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:31936
   - type: 'text'
-    # ../en-US.restext:2343 | "Discard your **Obsession*..."
+    # ../en-US.restext:2358 | "Discard your **Obsession*..."
     value: 'restext://Gen3Token2b_006'
   # ../.source/FearoftheUnknown_Eng_v15.cs:31943
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:31945
   - type: 'text'
-    # ../en-US.restext:2344 | "Draw **4 Compulsion** cards."
+    # ../en-US.restext:2359 | "Draw **4 Compulsion** cards."
     value: 'restext://Gen3Token2b_007'

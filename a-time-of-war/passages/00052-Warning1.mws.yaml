@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Warning1'
-# ../en-US.restext:635 | "Peaceful Return"
+# ../en-US.restext:649 | "Peaceful Return"
 title: 'restext://Warning1_001'
-# ../en-US.restext:210 | "Early Years"
-subtitle: 'restext://Common_206'
+# ../en-US.restext:214 | "Early Years"
+subtitle: 'restext://Common_210'
 tags:
 - 'HUB'
-layout: 'hub'
+layout: 'hub_early'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:6794
 - type: 'assign'
@@ -21,8 +21,8 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:6800
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:211 | "Accept"
-    okay: 'restext://Common_207'
+    # ../en-US.restext:215 | "Accept"
+    okay: 'restext://Common_211'
     header:
     # ../.source/ATimeofWar_Eng_v8.cs:6804
     - type: 'image'
@@ -31,8 +31,8 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:6806
     - type: 'text'
-      # ../en-US.restext:240 | "Turn to page **16** of th..."
-      value: 'restext://Common_236'
+      # ../en-US.restext:248 | "Turn to page **16** of th..."
+      value: 'restext://Common_244'
     # ../.source/ATimeofWar_Eng_v8.cs:6812
     - type: 'conditional'
       if: 'players == 3'
@@ -41,8 +41,8 @@ nodes:
       - type: 'break'
       # ../.source/ATimeofWar_Eng_v8.cs:6815
       - type: 'text'
-        # ../en-US.restext:230 | "Then, since this is a 3 p..."
-        value: 'restext://Common_226'
+        # ../en-US.restext:238 | "Then, since this is a 3 p..."
+        value: 'restext://Common_234'
 # ../.source/ATimeofWar_Eng_v8.cs:6819
 - type: 'break'
   style: 'paragraph'
@@ -92,8 +92,24 @@ nodes:
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:6880
-  - type: 'link'
-    # ../en-US.restext:217 | "Click here at the end of ..."
-    label: 'restext://Common_213'
+  - type: 'popup'
+    layout: 'end_of_round'
+    # ../en-US.restext:221 | "Click here at the end of ..."
+    label: 'restext://Common_217'
     target: 'WarningEvent' # ./00053-WarningEvent.mws.yaml
+    # ../en-US.restext:222 | "End of Round"
+    okay: 'restext://Common_218'
+    onclose:
+    - type: 'assign'
+      var: '_ProgressRound'
+      expr: '7'
     snapshot: true
+    content:
+    - type: 'text'
+      # ../en-US.restext:129 | "The Early Years of the Th..."
+      value: 'restext://Common_125'
+    - type: 'break'
+      style: 'paragraph'
+    - type: 'text'
+      # ../en-US.restext:223 | "Then, perform all Start o..."
+      value: 'restext://Common_219'

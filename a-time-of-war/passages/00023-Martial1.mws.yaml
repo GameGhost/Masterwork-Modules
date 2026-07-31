@@ -4,11 +4,11 @@ format: 'mws/0.4'
 passage_id: 'Martial1'
 # ../en-US.restext:61 | "Martial Law"
 title: 'restext://Common_057'
-# ../en-US.restext:210 | "Early Years"
-subtitle: 'restext://Common_206'
+# ../en-US.restext:214 | "Early Years"
+subtitle: 'restext://Common_210'
 tags:
 - 'HUB'
-layout: 'hub'
+layout: 'hub_early'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:3631
 - type: 'assign'
@@ -21,8 +21,8 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:3638
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:211 | "Accept"
-    okay: 'restext://Common_207'
+    # ../en-US.restext:215 | "Accept"
+    okay: 'restext://Common_211'
     header:
     # ../.source/ATimeofWar_Eng_v8.cs:3642
     - type: 'image'
@@ -31,7 +31,7 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:3644
     - type: 'text'
-      # ../en-US.restext:463 | "Turn to page **4** of the..."
+      # ../en-US.restext:474 | "Turn to page **4** of the..."
       value: 'restext://Martial1_002'
     # ../.source/ATimeofWar_Eng_v8.cs:3655
     - type: 'break'
@@ -77,8 +77,8 @@ nodes:
       - type: 'break'
       # ../.source/ATimeofWar_Eng_v8.cs:3679
       - type: 'text'
-        # ../en-US.restext:230 | "Then, since this is a 3 p..."
-        value: 'restext://Common_226'
+        # ../en-US.restext:238 | "Then, since this is a 3 p..."
+        value: 'restext://Common_234'
   # ../.source/ATimeofWar_Eng_v8.cs:3683
   - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:3685
@@ -91,7 +91,7 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:3696
   - type: 'text'
-    # ../en-US.restext:464 | "The {warloser} are desper..."
+    # ../en-US.restext:475 | "The {warloser} are desper..."
     value: 'restext://Martial1_006'
   # ../.source/ATimeofWar_Eng_v8.cs:3711
   - type: 'conditional'
@@ -100,16 +100,16 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:3715
     - type: 'text'
-      # ../en-US.restext:466 | "**gain a Knowledge of you..."
+      # ../en-US.restext:477 | "**gain a Knowledge of you..."
       value: 'restext://Martial1_008'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:3723
     - type: 'text'
-      # ../en-US.restext:465 | "**gain $2 from the supply** "
+      # ../en-US.restext:476 | "**gain $2 from the supply** "
       value: 'restext://Martial1_007'
   # ../.source/ATimeofWar_Eng_v8.cs:3727
   - type: 'text'
-    # ../en-US.restext:467 | "as a gift from the {warloser}."
+    # ../en-US.restext:478 | "as a gift from the {warloser}."
     value: 'restext://Martial1_009'
 # ../.source/ATimeofWar_Eng_v8.cs:3731
 - type: 'break'
@@ -179,7 +179,7 @@ nodes:
         style: 'paragraph'
       # ../.source/ATimeofWar_Eng_v8.cs:3801
       - type: 'text'
-        # ../en-US.restext:468 | "When placing a piece on t..."
+        # ../en-US.restext:479 | "When placing a piece on t..."
         value: 'restext://Martial1_018'
     # ../.source/ATimeofWar_Eng_v8.cs:3807
     - type: 'break'
@@ -206,11 +206,11 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:3831
   - type: 'popup'
     layout: 'end_of_generation'
-    # ../en-US.restext:217 | "Click here at the end of ..."
-    label: 'restext://Common_213'
+    # ../en-US.restext:221 | "Click here at the end of ..."
+    label: 'restext://Common_217'
     target: 'ATOWSabotageIntro1' # ./00162-ATOWSabotageIntro1.mws.yaml
-    # ../en-US.restext:182 | "Close"
-    okay: 'restext://Common_178'
+    # ../en-US.restext:185 | "Close"
+    okay: 'restext://Common_181'
     snapshot: true
     content:
     - type: 'let'

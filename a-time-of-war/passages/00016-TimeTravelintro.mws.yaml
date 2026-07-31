@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TimeTravelintro'
-# ../en-US.restext:412 | "A Town in Shambles"
+# ../en-US.restext:422 | "A Town in Shambles"
 title: 'restext://TimeTravelintro_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:2816
 - type: 'text'
-  # ../en-US.restext:413 | "Words failed to capture t..."
+  # ../en-US.restext:423 | "Words failed to capture t..."
   value: 'restext://TimeTravelintro_002'
 # ../.source/ATimeofWar_Eng_v8.cs:2817
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:2819
 - type: 'text'
-  # ../en-US.restext:414 | "May my eyes never gaze up..."
+  # ../en-US.restext:424 | "May my eyes never gaze up..."
   value: 'restext://TimeTravelintro_003'
 # ../.source/ATimeofWar_Eng_v8.cs:2821
 - type: 'break'
@@ -23,11 +23,11 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:2824
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:183 | "Click here to continue..."
-  label: 'restext://Common_179'
+  # ../en-US.restext:186 | "Click here to continue..."
+  label: 'restext://Common_182'
   target: 'TimeTravelintro1' # ./00062-TimeTravelintro1.mws.yaml
-  # ../en-US.restext:182 | "Close"
-  okay: 'restext://Common_178'
+  # ../en-US.restext:185 | "Close"
+  okay: 'restext://Common_181'
   snapshot: true
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:2838
@@ -37,5 +37,5 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:2840
   - type: 'text'
-    # ../en-US.restext:415 | "Turn to page **12** in th..."
+    # ../en-US.restext:425 | "Turn to page **12** in th..."
     value: 'restext://TimeTravelintro_004'

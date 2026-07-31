@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Isolation'
-# ../en-US.restext:124 | "Walled City"
-title: 'restext://Common_120'
-# ../en-US.restext:155 | "Early Years"
-subtitle: 'restext://Common_151'
+# ../en-US.restext:128 | "Walled City"
+title: 'restext://Common_124'
+# ../en-US.restext:162 | "Early Years"
+subtitle: 'restext://Common_158'
 tags:
 - 'HUB'
-layout: 'hub'
+layout: 'hub_early'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:3722
 - type: 'assign'
@@ -21,8 +21,8 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3728
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:156 | "Accept"
-    okay: 'restext://Common_152'
+    # ../en-US.restext:163 | "Accept"
+    okay: 'restext://Common_159'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:3732
     - type: 'image'
@@ -31,7 +31,7 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:3734
     - type: 'text'
-      # ../en-US.restext:529 | "Turn to page **14** of th..."
+      # ../en-US.restext:540 | "Turn to page **14** of th..."
       value: 'restext://Isolation_002'
     # ../.source/FearoftheUnknown_Eng_v15.cs:3749
     - type: 'break'
@@ -41,8 +41,8 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:3752
       - type: 'text'
-        # ../en-US.restext:96 | "Then, since this is a 3 p..."
-        value: 'restext://Common_092'
+        # ../en-US.restext:98 | "Then, since this is a 3 p..."
+        value: 'restext://Common_094'
       # ../.source/FearoftheUnknown_Eng_v15.cs:3753
       - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3757
@@ -50,38 +50,38 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3761
 - type: 'section'
-  # ../en-US.restext:530 | "**Rising Prices**"
+  # ../en-US.restext:541 | "**Rising Prices**"
   title: 'restext://Isolation_003'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3769
   - type: 'text'
-    # ../en-US.restext:531 | "With the town's isolation..."
+    # ../en-US.restext:542 | "With the town's isolation..."
     value: 'restext://Isolation_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3784
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3788
 - type: 'section'
-  # ../en-US.restext:125 | "{icon:storybooktoken} **V..."
-  title: 'restext://Common_121'
+  # ../en-US.restext:129 | "{icon:storybooktoken} **V..."
+  title: 'restext://Common_125'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3799
   - type: 'text'
-    # ../en-US.restext:126 | "As a registered citizen w..."
-    value: 'restext://Common_122'
+    # ../en-US.restext:130 | "As a registered citizen w..."
+    value: 'restext://Common_126'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3801
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3803
   - type: 'text'
-    # ../en-US.restext:127 | "You MUST place your **Sel..."
-    value: 'restext://Common_123'
+    # ../en-US.restext:131 | "You MUST place your **Sel..."
+    value: 'restext://Common_127'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3810
   - type: 'link'
-    # ../en-US.restext:128 | "click here to complete ve..."
-    label: 'restext://Common_124'
+    # ../en-US.restext:132 | "click here to complete ve..."
+    label: 'restext://Common_128'
     target: 'IsoIdentificationSignIn' # ./00211-IsoIdentificationSignIn.mws.yaml
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:3811
@@ -89,8 +89,8 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3815
   - type: 'text'
-    # ../en-US.restext:129 | "_(If you have not verifie..."
-    value: 'restext://Common_125'
+    # ../en-US.restext:133 | "_(If you have not verifie..."
+    value: 'restext://Common_129'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3823
 - type: 'break'
   style: 'paragraph'
@@ -114,8 +114,24 @@ nodes:
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3842
-  - type: 'link'
-    # ../en-US.restext:173 | "Click here at the end of ..."
-    label: 'restext://Common_169'
+  - type: 'popup'
+    layout: 'end_of_round'
+    # ../en-US.restext:180 | "Click here at the end of ..."
+    label: 'restext://Common_176'
     target: 'Caravancheck' # ./00105-Caravancheck.mws.yaml
+    # ../en-US.restext:181 | "End of Round"
+    okay: 'restext://Common_177'
+    onclose:
+    - type: 'assign'
+      var: '_ProgressRound'
+      expr: '7'
     snapshot: true
+    content:
+    - type: 'text'
+      # ../en-US.restext:134 | "The Early Years of the Th..."
+      value: 'restext://Common_130'
+    - type: 'break'
+      style: 'paragraph'
+    - type: 'text'
+      # ../en-US.restext:182 | "Then, perform all Start o..."
+      value: 'restext://Common_178'

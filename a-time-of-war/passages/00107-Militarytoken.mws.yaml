@@ -6,36 +6,36 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:12954
 - type: 'text'
-  # ../en-US.restext:962 | "**Carefully give this Sto..."
+  # ../en-US.restext:976 | "**Carefully give this Sto..."
   value: 'restext://Militarytoken_001'
 # ../.source/ATimeofWar_Eng_v8.cs:12959
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:12964
 - type: 'popup'
-  # ../en-US.restext:181 | "Once you are ready, click..."
-  label: 'restext://Common_177'
+  # ../en-US.restext:184 | "Once you are ready, click..."
+  label: 'restext://Common_180'
   layout: 'reveal'
-  # ../en-US.restext:182 | "Close"
-  cancel: 'restext://Common_178'
+  # ../en-US.restext:185 | "Close"
+  cancel: 'restext://Common_181'
   snapshot: true
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:12975
   - type: 'text'
-    # ../en-US.restext:963 | "**Duplicitous Duplicate**"
+    # ../en-US.restext:977 | "**Duplicitous Duplicate**"
     value: 'restext://Militarytoken_002'
   # ../.source/ATimeofWar_Eng_v8.cs:12977
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:12978
   - type: 'text'
-    # ../en-US.restext:964 | "During a morning sojourn ..."
+    # ../en-US.restext:978 | "During a morning sojourn ..."
     value: 'restext://Militarytoken_003'
   # ../.source/ATimeofWar_Eng_v8.cs:12979
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:12981
   - type: 'link'
-    # ../en-US.restext:965 | "I followed."
+    # ../en-US.restext:979 | "I followed."
     label: 'restext://Militarytoken_004'
     target: 'MilitaryYes' # ./00110-MilitaryYes.mws.yaml
     snapshot: true
@@ -44,7 +44,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:12984
   - type: 'link'
-    # ../en-US.restext:966 | "I did Not follow."
+    # ../en-US.restext:980 | "I did Not follow."
     label: 'restext://Militarytoken_005'
     target: 'MilitaryNo' # ./00111-MilitaryNo.mws.yaml
     snapshot: true

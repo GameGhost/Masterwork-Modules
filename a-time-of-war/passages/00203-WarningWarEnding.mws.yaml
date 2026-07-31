@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'WarningWarEnding'
-# ../en-US.restext:1751 | "The War?"
+# ../en-US.restext:1765 | "The War?"
 title: 'restext://WarningWarEnding_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:21055
 - type: 'text'
-  # ../en-US.restext:1752 | "As a brief consideration ..."
+  # ../en-US.restext:1766 | "As a brief consideration ..."
   value: 'restext://WarningWarEnding_002'
 # ../.source/ATimeofWar_Eng_v8.cs:21058
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:21060
 - type: 'text'
-  # ../en-US.restext:1753 | "Though details about this..."
+  # ../en-US.restext:1767 | "Though details about this..."
   value: 'restext://WarningWarEnding_003'
 # ../.source/ATimeofWar_Eng_v8.cs:21062
 - type: 'conditional'
@@ -24,26 +24,26 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:21064
   - type: 'text'
-    # ../en-US.restext:1756 | "the {warwinner} were able..."
+    # ../en-US.restext:1770 | "the {warwinner} were able..."
     value: 'restext://WarningWarEnding_006'
   # ../.source/ATimeofWar_Eng_v8.cs:21069
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:21071
   - type: 'text'
-    # ../en-US.restext:1757 | "Decidedly trivial and woe..."
+    # ../en-US.restext:1771 | "Decidedly trivial and woe..."
     value: 'restext://WarningWarEnding_007'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:21077
   - type: 'text'
-    # ../en-US.restext:1754 | "the {warwinner} were able..."
+    # ../en-US.restext:1768 | "the {warwinner} were able..."
     value: 'restext://WarningWarEnding_004'
   # ../.source/ATimeofWar_Eng_v8.cs:21082
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:21084
   - type: 'text'
-    # ../en-US.restext:1755 | "In fact, it was so diffic..."
+    # ../en-US.restext:1769 | "In fact, it was so diffic..."
     value: 'restext://WarningWarEnding_005'
 # ../.source/ATimeofWar_Eng_v8.cs:21088
 - type: 'break'

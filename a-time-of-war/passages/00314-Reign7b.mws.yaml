@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Reign7b'
-# ../en-US.restext:2365 | "Delayed Thanks"
+# ../en-US.restext:2379 | "Delayed Thanks"
 title: 'restext://Reign7b_001'
 tags:
 - 'revised'
@@ -10,7 +10,7 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:28925
 - type: 'text'
-  # ../en-US.restext:2366 | "The advisor, when he resu..."
+  # ../en-US.restext:2380 | "The advisor, when he resu..."
   value: 'restext://Reign7b_002'
 # ../.source/ATimeofWar_Eng_v8.cs:28928
 - type: 'break'
@@ -21,8 +21,8 @@ nodes:
   # ../en-US.restext:24 | "Click to continue..."
   label: 'restext://Common_020'
   target: '${round == 16 ? "MonarchReign1" : round == 17 ? "MonarchReign2" : "MonarchReign3"}' # ./00043-MonarchReign1.mws.yaml, ./00068-MonarchReign2.mws.yaml, ./00069-MonarchReign3.mws.yaml
-  # ../en-US.restext:182 | "Close"
-  okay: 'restext://Common_178'
+  # ../en-US.restext:185 | "Close"
+  okay: 'restext://Common_181'
   snapshot: true
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:28958
@@ -32,12 +32,12 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:28962
   - type: 'text'
-    # ../en-US.restext:161 | "{crownL} {ch1}"
-    value: 'restext://Common_157'
+    # ../en-US.restext:164 | "{crownL} {ch1}"
+    value: 'restext://Common_160'
   # ../.source/ATimeofWar_Eng_v8.cs:28965
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:28969
   - type: 'text'
-    # ../en-US.restext:162 | "_Reminder: The {icon:s3_c..."
-    value: 'restext://Common_158'
+    # ../en-US.restext:165 | "_Reminder: The {icon:s3_c..."
+    value: 'restext://Common_161'

@@ -2,33 +2,33 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Payment1ThanksB'
-# ../en-US.restext:203 | "The Count's Payment Received"
-title: 'restext://Common_199'
+# ../en-US.restext:212 | "The Count's Payment Received"
+title: 'restext://Common_208'
 tags:
 - 'format'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:19864
 - type: 'text'
-  # ../en-US.restext:194 | "**Journal of {nameB} -** ..."
-  value: 'restext://Common_190'
+  # ../en-US.restext:203 | "**Journal of {nameB} -** ..."
+  value: 'restext://Common_199'
 # ../.source/FearoftheUnknown_Eng_v15.cs:19873
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:19875
 - type: 'text'
-  # ../en-US.restext:204 | "The men were pleased with..."
-  value: 'restext://Common_200'
+  # ../en-US.restext:213 | "The men were pleased with..."
+  value: 'restext://Common_209'
 # ../.source/FearoftheUnknown_Eng_v15.cs:19879
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:19883
 - type: 'popup'
-  # ../en-US.restext:286 | "Click to continue..."
-  label: 'restext://Common_282'
+  # ../en-US.restext:295 | "Click to continue..."
+  label: 'restext://Common_291'
   layout: 'reveal'
-  # ../en-US.restext:275 | "Close"
-  cancel: 'restext://Common_271'
+  # ../en-US.restext:284 | "Close"
+  cancel: 'restext://Common_280'
   snapshot: true
   header:
   # ../.source/FearoftheUnknown_Eng_v15.cs:19921
@@ -50,8 +50,8 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:277 | "Continue"
-      label: 'restext://Common_273'
+      # ../en-US.restext:286 | "Continue"
+      label: 'restext://Common_282'
       target: 'Payment1C' # ./00167-Payment1C.mws.yaml
       snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:19910
@@ -63,8 +63,8 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:277 | "Continue"
-      label: 'restext://Common_273'
+      # ../en-US.restext:286 | "Continue"
+      label: 'restext://Common_282'
       target: 'Payment1Hub' # ./00164-Payment1Hub.mws.yaml
       snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:19922
@@ -72,8 +72,8 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:19926
   - type: 'text'
-    # ../en-US.restext:206 | "**Immediately pay ${Bcont..."
-    value: 'restext://Common_202'
+    # ../en-US.restext:215 | "**Immediately pay ${Bcont..."
+    value: 'restext://Common_211'
   # ../.source/FearoftheUnknown_Eng_v15.cs:19932
   - type: 'assign'
     var: 'Bcont'

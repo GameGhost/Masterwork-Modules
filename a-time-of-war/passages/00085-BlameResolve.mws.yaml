@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'BlameResolve'
-# ../en-US.restext:841 | "Determined Resolution"
+# ../en-US.restext:855 | "Determined Resolution"
 title: 'restext://BlameResolve_001'
 layout: 'narration'
 nodes:
@@ -15,7 +15,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:11018
 - type: 'text'
-  # ../en-US.restext:842 | "Weeks hence, we shared th..."
+  # ../en-US.restext:856 | "Weeks hence, we shared th..."
   value: 'restext://BlameResolve_002'
 # ../.source/ATimeofWar_Eng_v8.cs:11019
 - type: 'break'
@@ -30,8 +30,8 @@ nodes:
       # ../en-US.restext:24 | "Click to continue..."
       label: 'restext://Common_020'
       layout: 'reveal'
-      # ../en-US.restext:182 | "Close"
-      cancel: 'restext://Common_178'
+      # ../en-US.restext:185 | "Close"
+      cancel: 'restext://Common_181'
       snapshot: true
       header:
       # ../.source/ATimeofWar_Eng_v8.cs:11137
@@ -57,8 +57,8 @@ nodes:
             style: 'panel'
             content: []
           - type: 'link'
-            # ../en-US.restext:169 | "Continue"
-            label: 'restext://Common_165'
+            # ../en-US.restext:172 | "Continue"
+            label: 'restext://Common_168'
             target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
             snapshot: true
         - if: 'pl2 > pl1 && pl2 > pl3 && pl2 > pl4 && pl2 > pl5'
@@ -76,8 +76,8 @@ nodes:
             style: 'panel'
             content: []
           - type: 'link'
-            # ../en-US.restext:169 | "Continue"
-            label: 'restext://Common_165'
+            # ../en-US.restext:172 | "Continue"
+            label: 'restext://Common_168'
             target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
             snapshot: true
         - if: 'pl3 > pl1 && pl3 > pl2 && pl3 > pl4 && pl3 > pl5'
@@ -95,8 +95,8 @@ nodes:
             style: 'panel'
             content: []
           - type: 'link'
-            # ../en-US.restext:169 | "Continue"
-            label: 'restext://Common_165'
+            # ../en-US.restext:172 | "Continue"
+            label: 'restext://Common_168'
             target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
             snapshot: true
         - if: 'pl4 > pl1 && pl4 > pl2 && pl4 > pl3 && pl4 > pl5'
@@ -114,8 +114,8 @@ nodes:
             style: 'panel'
             content: []
           - type: 'link'
-            # ../en-US.restext:169 | "Continue"
-            label: 'restext://Common_165'
+            # ../en-US.restext:172 | "Continue"
+            label: 'restext://Common_168'
             target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
             snapshot: true
         - if: 'pl5 > pl1 && pl5 > pl2 && pl5 > pl3 && pl5 > pl4'
@@ -133,8 +133,8 @@ nodes:
             style: 'panel'
             content: []
           - type: 'link'
-            # ../en-US.restext:169 | "Continue"
-            label: 'restext://Common_165'
+            # ../en-US.restext:172 | "Continue"
+            label: 'restext://Common_168'
             target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
             snapshot: true
         - if: 'pl1 + pl2 + pl3 + pl4 + pl5 == 0'
@@ -153,8 +153,8 @@ nodes:
             style: 'panel'
             content: []
           - type: 'link'
-            # ../en-US.restext:169 | "Continue"
-            label: 'restext://Common_165'
+            # ../en-US.restext:172 | "Continue"
+            label: 'restext://Common_168'
             target: 'TimeTravel3' # ./00018-TimeTravel3.mws.yaml
             snapshot: true
         else:
@@ -163,15 +163,15 @@ nodes:
           style: 'panel'
           content: []
         - type: 'link'
-          # ../en-US.restext:169 | "Continue"
-          label: 'restext://Common_165'
+          # ../en-US.restext:172 | "Continue"
+          label: 'restext://Common_168'
           target: 'BlameOut2' # ./00080-BlameOut2.mws.yaml
           snapshot: true
       # ../.source/ATimeofWar_Eng_v8.cs:11138
       - type: 'break'
       # ../.source/ATimeofWar_Eng_v8.cs:11139
       - type: 'text'
-        # ../en-US.restext:843 | "The player who chose to p..."
+        # ../en-US.restext:857 | "The player who chose to p..."
         value: 'restext://BlameResolve_003'
   - if: 'buy > 1'
     then:
@@ -180,8 +180,8 @@ nodes:
       # ../en-US.restext:24 | "Click to continue..."
       label: 'restext://Common_020'
       layout: 'reveal'
-      # ../en-US.restext:182 | "Close"
-      cancel: 'restext://Common_178'
+      # ../en-US.restext:185 | "Close"
+      cancel: 'restext://Common_181'
       snapshot: true
       header:
       # ../.source/ATimeofWar_Eng_v8.cs:11209
@@ -207,8 +207,8 @@ nodes:
             style: 'panel'
             content: []
           - type: 'link'
-            # ../en-US.restext:169 | "Continue"
-            label: 'restext://Common_165'
+            # ../en-US.restext:172 | "Continue"
+            label: 'restext://Common_168'
             target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
             snapshot: true
         - if: 'pl2 > pl1 && pl2 > pl3 && pl2 > pl4 && pl2 > pl5'
@@ -226,8 +226,8 @@ nodes:
             style: 'panel'
             content: []
           - type: 'link'
-            # ../en-US.restext:169 | "Continue"
-            label: 'restext://Common_165'
+            # ../en-US.restext:172 | "Continue"
+            label: 'restext://Common_168'
             target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
             snapshot: true
         - if: 'pl3 > pl1 && pl3 > pl2 && pl3 > pl4 && pl3 > pl5'
@@ -245,8 +245,8 @@ nodes:
             style: 'panel'
             content: []
           - type: 'link'
-            # ../en-US.restext:169 | "Continue"
-            label: 'restext://Common_165'
+            # ../en-US.restext:172 | "Continue"
+            label: 'restext://Common_168'
             target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
             snapshot: true
         - if: 'pl4 > pl1 && pl4 > pl2 && pl4 > pl3 && pl4 > pl5'
@@ -264,8 +264,8 @@ nodes:
             style: 'panel'
             content: []
           - type: 'link'
-            # ../en-US.restext:169 | "Continue"
-            label: 'restext://Common_165'
+            # ../en-US.restext:172 | "Continue"
+            label: 'restext://Common_168'
             target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
             snapshot: true
         - if: 'pl5 > pl1 && pl5 > pl2 && pl5 > pl3 && pl5 > pl4'
@@ -283,8 +283,8 @@ nodes:
             style: 'panel'
             content: []
           - type: 'link'
-            # ../en-US.restext:169 | "Continue"
-            label: 'restext://Common_165'
+            # ../en-US.restext:172 | "Continue"
+            label: 'restext://Common_168'
             target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
             snapshot: true
         - if: 'pl1 + pl2 + pl3 + pl4 + pl5 == 0'
@@ -303,8 +303,8 @@ nodes:
             style: 'panel'
             content: []
           - type: 'link'
-            # ../en-US.restext:169 | "Continue"
-            label: 'restext://Common_165'
+            # ../en-US.restext:172 | "Continue"
+            label: 'restext://Common_168'
             target: 'TimeTravel3' # ./00018-TimeTravel3.mws.yaml
             snapshot: true
         else:
@@ -313,15 +313,15 @@ nodes:
           style: 'panel'
           content: []
         - type: 'link'
-          # ../en-US.restext:169 | "Continue"
-          label: 'restext://Common_165'
+          # ../en-US.restext:172 | "Continue"
+          label: 'restext://Common_168'
           target: 'BlameOut2' # ./00080-BlameOut2.mws.yaml
           snapshot: true
       # ../.source/ATimeofWar_Eng_v8.cs:11210
       - type: 'break'
       # ../.source/ATimeofWar_Eng_v8.cs:11211
       - type: 'text'
-        # ../en-US.restext:844 | "Any player who chose to p..."
+        # ../en-US.restext:858 | "Any player who chose to p..."
         value: 'restext://BlameResolve_004'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:11038

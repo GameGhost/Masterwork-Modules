@@ -6,21 +6,21 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:22052
 - type: 'text'
-  # ../en-US.restext:270 | "**Do not read the passage..."
-  value: 'restext://Common_266'
+  # ../en-US.restext:279 | "**Do not read the passage..."
+  value: 'restext://Common_275'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22054
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22058
 - type: 'text'
-  # ../en-US.restext:271 | "**Collected Notes (cont.)..."
-  value: 'restext://Common_267'
+  # ../en-US.restext:280 | "**Collected Notes (cont.)..."
+  value: 'restext://Common_276'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22064
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22066
 - type: 'text'
-  # ../en-US.restext:1608 | "I, of course, chose **Mis..."
+  # ../en-US.restext:1623 | "I, of course, chose **Mis..."
   value: 'restext://RevengePlotMisfortune_001'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22075
 - type: 'break'
@@ -28,11 +28,11 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:22080
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:324 | "Click here to continue..."
-  label: 'restext://Common_320'
+  # ../en-US.restext:334 | "Click here to continue..."
+  label: 'restext://Common_330'
   target: 'WitchIntro' # ./00082-WitchIntro.mws.yaml
-  # ../en-US.restext:275 | "Close"
-  okay: 'restext://Common_271'
+  # ../en-US.restext:284 | "Close"
+  okay: 'restext://Common_280'
   snapshot: true
   header:
   # ../.source/FearoftheUnknown_Eng_v15.cs:22097
@@ -42,8 +42,8 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:22100
   - type: 'text'
-    # ../en-US.restext:272 | "Place a {icon:storybookto..."
-    value: 'restext://Common_268'
+    # ../en-US.restext:281 | "Place a {icon:storybookto..."
+    value: 'restext://Common_277'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22082
 - type: 'assign'
   var: 'revplot'

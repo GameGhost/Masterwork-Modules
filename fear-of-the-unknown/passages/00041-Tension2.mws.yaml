@@ -5,7 +5,7 @@ passage_id: 'Tension2'
 tags:
 - 'format'
 - 'HUB'
-layout: 'hub'
+layout: 'hub_middle'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:6472
 - type: 'conditional'
@@ -13,7 +13,7 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6476
   - type: 'text'
-    # ../en-US.restext:704 | "**The Enemy of My Friend ..."
+    # ../en-US.restext:719 | "**The Enemy of My Friend ..."
     value: 'restext://Tension2_005'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6478
   - type: 'break'
@@ -21,8 +21,8 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6482
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:156 | "Accept"
-    okay: 'restext://Common_152'
+    # ../en-US.restext:163 | "Accept"
+    okay: 'restext://Common_159'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6486
     - type: 'image'
@@ -31,30 +31,30 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6488
     - type: 'text'
-      # ../en-US.restext:705 | "Turn to page **21** of th..."
+      # ../en-US.restext:720 | "Turn to page **21** of th..."
       value: 'restext://Tension2_006'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6499
   - type: 'section'
-    # ../en-US.restext:315 | "**Special Rule**"
-    title: 'restext://Common_311'
+    # ../en-US.restext:325 | "**Special Rule**"
+    title: 'restext://Common_321'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6507
     - type: 'text'
-      # ../en-US.restext:313 | "Visiting any Location wit..."
-      value: 'restext://Common_309'
+      # ../en-US.restext:322 | "Visiting any Location wit..."
+      value: 'restext://Common_318'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6511
   - type: 'break'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6518
   - type: 'text'
-    # ../en-US.restext:701 | "**A Peace Through Generat..."
+    # ../en-US.restext:716 | "**A Peace Through Generat..."
     value: 'restext://Tension2_001'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6522
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:156 | "Accept"
-    okay: 'restext://Common_152'
+    # ../en-US.restext:163 | "Accept"
+    okay: 'restext://Common_159'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6526
     - type: 'image'
@@ -63,22 +63,22 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6528
     - type: 'text'
-      # ../en-US.restext:702 | "Turn to page **20** of th..."
+      # ../en-US.restext:717 | "Turn to page **20** of th..."
       value: 'restext://Tension2_002'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6538
   - type: 'section'
-    # ../en-US.restext:703 | "{icon:storybooktoken}**A ..."
+    # ../en-US.restext:718 | "{icon:storybooktoken}**A ..."
     title: 'restext://Tension2_003'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6547
     - type: 'text'
-      # ../en-US.restext:312 | "The first time any player..."
-      value: 'restext://Common_308'
+      # ../en-US.restext:321 | "The first time any player..."
+      value: 'restext://Common_317'
     # ../.source/FearoftheUnknown_Eng_v15.cs:6555
     - type: 'link'
-      # ../en-US.restext:308 | "click here."
-      label: 'restext://Common_304'
+      # ../en-US.restext:317 | "click here."
+      label: 'restext://Common_313'
       target: 'Gen3Token2SignIn' # ./00287-Gen3Token2SignIn.mws.yaml
       snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:6557
@@ -91,39 +91,39 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6564
   - type: 'section'
-    # ../en-US.restext:316 | "**Plot Expansion**"
-    title: 'restext://Common_312'
+    # ../en-US.restext:326 | "**Plot Expansion**"
+    title: 'restext://Common_322'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6573
     - type: 'text'
-      # ../en-US.restext:317 | "Bricks can now be used to..."
-      value: 'restext://Common_313'
+      # ../en-US.restext:327 | "Bricks can now be used to..."
+      value: 'restext://Common_323'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6577
   - type: 'break'
     style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6583
 - type: 'section'
-  # ../en-US.restext:318 | "**Occult Experimentation**"
-  title: 'restext://Common_314'
+  # ../en-US.restext:328 | "**Occult Experimentation**"
+  title: 'restext://Common_324'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6592
   - type: 'text'
-    # ../en-US.restext:319 | "At the End of the Generat..."
-    value: 'restext://Common_315'
+    # ../en-US.restext:329 | "At the End of the Generat..."
+    value: 'restext://Common_325'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6605
   - type: 'conditional'
     if: 'players >= 4'
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6607
     - type: 'text'
-      # ../en-US.restext:320 | "The player with the secon..."
-      value: 'restext://Common_316'
+      # ../en-US.restext:330 | "The player with the secon..."
+      value: 'restext://Common_326'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6609
   - type: 'text'
-    # ../en-US.restext:321 | " _Ties are broken by the ..."
-    value: 'restext://Common_317'
+    # ../en-US.restext:331 | " _Ties are broken by the ..."
+    value: 'restext://Common_327'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6616
 - type: 'break'
   style: 'paragraph'
@@ -152,8 +152,24 @@ nodes:
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6650
-  - type: 'link'
-    # ../en-US.restext:173 | "Click here at the end of ..."
-    label: 'restext://Common_169'
+  - type: 'popup'
+    layout: 'end_of_round'
+    # ../en-US.restext:180 | "Click here at the end of ..."
+    label: 'restext://Common_176'
     target: '${tension == "good" ? "Caravancheck" : "TenseEventBad2"}' # ./00105-Caravancheck.mws.yaml, ./00118-TenseEventBad2.mws.yaml
+    # ../en-US.restext:181 | "End of Round"
+    okay: 'restext://Common_177'
+    onclose:
+    - type: 'assign'
+      var: '_ProgressRound'
+      expr: '8'
     snapshot: true
+    content:
+    - type: 'text'
+      # ../en-US.restext:323 | "The Middle Years of the T..."
+      value: 'restext://Common_319'
+    - type: 'break'
+      style: 'paragraph'
+    - type: 'text'
+      # ../en-US.restext:158 | "Then, perform all Start o..."
+      value: 'restext://Common_154'
