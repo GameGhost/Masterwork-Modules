@@ -1,0 +1,151 @@
+# Masterwork-authored passage (not extractor output) — replaces the reference app's native
+# ViewScoreEntry UI (Assets/Scripts/UI/ViewScoreEntry.cs), reached via Scoring's
+# ChangeView(ViewController.instance.scoreEntry) link, now extracted as a plain navigation link
+# to this fixed passage id (see PassageBodyVisitor's ChangeView handling). Gathers each player's
+# final score into the existing (previously dead) scoreA-D session variables, then routes
+# straight to Ranking if there's a single top score, or TieBreaker1 if two or more players are
+# tied for it — matching ViewScoreEntry.OnContinueButton's own branch. See
+# Masterwork-Design/Reference/Screenshots/Score and Ending/ for the reference layout this and
+# _TieBreaker1.mws.yaml/_TieBreaker2.mws.yaml (sharing the score_panel layout) are modeled on.
+#
+# Each player row is a `section style: 'score-row'` (Scoring-01-Score-Entry.png shows a highlighted
+# brush-stroke band behind Player/Score per row) instead of a flat text/input sequence — see
+# style.css's own comment on .mws-section.style-score-row for how player_highlight.png (a white
+# alpha shape, not a colored sprite) becomes that purple band via mask-image. The header row is
+# also a section (`score-header-row`, no highlight) sharing the exact same flex column geometry as
+# the data rows below it — the only way to guarantee "Score" lands centered directly over the
+# input column below it, rather than two independently-positioned pieces that only approximately
+# line up. All rows nest inside one outer `section style: 'score-card'` — that's the actual
+# bordered/scrollable parchment box now (not `.mws-passage-body` itself, which is now just a plain
+# layout container) — with Continue as its own sibling *after* the card, not inside it, so it sits
+# in normal document flow right where the card's own (possibly shrunk) bottom edge actually ends,
+# rather than pinned to the true viewport edge. The help popup (button_question.png, top-right)
+# matches Scoring-02-Score-Entry-Help-popup.png — only ScoreEntry has one; TieBreaker1/2 don't.
+---
+format: 'mws/0.4'
+passage_id: 'ScoreEntry'
+title: 'restext://Scoring_Entry_Title'
+layout: 'score_panel'
+nodes:
+- type: 'section'
+  style: 'score-card'
+  content:
+  - type: 'section'
+    style: 'score-header-row'
+    content:
+    - type: 'text'
+      value: 'restext://Scoring_Header_Player'
+      style: 'player-heading'
+    - type: 'text'
+      value: 'restext://Scoring_Entry_HeaderScore'
+      style: 'score-heading'
+  - type: 'section'
+    style: 'score-row'
+    content:
+    - type: 'text'
+      value: '{nameA}'
+      style: 'player-label'
+    - type: 'input'
+      style: 'score-input'
+      var: 'scoreA'
+      min: 0
+  - type: 'section'
+    style: 'score-row'
+    content:
+    - type: 'text'
+      value: '{nameB}'
+      style: 'player-label'
+    - type: 'input'
+      style: 'score-input'
+      var: 'scoreB'
+      min: 0
+  - type: 'conditional'
+    if: 'players >= 3'
+    then:
+    - type: 'section'
+      style: 'score-row'
+      content:
+      - type: 'text'
+        value: '{nameC}'
+        style: 'player-label'
+      - type: 'input'
+        style: 'score-input'
+        var: 'scoreC'
+        min: 0
+  - type: 'conditional'
+    if: 'players >= 4'
+    then:
+    - type: 'section'
+      style: 'score-row'
+      content:
+      - type: 'text'
+        value: '{nameD}'
+        style: 'player-label'
+      - type: 'input'
+        style: 'score-input'
+        var: 'scoreD'
+        min: 0
+- type: 'link'
+  label: 'restext://Common_Continue'
+  style: 'btn-brown'
+  onclick:
+  - type: 'let'
+    var: 'max_score'
+    expr: 'max(scoreA, scoreB, scoreC, scoreD)'
+  - type: 'conditional'
+    if: 'scoreA == max_score'
+    then:
+    - type: 'assign'
+      var: 'winnerA'
+      expr: 'true'
+    - type: 'assign'
+      var: 'winnerCount'
+      expr: 'winnerCount + 1'
+  - type: 'conditional'
+    if: 'scoreB == max_score'
+    then:
+    - type: 'assign'
+      var: 'winnerB'
+      expr: 'true'
+    - type: 'assign'
+      var: 'winnerCount'
+      expr: 'winnerCount + 1'
+  - type: 'conditional'
+    if: 'players >= 3 && scoreC == max_score'
+    then:
+    - type: 'assign'
+      var: 'winnerC'
+      expr: 'true'
+    - type: 'assign'
+      var: 'winnerCount'
+      expr: 'winnerCount + 1'
+  - type: 'conditional'
+    if: 'players >= 4 && scoreD == max_score'
+    then:
+    - type: 'assign'
+      var: 'winnerD'
+      expr: 'true'
+    - type: 'assign'
+      var: 'winnerCount'
+      expr: 'winnerCount + 1'
+  - type: 'conditional'
+    if: 'winnerCount == 1'
+    then:
+    - type: 'goto'
+      target: 'Ranking'
+      snapshot: true
+    else:
+    - type: 'goto'
+      target: 'TieBreaker1'
+      snapshot: false
+- type: 'popup'
+  layout: 'score_help'
+  label: '?'
+  style: 'help-trigger'
+  content:
+  - type: 'section'
+    style: 'help-highlight'
+    content:
+    - type: 'text'
+      value: 'restext://Scoring_HelpBody'
+  cancel: 'restext://Common_Close'

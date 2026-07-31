@@ -1,0 +1,136 @@
+# Masterwork-authored passage (not extractor output) — replaces the reference app's native
+# ViewTieBreaker UI's first round (Assets/Scripts/UI/ViewTieBreaker.cs, OnTieBreaker1/
+# OnContinueButton's isTieBreaker1 branch). Reached from _ScoreEntry.mws.yaml when 2+ players
+# share the top score. Shows only the tied players (scoreX == max_score, computed on
+# _ScoreEntry.mws.yaml's Continue and still live as a let var), each with a self-reported
+# "completed their Masterwork" checkbox. Zero checked -> family win; exactly one checked -> that
+# player wins outright (+1 score bump, matching ViewTieBreaker.cs); two or more checked -> a
+# second tie-break round (_TieBreaker2.mws.yaml).
+#
+# Each row is a `section style: 'score-row'` (same shape as _ScoreEntry.mws.yaml, see style.css's
+# own comment) — being a real block-level element per row means the old needs_break bookkeeping
+# (a `let` flag threaded through every conditional purely to skip a leading `break` before the
+# first visible row) is gone; nothing to separate rows with anymore, sections stack on their own.
+---
+format: 'mws/0.4'
+passage_id: 'TieBreaker1'
+title: 'restext://Scoring_TieBreaker_Title'
+subtitle: 'restext://Scoring_TieBreaker1_Subtitle'
+layout: 'score_panel'
+nodes:
+- type: 'section'
+  style: 'score-card'
+  content:
+  - type: 'section'
+    style: 'score-header-row'
+    content:
+    - type: 'text'
+      value: 'restext://Scoring_Header_Player'
+      style: 'player-heading'
+    - type: 'text'
+      value: 'restext://Scoring_TieBreaker1_HeaderCompleted'
+      style: 'score-heading'
+  - type: 'conditional'
+    if: 'winnerA'
+    then:
+    - type: 'section'
+      style: 'score-row'
+      content:
+      - type: 'text'
+        value: '{nameA}'
+        style: 'player-label'
+      - type: 'input'
+        style: 'check-input'
+        var: 'score_mwA'
+  - type: 'conditional'
+    if: 'winnerB'
+    then:
+    - type: 'section'
+      style: 'score-row'
+      content:
+      - type: 'text'
+        value: '{nameB}'
+        style: 'player-label'
+      - type: 'input'
+        style: 'check-input'
+        var: 'score_mwB'
+  - type: 'conditional'
+    if: 'winnerC'
+    then:
+    - type: 'section'
+      style: 'score-row'
+      content:
+      - type: 'text'
+        value: '{nameC}'
+        style: 'player-label'
+      - type: 'input'
+        style: 'check-input'
+        var: 'score_mwC'
+  - type: 'conditional'
+    if: 'winnerD'
+    then:
+    - type: 'section'
+      style: 'score-row'
+      content:
+      - type: 'text'
+        value: '{nameD}'
+        style: 'player-label'
+      - type: 'input'
+        style: 'check-input'
+        var: 'score_mwD'
+- type: 'link'
+  label: 'restext://Common_Continue'
+  style: 'btn-brown'
+  onclick:
+  - type: 'let'
+    var: 'checked_count'
+    expr: '(score_mwA ? 1 : 0) + (score_mwB ? 1 : 0) + (score_mwC ? 1 : 0) + (score_mwD ? 1 : 0)'
+  - type: 'conditional'
+    if: 'checked_count > 0'
+    then:
+    - type: 'conditional'
+      if: 'winnerA && !score_mwA'
+      then:
+      - type: 'assign'
+        var: 'winnerA'
+        expr: 'false'
+      - type: 'assign'
+        var: 'winnerCount'
+        expr: 'winnerCount - 1'
+    - type: 'conditional'
+      if: 'winnerB && !score_mwB'
+      then:
+      - type: 'assign'
+        var: 'winnerB'
+        expr: 'false'
+      - type: 'assign'
+        var: 'winnerCount'
+        expr: 'winnerCount - 1'
+    - type: 'conditional'
+      if: 'winnerC && !score_mwC'
+      then:
+      - type: 'assign'
+        var: 'winnerC'
+        expr: 'false'
+      - type: 'assign'
+        var: 'winnerCount'
+        expr: 'winnerCount - 1'
+    - type: 'conditional'
+      if: 'winnerD && !score_mwD'
+      then:
+      - type: 'assign'
+        var: 'winnerD'
+        expr: 'false'
+      - type: 'assign'
+        var: 'winnerCount'
+        expr: 'winnerCount - 1'
+  - type: 'conditional'
+    if: 'winnerCount == 1'
+    then:
+    - type: 'goto'
+      target: 'Ranking'
+      snapshot: true
+    else:
+    - type: 'goto'
+      target: 'TieBreaker2'
+      snapshot: false

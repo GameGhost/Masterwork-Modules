@@ -1,0 +1,50 @@
+# Masterwork-authored onboarding passage (not extractor output) — see Modules/cost-of-disease/README.md.
+# Self-navigating link (target is this same passage_id — precedented by the extracted EnvPasscode
+# passage) re-renders once nameA is set, switching from the input branch to the greeting branch.
+# The input's "required" behavior is implicit: the link stays disabled until nameA has a value.
+---
+format: 'mws/0.4'
+passage_id: 'Setup_03_PlayerNameA'
+layout: 'player_setup'
+nodes:
+- type: 'conditional'
+  if: 'nameA == ""'
+  then:
+  - type: 'text'
+    value: '{icon:alert} **restext://Setup_PassBook_A**'
+    style: 'setup-alert'
+  - type: 'break'
+    style: 'paragraph'
+  - type: 'text'
+    value: 'restext://Setup_NameEntry_LabelA'
+    style: 'setup-input-label'
+  - type: 'input'
+    var: 'nameA'
+    style: 'setup-input'
+  - type: 'link'
+    label: 'restext://Common_Continue'
+    style: 'btn-brown'
+    target: 'Setup_03_PlayerNameA'
+    snapshot: false
+  # Torn-parchment note popup (screenshot: Setup-04) — auto-displays once nameA is set, replacing
+  # this passage's own re-render of the input branch above.
+  else:
+  - type: 'popup'
+    layout: 'note_clear'
+    content:
+    - type: 'let'
+      var: 'nameGreeting'
+      expr: '["restext://Setup_Greeting_1", "restext://Setup_Greeting_2", "restext://Setup_Greeting_3", "restext://Setup_Greeting_4"].shuffled("Setup03Greeting")[0]'
+    - type: 'text'
+      value: '{nameGreeting}'
+    - type: 'break'
+    - type: 'text'
+      value: '{nameA}'
+      style: 'text-xl'
+    - type: 'break'
+      style: 'paragraph'
+    - type: 'text'
+      value: 'restext://Setup_WarmRegards'
+    okay: 'restext://Common_Continue'
+    target: 'Setup_04_PlayerNameB'
+    snapshot: false

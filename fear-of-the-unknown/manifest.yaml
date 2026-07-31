@@ -1,0 +1,34 @@
+id: 'renegade.fear_of_the_unknown'
+version: '0.1.0'
+languages:
+  - 'en-US'
+title:
+  - en-US: 'Fear of the Unknown'
+description:
+  - en-US: 'It is with great reticence that I relay a grievous event which occurred upon my arrival. Upon entering that dismal village to settle my deceased father''s affairs, a commotion drew my attention -- and revealed a horror I would spend the rest of my time there trying to understand.'
+# Placeholder — no curated thumbnail art sourced yet for this module (see the ending overrides'
+# own comment on the same gap for game_complete's header image). Reuses the already-resolving
+# scenariobox3d_fear icon in the meantime.
+thumbnail:
+  image: 'icon://scenariobox3d_fear'
+info:
+  players-min: 2
+  players-max: 5
+  playtime:
+  - en-US: '180 minutes'
+entry: 'Setup_01_PlayerCountSelect'
+
+# Extractor-owned passages vs. hand-maintained ones. Base passages load first; passage_overrides
+# load after and win on a matching passage_id (new IDs are simply added). Re-running the extractor
+# only touches passages/, so hand-authored content here always survives a re-extraction.
+passages: 'passages'
+passages_override: 'passages-override'
+
+# This module's own visual styling — the app's chrome only emits structural class hooks
+# (layout-{value}, style-{value}); everything those hooks actually look like lives here.
+style: 'assets/style.css'
+
+# Standalone module — no dependencies field/mechanism exists yet for a real shared asset pack
+# (masterwork-plan Q27). For now, my-fathers-work-template's layouts/style.css/fonts/etc. are
+# applied by direct copy (see scripts/apply-template.ps1) rather than a runtime dependency.
+dependencies: []

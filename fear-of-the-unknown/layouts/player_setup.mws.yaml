@@ -1,0 +1,23 @@
+# Shared chrome for all setup passages (player count / name entry / town name — VIEW-REQUIREMENTS.md
+# §2 "setup passage layout" decided these collapse into one layout, chrome differs only by content).
+# Named `player_setup`, not `setup` — this template's own hand-authored onboarding flow (the
+# _Setup_0N_*.mws.yaml passages mirror the reference app's player-count/name/town-entry screens
+# directly; they supersede whatever similarly-named passages the extractor produces from Cradle
+# source, which are leftover/unused in the real app) has no real cross-module standard name to
+# match the way the `setup` *popup* layout does (see layouts/setup.mws.yaml — that name is reserved
+# for the real, widely-used-across-modules instructional popup, copied from cost-of-disease; reusing
+# it here would collide, since layout chrome is looked up by string regardless of whether a passage
+# or a popup uses it).
+# Background image layer per §1.2's three-layer composite (style-layer-bg, shared with narration/
+# introduction/hub in style.css — same mechanism, only the asset: differs per layout). The border
+# itself is NOT an image node — style.css renders it as a border-image 9-slice on a
+# `.mws-passage::after` pseudo-element instead (§1.2/§1.8), so its frame edges stretch in only one
+# direction instead of the whole PNG (frame included) being non-uniformly squashed via
+# object-fit: fill; see style.css's own comment for the full reasoning. `main.png` has no
+# progress-bar cutout (§1.3), so there's no progress-bar layer here, unlike narration/introduction/hub.
+format: 'mws/0.4'
+layout_id: 'player_setup'
+header:
+- type: 'image'
+  asset: 'image://backgrounds/leather_large'
+  style: 'layer-bg'

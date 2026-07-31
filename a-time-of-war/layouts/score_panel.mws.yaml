@@ -1,0 +1,11 @@
+# Real three-layer composite, same technique as narration (VIEW-REQUIREMENTS.md §1.2/§1.7/§1.8):
+# leather_purple background image node (style-layer-bg, shared hook — see style.css), the outer
+# main.png frame and the popup_parchment_border.png inner panel both applied via border-image CSS
+# pseudo-elements, not image nodes (see style.css's own comments for why). No footer — score_panel
+# has no round progress bar.
+format: 'mws/0.4'
+layout_id: 'score_panel'
+header:
+- type: 'image'
+  asset: 'image://backgrounds/leather_purple'
+  style: 'layer-bg'

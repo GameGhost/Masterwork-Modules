@@ -1,0 +1,47 @@
+# Masterwork-authored onboarding passage (not extractor output) — see Modules/cost-of-disease/README.md.
+# Same self-navigating input pattern as Setup_03_PlayerNameA; routing mirrors the extracted
+# NameEntryC passage's own players>3 branch.
+---
+format: 'mws/0.4'
+passage_id: 'Setup_05_PlayerNameC'
+layout: 'player_setup'
+nodes:
+- type: 'conditional'
+  if: 'nameC == ""'
+  then:
+  - type: 'text'
+    value: '{icon:alert} **restext://Setup_PassBook_C**'
+    style: 'setup-alert'
+  - type: 'break'
+    style: 'paragraph'
+  - type: 'text'
+    value: 'restext://Setup_NameEntry_LabelC'
+    style: 'setup-input-label'
+  - type: 'input'
+    var: 'nameC'
+    style: 'setup-input'
+  - type: 'link'
+    label: 'restext://Common_Continue'
+    style: 'btn-brown'
+    target: 'Setup_05_PlayerNameC'
+    snapshot: false
+  else:
+  - type: 'popup'
+    layout: 'note_clear'
+    content:
+    - type: 'let'
+      var: 'nameGreeting'
+      expr: '["restext://Setup_Greeting_1", "restext://Setup_Greeting_2", "restext://Setup_Greeting_3", "restext://Setup_Greeting_4"].shuffled("Setup05Greeting")[0]'
+    - type: 'text'
+      value: '{nameGreeting}'
+    - type: 'break'
+    - type: 'text'
+      value: '{nameC}'
+      style: 'text-xl'
+    - type: 'break'
+      style: 'paragraph'
+    - type: 'text'
+      value: 'restext://Setup_WarmRegards'
+    okay: 'restext://Common_Continue'
+    target: '${players > 3 ? "Setup_06_PlayerNameD" : "Setup_07_TownNameEntry"}'
+    snapshot: false

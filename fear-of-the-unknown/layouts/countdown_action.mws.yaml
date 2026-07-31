@@ -1,0 +1,9 @@
+# Replaces the reference app's bespoke ViewBiddingSystem (voting/bidding) component — see
+# README.md "Voting/bidding" for the full pattern. This is the INNER popup, nested inside a
+# countdown_instructions popup's own content (see Showcase_Popup_RevealCountdown.mws.yaml) — its
+# own label is the visible trigger button ("Start Bidding"/"Cast Vote"), and once opened its Okay
+# button covers the full viewport, invisibly, staying non-interactive until a CSS countdown
+# animation finishes. No chrome regions needed; everything lives in style.css against
+# .mws-popup-overlay.layout-countdown_action.
+format: 'mws/0.4'
+layout_id: 'countdown_action'

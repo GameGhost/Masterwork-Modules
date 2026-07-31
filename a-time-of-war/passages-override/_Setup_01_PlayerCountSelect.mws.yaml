@@ -1,0 +1,47 @@
+# Masterwork-authored onboarding passage (not extractor output) — see Modules/cost-of-disease/README.md.
+# Entry point for the module (tagged Begins-Here) since Masterwork moves player/town setup into the
+# module itself, inverting the original app's app-shell-level setup flow (masterwork-plan Q19/Q24).
+---
+format: 'mws/0.4'
+passage_id: 'Setup_01_PlayerCountSelect'
+title: 'restext://Setup_PlayerCount_Title'
+tags:
+- 'Begins-Here'
+layout: 'player_setup'
+nodes:
+- type: 'text'
+  value: 'restext://Setup_PlayerCount_Prompt'
+- type: 'break'
+  style: 'paragraph'
+# Only this section scrolls (style.css's .style-setup-choices) — the question text above stays
+# fixed, matching the "scrollable area is just the buttons" request rather than the whole body.
+- type: 'section'
+  style: 'setup-choices'
+  content:
+  - type: 'link'
+    label: 'restext://Setup_PlayerCount_Two'
+    style: 'btn-players-2'
+    target: 'Setup_02_PlayerNameIntro'
+    snapshot: false
+    onclick:
+    - type: 'assign'
+      var: 'players'
+      expr: '2'
+  - type: 'link'
+    label: 'restext://Setup_PlayerCount_Three'
+    style: 'btn-players-3'
+    target: 'Setup_02_PlayerNameIntro'
+    snapshot: false
+    onclick:
+    - type: 'assign'
+      var: 'players'
+      expr: '3'
+  - type: 'link'
+    label: 'restext://Setup_PlayerCount_Four'
+    style: 'btn-players-4'
+    target: 'Setup_02_PlayerNameIntro'
+    snapshot: false
+    onclick:
+    - type: 'assign'
+      var: 'players'
+      expr: '4'

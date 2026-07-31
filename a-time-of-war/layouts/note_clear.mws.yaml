@@ -1,0 +1,7 @@
+# No chrome regions needed — identical to `note` (see style.css's shared .layout-note/.layout-note_clear
+# rules) except the popup overlay's backdrop, which is transparent instead of darkened. Used for
+# the player-setup passages, where the popup shows over an already-empty `setup`-layout passage —
+# nothing underneath worth dimming. Empty chrome file kept for discoverability, matching the
+# convention established by layouts/choice.mws.yaml.
+format: 'mws/0.4'
+layout_id: 'note_clear'

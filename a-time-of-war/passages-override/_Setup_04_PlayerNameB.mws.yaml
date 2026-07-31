@@ -1,0 +1,47 @@
+# Masterwork-authored onboarding passage (not extractor output) — see Modules/cost-of-disease/README.md.
+# Same self-navigating input pattern as Setup_03_PlayerNameA; routing after the greeting mirrors the
+# extracted NameEntryB passage's own players>2 branch (passages/00077-NameEntryB.mws.yaml).
+---
+format: 'mws/0.4'
+passage_id: 'Setup_04_PlayerNameB'
+layout: 'player_setup'
+nodes:
+- type: 'conditional'
+  if: 'nameB == ""'
+  then:
+  - type: 'text'
+    value: '{icon:alert} **restext://Setup_PassBook_B**'
+    style: 'setup-alert'
+  - type: 'break'
+    style: 'paragraph'
+  - type: 'text'
+    value: 'restext://Setup_NameEntry_LabelB'
+    style: 'setup-input-label'
+  - type: 'input'
+    var: 'nameB'
+    style: 'setup-input'
+  - type: 'link'
+    label: 'restext://Common_Continue'
+    style: 'btn-brown'
+    target: 'Setup_04_PlayerNameB'
+    snapshot: false
+  else:
+  - type: 'popup'
+    layout: 'note_clear'
+    content:
+    - type: 'let'
+      var: 'nameGreeting'
+      expr: '["restext://Setup_Greeting_1", "restext://Setup_Greeting_2", "restext://Setup_Greeting_3", "restext://Setup_Greeting_4"].shuffled("Setup04Greeting")[0]'
+    - type: 'text'
+      value: '{nameGreeting}'
+    - type: 'break'
+    - type: 'text'
+      value: '{nameB}'
+      style: 'text-xl'
+    - type: 'break'
+      style: 'paragraph'
+    - type: 'text'
+      value: 'restext://Setup_WarmRegards'
+    okay: 'restext://Common_Continue'
+    target: '${players > 2 ? "Setup_05_PlayerNameC" : "Setup_07_TownNameEntry"}'
+    snapshot: false

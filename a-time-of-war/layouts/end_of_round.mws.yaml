@@ -1,0 +1,7 @@
+# No chrome regions needed — the parchment-card visual treatment (screenshot: Module-08) lives
+# entirely in style.css against .mws-popup-overlay.layout-end_of_round. Shares every CSS rule with
+# layouts/end_of_generation.mws.yaml (same card art, same sizing) via combined selectors — see that
+# file's own comment. Empty chrome file kept for discoverability, matching the convention already
+# established by layouts/choice.mws.yaml.
+format: 'mws/0.4'
+layout_id: 'end_of_round'
