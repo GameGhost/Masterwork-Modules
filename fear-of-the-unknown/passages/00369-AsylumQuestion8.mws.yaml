@@ -1,0 +1,73 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:37136
+---
+format: 'mws/0.4'
+passage_id: 'AsylumQuestion8'
+# ../en-US.restext:2761 | "You are selected to recei..."
+title: 'restext://AsylumQuestion8_001'
+# ../en-US.restext:2762 | "which has taken considera..."
+subtitle: 'restext://AsylumQuestion8_002'
+tags:
+- 'revised'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:37147
+- type: 'link'
+  # ../en-US.restext:2763 | "I would demand to see thi..."
+  label: 'restext://AsylumQuestion8_003'
+  target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37166
+  - type: 'assign'
+    var: 'test'
+    expr: 'test + 1'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37167
+  - type: 'assign'
+    var: 'next'
+    expr: 'next + 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37148
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37151
+- type: 'link'
+  # ../en-US.restext:2764 | "I silently accept it."
+  label: 'restext://AsylumQuestion8_004'
+  target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37174
+  - type: 'assign'
+    var: 'next'
+    expr: 'next + 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37152
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37155
+- type: 'link'
+  # ../en-US.restext:2765 | "I do not easily accept praise."
+  label: 'restext://AsylumQuestion8_005'
+  target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37181
+  - type: 'assign'
+    var: 'next'
+    expr: 'next + 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37156
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37159
+- type: 'link'
+  # ../en-US.restext:2766 | "Their praise is irrelevant."
+  label: 'restext://AsylumQuestion8_006'
+  target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37188
+  - type: 'assign'
+    var: 'test'
+    expr: 'test + 1'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37189
+  - type: 'assign'
+    var: 'next'
+    expr: 'next + 1'

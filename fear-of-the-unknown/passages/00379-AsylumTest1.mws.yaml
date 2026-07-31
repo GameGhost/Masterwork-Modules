@@ -1,0 +1,73 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:38164
+---
+format: 'mws/0.4'
+passage_id: 'AsylumTest1'
+tags:
+- 'revised'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:38166
+- type: 'switch'
+  on: 'next'
+  cases:
+  - match: 1
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:38170
+    - type: 'text'
+      # ../en-US.restext:2839 | "**Assessment Question No. 1**"
+      value: 'restext://AsylumTest1_001'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:38172
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:38174
+    - type: 'include_passage'
+      target: '${quest1}'
+  - match: 2
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:38180
+    - type: 'text'
+      # ../en-US.restext:2840 | "**Assessment Question No. 2**"
+      value: 'restext://AsylumTest1_002'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:38182
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:38184
+    - type: 'include_passage'
+      target: '${quest2}'
+  - match: 3
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:38190
+    - type: 'text'
+      # ../en-US.restext:2841 | "**Assessment Question No. 3**"
+      value: 'restext://AsylumTest1_003'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:38192
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:38194
+    - type: 'include_passage'
+      target: '${quest3}'
+  - match: 4
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:38200
+    - type: 'text'
+      # ../en-US.restext:2842 | "**Assessment Question No. 4**"
+      value: 'restext://AsylumTest1_004'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:38202
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:38204
+    - type: 'include_passage'
+      target: '${quest4}'
+  - match: 5
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:38208
+    - type: 'conditional'
+      if: 'curecount == "yes"'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:38210
+      - type: 'goto'
+        target: 'CountTestResults' # ./00360-CountTestResults.mws.yaml
+      else:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:38214
+      - type: 'goto'
+        target: 'AsylumTestResults' # ./00378-AsylumTestResults.mws.yaml

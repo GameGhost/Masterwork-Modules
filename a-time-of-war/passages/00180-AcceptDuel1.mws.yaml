@@ -1,0 +1,89 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:19264
+---
+format: 'mws/0.4'
+passage_id: 'AcceptDuel1'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:19269
+- type: 'text'
+  # ../en-US.restext:1574 | "**Carefully hand this Sto..."
+  value: 'restext://AcceptDuel1_001'
+# ../.source/ATimeofWar_Eng_v8.cs:19273
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:19278
+- type: 'popup'
+  # ../en-US.restext:181 | "Once you are ready, click..."
+  label: 'restext://Common_177'
+  layout: 'reveal'
+  # ../en-US.restext:182 | "Close"
+  cancel: 'restext://Common_178'
+  snapshot: true
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:19286
+  - type: 'text'
+    # ../en-US.restext:1575 | "**Code Duello**"
+    value: 'restext://AcceptDuel1_002'
+  # ../.source/ATimeofWar_Eng_v8.cs:19288
+  - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:19289
+  - type: 'text'
+    # ../en-US.restext:1576 | "I remember the morning up..."
+    value: 'restext://AcceptDuel1_003'
+  # ../.source/ATimeofWar_Eng_v8.cs:19297
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:19299
+  - type: 'text'
+    # ../en-US.restext:1577 | "This duel of **{dueltype}..."
+    value: 'restext://AcceptDuel1_004'
+  # ../.source/ATimeofWar_Eng_v8.cs:19306
+  - type: 'conditional'
+    # ../en-US.restext:52 | "science"
+    if: 'dueltype == "restext://Common_048"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:19308
+    - type: 'text'
+      # ../en-US.restext:1579 | "compare our Journal Track..."
+      value: 'restext://AcceptDuel1_006'
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:19313
+    - type: 'text'
+      # ../en-US.restext:1578 | "randomly determine a vict..."
+      value: 'restext://AcceptDuel1_005'
+  # ../.source/ATimeofWar_Eng_v8.cs:19315
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:19319
+  - type: 'text'
+    # ../en-US.restext:1580 | "**With little deliberatio..."
+    value: 'restext://AcceptDuel1_007'
+  # ../.source/ATimeofWar_Eng_v8.cs:19321
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:19323
+  - type: 'text'
+    # ../en-US.restext:152 | "I would "
+    value: 'restext://Common_148'
+  # ../.source/ATimeofWar_Eng_v8.cs:19324
+  - type: 'link'
+    # ../en-US.restext:1581 | "accept this duel."
+    label: 'restext://AcceptDuel1_008'
+    target: 'AcceptDuel1b' # ./00205-AcceptDuel1b.mws.yaml
+    snapshot: true
+  # ../.source/ATimeofWar_Eng_v8.cs:19325
+  - type: 'text'
+    value: ' '
+  # ../.source/ATimeofWar_Eng_v8.cs:19326
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:19328
+  - type: 'text'
+    # ../en-US.restext:152 | "I would "
+    value: 'restext://Common_148'
+  # ../.source/ATimeofWar_Eng_v8.cs:19329
+  - type: 'link'
+    # ../en-US.restext:1582 | "decline this duel."
+    label: 'restext://AcceptDuel1_009'
+    target: 'DuelDecline1' # ./00181-DuelDecline1.mws.yaml
+    snapshot: true

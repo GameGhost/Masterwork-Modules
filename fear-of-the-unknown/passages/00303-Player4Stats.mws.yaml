@@ -1,0 +1,49 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:32948
+---
+format: 'mws/0.4'
+passage_id: 'Player4Stats'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:32951
+- type: 'conditional'
+  if: '!agiD_submitted'
+  then:
+  - type: 'popup'
+    layout: 'prompt'
+    content:
+    - type: 'text'
+      # ../en-US.restext:228 | "Please enter the VP of yo..."
+      value: 'restext://Common_224'
+    - type: 'input'
+      label: ''
+      var: 'agiD'
+    # ../en-US.restext:277 | "Continue"
+    okay: 'restext://Common_273'
+    onclose:
+    - type: 'assign'
+      var: 'agiD_submitted'
+      expr: 'true'
+    snapshot: true
+    target: 'Player4Stats' # ./00303-Player4Stats.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:32962
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32965
+- type: 'text'
+  # ../en-US.restext:229 | "**Agility Confirmed**"
+  value: 'restext://Common_225'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32967
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32971
+- type: 'text'
+  # ../en-US.restext:2426 | "**{agiD}** is locked in a..."
+  value: 'restext://Player4Stats_001'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32975
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32977
+- type: 'link'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: 'Player4Statsb' # ./00304-Player4Statsb.mws.yaml
+  snapshot: true

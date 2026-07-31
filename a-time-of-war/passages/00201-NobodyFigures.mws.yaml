@@ -1,0 +1,65 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:20868
+---
+format: 'mws/0.4'
+passage_id: 'NobodyFigures'
+# ../en-US.restext:1739 | "Accolades for Exploration"
+title: 'restext://NobodyFigures_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:20876
+- type: 'text'
+  # ../en-US.restext:1740 | "I soon discovered that th..."
+  value: 'restext://NobodyFigures_002'
+# ../.source/ATimeofWar_Eng_v8.cs:20877
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:20879
+- type: 'text'
+  # ../en-US.restext:1741 | "While the masses could ne..."
+  value: 'restext://NobodyFigures_003'
+# ../.source/ATimeofWar_Eng_v8.cs:20880
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:20884
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  target: 'Late2ResA' # ./00195-Late2ResA.mws.yaml
+  # ../en-US.restext:182 | "Close"
+  okay: 'restext://Common_178'
+  snapshot: true
+  header:
+  # ../.source/ATimeofWar_Eng_v8.cs:20901
+  - type: 'image'
+    asset: 'image://setup/AngryMob_Icon'
+    style: 'setup-image'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:20904
+  - type: 'text'
+    # ../en-US.restext:1742 | "Remove the Suspicion Mark..."
+    value: 'restext://NobodyFigures_004'
+  # ../.source/ATimeofWar_Eng_v8.cs:20923
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:20925
+  - type: 'text'
+    # ../en-US.restext:53 | "The first time a player's..."
+    value: 'restext://Common_049'
+  # ../.source/ATimeofWar_Eng_v8.cs:20934
+  - type: 'conditional'
+    # ../en-US.restext:26 | "Unified Monarchists"
+    if: 'warwinner == "restext://Common_022"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:20936
+    - type: 'text'
+      # ../en-US.restext:121 | "**they may immediately bu..."
+      value: 'restext://Common_117'
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:20940
+    - type: 'text'
+      # ../en-US.restext:120 | "**they may immediately ta..."
+      value: 'restext://Common_116'
+  # ../.source/ATimeofWar_Eng_v8.cs:20943
+  - type: 'text'
+    value: '.'

@@ -1,0 +1,75 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:12322
+---
+format: 'mws/0.4'
+passage_id: 'OldManToken'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:12327
+- type: 'text'
+  # ../en-US.restext:5 | "**Carefully give this Sto..."
+  value: 'restext://Common_001'
+# ../.source/ATimeofWar_Eng_v8.cs:12332
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:12339
+- type: 'popup'
+  # ../en-US.restext:181 | "Once you are ready, click..."
+  label: 'restext://Common_177'
+  layout: 'reveal'
+  # ../en-US.restext:182 | "Close"
+  cancel: 'restext://Common_178'
+  snapshot: true
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:12348
+  - type: 'text'
+    # ../en-US.restext:922 | "**A Fortuitous Letter?**"
+    value: 'restext://OldManToken_001'
+  # ../.source/ATimeofWar_Eng_v8.cs:12350
+  - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:12351
+  - type: 'text'
+    # ../en-US.restext:923 | "One morning under a swirl..."
+    value: 'restext://OldManToken_002'
+  # ../.source/ATimeofWar_Eng_v8.cs:12352
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:12354
+  - type: 'text'
+    # ../en-US.restext:924 | "\"Which flag do you fly?\..."
+    value: 'restext://OldManToken_003'
+  # ../.source/ATimeofWar_Eng_v8.cs:12359
+  - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:12360
+  - type: 'conditional'
+    # ../en-US.restext:25 | "Separatists"
+    if: 'warloser == "restext://Common_021"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:12362
+    - type: 'link'
+      # ../en-US.restext:9 | "Separatists."
+      label: 'restext://Common_005'
+      target: 'OldManYes' # ./00100-OldManYes.mws.yaml
+      snapshot: true
+    # ../.source/ATimeofWar_Eng_v8.cs:12363
+    - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:12364
+    - type: 'link'
+      # ../en-US.restext:8 | "Unified Monarchists."
+      label: 'restext://Common_004'
+      target: 'OldManNo' # ./00101-OldManNo.mws.yaml
+      snapshot: true
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:12368
+    - type: 'link'
+      # ../en-US.restext:8 | "Unified Monarchists."
+      label: 'restext://Common_004'
+      target: 'OldManYes' # ./00100-OldManYes.mws.yaml
+      snapshot: true
+    # ../.source/ATimeofWar_Eng_v8.cs:12369
+    - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:12370
+    - type: 'link'
+      # ../en-US.restext:9 | "Separatists."
+      label: 'restext://Common_005'
+      target: 'OldManNo' # ./00101-OldManNo.mws.yaml
+      snapshot: true

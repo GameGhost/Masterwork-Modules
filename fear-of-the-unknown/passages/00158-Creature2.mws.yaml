@@ -1,0 +1,148 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:19192
+---
+format: 'mws/0.4'
+passage_id: 'Creature2'
+# ../en-US.restext:63 | "The Creature Re emerges"
+title: 'restext://Common_059'
+# ../en-US.restext:151 | "Middle Years"
+subtitle: 'restext://Common_147'
+tags:
+- 'HUB'
+layout: 'hub'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:19199
+- type: 'assign'
+  var: 'round'
+  expr: '8'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19200
+- type: 'assign'
+  var: 'busvp'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19201
+- type: 'assign'
+  var: 'btemp'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19203
+- type: 'conditional'
+  if: 'crpg == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19207
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:156 | "Accept"
+    okay: 'restext://Common_152'
+    header:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:19211
+    - type: 'image'
+      asset: 'image://setup/VillageChronicleCover'
+      style: 'setup-image'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:19213
+    - type: 'switch'
+      on: 'kill'
+      cases:
+      - match: 'butcher'
+        nodes:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:19215
+        - type: 'text'
+          # ../en-US.restext:1454 | "Turn to page 6 of the Vil..."
+          value: 'restext://Creature2_001'
+      - match: 'blacksmith'
+        nodes:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:19219
+        - type: 'text'
+          # ../en-US.restext:1455 | "Turn to page 7 of the Vil..."
+          value: 'restext://Creature2_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19227
+- type: 'section'
+  # ../en-US.restext:52 | "{icon:storybooktoken} **A..."
+  title: 'restext://Common_048'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19237
+  - type: 'text'
+    # ../en-US.restext:53 | "Visiting the Asylum allow..."
+    value: 'restext://Common_049'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19249
+  - type: 'link'
+    # ../en-US.restext:57 | "click here for a message"
+    label: 'restext://Common_053'
+    target: 'AsylumSignIn' # ./00244-AsylumSignIn.mws.yaml
+    snapshot: true
+# ../.source/FearoftheUnknown_Eng_v15.cs:19251
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19255
+- type: 'section'
+  # ../en-US.restext:55 | "{icon:storybooktoken} **B..."
+  title: 'restext://Common_051'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19265
+  - type: 'text'
+    # ../en-US.restext:56 | "Visiting the **House on t..."
+    value: 'restext://Common_052'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19282
+  - type: 'link'
+    # ../en-US.restext:54 | "click here for a message."
+    label: 'restext://Common_050'
+    target: 'BusinessMeet' # ./00146-BusinessMeet.mws.yaml
+    snapshot: true
+# ../.source/FearoftheUnknown_Eng_v15.cs:19284
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19289
+- type: 'section'
+  # ../en-US.restext:64 | "{icon:storybooktoken} **C..."
+  title: 'restext://Common_060'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19300
+  - type: 'text'
+    # ../en-US.restext:58 | "When taking the **Perform..."
+    value: 'restext://Common_054'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19324
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19326
+  - type: 'text'
+    # ../en-US.restext:59 | "When a player completes o..."
+    value: 'restext://Common_055'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19327
+  - type: 'link'
+    # ../en-US.restext:65 | "click here to see the con..."
+    label: 'restext://Common_061'
+    target: 'Guilt' # ./00120-Guilt.mws.yaml
+    snapshot: true
+# ../.source/FearoftheUnknown_Eng_v15.cs:19329
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19333
+- type: 'section'
+  # ../en-US.restext:66 | "**The Church**"
+  title: 'restext://Common_062'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19341
+  - type: 'link'
+    # ../en-US.restext:67 | "Click here"
+    label: 'restext://Common_063'
+    target: 'FOTU-Church' # ./00352-FOTU-Church.mws.yaml
+    snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19342
+  - type: 'text'
+    # ../en-US.restext:68 | " for an explanation of th..."
+    value: 'restext://Common_064'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19345
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19348
+- type: 'section'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19354
+  - type: 'link'
+    # ../en-US.restext:69 | "Click here at the end of ..."
+    label: 'restext://Common_065'
+    target: 'S4Asylum' # ./00021-S4Asylum.mws.yaml
+    snapshot: true

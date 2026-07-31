@@ -1,0 +1,100 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:31435
+---
+format: 'mws/0.4'
+passage_id: 'IsoVerify'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:31437
+- type: 'conditional'
+  if: 'dev == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31441
+  - type: 'text'
+    # ../en-US.restext:2306 | "**Verification of Identit..."
+    value: 'restext://IsoVerify_001'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31443
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31445
+  - type: 'conditional'
+    if: '!idA'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:31447
+    - type: 'text'
+      # ../en-US.restext:2307 | "{nameA} loses **4VP** and..."
+      value: 'restext://IsoVerify_002'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:31454
+    - type: 'break'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31456
+  - type: 'conditional'
+    if: '!idB'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:31458
+    - type: 'text'
+      # ../en-US.restext:2308 | "{nameB} loses **4VP** and..."
+      value: 'restext://IsoVerify_003'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:31465
+    - type: 'break'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31467
+  - type: 'conditional'
+    if: '!idC'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:31469
+    - type: 'conditional'
+      if: 'players >= 3'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:31471
+      - type: 'text'
+        # ../en-US.restext:2309 | "{nameC} loses **4VP** and..."
+        value: 'restext://IsoVerify_004'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:31478
+      - type: 'break'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31481
+  - type: 'conditional'
+    if: '!idD'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:31483
+    - type: 'conditional'
+      if: 'players >= 4'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:31485
+      - type: 'text'
+        # ../en-US.restext:2310 | "{nameD} loses **4VP** and..."
+        value: 'restext://IsoVerify_005'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:31492
+      - type: 'break'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31495
+  - type: 'conditional'
+    if: '!idE'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:31497
+    - type: 'conditional'
+      if: 'players >= 5'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:31499
+      - type: 'text'
+        # ../en-US.restext:2311 | "{nameE} loses **4VP** and..."
+        value: 'restext://IsoVerify_006'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:31506
+      - type: 'break'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31509
+  - type: 'conditional'
+    if: 'id == players'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:31511
+    - type: 'text'
+      # ../en-US.restext:2312 | "All other players have co..."
+      value: 'restext://IsoVerify_007'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31514
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31516
+  - type: 'link'
+    # ../en-US.restext:286 | "Click to continue..."
+    label: 'restext://Common_282'
+    target: 'PEWitchEnding' # ./00217-PEWitchEnding.mws.yaml
+    snapshot: true
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31521
+  - type: 'goto'
+    target: 'PEWitchEnding' # ./00217-PEWitchEnding.mws.yaml

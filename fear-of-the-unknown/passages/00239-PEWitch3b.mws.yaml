@@ -1,0 +1,138 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:27324
+---
+format: 'mws/0.4'
+passage_id: 'PEWitch3b'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:27328
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:156 | "Accept"
+  okay: 'restext://Common_152'
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:27332
+  - type: 'image'
+    asset: 'image://setup/S2_Obsession'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:27334
+  - type: 'conditional'
+    if: '!fate1 || String.IsNullOrEmpty(fate1)'
+    then: []
+    else:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27339
+    - type: 'text'
+      # ../en-US.restext:2012 | "If {fate1} completed thei..."
+      value: 'restext://PEWitch3b_001'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27347
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27348
+    - type: 'text'
+      # ../en-US.restext:2013 | "If they **did not**, they..."
+      value: 'restext://PEWitch3b_002'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27359
+    - type: 'break'
+      style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:27362
+  - type: 'conditional'
+    if: '!fate2 || String.IsNullOrEmpty(fate2)'
+    then: []
+    else:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27367
+    - type: 'text'
+      # ../en-US.restext:2014 | "If {fate2} completed thei..."
+      value: 'restext://PEWitch3b_003'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27375
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27376
+    - type: 'text'
+      # ../en-US.restext:2015 | "If they **did not**, they..."
+      value: 'restext://PEWitch3b_004'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27387
+    - type: 'break'
+      style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:27390
+  - type: 'conditional'
+    if: '!fate3 || String.IsNullOrEmpty(fate3)'
+    then: []
+    else:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27395
+    - type: 'text'
+      # ../en-US.restext:2016 | "If {fate3} completed thei..."
+      value: 'restext://PEWitch3b_005'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27403
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27404
+    - type: 'text'
+      # ../en-US.restext:2017 | "If they **did not**, they..."
+      value: 'restext://PEWitch3b_006'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27415
+    - type: 'break'
+      style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:27418
+  - type: 'conditional'
+    if: '!fate4 || String.IsNullOrEmpty(fate4)'
+    then: []
+    else:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27423
+    - type: 'text'
+      # ../en-US.restext:2018 | "If {fate4} completed thei..."
+      value: 'restext://PEWitch3b_007'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27431
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27432
+    - type: 'text'
+      # ../en-US.restext:2019 | "If they **did not**, they..."
+      value: 'restext://PEWitch3b_008'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27443
+    - type: 'break'
+      style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:27446
+  - type: 'conditional'
+    if: '!fate5 || String.IsNullOrEmpty(fate5)'
+    then: []
+    else:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27451
+    - type: 'text'
+      # ../en-US.restext:2020 | "If {fate5} completed thei..."
+      value: 'restext://PEWitch3b_009'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27459
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27460
+    - type: 'text'
+      # ../en-US.restext:2021 | "If they **did not**, they..."
+      value: 'restext://PEWitch3b_010'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27471
+    - type: 'break'
+      style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:27474
+  - type: 'conditional'
+    if: '!fate6 || String.IsNullOrEmpty(fate6)'
+    then: []
+    else:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27479
+    - type: 'text'
+      # ../en-US.restext:2022 | "If {fate6} completed thei..."
+      value: 'restext://PEWitch3b_011'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27487
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27488
+    - type: 'text'
+      # ../en-US.restext:2023 | "If they **did not**, they..."
+      value: 'restext://PEWitch3b_012'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27499
+    - type: 'break'
+      style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27503
+- type: 'text'
+  # ../en-US.restext:2024 | "Discard and return ALL ot..."
+  value: 'restext://PEWitch3b_013'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27509
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27511
+- type: 'link'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: 'PEExplanation2' # ./00231-PEExplanation2.mws.yaml
+  snapshot: true

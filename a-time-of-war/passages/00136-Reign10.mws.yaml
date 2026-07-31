@@ -1,0 +1,153 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:15081
+---
+format: 'mws/0.4'
+passage_id: 'Reign10'
+tags:
+- 'Incomplete'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:15086
+- type: 'text'
+  # ../en-US.restext:1124 | "**Carefully pick up this ..."
+  value: 'restext://Reign10_001'
+# ../.source/ATimeofWar_Eng_v8.cs:15089
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:15091
+- type: 'text'
+  value: '{'
+# ../.source/ATimeofWar_Eng_v8.cs:15092
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:15095
+- type: 'popup'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  layout: 'reveal'
+  # ../en-US.restext:182 | "Close"
+  cancel: 'restext://Common_178'
+  snapshot: true
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:15157
+  - type: 'text'
+    # ../en-US.restext:1125 | "**Famine**"
+    value: 'restext://Reign10_002'
+  # ../.source/ATimeofWar_Eng_v8.cs:15159
+  - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:15160
+  - type: 'text'
+    # ../en-US.restext:1126 | "As the royal family's fav..."
+    value: 'restext://Reign10_003'
+  # ../.source/ATimeofWar_Eng_v8.cs:15162
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:15166
+  - type: 'text'
+    # ../en-US.restext:157 | "**The choice became clear..."
+    value: 'restext://Common_153'
+  # ../.source/ATimeofWar_Eng_v8.cs:15168
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:15171
+  - type: 'link'
+    # ../en-US.restext:1127 | "Choice 1"
+    label: 'restext://Reign10_005'
+    target: 'Reign1b' # ./00300-Reign1b.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:15101
+    - type: 'assign'
+      var: 'rc'
+      expr: '1'
+    # ../.source/ATimeofWar_Eng_v8.cs:15102
+    - type: 'conditional'
+      if: 'reigntemp == nameA'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:15104
+      - type: 'assign'
+        var: 'plareigng'
+        expr: 'plareigng + 1'
+    # ../.source/ATimeofWar_Eng_v8.cs:15106
+    - type: 'conditional'
+      if: 'reigntemp == nameB'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:15108
+      - type: 'assign'
+        var: 'plbreigng'
+        expr: 'plbreigng + 1'
+    # ../.source/ATimeofWar_Eng_v8.cs:15110
+    - type: 'conditional'
+      if: 'reigntemp == nameC'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:15112
+      - type: 'assign'
+        var: 'plcreigng'
+        expr: 'plcreigng + 1'
+    # ../.source/ATimeofWar_Eng_v8.cs:15114
+    - type: 'conditional'
+      if: 'reigntemp == nameD'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:15116
+      - type: 'assign'
+        var: 'pldreigng'
+        expr: 'pldreigng + 1'
+    # ../.source/ATimeofWar_Eng_v8.cs:15118
+    - type: 'conditional'
+      if: 'reigntemp == nameE'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:15120
+      - type: 'assign'
+        var: 'plereigng'
+        expr: 'plereigng + 1'
+  # ../.source/ATimeofWar_Eng_v8.cs:15172
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:15175
+  - type: 'link'
+    # ../en-US.restext:1128 | "Choice 2"
+    label: 'restext://Reign10_006'
+    target: 'Reign1b' # ./00300-Reign1b.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:15128
+    - type: 'assign'
+      var: 'rc'
+      expr: '2'
+    # ../.source/ATimeofWar_Eng_v8.cs:15129
+    - type: 'conditional'
+      if: 'reigntemp == nameA'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:15131
+      - type: 'assign'
+        var: 'plareigne'
+        expr: 'plareigne + 1'
+    # ../.source/ATimeofWar_Eng_v8.cs:15133
+    - type: 'conditional'
+      if: 'reigntemp == nameB'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:15135
+      - type: 'assign'
+        var: 'plbreigne'
+        expr: 'plbreigne + 1'
+    # ../.source/ATimeofWar_Eng_v8.cs:15137
+    - type: 'conditional'
+      if: 'reigntemp == nameC'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:15139
+      - type: 'assign'
+        var: 'plcreigne'
+        expr: 'plcreigne + 1'
+    # ../.source/ATimeofWar_Eng_v8.cs:15141
+    - type: 'conditional'
+      if: 'reigntemp == nameD'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:15143
+      - type: 'assign'
+        var: 'pldreigne'
+        expr: 'pldreigne + 1'
+    # ../.source/ATimeofWar_Eng_v8.cs:15145
+    - type: 'conditional'
+      if: 'reigntemp == nameE'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:15147
+      - type: 'assign'
+        var: 'plereigne'
+        expr: 'plereigne + 1'

@@ -1,0 +1,189 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:14190
+---
+format: 'mws/0.4'
+passage_id: 'SeedGUNS'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:14192
+- type: 'switch'
+  on: 'townname'
+  cases:
+  - match: 'Paradox'
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:14194
+    - type: 'assign'
+      var: 'war'
+      expr: '1'
+  - match: 'Destruction'
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:14198
+    - type: 'assign'
+      var: 'war'
+      expr: '2'
+# ../.source/ATimeofWar_Eng_v8.cs:14200
+- type: 'switch'
+  on: 'gunsbonus'
+  cases:
+  - match: 1
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:14204
+    - type: 'text'
+      # ../en-US.restext:204 | "**Knowledge Bonus**"
+      value: 'restext://Common_200'
+    # ../.source/ATimeofWar_Eng_v8.cs:14206
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:14208
+    - type: 'text'
+      # ../en-US.restext:1076 | "All players count up the ..."
+      value: 'restext://SeedGUNS_001'
+    # ../.source/ATimeofWar_Eng_v8.cs:14216
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:14220
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:24 | "Click to continue..."
+      label: 'restext://Common_020'
+      target: '${war == 1 ? "Warwarn" : "TowardsWar"}' # ./00112-Warwarn.mws.yaml, ./00014-TowardsWar.mws.yaml
+      # ../en-US.restext:182 | "Close"
+      okay: 'restext://Common_178'
+      snapshot: true
+      header:
+      # ../.source/ATimeofWar_Eng_v8.cs:14303
+      - type: 'image'
+        asset: 'image://setup/ScoreTrackMarker'
+        style: 'setup-image'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:14314
+      - type: 'let'
+        var: '_rnd_SeedGUNS_0'
+        expr: 'rand_between(2, 3, "SeedGUNS_0")'
+      # ../.source/ATimeofWar_Eng_v8.cs:14305
+      - type: 'text'
+        # ../en-US.restext:1077 | "Any player with a {icon:s..."
+        value: 'restext://SeedGUNS_002'
+        lets:
+        - '_rnd_SeedGUNS_0'
+  - match: 2
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:14226
+    - type: 'text'
+      # ../en-US.restext:205 | "**Ingredient Bonus**"
+      value: 'restext://Common_201'
+    # ../.source/ATimeofWar_Eng_v8.cs:14228
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:14230
+    - type: 'text'
+      # ../en-US.restext:1078 | "All players count up the ..."
+      value: 'restext://SeedGUNS_003'
+    # ../.source/ATimeofWar_Eng_v8.cs:14238
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:14242
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:24 | "Click to continue..."
+      label: 'restext://Common_020'
+      target: '${war == 1 ? "Warwarn" : "TowardsWar"}' # ./00112-Warwarn.mws.yaml, ./00014-TowardsWar.mws.yaml
+      # ../en-US.restext:182 | "Close"
+      okay: 'restext://Common_178'
+      snapshot: true
+      header:
+      # ../.source/ATimeofWar_Eng_v8.cs:14337
+      - type: 'image'
+        asset: 'image://setup/ScoreTrackMarker'
+        style: 'setup-image'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:14348
+      - type: 'let'
+        var: '_rnd_SeedGUNS_0'
+        expr: 'rand_between(2, 3, "SeedGUNS_1")'
+      # ../.source/ATimeofWar_Eng_v8.cs:14339
+      - type: 'text'
+        # ../en-US.restext:1077 | "Any player with a {icon:s..."
+        value: 'restext://SeedGUNS_002'
+        lets:
+        - '_rnd_SeedGUNS_0'
+  - match: 3
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:14248
+    - type: 'text'
+      # ../en-US.restext:206 | "**Wealth Bonus**"
+      value: 'restext://Common_202'
+    # ../.source/ATimeofWar_Eng_v8.cs:14250
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:14252
+    - type: 'text'
+      # ../en-US.restext:1079 | "All players count up the ..."
+      value: 'restext://SeedGUNS_004'
+    # ../.source/ATimeofWar_Eng_v8.cs:14260
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:14264
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:24 | "Click to continue..."
+      label: 'restext://Common_020'
+      target: '${war == 1 ? "Warwarn" : "TowardsWar"}' # ./00112-Warwarn.mws.yaml, ./00014-TowardsWar.mws.yaml
+      # ../en-US.restext:182 | "Close"
+      okay: 'restext://Common_178'
+      snapshot: true
+      header:
+      # ../.source/ATimeofWar_Eng_v8.cs:14371
+      - type: 'image'
+        asset: 'image://setup/ScoreTrackMarker'
+        style: 'setup-image'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:14382
+      - type: 'let'
+        var: '_rnd_SeedGUNS_0'
+        expr: 'rand_between(2, 3, "SeedGUNS_2")'
+      # ../.source/ATimeofWar_Eng_v8.cs:14373
+      - type: 'text'
+        # ../en-US.restext:1077 | "Any player with a {icon:s..."
+        value: 'restext://SeedGUNS_002'
+        lets:
+        - '_rnd_SeedGUNS_0'
+  default:
+  # ../.source/ATimeofWar_Eng_v8.cs:14270
+  - type: 'text'
+    # ../en-US.restext:204 | "**Knowledge Bonus**"
+    value: 'restext://Common_200'
+  # ../.source/ATimeofWar_Eng_v8.cs:14272
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:14274
+  - type: 'text'
+    # ../en-US.restext:1076 | "All players count up the ..."
+    value: 'restext://SeedGUNS_001'
+  # ../.source/ATimeofWar_Eng_v8.cs:14282
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:14286
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:24 | "Click to continue..."
+    label: 'restext://Common_020'
+    target: '${war == 1 ? "Warwarn" : "TowardsWar"}' # ./00112-Warwarn.mws.yaml, ./00014-TowardsWar.mws.yaml
+    # ../en-US.restext:182 | "Close"
+    okay: 'restext://Common_178'
+    snapshot: true
+    header:
+    # ../.source/ATimeofWar_Eng_v8.cs:14303
+    - type: 'image'
+      asset: 'image://setup/ScoreTrackMarker'
+      style: 'setup-image'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:14314
+    - type: 'let'
+      var: '_rnd_SeedGUNS_0'
+      expr: 'rand_between(2, 3, "SeedGUNS_3")'
+    # ../.source/ATimeofWar_Eng_v8.cs:14305
+    - type: 'text'
+      # ../en-US.restext:1077 | "Any player with a {icon:s..."
+      value: 'restext://SeedGUNS_002'
+      lets:
+      - '_rnd_SeedGUNS_0'

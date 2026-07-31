@@ -1,0 +1,114 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:37725
+---
+format: 'mws/0.4'
+passage_id: 'CountTestResults'
+# ../en-US.restext:8 | "Patient {question}"
+title: 'restext://Common_004'
+# ../en-US.restext:50 | "Assessment Results"
+subtitle: 'restext://Common_046'
+tags:
+- 'revised'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:37736
+- type: 'conditional'
+  conditions:
+  - if: 'question == cureplayer'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:37738
+    - type: 'text'
+      # ../en-US.restext:2704 | "The patient is perfectly ..."
+      value: 'restext://CountTestResults_004'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:37739
+    - type: 'break'
+      style: 'paragraph'
+  - if: 'test >= 3'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:37745
+    - type: 'text'
+      # ../en-US.restext:2705 | "Alas, despite such a **he..."
+      value: 'restext://CountTestResults_005'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:37759
+    - type: 'break'
+      style: 'paragraph'
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37765
+  - type: 'text'
+    # ../en-US.restext:2702 | "Uggh. "
+    value: 'restext://CountTestResults_002'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37766
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37768
+  - type: 'text'
+    # ../en-US.restext:2703 | "Perhaps it is unprofessio..."
+    value: 'restext://CountTestResults_003'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37771
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37775
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37778
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: '${round == 19 ? "Liberal" : round == 20 ? "Liberal2" : "Liberal3"}' # ./00026-Liberal.mws.yaml, ./00050-Liberal2.mws.yaml, ./00051-Liberal3.mws.yaml
+  # ../en-US.restext:275 | "Close"
+  okay: 'restext://Common_271'
+  snapshot: true
+  header:
+  - type: 'conditional'
+    conditions:
+    - if: 'question == cureplayer'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:37806
+      - type: 'image'
+        asset: 'image://setup/S2_BlessingOfTheStrigoi'
+        style: 'setup-image'
+    - if: 'test >= 3'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:37824
+      - type: 'image'
+        asset: 'image://setup/ScoreTrackMarker'
+        style: 'setup-image'
+    else:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:37846
+    - type: 'image'
+      asset: 'image://setup/ScoreTrackMarker'
+      style: 'setup-image'
+  content:
+  - type: 'conditional'
+    conditions:
+    - if: 'question == cureplayer'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:37809
+      - type: 'text'
+        # ../en-US.restext:2707 | "You suffer no penalty. _T..."
+        value: 'restext://CountTestResults_008'
+    - if: 'test >= 3'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:37827
+      - type: 'text'
+        # ../en-US.restext:2708 | "Immediately place one of ..."
+        value: 'restext://CountTestResults_009'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:37834
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:37836
+      - type: 'text'
+        # ../en-US.restext:51 | "Then, return your {icon:c..."
+        value: 'restext://Common_047'
+    else:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:37851
+    - type: 'text'
+      # ../en-US.restext:2706 | "**Lose 1VP.** Then, immed..."
+      value: 'restext://CountTestResults_006'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:37860
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:37862
+    - type: 'text'
+      # ../en-US.restext:51 | "Then, return your {icon:c..."
+      value: 'restext://Common_047'

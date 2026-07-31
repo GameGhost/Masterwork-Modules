@@ -1,0 +1,46 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:13669
+---
+format: 'mws/0.4'
+passage_id: 'NameEntryE'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:13671
+- type: 'assign'
+  var: 'nameE'
+  expr: 'global:nameE'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13672
+- type: 'assign'
+  var: 'players'
+  expr: '5'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13676
+- type: 'section'
+  # ../en-US.restext:310 | "ERROR!"
+  title: 'restext://Common_306'
+  style: 'hub-card'
+  content: []
+# ../.source/FearoftheUnknown_Eng_v15.cs:13678
+- type: 'text'
+  # ../en-US.restext:174 | "Welcome to My Father's Work,"
+  value: 'restext://Common_170'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13679
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13680
+- type: 'text'
+  # ../en-US.restext:1125 | "{nameE}."
+  value: 'restext://NameEntryE_001'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13682
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13684
+- type: 'text'
+  # ../en-US.restext:175 | "Be sure to leave your mar..."
+  value: 'restext://Common_171'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13685
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13690
+- type: 'link'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: 'NameEntryTown' # ./00187-NameEntryTown.mws.yaml
+  snapshot: true

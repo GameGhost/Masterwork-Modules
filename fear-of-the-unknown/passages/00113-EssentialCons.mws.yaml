@@ -1,0 +1,138 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:13794
+---
+format: 'mws/0.4'
+passage_id: 'EssentialCons'
+# ../en-US.restext:71 | "Arise, My Love"
+title: 'restext://Common_067'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:13804
+- type: 'text'
+  # ../en-US.restext:302 | "**Journal of {randomname}..."
+  value: 'restext://Common_298'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13814
+- type: 'assign'
+  var: 'saltsp'
+  expr: 'rand_between(1, 2, "EssentialCons_0")'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13813
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13816
+- type: 'text'
+  # ../en-US.restext:72 | "Whether for love or purpo..."
+  value: 'restext://Common_068'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13824
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13826
+- type: 'text'
+  # ../en-US.restext:1139 | "With a billow of emerald ..."
+  value: 'restext://EssentialCons_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13828
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13830
+- type: 'conditional'
+  if: 'saltsp == 1'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13832
+  - type: 'text'
+    # ../en-US.restext:1143 | "I could scarcely trust my..."
+    value: 'restext://EssentialCons_007'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13834
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13836
+  - type: 'text'
+    # ../en-US.restext:1144 | "I embraced them, and thou..."
+    value: 'restext://EssentialCons_008'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13838
+  - type: 'break'
+    style: 'paragraph'
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13843
+  - type: 'text'
+    # ../en-US.restext:1140 | "However, I find that thei..."
+    value: 'restext://EssentialCons_004'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13846
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13848
+  - type: 'text'
+    # ../en-US.restext:1141 | "I observed in abject horr..."
+    value: 'restext://EssentialCons_005'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13849
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13851
+  - type: 'text'
+    # ../en-US.restext:1142 | "Generally though, they ar..."
+    value: 'restext://EssentialCons_006'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13852
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13855
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13858
+- type: 'popup'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  layout: 'reveal'
+  # ../en-US.restext:275 | "Close"
+  cancel: 'restext://Common_271'
+  snapshot: true
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13904
+  - type: 'image'
+    asset: 'image://setup/Spouse'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13881
+  - type: 'conditional'
+    if: 'round == 19'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:13883
+    - type: 'section'
+      style: 'panel'
+      content: []
+    - type: 'link'
+      # ../en-US.restext:277 | "Continue"
+      label: 'restext://Common_273'
+      target: 'LiberalEvent3' # ./00258-LiberalEvent3.mws.yaml
+      snapshot: true
+    else:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:13890
+    - type: 'conditional'
+      if: 'EssentialConsnextpsg == "" || EssentialConsnextpsg == 0'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:13892
+      - type: 'assign'
+        var: 'EssentialConsnextpsg'
+        expr: '["LiberalEvent", "LiberalTaxes"].shuffled("EssentialCons_1")[0]'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:13894
+    - type: 'section'
+      style: 'panel'
+      content: []
+    - type: 'link'
+      # ../en-US.restext:277 | "Continue"
+      label: 'restext://Common_273'
+      target: '${EssentialConsnextpsg}'
+      snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13905
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13907
+  - type: 'text'
+    # ../en-US.restext:1145 | "Any player who chose to p..."
+    value: 'restext://EssentialCons_009'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13914
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13916
+  - type: 'conditional'
+    if: 'saltsp == 2'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:13918
+    - type: 'text'
+      # ../en-US.restext:1146 | "They also **gain 1** {ico..."
+      value: 'restext://EssentialCons_010'

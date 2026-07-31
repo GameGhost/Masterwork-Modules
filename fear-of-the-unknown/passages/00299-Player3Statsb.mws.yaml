@@ -1,0 +1,49 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:32740
+---
+format: 'mws/0.4'
+passage_id: 'Player3Statsb'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:32743
+- type: 'conditional'
+  if: '!strC_submitted'
+  then:
+  - type: 'popup'
+    layout: 'prompt'
+    content:
+    - type: 'text'
+      # ../en-US.restext:230 | "Please enter the VP of yo..."
+      value: 'restext://Common_226'
+    - type: 'input'
+      label: ''
+      var: 'strC'
+    # ../en-US.restext:277 | "Continue"
+    okay: 'restext://Common_273'
+    onclose:
+    - type: 'assign'
+      var: 'strC_submitted'
+      expr: 'true'
+    snapshot: true
+    target: 'Player3Statsb' # ./00299-Player3Statsb.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:32754
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32757
+- type: 'text'
+  # ../en-US.restext:231 | "**Strength Confirmed**"
+  value: 'restext://Common_227'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32759
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32763
+- type: 'text'
+  # ../en-US.restext:2409 | "**{strC}** is locked in a..."
+  value: 'restext://Player3Statsb_001'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32767
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32769
+- type: 'link'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: 'Player3Statsc' # ./00300-Player3Statsc.mws.yaml
+  snapshot: true

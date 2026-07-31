@@ -1,0 +1,116 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:27888
+---
+format: 'mws/0.4'
+passage_id: 'AsylumSignIn'
+# ../en-US.restext:2046 | "Visit to the Sanatorium"
+title: 'restext://AsylumSignIn_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:27896
+- type: 'text'
+  # ../en-US.restext:2047 | "The meager facility appea..."
+  value: 'restext://AsylumSignIn_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27900
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27904
+- type: 'text'
+  # ../en-US.restext:2048 | "**I gave my name to the r..."
+  value: 'restext://AsylumSignIn_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27906
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27909
+- type: 'link'
+  label: '{nameA}'
+  target: 'AsylumMeet' # ./00152-AsylumMeet.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:27942
+  - type: 'assign'
+    var: 'tempas'
+    expr: 'nameA'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:27943
+  - type: 'assign'
+    var: 'Av'
+    expr: 'Av + 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27910
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27913
+- type: 'link'
+  label: '{nameB}'
+  target: 'AsylumMeet' # ./00152-AsylumMeet.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:27950
+  - type: 'assign'
+    var: 'tempas'
+    expr: 'nameB'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:27951
+  - type: 'assign'
+    var: 'Bv'
+    expr: 'Bv + 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27914
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27916
+- type: 'conditional'
+  if: 'players > 2'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:27919
+  - type: 'link'
+    label: '{nameC}'
+    target: 'AsylumMeet' # ./00152-AsylumMeet.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27958
+    - type: 'assign'
+      var: 'tempas'
+      expr: 'nameC'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27959
+    - type: 'assign'
+      var: 'Cv'
+      expr: 'Cv + 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27921
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27923
+- type: 'conditional'
+  if: 'players > 3'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:27926
+  - type: 'link'
+    label: '{nameD}'
+    target: 'AsylumMeet' # ./00152-AsylumMeet.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27966
+    - type: 'assign'
+      var: 'tempas'
+      expr: 'nameD'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27967
+    - type: 'assign'
+      var: 'Dv'
+      expr: 'Dv + 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27928
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27930
+- type: 'conditional'
+  if: 'players > 4'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:27933
+  - type: 'link'
+    label: '{nameE}'
+    target: 'AsylumMeet' # ./00152-AsylumMeet.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27974
+    - type: 'assign'
+      var: 'tempas'
+      expr: 'nameE'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27975
+    - type: 'assign'
+      var: 'Ev'
+      expr: 'Ev + 1'

@@ -1,0 +1,163 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:3282
+---
+format: 'mws/0.4'
+passage_id: 'CreatureIntro'
+# ../en-US.restext:479 | "GENERATION II: Towards Ci..."
+title: 'restext://CreatureIntro_001'
+tags:
+- 'INTRO'
+layout: 'introduction'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:3296
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:3298
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB].shuffled("CreatureIntro_0")[0]'
+  - match: 3
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:3302
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC].shuffled("CreatureIntro_1")[0]'
+  - match: 4
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:3306
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC, nameD].shuffled("CreatureIntro_2")[0]'
+  - match: 5
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:3310
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC, nameD, nameE].shuffled("CreatureIntro_3")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3312
+- type: 'assign'
+  var: 'randomname'
+  expr: 'randomplayer'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3294
+- type: 'text'
+  # ../en-US.restext:480 | "**Letter from** **{random..."
+  value: 'restext://CreatureIntro_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3322
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3324
+- type: 'text'
+  # ../en-US.restext:481 | "As mariners are wont to s..."
+  value: 'restext://CreatureIntro_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3327
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3329
+- type: 'text'
+  # ../en-US.restext:482 | "My family's manor is set ..."
+  value: 'restext://CreatureIntro_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3330
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3332
+- type: 'text'
+  # ../en-US.restext:483 | "Whatever the cause, it ap..."
+  value: 'restext://CreatureIntro_005'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3333
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3335
+- type: 'text'
+  # ../en-US.restext:484 | "The underlying symptoms o..."
+  value: 'restext://CreatureIntro_006'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3336
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3338
+- type: 'text'
+  # ../en-US.restext:485 | "So, like a wolf licking i..."
+  value: 'restext://CreatureIntro_007'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3341
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3343
+- type: 'text'
+  # ../en-US.restext:486 | "That is, until the Creatu..."
+  value: 'restext://CreatureIntro_008'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3347
+- type: 'assign'
+  var: 'mog'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3348
+- type: 'assign'
+  var: 'path4'
+  expr: '"PECreature"'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3345
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3350
+- type: 'link'
+  # ../en-US.restext:80 | "Continue..."
+  label: 'restext://Common_076'
+  target: 'CreatureDemands' # ./00046-CreatureDemands.mws.yaml
+  snapshot: true
+# ../.source/FearoftheUnknown_Eng_v15.cs:3352
+- type: 'assign'
+  var: 'liber'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3353
+- type: 'assign'
+  var: 'conse'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3354
+- type: 'assign'
+  var: 'asupg'
+  expr: 'rand_between(1, 2, "CreatureIntro_4")'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3355
+- type: 'assign'
+  var: 'asylumup'
+  # ../en-US.restext:61 | Common_057 | "Asylum Labor Union"
+  # ../en-US.restext:62 | Common_058 | "Key to the Asylum"
+  # ../en-US.restext:487 | CreatureIntro_012 | "Asylum Share"
+  expr: '["restext://Common_057", "restext://Common_058", "restext://CreatureIntro_012"].shuffled("CreatureIntro_5")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3356
+- type: 'assign'
+  var: 'did1'
+  # ../en-US.restext:488 | CreatureIntro_013 | "Puppy"
+  # ../en-US.restext:489 | CreatureIntro_014 | "Bride"
+  # ../en-US.restext:490 | CreatureIntro_015 | "Puppy and Bride"
+  expr: '["restext://CreatureIntro_013", "restext://CreatureIntro_014", "restext://CreatureIntro_015"].shuffled("CreatureIntro_6")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3357
+- type: 'assign'
+  var: 'curecount'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3358
+- type: 'assign'
+  var: 'bhome'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3359
+- type: 'assign'
+  var: 'crpg'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3360
+- type: 'assign'
+  var: 'Acont'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3361
+- type: 'assign'
+  var: 'Bcont'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3362
+- type: 'assign'
+  var: 'Ccont'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3363
+- type: 'assign'
+  var: 'Dcont'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3364
+- type: 'assign'
+  var: 'Econt'
+  expr: '0'

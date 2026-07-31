@@ -1,0 +1,64 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:9703
+---
+format: 'mws/0.4'
+passage_id: 'Witchwolf2Hex'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:9705
+- type: 'conditional'
+  conditions:
+  - if: 'witch == nameA'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:9707
+    - type: 'assign'
+      var: 'witch2'
+      expr: 'witA2'
+  - if: 'witch == nameB'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:9711
+    - type: 'assign'
+      var: 'witch2'
+      expr: 'witB2'
+  - if: 'witch == nameC'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:9715
+    - type: 'assign'
+      var: 'witch2'
+      expr: 'witC2'
+  - if: 'witch == nameD'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:9719
+    - type: 'assign'
+      var: 'witch2'
+      expr: 'witD2'
+  - if: 'witch == nameE'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:9723
+    - type: 'assign'
+      var: 'witch2'
+      expr: 'witE2'
+  - if: 'witch == wsuspect'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:9727
+    - type: 'assign'
+      var: 'witch2'
+      expr: 'witAI2'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9734
+- type: 'image'
+  asset: 'image://setup/S2_WitchHexToken'
+  style: 'setup-image'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9735
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9736
+- type: 'text'
+  # ../en-US.restext:800 | "Move the **Witch's Hex** ..."
+  value: 'restext://Witchwolf2Hex_001'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9750
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9752
+- type: 'link'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: 'Foreign2' # ./00039-Foreign2.mws.yaml
+  snapshot: true

@@ -1,0 +1,232 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:15855
+---
+format: 'mws/0.4'
+passage_id: 'FPSanity3'
+# ../en-US.restext:1291 | "Pressing the Boundaries"
+title: 'restext://FPSanity3_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:15863
+- type: 'conditional'
+  if: 'onecount >= players'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15865
+  - type: 'assign'
+    var: 'fpsanity3'
+    expr: '1'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15866
+  - type: 'goto'
+    target: 'FP1OverBonus' # ./00140-FP1OverBonus.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:15871
+- type: 'text'
+  # ../en-US.restext:77 | "**Choose your name and be..."
+  value: 'restext://Common_073'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15873
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15875
+- type: 'switch'
+  on: 'Aconfirm'
+  cases:
+  - match: 0
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15878
+    - type: 'link'
+      label: '{nameA}'
+      target: 'FPSanity3signin' # ./00135-FPSanity3signin.mws.yaml
+      snapshot: true
+      onclick:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15948
+      - type: 'assign'
+        var: 'fpsanity3'
+        expr: '1'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15949
+      - type: 'assign'
+        var: 'Aconfirm'
+        expr: '1'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15950
+      - type: 'assign'
+        var: 'plA'
+        expr: '3'
+  - match: 1
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15883
+    - type: 'link'
+      label: '{nameA}'
+      target: 'FPNo' # ./00137-FPNo.mws.yaml
+      snapshot: true
+      onclick:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15957
+      - type: 'assign'
+        var: 'tempname'
+        expr: 'nameA'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15885
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15887
+- type: 'switch'
+  on: 'Bconfirm'
+  cases:
+  - match: 0
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15890
+    - type: 'link'
+      label: '{nameB}'
+      target: 'FPSanity3signin' # ./00135-FPSanity3signin.mws.yaml
+      snapshot: true
+      onclick:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15964
+      - type: 'assign'
+        var: 'fpsanity3'
+        expr: '1'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15965
+      - type: 'assign'
+        var: 'Bconfirm'
+        expr: '1'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15966
+      - type: 'assign'
+        var: 'plB'
+        expr: '3'
+  - match: 1
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15895
+    - type: 'link'
+      label: '{nameB}'
+      target: 'FPNo' # ./00137-FPNo.mws.yaml
+      snapshot: true
+      onclick:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15973
+      - type: 'assign'
+        var: 'tempname'
+        expr: 'nameB'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15897
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15899
+- type: 'conditional'
+  if: 'players > 2'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15901
+  - type: 'switch'
+    on: 'Cconfirm'
+    cases:
+    - match: 0
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15904
+      - type: 'link'
+        label: '{nameC}'
+        target: 'FPSanity3signin' # ./00135-FPSanity3signin.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15980
+        - type: 'assign'
+          var: 'fpsanity3'
+          expr: '1'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15981
+        - type: 'assign'
+          var: 'Cconfirm'
+          expr: '1'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15982
+        - type: 'assign'
+          var: 'plC'
+          expr: '3'
+    - match: 1
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15909
+      - type: 'link'
+        label: '{nameC}'
+        target: 'FPNo' # ./00137-FPNo.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15989
+        - type: 'assign'
+          var: 'tempname'
+          expr: 'nameC'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15911
+  - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15913
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15914
+- type: 'conditional'
+  if: 'players > 3'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15916
+  - type: 'switch'
+    on: 'Dconfirm'
+    cases:
+    - match: 0
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15919
+      - type: 'link'
+        label: '{nameD}'
+        target: 'FPSanity3signin' # ./00135-FPSanity3signin.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15996
+        - type: 'assign'
+          var: 'fpsanity3'
+          expr: '1'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15997
+        - type: 'assign'
+          var: 'Dconfirm'
+          expr: '1'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15998
+        - type: 'assign'
+          var: 'plD'
+          expr: '3'
+    - match: 1
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15924
+      - type: 'link'
+        label: '{nameD}'
+        target: 'FPNo' # ./00137-FPNo.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:16005
+        - type: 'assign'
+          var: 'tempname'
+          expr: 'nameD'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15926
+  - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15928
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15929
+- type: 'conditional'
+  if: 'players > 4'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15931
+  - type: 'switch'
+    on: 'Econfirm'
+    cases:
+    - match: 0
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15934
+      - type: 'link'
+        label: '{nameE}'
+        target: 'FPSanity3signin' # ./00135-FPSanity3signin.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:16012
+        - type: 'assign'
+          var: 'fpsanity3'
+          expr: '1'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:16013
+        - type: 'assign'
+          var: 'Econfirm'
+          expr: '1'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:16014
+        - type: 'assign'
+          var: 'plE'
+          expr: '3'
+    - match: 1
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15939
+      - type: 'link'
+        label: '{nameE}'
+        target: 'FPNo' # ./00137-FPNo.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:16021
+        - type: 'assign'
+          var: 'tempname'
+          expr: 'nameE'

@@ -1,0 +1,79 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:19031
+---
+format: 'mws/0.4'
+passage_id: 'Player1BeenSabotaged'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:19036
+- type: 'text'
+  # ../en-US.restext:1544 | "**Carefully hand this Sto..."
+  value: 'restext://Player1BeenSabotaged_001'
+# ../.source/ATimeofWar_Eng_v8.cs:19040
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:19045
+- type: 'popup'
+  # ../en-US.restext:181 | "Once you are ready, click..."
+  label: 'restext://Common_177'
+  layout: 'reveal'
+  # ../en-US.restext:182 | "Close"
+  cancel: 'restext://Common_178'
+  snapshot: true
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:19054
+  - type: 'text'
+    # ../en-US.restext:1545 | "**A Noble Retort**"
+    value: 'restext://Player1BeenSabotaged_002'
+  # ../.source/ATimeofWar_Eng_v8.cs:19056
+  - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:19057
+  - type: 'text'
+    # ../en-US.restext:1546 | "Being a learned individua..."
+    value: 'restext://Player1BeenSabotaged_003'
+  # ../.source/ATimeofWar_Eng_v8.cs:19064
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:19066
+  - type: 'text'
+    # ../en-US.restext:1547 | "As a stabled horse would ..."
+    value: 'restext://Player1BeenSabotaged_004'
+  # ../.source/ATimeofWar_Eng_v8.cs:19067
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:19071
+  - type: 'text'
+    # ../en-US.restext:1548 | "**I decided that in respo..."
+    value: 'restext://Player1BeenSabotaged_005'
+  # ../.source/ATimeofWar_Eng_v8.cs:19073
+  - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:19074
+  - type: 'text'
+    # ../en-US.restext:1549 | "I would seek satisfaction "
+    value: 'restext://Player1BeenSabotaged_006'
+  # ../.source/ATimeofWar_Eng_v8.cs:19075
+  - type: 'link'
+    # ../en-US.restext:1550 | "through a duel."
+    label: 'restext://Player1BeenSabotaged_007'
+    target: 'DuelRules1' # ./00178-DuelRules1.mws.yaml
+    snapshot: true
+  # ../.source/ATimeofWar_Eng_v8.cs:19076
+  - type: 'text'
+    # ../en-US.restext:1551 | " _(This could result in d..."
+    value: 'restext://Player1BeenSabotaged_008'
+  # ../.source/ATimeofWar_Eng_v8.cs:19081
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:19083
+  - type: 'text'
+    # ../en-US.restext:152 | "I would "
+    value: 'restext://Common_148'
+  # ../.source/ATimeofWar_Eng_v8.cs:19084
+  - type: 'link'
+    # ../en-US.restext:1552 | "formally denounce these j..."
+    label: 'restext://Player1BeenSabotaged_010'
+    target: 'DuelDenounce1' # ./00179-DuelDenounce1.mws.yaml
+    snapshot: true
+  # ../.source/ATimeofWar_Eng_v8.cs:19085
+  - type: 'text'
+    # ../en-US.restext:1553 | " _(Through a strongly-wor..."
+    value: 'restext://Player1BeenSabotaged_011'

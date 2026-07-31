@@ -1,0 +1,152 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:6960
+---
+format: 'mws/0.4'
+passage_id: 'TimeWarp'
+# ../en-US.restext:237 | "Time Shifts"
+title: 'restext://Common_233'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:6967
+- type: 'let'
+  var: '_rnd_TimeWarp_0'
+  # ../en-US.restext:652 | TimeWarp_002 | "I could see a rift - a sh..."
+  # ../en-US.restext:653 | TimeWarp_003 | "After conducting my busin..."
+  # ../en-US.restext:654 | TimeWarp_004 | "A bolt of lightning carve..."
+  # ../en-US.restext:655 | TimeWarp_005 | "My stomach fell. A lump c..."
+  expr: '["restext://TimeWarp_002", "restext://TimeWarp_003", "restext://TimeWarp_004", "restext://TimeWarp_005"].shuffled("TimeWarp_0")[0]'
+# ../.source/ATimeofWar_Eng_v8.cs:6967
+- type: 'text'
+  value: '{_rnd_TimeWarp_0}'
+  lets:
+  - '_rnd_TimeWarp_0'
+# ../.source/ATimeofWar_Eng_v8.cs:6973
+- type: 'assign'
+  var: 'twcode'
+  expr: '[17, 18, 19, 20, 21, 22]'
+# ../.source/ATimeofWar_Eng_v8.cs:6974
+- type: 'switch'
+  on: 'cont'
+  cases:
+  - match: 17
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:6976
+    - type: 'assign'
+      var: 'twcode'
+      expr: 'twcode.except(17)'
+  - match: 18
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:6980
+    - type: 'assign'
+      var: 'twcode'
+      expr: 'twcode.except(18)'
+  - match: 19
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:6984
+    - type: 'assign'
+      var: 'twcode'
+      expr: 'twcode.except(19)'
+  - match: 20
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:6988
+    - type: 'assign'
+      var: 'twcode'
+      expr: 'twcode.except(20)'
+  - match: 21
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:6992
+    - type: 'assign'
+      var: 'twcode'
+      expr: 'twcode.except(21)'
+  - match: 22
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:6996
+    - type: 'assign'
+      var: 'twcode'
+      expr: 'twcode.except(22)'
+# ../.source/ATimeofWar_Eng_v8.cs:6998
+- type: 'assign'
+  var: 'twcode'
+  expr: 'twcode.shuffled("TimeWarp_1")'
+# ../.source/ATimeofWar_Eng_v8.cs:6972
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:7001
+- type: 'text'
+  # ../en-US.restext:238 | "The sky cast a crimson gl..."
+  value: 'restext://Common_234'
+# ../.source/ATimeofWar_Eng_v8.cs:7003
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:7008
+- type: 'popup'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  layout: 'reveal'
+  # ../en-US.restext:182 | "Close"
+  cancel: 'restext://Common_178'
+  snapshot: true
+  header:
+  # ../.source/ATimeofWar_Eng_v8.cs:7059
+  - type: 'image'
+    asset: 'image://setup/ScoreTrackMarker'
+    style: 'setup-image'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:7036
+  - type: 'assign'
+    var: 'cont'
+    expr: 'twcode[0]'
+  # ../.source/ATimeofWar_Eng_v8.cs:7037
+  - type: 'conditional'
+    conditions:
+    - if: 'search >= total'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:7039
+      - type: 'section'
+        style: 'panel'
+        content: []
+      - type: 'link'
+        # ../en-US.restext:169 | "Continue"
+        label: 'restext://Common_165'
+        target: 'WarningEvent2' # ./00057-WarningEvent2.mws.yaml
+        snapshot: true
+    - if: 'round == 14'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:7044
+      - type: 'section'
+        style: 'panel'
+        content: []
+      - type: 'link'
+        # ../en-US.restext:169 | "Continue"
+        label: 'restext://Common_165'
+        target: 'Warning2' # ./00056-Warning2.mws.yaml
+        snapshot: true
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:7049
+    - type: 'section'
+      style: 'panel'
+      content: []
+    - type: 'link'
+      # ../en-US.restext:169 | "Continue"
+      label: 'restext://Common_165'
+      target: 'Warning3' # ./00059-Warning3.mws.yaml
+      snapshot: true
+  # ../.source/ATimeofWar_Eng_v8.cs:7060
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:7064
+  - type: 'text'
+    # ../en-US.restext:656 | "**Lost in Time** - All pl..."
+    value: 'restext://TimeWarp_007'
+  # ../.source/ATimeofWar_Eng_v8.cs:7074
+  - type: 'let'
+    var: '_rnd_TimeWarp_0'
+    expr: 'rand_between(1, 2, "TimeWarp_2")'
+  # ../.source/ATimeofWar_Eng_v8.cs:7068
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:7070
+  - type: 'text'
+    # ../en-US.restext:657 | "The player who took the a..."
+    value: 'restext://TimeWarp_008'
+    lets:
+    - '_rnd_TimeWarp_0'

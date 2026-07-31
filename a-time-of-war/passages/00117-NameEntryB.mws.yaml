@@ -1,0 +1,51 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:13727
+---
+format: 'mws/0.4'
+passage_id: 'NameEntryB'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:13729
+- type: 'assign'
+  var: 'nameB'
+  expr: 'global:nameB'
+# ../.source/ATimeofWar_Eng_v8.cs:13730
+- type: 'assign'
+  var: 'players'
+  expr: '2'
+# ../.source/ATimeofWar_Eng_v8.cs:13732
+- type: 'text'
+  # ../en-US.restext:115 | "Welcome to My Father's Work, "
+  value: 'restext://Common_111'
+# ../.source/ATimeofWar_Eng_v8.cs:13733
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:13734
+- type: 'text'
+  # ../en-US.restext:1023 | "{nameB}."
+  value: 'restext://NameEntryB_001'
+# ../.source/ATimeofWar_Eng_v8.cs:13736
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:13738
+- type: 'text'
+  # ../en-US.restext:1024 | "Please enjoy your experience."
+  value: 'restext://NameEntryB_002'
+# ../.source/ATimeofWar_Eng_v8.cs:13739
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:13745
+- type: 'conditional'
+  if: 'players > 2'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:13747
+  - type: 'link'
+    # ../en-US.restext:138 | "Click to Continue..."
+    label: 'restext://Common_134'
+    target: 'NameEntryC' # ./00118-NameEntryC.mws.yaml
+    snapshot: true
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:13751
+  - type: 'link'
+    # ../en-US.restext:138 | "Click to Continue..."
+    label: 'restext://Common_134'
+    target: 'Start2' # ./00001-Start2.mws.yaml
+    snapshot: true

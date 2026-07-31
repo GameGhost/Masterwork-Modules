@@ -1,0 +1,13 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:38229
+---
+format: 'mws/0.4'
+passage_id: 'VarEndingsPassage'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:38231
+- type: 'assign'
+  var: 'winner'
+  expr: 'global:winnerName'
+# ../.source/FearoftheUnknown_Eng_v15.cs:38233
+- type: 'goto'
+  target: '${ending}'

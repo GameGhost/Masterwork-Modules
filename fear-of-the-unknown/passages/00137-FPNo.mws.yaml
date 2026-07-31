@@ -1,0 +1,43 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:16540
+---
+format: 'mws/0.4'
+passage_id: 'FPNo'
+# ../en-US.restext:1322 | "Overambitious"
+title: 'restext://FPNo_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:16549
+- type: 'text'
+  # ../en-US.restext:1323 | "**Journal of {tempname} -..."
+  value: 'restext://FPNo_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16558
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16560
+- type: 'text'
+  # ../en-US.restext:1324 | "Even having already deter..."
+  value: 'restext://FPNo_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16562
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16564
+- type: 'text'
+  # ../en-US.restext:1325 | "Today, the townspeople wh..."
+  value: 'restext://FPNo_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16565
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16569
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:309 | "Click to return..."
+  label: 'restext://Common_305'
+  target: '${round == 1 ? "Mania" : round == 2 ? "Mania2" : "Mania3"}' # ./00005-Mania.mws.yaml, ./00036-Mania2.mws.yaml, ./00037-Mania3.mws.yaml
+  # ../en-US.restext:275 | "Close"
+  okay: 'restext://Common_271'
+  snapshot: true
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:16588
+  - type: 'text'
+    # ../en-US.restext:1326 | "**Immediately gain 1** {i..."
+    value: 'restext://FPNo_005'

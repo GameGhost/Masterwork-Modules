@@ -1,0 +1,191 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:8256
+---
+format: 'mws/0.4'
+passage_id: 'ExpNo'
+# ../en-US.restext:765 | "The Creature Escapes"
+title: 'restext://ExpNo_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:8266
+- type: 'text'
+  # ../en-US.restext:766 | "**Journal of** _name ille..."
+  value: 'restext://ExpNo_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8278
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8280
+- type: 'text'
+  # ../en-US.restext:767 | "I saw the silhouette of t..."
+  value: 'restext://ExpNo_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8283
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8285
+- type: 'text'
+  # ../en-US.restext:768 | "I reached for my pistol, ..."
+  value: 'restext://ExpNo_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8286
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8288
+- type: 'conditional'
+  if: 'round == 16'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8292
+  - type: 'popup'
+    # ../en-US.restext:286 | "Click to continue..."
+    label: 'restext://Common_282'
+    layout: 'reveal'
+    # ../en-US.restext:275 | "Close"
+    cancel: 'restext://Common_271'
+    snapshot: true
+    header:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8366
+    - type: 'image'
+      asset: 'image://setup/S2_HuntTokenFRONT'
+      style: 'setup-image'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8331
+    - type: 'switch'
+      on: 'round'
+      cases:
+      - match: 16
+        nodes:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8333
+        - type: 'section'
+          style: 'panel'
+          content: []
+        - type: 'link'
+          # ../en-US.restext:277 | "Continue"
+          label: 'restext://Common_273'
+          target: 'JailEventA' # ./00290-JailEventA.mws.yaml
+          snapshot: true
+      - match: 19
+        nodes:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8339
+        - type: 'section'
+          style: 'panel'
+          content: []
+        - type: 'link'
+          # ../en-US.restext:277 | "Continue"
+          label: 'restext://Common_273'
+          target: 'LiberalEvent3' # ./00258-LiberalEvent3.mws.yaml
+          snapshot: true
+      - match: 20
+        nodes:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8345
+        - type: 'conditional'
+          if: 'exponextpsg == "" || exponextpsg == 0'
+          then:
+          # ../.source/FearoftheUnknown_Eng_v15.cs:8347
+          - type: 'assign'
+            var: 'exponextpsg'
+            expr: '["LiberalEvent", "LiberalTaxes"].shuffled("ExpNo_0")[0]'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8349
+        - type: 'section'
+          style: 'panel'
+          content: []
+        - type: 'link'
+          # ../en-US.restext:277 | "Continue"
+          label: 'restext://Common_273'
+          target: '${exponextpsg}'
+          snapshot: true
+      default:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8356
+      - type: 'section'
+        style: 'panel'
+        content: []
+      - type: 'link'
+        # ../en-US.restext:277 | "Continue"
+        label: 'restext://Common_273'
+        target: 'LiberalBonus' # ./00093-LiberalBonus.mws.yaml
+        snapshot: true
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8367
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8368
+    - type: 'text'
+      # ../en-US.restext:771 | "Collect and return all Hu..."
+      value: 'restext://ExpNo_007'
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8298
+  - type: 'popup'
+    # ../en-US.restext:286 | "Click to continue..."
+    label: 'restext://Common_282'
+    layout: 'reveal'
+    # ../en-US.restext:275 | "Close"
+    cancel: 'restext://Common_271'
+    snapshot: true
+    header:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8444
+    - type: 'image'
+      asset: 'image://setup/S2_HuntTokenFRONT'
+      style: 'setup-image'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8408
+    - type: 'switch'
+      on: 'round'
+      cases:
+      - match: 16
+        nodes:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8410
+        - type: 'section'
+          style: 'panel'
+          content: []
+        - type: 'link'
+          # ../en-US.restext:277 | "Continue"
+          label: 'restext://Common_273'
+          target: 'JailEventA' # ./00290-JailEventA.mws.yaml
+          snapshot: true
+      - match: 19
+        nodes:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8416
+        - type: 'section'
+          style: 'panel'
+          content: []
+        - type: 'link'
+          # ../en-US.restext:277 | "Continue"
+          label: 'restext://Common_273'
+          target: 'LiberalEvent3' # ./00258-LiberalEvent3.mws.yaml
+          snapshot: true
+      - match: 20
+        nodes:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8422
+        - type: 'conditional'
+          if: 'exponextpsg == "" || exponextpsg == 0'
+          then:
+          # ../.source/FearoftheUnknown_Eng_v15.cs:8424
+          - type: 'assign'
+            var: 'exponextpsg'
+            expr: '["LiberalEvent", "LiberalTaxes"].shuffled("ExpNo_1")[0]'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8426
+        - type: 'section'
+          style: 'panel'
+          content: []
+        - type: 'link'
+          # ../en-US.restext:277 | "Continue"
+          label: 'restext://Common_273'
+          target: '${exponextpsg}'
+          snapshot: true
+      default:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8434
+      - type: 'section'
+        style: 'panel'
+        content: []
+      - type: 'link'
+        # ../en-US.restext:277 | "Continue"
+        label: 'restext://Common_273'
+        target: 'LiberalBonus' # ./00093-LiberalBonus.mws.yaml
+        snapshot: true
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8445
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8446
+    - type: 'text'
+      # ../en-US.restext:769 | "Collect all Hunt tokens {..."
+      value: 'restext://ExpNo_005'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8449
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8451
+    - type: 'text'
+      # ../en-US.restext:770 | "Shuffle them and randomly..."
+      value: 'restext://ExpNo_006'

@@ -1,0 +1,148 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:25941
+---
+format: 'mws/0.4'
+passage_id: 'BattleIntro'
+# ../en-US.restext:1908 | "The Main Event"
+title: 'restext://BattleIntro_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:25949
+- type: 'include_passage'
+  target: 'journal1a' # ./00206-journal1a.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:25950
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:25952
+- type: 'text'
+  # ../en-US.restext:1909 | "The announcer wheeled int..."
+  value: 'restext://BattleIntro_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:25954
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:25958
+- type: 'text'
+  # ../en-US.restext:1910 | "**Presenting your combata..."
+  value: 'restext://BattleIntro_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:25964
+- type: 'let'
+  var: '_rpl_BattleIntro_0'
+  expr: 'warriorA.replace("_1", "")'
+# ../.source/FearoftheUnknown_Eng_v15.cs:25961
+- type: 'text'
+  # ../en-US.restext:1911 | "{nameA}'s {_rpl_BattleInt..."
+  value: 'restext://BattleIntro_004'
+  lets:
+  - '_rpl_BattleIntro_0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:25971
+- type: 'let'
+  var: '_rpl_BattleIntro_1'
+  expr: 'warriorB.replace("_2", "")'
+# ../.source/FearoftheUnknown_Eng_v15.cs:25968
+- type: 'text'
+  # ../en-US.restext:1912 | "{nameB}'s {_rpl_BattleInt..."
+  value: 'restext://BattleIntro_005'
+  lets:
+  - '_rpl_BattleIntro_1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:25974
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:25975
+- type: 'conditional'
+  if: 'players >= 3'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:25980
+  - type: 'let'
+    var: '_rpl_BattleIntro_2'
+    expr: 'warriorC.replace("_3", "")'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:25977
+  - type: 'text'
+    # ../en-US.restext:1913 | "{nameC}'s {_rpl_BattleInt..."
+    value: 'restext://BattleIntro_006'
+    lets:
+    - '_rpl_BattleIntro_2'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:25983
+  - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:25985
+- type: 'conditional'
+  if: 'players >= 4'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:25990
+  - type: 'let'
+    var: '_rpl_BattleIntro_3'
+    expr: 'warriorD.replace("_4", "")'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:25987
+  - type: 'text'
+    # ../en-US.restext:1914 | "{nameD}'s {_rpl_BattleInt..."
+    value: 'restext://BattleIntro_007'
+    lets:
+    - '_rpl_BattleIntro_3'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:25993
+  - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:25995
+- type: 'conditional'
+  if: 'players >= 5'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:26000
+  - type: 'let'
+    var: '_rpl_BattleIntro_4'
+    expr: 'warriorE.replace("_5", "")'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:25997
+  - type: 'text'
+    # ../en-US.restext:1915 | "{nameE}'s {_rpl_BattleInt..."
+    value: 'restext://BattleIntro_008'
+    lets:
+    - '_rpl_BattleIntro_4'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:26003
+  - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26005
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26006
+- type: 'text'
+  # ../en-US.restext:1916 | "A sudden hiss of steam bu..."
+  value: 'restext://BattleIntro_009'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26007
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26009
+- type: 'link'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: 'BattleChecks' # ./00226-BattleChecks.mws.yaml
+  snapshot: true
+# ../.source/FearoftheUnknown_Eng_v15.cs:26011
+- type: 'assign'
+  var: 'battlecount'
+  expr: 'battlecount - 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26012
+- type: 'conditional'
+  if: 'players <= 3'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:26014
+  - type: 'conditional'
+    if: 'creepcount >= 2'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26016
+    - type: 'assign'
+      var: 'ending'
+      expr: '"FOTU-End5"' # ./00276-FOTU-End5.mws.yaml
+    else:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26020
+    - type: 'assign'
+      var: 'ending'
+      expr: '"FOTU-End6"' # ./00277-FOTU-End6.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:26023
+- type: 'conditional'
+  if: 'players >= 4'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:26025
+  - type: 'conditional'
+    if: 'creepcount >= 3'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26027
+    - type: 'assign'
+      var: 'ending'
+      expr: '"FOTU-End5"' # ./00276-FOTU-End5.mws.yaml
+    else:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26031
+    - type: 'assign'
+      var: 'ending'
+      expr: '"FOTU-End6"' # ./00277-FOTU-End6.mws.yaml

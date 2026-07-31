@@ -1,0 +1,104 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:4565
+---
+format: 'mws/0.4'
+passage_id: 'TimeTravel2'
+# ../en-US.restext:229 | "Tides of War 2"
+title: 'restext://Common_225'
+# ../en-US.restext:203 | "Middle Years"
+subtitle: 'restext://Common_199'
+tags:
+- 'HUB'
+layout: 'hub'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:4572
+- type: 'assign'
+  var: 'round'
+  expr: '5'
+# ../.source/ATimeofWar_Eng_v8.cs:4575
+- type: 'conditional'
+  if: 'tmrepair == "no"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:4579
+  - type: 'section'
+    # ../en-US.restext:221 | "{icon:storybooktoken} **R..."
+    title: 'restext://Common_217'
+    style: 'hub-card'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:4588
+    - type: 'text'
+      # ../en-US.restext:222 | "When taking the **Perform..."
+      value: 'restext://Common_218'
+    # ../.source/ATimeofWar_Eng_v8.cs:4599
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:4601
+    - type: 'text'
+      # ../en-US.restext:223 | "Once all **three** Repair..."
+      value: 'restext://Common_219'
+    # ../.source/ATimeofWar_Eng_v8.cs:4607
+    - type: 'link'
+      # ../en-US.restext:224 | "click here for a special ..."
+      label: 'restext://Common_220'
+      target: 'ATimeMachineRepaired' # ./00193-ATimeMachineRepaired.mws.yaml
+      snapshot: true
+  # ../.source/ATimeofWar_Eng_v8.cs:4609
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:4614
+- type: 'section'
+  # ../en-US.restext:231 | "{icon:storybooktoken} **P..."
+  title: 'restext://Common_227'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:4624
+  - type: 'text'
+    # ../en-US.restext:232 | "For more detailed rules o..."
+    value: 'restext://Common_228'
+  # ../.source/ATimeofWar_Eng_v8.cs:4628
+  - type: 'link'
+    # ../en-US.restext:192 | "click here."
+    label: 'restext://Common_188'
+    target: 'ParadoxExReminder' # ./00192-ParadoxExReminder.mws.yaml
+    snapshot: true
+# ../.source/ATimeofWar_Eng_v8.cs:4630
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:4632
+- type: 'conditional'
+  if: 'ttset == 0'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:4636
+  - type: 'section'
+    # ../en-US.restext:233 | "{icon:storybooktoken} **P..."
+    title: 'restext://Common_229'
+    style: 'hub-card'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:4646
+    - type: 'text'
+      # ../en-US.restext:234 | "Fixing the timestream has..."
+      value: 'restext://Common_230'
+    # ../.source/ATimeofWar_Eng_v8.cs:4654
+    - type: 'link'
+      # ../en-US.restext:235 | "click here to receive a s..."
+      label: 'restext://Common_231'
+      target: 'TriggerParadox' # ./00141-TriggerParadox.mws.yaml
+      snapshot: true
+    # ../.source/ATimeofWar_Eng_v8.cs:4655
+    - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:4658
+    - type: 'text'
+      # ../en-US.restext:236 | "_You must remove at least..."
+      value: 'restext://Common_232'
+  # ../.source/ATimeofWar_Eng_v8.cs:4663
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:4668
+- type: 'section'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:4673
+  - type: 'link'
+    # ../en-US.restext:217 | "Click here at the end of ..."
+    label: 'restext://Common_213'
+    target: 'TownHallOpposite' # ./00131-TownHallOpposite.mws.yaml
+    snapshot: true

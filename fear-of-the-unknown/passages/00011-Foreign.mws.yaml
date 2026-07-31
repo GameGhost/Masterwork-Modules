@@ -1,0 +1,262 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:2658
+---
+format: 'mws/0.4'
+passage_id: 'Foreign'
+# ../en-US.restext:93 | "Blame it on the Foreigners"
+title: 'restext://Common_089'
+# ../en-US.restext:155 | "Early Years"
+subtitle: 'restext://Common_151'
+tags:
+- 'HUB'
+layout: 'hub'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:2665
+- type: 'assign'
+  var: 'mog'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2666
+- type: 'assign'
+  var: 'round'
+  expr: '4'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2668
+- type: 'conditional'
+  if: '!forpg'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:2672
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:156 | "Accept"
+    okay: 'restext://Common_152'
+    header:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2676
+    - type: 'image'
+      asset: 'image://setup/AngryMobSetup1'
+      style: 'setup-image'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2678
+    - type: 'text'
+      # ../en-US.restext:449 | "Retrieve the **Memorial B..."
+      value: 'restext://Foreign_002'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2689
+    - type: 'conditional'
+      if: 'players <= 3'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:2691
+      - type: 'text'
+        # ../en-US.restext:450 | "For {playtxt} players, yo..."
+        value: 'restext://Foreign_003'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2700
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2701
+    - type: 'text'
+      # ../en-US.restext:94 | "Place the Suspicion Marke..."
+      value: 'restext://Common_090'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2704
+    - type: 'conditional'
+      if: '!Foreign'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:2706
+      - type: 'assign'
+        var: 'Foreign'
+        expr: '1'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:2707
+      - type: 'switch'
+        on: 'players'
+        cases:
+        - match: 4
+          nodes:
+          # ../.source/FearoftheUnknown_Eng_v15.cs:2709
+          - type: 'assign'
+            var: 'tracker'
+            expr: 'tracker + 1'
+        - match: 5
+          nodes:
+          # ../.source/FearoftheUnknown_Eng_v15.cs:2713
+          - type: 'assign'
+            var: 'tracker'
+            expr: 'tracker + 1'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2716
+    - type: 'text'
+      # ../en-US.restext:95 | "**{tracker}** and the {ic..."
+      value: 'restext://Common_091'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2721
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2722
+    - type: 'conditional'
+      if: 'players == 3'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:2724
+      - type: 'text'
+        # ../en-US.restext:96 | "Then, since this is a 3 p..."
+        value: 'restext://Common_092'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2732
+- type: 'section'
+  # ../en-US.restext:97 | "**Witching Hour**"
+  title: 'restext://Common_093'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:2741
+  - type: 'text'
+    # ../en-US.restext:451 | "The **{witch1}** has been..."
+    value: 'restext://Foreign_008'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2749
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2751
+- type: 'conditional'
+  # ../en-US.restext:87 | "Church"
+  if: 'witch1 == "restext://Common_083"'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:2755
+  - type: 'section'
+    # ../en-US.restext:98 | "{icon:storybooktoken} **R..."
+    title: 'restext://Common_094'
+    style: 'hub-card'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2764
+    - type: 'text'
+      # ../en-US.restext:453 | "With the Church placed un..."
+      value: 'restext://Foreign_013'
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:2772
+  - type: 'section'
+    # ../en-US.restext:98 | "{icon:storybooktoken} **R..."
+    title: 'restext://Common_094'
+    style: 'hub-card'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2781
+    - type: 'text'
+      # ../en-US.restext:99 | "When you visit the Church, "
+      value: 'restext://Common_095'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2782
+    - type: 'link'
+      # ../en-US.restext:100 | "click here to spy on anot..."
+      label: 'restext://Common_096'
+      target: 'CheckW1' # ./00079-CheckW1.mws.yaml
+      snapshot: true
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2783
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2784
+    - type: 'text'
+      # ../en-US.restext:452 | "This will allow you to se..."
+      value: 'restext://Foreign_012'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2787
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2791
+- type: 'section'
+  # ../en-US.restext:101 | "{icon:storybooktoken} **T..."
+  title: 'restext://Common_097'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:2802
+  - type: 'text'
+    # ../en-US.restext:102 | "Players may visit the Tow..."
+    value: 'restext://Common_098'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:2812
+  - type: 'link'
+    # ../en-US.restext:308 | "click here."
+    label: 'restext://Common_304'
+    target: 'TownHallExplanation' # ./00228-TownHallExplanation.mws.yaml
+    snapshot: true
+# ../.source/FearoftheUnknown_Eng_v15.cs:2814
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2818
+- type: 'section'
+  # ../en-US.restext:103 | "**Key to the City**"
+  title: 'restext://Common_099'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:2826
+  - type: 'text'
+    # ../en-US.restext:104 | "At the End of the Generat..."
+    value: 'restext://Common_100'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:2838
+  - type: 'conditional'
+    if: 'players >= 4'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2840
+    - type: 'text'
+      # ../en-US.restext:105 | "The player who has the se..."
+      value: 'restext://Common_101'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2844
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2849
+- type: 'section'
+  # ../en-US.restext:454 | "{icon:storybooktoken} **B..."
+  title: 'restext://Foreign_019'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:2860
+  - type: 'text'
+    # ../en-US.restext:455 | "The only signs of moderni..."
+    value: 'restext://Foreign_020'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:2862
+  - type: 'link'
+    # ../en-US.restext:162 | "click here"
+    label: 'restext://Common_158'
+    target: 'BankLibExplain' # ./00280-BankLibExplain.mws.yaml
+    snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:2863
+  - type: 'text'
+    value: '.'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2866
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2870
+- type: 'section'
+  # ../en-US.restext:106 | "**Second Round Event - Ac..."
+  title: 'restext://Common_102'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:2879
+  - type: 'text'
+    # ../en-US.restext:107 | "With a hideous hex upon t..."
+    value: 'restext://Common_103'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2889
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2891
+- type: 'conditional'
+  if: 'revresolve == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:2895
+  - type: 'section'
+    # ../en-US.restext:108 | "{icon:storybooktoken} **P..."
+    title: 'restext://Common_104'
+    style: 'hub-card'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2905
+    - type: 'text'
+      # ../en-US.restext:109 | "If a player reaches 35VP, "
+      value: 'restext://Common_105'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2907
+    - type: 'conditional'
+      if: 'revplot == "fortune"'
+      then:
+      - type: 'link'
+        # ../en-US.restext:170 | "click here..."
+        label: 'restext://Common_166'
+        target: '35Fortune' # ./00193-35Fortune.mws.yaml
+        snapshot: true
+      else:
+      - type: 'link'
+        # ../en-US.restext:170 | "click here..."
+        label: 'restext://Common_166'
+        target: '35Misfortune' # ./00194-35Misfortune.mws.yaml
+        snapshot: true
+# ../.source/FearoftheUnknown_Eng_v15.cs:2911
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2915
+- type: 'section'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:2920
+  - type: 'link'
+    # ../en-US.restext:173 | "Click here at the end of ..."
+    label: 'restext://Common_169'
+    target: 'WallEvent' # ./00071-WallEvent.mws.yaml
+    snapshot: true

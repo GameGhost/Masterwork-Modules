@@ -1,0 +1,90 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:34231
+---
+format: 'mws/0.4'
+passage_id: 'PaymentOrDeathE'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:34233
+- type: 'conditional'
+  if: 'Econt == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:34235
+  - type: 'goto'
+    target: 'Payment2Hub' # ./00316-Payment2Hub.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:34240
+- type: 'text'
+  # ../en-US.restext:199 | "**Carefully hand this Sto..."
+  value: 'restext://Common_195'
+# ../.source/FearoftheUnknown_Eng_v15.cs:34245
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:34251
+- type: 'popup'
+  # ../en-US.restext:46 | "Once you are ready, click..."
+  label: 'restext://Common_042'
+  layout: 'reveal'
+  # ../en-US.restext:275 | "Close"
+  cancel: 'restext://Common_271'
+  snapshot: true
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:34265
+  - type: 'text'
+    # ../en-US.restext:216 | "**A Most Unwelcome Return**"
+    value: 'restext://Common_212'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:34267
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:34271
+  - type: 'text'
+    # ../en-US.restext:225 | "**Scribbled Note - {nameE..."
+    value: 'restext://Common_221'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:34279
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:34281
+  - type: 'text'
+    # ../en-US.restext:218 | "I write this note by cand..."
+    value: 'restext://Common_214'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:34283
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:34285
+  - type: 'text'
+    # ../en-US.restext:219 | "I do not know how they go..."
+    value: 'restext://Common_215'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:34286
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:34288
+  - type: 'text'
+    # ../en-US.restext:2497 | "They have just announced ..."
+    value: 'restext://PaymentOrDeathE_002'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:34299
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:34303
+  - type: 'text'
+    # ../en-US.restext:278 | "**Choose:**"
+    value: 'restext://Common_274'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:34305
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:34308
+  - type: 'link'
+    # ../en-US.restext:191 | "Yes, I will pay the entir..."
+    label: 'restext://Common_187'
+    target: 'Payment2ThanksE' # ./00328-Payment2ThanksE.mws.yaml
+    snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:34309
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:34311
+  - type: 'link'
+    # ../en-US.restext:221 | "No, I will not pay."
+    label: 'restext://Common_217'
+    target: 'Payment2NoE' # ./00327-Payment2NoE.mws.yaml
+    snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:34312
+  - type: 'text'
+    # ../en-US.restext:222 | " (You must choose this op..."
+    value: 'restext://Common_218'

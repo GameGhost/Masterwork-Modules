@@ -1,0 +1,41 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:12859
+---
+format: 'mws/0.4'
+passage_id: 'Paradoxical'
+# ../en-US.restext:956 | "Unexplainable Phenomenon"
+title: 'restext://Paradoxical_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:12866
+- type: 'text'
+  # ../en-US.restext:957 | "There is no taming the wi..."
+  value: 'restext://Paradoxical_002'
+# ../.source/ATimeofWar_Eng_v8.cs:12869
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:12874
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  target: 'ParadoxIntro' # ./00028-ParadoxIntro.mws.yaml
+  # ../en-US.restext:182 | "Close"
+  okay: 'restext://Common_178'
+  snapshot: true
+  header:
+  # ../.source/ATimeofWar_Eng_v8.cs:12890
+  - type: 'image'
+    asset: 'image://setup/S3_TimeParadox'
+    style: 'setup-image'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:12892
+  - type: 'text'
+    # ../en-US.restext:958 | "Retrieve the **Time Parad..."
+    value: 'restext://Paradoxical_003'
+  # ../.source/ATimeofWar_Eng_v8.cs:12912
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:12914
+  - type: 'text'
+    # ../en-US.restext:959 | "While most **Time Paradox..."
+    value: 'restext://Paradoxical_004'

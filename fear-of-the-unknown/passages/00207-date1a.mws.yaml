@@ -1,0 +1,160 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:23447
+---
+format: 'mws/0.4'
+passage_id: 'date1a'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:23449
+- type: 'let'
+  var: '_rnd_date1a_0'
+  expr: 'rand_between(1, 29, "date1a_0")'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23451
+- type: 'let'
+  var: '_rnd_date1a_1'
+  # ../en-US.restext:32 | Common_028 | "January"
+  # ../en-US.restext:33 | Common_029 | "February"
+  # ../en-US.restext:34 | Common_030 | "March"
+  # ../en-US.restext:35 | Common_031 | "April"
+  # ../en-US.restext:36 | Common_032 | "May"
+  # ../en-US.restext:37 | Common_033 | "June"
+  # ../en-US.restext:38 | Common_034 | "July"
+  # ../en-US.restext:39 | Common_035 | "August"
+  # ../en-US.restext:40 | Common_036 | "September"
+  # ../en-US.restext:41 | Common_037 | "October"
+  # ../en-US.restext:42 | Common_038 | "November"
+  # ../en-US.restext:43 | Common_039 | "December"
+  expr: '["restext://Common_028", "restext://Common_029", "restext://Common_030", "restext://Common_031", "restext://Common_032", "restext://Common_033", "restext://Common_034", "restext://Common_035", "restext://Common_036", "restext://Common_037", "restext://Common_038", "restext://Common_039"].shuffled("date1a_1")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23453
+- type: 'switch'
+  on: 'round'
+  cases:
+  - match: 1
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23455
+    - type: 'let'
+      var: '_rnd_date1a_2'
+      expr: 'rand_between(831, 841, "date1a_2")'
+  - match: 2
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23459
+    - type: 'let'
+      var: '_rnd_date1a_2'
+      expr: 'rand_between(842, 851, "date1a_3")'
+  - match: 3
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23463
+    - type: 'let'
+      var: '_rnd_date1a_2'
+      expr: 'rand_between(852, 862, "date1a_4")'
+  - match: 4
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23467
+    - type: 'let'
+      var: '_rnd_date1a_2'
+      expr: 'rand_between(863, 871, "date1a_5")'
+  - match: 5
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23471
+    - type: 'let'
+      var: '_rnd_date1a_2'
+      expr: 'rand_between(872, 880, "date1a_6")'
+  - match: 6
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23475
+    - type: 'let'
+      var: '_rnd_date1a_2'
+      expr: 'rand_between(881, 891, "date1a_7")'
+  - match: 7
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23479
+    - type: 'let'
+      var: '_rnd_date1a_2'
+      expr: 'rand_between(863, 871, "date1a_8")'
+  - match: 8
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23483
+    - type: 'let'
+      var: '_rnd_date1a_2'
+      expr: 'rand_between(872, 880, "date1a_9")'
+  - match: 9
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23487
+    - type: 'let'
+      var: '_rnd_date1a_2'
+      expr: 'rand_between(881, 891, "date1a_10")'
+  - match: 10
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23491
+    - type: 'let'
+      var: '_rnd_date1a_2'
+      expr: 'rand_between(892, 901, "date1a_11")'
+  - match: 11
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23495
+    - type: 'let'
+      var: '_rnd_date1a_2'
+      expr: 'rand_between(902, 911, "date1a_12")'
+  - match: 12
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23499
+    - type: 'let'
+      var: '_rnd_date1a_2'
+      expr: 'rand_between(912, 922, "date1a_13")'
+  - match: 13
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23503
+    - type: 'let'
+      var: '_rnd_date1a_2'
+      expr: 'rand_between(892, 901, "date1a_14")'
+  - match: 14
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23507
+    - type: 'let'
+      var: '_rnd_date1a_2'
+      expr: 'rand_between(902, 911, "date1a_15")'
+  - match: 15
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23511
+    - type: 'let'
+      var: '_rnd_date1a_2'
+      expr: 'rand_between(912, 922, "date1a_16")'
+  - match: 16
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23515
+    - type: 'let'
+      var: '_rnd_date1a_2'
+      expr: 'rand_between(892, 901, "date1a_17")'
+  - match: 17
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23519
+    - type: 'let'
+      var: '_rnd_date1a_2'
+      expr: 'rand_between(902, 911, "date1a_18")'
+  - match: 18
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23523
+    - type: 'let'
+      var: '_rnd_date1a_2'
+      expr: 'rand_between(912, 922, "date1a_19")'
+  - match: 19
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23527
+    - type: 'let'
+      var: '_rnd_date1a_2'
+      expr: 'rand_between(892, 901, "date1a_20")'
+  - match: 20
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23531
+    - type: 'let'
+      var: '_rnd_date1a_2'
+      expr: 'rand_between(902, 911, "date1a_21")'
+  default:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:23535
+  - type: 'let'
+    var: '_rnd_date1a_2'
+    expr: 'rand_between(912, 922, "date1a_22")'
+- type: 'text'
+  # ../en-US.restext:1757 | "{_rnd_date1a_0} {_rnd_dat..."
+  value: 'restext://date1a_001'
+  lets:
+  - '_rnd_date1a_2'

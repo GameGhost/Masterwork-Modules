@@ -1,0 +1,68 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:29018
+---
+format: 'mws/0.4'
+passage_id: 'LibCountBlessing'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:29020
+- type: 'conditional'
+  if: 'curecount == "yes"'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29024
+  - type: 'text'
+    # ../en-US.restext:241 | "**A Debt Repaid**"
+    value: 'restext://Common_237'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29026
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29030
+  - type: 'text'
+    # ../en-US.restext:242 | "**Letter from {cureplayer..."
+    value: 'restext://Common_238'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29036
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29038
+  - type: 'text'
+    # ../en-US.restext:243 | "An ominous note appeared ..."
+    value: 'restext://Common_239'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29039
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29041
+  - type: 'text'
+    # ../en-US.restext:2125 | "Ever since, I have felt r..."
+    value: 'restext://LibCountBlessing_001'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29045
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29047
+  - type: 'text'
+    # ../en-US.restext:244 | "What a curious blessing!"
+    value: 'restext://Common_240'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29048
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29052
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:286 | "Click to continue..."
+    label: 'restext://Common_282'
+    target: 'LiberalReplace' # ./00270-LiberalReplace.mws.yaml
+    # ../en-US.restext:275 | "Close"
+    okay: 'restext://Common_271'
+    snapshot: true
+    header:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:29073
+    - type: 'image'
+      asset: 'image://setup/S2_BlessingOfTheStrigoi'
+      style: 'setup-image'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:29076
+    - type: 'text'
+      # ../en-US.restext:245 | "Retrieve the **Blessing o..."
+      value: 'restext://Common_241'
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29056
+  - type: 'goto'
+    target: 'LiberalReplace' # ./00270-LiberalReplace.mws.yaml

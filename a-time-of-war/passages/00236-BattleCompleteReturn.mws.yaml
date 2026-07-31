@@ -1,0 +1,45 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:23789
+---
+format: 'mws/0.4'
+passage_id: 'BattleCompleteReturn'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:23793
+- type: 'let'
+  var: '_rnd_BattleCompleteReturn_0'
+  # ../en-US.restext:1913 | BattleCompleteReturn_001 | "Engagement"
+  # ../en-US.restext:1914 | BattleCompleteReturn_002 | "Campaign"
+  expr: '["restext://BattleCompleteReturn_001", "restext://BattleCompleteReturn_002"].shuffled("BattleCompleteReturn_0")[0]'
+# ../.source/ATimeofWar_Eng_v8.cs:23793
+- type: 'text'
+  # ../en-US.restext:1915 | "**{_rnd_BattleCompleteRet..."
+  value: 'restext://BattleCompleteReturn_003'
+  lets:
+  - '_rnd_BattleCompleteReturn_0'
+# ../.source/ATimeofWar_Eng_v8.cs:23797
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:23799
+- type: 'text'
+  # ../en-US.restext:1916 | "All players return their ..."
+  value: 'restext://BattleCompleteReturn_004'
+# ../.source/ATimeofWar_Eng_v8.cs:23804
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:23806
+- type: 'conditional'
+  if: 'round == 19'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:23808
+  - type: 'link'
+    # ../en-US.restext:1917 | "Click to move to the next..."
+    label: 'restext://BattleCompleteReturn_005'
+    target: 'Peace2' # ./00045-Peace2.mws.yaml
+    snapshot: true
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:23813
+  - type: 'link'
+    # ../en-US.restext:1917 | "Click to move to the next..."
+    label: 'restext://BattleCompleteReturn_005'
+    target: 'Peace3' # ./00046-Peace3.mws.yaml
+    snapshot: true

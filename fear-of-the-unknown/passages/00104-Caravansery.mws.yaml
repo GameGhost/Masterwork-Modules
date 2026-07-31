@@ -1,0 +1,153 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:13327
+---
+format: 'mws/0.4'
+passage_id: 'Caravansery'
+# ../en-US.restext:1103 | "A Visit From the Caravans"
+title: 'restext://Caravansery_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:13335
+- type: 'include_passage'
+  target: 'journal1a' # ./00206-journal1a.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:13337
+- type: 'assign'
+  var: 'carcount'
+  expr: 'carcount + 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13336
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13339
+- type: 'text'
+  # ../en-US.restext:1104 | "A brightly colored carria..."
+  value: 'restext://Caravansery_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13340
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13346
+- type: 'popup'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  layout: 'reveal'
+  # ../en-US.restext:275 | "Close"
+  cancel: 'restext://Common_271'
+  snapshot: true
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13402
+  - type: 'image'
+    asset: 'image://setup/S2_MarketToken'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13354
+  - type: 'switch'
+    on: 'visit'
+    cases:
+    - match: 0
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:13356
+      - type: 'section'
+        style: 'panel'
+        content: []
+      - type: 'link'
+        # ../en-US.restext:277 | "Continue"
+        label: 'restext://Common_273'
+        target: 'Foreign3' # ./00040-Foreign3.mws.yaml
+        snapshot: true
+    - match: 1
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:13361
+      - type: 'switch'
+        on: 'round'
+        cases:
+        - match: 6
+          nodes:
+          # ../.source/FearoftheUnknown_Eng_v15.cs:13363
+          - type: 'section'
+            style: 'panel'
+            content: []
+          - type: 'link'
+            # ../en-US.restext:277 | "Continue"
+            label: 'restext://Common_273'
+            target: 'Isolation' # ./00019-Isolation.mws.yaml
+            snapshot: true
+        - match: 10
+          nodes:
+          # ../.source/FearoftheUnknown_Eng_v15.cs:13368
+          - type: 'section'
+            style: 'panel'
+            content: []
+          - type: 'link'
+            # ../en-US.restext:277 | "Continue"
+            label: 'restext://Common_273'
+            target: 'S4Smug' # ./00030-S4Smug.mws.yaml
+            snapshot: true
+        - match: 11
+          nodes:
+          # ../.source/FearoftheUnknown_Eng_v15.cs:13373
+          - type: 'section'
+            style: 'panel'
+            content: []
+          - type: 'link'
+            # ../en-US.restext:277 | "Continue"
+            label: 'restext://Common_273'
+            target: 'Isolation3' # ./00044-Isolation3.mws.yaml
+            snapshot: true
+    - match: 2
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:13379
+      - type: 'switch'
+        on: 'round'
+        cases:
+        - match: 6
+          nodes:
+          # ../.source/FearoftheUnknown_Eng_v15.cs:13381
+          - type: 'section'
+            style: 'panel'
+            content: []
+          - type: 'link'
+            # ../en-US.restext:277 | "Continue"
+            label: 'restext://Common_273'
+            target: 'Tension' # ./00020-Tension.mws.yaml
+            snapshot: true
+        - match: 13
+          nodes:
+          # ../.source/FearoftheUnknown_Eng_v15.cs:13386
+          - type: 'section'
+            style: 'panel'
+            content: []
+          - type: 'link'
+            # ../en-US.restext:277 | "Continue"
+            label: 'restext://Common_273'
+            target: 'Tension2' # ./00041-Tension2.mws.yaml
+            snapshot: true
+        - match: 14
+          nodes:
+          # ../.source/FearoftheUnknown_Eng_v15.cs:13391
+          - type: 'section'
+            style: 'panel'
+            content: []
+          - type: 'link'
+            # ../en-US.restext:277 | "Continue"
+            label: 'restext://Common_273'
+            target: 'Tension3' # ./00127-Tension3.mws.yaml
+            snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13403
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13405
+  - type: 'text'
+    # ../en-US.restext:1105 | "In turn order, any player..."
+    value: 'restext://Caravansery_003'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13420
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13424
+  - type: 'text'
+    # ../en-US.restext:1106 | "**Pay $1: Gain 1 Ingredie..."
+    value: 'restext://Caravansery_004'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13426
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13430
+  - type: 'text'
+    # ../en-US.restext:1107 | "_We note that the caravan..."
+    value: 'restext://Caravansery_005'

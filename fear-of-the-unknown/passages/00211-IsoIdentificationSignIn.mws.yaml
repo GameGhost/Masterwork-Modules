@@ -1,0 +1,111 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:23690
+---
+format: 'mws/0.4'
+passage_id: 'IsoIdentificationSignIn'
+# ../en-US.restext:1781 | "Citizenship Inspection"
+title: 'restext://IsoIdentificationSignIn_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:23700
+- type: 'text'
+  # ../en-US.restext:1782 | "**Journal Entry:** _name ..."
+  value: 'restext://IsoIdentificationSignIn_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23704
+- type: 'include_passage'
+  target: 'date1a' # ./00207-date1a.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:23709
+- type: 'let'
+  var: '_rnd_IsoIdentificationSignIn_0'
+  expr: '["Inspection day: Wore newest overcoat, but received no compliment from the reprobates attending the door. At least the security was lax enough that I was given no physical inspection upon entering the ramshackle government office.", "Dismal afternoon - overcast with a dreadful scud blanketing the town in grayness. When I arrived at the Town Hall for the scheduled inspection, I could only shake my head at the single individual in a recently re-stitched military uniform left-over from the 18th Century, sleeping at his post by the wooden double-doors. I decided to enter without rousing him to avoid investing any more time in my visit."].shuffled("IsoIdentificationSignIn_0")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23707
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23709
+- type: 'text'
+  value: '{_rnd_IsoIdentificationSignIn_0}'
+  lets:
+  - '_rnd_IsoIdentificationSignIn_0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23712
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23716
+- type: 'text'
+  # ../en-US.restext:1783 | "**Please choose which pla..."
+  value: 'restext://IsoIdentificationSignIn_005'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23718
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23721
+- type: 'link'
+  label: '{nameA}'
+  target: 'IsoIdentification' # ./00212-IsoIdentification.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:23754
+  - type: 'assign'
+    var: 'tempid'
+    expr: 'nameA'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23722
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23725
+- type: 'link'
+  label: '{nameB}'
+  target: 'IsoIdentification' # ./00212-IsoIdentification.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:23761
+  - type: 'assign'
+    var: 'tempid'
+    expr: 'nameB'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23726
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23728
+- type: 'conditional'
+  if: 'players > 2'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:23731
+  - type: 'link'
+    label: '{nameC}'
+    target: 'IsoIdentification' # ./00212-IsoIdentification.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23768
+    - type: 'assign'
+      var: 'tempid'
+      expr: 'nameC'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23733
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23735
+- type: 'conditional'
+  if: 'players > 3'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:23738
+  - type: 'link'
+    label: '{nameD}'
+    target: 'IsoIdentification' # ./00212-IsoIdentification.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23775
+    - type: 'assign'
+      var: 'tempid'
+      expr: 'nameD'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23740
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23742
+- type: 'conditional'
+  if: 'players > 4'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:23745
+  - type: 'link'
+    label: '{nameE}'
+    target: 'IsoIdentification' # ./00212-IsoIdentification.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23782
+    - type: 'assign'
+      var: 'tempid'
+      expr: 'nameE'

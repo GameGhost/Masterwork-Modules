@@ -1,0 +1,81 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:7995
+---
+format: 'mws/0.4'
+passage_id: 'Warning3time'
+# ../en-US.restext:241 | "Not Again"
+title: 'restext://Common_237'
+# ../en-US.restext:207 | "Late Years"
+subtitle: 'restext://Common_203'
+tags:
+- 'HUB'
+layout: 'hub'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:8002
+- type: 'assign'
+  var: 'round'
+  expr: '15'
+# ../.source/ATimeofWar_Eng_v8.cs:8005
+- type: 'conditional'
+  if: '!master'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:8009
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:211 | "Accept"
+    okay: 'restext://Common_207'
+    header:
+    # ../.source/ATimeofWar_Eng_v8.cs:8013
+    - type: 'image'
+      asset: 'image://setup/VillageChronicleCover'
+      style: 'setup-image'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:8015
+    - type: 'text'
+      # ../en-US.restext:684 | "Turn to page 16 of the Vi..."
+      value: 'restext://Warning3time_001'
+  # ../.source/ATimeofWar_Eng_v8.cs:8017
+  - type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:8019
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:8020
+- type: 'conditional'
+  if: '!master'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:8024
+  - type: 'section'
+    # ../en-US.restext:268 | "**My Great Grandfather's ..."
+    title: 'restext://Common_264'
+    style: 'hub-card'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:8033
+    - type: 'text'
+      # ../en-US.restext:685 | "The next player that comp..."
+      value: 'restext://Warning3time_002'
+    # ../.source/ATimeofWar_Eng_v8.cs:8034
+    - type: 'link'
+      # ../en-US.restext:269 | "click here to pacify the ..."
+      label: 'restext://Common_265'
+      target: 'Stasis' # ./00061-Stasis.mws.yaml
+      snapshot: true
+  # ../.source/ATimeofWar_Eng_v8.cs:8036
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:8041
+- type: 'section'
+  # ../en-US.restext:270 | "**Reward for Perseverance**"
+  title: 'restext://Common_266'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:8049
+  - type: 'text'
+    # ../en-US.restext:271 | "With the timeline somewha..."
+    value: 'restext://Common_267'
+  # ../.source/ATimeofWar_Eng_v8.cs:8061
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:8065
+  - type: 'link'
+    # ../en-US.restext:272 | "Click here at the End of ..."
+    label: 'restext://Common_268'
+    target: 'Scoring' # ./00004-Scoring.mws.yaml
+    snapshot: true

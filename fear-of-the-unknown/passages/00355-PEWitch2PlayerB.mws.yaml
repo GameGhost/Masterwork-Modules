@@ -1,0 +1,161 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:24251
+---
+format: 'mws/0.4'
+passage_id: 'PEWitch2PlayerB'
+# ../en-US.restext:2675 | "{nameB}'s Obsession"
+title: 'restext://PEWitch2PlayerB_001'
+tags:
+- 'revised'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:24262
+- type: 'text'
+  # ../en-US.restext:2676 | "**Journal of {nameB} -** "
+  value: 'restext://PEWitch2PlayerB_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:24268
+- type: 'include_passage'
+  target: 'date1a' # ./00207-date1a.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:24271
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:24273
+- type: 'conditional'
+  conditions:
+  - if: 'nameB == fate1'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:24275
+    - type: 'text'
+      # ../en-US.restext:177 | "My lust for fame knows no..."
+      value: 'restext://Common_173'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:24276
+    - type: 'break'
+      style: 'paragraph'
+  - if: 'nameB == fate2'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:24282
+    - type: 'text'
+      # ../en-US.restext:178 | "My thirst for knowledge i..."
+      value: 'restext://Common_174'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:24285
+    - type: 'break'
+      style: 'paragraph'
+  - if: 'nameB == fate3'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:24291
+    - type: 'text'
+      # ../en-US.restext:179 | "I have spent days upon da..."
+      value: 'restext://Common_175'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:24292
+    - type: 'break'
+      style: 'paragraph'
+  - if: 'nameB == fate4'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:24298
+    - type: 'text'
+      # ../en-US.restext:180 | "I am surrounded by simple..."
+      value: 'restext://Common_176'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:24301
+    - type: 'break'
+      style: 'paragraph'
+  - if: 'nameB == fate5'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:24307
+    - type: 'text'
+      # ../en-US.restext:181 | "I will not suffer fools. ..."
+      value: 'restext://Common_177'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:24315
+    - type: 'break'
+      style: 'paragraph'
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:24321
+  - type: 'text'
+    # ../en-US.restext:176 | "I find pleasure in the si..."
+    value: 'restext://Common_172'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:24322
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:24327
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: '${players > 2 ? "PEWitch2PlayerC" : "PEExplanation1"}' # ./00356-PEWitch2PlayerC.mws.yaml, ./00229-PEExplanation1.mws.yaml
+  # ../en-US.restext:275 | "Close"
+  okay: 'restext://Common_271'
+  snapshot: true
+  header:
+  - type: 'conditional'
+    conditions:
+    - if: 'nameB == fate1'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:24350
+      - type: 'image'
+        asset: 'image://setup/S2_Obsession'
+        style: 'setup-image'
+    - if: 'nameB == fate2'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:24367
+      - type: 'image'
+        asset: 'image://setup/S2_Obsession'
+        style: 'setup-image'
+    - if: 'nameB == fate3'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:24384
+      - type: 'image'
+        asset: 'image://setup/S2_Obsession'
+        style: 'setup-image'
+    - if: 'nameB == fate4'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:24401
+      - type: 'image'
+        asset: 'image://setup/S2_Obsession'
+        style: 'setup-image'
+    - if: 'nameB == fate5'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:24418
+      - type: 'image'
+        asset: 'image://setup/S2_Obsession'
+        style: 'setup-image'
+    else:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:24435
+    - type: 'image'
+      asset: 'image://setup/S2_Obsession'
+      style: 'setup-image'
+  content:
+  - type: 'conditional'
+    conditions:
+    - if: 'nameB == fate1'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:24355
+      - type: 'text'
+        # ../en-US.restext:182 | "**{fate1} receives the FO..."
+        value: 'restext://Common_178'
+    - if: 'nameB == fate2'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:24372
+      - type: 'text'
+        # ../en-US.restext:183 | "**{fate2} gains the FOR K..."
+        value: 'restext://Common_179'
+    - if: 'nameB == fate3'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:24389
+      - type: 'text'
+        # ../en-US.restext:184 | "**{fate3} gains the FOR S..."
+        value: 'restext://Common_180'
+    - if: 'nameB == fate4'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:24406
+      - type: 'text'
+        # ../en-US.restext:185 | "**{fate4} gains the FOR R..."
+        value: 'restext://Common_181'
+    - if: 'nameB == fate5'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:24423
+      - type: 'text'
+        # ../en-US.restext:186 | "**{fate5} gains the FOR R..."
+        value: 'restext://Common_182'
+    else:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:24440
+    - type: 'text'
+      # ../en-US.restext:2677 | "**{nameB} gains the FOR E..."
+      value: 'restext://PEWitch2PlayerB_003'

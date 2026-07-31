@@ -1,0 +1,91 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:3201
+---
+format: 'mws/0.4'
+passage_id: 'TimeEnd1'
+tags:
+- 'END'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:3214
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:3216
+    - type: 'assign'
+      var: 'dox'
+      expr: 'rand_between(1, 3, "TimeEnd1_0")'
+  - match: 3
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:3220
+    - type: 'assign'
+      var: 'dox'
+      expr: 'rand_between(2, 4, "TimeEnd1_1")'
+  - match: 4
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:3224
+    - type: 'assign'
+      var: 'dox'
+      expr: 'rand_between(3, 5, "TimeEnd1_2")'
+  - match: 5
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:3228
+    - type: 'assign'
+      var: 'dox'
+      expr: 'rand_between(4, 6, "TimeEnd1_3")'
+# ../.source/ATimeofWar_Eng_v8.cs:3205
+- type: 'text'
+  # ../en-US.restext:427 | "**Paradox**"
+  value: 'restext://TimeEnd1_001'
+# ../.source/ATimeofWar_Eng_v8.cs:3231
+- type: 'popup'
+  layout: 'end_of_generation'
+  # ../en-US.restext:239 | "Confirm"
+  okay: 'restext://Common_235'
+  content:
+  - type: 'text'
+    # ../en-US.restext:218 | "Remove all player pieces ..."
+    value: 'restext://Common_214'
+  - type: 'let'
+    var: 'generation'
+    expr: '6'
+# ../.source/ATimeofWar_Eng_v8.cs:3233
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:3234
+- type: 'text'
+  # ../en-US.restext:428 | "Time continued on as norm..."
+  value: 'restext://TimeEnd1_003'
+# ../.source/ATimeofWar_Eng_v8.cs:3236
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:3240
+- type: 'text'
+  # ../en-US.restext:429 | "**Count the total number ..."
+  value: 'restext://TimeEnd1_004'
+# ../.source/ATimeofWar_Eng_v8.cs:3245
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:3247
+- type: 'text'
+  # ../en-US.restext:430 | "If the number is **{dox}*..."
+  value: 'restext://TimeEnd1_005'
+# ../.source/ATimeofWar_Eng_v8.cs:3254
+- type: 'link'
+  # ../en-US.restext:431 | "Click here to continue"
+  label: 'restext://TimeEnd1_006'
+  target: 'WarningIntro' # ./00050-WarningIntro.mws.yaml
+  snapshot: true
+# ../.source/ATimeofWar_Eng_v8.cs:3255
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:3257
+- type: 'text'
+  # ../en-US.restext:432 | "If the number of {icon:s3..."
+  value: 'restext://TimeEnd1_007'
+# ../.source/ATimeofWar_Eng_v8.cs:3261
+- type: 'link'
+  # ../en-US.restext:183 | "Click here to continue..."
+  label: 'restext://Common_179'
+  target: 'Paradoxical' # ./00106-Paradoxical.mws.yaml
+  snapshot: true

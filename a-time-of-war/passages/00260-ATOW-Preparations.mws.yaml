@@ -1,0 +1,110 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:25582
+---
+format: 'mws/0.4'
+passage_id: 'ATOW-Preparations'
+# ../en-US.restext:2097 | "Preparations"
+title: 'restext://ATOW_Preparations_001'
+tags:
+- 'Begins-Here'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:25589
+- type: 'assign'
+  var: 'players'
+  expr: 'global:playerCount'
+# ../.source/ATimeofWar_Eng_v8.cs:25590
+- type: 'assign'
+  var: 'nameA'
+  expr: 'global:nameA'
+# ../.source/ATimeofWar_Eng_v8.cs:25591
+- type: 'assign'
+  var: 'nameB'
+  expr: 'global:nameB'
+# ../.source/ATimeofWar_Eng_v8.cs:25592
+- type: 'conditional'
+  if: 'players > 2'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:25592
+  - type: 'assign'
+    var: 'nameC'
+    expr: 'global:nameC'
+# ../.source/ATimeofWar_Eng_v8.cs:25593
+- type: 'conditional'
+  if: 'players > 3'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:25593
+  - type: 'assign'
+    var: 'nameD'
+    expr: 'global:nameD'
+# ../.source/ATimeofWar_Eng_v8.cs:25594
+- type: 'conditional'
+  if: 'players > 4'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:25594
+  - type: 'assign'
+    var: 'nameE'
+    expr: 'global:nameE'
+# ../.source/ATimeofWar_Eng_v8.cs:25595
+- type: 'assign'
+  var: 'townname'
+  expr: 'global:townName'
+# ../.source/ATimeofWar_Eng_v8.cs:25596
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    - type: 'assign'
+      var: 'playtxt'
+      # ../en-US.restext:153 | "two"
+      expr: '"restext://Common_149"'
+  - match: 3
+    nodes:
+    - type: 'assign'
+      var: 'playtxt'
+      # ../en-US.restext:154 | "three"
+      expr: '"restext://Common_150"'
+  - match: 4
+    nodes:
+    - type: 'assign'
+      var: 'playtxt'
+      # ../en-US.restext:155 | "four"
+      expr: '"restext://Common_151"'
+  - match: 5
+    nodes:
+    - type: 'assign'
+      var: 'playtxt'
+      # ../en-US.restext:156 | "five"
+      expr: '"restext://Common_152"'
+  default:
+  - type: 'assign'
+    var: 'playtxt'
+    # ../en-US.restext:153 | "two"
+    expr: '"restext://Common_149"'
+# ../.source/ATimeofWar_Eng_v8.cs:25598
+- type: 'text'
+  # ../en-US.restext:2098 | "Complete the standard set..."
+  value: 'restext://ATOW_Preparations_002'
+# ../.source/ATimeofWar_Eng_v8.cs:25609
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25614
+- type: 'image'
+  asset: 'icon://scenariobox3d_war'
+  size: '200'
+  align: 'center'
+# ../.source/ATimeofWar_Eng_v8.cs:25618
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:25619
+- type: 'text'
+  # ../en-US.restext:2099 | "Then, retrieve the **A Ti..."
+  value: 'restext://ATOW_Preparations_003'
+# ../.source/ATimeofWar_Eng_v8.cs:25628
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25630
+- type: 'link'
+  # ../en-US.restext:183 | "Click here to continue..."
+  label: 'restext://Common_179'
+  target: 'ForewordScen2' # ./00142-ForewordScen2.mws.yaml
+  snapshot: true

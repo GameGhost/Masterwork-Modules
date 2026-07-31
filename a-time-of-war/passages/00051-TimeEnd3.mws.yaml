@@ -1,0 +1,81 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:6712
+---
+format: 'mws/0.4'
+passage_id: 'TimeEnd3'
+tags:
+- 'OLD'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:6714
+- type: 'text'
+  # ../en-US.restext:626 | "Remove all player pieces ..."
+  value: 'restext://TimeEnd3_001'
+# ../.source/ATimeofWar_Eng_v8.cs:6719
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:6722
+- type: 'text'
+  # ../en-US.restext:627 | "DEAD CODE MAYBE USEFUL"
+  value: 'restext://TimeEnd3_002'
+# ../.source/ATimeofWar_Eng_v8.cs:6725
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:6727
+    - type: 'assign'
+      var: 'per'
+      expr: 'rand_between(1, 2, "TimeEnd3_0")'
+  - match: 3
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:6731
+    - type: 'assign'
+      var: 'per'
+      expr: 'rand_between(2, 3, "TimeEnd3_1")'
+  - match: 4
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:6735
+    - type: 'assign'
+      var: 'per'
+      expr: 'rand_between(2, 4, "TimeEnd3_2")'
+  - match: 5
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:6739
+    - type: 'assign'
+      var: 'per'
+      expr: 'rand_between(2, 4, "TimeEnd3_3")'
+# ../.source/ATimeofWar_Eng_v8.cs:6723
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:6744
+- type: 'text'
+  # ../en-US.restext:628 | "**Early Advancement**"
+  value: 'restext://TimeEnd3_003'
+# ../.source/ATimeofWar_Eng_v8.cs:6746
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:6747
+- type: 'text'
+  # ../en-US.restext:629 | "The town was inspired by ..."
+  value: 'restext://TimeEnd3_004'
+# ../.source/ATimeofWar_Eng_v8.cs:6749
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:6751
+- type: 'text'
+  # ../en-US.restext:630 | "Count the number of total..."
+  value: 'restext://TimeEnd3_005'
+# ../.source/ATimeofWar_Eng_v8.cs:6758
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:6760
+- type: 'text'
+  # ../en-US.restext:631 | "If the number is **{per}*..."
+  value: 'restext://TimeEnd3_006'
+# ../.source/ATimeofWar_Eng_v8.cs:6767
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:6769
+- type: 'text'
+  # ../en-US.restext:632 | "If the number is fewer th..."
+  value: 'restext://TimeEnd3_007'

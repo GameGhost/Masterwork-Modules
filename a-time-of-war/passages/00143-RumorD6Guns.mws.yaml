@@ -1,0 +1,191 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:15650
+---
+format: 'mws/0.4'
+passage_id: 'RumorD6Guns'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:15655
+- type: 'text'
+  # ../en-US.restext:180 | "**Carefully pick up this ..."
+  value: 'restext://Common_176'
+# ../.source/ATimeofWar_Eng_v8.cs:15658
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:15664
+- type: 'popup'
+  # ../en-US.restext:181 | "Once you are ready, click..."
+  label: 'restext://Common_177'
+  layout: 'reveal'
+  # ../en-US.restext:182 | "Close"
+  cancel: 'restext://Common_178'
+  snapshot: true
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:15713
+  - type: 'text'
+    # ../en-US.restext:1193 | "I distinctly remember the..."
+    value: 'restext://RumorD6Guns_001'
+  # ../.source/ATimeofWar_Eng_v8.cs:15716
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:15718
+  - type: 'text'
+    # ../en-US.restext:1194 | "\"Perhaps, yes,\" she see..."
+    value: 'restext://RumorD6Guns_002'
+  # ../.source/ATimeofWar_Eng_v8.cs:15721
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:15723
+  - type: 'text'
+    # ../en-US.restext:1195 | "She offered me a choice w..."
+    value: 'restext://RumorD6Guns_003'
+  # ../.source/ATimeofWar_Eng_v8.cs:15727
+  - type: 'assign'
+    var: 'gunschoice'
+    expr: '[1, 2, 3]'
+  # ../.source/ATimeofWar_Eng_v8.cs:15728
+  - type: 'assign'
+    var: 'gunschoice'
+    expr: 'gunschoice.shuffled("RumorD6Guns_0")'
+  # ../.source/ATimeofWar_Eng_v8.cs:15729
+  - type: 'assign'
+    var: 'gun1'
+    expr: 'gunschoice[0]'
+  # ../.source/ATimeofWar_Eng_v8.cs:15730
+  - type: 'assign'
+    var: 'gun2'
+    expr: 'gunschoice[1]'
+  # ../.source/ATimeofWar_Eng_v8.cs:15726
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:15735
+  - type: 'text'
+    # ../en-US.restext:1196 | "**The best showcase of th..."
+    value: 'restext://RumorD6Guns_004'
+  # ../.source/ATimeofWar_Eng_v8.cs:15737
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:15739
+  - type: 'switch'
+    on: 'gun1'
+    cases:
+    - match: 1
+      nodes:
+      # ../.source/ATimeofWar_Eng_v8.cs:15742
+      - type: 'link'
+        # ../en-US.restext:1197 | "I chose Knowledge."
+        label: 'restext://RumorD6Guns_005'
+        target: 'RumorD6Confirm' # ./00144-RumorD6Confirm.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/ATimeofWar_Eng_v8.cs:15671
+        - type: 'assign'
+          var: 'gunsbonus'
+          expr: '1'
+      # ../.source/ATimeofWar_Eng_v8.cs:15743
+      - type: 'break'
+      # ../.source/ATimeofWar_Eng_v8.cs:15744
+      - type: 'text'
+        # ../en-US.restext:1198 | "_(The player with the mos..."
+        value: 'restext://RumorD6Guns_006'
+    - match: 2
+      nodes:
+      # ../.source/ATimeofWar_Eng_v8.cs:15749
+      - type: 'link'
+        # ../en-US.restext:1199 | "I chose Ingredients."
+        label: 'restext://RumorD6Guns_007'
+        target: 'RumorD6Confirm' # ./00144-RumorD6Confirm.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/ATimeofWar_Eng_v8.cs:15678
+        - type: 'assign'
+          var: 'gunsbonus'
+          expr: '2'
+      # ../.source/ATimeofWar_Eng_v8.cs:15750
+      - type: 'break'
+      # ../.source/ATimeofWar_Eng_v8.cs:15751
+      - type: 'text'
+        # ../en-US.restext:1200 | "_(The player with the mos..."
+        value: 'restext://RumorD6Guns_008'
+    - match: 3
+      nodes:
+      # ../.source/ATimeofWar_Eng_v8.cs:15756
+      - type: 'link'
+        # ../en-US.restext:1201 | "I chose Money."
+        label: 'restext://RumorD6Guns_009'
+        target: 'RumorD6Confirm' # ./00144-RumorD6Confirm.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/ATimeofWar_Eng_v8.cs:15685
+        - type: 'assign'
+          var: 'gunsbonus'
+          expr: '3'
+      # ../.source/ATimeofWar_Eng_v8.cs:15757
+      - type: 'break'
+      # ../.source/ATimeofWar_Eng_v8.cs:15758
+      - type: 'text'
+        # ../en-US.restext:1202 | "_(The player with the mos..."
+        value: 'restext://RumorD6Guns_010'
+  # ../.source/ATimeofWar_Eng_v8.cs:15760
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:15762
+  - type: 'switch'
+    on: 'gun2'
+    cases:
+    - match: 1
+      nodes:
+      # ../.source/ATimeofWar_Eng_v8.cs:15765
+      - type: 'link'
+        # ../en-US.restext:1197 | "I chose Knowledge."
+        label: 'restext://RumorD6Guns_005'
+        target: 'RumorD6Confirm' # ./00144-RumorD6Confirm.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/ATimeofWar_Eng_v8.cs:15692
+        - type: 'assign'
+          var: 'gunsbonus'
+          expr: '1'
+      # ../.source/ATimeofWar_Eng_v8.cs:15766
+      - type: 'break'
+      # ../.source/ATimeofWar_Eng_v8.cs:15767
+      - type: 'text'
+        # ../en-US.restext:1198 | "_(The player with the mos..."
+        value: 'restext://RumorD6Guns_006'
+    - match: 2
+      nodes:
+      # ../.source/ATimeofWar_Eng_v8.cs:15772
+      - type: 'link'
+        # ../en-US.restext:1199 | "I chose Ingredients."
+        label: 'restext://RumorD6Guns_007'
+        target: 'RumorD6Confirm' # ./00144-RumorD6Confirm.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/ATimeofWar_Eng_v8.cs:15699
+        - type: 'assign'
+          var: 'gunsbonus'
+          expr: '2'
+      # ../.source/ATimeofWar_Eng_v8.cs:15773
+      - type: 'break'
+      # ../.source/ATimeofWar_Eng_v8.cs:15774
+      - type: 'text'
+        # ../en-US.restext:1200 | "_(The player with the mos..."
+        value: 'restext://RumorD6Guns_008'
+    - match: 3
+      nodes:
+      # ../.source/ATimeofWar_Eng_v8.cs:15779
+      - type: 'link'
+        # ../en-US.restext:1201 | "I chose Money."
+        label: 'restext://RumorD6Guns_009'
+        target: 'RumorD6Confirm' # ./00144-RumorD6Confirm.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/ATimeofWar_Eng_v8.cs:15706
+        - type: 'assign'
+          var: 'gunsbonus'
+          expr: '3'
+      # ../.source/ATimeofWar_Eng_v8.cs:15780
+      - type: 'break'
+      # ../.source/ATimeofWar_Eng_v8.cs:15781
+      - type: 'text'
+        # ../en-US.restext:1202 | "_(The player with the mos..."
+        value: 'restext://RumorD6Guns_010'

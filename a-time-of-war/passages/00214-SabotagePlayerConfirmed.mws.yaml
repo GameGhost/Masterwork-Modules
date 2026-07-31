@@ -1,0 +1,32 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:22023
+---
+format: 'mws/0.4'
+passage_id: 'SabotagePlayerConfirmed'
+# ../en-US.restext:1806 | "The Choice Was Made"
+title: 'restext://SabotagePlayerConfirmed_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:22030
+- type: 'text'
+  # ../en-US.restext:1807 | "{sabotagee1} would should..."
+  value: 'restext://SabotagePlayerConfirmed_002'
+# ../.source/ATimeofWar_Eng_v8.cs:22033
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:22035
+- type: 'conditional'
+  if: 'round == 7'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:22037
+  - type: 'link'
+    # ../en-US.restext:24 | "Click to continue..."
+    label: 'restext://Common_020'
+    target: 'AMessenger' # ./00022-AMessenger.mws.yaml
+    snapshot: true
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:22041
+  - type: 'link'
+    # ../en-US.restext:24 | "Click to continue..."
+    label: 'restext://Common_020'
+    target: 'ResistEvent' # ./00034-ResistEvent.mws.yaml
+    snapshot: true

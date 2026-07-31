@@ -1,0 +1,115 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:26959
+---
+format: 'mws/0.4'
+passage_id: 'JunkPalaceMeet1'
+# ../en-US.restext:1979 | "The Meeting at the Junk Palace"
+title: 'restext://JunkPalaceMeet1_001'
+tags:
+- 'Creep'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:26969
+- type: 'text'
+  # ../en-US.restext:130 | "**Letter from {tempname} -** "
+  value: 'restext://Common_126'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26975
+- type: 'include_passage'
+  target: 'date1a' # ./00207-date1a.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:26978
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26980
+- type: 'conditional'
+  # ../en-US.restext:266 | "The Butcher"
+  if: 'warden == "restext://Common_262"'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:26982
+  - type: 'text'
+    # ../en-US.restext:1981 | "{warden} stood and wiped ..."
+    value: 'restext://JunkPalaceMeet1_004'
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:26989
+  - type: 'text'
+    # ../en-US.restext:1980 | "{warden} stood up from th..."
+    value: 'restext://JunkPalaceMeet1_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26995
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26997
+- type: 'text'
+  # ../en-US.restext:1982 | "{warden} spoke. \"Since y..."
+  value: 'restext://JunkPalaceMeet1_005'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27002
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27004
+- type: 'text'
+  # ../en-US.restext:1983 | "As you no doubt have real..."
+  value: 'restext://JunkPalaceMeet1_006'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27015
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27019
+- type: 'text'
+  # ../en-US.restext:278 | "**Choose:**"
+  value: 'restext://Common_274'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27021
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27024
+- type: 'link'
+  # ../en-US.restext:1984 | "I kindly declined the offer."
+  label: 'restext://JunkPalaceMeet1_007'
+  target: 'JunkPalaceMeetb' # ./00236-JunkPalaceMeetb.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:27044
+  - type: 'assign'
+    var: 'tempcreep'
+    # ../en-US.restext:279 | "Nothing happens."
+    expr: '"restext://Common_275"'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27025
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27028
+- type: 'link'
+  # ../en-US.restext:1985 | "$1. (to gain 1 Creepy)"
+  label: 'restext://JunkPalaceMeet1_008'
+  target: 'JunkPalaceMeetb' # ./00236-JunkPalaceMeetb.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:27051
+  - type: 'assign'
+    var: 'tempcreep'
+    # ../en-US.restext:1986 | "Pay $1. Gain 1 Creepy."
+    expr: '"restext://JunkPalaceMeet1_009"'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27029
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27032
+- type: 'link'
+  # ../en-US.restext:1987 | "$2. (to gain 2 Creepy)"
+  label: 'restext://JunkPalaceMeet1_010'
+  target: 'JunkPalaceMeetb' # ./00236-JunkPalaceMeetb.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:27058
+  - type: 'assign'
+    var: 'tempcreep'
+    # ../en-US.restext:1988 | "Pay $2. Gain 2 Creepy."
+    expr: '"restext://JunkPalaceMeet1_011"'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27033
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27036
+- type: 'link'
+  # ../en-US.restext:1989 | "$3. (to gain 3 Creepy)"
+  label: 'restext://JunkPalaceMeet1_012'
+  target: 'JunkPalaceMeetb' # ./00236-JunkPalaceMeetb.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:27065
+  - type: 'assign'
+    var: 'tempcreep'
+    # ../en-US.restext:1990 | "Pay $3. Gain 3 Creepy."
+    expr: '"restext://JunkPalaceMeet1_013"'

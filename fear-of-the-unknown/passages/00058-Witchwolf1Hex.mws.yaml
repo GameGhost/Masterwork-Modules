@@ -1,0 +1,78 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:9029
+---
+format: 'mws/0.4'
+passage_id: 'Witchwolf1Hex'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:9031
+- type: 'section'
+  style: 'panel'
+  content: []
+- type: 'link'
+  # ../en-US.restext:277 | "Continue"
+  label: 'restext://Common_273'
+  target: 'Foreign' # ./00011-Foreign.mws.yaml
+  snapshot: true
+# ../.source/FearoftheUnknown_Eng_v15.cs:9032
+- type: 'conditional'
+  conditions:
+  - if: 'witch == nameA'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:9034
+    - type: 'assign'
+      var: 'witch1'
+      expr: 'witA'
+  - if: 'witch == nameB'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:9038
+    - type: 'assign'
+      var: 'witch1'
+      expr: 'witB'
+  - if: 'witch == nameC'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:9042
+    - type: 'assign'
+      var: 'witch1'
+      expr: 'witC'
+  - if: 'witch == nameD'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:9046
+    - type: 'assign'
+      var: 'witch1'
+      expr: 'witD'
+  - if: 'witch == nameE'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:9050
+    - type: 'assign'
+      var: 'witch1'
+      expr: 'witE'
+  - if: 'witch == wsuspect'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:9054
+    - type: 'assign'
+      var: 'witch1'
+      expr: 'witAI'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9056
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9059
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:156 | "Accept"
+  okay: 'restext://Common_152'
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:9063
+  - type: 'image'
+    asset: 'image://setup/S2_WitchHexToken'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:9065
+  - type: 'text'
+    # ../en-US.restext:796 | "Retrieve the **Witch's He..."
+    value: 'restext://Witchwolf1Hex_001'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:9074
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:9076
+  - type: 'text'
+    # ../en-US.restext:797 | "Place the **Witch's Hex**..."
+    value: 'restext://Witchwolf1Hex_002'

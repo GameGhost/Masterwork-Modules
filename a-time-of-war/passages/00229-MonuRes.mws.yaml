@@ -1,0 +1,227 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:23078
+---
+format: 'mws/0.4'
+passage_id: 'MonuRes'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:23080
+- type: 'conditional'
+  if: 'release >= 1'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:23084
+  - type: 'text'
+    # ../en-US.restext:1884 | "**A Bend Towards Chaos**"
+    value: 'restext://MonuRes_003'
+  # ../.source/ATimeofWar_Eng_v8.cs:23086
+  - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:23087
+  - type: 'text'
+    # ../en-US.restext:1885 | "To hell with academia! I ..."
+    value: 'restext://MonuRes_004'
+  # ../.source/ATimeofWar_Eng_v8.cs:23088
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:23090
+  - type: 'text'
+    # ../en-US.restext:1886 | "Publishing the means to c..."
+    value: 'restext://MonuRes_005'
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:23096
+  - type: 'text'
+    # ../en-US.restext:1882 | "**A Secure Future**"
+    value: 'restext://MonuRes_001'
+  # ../.source/ATimeofWar_Eng_v8.cs:23098
+  - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:23099
+  - type: 'text'
+    # ../en-US.restext:1883 | "Bold as it would have bee..."
+    value: 'restext://MonuRes_002'
+# ../.source/ATimeofWar_Eng_v8.cs:23101
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:23103
+- type: 'text'
+  # ../en-US.restext:1887 | "Because of our decision, ..."
+  value: 'restext://MonuRes_006'
+# ../.source/ATimeofWar_Eng_v8.cs:23105
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:23109
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  target: 'Paradox2' # ./00073-Paradox2.mws.yaml
+  # ../en-US.restext:182 | "Close"
+  okay: 'restext://Common_178'
+  snapshot: true
+  header:
+  # ../.source/ATimeofWar_Eng_v8.cs:23126
+  - type: 'image'
+    asset: 'image://setup/S3_EstateUpgradeBack'
+    style: 'setup-image'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:23129
+  - type: 'text'
+    # ../en-US.restext:1888 | "Retrieve the **In Memoria..."
+    value: 'restext://MonuRes_007'
+  # ../.source/ATimeofWar_Eng_v8.cs:23136
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:23138
+  - type: 'conditional'
+    if: 'release == 1'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:23140
+    - type: 'conditional'
+      if: 'platm == "yes"'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:23142
+      - type: 'text'
+        # ../en-US.restext:1889 | "{nameA} gains 3VP."
+        value: 'restext://MonuRes_008'
+      # ../.source/ATimeofWar_Eng_v8.cs:23144
+      - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:23146
+    - type: 'conditional'
+      if: 'plbtm == "yes"'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:23148
+      - type: 'text'
+        # ../en-US.restext:1890 | "{nameB} gains 3VP."
+        value: 'restext://MonuRes_009'
+      # ../.source/ATimeofWar_Eng_v8.cs:23150
+      - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:23152
+    - type: 'conditional'
+      if: 'plctm == "yes"'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:23154
+      - type: 'text'
+        # ../en-US.restext:1891 | "{nameC} gains 3VP."
+        value: 'restext://MonuRes_010'
+      # ../.source/ATimeofWar_Eng_v8.cs:23156
+      - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:23158
+    - type: 'conditional'
+      if: 'pldtm == "yes"'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:23160
+      - type: 'text'
+        # ../en-US.restext:1892 | "{nameD} gains 3VP."
+        value: 'restext://MonuRes_011'
+      # ../.source/ATimeofWar_Eng_v8.cs:23162
+      - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:23164
+    - type: 'conditional'
+      if: 'pletm == "yes"'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:23166
+      - type: 'text'
+        # ../en-US.restext:1893 | "{nameE} gains 3VP."
+        value: 'restext://MonuRes_012'
+      # ../.source/ATimeofWar_Eng_v8.cs:23168
+      - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:23171
+  - type: 'conditional'
+    if: 'release > 1'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:23173
+    - type: 'conditional'
+      if: 'platm == "yes"'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:23175
+      - type: 'text'
+        # ../en-US.restext:1894 | "{nameA} gains a Compulsion."
+        value: 'restext://MonuRes_013'
+      # ../.source/ATimeofWar_Eng_v8.cs:23177
+      - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:23179
+    - type: 'conditional'
+      if: 'plbtm == "yes"'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:23181
+      - type: 'text'
+        # ../en-US.restext:1895 | "{nameB} gains a Compulsion."
+        value: 'restext://MonuRes_014'
+      # ../.source/ATimeofWar_Eng_v8.cs:23183
+      - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:23185
+    - type: 'conditional'
+      if: 'plctm == "yes"'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:23187
+      - type: 'text'
+        # ../en-US.restext:1896 | "{nameC} gains a Compulsion."
+        value: 'restext://MonuRes_015'
+      # ../.source/ATimeofWar_Eng_v8.cs:23189
+      - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:23191
+    - type: 'conditional'
+      if: 'pldtm == "yes"'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:23193
+      - type: 'text'
+        # ../en-US.restext:1897 | "{nameD} gains a Compulsion."
+        value: 'restext://MonuRes_016'
+      # ../.source/ATimeofWar_Eng_v8.cs:23195
+      - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:23197
+    - type: 'conditional'
+      if: 'pletm == "yes"'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:23199
+      - type: 'text'
+        # ../en-US.restext:1898 | "{nameE} gains a Compulsion."
+        value: 'restext://MonuRes_017'
+      # ../.source/ATimeofWar_Eng_v8.cs:23201
+      - type: 'break'
+    else: []
+  # ../.source/ATimeofWar_Eng_v8.cs:23207
+  - type: 'conditional'
+    if: 'platm == "no"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:23209
+    - type: 'text'
+      # ../en-US.restext:1899 | "{nameA} draws 1 Utopian E..."
+      value: 'restext://MonuRes_018'
+    # ../.source/ATimeofWar_Eng_v8.cs:23213
+    - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:23215
+  - type: 'conditional'
+    if: 'plbtm == "no"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:23217
+    - type: 'text'
+      # ../en-US.restext:1900 | "{nameB} draws 1 Utopian E..."
+      value: 'restext://MonuRes_019'
+    # ../.source/ATimeofWar_Eng_v8.cs:23221
+    - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:23223
+  - type: 'conditional'
+    if: 'plctm == "no"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:23225
+    - type: 'text'
+      # ../en-US.restext:1901 | "{nameC} draws 1 Utopian E..."
+      value: 'restext://MonuRes_020'
+    # ../.source/ATimeofWar_Eng_v8.cs:23229
+    - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:23231
+  - type: 'conditional'
+    if: 'pldtm == "no"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:23233
+    - type: 'text'
+      # ../en-US.restext:1902 | "{nameD} draws 1 Utopian E..."
+      value: 'restext://MonuRes_021'
+    # ../.source/ATimeofWar_Eng_v8.cs:23237
+    - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:23239
+  - type: 'conditional'
+    if: 'pletm == "no"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:23241
+    - type: 'text'
+      # ../en-US.restext:1903 | "{nameE} draws 1 Utopian E..."
+      value: 'restext://MonuRes_022'

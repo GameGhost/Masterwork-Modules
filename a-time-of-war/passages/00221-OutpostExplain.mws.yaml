@@ -1,0 +1,76 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:22473
+---
+format: 'mws/0.4'
+passage_id: 'OutpostExplain'
+# ../en-US.restext:1849 | "OUTPOST"
+title: 'restext://OutpostExplain_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:22481
+- type: 'text'
+  # ../en-US.restext:1850 | "When you visit the Outpos..."
+  value: 'restext://OutpostExplain_002'
+# ../.source/ATimeofWar_Eng_v8.cs:22491
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:22493
+- type: 'text'
+  # ../en-US.restext:1851 | "Pay 2 {icon:s3_weapontoke..."
+  value: 'restext://OutpostExplain_003'
+# ../.source/ATimeofWar_Eng_v8.cs:22501
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:22502
+- type: 'text'
+  # ../en-US.restext:1852 | "Pay 3 {icon:s3_weapontoke..."
+  value: 'restext://OutpostExplain_004'
+# ../.source/ATimeofWar_Eng_v8.cs:22510
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:22511
+- type: 'text'
+  # ../en-US.restext:1853 | "Pay 4 {icon:s3_weapontoke..."
+  value: 'restext://OutpostExplain_005'
+# ../.source/ATimeofWar_Eng_v8.cs:22521
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:22523
+- type: 'switch'
+  on: 'round'
+  cases:
+  - match: 7
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:22526
+    - type: 'link'
+      # ../en-US.restext:58 | "Click to return..."
+      label: 'restext://Common_054'
+      target: 'Martial1' # ./00023-Martial1.mws.yaml
+      snapshot: true
+      onclick:
+      # ../.source/ATimeofWar_Eng_v8.cs:22544
+      - type: 'assign'
+        var: 'martial'
+        expr: '1'
+  - match: 8
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:22531
+    - type: 'link'
+      # ../en-US.restext:58 | "Click to return..."
+      label: 'restext://Common_054'
+      target: 'Martial2' # ./00024-Martial2.mws.yaml
+      snapshot: true
+      onclick:
+      # ../.source/ATimeofWar_Eng_v8.cs:22551
+      - type: 'assign'
+        var: 'martial'
+        expr: '2'
+  default:
+  # ../.source/ATimeofWar_Eng_v8.cs:22536
+  - type: 'link'
+    # ../en-US.restext:58 | "Click to return..."
+    label: 'restext://Common_054'
+    target: 'Martial3' # ./00036-Martial3.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:22558
+    - type: 'assign'
+      var: 'martial'
+      expr: '3'

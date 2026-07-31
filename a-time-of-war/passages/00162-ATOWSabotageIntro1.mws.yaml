@@ -1,0 +1,84 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:17886
+---
+format: 'mws/0.4'
+passage_id: 'ATOWSabotageIntro1'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:17891
+- type: 'text'
+  # ../en-US.restext:1411 | "**Carefully hand this Sto..."
+  value: 'restext://ATOWSabotageIntro1_001'
+# ../.source/ATimeofWar_Eng_v8.cs:17899
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:17904
+- type: 'popup'
+  # ../en-US.restext:181 | "Once you are ready, click..."
+  label: 'restext://Common_177'
+  layout: 'reveal'
+  # ../en-US.restext:182 | "Close"
+  cancel: 'restext://Common_178'
+  snapshot: true
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:17913
+  - type: 'text'
+    # ../en-US.restext:12 | "**A Time for Sabotage**"
+    value: 'restext://Common_008'
+  # ../.source/ATimeofWar_Eng_v8.cs:17915
+  - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:17916
+  - type: 'text'
+    # ../en-US.restext:13 | "For too long I had been i..."
+    value: 'restext://Common_009'
+  # ../.source/ATimeofWar_Eng_v8.cs:17917
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:17919
+  - type: 'text'
+    # ../en-US.restext:1412 | "It was time to strike whi..."
+    value: 'restext://ATOWSabotageIntro1_004'
+  # ../.source/ATimeofWar_Eng_v8.cs:17924
+  - type: 'assign'
+    var: 'sabotagee1'
+    # ../en-US.restext:78 | "none"
+    expr: '"restext://Common_074"'
+  # ../.source/ATimeofWar_Eng_v8.cs:17923
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:17928
+  - type: 'text'
+    # ../en-US.restext:14 | "**The decision was clear ..."
+    value: 'restext://Common_010'
+  # ../.source/ATimeofWar_Eng_v8.cs:17930
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:17932
+  - type: 'link'
+    # ../en-US.restext:15 | "I chose to sabotage the v..."
+    label: 'restext://Common_011'
+    target: 'ATOWSabotage1' # ./00160-ATOWSabotage1.mws.yaml
+    snapshot: true
+  # ../.source/ATimeofWar_Eng_v8.cs:17933
+  - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:17934
+  - type: 'conditional'
+    if: 'players > 2'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:17936
+    - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:17937
+    - type: 'link'
+      # ../en-US.restext:1413 | "I chose to sabotage one o..."
+      label: 'restext://ATOWSabotageIntro1_007'
+      target: 'SabotageSignIn1' # ./00208-SabotageSignIn1.mws.yaml
+      snapshot: true
+    # ../.source/ATimeofWar_Eng_v8.cs:17938
+    - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:17940
+  - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:17941
+  - type: 'link'
+    # ../en-US.restext:16 | "Instead, I chose to absta..."
+    label: 'restext://Common_012'
+    target: 'ATOWSabotageNO' # ./00209-ATOWSabotageNO.mws.yaml
+    snapshot: true

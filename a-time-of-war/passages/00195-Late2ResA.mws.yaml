@@ -1,0 +1,53 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:20408
+---
+format: 'mws/0.4'
+passage_id: 'Late2ResA'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:20410
+- type: 'conditional'
+  if: 'late == 2'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:20414
+  - type: 'text'
+    # ../en-US.restext:59 | "**Gift of Silence**"
+    value: 'restext://Common_055'
+  # ../.source/ATimeofWar_Eng_v8.cs:20416
+  - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:20417
+  - type: 'text'
+    # ../en-US.restext:1698 | "For a reason which was ne..."
+    value: 'restext://Late2ResA_002'
+  # ../.source/ATimeofWar_Eng_v8.cs:20418
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:20420
+  - type: 'text'
+    # ../en-US.restext:1699 | "It would have been uncout..."
+    value: 'restext://Late2ResA_003'
+  # ../.source/ATimeofWar_Eng_v8.cs:20422
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:20426
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:24 | "Click to continue..."
+    label: 'restext://Common_020'
+    target: 'Paradox1' # ./00029-Paradox1.mws.yaml
+    # ../en-US.restext:182 | "Close"
+    okay: 'restext://Common_178'
+    snapshot: true
+    header:
+    # ../.source/ATimeofWar_Eng_v8.cs:20444
+    - type: 'image'
+      asset: 'image://setup/MFWlogo'
+      style: 'setup-image'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:20446
+    - type: 'text'
+      # ../en-US.restext:1700 | "Each player gains 2 Resou..."
+      value: 'restext://Late2ResA_004'
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:20430
+  - type: 'goto'
+    target: 'Paradox1' # ./00029-Paradox1.mws.yaml

@@ -1,0 +1,41 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:20993
+---
+format: 'mws/0.4'
+passage_id: 'AsylumTreatmentBPay'
+# ../en-US.restext:1540 | "Discharged"
+title: 'restext://AsylumTreatmentBPay_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:21003
+- type: 'text'
+  # ../en-US.restext:1541 | "**Patient {question} - Di..."
+  value: 'restext://AsylumTreatmentBPay_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21008
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21010
+- type: 'text'
+  # ../en-US.restext:1542 | "Treatment concluded. Home..."
+  value: 'restext://AsylumTreatmentBPay_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21011
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21015
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:309 | "Click to return..."
+  label: 'restext://Common_305'
+  target: '${round == 19 ? "Liberal" : round == 20 ? "Liberal2" : "Liberal3"}' # ./00026-Liberal.mws.yaml, ./00050-Liberal2.mws.yaml, ./00051-Liberal3.mws.yaml
+  # ../en-US.restext:275 | "Close"
+  okay: 'restext://Common_271'
+  snapshot: true
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:21031
+  - type: 'image'
+    asset: 'image://setup/S2_RehabilitationToken'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:21036
+  - type: 'text'
+    # ../en-US.restext:1543 | "**Pay $2** to the supply...."
+    value: 'restext://AsylumTreatmentBPay_004'

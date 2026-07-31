@@ -1,0 +1,73 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:21201
+---
+format: 'mws/0.4'
+passage_id: 'ATOWSabotageIntro2'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:21206
+- type: 'text'
+  # ../en-US.restext:17 | "**Carefully hand this Sto..."
+  value: 'restext://Common_013'
+# ../.source/ATimeofWar_Eng_v8.cs:21211
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:21216
+- type: 'popup'
+  # ../en-US.restext:181 | "Once you are ready, click..."
+  label: 'restext://Common_177'
+  layout: 'reveal'
+  # ../en-US.restext:182 | "Close"
+  cancel: 'restext://Common_178'
+  snapshot: true
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:21225
+  - type: 'text'
+    # ../en-US.restext:12 | "**A Time for Sabotage**"
+    value: 'restext://Common_008'
+  # ../.source/ATimeofWar_Eng_v8.cs:21227
+  - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:21228
+  - type: 'text'
+    # ../en-US.restext:13 | "For too long I had been i..."
+    value: 'restext://Common_009'
+  # ../.source/ATimeofWar_Eng_v8.cs:21229
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:21231
+  - type: 'text'
+    # ../en-US.restext:1770 | "It was time to strike whi..."
+    value: 'restext://ATOWSabotageIntro2_002'
+  # ../.source/ATimeofWar_Eng_v8.cs:21235
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:21239
+  - type: 'text'
+    # ../en-US.restext:14 | "**The decision was clear ..."
+    value: 'restext://Common_010'
+  # ../.source/ATimeofWar_Eng_v8.cs:21241
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:21243
+  - type: 'link'
+    # ../en-US.restext:15 | "I chose to sabotage the v..."
+    label: 'restext://Common_011'
+    target: 'ATOWSabotage1' # ./00160-ATOWSabotage1.mws.yaml
+    snapshot: true
+  # ../.source/ATimeofWar_Eng_v8.cs:21244
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:21246
+  - type: 'link'
+    # ../en-US.restext:18 | "I chose to sabotage anoth..."
+    label: 'restext://Common_014'
+    target: 'SabotageSignIn1' # ./00208-SabotageSignIn1.mws.yaml
+    snapshot: true
+  # ../.source/ATimeofWar_Eng_v8.cs:21247
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:21249
+  - type: 'link'
+    # ../en-US.restext:16 | "Instead, I chose to absta..."
+    label: 'restext://Common_012'
+    target: 'ATOWSabotageNO' # ./00209-ATOWSabotageNO.mws.yaml
+    snapshot: true

@@ -1,0 +1,69 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:12034
+---
+format: 'mws/0.4'
+passage_id: 'OUTDATEDFirstPara'
+tags:
+- 'OLD'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:12036
+- type: 'text'
+  # ../en-US.restext:897 | "Event introduced as HIGHE..."
+  value: 'restext://OUTDATEDFirstPara_001'
+# ../.source/ATimeofWar_Eng_v8.cs:12037
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:12042
+- type: 'text'
+  # ../en-US.restext:898 | "**University Dedication**"
+  value: 'restext://OUTDATEDFirstPara_002'
+# ../.source/ATimeofWar_Eng_v8.cs:12044
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:12049
+- type: 'text'
+  # ../en-US.restext:899 | "**Experimental Bid**"
+  value: 'restext://OUTDATEDFirstPara_003'
+# ../.source/ATimeofWar_Eng_v8.cs:12051
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:12053
+- type: 'text'
+  # ../en-US.restext:900 | "Bid with Highest VP on Ex..."
+  value: 'restext://OUTDATEDFirstPara_004'
+# ../.source/ATimeofWar_Eng_v8.cs:12054
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:12056
+- type: 'text'
+  # ../en-US.restext:901 | "Dedicated in your Grandpa..."
+  value: 'restext://OUTDATEDFirstPara_005'
+# ../.source/ATimeofWar_Eng_v8.cs:12058
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:12061
+- type: 'conditional'
+  if: 'crazy >= 1'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:12064
+  - type: 'link'
+    # ../en-US.restext:24 | "Click to continue..."
+    label: 'restext://Common_020'
+    target: '${OUTDATEDFirstParanextPsg}'
+    snapshot: true
+    onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:12077
+    - type: 'conditional'
+      if: 'OUTDATEDFirstParanextPsg == "" || OUTDATEDFirstParanextPsg == 0'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:12079
+      - type: 'assign'
+        var: 'OUTDATEDFirstParanextPsg'
+        expr: '["FutureStick", "CostStick1"].shuffled("OUTDATEDFirstPara_0")[0]'
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:12068
+  - type: 'link'
+    # ../en-US.restext:24 | "Click to continue..."
+    label: 'restext://Common_020'
+    target: 'Paradox2' # ./00073-Paradox2.mws.yaml
+    snapshot: true

@@ -1,0 +1,20 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:22571
+---
+format: 'mws/0.4'
+passage_id: 'PotentBuyBonus'
+tags:
+- 'OLD'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:22573
+- type: 'conditional'
+  if: 'buy >= 2'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:22577
+  - type: 'text'
+    # ../en-US.restext:1856 | "**Significant Investment**"
+    value: 'restext://PotentBuyBonus_001'
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:22582
+  - type: 'goto'
+    target: 'xxx'

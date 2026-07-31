@@ -1,0 +1,121 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:3715
+---
+format: 'mws/0.4'
+passage_id: 'Isolation'
+# ../en-US.restext:124 | "Walled City"
+title: 'restext://Common_120'
+# ../en-US.restext:155 | "Early Years"
+subtitle: 'restext://Common_151'
+tags:
+- 'HUB'
+layout: 'hub'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:3722
+- type: 'assign'
+  var: 'round'
+  expr: '10'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3724
+- type: 'conditional'
+  if: '!isooff'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:3728
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:156 | "Accept"
+    okay: 'restext://Common_152'
+    header:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:3732
+    - type: 'image'
+      asset: 'image://setup/AngryMobSetup1'
+      style: 'setup-image'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:3734
+    - type: 'text'
+      # ../en-US.restext:529 | "Turn to page **14** of th..."
+      value: 'restext://Isolation_002'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:3749
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:3750
+    - type: 'conditional'
+      if: 'players == 3'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:3752
+      - type: 'text'
+        # ../en-US.restext:96 | "Then, since this is a 3 p..."
+        value: 'restext://Common_092'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:3753
+      - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3757
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3761
+- type: 'section'
+  # ../en-US.restext:530 | "**Rising Prices**"
+  title: 'restext://Isolation_003'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:3769
+  - type: 'text'
+    # ../en-US.restext:531 | "With the town's isolation..."
+    value: 'restext://Isolation_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3784
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3788
+- type: 'section'
+  # ../en-US.restext:125 | "{icon:storybooktoken} **V..."
+  title: 'restext://Common_121'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:3799
+  - type: 'text'
+    # ../en-US.restext:126 | "As a registered citizen w..."
+    value: 'restext://Common_122'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:3801
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:3803
+  - type: 'text'
+    # ../en-US.restext:127 | "You MUST place your **Sel..."
+    value: 'restext://Common_123'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:3810
+  - type: 'link'
+    # ../en-US.restext:128 | "click here to complete ve..."
+    label: 'restext://Common_124'
+    target: 'IsoIdentificationSignIn' # ./00211-IsoIdentificationSignIn.mws.yaml
+    snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:3811
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:3815
+  - type: 'text'
+    # ../en-US.restext:129 | "_(If you have not verifie..."
+    value: 'restext://Common_125'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3823
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3827
+- type: 'section'
+  # ../en-US.restext:66 | "**The Church**"
+  title: 'restext://Common_062'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:3835
+  - type: 'link'
+    # ../en-US.restext:67 | "Click here"
+    label: 'restext://Common_063'
+    target: 'FOTU-Church' # ./00352-FOTU-Church.mws.yaml
+    snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:3836
+  - type: 'text'
+    # ../en-US.restext:68 | " for an explanation of th..."
+    value: 'restext://Common_064'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:3838
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:3842
+  - type: 'link'
+    # ../en-US.restext:173 | "Click here at the end of ..."
+    label: 'restext://Common_169'
+    target: 'Caravancheck' # ./00105-Caravancheck.mws.yaml
+    snapshot: true

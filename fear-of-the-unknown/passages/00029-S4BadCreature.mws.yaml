@@ -1,0 +1,93 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:4890
+---
+format: 'mws/0.4'
+passage_id: 'S4BadCreature'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:4892
+- type: 'conditional'
+  if: 'creature == 1'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4897
+  - type: 'text'
+    # ../en-US.restext:599 | "**The Creature Exacts Its..."
+    value: 'restext://S4BadCreature_001'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4900
+  - type: 'assign'
+    var: 'revenge'
+    expr: '1'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4899
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4902
+  - type: 'include_passage'
+    target: 'journal1a' # ./00206-journal1a.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4903
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4905
+  - type: 'text'
+    # ../en-US.restext:600 | "I am ruined! Oh how naive..."
+    value: 'restext://S4BadCreature_002'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4908
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4910
+  - type: 'text'
+    # ../en-US.restext:601 | "As I slept last night, my..."
+    value: 'restext://S4BadCreature_003'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4911
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4913
+  - type: 'text'
+    # ../en-US.restext:602 | "Hours later, the pall onl..."
+    value: 'restext://S4BadCreature_004'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4916
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4918
+  - type: 'text'
+    # ../en-US.restext:603 | "I have only sorrow and ha..."
+    value: 'restext://S4BadCreature_005'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4920
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4924
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:286 | "Click to continue..."
+    label: 'restext://Common_282'
+    target: 'RareCreatureBonus' # ./00254-RareCreatureBonus.mws.yaml
+    # ../en-US.restext:275 | "Close"
+    okay: 'restext://Common_271'
+    snapshot: true
+    header:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:4954
+    - type: 'image'
+      asset: 'image://setup/Bodies_Icon'
+      style: 'setup-image'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:4957
+    - type: 'text'
+      # ../en-US.restext:604 | "All players place their *..."
+      value: 'restext://S4BadCreature_006'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:4973
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:4975
+    - type: 'text'
+      # ../en-US.restext:605 | "All players gain a {icon:..."
+      value: 'restext://S4BadCreature_007'
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4929
+  - type: 'conditional'
+    if: 'Gen2End == "asylum"'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:4931
+    - type: 'goto'
+      target: 'LiberalIntro' # ./00024-LiberalIntro.mws.yaml
+    else:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:4937
+    - type: 'goto'
+      target: 'PrivatizedIntro' # ./00023-PrivatizedIntro.mws.yaml

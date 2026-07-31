@@ -1,0 +1,232 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:15498
+---
+format: 'mws/0.4'
+passage_id: 'FP10VP'
+# ../en-US.restext:1284 | "Ceaseless Ambition"
+title: 'restext://FP10VP_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:15505
+- type: 'conditional'
+  if: 'onecount == players'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15507
+  - type: 'assign'
+    var: 'fp10vp'
+    expr: '1'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15508
+  - type: 'goto'
+    target: 'FP1OverBonus' # ./00140-FP1OverBonus.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:15513
+- type: 'text'
+  # ../en-US.restext:1285 | "**Choose your player name..."
+  value: 'restext://FP10VP_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15515
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15517
+- type: 'switch'
+  on: 'Aconfirm'
+  cases:
+  - match: 0
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15520
+    - type: 'link'
+      label: '{nameA}'
+      target: 'FP10VPsignin' # ./00142-FP10VPsignin.mws.yaml
+      snapshot: true
+      onclick:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15591
+      - type: 'assign'
+        var: 'fp10vp'
+        expr: '1'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15592
+      - type: 'assign'
+        var: 'Aconfirm'
+        expr: '1'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15593
+      - type: 'assign'
+        var: 'plA'
+        expr: '1'
+  - match: 1
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15525
+    - type: 'link'
+      label: '{nameA}'
+      target: 'FPNo' # ./00137-FPNo.mws.yaml
+      snapshot: true
+      onclick:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15600
+      - type: 'assign'
+        var: 'tempname'
+        expr: 'nameA'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15527
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15529
+- type: 'switch'
+  on: 'Bconfirm'
+  cases:
+  - match: 0
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15532
+    - type: 'link'
+      label: '{nameB}'
+      target: 'FP10VPsignin' # ./00142-FP10VPsignin.mws.yaml
+      snapshot: true
+      onclick:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15607
+      - type: 'assign'
+        var: 'fp10vp'
+        expr: '1'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15608
+      - type: 'assign'
+        var: 'Bconfirm'
+        expr: '1'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15609
+      - type: 'assign'
+        var: 'plB'
+        expr: '1'
+  - match: 1
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15537
+    - type: 'link'
+      label: '{nameB}'
+      target: 'FPNo' # ./00137-FPNo.mws.yaml
+      snapshot: true
+      onclick:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15616
+      - type: 'assign'
+        var: 'tempname'
+        expr: 'nameB'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15539
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15541
+- type: 'conditional'
+  if: 'players > 2'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15543
+  - type: 'switch'
+    on: 'Cconfirm'
+    cases:
+    - match: 0
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15546
+      - type: 'link'
+        label: '{nameC}'
+        target: 'FP10VPsignin' # ./00142-FP10VPsignin.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15623
+        - type: 'assign'
+          var: 'fp10vp'
+          expr: '1'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15624
+        - type: 'assign'
+          var: 'Cconfirm'
+          expr: '1'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15625
+        - type: 'assign'
+          var: 'plC'
+          expr: '1'
+    - match: 1
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15551
+      - type: 'link'
+        label: '{nameC}'
+        target: 'FPNo' # ./00137-FPNo.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15632
+        - type: 'assign'
+          var: 'tempname'
+          expr: 'nameC'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15553
+  - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15555
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15556
+- type: 'conditional'
+  if: 'players > 3'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15558
+  - type: 'switch'
+    on: 'Dconfirm'
+    cases:
+    - match: 0
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15561
+      - type: 'link'
+        label: '{nameD}'
+        target: 'FP10VPsignin' # ./00142-FP10VPsignin.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15639
+        - type: 'assign'
+          var: 'fp10vp'
+          expr: '1'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15640
+        - type: 'assign'
+          var: 'Dconfirm'
+          expr: '1'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15641
+        - type: 'assign'
+          var: 'plD'
+          expr: '1'
+    - match: 1
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15566
+      - type: 'link'
+        label: '{nameD}'
+        target: 'FPNo' # ./00137-FPNo.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15648
+        - type: 'assign'
+          var: 'tempname'
+          expr: 'nameD'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15568
+  - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15570
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15571
+- type: 'conditional'
+  if: 'players > 4'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15573
+  - type: 'switch'
+    on: 'Econfirm'
+    cases:
+    - match: 0
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15576
+      - type: 'link'
+        label: '{nameE}'
+        target: 'FP10VPsignin' # ./00142-FP10VPsignin.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15655
+        - type: 'assign'
+          var: 'fp10vp'
+          expr: '1'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15656
+        - type: 'assign'
+          var: 'Econfirm'
+          expr: '1'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15657
+        - type: 'assign'
+          var: 'plE'
+          expr: '1'
+    - match: 1
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15581
+      - type: 'link'
+        label: '{nameE}'
+        target: 'FPNo' # ./00137-FPNo.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15664
+        - type: 'assign'
+          var: 'tempname'
+          expr: 'nameE'

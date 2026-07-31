@@ -1,0 +1,55 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:16912
+---
+format: 'mws/0.4'
+passage_id: 'SeparatistBarnCheck'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:16914
+- type: 'conditional'
+  # ../en-US.restext:25 | "Separatists"
+  if: 'warloser == "restext://Common_021"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:16916
+  - type: 'conditional'
+    if: 'barn == "yes"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:16920
+    - type: 'text'
+      # ../en-US.restext:170 | "**Suspicions Confirmed**"
+      value: 'restext://Common_166'
+    # ../.source/ATimeofWar_Eng_v8.cs:16922
+    - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:16923
+    - type: 'text'
+      # ../en-US.restext:1370 | "The Separatists were furi..."
+      value: 'restext://SeparatistBarnCheck_001'
+    # ../.source/ATimeofWar_Eng_v8.cs:16924
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:16928
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:24 | "Click to continue..."
+      label: 'restext://Common_020'
+      target: 'PeaceWar' # ./00239-PeaceWar.mws.yaml
+      # ../en-US.restext:182 | "Close"
+      okay: 'restext://Common_178'
+      snapshot: true
+      header:
+      # ../.source/ATimeofWar_Eng_v8.cs:16951
+      - type: 'image'
+        asset: 'image://setup/S3_EstateUpgradeBack'
+        style: 'setup-image'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:16955
+      - type: 'text'
+        # ../en-US.restext:1371 | "**The player with the \"S..."
+        value: 'restext://SeparatistBarnCheck_002'
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:16932
+    - type: 'goto'
+      target: 'PeaceWar' # ./00239-PeaceWar.mws.yaml
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:16937
+  - type: 'goto'
+    target: 'PeaceWar' # ./00239-PeaceWar.mws.yaml

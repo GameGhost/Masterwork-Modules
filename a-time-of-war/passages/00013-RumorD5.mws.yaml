@@ -1,0 +1,104 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:2524
+---
+format: 'mws/0.4'
+passage_id: 'RumorD5'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:2529
+- type: 'text'
+  # ../en-US.restext:180 | "**Carefully pick up this ..."
+  value: 'restext://Common_176'
+# ../.source/ATimeofWar_Eng_v8.cs:2533
+- type: 'assign'
+  var: 'crazy'
+  expr: 'crazy + 1'
+# ../.source/ATimeofWar_Eng_v8.cs:2532
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:2538
+- type: 'popup'
+  # ../en-US.restext:181 | "Once you are ready, click..."
+  label: 'restext://Common_177'
+  layout: 'reveal'
+  # ../en-US.restext:182 | "Close"
+  cancel: 'restext://Common_178'
+  snapshot: true
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:2600
+  - type: 'conditional'
+    if: 'war == 1'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:2602
+    - type: 'text'
+      # ../en-US.restext:390 | "The snaggle-toothed gentl..."
+      value: 'restext://RumorD5_005'
+    # ../.source/ATimeofWar_Eng_v8.cs:2605
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:2607
+    - type: 'text'
+      # ../en-US.restext:391 | "Suddenly, he reached into..."
+      value: 'restext://RumorD5_006'
+    # ../.source/ATimeofWar_Eng_v8.cs:2611
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:2615
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:184 | "When you have finished re..."
+      label: 'restext://Common_180'
+      target: 'RumorCreep' # ./00086-RumorCreep.mws.yaml
+      # ../en-US.restext:182 | "Close"
+      okay: 'restext://Common_178'
+      snapshot: true
+      header:
+      # ../.source/ATimeofWar_Eng_v8.cs:2553
+      - type: 'image'
+        asset: 'image://setup/S3_WoodenFigureToken'
+        style: 'setup-image'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:2555
+      - type: 'text'
+        # ../en-US.restext:389 | "Gain a {icon:s3_woodenfig..."
+        value: 'restext://RumorD5_004'
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:2620
+    - type: 'text'
+      # ../en-US.restext:386 | "The snaggle-toothed gentl..."
+      value: 'restext://RumorD5_001'
+    # ../.source/ATimeofWar_Eng_v8.cs:2623
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:2625
+    - type: 'text'
+      # ../en-US.restext:387 | "\"Repent, young fisher,\"..."
+      value: 'restext://RumorD5_002'
+    # ../.source/ATimeofWar_Eng_v8.cs:2627
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:2629
+    - type: 'text'
+      # ../en-US.restext:388 | "I felt it may have been a..."
+      value: 'restext://RumorD5_003'
+    # ../.source/ATimeofWar_Eng_v8.cs:2632
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:2636
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:184 | "When you have finished re..."
+      label: 'restext://Common_180'
+      target: 'RumorCreep' # ./00086-RumorCreep.mws.yaml
+      # ../en-US.restext:182 | "Close"
+      okay: 'restext://Common_178'
+      snapshot: true
+      header:
+      # ../.source/ATimeofWar_Eng_v8.cs:2580
+      - type: 'image'
+        asset: 'image://setup/S3_WoodenFigureToken'
+        style: 'setup-image'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:2582
+      - type: 'text'
+        # ../en-US.restext:389 | "Gain a {icon:s3_woodenfig..."
+        value: 'restext://RumorD5_004'

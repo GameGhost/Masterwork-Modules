@@ -1,0 +1,99 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:13452
+---
+format: 'mws/0.4'
+passage_id: 'Caravancheck'
+tags:
+- 'format'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:13454
+- type: 'assign'
+  var: 'isooff'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13455
+- type: 'conditional'
+  conditions:
+  - if: 'visit == 0'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:13457
+    - type: 'let'
+      var: '_rnd_Caravancheck_0'
+      expr: '["Foreign3", "Foreign3", "Foreign3", "Caravansery"].shuffled("Caravancheck_0")[0]'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:13457
+    - type: 'goto'
+      target: '${_rnd_Caravancheck_0}'
+  - if: 'visit == 1'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:13461
+    - type: 'switch'
+      on: 'round'
+      cases:
+      - match: 6
+        nodes:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:13463
+        - type: 'let'
+          var: '_rnd_Caravancheck_1'
+          expr: '["Isolation", "Isolation", "Caravansery"].shuffled("Caravancheck_1")[0]'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:13463
+        - type: 'goto'
+          target: '${_rnd_Caravancheck_1}'
+      - match: 10
+        nodes:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:13467
+        - type: 'let'
+          var: '_rnd_Caravancheck_2'
+          expr: '["S4Smug", "S4Smug", "Caravansery"].shuffled("Caravancheck_2")[0]'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:13467
+        - type: 'goto'
+          target: '${_rnd_Caravancheck_2}'
+      - match: 11
+        nodes:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:13471
+        - type: 'let'
+          var: '_rnd_Caravancheck_3'
+          expr: '["Isolation3", "Isolation3", "Caravansery"].shuffled("Caravancheck_3")[0]'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:13471
+        - type: 'goto'
+          target: '${_rnd_Caravancheck_3}'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13474
+- type: 'conditional'
+  if: 'visit == 2'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13476
+  - type: 'switch'
+    on: 'round'
+    cases:
+    - match: 6
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:13478
+      - type: 'let'
+        var: '_rnd_Caravancheck_4'
+        expr: '["Tension", "Tension", "Caravansery"].shuffled("Caravancheck_4")[0]'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:13478
+      - type: 'goto'
+        target: '${_rnd_Caravancheck_4}'
+    - match: 13
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:13482
+      - type: 'let'
+        var: '_rnd_Caravancheck_5'
+        expr: '["Tension2", "Tension2", "Caravansery"].shuffled("Caravancheck_5")[0]'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:13482
+      - type: 'goto'
+        target: '${_rnd_Caravancheck_5}'
+    - match: 14
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:13486
+      - type: 'let'
+        var: '_rnd_Caravancheck_6'
+        expr: '["Tension3", "Tension3", "Caravansery"].shuffled("Caravancheck_6")[0]'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:13486
+      - type: 'goto'
+        target: '${_rnd_Caravancheck_6}'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13489
+- type: 'conditional'
+  if: 'visit != 0 && visit != 1 && round != 10 && round != 11 && visit != 2 && round != 13 && round != 14 && round != 6'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13491
+  - type: 'goto'
+    target: 'Caravansery' # ./00104-Caravansery.mws.yaml

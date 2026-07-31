@@ -1,0 +1,108 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:26317
+---
+format: 'mws/0.4'
+passage_id: 'ParadoxGiantCheck'
+# ../en-US.restext:2151 | "Giant Masterwork Check"
+title: 'restext://ParadoxGiantCheck_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:26325
+- type: 'text'
+  # ../en-US.restext:2152 | "How many players complete..."
+  value: 'restext://ParadoxGiantCheck_002'
+# ../.source/ATimeofWar_Eng_v8.cs:26331
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:26334
+- type: 'link'
+  # ../en-US.restext:2153 | "0"
+  label: 'restext://ParadoxGiantCheck_003'
+  target: 'ParadoxEvent' # ./00074-ParadoxEvent.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/ATimeofWar_Eng_v8.cs:26370
+  - type: 'assign'
+    var: 'giants'
+    expr: '0'
+# ../.source/ATimeofWar_Eng_v8.cs:26335
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:26338
+- type: 'link'
+  # ../en-US.restext:201 | "1"
+  label: 'restext://Common_197'
+  target: 'ParadoxEvent' # ./00074-ParadoxEvent.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/ATimeofWar_Eng_v8.cs:26378
+  - type: 'assign'
+    var: 'giants'
+    expr: '1'
+# ../.source/ATimeofWar_Eng_v8.cs:26339
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:26342
+- type: 'link'
+  # ../en-US.restext:200 | "2"
+  label: 'restext://Common_196'
+  target: 'ParadoxEvent' # ./00074-ParadoxEvent.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/ATimeofWar_Eng_v8.cs:26386
+  - type: 'assign'
+    var: 'giants'
+    expr: '2'
+# ../.source/ATimeofWar_Eng_v8.cs:26343
+- type: 'conditional'
+  if: 'players >= 3'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26345
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:26348
+  - type: 'link'
+    # ../en-US.restext:199 | "3"
+    label: 'restext://Common_195'
+    target: 'ParadoxEvent' # ./00074-ParadoxEvent.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:26394
+    - type: 'assign'
+      var: 'giants'
+      expr: '3'
+# ../.source/ATimeofWar_Eng_v8.cs:26350
+- type: 'conditional'
+  if: 'players >= 4'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26352
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:26355
+  - type: 'link'
+    # ../en-US.restext:2154 | "4"
+    label: 'restext://ParadoxGiantCheck_004'
+    target: 'ParadoxEvent' # ./00074-ParadoxEvent.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:26402
+    - type: 'assign'
+      var: 'giants'
+      expr: '4'
+# ../.source/ATimeofWar_Eng_v8.cs:26357
+- type: 'conditional'
+  if: 'players >= 5'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26359
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:26362
+  - type: 'link'
+    # ../en-US.restext:2155 | "5"
+    label: 'restext://ParadoxGiantCheck_005'
+    target: 'ParadoxEvent' # ./00074-ParadoxEvent.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:26410
+    - type: 'assign'
+      var: 'giants'
+      expr: '5'

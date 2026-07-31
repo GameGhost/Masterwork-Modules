@@ -1,0 +1,89 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:26261
+---
+format: 'mws/0.4'
+passage_id: 'TownHallExplanation'
+# ../en-US.restext:1931 | "Town Hall"
+title: 'restext://TownHallExplanation_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:26268
+- type: 'text'
+  # ../en-US.restext:1932 | "When you visit the Town H..."
+  value: 'restext://TownHallExplanation_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26288
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26292
+- type: 'text'
+  # ../en-US.restext:1933 | "_Bricks are placed into y..."
+  value: 'restext://TownHallExplanation_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26299
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26303
+- type: 'text'
+  # ../en-US.restext:103 | "**Key to the City**"
+  value: 'restext://Common_099'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26305
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26306
+- type: 'text'
+  # ../en-US.restext:1934 | "The **Key to the City** E..."
+  value: 'restext://TownHallExplanation_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26314
+- type: 'conditional'
+  if: 'players >= 4'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:26316
+  - type: 'text'
+    # ../en-US.restext:105 | "The player who has the se..."
+    value: 'restext://Common_101'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26318
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26322
+- type: 'text'
+  # ../en-US.restext:1935 | "_If there is a tie, the o..."
+  value: 'restext://TownHallExplanation_005'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26326
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26329
+- type: 'popup'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  layout: 'reveal'
+  # ../en-US.restext:275 | "Close"
+  cancel: 'restext://Common_271'
+  snapshot: true
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:26336
+  - type: 'switch'
+    on: 'round'
+    cases:
+    - match: 4
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:26338
+      - type: 'assign'
+        var: 'forpg1'
+        expr: '1'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:26339
+      - type: 'goto'
+        target: 'Foreign' # ./00011-Foreign.mws.yaml
+    - match: 5
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:26343
+      - type: 'assign'
+        var: 'forpg2'
+        expr: '1'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:26344
+      - type: 'goto'
+        target: 'Foreign2' # ./00039-Foreign2.mws.yaml
+    default:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26348
+    - type: 'assign'
+      var: 'forpg3'
+      expr: '1'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26349
+    - type: 'goto'
+      target: 'Foreign3' # ./00040-Foreign3.mws.yaml

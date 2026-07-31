@@ -1,0 +1,48 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:22329
+---
+format: 'mws/0.4'
+passage_id: 'MartialSepEventNo'
+# ../en-US.restext:1836 | "Failure"
+title: 'restext://MartialSepEventNo_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:22336
+- type: 'text'
+  # ../en-US.restext:1837 | "My experiments are not so..."
+  value: 'restext://MartialSepEventNo_002'
+# ../.source/ATimeofWar_Eng_v8.cs:22343
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:22345
+- type: 'text'
+  # ../en-US.restext:1838 | "I could not imagine a mor..."
+  value: 'restext://MartialSepEventNo_003'
+# ../.source/ATimeofWar_Eng_v8.cs:22348
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:22352
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  target: 'Sabotage1Now' # ./00213-Sabotage1Now.mws.yaml
+  # ../en-US.restext:182 | "Close"
+  okay: 'restext://Common_178'
+  snapshot: true
+  header:
+  # ../.source/ATimeofWar_Eng_v8.cs:22368
+  - type: 'image'
+    asset: 'image://setup/CompulsionBack'
+    style: 'setup-image'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:22371
+  - type: 'text'
+    # ../en-US.restext:1839 | "Any player that offered a..."
+    value: 'restext://MartialSepEventNo_004'
+  # ../.source/ATimeofWar_Eng_v8.cs:22377
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:22379
+  - type: 'text'
+    # ../en-US.restext:1840 | "Then, all players return ..."
+    value: 'restext://MartialSepEventNo_005'

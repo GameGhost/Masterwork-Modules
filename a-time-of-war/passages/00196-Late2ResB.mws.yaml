@@ -1,0 +1,53 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:20467
+---
+format: 'mws/0.4'
+passage_id: 'Late2ResB'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:20469
+- type: 'conditional'
+  if: 'late == 2'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:20473
+  - type: 'text'
+    # ../en-US.restext:59 | "**Gift of Silence**"
+    value: 'restext://Common_055'
+  # ../.source/ATimeofWar_Eng_v8.cs:20475
+  - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:20476
+  - type: 'text'
+    # ../en-US.restext:1703 | "For some reason which was..."
+    value: 'restext://Late2ResB_001'
+  # ../.source/ATimeofWar_Eng_v8.cs:20485
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:20487
+  - type: 'text'
+    # ../en-US.restext:1704 | "It would have been uncout..."
+    value: 'restext://Late2ResB_002'
+  # ../.source/ATimeofWar_Eng_v8.cs:20489
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:20493
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:24 | "Click to continue..."
+    label: 'restext://Common_020'
+    target: 'WarningWarEnding' # ./00203-WarningWarEnding.mws.yaml
+    # ../en-US.restext:182 | "Close"
+    okay: 'restext://Common_178'
+    snapshot: true
+    header:
+    # ../.source/ATimeofWar_Eng_v8.cs:20513
+    - type: 'image'
+      asset: 'image://setup/MFWlogo'
+      style: 'setup-image'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:20515
+    - type: 'text'
+      # ../en-US.restext:1705 | "Each player **gains 2 Res..."
+      value: 'restext://Late2ResB_003'
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:20497
+  - type: 'goto'
+    target: 'WarningWarEnding' # ./00203-WarningWarEnding.mws.yaml

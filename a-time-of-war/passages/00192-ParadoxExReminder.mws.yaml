@@ -1,0 +1,67 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:20239
+---
+format: 'mws/0.4'
+passage_id: 'ParadoxExReminder'
+# ../en-US.restext:1679 | "Removing Paradox"
+title: 'restext://ParadoxExReminder_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:20246
+- type: 'text'
+  # ../en-US.restext:1680 | "Experiments that have Par..."
+  value: 'restext://ParadoxExReminder_002'
+# ../.source/ATimeofWar_Eng_v8.cs:20258
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:20260
+- type: 'text'
+  # ../en-US.restext:1681 | "Pay all applicable costs,..."
+  value: 'restext://ParadoxExReminder_003'
+# ../.source/ATimeofWar_Eng_v8.cs:20270
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:20274
+- type: 'text'
+  value: '{icon:s3_paradoxtoken}'
+# ../.source/ATimeofWar_Eng_v8.cs:20275
+- type: 'text'
+  # ../en-US.restext:1682 | " _tokens are meant to be ..."
+  value: 'restext://ParadoxExReminder_004'
+# ../.source/ATimeofWar_Eng_v8.cs:20279
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:20281
+- type: 'switch'
+  on: 'round'
+  cases:
+  - match: 4
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:20283
+    - type: 'assign'
+      var: 'pg13'
+      expr: '1'
+    # ../.source/ATimeofWar_Eng_v8.cs:20284
+    - type: 'link'
+      # ../en-US.restext:24 | "Click to continue..."
+      label: 'restext://Common_020'
+      target: 'TimeTravel' # ./00017-TimeTravel.mws.yaml
+      snapshot: true
+  - match: 5
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:20288
+    - type: 'link'
+      # ../en-US.restext:24 | "Click to continue..."
+      label: 'restext://Common_020'
+      target: 'TimeTravel2' # ./00032-TimeTravel2.mws.yaml
+      snapshot: true
+  default:
+  # ../.source/ATimeofWar_Eng_v8.cs:20293
+  - type: 'assign'
+    var: 'pg14'
+    expr: '1'
+  # ../.source/ATimeofWar_Eng_v8.cs:20294
+  - type: 'link'
+    # ../en-US.restext:24 | "Click to continue..."
+    label: 'restext://Common_020'
+    target: 'TimeTravel3' # ./00018-TimeTravel3.mws.yaml
+    snapshot: true

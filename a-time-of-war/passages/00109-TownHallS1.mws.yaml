@@ -1,0 +1,209 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:13034
+---
+format: 'mws/0.4'
+passage_id: 'TownHallS1'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:13040
+- type: 'assign'
+  var: 'th'
+  expr: 'th + 1'
+# ../.source/ATimeofWar_Eng_v8.cs:13041
+- type: 'switch'
+  on: 'th'
+  cases:
+  - match: 1
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:13043
+    - type: 'let'
+      var: '_rnd_TownHallS1_0'
+      expr: 'nameA'
+  - match: 2
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:13047
+    - type: 'let'
+      var: '_rnd_TownHallS1_0'
+      expr: 'nameB'
+  - match: 3
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:13051
+    - type: 'let'
+      var: '_rnd_TownHallS1_0'
+      expr: 'nameC'
+  - match: 4
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:13055
+    - type: 'let'
+      var: '_rnd_TownHallS1_0'
+      expr: 'nameD'
+  - match: 5
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:13059
+    - type: 'let'
+      var: '_rnd_TownHallS1_0'
+      expr: 'nameE'
+  default:
+  # ../.source/ATimeofWar_Eng_v8.cs:13063
+  - type: 'goto'
+    target: 'GunsAnnouncement' # ./00145-GunsAnnouncement.mws.yaml
+# ../.source/ATimeofWar_Eng_v8.cs:13039
+- type: 'text'
+  # ../en-US.restext:974 | "**Carefully hand this Sto..."
+  value: 'restext://TownHallS1_001'
+  lets:
+  - '_rnd_TownHallS1_0'
+# ../.source/ATimeofWar_Eng_v8.cs:13066
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:13068
+- type: 'text'
+  # ../en-US.restext:975 | "I decided to converse with:"
+  value: 'restext://TownHallS1_002'
+# ../.source/ATimeofWar_Eng_v8.cs:13071
+- type: 'assign'
+  var: 'rumor'
+  expr: '[1, 2, 3, 4, 5, 6]'
+# ../.source/ATimeofWar_Eng_v8.cs:13072
+- type: 'conditional'
+  if: 'rumor1 == "visited"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:13074
+  - type: 'assign'
+    var: 'rumor'
+    expr: 'rumor.except(1)'
+# ../.source/ATimeofWar_Eng_v8.cs:13076
+- type: 'conditional'
+  if: 'rumor2 == "visited"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:13078
+  - type: 'assign'
+    var: 'rumor'
+    expr: 'rumor.except(2)'
+# ../.source/ATimeofWar_Eng_v8.cs:13080
+- type: 'conditional'
+  if: 'rumor6 == "visited"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:13082
+  - type: 'assign'
+    var: 'rumor'
+    expr: 'rumor.except(6)'
+# ../.source/ATimeofWar_Eng_v8.cs:13084
+- type: 'assign'
+  var: 'rumor'
+  expr: 'rumor.shuffled("TownHallS1_0")'
+# ../.source/ATimeofWar_Eng_v8.cs:13085
+- type: 'assign'
+  var: 'opt1'
+  expr: 'rumor[0]'
+# ../.source/ATimeofWar_Eng_v8.cs:13086
+- type: 'assign'
+  var: 'opt2'
+  expr: 'rumor[1]'
+# ../.source/ATimeofWar_Eng_v8.cs:13069
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:13087
+- type: 'switch'
+  on: 'opt1'
+  cases:
+  - match: 1
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:13089
+    - type: 'link'
+      # ../en-US.restext:185 | "A guard dressed in milita..."
+      label: 'restext://Common_181'
+      target: 'RumorD1' # ./00008-RumorD1.mws.yaml
+      snapshot: true
+  - match: 2
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:13093
+    - type: 'link'
+      # ../en-US.restext:186 | "A distinguished gentleman..."
+      label: 'restext://Common_182'
+      target: 'RumorD2' # ./00010-RumorD2.mws.yaml
+      snapshot: true
+  - match: 5
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:13097
+    - type: 'link'
+      # ../en-US.restext:187 | "A somber elderly woman si..."
+      label: 'restext://Common_183'
+      target: 'RumorD3' # ./00011-RumorD3.mws.yaml
+      snapshot: true
+  - match: 4
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:13101
+    - type: 'link'
+      # ../en-US.restext:188 | "A spirited group of conce..."
+      label: 'restext://Common_184'
+      target: 'RumorD4' # ./00012-RumorD4.mws.yaml
+      snapshot: true
+  - match: 6
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:13106
+    - type: 'link'
+      # ../en-US.restext:190 | "A conservatively dressed ..."
+      label: 'restext://Common_186'
+      target: 'RumorD6Guns' # ./00143-RumorD6Guns.mws.yaml
+      snapshot: true
+  default:
+  # ../.source/ATimeofWar_Eng_v8.cs:13110
+  - type: 'link'
+    # ../en-US.restext:189 | "A hunched figure with a b..."
+    label: 'restext://Common_185'
+    target: 'RumorD5' # ./00013-RumorD5.mws.yaml
+    snapshot: true
+# ../.source/ATimeofWar_Eng_v8.cs:13113
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:13115
+- type: 'switch'
+  on: 'opt2'
+  cases:
+  - match: 1
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:13117
+    - type: 'link'
+      # ../en-US.restext:185 | "A guard dressed in milita..."
+      label: 'restext://Common_181'
+      target: 'RumorD1' # ./00008-RumorD1.mws.yaml
+      snapshot: true
+  - match: 2
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:13121
+    - type: 'link'
+      # ../en-US.restext:186 | "A distinguished gentleman..."
+      label: 'restext://Common_182'
+      target: 'RumorD2' # ./00010-RumorD2.mws.yaml
+      snapshot: true
+  - match: 5
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:13125
+    - type: 'link'
+      # ../en-US.restext:187 | "A somber elderly woman si..."
+      label: 'restext://Common_183'
+      target: 'RumorD3' # ./00011-RumorD3.mws.yaml
+      snapshot: true
+  - match: 4
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:13129
+    - type: 'link'
+      # ../en-US.restext:188 | "A spirited group of conce..."
+      label: 'restext://Common_184'
+      target: 'RumorD4' # ./00012-RumorD4.mws.yaml
+      snapshot: true
+  - match: 3
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:13133
+    - type: 'link'
+      # ../en-US.restext:189 | "A hunched figure with a b..."
+      label: 'restext://Common_185'
+      target: 'RumorD5' # ./00013-RumorD5.mws.yaml
+      snapshot: true
+  default:
+  # ../.source/ATimeofWar_Eng_v8.cs:13139
+  - type: 'link'
+    # ../en-US.restext:190 | "A conservatively dressed ..."
+    label: 'restext://Common_186'
+    target: 'RumorD6Guns' # ./00143-RumorD6Guns.mws.yaml
+    snapshot: true

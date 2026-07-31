@@ -1,0 +1,146 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:18069
+---
+format: 'mws/0.4'
+passage_id: 'CommemorativeSignIn'
+# ../en-US.restext:1424 | "Memorial Observance"
+title: 'restext://CommemorativeSignIn_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:18076
+- type: 'text'
+  # ../en-US.restext:1425 | "It was both a marvelous t..."
+  value: 'restext://CommemorativeSignIn_002'
+# ../.source/ATimeofWar_Eng_v8.cs:18077
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:18081
+- type: 'text'
+  # ../en-US.restext:1426 | "**Which player visited th..."
+  value: 'restext://CommemorativeSignIn_003'
+# ../.source/ATimeofWar_Eng_v8.cs:18083
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:18086
+- type: 'link'
+  label: '{nameA}'
+  snapshot: true
+  onclick:
+  # ../.source/ATimeofWar_Eng_v8.cs:18119
+  - type: 'assign'
+    var: 'signincomm'
+    expr: 'nameA'
+  # ../.source/ATimeofWar_Eng_v8.cs:18120
+  - type: 'conditional'
+    if: 'signincomm == ATOWStatue'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:18122
+    - type: 'goto'
+      target: 'CommemorativeMAIN' # ./00167-CommemorativeMAIN.mws.yaml
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:18126
+    - type: 'goto'
+      target: 'CommemorativeOTHER' # ./00168-CommemorativeOTHER.mws.yaml
+# ../.source/ATimeofWar_Eng_v8.cs:18087
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:18090
+- type: 'link'
+  label: '{nameB}'
+  snapshot: true
+  onclick:
+  # ../.source/ATimeofWar_Eng_v8.cs:18133
+  - type: 'assign'
+    var: 'signincomm'
+    expr: 'nameB'
+  # ../.source/ATimeofWar_Eng_v8.cs:18134
+  - type: 'conditional'
+    if: 'signincomm == ATOWStatue'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:18136
+    - type: 'goto'
+      target: 'CommemorativeMAIN' # ./00167-CommemorativeMAIN.mws.yaml
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:18140
+    - type: 'goto'
+      target: 'CommemorativeOTHER' # ./00168-CommemorativeOTHER.mws.yaml
+# ../.source/ATimeofWar_Eng_v8.cs:18091
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:18093
+- type: 'conditional'
+  if: 'players > 2'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:18096
+  - type: 'link'
+    label: '{nameC}'
+    snapshot: true
+    onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:18147
+    - type: 'assign'
+      var: 'signincomm'
+      expr: 'nameC'
+    # ../.source/ATimeofWar_Eng_v8.cs:18148
+    - type: 'conditional'
+      if: 'signincomm == ATOWStatue'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:18150
+      - type: 'goto'
+        target: 'CommemorativeMAIN' # ./00167-CommemorativeMAIN.mws.yaml
+      else:
+      # ../.source/ATimeofWar_Eng_v8.cs:18154
+      - type: 'goto'
+        target: 'CommemorativeOTHER' # ./00168-CommemorativeOTHER.mws.yaml
+  # ../.source/ATimeofWar_Eng_v8.cs:18097
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:18100
+- type: 'conditional'
+  if: 'players > 3'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:18103
+  - type: 'link'
+    label: '{nameD}'
+    snapshot: true
+    onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:18161
+    - type: 'assign'
+      var: 'signincomm'
+      expr: 'nameD'
+    # ../.source/ATimeofWar_Eng_v8.cs:18162
+    - type: 'conditional'
+      if: 'signincomm == ATOWStatue'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:18164
+      - type: 'goto'
+        target: 'CommemorativeMAIN' # ./00167-CommemorativeMAIN.mws.yaml
+      else:
+      # ../.source/ATimeofWar_Eng_v8.cs:18168
+      - type: 'goto'
+        target: 'CommemorativeOTHER' # ./00168-CommemorativeOTHER.mws.yaml
+  # ../.source/ATimeofWar_Eng_v8.cs:18104
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:18107
+- type: 'conditional'
+  if: 'players > 4'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:18110
+  - type: 'link'
+    label: '{nameE}'
+    snapshot: true
+    onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:18175
+    - type: 'assign'
+      var: 'signincomm'
+      expr: 'nameE'
+    # ../.source/ATimeofWar_Eng_v8.cs:18176
+    - type: 'conditional'
+      if: 'signincomm == ATOWStatue'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:18178
+      - type: 'goto'
+        target: 'CommemorativeMAIN' # ./00167-CommemorativeMAIN.mws.yaml
+      else:
+      # ../.source/ATimeofWar_Eng_v8.cs:18182
+      - type: 'goto'
+        target: 'CommemorativeOTHER' # ./00168-CommemorativeOTHER.mws.yaml

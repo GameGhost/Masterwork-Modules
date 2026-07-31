@@ -1,0 +1,163 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:4554
+---
+format: 'mws/0.4'
+passage_id: 'Liberal'
+# ../en-US.restext:141 | "Acceptance"
+title: 'restext://Common_137'
+# ../en-US.restext:155 | "Early Years"
+subtitle: 'restext://Common_151'
+tags:
+- 'HUB'
+layout: 'hub'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:4562
+- type: 'conditional'
+  if: '!gen3pg'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4566
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:156 | "Accept"
+    okay: 'restext://Common_152'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:4571
+    - type: 'switch'
+      on: 'creature'
+      cases:
+      - match: 2
+        nodes:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:4573
+        - type: 'image'
+          asset: 'image://setup/VillageChronicleCover'
+          style: 'setup-image'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:4574
+        - type: 'text'
+          # ../en-US.restext:581 | "Turn to page **10** of th..."
+          value: 'restext://Liberal_002'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:4580
+        - type: 'break'
+          style: 'paragraph'
+      - match: 1
+        nodes:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:4585
+        - type: 'image'
+          asset: 'image://setup/S2_HuntTokenFRONT'
+          style: 'setup-image'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:4586
+        - type: 'text'
+          # ../en-US.restext:582 | "Turn to page **11** of th..."
+          value: 'restext://Liberal_003'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:4592
+        - type: 'break'
+          style: 'paragraph'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:4594
+        - type: 'text'
+          # ../en-US.restext:267 | "Retrieve the Hunt tokens ..."
+          value: 'restext://Common_263'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:4597
+        - type: 'break'
+          style: 'paragraph'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:4599
+        - type: 'text'
+          # ../en-US.restext:583 | "Shuffle them and randomly..."
+          value: 'restext://Liberal_004'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:4602
+        - type: 'break'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:4603
+        - type: 'conditional'
+          if: 'players == 3'
+          then:
+          # ../.source/FearoftheUnknown_Eng_v15.cs:4605
+          - type: 'text'
+            # ../en-US.restext:96 | "Then, since this is a 3 p..."
+            value: 'restext://Common_092'
+          # ../.source/FearoftheUnknown_Eng_v15.cs:4606
+          - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:4613
+- type: 'section'
+  # ../en-US.restext:142 | "**Special Servant Rule**"
+  title: 'restext://Common_138'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4622
+  - type: 'text'
+    # ../en-US.restext:143 | "Due to the government-fun..."
+    value: 'restext://Common_139'
+# ../.source/FearoftheUnknown_Eng_v15.cs:4629
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:4632
+- type: 'section'
+  # ../en-US.restext:144 | "**Rehabilitation Token**"
+  title: 'restext://Common_140'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4641
+  - type: 'text'
+    # ../en-US.restext:145 | "The {icon:s2_rehabilitati..."
+    value: 'restext://Common_141'
+# ../.source/FearoftheUnknown_Eng_v15.cs:4650
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:4654
+- type: 'section'
+  # ../en-US.restext:146 | "{icon:storybooktoken} **A..."
+  title: 'restext://Common_142'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4665
+  - type: 'text'
+    # ../en-US.restext:147 | "When a player's token ove..."
+    value: 'restext://Common_143'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4674
+  - type: 'link'
+    # ../en-US.restext:148 | "click here to be committed."
+    label: 'restext://Common_144'
+    target: 'AsylumTreatment' # ./00179-AsylumTreatment.mws.yaml
+    snapshot: true
+# ../.source/FearoftheUnknown_Eng_v15.cs:4677
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:4679
+- type: 'conditional'
+  if: 'creature == 1'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4683
+  - type: 'section'
+    # ../en-US.restext:268 | "{icon:storybooktoken}**Th..."
+    title: 'restext://Common_264'
+    style: 'hub-card'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:4693
+    - type: 'text'
+      # ../en-US.restext:269 | "Any time a player visits ..."
+      value: 'restext://Common_265'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:4696
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:4698
+    - type: 'text'
+      # ../en-US.restext:149 | "At the end of each round,..."
+      value: 'restext://Common_145'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:4705
+    - type: 'link'
+      # ../en-US.restext:308 | "click here."
+      label: 'restext://Common_304'
+      target: 'HuntExplanation' # ./00076-HuntExplanation.mws.yaml
+      snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4708
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:4712
+- type: 'section'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4732
+  - type: 'link'
+    # ../en-US.restext:150 | "Click here to continue to..."
+    label: 'restext://Common_146'
+    target: '${creature == 1 && exped == 0 ? "Expedition1" : "LiberalEvent3"}' # ./00049-Expedition1.mws.yaml, ./00258-LiberalEvent3.mws.yaml
+    snapshot: true
+# ../.source/FearoftheUnknown_Eng_v15.cs:4737
+- type: 'assign'
+  var: 'round'
+  expr: '19'

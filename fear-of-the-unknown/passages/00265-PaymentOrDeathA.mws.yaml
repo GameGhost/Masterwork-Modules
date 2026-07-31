@@ -1,0 +1,86 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:29802
+---
+format: 'mws/0.4'
+passage_id: 'PaymentOrDeathA'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:29804
+- type: 'conditional'
+  if: 'Acont == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29806
+  - type: 'goto'
+    target: 'PaymentOrDeathB' # ./00317-PaymentOrDeathB.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:29811
+- type: 'text'
+  # ../en-US.restext:187 | "**Carefully hand this Sto..."
+  value: 'restext://Common_183'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29816
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29822
+- type: 'popup'
+  # ../en-US.restext:46 | "Once you are ready, click..."
+  label: 'restext://Common_042'
+  layout: 'reveal'
+  # ../en-US.restext:275 | "Close"
+  cancel: 'restext://Common_271'
+  snapshot: true
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29836
+  - type: 'text'
+    # ../en-US.restext:216 | "**A Most Unwelcome Return**"
+    value: 'restext://Common_212'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29838
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29842
+  - type: 'text'
+    # ../en-US.restext:217 | "**Scribbled Note - {nameA..."
+    value: 'restext://Common_213'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29850
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29852
+  - type: 'text'
+    # ../en-US.restext:218 | "I write this note by cand..."
+    value: 'restext://Common_214'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29854
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29856
+  - type: 'text'
+    # ../en-US.restext:219 | "I do not know how they go..."
+    value: 'restext://Common_215'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29857
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29859
+  - type: 'text'
+    # ../en-US.restext:2201 | "They have just announced ..."
+    value: 'restext://PaymentOrDeathA_005'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29870
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29874
+  - type: 'text'
+    # ../en-US.restext:278 | "**Choose:**"
+    value: 'restext://Common_274'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29876
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29879
+  - type: 'link'
+    # ../en-US.restext:191 | "Yes, I will pay the entir..."
+    label: 'restext://Common_187'
+    target: 'Payment2ThanksA' # ./00266-Payment2ThanksA.mws.yaml
+    snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29880
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29882
+  - type: 'link'
+    # ../en-US.restext:2202 | "No, I would rather die. (..."
+    label: 'restext://PaymentOrDeathA_006'
+    target: 'Payment2NoA' # ./00267-Payment2NoA.mws.yaml
+    snapshot: true

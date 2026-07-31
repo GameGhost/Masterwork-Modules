@@ -1,0 +1,63 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:13027
+---
+format: 'mws/0.4'
+passage_id: 'LiberalTaxes2'
+# ../en-US.restext:1083 | "Seizure of Goods or Trade"
+title: 'restext://LiberalTaxes2_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:13037
+- type: 'text'
+  # ../en-US.restext:328 | "**Letter from {randomname..."
+  value: 'restext://Common_324'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13046
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13048
+- type: 'text'
+  # ../en-US.restext:1084 | "In the coming weeks, seve..."
+  value: 'restext://LiberalTaxes2_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13051
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13055
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: 'Liberal3' # ./00051-Liberal3.mws.yaml
+  # ../en-US.restext:275 | "Close"
+  okay: 'restext://Common_271'
+  snapshot: true
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13070
+  - type: 'image'
+    asset: 'image://setup/ScoreTrackMarker'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13082
+  - type: 'let'
+    var: '_rnd_LiberalTaxes2_0'
+    expr: 'rand_between(1, 3, "LiberalTaxes2_0")'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13071
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13073
+  - type: 'text'
+    # ../en-US.restext:1085 | "Any player who **paid the..."
+    value: 'restext://LiberalTaxes2_003'
+    lets:
+    - '_rnd_LiberalTaxes2_0'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13106
+  - type: 'let'
+    var: '_rnd_LiberalTaxes2_1'
+    expr: 'rand_between(1, 2, "LiberalTaxes2_1")'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13087
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13089
+  - type: 'text'
+    # ../en-US.restext:1086 | "Any player who **refused*..."
+    value: 'restext://LiberalTaxes2_004'
+    lets:
+    - '_rnd_LiberalTaxes2_1'

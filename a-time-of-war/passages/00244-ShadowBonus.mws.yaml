@@ -1,0 +1,355 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:24316
+---
+format: 'mws/0.4'
+passage_id: 'ShadowBonus'
+# ../en-US.restext:1966 | "Royal Advisor"
+title: 'restext://ShadowBonus_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:24323
+- type: 'text'
+  # ../en-US.restext:1967 | "The player(s) closest to ..."
+  value: 'restext://ShadowBonus_002'
+# ../.source/ATimeofWar_Eng_v8.cs:24339
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:24341
+- type: 'link'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  target: 'BenevolenceBonus' # ./00138-BenevolenceBonus.mws.yaml
+  snapshot: true
+# ../.source/ATimeofWar_Eng_v8.cs:24343
+- type: 'switch'
+  on: 'benevolent'
+  cases:
+  - match: 'good'
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:24345
+    - type: 'switch'
+      on: 'players'
+      cases:
+      - match: 2
+        nodes:
+        # ../.source/ATimeofWar_Eng_v8.cs:24347
+        - type: 'conditional'
+          conditions:
+          - if: 'plareigng > plbreigng'
+            then:
+            # ../.source/ATimeofWar_Eng_v8.cs:24349
+            - type: 'assign'
+              var: 'mostben'
+              expr: 'nameA'
+          - if: 'plbreigng > plareigng'
+            then:
+            # ../.source/ATimeofWar_Eng_v8.cs:24353
+            - type: 'assign'
+              var: 'mostben'
+              expr: 'nameB'
+          else:
+          # ../.source/ATimeofWar_Eng_v8.cs:24357
+          - type: 'assign'
+            var: 'mostben'
+            # ../en-US.restext:1968 | "Multiple players are tied..."
+            expr: '"restext://ShadowBonus_003"'
+      - match: 3
+        nodes:
+        # ../.source/ATimeofWar_Eng_v8.cs:24362
+        - type: 'conditional'
+          conditions:
+          - if: 'plareigng > max(plbreigng, plcreigng)'
+            then:
+            # ../.source/ATimeofWar_Eng_v8.cs:24364
+            - type: 'assign'
+              var: 'mostben'
+              expr: 'nameA'
+          - if: 'plbreigng > max(plcreigng)'
+            then:
+            # ../.source/ATimeofWar_Eng_v8.cs:24368
+            - type: 'assign'
+              var: 'mostben'
+              expr: 'nameB'
+          - if: 'plcreigng > max(plareigng, plbreigng)'
+            then:
+            # ../.source/ATimeofWar_Eng_v8.cs:24372
+            - type: 'assign'
+              var: 'mostben'
+              expr: 'nameC'
+          else:
+          # ../.source/ATimeofWar_Eng_v8.cs:24376
+          - type: 'assign'
+            var: 'mostben'
+            # ../en-US.restext:1968 | "Multiple players are tied..."
+            expr: '"restext://ShadowBonus_003"'
+      - match: 4
+        nodes:
+        # ../.source/ATimeofWar_Eng_v8.cs:24381
+        - type: 'conditional'
+          conditions:
+          - if: 'plareigng > max(plbreigng, plcreigng, pldreigng)'
+            then:
+            # ../.source/ATimeofWar_Eng_v8.cs:24383
+            - type: 'assign'
+              var: 'mostben'
+              expr: 'nameA'
+          - if: 'plbreigng > max(plcreigng, pldreigng)'
+            then:
+            # ../.source/ATimeofWar_Eng_v8.cs:24387
+            - type: 'assign'
+              var: 'mostben'
+              expr: 'nameB'
+          - if: 'plcreigng > max(pldreigng)'
+            then:
+            # ../.source/ATimeofWar_Eng_v8.cs:24391
+            - type: 'assign'
+              var: 'mostben'
+              expr: 'nameC'
+          - if: 'pldreigng > max(plbreigng, plcreigng, plareigng)'
+            then:
+            # ../.source/ATimeofWar_Eng_v8.cs:24395
+            - type: 'assign'
+              var: 'mostben'
+              expr: 'nameD'
+          else:
+          # ../.source/ATimeofWar_Eng_v8.cs:24399
+          - type: 'assign'
+            var: 'mostben'
+            # ../en-US.restext:1968 | "Multiple players are tied..."
+            expr: '"restext://ShadowBonus_003"'
+      default:
+      # ../.source/ATimeofWar_Eng_v8.cs:24404
+      - type: 'conditional'
+        conditions:
+        - if: 'plareigng > max(plbreigng, plcreigng, pldreigng, plereigng)'
+          then:
+          # ../.source/ATimeofWar_Eng_v8.cs:24406
+          - type: 'assign'
+            var: 'mostben'
+            expr: 'nameA'
+        - if: 'plbreigng > max(plcreigng, pldreigng, plereigng)'
+          then:
+          # ../.source/ATimeofWar_Eng_v8.cs:24410
+          - type: 'assign'
+            var: 'mostben'
+            expr: 'nameB'
+        - if: 'plcreigng > max(pldreigng, plereigng)'
+          then:
+          # ../.source/ATimeofWar_Eng_v8.cs:24414
+          - type: 'assign'
+            var: 'mostben'
+            expr: 'nameC'
+        - if: 'pldreigng > max(plereigng)'
+          then:
+          # ../.source/ATimeofWar_Eng_v8.cs:24418
+          - type: 'assign'
+            var: 'mostben'
+            expr: 'nameD'
+        - if: 'plereigng > max(plbreigng, plcreigng, pldreigng, plareigng)'
+          then:
+          # ../.source/ATimeofWar_Eng_v8.cs:24422
+          - type: 'assign'
+            var: 'mostben'
+            expr: 'nameE'
+        else:
+        # ../.source/ATimeofWar_Eng_v8.cs:24426
+        - type: 'assign'
+          var: 'mostben'
+          # ../en-US.restext:1968 | "Multiple players are tied..."
+          expr: '"restext://ShadowBonus_003"'
+  - match: 'evil'
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:24432
+    - type: 'switch'
+      on: 'players'
+      cases:
+      - match: 2
+        nodes:
+        # ../.source/ATimeofWar_Eng_v8.cs:24434
+        - type: 'conditional'
+          conditions:
+          - if: 'plareigne > plbreigne'
+            then:
+            # ../.source/ATimeofWar_Eng_v8.cs:24436
+            - type: 'assign'
+              var: 'mostben'
+              expr: 'nameA'
+          - if: 'plbreigne > plareigne'
+            then:
+            # ../.source/ATimeofWar_Eng_v8.cs:24440
+            - type: 'assign'
+              var: 'mostben'
+              expr: 'nameB'
+          else:
+          # ../.source/ATimeofWar_Eng_v8.cs:24444
+          - type: 'assign'
+            var: 'mostben'
+            # ../en-US.restext:1968 | "Multiple players are tied..."
+            expr: '"restext://ShadowBonus_003"'
+      - match: 3
+        nodes:
+        # ../.source/ATimeofWar_Eng_v8.cs:24449
+        - type: 'conditional'
+          conditions:
+          - if: 'plareigne > max(plbreigne, plcreigne)'
+            then:
+            # ../.source/ATimeofWar_Eng_v8.cs:24451
+            - type: 'assign'
+              var: 'mostben'
+              expr: 'nameA'
+          - if: 'plbreigne > max(plcreigne)'
+            then:
+            # ../.source/ATimeofWar_Eng_v8.cs:24455
+            - type: 'assign'
+              var: 'mostben'
+              expr: 'nameB'
+          - if: 'plcreigne > max(plareigne, plbreigne)'
+            then:
+            # ../.source/ATimeofWar_Eng_v8.cs:24459
+            - type: 'assign'
+              var: 'mostben'
+              expr: 'nameC'
+          else:
+          # ../.source/ATimeofWar_Eng_v8.cs:24463
+          - type: 'assign'
+            var: 'mostben'
+            # ../en-US.restext:1968 | "Multiple players are tied..."
+            expr: '"restext://ShadowBonus_003"'
+      - match: 4
+        nodes:
+        # ../.source/ATimeofWar_Eng_v8.cs:24468
+        - type: 'conditional'
+          conditions:
+          - if: 'plareigne > max(plbreigne, plcreigne, pldreigne)'
+            then:
+            # ../.source/ATimeofWar_Eng_v8.cs:24470
+            - type: 'assign'
+              var: 'mostben'
+              expr: 'nameA'
+          - if: 'plbreigne > max(plcreigne, pldreigne)'
+            then:
+            # ../.source/ATimeofWar_Eng_v8.cs:24474
+            - type: 'assign'
+              var: 'mostben'
+              expr: 'nameB'
+          - if: 'plcreigne > max(pldreigne)'
+            then:
+            # ../.source/ATimeofWar_Eng_v8.cs:24478
+            - type: 'assign'
+              var: 'mostben'
+              expr: 'nameC'
+          - if: 'pldreigne > max(plareigne, plbreigne, plcreigne)'
+            then:
+            # ../.source/ATimeofWar_Eng_v8.cs:24482
+            - type: 'assign'
+              var: 'mostben'
+              expr: 'nameD'
+          else:
+          # ../.source/ATimeofWar_Eng_v8.cs:24486
+          - type: 'assign'
+            var: 'mostben'
+            # ../en-US.restext:1968 | "Multiple players are tied..."
+            expr: '"restext://ShadowBonus_003"'
+      default:
+      # ../.source/ATimeofWar_Eng_v8.cs:24491
+      - type: 'conditional'
+        conditions:
+        - if: 'plareigne > max(plbreigne, plcreigne, pldreigne, plereigne)'
+          then:
+          # ../.source/ATimeofWar_Eng_v8.cs:24493
+          - type: 'assign'
+            var: 'mostben'
+            expr: 'nameA'
+        - if: 'plbreigne > max(plcreigne, pldreigne, plereigne)'
+          then:
+          # ../.source/ATimeofWar_Eng_v8.cs:24497
+          - type: 'assign'
+            var: 'mostben'
+            expr: 'nameB'
+        - if: 'plcreigne > max(pldreigne, plereigne)'
+          then:
+          # ../.source/ATimeofWar_Eng_v8.cs:24501
+          - type: 'assign'
+            var: 'mostben'
+            expr: 'nameC'
+        - if: 'pldreigne > max(plereigne)'
+          then:
+          # ../.source/ATimeofWar_Eng_v8.cs:24505
+          - type: 'assign'
+            var: 'mostben'
+            expr: 'nameD'
+        - if: 'plereigne > max(plbreigne, plcreigne, pldreigne, plareigne)'
+          then:
+          # ../.source/ATimeofWar_Eng_v8.cs:24509
+          - type: 'assign'
+            var: 'mostben'
+            expr: 'nameE'
+        else:
+        # ../.source/ATimeofWar_Eng_v8.cs:24513
+        - type: 'assign'
+          var: 'mostben'
+          # ../en-US.restext:1968 | "Multiple players are tied..."
+          expr: '"restext://ShadowBonus_003"'
+# ../.source/ATimeofWar_Eng_v8.cs:24517
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:24519
+    - type: 'conditional'
+      if: 'crowncount > 0'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:24521
+      - type: 'assign'
+        var: 'ending'
+        expr: '"ATOW-End6"' # ./00256-ATOW-End6.mws.yaml
+      else:
+      # ../.source/ATimeofWar_Eng_v8.cs:24525
+      - type: 'assign'
+        var: 'ending'
+        expr: '"ATOW-End5"' # ./00255-ATOW-End5.mws.yaml
+  - match: 3
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:24530
+    - type: 'conditional'
+      if: 'crowncount > 1'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:24532
+      - type: 'assign'
+        var: 'ending'
+        expr: '"ATOW-End6"' # ./00256-ATOW-End6.mws.yaml
+      else:
+      # ../.source/ATimeofWar_Eng_v8.cs:24536
+      - type: 'assign'
+        var: 'ending'
+        expr: '"ATOW-End5"' # ./00255-ATOW-End5.mws.yaml
+  - match: 4
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:24541
+    - type: 'conditional'
+      if: 'crowncount > 2'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:24543
+      - type: 'assign'
+        var: 'ending'
+        expr: '"ATOW-End6"' # ./00256-ATOW-End6.mws.yaml
+      else:
+      # ../.source/ATimeofWar_Eng_v8.cs:24547
+      - type: 'assign'
+        var: 'ending'
+        expr: '"ATOW-End5"' # ./00255-ATOW-End5.mws.yaml
+  - match: 5
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:24552
+    - type: 'conditional'
+      if: 'crowncount > 2'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:24554
+      - type: 'assign'
+        var: 'ending'
+        expr: '"ATOW-End6"' # ./00256-ATOW-End6.mws.yaml
+      else:
+      # ../.source/ATimeofWar_Eng_v8.cs:24558
+      - type: 'assign'
+        var: 'ending'
+        expr: '"ATOW-End5"' # ./00255-ATOW-End5.mws.yaml

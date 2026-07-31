@@ -1,0 +1,193 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:17170
+---
+format: 'mws/0.4'
+passage_id: 'BarracksSimple1'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:17172
+- type: 'assign'
+  var: 'barrackpen'
+  expr: 'rand_between(1, 5, "BarracksSimple1_0")'
+# ../.source/ATimeofWar_Eng_v8.cs:17173
+- type: 'conditional'
+  conditions:
+  - if: 'bldg1 == "Laborer\''s Union"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:17175
+    - type: 'conditional'
+      # ../en-US.restext:26 | "Unified Monarchists"
+      if: 'warwinner == "restext://Common_022"'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:17179
+      - type: 'text'
+        # ../en-US.restext:29 | "**Service Required**"
+        value: 'restext://Common_025'
+      # ../.source/ATimeofWar_Eng_v8.cs:17181
+      - type: 'break'
+      # ../.source/ATimeofWar_Eng_v8.cs:17182
+      - type: 'text'
+        # ../en-US.restext:30 | "I was admittedly distress..."
+        value: 'restext://Common_026'
+      # ../.source/ATimeofWar_Eng_v8.cs:17183
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/ATimeofWar_Eng_v8.cs:17186
+      - type: 'popup'
+        layout: 'setup'
+        # ../en-US.restext:183 | "Click here to continue..."
+        label: 'restext://Common_179'
+        target: 'Sabotage1Now' # ./00213-Sabotage1Now.mws.yaml
+        # ../en-US.restext:182 | "Close"
+        okay: 'restext://Common_178'
+        snapshot: true
+        header:
+        # ../.source/ATimeofWar_Eng_v8.cs:17230
+        - type: 'image'
+          asset: 'image://setup/BuildingS3Barracks'
+          style: 'setup-image'
+        content:
+        # ../.source/ATimeofWar_Eng_v8.cs:17232
+        - type: 'text'
+          # ../en-US.restext:31 | "Any player who did not pl..."
+          value: 'restext://Common_027'
+        # ../.source/ATimeofWar_Eng_v8.cs:17233
+        - type: 'switch'
+          on: 'barrackpen'
+          cases:
+          - match: 1
+            nodes:
+            # ../.source/ATimeofWar_Eng_v8.cs:17238
+            - type: 'let'
+              var: '_rnd_BarracksSimple1_0'
+              expr: 'rand_between(1, 2, "BarracksSimple1_1")'
+            # ../.source/ATimeofWar_Eng_v8.cs:17235
+            - type: 'text'
+              # ../en-US.restext:1388 | "gains **{_rnd_BarracksSim..."
+              value: 'restext://BarracksSimple1_005'
+              lets:
+              - '_rnd_BarracksSimple1_0'
+          - match: 2
+            nodes:
+            # ../.source/ATimeofWar_Eng_v8.cs:17245
+            - type: 'text'
+              # ../en-US.restext:33 | "receives **$1 less** inco..."
+              value: 'restext://Common_029'
+          - match: 3
+            nodes:
+            # ../.source/ATimeofWar_Eng_v8.cs:17261
+            - type: 'let'
+              var: '_rnd_BarracksSimple1_1'
+              expr: 'rand_between(2, 3, "BarracksSimple1_2")'
+            # ../.source/ATimeofWar_Eng_v8.cs:17256
+            - type: 'text'
+              # ../en-US.restext:1389 | "**must** immediately lose..."
+              value: 'restext://BarracksSimple1_007'
+              lets:
+              - '_rnd_BarracksSimple1_1'
+          - match: 4
+            nodes:
+            # ../.source/ATimeofWar_Eng_v8.cs:17270
+            - type: 'text'
+              # ../en-US.restext:34 | "**must** flip their Flag ..."
+              value: 'restext://Common_030'
+          default:
+          # ../.source/ATimeofWar_Eng_v8.cs:17286
+          - type: 'text'
+            # ../en-US.restext:32 | "is fortunate as the Monar..."
+            value: 'restext://Common_028'
+      else:
+      # ../.source/ATimeofWar_Eng_v8.cs:17190
+      - type: 'goto'
+        target: 'Sabotage1Now' # ./00213-Sabotage1Now.mws.yaml
+  - if: '!bldg1'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:17195
+    - type: 'conditional'
+      # ../en-US.restext:26 | "Unified Monarchists"
+      if: 'warwinner == "restext://Common_022"'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:17199
+      - type: 'text'
+        # ../en-US.restext:29 | "**Service Required**"
+        value: 'restext://Common_025'
+      # ../.source/ATimeofWar_Eng_v8.cs:17201
+      - type: 'break'
+      # ../.source/ATimeofWar_Eng_v8.cs:17202
+      - type: 'text'
+        # ../en-US.restext:30 | "I was admittedly distress..."
+        value: 'restext://Common_026'
+      # ../.source/ATimeofWar_Eng_v8.cs:17203
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/ATimeofWar_Eng_v8.cs:17206
+      - type: 'popup'
+        layout: 'setup'
+        # ../en-US.restext:183 | "Click here to continue..."
+        label: 'restext://Common_179'
+        target: 'Sabotage1Now' # ./00213-Sabotage1Now.mws.yaml
+        # ../en-US.restext:182 | "Close"
+        okay: 'restext://Common_178'
+        snapshot: true
+        header:
+        # ../.source/ATimeofWar_Eng_v8.cs:17304
+        - type: 'image'
+          asset: 'image://setup/BuildingS3Barracks'
+          style: 'setup-image'
+        content:
+        # ../.source/ATimeofWar_Eng_v8.cs:17306
+        - type: 'text'
+          # ../en-US.restext:31 | "Any player who did not pl..."
+          value: 'restext://Common_027'
+        # ../.source/ATimeofWar_Eng_v8.cs:17307
+        - type: 'switch'
+          on: 'barrackpen'
+          cases:
+          - match: 1
+            nodes:
+            # ../.source/ATimeofWar_Eng_v8.cs:17312
+            - type: 'let'
+              var: '_rnd_BarracksSimple1_0'
+              expr: 'rand_between(1, 2, "BarracksSimple1_3")'
+            # ../.source/ATimeofWar_Eng_v8.cs:17309
+            - type: 'text'
+              # ../en-US.restext:1388 | "gains **{_rnd_BarracksSim..."
+              value: 'restext://BarracksSimple1_005'
+              lets:
+              - '_rnd_BarracksSimple1_0'
+          - match: 2
+            nodes:
+            # ../.source/ATimeofWar_Eng_v8.cs:17319
+            - type: 'text'
+              # ../en-US.restext:33 | "receives **$1 less** inco..."
+              value: 'restext://Common_029'
+          - match: 3
+            nodes:
+            # ../.source/ATimeofWar_Eng_v8.cs:17335
+            - type: 'let'
+              var: '_rnd_BarracksSimple1_1'
+              expr: 'rand_between(2, 3, "BarracksSimple1_4")'
+            # ../.source/ATimeofWar_Eng_v8.cs:17330
+            - type: 'text'
+              # ../en-US.restext:1389 | "**must** immediately lose..."
+              value: 'restext://BarracksSimple1_007'
+              lets:
+              - '_rnd_BarracksSimple1_1'
+          - match: 4
+            nodes:
+            # ../.source/ATimeofWar_Eng_v8.cs:17344
+            - type: 'text'
+              # ../en-US.restext:34 | "**must** flip their Flag ..."
+              value: 'restext://Common_030'
+          default:
+          # ../.source/ATimeofWar_Eng_v8.cs:17360
+          - type: 'text'
+            # ../en-US.restext:32 | "is fortunate as the Monar..."
+            value: 'restext://Common_028'
+      else:
+      # ../.source/ATimeofWar_Eng_v8.cs:17210
+      - type: 'goto'
+        target: 'Sabotage1Now' # ./00213-Sabotage1Now.mws.yaml
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:17215
+  - type: 'goto'
+    target: 'Sabotage1Now' # ./00213-Sabotage1Now.mws.yaml

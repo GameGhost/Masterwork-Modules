@@ -1,0 +1,59 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:12748
+---
+format: 'mws/0.4'
+passage_id: 'SmugEvent2aa'
+# ../en-US.restext:301 | "Path of Destruction"
+title: 'restext://Common_297'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:12755
+- type: 'assign'
+  var: 'dev'
+  expr: '18'
+# ../.source/FearoftheUnknown_Eng_v15.cs:12759
+- type: 'text'
+  # ../en-US.restext:302 | "**Journal of {randomname}..."
+  value: 'restext://Common_298'
+# ../.source/FearoftheUnknown_Eng_v15.cs:12768
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:12770
+- type: 'text'
+  # ../en-US.restext:1051 | "It was unfortunate to see..."
+  value: 'restext://SmugEvent2aa_001'
+# ../.source/FearoftheUnknown_Eng_v15.cs:12772
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:12774
+- type: 'text'
+  # ../en-US.restext:1052 | "Our creation paused for a..."
+  value: 'restext://SmugEvent2aa_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:12775
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:12777
+- type: 'text'
+  # ../en-US.restext:1053 | "With nowhere to escape, t..."
+  value: 'restext://SmugEvent2aa_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:12780
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:12784
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: 'Caravancheck' # ./00105-Caravancheck.mws.yaml
+  # ../en-US.restext:275 | "Close"
+  okay: 'restext://Common_271'
+  snapshot: true
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:12799
+  - type: 'image'
+    asset: 'image://setup/AngryMob_Icon'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:12802
+  - type: 'text'
+    # ../en-US.restext:1054 | "Move the {icon:angrymob_i..."
+    value: 'restext://SmugEvent2aa_004'

@@ -1,0 +1,71 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:36778
+---
+format: 'mws/0.4'
+passage_id: 'AsylumQuestion2'
+# ../en-US.restext:2725 | "What is your worst fear?"
+title: 'restext://AsylumQuestion2_001'
+tags:
+- 'revised'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:36787
+- type: 'link'
+  # ../en-US.restext:2726 | "Failure."
+  label: 'restext://AsylumQuestion2_002'
+  target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:36806
+  - type: 'assign'
+    var: 'next'
+    expr: 'next + 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36788
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36791
+- type: 'link'
+  # ../en-US.restext:2727 | "People."
+  label: 'restext://AsylumQuestion2_003'
+  target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:36813
+  - type: 'assign'
+    var: 'test'
+    expr: 'test + 1'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:36814
+  - type: 'assign'
+    var: 'next'
+    expr: 'next + 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36792
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36795
+- type: 'link'
+  # ../en-US.restext:2728 | "I have no fears."
+  label: 'restext://AsylumQuestion2_004'
+  target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:36821
+  - type: 'assign'
+    var: 'test'
+    expr: 'test + 1'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:36822
+  - type: 'assign'
+    var: 'next'
+    expr: 'next + 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36796
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36799
+- type: 'link'
+  # ../en-US.restext:2729 | "Spiders."
+  label: 'restext://AsylumQuestion2_005'
+  target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:36829
+  - type: 'assign'
+    var: 'next'
+    expr: 'next + 1'

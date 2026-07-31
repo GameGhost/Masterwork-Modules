@@ -1,0 +1,40 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:22563
+---
+format: 'mws/0.4'
+passage_id: 'LowestJournalEvent'
+tags:
+- 'NOTE'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:22568
+- type: 'text'
+  # ../en-US.restext:1651 | "**Carefully hand this Sto..."
+  value: 'restext://LowestJournalEvent_001'
+# ../.source/FearoftheUnknown_Eng_v15.cs:22576
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:22580
+- type: 'text'
+  # ../en-US.restext:1652 | "That player gets to make ..."
+  value: 'restext://LowestJournalEvent_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:22584
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:22586
+- type: 'text'
+  # ../en-US.restext:1653 | "Choose:"
+  value: 'restext://LowestJournalEvent_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:22587
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:22590
+- type: 'link'
+  # ../en-US.restext:1654 | "One choice."
+  label: 'restext://LowestJournalEvent_004'
+  target: 'Creature' # ./00012-Creature.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:22600
+  - type: 'assign'
+    var: 'goal2nd'
+    expr: '"whoknows"'

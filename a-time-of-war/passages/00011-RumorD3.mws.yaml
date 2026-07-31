@@ -1,0 +1,91 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:2349
+---
+format: 'mws/0.4'
+passage_id: 'RumorD3'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:2354
+- type: 'text'
+  # ../en-US.restext:180 | "**Carefully pick up this ..."
+  value: 'restext://Common_176'
+# ../.source/ATimeofWar_Eng_v8.cs:2357
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:2362
+- type: 'popup'
+  # ../en-US.restext:181 | "Once you are ready, click..."
+  label: 'restext://Common_177'
+  layout: 'reveal'
+  # ../en-US.restext:182 | "Close"
+  cancel: 'restext://Common_178'
+  snapshot: true
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:2378
+  - type: 'text'
+    # ../en-US.restext:371 | "The older woman smiled as..."
+    value: 'restext://RumorD3_001'
+  # ../.source/ATimeofWar_Eng_v8.cs:2380
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:2382
+  - type: 'text'
+    # ../en-US.restext:372 | "\"The rumor is that the U..."
+    value: 'restext://RumorD3_002'
+  # ../.source/ATimeofWar_Eng_v8.cs:2384
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:2386
+  - type: 'text'
+    # ../en-US.restext:373 | "I was able to interpret h..."
+    value: 'restext://RumorD3_003'
+  # ../.source/ATimeofWar_Eng_v8.cs:2392
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:2394
+  - type: 'conditional'
+    if: 'war == 2'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:2396
+    - type: 'conditional'
+      if: 'quarter == "yes"'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:2398
+      - type: 'text'
+        # ../en-US.restext:374 | "She continued, \"And if t..."
+        value: 'restext://RumorD3_004'
+      # ../.source/ATimeofWar_Eng_v8.cs:2405
+      - type: 'break'
+        style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:2410
+  - type: 'link'
+    # ../en-US.restext:184 | "When you have finished re..."
+    label: 'restext://Common_180'
+    target: '${RumorD3nextPsg}'
+    snapshot: true
+    onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:2424
+    - type: 'conditional'
+      if: 'RumorD3nextPsg == "" || RumorD3nextPsg == 0'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:2426
+      - type: 'assign'
+        var: 'RumorD3nextPsg'
+        expr: '["RumorIngredient", "RumorKnowledge", "RumorPitch"].shuffled("RumorD3_0")[0]'
+# ../.source/ATimeofWar_Eng_v8.cs:2364
+- type: 'switch'
+  on: 'warwinner'
+  cases:
+  # ../en-US.restext:25 | "Separatists"
+  - match: 'restext://Common_021'
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:2366
+    - type: 'assign'
+      var: 'mon'
+      expr: '"lose"'
+  # ../en-US.restext:26 | "Unified Monarchists"
+  - match: 'restext://Common_022'
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:2370
+    - type: 'assign'
+      var: 'mon'
+      expr: '"win"'

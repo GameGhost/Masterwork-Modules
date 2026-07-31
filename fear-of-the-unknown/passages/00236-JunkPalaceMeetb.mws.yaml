@@ -1,0 +1,72 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:27078
+---
+format: 'mws/0.4'
+passage_id: 'JunkPalaceMeetb'
+# ../en-US.restext:1993 | "Resolution"
+title: 'restext://JunkPalaceMeetb_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:27085
+- type: 'assign'
+  var: 'pripg'
+  expr: '1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27089
+- type: 'text'
+  # ../en-US.restext:130 | "**Letter from {tempname} -** "
+  value: 'restext://Common_126'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27095
+- type: 'include_passage'
+  target: 'date1a' # ./00207-date1a.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:27098
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27100
+- type: 'text'
+  # ../en-US.restext:1994 | "I was anxious to leave th..."
+  value: 'restext://JunkPalaceMeetb_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27105
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27107
+- type: 'conditional'
+  if: 'exped == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:27109
+  - type: 'conditional'
+    if: 'creature == 1'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27111
+    - type: 'text'
+      # ../en-US.restext:1995 | "As I walked, {warden} poi..."
+      value: 'restext://JunkPalaceMeetb_003'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:27127
+    - type: 'break'
+      style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27131
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27133
+- type: 'text'
+  # ../en-US.restext:1996 | "{warden} honored their wo..."
+  value: 'restext://JunkPalaceMeetb_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27136
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:27140
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: '${round == 17 ? "Privatized2" : "Privatized3"}' # ./00047-Privatized2.mws.yaml, ./00048-Privatized3.mws.yaml
+  # ../en-US.restext:275 | "Close"
+  okay: 'restext://Common_271'
+  snapshot: true
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:27156
+  - type: 'image'
+    asset: 'image://setup/Creepy_Icon'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:27159
+  - type: 'text'
+    value: '{tempcreep}'

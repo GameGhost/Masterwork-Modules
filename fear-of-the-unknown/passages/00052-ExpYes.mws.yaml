@@ -1,0 +1,114 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:8125
+---
+format: 'mws/0.4'
+passage_id: 'ExpYes'
+# ../en-US.restext:756 | "The Creature is Killed"
+title: 'restext://ExpYes_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:8135
+- type: 'text'
+  # ../en-US.restext:757 | "**Journal of** _name ille..."
+  value: 'restext://ExpYes_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8141
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8143
+- type: 'text'
+  # ../en-US.restext:758 | "Success. Oh, if words cou..."
+  value: 'restext://ExpYes_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8144
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8146
+- type: 'text'
+  # ../en-US.restext:759 | "Kindled with underbrush a..."
+  value: 'restext://ExpYes_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8147
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8149
+- type: 'text'
+  # ../en-US.restext:760 | "It did not scream as it e..."
+  value: 'restext://ExpYes_005'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8150
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8154
+- type: 'popup'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  layout: 'reveal'
+  # ../en-US.restext:275 | "Close"
+  cancel: 'restext://Common_271'
+  snapshot: true
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8222
+  - type: 'image'
+    asset: 'image://setup/S2_HuntTokenFRONT'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8190
+  - type: 'assign'
+    var: 'exped'
+    expr: '1'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8191
+  - type: 'switch'
+    on: 'round'
+    cases:
+    - match: 16
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8195
+      - type: 'section'
+        style: 'panel'
+        content: []
+      - type: 'link'
+        # ../en-US.restext:277 | "Continue"
+        label: 'restext://Common_273'
+        target: 'JailEventA' # ./00290-JailEventA.mws.yaml
+        snapshot: true
+    - match: 19
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8201
+      - type: 'section'
+        style: 'panel'
+        content: []
+      - type: 'link'
+        # ../en-US.restext:277 | "Continue"
+        label: 'restext://Common_273'
+        target: 'EssentialSalts' # ./00112-EssentialSalts.mws.yaml
+        snapshot: true
+    - match: 20
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8207
+      - type: 'section'
+        style: 'panel'
+        content: []
+      - type: 'link'
+        # ../en-US.restext:277 | "Continue"
+        label: 'restext://Common_273'
+        target: 'EssentialSalts' # ./00112-EssentialSalts.mws.yaml
+        snapshot: true
+    default:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8214
+    - type: 'section'
+      style: 'panel'
+      content: []
+    - type: 'link'
+      # ../en-US.restext:277 | "Continue"
+      label: 'restext://Common_273'
+      target: 'LiberalBonus' # ./00093-LiberalBonus.mws.yaml
+      snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8223
+  - type: 'break'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8224
+  - type: 'text'
+    # ../en-US.restext:761 | "Each player on the succes..."
+    value: 'restext://ExpYes_006'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8229
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8231
+  - type: 'text'
+    # ../en-US.restext:762 | "Collect and return all Hu..."
+    value: 'restext://ExpYes_007'

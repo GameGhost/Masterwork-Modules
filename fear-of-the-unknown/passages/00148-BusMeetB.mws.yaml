@@ -1,0 +1,200 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:17811
+---
+format: 'mws/0.4'
+passage_id: 'BusMeetB'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:17816
+- type: 'text'
+  # ../en-US.restext:45 | "**Carefully pick up this ..."
+  value: 'restext://Common_041'
+# ../.source/FearoftheUnknown_Eng_v15.cs:17819
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:17825
+- type: 'popup'
+  # ../en-US.restext:46 | "Once you are ready, click..."
+  label: 'restext://Common_042'
+  layout: 'reveal'
+  # ../en-US.restext:275 | "Close"
+  cancel: 'restext://Common_271'
+  snapshot: true
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:17869
+  - type: 'text'
+    # ../en-US.restext:15 | "**A Sly Investment**"
+    value: 'restext://Common_011'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:17871
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:17875
+  - type: 'text'
+    # ../en-US.restext:16 | "**Journal Entry of {busm}..."
+    value: 'restext://Common_012'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:17886
+  - type: 'let'
+    var: '_rnd_BusMeetB_0'
+    # ../en-US.restext:17 | Common_013 | "I could distinctly see fi..."
+    # ../en-US.restext:18 | Common_014 | "He leaned forward, speaki..."
+    expr: '["restext://Common_013", "restext://Common_014"].shuffled("BusMeetB_0")[0]'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:17884
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:17886
+  - type: 'text'
+    # ../en-US.restext:1386 | "{_rnd_BusMeetB_0} \"Donat..."
+    value: 'restext://BusMeetB_001'
+    lets:
+    - '_rnd_BusMeetB_0'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:17901
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:17903
+  - type: 'conditional'
+    if: 'busvp == 1'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:17905
+    - type: 'text'
+      # ../en-US.restext:19 | "The man smiled once again..."
+      value: 'restext://Common_015'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:17906
+    - type: 'break'
+      style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:17909
+  - type: 'text'
+    # ../en-US.restext:20 | "\"**For $1**, you have my..."
+    value: 'restext://Common_016'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:17922
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:17924
+  - type: 'conditional'
+    if: 'bnc < 2'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:17928
+    - type: 'text'
+      # ../en-US.restext:21 | "**\"For $2**, I will guar..."
+      value: 'restext://Common_017'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:17936
+    - type: 'break'
+      style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:17939
+  - type: 'conditional'
+    if: '!bhome || String.IsNullOrEmpty(bhome)'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:17943
+    - type: 'text'
+      # ../en-US.restext:22 | "**\"For $3**, I will offe..."
+      value: 'restext://Common_018'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:17953
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:17955
+  - type: 'text'
+    # ../en-US.restext:23 | "I was admittedly not impr..."
+    value: 'restext://Common_019'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:17957
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:17961
+  - type: 'text'
+    # ../en-US.restext:24 | "**How much would you like..."
+    value: 'restext://Common_020'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:17963
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:17965
+  - type: 'conditional'
+    if: '!bhome || String.IsNullOrEmpty(bhome)'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:17968
+    - type: 'link'
+      # ../en-US.restext:25 | "$3."
+      label: 'restext://Common_021'
+      target: 'BusThanks' # ./00154-BusThanks.mws.yaml
+      snapshot: true
+      onclick:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:17832
+      - type: 'assign'
+        var: 'Bcont'
+        expr: 'Bcont + 3'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:17833
+      - type: 'assign'
+        var: 'bhome'
+        expr: 'nameB'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:17969
+    - type: 'break'
+      style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:17972
+  - type: 'conditional'
+    if: 'bnc < 2'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:17975
+    - type: 'link'
+      # ../en-US.restext:26 | "$2."
+      label: 'restext://Common_022'
+      target: 'BusThanks' # ./00154-BusThanks.mws.yaml
+      snapshot: true
+      onclick:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:17840
+      - type: 'assign'
+        var: 'Bcont'
+        expr: 'Bcont + 2'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:17841
+      - type: 'assign'
+        var: 'btemp'
+        expr: '1'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:17842
+      - type: 'assign'
+        var: 'bnc'
+        expr: 'bnc + 1'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:17976
+    - type: 'break'
+      style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:17980
+  - type: 'link'
+    # ../en-US.restext:27 | "$1."
+    label: 'restext://Common_023'
+    target: 'BusThanks' # ./00154-BusThanks.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:17849
+    - type: 'assign'
+      var: 'Bcont'
+      expr: 'Bcont + 1'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:17981
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:17983
+  - type: 'switch'
+    on: 'busvp'
+    cases:
+    - match: 0
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:17986
+      - type: 'link'
+        # ../en-US.restext:28 | "I'm not convinced."
+        label: 'restext://Common_024'
+        target: '${BusMeetBnextpsg}'
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:17856
+        - type: 'conditional'
+          if: 'BusMeetBnextpsg == "" || BusMeetBnextpsg == 0'
+          then:
+          # ../.source/FearoftheUnknown_Eng_v15.cs:17858
+          - type: 'assign'
+            var: 'BusMeetBnextpsg'
+            expr: '["BusBargain", "BusNo"].shuffled("BusMeetB_1")[0]'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:17987
+      - type: 'text'
+        # ../en-US.restext:29 | "_This option will provide..."
+        value: 'restext://Common_025'
+    - match: 1
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:17991
+      - type: 'link'
+        # ../en-US.restext:30 | "I will pass."
+        label: 'restext://Common_026'
+        target: 'BusNo' # ./00155-BusNo.mws.yaml
+        snapshot: true

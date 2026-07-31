@@ -1,0 +1,96 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:11087
+---
+format: 'mws/0.4'
+passage_id: 'Mobbed2'
+# ../en-US.restext:923 | "Fear of Our Family"
+title: 'restext://Mobbed2_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:11097
+- type: 'text'
+  # ../en-US.restext:924 | "**{randomname}'s Journal ..."
+  value: 'restext://Mobbed2_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:11104
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:11106
+- type: 'text'
+  # ../en-US.restext:925 | "The deep-rooted effects o..."
+  value: 'restext://Mobbed2_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:11107
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:11111
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:926 | "Click here to determine t..."
+  label: 'restext://Mobbed2_004'
+  target: '${Mobbed2nextpsg}'
+  # ../en-US.restext:275 | "Close"
+  okay: 'restext://Common_271'
+  snapshot: true
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:11140
+  - type: 'image'
+    asset: 'image://setup/S2_EstateUpgradeBACK'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:11129
+  - type: 'conditional'
+    if: 'Mobbed2nextpsg == "" || Mobbed2nextpsg == 0'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:11131
+    - type: 'assign'
+      var: 'Mobbed2nextpsg'
+      expr: '["S4Witch1", "S4Witch2"].shuffled("Mobbed2_0")[0]'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:11128
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:11143
+  - type: 'conditional'
+    if: 'plotA == "yes"'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:11145
+    - type: 'text'
+      # ../en-US.restext:927 | "{nameA} gains a **Family ..."
+      value: 'restext://Mobbed2_005'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:11152
+    - type: 'break'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:11154
+  - type: 'conditional'
+    if: 'plotB == "yes"'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:11156
+    - type: 'text'
+      # ../en-US.restext:928 | "{nameB} gains a **Family ..."
+      value: 'restext://Mobbed2_006'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:11163
+    - type: 'break'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:11165
+  - type: 'conditional'
+    if: 'plotC == "yes"'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:11167
+    - type: 'text'
+      # ../en-US.restext:929 | "{nameC} gains a **Family ..."
+      value: 'restext://Mobbed2_007'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:11174
+    - type: 'break'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:11176
+  - type: 'conditional'
+    if: 'plotD == "yes"'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:11178
+    - type: 'text'
+      # ../en-US.restext:930 | "{nameD} gains a **Family ..."
+      value: 'restext://Mobbed2_008'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:11185
+    - type: 'break'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:11187
+  - type: 'conditional'
+    if: 'plotE == "yes"'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:11189
+    - type: 'text'
+      # ../en-US.restext:931 | "{nameE} gains a **Family ..."
+      value: 'restext://Mobbed2_009'

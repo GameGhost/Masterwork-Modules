@@ -1,0 +1,78 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:5441
+---
+format: 'mws/0.4'
+passage_id: 'S4IsoBrick'
+# ../en-US.restext:642 | "Most Honored Philanthropist"
+title: 'restext://S4IsoBrick_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:5451
+- type: 'text'
+  # ../en-US.restext:282 | "**Newsprint - {newspaper}..."
+  value: 'restext://Common_278'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5460
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5462
+- type: 'text'
+  # ../en-US.restext:643 | "The mayor of the town, in..."
+  value: 'restext://S4IsoBrick_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5471
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5475
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: '${S4IsoBricknextpsg}'
+  # ../en-US.restext:275 | "Close"
+  okay: 'restext://Common_271'
+  snapshot: true
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5500
+  - type: 'image'
+    asset: 'image://setup/S2_BrickTokens'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5489
+  - type: 'conditional'
+    if: 'S4IsoBricknextpsg == "" || S4IsoBricknextpsg == 0'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:5491
+    - type: 'assign'
+      var: 'S4IsoBricknextpsg'
+      expr: '["S4Foreign1", "S4Foreign3"].shuffled("S4IsoBrick_0")[0]'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5488
+  - type: 'break'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5518
+  - type: 'let'
+    var: '_rnd_S4IsoBrick_0'
+    expr: 'rand_between(2, 5, "S4IsoBrick_1")'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5501
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5503
+  - type: 'text'
+    # ../en-US.restext:644 | "The player who collected ..."
+    value: 'restext://S4IsoBrick_003'
+    lets:
+    - '_rnd_S4IsoBrick_0'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5527
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5529
+  - type: 'conditional'
+    if: 'players >= 4'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:5531
+    - type: 'text'
+      # ../en-US.restext:645 | "The player who collected ..."
+      value: 'restext://S4IsoBrick_004'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:5542
+    - type: 'break'
+      style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5547
+  - type: 'text'
+    # ../en-US.restext:646 | "_Note: Do not discard the..."
+    value: 'restext://S4IsoBrick_005'

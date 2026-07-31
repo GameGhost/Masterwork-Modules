@@ -1,0 +1,89 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:19003
+---
+format: 'mws/0.4'
+passage_id: 'BusBargain'
+# ../en-US.restext:1438 | "An Improved Deal"
+title: 'restext://BusBargain_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:19013
+- type: 'text'
+  # ../en-US.restext:16 | "**Journal Entry of {busm}..."
+  value: 'restext://Common_012'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19026
+- type: 'let'
+  var: '_rnd_BusBargain_0'
+  # ../en-US.restext:1439 | BusBargain_002 | "Well, it appears you have..."
+  # ../en-US.restext:1440 | BusBargain_003 | "I was wise to contact you..."
+  expr: '["restext://BusBargain_002", "restext://BusBargain_003"].shuffled("BusBargain_0")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19022
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19024
+- type: 'text'
+  # ../en-US.restext:1441 | "\"Ahh, a shrewd negotiato..."
+  value: 'restext://BusBargain_004'
+  lets:
+  - '_rnd_BusBargain_0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19030
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19034
+- type: 'text'
+  # ../en-US.restext:1442 | "_If I decide to accept th..."
+  value: 'restext://BusBargain_005'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19044
+- type: 'assign'
+  var: 'busvp'
+  expr: '1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19045
+- type: 'assign'
+  var: 'crpg'
+  expr: '1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19042
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19047
+- type: 'conditional'
+  conditions:
+  - if: 'busm == nameA'
+    then:
+    - type: 'link'
+      # ../en-US.restext:286 | "Click to continue..."
+      label: 'restext://Common_282'
+      target: 'BusMeetA' # ./00149-BusMeetA.mws.yaml
+      snapshot: true
+  - if: 'busm == nameB'
+    then:
+    - type: 'link'
+      # ../en-US.restext:286 | "Click to continue..."
+      label: 'restext://Common_282'
+      target: 'BusMeetB' # ./00148-BusMeetB.mws.yaml
+      snapshot: true
+  - if: 'busm == nameC'
+    then:
+    - type: 'link'
+      # ../en-US.restext:286 | "Click to continue..."
+      label: 'restext://Common_282'
+      target: 'BusMeetC' # ./00147-BusMeetC.mws.yaml
+      snapshot: true
+  - if: 'busm == nameD'
+    then:
+    - type: 'link'
+      # ../en-US.restext:286 | "Click to continue..."
+      label: 'restext://Common_282'
+      target: 'BusMeetD' # ./00150-BusMeetD.mws.yaml
+      snapshot: true
+  - if: 'busm == nameE'
+    then:
+    - type: 'link'
+      # ../en-US.restext:286 | "Click to continue..."
+      label: 'restext://Common_282'
+      target: 'BusMeetE' # ./00151-BusMeetE.mws.yaml
+      snapshot: true
+  else:
+  - type: 'link'
+    # ../en-US.restext:286 | "Click to continue..."
+    label: 'restext://Common_282'
+    target: 'BusMeetA' # ./00149-BusMeetA.mws.yaml
+    snapshot: true

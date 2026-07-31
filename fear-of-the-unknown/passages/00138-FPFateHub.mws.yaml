@@ -1,0 +1,177 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:16626
+---
+format: 'mws/0.4'
+passage_id: 'FPFateHub'
+tags:
+- 'fate6ok'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:16628
+- type: 'assign'
+  var: 'fpfate'
+  expr: '[1, 2, 3, 4, 5, 6]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16631
+- type: 'conditional'
+  if: 'fp10vp == 1'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:16633
+  - type: 'assign'
+    var: 'fpfate'
+    expr: 'fpfate.except(1)'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16637
+- type: 'conditional'
+  if: 'fpresearch2 == 1'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:16639
+  - type: 'assign'
+    var: 'fpfate'
+    expr: 'fpfate.except(2)'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16643
+- type: 'conditional'
+  if: 'fpsanity3 == 1'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:16645
+  - type: 'assign'
+    var: 'fpfate'
+    expr: 'fpfate.except(3)'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16649
+- type: 'conditional'
+  if: 'fpcreepy3 == 1'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:16651
+  - type: 'assign'
+    var: 'fpfate'
+    expr: 'fpfate.except(4)'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16656
+- type: 'conditional'
+  if: 'plA == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:16660
+  - type: 'conditional'
+    if: 'count(fpfate) > 0'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:16662
+    - type: 'let'
+      var: '_pick_FPFateHub_0'
+      expr: 'fpfate.shuffled("_pick_FPFateHub_0_0")[0]'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:16662
+    - type: 'assign'
+      var: 'plA'
+      expr: '_pick_FPFateHub_0'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:16663
+    - type: 'assign'
+      var: 'fpfate'
+      expr: 'fpfate.except(plA)'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16669
+- type: 'conditional'
+  if: 'plB == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:16673
+  - type: 'conditional'
+    if: 'count(fpfate) > 0'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:16675
+    - type: 'let'
+      var: '_pick_FPFateHub_1'
+      expr: 'fpfate.shuffled("_pick_FPFateHub_1_0")[0]'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:16675
+    - type: 'assign'
+      var: 'plB'
+      expr: '_pick_FPFateHub_1'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:16676
+    - type: 'assign'
+      var: 'fpfate'
+      expr: 'fpfate.except(plB)'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16682
+- type: 'conditional'
+  if: 'plC == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:16686
+  - type: 'conditional'
+    if: 'count(fpfate) > 0'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:16688
+    - type: 'let'
+      var: '_pick_FPFateHub_2'
+      expr: 'fpfate.shuffled("_pick_FPFateHub_2_0")[0]'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:16688
+    - type: 'assign'
+      var: 'plC'
+      expr: '_pick_FPFateHub_2'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:16689
+    - type: 'assign'
+      var: 'fpfate'
+      expr: 'fpfate.except(plC)'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16695
+- type: 'conditional'
+  if: 'plD == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:16699
+  - type: 'conditional'
+    if: 'count(fpfate) > 0'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:16701
+    - type: 'let'
+      var: '_pick_FPFateHub_3'
+      expr: 'fpfate.shuffled("_pick_FPFateHub_3_0")[0]'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:16701
+    - type: 'assign'
+      var: 'plD'
+      expr: '_pick_FPFateHub_3'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:16702
+    - type: 'assign'
+      var: 'fpfate'
+      expr: 'fpfate.except(plD)'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16708
+- type: 'conditional'
+  if: 'plE == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:16712
+  - type: 'conditional'
+    if: 'count(fpfate) > 0'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:16714
+    - type: 'let'
+      var: '_pick_FPFateHub_4'
+      expr: 'fpfate.shuffled("_pick_FPFateHub_4_0")[0]'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:16714
+    - type: 'assign'
+      var: 'plE'
+      expr: '_pick_FPFateHub_4'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16719
+- type: 'goto'
+  target: 'FPFateAssignHub' # ./00141-FPFateAssignHub.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:16724
+- type: 'text'
+  # ../en-US.restext:358 | "{fp10vp} fame 1"
+  value: 'restext://Common_354'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16727
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16728
+- type: 'text'
+  # ../en-US.restext:359 | "{fpresearch2} knowledge 2"
+  value: 'restext://Common_355'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16731
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16732
+- type: 'text'
+  # ../en-US.restext:360 | "{fpsanity3} science 3"
+  value: 'restext://Common_356'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16735
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16736
+- type: 'text'
+  # ../en-US.restext:361 | "{fpcreepy3} revenge 4"
+  value: 'restext://Common_357'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16739
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16740
+- type: 'text'
+  # ../en-US.restext:362 | "respect 5"
+  value: 'restext://Common_358'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16741
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:16742
+- type: 'text'
+  # ../en-US.restext:76 | "entertainment 6"
+  value: 'restext://Common_072'

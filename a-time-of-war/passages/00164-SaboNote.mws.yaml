@@ -1,0 +1,27 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:17995
+---
+format: 'mws/0.4'
+passage_id: 'SaboNote'
+tags:
+- 'OLD'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:17997
+- type: 'conditional'
+  if: 'wardestroy == 1'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:17999
+  - type: 'goto'
+    target: 'ATOWSabotage1Cont'
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:18003
+  - type: 'goto'
+    target: 'ATOWSabotage2'
+# ../.source/ATimeofWar_Eng_v8.cs:18008
+- type: 'text'
+  value: '{playersabotage1}'
+# ../.source/ATimeofWar_Eng_v8.cs:18009
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:18010
+- type: 'text'
+  value: '{sabotagee1}'

@@ -1,0 +1,232 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:15677
+---
+format: 'mws/0.4'
+passage_id: 'FPResearch2'
+# ../en-US.restext:1288 | "Boundless Study"
+title: 'restext://FPResearch2_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:15684
+- type: 'conditional'
+  if: 'onecount >= players'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15686
+  - type: 'assign'
+    var: 'fpresearch2'
+    expr: '1'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15687
+  - type: 'goto'
+    target: 'FP1OverBonus' # ./00140-FP1OverBonus.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:15692
+- type: 'text'
+  # ../en-US.restext:77 | "**Choose your name and be..."
+  value: 'restext://Common_073'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15694
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15696
+- type: 'switch'
+  on: 'Aconfirm'
+  cases:
+  - match: 0
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15699
+    - type: 'link'
+      label: '{nameA}'
+      target: 'FPResearch2signin' # ./00134-FPResearch2signin.mws.yaml
+      snapshot: true
+      onclick:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15769
+      - type: 'assign'
+        var: 'fpresearch2'
+        expr: '1'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15770
+      - type: 'assign'
+        var: 'Aconfirm'
+        expr: '1'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15771
+      - type: 'assign'
+        var: 'plA'
+        expr: '2'
+  - match: 1
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15704
+    - type: 'link'
+      label: '{nameA}'
+      target: 'FPNo' # ./00137-FPNo.mws.yaml
+      snapshot: true
+      onclick:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15778
+      - type: 'assign'
+        var: 'tempname'
+        expr: 'nameA'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15706
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15708
+- type: 'switch'
+  on: 'Bconfirm'
+  cases:
+  - match: 0
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15711
+    - type: 'link'
+      label: '{nameB}'
+      target: 'FPResearch2signin' # ./00134-FPResearch2signin.mws.yaml
+      snapshot: true
+      onclick:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15785
+      - type: 'assign'
+        var: 'fpresearch2'
+        expr: '1'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15786
+      - type: 'assign'
+        var: 'Bconfirm'
+        expr: '1'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15787
+      - type: 'assign'
+        var: 'plB'
+        expr: '2'
+  - match: 1
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15716
+    - type: 'link'
+      label: '{nameB}'
+      target: 'FPNo' # ./00137-FPNo.mws.yaml
+      snapshot: true
+      onclick:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15794
+      - type: 'assign'
+        var: 'tempname'
+        expr: 'nameB'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15718
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15720
+- type: 'conditional'
+  if: 'players > 2'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15722
+  - type: 'switch'
+    on: 'Cconfirm'
+    cases:
+    - match: 0
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15725
+      - type: 'link'
+        label: '{nameC}'
+        target: 'FPResearch2signin' # ./00134-FPResearch2signin.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15801
+        - type: 'assign'
+          var: 'fpresearch2'
+          expr: '1'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15802
+        - type: 'assign'
+          var: 'Cconfirm'
+          expr: '1'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15803
+        - type: 'assign'
+          var: 'plC'
+          expr: '2'
+    - match: 1
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15730
+      - type: 'link'
+        label: '{nameC}'
+        target: 'FPNo' # ./00137-FPNo.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15810
+        - type: 'assign'
+          var: 'tempname'
+          expr: 'nameC'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15732
+  - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15734
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15735
+- type: 'conditional'
+  if: 'players > 3'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15737
+  - type: 'switch'
+    on: 'Dconfirm'
+    cases:
+    - match: 0
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15740
+      - type: 'link'
+        label: '{nameD}'
+        target: 'FPResearch2signin' # ./00134-FPResearch2signin.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15817
+        - type: 'assign'
+          var: 'fpresearch2'
+          expr: '1'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15818
+        - type: 'assign'
+          var: 'Dconfirm'
+          expr: '1'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15819
+        - type: 'assign'
+          var: 'plD'
+          expr: '2'
+    - match: 1
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15745
+      - type: 'link'
+        label: '{nameD}'
+        target: 'FPNo' # ./00137-FPNo.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15826
+        - type: 'assign'
+          var: 'tempname'
+          expr: 'nameD'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15747
+  - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15749
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15750
+- type: 'conditional'
+  if: 'players > 4'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15752
+  - type: 'switch'
+    on: 'Econfirm'
+    cases:
+    - match: 0
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15755
+      - type: 'link'
+        label: '{nameE}'
+        target: 'FPResearch2signin' # ./00134-FPResearch2signin.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15833
+        - type: 'assign'
+          var: 'fpresearch2'
+          expr: '1'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15834
+        - type: 'assign'
+          var: 'Econfirm'
+          expr: '1'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15835
+        - type: 'assign'
+          var: 'plE'
+          expr: '2'
+    - match: 1
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:15760
+      - type: 'link'
+        label: '{nameE}'
+        target: 'FPNo' # ./00137-FPNo.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:15842
+        - type: 'assign'
+          var: 'tempname'
+          expr: 'nameE'

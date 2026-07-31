@@ -1,0 +1,114 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:13135
+---
+format: 'mws/0.4'
+passage_id: 'WallEvent2'
+# ../en-US.restext:1089 | "A Vague Promise"
+title: 'restext://WallEvent2_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:13143
+- type: 'text'
+  # ../en-US.restext:1090 | "The effect of our decisio..."
+  value: 'restext://WallEvent2_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13145
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13147
+- type: 'conditional'
+  if: 'walls == "yes"'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13149
+  - type: 'text'
+    # ../en-US.restext:1097 | "In the coming weeks, the ..."
+    value: 'restext://WallEvent2_009'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13150
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13154
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:1092 | "Click to continue…"
+    label: 'restext://WallEvent2_004'
+    target: 'Witchwolf2a' # ./00064-Witchwolf2a.mws.yaml
+    # ../en-US.restext:275 | "Close"
+    okay: 'restext://Common_271'
+    snapshot: true
+    header:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:13181
+    - type: 'image'
+      asset: 'image://setup/S2_BrickTokens'
+      style: 'setup-image'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:13182
+    - type: 'text'
+      # ../en-US.restext:1098 | "All players with money in..."
+      value: 'restext://WallEvent2_010'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:13199
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:13201
+    - type: 'text'
+      # ../en-US.restext:1094 | "Retrieve the **Market tok..."
+      value: 'restext://WallEvent2_006'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:13209
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:13211
+    - type: 'text'
+      # ../en-US.restext:1099 | "Any player who did **not*..."
+      value: 'restext://WallEvent2_011'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:13228
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:13232
+    - type: 'text'
+      # ../en-US.restext:1100 | "**For the remainder of th..."
+      value: 'restext://WallEvent2_012'
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13158
+  - type: 'text'
+    # ../en-US.restext:1091 | "The Romani caravans, whil..."
+    value: 'restext://WallEvent2_003'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13159
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13163
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:1092 | "Click to continue…"
+    label: 'restext://WallEvent2_004'
+    target: 'Witchwolf2a' # ./00064-Witchwolf2a.mws.yaml
+    # ../en-US.restext:275 | "Close"
+    okay: 'restext://Common_271'
+    snapshot: true
+    header:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:13258
+    - type: 'image'
+      asset: 'image://setup/S2_BrickTokens'
+      style: 'setup-image'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:13259
+    - type: 'text'
+      # ../en-US.restext:1093 | "All players with money in..."
+      value: 'restext://WallEvent2_005'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:13276
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:13278
+    - type: 'text'
+      # ../en-US.restext:1094 | "Retrieve the **Market tok..."
+      value: 'restext://WallEvent2_006'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:13285
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:13287
+    - type: 'text'
+      # ../en-US.restext:1095 | "Any player who did **not*..."
+      value: 'restext://WallEvent2_007'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:13299
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:13303
+    - type: 'text'
+      # ../en-US.restext:1096 | "**For the remainder of th..."
+      value: 'restext://WallEvent2_008'

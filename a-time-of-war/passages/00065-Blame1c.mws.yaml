@@ -1,0 +1,517 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:8397
+---
+format: 'mws/0.4'
+passage_id: 'Blame1c'
+# ../en-US.restext:713 | "Passing the Blame"
+title: 'restext://Blame1c_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:8406
+- type: 'text'
+  # ../en-US.restext:41 | "**Reminder: Do not allow ..."
+  value: 'restext://Common_037'
+# ../.source/ATimeofWar_Eng_v8.cs:8408
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:8410
+- type: 'text'
+  # ../en-US.restext:714 | "The soldiers took a momen..."
+  value: 'restext://Blame1c_002'
+# ../.source/ATimeofWar_Eng_v8.cs:8416
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:8418
+- type: 'text'
+  # ../en-US.restext:715 | "I was struck by a **sudde..."
+  value: 'restext://Blame1c_003'
+# ../.source/ATimeofWar_Eng_v8.cs:8423
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:8425
+- type: 'text'
+  # ../en-US.restext:716 | "If my cousins and I could..."
+  value: 'restext://Blame1c_004'
+# ../.source/ATimeofWar_Eng_v8.cs:8428
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:8430
+- type: 'text'
+  # ../en-US.restext:717 | "I knew that whoever was c..."
+  value: 'restext://Blame1c_005'
+# ../.source/ATimeofWar_Eng_v8.cs:8440
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:8442
+- type: 'text'
+  # ../en-US.restext:718 | "I decided:"
+  value: 'restext://Blame1c_006'
+# ../.source/ATimeofWar_Eng_v8.cs:8443
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:8445
+- type: 'switch'
+  on: 'counter'
+  cases:
+  - match: 1
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:8448
+    - type: 'link'
+      # ../en-US.restext:719 | "To stay silent."
+      label: 'restext://Blame1c_007'
+      target: 'Blame2' # ./00066-Blame2.mws.yaml
+      snapshot: true
+      onclick:
+      # ../.source/ATimeofWar_Eng_v8.cs:8572
+      - type: 'assign'
+        var: 'silentA'
+        expr: '1'
+    # ../.source/ATimeofWar_Eng_v8.cs:8449
+    - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:8451
+    - type: 'link'
+      # ../en-US.restext:720 | "To blame {nameB}."
+      label: 'restext://Blame1c_008'
+      target: 'Blame2' # ./00066-Blame2.mws.yaml
+      snapshot: true
+      onclick:
+      # ../.source/ATimeofWar_Eng_v8.cs:8579
+      - type: 'assign'
+        var: 'pl2'
+        expr: 'pl2 + 1'
+    # ../.source/ATimeofWar_Eng_v8.cs:8452
+    - type: 'conditional'
+      if: 'players >= 3'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:8454
+      - type: 'break'
+      # ../.source/ATimeofWar_Eng_v8.cs:8456
+      - type: 'link'
+        # ../en-US.restext:721 | "To blame {nameC}."
+        label: 'restext://Blame1c_009'
+        target: 'Blame2' # ./00066-Blame2.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/ATimeofWar_Eng_v8.cs:8586
+        - type: 'assign'
+          var: 'pl3'
+          expr: 'pl3 + 1'
+    # ../.source/ATimeofWar_Eng_v8.cs:8458
+    - type: 'conditional'
+      if: 'players >= 4'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:8460
+      - type: 'break'
+      # ../.source/ATimeofWar_Eng_v8.cs:8462
+      - type: 'link'
+        # ../en-US.restext:722 | "To blame {nameD}."
+        label: 'restext://Blame1c_010'
+        target: 'Blame2' # ./00066-Blame2.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/ATimeofWar_Eng_v8.cs:8593
+        - type: 'assign'
+          var: 'pl4'
+          expr: 'pl4 + 1'
+    # ../.source/ATimeofWar_Eng_v8.cs:8464
+    - type: 'conditional'
+      if: 'players >= 5'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:8466
+      - type: 'break'
+      # ../.source/ATimeofWar_Eng_v8.cs:8468
+      - type: 'link'
+        # ../en-US.restext:723 | "To blame {nameE}."
+        label: 'restext://Blame1c_011'
+        target: 'Blame2' # ./00066-Blame2.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/ATimeofWar_Eng_v8.cs:8600
+        - type: 'assign'
+          var: 'pl5'
+          expr: 'pl5 + 1'
+  - match: 2
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:8474
+    - type: 'link'
+      # ../en-US.restext:719 | "To stay silent."
+      label: 'restext://Blame1c_007'
+      snapshot: true
+      onclick:
+      # ../.source/ATimeofWar_Eng_v8.cs:8607
+      - type: 'assign'
+        var: 'silentB'
+        expr: '1'
+      # ../.source/ATimeofWar_Eng_v8.cs:8608
+      - type: 'conditional'
+        if: 'players == 2'
+        then:
+        # ../.source/ATimeofWar_Eng_v8.cs:8610
+        - type: 'goto'
+          target: 'BlameResolve' # ./00085-BlameResolve.mws.yaml
+        else:
+        # ../.source/ATimeofWar_Eng_v8.cs:8614
+        - type: 'goto'
+          target: 'Blame3' # ./00082-Blame3.mws.yaml
+    # ../.source/ATimeofWar_Eng_v8.cs:8475
+    - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:8477
+    - type: 'link'
+      # ../en-US.restext:724 | "To blame {nameA}."
+      label: 'restext://Blame1c_012'
+      snapshot: true
+      onclick:
+      # ../.source/ATimeofWar_Eng_v8.cs:8621
+      - type: 'assign'
+        var: 'pl1'
+        expr: 'pl1 + 1'
+      # ../.source/ATimeofWar_Eng_v8.cs:8622
+      - type: 'conditional'
+        if: 'players == 2'
+        then:
+        # ../.source/ATimeofWar_Eng_v8.cs:8624
+        - type: 'goto'
+          target: 'BlameResolve' # ./00085-BlameResolve.mws.yaml
+        else:
+        # ../.source/ATimeofWar_Eng_v8.cs:8628
+        - type: 'goto'
+          target: 'Blame3' # ./00082-Blame3.mws.yaml
+    # ../.source/ATimeofWar_Eng_v8.cs:8478
+    - type: 'conditional'
+      if: 'players >= 3'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:8480
+      - type: 'break'
+      # ../.source/ATimeofWar_Eng_v8.cs:8482
+      - type: 'link'
+        # ../en-US.restext:721 | "To blame {nameC}."
+        label: 'restext://Blame1c_009'
+        target: 'Blame3' # ./00082-Blame3.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/ATimeofWar_Eng_v8.cs:8635
+        - type: 'assign'
+          var: 'pl3'
+          expr: 'pl3 + 1'
+    # ../.source/ATimeofWar_Eng_v8.cs:8484
+    - type: 'conditional'
+      if: 'players >= 4'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:8486
+      - type: 'break'
+      # ../.source/ATimeofWar_Eng_v8.cs:8488
+      - type: 'link'
+        # ../en-US.restext:722 | "To blame {nameD}."
+        label: 'restext://Blame1c_010'
+        target: 'Blame3' # ./00082-Blame3.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/ATimeofWar_Eng_v8.cs:8642
+        - type: 'assign'
+          var: 'pl4'
+          expr: 'pl4 + 1'
+    # ../.source/ATimeofWar_Eng_v8.cs:8490
+    - type: 'conditional'
+      if: 'players >= 5'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:8492
+      - type: 'break'
+      # ../.source/ATimeofWar_Eng_v8.cs:8494
+      - type: 'link'
+        # ../en-US.restext:723 | "To blame {nameE}."
+        label: 'restext://Blame1c_011'
+        target: 'Blame3' # ./00082-Blame3.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/ATimeofWar_Eng_v8.cs:8649
+        - type: 'assign'
+          var: 'pl5'
+          expr: 'pl5 + 1'
+  - match: 3
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:8500
+    - type: 'link'
+      # ../en-US.restext:719 | "To stay silent."
+      label: 'restext://Blame1c_007'
+      snapshot: true
+      onclick:
+      # ../.source/ATimeofWar_Eng_v8.cs:8656
+      - type: 'assign'
+        var: 'silentC'
+        expr: '1'
+      # ../.source/ATimeofWar_Eng_v8.cs:8657
+      - type: 'conditional'
+        if: 'players == 3'
+        then:
+        # ../.source/ATimeofWar_Eng_v8.cs:8659
+        - type: 'goto'
+          target: 'BlameResolve' # ./00085-BlameResolve.mws.yaml
+        else:
+        # ../.source/ATimeofWar_Eng_v8.cs:8663
+        - type: 'goto'
+          target: 'Blame4' # ./00083-Blame4.mws.yaml
+    # ../.source/ATimeofWar_Eng_v8.cs:8501
+    - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:8503
+    - type: 'link'
+      # ../en-US.restext:724 | "To blame {nameA}."
+      label: 'restext://Blame1c_012'
+      snapshot: true
+      onclick:
+      # ../.source/ATimeofWar_Eng_v8.cs:8670
+      - type: 'assign'
+        var: 'pl1'
+        expr: 'pl1 + 1'
+      # ../.source/ATimeofWar_Eng_v8.cs:8671
+      - type: 'conditional'
+        if: 'players == 3'
+        then:
+        # ../.source/ATimeofWar_Eng_v8.cs:8673
+        - type: 'goto'
+          target: 'BlameResolve' # ./00085-BlameResolve.mws.yaml
+        else:
+        # ../.source/ATimeofWar_Eng_v8.cs:8677
+        - type: 'goto'
+          target: 'Blame4' # ./00083-Blame4.mws.yaml
+    # ../.source/ATimeofWar_Eng_v8.cs:8504
+    - type: 'conditional'
+      if: 'players >= 3'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:8506
+      - type: 'break'
+      # ../.source/ATimeofWar_Eng_v8.cs:8508
+      - type: 'link'
+        # ../en-US.restext:720 | "To blame {nameB}."
+        label: 'restext://Blame1c_008'
+        snapshot: true
+        onclick:
+        # ../.source/ATimeofWar_Eng_v8.cs:8684
+        - type: 'assign'
+          var: 'pl2'
+          expr: 'pl2 + 1'
+        # ../.source/ATimeofWar_Eng_v8.cs:8685
+        - type: 'conditional'
+          if: 'players == 3'
+          then:
+          # ../.source/ATimeofWar_Eng_v8.cs:8687
+          - type: 'goto'
+            target: 'BlameResolve' # ./00085-BlameResolve.mws.yaml
+          else:
+          # ../.source/ATimeofWar_Eng_v8.cs:8691
+          - type: 'goto'
+            target: 'Blame4' # ./00083-Blame4.mws.yaml
+    # ../.source/ATimeofWar_Eng_v8.cs:8510
+    - type: 'conditional'
+      if: 'players >= 4'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:8512
+      - type: 'break'
+      # ../.source/ATimeofWar_Eng_v8.cs:8514
+      - type: 'link'
+        # ../en-US.restext:722 | "To blame {nameD}."
+        label: 'restext://Blame1c_010'
+        target: 'Blame4' # ./00083-Blame4.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/ATimeofWar_Eng_v8.cs:8698
+        - type: 'assign'
+          var: 'pl4'
+          expr: 'pl4 + 1'
+    # ../.source/ATimeofWar_Eng_v8.cs:8516
+    - type: 'conditional'
+      if: 'players >= 5'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:8518
+      - type: 'break'
+      # ../.source/ATimeofWar_Eng_v8.cs:8520
+      - type: 'link'
+        # ../en-US.restext:723 | "To blame {nameE}."
+        label: 'restext://Blame1c_011'
+        target: 'Blame4' # ./00083-Blame4.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/ATimeofWar_Eng_v8.cs:8705
+        - type: 'assign'
+          var: 'pl5'
+          expr: 'pl5 + 1'
+  - match: 4
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:8526
+    - type: 'link'
+      # ../en-US.restext:719 | "To stay silent."
+      label: 'restext://Blame1c_007'
+      snapshot: true
+      onclick:
+      # ../.source/ATimeofWar_Eng_v8.cs:8712
+      - type: 'assign'
+        var: 'silentD'
+        expr: '1'
+      # ../.source/ATimeofWar_Eng_v8.cs:8713
+      - type: 'conditional'
+        if: 'players == 4'
+        then:
+        # ../.source/ATimeofWar_Eng_v8.cs:8715
+        - type: 'goto'
+          target: 'BlameResolve' # ./00085-BlameResolve.mws.yaml
+        else:
+        # ../.source/ATimeofWar_Eng_v8.cs:8719
+        - type: 'goto'
+          target: 'Blame5' # ./00084-Blame5.mws.yaml
+    # ../.source/ATimeofWar_Eng_v8.cs:8527
+    - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:8529
+    - type: 'link'
+      # ../en-US.restext:724 | "To blame {nameA}."
+      label: 'restext://Blame1c_012'
+      snapshot: true
+      onclick:
+      # ../.source/ATimeofWar_Eng_v8.cs:8726
+      - type: 'assign'
+        var: 'pl1'
+        expr: 'pl1 + 1'
+      # ../.source/ATimeofWar_Eng_v8.cs:8727
+      - type: 'conditional'
+        if: 'players == 4'
+        then:
+        # ../.source/ATimeofWar_Eng_v8.cs:8729
+        - type: 'goto'
+          target: 'BlameResolve' # ./00085-BlameResolve.mws.yaml
+        else:
+        # ../.source/ATimeofWar_Eng_v8.cs:8733
+        - type: 'goto'
+          target: 'Blame5' # ./00084-Blame5.mws.yaml
+    # ../.source/ATimeofWar_Eng_v8.cs:8530
+    - type: 'conditional'
+      if: 'players >= 3'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:8532
+      - type: 'break'
+      # ../.source/ATimeofWar_Eng_v8.cs:8534
+      - type: 'link'
+        # ../en-US.restext:720 | "To blame {nameB}."
+        label: 'restext://Blame1c_008'
+        snapshot: true
+        onclick:
+        # ../.source/ATimeofWar_Eng_v8.cs:8740
+        - type: 'assign'
+          var: 'pl2'
+          expr: 'pl2 + 1'
+        # ../.source/ATimeofWar_Eng_v8.cs:8741
+        - type: 'conditional'
+          if: 'players == 4'
+          then:
+          # ../.source/ATimeofWar_Eng_v8.cs:8743
+          - type: 'goto'
+            target: 'BlameResolve' # ./00085-BlameResolve.mws.yaml
+          else:
+          # ../.source/ATimeofWar_Eng_v8.cs:8747
+          - type: 'goto'
+            target: 'Blame5' # ./00084-Blame5.mws.yaml
+    # ../.source/ATimeofWar_Eng_v8.cs:8536
+    - type: 'conditional'
+      if: 'players >= 4'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:8538
+      - type: 'break'
+      # ../.source/ATimeofWar_Eng_v8.cs:8540
+      - type: 'link'
+        # ../en-US.restext:721 | "To blame {nameC}."
+        label: 'restext://Blame1c_009'
+        snapshot: true
+        onclick:
+        # ../.source/ATimeofWar_Eng_v8.cs:8754
+        - type: 'assign'
+          var: 'pl3'
+          expr: 'pl3 + 1'
+        # ../.source/ATimeofWar_Eng_v8.cs:8755
+        - type: 'conditional'
+          if: 'players == 4'
+          then:
+          # ../.source/ATimeofWar_Eng_v8.cs:8757
+          - type: 'goto'
+            target: 'BlameResolve' # ./00085-BlameResolve.mws.yaml
+          else:
+          # ../.source/ATimeofWar_Eng_v8.cs:8761
+          - type: 'goto'
+            target: 'Blame5' # ./00084-Blame5.mws.yaml
+    # ../.source/ATimeofWar_Eng_v8.cs:8542
+    - type: 'conditional'
+      if: 'players >= 5'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:8544
+      - type: 'break'
+      # ../.source/ATimeofWar_Eng_v8.cs:8546
+      - type: 'link'
+        # ../en-US.restext:723 | "To blame {nameE}."
+        label: 'restext://Blame1c_011'
+        target: 'Blame5' # ./00084-Blame5.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/ATimeofWar_Eng_v8.cs:8768
+        - type: 'assign'
+          var: 'pl5'
+          expr: 'pl5 + 1'
+  - match: 5
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:8552
+    - type: 'link'
+      # ../en-US.restext:719 | "To stay silent."
+      label: 'restext://Blame1c_007'
+      target: 'BlameResolve' # ./00085-BlameResolve.mws.yaml
+      snapshot: true
+      onclick:
+      # ../.source/ATimeofWar_Eng_v8.cs:8775
+      - type: 'assign'
+        var: 'silentE'
+        expr: '1'
+    # ../.source/ATimeofWar_Eng_v8.cs:8553
+    - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:8555
+    - type: 'link'
+      # ../en-US.restext:724 | "To blame {nameA}."
+      label: 'restext://Blame1c_012'
+      target: 'BlameResolve' # ./00085-BlameResolve.mws.yaml
+      snapshot: true
+      onclick:
+      # ../.source/ATimeofWar_Eng_v8.cs:8782
+      - type: 'assign'
+        var: 'pl1'
+        expr: 'pl1 + 1'
+    # ../.source/ATimeofWar_Eng_v8.cs:8556
+    - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:8558
+    - type: 'link'
+      # ../en-US.restext:720 | "To blame {nameB}."
+      label: 'restext://Blame1c_008'
+      target: 'BlameResolve' # ./00085-BlameResolve.mws.yaml
+      snapshot: true
+      onclick:
+      # ../.source/ATimeofWar_Eng_v8.cs:8789
+      - type: 'assign'
+        var: 'pl2'
+        expr: 'pl2 + 1'
+    # ../.source/ATimeofWar_Eng_v8.cs:8559
+    - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:8561
+    - type: 'link'
+      # ../en-US.restext:721 | "To blame {nameC}."
+      label: 'restext://Blame1c_009'
+      target: 'BlameResolve' # ./00085-BlameResolve.mws.yaml
+      snapshot: true
+      onclick:
+      # ../.source/ATimeofWar_Eng_v8.cs:8796
+      - type: 'assign'
+        var: 'pl3'
+        expr: 'pl3 + 1'
+    # ../.source/ATimeofWar_Eng_v8.cs:8562
+    - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:8564
+    - type: 'link'
+      # ../en-US.restext:722 | "To blame {nameD}."
+      label: 'restext://Blame1c_010'
+      target: 'BlameResolve' # ./00085-BlameResolve.mws.yaml
+      snapshot: true
+      onclick:
+      # ../.source/ATimeofWar_Eng_v8.cs:8803
+      - type: 'assign'
+        var: 'pl4'
+        expr: 'pl4 + 1'

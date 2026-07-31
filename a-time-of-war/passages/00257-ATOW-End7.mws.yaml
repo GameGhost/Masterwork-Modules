@@ -1,0 +1,99 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:25364
+---
+format: 'mws/0.4'
+passage_id: 'ATOW-End7'
+# ../en-US.restext:2070 | "History of Applied Sciences"
+title: 'restext://ATOW_End7_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:25373
+- type: 'text'
+  # ../en-US.restext:2071 | "The 11th Edition of this ..."
+  value: 'restext://ATOW_End7_002'
+# ../.source/ATimeofWar_Eng_v8.cs:25381
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25385
+- type: 'text'
+  # ../en-US.restext:2072 | "_Instructors:_ Once readi..."
+  value: 'restext://ATOW_End7_003'
+# ../.source/ATimeofWar_Eng_v8.cs:25390
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25394
+- type: 'text'
+  # ../en-US.restext:2073 | "**REVIEW QUESTIONS**"
+  value: 'restext://ATOW_End7_004'
+# ../.source/ATimeofWar_Eng_v8.cs:25396
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25400
+- type: 'text'
+  # ../en-US.restext:2074 | "**1.** Who is **{winner}**?"
+  value: 'restext://ATOW_End7_005'
+# ../.source/ATimeofWar_Eng_v8.cs:25409
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:25412
+- type: 'text'
+  # ../en-US.restext:2075 | "**2.** In what year was *..."
+  value: 'restext://ATOW_End7_006'
+# ../.source/ATimeofWar_Eng_v8.cs:25420
+- type: 'conditional'
+  if: '!String.IsNullOrEmpty(newmeat)'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:25421
+  - type: 'text'
+    value: ' '
+# ../.source/ATimeofWar_Eng_v8.cs:25422
+- type: 'text'
+  # ../en-US.restext:2076 | "introduced? How did {newmeat}"
+  value: 'restext://ATOW_End7_007'
+# ../.source/ATimeofWar_Eng_v8.cs:25424
+- type: 'conditional'
+  if: '!String.IsNullOrEmpty(newmeat)'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:25425
+  - type: 'text'
+    value: ' '
+# ../.source/ATimeofWar_Eng_v8.cs:25426
+- type: 'text'
+  # ../en-US.restext:2077 | "affect the great war effort?"
+  value: 'restext://ATOW_End7_008'
+# ../.source/ATimeofWar_Eng_v8.cs:25427
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:25430
+- type: 'text'
+  # ../en-US.restext:2078 | "**3.** {winner} was born ..."
+  value: 'restext://ATOW_End7_009'
+# ../.source/ATimeofWar_Eng_v8.cs:25448
+- type: 'let'
+  var: '_rnd_ATOW_End7_0'
+  # ../en-US.restext:171 | Common_167 | "Tiger Launcher"
+  # ../en-US.restext:172 | Common_168 | "Psychic Mindbomb"
+  # ../en-US.restext:173 | Common_169 | "Irresistible Aphrodisiac"
+  # ../en-US.restext:174 | Common_170 | "Helmet-Mounted Flamethrower"
+  # ../en-US.restext:175 | Common_171 | "Steam Grenade"
+  # ../en-US.restext:176 | Common_172 | "Remote Controlled Plague ..."
+  # ../en-US.restext:177 | Common_173 | "Flaming Pitchfork"
+  # ../en-US.restext:178 | Common_174 | "Mechanized Human Armor Suit"
+  # ../en-US.restext:179 | Common_175 | "Dream Stealer"
+  expr: '["restext://Common_167", "restext://Common_168", "restext://Common_169", "restext://Common_170", "restext://Common_171", "restext://Common_172", "restext://Common_173", "restext://Common_174", "restext://Common_175"].shuffled("ATOW-End7_0")[0]'
+# ../.source/ATimeofWar_Eng_v8.cs:25442
+- type: 'text'
+  # ../en-US.restext:2079 | "**4.** What was the criti..."
+  value: 'restext://ATOW_End7_010'
+  lets:
+  - '_rnd_ATOW_End7_0'
+# ../.source/ATimeofWar_Eng_v8.cs:25451
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:25454
+- type: 'text'
+  # ../en-US.restext:2080 | "**5.** What nation is the..."
+  value: 'restext://ATOW_End7_011'
+# ../.source/ATimeofWar_Eng_v8.cs:25464
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25466
+- type: 'text'
+  # ../en-US.restext:19 | "THE END?"
+  value: 'restext://Common_015'

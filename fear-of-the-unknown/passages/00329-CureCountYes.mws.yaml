@@ -1,0 +1,62 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:34782
+---
+format: 'mws/0.4'
+passage_id: 'CureCountYes'
+# ../en-US.restext:2509 | "Cure Confirmed"
+title: 'restext://CureCountYes_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:34792
+- type: 'text'
+  # ../en-US.restext:70 | "**Journal of {cureplayer}..."
+  value: 'restext://Common_066'
+# ../.source/FearoftheUnknown_Eng_v15.cs:34801
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:34803
+- type: 'text'
+  # ../en-US.restext:2510 | "The old Count smiled, ass..."
+  value: 'restext://CureCountYes_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:34806
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:34808
+- type: 'text'
+  # ../en-US.restext:2511 | "\"I have made many mistak..."
+  value: 'restext://CureCountYes_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:34809
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:34811
+- type: 'text'
+  # ../en-US.restext:2512 | "The Count's laughter was ..."
+  value: 'restext://CureCountYes_005'
+# ../.source/FearoftheUnknown_Eng_v15.cs:34812
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:34816
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: 'Payment1A' # ./00160-Payment1A.mws.yaml
+  # ../en-US.restext:275 | "Close"
+  okay: 'restext://Common_271'
+  snapshot: true
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:34831
+  - type: 'image'
+    asset: 'image://setup/ExperimentCBack'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:34834
+  - type: 'text'
+    # ../en-US.restext:2513 | "Gain **2VP.**"
+    value: 'restext://CureCountYes_006'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:34839
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:34841
+  - type: 'text'
+    # ../en-US.restext:2514 | "Discard one completed C-L..."
+    value: 'restext://CureCountYes_007'

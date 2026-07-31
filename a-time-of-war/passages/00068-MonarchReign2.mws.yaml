@@ -1,0 +1,196 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:8984
+---
+format: 'mws/0.4'
+passage_id: 'MonarchReign2'
+# ../en-US.restext:86 | "Monarchy Reigns"
+title: 'restext://Common_082'
+# ../en-US.restext:203 | "Middle Years"
+subtitle: 'restext://Common_199'
+tags:
+- 'format'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:8991
+- type: 'assign'
+  var: 'round'
+  expr: '17'
+# ../.source/ATimeofWar_Eng_v8.cs:8994
+- type: 'conditional'
+  conditions:
+  - if: '!reignsep'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:8998
+    - type: 'section'
+      # ../en-US.restext:87 | "**Monarchist Allegiance**"
+      title: 'restext://Common_083'
+      style: 'hub-card'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:9006
+      - type: 'text'
+        # ../en-US.restext:88 | "If a player does **NOT** ..."
+        value: 'restext://Common_084'
+  - if: 'reignsep == "yes"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:9031
+    - type: 'section'
+      # ../en-US.restext:87 | "**Monarchist Allegiance**"
+      title: 'restext://Common_083'
+      style: 'hub-card'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:9039
+      - type: 'text'
+        # ../en-US.restext:89 | "If a player does **NOT** ..."
+        value: 'restext://Common_085'
+# ../.source/ATimeofWar_Eng_v8.cs:9052
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:9056
+- type: 'section'
+  # ../en-US.restext:90 | "{icon:storybooktoken} **R..."
+  title: 'restext://Common_086'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:9066
+  - type: 'text'
+    # ../en-US.restext:91 | "The Monarchy is likely to..."
+    value: 'restext://Common_087'
+  # ../.source/ATimeofWar_Eng_v8.cs:9074
+  - type: 'link'
+    # ../en-US.restext:92 | "click here to make a roya..."
+    label: 'restext://Common_088'
+    target: 'ReignIntro' # ./00135-ReignIntro.mws.yaml
+    snapshot: true
+# ../.source/ATimeofWar_Eng_v8.cs:9076
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:9080
+- type: 'section'
+  # ../en-US.restext:93 | "**Most Decrees**"
+  title: 'restext://Common_089'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:9089
+  - type: 'text'
+    # ../en-US.restext:103 | "The player who makes the most "
+    value: 'restext://Common_099'
+  # ../.source/ATimeofWar_Eng_v8.cs:9092
+  - type: 'conditional'
+    if: 'benevolent == "good"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:9094
+    - type: 'text'
+      # ../en-US.restext:105 | "**benevolent**"
+      value: 'restext://Common_101'
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:9099
+    - type: 'text'
+      # ../en-US.restext:104 | "**iron fist**"
+      value: 'restext://Common_100'
+  # ../.source/ATimeofWar_Eng_v8.cs:9102
+  - type: 'text'
+    # ../en-US.restext:106 | " decrees will gain **{dec..."
+    value: 'restext://Common_102'
+# ../.source/ATimeofWar_Eng_v8.cs:9116
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:9120
+- type: 'section'
+  # ../en-US.restext:94 | "**Like a Whispering Shadow**"
+  title: 'restext://Common_090'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:9128
+  - type: 'text'
+    # ../en-US.restext:95 | "At the End of the Generat..."
+    value: 'restext://Common_091'
+# ../.source/ATimeofWar_Eng_v8.cs:9141
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:9145
+- type: 'section'
+  # ../en-US.restext:96 | "{icon:storybooktoken} **R..."
+  title: 'restext://Common_092'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:9155
+  - type: 'text'
+    # ../en-US.restext:97 | "If a player ever overlaps..."
+    value: 'restext://Common_093'
+  # ../.source/ATimeofWar_Eng_v8.cs:9162
+  - type: 'conditional'
+    if: 'onestcrown == 0'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:9164
+    - type: 'link'
+      # ../en-US.restext:98 | "click here for the negati..."
+      label: 'restext://Common_094'
+      target: '1stCrownCons' # ./00155-1stCrownCons.mws.yaml
+      snapshot: true
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:9169
+    - type: 'link'
+      # ../en-US.restext:98 | "click here for the negati..."
+      label: 'restext://Common_094'
+      target: 'CrownCons' # ./00245-CrownCons.mws.yaml
+      snapshot: true
+# ../.source/ATimeofWar_Eng_v8.cs:9172
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:9174
+- type: 'conditional'
+  if: 'onestcrown == 1'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:9179
+  - type: 'section'
+    # ../en-US.restext:99 | "**Royal Eye**"
+    title: 'restext://Common_095'
+    style: 'hub-card'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:9188
+    - type: 'text'
+      # ../en-US.restext:107 | "Any player with a {icon:c..."
+      value: 'restext://Common_103'
+  # ../.source/ATimeofWar_Eng_v8.cs:9199
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:9202
+- type: 'switch'
+  on: 'weaponrew'
+  cases:
+  - match: 'money'
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:9206
+    - type: 'section'
+      # ../en-US.restext:100 | "**Weapon Token Bonus**"
+      title: 'restext://Common_096'
+      style: 'hub-card'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:9215
+      - type: 'text'
+        # ../en-US.restext:101 | "{icon:s3_weapontoken}toke..."
+        value: 'restext://Common_097'
+  - match: 'vp'
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:9222
+    - type: 'section'
+      # ../en-US.restext:100 | "**Weapon Token Bonus**"
+      title: 'restext://Common_096'
+      style: 'hub-card'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:9231
+      - type: 'text'
+        # ../en-US.restext:102 | "While our attempt to infl..."
+        value: 'restext://Common_098'
+# ../.source/ATimeofWar_Eng_v8.cs:9241
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:9244
+- type: 'section'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:9249
+  - type: 'link'
+    # ../en-US.restext:217 | "Click here at the end of ..."
+    label: 'restext://Common_213'
+    target: '${advisorcount >= commtrigger ? "CommemorativeStatueEvent" : "MonarchReign3"}' # ./00165-CommemorativeStatueEvent.mws.yaml, ./00069-MonarchReign3.mws.yaml
+    snapshot: true

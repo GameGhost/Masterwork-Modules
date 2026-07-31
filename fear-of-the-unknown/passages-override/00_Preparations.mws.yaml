@@ -1,0 +1,56 @@
+# Masterwork-authored onboarding passage (not extractor output) — see Masterwork-Modules/CLAUDE.md.
+# Near-duplicate of passages/00183-ScenarioBox-FOTU.mws.yaml, minus the assigns that pulled
+# nameA-E/players/townname from app-injected `global:` values — the preceding Setup_0x passages
+# already set all of those directly through play. The playtxt derivation (switch on players) is
+# kept since it's a real derived value, not a global-sourced one. Continues to the original,
+# unmodified Prologue-FOTU — the existing module content takes over from there.
+---
+format: 'mws/0.4'
+passage_id: '00_Preparations'
+title: 'restext://Common_302'
+layout: 'narration'
+nodes:
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    - type: 'assign'
+      var: 'playtxt'
+      expr: '"restext://Common_107"'
+  - match: 3
+    nodes:
+    - type: 'assign'
+      var: 'playtxt'
+      expr: '"restext://Common_108"'
+  - match: 4
+    nodes:
+    - type: 'assign'
+      var: 'playtxt'
+      expr: '"restext://Common_109"'
+  - match: 5
+    nodes:
+    - type: 'assign'
+      var: 'playtxt'
+      expr: '"restext://Common_110"'
+  default:
+  - type: 'assign'
+    var: 'playtxt'
+    expr: '"restext://Common_107"'
+- type: 'text'
+  value: 'restext://ScenarioBox_FOTU_001'
+- type: 'break'
+  style: 'paragraph'
+- type: 'image'
+  asset: 'icon://scenariobox3d_fear'
+  size: '200'
+  align: 'center'
+- type: 'break'
+- type: 'text'
+  value: 'restext://ScenarioBox_FOTU_002'
+- type: 'break'
+  style: 'paragraph'
+- type: 'link'
+  label: 'restext://Common_320'
+  target: 'Prologue-FOTU' # ./00182-Prologue-FOTU.mws.yaml
+  snapshot: true

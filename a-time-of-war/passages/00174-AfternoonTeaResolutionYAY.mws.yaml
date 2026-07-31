@@ -1,0 +1,100 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:18652
+---
+format: 'mws/0.4'
+passage_id: 'AfternoonTeaResolutionYAY'
+# ../en-US.restext:1487 | "A Destructive Success"
+title: 'restext://AfternoonTeaResolutionYAY_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:18659
+- type: 'conditional'
+  # ../en-US.restext:27 | "Outpost"
+  if: 'teaopt == "restext://Common_023"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:18661
+  - type: 'assign'
+    var: 'wardestroy'
+    expr: '2'
+  # ../.source/ATimeofWar_Eng_v8.cs:18662
+  - type: 'assign'
+    var: 'sabpage'
+    expr: '8'
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:18666
+  - type: 'assign'
+    var: 'wardestroy'
+    expr: '1'
+  # ../.source/ATimeofWar_Eng_v8.cs:18667
+  - type: 'assign'
+    var: 'sabpage'
+    expr: '5'
+# ../.source/ATimeofWar_Eng_v8.cs:18670
+- type: 'text'
+  # ../en-US.restext:1488 | "The {teaopt} was no match..."
+  value: 'restext://AfternoonTeaResolutionYAY_002'
+# ../.source/ATimeofWar_Eng_v8.cs:18677
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:18679
+- type: 'conditional'
+  # ../en-US.restext:28 | "Barracks"
+  if: 'teaopt == "restext://Common_024"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:18681
+  - type: 'text'
+    # ../en-US.restext:1489 | "With minimal casualties, ..."
+    value: 'restext://AfternoonTeaResolutionYAY_003'
+  # ../.source/ATimeofWar_Eng_v8.cs:18683
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:18686
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:18690
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  target: 'MartialPre3' # ./00295-MartialPre3.mws.yaml
+  # ../en-US.restext:182 | "Close"
+  okay: 'restext://Common_178'
+  snapshot: true
+  header:
+  # ../.source/ATimeofWar_Eng_v8.cs:18704
+  - type: 'image'
+    asset: 'image://setup/AngryMob_Icon'
+    style: 'setup-image'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:18707
+  - type: 'conditional'
+    conditions:
+    - if: 'players < 4'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:18707
+      - type: 'text'
+        # ../en-US.restext:1490 | "Move the {icon:angrymob_i..."
+        value: 'restext://AfternoonTeaResolutionYAY_004'
+    - if: 'players > 3'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:18707
+      - type: 'text'
+        # ../en-US.restext:1491 | "Move the {icon:angrymob_i..."
+        value: 'restext://AfternoonTeaResolutionYAY_005'
+  # ../.source/ATimeofWar_Eng_v8.cs:18724
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:18726
+  - type: 'text'
+    # ../en-US.restext:1492 | "All players must discard ..."
+    value: 'restext://AfternoonTeaResolutionYAY_006'
+  # ../.source/ATimeofWar_Eng_v8.cs:18727
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:18729
+  - type: 'conditional'
+    if: 'players > 2'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:18731
+    - type: 'text'
+      # ../en-US.restext:1493 | "All players who voted **N..."
+      value: 'restext://AfternoonTeaResolutionYAY_007'

@@ -1,0 +1,23 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:27181
+---
+format: 'mws/0.4'
+passage_id: 'MartialPre3'
+tags:
+- 'TEMP'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:27188
+- type: 'section'
+  style: 'panel'
+  content:
+  - type: 'text'
+    # ../en-US.restext:2232 | "The Middle Years of the S..."
+    value: 'restext://MartialPre3_001'
+- type: 'checkpoint'
+  id: 'round_5_complete'
+  display: 'Round 5'
+- type: 'link'
+  # ../en-US.restext:60 | "Complete all End of Round..."
+  label: 'restext://Common_056'
+  target: 'Martial3' # ./00036-Martial3.mws.yaml
+  snapshot: true

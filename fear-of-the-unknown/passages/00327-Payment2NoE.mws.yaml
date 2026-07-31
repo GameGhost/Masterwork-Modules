@@ -1,0 +1,50 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:34632
+---
+format: 'mws/0.4'
+passage_id: 'Payment2NoE'
+# ../en-US.restext:210 | "Premature End"
+title: 'restext://Common_206'
+tags:
+- 'format'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:34642
+- type: 'text'
+  # ../en-US.restext:225 | "**Scribbled Note - {nameE..."
+  value: 'restext://Common_221'
+# ../.source/FearoftheUnknown_Eng_v15.cs:34650
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:34652
+- type: 'text'
+  # ../en-US.restext:211 | "My refusal will most cert..."
+  value: 'restext://Common_207'
+# ../.source/FearoftheUnknown_Eng_v15.cs:34654
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:34656
+- type: 'text'
+  # ../en-US.restext:212 | "A pox on my family! They ..."
+  value: 'restext://Common_208'
+# ../.source/FearoftheUnknown_Eng_v15.cs:34658
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:34662
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: 'Payment2Hub' # ./00316-Payment2Hub.mws.yaml
+  # ../en-US.restext:275 | "Close"
+  okay: 'restext://Common_271'
+  snapshot: true
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:34677
+  - type: 'image'
+    asset: 'image://setup/Self'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:34680
+  - type: 'text'
+    # ../en-US.restext:213 | "Return your **Self** piec..."
+    value: 'restext://Common_209'

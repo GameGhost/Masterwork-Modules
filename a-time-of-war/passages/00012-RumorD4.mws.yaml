@@ -1,0 +1,91 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:2440
+---
+format: 'mws/0.4'
+passage_id: 'RumorD4'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:2445
+- type: 'text'
+  # ../en-US.restext:180 | "**Carefully pick up this ..."
+  value: 'restext://Common_176'
+# ../.source/ATimeofWar_Eng_v8.cs:2448
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:2453
+- type: 'popup'
+  # ../en-US.restext:181 | "Once you are ready, click..."
+  label: 'restext://Common_177'
+  layout: 'reveal'
+  # ../en-US.restext:182 | "Close"
+  cancel: 'restext://Common_178'
+  snapshot: true
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:2469
+  - type: 'text'
+    # ../en-US.restext:377 | "\"Down with the Monarchy!..."
+    value: 'restext://RumorD4_001'
+  # ../.source/ATimeofWar_Eng_v8.cs:2472
+  - type: 'let'
+    var: '_rnd_RumorD4_0'
+    # ../en-US.restext:378 | RumorD4_002 | "My intrusion was met with..."
+    # ../en-US.restext:379 | RumorD4_003 | "I was quick to explain to..."
+    expr: '["restext://RumorD4_002", "restext://RumorD4_003"].shuffled("RumorD4_0")[0]'
+  # ../.source/ATimeofWar_Eng_v8.cs:2478
+  - type: 'let'
+    var: '_rnd_RumorD4_1'
+    # ../en-US.restext:380 | RumorD4_004 | "They became especially ex..."
+    # ../en-US.restext:381 | RumorD4_005 | "After a moment of stunned..."
+    expr: '["restext://RumorD4_004", "restext://RumorD4_005"].shuffled("RumorD4_1")[0]'
+  # ../.source/ATimeofWar_Eng_v8.cs:2470
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:2472
+  - type: 'text'
+    # ../en-US.restext:382 | "{_rnd_RumorD4_0} {_rnd_Ru..."
+    value: 'restext://RumorD4_006'
+    lets:
+    - '_rnd_RumorD4_0'
+    - '_rnd_RumorD4_1'
+  # ../.source/ATimeofWar_Eng_v8.cs:2483
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:2485
+  - type: 'text'
+    # ../en-US.restext:383 | "I was able to discern one..."
+    value: 'restext://RumorD4_007'
+  # ../.source/ATimeofWar_Eng_v8.cs:2490
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:2493
+  - type: 'link'
+    # ../en-US.restext:184 | "When you have finished re..."
+    label: 'restext://Common_180'
+    target: '${RumorD4nextPsg}'
+    snapshot: true
+    onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:2507
+    - type: 'conditional'
+      if: 'RumorD4nextPsg == "" || RumorD4nextPsg == 0'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:2509
+      - type: 'assign'
+        var: 'RumorD4nextPsg'
+        expr: '["RumorIngredient", "RumorKnowledge", "RumorPitch"].shuffled("RumorD4_2")[0]'
+# ../.source/ATimeofWar_Eng_v8.cs:2454
+- type: 'switch'
+  on: 'warwinner'
+  cases:
+  # ../en-US.restext:25 | "Separatists"
+  - match: 'restext://Common_021'
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:2456
+    - type: 'assign'
+      var: 'sep'
+      expr: '"win"'
+  # ../en-US.restext:26 | "Unified Monarchists"
+  - match: 'restext://Common_022'
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:2460
+    - type: 'assign'
+      var: 'sep'
+      expr: '"lose"'

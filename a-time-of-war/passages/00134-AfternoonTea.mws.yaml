@@ -1,0 +1,68 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:14917
+---
+format: 'mws/0.4'
+passage_id: 'AfternoonTea'
+# ../en-US.restext:1112 | "Afternoon Tea"
+title: 'restext://AfternoonTea_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:14924
+- type: 'conditional'
+  if: '!bldg1'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:14926
+  - type: 'assign'
+    var: 'teaopt'
+    # ../en-US.restext:28 | "Barracks"
+    expr: '"restext://Common_024"'
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:14930
+  - type: 'assign'
+    var: 'teaopt'
+    # ../en-US.restext:27 | "Outpost"
+    expr: '"restext://Common_023"'
+# ../.source/ATimeofWar_Eng_v8.cs:14935
+- type: 'text'
+  # ../en-US.restext:6 | "**All players may again v..."
+  value: 'restext://Common_002'
+# ../.source/ATimeofWar_Eng_v8.cs:14937
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:14940
+- type: 'text'
+  # ../en-US.restext:1113 | "It was absolutely dreadfu..."
+  value: 'restext://AfternoonTea_004'
+# ../.source/ATimeofWar_Eng_v8.cs:14941
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:14943
+- type: 'text'
+  # ../en-US.restext:1114 | "What kind of aristocracy ..."
+  value: 'restext://AfternoonTea_005'
+# ../.source/ATimeofWar_Eng_v8.cs:14948
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:14950
+- type: 'text'
+  # ../en-US.restext:1115 | "However, a plan as critic..."
+  value: 'restext://AfternoonTea_006'
+# ../.source/ATimeofWar_Eng_v8.cs:14953
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:14955
+- type: 'conditional'
+  if: 'players == 2'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:14957
+  - type: 'link'
+    # ../en-US.restext:24 | "Click to continue..."
+    label: 'restext://Common_020'
+    target: '2PAfternoonBid' # ./00290-2PAfternoonBid.mws.yaml
+    snapshot: true
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:14961
+  - type: 'link'
+    # ../en-US.restext:24 | "Click to continue..."
+    label: 'restext://Common_020'
+    target: 'AfternoonTeab' # ./00289-AfternoonTeab.mws.yaml
+    snapshot: true

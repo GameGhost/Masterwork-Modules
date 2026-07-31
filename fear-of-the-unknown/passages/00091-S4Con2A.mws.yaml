@@ -1,0 +1,203 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:11958
+---
+format: 'mws/0.4'
+passage_id: 'S4Con2A'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:11960
+- type: 'conditional'
+  if: 'pay == 1'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:11964
+  - type: 'text'
+    # ../en-US.restext:1001 | "**Success**"
+    value: 'restext://S4Con2A_006'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:11966
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:11970
+  - type: 'text'
+    # ../en-US.restext:1006 | "**Letter from {tempid} -*..."
+    value: 'restext://S4Con2A_011'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:11978
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:11980
+  - type: 'text'
+    # ../en-US.restext:1002 | "Despite circumstantial ev..."
+    value: 'restext://S4Con2A_007'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:11981
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:11985
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:286 | "Click to continue..."
+    label: 'restext://Common_282'
+    target: '${round == 11 ? "Isolation2" : "Isolation3"}' # ./00043-Isolation2.mws.yaml, ./00044-Isolation3.mws.yaml
+    # ../en-US.restext:275 | "Close"
+    okay: 'restext://Common_271'
+    snapshot: true
+    header:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:12106
+    - type: 'image'
+      asset: 'image://setup/MFWlogo'
+      style: 'setup-image'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:12109
+    - type: 'text'
+      # ../en-US.restext:279 | "Nothing happens."
+      value: 'restext://Common_275'
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:11990
+  - type: 'switch'
+    on: 'trial'
+    cases:
+    - match: 0
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:11994
+      - type: 'text'
+        # ../en-US.restext:1001 | "**Success**"
+        value: 'restext://S4Con2A_006'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:11996
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:12000
+      - type: 'text'
+        # ../en-US.restext:997 | "**Letter from {tempid}-**..."
+        value: 'restext://S4Con2A_002'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:12008
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:12010
+      - type: 'text'
+        # ../en-US.restext:1002 | "Despite circumstantial ev..."
+        value: 'restext://S4Con2A_007'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:12011
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:12015
+      - type: 'popup'
+        layout: 'setup'
+        # ../en-US.restext:286 | "Click to continue..."
+        label: 'restext://Common_282'
+        target: '${round == 11 ? "Isolation2" : "Isolation3"}' # ./00043-Isolation2.mws.yaml, ./00044-Isolation3.mws.yaml
+        # ../en-US.restext:275 | "Close"
+        okay: 'restext://Common_271'
+        snapshot: true
+        header:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:12129
+        - type: 'image'
+          asset: 'image://setup/MFWlogo'
+          style: 'setup-image'
+        content:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:12132
+        - type: 'text'
+          # ../en-US.restext:279 | "Nothing happens."
+          value: 'restext://Common_275'
+    - match: 1
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:12021
+      - type: 'text'
+        # ../en-US.restext:996 | "**Shameful Display**"
+        value: 'restext://S4Con2A_001'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:12023
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:12027
+      - type: 'text'
+        # ../en-US.restext:997 | "**Letter from {tempid}-**..."
+        value: 'restext://S4Con2A_002'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:12035
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:12037
+      - type: 'text'
+        # ../en-US.restext:1003 | "You should have seen the ..."
+        value: 'restext://S4Con2A_008'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:12040
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:12042
+      - type: 'text'
+        # ../en-US.restext:1004 | "We are dealing with the s..."
+        value: 'restext://S4Con2A_009'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:12043
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:12047
+      - type: 'popup'
+        layout: 'setup'
+        # ../en-US.restext:286 | "Click to continue..."
+        label: 'restext://Common_282'
+        target: '${round == 11 ? "Isolation2" : "Isolation3"}' # ./00043-Isolation2.mws.yaml, ./00044-Isolation3.mws.yaml
+        # ../en-US.restext:275 | "Close"
+        okay: 'restext://Common_271'
+        snapshot: true
+        header:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:12152
+        - type: 'image'
+          asset: 'image://setup/Creepy_Icon'
+          style: 'setup-image'
+        content:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:12155
+        - type: 'text'
+          # ../en-US.restext:1005 | "You **lose 1VP** and **ga..."
+          value: 'restext://S4Con2A_010'
+    default:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:12053
+    - type: 'text'
+      # ../en-US.restext:996 | "**Shameful Display**"
+      value: 'restext://S4Con2A_001'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:12055
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:12059
+    - type: 'text'
+      # ../en-US.restext:997 | "**Letter from {tempid}-**..."
+      value: 'restext://S4Con2A_002'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:12067
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:12069
+    - type: 'text'
+      # ../en-US.restext:998 | "My representation was eas..."
+      value: 'restext://S4Con2A_003'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:12072
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:12074
+    - type: 'text'
+      # ../en-US.restext:999 | "Ultimately, the blasted d..."
+      value: 'restext://S4Con2A_004'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:12075
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:12079
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:286 | "Click to continue..."
+      label: 'restext://Common_282'
+      target: '${round == 11 ? "Isolation2" : "Isolation3"}' # ./00043-Isolation2.mws.yaml, ./00044-Isolation3.mws.yaml
+      # ../en-US.restext:275 | "Close"
+      okay: 'restext://Common_271'
+      snapshot: true
+      header:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:12186
+      - type: 'image'
+        asset: 'image://setup/ScoreTrackMarker'
+        style: 'setup-image'
+      content:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:12193
+      - type: 'let'
+        var: '_rnd_S4Con2A_0'
+        expr: 'rand_between(1, 2, "S4Con2A_0")'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:12187
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:12189
+      - type: 'text'
+        # ../en-US.restext:1000 | "You **lose {_rnd_S4Con2A_..."
+        value: 'restext://S4Con2A_005'
+        lets:
+        - '_rnd_S4Con2A_0'

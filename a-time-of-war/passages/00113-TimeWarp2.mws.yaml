@@ -1,0 +1,134 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:13400
+---
+format: 'mws/0.4'
+passage_id: 'TimeWarp2'
+# ../en-US.restext:1000 | "Time Shifts Naturally"
+title: 'restext://TimeWarp2_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:13407
+- type: 'text'
+  # ../en-US.restext:1001 | "Whether my cousins and I ..."
+  value: 'restext://TimeWarp2_002'
+# ../.source/ATimeofWar_Eng_v8.cs:13410
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:13412
+- type: 'text'
+  # ../en-US.restext:238 | "The sky cast a crimson gl..."
+  value: 'restext://Common_234'
+# ../.source/ATimeofWar_Eng_v8.cs:13414
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:13418
+- type: 'popup'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  layout: 'reveal'
+  # ../en-US.restext:182 | "Close"
+  cancel: 'restext://Common_178'
+  snapshot: true
+  header:
+  # ../.source/ATimeofWar_Eng_v8.cs:13500
+  - type: 'image'
+    asset: 'image://setup/GainServantFromLost'
+    style: 'setup-image'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:13447
+  - type: 'assign'
+    var: 'twcode'
+    expr: '[17, 18, 19, 20, 21, 22]'
+  # ../.source/ATimeofWar_Eng_v8.cs:13448
+  - type: 'switch'
+    on: 'cont'
+    cases:
+    - match: 17
+      nodes:
+      # ../.source/ATimeofWar_Eng_v8.cs:13450
+      - type: 'assign'
+        var: 'twcode'
+        expr: 'twcode.except(17)'
+    - match: 18
+      nodes:
+      # ../.source/ATimeofWar_Eng_v8.cs:13454
+      - type: 'assign'
+        var: 'twcode'
+        expr: 'twcode.except(18)'
+    - match: 19
+      nodes:
+      # ../.source/ATimeofWar_Eng_v8.cs:13458
+      - type: 'assign'
+        var: 'twcode'
+        expr: 'twcode.except(19)'
+    - match: 20
+      nodes:
+      # ../.source/ATimeofWar_Eng_v8.cs:13462
+      - type: 'assign'
+        var: 'twcode'
+        expr: 'twcode.except(20)'
+    - match: 21
+      nodes:
+      # ../.source/ATimeofWar_Eng_v8.cs:13466
+      - type: 'assign'
+        var: 'twcode'
+        expr: 'twcode.except(21)'
+    - match: 22
+      nodes:
+      # ../.source/ATimeofWar_Eng_v8.cs:13470
+      - type: 'assign'
+        var: 'twcode'
+        expr: 'twcode.except(22)'
+  # ../.source/ATimeofWar_Eng_v8.cs:13472
+  - type: 'assign'
+    var: 'twcode'
+    expr: 'twcode.shuffled("TimeWarp2_0")'
+  # ../.source/ATimeofWar_Eng_v8.cs:13473
+  - type: 'assign'
+    var: 'cont'
+    expr: 'twcode[0]'
+  # ../.source/ATimeofWar_Eng_v8.cs:13445
+  - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:13474
+  - type: 'conditional'
+    if: 'rumor2 == "visited"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:13476
+    - type: 'section'
+      style: 'panel'
+      content: []
+    - type: 'link'
+      # ../en-US.restext:169 | "Continue"
+      label: 'restext://Common_165'
+      target: 'OldManToken' # ./00099-OldManToken.mws.yaml
+      snapshot: true
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:13481
+    - type: 'conditional'
+      if: 'stasis == "yes"'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:13483
+      - type: 'section'
+        style: 'panel'
+        content: []
+      - type: 'link'
+        # ../en-US.restext:169 | "Continue"
+        label: 'restext://Common_165'
+        target: 'Warning3time' # ./00060-Warning3time.mws.yaml
+        snapshot: true
+      else:
+      # ../.source/ATimeofWar_Eng_v8.cs:13489
+      - type: 'section'
+        style: 'panel'
+        content: []
+      - type: 'link'
+        # ../en-US.restext:169 | "Continue"
+        label: 'restext://Common_165'
+        target: 'Warning3' # ./00059-Warning3.mws.yaml
+        snapshot: true
+  # ../.source/ATimeofWar_Eng_v8.cs:13501
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:13505
+  - type: 'text'
+    # ../en-US.restext:1002 | "**All players retrieve AL..."
+    value: 'restext://TimeWarp2_003'

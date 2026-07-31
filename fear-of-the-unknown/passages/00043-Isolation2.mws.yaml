@@ -1,0 +1,150 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:6755
+---
+format: 'mws/0.4'
+passage_id: 'Isolation2'
+# ../en-US.restext:124 | "Walled City"
+title: 'restext://Common_120'
+# ../en-US.restext:151 | "Middle Years"
+subtitle: 'restext://Common_147'
+tags:
+- 'HUB'
+layout: 'hub'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:6762
+- type: 'assign'
+  var: 'round'
+  expr: '11'
+# ../.source/FearoftheUnknown_Eng_v15.cs:6767
+- type: 'section'
+  # ../en-US.restext:125 | "{icon:storybooktoken} **V..."
+  title: 'restext://Common_121'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6778
+  - type: 'text'
+    # ../en-US.restext:126 | "As a registered citizen w..."
+    value: 'restext://Common_122'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6781
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6783
+  - type: 'text'
+    # ../en-US.restext:127 | "You MUST place your **Sel..."
+    value: 'restext://Common_123'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6790
+  - type: 'link'
+    # ../en-US.restext:128 | "click here to complete ve..."
+    label: 'restext://Common_124'
+    target: 'IsoIdentificationSignIn' # ./00211-IsoIdentificationSignIn.mws.yaml
+    snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6792
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6796
+  - type: 'text'
+    # ../en-US.restext:129 | "_(If you have not verifie..."
+    value: 'restext://Common_125'
+# ../.source/FearoftheUnknown_Eng_v15.cs:6804
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:6808
+- type: 'section'
+  # ../en-US.restext:115 | "{icon:storybooktoken} **B..."
+  title: 'restext://Common_111'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6818
+  - type: 'text'
+    # ../en-US.restext:116 | "Once per round, each play..."
+    value: 'restext://Common_112'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6837
+  - type: 'link'
+    # ../en-US.restext:117 | "click here for the conseq..."
+    label: 'restext://Common_113'
+    target: 'SmugConsequence' # ./00090-SmugConsequence.mws.yaml
+    snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6838
+  - type: 'text'
+    value: '.'
+# ../.source/FearoftheUnknown_Eng_v15.cs:6840
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:6845
+- type: 'section'
+  # ../en-US.restext:66 | "**The Church**"
+  title: 'restext://Common_062'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6853
+  - type: 'link'
+    # ../en-US.restext:67 | "Click here"
+    label: 'restext://Common_063'
+    target: 'FOTU-Church' # ./00352-FOTU-Church.mws.yaml
+    snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6854
+  - type: 'text'
+    # ../en-US.restext:68 | " for an explanation of th..."
+    value: 'restext://Common_064'
+# ../.source/FearoftheUnknown_Eng_v15.cs:6857
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:6861
+- type: 'section'
+  # ../en-US.restext:714 | "**The Experiment**"
+  title: 'restext://Isolation2_004'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6869
+  - type: 'text'
+    # ../en-US.restext:715 | "Anytime a player completes "
+    value: 'restext://Isolation2_005'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6872
+  - type: 'switch'
+    on: 'ex'
+    cases:
+    - match: 'bio'
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:6874
+      - type: 'text'
+        # ../en-US.restext:717 | "**a Biology**"
+        value: 'restext://Isolation2_007'
+    - match: 'chem'
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:6878
+      - type: 'text'
+        # ../en-US.restext:718 | "**a Chemistry**"
+        value: 'restext://Isolation2_008'
+    default:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:6882
+    - type: 'text'
+      # ../en-US.restext:716 | "**an Engineering**"
+      value: 'restext://Isolation2_006'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6884
+  - type: 'text'
+    # ../en-US.restext:719 | " **Experiment**, that pla..."
+    value: 'restext://Isolation2_009'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6890
+  - type: 'conditional'
+    if: 'players >= 3'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:6894
+    - type: 'text'
+      # ../en-US.restext:720 | "_Only 1 token can be coll..."
+      value: 'restext://Isolation2_010'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6897
+  - type: 'conditional'
+    if: 'players == 2'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:6899
+    - type: 'text'
+      # ../en-US.restext:721 | "The player who gains the ..."
+      value: 'restext://Isolation2_011'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6912
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6916
+  - type: 'link'
+    # ../en-US.restext:173 | "Click here at the end of ..."
+    label: 'restext://Common_169'
+    target: 'SmugEvent2' # ./00094-SmugEvent2.mws.yaml
+    snapshot: true

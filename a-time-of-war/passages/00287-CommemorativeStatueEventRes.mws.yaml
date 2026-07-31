@@ -1,0 +1,89 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:26703
+---
+format: 'mws/0.4'
+passage_id: 'CommemorativeStatueEventRes'
+# ../en-US.restext:2188 | "Bid Resolved"
+title: 'restext://CommemorativeStatueEventRes_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:26713
+- type: 'text'
+  # ../en-US.restext:2189 | "**Choose the name of the ..."
+  value: 'restext://CommemorativeStatueEventRes_002'
+# ../.source/ATimeofWar_Eng_v8.cs:26715
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:26718
+- type: 'link'
+  label: '{nameA}'
+  target: 'CommemorativeStatueEventResb' # ./00288-CommemorativeStatueEventResb.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/ATimeofWar_Eng_v8.cs:26751
+  - type: 'assign'
+    var: 'ATOWStatue'
+    expr: 'nameA'
+# ../.source/ATimeofWar_Eng_v8.cs:26719
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:26722
+- type: 'link'
+  label: '{nameB}'
+  target: 'CommemorativeStatueEventResb' # ./00288-CommemorativeStatueEventResb.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/ATimeofWar_Eng_v8.cs:26758
+  - type: 'assign'
+    var: 'ATOWStatue'
+    expr: 'nameB'
+# ../.source/ATimeofWar_Eng_v8.cs:26723
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:26725
+- type: 'conditional'
+  if: 'players > 2'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26728
+  - type: 'link'
+    label: '{nameC}'
+    target: 'CommemorativeStatueEventResb' # ./00288-CommemorativeStatueEventResb.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:26765
+    - type: 'assign'
+      var: 'ATOWStatue'
+      expr: 'nameC'
+  # ../.source/ATimeofWar_Eng_v8.cs:26729
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:26732
+- type: 'conditional'
+  if: 'players > 3'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26735
+  - type: 'link'
+    label: '{nameD}'
+    target: 'CommemorativeStatueEventResb' # ./00288-CommemorativeStatueEventResb.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:26772
+    - type: 'assign'
+      var: 'ATOWStatue'
+      expr: 'nameD'
+  # ../.source/ATimeofWar_Eng_v8.cs:26736
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:26739
+- type: 'conditional'
+  if: 'players > 4'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26742
+  - type: 'link'
+    label: '{nameE}'
+    target: 'CommemorativeStatueEventResb' # ./00288-CommemorativeStatueEventResb.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:26779
+    - type: 'assign'
+      var: 'ATOWStatue'
+      expr: 'nameE'

@@ -1,0 +1,85 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:10551
+---
+format: 'mws/0.4'
+passage_id: 'CheckWitches2'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:10556
+- type: 'text'
+  # ../en-US.restext:45 | "**Carefully pick up this ..."
+  value: 'restext://Common_041'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10559
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10565
+- type: 'popup'
+  # ../en-US.restext:46 | "Once you are ready, click..."
+  label: 'restext://Common_042'
+  layout: 'reveal'
+  # ../en-US.restext:275 | "Close"
+  cancel: 'restext://Common_271'
+  snapshot: true
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10574
+  - type: 'text'
+    # ../en-US.restext:47 | "**The Rumor Is...**"
+    value: 'restext://Common_043'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10576
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10578
+  - type: 'text'
+    # ../en-US.restext:48 | "Using both my physical ch..."
+    value: 'restext://Common_044'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10583
+  - type: 'switch'
+    on: 'rum'
+    cases:
+    - match: 1
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:10585
+      - type: 'text'
+        # ../en-US.restext:887 | "**{nameA} hexing the {witA2}**"
+        value: 'restext://CheckWitches2_002'
+    - match: 2
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:10591
+      - type: 'text'
+        # ../en-US.restext:888 | "**{nameB} hexing the {witB2}**"
+        value: 'restext://CheckWitches2_003'
+    - match: 3
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:10597
+      - type: 'text'
+        # ../en-US.restext:889 | "**{nameC} hexing the {witC2}**"
+        value: 'restext://CheckWitches2_004'
+    - match: 4
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:10603
+      - type: 'text'
+        # ../en-US.restext:890 | "**{nameD} hexing the {witD2}**"
+        value: 'restext://CheckWitches2_005'
+    - match: 5
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:10609
+      - type: 'text'
+        # ../en-US.restext:891 | "**{nameE} hexing the {witE2}**"
+        value: 'restext://CheckWitches2_006'
+    default:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10615
+    - type: 'text'
+      # ../en-US.restext:886 | "**{wsuspect} hexing the {..."
+      value: 'restext://CheckWitches2_001'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10620
+  - type: 'text'
+    # ../en-US.restext:49 | " late one evening. I offe..."
+    value: 'restext://Common_045'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10623
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10625
+  - type: 'link'
+    # ../en-US.restext:286 | "Click to continue..."
+    label: 'restext://Common_282'
+    target: 'Foreign2' # ./00039-Foreign2.mws.yaml
+    snapshot: true

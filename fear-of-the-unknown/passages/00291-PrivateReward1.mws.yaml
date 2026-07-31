@@ -1,0 +1,98 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:32295
+---
+format: 'mws/0.4'
+passage_id: 'PrivateReward1'
+# ../en-US.restext:2368 | "Junkyard Scrap"
+title: 'restext://PrivateReward1_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:32305
+- type: 'text'
+  # ../en-US.restext:2369 | "**Journal Entry: {tempnam..."
+  value: 'restext://PrivateReward1_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32311
+- type: 'include_passage'
+  target: 'date1a' # ./00207-date1a.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:32315
+- type: 'assign'
+  var: 'creepcount'
+  expr: 'creepcount + 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32316
+- type: 'assign'
+  var: 'pripg'
+  expr: '1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32314
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32318
+- type: 'text'
+  # ../en-US.restext:2370 | "\"What a joy it is to see..."
+  value: 'restext://PrivateReward1_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32322
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32324
+- type: 'text'
+  # ../en-US.restext:2371 | "I was stunned by the insi..."
+  value: 'restext://PrivateReward1_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32328
+- type: 'conditional'
+  # ../en-US.restext:266 | "The Butcher"
+  if: 'warden == "restext://Common_262"'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:32330
+  - type: 'text'
+    # ../en-US.restext:2373 | "her cleaver into the air ..."
+    value: 'restext://PrivateReward1_006'
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:32336
+  - type: 'text'
+    # ../en-US.restext:2372 | "his hammer and pounded it..."
+    value: 'restext://PrivateReward1_005'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32338
+- type: 'text'
+  # ../en-US.restext:2374 | " \"Your fate is sealed an..."
+  value: 'restext://PrivateReward1_007'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32341
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32343
+- type: 'text'
+  # ../en-US.restext:2375 | "It was then that I was of..."
+  value: 'restext://PrivateReward1_008'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32346
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32348
+- type: 'text'
+  # ../en-US.restext:2376 | "Had I truly become a mons..."
+  value: 'restext://PrivateReward1_009'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32352
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32356
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:309 | "Click to return..."
+  label: 'restext://Common_305'
+  target: '${round == 17 ? "Privatized2" : "Privatized3"}' # ./00047-Privatized2.mws.yaml, ./00048-Privatized3.mws.yaml
+  # ../en-US.restext:275 | "Close"
+  okay: 'restext://Common_271'
+  snapshot: true
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:32370
+  - type: 'image'
+    asset: 'image://setup/EstateUpgradeBack3'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:32373
+  - type: 'text'
+    # ../en-US.restext:2377 | "Draw the top 2 Estate Upg..."
+    value: 'restext://PrivateReward1_010'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:32374
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:32376
+  - type: 'text'
+    # ../en-US.restext:2378 | "Build 1 of them at no cos..."
+    value: 'restext://PrivateReward1_011'

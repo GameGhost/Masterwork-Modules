@@ -1,0 +1,34 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:35080
+---
+format: 'mws/0.4'
+passage_id: 'LiberalTaxes1'
+# ../en-US.restext:2530 | "Choose"
+title: 'restext://LiberalTaxes1_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:35088
+- type: 'text'
+  # ../en-US.restext:2531 | "In turn order, **for ever..."
+  value: 'restext://LiberalTaxes1_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:35107
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:35109
+- type: 'text'
+  # ../en-US.restext:2532 | "Once all players have pai..."
+  value: 'restext://LiberalTaxes1_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:35111
+- type: 'conditional'
+  if: 'creature == 2'
+  then:
+  - type: 'link'
+    # ../en-US.restext:2533 | "click here to continue..."
+    label: 'restext://LiberalTaxes1_004'
+    target: 'TaxesEventGood' # ./00264-TaxesEventGood.mws.yaml
+    snapshot: true
+  else:
+  - type: 'link'
+    # ../en-US.restext:2533 | "click here to continue..."
+    label: 'restext://LiberalTaxes1_004'
+    target: 'LiberalTaxes2' # ./00102-LiberalTaxes2.mws.yaml
+    snapshot: true

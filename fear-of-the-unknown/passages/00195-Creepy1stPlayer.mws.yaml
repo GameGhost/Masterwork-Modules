@@ -1,0 +1,80 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:22322
+---
+format: 'mws/0.4'
+passage_id: 'Creepy1stPlayer'
+# ../en-US.restext:1623 | "Excellence Distrusted"
+title: 'restext://Creepy1stPlayer_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:22334
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:22336
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB].shuffled("Creepy1stPlayer_0")[0]'
+  - match: 3
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:22340
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC].shuffled("Creepy1stPlayer_1")[0]'
+  - match: 4
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:22344
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC, nameD].shuffled("Creepy1stPlayer_2")[0]'
+  - match: 5
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:22348
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC, nameD, nameE].shuffled("Creepy1stPlayer_3")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:22350
+- type: 'assign'
+  var: 'randomname'
+  expr: 'randomplayer'
+# ../.source/FearoftheUnknown_Eng_v15.cs:22332
+- type: 'text'
+  # ../en-US.restext:1624 | "**Letter from** **{random..."
+  value: 'restext://Creepy1stPlayer_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:22359
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:22361
+- type: 'text'
+  # ../en-US.restext:1625 | "It is deplorable in the h..."
+  value: 'restext://Creepy1stPlayer_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:22368
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:22370
+- type: 'text'
+  # ../en-US.restext:1626 | "A pox on their wild super..."
+  value: 'restext://Creepy1stPlayer_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:22371
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:22375
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: 'PEWitch3Intro' # ./00216-PEWitch3Intro.mws.yaml
+  # ../en-US.restext:275 | "Close"
+  okay: 'restext://Common_271'
+  snapshot: true
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:22391
+  - type: 'image'
+    asset: 'image://setup/Creepy_Icon'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:22393
+  - type: 'text'
+    # ../en-US.restext:1627 | "The player(s) with the mo..."
+    value: 'restext://Creepy1stPlayer_005'

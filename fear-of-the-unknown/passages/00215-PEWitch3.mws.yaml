@@ -1,0 +1,169 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:25073
+---
+format: 'mws/0.4'
+passage_id: 'PEWitch3'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:25075
+- type: 'switch'
+  on: 'path4'
+  cases:
+  - match: 'PEIsolation'
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:25079
+    - type: 'text'
+      # ../en-US.restext:1812 | "**Isolation**"
+      value: 'restext://PEWitch3_004'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:25081
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:25082
+    - type: 'include_passage'
+      target: 'letter1a' # ./00205-letter1a.mws.yaml
+    # ../.source/FearoftheUnknown_Eng_v15.cs:25083
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:25085
+    - type: 'text'
+      # ../en-US.restext:1813 | "The xenophobic tendencies..."
+      value: 'restext://PEWitch3_005'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:25088
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:25092
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:286 | "Click to continue..."
+      label: 'restext://Common_282'
+      target: 'PEWitch3b' # ./00239-PEWitch3b.mws.yaml
+      # ../en-US.restext:275 | "Close"
+      okay: 'restext://Common_271'
+      snapshot: true
+      header:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:25167
+      - type: 'image'
+        asset: 'image://setup/MaladjustmentBack'
+        style: 'setup-image'
+      content:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:25171
+      - type: 'text'
+        # ../en-US.restext:1814 | "**If you** _did not_ **co..."
+        value: 'restext://PEWitch3_006'
+  - match: 'PETension'
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:25098
+    - type: 'text'
+      # ../en-US.restext:1815 | "**Exploration**"
+      value: 'restext://PEWitch3_007'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:25100
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:25101
+    - type: 'include_passage'
+      target: 'letter1a' # ./00205-letter1a.mws.yaml
+    # ../.source/FearoftheUnknown_Eng_v15.cs:25102
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:25104
+    - type: 'text'
+      # ../en-US.restext:1816 | "The push towards acceptan..."
+      value: 'restext://PEWitch3_008'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:25107
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:25111
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:286 | "Click to continue..."
+      label: 'restext://Common_282'
+      target: 'PEWitch3b' # ./00239-PEWitch3b.mws.yaml
+      # ../en-US.restext:275 | "Close"
+      okay: 'restext://Common_271'
+      snapshot: true
+      header:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:25201
+      - type: 'image'
+        asset: 'image://setup/MaladjustmentBack'
+        style: 'setup-image'
+      content:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:25205
+      - type: 'text'
+        # ../en-US.restext:1811 | "**If you completed your O..."
+        value: 'restext://PEWitch3_003'
+  - match: 'PEPrivatized'
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:25117
+    - type: 'text'
+      # ../en-US.restext:1817 | "**Agitation**"
+      value: 'restext://PEWitch3_009'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:25119
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:25120
+    - type: 'include_passage'
+      target: 'letter1a' # ./00205-letter1a.mws.yaml
+    # ../.source/FearoftheUnknown_Eng_v15.cs:25121
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:25123
+    - type: 'text'
+      # ../en-US.restext:1818 | "With the failure of gover..."
+      value: 'restext://PEWitch3_010'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:25126
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:25130
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:286 | "Click to continue..."
+      label: 'restext://Common_282'
+      target: 'PEWitch3b' # ./00239-PEWitch3b.mws.yaml
+      # ../en-US.restext:275 | "Close"
+      okay: 'restext://Common_271'
+      snapshot: true
+      header:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:25230
+      - type: 'image'
+        asset: 'image://setup/MaladjustmentBack'
+        style: 'setup-image'
+      content:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:25234
+      - type: 'text'
+        # ../en-US.restext:1814 | "**If you** _did not_ **co..."
+        value: 'restext://PEWitch3_006'
+  default:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:25138
+  - type: 'text'
+    # ../en-US.restext:1809 | "**A Calmer Mindset**"
+    value: 'restext://PEWitch3_001'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:25140
+  - type: 'break'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:25141
+  - type: 'include_passage'
+    target: 'letter1a' # ./00205-letter1a.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:25142
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:25144
+  - type: 'text'
+    # ../en-US.restext:1810 | "An inclusive economy has ..."
+    value: 'restext://PEWitch3_002'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:25147
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:25151
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:286 | "Click to continue..."
+    label: 'restext://Common_282'
+    target: 'PEWitch3b' # ./00239-PEWitch3b.mws.yaml
+    # ../en-US.restext:275 | "Close"
+    okay: 'restext://Common_271'
+    snapshot: true
+    header:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:25264
+    - type: 'image'
+      asset: 'image://setup/MaladjustmentBack'
+      style: 'setup-image'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:25268
+    - type: 'text'
+      # ../en-US.restext:1811 | "**If you completed your O..."
+      value: 'restext://PEWitch3_003'

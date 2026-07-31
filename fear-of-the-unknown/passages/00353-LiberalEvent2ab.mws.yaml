@@ -1,0 +1,91 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:35586
+---
+format: 'mws/0.4'
+passage_id: 'LiberalEvent2ab'
+# ../en-US.restext:2664 | "Bribe Resolved"
+title: 'restext://LiberalEvent2ab_001'
+tags:
+- 'revised'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:35594
+- type: 'text'
+  # ../en-US.restext:2665 | "Count up all coins offere..."
+  value: 'restext://LiberalEvent2ab_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:35604
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:35608
+- type: 'text'
+  # ../en-US.restext:278 | "**Choose:**"
+  value: 'restext://Common_274'
+# ../.source/FearoftheUnknown_Eng_v15.cs:35610
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:35613
+- type: 'popup'
+  # ../en-US.restext:2666 | "Click here if the bribe s..."
+  label: 'restext://LiberalEvent2ab_003'
+  layout: 'reveal'
+  # ../en-US.restext:275 | "Close"
+  cancel: 'restext://Common_271'
+  snapshot: true
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35624
+  - type: 'assign'
+    var: 'bribe'
+    expr: '"yes"'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35625
+  - type: 'conditional'
+    if: 'creature == 2'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:35627
+    - type: 'goto'
+      target: 'LiberalEventGood' # ./00257-LiberalEventGood.mws.yaml
+    else:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:35631
+    - type: 'switch'
+      on: 'lib'
+      cases:
+      - match: 'taxes'
+        nodes:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:35633
+        - type: 'goto'
+          target: 'LiberalEventA' # ./00086-LiberalEventA.mws.yaml
+      - match: 'nationalist'
+        nodes:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:35637
+        - type: 'goto'
+          target: 'LiberalEventB' # ./00087-LiberalEventB.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:35614
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:35617
+- type: 'link'
+  # ../en-US.restext:2667 | "Click here if the bribe c..."
+  label: 'restext://LiberalEvent2ab_004'
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35645
+  - type: 'assign'
+    var: 'bribe'
+    expr: '"no"'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35646
+  - type: 'conditional'
+    if: 'creature == 2'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:35648
+    - type: 'goto'
+      target: 'LiberalEventGood' # ./00257-LiberalEventGood.mws.yaml
+    else:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:35652
+    - type: 'conditional'
+      if: 'LiberalEvent2abnextpsg == "" || LiberalEvent2abnextpsg == 0'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:35654
+      - type: 'assign'
+        var: 'LiberalEvent2abnextpsg'
+        expr: '["LiberalEventA", "LiberalEventB"].shuffled("LiberalEvent2ab_0")[0]'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:35656
+    - type: 'goto'
+      target: '${LiberalEvent2abnextpsg}'

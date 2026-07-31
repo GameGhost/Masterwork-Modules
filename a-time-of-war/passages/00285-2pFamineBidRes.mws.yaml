@@ -1,0 +1,71 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:26552
+---
+format: 'mws/0.4'
+passage_id: '2pFamineBidRes'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:26557
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:211 | "Accept"
+  okay: 'restext://Common_207'
+  header:
+  # ../.source/ATimeofWar_Eng_v8.cs:26561
+  - type: 'image'
+    asset: 'image://setup/ScoreTrackMarker'
+    style: 'setup-image'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:26563
+  - type: 'text'
+    # ../en-US.restext:2172 | "The player who bid the mo..."
+    value: 'restext://_2pFamineBidRes_001'
+  # ../.source/ATimeofWar_Eng_v8.cs:26573
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:26575
+  - type: 'text'
+    # ../en-US.restext:2173 | "They then make the follow..."
+    value: 'restext://_2pFamineBidRes_002'
+# ../.source/ATimeofWar_Eng_v8.cs:26577
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:26581
+- type: 'text'
+  # ../en-US.restext:2174 | "**Bid Outcome**"
+  value: 'restext://_2pFamineBidRes_003'
+# ../.source/ATimeofWar_Eng_v8.cs:26583
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:26587
+- type: 'text'
+  # ../en-US.restext:2175 | "**Please choose whether t..."
+  value: 'restext://_2pFamineBidRes_004'
+# ../.source/ATimeofWar_Eng_v8.cs:26589
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:26592
+- type: 'link'
+  # ../en-US.restext:20 | "We chose the meat. (Yay!)"
+  label: 'restext://Common_016'
+  target: 'ATOW-FamineEventYes' # ./00237-ATOW-FamineEventYes.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/ATimeofWar_Eng_v8.cs:26602
+  - type: 'assign'
+    var: 'famine'
+    expr: '"meat"'
+# ../.source/ATimeofWar_Eng_v8.cs:26593
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:26596
+- type: 'link'
+  # ../en-US.restext:21 | "We chose empty promises. ..."
+  label: 'restext://Common_017'
+  target: 'ATOW-FamineEventNo' # ./00238-ATOW-FamineEventNo.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/ATimeofWar_Eng_v8.cs:26609
+  - type: 'assign'
+    var: 'famine'
+    # ../en-US.restext:78 | "none"
+    expr: '"restext://Common_074"'

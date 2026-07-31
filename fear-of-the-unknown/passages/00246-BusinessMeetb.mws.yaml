@@ -1,0 +1,88 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:28081
+---
+format: 'mws/0.4'
+passage_id: 'BusinessMeetb'
+# ../en-US.restext:2059 | "A Sly Investment"
+title: 'restext://BusinessMeetb_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:28091
+- type: 'text'
+  # ../en-US.restext:2060 | "**Journal Entry of {busm} -** "
+  value: 'restext://BusinessMeetb_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:28097
+- type: 'include_passage'
+  target: 'date1a' # ./00207-date1a.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:28102
+- type: 'let'
+  var: '_rnd_BusinessMeetb_0'
+  expr: '["The Count and what appeared to be several visitors sharing similar, friendly, yet distant demeanors urged me towards a sumptuous banquet table arranged as if my presence had been expected that very evening. I dined upon portions of creamed pheasant, black puddings, ostropel, and a healthy share of plum brandy. The food was so varied and rich that I was surprised that when the courses waned a hunger still remained with me.", "The Count''s attendant ushered me into the study, where the gentleman relaxed in a daychair sipping from a glass full of deep red wine. He bid me sit and we talked for many minutes as I observed the mahogany shelves that lined the room, overloaded with books that appeared so new the spines had not been cracked."].shuffled("BusinessMeetb_0")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:28100
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:28102
+- type: 'text'
+  value: '{_rnd_BusinessMeetb_0}'
+  lets:
+  - '_rnd_BusinessMeetb_0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:28103
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:28105
+- type: 'text'
+  # ../en-US.restext:2061 | "At length, the Count brou..."
+  value: 'restext://BusinessMeetb_005'
+# ../.source/FearoftheUnknown_Eng_v15.cs:28106
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:28108
+- type: 'text'
+  # ../en-US.restext:2062 | "He ventured that he had a..."
+  value: 'restext://BusinessMeetb_006'
+# ../.source/FearoftheUnknown_Eng_v15.cs:28109
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:28112
+- type: 'conditional'
+  conditions:
+  - if: 'busm == nameA'
+    then:
+    - type: 'link'
+      # ../en-US.restext:286 | "Click to continue..."
+      label: 'restext://Common_282'
+      target: 'BusMeetA' # ./00149-BusMeetA.mws.yaml
+      snapshot: true
+  - if: 'busm == nameB'
+    then:
+    - type: 'link'
+      # ../en-US.restext:286 | "Click to continue..."
+      label: 'restext://Common_282'
+      target: 'BusMeetB' # ./00148-BusMeetB.mws.yaml
+      snapshot: true
+  - if: 'busm == nameC'
+    then:
+    - type: 'link'
+      # ../en-US.restext:286 | "Click to continue..."
+      label: 'restext://Common_282'
+      target: 'BusMeetC' # ./00147-BusMeetC.mws.yaml
+      snapshot: true
+  - if: 'busm == nameD'
+    then:
+    - type: 'link'
+      # ../en-US.restext:286 | "Click to continue..."
+      label: 'restext://Common_282'
+      target: 'BusMeetD' # ./00150-BusMeetD.mws.yaml
+      snapshot: true
+  - if: 'busm == nameE'
+    then:
+    - type: 'link'
+      # ../en-US.restext:286 | "Click to continue..."
+      label: 'restext://Common_282'
+      target: 'BusMeetE' # ./00151-BusMeetE.mws.yaml
+      snapshot: true
+  else:
+  - type: 'link'
+    # ../en-US.restext:286 | "Click to continue..."
+    label: 'restext://Common_282'
+    target: 'BusMeetA' # ./00149-BusMeetA.mws.yaml
+    snapshot: true

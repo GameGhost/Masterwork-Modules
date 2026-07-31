@@ -1,0 +1,206 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:23317
+---
+format: 'mws/0.4'
+passage_id: 'journal1a'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:23323
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23325
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB].shuffled("journal1a_0")[0]'
+  - match: 3
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23329
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC].shuffled("journal1a_1")[0]'
+  - match: 4
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23333
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC, nameD].shuffled("journal1a_2")[0]'
+  - match: 5
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23337
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC, nameD, nameE].shuffled("journal1a_3")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23321
+- type: 'let'
+  var: '_rnd_journal1a_0'
+  # ../en-US.restext:1749 | journal1a_001 | "Journal Entry - "
+  # ../en-US.restext:1750 | journal1a_002 | "Journal of "
+  # ../en-US.restext:1751 | journal1a_003 | "Collected Notes - "
+  # ../en-US.restext:1752 | journal1a_004 | "Diary Entry - "
+  expr: '["restext://journal1a_001", "restext://journal1a_002", "restext://journal1a_003", "restext://journal1a_004"].shuffled("journal1a_4")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23321
+- type: 'text'
+  # ../en-US.restext:1753 | "**{_rnd_journal1a_0}**"
+  value: 'restext://journal1a_005'
+  lets:
+  - '_rnd_journal1a_0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23339
+- type: 'assign'
+  var: 'randomname'
+  expr: 'randomplayer'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23344
+- type: 'let'
+  var: '_rnd_journal1a_1'
+  expr: 'rand_between(1, 29, "journal1a_5")'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23346
+- type: 'let'
+  var: '_rnd_journal1a_2'
+  # ../en-US.restext:32 | Common_028 | "January"
+  # ../en-US.restext:33 | Common_029 | "February"
+  # ../en-US.restext:34 | Common_030 | "March"
+  # ../en-US.restext:35 | Common_031 | "April"
+  # ../en-US.restext:36 | Common_032 | "May"
+  # ../en-US.restext:37 | Common_033 | "June"
+  # ../en-US.restext:38 | Common_034 | "July"
+  # ../en-US.restext:39 | Common_035 | "August"
+  # ../en-US.restext:40 | Common_036 | "September"
+  # ../en-US.restext:41 | Common_037 | "October"
+  # ../en-US.restext:42 | Common_038 | "November"
+  # ../en-US.restext:43 | Common_039 | "December"
+  expr: '["restext://Common_028", "restext://Common_029", "restext://Common_030", "restext://Common_031", "restext://Common_032", "restext://Common_033", "restext://Common_034", "restext://Common_035", "restext://Common_036", "restext://Common_037", "restext://Common_038", "restext://Common_039"].shuffled("journal1a_6")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23348
+- type: 'switch'
+  on: 'round'
+  cases:
+  - match: 1
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23350
+    - type: 'let'
+      var: '_rnd_journal1a_3'
+      expr: 'rand_between(831, 841, "journal1a_7")'
+  - match: 2
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23354
+    - type: 'let'
+      var: '_rnd_journal1a_3'
+      expr: 'rand_between(842, 851, "journal1a_8")'
+  - match: 3
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23358
+    - type: 'let'
+      var: '_rnd_journal1a_3'
+      expr: 'rand_between(852, 862, "journal1a_9")'
+  - match: 4
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23362
+    - type: 'let'
+      var: '_rnd_journal1a_3'
+      expr: 'rand_between(863, 871, "journal1a_10")'
+  - match: 5
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23366
+    - type: 'let'
+      var: '_rnd_journal1a_3'
+      expr: 'rand_between(872, 880, "journal1a_11")'
+  - match: 6
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23370
+    - type: 'let'
+      var: '_rnd_journal1a_3'
+      expr: 'rand_between(881, 891, "journal1a_12")'
+  - match: 7
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23374
+    - type: 'let'
+      var: '_rnd_journal1a_3'
+      expr: 'rand_between(863, 871, "journal1a_13")'
+  - match: 8
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23378
+    - type: 'let'
+      var: '_rnd_journal1a_3'
+      expr: 'rand_between(872, 880, "journal1a_14")'
+  - match: 9
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23382
+    - type: 'let'
+      var: '_rnd_journal1a_3'
+      expr: 'rand_between(881, 891, "journal1a_15")'
+  - match: 10
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23386
+    - type: 'let'
+      var: '_rnd_journal1a_3'
+      expr: 'rand_between(892, 901, "journal1a_16")'
+  - match: 11
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23390
+    - type: 'let'
+      var: '_rnd_journal1a_3'
+      expr: 'rand_between(902, 911, "journal1a_17")'
+  - match: 12
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23394
+    - type: 'let'
+      var: '_rnd_journal1a_3'
+      expr: 'rand_between(912, 922, "journal1a_18")'
+  - match: 13
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23398
+    - type: 'let'
+      var: '_rnd_journal1a_3'
+      expr: 'rand_between(892, 901, "journal1a_19")'
+  - match: 14
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23402
+    - type: 'let'
+      var: '_rnd_journal1a_3'
+      expr: 'rand_between(902, 911, "journal1a_20")'
+  - match: 15
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23406
+    - type: 'let'
+      var: '_rnd_journal1a_3'
+      expr: 'rand_between(912, 922, "journal1a_21")'
+  - match: 16
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23410
+    - type: 'let'
+      var: '_rnd_journal1a_3'
+      expr: 'rand_between(892, 901, "journal1a_22")'
+  - match: 17
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23414
+    - type: 'let'
+      var: '_rnd_journal1a_3'
+      expr: 'rand_between(902, 911, "journal1a_23")'
+  - match: 18
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23418
+    - type: 'let'
+      var: '_rnd_journal1a_3'
+      expr: 'rand_between(912, 922, "journal1a_24")'
+  - match: 19
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23422
+    - type: 'let'
+      var: '_rnd_journal1a_3'
+      expr: 'rand_between(892, 901, "journal1a_25")'
+  - match: 20
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23426
+    - type: 'let'
+      var: '_rnd_journal1a_3'
+      expr: 'rand_between(902, 911, "journal1a_26")'
+  default:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:23430
+  - type: 'let'
+    var: '_rnd_journal1a_3'
+    expr: 'rand_between(912, 922, "journal1a_27")'
+- type: 'text'
+  # ../en-US.restext:1754 | "**{randomname} -** _{_rnd..."
+  value: 'restext://journal1a_006'
+  lets:
+  - '_rnd_journal1a_3'

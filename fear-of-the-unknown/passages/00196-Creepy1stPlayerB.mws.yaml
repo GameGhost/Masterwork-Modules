@@ -1,0 +1,57 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:22421
+---
+format: 'mws/0.4'
+passage_id: 'Creepy1stPlayerB'
+# ../en-US.restext:1630 | "In Support of Others"
+title: 'restext://Creepy1stPlayerB_001'
+tags:
+- 'question'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:22431
+- type: 'text'
+  # ../en-US.restext:1631 | "**Letter from** _name ill..."
+  value: 'restext://Creepy1stPlayerB_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:22443
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:22445
+- type: 'text'
+  # ../en-US.restext:1632 | "The burden of fame has fi..."
+  value: 'restext://Creepy1stPlayerB_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:22448
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:22450
+- type: 'text'
+  # ../en-US.restext:1633 | "While it vexes me to lose..."
+  value: 'restext://Creepy1stPlayerB_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:22453
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:22455
+- type: 'text'
+  # ../en-US.restext:1634 | "What a bother it is to be..."
+  value: 'restext://Creepy1stPlayerB_005'
+# ../.source/FearoftheUnknown_Eng_v15.cs:22456
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:22460
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: 'PEWitch3Intro' # ./00216-PEWitch3Intro.mws.yaml
+  # ../en-US.restext:275 | "Close"
+  okay: 'restext://Common_271'
+  snapshot: true
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:22476
+  - type: 'image'
+    asset: 'image://setup/Creepy_Icon'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:22479
+  - type: 'text'
+    # ../en-US.restext:1635 | "The player(s) with the mo..."
+    value: 'restext://Creepy1stPlayerB_006'

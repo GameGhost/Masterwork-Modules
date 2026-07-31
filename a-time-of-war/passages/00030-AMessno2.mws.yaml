@@ -1,0 +1,34 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:4463
+---
+format: 'mws/0.4'
+passage_id: 'AMessno2'
+# ../en-US.restext:10 | "No Consequence"
+title: 'restext://Common_006'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:4470
+- type: 'text'
+  # ../en-US.restext:502 | "It was a brief correspond..."
+  value: 'restext://AMessno2_002'
+# ../.source/ATimeofWar_Eng_v8.cs:4471
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:4475
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  target: 'AfternoonTea' # ./00134-AfternoonTea.mws.yaml
+  # ../en-US.restext:182 | "Close"
+  okay: 'restext://Common_178'
+  snapshot: true
+  header:
+  # ../.source/ATimeofWar_Eng_v8.cs:4490
+  - type: 'image'
+    asset: 'image://setup/ExperimentABack'
+    style: 'setup-image'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:4495
+  - type: 'text'
+    # ../en-US.restext:503 | "**Draw an Experiment card..."
+    value: 'restext://AMessno2_003'

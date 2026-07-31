@@ -1,0 +1,113 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:29259
+---
+format: 'mws/0.4'
+passage_id: 'LiberalEvent3b'
+# ../en-US.restext:341 | "BID"
+title: 'restext://Common_337'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:29266
+- type: 'text'
+  # ../en-US.restext:287 | "Special Event"
+  value: 'restext://Common_283'
+  style: 'special-event'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29267
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29268
+- type: 'text'
+  # ../en-US.restext:137 | "All players take all thei..."
+  value: 'restext://Common_133'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29270
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29272
+- type: 'text'
+  # ../en-US.restext:2140 | "Once all players are read..."
+  value: 'restext://LiberalEvent3b_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29273
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29276
+- type: 'text'
+  # ../en-US.restext:2141 | "Players are bidding for t..."
+  value: 'restext://LiberalEvent3b_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29282
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29286
+- type: 'text'
+  # ../en-US.restext:2142 | "**Choose the scientific d..."
+  value: 'restext://LiberalEvent3b_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29291
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29295
+- type: 'text'
+  # ../en-US.restext:2143 | "**Name the Program**."
+  value: 'restext://LiberalEvent3b_005'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29298
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29302
+- type: 'text'
+  # ../en-US.restext:344 | "**Gain 3VP**."
+  value: 'restext://Common_340'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29305
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29309
+- type: 'text'
+  # ../en-US.restext:345 | "_(Ties are broken by the ..."
+  value: 'restext://Common_341'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29312
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29314
+- type: 'text'
+  # ../en-US.restext:2144 | "Only the player who wins ..."
+  value: 'restext://LiberalEvent3b_006'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29316
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29320
+- type: 'popup'
+  layout: 'countdown_instructions'
+  # ../en-US.restext:347 | "Click to start the bid..."
+  label: 'restext://Common_343'
+  content:
+  - type: 'text'
+    # ../en-US.restext:348 | "Click on the 'Start Biddi..."
+    value: 'restext://Common_344'
+  - type: 'break'
+    style: 'paragraph'
+  - type: 'text'
+    # ../en-US.restext:290 | "When you see the word 'RE..."
+    value: 'restext://Common_286'
+  - type: 'break'
+    style: 'paragraph'
+  - type: 'popup'
+    layout: 'countdown_action'
+    # ../en-US.restext:349 | "Start Bidding"
+    label: 'restext://Common_345'
+    style: 'countdown-trigger'
+    content:
+    - type: 'text'
+      # ../en-US.restext:293 | "3"
+      value: 'restext://Common_289'
+      style: 'countdown-3'
+    - type: 'text'
+      # ../en-US.restext:294 | "2"
+      value: 'restext://Common_290'
+      style: 'countdown-2'
+    - type: 'text'
+      # ../en-US.restext:295 | "1"
+      value: 'restext://Common_291'
+      style: 'countdown-1'
+    - type: 'text'
+      # ../en-US.restext:292 | "REVEAL"
+      value: 'restext://Common_288'
+      style: 'countdown-reveal'
+    # ../en-US.restext:292 | "REVEAL"
+    okay: 'restext://Common_288'
+    target: 'LiberalEvent3Res' # ./00260-LiberalEvent3Res.mws.yaml
+    snapshot: false

@@ -1,0 +1,123 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:11775
+---
+format: 'mws/0.4'
+passage_id: 'ResistEnd2'
+# ../en-US.restext:872 | "Financial Defenses"
+title: 'restext://ResistEnd2_001'
+tags:
+- 'END'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:11791
+- type: 'text'
+  # ../en-US.restext:873 | "Advanced weaponry may tur..."
+  value: 'restext://ResistEnd2_002'
+# ../.source/ATimeofWar_Eng_v8.cs:11792
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:11794
+- type: 'text'
+  # ../en-US.restext:874 | "Count up how many {warwin..."
+  value: 'restext://ResistEnd2_003'
+# ../.source/ATimeofWar_Eng_v8.cs:11809
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:11811
+- type: 'text'
+  # ../en-US.restext:875 | "Who won the war?"
+  value: 'restext://ResistEnd2_004'
+# ../.source/ATimeofWar_Eng_v8.cs:11812
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:11814
+- type: 'conditional'
+  # ../en-US.restext:26 | "Unified Monarchists"
+  if: 'warwinner == "restext://Common_022"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:11817
+  - type: 'popup'
+    layout: 'end_of_generation'
+    # ../en-US.restext:876 | "The {warwinner}"
+    label: 'restext://ResistEnd2_005'
+    target: 'MonarchReignIntro' # ./00041-MonarchReignIntro.mws.yaml
+    # ../en-US.restext:182 | "Close"
+    okay: 'restext://Common_178'
+    snapshot: true
+    content:
+    - type: 'let'
+      var: 'title'
+      # ../en-US.restext:167 | "End of Generation"
+      expr: '"restext://Common_163"'
+    - type: 'let'
+      var: 'completedRound'
+      expr: '6'
+    - type: 'text'
+      # ../en-US.restext:168 | "Remove all player pieces ..."
+      value: 'restext://Common_164'
+  # ../.source/ATimeofWar_Eng_v8.cs:11820
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:11823
+  - type: 'popup'
+    layout: 'end_of_generation'
+    # ../en-US.restext:877 | "The {warloser}"
+    label: 'restext://ResistEnd2_006'
+    target: 'PeaceIntro' # ./00042-PeaceIntro.mws.yaml
+    # ../en-US.restext:182 | "Close"
+    okay: 'restext://Common_178'
+    snapshot: true
+    content:
+    - type: 'let'
+      var: 'title'
+      # ../en-US.restext:167 | "End of Generation"
+      expr: '"restext://Common_163"'
+    - type: 'let'
+      var: 'completedRound'
+      expr: '6'
+    - type: 'text'
+      # ../en-US.restext:168 | "Remove all player pieces ..."
+      value: 'restext://Common_164'
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:11831
+  - type: 'popup'
+    layout: 'end_of_generation'
+    # ../en-US.restext:876 | "The {warwinner}"
+    label: 'restext://ResistEnd2_005'
+    target: 'PeaceIntro' # ./00042-PeaceIntro.mws.yaml
+    # ../en-US.restext:182 | "Close"
+    okay: 'restext://Common_178'
+    snapshot: true
+    content:
+    - type: 'let'
+      var: 'title'
+      # ../en-US.restext:167 | "End of Generation"
+      expr: '"restext://Common_163"'
+    - type: 'let'
+      var: 'completedRound'
+      expr: '6'
+    - type: 'text'
+      # ../en-US.restext:168 | "Remove all player pieces ..."
+      value: 'restext://Common_164'
+  # ../.source/ATimeofWar_Eng_v8.cs:11833
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:11837
+  - type: 'popup'
+    layout: 'end_of_generation'
+    # ../en-US.restext:877 | "The {warloser}"
+    label: 'restext://ResistEnd2_006'
+    target: 'MonarchReignIntro' # ./00041-MonarchReignIntro.mws.yaml
+    # ../en-US.restext:182 | "Close"
+    okay: 'restext://Common_178'
+    snapshot: true
+    content:
+    - type: 'let'
+      var: 'title'
+      # ../en-US.restext:167 | "End of Generation"
+      expr: '"restext://Common_163"'
+    - type: 'let'
+      var: 'completedRound'
+      expr: '6'
+    - type: 'text'
+      # ../en-US.restext:168 | "Remove all player pieces ..."
+      value: 'restext://Common_164'

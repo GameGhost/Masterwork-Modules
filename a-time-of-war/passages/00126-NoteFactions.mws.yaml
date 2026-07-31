@@ -1,0 +1,44 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:14404
+---
+format: 'mws/0.4'
+passage_id: 'NoteFactions'
+tags:
+- 'OLD'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:14406
+- type: 'text'
+  # ../en-US.restext:1082 | "Add a goal."
+  value: 'restext://NoteFactions_001'
+# ../.source/ATimeofWar_Eng_v8.cs:14410
+- type: 'let'
+  var: '_rnd_NoteFactions_0'
+  expr: 'rand_between(5, 6, "NoteFactions_0")'
+# ../.source/ATimeofWar_Eng_v8.cs:14407
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:14409
+- type: 'text'
+  # ../en-US.restext:1083 | "When a player has {_rnd_N..."
+  value: 'restext://NoteFactions_002'
+  lets:
+  - '_rnd_NoteFactions_0'
+# ../.source/ATimeofWar_Eng_v8.cs:14413
+- type: 'link'
+  # ../en-US.restext:1084 | "click here for a special ..."
+  label: 'restext://NoteFactions_003'
+  target: 'PackingHeat1' # ./00127-PackingHeat1.mws.yaml
+  snapshot: true
+# ../.source/ATimeofWar_Eng_v8.cs:14414
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:14416
+- type: 'text'
+  # ../en-US.restext:1085 | "The first player to compl..."
+  value: 'restext://NoteFactions_004'
+# ../.source/ATimeofWar_Eng_v8.cs:14417
+- type: 'link'
+  # ../en-US.restext:67 | "clicks here for a special..."
+  label: 'restext://Common_063'
+  target: 'PackingHeat1' # ./00127-PackingHeat1.mws.yaml
+  snapshot: true

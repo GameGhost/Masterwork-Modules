@@ -1,0 +1,177 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:27270
+---
+format: 'mws/0.4'
+passage_id: 'Paradox3b'
+# ../en-US.restext:117 | "Forward to Progress"
+title: 'restext://Common_113'
+# ../en-US.restext:207 | "Late Years"
+subtitle: 'restext://Common_203'
+tags:
+- 'revised'
+- 'added'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:27277
+- type: 'assign'
+  var: 'round'
+  expr: '12'
+# ../.source/ATimeofWar_Eng_v8.cs:27280
+- type: 'conditional'
+  if: 'timemistake == 8'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:27284
+  - type: 'section'
+    # ../en-US.restext:118 | "**Science At any Cost**"
+    title: 'restext://Common_114'
+    style: 'hub-card'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:27292
+    - type: 'text'
+      # ../en-US.restext:119 | "Ignore any {icon:angrymob..."
+      value: 'restext://Common_115'
+    # ../.source/ATimeofWar_Eng_v8.cs:27305
+    - type: 'switch'
+      on: 'warwinner'
+      cases:
+      # ../en-US.restext:26 | "Unified Monarchists"
+      - match: 'restext://Common_022'
+        nodes:
+        # ../.source/ATimeofWar_Eng_v8.cs:27307
+        - type: 'text'
+          # ../en-US.restext:121 | "**they may immediately bu..."
+          value: 'restext://Common_117'
+      # ../en-US.restext:25 | "Separatists"
+      - match: 'restext://Common_021'
+        nodes:
+        # ../.source/ATimeofWar_Eng_v8.cs:27311
+        - type: 'text'
+          # ../en-US.restext:120 | "**they may immediately ta..."
+          value: 'restext://Common_116'
+    # ../.source/ATimeofWar_Eng_v8.cs:27314
+    - type: 'text'
+      value: '.'
+  # ../.source/ATimeofWar_Eng_v8.cs:27316
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:27320
+  - type: 'section'
+    # ../en-US.restext:124 | "**Utopian Experiments**"
+    title: 'restext://Common_120'
+    style: 'hub-card'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:27328
+    - type: 'text'
+      # ../en-US.restext:125 | "A new set of Experiments ..."
+      value: 'restext://Common_121'
+  # ../.source/ATimeofWar_Eng_v8.cs:27331
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:27335
+  - type: 'section'
+    # ../en-US.restext:129 | "**In Memoriam**"
+    title: 'restext://Common_125'
+    style: 'hub-card'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:27343
+    - type: 'text'
+      # ../en-US.restext:2246 | "With the near-total destr..."
+      value: 'restext://Paradox3b_004'
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:27357
+  - type: 'section'
+    # ../en-US.restext:2243 | "**Angry Mob Return**"
+    title: 'restext://Paradox3b_001'
+    style: 'hub-card'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:27365
+    - type: 'text'
+      # ../en-US.restext:2244 | "All {icon:angrymob_icon} ..."
+      value: 'restext://Paradox3b_002'
+  # ../.source/ATimeofWar_Eng_v8.cs:27370
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:27374
+  - type: 'section'
+    # ../en-US.restext:122 | "**Technician**"
+    title: 'restext://Common_118'
+    style: 'hub-card'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:27382
+    - type: 'text'
+      # ../en-US.restext:123 | "When visiting the **Techn..."
+      value: 'restext://Common_119'
+  # ../.source/ATimeofWar_Eng_v8.cs:27394
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:27398
+  - type: 'section'
+    # ../en-US.restext:124 | "**Utopian Experiments**"
+    title: 'restext://Common_120'
+    style: 'hub-card'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:27406
+    - type: 'text'
+      # ../en-US.restext:125 | "A new set of Experiments ..."
+      value: 'restext://Common_121'
+  # ../.source/ATimeofWar_Eng_v8.cs:27409
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:27413
+  - type: 'section'
+    # ../en-US.restext:2245 | "{icon:storybooktoken}**Un..."
+    title: 'restext://Paradox3b_003'
+    style: 'hub-card'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:27422
+    - type: 'text'
+      # ../en-US.restext:127 | "When you visit this locat..."
+      value: 'restext://Common_123'
+    # ../.source/ATimeofWar_Eng_v8.cs:27423
+    - type: 'link'
+      # ../en-US.restext:128 | "Click here for a detailed..."
+      label: 'restext://Common_124'
+      target: 'UniGen3' # ./00226-UniGen3.mws.yaml
+      snapshot: true
+  # ../.source/ATimeofWar_Eng_v8.cs:27425
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:27429
+  - type: 'section'
+    # ../en-US.restext:129 | "**In Memoriam**"
+    title: 'restext://Common_125'
+    style: 'hub-card'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:27437
+    - type: 'text'
+      # ../en-US.restext:130 | "With our brand of ethical..."
+      value: 'restext://Common_126'
+    # ../.source/ATimeofWar_Eng_v8.cs:27439
+    - type: 'conditional'
+      if: 'release >= 1'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:27443
+      - type: 'text'
+        # ../en-US.restext:132 | "**The player who has move..."
+        value: 'restext://Common_128'
+      else:
+      # ../.source/ATimeofWar_Eng_v8.cs:27452
+      - type: 'text'
+        # ../en-US.restext:131 | "**The player with the mos..."
+        value: 'restext://Common_127'
+    # ../.source/ATimeofWar_Eng_v8.cs:27455
+    - type: 'text'
+      # ../en-US.restext:133 | " at the end of the Genera..."
+      value: 'restext://Common_129'
+  # ../.source/ATimeofWar_Eng_v8.cs:27463
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:27467
+- type: 'section'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:27470
+  - type: 'link'
+    # ../en-US.restext:272 | "Click here at the End of ..."
+    label: 'restext://Common_268'
+    target: 'ParadoxGiantCheck' # ./00282-ParadoxGiantCheck.mws.yaml
+    snapshot: true

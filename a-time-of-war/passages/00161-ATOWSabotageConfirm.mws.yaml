@@ -1,0 +1,40 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:17845
+---
+format: 'mws/0.4'
+passage_id: 'ATOWSabotageConfirm'
+# ../en-US.restext:11 | "Demolition for Change"
+title: 'restext://Common_007'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:17853
+- type: 'text'
+  # ../en-US.restext:1408 | "I penned a letter to my c..."
+  value: 'restext://ATOWSabotageConfirm_002'
+# ../.source/ATimeofWar_Eng_v8.cs:17863
+- type: 'assign'
+  var: 'wardestroy'
+  expr: '1'
+# ../.source/ATimeofWar_Eng_v8.cs:17861
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:17864
+- type: 'conditional'
+  if: 'round == 7'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:17866
+  - type: 'link'
+    # ../en-US.restext:24 | "Click to continue..."
+    label: 'restext://Common_020'
+    target: 'AMessenger' # ./00022-AMessenger.mws.yaml
+    snapshot: true
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:17870
+  - type: 'assign'
+    var: 'warpage2'
+    expr: '1'
+  # ../.source/ATimeofWar_Eng_v8.cs:17871
+  - type: 'link'
+    # ../en-US.restext:24 | "Click to continue..."
+    label: 'restext://Common_020'
+    target: 'ResistEvent' # ./00034-ResistEvent.mws.yaml
+    snapshot: true

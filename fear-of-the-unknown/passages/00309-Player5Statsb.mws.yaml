@@ -1,0 +1,49 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:33241
+---
+format: 'mws/0.4'
+passage_id: 'Player5Statsb'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:33246
+- type: 'conditional'
+  if: '!strE_submitted'
+  then:
+  - type: 'popup'
+    layout: 'prompt'
+    content:
+    - type: 'text'
+      # ../en-US.restext:230 | "Please enter the VP of yo..."
+      value: 'restext://Common_226'
+    - type: 'input'
+      label: ''
+      var: 'strE'
+    # ../en-US.restext:277 | "Continue"
+    okay: 'restext://Common_273'
+    onclose:
+    - type: 'assign'
+      var: 'strE_submitted'
+      expr: 'true'
+    snapshot: true
+    target: 'Player5Statsb' # ./00309-Player5Statsb.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:33258
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:33261
+- type: 'text'
+  # ../en-US.restext:231 | "**Strength Confirmed**"
+  value: 'restext://Common_227'
+# ../.source/FearoftheUnknown_Eng_v15.cs:33263
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:33267
+- type: 'text'
+  # ../en-US.restext:2449 | "**{strE}** is locked in a..."
+  value: 'restext://Player5Statsb_001'
+# ../.source/FearoftheUnknown_Eng_v15.cs:33271
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:33273
+- type: 'link'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: 'Player5Statsc' # ./00310-Player5Statsc.mws.yaml
+  snapshot: true

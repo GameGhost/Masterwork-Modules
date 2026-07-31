@@ -1,0 +1,75 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:37435
+---
+format: 'mws/0.4'
+passage_id: 'CountQuestion5'
+# ../en-US.restext:2791 | "How would you describe yo..."
+title: 'restext://CountQuestion5_001'
+tags:
+- 'revised'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:37444
+- type: 'link'
+  # ../en-US.restext:2792 | "Gaunt, wiry, insubstantial."
+  label: 'restext://CountQuestion5_002'
+  target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37462
+  - type: 'assign'
+    var: 'test'
+    expr: 'test - 1'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37463
+  - type: 'assign'
+    var: 'next'
+    expr: 'next + 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37445
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37448
+- type: 'link'
+  # ../en-US.restext:2793 | "Soft and supple."
+  label: 'restext://CountQuestion5_003'
+  target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37470
+  - type: 'assign'
+    var: 'test'
+    expr: 'test + 1'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37471
+  - type: 'assign'
+    var: 'next'
+    expr: 'next + 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37449
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37452
+- type: 'link'
+  # ../en-US.restext:2794 | "Luscious, plump, and dele..."
+  label: 'restext://CountQuestion5_004'
+  target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37478
+  - type: 'assign'
+    var: 'test'
+    expr: 'test + 1'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37479
+  - type: 'assign'
+    var: 'next'
+    expr: 'next + 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37453
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37456
+- type: 'link'
+  # ../en-US.restext:2795 | "Stout, Average."
+  label: 'restext://CountQuestion5_005'
+  target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37486
+  - type: 'assign'
+    var: 'next'
+    expr: 'next + 1'

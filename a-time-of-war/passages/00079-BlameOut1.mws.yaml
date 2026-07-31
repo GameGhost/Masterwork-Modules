@@ -1,0 +1,41 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:10540
+---
+format: 'mws/0.4'
+passage_id: 'BlameOut1'
+# ../en-US.restext:819 | "Diverting Their Attentions"
+title: 'restext://BlameOut1_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:10547
+- type: 'text'
+  # ../en-US.restext:820 | "In an attempt to pacify t..."
+  value: 'restext://BlameOut1_002'
+# ../.source/ATimeofWar_Eng_v8.cs:10549
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:10553
+- type: 'text'
+  # ../en-US.restext:821 | "**{blame}** arrived home ..."
+  value: 'restext://BlameOut1_003'
+# ../.source/ATimeofWar_Eng_v8.cs:10557
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:10562
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  target: 'TimeTravel3' # ./00018-TimeTravel3.mws.yaml
+  # ../en-US.restext:182 | "Close"
+  okay: 'restext://Common_178'
+  snapshot: true
+  header:
+  # ../.source/ATimeofWar_Eng_v8.cs:10578
+  - type: 'image'
+    asset: 'image://setup/DiscardEstateUpgrade_Icon'
+    style: 'setup-image'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:10583
+  - type: 'text'
+    # ../en-US.restext:822 | "**{blame} must immediatel..."
+    value: 'restext://BlameOut1_004'

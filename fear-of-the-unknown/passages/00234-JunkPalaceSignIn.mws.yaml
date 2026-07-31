@@ -1,0 +1,108 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:26853
+---
+format: 'mws/0.4'
+passage_id: 'JunkPalaceSignIn'
+# ../en-US.restext:1975 | "A Palace of Scraps"
+title: 'restext://JunkPalaceSignIn_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:26863
+- type: 'text'
+  # ../en-US.restext:1976 | "**Letter from** _name ill..."
+  value: 'restext://JunkPalaceSignIn_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26871
+- type: 'let'
+  var: '_rnd_JunkPalaceSignIn_0'
+  expr: '[Let me tell you of the day I ventured to the center of {townname} and met with {warden}. Though I will spare you the gory details of the horrors I witnessed upon my arrival., "The grounds of the old jail appeared even more imposing than they had been when the inmates were enclosed inside its iron walls. I made sure that my visit was brief, but with delinquent eyes upon me and obscene messages written on the walls in crude scarlet streaks, it was certainly not made short enough.", "As I arrived at the steps of the Junk Palace, I was greeted by a rough guard wearing an apron fashioned with protective scraps of steel. ''Nice to meat you,'' the man who introduced himself as ''Grinder'' said. ''I have no beef with you.'' And so I gained entrance to this decaying institution where the walls fall to pieces and metal springs from the Earth."].shuffled("JunkPalaceSignIn_0")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26869
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26871
+- type: 'text'
+  value: '{_rnd_JunkPalaceSignIn_0}'
+  lets:
+  - '_rnd_JunkPalaceSignIn_0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26873
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26877
+- type: 'text'
+  # ../en-US.restext:251 | "**Please choose the playe..."
+  value: 'restext://Common_247'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26879
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26882
+- type: 'link'
+  label: '{nameA}'
+  target: 'JunkPalaceMeet' # ./00315-JunkPalaceMeet.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:26918
+  - type: 'assign'
+    var: 'tempname'
+    expr: 'nameA'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26883
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26886
+- type: 'link'
+  label: '{nameB}'
+  target: 'JunkPalaceMeet' # ./00315-JunkPalaceMeet.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:26925
+  - type: 'assign'
+    var: 'tempname'
+    expr: 'nameB'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26887
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26889
+- type: 'conditional'
+  if: 'players > 2'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:26892
+  - type: 'link'
+    label: '{nameC}'
+    target: 'JunkPalaceMeet' # ./00315-JunkPalaceMeet.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26932
+    - type: 'assign'
+      var: 'tempname'
+      expr: 'nameC'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26894
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26896
+- type: 'conditional'
+  if: 'players > 3'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:26899
+  - type: 'link'
+    label: '{nameD}'
+    target: 'JunkPalaceMeet' # ./00315-JunkPalaceMeet.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26939
+    - type: 'assign'
+      var: 'tempname'
+      expr: 'nameD'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26901
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26903
+- type: 'conditional'
+  if: 'players > 4'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:26906
+  - type: 'link'
+    label: '{nameE}'
+    target: 'JunkPalaceMeet' # ./00315-JunkPalaceMeet.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26946
+    - type: 'assign'
+      var: 'tempname'
+      expr: 'nameE'

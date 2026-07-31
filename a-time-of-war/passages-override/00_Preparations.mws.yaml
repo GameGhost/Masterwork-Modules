@@ -1,0 +1,56 @@
+# Masterwork-authored onboarding passage (not extractor output) — see Masterwork-Modules/CLAUDE.md.
+# Near-duplicate of passages/00260-ATOW-Preparations.mws.yaml, minus the assigns that pulled
+# nameA-E/players/townname from app-injected `global:` values — the preceding Setup_0x passages
+# already set all of those directly through play. The playtxt derivation (switch on players) is
+# kept since it's a real derived value, not a global-sourced one. Continues to the original,
+# unmodified ForewordScen2 — the existing module content takes over from there.
+---
+format: 'mws/0.4'
+passage_id: '00_Preparations'
+title: 'restext://ATOW_Preparations_001'
+layout: 'narration'
+nodes:
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    - type: 'assign'
+      var: 'playtxt'
+      expr: '"restext://Common_149"'
+  - match: 3
+    nodes:
+    - type: 'assign'
+      var: 'playtxt'
+      expr: '"restext://Common_150"'
+  - match: 4
+    nodes:
+    - type: 'assign'
+      var: 'playtxt'
+      expr: '"restext://Common_151"'
+  - match: 5
+    nodes:
+    - type: 'assign'
+      var: 'playtxt'
+      expr: '"restext://Common_152"'
+  default:
+  - type: 'assign'
+    var: 'playtxt'
+    expr: '"restext://Common_149"'
+- type: 'text'
+  value: 'restext://ATOW_Preparations_002'
+- type: 'break'
+  style: 'paragraph'
+- type: 'image'
+  asset: 'icon://scenariobox3d_war'
+  size: '200'
+  align: 'center'
+- type: 'break'
+- type: 'text'
+  value: 'restext://ATOW_Preparations_003'
+- type: 'break'
+  style: 'paragraph'
+- type: 'link'
+  label: 'restext://Common_179'
+  target: 'ForewordScen2' # ./00142-ForewordScen2.mws.yaml
+  snapshot: true

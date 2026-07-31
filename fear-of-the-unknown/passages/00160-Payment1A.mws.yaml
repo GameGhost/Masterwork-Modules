@@ -1,0 +1,72 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:19477
+---
+format: 'mws/0.4'
+passage_id: 'Payment1A'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:19479
+- type: 'conditional'
+  if: 'Acont == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19481
+  - type: 'goto'
+    target: 'Payment1B' # ./00163-Payment1B.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:19486
+- type: 'text'
+  # ../en-US.restext:187 | "**Carefully hand this Sto..."
+  value: 'restext://Common_183'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19492
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19497
+- type: 'popup'
+  # ../en-US.restext:46 | "Once you are ready, click..."
+  label: 'restext://Common_042'
+  layout: 'reveal'
+  # ../en-US.restext:275 | "Close"
+  cancel: 'restext://Common_271'
+  snapshot: true
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19511
+  - type: 'text'
+    # ../en-US.restext:188 | "**Collection Day**"
+    value: 'restext://Common_184'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19513
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19517
+  - type: 'text'
+    # ../en-US.restext:189 | "**Journal of {nameA} -** ..."
+    value: 'restext://Common_185'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19526
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19528
+  - type: 'text'
+    # ../en-US.restext:190 | "My final days of respite ..."
+    value: 'restext://Common_186'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19531
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19533
+  - type: 'text'
+    # ../en-US.restext:1469 | "One of them began to spea..."
+    value: 'restext://Payment1A_005'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19537
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19540
+  - type: 'link'
+    # ../en-US.restext:191 | "Yes, I will pay the entir..."
+    label: 'restext://Common_187'
+    target: 'Payment1ThanksA' # ./00161-Payment1ThanksA.mws.yaml
+    snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19541
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19543
+  - type: 'link'
+    # ../en-US.restext:192 | "No, I will not pay. (You ..."
+    label: 'restext://Common_188'
+    target: 'Payment1NoA' # ./00162-Payment1NoA.mws.yaml
+    snapshot: true

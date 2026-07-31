@@ -1,0 +1,52 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:24202
+---
+format: 'mws/0.4'
+passage_id: 'PeacetoRebuild'
+# ../en-US.restext:1951 | "The Price of Peace"
+title: 'restext://PeacetoRebuild_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:24209
+- type: 'text'
+  # ../en-US.restext:1952 | "The wounds of the recent ..."
+  value: 'restext://PeacetoRebuild_002'
+# ../.source/ATimeofWar_Eng_v8.cs:24210
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:24212
+- type: 'text'
+  # ../en-US.restext:1953 | "The Separatist government..."
+  value: 'restext://PeacetoRebuild_003'
+# ../.source/ATimeofWar_Eng_v8.cs:24213
+- type: 'switch'
+  on: 'wardestroy'
+  cases:
+  - match: 0
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:24215
+    - type: 'text'
+      # ../en-US.restext:1955 | "no new taxes, thankfully,..."
+      value: 'restext://PeacetoRebuild_005'
+  - match: 1
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:24220
+    - type: 'text'
+      # ../en-US.restext:1956 | "a one-time estate inherit..."
+      value: 'restext://PeacetoRebuild_006'
+  default:
+  # ../.source/ATimeofWar_Eng_v8.cs:24227
+  - type: 'text'
+    # ../en-US.restext:1954 | "a recurring estate tax of..."
+    value: 'restext://PeacetoRebuild_004'
+# ../.source/ATimeofWar_Eng_v8.cs:24236
+- type: 'text'
+  value: ' '
+# ../.source/ATimeofWar_Eng_v8.cs:24237
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:24239
+- type: 'link'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  target: 'PeaceDiscard' # ./00240-PeaceDiscard.mws.yaml
+  snapshot: true

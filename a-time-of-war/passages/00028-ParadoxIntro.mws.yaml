@@ -1,0 +1,82 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:4250
+---
+format: 'mws/0.4'
+passage_id: 'ParadoxIntro'
+# ../en-US.restext:493 | "GENERATION III: You Cant ..."
+title: 'restext://ParadoxIntro_001'
+tags:
+- 'INTRO'
+layout: 'introduction'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:4262
+- type: 'text'
+  # ../en-US.restext:494 | "**A Brighter Future**"
+  value: 'restext://ParadoxIntro_002'
+# ../.source/ATimeofWar_Eng_v8.cs:4264
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:4265
+- type: 'text'
+  # ../en-US.restext:134 | "While the discovery of my..."
+  value: 'restext://Common_130'
+# ../.source/ATimeofWar_Eng_v8.cs:4266
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:4268
+- type: 'text'
+  # ../en-US.restext:495 | "I remember being stunned ..."
+  value: 'restext://ParadoxIntro_004'
+# ../.source/ATimeofWar_Eng_v8.cs:4269
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:4271
+- type: 'text'
+  # ../en-US.restext:135 | "The estate appeared untou..."
+  value: 'restext://Common_131'
+# ../.source/ATimeofWar_Eng_v8.cs:4272
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:4274
+- type: 'text'
+  # ../en-US.restext:496 | "When I spoke of my family..."
+  value: 'restext://ParadoxIntro_006'
+# ../.source/ATimeofWar_Eng_v8.cs:4275
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:4277
+- type: 'text'
+  # ../en-US.restext:136 | "This caused me severe con..."
+  value: 'restext://Common_132'
+# ../.source/ATimeofWar_Eng_v8.cs:4281
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:4283
+- type: 'text'
+  # ../en-US.restext:137 | "It was this grim realizat..."
+  value: 'restext://Common_133'
+# ../.source/ATimeofWar_Eng_v8.cs:4286
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:4289
+- type: 'link'
+  # ../en-US.restext:138 | "Click to Continue..."
+  label: 'restext://Common_134'
+  target: 'TimeTravelEvent' # ./00048-TimeTravelEvent.mws.yaml
+  snapshot: true
+# ../.source/ATimeofWar_Eng_v8.cs:4290
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:4291
+- type: 'conditional'
+  if: 'townname == "debug"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:4293
+  - type: 'text'
+    # ../en-US.restext:139 | "v1.0"
+    value: 'restext://Common_135'
+# ../.source/ATimeofWar_Eng_v8.cs:4295
+- type: 'assign'
+  var: 'accolade'
+  expr: 'rand_between(12, 13, "ParadoxIntro_0")'
+# ../.source/ATimeofWar_Eng_v8.cs:4296
+- type: 'assign'
+  var: 'timemistake'
+  expr: 'rand_between(1, 8, "ParadoxIntro_1")'

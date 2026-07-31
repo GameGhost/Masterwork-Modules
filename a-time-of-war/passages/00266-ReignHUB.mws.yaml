@@ -1,0 +1,421 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:26064
+---
+format: 'mws/0.4'
+passage_id: 'ReignHUB'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:26066
+- type: 'assign'
+  var: 'genericr'
+  expr: '[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]'
+# ../.source/ATimeofWar_Eng_v8.cs:26068
+- type: 'assign'
+  var: 'genericr'
+  expr: 'genericr.shuffled("ReignHUB_0")'
+# ../.source/ATimeofWar_Eng_v8.cs:26070
+- type: 'assign'
+  var: 'gen1'
+  expr: 'genericr[0]'
+# ../.source/ATimeofWar_Eng_v8.cs:26072
+- type: 'assign'
+  var: 'gen2'
+  expr: 'genericr[1]'
+# ../.source/ATimeofWar_Eng_v8.cs:26074
+- type: 'conditional'
+  if: 'gen1 == 1'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26076
+  - type: 'assign'
+    var: 'ch1'
+    # ../en-US.restext:2133 | "Gain $3"
+    expr: '"restext://ReignHUB_001"'
+# ../.source/ATimeofWar_Eng_v8.cs:26079
+- type: 'conditional'
+  if: 'gen1 == 2'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26081
+  - type: 'assign'
+    var: 'ch1'
+    # ../en-US.restext:2134 | "Search the Experiment dec..."
+    expr: '"restext://ReignHUB_002"'
+# ../.source/ATimeofWar_Eng_v8.cs:26084
+- type: 'conditional'
+  if: 'gen1 == 3'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26086
+  - type: 'assign'
+    var: 'ch1'
+    # ../en-US.restext:2135 | "Gain 2 Ingredients."
+    expr: '"restext://ReignHUB_003"'
+# ../.source/ATimeofWar_Eng_v8.cs:26089
+- type: 'conditional'
+  if: 'gen1 == 4'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26091
+  - type: 'assign'
+    var: 'ch1'
+    # ../en-US.restext:2136 | "Gain 2 Compulsion cards."
+    expr: '"restext://ReignHUB_004"'
+# ../.source/ATimeofWar_Eng_v8.cs:26094
+- type: 'conditional'
+  if: 'gen1 == 5'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26096
+  - type: 'assign'
+    var: 'ch1'
+    # ../en-US.restext:2137 | "Lose 2 <sprite=\"Creepy_I..."
+    expr: '"restext://ReignHUB_005"'
+# ../.source/ATimeofWar_Eng_v8.cs:26099
+- type: 'conditional'
+  if: 'gen1 == 6'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26101
+  - type: 'assign'
+    var: 'ch1'
+    # ../en-US.restext:2138 | "Lose 2 <sprite=\"Insanity..."
+    expr: '"restext://ReignHUB_006"'
+# ../.source/ATimeofWar_Eng_v8.cs:26104
+- type: 'conditional'
+  if: 'gen1 == 7'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26106
+  - type: 'assign'
+    var: 'ch1'
+    # ../en-US.restext:2139 | "Gain 1 Knowledge of your ..."
+    expr: '"restext://ReignHUB_007"'
+# ../.source/ATimeofWar_Eng_v8.cs:26109
+- type: 'conditional'
+  if: 'gen1 == 8'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26111
+  - type: 'assign'
+    var: 'ch1'
+    # ../en-US.restext:2140 | "Gain 2 Knowledge of your ..."
+    expr: '"restext://ReignHUB_008"'
+# ../.source/ATimeofWar_Eng_v8.cs:26114
+- type: 'conditional'
+  if: 'gen1 == 9'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26116
+  - type: 'assign'
+    var: 'ch1'
+    # ../en-US.restext:2141 | "Gain an Estate Upgrade fo..."
+    expr: '"restext://ReignHUB_009"'
+# ../.source/ATimeofWar_Eng_v8.cs:26119
+- type: 'conditional'
+  if: 'gen1 == 10'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26121
+  - type: 'assign'
+    var: 'ch1'
+    # ../en-US.restext:2142 | "Immediately take a Record..."
+    expr: '"restext://ReignHUB_010"'
+# ../.source/ATimeofWar_Eng_v8.cs:26124
+- type: 'conditional'
+  if: 'gen1 == 11'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26126
+  - type: 'assign'
+    var: 'ch1'
+    # ../en-US.restext:2143 | "Gain $1 and Gain 1 Ingredient."
+    expr: '"restext://ReignHUB_011"'
+# ../.source/ATimeofWar_Eng_v8.cs:26129
+- type: 'conditional'
+  if: 'gen1 == 12'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26131
+  - type: 'assign'
+    var: 'ch1'
+    # ../en-US.restext:2144 | "Gain $1 and Gain 1 Knowle..."
+    expr: '"restext://ReignHUB_012"'
+# ../.source/ATimeofWar_Eng_v8.cs:26134
+- type: 'conditional'
+  if: 'gen1 == 13'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26136
+  - type: 'assign'
+    var: 'ch1'
+    # ../en-US.restext:2145 | "Gain 3VP."
+    expr: '"restext://ReignHUB_013"'
+# ../.source/ATimeofWar_Eng_v8.cs:26139
+- type: 'conditional'
+  if: 'gen1 == 14'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26141
+  - type: 'assign'
+    var: 'ch1'
+    # ../en-US.restext:2146 | "Immediately take a Perfor..."
+    expr: '"restext://ReignHUB_014"'
+# ../.source/ATimeofWar_Eng_v8.cs:26144
+- type: 'conditional'
+  if: 'gen2 == 1'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26146
+  - type: 'assign'
+    var: 'ch2'
+    # ../en-US.restext:2133 | "Gain $3"
+    expr: '"restext://ReignHUB_001"'
+# ../.source/ATimeofWar_Eng_v8.cs:26149
+- type: 'conditional'
+  if: 'gen2 == 2'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26151
+  - type: 'assign'
+    var: 'ch2'
+    # ../en-US.restext:2134 | "Search the Experiment dec..."
+    expr: '"restext://ReignHUB_002"'
+# ../.source/ATimeofWar_Eng_v8.cs:26154
+- type: 'conditional'
+  if: 'gen2 == 3'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26156
+  - type: 'assign'
+    var: 'ch2'
+    # ../en-US.restext:2135 | "Gain 2 Ingredients."
+    expr: '"restext://ReignHUB_003"'
+# ../.source/ATimeofWar_Eng_v8.cs:26159
+- type: 'conditional'
+  if: 'gen2 == 4'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26161
+  - type: 'assign'
+    var: 'ch2'
+    # ../en-US.restext:2136 | "Gain 2 Compulsion cards."
+    expr: '"restext://ReignHUB_004"'
+# ../.source/ATimeofWar_Eng_v8.cs:26164
+- type: 'conditional'
+  if: 'gen2 == 5'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26166
+  - type: 'assign'
+    var: 'ch2'
+    # ../en-US.restext:2137 | "Lose 2 <sprite=\"Creepy_I..."
+    expr: '"restext://ReignHUB_005"'
+# ../.source/ATimeofWar_Eng_v8.cs:26169
+- type: 'conditional'
+  if: 'gen2 == 6'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26171
+  - type: 'assign'
+    var: 'ch2'
+    # ../en-US.restext:2138 | "Lose 2 <sprite=\"Insanity..."
+    expr: '"restext://ReignHUB_006"'
+# ../.source/ATimeofWar_Eng_v8.cs:26174
+- type: 'conditional'
+  if: 'gen2 == 7'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26176
+  - type: 'assign'
+    var: 'ch2'
+    # ../en-US.restext:2139 | "Gain 1 Knowledge of your ..."
+    expr: '"restext://ReignHUB_007"'
+# ../.source/ATimeofWar_Eng_v8.cs:26179
+- type: 'conditional'
+  if: 'gen2 == 8'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26181
+  - type: 'assign'
+    var: 'ch2'
+    # ../en-US.restext:2140 | "Gain 2 Knowledge of your ..."
+    expr: '"restext://ReignHUB_008"'
+# ../.source/ATimeofWar_Eng_v8.cs:26184
+- type: 'conditional'
+  if: 'gen2 == 9'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26186
+  - type: 'assign'
+    var: 'ch2'
+    # ../en-US.restext:2141 | "Gain an Estate Upgrade fo..."
+    expr: '"restext://ReignHUB_009"'
+# ../.source/ATimeofWar_Eng_v8.cs:26189
+- type: 'conditional'
+  if: 'gen2 == 10'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26191
+  - type: 'assign'
+    var: 'ch2'
+    # ../en-US.restext:2142 | "Immediately take a Record..."
+    expr: '"restext://ReignHUB_010"'
+# ../.source/ATimeofWar_Eng_v8.cs:26194
+- type: 'conditional'
+  if: 'gen2 == 11'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26196
+  - type: 'assign'
+    var: 'ch2'
+    # ../en-US.restext:2143 | "Gain $1 and Gain 1 Ingredient."
+    expr: '"restext://ReignHUB_011"'
+# ../.source/ATimeofWar_Eng_v8.cs:26199
+- type: 'conditional'
+  if: 'gen2 == 12'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26201
+  - type: 'assign'
+    var: 'ch2'
+    # ../en-US.restext:2144 | "Gain $1 and Gain 1 Knowle..."
+    expr: '"restext://ReignHUB_012"'
+# ../.source/ATimeofWar_Eng_v8.cs:26204
+- type: 'conditional'
+  if: 'gen2 == 13'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26206
+  - type: 'assign'
+    var: 'ch2'
+    # ../en-US.restext:2145 | "Gain 3VP."
+    expr: '"restext://ReignHUB_013"'
+# ../.source/ATimeofWar_Eng_v8.cs:26209
+- type: 'conditional'
+  if: 'gen2 == 14'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26211
+  - type: 'assign'
+    var: 'ch2'
+    # ../en-US.restext:2146 | "Immediately take a Perfor..."
+    expr: '"restext://ReignHUB_014"'
+# ../.source/ATimeofWar_Eng_v8.cs:26215
+- type: 'assign'
+  var: 'crownL'
+  # ../en-US.restext:2147 | "Move the Crown token \"1 ..."
+  expr: '["", "restext://ReignHUB_015"].shuffled("ReignHUB_1")[0]'
+# ../.source/ATimeofWar_Eng_v8.cs:26217
+- type: 'assign'
+  var: 'crownR'
+  # ../en-US.restext:2148 | "Move the Crown token \"1 ..."
+  expr: '["", "restext://ReignHUB_016"].shuffled("ReignHUB_2")[0]'
+# ../.source/ATimeofWar_Eng_v8.cs:26220
+- type: 'assign'
+  var: 'advise'
+  expr: '[1, 2, 3, 4, 6, 7, 8]'
+# ../.source/ATimeofWar_Eng_v8.cs:26223
+- type: 'conditional'
+  if: 'r2 == 1'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26225
+  - type: 'assign'
+    var: 'advise'
+    expr: 'advise.except(2)'
+# ../.source/ATimeofWar_Eng_v8.cs:26228
+- type: 'conditional'
+  if: 'r3 == 1'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26230
+  - type: 'assign'
+    var: 'advise'
+    expr: 'advise.except(3)'
+# ../.source/ATimeofWar_Eng_v8.cs:26233
+- type: 'conditional'
+  if: 'r4 == 1'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26235
+  - type: 'assign'
+    var: 'advise'
+    expr: 'advise.except(4)'
+# ../.source/ATimeofWar_Eng_v8.cs:26239
+- type: 'conditional'
+  if: 'r6 == 1'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26241
+  - type: 'assign'
+    var: 'advise'
+    expr: 'advise.except(6)'
+# ../.source/ATimeofWar_Eng_v8.cs:26244
+- type: 'conditional'
+  if: 'r7 == 1'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26246
+  - type: 'assign'
+    var: 'advise'
+    expr: 'advise.except(7)'
+# ../.source/ATimeofWar_Eng_v8.cs:26249
+- type: 'conditional'
+  if: 'r8 == 1'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26251
+  - type: 'assign'
+    var: 'advise'
+    expr: 'advise.except(8)'
+# ../.source/ATimeofWar_Eng_v8.cs:26255
+- type: 'assign'
+  var: 'advise'
+  expr: 'advise.shuffled("ReignHUB_3")'
+# ../.source/ATimeofWar_Eng_v8.cs:26257
+- type: 'assign'
+  var: 'reigning'
+  expr: 'advise[0]'
+# ../.source/ATimeofWar_Eng_v8.cs:26260
+- type: 'assign'
+  var: 'advisorcount'
+  expr: 'advisorcount + 1'
+# ../.source/ATimeofWar_Eng_v8.cs:26263
+- type: 'conditional'
+  if: 'reigning == 1'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26265
+  - type: 'goto'
+    target: 'Reign1' # ./00299-Reign1.mws.yaml
+# ../.source/ATimeofWar_Eng_v8.cs:26268
+- type: 'conditional'
+  if: 'reigning == 2'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26270
+  - type: 'assign'
+    var: 'r2'
+    expr: '1'
+  # ../.source/ATimeofWar_Eng_v8.cs:26271
+  - type: 'goto'
+    target: 'Reign2' # ./00301-Reign2.mws.yaml
+# ../.source/ATimeofWar_Eng_v8.cs:26274
+- type: 'conditional'
+  if: 'reigning == 3'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26276
+  - type: 'assign'
+    var: 'r3'
+    expr: '1'
+  # ../.source/ATimeofWar_Eng_v8.cs:26277
+  - type: 'goto'
+    target: 'Reign3' # ./00303-Reign3.mws.yaml
+# ../.source/ATimeofWar_Eng_v8.cs:26280
+- type: 'conditional'
+  if: 'reigning == 4'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26282
+  - type: 'assign'
+    var: 'r4'
+    expr: '1'
+  # ../.source/ATimeofWar_Eng_v8.cs:26283
+  - type: 'goto'
+    target: 'Reign4' # ./00302-Reign4.mws.yaml
+# ../.source/ATimeofWar_Eng_v8.cs:26287
+- type: 'conditional'
+  if: 'reigning == 6'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26289
+  - type: 'assign'
+    var: 'r6'
+    expr: '1'
+  # ../.source/ATimeofWar_Eng_v8.cs:26290
+  - type: 'goto'
+    target: 'Reign6' # ./00304-Reign6.mws.yaml
+# ../.source/ATimeofWar_Eng_v8.cs:26293
+- type: 'conditional'
+  if: 'reigning == 7'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26295
+  - type: 'assign'
+    var: 'r7'
+    expr: '1'
+  # ../.source/ATimeofWar_Eng_v8.cs:26296
+  - type: 'goto'
+    target: 'Reign7' # ./00305-Reign7.mws.yaml
+# ../.source/ATimeofWar_Eng_v8.cs:26299
+- type: 'conditional'
+  if: 'reigning == 8'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:26301
+  - type: 'assign'
+    var: 'r8'
+    expr: '1'
+  # ../.source/ATimeofWar_Eng_v8.cs:26302
+  - type: 'goto'
+    target: 'Reign8' # ./00306-Reign8.mws.yaml

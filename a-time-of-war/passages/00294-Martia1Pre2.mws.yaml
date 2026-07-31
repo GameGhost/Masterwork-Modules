@@ -1,0 +1,23 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:27149
+---
+format: 'mws/0.4'
+passage_id: 'Martia1Pre2'
+tags:
+- 'TEMP'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:27155
+- type: 'section'
+  style: 'panel'
+  content:
+  - type: 'text'
+    # ../en-US.restext:2229 | "The Early Years of the Se..."
+    value: 'restext://Martia1Pre2_001'
+- type: 'checkpoint'
+  id: 'round_4_complete'
+  display: 'Round 4'
+- type: 'link'
+  # ../en-US.restext:60 | "Complete all End of Round..."
+  label: 'restext://Common_056'
+  target: 'Martial2' # ./00024-Martial2.mws.yaml
+  snapshot: true

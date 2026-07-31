@@ -1,0 +1,166 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:10643
+---
+format: 'mws/0.4'
+passage_id: 'CheckW1'
+# ../en-US.restext:31 | "Rumor Mill"
+title: 'restext://Common_027'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:10659
+- type: 'let'
+  var: '_rnd_CheckW1_0'
+  # ../en-US.restext:32 | Common_028 | "January"
+  # ../en-US.restext:33 | Common_029 | "February"
+  # ../en-US.restext:34 | Common_030 | "March"
+  # ../en-US.restext:35 | Common_031 | "April"
+  # ../en-US.restext:36 | Common_032 | "May"
+  # ../en-US.restext:37 | Common_033 | "June"
+  # ../en-US.restext:38 | Common_034 | "July"
+  # ../en-US.restext:39 | Common_035 | "August"
+  # ../en-US.restext:40 | Common_036 | "September"
+  # ../en-US.restext:41 | Common_037 | "October"
+  # ../en-US.restext:42 | Common_038 | "November"
+  # ../en-US.restext:43 | Common_039 | "December"
+  expr: '["restext://Common_028", "restext://Common_029", "restext://Common_030", "restext://Common_031", "restext://Common_032", "restext://Common_033", "restext://Common_034", "restext://Common_035", "restext://Common_036", "restext://Common_037", "restext://Common_038", "restext://Common_039"].shuffled("CheckW1_0")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10661
+- type: 'let'
+  var: '_rnd_CheckW1_1'
+  expr: 'rand_between(1, 29, "CheckW1_1")'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10653
+- type: 'text'
+  # ../en-US.restext:894 | "**Newsprint - {newspaper}..."
+  value: 'restext://CheckW1_014'
+  lets:
+  - '_rnd_CheckW1_0'
+  - '_rnd_CheckW1_1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10663
+- type: 'conditional'
+  if: 'round == 4'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10665
+  - type: 'let'
+    var: '_rnd_CheckW1_2'
+    expr: 'rand_between(863, 871, "CheckW1_2")'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10665
+  - type: 'text'
+    # ../en-US.restext:896 | "_{_rnd_CheckW1_2}_"
+    value: 'restext://CheckW1_016'
+    lets:
+    - '_rnd_CheckW1_2'
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10670
+  - type: 'let'
+    var: '_rnd_CheckW1_3'
+    expr: 'rand_between(872, 880, "CheckW1_3")'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10670
+  - type: 'text'
+    # ../en-US.restext:895 | "_{_rnd_CheckW1_3}_"
+    value: 'restext://CheckW1_015'
+    lets:
+    - '_rnd_CheckW1_3'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10672
+- type: 'text'
+  value: '_._'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10675
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10677
+- type: 'text'
+  # ../en-US.restext:897 | "Hauntings continue to be ..."
+  value: 'restext://CheckW1_017'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10686
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10690
+- type: 'text'
+  # ../en-US.restext:44 | "**I decided to investigate:**"
+  value: 'restext://Common_040'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10692
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10695
+- type: 'link'
+  label: '{nameA}'
+  target: 'CheckWitches1' # ./00073-CheckWitches1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10729
+  - type: 'assign'
+    var: 'rum'
+    expr: '1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10696
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10698
+- type: 'link'
+  label: '{nameB}'
+  target: 'CheckWitches1' # ./00073-CheckWitches1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10736
+  - type: 'assign'
+    var: 'rum'
+    expr: '2'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10699
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10700
+- type: 'conditional'
+  if: 'players > 2'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10703
+  - type: 'link'
+    label: '{nameC}'
+    target: 'CheckWitches1' # ./00073-CheckWitches1.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10743
+    - type: 'assign'
+      var: 'rum'
+      expr: '3'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10704
+  - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10706
+- type: 'conditional'
+  if: 'players > 3'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10709
+  - type: 'link'
+    label: '{nameD}'
+    target: 'CheckWitches1' # ./00073-CheckWitches1.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10750
+    - type: 'assign'
+      var: 'rum'
+      expr: '4'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10710
+  - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10712
+- type: 'conditional'
+  if: 'players > 4'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10715
+  - type: 'link'
+    label: '{nameE}'
+    target: 'CheckWitches1' # ./00073-CheckWitches1.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10757
+    - type: 'assign'
+      var: 'rum'
+      expr: '5'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10716
+  - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10718
+- type: 'conditional'
+  if: 'players <= 3'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10721
+  - type: 'link'
+    label: '{wsuspect}'
+    target: 'CheckWitches1' # ./00073-CheckWitches1.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10763
+    - type: 'assign'
+      var: 'rum'
+      expr: '6'

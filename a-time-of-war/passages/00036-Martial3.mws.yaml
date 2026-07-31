@@ -1,0 +1,211 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:4953
+---
+format: 'mws/0.4'
+passage_id: 'Martial3'
+# ../en-US.restext:61 | "Martial Law"
+title: 'restext://Common_057'
+# ../en-US.restext:207 | "Late Years"
+subtitle: 'restext://Common_203'
+tags:
+- 'HUB'
+layout: 'hub'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:4960
+- type: 'assign'
+  var: 'round'
+  expr: '9'
+# ../.source/ATimeofWar_Eng_v8.cs:4961
+- type: 'assign'
+  var: 'sabotagee1'
+  # ../en-US.restext:78 | "none"
+  expr: '"restext://Common_074"'
+# ../.source/ATimeofWar_Eng_v8.cs:4963
+- type: 'conditional'
+  if: 'martial <= 2'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:4965
+  - type: 'conditional'
+    if: 'warpage2 == 1'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:4969
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:211 | "Accept"
+      okay: 'restext://Common_207'
+      header:
+      # ../.source/ATimeofWar_Eng_v8.cs:4973
+      - type: 'image'
+        asset: 'image://setup/VillageChronicleCover'
+        style: 'setup-image'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:4975
+      - type: 'text'
+        # ../en-US.restext:79 | "One of the buildings in t..."
+        value: 'restext://Common_075'
+    # ../.source/ATimeofWar_Eng_v8.cs:4984
+    - type: 'break'
+      style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:4990
+- type: 'section'
+  # ../en-US.restext:64 | "**Turn the Tide**"
+  title: 'restext://Common_060'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:4998
+  - type: 'text'
+    # ../en-US.restext:80 | "The {warloser} are desper..."
+    value: 'restext://Common_076'
+  # ../.source/ATimeofWar_Eng_v8.cs:5007
+  - type: 'conditional'
+    # ../en-US.restext:25 | "Separatists"
+    if: 'warloser == "restext://Common_021"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:5011
+    - type: 'text'
+      # ../en-US.restext:82 | "**gain a Knowledge of you..."
+      value: 'restext://Common_078'
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:5018
+    - type: 'text'
+      # ../en-US.restext:81 | "**gain $2 from the supply**"
+      value: 'restext://Common_077'
+  # ../.source/ATimeofWar_Eng_v8.cs:5021
+  - type: 'text'
+    # ../en-US.restext:83 | " as a gift from the {warl..."
+    value: 'restext://Common_079'
+# ../.source/ATimeofWar_Eng_v8.cs:5026
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:5028
+- type: 'conditional'
+  if: 'martweapons == 0'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:5032
+  - type: 'section'
+    # ../en-US.restext:65 | "{icon:storybooktoken} **W..."
+    title: 'restext://Common_061'
+    style: 'hub-card'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:5041
+    - type: 'text'
+      # ../en-US.restext:66 | "The first player to compl..."
+      value: 'restext://Common_062'
+    # ../.source/ATimeofWar_Eng_v8.cs:5047
+    - type: 'link'
+      # ../en-US.restext:67 | "clicks here for a special..."
+      label: 'restext://Common_063'
+      target: 'PackingHeat1' # ./00127-PackingHeat1.mws.yaml
+      snapshot: true
+  # ../.source/ATimeofWar_Eng_v8.cs:5049
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:5052
+- type: 'switch'
+  on: 'warwinner'
+  cases:
+  # ../en-US.restext:26 | "Unified Monarchists"
+  - match: 'restext://Common_022'
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:5054
+    - type: 'conditional'
+      # ../en-US.restext:28 | "Barracks"
+      if: 'bldg1 != "restext://Common_024"'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:5058
+      - type: 'section'
+        # ../en-US.restext:68 | "**Military Demands - Barr..."
+        title: 'restext://Common_064'
+        style: 'hub-card'
+        content:
+        # ../.source/ATimeofWar_Eng_v8.cs:5071
+        - type: 'text'
+          # ../en-US.restext:69 | "The Monarchy demands a co..."
+          value: 'restext://Common_065'
+        # ../.source/ATimeofWar_Eng_v8.cs:5075
+        - type: 'break'
+          style: 'paragraph'
+        # ../.source/ATimeofWar_Eng_v8.cs:5077
+        - type: 'text'
+          # ../en-US.restext:532 | "When placing a piece on t..."
+          value: 'restext://Martial3_001'
+  # ../en-US.restext:25 | "Separatists"
+  - match: 'restext://Common_021'
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:5087
+    - type: 'conditional'
+      # ../en-US.restext:28 | "Barracks"
+      if: 'bldg1 != "restext://Common_024"'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:5091
+      - type: 'section'
+        # ../en-US.restext:71 | "**Military Incentive - Ba..."
+        title: 'restext://Common_067'
+        style: 'hub-card'
+        content:
+        # ../.source/ATimeofWar_Eng_v8.cs:5099
+        - type: 'text'
+          # ../en-US.restext:72 | "The Separatists urge citi..."
+          value: 'restext://Common_068'
+        # ../.source/ATimeofWar_Eng_v8.cs:5102
+        - type: 'break'
+          style: 'paragraph'
+        # ../.source/ATimeofWar_Eng_v8.cs:5104
+        - type: 'text'
+          # ../en-US.restext:533 | "When placing a piece on t..."
+          value: 'restext://Martial3_002'
+    # ../.source/ATimeofWar_Eng_v8.cs:5111
+    - type: 'break'
+      style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:5114
+- type: 'conditional'
+  if: 'bribe == "yes"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:5116
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:5120
+  - type: 'section'
+    # ../en-US.restext:84 | "**Everything is a Weapon**"
+    title: 'restext://Common_080'
+    style: 'hub-card'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:5129
+    - type: 'text'
+      # ../en-US.restext:534 | "When Performing an Experi..."
+      value: 'restext://Martial3_004'
+  # ../.source/ATimeofWar_Eng_v8.cs:5137
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:5140
+- type: 'conditional'
+  if: 'wardestroy < 2'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:5146
+  - type: 'section'
+    # ../en-US.restext:73 | "**Outpost**"
+    title: 'restext://Common_069'
+    style: 'hub-card'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:5155
+    - type: 'text'
+      # ../en-US.restext:74 | "An Outpost is open in tow..."
+      value: 'restext://Common_070'
+    # ../.source/ATimeofWar_Eng_v8.cs:5158
+    - type: 'link'
+      # ../en-US.restext:75 | "Click here for an explana..."
+      label: 'restext://Common_071'
+      target: 'OutpostExplain' # ./00221-OutpostExplain.mws.yaml
+      snapshot: true
+  # ../.source/ATimeofWar_Eng_v8.cs:5160
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:5165
+- type: 'section'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:5170
+  - type: 'link'
+    # ../en-US.restext:535 | "Click here at the End of ..."
+    label: 'restext://Martial3_005'
+    target: 'BarracksSimple3' # ./00159-BarracksSimple3.mws.yaml
+    snapshot: true

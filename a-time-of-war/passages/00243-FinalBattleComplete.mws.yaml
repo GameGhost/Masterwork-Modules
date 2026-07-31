@@ -1,0 +1,50 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:24253
+---
+format: 'mws/0.4'
+passage_id: 'FinalBattleComplete'
+# ../en-US.restext:1959 | "Campaign Complete"
+title: 'restext://FinalBattleComplete_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:24261
+- type: 'conditional'
+  if: 'peac == 1'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:24263
+  - type: 'text'
+    # ../en-US.restext:1962 | "Any players with unused {..."
+    value: 'restext://FinalBattleComplete_004'
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:24281
+  - type: 'text'
+    # ../en-US.restext:1960 | "The player with the most ..."
+    value: 'restext://FinalBattleComplete_002'
+  # ../.source/ATimeofWar_Eng_v8.cs:24288
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:24290
+  - type: 'text'
+    # ../en-US.restext:1961 | "You must still pay the co..."
+    value: 'restext://FinalBattleComplete_003'
+# ../.source/ATimeofWar_Eng_v8.cs:24292
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:24294
+- type: 'link'
+  # ../en-US.restext:1963 | "Click to move to Final Sc..."
+  label: 'restext://FinalBattleComplete_005'
+  target: 'Scoring' # ./00004-Scoring.mws.yaml
+  snapshot: true
+# ../.source/ATimeofWar_Eng_v8.cs:24296
+- type: 'conditional'
+  if: 'peacecount == 2'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:24298
+  - type: 'assign'
+    var: 'ending'
+    expr: '"ATOW-End7"' # ./00257-ATOW-End7.mws.yaml
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:24302
+  - type: 'assign'
+    var: 'ending'
+    expr: '"ATOW-End8"' # ./00258-ATOW-End8.mws.yaml

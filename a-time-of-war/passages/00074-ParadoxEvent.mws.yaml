@@ -1,0 +1,159 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:10010
+---
+format: 'mws/0.4'
+passage_id: 'ParadoxEvent'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:10012
+- type: 'conditional'
+  if: 'timemistake < 8'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:10016
+  - type: 'text'
+    # ../en-US.restext:793 | "**Monument to Progress**"
+    value: 'restext://ParadoxEvent_001'
+  # ../.source/ATimeofWar_Eng_v8.cs:10019
+  - type: 'conditional'
+    if: 'release >= 1'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:10021
+    - type: 'assign'
+      var: 'giants'
+      expr: 'giants - 1'
+  # ../.source/ATimeofWar_Eng_v8.cs:10018
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:10024
+  - type: 'text'
+    # ../en-US.restext:794 | "The town offered a token ..."
+    value: 'restext://ParadoxEvent_002'
+  # ../.source/ATimeofWar_Eng_v8.cs:10026
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:10031
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:24 | "Click to continue..."
+    label: 'restext://Common_020'
+    target: 'Scoring' # ./00004-Scoring.mws.yaml
+    # ../en-US.restext:182 | "Close"
+    okay: 'restext://Common_178'
+    snapshot: true
+    header:
+    # ../.source/ATimeofWar_Eng_v8.cs:10115
+    - type: 'image'
+      asset: 'image://setup/S3_EstateUpgradeBack'
+      style: 'setup-image'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:10117
+    - type: 'conditional'
+      if: 'release >= 1'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:10119
+      - type: 'text'
+        # ../en-US.restext:796 | "The player who has moved ..."
+        value: 'restext://ParadoxEvent_004'
+      else:
+      # ../.source/ATimeofWar_Eng_v8.cs:10130
+      - type: 'text'
+        # ../en-US.restext:795 | "The player with the most ..."
+        value: 'restext://ParadoxEvent_003'
+    # ../.source/ATimeofWar_Eng_v8.cs:10137
+    - type: 'text'
+      # ../en-US.restext:797 | " _If there is a tie, the ..."
+      value: 'restext://ParadoxEvent_005'
+# ../.source/ATimeofWar_Eng_v8.cs:10033
+- type: 'conditional'
+  if: 'timemistake == 8'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:10037
+  - type: 'text'
+    # ../en-US.restext:798 | "**Rebuilding**"
+    value: 'restext://ParadoxEvent_006'
+  # ../.source/ATimeofWar_Eng_v8.cs:10039
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:10041
+  - type: 'text'
+    # ../en-US.restext:799 | "With no monument built, t..."
+    value: 'restext://ParadoxEvent_007'
+  # ../.source/ATimeofWar_Eng_v8.cs:10044
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:10046
+  - type: 'text'
+    # ../en-US.restext:800 | "It was a bitter pill to s..."
+    value: 'restext://ParadoxEvent_008'
+  # ../.source/ATimeofWar_Eng_v8.cs:10050
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:10052
+  - type: 'link'
+    # ../en-US.restext:24 | "Click to continue..."
+    label: 'restext://Common_020'
+    target: 'Scoring' # ./00004-Scoring.mws.yaml
+    snapshot: true
+# ../.source/ATimeofWar_Eng_v8.cs:10056
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:10058
+    - type: 'conditional'
+      if: 'giants >= 1'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:10060
+      - type: 'assign'
+        var: 'ending'
+        expr: '"ATOW-End1"' # ./00251-ATOW-End1.mws.yaml
+      else:
+      # ../.source/ATimeofWar_Eng_v8.cs:10064
+      - type: 'assign'
+        var: 'ending'
+        expr: '"ATOW-End2"' # ./00252-ATOW-End2.mws.yaml
+  - match: 3
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:10069
+    - type: 'conditional'
+      if: 'giants >= 2'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:10071
+      - type: 'assign'
+        var: 'ending'
+        expr: '"ATOW-End1"' # ./00251-ATOW-End1.mws.yaml
+      else:
+      # ../.source/ATimeofWar_Eng_v8.cs:10075
+      - type: 'assign'
+        var: 'ending'
+        expr: '"ATOW-End2"' # ./00252-ATOW-End2.mws.yaml
+  - match: 4
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:10080
+    - type: 'conditional'
+      if: 'giants >= 3'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:10082
+      - type: 'assign'
+        var: 'ending'
+        expr: '"ATOW-End1"' # ./00251-ATOW-End1.mws.yaml
+      else:
+      # ../.source/ATimeofWar_Eng_v8.cs:10086
+      - type: 'assign'
+        var: 'ending'
+        expr: '"ATOW-End2"' # ./00252-ATOW-End2.mws.yaml
+  - match: 5
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:10091
+    - type: 'conditional'
+      if: 'giants >= 3'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:10093
+      - type: 'assign'
+        var: 'ending'
+        expr: '"ATOW-End1"' # ./00251-ATOW-End1.mws.yaml
+      else:
+      # ../.source/ATimeofWar_Eng_v8.cs:10097
+      - type: 'assign'
+        var: 'ending'
+        expr: '"ATOW-End2"' # ./00252-ATOW-End2.mws.yaml

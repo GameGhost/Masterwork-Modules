@@ -1,0 +1,227 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:1817
+---
+format: 'mws/0.4'
+passage_id: 'Mania'
+# ../en-US.restext:154 | "WITCH HUNT"
+title: 'restext://Common_150'
+# ../en-US.restext:155 | "Early Years"
+subtitle: 'restext://Common_151'
+tags:
+- 'HUB'
+layout: 'hub'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:1824
+- type: 'assign'
+  var: 'round'
+  expr: '1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1827
+- type: 'conditional'
+  if: '!whpg'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:1831
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:156 | "Accept"
+    okay: 'restext://Common_152'
+    header:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:1835
+    - type: 'image'
+      asset: 'image://setup/AngryMobSetup1'
+      style: 'setup-image'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:1837
+    - type: 'text'
+      # ../en-US.restext:401 | "Turn to the **Fear of the..."
+      value: 'restext://Mania_004'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:1863
+    - type: 'switch'
+      on: 'players'
+      cases:
+      - match: 2
+        nodes:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:1865
+        - type: 'assign'
+          var: 'tracker'
+          expr: '6'
+      - match: 3
+        nodes:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:1869
+        - type: 'assign'
+          var: 'tracker'
+          expr: 'rand_between(6, 7, "Mania_0")'
+      - match: 4
+        nodes:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:1873
+        - type: 'assign'
+          var: 'tracker'
+          expr: 'rand_between(7, 9, "Mania_1")'
+      - match: 5
+        nodes:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:1877
+        - type: 'assign'
+          var: 'tracker'
+          expr: 'rand_between(8, 10, "Mania_2")'
+      - match: 2
+        nodes:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:1891
+        - type: 'assign'
+          var: 'randomplayer'
+          expr: '[nameA, nameB].shuffled("Mania_3")[0]'
+      - match: 3
+        nodes:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:1895
+        - type: 'assign'
+          var: 'randomplayer'
+          expr: '[nameA, nameB, nameC].shuffled("Mania_4")[0]'
+      - match: 4
+        nodes:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:1899
+        - type: 'assign'
+          var: 'randomplayer'
+          expr: '[nameA, nameB, nameC, nameD].shuffled("Mania_5")[0]'
+      - match: 5
+        nodes:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:1903
+        - type: 'assign'
+          var: 'randomplayer'
+          expr: '[nameA, nameB, nameC, nameD, nameE].shuffled("Mania_6")[0]'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:1905
+    - type: 'assign'
+      var: 'randomname'
+      expr: 'randomplayer'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:1858
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:1860
+    - type: 'text'
+      # ../en-US.restext:402 | "Place the Suspicion Marke..."
+      value: 'restext://Mania_005'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1916
+- type: 'section'
+  # ../en-US.restext:157 | "{icon:storybooktoken} **F..."
+  title: 'restext://Common_153'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:1926
+  - type: 'text'
+    # ../en-US.restext:158 | "Any time a player is over..."
+    value: 'restext://Common_154'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:1930
+  - type: 'link'
+    # ../en-US.restext:159 | "click here for a special ..."
+    label: 'restext://Common_155'
+    target: 'PlotPlayerCheckin' # ./00202-PlotPlayerCheckin.mws.yaml
+    snapshot: true
+# ../.source/FearoftheUnknown_Eng_v15.cs:1933
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1936
+- type: 'conditional'
+  if: 'fp10vp == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:1940
+  - type: 'section'
+    # ../en-US.restext:160 | "{icon:storybooktoken} **10VP**"
+    title: 'restext://Common_156'
+    style: 'hub-card'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:1950
+    - type: 'text'
+      # ../en-US.restext:161 | "Whenever a player reaches..."
+      value: 'restext://Common_157'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:1951
+    - type: 'link'
+      # ../en-US.restext:162 | "click here"
+      label: 'restext://Common_158'
+      target: 'FP10VP' # ./00129-FP10VP.mws.yaml
+      snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:1953
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1957
+- type: 'conditional'
+  if: 'fpresearch2 == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:1961
+  - type: 'section'
+    # ../en-US.restext:163 | "{icon:storybooktoken} **R..."
+    title: 'restext://Common_159'
+    style: 'hub-card'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:1972
+    - type: 'text'
+      # ../en-US.restext:164 | "Whenever a player reaches..."
+      value: 'restext://Common_160'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:1973
+    - type: 'link'
+      # ../en-US.restext:403 | "Click here."
+      label: 'restext://Mania_014'
+      target: 'FPResearch2' # ./00130-FPResearch2.mws.yaml
+      snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:1976
+  - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1978
+- type: 'conditional'
+  if: 'fpsanity3 == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:1982
+  - type: 'section'
+    # ../en-US.restext:165 | "{icon:storybooktoken} **I..."
+    title: 'restext://Common_161'
+    style: 'hub-card'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:1993
+    - type: 'text'
+      # ../en-US.restext:166 | "Whenever a player reaches..."
+      value: 'restext://Common_162'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:1996
+    - type: 'link'
+      # ../en-US.restext:167 | "Click here…"
+      label: 'restext://Common_163'
+      target: 'FPSanity3' # ./00131-FPSanity3.mws.yaml
+      snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:1999
+  - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2001
+- type: 'conditional'
+  if: 'fpcreepy3 == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:2005
+  - type: 'section'
+    # ../en-US.restext:168 | "{icon:storybooktoken} **C..."
+    title: 'restext://Common_164'
+    style: 'hub-card'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2015
+    - type: 'text'
+      # ../en-US.restext:169 | "Whenever a player reaches..."
+      value: 'restext://Common_165'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2018
+    - type: 'link'
+      # ../en-US.restext:170 | "click here..."
+      label: 'restext://Common_166'
+      target: 'FPCreepy3' # ./00132-FPCreepy3.mws.yaml
+      snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:2020
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2025
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2028
+- type: 'section'
+  # ../en-US.restext:171 | "**Second Round Event**"
+  title: 'restext://Common_167'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:2037
+  - type: 'text'
+    # ../en-US.restext:172 | "As tensions rise and accu..."
+    value: 'restext://Common_168'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:2039
+  - type: 'break'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:2042
+  - type: 'link'
+    # ../en-US.restext:173 | "Click here at the end of ..."
+    label: 'restext://Common_169'
+    target: 'Mania2' # ./00036-Mania2.mws.yaml
+    snapshot: true

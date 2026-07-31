@@ -1,0 +1,76 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:27061
+---
+format: 'mws/0.4'
+passage_id: 'MartialSepEventa'
+# ../en-US.restext:2220 | "BRIBE"
+title: 'restext://MartialSepEventa_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:27071
+- type: 'text'
+  # ../en-US.restext:2221 | "**The Region Needs Convin..."
+  value: 'restext://MartialSepEventa_002'
+# ../.source/ATimeofWar_Eng_v8.cs:27073
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:27074
+- type: 'text'
+  # ../en-US.restext:2222 | "All players take their mo..."
+  value: 'restext://MartialSepEventa_003'
+# ../.source/ATimeofWar_Eng_v8.cs:27076
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:27078
+- type: 'text'
+  # ../en-US.restext:2223 | "Once all players are read..."
+  value: 'restext://MartialSepEventa_004'
+# ../.source/ATimeofWar_Eng_v8.cs:27085
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:27087
+    - type: 'assign'
+      var: 'milit'
+      expr: 'milit + 1'
+  - match: 3
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:27091
+    - type: 'assign'
+      var: 'milit'
+      expr: 'milit + 2'
+  - match: 4
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:27095
+    - type: 'assign'
+      var: 'milit'
+      expr: 'milit + 2'
+  - match: 5
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:27099
+    - type: 'assign'
+      var: 'milit'
+      expr: 'milit + 2'
+# ../.source/ATimeofWar_Eng_v8.cs:27079
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:27081
+- type: 'text'
+  # ../en-US.restext:2224 | "The Military requires **$..."
+  value: 'restext://MartialSepEventa_005'
+# ../.source/ATimeofWar_Eng_v8.cs:27120
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:27124
+- type: 'text'
+  # ../en-US.restext:2225 | "_If successful,_ **all** ..."
+  value: 'restext://MartialSepEventa_006'
+# ../.source/ATimeofWar_Eng_v8.cs:27133
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:27135
+- type: 'link'
+  # ../en-US.restext:2226 | "Click here to start the b..."
+  label: 'restext://MartialSepEventa_007'
+  target: 'MartialSepEventb' # ./00217-MartialSepEventb.mws.yaml
+  snapshot: true

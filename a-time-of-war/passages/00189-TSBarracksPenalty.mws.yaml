@@ -1,0 +1,72 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:20057
+---
+format: 'mws/0.4'
+passage_id: 'TSBarracksPenalty'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:20059
+- type: 'conditional'
+  if: 'barracks == "yes"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:20063
+  - type: 'text'
+    # ../en-US.restext:1662 | "**Lack of Service Penalty**"
+    value: 'restext://TSBarracksPenalty_001'
+  # ../.source/ATimeofWar_Eng_v8.cs:20065
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:20067
+  - type: 'text'
+    # ../en-US.restext:1663 | "If any player's Caretaker..."
+    value: 'restext://TSBarracksPenalty_002'
+  # ../.source/ATimeofWar_Eng_v8.cs:20074
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:20076
+  - type: 'conditional'
+    if: 'gunsbonus == 0'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:20078
+    - type: 'switch'
+      on: 'townname'
+      cases:
+      - match: 'Paradox'
+        nodes:
+        # ../.source/ATimeofWar_Eng_v8.cs:20080
+        - type: 'assign'
+          var: 'war'
+          expr: '1'
+      - match: 'Destruction'
+        nodes:
+        # ../.source/ATimeofWar_Eng_v8.cs:20084
+        - type: 'assign'
+          var: 'war'
+          expr: '2'
+    # ../.source/ATimeofWar_Eng_v8.cs:20086
+    - type: 'conditional'
+      if: 'war == 1'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:20087
+      - type: 'link'
+        # ../en-US.restext:24 | "Click to continue..."
+        label: 'restext://Common_020'
+        target: 'Warwarn' # ./00112-Warwarn.mws.yaml
+        snapshot: true
+      else:
+      # ../.source/ATimeofWar_Eng_v8.cs:20089
+      - type: 'link'
+        # ../en-US.restext:24 | "Click to continue..."
+        label: 'restext://Common_020'
+        target: 'TowardsWar' # ./00014-TowardsWar.mws.yaml
+        snapshot: true
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:20093
+    - type: 'link'
+      # ../en-US.restext:24 | "Click to continue..."
+      label: 'restext://Common_020'
+      target: 'SeedGUNS' # ./00125-SeedGUNS.mws.yaml
+      snapshot: true
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:20098
+  - type: 'goto'
+    target: 'SeedGUNS' # ./00125-SeedGUNS.mws.yaml

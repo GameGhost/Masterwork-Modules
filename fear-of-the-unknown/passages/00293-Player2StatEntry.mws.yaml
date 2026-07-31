@@ -1,0 +1,28 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:32449
+---
+format: 'mws/0.4'
+passage_id: 'Player2StatEntry'
+# ../en-US.restext:2385 | "{nameB}'s Warrior"
+title: 'restext://Player2StatEntry_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:32460
+- type: 'text'
+  # ../en-US.restext:2386 | "**Carefully hand this Sto..."
+  value: 'restext://Player2StatEntry_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32464
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32466
+- type: 'text'
+  # ../en-US.restext:226 | "Please enter your Warrior..."
+  value: 'restext://Common_222'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32473
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:32475
+- type: 'link'
+  # ../en-US.restext:227 | "Click to begin..."
+  label: 'restext://Common_223'
+  target: 'Player2Stats' # ./00223-Player2Stats.mws.yaml
+  snapshot: true

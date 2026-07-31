@@ -1,0 +1,62 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:9463
+---
+format: 'mws/0.4'
+passage_id: 'Witchwolf2b'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:9468
+- type: 'text'
+  # ../en-US.restext:330 | "**Carefully pick up this ..."
+  value: 'restext://Common_326'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9472
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9474
+- type: 'text'
+  # ../en-US.restext:331 | "I would like to hex:"
+  value: 'restext://Common_327'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9475
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9478
+- type: 'link'
+  # ../en-US.restext:338 | "The Park"
+  label: 'restext://Common_334'
+  target: 'Witchwolf2c' # ./00066-Witchwolf2c.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:9493
+  - type: 'assign'
+    var: 'witB2'
+    # ../en-US.restext:90 | "Park"
+    expr: '"restext://Common_086"'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9479
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9482
+- type: 'link'
+  # ../en-US.restext:339 | "The Builder's Office"
+  label: 'restext://Common_335'
+  target: 'Witchwolf2c' # ./00066-Witchwolf2c.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:9500
+  - type: 'assign'
+    var: 'witB2'
+    # ../en-US.restext:91 | "Builder's Office"
+    expr: '"restext://Common_087"'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9483
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9486
+- type: 'link'
+  # ../en-US.restext:340 | "The Cemetery"
+  label: 'restext://Common_336'
+  target: 'Witchwolf2c' # ./00066-Witchwolf2c.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:9507
+  - type: 'assign'
+    var: 'witB2'
+    # ../en-US.restext:92 | "Cemetery"
+    expr: '"restext://Common_088"'

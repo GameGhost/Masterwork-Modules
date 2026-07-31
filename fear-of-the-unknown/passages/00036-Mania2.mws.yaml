@@ -1,0 +1,144 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:5572
+---
+format: 'mws/0.4'
+passage_id: 'Mania2'
+# ../en-US.restext:154 | "WITCH HUNT"
+title: 'restext://Common_150'
+# ../en-US.restext:151 | "Middle Years"
+subtitle: 'restext://Common_147'
+tags:
+- 'HUB'
+layout: 'hub'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:5579
+- type: 'assign'
+  var: 'round'
+  expr: '2'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5584
+- type: 'section'
+  # ../en-US.restext:157 | "{icon:storybooktoken} **F..."
+  title: 'restext://Common_153'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5595
+  - type: 'text'
+    # ../en-US.restext:158 | "Any time a player is over..."
+    value: 'restext://Common_154'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5599
+  - type: 'link'
+    # ../en-US.restext:159 | "click here for a special ..."
+    label: 'restext://Common_155'
+    target: 'PlotPlayerCheckin' # ./00202-PlotPlayerCheckin.mws.yaml
+    snapshot: true
+# ../.source/FearoftheUnknown_Eng_v15.cs:5602
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5605
+- type: 'conditional'
+  if: 'fp10vp == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5609
+  - type: 'section'
+    # ../en-US.restext:160 | "{icon:storybooktoken} **10VP**"
+    title: 'restext://Common_156'
+    style: 'hub-card'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:5620
+    - type: 'text'
+      # ../en-US.restext:161 | "Whenever a player reaches..."
+      value: 'restext://Common_157'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:5621
+    - type: 'link'
+      # ../en-US.restext:162 | "click here"
+      label: 'restext://Common_158'
+      target: 'FP10VP' # ./00129-FP10VP.mws.yaml
+      snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5624
+  - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5626
+- type: 'conditional'
+  if: 'fpresearch2 == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5630
+  - type: 'section'
+    # ../en-US.restext:163 | "{icon:storybooktoken} **R..."
+    title: 'restext://Common_159'
+    style: 'hub-card'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:5641
+    - type: 'text'
+      # ../en-US.restext:164 | "Whenever a player reaches..."
+      value: 'restext://Common_160'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:5642
+    - type: 'link'
+      # ../en-US.restext:308 | "click here."
+      label: 'restext://Common_304'
+      target: 'FPResearch2' # ./00130-FPResearch2.mws.yaml
+      snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5645
+  - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5647
+- type: 'conditional'
+  if: 'fpsanity3 == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5652
+  - type: 'section'
+    # ../en-US.restext:165 | "{icon:storybooktoken} **I..."
+    title: 'restext://Common_161'
+    style: 'hub-card'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:5663
+    - type: 'text'
+      # ../en-US.restext:166 | "Whenever a player reaches..."
+      value: 'restext://Common_162'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:5666
+    - type: 'link'
+      # ../en-US.restext:152 | "Click here..."
+      label: 'restext://Common_148'
+      target: 'FPSanity3' # ./00131-FPSanity3.mws.yaml
+      snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5669
+  - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5671
+- type: 'conditional'
+  if: 'fpcreepy3 == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5675
+  - type: 'section'
+    # ../en-US.restext:168 | "{icon:storybooktoken} **C..."
+    title: 'restext://Common_164'
+    style: 'hub-card'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:5686
+    - type: 'text'
+      # ../en-US.restext:169 | "Whenever a player reaches..."
+      value: 'restext://Common_165'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:5689
+    - type: 'link'
+      # ../en-US.restext:167 | "Click here…"
+      label: 'restext://Common_163'
+      target: 'FPCreepy3' # ./00132-FPCreepy3.mws.yaml
+      snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5692
+  - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5694
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5698
+- type: 'section'
+  # ../en-US.restext:171 | "**Second Round Event**"
+  title: 'restext://Common_167'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5706
+  - type: 'text'
+    # ../en-US.restext:172 | "As tensions rise and accu..."
+    value: 'restext://Common_168'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5708
+  - type: 'break'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5711
+  - type: 'link'
+    # ../en-US.restext:150 | "Click here to continue to..."
+    label: 'restext://Common_146'
+    target: 'S4Kill1' # ./00006-S4Kill1.mws.yaml
+    snapshot: true

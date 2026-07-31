@@ -1,0 +1,331 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:7640
+---
+format: 'mws/0.4'
+passage_id: 'Warning3'
+# ../en-US.restext:241 | "Not Again"
+title: 'restext://Common_237'
+# ../en-US.restext:207 | "Late Years"
+subtitle: 'restext://Common_203'
+tags:
+- 'HUB'
+layout: 'hub'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:7647
+- type: 'assign'
+  var: 'round'
+  expr: '15'
+# ../.source/ATimeofWar_Eng_v8.cs:7651
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:211 | "Accept"
+  okay: 'restext://Common_207'
+  header:
+  # ../.source/ATimeofWar_Eng_v8.cs:7655
+  - type: 'image'
+    asset: 'image://setup/VillageChronicleCover'
+    style: 'setup-image'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:7657
+  - type: 'text'
+    # ../en-US.restext:677 | "Turn to page **{cont}** o..."
+    value: 'restext://Warning3_001'
+# ../.source/ATimeofWar_Eng_v8.cs:7666
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:7667
+- type: 'switch'
+  on: 'cont'
+  cases:
+  - match: 17
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:7671
+    - type: 'section'
+      # ../en-US.restext:242 | "**Peaceful Green**"
+      title: 'restext://Common_238'
+      style: 'hub-card'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:7679
+      - type: 'text'
+        # ../en-US.restext:243 | "While some of the village..."
+        value: 'restext://Common_239'
+    # ../.source/ATimeofWar_Eng_v8.cs:7687
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:7691
+    - type: 'section'
+      # ../en-US.restext:244 | "{icon:storybooktoken} **V..."
+      title: 'restext://Common_240'
+      style: 'hub-card'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:7700
+      - type: 'text'
+        # ../en-US.restext:245 | "When a player completes a..."
+        value: 'restext://Common_241'
+      # ../.source/ATimeofWar_Eng_v8.cs:7706
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/ATimeofWar_Eng_v8.cs:7709
+      - type: 'link'
+        # ../en-US.restext:246 | "Click here to change the ..."
+        label: 'restext://Common_242'
+        target: 'TimeWarp' # ./00054-TimeWarp.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/ATimeofWar_Eng_v8.cs:7976
+        - type: 'assign'
+          var: 'search'
+          expr: 'search + 1'
+  - match: 18
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:7717
+    - type: 'section'
+      # ../en-US.restext:247 | "**Breaking the 4th Wall**"
+      title: 'restext://Common_243'
+      style: 'hub-card'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:7725
+      - type: 'text'
+        # ../en-US.restext:248 | "The world has changed aga..."
+        value: 'restext://Common_244'
+      # ../.source/ATimeofWar_Eng_v8.cs:7728
+      - type: 'let'
+        var: '_rnd_Warning3_0'
+        expr: '["We feel the emotional weight of six years of developing this game and writing it all by hand resting on our shoulders. ''They better like it.'' A voice whispers. It is the game designer again, self-inserting, which is kind of a hack move.", "I think an empty page is exactly what we need right now. Maybe this is a chance to recognize that we''re all aimlessly trudging forward through the void. Maybe there''s a deeper meaning to it all and we should take a moment to discuss it. Board games just aren''t what they used to be. Why do they need electronic apps? Perhaps it''s best if we visit the bank and get out of here before the game designer starts acting even more like a hipster."].shuffled("Warning3_0")[0]'
+      # ../.source/ATimeofWar_Eng_v8.cs:7726
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/ATimeofWar_Eng_v8.cs:7728
+      - type: 'text'
+        value: '{_rnd_Warning3_0}'
+        lets:
+        - '_rnd_Warning3_0'
+    # ../.source/ATimeofWar_Eng_v8.cs:7732
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:7736
+    - type: 'section'
+      # ../en-US.restext:249 | "{icon:storybooktoken} **V..."
+      title: 'restext://Common_245'
+      style: 'hub-card'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:7746
+      - type: 'text'
+        # ../en-US.restext:250 | "When a player completes a..."
+        value: 'restext://Common_246'
+      # ../.source/ATimeofWar_Eng_v8.cs:7752
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/ATimeofWar_Eng_v8.cs:7755
+      - type: 'link'
+        # ../en-US.restext:246 | "Click here to change the ..."
+        label: 'restext://Common_242'
+        target: 'TimeWarp' # ./00054-TimeWarp.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/ATimeofWar_Eng_v8.cs:7976
+        - type: 'assign'
+          var: 'search'
+          expr: 'search + 1'
+  - match: 19
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:7762
+    - type: 'section'
+      # ../en-US.restext:251 | "**Too Perfect**"
+      title: 'restext://Common_247'
+      style: 'hub-card'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:7770
+      - type: 'text'
+        # ../en-US.restext:678 | "There was an eerily seren..."
+        value: 'restext://Warning3_002'
+    # ../.source/ATimeofWar_Eng_v8.cs:7772
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:7776
+    - type: 'section'
+      # ../en-US.restext:252 | "**Science is Stressful**"
+      title: 'restext://Common_248'
+      style: 'hub-card'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:7784
+      - type: 'text'
+        # ../en-US.restext:679 | "We feel a deep lethargy o..."
+        value: 'restext://Warning3_003'
+    # ../.source/ATimeofWar_Eng_v8.cs:7797
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:7801
+    - type: 'section'
+      # ../en-US.restext:253 | "{icon:storybooktoken} **V..."
+      title: 'restext://Common_249'
+      style: 'hub-card'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:7810
+      - type: 'text'
+        # ../en-US.restext:254 | "When a player completes a..."
+        value: 'restext://Common_250'
+      # ../.source/ATimeofWar_Eng_v8.cs:7816
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/ATimeofWar_Eng_v8.cs:7819
+      - type: 'link'
+        # ../en-US.restext:246 | "Click here to change the ..."
+        label: 'restext://Common_242'
+        target: 'TimeWarp' # ./00054-TimeWarp.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/ATimeofWar_Eng_v8.cs:7976
+        - type: 'assign'
+          var: 'search'
+          expr: 'search + 1'
+  - match: 20
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:7827
+    - type: 'section'
+      # ../en-US.restext:255 | "**Big Brother**"
+      title: 'restext://Common_251'
+      style: 'hub-card'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:7835
+      - type: 'text'
+        # ../en-US.restext:256 | "Everyone in the town was ..."
+        value: 'restext://Common_252'
+    # ../.source/ATimeofWar_Eng_v8.cs:7837
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:7842
+    - type: 'section'
+      # ../en-US.restext:257 | "{icon:storybooktoken} **V..."
+      title: 'restext://Common_253'
+      style: 'hub-card'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:7851
+      - type: 'text'
+        # ../en-US.restext:258 | "When a player completes a..."
+        value: 'restext://Common_254'
+      # ../.source/ATimeofWar_Eng_v8.cs:7857
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/ATimeofWar_Eng_v8.cs:7860
+      - type: 'link'
+        # ../en-US.restext:246 | "Click here to change the ..."
+        label: 'restext://Common_242'
+        target: 'TimeWarp' # ./00054-TimeWarp.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/ATimeofWar_Eng_v8.cs:7976
+        - type: 'assign'
+          var: 'search'
+          expr: 'search + 1'
+  - match: 21
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:7867
+    - type: 'section'
+      # ../en-US.restext:259 | "**Amphibious**"
+      title: 'restext://Common_255'
+      style: 'hub-card'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:7875
+      - type: 'text'
+        # ../en-US.restext:260 | "We arrived at an astonish..."
+        value: 'restext://Common_256'
+    # ../.source/ATimeofWar_Eng_v8.cs:7877
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:7881
+    - type: 'section'
+      # ../en-US.restext:261 | "{icon:storybooktoken} **V..."
+      title: 'restext://Common_257'
+      style: 'hub-card'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:7890
+      - type: 'text'
+        # ../en-US.restext:262 | "When a player completes a..."
+        value: 'restext://Common_258'
+      # ../.source/ATimeofWar_Eng_v8.cs:7896
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/ATimeofWar_Eng_v8.cs:7899
+      - type: 'link'
+        # ../en-US.restext:246 | "Click here to change the ..."
+        label: 'restext://Common_242'
+        target: 'TimeWarp' # ./00054-TimeWarp.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/ATimeofWar_Eng_v8.cs:7976
+        - type: 'assign'
+          var: 'search'
+          expr: 'search + 1'
+  - match: 22
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:7906
+    - type: 'section'
+      # ../en-US.restext:263 | "**Age of the Dinosaurs**"
+      title: 'restext://Common_259'
+      style: 'hub-card'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:7914
+      - type: 'text'
+        # ../en-US.restext:264 | "We were immediately accos..."
+        value: 'restext://Common_260'
+      # ../.source/ATimeofWar_Eng_v8.cs:7915
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/ATimeofWar_Eng_v8.cs:7917
+      - type: 'text'
+        # ../en-US.restext:680 | "Suddenly, a thunderous no..."
+        value: 'restext://Warning3_004'
+      # ../.source/ATimeofWar_Eng_v8.cs:7918
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/ATimeofWar_Eng_v8.cs:7920
+      - type: 'text'
+        # ../en-US.restext:681 | "As the biomechanical mena..."
+        value: 'restext://Warning3_005'
+    # ../.source/ATimeofWar_Eng_v8.cs:7924
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:7928
+    - type: 'section'
+      # ../en-US.restext:265 | "{icon:storybooktoken} **V..."
+      title: 'restext://Common_261'
+      style: 'hub-card'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:7937
+      - type: 'text'
+        # ../en-US.restext:266 | "When a player completes a..."
+        value: 'restext://Common_262'
+      # ../.source/ATimeofWar_Eng_v8.cs:7943
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/ATimeofWar_Eng_v8.cs:7946
+      - type: 'link'
+        # ../en-US.restext:246 | "Click here to change the ..."
+        label: 'restext://Common_242'
+        target: 'TimeWarp' # ./00054-TimeWarp.mws.yaml
+        snapshot: true
+        onclick:
+        # ../.source/ATimeofWar_Eng_v8.cs:7976
+        - type: 'assign'
+          var: 'search'
+          expr: 'search + 1'
+# ../.source/ATimeofWar_Eng_v8.cs:7949
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:7952
+- type: 'section'
+  # ../en-US.restext:124 | "**Utopian Experiments**"
+  title: 'restext://Common_120'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:7960
+  - type: 'text'
+    # ../en-US.restext:267 | "A new set of Experiments ..."
+    value: 'restext://Common_263'
+  # ../.source/ATimeofWar_Eng_v8.cs:7962
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:7966
+  - type: 'link'
+    # ../en-US.restext:272 | "Click here at the End of ..."
+    label: 'restext://Common_268'
+    target: 'Scoring' # ./00004-Scoring.mws.yaml
+    snapshot: true

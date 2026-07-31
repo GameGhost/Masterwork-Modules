@@ -1,0 +1,156 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:5946
+---
+format: 'mws/0.4'
+passage_id: 'Peace1'
+# ../en-US.restext:140 | "World Conquest"
+title: 'restext://Common_136'
+# ../en-US.restext:210 | "Early Years"
+subtitle: 'restext://Common_206'
+tags:
+- 'HUB'
+layout: 'hub'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:5953
+- type: 'assign'
+  var: 'round'
+  expr: '19'
+# ../.source/ATimeofWar_Eng_v8.cs:5956
+- type: 'conditional'
+  if: '!pea1'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:5960
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:211 | "Accept"
+    okay: 'restext://Common_207'
+    header:
+    # ../.source/ATimeofWar_Eng_v8.cs:5964
+    - type: 'image'
+      asset: 'image://setup/AngryMob_Icon'
+      style: 'setup-image'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:5966
+    - type: 'text'
+      # ../en-US.restext:585 | "Turn to page **11** of th..."
+      value: 'restext://Peace1_002'
+    # ../.source/ATimeofWar_Eng_v8.cs:5972
+    - type: 'conditional'
+      if: 'wardestroy >= 1'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:5974
+      - type: 'text'
+        # ../en-US.restext:141 | "Each player **pays $1** i..."
+        value: 'restext://Common_137'
+    # ../.source/ATimeofWar_Eng_v8.cs:5981
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:5983
+    - type: 'text'
+      # ../en-US.restext:62 | "Place the Suspicion Marke..."
+      value: 'restext://Common_058'
+    # ../.source/ATimeofWar_Eng_v8.cs:5986
+    - type: 'conditional'
+      if: '!Peace1'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:5988
+      - type: 'assign'
+        var: 'Peace1'
+        expr: '1'
+      # ../.source/ATimeofWar_Eng_v8.cs:5989
+      - type: 'assign'
+        var: 'tracker'
+        expr: 'tracker + 1'
+      # ../.source/ATimeofWar_Eng_v8.cs:5990
+      - type: 'switch'
+        on: 'players'
+        cases:
+        - match: 4
+          nodes:
+          # ../.source/ATimeofWar_Eng_v8.cs:5992
+          - type: 'assign'
+            var: 'tracker'
+            expr: 'tracker + 1'
+        - match: 5
+          nodes:
+          # ../.source/ATimeofWar_Eng_v8.cs:5996
+          - type: 'assign'
+            var: 'tracker'
+            expr: 'tracker + 2'
+    # ../.source/ATimeofWar_Eng_v8.cs:5999
+    - type: 'text'
+      # ../en-US.restext:63 | "**{tracker}** and the {ic..."
+      value: 'restext://Common_059'
+    # ../.source/ATimeofWar_Eng_v8.cs:6004
+    - type: 'conditional'
+      if: 'players == 3'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:6006
+      - type: 'break'
+      # ../.source/ATimeofWar_Eng_v8.cs:6007
+      - type: 'text'
+        # ../en-US.restext:230 | "Then, since this is a 3 p..."
+        value: 'restext://Common_226'
+  # ../.source/ATimeofWar_Eng_v8.cs:6010
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:6015
+- type: 'section'
+  # ../en-US.restext:142 | "**Separatist Allegiance**"
+  title: 'restext://Common_138'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:6023
+  - type: 'text'
+    # ../en-US.restext:143 | "If a player does **NOT** ..."
+    value: 'restext://Common_139'
+# ../.source/ATimeofWar_Eng_v8.cs:6043
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:6047
+- type: 'section'
+  # ../en-US.restext:144 | "{icon:storybooktoken} **W..."
+  title: 'restext://Common_140'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:6057
+  - type: 'link'
+    # ../en-US.restext:145 | "For an explanation of war..."
+    label: 'restext://Common_141'
+    target: 'HowtoWar' # ./00071-HowtoWar.mws.yaml
+    snapshot: true
+  # ../.source/ATimeofWar_Eng_v8.cs:6058
+  - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:6059
+  - type: 'text'
+    # ../en-US.restext:586 | "The Empire has decided to..."
+    value: 'restext://Peace1_008'
+# ../.source/ATimeofWar_Eng_v8.cs:6064
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:6066
+- type: 'conditional'
+  if: 'bribe == "yes"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:6070
+  - type: 'section'
+    # ../en-US.restext:84 | "**Everything is a Weapon**"
+    title: 'restext://Common_080'
+    style: 'hub-card'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:6078
+    - type: 'text'
+      # ../en-US.restext:146 | "When performing an Experi..."
+      value: 'restext://Common_142'
+# ../.source/ATimeofWar_Eng_v8.cs:6087
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:6090
+- type: 'section'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:6095
+  - type: 'link'
+    # ../en-US.restext:587 | "Click here at the end of ..."
+    label: 'restext://Peace1_010'
+    target: 'ATOW-FamineEvent' # ./00172-ATOW-FamineEvent.mws.yaml
+    snapshot: true

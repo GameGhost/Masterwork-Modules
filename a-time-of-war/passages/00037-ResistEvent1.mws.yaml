@@ -1,0 +1,73 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:5190
+---
+format: 'mws/0.4'
+passage_id: 'ResistEvent1'
+# ../en-US.restext:538 | "Quartering Enforced"
+title: 'restext://ResistEvent1_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:5197
+- type: 'text'
+  # ../en-US.restext:539 | "The military accepts our ..."
+  value: 'restext://ResistEvent1_002'
+# ../.source/ATimeofWar_Eng_v8.cs:5199
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:5203
+- type: 'popup'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  layout: 'reveal'
+  # ../en-US.restext:182 | "Close"
+  cancel: 'restext://Common_178'
+  snapshot: true
+  header:
+  # ../.source/ATimeofWar_Eng_v8.cs:5229
+  - type: 'image'
+    asset: 'image://setup/S3_EstateUpgradeBack'
+    style: 'setup-image'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:5212
+  - type: 'conditional'
+    # ../en-US.restext:25 | "Separatists"
+    if: 'warwinner == "restext://Common_021"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:5214
+    - type: 'section'
+      style: 'panel'
+      content: []
+    - type: 'link'
+      # ../en-US.restext:169 | "Continue"
+      label: 'restext://Common_165'
+      target: 'MartialSepEvent' # ./00070-MartialSepEvent.mws.yaml
+      snapshot: true
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:5219
+    - type: 'section'
+      style: 'panel'
+      content: []
+    - type: 'link'
+      # ../en-US.restext:169 | "Continue"
+      label: 'restext://Common_165'
+      target: 'BarracksSimple2' # ./00158-BarracksSimple2.mws.yaml
+      snapshot: true
+  # ../.source/ATimeofWar_Eng_v8.cs:5235
+  - type: 'let'
+    var: '_rnd_ResistEvent1_0'
+    expr: 'rand_between(1, 3, "ResistEvent1_0")'
+  # ../.source/ATimeofWar_Eng_v8.cs:5230
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:5234
+  - type: 'text'
+    # ../en-US.restext:540 | "**Award {_rnd_ResistEvent..."
+    value: 'restext://ResistEvent1_004'
+    lets:
+    - '_rnd_ResistEvent1_0'
+  # ../.source/ATimeofWar_Eng_v8.cs:5238
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:5240
+  - type: 'text'
+    # ../en-US.restext:541 | "All other players **MUST*..."
+    value: 'restext://ResistEvent1_005'

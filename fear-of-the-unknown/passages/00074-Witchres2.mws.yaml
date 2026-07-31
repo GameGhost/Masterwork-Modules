@@ -1,0 +1,105 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:10108
+---
+format: 'mws/0.4'
+passage_id: 'Witchres2'
+# ../en-US.restext:832 | "Cursed Removal"
+title: 'restext://Witchres2_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:10115
+- type: 'assign'
+  var: 'cursed'
+  expr: '1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10119
+- type: 'text'
+  # ../en-US.restext:328 | "**Letter from {randomname..."
+  value: 'restext://Common_324'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10128
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10130
+- type: 'conditional'
+  conditions:
+  - if: 'randomname == witch'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10132
+    - type: 'text'
+      # ../en-US.restext:835 | "It was I who was chosen. ..."
+      value: 'restext://Witchres2_005'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10133
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10135
+    - type: 'text'
+      # ../en-US.restext:836 | "I would never harm anyone..."
+      value: 'restext://Witchres2_006'
+  - if: 'wsuspect == witch'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10140
+    - type: 'text'
+      # ../en-US.restext:837 | "The town was appeased by ..."
+      value: 'restext://Witchres2_007'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10143
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10145
+    - type: 'text'
+      # ../en-US.restext:838 | "I only wish the wretch wo..."
+      value: 'restext://Witchres2_008'
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10153
+  - type: 'text'
+    # ../en-US.restext:833 | "The town was appeased by ..."
+    value: 'restext://Witchres2_003'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10156
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10158
+  - type: 'text'
+    # ../en-US.restext:834 | "I only wish they would ha..."
+    value: 'restext://Witchres2_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10163
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10167
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: 'Caravancheck' # ./00105-Caravancheck.mws.yaml
+  # ../en-US.restext:275 | "Close"
+  okay: 'restext://Common_271'
+  snapshot: true
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10182
+  - type: 'image'
+    asset: 'image://setup/S2_WitchHexToken'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10185
+  - type: 'conditional'
+    if: 'witch == wsuspect'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10187
+    - type: 'text'
+      # ../en-US.restext:841 | "The vile {wsuspect} perfo..."
+      value: 'restext://Witchres2_011'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10190
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10192
+    - type: 'text'
+      # ../en-US.restext:842 | "Place the Witch's Hex {ic..."
+      value: 'restext://Witchres2_012'
+    else:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10205
+    - type: 'text'
+      # ../en-US.restext:839 | "**{witch}** must place th..."
+      value: 'restext://Witchres2_009'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10211
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10213
+    - type: 'text'
+      # ../en-US.restext:840 | "Then, {witch} places the ..."
+      value: 'restext://Witchres2_010'

@@ -1,0 +1,59 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:35873
+---
+format: 'mws/0.4'
+passage_id: 'TenseEventBad2No'
+# ../en-US.restext:2589 | "Ethics Prevail"
+title: 'restext://TenseEventBad2No_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:35883
+- type: 'text'
+  # ../en-US.restext:60 | "**Letter from {randomname..."
+  value: 'restext://Common_056'
+# ../.source/FearoftheUnknown_Eng_v15.cs:35892
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:35894
+- type: 'text'
+  # ../en-US.restext:2590 | "I am ill. Is this to be m..."
+  value: 'restext://TenseEventBad2No_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:35898
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:35900
+- type: 'text'
+  # ../en-US.restext:2591 | "Damn my unconquerable des..."
+  value: 'restext://TenseEventBad2No_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:35902
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:35906
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: 'Caravancheck' # ./00105-Caravancheck.mws.yaml
+  # ../en-US.restext:275 | "Close"
+  okay: 'restext://Common_271'
+  snapshot: true
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35921
+  - type: 'image'
+    asset: 'image://setup/S2_RomaniToken'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35924
+  - type: 'text'
+    # ../en-US.restext:2592 | "Move the **Angry Mob** to..."
+    value: 'restext://TenseEventBad2No_004'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35936
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35938
+  - type: 'conditional'
+    if: 'players >= 3'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:35940
+    - type: 'text'
+      # ../en-US.restext:2593 | "Any player who voted **YA..."
+      value: 'restext://TenseEventBad2No_005'

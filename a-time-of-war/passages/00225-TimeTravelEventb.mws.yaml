@@ -1,0 +1,48 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:22722
+---
+format: 'mws/0.4'
+passage_id: 'TimeTravelEventb'
+# ../en-US.restext:227 | "The Future of Convenience"
+title: 'restext://Common_223'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:22730
+- type: 'text'
+  # ../en-US.restext:1871 | "These schematics weren't ..."
+  value: 'restext://TimeTravelEventb_002'
+# ../.source/ATimeofWar_Eng_v8.cs:22733
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:22735
+- type: 'text'
+  # ../en-US.restext:1872 | "If one could procure the ..."
+  value: 'restext://TimeTravelEventb_003'
+# ../.source/ATimeofWar_Eng_v8.cs:22738
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:22742
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  target: '${rumor2 == "visited" ? "FigureontheTrackIn" : "NobodyFigures"}' # ./00198-FigureontheTrackIn.mws.yaml, ./00201-NobodyFigures.mws.yaml
+  # ../en-US.restext:182 | "Close"
+  okay: 'restext://Common_178'
+  snapshot: true
+  header:
+  # ../.source/ATimeofWar_Eng_v8.cs:22759
+  - type: 'image'
+    asset: 'image://setup/S3_CircuitryToken'
+    style: 'setup-image'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:22761
+  - type: 'text'
+    # ../en-US.restext:228 | "Retrieve the **Advanced I..."
+    value: 'restext://Common_224'
+  # ../.source/ATimeofWar_Eng_v8.cs:22768
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:22770
+  - type: 'text'
+    # ../en-US.restext:123 | "When visiting the **Techn..."
+    value: 'restext://Common_119'

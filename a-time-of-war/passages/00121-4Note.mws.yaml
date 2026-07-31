@@ -1,0 +1,122 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:13874
+---
+format: 'mws/0.4'
+passage_id: '4Note'
+tags:
+- 'notext'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:13876
+- type: 'text'
+  # ../en-US.restext:1037 | "{war} is 1 - Time Travel"
+  value: 'restext://_4Note_001'
+# ../.source/ATimeofWar_Eng_v8.cs:13879
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:13880
+- type: 'text'
+  # ../en-US.restext:1038 | "{war} is 2 - War"
+  value: 'restext://_4Note_002'
+# ../.source/ATimeofWar_Eng_v8.cs:13883
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:13885
+- type: 'text'
+  # ../en-US.restext:1039 | "MAKE SURE ALL CARDS AND T..."
+  value: 'restext://_4Note_003'
+# ../.source/ATimeofWar_Eng_v8.cs:13886
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:13887
+- type: 'text'
+  # ../en-US.restext:1040 | "YES DEFINITELY DO THIS"
+  value: 'restext://_4Note_004'
+# ../.source/ATimeofWar_Eng_v8.cs:13888
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:13890
+- type: 'text'
+  # ../en-US.restext:1041 | "Separatists do something"
+  value: 'restext://_4Note_005'
+# ../.source/ATimeofWar_Eng_v8.cs:13891
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:13892
+- type: 'text'
+  # ../en-US.restext:1042 | "wary of the rich - Creepy..."
+  value: 'restext://_4Note_006'
+# ../.source/ATimeofWar_Eng_v8.cs:13893
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:13895
+- type: 'text'
+  # ../en-US.restext:1043 | "if they also build a barracks"
+  value: 'restext://_4Note_007'
+# ../.source/ATimeofWar_Eng_v8.cs:13896
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:13899
+- type: 'text'
+  # ../en-US.restext:1044 | "UM do something"
+  value: 'restext://_4Note_008'
+# ../.source/ATimeofWar_Eng_v8.cs:13900
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:13901
+- type: 'text'
+  # ../en-US.restext:1045 | "welcoming to the rich - C..."
+  value: 'restext://_4Note_009'
+# ../.source/ATimeofWar_Eng_v8.cs:13902
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:13904
+- type: 'text'
+  # ../en-US.restext:1043 | "if they also build a barracks"
+  value: 'restext://_4Note_007'
+# ../.source/ATimeofWar_Eng_v8.cs:13905
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:13909
+- type: 'text'
+  # ../en-US.restext:1046 | "Need to add the player tags."
+  value: 'restext://_4Note_010'
+# ../.source/ATimeofWar_Eng_v8.cs:13910
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:13912
+- type: 'text'
+  # ../en-US.restext:1047 | "Need to add the position ..."
+  value: 'restext://_4Note_011'
+# ../.source/ATimeofWar_Eng_v8.cs:13913
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:13915
+- type: 'text'
+  # ../en-US.restext:1048 | "Figure out what events ar..."
+  value: 'restext://_4Note_012'
+# ../.source/ATimeofWar_Eng_v8.cs:13916
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:13918
+- type: 'text'
+  # ../en-US.restext:1049 | "Emphasize the difference ..."
+  value: 'restext://_4Note_013'
+# ../.source/ATimeofWar_Eng_v8.cs:13920
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:13923
+- type: 'text'
+  # ../en-US.restext:1050 | "Make sure to add a secret..."
+  value: 'restext://_4Note_014'
+# ../.source/ATimeofWar_Eng_v8.cs:13926
+- type: 'switch'
+  on: 'townname'
+  cases:
+  - match: 'Paradox'
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:13928
+    - type: 'assign'
+      var: 'war'
+      expr: '1'
+  - match: 'Destruction'
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:13933
+    - type: 'assign'
+      var: 'war'
+      expr: '2'

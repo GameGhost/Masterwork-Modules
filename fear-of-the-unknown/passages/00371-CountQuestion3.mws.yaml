@@ -1,0 +1,75 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:37254
+---
+format: 'mws/0.4'
+passage_id: 'CountQuestion3'
+# ../en-US.restext:2775 | "What is your favorite col..."
+title: 'restext://CountQuestion3_001'
+tags:
+- 'revised'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:37263
+- type: 'link'
+  # ../en-US.restext:2776 | "Crimson."
+  label: 'restext://CountQuestion3_002'
+  target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37281
+  - type: 'assign'
+    var: 'test'
+    expr: 'test + 1'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37282
+  - type: 'assign'
+    var: 'next'
+    expr: 'next + 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37264
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37267
+- type: 'link'
+  # ../en-US.restext:2777 | "Tan."
+  label: 'restext://CountQuestion3_003'
+  target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37289
+  - type: 'assign'
+    var: 'test'
+    expr: 'test - 1'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37290
+  - type: 'assign'
+    var: 'next'
+    expr: 'next + 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37268
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37271
+- type: 'link'
+  # ../en-US.restext:2778 | "Blue."
+  label: 'restext://CountQuestion3_004'
+  target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37297
+  - type: 'assign'
+    var: 'next'
+    expr: 'next + 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37272
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37275
+- type: 'link'
+  # ../en-US.restext:2779 | "Black as the Blackest Night."
+  label: 'restext://CountQuestion3_005'
+  target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37304
+  - type: 'assign'
+    var: 'test'
+    expr: 'test + 1'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37305
+  - type: 'assign'
+    var: 'next'
+    expr: 'next + 1'

@@ -1,0 +1,89 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:5257
+---
+format: 'mws/0.4'
+passage_id: 'S4Con3'
+# ../en-US.restext:629 | "Politics as Usual"
+title: 'restext://S4Con3_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:5267
+- type: 'text'
+  # ../en-US.restext:276 | "**Letter from {tempid} -** "
+  value: 'restext://Common_272'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5273
+- type: 'include_passage'
+  target: 'date1a' # ./00207-date1a.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:5276
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5278
+- type: 'text'
+  # ../en-US.restext:630 | "I will not carry on this ..."
+  value: 'restext://S4Con3_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5282
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5284
+- type: 'text'
+  # ../en-US.restext:631 | "It does not matter. The p..."
+  value: 'restext://S4Con3_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5287
+- type: 'assign'
+  var: 'tempbs'
+  expr: 'rand_between(1, 2, "S4Con3_0")'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5288
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5292
+- type: 'popup'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  layout: 'reveal'
+  # ../en-US.restext:275 | "Close"
+  cancel: 'restext://Common_271'
+  snapshot: true
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5318
+  - type: 'image'
+    asset: 'image://setup/Creepy_Icon'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5300
+  - type: 'conditional'
+    if: 'round == 11'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:5303
+    - type: 'section'
+      style: 'panel'
+      content: []
+    - type: 'link'
+      # ../en-US.restext:277 | "Continue"
+      label: 'restext://Common_273'
+      target: 'Isolation2' # ./00043-Isolation2.mws.yaml
+      snapshot: true
+    else:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:5310
+    - type: 'section'
+      style: 'panel'
+      content: []
+    - type: 'link'
+      # ../en-US.restext:277 | "Continue"
+      label: 'restext://Common_273'
+      target: 'Isolation3' # ./00044-Isolation3.mws.yaml
+      snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5319
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5321
+  - type: 'conditional'
+    if: 'tempbs == 1'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:5323
+    - type: 'text'
+      # ../en-US.restext:279 | "Nothing happens."
+      value: 'restext://Common_275'
+    else:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:5328
+    - type: 'text'
+      # ../en-US.restext:632 | "Gain 1 {icon:creepy_icon}..."
+      value: 'restext://S4Con3_004'

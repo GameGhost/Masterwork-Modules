@@ -1,0 +1,113 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:7085
+---
+format: 'mws/0.4'
+passage_id: 'Creature3'
+# ../en-US.restext:63 | "The Creature Re emerges"
+title: 'restext://Common_059'
+# ../en-US.restext:153 | "Late Years"
+subtitle: 'restext://Common_149'
+tags:
+- 'HUB'
+layout: 'hub'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:7092
+- type: 'assign'
+  var: 'round'
+  expr: '9'
+# ../.source/FearoftheUnknown_Eng_v15.cs:7093
+- type: 'assign'
+  var: 'busvp'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:7094
+- type: 'assign'
+  var: 'btemp'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:7098
+- type: 'section'
+  # ../en-US.restext:52 | "{icon:storybooktoken} **A..."
+  title: 'restext://Common_048'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:7109
+  - type: 'text'
+    # ../en-US.restext:53 | "Visiting the Asylum allow..."
+    value: 'restext://Common_049'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:7121
+  - type: 'link'
+    # ../en-US.restext:54 | "click here for a message."
+    label: 'restext://Common_050'
+    target: 'AsylumSignIn' # ./00244-AsylumSignIn.mws.yaml
+    snapshot: true
+# ../.source/FearoftheUnknown_Eng_v15.cs:7124
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:7128
+- type: 'section'
+  # ../en-US.restext:55 | "{icon:storybooktoken} **B..."
+  title: 'restext://Common_051'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:7139
+  - type: 'text'
+    # ../en-US.restext:56 | "Visiting the **House on t..."
+    value: 'restext://Common_052'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:7156
+  - type: 'link'
+    # ../en-US.restext:57 | "click here for a message"
+    label: 'restext://Common_053'
+    target: 'BusinessMeet' # ./00146-BusinessMeet.mws.yaml
+    snapshot: true
+# ../.source/FearoftheUnknown_Eng_v15.cs:7158
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:7162
+- type: 'section'
+  # ../en-US.restext:64 | "{icon:storybooktoken} **C..."
+  title: 'restext://Common_060'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:7173
+  - type: 'text'
+    # ../en-US.restext:58 | "When taking the **Perform..."
+    value: 'restext://Common_054'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:7197
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:7199
+  - type: 'text'
+    # ../en-US.restext:59 | "When a player completes o..."
+    value: 'restext://Common_055'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:7200
+  - type: 'link'
+    # ../en-US.restext:65 | "click here to see the con..."
+    label: 'restext://Common_061'
+    target: 'Guilt' # ./00120-Guilt.mws.yaml
+    snapshot: true
+# ../.source/FearoftheUnknown_Eng_v15.cs:7203
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:7207
+- type: 'section'
+  # ../en-US.restext:66 | "**The Church**"
+  title: 'restext://Common_062'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:7217
+  - type: 'link'
+    # ../en-US.restext:67 | "Click here"
+    label: 'restext://Common_063'
+    target: 'FOTU-Church' # ./00352-FOTU-Church.mws.yaml
+    snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:7218
+  - type: 'text'
+    # ../en-US.restext:68 | " for an explanation of th..."
+    value: 'restext://Common_064'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:7220
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:7223
+  - type: 'link'
+    # ../en-US.restext:86 | "Click here at the End of ..."
+    label: 'restext://Common_082'
+    target: 'S4Creature1' # ./00022-S4Creature1.mws.yaml
+    snapshot: true

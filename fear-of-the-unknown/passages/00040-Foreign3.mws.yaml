@@ -1,0 +1,115 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:6320
+---
+format: 'mws/0.4'
+passage_id: 'Foreign3'
+# ../en-US.restext:93 | "Blame it on the Foreigners"
+title: 'restext://Common_089'
+# ../en-US.restext:153 | "Late Years"
+subtitle: 'restext://Common_149'
+tags:
+- 'HUB'
+layout: 'hub'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:6327
+- type: 'assign'
+  var: 'round'
+  expr: '6'
+# ../.source/FearoftheUnknown_Eng_v15.cs:6329
+- type: 'conditional'
+  if: 'cursed == 1'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6333
+  - type: 'section'
+    # ../en-US.restext:97 | "**Witching Hour**"
+    title: 'restext://Common_093'
+    style: 'hub-card'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:6341
+    - type: 'text'
+      # ../en-US.restext:698 | "The location in town with..."
+      value: 'restext://Foreign3_001'
+# ../.source/FearoftheUnknown_Eng_v15.cs:6344
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:6348
+- type: 'section'
+  # ../en-US.restext:101 | "{icon:storybooktoken} **T..."
+  title: 'restext://Common_097'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6360
+  - type: 'text'
+    # ../en-US.restext:102 | "Players may visit the Tow..."
+    value: 'restext://Common_098'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6370
+  - type: 'link'
+    # ../en-US.restext:308 | "click here."
+    label: 'restext://Common_304'
+    target: 'TownHallExplanation' # ./00228-TownHallExplanation.mws.yaml
+    snapshot: true
+# ../.source/FearoftheUnknown_Eng_v15.cs:6373
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:6377
+- type: 'section'
+  # ../en-US.restext:103 | "**Key to the City**"
+  title: 'restext://Common_099'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6386
+  - type: 'text'
+    # ../en-US.restext:104 | "At the End of the Generat..."
+    value: 'restext://Common_100'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6398
+  - type: 'conditional'
+    if: 'players >= 4'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:6400
+    - type: 'text'
+      # ../en-US.restext:105 | "The player who has the se..."
+      value: 'restext://Common_101'
+# ../.source/FearoftheUnknown_Eng_v15.cs:6405
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:6409
+- type: 'conditional'
+  if: 'revresolve == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6413
+  - type: 'section'
+    # ../en-US.restext:108 | "{icon:storybooktoken} **P..."
+    title: 'restext://Common_104'
+    style: 'hub-card'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:6422
+    - type: 'text'
+      # ../en-US.restext:109 | "If a player reaches 35VP, "
+      value: 'restext://Common_105'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:6424
+    - type: 'conditional'
+      if: 'revplot == "fortune"'
+      then:
+      - type: 'link'
+        # ../en-US.restext:170 | "click here..."
+        label: 'restext://Common_166'
+        target: '35Fortune' # ./00193-35Fortune.mws.yaml
+        snapshot: true
+      else:
+      - type: 'link'
+        # ../en-US.restext:170 | "click here..."
+        label: 'restext://Common_166'
+        target: '35Misfortune' # ./00194-35Misfortune.mws.yaml
+        snapshot: true
+# ../.source/FearoftheUnknown_Eng_v15.cs:6427
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:6430
+- type: 'section'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6435
+  - type: 'link'
+    # ../en-US.restext:86 | "Click here at the End of ..."
+    label: 'restext://Common_082'
+    target: 'S4IsoBrick' # ./00035-S4IsoBrick.mws.yaml
+    snapshot: true

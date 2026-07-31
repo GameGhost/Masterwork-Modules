@@ -1,0 +1,58 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:18945
+---
+format: 'mws/0.4'
+passage_id: 'BusNo'
+# ../en-US.restext:1431 | "Declined Offer"
+title: 'restext://BusNo_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:18955
+- type: 'text'
+  # ../en-US.restext:16 | "**Journal Entry of {busm}..."
+  value: 'restext://Common_012'
+# ../.source/FearoftheUnknown_Eng_v15.cs:18968
+- type: 'let'
+  var: '_rnd_BusNo_0'
+  # ../en-US.restext:1432 | BusNo_002 | "I'm afraid I must be obst..."
+  # ../en-US.restext:1433 | BusNo_003 | "I'm terribly beside mysel..."
+  expr: '["restext://BusNo_002", "restext://BusNo_003"].shuffled("BusNo_0")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:18964
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:18966
+- type: 'text'
+  # ../en-US.restext:1434 | "The man sniffed loudly, t..."
+  value: 'restext://BusNo_004'
+  lets:
+  - '_rnd_BusNo_0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:18971
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:18973
+- type: 'text'
+  # ../en-US.restext:1435 | "I felt the door shutter c..."
+  value: 'restext://BusNo_005'
+# ../.source/FearoftheUnknown_Eng_v15.cs:18976
+- type: 'assign'
+  var: 'crpg'
+  expr: '1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:18975
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:18978
+- type: 'conditional'
+  if: 'round == 8'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18980
+  - type: 'link'
+    # ../en-US.restext:286 | "Click to continue..."
+    label: 'restext://Common_282'
+    target: 'Creature2' # ./00158-Creature2.mws.yaml
+    snapshot: true
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18986
+  - type: 'link'
+    # ../en-US.restext:286 | "Click to continue..."
+    label: 'restext://Common_282'
+    target: 'Creature3' # ./00045-Creature3.mws.yaml
+    snapshot: true

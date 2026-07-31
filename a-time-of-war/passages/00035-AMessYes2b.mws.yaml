@@ -1,0 +1,66 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:4856
+---
+format: 'mws/0.4'
+passage_id: 'AMessYes2b'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:4861
+- type: 'text'
+  # ../en-US.restext:180 | "**Carefully pick up this ..."
+  value: 'restext://Common_176'
+# ../.source/ATimeofWar_Eng_v8.cs:4864
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:4869
+- type: 'popup'
+  # ../en-US.restext:181 | "Once you are ready, click..."
+  label: 'restext://Common_177'
+  layout: 'reveal'
+  # ../en-US.restext:182 | "Close"
+  cancel: 'restext://Common_178'
+  snapshot: true
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:4912
+  - type: 'text'
+    # ../en-US.restext:526 | "Inside the envelope was a..."
+    value: 'restext://AMessYes2b_001'
+  # ../.source/ATimeofWar_Eng_v8.cs:4915
+  - type: 'assign'
+    var: 'iou'
+    expr: '1'
+  # ../.source/ATimeofWar_Eng_v8.cs:4914
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:4917
+  - type: 'text'
+    # ../en-US.restext:527 | "If the number of building..."
+    value: 'restext://AMessYes2b_002'
+  # ../.source/ATimeofWar_Eng_v8.cs:4926
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:4928
+  - type: 'text'
+    # ../en-US.restext:528 | "Armed with this important..."
+    value: 'restext://AMessYes2b_003'
+  # ../.source/ATimeofWar_Eng_v8.cs:4931
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:4935
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:24 | "Click to continue..."
+    label: 'restext://Common_020'
+    target: 'AfternoonTea' # ./00134-AfternoonTea.mws.yaml
+    # ../en-US.restext:182 | "Close"
+    okay: 'restext://Common_178'
+    snapshot: true
+    header:
+    # ../.source/ATimeofWar_Eng_v8.cs:4885
+    - type: 'image'
+      asset: 'image://setup/ScoreTrackMarker'
+      style: 'setup-image'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:4888
+    - type: 'text'
+      # ../en-US.restext:529 | "Gain **2VP**. Then, disca..."
+      value: 'restext://AMessYes2b_004'

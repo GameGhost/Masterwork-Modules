@@ -1,0 +1,94 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:8088
+---
+format: 'mws/0.4'
+passage_id: 'Stasis'
+# ../en-US.restext:688 | "Timeline Stabilized"
+title: 'restext://Stasis_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:8095
+- type: 'text'
+  # ../en-US.restext:689 | "I felt the fiber of my be..."
+  value: 'restext://Stasis_002'
+# ../.source/ATimeofWar_Eng_v8.cs:8097
+- type: 'assign'
+  var: 'master'
+  expr: '"yes"'
+# ../.source/ATimeofWar_Eng_v8.cs:8098
+- type: 'assign'
+  var: 'ending'
+  expr: '"ATOW-End3"' # ./00253-ATOW-End3.mws.yaml
+# ../.source/ATimeofWar_Eng_v8.cs:8096
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:8100
+- type: 'text'
+  # ../en-US.restext:690 | "As expected, as soon as t..."
+  value: 'restext://Stasis_003'
+# ../.source/ATimeofWar_Eng_v8.cs:8106
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:8108
+- type: 'text'
+  # ../en-US.restext:691 | "Elderly as they were, the..."
+  value: 'restext://Stasis_004'
+# ../.source/ATimeofWar_Eng_v8.cs:8109
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:8111
+- type: 'text'
+  # ../en-US.restext:692 | "I messaged my cousins, de..."
+  value: 'restext://Stasis_005'
+# ../.source/ATimeofWar_Eng_v8.cs:8114
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:8119
+- type: 'popup'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  layout: 'reveal'
+  # ../en-US.restext:182 | "Close"
+  cancel: 'restext://Common_178'
+  snapshot: true
+  header:
+  # ../.source/ATimeofWar_Eng_v8.cs:8159
+  - type: 'image'
+    asset: 'image://setup/Bodies_Icon'
+    style: 'setup-image'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:8140
+  - type: 'conditional'
+    if: 'round == 14'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:8142
+    - type: 'section'
+      style: 'panel'
+      content: []
+    - type: 'link'
+      # ../en-US.restext:169 | "Continue"
+      label: 'restext://Common_165'
+      target: 'Warning2time' # ./00058-Warning2time.mws.yaml
+      snapshot: true
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:8148
+    - type: 'section'
+      style: 'panel'
+      content: []
+    - type: 'link'
+      # ../en-US.restext:169 | "Continue"
+      label: 'restext://Common_165'
+      target: 'Warning3time' # ./00060-Warning3time.mws.yaml
+      snapshot: true
+  # ../.source/ATimeofWar_Eng_v8.cs:8160
+  - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:8161
+  - type: 'text'
+    # ../en-US.restext:693 | "The player who completed ..."
+    value: 'restext://Stasis_006'
+  # ../.source/ATimeofWar_Eng_v8.cs:8167
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:8169
+  - type: 'text'
+    # ../en-US.restext:694 | "Each player **gains 1** {..."
+    value: 'restext://Stasis_007'

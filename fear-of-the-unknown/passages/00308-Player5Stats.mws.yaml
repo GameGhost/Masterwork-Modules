@@ -1,0 +1,49 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:33198
+---
+format: 'mws/0.4'
+passage_id: 'Player5Stats'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:33201
+- type: 'conditional'
+  if: '!agiE_submitted'
+  then:
+  - type: 'popup'
+    layout: 'prompt'
+    content:
+    - type: 'text'
+      # ../en-US.restext:228 | "Please enter the VP of yo..."
+      value: 'restext://Common_224'
+    - type: 'input'
+      label: ''
+      var: 'agiE'
+    # ../en-US.restext:277 | "Continue"
+    okay: 'restext://Common_273'
+    onclose:
+    - type: 'assign'
+      var: 'agiE_submitted'
+      expr: 'true'
+    snapshot: true
+    target: 'Player5Stats' # ./00308-Player5Stats.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:33212
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:33215
+- type: 'text'
+  # ../en-US.restext:229 | "**Agility Confirmed**"
+  value: 'restext://Common_225'
+# ../.source/FearoftheUnknown_Eng_v15.cs:33217
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:33221
+- type: 'text'
+  # ../en-US.restext:2446 | "**{agiE}** is locked in a..."
+  value: 'restext://Player5Stats_001'
+# ../.source/FearoftheUnknown_Eng_v15.cs:33225
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:33227
+- type: 'link'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: 'Player5Statsb' # ./00309-Player5Statsb.mws.yaml
+  snapshot: true

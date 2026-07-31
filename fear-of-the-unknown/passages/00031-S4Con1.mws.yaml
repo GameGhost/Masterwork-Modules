@@ -1,0 +1,76 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:5097
+---
+format: 'mws/0.4'
+passage_id: 'S4Con1'
+# ../en-US.restext:616 | "Caught in the Act"
+title: 'restext://S4Con1_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:5107
+- type: 'text'
+  # ../en-US.restext:276 | "**Letter from {tempid} -** "
+  value: 'restext://Common_272'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5113
+- type: 'include_passage'
+  target: 'date1a' # ./00207-date1a.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:5116
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5118
+- type: 'text'
+  # ../en-US.restext:617 | "These charlatans have sen..."
+  value: 'restext://S4Con1_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5122
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5124
+- type: 'text'
+  # ../en-US.restext:618 | "I have, due to the pressu..."
+  value: 'restext://S4Con1_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5125
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5129
+- type: 'popup'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  layout: 'reveal'
+  # ../en-US.restext:275 | "Close"
+  cancel: 'restext://Common_271'
+  snapshot: true
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5154
+  - type: 'image'
+    asset: 'image://setup/Creepy_Icon'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5137
+  - type: 'conditional'
+    if: 'round == 11'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:5140
+    - type: 'section'
+      style: 'panel'
+      content: []
+    - type: 'link'
+      # ../en-US.restext:277 | "Continue"
+      label: 'restext://Common_273'
+      target: 'Isolation2' # ./00043-Isolation2.mws.yaml
+      snapshot: true
+    else:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:5146
+    - type: 'section'
+      style: 'panel'
+      content: []
+    - type: 'link'
+      # ../en-US.restext:277 | "Continue"
+      label: 'restext://Common_273'
+      target: 'Isolation3' # ./00044-Isolation3.mws.yaml
+      snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5155
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5159
+  - type: 'text'
+    # ../en-US.restext:619 | "**Gain 2 {icon:creepy_icon}.**"
+    value: 'restext://S4Con1_006'

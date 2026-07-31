@@ -1,0 +1,157 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:18789
+---
+format: 'mws/0.4'
+passage_id: 'BusThanks'
+# ../en-US.restext:1420 | "Thanks Are In Order"
+title: 'restext://BusThanks_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:18799
+- type: 'text'
+  # ../en-US.restext:16 | "**Journal Entry of {busm}..."
+  value: 'restext://Common_012'
+# ../.source/FearoftheUnknown_Eng_v15.cs:18808
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:18810
+- type: 'text'
+  # ../en-US.restext:1421 | "The old man stood abruptl..."
+  value: 'restext://BusThanks_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:18812
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:18814
+- type: 'text'
+  # ../en-US.restext:1422 | "\"Thank you for your cont..."
+  value: 'restext://BusThanks_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:18815
+- type: 'conditional'
+  if: 'curecount == "no"'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18817
+  - type: 'text'
+    # ../en-US.restext:1425 | "Now, if you'll excuse me,..."
+    value: 'restext://BusThanks_006'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18819
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18821
+  - type: 'text'
+    # ../en-US.restext:1426 | "I was offered a pastry an..."
+    value: 'restext://BusThanks_007'
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18825
+  - type: 'text'
+    # ../en-US.restext:1423 | "But, if you'll indulge me..."
+    value: 'restext://BusThanks_004'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18826
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18828
+  - type: 'text'
+    # ../en-US.restext:1424 | "The old man then smiled i..."
+    value: 'restext://BusThanks_005'
+# ../.source/FearoftheUnknown_Eng_v15.cs:18832
+- type: 'assign'
+  var: 'crpg'
+  expr: '1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:18831
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:18834
+- type: 'conditional'
+  conditions:
+  - if: 'btemp == 1'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:18838
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:286 | "Click to continue..."
+      label: 'restext://Common_282'
+      target: '${curecount == "" || curecount == 0 ? "CountCureQuestion" : round == 8 ? "Creature2" : "Creature3"}' # ./00253-CountCureQuestion.mws.yaml, ./00158-Creature2.mws.yaml, ./00045-Creature3.mws.yaml
+      # ../en-US.restext:275 | "Close"
+      okay: 'restext://Common_271'
+      snapshot: true
+      header:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:18879
+      - type: 'image'
+        asset: 'image://setup/S2_EstateUpgradeBACK'
+        style: 'setup-image'
+      content:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:18881
+      - type: 'text'
+        # ../en-US.restext:1427 | "Immediately gain the **Ba..."
+        value: 'restext://BusThanks_008'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:18887
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:18889
+      - type: 'conditional'
+        if: 'busvp == 1'
+        then:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:18894
+        - type: 'let'
+          var: '_rnd_BusThanks_0'
+          expr: 'rand_between(2, 3, "BusThanks_0")'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:18893
+        - type: 'text'
+          # ../en-US.restext:1428 | "**Immediately gain {_rnd_..."
+          value: 'restext://BusThanks_009'
+          lets:
+          - '_rnd_BusThanks_0'
+  - if: 'busvp == 1'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:18844
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:286 | "Click to continue..."
+      label: 'restext://Common_282'
+      target: '${!curecount ? "CountCureQuestion" : round == 8 ? "Creature2" : "Creature3"}' # ./00253-CountCureQuestion.mws.yaml, ./00158-Creature2.mws.yaml, ./00045-Creature3.mws.yaml
+      # ../en-US.restext:275 | "Close"
+      okay: 'restext://Common_271'
+      snapshot: true
+      header:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:18919
+      - type: 'image'
+        asset: 'image://setup/ScoreTrackMarker'
+        style: 'setup-image'
+      content:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:18924
+      - type: 'let'
+        var: '_rnd_BusThanks_0'
+        expr: 'rand_between(2, 3, "BusThanks_1")'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:18923
+      - type: 'text'
+        # ../en-US.restext:1428 | "**Immediately gain {_rnd_..."
+        value: 'restext://BusThanks_009'
+        lets:
+        - '_rnd_BusThanks_0'
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18848
+  - type: 'conditional'
+    if: '!curecount'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:18850
+    - type: 'link'
+      # ../en-US.restext:286 | "Click to continue..."
+      label: 'restext://Common_282'
+      target: 'CountCureQuestion' # ./00253-CountCureQuestion.mws.yaml
+      snapshot: true
+    else:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:18854
+    - type: 'conditional'
+      if: 'round == 8'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:18856
+      - type: 'link'
+        # ../en-US.restext:286 | "Click to continue..."
+        label: 'restext://Common_282'
+        target: 'Creature2' # ./00158-Creature2.mws.yaml
+        snapshot: true
+      else:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:18860
+      - type: 'link'
+        # ../en-US.restext:286 | "Click to continue..."
+        label: 'restext://Common_282'
+        target: 'Creature3' # ./00045-Creature3.mws.yaml
+        snapshot: true

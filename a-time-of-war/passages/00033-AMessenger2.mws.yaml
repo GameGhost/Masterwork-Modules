@@ -1,0 +1,94 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:4695
+---
+format: 'mws/0.4'
+passage_id: 'AMessenger2'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:4697
+- type: 'conditional'
+  # ../en-US.restext:26 | "Unified Monarchists"
+  if: 'warwinner == "restext://Common_022"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:4702
+  - type: 'text'
+    # ../en-US.restext:5 | "**Carefully give this Sto..."
+    value: 'restext://Common_001'
+  # ../.source/ATimeofWar_Eng_v8.cs:4706
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:4711
+  - type: 'popup'
+    # ../en-US.restext:181 | "Once you are ready, click..."
+    label: 'restext://Common_177'
+    layout: 'reveal'
+    # ../en-US.restext:182 | "Close"
+    cancel: 'restext://Common_178'
+    snapshot: true
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:4733
+    - type: 'text'
+      # ../en-US.restext:514 | "**A Fortuitous Letter**"
+      value: 'restext://AMessenger2_002'
+    # ../.source/ATimeofWar_Eng_v8.cs:4735
+    - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:4736
+    - type: 'text'
+      # ../en-US.restext:515 | "One morning, as I conside..."
+      value: 'restext://AMessenger2_003'
+    # ../.source/ATimeofWar_Eng_v8.cs:4739
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:4741
+    - type: 'text'
+      # ../en-US.restext:7 | "\"Which flag do you fly?\..."
+      value: 'restext://Common_003'
+    # ../.source/ATimeofWar_Eng_v8.cs:4746
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:4748
+    - type: 'conditional'
+      if: 'takereact == 1'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:4750
+      - type: 'link'
+        # ../en-US.restext:8 | "Unified Monarchists."
+        label: 'restext://Common_004'
+        target: 'AMessYes2b' # ./00035-AMessYes2b.mws.yaml
+        snapshot: true
+      # ../.source/ATimeofWar_Eng_v8.cs:4751
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/ATimeofWar_Eng_v8.cs:4753
+      - type: 'link'
+        # ../en-US.restext:9 | "Separatists."
+        label: 'restext://Common_005'
+        target: 'AMessno2' # ./00030-AMessno2.mws.yaml
+        snapshot: true
+      else:
+      # ../.source/ATimeofWar_Eng_v8.cs:4757
+      - type: 'link'
+        # ../en-US.restext:9 | "Separatists."
+        label: 'restext://Common_005'
+        target: 'AMessYes2b' # ./00035-AMessYes2b.mws.yaml
+        snapshot: true
+      # ../.source/ATimeofWar_Eng_v8.cs:4758
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/ATimeofWar_Eng_v8.cs:4760
+      - type: 'link'
+        # ../en-US.restext:8 | "Unified Monarchists."
+        label: 'restext://Common_004'
+        target: 'AMessno2' # ./00030-AMessno2.mws.yaml
+        snapshot: true
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:4715
+  - type: 'conditional'
+    if: 'wardestroy == 1'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:4717
+    - type: 'goto'
+      target: 'ATOWSabotageIntro2Sep' # ./00210-ATOWSabotageIntro2Sep.mws.yaml
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:4721
+    - type: 'goto'
+      target: 'ATOWSabotageIntro2' # ./00206-ATOWSabotageIntro2.mws.yaml

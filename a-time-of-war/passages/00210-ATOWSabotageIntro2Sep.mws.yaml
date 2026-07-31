@@ -1,0 +1,98 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:21752
+---
+format: 'mws/0.4'
+passage_id: 'ATOWSabotageIntro2Sep'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:21757
+- type: 'text'
+  # ../en-US.restext:17 | "**Carefully hand this Sto..."
+  value: 'restext://Common_013'
+# ../.source/ATimeofWar_Eng_v8.cs:21762
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:21767
+- type: 'popup'
+  # ../en-US.restext:181 | "Once you are ready, click..."
+  label: 'restext://Common_177'
+  layout: 'reveal'
+  # ../en-US.restext:182 | "Close"
+  cancel: 'restext://Common_178'
+  snapshot: true
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:21793
+  - type: 'text'
+    # ../en-US.restext:12 | "**A Time for Sabotage**"
+    value: 'restext://Common_008'
+  # ../.source/ATimeofWar_Eng_v8.cs:21795
+  - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:21796
+  - type: 'text'
+    # ../en-US.restext:1792 | "While I had seen what dev..."
+    value: 'restext://ATOWSabotageIntro2Sep_001'
+  # ../.source/ATimeofWar_Eng_v8.cs:21798
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:21800
+  - type: 'text'
+    # ../en-US.restext:1793 | "It was the time to strike..."
+    value: 'restext://ATOWSabotageIntro2Sep_002'
+  # ../.source/ATimeofWar_Eng_v8.cs:21805
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:21809
+  - type: 'text'
+    # ../en-US.restext:14 | "**The decision was clear ..."
+    value: 'restext://Common_010'
+  # ../.source/ATimeofWar_Eng_v8.cs:21811
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:21814
+  - type: 'link'
+    # ../en-US.restext:1794 | "I chose to sabotage the '..."
+    label: 'restext://ATOWSabotageIntro2Sep_003'
+    snapshot: true
+    onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:21775
+    - type: 'assign'
+      var: 'bldg2'
+      # ../en-US.restext:27 | "Outpost"
+      expr: '"restext://Common_023"'
+    # ../.source/ATimeofWar_Eng_v8.cs:21776
+    - type: 'conditional'
+      # ../en-US.restext:28 | "Barracks"
+      if: 'bldg1 == "restext://Common_024"'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:21778
+      - type: 'assign'
+        var: 'sabpage'
+        expr: '8'
+      # ../.source/ATimeofWar_Eng_v8.cs:21779
+      - type: 'goto'
+        target: 'ATOWSabotageMonConfirm' # ./00163-ATOWSabotageMonConfirm.mws.yaml
+      else:
+      # ../.source/ATimeofWar_Eng_v8.cs:21783
+      - type: 'assign'
+        var: 'sabpage'
+        expr: '7'
+      # ../.source/ATimeofWar_Eng_v8.cs:21784
+      - type: 'goto'
+        target: 'ATOWSabotageMonConfirm' # ./00163-ATOWSabotageMonConfirm.mws.yaml
+  # ../.source/ATimeofWar_Eng_v8.cs:21815
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:21817
+  - type: 'link'
+    # ../en-US.restext:18 | "I chose to sabotage anoth..."
+    label: 'restext://Common_014'
+    target: 'SabotageSignIn1' # ./00208-SabotageSignIn1.mws.yaml
+    snapshot: true
+  # ../.source/ATimeofWar_Eng_v8.cs:21818
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:21820
+  - type: 'link'
+    # ../en-US.restext:16 | "Instead, I chose to absta..."
+    label: 'restext://Common_012'
+    target: 'ATOWSabotageNO' # ./00209-ATOWSabotageNO.mws.yaml
+    snapshot: true

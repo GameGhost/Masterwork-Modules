@@ -1,0 +1,81 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:12587
+---
+format: 'mws/0.4'
+passage_id: 'SmugEvent2B'
+# ../en-US.restext:1037 | "Missed Opportunity"
+title: 'restext://SmugEvent2B_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:12595
+- type: 'include_passage'
+  target: 'journal1a' # ./00206-journal1a.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:12596
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:12598
+- type: 'text'
+  # ../en-US.restext:1038 | "I knew it would never amo..."
+  value: 'restext://SmugEvent2B_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:12600
+- type: 'assign'
+  var: 'ending'
+  expr: '"FOTU-End2"' # ./00210-FOTU-End2.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:12599
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:12602
+- type: 'text'
+  # ../en-US.restext:1039 | "Perhaps it was good that ..."
+  value: 'restext://SmugEvent2B_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:12609
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:12613
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: 'Caravancheck' # ./00105-Caravancheck.mws.yaml
+  # ../en-US.restext:275 | "Close"
+  okay: 'restext://Common_271'
+  snapshot: true
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:12628
+  - type: 'image'
+    asset: 'image://setup/S2_CollaborativeToken'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:12630
+  - type: 'text'
+    # ../en-US.restext:1040 | "Any player who gained a C..."
+    value: 'restext://SmugEvent2B_004'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:12638
+  - type: 'conditional'
+    if: 'players == 2'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:12640
+    - type: 'text'
+      # ../en-US.restext:1041 | " for each"
+      value: 'restext://SmugEvent2B_005'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:12643
+  - type: 'text'
+    # ../en-US.restext:1042 | " and then returns the tok..."
+    value: 'restext://SmugEvent2B_006'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:12645
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:12647
+  - type: 'text'
+    # ../en-US.restext:1043 | "Any player who does not h..."
+    value: 'restext://SmugEvent2B_007'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:12656
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:12658
+  - type: 'conditional'
+    if: 'players == 2'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:12660
+    - type: 'text'
+      # ../en-US.restext:1044 | "The player with the most ..."
+      value: 'restext://SmugEvent2B_008'

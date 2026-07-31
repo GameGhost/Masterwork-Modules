@@ -1,0 +1,55 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:20542
+---
+format: 'mws/0.4'
+passage_id: 'WhoopsUtopian'
+# ../en-US.restext:1708 | "The Future is NOW"
+title: 'restext://WhoopsUtopian_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:20550
+- type: 'text'
+  # ../en-US.restext:1709 | "While the journal of my p..."
+  value: 'restext://WhoopsUtopian_002'
+# ../.source/ATimeofWar_Eng_v8.cs:20551
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:20553
+- type: 'text'
+  # ../en-US.restext:1710 | "I had read over the myria..."
+  value: 'restext://WhoopsUtopian_003'
+# ../.source/ATimeofWar_Eng_v8.cs:20554
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:20558
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  target: 'WhoopsUtopianb' # ./00234-WhoopsUtopianb.mws.yaml
+  # ../en-US.restext:182 | "Close"
+  okay: 'restext://Common_178'
+  snapshot: true
+  header:
+  # ../.source/ATimeofWar_Eng_v8.cs:20575
+  - type: 'image'
+    asset: 'image://setup/S3_ModernExperiment'
+    style: 'setup-image'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:20577
+  - type: 'text'
+    # ../en-US.restext:1711 | "Return the **Time Machine..."
+    value: 'restext://WhoopsUtopian_004'
+  # ../.source/ATimeofWar_Eng_v8.cs:20584
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:20586
+  - type: 'text'
+    # ../en-US.restext:1712 | "Retrieve the **Utopian Ex..."
+    value: 'restext://WhoopsUtopian_005'
+  # ../.source/ATimeofWar_Eng_v8.cs:20593
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:20595
+  - type: 'text'
+    # ../en-US.restext:226 | "Each player then **draws ..."
+    value: 'restext://Common_222'

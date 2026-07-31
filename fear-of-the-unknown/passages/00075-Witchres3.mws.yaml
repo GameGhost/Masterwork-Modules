@@ -1,0 +1,112 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:10246
+---
+format: 'mws/0.4'
+passage_id: 'Witchres3'
+# ../en-US.restext:845 | "The Curse Continues"
+title: 'restext://Witchres3_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:10253
+- type: 'assign'
+  var: 'cursed'
+  expr: '2'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10257
+- type: 'text'
+  # ../en-US.restext:328 | "**Letter from {randomname..."
+  value: 'restext://Common_324'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10266
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10268
+- type: 'conditional'
+  conditions:
+  - if: 'randomname == falsewitch'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10270
+    - type: 'text'
+      # ../en-US.restext:848 | "It was I who was chosen! ..."
+      value: 'restext://Witchres3_004'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10272
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10274
+    - type: 'text'
+      # ../en-US.restext:849 | "They knew! They knew I wa..."
+      value: 'restext://Witchres3_005'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10278
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10280
+    - type: 'text'
+      # ../en-US.restext:850 | "Death is only the beginning!"
+      value: 'restext://Witchres3_006'
+  - if: 'wsuspect == falsewitch'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10284
+    - type: 'text'
+      # ../en-US.restext:851 | "I can state with clear co..."
+      value: 'restext://Witchres3_007'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10285
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10287
+    - type: 'text'
+      # ../en-US.restext:847 | "However, in the ensuing m..."
+      value: 'restext://Witchres3_003'
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10295
+  - type: 'text'
+    # ../en-US.restext:846 | "The town was appeased by ..."
+    value: 'restext://Witchres3_002'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10296
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10298
+  - type: 'text'
+    # ../en-US.restext:847 | "However, in the ensuing m..."
+    value: 'restext://Witchres3_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10304
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10308
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: 'Caravancheck' # ./00105-Caravancheck.mws.yaml
+  # ../en-US.restext:275 | "Close"
+  okay: 'restext://Common_271'
+  snapshot: true
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10322
+  - type: 'image'
+    asset: 'image://setup/Self'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10325
+  - type: 'conditional'
+    if: 'falsewitch == wsuspect'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10327
+    - type: 'text'
+      # ../en-US.restext:854 | "The innocent {wsuspect} c..."
+      value: 'restext://Witchres3_010'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10330
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10332
+    - type: 'text'
+      # ../en-US.restext:855 | "Move the {icon:angrymob_i..."
+      value: 'restext://Witchres3_011'
+    else:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10340
+    - type: 'text'
+      # ../en-US.restext:852 | "**{falsewitch}** may **pe..."
+      value: 'restext://Witchres3_008'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10350
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:10354
+    - type: 'text'
+      # ../en-US.restext:853 | "**{falsewitch}** must the..."
+      value: 'restext://Witchres3_009'

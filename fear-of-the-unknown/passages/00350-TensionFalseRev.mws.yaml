@@ -1,0 +1,34 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:36513
+---
+format: 'mws/0.4'
+passage_id: 'TensionFalseRev'
+tags:
+- 'revise'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:36515
+- type: 'conditional'
+  if: 'cursed == 2'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:36519
+  - type: 'text'
+    # ../en-US.restext:2648 | "{falsewitch} is given sym..."
+    value: 'restext://TensionFalseRev_001'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:36522
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:36527
+  - type: 'text'
+    # ../en-US.restext:122 | "**SETUP**"
+    value: 'restext://Common_118'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:36529
+  - type: 'image'
+    asset: 'image://setup/StartPlayerToken'
+    style: 'setup-image'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:36530
+  - type: 'break'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:36531
+  - type: 'text'
+    # ../en-US.restext:2649 | "Pass the {icon:startplaye..."
+    value: 'restext://TensionFalseRev_002'
+  else: []

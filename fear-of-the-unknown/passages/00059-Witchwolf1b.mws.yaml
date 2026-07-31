@@ -1,0 +1,62 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:9108
+---
+format: 'mws/0.4'
+passage_id: 'Witchwolf1b'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:9113
+- type: 'text'
+  # ../en-US.restext:330 | "**Carefully pick up this ..."
+  value: 'restext://Common_326'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9117
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9119
+- type: 'text'
+  # ../en-US.restext:331 | "I would like to hex:"
+  value: 'restext://Common_327'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9120
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9123
+- type: 'link'
+  # ../en-US.restext:332 | "The Church"
+  label: 'restext://Common_328'
+  target: 'Witchwolf1c' # ./00061-Witchwolf1c.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:9139
+  - type: 'assign'
+    var: 'witB'
+    # ../en-US.restext:87 | "Church"
+    expr: '"restext://Common_083"'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9124
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9127
+- type: 'link'
+  # ../en-US.restext:333 | "The Traveling Caravan"
+  label: 'restext://Common_329'
+  target: 'Witchwolf1c' # ./00061-Witchwolf1c.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:9146
+  - type: 'assign'
+    var: 'witB'
+    # ../en-US.restext:88 | "Traveling Caravan"
+    expr: '"restext://Common_084"'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9128
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9131
+- type: 'link'
+  # ../en-US.restext:334 | "The Laborer's Union"
+  label: 'restext://Common_330'
+  target: 'Witchwolf1c' # ./00061-Witchwolf1c.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:9153
+  - type: 'assign'
+    var: 'witB'
+    # ../en-US.restext:89 | "Laborer's Union"
+    expr: '"restext://Common_085"'

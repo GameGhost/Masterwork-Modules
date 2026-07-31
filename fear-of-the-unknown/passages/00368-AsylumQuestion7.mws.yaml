@@ -1,0 +1,53 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:37082
+---
+format: 'mws/0.4'
+passage_id: 'AsylumQuestion7'
+# ../en-US.restext:2755 | "You are preparing yoursel..."
+title: 'restext://AsylumQuestion7_001'
+tags:
+- 'revised'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:37093
+- type: 'link'
+  # ../en-US.restext:2756 | "I am well-prepared and ex..."
+  label: 'restext://AsylumQuestion7_002'
+  target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37108
+  - type: 'assign'
+    var: 'next'
+    expr: 'next + 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37094
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37097
+- type: 'link'
+  # ../en-US.restext:2757 | "I am nervous or ill-prepared."
+  label: 'restext://AsylumQuestion7_003'
+  target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37115
+  - type: 'assign'
+    var: 'next'
+    expr: 'next + 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37098
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37101
+- type: 'link'
+  # ../en-US.restext:2758 | "I feel nothing. Human bei..."
+  label: 'restext://AsylumQuestion7_004'
+  target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37122
+  - type: 'assign'
+    var: 'test'
+    expr: 'test + 1'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:37123
+  - type: 'assign'
+    var: 'next'
+    expr: 'next + 1'

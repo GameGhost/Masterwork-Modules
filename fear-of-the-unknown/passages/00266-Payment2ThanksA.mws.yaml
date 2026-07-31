@@ -1,0 +1,41 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:29902
+---
+format: 'mws/0.4'
+passage_id: 'Payment2ThanksA'
+# ../en-US.restext:214 | "Payment Received"
+title: 'restext://Common_210'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:29912
+- type: 'text'
+  # ../en-US.restext:2205 | "**Journal Entry - {nameA}..."
+  value: 'restext://Payment2ThanksA_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29921
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29923
+- type: 'text'
+  # ../en-US.restext:215 | "The dark-cloaked fiends t..."
+  value: 'restext://Common_211'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29926
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29930
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: 'PaymentOrDeathB' # ./00317-PaymentOrDeathB.mws.yaml
+  # ../en-US.restext:275 | "Close"
+  okay: 'restext://Common_271'
+  snapshot: true
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29946
+  - type: 'image'
+    asset: 'image://setup/Money_Icon'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29951
+  - type: 'text'
+    # ../en-US.restext:205 | "**Immediately pay ${Acont..."
+    value: 'restext://Common_201'

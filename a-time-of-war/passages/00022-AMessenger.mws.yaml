@@ -1,0 +1,134 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:3527
+---
+format: 'mws/0.4'
+passage_id: 'AMessenger'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:3529
+- type: 'conditional'
+  if: 'rumor1 == "visited"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:3533
+  - type: 'text'
+    # ../en-US.restext:458 | "**A Messenger Arrives**"
+    value: 'restext://AMessenger_001'
+  # ../.source/ATimeofWar_Eng_v8.cs:3535
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:3539
+  - type: 'text'
+    # ../en-US.restext:6 | "**All players may again v..."
+    value: 'restext://Common_002'
+  # ../.source/ATimeofWar_Eng_v8.cs:3541
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:3543
+  - type: 'text'
+    # ../en-US.restext:459 | "On a Saturday afternoon, ..."
+    value: 'restext://AMessenger_003'
+  # ../.source/ATimeofWar_Eng_v8.cs:3550
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:3554
+  - type: 'text'
+    # ../en-US.restext:460 | "**The messenger turned an..."
+    value: 'restext://AMessenger_004'
+  # ../.source/ATimeofWar_Eng_v8.cs:3559
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:3561
+  - type: 'text'
+    # ../en-US.restext:7 | "\"Which flag do you fly?\..."
+    value: 'restext://Common_003'
+  # ../.source/ATimeofWar_Eng_v8.cs:3566
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:3568
+  - type: 'conditional'
+    # ../en-US.restext:25 | "Separatists"
+    if: 'warwinner == "restext://Common_021"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:3570
+    - type: 'conditional'
+      if: 'takereact == 1'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:3572
+      - type: 'link'
+        # ../en-US.restext:8 | "Unified Monarchists."
+        label: 'restext://Common_004'
+        target: 'Amessyes' # ./00025-Amessyes.mws.yaml
+        snapshot: true
+      # ../.source/ATimeofWar_Eng_v8.cs:3573
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/ATimeofWar_Eng_v8.cs:3575
+      - type: 'link'
+        # ../en-US.restext:9 | "Separatists."
+        label: 'restext://Common_005'
+        target: 'Amessno' # ./00026-Amessno.mws.yaml
+        snapshot: true
+      else:
+      # ../.source/ATimeofWar_Eng_v8.cs:3579
+      - type: 'link'
+        # ../en-US.restext:9 | "Separatists."
+        label: 'restext://Common_005'
+        target: 'Amessyes' # ./00025-Amessyes.mws.yaml
+        snapshot: true
+      # ../.source/ATimeofWar_Eng_v8.cs:3580
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/ATimeofWar_Eng_v8.cs:3582
+      - type: 'link'
+        # ../en-US.restext:8 | "Unified Monarchists."
+        label: 'restext://Common_004'
+        target: 'Amessno' # ./00026-Amessno.mws.yaml
+        snapshot: true
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:3587
+    - type: 'conditional'
+      if: 'takereact == 1'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:3589
+      - type: 'link'
+        # ../en-US.restext:9 | "Separatists."
+        label: 'restext://Common_005'
+        target: 'Amessyes' # ./00025-Amessyes.mws.yaml
+        snapshot: true
+      # ../.source/ATimeofWar_Eng_v8.cs:3590
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/ATimeofWar_Eng_v8.cs:3592
+      - type: 'link'
+        # ../en-US.restext:8 | "Unified Monarchists."
+        label: 'restext://Common_004'
+        target: 'Amessno' # ./00026-Amessno.mws.yaml
+        snapshot: true
+      else:
+      # ../.source/ATimeofWar_Eng_v8.cs:3596
+      - type: 'link'
+        # ../en-US.restext:8 | "Unified Monarchists."
+        label: 'restext://Common_004'
+        target: 'Amessyes' # ./00025-Amessyes.mws.yaml
+        snapshot: true
+      # ../.source/ATimeofWar_Eng_v8.cs:3597
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/ATimeofWar_Eng_v8.cs:3599
+      - type: 'link'
+        # ../en-US.restext:9 | "Separatists."
+        label: 'restext://Common_005'
+        target: 'Amessno' # ./00026-Amessno.mws.yaml
+        snapshot: true
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:3606
+  - type: 'conditional'
+    # ../en-US.restext:26 | "Unified Monarchists"
+    if: 'warwinner == "restext://Common_022"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:3607
+    - type: 'goto'
+      target: 'BarracksSimple1' # ./00157-BarracksSimple1.mws.yaml
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:3609
+    - type: 'goto'
+      target: 'Sabotage1Now' # ./00213-Sabotage1Now.mws.yaml

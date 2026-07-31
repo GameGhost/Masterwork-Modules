@@ -1,0 +1,57 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:13541
+---
+format: 'mws/0.4'
+passage_id: 'NameEntryB'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:13543
+- type: 'assign'
+  var: 'nameB'
+  expr: 'global:nameB'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13544
+- type: 'assign'
+  var: 'players'
+  expr: '2'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13548
+- type: 'section'
+  # ../en-US.restext:310 | "ERROR!"
+  title: 'restext://Common_306'
+  style: 'hub-card'
+  content: []
+# ../.source/FearoftheUnknown_Eng_v15.cs:13550
+- type: 'text'
+  # ../en-US.restext:174 | "Welcome to My Father's Work,"
+  value: 'restext://Common_170'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13551
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13552
+- type: 'text'
+  # ../en-US.restext:1114 | "{nameB}."
+  value: 'restext://NameEntryB_001'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13554
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13556
+- type: 'text'
+  # ../en-US.restext:1115 | "Please enjoy your experience."
+  value: 'restext://NameEntryB_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13557
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:13563
+- type: 'conditional'
+  if: 'players > 2'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13565
+  - type: 'link'
+    # ../en-US.restext:286 | "Click to continue..."
+    label: 'restext://Common_282'
+    target: 'NameEntryC' # ./00108-NameEntryC.mws.yaml
+    snapshot: true
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:13569
+  - type: 'link'
+    # ../en-US.restext:286 | "Click to continue..."
+    label: 'restext://Common_282'
+    target: 'NameEntryTown' # ./00187-NameEntryTown.mws.yaml
+    snapshot: true

@@ -1,0 +1,130 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:18611
+---
+format: 'mws/0.4'
+passage_id: 'AsylumMeet'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:18613
+- type: 'conditional'
+  if: 'Av > 1'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18615
+  - type: 'goto'
+    target: 'AsylumComplete' # ./00245-AsylumComplete.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:18617
+- type: 'conditional'
+  if: 'Bv > 1'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18619
+  - type: 'goto'
+    target: 'AsylumComplete' # ./00245-AsylumComplete.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:18621
+- type: 'conditional'
+  if: 'Cv > 1'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18623
+  - type: 'goto'
+    target: 'AsylumComplete' # ./00245-AsylumComplete.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:18625
+- type: 'conditional'
+  if: 'Dv > 1'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18627
+  - type: 'goto'
+    target: 'AsylumComplete' # ./00245-AsylumComplete.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:18629
+- type: 'conditional'
+  if: 'Ev > 1'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18631
+  - type: 'goto'
+    target: 'AsylumComplete' # ./00245-AsylumComplete.mws.yaml
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18637
+  - type: 'text'
+    # ../en-US.restext:1400 | "**Retrieval of Property**"
+    value: 'restext://AsylumMeet_001'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18639
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18643
+  - type: 'text'
+    # ../en-US.restext:1401 | "**{tempas}'s Journal -** "
+    value: 'restext://AsylumMeet_002'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18647
+  - type: 'include_passage'
+    target: 'date1a' # ./00207-date1a.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18650
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18652
+  - type: 'text'
+    # ../en-US.restext:1402 | "I soon discovered my lost..."
+    value: 'restext://AsylumMeet_003'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18654
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18656
+  - type: 'text'
+    # ../en-US.restext:1403 | "The alienist on staff des..."
+    value: 'restext://AsylumMeet_004'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18661
+  - type: 'let'
+    var: '_rnd_AsylumMeet_0'
+    # ../en-US.restext:1404 | AsylumMeet_005 | "We find that many of thes..."
+    # ../en-US.restext:1405 | AsylumMeet_006 | "The cerebellum is especia..."
+    expr: '["restext://AsylumMeet_005", "restext://AsylumMeet_006"].shuffled("AsylumMeet_0")[0]'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18657
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18659
+  - type: 'text'
+    # ../en-US.restext:1406 | "\"We can entrust them to ..."
+    value: 'restext://AsylumMeet_007'
+    lets:
+    - '_rnd_AsylumMeet_0'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18668
+  - type: 'assign'
+    var: 'crpg'
+    expr: '1'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18666
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:18671
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:286 | "Click to continue..."
+    label: 'restext://Common_282'
+    target: '${round == 8 ? "Creature2" : "Creature3"}' # ./00158-Creature2.mws.yaml, ./00045-Creature3.mws.yaml
+    # ../en-US.restext:275 | "Close"
+    okay: 'restext://Common_271'
+    snapshot: true
+    header:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:18686
+    - type: 'image'
+      asset: 'image://setup/GainCaretakerFromLost'
+      style: 'setup-image'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:18689
+    - type: 'text'
+      # ../en-US.restext:1407 | "Choose one of the options..."
+      value: 'restext://AsylumMeet_008'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:18690
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:18694
+    - type: 'text'
+      # ../en-US.restext:1408 | "**Pay $1 to gain a Careta..."
+      value: 'restext://AsylumMeet_009'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:18696
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:18697
+    - type: 'text'
+      # ../en-US.restext:5 | "OR"
+      value: 'restext://Common_001'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:18698
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:18701
+    - type: 'text'
+      # ../en-US.restext:1409 | "**Gain a Servant from Lost.**"
+      value: 'restext://AsylumMeet_011'

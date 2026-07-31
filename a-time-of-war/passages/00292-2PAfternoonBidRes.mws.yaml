@@ -1,0 +1,37 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:27022
+---
+format: 'mws/0.4'
+passage_id: '2PAfternoonBidRes'
+# ../en-US.restext:2213 | "Bid Complete"
+title: 'restext://_2PAfternoonBidRes_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:27030
+- type: 'text'
+  # ../en-US.restext:2214 | "The player who won the bi..."
+  value: 'restext://_2PAfternoonBidRes_002'
+# ../.source/ATimeofWar_Eng_v8.cs:27036
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:27040
+- type: 'text'
+  # ../en-US.restext:2215 | "**The player who won the ..."
+  value: 'restext://_2PAfternoonBidRes_003'
+# ../.source/ATimeofWar_Eng_v8.cs:27042
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:27044
+- type: 'link'
+  # ../en-US.restext:2216 | "I choose to destroy the {..."
+  label: 'restext://_2PAfternoonBidRes_004'
+  target: 'AfternoonTeaResolutionYAY' # ./00174-AfternoonTeaResolutionYAY.mws.yaml
+  snapshot: true
+# ../.source/ATimeofWar_Eng_v8.cs:27045
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:27047
+- type: 'link'
+  # ../en-US.restext:2217 | "I choose to keep the {teaopt}."
+  label: 'restext://_2PAfternoonBidRes_005'
+  target: 'AfternoonTeaResolutionNAY' # ./00175-AfternoonTeaResolutionNAY.mws.yaml
+  snapshot: true

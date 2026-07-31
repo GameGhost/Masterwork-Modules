@@ -1,0 +1,131 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:14227
+---
+format: 'mws/0.4'
+passage_id: 'WitchTensionResolution'
+tags:
+- 'format'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:14229
+- type: 'conditional'
+  if: 'cursed == 1'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:14231
+  - type: 'conditional'
+    if: 'witch == wsuspect'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:14233
+    - type: 'goto'
+      target: 'Creepy1stPlayerB' # ./00196-Creepy1stPlayerB.mws.yaml
+    else:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:14239
+    - type: 'text'
+      # ../en-US.restext:1172 | "**Reconciliation**"
+      value: 'restext://WitchTensionResolution_001'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:14241
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:14245
+    - type: 'text'
+      # ../en-US.restext:327 | "**Journal of {witch} -** ..."
+      value: 'restext://Common_323'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:14254
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:14256
+    - type: 'text'
+      # ../en-US.restext:1173 | "The townsfolk feel a kins..."
+      value: 'restext://WitchTensionResolution_002'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:14259
+    - type: 'conditional'
+      if: 'witch == nameA'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:14261
+      - type: 'conditional'
+        if: 'plotA == "yes"'
+        then:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:14263
+        - type: 'text'
+          # ../en-US.restext:1174 | "A brief visit to their gr..."
+          value: 'restext://WitchTensionResolution_003'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:14267
+    - type: 'conditional'
+      if: 'witch == nameB'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:14269
+      - type: 'conditional'
+        if: 'plotB == "yes"'
+        then:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:14271
+        - type: 'text'
+          # ../en-US.restext:1174 | "A brief visit to their gr..."
+          value: 'restext://WitchTensionResolution_003'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:14275
+    - type: 'conditional'
+      if: 'witch == nameC'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:14277
+      - type: 'conditional'
+        if: 'plotC == "yes"'
+        then:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:14279
+        - type: 'text'
+          # ../en-US.restext:1174 | "A brief visit to their gr..."
+          value: 'restext://WitchTensionResolution_003'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:14283
+    - type: 'conditional'
+      if: 'witch == nameD'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:14285
+      - type: 'conditional'
+        if: 'plotD == "yes"'
+        then:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:14287
+        - type: 'text'
+          # ../en-US.restext:1174 | "A brief visit to their gr..."
+          value: 'restext://WitchTensionResolution_003'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:14291
+    - type: 'conditional'
+      if: 'witch == nameE'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:14293
+      - type: 'conditional'
+        if: 'plotE == "yes"'
+        then:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:14295
+        - type: 'text'
+          # ../en-US.restext:1174 | "A brief visit to their gr..."
+          value: 'restext://WitchTensionResolution_003'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:14299
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:14301
+    - type: 'text'
+      # ../en-US.restext:1175 | "Yet, it would be unwise o..."
+      value: 'restext://WitchTensionResolution_004'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:14304
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:14308
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:286 | "Click to continue..."
+      label: 'restext://Common_282'
+      target: 'Creepy1stPlayerB' # ./00196-Creepy1stPlayerB.mws.yaml
+      # ../en-US.restext:275 | "Close"
+      okay: 'restext://Common_271'
+      snapshot: true
+      header:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:14329
+      - type: 'image'
+        asset: 'image://setup/GainServantFromLost'
+        style: 'setup-image'
+      content:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:14332
+      - type: 'text'
+        # ../en-US.restext:1176 | "{witch} gains a Servant f..."
+        value: 'restext://WitchTensionResolution_005'
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:14313
+  - type: 'goto'
+    target: 'Creepy1stPlayerB' # ./00196-Creepy1stPlayerB.mws.yaml

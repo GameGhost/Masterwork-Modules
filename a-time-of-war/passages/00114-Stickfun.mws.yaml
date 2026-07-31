@@ -1,0 +1,103 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:13533
+---
+format: 'mws/0.4'
+passage_id: 'Stickfun'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:13535
+- type: 'conditional'
+  if: 'crazy == 0'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:13537
+  - type: 'goto'
+    target: 'CoWEvent' # ./00139-CoWEvent.mws.yaml
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:13543
+  - type: 'text'
+    # ../en-US.restext:1005 | "**The Formation**"
+    value: 'restext://Stickfun_001'
+  # ../.source/ATimeofWar_Eng_v8.cs:13545
+  - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:13546
+  - type: 'text'
+    # ../en-US.restext:1006 | "On a solitary afternoon i..."
+    value: 'restext://Stickfun_002'
+  # ../.source/ATimeofWar_Eng_v8.cs:13547
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:13549
+  - type: 'conditional'
+    if: 'crazy > 1'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:13551
+    - type: 'text'
+      # ../en-US.restext:1010 | "During a congenial supper..."
+      value: 'restext://Stickfun_006'
+    # ../.source/ATimeofWar_Eng_v8.cs:13552
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:13554
+    - type: 'text'
+      # ../en-US.restext:1011 | "We were impressed, and wi..."
+      value: 'restext://Stickfun_007'
+    # ../.source/ATimeofWar_Eng_v8.cs:13556
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:13560
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:24 | "Click to continue..."
+      label: 'restext://Common_020'
+      target: 'CoWEvent' # ./00139-CoWEvent.mws.yaml
+      # ../en-US.restext:182 | "Close"
+      okay: 'restext://Common_178'
+      snapshot: true
+      header:
+      # ../.source/ATimeofWar_Eng_v8.cs:13594
+      - type: 'image'
+        asset: 'image://setup/S3_WeaponToken'
+        style: 'setup-image'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:13596
+      - type: 'text'
+        # ../en-US.restext:1012 | "Any player with a {icon:s..."
+        value: 'restext://Stickfun_008'
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:13565
+    - type: 'text'
+      # ../en-US.restext:1007 | "After consulting briefly ..."
+      value: 'restext://Stickfun_003'
+    # ../.source/ATimeofWar_Eng_v8.cs:13568
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:13570
+    - type: 'text'
+      # ../en-US.restext:1008 | "I used this time and warm..."
+      value: 'restext://Stickfun_004'
+    # ../.source/ATimeofWar_Eng_v8.cs:13571
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:13575
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:24 | "Click to continue..."
+      label: 'restext://Common_020'
+      target: 'CoWEvent' # ./00139-CoWEvent.mws.yaml
+      # ../en-US.restext:182 | "Close"
+      okay: 'restext://Common_178'
+      snapshot: true
+      header:
+      # ../.source/ATimeofWar_Eng_v8.cs:13624
+      - type: 'image'
+        asset: 'image://setup/S3_WoodenFigureToken'
+        style: 'setup-image'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:13626
+      - type: 'text'
+        # ../en-US.restext:1009 | "The player with the {icon..."
+        value: 'restext://Stickfun_005'
+# ../.source/ATimeofWar_Eng_v8.cs:13578
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:13579
+- type: 'text'
+  value: ' '

@@ -1,0 +1,89 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:1682
+---
+format: 'mws/0.4'
+passage_id: 'TITLE SCREEN'
+tags:
+- 'NOTADDED'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:1687
+- type: 'text'
+  # ../en-US.restext:307 | "**MY FATHER'S WORK**"
+  value: 'restext://Common_303'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1689
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1693
+- type: 'section'
+  # ../en-US.restext:310 | "ERROR!"
+  title: 'restext://Common_306'
+  style: 'hub-card'
+  content: []
+# ../.source/FearoftheUnknown_Eng_v15.cs:1697
+- type: 'text'
+  # ../en-US.restext:383 | "_A clever game by_ T. C. ..."
+  value: 'restext://TITLE_SCREEN_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1702
+- type: 'assign'
+  var: 'players'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1701
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1708
+- type: 'text'
+  # ../en-US.restext:384 | "How many individuals will..."
+  value: 'restext://TITLE_SCREEN_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1709
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1712
+- type: 'link'
+  # ../en-US.restext:385 | "2 Players."
+  label: 'restext://TITLE_SCREEN_004'
+  target: 'IntroNameEntry' # ./00111-IntroNameEntry.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:1728
+  - type: 'assign'
+    var: 'players'
+    expr: '2'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1713
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1715
+- type: 'link'
+  # ../en-US.restext:386 | "3 Players."
+  label: 'restext://TITLE_SCREEN_005'
+  target: 'IntroNameEntry' # ./00111-IntroNameEntry.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:1735
+  - type: 'assign'
+    var: 'players'
+    expr: '3'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1716
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1718
+- type: 'link'
+  # ../en-US.restext:387 | "4 Players."
+  label: 'restext://TITLE_SCREEN_006'
+  target: 'IntroNameEntry' # ./00111-IntroNameEntry.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:1742
+  - type: 'assign'
+    var: 'players'
+    expr: '4'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1719
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1721
+- type: 'link'
+  # ../en-US.restext:388 | "5 Players."
+  label: 'restext://TITLE_SCREEN_007'
+  target: 'IntroNameEntry' # ./00111-IntroNameEntry.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:1749
+  - type: 'assign'
+    var: 'players'
+    expr: '5'

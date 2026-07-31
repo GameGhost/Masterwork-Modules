@@ -1,0 +1,63 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:7647
+---
+format: 'mws/0.4'
+passage_id: 'Expedition1'
+# ../en-US.restext:73 | "The Hunt"
+title: 'restext://Common_069'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:7655
+- type: 'include_passage'
+  target: 'journal1a' # ./00206-journal1a.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:7656
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:7658
+- type: 'switch'
+  on: 'round'
+  cases:
+  - match: 16
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:7660
+    - type: 'text'
+      # ../en-US.restext:743 | "Expedition 1:"
+      value: 'restext://Expedition1_003'
+  - match: 19
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:7664
+    - type: 'text'
+      # ../en-US.restext:743 | "Expedition 1:"
+      value: 'restext://Expedition1_003'
+  - match: 20
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:7668
+    - type: 'text'
+      # ../en-US.restext:744 | "Expedition 2:"
+      value: 'restext://Expedition1_004'
+  default:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:7673
+  - type: 'text'
+    # ../en-US.restext:742 | "Expedition 3:"
+    value: 'restext://Expedition1_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:7676
+- type: 'let'
+  var: '_rnd_Expedition1_0'
+  # ../en-US.restext:745 | Expedition1_005 | "The snow-covered landscap..."
+  # ../en-US.restext:746 | Expedition1_006 | "It took months of prepara..."
+  # ../en-US.restext:747 | Expedition1_007 | "A hard journey lay ahead...."
+  expr: '["restext://Expedition1_005", "restext://Expedition1_006", "restext://Expedition1_007"].shuffled("Expedition1_0")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:7675
+- type: 'text'
+  # ../en-US.restext:748 | " {_rnd_Expedition1_0} How..."
+  value: 'restext://Expedition1_008'
+  lets:
+  - '_rnd_Expedition1_0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:7685
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:7687
+- type: 'link'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: 'Expedition2' # ./00271-Expedition2.mws.yaml
+  snapshot: true

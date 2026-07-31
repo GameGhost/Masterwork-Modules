@@ -1,0 +1,123 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:26743
+---
+format: 'mws/0.4'
+passage_id: 'PrivateRewardSignIn'
+# ../en-US.restext:1970 | "The Horror of Existence"
+title: 'restext://PrivateRewardSignIn_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:26753
+- type: 'text'
+  # ../en-US.restext:1971 | "**Journal Entry:** _name ..."
+  value: 'restext://PrivateRewardSignIn_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26759
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26761
+- type: 'text'
+  # ../en-US.restext:1972 | "I have indulged my darker..."
+  value: 'restext://PrivateRewardSignIn_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26765
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26769
+- type: 'text'
+  # ../en-US.restext:251 | "**Please choose the playe..."
+  value: 'restext://Common_247'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26771
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26774
+- type: 'link'
+  label: '{nameA}'
+  target: 'PrivateReward1' # ./00291-PrivateReward1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:26807
+  - type: 'assign'
+    var: 'tempname'
+    expr: 'nameA'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:26808
+  - type: 'assign'
+    var: 'creepA'
+    expr: '"yes"'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26775
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26778
+- type: 'link'
+  label: '{nameB}'
+  target: 'PrivateReward1' # ./00291-PrivateReward1.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:26815
+  - type: 'assign'
+    var: 'tempname'
+    expr: 'nameB'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:26816
+  - type: 'assign'
+    var: 'creepB'
+    expr: '"yes"'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26779
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26781
+- type: 'conditional'
+  if: 'players > 2'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:26784
+  - type: 'link'
+    label: '{nameC}'
+    target: 'PrivateReward1' # ./00291-PrivateReward1.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26823
+    - type: 'assign'
+      var: 'tempname'
+      expr: 'nameC'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26824
+    - type: 'assign'
+      var: 'creepC'
+      expr: '"yes"'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26786
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26788
+- type: 'conditional'
+  if: 'players > 3'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:26791
+  - type: 'link'
+    label: '{nameD}'
+    target: 'PrivateReward1' # ./00291-PrivateReward1.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26831
+    - type: 'assign'
+      var: 'tempname'
+      expr: 'nameD'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26832
+    - type: 'assign'
+      var: 'creepD'
+      expr: '"yes"'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26793
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26795
+- type: 'conditional'
+  if: 'players > 4'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:26798
+  - type: 'link'
+    label: '{nameE}'
+    target: 'PrivateReward1' # ./00291-PrivateReward1.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26839
+    - type: 'assign'
+      var: 'tempname'
+      expr: 'nameE'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26840
+    - type: 'assign'
+      var: 'creepE'
+      expr: '"yes"'

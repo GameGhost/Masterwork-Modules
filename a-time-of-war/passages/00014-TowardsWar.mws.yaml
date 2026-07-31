@@ -1,0 +1,69 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:2656
+---
+format: 'mws/0.4'
+passage_id: 'TowardsWar'
+# ../en-US.restext:394 | "A Town Fully Defended"
+title: 'restext://TowardsWar_001'
+tags:
+- 'END'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:2676
+- type: 'popup'
+  layout: 'end_of_generation'
+  # ../en-US.restext:239 | "Confirm"
+  okay: 'restext://Common_235'
+  content:
+  - type: 'text'
+    # ../en-US.restext:395 | "Remove all player pieces ..."
+    value: 'restext://TowardsWar_003'
+  - type: 'let'
+    var: 'generation'
+    expr: '3'
+# ../.source/ATimeofWar_Eng_v8.cs:2678
+- type: 'text'
+  # ../en-US.restext:396 | "The {warwinner} have push..."
+  value: 'restext://TowardsWar_004'
+# ../.source/ATimeofWar_Eng_v8.cs:2683
+- type: 'conditional'
+  conditions:
+  - if: 'barracks == "no"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:2685
+    - type: 'text'
+      # ../en-US.restext:397 | "Against my wishes, the Ba..."
+      value: 'restext://TowardsWar_005'
+  - if: 'barracks == "yes"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:2693
+    - type: 'text'
+      # ../en-US.restext:398 | "True to our instructions,..."
+      value: 'restext://TowardsWar_006'
+# ../.source/ATimeofWar_Eng_v8.cs:2705
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:2707
+- type: 'text'
+  # ../en-US.restext:399 | "It is fitting that I came..."
+  value: 'restext://TowardsWar_007'
+# ../.source/ATimeofWar_Eng_v8.cs:2708
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:2710
+- type: 'conditional'
+  # ../en-US.restext:25 | "Separatists"
+  if: 'warwinner == "restext://Common_021"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:2712
+  - type: 'link'
+    # ../en-US.restext:24 | "Click to continue..."
+    label: 'restext://Common_020'
+    target: 'IntroMartial-Separatists' # ./00152-IntroMartial-Separatists.mws.yaml
+    snapshot: true
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:2716
+  - type: 'link'
+    # ../en-US.restext:24 | "Click to continue..."
+    label: 'restext://Common_020'
+    target: 'IntroMartial-Monarchists' # ./00151-IntroMartial-Monarchists.mws.yaml
+    snapshot: true

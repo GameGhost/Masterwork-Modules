@@ -1,0 +1,85 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:20718
+---
+format: 'mws/0.4'
+passage_id: 'FigureontheTrackInb'
+# ../en-US.restext:1723 | "A Legacy of Intrigue"
+title: 'restext://FigureontheTrackInb_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:20727
+- type: 'text'
+  # ../en-US.restext:6 | "**All players may again v..."
+  value: 'restext://Common_002'
+# ../.source/ATimeofWar_Eng_v8.cs:20729
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:20731
+- type: 'text'
+  # ../en-US.restext:1724 | "The {figure} I so oblivio..."
+  value: 'restext://FigureontheTrackInb_002'
+# ../.source/ATimeofWar_Eng_v8.cs:20737
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:20739
+- type: 'text'
+  # ../en-US.restext:1725 | "However, I soon discovere..."
+  value: 'restext://FigureontheTrackInb_003'
+# ../.source/ATimeofWar_Eng_v8.cs:20740
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:20742
+- type: 'text'
+  # ../en-US.restext:1726 | "Although I could not with..."
+  value: 'restext://FigureontheTrackInb_004'
+# ../.source/ATimeofWar_Eng_v8.cs:20743
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:20747
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  target: 'Late2ResA' # ./00195-Late2ResA.mws.yaml
+  # ../en-US.restext:182 | "Close"
+  okay: 'restext://Common_178'
+  snapshot: true
+  header:
+  - type: 'conditional'
+    if: 'figure == "Sickle"'
+    then:
+    - type: 'image'
+      asset: 'image://setup/S3_SickleToken'
+      style: 'setup-image'
+    else:
+    - type: 'image'
+      asset: 'image://setup/S3_ShieldToken'
+      style: 'setup-image'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:20767
+  - type: 'text'
+    # ../en-US.restext:1727 | "Remove the Suspicion Mark..."
+    value: 'restext://FigureontheTrackInb_005'
+  # ../.source/ATimeofWar_Eng_v8.cs:20786
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:20788
+  - type: 'text'
+    # ../en-US.restext:53 | "The first time a player's..."
+    value: 'restext://Common_049'
+  # ../.source/ATimeofWar_Eng_v8.cs:20797
+  - type: 'conditional'
+    # ../en-US.restext:26 | "Unified Monarchists"
+    if: 'warwinner == "restext://Common_022"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:20799
+    - type: 'text'
+      # ../en-US.restext:121 | "**they may immediately bu..."
+      value: 'restext://Common_117'
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:20803
+    - type: 'text'
+      # ../en-US.restext:120 | "**they may immediately ta..."
+      value: 'restext://Common_116'
+  # ../.source/ATimeofWar_Eng_v8.cs:20806
+  - type: 'text'
+    value: '.'

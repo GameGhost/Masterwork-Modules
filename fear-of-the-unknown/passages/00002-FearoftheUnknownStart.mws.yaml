@@ -1,0 +1,152 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:1598
+---
+format: 'mws/0.4'
+passage_id: 'FearoftheUnknownStart'
+# ../en-US.restext:373 | "GENERATION I: Fear of the..."
+title: 'restext://FearoftheUnknownStart_001'
+tags:
+- 'INTRO'
+layout: 'introduction'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:1610
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:1612
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB].shuffled("FearoftheUnknownStart_0")[0]'
+  - match: 3
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:1616
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC].shuffled("FearoftheUnknownStart_1")[0]'
+  - match: 4
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:1620
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC, nameD].shuffled("FearoftheUnknownStart_2")[0]'
+  - match: 5
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:1624
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC, nameD, nameE].shuffled("FearoftheUnknownStart_3")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1626
+- type: 'assign'
+  var: 'randomname'
+  expr: 'randomplayer'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1609
+- type: 'text'
+  # ../en-US.restext:374 | "**Letter from** **{random..."
+  value: 'restext://FearoftheUnknownStart_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1635
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1637
+- type: 'text'
+  # ../en-US.restext:375 | "It is with great reticenc..."
+  value: 'restext://FearoftheUnknownStart_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1640
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1642
+- type: 'text'
+  # ../en-US.restext:376 | "I will spare you the deta..."
+  value: 'restext://FearoftheUnknownStart_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1643
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1645
+- type: 'text'
+  # ../en-US.restext:377 | "He did not respond to my ..."
+  value: 'restext://FearoftheUnknownStart_005'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1646
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1648
+- type: 'text'
+  # ../en-US.restext:378 | "An irrational fear has gr..."
+  value: 'restext://FearoftheUnknownStart_006'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1649
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1651
+- type: 'text'
+  # ../en-US.restext:379 | "Maybe this forced solitud..."
+  value: 'restext://FearoftheUnknownStart_007'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1652
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1654
+- type: 'link'
+  # ../en-US.restext:80 | "Continue..."
+  label: 'restext://Common_076'
+  target: 'ManiaSpecial' # ./00139-ManiaSpecial.mws.yaml
+  snapshot: true
+# ../.source/FearoftheUnknown_Eng_v15.cs:1656
+- type: 'let'
+  var: '_rnd_FearoftheUnknownStart_0'
+  # ../en-US.restext:81 | Common_077 | "Ledger"
+  # ../en-US.restext:82 | Common_078 | "Gazette"
+  # ../en-US.restext:83 | Common_079 | "Mercury"
+  # ../en-US.restext:84 | Common_080 | "Village Voice"
+  # ../en-US.restext:85 | Common_081 | "Examiner"
+  expr: '["restext://Common_077", "restext://Common_078", "restext://Common_079", "restext://Common_080", "restext://Common_081"].shuffled("FearoftheUnknownStart_4")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1656
+- type: 'assign'
+  var: 'newspaper'
+  # ../en-US.restext:380 | "The {townname} {_rnd_Fear..."
+  expr: 'restext://FearoftheUnknownStart_014'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1657
+- type: 'assign'
+  var: 'whpg'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1658
+- type: 'assign'
+  var: 'fp10vp'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1659
+- type: 'assign'
+  var: 'fpresearch2'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1660
+- type: 'assign'
+  var: 'fpsanity3'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1661
+- type: 'assign'
+  var: 'fpcreepy3'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1662
+- type: 'assign'
+  var: 'gen3pg'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1663
+- type: 'assign'
+  var: 'plA'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1664
+- type: 'assign'
+  var: 'plB'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1665
+- type: 'assign'
+  var: 'plC'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1666
+- type: 'assign'
+  var: 'plD'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1667
+- type: 'assign'
+  var: 'plE'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:1668
+- type: 'assign'
+  var: 'onecount'
+  expr: '0'

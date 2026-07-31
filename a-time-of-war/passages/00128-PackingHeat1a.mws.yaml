@@ -1,0 +1,108 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:14528
+---
+format: 'mws/0.4'
+passage_id: 'PackingHeat1a'
+# ../en-US.restext:1093 | "Attracting Attentions"
+title: 'restext://PackingHeat1a_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:14535
+- type: 'text'
+  # ../en-US.restext:1094 | "While the {warwinner} wer..."
+  value: 'restext://PackingHeat1a_002'
+# ../.source/ATimeofWar_Eng_v8.cs:14544
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:14548
+- type: 'popup'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  layout: 'reveal'
+  # ../en-US.restext:182 | "Close"
+  cancel: 'restext://Common_178'
+  snapshot: true
+  header:
+  # ../.source/ATimeofWar_Eng_v8.cs:14610
+  - type: 'image'
+    asset: 'image://setup/Creepy_Icon'
+    style: 'setup-image'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:14579
+  - type: 'switch'
+    on: 'round'
+    cases:
+    - match: 7
+      nodes:
+      # ../.source/ATimeofWar_Eng_v8.cs:14581
+      - type: 'assign'
+        var: 'martweapons'
+        expr: '1'
+      # ../.source/ATimeofWar_Eng_v8.cs:14582
+      - type: 'assign'
+        var: 'martial'
+        expr: '1'
+      # ../.source/ATimeofWar_Eng_v8.cs:14583
+      - type: 'section'
+        style: 'panel'
+        content: []
+      - type: 'link'
+        # ../en-US.restext:169 | "Continue"
+        label: 'restext://Common_165'
+        target: 'Martial1' # ./00023-Martial1.mws.yaml
+        snapshot: true
+    - match: 8
+      nodes:
+      # ../.source/ATimeofWar_Eng_v8.cs:14589
+      - type: 'assign'
+        var: 'martweapons'
+        expr: '1'
+      # ../.source/ATimeofWar_Eng_v8.cs:14590
+      - type: 'assign'
+        var: 'martial'
+        expr: '2'
+      # ../.source/ATimeofWar_Eng_v8.cs:14591
+      - type: 'section'
+        style: 'panel'
+        content: []
+      - type: 'link'
+        # ../en-US.restext:169 | "Continue"
+        label: 'restext://Common_165'
+        target: 'Martial2' # ./00024-Martial2.mws.yaml
+        snapshot: true
+    default:
+    # ../.source/ATimeofWar_Eng_v8.cs:14598
+    - type: 'assign'
+      var: 'martweapons'
+      expr: '1'
+    # ../.source/ATimeofWar_Eng_v8.cs:14599
+    - type: 'assign'
+      var: 'martial'
+      expr: '3'
+    # ../.source/ATimeofWar_Eng_v8.cs:14600
+    - type: 'section'
+      style: 'panel'
+      content: []
+    - type: 'link'
+      # ../en-US.restext:169 | "Continue"
+      label: 'restext://Common_165'
+      target: 'Martial3' # ./00036-Martial3.mws.yaml
+      snapshot: true
+  # ../.source/ATimeofWar_Eng_v8.cs:14615
+  - type: 'let'
+    var: '_rnd_PackingHeat1a_0'
+    # ../en-US.restext:1095 | PackingHeat1a_003 | "1 <sprite=\"Creepy_Icon\"..."
+    # ../en-US.restext:1096 | PackingHeat1a_004 | "1 Resource of their choic..."
+    expr: '["restext://PackingHeat1a_003", "restext://PackingHeat1a_004"].shuffled("PackingHeat1a_0")[0]'
+  # ../.source/ATimeofWar_Eng_v8.cs:14612
+  - type: 'text'
+    # ../en-US.restext:1097 | "{heat} gains {_rnd_Packin..."
+    value: 'restext://PackingHeat1a_005'
+    lets:
+    - '_rnd_PackingHeat1a_0'
+  # ../.source/ATimeofWar_Eng_v8.cs:14617
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:14619
+  - type: 'text'
+    # ../en-US.restext:1098 | "If they have not already ..."
+    value: 'restext://PackingHeat1a_006'

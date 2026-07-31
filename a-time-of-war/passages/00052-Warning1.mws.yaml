@@ -1,0 +1,99 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:6787
+---
+format: 'mws/0.4'
+passage_id: 'Warning1'
+# ../en-US.restext:635 | "Peaceful Return"
+title: 'restext://Warning1_001'
+# ../en-US.restext:210 | "Early Years"
+subtitle: 'restext://Common_206'
+tags:
+- 'HUB'
+layout: 'hub'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:6794
+- type: 'assign'
+  var: 'round'
+  expr: '13'
+# ../.source/ATimeofWar_Eng_v8.cs:6796
+- type: 'conditional'
+  if: 'pgGen3 == 0'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:6800
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:211 | "Accept"
+    okay: 'restext://Common_207'
+    header:
+    # ../.source/ATimeofWar_Eng_v8.cs:6804
+    - type: 'image'
+      asset: 'image://setup/VillageChronicleCover'
+      style: 'setup-image'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:6806
+    - type: 'text'
+      # ../en-US.restext:240 | "Turn to page **16** of th..."
+      value: 'restext://Common_236'
+    # ../.source/ATimeofWar_Eng_v8.cs:6812
+    - type: 'conditional'
+      if: 'players == 3'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:6814
+      - type: 'break'
+      # ../.source/ATimeofWar_Eng_v8.cs:6815
+      - type: 'text'
+        # ../en-US.restext:230 | "Then, since this is a 3 p..."
+        value: 'restext://Common_226'
+# ../.source/ATimeofWar_Eng_v8.cs:6819
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:6823
+- type: 'section'
+  # ../en-US.restext:122 | "**Technician**"
+  title: 'restext://Common_118'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:6831
+  - type: 'text'
+    # ../en-US.restext:123 | "When visiting the **Techn..."
+    value: 'restext://Common_119'
+# ../.source/ATimeofWar_Eng_v8.cs:6844
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:6849
+- type: 'section'
+  # ../en-US.restext:124 | "**Utopian Experiments**"
+  title: 'restext://Common_120'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:6857
+  - type: 'text'
+    # ../en-US.restext:125 | "A new set of Experiments ..."
+    value: 'restext://Common_121'
+# ../.source/ATimeofWar_Eng_v8.cs:6860
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:6864
+- type: 'section'
+  # ../en-US.restext:126 | "{icon:storybooktoken} **U..."
+  title: 'restext://Common_122'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:6874
+  - type: 'text'
+    # ../en-US.restext:127 | "When you visit this locat..."
+    value: 'restext://Common_123'
+  # ../.source/ATimeofWar_Eng_v8.cs:6875
+  - type: 'link'
+    # ../en-US.restext:128 | "Click here for a detailed..."
+    label: 'restext://Common_124'
+    target: 'UniGen3' # ./00226-UniGen3.mws.yaml
+    snapshot: true
+  # ../.source/ATimeofWar_Eng_v8.cs:6876
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:6880
+  - type: 'link'
+    # ../en-US.restext:217 | "Click here at the end of ..."
+    label: 'restext://Common_213'
+    target: 'WarningEvent' # ./00053-WarningEvent.mws.yaml
+    snapshot: true

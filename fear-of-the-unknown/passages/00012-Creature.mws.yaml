@@ -1,0 +1,163 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:2956
+---
+format: 'mws/0.4'
+passage_id: 'Creature'
+# ../en-US.restext:63 | "The Creature Re emerges"
+title: 'restext://Common_059'
+# ../en-US.restext:155 | "Early Years"
+subtitle: 'restext://Common_151'
+tags:
+- 'HUB'
+layout: 'hub'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:2963
+- type: 'assign'
+  var: 'round'
+  expr: '7'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2965
+- type: 'conditional'
+  if: '!crpg'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:2969
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:156 | "Accept"
+    okay: 'restext://Common_152'
+    header:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2973
+    - type: 'image'
+      asset: 'image://setup/AngryMobSetup1'
+      style: 'setup-image'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2975
+    - type: 'conditional'
+      if: 'kill == "butcher"'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:2977
+      - type: 'text'
+        # ../en-US.restext:459 | "Turn to page **4** of the..."
+        value: 'restext://Creature_003'
+      else:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:2987
+      - type: 'text'
+        # ../en-US.restext:458 | "Turn to page **5** of the..."
+        value: 'restext://Creature_002'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2994
+    - type: 'text'
+      # ../en-US.restext:460 | " Retrieve the **Puppy** a..."
+      value: 'restext://Creature_004'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:3013
+    - type: 'conditional'
+      if: '!Creature'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:3015
+      - type: 'assign'
+        var: 'Creature'
+        expr: '1'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:3016
+      - type: 'assign'
+        var: 'tracker'
+        expr: 'tracker + 2'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:3017
+      - type: 'switch'
+        on: 'players'
+        cases:
+        - match: 4
+          nodes:
+          # ../.source/FearoftheUnknown_Eng_v15.cs:3019
+          - type: 'assign'
+            var: 'tracker'
+            expr: 'tracker + 1'
+        - match: 5
+          nodes:
+          # ../.source/FearoftheUnknown_Eng_v15.cs:3023
+          - type: 'assign'
+            var: 'tracker'
+            expr: 'tracker + 1'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:3026
+    - type: 'text'
+      # ../en-US.restext:95 | "**{tracker}** and the {ic..."
+      value: 'restext://Common_091'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:3031
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:3032
+    - type: 'conditional'
+      if: 'players == 3'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:3034
+      - type: 'text'
+        # ../en-US.restext:96 | "Then, since this is a 3 p..."
+        value: 'restext://Common_092'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:3035
+      - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3039
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3044
+- type: 'section'
+  # ../en-US.restext:64 | "{icon:storybooktoken} **C..."
+  title: 'restext://Common_060'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:3055
+  - type: 'text'
+    # ../en-US.restext:461 | "When taking the **Perform..."
+    value: 'restext://Creature_006'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:3079
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:3081
+  - type: 'text'
+    # ../en-US.restext:462 | "However, if a player comp..."
+    value: 'restext://Creature_007'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:3082
+  - type: 'link'
+    # ../en-US.restext:65 | "click here to see the con..."
+    label: 'restext://Common_061'
+    target: 'Guilt' # ./00120-Guilt.mws.yaml
+    snapshot: true
+# ../.source/FearoftheUnknown_Eng_v15.cs:3085
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3091
+- type: 'section'
+  # ../en-US.restext:66 | "**The Church**"
+  title: 'restext://Common_062'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:3099
+  - type: 'link'
+    # ../en-US.restext:67 | "Click here"
+    label: 'restext://Common_063'
+    target: 'FOTU-Church' # ./00352-FOTU-Church.mws.yaml
+    snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:3100
+  - type: 'text'
+    # ../en-US.restext:68 | " for an explanation of th..."
+    value: 'restext://Common_064'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3103
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3108
+- type: 'section'
+  # ../en-US.restext:463 | "**The Asylum**"
+  title: 'restext://Creature_012'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:3116
+  - type: 'text'
+    # ../en-US.restext:464 | "The town has resolved to ..."
+    value: 'restext://Creature_013'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3120
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:3123
+- type: 'section'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:3130
+  - type: 'link'
+    # ../en-US.restext:69 | "Click here at the end of ..."
+    label: 'restext://Common_065'
+    target: 'AsylumOpps' # ./00145-AsylumOpps.mws.yaml
+    snapshot: true

@@ -1,0 +1,55 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:16843
+---
+format: 'mws/0.4'
+passage_id: 'RoyalBarnCheck'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:16845
+- type: 'conditional'
+  # ../en-US.restext:26 | "Unified Monarchists"
+  if: 'warloser == "restext://Common_022"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:16847
+  - type: 'conditional'
+    if: 'barn == "yes"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:16851
+    - type: 'text'
+      # ../en-US.restext:170 | "**Suspicions Confirmed**"
+      value: 'restext://Common_166'
+    # ../.source/ATimeofWar_Eng_v8.cs:16853
+    - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:16854
+    - type: 'text'
+      # ../en-US.restext:1366 | "The Unified Monarchists a..."
+      value: 'restext://RoyalBarnCheck_002'
+    # ../.source/ATimeofWar_Eng_v8.cs:16855
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:16859
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:24 | "Click to continue..."
+      label: 'restext://Common_020'
+      target: 'BribeDenied' # ./00220-BribeDenied.mws.yaml
+      # ../en-US.restext:182 | "Close"
+      okay: 'restext://Common_178'
+      snapshot: true
+      header:
+      # ../.source/ATimeofWar_Eng_v8.cs:16883
+      - type: 'image'
+        asset: 'image://setup/S3_EstateUpgradeBack'
+        style: 'setup-image'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:16887
+      - type: 'text'
+        # ../en-US.restext:1367 | "**The player with the \"S..."
+        value: 'restext://RoyalBarnCheck_003'
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:16863
+    - type: 'goto'
+      target: 'BribeDenied' # ./00220-BribeDenied.mws.yaml
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:16868
+  - type: 'goto'
+    target: 'BribeDenied' # ./00220-BribeDenied.mws.yaml

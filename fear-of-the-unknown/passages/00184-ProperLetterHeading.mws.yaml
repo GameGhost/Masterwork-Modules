@@ -1,0 +1,361 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:21212
+---
+format: 'mws/0.4'
+passage_id: 'ProperLetterHeading'
+tags:
+- 'NOTE'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:21214
+- type: 'text'
+  # ../en-US.restext:1560 | "Gen 1:"
+  value: 'restext://ProperLetterHeading_001'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21215
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21216
+- type: 'text'
+  # ../en-US.restext:1561 | "1831-1862"
+  value: 'restext://ProperLetterHeading_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21217
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21218
+- type: 'text'
+  # ../en-US.restext:1562 | "Gen 2:"
+  value: 'restext://ProperLetterHeading_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21219
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21220
+- type: 'text'
+  # ../en-US.restext:1563 | "1863-1891"
+  value: 'restext://ProperLetterHeading_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21221
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21222
+- type: 'text'
+  # ../en-US.restext:1564 | "Gen 3:"
+  value: 'restext://ProperLetterHeading_005'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21223
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21224
+- type: 'text'
+  # ../en-US.restext:1565 | "1892-1922"
+  value: 'restext://ProperLetterHeading_006'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21225
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21227
+- type: 'text'
+  # ../en-US.restext:1566 | "Unless I figure out an al..."
+  value: 'restext://ProperLetterHeading_007'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21246
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:21248
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB].shuffled("ProperLetterHeading_0")[0]'
+  - match: 3
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:21252
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC].shuffled("ProperLetterHeading_1")[0]'
+  - match: 4
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:21256
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC, nameD].shuffled("ProperLetterHeading_2")[0]'
+  - match: 5
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:21260
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC, nameD, nameE].shuffled("ProperLetterHeading_3")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21262
+- type: 'assign'
+  var: 'randomname'
+  expr: 'randomplayer'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21244
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21263
+- type: 'text'
+  value: '{randomname}'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21264
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21266
+- type: 'include_passage'
+  target: 'journal1a' # ./00206-journal1a.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:21267
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21268
+- type: 'include_passage'
+  target: 'letter1a' # ./00205-letter1a.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:21269
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21270
+- type: 'text'
+  value: '{newspaper}'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21271
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21275
+- type: 'text'
+  # ../en-US.restext:75 | "**Newsprint - {newspaper}..."
+  value: 'restext://Common_071'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21284
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21286
+- type: 'text'
+  # ../en-US.restext:1567 | "Newspaper Code"
+  value: 'restext://ProperLetterHeading_008'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21288
+- type: 'let'
+  var: '_rnd_ProperLetterHeading_0'
+  # ../en-US.restext:81 | Common_077 | "Ledger"
+  # ../en-US.restext:82 | Common_078 | "Gazette"
+  # ../en-US.restext:83 | Common_079 | "Mercury"
+  # ../en-US.restext:84 | Common_080 | "Village Voice"
+  # ../en-US.restext:85 | Common_081 | "Examiner"
+  expr: '["restext://Common_077", "restext://Common_078", "restext://Common_079", "restext://Common_080", "restext://Common_081"].shuffled("ProperLetterHeading_4")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21288
+- type: 'assign'
+  var: 'newspaper'
+  # ../en-US.restext:1568 | "The {townname} {_rnd_Prop..."
+  expr: 'restext://ProperLetterHeading_009'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21287
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21293
+- type: 'text'
+  value: '('
+# ../.source/FearoftheUnknown_Eng_v15.cs:21294
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21298
+- type: 'text'
+  # ../en-US.restext:1569 | "**Letters of Note -** _Ro..."
+  value: 'restext://ProperLetterHeading_010'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21308
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:21310
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB].shuffled("ProperLetterHeading_5")[0]'
+  - match: 3
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:21314
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC].shuffled("ProperLetterHeading_6")[0]'
+  - match: 4
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:21318
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC, nameD].shuffled("ProperLetterHeading_7")[0]'
+  - match: 5
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:21322
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC, nameD, nameE].shuffled("ProperLetterHeading_8")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21324
+- type: 'assign'
+  var: 'randomname'
+  expr: 'randomplayer'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21304
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21325
+- type: 'text'
+  # ../en-US.restext:1570 | "**{randomname}'s Journal ..."
+  value: 'restext://ProperLetterHeading_011'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21337
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:21339
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB].shuffled("ProperLetterHeading_9")[0]'
+  - match: 3
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:21343
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC].shuffled("ProperLetterHeading_10")[0]'
+  - match: 4
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:21347
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC, nameD].shuffled("ProperLetterHeading_11")[0]'
+  - match: 5
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:21351
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC, nameD, nameE].shuffled("ProperLetterHeading_12")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21353
+- type: 'assign'
+  var: 'randomname'
+  expr: 'randomplayer'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21332
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21335
+- type: 'text'
+  # ../en-US.restext:1571 | "**Letter from** **{random..."
+  value: 'restext://ProperLetterHeading_012'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21362
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21365
+- type: 'text'
+  value: '{journal1a}'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21366
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21367
+- type: 'text'
+  value: '{journal1b}'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21368
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21369
+- type: 'text'
+  value: '{journal1c}'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21370
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21371
+- type: 'text'
+  value: '{letter1a}'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21372
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21373
+- type: 'text'
+  value: '{letter1b}'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21374
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21375
+- type: 'text'
+  value: '{letter1c}'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21378
+- type: 'let'
+  var: '_rnd_ProperLetterHeading_1'
+  expr: '["Journal Entry -", "Journal of"].shuffled("ProperLetterHeading_13")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21376
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21378
+- type: 'text'
+  value: '{_rnd_ProperLetterHeading_1}'
+  lets:
+  - '_rnd_ProperLetterHeading_1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21379
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21386
+- type: 'text'
+  # ../en-US.restext:1562 | "Gen 2:"
+  value: 'restext://ProperLetterHeading_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21387
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21388
+- type: 'text'
+  # ../en-US.restext:1563 | "1863-1891"
+  value: 'restext://ProperLetterHeading_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21389
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21390
+- type: 'text'
+  # ../en-US.restext:1572 | "Transitional"
+  value: 'restext://ProperLetterHeading_015'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21391
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21394
+- type: 'text'
+  # ../en-US.restext:1573 | "**Friendly Correspondence..."
+  value: 'restext://ProperLetterHeading_016'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21400
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21402
+- type: 'text'
+  value: '{journal2}'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21403
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21404
+- type: 'text'
+  value: '{letter2}'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21405
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21408
+- type: 'text'
+  # ../en-US.restext:1564 | "Gen 3:"
+  value: 'restext://ProperLetterHeading_005'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21409
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21410
+- type: 'text'
+  # ../en-US.restext:1565 | "1892-1922"
+  value: 'restext://ProperLetterHeading_006'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21411
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21413
+- type: 'text'
+  value: '{journal3}'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21414
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21415
+- type: 'text'
+  value: '{letter3}'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21423
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:21425
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB].shuffled("ProperLetterHeading_14")[0]'
+  - match: 3
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:21429
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC].shuffled("ProperLetterHeading_15")[0]'
+  - match: 4
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:21433
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC, nameD].shuffled("ProperLetterHeading_16")[0]'
+  - match: 5
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:21437
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC, nameD, nameE].shuffled("ProperLetterHeading_17")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21439
+- type: 'assign'
+  var: 'randomname'
+  expr: 'randomplayer'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21416
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:21421
+- type: 'text'
+  # ../en-US.restext:1574 | "**Journal of** **{randomn..."
+  value: 'restext://ProperLetterHeading_017'

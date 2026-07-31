@@ -1,0 +1,112 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:19375
+---
+format: 'mws/0.4'
+passage_id: 'S4Asylum3'
+# ../en-US.restext:1458 | "Asylum Resolution"
+title: 'restext://S4Asylum3_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:19383
+- type: 'text'
+  # ../en-US.restext:1459 | "The Institution thanked u..."
+  value: 'restext://S4Asylum3_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19385
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19389
+- type: 'text'
+  # ../en-US.restext:1460 | "**How many players chose ..."
+  value: 'restext://S4Asylum3_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19391
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19394
+- type: 'link'
+  # ../en-US.restext:1461 | "None."
+  label: 'restext://S4Asylum3_004'
+  target: 'Creature3' # ./00045-Creature3.mws.yaml
+  snapshot: true
+# ../.source/FearoftheUnknown_Eng_v15.cs:19395
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19398
+- type: 'link'
+  # ../en-US.restext:1462 | "1."
+  label: 'restext://S4Asylum3_005'
+  target: 'Creature3' # ./00045-Creature3.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19436
+  - type: 'assign'
+    var: 'asylumcount'
+    expr: 'asylumcount + asupg'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19399
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19402
+- type: 'link'
+  # ../en-US.restext:1463 | "2."
+  label: 'restext://S4Asylum3_006'
+  target: 'Creature3' # ./00045-Creature3.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19443
+  - type: 'assign'
+    var: 'asylumcount'
+    expr: 'asylumcount + asupg * 2'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19403
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19405
+- type: 'conditional'
+  if: 'players > 2'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19408
+  - type: 'link'
+    # ../en-US.restext:1464 | "3."
+    label: 'restext://S4Asylum3_007'
+    target: 'Creature3' # ./00045-Creature3.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:19450
+    - type: 'assign'
+      var: 'asylumcount'
+      expr: 'asylumcount + asupg * 3'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19409
+  - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19411
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19412
+- type: 'conditional'
+  if: 'players > 3'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19415
+  - type: 'link'
+    # ../en-US.restext:1465 | "4."
+    label: 'restext://S4Asylum3_008'
+    target: 'Creature3' # ./00045-Creature3.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:19457
+    - type: 'assign'
+      var: 'asylumcount'
+      expr: 'asylumcount + asupg * 4'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19416
+  - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19418
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:19419
+- type: 'conditional'
+  if: 'players > 4'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:19422
+  - type: 'link'
+    # ../en-US.restext:1466 | "5."
+    label: 'restext://S4Asylum3_009'
+    target: 'Creature3' # ./00045-Creature3.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:19464
+    - type: 'assign'
+      var: 'asylumcount'
+      expr: 'asylumcount + asupg * 5'

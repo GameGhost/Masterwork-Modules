@@ -1,0 +1,104 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:25885
+---
+format: 'mws/0.4'
+passage_id: '2PCoWEvent'
+# ../en-US.restext:274 | "BID"
+title: 'restext://Common_270'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:25892
+- type: 'text'
+  # ../en-US.restext:194 | "Special Event"
+  value: 'restext://Common_190'
+  style: 'special-event'
+# ../.source/ATimeofWar_Eng_v8.cs:25893
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:25894
+- type: 'text'
+  # ../en-US.restext:275 | "Both players take all the..."
+  value: 'restext://Common_271'
+# ../.source/ATimeofWar_Eng_v8.cs:25896
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25898
+- type: 'text'
+  # ../en-US.restext:2117 | "Once both players are rea..."
+  value: 'restext://_2PCoWEvent_003'
+# ../.source/ATimeofWar_Eng_v8.cs:25917
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25921
+- type: 'text'
+  # ../en-US.restext:2118 | "**Benevolence** will rewa..."
+  value: 'restext://_2PCoWEvent_004'
+# ../.source/ATimeofWar_Eng_v8.cs:25928
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:25931
+- type: 'text'
+  # ../en-US.restext:2119 | "**Iron Fist** will reward..."
+  value: 'restext://_2PCoWEvent_005'
+# ../.source/ATimeofWar_Eng_v8.cs:25938
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25940
+- type: 'text'
+  # ../en-US.restext:2120 | "This will provide a **{de..."
+  value: 'restext://_2PCoWEvent_006'
+# ../.source/ATimeofWar_Eng_v8.cs:25961
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:25964
+- type: 'text'
+  # ../en-US.restext:2121 | "_A tied vote will result ..."
+  value: 'restext://_2PCoWEvent_007'
+# ../.source/ATimeofWar_Eng_v8.cs:25972
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25974
+- type: 'text'
+  # ../en-US.restext:276 | "Only the player who wins ..."
+  value: 'restext://Common_272'
+# ../.source/ATimeofWar_Eng_v8.cs:25976
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:25980
+- type: 'popup'
+  layout: 'countdown_instructions'
+  # ../en-US.restext:2122 | "Click to complete the bid..."
+  label: 'restext://_2PCoWEvent_009'
+  content:
+  - type: 'text'
+    # ../en-US.restext:277 | "Click on the 'Start Biddi..."
+    value: 'restext://Common_273'
+  - type: 'break'
+    style: 'paragraph'
+  - type: 'text'
+    # ../en-US.restext:196 | "When you see the word 'RE..."
+    value: 'restext://Common_192'
+  - type: 'break'
+    style: 'paragraph'
+  - type: 'popup'
+    layout: 'countdown_action'
+    # ../en-US.restext:278 | "Start Bidding"
+    label: 'restext://Common_274'
+    style: 'countdown-trigger'
+    content:
+    - type: 'text'
+      # ../en-US.restext:199 | "3"
+      value: 'restext://Common_195'
+      style: 'countdown-3'
+    - type: 'text'
+      # ../en-US.restext:200 | "2"
+      value: 'restext://Common_196'
+      style: 'countdown-2'
+    - type: 'text'
+      # ../en-US.restext:201 | "1"
+      value: 'restext://Common_197'
+      style: 'countdown-1'
+    - type: 'text'
+      # ../en-US.restext:198 | "REVEAL"
+      value: 'restext://Common_194'
+      style: 'countdown-reveal'
+    # ../en-US.restext:198 | "REVEAL"
+    okay: 'restext://Common_194'
+    target: '2PCoWRes' # ./00265-2PCoWRes.mws.yaml
+    snapshot: false

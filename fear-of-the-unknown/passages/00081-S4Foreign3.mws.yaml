@@ -1,0 +1,91 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:10912
+---
+format: 'mws/0.4'
+passage_id: 'S4Foreign3'
+# ../en-US.restext:909 | "Protected Against Witchcraft"
+title: 'restext://S4Foreign3_001'
+tags:
+- 'END'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:10922
+- type: 'conditional'
+  if: 'revresolve == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10925
+  - type: 'popup'
+    layout: 'end_of_generation'
+    # ../en-US.restext:299 | "Confirm"
+    okay: 'restext://Common_295'
+    content:
+    - type: 'text'
+      # ../en-US.restext:281 | "Remove all player pieces ..."
+      value: 'restext://Common_277'
+    - type: 'let'
+      var: 'generation'
+      expr: '6'
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10930
+  - type: 'popup'
+    layout: 'end_of_generation'
+    # ../en-US.restext:299 | "Confirm"
+    okay: 'restext://Common_295'
+    content:
+    - type: 'text'
+      # ../en-US.restext:280 | "Remove all player pieces ..."
+      value: 'restext://Common_276'
+    - type: 'let'
+      var: 'generation'
+      expr: '6'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10935
+- type: 'text'
+  # ../en-US.restext:282 | "**Newsprint - {newspaper}..."
+  value: 'restext://Common_278'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10944
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:10946
+- type: 'conditional'
+  if: 'cursed == 1'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10948
+  - type: 'text'
+    # ../en-US.restext:912 | "Several years have passed..."
+    value: 'restext://S4Foreign3_004'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10959
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10961
+  - type: 'text'
+    # ../en-US.restext:913 | "In a direct display of th..."
+    value: 'restext://S4Foreign3_005'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10964
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10967
+  - type: 'link'
+    # ../en-US.restext:324 | "Click here to continue..."
+    label: 'restext://Common_320'
+    target: 'TensionIntro' # ./00018-TensionIntro.mws.yaml
+    snapshot: true
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10971
+  - type: 'text'
+    # ../en-US.restext:910 | "The movement to protect o..."
+    value: 'restext://S4Foreign3_002'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10974
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10978
+  - type: 'text'
+    # ../en-US.restext:911 | "**The witch is still out ..."
+    value: 'restext://S4Foreign3_003'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10988
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:10991
+  - type: 'link'
+    # ../en-US.restext:324 | "Click here to continue..."
+    label: 'restext://Common_320'
+    target: 'IsolationIntro' # ./00017-IsolationIntro.mws.yaml
+    snapshot: true

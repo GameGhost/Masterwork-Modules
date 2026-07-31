@@ -1,0 +1,62 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:6492
+---
+format: 'mws/0.4'
+passage_id: 'TimeTravelEvent'
+# ../en-US.restext:606 | "Advanced Work is Important!"
+title: 'restext://TimeTravelEvent_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:6500
+- type: 'text'
+  # ../en-US.restext:607 | "While the journal was an ..."
+  value: 'restext://TimeTravelEvent_002'
+# ../.source/ATimeofWar_Eng_v8.cs:6505
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:6507
+- type: 'text'
+  # ../en-US.restext:608 | "Our meeting was brief, bu..."
+  value: 'restext://TimeTravelEvent_003'
+# ../.source/ATimeofWar_Eng_v8.cs:6508
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:6510
+- type: 'text'
+  # ../en-US.restext:609 | "With these experiments, t..."
+  value: 'restext://TimeTravelEvent_004'
+# ../.source/ATimeofWar_Eng_v8.cs:6512
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:6516
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  target: 'TimeTravelEventb' # ./00225-TimeTravelEventb.mws.yaml
+  # ../en-US.restext:182 | "Close"
+  okay: 'restext://Common_178'
+  snapshot: true
+  header:
+  # ../.source/ATimeofWar_Eng_v8.cs:6532
+  - type: 'image'
+    asset: 'image://setup/S3_ModernExperiment'
+    style: 'setup-image'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:6534
+  - type: 'text'
+    # ../en-US.restext:610 | "Return the **Time Machine..."
+    value: 'restext://TimeTravelEvent_005'
+  # ../.source/ATimeofWar_Eng_v8.cs:6541
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:6543
+  - type: 'text'
+    # ../en-US.restext:611 | "Retrieve the **Utopian Ex..."
+    value: 'restext://TimeTravelEvent_006'
+  # ../.source/ATimeofWar_Eng_v8.cs:6551
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:6553
+  - type: 'text'
+    # ../en-US.restext:226 | "Each player then **draws ..."
+    value: 'restext://Common_222'

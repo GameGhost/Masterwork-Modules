@@ -1,0 +1,49 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:27227
+---
+format: 'mws/0.4'
+passage_id: 'ATOW-Church'
+# ../en-US.restext:2238 | "Charitable Church"
+title: 'restext://ATOW_Church_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:27234
+- type: 'text'
+  # ../en-US.restext:2239 | "Pay $ X/X/X to move 1/2/3..."
+  value: 'restext://ATOW_Church_002'
+# ../.source/ATimeofWar_Eng_v8.cs:27238
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:27242
+- type: 'text'
+  # ../en-US.restext:2240 | "_For example, if the cost..."
+  value: 'restext://ATOW_Church_003'
+# ../.source/ATimeofWar_Eng_v8.cs:27244
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:27246
+- type: 'switch'
+  on: 'round'
+  cases:
+  - match: 14
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:27248
+    - type: 'link'
+      # ../en-US.restext:58 | "Click to return..."
+      label: 'restext://Common_054'
+      target: 'Warning2' # ./00056-Warning2.mws.yaml
+      snapshot: true
+  - match: 15
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:27252
+    - type: 'link'
+      # ../en-US.restext:58 | "Click to return..."
+      label: 'restext://Common_054'
+      target: 'Warning3' # ./00059-Warning3.mws.yaml
+      snapshot: true
+  default:
+  # ../.source/ATimeofWar_Eng_v8.cs:27257
+  - type: 'link'
+    # ../en-US.restext:58 | "Click to return..."
+    label: 'restext://Common_054'
+    target: 'MonarchReign3' # ./00069-MonarchReign3.mws.yaml
+    snapshot: true

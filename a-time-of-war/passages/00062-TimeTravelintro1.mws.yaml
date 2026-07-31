@@ -1,0 +1,125 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:8198
+---
+format: 'mws/0.4'
+passage_id: 'TimeTravelintro1'
+# ../en-US.restext:697 | "GENERATION II: A Return t..."
+title: 'restext://TimeTravelintro1_001'
+tags:
+- 'INTRO'
+layout: 'introduction'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:8207
+- type: 'text'
+  # ../en-US.restext:698 | "I hope you will indulge m..."
+  value: 'restext://TimeTravelintro1_002'
+# ../.source/ATimeofWar_Eng_v8.cs:8208
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:8210
+- type: 'text'
+  # ../en-US.restext:699 | "The all-encompassing dest..."
+  value: 'restext://TimeTravelintro1_003'
+# ../.source/ATimeofWar_Eng_v8.cs:8211
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:8213
+- type: 'text'
+  # ../en-US.restext:700 | "However, fortune would so..."
+  value: 'restext://TimeTravelintro1_004'
+# ../.source/ATimeofWar_Eng_v8.cs:8214
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:8216
+- type: 'text'
+  # ../en-US.restext:701 | "I was joined by my cousin..."
+  value: 'restext://TimeTravelintro1_005'
+# ../.source/ATimeofWar_Eng_v8.cs:8217
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:8219
+- type: 'text'
+  # ../en-US.restext:702 | "It was a map!"
+  value: 'restext://TimeTravelintro1_006'
+# ../.source/ATimeofWar_Eng_v8.cs:8221
+- type: 'assign'
+  var: 'buy'
+  expr: '0'
+# ../.source/ATimeofWar_Eng_v8.cs:8220
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:8223
+- type: 'link'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  target: 'TimeTravelIntro2' # ./00031-TimeTravelIntro2.mws.yaml
+  snapshot: true
+# ../.source/ATimeofWar_Eng_v8.cs:8225
+- type: 'conditional'
+  if: 'takereact == 1'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:8227
+  - type: 'conditional'
+    conditions:
+    # ../en-US.restext:25 | "Separatists"
+    - if: 'warwinner == "restext://Common_021"'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:8229
+      - type: 'assign'
+        var: 'warwinner'
+        # ../en-US.restext:26 | "Unified Monarchists"
+        expr: '"restext://Common_022"'
+    # ../en-US.restext:26 | "Unified Monarchists"
+    - if: 'warwinner == "restext://Common_022"'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:8233
+      - type: 'assign'
+        var: 'warwinner'
+        # ../en-US.restext:25 | "Separatists"
+        expr: '"restext://Common_021"'
+  # ../.source/ATimeofWar_Eng_v8.cs:8235
+  - type: 'conditional'
+    conditions:
+    # ../en-US.restext:25 | "Separatists"
+    - if: 'warloser == "restext://Common_021"'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:8237
+      - type: 'assign'
+        var: 'warloser'
+        # ../en-US.restext:26 | "Unified Monarchists"
+        expr: '"restext://Common_022"'
+    # ../en-US.restext:26 | "Unified Monarchists"
+    - if: 'warloser == "restext://Common_022"'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:8241
+      - type: 'assign'
+        var: 'warloser'
+        # ../en-US.restext:25 | "Separatists"
+        expr: '"restext://Common_021"'
+# ../.source/ATimeofWar_Eng_v8.cs:8244
+- type: 'assign'
+  var: 'tmrepair'
+  expr: '"no"'
+# ../.source/ATimeofWar_Eng_v8.cs:8245
+- type: 'assign'
+  var: 'pgGen3'
+  expr: '0'
+# ../.source/ATimeofWar_Eng_v8.cs:8246
+- type: 'assign'
+  var: 'pg13'
+  expr: '0'
+# ../.source/ATimeofWar_Eng_v8.cs:8247
+- type: 'assign'
+  var: 'buy'
+  expr: '0'
+# ../.source/ATimeofWar_Eng_v8.cs:8248
+- type: 'assign'
+  var: 'master'
+  expr: '0'
+# ../.source/ATimeofWar_Eng_v8.cs:8249
+- type: 'assign'
+  var: 'ttset'
+  expr: '0'
+# ../.source/ATimeofWar_Eng_v8.cs:8250
+- type: 'assign'
+  var: 'pg14'
+  expr: '0'

@@ -1,0 +1,157 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:4369
+---
+format: 'mws/0.4'
+passage_id: 'Privatized'
+# ../en-US.restext:273 | "Private Investors"
+title: 'restext://Common_269'
+# ../en-US.restext:155 | "Early Years"
+subtitle: 'restext://Common_151'
+tags:
+- 'HUB'
+layout: 'hub'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:4376
+- type: 'assign'
+  var: 'round'
+  expr: '16'
+# ../.source/FearoftheUnknown_Eng_v15.cs:4378
+- type: 'conditional'
+  if: '!gen3pg'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4382
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:156 | "Accept"
+    okay: 'restext://Common_152'
+    header:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:4386
+    - type: 'image'
+      asset: 'image://setup/AngryMobSetup1'
+      style: 'setup-image'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:4388
+    - type: 'conditional'
+      if: 'creature == 1'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:4390
+      - type: 'text'
+        # ../en-US.restext:267 | "Retrieve the Hunt tokens ..."
+        value: 'restext://Common_263'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:4393
+      - type: 'break'
+        style: 'paragraph'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:4395
+      - type: 'text'
+        # ../en-US.restext:573 | "Shuffle them and randomly..."
+        value: 'restext://Privatized_002'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:4398
+      - type: 'break'
+        style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:4401
+    - type: 'text'
+      # ../en-US.restext:94 | "Place the Suspicion Marke..."
+      value: 'restext://Common_090'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:4404
+    - type: 'conditional'
+      if: '!Privatized'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:4406
+      - type: 'assign'
+        var: 'Privatized'
+        expr: '1'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:4407
+      - type: 'assign'
+        var: 'tracker'
+        expr: 'tracker - 1'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:4408
+      - type: 'conditional'
+        if: 'players > 3'
+        then:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:4410
+        - type: 'assign'
+          var: 'tracker'
+          expr: 'tracker - 1'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:4413
+    - type: 'text'
+      # ../en-US.restext:95 | "**{tracker}** and the {ic..."
+      value: 'restext://Common_091'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:4418
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:4419
+    - type: 'conditional'
+      if: 'players == 3'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:4421
+      - type: 'text'
+        # ../en-US.restext:96 | "Then, since this is a 3 p..."
+        value: 'restext://Common_092'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:4422
+      - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:4426
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:4431
+- type: 'section'
+  # ../en-US.restext:574 | "**Investment in Town**"
+  title: 'restext://Privatized_003'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4439
+  - type: 'text'
+    # ../en-US.restext:575 | "To visit a Location with ..."
+    value: 'restext://Privatized_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:4454
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:4458
+- type: 'section'
+  # ../en-US.restext:576 | "**Jail**"
+  title: 'restext://Privatized_005'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4466
+  - type: 'text'
+    # ../en-US.restext:577 | "Our business investments ..."
+    value: 'restext://Privatized_006'
+# ../.source/FearoftheUnknown_Eng_v15.cs:4475
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:4477
+- type: 'conditional'
+  if: 'creature == 1'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4482
+  - type: 'section'
+    # ../en-US.restext:268 | "{icon:storybooktoken}**Th..."
+    title: 'restext://Common_264'
+    style: 'hub-card'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:4491
+    - type: 'text'
+      # ../en-US.restext:269 | "Any time a player visits ..."
+      value: 'restext://Common_265'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:4494
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:4496
+    - type: 'text'
+      # ../en-US.restext:578 | "At the end of each round,..."
+      value: 'restext://Privatized_009'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:4503
+    - type: 'link'
+      # ../en-US.restext:308 | "click here."
+      label: 'restext://Common_304'
+      target: 'HuntExplanation' # ./00076-HuntExplanation.mws.yaml
+      snapshot: true
+# ../.source/FearoftheUnknown_Eng_v15.cs:4506
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:4509
+- type: 'section'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:4531
+  - type: 'link'
+    # ../en-US.restext:69 | "Click here at the end of ..."
+    label: 'restext://Common_065'
+    target: '${creature == 1 && exped == 0 ? "Expedition1" : "JailEventA"}' # ./00049-Expedition1.mws.yaml, ./00290-JailEventA.mws.yaml
+    snapshot: true

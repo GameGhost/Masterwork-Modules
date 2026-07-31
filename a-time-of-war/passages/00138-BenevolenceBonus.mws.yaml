@@ -1,0 +1,159 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:15194
+---
+format: 'mws/0.4'
+passage_id: 'BenevolenceBonus'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:15196
+- type: 'conditional'
+  if: 'benevolent == "good"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:15200
+  - type: 'text'
+    # ../en-US.restext:1132 | "**Benevolence Bonus**"
+    value: 'restext://BenevolenceBonus_002'
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:15207
+  - type: 'text'
+    # ../en-US.restext:1131 | "**Iron Fist Bonus**"
+    value: 'restext://BenevolenceBonus_001'
+# ../.source/ATimeofWar_Eng_v8.cs:15210
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:15211
+- type: 'text'
+  # ../en-US.restext:1133 | "The player with the most "
+  value: 'restext://BenevolenceBonus_003'
+# ../.source/ATimeofWar_Eng_v8.cs:15212
+- type: 'conditional'
+  if: 'benevolent == "good"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:15216
+  - type: 'text'
+    # ../en-US.restext:1135 | "**Benevolent**"
+    value: 'restext://BenevolenceBonus_005'
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:15223
+  - type: 'text'
+    # ../en-US.restext:1134 | "**Iron Fist**"
+    value: 'restext://BenevolenceBonus_004'
+# ../.source/ATimeofWar_Eng_v8.cs:15226
+- type: 'text'
+  # ../en-US.restext:1136 | " decrees will now receive..."
+  value: 'restext://BenevolenceBonus_006'
+# ../.source/ATimeofWar_Eng_v8.cs:15232
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:15234
+- type: 'switch'
+  on: 'benevolent'
+  cases:
+  - match: 'good'
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:15236
+    - type: 'text'
+      # ../en-US.restext:1137 | "{nameA} : {plareigng} Ben..."
+      value: 'restext://BenevolenceBonus_007'
+    # ../.source/ATimeofWar_Eng_v8.cs:15240
+    - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:15241
+    - type: 'text'
+      # ../en-US.restext:1138 | "{nameB} : {plbreigng} Ben..."
+      value: 'restext://BenevolenceBonus_008'
+    # ../.source/ATimeofWar_Eng_v8.cs:15245
+    - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:15246
+    - type: 'conditional'
+      if: 'players > 2'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:15248
+      - type: 'text'
+        # ../en-US.restext:1139 | "{nameC} : {plcreigng} Ben..."
+        value: 'restext://BenevolenceBonus_009'
+      # ../.source/ATimeofWar_Eng_v8.cs:15252
+      - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:15254
+    - type: 'conditional'
+      if: 'players > 3'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:15256
+      - type: 'text'
+        # ../en-US.restext:1140 | "{nameD} : {pldreigng} Ben..."
+        value: 'restext://BenevolenceBonus_010'
+      # ../.source/ATimeofWar_Eng_v8.cs:15260
+      - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:15262
+    - type: 'conditional'
+      if: 'players > 4'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:15264
+      - type: 'text'
+        # ../en-US.restext:1141 | "{nameE} : {plereigng} Ben..."
+        value: 'restext://BenevolenceBonus_011'
+      # ../.source/ATimeofWar_Eng_v8.cs:15268
+      - type: 'break'
+  - match: 'evil'
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:15273
+    - type: 'text'
+      # ../en-US.restext:1142 | "{nameA} : {plareigne} Iro..."
+      value: 'restext://BenevolenceBonus_012'
+    # ../.source/ATimeofWar_Eng_v8.cs:15277
+    - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:15278
+    - type: 'text'
+      # ../en-US.restext:1143 | "{nameB} : {plbreigne} Iro..."
+      value: 'restext://BenevolenceBonus_013'
+    # ../.source/ATimeofWar_Eng_v8.cs:15282
+    - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:15283
+    - type: 'conditional'
+      if: 'players > 2'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:15285
+      - type: 'text'
+        # ../en-US.restext:1144 | "{nameC} : {plcreigne} Iro..."
+        value: 'restext://BenevolenceBonus_014'
+      # ../.source/ATimeofWar_Eng_v8.cs:15289
+      - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:15291
+    - type: 'conditional'
+      if: 'players > 3'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:15293
+      - type: 'text'
+        # ../en-US.restext:1145 | "{nameD} : {pldreigne} Iro..."
+        value: 'restext://BenevolenceBonus_015'
+      # ../.source/ATimeofWar_Eng_v8.cs:15297
+      - type: 'break'
+    # ../.source/ATimeofWar_Eng_v8.cs:15299
+    - type: 'conditional'
+      if: 'players > 4'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:15301
+      - type: 'text'
+        # ../en-US.restext:1146 | "{nameE} : {plereigne} Iro..."
+        value: 'restext://BenevolenceBonus_016'
+      # ../.source/ATimeofWar_Eng_v8.cs:15305
+      - type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:15308
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:15312
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:1147 | "Click to continue to Fina..."
+  label: 'restext://BenevolenceBonus_017'
+  target: 'Scoring' # ./00004-Scoring.mws.yaml
+  # ../en-US.restext:182 | "Close"
+  okay: 'restext://Common_178'
+  snapshot: true
+  header:
+  # ../.source/ATimeofWar_Eng_v8.cs:15327
+  - type: 'image'
+    asset: 'image://setup/ScoreTrackMarker'
+    style: 'setup-image'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:15330
+  - type: 'text'
+    # ../en-US.restext:1148 | "{mostben} gains {decbon}VP."
+    value: 'restext://BenevolenceBonus_018'

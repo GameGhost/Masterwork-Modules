@@ -1,0 +1,113 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:36317
+---
+format: 'mws/0.4'
+passage_id: '2PLiberalEvent'
+# ../en-US.restext:341 | "BID"
+title: 'restext://Common_337'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:36324
+- type: 'text'
+  # ../en-US.restext:287 | "Special Event"
+  value: 'restext://Common_283'
+  style: 'special-event'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36325
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36326
+- type: 'text'
+  # ../en-US.restext:342 | "Both players take all the..."
+  value: 'restext://Common_338'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36328
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36330
+- type: 'text'
+  # ../en-US.restext:352 | "Once both players are rea..."
+  value: 'restext://Common_348'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36331
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36334
+- type: 'text'
+  # ../en-US.restext:2631 | "Players are bidding for t..."
+  value: 'restext://_2PLiberalEvent_001'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36340
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36344
+- type: 'text'
+  # ../en-US.restext:2632 | "**Increased Taxes** - Thi..."
+  value: 'restext://_2PLiberalEvent_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36348
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36352
+- type: 'text'
+  # ../en-US.restext:2633 | "**Stricter Citizenship an..."
+  value: 'restext://_2PLiberalEvent_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36364
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36366
+- type: 'text'
+  # ../en-US.restext:353 | "Either way, they will als..."
+  value: 'restext://Common_349'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36372
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36376
+- type: 'text'
+  # ../en-US.restext:354 | "_(Ties are broken by the ..."
+  value: 'restext://Common_350'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36379
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36381
+- type: 'text'
+  # ../en-US.restext:346 | "Only the player who wins ..."
+  value: 'restext://Common_342'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36383
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36387
+- type: 'popup'
+  layout: 'countdown_instructions'
+  # ../en-US.restext:347 | "Click to start the bid..."
+  label: 'restext://Common_343'
+  content:
+  - type: 'text'
+    # ../en-US.restext:348 | "Click on the 'Start Biddi..."
+    value: 'restext://Common_344'
+  - type: 'break'
+    style: 'paragraph'
+  - type: 'text'
+    # ../en-US.restext:290 | "When you see the word 'RE..."
+    value: 'restext://Common_286'
+  - type: 'break'
+    style: 'paragraph'
+  - type: 'popup'
+    layout: 'countdown_action'
+    # ../en-US.restext:349 | "Start Bidding"
+    label: 'restext://Common_345'
+    style: 'countdown-trigger'
+    content:
+    - type: 'text'
+      # ../en-US.restext:293 | "3"
+      value: 'restext://Common_289'
+      style: 'countdown-3'
+    - type: 'text'
+      # ../en-US.restext:294 | "2"
+      value: 'restext://Common_290'
+      style: 'countdown-2'
+    - type: 'text'
+      # ../en-US.restext:295 | "1"
+      value: 'restext://Common_291'
+      style: 'countdown-1'
+    - type: 'text'
+      # ../en-US.restext:292 | "REVEAL"
+      value: 'restext://Common_288'
+      style: 'countdown-reveal'
+    # ../en-US.restext:292 | "REVEAL"
+    okay: 'restext://Common_288'
+    target: '2PLiberalEvent1' # ./00348-2PLiberalEvent1.mws.yaml
+    snapshot: false

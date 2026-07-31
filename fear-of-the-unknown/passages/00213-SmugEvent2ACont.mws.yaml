@@ -1,0 +1,116 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:23882
+---
+format: 'mws/0.4'
+passage_id: 'SmugEvent2ACont'
+# ../en-US.restext:1791 | "Devastating and Expected ..."
+title: 'restext://SmugEvent2ACont_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:23894
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23896
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB].shuffled("SmugEvent2ACont_0")[0]'
+  - match: 3
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23900
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC].shuffled("SmugEvent2ACont_1")[0]'
+  - match: 4
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23904
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC, nameD].shuffled("SmugEvent2ACont_2")[0]'
+  - match: 5
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23908
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC, nameD, nameE].shuffled("SmugEvent2ACont_3")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23911
+- type: 'assign'
+  var: 'randomname'
+  expr: 'randomplayer'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23892
+- type: 'text'
+  # ../en-US.restext:1792 | "**Journal of** **{randomn..."
+  value: 'restext://SmugEvent2ACont_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23920
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23922
+- type: 'switch'
+  on: 'ex'
+  cases:
+  - match: 'chem'
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23924
+    - type: 'text'
+      # ../en-US.restext:1793 | "Experiment Notes - A Fabr..."
+      value: 'restext://SmugEvent2ACont_003'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23925
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23926
+    - type: 'text'
+      # ../en-US.restext:1794 | "While seemingly innocuous..."
+      value: 'restext://SmugEvent2ACont_004'
+  - match: 'eng'
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23930
+    - type: 'text'
+      # ../en-US.restext:1795 | "Experiment Notes - A Robo..."
+      value: 'restext://SmugEvent2ACont_005'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23931
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23932
+    - type: 'text'
+      # ../en-US.restext:1796 | "Possibly a flawed idea fr..."
+      value: 'restext://SmugEvent2ACont_006'
+  - match: 'bio'
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23936
+    - type: 'text'
+      # ../en-US.restext:1797 | "Experiment Notes - Inject..."
+      value: 'restext://SmugEvent2ACont_007'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23937
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23938
+    - type: 'text'
+      # ../en-US.restext:1798 | "The cage in which our gre..."
+      value: 'restext://SmugEvent2ACont_008'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23940
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23942
+- type: 'text'
+  # ../en-US.restext:1799 | "However, undaunted, the E..."
+  value: 'restext://SmugEvent2ACont_009'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23944
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23947
+- type: 'link'
+  # ../en-US.restext:303 | "Click to see if the Exper..."
+  label: 'restext://Common_299'
+  target: '${SmugEvent2AContnextpsg}'
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:23955
+  - type: 'conditional'
+    if: 'SmugEvent2AContnextpsg == "" || SmugEvent2AContnextpsg == 0'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:23957
+    - type: 'assign'
+      var: 'SmugEvent2AContnextpsg'
+      expr: '["SmugEvent2Aa", "SmugEvent2Aa", "SmugEventEnd"].shuffled("SmugEvent2ACont_4")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:23948
+- type: 'assign'
+  var: 'dev'
+  expr: '16'

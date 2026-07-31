@@ -1,0 +1,52 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:8473
+---
+format: 'mws/0.4'
+passage_id: 'LiberalEvent'
+# ../en-US.restext:774 | "Economic Stimulus"
+title: 'restext://LiberalEvent_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:8481
+- type: 'include_passage'
+  target: 'letter1a' # ./00205-letter1a.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:8482
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8484
+- type: 'text'
+  # ../en-US.restext:775 | "As I predicted, the Roman..."
+  value: 'restext://LiberalEvent_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8485
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8487
+- type: 'text'
+  # ../en-US.restext:776 | "The sudden mantra to prot..."
+  value: 'restext://LiberalEvent_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8490
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8492
+- type: 'text'
+  # ../en-US.restext:777 | "The result of this prejud..."
+  value: 'restext://LiberalEvent_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8495
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8497
+- type: 'conditional'
+  if: 'players == 2'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8499
+  - type: 'link'
+    # ../en-US.restext:286 | "Click to continue..."
+    label: 'restext://Common_282'
+    target: '2PLiberalEvent' # ./00347-2PLiberalEvent.mws.yaml
+    snapshot: true
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8503
+  - type: 'link'
+    # ../en-US.restext:286 | "Click to continue..."
+    label: 'restext://Common_282'
+    target: 'LiberalEvent1' # ./00334-LiberalEvent1.mws.yaml
+    snapshot: true

@@ -1,0 +1,61 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:10816
+---
+format: 'mws/0.4'
+passage_id: 'Blame3'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:10821
+- type: 'text'
+  # ../en-US.restext:43 | "**Carefully hand this Sto..."
+  value: 'restext://Common_039'
+# ../.source/ATimeofWar_Eng_v8.cs:10826
+- type: 'assign'
+  var: 'counter'
+  expr: '3'
+# ../.source/ATimeofWar_Eng_v8.cs:10827
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:10833
+- type: 'popup'
+  # ../en-US.restext:181 | "Once you are ready, click..."
+  label: 'restext://Common_177'
+  layout: 'reveal'
+  # ../en-US.restext:182 | "Close"
+  cancel: 'restext://Common_178'
+  snapshot: true
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:10842
+  - type: 'text'
+    # ../en-US.restext:36 | "**Interrogation**"
+    value: 'restext://Common_032'
+  # ../.source/ATimeofWar_Eng_v8.cs:10844
+  - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:10845
+  - type: 'text'
+    # ../en-US.restext:37 | "On a Sunday afternoon, I ..."
+    value: 'restext://Common_033'
+  # ../.source/ATimeofWar_Eng_v8.cs:10849
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:10851
+  - type: 'text'
+    # ../en-US.restext:38 | "Do you have a {warwinner}..."
+    value: 'restext://Common_034'
+  # ../.source/ATimeofWar_Eng_v8.cs:10855
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:10857
+  - type: 'link'
+    # ../en-US.restext:39 | "Yes, I do. Why do you ask?"
+    label: 'restext://Common_035'
+    target: 'Blame1c' # ./00065-Blame1c.mws.yaml
+    snapshot: true
+  # ../.source/ATimeofWar_Eng_v8.cs:10858
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:10860
+  - type: 'link'
+    # ../en-US.restext:40 | "No, I do not."
+    label: 'restext://Common_036'
+    target: 'Blame1b' # ./00064-Blame1b.mws.yaml
+    snapshot: true

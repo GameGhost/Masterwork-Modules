@@ -1,0 +1,59 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:1431
+---
+format: 'mws/0.4'
+passage_id: 'Scoring'
+tags:
+- 'NOTADDED'
+- 'END'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:1441
+- type: 'text'
+  # ../en-US.restext:313 | "Each Estate Upgrade is wo..."
+  value: 'restext://Scoring_001'
+# ../.source/ATimeofWar_Eng_v8.cs:1442
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:1443
+- type: 'text'
+  # ../en-US.restext:314 | "Add any additional points..."
+  value: 'restext://Scoring_002'
+# ../.source/ATimeofWar_Eng_v8.cs:1444
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:1445
+- type: 'text'
+  # ../en-US.restext:315 | "Score -3VP for any Maladj..."
+  value: 'restext://Scoring_003'
+# ../.source/ATimeofWar_Eng_v8.cs:1446
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:1447
+- type: 'conditional'
+  if: 'tmmasterwork == "yes"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:1451
+  - type: 'text'
+    # ../en-US.restext:316 | "**Time Machine:**"
+    value: 'restext://Scoring_004'
+  # ../.source/ATimeofWar_Eng_v8.cs:1453
+  - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:1454
+  - type: 'text'
+    # ../en-US.restext:317 | "If the player with the Ti..."
+    value: 'restext://Scoring_005'
+  # ../.source/ATimeofWar_Eng_v8.cs:1456
+  - type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:1458
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:1460
+- type: 'text'
+  # ../en-US.restext:318 | "THE PLAYER WITH THE MOST ..."
+  value: 'restext://Scoring_006'
+# ../.source/ATimeofWar_Eng_v8.cs:1461
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:1466
+- type: 'link'
+  # ../en-US.restext:319 | "Click to tabulate scores ..."
+  label: 'restext://Scoring_007'
+  target: 'ScoreEntry'
+  snapshot: true

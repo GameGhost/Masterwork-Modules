@@ -1,0 +1,125 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:31535
+---
+format: 'mws/0.4'
+passage_id: 'WallCheck'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:31537
+- type: 'conditional'
+  if: 'Gen2fate == "witch"'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31541
+  - type: 'text'
+    # ../en-US.restext:2315 | "**Our Donations to Strength**"
+    value: 'restext://WallCheck_001'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31543
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31545
+  - type: 'include_passage'
+    target: 'journal1a' # ./00206-journal1a.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31546
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31548
+  - type: 'text'
+    # ../en-US.restext:2316 | "It was clear our donation..."
+    value: 'restext://WallCheck_002'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31555
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31559
+  - type: 'text'
+    # ../en-US.restext:2317 | "**Brick Count**"
+    value: 'restext://WallCheck_003'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31561
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31563
+  - type: 'text'
+    # ../en-US.restext:2318 | "Count up all Memorial bri..."
+    value: 'restext://WallCheck_004'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31564
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31566
+  - type: 'text'
+    # ../en-US.restext:283 | "If "
+    value: 'restext://Common_279'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31567
+  - type: 'switch'
+    on: 'players'
+    cases:
+    - match: 2
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:31569
+      - type: 'assign'
+        var: 'wal'
+        expr: 'rand_between(2, 5, "WallCheck_0")'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:31570
+      - type: 'text'
+        value: '{wal}'
+    - match: 3
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:31574
+      - type: 'assign'
+        var: 'wal'
+        expr: 'wal + 2'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:31575
+      - type: 'text'
+        value: '{wal}'
+    - match: 4
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:31579
+      - type: 'assign'
+        var: 'wal'
+        expr: 'wal + 3'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:31580
+      - type: 'text'
+        value: '{wal}'
+    - match: 5
+      nodes:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:31584
+      - type: 'assign'
+        var: 'wal'
+        expr: 'wal + 3'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:31585
+      - type: 'text'
+        value: '{wal}'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31587
+  - type: 'text'
+    # ../en-US.restext:2319 | " or more pieces have been..."
+    value: 'restext://WallCheck_005'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31590
+  - type: 'link'
+    # ../en-US.restext:170 | "click here..."
+    label: 'restext://Common_166'
+    target: 'TenseBricksRes' # ./00288-TenseBricksRes.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:31607
+    - type: 'assign'
+      var: 'walls'
+      expr: '"yes"'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31591
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31593
+  - type: 'text'
+    # ../en-US.restext:2320 | "If fewer bricks have been..."
+    value: 'restext://WallCheck_006'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31595
+  - type: 'link'
+    # ../en-US.restext:170 | "click here..."
+    label: 'restext://Common_166'
+    target: 'TenseBricksRes' # ./00288-TenseBricksRes.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:31614
+    - type: 'assign'
+      var: 'walls'
+      expr: '"no"'
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:31600
+  - type: 'goto'
+    target: 'TenseBricksRes' # ./00288-TenseBricksRes.mws.yaml

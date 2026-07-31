@@ -1,0 +1,114 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:3275
+---
+format: 'mws/0.4'
+passage_id: 'TimeEnd2'
+tags:
+- 'END'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:3284
+- type: 'conditional'
+  if: 'tmrepair == "yes"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:3288
+  - type: 'text'
+    # ../en-US.restext:443 | "**Fully Repaired**"
+    value: 'restext://TimeEnd2_010'
+  # ../.source/ATimeofWar_Eng_v8.cs:3290
+  - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:3291
+  - type: 'text'
+    # ../en-US.restext:444 | "I knew that I had complet..."
+    value: 'restext://TimeEnd2_011'
+  # ../.source/ATimeofWar_Eng_v8.cs:3298
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:3300
+  - type: 'text'
+    # ../en-US.restext:445 | "Though my years have adva..."
+    value: 'restext://TimeEnd2_012'
+  # ../.source/ATimeofWar_Eng_v8.cs:3301
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:3303
+  - type: 'link'
+    # ../en-US.restext:24 | "Click to continue..."
+    label: 'restext://Common_020'
+    target: 'Paradoxical' # ./00106-Paradoxical.mws.yaml
+    snapshot: true
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:3309
+  - type: 'text'
+    # ../en-US.restext:435 | "**Rusty, But Worth a Try*..."
+    value: 'restext://TimeEnd2_001'
+  # ../.source/ATimeofWar_Eng_v8.cs:3314
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:3316
+  - type: 'text'
+    # ../en-US.restext:436 | "I, for one, was ready to ..."
+    value: 'restext://TimeEnd2_002'
+  # ../.source/ATimeofWar_Eng_v8.cs:3318
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:3322
+  - type: 'text'
+    # ../en-US.restext:437 | "**How many of the** _Time..."
+    value: 'restext://TimeEnd2_003'
+  # ../.source/ATimeofWar_Eng_v8.cs:3329
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:3332
+  - type: 'link'
+    # ../en-US.restext:438 | "Zero."
+    label: 'restext://TimeEnd2_004'
+    target: 'TimeEnd2b' # ./00194-TimeEnd2b.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:3354
+    - type: 'assign'
+      var: 'tmnumber'
+      # ../en-US.restext:219 | "zero pieces"
+      expr: '"restext://Common_215"'
+  # ../.source/ATimeofWar_Eng_v8.cs:3333
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:3336
+  - type: 'link'
+    # ../en-US.restext:439 | "One."
+    label: 'restext://TimeEnd2_006'
+    target: 'TimeEnd2b' # ./00194-TimeEnd2b.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:3361
+    - type: 'assign'
+      var: 'tmnumber'
+      # ../en-US.restext:440 | "one piece"
+      expr: '"restext://TimeEnd2_007"'
+  # ../.source/ATimeofWar_Eng_v8.cs:3337
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:3340
+  - type: 'link'
+    # ../en-US.restext:441 | "Two."
+    label: 'restext://TimeEnd2_008'
+    target: 'TimeEnd2b' # ./00194-TimeEnd2b.mws.yaml
+    snapshot: true
+    onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:3368
+    - type: 'assign'
+      var: 'tmnumber'
+      # ../en-US.restext:442 | "two pieces"
+      expr: '"restext://TimeEnd2_009"'
+# ../.source/ATimeofWar_Eng_v8.cs:3346
+- type: 'popup'
+  layout: 'end_of_generation'
+  # ../en-US.restext:239 | "Confirm"
+  okay: 'restext://Common_235'
+  content:
+  - type: 'text'
+    # ../en-US.restext:218 | "Remove all player pieces ..."
+    value: 'restext://Common_214'
+  - type: 'let'
+    var: 'generation'
+    expr: '6'

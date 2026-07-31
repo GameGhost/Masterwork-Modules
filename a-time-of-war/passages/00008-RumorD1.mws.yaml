@@ -1,0 +1,130 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:1891
+---
+format: 'mws/0.4'
+passage_id: 'RumorD1'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:1896
+- type: 'text'
+  # ../en-US.restext:180 | "**Carefully pick up this ..."
+  value: 'restext://Common_176'
+# ../.source/ATimeofWar_Eng_v8.cs:1899
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:1904
+- type: 'popup'
+  # ../en-US.restext:181 | "Once you are ready, click..."
+  label: 'restext://Common_177'
+  layout: 'reveal'
+  # ../en-US.restext:182 | "Close"
+  cancel: 'restext://Common_178'
+  snapshot: true
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:1991
+  - type: 'text'
+    # ../en-US.restext:343 | "The officer was initially..."
+    value: 'restext://RumorD1_004'
+  # ../.source/ATimeofWar_Eng_v8.cs:1994
+  - type: 'conditional'
+    if: 'war == 1'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:1996
+    - type: 'text'
+      # ../en-US.restext:348 | "he tensed. I noticed his ..."
+      value: 'restext://RumorD1_010'
+    # ../.source/ATimeofWar_Eng_v8.cs:1997
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:1999
+    - type: 'text'
+      # ../en-US.restext:349 | "He then entrusted to me a..."
+      value: 'restext://RumorD1_011'
+    # ../.source/ATimeofWar_Eng_v8.cs:2003
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:2007
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:183 | "Click here to continue..."
+      label: 'restext://Common_179'
+      target: '${RumorD1nextPsg}'
+      # ../en-US.restext:182 | "Close"
+      okay: 'restext://Common_178'
+      snapshot: true
+      header:
+      - type: 'conditional'
+        if: 'crest == "Sickle"'
+        then:
+        - type: 'image'
+          asset: 'image://setup/S3_SickleToken'
+          style: 'setup-image'
+        else:
+        - type: 'image'
+          asset: 'image://setup/S3_ShieldToken'
+          style: 'setup-image'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:1918
+      - type: 'conditional'
+        if: 'RumorD1nextPsg == "" || RumorD1nextPsg == 0'
+        then:
+        # ../.source/ATimeofWar_Eng_v8.cs:1920
+        - type: 'assign'
+          var: 'RumorD1nextPsg'
+          expr: '["RumorIngredient", "RumorKnowledge", "RumorPitch"].shuffled("RumorD1_0")[0]'
+      # ../.source/ATimeofWar_Eng_v8.cs:1929
+      - type: 'break'
+      # ../.source/ATimeofWar_Eng_v8.cs:1932
+      - type: 'text'
+        # ../en-US.restext:347 | "**Gain the {crest} token.**"
+        value: 'restext://RumorD1_009'
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:2011
+    - type: 'text'
+      # ../en-US.restext:344 | "he smiled and put a finge..."
+      value: 'restext://RumorD1_005'
+    # ../.source/ATimeofWar_Eng_v8.cs:2012
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:2014
+    - type: 'text'
+      # ../en-US.restext:345 | "\"I think your fears are ..."
+      value: 'restext://RumorD1_006'
+    # ../.source/ATimeofWar_Eng_v8.cs:2023
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:2025
+    - type: 'text'
+      # ../en-US.restext:346 | "The officer then cordiall..."
+      value: 'restext://RumorD1_007'
+    # ../.source/ATimeofWar_Eng_v8.cs:2035
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/ATimeofWar_Eng_v8.cs:2039
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:183 | "Click here to continue..."
+      label: 'restext://Common_179'
+      target: '${macros1.either("RumorIngredient", "RumorKnowledge", "RumorPitch")}' # ./00087-RumorIngredient.mws.yaml, ./00088-RumorKnowledge.mws.yaml, ./00089-RumorPitch.mws.yaml
+      # ../en-US.restext:182 | "Close"
+      okay: 'restext://Common_178'
+      snapshot: true
+      header:
+      - type: 'conditional'
+        if: 'crest == "Sickle"'
+        then:
+        - type: 'image'
+          asset: 'image://setup/S3_SickleToken'
+          style: 'setup-image'
+        else:
+        - type: 'image'
+          asset: 'image://setup/S3_ShieldToken'
+          style: 'setup-image'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:1971
+      - type: 'text'
+        # ../en-US.restext:347 | "**Gain the {crest} token.**"
+        value: 'restext://RumorD1_009'
+# ../.source/ATimeofWar_Eng_v8.cs:1905
+- type: 'assign'
+  var: 'rumor1'
+  expr: '"visited"'

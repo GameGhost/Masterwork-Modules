@@ -1,0 +1,70 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:14543
+---
+format: 'mws/0.4'
+passage_id: 'Guilt'
+# ../en-US.restext:1221 | "Wracked with Guilt"
+title: 'restext://Guilt_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:14551
+- type: 'include_passage'
+  target: 'journal1a' # ./00206-journal1a.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:14554
+- type: 'let'
+  var: '_rnd_Guilt_0'
+  expr: '["Creating life against my will only to feed the urges of a hideous fiend? Am I forced to forever suffer for the sins of my family? What good can come from aiding the devil''s work?", "I curse my grandfather for thrusting this abomination into the world and dooming us to accommodate its unnatural wants. Oh, how the sorrow encompasses me!"].shuffled("Guilt_0")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:14552
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:14554
+- type: 'text'
+  value: '{_rnd_Guilt_0}'
+  lets:
+  - '_rnd_Guilt_0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:14558
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:14560
+- type: 'text'
+  # ../en-US.restext:1222 | "The experiment is complet..."
+  value: 'restext://Guilt_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:14562
+- type: 'assign'
+  var: 'crpg'
+  expr: '1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:14561
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:14566
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:309 | "Click to return..."
+  label: 'restext://Common_305'
+  target: '${round == 7 ? "Creature" : round == 8 ? "Creature2" : "Creature3"}' # ./00012-Creature.mws.yaml, ./00158-Creature2.mws.yaml, ./00045-Creature3.mws.yaml
+  # ../en-US.restext:275 | "Close"
+  okay: 'restext://Common_271'
+  snapshot: true
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:14599
+  - type: 'image'
+    asset: 'image://setup/S2_CardBack'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:14591
+  - type: 'assign'
+    var: 'creaturehelp'
+    expr: 'creaturehelp + 1'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:14600
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:14604
+  - type: 'text'
+    # ../en-US.restext:1223 | "**Move backwards 1 space ..."
+    value: 'restext://Guilt_005'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:14613
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:14615
+  - type: 'text'
+    # ../en-US.restext:1224 | "Then, collect the card an..."
+    value: 'restext://Guilt_006'

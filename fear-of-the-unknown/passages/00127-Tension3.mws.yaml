@@ -1,0 +1,151 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:15173
+---
+format: 'mws/0.4'
+passage_id: 'Tension3'
+tags:
+- 'HUB'
+layout: 'hub'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:15175
+- type: 'assign'
+  var: 'round'
+  expr: '15'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15176
+- type: 'conditional'
+  if: 'tension == "bad"'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15180
+  - type: 'text'
+    # ../en-US.restext:1272 | "**The Enemy of My Friend ..."
+    value: 'restext://Tension3_003'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15182
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15186
+  - type: 'section'
+    # ../en-US.restext:315 | "**Special Rule**"
+    title: 'restext://Common_311'
+    style: 'hub-card'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15195
+    - type: 'text'
+      # ../en-US.restext:313 | "Visiting any Location wit..."
+      value: 'restext://Common_309'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15200
+  - type: 'break'
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15207
+  - type: 'text'
+    # ../en-US.restext:1270 | "**A Peace Through Generat..."
+    value: 'restext://Tension3_001'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15209
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15213
+  - type: 'section'
+    # ../en-US.restext:1271 | "{icon:storybooktoken} **A..."
+    title: 'restext://Tension3_002'
+    style: 'hub-card'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15223
+    - type: 'text'
+      # ../en-US.restext:312 | "The first time any player..."
+      value: 'restext://Common_308'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15231
+    - type: 'link'
+      # ../en-US.restext:308 | "click here."
+      label: 'restext://Common_304'
+      target: 'Gen3Token2SignIn' # ./00287-Gen3Token2SignIn.mws.yaml
+      snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15234
+  - type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15236
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15237
+- type: 'conditional'
+  if: 'walls == "no"'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15241
+  - type: 'section'
+    # ../en-US.restext:316 | "**Plot Expansion**"
+    title: 'restext://Common_312'
+    style: 'hub-card'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15250
+    - type: 'text'
+      # ../en-US.restext:317 | "Bricks can now be used to..."
+      value: 'restext://Common_313'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15254
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15259
+- type: 'section'
+  # ../en-US.restext:318 | "**Occult Experimentation**"
+  title: 'restext://Common_314'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15268
+  - type: 'text'
+    # ../en-US.restext:319 | "At the End of the Generat..."
+    value: 'restext://Common_315'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15281
+  - type: 'conditional'
+    if: 'players >= 4'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15283
+    - type: 'text'
+      # ../en-US.restext:320 | "The player with the secon..."
+      value: 'restext://Common_316'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15285
+  - type: 'text'
+    # ../en-US.restext:321 | " _Ties are broken by the ..."
+    value: 'restext://Common_317'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15292
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15297
+- type: 'section'
+  # ../en-US.restext:66 | "**The Church**"
+  title: 'restext://Common_062'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15306
+  - type: 'link'
+    # ../en-US.restext:67 | "Click here"
+    label: 'restext://Common_063'
+    target: 'FOTU-Church' # ./00352-FOTU-Church.mws.yaml
+    snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15307
+  - type: 'text'
+    # ../en-US.restext:68 | " for an explanation of th..."
+    value: 'restext://Common_064'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15311
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15313
+- type: 'conditional'
+  if: 'tensebad == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15317
+  - type: 'section'
+    # ../en-US.restext:1273 | "**Obsession Penalty**"
+    title: 'restext://Tension3_004'
+    style: 'hub-card'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15326
+    - type: 'text'
+      # ../en-US.restext:1274 | "Any player who does not D..."
+      value: 'restext://Tension3_005'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15336
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15340
+- type: 'section'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15344
+  - type: 'link'
+    # ../en-US.restext:118 | "Click here at the End of ..."
+    label: 'restext://Common_114'
+    target: 'TensionBonus' # ./00092-TensionBonus.mws.yaml
+    snapshot: true

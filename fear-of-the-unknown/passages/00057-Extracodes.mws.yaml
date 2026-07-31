@@ -1,0 +1,537 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:8590
+---
+format: 'mws/0.4'
+passage_id: 'Extracodes'
+tags:
+- 'NOTE'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:8592
+- type: 'conditional'
+  if: 'players == 2'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8594
+  - type: 'assign'
+    var: 'them'
+    expr: '["Player A", "Player B"].shuffled("Extracodes_0")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8597
+- type: 'conditional'
+  if: 'players == 3'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8599
+  - type: 'assign'
+    var: 'them'
+    expr: '["Player A", "Player B", "Player C"].shuffled("Extracodes_1")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8602
+- type: 'conditional'
+  if: 'players == 4'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8604
+  - type: 'assign'
+    var: 'them'
+    expr: '["Player A", "Player B", "Player C", "Player D"].shuffled("Extracodes_2")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8607
+- type: 'conditional'
+  if: 'players == 5'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8609
+  - type: 'assign'
+    var: 'them'
+    expr: '["Player A", "Player B", "Player C", "Player D", "Player E"].shuffled("Extracodes_3")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8616
+- type: 'conditional'
+  if: 'players >= 3'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8620
+  - type: 'link'
+    # ../en-US.restext:788 | "Blame Player C."
+    label: 'restext://Extracodes_006'
+    target: 'Blame3'
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8769
+    - type: 'assign'
+      var: 'pl3'
+      expr: 'pl3 + 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8622
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8623
+- type: 'conditional'
+  if: 'players >= 4'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8625
+  - type: 'break'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8627
+  - type: 'link'
+    # ../en-US.restext:789 | "Blame Player D."
+    label: 'restext://Extracodes_007'
+    target: 'Blame3'
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8776
+    - type: 'assign'
+      var: 'pl4'
+      expr: 'pl4 + 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8629
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8630
+- type: 'conditional'
+  if: 'players >= 5'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8632
+  - type: 'break'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8634
+  - type: 'link'
+    # ../en-US.restext:790 | "Blame Player E."
+    label: 'restext://Extracodes_008'
+    target: 'Blame3'
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8783
+    - type: 'assign'
+      var: 'pl5'
+      expr: 'pl5 + 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8637
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8643
+- type: 'conditional'
+  if: 'mog == 1'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8646
+  - type: 'link'
+    # ../en-US.restext:791 | "Stay silent."
+    label: 'restext://Extracodes_009'
+    target: 'Blame2'
+    snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8647
+  - type: 'break'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8649
+  - type: 'link'
+    # ../en-US.restext:792 | "Blame Player B."
+    label: 'restext://Extracodes_010'
+    target: 'Blame2'
+    snapshot: true
+    onclick:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8796
+    - type: 'assign'
+      var: 'pl2'
+      expr: 'pl2 + 1'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8650
+  - type: 'conditional'
+    if: 'players >= 3'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8652
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8654
+    - type: 'link'
+      # ../en-US.restext:788 | "Blame Player C."
+      label: 'restext://Extracodes_006'
+      target: 'Blame2'
+      snapshot: true
+      onclick:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8803
+      - type: 'assign'
+        var: 'pl3'
+        expr: 'pl3 + 1'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8656
+  - type: 'conditional'
+    if: 'players >= 4'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8658
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8660
+    - type: 'link'
+      # ../en-US.restext:789 | "Blame Player D."
+      label: 'restext://Extracodes_007'
+      target: 'Blame2'
+      snapshot: true
+      onclick:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8810
+      - type: 'assign'
+        var: 'pl4'
+        expr: 'pl4 + 1'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:8662
+  - type: 'conditional'
+    if: 'players >= 5'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8664
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8666
+    - type: 'link'
+      # ../en-US.restext:790 | "Blame Player E."
+      label: 'restext://Extracodes_008'
+      target: 'Blame2'
+      snapshot: true
+      onclick:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8817
+      - type: 'assign'
+        var: 'pl5'
+        expr: 'pl5 + 1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:8669
+- type: 'switch'
+  on: 'counter'
+  cases:
+  - match: 2
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8672
+    - type: 'conditional'
+      if: 'players == 2'
+      then:
+      - type: 'link'
+        # ../en-US.restext:791 | "Stay silent."
+        label: 'restext://Extracodes_009'
+        target: 'BlameResolve'
+        snapshot: true
+      else:
+      - type: 'link'
+        # ../en-US.restext:791 | "Stay silent."
+        label: 'restext://Extracodes_009'
+        target: 'Blame3'
+        snapshot: true
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8673
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8675
+    - type: 'link'
+      # ../en-US.restext:793 | "Blame Player A."
+      label: 'restext://Extracodes_011'
+      snapshot: true
+      onclick:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8837
+      - type: 'assign'
+        var: 'pl1'
+        expr: 'pl1 + 1'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8838
+      - type: 'conditional'
+        if: 'players == 2'
+        then:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8840
+        - type: 'goto'
+          target: 'BlameResolve'
+        else:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8844
+        - type: 'goto'
+          target: 'Blame3'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8676
+    - type: 'conditional'
+      if: 'players >= 3'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8678
+      - type: 'break'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8680
+      - type: 'link'
+        # ../en-US.restext:788 | "Blame Player C."
+        label: 'restext://Extracodes_006'
+        target: 'Blame3'
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8851
+        - type: 'assign'
+          var: 'pl3'
+          expr: 'pl3 + 1'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8682
+    - type: 'conditional'
+      if: 'players >= 4'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8684
+      - type: 'break'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8686
+      - type: 'link'
+        # ../en-US.restext:789 | "Blame Player D."
+        label: 'restext://Extracodes_007'
+        target: 'Blame3'
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8858
+        - type: 'assign'
+          var: 'pl4'
+          expr: 'pl4 + 1'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8688
+    - type: 'conditional'
+      if: 'players >= 5'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8690
+      - type: 'break'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8692
+      - type: 'link'
+        # ../en-US.restext:790 | "Blame Player E."
+        label: 'restext://Extracodes_008'
+        target: 'Blame3'
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8865
+        - type: 'assign'
+          var: 'pl5'
+          expr: 'pl5 + 1'
+  - match: 3
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8698
+    - type: 'conditional'
+      if: 'players == 3'
+      then:
+      - type: 'link'
+        # ../en-US.restext:791 | "Stay silent."
+        label: 'restext://Extracodes_009'
+        target: 'BlameResolve'
+        snapshot: true
+      else:
+      - type: 'link'
+        # ../en-US.restext:791 | "Stay silent."
+        label: 'restext://Extracodes_009'
+        target: 'Blame4'
+        snapshot: true
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8699
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8701
+    - type: 'link'
+      # ../en-US.restext:793 | "Blame Player A."
+      label: 'restext://Extracodes_011'
+      snapshot: true
+      onclick:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8885
+      - type: 'assign'
+        var: 'pl1'
+        expr: 'pl1 + 1'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8886
+      - type: 'conditional'
+        if: 'players == 3'
+        then:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8888
+        - type: 'goto'
+          target: 'BlameResolve'
+        else:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8892
+        - type: 'goto'
+          target: 'Blame4'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8702
+    - type: 'conditional'
+      if: 'players >= 3'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8704
+      - type: 'break'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8706
+      - type: 'link'
+        # ../en-US.restext:792 | "Blame Player B."
+        label: 'restext://Extracodes_010'
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8899
+        - type: 'assign'
+          var: 'pl2'
+          expr: 'pl2 + 1'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8900
+        - type: 'conditional'
+          if: 'players == 3'
+          then:
+          # ../.source/FearoftheUnknown_Eng_v15.cs:8902
+          - type: 'goto'
+            target: 'BlameResolve'
+          else:
+          # ../.source/FearoftheUnknown_Eng_v15.cs:8906
+          - type: 'goto'
+            target: 'Blame4'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8708
+    - type: 'conditional'
+      if: 'players >= 4'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8710
+      - type: 'break'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8712
+      - type: 'link'
+        # ../en-US.restext:789 | "Blame Player D."
+        label: 'restext://Extracodes_007'
+        target: 'Blame4'
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8913
+        - type: 'assign'
+          var: 'pl4'
+          expr: 'pl4 + 1'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8714
+    - type: 'conditional'
+      if: 'players >= 5'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8716
+      - type: 'break'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8718
+      - type: 'link'
+        # ../en-US.restext:790 | "Blame Player E."
+        label: 'restext://Extracodes_008'
+        target: 'Blame4'
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8920
+        - type: 'assign'
+          var: 'pl5'
+          expr: 'pl5 + 1'
+  - match: 4
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8724
+    - type: 'conditional'
+      if: 'players == 4'
+      then:
+      - type: 'link'
+        # ../en-US.restext:791 | "Stay silent."
+        label: 'restext://Extracodes_009'
+        target: 'BlameResolve'
+        snapshot: true
+      else:
+      - type: 'link'
+        # ../en-US.restext:791 | "Stay silent."
+        label: 'restext://Extracodes_009'
+        target: 'Blame5'
+        snapshot: true
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8725
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8727
+    - type: 'link'
+      # ../en-US.restext:793 | "Blame Player A."
+      label: 'restext://Extracodes_011'
+      snapshot: true
+      onclick:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8940
+      - type: 'assign'
+        var: 'pl1'
+        expr: 'pl1 + 1'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8941
+      - type: 'conditional'
+        if: 'players == 4'
+        then:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8943
+        - type: 'goto'
+          target: 'BlameResolve'
+        else:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8947
+        - type: 'goto'
+          target: 'Blame5'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8728
+    - type: 'conditional'
+      if: 'players >= 3'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8730
+      - type: 'break'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8732
+      - type: 'link'
+        # ../en-US.restext:792 | "Blame Player B."
+        label: 'restext://Extracodes_010'
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8954
+        - type: 'assign'
+          var: 'pl2'
+          expr: 'pl2 + 1'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8955
+        - type: 'conditional'
+          if: 'players == 4'
+          then:
+          # ../.source/FearoftheUnknown_Eng_v15.cs:8957
+          - type: 'goto'
+            target: 'BlameResolve'
+          else:
+          # ../.source/FearoftheUnknown_Eng_v15.cs:8961
+          - type: 'goto'
+            target: 'Blame5'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8734
+    - type: 'conditional'
+      if: 'players >= 4'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8736
+      - type: 'break'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8738
+      - type: 'link'
+        # ../en-US.restext:788 | "Blame Player C."
+        label: 'restext://Extracodes_006'
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8968
+        - type: 'assign'
+          var: 'pl3'
+          expr: 'pl3 + 1'
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8969
+        - type: 'conditional'
+          if: 'players == 4'
+          then:
+          # ../.source/FearoftheUnknown_Eng_v15.cs:8971
+          - type: 'goto'
+            target: 'BlameResolve'
+          else:
+          # ../.source/FearoftheUnknown_Eng_v15.cs:8975
+          - type: 'goto'
+            target: 'Blame5'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8740
+    - type: 'conditional'
+      if: 'players >= 5'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8742
+      - type: 'break'
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8744
+      - type: 'link'
+        # ../en-US.restext:790 | "Blame Player E."
+        label: 'restext://Extracodes_008'
+        target: 'Blame5'
+        snapshot: true
+        onclick:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:8982
+        - type: 'assign'
+          var: 'pl5'
+          expr: 'pl5 + 1'
+  - match: 5
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8750
+    - type: 'link'
+      # ../en-US.restext:791 | "Stay silent."
+      label: 'restext://Extracodes_009'
+      target: 'BlameResolve'
+      snapshot: true
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8751
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8753
+    - type: 'link'
+      # ../en-US.restext:793 | "Blame Player A."
+      label: 'restext://Extracodes_011'
+      target: 'BlameResolve'
+      snapshot: true
+      onclick:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:8995
+      - type: 'assign'
+        var: 'pl1'
+        expr: 'pl1 + 1'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8754
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8756
+    - type: 'link'
+      # ../en-US.restext:792 | "Blame Player B."
+      label: 'restext://Extracodes_010'
+      target: 'BlameResolve'
+      snapshot: true
+      onclick:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:9002
+      - type: 'assign'
+        var: 'pl2'
+        expr: 'pl2 + 1'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8757
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8759
+    - type: 'link'
+      # ../en-US.restext:788 | "Blame Player C."
+      label: 'restext://Extracodes_006'
+      target: 'BlameResolve'
+      snapshot: true
+      onclick:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:9009
+      - type: 'assign'
+        var: 'pl3'
+        expr: 'pl3 + 1'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8760
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:8762
+    - type: 'link'
+      # ../en-US.restext:789 | "Blame Player D."
+      label: 'restext://Extracodes_007'
+      target: 'BlameResolve'
+      snapshot: true
+      onclick:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:9016
+      - type: 'assign'
+        var: 'pl4'
+        expr: 'pl4 + 1'

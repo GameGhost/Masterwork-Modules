@@ -1,0 +1,62 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:30768
+---
+format: 'mws/0.4'
+passage_id: 'EndtotheCount'
+# ../en-US.restext:2233 | "An Abrupt End"
+title: 'restext://EndtotheCount_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:30778
+- type: 'text'
+  # ../en-US.restext:2234 | "**A Cryptic Letter -** _C..."
+  value: 'restext://EndtotheCount_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:30784
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:30787
+- type: 'text'
+  # ../en-US.restext:2235 | "Due to recent events whic..."
+  value: 'restext://EndtotheCount_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:30788
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:30792
+- type: 'text'
+  # ../en-US.restext:2236 | "Love and Sincere Thanks,"
+  value: 'restext://EndtotheCount_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:30793
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:30794
+- type: 'text'
+  # ../en-US.restext:2237 | "Vlad III"
+  value: 'restext://EndtotheCount_005'
+# ../.source/FearoftheUnknown_Eng_v15.cs:30795
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:30799
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: 'Privatized2' # ./00047-Privatized2.mws.yaml
+  # ../en-US.restext:275 | "Close"
+  okay: 'restext://Common_271'
+  snapshot: true
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30815
+  - type: 'image'
+    asset: 'image://setup/S2_ScenarioIcon'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30818
+  - type: 'let'
+    var: '_rnd_EndtotheCount_0'
+    expr: '["There is no bonus Servant this round. The Count has decided to no longer offer his services.", "Each player ''''gains 1 Resource'''' of their choice as a parting gift. The Count has decided to no longer offer his services."].shuffled("EndtotheCount_0")[0]'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30816
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30818
+  - type: 'text'
+    value: '{_rnd_EndtotheCount_0}'
+    lets:
+    - '_rnd_EndtotheCount_0'

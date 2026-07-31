@@ -1,0 +1,111 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:35669
+---
+format: 'mws/0.4'
+passage_id: 'PrivateCreepPenalty'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:35671
+- type: 'conditional'
+  if: 'creepcount >= players'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35673
+  - type: 'goto'
+    target: 'ENTERTHEBATTLEDOME' # ./00176-ENTERTHEBATTLEDOME.mws.yaml
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35679
+  - type: 'text'
+    # ../en-US.restext:2571 | "**Penalty for Defiance**"
+    value: 'restext://PrivateCreepPenalty_001'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35681
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35683
+  - type: 'text'
+    # ../en-US.restext:2572 | "{warden} has enacted a pe..."
+    value: 'restext://PrivateCreepPenalty_002'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35689
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35691
+  - type: 'conditional'
+    if: '!creepA'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:35695
+    - type: 'text'
+      # ../en-US.restext:2573 | "**{nameA}** must suffer t..."
+      value: 'restext://PrivateCreepPenalty_003'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35699
+  - type: 'break'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35700
+  - type: 'conditional'
+    if: '!creepB'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:35704
+    - type: 'text'
+      # ../en-US.restext:2574 | "**{nameB}** must suffer t..."
+      value: 'restext://PrivateCreepPenalty_004'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35708
+  - type: 'break'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35709
+  - type: 'conditional'
+    if: 'players >= 3'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:35711
+    - type: 'conditional'
+      if: '!creepC'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:35715
+      - type: 'text'
+        # ../en-US.restext:2575 | "**{nameC}** must suffer t..."
+        value: 'restext://PrivateCreepPenalty_005'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:35719
+    - type: 'break'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35721
+  - type: 'conditional'
+    if: 'players >= 4'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:35723
+    - type: 'conditional'
+      if: '!creepD'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:35727
+      - type: 'text'
+        # ../en-US.restext:2576 | "**{nameD}** must suffer t..."
+        value: 'restext://PrivateCreepPenalty_006'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:35731
+    - type: 'break'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35733
+  - type: 'conditional'
+    if: 'players >= 5'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:35735
+    - type: 'conditional'
+      if: '!creepE'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:35739
+      - type: 'text'
+        # ../en-US.restext:2577 | "**{nameE}** must suffer t..."
+        value: 'restext://PrivateCreepPenalty_007'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:35743
+    - type: 'break'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35745
+  - type: 'break'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35748
+  - type: 'text'
+    # ../en-US.restext:2578 | "**Any player who did NOT ..."
+    value: 'restext://PrivateCreepPenalty_008'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35753
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35755
+  - type: 'text'
+    value: '{junkpenalty}'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35756
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:35758
+  - type: 'link'
+    # ../en-US.restext:324 | "Click here to continue..."
+    label: 'restext://Common_320'
+    target: 'ENTERTHEBATTLEDOME' # ./00176-ENTERTHEBATTLEDOME.mws.yaml
+    snapshot: true

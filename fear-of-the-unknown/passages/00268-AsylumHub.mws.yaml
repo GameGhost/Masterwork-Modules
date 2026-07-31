@@ -1,0 +1,608 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:30055
+---
+format: 'mws/0.4'
+passage_id: 'AsylumHub'
+tags:
+- 'INCOMPLETE-DONOTEDIT'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:30057
+- type: 'conditional'
+  if: 'curecount == "yes"'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30060
+  - type: 'assign'
+    var: 'psych'
+    expr: '[1, 2, 3, 4, 5, 6, 7, 8]'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30063
+  - type: 'assign'
+    var: 'psych'
+    expr: 'psych.shuffled("AsylumHub_0")'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30065
+  - type: 'assign'
+    var: 'qu1'
+    expr: 'psych[0]'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30067
+  - type: 'assign'
+    var: 'qu2'
+    expr: 'psych[1]'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30069
+  - type: 'assign'
+    var: 'qu3'
+    expr: 'psych[2]'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30071
+  - type: 'assign'
+    var: 'qu4'
+    expr: 'psych[3]'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30074
+  - type: 'conditional'
+    if: 'qu1 == 1'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30076
+    - type: 'assign'
+      var: 'quest1'
+      expr: '"CountQuestion1"' # ./00359-CountQuestion1.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30079
+  - type: 'conditional'
+    if: 'qu1 == 2'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30081
+    - type: 'assign'
+      var: 'quest1'
+      expr: '"CountQuestion2"' # ./00370-CountQuestion2.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30084
+  - type: 'conditional'
+    if: 'qu1 == 3'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30086
+    - type: 'assign'
+      var: 'quest1'
+      expr: '"CountQuestion3"' # ./00371-CountQuestion3.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30089
+  - type: 'conditional'
+    if: 'qu1 == 4'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30091
+    - type: 'assign'
+      var: 'quest1'
+      expr: '"CountQuestion4"' # ./00372-CountQuestion4.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30094
+  - type: 'conditional'
+    if: 'qu1 == 5'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30096
+    - type: 'assign'
+      var: 'quest1'
+      expr: '"CountQuestion5"' # ./00374-CountQuestion5.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30099
+  - type: 'conditional'
+    if: 'qu1 == 6'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30101
+    - type: 'assign'
+      var: 'quest1'
+      expr: '"CountQuestion6"' # ./00373-CountQuestion6.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30104
+  - type: 'conditional'
+    if: 'qu1 == 7'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30106
+    - type: 'assign'
+      var: 'quest1'
+      expr: '"CountQuestion7"' # ./00375-CountQuestion7.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30109
+  - type: 'conditional'
+    if: 'qu1 == 8'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30111
+    - type: 'assign'
+      var: 'quest1'
+      expr: '"CountQuestion8"' # ./00376-CountQuestion8.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30115
+  - type: 'conditional'
+    if: 'qu2 == 1'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30117
+    - type: 'assign'
+      var: 'quest2'
+      expr: '"CountQuestion1"' # ./00359-CountQuestion1.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30120
+  - type: 'conditional'
+    if: 'qu2 == 2'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30122
+    - type: 'assign'
+      var: 'quest2'
+      expr: '"CountQuestion2"' # ./00370-CountQuestion2.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30125
+  - type: 'conditional'
+    if: 'qu2 == 3'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30127
+    - type: 'assign'
+      var: 'quest2'
+      expr: '"CountQuestion3"' # ./00371-CountQuestion3.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30130
+  - type: 'conditional'
+    if: 'qu2 == 4'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30132
+    - type: 'assign'
+      var: 'quest2'
+      expr: '"CountQuestion4"' # ./00372-CountQuestion4.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30135
+  - type: 'conditional'
+    if: 'qu2 == 5'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30137
+    - type: 'assign'
+      var: 'quest2'
+      expr: '"CountQuestion5"' # ./00374-CountQuestion5.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30140
+  - type: 'conditional'
+    if: 'qu2 == 6'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30142
+    - type: 'assign'
+      var: 'quest2'
+      expr: '"CountQuestion6"' # ./00373-CountQuestion6.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30145
+  - type: 'conditional'
+    if: 'qu2 == 7'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30147
+    - type: 'assign'
+      var: 'quest2'
+      expr: '"CountQuestion7"' # ./00375-CountQuestion7.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30150
+  - type: 'conditional'
+    if: 'qu2 == 8'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30152
+    - type: 'assign'
+      var: 'quest2'
+      expr: '"CountQuestion8"' # ./00376-CountQuestion8.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30156
+  - type: 'conditional'
+    if: 'qu3 == 1'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30158
+    - type: 'assign'
+      var: 'quest3'
+      expr: '"CountQuestion1"' # ./00359-CountQuestion1.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30161
+  - type: 'conditional'
+    if: 'qu3 == 2'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30163
+    - type: 'assign'
+      var: 'quest3'
+      expr: '"CountQuestion2"' # ./00370-CountQuestion2.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30166
+  - type: 'conditional'
+    if: 'qu3 == 3'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30168
+    - type: 'assign'
+      var: 'quest3'
+      expr: '"CountQuestion3"' # ./00371-CountQuestion3.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30171
+  - type: 'conditional'
+    if: 'qu3 == 4'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30173
+    - type: 'assign'
+      var: 'quest3'
+      expr: '"CountQuestion4"' # ./00372-CountQuestion4.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30176
+  - type: 'conditional'
+    if: 'qu3 == 5'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30178
+    - type: 'assign'
+      var: 'quest3'
+      expr: '"CountQuestion5"' # ./00374-CountQuestion5.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30181
+  - type: 'conditional'
+    if: 'qu3 == 6'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30183
+    - type: 'assign'
+      var: 'quest3'
+      expr: '"CountQuestion6"' # ./00373-CountQuestion6.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30186
+  - type: 'conditional'
+    if: 'qu3 == 7'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30188
+    - type: 'assign'
+      var: 'quest3'
+      expr: '"CountQuestion7"' # ./00375-CountQuestion7.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30191
+  - type: 'conditional'
+    if: 'qu3 == 8'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30193
+    - type: 'assign'
+      var: 'quest3'
+      expr: '"CountQuestion8"' # ./00376-CountQuestion8.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30197
+  - type: 'conditional'
+    if: 'qu4 == 1'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30199
+    - type: 'assign'
+      var: 'quest4'
+      expr: '"CountQuestion1"' # ./00359-CountQuestion1.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30202
+  - type: 'conditional'
+    if: 'qu4 == 2'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30204
+    - type: 'assign'
+      var: 'quest4'
+      expr: '"CountQuestion2"' # ./00370-CountQuestion2.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30207
+  - type: 'conditional'
+    if: 'qu4 == 3'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30209
+    - type: 'assign'
+      var: 'quest4'
+      expr: '"CountQuestion3"' # ./00371-CountQuestion3.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30212
+  - type: 'conditional'
+    if: 'qu4 == 4'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30214
+    - type: 'assign'
+      var: 'quest4'
+      expr: '"CountQuestion4"' # ./00372-CountQuestion4.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30217
+  - type: 'conditional'
+    if: 'qu4 == 5'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30219
+    - type: 'assign'
+      var: 'quest4'
+      expr: '"CountQuestion5"' # ./00374-CountQuestion5.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30222
+  - type: 'conditional'
+    if: 'qu4 == 6'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30224
+    - type: 'assign'
+      var: 'quest4'
+      expr: '"CountQuestion6"' # ./00373-CountQuestion6.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30227
+  - type: 'conditional'
+    if: 'qu4 == 7'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30229
+    - type: 'assign'
+      var: 'quest4'
+      expr: '"CountQuestion7"' # ./00375-CountQuestion7.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30232
+  - type: 'conditional'
+    if: 'qu4 == 8'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30234
+    - type: 'assign'
+      var: 'quest4'
+      expr: '"CountQuestion8"' # ./00376-CountQuestion8.mws.yaml
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30243
+  - type: 'assign'
+    var: 'psych'
+    expr: '[1, 2, 3, 4, 5, 6, 7, 8, 9]'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30246
+  - type: 'assign'
+    var: 'psych'
+    expr: 'psych.shuffled("AsylumHub_1")'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30248
+  - type: 'assign'
+    var: 'qu1'
+    expr: 'psych[0]'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30250
+  - type: 'assign'
+    var: 'qu2'
+    expr: 'psych[1]'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30252
+  - type: 'assign'
+    var: 'qu3'
+    expr: 'psych[2]'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30254
+  - type: 'assign'
+    var: 'qu4'
+    expr: 'psych[3]'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30257
+  - type: 'conditional'
+    if: 'qu1 == 1'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30259
+    - type: 'assign'
+      var: 'quest1'
+      expr: '"AsylumQuestion1"' # ./00362-AsylumQuestion1.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30262
+  - type: 'conditional'
+    if: 'qu1 == 2'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30264
+    - type: 'assign'
+      var: 'quest1'
+      expr: '"AsylumQuestion2"' # ./00363-AsylumQuestion2.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30267
+  - type: 'conditional'
+    if: 'qu1 == 3'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30269
+    - type: 'assign'
+      var: 'quest1'
+      expr: '"AsylumQuestion3"' # ./00364-AsylumQuestion3.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30272
+  - type: 'conditional'
+    if: 'qu1 == 4'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30274
+    - type: 'assign'
+      var: 'quest1'
+      expr: '"AsylumQuestion4"' # ./00365-AsylumQuestion4.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30277
+  - type: 'conditional'
+    if: 'qu1 == 5'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30279
+    - type: 'assign'
+      var: 'quest1'
+      expr: '"AsylumQuestion5"' # ./00366-AsylumQuestion5.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30282
+  - type: 'conditional'
+    if: 'qu1 == 6'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30284
+    - type: 'assign'
+      var: 'quest1'
+      expr: '"AsylumQuestion6"' # ./00367-AsylumQuestion6.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30287
+  - type: 'conditional'
+    if: 'qu1 == 7'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30289
+    - type: 'assign'
+      var: 'quest1'
+      expr: '"AsylumQuestion7"' # ./00368-AsylumQuestion7.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30292
+  - type: 'conditional'
+    if: 'qu1 == 8'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30294
+    - type: 'assign'
+      var: 'quest1'
+      expr: '"AsylumQuestion8"' # ./00369-AsylumQuestion8.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30297
+  - type: 'conditional'
+    if: 'qu1 == 9'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30299
+    - type: 'assign'
+      var: 'quest1'
+      expr: '"AsylumQuestion9"' # ./00377-AsylumQuestion9.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30303
+  - type: 'conditional'
+    if: 'qu2 == 1'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30305
+    - type: 'assign'
+      var: 'quest2'
+      expr: '"AsylumQuestion1"' # ./00362-AsylumQuestion1.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30308
+  - type: 'conditional'
+    if: 'qu2 == 2'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30310
+    - type: 'assign'
+      var: 'quest2'
+      expr: '"AsylumQuestion2"' # ./00363-AsylumQuestion2.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30313
+  - type: 'conditional'
+    if: 'qu2 == 3'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30315
+    - type: 'assign'
+      var: 'quest2'
+      expr: '"AsylumQuestion3"' # ./00364-AsylumQuestion3.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30318
+  - type: 'conditional'
+    if: 'qu2 == 4'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30320
+    - type: 'assign'
+      var: 'quest2'
+      expr: '"AsylumQuestion4"' # ./00365-AsylumQuestion4.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30323
+  - type: 'conditional'
+    if: 'qu2 == 5'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30325
+    - type: 'assign'
+      var: 'quest2'
+      expr: '"AsylumQuestion5"' # ./00366-AsylumQuestion5.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30328
+  - type: 'conditional'
+    if: 'qu2 == 6'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30330
+    - type: 'assign'
+      var: 'quest2'
+      expr: '"AsylumQuestion6"' # ./00367-AsylumQuestion6.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30333
+  - type: 'conditional'
+    if: 'qu2 == 7'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30335
+    - type: 'assign'
+      var: 'quest2'
+      expr: '"AsylumQuestion7"' # ./00368-AsylumQuestion7.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30338
+  - type: 'conditional'
+    if: 'qu2 == 8'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30340
+    - type: 'assign'
+      var: 'quest2'
+      expr: '"AsylumQuestion8"' # ./00369-AsylumQuestion8.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30343
+  - type: 'conditional'
+    if: 'qu2 == 9'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30345
+    - type: 'assign'
+      var: 'quest2'
+      expr: '"AsylumQuestion9"' # ./00377-AsylumQuestion9.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30349
+  - type: 'conditional'
+    if: 'qu3 == 1'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30351
+    - type: 'assign'
+      var: 'quest3'
+      expr: '"AsylumQuestion1"' # ./00362-AsylumQuestion1.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30354
+  - type: 'conditional'
+    if: 'qu3 == 2'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30356
+    - type: 'assign'
+      var: 'quest3'
+      expr: '"AsylumQuestion2"' # ./00363-AsylumQuestion2.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30359
+  - type: 'conditional'
+    if: 'qu3 == 3'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30361
+    - type: 'assign'
+      var: 'quest3'
+      expr: '"AsylumQuestion3"' # ./00364-AsylumQuestion3.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30364
+  - type: 'conditional'
+    if: 'qu3 == 4'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30366
+    - type: 'assign'
+      var: 'quest3'
+      expr: '"AsylumQuestion4"' # ./00365-AsylumQuestion4.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30369
+  - type: 'conditional'
+    if: 'qu3 == 5'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30371
+    - type: 'assign'
+      var: 'quest3'
+      expr: '"AsylumQuestion5"' # ./00366-AsylumQuestion5.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30374
+  - type: 'conditional'
+    if: 'qu3 == 6'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30376
+    - type: 'assign'
+      var: 'quest3'
+      expr: '"AsylumQuestion6"' # ./00367-AsylumQuestion6.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30379
+  - type: 'conditional'
+    if: 'qu3 == 7'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30381
+    - type: 'assign'
+      var: 'quest3'
+      expr: '"AsylumQuestion7"' # ./00368-AsylumQuestion7.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30384
+  - type: 'conditional'
+    if: 'qu3 == 8'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30386
+    - type: 'assign'
+      var: 'quest3'
+      expr: '"AsylumQuestion8"' # ./00369-AsylumQuestion8.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30389
+  - type: 'conditional'
+    if: 'qu3 == 9'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30391
+    - type: 'assign'
+      var: 'quest3'
+      expr: '"AsylumQuestion9"' # ./00377-AsylumQuestion9.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30395
+  - type: 'conditional'
+    if: 'qu4 == 1'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30397
+    - type: 'assign'
+      var: 'quest4'
+      expr: '"AsylumQuestion1"' # ./00362-AsylumQuestion1.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30400
+  - type: 'conditional'
+    if: 'qu4 == 2'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30402
+    - type: 'assign'
+      var: 'quest4'
+      expr: '"AsylumQuestion2"' # ./00363-AsylumQuestion2.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30405
+  - type: 'conditional'
+    if: 'qu4 == 3'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30407
+    - type: 'assign'
+      var: 'quest4'
+      expr: '"AsylumQuestion3"' # ./00364-AsylumQuestion3.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30410
+  - type: 'conditional'
+    if: 'qu4 == 4'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30412
+    - type: 'assign'
+      var: 'quest4'
+      expr: '"AsylumQuestion4"' # ./00365-AsylumQuestion4.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30415
+  - type: 'conditional'
+    if: 'qu4 == 5'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30417
+    - type: 'assign'
+      var: 'quest4'
+      expr: '"AsylumQuestion5"' # ./00366-AsylumQuestion5.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30420
+  - type: 'conditional'
+    if: 'qu4 == 6'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30422
+    - type: 'assign'
+      var: 'quest4'
+      expr: '"AsylumQuestion6"' # ./00367-AsylumQuestion6.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30425
+  - type: 'conditional'
+    if: 'qu4 == 7'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30427
+    - type: 'assign'
+      var: 'quest4'
+      expr: '"AsylumQuestion7"' # ./00368-AsylumQuestion7.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30430
+  - type: 'conditional'
+    if: 'qu4 == 8'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30432
+    - type: 'assign'
+      var: 'quest4'
+      expr: '"AsylumQuestion8"' # ./00369-AsylumQuestion8.mws.yaml
+  # ../.source/FearoftheUnknown_Eng_v15.cs:30435
+  - type: 'conditional'
+    if: 'qu4 == 9'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:30437
+    - type: 'assign'
+      var: 'quest4'
+      expr: '"AsylumQuestion9"' # ./00377-AsylumQuestion9.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:30444
+- type: 'goto'
+  target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml

@@ -1,0 +1,104 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:19782
+---
+format: 'mws/0.4'
+passage_id: 'AdvancedWeaponryIntro'
+# ../en-US.restext:1631 | "A Few Improvements"
+title: 'restext://AdvancedWeaponryIntro_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:19789
+- type: 'text'
+  # ../en-US.restext:1632 | "I was quick to suggest a ..."
+  value: 'restext://AdvancedWeaponryIntro_002'
+# ../.source/ATimeofWar_Eng_v8.cs:19797
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:19799
+- type: 'text'
+  # ../en-US.restext:1633 | "While the rumors of my pa..."
+  value: 'restext://AdvancedWeaponryIntro_003'
+# ../.source/ATimeofWar_Eng_v8.cs:19800
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:19804
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  target: 'Martial1' # ./00023-Martial1.mws.yaml
+  # ../en-US.restext:182 | "Close"
+  okay: 'restext://Common_178'
+  snapshot: true
+  header:
+  # ../.source/ATimeofWar_Eng_v8.cs:19840
+  - type: 'image'
+    asset: 'image://setup/S3_AdvancedWeaponry'
+    style: 'setup-image'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:19842
+  - type: 'text'
+    # ../en-US.restext:1634 | "Retrieve the **Advanced W..."
+    value: 'restext://AdvancedWeaponryIntro_004'
+  # ../.source/ATimeofWar_Eng_v8.cs:19850
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:19852
+  - type: 'text'
+    # ../en-US.restext:1635 | "Each player then draws an..."
+    value: 'restext://AdvancedWeaponryIntro_005'
+# ../.source/ATimeofWar_Eng_v8.cs:19806
+- type: 'assign'
+  var: 'sepinc1'
+  # ../en-US.restext:1636 | AdvancedWeaponryIntro_006 | "you may gain 1 Servant fr..."
+  # ../en-US.restext:1637 | AdvancedWeaponryIntro_007 | "you may gain 1 Servant fr..."
+  expr: '["restext://AdvancedWeaponryIntro_006", "restext://AdvancedWeaponryIntro_007"].shuffled("AdvancedWeaponryIntro_0")[0]'
+# ../.source/ATimeofWar_Eng_v8.cs:19807
+- type: 'assign'
+  var: 'sepinc2'
+  # ../en-US.restext:1638 | AdvancedWeaponryIntro_008 | "you may gain 1 Servant fr..."
+  # ../en-US.restext:1639 | AdvancedWeaponryIntro_009 | "you may pay $1 to gain 1 ..."
+  expr: '["restext://AdvancedWeaponryIntro_008", "restext://AdvancedWeaponryIntro_009"].shuffled("AdvancedWeaponryIntro_1")[0]'
+# ../.source/ATimeofWar_Eng_v8.cs:19808
+- type: 'assign'
+  var: 'sepinc3'
+  # ../en-US.restext:1640 | AdvancedWeaponryIntro_010 | "you may gain 1 Caretaker ..."
+  # ../en-US.restext:1641 | AdvancedWeaponryIntro_011 | "you may gain 1 Knowledge ..."
+  expr: '["restext://AdvancedWeaponryIntro_010", "restext://AdvancedWeaponryIntro_011"].shuffled("AdvancedWeaponryIntro_2")[0]'
+# ../.source/ATimeofWar_Eng_v8.cs:19809
+- type: 'assign'
+  var: 'moninc3'
+  # ../en-US.restext:1642 | AdvancedWeaponryIntro_012 | "no bonus."
+  # ../en-US.restext:1643 | AdvancedWeaponryIntro_013 | "$1 for your efforts."
+  expr: '["restext://AdvancedWeaponryIntro_012", "restext://AdvancedWeaponryIntro_013"].shuffled("AdvancedWeaponryIntro_3")[0]'
+# ../.source/ATimeofWar_Eng_v8.cs:19810
+- type: 'assign'
+  var: 'wardetermine'
+  expr: 'rand_between(1, 2, "AdvancedWeaponryIntro_4")'
+# ../.source/ATimeofWar_Eng_v8.cs:19811
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:19813
+    - type: 'assign'
+      var: 'defense'
+      expr: 'rand_between(2, 4, "AdvancedWeaponryIntro_5")'
+  - match: 3
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:19817
+    - type: 'assign'
+      var: 'defense'
+      expr: 'rand_between(3, 5, "AdvancedWeaponryIntro_6")'
+  - match: 4
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:19821
+    - type: 'assign'
+      var: 'defense'
+      expr: 'rand_between(4, 6, "AdvancedWeaponryIntro_7")'
+  - match: 5
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:19825
+    - type: 'assign'
+      var: 'defense'
+      expr: 'rand_between(5, 7, "AdvancedWeaponryIntro_8")'

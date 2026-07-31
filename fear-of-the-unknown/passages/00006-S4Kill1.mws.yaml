@@ -1,0 +1,103 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:2062
+---
+format: 'mws/0.4'
+passage_id: 'S4Kill1'
+# ../en-US.restext:406 | "A Public Execution?"
+title: 'restext://S4Kill1_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:2069
+- type: 'assign'
+  var: 'whpg'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2074
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2076
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB].shuffled("S4Kill1_0")[0]'
+  - match: 3
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2080
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC].shuffled("S4Kill1_1")[0]'
+  - match: 4
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2084
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC, nameD].shuffled("S4Kill1_2")[0]'
+  - match: 5
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:2088
+    - type: 'assign'
+      var: 'randomplayer'
+      expr: '[nameA, nameB, nameC, nameD, nameE].shuffled("S4Kill1_3")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2090
+- type: 'assign'
+  var: 'randomname'
+  expr: 'randomplayer'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2091
+- type: 'text'
+  # ../en-US.restext:407 | "**{randomname}'s Journal ..."
+  value: 'restext://S4Kill1_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2098
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2100
+- type: 'text'
+  # ../en-US.restext:408 | "It is nearing midnight no..."
+  value: 'restext://S4Kill1_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2101
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2103
+- type: 'text'
+  # ../en-US.restext:409 | "It began over supper with..."
+  value: 'restext://S4Kill1_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2118
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2120
+- type: 'text'
+  # ../en-US.restext:410 | "As we investigated the co..."
+  value: 'restext://S4Kill1_005'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2129
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2131
+- type: 'text'
+  # ../en-US.restext:411 | "The **Butcher** was press..."
+  value: 'restext://S4Kill1_006'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2139
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2141
+- type: 'text'
+  # ../en-US.restext:412 | "There was no way to slake..."
+  value: 'restext://S4Kill1_007'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2143
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:2145
+- type: 'conditional'
+  if: 'players == 2'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:2147
+  - type: 'link'
+    # ../en-US.restext:286 | "Click to continue..."
+    label: 'restext://Common_282'
+    target: '2PS4Kill2' # ./00238-2PS4Kill2.mws.yaml
+    snapshot: true
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:2151
+  - type: 'link'
+    # ../en-US.restext:286 | "Click to continue..."
+    label: 'restext://Common_282'
+    target: 'S4Kill2' # ./00099-S4Kill2.mws.yaml
+    snapshot: true

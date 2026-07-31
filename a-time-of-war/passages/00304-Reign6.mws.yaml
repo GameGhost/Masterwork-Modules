@@ -1,0 +1,156 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:27983
+---
+format: 'mws/0.4'
+passage_id: 'Reign6'
+tags:
+- 'revised'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:27988
+- type: 'text'
+  # ../en-US.restext:158 | "**Carefully hand the Stor..."
+  value: 'restext://Common_154'
+# ../.source/ATimeofWar_Eng_v8.cs:27992
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:27996
+- type: 'text'
+  # ../en-US.restext:2295 | "**Spiritualism Craze**"
+  value: 'restext://Reign6_001'
+# ../.source/ATimeofWar_Eng_v8.cs:27998
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:28000
+- type: 'text'
+  # ../en-US.restext:2296 | "A fad of spirit rappings ..."
+  value: 'restext://Reign6_002'
+# ../.source/ATimeofWar_Eng_v8.cs:28001
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:28003
+- type: 'text'
+  # ../en-US.restext:2297 | "Being well-versed in simp..."
+  value: 'restext://Reign6_003'
+# ../.source/ATimeofWar_Eng_v8.cs:28004
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:28008
+- type: 'text'
+  # ../en-US.restext:2298 | "**The choice was obvious ..."
+  value: 'restext://Reign6_004'
+# ../.source/ATimeofWar_Eng_v8.cs:28010
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:28013
+- type: 'link'
+  # ../en-US.restext:2299 | "Allow the people their fun."
+  label: 'restext://Reign6_005'
+  target: 'Reign6b' # ./00309-Reign6b.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/ATimeofWar_Eng_v8.cs:28028
+  - type: 'assign'
+    var: 'rc'
+    expr: '1'
+  # ../.source/ATimeofWar_Eng_v8.cs:28029
+  - type: 'conditional'
+    if: 'reigntemp == nameA'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:28031
+    - type: 'assign'
+      var: 'plareigng'
+      expr: 'plareigng + 1'
+  # ../.source/ATimeofWar_Eng_v8.cs:28033
+  - type: 'conditional'
+    if: 'reigntemp == nameB'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:28035
+    - type: 'assign'
+      var: 'plbreigng'
+      expr: 'plbreigng + 1'
+  # ../.source/ATimeofWar_Eng_v8.cs:28037
+  - type: 'conditional'
+    if: 'reigntemp == nameC'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:28039
+    - type: 'assign'
+      var: 'plcreigng'
+      expr: 'plcreigng + 1'
+  # ../.source/ATimeofWar_Eng_v8.cs:28041
+  - type: 'conditional'
+    if: 'reigntemp == nameD'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:28043
+    - type: 'assign'
+      var: 'pldreigng'
+      expr: 'pldreigng + 1'
+  # ../.source/ATimeofWar_Eng_v8.cs:28045
+  - type: 'conditional'
+    if: 'reigntemp == nameE'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:28047
+    - type: 'assign'
+      var: 'plereigng'
+      expr: 'plereigng + 1'
+# ../.source/ATimeofWar_Eng_v8.cs:28014
+- type: 'text'
+  # ../en-US.restext:2300 | "_This will result in:{cro..."
+  value: 'restext://Reign6_006'
+# ../.source/ATimeofWar_Eng_v8.cs:28016
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:28019
+- type: 'link'
+  # ../en-US.restext:2301 | "This is sacrilege!"
+  label: 'restext://Reign6_007'
+  target: 'Reign6b' # ./00309-Reign6b.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/ATimeofWar_Eng_v8.cs:28055
+  - type: 'assign'
+    var: 'rc'
+    expr: '2'
+  # ../.source/ATimeofWar_Eng_v8.cs:28056
+  - type: 'conditional'
+    if: 'reigntemp == nameA'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:28058
+    - type: 'assign'
+      var: 'plareigne'
+      expr: 'plareigne + 1'
+  # ../.source/ATimeofWar_Eng_v8.cs:28060
+  - type: 'conditional'
+    if: 'reigntemp == nameB'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:28062
+    - type: 'assign'
+      var: 'plbreigne'
+      expr: 'plbreigne + 1'
+  # ../.source/ATimeofWar_Eng_v8.cs:28064
+  - type: 'conditional'
+    if: 'reigntemp == nameC'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:28066
+    - type: 'assign'
+      var: 'plcreigne'
+      expr: 'plcreigne + 1'
+  # ../.source/ATimeofWar_Eng_v8.cs:28068
+  - type: 'conditional'
+    if: 'reigntemp == nameD'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:28070
+    - type: 'assign'
+      var: 'pldreigne'
+      expr: 'pldreigne + 1'
+  # ../.source/ATimeofWar_Eng_v8.cs:28072
+  - type: 'conditional'
+    if: 'reigntemp == nameE'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:28074
+    - type: 'assign'
+      var: 'plereigne'
+      expr: 'plereigne + 1'
+# ../.source/ATimeofWar_Eng_v8.cs:28020
+- type: 'text'
+  # ../en-US.restext:2302 | "_This will result in:{cro..."
+  value: 'restext://Reign6_008'

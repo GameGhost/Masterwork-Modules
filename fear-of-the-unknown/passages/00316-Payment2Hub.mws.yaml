@@ -1,0 +1,17 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:33732
+---
+format: 'mws/0.4'
+passage_id: 'Payment2Hub'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:33734
+- type: 'conditional'
+  if: 'path4 == "PEPrivatized"'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:33736
+  - type: 'goto'
+    target: 'Privatized3' # ./00048-Privatized3.mws.yaml
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:33742
+  - type: 'goto'
+    target: 'Liberal3' # ./00051-Liberal3.mws.yaml

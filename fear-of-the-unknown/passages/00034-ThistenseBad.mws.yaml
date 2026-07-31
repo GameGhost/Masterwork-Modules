@@ -1,0 +1,52 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:5353
+---
+format: 'mws/0.4'
+passage_id: 'ThistenseBad'
+# ../en-US.restext:635 | "Come to an Agreement"
+title: 'restext://ThistenseBad_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:5363
+- type: 'text'
+  # ../en-US.restext:636 | "**Journal of {randomname}..."
+  value: 'restext://ThistenseBad_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5373
+- type: 'assign'
+  var: 'ending'
+  expr: '"FOTU-End4"' # ./00279-FOTU-End4.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:5372
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5375
+- type: 'text'
+  # ../en-US.restext:637 | "When the tensions heighte..."
+  value: 'restext://ThistenseBad_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5378
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5380
+- type: 'text'
+  # ../en-US.restext:638 | "They hate **us.**"
+  value: 'restext://ThistenseBad_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5385
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:5389
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:286 | "Click to continue..."
+  label: 'restext://Common_282'
+  target: 'Caravancheck' # ./00105-Caravancheck.mws.yaml
+  # ../en-US.restext:275 | "Close"
+  okay: 'restext://Common_271'
+  snapshot: true
+  header:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5405
+  - type: 'image'
+    asset: 'image://setup/S2_RomaniToken'
+    style: 'setup-image'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:5408
+  - type: 'text'
+    # ../en-US.restext:639 | "Remove the **Romani token..."
+    value: 'restext://ThistenseBad_005'

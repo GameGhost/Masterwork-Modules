@@ -1,0 +1,68 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:23828
+---
+format: 'mws/0.4'
+passage_id: 'ATOW-FamineEventYes'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:23830
+- type: 'conditional'
+  if: '!newmeat_submitted'
+  then:
+  - type: 'popup'
+    layout: 'prompt'
+    content:
+    - type: 'text'
+      # ../en-US.restext:1920 | "Carefully pass the Storyb..."
+      value: 'restext://ATOW_FamineEventYes_001'
+    - type: 'input'
+      label: ''
+      var: 'newmeat'
+    # ../en-US.restext:169 | "Continue"
+    okay: 'restext://Common_165'
+    onclose:
+    - type: 'assign'
+      var: 'newmeat_submitted'
+      expr: 'true'
+    snapshot: true
+    target: 'ATOW-FamineEventYes' # ./00237-ATOW-FamineEventYes.mws.yaml
+# ../.source/ATimeofWar_Eng_v8.cs:23843
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:23846
+- type: 'text'
+  # ../en-US.restext:1921 | "**A Modest Proposal**"
+  value: 'restext://ATOW_FamineEventYes_002'
+# ../.source/ATimeofWar_Eng_v8.cs:23848
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:23850
+- type: 'text'
+  # ../en-US.restext:1922 | "The riots ceased and a ca..."
+  value: 'restext://ATOW_FamineEventYes_003'
+# ../.source/ATimeofWar_Eng_v8.cs:23866
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:23870
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  target: 'PeaceStick' # ./00248-PeaceStick.mws.yaml
+  # ../en-US.restext:182 | "Close"
+  okay: 'restext://Common_178'
+  snapshot: true
+  header:
+  # ../.source/ATimeofWar_Eng_v8.cs:23893
+  - type: 'image'
+    asset: 'image://setup/Insanity_Icon'
+    style: 'setup-image'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:23885
+  - type: 'assign'
+    var: 'peacecount'
+    expr: 'peacecount + 1'
+  # ../.source/ATimeofWar_Eng_v8.cs:23894
+  - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:23895
+  - type: 'text'
+    # ../en-US.restext:1923 | "All players **gain 2** {i..."
+    value: 'restext://ATOW_FamineEventYes_004'

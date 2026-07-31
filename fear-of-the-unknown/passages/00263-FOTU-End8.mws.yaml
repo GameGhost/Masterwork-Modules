@@ -1,0 +1,71 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:29625
+---
+format: 'mws/0.4'
+passage_id: 'FOTU-End8'
+# ../en-US.restext:2181 | "Taking Charge"
+title: 'restext://FOTU_End8_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:29636
+- type: 'text'
+  # ../en-US.restext:2182 | "**Letter from** "
+  value: 'restext://FOTU_End8_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29637
+- type: 'conditional'
+  if: 'curecount == "yes"'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29639
+  - type: 'text'
+    # ../en-US.restext:2184 | "**Vlad III Dracula**"
+    value: 'restext://FOTU_End8_004'
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:29643
+  - type: 'text'
+    # ../en-US.restext:2183 | "**{winner}**"
+    value: 'restext://FOTU_End8_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29645
+- type: 'text'
+  # ../en-US.restext:2185 | " **-** _12 November, 1924._"
+  value: 'restext://FOTU_End8_005'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29652
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29654
+- type: 'text'
+  # ../en-US.restext:2186 | "It is my hope that this l..."
+  value: 'restext://FOTU_End8_006'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29658
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29660
+- type: 'text'
+  # ../en-US.restext:2187 | "The institution in {townn..."
+  value: 'restext://FOTU_End8_007'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29673
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29675
+- type: 'text'
+  # ../en-US.restext:2188 | "Which is why I must repea..."
+  value: 'restext://FOTU_End8_008'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29678
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29680
+- type: 'text'
+  # ../en-US.restext:2189 | "The concerns you expresse..."
+  value: 'restext://FOTU_End8_009'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29681
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29683
+- type: 'text'
+  # ../en-US.restext:2190 | "But, I ask you now; why q..."
+  value: 'restext://FOTU_End8_010'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29689
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:29692
+- type: 'text'
+  # ../en-US.restext:74 | "THE END?"
+  value: 'restext://Common_070'

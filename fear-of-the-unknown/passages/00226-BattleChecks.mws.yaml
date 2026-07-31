@@ -1,0 +1,48 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:26047
+---
+format: 'mws/0.4'
+passage_id: 'BattleChecks'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:26049
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26051
+    - type: 'assign'
+      var: 'elim'
+      expr: '[warriorA, warriorB]'
+  - match: 3
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26055
+    - type: 'assign'
+      var: 'elim'
+      expr: '[warriorA, warriorB, warriorC]'
+  - match: 4
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26059
+    - type: 'assign'
+      var: 'elim'
+      expr: '[warriorA, warriorB, warriorC, warriorD]'
+  default:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:26063
+  - type: 'assign'
+    var: 'elim'
+    expr: '[warriorA, warriorB, warriorC, warriorD, warriorE]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26092
+- type: 'assign'
+  var: 'elim'
+  expr: 'elim.shuffled("BattleChecks_0")'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26094
+- type: 'assign'
+  var: 'active'
+  expr: 'elim[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26096
+- type: 'assign'
+  var: 'target'
+  expr: 'elim[1]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26099
+- type: 'goto'
+  target: 'BattleStart' # ./00224-BattleStart.mws.yaml

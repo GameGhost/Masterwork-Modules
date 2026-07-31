@@ -1,0 +1,59 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:21047
+---
+format: 'mws/0.4'
+passage_id: 'WarningWarEnding'
+# ../en-US.restext:1751 | "The War?"
+title: 'restext://WarningWarEnding_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:21055
+- type: 'text'
+  # ../en-US.restext:1752 | "As a brief consideration ..."
+  value: 'restext://WarningWarEnding_002'
+# ../.source/ATimeofWar_Eng_v8.cs:21058
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:21060
+- type: 'text'
+  # ../en-US.restext:1753 | "Though details about this..."
+  value: 'restext://WarningWarEnding_003'
+# ../.source/ATimeofWar_Eng_v8.cs:21062
+- type: 'conditional'
+  # ../en-US.restext:25 | "Separatists"
+  if: 'warwinner == "restext://Common_021"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:21064
+  - type: 'text'
+    # ../en-US.restext:1756 | "the {warwinner} were able..."
+    value: 'restext://WarningWarEnding_006'
+  # ../.source/ATimeofWar_Eng_v8.cs:21069
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:21071
+  - type: 'text'
+    # ../en-US.restext:1757 | "Decidedly trivial and woe..."
+    value: 'restext://WarningWarEnding_007'
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:21077
+  - type: 'text'
+    # ../en-US.restext:1754 | "the {warwinner} were able..."
+    value: 'restext://WarningWarEnding_004'
+  # ../.source/ATimeofWar_Eng_v8.cs:21082
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:21084
+  - type: 'text'
+    # ../en-US.restext:1755 | "In fact, it was so diffic..."
+    value: 'restext://WarningWarEnding_005'
+# ../.source/ATimeofWar_Eng_v8.cs:21088
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:21090
+- type: 'link'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  target: 'WhoopsUtopian' # ./00197-WhoopsUtopian.mws.yaml
+  snapshot: true
+# ../.source/ATimeofWar_Eng_v8.cs:21091
+- type: 'text'
+  value: ' '

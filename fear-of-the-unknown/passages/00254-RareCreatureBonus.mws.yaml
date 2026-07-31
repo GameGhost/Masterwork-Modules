@@ -1,0 +1,87 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:28844
+---
+format: 'mws/0.4'
+passage_id: 'RareCreatureBonus'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:28846
+- type: 'conditional'
+  if: 'creaturehelp == 1'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:28850
+  - type: 'text'
+    # ../en-US.restext:2114 | "**Minor Compassion**"
+    value: 'restext://RareCreatureBonus_001'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:28852
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:28854
+  - type: 'text'
+    # ../en-US.restext:2115 | "The Creature was not unre..."
+    value: 'restext://RareCreatureBonus_002'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:28855
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:28859
+  - type: 'popup'
+    # ../en-US.restext:286 | "Click to continue..."
+    label: 'restext://Common_282'
+    layout: 'reveal'
+    # ../en-US.restext:275 | "Close"
+    cancel: 'restext://Common_271'
+    snapshot: true
+    header:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:28912
+    - type: 'image'
+      asset: 'image://setup/AdvanceJournalTrack'
+      style: 'setup-image'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:28896
+    - type: 'conditional'
+      if: 'Gen2End == "asylum"'
+      then:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:28898
+      - type: 'section'
+        style: 'panel'
+        content: []
+      - type: 'link'
+        # ../en-US.restext:277 | "Continue"
+        label: 'restext://Common_273'
+        target: 'LiberalIntro' # ./00024-LiberalIntro.mws.yaml
+        snapshot: true
+      else:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:28903
+      - type: 'section'
+        style: 'panel'
+        content: []
+      - type: 'link'
+        # ../en-US.restext:277 | "Continue"
+        label: 'restext://Common_273'
+        target: 'PrivatizedIntro' # ./00023-PrivatizedIntro.mws.yaml
+        snapshot: true
+    # ../.source/FearoftheUnknown_Eng_v15.cs:28913
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:28915
+    - type: 'text'
+      # ../en-US.restext:2116 | "The player with a complet..."
+      value: 'restext://RareCreatureBonus_003'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:28928
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:28930
+    - type: 'text'
+      # ../en-US.restext:2117 | "They **move one space for..."
+      value: 'restext://RareCreatureBonus_004'
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:28864
+  - type: 'conditional'
+    if: 'Gen2End == "asylum"'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:28866
+    - type: 'goto'
+      target: 'LiberalIntro' # ./00024-LiberalIntro.mws.yaml
+    else:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:28872
+    - type: 'goto'
+      target: 'PrivatizedIntro' # ./00023-PrivatizedIntro.mws.yaml

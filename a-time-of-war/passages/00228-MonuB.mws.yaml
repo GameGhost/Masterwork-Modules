@@ -1,0 +1,105 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:22974
+---
+format: 'mws/0.4'
+passage_id: 'MonuB'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:22979
+- type: 'text'
+  # ../en-US.restext:42 | "**Carefully hand this Sto..."
+  value: 'restext://Common_038'
+# ../.source/ATimeofWar_Eng_v8.cs:22984
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:22989
+- type: 'popup'
+  # ../en-US.restext:181 | "Once you are ready, click..."
+  label: 'restext://Common_177'
+  layout: 'reveal'
+  # ../en-US.restext:182 | "Close"
+  cancel: 'restext://Common_178'
+  snapshot: true
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:23026
+  - type: 'text'
+    # ../en-US.restext:108 | "**Fate of Time**"
+    value: 'restext://Common_104'
+  # ../.source/ATimeofWar_Eng_v8.cs:23028
+  - type: 'break'
+  # ../.source/ATimeofWar_Eng_v8.cs:23029
+  - type: 'text'
+    # ../en-US.restext:109 | "I was called upon to make..."
+    value: 'restext://Common_105'
+  # ../.source/ATimeofWar_Eng_v8.cs:23030
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:23032
+  - type: 'text'
+    # ../en-US.restext:110 | "If I chose to focus on Ut..."
+    value: 'restext://Common_106'
+  # ../.source/ATimeofWar_Eng_v8.cs:23035
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:23037
+  - type: 'text'
+    # ../en-US.restext:111 | "However, if I were the **..."
+    value: 'restext://Common_107'
+  # ../.source/ATimeofWar_Eng_v8.cs:23046
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:23050
+  - type: 'text'
+    # ../en-US.restext:112 | "**The decision was easy. ..."
+    value: 'restext://Common_108'
+  # ../.source/ATimeofWar_Eng_v8.cs:23052
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:23055
+  - type: 'link'
+    # ../en-US.restext:113 | "Focus on Utopian Experime..."
+    label: 'restext://Common_109'
+    snapshot: true
+    onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:22995
+    - type: 'assign'
+      var: 'plbtm'
+      expr: '"no"'
+    # ../.source/ATimeofWar_Eng_v8.cs:22996
+    - type: 'conditional'
+      if: 'players > 2'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:22998
+      - type: 'goto'
+        target: 'MonuC' # ./00230-MonuC.mws.yaml
+      else:
+      # ../.source/ATimeofWar_Eng_v8.cs:23002
+      - type: 'goto'
+        target: 'MonuRes' # ./00229-MonuRes.mws.yaml
+  # ../.source/ATimeofWar_Eng_v8.cs:23056
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:23059
+  - type: 'link'
+    # ../en-US.restext:114 | "Release the Time Machine ..."
+    label: 'restext://Common_110'
+    snapshot: true
+    onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:23009
+    - type: 'assign'
+      var: 'plbtm'
+      expr: '"yes"'
+    # ../.source/ATimeofWar_Eng_v8.cs:23010
+    - type: 'assign'
+      var: 'release'
+      expr: 'release + 1'
+    # ../.source/ATimeofWar_Eng_v8.cs:23011
+    - type: 'conditional'
+      if: 'players > 2'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:23013
+      - type: 'goto'
+        target: 'MonuC' # ./00230-MonuC.mws.yaml
+      else:
+      # ../.source/ATimeofWar_Eng_v8.cs:23017
+      - type: 'goto'
+        target: 'MonuRes' # ./00229-MonuRes.mws.yaml

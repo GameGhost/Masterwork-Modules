@@ -1,0 +1,238 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:9269
+---
+format: 'mws/0.4'
+passage_id: 'MonarchReign3'
+# ../en-US.restext:86 | "Monarchy Reigns"
+title: 'restext://Common_082'
+# ../en-US.restext:207 | "Late Years"
+subtitle: 'restext://Common_203'
+tags:
+- 'format'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:9276
+- type: 'assign'
+  var: 'round'
+  expr: '18'
+# ../.source/ATimeofWar_Eng_v8.cs:9278
+- type: 'conditional'
+  if: 'pageturn == "yes"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:9282
+  - type: 'section'
+    # ../en-US.restext:757 | "{icon:storybooktoken} **C..."
+    title: 'restext://MonarchReign3_001'
+    style: 'hub-card'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:9291
+    - type: 'text'
+      # ../en-US.restext:758 | "When any player visits th..."
+      value: 'restext://MonarchReign3_002'
+    # ../.source/ATimeofWar_Eng_v8.cs:9292
+    - type: 'link'
+      # ../en-US.restext:759 | "click here to gain the be..."
+      label: 'restext://MonarchReign3_003'
+      target: 'CommemorativeSignIn' # ./00166-CommemorativeSignIn.mws.yaml
+      snapshot: true
+  # ../.source/ATimeofWar_Eng_v8.cs:9294
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:9298
+  - type: 'section'
+    # ../en-US.restext:760 | "**Church**"
+    title: 'restext://MonarchReign3_004'
+    style: 'hub-card'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:9306
+    - type: 'link'
+      # ../en-US.restext:761 | "Click here"
+      label: 'restext://MonarchReign3_005'
+      target: 'ATOW-Church' # ./00297-ATOW-Church.mws.yaml
+      snapshot: true
+    # ../.source/ATimeofWar_Eng_v8.cs:9307
+    - type: 'text'
+      # ../en-US.restext:762 | "for an explanation of the..."
+      value: 'restext://MonarchReign3_006'
+  # ../.source/ATimeofWar_Eng_v8.cs:9310
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:9316
+- type: 'conditional'
+  conditions:
+  - if: '!reignsep'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:9320
+    - type: 'section'
+      # ../en-US.restext:87 | "**Monarchist Allegiance**"
+      title: 'restext://Common_083'
+      style: 'hub-card'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:9329
+      - type: 'text'
+        # ../en-US.restext:88 | "If a player does **NOT** ..."
+        value: 'restext://Common_084'
+  - if: 'reignsep == "yes"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:9354
+    - type: 'section'
+      # ../en-US.restext:87 | "**Monarchist Allegiance**"
+      title: 'restext://Common_083'
+      style: 'hub-card'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:9363
+      - type: 'text'
+        # ../en-US.restext:89 | "If a player does **NOT** ..."
+        value: 'restext://Common_085'
+# ../.source/ATimeofWar_Eng_v8.cs:9376
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:9380
+- type: 'section'
+  # ../en-US.restext:90 | "{icon:storybooktoken} **R..."
+  title: 'restext://Common_086'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:9390
+  - type: 'text'
+    # ../en-US.restext:91 | "The Monarchy is likely to..."
+    value: 'restext://Common_087'
+  # ../.source/ATimeofWar_Eng_v8.cs:9398
+  - type: 'link'
+    # ../en-US.restext:92 | "click here to make a roya..."
+    label: 'restext://Common_088'
+    target: 'ReignIntro' # ./00135-ReignIntro.mws.yaml
+    snapshot: true
+# ../.source/ATimeofWar_Eng_v8.cs:9400
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:9404
+- type: 'section'
+  # ../en-US.restext:93 | "**Most Decrees**"
+  title: 'restext://Common_089'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:9413
+  - type: 'text'
+    # ../en-US.restext:103 | "The player who makes the most "
+    value: 'restext://Common_099'
+  # ../.source/ATimeofWar_Eng_v8.cs:9416
+  - type: 'conditional'
+    if: 'benevolent == "good"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:9418
+    - type: 'text'
+      # ../en-US.restext:105 | "**benevolent**"
+      value: 'restext://Common_101'
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:9423
+    - type: 'text'
+      # ../en-US.restext:104 | "**iron fist**"
+      value: 'restext://Common_100'
+  # ../.source/ATimeofWar_Eng_v8.cs:9426
+  - type: 'text'
+    # ../en-US.restext:106 | " decrees will gain **{dec..."
+    value: 'restext://Common_102'
+# ../.source/ATimeofWar_Eng_v8.cs:9437
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:9441
+- type: 'section'
+  # ../en-US.restext:94 | "**Like a Whispering Shadow**"
+  title: 'restext://Common_090'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:9449
+  - type: 'text'
+    # ../en-US.restext:95 | "At the End of the Generat..."
+    value: 'restext://Common_091'
+# ../.source/ATimeofWar_Eng_v8.cs:9462
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:9466
+- type: 'section'
+  # ../en-US.restext:96 | "{icon:storybooktoken} **R..."
+  title: 'restext://Common_092'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:9477
+  - type: 'text'
+    # ../en-US.restext:97 | "If a player ever overlaps..."
+    value: 'restext://Common_093'
+  # ../.source/ATimeofWar_Eng_v8.cs:9484
+  - type: 'conditional'
+    if: 'onestcrown == 0'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:9486
+    - type: 'link'
+      # ../en-US.restext:98 | "click here for the negati..."
+      label: 'restext://Common_094'
+      target: '1stCrownCons' # ./00155-1stCrownCons.mws.yaml
+      snapshot: true
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:9491
+    - type: 'link'
+      # ../en-US.restext:98 | "click here for the negati..."
+      label: 'restext://Common_094'
+      target: 'CrownCons' # ./00245-CrownCons.mws.yaml
+      snapshot: true
+# ../.source/ATimeofWar_Eng_v8.cs:9494
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:9496
+- type: 'conditional'
+  if: 'onestcrown == 1'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:9500
+  - type: 'section'
+    # ../en-US.restext:99 | "**Royal Eye**"
+    title: 'restext://Common_095'
+    style: 'hub-card'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:9509
+    - type: 'text'
+      # ../en-US.restext:107 | "Any player with a {icon:c..."
+      value: 'restext://Common_103'
+  # ../.source/ATimeofWar_Eng_v8.cs:9520
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:9523
+- type: 'switch'
+  on: 'weaponrew'
+  cases:
+  - match: 'money'
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:9527
+    - type: 'section'
+      # ../en-US.restext:100 | "**Weapon Token Bonus**"
+      title: 'restext://Common_096'
+      style: 'hub-card'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:9535
+      - type: 'text'
+        # ../en-US.restext:101 | "{icon:s3_weapontoken}toke..."
+        value: 'restext://Common_097'
+  - match: 'vp'
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:9542
+    - type: 'section'
+      # ../en-US.restext:100 | "**Weapon Token Bonus**"
+      title: 'restext://Common_096'
+      style: 'hub-card'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:9550
+      - type: 'text'
+        # ../en-US.restext:102 | "While our attempt to infl..."
+        value: 'restext://Common_098'
+# ../.source/ATimeofWar_Eng_v8.cs:9560
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:9563
+- type: 'section'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:9569
+  - type: 'link'
+    # ../en-US.restext:272 | "Click here at the End of ..."
+    label: 'restext://Common_268'
+    target: 'Weapons' # ./00094-Weapons.mws.yaml
+    snapshot: true

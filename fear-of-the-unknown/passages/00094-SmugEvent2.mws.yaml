@@ -1,0 +1,56 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:12351
+---
+format: 'mws/0.4'
+passage_id: 'SmugEvent2'
+# ../en-US.restext:1020 | "A Controlled Experiment"
+title: 'restext://SmugEvent2_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:12358
+- type: 'assign'
+  var: 'dev'
+  expr: '0'
+# ../.source/FearoftheUnknown_Eng_v15.cs:12360
+- type: 'conditional'
+  if: 'players >= 3'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:12362
+  - type: 'text'
+    # ../en-US.restext:1021 | "Did {collab} Players coll..."
+    value: 'restext://SmugEvent2_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:12372
+- type: 'conditional'
+  if: 'players == 2'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:12374
+  - type: 'text'
+    # ../en-US.restext:1022 | "Were all the **Collaborat..."
+    value: 'restext://SmugEvent2_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:12382
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:12385
+- type: 'link'
+  # ../en-US.restext:304 | "Yes."
+  label: 'restext://Common_300'
+  target: 'SmugEvent2A' # ./00095-SmugEvent2A.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:12396
+  - type: 'assign'
+    var: 'control'
+    expr: '1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:12386
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:12389
+- type: 'link'
+  # ../en-US.restext:305 | "No."
+  label: 'restext://Common_301'
+  target: 'SmugEvent2B' # ./00096-SmugEvent2B.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:12403
+  - type: 'assign'
+    var: 'control'
+    expr: '0'

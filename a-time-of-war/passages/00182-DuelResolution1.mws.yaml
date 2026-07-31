@@ -1,0 +1,92 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:19419
+---
+format: 'mws/0.4'
+passage_id: 'DuelResolution1'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:19424
+- type: 'text'
+  # ../en-US.restext:1591 | "**This and the subsequent..."
+  value: 'restext://DuelResolution1_001'
+# ../.source/ATimeofWar_Eng_v8.cs:19426
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:19430
+- type: 'text'
+  # ../en-US.restext:1592 | "**The Bloody Business**"
+  value: 'restext://DuelResolution1_002'
+# ../.source/ATimeofWar_Eng_v8.cs:19432
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:19434
+- type: 'text'
+  # ../en-US.restext:1593 | "As quick as the sun rose ..."
+  value: 'restext://DuelResolution1_003'
+# ../.source/ATimeofWar_Eng_v8.cs:19438
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:19440
+- type: 'conditional'
+  # ../en-US.restext:52 | "science"
+  if: 'dueltype == "restext://Common_048"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:19442
+  - type: 'text'
+    # ../en-US.restext:1595 | "I opened the hatch on my ..."
+    value: 'restext://DuelResolution1_005'
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:19448
+  - type: 'text'
+    # ../en-US.restext:1594 | "I once again checked the ..."
+    value: 'restext://DuelResolution1_004'
+# ../.source/ATimeofWar_Eng_v8.cs:19450
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:19452
+- type: 'link'
+  # ../en-US.restext:1596 | "Click to begin the duel..."
+  label: 'restext://DuelResolution1_006'
+  target: 'DuelResolution1a' # ./00183-DuelResolution1a.mws.yaml
+  snapshot: true
+# ../.source/ATimeofWar_Eng_v8.cs:19454
+- type: 'conditional'
+  # ../en-US.restext:52 | "science"
+  if: 'dueltype == "restext://Common_048"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:19456
+  - type: 'assign'
+    var: 'duelsci'
+    # ../en-US.restext:48 | Common_044 | "Engineering"
+    # ../en-US.restext:49 | Common_045 | "Chemistry"
+    # ../en-US.restext:50 | Common_046 | "Biology"
+    # ../en-US.restext:1597 | DuelResolution1_010 | "Occult"
+    expr: '["restext://Common_044", "restext://Common_045", "restext://Common_046", "restext://DuelResolution1_010"].shuffled("DuelResolution1_0")[0]'
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:19460
+  - type: 'assign'
+    var: 'duelshot'
+    expr: 'rand_between(1, 5, "DuelResolution1_1")'
+  # ../.source/ATimeofWar_Eng_v8.cs:19461
+  - type: 'conditional'
+    if: 'duelshot < 3'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:19463
+    - type: 'assign'
+      var: 'duelwinner'
+      expr: 'sabotagee1'
+    # ../.source/ATimeofWar_Eng_v8.cs:19464
+    - type: 'assign'
+      var: 'duelloser'
+      expr: 'playersabotage1'
+  # ../.source/ATimeofWar_Eng_v8.cs:19466
+  - type: 'conditional'
+    if: 'duelshot > 2'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:19468
+    - type: 'assign'
+      var: 'duelwinner'
+      expr: 'playersabotage1'
+    # ../.source/ATimeofWar_Eng_v8.cs:19469
+    - type: 'assign'
+      var: 'duelloser'
+      expr: 'sabotagee1'

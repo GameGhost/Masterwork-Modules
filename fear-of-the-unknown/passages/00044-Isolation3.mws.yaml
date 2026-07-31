@@ -1,0 +1,123 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:6937
+---
+format: 'mws/0.4'
+passage_id: 'Isolation3'
+# ../en-US.restext:124 | "Walled City"
+title: 'restext://Common_120'
+# ../en-US.restext:153 | "Late Years"
+subtitle: 'restext://Common_149'
+tags:
+- 'HUB'
+layout: 'hub'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:6944
+- type: 'assign'
+  var: 'round'
+  expr: '12'
+# ../.source/FearoftheUnknown_Eng_v15.cs:6946
+- type: 'conditional'
+  if: '!isooff'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6948
+  - type: 'conditional'
+    if: 'dev > 0'
+    then:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:6952
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:156 | "Accept"
+      okay: 'restext://Common_152'
+      header:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:6956
+      - type: 'image'
+        asset: 'image://setup/VillageChronicleCover'
+        style: 'setup-image'
+      content:
+      # ../.source/FearoftheUnknown_Eng_v15.cs:6958
+      - type: 'text'
+        # ../en-US.restext:724 | "Turn to page **{dev}** of..."
+        value: 'restext://Isolation3_001'
+# ../.source/FearoftheUnknown_Eng_v15.cs:6969
+- type: 'conditional'
+  if: 'dev == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6973
+  - type: 'section'
+    # ../en-US.restext:125 | "{icon:storybooktoken} **V..."
+    title: 'restext://Common_121'
+    style: 'hub-card'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:6982
+    - type: 'text'
+      # ../en-US.restext:126 | "As a registered citizen w..."
+      value: 'restext://Common_122'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:6984
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:6986
+    - type: 'text'
+      # ../en-US.restext:127 | "You MUST place your **Sel..."
+      value: 'restext://Common_123'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:6992
+    - type: 'link'
+      # ../en-US.restext:128 | "click here to complete ve..."
+      label: 'restext://Common_124'
+      target: 'IsoIdentificationSignIn' # ./00211-IsoIdentificationSignIn.mws.yaml
+      snapshot: true
+    # ../.source/FearoftheUnknown_Eng_v15.cs:6993
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:6997
+    - type: 'text'
+      # ../en-US.restext:129 | "_(If you have not verifie..."
+      value: 'restext://Common_125'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:7005
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:7010
+- type: 'section'
+  # ../en-US.restext:66 | "**The Church**"
+  title: 'restext://Common_062'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:7019
+  - type: 'link'
+    # ../en-US.restext:67 | "Click here"
+    label: 'restext://Common_063'
+    target: 'FOTU-Church' # ./00352-FOTU-Church.mws.yaml
+    snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:7020
+  - type: 'text'
+    # ../en-US.restext:68 | " for an explanation of th..."
+    value: 'restext://Common_064'
+# ../.source/FearoftheUnknown_Eng_v15.cs:7025
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:7029
+- type: 'section'
+  # ../en-US.restext:115 | "{icon:storybooktoken} **B..."
+  title: 'restext://Common_111'
+  style: 'hub-card'
+  content:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:7039
+  - type: 'text'
+    # ../en-US.restext:116 | "Once per round, each play..."
+    value: 'restext://Common_112'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:7059
+  - type: 'link'
+    # ../en-US.restext:117 | "click here for the conseq..."
+    label: 'restext://Common_113'
+    target: 'SmugConsequence' # ./00090-SmugConsequence.mws.yaml
+    snapshot: true
+  # ../.source/FearoftheUnknown_Eng_v15.cs:7060
+  - type: 'text'
+    value: '.'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:7061
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:7064
+  - type: 'link'
+    # ../en-US.restext:118 | "Click here at the End of ..."
+    label: 'restext://Common_114'
+    target: 'IsolationCaravanResolve' # ./00241-IsolationCaravanResolve.mws.yaml
+    snapshot: true

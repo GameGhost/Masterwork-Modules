@@ -1,0 +1,140 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:6621
+---
+format: 'mws/0.4'
+passage_id: 'WarningIntro'
+# ../en-US.restext:620 | "GENERATION III: Future Co..."
+title: 'restext://WarningIntro_001'
+tags:
+- 'INTRO'
+layout: 'introduction'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:6633
+- type: 'text'
+  # ../en-US.restext:621 | "**A Modern Future**"
+  value: 'restext://WarningIntro_002'
+# ../.source/ATimeofWar_Eng_v8.cs:6635
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:6636
+- type: 'text'
+  # ../en-US.restext:134 | "While the discovery of my..."
+  value: 'restext://Common_130'
+# ../.source/ATimeofWar_Eng_v8.cs:6637
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:6639
+- type: 'text'
+  # ../en-US.restext:622 | "I remember being stunned ..."
+  value: 'restext://WarningIntro_003'
+# ../.source/ATimeofWar_Eng_v8.cs:6640
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:6642
+- type: 'text'
+  # ../en-US.restext:135 | "The estate appeared untou..."
+  value: 'restext://Common_131'
+# ../.source/ATimeofWar_Eng_v8.cs:6643
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:6645
+- type: 'text'
+  # ../en-US.restext:623 | "However, when I spoke of ..."
+  value: 'restext://WarningIntro_004'
+# ../.source/ATimeofWar_Eng_v8.cs:6646
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:6648
+- type: 'text'
+  # ../en-US.restext:136 | "This caused me severe con..."
+  value: 'restext://Common_132'
+# ../.source/ATimeofWar_Eng_v8.cs:6652
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:6654
+- type: 'text'
+  # ../en-US.restext:137 | "It was this grim realizat..."
+  value: 'restext://Common_133'
+# ../.source/ATimeofWar_Eng_v8.cs:6657
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:6658
+- type: 'text'
+  value: ' '
+# ../.source/ATimeofWar_Eng_v8.cs:6660
+- type: 'assign'
+  var: 'total'
+  expr: 'rand_between(6, 10, "WarningIntro_0")'
+# ../.source/ATimeofWar_Eng_v8.cs:6661
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 4
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:6663
+    - type: 'assign'
+      var: 'total'
+      expr: 'total - 1'
+  - match: 3
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:6667
+    - type: 'assign'
+      var: 'total'
+      expr: 'total - 2'
+  - match: 2
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:6671
+    - type: 'assign'
+      var: 'total'
+      expr: 'total - 3'
+# ../.source/ATimeofWar_Eng_v8.cs:6673
+- type: 'assign'
+  var: 'search'
+  expr: '0'
+# ../.source/ATimeofWar_Eng_v8.cs:6674
+- type: 'assign'
+  var: 'stasis'
+  expr: '"no"'
+# ../.source/ATimeofWar_Eng_v8.cs:6675
+- type: 'assign'
+  var: 'ending'
+  expr: '"ATOW-End4"' # ./00254-ATOW-End4.mws.yaml
+# ../.source/ATimeofWar_Eng_v8.cs:6676
+- type: 'assign'
+  var: 'master'
+  expr: '0'
+# ../.source/ATimeofWar_Eng_v8.cs:6659
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:6677
+- type: 'conditional'
+  if: 'crazy >= 1'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:6680
+  - type: 'link'
+    # ../en-US.restext:24 | "Click to continue..."
+    label: 'restext://Common_020'
+    target: '${WarningIntronextPsg}'
+    snapshot: true
+    onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:6696
+    - type: 'conditional'
+      if: 'WarningIntronextPsg == "" || WarningIntronextPsg == 0'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:6698
+      - type: 'assign'
+        var: 'WarningIntronextPsg'
+        expr: '["CostStick", "CostStick2"].shuffled("WarningIntro_1")[0]'
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:6684
+  - type: 'link'
+    # ../en-US.restext:24 | "Click to continue..."
+    label: 'restext://Common_020'
+    target: 'Late2ResB' # ./00196-Late2ResB.mws.yaml
+    snapshot: true
+# ../.source/ATimeofWar_Eng_v8.cs:6686
+- type: 'break'
+# ../.source/ATimeofWar_Eng_v8.cs:6687
+- type: 'conditional'
+  if: 'townname == "debug"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:6689
+  - type: 'text'
+    # ../en-US.restext:139 | "v1.0"
+    value: 'restext://Common_135'

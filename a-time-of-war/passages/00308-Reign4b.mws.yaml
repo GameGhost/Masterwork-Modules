@@ -1,0 +1,76 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:28390
+---
+format: 'mws/0.4'
+passage_id: 'Reign4b'
+# ../en-US.restext:164 | "Thanks Are in Order"
+title: 'restext://Common_160'
+tags:
+- 'revised'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:28398
+- type: 'text'
+  # ../en-US.restext:2329 | "The advisor thanked me fo..."
+  value: 'restext://Reign4b_001'
+# ../.source/ATimeofWar_Eng_v8.cs:28399
+- type: 'switch'
+  on: 'rc'
+  cases:
+  - match: 1
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:28401
+    - type: 'text'
+      # ../en-US.restext:2330 | "Personal freedom, as alwa..."
+      value: 'restext://Reign4b_002'
+  - match: 2
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:28405
+    - type: 'text'
+      # ../en-US.restext:2331 | "There will be no mercy fo..."
+      value: 'restext://Reign4b_003'
+# ../.source/ATimeofWar_Eng_v8.cs:28407
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:28411
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  target: '${round == 16 ? "MonarchReign1" : round == 17 ? "MonarchReign2" : "MonarchReign3"}' # ./00043-MonarchReign1.mws.yaml, ./00068-MonarchReign2.mws.yaml, ./00069-MonarchReign3.mws.yaml
+  # ../en-US.restext:182 | "Close"
+  okay: 'restext://Common_178'
+  snapshot: true
+  header:
+  # ../.source/ATimeofWar_Eng_v8.cs:28437
+  - type: 'image'
+    asset: 'image://setup/MFWlogo'
+    style: 'setup-image'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:28441
+  - type: 'conditional'
+    if: 'rc == 1'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:28443
+    - type: 'assign'
+      var: 'reignsep'
+      expr: '"no"'
+    # ../.source/ATimeofWar_Eng_v8.cs:28444
+    - type: 'text'
+      # ../en-US.restext:2333 | "{crownL} The negative eff..."
+      value: 'restext://Reign4b_005'
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:28450
+    - type: 'assign'
+      var: 'reignsep'
+      expr: '"yes"'
+    # ../.source/ATimeofWar_Eng_v8.cs:28451
+    - type: 'text'
+      # ../en-US.restext:2332 | "{crownR} Any player with ..."
+      value: 'restext://Reign4b_004'
+  # ../.source/ATimeofWar_Eng_v8.cs:28455
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:28459
+  - type: 'text'
+    # ../en-US.restext:162 | "_Reminder: The {icon:s3_c..."
+    value: 'restext://Common_158'

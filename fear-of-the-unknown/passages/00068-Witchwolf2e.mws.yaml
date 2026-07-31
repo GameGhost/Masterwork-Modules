@@ -1,0 +1,69 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:9642
+---
+format: 'mws/0.4'
+passage_id: 'Witchwolf2e'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:9647
+- type: 'text'
+  # ../en-US.restext:337 | "**Carefully pick up this ..."
+  value: 'restext://Common_333'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9652
+- type: 'conditional'
+  if: 'players == 4'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:9654
+  - type: 'goto'
+    target: 'Witchwolf2Hex' # ./00069-Witchwolf2Hex.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:9651
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9657
+- type: 'text'
+  # ../en-US.restext:331 | "I would like to hex:"
+  value: 'restext://Common_327'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9658
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9661
+- type: 'link'
+  # ../en-US.restext:338 | "The Park"
+  label: 'restext://Common_334'
+  target: 'Witchwolf2Hex' # ./00069-Witchwolf2Hex.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:9676
+  - type: 'assign'
+    var: 'witE2'
+    # ../en-US.restext:90 | "Park"
+    expr: '"restext://Common_086"'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9662
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9665
+- type: 'link'
+  # ../en-US.restext:339 | "The Builder's Office"
+  label: 'restext://Common_335'
+  target: 'Witchwolf2Hex' # ./00069-Witchwolf2Hex.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:9683
+  - type: 'assign'
+    var: 'witE2'
+    # ../en-US.restext:91 | "Builder's Office"
+    expr: '"restext://Common_087"'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9666
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:9669
+- type: 'link'
+  # ../en-US.restext:340 | "The Cemetery"
+  label: 'restext://Common_336'
+  target: 'Witchwolf2Hex' # ./00069-Witchwolf2Hex.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:9690
+  - type: 'assign'
+    var: 'witE2'
+    # ../en-US.restext:92 | "Cemetery"
+    expr: '"restext://Common_088"'

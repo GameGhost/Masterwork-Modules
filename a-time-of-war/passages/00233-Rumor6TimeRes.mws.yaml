@@ -1,0 +1,16 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:23565
+---
+format: 'mws/0.4'
+passage_id: 'Rumor6TimeRes'
+tags:
+- 'OLD'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:23567
+- type: 'conditional'
+  if: 'rumor6 == "visited"'
+  then: []
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:23572
+  - type: 'goto'
+    target: 'XXXXXX'

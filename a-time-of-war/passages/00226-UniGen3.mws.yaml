@@ -1,0 +1,89 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:22810
+---
+format: 'mws/0.4'
+passage_id: 'UniGen3'
+# ../en-US.restext:1875 | "University"
+title: 'restext://UniGen3_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:22817
+- type: 'text'
+  # ../en-US.restext:1876 | "When you visit this location, "
+  value: 'restext://UniGen3_002'
+# ../.source/ATimeofWar_Eng_v8.cs:22818
+- type: 'switch'
+  on: 'round'
+  cases:
+  - match: 10
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:22820
+    - type: 'text'
+      # ../en-US.restext:1877 | "pay $1 to "
+      value: 'restext://UniGen3_003'
+  - match: 11
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:22824
+    - type: 'text'
+      # ../en-US.restext:1877 | "pay $1 to "
+      value: 'restext://UniGen3_003'
+  - match: 12
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:22828
+    - type: 'text'
+      # ../en-US.restext:1877 | "pay $1 to "
+      value: 'restext://UniGen3_003'
+  - match: 13
+    nodes: []
+# ../.source/ATimeofWar_Eng_v8.cs:22834
+- type: 'text'
+  # ../en-US.restext:1878 | "gain 1 Caretaker piece of..."
+  value: 'restext://UniGen3_004'
+# ../.source/ATimeofWar_Eng_v8.cs:22835
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:22839
+- type: 'text'
+  # ../en-US.restext:1879 | "_Note: The 1st Edition pr..."
+  value: 'restext://UniGen3_005'
+# ../.source/ATimeofWar_Eng_v8.cs:22854
+- type: 'assign'
+  var: 'pgGen3'
+  expr: '1'
+# ../.source/ATimeofWar_Eng_v8.cs:22853
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:22856
+- type: 'switch'
+  on: 'round'
+  cases:
+  - match: 10
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:22858
+    - type: 'link'
+      # ../en-US.restext:58 | "Click to return..."
+      label: 'restext://Common_054'
+      target: 'Paradox1' # ./00029-Paradox1.mws.yaml
+      snapshot: true
+  - match: 11
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:22862
+    - type: 'link'
+      # ../en-US.restext:58 | "Click to return..."
+      label: 'restext://Common_054'
+      target: 'Paradox2' # ./00073-Paradox2.mws.yaml
+      snapshot: true
+  - match: 12
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:22866
+    - type: 'link'
+      # ../en-US.restext:58 | "Click to return..."
+      label: 'restext://Common_054'
+      target: 'Paradox3' # ./00075-Paradox3.mws.yaml
+      snapshot: true
+  default:
+  # ../.source/ATimeofWar_Eng_v8.cs:22870
+  - type: 'link'
+    # ../en-US.restext:58 | "Click to return..."
+    label: 'restext://Common_054'
+    target: 'Warning1' # ./00052-Warning1.mws.yaml
+    snapshot: true

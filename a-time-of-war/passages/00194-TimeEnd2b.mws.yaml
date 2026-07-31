@@ -1,0 +1,52 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:20359
+---
+format: 'mws/0.4'
+passage_id: 'TimeEnd2b'
+# ../en-US.restext:1690 | "An Unsettling Time"
+title: 'restext://TimeEnd2b_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:20367
+- type: 'conditional'
+  # ../en-US.restext:219 | "zero pieces"
+  if: 'tmnumber == "restext://Common_215"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:20369
+  - type: 'text'
+    # ../en-US.restext:1694 | "Through some stroke of lu..."
+    value: 'restext://TimeEnd2b_005'
+  # ../.source/ATimeofWar_Eng_v8.cs:20372
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:20374
+  - type: 'text'
+    # ../en-US.restext:1695 | "Well, shit. I don't have ..."
+    value: 'restext://TimeEnd2b_006'
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:20379
+  - type: 'text'
+    # ../en-US.restext:1691 | "Through some stroke of lu..."
+    value: 'restext://TimeEnd2b_002'
+  # ../.source/ATimeofWar_Eng_v8.cs:20384
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:20386
+  - type: 'text'
+    # ../en-US.restext:1692 | "It took another full year..."
+    value: 'restext://TimeEnd2b_003'
+  # ../.source/ATimeofWar_Eng_v8.cs:20388
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:20390
+  - type: 'text'
+    # ../en-US.restext:1693 | "Surely, this would work."
+    value: 'restext://TimeEnd2b_004'
+# ../.source/ATimeofWar_Eng_v8.cs:20392
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:20394
+- type: 'link'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  target: 'WarningIntro' # ./00050-WarningIntro.mws.yaml
+  snapshot: true

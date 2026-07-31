@@ -1,0 +1,112 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:28775
+---
+format: 'mws/0.4'
+passage_id: 'Reign7c'
+tags:
+- 'revised'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:28778
+- type: 'conditional'
+  if: '!title_submitted'
+  then:
+  - type: 'popup'
+    layout: 'prompt'
+    content:
+    - type: 'text'
+      # ../en-US.restext:2358 | "Please enter your brand n..."
+      value: 'restext://Reign7c_001'
+    - type: 'input'
+      label: ''
+      var: 'title'
+    # ../en-US.restext:169 | "Continue"
+    okay: 'restext://Common_165'
+    onclose:
+    - type: 'assign'
+      var: 'title_submitted'
+      expr: 'true'
+    snapshot: true
+    target: 'Reign7c' # ./00312-Reign7c.mws.yaml
+# ../.source/ATimeofWar_Eng_v8.cs:28794
+- type: 'conditional'
+  if: 'reigntemp == nameA'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:28796
+  - type: 'conditional'
+    if: 'title != 0 && title != ""'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:28797
+    - type: 'assign'
+      var: 'nameA'
+      expr: '{title} {nameA}'
+  # ../.source/ATimeofWar_Eng_v8.cs:28798
+  - type: 'assign'
+    var: 'reigntemp'
+    expr: 'nameA'
+# ../.source/ATimeofWar_Eng_v8.cs:28801
+- type: 'conditional'
+  if: 'reigntemp == nameB'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:28803
+  - type: 'conditional'
+    if: 'title != 0 && title != ""'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:28804
+    - type: 'assign'
+      var: 'nameB'
+      expr: '{title} {nameB}'
+  # ../.source/ATimeofWar_Eng_v8.cs:28805
+  - type: 'assign'
+    var: 'reigntemp'
+    expr: 'nameB'
+# ../.source/ATimeofWar_Eng_v8.cs:28808
+- type: 'conditional'
+  if: 'reigntemp == nameC'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:28810
+  - type: 'conditional'
+    if: 'title != 0 && title != ""'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:28811
+    - type: 'assign'
+      var: 'nameC'
+      expr: '{title} {nameC}'
+  # ../.source/ATimeofWar_Eng_v8.cs:28812
+  - type: 'assign'
+    var: 'reigntemp'
+    expr: 'nameC'
+# ../.source/ATimeofWar_Eng_v8.cs:28815
+- type: 'conditional'
+  if: 'reigntemp == nameD'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:28817
+  - type: 'conditional'
+    if: 'title != 0 && title != ""'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:28818
+    - type: 'assign'
+      var: 'nameD'
+      expr: '{title} {nameD}'
+  # ../.source/ATimeofWar_Eng_v8.cs:28819
+  - type: 'assign'
+    var: 'reigntemp'
+    expr: 'nameD'
+# ../.source/ATimeofWar_Eng_v8.cs:28822
+- type: 'conditional'
+  if: 'reigntemp == nameE'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:28824
+  - type: 'conditional'
+    if: 'title != 0 && title != ""'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:28825
+    - type: 'assign'
+      var: 'nameE'
+      expr: '{title} {nameE}'
+  # ../.source/ATimeofWar_Eng_v8.cs:28826
+  - type: 'assign'
+    var: 'reigntemp'
+    expr: 'nameE'
+# ../.source/ATimeofWar_Eng_v8.cs:28830
+- type: 'goto'
+  target: 'Reign7c2' # ./00313-Reign7c2.mws.yaml

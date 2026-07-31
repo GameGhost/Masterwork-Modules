@@ -1,0 +1,56 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:14361
+---
+format: 'mws/0.4'
+passage_id: 'TenseEventBad2'
+# ../en-US.restext:1179 | "Ways to Ease the Tension"
+title: 'restext://TenseEventBad2_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:14369
+- type: 'include_passage'
+  target: 'letter1a' # ./00205-letter1a.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:14371
+- type: 'assign'
+  var: 'obsvp'
+  expr: 'rand_between(4, 6, "TenseEventBad2_0")'
+# ../.source/FearoftheUnknown_Eng_v15.cs:14370
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:14373
+- type: 'text'
+  # ../en-US.restext:1180 | "I have peered into the da..."
+  value: 'restext://TenseEventBad2_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:14374
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:14376
+- type: 'text'
+  # ../en-US.restext:1181 | "These recurring dreams on..."
+  value: 'restext://TenseEventBad2_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:14377
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:14379
+- type: 'text'
+  # ../en-US.restext:1182 | "They have already pushed ..."
+  value: 'restext://TenseEventBad2_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:14380
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:14382
+- type: 'conditional'
+  if: 'players == 2'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:14384
+  - type: 'link'
+    # ../en-US.restext:286 | "Click to continue..."
+    label: 'restext://Common_282'
+    target: '2PTenseEvent1' # ./00345-2PTenseEvent1.mws.yaml
+    snapshot: true
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:14388
+  - type: 'link'
+    # ../en-US.restext:286 | "Click to continue..."
+    label: 'restext://Common_282'
+    target: 'TenseEventBad2b' # ./00314-TenseEventBad2b.mws.yaml
+    snapshot: true

@@ -1,0 +1,81 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:15367
+---
+format: 'mws/0.4'
+passage_id: 'TenseConfirm'
+# ../en-US.restext:1277 | "Calm Before the Tempest"
+title: 'restext://TenseConfirm_001'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:15374
+- type: 'assign'
+  var: 'ten'
+  expr: '1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15377
+- type: 'include_passage'
+  target: 'letter1a' # ./00205-letter1a.mws.yaml
+# ../.source/FearoftheUnknown_Eng_v15.cs:15378
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15380
+- type: 'text'
+  # ../en-US.restext:1278 | "There is something strang..."
+  value: 'restext://TenseConfirm_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15383
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:15385
+- type: 'conditional'
+  if: 'eor == 0'
+  then:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15389
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:309 | "Click to return..."
+    label: 'restext://Common_305'
+    target: 'Tension' # ./00020-Tension.mws.yaml
+    # ../en-US.restext:275 | "Close"
+    okay: 'restext://Common_271'
+    snapshot: true
+    header:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15412
+    - type: 'image'
+      asset: 'image://setup/S2_RomaniToken'
+      style: 'setup-image'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15414
+    - type: 'text'
+      # ../en-US.restext:1280 | "Remove the Romani token {..."
+      value: 'restext://TenseConfirm_004'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15419
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15423
+    - type: 'text'
+      # ../en-US.restext:311 | "**SPECIAL RULE**"
+      value: 'restext://Common_307'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15425
+    - type: 'break'
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15426
+    - type: 'text'
+      # ../en-US.restext:1281 | "The {icon:angrymob_icon} ..."
+      value: 'restext://TenseConfirm_006'
+  else:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:15396
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:286 | "Click to continue..."
+    label: 'restext://Common_282'
+    target: 'ConsequencesTense' # ./00084-ConsequencesTense.mws.yaml
+    # ../en-US.restext:275 | "Close"
+    okay: 'restext://Common_271'
+    snapshot: true
+    header:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15460
+    - type: 'image'
+      asset: 'image://setup/AngryMob_Icon'
+      style: 'setup-image'
+    content:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:15462
+    - type: 'text'
+      # ../en-US.restext:1279 | "Move the {icon:angrymob_i..."
+      value: 'restext://TenseConfirm_003'

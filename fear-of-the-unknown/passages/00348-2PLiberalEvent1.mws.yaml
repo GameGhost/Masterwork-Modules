@@ -1,0 +1,51 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:36406
+---
+format: 'mws/0.4'
+passage_id: '2PLiberalEvent1'
+# ../en-US.restext:350 | "Bid Complete"
+title: 'restext://Common_346'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:36413
+- type: 'assign'
+  var: 'bribed'
+  expr: '1'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36415
+- type: 'text'
+  # ../en-US.restext:355 | "The player who won the bi..."
+  value: 'restext://Common_351'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36422
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36427
+- type: 'text'
+  # ../en-US.restext:351 | "**The player who won the ..."
+  value: 'restext://Common_347'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36429
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36432
+- type: 'link'
+  # ../en-US.restext:2636 | "I choose to raise taxes."
+  label: 'restext://_2PLiberalEvent1_001'
+  target: 'LiberalEvent2' # ./00085-LiberalEvent2.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:36443
+  - type: 'assign'
+    var: 'lib'
+    expr: '"taxes"'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36433
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36436
+- type: 'link'
+  # ../en-US.restext:2637 | "I choose to cut funding a..."
+  label: 'restext://_2PLiberalEvent1_002'
+  target: 'LiberalEvent2' # ./00085-LiberalEvent2.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:36450
+  - type: 'assign'
+    var: 'lib'
+    expr: '"nationalist"'

@@ -1,0 +1,48 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:24877
+---
+format: 'mws/0.4'
+passage_id: 'ATOW-FamineEventRes'
+# ../en-US.restext:46 | "Vote Result"
+title: 'restext://Common_042'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:24887
+- type: 'text'
+  # ../en-US.restext:1997 | "**Tally the vote count.**..."
+  value: 'restext://ATOW_FamineEventRes_001'
+# ../.source/ATimeofWar_Eng_v8.cs:24894
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:24898
+- type: 'text'
+  # ../en-US.restext:202 | "**Please choose the outco..."
+  value: 'restext://Common_198'
+# ../.source/ATimeofWar_Eng_v8.cs:24900
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:24903
+- type: 'link'
+  # ../en-US.restext:20 | "We chose the meat. (Yay!)"
+  label: 'restext://Common_016'
+  target: 'ATOW-FamineEventYes' # ./00237-ATOW-FamineEventYes.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/ATimeofWar_Eng_v8.cs:24913
+  - type: 'assign'
+    var: 'famine'
+    expr: '"meat"'
+# ../.source/ATimeofWar_Eng_v8.cs:24904
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:24907
+- type: 'link'
+  # ../en-US.restext:21 | "We chose empty promises. ..."
+  label: 'restext://Common_017'
+  target: 'ATOW-FamineEventNo' # ./00238-ATOW-FamineEventNo.mws.yaml
+  snapshot: true
+  onclick:
+  # ../.source/ATimeofWar_Eng_v8.cs:24920
+  - type: 'assign'
+    var: 'famine'
+    # ../en-US.restext:78 | "none"
+    expr: '"restext://Common_074"'

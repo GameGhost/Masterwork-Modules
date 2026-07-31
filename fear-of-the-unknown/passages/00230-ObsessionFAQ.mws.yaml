@@ -1,0 +1,216 @@
+﻿# ../.source/FearoftheUnknown_Eng_v15.cs:26446
+---
+format: 'mws/0.4'
+passage_id: 'ObsessionFAQ'
+# ../en-US.restext:1946 | "Common Obsession Clarific..."
+title: 'restext://ObsessionFAQ_001'
+tags:
+- 'hookup'
+layout: 'narration'
+nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:26456
+- type: 'text'
+  # ../en-US.restext:1947 | "**White Diamond Abilities**"
+  value: 'restext://ObsessionFAQ_002'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26458
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26459
+- type: 'text'
+  # ../en-US.restext:1948 | "These are always optional..."
+  value: 'restext://ObsessionFAQ_003'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26461
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26465
+- type: 'text'
+  # ../en-US.restext:1949 | "**Obsession Deepens TIED/..."
+  value: 'restext://ObsessionFAQ_004'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26467
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26468
+- type: 'text'
+  # ../en-US.restext:1950 | "If the ability lists NO T..."
+  value: 'restext://ObsessionFAQ_005'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26471
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26476
+- type: 'text'
+  # ../en-US.restext:1951 | "**SPECIFIC CARDS**"
+  value: 'restext://ObsessionFAQ_006'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26478
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26482
+- type: 'text'
+  # ../en-US.restext:1952 | "**INFAMY**"
+  value: 'restext://ObsessionFAQ_007'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26484
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26485
+- type: 'text'
+  # ../en-US.restext:1953 | "\"You cannot visit Town H..."
+  value: 'restext://ObsessionFAQ_008'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26486
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26490
+- type: 'text'
+  # ../en-US.restext:1954 | "**RISING STAR**"
+  value: 'restext://ObsessionFAQ_009'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26492
+- type: 'break'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26493
+- type: 'text'
+  # ../en-US.restext:1955 | "The estate upgrade discou..."
+  value: 'restext://ObsessionFAQ_010'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26496
+- type: 'break'
+  style: 'paragraph'
+# ../.source/FearoftheUnknown_Eng_v15.cs:26498
+- type: 'switch'
+  on: 'round'
+  cases:
+  - match: 4
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26500
+    - type: 'link'
+      # ../en-US.restext:309 | "Click to return..."
+      label: 'restext://Common_305'
+      target: 'Foreign' # ./00011-Foreign.mws.yaml
+      snapshot: true
+  - match: 5
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26504
+    - type: 'link'
+      # ../en-US.restext:309 | "Click to return..."
+      label: 'restext://Common_305'
+      target: 'Foreign2' # ./00039-Foreign2.mws.yaml
+      snapshot: true
+  - match: 6
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26508
+    - type: 'link'
+      # ../en-US.restext:309 | "Click to return..."
+      label: 'restext://Common_305'
+      target: 'Foreign3' # ./00040-Foreign3.mws.yaml
+      snapshot: true
+  - match: 7
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26512
+    - type: 'link'
+      # ../en-US.restext:309 | "Click to return..."
+      label: 'restext://Common_305'
+      target: 'Creature' # ./00012-Creature.mws.yaml
+      snapshot: true
+  - match: 8
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26516
+    - type: 'link'
+      # ../en-US.restext:309 | "Click to return..."
+      label: 'restext://Common_305'
+      target: 'Creature2' # ./00158-Creature2.mws.yaml
+      snapshot: true
+  - match: 9
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26520
+    - type: 'link'
+      # ../en-US.restext:309 | "Click to return..."
+      label: 'restext://Common_305'
+      target: 'Creature3' # ./00045-Creature3.mws.yaml
+      snapshot: true
+  - match: 10
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26524
+    - type: 'link'
+      # ../en-US.restext:309 | "Click to return..."
+      label: 'restext://Common_305'
+      target: 'Isolation' # ./00019-Isolation.mws.yaml
+      snapshot: true
+  - match: 11
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26528
+    - type: 'link'
+      # ../en-US.restext:309 | "Click to return..."
+      label: 'restext://Common_305'
+      target: 'Isolation2' # ./00043-Isolation2.mws.yaml
+      snapshot: true
+  - match: 12
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26532
+    - type: 'link'
+      # ../en-US.restext:309 | "Click to return..."
+      label: 'restext://Common_305'
+      target: 'Isolation3' # ./00044-Isolation3.mws.yaml
+      snapshot: true
+  - match: 13
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26536
+    - type: 'link'
+      # ../en-US.restext:309 | "Click to return..."
+      label: 'restext://Common_305'
+      target: 'Tension' # ./00020-Tension.mws.yaml
+      snapshot: true
+  - match: 14
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26540
+    - type: 'link'
+      # ../en-US.restext:309 | "Click to return..."
+      label: 'restext://Common_305'
+      target: 'Tension2' # ./00041-Tension2.mws.yaml
+      snapshot: true
+  - match: 15
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26544
+    - type: 'link'
+      # ../en-US.restext:309 | "Click to return..."
+      label: 'restext://Common_305'
+      target: 'Tension3' # ./00127-Tension3.mws.yaml
+      snapshot: true
+  - match: 16
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26548
+    - type: 'link'
+      # ../en-US.restext:309 | "Click to return..."
+      label: 'restext://Common_305'
+      target: 'Privatized' # ./00025-Privatized.mws.yaml
+      snapshot: true
+  - match: 17
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26552
+    - type: 'link'
+      # ../en-US.restext:309 | "Click to return..."
+      label: 'restext://Common_305'
+      target: 'Privatized2' # ./00047-Privatized2.mws.yaml
+      snapshot: true
+  - match: 18
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26556
+    - type: 'link'
+      # ../en-US.restext:309 | "Click to return..."
+      label: 'restext://Common_305'
+      target: 'Privatized3' # ./00048-Privatized3.mws.yaml
+      snapshot: true
+  - match: 19
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26560
+    - type: 'link'
+      # ../en-US.restext:309 | "Click to return..."
+      label: 'restext://Common_305'
+      target: 'Liberal' # ./00026-Liberal.mws.yaml
+      snapshot: true
+  - match: 20
+    nodes:
+    # ../.source/FearoftheUnknown_Eng_v15.cs:26564
+    - type: 'link'
+      # ../en-US.restext:309 | "Click to return..."
+      label: 'restext://Common_305'
+      target: 'Liberal2' # ./00050-Liberal2.mws.yaml
+      snapshot: true
+  default:
+  # ../.source/FearoftheUnknown_Eng_v15.cs:26568
+  - type: 'link'
+    # ../en-US.restext:309 | "Click to return..."
+    label: 'restext://Common_305'
+    target: 'Liberal3' # ./00051-Liberal3.mws.yaml
+    snapshot: true

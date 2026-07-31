@@ -1,0 +1,41 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:4110
+---
+format: 'mws/0.4'
+passage_id: 'Amessno'
+# ../en-US.restext:481 | "No Importance"
+title: 'restext://Amessno_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:4118
+- type: 'text'
+  # ../en-US.restext:482 | "What a rude and frankly, ..."
+  value: 'restext://Amessno_002'
+# ../.source/ATimeofWar_Eng_v8.cs:4120
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:4122
+- type: 'text'
+  # ../en-US.restext:483 | "I only note this situatio..."
+  value: 'restext://Amessno_003'
+# ../.source/ATimeofWar_Eng_v8.cs:4123
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:4127
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:183 | "Click here to continue..."
+  label: 'restext://Common_179'
+  target: '${warwinner == "Unified Monarchists" ? "BarracksSimple1" : "Sabotage1Now"}' # ./00157-BarracksSimple1.mws.yaml, ./00213-Sabotage1Now.mws.yaml
+  # ../en-US.restext:182 | "Close"
+  okay: 'restext://Common_178'
+  snapshot: true
+  header:
+  # ../.source/ATimeofWar_Eng_v8.cs:4144
+  - type: 'image'
+    asset: 'image://setup/MFWlogo'
+    style: 'setup-image'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:4147
+  - type: 'text'
+    # ../en-US.restext:484 | "Nothing happens. Discard ..."
+    value: 'restext://Amessno_004'

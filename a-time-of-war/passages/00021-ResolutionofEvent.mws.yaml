@@ -1,0 +1,95 @@
+﻿# ../.source/ATimeofWar_Eng_v8.cs:3381
+---
+format: 'mws/0.4'
+passage_id: 'ResolutionofEvent'
+# ../en-US.restext:448 | "The Town's Reaction"
+title: 'restext://ResolutionofEvent_001'
+layout: 'narration'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:3388
+- type: 'conditional'
+  if: 'barracks == "yes"'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:3390
+  - type: 'text'
+    # ../en-US.restext:451 | "I was quite convinced tha..."
+    value: 'restext://ResolutionofEvent_004'
+  else:
+  # ../.source/ATimeofWar_Eng_v8.cs:3429
+  - type: 'text'
+    # ../en-US.restext:449 | "For reasons which I canno..."
+    value: 'restext://ResolutionofEvent_002'
+  # ../.source/ATimeofWar_Eng_v8.cs:3432
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:3434
+  - type: 'text'
+    # ../en-US.restext:450 | "Could it be that I had un..."
+    value: 'restext://ResolutionofEvent_003'
+# ../.source/ATimeofWar_Eng_v8.cs:3440
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:3443
+- type: 'popup'
+  layout: 'setup'
+  # ../en-US.restext:24 | "Click to continue..."
+  label: 'restext://Common_020'
+  target: 'TakeEventFlag' # ./00187-TakeEventFlag.mws.yaml
+  # ../en-US.restext:182 | "Close"
+  okay: 'restext://Common_178'
+  snapshot: true
+  header:
+  # ../.source/ATimeofWar_Eng_v8.cs:3458
+  - type: 'image'
+    asset: 'image://setup/S3_SeparatistToken'
+    style: 'setup-image'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:3460
+  - type: 'text'
+    # ../en-US.restext:452 | "All players who voted to ..."
+    value: 'restext://ResolutionofEvent_005'
+  # ../.source/ATimeofWar_Eng_v8.cs:3464
+  - type: 'conditional'
+    if: 'sep == "win"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:3466
+    - type: 'text'
+      # ../en-US.restext:453 | " and **gain 2VP**"
+      value: 'restext://ResolutionofEvent_006'
+  # ../.source/ATimeofWar_Eng_v8.cs:3472
+  - type: 'conditional'
+    if: 'mon == "win"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:3474
+    - type: 'text'
+      # ../en-US.restext:454 | " and **gain 2 Resources o..."
+      value: 'restext://ResolutionofEvent_007'
+  # ../.source/ATimeofWar_Eng_v8.cs:3480
+  - type: 'text'
+    value: '.'
+  # ../.source/ATimeofWar_Eng_v8.cs:3481
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:3489
+  - type: 'text'
+    # ../en-US.restext:455 | "All players who voted aga..."
+    value: 'restext://ResolutionofEvent_008'
+  # ../.source/ATimeofWar_Eng_v8.cs:3494
+  - type: 'conditional'
+    if: 'mon == "lose"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:3496
+    - type: 'text'
+      # ../en-US.restext:454 | " and **gain 2 Resources o..."
+      value: 'restext://ResolutionofEvent_007'
+  # ../.source/ATimeofWar_Eng_v8.cs:3502
+  - type: 'conditional'
+    if: 'sep == "lose"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:3504
+    - type: 'text'
+      # ../en-US.restext:453 | " and **gain 2VP**"
+      value: 'restext://ResolutionofEvent_006'
+  # ../.source/ATimeofWar_Eng_v8.cs:3510
+  - type: 'text'
+    value: '.'
