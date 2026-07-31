@@ -34,12 +34,15 @@ Masterwork-Modules/
 ## Licensing
 
 Module content in this repo (passages, overrides, layout chrome, per-module assets, manifests) is
-project-internal, **not** CC BY-NC-SA — it's original MWS content, even though it was derived by
-running the extractor against CC-licensed Cradle source. The one exception is each module's own
-`.source/*.cs` file — the canonical Cradle source extraction reads from, itself CC BY-NC-SA content
-(originally sourced from `Masterwork-Design/Reference/`, now historical there — see Extraction
-below) and should be treated the same way: fine to keep here, **never commit any of it (or anything
-else CC BY-NC-SA-derived) to the `Masterwork` code repo.**
+project-internal — original MWS content, even though it was derived by running the extractor
+against Renegade Game Studios' own Cradle source. The one exception is each module's own
+`.source/*.cs` file — the canonical Cradle source extraction reads from. That file comes from RGS's
+own community-resources release for *My Father's Work* (the same release, same archive/link, that
+`Masterwork/src/Masterwork.App.Theme.MyFathersWork/NOTICE.md` documents for the app's theme
+assets) — see this repo's own `NOTICE.md` for the full citation. Per that release, individual files
+may be copied and modified as needed. Still: **never commit `.source/*.cs` (or anything else drawn
+from `Masterwork-Design/Reference/` beyond that specific release) to the `Masterwork` code repo** —
+that repo's own licensing rule is narrower and doesn't carry this exception.
 
 ---
 
@@ -57,8 +60,8 @@ Each module directory (e.g. `cost-of-disease/`) follows the same shape:
 | `assets/` | hand-authored | `style.css` plus `audio/`, `fonts/`, `icons/`, `images/` — the app only emits structural `layout-{value}`/`style-{value}` CSS class hooks, everything they actually look like lives here |
 | `_variables.yaml` | extractor-owned | All session variables discovered during extraction, with inferred types/defaults |
 | `en-US.restext` | extractor-owned | Extracted locale strings (`Key=Value`). `Common_NNN` keys can renumber between runs — see `.source/en-US.common.restext` |
-| `.source/*.cs` | extraction input | The canonical Cradle complete-class C# source this module is extracted from — CC BY-NC-SA, see Licensing above |
-| `.source/en-US.common.restext` | hand-maintained | Curated `Key=Value` file giving *stable* names to strings that would otherwise get an auto-renumbered `Common_NNN` id (fed to `--common-restext`). Any override passage referencing a Common string should use one of these curated names. Lives in `.source/` because, like the Cradle source itself, it's an extraction *input*, not output — but unlike the `.cs` file it's hand-maintained, not CC BY-NC-SA |
+| `.source/*.cs` | extraction input | The canonical Cradle complete-class C# source this module is extracted from — from RGS's community-resources release, see Licensing above and `NOTICE.md` |
+| `.source/en-US.common.restext` | hand-maintained | Curated `Key=Value` file giving *stable* names to strings that would otherwise get an auto-renumbered `Common_NNN` id (fed to `--common-restext`). Any override passage referencing a Common string should use one of these curated names. Lives in `.source/` because, like the Cradle source itself, it's an extraction *input*, not output — but unlike the `.cs` file it's hand-maintained, original content |
 
 Extraction only ever writes `passages/`, `_variables.yaml`, and `en-US.restext` — everything else in
 a module directory is hand-maintained and safe from being overwritten by a re-run.
