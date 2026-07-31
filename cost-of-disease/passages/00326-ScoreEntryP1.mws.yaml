@@ -9,7 +9,7 @@ nodes:
   if: '!scoreA_submitted'
   then:
   - type: 'popup'
-    layout: 'input-popup'
+    layout: 'prompt'
     content:
     - type: 'text'
       # ../en-US.restext:2658 | "Please enter the final sc..."

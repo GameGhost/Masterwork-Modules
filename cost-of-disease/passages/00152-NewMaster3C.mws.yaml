@@ -37,7 +37,7 @@ nodes:
   if: '!creationC_submitted'
   then:
   - type: 'popup'
-    layout: 'input-popup'
+    layout: 'prompt'
     content:
     - type: 'text'
       # ../en-US.restext:221 | "Give your creation a new,..."

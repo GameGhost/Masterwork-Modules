@@ -15,6 +15,9 @@ nodes:
 - type: 'popup'
   # ../en-US.restext:56 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
+  layout: 'reveal'
+  # ../en-US.restext:352 | "Close"
+  cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:30378

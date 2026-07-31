@@ -1280,6 +1280,171 @@ body {
     background: transparent;
 }
 
+/* reveal: extractor-emitted (V2Serializer.TransformPopup's fallback for a click-triggered popup
+   with no other special-purpose marker — docs/mws-format-latest.md §8) for "hand the device to one
+   player, reveal a private passage of text" content (Cost of Disease's Gen1-CreepyTrackRes is a
+   worked example). Deliberately NOT `note`/`note_clear` despite sharing the same popup_paper_torn.png
+   background: this content is often real narration-length prose ending in one or more real choice
+   links, not a short single-message notice — the reference app puts equivalent content directly
+   into its narration views, which is why this reads far closer to narration (same #1F1F1E body
+   text, same bracket-linked .mws-link treatment) than to `note`'s compact dark-red single-button
+   box. Sized much larger even on a full desktop viewport for the same reason — `note`'s ~550px cap
+   would clip real prose. There is no `okay` (nothing to accept — the player's actual choice is one
+   of the links inside .mws-popup-content, which navigate for real via the ordinary link/
+   FollowLinkAsync path); `cancel` is the only footer action, styled below as a corner (x) close
+   button (matching `game_complete`'s identical .mws-popup-okay-as-close-button treatment, just on
+   .mws-popup-cancel since backing out here discards the sandboxed popup content with no commit,
+   which is Cancel's semantics, not Okay's — see RenderedPopupView.razor's own Cancel). */
+.mws-popup-overlay.layout-reveal .mws-popup-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 56rem;
+    max-height: 92vh;
+    padding: 5px 25px 0;
+    height: auto;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0;
+    border-image-source: url(image://backgrounds/popup_paper_torn);
+    border-image-slice: 15.6% 7% 22.5% 7% fill;
+    border-image-width: 80px 68px 75px 68px;
+    border-image-repeat: stretch;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    color: #1F1F1E;
+    font-size: 1.0em;
+    text-align: left;
+}
+
+/* Short/landscape-phone variant — same reasoning as `note`'s identical breakpoint above (clear the
+   hosting passage's own border with a fixed px offset instead of a vh one on a short viewport). */
+@media (max-height: 30rem) {
+    .mws-popup-overlay.layout-reveal .mws-popup-container {
+        max-height: calc(100vh - 40px);
+    }
+}
+
+/* Narrow: same "pinned near the top, 94vw-wide" treatment as `note`'s identical breakpoint above —
+   see that rule's own comment for why (position doesn't jump around as content length changes). */
+@media (max-width: 45.99rem) {
+    .mws-popup-overlay.layout-reveal .mws-popup-container {
+        min-width: 110vw;
+        max-width: 110vw;
+    }
+}
+
+/* flex: 1 + min-height: 0 (not `note`'s fixed min/max-height pair) — this content is expected to
+   fill whatever room the container's own max-height cap leaves, not size itself independently of
+   it, since real occurrences run long enough to need every bit of the enlarged box above. Margins
+   track the enlarged border-image-width above (same "keep text off the torn/ragged paper edges"
+   reasoning as `note`'s own margin) — tune alongside it if the border art or box size change. */
+.mws-popup-overlay.layout-reveal .mws-popup-content {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 95px 60px 90px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(208, 192, 166, 1.00) rgba(63, 31, 21, 1.00);
+}
+
+.mws-popup-overlay.layout-reveal .mws-popup-content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.mws-popup-overlay.layout-reveal .mws-popup-content::-webkit-scrollbar-track {
+    background: rgba(63, 31, 21, 1.00);
+}
+
+.mws-popup-overlay.layout-reveal .mws-popup-content::-webkit-scrollbar-thumb {
+    background: rgba(208, 192, 166, 1.00);
+    border-radius: 4px;
+}
+
+/* Body text + links match narration's own palette exactly (color: #1F1F1E, same bracket-link
+   treatment) — see `.mws-passage.layout-narration`'s identical rules further up this file, the
+   source of truth these mirror. Deliberately duplicated rather than broadening that rule's own
+   selector to also match here: the narration rule is scoped to `.mws-passage`, this one to
+   `.mws-popup-overlay .mws-popup-content`, different enough ancestors that sharing one selector
+   would need an awkward :where() with little benefit over just repeating four small rules. */
+.mws-popup-overlay.layout-reveal .mws-popup-content .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red) {
+    display: inline;
+    position: relative;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0 0.75em;
+    font: inherit;
+    color: #8b4a1f;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mws-popup-overlay.layout-reveal .mws-popup-content .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red)::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.8em;
+    height: 1.5em;
+    background-image: url(image://inputs/bracket-brown-left);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.mws-popup-overlay.layout-reveal .mws-popup-content .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.8em;
+    height: 1.5em;
+    background-image: url(image://inputs/bracket-brown-right);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.mws-popup-overlay.layout-reveal .mws-popup-content .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red):hover:not(:disabled) {
+    color: #b06a35;
+}
+
+.mws-popup-overlay.layout-reveal .mws-popup-content .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red):active:not(:disabled) {
+    color: #5c3216;
+}
+
+/* Cancel overlaps the card's own top-right corner (negative offset, not inset in the padding) —
+   same positioning technique as `game_complete`'s identical .mws-popup-footer override above. */
+.mws-popup-overlay.layout-reveal .mws-popup-footer {
+    position: absolute;
+    top: 56px;
+    left: 45px;
+    margin: 0;
+    z-index: 1;
+}
+
+/* button_close.png with the label hidden (color: transparent; font-size: 0) rather than removed —
+   the extractor always sets a real (restext-backed, localizable) `cancel` string, this just never
+   shows it — same technique as `game_complete`'s identical .mws-popup-okay-as-close-button. */
+.mws-popup-overlay.layout-reveal .mws-popup-cancel {
+    width: 2.5rem;
+    aspect-ratio: 1;
+    background-image: url(image://inputs/button_close);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: transparent;
+    font-size: 0;
+    line-height: 0;
+    padding: 0;
+}
+
 /* setup: the real, widely-used-across-modules instructional popup (icon + "SETUP" title +
    scrollable body + two buttons) — copied from cost-of-disease, not template-specific; this
    layout_id must stay exactly `setup` (see layouts/setup.mws.yaml's own comment). Modernized this
@@ -2750,7 +2915,6 @@ body {
    inside of anymore. */
 @media (max-width: 45.99rem) {
     .mws-play-chrome {
-        justify-content: space-between;
         padding: 44px 10px 0 10px;
     }
 }
@@ -2791,7 +2955,7 @@ body {
     padding: 0 145px;
 }
 
-@media (max-width: 35rem) {
+@media (max-width: 45.99rem) {
     .mws-passage.layout-narration .mws-passage-header,
     .mws-passage.layout-introduction .mws-passage-header,
     .mws-passage.layout-hub_early .mws-passage-header,
@@ -2799,7 +2963,7 @@ body {
     .mws-passage.layout-hub_late .mws-passage-header,
     .mws-passage.layout-score_panel .mws-passage-header,
     .mws-passage.layout-ranking .mws-passage-header {
-        padding: 0 60px;
+        padding: 0 105px;
     }
 }
 
