@@ -1295,7 +1295,14 @@ body {
    button (matching `game_complete`'s identical .mws-popup-okay-as-close-button treatment, just on
    .mws-popup-cancel since backing out here discards the sandboxed popup content with no commit,
    which is Cancel's semantics, not Okay's — see RenderedPopupView.razor's own Cancel). */
-.mws-popup-overlay.layout-reveal .mws-popup-container {
+/* Direct-child combinators throughout this block (not plain descendant selectors) — A Time of War
+   nests a `setup` popup inside a `reveal` popup's own content (see 00008-RumorD1.mws.yaml), and a
+   descendant selector would match the nested popup's own .mws-popup-container/.mws-popup-content
+   too (nothing about DOM nesting stops a CSS descendant combinator at a .mws-popup-overlay
+   boundary), leaking this box's sizing/border/margin onto the inner popup. Same fix, same
+   reasoning, as the countdown_instructions/countdown_action block further down this file — see
+   that block's own comment for the fuller explanation. */
+.mws-popup-overlay.layout-reveal > .mws-popup-container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -1322,7 +1329,7 @@ body {
 /* Short/landscape-phone variant — same reasoning as `note`'s identical breakpoint above (clear the
    hosting passage's own border with a fixed px offset instead of a vh one on a short viewport). */
 @media (max-height: 30rem) {
-    .mws-popup-overlay.layout-reveal .mws-popup-container {
+    .mws-popup-overlay.layout-reveal > .mws-popup-container {
         max-height: calc(100vh - 40px);
     }
 }
@@ -1330,7 +1337,7 @@ body {
 /* Narrow: same "pinned near the top, 94vw-wide" treatment as `note`'s identical breakpoint above —
    see that rule's own comment for why (position doesn't jump around as content length changes). */
 @media (max-width: 45.99rem) {
-    .mws-popup-overlay.layout-reveal .mws-popup-container {
+    .mws-popup-overlay.layout-reveal > .mws-popup-container {
         min-width: 110vw;
         max-width: 110vw;
     }
@@ -1341,7 +1348,7 @@ body {
    it, since real occurrences run long enough to need every bit of the enlarged box above. Margins
    track the enlarged border-image-width above (same "keep text off the torn/ragged paper edges"
    reasoning as `note`'s own margin) — tune alongside it if the border art or box size change. */
-.mws-popup-overlay.layout-reveal .mws-popup-content {
+.mws-popup-overlay.layout-reveal > .mws-popup-container > .mws-popup-content {
     flex: 1;
     min-height: 0;
     overflow-y: auto;
@@ -1351,15 +1358,15 @@ body {
     scrollbar-color: rgba(208, 192, 166, 1.00) rgba(63, 31, 21, 1.00);
 }
 
-.mws-popup-overlay.layout-reveal .mws-popup-content::-webkit-scrollbar {
+.mws-popup-overlay.layout-reveal > .mws-popup-container > .mws-popup-content::-webkit-scrollbar {
     width: 10px;
 }
 
-.mws-popup-overlay.layout-reveal .mws-popup-content::-webkit-scrollbar-track {
+.mws-popup-overlay.layout-reveal > .mws-popup-container > .mws-popup-content::-webkit-scrollbar-track {
     background: rgba(63, 31, 21, 1.00);
 }
 
-.mws-popup-overlay.layout-reveal .mws-popup-content::-webkit-scrollbar-thumb {
+.mws-popup-overlay.layout-reveal > .mws-popup-container > .mws-popup-content::-webkit-scrollbar-thumb {
     background: rgba(208, 192, 166, 1.00);
     border-radius: 4px;
 }
@@ -1370,7 +1377,7 @@ body {
    selector to also match here: the narration rule is scoped to `.mws-passage`, this one to
    `.mws-popup-overlay .mws-popup-content`, different enough ancestors that sharing one selector
    would need an awkward :where() with little benefit over just repeating four small rules. */
-.mws-popup-overlay.layout-reveal .mws-popup-content .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red) {
+.mws-popup-overlay.layout-reveal > .mws-popup-container > .mws-popup-content .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red) {
     display: inline;
     position: relative;
     background: none;
@@ -1383,7 +1390,7 @@ body {
     cursor: pointer;
 }
 
-.mws-popup-overlay.layout-reveal .mws-popup-content .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red)::before {
+.mws-popup-overlay.layout-reveal > .mws-popup-container > .mws-popup-content .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red)::before {
     content: '';
     position: absolute;
     left: 0;
@@ -1396,7 +1403,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.mws-popup-overlay.layout-reveal .mws-popup-content .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red)::after {
+.mws-popup-overlay.layout-reveal > .mws-popup-container > .mws-popup-content .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red)::after {
     content: '';
     position: absolute;
     right: 0;
@@ -1409,17 +1416,19 @@ body {
     background-repeat: no-repeat;
 }
 
-.mws-popup-overlay.layout-reveal .mws-popup-content .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red):hover:not(:disabled) {
+.mws-popup-overlay.layout-reveal > .mws-popup-container > .mws-popup-content .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red):hover:not(:disabled) {
     color: #b06a35;
 }
 
-.mws-popup-overlay.layout-reveal .mws-popup-content .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red):active:not(:disabled) {
+.mws-popup-overlay.layout-reveal > .mws-popup-container > .mws-popup-content .mws-link:not(.style-button):not(.style-btn-brown):not(.style-btn-green):not(.style-btn-red):active:not(:disabled) {
     color: #5c3216;
 }
 
 /* Cancel overlaps the card's own top-right corner (negative offset, not inset in the padding) —
-   same positioning technique as `game_complete`'s identical .mws-popup-footer override above. */
-.mws-popup-overlay.layout-reveal .mws-popup-footer {
+   same positioning technique as `game_complete`'s identical .mws-popup-footer override above.
+   Direct-child combinator (see the .mws-popup-container rule above's own comment) — a nested
+   `setup` popup has its own .mws-popup-footer too. */
+.mws-popup-overlay.layout-reveal > .mws-popup-container > .mws-popup-footer {
     position: absolute;
     top: 56px;
     left: 45px;
@@ -1455,9 +1464,14 @@ body {
    rule that every popup layout needs one, silently skipped here until now), and a fixed-viewport
    footer (position: fixed + transform: translateX(-50%), matching `note`) instead of position:
    absolute relative to the container, so the buttons stay reachable regardless of how tall the
-   scrollable content area gets instead of drifting with the container's own bottom edge. */
+   scrollable content area gets instead of drifting with the container's own bottom edge.
 
-.mws-popup-overlay.layout-setup .mws-popup-container {
+   Direct-child combinators throughout this block (not plain descendant selectors) — A Time of War
+   nests `setup` popups inside `reveal` popups (see 00008-RumorD1.mws.yaml), so this layout needs to
+   stay self-contained regardless of what it's nested inside, the same reasoning as `reveal`'s own
+   .mws-popup-container rule above and countdown_instructions/countdown_action further down. */
+
+.mws-popup-overlay.layout-setup > .mws-popup-container {
     position: relative;
     top: -5vh;
     width: 100%;
@@ -1482,7 +1496,7 @@ body {
     color: #2b2016;
 }
 
-.mws-popup-overlay.layout-setup .mws-popup-header {
+.mws-popup-overlay.layout-setup > .mws-popup-container > .mws-popup-header {
     position: absolute;
     top: -1rem;
     left: -1em;
@@ -1496,7 +1510,7 @@ body {
     justify-content: center;
 }
 
-.mws-popup-overlay.layout-setup .mws-popup-header::before {
+.mws-popup-overlay.layout-setup > .mws-popup-container > .mws-popup-header::before {
     content: '';
     position: absolute;
     top: 0.8rem;
@@ -1510,7 +1524,7 @@ body {
     z-index: 1;
 }
 
-.mws-popup-overlay.layout-setup .mws-popup-header::after {
+.mws-popup-overlay.layout-setup > .mws-popup-container > .mws-popup-header::after {
     content: 'SETUP';
     position: absolute;
     top: 1.5rem;
@@ -1520,7 +1534,7 @@ body {
     color: #1a130c;
 }
 
-.mws-popup-overlay.layout-setup .mws-image.style-setup-image {
+.mws-popup-overlay.layout-setup > .mws-popup-container > .mws-popup-header .mws-image.style-setup-image {
     max-width: 80%;
     max-height: 80%;
     object-fit: contain;
@@ -1530,16 +1544,16 @@ body {
     font-style: normal;
 }
 
-.mws-popup-overlay.layout-setup .mws-popup-content {
+.mws-popup-overlay.layout-setup > .mws-popup-container > .mws-popup-content {
     max-height: 18rem;
     overflow-y: auto;
     color: #2b2016;
     padding-left: 9rem;
 }
 
-.mws-popup-overlay.layout-setup .mws-popup-footer,
-.mws-popup-overlay.layout-end_of_round .mws-popup-footer,
-.mws-popup-overlay.layout-end_of_generation .mws-popup-footer {
+.mws-popup-overlay.layout-setup > .mws-popup-container > .mws-popup-footer,
+.mws-popup-overlay.layout-end_of_round > .mws-popup-container > .mws-popup-footer,
+.mws-popup-overlay.layout-end_of_generation > .mws-popup-container > .mws-popup-footer {
     position: absolute;
     left: 50%;
     bottom: -4em;
