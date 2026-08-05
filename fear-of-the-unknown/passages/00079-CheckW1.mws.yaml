@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'CheckW1'
-# ../en-US.restext:347 | "Rumor Mill"
+# ../en-US.restext:343 | "Rumor Mill"
 title: 'restext://Title_RumorMill'
 layout: 'narration'
 nodes:
@@ -28,7 +28,7 @@ nodes:
   expr: 'rand_between(1, 29, "CheckW1_1")'
 # ../.source/FearoftheUnknown_Eng_v15.cs:10653
 - type: 'text'
-  # ../en-US.restext:909 | "**Newsprint - {newspaper}..."
+  # ../en-US.restext:903 | "**Newsprint - {newspaper}..."
   value: 'restext://CheckW1_014'
   lets:
   - '_rnd_CheckW1_0'
@@ -43,7 +43,7 @@ nodes:
     expr: 'rand_between(863, 871, "CheckW1_2")'
   # ../.source/FearoftheUnknown_Eng_v15.cs:10665
   - type: 'text'
-    # ../en-US.restext:911 | "_{_rnd_CheckW1_2}_"
+    # ../en-US.restext:905 | "_{_rnd_CheckW1_2}_"
     value: 'restext://CheckW1_016'
     lets:
     - '_rnd_CheckW1_2'
@@ -54,7 +54,7 @@ nodes:
     expr: 'rand_between(872, 880, "CheckW1_3")'
   # ../.source/FearoftheUnknown_Eng_v15.cs:10670
   - type: 'text'
-    # ../en-US.restext:910 | "_{_rnd_CheckW1_3}_"
+    # ../en-US.restext:904 | "_{_rnd_CheckW1_3}_"
     value: 'restext://CheckW1_015'
     lets:
     - '_rnd_CheckW1_3'
@@ -66,7 +66,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:10677
 - type: 'text'
-  # ../en-US.restext:912 | "Hauntings continue to be ..."
+  # ../en-US.restext:906 | "Hauntings continue to be ..."
   value: 'restext://CheckW1_017'
 # ../.source/FearoftheUnknown_Eng_v15.cs:10686
 - type: 'break'

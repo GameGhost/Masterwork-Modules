@@ -2,27 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ExpNo'
-# ../en-US.restext:780 | "The Creature Escapes"
+# ../en-US.restext:774 | "The Creature Escapes"
 title: 'restext://ExpNo_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:8266
 - type: 'text'
-  # ../en-US.restext:781 | "**Journal of** _name ille..."
+  # ../en-US.restext:775 | "**Journal of** _name ille..."
   value: 'restext://ExpNo_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:8278
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:8280
 - type: 'text'
-  # ../en-US.restext:782 | "I saw the silhouette of t..."
+  # ../en-US.restext:776 | "I saw the silhouette of t..."
   value: 'restext://ExpNo_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:8283
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:8285
 - type: 'text'
-  # ../en-US.restext:783 | "I reached for my pistol, ..."
+  # ../en-US.restext:777 | "I reached for my pistol, ..."
   value: 'restext://ExpNo_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:8286
 - type: 'break'
@@ -36,7 +36,7 @@ nodes:
     # ../en-US.restext:29 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     layout: 'reveal'
-    # ../en-US.restext:365 | "Close"
+    # ../en-US.restext:360 | "Close"
     cancel: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -56,7 +56,7 @@ nodes:
           style: 'panel'
           content: []
         - type: 'link'
-          # ../en-US.restext:367 | "Continue"
+          # ../en-US.restext:362 | "Continue"
           label: 'restext://UIButton_Continue'
           target: 'JailEventA' # ./00290-JailEventA.mws.yaml
           snapshot: true
@@ -67,7 +67,7 @@ nodes:
           style: 'panel'
           content: []
         - type: 'link'
-          # ../en-US.restext:367 | "Continue"
+          # ../en-US.restext:362 | "Continue"
           label: 'restext://UIButton_Continue'
           target: 'LiberalEvent3' # ./00258-LiberalEvent3.mws.yaml
           snapshot: true
@@ -86,7 +86,7 @@ nodes:
           style: 'panel'
           content: []
         - type: 'link'
-          # ../en-US.restext:367 | "Continue"
+          # ../en-US.restext:362 | "Continue"
           label: 'restext://UIButton_Continue'
           target: '${exponextpsg}'
           snapshot: true
@@ -96,7 +96,7 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:367 | "Continue"
+        # ../en-US.restext:362 | "Continue"
         label: 'restext://UIButton_Continue'
         target: 'LiberalBonus' # ./00093-LiberalBonus.mws.yaml
         snapshot: true
@@ -104,7 +104,7 @@ nodes:
     - type: 'break'
     # ../.source/FearoftheUnknown_Eng_v15.cs:8368
     - type: 'text'
-      # ../en-US.restext:786 | "Collect and return all Hu..."
+      # ../en-US.restext:780 | "Collect and return all Hu..."
       value: 'restext://ExpNo_007'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:8298
@@ -112,7 +112,7 @@ nodes:
     # ../en-US.restext:29 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     layout: 'reveal'
-    # ../en-US.restext:365 | "Close"
+    # ../en-US.restext:360 | "Close"
     cancel: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -132,7 +132,7 @@ nodes:
           style: 'panel'
           content: []
         - type: 'link'
-          # ../en-US.restext:367 | "Continue"
+          # ../en-US.restext:362 | "Continue"
           label: 'restext://UIButton_Continue'
           target: 'JailEventA' # ./00290-JailEventA.mws.yaml
           snapshot: true
@@ -143,7 +143,7 @@ nodes:
           style: 'panel'
           content: []
         - type: 'link'
-          # ../en-US.restext:367 | "Continue"
+          # ../en-US.restext:362 | "Continue"
           label: 'restext://UIButton_Continue'
           target: 'LiberalEvent3' # ./00258-LiberalEvent3.mws.yaml
           snapshot: true
@@ -162,7 +162,7 @@ nodes:
           style: 'panel'
           content: []
         - type: 'link'
-          # ../en-US.restext:367 | "Continue"
+          # ../en-US.restext:362 | "Continue"
           label: 'restext://UIButton_Continue'
           target: '${exponextpsg}'
           snapshot: true
@@ -172,7 +172,7 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:367 | "Continue"
+        # ../en-US.restext:362 | "Continue"
         label: 'restext://UIButton_Continue'
         target: 'LiberalBonus' # ./00093-LiberalBonus.mws.yaml
         snapshot: true
@@ -180,12 +180,12 @@ nodes:
     - type: 'break'
     # ../.source/FearoftheUnknown_Eng_v15.cs:8446
     - type: 'text'
-      # ../en-US.restext:784 | "Collect all Hunt tokens {..."
+      # ../en-US.restext:778 | "Collect all Hunt tokens {..."
       value: 'restext://ExpNo_005'
     # ../.source/FearoftheUnknown_Eng_v15.cs:8449
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:8451
     - type: 'text'
-      # ../en-US.restext:785 | "Shuffle them and randomly..."
+      # ../en-US.restext:779 | "Shuffle them and randomly..."
       value: 'restext://ExpNo_006'

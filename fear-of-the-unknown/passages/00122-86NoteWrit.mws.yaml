@@ -19,13 +19,13 @@ nodes:
     if: 'revplot == "fortune"'
     then:
     - type: 'link'
-      # ../en-US.restext:1252 | "CLICK HERE."
+      # ../en-US.restext:1246 | "CLICK HERE."
       label: 'restext://_86NoteWrit_001'
       target: '35Fortune' # ./00193-35Fortune.mws.yaml
       snapshot: true
     else:
     - type: 'link'
-      # ../en-US.restext:1252 | "CLICK HERE."
+      # ../en-US.restext:1246 | "CLICK HERE."
       label: 'restext://_86NoteWrit_001'
       target: '35Misfortune' # ./00194-35Misfortune.mws.yaml
       snapshot: true
@@ -34,35 +34,35 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14752
 - type: 'text'
-  # ../en-US.restext:1253 | "Could all players be kill..."
+  # ../en-US.restext:1247 | "Could all players be kill..."
   value: 'restext://_86NoteWrit_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14754
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14757
 - type: 'text'
-  # ../en-US.restext:1254 | "Could it be that one of u..."
+  # ../en-US.restext:1248 | "Could it be that one of u..."
   value: 'restext://_86NoteWrit_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14760
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14763
 - type: 'text'
-  # ../en-US.restext:1255 | "Again, their terminology ..."
+  # ../en-US.restext:1249 | "Again, their terminology ..."
   value: 'restext://_86NoteWrit_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14764
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14766
 - type: 'text'
-  # ../en-US.restext:1256 | "Though the aims of the me..."
+  # ../en-US.restext:1250 | "Though the aims of the me..."
   value: 'restext://_86NoteWrit_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14768
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14770
 - type: 'text'
-  # ../en-US.restext:1257 | "If the structure is built."
+  # ../en-US.restext:1251 | "If the structure is built."
   value: 'restext://_86NoteWrit_006'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14771
 - type: 'break'
@@ -77,7 +77,7 @@ nodes:
     expr: 'tensebad + 1'
   # ../.source/FearoftheUnknown_Eng_v15.cs:14777
   - type: 'text'
-    # ../en-US.restext:1259 | " The town still talks abo..."
+    # ../en-US.restext:1253 | " The town still talks abo..."
     value: 'restext://_86NoteWrit_008'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:14785
@@ -86,5 +86,5 @@ nodes:
     expr: 'tensegood + 1'
   # ../.source/FearoftheUnknown_Eng_v15.cs:14786
   - type: 'text'
-    # ../en-US.restext:1258 | " The town remembers the d..."
+    # ../en-US.restext:1252 | " The town remembers the d..."
     value: 'restext://_86NoteWrit_007'

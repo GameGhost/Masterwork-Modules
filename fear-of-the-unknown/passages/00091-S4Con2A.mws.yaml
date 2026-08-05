@@ -10,21 +10,21 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:11964
   - type: 'text'
-    # ../en-US.restext:1016 | "**Success**"
+    # ../en-US.restext:1010 | "**Success**"
     value: 'restext://S4Con2A_006'
   # ../.source/FearoftheUnknown_Eng_v15.cs:11966
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:11970
   - type: 'text'
-    # ../en-US.restext:1021 | "**Letter from {tempid} -*..."
+    # ../en-US.restext:1015 | "**Letter from {tempid} -*..."
     value: 'restext://S4Con2A_011'
   # ../.source/FearoftheUnknown_Eng_v15.cs:11978
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:11980
   - type: 'text'
-    # ../en-US.restext:1017 | "Despite circumstantial ev..."
+    # ../en-US.restext:1011 | "Despite circumstantial ev..."
     value: 'restext://S4Con2A_007'
   # ../.source/FearoftheUnknown_Eng_v15.cs:11981
   - type: 'break'
@@ -35,7 +35,7 @@ nodes:
     # ../en-US.restext:29 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: '${round == 11 ? "Isolation2" : "Isolation3"}' # ./00043-Isolation2.mws.yaml, ./00044-Isolation3.mws.yaml
-    # ../en-US.restext:365 | "Close"
+    # ../en-US.restext:360 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -57,21 +57,21 @@ nodes:
       nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:11994
       - type: 'text'
-        # ../en-US.restext:1016 | "**Success**"
+        # ../en-US.restext:1010 | "**Success**"
         value: 'restext://S4Con2A_006'
       # ../.source/FearoftheUnknown_Eng_v15.cs:11996
       - type: 'break'
         style: 'paragraph'
       # ../.source/FearoftheUnknown_Eng_v15.cs:12000
       - type: 'text'
-        # ../en-US.restext:1012 | "**Letter from {tempid}-**..."
+        # ../en-US.restext:1006 | "**Letter from {tempid}-**..."
         value: 'restext://S4Con2A_002'
       # ../.source/FearoftheUnknown_Eng_v15.cs:12008
       - type: 'break'
         style: 'paragraph'
       # ../.source/FearoftheUnknown_Eng_v15.cs:12010
       - type: 'text'
-        # ../en-US.restext:1017 | "Despite circumstantial ev..."
+        # ../en-US.restext:1011 | "Despite circumstantial ev..."
         value: 'restext://S4Con2A_007'
       # ../.source/FearoftheUnknown_Eng_v15.cs:12011
       - type: 'break'
@@ -82,7 +82,7 @@ nodes:
         # ../en-US.restext:29 | "Click to continue..."
         label: 'restext://Click_ContinueEllipsis_C'
         target: '${round == 11 ? "Isolation2" : "Isolation3"}' # ./00043-Isolation2.mws.yaml, ./00044-Isolation3.mws.yaml
-        # ../en-US.restext:365 | "Close"
+        # ../en-US.restext:360 | "Close"
         okay: 'restext://UIButton_Close'
         snapshot: true
         header:
@@ -99,28 +99,28 @@ nodes:
       nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:12021
       - type: 'text'
-        # ../en-US.restext:1011 | "**Shameful Display**"
+        # ../en-US.restext:1005 | "**Shameful Display**"
         value: 'restext://S4Con2A_001'
       # ../.source/FearoftheUnknown_Eng_v15.cs:12023
       - type: 'break'
         style: 'paragraph'
       # ../.source/FearoftheUnknown_Eng_v15.cs:12027
       - type: 'text'
-        # ../en-US.restext:1012 | "**Letter from {tempid}-**..."
+        # ../en-US.restext:1006 | "**Letter from {tempid}-**..."
         value: 'restext://S4Con2A_002'
       # ../.source/FearoftheUnknown_Eng_v15.cs:12035
       - type: 'break'
         style: 'paragraph'
       # ../.source/FearoftheUnknown_Eng_v15.cs:12037
       - type: 'text'
-        # ../en-US.restext:1018 | "You should have seen the ..."
+        # ../en-US.restext:1012 | "You should have seen the ..."
         value: 'restext://S4Con2A_008'
       # ../.source/FearoftheUnknown_Eng_v15.cs:12040
       - type: 'break'
         style: 'paragraph'
       # ../.source/FearoftheUnknown_Eng_v15.cs:12042
       - type: 'text'
-        # ../en-US.restext:1019 | "We are dealing with the s..."
+        # ../en-US.restext:1013 | "We are dealing with the s..."
         value: 'restext://S4Con2A_009'
       # ../.source/FearoftheUnknown_Eng_v15.cs:12043
       - type: 'break'
@@ -131,7 +131,7 @@ nodes:
         # ../en-US.restext:29 | "Click to continue..."
         label: 'restext://Click_ContinueEllipsis_C'
         target: '${round == 11 ? "Isolation2" : "Isolation3"}' # ./00043-Isolation2.mws.yaml, ./00044-Isolation3.mws.yaml
-        # ../en-US.restext:365 | "Close"
+        # ../en-US.restext:360 | "Close"
         okay: 'restext://UIButton_Close'
         snapshot: true
         header:
@@ -142,33 +142,33 @@ nodes:
         content:
         # ../.source/FearoftheUnknown_Eng_v15.cs:12155
         - type: 'text'
-          # ../en-US.restext:1020 | "You **lose 1VP** and **ga..."
+          # ../en-US.restext:1014 | "You **lose 1VP** and **ga..."
           value: 'restext://S4Con2A_010'
     default:
     # ../.source/FearoftheUnknown_Eng_v15.cs:12053
     - type: 'text'
-      # ../en-US.restext:1011 | "**Shameful Display**"
+      # ../en-US.restext:1005 | "**Shameful Display**"
       value: 'restext://S4Con2A_001'
     # ../.source/FearoftheUnknown_Eng_v15.cs:12055
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:12059
     - type: 'text'
-      # ../en-US.restext:1012 | "**Letter from {tempid}-**..."
+      # ../en-US.restext:1006 | "**Letter from {tempid}-**..."
       value: 'restext://S4Con2A_002'
     # ../.source/FearoftheUnknown_Eng_v15.cs:12067
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:12069
     - type: 'text'
-      # ../en-US.restext:1013 | "My representation was eas..."
+      # ../en-US.restext:1007 | "My representation was eas..."
       value: 'restext://S4Con2A_003'
     # ../.source/FearoftheUnknown_Eng_v15.cs:12072
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:12074
     - type: 'text'
-      # ../en-US.restext:1014 | "Ultimately, the blasted d..."
+      # ../en-US.restext:1008 | "Ultimately, the blasted d..."
       value: 'restext://S4Con2A_004'
     # ../.source/FearoftheUnknown_Eng_v15.cs:12075
     - type: 'break'
@@ -179,7 +179,7 @@ nodes:
       # ../en-US.restext:29 | "Click to continue..."
       label: 'restext://Click_ContinueEllipsis_C'
       target: '${round == 11 ? "Isolation2" : "Isolation3"}' # ./00043-Isolation2.mws.yaml, ./00044-Isolation3.mws.yaml
-      # ../en-US.restext:365 | "Close"
+      # ../en-US.restext:360 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
       header:
@@ -197,7 +197,7 @@ nodes:
         style: 'paragraph'
       # ../.source/FearoftheUnknown_Eng_v15.cs:12189
       - type: 'text'
-        # ../en-US.restext:1015 | "You **lose {_rnd_S4Con2A_..."
+        # ../en-US.restext:1009 | "You **lose {_rnd_S4Con2A_..."
         value: 'restext://S4Con2A_005'
         lets:
         - '_rnd_S4Con2A_0'

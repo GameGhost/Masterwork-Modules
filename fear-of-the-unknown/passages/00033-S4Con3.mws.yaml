@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S4Con3'
-# ../en-US.restext:640 | "Politics as Usual"
+# ../en-US.restext:634 | "Politics as Usual"
 title: 'restext://S4Con3_001'
 layout: 'narration'
 nodes:
@@ -18,14 +18,14 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5278
 - type: 'text'
-  # ../en-US.restext:641 | "I will not carry on this ..."
+  # ../en-US.restext:635 | "I will not carry on this ..."
   value: 'restext://S4Con3_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5282
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5284
 - type: 'text'
-  # ../en-US.restext:642 | "It does not matter. The p..."
+  # ../en-US.restext:636 | "It does not matter. The p..."
   value: 'restext://S4Con3_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5287
 - type: 'assign'
@@ -39,7 +39,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   layout: 'reveal'
-  # ../en-US.restext:365 | "Close"
+  # ../en-US.restext:360 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -57,7 +57,7 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:367 | "Continue"
+      # ../en-US.restext:362 | "Continue"
       label: 'restext://UIButton_Continue'
       target: 'Isolation2' # ./00043-Isolation2.mws.yaml
       snapshot: true
@@ -67,7 +67,7 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:367 | "Continue"
+      # ../en-US.restext:362 | "Continue"
       label: 'restext://UIButton_Continue'
       target: 'Isolation3' # ./00044-Isolation3.mws.yaml
       snapshot: true
@@ -85,5 +85,5 @@ nodes:
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:5328
     - type: 'text'
-      # ../en-US.restext:643 | "Gain 1 {icon:creepy_icon}..."
+      # ../en-US.restext:637 | "Gain 1 {icon:creepy_icon}..."
       value: 'restext://S4Con3_004'

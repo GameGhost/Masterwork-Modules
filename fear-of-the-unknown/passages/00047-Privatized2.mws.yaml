@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Privatized2'
-# ../en-US.restext:346 | "Private Investors"
+# ../en-US.restext:342 | "Private Investors"
 title: 'restext://Title_PrivateInvestors'
-# ../en-US.restext:341 | "Middle Years"
+# ../en-US.restext:337 | "Middle Years"
 subtitle: 'restext://Title_MiddleYears'
 tags:
 - 'HUB'
@@ -21,7 +21,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7310
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:364 | "Accept"
+    # ../en-US.restext:359 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:7314
@@ -31,7 +31,7 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:7317
     - type: 'text'
-      # ../en-US.restext:749 | "Remove the **Suspicion Ma..."
+      # ../en-US.restext:743 | "Remove the **Suspicion Ma..."
       value: 'restext://Privatized2_001'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7337
 - type: 'section'
@@ -107,7 +107,7 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7431
   - type: 'text'
-    # ../en-US.restext:750 | "At the End of the Generat..."
+    # ../en-US.restext:744 | "At the End of the Generat..."
     value: 'restext://Privatized2_013'
   # ../.source/FearoftheUnknown_Eng_v15.cs:7434
   - type: 'link'
@@ -149,7 +149,7 @@ nodes:
     # ../en-US.restext:34 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_MoveNextRound'
     target: 'CreaturePleased' # ./00201-CreaturePleased.mws.yaml
-    # ../en-US.restext:369 | "End of Round"
+    # ../en-US.restext:364 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'

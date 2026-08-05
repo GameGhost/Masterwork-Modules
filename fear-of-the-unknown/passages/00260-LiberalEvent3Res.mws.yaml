@@ -2,34 +2,34 @@
 ---
 format: 'mws/0.4'
 passage_id: 'LiberalEvent3Res'
-# ../en-US.restext:2162 | "Choose the Program Focus"
+# ../en-US.restext:2155 | "Choose the Program Focus"
 title: 'restext://LiberalEvent3Res_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:29349
 - type: 'text'
-  # ../en-US.restext:2163 | "**Carefully hand this Sto..."
+  # ../en-US.restext:2156 | "**Carefully hand this Sto..."
   value: 'restext://LiberalEvent3Res_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29351
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29353
 - type: 'text'
-  # ../en-US.restext:2164 | "At the End of the Generat..."
+  # ../en-US.restext:2157 | "At the End of the Generat..."
   value: 'restext://LiberalEvent3Res_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29361
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29365
 - type: 'text'
-  # ../en-US.restext:2165 | "**Please choose the Exper..."
+  # ../en-US.restext:2158 | "**Please choose the Exper..."
   value: 'restext://LiberalEvent3Res_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29367
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29370
 - type: 'link'
-  # ../en-US.restext:2166 | "Engineering."
+  # ../en-US.restext:2159 | "Engineering."
   label: 'restext://LiberalEvent3Res_005'
   target: 'LiberalEvent3Resa' # ./00261-LiberalEvent3Resa.mws.yaml
   snapshot: true
@@ -44,7 +44,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29374
 - type: 'link'
-  # ../en-US.restext:2167 | "Chemistry."
+  # ../en-US.restext:2160 | "Chemistry."
   label: 'restext://LiberalEvent3Res_007'
   target: 'LiberalEvent3Resa' # ./00261-LiberalEvent3Resa.mws.yaml
   snapshot: true
@@ -59,7 +59,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29378
 - type: 'link'
-  # ../en-US.restext:2168 | "Biology."
+  # ../en-US.restext:2161 | "Biology."
   label: 'restext://LiberalEvent3Res_009'
   target: 'LiberalEvent3Resa' # ./00261-LiberalEvent3Resa.mws.yaml
   snapshot: true
@@ -74,7 +74,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29382
 - type: 'link'
-  # ../en-US.restext:2169 | "Occult."
+  # ../en-US.restext:2162 | "Occult."
   label: 'restext://LiberalEvent3Res_011'
   target: 'LiberalEvent3Resa' # ./00261-LiberalEvent3Resa.mws.yaml
   snapshot: true
@@ -82,5 +82,5 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:29410
   - type: 'assign'
     var: 'mentype'
-    # ../en-US.restext:2170 | "Occult"
+    # ../en-US.restext:2163 | "Occult"
     expr: '"restext://LiberalEvent3Res_012"'

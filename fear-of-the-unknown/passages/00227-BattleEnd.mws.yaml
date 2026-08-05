@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'BattleEnd'
-# ../en-US.restext:1934 | "The Battle is Over"
+# ../en-US.restext:1927 | "The Battle is Over"
 title: 'restext://BattleEnd_001'
 layout: 'narration'
 nodes:
@@ -12,7 +12,7 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:26124
   - type: 'text'
-    # ../en-US.restext:1935 | "**{nameA}**"
+    # ../en-US.restext:1928 | "**{nameA}**"
     value: 'restext://BattleEnd_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26126
 - type: 'conditional'
@@ -20,7 +20,7 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:26128
   - type: 'text'
-    # ../en-US.restext:1936 | "**{nameB}**"
+    # ../en-US.restext:1929 | "**{nameB}**"
     value: 'restext://BattleEnd_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26130
 - type: 'conditional'
@@ -28,7 +28,7 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:26132
   - type: 'text'
-    # ../en-US.restext:1937 | "**{nameC}**"
+    # ../en-US.restext:1930 | "**{nameC}**"
     value: 'restext://BattleEnd_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26134
 - type: 'conditional'
@@ -36,7 +36,7 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:26136
   - type: 'text'
-    # ../en-US.restext:1938 | "**{nameD}**"
+    # ../en-US.restext:1931 | "**{nameD}**"
     value: 'restext://BattleEnd_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26138
 - type: 'conditional'
@@ -44,11 +44,11 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:26140
   - type: 'text'
-    # ../en-US.restext:1939 | "**{nameE}**"
+    # ../en-US.restext:1932 | "**{nameE}**"
     value: 'restext://BattleEnd_006'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26142
 - type: 'text'
-  # ../en-US.restext:1940 | "**'s Journal -** _Februar..."
+  # ../en-US.restext:1933 | "**'s Journal -** _Februar..."
   value: 'restext://BattleEnd_007'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26148
 - type: 'break'
@@ -120,14 +120,14 @@ nodes:
     - '_rpl_BattleEnd_4'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26180
 - type: 'text'
-  # ../en-US.restext:1941 | " emerged from the turbid ..."
+  # ../en-US.restext:1934 | " emerged from the turbid ..."
   value: 'restext://BattleEnd_008'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26183
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26185
 - type: 'text'
-  # ../en-US.restext:1942 | "I have struck the images ..."
+  # ../en-US.restext:1935 | "I have struck the images ..."
   value: 'restext://BattleEnd_009'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26189
 - type: 'break'
@@ -138,7 +138,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'PEWitchEnding' # ./00217-PEWitchEnding.mws.yaml
-  # ../en-US.restext:365 | "Close"
+  # ../en-US.restext:360 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -184,5 +184,5 @@ nodes:
       value: '{nameE}'
   # ../.source/FearoftheUnknown_Eng_v15.cs:26233
   - type: 'text'
-    # ../en-US.restext:1943 | " gains **9VP**."
+    # ../en-US.restext:1936 | " gains **9VP**."
     value: 'restext://BattleEnd_010'

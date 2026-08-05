@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'BusNo'
-# ../en-US.restext:1446 | "Declined Offer"
+# ../en-US.restext:1440 | "Declined Offer"
 title: 'restext://BusNo_001'
 layout: 'narration'
 nodes:
@@ -13,15 +13,15 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:18968
 - type: 'let'
   var: '_rnd_BusNo_0'
-  # ../en-US.restext:1447 | BusNo_002 | "I'm afraid I must be obst..."
-  # ../en-US.restext:1448 | BusNo_003 | "I'm terribly beside mysel..."
+  # ../en-US.restext:1441 | BusNo_002 | "I'm afraid I must be obst..."
+  # ../en-US.restext:1442 | BusNo_003 | "I'm terribly beside mysel..."
   expr: '["restext://BusNo_002", "restext://BusNo_003"].shuffled("BusNo_0")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:18964
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:18966
 - type: 'text'
-  # ../en-US.restext:1449 | "The man sniffed loudly, t..."
+  # ../en-US.restext:1443 | "The man sniffed loudly, t..."
   value: 'restext://BusNo_004'
   lets:
   - '_rnd_BusNo_0'
@@ -30,7 +30,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:18973
 - type: 'text'
-  # ../en-US.restext:1450 | "I felt the door shutter c..."
+  # ../en-US.restext:1444 | "I felt the door shutter c..."
   value: 'restext://BusNo_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:18976
 - type: 'assign'

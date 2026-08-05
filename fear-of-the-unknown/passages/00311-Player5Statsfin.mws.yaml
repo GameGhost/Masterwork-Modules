@@ -17,7 +17,7 @@ nodes:
     - type: 'input'
       label: ''
       var: 'warriorE'
-    # ../en-US.restext:367 | "Continue"
+    # ../en-US.restext:362 | "Continue"
     okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'
@@ -37,7 +37,7 @@ nodes:
     expr: 'warriorE.replace("_5", "")'
   # ../.source/FearoftheUnknown_Eng_v15.cs:33356
   - type: 'text'
-    # ../en-US.restext:2471 | "**{_rpl_Player5Statsfin_0}**"
+    # ../en-US.restext:2464 | "**{_rpl_Player5Statsfin_0}**"
     value: 'restext://Player5Statsfin_001'
     lets:
     - '_rpl_Player5Statsfin_0'
@@ -50,19 +50,19 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33363
 - type: 'text'
-  # ../en-US.restext:2472 | "Agility: **{agiE}**"
+  # ../en-US.restext:2465 | "Agility: **{agiE}**"
   value: 'restext://Player5Statsfin_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33368
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33369
 - type: 'text'
-  # ../en-US.restext:2473 | "Strength: **{strE}**"
+  # ../en-US.restext:2466 | "Strength: **{strE}**"
   value: 'restext://Player5Statsfin_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33374
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33375
 - type: 'text'
-  # ../en-US.restext:2474 | "Life: **{hitE}**"
+  # ../en-US.restext:2467 | "Life: **{hitE}**"
   value: 'restext://Player5Statsfin_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33380
 - type: 'break'

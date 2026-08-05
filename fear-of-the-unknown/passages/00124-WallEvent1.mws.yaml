@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'WallEvent1'
-# ../en-US.restext:1270 | "Opportunity"
+# ../en-US.restext:1264 | "Opportunity"
 title: 'restext://WallEvent1_001'
 tags:
 - '2P-Weak'
@@ -17,41 +17,41 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14934
 - type: 'text'
-  # ../en-US.restext:1271 | "Each player is given an o..."
+  # ../en-US.restext:1265 | "Each player is given an o..."
   value: 'restext://WallEvent1_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14958
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14960
 - type: 'text'
-  # ../en-US.restext:1272 | "The Romani cannot offer m..."
+  # ../en-US.restext:1266 | "The Romani cannot offer m..."
   value: 'restext://WallEvent1_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14963
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14968
 - type: 'text'
-  # ../en-US.restext:1273 | "**Monetary VOTE**"
+  # ../en-US.restext:1267 | "**Monetary VOTE**"
   value: 'restext://WallEvent1_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14970
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14971
 - type: 'text'
-  # ../en-US.restext:1274 | "All players take all thei..."
+  # ../en-US.restext:1268 | "All players take all thei..."
   value: 'restext://WallEvent1_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14972
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14976
 - type: 'text'
-  # ../en-US.restext:1275 | "**If they wish to buy a b..."
+  # ../en-US.restext:1269 | "**If they wish to buy a b..."
   value: 'restext://WallEvent1_006'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14981
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14985
 - type: 'text'
-  # ../en-US.restext:1276 | "**If they wish to abstain..."
+  # ../en-US.restext:1270 | "**If they wish to abstain..."
   value: 'restext://WallEvent1_007'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14990
 - type: 'break'
@@ -63,7 +63,7 @@ nodes:
   label: 'restext://Click_StartVote'
   content:
   - type: 'text'
-    # ../en-US.restext:371 | "Click on the 'Start Votin..."
+    # ../en-US.restext:366 | "Click on the 'Start Votin..."
     value: 'restext://Voting_Instructions'
   - type: 'break'
     style: 'paragraph'
@@ -74,7 +74,7 @@ nodes:
     style: 'paragraph'
   - type: 'popup'
     layout: 'countdown_action'
-    # ../en-US.restext:372 | "Start Voting"
+    # ../en-US.restext:367 | "Start Voting"
     label: 'restext://Voting_StartButton'
     style: 'countdown-trigger'
     content:

@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Payment1ThanksC'
-# ../en-US.restext:353 | "The Count's Payment Received"
+# ../en-US.restext:349 | "The Count's Payment Received"
 title: 'restext://Title_TheCountsPaymentReceived'
 tags:
 - 'format'
@@ -27,7 +27,7 @@ nodes:
   # ../en-US.restext:28 | "Click here to continue..."
   label: 'restext://Click_ContinueEllipsis_B'
   layout: 'reveal'
-  # ../en-US.restext:365 | "Close"
+  # ../en-US.restext:360 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -50,7 +50,7 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:367 | "Continue"
+      # ../en-US.restext:362 | "Continue"
       label: 'restext://UIButton_Continue'
       target: 'Payment1D' # ./00168-Payment1D.mws.yaml
       snapshot: true
@@ -63,7 +63,7 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:367 | "Continue"
+      # ../en-US.restext:362 | "Continue"
       label: 'restext://UIButton_Continue'
       target: 'Payment1Hub' # ./00164-Payment1Hub.mws.yaml
       snapshot: true
