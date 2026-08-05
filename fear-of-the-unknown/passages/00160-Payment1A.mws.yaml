@@ -13,38 +13,38 @@ nodes:
     target: 'Payment1B' # ./00163-Payment1B.mws.yaml
 # ../.source/FearoftheUnknown_Eng_v15.cs:19486
 - type: 'text'
-  # ../en-US.restext:196 | "**Carefully hand this Sto..."
-  value: 'restext://Common_192'
+  # ../en-US.restext:314 | "**Carefully hand this Sto..."
+  value: 'restext://Storybook_HandDeviceToNameA'
 # ../.source/FearoftheUnknown_Eng_v15.cs:19492
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:19497
 - type: 'popup'
-  # ../en-US.restext:46 | "Once you are ready, click..."
-  label: 'restext://Common_042'
+  # ../en-US.restext:53 | "Once you are ready, click..."
+  label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:284 | "Close"
-  cancel: 'restext://Common_280'
+  # ../en-US.restext:365 | "Close"
+  cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:19511
   - type: 'text'
-    # ../en-US.restext:197 | "**Collection Day**"
-    value: 'restext://Common_193'
+    # ../en-US.restext:159 | "**Collection Day**"
+    value: 'restext://Heading_CollectionDay'
   # ../.source/FearoftheUnknown_Eng_v15.cs:19513
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:19517
   - type: 'text'
-    # ../en-US.restext:198 | "**Journal of {nameA} -** ..."
-    value: 'restext://Common_194'
+    # ../en-US.restext:168 | "**Journal of {nameA} -** ..."
+    value: 'restext://Heading_JournalOfNameA_1892Romania'
   # ../.source/FearoftheUnknown_Eng_v15.cs:19526
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:19528
   - type: 'text'
-    # ../en-US.restext:199 | "My final days of respite ..."
-    value: 'restext://Common_195'
+    # ../en-US.restext:249 | "My final days of respite ..."
+    value: 'restext://Narrative_FinalDaysOfRespite'
   # ../.source/FearoftheUnknown_Eng_v15.cs:19531
   - type: 'break'
     style: 'paragraph'
@@ -57,8 +57,8 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:19540
   - type: 'link'
-    # ../en-US.restext:200 | "Yes, I will pay the entir..."
-    label: 'restext://Common_196'
+    # ../en-US.restext:26 | "Yes, I will pay the entir..."
+    label: 'restext://Choice_YesWillPayEntireAmount'
     target: 'Payment1ThanksA' # ./00161-Payment1ThanksA.mws.yaml
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:19541
@@ -66,7 +66,7 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:19543
   - type: 'link'
-    # ../en-US.restext:201 | "No, I will not pay. (You ..."
-    label: 'restext://Common_197'
+    # ../en-US.restext:23 | "No, I will not pay. (You ..."
+    label: 'restext://Choice_NoWillNotPay_CannotAfford'
     target: 'Payment1NoA' # ./00162-Payment1NoA.mws.yaml
     snapshot: true

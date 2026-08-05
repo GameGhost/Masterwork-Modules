@@ -12,13 +12,13 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:243 | "Please enter the epic nam..."
-      value: 'restext://Common_239'
+      # ../en-US.restext:89 | "Please enter the epic nam..."
+      value: 'restext://Directive_EnterWarriorName'
     - type: 'input'
       label: ''
       var: 'warriorE'
-    # ../en-US.restext:286 | "Continue"
-    okay: 'restext://Common_282'
+    # ../en-US.restext:367 | "Continue"
+    okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'
       var: 'warriorE_submitted'
@@ -43,8 +43,8 @@ nodes:
     - '_rpl_Player5Statsfin_0'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33358
 - type: 'text'
-  # ../en-US.restext:244 | " **Complete**"
-  value: 'restext://Common_240'
+  # ../en-US.restext:160 | " **Complete**"
+  value: 'restext://Heading_Complete_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33361
 - type: 'break'
   style: 'paragraph'
@@ -69,19 +69,19 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33384
 - type: 'text'
-  # ../en-US.restext:245 | "**You are ready for a tri..."
-  value: 'restext://Common_241'
+  # ../en-US.restext:198 | "**You are ready for a tri..."
+  value: 'restext://Heading_ReadyForTrialByCombat'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33386
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33388
 - type: 'text'
-  # ../en-US.restext:246 | "If this is correct, please "
-  value: 'restext://Common_242'
+  # ../en-US.restext:95 | "If this is correct, please "
+  value: 'restext://Directive_IfCorrectPlease_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33389
 - type: 'link'
-  # ../en-US.restext:247 | "click to continue..."
-  label: 'restext://Common_243'
+  # ../en-US.restext:59 | "click to continue..."
+  label: 'restext://Click_ToContinueEllipsis_Lower'
   target: 'BattleIntro' # ./00225-BattleIntro.mws.yaml
   snapshot: true
 # ../.source/FearoftheUnknown_Eng_v15.cs:33390
@@ -89,11 +89,11 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33393
 - type: 'text'
-  # ../en-US.restext:248 | "If this is in error, please "
-  value: 'restext://Common_244'
+  # ../en-US.restext:96 | "If this is in error, please "
+  value: 'restext://Directive_IfErrorPlease_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33394
 - type: 'link'
-  # ../en-US.restext:249 | "return to the start..."
-  label: 'restext://Common_245'
+  # ../en-US.restext:52 | "return to the start..."
+  label: 'restext://Click_ReturnToStart'
   target: 'Player5StatEntry' # ./00307-Player5StatEntry.mws.yaml
   snapshot: true

@@ -2,10 +2,10 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Warning3'
-# ../en-US.restext:249 | "Not Again"
-title: 'restext://Common_245'
-# ../en-US.restext:211 | "Late Years"
-subtitle: 'restext://Common_207'
+# ../en-US.restext:265 | "Not Again"
+title: 'restext://Title_NotAgain'
+# ../en-US.restext:257 | "Late Years"
+subtitle: 'restext://Title_LateYears'
 tags:
 - 'HUB'
 layout: 'hub_late'
@@ -17,8 +17,8 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:7651
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:215 | "Accept"
-  okay: 'restext://Common_211'
+  # ../en-US.restext:281 | "Accept"
+  okay: 'restext://UIButton_Accept'
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:7655
   - type: 'image'
@@ -39,34 +39,34 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:7671
     - type: 'section'
-      # ../en-US.restext:250 | "**Peaceful Green**"
-      title: 'restext://Common_246'
+      # ../en-US.restext:153 | "**Peaceful Green**"
+      title: 'restext://Heading_PeacefulGreen'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:7679
       - type: 'text'
-        # ../en-US.restext:251 | "While some of the village..."
-        value: 'restext://Common_247'
+        # ../en-US.restext:215 | "While some of the village..."
+        value: 'restext://Narrative_VillageRuinMossyFloor'
     # ../.source/ATimeofWar_Eng_v8.cs:7687
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:7691
     - type: 'section'
-      # ../en-US.restext:252 | "{icon:storybooktoken} **V..."
-      title: 'restext://Common_248'
+      # ../en-US.restext:175 | "{icon:storybooktoken} **V..."
+      title: 'restext://Heading_StorybookToken_VisitThePark'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:7700
       - type: 'text'
-        # ../en-US.restext:253 | "When a player completes a..."
-        value: 'restext://Common_249'
+        # ../en-US.restext:124 | "When a player completes a..."
+        value: 'restext://Heading_ActionAtParkLocation'
       # ../.source/ATimeofWar_Eng_v8.cs:7706
       - type: 'break'
         style: 'paragraph'
       # ../.source/ATimeofWar_Eng_v8.cs:7709
       - type: 'link'
-        # ../en-US.restext:254 | "Click here to change the ..."
-        label: 'restext://Common_250'
+        # ../en-US.restext:43 | "Click here to change the ..."
+        label: 'restext://Click_ToChangeTheWorld'
         target: 'TimeWarp' # ./00054-TimeWarp.mws.yaml
         snapshot: true
         onclick:
@@ -78,14 +78,14 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:7717
     - type: 'section'
-      # ../en-US.restext:255 | "**Breaking the 4th Wall**"
-      title: 'restext://Common_251'
+      # ../en-US.restext:130 | "**Breaking the 4th Wall**"
+      title: 'restext://Heading_BreakingThe4thWall'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:7725
       - type: 'text'
-        # ../en-US.restext:256 | "The world has changed aga..."
-        value: 'restext://Common_252'
+        # ../en-US.restext:217 | "The world has changed aga..."
+        value: 'restext://Narrative_WorldChangedUnfinishedPage'
       # ../.source/ATimeofWar_Eng_v8.cs:7728
       - type: 'let'
         var: '_rnd_Warning3_0'
@@ -103,21 +103,21 @@ nodes:
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:7736
     - type: 'section'
-      # ../en-US.restext:257 | "{icon:storybooktoken} **V..."
-      title: 'restext://Common_253'
+      # ../en-US.restext:171 | "{icon:storybooktoken} **V..."
+      title: 'restext://Heading_StorybookToken_VisitTheBank'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:7746
       - type: 'text'
-        # ../en-US.restext:258 | "When a player completes a..."
-        value: 'restext://Common_254'
+        # ../en-US.restext:120 | "When a player completes a..."
+        value: 'restext://Heading_ActionAtBank'
       # ../.source/ATimeofWar_Eng_v8.cs:7752
       - type: 'break'
         style: 'paragraph'
       # ../.source/ATimeofWar_Eng_v8.cs:7755
       - type: 'link'
-        # ../en-US.restext:254 | "Click here to change the ..."
-        label: 'restext://Common_250'
+        # ../en-US.restext:43 | "Click here to change the ..."
+        label: 'restext://Click_ToChangeTheWorld'
         target: 'TimeWarp' # ./00054-TimeWarp.mws.yaml
         snapshot: true
         onclick:
@@ -129,8 +129,8 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:7762
     - type: 'section'
-      # ../en-US.restext:259 | "**Too Perfect**"
-      title: 'restext://Common_255'
+      # ../en-US.restext:183 | "**Too Perfect**"
+      title: 'restext://Heading_TooPerfect'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:7770
@@ -142,8 +142,8 @@ nodes:
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:7776
     - type: 'section'
-      # ../en-US.restext:260 | "**Science is Stressful**"
-      title: 'restext://Common_256'
+      # ../en-US.restext:160 | "**Science is Stressful**"
+      title: 'restext://Heading_ScienceIsStressful'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:7784
@@ -155,21 +155,21 @@ nodes:
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:7801
     - type: 'section'
-      # ../en-US.restext:261 | "{icon:storybooktoken} **V..."
-      title: 'restext://Common_257'
+      # ../en-US.restext:174 | "{icon:storybooktoken} **V..."
+      title: 'restext://Heading_StorybookToken_VisitTheChurch'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:7810
       - type: 'text'
-        # ../en-US.restext:262 | "When a player completes a..."
-        value: 'restext://Common_258'
+        # ../en-US.restext:123 | "When a player completes a..."
+        value: 'restext://Heading_ActionAtChurchLocation'
       # ../.source/ATimeofWar_Eng_v8.cs:7816
       - type: 'break'
         style: 'paragraph'
       # ../.source/ATimeofWar_Eng_v8.cs:7819
       - type: 'link'
-        # ../en-US.restext:254 | "Click here to change the ..."
-        label: 'restext://Common_250'
+        # ../en-US.restext:43 | "Click here to change the ..."
+        label: 'restext://Click_ToChangeTheWorld'
         target: 'TimeWarp' # ./00054-TimeWarp.mws.yaml
         snapshot: true
         onclick:
@@ -181,34 +181,34 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:7827
     - type: 'section'
-      # ../en-US.restext:263 | "**Big Brother**"
-      title: 'restext://Common_259'
+      # ../en-US.restext:129 | "**Big Brother**"
+      title: 'restext://Heading_BigBrother'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:7835
       - type: 'text'
-        # ../en-US.restext:264 | "Everyone in the town was ..."
-        value: 'restext://Common_260'
+        # ../en-US.restext:213 | "Everyone in the town was ..."
+        value: 'restext://Narrative_TownJovialModernSociety'
     # ../.source/ATimeofWar_Eng_v8.cs:7837
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:7842
     - type: 'section'
-      # ../en-US.restext:265 | "{icon:storybooktoken} **V..."
-      title: 'restext://Common_261'
+      # ../en-US.restext:176 | "{icon:storybooktoken} **V..."
+      title: 'restext://Heading_StorybookToken_VisitTheTownHall'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:7851
       - type: 'text'
-        # ../en-US.restext:266 | "When a player completes a..."
-        value: 'restext://Common_262'
+        # ../en-US.restext:125 | "When a player completes a..."
+        value: 'restext://Heading_ActionAtTownHallLocation'
       # ../.source/ATimeofWar_Eng_v8.cs:7857
       - type: 'break'
         style: 'paragraph'
       # ../.source/ATimeofWar_Eng_v8.cs:7860
       - type: 'link'
-        # ../en-US.restext:254 | "Click here to change the ..."
-        label: 'restext://Common_250'
+        # ../en-US.restext:43 | "Click here to change the ..."
+        label: 'restext://Click_ToChangeTheWorld'
         target: 'TimeWarp' # ./00054-TimeWarp.mws.yaml
         snapshot: true
         onclick:
@@ -220,34 +220,34 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:7867
     - type: 'section'
-      # ../en-US.restext:267 | "**Amphibious**"
-      title: 'restext://Common_263'
+      # ../en-US.restext:127 | "**Amphibious**"
+      title: 'restext://Heading_Amphibious'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:7875
       - type: 'text'
-        # ../en-US.restext:268 | "We arrived at an astonish..."
-        value: 'restext://Common_264'
+        # ../en-US.restext:214 | "We arrived at an astonish..."
+        value: 'restext://Narrative_UnderwaterVillageInsects'
     # ../.source/ATimeofWar_Eng_v8.cs:7877
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:7881
     - type: 'section'
-      # ../en-US.restext:269 | "{icon:storybooktoken} **V..."
-      title: 'restext://Common_265'
+      # ../en-US.restext:172 | "{icon:storybooktoken} **V..."
+      title: 'restext://Heading_StorybookToken_VisitTheBlacksmith'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:7890
       - type: 'text'
-        # ../en-US.restext:270 | "When a player completes a..."
-        value: 'restext://Common_266'
+        # ../en-US.restext:121 | "When a player completes a..."
+        value: 'restext://Heading_ActionAtBlacksmith'
       # ../.source/ATimeofWar_Eng_v8.cs:7896
       - type: 'break'
         style: 'paragraph'
       # ../.source/ATimeofWar_Eng_v8.cs:7899
       - type: 'link'
-        # ../en-US.restext:254 | "Click here to change the ..."
-        label: 'restext://Common_250'
+        # ../en-US.restext:43 | "Click here to change the ..."
+        label: 'restext://Click_ToChangeTheWorld'
         target: 'TimeWarp' # ./00054-TimeWarp.mws.yaml
         snapshot: true
         onclick:
@@ -259,14 +259,14 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:7906
     - type: 'section'
-      # ../en-US.restext:271 | "**Age of the Dinosaurs**"
-      title: 'restext://Common_267'
+      # ../en-US.restext:126 | "**Age of the Dinosaurs**"
+      title: 'restext://Heading_AgeOfTheDinosaurs'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:7914
       - type: 'text'
-        # ../en-US.restext:272 | "We were immediately accos..."
-        value: 'restext://Common_268'
+        # ../en-US.restext:205 | "We were immediately accos..."
+        value: 'restext://Narrative_MoldyLeatheryStenchTown'
       # ../.source/ATimeofWar_Eng_v8.cs:7915
       - type: 'break'
         style: 'paragraph'
@@ -286,21 +286,21 @@ nodes:
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:7928
     - type: 'section'
-      # ../en-US.restext:273 | "{icon:storybooktoken} **V..."
-      title: 'restext://Common_269'
+      # ../en-US.restext:173 | "{icon:storybooktoken} **V..."
+      title: 'restext://Heading_StorybookToken_VisitTheBunker'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:7937
       - type: 'text'
-        # ../en-US.restext:274 | "When a player completes a..."
-        value: 'restext://Common_270'
+        # ../en-US.restext:122 | "When a player completes a..."
+        value: 'restext://Heading_ActionAtBunker'
       # ../.source/ATimeofWar_Eng_v8.cs:7943
       - type: 'break'
         style: 'paragraph'
       # ../.source/ATimeofWar_Eng_v8.cs:7946
       - type: 'link'
-        # ../en-US.restext:254 | "Click here to change the ..."
-        label: 'restext://Common_250'
+        # ../en-US.restext:43 | "Click here to change the ..."
+        label: 'restext://Click_ToChangeTheWorld'
         target: 'TimeWarp' # ./00054-TimeWarp.mws.yaml
         snapshot: true
         onclick:
@@ -312,25 +312,25 @@ nodes:
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:7952
 - type: 'section'
-  # ../en-US.restext:124 | "**Utopian Experiments**"
-  title: 'restext://Common_120'
+  # ../en-US.restext:185 | "**Utopian Experiments**"
+  title: 'restext://Heading_UtopianExperiments'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:7960
   - type: 'text'
-    # ../en-US.restext:275 | "A new set of Experiments ..."
-    value: 'restext://Common_271'
+    # ../en-US.restext:83 | "A new set of Experiments ..."
+    value: 'restext://Directive_NewExperimentsAvailable_An'
   # ../.source/ATimeofWar_Eng_v8.cs:7962
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:7966
   - type: 'popup'
     layout: 'end_of_round'
-    # ../en-US.restext:280 | "Click here at the End of ..."
-    label: 'restext://Common_276'
+    # ../en-US.restext:30 | "Click here at the End of ..."
+    label: 'restext://Click_EndGeneration_FinalScoringDetermineFate'
     target: 'Scoring' # ./00004-Scoring.mws.yaml
-    # ../en-US.restext:222 | "End of Round"
-    okay: 'restext://Common_218'
+    # ../en-US.restext:285 | "End of Round"
+    okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
       var: '_ProgressRound'
@@ -338,10 +338,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:153 | "The Late Years of the Thi..."
-      value: 'restext://Common_149'
+      # ../en-US.restext:231 | "The Late Years of the Thi..."
+      value: 'restext://Round_GenerationIII_LateEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:233 | "Perform any End of Round ..."
-      value: 'restext://Common_229'
+      # ../en-US.restext:229 | "Perform any End of Round ..."
+      value: 'restext://Round_EndOfRoundActions_Rule'

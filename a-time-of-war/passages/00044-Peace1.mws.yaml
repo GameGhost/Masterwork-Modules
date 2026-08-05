@@ -2,10 +2,10 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Peace1'
-# ../en-US.restext:141 | "World Conquest"
-title: 'restext://Common_137'
-# ../en-US.restext:214 | "Early Years"
-subtitle: 'restext://Common_210'
+# ../en-US.restext:280 | "World Conquest"
+title: 'restext://Title_WorldConquest'
+# ../en-US.restext:251 | "Early Years"
+subtitle: 'restext://Title_EarlyYears'
 tags:
 - 'HUB'
 layout: 'hub_early'
@@ -21,8 +21,8 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:5960
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:215 | "Accept"
-    okay: 'restext://Common_211'
+    # ../en-US.restext:281 | "Accept"
+    okay: 'restext://UIButton_Accept'
     header:
     # ../.source/ATimeofWar_Eng_v8.cs:5964
     - type: 'image'
@@ -39,15 +39,15 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:5974
       - type: 'text'
-        # ../en-US.restext:142 | "Each player **pays $1** i..."
-        value: 'restext://Common_138'
+        # ../en-US.restext:70 | "Each player **pays $1** i..."
+        value: 'restext://Directive_EachPlayerPays1EstateTax'
     # ../.source/ATimeofWar_Eng_v8.cs:5981
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:5983
     - type: 'text'
-      # ../en-US.restext:62 | "Place the Suspicion Marke..."
-      value: 'restext://Common_058'
+      # ../en-US.restext:93 | "Place the Suspicion Marke..."
+      value: 'restext://Directive_PlaceSuspicionMarker_Lead'
     # ../.source/ATimeofWar_Eng_v8.cs:5986
     - type: 'conditional'
       if: '!Peace1'
@@ -78,8 +78,8 @@ nodes:
             expr: 'tracker + 2'
     # ../.source/ATimeofWar_Eng_v8.cs:5999
     - type: 'text'
-      # ../en-US.restext:63 | "**{tracker}** and the {ic..."
-      value: 'restext://Common_059'
+      # ../en-US.restext:108 | "**{tracker}** and the {ic..."
+      value: 'restext://Directive_TrackerAndMobMarkerLeft'
     # ../.source/ATimeofWar_Eng_v8.cs:6004
     - type: 'conditional'
       if: 'players == 3'
@@ -88,34 +88,34 @@ nodes:
       - type: 'break'
       # ../.source/ATimeofWar_Eng_v8.cs:6007
       - type: 'text'
-        # ../en-US.restext:238 | "Then, since this is a 3 p..."
-        value: 'restext://Common_234'
+        # ../en-US.restext:54 | "Then, since this is a 3 p..."
+        value: 'restext://Directive_3Player_PassMarker_A'
   # ../.source/ATimeofWar_Eng_v8.cs:6010
   - type: 'break'
     style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:6015
 - type: 'section'
-  # ../en-US.restext:143 | "**Separatist Allegiance**"
-  title: 'restext://Common_139'
+  # ../en-US.restext:162 | "**Separatist Allegiance**"
+  title: 'restext://Heading_SeparatistAllegiance'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:6023
   - type: 'text'
-    # ../en-US.restext:144 | "If a player does **NOT** ..."
-    value: 'restext://Common_140'
+    # ../en-US.restext:87 | "If a player does **NOT** ..."
+    value: 'restext://Directive_NoSeparatistsFlag_OnceAction'
 # ../.source/ATimeofWar_Eng_v8.cs:6043
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:6047
 - type: 'section'
-  # ../en-US.restext:145 | "{icon:storybooktoken} **W..."
-  title: 'restext://Common_141'
+  # ../en-US.restext:177 | "{icon:storybooktoken} **W..."
+  title: 'restext://Heading_StorybookToken_WarOnTheWorld'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:6057
   - type: 'link'
-    # ../en-US.restext:146 | "For an explanation of war..."
-    label: 'restext://Common_142'
+    # ../en-US.restext:32 | "For an explanation of war..."
+    label: 'restext://Click_ExplanationOfWar'
     target: 'HowtoWar' # ./00071-HowtoWar.mws.yaml
     snapshot: true
   # ../.source/ATimeofWar_Eng_v8.cs:6058
@@ -133,14 +133,14 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:6070
   - type: 'section'
-    # ../en-US.restext:84 | "**Everything is a Weapon**"
-    title: 'restext://Common_080'
+    # ../en-US.restext:138 | "**Everything is a Weapon**"
+    title: 'restext://Heading_EverythingIsAWeapon'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:6078
     - type: 'text'
-      # ../en-US.restext:147 | "When performing an Experi..."
-      value: 'restext://Common_143'
+      # ../en-US.restext:106 | "When performing an Experi..."
+      value: 'restext://Directive_SubstituteWeaponTokenForIngredient'
 # ../.source/ATimeofWar_Eng_v8.cs:6087
 - type: 'break'
   style: 'paragraph'
@@ -154,8 +154,8 @@ nodes:
     # ../en-US.restext:601 | "Click here at the end of ..."
     label: 'restext://Peace1_010'
     target: 'ATOW-FamineEvent' # ./00172-ATOW-FamineEvent.mws.yaml
-    # ../en-US.restext:222 | "End of Round"
-    okay: 'restext://Common_218'
+    # ../en-US.restext:285 | "End of Round"
+    okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
       var: '_ProgressRound'
@@ -163,10 +163,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:129 | "The Early Years of the Th..."
-      value: 'restext://Common_125'
+      # ../en-US.restext:230 | "The Early Years of the Th..."
+      value: 'restext://Round_GenerationIII_EarlyEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:223 | "Then, perform all Start o..."
-      value: 'restext://Common_219'
+      # ../en-US.restext:235 | "Then, perform all Start o..."
+      value: 'restext://Round_StartMiddleYears_Rule'

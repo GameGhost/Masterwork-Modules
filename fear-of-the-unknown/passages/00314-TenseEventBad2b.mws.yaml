@@ -8,15 +8,15 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:33549
 - type: 'text'
-  # ../en-US.restext:296 | "Special Event"
-  value: 'restext://Common_292'
+  # ../en-US.restext:313 | "Special Event"
+  value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33550
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33551
 - type: 'text'
-  # ../en-US.restext:297 | "Each player takes a votin..."
-  value: 'restext://Common_293'
+  # ../en-US.restext:137 | "Each player takes a votin..."
+  value: 'restext://Directive_VotingTokenRevealVotes'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33553
 - type: 'break'
   style: 'paragraph'
@@ -44,42 +44,42 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:33606
 - type: 'popup'
   layout: 'countdown_instructions'
-  # ../en-US.restext:335 | "Click here to start the v..."
-  label: 'restext://Common_331'
+  # ../en-US.restext:57 | "Click here to start the v..."
+  label: 'restext://Click_StartVote'
   content:
   - type: 'text'
-    # ../en-US.restext:298 | "Click on the 'Start Votin..."
-    value: 'restext://Common_294'
+    # ../en-US.restext:371 | "Click on the 'Start Votin..."
+    value: 'restext://Voting_Instructions'
   - type: 'break'
     style: 'paragraph'
   - type: 'text'
-    # ../en-US.restext:299 | "When you see the word 'RE..."
-    value: 'restext://Common_295'
+    # ../en-US.restext:6 | "When you see the word 'RE..."
+    value: 'restext://Bidding_RevealInstructions'
   - type: 'break'
     style: 'paragraph'
   - type: 'popup'
     layout: 'countdown_action'
-    # ../en-US.restext:300 | "Start Voting"
-    label: 'restext://Common_296'
+    # ../en-US.restext:372 | "Start Voting"
+    label: 'restext://Voting_StartButton'
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:302 | "3"
-      value: 'restext://Common_298'
+      # ../en-US.restext:64 | "3"
+      value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:303 | "2"
-      value: 'restext://Common_299'
+      # ../en-US.restext:65 | "2"
+      value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:304 | "1"
-      value: 'restext://Common_300'
+      # ../en-US.restext:62 | "1"
+      value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:301 | "REVEAL"
-      value: 'restext://Common_297'
+      # ../en-US.restext:63 | "REVEAL"
+      value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:301 | "REVEAL"
-    okay: 'restext://Common_297'
+    # ../en-US.restext:63 | "REVEAL"
+    okay: 'restext://Countdown_Reveal'
     target: 'TenseEventBad2Res' # ./00342-TenseEventBad2Res.mws.yaml
     snapshot: false

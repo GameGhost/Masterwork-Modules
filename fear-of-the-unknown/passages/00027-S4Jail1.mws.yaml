@@ -19,19 +19,19 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:4784
 - type: 'popup'
   layout: 'end_of_generation'
-  # ../en-US.restext:308 | "Confirm"
-  okay: 'restext://Common_304'
+  # ../en-US.restext:366 | "Confirm"
+  okay: 'restext://UIButton_Confirm'
   content:
   - type: 'text'
-    # ../en-US.restext:293 | "Remove all player pieces ..."
-    value: 'restext://Common_289'
+    # ../en-US.restext:83 | "Remove all player pieces ..."
+    value: 'restext://Directive_EndGeneration_ReturnAsylumupHouseOnHill'
   - type: 'let'
     var: 'generation'
     expr: '6'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4788
 - type: 'text'
-  # ../en-US.restext:294 | "**Collected Letters -** _..."
-  value: 'restext://Common_290'
+  # ../en-US.restext:156 | "**Collected Letters -** _..."
+  value: 'restext://Heading_CollectedLetters_ShelleyHerbert'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4794
 - type: 'break'
   style: 'paragraph'
@@ -61,8 +61,8 @@ nodes:
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:4816
     - type: 'link'
-      # ../en-US.restext:295 | "Click to continue..."
-      label: 'restext://Common_291'
+      # ../en-US.restext:29 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
       target: 'S4BadCreature' # ./00029-S4BadCreature.mws.yaml
       snapshot: true
   - match: 1
@@ -94,7 +94,7 @@ nodes:
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:4842
     - type: 'link'
-      # ../en-US.restext:295 | "Click to continue..."
-      label: 'restext://Common_291'
+      # ../en-US.restext:29 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
       target: 'S4BadCreature' # ./00029-S4BadCreature.mws.yaml
       snapshot: true

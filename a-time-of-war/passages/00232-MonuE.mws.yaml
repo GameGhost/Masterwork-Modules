@@ -6,58 +6,58 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:23480
 - type: 'text'
-  # ../en-US.restext:45 | "**Carefully hand this Sto..."
-  value: 'restext://Common_041'
+  # ../en-US.restext:245 | "**Carefully hand this Sto..."
+  value: 'restext://Storybook_HandDeviceToNameE'
 # ../.source/ATimeofWar_Eng_v8.cs:23485
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:23490
 - type: 'popup'
-  # ../en-US.restext:184 | "Once you are ready, click..."
-  label: 'restext://Common_180'
+  # ../en-US.restext:40 | "Once you are ready, click..."
+  label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:185 | "Close"
-  cancel: 'restext://Common_181'
+  # ../en-US.restext:282 | "Close"
+  cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:23513
   - type: 'text'
-    # ../en-US.restext:108 | "**Fate of Time**"
-    value: 'restext://Common_104'
+    # ../en-US.restext:139 | "**Fate of Time**"
+    value: 'restext://Heading_FateOfTime'
   # ../.source/ATimeofWar_Eng_v8.cs:23515
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:23516
   - type: 'text'
-    # ../en-US.restext:109 | "I was called upon to make..."
-    value: 'restext://Common_105'
+    # ../en-US.restext:192 | "I was called upon to make..."
+    value: 'restext://Narrative_ChoiceBetweenSecrecyUnknown'
   # ../.source/ATimeofWar_Eng_v8.cs:23517
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:23519
   - type: 'text'
-    # ../en-US.restext:110 | "If I chose to focus on Ut..."
-    value: 'restext://Common_106'
+    # ../en-US.restext:11 | "If I chose to focus on Ut..."
+    value: 'restext://Choice_FocusUtopianConcealTimeMachine'
   # ../.source/ATimeofWar_Eng_v8.cs:23522
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:23524
   - type: 'text'
-    # ../en-US.restext:111 | "However, if I were the **..."
-    value: 'restext://Common_107'
+    # ../en-US.restext:206 | "However, if I were the **..."
+    value: 'restext://Narrative_OnlyOneReleaseSchematicsGlory'
   # ../.source/ATimeofWar_Eng_v8.cs:23533
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:23537
   - type: 'text'
-    # ../en-US.restext:112 | "**The decision was easy. ..."
-    value: 'restext://Common_108'
+    # ../en-US.restext:136 | "**The decision was easy. ..."
+    value: 'restext://Heading_DecisionWasEasy_WeShould'
   # ../.source/ATimeofWar_Eng_v8.cs:23539
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:23542
   - type: 'link'
-    # ../en-US.restext:113 | "Focus on Utopian Experime..."
-    label: 'restext://Common_109'
+    # ../en-US.restext:12 | "Focus on Utopian Experime..."
+    label: 'restext://Choice_FocusUtopianKeepHidden'
     target: 'MonuRes' # ./00229-MonuRes.mws.yaml
     snapshot: true
     onclick:
@@ -70,8 +70,8 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:23546
   - type: 'link'
-    # ../en-US.restext:114 | "Release the Time Machine ..."
-    label: 'restext://Common_110'
+    # ../en-US.restext:17 | "Release the Time Machine ..."
+    label: 'restext://Choice_ReleaseTimeMachineSchematics'
     target: 'MonuRes' # ./00229-MonuRes.mws.yaml
     snapshot: true
     onclick:

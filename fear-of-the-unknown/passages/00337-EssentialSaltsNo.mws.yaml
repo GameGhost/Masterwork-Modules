@@ -8,8 +8,8 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:35395
 - type: 'text'
-  # ../en-US.restext:311 | "**Journal of {randomname}..."
-  value: 'restext://Common_307'
+  # ../en-US.restext:173 | "**Journal of {randomname}..."
+  value: 'restext://Heading_JournalOfRandomname_Cont'
 # ../.source/FearoftheUnknown_Eng_v15.cs:35404
 - type: 'break'
   style: 'paragraph'
@@ -36,11 +36,11 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:35421
 - type: 'popup'
-  # ../en-US.restext:295 | "Click to continue..."
-  label: 'restext://Common_291'
+  # ../en-US.restext:29 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   layout: 'reveal'
-  # ../en-US.restext:284 | "Close"
-  cancel: 'restext://Common_280'
+  # ../en-US.restext:365 | "Close"
+  cancel: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/FearoftheUnknown_Eng_v15.cs:35464
@@ -57,8 +57,8 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:286 | "Continue"
-      label: 'restext://Common_282'
+      # ../en-US.restext:367 | "Continue"
+      label: 'restext://UIButton_Continue'
       target: 'LiberalEvent3' # ./00258-LiberalEvent3.mws.yaml
       snapshot: true
     else:
@@ -75,8 +75,8 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:286 | "Continue"
-      label: 'restext://Common_282'
+      # ../en-US.restext:367 | "Continue"
+      label: 'restext://UIButton_Continue'
       target: '${EssentialSaltsNonextpsg}'
       snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:35465

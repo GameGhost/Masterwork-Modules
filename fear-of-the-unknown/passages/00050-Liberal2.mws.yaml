@@ -2,54 +2,54 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Liberal2'
-# ../en-US.restext:146 | "Acceptance"
-title: 'restext://Common_142'
-# ../en-US.restext:156 | "Middle Years"
-subtitle: 'restext://Common_152'
+# ../en-US.restext:325 | "Acceptance"
+title: 'restext://Title_Acceptance'
+# ../en-US.restext:341 | "Middle Years"
+subtitle: 'restext://Title_MiddleYears'
 tags:
 - 'HUB'
 layout: 'hub_middle'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:7711
 - type: 'section'
-  # ../en-US.restext:147 | "**Special Servant Rule**"
-  title: 'restext://Common_143'
+  # ../en-US.restext:210 | "**Special Servant Rule**"
+  title: 'restext://Heading_SpecialServantRule'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7720
   - type: 'text'
-    # ../en-US.restext:148 | "Due to the government-fun..."
-    value: 'restext://Common_144'
+    # ../en-US.restext:138 | "Due to the government-fun..."
+    value: 'restext://Directive_WorkReintroductionServantsNotLost'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7728
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7732
 - type: 'section'
-  # ../en-US.restext:149 | "**Rehabilitation Token**"
-  title: 'restext://Common_145'
+  # ../en-US.restext:199 | "**Rehabilitation Token**"
+  title: 'restext://Heading_RehabilitationToken'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7741
   - type: 'text'
-    # ../en-US.restext:150 | "The {icon:s2_rehabilitati..."
-    value: 'restext://Common_146'
+    # ../en-US.restext:117 | "The {icon:s2_rehabilitati..."
+    value: 'restext://Directive_RehabilitationTokenMovesLikeMob'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7750
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7755
 - type: 'section'
-  # ../en-US.restext:151 | "{icon:storybooktoken} **A..."
-  title: 'restext://Common_147'
+  # ../en-US.restext:219 | "{icon:storybooktoken} **A..."
+  title: 'restext://Heading_StorybookToken_FocusOnRehabilitation'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7767
   - type: 'text'
-    # ../en-US.restext:152 | "When a player's token ove..."
-    value: 'restext://Common_148'
+    # ../en-US.restext:129 | "When a player's token ove..."
+    value: 'restext://Directive_TokenOverlapsRehabilitation_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:7776
   - type: 'link'
-    # ../en-US.restext:153 | "click here to be committed."
-    label: 'restext://Common_149'
+    # ../en-US.restext:44 | "click here to be committed."
+    label: 'restext://Click_HereToBeCommitted'
     target: 'AsylumTreatment' # ./00179-AsylumTreatment.mws.yaml
     snapshot: true
 # ../.source/FearoftheUnknown_Eng_v15.cs:7779
@@ -65,25 +65,25 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:7787
     - type: 'section'
-      # ../en-US.restext:277 | "{icon:storybooktoken}**Th..."
-      title: 'restext://Common_273'
+      # ../en-US.restext:225 | "{icon:storybooktoken}**Th..."
+      title: 'restext://Heading_StorybookToken_TheHuntIsOn_NoSpace'
       style: 'hub-card'
       content:
       # ../.source/FearoftheUnknown_Eng_v15.cs:7797
       - type: 'text'
-        # ../en-US.restext:278 | "Any time a player visits ..."
-        value: 'restext://Common_274'
+        # ../en-US.restext:135 | "Any time a player visits ..."
+        value: 'restext://Directive_VisitLocationClaimHuntToken'
       # ../.source/FearoftheUnknown_Eng_v15.cs:7800
       - type: 'break'
         style: 'paragraph'
       # ../.source/FearoftheUnknown_Eng_v15.cs:7802
       - type: 'text'
-        # ../en-US.restext:154 | "At the end of each round,..."
-        value: 'restext://Common_150'
+        # ../en-US.restext:91 | "At the end of each round,..."
+        value: 'restext://Directive_ExpeditionKillCreature_Fragment'
       # ../.source/FearoftheUnknown_Eng_v15.cs:7809
       - type: 'link'
-        # ../en-US.restext:317 | "click here."
-        label: 'restext://Common_313'
+        # ../en-US.restext:49 | "click here."
+        label: 'restext://Click_Here_Period'
         target: 'HuntExplanation' # ./00076-HuntExplanation.mws.yaml
         snapshot: true
     # ../.source/FearoftheUnknown_Eng_v15.cs:7812
@@ -91,22 +91,22 @@ nodes:
       style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7818
 - type: 'section'
-  # ../en-US.restext:136 | "**The** **{menname}** **P..."
-  title: 'restext://Common_132'
+  # ../en-US.restext:234 | "**The** **{menname}** **P..."
+  title: 'restext://Heading_TheMennameProgram'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7829
   - type: 'text'
-    # ../en-US.restext:137 | "At the End of the Generat..."
-    value: 'restext://Common_133'
+    # ../en-US.restext:293 | "At the End of the Generat..."
+    value: 'restext://Reward_MostMentypeExperiments_Menagerie'
   # ../.source/FearoftheUnknown_Eng_v15.cs:7844
   - type: 'conditional'
     if: 'players >= 4'
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:7846
     - type: 'text'
-      # ../en-US.restext:138 | "The player who has the se..."
-      value: 'restext://Common_134'
+      # ../en-US.restext:296 | "The player who has the se..."
+      value: 'restext://Reward_SecondMostExperiments_HasVariant'
   # ../.source/FearoftheUnknown_Eng_v15.cs:7849
   - type: 'break'
     style: 'paragraph'
@@ -125,11 +125,11 @@ nodes:
           # ../.source/FearoftheUnknown_Eng_v15.cs:7857
           - type: 'popup'
             layout: 'end_of_round'
-            # ../en-US.restext:69 | "Click here at the end of ..."
-            label: 'restext://Common_065'
+            # ../en-US.restext:34 | "Click here at the end of ..."
+            label: 'restext://Click_EndRound_MoveNextRound'
             target: '${Liberal2nextpsg}'
-            # ../en-US.restext:181 | "End of Round"
-            okay: 'restext://Common_177'
+            # ../en-US.restext:369 | "End of Round"
+            okay: 'restext://UIButton_EndOfRound'
             onclose:
             # ../.source/FearoftheUnknown_Eng_v15.cs:7883
             - type: 'conditional'
@@ -145,23 +145,23 @@ nodes:
             snapshot: true
             content:
             - type: 'text'
-              # ../en-US.restext:323 | "The Middle Years of the T..."
-              value: 'restext://Common_319'
+              # ../en-US.restext:301 | "The Middle Years of the T..."
+              value: 'restext://Round_GenerationIII_MiddleEnded'
             - type: 'break'
               style: 'paragraph'
             - type: 'text'
-              # ../en-US.restext:158 | "Then, perform all Start o..."
-              value: 'restext://Common_154'
+              # ../en-US.restext:305 | "Then, perform all Start o..."
+              value: 'restext://Round_StartLateYears_Rule'
         - match: 0
           nodes:
           # ../.source/FearoftheUnknown_Eng_v15.cs:7863
           - type: 'popup'
             layout: 'end_of_round'
-            # ../en-US.restext:69 | "Click here at the end of ..."
-            label: 'restext://Common_065'
+            # ../en-US.restext:34 | "Click here at the end of ..."
+            label: 'restext://Click_EndRound_MoveNextRound'
             target: 'Expedition1' # ./00049-Expedition1.mws.yaml
-            # ../en-US.restext:181 | "End of Round"
-            okay: 'restext://Common_177'
+            # ../en-US.restext:369 | "End of Round"
+            okay: 'restext://UIButton_EndOfRound'
             onclose:
             - type: 'assign'
               var: '_ProgressRound'
@@ -169,23 +169,23 @@ nodes:
             snapshot: true
             content:
             - type: 'text'
-              # ../en-US.restext:323 | "The Middle Years of the T..."
-              value: 'restext://Common_319'
+              # ../en-US.restext:301 | "The Middle Years of the T..."
+              value: 'restext://Round_GenerationIII_MiddleEnded'
             - type: 'break'
               style: 'paragraph'
             - type: 'text'
-              # ../en-US.restext:158 | "Then, perform all Start o..."
-              value: 'restext://Common_154'
+              # ../en-US.restext:305 | "Then, perform all Start o..."
+              value: 'restext://Round_StartLateYears_Rule'
     - match: 2
       nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:7870
       - type: 'popup'
         layout: 'end_of_round'
-        # ../en-US.restext:69 | "Click here at the end of ..."
-        label: 'restext://Common_065'
+        # ../en-US.restext:34 | "Click here at the end of ..."
+        label: 'restext://Click_EndRound_MoveNextRound'
         target: '${Liberal2nextpsg}'
-        # ../en-US.restext:181 | "End of Round"
-        okay: 'restext://Common_177'
+        # ../en-US.restext:369 | "End of Round"
+        okay: 'restext://UIButton_EndOfRound'
         onclose:
         # ../.source/FearoftheUnknown_Eng_v15.cs:7894
         - type: 'conditional'
@@ -201,13 +201,13 @@ nodes:
         snapshot: true
         content:
         - type: 'text'
-          # ../en-US.restext:323 | "The Middle Years of the T..."
-          value: 'restext://Common_319'
+          # ../en-US.restext:301 | "The Middle Years of the T..."
+          value: 'restext://Round_GenerationIII_MiddleEnded'
         - type: 'break'
           style: 'paragraph'
         - type: 'text'
-          # ../en-US.restext:158 | "Then, perform all Start o..."
-          value: 'restext://Common_154'
+          # ../en-US.restext:305 | "Then, perform all Start o..."
+          value: 'restext://Round_StartLateYears_Rule'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7875
 - type: 'assign'
   var: 'round'

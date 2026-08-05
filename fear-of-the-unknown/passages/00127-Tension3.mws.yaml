@@ -23,14 +23,14 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:15186
   - type: 'section'
-    # ../en-US.restext:325 | "**Special Rule**"
-    title: 'restext://Common_321'
+    # ../en-US.restext:208 | "**Special Rule**"
+    title: 'restext://Heading_SpecialRule'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:15195
     - type: 'text'
-      # ../en-US.restext:322 | "Visiting any Location wit..."
-      value: 'restext://Common_318'
+      # ../en-US.restext:71 | "Visiting any Location wit..."
+      value: 'restext://Directive_BlackBorderMovesMobLeft'
   # ../.source/FearoftheUnknown_Eng_v15.cs:15200
   - type: 'break'
   else:
@@ -49,12 +49,12 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:15223
     - type: 'text'
-      # ../en-US.restext:321 | "The first time any player..."
-      value: 'restext://Common_317'
+      # ../en-US.restext:93 | "The first time any player..."
+      value: 'restext://Directive_FirstTimeReachesCrossroads_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:15231
     - type: 'link'
-      # ../en-US.restext:317 | "click here."
-      label: 'restext://Common_313'
+      # ../en-US.restext:49 | "click here."
+      label: 'restext://Click_Here_Period'
       target: 'Gen3Token2SignIn' # ./00287-Gen3Token2SignIn.mws.yaml
       snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:15234
@@ -67,58 +67,58 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:15241
   - type: 'section'
-    # ../en-US.restext:326 | "**Plot Expansion**"
-    title: 'restext://Common_322'
+    # ../en-US.restext:195 | "**Plot Expansion**"
+    title: 'restext://Heading_PlotExpansion'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:15250
     - type: 'text'
-      # ../en-US.restext:327 | "Bricks can now be used to..."
-      value: 'restext://Common_323'
+      # ../en-US.restext:73 | "Bricks can now be used to..."
+      value: 'restext://Directive_BricksExpandEstatePlot'
   # ../.source/FearoftheUnknown_Eng_v15.cs:15254
   - type: 'break'
     style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:15259
 - type: 'section'
-  # ../en-US.restext:328 | "**Occult Experimentation**"
-  title: 'restext://Common_324'
+  # ../en-US.restext:192 | "**Occult Experimentation**"
+  title: 'restext://Heading_OccultExperimentation'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:15268
   - type: 'text'
-    # ../en-US.restext:329 | "At the End of the Generat..."
-    value: 'restext://Common_325'
+    # ../en-US.restext:294 | "At the End of the Generat..."
+    value: 'restext://Reward_MostOccultExperiments_CabinetOfCuriosities'
   # ../.source/FearoftheUnknown_Eng_v15.cs:15281
   - type: 'conditional'
     if: 'players >= 4'
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:15283
     - type: 'text'
-      # ../en-US.restext:330 | "The player with the secon..."
-      value: 'restext://Common_326'
+      # ../en-US.restext:297 | "The player with the secon..."
+      value: 'restext://Reward_SecondMostExperiments_WithVariant'
   # ../.source/FearoftheUnknown_Eng_v15.cs:15285
   - type: 'text'
-    # ../en-US.restext:331 | " _Ties are broken by the ..."
-    value: 'restext://Common_327'
+    # ../en-US.restext:128 | " _Ties are broken by the ..."
+    value: 'restext://Directive_TieBreak_LowestVP_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:15292
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:15297
 - type: 'section'
-  # ../en-US.restext:66 | "**The Church**"
-  title: 'restext://Common_062'
+  # ../en-US.restext:230 | "**The Church**"
+  title: 'restext://Heading_TheChurch'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:15306
   - type: 'link'
-    # ../en-US.restext:67 | "Click here"
-    label: 'restext://Common_063'
+    # ../en-US.restext:36 | "Click here"
+    label: 'restext://Click_HereBare'
     target: 'FOTU-Church' # ./00352-FOTU-Church.mws.yaml
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:15307
   - type: 'text'
-    # ../en-US.restext:68 | " for an explanation of th..."
-    value: 'restext://Common_064'
+    # ../en-US.restext:76 | " for an explanation of th..."
+    value: 'restext://Directive_ChurchExplanation_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:15311
 - type: 'break'
   style: 'paragraph'
@@ -146,11 +146,11 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:15344
   - type: 'popup'
     layout: 'end_of_round'
-    # ../en-US.restext:121 | "Click here at the End of ..."
-    label: 'restext://Common_117'
+    # ../en-US.restext:33 | "Click here at the End of ..."
+    label: 'restext://Click_EndGeneration_FinalScoringDetermineFate'
     target: 'TensionBonus' # ./00092-TensionBonus.mws.yaml
-    # ../en-US.restext:181 | "End of Round"
-    okay: 'restext://Common_177'
+    # ../en-US.restext:369 | "End of Round"
+    okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
       var: '_ProgressRound'
@@ -158,10 +158,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:122 | "The Late Years of the Thi..."
-      value: 'restext://Common_118'
+      # ../en-US.restext:300 | "The Late Years of the Thi..."
+      value: 'restext://Round_GenerationIII_LateEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:160 | "Perform any End of Round ..."
-      value: 'restext://Common_156'
+      # ../en-US.restext:298 | "Perform any End of Round ..."
+      value: 'restext://Round_EndOfRoundActions_Rule'

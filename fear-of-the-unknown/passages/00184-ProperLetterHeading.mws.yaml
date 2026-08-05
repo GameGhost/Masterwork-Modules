@@ -105,8 +105,8 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21275
 - type: 'text'
-  # ../en-US.restext:75 | "**Newsprint - {newspaper}..."
-  value: 'restext://Common_071'
+  # ../en-US.restext:189 | "**Newsprint - {newspaper}..."
+  value: 'restext://Heading_Newsprint_11Oct1861'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21284
 - type: 'break'
   style: 'paragraph'
@@ -117,12 +117,12 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:21288
 - type: 'let'
   var: '_rnd_ProperLetterHeading_0'
-  # ../en-US.restext:81 | Common_077 | "Ledger"
-  # ../en-US.restext:82 | Common_078 | "Gazette"
-  # ../en-US.restext:83 | Common_079 | "Mercury"
-  # ../en-US.restext:84 | Common_080 | "Village Voice"
-  # ../en-US.restext:85 | Common_081 | "Examiner"
-  expr: '["restext://Common_077", "restext://Common_078", "restext://Common_079", "restext://Common_080", "restext://Common_081"].shuffled("ProperLetterHeading_4")[0]'
+  # ../en-US.restext:339 | Title_Ledger | "Ledger"
+  # ../en-US.restext:334 | Title_Gazette | "Gazette"
+  # ../en-US.restext:340 | Title_Mercury | "Mercury"
+  # ../en-US.restext:361 | Title_VillageVoice | "Village Voice"
+  # ../en-US.restext:333 | Title_Examiner | "Examiner"
+  expr: '["restext://Title_Ledger", "restext://Title_Gazette", "restext://Title_Mercury", "restext://Title_VillageVoice", "restext://Title_Examiner"].shuffled("ProperLetterHeading_4")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21288
 - type: 'assign'
   var: 'newspaper'

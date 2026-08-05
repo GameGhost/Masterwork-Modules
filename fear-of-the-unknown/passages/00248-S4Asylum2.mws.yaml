@@ -20,8 +20,8 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:28288
 - type: 'conditional'
   conditions:
-  # ../en-US.restext:61 | "Asylum Labor Union"
-  - if: 'asylumup == "restext://Common_057"'
+  # ../en-US.restext:327 | "Asylum Labor Union"
+  - if: 'asylumup == "restext://Title_AsylumLaborUnion"'
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:28292
     - type: 'text'
@@ -33,8 +33,8 @@ nodes:
     - type: 'text'
       # ../en-US.restext:2100 | "Anytime you visit the Asy..."
       value: 'restext://S4Asylum2_006'
-  # ../en-US.restext:62 | "Key to the Asylum"
-  - if: 'asylumup == "restext://Common_058"'
+  # ../en-US.restext:336 | "Key to the Asylum"
+  - if: 'asylumup == "restext://Title_KeyToTheAsylum"'
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:28306
     - type: 'text'
@@ -63,11 +63,11 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:28339
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:295 | "Click to continue..."
-  label: 'restext://Common_291'
+  # ../en-US.restext:29 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   target: 'S4Asylum3' # ./00159-S4Asylum3.mws.yaml
-  # ../en-US.restext:284 | "Close"
-  okay: 'restext://Common_280'
+  # ../en-US.restext:365 | "Close"
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/FearoftheUnknown_Eng_v15.cs:28350

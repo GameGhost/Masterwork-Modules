@@ -12,13 +12,13 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:239 | "Please enter the VP of yo..."
-      value: 'restext://Common_235'
+      # ../en-US.restext:88 | "Please enter the VP of yo..."
+      value: 'restext://Directive_EnterEngineeringVP_Strength'
     - type: 'input'
       label: ''
       var: 'strC'
-    # ../en-US.restext:286 | "Continue"
-    okay: 'restext://Common_282'
+    # ../en-US.restext:367 | "Continue"
+    okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'
       var: 'strC_submitted'
@@ -29,8 +29,8 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32757
 - type: 'text'
-  # ../en-US.restext:240 | "**Strength Confirmed**"
-  value: 'restext://Common_236'
+  # ../en-US.restext:229 | "**Strength Confirmed**"
+  value: 'restext://Heading_StrengthConfirmed'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32759
 - type: 'break'
   style: 'paragraph'
@@ -43,7 +43,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32769
 - type: 'link'
-  # ../en-US.restext:295 | "Click to continue..."
-  label: 'restext://Common_291'
+  # ../en-US.restext:29 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   target: 'Player3Statsc' # ./00300-Player3Statsc.mws.yaml
   snapshot: true

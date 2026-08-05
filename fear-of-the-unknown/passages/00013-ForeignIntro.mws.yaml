@@ -88,8 +88,8 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3209
 - type: 'link'
-  # ../en-US.restext:295 | "Click to continue..."
-  label: 'restext://Common_291'
+  # ../en-US.restext:29 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   target: 'CommemorativeIntro' # ./00123-CommemorativeIntro.mws.yaml
   snapshot: true
 # ../.source/FearoftheUnknown_Eng_v15.cs:3211
@@ -144,17 +144,17 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:3236
 - type: 'assign'
   var: 'witAI'
-  # ../en-US.restext:89 | Common_085 | "Church"
-  # ../en-US.restext:90 | Common_086 | "Traveling Caravan"
-  # ../en-US.restext:91 | Common_087 | "Laborer's Union"
-  expr: '["restext://Common_085", "restext://Common_086", "restext://Common_087"].shuffled("ForeignIntro_9")[0]'
+  # ../en-US.restext:331 | Title_Church | "Church"
+  # ../en-US.restext:360 | Title_TravelingCaravan | "Traveling Caravan"
+  # ../en-US.restext:337 | Title_LaborersUnion | "Laborer's Union"
+  expr: '["restext://Title_Church", "restext://Title_TravelingCaravan", "restext://Title_LaborersUnion"].shuffled("ForeignIntro_9")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3237
 - type: 'assign'
   var: 'witAI2'
-  # ../en-US.restext:92 | Common_088 | "Park"
-  # ../en-US.restext:93 | Common_089 | "Builder's Office"
-  # ../en-US.restext:94 | Common_090 | "Cemetery"
-  expr: '["restext://Common_088", "restext://Common_089", "restext://Common_090"].shuffled("ForeignIntro_10")[0]'
+  # ../en-US.restext:342 | Title_Park | "Park"
+  # ../en-US.restext:329 | Title_BuildersOffice | "Builder's Office"
+  # ../en-US.restext:330 | Title_Cemetery | "Cemetery"
+  expr: '["restext://Title_Park", "restext://Title_BuildersOffice", "restext://Title_Cemetery"].shuffled("ForeignIntro_10")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3238
 - type: 'conditional'
   conditions:
@@ -174,16 +174,16 @@ nodes:
         - type: 'assign'
           var: 'hexAI'
           # ../en-US.restext:487 | ForeignIntro_017 | "Farmer's Apprentice"
-          # ../en-US.restext:91 | Common_087 | "Laborer's Union"
-          expr: '["restext://ForeignIntro_017", "restext://Common_087"].shuffled("ForeignIntro_12")[0]'
+          # ../en-US.restext:337 | Title_LaborersUnion | "Laborer's Union"
+          expr: '["restext://ForeignIntro_017", "restext://Title_LaborersUnion"].shuffled("ForeignIntro_12")[0]'
       - match: 'Blacksmith\''s Apprentice'
         nodes:
         # ../.source/FearoftheUnknown_Eng_v15.cs:3247
         - type: 'assign'
           var: 'hexAI'
           # ../en-US.restext:486 | ForeignIntro_010 | "Blacksmith's Apprentice"
-          # ../en-US.restext:91 | Common_087 | "Laborer's Union"
-          expr: '["restext://ForeignIntro_010", "restext://Common_087"].shuffled("ForeignIntro_13")[0]'
+          # ../en-US.restext:337 | Title_LaborersUnion | "Laborer's Union"
+          expr: '["restext://ForeignIntro_010", "restext://Title_LaborersUnion"].shuffled("ForeignIntro_13")[0]'
   - if: 'players == 3'
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:3252
@@ -200,16 +200,16 @@ nodes:
         - type: 'assign'
           var: 'hexAI'
           # ../en-US.restext:487 | ForeignIntro_017 | "Farmer's Apprentice"
-          # ../en-US.restext:91 | Common_087 | "Laborer's Union"
-          expr: '["restext://ForeignIntro_017", "restext://Common_087"].shuffled("ForeignIntro_15")[0]'
+          # ../en-US.restext:337 | Title_LaborersUnion | "Laborer's Union"
+          expr: '["restext://ForeignIntro_017", "restext://Title_LaborersUnion"].shuffled("ForeignIntro_15")[0]'
       - match: 'Blacksmith\''s Apprentice'
         nodes:
         # ../.source/FearoftheUnknown_Eng_v15.cs:3259
         - type: 'assign'
           var: 'hexAI'
           # ../en-US.restext:486 | ForeignIntro_010 | "Blacksmith's Apprentice"
-          # ../en-US.restext:91 | Common_087 | "Laborer's Union"
-          expr: '["restext://ForeignIntro_010", "restext://Common_087"].shuffled("ForeignIntro_16")[0]'
+          # ../en-US.restext:337 | Title_LaborersUnion | "Laborer's Union"
+          expr: '["restext://ForeignIntro_010", "restext://Title_LaborersUnion"].shuffled("ForeignIntro_16")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3262
 - type: 'assign'
   var: 'visit'

@@ -13,18 +13,18 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:14926
   - type: 'assign'
     var: 'teaopt'
-    # ../en-US.restext:28 | "Barracks"
-    expr: '"restext://Common_024"'
+    # ../en-US.restext:248 | "Barracks"
+    expr: '"restext://Title_Barracks"'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:14930
   - type: 'assign'
     var: 'teaopt'
-    # ../en-US.restext:27 | "Outpost"
-    expr: '"restext://Common_023"'
+    # ../en-US.restext:266 | "Outpost"
+    expr: '"restext://Title_Outpost"'
 # ../.source/ATimeofWar_Eng_v8.cs:14935
 - type: 'text'
-  # ../en-US.restext:6 | "**All players may again v..."
-  value: 'restext://Common_002'
+  # ../en-US.restext:55 | "**All players may again v..."
+  value: 'restext://Directive_AllPlayersMayViewStorybookAgain'
 # ../.source/ATimeofWar_Eng_v8.cs:14937
 - type: 'break'
   style: 'paragraph'
@@ -55,14 +55,14 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:14957
   - type: 'link'
-    # ../en-US.restext:24 | "Click to continue..."
-    label: 'restext://Common_020'
+    # ../en-US.restext:28 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: '2PAfternoonBid' # ./00290-2PAfternoonBid.mws.yaml
     snapshot: true
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:14961
   - type: 'link'
-    # ../en-US.restext:24 | "Click to continue..."
-    label: 'restext://Common_020'
+    # ../en-US.restext:28 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: 'AfternoonTeab' # ./00289-AfternoonTeab.mws.yaml
     snapshot: true

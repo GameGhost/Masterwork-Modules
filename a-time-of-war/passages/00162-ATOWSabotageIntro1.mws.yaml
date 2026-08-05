@@ -13,23 +13,23 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:17904
 - type: 'popup'
-  # ../en-US.restext:184 | "Once you are ready, click..."
-  label: 'restext://Common_180'
+  # ../en-US.restext:40 | "Once you are ready, click..."
+  label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:185 | "Close"
-  cancel: 'restext://Common_181'
+  # ../en-US.restext:282 | "Close"
+  cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:17913
   - type: 'text'
-    # ../en-US.restext:12 | "**A Time for Sabotage**"
-    value: 'restext://Common_008'
+    # ../en-US.restext:119 | "**A Time for Sabotage**"
+    value: 'restext://Heading_ATimeForSabotage'
   # ../.source/ATimeofWar_Eng_v8.cs:17915
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:17916
   - type: 'text'
-    # ../en-US.restext:13 | "For too long I had been i..."
-    value: 'restext://Common_009'
+    # ../en-US.restext:212 | "For too long I had been i..."
+    value: 'restext://Narrative_TooLongIgnoredSabotage'
   # ../.source/ATimeofWar_Eng_v8.cs:17917
   - type: 'break'
     style: 'paragraph'
@@ -40,22 +40,22 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:17924
   - type: 'assign'
     var: 'sabotagee1'
-    # ../en-US.restext:78 | "none"
-    expr: '"restext://Common_074"'
+    # ../en-US.restext:16 | "none"
+    expr: '"restext://Choice_None"'
   # ../.source/ATimeofWar_Eng_v8.cs:17923
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:17928
   - type: 'text'
-    # ../en-US.restext:14 | "**The decision was clear ..."
-    value: 'restext://Common_010'
+    # ../en-US.restext:135 | "**The decision was clear ..."
+    value: 'restext://Heading_DecisionWasClear'
   # ../.source/ATimeofWar_Eng_v8.cs:17930
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:17932
   - type: 'link'
-    # ../en-US.restext:15 | "I chose to sabotage the v..."
-    label: 'restext://Common_011'
+    # ../en-US.restext:19 | "I chose to sabotage the v..."
+    label: 'restext://Choice_SabotageTheVillage'
     target: 'ATOWSabotage1' # ./00160-ATOWSabotage1.mws.yaml
     snapshot: true
   # ../.source/ATimeofWar_Eng_v8.cs:17933
@@ -78,7 +78,7 @@ nodes:
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:17941
   - type: 'link'
-    # ../en-US.restext:16 | "Instead, I chose to absta..."
-    label: 'restext://Common_012'
+    # ../en-US.restext:8 | "Instead, I chose to absta..."
+    label: 'restext://Choice_AbstainFocusStudies'
     target: 'ATOWSabotageNO' # ./00209-ATOWSabotageNO.mws.yaml
     snapshot: true

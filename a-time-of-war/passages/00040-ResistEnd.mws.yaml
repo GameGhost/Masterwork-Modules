@@ -32,50 +32,50 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:5435
   - type: 'conditional'
-    # ../en-US.restext:26 | "Unified Monarchists"
-    if: 'warwinner == "restext://Common_022"'
+    # ../en-US.restext:279 | "Unified Monarchists"
+    if: 'warwinner == "restext://Title_UnifiedMonarchists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:5439
     - type: 'popup'
       layout: 'end_of_generation'
-      # ../en-US.restext:186 | "Click here to continue..."
-      label: 'restext://Common_182'
+      # ../en-US.restext:27 | "Click here to continue..."
+      label: 'restext://Click_ContinueEllipsis_B'
       target: 'PeaceIntro' # ./00042-PeaceIntro.mws.yaml
-      # ../en-US.restext:185 | "Close"
-      okay: 'restext://Common_181'
+      # ../en-US.restext:282 | "Close"
+      okay: 'restext://UIButton_Close'
       snapshot: true
       content:
       - type: 'let'
         var: 'title'
-        # ../en-US.restext:170 | "End of Generation"
-        expr: '"restext://Common_166"'
+        # ../en-US.restext:252 | "End of Generation"
+        expr: '"restext://Title_EndOfGeneration"'
       - type: 'let'
         var: 'completedRound'
         expr: '6'
       - type: 'text'
-        # ../en-US.restext:171 | "Remove all player pieces ..."
-        value: 'restext://Common_167'
+        # ../en-US.restext:73 | "Remove all player pieces ..."
+        value: 'restext://Directive_EndGeneration_PlayersKeepWeaponTokens'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:5446
     - type: 'popup'
       layout: 'end_of_generation'
-      # ../en-US.restext:186 | "Click here to continue..."
-      label: 'restext://Common_182'
+      # ../en-US.restext:27 | "Click here to continue..."
+      label: 'restext://Click_ContinueEllipsis_B'
       target: 'MonarchReignIntro' # ./00041-MonarchReignIntro.mws.yaml
-      # ../en-US.restext:185 | "Close"
-      okay: 'restext://Common_181'
+      # ../en-US.restext:282 | "Close"
+      okay: 'restext://UIButton_Close'
       snapshot: true
       content:
       - type: 'let'
         var: 'title'
-        # ../en-US.restext:170 | "End of Generation"
-        expr: '"restext://Common_166"'
+        # ../en-US.restext:252 | "End of Generation"
+        expr: '"restext://Title_EndOfGeneration"'
       - type: 'let'
         var: 'completedRound'
         expr: '6'
       - type: 'text'
-        # ../en-US.restext:171 | "Remove all player pieces ..."
-        value: 'restext://Common_167'
+        # ../en-US.restext:73 | "Remove all player pieces ..."
+        value: 'restext://Directive_EndGeneration_PlayersKeepWeaponTokens'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:5454
   - type: 'text'
@@ -99,47 +99,47 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:5474
   - type: 'conditional'
-    # ../en-US.restext:26 | "Unified Monarchists"
-    if: 'warwinner == "restext://Common_022"'
+    # ../en-US.restext:279 | "Unified Monarchists"
+    if: 'warwinner == "restext://Title_UnifiedMonarchists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:5478
     - type: 'popup'
       layout: 'end_of_generation'
-      # ../en-US.restext:186 | "Click here to continue..."
-      label: 'restext://Common_182'
+      # ../en-US.restext:27 | "Click here to continue..."
+      label: 'restext://Click_ContinueEllipsis_B'
       target: 'MonarchReignIntro' # ./00041-MonarchReignIntro.mws.yaml
-      # ../en-US.restext:185 | "Close"
-      okay: 'restext://Common_181'
+      # ../en-US.restext:282 | "Close"
+      okay: 'restext://UIButton_Close'
       snapshot: true
       content:
       - type: 'let'
         var: 'title'
-        # ../en-US.restext:170 | "End of Generation"
-        expr: '"restext://Common_166"'
+        # ../en-US.restext:252 | "End of Generation"
+        expr: '"restext://Title_EndOfGeneration"'
       - type: 'let'
         var: 'completedRound'
         expr: '6'
       - type: 'text'
-        # ../en-US.restext:171 | "Remove all player pieces ..."
-        value: 'restext://Common_167'
+        # ../en-US.restext:73 | "Remove all player pieces ..."
+        value: 'restext://Directive_EndGeneration_PlayersKeepWeaponTokens'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:5485
     - type: 'popup'
       layout: 'end_of_generation'
-      # ../en-US.restext:186 | "Click here to continue..."
-      label: 'restext://Common_182'
+      # ../en-US.restext:27 | "Click here to continue..."
+      label: 'restext://Click_ContinueEllipsis_B'
       target: 'PeaceIntro' # ./00042-PeaceIntro.mws.yaml
-      # ../en-US.restext:185 | "Close"
-      okay: 'restext://Common_181'
+      # ../en-US.restext:282 | "Close"
+      okay: 'restext://UIButton_Close'
       snapshot: true
       content:
       - type: 'let'
         var: 'title'
-        # ../en-US.restext:170 | "End of Generation"
-        expr: '"restext://Common_166"'
+        # ../en-US.restext:252 | "End of Generation"
+        expr: '"restext://Title_EndOfGeneration"'
       - type: 'let'
         var: 'completedRound'
         expr: '6'
       - type: 'text'
-        # ../en-US.restext:171 | "Remove all player pieces ..."
-        value: 'restext://Common_167'
+        # ../en-US.restext:73 | "Remove all player pieces ..."
+        value: 'restext://Directive_EndGeneration_PlayersKeepWeaponTokens'

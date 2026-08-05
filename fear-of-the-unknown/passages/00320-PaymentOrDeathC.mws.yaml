@@ -24,45 +24,45 @@ nodes:
       target: 'Payment2Hub' # ./00316-Payment2Hub.mws.yaml
 # ../.source/FearoftheUnknown_Eng_v15.cs:34030
 - type: 'text'
-  # ../en-US.restext:204 | "**Carefully hand this Sto..."
-  value: 'restext://Common_200'
+  # ../en-US.restext:316 | "**Carefully hand this Sto..."
+  value: 'restext://Storybook_HandDeviceToNameC'
 # ../.source/FearoftheUnknown_Eng_v15.cs:34035
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:34041
 - type: 'popup'
-  # ../en-US.restext:46 | "Once you are ready, click..."
-  label: 'restext://Common_042'
+  # ../en-US.restext:53 | "Once you are ready, click..."
+  label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:284 | "Close"
-  cancel: 'restext://Common_280'
+  # ../en-US.restext:365 | "Close"
+  cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:34055
   - type: 'text'
-    # ../en-US.restext:225 | "**A Most Unwelcome Return**"
-    value: 'restext://Common_221'
+    # ../en-US.restext:146 | "**A Most Unwelcome Return**"
+    value: 'restext://Heading_AMostUnwelcomeReturn'
   # ../.source/FearoftheUnknown_Eng_v15.cs:34057
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:34061
   - type: 'text'
-    # ../en-US.restext:232 | "**Scribbled Note - {nameC..."
-    value: 'restext://Common_228'
+    # ../en-US.restext:202 | "**Scribbled Note - {nameC..."
+    value: 'restext://Heading_ScribbledNote_NameC'
   # ../.source/FearoftheUnknown_Eng_v15.cs:34069
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:34071
   - type: 'text'
-    # ../en-US.restext:227 | "I write this note by cand..."
-    value: 'restext://Common_223'
+    # ../en-US.restext:278 | "I write this note by cand..."
+    value: 'restext://Narrative_WriteByCandlelightSpandrel'
   # ../.source/FearoftheUnknown_Eng_v15.cs:34073
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:34075
   - type: 'text'
-    # ../en-US.restext:228 | "I do not know how they go..."
-    value: 'restext://Common_224'
+    # ../en-US.restext:266 | "I do not know how they go..."
+    value: 'restext://Narrative_PaleIndividualsCoalBlackSuits'
   # ../.source/FearoftheUnknown_Eng_v15.cs:34076
   - type: 'break'
     style: 'paragraph'
@@ -75,15 +75,15 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:34093
   - type: 'text'
-    # ../en-US.restext:287 | "**Choose:**"
-    value: 'restext://Common_283'
+    # ../en-US.restext:153 | "**Choose:**"
+    value: 'restext://Heading_ChooseColon'
   # ../.source/FearoftheUnknown_Eng_v15.cs:34095
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:34098
   - type: 'link'
-    # ../en-US.restext:200 | "Yes, I will pay the entir..."
-    label: 'restext://Common_196'
+    # ../en-US.restext:26 | "Yes, I will pay the entir..."
+    label: 'restext://Choice_YesWillPayEntireAmount'
     target: 'Payment2ThanksC' # ./00324-Payment2ThanksC.mws.yaml
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:34099
@@ -91,11 +91,11 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:34102
   - type: 'link'
-    # ../en-US.restext:230 | "No, I will not pay."
-    label: 'restext://Common_226'
+    # ../en-US.restext:22 | "No, I will not pay."
+    label: 'restext://Choice_NoWillNotPay'
     target: 'Payment2NoC' # ./00323-Payment2NoC.mws.yaml
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:34103
   - type: 'text'
-    # ../en-US.restext:231 | " (You must choose this op..."
-    value: 'restext://Common_227'
+    # ../en-US.restext:74 | " (You must choose this op..."
+    value: 'restext://Directive_CannotPay_ReturnSelfFragment'

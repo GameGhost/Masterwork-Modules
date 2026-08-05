@@ -17,8 +17,8 @@ nodes:
     - type: 'input'
       label: ''
       var: 'menname'
-    # ../en-US.restext:286 | "Continue"
-    okay: 'restext://Common_282'
+    # ../en-US.restext:367 | "Continue"
+    okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'
       var: 'menname_submitted'
@@ -49,22 +49,22 @@ nodes:
 - type: 'switch'
   on: 'mentype'
   cases:
-  # ../en-US.restext:139 | "Engineering"
-  - match: 'restext://Common_135'
+  # ../en-US.restext:144 | "Engineering"
+  - match: 'restext://Focus_Engineering'
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:29465
     - type: 'text'
       # ../en-US.restext:2178 | "A new wing of the facilit..."
       value: 'restext://LiberalEvent3Resa_006'
-  # ../en-US.restext:140 | "Chemistry"
-  - match: 'restext://Common_136'
+  # ../en-US.restext:143 | "Chemistry"
+  - match: 'restext://Focus_Chemistry'
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:29469
     - type: 'text'
       # ../en-US.restext:2179 | "Using new advances in con..."
       value: 'restext://LiberalEvent3Resa_007'
-  # ../en-US.restext:141 | "Biology"
-  - match: 'restext://Common_137'
+  # ../en-US.restext:142 | "Biology"
+  - match: 'restext://Focus_Biology'
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:29473
     - type: 'text'
@@ -88,11 +88,11 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:29490
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:295 | "Click to continue..."
-  label: 'restext://Common_291'
+  # ../en-US.restext:29 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   target: 'Liberal2' # ./00050-Liberal2.mws.yaml
-  # ../en-US.restext:284 | "Close"
-  okay: 'restext://Common_280'
+  # ../en-US.restext:365 | "Close"
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/FearoftheUnknown_Eng_v15.cs:29506
@@ -136,5 +136,5 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:29551
     - type: 'text'
-      # ../en-US.restext:138 | "The player who has the se..."
-      value: 'restext://Common_134'
+      # ../en-US.restext:296 | "The player who has the se..."
+      value: 'restext://Reward_SecondMostExperiments_HasVariant'

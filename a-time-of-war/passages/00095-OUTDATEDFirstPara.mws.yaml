@@ -47,8 +47,8 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:12064
   - type: 'link'
-    # ../en-US.restext:24 | "Click to continue..."
-    label: 'restext://Common_020'
+    # ../en-US.restext:28 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: '${OUTDATEDFirstParanextPsg}'
     snapshot: true
     onclick:
@@ -63,7 +63,7 @@ nodes:
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:12068
   - type: 'link'
-    # ../en-US.restext:24 | "Click to continue..."
-    label: 'restext://Common_020'
+    # ../en-US.restext:28 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: 'Paradox2' # ./00073-Paradox2.mws.yaml
     snapshot: true

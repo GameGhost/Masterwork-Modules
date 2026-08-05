@@ -8,8 +8,8 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:31845
 - type: 'text'
-  # ../en-US.restext:113 | "**Letter from {tempid} - _**"
-  value: 'restext://Common_109'
+  # ../en-US.restext:181 | "**Letter from {tempid} - _**"
+  value: 'restext://Heading_LetterFromTempid_Open'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31849
 - type: 'include_passage'
   target: 'date1a' # ./00207-date1a.mws.yaml
@@ -40,11 +40,11 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31869
 - type: 'popup'
-  # ../en-US.restext:318 | "Click to return..."
-  label: 'restext://Common_314'
+  # ../en-US.restext:51 | "Click to return..."
+  label: 'restext://Click_Return'
   layout: 'reveal'
-  # ../en-US.restext:284 | "Close"
-  cancel: 'restext://Common_280'
+  # ../en-US.restext:365 | "Close"
+  cancel: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/FearoftheUnknown_Eng_v15.cs:31933
@@ -63,8 +63,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:286 | "Continue"
-        label: 'restext://Common_282'
+        # ../en-US.restext:367 | "Continue"
+        label: 'restext://UIButton_Continue'
         target: 'Isolation' # ./00019-Isolation.mws.yaml
         snapshot: true
     - match: 11
@@ -74,8 +74,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:286 | "Continue"
-        label: 'restext://Common_282'
+        # ../en-US.restext:367 | "Continue"
+        label: 'restext://UIButton_Continue'
         target: 'Isolation2' # ./00043-Isolation2.mws.yaml
         snapshot: true
     - match: 12
@@ -85,8 +85,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:286 | "Continue"
-        label: 'restext://Common_282'
+        # ../en-US.restext:367 | "Continue"
+        label: 'restext://UIButton_Continue'
         target: 'Isolation3' # ./00044-Isolation3.mws.yaml
         snapshot: true
     - match: 13
@@ -96,8 +96,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:286 | "Continue"
-        label: 'restext://Common_282'
+        # ../en-US.restext:367 | "Continue"
+        label: 'restext://UIButton_Continue'
         target: 'Tension' # ./00020-Tension.mws.yaml
         snapshot: true
     - match: 14
@@ -107,8 +107,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:286 | "Continue"
-        label: 'restext://Common_282'
+        # ../en-US.restext:367 | "Continue"
+        label: 'restext://UIButton_Continue'
         target: 'Tension2' # ./00041-Tension2.mws.yaml
         snapshot: true
     - match: 15
@@ -118,8 +118,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:286 | "Continue"
-        label: 'restext://Common_282'
+        # ../en-US.restext:367 | "Continue"
+        label: 'restext://UIButton_Continue'
         target: 'Tension3' # ./00127-Tension3.mws.yaml
         snapshot: true
     - match: 16
@@ -129,8 +129,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:286 | "Continue"
-        label: 'restext://Common_282'
+        # ../en-US.restext:367 | "Continue"
+        label: 'restext://UIButton_Continue'
         target: 'Privatized' # ./00025-Privatized.mws.yaml
         snapshot: true
     - match: 17
@@ -140,8 +140,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:286 | "Continue"
-        label: 'restext://Common_282'
+        # ../en-US.restext:367 | "Continue"
+        label: 'restext://UIButton_Continue'
         target: 'Privatized2' # ./00047-Privatized2.mws.yaml
         snapshot: true
     - match: 18
@@ -151,8 +151,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:286 | "Continue"
-        label: 'restext://Common_282'
+        # ../en-US.restext:367 | "Continue"
+        label: 'restext://UIButton_Continue'
         target: 'Privatized3' # ./00048-Privatized3.mws.yaml
         snapshot: true
     - match: 19
@@ -162,8 +162,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:286 | "Continue"
-        label: 'restext://Common_282'
+        # ../en-US.restext:367 | "Continue"
+        label: 'restext://UIButton_Continue'
         target: 'Liberal' # ./00026-Liberal.mws.yaml
         snapshot: true
     - match: 20
@@ -173,8 +173,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:286 | "Continue"
-        label: 'restext://Common_282'
+        # ../en-US.restext:367 | "Continue"
+        label: 'restext://UIButton_Continue'
         target: 'Liberal2' # ./00050-Liberal2.mws.yaml
         snapshot: true
     default:
@@ -183,8 +183,8 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:286 | "Continue"
-      label: 'restext://Common_282'
+      # ../en-US.restext:367 | "Continue"
+      label: 'restext://UIButton_Continue'
       target: 'Liberal3' # ./00051-Liberal3.mws.yaml
       snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:31934

@@ -6,8 +6,8 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:16914
 - type: 'conditional'
-  # ../en-US.restext:25 | "Separatists"
-  if: 'warloser == "restext://Common_021"'
+  # ../en-US.restext:269 | "Separatists"
+  if: 'warloser == "restext://Title_Separatists"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:16916
   - type: 'conditional'
@@ -15,8 +15,8 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:16920
     - type: 'text'
-      # ../en-US.restext:173 | "**Suspicions Confirmed**"
-      value: 'restext://Common_169'
+      # ../en-US.restext:179 | "**Suspicions Confirmed**"
+      value: 'restext://Heading_SuspicionsConfirmed'
     # ../.source/ATimeofWar_Eng_v8.cs:16922
     - type: 'break'
     # ../.source/ATimeofWar_Eng_v8.cs:16923
@@ -29,11 +29,11 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:16928
     - type: 'popup'
       layout: 'setup'
-      # ../en-US.restext:24 | "Click to continue..."
-      label: 'restext://Common_020'
+      # ../en-US.restext:28 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
       target: 'PeaceWar' # ./00239-PeaceWar.mws.yaml
-      # ../en-US.restext:185 | "Close"
-      okay: 'restext://Common_181'
+      # ../en-US.restext:282 | "Close"
+      okay: 'restext://UIButton_Close'
       snapshot: true
       header:
       # ../.source/ATimeofWar_Eng_v8.cs:16951

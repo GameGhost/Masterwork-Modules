@@ -2,10 +2,10 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Martial1'
-# ../en-US.restext:61 | "Martial Law"
-title: 'restext://Common_057'
-# ../en-US.restext:214 | "Early Years"
-subtitle: 'restext://Common_210'
+# ../en-US.restext:258 | "Martial Law"
+title: 'restext://Title_MartialLaw'
+# ../en-US.restext:251 | "Early Years"
+subtitle: 'restext://Title_EarlyYears'
 tags:
 - 'HUB'
 layout: 'hub_early'
@@ -21,8 +21,8 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:3638
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:215 | "Accept"
-    okay: 'restext://Common_211'
+    # ../en-US.restext:281 | "Accept"
+    okay: 'restext://UIButton_Accept'
     header:
     # ../.source/ATimeofWar_Eng_v8.cs:3642
     - type: 'image'
@@ -37,8 +37,8 @@ nodes:
     - type: 'break'
     # ../.source/ATimeofWar_Eng_v8.cs:3656
     - type: 'text'
-      # ../en-US.restext:62 | "Place the Suspicion Marke..."
-      value: 'restext://Common_058'
+      # ../en-US.restext:93 | "Place the Suspicion Marke..."
+      value: 'restext://Directive_PlaceSuspicionMarker_Lead'
     # ../.source/ATimeofWar_Eng_v8.cs:3659
     - type: 'conditional'
       if: '!Martial1'
@@ -49,8 +49,8 @@ nodes:
         expr: '1'
       # ../.source/ATimeofWar_Eng_v8.cs:3662
       - type: 'conditional'
-        # ../en-US.restext:26 | "Unified Monarchists"
-        if: 'warwinner == "restext://Common_022"'
+        # ../en-US.restext:279 | "Unified Monarchists"
+        if: 'warwinner == "restext://Title_UnifiedMonarchists"'
         then:
         # ../.source/ATimeofWar_Eng_v8.cs:3664
         - type: 'assign'
@@ -67,8 +67,8 @@ nodes:
           expr: 'tracker - _rnd_Martial1_0'
     # ../.source/ATimeofWar_Eng_v8.cs:3671
     - type: 'text'
-      # ../en-US.restext:63 | "**{tracker}** and the {ic..."
-      value: 'restext://Common_059'
+      # ../en-US.restext:108 | "**{tracker}** and the {ic..."
+      value: 'restext://Directive_TrackerAndMobMarkerLeft'
     # ../.source/ATimeofWar_Eng_v8.cs:3676
     - type: 'conditional'
       if: 'players == 3'
@@ -77,16 +77,16 @@ nodes:
       - type: 'break'
       # ../.source/ATimeofWar_Eng_v8.cs:3679
       - type: 'text'
-        # ../en-US.restext:238 | "Then, since this is a 3 p..."
-        value: 'restext://Common_234'
+        # ../en-US.restext:54 | "Then, since this is a 3 p..."
+        value: 'restext://Directive_3Player_PassMarker_A'
   # ../.source/ATimeofWar_Eng_v8.cs:3683
   - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:3685
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:3688
 - type: 'section'
-  # ../en-US.restext:64 | "**Turn the Tide**"
-  title: 'restext://Common_060'
+  # ../en-US.restext:184 | "**Turn the Tide**"
+  title: 'restext://Heading_TurnTheTide'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:3696
@@ -95,8 +95,8 @@ nodes:
     value: 'restext://Martial1_006'
   # ../.source/ATimeofWar_Eng_v8.cs:3711
   - type: 'conditional'
-    # ../en-US.restext:25 | "Separatists"
-    if: 'warloser == "restext://Common_021"'
+    # ../en-US.restext:269 | "Separatists"
+    if: 'warloser == "restext://Title_Separatists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:3715
     - type: 'text'
@@ -120,18 +120,18 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:3738
   - type: 'section'
-    # ../en-US.restext:65 | "{icon:storybooktoken} **W..."
-    title: 'restext://Common_061'
+    # ../en-US.restext:178 | "{icon:storybooktoken} **W..."
+    title: 'restext://Heading_StorybookToken_WeaponsBonus'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:3747
     - type: 'text'
-      # ../en-US.restext:66 | "The first player to compl..."
-      value: 'restext://Common_062'
+      # ../en-US.restext:75 | "The first player to compl..."
+      value: 'restext://Directive_FirstPlayerComplete2AdvancedWeaponry_Fragment'
     # ../.source/ATimeofWar_Eng_v8.cs:3753
     - type: 'link'
-      # ../en-US.restext:67 | "clicks here for a special..."
-      label: 'restext://Common_063'
+      # ../en-US.restext:26 | "clicks here for a special..."
+      label: 'restext://Click_ClicksHereSpecialBonus_Typo'
       target: 'PackingHeat1' # ./00127-PackingHeat1.mws.yaml
       snapshot: true
   # ../.source/ATimeofWar_Eng_v8.cs:3755
@@ -141,39 +141,39 @@ nodes:
 - type: 'switch'
   on: 'warwinner'
   cases:
-  # ../en-US.restext:26 | "Unified Monarchists"
-  - match: 'restext://Common_022'
+  # ../en-US.restext:279 | "Unified Monarchists"
+  - match: 'restext://Title_UnifiedMonarchists'
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:3762
     - type: 'section'
-      # ../en-US.restext:68 | "**Military Demands - Barr..."
-      title: 'restext://Common_064'
+      # ../en-US.restext:147 | "**Military Demands - Barr..."
+      title: 'restext://Heading_MilitaryDemandsBarracks'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:3770
       - type: 'text'
-        # ../en-US.restext:69 | "The Monarchy demands a co..."
-        value: 'restext://Common_065'
+        # ../en-US.restext:80 | "The Monarchy demands a co..."
+        value: 'restext://Directive_MonarchyDemandsServiceBarracksPenalty'
       # ../.source/ATimeofWar_Eng_v8.cs:3774
       - type: 'break'
         style: 'paragraph'
       # ../.source/ATimeofWar_Eng_v8.cs:3776
       - type: 'text'
-        # ../en-US.restext:70 | "When placing a piece on t..."
-        value: 'restext://Common_066'
-  # ../en-US.restext:25 | "Separatists"
-  - match: 'restext://Common_021'
+        # ../en-US.restext:92 | "When placing a piece on t..."
+        value: 'restext://Directive_PlaceOnBarracksNoBonus'
+  # ../en-US.restext:269 | "Separatists"
+  - match: 'restext://Title_Separatists'
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:3788
     - type: 'section'
-      # ../en-US.restext:71 | "**Military Incentive - Ba..."
-      title: 'restext://Common_067'
+      # ../en-US.restext:148 | "**Military Incentive - Ba..."
+      title: 'restext://Heading_MilitaryIncentiveBarracks'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:3796
       - type: 'text'
-        # ../en-US.restext:72 | "The Separatists urge citi..."
-        value: 'restext://Common_068'
+        # ../en-US.restext:104 | "The Separatists urge citi..."
+        value: 'restext://Directive_SeparatistsUrgeRallyReward'
       # ../.source/ATimeofWar_Eng_v8.cs:3799
       - type: 'break'
         style: 'paragraph'
@@ -186,18 +186,18 @@ nodes:
       style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:3814
 - type: 'section'
-  # ../en-US.restext:73 | "**Outpost**"
-  title: 'restext://Common_069'
+  # ../en-US.restext:152 | "**Outpost**"
+  title: 'restext://Heading_OutpostBold'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:3822
   - type: 'text'
-    # ../en-US.restext:74 | "An Outpost is open in tow..."
-    value: 'restext://Common_070'
+    # ../en-US.restext:88 | "An Outpost is open in tow..."
+    value: 'restext://Directive_OutpostOpenForTrading_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:3826
   - type: 'link'
-    # ../en-US.restext:75 | "Click here for an explana..."
-    label: 'restext://Common_071'
+    # ../en-US.restext:36 | "Click here for an explana..."
+    label: 'restext://Click_HereForOutpostExplanation'
     target: 'OutpostExplain' # ./00221-OutpostExplain.mws.yaml
     snapshot: true
   # ../.source/ATimeofWar_Eng_v8.cs:3827
@@ -206,20 +206,20 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:3831
   - type: 'popup'
     layout: 'end_of_generation'
-    # ../en-US.restext:221 | "Click here at the end of ..."
-    label: 'restext://Common_217'
+    # ../en-US.restext:31 | "Click here at the end of ..."
+    label: 'restext://Click_EndRound_NextRound'
     target: 'ATOWSabotageIntro1' # ./00162-ATOWSabotageIntro1.mws.yaml
-    # ../en-US.restext:185 | "Close"
-    okay: 'restext://Common_181'
+    # ../en-US.restext:282 | "Close"
+    okay: 'restext://UIButton_Close'
     snapshot: true
     content:
     - type: 'let'
       var: 'title'
-      # ../en-US.restext:76 | "Special Setup"
-      expr: '"restext://Common_072"'
+      # ../en-US.restext:270 | "Special Setup"
+      expr: '"restext://Title_SpecialSetup"'
     - type: 'let'
       var: 'completedRound'
       expr: '-1'
     - type: 'text'
-      # ../en-US.restext:77 | "Do NOT perform the End of..."
-      value: 'restext://Common_073'
+      # ../en-US.restext:67 | "Do NOT perform the End of..."
+      value: 'restext://Directive_DoNotPerformEndOfRoundYet'

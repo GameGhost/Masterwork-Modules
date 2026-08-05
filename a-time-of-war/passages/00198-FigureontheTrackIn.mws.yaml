@@ -17,11 +17,11 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:20640
 - type: 'popup'
-  # ../en-US.restext:184 | "Once you are ready, click..."
-  label: 'restext://Common_180'
+  # ../en-US.restext:40 | "Once you are ready, click..."
+  label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:185 | "Close"
-  cancel: 'restext://Common_181'
+  # ../en-US.restext:282 | "Close"
+  cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:20679
@@ -54,11 +54,11 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:20700
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:24 | "Click to continue..."
-    label: 'restext://Common_020'
+    # ../en-US.restext:28 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: 'FigureontheTrackInb' # ./00199-FigureontheTrackInb.mws.yaml
-    # ../en-US.restext:185 | "Close"
-    okay: 'restext://Common_181'
+    # ../en-US.restext:282 | "Close"
+    okay: 'restext://UIButton_Close'
     snapshot: true
     header:
     # ../.source/ATimeofWar_Eng_v8.cs:20656

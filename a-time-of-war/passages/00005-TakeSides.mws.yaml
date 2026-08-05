@@ -2,10 +2,10 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TakeSides'
-# ../en-US.restext:213 | "TAKING SIDES"
-title: 'restext://Common_209'
-# ../en-US.restext:214 | "Early Years"
-subtitle: 'restext://Common_210'
+# ../en-US.restext:272 | "TAKING SIDES"
+title: 'restext://Title_TakingSidesCaps'
+# ../en-US.restext:251 | "Early Years"
+subtitle: 'restext://Title_EarlyYears'
 tags:
 - 'HUB'
 layout: 'hub_early'
@@ -21,8 +21,8 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:1499
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:215 | "Accept"
-    okay: 'restext://Common_211'
+    # ../en-US.restext:281 | "Accept"
+    okay: 'restext://UIButton_Accept'
     header:
     # ../.source/ATimeofWar_Eng_v8.cs:1503
     - type: 'image'
@@ -102,25 +102,25 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:1589
 - type: 'section'
-  # ../en-US.restext:216 | "{icon:storybooktoken} **T..."
-  title: 'restext://Common_212'
+  # ../en-US.restext:169 | "{icon:storybooktoken} **T..."
+  title: 'restext://Heading_StorybookToken_TownHallPoliticalRumblings'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:1599
   - type: 'text'
-    # ../en-US.restext:217 | "When you visit the Town H..."
-    value: 'restext://Common_213'
+    # ../en-US.restext:112 | "When you visit the Town H..."
+    value: 'restext://Directive_VisitTownHallTradeKnowledgeCube'
   # ../.source/ATimeofWar_Eng_v8.cs:1607
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:1609
   - type: 'text'
-    # ../en-US.restext:218 | "In addition, you will spe..."
-    value: 'restext://Common_214'
+    # ../en-US.restext:105 | "In addition, you will spe..."
+    value: 'restext://Directive_SpeakPeoplePoliticalClimate_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:1611
   - type: 'link'
-    # ../en-US.restext:219 | "Click here whenever you v..."
-    label: 'restext://Common_215'
+    # ../en-US.restext:48 | "Click here whenever you v..."
+    label: 'restext://Click_WheneverVisitTownHall'
     target: 'RumorD' # ./00006-RumorD.mws.yaml
     snapshot: true
 # ../.source/ATimeofWar_Eng_v8.cs:1613
@@ -128,8 +128,8 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:1617
 - type: 'section'
-  # ../en-US.restext:220 | "**Second Round - Pledge o..."
-  title: 'restext://Common_216'
+  # ../en-US.restext:161 | "**Second Round - Pledge o..."
+  title: 'restext://Heading_SecondRoundPledgeOfSupport'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:1625
@@ -142,11 +142,11 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:1631
   - type: 'popup'
     layout: 'end_of_round'
-    # ../en-US.restext:221 | "Click here at the end of ..."
-    label: 'restext://Common_217'
+    # ../en-US.restext:31 | "Click here at the end of ..."
+    label: 'restext://Click_EndRound_NextRound'
     target: 'TownHallSpecial' # ./00108-TownHallSpecial.mws.yaml
-    # ../en-US.restext:222 | "End of Round"
-    okay: 'restext://Common_218'
+    # ../en-US.restext:285 | "End of Round"
+    okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
       var: '_ProgressRound'
@@ -159,5 +159,5 @@ nodes:
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:223 | "Then, perform all Start o..."
-      value: 'restext://Common_219'
+      # ../en-US.restext:235 | "Then, perform all Start o..."
+      value: 'restext://Round_StartMiddleYears_Rule'

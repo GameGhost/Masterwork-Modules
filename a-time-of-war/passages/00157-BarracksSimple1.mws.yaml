@@ -15,30 +15,30 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:17175
     - type: 'conditional'
-      # ../en-US.restext:26 | "Unified Monarchists"
-      if: 'warwinner == "restext://Common_022"'
+      # ../en-US.restext:279 | "Unified Monarchists"
+      if: 'warwinner == "restext://Title_UnifiedMonarchists"'
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:17179
       - type: 'text'
-        # ../en-US.restext:29 | "**Service Required**"
-        value: 'restext://Common_025'
+        # ../en-US.restext:163 | "**Service Required**"
+        value: 'restext://Heading_ServiceRequired'
       # ../.source/ATimeofWar_Eng_v8.cs:17181
       - type: 'break'
       # ../.source/ATimeofWar_Eng_v8.cs:17182
       - type: 'text'
-        # ../en-US.restext:30 | "I was admittedly distress..."
-        value: 'restext://Common_026'
+        # ../en-US.restext:197 | "I was admittedly distress..."
+        value: 'restext://Narrative_DistressedMonarchyMilitaryService'
       # ../.source/ATimeofWar_Eng_v8.cs:17183
       - type: 'break'
         style: 'paragraph'
       # ../.source/ATimeofWar_Eng_v8.cs:17186
       - type: 'popup'
         layout: 'setup'
-        # ../en-US.restext:186 | "Click here to continue..."
-        label: 'restext://Common_182'
+        # ../en-US.restext:27 | "Click here to continue..."
+        label: 'restext://Click_ContinueEllipsis_B'
         target: 'Sabotage1Now' # ./00213-Sabotage1Now.mws.yaml
-        # ../en-US.restext:185 | "Close"
-        okay: 'restext://Common_181'
+        # ../en-US.restext:282 | "Close"
+        okay: 'restext://UIButton_Close'
         snapshot: true
         header:
         # ../.source/ATimeofWar_Eng_v8.cs:17230
@@ -48,8 +48,8 @@ nodes:
         content:
         # ../.source/ATimeofWar_Eng_v8.cs:17232
         - type: 'text'
-          # ../en-US.restext:31 | "Any player who did not pl..."
-          value: 'restext://Common_027'
+          # ../en-US.restext:66 | "Any player who did not pl..."
+          value: 'restext://Directive_DidNotPlaceOnBarracks_Fragment'
         # ../.source/ATimeofWar_Eng_v8.cs:17233
         - type: 'switch'
           on: 'barrackpen'
@@ -70,8 +70,8 @@ nodes:
             nodes:
             # ../.source/ATimeofWar_Eng_v8.cs:17245
             - type: 'text'
-              # ../en-US.restext:33 | "receives **$1 less** inco..."
-              value: 'restext://Common_029'
+              # ../en-US.restext:95 | "receives **$1 less** inco..."
+              value: 'restext://Directive_Receives1LessIncome'
           - match: 3
             nodes:
             # ../.source/ATimeofWar_Eng_v8.cs:17261
@@ -88,13 +88,13 @@ nodes:
             nodes:
             # ../.source/ATimeofWar_Eng_v8.cs:17270
             - type: 'text'
-              # ../en-US.restext:34 | "**must** flip their Flag ..."
-              value: 'restext://Common_030'
+              # ../en-US.restext:82 | "**must** flip their Flag ..."
+              value: 'restext://Directive_MustFlipToSeparatist'
           default:
           # ../.source/ATimeofWar_Eng_v8.cs:17286
           - type: 'text'
-            # ../en-US.restext:32 | "is fortunate as the Monar..."
-            value: 'restext://Common_028'
+            # ../en-US.restext:78 | "is fortunate as the Monar..."
+            value: 'restext://Directive_FortunateMonarchyNoPenalty'
       else:
       # ../.source/ATimeofWar_Eng_v8.cs:17190
       - type: 'goto'
@@ -103,30 +103,30 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:17195
     - type: 'conditional'
-      # ../en-US.restext:26 | "Unified Monarchists"
-      if: 'warwinner == "restext://Common_022"'
+      # ../en-US.restext:279 | "Unified Monarchists"
+      if: 'warwinner == "restext://Title_UnifiedMonarchists"'
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:17199
       - type: 'text'
-        # ../en-US.restext:29 | "**Service Required**"
-        value: 'restext://Common_025'
+        # ../en-US.restext:163 | "**Service Required**"
+        value: 'restext://Heading_ServiceRequired'
       # ../.source/ATimeofWar_Eng_v8.cs:17201
       - type: 'break'
       # ../.source/ATimeofWar_Eng_v8.cs:17202
       - type: 'text'
-        # ../en-US.restext:30 | "I was admittedly distress..."
-        value: 'restext://Common_026'
+        # ../en-US.restext:197 | "I was admittedly distress..."
+        value: 'restext://Narrative_DistressedMonarchyMilitaryService'
       # ../.source/ATimeofWar_Eng_v8.cs:17203
       - type: 'break'
         style: 'paragraph'
       # ../.source/ATimeofWar_Eng_v8.cs:17206
       - type: 'popup'
         layout: 'setup'
-        # ../en-US.restext:186 | "Click here to continue..."
-        label: 'restext://Common_182'
+        # ../en-US.restext:27 | "Click here to continue..."
+        label: 'restext://Click_ContinueEllipsis_B'
         target: 'Sabotage1Now' # ./00213-Sabotage1Now.mws.yaml
-        # ../en-US.restext:185 | "Close"
-        okay: 'restext://Common_181'
+        # ../en-US.restext:282 | "Close"
+        okay: 'restext://UIButton_Close'
         snapshot: true
         header:
         # ../.source/ATimeofWar_Eng_v8.cs:17304
@@ -136,8 +136,8 @@ nodes:
         content:
         # ../.source/ATimeofWar_Eng_v8.cs:17306
         - type: 'text'
-          # ../en-US.restext:31 | "Any player who did not pl..."
-          value: 'restext://Common_027'
+          # ../en-US.restext:66 | "Any player who did not pl..."
+          value: 'restext://Directive_DidNotPlaceOnBarracks_Fragment'
         # ../.source/ATimeofWar_Eng_v8.cs:17307
         - type: 'switch'
           on: 'barrackpen'
@@ -158,8 +158,8 @@ nodes:
             nodes:
             # ../.source/ATimeofWar_Eng_v8.cs:17319
             - type: 'text'
-              # ../en-US.restext:33 | "receives **$1 less** inco..."
-              value: 'restext://Common_029'
+              # ../en-US.restext:95 | "receives **$1 less** inco..."
+              value: 'restext://Directive_Receives1LessIncome'
           - match: 3
             nodes:
             # ../.source/ATimeofWar_Eng_v8.cs:17335
@@ -176,13 +176,13 @@ nodes:
             nodes:
             # ../.source/ATimeofWar_Eng_v8.cs:17344
             - type: 'text'
-              # ../en-US.restext:34 | "**must** flip their Flag ..."
-              value: 'restext://Common_030'
+              # ../en-US.restext:82 | "**must** flip their Flag ..."
+              value: 'restext://Directive_MustFlipToSeparatist'
           default:
           # ../.source/ATimeofWar_Eng_v8.cs:17360
           - type: 'text'
-            # ../en-US.restext:32 | "is fortunate as the Monar..."
-            value: 'restext://Common_028'
+            # ../en-US.restext:78 | "is fortunate as the Monar..."
+            value: 'restext://Directive_FortunateMonarchyNoPenalty'
       else:
       # ../.source/ATimeofWar_Eng_v8.cs:17210
       - type: 'goto'

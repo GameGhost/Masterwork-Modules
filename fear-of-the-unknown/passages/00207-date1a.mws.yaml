@@ -11,19 +11,19 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:23451
 - type: 'let'
   var: '_rnd_date1a_1'
-  # ../en-US.restext:32 | Common_028 | "January"
-  # ../en-US.restext:33 | Common_029 | "February"
-  # ../en-US.restext:34 | Common_030 | "March"
-  # ../en-US.restext:35 | Common_031 | "April"
-  # ../en-US.restext:36 | Common_032 | "May"
-  # ../en-US.restext:37 | Common_033 | "June"
-  # ../en-US.restext:38 | Common_034 | "July"
-  # ../en-US.restext:39 | Common_035 | "August"
-  # ../en-US.restext:40 | Common_036 | "September"
-  # ../en-US.restext:41 | Common_037 | "October"
-  # ../en-US.restext:42 | Common_038 | "November"
-  # ../en-US.restext:43 | Common_039 | "December"
-  expr: '["restext://Common_028", "restext://Common_029", "restext://Common_030", "restext://Common_031", "restext://Common_032", "restext://Common_033", "restext://Common_034", "restext://Common_035", "restext://Common_036", "restext://Common_037", "restext://Common_038", "restext://Common_039"].shuffled("date1a_1")[0]'
+  # ../en-US.restext:12 | Calendar_January | "January"
+  # ../en-US.restext:11 | Calendar_February | "February"
+  # ../en-US.restext:15 | Calendar_March | "March"
+  # ../en-US.restext:8 | Calendar_April | "April"
+  # ../en-US.restext:16 | Calendar_May | "May"
+  # ../en-US.restext:14 | Calendar_June | "June"
+  # ../en-US.restext:13 | Calendar_July | "July"
+  # ../en-US.restext:9 | Calendar_August | "August"
+  # ../en-US.restext:19 | Calendar_September | "September"
+  # ../en-US.restext:18 | Calendar_October | "October"
+  # ../en-US.restext:17 | Calendar_November | "November"
+  # ../en-US.restext:10 | Calendar_December | "December"
+  expr: '["restext://Calendar_January", "restext://Calendar_February", "restext://Calendar_March", "restext://Calendar_April", "restext://Calendar_May", "restext://Calendar_June", "restext://Calendar_July", "restext://Calendar_August", "restext://Calendar_September", "restext://Calendar_October", "restext://Calendar_November", "restext://Calendar_December"].shuffled("date1a_1")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:23453
 - type: 'switch'
   on: 'round'

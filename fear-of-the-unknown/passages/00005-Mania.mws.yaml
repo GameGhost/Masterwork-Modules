@@ -2,10 +2,10 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Mania'
-# ../en-US.restext:161 | "WITCH HUNT"
-title: 'restext://Common_157'
-# ../en-US.restext:162 | "Early Years"
-subtitle: 'restext://Common_158'
+# ../en-US.restext:363 | "WITCH HUNT"
+title: 'restext://Title_WitchHuntCaps'
+# ../en-US.restext:332 | "Early Years"
+subtitle: 'restext://Title_EarlyYears'
 tags:
 - 'HUB'
 layout: 'hub_early'
@@ -21,8 +21,8 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:1831
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:163 | "Accept"
-    okay: 'restext://Common_159'
+    # ../en-US.restext:364 | "Accept"
+    okay: 'restext://UIButton_Accept'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:1835
     - type: 'image'
@@ -98,18 +98,18 @@ nodes:
       value: 'restext://Mania_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1916
 - type: 'section'
-  # ../en-US.restext:164 | "{icon:storybooktoken} **F..."
-  title: 'restext://Common_160'
+  # ../en-US.restext:218 | "{icon:storybooktoken} **F..."
+  title: 'restext://Heading_StorybookToken_FamilyPlot'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:1926
   - type: 'text'
-    # ../en-US.restext:165 | "Any time a player is over..."
-    value: 'restext://Common_161'
+    # ../en-US.restext:104 | "Any time a player is over..."
+    value: 'restext://Directive_OvertakenByMob_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:1930
   - type: 'link'
-    # ../en-US.restext:166 | "click here for a special ..."
-    label: 'restext://Common_162'
+    # ../en-US.restext:55 | "click here for a special ..."
+    label: 'restext://Click_SpecialMessage_Generic1'
     target: 'PlotPlayerCheckin' # ./00202-PlotPlayerCheckin.mws.yaml
     snapshot: true
 # ../.source/FearoftheUnknown_Eng_v15.cs:1933
@@ -121,18 +121,18 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:1940
   - type: 'section'
-    # ../en-US.restext:167 | "{icon:storybooktoken} **10VP**"
-    title: 'restext://Common_163'
+    # ../en-US.restext:211 | "{icon:storybooktoken} **10VP**"
+    title: 'restext://Heading_StorybookToken_10VP'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:1950
     - type: 'text'
-      # ../en-US.restext:168 | "Whenever a player reaches..."
-      value: 'restext://Common_164'
+      # ../en-US.restext:113 | "Whenever a player reaches..."
+      value: 'restext://Directive_Reaches10VP_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:1951
     - type: 'link'
-      # ../en-US.restext:169 | "click here"
-      label: 'restext://Common_165'
+      # ../en-US.restext:50 | "click here"
+      label: 'restext://Click_Here_Plain'
       target: 'FP10VP' # ./00129-FP10VP.mws.yaml
       snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:1953
@@ -144,14 +144,14 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:1961
   - type: 'section'
-    # ../en-US.restext:170 | "{icon:storybooktoken} **R..."
-    title: 'restext://Common_166'
+    # ../en-US.restext:223 | "{icon:storybooktoken} **R..."
+    title: 'restext://Heading_StorybookToken_ResearchLevel2'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:1972
     - type: 'text'
-      # ../en-US.restext:171 | "Whenever a player reaches..."
-      value: 'restext://Common_167'
+      # ../en-US.restext:116 | "Whenever a player reaches..."
+      value: 'restext://Directive_ReachesJournalLevel2_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:1973
     - type: 'link'
       # ../en-US.restext:413 | "Click here."
@@ -166,18 +166,18 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:1982
   - type: 'section'
-    # ../en-US.restext:172 | "{icon:storybooktoken} **I..."
-    title: 'restext://Common_168'
+    # ../en-US.restext:221 | "{icon:storybooktoken} **I..."
+    title: 'restext://Heading_StorybookToken_InsanityOf3'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:1993
     - type: 'text'
-      # ../en-US.restext:173 | "Whenever a player reaches..."
-      value: 'restext://Common_169'
+      # ../en-US.restext:115 | "Whenever a player reaches..."
+      value: 'restext://Directive_ReachesInsanitySpace3_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:1996
     - type: 'link'
-      # ../en-US.restext:174 | "Click here…"
-      label: 'restext://Common_170'
+      # ../en-US.restext:38 | "Click here…"
+      label: 'restext://Click_HereEllipsisChar'
       target: 'FPSanity3' # ./00131-FPSanity3.mws.yaml
       snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:1999
@@ -188,18 +188,18 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2005
   - type: 'section'
-    # ../en-US.restext:175 | "{icon:storybooktoken} **C..."
-    title: 'restext://Common_171'
+    # ../en-US.restext:217 | "{icon:storybooktoken} **C..."
+    title: 'restext://Heading_StorybookToken_Creepy'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2015
     - type: 'text'
-      # ../en-US.restext:176 | "Whenever a player reaches..."
-      value: 'restext://Common_172'
+      # ../en-US.restext:114 | "Whenever a player reaches..."
+      value: 'restext://Directive_ReachesCreepySpace3_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2018
     - type: 'link'
-      # ../en-US.restext:177 | "click here..."
-      label: 'restext://Common_173'
+      # ../en-US.restext:39 | "click here..."
+      label: 'restext://Click_HereEllipsis_Lower'
       target: 'FPCreepy3' # ./00132-FPCreepy3.mws.yaml
       snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:2020
@@ -209,24 +209,24 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2028
 - type: 'section'
-  # ../en-US.restext:178 | "**Second Round Event**"
-  title: 'restext://Common_174'
+  # ../en-US.restext:205 | "**Second Round Event**"
+  title: 'restext://Heading_SecondRoundEvent'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2037
   - type: 'text'
-    # ../en-US.restext:179 | "As tensions rise and accu..."
-    value: 'restext://Common_175'
+    # ../en-US.restext:273 | "As tensions rise and accu..."
+    value: 'restext://Narrative_TensionsRiseAngryMob'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2039
   - type: 'break'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2042
   - type: 'popup'
     layout: 'end_of_round'
-    # ../en-US.restext:180 | "Click here at the end of ..."
-    label: 'restext://Common_176'
+    # ../en-US.restext:35 | "Click here at the end of ..."
+    label: 'restext://Click_EndRound_NextRound'
     target: 'Mania2' # ./00036-Mania2.mws.yaml
-    # ../en-US.restext:181 | "End of Round"
-    okay: 'restext://Common_177'
+    # ../en-US.restext:369 | "End of Round"
+    okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
       var: '_ProgressRound'
@@ -239,5 +239,5 @@ nodes:
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:182 | "Then, perform all Start o..."
-      value: 'restext://Common_178'
+      # ../en-US.restext:306 | "Then, perform all Start o..."
+      value: 'restext://Round_StartMiddleYears_Rule'

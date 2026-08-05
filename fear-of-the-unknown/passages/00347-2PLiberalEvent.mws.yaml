@@ -2,28 +2,28 @@
 ---
 format: 'mws/0.4'
 passage_id: '2PLiberalEvent'
-# ../en-US.restext:351 | "BID"
-title: 'restext://Common_347'
+# ../en-US.restext:150 | "BID"
+title: 'restext://Heading_BidCaps'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:36324
 - type: 'text'
-  # ../en-US.restext:296 | "Special Event"
-  value: 'restext://Common_292'
+  # ../en-US.restext:313 | "Special Event"
+  value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36325
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36326
 - type: 'text'
-  # ../en-US.restext:352 | "Both players take all the..."
-  value: 'restext://Common_348'
+  # ../en-US.restext:72 | "Both players take all the..."
+  value: 'restext://Directive_BothPlayersBidMoney'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36328
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36330
 - type: 'text'
-  # ../en-US.restext:362 | "Once both players are rea..."
-  value: 'restext://Common_358'
+  # ../en-US.restext:124 | "Once both players are rea..."
+  value: 'restext://Directive_RevealAmountsBidSimultaneously_Plural'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36331
 - type: 'break'
   style: 'paragraph'
@@ -50,64 +50,64 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36366
 - type: 'text'
-  # ../en-US.restext:363 | "Either way, they will als..."
-  value: 'restext://Common_359'
+  # ../en-US.restext:289 | "Either way, they will als..."
+  value: 'restext://Reward_EitherWayGain4VP'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36372
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36376
 - type: 'text'
-  # ../en-US.restext:364 | "_(Ties are broken by the ..."
-  value: 'restext://Common_360'
+  # ../en-US.restext:127 | "_(Ties are broken by the ..."
+  value: 'restext://Directive_TieBreak_LastThisRound'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36379
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36381
 - type: 'text'
-  # ../en-US.restext:356 | "Only the player who wins ..."
-  value: 'restext://Common_352'
+  # ../en-US.restext:81 | "Only the player who wins ..."
+  value: 'restext://Directive_ElectionWinnerPaysBid'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36383
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36387
 - type: 'popup'
   layout: 'countdown_instructions'
-  # ../en-US.restext:357 | "Click to start the bid..."
-  label: 'restext://Common_353'
+  # ../en-US.restext:56 | "Click to start the bid..."
+  label: 'restext://Click_StartBid'
   content:
   - type: 'text'
-    # ../en-US.restext:358 | "Click on the 'Start Biddi..."
-    value: 'restext://Common_354'
+    # ../en-US.restext:5 | "Click on the 'Start Biddi..."
+    value: 'restext://Bidding_Instructions'
   - type: 'break'
     style: 'paragraph'
   - type: 'text'
-    # ../en-US.restext:299 | "When you see the word 'RE..."
-    value: 'restext://Common_295'
+    # ../en-US.restext:6 | "When you see the word 'RE..."
+    value: 'restext://Bidding_RevealInstructions'
   - type: 'break'
     style: 'paragraph'
   - type: 'popup'
     layout: 'countdown_action'
-    # ../en-US.restext:359 | "Start Bidding"
-    label: 'restext://Common_355'
+    # ../en-US.restext:7 | "Start Bidding"
+    label: 'restext://Bidding_StartButton'
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:302 | "3"
-      value: 'restext://Common_298'
+      # ../en-US.restext:64 | "3"
+      value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:303 | "2"
-      value: 'restext://Common_299'
+      # ../en-US.restext:65 | "2"
+      value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:304 | "1"
-      value: 'restext://Common_300'
+      # ../en-US.restext:62 | "1"
+      value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:301 | "REVEAL"
-      value: 'restext://Common_297'
+      # ../en-US.restext:63 | "REVEAL"
+      value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:301 | "REVEAL"
-    okay: 'restext://Common_297'
+    # ../en-US.restext:63 | "REVEAL"
+    okay: 'restext://Countdown_Reveal'
     target: '2PLiberalEvent1' # ./00348-2PLiberalEvent1.mws.yaml
     snapshot: false

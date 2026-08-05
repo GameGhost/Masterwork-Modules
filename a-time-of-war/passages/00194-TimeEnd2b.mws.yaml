@@ -8,8 +8,8 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:20367
 - type: 'conditional'
-  # ../en-US.restext:225 | "zero pieces"
-  if: 'tmnumber == "restext://Common_221"'
+  # ../en-US.restext:25 | "zero pieces"
+  if: 'tmnumber == "restext://Choice_ZeroPieces"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:20369
   - type: 'text'
@@ -46,7 +46,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:20394
 - type: 'link'
-  # ../en-US.restext:24 | "Click to continue..."
-  label: 'restext://Common_020'
+  # ../en-US.restext:28 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   target: 'WarningIntro' # ./00050-WarningIntro.mws.yaml
   snapshot: true

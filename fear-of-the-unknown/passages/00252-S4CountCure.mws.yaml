@@ -17,11 +17,11 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28623
   - type: 'popup'
-    # ../en-US.restext:46 | "Once you are ready, click..."
-    label: 'restext://Common_042'
+    # ../en-US.restext:53 | "Once you are ready, click..."
+    label: 'restext://Click_RevealSecretConversation'
     layout: 'reveal'
-    # ../en-US.restext:284 | "Close"
-    cancel: 'restext://Common_280'
+    # ../en-US.restext:365 | "Close"
+    cancel: 'restext://UIButton_Close'
     snapshot: true
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:28650
@@ -64,8 +64,8 @@ nodes:
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28683
     - type: 'link'
-      # ../en-US.restext:313 | "Yes."
-      label: 'restext://Common_309'
+      # ../en-US.restext:27 | "Yes."
+      label: 'restext://Choice_Yes_Period'
       target: 'CureCountYes' # ./00329-CureCountYes.mws.yaml
       snapshot: true
       onclick:
@@ -82,8 +82,8 @@ nodes:
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28692
     - type: 'link'
-      # ../en-US.restext:314 | "No."
-      label: 'restext://Common_310'
+      # ../en-US.restext:24 | "No."
+      label: 'restext://Choice_No_Period'
       target: 'CureCountNo' # ./00330-CureCountNo.mws.yaml
       snapshot: true
       onclick:

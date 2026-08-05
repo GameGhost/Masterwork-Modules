@@ -37,8 +37,8 @@ nodes:
   value: 'restext://PrivateReward1_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32328
 - type: 'conditional'
-  # ../en-US.restext:275 | "The Butcher"
-  if: 'warden == "restext://Common_271"'
+  # ../en-US.restext:349 | "The Butcher"
+  if: 'warden == "restext://Title_TheButcher"'
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:32330
   - type: 'text'
@@ -73,11 +73,11 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:32356
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:318 | "Click to return..."
-  label: 'restext://Common_314'
+  # ../en-US.restext:51 | "Click to return..."
+  label: 'restext://Click_Return'
   target: '${round == 17 ? "Privatized2" : "Privatized3"}' # ./00047-Privatized2.mws.yaml, ./00048-Privatized3.mws.yaml
-  # ../en-US.restext:284 | "Close"
-  okay: 'restext://Common_280'
+  # ../en-US.restext:365 | "Close"
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/FearoftheUnknown_Eng_v15.cs:32370

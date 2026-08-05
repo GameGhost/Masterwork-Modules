@@ -68,16 +68,16 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:25448
 - type: 'let'
   var: '_rnd_ATOW_End7_0'
-  # ../en-US.restext:174 | Common_170 | "Tiger Launcher"
-  # ../en-US.restext:175 | Common_171 | "Psychic Mindbomb"
-  # ../en-US.restext:176 | Common_172 | "Irresistible Aphrodisiac"
-  # ../en-US.restext:177 | Common_173 | "Helmet-Mounted Flamethrower"
-  # ../en-US.restext:178 | Common_174 | "Steam Grenade"
-  # ../en-US.restext:179 | Common_175 | "Remote Controlled Plague ..."
-  # ../en-US.restext:180 | Common_176 | "Flaming Pitchfork"
-  # ../en-US.restext:181 | Common_177 | "Mechanized Human Armor Suit"
-  # ../en-US.restext:182 | Common_178 | "Dream Stealer"
-  expr: '["restext://Common_170", "restext://Common_171", "restext://Common_172", "restext://Common_173", "restext://Common_174", "restext://Common_175", "restext://Common_176", "restext://Common_177", "restext://Common_178"].shuffled("ATOW-End7_0")[0]'
+  # ../en-US.restext:277 | Title_TigerLauncher | "Tiger Launcher"
+  # ../en-US.restext:267 | Title_PsychicMindbomb | "Psychic Mindbomb"
+  # ../en-US.restext:256 | Title_IrresistibleAphrodisiac | "Irresistible Aphrodisiac"
+  # ../en-US.restext:255 | Title_HelmetMountedFlamethrower | "Helmet-Mounted Flamethrower"
+  # ../en-US.restext:271 | Title_SteamGrenade | "Steam Grenade"
+  # ../en-US.restext:268 | Title_RemoteControlledPlagueRatSwarm | "Remote Controlled Plague ..."
+  # ../en-US.restext:253 | Title_FlamingPitchfork | "Flaming Pitchfork"
+  # ../en-US.restext:259 | Title_MechanizedHumanArmorSuit | "Mechanized Human Armor Suit"
+  # ../en-US.restext:250 | Title_DreamStealer | "Dream Stealer"
+  expr: '["restext://Title_TigerLauncher", "restext://Title_PsychicMindbomb", "restext://Title_IrresistibleAphrodisiac", "restext://Title_HelmetMountedFlamethrower", "restext://Title_SteamGrenade", "restext://Title_RemoteControlledPlagueRatSwarm", "restext://Title_FlamingPitchfork", "restext://Title_MechanizedHumanArmorSuit", "restext://Title_DreamStealer"].shuffled("ATOW-End7_0")[0]'
 # ../.source/ATimeofWar_Eng_v8.cs:25442
 - type: 'text'
   # ../en-US.restext:2093 | "**4.** What was the criti..."
@@ -95,5 +95,5 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:25466
 - type: 'text'
-  # ../en-US.restext:19 | "THE END?"
-  value: 'restext://Common_015'
+  # ../en-US.restext:181 | "THE END?"
+  value: 'restext://Heading_TheEndQuestion'

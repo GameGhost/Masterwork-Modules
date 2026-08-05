@@ -8,8 +8,8 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:5267
 - type: 'text'
-  # ../en-US.restext:285 | "**Letter from {tempid} -** "
-  value: 'restext://Common_281'
+  # ../en-US.restext:182 | "**Letter from {tempid} -** "
+  value: 'restext://Heading_LetterFromTempid_Trailing'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5273
 - type: 'include_passage'
   target: 'date1a' # ./00207-date1a.mws.yaml
@@ -36,11 +36,11 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5292
 - type: 'popup'
-  # ../en-US.restext:295 | "Click to continue..."
-  label: 'restext://Common_291'
+  # ../en-US.restext:29 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   layout: 'reveal'
-  # ../en-US.restext:284 | "Close"
-  cancel: 'restext://Common_280'
+  # ../en-US.restext:365 | "Close"
+  cancel: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/FearoftheUnknown_Eng_v15.cs:5318
@@ -57,8 +57,8 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:286 | "Continue"
-      label: 'restext://Common_282'
+      # ../en-US.restext:367 | "Continue"
+      label: 'restext://UIButton_Continue'
       target: 'Isolation2' # ./00043-Isolation2.mws.yaml
       snapshot: true
     else:
@@ -67,8 +67,8 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:286 | "Continue"
-      label: 'restext://Common_282'
+      # ../en-US.restext:367 | "Continue"
+      label: 'restext://UIButton_Continue'
       target: 'Isolation3' # ./00044-Isolation3.mws.yaml
       snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:5319
@@ -80,8 +80,8 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:5323
     - type: 'text'
-      # ../en-US.restext:288 | "Nothing happens."
-      value: 'restext://Common_284'
+      # ../en-US.restext:103 | "Nothing happens."
+      value: 'restext://Directive_NothingHappens'
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:5328
     - type: 'text'

@@ -6,31 +6,31 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:10556
 - type: 'text'
-  # ../en-US.restext:45 | "**Carefully pick up this ..."
-  value: 'restext://Common_041'
+  # ../en-US.restext:324 | "**Carefully pick up this ..."
+  value: 'restext://Storybook_PickUpDevicePrivate'
 # ../.source/FearoftheUnknown_Eng_v15.cs:10559
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:10565
 - type: 'popup'
-  # ../en-US.restext:46 | "Once you are ready, click..."
-  label: 'restext://Common_042'
+  # ../en-US.restext:53 | "Once you are ready, click..."
+  label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:284 | "Close"
-  cancel: 'restext://Common_280'
+  # ../en-US.restext:365 | "Close"
+  cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:10574
   - type: 'text'
-    # ../en-US.restext:47 | "**The Rumor Is...**"
-    value: 'restext://Common_043'
+    # ../en-US.restext:235 | "**The Rumor Is...**"
+    value: 'restext://Heading_TheRumorIs'
   # ../.source/FearoftheUnknown_Eng_v15.cs:10576
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:10578
   - type: 'text'
-    # ../en-US.restext:48 | "Using both my physical ch..."
-    value: 'restext://Common_044'
+    # ../en-US.restext:267 | "Using both my physical ch..."
+    value: 'restext://Narrative_PhysicalCharmsFinancialPersuasion_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:10583
   - type: 'switch'
     on: 'rum'
@@ -72,14 +72,14 @@ nodes:
       value: 'restext://CheckWitches2_001'
   # ../.source/FearoftheUnknown_Eng_v15.cs:10620
   - type: 'text'
-    # ../en-US.restext:49 | " late one evening. I offe..."
-    value: 'restext://Common_045'
+    # ../en-US.restext:256 | " late one evening. I offe..."
+    value: 'restext://Narrative_LateOneEvening_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:10623
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:10625
   - type: 'link'
-    # ../en-US.restext:295 | "Click to continue..."
-    label: 'restext://Common_291'
+    # ../en-US.restext:29 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: 'Foreign2' # ./00039-Foreign2.mws.yaml
     snapshot: true

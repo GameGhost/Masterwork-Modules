@@ -8,8 +8,8 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:2266
 - type: 'text'
-  # ../en-US.restext:283 | "**{randomname}'s Journal ..."
-  value: 'restext://Common_279'
+  # ../en-US.restext:197 | "**{randomname}'s Journal ..."
+  value: 'restext://Heading_RandomnameJournal_16Sep1850'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2273
 - type: 'break'
   style: 'paragraph'
@@ -38,11 +38,11 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2287
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:295 | "Click to continue..."
-    label: 'restext://Common_291'
+    # ../en-US.restext:29 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: 'Mania3' # ./00037-Mania3.mws.yaml
-    # ../en-US.restext:284 | "Close"
-    okay: 'restext://Common_280'
+    # ../en-US.restext:365 | "Close"
+    okay: 'restext://UIButton_Close'
     snapshot: true
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2308
@@ -57,7 +57,7 @@ nodes:
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2291
   - type: 'link'
-    # ../en-US.restext:295 | "Click to continue..."
-    label: 'restext://Common_291'
+    # ../en-US.restext:29 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: 'Mania3' # ./00037-Mania3.mws.yaml
     snapshot: true

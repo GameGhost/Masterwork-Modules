@@ -28,8 +28,8 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:14204
     - type: 'text'
-      # ../en-US.restext:207 | "**Knowledge Bonus**"
-      value: 'restext://Common_203'
+      # ../en-US.restext:144 | "**Knowledge Bonus**"
+      value: 'restext://Heading_KnowledgeBonus'
     # ../.source/ATimeofWar_Eng_v8.cs:14206
     - type: 'break'
       style: 'paragraph'
@@ -43,11 +43,11 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:14220
     - type: 'popup'
       layout: 'setup'
-      # ../en-US.restext:24 | "Click to continue..."
-      label: 'restext://Common_020'
+      # ../en-US.restext:28 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
       target: '${war == 1 ? "Warwarn" : "TowardsWar"}' # ./00112-Warwarn.mws.yaml, ./00014-TowardsWar.mws.yaml
-      # ../en-US.restext:185 | "Close"
-      okay: 'restext://Common_181'
+      # ../en-US.restext:282 | "Close"
+      okay: 'restext://UIButton_Close'
       snapshot: true
       header:
       # ../.source/ATimeofWar_Eng_v8.cs:14303
@@ -69,8 +69,8 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:14226
     - type: 'text'
-      # ../en-US.restext:208 | "**Ingredient Bonus**"
-      value: 'restext://Common_204'
+      # ../en-US.restext:142 | "**Ingredient Bonus**"
+      value: 'restext://Heading_IngredientBonus'
     # ../.source/ATimeofWar_Eng_v8.cs:14228
     - type: 'break'
       style: 'paragraph'
@@ -84,11 +84,11 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:14242
     - type: 'popup'
       layout: 'setup'
-      # ../en-US.restext:24 | "Click to continue..."
-      label: 'restext://Common_020'
+      # ../en-US.restext:28 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
       target: '${war == 1 ? "Warwarn" : "TowardsWar"}' # ./00112-Warwarn.mws.yaml, ./00014-TowardsWar.mws.yaml
-      # ../en-US.restext:185 | "Close"
-      okay: 'restext://Common_181'
+      # ../en-US.restext:282 | "Close"
+      okay: 'restext://UIButton_Close'
       snapshot: true
       header:
       # ../.source/ATimeofWar_Eng_v8.cs:14337
@@ -110,8 +110,8 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:14248
     - type: 'text'
-      # ../en-US.restext:209 | "**Wealth Bonus**"
-      value: 'restext://Common_205'
+      # ../en-US.restext:188 | "**Wealth Bonus**"
+      value: 'restext://Heading_WealthBonus'
     # ../.source/ATimeofWar_Eng_v8.cs:14250
     - type: 'break'
       style: 'paragraph'
@@ -125,11 +125,11 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:14264
     - type: 'popup'
       layout: 'setup'
-      # ../en-US.restext:24 | "Click to continue..."
-      label: 'restext://Common_020'
+      # ../en-US.restext:28 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
       target: '${war == 1 ? "Warwarn" : "TowardsWar"}' # ./00112-Warwarn.mws.yaml, ./00014-TowardsWar.mws.yaml
-      # ../en-US.restext:185 | "Close"
-      okay: 'restext://Common_181'
+      # ../en-US.restext:282 | "Close"
+      okay: 'restext://UIButton_Close'
       snapshot: true
       header:
       # ../.source/ATimeofWar_Eng_v8.cs:14371
@@ -150,8 +150,8 @@ nodes:
   default:
   # ../.source/ATimeofWar_Eng_v8.cs:14270
   - type: 'text'
-    # ../en-US.restext:207 | "**Knowledge Bonus**"
-    value: 'restext://Common_203'
+    # ../en-US.restext:144 | "**Knowledge Bonus**"
+    value: 'restext://Heading_KnowledgeBonus'
   # ../.source/ATimeofWar_Eng_v8.cs:14272
   - type: 'break'
     style: 'paragraph'
@@ -165,11 +165,11 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:14286
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:24 | "Click to continue..."
-    label: 'restext://Common_020'
+    # ../en-US.restext:28 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: '${war == 1 ? "Warwarn" : "TowardsWar"}' # ./00112-Warwarn.mws.yaml, ./00014-TowardsWar.mws.yaml
-    # ../en-US.restext:185 | "Close"
-    okay: 'restext://Common_181'
+    # ../en-US.restext:282 | "Close"
+    okay: 'restext://UIButton_Close'
     snapshot: true
     header:
     # ../.source/ATimeofWar_Eng_v8.cs:14303

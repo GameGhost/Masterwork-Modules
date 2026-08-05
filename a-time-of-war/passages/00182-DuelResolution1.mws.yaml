@@ -27,8 +27,8 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:19440
 - type: 'conditional'
-  # ../en-US.restext:52 | "science"
-  if: 'dueltype == "restext://Common_048"'
+  # ../en-US.restext:20 | "science"
+  if: 'dueltype == "restext://Choice_Science"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:19442
   - type: 'text'
@@ -50,17 +50,17 @@ nodes:
   snapshot: true
 # ../.source/ATimeofWar_Eng_v8.cs:19454
 - type: 'conditional'
-  # ../en-US.restext:52 | "science"
-  if: 'dueltype == "restext://Common_048"'
+  # ../en-US.restext:20 | "science"
+  if: 'dueltype == "restext://Choice_Science"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:19456
   - type: 'assign'
     var: 'duelsci'
-    # ../en-US.restext:48 | Common_044 | "Engineering"
-    # ../en-US.restext:49 | Common_045 | "Chemistry"
-    # ../en-US.restext:50 | Common_046 | "Biology"
+    # ../en-US.restext:118 | Focus_Engineering | "Engineering"
+    # ../en-US.restext:117 | Focus_Chemistry | "Chemistry"
+    # ../en-US.restext:116 | Focus_Biology | "Biology"
     # ../en-US.restext:1611 | DuelResolution1_010 | "Occult"
-    expr: '["restext://Common_044", "restext://Common_045", "restext://Common_046", "restext://DuelResolution1_010"].shuffled("DuelResolution1_0")[0]'
+    expr: '["restext://Focus_Engineering", "restext://Focus_Chemistry", "restext://Focus_Biology", "restext://DuelResolution1_010"].shuffled("DuelResolution1_0")[0]'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:19460
   - type: 'assign'

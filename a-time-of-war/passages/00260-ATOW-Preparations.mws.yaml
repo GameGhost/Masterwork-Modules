@@ -56,31 +56,31 @@ nodes:
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:156 | "two"
-      expr: '"restext://Common_152"'
+      # ../en-US.restext:221 | "two"
+      expr: '"restext://Number_Two_Lower"'
   - match: 3
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:157 | "three"
-      expr: '"restext://Common_153"'
+      # ../en-US.restext:220 | "three"
+      expr: '"restext://Number_Three_Lower"'
   - match: 4
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:158 | "four"
-      expr: '"restext://Common_154"'
+      # ../en-US.restext:219 | "four"
+      expr: '"restext://Number_Four_Lower"'
   - match: 5
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:159 | "five"
-      expr: '"restext://Common_155"'
+      # ../en-US.restext:218 | "five"
+      expr: '"restext://Number_Five_Lower"'
   default:
   - type: 'assign'
     var: 'playtxt'
-    # ../en-US.restext:156 | "two"
-    expr: '"restext://Common_152"'
+    # ../en-US.restext:221 | "two"
+    expr: '"restext://Number_Two_Lower"'
 # ../.source/ATimeofWar_Eng_v8.cs:25598
 - type: 'text'
   # ../en-US.restext:2112 | "Complete the standard set..."
@@ -104,7 +104,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:25630
 - type: 'link'
-  # ../en-US.restext:186 | "Click here to continue..."
-  label: 'restext://Common_182'
+  # ../en-US.restext:27 | "Click here to continue..."
+  label: 'restext://Click_ContinueEllipsis_B'
   target: 'ForewordScen2' # ./00142-ForewordScen2.mws.yaml
   snapshot: true

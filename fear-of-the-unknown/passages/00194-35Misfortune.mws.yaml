@@ -8,15 +8,15 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:22237
 - type: 'text'
-  # ../en-US.restext:366 | "**Brief Journal Entry -**..."
-  value: 'restext://Common_362'
+  # ../en-US.restext:152 | "**Brief Journal Entry -**..."
+  value: 'restext://Heading_BriefJournalEntry_Illegible'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22243
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22245
 - type: 'text'
-  # ../en-US.restext:367 | "Quick note:"
-  value: 'restext://Common_363'
+  # ../en-US.restext:196 | "Quick note:"
+  value: 'restext://Heading_QuickNote'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22246
 - type: 'break'
   style: 'paragraph'
@@ -37,11 +37,11 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:22256
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:318 | "Click to return..."
-  label: 'restext://Common_314'
+  # ../en-US.restext:51 | "Click to return..."
+  label: 'restext://Click_Return'
   target: '${round == 4 ? "Foreign" : round == 5 ? "Foreign2" : "Foreign3"}' # ./00011-Foreign.mws.yaml, ./00039-Foreign2.mws.yaml, ./00040-Foreign3.mws.yaml
-  # ../en-US.restext:284 | "Close"
-  okay: 'restext://Common_280'
+  # ../en-US.restext:365 | "Close"
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/FearoftheUnknown_Eng_v15.cs:22272

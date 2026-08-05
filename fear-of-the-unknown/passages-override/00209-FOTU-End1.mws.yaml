@@ -1,9 +1,7 @@
 ﻿# Override — extracted content unchanged, plus an appended "Ending Unlocked" popup. See
 # 00210-FOTU-End2.mws.yaml's own comment for the full rationale (same for every ending override
-# in this module). Header image is a placeholder: reuses this module's own scenariobox3d_fear
-# icon (already confirmed to resolve) rather than a curated "ending unlocked" collage image like
-# Cost of Disease's picture_tcod_dirty/clean — no equivalent art has been sourced yet for this
-# module. Swap in real art once curated; nothing else about this override needs to change.
+# in this module). This ending reads as a tragic/negative outcome (estate "in ruins", legacy
+# buried) — picture_fotu_dirty.
 # ../.source/FearoftheUnknown_Eng_v15.cs:23583
 ---
 format: 'mws/0.4'
@@ -43,7 +41,7 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:23617
 - type: 'text'
   # ../en-US.restext:74 | "THE END?"
-  value: 'restext://Common_070'
+  value: 'restext://Heading_TheEndQuestion'
 # - type: 'record'
 #   id: 'ending_fotu_end1'
 # - type: 'record'
@@ -54,7 +52,7 @@ nodes:
   style: 'btn-forward'
   header:
   - type: 'image'
-    asset: 'icon://scenariobox3d_fear'
+    asset: 'image://picture_fotu_dirty'
   content:
   - type: 'text'
     value: 'You have unlocked **restext://FOTU_End1_001** ending.'

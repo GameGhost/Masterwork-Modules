@@ -234,11 +234,11 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:16538
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:24 | "Click to continue..."
-  label: 'restext://Common_020'
+  # ../en-US.restext:28 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   target: '${timemistake == 6 ? "Paradox3b" : timemistake == 8 ? "Paradox3b" : "Paradox3"}' # ./00298-Paradox3b.mws.yaml, ./00075-Paradox3.mws.yaml
-  # ../en-US.restext:185 | "Close"
-  okay: 'restext://Common_181'
+  # ../en-US.restext:282 | "Close"
+  okay: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:16559

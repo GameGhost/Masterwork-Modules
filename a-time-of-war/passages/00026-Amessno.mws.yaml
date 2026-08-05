@@ -23,11 +23,11 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:4127
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:186 | "Click here to continue..."
-  label: 'restext://Common_182'
+  # ../en-US.restext:27 | "Click here to continue..."
+  label: 'restext://Click_ContinueEllipsis_B'
   target: '${warwinner == "Unified Monarchists" ? "BarracksSimple1" : "Sabotage1Now"}' # ./00157-BarracksSimple1.mws.yaml, ./00213-Sabotage1Now.mws.yaml
-  # ../en-US.restext:185 | "Close"
-  okay: 'restext://Common_181'
+  # ../en-US.restext:282 | "Close"
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:4144

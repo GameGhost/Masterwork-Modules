@@ -38,8 +38,8 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:5542
 - type: 'link'
-  # ../en-US.restext:24 | "Click to continue..."
-  label: 'restext://Common_020'
+  # ../en-US.restext:28 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   target: 'RoyalBarnCheck' # ./00153-RoyalBarnCheck.mws.yaml
   snapshot: true
 # ../.source/ATimeofWar_Eng_v8.cs:5543
@@ -50,8 +50,8 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:5546
   - type: 'text'
-    # ../en-US.restext:140 | "v1.0"
-    value: 'restext://Common_136'
+    # ../en-US.restext:49 | "v1.0"
+    value: 'restext://Common_VersionOnePointZero'
 # ../.source/ATimeofWar_Eng_v8.cs:5548
 - type: 'conditional'
   if: '!MonarchReignIntro'
@@ -78,8 +78,8 @@ nodes:
   expr: 'rand_between(5, 8, "MonarchReignIntro_0")'
 # ../.source/ATimeofWar_Eng_v8.cs:5558
 - type: 'conditional'
-  # ../en-US.restext:26 | "Unified Monarchists"
-  if: 'warloser == "restext://Common_022"'
+  # ../en-US.restext:279 | "Unified Monarchists"
+  if: 'warloser == "restext://Title_UnifiedMonarchists"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:5560
   - type: 'assign'

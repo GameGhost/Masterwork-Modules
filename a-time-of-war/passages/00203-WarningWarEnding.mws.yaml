@@ -19,8 +19,8 @@ nodes:
   value: 'restext://WarningWarEnding_003'
 # ../.source/ATimeofWar_Eng_v8.cs:21062
 - type: 'conditional'
-  # ../en-US.restext:25 | "Separatists"
-  if: 'warwinner == "restext://Common_021"'
+  # ../en-US.restext:269 | "Separatists"
+  if: 'warwinner == "restext://Title_Separatists"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:21064
   - type: 'text'
@@ -50,8 +50,8 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:21090
 - type: 'link'
-  # ../en-US.restext:24 | "Click to continue..."
-  label: 'restext://Common_020'
+  # ../en-US.restext:28 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   target: 'WhoopsUtopian' # ./00197-WhoopsUtopian.mws.yaml
   snapshot: true
 # ../.source/ATimeofWar_Eng_v8.cs:21091

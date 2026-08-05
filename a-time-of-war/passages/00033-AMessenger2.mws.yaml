@@ -6,23 +6,23 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:4697
 - type: 'conditional'
-  # ../en-US.restext:26 | "Unified Monarchists"
-  if: 'warwinner == "restext://Common_022"'
+  # ../en-US.restext:279 | "Unified Monarchists"
+  if: 'warwinner == "restext://Title_UnifiedMonarchists"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:4702
   - type: 'text'
-    # ../en-US.restext:5 | "**Carefully give this Sto..."
-    value: 'restext://Common_001'
+    # ../en-US.restext:239 | "**Carefully give this Sto..."
+    value: 'restext://Storybook_GiveDeviceToFigureHolder'
   # ../.source/ATimeofWar_Eng_v8.cs:4706
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:4711
   - type: 'popup'
-    # ../en-US.restext:184 | "Once you are ready, click..."
-    label: 'restext://Common_180'
+    # ../en-US.restext:40 | "Once you are ready, click..."
+    label: 'restext://Click_RevealSecretConversation'
     layout: 'reveal'
-    # ../en-US.restext:185 | "Close"
-    cancel: 'restext://Common_181'
+    # ../en-US.restext:282 | "Close"
+    cancel: 'restext://UIButton_Close'
     snapshot: true
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:4733
@@ -40,8 +40,8 @@ nodes:
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:4741
     - type: 'text'
-      # ../en-US.restext:7 | "\"Which flag do you fly?\..."
-      value: 'restext://Common_003'
+      # ../en-US.restext:190 | "\"Which flag do you fly?\..."
+      value: 'restext://Heading_WhichFlagDoYouFly'
     # ../.source/ATimeofWar_Eng_v8.cs:4746
     - type: 'break'
       style: 'paragraph'
@@ -51,8 +51,8 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:4750
       - type: 'link'
-        # ../en-US.restext:8 | "Unified Monarchists."
-        label: 'restext://Common_004'
+        # ../en-US.restext:23 | "Unified Monarchists."
+        label: 'restext://Choice_UnifiedMonarchistsPeriod'
         target: 'AMessYes2b' # ./00035-AMessYes2b.mws.yaml
         snapshot: true
       # ../.source/ATimeofWar_Eng_v8.cs:4751
@@ -60,15 +60,15 @@ nodes:
         style: 'paragraph'
       # ../.source/ATimeofWar_Eng_v8.cs:4753
       - type: 'link'
-        # ../en-US.restext:9 | "Separatists."
-        label: 'restext://Common_005'
+        # ../en-US.restext:21 | "Separatists."
+        label: 'restext://Choice_SeparatistsPeriod'
         target: 'AMessno2' # ./00030-AMessno2.mws.yaml
         snapshot: true
       else:
       # ../.source/ATimeofWar_Eng_v8.cs:4757
       - type: 'link'
-        # ../en-US.restext:9 | "Separatists."
-        label: 'restext://Common_005'
+        # ../en-US.restext:21 | "Separatists."
+        label: 'restext://Choice_SeparatistsPeriod'
         target: 'AMessYes2b' # ./00035-AMessYes2b.mws.yaml
         snapshot: true
       # ../.source/ATimeofWar_Eng_v8.cs:4758
@@ -76,8 +76,8 @@ nodes:
         style: 'paragraph'
       # ../.source/ATimeofWar_Eng_v8.cs:4760
       - type: 'link'
-        # ../en-US.restext:8 | "Unified Monarchists."
-        label: 'restext://Common_004'
+        # ../en-US.restext:23 | "Unified Monarchists."
+        label: 'restext://Choice_UnifiedMonarchistsPeriod'
         target: 'AMessno2' # ./00030-AMessno2.mws.yaml
         snapshot: true
   else:

@@ -16,11 +16,11 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:11249
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:24 | "Click to continue..."
-  label: 'restext://Common_020'
+  # ../en-US.restext:28 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   target: '${nomore == 1 ? th < players ? "TownHallS1" : "TakeSides2" : round == 1 ? "TakeSides" : "TakeSides2"}' # ./00109-TownHallS1.mws.yaml, ./00007-TakeSides2.mws.yaml, ./00005-TakeSides.mws.yaml
-  # ../en-US.restext:185 | "Close"
-  okay: 'restext://Common_181'
+  # ../en-US.restext:282 | "Close"
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:11316

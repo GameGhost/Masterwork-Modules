@@ -13,29 +13,29 @@ nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:13708
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:114 | "two"
-      expr: '"restext://Common_110"'
+      # ../en-US.restext:282 | "two"
+      expr: '"restext://Number_Two_Lower"'
   - match: 3
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:13712
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:115 | "three"
-      expr: '"restext://Common_111"'
+      # ../en-US.restext:281 | "three"
+      expr: '"restext://Number_Three_Lower"'
   - match: 4
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:13716
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:116 | "four"
-      expr: '"restext://Common_112"'
+      # ../en-US.restext:280 | "four"
+      expr: '"restext://Number_Four_Lower"'
   - match: 5
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:13720
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:117 | "five"
-      expr: '"restext://Common_113"'
+      # ../en-US.restext:279 | "five"
+      expr: '"restext://Number_Five_Lower"'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13724
 - type: 'text'
   # ../en-US.restext:1143 | "**Proper Nomenclature**"
@@ -59,7 +59,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13741
 - type: 'link'
-  # ../en-US.restext:295 | "Click to continue..."
-  label: 'restext://Common_291'
+  # ../en-US.restext:29 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   target: 'NameEntryA' # ./00106-NameEntryA.mws.yaml
   snapshot: true

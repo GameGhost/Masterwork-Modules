@@ -15,29 +15,29 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:13655
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:156 | "two"
-      expr: '"restext://Common_152"'
+      # ../en-US.restext:221 | "two"
+      expr: '"restext://Number_Two_Lower"'
   - match: 3
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:13659
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:157 | "three"
-      expr: '"restext://Common_153"'
+      # ../en-US.restext:220 | "three"
+      expr: '"restext://Number_Three_Lower"'
   - match: 4
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:13663
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:158 | "four"
-      expr: '"restext://Common_154"'
+      # ../en-US.restext:219 | "four"
+      expr: '"restext://Number_Four_Lower"'
   - match: 5
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:13667
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:159 | "five"
-      expr: '"restext://Common_155"'
+      # ../en-US.restext:218 | "five"
+      expr: '"restext://Number_Five_Lower"'
 # ../.source/ATimeofWar_Eng_v8.cs:13669
 - type: 'text'
   # ../en-US.restext:1029 | "As siblings of an influen..."
@@ -54,7 +54,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:13682
 - type: 'link'
-  # ../en-US.restext:24 | "Click to continue..."
-  label: 'restext://Common_020'
+  # ../en-US.restext:28 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   target: 'NameEntryA' # ./00116-NameEntryA.mws.yaml
   snapshot: true

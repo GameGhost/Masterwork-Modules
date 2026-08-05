@@ -79,7 +79,7 @@ nodes:
   # ../en-US.restext:177 | Common_173 | "Flaming Pitchfork"
   # ../en-US.restext:178 | Common_174 | "Mechanized Human Armor Suit"
   # ../en-US.restext:179 | Common_175 | "Dream Stealer"
-  expr: '["restext://Common_167", "restext://Common_168", "restext://Common_169", "restext://Common_170", "restext://Common_171", "restext://Common_172", "restext://Common_173", "restext://Common_174", "restext://Common_175"].shuffled("ATOW-End7_0")[0]'
+  expr: '["restext://Directive_EndGeneration_PlayersKeepWeaponTokens", "restext://UIButton_Continue", "restext://Heading_SuspicionsConfirmed", "restext://Title_TigerLauncher", "restext://Title_PsychicMindbomb", "restext://Title_IrresistibleAphrodisiac", "restext://Title_HelmetMountedFlamethrower", "restext://Title_SteamGrenade", "restext://Title_RemoteControlledPlagueRatSwarm"].shuffled("ATOW-End7_0")[0]'
 # ../.source/ATimeofWar_Eng_v8.cs:25442
 - type: 'text'
   # ../en-US.restext:2079 | "**4.** What was the criti..."
@@ -98,7 +98,7 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:25466
 - type: 'text'
   # ../en-US.restext:19 | "THE END?"
-  value: 'restext://Common_015'
+  value: 'restext://Heading_TheEndQuestion'
 # - type: 'record'
 #   id: 'ending_atow_end7'
 # - type: 'record'
@@ -109,7 +109,7 @@ nodes:
   style: 'btn-forward'
   header:
   - type: 'image'
-    asset: 'icon://scenariobox3d_war'
+    asset: 'image://picture_atow_clean'
   content:
   - type: 'text'
     value: 'You have unlocked **restext://ATOW_End7_001** ending.'

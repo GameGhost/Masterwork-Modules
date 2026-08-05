@@ -22,20 +22,20 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26677
 - type: 'text'
-  # ../en-US.restext:12 | "**Agility** is equal to t..."
-  value: 'restext://Common_008'
+  # ../en-US.restext:67 | "**Agility** is equal to t..."
+  value: 'restext://Directive_AgilityDefinition'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26685
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26688
 - type: 'text'
-  # ../en-US.restext:13 | "**Damage** is equal to th..."
-  value: 'restext://Common_009'
+  # ../en-US.restext:79 | "**Damage** is equal to th..."
+  value: 'restext://Directive_DamageDefinition'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26696
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26699
 - type: 'text'
-  # ../en-US.restext:14 | "**HP** is equal to the co..."
-  value: 'restext://Common_010'
+  # ../en-US.restext:94 | "**HP** is equal to the co..."
+  value: 'restext://Directive_HPDefinition'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26707
 - type: 'break'
   style: 'paragraph'
@@ -63,14 +63,14 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:26724
   - type: 'link'
-    # ../en-US.restext:318 | "Click to return..."
-    label: 'restext://Common_314'
+    # ../en-US.restext:51 | "Click to return..."
+    label: 'restext://Click_Return'
     target: 'Privatized2' # ./00047-Privatized2.mws.yaml
     snapshot: true
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:26728
   - type: 'link'
-    # ../en-US.restext:318 | "Click to return..."
-    label: 'restext://Common_314'
+    # ../en-US.restext:51 | "Click to return..."
+    label: 'restext://Click_Return'
     target: 'Privatized3' # ./00048-Privatized3.mws.yaml
     snapshot: true

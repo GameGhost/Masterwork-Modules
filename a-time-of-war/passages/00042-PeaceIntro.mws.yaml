@@ -40,8 +40,8 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:5626
 - type: 'link'
-  # ../en-US.restext:24 | "Click to continue..."
-  label: 'restext://Common_020'
+  # ../en-US.restext:28 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   target: 'SeparatistBarnCheck' # ./00154-SeparatistBarnCheck.mws.yaml
   snapshot: true
 # ../.source/ATimeofWar_Eng_v8.cs:5627
@@ -52,16 +52,16 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:5630
   - type: 'text'
-    # ../en-US.restext:140 | "v1.0"
-    value: 'restext://Common_136'
+    # ../en-US.restext:49 | "v1.0"
+    value: 'restext://Common_VersionOnePointZero'
 # ../.source/ATimeofWar_Eng_v8.cs:5632
 - type: 'assign'
   var: 'wlimit'
   expr: 'rand_between(4, 5, "PeaceIntro_0")'
 # ../.source/ATimeofWar_Eng_v8.cs:5633
 - type: 'conditional'
-  # ../en-US.restext:25 | "Separatists"
-  if: 'warloser == "restext://Common_021"'
+  # ../en-US.restext:269 | "Separatists"
+  if: 'warloser == "restext://Title_Separatists"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:5635
   - type: 'assign'

@@ -48,41 +48,41 @@ nodes:
   - if: 'busm == nameA'
     then:
     - type: 'link'
-      # ../en-US.restext:295 | "Click to continue..."
-      label: 'restext://Common_291'
+      # ../en-US.restext:29 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
       target: 'BusMeetA' # ./00149-BusMeetA.mws.yaml
       snapshot: true
   - if: 'busm == nameB'
     then:
     - type: 'link'
-      # ../en-US.restext:295 | "Click to continue..."
-      label: 'restext://Common_291'
+      # ../en-US.restext:29 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
       target: 'BusMeetB' # ./00148-BusMeetB.mws.yaml
       snapshot: true
   - if: 'busm == nameC'
     then:
     - type: 'link'
-      # ../en-US.restext:295 | "Click to continue..."
-      label: 'restext://Common_291'
+      # ../en-US.restext:29 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
       target: 'BusMeetC' # ./00147-BusMeetC.mws.yaml
       snapshot: true
   - if: 'busm == nameD'
     then:
     - type: 'link'
-      # ../en-US.restext:295 | "Click to continue..."
-      label: 'restext://Common_291'
+      # ../en-US.restext:29 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
       target: 'BusMeetD' # ./00150-BusMeetD.mws.yaml
       snapshot: true
   - if: 'busm == nameE'
     then:
     - type: 'link'
-      # ../en-US.restext:295 | "Click to continue..."
-      label: 'restext://Common_291'
+      # ../en-US.restext:29 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
       target: 'BusMeetE' # ./00151-BusMeetE.mws.yaml
       snapshot: true
   else:
   - type: 'link'
-    # ../en-US.restext:295 | "Click to continue..."
-    label: 'restext://Common_291'
+    # ../en-US.restext:29 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: 'BusMeetA' # ./00149-BusMeetA.mws.yaml
     snapshot: true

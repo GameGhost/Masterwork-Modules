@@ -17,32 +17,32 @@ nodes:
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      expr: '"restext://Common_149"'
+      expr: '"restext://Round_GenerationIII_LateEnded"'
   - match: 3
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      expr: '"restext://Common_150"'
+      expr: '"restext://Click_StartVote"'
   - match: 4
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      expr: '"restext://Common_151"'
+      expr: '"restext://Narrative_IWould_Fragment"'
   - match: 5
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      expr: '"restext://Common_152"'
+      expr: '"restext://Number_Two_Lower"'
   default:
   - type: 'assign'
     var: 'playtxt'
-    expr: '"restext://Common_149"'
+    expr: '"restext://Round_GenerationIII_LateEnded"'
 - type: 'text'
   value: 'restext://ATOW_Preparations_002'
 - type: 'break'
   style: 'paragraph'
 - type: 'image'
-  asset: 'icon://scenariobox3d_war'
+  asset: 'image://scenariobox3d_war'
   size: '200'
   align: 'center'
 - type: 'break'
@@ -51,6 +51,6 @@ nodes:
 - type: 'break'
   style: 'paragraph'
 - type: 'link'
-  label: 'restext://Common_179'
+  label: 'restext://Click_ContinueEllipsis_B'
   target: 'ForewordScen2' # ./00142-ForewordScen2.mws.yaml
   snapshot: true

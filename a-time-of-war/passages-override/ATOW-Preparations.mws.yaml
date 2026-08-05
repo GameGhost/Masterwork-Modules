@@ -1,0 +1,20 @@
+# Override — keeps the Begins-Here tag (unlike the raw extraction) but redirects it straight to
+# Setup_01_PlayerCountSelect (this module's real, manifest-declared entry point — see manifest.yaml's
+# entry: field, now authoritative per LoadedModuleContent.BuildAsync in the code repo) instead of
+# rendering the old pre-Masterwork content. This keeps two Begins-Here-tagged passages in the merged
+# set — deliberately: ModuleLoader's tag scan (passages.Values.FirstOrDefault(...)) can land on
+# either one depending on dictionary enumeration order, but since both now lead to the same place
+# (this one via an immediate goto, which RenderChainFrom follows with no player interaction needed),
+# it doesn't matter which the scan picks. That's what lets already-released app builds — which don't
+# have the manifest.Entry fix yet — already work correctly with this module, without needing an
+# app release just to fix this. Once shared setup assets exist and this flow changes, revisit
+# whether both tags are still needed.
+---
+format: 'mws/0.4'
+passage_id: 'ATOW-Preparations'
+tags:
+- 'Begins-Here'
+layout: 'narration'
+nodes:
+- type: 'goto'
+  target: 'Setup_01_PlayerCountSelect'

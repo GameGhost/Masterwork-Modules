@@ -48,22 +48,22 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:20087
       - type: 'link'
-        # ../en-US.restext:24 | "Click to continue..."
-        label: 'restext://Common_020'
+        # ../en-US.restext:28 | "Click to continue..."
+        label: 'restext://Click_ContinueEllipsis_C'
         target: 'Warwarn' # ./00112-Warwarn.mws.yaml
         snapshot: true
       else:
       # ../.source/ATimeofWar_Eng_v8.cs:20089
       - type: 'link'
-        # ../en-US.restext:24 | "Click to continue..."
-        label: 'restext://Common_020'
+        # ../en-US.restext:28 | "Click to continue..."
+        label: 'restext://Click_ContinueEllipsis_C'
         target: 'TowardsWar' # ./00014-TowardsWar.mws.yaml
         snapshot: true
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:20093
     - type: 'link'
-      # ../en-US.restext:24 | "Click to continue..."
-      label: 'restext://Common_020'
+      # ../en-US.restext:28 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
       target: 'SeedGUNS' # ./00125-SeedGUNS.mws.yaml
       snapshot: true
   else:

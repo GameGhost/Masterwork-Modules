@@ -2,10 +2,10 @@
 ---
 format: 'mws/0.4'
 passage_id: 'CountTestResults'
-# ../en-US.restext:8 | "Patient {question}"
-title: 'restext://Common_004'
-# ../en-US.restext:50 | "Assessment Results"
-subtitle: 'restext://Common_046'
+# ../en-US.restext:193 | "Patient {question}"
+title: 'restext://Heading_PatientQuestion'
+# ../en-US.restext:149 | "Assessment Results"
+subtitle: 'restext://Heading_AssessmentResults'
 tags:
 - 'revised'
 layout: 'narration'
@@ -52,11 +52,11 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:37778
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:295 | "Click to continue..."
-  label: 'restext://Common_291'
+  # ../en-US.restext:29 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 19 ? "Liberal" : round == 20 ? "Liberal2" : "Liberal3"}' # ./00026-Liberal.mws.yaml, ./00050-Liberal2.mws.yaml, ./00051-Liberal3.mws.yaml
-  # ../en-US.restext:284 | "Close"
-  okay: 'restext://Common_280'
+  # ../en-US.restext:365 | "Close"
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   - type: 'conditional'
@@ -98,8 +98,8 @@ nodes:
         style: 'paragraph'
       # ../.source/FearoftheUnknown_Eng_v15.cs:37836
       - type: 'text'
-        # ../en-US.restext:51 | "Then, return your {icon:c..."
-        value: 'restext://Common_047'
+        # ../en-US.restext:120 | "Then, return your {icon:c..."
+        value: 'restext://Directive_ReturnCreepyMarkerStart'
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:37851
     - type: 'text'
@@ -110,5 +110,5 @@ nodes:
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:37862
     - type: 'text'
-      # ../en-US.restext:51 | "Then, return your {icon:c..."
-      value: 'restext://Common_047'
+      # ../en-US.restext:120 | "Then, return your {icon:c..."
+      value: 'restext://Directive_ReturnCreepyMarkerStart'

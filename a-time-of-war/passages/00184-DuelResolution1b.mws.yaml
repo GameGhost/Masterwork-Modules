@@ -10,8 +10,8 @@ nodes:
   expr: 'rand_between(1, 5, "DuelResolution1b_0")'
 # ../.source/ATimeofWar_Eng_v8.cs:19579
 - type: 'conditional'
-  # ../en-US.restext:204 | "1"
-  if: 'duelresult == "restext://Common_200"'
+  # ../en-US.restext:50 | "1"
+  if: 'duelresult == "restext://Countdown_One"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:19583
   - type: 'text'
@@ -25,29 +25,29 @@ nodes:
     value: 'restext://DuelResolution1b_012'
   # ../.source/ATimeofWar_Eng_v8.cs:19591
   - type: 'conditional'
-    # ../en-US.restext:52 | "science"
-    if: 'dueltype == "restext://Common_048"'
+    # ../en-US.restext:20 | "science"
+    if: 'dueltype == "restext://Choice_Science"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:19593
     - type: 'switch'
       on: 'duelsci'
       cases:
-      # ../en-US.restext:48 | "Engineering"
-      - match: 'restext://Common_044'
+      # ../en-US.restext:118 | "Engineering"
+      - match: 'restext://Focus_Engineering'
         nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:19595
         - type: 'text'
           # ../en-US.restext:1636 | "was unceremoniously crush..."
           value: 'restext://DuelResolution1b_015'
-      # ../en-US.restext:49 | "Chemistry"
-      - match: 'restext://Common_045'
+      # ../en-US.restext:117 | "Chemistry"
+      - match: 'restext://Focus_Chemistry'
         nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:19601
         - type: 'text'
           # ../en-US.restext:1637 | "withered into a rubbery s..."
           value: 'restext://DuelResolution1b_016'
-      # ../en-US.restext:50 | "Biology"
-      - match: 'restext://Common_046'
+      # ../en-US.restext:116 | "Biology"
+      - match: 'restext://Focus_Biology'
         nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:19607
         - type: 'text'
@@ -75,19 +75,19 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:19627
   - type: 'text'
-    # ../en-US.restext:51 | "As required in the code d..."
-    value: 'restext://Common_047'
+    # ../en-US.restext:193 | "As required in the code d..."
+    value: 'restext://Narrative_CodeDuelloMatterComplete'
   # ../.source/ATimeofWar_Eng_v8.cs:19630
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:19634
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:24 | "Click to continue..."
-    label: 'restext://Common_020'
+    # ../en-US.restext:28 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: '${round == 7 ? "Martia1Pre2" : "MartialPre3"}' # ./00294-Martia1Pre2.mws.yaml, ./00295-MartialPre3.mws.yaml
-    # ../en-US.restext:185 | "Close"
-    okay: 'restext://Common_181'
+    # ../en-US.restext:282 | "Close"
+    okay: 'restext://UIButton_Close'
     snapshot: true
     header:
     # ../.source/ATimeofWar_Eng_v8.cs:19706
@@ -130,29 +130,29 @@ nodes:
     value: 'restext://DuelResolution1b_002'
   # ../.source/ATimeofWar_Eng_v8.cs:19646
   - type: 'conditional'
-    # ../en-US.restext:52 | "science"
-    if: 'dueltype == "restext://Common_048"'
+    # ../en-US.restext:20 | "science"
+    if: 'dueltype == "restext://Choice_Science"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:19648
     - type: 'switch'
       on: 'duelsci'
       cases:
-      # ../en-US.restext:48 | "Engineering"
-      - match: 'restext://Common_044'
+      # ../en-US.restext:118 | "Engineering"
+      - match: 'restext://Focus_Engineering'
         nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:19650
         - type: 'text'
           # ../en-US.restext:1627 | " suddenly complained of a..."
           value: 'restext://DuelResolution1b_005'
-      # ../en-US.restext:49 | "Chemistry"
-      - match: 'restext://Common_045'
+      # ../en-US.restext:117 | "Chemistry"
+      - match: 'restext://Focus_Chemistry'
         nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:19654
         - type: 'text'
           # ../en-US.restext:1628 | " held the side of their a..."
           value: 'restext://DuelResolution1b_006'
-      # ../en-US.restext:50 | "Biology"
-      - match: 'restext://Common_046'
+      # ../en-US.restext:116 | "Biology"
+      - match: 'restext://Focus_Biology'
         nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:19658
         - type: 'text'
@@ -177,19 +177,19 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:19674
   - type: 'text'
-    # ../en-US.restext:51 | "As required in the code d..."
-    value: 'restext://Common_047'
+    # ../en-US.restext:193 | "As required in the code d..."
+    value: 'restext://Narrative_CodeDuelloMatterComplete'
   # ../.source/ATimeofWar_Eng_v8.cs:19677
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:19681
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:24 | "Click to continue..."
-    label: 'restext://Common_020'
+    # ../en-US.restext:28 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: '${round == 7 ? "Martia1Pre2" : "MartialPre3"}' # ./00294-Martia1Pre2.mws.yaml, ./00295-MartialPre3.mws.yaml
-    # ../en-US.restext:185 | "Close"
-    okay: 'restext://Common_181'
+    # ../en-US.restext:282 | "Close"
+    okay: 'restext://UIButton_Close'
     snapshot: true
     header:
     # ../.source/ATimeofWar_Eng_v8.cs:19754

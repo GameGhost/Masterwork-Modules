@@ -38,5 +38,8 @@ nodes:
     - type: 'text'
       value: 'restext://Setup_TownName_ConfirmBody2'
     okay: 'restext://Common_Continue'
-    target: '00_Preparations' # TODO replace with module scope passage
+    # Every real module's own hand-maintained 00_Preparations.mws.yaml override is the canonical
+    # landing point here (each game's raw extracted Preparations-equivalent passage redirects to it
+    # via its own override rather than duplicating its content) — not a placeholder.
+    target: '00_Preparations'
     snapshot: true

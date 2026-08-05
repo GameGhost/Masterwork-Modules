@@ -7,8 +7,8 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:26557
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:215 | "Accept"
-  okay: 'restext://Common_211'
+  # ../en-US.restext:281 | "Accept"
+  okay: 'restext://UIButton_Accept'
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:26561
   - type: 'image'
@@ -45,8 +45,8 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:26592
 - type: 'link'
-  # ../en-US.restext:20 | "We chose the meat. (Yay!)"
-  label: 'restext://Common_016'
+  # ../en-US.restext:22 | "We chose the meat. (Yay!)"
+  label: 'restext://Choice_TheMeatYay'
   target: 'ATOW-FamineEventYes' # ./00237-ATOW-FamineEventYes.mws.yaml
   snapshot: true
   onclick:
@@ -59,13 +59,13 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:26596
 - type: 'link'
-  # ../en-US.restext:21 | "We chose empty promises. ..."
-  label: 'restext://Common_017'
+  # ../en-US.restext:10 | "We chose empty promises. ..."
+  label: 'restext://Choice_EmptyPromisesNay'
   target: 'ATOW-FamineEventNo' # ./00238-ATOW-FamineEventNo.mws.yaml
   snapshot: true
   onclick:
   # ../.source/ATimeofWar_Eng_v8.cs:26609
   - type: 'assign'
     var: 'famine'
-    # ../en-US.restext:78 | "none"
-    expr: '"restext://Common_074"'
+    # ../en-US.restext:16 | "none"
+    expr: '"restext://Choice_None"'

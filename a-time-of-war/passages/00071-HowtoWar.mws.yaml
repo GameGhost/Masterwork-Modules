@@ -56,14 +56,14 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:9668
 - type: 'text'
-  # ../en-US.restext:54 | "**To Battle**"
-  value: 'restext://Common_050'
+  # ../en-US.restext:182 | "**To Battle**"
+  value: 'restext://Heading_ToBattle'
 # ../.source/ATimeofWar_Eng_v8.cs:9670
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:9671
 - type: 'text'
-  # ../en-US.restext:55 | "All players take all thei..."
-  value: 'restext://Common_051'
+  # ../en-US.restext:56 | "All players take all thei..."
+  value: 'restext://Directive_AllPlayersWeaponTokensBattle'
 # ../.source/ATimeofWar_Eng_v8.cs:9675
 - type: 'break'
   style: 'paragraph'
@@ -88,15 +88,15 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:9704
 - type: 'text'
-  # ../en-US.restext:56 | "This process is then repe..."
-  value: 'restext://Common_052'
+  # ../en-US.restext:99 | "This process is then repe..."
+  value: 'restext://Directive_RepeatOccultCubeNextSquare'
 # ../.source/ATimeofWar_Eng_v8.cs:9706
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:9710
 - type: 'text'
-  # ../en-US.restext:57 | "_You must reveal at least..."
-  value: 'restext://Common_053'
+  # ../en-US.restext:103 | "_You must reveal at least..."
+  value: 'restext://Directive_RevealAtLeast1TokenForPoints'
 # ../.source/ATimeofWar_Eng_v8.cs:9713
 - type: 'break'
   style: 'paragraph'
@@ -108,8 +108,8 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:9718
     - type: 'link'
-      # ../en-US.restext:58 | "Click to return..."
-      label: 'restext://Common_054'
+      # ../en-US.restext:39 | "Click to return..."
+      label: 'restext://Click_Return'
       target: 'Peace1' # ./00044-Peace1.mws.yaml
       snapshot: true
       onclick:
@@ -121,8 +121,8 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:9723
     - type: 'link'
-      # ../en-US.restext:58 | "Click to return..."
-      label: 'restext://Common_054'
+      # ../en-US.restext:39 | "Click to return..."
+      label: 'restext://Click_Return'
       target: 'Peace2' # ./00045-Peace2.mws.yaml
       snapshot: true
       onclick:
@@ -133,8 +133,8 @@ nodes:
   default:
   # ../.source/ATimeofWar_Eng_v8.cs:9728
   - type: 'link'
-    # ../en-US.restext:58 | "Click to return..."
-    label: 'restext://Common_054'
+    # ../en-US.restext:39 | "Click to return..."
+    label: 'restext://Click_Return'
     target: 'Peace3' # ./00046-Peace3.mws.yaml
     snapshot: true
     onclick:

@@ -13,45 +13,45 @@ nodes:
     target: 'PaymentOrDeathB' # ./00317-PaymentOrDeathB.mws.yaml
 # ../.source/FearoftheUnknown_Eng_v15.cs:29811
 - type: 'text'
-  # ../en-US.restext:196 | "**Carefully hand this Sto..."
-  value: 'restext://Common_192'
+  # ../en-US.restext:314 | "**Carefully hand this Sto..."
+  value: 'restext://Storybook_HandDeviceToNameA'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29816
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29822
 - type: 'popup'
-  # ../en-US.restext:46 | "Once you are ready, click..."
-  label: 'restext://Common_042'
+  # ../en-US.restext:53 | "Once you are ready, click..."
+  label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:284 | "Close"
-  cancel: 'restext://Common_280'
+  # ../en-US.restext:365 | "Close"
+  cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:29836
   - type: 'text'
-    # ../en-US.restext:225 | "**A Most Unwelcome Return**"
-    value: 'restext://Common_221'
+    # ../en-US.restext:146 | "**A Most Unwelcome Return**"
+    value: 'restext://Heading_AMostUnwelcomeReturn'
   # ../.source/FearoftheUnknown_Eng_v15.cs:29838
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:29842
   - type: 'text'
-    # ../en-US.restext:226 | "**Scribbled Note - {nameA..."
-    value: 'restext://Common_222'
+    # ../en-US.restext:200 | "**Scribbled Note - {nameA..."
+    value: 'restext://Heading_ScribbledNote_NameA'
   # ../.source/FearoftheUnknown_Eng_v15.cs:29850
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:29852
   - type: 'text'
-    # ../en-US.restext:227 | "I write this note by cand..."
-    value: 'restext://Common_223'
+    # ../en-US.restext:278 | "I write this note by cand..."
+    value: 'restext://Narrative_WriteByCandlelightSpandrel'
   # ../.source/FearoftheUnknown_Eng_v15.cs:29854
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:29856
   - type: 'text'
-    # ../en-US.restext:228 | "I do not know how they go..."
-    value: 'restext://Common_224'
+    # ../en-US.restext:266 | "I do not know how they go..."
+    value: 'restext://Narrative_PaleIndividualsCoalBlackSuits'
   # ../.source/FearoftheUnknown_Eng_v15.cs:29857
   - type: 'break'
     style: 'paragraph'
@@ -64,15 +64,15 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:29874
   - type: 'text'
-    # ../en-US.restext:287 | "**Choose:**"
-    value: 'restext://Common_283'
+    # ../en-US.restext:153 | "**Choose:**"
+    value: 'restext://Heading_ChooseColon'
   # ../.source/FearoftheUnknown_Eng_v15.cs:29876
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:29879
   - type: 'link'
-    # ../en-US.restext:200 | "Yes, I will pay the entir..."
-    label: 'restext://Common_196'
+    # ../en-US.restext:26 | "Yes, I will pay the entir..."
+    label: 'restext://Choice_YesWillPayEntireAmount'
     target: 'Payment2ThanksA' # ./00266-Payment2ThanksA.mws.yaml
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:29880

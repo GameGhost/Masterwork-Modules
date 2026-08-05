@@ -2,10 +2,10 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Foreign2'
-# ../en-US.restext:95 | "Blame it on the Foreigners"
-title: 'restext://Common_091'
-# ../en-US.restext:156 | "Middle Years"
-subtitle: 'restext://Common_152'
+# ../en-US.restext:328 | "Blame it on the Foreigners"
+title: 'restext://Title_BlameItOnForeigners'
+# ../en-US.restext:341 | "Middle Years"
+subtitle: 'restext://Title_MiddleYears'
 tags:
 - 'HUB'
 layout: 'hub_middle'
@@ -16,8 +16,8 @@ nodes:
   expr: '5'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6129
 - type: 'section'
-  # ../en-US.restext:99 | "**Witching Hour**"
-  title: 'restext://Common_095'
+  # ../en-US.restext:238 | "**Witching Hour**"
+  title: 'restext://Heading_WitchingHour'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6138
@@ -29,18 +29,18 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6152
 - type: 'section'
-  # ../en-US.restext:100 | "{icon:storybooktoken} **R..."
-  title: 'restext://Common_096'
+  # ../en-US.restext:224 | "{icon:storybooktoken} **R..."
+  title: 'restext://Heading_StorybookToken_RumorMill'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6163
   - type: 'text'
-    # ../en-US.restext:101 | "When you visit the Church, "
-    value: 'restext://Common_097'
+    # ../en-US.restext:133 | "When you visit the Church, "
+    value: 'restext://Directive_VisitChurch_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6164
   - type: 'link'
-    # ../en-US.restext:102 | "click here to spy on anot..."
-    label: 'restext://Common_098'
+    # ../en-US.restext:47 | "click here to spy on anot..."
+    label: 'restext://Click_HereToSpyOnPlayer'
     target: 'CheckW2' # ./00080-CheckW2.mws.yaml
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:6165
@@ -52,18 +52,18 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6173
 - type: 'section'
-  # ../en-US.restext:103 | "{icon:storybooktoken} **T..."
-  title: 'restext://Common_099'
+  # ../en-US.restext:227 | "{icon:storybooktoken} **T..."
+  title: 'restext://Heading_StorybookToken_TownStrength'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6185
   - type: 'text'
-    # ../en-US.restext:104 | "Players may visit the Tow..."
-    value: 'restext://Common_100'
+    # ../en-US.restext:100 | "Players may visit the Tow..."
+    value: 'restext://Directive_MemorialBrickPurchase_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6195
   - type: 'link'
-    # ../en-US.restext:317 | "click here."
-    label: 'restext://Common_313'
+    # ../en-US.restext:49 | "click here."
+    label: 'restext://Click_Here_Period'
     target: 'TownHallExplanation' # ./00228-TownHallExplanation.mws.yaml
     snapshot: true
 # ../.source/FearoftheUnknown_Eng_v15.cs:6198
@@ -71,14 +71,14 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6202
 - type: 'section'
-  # ../en-US.restext:105 | "**Key to the City**"
-  title: 'restext://Common_101'
+  # ../en-US.restext:175 | "**Key to the City**"
+  title: 'restext://Heading_KeyToTheCity'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6211
   - type: 'text'
-    # ../en-US.restext:106 | "At the End of the Generat..."
-    value: 'restext://Common_102'
+    # ../en-US.restext:292 | "At the End of the Generat..."
+    value: 'restext://Reward_MostBricks_KeyToCity'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6223
   - type: 'conditional'
     if: 'players >= 4'
@@ -92,14 +92,14 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6234
 - type: 'section'
-  # ../en-US.restext:108 | "**Second Round Event - Ac..."
-  title: 'restext://Common_104'
+  # ../en-US.restext:206 | "**Second Round Event - Ac..."
+  title: 'restext://Heading_SecondRoundEvent_Accusations'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6243
   - type: 'text'
-    # ../en-US.restext:109 | "With a hideous hex upon t..."
-    value: 'restext://Common_105'
+    # ../en-US.restext:254 | "With a hideous hex upon t..."
+    value: 'restext://Narrative_HideousHexSacrificeCousin'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6253
 - type: 'break'
   style: 'paragraph'
@@ -109,27 +109,27 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6260
   - type: 'section'
-    # ../en-US.restext:110 | "{icon:storybooktoken} **P..."
-    title: 'restext://Common_106'
+    # ../en-US.restext:222 | "{icon:storybooktoken} **P..."
+    title: 'restext://Heading_StorybookToken_PressingForward'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6270
     - type: 'text'
-      # ../en-US.restext:111 | "If a player reaches 35VP, "
-      value: 'restext://Common_107'
+      # ../en-US.restext:98 | "If a player reaches 35VP, "
+      value: 'restext://Directive_IfPlayerReaches35VP_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:6272
     - type: 'conditional'
       if: 'revplot == "fortune"'
       then:
       - type: 'link'
-        # ../en-US.restext:177 | "click here..."
-        label: 'restext://Common_173'
+        # ../en-US.restext:39 | "click here..."
+        label: 'restext://Click_HereEllipsis_Lower'
         target: '35Fortune' # ./00193-35Fortune.mws.yaml
         snapshot: true
       else:
       - type: 'link'
-        # ../en-US.restext:177 | "click here..."
-        label: 'restext://Common_173'
+        # ../en-US.restext:39 | "click here..."
+        label: 'restext://Click_HereEllipsis_Lower'
         target: '35Misfortune' # ./00194-35Misfortune.mws.yaml
         snapshot: true
 # ../.source/FearoftheUnknown_Eng_v15.cs:6276
@@ -145,8 +145,8 @@ nodes:
     # ../en-US.restext:710 | "Click here at the end of ..."
     label: 'restext://Foreign2_004'
     target: 'Witchwolfresolution' # ./00070-Witchwolfresolution.mws.yaml
-    # ../en-US.restext:181 | "End of Round"
-    okay: 'restext://Common_177'
+    # ../en-US.restext:369 | "End of Round"
+    okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
       var: '_ProgressRound'
@@ -154,10 +154,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:86 | "The Middle Years of the S..."
-      value: 'restext://Common_082'
+      # ../en-US.restext:304 | "The Middle Years of the S..."
+      value: 'restext://Round_GenerationII_MiddleEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:158 | "Then, perform all Start o..."
-      value: 'restext://Common_154'
+      # ../en-US.restext:305 | "Then, perform all Start o..."
+      value: 'restext://Round_StartLateYears_Rule'

@@ -2,21 +2,21 @@
 ---
 format: 'mws/0.4'
 passage_id: '2PCoWEvent'
-# ../en-US.restext:282 | "BID"
-title: 'restext://Common_278'
+# ../en-US.restext:128 | "BID"
+title: 'restext://Heading_BidCaps'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:25892
 - type: 'text'
-  # ../en-US.restext:197 | "Special Event"
-  value: 'restext://Common_193'
+  # ../en-US.restext:238 | "Special Event"
+  value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/ATimeofWar_Eng_v8.cs:25893
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:25894
 - type: 'text'
-  # ../en-US.restext:283 | "Both players take all the..."
-  value: 'restext://Common_279'
+  # ../en-US.restext:59 | "Both players take all the..."
+  value: 'restext://Directive_BothPlayersBidMoney_Then'
 # ../.source/ATimeofWar_Eng_v8.cs:25896
 - type: 'break'
   style: 'paragraph'
@@ -55,8 +55,8 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:25974
 - type: 'text'
-  # ../en-US.restext:284 | "Only the player who wins ..."
-  value: 'restext://Common_280'
+  # ../en-US.restext:71 | "Only the player who wins ..."
+  value: 'restext://Directive_ElectionWinnerPaysBid'
 # ../.source/ATimeofWar_Eng_v8.cs:25976
 - type: 'break'
   style: 'paragraph'
@@ -67,38 +67,38 @@ nodes:
   label: 'restext://_2PCoWEvent_009'
   content:
   - type: 'text'
-    # ../en-US.restext:285 | "Click on the 'Start Biddi..."
-    value: 'restext://Common_281'
+    # ../en-US.restext:5 | "Click on the 'Start Biddi..."
+    value: 'restext://Bidding_Instructions'
   - type: 'break'
     style: 'paragraph'
   - type: 'text'
-    # ../en-US.restext:199 | "When you see the word 'RE..."
-    value: 'restext://Common_195'
+    # ../en-US.restext:6 | "When you see the word 'RE..."
+    value: 'restext://Bidding_RevealInstructions'
   - type: 'break'
     style: 'paragraph'
   - type: 'popup'
     layout: 'countdown_action'
-    # ../en-US.restext:286 | "Start Bidding"
-    label: 'restext://Common_282'
+    # ../en-US.restext:7 | "Start Bidding"
+    label: 'restext://Bidding_StartButton'
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:202 | "3"
-      value: 'restext://Common_198'
+      # ../en-US.restext:52 | "3"
+      value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:203 | "2"
-      value: 'restext://Common_199'
+      # ../en-US.restext:53 | "2"
+      value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:204 | "1"
-      value: 'restext://Common_200'
+      # ../en-US.restext:50 | "1"
+      value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:201 | "REVEAL"
-      value: 'restext://Common_197'
+      # ../en-US.restext:51 | "REVEAL"
+      value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:201 | "REVEAL"
-    okay: 'restext://Common_197'
+    # ../en-US.restext:51 | "REVEAL"
+    okay: 'restext://Countdown_Reveal'
     target: '2PCoWRes' # ./00265-2PCoWRes.mws.yaml
     snapshot: false

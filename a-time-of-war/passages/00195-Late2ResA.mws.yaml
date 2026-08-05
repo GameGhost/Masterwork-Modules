@@ -10,8 +10,8 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:20414
   - type: 'text'
-    # ../en-US.restext:59 | "**Gift of Silence**"
-    value: 'restext://Common_055'
+    # ../en-US.restext:140 | "**Gift of Silence**"
+    value: 'restext://Heading_GiftOfSilence'
   # ../.source/ATimeofWar_Eng_v8.cs:20416
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:20417
@@ -31,11 +31,11 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:20426
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:24 | "Click to continue..."
-    label: 'restext://Common_020'
+    # ../en-US.restext:28 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: 'Paradox1' # ./00029-Paradox1.mws.yaml
-    # ../en-US.restext:185 | "Close"
-    okay: 'restext://Common_181'
+    # ../en-US.restext:282 | "Close"
+    okay: 'restext://UIButton_Close'
     snapshot: true
     header:
     # ../.source/ATimeofWar_Eng_v8.cs:20444

@@ -59,8 +59,8 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:1315
 - type: 'link'
-  # ../en-US.restext:24 | "Click to continue..."
-  label: 'restext://Common_020'
+  # ../en-US.restext:28 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   target: 'IntroConflict' # ./00149-IntroConflict.mws.yaml
   snapshot: true
 # ../.source/ATimeofWar_Eng_v8.cs:1317
@@ -74,13 +74,13 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:1319
 - type: 'assign'
   var: 'warwinner'
-  # ../en-US.restext:25 | Common_021 | "Separatists"
-  # ../en-US.restext:26 | Common_022 | "Unified Monarchists"
-  expr: '["restext://Common_021", "restext://Common_022"].shuffled("ATimeofWarIntro_1")[0]'
+  # ../en-US.restext:269 | Title_Separatists | "Separatists"
+  # ../en-US.restext:279 | Title_UnifiedMonarchists | "Unified Monarchists"
+  expr: '["restext://Title_Separatists", "restext://Title_UnifiedMonarchists"].shuffled("ATimeofWarIntro_1")[0]'
 # ../.source/ATimeofWar_Eng_v8.cs:1320
 - type: 'conditional'
-  # ../en-US.restext:25 | "Separatists"
-  if: 'warwinner == "restext://Common_021"'
+  # ../en-US.restext:269 | "Separatists"
+  if: 'warwinner == "restext://Title_Separatists"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:1322
   - type: 'assign'
@@ -90,8 +90,8 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:1323
   - type: 'assign'
     var: 'warloser'
-    # ../en-US.restext:26 | "Unified Monarchists"
-    expr: '"restext://Common_022"'
+    # ../en-US.restext:279 | "Unified Monarchists"
+    expr: '"restext://Title_UnifiedMonarchists"'
   # ../.source/ATimeofWar_Eng_v8.cs:1324
   - type: 'assign'
     var: 'figure'
@@ -106,8 +106,8 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:1329
   - type: 'assign'
     var: 'warloser'
-    # ../en-US.restext:25 | "Separatists"
-    expr: '"restext://Common_021"'
+    # ../en-US.restext:269 | "Separatists"
+    expr: '"restext://Title_Separatists"'
   # ../.source/ATimeofWar_Eng_v8.cs:1330
   - type: 'assign'
     var: 'figure'
@@ -115,8 +115,8 @@ nodes:
     expr: '"restext://ATimeofWarIntro_013"'
 # ../.source/ATimeofWar_Eng_v8.cs:1333
 - type: 'conditional'
-  # ../en-US.restext:25 | "Separatists"
-  if: 'warwinner == "restext://Common_021"'
+  # ../en-US.restext:269 | "Separatists"
+  if: 'warwinner == "restext://Title_Separatists"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:1335
   - type: 'assign'

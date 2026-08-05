@@ -55,38 +55,38 @@ nodes:
   label: 'restext://CommemorativeStatueEventb_008'
   content:
   - type: 'text'
-    # ../en-US.restext:285 | "Click on the 'Start Biddi..."
-    value: 'restext://Common_281'
+    # ../en-US.restext:5 | "Click on the 'Start Biddi..."
+    value: 'restext://Bidding_Instructions'
   - type: 'break'
     style: 'paragraph'
   - type: 'text'
-    # ../en-US.restext:199 | "When you see the word 'RE..."
-    value: 'restext://Common_195'
+    # ../en-US.restext:6 | "When you see the word 'RE..."
+    value: 'restext://Bidding_RevealInstructions'
   - type: 'break'
     style: 'paragraph'
   - type: 'popup'
     layout: 'countdown_action'
-    # ../en-US.restext:286 | "Start Bidding"
-    label: 'restext://Common_282'
+    # ../en-US.restext:7 | "Start Bidding"
+    label: 'restext://Bidding_StartButton'
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:202 | "3"
-      value: 'restext://Common_198'
+      # ../en-US.restext:52 | "3"
+      value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:203 | "2"
-      value: 'restext://Common_199'
+      # ../en-US.restext:53 | "2"
+      value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:204 | "1"
-      value: 'restext://Common_200'
+      # ../en-US.restext:50 | "1"
+      value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:201 | "REVEAL"
-      value: 'restext://Common_197'
+      # ../en-US.restext:51 | "REVEAL"
+      value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:201 | "REVEAL"
-    okay: 'restext://Common_197'
+    # ../en-US.restext:51 | "REVEAL"
+    okay: 'restext://Countdown_Reveal'
     target: 'CommemorativeStatueEventRes' # ./00287-CommemorativeStatueEventRes.mws.yaml
     snapshot: false

@@ -6,8 +6,8 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:10884
 - type: 'text'
-  # ../en-US.restext:44 | "**Carefully hand this Sto..."
-  value: 'restext://Common_040'
+  # ../en-US.restext:244 | "**Carefully hand this Sto..."
+  value: 'restext://Storybook_HandDeviceToNameD'
 # ../.source/ATimeofWar_Eng_v8.cs:10889
 - type: 'assign'
   var: 'counter'
@@ -17,37 +17,37 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:10896
 - type: 'popup'
-  # ../en-US.restext:184 | "Once you are ready, click..."
-  label: 'restext://Common_180'
+  # ../en-US.restext:40 | "Once you are ready, click..."
+  label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:185 | "Close"
-  cancel: 'restext://Common_181'
+  # ../en-US.restext:282 | "Close"
+  cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:10905
   - type: 'text'
-    # ../en-US.restext:36 | "**Interrogation**"
-    value: 'restext://Common_032'
+    # ../en-US.restext:143 | "**Interrogation**"
+    value: 'restext://Heading_Interrogation'
   # ../.source/ATimeofWar_Eng_v8.cs:10907
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:10908
   - type: 'text'
-    # ../en-US.restext:37 | "On a Sunday afternoon, I ..."
-    value: 'restext://Common_033'
+    # ../en-US.restext:211 | "On a Sunday afternoon, I ..."
+    value: 'restext://Narrative_SundayAfternoonRousedByRiflemen'
   # ../.source/ATimeofWar_Eng_v8.cs:10912
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:10914
   - type: 'text'
-    # ../en-US.restext:38 | "Do you have a {warwinner}..."
-    value: 'restext://Common_034'
+    # ../en-US.restext:137 | "Do you have a {warwinner}..."
+    value: 'restext://Heading_DoYouHaveWarwinnerFlag'
   # ../.source/ATimeofWar_Eng_v8.cs:10918
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:10920
   - type: 'link'
-    # ../en-US.restext:39 | "Yes, I do. Why do you ask?"
-    label: 'restext://Common_035'
+    # ../en-US.restext:24 | "Yes, I do. Why do you ask?"
+    label: 'restext://Choice_YesIDoWhyAsk'
     target: 'Blame1c' # ./00065-Blame1c.mws.yaml
     snapshot: true
   # ../.source/ATimeofWar_Eng_v8.cs:10921
@@ -55,7 +55,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:10923
   - type: 'link'
-    # ../en-US.restext:40 | "No, I do not."
-    label: 'restext://Common_036'
+    # ../en-US.restext:14 | "No, I do not."
+    label: 'restext://Choice_NoIDoNot'
     target: 'Blame1b' # ./00064-Blame1b.mws.yaml
     snapshot: true

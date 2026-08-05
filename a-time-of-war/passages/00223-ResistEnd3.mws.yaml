@@ -24,8 +24,8 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:22638
 - type: 'conditional'
-  # ../en-US.restext:26 | "Unified Monarchists"
-  if: 'warwinner == "restext://Common_022"'
+  # ../en-US.restext:279 | "Unified Monarchists"
+  if: 'warwinner == "restext://Title_UnifiedMonarchists"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:22642
   - type: 'popup'
@@ -33,20 +33,20 @@ nodes:
     # ../en-US.restext:1876 | "Click here if the {warlos..."
     label: 'restext://ResistEnd3_004'
     target: 'PeaceIntro' # ./00042-PeaceIntro.mws.yaml
-    # ../en-US.restext:185 | "Close"
-    okay: 'restext://Common_181'
+    # ../en-US.restext:282 | "Close"
+    okay: 'restext://UIButton_Close'
     snapshot: true
     content:
     - type: 'let'
       var: 'title'
-      # ../en-US.restext:170 | "End of Generation"
-      expr: '"restext://Common_166"'
+      # ../en-US.restext:252 | "End of Generation"
+      expr: '"restext://Title_EndOfGeneration"'
     - type: 'let'
       var: 'completedRound'
       expr: '6'
     - type: 'text'
-      # ../en-US.restext:171 | "Remove all player pieces ..."
-      value: 'restext://Common_167'
+      # ../en-US.restext:73 | "Remove all player pieces ..."
+      value: 'restext://Directive_EndGeneration_PlayersKeepWeaponTokens'
   # ../.source/ATimeofWar_Eng_v8.cs:22644
   - type: 'break'
     style: 'paragraph'
@@ -56,20 +56,20 @@ nodes:
     # ../en-US.restext:1877 | "Click here if the {warwin..."
     label: 'restext://ResistEnd3_005'
     target: 'MonarchReignIntro' # ./00041-MonarchReignIntro.mws.yaml
-    # ../en-US.restext:185 | "Close"
-    okay: 'restext://Common_181'
+    # ../en-US.restext:282 | "Close"
+    okay: 'restext://UIButton_Close'
     snapshot: true
     content:
     - type: 'let'
       var: 'title'
-      # ../en-US.restext:170 | "End of Generation"
-      expr: '"restext://Common_166"'
+      # ../en-US.restext:252 | "End of Generation"
+      expr: '"restext://Title_EndOfGeneration"'
     - type: 'let'
       var: 'completedRound'
       expr: '6'
     - type: 'text'
-      # ../en-US.restext:171 | "Remove all player pieces ..."
-      value: 'restext://Common_167'
+      # ../en-US.restext:73 | "Remove all player pieces ..."
+      value: 'restext://Directive_EndGeneration_PlayersKeepWeaponTokens'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:22655
   - type: 'popup'
@@ -77,20 +77,20 @@ nodes:
     # ../en-US.restext:1876 | "Click here if the {warlos..."
     label: 'restext://ResistEnd3_004'
     target: 'MonarchReignIntro' # ./00041-MonarchReignIntro.mws.yaml
-    # ../en-US.restext:185 | "Close"
-    okay: 'restext://Common_181'
+    # ../en-US.restext:282 | "Close"
+    okay: 'restext://UIButton_Close'
     snapshot: true
     content:
     - type: 'let'
       var: 'title'
-      # ../en-US.restext:170 | "End of Generation"
-      expr: '"restext://Common_166"'
+      # ../en-US.restext:252 | "End of Generation"
+      expr: '"restext://Title_EndOfGeneration"'
     - type: 'let'
       var: 'completedRound'
       expr: '6'
     - type: 'text'
-      # ../en-US.restext:171 | "Remove all player pieces ..."
-      value: 'restext://Common_167'
+      # ../en-US.restext:73 | "Remove all player pieces ..."
+      value: 'restext://Directive_EndGeneration_PlayersKeepWeaponTokens'
   # ../.source/ATimeofWar_Eng_v8.cs:22657
   - type: 'break'
     style: 'paragraph'
@@ -100,17 +100,17 @@ nodes:
     # ../en-US.restext:1877 | "Click here if the {warwin..."
     label: 'restext://ResistEnd3_005'
     target: 'PeaceIntro' # ./00042-PeaceIntro.mws.yaml
-    # ../en-US.restext:185 | "Close"
-    okay: 'restext://Common_181'
+    # ../en-US.restext:282 | "Close"
+    okay: 'restext://UIButton_Close'
     snapshot: true
     content:
     - type: 'let'
       var: 'title'
-      # ../en-US.restext:170 | "End of Generation"
-      expr: '"restext://Common_166"'
+      # ../en-US.restext:252 | "End of Generation"
+      expr: '"restext://Title_EndOfGeneration"'
     - type: 'let'
       var: 'completedRound'
       expr: '6'
     - type: 'text'
-      # ../en-US.restext:171 | "Remove all player pieces ..."
-      value: 'restext://Common_167'
+      # ../en-US.restext:73 | "Remove all player pieces ..."
+      value: 'restext://Directive_EndGeneration_PlayersKeepWeaponTokens'

@@ -8,8 +8,8 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:20727
 - type: 'text'
-  # ../en-US.restext:6 | "**All players may again v..."
-  value: 'restext://Common_002'
+  # ../en-US.restext:55 | "**All players may again v..."
+  value: 'restext://Directive_AllPlayersMayViewStorybookAgain'
 # ../.source/ATimeofWar_Eng_v8.cs:20729
 - type: 'break'
   style: 'paragraph'
@@ -37,11 +37,11 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:20747
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:24 | "Click to continue..."
-  label: 'restext://Common_020'
+  # ../en-US.restext:28 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   target: 'Late2ResA' # ./00195-Late2ResA.mws.yaml
-  # ../en-US.restext:185 | "Close"
-  okay: 'restext://Common_181'
+  # ../en-US.restext:282 | "Close"
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   - type: 'conditional'
@@ -64,22 +64,22 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:20788
   - type: 'text'
-    # ../en-US.restext:53 | "The first time a player's..."
-    value: 'restext://Common_049'
+    # ../en-US.restext:76 | "The first time a player's..."
+    value: 'restext://Directive_FirstTimeReachesFigureToken_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:20797
   - type: 'conditional'
-    # ../en-US.restext:26 | "Unified Monarchists"
-    if: 'warwinner == "restext://Common_022"'
+    # ../en-US.restext:279 | "Unified Monarchists"
+    if: 'warwinner == "restext://Title_UnifiedMonarchists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:20799
     - type: 'text'
-      # ../en-US.restext:121 | "**they may immediately bu..."
-      value: 'restext://Common_117'
+      # ../en-US.restext:227 | "**they may immediately bu..."
+      value: 'restext://Reward_MayBuildVanityEstateUpgrade'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:20803
     - type: 'text'
-      # ../en-US.restext:120 | "**they may immediately ta..."
-      value: 'restext://Common_116'
+      # ../en-US.restext:228 | "**they may immediately ta..."
+      value: 'restext://Reward_MayTakePerformExperimentAction'
   # ../.source/ATimeofWar_Eng_v8.cs:20806
   - type: 'text'
     value: '.'

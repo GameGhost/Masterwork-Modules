@@ -23,11 +23,11 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:20558
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:24 | "Click to continue..."
-  label: 'restext://Common_020'
+  # ../en-US.restext:28 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   target: 'WhoopsUtopianb' # ./00234-WhoopsUtopianb.mws.yaml
-  # ../en-US.restext:185 | "Close"
-  okay: 'restext://Common_181'
+  # ../en-US.restext:282 | "Close"
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:20575
@@ -51,5 +51,5 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:20595
   - type: 'text'
-    # ../en-US.restext:234 | "Each player then **draws ..."
-    value: 'restext://Common_230'
+    # ../en-US.restext:68 | "Each player then **draws ..."
+    value: 'restext://Directive_DrawUtopianExperiment'

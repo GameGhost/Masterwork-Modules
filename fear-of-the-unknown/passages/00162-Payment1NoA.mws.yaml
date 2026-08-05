@@ -2,30 +2,30 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Payment1NoA'
-# ../en-US.restext:210 | "The Count is Disappointed"
-title: 'restext://Common_206'
+# ../en-US.restext:352 | "The Count is Disappointed"
+title: 'restext://Title_TheCountIsDisappointed'
 tags:
 - 'format'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:19656
 - type: 'text'
-  # ../en-US.restext:198 | "**Journal of {nameA} -** ..."
-  value: 'restext://Common_194'
+  # ../en-US.restext:168 | "**Journal of {nameA} -** ..."
+  value: 'restext://Heading_JournalOfNameA_1892Romania'
 # ../.source/FearoftheUnknown_Eng_v15.cs:19665
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:19667
 - type: 'text'
-  # ../en-US.restext:211 | "\"Our employer will not b..."
-  value: 'restext://Common_207'
+  # ../en-US.restext:247 | "\"Our employer will not b..."
+  value: 'restext://Narrative_EmployerNotPleased'
 # ../.source/FearoftheUnknown_Eng_v15.cs:19668
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:19671
 - type: 'link'
-  # ../en-US.restext:295 | "Click to continue..."
-  label: 'restext://Common_291'
+  # ../en-US.restext:29 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   target: 'Payment1B' # ./00163-Payment1B.mws.yaml
   snapshot: true
   onclick:

@@ -99,8 +99,8 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3350
 - type: 'link'
-  # ../en-US.restext:80 | "Continue..."
-  label: 'restext://Common_076'
+  # ../en-US.restext:368 | "Continue..."
+  label: 'restext://UIButton_ContinueEllipsis'
   target: 'CreatureDemands' # ./00046-CreatureDemands.mws.yaml
   snapshot: true
 # ../.source/FearoftheUnknown_Eng_v15.cs:3352
@@ -118,10 +118,10 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:3355
 - type: 'assign'
   var: 'asylumup'
-  # ../en-US.restext:61 | Common_057 | "Asylum Labor Union"
-  # ../en-US.restext:62 | Common_058 | "Key to the Asylum"
+  # ../en-US.restext:327 | Title_AsylumLaborUnion | "Asylum Labor Union"
+  # ../en-US.restext:336 | Title_KeyToTheAsylum | "Key to the Asylum"
   # ../en-US.restext:498 | CreatureIntro_012 | "Asylum Share"
-  expr: '["restext://Common_057", "restext://Common_058", "restext://CreatureIntro_012"].shuffled("CreatureIntro_5")[0]'
+  expr: '["restext://Title_AsylumLaborUnion", "restext://Title_KeyToTheAsylum", "restext://CreatureIntro_012"].shuffled("CreatureIntro_5")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3356
 - type: 'assign'
   var: 'did1'

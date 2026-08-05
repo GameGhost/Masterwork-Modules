@@ -32,8 +32,8 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3303
   - type: 'link'
-    # ../en-US.restext:24 | "Click to continue..."
-    label: 'restext://Common_020'
+    # ../en-US.restext:28 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: 'Paradoxical' # ./00106-Paradoxical.mws.yaml
     snapshot: true
   else:
@@ -68,8 +68,8 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:3354
     - type: 'assign'
       var: 'tmnumber'
-      # ../en-US.restext:225 | "zero pieces"
-      expr: '"restext://Common_221"'
+      # ../en-US.restext:25 | "zero pieces"
+      expr: '"restext://Choice_ZeroPieces"'
   # ../.source/ATimeofWar_Eng_v8.cs:3333
   - type: 'break'
     style: 'paragraph'
@@ -103,12 +103,12 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:3346
 - type: 'popup'
   layout: 'end_of_generation'
-  # ../en-US.restext:247 | "Confirm"
-  okay: 'restext://Common_243'
+  # ../en-US.restext:283 | "Confirm"
+  okay: 'restext://UIButton_Confirm'
   content:
   - type: 'text'
-    # ../en-US.restext:224 | "Remove all player pieces ..."
-    value: 'restext://Common_220'
+    # ../en-US.restext:74 | "Remove all player pieces ..."
+    value: 'restext://Directive_EndGeneration_ReturnMasterworkParadoxToQuarters'
   - type: 'let'
     var: 'generation'
     expr: '6'

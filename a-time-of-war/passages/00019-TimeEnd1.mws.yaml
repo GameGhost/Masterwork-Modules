@@ -41,12 +41,12 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:3231
 - type: 'popup'
   layout: 'end_of_generation'
-  # ../en-US.restext:247 | "Confirm"
-  okay: 'restext://Common_243'
+  # ../en-US.restext:283 | "Confirm"
+  okay: 'restext://UIButton_Confirm'
   content:
   - type: 'text'
-    # ../en-US.restext:224 | "Remove all player pieces ..."
-    value: 'restext://Common_220'
+    # ../en-US.restext:74 | "Remove all player pieces ..."
+    value: 'restext://Directive_EndGeneration_ReturnMasterworkParadoxToQuarters'
   - type: 'let'
     var: 'generation'
     expr: '6'
@@ -85,7 +85,7 @@ nodes:
   value: 'restext://TimeEnd1_007'
 # ../.source/ATimeofWar_Eng_v8.cs:3261
 - type: 'link'
-  # ../en-US.restext:186 | "Click here to continue..."
-  label: 'restext://Common_182'
+  # ../en-US.restext:27 | "Click here to continue..."
+  label: 'restext://Click_ContinueEllipsis_B'
   target: 'Paradoxical' # ./00106-Paradoxical.mws.yaml
   snapshot: true

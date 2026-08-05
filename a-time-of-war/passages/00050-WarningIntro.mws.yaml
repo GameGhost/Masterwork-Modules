@@ -16,8 +16,8 @@ nodes:
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:6636
 - type: 'text'
-  # ../en-US.restext:135 | "While the discovery of my..."
-  value: 'restext://Common_131'
+  # ../en-US.restext:195 | "While the discovery of my..."
+  value: 'restext://Narrative_DiscoveryFamilyExperimentsJournals'
 # ../.source/ATimeofWar_Eng_v8.cs:6637
 - type: 'break'
   style: 'paragraph'
@@ -30,8 +30,8 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:6642
 - type: 'text'
-  # ../en-US.restext:136 | "The estate appeared untou..."
-  value: 'restext://Common_132'
+  # ../en-US.restext:198 | "The estate appeared untou..."
+  value: 'restext://Narrative_EstateUntouchedVacancyCaretaker'
 # ../.source/ATimeofWar_Eng_v8.cs:6643
 - type: 'break'
   style: 'paragraph'
@@ -44,15 +44,15 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:6648
 - type: 'text'
-  # ../en-US.restext:137 | "This caused me severe con..."
-  value: 'restext://Common_133'
+  # ../en-US.restext:207 | "This caused me severe con..."
+  value: 'restext://Narrative_SevereConsternationScientificEnlightenment'
 # ../.source/ATimeofWar_Eng_v8.cs:6652
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:6654
 - type: 'text'
-  # ../en-US.restext:138 | "It was this grim realizat..."
-  value: 'restext://Common_134'
+  # ../en-US.restext:200 | "It was this grim realizat..."
+  value: 'restext://Narrative_GrimRealizationStrengthenedWill'
 # ../.source/ATimeofWar_Eng_v8.cs:6657
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:6658
@@ -108,8 +108,8 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:6680
   - type: 'link'
-    # ../en-US.restext:24 | "Click to continue..."
-    label: 'restext://Common_020'
+    # ../en-US.restext:28 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: '${WarningIntronextPsg}'
     snapshot: true
     onclick:
@@ -124,8 +124,8 @@ nodes:
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:6684
   - type: 'link'
-    # ../en-US.restext:24 | "Click to continue..."
-    label: 'restext://Common_020'
+    # ../en-US.restext:28 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: 'Late2ResB' # ./00196-Late2ResB.mws.yaml
     snapshot: true
 # ../.source/ATimeofWar_Eng_v8.cs:6686
@@ -136,5 +136,5 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:6689
   - type: 'text'
-    # ../en-US.restext:140 | "v1.0"
-    value: 'restext://Common_136'
+    # ../en-US.restext:49 | "v1.0"
+    value: 'restext://Common_VersionOnePointZero'

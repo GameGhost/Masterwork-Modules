@@ -2,10 +2,10 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TimeTravel3'
-# ../en-US.restext:237 | "Tides of War 2"
-title: 'restext://Common_233'
-# ../en-US.restext:211 | "Late Years"
-subtitle: 'restext://Common_207'
+# ../en-US.restext:276 | "Tides of War 2"
+title: 'restext://Title_TidesOfWar2'
+# ../en-US.restext:257 | "Late Years"
+subtitle: 'restext://Title_LateYears'
 tags:
 - 'HUB'
 layout: 'hub_late'
@@ -25,8 +25,8 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:3016
     - type: 'popup'
       layout: 'setup'
-      # ../en-US.restext:215 | "Accept"
-      okay: 'restext://Common_211'
+      # ../en-US.restext:281 | "Accept"
+      okay: 'restext://UIButton_Accept'
       header:
       # ../.source/ATimeofWar_Eng_v8.cs:3020
       - type: 'image'
@@ -42,8 +42,8 @@ nodes:
       style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3034
   - type: 'section'
-    # ../en-US.restext:212 | "**Military Demands**"
-    title: 'restext://Common_208'
+    # ../en-US.restext:146 | "**Military Demands**"
+    title: 'restext://Heading_MilitaryDemands'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:3042
@@ -66,25 +66,25 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:3067
   - type: 'section'
-    # ../en-US.restext:227 | "{icon:storybooktoken} **R..."
-    title: 'restext://Common_223'
+    # ../en-US.restext:166 | "{icon:storybooktoken} **R..."
+    title: 'restext://Heading_StorybookToken_RepairTimeMachine'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:3077
     - type: 'text'
-      # ../en-US.restext:228 | "When taking the **Perform..."
-      value: 'restext://Common_224'
+      # ../en-US.restext:91 | "When taking the **Perform..."
+      value: 'restext://Directive_PerformExperimentTimeMachineRepairs'
     # ../.source/ATimeofWar_Eng_v8.cs:3088
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:3090
     - type: 'text'
-      # ../en-US.restext:229 | "Once all **three** Repair..."
-      value: 'restext://Common_225'
+      # ../en-US.restext:57 | "Once all **three** Repair..."
+      value: 'restext://Directive_AllThreeRepairsCompleted_Fragment'
     # ../.source/ATimeofWar_Eng_v8.cs:3096
     - type: 'link'
-      # ../en-US.restext:230 | "click here for a special ..."
-      label: 'restext://Common_226'
+      # ../en-US.restext:37 | "click here for a special ..."
+      label: 'restext://Click_HereForSpecialMessage_Exclaim'
       target: 'ATimeMachineRepaired' # ./00193-ATimeMachineRepaired.mws.yaml
       snapshot: true
   # ../.source/ATimeofWar_Eng_v8.cs:3098
@@ -92,18 +92,18 @@ nodes:
     style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:3103
 - type: 'section'
-  # ../en-US.restext:239 | "{icon:storybooktoken} **P..."
-  title: 'restext://Common_235'
+  # ../en-US.restext:164 | "{icon:storybooktoken} **P..."
+  title: 'restext://Heading_StorybookToken_ParadoxExplanation'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:3113
   - type: 'text'
-    # ../en-US.restext:240 | "For more detailed rules o..."
-    value: 'restext://Common_236'
+    # ../en-US.restext:90 | "For more detailed rules o..."
+    value: 'restext://Directive_ParadoxTokenRulesExplanation_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:3117
   - type: 'link'
-    # ../en-US.restext:195 | "click here."
-    label: 'restext://Common_191'
+    # ../en-US.restext:38 | "click here."
+    label: 'restext://Click_Here_Period'
     target: 'ParadoxExReminder' # ./00192-ParadoxExReminder.mws.yaml
     snapshot: true
 # ../.source/ATimeofWar_Eng_v8.cs:3119
@@ -115,26 +115,26 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:3125
   - type: 'section'
-    # ../en-US.restext:241 | "{icon:storybooktoken} **P..."
-    title: 'restext://Common_237'
+    # ../en-US.restext:165 | "{icon:storybooktoken} **P..."
+    title: 'restext://Heading_StorybookToken_ParadoxicalMendingReward'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:3134
     - type: 'text'
-      # ../en-US.restext:242 | "Fixing the timestream has..."
-      value: 'restext://Common_238'
+      # ../en-US.restext:77 | "Fixing the timestream has..."
+      value: 'restext://Directive_FixTimestreamZeroParadox_Fragment'
     # ../.source/ATimeofWar_Eng_v8.cs:3142
     - type: 'link'
-      # ../en-US.restext:243 | "click here to receive a s..."
-      label: 'restext://Common_239'
+      # ../en-US.restext:47 | "click here to receive a s..."
+      label: 'restext://Click_ToReceiveSpecialBonus'
       target: 'TriggerParadox' # ./00141-TriggerParadox.mws.yaml
       snapshot: true
     # ../.source/ATimeofWar_Eng_v8.cs:3143
     - type: 'break'
     # ../.source/ATimeofWar_Eng_v8.cs:3146
     - type: 'text'
-      # ../en-US.restext:244 | "_You must remove at least..."
-      value: 'restext://Common_240'
+      # ../en-US.restext:98 | "_You must remove at least..."
+      value: 'restext://Directive_RemoveParadoxTokenForBonus'
   # ../.source/ATimeofWar_Eng_v8.cs:3151
   - type: 'break'
     style: 'paragraph'
@@ -149,11 +149,11 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:3163
     - type: 'popup'
       layout: 'end_of_round'
-      # ../en-US.restext:231 | "Click here to determine t..."
-      label: 'restext://Common_227'
+      # ../en-US.restext:44 | "Click here to determine t..."
+      label: 'restext://Click_ToDetermineFateOfTown'
       target: 'BlameOut3' # ./00081-BlameOut3.mws.yaml
-      # ../en-US.restext:222 | "End of Round"
-      okay: 'restext://Common_218'
+      # ../en-US.restext:285 | "End of Round"
+      okay: 'restext://UIButton_EndOfRound'
       onclose:
       - type: 'assign'
         var: '_ProgressRound'
@@ -161,22 +161,22 @@ nodes:
       snapshot: true
       content:
       - type: 'text'
-        # ../en-US.restext:232 | "The Late Years of the Sec..."
-        value: 'restext://Common_228'
+        # ../en-US.restext:233 | "The Late Years of the Sec..."
+        value: 'restext://Round_GenerationII_LateEnded'
       - type: 'break'
         style: 'paragraph'
       - type: 'text'
-        # ../en-US.restext:233 | "Perform any End of Round ..."
-        value: 'restext://Common_229'
+        # ../en-US.restext:229 | "Perform any End of Round ..."
+        value: 'restext://Round_EndOfRoundActions_Rule'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:3169
     - type: 'popup'
       layout: 'end_of_round'
-      # ../en-US.restext:231 | "Click here to determine t..."
-      label: 'restext://Common_227'
+      # ../en-US.restext:44 | "Click here to determine t..."
+      label: 'restext://Click_ToDetermineFateOfTown'
       target: 'SecretParadoxBonus' # ./00202-SecretParadoxBonus.mws.yaml
-      # ../en-US.restext:222 | "End of Round"
-      okay: 'restext://Common_218'
+      # ../en-US.restext:285 | "End of Round"
+      okay: 'restext://UIButton_EndOfRound'
       onclose:
       - type: 'assign'
         var: '_ProgressRound'
@@ -184,10 +184,10 @@ nodes:
       snapshot: true
       content:
       - type: 'text'
-        # ../en-US.restext:232 | "The Late Years of the Sec..."
-        value: 'restext://Common_228'
+        # ../en-US.restext:233 | "The Late Years of the Sec..."
+        value: 'restext://Round_GenerationII_LateEnded'
       - type: 'break'
         style: 'paragraph'
       - type: 'text'
-        # ../en-US.restext:233 | "Perform any End of Round ..."
-        value: 'restext://Common_229'
+        # ../en-US.restext:229 | "Perform any End of Round ..."
+        value: 'restext://Round_EndOfRoundActions_Rule'

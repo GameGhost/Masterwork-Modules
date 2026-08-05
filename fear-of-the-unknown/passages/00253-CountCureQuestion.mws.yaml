@@ -6,18 +6,18 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:28722
 - type: 'text'
-  # ../en-US.restext:45 | "**Carefully pick up this ..."
-  value: 'restext://Common_041'
+  # ../en-US.restext:324 | "**Carefully pick up this ..."
+  value: 'restext://Storybook_PickUpDevicePrivate'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28725
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28731
 - type: 'popup'
-  # ../en-US.restext:46 | "Once you are ready, click..."
-  label: 'restext://Common_042'
+  # ../en-US.restext:53 | "Once you are ready, click..."
+  label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:284 | "Close"
-  cancel: 'restext://Common_280'
+  # ../en-US.restext:365 | "Close"
+  cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:28792
@@ -29,8 +29,8 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28798
   - type: 'text'
-    # ../en-US.restext:16 | "**Journal Entry of {busm}..."
-    value: 'restext://Common_012'
+    # ../en-US.restext:166 | "**Journal Entry of {busm}..."
+    value: 'restext://Heading_JournalEntryOfBusm_Cont'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28807
   - type: 'break'
     style: 'paragraph'
@@ -66,11 +66,11 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:28826
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:295 | "Click to continue..."
-    label: 'restext://Common_291'
+    # ../en-US.restext:29 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: '${round == 8 ? "Creature2" : "Creature3"}' # ./00158-Creature2.mws.yaml, ./00045-Creature3.mws.yaml
-    # ../en-US.restext:284 | "Close"
-    okay: 'restext://Common_280'
+    # ../en-US.restext:365 | "Close"
+    okay: 'restext://UIButton_Close'
     snapshot: true
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:28746

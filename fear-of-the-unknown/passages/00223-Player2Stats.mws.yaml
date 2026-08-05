@@ -12,13 +12,13 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:237 | "Please enter the VP of yo..."
-      value: 'restext://Common_233'
+      # ../en-US.restext:86 | "Please enter the VP of yo..."
+      value: 'restext://Directive_EnterBiologyVP_Agility'
     - type: 'input'
       label: ''
       var: 'agiB'
-    # ../en-US.restext:286 | "Continue"
-    okay: 'restext://Common_282'
+    # ../en-US.restext:367 | "Continue"
+    okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'
       var: 'agiB_submitted'
@@ -29,8 +29,8 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25764
 - type: 'text'
-  # ../en-US.restext:238 | "**Agility Confirmed**"
-  value: 'restext://Common_234'
+  # ../en-US.restext:148 | "**Agility Confirmed**"
+  value: 'restext://Heading_AgilityConfirmed'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25766
 - type: 'break'
   style: 'paragraph'
@@ -43,7 +43,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25776
 - type: 'link'
-  # ../en-US.restext:295 | "Click to continue..."
-  label: 'restext://Common_291'
+  # ../en-US.restext:29 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   target: 'Player2Statsb' # ./00294-Player2Statsb.mws.yaml
   snapshot: true

@@ -11,11 +11,11 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:20799
 - type: 'let'
   var: '_rnd_AsylumTreatment_1'
-  # ../en-US.restext:9 | Common_005 | "A"
-  # ../en-US.restext:10 | Common_006 | "B"
-  # ../en-US.restext:11 | Common_007 | "C"
+  # ../en-US.restext:239 | Letter_A | "A"
+  # ../en-US.restext:240 | Letter_B | "B"
+  # ../en-US.restext:241 | Letter_C | "C"
   # ../en-US.restext:1526 | AsylumTreatment_004 | "D"
-  expr: '["restext://Common_005", "restext://Common_006", "restext://Common_007", "restext://AsylumTreatment_004"].shuffled("AsylumTreatment_1")[0]'
+  expr: '["restext://Letter_A", "restext://Letter_B", "restext://Letter_C", "restext://AsylumTreatment_004"].shuffled("AsylumTreatment_1")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20796
 - type: 'text'
   # ../en-US.restext:1527 | "**Asylum Admittance Log {..."

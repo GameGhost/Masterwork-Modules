@@ -6,18 +6,18 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:2445
 - type: 'text'
-  # ../en-US.restext:183 | "**Carefully pick up this ..."
-  value: 'restext://Common_179'
+  # ../en-US.restext:247 | "**Carefully pick up this ..."
+  value: 'restext://Storybook_PickUpDevicePrivate'
 # ../.source/ATimeofWar_Eng_v8.cs:2448
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:2453
 - type: 'popup'
-  # ../en-US.restext:184 | "Once you are ready, click..."
-  label: 'restext://Common_180'
+  # ../en-US.restext:40 | "Once you are ready, click..."
+  label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:185 | "Close"
-  cancel: 'restext://Common_181'
+  # ../en-US.restext:282 | "Close"
+  cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:2469
@@ -58,8 +58,8 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:2493
   - type: 'link'
-    # ../en-US.restext:187 | "When you have finished re..."
-    label: 'restext://Common_183'
+    # ../en-US.restext:33 | "When you have finished re..."
+    label: 'restext://Click_FinishedReadingContinue'
     target: '${RumorD4nextPsg}'
     snapshot: true
     onclick:
@@ -75,15 +75,15 @@ nodes:
 - type: 'switch'
   on: 'warwinner'
   cases:
-  # ../en-US.restext:25 | "Separatists"
-  - match: 'restext://Common_021'
+  # ../en-US.restext:269 | "Separatists"
+  - match: 'restext://Title_Separatists'
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:2456
     - type: 'assign'
       var: 'sep'
       expr: '"win"'
-  # ../en-US.restext:26 | "Unified Monarchists"
-  - match: 'restext://Common_022'
+  # ../en-US.restext:279 | "Unified Monarchists"
+  - match: 'restext://Title_UnifiedMonarchists'
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:2460
     - type: 'assign'

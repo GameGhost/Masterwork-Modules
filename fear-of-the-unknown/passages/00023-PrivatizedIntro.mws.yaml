@@ -42,8 +42,8 @@ nodes:
   expr: 'randomplayer'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4212
 - type: 'text'
-  # ../en-US.restext:274 | "**Letter from** **{random..."
-  value: 'restext://Common_270'
+  # ../en-US.restext:178 | "**Letter from** **{random..."
+  value: 'restext://Heading_LetterFromRandomname_9Feb1892'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4239
 - type: 'break'
   style: 'paragraph'
@@ -84,8 +84,8 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4258
 - type: 'link'
-  # ../en-US.restext:295 | "Click to continue..."
-  label: 'restext://Common_291'
+  # ../en-US.restext:29 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   target: 'PrivatetoJail' # ./00275-PrivatetoJail.mws.yaml
   snapshot: true
 # ../.source/FearoftheUnknown_Eng_v15.cs:4260
@@ -106,8 +106,8 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:4265
   - type: 'text'
-    # ../en-US.restext:127 | "v1.0"
-    value: 'restext://Common_123'
+    # ../en-US.restext:61 | "v1.0"
+    value: 'restext://Common_VersionOnePointZero'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4267
 - type: 'conditional'
   if: 'kill == "butcher"'
@@ -115,8 +115,8 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:4269
   - type: 'assign'
     var: 'warden'
-    # ../en-US.restext:275 | "The Butcher"
-    expr: '"restext://Common_271"'
+    # ../en-US.restext:349 | "The Butcher"
+    expr: '"restext://Title_TheButcher"'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:4274
   - type: 'assign'

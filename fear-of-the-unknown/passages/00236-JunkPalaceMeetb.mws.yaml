@@ -12,8 +12,8 @@ nodes:
   expr: '1'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27089
 - type: 'text'
-  # ../en-US.restext:135 | "**Letter from {tempname} -** "
-  value: 'restext://Common_131'
+  # ../en-US.restext:183 | "**Letter from {tempname} -** "
+  value: 'restext://Heading_LetterFromTempname_Trailing'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27095
 - type: 'include_passage'
   target: 'date1a' # ./00207-date1a.mws.yaml
@@ -55,11 +55,11 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:27140
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:295 | "Click to continue..."
-  label: 'restext://Common_291'
+  # ../en-US.restext:29 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 17 ? "Privatized2" : "Privatized3"}' # ./00047-Privatized2.mws.yaml, ./00048-Privatized3.mws.yaml
-  # ../en-US.restext:284 | "Close"
-  okay: 'restext://Common_280'
+  # ../en-US.restext:365 | "Close"
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/FearoftheUnknown_Eng_v15.cs:27156

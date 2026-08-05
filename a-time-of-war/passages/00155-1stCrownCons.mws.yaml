@@ -26,11 +26,11 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:17003
 - type: 'popup'
-  # ../en-US.restext:24 | "Click to continue..."
-  label: 'restext://Common_020'
+  # ../en-US.restext:28 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   layout: 'reveal'
-  # ../en-US.restext:185 | "Close"
-  cancel: 'restext://Common_181'
+  # ../en-US.restext:282 | "Close"
+  cancel: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:17061
@@ -57,8 +57,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:172 | "Continue"
-        label: 'restext://Common_168'
+        # ../en-US.restext:284 | "Continue"
+        label: 'restext://UIButton_Continue'
         target: 'MonarchReign1' # ./00043-MonarchReign1.mws.yaml
         snapshot: true
     - match: 17
@@ -68,8 +68,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:172 | "Continue"
-        label: 'restext://Common_168'
+        # ../en-US.restext:284 | "Continue"
+        label: 'restext://UIButton_Continue'
         target: 'MonarchReign2' # ./00068-MonarchReign2.mws.yaml
         snapshot: true
     default:
@@ -78,8 +78,8 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:172 | "Continue"
-      label: 'restext://Common_168'
+      # ../en-US.restext:284 | "Continue"
+      label: 'restext://UIButton_Continue'
       target: 'MonarchReign3' # ./00069-MonarchReign3.mws.yaml
       snapshot: true
   # ../.source/ATimeofWar_Eng_v8.cs:17062
@@ -100,5 +100,5 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:17086
   - type: 'text'
-    # ../en-US.restext:281 | "For the remainder of the ..."
-    value: 'restext://Common_277'
+    # ../en-US.restext:96 | "For the remainder of the ..."
+    value: 'restext://Directive_RemainderGameCreepyLose1VP'

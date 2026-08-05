@@ -15,11 +15,11 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:5203
 - type: 'popup'
-  # ../en-US.restext:24 | "Click to continue..."
-  label: 'restext://Common_020'
+  # ../en-US.restext:28 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   layout: 'reveal'
-  # ../en-US.restext:185 | "Close"
-  cancel: 'restext://Common_181'
+  # ../en-US.restext:282 | "Close"
+  cancel: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:5229
@@ -29,16 +29,16 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:5212
   - type: 'conditional'
-    # ../en-US.restext:25 | "Separatists"
-    if: 'warwinner == "restext://Common_021"'
+    # ../en-US.restext:269 | "Separatists"
+    if: 'warwinner == "restext://Title_Separatists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:5214
     - type: 'section'
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:172 | "Continue"
-      label: 'restext://Common_168'
+      # ../en-US.restext:284 | "Continue"
+      label: 'restext://UIButton_Continue'
       target: 'MartialSepEvent' # ./00070-MartialSepEvent.mws.yaml
       snapshot: true
     else:
@@ -47,8 +47,8 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:172 | "Continue"
-      label: 'restext://Common_168'
+      # ../en-US.restext:284 | "Continue"
+      label: 'restext://UIButton_Continue'
       target: 'BarracksSimple2' # ./00158-BarracksSimple2.mws.yaml
       snapshot: true
   # ../.source/ATimeofWar_Eng_v8.cs:5235

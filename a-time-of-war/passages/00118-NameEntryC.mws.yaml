@@ -14,8 +14,8 @@ nodes:
   expr: '3'
 # ../.source/ATimeofWar_Eng_v8.cs:13771
 - type: 'text'
-  # ../en-US.restext:115 | "Welcome to My Father's Work, "
-  value: 'restext://Common_111'
+  # ../en-US.restext:216 | "Welcome to My Father's Work, "
+  value: 'restext://Narrative_WelcomeToMyFathersWork_Fragment'
 # ../.source/ATimeofWar_Eng_v8.cs:13772
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:13773
@@ -38,14 +38,14 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:13785
   - type: 'link'
-    # ../en-US.restext:139 | "Click to Continue..."
-    label: 'restext://Common_135'
+    # ../en-US.restext:29 | "Click to Continue..."
+    label: 'restext://Click_ContinueEllipsis_Title'
     target: 'NameEntryD' # ./00119-NameEntryD.mws.yaml
     snapshot: true
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:13789
   - type: 'link'
-    # ../en-US.restext:139 | "Click to Continue..."
-    label: 'restext://Common_135'
+    # ../en-US.restext:29 | "Click to Continue..."
+    label: 'restext://Click_ContinueEllipsis_Title'
     target: 'Start2' # ./00001-Start2.mws.yaml
     snapshot: true

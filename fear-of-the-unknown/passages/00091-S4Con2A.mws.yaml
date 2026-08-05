@@ -32,11 +32,11 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:11985
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:295 | "Click to continue..."
-    label: 'restext://Common_291'
+    # ../en-US.restext:29 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: '${round == 11 ? "Isolation2" : "Isolation3"}' # ./00043-Isolation2.mws.yaml, ./00044-Isolation3.mws.yaml
-    # ../en-US.restext:284 | "Close"
-    okay: 'restext://Common_280'
+    # ../en-US.restext:365 | "Close"
+    okay: 'restext://UIButton_Close'
     snapshot: true
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:12106
@@ -46,8 +46,8 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:12109
     - type: 'text'
-      # ../en-US.restext:288 | "Nothing happens."
-      value: 'restext://Common_284'
+      # ../en-US.restext:103 | "Nothing happens."
+      value: 'restext://Directive_NothingHappens'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:11990
   - type: 'switch'
@@ -79,11 +79,11 @@ nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:12015
       - type: 'popup'
         layout: 'setup'
-        # ../en-US.restext:295 | "Click to continue..."
-        label: 'restext://Common_291'
+        # ../en-US.restext:29 | "Click to continue..."
+        label: 'restext://Click_ContinueEllipsis_C'
         target: '${round == 11 ? "Isolation2" : "Isolation3"}' # ./00043-Isolation2.mws.yaml, ./00044-Isolation3.mws.yaml
-        # ../en-US.restext:284 | "Close"
-        okay: 'restext://Common_280'
+        # ../en-US.restext:365 | "Close"
+        okay: 'restext://UIButton_Close'
         snapshot: true
         header:
         # ../.source/FearoftheUnknown_Eng_v15.cs:12129
@@ -93,8 +93,8 @@ nodes:
         content:
         # ../.source/FearoftheUnknown_Eng_v15.cs:12132
         - type: 'text'
-          # ../en-US.restext:288 | "Nothing happens."
-          value: 'restext://Common_284'
+          # ../en-US.restext:103 | "Nothing happens."
+          value: 'restext://Directive_NothingHappens'
     - match: 1
       nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:12021
@@ -128,11 +128,11 @@ nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:12047
       - type: 'popup'
         layout: 'setup'
-        # ../en-US.restext:295 | "Click to continue..."
-        label: 'restext://Common_291'
+        # ../en-US.restext:29 | "Click to continue..."
+        label: 'restext://Click_ContinueEllipsis_C'
         target: '${round == 11 ? "Isolation2" : "Isolation3"}' # ./00043-Isolation2.mws.yaml, ./00044-Isolation3.mws.yaml
-        # ../en-US.restext:284 | "Close"
-        okay: 'restext://Common_280'
+        # ../en-US.restext:365 | "Close"
+        okay: 'restext://UIButton_Close'
         snapshot: true
         header:
         # ../.source/FearoftheUnknown_Eng_v15.cs:12152
@@ -176,11 +176,11 @@ nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:12079
     - type: 'popup'
       layout: 'setup'
-      # ../en-US.restext:295 | "Click to continue..."
-      label: 'restext://Common_291'
+      # ../en-US.restext:29 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
       target: '${round == 11 ? "Isolation2" : "Isolation3"}' # ./00043-Isolation2.mws.yaml, ./00044-Isolation3.mws.yaml
-      # ../en-US.restext:284 | "Close"
-      okay: 'restext://Common_280'
+      # ../en-US.restext:365 | "Close"
+      okay: 'restext://UIButton_Close'
       snapshot: true
       header:
       # ../.source/FearoftheUnknown_Eng_v15.cs:12186

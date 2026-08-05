@@ -8,8 +8,8 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:34792
 - type: 'text'
-  # ../en-US.restext:70 | "**Journal of {cureplayer}..."
-  value: 'restext://Common_066'
+  # ../en-US.restext:167 | "**Journal of {cureplayer}..."
+  value: 'restext://Heading_JournalOfCureplayer_Cont'
 # ../.source/FearoftheUnknown_Eng_v15.cs:34801
 - type: 'break'
   style: 'paragraph'
@@ -37,11 +37,11 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:34816
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:295 | "Click to continue..."
-  label: 'restext://Common_291'
+  # ../en-US.restext:29 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   target: 'Payment1A' # ./00160-Payment1A.mws.yaml
-  # ../en-US.restext:284 | "Close"
-  okay: 'restext://Common_280'
+  # ../en-US.restext:365 | "Close"
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/FearoftheUnknown_Eng_v15.cs:34831

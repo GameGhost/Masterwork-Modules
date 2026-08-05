@@ -36,13 +36,13 @@ nodes:
   if: 'round == 14'
   then:
   - type: 'link'
-    # ../en-US.restext:24 | "Click to continue..."
-    label: 'restext://Common_020'
+    # ../en-US.restext:28 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: 'Warning2time' # ./00058-Warning2time.mws.yaml
     snapshot: true
   else:
   - type: 'link'
-    # ../en-US.restext:24 | "Click to continue..."
-    label: 'restext://Common_020'
+    # ../en-US.restext:28 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: 'Warning3time' # ./00060-Warning3time.mws.yaml
     snapshot: true

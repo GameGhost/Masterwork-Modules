@@ -7,7 +7,7 @@
 ---
 format: 'mws/0.4'
 passage_id: '00_Preparations'
-title: 'restext://Common_302'
+title: 'restext://Heading_CollectedLetters_StokerVictoria'
 layout: 'narration'
 nodes:
 - type: 'switch'
@@ -17,32 +17,32 @@ nodes:
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      expr: '"restext://Common_107"'
+      expr: '"restext://Directive_IfPlayerReaches35VP_Fragment"'
   - match: 3
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      expr: '"restext://Common_108"'
+      expr: '"restext://Round_GenerationII_EarlyEnded"'
   - match: 4
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      expr: '"restext://Common_109"'
+      expr: '"restext://Heading_LetterFromTempid_Open"'
   - match: 5
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      expr: '"restext://Common_110"'
+      expr: '"restext://Number_Two_Lower"'
   default:
   - type: 'assign'
     var: 'playtxt'
-    expr: '"restext://Common_107"'
+    expr: '"restext://Directive_IfPlayerReaches35VP_Fragment"'
 - type: 'text'
   value: 'restext://ScenarioBox_FOTU_001'
 - type: 'break'
   style: 'paragraph'
 - type: 'image'
-  asset: 'icon://scenariobox3d_fear'
+  asset: 'image://scenarioboxflat_fear'
   size: '200'
   align: 'center'
 - type: 'break'
@@ -51,6 +51,6 @@ nodes:
 - type: 'break'
   style: 'paragraph'
 - type: 'link'
-  label: 'restext://Common_320'
+  label: 'restext://Click_ContinueEllipsis_B'
   target: 'Prologue-FOTU' # ./00182-Prologue-FOTU.mws.yaml
   snapshot: true

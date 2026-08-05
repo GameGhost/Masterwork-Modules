@@ -1,0 +1,14 @@
+# Override — Preparations-TCOD never carried a Begins-Here tag (unlike Fear of the Unknown's/A Time
+# of War's own raw equivalents, which did and caused a real session-start bug — see those modules'
+# own ScenarioBox-FOTU.mws.yaml/ATOW-Preparations.mws.yaml overrides), but it's the same dead branch
+# of the pre-Masterwork onboarding flow, targeted only by the equally-dead Start2
+# (passages/00001-Start2.mws.yaml). 00_Preparations.mws.yaml is the one live, hand-maintained
+# "Preparations" passage now (reached via _Setup_07_TownNameEntry) — this override redirects here
+# instead of duplicating its content a second time, for consistency with the other two modules.
+---
+format: 'mws/0.4'
+passage_id: 'Preparations-TCOD'
+layout: 'narration'
+nodes:
+- type: 'goto'
+  target: '00_Preparations'

@@ -34,11 +34,11 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:16292
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:318 | "Click to return..."
-  label: 'restext://Common_314'
+  # ../en-US.restext:51 | "Click to return..."
+  label: 'restext://Click_Return'
   target: '${round == 1 ? "Mania" : round == 2 ? "Mania2" : "Mania3"}' # ./00005-Mania.mws.yaml, ./00036-Mania2.mws.yaml, ./00037-Mania3.mws.yaml
-  # ../en-US.restext:284 | "Close"
-  okay: 'restext://Common_280'
+  # ../en-US.restext:365 | "Close"
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/FearoftheUnknown_Eng_v15.cs:16308
@@ -61,5 +61,5 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:16324
   - type: 'text'
-    # ../en-US.restext:78 | "**Immediately gain 1VP.**"
-    value: 'restext://Common_074'
+    # ../en-US.restext:291 | "**Immediately gain 1VP.**"
+    value: 'restext://Reward_ImmediatelyGain1VP'

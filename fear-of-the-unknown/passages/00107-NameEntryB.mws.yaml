@@ -14,14 +14,14 @@ nodes:
   expr: '2'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13548
 - type: 'section'
-  # ../en-US.restext:319 | "ERROR!"
-  title: 'restext://Common_315'
+  # ../en-US.restext:248 | "ERROR!"
+  title: 'restext://Narrative_ErrorExclaim'
   style: 'hub-card'
   content: []
 # ../.source/FearoftheUnknown_Eng_v15.cs:13550
 - type: 'text'
-  # ../en-US.restext:183 | "Welcome to My Father's Work,"
-  value: 'restext://Common_179'
+  # ../en-US.restext:276 | "Welcome to My Father's Work,"
+  value: 'restext://Narrative_WelcomeToMyFathersWork_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13551
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13552
@@ -44,14 +44,14 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:13565
   - type: 'link'
-    # ../en-US.restext:295 | "Click to continue..."
-    label: 'restext://Common_291'
+    # ../en-US.restext:29 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: 'NameEntryC' # ./00108-NameEntryC.mws.yaml
     snapshot: true
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:13569
   - type: 'link'
-    # ../en-US.restext:295 | "Click to continue..."
-    label: 'restext://Common_291'
+    # ../en-US.restext:29 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: 'NameEntryTown' # ./00187-NameEntryTown.mws.yaml
     snapshot: true

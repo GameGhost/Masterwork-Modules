@@ -15,9 +15,9 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:21884
   - type: 'text'
-    # ../en-US.restext:77 | "Do NOT perform the End of..."
-    value: 'restext://Common_073'
-  # ../en-US.restext:215 | "Accept"
-  okay: 'restext://Common_211'
+    # ../en-US.restext:67 | "Do NOT perform the End of..."
+    value: 'restext://Directive_DoNotPerformEndOfRoundYet'
+  # ../en-US.restext:281 | "Accept"
+  okay: 'restext://UIButton_Accept'
   target: "${warwinner == \"Unified Monarchists\" ? rumor2 == \"visited\" ? \"AMessenger2\" : \"AfternoonTea\" :\r\n            wardestroy == 1 ? \"ATOWSabotageIntro2Sep\" : \"ATOWSabotageIntro2\"}" # ./00033-AMessenger2.mws.yaml, ./00134-AfternoonTea.mws.yaml, ./00210-ATOWSabotageIntro2Sep.mws.yaml, ./00206-ATOWSabotageIntro2.mws.yaml
   snapshot: true

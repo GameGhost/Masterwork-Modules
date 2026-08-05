@@ -13,57 +13,57 @@ nodes:
     target: 'Witchwolf1Hex' # ./00058-Witchwolf1Hex.mws.yaml
 # ../.source/FearoftheUnknown_Eng_v15.cs:9232
 - type: 'text'
-  # ../en-US.restext:345 | "**Carefully pick up this ..."
-  value: 'restext://Common_341'
+  # ../en-US.restext:321 | "**Carefully pick up this ..."
+  value: 'restext://Storybook_PickUpDeviceHandToNameC'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9236
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9238
 - type: 'text'
-  # ../en-US.restext:341 | "I would like to hex:"
-  value: 'restext://Common_337'
+  # ../en-US.restext:165 | "I would like to hex:"
+  value: 'restext://Heading_IWouldLikeToHex'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9239
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9242
 - type: 'link'
-  # ../en-US.restext:342 | "The Church"
-  label: 'restext://Common_338'
+  # ../en-US.restext:351 | "The Church"
+  label: 'restext://Title_TheChurch'
   target: 'Witchwolf1d' # ./00062-Witchwolf1d.mws.yaml
   snapshot: true
   onclick:
   # ../.source/FearoftheUnknown_Eng_v15.cs:9258
   - type: 'assign'
     var: 'witC'
-    # ../en-US.restext:89 | "Church"
-    expr: '"restext://Common_085"'
+    # ../en-US.restext:331 | "Church"
+    expr: '"restext://Title_Church"'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9243
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9246
 - type: 'link'
-  # ../en-US.restext:343 | "The Traveling Caravan"
-  label: 'restext://Common_339'
+  # ../en-US.restext:359 | "The Traveling Caravan"
+  label: 'restext://Title_TheTravelingCaravan'
   target: 'Witchwolf1d' # ./00062-Witchwolf1d.mws.yaml
   snapshot: true
   onclick:
   # ../.source/FearoftheUnknown_Eng_v15.cs:9265
   - type: 'assign'
     var: 'witC'
-    # ../en-US.restext:90 | "Traveling Caravan"
-    expr: '"restext://Common_086"'
+    # ../en-US.restext:360 | "Traveling Caravan"
+    expr: '"restext://Title_TravelingCaravan"'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9247
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9250
 - type: 'link'
-  # ../en-US.restext:344 | "The Laborer's Union"
-  label: 'restext://Common_340'
+  # ../en-US.restext:357 | "The Laborer's Union"
+  label: 'restext://Title_TheLaborersUnion'
   target: 'Witchwolf1d' # ./00062-Witchwolf1d.mws.yaml
   snapshot: true
   onclick:
   # ../.source/FearoftheUnknown_Eng_v15.cs:9272
   - type: 'assign'
     var: 'witC'
-    # ../en-US.restext:91 | "Laborer's Union"
-    expr: '"restext://Common_087"'
+    # ../en-US.restext:337 | "Laborer's Union"
+    expr: '"restext://Title_LaborersUnion"'

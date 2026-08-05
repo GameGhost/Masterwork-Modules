@@ -17,8 +17,8 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3539
   - type: 'text'
-    # ../en-US.restext:6 | "**All players may again v..."
-    value: 'restext://Common_002'
+    # ../en-US.restext:55 | "**All players may again v..."
+    value: 'restext://Directive_AllPlayersMayViewStorybookAgain'
   # ../.source/ATimeofWar_Eng_v8.cs:3541
   - type: 'break'
     style: 'paragraph'
@@ -38,15 +38,15 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3561
   - type: 'text'
-    # ../en-US.restext:7 | "\"Which flag do you fly?\..."
-    value: 'restext://Common_003'
+    # ../en-US.restext:190 | "\"Which flag do you fly?\..."
+    value: 'restext://Heading_WhichFlagDoYouFly'
   # ../.source/ATimeofWar_Eng_v8.cs:3566
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3568
   - type: 'conditional'
-    # ../en-US.restext:25 | "Separatists"
-    if: 'warwinner == "restext://Common_021"'
+    # ../en-US.restext:269 | "Separatists"
+    if: 'warwinner == "restext://Title_Separatists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:3570
     - type: 'conditional'
@@ -54,8 +54,8 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:3572
       - type: 'link'
-        # ../en-US.restext:8 | "Unified Monarchists."
-        label: 'restext://Common_004'
+        # ../en-US.restext:23 | "Unified Monarchists."
+        label: 'restext://Choice_UnifiedMonarchistsPeriod'
         target: 'Amessyes' # ./00025-Amessyes.mws.yaml
         snapshot: true
       # ../.source/ATimeofWar_Eng_v8.cs:3573
@@ -63,15 +63,15 @@ nodes:
         style: 'paragraph'
       # ../.source/ATimeofWar_Eng_v8.cs:3575
       - type: 'link'
-        # ../en-US.restext:9 | "Separatists."
-        label: 'restext://Common_005'
+        # ../en-US.restext:21 | "Separatists."
+        label: 'restext://Choice_SeparatistsPeriod'
         target: 'Amessno' # ./00026-Amessno.mws.yaml
         snapshot: true
       else:
       # ../.source/ATimeofWar_Eng_v8.cs:3579
       - type: 'link'
-        # ../en-US.restext:9 | "Separatists."
-        label: 'restext://Common_005'
+        # ../en-US.restext:21 | "Separatists."
+        label: 'restext://Choice_SeparatistsPeriod'
         target: 'Amessyes' # ./00025-Amessyes.mws.yaml
         snapshot: true
       # ../.source/ATimeofWar_Eng_v8.cs:3580
@@ -79,8 +79,8 @@ nodes:
         style: 'paragraph'
       # ../.source/ATimeofWar_Eng_v8.cs:3582
       - type: 'link'
-        # ../en-US.restext:8 | "Unified Monarchists."
-        label: 'restext://Common_004'
+        # ../en-US.restext:23 | "Unified Monarchists."
+        label: 'restext://Choice_UnifiedMonarchistsPeriod'
         target: 'Amessno' # ./00026-Amessno.mws.yaml
         snapshot: true
     else:
@@ -90,8 +90,8 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:3589
       - type: 'link'
-        # ../en-US.restext:9 | "Separatists."
-        label: 'restext://Common_005'
+        # ../en-US.restext:21 | "Separatists."
+        label: 'restext://Choice_SeparatistsPeriod'
         target: 'Amessyes' # ./00025-Amessyes.mws.yaml
         snapshot: true
       # ../.source/ATimeofWar_Eng_v8.cs:3590
@@ -99,15 +99,15 @@ nodes:
         style: 'paragraph'
       # ../.source/ATimeofWar_Eng_v8.cs:3592
       - type: 'link'
-        # ../en-US.restext:8 | "Unified Monarchists."
-        label: 'restext://Common_004'
+        # ../en-US.restext:23 | "Unified Monarchists."
+        label: 'restext://Choice_UnifiedMonarchistsPeriod'
         target: 'Amessno' # ./00026-Amessno.mws.yaml
         snapshot: true
       else:
       # ../.source/ATimeofWar_Eng_v8.cs:3596
       - type: 'link'
-        # ../en-US.restext:8 | "Unified Monarchists."
-        label: 'restext://Common_004'
+        # ../en-US.restext:23 | "Unified Monarchists."
+        label: 'restext://Choice_UnifiedMonarchistsPeriod'
         target: 'Amessyes' # ./00025-Amessyes.mws.yaml
         snapshot: true
       # ../.source/ATimeofWar_Eng_v8.cs:3597
@@ -115,15 +115,15 @@ nodes:
         style: 'paragraph'
       # ../.source/ATimeofWar_Eng_v8.cs:3599
       - type: 'link'
-        # ../en-US.restext:9 | "Separatists."
-        label: 'restext://Common_005'
+        # ../en-US.restext:21 | "Separatists."
+        label: 'restext://Choice_SeparatistsPeriod'
         target: 'Amessno' # ./00026-Amessno.mws.yaml
         snapshot: true
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:3606
   - type: 'conditional'
-    # ../en-US.restext:26 | "Unified Monarchists"
-    if: 'warwinner == "restext://Common_022"'
+    # ../en-US.restext:279 | "Unified Monarchists"
+    if: 'warwinner == "restext://Title_UnifiedMonarchists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:3607
     - type: 'goto'

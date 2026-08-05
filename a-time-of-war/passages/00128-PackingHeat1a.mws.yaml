@@ -15,11 +15,11 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:14548
 - type: 'popup'
-  # ../en-US.restext:24 | "Click to continue..."
-  label: 'restext://Common_020'
+  # ../en-US.restext:28 | "Click to continue..."
+  label: 'restext://Click_ContinueEllipsis_C'
   layout: 'reveal'
-  # ../en-US.restext:185 | "Close"
-  cancel: 'restext://Common_181'
+  # ../en-US.restext:282 | "Close"
+  cancel: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:14610
@@ -46,8 +46,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:172 | "Continue"
-        label: 'restext://Common_168'
+        # ../en-US.restext:284 | "Continue"
+        label: 'restext://UIButton_Continue'
         target: 'Martial1' # ./00023-Martial1.mws.yaml
         snapshot: true
     - match: 8
@@ -65,8 +65,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:172 | "Continue"
-        label: 'restext://Common_168'
+        # ../en-US.restext:284 | "Continue"
+        label: 'restext://UIButton_Continue'
         target: 'Martial2' # ./00024-Martial2.mws.yaml
         snapshot: true
     default:
@@ -83,8 +83,8 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:172 | "Continue"
-      label: 'restext://Common_168'
+      # ../en-US.restext:284 | "Continue"
+      label: 'restext://UIButton_Continue'
       target: 'Martial3' # ./00036-Martial3.mws.yaml
       snapshot: true
   # ../.source/ATimeofWar_Eng_v8.cs:14615

@@ -13,57 +13,57 @@ nodes:
     target: 'Witchwolf2Hex' # ./00069-Witchwolf2Hex.mws.yaml
 # ../.source/FearoftheUnknown_Eng_v15.cs:9529
 - type: 'text'
-  # ../en-US.restext:345 | "**Carefully pick up this ..."
-  value: 'restext://Common_341'
+  # ../en-US.restext:321 | "**Carefully pick up this ..."
+  value: 'restext://Storybook_PickUpDeviceHandToNameC'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9533
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9535
 - type: 'text'
-  # ../en-US.restext:341 | "I would like to hex:"
-  value: 'restext://Common_337'
+  # ../en-US.restext:165 | "I would like to hex:"
+  value: 'restext://Heading_IWouldLikeToHex'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9536
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9539
 - type: 'link'
-  # ../en-US.restext:348 | "The Park"
-  label: 'restext://Common_344'
+  # ../en-US.restext:358 | "The Park"
+  label: 'restext://Title_ThePark'
   target: 'Witchwolf2d' # ./00067-Witchwolf2d.mws.yaml
   snapshot: true
   onclick:
   # ../.source/FearoftheUnknown_Eng_v15.cs:9554
   - type: 'assign'
     var: 'witC2'
-    # ../en-US.restext:92 | "Park"
-    expr: '"restext://Common_088"'
+    # ../en-US.restext:342 | "Park"
+    expr: '"restext://Title_Park"'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9540
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9543
 - type: 'link'
-  # ../en-US.restext:349 | "The Builder's Office"
-  label: 'restext://Common_345'
+  # ../en-US.restext:348 | "The Builder's Office"
+  label: 'restext://Title_TheBuildersOffice'
   target: 'Witchwolf2d' # ./00067-Witchwolf2d.mws.yaml
   snapshot: true
   onclick:
   # ../.source/FearoftheUnknown_Eng_v15.cs:9561
   - type: 'assign'
     var: 'witC2'
-    # ../en-US.restext:93 | "Builder's Office"
-    expr: '"restext://Common_089"'
+    # ../en-US.restext:329 | "Builder's Office"
+    expr: '"restext://Title_BuildersOffice"'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9544
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9547
 - type: 'link'
   # ../en-US.restext:350 | "The Cemetery"
-  label: 'restext://Common_346'
+  label: 'restext://Title_TheCemetery'
   target: 'Witchwolf2d' # ./00067-Witchwolf2d.mws.yaml
   snapshot: true
   onclick:
   # ../.source/FearoftheUnknown_Eng_v15.cs:9568
   - type: 'assign'
     var: 'witC2'
-    # ../en-US.restext:94 | "Cemetery"
-    expr: '"restext://Common_090"'
+    # ../en-US.restext:330 | "Cemetery"
+    expr: '"restext://Title_Cemetery"'

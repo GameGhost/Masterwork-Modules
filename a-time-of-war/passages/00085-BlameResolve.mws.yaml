@@ -8,8 +8,8 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:11014
 - type: 'text'
-  # ../en-US.restext:6 | "**All players may again v..."
-  value: 'restext://Common_002'
+  # ../en-US.restext:55 | "**All players may again v..."
+  value: 'restext://Directive_AllPlayersMayViewStorybookAgain'
 # ../.source/ATimeofWar_Eng_v8.cs:11016
 - type: 'break'
   style: 'paragraph'
@@ -27,11 +27,11 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:11026
     - type: 'popup'
-      # ../en-US.restext:24 | "Click to continue..."
-      label: 'restext://Common_020'
+      # ../en-US.restext:28 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
       layout: 'reveal'
-      # ../en-US.restext:185 | "Close"
-      cancel: 'restext://Common_181'
+      # ../en-US.restext:282 | "Close"
+      cancel: 'restext://UIButton_Close'
       snapshot: true
       header:
       # ../.source/ATimeofWar_Eng_v8.cs:11137
@@ -57,8 +57,8 @@ nodes:
             style: 'panel'
             content: []
           - type: 'link'
-            # ../en-US.restext:172 | "Continue"
-            label: 'restext://Common_168'
+            # ../en-US.restext:284 | "Continue"
+            label: 'restext://UIButton_Continue'
             target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
             snapshot: true
         - if: 'pl2 > pl1 && pl2 > pl3 && pl2 > pl4 && pl2 > pl5'
@@ -76,8 +76,8 @@ nodes:
             style: 'panel'
             content: []
           - type: 'link'
-            # ../en-US.restext:172 | "Continue"
-            label: 'restext://Common_168'
+            # ../en-US.restext:284 | "Continue"
+            label: 'restext://UIButton_Continue'
             target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
             snapshot: true
         - if: 'pl3 > pl1 && pl3 > pl2 && pl3 > pl4 && pl3 > pl5'
@@ -95,8 +95,8 @@ nodes:
             style: 'panel'
             content: []
           - type: 'link'
-            # ../en-US.restext:172 | "Continue"
-            label: 'restext://Common_168'
+            # ../en-US.restext:284 | "Continue"
+            label: 'restext://UIButton_Continue'
             target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
             snapshot: true
         - if: 'pl4 > pl1 && pl4 > pl2 && pl4 > pl3 && pl4 > pl5'
@@ -114,8 +114,8 @@ nodes:
             style: 'panel'
             content: []
           - type: 'link'
-            # ../en-US.restext:172 | "Continue"
-            label: 'restext://Common_168'
+            # ../en-US.restext:284 | "Continue"
+            label: 'restext://UIButton_Continue'
             target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
             snapshot: true
         - if: 'pl5 > pl1 && pl5 > pl2 && pl5 > pl3 && pl5 > pl4'
@@ -133,8 +133,8 @@ nodes:
             style: 'panel'
             content: []
           - type: 'link'
-            # ../en-US.restext:172 | "Continue"
-            label: 'restext://Common_168'
+            # ../en-US.restext:284 | "Continue"
+            label: 'restext://UIButton_Continue'
             target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
             snapshot: true
         - if: 'pl1 + pl2 + pl3 + pl4 + pl5 == 0'
@@ -142,8 +142,8 @@ nodes:
           # ../.source/ATimeofWar_Eng_v8.cs:11121
           - type: 'assign'
             var: 'blame'
-            # ../en-US.restext:78 | "none"
-            expr: '"restext://Common_074"'
+            # ../en-US.restext:16 | "none"
+            expr: '"restext://Choice_None"'
           # ../.source/ATimeofWar_Eng_v8.cs:11122
           - type: 'assign'
             var: 'late'
@@ -153,8 +153,8 @@ nodes:
             style: 'panel'
             content: []
           - type: 'link'
-            # ../en-US.restext:172 | "Continue"
-            label: 'restext://Common_168'
+            # ../en-US.restext:284 | "Continue"
+            label: 'restext://UIButton_Continue'
             target: 'TimeTravel3' # ./00018-TimeTravel3.mws.yaml
             snapshot: true
         else:
@@ -163,8 +163,8 @@ nodes:
           style: 'panel'
           content: []
         - type: 'link'
-          # ../en-US.restext:172 | "Continue"
-          label: 'restext://Common_168'
+          # ../en-US.restext:284 | "Continue"
+          label: 'restext://UIButton_Continue'
           target: 'BlameOut2' # ./00080-BlameOut2.mws.yaml
           snapshot: true
       # ../.source/ATimeofWar_Eng_v8.cs:11138
@@ -177,11 +177,11 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:11033
     - type: 'popup'
-      # ../en-US.restext:24 | "Click to continue..."
-      label: 'restext://Common_020'
+      # ../en-US.restext:28 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
       layout: 'reveal'
-      # ../en-US.restext:185 | "Close"
-      cancel: 'restext://Common_181'
+      # ../en-US.restext:282 | "Close"
+      cancel: 'restext://UIButton_Close'
       snapshot: true
       header:
       # ../.source/ATimeofWar_Eng_v8.cs:11209
@@ -207,8 +207,8 @@ nodes:
             style: 'panel'
             content: []
           - type: 'link'
-            # ../en-US.restext:172 | "Continue"
-            label: 'restext://Common_168'
+            # ../en-US.restext:284 | "Continue"
+            label: 'restext://UIButton_Continue'
             target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
             snapshot: true
         - if: 'pl2 > pl1 && pl2 > pl3 && pl2 > pl4 && pl2 > pl5'
@@ -226,8 +226,8 @@ nodes:
             style: 'panel'
             content: []
           - type: 'link'
-            # ../en-US.restext:172 | "Continue"
-            label: 'restext://Common_168'
+            # ../en-US.restext:284 | "Continue"
+            label: 'restext://UIButton_Continue'
             target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
             snapshot: true
         - if: 'pl3 > pl1 && pl3 > pl2 && pl3 > pl4 && pl3 > pl5'
@@ -245,8 +245,8 @@ nodes:
             style: 'panel'
             content: []
           - type: 'link'
-            # ../en-US.restext:172 | "Continue"
-            label: 'restext://Common_168'
+            # ../en-US.restext:284 | "Continue"
+            label: 'restext://UIButton_Continue'
             target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
             snapshot: true
         - if: 'pl4 > pl1 && pl4 > pl2 && pl4 > pl3 && pl4 > pl5'
@@ -264,8 +264,8 @@ nodes:
             style: 'panel'
             content: []
           - type: 'link'
-            # ../en-US.restext:172 | "Continue"
-            label: 'restext://Common_168'
+            # ../en-US.restext:284 | "Continue"
+            label: 'restext://UIButton_Continue'
             target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
             snapshot: true
         - if: 'pl5 > pl1 && pl5 > pl2 && pl5 > pl3 && pl5 > pl4'
@@ -283,8 +283,8 @@ nodes:
             style: 'panel'
             content: []
           - type: 'link'
-            # ../en-US.restext:172 | "Continue"
-            label: 'restext://Common_168'
+            # ../en-US.restext:284 | "Continue"
+            label: 'restext://UIButton_Continue'
             target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
             snapshot: true
         - if: 'pl1 + pl2 + pl3 + pl4 + pl5 == 0'
@@ -292,8 +292,8 @@ nodes:
           # ../.source/ATimeofWar_Eng_v8.cs:11193
           - type: 'assign'
             var: 'blame'
-            # ../en-US.restext:78 | "none"
-            expr: '"restext://Common_074"'
+            # ../en-US.restext:16 | "none"
+            expr: '"restext://Choice_None"'
           # ../.source/ATimeofWar_Eng_v8.cs:11194
           - type: 'assign'
             var: 'late'
@@ -303,8 +303,8 @@ nodes:
             style: 'panel'
             content: []
           - type: 'link'
-            # ../en-US.restext:172 | "Continue"
-            label: 'restext://Common_168'
+            # ../en-US.restext:284 | "Continue"
+            label: 'restext://UIButton_Continue'
             target: 'TimeTravel3' # ./00018-TimeTravel3.mws.yaml
             snapshot: true
         else:
@@ -313,8 +313,8 @@ nodes:
           style: 'panel'
           content: []
         - type: 'link'
-          # ../en-US.restext:172 | "Continue"
-          label: 'restext://Common_168'
+          # ../en-US.restext:284 | "Continue"
+          label: 'restext://UIButton_Continue'
           target: 'BlameOut2' # ./00080-BlameOut2.mws.yaml
           snapshot: true
       # ../.source/ATimeofWar_Eng_v8.cs:11210
@@ -339,8 +339,8 @@ nodes:
         expr: '1'
       # ../.source/ATimeofWar_Eng_v8.cs:11042
       - type: 'link'
-        # ../en-US.restext:24 | "Click to continue..."
-        label: 'restext://Common_020'
+        # ../en-US.restext:28 | "Click to continue..."
+        label: 'restext://Click_ContinueEllipsis_C'
         target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
         snapshot: true
     - if: 'pl2 > pl1 && pl2 > pl3 && pl2 > pl4 && pl2 > pl5'
@@ -355,8 +355,8 @@ nodes:
         expr: '1'
       # ../.source/ATimeofWar_Eng_v8.cs:11048
       - type: 'link'
-        # ../en-US.restext:24 | "Click to continue..."
-        label: 'restext://Common_020'
+        # ../en-US.restext:28 | "Click to continue..."
+        label: 'restext://Click_ContinueEllipsis_C'
         target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
         snapshot: true
     - if: 'pl3 > pl1 && pl3 > pl2 && pl3 > pl4 && pl3 > pl5'
@@ -371,8 +371,8 @@ nodes:
         expr: '1'
       # ../.source/ATimeofWar_Eng_v8.cs:11054
       - type: 'link'
-        # ../en-US.restext:24 | "Click to continue..."
-        label: 'restext://Common_020'
+        # ../en-US.restext:28 | "Click to continue..."
+        label: 'restext://Click_ContinueEllipsis_C'
         target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
         snapshot: true
     - if: 'pl4 > pl1 && pl4 > pl2 && pl4 > pl3 && pl4 > pl5'
@@ -387,8 +387,8 @@ nodes:
         expr: '1'
       # ../.source/ATimeofWar_Eng_v8.cs:11060
       - type: 'link'
-        # ../en-US.restext:24 | "Click to continue..."
-        label: 'restext://Common_020'
+        # ../en-US.restext:28 | "Click to continue..."
+        label: 'restext://Click_ContinueEllipsis_C'
         target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
         snapshot: true
     - if: 'pl5 > pl1 && pl5 > pl2 && pl5 > pl3 && pl5 > pl4'
@@ -403,8 +403,8 @@ nodes:
         expr: '1'
       # ../.source/ATimeofWar_Eng_v8.cs:11066
       - type: 'link'
-        # ../en-US.restext:24 | "Click to continue..."
-        label: 'restext://Common_020'
+        # ../en-US.restext:28 | "Click to continue..."
+        label: 'restext://Click_ContinueEllipsis_C'
         target: 'BlameOut1' # ./00079-BlameOut1.mws.yaml
         snapshot: true
     - if: 'pl1 + pl2 + pl3 + pl4 + pl5 == 0'
@@ -412,22 +412,22 @@ nodes:
       # ../.source/ATimeofWar_Eng_v8.cs:11070
       - type: 'assign'
         var: 'blame'
-        # ../en-US.restext:78 | "none"
-        expr: '"restext://Common_074"'
+        # ../en-US.restext:16 | "none"
+        expr: '"restext://Choice_None"'
       # ../.source/ATimeofWar_Eng_v8.cs:11071
       - type: 'assign'
         var: 'late'
         expr: '2'
       # ../.source/ATimeofWar_Eng_v8.cs:11072
       - type: 'link'
-        # ../en-US.restext:24 | "Click to continue..."
-        label: 'restext://Common_020'
+        # ../en-US.restext:28 | "Click to continue..."
+        label: 'restext://Click_ContinueEllipsis_C'
         target: 'TimeTravel3' # ./00018-TimeTravel3.mws.yaml
         snapshot: true
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:11076
     - type: 'link'
-      # ../en-US.restext:24 | "Click to continue..."
-      label: 'restext://Common_020'
+      # ../en-US.restext:28 | "Click to continue..."
+      label: 'restext://Click_ContinueEllipsis_C'
       target: 'BlameOut2' # ./00080-BlameOut2.mws.yaml
       snapshot: true

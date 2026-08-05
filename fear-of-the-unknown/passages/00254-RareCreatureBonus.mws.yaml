@@ -24,11 +24,11 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28859
   - type: 'popup'
-    # ../en-US.restext:295 | "Click to continue..."
-    label: 'restext://Common_291'
+    # ../en-US.restext:29 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     layout: 'reveal'
-    # ../en-US.restext:284 | "Close"
-    cancel: 'restext://Common_280'
+    # ../en-US.restext:365 | "Close"
+    cancel: 'restext://UIButton_Close'
     snapshot: true
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:28912
@@ -45,8 +45,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:286 | "Continue"
-        label: 'restext://Common_282'
+        # ../en-US.restext:367 | "Continue"
+        label: 'restext://UIButton_Continue'
         target: 'LiberalIntro' # ./00024-LiberalIntro.mws.yaml
         snapshot: true
       else:
@@ -55,8 +55,8 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:286 | "Continue"
-        label: 'restext://Common_282'
+        # ../en-US.restext:367 | "Continue"
+        label: 'restext://UIButton_Continue'
         target: 'PrivatizedIntro' # ./00023-PrivatizedIntro.mws.yaml
         snapshot: true
     # ../.source/FearoftheUnknown_Eng_v15.cs:28913

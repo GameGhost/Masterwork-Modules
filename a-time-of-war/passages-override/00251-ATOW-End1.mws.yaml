@@ -1,9 +1,11 @@
 ﻿# Override — extracted content unchanged, plus an appended "Ending Unlocked" popup (game_complete
 # layout, target: app::gameover — see Play.razor's GameSession.IsGameOverRequested). Header image
-# is a placeholder: reuses this module's own scenariobox3d_war icon (already confirmed to resolve)
-# rather than a curated "ending unlocked" collage image like Cost of Disease's
-# picture_tcod_dirty/clean — no equivalent art has been sourced yet for this module. Swap in real
-# art once curated; same for every ending override in this module.
+# is picture_atow_clean/dirty (same pairing as Cost of Disease's picture_tcod_clean/dirty), picked
+# per ending by narrative tone rather than by any in-source good/bad flag — A Time of War's Cradle
+# source has no such flag, unlike Cost of Disease's Good/Evil-suffixed passage names; same for
+# every ending override in this module. This ending ("A Giant Success") reads as grandiose,
+# self-aggrandizing ambition rather than a clean triumph — picture_atow_clean per the confirmed
+# classification, despite the mixed tone.
 # ../.source/ATimeofWar_Eng_v8.cs:24995
 ---
 format: 'mws/0.4'
@@ -63,7 +65,7 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:25041
 - type: 'text'
   # ../en-US.restext:19 | "THE END?"
-  value: 'restext://Common_015'
+  value: 'restext://Heading_TheEndQuestion'
 # - type: 'record'
 #   id: 'ending_atow_end1'
 # - type: 'record'
@@ -74,7 +76,7 @@ nodes:
   style: 'btn-forward'
   header:
   - type: 'image'
-    asset: 'icon://scenariobox3d_war'
+    asset: 'image://picture_atow_clean'
   content:
   - type: 'text'
     value: 'You have unlocked **restext://ATOW_End1_001** ending.'

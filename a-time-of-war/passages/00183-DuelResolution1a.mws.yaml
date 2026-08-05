@@ -6,8 +6,8 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:19486
 - type: 'conditional'
-  # ../en-US.restext:52 | "science"
-  if: 'dueltype == "restext://Common_048"'
+  # ../en-US.restext:20 | "science"
+  if: 'dueltype == "restext://Choice_Science"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:19490
   - type: 'text'
@@ -26,11 +26,11 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:19509
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:24 | "Click to continue..."
-    label: 'restext://Common_020'
+    # ../en-US.restext:28 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: 'DuelResolution1sci' # ./00215-DuelResolution1sci.mws.yaml
-    # ../en-US.restext:185 | "Close"
-    okay: 'restext://Common_181'
+    # ../en-US.restext:282 | "Close"
+    okay: 'restext://UIButton_Close'
     snapshot: true
     header:
     # ../.source/ATimeofWar_Eng_v8.cs:19537
@@ -72,7 +72,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:19522
   - type: 'link'
-    # ../en-US.restext:24 | "Click to continue..."
-    label: 'restext://Common_020'
+    # ../en-US.restext:28 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: 'DuelResolution1b' # ./00184-DuelResolution1b.mws.yaml
     snapshot: true

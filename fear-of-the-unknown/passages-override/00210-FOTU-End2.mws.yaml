@@ -1,7 +1,9 @@
 ﻿# Override — extracted content unchanged, plus an appended "Ending Unlocked" popup (game_complete
 # layout, target: app::gameover — see Play.razor's GameSession.IsGameOverRequested). Header image
-# is a placeholder (this module's own scenariobox3d_fear icon) pending real curated ending art;
-# same for every ending override in this module.
+# is picture_fotu_clean/dirty (same pairing as Cost of Disease's picture_tcod_clean/dirty), picked
+# per ending by narrative tone rather than by any in-source good/bad flag — Fear of the Unknown's
+# Cradle source has no such flag, unlike Cost of Disease's Good/Evil-suffixed passage names; same
+# for every ending override in this module.
 # ../.source/FearoftheUnknown_Eng_v15.cs:23631
 ---
 format: 'mws/0.4'
@@ -48,7 +50,7 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:23676
 - type: 'text'
   # ../en-US.restext:74 | "THE END?"
-  value: 'restext://Common_070'
+  value: 'restext://Heading_TheEndQuestion'
 # - type: 'record'
 #   id: 'ending_fotu_end2'
 # - type: 'record'
@@ -59,7 +61,7 @@ nodes:
   style: 'btn-forward'
   header:
   - type: 'image'
-    asset: 'icon://scenariobox3d_fear'
+    asset: 'image://picture_fotu_clean'
   content:
   - type: 'text'
     value: 'You have unlocked **restext://FOTU_End2_001** ending.'

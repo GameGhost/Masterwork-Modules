@@ -2,10 +2,10 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Privatized'
-# ../en-US.restext:282 | "Private Investors"
-title: 'restext://Common_278'
-# ../en-US.restext:162 | "Early Years"
-subtitle: 'restext://Common_158'
+# ../en-US.restext:346 | "Private Investors"
+title: 'restext://Title_PrivateInvestors'
+# ../en-US.restext:332 | "Early Years"
+subtitle: 'restext://Title_EarlyYears'
 tags:
 - 'HUB'
 layout: 'hub_early'
@@ -21,8 +21,8 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:4382
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:163 | "Accept"
-    okay: 'restext://Common_159'
+    # ../en-US.restext:364 | "Accept"
+    okay: 'restext://UIButton_Accept'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:4386
     - type: 'image'
@@ -35,8 +35,8 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:4390
       - type: 'text'
-        # ../en-US.restext:276 | "Retrieve the Hunt tokens ..."
-        value: 'restext://Common_272'
+        # ../en-US.restext:119 | "Retrieve the Hunt tokens ..."
+        value: 'restext://Directive_RetrieveHuntTokensFaceUp'
       # ../.source/FearoftheUnknown_Eng_v15.cs:4393
       - type: 'break'
         style: 'paragraph'
@@ -49,8 +49,8 @@ nodes:
         style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:4401
     - type: 'text'
-      # ../en-US.restext:96 | "Place the Suspicion Marke..."
-      value: 'restext://Common_092'
+      # ../en-US.restext:110 | "Place the Suspicion Marke..."
+      value: 'restext://Directive_PlaceSuspicionMarker_Lead'
     # ../.source/FearoftheUnknown_Eng_v15.cs:4404
     - type: 'conditional'
       if: '!Privatized'
@@ -73,8 +73,8 @@ nodes:
           expr: 'tracker - 1'
     # ../.source/FearoftheUnknown_Eng_v15.cs:4413
     - type: 'text'
-      # ../en-US.restext:97 | "**{tracker}** and the {ic..."
-      value: 'restext://Common_093'
+      # ../en-US.restext:130 | "**{tracker}** and the {ic..."
+      value: 'restext://Directive_TrackerAndMobMarkerLeft'
     # ../.source/FearoftheUnknown_Eng_v15.cs:4418
     - type: 'break'
     # ../.source/FearoftheUnknown_Eng_v15.cs:4419
@@ -83,8 +83,8 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:4421
       - type: 'text'
-        # ../en-US.restext:98 | "Then, since this is a 3 p..."
-        value: 'restext://Common_094'
+        # ../en-US.restext:66 | "Then, since this is a 3 p..."
+        value: 'restext://Directive_3Player_PassMarker_A'
       # ../.source/FearoftheUnknown_Eng_v15.cs:4422
       - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4426
@@ -122,14 +122,14 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:4482
   - type: 'section'
-    # ../en-US.restext:277 | "{icon:storybooktoken}**Th..."
-    title: 'restext://Common_273'
+    # ../en-US.restext:225 | "{icon:storybooktoken}**Th..."
+    title: 'restext://Heading_StorybookToken_TheHuntIsOn_NoSpace'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:4491
     - type: 'text'
-      # ../en-US.restext:278 | "Any time a player visits ..."
-      value: 'restext://Common_274'
+      # ../en-US.restext:135 | "Any time a player visits ..."
+      value: 'restext://Directive_VisitLocationClaimHuntToken'
     # ../.source/FearoftheUnknown_Eng_v15.cs:4494
     - type: 'break'
       style: 'paragraph'
@@ -139,8 +139,8 @@ nodes:
       value: 'restext://Privatized_009'
     # ../.source/FearoftheUnknown_Eng_v15.cs:4503
     - type: 'link'
-      # ../en-US.restext:317 | "click here."
-      label: 'restext://Common_313'
+      # ../en-US.restext:49 | "click here."
+      label: 'restext://Click_Here_Period'
       target: 'HuntExplanation' # ./00076-HuntExplanation.mws.yaml
       snapshot: true
 # ../.source/FearoftheUnknown_Eng_v15.cs:4506
@@ -152,11 +152,11 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:4531
   - type: 'popup'
     layout: 'end_of_round'
-    # ../en-US.restext:69 | "Click here at the end of ..."
-    label: 'restext://Common_065'
+    # ../en-US.restext:34 | "Click here at the end of ..."
+    label: 'restext://Click_EndRound_MoveNextRound'
     target: '${creature == 1 && exped == 0 ? "Expedition1" : "JailEventA"}' # ./00049-Expedition1.mws.yaml, ./00290-JailEventA.mws.yaml
-    # ../en-US.restext:181 | "End of Round"
-    okay: 'restext://Common_177'
+    # ../en-US.restext:369 | "End of Round"
+    okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
       var: '_ProgressRound'
@@ -164,10 +164,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:134 | "The Early Years of the Th..."
-      value: 'restext://Common_130'
+      # ../en-US.restext:299 | "The Early Years of the Th..."
+      value: 'restext://Round_GenerationIII_EarlyEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:182 | "Then, perform all Start o..."
-      value: 'restext://Common_178'
+      # ../en-US.restext:306 | "Then, perform all Start o..."
+      value: 'restext://Round_StartMiddleYears_Rule'

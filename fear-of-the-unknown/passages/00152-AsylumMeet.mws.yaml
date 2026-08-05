@@ -93,11 +93,11 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:18671
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:295 | "Click to continue..."
-    label: 'restext://Common_291'
+    # ../en-US.restext:29 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: '${round == 8 ? "Creature2" : "Creature3"}' # ./00158-Creature2.mws.yaml, ./00045-Creature3.mws.yaml
-    # ../en-US.restext:284 | "Close"
-    okay: 'restext://Common_280'
+    # ../en-US.restext:365 | "Close"
+    okay: 'restext://UIButton_Close'
     snapshot: true
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:18686
@@ -120,8 +120,8 @@ nodes:
     - type: 'break'
     # ../.source/FearoftheUnknown_Eng_v15.cs:18697
     - type: 'text'
-      # ../en-US.restext:5 | "OR"
-      value: 'restext://Common_001'
+      # ../en-US.restext:370 | "OR"
+      value: 'restext://UIButton_Or'
     # ../.source/FearoftheUnknown_Eng_v15.cs:18698
     - type: 'break'
     # ../.source/FearoftheUnknown_Eng_v15.cs:18701

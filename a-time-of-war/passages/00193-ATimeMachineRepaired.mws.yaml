@@ -30,15 +30,15 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:20334
   - type: 'link'
-    # ../en-US.restext:24 | "Click to continue..."
-    label: 'restext://Common_020'
+    # ../en-US.restext:28 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: 'TimeTravel2' # ./00032-TimeTravel2.mws.yaml
     snapshot: true
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:20339
   - type: 'link'
-    # ../en-US.restext:24 | "Click to continue..."
-    label: 'restext://Common_020'
+    # ../en-US.restext:28 | "Click to continue..."
+    label: 'restext://Click_ContinueEllipsis_C'
     target: 'TimeTravel3' # ./00018-TimeTravel3.mws.yaml
     snapshot: true
     onclick:
