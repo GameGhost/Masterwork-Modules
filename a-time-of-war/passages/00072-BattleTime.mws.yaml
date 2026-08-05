@@ -31,7 +31,7 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:9772
 - type: 'let'
   var: '_rnd_BattleTime_1'
-  expr: '[I alone deserved recognition for my glorious, bombastic, chimerical, transformative creations that defied the rigors of known science. I could no longer suffer the egotistical competitive nature of my cousins, whose work so paled in comparison to my own. This was my time. This was the era of {_rnd_BattleTime_0} III!, "The fate of the world rested in my hands. It was my discoveries, my ingenious weaponry, my unslakable ambitions that would define this new epoch in human existence. And I put on a demonstration that left no doubt as to whom the glory should be bestowed upon.", "Fame meant little to me if it did not carry with it the power to alter the world. I would watch as it transformed - carefully molded by my own hands - into a boundless utopia. My influence could no longer be relegated to the shadows. It was time to claim the Earth for my own and shake it to its very core."].shuffled("BattleTime_4")[0]'
+  expr: '["I alone deserved recognition for my glorious, bombastic, chimerical, transformative creations that defied the rigors of known science. I could no longer suffer the egotistical competitive nature of my cousins, whose work so paled in comparison to my own. This was my time. This was the era of {_rnd_BattleTime_0} III!", "The fate of the world rested in my hands. It was my discoveries, my ingenious weaponry, my unslakable ambitions that would define this new epoch in human existence. And I put on a demonstration that left no doubt as to whom the glory should be bestowed upon.", "Fame meant little to me if it did not carry with it the power to alter the world. I would watch as it transformed - carefully molded by my own hands - into a boundless utopia. My influence could no longer be relegated to the shadows. It was time to claim the Earth for my own and shake it to its very core."].shuffled("BattleTime_4")[0]'
 # ../.source/ATimeofWar_Eng_v8.cs:9772
 - type: 'text'
   value: '{_rnd_BattleTime_1}'
@@ -49,14 +49,14 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:9780
 - type: 'text'
   # ../en-US.restext:799 | "All players take all thei..."
-  value: 'restext://BattleTime_004'
+  value: 'restext://BattleTime_005'
 # ../.source/ATimeofWar_Eng_v8.cs:9784
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:9786
 - type: 'text'
   # ../en-US.restext:800 | "The player(s) who reveale..."
-  value: 'restext://BattleTime_005'
+  value: 'restext://BattleTime_006'
 # ../.source/ATimeofWar_Eng_v8.cs:9796
 - type: 'break'
   style: 'paragraph'
@@ -77,6 +77,6 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:9809
 - type: 'link'
   # ../en-US.restext:801 | "Click to begin the battle..."
-  label: 'restext://BattleTime_006'
+  label: 'restext://BattleTime_007'
   target: 'BattleCompleteReturn' # ./00236-BattleCompleteReturn.mws.yaml
   snapshot: true
