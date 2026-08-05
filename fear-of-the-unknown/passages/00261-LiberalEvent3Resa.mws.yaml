@@ -12,12 +12,12 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:2166 | "Please enter the name of ..."
+      # ../en-US.restext:2173 | "Please enter the name of ..."
       value: 'restext://LiberalEvent3Resa_001'
     - type: 'input'
       label: ''
       var: 'menname'
-    # ../en-US.restext:362 | "Continue"
+    # ../en-US.restext:367 | "Continue"
     okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'
@@ -29,21 +29,21 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29441
 - type: 'text'
-  # ../en-US.restext:2167 | "**The {menname} Program**"
+  # ../en-US.restext:2174 | "**The {menname} Program**"
   value: 'restext://LiberalEvent3Resa_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29446
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29450
 - type: 'text'
-  # ../en-US.restext:2168 | "**Newsprint - {newspaper}..."
+  # ../en-US.restext:2175 | "**Newsprint - {newspaper}..."
   value: 'restext://LiberalEvent3Resa_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29459
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29461
 - type: 'text'
-  # ../en-US.restext:2169 | "The Asylum has announced ..."
+  # ../en-US.restext:2176 | "The Asylum has announced ..."
   value: 'restext://LiberalEvent3Resa_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29463
 - type: 'switch'
@@ -54,33 +54,33 @@ nodes:
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:29465
     - type: 'text'
-      # ../en-US.restext:2171 | "A new wing of the facilit..."
+      # ../en-US.restext:2178 | "A new wing of the facilit..."
       value: 'restext://LiberalEvent3Resa_006'
   # ../en-US.restext:143 | "Chemistry"
   - match: 'restext://Focus_Chemistry'
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:29469
     - type: 'text'
-      # ../en-US.restext:2172 | "Using new advances in con..."
+      # ../en-US.restext:2179 | "Using new advances in con..."
       value: 'restext://LiberalEvent3Resa_007'
   # ../en-US.restext:142 | "Biology"
   - match: 'restext://Focus_Biology'
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:29473
     - type: 'text'
-      # ../en-US.restext:2173 | "An entirely rebuilt surgi..."
+      # ../en-US.restext:2180 | "An entirely rebuilt surgi..."
       value: 'restext://LiberalEvent3Resa_008'
   default:
   # ../.source/FearoftheUnknown_Eng_v15.cs:29477
   - type: 'text'
-    # ../en-US.restext:2170 | "While officials remain ti..."
+    # ../en-US.restext:2177 | "While officials remain ti..."
     value: 'restext://LiberalEvent3Resa_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29479
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29481
 - type: 'text'
-  # ../en-US.restext:2174 | "While critics of the hosp..."
+  # ../en-US.restext:2181 | "While critics of the hosp..."
   value: 'restext://LiberalEvent3Resa_009'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29486
 - type: 'break'
@@ -91,7 +91,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'Liberal2' # ./00050-Liberal2.mws.yaml
-  # ../en-US.restext:360 | "Close"
+  # ../en-US.restext:365 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -102,14 +102,14 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:29509
   - type: 'text'
-    # ../en-US.restext:2175 | "You gain **3VP**."
+    # ../en-US.restext:2182 | "You gain **3VP**."
     value: 'restext://LiberalEvent3Resa_010'
   # ../.source/FearoftheUnknown_Eng_v15.cs:29515
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:29517
   - type: 'text'
-    # ../en-US.restext:2176 | "Retrieve the **Menagerie*..."
+    # ../en-US.restext:2183 | "Retrieve the **Menagerie*..."
     value: 'restext://LiberalEvent3Resa_011'
   # ../.source/FearoftheUnknown_Eng_v15.cs:29524
   - type: 'conditional'
@@ -117,7 +117,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:29526
     - type: 'text'
-      # ../en-US.restext:2177 | "s."
+      # ../en-US.restext:2184 | "s."
       value: 'restext://LiberalEvent3Resa_012'
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:29530
@@ -128,7 +128,7 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:29534
   - type: 'text'
-    # ../en-US.restext:2178 | "At the End of the Generat..."
+    # ../en-US.restext:2185 | "At the End of the Generat..."
     value: 'restext://LiberalEvent3Resa_013'
   # ../.source/FearoftheUnknown_Eng_v15.cs:29549
   - type: 'conditional'

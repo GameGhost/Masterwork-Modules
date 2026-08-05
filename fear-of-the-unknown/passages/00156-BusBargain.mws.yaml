@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'BusBargain'
-# ../en-US.restext:1447 | "An Improved Deal"
+# ../en-US.restext:1453 | "An Improved Deal"
 title: 'restext://BusBargain_001'
 layout: 'narration'
 nodes:
@@ -13,15 +13,15 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:19026
 - type: 'let'
   var: '_rnd_BusBargain_0'
-  # ../en-US.restext:1448 | BusBargain_002 | "Well, it appears you have..."
-  # ../en-US.restext:1449 | BusBargain_003 | "I was wise to contact you..."
+  # ../en-US.restext:1454 | BusBargain_002 | "Well, it appears you have..."
+  # ../en-US.restext:1455 | BusBargain_003 | "I was wise to contact you..."
   expr: '["restext://BusBargain_002", "restext://BusBargain_003"].shuffled("BusBargain_0")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:19022
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:19024
 - type: 'text'
-  # ../en-US.restext:1450 | "\"Ahh, a shrewd negotiato..."
+  # ../en-US.restext:1456 | "\"Ahh, a shrewd negotiato..."
   value: 'restext://BusBargain_004'
   lets:
   - '_rnd_BusBargain_0'
@@ -30,7 +30,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:19034
 - type: 'text'
-  # ../en-US.restext:1451 | "_If I decide to accept th..."
+  # ../en-US.restext:1457 | "_If I decide to accept th..."
   value: 'restext://BusBargain_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:19044
 - type: 'assign'

@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'PEWitch2PlayerB'
-# ../en-US.restext:2683 | "{nameB}'s Obsession"
+# ../en-US.restext:2690 | "{nameB}'s Obsession"
 title: 'restext://PEWitch2PlayerB_001'
 tags:
 - 'revised'
@@ -10,7 +10,7 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:24262
 - type: 'text'
-  # ../en-US.restext:2684 | "**Journal of {nameB} -** "
+  # ../en-US.restext:2691 | "**Journal of {nameB} -** "
   value: 'restext://PEWitch2PlayerB_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:24268
 - type: 'include_passage'
@@ -80,7 +80,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${players > 2 ? "PEWitch2PlayerC" : "PEExplanation1"}' # ./00356-PEWitch2PlayerC.mws.yaml, ./00229-PEExplanation1.mws.yaml
-  # ../en-US.restext:360 | "Close"
+  # ../en-US.restext:365 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -157,5 +157,5 @@ nodes:
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:24440
     - type: 'text'
-      # ../en-US.restext:2685 | "**{nameB} gains the FOR E..."
+      # ../en-US.restext:2692 | "**{nameB} gains the FOR E..."
       value: 'restext://PEWitch2PlayerB_003'

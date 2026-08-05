@@ -12,7 +12,7 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2356
   - type: 'text'
-    # ../en-US.restext:437 | "**Flames of Hysteria**"
+    # ../en-US.restext:443 | "**Flames of Hysteria**"
     value: 'restext://S4Witch1_007'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2358
   - type: 'break'
@@ -65,34 +65,34 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2393
   - type: 'text'
-    # ../en-US.restext:434 | "With your return from uni..."
+    # ../en-US.restext:440 | "With your return from uni..."
     value: 'restext://S4Witch1_004'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2397
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2399
   - type: 'text'
-    # ../en-US.restext:438 | "For a few years, I watche..."
+    # ../en-US.restext:444 | "For a few years, I watche..."
     value: 'restext://S4Witch1_010'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2406
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2409
   - type: 'link'
-    # ../en-US.restext:439 | "Unfortunately, the town b..."
+    # ../en-US.restext:445 | "Unfortunately, the town b..."
     label: 'restext://S4Witch1_011'
     target: 'ForeignIntro' # ./00013-ForeignIntro.mws.yaml
     snapshot: true
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2417
   - type: 'text'
-    # ../en-US.restext:432 | "**Paranoia Fades**"
+    # ../en-US.restext:438 | "**Paranoia Fades**"
     value: 'restext://S4Witch1_001'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2419
   - type: 'break'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2422
   - type: 'text'
-    # ../en-US.restext:433 | "**Collected Letters -** _..."
+    # ../en-US.restext:439 | "**Collected Letters -** _..."
     value: 'restext://S4Witch1_002'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2432
   - type: 'switch'
@@ -138,21 +138,21 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2453
   - type: 'text'
-    # ../en-US.restext:434 | "With your return from uni..."
+    # ../en-US.restext:440 | "With your return from uni..."
     value: 'restext://S4Witch1_004'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2457
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2459
   - type: 'text'
-    # ../en-US.restext:435 | "For a few years, I watche..."
+    # ../en-US.restext:441 | "For a few years, I watche..."
     value: 'restext://S4Witch1_005'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2469
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2472
   - type: 'link'
-    # ../en-US.restext:436 | "It is a curious thing to ..."
+    # ../en-US.restext:442 | "It is a curious thing to ..."
     label: 'restext://S4Witch1_006'
     target: 'CreatureIntro' # ./00014-CreatureIntro.mws.yaml
     snapshot: true
@@ -163,7 +163,7 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:2476
 - type: 'popup'
   layout: 'end_of_generation'
-  # ../en-US.restext:361 | "Confirm"
+  # ../en-US.restext:366 | "Confirm"
   okay: 'restext://UIButton_Confirm'
   content:
   - type: 'text'

@@ -16,13 +16,13 @@ nodes:
   # ../en-US.restext:53 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:360 | "Close"
+  # ../en-US.restext:365 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:28792
   - type: 'text'
-    # ../en-US.restext:2114 | "**To Remove A Curse**"
+    # ../en-US.restext:2121 | "**To Remove A Curse**"
     value: 'restext://CountCureQuestion_001'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28794
   - type: 'break'
@@ -36,21 +36,21 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28809
   - type: 'text'
-    # ../en-US.restext:2115 | "Before I returned to my c..."
+    # ../en-US.restext:2122 | "Before I returned to my c..."
     value: 'restext://CountCureQuestion_002'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28810
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28812
   - type: 'text'
-    # ../en-US.restext:2116 | "How he knew of my secret ..."
+    # ../en-US.restext:2123 | "How he knew of my secret ..."
     value: 'restext://CountCureQuestion_003'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28815
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28817
   - type: 'text'
-    # ../en-US.restext:2117 | "\"I have lived too many y..."
+    # ../en-US.restext:2124 | "\"I have lived too many y..."
     value: 'restext://CountCureQuestion_004'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28821
   - type: 'assign'
@@ -69,7 +69,7 @@ nodes:
     # ../en-US.restext:29 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: '${round == 8 ? "Creature2" : "Creature3"}' # ./00158-Creature2.mws.yaml, ./00045-Creature3.mws.yaml
-    # ../en-US.restext:360 | "Close"
+    # ../en-US.restext:365 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -80,12 +80,12 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:28748
     - type: 'text'
-      # ../en-US.restext:2118 | "Place the {icon:storybook..."
+      # ../en-US.restext:2125 | "Place the {icon:storybook..."
       value: 'restext://CountCureQuestion_005'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28757
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28759
     - type: 'text'
-      # ../en-US.restext:2119 | "At the End of this Genera..."
+      # ../en-US.restext:2126 | "At the End of this Genera..."
       value: 'restext://CountCureQuestion_006'

@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'LiberalEventA'
-# ../en-US.restext:962 | "Estate Taxes"
+# ../en-US.restext:968 | "Estate Taxes"
 title: 'restext://LiberalEventA_001'
 layout: 'narration'
 nodes:
@@ -31,7 +31,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:11420
 - type: 'text'
-  # ../en-US.restext:963 | "A new \"income tax\" has ..."
+  # ../en-US.restext:969 | "A new \"income tax\" has ..."
   value: 'restext://LiberalEventA_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:11423
 - type: 'break'
@@ -42,7 +42,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'PaymentOrDeathA' # ./00265-PaymentOrDeathA.mws.yaml
-  # ../en-US.restext:360 | "Close"
+  # ../en-US.restext:365 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -53,5 +53,5 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:11445
   - type: 'text'
-    # ../en-US.restext:964 | "Each player **must pay $1..."
+    # ../en-US.restext:970 | "Each player **must pay $1..."
     value: 'restext://LiberalEventA_005'

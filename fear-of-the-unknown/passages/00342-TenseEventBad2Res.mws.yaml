@@ -2,27 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TenseEventBad2Res'
-# ../en-US.restext:2604 | "Vote Result"
+# ../en-US.restext:2611 | "Vote Result"
 title: 'restext://TenseEventBad2Res_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:35981
 - type: 'text'
-  # ../en-US.restext:2605 | "Count up all votes by all..."
+  # ../en-US.restext:2612 | "Count up all votes by all..."
   value: 'restext://TenseEventBad2Res_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:35986
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:35990
 - type: 'text'
-  # ../en-US.restext:2606 | "**Choose the result of th..."
+  # ../en-US.restext:2613 | "**Choose the result of th..."
   value: 'restext://TenseEventBad2Res_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:35992
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:35995
 - type: 'link'
-  # ../en-US.restext:2607 | "We voted to steal. (YAY)"
+  # ../en-US.restext:2614 | "We voted to steal. (YAY)"
   label: 'restext://TenseEventBad2Res_004'
   target: 'TenseEventBad2Yes' # ./00340-TenseEventBad2Yes.mws.yaml
   snapshot: true
@@ -36,7 +36,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:35998
 - type: 'link'
-  # ../en-US.restext:2608 | "We voted against. (NAY)"
+  # ../en-US.restext:2615 | "We voted against. (NAY)"
   label: 'restext://TenseEventBad2Res_005'
   target: 'TenseEventBad2No' # ./00341-TenseEventBad2No.mws.yaml
   snapshot: true

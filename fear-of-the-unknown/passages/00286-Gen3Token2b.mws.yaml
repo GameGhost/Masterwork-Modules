@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Gen3Token2b'
-# ../en-US.restext:2346 | "Rejecting My Fate"
+# ../en-US.restext:2353 | "Rejecting My Fate"
 title: 'restext://Gen3Token2b_001'
 layout: 'narration'
 nodes:
@@ -18,20 +18,20 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31854
 - type: 'text'
-  # ../en-US.restext:2347 | "Yes. For too long I have ..."
+  # ../en-US.restext:2354 | "Yes. For too long I have ..."
   value: 'restext://Gen3Token2b_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31860
 - type: 'let'
   var: '_rnd_Gen3Token2b_0'
-  # ../en-US.restext:2348 | Gen3Token2b_003 | "I will allow my thoughts ..."
-  # ../en-US.restext:2349 | Gen3Token2b_004 | "I will allow the seed of ..."
+  # ../en-US.restext:2355 | Gen3Token2b_003 | "I will allow my thoughts ..."
+  # ../en-US.restext:2356 | Gen3Token2b_004 | "I will allow the seed of ..."
   expr: '["restext://Gen3Token2b_003", "restext://Gen3Token2b_004"].shuffled("Gen3Token2b_0")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31857
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31859
 - type: 'text'
-  # ../en-US.restext:2350 | "My mind is made up. {_rnd..."
+  # ../en-US.restext:2357 | "My mind is made up. {_rnd..."
   value: 'restext://Gen3Token2b_005'
   lets:
   - '_rnd_Gen3Token2b_0'
@@ -43,7 +43,7 @@ nodes:
   # ../en-US.restext:51 | "Click to return..."
   label: 'restext://Click_Return'
   layout: 'reveal'
-  # ../en-US.restext:360 | "Close"
+  # ../en-US.restext:365 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -63,7 +63,7 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:362 | "Continue"
+        # ../en-US.restext:367 | "Continue"
         label: 'restext://UIButton_Continue'
         target: 'Isolation' # ./00019-Isolation.mws.yaml
         snapshot: true
@@ -74,7 +74,7 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:362 | "Continue"
+        # ../en-US.restext:367 | "Continue"
         label: 'restext://UIButton_Continue'
         target: 'Isolation2' # ./00043-Isolation2.mws.yaml
         snapshot: true
@@ -85,7 +85,7 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:362 | "Continue"
+        # ../en-US.restext:367 | "Continue"
         label: 'restext://UIButton_Continue'
         target: 'Isolation3' # ./00044-Isolation3.mws.yaml
         snapshot: true
@@ -96,7 +96,7 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:362 | "Continue"
+        # ../en-US.restext:367 | "Continue"
         label: 'restext://UIButton_Continue'
         target: 'Tension' # ./00020-Tension.mws.yaml
         snapshot: true
@@ -107,7 +107,7 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:362 | "Continue"
+        # ../en-US.restext:367 | "Continue"
         label: 'restext://UIButton_Continue'
         target: 'Tension2' # ./00041-Tension2.mws.yaml
         snapshot: true
@@ -118,7 +118,7 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:362 | "Continue"
+        # ../en-US.restext:367 | "Continue"
         label: 'restext://UIButton_Continue'
         target: 'Tension3' # ./00127-Tension3.mws.yaml
         snapshot: true
@@ -129,7 +129,7 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:362 | "Continue"
+        # ../en-US.restext:367 | "Continue"
         label: 'restext://UIButton_Continue'
         target: 'Privatized' # ./00025-Privatized.mws.yaml
         snapshot: true
@@ -140,7 +140,7 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:362 | "Continue"
+        # ../en-US.restext:367 | "Continue"
         label: 'restext://UIButton_Continue'
         target: 'Privatized2' # ./00047-Privatized2.mws.yaml
         snapshot: true
@@ -151,7 +151,7 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:362 | "Continue"
+        # ../en-US.restext:367 | "Continue"
         label: 'restext://UIButton_Continue'
         target: 'Privatized3' # ./00048-Privatized3.mws.yaml
         snapshot: true
@@ -162,7 +162,7 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:362 | "Continue"
+        # ../en-US.restext:367 | "Continue"
         label: 'restext://UIButton_Continue'
         target: 'Liberal' # ./00026-Liberal.mws.yaml
         snapshot: true
@@ -173,7 +173,7 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:362 | "Continue"
+        # ../en-US.restext:367 | "Continue"
         label: 'restext://UIButton_Continue'
         target: 'Liberal2' # ./00050-Liberal2.mws.yaml
         snapshot: true
@@ -183,7 +183,7 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:362 | "Continue"
+      # ../en-US.restext:367 | "Continue"
       label: 'restext://UIButton_Continue'
       target: 'Liberal3' # ./00051-Liberal3.mws.yaml
       snapshot: true
@@ -192,12 +192,12 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:31936
   - type: 'text'
-    # ../en-US.restext:2351 | "Discard your **Obsession*..."
+    # ../en-US.restext:2358 | "Discard your **Obsession*..."
     value: 'restext://Gen3Token2b_006'
   # ../.source/FearoftheUnknown_Eng_v15.cs:31943
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:31945
   - type: 'text'
-    # ../en-US.restext:2352 | "Draw **4 Compulsion** cards."
+    # ../en-US.restext:2359 | "Draw **4 Compulsion** cards."
     value: 'restext://Gen3Token2b_007'

@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'SmugEvent2A'
-# ../en-US.restext:1034 | "Town Hall Destroyed"
+# ../en-US.restext:1040 | "Town Hall Destroyed"
 title: 'restext://SmugEvent2A_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:12426
 - type: 'text'
-  # ../en-US.restext:1035 | "**Newsprint - {newspaper}..."
+  # ../en-US.restext:1041 | "**Newsprint - {newspaper}..."
   value: 'restext://SmugEvent2A_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12436
 - type: 'assign'
@@ -19,7 +19,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12438
 - type: 'text'
-  # ../en-US.restext:1036 | "Four dead and several inj..."
+  # ../en-US.restext:1042 | "Four dead and several inj..."
   value: 'restext://SmugEvent2A_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12443
 - type: 'break'
@@ -30,7 +30,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'SmugEvent2ACont' # ./00213-SmugEvent2ACont.mws.yaml
-  # ../en-US.restext:360 | "Close"
+  # ../en-US.restext:365 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -45,7 +45,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:12467
     - type: 'text'
-      # ../en-US.restext:1037 | "The player with the most ..."
+      # ../en-US.restext:1043 | "The player with the most ..."
       value: 'restext://SmugEvent2A_004'
   # ../.source/FearoftheUnknown_Eng_v15.cs:12475
   - type: 'conditional'
@@ -57,7 +57,7 @@ nodes:
       expr: 'rand_between(2, 3, "SmugEvent2A_0")'
     # ../.source/FearoftheUnknown_Eng_v15.cs:12478
     - type: 'text'
-      # ../en-US.restext:1039 | "Players that have already..."
+      # ../en-US.restext:1045 | "Players that have already..."
       value: 'restext://SmugEvent2A_006'
     # ../.source/FearoftheUnknown_Eng_v15.cs:12479
     - type: 'break'
@@ -67,7 +67,7 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:12482
       - type: 'text'
-        # ../en-US.restext:1038 | "{nameA} loses **{tempcree..."
+        # ../en-US.restext:1044 | "{nameA} loses **{tempcree..."
         value: 'restext://SmugEvent2A_005'
       # ../.source/FearoftheUnknown_Eng_v15.cs:12490
       - type: 'break'
@@ -77,7 +77,7 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:12494
       - type: 'text'
-        # ../en-US.restext:1040 | "{nameB} loses **{tempcree..."
+        # ../en-US.restext:1046 | "{nameB} loses **{tempcree..."
         value: 'restext://SmugEvent2A_007'
       # ../.source/FearoftheUnknown_Eng_v15.cs:12502
       - type: 'break'
@@ -87,7 +87,7 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:12506
       - type: 'text'
-        # ../en-US.restext:1041 | "{nameC} loses **{tempcree..."
+        # ../en-US.restext:1047 | "{nameC} loses **{tempcree..."
         value: 'restext://SmugEvent2A_008'
       # ../.source/FearoftheUnknown_Eng_v15.cs:12514
       - type: 'break'
@@ -97,7 +97,7 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:12518
       - type: 'text'
-        # ../en-US.restext:1042 | "{nameD} loses **{tempcree..."
+        # ../en-US.restext:1048 | "{nameD} loses **{tempcree..."
         value: 'restext://SmugEvent2A_009'
       # ../.source/FearoftheUnknown_Eng_v15.cs:12526
       - type: 'break'
@@ -107,7 +107,7 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:12530
       - type: 'text'
-        # ../en-US.restext:1043 | "{nameE} loses **{tempcree..."
+        # ../en-US.restext:1049 | "{nameE} loses **{tempcree..."
         value: 'restext://SmugEvent2A_010'
       # ../.source/FearoftheUnknown_Eng_v15.cs:12538
       - type: 'break'
@@ -117,7 +117,7 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:12542
       - type: 'text'
-        # ../en-US.restext:1038 | "{nameA} loses **{tempcree..."
+        # ../en-US.restext:1044 | "{nameA} loses **{tempcree..."
         value: 'restext://SmugEvent2A_005'
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:12555
@@ -126,5 +126,5 @@ nodes:
       expr: 'rand_between(2, 3, "SmugEvent2A_1")'
     # ../.source/FearoftheUnknown_Eng_v15.cs:12556
     - type: 'text'
-      # ../en-US.restext:1038 | "{nameA} loses **{tempcree..."
+      # ../en-US.restext:1044 | "{nameA} loses **{tempcree..."
       value: 'restext://SmugEvent2A_005'

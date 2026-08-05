@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'CommemorativeIntro'
-# ../en-US.restext:1256 | "Strengthening the Town"
+# ../en-US.restext:1262 | "Strengthening the Town"
 title: 'restext://CommemorativeIntro_001'
 layout: 'narration'
 nodes:
@@ -40,21 +40,21 @@ nodes:
   expr: 'randomplayer'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14825
 - type: 'text'
-  # ../en-US.restext:1257 | "**Letter from** **{random..."
+  # ../en-US.restext:1263 | "**Letter from** **{random..."
   value: 'restext://CommemorativeIntro_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14852
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14854
 - type: 'text'
-  # ../en-US.restext:1258 | "Despite the gloom and hys..."
+  # ../en-US.restext:1264 | "Despite the gloom and hys..."
   value: 'restext://CommemorativeIntro_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14860
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14862
 - type: 'text'
-  # ../en-US.restext:1259 | "Doomed to failure, most l..."
+  # ../en-US.restext:1265 | "Doomed to failure, most l..."
   value: 'restext://CommemorativeIntro_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14865
 - type: 'break'
@@ -65,7 +65,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'PEWitch2' # ./00214-PEWitch2.mws.yaml
-  # ../en-US.restext:360 | "Close"
+  # ../en-US.restext:365 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -76,14 +76,14 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:14881
   - type: 'text'
-    # ../en-US.restext:1260 | "During this Generation, p..."
+    # ../en-US.restext:1266 | "During this Generation, p..."
     value: 'restext://CommemorativeIntro_005'
   # ../.source/FearoftheUnknown_Eng_v15.cs:14884
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:14886
   - type: 'text'
-    # ../en-US.restext:1261 | "Each Memorial Brick is wo..."
+    # ../en-US.restext:1267 | "Each Memorial Brick is wo..."
     value: 'restext://CommemorativeIntro_006'
   # ../.source/FearoftheUnknown_Eng_v15.cs:14907
   - type: 'conditional'

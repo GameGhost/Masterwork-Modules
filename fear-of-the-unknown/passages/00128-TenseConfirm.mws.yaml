@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TenseConfirm'
-# ../en-US.restext:1286 | "Calm Before the Tempest"
+# ../en-US.restext:1292 | "Calm Before the Tempest"
 title: 'restext://TenseConfirm_001'
 layout: 'narration'
 nodes:
@@ -18,7 +18,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:15380
 - type: 'text'
-  # ../en-US.restext:1287 | "There is something strang..."
+  # ../en-US.restext:1293 | "There is something strang..."
   value: 'restext://TenseConfirm_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:15383
 - type: 'break'
@@ -33,7 +33,7 @@ nodes:
     # ../en-US.restext:51 | "Click to return..."
     label: 'restext://Click_Return'
     target: 'Tension' # ./00020-Tension.mws.yaml
-    # ../en-US.restext:360 | "Close"
+    # ../en-US.restext:365 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -44,7 +44,7 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:15414
     - type: 'text'
-      # ../en-US.restext:1289 | "Remove the Romani token {..."
+      # ../en-US.restext:1295 | "Remove the Romani token {..."
       value: 'restext://TenseConfirm_004'
     # ../.source/FearoftheUnknown_Eng_v15.cs:15419
     - type: 'break'
@@ -57,7 +57,7 @@ nodes:
     - type: 'break'
     # ../.source/FearoftheUnknown_Eng_v15.cs:15426
     - type: 'text'
-      # ../en-US.restext:1290 | "The {icon:angrymob_icon} ..."
+      # ../en-US.restext:1296 | "The {icon:angrymob_icon} ..."
       value: 'restext://TenseConfirm_006'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:15396
@@ -66,7 +66,7 @@ nodes:
     # ../en-US.restext:29 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: 'ConsequencesTense' # ./00084-ConsequencesTense.mws.yaml
-    # ../en-US.restext:360 | "Close"
+    # ../en-US.restext:365 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -77,5 +77,5 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:15462
     - type: 'text'
-      # ../en-US.restext:1288 | "Move the {icon:angrymob_i..."
+      # ../en-US.restext:1294 | "Move the {icon:angrymob_i..."
       value: 'restext://TenseConfirm_003'

@@ -17,7 +17,7 @@ nodes:
     - type: 'input'
       label: ''
       var: 'warriorC'
-    # ../en-US.restext:362 | "Continue"
+    # ../en-US.restext:367 | "Continue"
     okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'
@@ -37,7 +37,7 @@ nodes:
     expr: 'warriorC.replace("_3", "")'
   # ../.source/FearoftheUnknown_Eng_v15.cs:32851
   - type: 'text'
-    # ../en-US.restext:2424 | "**{_rpl_Player3Statsfin_0}**"
+    # ../en-US.restext:2431 | "**{_rpl_Player3Statsfin_0}**"
     value: 'restext://Player3Statsfin_001'
     lets:
     - '_rpl_Player3Statsfin_0'
@@ -50,19 +50,19 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32858
 - type: 'text'
-  # ../en-US.restext:2425 | "Agility: **{agiC}**"
+  # ../en-US.restext:2432 | "Agility: **{agiC}**"
   value: 'restext://Player3Statsfin_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32863
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32864
 - type: 'text'
-  # ../en-US.restext:2426 | "Strength: **{strC}**"
+  # ../en-US.restext:2433 | "Strength: **{strC}**"
   value: 'restext://Player3Statsfin_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32869
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32870
 - type: 'text'
-  # ../en-US.restext:2427 | "Life: **{hitC}**"
+  # ../en-US.restext:2434 | "Life: **{hitC}**"
   value: 'restext://Player3Statsfin_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32875
 - type: 'break'

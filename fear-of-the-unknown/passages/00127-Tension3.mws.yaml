@@ -16,7 +16,7 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:15180
   - type: 'text'
-    # ../en-US.restext:1281 | "**The Enemy of My Friend ..."
+    # ../en-US.restext:1287 | "**The Enemy of My Friend ..."
     value: 'restext://Tension3_003'
   # ../.source/FearoftheUnknown_Eng_v15.cs:15182
   - type: 'break'
@@ -36,14 +36,14 @@ nodes:
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:15207
   - type: 'text'
-    # ../en-US.restext:1279 | "**A Peace Through Generat..."
+    # ../en-US.restext:1285 | "**A Peace Through Generat..."
     value: 'restext://Tension3_001'
   # ../.source/FearoftheUnknown_Eng_v15.cs:15209
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:15213
   - type: 'section'
-    # ../en-US.restext:1280 | "{icon:storybooktoken} **A..."
+    # ../en-US.restext:1286 | "{icon:storybooktoken} **A..."
     title: 'restext://Tension3_002'
     style: 'hub-card'
     content:
@@ -128,13 +128,13 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:15317
   - type: 'section'
-    # ../en-US.restext:1282 | "**Obsession Penalty**"
+    # ../en-US.restext:1288 | "**Obsession Penalty**"
     title: 'restext://Tension3_004'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:15326
     - type: 'text'
-      # ../en-US.restext:1283 | "Any player who does not D..."
+      # ../en-US.restext:1289 | "Any player who does not D..."
       value: 'restext://Tension3_005'
   # ../.source/FearoftheUnknown_Eng_v15.cs:15336
   - type: 'break'
@@ -149,7 +149,7 @@ nodes:
     # ../en-US.restext:33 | "Click here at the End of ..."
     label: 'restext://Click_EndGeneration_FinalScoringDetermineFate'
     target: 'TensionBonus' # ./00092-TensionBonus.mws.yaml
-    # ../en-US.restext:364 | "End of Round"
+    # ../en-US.restext:369 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'

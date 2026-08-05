@@ -13,7 +13,7 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6476
   - type: 'text'
-    # ../en-US.restext:713 | "**The Enemy of My Friend ..."
+    # ../en-US.restext:719 | "**The Enemy of My Friend ..."
     value: 'restext://Tension2_005'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6478
   - type: 'break'
@@ -21,7 +21,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6482
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:359 | "Accept"
+    # ../en-US.restext:364 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6486
@@ -31,7 +31,7 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6488
     - type: 'text'
-      # ../en-US.restext:714 | "Turn to page **21** of th..."
+      # ../en-US.restext:720 | "Turn to page **21** of th..."
       value: 'restext://Tension2_006'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6499
   - type: 'section'
@@ -48,12 +48,12 @@ nodes:
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6518
   - type: 'text'
-    # ../en-US.restext:710 | "**A Peace Through Generat..."
+    # ../en-US.restext:716 | "**A Peace Through Generat..."
     value: 'restext://Tension2_001'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6522
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:359 | "Accept"
+    # ../en-US.restext:364 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6526
@@ -63,11 +63,11 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6528
     - type: 'text'
-      # ../en-US.restext:711 | "Turn to page **20** of th..."
+      # ../en-US.restext:717 | "Turn to page **20** of th..."
       value: 'restext://Tension2_002'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6538
   - type: 'section'
-    # ../en-US.restext:712 | "{icon:storybooktoken}**A ..."
+    # ../en-US.restext:718 | "{icon:storybooktoken}**A ..."
     title: 'restext://Tension2_003'
     style: 'hub-card'
     content:
@@ -157,7 +157,7 @@ nodes:
     # ../en-US.restext:35 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
     target: '${tension == "good" ? "Caravancheck" : "TenseEventBad2"}' # ./00105-Caravancheck.mws.yaml, ./00118-TenseEventBad2.mws.yaml
-    # ../en-US.restext:364 | "End of Round"
+    # ../en-US.restext:369 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'

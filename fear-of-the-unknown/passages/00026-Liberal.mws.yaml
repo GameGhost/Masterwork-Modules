@@ -17,7 +17,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:4566
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:359 | "Accept"
+    # ../en-US.restext:364 | "Accept"
     okay: 'restext://UIButton_Accept'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:4571
@@ -32,7 +32,7 @@ nodes:
           style: 'setup-image'
         # ../.source/FearoftheUnknown_Eng_v15.cs:4574
         - type: 'text'
-          # ../en-US.restext:586 | "Turn to page **10** of th..."
+          # ../en-US.restext:592 | "Turn to page **10** of th..."
           value: 'restext://Liberal_002'
         # ../.source/FearoftheUnknown_Eng_v15.cs:4580
         - type: 'break'
@@ -45,7 +45,7 @@ nodes:
           style: 'setup-image'
         # ../.source/FearoftheUnknown_Eng_v15.cs:4586
         - type: 'text'
-          # ../en-US.restext:587 | "Turn to page **11** of th..."
+          # ../en-US.restext:593 | "Turn to page **11** of th..."
           value: 'restext://Liberal_003'
         # ../.source/FearoftheUnknown_Eng_v15.cs:4592
         - type: 'break'
@@ -59,7 +59,7 @@ nodes:
           style: 'paragraph'
         # ../.source/FearoftheUnknown_Eng_v15.cs:4599
         - type: 'text'
-          # ../en-US.restext:588 | "Shuffle them and randomly..."
+          # ../en-US.restext:594 | "Shuffle them and randomly..."
           value: 'restext://Liberal_004'
         # ../.source/FearoftheUnknown_Eng_v15.cs:4602
         - type: 'break'
@@ -157,7 +157,7 @@ nodes:
     # ../en-US.restext:30 | "Click here to continue to..."
     label: 'restext://Click_ContinueNextRound'
     target: '${creature == 1 && exped == 0 ? "Expedition1" : "LiberalEvent3"}' # ./00049-Expedition1.mws.yaml, ./00258-LiberalEvent3.mws.yaml
-    # ../en-US.restext:364 | "End of Round"
+    # ../en-US.restext:369 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'

@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S4Asylum2'
-# ../en-US.restext:2088 | "Asylum Support"
+# ../en-US.restext:2095 | "Asylum Support"
 title: 'restext://S4Asylum2_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:28275
 - type: 'text'
-  # ../en-US.restext:2089 | "For a generous donation, ..."
+  # ../en-US.restext:2096 | "For a generous donation, ..."
   value: 'restext://S4Asylum2_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28286
 - type: 'assign'
@@ -25,37 +25,37 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:28292
     - type: 'text'
-      # ../en-US.restext:2092 | "**Asylum Labor Union**"
+      # ../en-US.restext:2099 | "**Asylum Labor Union**"
       value: 'restext://S4Asylum2_005'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28294
     - type: 'break'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28295
     - type: 'text'
-      # ../en-US.restext:2093 | "Anytime you visit the Asy..."
+      # ../en-US.restext:2100 | "Anytime you visit the Asy..."
       value: 'restext://S4Asylum2_006'
-  # ../en-US.restext:334 | "Key to the Asylum"
+  # ../en-US.restext:336 | "Key to the Asylum"
   - if: 'asylumup == "restext://Title_KeyToTheAsylum"'
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:28306
     - type: 'text'
-      # ../en-US.restext:2094 | "**Key to the Asylum**"
+      # ../en-US.restext:2101 | "**Key to the Asylum**"
       value: 'restext://S4Asylum2_007'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28308
     - type: 'break'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28309
     - type: 'text'
-      # ../en-US.restext:2095 | "Anytime you visit the Asy..."
+      # ../en-US.restext:2102 | "Anytime you visit the Asy..."
       value: 'restext://S4Asylum2_008'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:28320
   - type: 'text'
-    # ../en-US.restext:2090 | "**Asylum Share**"
+    # ../en-US.restext:2097 | "**Asylum Share**"
     value: 'restext://S4Asylum2_003'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28322
   - type: 'break'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28323
   - type: 'text'
-    # ../en-US.restext:2091 | "Anytime you visit the Asy..."
+    # ../en-US.restext:2098 | "Anytime you visit the Asy..."
     value: 'restext://S4Asylum2_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28334
 - type: 'break'
@@ -66,7 +66,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'S4Asylum3' # ./00159-S4Asylum3.mws.yaml
-  # ../en-US.restext:360 | "Close"
+  # ../en-US.restext:365 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -77,18 +77,18 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:28353
   - type: 'text'
-    # ../en-US.restext:2096 | "**Option to Donate**"
+    # ../en-US.restext:2103 | "**Option to Donate**"
     value: 'restext://S4Asylum2_009'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28355
   - type: 'break'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28356
   - type: 'text'
-    # ../en-US.restext:2097 | "Each player, in turn orde..."
+    # ../en-US.restext:2104 | "Each player, in turn orde..."
     value: 'restext://S4Asylum2_010'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28368
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28371
   - type: 'text'
-    # ../en-US.restext:2098 | "Once all have chosen, cli..."
+    # ../en-US.restext:2105 | "Once all have chosen, cli..."
     value: 'restext://S4Asylum2_011'

@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'PrivatizedIntro'
-# ../en-US.restext:561 | "GENERATION III: Conductin..."
+# ../en-US.restext:567 | "GENERATION III: Conductin..."
 title: 'restext://PrivatizedIntro_001'
 tags:
 - 'INTRO'
@@ -49,35 +49,35 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4241
 - type: 'text'
-  # ../en-US.restext:562 | "I will keep this letter b..."
+  # ../en-US.restext:568 | "I will keep this letter b..."
   value: 'restext://PrivatizedIntro_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4242
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4244
 - type: 'text'
-  # ../en-US.restext:563 | "You are probably interest..."
+  # ../en-US.restext:569 | "You are probably interest..."
   value: 'restext://PrivatizedIntro_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4245
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4247
 - type: 'text'
-  # ../en-US.restext:564 | "News of the day: The Asyl..."
+  # ../en-US.restext:570 | "News of the day: The Asyl..."
   value: 'restext://PrivatizedIntro_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4248
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4250
 - type: 'text'
-  # ../en-US.restext:565 | "And I — I am doing well. ..."
+  # ../en-US.restext:571 | "And I — I am doing well. ..."
   value: 'restext://PrivatizedIntro_006'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4251
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4253
 - type: 'text'
-  # ../en-US.restext:566 | "I must work quickly, as I..."
+  # ../en-US.restext:572 | "I must work quickly, as I..."
   value: 'restext://PrivatizedIntro_007'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4256
 - type: 'break'
@@ -115,13 +115,13 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:4269
   - type: 'assign'
     var: 'warden'
-    # ../en-US.restext:345 | "The Butcher"
+    # ../en-US.restext:349 | "The Butcher"
     expr: '"restext://Title_TheButcher"'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:4274
   - type: 'assign'
     var: 'warden'
-    # ../en-US.restext:567 | "The Bloodsmith"
+    # ../en-US.restext:573 | "The Bloodsmith"
     expr: '"restext://PrivatizedIntro_009"'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4276
 - type: 'assign'

@@ -16,7 +16,7 @@ nodes:
   # ../en-US.restext:53 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:360 | "Close"
+  # ../en-US.restext:365 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
@@ -42,7 +42,7 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:18085
   - type: 'text'
-    # ../en-US.restext:1398 | "{_rnd_BusMeetA_0} \"Donat..."
+    # ../en-US.restext:1404 | "{_rnd_BusMeetA_0} \"Donat..."
     value: 'restext://BusMeetA_001'
     lets:
     - '_rnd_BusMeetA_0'
@@ -73,7 +73,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:18125
     - type: 'text'
-      # ../en-US.restext:1399 | "\"**For $2**, I will guar..."
+      # ../en-US.restext:1405 | "\"**For $2**, I will guar..."
       value: 'restext://BusMeetA_002'
     # ../.source/FearoftheUnknown_Eng_v15.cs:18136
     - type: 'break'
@@ -84,7 +84,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:18141
     - type: 'text'
-      # ../en-US.restext:1400 | "\"**For $3**, I will offe..."
+      # ../en-US.restext:1406 | "\"**For $3**, I will offe..."
       value: 'restext://BusMeetA_003'
   # ../.source/FearoftheUnknown_Eng_v15.cs:18153
   - type: 'break'

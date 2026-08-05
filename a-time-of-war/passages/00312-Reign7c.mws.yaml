@@ -38,7 +38,8 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:28797
     - type: 'assign'
       var: 'nameA'
-      expr: 'title + " " + nameA'
+      # ../en-US.restext:2373 | "{title} {nameA}"
+      expr: '"restext://Reign7c_002"'
   # ../.source/ATimeofWar_Eng_v8.cs:28798
   - type: 'assign'
     var: 'reigntemp'
@@ -54,7 +55,8 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:28804
     - type: 'assign'
       var: 'nameB'
-      expr: 'title + " " + nameB'
+      # ../en-US.restext:2374 | "{title} {nameB}"
+      expr: '"restext://Reign7c_003"'
   # ../.source/ATimeofWar_Eng_v8.cs:28805
   - type: 'assign'
     var: 'reigntemp'
@@ -70,7 +72,8 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:28811
     - type: 'assign'
       var: 'nameC'
-      expr: 'title + " " + nameC'
+      # ../en-US.restext:2375 | "{title} {nameC}"
+      expr: '"restext://Reign7c_004"'
   # ../.source/ATimeofWar_Eng_v8.cs:28812
   - type: 'assign'
     var: 'reigntemp'
@@ -86,7 +89,8 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:28818
     - type: 'assign'
       var: 'nameD'
-      expr: 'title + " " + nameD'
+      # ../en-US.restext:2376 | "{title} {nameD}"
+      expr: '"restext://Reign7c_005"'
   # ../.source/ATimeofWar_Eng_v8.cs:28819
   - type: 'assign'
     var: 'reigntemp'
@@ -102,7 +106,8 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:28825
     - type: 'assign'
       var: 'nameE'
-      expr: 'title + " " + nameE'
+      # ../en-US.restext:2377 | "{title} {nameE}"
+      expr: '"restext://Reign7c_006"'
   # ../.source/ATimeofWar_Eng_v8.cs:28826
   - type: 'assign'
     var: 'reigntemp'

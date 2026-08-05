@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'CheckW2'
-# ../en-US.restext:343 | "Rumor Mill"
+# ../en-US.restext:347 | "Rumor Mill"
 title: 'restext://Title_RumorMill'
 layout: 'narration'
 nodes:
@@ -28,7 +28,7 @@ nodes:
   expr: 'rand_between(1, 29, "CheckW2_1")'
 # ../.source/FearoftheUnknown_Eng_v15.cs:10786
 - type: 'text'
-  # ../en-US.restext:909 | "**Newsprint - {newspaper}..."
+  # ../en-US.restext:915 | "**Newsprint - {newspaper}..."
   value: 'restext://CheckW2_001'
   lets:
   - '_rnd_CheckW2_0'
@@ -43,7 +43,7 @@ nodes:
     expr: 'rand_between(863, 871, "CheckW2_2")'
   # ../.source/FearoftheUnknown_Eng_v15.cs:10798
   - type: 'text'
-    # ../en-US.restext:911 | "_{_rnd_CheckW2_2}_"
+    # ../en-US.restext:917 | "_{_rnd_CheckW2_2}_"
     value: 'restext://CheckW2_003'
     lets:
     - '_rnd_CheckW2_2'
@@ -54,7 +54,7 @@ nodes:
     expr: 'rand_between(872, 880, "CheckW2_3")'
   # ../.source/FearoftheUnknown_Eng_v15.cs:10803
   - type: 'text'
-    # ../en-US.restext:910 | "_{_rnd_CheckW2_3}_"
+    # ../en-US.restext:916 | "_{_rnd_CheckW2_3}_"
     value: 'restext://CheckW2_002'
     lets:
     - '_rnd_CheckW2_3'
@@ -64,15 +64,15 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:10811
 - type: 'let'
   var: '_rnd_CheckW2_4'
-  # ../en-US.restext:912 | CheckW2_004 | "gentleman"
-  # ../en-US.restext:913 | CheckW2_005 | "gentlewoman"
+  # ../en-US.restext:918 | CheckW2_004 | "gentleman"
+  # ../en-US.restext:919 | CheckW2_005 | "gentlewoman"
   expr: '["restext://CheckW2_004", "restext://CheckW2_005"].shuffled("CheckW2_4")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:10808
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:10810
 - type: 'text'
-  # ../en-US.restext:914 | "Yesterday morning, a {_rn..."
+  # ../en-US.restext:920 | "Yesterday morning, a {_rn..."
   value: 'restext://CheckW2_006'
   lets:
   - '_rnd_CheckW2_4'
@@ -81,7 +81,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:10820
 - type: 'text'
-  # ../en-US.restext:915 | "Our representatives have ..."
+  # ../en-US.restext:921 | "Our representatives have ..."
   value: 'restext://CheckW2_007'
 # ../.source/FearoftheUnknown_Eng_v15.cs:10822
 - type: 'break'

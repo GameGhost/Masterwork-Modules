@@ -22,21 +22,21 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13985
 - type: 'text'
-  # ../en-US.restext:1158 | "With a billow of emerald ..."
+  # ../en-US.restext:1164 | "With a billow of emerald ..."
   value: 'restext://EssentialSaltsRes_001'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13987
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13989
 - type: 'text'
-  # ../en-US.restext:1159 | "However, the hideous silh..."
+  # ../en-US.restext:1165 | "However, the hideous silh..."
   value: 'restext://EssentialSaltsRes_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13990
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13992
 - type: 'text'
-  # ../en-US.restext:1160 | "I spoke to them and thoug..."
+  # ../en-US.restext:1166 | "I spoke to them and thoug..."
   value: 'restext://EssentialSaltsRes_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13994
 - type: 'break'
@@ -46,7 +46,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   layout: 'reveal'
-  # ../en-US.restext:360 | "Close"
+  # ../en-US.restext:365 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -64,7 +64,7 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:362 | "Continue"
+      # ../en-US.restext:367 | "Continue"
       label: 'restext://UIButton_Continue'
       target: 'LiberalEvent3' # ./00258-LiberalEvent3.mws.yaml
       snapshot: true
@@ -74,7 +74,7 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:362 | "Continue"
+      # ../en-US.restext:367 | "Continue"
       label: 'restext://UIButton_Continue'
       target: '${macros1.either("LiberalEvent", "LiberalTaxes")}' # ./00054-LiberalEvent.mws.yaml, ./00101-LiberalTaxes.mws.yaml
       snapshot: true
@@ -83,12 +83,12 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:14039
   - type: 'text'
-    # ../en-US.restext:1161 | "Any player who chose to p..."
+    # ../en-US.restext:1167 | "Any player who chose to p..."
     value: 'restext://EssentialSaltsRes_004'
   # ../.source/FearoftheUnknown_Eng_v15.cs:14052
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:14056
   - type: 'text'
-    # ../en-US.restext:1162 | "_If you cannot gain a Car..."
+    # ../en-US.restext:1168 | "_If you cannot gain a Car..."
     value: 'restext://EssentialSaltsRes_005'

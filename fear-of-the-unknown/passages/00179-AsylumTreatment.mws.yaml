@@ -14,11 +14,11 @@ nodes:
   # ../en-US.restext:239 | Letter_A | "A"
   # ../en-US.restext:240 | Letter_B | "B"
   # ../en-US.restext:241 | Letter_C | "C"
-  # ../en-US.restext:1520 | AsylumTreatment_004 | "D"
+  # ../en-US.restext:1526 | AsylumTreatment_004 | "D"
   expr: '["restext://Letter_A", "restext://Letter_B", "restext://Letter_C", "restext://AsylumTreatment_004"].shuffled("AsylumTreatment_1")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20796
 - type: 'text'
-  # ../en-US.restext:1521 | "**Asylum Admittance Log {..."
+  # ../en-US.restext:1527 | "**Asylum Admittance Log {..."
   value: 'restext://AsylumTreatment_005'
   lets:
   - '_rnd_AsylumTreatment_0'
@@ -28,14 +28,14 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20805
 - type: 'text'
-  # ../en-US.restext:1522 | "_A somewhat faded page li..."
+  # ../en-US.restext:1528 | "_A somewhat faded page li..."
   value: 'restext://AsylumTreatment_006'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20809
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20813
 - type: 'text'
-  # ../en-US.restext:1523 | "**The admittance log for ..."
+  # ../en-US.restext:1529 | "**The admittance log for ..."
   value: 'restext://AsylumTreatment_007'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20816
 - type: 'assign'

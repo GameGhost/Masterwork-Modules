@@ -25,7 +25,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2672
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:359 | "Accept"
+    # ../en-US.restext:364 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2676
@@ -35,7 +35,7 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2678
     - type: 'text'
-      # ../en-US.restext:454 | "Retrieve the **Memorial B..."
+      # ../en-US.restext:460 | "Retrieve the **Memorial B..."
       value: 'restext://Foreign_002'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2689
     - type: 'conditional'
@@ -43,7 +43,7 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:2691
       - type: 'text'
-        # ../en-US.restext:455 | "For {playtxt} players, yo..."
+        # ../en-US.restext:461 | "For {playtxt} players, yo..."
         value: 'restext://Foreign_003'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2700
     - type: 'break'
@@ -97,7 +97,7 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2741
   - type: 'text'
-    # ../en-US.restext:456 | "The **{witch1}** has been..."
+    # ../en-US.restext:462 | "The **{witch1}** has been..."
     value: 'restext://Foreign_008'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2749
 - type: 'break'
@@ -115,7 +115,7 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2764
     - type: 'text'
-      # ../en-US.restext:458 | "With the Church placed un..."
+      # ../en-US.restext:464 | "With the Church placed un..."
       value: 'restext://Foreign_013'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2772
@@ -138,7 +138,7 @@ nodes:
     - type: 'break'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2784
     - type: 'text'
-      # ../en-US.restext:457 | "This will allow you to se..."
+      # ../en-US.restext:463 | "This will allow you to se..."
       value: 'restext://Foreign_012'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2787
 - type: 'break'
@@ -185,13 +185,13 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2849
 - type: 'section'
-  # ../en-US.restext:459 | "{icon:storybooktoken} **B..."
+  # ../en-US.restext:465 | "{icon:storybooktoken} **B..."
   title: 'restext://Foreign_019'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2860
   - type: 'text'
-    # ../en-US.restext:460 | "The only signs of moderni..."
+    # ../en-US.restext:466 | "The only signs of moderni..."
     value: 'restext://Foreign_020'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2862
   - type: 'link'
@@ -260,7 +260,7 @@ nodes:
     # ../en-US.restext:35 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
     target: 'WallEvent' # ./00071-WallEvent.mws.yaml
-    # ../en-US.restext:364 | "End of Round"
+    # ../en-US.restext:369 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
