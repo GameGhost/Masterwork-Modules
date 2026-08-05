@@ -14,7 +14,7 @@ nodes:
   expr: 'rand_between(1, 999, "bar2_1")'
 # ../.source/TheCostofDisease_Eng_v10.cs:6323
 - type: 'text'
-  # ../en-US.restext:698 | "**SWORN STATEMENT - Case ..."
+  # ../en-US.restext:706 | "**SWORN STATEMENT - Case ..."
   value: 'restext://bar2_001'
   lets:
   - '_rnd_bar2_0'
@@ -32,40 +32,40 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:6333
   - type: 'text'
-    # ../en-US.restext:702 | "While many first-hand acc..."
+    # ../en-US.restext:710 | "While many first-hand acc..."
     value: 'restext://bar2_005'
   # ../.source/TheCostofDisease_Eng_v10.cs:6334
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:6336
   - type: 'text'
-    # ../en-US.restext:703 | "I awoke in the stables be..."
+    # ../en-US.restext:711 | "I awoke in the stables be..."
     value: 'restext://bar2_006'
   # ../.source/TheCostofDisease_Eng_v10.cs:6339
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:6341
   - type: 'text'
-    # ../en-US.restext:704 | "I would also like to note..."
+    # ../en-US.restext:712 | "I would also like to note..."
     value: 'restext://bar2_007'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:6351
   - type: 'text'
-    # ../en-US.restext:699 | "I find the accusations to..."
+    # ../en-US.restext:707 | "I find the accusations to..."
     value: 'restext://bar2_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:6352
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:6354
   - type: 'text'
-    # ../en-US.restext:700 | "While I admit to having a..."
+    # ../en-US.restext:708 | "While I admit to having a..."
     value: 'restext://bar2_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:6355
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:6357
   - type: 'text'
-    # ../en-US.restext:701 | "Despite my personal objec..."
+    # ../en-US.restext:709 | "Despite my personal objec..."
     value: 'restext://bar2_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:6366
 - type: 'break'
@@ -73,7 +73,7 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:6370
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:351 | "Accept"
+  # ../en-US.restext:355 | "Accept"
   okay: 'restext://UIButton_Accept'
   header:
   # ../.source/TheCostofDisease_Eng_v10.cs:6374
@@ -83,5 +83,5 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:6376
   - type: 'text'
-    # ../en-US.restext:705 | "Place a {icon:creepy_icon..."
+    # ../en-US.restext:713 | "Place a {icon:creepy_icon..."
     value: 'restext://bar2_008'

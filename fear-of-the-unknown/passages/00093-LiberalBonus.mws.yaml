@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'LiberalBonus'
-# ../en-US.restext:1030 | "The {menname} Program"
+# ../en-US.restext:1035 | "The {menname} Program"
 title: 'restext://LiberalBonus_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:12293
 - type: 'text'
-  # ../en-US.restext:1031 | "The **Menagerie** Estate ..."
+  # ../en-US.restext:1036 | "The **Menagerie** Estate ..."
   value: 'restext://LiberalBonus_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12308
 - type: 'conditional'
@@ -16,7 +16,7 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:12310
   - type: 'text'
-    # ../en-US.restext:1032 | "The player who has the se..."
+    # ../en-US.restext:1037 | "The player who has the se..."
     value: 'restext://LiberalBonus_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12312
 - type: 'break'

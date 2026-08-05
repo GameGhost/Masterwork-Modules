@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ParadoxFirst'
-# ../en-US.restext:901 | "New Science"
+# ../en-US.restext:906 | "New Science"
 title: 'restext://ParadoxFirst_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:11911
 - type: 'text'
-  # ../en-US.restext:902 | "When I discovered the jou..."
+  # ../en-US.restext:907 | "When I discovered the jou..."
   value: 'restext://ParadoxFirst_002'
 # ../.source/ATimeofWar_Eng_v8.cs:11912
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:11914
 - type: 'text'
-  # ../en-US.restext:903 | "I decided to improve upon..."
+  # ../en-US.restext:908 | "I decided to improve upon..."
   value: 'restext://ParadoxFirst_003'
 # ../.source/ATimeofWar_Eng_v8.cs:11916
 - type: 'break'
@@ -25,7 +25,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   layout: 'reveal'
-  # ../en-US.restext:282 | "Close"
+  # ../en-US.restext:284 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -51,7 +51,7 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:284 | "Continue"
+      # ../en-US.restext:286 | "Continue"
       label: 'restext://UIButton_Continue'
       target: '${ParadoxFirstnextPsg}'
       snapshot: true
@@ -61,7 +61,7 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:284 | "Continue"
+      # ../en-US.restext:286 | "Continue"
       label: 'restext://UIButton_Continue'
       target: 'MonumentVote' # ./00200-MonumentVote.mws.yaml
       snapshot: true
@@ -69,5 +69,5 @@ nodes:
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:11962
   - type: 'text'
-    # ../en-US.restext:904 | "Retrieve the **Giant Mast..."
+    # ../en-US.restext:909 | "Retrieve the **Giant Mast..."
     value: 'restext://ParadoxFirst_004'

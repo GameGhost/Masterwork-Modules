@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'BattleIntro'
-# ../en-US.restext:1923 | "The Main Event"
+# ../en-US.restext:1949 | "The Main Event"
 title: 'restext://BattleIntro_001'
 layout: 'narration'
 nodes:
@@ -14,14 +14,14 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25952
 - type: 'text'
-  # ../en-US.restext:1924 | "The announcer wheeled int..."
+  # ../en-US.restext:1950 | "The announcer wheeled int..."
   value: 'restext://BattleIntro_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25954
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25958
 - type: 'text'
-  # ../en-US.restext:1925 | "**Presenting your combata..."
+  # ../en-US.restext:1951 | "**Presenting your combata..."
   value: 'restext://BattleIntro_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25964
 - type: 'let'
@@ -29,7 +29,7 @@ nodes:
   expr: 'warriorA.replace("_1", "")'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25961
 - type: 'text'
-  # ../en-US.restext:1926 | "{nameA}'s {_rpl_BattleInt..."
+  # ../en-US.restext:1952 | "{nameA}'s {_rpl_BattleInt..."
   value: 'restext://BattleIntro_004'
   lets:
   - '_rpl_BattleIntro_0'
@@ -39,7 +39,7 @@ nodes:
   expr: 'warriorB.replace("_2", "")'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25968
 - type: 'text'
-  # ../en-US.restext:1927 | "{nameB}'s {_rpl_BattleInt..."
+  # ../en-US.restext:1953 | "{nameB}'s {_rpl_BattleInt..."
   value: 'restext://BattleIntro_005'
   lets:
   - '_rpl_BattleIntro_1'
@@ -55,7 +55,7 @@ nodes:
     expr: 'warriorC.replace("_3", "")'
   # ../.source/FearoftheUnknown_Eng_v15.cs:25977
   - type: 'text'
-    # ../en-US.restext:1928 | "{nameC}'s {_rpl_BattleInt..."
+    # ../en-US.restext:1954 | "{nameC}'s {_rpl_BattleInt..."
     value: 'restext://BattleIntro_006'
     lets:
     - '_rpl_BattleIntro_2'
@@ -71,7 +71,7 @@ nodes:
     expr: 'warriorD.replace("_4", "")'
   # ../.source/FearoftheUnknown_Eng_v15.cs:25987
   - type: 'text'
-    # ../en-US.restext:1929 | "{nameD}'s {_rpl_BattleInt..."
+    # ../en-US.restext:1955 | "{nameD}'s {_rpl_BattleInt..."
     value: 'restext://BattleIntro_007'
     lets:
     - '_rpl_BattleIntro_3'
@@ -87,7 +87,7 @@ nodes:
     expr: 'warriorE.replace("_5", "")'
   # ../.source/FearoftheUnknown_Eng_v15.cs:25997
   - type: 'text'
-    # ../en-US.restext:1930 | "{nameE}'s {_rpl_BattleInt..."
+    # ../en-US.restext:1956 | "{nameE}'s {_rpl_BattleInt..."
     value: 'restext://BattleIntro_008'
     lets:
     - '_rpl_BattleIntro_4'
@@ -97,7 +97,7 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26006
 - type: 'text'
-  # ../en-US.restext:1931 | "A sudden hiss of steam bu..."
+  # ../en-US.restext:1957 | "A sudden hiss of steam bu..."
   value: 'restext://BattleIntro_009'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26007
 - type: 'break'

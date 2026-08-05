@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'DiseaseEnd'
-# ../en-US.restext:1985 | "Longevity and Clarity"
+# ../en-US.restext:1993 | "Longevity and Clarity"
 title: 'restext://DiseaseEnd_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:24894
 - type: 'text'
-  # ../en-US.restext:1986 | "Notes from this time peri..."
+  # ../en-US.restext:1994 | "Notes from this time peri..."
   value: 'restext://DiseaseEnd_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:24895
 - type: 'break'
@@ -16,10 +16,10 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:24899
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:1987 | "Click here to determine t..."
+  # ../en-US.restext:1995 | "Click here to determine t..."
   label: 'restext://DiseaseEnd_003'
   target: 'DiseaseEffect' # ./00188-DiseaseEffect.mws.yaml
-  # ../en-US.restext:352 | "Close"
+  # ../en-US.restext:356 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -30,12 +30,12 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:24915
   - type: 'text'
-    # ../en-US.restext:1988 | "Retrieve the **Stasis Cha..."
+    # ../en-US.restext:1996 | "Retrieve the **Stasis Cha..."
     value: 'restext://DiseaseEnd_004'
   # ../.source/TheCostofDisease_Eng_v10.cs:24940
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:24942
   - type: 'text'
-    # ../en-US.restext:1989 | "Then, discard any face-do..."
+    # ../en-US.restext:1997 | "Then, discard any face-do..."
     value: 'restext://DiseaseEnd_005'

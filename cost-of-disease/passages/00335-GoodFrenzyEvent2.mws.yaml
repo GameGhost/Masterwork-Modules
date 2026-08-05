@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'GoodFrenzyEvent2'
-# ../en-US.restext:2699 | "A Frenzied Decision"
+# ../en-US.restext:2707 | "A Frenzied Decision"
 title: 'restext://GoodFrenzyEvent2_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:33873
 - type: 'text'
-  # ../en-US.restext:311 | "Special Event"
+  # ../en-US.restext:315 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/TheCostofDisease_Eng_v10.cs:33874
@@ -35,27 +35,27 @@ nodes:
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:33888
 - type: 'text'
-  # ../en-US.restext:2700 | "All players take their Vo..."
+  # ../en-US.restext:2708 | "All players take their Vo..."
   value: 'restext://GoodFrenzyEvent2_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:33891
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:33893
 - type: 'text'
-  # ../en-US.restext:2701 | "A **Yay** vote is a vote ..."
+  # ../en-US.restext:2709 | "A **Yay** vote is a vote ..."
   value: 'restext://GoodFrenzyEvent2_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:33905
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:33906
 - type: 'text'
-  # ../en-US.restext:2702 | "A **Nay** vote is a vote ..."
+  # ../en-US.restext:2710 | "A **Nay** vote is a vote ..."
   value: 'restext://GoodFrenzyEvent2_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:33923
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:33925
 - type: 'text'
-  # ../en-US.restext:366 | "Once all players have cho..."
+  # ../en-US.restext:374 | "Once all players have cho..."
   value: 'restext://Vote_TallyRule_B'
 # ../.source/TheCostofDisease_Eng_v10.cs:33931
 - type: 'break'
@@ -67,7 +67,7 @@ nodes:
   label: 'restext://Click_StartVote'
   content:
   - type: 'text'
-    # ../en-US.restext:370 | "Click on the 'Start Votin..."
+    # ../en-US.restext:378 | "Click on the 'Start Votin..."
     value: 'restext://Voting_Instructions'
   - type: 'break'
     style: 'paragraph'
@@ -78,7 +78,7 @@ nodes:
     style: 'paragraph'
   - type: 'popup'
     layout: 'countdown_action'
-    # ../en-US.restext:371 | "Start Voting"
+    # ../en-US.restext:379 | "Start Voting"
     label: 'restext://Voting_StartButton'
     style: 'countdown-trigger'
     content:

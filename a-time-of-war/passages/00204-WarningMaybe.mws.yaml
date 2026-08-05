@@ -2,27 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: 'WarningMaybe'
-# ../en-US.restext:1774 | "One Last Opportunity"
+# ../en-US.restext:1779 | "One Last Opportunity"
 title: 'restext://WarningMaybe_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:21112
 - type: 'text'
-  # ../en-US.restext:1775 | "In the weeks previous, I ..."
+  # ../en-US.restext:1780 | "In the weeks previous, I ..."
   value: 'restext://WarningMaybe_002'
 # ../.source/ATimeofWar_Eng_v8.cs:21113
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:21115
 - type: 'text'
-  # ../en-US.restext:1776 | "Things were about to chan..."
+  # ../en-US.restext:1781 | "Things were about to chan..."
   value: 'restext://WarningMaybe_003'
 # ../.source/ATimeofWar_Eng_v8.cs:21117
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:21121
 - type: 'text'
-  # ../en-US.restext:1777 | "**WARNING: You will not b..."
+  # ../en-US.restext:1782 | "**WARNING: You will not b..."
   value: 'restext://WarningMaybe_004'
 # ../.source/ATimeofWar_Eng_v8.cs:21128
 - type: 'break'
@@ -33,7 +33,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'Warning2' # ./00056-Warning2.mws.yaml
-  # ../en-US.restext:282 | "Close"
+  # ../en-US.restext:284 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -44,5 +44,5 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:21151
   - type: 'text'
-    # ../en-US.restext:1778 | "Each player may decide to..."
+    # ../en-US.restext:1783 | "Each player may decide to..."
     value: 'restext://WarningMaybe_005'

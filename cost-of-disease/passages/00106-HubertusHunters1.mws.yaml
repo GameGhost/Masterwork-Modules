@@ -13,7 +13,7 @@ nodes:
     target: 'FailedMeeting' # ./00313-FailedMeeting.mws.yaml
 # ../.source/TheCostofDisease_Eng_v10.cs:11579
 - type: 'text'
-  # ../en-US.restext:320 | "**Carefully pick up the s..."
+  # ../en-US.restext:324 | "**Carefully pick up the s..."
   value: 'restext://Storybook_PickUpPrivate_Plain'
 # ../.source/TheCostofDisease_Eng_v10.cs:11582
 - type: 'break'
@@ -23,7 +23,7 @@ nodes:
   # ../en-US.restext:56 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:352 | "Close"
+  # ../en-US.restext:356 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
@@ -40,7 +40,7 @@ nodes:
     expr: 'rand_between(1, 29, "HubertusHunters1_1")'
   # ../.source/TheCostofDisease_Eng_v10.cs:11622
   - type: 'text'
-    # ../en-US.restext:1161 | "**Upon a Secret Meeting -..."
+    # ../en-US.restext:1169 | "**Upon a Secret Meeting -..."
     value: 'restext://HubertusHunters1_001'
     lets:
     - '_rnd_HubertusHunters1_0'
@@ -65,7 +65,7 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:11639
     - type: 'text'
-      # ../en-US.restext:1162 | "amusingly exploitative. T..."
+      # ../en-US.restext:1170 | "amusingly exploitative. T..."
       value: 'restext://HubertusHunters1_004'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:11649

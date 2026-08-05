@@ -2,21 +2,21 @@
 ---
 format: 'mws/0.4'
 passage_id: 'SymposiumSuccess'
-# ../en-US.restext:547 | "Symposium Success"
+# ../en-US.restext:555 | "Symposium Success"
 title: 'restext://SymposiumSuccess_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:3437
 - type: 'let'
   var: '_rnd_SymposiumSuccess_0'
-  # ../en-US.restext:548 | SymposiumSuccess_002 | "strumming a popular tune ..."
-  # ../en-US.restext:549 | SymposiumSuccess_003 | "winding up the gear mecha..."
-  # ../en-US.restext:550 | SymposiumSuccess_004 | "creating a salt circle wi..."
-  # ../en-US.restext:551 | SymposiumSuccess_005 | "exploding a vial of acid ..."
+  # ../en-US.restext:556 | SymposiumSuccess_002 | "strumming a popular tune ..."
+  # ../en-US.restext:557 | SymposiumSuccess_003 | "winding up the gear mecha..."
+  # ../en-US.restext:558 | SymposiumSuccess_004 | "creating a salt circle wi..."
+  # ../en-US.restext:559 | SymposiumSuccess_005 | "exploding a vial of acid ..."
   expr: '["restext://SymposiumSuccess_002", "restext://SymposiumSuccess_003", "restext://SymposiumSuccess_004", "restext://SymposiumSuccess_005"].shuffled("SymposiumSuccess_0")[0]'
 # ../.source/TheCostofDisease_Eng_v10.cs:3432
 - type: 'text'
-  # ../en-US.restext:552 | "\"Eccentric, but certainl..."
+  # ../en-US.restext:560 | "\"Eccentric, but certainl..."
   value: 'restext://SymposiumSuccess_006'
   lets:
   - '_rnd_SymposiumSuccess_0'
@@ -25,14 +25,14 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:3444
 - type: 'text'
-  # ../en-US.restext:553 | "A mixture of befuddled ex..."
+  # ../en-US.restext:561 | "A mixture of befuddled ex..."
   value: 'restext://SymposiumSuccess_007'
 # ../.source/TheCostofDisease_Eng_v10.cs:3447
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:3449
 - type: 'text'
-  # ../en-US.restext:554 | "The Symposium had been a ..."
+  # ../en-US.restext:562 | "The Symposium had been a ..."
   value: 'restext://SymposiumSuccess_008'
 # ../.source/TheCostofDisease_Eng_v10.cs:3451
 - type: 'assign'

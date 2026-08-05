@@ -6,7 +6,7 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:2354
 - type: 'text'
-  # ../en-US.restext:247 | "**Carefully pick up this ..."
+  # ../en-US.restext:249 | "**Carefully pick up this ..."
   value: 'restext://Storybook_PickUpDevicePrivate'
 # ../.source/ATimeofWar_Eng_v8.cs:2357
 - type: 'break'
@@ -16,27 +16,27 @@ nodes:
   # ../en-US.restext:40 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:282 | "Close"
+  # ../en-US.restext:284 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:2378
   - type: 'text'
-    # ../en-US.restext:381 | "The older woman smiled as..."
+    # ../en-US.restext:383 | "The older woman smiled as..."
     value: 'restext://RumorD3_001'
   # ../.source/ATimeofWar_Eng_v8.cs:2380
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:2382
   - type: 'text'
-    # ../en-US.restext:382 | "\"The rumor is that the U..."
+    # ../en-US.restext:384 | "\"The rumor is that the U..."
     value: 'restext://RumorD3_002'
   # ../.source/ATimeofWar_Eng_v8.cs:2384
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:2386
   - type: 'text'
-    # ../en-US.restext:383 | "I was able to interpret h..."
+    # ../en-US.restext:385 | "I was able to interpret h..."
     value: 'restext://RumorD3_003'
   # ../.source/ATimeofWar_Eng_v8.cs:2392
   - type: 'break'
@@ -51,7 +51,7 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:2398
       - type: 'text'
-        # ../en-US.restext:384 | "She continued, \"And if t..."
+        # ../en-US.restext:386 | "She continued, \"And if t..."
         value: 'restext://RumorD3_004'
       # ../.source/ATimeofWar_Eng_v8.cs:2405
       - type: 'break'
@@ -75,14 +75,14 @@ nodes:
 - type: 'switch'
   on: 'warwinner'
   cases:
-  # ../en-US.restext:269 | "Separatists"
+  # ../en-US.restext:271 | "Separatists"
   - match: 'restext://Title_Separatists'
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:2366
     - type: 'assign'
       var: 'mon'
       expr: '"lose"'
-  # ../en-US.restext:279 | "Unified Monarchists"
+  # ../en-US.restext:281 | "Unified Monarchists"
   - match: 'restext://Title_UnifiedMonarchists'
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:2370

@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'MonarchReign2'
-# ../en-US.restext:262 | "Monarchy Reigns"
+# ../en-US.restext:264 | "Monarchy Reigns"
 title: 'restext://Title_MonarchyReigns'
-# ../en-US.restext:260 | "Middle Years"
+# ../en-US.restext:262 | "Middle Years"
 subtitle: 'restext://Title_MiddleYears'
 tags:
 - 'format'
@@ -88,7 +88,7 @@ nodes:
       value: 'restext://Choice_IronFist'
   # ../.source/ATimeofWar_Eng_v8.cs:9102
   - type: 'text'
-    # ../en-US.restext:223 | " decrees will gain **{dec..."
+    # ../en-US.restext:225 | " decrees will gain **{dec..."
     value: 'restext://Reward_DecreesGainDecbonVP_Fragment'
 # ../.source/ATimeofWar_Eng_v8.cs:9116
 - type: 'break'
@@ -101,7 +101,7 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:9128
   - type: 'text'
-    # ../en-US.restext:222 | "At the End of the Generat..."
+    # ../en-US.restext:224 | "At the End of the Generat..."
     value: 'restext://Reward_ClosestToCrownToken_Gain6VP'
 # ../.source/ATimeofWar_Eng_v8.cs:9141
 - type: 'break'
@@ -194,7 +194,7 @@ nodes:
     # ../en-US.restext:31 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
     target: '${advisorcount >= commtrigger ? "CommemorativeStatueEvent" : "MonarchReign3"}' # ./00165-CommemorativeStatueEvent.mws.yaml, ./00069-MonarchReign3.mws.yaml
-    # ../en-US.restext:285 | "End of Round"
+    # ../en-US.restext:287 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -203,10 +203,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:232 | "The Middle Years of the T..."
+      # ../en-US.restext:234 | "The Middle Years of the T..."
       value: 'restext://Round_GenerationIII_MiddleEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:234 | "Then, perform all Start o..."
+      # ../en-US.restext:236 | "Then, perform all Start o..."
       value: 'restext://Round_StartLateYears_Rule'

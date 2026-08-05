@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'UniEvent2-UltimateDisease2'
-# ../en-US.restext:347 | "VOTE OUTCOME"
+# ../en-US.restext:351 | "VOTE OUTCOME"
 title: 'restext://Title_VoteOutcome_Caps'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:34527
 - type: 'text'
-  # ../en-US.restext:2777 | "Tally all votes and the s..."
+  # ../en-US.restext:2785 | "Tally all votes and the s..."
   value: 'restext://UniEvent2_UltimateDisease2_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:34535
 - type: 'break'
@@ -22,7 +22,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:34543
 - type: 'link'
-  # ../en-US.restext:2778 | "Yay. Unleash the Disease!"
+  # ../en-US.restext:2786 | "Yay. Unleash the Disease!"
   label: 'restext://UniEvent2_UltimateDisease2_002'
   target: 'UniEvent2-Success' # ./00205-UniEvent2-Success.mws.yaml
   snapshot: true
@@ -31,7 +31,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:34546
 - type: 'link'
-  # ../en-US.restext:2779 | "Nay. The Disease is not c..."
+  # ../en-US.restext:2787 | "Nay. The Disease is not c..."
   label: 'restext://UniEvent2_UltimateDisease2_003'
   target: 'UniEvent2-Failure' # ./00206-UniEvent2-Failure.mws.yaml
   snapshot: true

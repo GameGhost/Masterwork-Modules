@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Hospital1'
-# ../en-US.restext:346 | "THRIVING IN ADVERSITY"
+# ../en-US.restext:350 | "THRIVING IN ADVERSITY"
 title: 'restext://Title_ThrivingInAdversity'
-# ../en-US.restext:327 | "Early Years"
+# ../en-US.restext:331 | "Early Years"
 subtitle: 'restext://Title_EarlyYears'
 tags:
 - 'HUB'
@@ -21,7 +21,7 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:1835
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:351 | "Accept"
+    # ../en-US.restext:355 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     - type: 'conditional'
@@ -44,12 +44,12 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:1852
       - type: 'text'
-        # ../en-US.restext:394 | "Turn to page 4 of the Vil..."
+        # ../en-US.restext:402 | "Turn to page 4 of the Vil..."
         value: 'restext://Hospital1_003'
       else:
       # ../.source/TheCostofDisease_Eng_v10.cs:1857
       - type: 'text'
-        # ../en-US.restext:393 | "Turn to page 5 of the Vil..."
+        # ../en-US.restext:401 | "Turn to page 5 of the Vil..."
         value: 'restext://Hospital1_002'
     # ../.source/TheCostofDisease_Eng_v10.cs:1863
     - type: 'conditional'
@@ -67,7 +67,7 @@ nodes:
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:1860
     - type: 'text'
-      # ../en-US.restext:395 | "Place the Suspicion marke..."
+      # ../en-US.restext:403 | "Place the Suspicion marke..."
       value: 'restext://Hospital1_004'
     # ../.source/TheCostofDisease_Eng_v10.cs:1875
     - type: 'conditional'
@@ -88,7 +88,7 @@ nodes:
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:1889
     - type: 'text'
-      # ../en-US.restext:396 | "Then, place a {icon:story..."
+      # ../en-US.restext:404 | "Then, place a {icon:story..."
       value: 'restext://Hospital1_007'
     # ../.source/TheCostofDisease_Eng_v10.cs:1899
     - type: 'conditional'
@@ -109,14 +109,14 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:1919
   - type: 'text'
-    # ../en-US.restext:397 | "Due to the efforts of you..."
+    # ../en-US.restext:405 | "Due to the efforts of you..."
     value: 'restext://Hospital1_010'
   # ../.source/TheCostofDisease_Eng_v10.cs:1920
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:1922
   - type: 'text'
-    # ../en-US.restext:398 | "The **first time** you vi..."
+    # ../en-US.restext:406 | "The **first time** you vi..."
     value: 'restext://Hospital1_011'
   # ../.source/TheCostofDisease_Eng_v10.cs:1929
   - type: 'link'
@@ -129,20 +129,20 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:1935
   - type: 'text'
-    # ../en-US.restext:399 | "_(If, for any reason, you..."
+    # ../en-US.restext:407 | "_(If, for any reason, you..."
     value: 'restext://Hospital1_013'
 # ../.source/TheCostofDisease_Eng_v10.cs:1939
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:1943
 - type: 'section'
-  # ../en-US.restext:400 | "**Hospital**"
+  # ../en-US.restext:408 | "**Hospital**"
   title: 'restext://Hospital1_014'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:1951
   - type: 'text'
-    # ../en-US.restext:401 | "For an explanation of the..."
+    # ../en-US.restext:409 | "For an explanation of the..."
     value: 'restext://Hospital1_015'
   # ../.source/TheCostofDisease_Eng_v10.cs:1952
   - type: 'link'
@@ -212,7 +212,7 @@ nodes:
       value: 'restext://Disease_3Experiments_Lead'
     # ../.source/TheCostofDisease_Eng_v10.cs:2017
     - type: 'link'
-      # ../en-US.restext:402 | "click here for a special ..."
+      # ../en-US.restext:410 | "click here for a special ..."
       label: 'restext://Hospital1_024'
       target: 'Trigger3Experiments' # ./00123-Trigger3Experiments.mws.yaml
       snapshot: true
@@ -249,7 +249,7 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:2054
   - type: 'text'
-    # ../en-US.restext:321 | "At the end of the second ..."
+    # ../en-US.restext:325 | "At the end of the second ..."
     value: 'restext://Symposium_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:2068
   - type: 'break'
@@ -260,7 +260,7 @@ nodes:
     # ../en-US.restext:49 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
     target: 'Immortality' # ./00089-Immortality.mws.yaml
-    # ../en-US.restext:356 | "End of Round"
+    # ../en-US.restext:360 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -269,10 +269,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:305 | "The Early Years of the Se..."
+      # ../en-US.restext:309 | "The Early Years of the Se..."
       value: 'restext://Round_GenerationII_EarlyEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:309 | "Then, perform all Start o..."
+      # ../en-US.restext:313 | "Then, perform all Start o..."
       value: 'restext://Round_StartMiddleYears_Rule'

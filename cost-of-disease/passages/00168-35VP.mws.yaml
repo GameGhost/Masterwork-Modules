@@ -6,7 +6,7 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:19354
 - type: 'text'
-  # ../en-US.restext:1492 | "**Carefully hand the Stor..."
+  # ../en-US.restext:1500 | "**Carefully hand the Stor..."
   value: 'restext://_35VP_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:19362
 - type: 'break'
@@ -16,19 +16,19 @@ nodes:
   # ../en-US.restext:56 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:352 | "Close"
+  # ../en-US.restext:356 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:19391
   - type: 'text'
-    # ../en-US.restext:1493 | "**Planned Destruction**"
+    # ../en-US.restext:1501 | "**Planned Destruction**"
     value: 'restext://_35VP_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:19393
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:19394
   - type: 'text'
-    # ../en-US.restext:1494 | "From the letters and jour..."
+    # ../en-US.restext:1502 | "From the letters and jour..."
     value: 'restext://_35VP_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:19395
   - type: 'break'
@@ -41,14 +41,14 @@ nodes:
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:19404
   - type: 'text'
-    # ../en-US.restext:1495 | "**The first player that r..."
+    # ../en-US.restext:1503 | "**The first player that r..."
     value: 'restext://_35VP_005'
   # ../.source/TheCostofDisease_Eng_v10.cs:19406
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:19409
   - type: 'link'
-    # ../en-US.restext:1496 | "Has a Nasty Rumor spread ..."
+    # ../en-US.restext:1504 | "Has a Nasty Rumor spread ..."
     label: 'restext://_35VP_006'
     target: 'Gen1Insanity-Yes2' # ./00303-Gen1Insanity-Yes2.mws.yaml
     snapshot: true
@@ -59,21 +59,21 @@ nodes:
       expr: '"creep"'
   # ../.source/TheCostofDisease_Eng_v10.cs:19410
   - type: 'text'
-    # ../en-US.restext:1497 | " _(They gain 2 {icon:cree..."
+    # ../en-US.restext:1505 | " _(They gain 2 {icon:cree..."
     value: 'restext://_35VP_008'
   # ../.source/TheCostofDisease_Eng_v10.cs:19420
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:19422
   - type: 'text'
-    # ../en-US.restext:357 | "OR"
+    # ../en-US.restext:361 | "OR"
     value: 'restext://UIButton_Or'
   # ../.source/TheCostofDisease_Eng_v10.cs:19423
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:19426
   - type: 'link'
-    # ../en-US.restext:1498 | "Has an unfortunate accident."
+    # ../en-US.restext:1506 | "Has an unfortunate accident."
     label: 'restext://_35VP_010'
     target: 'Gen1Insanity-Yes2' # ./00303-Gen1Insanity-Yes2.mws.yaml
     snapshot: true
@@ -84,5 +84,5 @@ nodes:
       expr: '"vp"'
   # ../.source/TheCostofDisease_Eng_v10.cs:19427
   - type: 'text'
-    # ../en-US.restext:1499 | " _(They immediately lose ..."
+    # ../en-US.restext:1507 | " _(They immediately lose ..."
     value: 'restext://_35VP_012'

@@ -12,27 +12,27 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:5416
   - type: 'text'
-    # ../en-US.restext:575 | "**Victory for the Resistance**"
+    # ../en-US.restext:577 | "**Victory for the Resistance**"
     value: 'restext://ResistEnd_006'
   # ../.source/ATimeofWar_Eng_v8.cs:5418
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:5419
   - type: 'text'
-    # ../en-US.restext:576 | "With **{wardestroy} build..."
+    # ../en-US.restext:578 | "With **{wardestroy} build..."
     value: 'restext://ResistEnd_007'
   # ../.source/ATimeofWar_Eng_v8.cs:5428
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:5430
   - type: 'text'
-    # ../en-US.restext:574 | "It was just as I had plan..."
+    # ../en-US.restext:576 | "It was just as I had plan..."
     value: 'restext://ResistEnd_003'
   # ../.source/ATimeofWar_Eng_v8.cs:5433
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:5435
   - type: 'conditional'
-    # ../en-US.restext:279 | "Unified Monarchists"
+    # ../en-US.restext:281 | "Unified Monarchists"
     if: 'warwinner == "restext://Title_UnifiedMonarchists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:5439
@@ -41,13 +41,13 @@ nodes:
       # ../en-US.restext:27 | "Click here to continue..."
       label: 'restext://Click_ContinueEllipsis_B'
       target: 'PeaceIntro' # ./00042-PeaceIntro.mws.yaml
-      # ../en-US.restext:282 | "Close"
+      # ../en-US.restext:284 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
       content:
       - type: 'let'
         var: 'title'
-        # ../en-US.restext:252 | "End of Generation"
+        # ../en-US.restext:254 | "End of Generation"
         expr: '"restext://Title_EndOfGeneration"'
       - type: 'let'
         var: 'completedRound'
@@ -62,13 +62,13 @@ nodes:
       # ../en-US.restext:27 | "Click here to continue..."
       label: 'restext://Click_ContinueEllipsis_B'
       target: 'MonarchReignIntro' # ./00041-MonarchReignIntro.mws.yaml
-      # ../en-US.restext:282 | "Close"
+      # ../en-US.restext:284 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
       content:
       - type: 'let'
         var: 'title'
-        # ../en-US.restext:252 | "End of Generation"
+        # ../en-US.restext:254 | "End of Generation"
         expr: '"restext://Title_EndOfGeneration"'
       - type: 'let'
         var: 'completedRound'
@@ -79,27 +79,27 @@ nodes:
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:5454
   - type: 'text'
-    # ../en-US.restext:572 | "**Resistance Quashed**"
+    # ../en-US.restext:574 | "**Resistance Quashed**"
     value: 'restext://ResistEnd_001'
   # ../.source/ATimeofWar_Eng_v8.cs:5456
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:5457
   - type: 'text'
-    # ../en-US.restext:573 | "With **so few buildings d..."
+    # ../en-US.restext:575 | "With **so few buildings d..."
     value: 'restext://ResistEnd_002'
   # ../.source/ATimeofWar_Eng_v8.cs:5467
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:5469
   - type: 'text'
-    # ../en-US.restext:574 | "It was just as I had plan..."
+    # ../en-US.restext:576 | "It was just as I had plan..."
     value: 'restext://ResistEnd_003'
   # ../.source/ATimeofWar_Eng_v8.cs:5472
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:5474
   - type: 'conditional'
-    # ../en-US.restext:279 | "Unified Monarchists"
+    # ../en-US.restext:281 | "Unified Monarchists"
     if: 'warwinner == "restext://Title_UnifiedMonarchists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:5478
@@ -108,13 +108,13 @@ nodes:
       # ../en-US.restext:27 | "Click here to continue..."
       label: 'restext://Click_ContinueEllipsis_B'
       target: 'MonarchReignIntro' # ./00041-MonarchReignIntro.mws.yaml
-      # ../en-US.restext:282 | "Close"
+      # ../en-US.restext:284 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
       content:
       - type: 'let'
         var: 'title'
-        # ../en-US.restext:252 | "End of Generation"
+        # ../en-US.restext:254 | "End of Generation"
         expr: '"restext://Title_EndOfGeneration"'
       - type: 'let'
         var: 'completedRound'
@@ -129,13 +129,13 @@ nodes:
       # ../en-US.restext:27 | "Click here to continue..."
       label: 'restext://Click_ContinueEllipsis_B'
       target: 'PeaceIntro' # ./00042-PeaceIntro.mws.yaml
-      # ../en-US.restext:282 | "Close"
+      # ../en-US.restext:284 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
       content:
       - type: 'let'
         var: 'title'
-        # ../en-US.restext:252 | "End of Generation"
+        # ../en-US.restext:254 | "End of Generation"
         expr: '"restext://Title_EndOfGeneration"'
       - type: 'let'
         var: 'completedRound'

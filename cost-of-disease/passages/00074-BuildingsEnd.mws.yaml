@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'BuildingsEnd'
-# ../en-US.restext:908 | "Good or Evil Intent"
+# ../en-US.restext:916 | "Good or Evil Intent"
 title: 'restext://BuildingsEnd_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:8798
 - type: 'text'
-  # ../en-US.restext:909 | "As they entered their twi..."
+  # ../en-US.restext:917 | "As they entered their twi..."
   value: 'restext://BuildingsEnd_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:8800
 - type: 'assign'
@@ -27,7 +27,7 @@ nodes:
     expr: 'goodcount + 1'
   # ../.source/TheCostofDisease_Eng_v10.cs:8805
   - type: 'text'
-    # ../en-US.restext:911 | "The evil activities of th..."
+    # ../en-US.restext:919 | "The evil activities of th..."
     value: 'restext://BuildingsEnd_004'
   # ../.source/TheCostofDisease_Eng_v10.cs:8815
   - type: 'break'
@@ -38,7 +38,7 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:8818
     - type: 'text'
-      # ../en-US.restext:912 | "{nameA} gains 3VP for Exp..."
+      # ../en-US.restext:920 | "{nameA} gains 3VP for Exp..."
       value: 'restext://BuildingsEnd_005'
     # ../.source/TheCostofDisease_Eng_v10.cs:8820
     - type: 'break'
@@ -49,7 +49,7 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:8824
     - type: 'text'
-      # ../en-US.restext:913 | "{nameB} gains 3VP for Exp..."
+      # ../en-US.restext:921 | "{nameB} gains 3VP for Exp..."
       value: 'restext://BuildingsEnd_006'
     # ../.source/TheCostofDisease_Eng_v10.cs:8826
     - type: 'break'
@@ -60,7 +60,7 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:8830
     - type: 'text'
-      # ../en-US.restext:914 | "{nameC} gains 3VP for Exp..."
+      # ../en-US.restext:922 | "{nameC} gains 3VP for Exp..."
       value: 'restext://BuildingsEnd_007'
     # ../.source/TheCostofDisease_Eng_v10.cs:8832
     - type: 'break'
@@ -71,7 +71,7 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:8836
     - type: 'text'
-      # ../en-US.restext:915 | "{nameD} gains 3VP for Exp..."
+      # ../en-US.restext:923 | "{nameD} gains 3VP for Exp..."
       value: 'restext://BuildingsEnd_008'
     # ../.source/TheCostofDisease_Eng_v10.cs:8838
     - type: 'break'
@@ -82,14 +82,14 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:8842
     - type: 'text'
-      # ../en-US.restext:916 | "{nameE} gains 3VP for Exp..."
+      # ../en-US.restext:924 | "{nameE} gains 3VP for Exp..."
       value: 'restext://BuildingsEnd_009'
     # ../.source/TheCostofDisease_Eng_v10.cs:8844
     - type: 'break'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:8849
   - type: 'text'
-    # ../en-US.restext:910 | "The evil activities of th..."
+    # ../en-US.restext:918 | "The evil activities of th..."
     value: 'restext://BuildingsEnd_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:8859
   - type: 'break'
@@ -105,7 +105,7 @@ nodes:
     expr: 'goodcount + 1'
   # ../.source/TheCostofDisease_Eng_v10.cs:8865
   - type: 'text'
-    # ../en-US.restext:918 | "The evil activities of th..."
+    # ../en-US.restext:926 | "The evil activities of th..."
     value: 'restext://BuildingsEnd_011'
   # ../.source/TheCostofDisease_Eng_v10.cs:8875
   - type: 'break'
@@ -116,7 +116,7 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:8878
     - type: 'text'
-      # ../en-US.restext:912 | "{nameA} gains 3VP for Exp..."
+      # ../en-US.restext:920 | "{nameA} gains 3VP for Exp..."
       value: 'restext://BuildingsEnd_005'
     # ../.source/TheCostofDisease_Eng_v10.cs:8880
     - type: 'break'
@@ -127,7 +127,7 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:8884
     - type: 'text'
-      # ../en-US.restext:913 | "{nameB} gains 3VP for Exp..."
+      # ../en-US.restext:921 | "{nameB} gains 3VP for Exp..."
       value: 'restext://BuildingsEnd_006'
     # ../.source/TheCostofDisease_Eng_v10.cs:8886
     - type: 'break'
@@ -138,7 +138,7 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:8890
     - type: 'text'
-      # ../en-US.restext:914 | "{nameC} gains 3VP for Exp..."
+      # ../en-US.restext:922 | "{nameC} gains 3VP for Exp..."
       value: 'restext://BuildingsEnd_007'
     # ../.source/TheCostofDisease_Eng_v10.cs:8892
     - type: 'break'
@@ -149,7 +149,7 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:8896
     - type: 'text'
-      # ../en-US.restext:915 | "{nameD} gains 3VP for Exp..."
+      # ../en-US.restext:923 | "{nameD} gains 3VP for Exp..."
       value: 'restext://BuildingsEnd_008'
     # ../.source/TheCostofDisease_Eng_v10.cs:8898
     - type: 'break'
@@ -160,14 +160,14 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:8902
     - type: 'text'
-      # ../en-US.restext:916 | "{nameE} gains 3VP for Exp..."
+      # ../en-US.restext:924 | "{nameE} gains 3VP for Exp..."
       value: 'restext://BuildingsEnd_009'
     # ../.source/TheCostofDisease_Eng_v10.cs:8904
     - type: 'break'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:8909
   - type: 'text'
-    # ../en-US.restext:917 | "The evil activities of th..."
+    # ../en-US.restext:925 | "The evil activities of th..."
     value: 'restext://BuildingsEnd_010'
   # ../.source/TheCostofDisease_Eng_v10.cs:8919
   - type: 'break'
@@ -183,7 +183,7 @@ nodes:
     expr: 'goodcount + 1'
   # ../.source/TheCostofDisease_Eng_v10.cs:8925
   - type: 'text'
-    # ../en-US.restext:920 | "The evil activities of th..."
+    # ../en-US.restext:928 | "The evil activities of th..."
     value: 'restext://BuildingsEnd_013'
   # ../.source/TheCostofDisease_Eng_v10.cs:8935
   - type: 'break'
@@ -194,7 +194,7 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:8938
     - type: 'text'
-      # ../en-US.restext:912 | "{nameA} gains 3VP for Exp..."
+      # ../en-US.restext:920 | "{nameA} gains 3VP for Exp..."
       value: 'restext://BuildingsEnd_005'
     # ../.source/TheCostofDisease_Eng_v10.cs:8940
     - type: 'break'
@@ -205,7 +205,7 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:8944
     - type: 'text'
-      # ../en-US.restext:913 | "{nameB} gains 3VP for Exp..."
+      # ../en-US.restext:921 | "{nameB} gains 3VP for Exp..."
       value: 'restext://BuildingsEnd_006'
     # ../.source/TheCostofDisease_Eng_v10.cs:8946
     - type: 'break'
@@ -216,7 +216,7 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:8950
     - type: 'text'
-      # ../en-US.restext:914 | "{nameC} gains 3VP for Exp..."
+      # ../en-US.restext:922 | "{nameC} gains 3VP for Exp..."
       value: 'restext://BuildingsEnd_007'
     # ../.source/TheCostofDisease_Eng_v10.cs:8952
     - type: 'break'
@@ -227,7 +227,7 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:8956
     - type: 'text'
-      # ../en-US.restext:915 | "{nameD} gains 3VP for Exp..."
+      # ../en-US.restext:923 | "{nameD} gains 3VP for Exp..."
       value: 'restext://BuildingsEnd_008'
     # ../.source/TheCostofDisease_Eng_v10.cs:8958
     - type: 'break'
@@ -238,14 +238,14 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:8962
     - type: 'text'
-      # ../en-US.restext:916 | "{nameE} gains 3VP for Exp..."
+      # ../en-US.restext:924 | "{nameE} gains 3VP for Exp..."
       value: 'restext://BuildingsEnd_009'
     # ../.source/TheCostofDisease_Eng_v10.cs:8964
     - type: 'break'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:8969
   - type: 'text'
-    # ../en-US.restext:919 | "The evil activities of th..."
+    # ../en-US.restext:927 | "The evil activities of th..."
     value: 'restext://BuildingsEnd_012'
   # ../.source/TheCostofDisease_Eng_v10.cs:8979
   - type: 'break'

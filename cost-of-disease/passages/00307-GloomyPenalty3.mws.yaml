@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'GloomyPenalty3'
-# ../en-US.restext:331 | "The Hunter's Tax"
+# ../en-US.restext:335 | "The Hunter's Tax"
 title: 'restext://Title_HuntersTax'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:31760
 - type: 'text'
-  # ../en-US.restext:2517 | "Even in their final years..."
+  # ../en-US.restext:2525 | "Even in their final years..."
   value: 'restext://GloomyPenalty3_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:31762
 - type: 'break'
@@ -19,7 +19,7 @@ nodes:
   # ../en-US.restext:44 | "Click to continue to Fina..."
   label: 'restext://Click_ContinueToFinalScoring'
   target: 'Scoring' # ./00013-Scoring.mws.yaml
-  # ../en-US.restext:352 | "Close"
+  # ../en-US.restext:356 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:

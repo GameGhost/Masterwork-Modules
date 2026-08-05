@@ -7,15 +7,15 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:28780
 - type: 'let'
   var: '_rnd_HuntSuccess1_0'
-  # ../en-US.restext:2322 | HuntSuccess1_001 | "Majestic"
+  # ../en-US.restext:2330 | HuntSuccess1_001 | "Majestic"
   # ../en-US.restext:211 | Masterwork_Adjective_Stunning | "Stunning"
-  # ../en-US.restext:2323 | HuntSuccess1_002 | "Grand"
+  # ../en-US.restext:2331 | HuntSuccess1_002 | "Grand"
   # ../en-US.restext:207 | Masterwork_Adjective_Monumental | "Monumental"
-  # ../en-US.restext:2324 | HuntSuccess1_003 | "Extraordinary"
+  # ../en-US.restext:2332 | HuntSuccess1_003 | "Extraordinary"
   expr: '["restext://HuntSuccess1_001", "restext://Masterwork_Adjective_Stunning", "restext://HuntSuccess1_002", "restext://Masterwork_Adjective_Monumental", "restext://HuntSuccess1_003"].shuffled("HuntSuccess1_0")[0]'
 # ../.source/TheCostofDisease_Eng_v10.cs:28780
 - type: 'text'
-  # ../en-US.restext:2325 | "**{_rnd_HuntSuccess1_0} S..."
+  # ../en-US.restext:2333 | "**{_rnd_HuntSuccess1_0} S..."
   value: 'restext://HuntSuccess1_004'
   lets:
   - '_rnd_HuntSuccess1_0'
@@ -26,16 +26,16 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:28791
 - type: 'let'
   var: '_rnd_HuntSuccess1_1'
-  # ../en-US.restext:2326 | HuntSuccess1_005 | "loud shriek"
-  # ../en-US.restext:2327 | HuntSuccess1_006 | "low, rumbling growl"
-  # ../en-US.restext:2328 | HuntSuccess1_007 | "strained gasp for air"
+  # ../en-US.restext:2334 | HuntSuccess1_005 | "loud shriek"
+  # ../en-US.restext:2335 | HuntSuccess1_006 | "low, rumbling growl"
+  # ../en-US.restext:2336 | HuntSuccess1_007 | "strained gasp for air"
   expr: '["restext://HuntSuccess1_005", "restext://HuntSuccess1_006", "restext://HuntSuccess1_007"].shuffled("HuntSuccess1_1")[0]'
 # ../.source/TheCostofDisease_Eng_v10.cs:28784
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:28787
 - type: 'text'
-  # ../en-US.restext:2329 | "The foul {huntbeast} emit..."
+  # ../en-US.restext:2337 | "The foul {huntbeast} emit..."
   value: 'restext://HuntSuccess1_008'
   lets:
   - '_rnd_HuntSuccess1_1'
@@ -48,7 +48,7 @@ nodes:
   # ../en-US.restext:39 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 13 ? "Prosperity2" : "HuntSuccessCheck"}' # ./00120-Prosperity2.mws.yaml, ./00317-HuntSuccessCheck.mws.yaml
-  # ../en-US.restext:352 | "Close"
+  # ../en-US.restext:356 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -60,13 +60,13 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:28831
   - type: 'let'
     var: '_rnd_HuntSuccess1_0'
-    # ../en-US.restext:2330 | HuntSuccess1_009 | "2VP"
-    # ../en-US.restext:2331 | HuntSuccess1_010 | "3VP"
-    # ../en-US.restext:2332 | HuntSuccess1_011 | "a Knowledge of your choice"
+    # ../en-US.restext:2338 | HuntSuccess1_009 | "2VP"
+    # ../en-US.restext:2339 | HuntSuccess1_010 | "3VP"
+    # ../en-US.restext:2340 | HuntSuccess1_011 | "a Knowledge of your choice"
     expr: '["restext://HuntSuccess1_009", "restext://HuntSuccess1_010", "restext://HuntSuccess1_011"].shuffled("HuntSuccess1_2")[0]'
   # ../.source/TheCostofDisease_Eng_v10.cs:28819
   - type: 'text'
-    # ../en-US.restext:2333 | "Each player participating..."
+    # ../en-US.restext:2341 | "Each player participating..."
     value: 'restext://HuntSuccess1_012'
     lets:
     - '_rnd_HuntSuccess1_0'

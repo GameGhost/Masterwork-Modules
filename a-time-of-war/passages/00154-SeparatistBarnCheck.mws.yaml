@@ -6,7 +6,7 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:16914
 - type: 'conditional'
-  # ../en-US.restext:269 | "Separatists"
+  # ../en-US.restext:271 | "Separatists"
   if: 'warloser == "restext://Title_Separatists"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:16916
@@ -21,7 +21,7 @@ nodes:
     - type: 'break'
     # ../.source/ATimeofWar_Eng_v8.cs:16923
     - type: 'text'
-      # ../en-US.restext:1384 | "The Separatists were furi..."
+      # ../en-US.restext:1389 | "The Separatists were furi..."
       value: 'restext://SeparatistBarnCheck_001'
     # ../.source/ATimeofWar_Eng_v8.cs:16924
     - type: 'break'
@@ -32,7 +32,7 @@ nodes:
       # ../en-US.restext:28 | "Click to continue..."
       label: 'restext://Click_ContinueEllipsis_C'
       target: 'PeaceWar' # ./00239-PeaceWar.mws.yaml
-      # ../en-US.restext:282 | "Close"
+      # ../en-US.restext:284 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
       header:
@@ -43,7 +43,7 @@ nodes:
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:16955
       - type: 'text'
-        # ../en-US.restext:1385 | "**The player with the \"S..."
+        # ../en-US.restext:1390 | "**The player with the \"S..."
         value: 'restext://SeparatistBarnCheck_002'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:16932

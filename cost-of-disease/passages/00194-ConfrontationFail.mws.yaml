@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ConfrontationFail'
-# ../en-US.restext:1722 | "A Hero's Welcome"
+# ../en-US.restext:1730 | "A Hero's Welcome"
 title: 'restext://ConfrontationFail_001'
 layout: 'narration'
 nodes:
@@ -13,34 +13,34 @@ nodes:
   expr: '"restext://Choice_Yes_Lower"'
 # ../.source/TheCostofDisease_Eng_v10.cs:22287
 - type: 'text'
-  # ../en-US.restext:1723 | "The Hunters return relati..."
+  # ../en-US.restext:1731 | "The Hunters return relati..."
   value: 'restext://ConfrontationFail_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:22288
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:22290
 - type: 'text'
-  # ../en-US.restext:1724 | "For a family that until n..."
+  # ../en-US.restext:1732 | "For a family that until n..."
   value: 'restext://ConfrontationFail_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:22294
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:22298
 - type: 'text'
-  # ../en-US.restext:1725 | "**Experimental Bonus**"
+  # ../en-US.restext:1733 | "**Experimental Bonus**"
   value: 'restext://ConfrontationFail_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:22300
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:22301
 - type: 'text'
-  # ../en-US.restext:1726 | "The player(s) who contrib..."
+  # ../en-US.restext:1734 | "The player(s) who contrib..."
   value: 'restext://ConfrontationFail_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:22311
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:22313
 - type: 'text'
-  # ../en-US.restext:1727 | "All contributed Experimen..."
+  # ../en-US.restext:1735 | "All contributed Experimen..."
   value: 'restext://ConfrontationFail_006'
 # ../.source/TheCostofDisease_Eng_v10.cs:22314
 - type: 'break'
@@ -51,7 +51,7 @@ nodes:
   # ../en-US.restext:39 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'GloomyGothic3' # ./00173-GloomyGothic3.mws.yaml
-  # ../en-US.restext:352 | "Close"
+  # ../en-US.restext:356 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -66,7 +66,7 @@ nodes:
     expr: 'rand_between(2, 3, "ConfrontationFail_0")'
   # ../.source/TheCostofDisease_Eng_v10.cs:22335
   - type: 'text'
-    # ../en-US.restext:1728 | "Move the {icon:angrymob_i..."
+    # ../en-US.restext:1736 | "Move the {icon:angrymob_i..."
     value: 'restext://ConfrontationFail_007'
     lets:
     - '_rnd_ConfrontationFail_0'
@@ -75,30 +75,30 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:22346
   - type: 'text'
-    # ../en-US.restext:1729 | "**ALL players must choose..."
+    # ../en-US.restext:1737 | "**ALL players must choose..."
     value: 'restext://ConfrontationFail_008'
   # ../.source/TheCostofDisease_Eng_v10.cs:22348
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:22349
   - type: 'text'
-    # ../en-US.restext:1730 | "Pay $3."
+    # ../en-US.restext:1738 | "Pay $3."
     value: 'restext://ConfrontationFail_009'
   # ../.source/TheCostofDisease_Eng_v10.cs:22350
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:22351
   - type: 'text'
-    # ../en-US.restext:1731 | "Return 3 resources to the..."
+    # ../en-US.restext:1739 | "Return 3 resources to the..."
     value: 'restext://ConfrontationFail_010'
   # ../.source/TheCostofDisease_Eng_v10.cs:22352
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:22353
   - type: 'text'
-    # ../en-US.restext:1732 | "Discard 2 Estate Upgrades."
+    # ../en-US.restext:1740 | "Discard 2 Estate Upgrades."
     value: 'restext://ConfrontationFail_011'
   # ../.source/TheCostofDisease_Eng_v10.cs:22354
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:22358
   - type: 'text'
-    # ../en-US.restext:1733 | "_If this is not possible,..."
+    # ../en-US.restext:1741 | "_If this is not possible,..."
     value: 'restext://ConfrontationFail_012'

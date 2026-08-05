@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'NoUni2'
-# ../en-US.restext:344 | "THE CRAWL"
+# ../en-US.restext:348 | "THE CRAWL"
 title: 'restext://Title_TheCrawl'
-# ../en-US.restext:334 | "Middle Years"
+# ../en-US.restext:338 | "Middle Years"
 subtitle: 'restext://Title_MiddleYears'
 tags:
 - 'HUB'
@@ -92,24 +92,24 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5306
   - type: 'text'
-    # ../en-US.restext:296 | "At the end of each round,..."
+    # ../en-US.restext:299 | "At the end of each round,..."
     value: 'restext://Resource_KnowledgeMovesCreepyTrack_Rule'
 # ../.source/TheCostofDisease_Eng_v10.cs:5316
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:5320
 - type: 'section'
-  # ../en-US.restext:636 | "{icon:storybook} **Second..."
+  # ../en-US.restext:644 | "{icon:storybook} **Second..."
   title: 'restext://NoUni2_001'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5332
   - type: 'popup'
     layout: 'end_of_round'
-    # ../en-US.restext:637 | "Click here at the end of ..."
+    # ../en-US.restext:645 | "Click here at the end of ..."
     label: 'restext://NoUni2_002'
     target: 'roundEndKnowledge' # ./00261-roundEndKnowledge.mws.yaml
-    # ../en-US.restext:356 | "End of Round"
+    # ../en-US.restext:360 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -118,10 +118,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:304 | "The Middle Years of the T..."
+      # ../en-US.restext:308 | "The Middle Years of the T..."
       value: 'restext://Round_GenerationIII_MiddleEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:308 | "Then, perform all Start o..."
+      # ../en-US.restext:312 | "Then, perform all Start o..."
       value: 'restext://Round_StartLateYears_Rule'

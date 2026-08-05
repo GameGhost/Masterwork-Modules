@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'FigureontheTrackInb'
-# ../en-US.restext:1737 | "A Legacy of Intrigue"
+# ../en-US.restext:1742 | "A Legacy of Intrigue"
 title: 'restext://FigureontheTrackInb_001'
 layout: 'narration'
 nodes:
@@ -15,21 +15,21 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:20731
 - type: 'text'
-  # ../en-US.restext:1738 | "The {figure} I so oblivio..."
+  # ../en-US.restext:1743 | "The {figure} I so oblivio..."
   value: 'restext://FigureontheTrackInb_002'
 # ../.source/ATimeofWar_Eng_v8.cs:20737
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:20739
 - type: 'text'
-  # ../en-US.restext:1739 | "However, I soon discovere..."
+  # ../en-US.restext:1744 | "However, I soon discovere..."
   value: 'restext://FigureontheTrackInb_003'
 # ../.source/ATimeofWar_Eng_v8.cs:20740
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:20742
 - type: 'text'
-  # ../en-US.restext:1740 | "Although I could not with..."
+  # ../en-US.restext:1745 | "Although I could not with..."
   value: 'restext://FigureontheTrackInb_004'
 # ../.source/ATimeofWar_Eng_v8.cs:20743
 - type: 'break'
@@ -40,7 +40,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'Late2ResA' # ./00195-Late2ResA.mws.yaml
-  # ../en-US.restext:282 | "Close"
+  # ../en-US.restext:284 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -57,7 +57,7 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:20767
   - type: 'text'
-    # ../en-US.restext:1741 | "Remove the Suspicion Mark..."
+    # ../en-US.restext:1746 | "Remove the Suspicion Mark..."
     value: 'restext://FigureontheTrackInb_005'
   # ../.source/ATimeofWar_Eng_v8.cs:20786
   - type: 'break'
@@ -68,17 +68,17 @@ nodes:
     value: 'restext://Directive_FirstTimeReachesFigureToken_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:20797
   - type: 'conditional'
-    # ../en-US.restext:279 | "Unified Monarchists"
+    # ../en-US.restext:281 | "Unified Monarchists"
     if: 'warwinner == "restext://Title_UnifiedMonarchists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:20799
     - type: 'text'
-      # ../en-US.restext:227 | "**they may immediately bu..."
+      # ../en-US.restext:229 | "**they may immediately bu..."
       value: 'restext://Reward_MayBuildVanityEstateUpgrade'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:20803
     - type: 'text'
-      # ../en-US.restext:228 | "**they may immediately ta..."
+      # ../en-US.restext:230 | "**they may immediately ta..."
       value: 'restext://Reward_MayTakePerformExperimentAction'
   # ../.source/ATimeofWar_Eng_v8.cs:20806
   - type: 'text'

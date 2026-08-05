@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'BusThanks'
-# ../en-US.restext:1435 | "Thanks Are In Order"
+# ../en-US.restext:1442 | "Thanks Are In Order"
 title: 'restext://BusThanks_001'
 layout: 'narration'
 nodes:
@@ -15,14 +15,14 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:18810
 - type: 'text'
-  # ../en-US.restext:1436 | "The old man stood abruptl..."
+  # ../en-US.restext:1443 | "The old man stood abruptl..."
   value: 'restext://BusThanks_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:18812
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:18814
 - type: 'text'
-  # ../en-US.restext:1437 | "\"Thank you for your cont..."
+  # ../en-US.restext:1444 | "\"Thank you for your cont..."
   value: 'restext://BusThanks_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:18815
 - type: 'conditional'
@@ -30,26 +30,26 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:18817
   - type: 'text'
-    # ../en-US.restext:1440 | "Now, if you'll excuse me,..."
+    # ../en-US.restext:1447 | "Now, if you'll excuse me,..."
     value: 'restext://BusThanks_006'
   # ../.source/FearoftheUnknown_Eng_v15.cs:18819
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:18821
   - type: 'text'
-    # ../en-US.restext:1441 | "I was offered a pastry an..."
+    # ../en-US.restext:1448 | "I was offered a pastry an..."
     value: 'restext://BusThanks_007'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:18825
   - type: 'text'
-    # ../en-US.restext:1438 | "But, if you'll indulge me..."
+    # ../en-US.restext:1445 | "But, if you'll indulge me..."
     value: 'restext://BusThanks_004'
   # ../.source/FearoftheUnknown_Eng_v15.cs:18826
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:18828
   - type: 'text'
-    # ../en-US.restext:1439 | "The old man then smiled i..."
+    # ../en-US.restext:1446 | "The old man then smiled i..."
     value: 'restext://BusThanks_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:18832
 - type: 'assign'
@@ -80,7 +80,7 @@ nodes:
       content:
       # ../.source/FearoftheUnknown_Eng_v15.cs:18881
       - type: 'text'
-        # ../en-US.restext:1442 | "Immediately gain the **Ba..."
+        # ../en-US.restext:1449 | "Immediately gain the **Ba..."
         value: 'restext://BusThanks_008'
       # ../.source/FearoftheUnknown_Eng_v15.cs:18887
       - type: 'break'
@@ -95,7 +95,7 @@ nodes:
           expr: 'rand_between(2, 3, "BusThanks_0")'
         # ../.source/FearoftheUnknown_Eng_v15.cs:18893
         - type: 'text'
-          # ../en-US.restext:1443 | "**Immediately gain {_rnd_..."
+          # ../en-US.restext:1450 | "**Immediately gain {_rnd_..."
           value: 'restext://BusThanks_009'
           lets:
           - '_rnd_BusThanks_0'
@@ -122,7 +122,7 @@ nodes:
         expr: 'rand_between(2, 3, "BusThanks_1")'
       # ../.source/FearoftheUnknown_Eng_v15.cs:18923
       - type: 'text'
-        # ../en-US.restext:1443 | "**Immediately gain {_rnd_..."
+        # ../en-US.restext:1450 | "**Immediately gain {_rnd_..."
         value: 'restext://BusThanks_009'
         lets:
         - '_rnd_BusThanks_0'

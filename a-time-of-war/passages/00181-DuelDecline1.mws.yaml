@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'DuelDecline1'
-# ../en-US.restext:1599 | "Letter of Apology"
+# ../en-US.restext:1604 | "Letter of Apology"
 title: 'restext://DuelDecline1_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:19356
 - type: 'text'
-  # ../en-US.restext:1600 | "While my dear cousin was ..."
+  # ../en-US.restext:1605 | "While my dear cousin was ..."
   value: 'restext://DuelDecline1_002'
 # ../.source/ATimeofWar_Eng_v8.cs:19359
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:19361
 - type: 'text'
-  # ../en-US.restext:1601 | "I chose to be the greater..."
+  # ../en-US.restext:1606 | "I chose to be the greater..."
   value: 'restext://DuelDecline1_003'
 # ../.source/ATimeofWar_Eng_v8.cs:19362
 - type: 'break'
@@ -26,7 +26,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 7 ? "Martia1Pre2" : "MartialPre3"}' # ./00294-Martia1Pre2.mws.yaml, ./00295-MartialPre3.mws.yaml
-  # ../en-US.restext:282 | "Close"
+  # ../en-US.restext:284 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -37,5 +37,5 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:19382
   - type: 'text'
-    # ../en-US.restext:1602 | "{playersabotage1} gains *..."
+    # ../en-US.restext:1607 | "{playersabotage1} gains *..."
     value: 'restext://DuelDecline1_004'

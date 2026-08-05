@@ -17,7 +17,7 @@ nodes:
   - type: 'text'
     # ../en-US.restext:67 | "Do NOT perform the End of..."
     value: 'restext://Directive_DoNotPerformEndOfRoundYet'
-  # ../en-US.restext:281 | "Accept"
+  # ../en-US.restext:283 | "Accept"
   okay: 'restext://UIButton_Accept'
   target: "${warwinner == \"Unified Monarchists\" ? rumor2 == \"visited\" ? \"AMessenger2\" : \"AfternoonTea\" :\r\n            wardestroy == 1 ? \"ATOWSabotageIntro2Sep\" : \"ATOWSabotageIntro2\"}" # ./00033-AMessenger2.mws.yaml, ./00134-AfternoonTea.mws.yaml, ./00210-ATOWSabotageIntro2Sep.mws.yaml, ./00206-ATOWSabotageIntro2.mws.yaml
   snapshot: true

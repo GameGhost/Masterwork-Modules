@@ -571,6 +571,8 @@ PrivatizedIntro_005=News of the day: The Asylum Project, which I believe was mis
 PrivatizedIntro_006=And I — I am doing well. It disconcerts me. My studies continue with great passion that consumes me more than anything I have ever known. Even the dismal fog that looms across this bleak valley fills me with a solemn peace. Yet it is that same calm which causes my unease.
 PrivatizedIntro_007=I must work quickly, as I feel something unseen watches, waiting to emerge from the shadows. I cannot have destiny torn from my grasp just when I reach the pinnacle!
 PrivatizedIntro_009=The Bloodsmith
+PrivatizedIntro_011=Lose 5VP
+PrivatizedIntro_012=Discard a Vanity Estate Upgrade from your Estate if possible.
 
 # passages/00024-LiberalIntro.mws.yaml
 LiberalIntro_001=GENERATION III: Acceptance
@@ -1005,6 +1007,9 @@ SmugEventA_015=**WARNING: COMPLETING THIS EXPERIMENT WILL DEFINITELY DESTROY CIT
 
 # passages/00090-SmugConsequence.mws.yaml
 SmugConsequence_001=Consequences of Smuggling
+SmugConsequence_002=This fortified district offers little in the way of investment, so I'm afraid to admit that I have begun a partnership with the local shipping company. What it lacks in potential, I believe it makes up for in expediency. I swear to you my visits there are brief and lawful, for I am as always a dutiful citizen.
+SmugConsequence_003=What is this place? It is certainly not much from the exterior, but considering the locale, I have very little choice in the matter. It provides me access to goods otherwise inaccessible, and while the stench is sometimes severe - both of the building and its inhabitants - this is all I require.
+SmugConsequence_004=I ask you to disregard the rumors that I have merely invested capital into this venture to gain illicit produce. It is a humble shipping dock and my visits during the evening are simply to assess matters of inventory. I take offense to any suggestions otherwise.
 SmugConsequence_005=**Please choose your name and add it to the ledger:**
 
 # passages/00091-S4Con2A.mws.yaml
@@ -1234,6 +1239,8 @@ NOTEforthissection_034=For Respect
 
 # passages/00120-Guilt.mws.yaml
 Guilt_001=Wracked with Guilt
+Guilt_002=Creating life against my will only to feed the urges of a hideous fiend? Am I forced to forever suffer for the sins of my family? What good can come from aiding the devil's work?
+Guilt_003=I curse my grandfather for thrusting this abomination into the world and dooming us to accommodate its unnatural wants. Oh, how the sorrow encompasses me!
 Guilt_004=The experiment is complete, but I cannot bear to look upon it! What foul work! I have remained in my bedchamber for weeks in a wretched state of remorse. But, when I emerge from my infernal cocoon of solitude, I will rip that cursed page from my journal and throw it hence into the fireplace.
 Guilt_005=**Move backwards 1 space on a Journal Track of your choice.** _If this movement would cause you to move from Level 3 to Level 2, you must return a Vanity Upgrade you have built to the supply. If you cannot move backwards any spaces, lose 4VP._
 Guilt_006=Then, collect the card and keep it face-up in your play area as a completed Experiment.
@@ -1541,6 +1548,13 @@ AsylumTreatmentB_010=Speaks obsessively about their legacy becoming tarnished by
 AsylumTreatmentB_011=Lashed out physically against another patient after they attempted to touch them.
 AsylumTreatmentB_012=Along with manic episodes, this comorbidity of afflictions makes diagnosis a difficult task.
 AsylumTreatmentB_013={_rnd_AsylumTreatmentB_2} {_rnd_AsylumTreatmentB_3}
+AsylumTreatmentB_014=Repeated complaints about being misunderstood.
+AsylumTreatmentB_015=Demands to be transferred to an asylum of actual repute.
+AsylumTreatmentB_016=Idle threats to crush 'this infantile institution into dust' whilst emphasizing each word with a pounding of their fist.
+AsylumTreatmentB_017=Initial evaluation inconclusive and will require further examination to determine the extent of disorders.
+AsylumTreatmentB_018=Subdued and set to physical restraints after several attempts to flee the premises.
+AsylumTreatmentB_019=Assessment remains ongoing. Possible mental instability.
+AsylumTreatmentB_020=Patient's behavior is erratic, yet relatively harmless. Continued evaluation suggested
 AsylumTreatmentB_021=Director 
 AsylumTreatmentB_022=Vlad 
 AsylumTreatmentB_023=intervened.
@@ -1584,6 +1598,8 @@ ProperLetterHeading_009=The {townname} {_rnd_ProperLetterHeading_0}
 ProperLetterHeading_010=**Letters of Note -** _Roderick, Tenderson - June 1831._
 ProperLetterHeading_011=**{randomname}'s Journal -** _14 July, 1831._
 ProperLetterHeading_012=**Letter from** **{randomname} -** _September, 1839. Romania._
+ProperLetterHeading_013=Journal Entry -
+ProperLetterHeading_014=Journal of
 ProperLetterHeading_015=Transitional
 ProperLetterHeading_016=**Friendly Correspondence -** _Stoker, Victoria - March 1863._
 ProperLetterHeading_017=**Journal of** **{randomname} -** _August 1901._
@@ -1721,6 +1737,8 @@ CreaturePleased_005=All players' remaining debts to **the Count** are removed.
 # passages/00202-PlotPlayerCheckin.mws.yaml
 PlotPlayerCheckin_001=The Mob Moves In
 PlotPlayerCheckin_002=**Journal Entry -** _name and date illegible_
+PlotPlayerCheckin_003=Another night of fitful sleep.
+PlotPlayerCheckin_004=My unending spirit of invention, it once again leads the ignorant to my doorstep.
 PlotPlayerCheckin_005=Last evening they congregated outside my gates, pitchforks and torches raised with aims to forcefully remove me from my own home. Had I not released the hounds to snap and gnaw at their efforts, their attempt may have been successful. Oh, why do they despise me so?
 PlotPlayerCheckin_006=**Please choose the name of the overtaken player:**
 
@@ -1728,6 +1746,8 @@ PlotPlayerCheckin_006=**Please choose the name of the overtaken player:**
 GainFamilyPlot_001=A Separate Plot
 GainFamilyPlot_002=**Letter from {tempplot} -** 
 GainFamilyPlot_003=You have seen how they stare; how they accuse me without evidence or precedent. Well, I have tolerated their angry mobs and frontier justice for far too long!
+GainFamilyPlot_004=I have planned for a grave plot to be installed upon the estate grounds to keep my remains from being contaminated in death by those who never accepted me in life. Yes, I take full responsibility for the rift this will cause between myself and the whole superstitious lot. Damn those insufferable peons!
+GainFamilyPlot_005=I refuse to mend bridges built between myself and these simpletons. Why would I risk the inevitable defilement of our esteemed heritage in a public cemetery? My family will be buried upon my own lands by my own terms! I deserve to rest in peace while they deserve to rot in a hell of their own creation!
 GainFamilyPlot_006=**At the End of the Generation, you will gain the Family Plot Upgrade.**
 
 # passages/00204-HELPING.mws.yaml
@@ -1795,11 +1815,17 @@ FOTU_End2_006=The rest of the world may be unaware of my family's work, but that
 # passages/00211-IsoIdentificationSignIn.mws.yaml
 IsoIdentificationSignIn_001=Citizenship Inspection
 IsoIdentificationSignIn_002=**Journal Entry:** _name illegible -_ 
+IsoIdentificationSignIn_003=Inspection day: Wore newest overcoat, but received no compliment from the reprobates attending the door. At least the security was lax enough that I was given no physical inspection upon entering the ramshackle government office.
+IsoIdentificationSignIn_004=Dismal afternoon - overcast with a dreadful scud blanketing the town in grayness. When I arrived at the Town Hall for the scheduled inspection, I could only shake my head at the single individual in a recently re-stitched military uniform left-over from the 18th Century, sleeping at his post by the wooden double-doors. I decided to enter without rousing him to avoid investing any more time in my visit.
 IsoIdentificationSignIn_005=**Please choose which player visited the Town Hall:**
 
 # passages/00212-IsoIdentification.mws.yaml
 IsoIdentification_001=Verification Completed
 IsoIdentification_002=**Journal of {tempid} -** 
+IsoIdentification_003=Shoddy. Regrettable. The Town Hall was all cobwebs and cracked plaster, with a set of ancient benches with black mold along the bases. The musty offices where I was to confirm my existence were in no better condition.
+IsoIdentification_004=I received no cordial greeting. I received no additional bonus for my willingness to betray my own morals and submit to this oppressive occupation. I barely received the pleasantries of a greeting aside from a disinterested grunt from a sack-suited barrister loitering in the periphery. A clerk bid me sit with a handwave and it was an hour before the person handling my paperwork appeared.
+IsoIdentification_005=Like a mangy hound, I was summarily dismissed and sent away after a brief glance at my papers and a lengthy interrogation. The officer in question was obviously less intent on law enforcement and more prone to surveying one's character with his eyes.
+IsoIdentification_006=The interrogation was lengthy and lasted into the early evening. The individual in charge of my case had apparently been relishing the opportunity to 'nail me to the wall' as it were, and when my answers proved adequate and level-headed, the line of questioning became more aggressive. Did he think me a fool?
 IsoIdentification_007=After an extended time, I was reluctantly approved. I bundled up my papers and my wits and beat a quick path to my hansom, where the horses stamped at my approach and appeared to be just as keen as I was to leave this wretched place.
 
 # passages/00213-SmugEvent2ACont.mws.yaml
@@ -1989,6 +2015,9 @@ PrivateRewardSignIn_003=I have indulged my darker side, pressed forward beyond m
 # passages/00234-JunkPalaceSignIn.mws.yaml
 JunkPalaceSignIn_001=A Palace of Scraps
 JunkPalaceSignIn_002=**Letter from** _name illegible_
+JunkPalaceSignIn_003=Let me tell you of the day I ventured to the center of {townname} and met with {warden}. Though I will spare you the gory details of the horrors I witnessed upon my arrival.
+JunkPalaceSignIn_004=The grounds of the old jail appeared even more imposing than they had been when the inmates were enclosed inside its iron walls. I made sure that my visit was brief, but with delinquent eyes upon me and obscene messages written on the walls in crude scarlet streaks, it was certainly not made short enough.
+JunkPalaceSignIn_005=As I arrived at the steps of the Junk Palace, I was greeted by a rough guard wearing an apron fashioned with protective scraps of steel. 'Nice to meat you,' the man who introduced himself as 'Grinder' said. 'I have no beef with you.' And so I gained entrance to this decaying institution where the walls fall to pieces and metal springs from the Earth.
 
 # passages/00235-JunkPalaceMeet1.mws.yaml
 JunkPalaceMeet1_001=The Meeting at the Junk Palace
@@ -2073,6 +2102,8 @@ AsylumComplete_006={tempas} loses **1VP** _and has wasted everyone's time._
 # passages/00246-BusinessMeetb.mws.yaml
 BusinessMeetb_001=A Sly Investment
 BusinessMeetb_002=**Journal Entry of {busm} -** 
+BusinessMeetb_003=The Count and what appeared to be several visitors sharing similar, friendly, yet distant demeanors urged me towards a sumptuous banquet table arranged as if my presence had been expected that very evening. I dined upon portions of creamed pheasant, black puddings, ostropel, and a healthy share of plum brandy. The food was so varied and rich that I was surprised that when the courses waned a hunger still remained with me.
+BusinessMeetb_004=The Count's attendant ushered me into the study, where the gentleman relaxed in a daychair sipping from a glass full of deep red wine. He bid me sit and we talked for many minutes as I observed the mahogany shelves that lined the room, overloaded with books that appeared so new the spines had not been cracked.
 BusinessMeetb_005=At length, the Count brought up the business at hand. "I enjoy tradition. Unlike the wiles of modern philosophies which sway in and out of vogue, I believe that investment should be based not solely on the kindness of one's heart and a vague promise, but on real trade. I gain some thing, you gain some thing."
 BusinessMeetb_006=He ventured that he had an offer that would intrigue me.
 
@@ -2250,6 +2281,8 @@ EndtotheCount_002=**A Cryptic Letter -** _Count._
 EndtotheCount_003=Due to recent events which have wrecked my investments and coated this village in a grimy filth, I find myself unable to procure fresh blood, as it were. With the region so tainted, I must renounce my involvement in the proceedings. I feel a deep regret at the suddenness of my departure, but my services are needed elsewhere.
 EndtotheCount_004=Love and Sincere Thanks,
 EndtotheCount_005=Vlad III
+EndtotheCount_006=There is no bonus Servant this round. The Count has decided to no longer offer his services.
+EndtotheCount_007=Each player ''gains 1 Resource'' of their choice as a parting gift. The Count has decided to no longer offer his services.
 
 # passages/00274-PrivateInvestors.mws.yaml
 PrivateInvestors_001=Investment Dividends
@@ -2336,6 +2369,8 @@ WallCheck_006=If fewer bricks have been purchased,
 
 # passages/00284-Gen3Token2.mws.yaml
 Gen3Token2_001=A Life Forsaken
+Gen3Token2_003=There was no one there to greet me on that day. As seemed fitting, for this was not some achievement to be unlocked - it was a personal decision that had long tore at the fiber of my being.
+Gen3Token2_004=Though the appointed time had come, I did not attend the event. In fact, I spent most of my day lost in thought. It was something I should have done a long time ago.
 Gen3Token2_005=I had come to a crossroads - a self-reckoning where the distress of existence was laid bare before me. I could continue onward on my path towards my appointed Obsession or I could forge a new path, one galvanized by my own impulses - wild and unfettered. Whichever I chose, I knew then that I would need to see it through to the bitter end.
 Gen3Token2_006=**I chose:**
 Gen3Token2_007=To keep my Obsession.

@@ -12,20 +12,20 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:3288
   - type: 'text'
-    # ../en-US.restext:454 | "**Fully Repaired**"
+    # ../en-US.restext:456 | "**Fully Repaired**"
     value: 'restext://TimeEnd2_010'
   # ../.source/ATimeofWar_Eng_v8.cs:3290
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:3291
   - type: 'text'
-    # ../en-US.restext:455 | "I knew that I had complet..."
+    # ../en-US.restext:457 | "I knew that I had complet..."
     value: 'restext://TimeEnd2_011'
   # ../.source/ATimeofWar_Eng_v8.cs:3298
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3300
   - type: 'text'
-    # ../en-US.restext:456 | "Though my years have adva..."
+    # ../en-US.restext:458 | "Though my years have adva..."
     value: 'restext://TimeEnd2_012'
   # ../.source/ATimeofWar_Eng_v8.cs:3301
   - type: 'break'
@@ -39,28 +39,28 @@ nodes:
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:3309
   - type: 'text'
-    # ../en-US.restext:446 | "**Rusty, But Worth a Try*..."
+    # ../en-US.restext:448 | "**Rusty, But Worth a Try*..."
     value: 'restext://TimeEnd2_001'
   # ../.source/ATimeofWar_Eng_v8.cs:3314
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3316
   - type: 'text'
-    # ../en-US.restext:447 | "I, for one, was ready to ..."
+    # ../en-US.restext:449 | "I, for one, was ready to ..."
     value: 'restext://TimeEnd2_002'
   # ../.source/ATimeofWar_Eng_v8.cs:3318
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3322
   - type: 'text'
-    # ../en-US.restext:448 | "**How many of the** _Time..."
+    # ../en-US.restext:450 | "**How many of the** _Time..."
     value: 'restext://TimeEnd2_003'
   # ../.source/ATimeofWar_Eng_v8.cs:3329
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3332
   - type: 'link'
-    # ../en-US.restext:449 | "Zero."
+    # ../en-US.restext:451 | "Zero."
     label: 'restext://TimeEnd2_004'
     target: 'TimeEnd2b' # ./00194-TimeEnd2b.mws.yaml
     snapshot: true
@@ -75,7 +75,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3336
   - type: 'link'
-    # ../en-US.restext:450 | "One."
+    # ../en-US.restext:452 | "One."
     label: 'restext://TimeEnd2_006'
     target: 'TimeEnd2b' # ./00194-TimeEnd2b.mws.yaml
     snapshot: true
@@ -83,14 +83,14 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:3361
     - type: 'assign'
       var: 'tmnumber'
-      # ../en-US.restext:451 | "one piece"
+      # ../en-US.restext:453 | "one piece"
       expr: '"restext://TimeEnd2_007"'
   # ../.source/ATimeofWar_Eng_v8.cs:3337
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3340
   - type: 'link'
-    # ../en-US.restext:452 | "Two."
+    # ../en-US.restext:454 | "Two."
     label: 'restext://TimeEnd2_008'
     target: 'TimeEnd2b' # ./00194-TimeEnd2b.mws.yaml
     snapshot: true
@@ -98,12 +98,12 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:3368
     - type: 'assign'
       var: 'tmnumber'
-      # ../en-US.restext:453 | "two pieces"
+      # ../en-US.restext:455 | "two pieces"
       expr: '"restext://TimeEnd2_009"'
 # ../.source/ATimeofWar_Eng_v8.cs:3346
 - type: 'popup'
   layout: 'end_of_generation'
-  # ../en-US.restext:283 | "Confirm"
+  # ../en-US.restext:285 | "Confirm"
   okay: 'restext://UIButton_Confirm'
   content:
   - type: 'text'

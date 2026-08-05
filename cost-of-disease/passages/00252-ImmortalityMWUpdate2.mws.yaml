@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ImmortalityMWUpdate2'
-# ../en-US.restext:2150 | "The Possibility Exists"
+# ../en-US.restext:2158 | "The Possibility Exists"
 title: 'restext://ImmortalityMWUpdate2_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:27236
 - type: 'text'
-  # ../en-US.restext:2151 | "The thoughts consumed the..."
+  # ../en-US.restext:2159 | "The thoughts consumed the..."
   value: 'restext://ImmortalityMWUpdate2_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:27247
 - type: 'break'
@@ -19,7 +19,7 @@ nodes:
   # ../en-US.restext:39 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 8 ? "Hospital2" : "Hospital3"}' # ./00034-Hospital2.mws.yaml, ./00035-Hospital3.mws.yaml
-  # ../en-US.restext:352 | "Close"
+  # ../en-US.restext:356 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -36,5 +36,5 @@ nodes:
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:27283
   - type: 'text'
-    # ../en-US.restext:2152 | "Retrieve the **Immortalit..."
+    # ../en-US.restext:2160 | "Retrieve the **Immortalit..."
     value: 'restext://ImmortalityMWUpdate2_003'

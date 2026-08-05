@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Start2'
-# ../en-US.restext:338 | "MY FATHER'S WORK"
+# ../en-US.restext:342 | "MY FATHER'S WORK"
 title: 'restext://Title_MyFathersWork'
 tags:
 - 'ck'
@@ -11,7 +11,7 @@ layout: 'hub'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:1569
 - type: 'text'
-  # ../en-US.restext:374 | "**Choose a Scenario** "
+  # ../en-US.restext:382 | "**Choose a Scenario** "
   value: 'restext://Start2_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:1570
 - type: 'switch'
@@ -21,32 +21,32 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:1572
     - type: 'text'
-      # ../en-US.restext:375 | "**for 2 players:**"
+      # ../en-US.restext:383 | "**for 2 players:**"
       value: 'restext://Start2_003'
   - match: 3
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:1576
     - type: 'text'
-      # ../en-US.restext:376 | "**for 3 players:**"
+      # ../en-US.restext:384 | "**for 3 players:**"
       value: 'restext://Start2_004'
   - match: 4
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:1580
     - type: 'text'
-      # ../en-US.restext:377 | "**for 4 players:**"
+      # ../en-US.restext:385 | "**for 4 players:**"
       value: 'restext://Start2_005'
   - match: 5
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:1584
     - type: 'text'
-      # ../en-US.restext:378 | "**for 5 players:**"
+      # ../en-US.restext:386 | "**for 5 players:**"
       value: 'restext://Start2_006'
 # ../.source/TheCostofDisease_Eng_v10.cs:1587
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:1589
 - type: 'link'
-  # ../en-US.restext:379 | "A Time of War"
+  # ../en-US.restext:387 | "A Time of War"
   label: 'restext://Start2_007'
   target: 'NoLink' # ./00340-NoLink.mws.yaml
   snapshot: true
@@ -54,7 +54,7 @@ nodes:
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:1591
 - type: 'link'
-  # ../en-US.restext:380 | "Fear and Politics"
+  # ../en-US.restext:388 | "Fear and Politics"
   label: 'restext://Start2_008'
   target: 'NoLink' # ./00340-NoLink.mws.yaml
   snapshot: true
@@ -62,7 +62,7 @@ nodes:
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:1593
 - type: 'link'
-  # ../en-US.restext:381 | "The Cost of Disease"
+  # ../en-US.restext:389 | "The Cost of Disease"
   label: 'restext://Start2_009'
   target: 'Preparations-TCOD' # ./00222-Preparations-TCOD.mws.yaml
   snapshot: true
@@ -71,7 +71,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:1599
 - type: 'text'
-  # ../en-US.restext:382 | "_For an explanation of ho..."
+  # ../en-US.restext:390 | "_For an explanation of ho..."
   value: 'restext://Start2_010'
 # ../.source/TheCostofDisease_Eng_v10.cs:1604
 - type: 'link'

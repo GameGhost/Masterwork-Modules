@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'SmugConsequence'
-# ../en-US.restext:1007 | "Consequences of Smuggling"
+# ../en-US.restext:1009 | "Consequences of Smuggling"
 title: 'restext://SmugConsequence_001'
 layout: 'narration'
 nodes:
@@ -20,7 +20,10 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:11849
 - type: 'let'
   var: '_rnd_SmugConsequence_0'
-  expr: '["This fortified district offers little in the way of investment, so I''m afraid to admit that I have begun a partnership with the local shipping company. What it lacks in potential, I believe it makes up for in expediency. I swear to you my visits there are brief and lawful, for I am as always a dutiful citizen.", "What is this place? It is certainly not much from the exterior, but considering the locale, I have very little choice in the matter. It provides me access to goods otherwise inaccessible, and while the stench is sometimes severe - both of the building and its inhabitants - this is all I require.", "I ask you to disregard the rumors that I have merely invested capital into this venture to gain illicit produce. It is a humble shipping dock and my visits during the evening are simply to assess matters of inventory. I take offense to any suggestions otherwise."].shuffled("SmugConsequence_0")[0]'
+  # ../en-US.restext:1010 | SmugConsequence_002 | "This fortified district o..."
+  # ../en-US.restext:1011 | SmugConsequence_003 | "What is this place? It is..."
+  # ../en-US.restext:1012 | SmugConsequence_004 | "I ask you to disregard th..."
+  expr: '["restext://SmugConsequence_002", "restext://SmugConsequence_003", "restext://SmugConsequence_004"].shuffled("SmugConsequence_0")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:11847
 - type: 'break'
   style: 'paragraph'
@@ -34,7 +37,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:11854
 - type: 'text'
-  # ../en-US.restext:1008 | "**Please choose your name..."
+  # ../en-US.restext:1013 | "**Please choose your name..."
   value: 'restext://SmugConsequence_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:11856
 - type: 'break'

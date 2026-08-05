@@ -126,7 +126,9 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:4276
 - type: 'assign'
   var: 'junkpenalty'
-  expr: '["Lose 5VP", "Discard a Vanity Estate Upgrade from your Estate if possible."].shuffled("PrivatizedIntro_4")[0]'
+  # ../en-US.restext:574 | PrivatizedIntro_011 | "Lose 5VP"
+  # ../en-US.restext:575 | PrivatizedIntro_012 | "Discard a Vanity Estate U..."
+  expr: '["restext://PrivatizedIntro_011", "restext://PrivatizedIntro_012"].shuffled("PrivatizedIntro_4")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4277
 - type: 'assign'
   var: 'creepcount'

@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'HelpingEvil'
-# ../en-US.restext:1996 | "A Reward for Service"
+# ../en-US.restext:2004 | "A Reward for Service"
 title: 'restext://HelpingEvil_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:25052
 - type: 'text'
-  # ../en-US.restext:1997 | "Upon receipt of their inh..."
+  # ../en-US.restext:2005 | "Upon receipt of their inh..."
   value: 'restext://HelpingEvil_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:25058
 - type: 'break'
@@ -19,7 +19,7 @@ nodes:
   # ../en-US.restext:39 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'HelpingEvil2' # ./00356-HelpingEvil2.mws.yaml
-  # ../en-US.restext:352 | "Close"
+  # ../en-US.restext:356 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -36,7 +36,7 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:25078
   - type: 'text'
-    # ../en-US.restext:1998 | "Retrieve the **{society}*..."
+    # ../en-US.restext:2006 | "Retrieve the **{society}*..."
     value: 'restext://HelpingEvil_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:25091
   - type: 'break'
@@ -53,7 +53,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:25097
       - type: 'text'
-        # ../en-US.restext:1999 | "{nameA} III gains **4VP**..."
+        # ../en-US.restext:2007 | "{nameA} III gains **4VP**..."
         value: 'restext://HelpingEvil_004'
       # ../.source/TheCostofDisease_Eng_v10.cs:25106
       - type: 'break'
@@ -65,7 +65,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:25111
       - type: 'text'
-        # ../en-US.restext:2000 | "{nameB} III gains **4VP**..."
+        # ../en-US.restext:2008 | "{nameB} III gains **4VP**..."
         value: 'restext://HelpingEvil_005'
       # ../.source/TheCostofDisease_Eng_v10.cs:25120
       - type: 'break'
@@ -81,7 +81,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25127
         - type: 'text'
-          # ../en-US.restext:2001 | "{nameC} III gains **4VP**..."
+          # ../en-US.restext:2009 | "{nameC} III gains **4VP**..."
           value: 'restext://HelpingEvil_006'
         # ../.source/TheCostofDisease_Eng_v10.cs:25136
         - type: 'break'
@@ -97,7 +97,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25144
         - type: 'text'
-          # ../en-US.restext:2002 | "{nameD} III gains **4VP**..."
+          # ../en-US.restext:2010 | "{nameD} III gains **4VP**..."
           value: 'restext://HelpingEvil_007'
         # ../.source/TheCostofDisease_Eng_v10.cs:25153
         - type: 'break'
@@ -113,7 +113,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25161
         - type: 'text'
-          # ../en-US.restext:2003 | "{nameE} III gains **4VP**..."
+          # ../en-US.restext:2011 | "{nameE} III gains **4VP**..."
           value: 'restext://HelpingEvil_008'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:25178
@@ -123,7 +123,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:25180
       - type: 'text'
-        # ../en-US.restext:1999 | "{nameA} III gains **4VP**..."
+        # ../en-US.restext:2007 | "{nameA} III gains **4VP**..."
         value: 'restext://HelpingEvil_004'
       # ../.source/TheCostofDisease_Eng_v10.cs:25189
       - type: 'break'
@@ -135,7 +135,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:25194
       - type: 'text'
-        # ../en-US.restext:2000 | "{nameB} III gains **4VP**..."
+        # ../en-US.restext:2008 | "{nameB} III gains **4VP**..."
         value: 'restext://HelpingEvil_005'
       # ../.source/TheCostofDisease_Eng_v10.cs:25203
       - type: 'break'
@@ -151,7 +151,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25210
         - type: 'text'
-          # ../en-US.restext:2001 | "{nameC} III gains **4VP**..."
+          # ../en-US.restext:2009 | "{nameC} III gains **4VP**..."
           value: 'restext://HelpingEvil_006'
         # ../.source/TheCostofDisease_Eng_v10.cs:25219
         - type: 'break'
@@ -167,7 +167,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25227
         - type: 'text'
-          # ../en-US.restext:2002 | "{nameD} III gains **4VP**..."
+          # ../en-US.restext:2010 | "{nameD} III gains **4VP**..."
           value: 'restext://HelpingEvil_007'
         # ../.source/TheCostofDisease_Eng_v10.cs:25236
         - type: 'break'
@@ -183,5 +183,5 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25244
         - type: 'text'
-          # ../en-US.restext:2003 | "{nameE} III gains **4VP**..."
+          # ../en-US.restext:2011 | "{nameE} III gains **4VP**..."
           value: 'restext://HelpingEvil_008'

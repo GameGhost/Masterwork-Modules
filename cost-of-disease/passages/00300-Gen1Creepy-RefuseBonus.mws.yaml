@@ -6,7 +6,7 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:30902
 - type: 'text'
-  # ../en-US.restext:315 | "**Carefully hand this sto..."
+  # ../en-US.restext:319 | "**Carefully hand this sto..."
   value: 'restext://Storybook_HandToGen1Creep_Private'
 # ../.source/TheCostofDisease_Eng_v10.cs:30907
 - type: 'break'
@@ -16,7 +16,7 @@ nodes:
   # ../en-US.restext:56 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:352 | "Close"
+  # ../en-US.restext:356 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
@@ -27,20 +27,20 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:31028
     - type: 'text'
-      # ../en-US.restext:2479 | "**A Strange Visit**"
+      # ../en-US.restext:2487 | "**A Strange Visit**"
       value: 'restext://Gen1Creepy_RefuseBonus_001'
     # ../.source/TheCostofDisease_Eng_v10.cs:31030
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:31031
     - type: 'text'
-      # ../en-US.restext:2480 | "Consumed by the immense s..."
+      # ../en-US.restext:2488 | "Consumed by the immense s..."
       value: 'restext://Gen1Creepy_RefuseBonus_002'
     # ../.source/TheCostofDisease_Eng_v10.cs:31036
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:31038
     - type: 'text'
-      # ../en-US.restext:2484 | "It appeared that they wer..."
+      # ../en-US.restext:2492 | "It appeared that they wer..."
       value: 'restext://Gen1Creepy_RefuseBonus_006'
     # ../.source/TheCostofDisease_Eng_v10.cs:31049
     - type: 'break'
@@ -51,7 +51,7 @@ nodes:
       # ../en-US.restext:39 | "Click to continue..."
       label: 'restext://Click_ContinueEllipsis_C'
       target: '${(seedy == "yes") ? "Gen1Creepy-AgreedReturn" : "Hospital2"}' # ./00301-Gen1Creepy-AgreedReturn.mws.yaml, ./00034-Hospital2.mws.yaml
-      # ../en-US.restext:352 | "Close"
+      # ../en-US.restext:356 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
       header:
@@ -62,32 +62,32 @@ nodes:
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:30933
       - type: 'text'
-        # ../en-US.restext:2485 | "You may choose to immedia..."
+        # ../en-US.restext:2493 | "You may choose to immedia..."
         value: 'restext://Gen1Creepy_RefuseBonus_007'
       # ../.source/TheCostofDisease_Eng_v10.cs:30944
       - type: 'break'
         style: 'paragraph'
       # ../.source/TheCostofDisease_Eng_v10.cs:30946
       - type: 'text'
-        # ../en-US.restext:2486 | "The **Reading Room** acts..."
+        # ../en-US.restext:2494 | "The **Reading Room** acts..."
         value: 'restext://Gen1Creepy_RefuseBonus_008'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:31060
     - type: 'text'
-      # ../en-US.restext:2479 | "**A Strange Visit**"
+      # ../en-US.restext:2487 | "**A Strange Visit**"
       value: 'restext://Gen1Creepy_RefuseBonus_001'
     # ../.source/TheCostofDisease_Eng_v10.cs:31062
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:31063
     - type: 'text'
-      # ../en-US.restext:2480 | "Consumed by the immense s..."
+      # ../en-US.restext:2488 | "Consumed by the immense s..."
       value: 'restext://Gen1Creepy_RefuseBonus_002'
     # ../.source/TheCostofDisease_Eng_v10.cs:31068
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:31070
     - type: 'text'
-      # ../en-US.restext:2481 | "It appeared that they wer..."
+      # ../en-US.restext:2489 | "It appeared that they wer..."
       value: 'restext://Gen1Creepy_RefuseBonus_003'
     # ../.source/TheCostofDisease_Eng_v10.cs:31080
     - type: 'break'
@@ -98,7 +98,7 @@ nodes:
       # ../en-US.restext:39 | "Click to continue..."
       label: 'restext://Click_ContinueEllipsis_C'
       target: '${(seedy == "yes") ? "Gen1Creepy-AgreedReturn" : "Hospital2"}' # ./00301-Gen1Creepy-AgreedReturn.mws.yaml, ./00034-Hospital2.mws.yaml
-      # ../en-US.restext:352 | "Close"
+      # ../en-US.restext:356 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
       header:
@@ -109,12 +109,12 @@ nodes:
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:30983
       - type: 'text'
-        # ../en-US.restext:2482 | "You may choose to immedia..."
+        # ../en-US.restext:2490 | "You may choose to immedia..."
         value: 'restext://Gen1Creepy_RefuseBonus_004'
       # ../.source/TheCostofDisease_Eng_v10.cs:30994
       - type: 'break'
         style: 'paragraph'
       # ../.source/TheCostofDisease_Eng_v10.cs:30996
       - type: 'text'
-        # ../en-US.restext:2483 | "The **Shrine** acts the s..."
+        # ../en-US.restext:2491 | "The **Shrine** acts the s..."
         value: 'restext://Gen1Creepy_RefuseBonus_005'

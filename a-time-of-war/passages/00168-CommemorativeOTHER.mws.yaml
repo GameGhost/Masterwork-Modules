@@ -2,19 +2,19 @@
 ---
 format: 'mws/0.4'
 passage_id: 'CommemorativeOTHER'
-# ../en-US.restext:1452 | "Bitter Eyesore"
+# ../en-US.restext:1457 | "Bitter Eyesore"
 title: 'restext://CommemorativeOTHER_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:18296
 - type: 'let'
   var: '_rnd_CommemorativeOTHER_0'
-  # ../en-US.restext:1453 | CommemorativeOTHER_002 | "as I ventured nearer the ..."
-  # ../en-US.restext:1454 | CommemorativeOTHER_003 | "as a chill wind swept deb..."
+  # ../en-US.restext:1458 | CommemorativeOTHER_002 | "as I ventured nearer the ..."
+  # ../en-US.restext:1459 | CommemorativeOTHER_003 | "as a chill wind swept deb..."
   expr: '["restext://CommemorativeOTHER_002", "restext://CommemorativeOTHER_003"].shuffled("CommemorativeOTHER_0")[0]'
 # ../.source/ATimeofWar_Eng_v8.cs:18294
 - type: 'text'
-  # ../en-US.restext:1455 | "How could they construct ..."
+  # ../en-US.restext:1460 | "How could they construct ..."
   value: 'restext://CommemorativeOTHER_004'
   lets:
   - '_rnd_CommemorativeOTHER_0'
@@ -27,14 +27,14 @@ nodes:
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:18300
 - type: 'text'
-  # ../en-US.restext:1456 | "And yet, set upon by the ..."
+  # ../en-US.restext:1461 | "And yet, set upon by the ..."
   value: 'restext://CommemorativeOTHER_005'
 # ../.source/ATimeofWar_Eng_v8.cs:18301
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:18303
 - type: 'text'
-  # ../en-US.restext:1457 | "My cousin may have enjoye..."
+  # ../en-US.restext:1462 | "My cousin may have enjoye..."
   value: 'restext://CommemorativeOTHER_006'
 # ../.source/ATimeofWar_Eng_v8.cs:18305
 - type: 'break'
@@ -45,7 +45,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 16 ? "MonarchReign1" : round == 17 ? "MonarchReign2" : "MonarchReign3"}' # ./00043-MonarchReign1.mws.yaml, ./00068-MonarchReign2.mws.yaml, ./00069-MonarchReign3.mws.yaml
-  # ../en-US.restext:282 | "Close"
+  # ../en-US.restext:284 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -56,5 +56,5 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:18326
   - type: 'text'
-    # ../en-US.restext:1458 | "{signincomm} may search a..."
+    # ../en-US.restext:1463 | "{signincomm} may search a..."
     value: 'restext://CommemorativeOTHER_007'

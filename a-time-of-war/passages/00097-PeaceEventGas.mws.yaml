@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'PeaceEventGas'
-# ../en-US.restext:925 | "Rule by Fear"
+# ../en-US.restext:930 | "Rule by Fear"
 title: 'restext://PeaceEventGas_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:12183
 - type: 'text'
-  # ../en-US.restext:926 | "The ends justify the mean..."
+  # ../en-US.restext:931 | "The ends justify the mean..."
   value: 'restext://PeaceEventGas_002'
 # ../.source/ATimeofWar_Eng_v8.cs:12184
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:12186
 - type: 'text'
-  # ../en-US.restext:927 | "In response to the clinic..."
+  # ../en-US.restext:932 | "In response to the clinic..."
   value: 'restext://PeaceEventGas_003'
 # ../.source/ATimeofWar_Eng_v8.cs:12194
 - type: 'break'
@@ -26,7 +26,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'BattleTime' # ./00072-BattleTime.mws.yaml
-  # ../en-US.restext:282 | "Close"
+  # ../en-US.restext:284 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -48,5 +48,5 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:12227
   - type: 'text'
-    # ../en-US.restext:928 | "All players **gain 1** {i..."
+    # ../en-US.restext:933 | "All players **gain 1** {i..."
     value: 'restext://PeaceEventGas_004'

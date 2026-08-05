@@ -36,12 +36,12 @@ nodes:
       expr: 'rand_between(4, 6, "TimeEnd1_3")'
 # ../.source/ATimeofWar_Eng_v8.cs:3205
 - type: 'text'
-  # ../en-US.restext:438 | "**Paradox**"
+  # ../en-US.restext:440 | "**Paradox**"
   value: 'restext://TimeEnd1_001'
 # ../.source/ATimeofWar_Eng_v8.cs:3231
 - type: 'popup'
   layout: 'end_of_generation'
-  # ../en-US.restext:283 | "Confirm"
+  # ../en-US.restext:285 | "Confirm"
   okay: 'restext://UIButton_Confirm'
   content:
   - type: 'text'
@@ -54,25 +54,25 @@ nodes:
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:3234
 - type: 'text'
-  # ../en-US.restext:439 | "Time continued on as norm..."
+  # ../en-US.restext:441 | "Time continued on as norm..."
   value: 'restext://TimeEnd1_003'
 # ../.source/ATimeofWar_Eng_v8.cs:3236
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:3240
 - type: 'text'
-  # ../en-US.restext:440 | "**Count the total number ..."
+  # ../en-US.restext:442 | "**Count the total number ..."
   value: 'restext://TimeEnd1_004'
 # ../.source/ATimeofWar_Eng_v8.cs:3245
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:3247
 - type: 'text'
-  # ../en-US.restext:441 | "If the number is **{dox}*..."
+  # ../en-US.restext:443 | "If the number is **{dox}*..."
   value: 'restext://TimeEnd1_005'
 # ../.source/ATimeofWar_Eng_v8.cs:3254
 - type: 'link'
-  # ../en-US.restext:442 | "Click here to continue"
+  # ../en-US.restext:444 | "Click here to continue"
   label: 'restext://TimeEnd1_006'
   target: 'WarningIntro' # ./00050-WarningIntro.mws.yaml
   snapshot: true
@@ -81,7 +81,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:3257
 - type: 'text'
-  # ../en-US.restext:443 | "If the number of {icon:s3..."
+  # ../en-US.restext:445 | "If the number of {icon:s3..."
   value: 'restext://TimeEnd1_007'
 # ../.source/ATimeofWar_Eng_v8.cs:3261
 - type: 'link'

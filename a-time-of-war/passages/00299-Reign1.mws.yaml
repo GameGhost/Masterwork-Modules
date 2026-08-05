@@ -8,34 +8,34 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:27489
 - type: 'text'
-  # ../en-US.restext:246 | "**Carefully hand the Stor..."
+  # ../en-US.restext:248 | "**Carefully hand the Stor..."
   value: 'restext://Storybook_HandToReigntemp_ReadAloud'
 # ../.source/ATimeofWar_Eng_v8.cs:27498
 - type: 'let'
   var: '_rnd_Reign1_0'
-  # ../en-US.restext:2263 | Reign1_002 | "Decision"
-  # ../en-US.restext:2264 | Reign1_003 | "Dilemma"
-  # ../en-US.restext:2265 | Reign1_004 | "Conundrum"
+  # ../en-US.restext:2270 | Reign1_002 | "Decision"
+  # ../en-US.restext:2271 | Reign1_003 | "Dilemma"
+  # ../en-US.restext:2272 | Reign1_004 | "Conundrum"
   expr: '["restext://Reign1_002", "restext://Reign1_003", "restext://Reign1_004"].shuffled("Reign1_0")[0]'
 # ../.source/ATimeofWar_Eng_v8.cs:27493
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:27497
 - type: 'text'
-  # ../en-US.restext:2266 | "**Royal {_rnd_Reign1_0}**"
+  # ../en-US.restext:2273 | "**Royal {_rnd_Reign1_0}**"
   value: 'restext://Reign1_005'
   lets:
   - '_rnd_Reign1_0'
 # ../.source/ATimeofWar_Eng_v8.cs:27501
 - type: 'let'
   var: '_rnd_Reign1_1'
-  # ../en-US.restext:2267 | Reign1_006 | "After a brief dinner,"
-  # ../en-US.restext:2268 | Reign1_007 | "With some rejuvenating sp..."
-  # ../en-US.restext:2269 | Reign1_008 | "I easily ingratiated myse..."
+  # ../en-US.restext:2274 | Reign1_006 | "After a brief dinner,"
+  # ../en-US.restext:2275 | Reign1_007 | "With some rejuvenating sp..."
+  # ../en-US.restext:2276 | Reign1_008 | "I easily ingratiated myse..."
   expr: '["restext://Reign1_006", "restext://Reign1_007", "restext://Reign1_008"].shuffled("Reign1_1")[0]'
 # ../.source/ATimeofWar_Eng_v8.cs:27501
 - type: 'text'
-  # ../en-US.restext:2270 | "{_rnd_Reign1_1} the royal..."
+  # ../en-US.restext:2277 | "{_rnd_Reign1_1} the royal..."
   value: 'restext://Reign1_009'
   lets:
   - '_rnd_Reign1_1'
@@ -44,7 +44,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:27509
 - type: 'text'
-  # ../en-US.restext:2271 | "It was only proper that m..."
+  # ../en-US.restext:2278 | "It was only proper that m..."
   value: 'restext://Reign1_010'
 # ../.source/ATimeofWar_Eng_v8.cs:27510
 - type: 'break'
@@ -58,7 +58,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:27519
 - type: 'link'
-  # ../en-US.restext:2272 | "I took the side of the people."
+  # ../en-US.restext:2279 | "I took the side of the people."
   label: 'restext://Reign1_011'
   target: 'Reign1b' # ./00300-Reign1b.mws.yaml
   snapshot: true
@@ -109,14 +109,14 @@ nodes:
       expr: 'plereigng + 1'
 # ../.source/ATimeofWar_Eng_v8.cs:27520
 - type: 'text'
-  # ../en-US.restext:2273 | " This will result in: {cr..."
+  # ../en-US.restext:2280 | " This will result in: {cr..."
   value: 'restext://Reign1_012'
 # ../.source/ATimeofWar_Eng_v8.cs:27521
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:27524
 - type: 'link'
-  # ../en-US.restext:2274 | "To hell with the people."
+  # ../en-US.restext:2281 | "To hell with the people."
   label: 'restext://Reign1_013'
   target: 'Reign1b' # ./00300-Reign1b.mws.yaml
   snapshot: true
@@ -167,5 +167,5 @@ nodes:
       expr: 'plereigne + 1'
 # ../.source/ATimeofWar_Eng_v8.cs:27525
 - type: 'text'
-  # ../en-US.restext:2275 | " This will result in: {cr..."
+  # ../en-US.restext:2282 | " This will result in: {cr..."
   value: 'restext://Reign1_014'

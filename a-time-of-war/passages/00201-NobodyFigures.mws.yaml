@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'NobodyFigures'
-# ../en-US.restext:1753 | "Accolades for Exploration"
+# ../en-US.restext:1758 | "Accolades for Exploration"
 title: 'restext://NobodyFigures_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:20876
 - type: 'text'
-  # ../en-US.restext:1754 | "I soon discovered that th..."
+  # ../en-US.restext:1759 | "I soon discovered that th..."
   value: 'restext://NobodyFigures_002'
 # ../.source/ATimeofWar_Eng_v8.cs:20877
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:20879
 - type: 'text'
-  # ../en-US.restext:1755 | "While the masses could ne..."
+  # ../en-US.restext:1760 | "While the masses could ne..."
   value: 'restext://NobodyFigures_003'
 # ../.source/ATimeofWar_Eng_v8.cs:20880
 - type: 'break'
@@ -26,7 +26,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'Late2ResA' # ./00195-Late2ResA.mws.yaml
-  # ../en-US.restext:282 | "Close"
+  # ../en-US.restext:284 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -37,7 +37,7 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:20904
   - type: 'text'
-    # ../en-US.restext:1756 | "Remove the Suspicion Mark..."
+    # ../en-US.restext:1761 | "Remove the Suspicion Mark..."
     value: 'restext://NobodyFigures_004'
   # ../.source/ATimeofWar_Eng_v8.cs:20923
   - type: 'break'
@@ -48,17 +48,17 @@ nodes:
     value: 'restext://Directive_FirstTimeReachesFigureToken_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:20934
   - type: 'conditional'
-    # ../en-US.restext:279 | "Unified Monarchists"
+    # ../en-US.restext:281 | "Unified Monarchists"
     if: 'warwinner == "restext://Title_UnifiedMonarchists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:20936
     - type: 'text'
-      # ../en-US.restext:227 | "**they may immediately bu..."
+      # ../en-US.restext:229 | "**they may immediately bu..."
       value: 'restext://Reward_MayBuildVanityEstateUpgrade'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:20940
     - type: 'text'
-      # ../en-US.restext:228 | "**they may immediately ta..."
+      # ../en-US.restext:230 | "**they may immediately ta..."
       value: 'restext://Reward_MayTakePerformExperimentAction'
   # ../.source/ATimeofWar_Eng_v8.cs:20943
   - type: 'text'

@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TimeTravelEventb'
-# ../en-US.restext:275 | "The Future of Convenience"
+# ../en-US.restext:277 | "The Future of Convenience"
 title: 'restext://Title_TheFutureOfConvenience'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:22730
 - type: 'text'
-  # ../en-US.restext:1885 | "These schematics weren't ..."
+  # ../en-US.restext:1892 | "These schematics weren't ..."
   value: 'restext://TimeTravelEventb_002'
 # ../.source/ATimeofWar_Eng_v8.cs:22733
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:22735
 - type: 'text'
-  # ../en-US.restext:1886 | "If one could procure the ..."
+  # ../en-US.restext:1893 | "If one could procure the ..."
   value: 'restext://TimeTravelEventb_003'
 # ../.source/ATimeofWar_Eng_v8.cs:22738
 - type: 'break'
@@ -26,7 +26,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${rumor2 == "visited" ? "FigureontheTrackIn" : "NobodyFigures"}' # ./00198-FigureontheTrackIn.mws.yaml, ./00201-NobodyFigures.mws.yaml
-  # ../en-US.restext:282 | "Close"
+  # ../en-US.restext:284 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:

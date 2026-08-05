@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'SmugEventEnd'
-# ../en-US.restext:1079 | "The Rampage Concludes"
+# ../en-US.restext:1084 | "The Rampage Concludes"
 title: 'restext://SmugEventEnd_001'
 layout: 'narration'
 nodes:
@@ -15,7 +15,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12908
 - type: 'text'
-  # ../en-US.restext:1080 | "Disappointingly, the acti..."
+  # ../en-US.restext:1085 | "Disappointingly, the acti..."
   value: 'restext://SmugEventEnd_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12909
 - type: 'switch'
@@ -25,32 +25,32 @@ nodes:
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:12911
     - type: 'text'
-      # ../en-US.restext:1082 | "Our Gorilla, now grown to..."
+      # ../en-US.restext:1087 | "Our Gorilla, now grown to..."
       value: 'restext://SmugEventEnd_004'
   - match: 'chem'
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:12917
     - type: 'text'
-      # ../en-US.restext:1083 | "The Fabric swirled one la..."
+      # ../en-US.restext:1088 | "The Fabric swirled one la..."
       value: 'restext://SmugEventEnd_005'
   default:
   # ../.source/FearoftheUnknown_Eng_v15.cs:12921
   - type: 'text'
-    # ../en-US.restext:1081 | "Our Robot expeled a burst..."
+    # ../en-US.restext:1086 | "Our Robot expeled a burst..."
     value: 'restext://SmugEventEnd_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12925
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12927
 - type: 'text'
-  # ../en-US.restext:1084 | "Our creation settled life..."
+  # ../en-US.restext:1089 | "Our creation settled life..."
   value: 'restext://SmugEventEnd_006'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12928
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12930
 - type: 'text'
-  # ../en-US.restext:1085 | "The townsfolk scrambled t..."
+  # ../en-US.restext:1090 | "The townsfolk scrambled t..."
   value: 'restext://SmugEventEnd_007'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12933
 - type: 'break'
@@ -73,15 +73,15 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:12961
   - type: 'let'
     var: '_rnd_SmugEventEnd_0'
-    # ../en-US.restext:1086 | SmugEventEnd_008 | "1 space"
-    # ../en-US.restext:1087 | SmugEventEnd_009 | "2 spaces"
+    # ../en-US.restext:1091 | SmugEventEnd_008 | "1 space"
+    # ../en-US.restext:1092 | SmugEventEnd_009 | "2 spaces"
     expr: '["restext://SmugEventEnd_008", "restext://SmugEventEnd_009"].shuffled("SmugEventEnd_0")[0]'
   # ../.source/FearoftheUnknown_Eng_v15.cs:12953
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:12955
   - type: 'text'
-    # ../en-US.restext:1088 | "Move the {icon:angrymob_i..."
+    # ../en-US.restext:1093 | "Move the {icon:angrymob_i..."
     value: 'restext://SmugEventEnd_010'
     lets:
     - '_rnd_SmugEventEnd_0'

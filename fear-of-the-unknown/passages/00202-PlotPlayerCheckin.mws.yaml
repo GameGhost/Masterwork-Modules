@@ -2,18 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'PlotPlayerCheckin'
-# ../en-US.restext:1722 | "The Mob Moves In"
+# ../en-US.restext:1738 | "The Mob Moves In"
 title: 'restext://PlotPlayerCheckin_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:22944
 - type: 'text'
-  # ../en-US.restext:1723 | "**Journal Entry -** _name..."
+  # ../en-US.restext:1739 | "**Journal Entry -** _name..."
   value: 'restext://PlotPlayerCheckin_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22952
 - type: 'let'
   var: '_rnd_PlotPlayerCheckin_0'
-  expr: '["Another night of fitful sleep.", "My unending spirit of invention, it once again leads the ignorant to my doorstep."].shuffled("PlotPlayerCheckin_0")[0]'
+  # ../en-US.restext:1740 | PlotPlayerCheckin_003 | "Another night of fitful sleep."
+  # ../en-US.restext:1741 | PlotPlayerCheckin_004 | "My unending spirit of inv..."
+  expr: '["restext://PlotPlayerCheckin_003", "restext://PlotPlayerCheckin_004"].shuffled("PlotPlayerCheckin_0")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22950
 - type: 'break'
   style: 'paragraph'
@@ -27,14 +29,14 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22956
 - type: 'text'
-  # ../en-US.restext:1724 | "Last evening they congreg..."
+  # ../en-US.restext:1742 | "Last evening they congreg..."
   value: 'restext://PlotPlayerCheckin_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22957
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22961
 - type: 'text'
-  # ../en-US.restext:1725 | "**Please choose the name ..."
+  # ../en-US.restext:1743 | "**Please choose the name ..."
   value: 'restext://PlotPlayerCheckin_006'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22963
 - type: 'break'

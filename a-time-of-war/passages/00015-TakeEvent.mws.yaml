@@ -2,60 +2,60 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TakeEvent'
-# ../en-US.restext:261 | "Military Protection"
+# ../en-US.restext:263 | "Military Protection"
 title: 'restext://Title_MilitaryProtection'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:2738
 - type: 'text'
-  # ../en-US.restext:238 | "Special Event"
+  # ../en-US.restext:240 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/ATimeofWar_Eng_v8.cs:2739
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:2740
 - type: 'text'
-  # ../en-US.restext:412 | "On a brisk April morning,..."
+  # ../en-US.restext:414 | "On a brisk April morning,..."
   value: 'restext://TakeEvent_003'
 # ../.source/ATimeofWar_Eng_v8.cs:2742
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:2744
 - type: 'text'
-  # ../en-US.restext:413 | "Being conscious of the do..."
+  # ../en-US.restext:415 | "Being conscious of the do..."
   value: 'restext://TakeEvent_004'
 # ../.source/ATimeofWar_Eng_v8.cs:2752
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:2756
 - type: 'text'
-  # ../en-US.restext:414 | "**Vote**"
+  # ../en-US.restext:416 | "**Vote**"
   value: 'restext://TakeEvent_005'
 # ../.source/ATimeofWar_Eng_v8.cs:2758
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:2759
 - type: 'text'
-  # ../en-US.restext:415 | "Each player takes a {warw..."
+  # ../en-US.restext:417 | "Each player takes a {warw..."
   value: 'restext://TakeEvent_006'
 # ../.source/ATimeofWar_Eng_v8.cs:2767
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:2771
 - type: 'text'
-  # ../en-US.restext:416 | "**{warwinner}**: Is a vot..."
+  # ../en-US.restext:418 | "**{warwinner}**: Is a vot..."
   value: 'restext://TakeEvent_007'
 # ../.source/ATimeofWar_Eng_v8.cs:2774
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:2777
 - type: 'text'
-  # ../en-US.restext:417 | "**{warloser}**: Is a vote..."
+  # ../en-US.restext:419 | "**{warloser}**: Is a vote..."
   value: 'restext://TakeEvent_008'
 # ../.source/ATimeofWar_Eng_v8.cs:2780
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:2782
 - type: 'text'
-  # ../en-US.restext:418 | "Tally the vote count (tie..."
+  # ../en-US.restext:420 | "Tally the vote count (tie..."
   value: 'restext://TakeEvent_009'
 # ../.source/ATimeofWar_Eng_v8.cs:2784
 - type: 'break'
@@ -63,11 +63,11 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:2788
 - type: 'popup'
   layout: 'countdown_instructions'
-  # ../en-US.restext:419 | "Click to begin the vote..."
+  # ../en-US.restext:421 | "Click to begin the vote..."
   label: 'restext://TakeEvent_010'
   content:
   - type: 'text'
-    # ../en-US.restext:286 | "Click on the 'Start Votin..."
+    # ../en-US.restext:288 | "Click on the 'Start Votin..."
     value: 'restext://Voting_Instructions'
   - type: 'break'
     style: 'paragraph'
@@ -78,7 +78,7 @@ nodes:
     style: 'paragraph'
   - type: 'popup'
     layout: 'countdown_action'
-    # ../en-US.restext:287 | "Start Voting"
+    # ../en-US.restext:289 | "Start Voting"
     label: 'restext://Voting_StartButton'
     style: 'countdown-trigger'
     content:

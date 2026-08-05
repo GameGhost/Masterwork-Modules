@@ -6,7 +6,7 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:12327
 - type: 'text'
-  # ../en-US.restext:239 | "**Carefully give this Sto..."
+  # ../en-US.restext:241 | "**Carefully give this Sto..."
   value: 'restext://Storybook_GiveDeviceToFigureHolder'
 # ../.source/ATimeofWar_Eng_v8.cs:12332
 - type: 'break'
@@ -16,32 +16,32 @@ nodes:
   # ../en-US.restext:40 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:282 | "Close"
+  # ../en-US.restext:284 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:12348
   - type: 'text'
-    # ../en-US.restext:936 | "**A Fortuitous Letter?**"
+    # ../en-US.restext:941 | "**A Fortuitous Letter?**"
     value: 'restext://OldManToken_001'
   # ../.source/ATimeofWar_Eng_v8.cs:12350
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:12351
   - type: 'text'
-    # ../en-US.restext:937 | "One morning under a swirl..."
+    # ../en-US.restext:942 | "One morning under a swirl..."
     value: 'restext://OldManToken_002'
   # ../.source/ATimeofWar_Eng_v8.cs:12352
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:12354
   - type: 'text'
-    # ../en-US.restext:938 | "\"Which flag do you fly?\..."
+    # ../en-US.restext:943 | "\"Which flag do you fly?\..."
     value: 'restext://OldManToken_003'
   # ../.source/ATimeofWar_Eng_v8.cs:12359
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:12360
   - type: 'conditional'
-    # ../en-US.restext:269 | "Separatists"
+    # ../en-US.restext:271 | "Separatists"
     if: 'warloser == "restext://Title_Separatists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:12362

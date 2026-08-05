@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TimeTravelintro'
-# ../en-US.restext:422 | "A Town in Shambles"
+# ../en-US.restext:424 | "A Town in Shambles"
 title: 'restext://TimeTravelintro_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:2816
 - type: 'text'
-  # ../en-US.restext:423 | "Words failed to capture t..."
+  # ../en-US.restext:425 | "Words failed to capture t..."
   value: 'restext://TimeTravelintro_002'
 # ../.source/ATimeofWar_Eng_v8.cs:2817
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:2819
 - type: 'text'
-  # ../en-US.restext:424 | "May my eyes never gaze up..."
+  # ../en-US.restext:426 | "May my eyes never gaze up..."
   value: 'restext://TimeTravelintro_003'
 # ../.source/ATimeofWar_Eng_v8.cs:2821
 - type: 'break'
@@ -26,7 +26,7 @@ nodes:
   # ../en-US.restext:27 | "Click here to continue..."
   label: 'restext://Click_ContinueEllipsis_B'
   target: 'TimeTravelintro1' # ./00062-TimeTravelintro1.mws.yaml
-  # ../en-US.restext:282 | "Close"
+  # ../en-US.restext:284 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -37,5 +37,5 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:2840
   - type: 'text'
-    # ../en-US.restext:425 | "Turn to page **12** in th..."
+    # ../en-US.restext:427 | "Turn to page **12** in th..."
     value: 'restext://TimeTravelintro_004'

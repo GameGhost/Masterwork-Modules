@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'NoUni1'
-# ../en-US.restext:344 | "THE CRAWL"
+# ../en-US.restext:348 | "THE CRAWL"
 title: 'restext://Title_TheCrawl'
-# ../en-US.restext:327 | "Early Years"
+# ../en-US.restext:331 | "Early Years"
 subtitle: 'restext://Title_EarlyYears'
 tags:
 - 'HUB'
@@ -21,7 +21,7 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:2724
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:351 | "Accept"
+    # ../en-US.restext:355 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/TheCostofDisease_Eng_v10.cs:2728
@@ -31,7 +31,7 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:2730
     - type: 'text'
-      # ../en-US.restext:461 | "Turn to **page 8** of the..."
+      # ../en-US.restext:469 | "Turn to **page 8** of the..."
       value: 'restext://NoUni1_002'
     # ../.source/TheCostofDisease_Eng_v10.cs:2740
     - type: 'break'
@@ -47,34 +47,34 @@ nodes:
         nodes:
         # ../.source/TheCostofDisease_Eng_v10.cs:2746
         - type: 'text'
-          # ../en-US.restext:462 | "**5**"
+          # ../en-US.restext:470 | "**5**"
           value: 'restext://NoUni1_004'
       - match: 3
         nodes:
         # ../.source/TheCostofDisease_Eng_v10.cs:2750
         - type: 'text'
-          # ../en-US.restext:463 | "**6**"
+          # ../en-US.restext:471 | "**6**"
           value: 'restext://NoUni1_005'
       - match: 4
         nodes:
         # ../.source/TheCostofDisease_Eng_v10.cs:2754
         - type: 'text'
-          # ../en-US.restext:464 | "**7**"
+          # ../en-US.restext:472 | "**7**"
           value: 'restext://NoUni1_006'
       - match: 5
         nodes:
         # ../.source/TheCostofDisease_Eng_v10.cs:2758
         - type: 'text'
-          # ../en-US.restext:465 | "**8**"
+          # ../en-US.restext:473 | "**8**"
           value: 'restext://NoUni1_007'
       default:
       # ../.source/TheCostofDisease_Eng_v10.cs:2762
       - type: 'text'
-        # ../en-US.restext:462 | "**5**"
+        # ../en-US.restext:470 | "**5**"
         value: 'restext://NoUni1_004'
     # ../.source/TheCostofDisease_Eng_v10.cs:2765
     - type: 'text'
-      # ../en-US.restext:466 | " and the {icon:angrymob_i..."
+      # ../en-US.restext:474 | " and the {icon:angrymob_i..."
       value: 'restext://NoUni1_008'
     # ../.source/TheCostofDisease_Eng_v10.cs:2770
     - type: 'conditional'
@@ -165,7 +165,7 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:2872
   - type: 'text'
-    # ../en-US.restext:296 | "At the end of each round,..."
+    # ../en-US.restext:299 | "At the end of each round,..."
     value: 'restext://Resource_KnowledgeMovesCreepyTrack_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:2881
   - type: 'break'
@@ -176,7 +176,7 @@ nodes:
     # ../en-US.restext:49 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
     target: 'roundEndKnowledge' # ./00261-roundEndKnowledge.mws.yaml
-    # ../en-US.restext:356 | "End of Round"
+    # ../en-US.restext:360 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -185,10 +185,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:302 | "The Early Years of the Th..."
+      # ../en-US.restext:306 | "The Early Years of the Th..."
       value: 'restext://Round_GenerationIII_EarlyEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:309 | "Then, perform all Start o..."
+      # ../en-US.restext:313 | "Then, perform all Start o..."
       value: 'restext://Round_StartMiddleYears_Rule'

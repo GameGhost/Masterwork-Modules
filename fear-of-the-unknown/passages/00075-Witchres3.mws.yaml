@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Witchres3'
-# ../en-US.restext:860 | "The Curse Continues"
+# ../en-US.restext:862 | "The Curse Continues"
 title: 'restext://Witchres3_001'
 layout: 'narration'
 nodes:
@@ -24,46 +24,46 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:10270
     - type: 'text'
-      # ../en-US.restext:863 | "It was I who was chosen! ..."
+      # ../en-US.restext:865 | "It was I who was chosen! ..."
       value: 'restext://Witchres3_004'
     # ../.source/FearoftheUnknown_Eng_v15.cs:10272
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:10274
     - type: 'text'
-      # ../en-US.restext:864 | "They knew! They knew I wa..."
+      # ../en-US.restext:866 | "They knew! They knew I wa..."
       value: 'restext://Witchres3_005'
     # ../.source/FearoftheUnknown_Eng_v15.cs:10278
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:10280
     - type: 'text'
-      # ../en-US.restext:865 | "Death is only the beginning!"
+      # ../en-US.restext:867 | "Death is only the beginning!"
       value: 'restext://Witchres3_006'
   - if: 'wsuspect == falsewitch'
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:10284
     - type: 'text'
-      # ../en-US.restext:866 | "I can state with clear co..."
+      # ../en-US.restext:868 | "I can state with clear co..."
       value: 'restext://Witchres3_007'
     # ../.source/FearoftheUnknown_Eng_v15.cs:10285
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:10287
     - type: 'text'
-      # ../en-US.restext:862 | "However, in the ensuing m..."
+      # ../en-US.restext:864 | "However, in the ensuing m..."
       value: 'restext://Witchres3_003'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:10295
   - type: 'text'
-    # ../en-US.restext:861 | "The town was appeased by ..."
+    # ../en-US.restext:863 | "The town was appeased by ..."
     value: 'restext://Witchres3_002'
   # ../.source/FearoftheUnknown_Eng_v15.cs:10296
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:10298
   - type: 'text'
-    # ../en-US.restext:862 | "However, in the ensuing m..."
+    # ../en-US.restext:864 | "However, in the ensuing m..."
     value: 'restext://Witchres3_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:10304
 - type: 'break'
@@ -89,24 +89,24 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:10327
     - type: 'text'
-      # ../en-US.restext:869 | "The innocent {wsuspect} c..."
+      # ../en-US.restext:871 | "The innocent {wsuspect} c..."
       value: 'restext://Witchres3_010'
     # ../.source/FearoftheUnknown_Eng_v15.cs:10330
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:10332
     - type: 'text'
-      # ../en-US.restext:870 | "Move the {icon:angrymob_i..."
+      # ../en-US.restext:872 | "Move the {icon:angrymob_i..."
       value: 'restext://Witchres3_011'
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:10340
     - type: 'text'
-      # ../en-US.restext:867 | "**{falsewitch}** may **pe..."
+      # ../en-US.restext:869 | "**{falsewitch}** may **pe..."
       value: 'restext://Witchres3_008'
     # ../.source/FearoftheUnknown_Eng_v15.cs:10350
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:10354
     - type: 'text'
-      # ../en-US.restext:868 | "**{falsewitch}** must the..."
+      # ../en-US.restext:870 | "**{falsewitch}** must the..."
       value: 'restext://Witchres3_009'

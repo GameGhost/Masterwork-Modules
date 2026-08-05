@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Gen1-CreepyTrackRes'
-# ../en-US.restext:1616 | "A Seedy Arrangement"
+# ../en-US.restext:1624 | "A Seedy Arrangement"
 title: 'restext://Gen1_CreepyTrackRes_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:21136
 - type: 'text'
-  # ../en-US.restext:315 | "**Carefully hand this sto..."
+  # ../en-US.restext:319 | "**Carefully hand this sto..."
   value: 'restext://Storybook_HandToGen1Creep_Private'
 # ../.source/TheCostofDisease_Eng_v10.cs:21141
 - type: 'break'
@@ -18,7 +18,7 @@ nodes:
   # ../en-US.restext:56 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:352 | "Close"
+  # ../en-US.restext:356 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
@@ -29,21 +29,21 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:21159
     - type: 'text'
-      # ../en-US.restext:1617 | "It was unorthodox for {ge..."
+      # ../en-US.restext:1625 | "It was unorthodox for {ge..."
       value: 'restext://Gen1_CreepyTrackRes_003'
     # ../.source/TheCostofDisease_Eng_v10.cs:21164
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:21166
     - type: 'text'
-      # ../en-US.restext:1624 | "\"Your estate is simply e..."
+      # ../en-US.restext:1632 | "\"Your estate is simply e..."
       value: 'restext://Gen1_CreepyTrackRes_010'
     # ../.source/TheCostofDisease_Eng_v10.cs:21167
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:21169
     - type: 'text'
-      # ../en-US.restext:1625 | "The representative from t..."
+      # ../en-US.restext:1633 | "The representative from t..."
       value: 'restext://Gen1_CreepyTrackRes_011'
     # ../.source/TheCostofDisease_Eng_v10.cs:21172
     - type: 'break'
@@ -56,50 +56,50 @@ nodes:
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:21179
     - type: 'link'
-      # ../en-US.restext:1626 | "Accept the offer."
+      # ../en-US.restext:1634 | "Accept the offer."
       label: 'restext://Gen1_CreepyTrackRes_012'
       target: 'Gen1CreepyYes' # ./00296-Gen1CreepyYes.mws.yaml
       snapshot: true
     # ../.source/TheCostofDisease_Eng_v10.cs:21180
     - type: 'text'
-      # ../en-US.restext:1627 | "(To gain $2.)"
+      # ../en-US.restext:1635 | "(To gain $2.)"
       value: 'restext://Gen1_CreepyTrackRes_013'
     # ../.source/TheCostofDisease_Eng_v10.cs:21181
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:21182
     - type: 'text'
-      # ../en-US.restext:357 | "OR"
+      # ../en-US.restext:361 | "OR"
       value: 'restext://UIButton_Or'
     # ../.source/TheCostofDisease_Eng_v10.cs:21183
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:21184
     - type: 'link'
-      # ../en-US.restext:1628 | "Refuse the offer."
+      # ../en-US.restext:1636 | "Refuse the offer."
       label: 'restext://Gen1_CreepyTrackRes_014'
       target: 'Gen1CreepyNo' # ./00297-Gen1CreepyNo.mws.yaml
       snapshot: true
     # ../.source/TheCostofDisease_Eng_v10.cs:21185
     - type: 'text'
-      # ../en-US.restext:1629 | "(To avoid a debt in the f..."
+      # ../en-US.restext:1637 | "(To avoid a debt in the f..."
       value: 'restext://Gen1_CreepyTrackRes_015'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:21191
     - type: 'text'
-      # ../en-US.restext:1617 | "It was unorthodox for {ge..."
+      # ../en-US.restext:1625 | "It was unorthodox for {ge..."
       value: 'restext://Gen1_CreepyTrackRes_003'
     # ../.source/TheCostofDisease_Eng_v10.cs:21196
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:21198
     - type: 'text'
-      # ../en-US.restext:1618 | "\"Your reputation is know..."
+      # ../en-US.restext:1626 | "\"Your reputation is know..."
       value: 'restext://Gen1_CreepyTrackRes_004'
     # ../.source/TheCostofDisease_Eng_v10.cs:21199
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:21201
     - type: 'text'
-      # ../en-US.restext:1619 | "This was highly controver..."
+      # ../en-US.restext:1627 | "This was highly controver..."
       value: 'restext://Gen1_CreepyTrackRes_005'
     # ../.source/TheCostofDisease_Eng_v10.cs:21208
     - type: 'break'
@@ -113,29 +113,29 @@ nodes:
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:21216
     - type: 'link'
-      # ../en-US.restext:1620 | "Accept."
+      # ../en-US.restext:1628 | "Accept."
       label: 'restext://Gen1_CreepyTrackRes_006'
       target: 'Gen1CreepyYes' # ./00296-Gen1CreepyYes.mws.yaml
       snapshot: true
     # ../.source/TheCostofDisease_Eng_v10.cs:21217
     - type: 'text'
-      # ../en-US.restext:1621 | "(To take a Perform Experi..."
+      # ../en-US.restext:1629 | "(To take a Perform Experi..."
       value: 'restext://Gen1_CreepyTrackRes_007'
     # ../.source/TheCostofDisease_Eng_v10.cs:21218
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:21219
     - type: 'text'
-      # ../en-US.restext:357 | "OR"
+      # ../en-US.restext:361 | "OR"
       value: 'restext://UIButton_Or'
     # ../.source/TheCostofDisease_Eng_v10.cs:21220
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:21221
     - type: 'link'
-      # ../en-US.restext:1622 | "Refuse."
+      # ../en-US.restext:1630 | "Refuse."
       label: 'restext://Gen1_CreepyTrackRes_008'
       target: 'Gen1CreepyNo' # ./00297-Gen1CreepyNo.mws.yaml
       snapshot: true
     # ../.source/TheCostofDisease_Eng_v10.cs:21222
     - type: 'text'
-      # ../en-US.restext:1623 | "(If you cannot or choose ..."
+      # ../en-US.restext:1631 | "(If you cannot or choose ..."
       value: 'restext://Gen1_CreepyTrackRes_009'

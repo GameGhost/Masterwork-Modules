@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Devastation1'
-# ../en-US.restext:326 | "Devastation"
+# ../en-US.restext:330 | "Devastation"
 title: 'restext://Title_Devastation'
-# ../en-US.restext:327 | "Early Years"
+# ../en-US.restext:331 | "Early Years"
 subtitle: 'restext://Title_EarlyYears'
 tags:
 - 'HUB'
@@ -21,7 +21,7 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:2107
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:351 | "Accept"
+    # ../en-US.restext:355 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     - type: 'conditional'
@@ -48,16 +48,16 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:2126
       - type: 'text'
-        # ../en-US.restext:406 | "**12**"
+        # ../en-US.restext:414 | "**12**"
         value: 'restext://Devastation1_004'
       else:
       # ../.source/TheCostofDisease_Eng_v10.cs:2134
       - type: 'text'
-        # ../en-US.restext:405 | "**13**"
+        # ../en-US.restext:413 | "**13**"
         value: 'restext://Devastation1_003'
     # ../.source/TheCostofDisease_Eng_v10.cs:2137
     - type: 'text'
-      # ../en-US.restext:407 | " of the Village Chronicle..."
+      # ../en-US.restext:415 | " of the Village Chronicle..."
       value: 'restext://Devastation1_005'
     # ../.source/TheCostofDisease_Eng_v10.cs:2140
     - type: 'conditional'
@@ -89,7 +89,7 @@ nodes:
             expr: 'tracker + 3'
     # ../.source/TheCostofDisease_Eng_v10.cs:2153
     - type: 'text'
-      # ../en-US.restext:408 | "**{tracker}** and the {ic..."
+      # ../en-US.restext:416 | "**{tracker}** and the {ic..."
       value: 'restext://Devastation1_006'
     # ../.source/TheCostofDisease_Eng_v10.cs:2158
     - type: 'conditional'
@@ -107,24 +107,24 @@ nodes:
         value: 'restext://Directive_MoveOneSpaceLeft'
     # ../.source/TheCostofDisease_Eng_v10.cs:2170
     - type: 'text'
-      # ../en-US.restext:409 | " Pass the Start Player to..."
+      # ../en-US.restext:417 | " Pass the Start Player to..."
       value: 'restext://Devastation1_007'
 # ../.source/TheCostofDisease_Eng_v10.cs:2175
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:2179
 - type: 'section'
-  # ../en-US.restext:410 | "{icon:storybook} **Clande..."
+  # ../en-US.restext:418 | "{icon:storybook} **Clande..."
   title: 'restext://Devastation1_008'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:2188
   - type: 'text'
-    # ../en-US.restext:411 | "When a player reveals the..."
+    # ../en-US.restext:419 | "When a player reveals the..."
     value: 'restext://Devastation1_009'
   # ../.source/TheCostofDisease_Eng_v10.cs:2190
   - type: 'link'
-    # ../en-US.restext:412 | "click here for a special ..."
+    # ../en-US.restext:420 | "click here for a special ..."
     label: 'restext://Devastation1_010'
     target: 'Envelopes' # ./00073-Envelopes.mws.yaml
     snapshot: true
@@ -163,7 +163,7 @@ nodes:
     # ../en-US.restext:49 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
     target: 'Changes' # ./00031-Changes.mws.yaml
-    # ../en-US.restext:356 | "End of Round"
+    # ../en-US.restext:360 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -172,10 +172,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:305 | "The Early Years of the Se..."
+      # ../en-US.restext:309 | "The Early Years of the Se..."
       value: 'restext://Round_GenerationII_EarlyEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:309 | "Then, perform all Start o..."
+      # ../en-US.restext:313 | "Then, perform all Start o..."
       value: 'restext://Round_StartMiddleYears_Rule'

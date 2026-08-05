@@ -6,7 +6,7 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:2529
 - type: 'text'
-  # ../en-US.restext:247 | "**Carefully pick up this ..."
+  # ../en-US.restext:249 | "**Carefully pick up this ..."
   value: 'restext://Storybook_PickUpDevicePrivate'
 # ../.source/ATimeofWar_Eng_v8.cs:2533
 - type: 'assign'
@@ -20,7 +20,7 @@ nodes:
   # ../en-US.restext:40 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:282 | "Close"
+  # ../en-US.restext:284 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
@@ -30,14 +30,14 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:2602
     - type: 'text'
-      # ../en-US.restext:400 | "The snaggle-toothed gentl..."
+      # ../en-US.restext:402 | "The snaggle-toothed gentl..."
       value: 'restext://RumorD5_005'
     # ../.source/ATimeofWar_Eng_v8.cs:2605
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:2607
     - type: 'text'
-      # ../en-US.restext:401 | "Suddenly, he reached into..."
+      # ../en-US.restext:403 | "Suddenly, he reached into..."
       value: 'restext://RumorD5_006'
     # ../.source/ATimeofWar_Eng_v8.cs:2611
     - type: 'break'
@@ -48,7 +48,7 @@ nodes:
       # ../en-US.restext:33 | "When you have finished re..."
       label: 'restext://Click_FinishedReadingContinue'
       target: 'RumorCreep' # ./00086-RumorCreep.mws.yaml
-      # ../en-US.restext:282 | "Close"
+      # ../en-US.restext:284 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
       header:
@@ -59,26 +59,26 @@ nodes:
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:2555
       - type: 'text'
-        # ../en-US.restext:399 | "Gain a {icon:s3_woodenfig..."
+        # ../en-US.restext:401 | "Gain a {icon:s3_woodenfig..."
         value: 'restext://RumorD5_004'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:2620
     - type: 'text'
-      # ../en-US.restext:396 | "The snaggle-toothed gentl..."
+      # ../en-US.restext:398 | "The snaggle-toothed gentl..."
       value: 'restext://RumorD5_001'
     # ../.source/ATimeofWar_Eng_v8.cs:2623
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:2625
     - type: 'text'
-      # ../en-US.restext:397 | "\"Repent, young fisher,\"..."
+      # ../en-US.restext:399 | "\"Repent, young fisher,\"..."
       value: 'restext://RumorD5_002'
     # ../.source/ATimeofWar_Eng_v8.cs:2627
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:2629
     - type: 'text'
-      # ../en-US.restext:398 | "I felt it may have been a..."
+      # ../en-US.restext:400 | "I felt it may have been a..."
       value: 'restext://RumorD5_003'
     # ../.source/ATimeofWar_Eng_v8.cs:2632
     - type: 'break'
@@ -89,7 +89,7 @@ nodes:
       # ../en-US.restext:33 | "When you have finished re..."
       label: 'restext://Click_FinishedReadingContinue'
       target: 'RumorCreep' # ./00086-RumorCreep.mws.yaml
-      # ../en-US.restext:282 | "Close"
+      # ../en-US.restext:284 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
       header:
@@ -100,5 +100,5 @@ nodes:
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:2582
       - type: 'text'
-        # ../en-US.restext:399 | "Gain a {icon:s3_woodenfig..."
+        # ../en-US.restext:401 | "Gain a {icon:s3_woodenfig..."
         value: 'restext://RumorD5_004'

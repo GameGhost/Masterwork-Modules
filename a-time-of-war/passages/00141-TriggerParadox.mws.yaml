@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TriggerParadox'
-# ../en-US.restext:1194 | "Ease of Anxiety"
+# ../en-US.restext:1199 | "Ease of Anxiety"
 title: 'restext://TriggerParadox_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:15513
 - type: 'text'
-  # ../en-US.restext:1195 | "The feeling was unlike an..."
+  # ../en-US.restext:1200 | "The feeling was unlike an..."
   value: 'restext://TriggerParadox_002'
 # ../.source/ATimeofWar_Eng_v8.cs:15514
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:15516
 - type: 'text'
-  # ../en-US.restext:1196 | "Unfettered by the pressur..."
+  # ../en-US.restext:1201 | "Unfettered by the pressur..."
   value: 'restext://TriggerParadox_003'
 # ../.source/ATimeofWar_Eng_v8.cs:15518
 - type: 'break'
@@ -25,7 +25,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   layout: 'reveal'
-  # ../en-US.restext:282 | "Close"
+  # ../en-US.restext:284 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -53,7 +53,7 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:284 | "Continue"
+        # ../en-US.restext:286 | "Continue"
         label: 'restext://UIButton_Continue'
         target: 'TimeTravel' # ./00017-TimeTravel.mws.yaml
         snapshot: true
@@ -68,7 +68,7 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:284 | "Continue"
+        # ../en-US.restext:286 | "Continue"
         label: 'restext://UIButton_Continue'
         target: 'TimeTravel2' # ./00032-TimeTravel2.mws.yaml
         snapshot: true
@@ -86,7 +86,7 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:284 | "Continue"
+      # ../en-US.restext:286 | "Continue"
       label: 'restext://UIButton_Continue'
       target: 'TimeTravel3' # ./00018-TimeTravel3.mws.yaml
       snapshot: true
@@ -96,7 +96,7 @@ nodes:
     expr: 'rand_between(3, 4, "TriggerParadox_0")'
   # ../.source/ATimeofWar_Eng_v8.cs:15586
   - type: 'text'
-    # ../en-US.restext:1197 | "Gain **{_rnd_TriggerParad..."
+    # ../en-US.restext:1202 | "Gain **{_rnd_TriggerParad..."
     value: 'restext://TriggerParadox_004'
     lets:
     - '_rnd_TriggerParadox_0'
