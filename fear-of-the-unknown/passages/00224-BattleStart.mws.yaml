@@ -105,19 +105,23 @@ nodes:
     - type: 'assign'
       var: 'tempagi'
       expr: 'agiE'
+# ../.source/FearoftheUnknown_Eng_v15.cs:25848
+- type: 'let'
+  var: '_rnd_BattleStart_3'
+  expr: 'rand_between(1, 40, "BattleStart_1")'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25806
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25848
 - type: 'conditional'
-  if: 'macros1.random(1, 40) > tempagi'
+  if: '_rnd_BattleStart_3 > tempagi'
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:25850
   - type: 'let'
-    var: '_rpl_BattleStart_3'
+    var: '_rpl_BattleStart_4'
     expr: 'target.replace("_1", "").replace("_2", "").replace("_3", "").replace("_4", "").replace("_5", "")'
   # ../.source/FearoftheUnknown_Eng_v15.cs:25853
   - type: 'let'
-    var: '_rnd_BattleStart_4'
+    var: '_rnd_BattleStart_5'
     # ../en-US.restext:1927 | BattleStart_023 | "is unable to avoid the at..."
     # ../en-US.restext:1928 | BattleStart_024 | "absorbs the crushing impa..."
     # ../en-US.restext:1929 | BattleStart_025 | "spins wildly in the air b..."
@@ -128,14 +132,14 @@ nodes:
     # ../en-US.restext:1934 | BattleStart_030 | "roars with a sound that r..."
     # ../en-US.restext:1935 | BattleStart_031 | "loses control of its left..."
     # ../en-US.restext:1936 | BattleStart_032 | "crumples to the ground fo..."
-    expr: '["restext://BattleStart_023", "restext://BattleStart_024", "restext://BattleStart_025", "restext://BattleStart_026", "restext://BattleStart_027", "restext://BattleStart_028", "restext://BattleStart_029", "restext://BattleStart_030", "restext://BattleStart_031", "restext://BattleStart_032"].shuffled("BattleStart_1")[0]'
+    expr: '["restext://BattleStart_023", "restext://BattleStart_024", "restext://BattleStart_025", "restext://BattleStart_026", "restext://BattleStart_027", "restext://BattleStart_028", "restext://BattleStart_029", "restext://BattleStart_030", "restext://BattleStart_031", "restext://BattleStart_032"].shuffled("BattleStart_2")[0]'
   # ../.source/FearoftheUnknown_Eng_v15.cs:25850
   - type: 'text'
-    # ../en-US.restext:1937 | "{_rpl_BattleStart_3} {_rn..."
+    # ../en-US.restext:1937 | "{_rpl_BattleStart_4} {_rn..."
     value: 'restext://BattleStart_033'
     lets:
-    - '_rpl_BattleStart_3'
-    - '_rnd_BattleStart_4'
+    - '_rpl_BattleStart_4'
+    - '_rnd_BattleStart_5'
   # ../.source/FearoftheUnknown_Eng_v15.cs:25865
   - type: 'conditional'
     if: 'target == warriorA'
@@ -206,25 +210,25 @@ nodes:
     expr: '100'
   # ../.source/FearoftheUnknown_Eng_v15.cs:25895
   - type: 'let'
-    var: '_rpl_BattleStart_5'
+    var: '_rpl_BattleStart_6'
     expr: 'target.replace("_1", "").replace("_2", "").replace("_3", "").replace("_4", "").replace("_5", "")'
   # ../.source/FearoftheUnknown_Eng_v15.cs:25898
   - type: 'let'
-    var: '_rnd_BattleStart_6'
+    var: '_rnd_BattleStart_7'
     # ../en-US.restext:1920 | BattleStart_016 | "dodges the attack!"
     # ../en-US.restext:1921 | BattleStart_017 | "easily avoids the assault..."
     # ../en-US.restext:1922 | BattleStart_018 | "slides underneath the attack!"
     # ../en-US.restext:1923 | BattleStart_019 | "spins to the side unharmed!"
     # ../en-US.restext:1924 | BattleStart_020 | "ducks under the attack ju..."
     # ../en-US.restext:1925 | BattleStart_021 | "is momentarily enveloped ..."
-    expr: '["restext://BattleStart_016", "restext://BattleStart_017", "restext://BattleStart_018", "restext://BattleStart_019", "restext://BattleStart_020", "restext://BattleStart_021"].shuffled("BattleStart_2")[0]'
+    expr: '["restext://BattleStart_016", "restext://BattleStart_017", "restext://BattleStart_018", "restext://BattleStart_019", "restext://BattleStart_020", "restext://BattleStart_021"].shuffled("BattleStart_3")[0]'
   # ../.source/FearoftheUnknown_Eng_v15.cs:25895
   - type: 'text'
-    # ../en-US.restext:1926 | "{_rpl_BattleStart_5} {_rn..."
+    # ../en-US.restext:1926 | "{_rpl_BattleStart_6} {_rn..."
     value: 'restext://BattleStart_022'
     lets:
-    - '_rpl_BattleStart_5'
-    - '_rnd_BattleStart_6'
+    - '_rpl_BattleStart_6'
+    - '_rnd_BattleStart_7'
   # ../.source/FearoftheUnknown_Eng_v15.cs:25899
   - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25901
@@ -237,33 +241,33 @@ nodes:
     expr: 'elimcount + 1'
   # ../.source/FearoftheUnknown_Eng_v15.cs:25904
   - type: 'let'
-    var: '_rpl_BattleStart_7'
+    var: '_rpl_BattleStart_8'
     expr: 'target.replace("_1", "").replace("_2", "").replace("_3", "").replace("_4", "").replace("_5", "")'
   # ../.source/FearoftheUnknown_Eng_v15.cs:25907
   - type: 'let'
-    var: '_rnd_BattleStart_8'
+    var: '_rnd_BattleStart_9'
     # ../en-US.restext:1938 | BattleStart_034 | "falls to the floor in a h..."
     # ../en-US.restext:1939 | BattleStart_035 | "explodes, sending shrapne..."
     # ../en-US.restext:1940 | BattleStart_036 | "falls over with a loud thud"
     # ../en-US.restext:1941 | BattleStart_037 | "pirouettes in place drama..."
     # ../en-US.restext:1942 | BattleStart_038 | "springs a leak in its cor..."
     # ../en-US.restext:1943 | BattleStart_039 | "raises a metal fist towar..."
-    expr: '["restext://BattleStart_034", "restext://BattleStart_035", "restext://BattleStart_036", "restext://BattleStart_037", "restext://BattleStart_038", "restext://BattleStart_039"].shuffled("BattleStart_3")[0]'
+    expr: '["restext://BattleStart_034", "restext://BattleStart_035", "restext://BattleStart_036", "restext://BattleStart_037", "restext://BattleStart_038", "restext://BattleStart_039"].shuffled("BattleStart_4")[0]'
   # ../.source/FearoftheUnknown_Eng_v15.cs:25909
   - type: 'let'
-    var: '_rnd_BattleStart_9'
+    var: '_rnd_BattleStart_10'
     # ../en-US.restext:1944 | BattleStart_040 | "eliminated!"
     # ../en-US.restext:1945 | BattleStart_041 | "defeated!"
     # ../en-US.restext:1946 | BattleStart_042 | "out of commission!"
-    expr: '["restext://BattleStart_040", "restext://BattleStart_041", "restext://BattleStart_042"].shuffled("BattleStart_4")[0]'
+    expr: '["restext://BattleStart_040", "restext://BattleStart_041", "restext://BattleStart_042"].shuffled("BattleStart_5")[0]'
   # ../.source/FearoftheUnknown_Eng_v15.cs:25904
   - type: 'text'
-    # ../en-US.restext:1947 | "{_rpl_BattleStart_7} {_rn..."
+    # ../en-US.restext:1947 | "{_rpl_BattleStart_8} {_rn..."
     value: 'restext://BattleStart_043'
     lets:
-    - '_rpl_BattleStart_7'
-    - '_rnd_BattleStart_8'
+    - '_rpl_BattleStart_8'
     - '_rnd_BattleStart_9'
+    - '_rnd_BattleStart_10'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25911
 - type: 'break'
   style: 'paragraph'
