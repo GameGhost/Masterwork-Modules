@@ -8,7 +8,7 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:26122
 - type: 'conditional'
-  if: 'elim["1st"] == warriorA'
+  if: 'elim[0] == warriorA'
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:26124
   - type: 'text'
@@ -16,7 +16,7 @@ nodes:
     value: 'restext://BattleEnd_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26126
 - type: 'conditional'
-  if: 'elim["1st"] == warriorB'
+  if: 'elim[0] == warriorB'
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:26128
   - type: 'text'
@@ -24,7 +24,7 @@ nodes:
     value: 'restext://BattleEnd_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26130
 - type: 'conditional'
-  if: 'elim["1st"] == warriorC'
+  if: 'elim[0] == warriorC'
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:26132
   - type: 'text'
@@ -32,7 +32,7 @@ nodes:
     value: 'restext://BattleEnd_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26134
 - type: 'conditional'
-  if: 'elim["1st"] == warriorD'
+  if: 'elim[0] == warriorD'
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:26136
   - type: 'text'
@@ -40,7 +40,7 @@ nodes:
     value: 'restext://BattleEnd_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26138
 - type: 'conditional'
-  if: 'elim["1st"] == warriorE'
+  if: 'elim[0] == warriorE'
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:26140
   - type: 'text'
@@ -55,7 +55,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26150
 - type: 'conditional'
-  if: 'elim["1st"] == warriorA'
+  if: 'elim[0] == warriorA'
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:26153
   - type: 'let'
@@ -68,7 +68,7 @@ nodes:
     - '_rpl_BattleEnd_0'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26156
 - type: 'conditional'
-  if: 'elim["1st"] == warriorB'
+  if: 'elim[0] == warriorB'
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:26159
   - type: 'let'
@@ -81,7 +81,7 @@ nodes:
     - '_rpl_BattleEnd_1'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26162
 - type: 'conditional'
-  if: 'elim["1st"] == warriorC'
+  if: 'elim[0] == warriorC'
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:26165
   - type: 'let'
@@ -94,7 +94,7 @@ nodes:
     - '_rpl_BattleEnd_2'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26168
 - type: 'conditional'
-  if: 'elim["1st"] == warriorD'
+  if: 'elim[0] == warriorD'
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:26171
   - type: 'let'
@@ -107,7 +107,7 @@ nodes:
     - '_rpl_BattleEnd_3'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26174
 - type: 'conditional'
-  if: 'elim["1st"] == warriorE'
+  if: 'elim[0] == warriorE'
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:26177
   - type: 'let'
@@ -149,35 +149,35 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:26213
   - type: 'conditional'
-    if: 'elim["1st"] == warriorA'
+    if: 'elim[0] == warriorA'
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:26215
     - type: 'text'
       value: '{nameA}'
   # ../.source/FearoftheUnknown_Eng_v15.cs:26217
   - type: 'conditional'
-    if: 'elim["1st"] == warriorB'
+    if: 'elim[0] == warriorB'
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:26219
     - type: 'text'
       value: '{nameB}'
   # ../.source/FearoftheUnknown_Eng_v15.cs:26221
   - type: 'conditional'
-    if: 'elim["1st"] == warriorC'
+    if: 'elim[0] == warriorC'
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:26223
     - type: 'text'
       value: '{nameC}'
   # ../.source/FearoftheUnknown_Eng_v15.cs:26225
   - type: 'conditional'
-    if: 'elim["1st"] == warriorD'
+    if: 'elim[0] == warriorD'
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:26227
     - type: 'text'
       value: '{nameD}'
   # ../.source/FearoftheUnknown_Eng_v15.cs:26229
   - type: 'conditional'
-    if: 'elim["1st"] == warriorE'
+    if: 'elim[0] == warriorE'
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:26231
     - type: 'text'
