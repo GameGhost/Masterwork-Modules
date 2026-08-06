@@ -8,7 +8,7 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:23878
 - type: 'conditional'
-  if: 'String.IsNullOrEmpty(meet)'
+  if: '!meet'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:23878
   - type: 'assign'

@@ -95,7 +95,7 @@ nodes:
         expr: '"restext://Faction_OrderOfStHubertus_Plain"'
 # ../.source/TheCostofDisease_Eng_v10.cs:12955
 - type: 'conditional'
-  if: '!most || String.IsNullOrEmpty(most)'
+  if: '!most'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:12957
   - type: 'goto'

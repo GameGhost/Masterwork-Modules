@@ -80,7 +80,7 @@ nodes:
       style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:17939
   - type: 'conditional'
-    if: '!bhome || String.IsNullOrEmpty(bhome)'
+    if: '!bhome'
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:17943
     - type: 'text'
@@ -105,7 +105,7 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:17965
   - type: 'conditional'
-    if: '!bhome || String.IsNullOrEmpty(bhome)'
+    if: '!bhome'
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:17968
     - type: 'link'

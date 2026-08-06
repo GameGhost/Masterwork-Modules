@@ -41,7 +41,7 @@ nodes:
   value: 'restext://ATOW_End7_006'
 # ../.source/ATimeofWar_Eng_v8.cs:25420
 - type: 'conditional'
-  if: '!String.IsNullOrEmpty(newmeat)'
+  if: 'newmeat'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:25421
   - type: 'text'
@@ -52,7 +52,7 @@ nodes:
   value: 'restext://ATOW_End7_007'
 # ../.source/ATimeofWar_Eng_v8.cs:25424
 - type: 'conditional'
-  if: '!String.IsNullOrEmpty(newmeat)'
+  if: 'newmeat'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:25425
   - type: 'text'

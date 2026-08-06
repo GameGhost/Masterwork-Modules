@@ -6,7 +6,7 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:34995
 - type: 'conditional'
-  if: '!bhome || String.IsNullOrEmpty(bhome)'
+  if: '!bhome'
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:34997
   - type: 'goto'

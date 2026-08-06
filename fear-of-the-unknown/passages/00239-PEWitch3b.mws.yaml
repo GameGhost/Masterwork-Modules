@@ -17,7 +17,7 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:27334
   - type: 'conditional'
-    if: '!fate1 || String.IsNullOrEmpty(fate1)'
+    if: '!fate1'
     then: []
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:27339
@@ -35,7 +35,7 @@ nodes:
       style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:27362
   - type: 'conditional'
-    if: '!fate2 || String.IsNullOrEmpty(fate2)'
+    if: '!fate2'
     then: []
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:27367
@@ -53,7 +53,7 @@ nodes:
       style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:27390
   - type: 'conditional'
-    if: '!fate3 || String.IsNullOrEmpty(fate3)'
+    if: '!fate3'
     then: []
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:27395
@@ -71,7 +71,7 @@ nodes:
       style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:27418
   - type: 'conditional'
-    if: '!fate4 || String.IsNullOrEmpty(fate4)'
+    if: '!fate4'
     then: []
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:27423
@@ -89,7 +89,7 @@ nodes:
       style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:27446
   - type: 'conditional'
-    if: '!fate5 || String.IsNullOrEmpty(fate5)'
+    if: '!fate5'
     then: []
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:27451
@@ -107,7 +107,7 @@ nodes:
       style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:27474
   - type: 'conditional'
-    if: '!fate6 || String.IsNullOrEmpty(fate6)'
+    if: '!fate6'
     then: []
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:27479

@@ -34,7 +34,7 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:23781
   - type: 'conditional'
-    if: '!allyA || String.IsNullOrEmpty(allyA)'
+    if: '!allyA'
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:23783
     - type: 'assign'
@@ -64,7 +64,7 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:23798
   - type: 'conditional'
-    if: '!allyB || String.IsNullOrEmpty(allyB)'
+    if: '!allyB'
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:23800
     - type: 'assign'
@@ -98,7 +98,7 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:23815
     - type: 'conditional'
-      if: '!allyC || String.IsNullOrEmpty(allyC)'
+      if: '!allyC'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:23817
       - type: 'assign'
@@ -133,7 +133,7 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:23832
     - type: 'conditional'
-      if: '!allyD || String.IsNullOrEmpty(allyD)'
+      if: '!allyD'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:23834
       - type: 'assign'
@@ -165,7 +165,7 @@ nodes:
     onclick:
     # ../.source/TheCostofDisease_Eng_v10.cs:23849
     - type: 'conditional'
-      if: '!allyE || String.IsNullOrEmpty(allyE)'
+      if: '!allyE'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:23851
       - type: 'assign'
