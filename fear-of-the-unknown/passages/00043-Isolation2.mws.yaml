@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Isolation2'
-# ../en-US.restext:362 | "Walled City"
+# ../en-US.restext:364 | "Walled City"
 title: 'restext://Title_WalledCity'
-# ../en-US.restext:341 | "Middle Years"
+# ../en-US.restext:343 | "Middle Years"
 subtitle: 'restext://Title_MiddleYears'
 tags:
 - 'HUB'
@@ -90,13 +90,13 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6861
 - type: 'section'
-  # ../en-US.restext:731 | "**The Experiment**"
+  # ../en-US.restext:733 | "**The Experiment**"
   title: 'restext://Isolation2_004'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6869
   - type: 'text'
-    # ../en-US.restext:732 | "Anytime a player completes "
+    # ../en-US.restext:734 | "Anytime a player completes "
     value: 'restext://Isolation2_005'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6872
   - type: 'switch'
@@ -106,22 +106,22 @@ nodes:
       nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:6874
       - type: 'text'
-        # ../en-US.restext:734 | "**a Biology**"
+        # ../en-US.restext:736 | "**a Biology**"
         value: 'restext://Isolation2_007'
     - match: 'chem'
       nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:6878
       - type: 'text'
-        # ../en-US.restext:735 | "**a Chemistry**"
+        # ../en-US.restext:737 | "**a Chemistry**"
         value: 'restext://Isolation2_008'
     default:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6882
     - type: 'text'
-      # ../en-US.restext:733 | "**an Engineering**"
+      # ../en-US.restext:735 | "**an Engineering**"
       value: 'restext://Isolation2_006'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6884
   - type: 'text'
-    # ../en-US.restext:736 | " **Experiment**, that pla..."
+    # ../en-US.restext:738 | " **Experiment**, that pla..."
     value: 'restext://Isolation2_009'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6890
   - type: 'conditional'
@@ -129,7 +129,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6894
     - type: 'text'
-      # ../en-US.restext:737 | "_Only 1 token can be coll..."
+      # ../en-US.restext:739 | "_Only 1 token can be coll..."
       value: 'restext://Isolation2_010'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6897
   - type: 'conditional'
@@ -137,7 +137,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6899
     - type: 'text'
-      # ../en-US.restext:738 | "The player who gains the ..."
+      # ../en-US.restext:740 | "The player who gains the ..."
       value: 'restext://Isolation2_011'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6912
   - type: 'break'
@@ -148,7 +148,7 @@ nodes:
     # ../en-US.restext:35 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
     target: 'SmugEvent2' # ./00094-SmugEvent2.mws.yaml
-    # ../en-US.restext:369 | "End of Round"
+    # ../en-US.restext:371 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'

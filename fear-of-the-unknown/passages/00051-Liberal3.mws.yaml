@@ -4,7 +4,7 @@ format: 'mws/0.4'
 passage_id: 'Liberal3'
 # ../en-US.restext:325 | "Acceptance"
 title: 'restext://Title_Acceptance'
-# ../en-US.restext:338 | "Late Years"
+# ../en-US.restext:340 | "Late Years"
 subtitle: 'restext://Title_LateYears'
 tags:
 - 'HUB'
@@ -24,7 +24,7 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7947
 - type: 'section'
-  # ../en-US.restext:768 | "**RehabilitationToken**"
+  # ../en-US.restext:770 | "**RehabilitationToken**"
   title: 'restext://Liberal3_001'
   style: 'hub-card'
   content:
@@ -77,7 +77,7 @@ nodes:
         style: 'paragraph'
       # ../.source/FearoftheUnknown_Eng_v15.cs:8015
       - type: 'text'
-        # ../en-US.restext:769 | "At the end of each round,..."
+        # ../en-US.restext:771 | "At the end of each round,..."
         value: 'restext://Liberal3_002'
       # ../.source/FearoftheUnknown_Eng_v15.cs:8022
       - type: 'link'
@@ -126,7 +126,7 @@ nodes:
         # ../en-US.restext:33 | "Click here at the End of ..."
         label: 'restext://Click_EndGeneration_FinalScoringDetermineFate'
         target: 'LiberalBonus' # ./00093-LiberalBonus.mws.yaml
-        # ../en-US.restext:369 | "End of Round"
+        # ../en-US.restext:371 | "End of Round"
         okay: 'restext://UIButton_EndOfRound'
         onclose:
         - type: 'assign'
@@ -146,10 +146,10 @@ nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:8081
       - type: 'popup'
         layout: 'end_of_round'
-        # ../en-US.restext:770 | "Click here at the end of ..."
+        # ../en-US.restext:772 | "Click here at the end of ..."
         label: 'restext://Liberal3_003'
         target: 'Expedition1' # ./00049-Expedition1.mws.yaml
-        # ../en-US.restext:369 | "End of Round"
+        # ../en-US.restext:371 | "End of Round"
         okay: 'restext://UIButton_EndOfRound'
         onclose:
         - type: 'assign'
@@ -172,7 +172,7 @@ nodes:
       # ../en-US.restext:33 | "Click here at the End of ..."
       label: 'restext://Click_EndGeneration_FinalScoringDetermineFate'
       target: 'LiberalBonus' # ./00093-LiberalBonus.mws.yaml
-      # ../en-US.restext:369 | "End of Round"
+      # ../en-US.restext:371 | "End of Round"
       okay: 'restext://UIButton_EndOfRound'
       onclose:
       - type: 'assign'

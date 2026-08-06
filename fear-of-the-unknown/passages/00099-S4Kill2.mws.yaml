@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S4Kill2'
-# ../en-US.restext:1077 | "Accuse!"
+# ../en-US.restext:1079 | "Accuse!"
 title: 'restext://S4Kill2_001'
 layout: 'narration'
 nodes:
@@ -22,20 +22,20 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12846
 - type: 'text'
-  # ../en-US.restext:1078 | "YAY: Vote to kill the **B..."
+  # ../en-US.restext:1080 | "YAY: Vote to kill the **B..."
   value: 'restext://S4Kill2_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12851
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12852
 - type: 'text'
-  # ../en-US.restext:1079 | "NAY: Vote to kill the **B..."
+  # ../en-US.restext:1081 | "NAY: Vote to kill the **B..."
   value: 'restext://S4Kill2_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12857
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12859
 - type: 'text'
-  # ../en-US.restext:1080 | "Tally the vote count _(ti..."
+  # ../en-US.restext:1082 | "Tally the vote count _(ti..."
   value: 'restext://S4Kill2_006'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12864
 - type: 'break'
@@ -43,11 +43,11 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:12868
 - type: 'popup'
   layout: 'countdown_instructions'
-  # ../en-US.restext:1081 | "Click to start the vote..."
+  # ../en-US.restext:1083 | "Click to start the vote..."
   label: 'restext://S4Kill2_007'
   content:
   - type: 'text'
-    # ../en-US.restext:371 | "Click on the 'Start Votin..."
+    # ../en-US.restext:373 | "Click on the 'Start Votin..."
     value: 'restext://Voting_Instructions'
   - type: 'break'
     style: 'paragraph'
@@ -58,7 +58,7 @@ nodes:
     style: 'paragraph'
   - type: 'popup'
     layout: 'countdown_action'
-    # ../en-US.restext:372 | "Start Voting"
+    # ../en-US.restext:374 | "Start Voting"
     label: 'restext://Voting_StartButton'
     style: 'countdown-trigger'
     content:

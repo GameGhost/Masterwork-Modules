@@ -6,7 +6,7 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:17891
 - type: 'text'
-  # ../en-US.restext:1430 | "**Carefully hand this Sto..."
+  # ../en-US.restext:1432 | "**Carefully hand this Sto..."
   value: 'restext://ATOWSabotageIntro1_001'
 # ../.source/ATimeofWar_Eng_v8.cs:17899
 - type: 'break'
@@ -16,7 +16,7 @@ nodes:
   # ../en-US.restext:40 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:284 | "Close"
+  # ../en-US.restext:286 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
@@ -35,7 +35,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:17919
   - type: 'text'
-    # ../en-US.restext:1431 | "It was time to strike whi..."
+    # ../en-US.restext:1433 | "It was time to strike whi..."
     value: 'restext://ATOWSabotageIntro1_004'
   # ../.source/ATimeofWar_Eng_v8.cs:17924
   - type: 'assign'
@@ -68,7 +68,7 @@ nodes:
     - type: 'break'
     # ../.source/ATimeofWar_Eng_v8.cs:17937
     - type: 'link'
-      # ../en-US.restext:1432 | "I chose to sabotage one o..."
+      # ../en-US.restext:1434 | "I chose to sabotage one o..."
       label: 'restext://ATOWSabotageIntro1_007'
       target: 'SabotageSignIn1' # ./00208-SabotageSignIn1.mws.yaml
       snapshot: true

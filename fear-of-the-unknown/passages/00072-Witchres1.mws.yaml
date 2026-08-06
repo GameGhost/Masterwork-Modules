@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Witchres1'
-# ../en-US.restext:832 | "Death and Resolution"
+# ../en-US.restext:834 | "Death and Resolution"
 title: 'restext://Witchres1_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:9848
 - type: 'text'
-  # ../en-US.restext:833 | "Each player with a finger..."
+  # ../en-US.restext:835 | "Each player with a finger..."
   value: 'restext://Witchres1_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9856
 - type: 'break'
@@ -19,17 +19,17 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:9860
   - type: 'text'
-    # ../en-US.restext:834 | "The {wsuspect} points at ..."
+    # ../en-US.restext:836 | "The {wsuspect} points at ..."
     value: 'restext://Witchres1_003'
   # ../.source/FearoftheUnknown_Eng_v15.cs:9869
   - type: 'let'
     var: '_rnd_Witchres1_0'
-    # ../en-US.restext:835 | Witchres1_004 | "They claim to have seen t..."
-    # ../en-US.restext:836 | Witchres1_005 | "They state that they hope..."
+    # ../en-US.restext:837 | Witchres1_004 | "They claim to have seen t..."
+    # ../en-US.restext:838 | Witchres1_005 | "They state that they hope..."
     expr: '["restext://Witchres1_004", "restext://Witchres1_005"].shuffled("Witchres1_0")[0]'
   # ../.source/FearoftheUnknown_Eng_v15.cs:9869
   - type: 'text'
-    # ../en-US.restext:837 | "{_rnd_Witchres1_0} Includ..."
+    # ../en-US.restext:839 | "{_rnd_Witchres1_0} Includ..."
     value: 'restext://Witchres1_006'
     lets:
     - '_rnd_Witchres1_0'
@@ -38,7 +38,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9876
 - type: 'text'
-  # ../en-US.restext:838 | "Click on the player below..."
+  # ../en-US.restext:840 | "Click on the player below..."
   value: 'restext://Witchres1_007'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9883
 - type: 'break'

@@ -2,39 +2,39 @@
 ---
 format: 'mws/0.4'
 passage_id: 'PeaceIntro'
-# ../en-US.restext:588 | "GENERATION III"
+# ../en-US.restext:591 | "Peace Through War"
 title: 'restext://PeaceIntro_001'
-# ../en-US.restext:589 | "Peace Through War"
-subtitle: 'restext://PeaceIntro_002'
+# ../en-US.restext:258 | "GENERATION III"
+subtitle: 'restext://Title_GenerationIII'
 tags:
 - 'INTRO'
 layout: 'introduction'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:5614
 - type: 'text'
-  # ../en-US.restext:590 | "I arrived just in time fo..."
-  value: 'restext://PeaceIntro_003'
+  # ../en-US.restext:592 | "I arrived just in time fo..."
+  value: 'restext://PeaceIntro_002'
 # ../.source/ATimeofWar_Eng_v8.cs:5615
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:5617
 - type: 'text'
-  # ../en-US.restext:591 | "However, it was not this ..."
-  value: 'restext://PeaceIntro_004'
+  # ../en-US.restext:593 | "However, it was not this ..."
+  value: 'restext://PeaceIntro_003'
 # ../.source/ATimeofWar_Eng_v8.cs:5618
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:5620
 - type: 'text'
-  # ../en-US.restext:592 | "The government had realiz..."
-  value: 'restext://PeaceIntro_005'
+  # ../en-US.restext:594 | "The government had realiz..."
+  value: 'restext://PeaceIntro_004'
 # ../.source/ATimeofWar_Eng_v8.cs:5621
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:5623
 - type: 'text'
-  # ../en-US.restext:593 | "With my technological ars..."
-  value: 'restext://PeaceIntro_006'
+  # ../en-US.restext:595 | "With my technological ars..."
+  value: 'restext://PeaceIntro_005'
 # ../.source/ATimeofWar_Eng_v8.cs:5624
 - type: 'break'
   style: 'paragraph'
@@ -60,7 +60,7 @@ nodes:
   expr: 'rand_between(4, 5, "PeaceIntro_0")'
 # ../.source/ATimeofWar_Eng_v8.cs:5633
 - type: 'conditional'
-  # ../en-US.restext:271 | "Separatists"
+  # ../en-US.restext:273 | "Separatists"
   if: 'warloser == "restext://Title_Separatists"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:5635

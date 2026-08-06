@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'FP10VPsignin'
-# ../en-US.restext:1374 | "Local Inventor Sees Meteo..."
+# ../en-US.restext:1376 | "Local Inventor Sees Meteo..."
 title: 'restext://FP10VPsignin_001'
 layout: 'narration'
 nodes:
@@ -19,14 +19,14 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:17212
 - type: 'text'
-  # ../en-US.restext:1375 | "A local entrepreneur and ..."
+  # ../en-US.restext:1377 | "A local entrepreneur and ..."
   value: 'restext://FP10VPsignin_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:17213
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:17215
 - type: 'text'
-  # ../en-US.restext:1376 | "The entrepreneurs' spirit..."
+  # ../en-US.restext:1378 | "The entrepreneurs' spirit..."
   value: 'restext://FP10VPsignin_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:17216
 - type: 'break'
@@ -37,7 +37,7 @@ nodes:
   # ../en-US.restext:51 | "Click to return..."
   label: 'restext://Click_Return'
   target: '${round == 1 ? "Mania" : round == 2 ? "Mania2" : "Mania3"}' # ./00005-Mania.mws.yaml, ./00036-Mania2.mws.yaml, ./00037-Mania3.mws.yaml
-  # ../en-US.restext:365 | "Close"
+  # ../en-US.restext:367 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:

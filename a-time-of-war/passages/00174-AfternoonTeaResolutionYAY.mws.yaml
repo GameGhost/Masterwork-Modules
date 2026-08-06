@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'AfternoonTeaResolutionYAY'
-# ../en-US.restext:1506 | "A Destructive Success"
+# ../en-US.restext:1508 | "A Destructive Success"
 title: 'restext://AfternoonTeaResolutionYAY_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:18659
 - type: 'conditional'
-  # ../en-US.restext:268 | "Outpost"
+  # ../en-US.restext:270 | "Outpost"
   if: 'teaopt == "restext://Title_Outpost"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:18661
@@ -30,7 +30,7 @@ nodes:
     expr: '5'
 # ../.source/ATimeofWar_Eng_v8.cs:18670
 - type: 'text'
-  # ../en-US.restext:1507 | "The {teaopt} was no match..."
+  # ../en-US.restext:1509 | "The {teaopt} was no match..."
   value: 'restext://AfternoonTeaResolutionYAY_002'
 # ../.source/ATimeofWar_Eng_v8.cs:18677
 - type: 'break'
@@ -42,7 +42,7 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:18681
   - type: 'text'
-    # ../en-US.restext:1508 | "With minimal casualties, ..."
+    # ../en-US.restext:1510 | "With minimal casualties, ..."
     value: 'restext://AfternoonTeaResolutionYAY_003'
   # ../.source/ATimeofWar_Eng_v8.cs:18683
   - type: 'break'
@@ -56,7 +56,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'MartialPre3' # ./00295-MartialPre3.mws.yaml
-  # ../en-US.restext:284 | "Close"
+  # ../en-US.restext:286 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -72,20 +72,20 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:18707
       - type: 'text'
-        # ../en-US.restext:1509 | "Move the {icon:angrymob_i..."
+        # ../en-US.restext:1511 | "Move the {icon:angrymob_i..."
         value: 'restext://AfternoonTeaResolutionYAY_004'
     - if: 'players > 3'
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:18707
       - type: 'text'
-        # ../en-US.restext:1510 | "Move the {icon:angrymob_i..."
+        # ../en-US.restext:1512 | "Move the {icon:angrymob_i..."
         value: 'restext://AfternoonTeaResolutionYAY_005'
   # ../.source/ATimeofWar_Eng_v8.cs:18724
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:18726
   - type: 'text'
-    # ../en-US.restext:1511 | "All players must discard ..."
+    # ../en-US.restext:1513 | "All players must discard ..."
     value: 'restext://AfternoonTeaResolutionYAY_006'
   # ../.source/ATimeofWar_Eng_v8.cs:18727
   - type: 'break'
@@ -96,5 +96,5 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:18731
     - type: 'text'
-      # ../en-US.restext:1512 | "All players who voted **N..."
+      # ../en-US.restext:1514 | "All players who voted **N..."
       value: 'restext://AfternoonTeaResolutionYAY_007'

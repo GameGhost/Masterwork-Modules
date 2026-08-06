@@ -16,7 +16,7 @@ nodes:
   # ../en-US.restext:40 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:284 | "Close"
+  # ../en-US.restext:286 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
@@ -28,14 +28,14 @@ nodes:
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:21796
   - type: 'text'
-    # ../en-US.restext:1813 | "While I had seen what dev..."
+    # ../en-US.restext:1815 | "While I had seen what dev..."
     value: 'restext://ATOWSabotageIntro2Sep_001'
   # ../.source/ATimeofWar_Eng_v8.cs:21798
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:21800
   - type: 'text'
-    # ../en-US.restext:1814 | "It was the time to strike..."
+    # ../en-US.restext:1816 | "It was the time to strike..."
     value: 'restext://ATOWSabotageIntro2Sep_002'
   # ../.source/ATimeofWar_Eng_v8.cs:21805
   - type: 'break'
@@ -49,14 +49,14 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:21814
   - type: 'link'
-    # ../en-US.restext:1815 | "I chose to sabotage the '..."
+    # ../en-US.restext:1817 | "I chose to sabotage the '..."
     label: 'restext://ATOWSabotageIntro2Sep_003'
     snapshot: true
     onclick:
     # ../.source/ATimeofWar_Eng_v8.cs:21775
     - type: 'assign'
       var: 'bldg2'
-      # ../en-US.restext:268 | "Outpost"
+      # ../en-US.restext:270 | "Outpost"
       expr: '"restext://Title_Outpost"'
     # ../.source/ATimeofWar_Eng_v8.cs:21776
     - type: 'conditional'

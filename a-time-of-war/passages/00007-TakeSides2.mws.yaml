@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TakeSides2'
-# ../en-US.restext:274 | "TAKING SIDES"
+# ../en-US.restext:276 | "TAKING SIDES"
 title: 'restext://Title_TakingSidesCaps'
-# ../en-US.restext:262 | "Middle Years"
+# ../en-US.restext:264 | "Middle Years"
 subtitle: 'restext://Title_MiddleYears'
 tags:
 - 'HUB'
@@ -52,7 +52,7 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:1799
   - type: 'text'
-    # ../en-US.restext:347 | "The village is at a cross..."
+    # ../en-US.restext:350 | "The village is at a cross..."
     value: 'restext://TakeSides2_002'
 # ../.source/ATimeofWar_Eng_v8.cs:1802
 - type: 'break'
@@ -71,7 +71,7 @@ nodes:
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:1818
       - type: 'text'
-        # ../en-US.restext:348 | "At the end of the Generat..."
+        # ../en-US.restext:351 | "At the end of the Generat..."
         value: 'restext://TakeSides2_004'
     # ../.source/ATimeofWar_Eng_v8.cs:1821
     - type: 'break'
@@ -85,7 +85,7 @@ nodes:
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:1836
       - type: 'text'
-        # ../en-US.restext:349 | "At the end of the Generat..."
+        # ../en-US.restext:352 | "At the end of the Generat..."
         value: 'restext://TakeSides2_006'
     # ../.source/ATimeofWar_Eng_v8.cs:1839
     - type: 'break'
@@ -99,7 +99,7 @@ nodes:
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:1855
       - type: 'text'
-        # ../en-US.restext:350 | "At the end of the Generat..."
+        # ../en-US.restext:353 | "At the end of the Generat..."
         value: 'restext://TakeSides2_008'
     # ../.source/ATimeofWar_Eng_v8.cs:1858
     - type: 'break'
@@ -112,10 +112,10 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:1867
   - type: 'popup'
     layout: 'end_of_round'
-    # ../en-US.restext:351 | "Click here at the end of ..."
+    # ../en-US.restext:354 | "Click here at the end of ..."
     label: 'restext://TakeSides2_009'
     target: 'TakeEvent' # ./00015-TakeEvent.mws.yaml
-    # ../en-US.restext:287 | "End of Round"
+    # ../en-US.restext:289 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -124,7 +124,7 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:352 | "The Middle Years of the F..."
+      # ../en-US.restext:355 | "The Middle Years of the F..."
       value: 'restext://TakeSides2_010'
     - type: 'break'
       style: 'paragraph'

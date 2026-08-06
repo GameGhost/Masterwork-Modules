@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'BattleStart'
-# ../en-US.restext:1903 | "Battle!"
+# ../en-US.restext:1905 | "Battle!"
 title: 'restext://BattleStart_001'
 layout: 'narration'
 nodes:
@@ -13,19 +13,19 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:25801
 - type: 'let'
   var: '_rnd_BattleStart_1'
-  # ../en-US.restext:1904 | BattleStart_002 | "attacks"
-  # ../en-US.restext:1905 | BattleStart_003 | "swings wildly at"
-  # ../en-US.restext:1906 | BattleStart_004 | "rams into"
-  # ../en-US.restext:1907 | BattleStart_005 | "leaps toward"
-  # ../en-US.restext:1908 | BattleStart_006 | "rears back and sends a vo..."
-  # ../en-US.restext:1909 | BattleStart_007 | "jumps into the air and se..."
-  # ../en-US.restext:1910 | BattleStart_008 | "extends a spiked set of c..."
-  # ../en-US.restext:1911 | BattleStart_009 | "headbutts"
-  # ../en-US.restext:1912 | BattleStart_010 | "rips a chunk of iron from..."
-  # ../en-US.restext:1913 | BattleStart_011 | "delivers a startling open..."
-  # ../en-US.restext:1914 | BattleStart_012 | "builds up a burst of elec..."
-  # ../en-US.restext:1915 | BattleStart_013 | "rips a gear from its own ..."
-  # ../en-US.restext:1916 | BattleStart_014 | "kicks"
+  # ../en-US.restext:1906 | BattleStart_002 | "attacks"
+  # ../en-US.restext:1907 | BattleStart_003 | "swings wildly at"
+  # ../en-US.restext:1908 | BattleStart_004 | "rams into"
+  # ../en-US.restext:1909 | BattleStart_005 | "leaps toward"
+  # ../en-US.restext:1910 | BattleStart_006 | "rears back and sends a vo..."
+  # ../en-US.restext:1911 | BattleStart_007 | "jumps into the air and se..."
+  # ../en-US.restext:1912 | BattleStart_008 | "extends a spiked set of c..."
+  # ../en-US.restext:1913 | BattleStart_009 | "headbutts"
+  # ../en-US.restext:1914 | BattleStart_010 | "rips a chunk of iron from..."
+  # ../en-US.restext:1915 | BattleStart_011 | "delivers a startling open..."
+  # ../en-US.restext:1916 | BattleStart_012 | "builds up a burst of elec..."
+  # ../en-US.restext:1917 | BattleStart_013 | "rips a gear from its own ..."
+  # ../en-US.restext:1918 | BattleStart_014 | "kicks"
   expr: '["restext://BattleStart_002", "restext://BattleStart_003", "restext://BattleStart_004", "restext://BattleStart_005", "restext://BattleStart_006", "restext://BattleStart_007", "restext://BattleStart_008", "restext://BattleStart_009", "restext://BattleStart_010", "restext://BattleStart_011", "restext://BattleStart_012", "restext://BattleStart_013", "restext://BattleStart_014"].shuffled("BattleStart_0")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25804
 - type: 'let'
@@ -33,7 +33,7 @@ nodes:
   expr: 'target.replace("_1", "").replace("_2", "").replace("_3", "").replace("_4", "").replace("_5", "")'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25799
 - type: 'text'
-  # ../en-US.restext:1917 | "{_rpl_BattleStart_0} {_rn..."
+  # ../en-US.restext:1919 | "{_rpl_BattleStart_0} {_rn..."
   value: 'restext://BattleStart_015'
   lets:
   - '_rpl_BattleStart_0'
@@ -118,20 +118,20 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:25853
   - type: 'let'
     var: '_rnd_BattleStart_4'
-    # ../en-US.restext:1925 | BattleStart_023 | "is unable to avoid the at..."
-    # ../en-US.restext:1926 | BattleStart_024 | "absorbs the crushing impa..."
-    # ../en-US.restext:1927 | BattleStart_025 | "spins wildly in the air b..."
-    # ../en-US.restext:1928 | BattleStart_026 | "skids backwards across th..."
-    # ../en-US.restext:1929 | BattleStart_027 | "wobbles and"
-    # ../en-US.restext:1930 | BattleStart_028 | "gushes a liquid dark and ..."
-    # ../en-US.restext:1931 | BattleStart_029 | "is massively dented by th..."
-    # ../en-US.restext:1932 | BattleStart_030 | "roars with a sound that r..."
-    # ../en-US.restext:1933 | BattleStart_031 | "loses control of its left..."
-    # ../en-US.restext:1934 | BattleStart_032 | "crumples to the ground fo..."
+    # ../en-US.restext:1927 | BattleStart_023 | "is unable to avoid the at..."
+    # ../en-US.restext:1928 | BattleStart_024 | "absorbs the crushing impa..."
+    # ../en-US.restext:1929 | BattleStart_025 | "spins wildly in the air b..."
+    # ../en-US.restext:1930 | BattleStart_026 | "skids backwards across th..."
+    # ../en-US.restext:1931 | BattleStart_027 | "wobbles and"
+    # ../en-US.restext:1932 | BattleStart_028 | "gushes a liquid dark and ..."
+    # ../en-US.restext:1933 | BattleStart_029 | "is massively dented by th..."
+    # ../en-US.restext:1934 | BattleStart_030 | "roars with a sound that r..."
+    # ../en-US.restext:1935 | BattleStart_031 | "loses control of its left..."
+    # ../en-US.restext:1936 | BattleStart_032 | "crumples to the ground fo..."
     expr: '["restext://BattleStart_023", "restext://BattleStart_024", "restext://BattleStart_025", "restext://BattleStart_026", "restext://BattleStart_027", "restext://BattleStart_028", "restext://BattleStart_029", "restext://BattleStart_030", "restext://BattleStart_031", "restext://BattleStart_032"].shuffled("BattleStart_1")[0]'
   # ../.source/FearoftheUnknown_Eng_v15.cs:25850
   - type: 'text'
-    # ../en-US.restext:1935 | "{_rpl_BattleStart_3} {_rn..."
+    # ../en-US.restext:1937 | "{_rpl_BattleStart_3} {_rn..."
     value: 'restext://BattleStart_033'
     lets:
     - '_rpl_BattleStart_3'
@@ -211,16 +211,16 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:25898
   - type: 'let'
     var: '_rnd_BattleStart_6'
-    # ../en-US.restext:1918 | BattleStart_016 | "dodges the attack!"
-    # ../en-US.restext:1919 | BattleStart_017 | "easily avoids the assault..."
-    # ../en-US.restext:1920 | BattleStart_018 | "slides underneath the attack!"
-    # ../en-US.restext:1921 | BattleStart_019 | "spins to the side unharmed!"
-    # ../en-US.restext:1922 | BattleStart_020 | "ducks under the attack ju..."
-    # ../en-US.restext:1923 | BattleStart_021 | "is momentarily enveloped ..."
+    # ../en-US.restext:1920 | BattleStart_016 | "dodges the attack!"
+    # ../en-US.restext:1921 | BattleStart_017 | "easily avoids the assault..."
+    # ../en-US.restext:1922 | BattleStart_018 | "slides underneath the attack!"
+    # ../en-US.restext:1923 | BattleStart_019 | "spins to the side unharmed!"
+    # ../en-US.restext:1924 | BattleStart_020 | "ducks under the attack ju..."
+    # ../en-US.restext:1925 | BattleStart_021 | "is momentarily enveloped ..."
     expr: '["restext://BattleStart_016", "restext://BattleStart_017", "restext://BattleStart_018", "restext://BattleStart_019", "restext://BattleStart_020", "restext://BattleStart_021"].shuffled("BattleStart_2")[0]'
   # ../.source/FearoftheUnknown_Eng_v15.cs:25895
   - type: 'text'
-    # ../en-US.restext:1924 | "{_rpl_BattleStart_5} {_rn..."
+    # ../en-US.restext:1926 | "{_rpl_BattleStart_5} {_rn..."
     value: 'restext://BattleStart_022'
     lets:
     - '_rpl_BattleStart_5'
@@ -242,23 +242,23 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:25907
   - type: 'let'
     var: '_rnd_BattleStart_8'
-    # ../en-US.restext:1936 | BattleStart_034 | "falls to the floor in a h..."
-    # ../en-US.restext:1937 | BattleStart_035 | "explodes, sending shrapne..."
-    # ../en-US.restext:1938 | BattleStart_036 | "falls over with a loud thud"
-    # ../en-US.restext:1939 | BattleStart_037 | "pirouettes in place drama..."
-    # ../en-US.restext:1940 | BattleStart_038 | "springs a leak in its cor..."
-    # ../en-US.restext:1941 | BattleStart_039 | "raises a metal fist towar..."
+    # ../en-US.restext:1938 | BattleStart_034 | "falls to the floor in a h..."
+    # ../en-US.restext:1939 | BattleStart_035 | "explodes, sending shrapne..."
+    # ../en-US.restext:1940 | BattleStart_036 | "falls over with a loud thud"
+    # ../en-US.restext:1941 | BattleStart_037 | "pirouettes in place drama..."
+    # ../en-US.restext:1942 | BattleStart_038 | "springs a leak in its cor..."
+    # ../en-US.restext:1943 | BattleStart_039 | "raises a metal fist towar..."
     expr: '["restext://BattleStart_034", "restext://BattleStart_035", "restext://BattleStart_036", "restext://BattleStart_037", "restext://BattleStart_038", "restext://BattleStart_039"].shuffled("BattleStart_3")[0]'
   # ../.source/FearoftheUnknown_Eng_v15.cs:25909
   - type: 'let'
     var: '_rnd_BattleStart_9'
-    # ../en-US.restext:1942 | BattleStart_040 | "eliminated!"
-    # ../en-US.restext:1943 | BattleStart_041 | "defeated!"
-    # ../en-US.restext:1944 | BattleStart_042 | "out of commission!"
+    # ../en-US.restext:1944 | BattleStart_040 | "eliminated!"
+    # ../en-US.restext:1945 | BattleStart_041 | "defeated!"
+    # ../en-US.restext:1946 | BattleStart_042 | "out of commission!"
     expr: '["restext://BattleStart_040", "restext://BattleStart_041", "restext://BattleStart_042"].shuffled("BattleStart_4")[0]'
   # ../.source/FearoftheUnknown_Eng_v15.cs:25904
   - type: 'text'
-    # ../en-US.restext:1945 | "{_rpl_BattleStart_7} {_rn..."
+    # ../en-US.restext:1947 | "{_rpl_BattleStart_7} {_rn..."
     value: 'restext://BattleStart_043'
     lets:
     - '_rpl_BattleStart_7'
@@ -272,13 +272,13 @@ nodes:
   if: 'elimcount >= battlecount'
   then:
   - type: 'link'
-    # ../en-US.restext:1946 | "Click to continue the bat..."
+    # ../en-US.restext:1948 | "Click to continue the bat..."
     label: 'restext://BattleStart_044'
     target: 'BattleEnd' # ./00227-BattleEnd.mws.yaml
     snapshot: true
   else:
   - type: 'link'
-    # ../en-US.restext:1946 | "Click to continue the bat..."
+    # ../en-US.restext:1948 | "Click to continue the bat..."
     label: 'restext://BattleStart_044'
     target: 'BattleChecks' # ./00226-BattleChecks.mws.yaml
     snapshot: true

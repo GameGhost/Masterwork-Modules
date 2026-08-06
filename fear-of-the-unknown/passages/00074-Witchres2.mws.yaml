@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Witchres2'
-# ../en-US.restext:849 | "Cursed Removal"
+# ../en-US.restext:851 | "Cursed Removal"
 title: 'restext://Witchres2_001'
 layout: 'narration'
 nodes:
@@ -24,39 +24,39 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:10132
     - type: 'text'
-      # ../en-US.restext:852 | "It was I who was chosen. ..."
+      # ../en-US.restext:854 | "It was I who was chosen. ..."
       value: 'restext://Witchres2_005'
     # ../.source/FearoftheUnknown_Eng_v15.cs:10133
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:10135
     - type: 'text'
-      # ../en-US.restext:853 | "I would never harm anyone..."
+      # ../en-US.restext:855 | "I would never harm anyone..."
       value: 'restext://Witchres2_006'
   - if: 'wsuspect == witch'
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:10140
     - type: 'text'
-      # ../en-US.restext:854 | "The town was appeased by ..."
+      # ../en-US.restext:856 | "The town was appeased by ..."
       value: 'restext://Witchres2_007'
     # ../.source/FearoftheUnknown_Eng_v15.cs:10143
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:10145
     - type: 'text'
-      # ../en-US.restext:855 | "I only wish the wretch wo..."
+      # ../en-US.restext:857 | "I only wish the wretch wo..."
       value: 'restext://Witchres2_008'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:10153
   - type: 'text'
-    # ../en-US.restext:850 | "The town was appeased by ..."
+    # ../en-US.restext:852 | "The town was appeased by ..."
     value: 'restext://Witchres2_003'
   # ../.source/FearoftheUnknown_Eng_v15.cs:10156
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:10158
   - type: 'text'
-    # ../en-US.restext:851 | "I only wish they would ha..."
+    # ../en-US.restext:853 | "I only wish they would ha..."
     value: 'restext://Witchres2_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:10163
 - type: 'break'
@@ -67,7 +67,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'Caravancheck' # ./00105-Caravancheck.mws.yaml
-  # ../en-US.restext:365 | "Close"
+  # ../en-US.restext:367 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -82,24 +82,24 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:10187
     - type: 'text'
-      # ../en-US.restext:858 | "The vile {wsuspect} perfo..."
+      # ../en-US.restext:860 | "The vile {wsuspect} perfo..."
       value: 'restext://Witchres2_011'
     # ../.source/FearoftheUnknown_Eng_v15.cs:10190
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:10192
     - type: 'text'
-      # ../en-US.restext:859 | "Place the Witch's Hex {ic..."
+      # ../en-US.restext:861 | "Place the Witch's Hex {ic..."
       value: 'restext://Witchres2_012'
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:10205
     - type: 'text'
-      # ../en-US.restext:856 | "**{witch}** must place th..."
+      # ../en-US.restext:858 | "**{witch}** must place th..."
       value: 'restext://Witchres2_009'
     # ../.source/FearoftheUnknown_Eng_v15.cs:10211
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:10213
     - type: 'text'
-      # ../en-US.restext:857 | "Then, {witch} places the ..."
+      # ../en-US.restext:859 | "Then, {witch} places the ..."
       value: 'restext://Witchres2_010'

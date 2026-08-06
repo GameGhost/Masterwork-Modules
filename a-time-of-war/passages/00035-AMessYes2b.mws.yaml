@@ -16,13 +16,13 @@ nodes:
   # ../en-US.restext:40 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:284 | "Close"
+  # ../en-US.restext:286 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:4912
   - type: 'text'
-    # ../en-US.restext:542 | "Inside the envelope was a..."
+    # ../en-US.restext:545 | "Inside the envelope was a..."
     value: 'restext://AMessYes2b_001'
   # ../.source/ATimeofWar_Eng_v8.cs:4915
   - type: 'assign'
@@ -33,14 +33,14 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:4917
   - type: 'text'
-    # ../en-US.restext:543 | "If the number of building..."
+    # ../en-US.restext:546 | "If the number of building..."
     value: 'restext://AMessYes2b_002'
   # ../.source/ATimeofWar_Eng_v8.cs:4926
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:4928
   - type: 'text'
-    # ../en-US.restext:544 | "Armed with this important..."
+    # ../en-US.restext:547 | "Armed with this important..."
     value: 'restext://AMessYes2b_003'
   # ../.source/ATimeofWar_Eng_v8.cs:4931
   - type: 'break'
@@ -51,7 +51,7 @@ nodes:
     # ../en-US.restext:28 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: 'AfternoonTea' # ./00134-AfternoonTea.mws.yaml
-    # ../en-US.restext:284 | "Close"
+    # ../en-US.restext:286 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -62,5 +62,5 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:4888
     - type: 'text'
-      # ../en-US.restext:545 | "Gain **2VP**. Then, disca..."
+      # ../en-US.restext:548 | "Gain **2VP**. Then, disca..."
       value: 'restext://AMessYes2b_004'

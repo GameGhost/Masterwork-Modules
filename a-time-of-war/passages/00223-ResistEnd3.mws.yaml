@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ResistEnd3'
-# ../en-US.restext:1880 | "Shots Fired"
+# ../en-US.restext:1882 | "Shots Fired"
 title: 'restext://ResistEnd3_001'
 tags:
 - 'END'
@@ -10,30 +10,30 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:22612
 - type: 'text'
-  # ../en-US.restext:1881 | "It appeared that the cont..."
+  # ../en-US.restext:1883 | "It appeared that the cont..."
   value: 'restext://ResistEnd3_002'
 # ../.source/ATimeofWar_Eng_v8.cs:22617
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:22621
 - type: 'text'
-  # ../en-US.restext:1882 | "**Count the number of com..."
+  # ../en-US.restext:1884 | "**Count the number of com..."
   value: 'restext://ResistEnd3_003'
 # ../.source/ATimeofWar_Eng_v8.cs:22636
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:22638
 - type: 'conditional'
-  # ../en-US.restext:281 | "Unified Monarchists"
+  # ../en-US.restext:283 | "Unified Monarchists"
   if: 'warwinner == "restext://Title_UnifiedMonarchists"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:22642
   - type: 'popup'
     layout: 'end_of_generation'
-    # ../en-US.restext:1883 | "Click here if the {warlos..."
+    # ../en-US.restext:1885 | "Click here if the {warlos..."
     label: 'restext://ResistEnd3_004'
     target: 'PeaceIntro' # ./00042-PeaceIntro.mws.yaml
-    # ../en-US.restext:284 | "Close"
+    # ../en-US.restext:286 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     content:
@@ -53,10 +53,10 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:22648
   - type: 'popup'
     layout: 'end_of_generation'
-    # ../en-US.restext:1884 | "Click here if the {warwin..."
+    # ../en-US.restext:1886 | "Click here if the {warwin..."
     label: 'restext://ResistEnd3_005'
     target: 'MonarchReignIntro' # ./00041-MonarchReignIntro.mws.yaml
-    # ../en-US.restext:284 | "Close"
+    # ../en-US.restext:286 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     content:
@@ -74,10 +74,10 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:22655
   - type: 'popup'
     layout: 'end_of_generation'
-    # ../en-US.restext:1883 | "Click here if the {warlos..."
+    # ../en-US.restext:1885 | "Click here if the {warlos..."
     label: 'restext://ResistEnd3_004'
     target: 'MonarchReignIntro' # ./00041-MonarchReignIntro.mws.yaml
-    # ../en-US.restext:284 | "Close"
+    # ../en-US.restext:286 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     content:
@@ -97,10 +97,10 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:22661
   - type: 'popup'
     layout: 'end_of_generation'
-    # ../en-US.restext:1884 | "Click here if the {warwin..."
+    # ../en-US.restext:1886 | "Click here if the {warwin..."
     label: 'restext://ResistEnd3_005'
     target: 'PeaceIntro' # ./00042-PeaceIntro.mws.yaml
-    # ../en-US.restext:284 | "Close"
+    # ../en-US.restext:286 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     content:

@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ScienceDuelTiedRes'
-# ../en-US.restext:1839 | "Stalemate"
+# ../en-US.restext:1841 | "Stalemate"
 title: 'restext://ScienceDuelTiedRes_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:22123
 - type: 'text'
-  # ../en-US.restext:1840 | "I was quite unimpressed b..."
+  # ../en-US.restext:1842 | "I was quite unimpressed b..."
   value: 'restext://ScienceDuelTiedRes_002'
 # ../.source/ATimeofWar_Eng_v8.cs:22129
 - type: 'break'
@@ -26,7 +26,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 7 ? "Martia1Pre2" : "MartialPre3"}' # ./00294-Martia1Pre2.mws.yaml, ./00295-MartialPre3.mws.yaml
-  # ../en-US.restext:284 | "Close"
+  # ../en-US.restext:286 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -37,5 +37,5 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:22156
   - type: 'text'
-    # ../en-US.restext:1841 | "{sabotagee1} and {players..."
+    # ../en-US.restext:1843 | "{sabotagee1} and {players..."
     value: 'restext://ScienceDuelTiedRes_003'

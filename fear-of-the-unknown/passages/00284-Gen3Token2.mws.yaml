@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Gen3Token2'
-# ../en-US.restext:2371 | "A Life Forsaken"
+# ../en-US.restext:2373 | "A Life Forsaken"
 title: 'restext://Gen3Token2_001'
 layout: 'narration'
 nodes:
@@ -16,8 +16,8 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:31646
 - type: 'let'
   var: '_rnd_Gen3Token2_0'
-  # ../en-US.restext:2372 | Gen3Token2_003 | "There was no one there to..."
-  # ../en-US.restext:2373 | Gen3Token2_004 | "Though the appointed time..."
+  # ../en-US.restext:2374 | Gen3Token2_003 | "There was no one there to..."
+  # ../en-US.restext:2375 | Gen3Token2_004 | "Though the appointed time..."
   expr: '["restext://Gen3Token2_003", "restext://Gen3Token2_004"].shuffled("Gen3Token2_0")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31644
 - type: 'break'
@@ -32,45 +32,45 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31653
 - type: 'text'
-  # ../en-US.restext:2374 | "I had come to a crossroad..."
+  # ../en-US.restext:2376 | "I had come to a crossroad..."
   value: 'restext://Gen3Token2_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31654
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31658
 - type: 'text'
-  # ../en-US.restext:2375 | "**I chose:**"
+  # ../en-US.restext:2377 | "**I chose:**"
   value: 'restext://Gen3Token2_006'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31660
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31662
 - type: 'link'
-  # ../en-US.restext:2376 | "To keep my Obsession."
+  # ../en-US.restext:2378 | "To keep my Obsession."
   label: 'restext://Gen3Token2_007'
   target: 'Gen3Token2a' # ./00285-Gen3Token2a.mws.yaml
   snapshot: true
 # ../.source/FearoftheUnknown_Eng_v15.cs:31663
 - type: 'text'
-  # ../en-US.restext:2377 | " _(This option will award..."
+  # ../en-US.restext:2379 | " _(This option will award..."
   value: 'restext://Gen3Token2_008'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31686
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31688
 - type: 'text'
-  # ../en-US.restext:370 | "OR"
+  # ../en-US.restext:372 | "OR"
   value: 'restext://UIButton_Or'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31689
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31691
 - type: 'link'
-  # ../en-US.restext:2378 | "To claim a new path."
+  # ../en-US.restext:2380 | "To claim a new path."
   label: 'restext://Gen3Token2_009'
   target: 'Gen3Token2b' # ./00286-Gen3Token2b.mws.yaml
   snapshot: true
 # ../.source/FearoftheUnknown_Eng_v15.cs:31692
 - type: 'text'
-  # ../en-US.restext:2379 | " _(This option will award..."
+  # ../en-US.restext:2381 | " _(This option will award..."
   value: 'restext://Gen3Token2_010'

@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'OldManNo'
-# ../en-US.restext:266 | "No Consequence"
+# ../en-US.restext:268 | "No Consequence"
 title: 'restext://Title_NoConsequence'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:12489
 - type: 'text'
-  # ../en-US.restext:952 | "It was both a letter from..."
+  # ../en-US.restext:954 | "It was both a letter from..."
   value: 'restext://OldManNo_001'
 # ../.source/ATimeofWar_Eng_v8.cs:12490
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:12492
 - type: 'text'
-  # ../en-US.restext:953 | "But the task prove too da..."
+  # ../en-US.restext:955 | "But the task prove too da..."
   value: 'restext://OldManNo_002'
 # ../.source/ATimeofWar_Eng_v8.cs:12493
 - type: 'break'
@@ -25,7 +25,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   layout: 'reveal'
-  # ../en-US.restext:284 | "Close"
+  # ../en-US.restext:286 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -43,7 +43,7 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:286 | "Continue"
+      # ../en-US.restext:288 | "Continue"
       label: 'restext://UIButton_Continue'
       target: 'Warning3time' # ./00060-Warning3time.mws.yaml
       snapshot: true
@@ -53,7 +53,7 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:286 | "Continue"
+      # ../en-US.restext:288 | "Continue"
       label: 'restext://UIButton_Continue'
       target: 'Warning3' # ./00059-Warning3.mws.yaml
       snapshot: true
@@ -62,5 +62,5 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:12544
   - type: 'text'
-    # ../en-US.restext:954 | "**Discard an Experiment c..."
+    # ../en-US.restext:956 | "**Discard an Experiment c..."
     value: 'restext://OldManNo_003'

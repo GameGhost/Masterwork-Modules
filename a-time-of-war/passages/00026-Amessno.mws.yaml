@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Amessno'
-# ../en-US.restext:494 | "No Importance"
+# ../en-US.restext:497 | "No Importance"
 title: 'restext://Amessno_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:4118
 - type: 'text'
-  # ../en-US.restext:495 | "What a rude and frankly, ..."
+  # ../en-US.restext:498 | "What a rude and frankly, ..."
   value: 'restext://Amessno_002'
 # ../.source/ATimeofWar_Eng_v8.cs:4120
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:4122
 - type: 'text'
-  # ../en-US.restext:496 | "I only note this situatio..."
+  # ../en-US.restext:499 | "I only note this situatio..."
   value: 'restext://Amessno_003'
 # ../.source/ATimeofWar_Eng_v8.cs:4123
 - type: 'break'
@@ -26,7 +26,7 @@ nodes:
   # ../en-US.restext:27 | "Click here to continue..."
   label: 'restext://Click_ContinueEllipsis_B'
   target: '${warwinner == "Unified Monarchists" ? "BarracksSimple1" : "Sabotage1Now"}' # ./00157-BarracksSimple1.mws.yaml, ./00213-Sabotage1Now.mws.yaml
-  # ../en-US.restext:284 | "Close"
+  # ../en-US.restext:286 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -37,5 +37,5 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:4147
   - type: 'text'
-    # ../en-US.restext:497 | "Nothing happens. Discard ..."
+    # ../en-US.restext:500 | "Nothing happens. Discard ..."
     value: 'restext://Amessno_004'

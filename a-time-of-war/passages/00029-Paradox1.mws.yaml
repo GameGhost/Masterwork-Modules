@@ -21,7 +21,7 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:4322
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:283 | "Accept"
+    # ../en-US.restext:285 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/ATimeofWar_Eng_v8.cs:4326
@@ -31,7 +31,7 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:4328
     - type: 'text'
-      # ../en-US.restext:512 | "Turn to page **15** of th..."
+      # ../en-US.restext:515 | "Turn to page **15** of th..."
       value: 'restext://Paradox1_002'
     # ../.source/ATimeofWar_Eng_v8.cs:4334
     - type: 'conditional'
@@ -58,7 +58,7 @@ nodes:
     value: 'restext://Directive_IgnoreMobIconsFigureTokenStays_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:4369
   - type: 'conditional'
-    # ../en-US.restext:281 | "Unified Monarchists"
+    # ../en-US.restext:283 | "Unified Monarchists"
     if: 'warwinner == "restext://Title_UnifiedMonarchists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:4371
@@ -127,7 +127,7 @@ nodes:
     # ../en-US.restext:31 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
     target: 'ParadoxFirst' # ./00093-ParadoxFirst.mws.yaml
-    # ../en-US.restext:287 | "End of Round"
+    # ../en-US.restext:289 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'

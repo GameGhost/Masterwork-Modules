@@ -13,23 +13,23 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:37891
 - type: 'let'
   var: '_rnd_AsylumTestResults_0'
-  # ../en-US.restext:2864 | AsylumTestResults_001 | "an abnormally low result ..."
-  # ../en-US.restext:2865 | AsylumTestResults_002 | "a reasonably low result w..."
-  # ../en-US.restext:2866 | AsylumTestResults_003 | "no statistically signific..."
-  # ../en-US.restext:2867 | AsylumTestResults_004 | "a slightly higher result ..."
-  # ../en-US.restext:2868 | AsylumTestResults_005 | "an abnormally high percen..."
+  # ../en-US.restext:2866 | AsylumTestResults_001 | "an abnormally low result ..."
+  # ../en-US.restext:2867 | AsylumTestResults_002 | "a reasonably low result w..."
+  # ../en-US.restext:2868 | AsylumTestResults_003 | "no statistically signific..."
+  # ../en-US.restext:2869 | AsylumTestResults_004 | "a slightly higher result ..."
+  # ../en-US.restext:2870 | AsylumTestResults_005 | "an abnormally high percen..."
   expr: '["restext://AsylumTestResults_001", "restext://AsylumTestResults_002", "restext://AsylumTestResults_003", "restext://AsylumTestResults_004", "restext://AsylumTestResults_005"].shuffled("AsylumTestResults_0")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:37897
 - type: 'let'
   var: '_rnd_AsylumTestResults_1'
-  # ../en-US.restext:2869 | AsylumTestResults_006 | "minor signs of malnutriti..."
-  # ../en-US.restext:2870 | AsylumTestResults_007 | "a healthy individual with..."
-  # ../en-US.restext:2871 | AsylumTestResults_008 | "nothing particularly conc..."
-  # ../en-US.restext:2872 | AsylumTestResults_009 | "signs of obesity due to a..."
+  # ../en-US.restext:2871 | AsylumTestResults_006 | "minor signs of malnutriti..."
+  # ../en-US.restext:2872 | AsylumTestResults_007 | "a healthy individual with..."
+  # ../en-US.restext:2873 | AsylumTestResults_008 | "nothing particularly conc..."
+  # ../en-US.restext:2874 | AsylumTestResults_009 | "signs of obesity due to a..."
   expr: '["restext://AsylumTestResults_006", "restext://AsylumTestResults_007", "restext://AsylumTestResults_008", "restext://AsylumTestResults_009"].shuffled("AsylumTestResults_1")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:37889
 - type: 'text'
-  # ../en-US.restext:2873 | "After completion of a ful..."
+  # ../en-US.restext:2875 | "After completion of a ful..."
   value: 'restext://AsylumTestResults_010'
   lets:
   - '_rnd_AsylumTestResults_0'
@@ -61,7 +61,7 @@ nodes:
       nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:37912
       - type: 'text'
-        # ../en-US.restext:2875 | "It is of my informed opin..."
+        # ../en-US.restext:2877 | "It is of my informed opin..."
         value: 'restext://AsylumTestResults_012'
       # ../.source/FearoftheUnknown_Eng_v15.cs:37921
       - type: 'break'
@@ -70,7 +70,7 @@ nodes:
       nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:37927
       - type: 'text'
-        # ../en-US.restext:2876 | "Patient {question} has be..."
+        # ../en-US.restext:2878 | "Patient {question} has be..."
         value: 'restext://AsylumTestResults_013'
       # ../.source/FearoftheUnknown_Eng_v15.cs:37933
       - type: 'break'
@@ -79,7 +79,7 @@ nodes:
       nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:37939
       - type: 'text'
-        # ../en-US.restext:2877 | "I have offered training t..."
+        # ../en-US.restext:2879 | "I have offered training t..."
         value: 'restext://AsylumTestResults_014'
       # ../.source/FearoftheUnknown_Eng_v15.cs:37944
       - type: 'break'
@@ -88,7 +88,7 @@ nodes:
       nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:37950
       - type: 'text'
-        # ../en-US.restext:2878 | "After several aggressive ..."
+        # ../en-US.restext:2880 | "After several aggressive ..."
         value: 'restext://AsylumTestResults_015'
       # ../.source/FearoftheUnknown_Eng_v15.cs:37953
       - type: 'break'
@@ -97,7 +97,7 @@ nodes:
       nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:37959
       - type: 'text'
-        # ../en-US.restext:2879 | "It appears patient {quest..."
+        # ../en-US.restext:2881 | "It appears patient {quest..."
         value: 'restext://AsylumTestResults_016'
       # ../.source/FearoftheUnknown_Eng_v15.cs:37962
       - type: 'break'
@@ -105,7 +105,7 @@ nodes:
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:37969
   - type: 'text'
-    # ../en-US.restext:2874 | "Patient {question} has be..."
+    # ../en-US.restext:2876 | "Patient {question} has be..."
     value: 'restext://AsylumTestResults_011'
   # ../.source/FearoftheUnknown_Eng_v15.cs:37972
   - type: 'break'
@@ -119,7 +119,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 19 ? "Liberal" : round == 20 ? "Liberal2" : "Liberal3"}' # ./00026-Liberal.mws.yaml, ./00050-Liberal2.mws.yaml, ./00051-Liberal3.mws.yaml
-  # ../en-US.restext:365 | "Close"
+  # ../en-US.restext:367 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -147,7 +147,7 @@ nodes:
           style: 'setup-image'
         # ../.source/FearoftheUnknown_Eng_v15.cs:38012
         - type: 'text'
-          # ../en-US.restext:2883 | "Pay **$1 to the supply** ..."
+          # ../en-US.restext:2885 | "Pay **$1 to the supply** ..."
           value: 'restext://AsylumTestResults_020'
         # ../.source/FearoftheUnknown_Eng_v15.cs:38018
         - type: 'break'
@@ -164,7 +164,7 @@ nodes:
           style: 'setup-image'
         # ../.source/FearoftheUnknown_Eng_v15.cs:38033
         - type: 'text'
-          # ../en-US.restext:2884 | "Gain a **Maladjustment** ..."
+          # ../en-US.restext:2886 | "Gain a **Maladjustment** ..."
           value: 'restext://AsylumTestResults_021'
         # ../.source/FearoftheUnknown_Eng_v15.cs:38040
         - type: 'break'
@@ -181,7 +181,7 @@ nodes:
           style: 'setup-image'
         # ../.source/FearoftheUnknown_Eng_v15.cs:38055
         - type: 'text'
-          # ../en-US.restext:2885 | "Immediately place one of ..."
+          # ../en-US.restext:2887 | "Immediately place one of ..."
           value: 'restext://AsylumTestResults_022'
         # ../.source/FearoftheUnknown_Eng_v15.cs:38066
         - type: 'break'
@@ -198,7 +198,7 @@ nodes:
           style: 'setup-image'
         # ../.source/FearoftheUnknown_Eng_v15.cs:38081
         - type: 'text'
-          # ../en-US.restext:2884 | "Gain a **Maladjustment** ..."
+          # ../en-US.restext:2886 | "Gain a **Maladjustment** ..."
           value: 'restext://AsylumTestResults_021'
         # ../.source/FearoftheUnknown_Eng_v15.cs:38088
         - type: 'break'
@@ -217,7 +217,7 @@ nodes:
         - type: 'break'
         # ../.source/FearoftheUnknown_Eng_v15.cs:38102
         - type: 'text'
-          # ../en-US.restext:2886 | "Gain 2 {icon:insanity_icon}."
+          # ../en-US.restext:2888 | "Gain 2 {icon:insanity_icon}."
           value: 'restext://AsylumTestResults_023'
         # ../.source/FearoftheUnknown_Eng_v15.cs:38105
         - type: 'break'
@@ -233,17 +233,17 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:38123
       - type: 'text'
-        # ../en-US.restext:2881 | "Lose 4 VP."
+        # ../en-US.restext:2883 | "Lose 4 VP."
         value: 'restext://AsylumTestResults_018'
       else:
       # ../.source/FearoftheUnknown_Eng_v15.cs:38127
       - type: 'text'
-        # ../en-US.restext:2880 | "If you have not placed yo..."
+        # ../en-US.restext:2882 | "If you have not placed yo..."
         value: 'restext://AsylumTestResults_017'
     # ../.source/FearoftheUnknown_Eng_v15.cs:38135
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:38137
     - type: 'text'
-      # ../en-US.restext:2882 | "Then, **remove your** {ic..."
+      # ../en-US.restext:2884 | "Then, **remove your** {ic..."
       value: 'restext://AsylumTestResults_019'

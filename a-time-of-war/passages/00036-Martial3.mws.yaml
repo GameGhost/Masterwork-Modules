@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Martial3'
-# ../en-US.restext:260 | "Martial Law"
+# ../en-US.restext:262 | "Martial Law"
 title: 'restext://Title_MartialLaw'
-# ../en-US.restext:259 | "Late Years"
+# ../en-US.restext:261 | "Late Years"
 subtitle: 'restext://Title_LateYears'
 tags:
 - 'HUB'
@@ -30,7 +30,7 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:4969
     - type: 'popup'
       layout: 'setup'
-      # ../en-US.restext:283 | "Accept"
+      # ../en-US.restext:285 | "Accept"
       okay: 'restext://UIButton_Accept'
       header:
       # ../.source/ATimeofWar_Eng_v8.cs:4973
@@ -57,7 +57,7 @@ nodes:
     value: 'restext://Directive_WarloserDesperateAdvancedWeaponry_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:5007
   - type: 'conditional'
-    # ../en-US.restext:271 | "Separatists"
+    # ../en-US.restext:273 | "Separatists"
     if: 'warloser == "restext://Title_Separatists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:5011
@@ -103,7 +103,7 @@ nodes:
 - type: 'switch'
   on: 'warwinner'
   cases:
-  # ../en-US.restext:281 | "Unified Monarchists"
+  # ../en-US.restext:283 | "Unified Monarchists"
   - match: 'restext://Title_UnifiedMonarchists'
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:5054
@@ -126,9 +126,9 @@ nodes:
           style: 'paragraph'
         # ../.source/ATimeofWar_Eng_v8.cs:5077
         - type: 'text'
-          # ../en-US.restext:548 | "When placing a piece on t..."
+          # ../en-US.restext:551 | "When placing a piece on t..."
           value: 'restext://Martial3_001'
-  # ../en-US.restext:271 | "Separatists"
+  # ../en-US.restext:273 | "Separatists"
   - match: 'restext://Title_Separatists'
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:5087
@@ -151,7 +151,7 @@ nodes:
           style: 'paragraph'
         # ../.source/ATimeofWar_Eng_v8.cs:5104
         - type: 'text'
-          # ../en-US.restext:549 | "When placing a piece on t..."
+          # ../en-US.restext:552 | "When placing a piece on t..."
           value: 'restext://Martial3_002'
     # ../.source/ATimeofWar_Eng_v8.cs:5111
     - type: 'break'
@@ -171,7 +171,7 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:5129
     - type: 'text'
-      # ../en-US.restext:550 | "When Performing an Experi..."
+      # ../en-US.restext:553 | "When Performing an Experi..."
       value: 'restext://Martial3_004'
   # ../.source/ATimeofWar_Eng_v8.cs:5137
   - type: 'break'
@@ -206,10 +206,10 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:5170
   - type: 'popup'
     layout: 'end_of_round'
-    # ../en-US.restext:551 | "Click here at the End of ..."
+    # ../en-US.restext:554 | "Click here at the End of ..."
     label: 'restext://Martial3_005'
     target: 'BarracksSimple3' # ./00159-BarracksSimple3.mws.yaml
-    # ../en-US.restext:287 | "End of Round"
+    # ../en-US.restext:289 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'

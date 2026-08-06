@@ -2,21 +2,21 @@
 ---
 format: 'mws/0.4'
 passage_id: 'RumorD'
-# ../en-US.restext:338 | "Visit the Town Hall"
+# ../en-US.restext:341 | "Visit the Town Hall"
 title: 'restext://RumorD_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:1658
 - type: 'let'
   var: '_rnd_RumorD_0'
-  # ../en-US.restext:339 | RumorD_002 | "For such a small, rural v..."
-  # ../en-US.restext:340 | RumorD_003 | "While the sights - and sm..."
-  # ../en-US.restext:341 | RumorD_004 | "I was never quite fond of..."
-  # ../en-US.restext:342 | RumorD_005 | "These spirited events - p..."
+  # ../en-US.restext:342 | RumorD_002 | "For such a small, rural v..."
+  # ../en-US.restext:343 | RumorD_003 | "While the sights - and sm..."
+  # ../en-US.restext:344 | RumorD_004 | "I was never quite fond of..."
+  # ../en-US.restext:345 | RumorD_005 | "These spirited events - p..."
   expr: '["restext://RumorD_002", "restext://RumorD_003", "restext://RumorD_004", "restext://RumorD_005"].shuffled("RumorD_0")[0]'
 # ../.source/ATimeofWar_Eng_v8.cs:1657
 - type: 'text'
-  # ../en-US.restext:343 | "I decided to attend one o..."
+  # ../en-US.restext:346 | "I decided to attend one o..."
   value: 'restext://RumorD_006'
   lets:
   - '_rnd_RumorD_0'
@@ -29,7 +29,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:1665
 - type: 'text'
-  # ../en-US.restext:344 | "**I chose to converse with:**"
+  # ../en-US.restext:347 | "**I chose to converse with:**"
   value: 'restext://RumorD_007'
 # ../.source/ATimeofWar_Eng_v8.cs:1668
 - type: 'assign'

@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Isolation'
-# ../en-US.restext:362 | "Walled City"
+# ../en-US.restext:364 | "Walled City"
 title: 'restext://Title_WalledCity'
 # ../en-US.restext:332 | "Early Years"
 subtitle: 'restext://Title_EarlyYears'
@@ -21,7 +21,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3728
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:364 | "Accept"
+    # ../en-US.restext:366 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:3732
@@ -31,7 +31,7 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:3734
     - type: 'text'
-      # ../en-US.restext:540 | "Turn to page **14** of th..."
+      # ../en-US.restext:543 | "Turn to page **14** of th..."
       value: 'restext://Isolation_002'
     # ../.source/FearoftheUnknown_Eng_v15.cs:3749
     - type: 'break'
@@ -50,13 +50,13 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3761
 - type: 'section'
-  # ../en-US.restext:541 | "**Rising Prices**"
+  # ../en-US.restext:544 | "**Rising Prices**"
   title: 'restext://Isolation_003'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3769
   - type: 'text'
-    # ../en-US.restext:542 | "With the town's isolation..."
+    # ../en-US.restext:545 | "With the town's isolation..."
     value: 'restext://Isolation_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3784
 - type: 'break'
@@ -119,7 +119,7 @@ nodes:
     # ../en-US.restext:35 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
     target: 'Caravancheck' # ./00105-Caravancheck.mws.yaml
-    # ../en-US.restext:369 | "End of Round"
+    # ../en-US.restext:371 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'

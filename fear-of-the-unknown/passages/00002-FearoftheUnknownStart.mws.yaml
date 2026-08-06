@@ -2,8 +2,10 @@
 ---
 format: 'mws/0.4'
 passage_id: 'FearoftheUnknownStart'
-# ../en-US.restext:383 | "GENERATION I: Fear of the..."
+# ../en-US.restext:385 | "Fear of the Unknown"
 title: 'restext://FearoftheUnknownStart_001'
+# ../en-US.restext:386 | "GENERATION I"
+subtitle: 'restext://FearoftheUnknownStart_002'
 tags:
 - 'INTRO'
 layout: 'introduction'
@@ -42,66 +44,66 @@ nodes:
   expr: 'randomplayer'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1609
 - type: 'text'
-  # ../en-US.restext:384 | "**Letter from** **{random..."
-  value: 'restext://FearoftheUnknownStart_002'
+  # ../en-US.restext:387 | "**Letter from** **{random..."
+  value: 'restext://FearoftheUnknownStart_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1635
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1637
 - type: 'text'
-  # ../en-US.restext:385 | "It is with great reticenc..."
-  value: 'restext://FearoftheUnknownStart_003'
+  # ../en-US.restext:388 | "It is with great reticenc..."
+  value: 'restext://FearoftheUnknownStart_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1640
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1642
 - type: 'text'
-  # ../en-US.restext:386 | "I will spare you the deta..."
-  value: 'restext://FearoftheUnknownStart_004'
+  # ../en-US.restext:389 | "I will spare you the deta..."
+  value: 'restext://FearoftheUnknownStart_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1643
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1645
 - type: 'text'
-  # ../en-US.restext:387 | "He did not respond to my ..."
-  value: 'restext://FearoftheUnknownStart_005'
+  # ../en-US.restext:390 | "He did not respond to my ..."
+  value: 'restext://FearoftheUnknownStart_006'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1646
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1648
 - type: 'text'
-  # ../en-US.restext:388 | "An irrational fear has gr..."
-  value: 'restext://FearoftheUnknownStart_006'
+  # ../en-US.restext:391 | "An irrational fear has gr..."
+  value: 'restext://FearoftheUnknownStart_007'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1649
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1651
 - type: 'text'
-  # ../en-US.restext:389 | "Maybe this forced solitud..."
-  value: 'restext://FearoftheUnknownStart_007'
+  # ../en-US.restext:392 | "Maybe this forced solitud..."
+  value: 'restext://FearoftheUnknownStart_008'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1652
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1654
 - type: 'link'
-  # ../en-US.restext:368 | "Continue..."
+  # ../en-US.restext:370 | "Continue..."
   label: 'restext://UIButton_ContinueEllipsis'
   target: 'ManiaSpecial' # ./00139-ManiaSpecial.mws.yaml
   snapshot: true
 # ../.source/FearoftheUnknown_Eng_v15.cs:1656
 - type: 'let'
   var: '_rnd_FearoftheUnknownStart_0'
-  # ../en-US.restext:339 | Title_Ledger | "Ledger"
+  # ../en-US.restext:341 | Title_Ledger | "Ledger"
   # ../en-US.restext:334 | Title_Gazette | "Gazette"
-  # ../en-US.restext:340 | Title_Mercury | "Mercury"
-  # ../en-US.restext:361 | Title_VillageVoice | "Village Voice"
+  # ../en-US.restext:342 | Title_Mercury | "Mercury"
+  # ../en-US.restext:363 | Title_VillageVoice | "Village Voice"
   # ../en-US.restext:333 | Title_Examiner | "Examiner"
   expr: '["restext://Title_Ledger", "restext://Title_Gazette", "restext://Title_Mercury", "restext://Title_VillageVoice", "restext://Title_Examiner"].shuffled("FearoftheUnknownStart_4")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1656
 - type: 'assign'
   var: 'newspaper'
-  # ../en-US.restext:390 | "The {townname} {_rnd_Fear..."
-  expr: '"restext://FearoftheUnknownStart_014"'
+  # ../en-US.restext:393 | "The {townname} {_rnd_Fear..."
+  expr: '"restext://FearoftheUnknownStart_015"'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1657
 - type: 'assign'
   var: 'whpg'

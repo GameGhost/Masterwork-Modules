@@ -4,7 +4,7 @@ format: 'mws/0.4'
 passage_id: 'Paradox3b'
 # ../en-US.restext:256 | "Forward to Progress"
 title: 'restext://Title_ForwardToProgress'
-# ../en-US.restext:259 | "Late Years"
+# ../en-US.restext:261 | "Late Years"
 subtitle: 'restext://Title_LateYears'
 tags:
 - 'revised'
@@ -33,14 +33,14 @@ nodes:
     - type: 'switch'
       on: 'warwinner'
       cases:
-      # ../en-US.restext:281 | "Unified Monarchists"
+      # ../en-US.restext:283 | "Unified Monarchists"
       - match: 'restext://Title_UnifiedMonarchists'
         nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:27307
         - type: 'text'
           # ../en-US.restext:229 | "**they may immediately bu..."
           value: 'restext://Reward_MayBuildVanityEstateUpgrade'
-      # ../en-US.restext:271 | "Separatists"
+      # ../en-US.restext:273 | "Separatists"
       - match: 'restext://Title_Separatists'
         nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:27311
@@ -74,18 +74,18 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:27343
     - type: 'text'
-      # ../en-US.restext:2267 | "With the near-total destr..."
+      # ../en-US.restext:2269 | "With the near-total destr..."
       value: 'restext://Paradox3b_004'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:27357
   - type: 'section'
-    # ../en-US.restext:2264 | "**Angry Mob Return**"
+    # ../en-US.restext:2266 | "**Angry Mob Return**"
     title: 'restext://Paradox3b_001'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:27365
     - type: 'text'
-      # ../en-US.restext:2265 | "All {icon:angrymob_icon} ..."
+      # ../en-US.restext:2267 | "All {icon:angrymob_icon} ..."
       value: 'restext://Paradox3b_002'
   # ../.source/ATimeofWar_Eng_v8.cs:27370
   - type: 'break'
@@ -118,7 +118,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:27413
   - type: 'section'
-    # ../en-US.restext:2266 | "{icon:storybooktoken}**Un..."
+    # ../en-US.restext:2268 | "{icon:storybooktoken}**Un..."
     title: 'restext://Paradox3b_003'
     style: 'hub-card'
     content:

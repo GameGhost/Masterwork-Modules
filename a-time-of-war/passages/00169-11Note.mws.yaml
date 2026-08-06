@@ -8,11 +8,11 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:18367
 - type: 'text'
-  # ../en-US.restext:1466 | "Add Allegiance BONUS to {..."
+  # ../en-US.restext:1468 | "Add Allegiance BONUS to {..."
   value: 'restext://_11Note_001'
 # ../.source/ATimeofWar_Eng_v8.cs:18371
 - type: 'conditional'
-  # ../en-US.restext:271 | "Separatists"
+  # ../en-US.restext:273 | "Separatists"
   if: 'warwinner == "restext://Title_Separatists"'
   then: []
 # ../.source/ATimeofWar_Eng_v8.cs:18370
@@ -20,12 +20,12 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:18378
 - type: 'text'
-  # ../en-US.restext:1467 | "Don't forget Storybook to..."
+  # ../en-US.restext:1469 | "Don't forget Storybook to..."
   value: 'restext://_11Note_002'
 # ../.source/ATimeofWar_Eng_v8.cs:18379
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:18382
 - type: 'text'
-  # ../en-US.restext:1468 | "Add a potential 50%, that..."
+  # ../en-US.restext:1470 | "Add a potential 50%, that..."
   value: 'restext://_11Note_003'

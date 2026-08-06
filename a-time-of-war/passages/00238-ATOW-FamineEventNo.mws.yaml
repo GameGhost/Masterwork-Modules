@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ATOW-FamineEventNo'
-# ../en-US.restext:1947 | "Hardened by Suffering"
+# ../en-US.restext:1949 | "Hardened by Suffering"
 title: 'restext://ATOW_FamineEventNo_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:23932
 - type: 'text'
-  # ../en-US.restext:1948 | "The citizenry rebelled th..."
+  # ../en-US.restext:1950 | "The citizenry rebelled th..."
   value: 'restext://ATOW_FamineEventNo_002'
 # ../.source/ATimeofWar_Eng_v8.cs:23933
 - type: 'break'
@@ -19,7 +19,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'PeaceStick' # ./00248-PeaceStick.mws.yaml
-  # ../en-US.restext:284 | "Close"
+  # ../en-US.restext:286 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -30,5 +30,5 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:23954
   - type: 'text'
-    # ../en-US.restext:1949 | "Move the {icon:angrymob_i..."
+    # ../en-US.restext:1951 | "Move the {icon:angrymob_i..."
     value: 'restext://ATOW_FamineEventNo_003'

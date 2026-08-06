@@ -12,12 +12,12 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:1941 | "Carefully pass the Storyb..."
+      # ../en-US.restext:1943 | "Carefully pass the Storyb..."
       value: 'restext://ATOW_FamineEventYes_001'
     - type: 'input'
       label: ''
       var: 'newmeat'
-    # ../en-US.restext:286 | "Continue"
+    # ../en-US.restext:288 | "Continue"
     okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'
@@ -29,14 +29,14 @@ nodes:
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:23846
 - type: 'text'
-  # ../en-US.restext:1942 | "**A Modest Proposal**"
+  # ../en-US.restext:1944 | "**A Modest Proposal**"
   value: 'restext://ATOW_FamineEventYes_002'
 # ../.source/ATimeofWar_Eng_v8.cs:23848
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:23850
 - type: 'text'
-  # ../en-US.restext:1943 | "The riots ceased and a ca..."
+  # ../en-US.restext:1945 | "The riots ceased and a ca..."
   value: 'restext://ATOW_FamineEventYes_003'
 # ../.source/ATimeofWar_Eng_v8.cs:23866
 - type: 'break'
@@ -47,7 +47,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'PeaceStick' # ./00248-PeaceStick.mws.yaml
-  # ../en-US.restext:284 | "Close"
+  # ../en-US.restext:286 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -64,5 +64,5 @@ nodes:
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:23895
   - type: 'text'
-    # ../en-US.restext:1944 | "All players **gain 2** {i..."
+    # ../en-US.restext:1946 | "All players **gain 2** {i..."
     value: 'restext://ATOW_FamineEventYes_004'

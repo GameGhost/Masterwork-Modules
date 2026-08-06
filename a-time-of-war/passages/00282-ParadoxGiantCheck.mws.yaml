@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ParadoxGiantCheck'
-# ../en-US.restext:2172 | "Giant Masterwork Check"
+# ../en-US.restext:2174 | "Giant Masterwork Check"
 title: 'restext://ParadoxGiantCheck_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:26325
 - type: 'text'
-  # ../en-US.restext:2173 | "How many players complete..."
+  # ../en-US.restext:2175 | "How many players complete..."
   value: 'restext://ParadoxGiantCheck_002'
 # ../.source/ATimeofWar_Eng_v8.cs:26331
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:26334
 - type: 'link'
-  # ../en-US.restext:2174 | "0"
+  # ../en-US.restext:2176 | "0"
   label: 'restext://ParadoxGiantCheck_003'
   target: 'ParadoxEvent' # ./00074-ParadoxEvent.mws.yaml
   snapshot: true
@@ -79,7 +79,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:26355
   - type: 'link'
-    # ../en-US.restext:2175 | "4"
+    # ../en-US.restext:2177 | "4"
     label: 'restext://ParadoxGiantCheck_004'
     target: 'ParadoxEvent' # ./00074-ParadoxEvent.mws.yaml
     snapshot: true
@@ -97,7 +97,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:26362
   - type: 'link'
-    # ../en-US.restext:2176 | "5"
+    # ../en-US.restext:2178 | "5"
     label: 'restext://ParadoxGiantCheck_005'
     target: 'ParadoxEvent' # ./00074-ParadoxEvent.mws.yaml
     snapshot: true

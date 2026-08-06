@@ -2,30 +2,30 @@
 ---
 format: 'mws/0.4'
 passage_id: 'RoyalDecreeExplain'
-# ../en-US.restext:1400 | "Royal Power"
+# ../en-US.restext:1402 | "Royal Power"
 title: 'restext://RoyalDecreeExplain_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:17124
 - type: 'let'
   var: '_rnd_RoyalDecreeExplain_0'
-  # ../en-US.restext:279 | Title_TigerLauncher | "Tiger Launcher"
-  # ../en-US.restext:269 | Title_PsychicMindbomb | "Psychic Mindbomb"
-  # ../en-US.restext:258 | Title_IrresistibleAphrodisiac | "Irresistible Aphrodisiac"
-  # ../en-US.restext:257 | Title_HelmetMountedFlamethrower | "Helmet-Mounted Flamethrower"
+  # ../en-US.restext:281 | Title_TigerLauncher | "Tiger Launcher"
+  # ../en-US.restext:271 | Title_PsychicMindbomb | "Psychic Mindbomb"
+  # ../en-US.restext:260 | Title_IrresistibleAphrodisiac | "Irresistible Aphrodisiac"
+  # ../en-US.restext:259 | Title_HelmetMountedFlamethrower | "Helmet-Mounted Flamethrower"
   expr: '["restext://Title_TigerLauncher", "restext://Title_PsychicMindbomb", "restext://Title_IrresistibleAphrodisiac", "restext://Title_HelmetMountedFlamethrower"].shuffled("RoyalDecreeExplain_0")[0]'
 # ../.source/ATimeofWar_Eng_v8.cs:17127
 - type: 'let'
   var: '_rnd_RoyalDecreeExplain_1'
-  # ../en-US.restext:273 | Title_SteamGrenade | "Steam Grenade"
-  # ../en-US.restext:270 | Title_RemoteControlledPlagueRatSwarm | "Remote Controlled Plague ..."
+  # ../en-US.restext:275 | Title_SteamGrenade | "Steam Grenade"
+  # ../en-US.restext:272 | Title_RemoteControlledPlagueRatSwarm | "Remote Controlled Plague ..."
   # ../en-US.restext:255 | Title_FlamingPitchfork | "Flaming Pitchfork"
-  # ../en-US.restext:261 | Title_MechanizedHumanArmorSuit | "Mechanized Human Armor Suit"
+  # ../en-US.restext:263 | Title_MechanizedHumanArmorSuit | "Mechanized Human Armor Suit"
   # ../en-US.restext:252 | Title_DreamStealer | "Dream Stealer"
   expr: '["restext://Title_SteamGrenade", "restext://Title_RemoteControlledPlagueRatSwarm", "restext://Title_FlamingPitchfork", "restext://Title_MechanizedHumanArmorSuit", "restext://Title_DreamStealer"].shuffled("RoyalDecreeExplain_1")[0]'
 # ../.source/ATimeofWar_Eng_v8.cs:17123
 - type: 'text'
-  # ../en-US.restext:1401 | "While my influence was no..."
+  # ../en-US.restext:1403 | "While my influence was no..."
   value: 'restext://RoyalDecreeExplain_011'
   lets:
   - '_rnd_RoyalDecreeExplain_0'
@@ -35,20 +35,20 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:17134
 - type: 'text'
-  # ../en-US.restext:1402 | "**Exercising Royal Decrees**"
+  # ../en-US.restext:1404 | "**Exercising Royal Decrees**"
   value: 'restext://RoyalDecreeExplain_012'
 # ../.source/ATimeofWar_Eng_v8.cs:17136
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:17137
 - type: 'text'
-  # ../en-US.restext:1403 | "Anytime you visit the **R..."
+  # ../en-US.restext:1405 | "Anytime you visit the **R..."
   value: 'restext://RoyalDecreeExplain_013'
 # ../.source/ATimeofWar_Eng_v8.cs:17145
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:17147
 - type: 'text'
-  # ../en-US.restext:1404 | "The player who performs t..."
+  # ../en-US.restext:1406 | "The player who performs t..."
   value: 'restext://RoyalDecreeExplain_014'
 # ../.source/ATimeofWar_Eng_v8.cs:17154
 - type: 'break'

@@ -8,44 +8,44 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:21214
 - type: 'text'
-  # ../en-US.restext:1589 | "Gen 1:"
+  # ../en-US.restext:1591 | "Gen 1:"
   value: 'restext://ProperLetterHeading_001'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21215
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21216
 - type: 'text'
-  # ../en-US.restext:1590 | "1831-1862"
+  # ../en-US.restext:1592 | "1831-1862"
   value: 'restext://ProperLetterHeading_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21217
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21218
 - type: 'text'
-  # ../en-US.restext:1591 | "Gen 2:"
+  # ../en-US.restext:1593 | "Gen 2:"
   value: 'restext://ProperLetterHeading_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21219
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21220
 - type: 'text'
-  # ../en-US.restext:1592 | "1863-1891"
+  # ../en-US.restext:1594 | "1863-1891"
   value: 'restext://ProperLetterHeading_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21221
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21222
 - type: 'text'
-  # ../en-US.restext:1593 | "Gen 3:"
+  # ../en-US.restext:1595 | "Gen 3:"
   value: 'restext://ProperLetterHeading_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21223
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21224
 - type: 'text'
-  # ../en-US.restext:1594 | "1892-1922"
+  # ../en-US.restext:1596 | "1892-1922"
   value: 'restext://ProperLetterHeading_006'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21225
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21227
 - type: 'text'
-  # ../en-US.restext:1595 | "Unless I figure out an al..."
+  # ../en-US.restext:1597 | "Unless I figure out an al..."
   value: 'restext://ProperLetterHeading_007'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21246
 - type: 'switch'
@@ -112,21 +112,21 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21286
 - type: 'text'
-  # ../en-US.restext:1596 | "Newspaper Code"
+  # ../en-US.restext:1598 | "Newspaper Code"
   value: 'restext://ProperLetterHeading_008'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21288
 - type: 'let'
   var: '_rnd_ProperLetterHeading_0'
-  # ../en-US.restext:339 | Title_Ledger | "Ledger"
+  # ../en-US.restext:341 | Title_Ledger | "Ledger"
   # ../en-US.restext:334 | Title_Gazette | "Gazette"
-  # ../en-US.restext:340 | Title_Mercury | "Mercury"
-  # ../en-US.restext:361 | Title_VillageVoice | "Village Voice"
+  # ../en-US.restext:342 | Title_Mercury | "Mercury"
+  # ../en-US.restext:363 | Title_VillageVoice | "Village Voice"
   # ../en-US.restext:333 | Title_Examiner | "Examiner"
   expr: '["restext://Title_Ledger", "restext://Title_Gazette", "restext://Title_Mercury", "restext://Title_VillageVoice", "restext://Title_Examiner"].shuffled("ProperLetterHeading_4")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21288
 - type: 'assign'
   var: 'newspaper'
-  # ../en-US.restext:1597 | "The {townname} {_rnd_Prop..."
+  # ../en-US.restext:1599 | "The {townname} {_rnd_Prop..."
   expr: '"restext://ProperLetterHeading_009"'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21287
 - type: 'break'
@@ -139,7 +139,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21298
 - type: 'text'
-  # ../en-US.restext:1598 | "**Letters of Note -** _Ro..."
+  # ../en-US.restext:1600 | "**Letters of Note -** _Ro..."
   value: 'restext://ProperLetterHeading_010'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21308
 - type: 'switch'
@@ -177,7 +177,7 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21325
 - type: 'text'
-  # ../en-US.restext:1599 | "**{randomname}'s Journal ..."
+  # ../en-US.restext:1601 | "**{randomname}'s Journal ..."
   value: 'restext://ProperLetterHeading_011'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21337
 - type: 'switch'
@@ -215,7 +215,7 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21335
 - type: 'text'
-  # ../en-US.restext:1600 | "**Letter from** **{random..."
+  # ../en-US.restext:1602 | "**Letter from** **{random..."
   value: 'restext://ProperLetterHeading_012'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21362
 - type: 'break'
@@ -251,8 +251,8 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:21378
 - type: 'let'
   var: '_rnd_ProperLetterHeading_1'
-  # ../en-US.restext:1601 | ProperLetterHeading_013 | "Journal Entry -"
-  # ../en-US.restext:1602 | ProperLetterHeading_014 | "Journal of"
+  # ../en-US.restext:1603 | ProperLetterHeading_013 | "Journal Entry -"
+  # ../en-US.restext:1604 | ProperLetterHeading_014 | "Journal of"
   expr: '["restext://ProperLetterHeading_013", "restext://ProperLetterHeading_014"].shuffled("ProperLetterHeading_13")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21376
 - type: 'break'
@@ -267,25 +267,25 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21386
 - type: 'text'
-  # ../en-US.restext:1591 | "Gen 2:"
+  # ../en-US.restext:1593 | "Gen 2:"
   value: 'restext://ProperLetterHeading_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21387
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21388
 - type: 'text'
-  # ../en-US.restext:1592 | "1863-1891"
+  # ../en-US.restext:1594 | "1863-1891"
   value: 'restext://ProperLetterHeading_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21389
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21390
 - type: 'text'
-  # ../en-US.restext:1603 | "Transitional"
+  # ../en-US.restext:1605 | "Transitional"
   value: 'restext://ProperLetterHeading_015'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21391
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21394
 - type: 'text'
-  # ../en-US.restext:1604 | "**Friendly Correspondence..."
+  # ../en-US.restext:1606 | "**Friendly Correspondence..."
   value: 'restext://ProperLetterHeading_016'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21400
 - type: 'break'
@@ -303,13 +303,13 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21408
 - type: 'text'
-  # ../en-US.restext:1593 | "Gen 3:"
+  # ../en-US.restext:1595 | "Gen 3:"
   value: 'restext://ProperLetterHeading_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21409
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21410
 - type: 'text'
-  # ../en-US.restext:1594 | "1892-1922"
+  # ../en-US.restext:1596 | "1892-1922"
   value: 'restext://ProperLetterHeading_006'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21411
 - type: 'break'
@@ -359,5 +359,5 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21421
 - type: 'text'
-  # ../en-US.restext:1605 | "**Journal of** **{randomn..."
+  # ../en-US.restext:1607 | "**Journal of** **{randomn..."
   value: 'restext://ProperLetterHeading_017'

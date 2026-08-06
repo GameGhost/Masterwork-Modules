@@ -2,8 +2,10 @@
 ---
 format: 'mws/0.4'
 passage_id: 'CreatureIntro'
-# ../en-US.restext:490 | "GENERATION II: Towards Ci..."
+# ../en-US.restext:493 | "Towards Civility"
 title: 'restext://CreatureIntro_001'
+# ../en-US.restext:335 | "GENERATION II"
+subtitle: 'restext://Title_GenerationII'
 tags:
 - 'INTRO'
 layout: 'introduction'
@@ -42,49 +44,49 @@ nodes:
   expr: 'randomplayer'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3294
 - type: 'text'
-  # ../en-US.restext:491 | "**Letter from** **{random..."
+  # ../en-US.restext:494 | "**Letter from** **{random..."
   value: 'restext://CreatureIntro_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3322
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3324
 - type: 'text'
-  # ../en-US.restext:492 | "As mariners are wont to s..."
+  # ../en-US.restext:495 | "As mariners are wont to s..."
   value: 'restext://CreatureIntro_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3327
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3329
 - type: 'text'
-  # ../en-US.restext:493 | "My family's manor is set ..."
+  # ../en-US.restext:496 | "My family's manor is set ..."
   value: 'restext://CreatureIntro_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3330
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3332
 - type: 'text'
-  # ../en-US.restext:494 | "Whatever the cause, it ap..."
+  # ../en-US.restext:497 | "Whatever the cause, it ap..."
   value: 'restext://CreatureIntro_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3333
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3335
 - type: 'text'
-  # ../en-US.restext:495 | "The underlying symptoms o..."
+  # ../en-US.restext:498 | "The underlying symptoms o..."
   value: 'restext://CreatureIntro_006'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3336
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3338
 - type: 'text'
-  # ../en-US.restext:496 | "So, like a wolf licking i..."
+  # ../en-US.restext:499 | "So, like a wolf licking i..."
   value: 'restext://CreatureIntro_007'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3341
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3343
 - type: 'text'
-  # ../en-US.restext:497 | "That is, until the Creatu..."
+  # ../en-US.restext:500 | "That is, until the Creatu..."
   value: 'restext://CreatureIntro_008'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3347
 - type: 'assign'
@@ -99,7 +101,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3350
 - type: 'link'
-  # ../en-US.restext:368 | "Continue..."
+  # ../en-US.restext:370 | "Continue..."
   label: 'restext://UIButton_ContinueEllipsis'
   target: 'CreatureDemands' # ./00046-CreatureDemands.mws.yaml
   snapshot: true
@@ -119,15 +121,15 @@ nodes:
 - type: 'assign'
   var: 'asylumup'
   # ../en-US.restext:327 | Title_AsylumLaborUnion | "Asylum Labor Union"
-  # ../en-US.restext:336 | Title_KeyToTheAsylum | "Key to the Asylum"
-  # ../en-US.restext:498 | CreatureIntro_012 | "Asylum Share"
+  # ../en-US.restext:338 | Title_KeyToTheAsylum | "Key to the Asylum"
+  # ../en-US.restext:501 | CreatureIntro_012 | "Asylum Share"
   expr: '["restext://Title_AsylumLaborUnion", "restext://Title_KeyToTheAsylum", "restext://CreatureIntro_012"].shuffled("CreatureIntro_5")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3356
 - type: 'assign'
   var: 'did1'
-  # ../en-US.restext:499 | CreatureIntro_013 | "Puppy"
-  # ../en-US.restext:500 | CreatureIntro_014 | "Bride"
-  # ../en-US.restext:501 | CreatureIntro_015 | "Puppy and Bride"
+  # ../en-US.restext:502 | CreatureIntro_013 | "Puppy"
+  # ../en-US.restext:503 | CreatureIntro_014 | "Bride"
+  # ../en-US.restext:504 | CreatureIntro_015 | "Puppy and Bride"
   expr: '["restext://CreatureIntro_013", "restext://CreatureIntro_014", "restext://CreatureIntro_015"].shuffled("CreatureIntro_6")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3357
 - type: 'assign'

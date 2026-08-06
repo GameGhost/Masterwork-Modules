@@ -2,44 +2,46 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TimeTravelintro1'
-# ../en-US.restext:713 | "GENERATION II: A Return t..."
+# ../en-US.restext:715 | "A Return to Devastation"
 title: 'restext://TimeTravelintro1_001'
+# ../en-US.restext:257 | "GENERATION II"
+subtitle: 'restext://Title_GenerationII'
 tags:
 - 'INTRO'
 layout: 'introduction'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:8207
 - type: 'text'
-  # ../en-US.restext:714 | "I hope you will indulge m..."
-  value: 'restext://TimeTravelintro1_002'
+  # ../en-US.restext:716 | "I hope you will indulge m..."
+  value: 'restext://TimeTravelintro1_003'
 # ../.source/ATimeofWar_Eng_v8.cs:8208
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:8210
 - type: 'text'
-  # ../en-US.restext:715 | "The all-encompassing dest..."
-  value: 'restext://TimeTravelintro1_003'
+  # ../en-US.restext:717 | "The all-encompassing dest..."
+  value: 'restext://TimeTravelintro1_004'
 # ../.source/ATimeofWar_Eng_v8.cs:8211
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:8213
 - type: 'text'
-  # ../en-US.restext:716 | "However, fortune would so..."
-  value: 'restext://TimeTravelintro1_004'
+  # ../en-US.restext:718 | "However, fortune would so..."
+  value: 'restext://TimeTravelintro1_005'
 # ../.source/ATimeofWar_Eng_v8.cs:8214
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:8216
 - type: 'text'
-  # ../en-US.restext:717 | "I was joined by my cousin..."
-  value: 'restext://TimeTravelintro1_005'
+  # ../en-US.restext:719 | "I was joined by my cousin..."
+  value: 'restext://TimeTravelintro1_006'
 # ../.source/ATimeofWar_Eng_v8.cs:8217
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:8219
 - type: 'text'
-  # ../en-US.restext:718 | "It was a map!"
-  value: 'restext://TimeTravelintro1_006'
+  # ../en-US.restext:720 | "It was a map!"
+  value: 'restext://TimeTravelintro1_007'
 # ../.source/ATimeofWar_Eng_v8.cs:8221
 - type: 'assign'
   var: 'buy'
@@ -60,40 +62,40 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:8227
   - type: 'conditional'
     conditions:
-    # ../en-US.restext:271 | "Separatists"
+    # ../en-US.restext:273 | "Separatists"
     - if: 'warwinner == "restext://Title_Separatists"'
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:8229
       - type: 'assign'
         var: 'warwinner'
-        # ../en-US.restext:281 | "Unified Monarchists"
+        # ../en-US.restext:283 | "Unified Monarchists"
         expr: '"restext://Title_UnifiedMonarchists"'
-    # ../en-US.restext:281 | "Unified Monarchists"
+    # ../en-US.restext:283 | "Unified Monarchists"
     - if: 'warwinner == "restext://Title_UnifiedMonarchists"'
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:8233
       - type: 'assign'
         var: 'warwinner'
-        # ../en-US.restext:271 | "Separatists"
+        # ../en-US.restext:273 | "Separatists"
         expr: '"restext://Title_Separatists"'
   # ../.source/ATimeofWar_Eng_v8.cs:8235
   - type: 'conditional'
     conditions:
-    # ../en-US.restext:271 | "Separatists"
+    # ../en-US.restext:273 | "Separatists"
     - if: 'warloser == "restext://Title_Separatists"'
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:8237
       - type: 'assign'
         var: 'warloser'
-        # ../en-US.restext:281 | "Unified Monarchists"
+        # ../en-US.restext:283 | "Unified Monarchists"
         expr: '"restext://Title_UnifiedMonarchists"'
-    # ../en-US.restext:281 | "Unified Monarchists"
+    # ../en-US.restext:283 | "Unified Monarchists"
     - if: 'warloser == "restext://Title_UnifiedMonarchists"'
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:8241
       - type: 'assign'
         var: 'warloser'
-        # ../en-US.restext:271 | "Separatists"
+        # ../en-US.restext:273 | "Separatists"
         expr: '"restext://Title_Separatists"'
 # ../.source/ATimeofWar_Eng_v8.cs:8244
 - type: 'assign'

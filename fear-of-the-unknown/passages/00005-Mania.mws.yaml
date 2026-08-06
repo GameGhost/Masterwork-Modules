@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Mania'
-# ../en-US.restext:363 | "WITCH HUNT"
+# ../en-US.restext:365 | "WITCH HUNT"
 title: 'restext://Title_WitchHuntCaps'
 # ../en-US.restext:332 | "Early Years"
 subtitle: 'restext://Title_EarlyYears'
@@ -21,7 +21,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:1831
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:364 | "Accept"
+    # ../en-US.restext:366 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:1835
@@ -31,7 +31,7 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:1837
     - type: 'text'
-      # ../en-US.restext:411 | "Turn to the **Fear of the..."
+      # ../en-US.restext:414 | "Turn to the **Fear of the..."
       value: 'restext://Mania_004'
     # ../.source/FearoftheUnknown_Eng_v15.cs:1863
     - type: 'switch'
@@ -94,7 +94,7 @@ nodes:
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:1860
     - type: 'text'
-      # ../en-US.restext:412 | "Place the Suspicion Marke..."
+      # ../en-US.restext:415 | "Place the Suspicion Marke..."
       value: 'restext://Mania_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1916
 - type: 'section'
@@ -154,7 +154,7 @@ nodes:
       value: 'restext://Directive_ReachesJournalLevel2_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:1973
     - type: 'link'
-      # ../en-US.restext:413 | "Click here."
+      # ../en-US.restext:416 | "Click here."
       label: 'restext://Mania_014'
       target: 'FPResearch2' # ./00130-FPResearch2.mws.yaml
       snapshot: true
@@ -225,7 +225,7 @@ nodes:
     # ../en-US.restext:35 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
     target: 'Mania2' # ./00036-Mania2.mws.yaml
-    # ../en-US.restext:369 | "End of Round"
+    # ../en-US.restext:371 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -234,7 +234,7 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:414 | "The Early Years of the Fi..."
+      # ../en-US.restext:417 | "The Early Years of the Fi..."
       value: 'restext://Mania_025'
     - type: 'break'
       style: 'paragraph'
