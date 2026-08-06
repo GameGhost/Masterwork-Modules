@@ -52,14 +52,11 @@ nodes:
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:23830
-- type: 'popup'
+- type: 'link'
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
-  layout: 'reveal'
-  # ../en-US.restext:367 | "Close"
-  cancel: 'restext://UIButton_Close'
   snapshot: true
-  content:
+  onclick:
   # ../.source/FearoftheUnknown_Eng_v15.cs:23837
   - type: 'assign'
     var: 'id'
