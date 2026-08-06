@@ -15,11 +15,12 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:5203
 - type: 'popup'
+  layout: 'setup'
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
-  layout: 'reveal'
+  target: '${warwinner == "Separatists" ? "MartialSepEvent" : "BarracksSimple2"}' # ./00070-MartialSepEvent.mws.yaml, ./00158-BarracksSimple2.mws.yaml
   # ../en-US.restext:286 | "Close"
-  cancel: 'restext://UIButton_Close'
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:5229
@@ -27,30 +28,6 @@ nodes:
     asset: 'image://setup/S3_EstateUpgradeBack'
     style: 'setup-image'
   content:
-  # ../.source/ATimeofWar_Eng_v8.cs:5212
-  - type: 'conditional'
-    # ../en-US.restext:273 | "Separatists"
-    if: 'warwinner == "restext://Title_Separatists"'
-    then:
-    # ../.source/ATimeofWar_Eng_v8.cs:5214
-    - type: 'section'
-      style: 'panel'
-      content: []
-    - type: 'link'
-      # ../en-US.restext:288 | "Continue"
-      label: 'restext://UIButton_Continue'
-      target: 'MartialSepEvent' # ./00070-MartialSepEvent.mws.yaml
-      snapshot: true
-    else:
-    # ../.source/ATimeofWar_Eng_v8.cs:5219
-    - type: 'section'
-      style: 'panel'
-      content: []
-    - type: 'link'
-      # ../en-US.restext:288 | "Continue"
-      label: 'restext://UIButton_Continue'
-      target: 'BarracksSimple2' # ./00158-BarracksSimple2.mws.yaml
-      snapshot: true
   # ../.source/ATimeofWar_Eng_v8.cs:5235
   - type: 'let'
     var: '_rnd_ResistEvent1_0'
@@ -61,7 +38,7 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:5234
   - type: 'text'
     # ../en-US.restext:559 | "**Award {_rnd_ResistEvent..."
-    value: 'restext://ResistEvent1_004'
+    value: 'restext://ResistEvent1_003'
     lets:
     - '_rnd_ResistEvent1_0'
   # ../.source/ATimeofWar_Eng_v8.cs:5238
@@ -70,4 +47,4 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:5240
   - type: 'text'
     # ../en-US.restext:560 | "All other players **MUST*..."
-    value: 'restext://ResistEvent1_005'
+    value: 'restext://ResistEvent1_004'

@@ -44,11 +44,12 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:8119
 - type: 'popup'
+  layout: 'setup'
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
-  layout: 'reveal'
+  target: '${round == 14 ? "Warning2time" : "Warning3time"}' # ./00058-Warning2time.mws.yaml, ./00060-Warning3time.mws.yaml
   # ../en-US.restext:286 | "Close"
-  cancel: 'restext://UIButton_Close'
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:8159
@@ -56,31 +57,6 @@ nodes:
     asset: 'image://setup/Bodies_Icon'
     style: 'setup-image'
   content:
-  # ../.source/ATimeofWar_Eng_v8.cs:8140
-  - type: 'conditional'
-    if: 'round == 14'
-    then:
-    # ../.source/ATimeofWar_Eng_v8.cs:8142
-    - type: 'section'
-      style: 'panel'
-      content: []
-    - type: 'link'
-      # ../en-US.restext:288 | "Continue"
-      label: 'restext://UIButton_Continue'
-      target: 'Warning2time' # ./00058-Warning2time.mws.yaml
-      snapshot: true
-    else:
-    # ../.source/ATimeofWar_Eng_v8.cs:8148
-    - type: 'section'
-      style: 'panel'
-      content: []
-    - type: 'link'
-      # ../en-US.restext:288 | "Continue"
-      label: 'restext://UIButton_Continue'
-      target: 'Warning3time' # ./00060-Warning3time.mws.yaml
-      snapshot: true
-  # ../.source/ATimeofWar_Eng_v8.cs:8160
-  - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:8161
   - type: 'text'
     # ../en-US.restext:711 | "The player who completed ..."

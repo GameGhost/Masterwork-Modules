@@ -79,11 +79,12 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:7008
 - type: 'popup'
+  layout: 'setup'
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
-  layout: 'reveal'
+  target: '${search >= total ? "WarningEvent2" : round == 14 ? "Warning2" : "Warning3"}' # ./00057-WarningEvent2.mws.yaml, ./00056-Warning2.mws.yaml, ./00059-Warning3.mws.yaml
   # ../en-US.restext:286 | "Close"
-  cancel: 'restext://UIButton_Close'
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:7059
@@ -95,41 +96,6 @@ nodes:
   - type: 'assign'
     var: 'cont'
     expr: 'twcode[0]'
-  # ../.source/ATimeofWar_Eng_v8.cs:7037
-  - type: 'conditional'
-    conditions:
-    - if: 'search >= total'
-      then:
-      # ../.source/ATimeofWar_Eng_v8.cs:7039
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:288 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'WarningEvent2' # ./00057-WarningEvent2.mws.yaml
-        snapshot: true
-    - if: 'round == 14'
-      then:
-      # ../.source/ATimeofWar_Eng_v8.cs:7044
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:288 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'Warning2' # ./00056-Warning2.mws.yaml
-        snapshot: true
-    else:
-    # ../.source/ATimeofWar_Eng_v8.cs:7049
-    - type: 'section'
-      style: 'panel'
-      content: []
-    - type: 'link'
-      # ../en-US.restext:288 | "Continue"
-      label: 'restext://UIButton_Continue'
-      target: 'Warning3' # ./00059-Warning3.mws.yaml
-      snapshot: true
   # ../.source/ATimeofWar_Eng_v8.cs:7060
   - type: 'break'
     style: 'paragraph'

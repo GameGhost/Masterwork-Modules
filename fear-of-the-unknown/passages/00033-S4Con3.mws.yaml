@@ -36,11 +36,12 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5292
 - type: 'popup'
+  layout: 'setup'
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
-  layout: 'reveal'
+  target: '${round == 11 ? "Isolation2" : "Isolation3"}' # ./00043-Isolation2.mws.yaml, ./00044-Isolation3.mws.yaml
   # ../en-US.restext:367 | "Close"
-  cancel: 'restext://UIButton_Close'
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/FearoftheUnknown_Eng_v15.cs:5318
@@ -48,32 +49,6 @@ nodes:
     asset: 'image://setup/Creepy_Icon'
     style: 'setup-image'
   content:
-  # ../.source/FearoftheUnknown_Eng_v15.cs:5300
-  - type: 'conditional'
-    if: 'round == 11'
-    then:
-    # ../.source/FearoftheUnknown_Eng_v15.cs:5303
-    - type: 'section'
-      style: 'panel'
-      content: []
-    - type: 'link'
-      # ../en-US.restext:369 | "Continue"
-      label: 'restext://UIButton_Continue'
-      target: 'Isolation2' # ./00043-Isolation2.mws.yaml
-      snapshot: true
-    else:
-    # ../.source/FearoftheUnknown_Eng_v15.cs:5310
-    - type: 'section'
-      style: 'panel'
-      content: []
-    - type: 'link'
-      # ../en-US.restext:369 | "Continue"
-      label: 'restext://UIButton_Continue'
-      target: 'Isolation3' # ./00044-Isolation3.mws.yaml
-      snapshot: true
-  # ../.source/FearoftheUnknown_Eng_v15.cs:5319
-  - type: 'break'
-    style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:5321
   - type: 'conditional'
     if: 'tempbs == 1'

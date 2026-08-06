@@ -29,11 +29,12 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:14015
 - type: 'popup'
+  layout: 'setup'
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
-  layout: 'reveal'
+  target: '${rumor1 == "visited" ? "Militarytoken" : "TimeTravel2"}' # ./00107-Militarytoken.mws.yaml, ./00032-TimeTravel2.mws.yaml
   # ../en-US.restext:286 | "Close"
-  cancel: 'restext://UIButton_Close'
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:14041
@@ -41,31 +42,6 @@ nodes:
     asset: 'image://setup/S3_TimeMachineRepairs'
     style: 'setup-image'
   content:
-  # ../.source/ATimeofWar_Eng_v8.cs:14024
-  - type: 'conditional'
-    if: 'rumor1 == "visited"'
-    then:
-    # ../.source/ATimeofWar_Eng_v8.cs:14026
-    - type: 'section'
-      style: 'panel'
-      content: []
-    - type: 'link'
-      # ../en-US.restext:288 | "Continue"
-      label: 'restext://UIButton_Continue'
-      target: 'Militarytoken' # ./00107-Militarytoken.mws.yaml
-      snapshot: true
-    else:
-    # ../.source/ATimeofWar_Eng_v8.cs:14031
-    - type: 'section'
-      style: 'panel'
-      content: []
-    - type: 'link'
-      # ../en-US.restext:288 | "Continue"
-      label: 'restext://UIButton_Continue'
-      target: 'TimeTravel2' # ./00032-TimeTravel2.mws.yaml
-      snapshot: true
-  # ../.source/ATimeofWar_Eng_v8.cs:14042
-  - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:14043
   - type: 'text'
     # ../en-US.restext:1084 | "Retrieve the three **Time..."

@@ -24,11 +24,12 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28859
   - type: 'popup'
+    layout: 'setup'
     # ../en-US.restext:29 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
-    layout: 'reveal'
+    target: '${Gen2End == "asylum" ? "LiberalIntro" : "PrivatizedIntro"}' # ./00024-LiberalIntro.mws.yaml, ./00023-PrivatizedIntro.mws.yaml
     # ../en-US.restext:367 | "Close"
-    cancel: 'restext://UIButton_Close'
+    okay: 'restext://UIButton_Close'
     snapshot: true
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:28912
@@ -36,32 +37,6 @@ nodes:
       asset: 'image://setup/AdvanceJournalTrack'
       style: 'setup-image'
     content:
-    # ../.source/FearoftheUnknown_Eng_v15.cs:28896
-    - type: 'conditional'
-      if: 'Gen2End == "asylum"'
-      then:
-      # ../.source/FearoftheUnknown_Eng_v15.cs:28898
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:369 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'LiberalIntro' # ./00024-LiberalIntro.mws.yaml
-        snapshot: true
-      else:
-      # ../.source/FearoftheUnknown_Eng_v15.cs:28903
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:369 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'PrivatizedIntro' # ./00023-PrivatizedIntro.mws.yaml
-        snapshot: true
-    # ../.source/FearoftheUnknown_Eng_v15.cs:28913
-    - type: 'break'
-      style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28915
     - type: 'text'
       # ../en-US.restext:2164 | "The player with a complet..."

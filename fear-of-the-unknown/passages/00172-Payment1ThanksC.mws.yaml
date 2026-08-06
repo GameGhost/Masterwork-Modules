@@ -24,11 +24,12 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20356
 - type: 'popup'
+  layout: 'setup'
   # ../en-US.restext:28 | "Click here to continue..."
   label: 'restext://Click_ContinueEllipsis_B'
-  layout: 'reveal'
+  target: '${players > 3 ? "Payment1D" : players == 3 ? "Payment1Hub" : ""}' # ./00168-Payment1D.mws.yaml, ./00164-Payment1Hub.mws.yaml
   # ../en-US.restext:367 | "Close"
-  cancel: 'restext://UIButton_Close'
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/FearoftheUnknown_Eng_v15.cs:20393
@@ -40,34 +41,6 @@ nodes:
   - type: 'text'
     value: '	'
   # ../.source/FearoftheUnknown_Eng_v15.cs:20376
-  - type: 'break'
-  # ../.source/FearoftheUnknown_Eng_v15.cs:20379
-  - type: 'conditional'
-    if: 'players > 3'
-    then:
-    # ../.source/FearoftheUnknown_Eng_v15.cs:20381
-    - type: 'section'
-      style: 'panel'
-      content: []
-    - type: 'link'
-      # ../en-US.restext:369 | "Continue"
-      label: 'restext://UIButton_Continue'
-      target: 'Payment1D' # ./00168-Payment1D.mws.yaml
-      snapshot: true
-  # ../.source/FearoftheUnknown_Eng_v15.cs:20383
-  - type: 'conditional'
-    if: 'players == 3'
-    then:
-    # ../.source/FearoftheUnknown_Eng_v15.cs:20385
-    - type: 'section'
-      style: 'panel'
-      content: []
-    - type: 'link'
-      # ../en-US.restext:369 | "Continue"
-      label: 'restext://UIButton_Continue'
-      target: 'Payment1Hub' # ./00164-Payment1Hub.mws.yaml
-      snapshot: true
-  # ../.source/FearoftheUnknown_Eng_v15.cs:20394
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:20398

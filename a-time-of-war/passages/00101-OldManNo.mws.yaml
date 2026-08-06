@@ -22,11 +22,12 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:12498
 - type: 'popup'
+  layout: 'setup'
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
-  layout: 'reveal'
+  target: '${stasis == "yes" ? "Warning3time" : "Warning3"}' # ./00060-Warning3time.mws.yaml, ./00059-Warning3.mws.yaml
   # ../en-US.restext:286 | "Close"
-  cancel: 'restext://UIButton_Close'
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:12539
@@ -34,32 +35,6 @@ nodes:
     asset: 'image://setup/ExperimentABack'
     style: 'setup-image'
   content:
-  # ../.source/ATimeofWar_Eng_v8.cs:12521
-  - type: 'conditional'
-    if: 'stasis == "yes"'
-    then:
-    # ../.source/ATimeofWar_Eng_v8.cs:12523
-    - type: 'section'
-      style: 'panel'
-      content: []
-    - type: 'link'
-      # ../en-US.restext:288 | "Continue"
-      label: 'restext://UIButton_Continue'
-      target: 'Warning3time' # ./00060-Warning3time.mws.yaml
-      snapshot: true
-    else:
-    # ../.source/ATimeofWar_Eng_v8.cs:12529
-    - type: 'section'
-      style: 'panel'
-      content: []
-    - type: 'link'
-      # ../en-US.restext:288 | "Continue"
-      label: 'restext://UIButton_Continue'
-      target: 'Warning3' # ./00059-Warning3.mws.yaml
-      snapshot: true
-  # ../.source/ATimeofWar_Eng_v8.cs:12540
-  - type: 'break'
-    style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:12544
   - type: 'text'
     # ../en-US.restext:956 | "**Discard an Experiment c..."
