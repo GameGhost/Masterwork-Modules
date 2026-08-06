@@ -48,7 +48,7 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:16660
   - type: 'conditional'
-    if: 'count(fpfate) > 0'
+    if: 'fpfate.count() > 0'
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:16662
     - type: 'let'
@@ -68,7 +68,7 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:16673
   - type: 'conditional'
-    if: 'count(fpfate) > 0'
+    if: 'fpfate.count() > 0'
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:16675
     - type: 'let'
@@ -88,7 +88,7 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:16686
   - type: 'conditional'
-    if: 'count(fpfate) > 0'
+    if: 'fpfate.count() > 0'
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:16688
     - type: 'let'
@@ -108,7 +108,7 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:16699
   - type: 'conditional'
-    if: 'count(fpfate) > 0'
+    if: 'fpfate.count() > 0'
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:16701
     - type: 'let'
@@ -128,7 +128,7 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:16712
   - type: 'conditional'
-    if: 'count(fpfate) > 0'
+    if: 'fpfate.count() > 0'
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:16714
     - type: 'let'
