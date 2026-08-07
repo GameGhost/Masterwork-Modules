@@ -57,6 +57,7 @@ Click_StartBid=Click to start the bid...
 Click_StartVote=Click here to start the vote...
 Click_ToBegin=Click to begin...
 Click_ToContinueEllipsis_Lower=click to continue...
+Common_001=For Private Use
 Common_Frequently=Frequently.
 Common_VersionOnePointZero=v1.0
 Countdown_One=1
@@ -159,7 +160,6 @@ Heading_CollectedNotes_Oct1862=**Collected Notes (cont.) -** _10 October, 1862._
 Heading_CollectionDay=**Collection Day**
 Heading_Complete_Fragment= **Complete**
 Heading_EverythingYouKnowIsWrong=**Everything You Know is Wrong**
-Heading_ForPrivateUse=**For Private Use**
 Heading_HowMuchInvest=**How much would you like to invest?**
 Heading_IDecidedToInvestigate=**I decided to investigate:**
 Heading_IWouldLikeToHex=I would like to hex:
@@ -1725,12 +1725,11 @@ WhatifWampyre_035=Count Asylum
 WhatifWampyre_036=Becomes the head doctor of the Asylum. Appears youthful and full of energy.
 
 # passages/00200-PrivateCountYesNo.mws.yaml
-PrivateCountYesNo_001=**Investment**
+PrivateCountYesNo_001=Investment
 PrivateCountYesNo_002=The Count returned this afternoon to make good on his promise of investment opportunities to our family. I noted how strange it was that my brief recollections of him as a child proved to be spot on. While my parents had passed, the Count seemed to have never aged a single day. The benefits of a healthy disposition and good living, I suppose.
 PrivateCountYesNo_003=Each player **gains a Servant** from Lost.
 
 # passages/00201-CreaturePleased.mws.yaml
-CreaturePleased_001=**The Creature Intervenes**
 CreaturePleased_002=An uncanny occurrence today: I was skimming through my family's notes and found references to an experiment to procure life from death. At this same moment, I received a letter with very poor penmanship from an individual signed only as **The Creature.**
 CreaturePleased_003=The letter reads: "I wish to alleviate some of what ails you. Even from the cold of Siberia, where I reside away from the wretched eyes of humanity, I hear word of {townname} and its troubles.
 CreaturePleased_004=I offer you this remuneration with no obligation. Your family may have cursed me, but it has also soothed the rage within me."
@@ -2076,7 +2075,7 @@ WallEvent1b_004=We chose Strength.
 WallEvent1b_005=We chose Acceptance.
 
 # passages/00241-IsolationCaravanResolve.mws.yaml
-IsolationCaravanResolve_001=**Neglected by the Caravan**
+IsolationCaravanResolve_001=Neglected by the Caravan
 
 # passages/00242-TensionCaravanResolve.mws.yaml
 TensionCaravanResolve_001=Neglected
@@ -2173,10 +2172,10 @@ Expedition3_003=**Were you successful in finding the Creature?**
 LibCountBlessing_001=Ever since, I have felt reinvigorated; strong of heart and pure of will. I find myself in a more talkative mood and when I speak, people listen more intently. My accent has become slightly more pronounced and I struggle to pronounce my W's correctly.
 
 # passages/00257-LiberalEventGood.mws.yaml
-LiberalEventGood_002=Perhaps the world has some justice in it after all! A generous benefactor has intercepted our lobbying attempts and seen to it all debts were paid.
-LiberalEventGood_003=All I received was a brief letter where the local bank owner explained his reasoning thusly: "I have made a name for myself in the only field that doesn't care how ugly or vicious I am: business."
-LiberalEventGood_004=He signed his letter only as **The Creature**, but on a vivid egg-shell parchment bearing the bank's watermark. Who was this gentleman?
-LiberalEventGood_005=Any player who offered money towards the bribe regains all money spent and **gains 1** {icon:creepy_icon}**.**
+LiberalEventGood_001=Perhaps the world has some justice in it after all! A generous benefactor has intercepted our lobbying attempts and seen to it all debts were paid.
+LiberalEventGood_002=All I received was a brief letter where the local bank owner explained his reasoning thusly: "I have made a name for myself in the only field that doesn't care how ugly or vicious I am: business."
+LiberalEventGood_003=He signed his letter only as **The Creature**, but on a vivid egg-shell parchment bearing the bank's watermark. Who was this gentleman?
+LiberalEventGood_004=Any player who offered money towards the bribe regains all money spent and **gains 1** {icon:creepy_icon}**.**
 
 # passages/00258-LiberalEvent3.mws.yaml
 LiberalEvent3_001=Aid to the Institute
@@ -2347,13 +2346,13 @@ BankLibExplain_006=_Due to the death of the Butcher, there is no Biology Knowled
 BankLibExplain_007=_Due to the death of the Blacksmith, there is no Engineering Knowledge available._
 
 # passages/00281-IsoBricksRes.mws.yaml
-IsoBricksRes_001=**Reward for Investment**
+IsoBricksRes_001=Reward for Investment
 IsoBricksRes_002=I have an interesting tidbit for you, since I know your propensity for such things. Oddly enough, my parents invested in the construction of the wall - for reasons unknown to me but reasons nonetheless. This has alleviated some of the hostilities against me when entering the limits of that lunatic asylum they call a town.
 IsoBricksRes_003=Confirm that the Suspicion Marker is on space _{tracker}_.
 IsoBricksRes_004=Count all bricks collected by all players. For every 3 bricks collected, move the Suspicion Marker one space to the right.
 
 # passages/00282-IsoVerify.mws.yaml
-IsoVerify_001=**Verification of Identity Required**
+IsoVerify_001=Verification of Identity Required
 IsoVerify_002={nameA} loses **4VP** and must discard an Estate Upgrade to the box.
 IsoVerify_003={nameB} loses **4VP** and must discard an Estate Upgrade to the box.
 IsoVerify_004={nameC} loses **4VP** and must discard an Estate Upgrade to the box.
@@ -2362,7 +2361,7 @@ IsoVerify_006={nameE} loses **4VP** and must discard an Estate Upgrade to the bo
 IsoVerify_007=All other players have completed their required verification and no penalty is assessed.
 
 # passages/00283-WallCheck.mws.yaml
-WallCheck_001=**Our Donations to Strength**
+WallCheck_001=Our Donations to Strength
 WallCheck_002=It was clear our donations were intended to be used alternatively, yet the resulting Memorial to solemnly remind {townname} residents and visitors alike of the perils of xenophobia is certainly a sight to behold. My family's contributions, or lack thereof, were still noted by the town. A pointless exercise, I think.
 WallCheck_003=**Brick Count**
 WallCheck_004=Count up all Memorial bricks that have been collected by all players.
@@ -2404,7 +2403,7 @@ Gen3Token2SignIn_005=I arrived at the designated location, where two roads diver
 Gen3Token2SignIn_006=**Please choose your name:**
 
 # passages/00288-TenseBricksRes.mws.yaml
-TenseBricksRes_001=**Minor Reward for Investment**
+TenseBricksRes_001=Minor Reward for Investment
 TenseBricksRes_002=The local government was still thankful for the support. Since our donations assisted in the groundbreaking of the memorial, they reluctantly offered to return the favor. It was, quite frankly, the least they could do.
 TenseBricksRes_003=Bricks can now be used to expand to new plots in your Estate.
 TenseBricksRes_004=When expanding to a new plot, each brick token you spend is worth $1.

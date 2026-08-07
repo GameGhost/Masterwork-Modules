@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'OldManNo'
-# ../en-US.restext:268 | "No Consequence"
+# ../en-US.restext:267 | "No Consequence"
 title: 'restext://Title_NoConsequence'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:12489
 - type: 'text'
-  # ../en-US.restext:954 | "It was both a letter from..."
+  # ../en-US.restext:953 | "It was both a letter from..."
   value: 'restext://OldManNo_001'
 # ../.source/ATimeofWar_Eng_v8.cs:12490
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:12492
 - type: 'text'
-  # ../en-US.restext:955 | "But the task prove too da..."
+  # ../en-US.restext:954 | "But the task prove too da..."
   value: 'restext://OldManNo_002'
 # ../.source/ATimeofWar_Eng_v8.cs:12493
 - type: 'break'
@@ -26,7 +26,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${stasis == "yes" ? "Warning3time" : "Warning3"}' # ./00060-Warning3time.mws.yaml, ./00059-Warning3.mws.yaml
-  # ../en-US.restext:286 | "Close"
+  # ../en-US.restext:285 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -37,5 +37,5 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:12544
   - type: 'text'
-    # ../en-US.restext:956 | "**Discard an Experiment c..."
+    # ../en-US.restext:955 | "**Discard an Experiment c..."
     value: 'restext://OldManNo_003'

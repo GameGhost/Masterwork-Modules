@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ResistEvent2'
-# ../en-US.restext:563 | "Voluntary Quartering"
+# ../en-US.restext:562 | "Voluntary Quartering"
 title: 'restext://ResistEvent2_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:5281
 - type: 'text'
-  # ../en-US.restext:564 | "The military is busy tend..."
+  # ../en-US.restext:563 | "The military is busy tend..."
   value: 'restext://ResistEvent2_002'
 # ../.source/ATimeofWar_Eng_v8.cs:5284
 - type: 'break'
@@ -19,7 +19,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${warwinner == "Separatists" ? "MartialSepEvent" : "BarracksSimple2"}' # ./00070-MartialSepEvent.mws.yaml, ./00158-BarracksSimple2.mws.yaml
-  # ../en-US.restext:286 | "Close"
+  # ../en-US.restext:285 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -37,7 +37,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:5309
   - type: 'text'
-    # ../en-US.restext:565 | "**Award {_rnd_ResistEvent..."
+    # ../en-US.restext:564 | "**Award {_rnd_ResistEvent..."
     value: 'restext://ResistEvent2_003'
     lets:
     - '_rnd_ResistEvent2_0'

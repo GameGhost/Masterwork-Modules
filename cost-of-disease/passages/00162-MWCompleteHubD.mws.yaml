@@ -7,16 +7,16 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:18942
 - type: 'let'
   var: '_rnd_MWCompleteHubD_0'
-  # ../en-US.restext:275 | Narrative_MasterworkExclaim_WorkDone | "The Work is Done"
-  # ../en-US.restext:272 | Narrative_MasterworkExclaim_Impossible | "I Have Done the Impossible"
-  # ../en-US.restext:274 | Narrative_MasterworkExclaim_LegacyEnsured | "My Legacy is Ensured"
-  # ../en-US.restext:273 | Narrative_MasterworkExclaim_Laugh | "AH HA HA HAAAAA!!!"
-  # ../en-US.restext:270 | Narrative_MasterworkExclaim_GloriousCreation | "My Glorious Creation"
-  # ../en-US.restext:271 | Narrative_MasterworkExclaim_GloryForever | "The Glory is Mine Forever!"
+  # ../en-US.restext:274 | Narrative_MasterworkExclaim_WorkDone | "The Work is Done"
+  # ../en-US.restext:271 | Narrative_MasterworkExclaim_Impossible | "I Have Done the Impossible"
+  # ../en-US.restext:273 | Narrative_MasterworkExclaim_LegacyEnsured | "My Legacy is Ensured"
+  # ../en-US.restext:272 | Narrative_MasterworkExclaim_Laugh | "AH HA HA HAAAAA!!!"
+  # ../en-US.restext:269 | Narrative_MasterworkExclaim_GloriousCreation | "My Glorious Creation"
+  # ../en-US.restext:270 | Narrative_MasterworkExclaim_GloryForever | "The Glory is Mine Forever!"
   expr: '["restext://Narrative_MasterworkExclaim_WorkDone", "restext://Narrative_MasterworkExclaim_Impossible", "restext://Narrative_MasterworkExclaim_LegacyEnsured", "restext://Narrative_MasterworkExclaim_Laugh", "restext://Narrative_MasterworkExclaim_GloriousCreation", "restext://Narrative_MasterworkExclaim_GloryForever"].shuffled("MWCompleteHubD_0")[0]'
 # ../.source/TheCostofDisease_Eng_v10.cs:18942
 - type: 'text'
-  # ../en-US.restext:1452 | "**{_rnd_MWCompleteHubD_0}..."
+  # ../en-US.restext:1451 | "**{_rnd_MWCompleteHubD_0}..."
   value: 'restext://MWCompleteHubD_001'
   lets:
   - '_rnd_MWCompleteHubD_0'
@@ -30,46 +30,46 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:18952
     - type: 'text'
-      # ../en-US.restext:268 | "Upon the stroke of midnig..."
+      # ../en-US.restext:267 | "Upon the stroke of midnig..."
       value: 'restext://Narrative_MasterworkCreation_Lightning'
   - match: 'power'
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:18958
     - type: 'text'
-      # ../en-US.restext:1454 | "To see my work in the fle..."
+      # ../en-US.restext:1453 | "To see my work in the fle..."
       value: 'restext://MWCompleteHubD_003'
   - match: 'robot'
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:18966
     - type: 'text'
-      # ../en-US.restext:1455 | "A brief, blinding flash a..."
+      # ../en-US.restext:1454 | "A brief, blinding flash a..."
       value: 'restext://MWCompleteHubD_004'
   - match: 'weapon'
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:18975
     - type: 'text'
-      # ../en-US.restext:269 | "I seized the firing mecha..."
+      # ../en-US.restext:268 | "I seized the firing mecha..."
       value: 'restext://Narrative_MasterworkCreation_Weapon'
   - match: 'medicine'
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:18979
     - type: 'text'
-      # ../en-US.restext:1456 | "I tapped the glass bottle..."
+      # ../en-US.restext:1455 | "I tapped the glass bottle..."
       value: 'restext://MWCompleteHubD_005'
   - match: 'drug'
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:18988
     - type: 'text'
-      # ../en-US.restext:1457 | "I observed the effects as..."
+      # ../en-US.restext:1456 | "I observed the effects as..."
       value: 'restext://MWCompleteHubD_006'
   - match: 'demon'
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:18994
     - type: 'text'
-      # ../en-US.restext:1458 | "The world darkened around..."
+      # ../en-US.restext:1457 | "The world darkened around..."
       value: 'restext://MWCompleteHubD_007'
   default:
   # ../.source/TheCostofDisease_Eng_v10.cs:19002
   - type: 'text'
-    # ../en-US.restext:1453 | "The preparations proved t..."
+    # ../en-US.restext:1452 | "The preparations proved t..."
     value: 'restext://MWCompleteHubD_002'

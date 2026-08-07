@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Martial1'
-# ../en-US.restext:262 | "Martial Law"
+# ../en-US.restext:261 | "Martial Law"
 title: 'restext://Title_MartialLaw'
-# ../en-US.restext:253 | "Early Years"
+# ../en-US.restext:252 | "Early Years"
 subtitle: 'restext://Title_EarlyYears'
 tags:
 - 'HUB'
@@ -21,7 +21,7 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:3638
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:285 | "Accept"
+    # ../en-US.restext:284 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/ATimeofWar_Eng_v8.cs:3642
@@ -31,13 +31,13 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:3644
     - type: 'text'
-      # ../en-US.restext:479 | "Turn to page **4** of the..."
+      # ../en-US.restext:478 | "Turn to page **4** of the..."
       value: 'restext://Martial1_002'
     # ../.source/ATimeofWar_Eng_v8.cs:3655
     - type: 'break'
     # ../.source/ATimeofWar_Eng_v8.cs:3656
     - type: 'text'
-      # ../en-US.restext:93 | "Place the Suspicion Marke..."
+      # ../en-US.restext:94 | "Place the Suspicion Marke..."
       value: 'restext://Directive_PlaceSuspicionMarker_Lead'
     # ../.source/ATimeofWar_Eng_v8.cs:3659
     - type: 'conditional'
@@ -49,7 +49,7 @@ nodes:
         expr: '1'
       # ../.source/ATimeofWar_Eng_v8.cs:3662
       - type: 'conditional'
-        # ../en-US.restext:283 | "Unified Monarchists"
+        # ../en-US.restext:282 | "Unified Monarchists"
         if: 'warwinner == "restext://Title_UnifiedMonarchists"'
         then:
         # ../.source/ATimeofWar_Eng_v8.cs:3664
@@ -67,7 +67,7 @@ nodes:
           expr: 'tracker - _rnd_Martial1_0'
     # ../.source/ATimeofWar_Eng_v8.cs:3671
     - type: 'text'
-      # ../en-US.restext:108 | "**{tracker}** and the {ic..."
+      # ../en-US.restext:109 | "**{tracker}** and the {ic..."
       value: 'restext://Directive_TrackerAndMobMarkerLeft'
     # ../.source/ATimeofWar_Eng_v8.cs:3676
     - type: 'conditional'
@@ -77,7 +77,7 @@ nodes:
       - type: 'break'
       # ../.source/ATimeofWar_Eng_v8.cs:3679
       - type: 'text'
-        # ../en-US.restext:54 | "Then, since this is a 3 p..."
+        # ../en-US.restext:55 | "Then, since this is a 3 p..."
         value: 'restext://Directive_3Player_PassMarker_A'
   # ../.source/ATimeofWar_Eng_v8.cs:3683
   - type: 'break'
@@ -85,31 +85,31 @@ nodes:
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:3688
 - type: 'section'
-  # ../en-US.restext:184 | "**Turn the Tide**"
+  # ../en-US.restext:183 | "**Turn the Tide**"
   title: 'restext://Heading_TurnTheTide'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:3696
   - type: 'text'
-    # ../en-US.restext:480 | "The {warloser} are desper..."
+    # ../en-US.restext:479 | "The {warloser} are desper..."
     value: 'restext://Martial1_006'
   # ../.source/ATimeofWar_Eng_v8.cs:3711
   - type: 'conditional'
-    # ../en-US.restext:273 | "Separatists"
+    # ../en-US.restext:272 | "Separatists"
     if: 'warloser == "restext://Title_Separatists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:3715
     - type: 'text'
-      # ../en-US.restext:482 | "**gain a Knowledge of you..."
+      # ../en-US.restext:481 | "**gain a Knowledge of you..."
       value: 'restext://Martial1_008'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:3723
     - type: 'text'
-      # ../en-US.restext:481 | "**gain $2 from the supply** "
+      # ../en-US.restext:480 | "**gain $2 from the supply** "
       value: 'restext://Martial1_007'
   # ../.source/ATimeofWar_Eng_v8.cs:3727
   - type: 'text'
-    # ../en-US.restext:483 | "as a gift from the {warloser}."
+    # ../en-US.restext:482 | "as a gift from the {warloser}."
     value: 'restext://Martial1_009'
 # ../.source/ATimeofWar_Eng_v8.cs:3731
 - type: 'break'
@@ -126,7 +126,7 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:3747
     - type: 'text'
-      # ../en-US.restext:75 | "The first player to compl..."
+      # ../en-US.restext:76 | "The first player to compl..."
       value: 'restext://Directive_FirstPlayerComplete2AdvancedWeaponry_Fragment'
     # ../.source/ATimeofWar_Eng_v8.cs:3753
     - type: 'link'
@@ -141,7 +141,7 @@ nodes:
 - type: 'switch'
   on: 'warwinner'
   cases:
-  # ../en-US.restext:283 | "Unified Monarchists"
+  # ../en-US.restext:282 | "Unified Monarchists"
   - match: 'restext://Title_UnifiedMonarchists'
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:3762
@@ -152,16 +152,16 @@ nodes:
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:3770
       - type: 'text'
-        # ../en-US.restext:80 | "The Monarchy demands a co..."
+        # ../en-US.restext:81 | "The Monarchy demands a co..."
         value: 'restext://Directive_MonarchyDemandsServiceBarracksPenalty'
       # ../.source/ATimeofWar_Eng_v8.cs:3774
       - type: 'break'
         style: 'paragraph'
       # ../.source/ATimeofWar_Eng_v8.cs:3776
       - type: 'text'
-        # ../en-US.restext:92 | "When placing a piece on t..."
+        # ../en-US.restext:93 | "When placing a piece on t..."
         value: 'restext://Directive_PlaceOnBarracksNoBonus'
-  # ../en-US.restext:273 | "Separatists"
+  # ../en-US.restext:272 | "Separatists"
   - match: 'restext://Title_Separatists'
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:3788
@@ -172,14 +172,14 @@ nodes:
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:3796
       - type: 'text'
-        # ../en-US.restext:104 | "The Separatists urge citi..."
+        # ../en-US.restext:105 | "The Separatists urge citi..."
         value: 'restext://Directive_SeparatistsUrgeRallyReward'
       # ../.source/ATimeofWar_Eng_v8.cs:3799
       - type: 'break'
         style: 'paragraph'
       # ../.source/ATimeofWar_Eng_v8.cs:3801
       - type: 'text'
-        # ../en-US.restext:484 | "When placing a piece on t..."
+        # ../en-US.restext:483 | "When placing a piece on t..."
         value: 'restext://Martial1_018'
     # ../.source/ATimeofWar_Eng_v8.cs:3807
     - type: 'break'
@@ -192,7 +192,7 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:3822
   - type: 'text'
-    # ../en-US.restext:88 | "An Outpost is open in tow..."
+    # ../en-US.restext:89 | "An Outpost is open in tow..."
     value: 'restext://Directive_OutpostOpenForTrading_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:3826
   - type: 'link'
@@ -209,17 +209,17 @@ nodes:
     # ../en-US.restext:31 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
     target: 'ATOWSabotageIntro1' # ./00162-ATOWSabotageIntro1.mws.yaml
-    # ../en-US.restext:286 | "Close"
+    # ../en-US.restext:285 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     content:
     - type: 'let'
       var: 'title'
-      # ../en-US.restext:274 | "Special Setup"
+      # ../en-US.restext:273 | "Special Setup"
       expr: '"restext://Title_SpecialSetup"'
     - type: 'let'
       var: 'completedRound'
       expr: '-1'
     - type: 'text'
-      # ../en-US.restext:67 | "Do NOT perform the End of..."
+      # ../en-US.restext:68 | "Do NOT perform the End of..."
       value: 'restext://Directive_DoNotPerformEndOfRoundYet'

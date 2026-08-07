@@ -67,13 +67,13 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:12937
       - type: 'assign'
         var: 'society'
-        # ../en-US.restext:117 | "Fraternity of Hunters"
+        # ../en-US.restext:118 | "Fraternity of Hunters"
         expr: '"restext://Faction_FraternityOfHunters_Plain"'
       else:
       # ../.source/TheCostofDisease_Eng_v10.cs:12941
       - type: 'assign'
         var: 'society'
-        # ../en-US.restext:121 | "Order of St. Hubertus"
+        # ../en-US.restext:122 | "Order of St. Hubertus"
         expr: '"restext://Faction_OrderOfStHubertus_Plain"'
   # ../en-US.restext:29 | "good"
   - match: 'restext://Choice_Good_Lower'
@@ -85,13 +85,13 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:12948
       - type: 'assign'
         var: 'society'
-        # ../en-US.restext:117 | "Fraternity of Hunters"
+        # ../en-US.restext:118 | "Fraternity of Hunters"
         expr: '"restext://Faction_FraternityOfHunters_Plain"'
       else:
       # ../.source/TheCostofDisease_Eng_v10.cs:12952
       - type: 'assign'
         var: 'society'
-        # ../en-US.restext:121 | "Order of St. Hubertus"
+        # ../en-US.restext:122 | "Order of St. Hubertus"
         expr: '"restext://Faction_OrderOfStHubertus_Plain"'
 # ../.source/TheCostofDisease_Eng_v10.cs:12955
 - type: 'conditional'
@@ -103,21 +103,21 @@ nodes:
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:12963
   - type: 'text'
-    # ../en-US.restext:1221 | "**Most Investigations**"
+    # ../en-US.restext:1220 | "**Most Investigations**"
     value: 'restext://MostInvestigated_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:12965
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:12967
   - type: 'text'
-    # ../en-US.restext:1222 | "{most} performed the most..."
+    # ../en-US.restext:1221 | "{most} performed the most..."
     value: 'restext://MostInvestigated_004'
   # ../.source/TheCostofDisease_Eng_v10.cs:12973
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:12977
   - type: 'text'
-    # ../en-US.restext:1223 | "**{most} immediately gain..."
+    # ../en-US.restext:1222 | "**{most} immediately gain..."
     value: 'restext://MostInvestigated_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:12982
 - type: 'break'

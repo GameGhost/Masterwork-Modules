@@ -14,7 +14,7 @@ nodes:
   expr: 'rand_between(1, 999, "bar7_1")'
 # ../.source/TheCostofDisease_Eng_v10.cs:6721
 - type: 'text'
-  # ../en-US.restext:747 | "**SWORN STATEMENT - Case ..."
+  # ../en-US.restext:746 | "**SWORN STATEMENT - Case ..."
   value: 'restext://bar7_001'
   lets:
   - '_rnd_bar7_0'
@@ -24,14 +24,14 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:6728
 - type: 'text'
-  # ../en-US.restext:748 | "While the cemetery has ce..."
+  # ../en-US.restext:747 | "While the cemetery has ce..."
   value: 'restext://bar7_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:6729
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:6731
 - type: 'text'
-  # ../en-US.restext:749 | "After being treated for a..."
+  # ../en-US.restext:748 | "After being treated for a..."
   value: 'restext://bar7_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:6739
 - type: 'break'
@@ -39,7 +39,7 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:6743
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:355 | "Accept"
+  # ../en-US.restext:354 | "Accept"
   okay: 'restext://UIButton_Accept'
   header:
   # ../.source/TheCostofDisease_Eng_v10.cs:6747
@@ -49,5 +49,5 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:6749
   - type: 'text'
-    # ../en-US.restext:750 | "Place a {icon:creepy_icon..."
+    # ../en-US.restext:749 | "Place a {icon:creepy_icon..."
     value: 'restext://bar7_004'

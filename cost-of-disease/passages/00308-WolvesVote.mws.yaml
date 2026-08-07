@@ -2,39 +2,39 @@
 ---
 format: 'mws/0.4'
 passage_id: 'WolvesVote'
-# ../en-US.restext:2528 | "An Opportunity"
+# ../en-US.restext:2529 | "An Opportunity"
 title: 'restext://WolvesVote_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:31845
 - type: 'text'
-  # ../en-US.restext:315 | "Special Event"
+  # ../en-US.restext:314 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/TheCostofDisease_Eng_v10.cs:31846
 - type: 'text'
-  # ../en-US.restext:2529 | "With a shrill squeal, the..."
+  # ../en-US.restext:2530 | "With a shrill squeal, the..."
   value: 'restext://WolvesVote_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:31847
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:31849
 - type: 'text'
-  # ../en-US.restext:2530 | "\"Do not fear me. I am no..."
+  # ../en-US.restext:2531 | "\"Do not fear me. I am no..."
   value: 'restext://WolvesVote_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:31850
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:31852
 - type: 'text'
-  # ../en-US.restext:2531 | "\"With your help, we can ..."
+  # ../en-US.restext:2532 | "\"With your help, we can ..."
   value: 'restext://WolvesVote_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:31854
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:31856
 - type: 'text'
-  # ../en-US.restext:2532 | "Though they took exceptio..."
+  # ../en-US.restext:2533 | "Though they took exceptio..."
   value: 'restext://WolvesVote_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:31859
 - type: 'break'
@@ -47,34 +47,34 @@ nodes:
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:31866
 - type: 'text'
-  # ../en-US.restext:2533 | "Players will now vote on ..."
+  # ../en-US.restext:2534 | "Players will now vote on ..."
   value: 'restext://WolvesVote_006'
 # ../.source/TheCostofDisease_Eng_v10.cs:31868
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:31870
 - type: 'text'
-  # ../en-US.restext:2534 | "A **Yay** vote is a vote ..."
+  # ../en-US.restext:2535 | "A **Yay** vote is a vote ..."
   value: 'restext://WolvesVote_007'
 # ../.source/TheCostofDisease_Eng_v10.cs:31877
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:31878
 - type: 'text'
-  # ../en-US.restext:2535 | "A **Nay** vote is a vote ..."
+  # ../en-US.restext:2536 | "A **Nay** vote is a vote ..."
   value: 'restext://WolvesVote_008'
 # ../.source/TheCostofDisease_Eng_v10.cs:31885
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:31887
 - type: 'text'
-  # ../en-US.restext:2536 | "All players take their Vo..."
+  # ../en-US.restext:2537 | "All players take their Vo..."
   value: 'restext://WolvesVote_009'
 # ../.source/TheCostofDisease_Eng_v10.cs:31890
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:31892
 - type: 'text'
-  # ../en-US.restext:373 | "When all players have cho..."
+  # ../en-US.restext:372 | "When all players have cho..."
   value: 'restext://Vote_TallyRule_A'
 # ../.source/TheCostofDisease_Eng_v10.cs:31898
 - type: 'break'
@@ -82,11 +82,11 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:31902
 - type: 'popup'
   layout: 'countdown_instructions'
-  # ../en-US.restext:2537 | "Click to start the vote..."
+  # ../en-US.restext:2538 | "Click to start the vote..."
   label: 'restext://WolvesVote_010'
   content:
   - type: 'text'
-    # ../en-US.restext:378 | "Click on the 'Start Votin..."
+    # ../en-US.restext:377 | "Click on the 'Start Votin..."
     value: 'restext://Voting_Instructions'
   - type: 'break'
     style: 'paragraph'
@@ -97,27 +97,27 @@ nodes:
     style: 'paragraph'
   - type: 'popup'
     layout: 'countdown_action'
-    # ../en-US.restext:379 | "Start Voting"
+    # ../en-US.restext:378 | "Start Voting"
     label: 'restext://Voting_StartButton'
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:74 | "3"
+      # ../en-US.restext:75 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:75 | "2"
+      # ../en-US.restext:76 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:72 | "1"
+      # ../en-US.restext:73 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:73 | "REVEAL"
+      # ../en-US.restext:74 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:73 | "REVEAL"
+    # ../en-US.restext:74 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: 'WolvesVote2' # ./00349-WolvesVote2.mws.yaml
     snapshot: false

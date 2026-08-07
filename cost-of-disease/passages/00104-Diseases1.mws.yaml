@@ -16,13 +16,13 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:11342
     - type: 'text'
-      # ../en-US.restext:1158 | "**A Year of Sickness**"
+      # ../en-US.restext:1157 | "**A Year of Sickness**"
       value: 'restext://Diseases1_001'
     # ../.source/TheCostofDisease_Eng_v10.cs:11344
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:11345
     - type: 'text'
-      # ../en-US.restext:1159 | "Even the most agile mind ..."
+      # ../en-US.restext:1158 | "Even the most agile mind ..."
       value: 'restext://Diseases1_002'
     # ../.source/TheCostofDisease_Eng_v10.cs:11348
     - type: 'break'
@@ -33,7 +33,7 @@ nodes:
       # ../en-US.restext:39 | "Click to continue..."
       label: 'restext://Click_ContinueEllipsis_C'
       target: '${seedy == "no" ? "Gen1Creepy-RefusalBuild" : "Devastation2"}' # ./00295-Gen1Creepy-RefusalBuild.mws.yaml, ./00033-Devastation2.mws.yaml
-      # ../en-US.restext:356 | "Close"
+      # ../en-US.restext:355 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
       header:
@@ -44,19 +44,19 @@ nodes:
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:11387
       - type: 'text'
-        # ../en-US.restext:1160 | "All players that have not..."
+        # ../en-US.restext:1159 | "All players that have not..."
         value: 'restext://Diseases1_003'
   - match: 2
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:11358
     - type: 'text'
-      # ../en-US.restext:1161 | "**Rest and Time**"
+      # ../en-US.restext:1160 | "**Rest and Time**"
       value: 'restext://Diseases1_004'
     # ../.source/TheCostofDisease_Eng_v10.cs:11360
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:11361
     - type: 'text'
-      # ../en-US.restext:1162 | "It seemed that the cousin..."
+      # ../en-US.restext:1161 | "It seemed that the cousin..."
       value: 'restext://Diseases1_005'
     # ../.source/TheCostofDisease_Eng_v10.cs:11365
     - type: 'break'
@@ -67,7 +67,7 @@ nodes:
       # ../en-US.restext:39 | "Click to continue..."
       label: 'restext://Click_ContinueEllipsis_C'
       target: '${seedy == "no" ? "Gen1Creepy-RefusalBuild" : "Devastation2"}' # ./00295-Gen1Creepy-RefusalBuild.mws.yaml, ./00033-Devastation2.mws.yaml
-      # ../en-US.restext:356 | "Close"
+      # ../en-US.restext:355 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
       header:
@@ -78,5 +78,5 @@ nodes:
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:11425
       - type: 'text'
-        # ../en-US.restext:1163 | "The Hereditary disease ha..."
+        # ../en-US.restext:1162 | "The Hereditary disease ha..."
         value: 'restext://Diseases1_006'

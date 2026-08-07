@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Amessyes2'
-# ../en-US.restext:503 | "The Messenger continued"
+# ../en-US.restext:502 | "The Messenger continued"
 title: 'restext://Amessyes2_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:4183
 - type: 'text'
-  # ../en-US.restext:55 | "**All players may again v..."
+  # ../en-US.restext:56 | "**All players may again v..."
   value: 'restext://Directive_AllPlayersMayViewStorybookAgain'
 # ../.source/ATimeofWar_Eng_v8.cs:4185
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:4187
 - type: 'text'
-  # ../en-US.restext:504 | "I returned the signed pap..."
+  # ../en-US.restext:503 | "I returned the signed pap..."
   value: 'restext://Amessyes2_002'
 # ../.source/ATimeofWar_Eng_v8.cs:4190
 - type: 'assign'
@@ -30,7 +30,7 @@ nodes:
   # ../en-US.restext:27 | "Click here to continue..."
   label: 'restext://Click_ContinueEllipsis_B'
   target: '${warwinner == "Unified Monarchists" ? "BarracksSimple1" : "Sabotage1Now"}' # ./00157-BarracksSimple1.mws.yaml, ./00213-Sabotage1Now.mws.yaml
-  # ../en-US.restext:286 | "Close"
+  # ../en-US.restext:285 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -41,12 +41,12 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:4216
   - type: 'text'
-    # ../en-US.restext:505 | "Retrieve the **Suspicious..."
+    # ../en-US.restext:504 | "Retrieve the **Suspicious..."
     value: 'restext://Amessyes2_003'
   # ../.source/ATimeofWar_Eng_v8.cs:4224
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:4226
   - type: 'text'
-    # ../en-US.restext:506 | "Then, discard the {crest}..."
+    # ../en-US.restext:505 | "Then, discard the {crest}..."
     value: 'restext://Amessyes2_004'

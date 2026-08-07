@@ -10,7 +10,7 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:10016
   - type: 'text'
-    # ../en-US.restext:814 | "**Monument to Progress**"
+    # ../en-US.restext:813 | "**Monument to Progress**"
     value: 'restext://ParadoxEvent_001'
   # ../.source/ATimeofWar_Eng_v8.cs:10019
   - type: 'conditional'
@@ -25,7 +25,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:10024
   - type: 'text'
-    # ../en-US.restext:815 | "The town offered a token ..."
+    # ../en-US.restext:814 | "The town offered a token ..."
     value: 'restext://ParadoxEvent_002'
   # ../.source/ATimeofWar_Eng_v8.cs:10026
   - type: 'break'
@@ -36,7 +36,7 @@ nodes:
     # ../en-US.restext:28 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: 'Scoring' # ./00004-Scoring.mws.yaml
-    # ../en-US.restext:286 | "Close"
+    # ../en-US.restext:285 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -51,16 +51,16 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:10119
       - type: 'text'
-        # ../en-US.restext:817 | "The player who has moved ..."
+        # ../en-US.restext:816 | "The player who has moved ..."
         value: 'restext://ParadoxEvent_004'
       else:
       # ../.source/ATimeofWar_Eng_v8.cs:10130
       - type: 'text'
-        # ../en-US.restext:816 | "The player with the most ..."
+        # ../en-US.restext:815 | "The player with the most ..."
         value: 'restext://ParadoxEvent_003'
     # ../.source/ATimeofWar_Eng_v8.cs:10137
     - type: 'text'
-      # ../en-US.restext:818 | " _If there is a tie, the ..."
+      # ../en-US.restext:817 | " _If there is a tie, the ..."
       value: 'restext://ParadoxEvent_005'
 # ../.source/ATimeofWar_Eng_v8.cs:10033
 - type: 'conditional'
@@ -68,21 +68,21 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:10037
   - type: 'text'
-    # ../en-US.restext:819 | "**Rebuilding**"
+    # ../en-US.restext:818 | "**Rebuilding**"
     value: 'restext://ParadoxEvent_006'
   # ../.source/ATimeofWar_Eng_v8.cs:10039
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:10041
   - type: 'text'
-    # ../en-US.restext:820 | "With no monument built, t..."
+    # ../en-US.restext:819 | "With no monument built, t..."
     value: 'restext://ParadoxEvent_007'
   # ../.source/ATimeofWar_Eng_v8.cs:10044
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:10046
   - type: 'text'
-    # ../en-US.restext:821 | "It was a bitter pill to s..."
+    # ../en-US.restext:820 | "It was a bitter pill to s..."
     value: 'restext://ParadoxEvent_008'
   # ../.source/ATimeofWar_Eng_v8.cs:10050
   - type: 'break'

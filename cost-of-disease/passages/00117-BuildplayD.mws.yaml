@@ -6,14 +6,14 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:12655
 - type: 'text'
-  # ../en-US.restext:70 | "**Do not allow the other ..."
+  # ../en-US.restext:71 | "**Do not allow the other ..."
   value: 'restext://Common_Private_Decision_Warning'
 # ../.source/TheCostofDisease_Eng_v10.cs:12658
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:12662
 - type: 'text'
-  # ../en-US.restext:1213 | "**Continuing Investigatio..."
+  # ../en-US.restext:1212 | "**Continuing Investigatio..."
   value: 'restext://BuildplayD_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:12665
 - type: 'break'
@@ -25,24 +25,24 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:12669
     - type: 'text'
-      # ../en-US.restext:255 | "I arrived at the {ba} und..."
+      # ../en-US.restext:254 | "I arrived at the {ba} und..."
       value: 'restext://Narrative_Investigate_A_Arrival'
   - if: 'inv == bb'
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:12677
     - type: 'text'
-      # ../en-US.restext:256 | "A thick fog shrouded my a..."
+      # ../en-US.restext:255 | "A thick fog shrouded my a..."
       value: 'restext://Narrative_Investigate_B_Arrival'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:12688
   - type: 'let'
     var: '_rnd_BuildplayD_0'
-    # ../en-US.restext:68 | Common_Gentleman | "gentleman"
-    # ../en-US.restext:69 | Common_Gentlewoman | "gentlewoman"
+    # ../en-US.restext:69 | Common_Gentleman | "gentleman"
+    # ../en-US.restext:70 | Common_Gentlewoman | "gentlewoman"
     expr: '["restext://Common_Gentleman", "restext://Common_Gentlewoman"].shuffled("BuildplayD_0")[0]'
   # ../.source/TheCostofDisease_Eng_v10.cs:12687
   - type: 'text'
-    # ../en-US.restext:1214 | "To my chagrin, a {_rnd_Bu..."
+    # ../en-US.restext:1213 | "To my chagrin, a {_rnd_Bu..."
     value: 'restext://BuildplayD_002'
     lets:
     - '_rnd_BuildplayD_0'
@@ -51,7 +51,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:12693
 - type: 'text'
-  # ../en-US.restext:257 | "I could either provide ev..."
+  # ../en-US.restext:256 | "I could either provide ev..."
   value: 'restext://Narrative_Investigate_ExposeOrConceal'
 # ../.source/TheCostofDisease_Eng_v10.cs:12712
 - type: 'assign'

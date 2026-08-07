@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'GoodFrenzyEvent2b'
-# ../en-US.restext:351 | "VOTE OUTCOME"
+# ../en-US.restext:350 | "VOTE OUTCOME"
 title: 'restext://Title_VoteOutcome_Caps'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:34408
 - type: 'text'
-  # ../en-US.restext:374 | "Once all players have cho..."
+  # ../en-US.restext:373 | "Once all players have cho..."
   value: 'restext://Vote_TallyRule_B'
 # ../.source/TheCostofDisease_Eng_v10.cs:34414
 - type: 'break'
@@ -22,7 +22,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:34422
 - type: 'link'
-  # ../en-US.restext:2768 | "We encouraged this frenzi..."
+  # ../en-US.restext:2769 | "We encouraged this frenzi..."
   label: 'restext://GoodFrenzyEvent2b_002'
   target: 'YesFrenzy' # ./00217-YesFrenzy.mws.yaml
   snapshot: true
@@ -31,7 +31,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:34425
 - type: 'link'
-  # ../en-US.restext:244 | "For God's sake, we did no..."
+  # ../en-US.restext:243 | "For God's sake, we did no..."
   label: 'restext://Narrative_DidNotEncourage'
   target: 'NoFrenzy' # ./00218-NoFrenzy.mws.yaml
   snapshot: true

@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'UniEquity'
-# ../en-US.restext:1822 | "The Guiding Hand of Science"
+# ../en-US.restext:1821 | "The Guiding Hand of Science"
 title: 'restext://UniEquity_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:23000
 - type: 'text'
-  # ../en-US.restext:1823 | "At the behest of the univ..."
+  # ../en-US.restext:1822 | "At the behest of the univ..."
   value: 'restext://UniEquity_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:23003
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:23005
 - type: 'text'
-  # ../en-US.restext:1824 | "The family was disgusted ..."
+  # ../en-US.restext:1823 | "The family was disgusted ..."
   value: 'restext://UniEquity_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:23008
 - type: 'break'
@@ -26,7 +26,7 @@ nodes:
   # ../en-US.restext:39 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'InsanitySign' # ./00315-InsanitySign.mws.yaml
-  # ../en-US.restext:356 | "Close"
+  # ../en-US.restext:355 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -37,5 +37,5 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:23029
   - type: 'text'
-    # ../en-US.restext:368 | "Starting with the player(..."
+    # ../en-US.restext:367 | "Starting with the player(..."
     value: 'restext://VP_LastPlaceCatchUp_Rule'

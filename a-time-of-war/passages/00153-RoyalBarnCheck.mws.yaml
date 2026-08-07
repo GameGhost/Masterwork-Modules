@@ -6,7 +6,7 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:16845
 - type: 'conditional'
-  # ../en-US.restext:283 | "Unified Monarchists"
+  # ../en-US.restext:282 | "Unified Monarchists"
   if: 'warloser == "restext://Title_UnifiedMonarchists"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:16847
@@ -15,8 +15,8 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:16851
     - type: 'text'
-      # ../en-US.restext:179 | "**Suspicions Confirmed**"
-      value: 'restext://Heading_SuspicionsConfirmed'
+      # ../en-US.restext:1386 | "**Suspicions Confirmed**"
+      value: 'restext://RoyalBarnCheck_001'
     # ../.source/ATimeofWar_Eng_v8.cs:16853
     - type: 'break'
     # ../.source/ATimeofWar_Eng_v8.cs:16854
@@ -32,7 +32,7 @@ nodes:
       # ../en-US.restext:28 | "Click to continue..."
       label: 'restext://Click_ContinueEllipsis_C'
       target: 'BribeDenied' # ./00220-BribeDenied.mws.yaml
-      # ../en-US.restext:286 | "Close"
+      # ../en-US.restext:285 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
       header:

@@ -10,18 +10,18 @@ nodes:
   expr: 'rand_between(1, 5, "DuelResolution1b_0")'
 # ../.source/ATimeofWar_Eng_v8.cs:19579
 - type: 'conditional'
-  # ../en-US.restext:50 | "1"
+  # ../en-US.restext:51 | "1"
   if: 'duelresult == "restext://Countdown_One"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:19583
   - type: 'text'
-    # ../en-US.restext:1639 | "**An Unfortunate Death**"
+    # ../en-US.restext:1640 | "**An Unfortunate Death**"
     value: 'restext://DuelResolution1b_011'
   # ../.source/ATimeofWar_Eng_v8.cs:19585
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:19586
   - type: 'text'
-    # ../en-US.restext:1640 | "Though I felt a tinge of ..."
+    # ../en-US.restext:1641 | "Though I felt a tinge of ..."
     value: 'restext://DuelResolution1b_012'
   # ../.source/ATimeofWar_Eng_v8.cs:19591
   - type: 'conditional'
@@ -32,50 +32,50 @@ nodes:
     - type: 'switch'
       on: 'duelsci'
       cases:
-      # ../en-US.restext:118 | "Engineering"
+      # ../en-US.restext:119 | "Engineering"
       - match: 'restext://Focus_Engineering'
         nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:19595
         - type: 'text'
-          # ../en-US.restext:1643 | "was unceremoniously crush..."
+          # ../en-US.restext:1644 | "was unceremoniously crush..."
           value: 'restext://DuelResolution1b_015'
-      # ../en-US.restext:117 | "Chemistry"
+      # ../en-US.restext:118 | "Chemistry"
       - match: 'restext://Focus_Chemistry'
         nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:19601
         - type: 'text'
-          # ../en-US.restext:1644 | "withered into a rubbery s..."
+          # ../en-US.restext:1645 | "withered into a rubbery s..."
           value: 'restext://DuelResolution1b_016'
-      # ../en-US.restext:116 | "Biology"
+      # ../en-US.restext:117 | "Biology"
       - match: 'restext://Focus_Biology'
         nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:19607
         - type: 'text'
-          # ../en-US.restext:1645 | "was mauled and desecrated..."
+          # ../en-US.restext:1646 | "was mauled and desecrated..."
           value: 'restext://DuelResolution1b_017'
       default:
       # ../.source/ATimeofWar_Eng_v8.cs:19613
       - type: 'text'
-        # ../en-US.restext:1642 | "disappeared into a swirli..."
+        # ../en-US.restext:1643 | "disappeared into a swirli..."
         value: 'restext://DuelResolution1b_014'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:19620
     - type: 'text'
-      # ../en-US.restext:1641 | "reeled once before crumpl..."
+      # ../en-US.restext:1642 | "reeled once before crumpl..."
       value: 'restext://DuelResolution1b_013'
   # ../.source/ATimeofWar_Eng_v8.cs:19622
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:19624
   - type: 'text'
-    # ../en-US.restext:1646 | "As blood pooled beneath t..."
+    # ../en-US.restext:1647 | "As blood pooled beneath t..."
     value: 'restext://DuelResolution1b_018'
   # ../.source/ATimeofWar_Eng_v8.cs:19625
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:19627
   - type: 'text'
-    # ../en-US.restext:193 | "As required in the code d..."
+    # ../en-US.restext:192 | "As required in the code d..."
     value: 'restext://Narrative_CodeDuelloMatterComplete'
   # ../.source/ATimeofWar_Eng_v8.cs:19630
   - type: 'break'
@@ -86,7 +86,7 @@ nodes:
     # ../en-US.restext:28 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: '${round == 7 ? "Martia1Pre2" : "MartialPre3"}' # ./00294-Martia1Pre2.mws.yaml, ./00295-MartialPre3.mws.yaml
-    # ../en-US.restext:286 | "Close"
+    # ../en-US.restext:285 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -97,7 +97,7 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:19708
     - type: 'text'
-      # ../en-US.restext:1647 | "{duelloser} must place th..."
+      # ../en-US.restext:1648 | "{duelloser} must place th..."
       value: 'restext://DuelResolution1b_019'
     # ../.source/ATimeofWar_Eng_v8.cs:19715
     - type: 'conditional'
@@ -108,25 +108,25 @@ nodes:
         style: 'paragraph'
       # ../.source/ATimeofWar_Eng_v8.cs:19719
       - type: 'text'
-        # ../en-US.restext:1648 | "{duelloser} gains their C..."
+        # ../en-US.restext:1649 | "{duelloser} gains their C..."
         value: 'restext://DuelResolution1b_020'
     # ../.source/ATimeofWar_Eng_v8.cs:19727
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:19729
     - type: 'text'
-      # ../en-US.restext:1649 | "Also, {duelloser} gains a..."
+      # ../en-US.restext:1650 | "Also, {duelloser} gains a..."
       value: 'restext://DuelResolution1b_021'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:19641
   - type: 'text'
-    # ../en-US.restext:1630 | "**Wounded Pride**"
+    # ../en-US.restext:1631 | "**Wounded Pride**"
     value: 'restext://DuelResolution1b_001'
   # ../.source/ATimeofWar_Eng_v8.cs:19643
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:19644
   - type: 'text'
-    # ../en-US.restext:1631 | "I watched as my opponent,..."
+    # ../en-US.restext:1632 | "I watched as my opponent,..."
     value: 'restext://DuelResolution1b_002'
   # ../.source/ATimeofWar_Eng_v8.cs:19646
   - type: 'conditional'
@@ -137,47 +137,47 @@ nodes:
     - type: 'switch'
       on: 'duelsci'
       cases:
-      # ../en-US.restext:118 | "Engineering"
+      # ../en-US.restext:119 | "Engineering"
       - match: 'restext://Focus_Engineering'
         nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:19650
         - type: 'text'
-          # ../en-US.restext:1634 | " suddenly complained of a..."
+          # ../en-US.restext:1635 | " suddenly complained of a..."
           value: 'restext://DuelResolution1b_005'
-      # ../en-US.restext:117 | "Chemistry"
+      # ../en-US.restext:118 | "Chemistry"
       - match: 'restext://Focus_Chemistry'
         nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:19654
         - type: 'text'
-          # ../en-US.restext:1635 | " held the side of their a..."
+          # ../en-US.restext:1636 | " held the side of their a..."
           value: 'restext://DuelResolution1b_006'
-      # ../en-US.restext:116 | "Biology"
+      # ../en-US.restext:117 | "Biology"
       - match: 'restext://Focus_Biology'
         nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:19658
         - type: 'text'
-          # ../en-US.restext:1636 | " grimaced, exposing a dee..."
+          # ../en-US.restext:1637 | " grimaced, exposing a dee..."
           value: 'restext://DuelResolution1b_007'
       default:
       # ../.source/ATimeofWar_Eng_v8.cs:19662
       - type: 'text'
-        # ../en-US.restext:1633 | " red-faced, turned to a n..."
+        # ../en-US.restext:1634 | " red-faced, turned to a n..."
         value: 'restext://DuelResolution1b_004'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:19667
     - type: 'text'
-      # ../en-US.restext:1632 | " burst into tears. Appare..."
+      # ../en-US.restext:1633 | " burst into tears. Appare..."
       value: 'restext://DuelResolution1b_003'
   # ../.source/ATimeofWar_Eng_v8.cs:19669
   - type: 'text'
-    # ../en-US.restext:1637 | " stumbled to their doctor..."
+    # ../en-US.restext:1638 | " stumbled to their doctor..."
     value: 'restext://DuelResolution1b_008'
   # ../.source/ATimeofWar_Eng_v8.cs:19672
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:19674
   - type: 'text'
-    # ../en-US.restext:193 | "As required in the code d..."
+    # ../en-US.restext:192 | "As required in the code d..."
     value: 'restext://Narrative_CodeDuelloMatterComplete'
   # ../.source/ATimeofWar_Eng_v8.cs:19677
   - type: 'break'
@@ -188,7 +188,7 @@ nodes:
     # ../en-US.restext:28 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: '${round == 7 ? "Martia1Pre2" : "MartialPre3"}' # ./00294-Martia1Pre2.mws.yaml, ./00295-MartialPre3.mws.yaml
-    # ../en-US.restext:286 | "Close"
+    # ../en-US.restext:285 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -199,5 +199,5 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:19756
     - type: 'text'
-      # ../en-US.restext:1638 | "{duelloser} loses **3VP**."
+      # ../en-US.restext:1639 | "{duelloser} loses **3VP**."
       value: 'restext://DuelResolution1b_010'

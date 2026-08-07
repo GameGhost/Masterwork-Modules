@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'CrownCons'
-# ../en-US.restext:1994 | "Royal Suspicions"
+# ../en-US.restext:1995 | "Royal Suspicions"
 title: 'restext://CrownCons_001'
 layout: 'narration'
 nodes:
@@ -12,7 +12,7 @@ nodes:
   expr: '1'
 # ../.source/ATimeofWar_Eng_v8.cs:24581
 - type: 'text'
-  # ../en-US.restext:1995 | "Now that the crown's noti..."
+  # ../en-US.restext:1996 | "Now that the crown's noti..."
   value: 'restext://CrownCons_002'
 # ../.source/ATimeofWar_Eng_v8.cs:24584
 - type: 'break'
@@ -23,7 +23,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 16 ? "MonarchReign1" : round == 17 ? "MonarchReign2" : "MonarchReign3"}' # ./00043-MonarchReign1.mws.yaml, ./00068-MonarchReign2.mws.yaml, ./00069-MonarchReign3.mws.yaml
-  # ../en-US.restext:286 | "Close"
+  # ../en-US.restext:285 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -40,12 +40,12 @@ nodes:
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:24627
   - type: 'text'
-    # ../en-US.restext:1996 | "The player who triggered ..."
+    # ../en-US.restext:1997 | "The player who triggered ..."
     value: 'restext://CrownCons_003'
   # ../.source/ATimeofWar_Eng_v8.cs:24634
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:24636
   - type: 'text'
-    # ../en-US.restext:96 | "For the remainder of the ..."
+    # ../en-US.restext:97 | "For the remainder of the ..."
     value: 'restext://Directive_RemainderGameCreepyLose1VP'

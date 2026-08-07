@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'MonarchReign2'
-# ../en-US.restext:266 | "Monarchy Reigns"
+# ../en-US.restext:265 | "Monarchy Reigns"
 title: 'restext://Title_MonarchyReigns'
-# ../en-US.restext:264 | "Middle Years"
+# ../en-US.restext:263 | "Middle Years"
 subtitle: 'restext://Title_MiddleYears'
 tags:
 - 'format'
@@ -27,7 +27,7 @@ nodes:
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:9006
       - type: 'text'
-        # ../en-US.restext:86 | "If a player does **NOT** ..."
+        # ../en-US.restext:87 | "If a player does **NOT** ..."
         value: 'restext://Directive_NoMonarchistFlag_OnceAction'
   - if: 'reignsep == "yes"'
     then:
@@ -39,7 +39,7 @@ nodes:
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:9039
       - type: 'text'
-        # ../en-US.restext:85 | "If a player does **NOT** ..."
+        # ../en-US.restext:86 | "If a player does **NOT** ..."
         value: 'restext://Directive_NoMonarchistFlag_CannotVisit'
 # ../.source/ATimeofWar_Eng_v8.cs:9052
 - type: 'break'
@@ -52,7 +52,7 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:9066
   - type: 'text'
-    # ../en-US.restext:81 | "The Monarchy is likely to..."
+    # ../en-US.restext:82 | "The Monarchy is likely to..."
     value: 'restext://Directive_MonarchyListensGenerous_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:9074
   - type: 'link'
@@ -71,7 +71,7 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:9089
   - type: 'text'
-    # ../en-US.restext:94 | "The player who makes the most "
+    # ../en-US.restext:95 | "The player who makes the most "
     value: 'restext://Directive_PlayerWhoMakesTheMost_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:9092
   - type: 'conditional'
@@ -88,7 +88,7 @@ nodes:
       value: 'restext://Choice_IronFist'
   # ../.source/ATimeofWar_Eng_v8.cs:9102
   - type: 'text'
-    # ../en-US.restext:225 | " decrees will gain **{dec..."
+    # ../en-US.restext:224 | " decrees will gain **{dec..."
     value: 'restext://Reward_DecreesGainDecbonVP_Fragment'
 # ../.source/ATimeofWar_Eng_v8.cs:9116
 - type: 'break'
@@ -101,7 +101,7 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:9128
   - type: 'text'
-    # ../en-US.restext:224 | "At the End of the Generat..."
+    # ../en-US.restext:223 | "At the End of the Generat..."
     value: 'restext://Reward_ClosestToCrownToken_Gain6VP'
 # ../.source/ATimeofWar_Eng_v8.cs:9141
 - type: 'break'
@@ -114,7 +114,7 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:9155
   - type: 'text'
-    # ../en-US.restext:89 | "If a player ever overlaps..."
+    # ../en-US.restext:90 | "If a player ever overlaps..."
     value: 'restext://Directive_OverlapsExceedsCrownToken_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:9162
   - type: 'conditional'
@@ -148,7 +148,7 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:9188
     - type: 'text'
-      # ../en-US.restext:62 | "Any player with a {icon:c..."
+      # ../en-US.restext:63 | "Any player with a {icon:c..."
       value: 'restext://Directive_CreepyMarkerOnScoreTrackLose1VP'
   # ../.source/ATimeofWar_Eng_v8.cs:9199
   - type: 'break'
@@ -161,25 +161,25 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:9206
     - type: 'section'
-      # ../en-US.restext:189 | "**Weapon Token Bonus**"
+      # ../en-US.restext:188 | "**Weapon Token Bonus**"
       title: 'restext://Heading_WeaponTokenBonus'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:9215
       - type: 'text'
-        # ../en-US.restext:115 | "{icon:s3_weapontoken}toke..."
+        # ../en-US.restext:116 | "{icon:s3_weapontoken}toke..."
         value: 'restext://Directive_WeaponTokensSpendLikeMoney'
   - match: 'vp'
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:9222
     - type: 'section'
-      # ../en-US.restext:189 | "**Weapon Token Bonus**"
+      # ../en-US.restext:188 | "**Weapon Token Bonus**"
       title: 'restext://Heading_WeaponTokenBonus'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:9231
       - type: 'text'
-        # ../en-US.restext:191 | "While our attempt to infl..."
+        # ../en-US.restext:190 | "While our attempt to infl..."
         value: 'restext://Narrative_AttemptInfluenceMilitaryUnsuccessful'
 # ../.source/ATimeofWar_Eng_v8.cs:9241
 - type: 'break'
@@ -194,7 +194,7 @@ nodes:
     # ../en-US.restext:31 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
     target: '${advisorcount >= commtrigger ? "CommemorativeStatueEvent" : "MonarchReign3"}' # ./00165-CommemorativeStatueEvent.mws.yaml, ./00069-MonarchReign3.mws.yaml
-    # ../en-US.restext:289 | "End of Round"
+    # ../en-US.restext:288 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -203,10 +203,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:234 | "The Middle Years of the T..."
+      # ../en-US.restext:233 | "The Middle Years of the T..."
       value: 'restext://Round_GenerationIII_MiddleEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:236 | "Then, perform all Start o..."
+      # ../en-US.restext:235 | "Then, perform all Start o..."
       value: 'restext://Round_StartLateYears_Rule'

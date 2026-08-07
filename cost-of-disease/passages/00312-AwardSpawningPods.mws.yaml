@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'AwardSpawningPods'
-# ../en-US.restext:2559 | "An Award For Research"
+# ../en-US.restext:2560 | "An Award For Research"
 title: 'restext://AwardSpawningPods_001'
 layout: 'narration'
 nodes:
@@ -13,19 +13,19 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:32110
   - type: 'text'
-    # ../en-US.restext:2561 | "The monsters felt guilty ..."
+    # ../en-US.restext:2562 | "The monsters felt guilty ..."
     value: 'restext://AwardSpawningPods_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:32111
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:32113
   - type: 'text'
-    # ../en-US.restext:2562 | "Within hours, the new str..."
+    # ../en-US.restext:2563 | "Within hours, the new str..."
     value: 'restext://AwardSpawningPods_004'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:32119
   - type: 'text'
-    # ../en-US.restext:2560 | "Though uninterested in th..."
+    # ../en-US.restext:2561 | "Though uninterested in th..."
     value: 'restext://AwardSpawningPods_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:32121
 - type: 'break'
@@ -36,7 +36,7 @@ nodes:
   # ../en-US.restext:44 | "Click to continue to Fina..."
   label: 'restext://Click_ContinueToFinalScoring'
   target: 'Scoring' # ./00013-Scoring.mws.yaml
-  # ../en-US.restext:356 | "Close"
+  # ../en-US.restext:355 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -47,12 +47,12 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:32142
   - type: 'text'
-    # ../en-US.restext:2563 | "Award the **Spawning Pods..."
+    # ../en-US.restext:2564 | "Award the **Spawning Pods..."
     value: 'restext://AwardSpawningPods_005'
   # ../.source/TheCostofDisease_Eng_v10.cs:32161
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:32163
   - type: 'text'
-    # ../en-US.restext:2564 | "Ignore all plot costs whe..."
+    # ../en-US.restext:2565 | "Ignore all plot costs whe..."
     value: 'restext://AwardSpawningPods_006'

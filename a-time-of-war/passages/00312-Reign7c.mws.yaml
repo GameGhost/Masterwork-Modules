@@ -14,12 +14,12 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:2381 | "Please enter your brand n..."
+      # ../en-US.restext:2382 | "Please enter your brand n..."
       value: 'restext://Reign7c_001'
     - type: 'input'
       label: ''
       var: 'title'
-    # ../en-US.restext:288 | "Continue"
+    # ../en-US.restext:287 | "Continue"
     okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'
@@ -38,7 +38,7 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:28797
     - type: 'assign'
       var: 'nameA'
-      # ../en-US.restext:2382 | "{title} {nameA}"
+      # ../en-US.restext:2383 | "{title} {nameA}"
       expr: '"restext://Reign7c_002"'
   # ../.source/ATimeofWar_Eng_v8.cs:28798
   - type: 'assign'
@@ -55,7 +55,7 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:28804
     - type: 'assign'
       var: 'nameB'
-      # ../en-US.restext:2383 | "{title} {nameB}"
+      # ../en-US.restext:2384 | "{title} {nameB}"
       expr: '"restext://Reign7c_003"'
   # ../.source/ATimeofWar_Eng_v8.cs:28805
   - type: 'assign'
@@ -72,7 +72,7 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:28811
     - type: 'assign'
       var: 'nameC'
-      # ../en-US.restext:2384 | "{title} {nameC}"
+      # ../en-US.restext:2385 | "{title} {nameC}"
       expr: '"restext://Reign7c_004"'
   # ../.source/ATimeofWar_Eng_v8.cs:28812
   - type: 'assign'
@@ -89,7 +89,7 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:28818
     - type: 'assign'
       var: 'nameD'
-      # ../en-US.restext:2385 | "{title} {nameD}"
+      # ../en-US.restext:2386 | "{title} {nameD}"
       expr: '"restext://Reign7c_005"'
   # ../.source/ATimeofWar_Eng_v8.cs:28819
   - type: 'assign'
@@ -106,7 +106,7 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:28825
     - type: 'assign'
       var: 'nameE'
-      # ../en-US.restext:2386 | "{title} {nameE}"
+      # ../en-US.restext:2387 | "{title} {nameE}"
       expr: '"restext://Reign7c_006"'
   # ../.source/ATimeofWar_Eng_v8.cs:28826
   - type: 'assign'

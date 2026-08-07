@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Gen3Token2SignIn'
-# ../en-US.restext:2399 | "At a Crossroads"
+# ../en-US.restext:2398 | "At a Crossroads"
 title: 'restext://Gen3Token2SignIn_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:32030
 - type: 'text'
-  # ../en-US.restext:2400 | "**Journal of** _name ille..."
+  # ../en-US.restext:2399 | "**Journal of** _name ille..."
   value: 'restext://Gen3Token2SignIn_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32034
 - type: 'include_passage'
@@ -16,15 +16,15 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:32041
 - type: 'let'
   var: '_rnd_Gen3Token2SignIn_0'
-  # ../en-US.restext:2401 | Gen3Token2SignIn_003 | "Only the whistle of the w..."
-  # ../en-US.restext:2402 | Gen3Token2SignIn_004 | "Only a cold, gray stillne..."
+  # ../en-US.restext:2400 | Gen3Token2SignIn_003 | "Only the whistle of the w..."
+  # ../en-US.restext:2401 | Gen3Token2SignIn_004 | "Only a cold, gray stillne..."
   expr: '["restext://Gen3Token2SignIn_003", "restext://Gen3Token2SignIn_004"].shuffled("Gen3Token2SignIn_0")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32037
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32039
 - type: 'text'
-  # ../en-US.restext:2403 | "I arrived at the designat..."
+  # ../en-US.restext:2402 | "I arrived at the designat..."
   value: 'restext://Gen3Token2SignIn_005'
   lets:
   - '_rnd_Gen3Token2SignIn_0'
@@ -33,7 +33,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32046
 - type: 'text'
-  # ../en-US.restext:2404 | "**Please choose your name:**"
+  # ../en-US.restext:2403 | "**Please choose your name:**"
   value: 'restext://Gen3Token2SignIn_006'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32048
 - type: 'break'

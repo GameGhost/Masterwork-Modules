@@ -11,7 +11,7 @@ nodes:
   style: 'panel'
   content: []
 - type: 'link'
-  # ../en-US.restext:358 | "Continue"
+  # ../en-US.restext:357 | "Continue"
   label: 'restext://UIButton_Continue'
   target: '${society == "Fraternity of Hunters" ? "GloomyHunterIntro" : "GloomyWolvesIntro"}' # ./00169-GloomyHunterIntro.mws.yaml, ./00287-GloomyWolvesIntro.mws.yaml
   snapshot: true
@@ -25,10 +25,10 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:25321
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:355 | "Accept"
+  # ../en-US.restext:354 | "Accept"
   okay: 'restext://UIButton_Accept'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:25321
   - type: 'text'
-    # ../en-US.restext:2831 | "Then, starting with the p..."
+    # ../en-US.restext:2832 | "Then, starting with the p..."
     value: 'restext://HelpingEvil2_001'

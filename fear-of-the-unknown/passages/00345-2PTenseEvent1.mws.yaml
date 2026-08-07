@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: '2PTenseEvent1'
-# ../en-US.restext:150 | "BID"
+# ../en-US.restext:151 | "BID"
 title: 'restext://Heading_BidCaps'
 layout: 'narration'
 nodes:
@@ -15,28 +15,28 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36178
 - type: 'text'
-  # ../en-US.restext:72 | "Both players take all the..."
+  # ../en-US.restext:73 | "Both players take all the..."
   value: 'restext://Directive_BothPlayersBidMoney'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36180
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36182
 - type: 'text'
-  # ../en-US.restext:124 | "Once both players are rea..."
+  # ../en-US.restext:125 | "Once both players are rea..."
   value: 'restext://Directive_RevealAmountsBidSimultaneously_Plural'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36183
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36186
 - type: 'text'
-  # ../en-US.restext:2674 | "The players are bidding f..."
+  # ../en-US.restext:2673 | "The players are bidding f..."
   value: 'restext://_2PTenseEvent1_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36192
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36196
 - type: 'text'
-  # ../en-US.restext:2675 | "**Choose to Steal Resourc..."
+  # ../en-US.restext:2674 | "**Choose to Steal Resourc..."
   value: 'restext://_2PTenseEvent1_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36225
 - type: 'break'
@@ -50,7 +50,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36232
 - type: 'text'
-  # ../en-US.restext:2676 | "**Vote to acquire nothing..."
+  # ../en-US.restext:2675 | "**Vote to acquire nothing..."
   value: 'restext://_2PTenseEvent1_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36234
 - type: 'break'
@@ -64,14 +64,14 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36246
 - type: 'text'
-  # ../en-US.restext:127 | "_(Ties are broken by the ..."
+  # ../en-US.restext:128 | "_(Ties are broken by the ..."
   value: 'restext://Directive_TieBreak_LastThisRound'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36249
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36251
 - type: 'text'
-  # ../en-US.restext:81 | "Only the player who wins ..."
+  # ../en-US.restext:82 | "Only the player who wins ..."
   value: 'restext://Directive_ElectionWinnerPaysBid'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36253
 - type: 'break'
@@ -99,22 +99,22 @@ nodes:
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:64 | "3"
+      # ../en-US.restext:65 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:65 | "2"
+      # ../en-US.restext:66 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:62 | "1"
+      # ../en-US.restext:63 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:63 | "REVEAL"
+      # ../en-US.restext:64 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:63 | "REVEAL"
+    # ../en-US.restext:64 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: '2PTenseEvent2' # ./00346-2PTenseEvent2.mws.yaml
     snapshot: false

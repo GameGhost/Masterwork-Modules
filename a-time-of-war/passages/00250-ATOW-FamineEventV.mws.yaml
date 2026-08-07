@@ -2,40 +2,40 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ATOW-FamineEventV'
-# ../en-US.restext:186 | "VOTE"
+# ../en-US.restext:185 | "VOTE"
 title: 'restext://Heading_VoteCaps'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:24940
 - type: 'text'
-  # ../en-US.restext:240 | "Special Event"
+  # ../en-US.restext:239 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/ATimeofWar_Eng_v8.cs:24941
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:24942
 - type: 'text'
-  # ../en-US.restext:2023 | "Each player takes a Votin..."
+  # ../en-US.restext:2024 | "Each player takes a Votin..."
   value: 'restext://ATOW_FamineEventV_002'
 # ../.source/ATimeofWar_Eng_v8.cs:24944
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:24948
 - type: 'text'
-  # ../en-US.restext:2024 | "**YAY** is a vote to crea..."
+  # ../en-US.restext:2025 | "**YAY** is a vote to crea..."
   value: 'restext://ATOW_FamineEventV_003'
 # ../.source/ATimeofWar_Eng_v8.cs:24953
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:24956
 - type: 'text'
-  # ../en-US.restext:2025 | "**NAY** is a vote to weat..."
+  # ../en-US.restext:2026 | "**NAY** is a vote to weat..."
   value: 'restext://ATOW_FamineEventV_004'
 # ../.source/ATimeofWar_Eng_v8.cs:24965
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:24967
 - type: 'text'
-  # ../en-US.restext:2026 | "Tally the vote count _(ti..."
+  # ../en-US.restext:2027 | "Tally the vote count _(ti..."
   value: 'restext://ATOW_FamineEventV_005'
 # ../.source/ATimeofWar_Eng_v8.cs:24972
 - type: 'break'
@@ -47,7 +47,7 @@ nodes:
   label: 'restext://Click_ToBeginVote'
   content:
   - type: 'text'
-    # ../en-US.restext:290 | "Click on the 'Start Votin..."
+    # ../en-US.restext:289 | "Click on the 'Start Votin..."
     value: 'restext://Voting_Instructions'
   - type: 'break'
     style: 'paragraph'
@@ -58,27 +58,27 @@ nodes:
     style: 'paragraph'
   - type: 'popup'
     layout: 'countdown_action'
-    # ../en-US.restext:291 | "Start Voting"
+    # ../en-US.restext:290 | "Start Voting"
     label: 'restext://Voting_StartButton'
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:52 | "3"
+      # ../en-US.restext:53 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:53 | "2"
+      # ../en-US.restext:54 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:50 | "1"
+      # ../en-US.restext:51 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:51 | "REVEAL"
+      # ../en-US.restext:52 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:51 | "REVEAL"
+    # ../en-US.restext:52 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: 'ATOW-FamineEventRes' # ./00249-ATOW-FamineEventRes.mws.yaml
     snapshot: false

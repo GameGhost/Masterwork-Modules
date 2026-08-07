@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Gen1SanityYes'
-# ../en-US.restext:2475 | "Vacation Offer Accepted"
+# ../en-US.restext:2474 | "Vacation Offer Accepted"
 title: 'restext://Gen1SanityYes_001'
 layout: 'narration'
 nodes:
@@ -13,7 +13,7 @@ nodes:
   expr: '"restext://Choice_Yes_Lower"'
 # ../.source/TheCostofDisease_Eng_v10.cs:30703
 - type: 'text'
-  # ../en-US.restext:2476 | "Perhaps the weight of the..."
+  # ../en-US.restext:2475 | "Perhaps the weight of the..."
   value: 'restext://Gen1SanityYes_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:30710
 - type: 'break'
@@ -24,7 +24,7 @@ nodes:
   # ../en-US.restext:39 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 1 ? "Fever1" : round == 2 ? "Fever2" : "Fever3"}' # ./00002-Fever1.mws.yaml, ./00029-Fever2.mws.yaml, ./00030-Fever3.mws.yaml
-  # ../en-US.restext:356 | "Close"
+  # ../en-US.restext:355 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -41,19 +41,19 @@ nodes:
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:30733
   - type: 'text'
-    # ../en-US.restext:2477 | "**Pay $1. Gain 1 Knowledg..."
+    # ../en-US.restext:2476 | "**Pay $1. Gain 1 Knowledg..."
     value: 'restext://Gen1SanityYes_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:30740
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:30742
   - type: 'text'
-    # ../en-US.restext:2478 | "Then, you may discard a *..."
+    # ../en-US.restext:2477 | "Then, you may discard a *..."
     value: 'restext://Gen1SanityYes_004'
   # ../.source/TheCostofDisease_Eng_v10.cs:30755
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:30757
   - type: 'text'
-    # ../en-US.restext:2479 | "Then, return the {icon:st..."
+    # ../en-US.restext:2478 | "Then, return the {icon:st..."
     value: 'restext://Gen1SanityYes_005'

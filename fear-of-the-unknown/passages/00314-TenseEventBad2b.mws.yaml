@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TenseEventBad2b'
-# ../en-US.restext:2519 | "Conspiracy to Purloin"
+# ../en-US.restext:2518 | "Conspiracy to Purloin"
 title: 'restext://TenseEventBad2b_001'
 layout: 'narration'
 nodes:
@@ -15,28 +15,28 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33551
 - type: 'text'
-  # ../en-US.restext:137 | "Each player takes a votin..."
+  # ../en-US.restext:138 | "Each player takes a votin..."
   value: 'restext://Directive_VotingTokenRevealVotes'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33553
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33557
 - type: 'text'
-  # ../en-US.restext:2520 | "**YAY:** Vote to steal **..."
+  # ../en-US.restext:2519 | "**YAY:** Vote to steal **..."
   value: 'restext://TenseEventBad2b_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33587
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33591
 - type: 'text'
-  # ../en-US.restext:2521 | "**NAY:** Vote to acquire ..."
+  # ../en-US.restext:2520 | "**NAY:** Vote to acquire ..."
   value: 'restext://TenseEventBad2b_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33595
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33597
 - type: 'text'
-  # ../en-US.restext:2522 | "Then, tally the vote coun..."
+  # ../en-US.restext:2521 | "Then, tally the vote coun..."
   value: 'restext://TenseEventBad2b_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33602
 - type: 'break'
@@ -64,22 +64,22 @@ nodes:
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:64 | "3"
+      # ../en-US.restext:65 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:65 | "2"
+      # ../en-US.restext:66 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:62 | "1"
+      # ../en-US.restext:63 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:63 | "REVEAL"
+      # ../en-US.restext:64 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:63 | "REVEAL"
+    # ../en-US.restext:64 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: 'TenseEventBad2Res' # ./00342-TenseEventBad2Res.mws.yaml
     snapshot: false

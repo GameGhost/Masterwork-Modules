@@ -2,22 +2,17 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TSBarracksPenalty'
+# ../en-US.restext:1684 | "Lack of Service Penalty"
+title: 'restext://TSBarracksPenalty_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:20059
 - type: 'conditional'
   if: 'barracks == "yes"'
   then:
-  # ../.source/ATimeofWar_Eng_v8.cs:20063
-  - type: 'text'
-    # ../en-US.restext:1683 | "**Lack of Service Penalty**"
-    value: 'restext://TSBarracksPenalty_001'
-  # ../.source/ATimeofWar_Eng_v8.cs:20065
-  - type: 'break'
-    style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:20067
   - type: 'text'
-    # ../en-US.restext:1684 | "If any player's Caretaker..."
+    # ../en-US.restext:1685 | "If any player's Caretaker..."
     value: 'restext://TSBarracksPenalty_002'
   # ../.source/ATimeofWar_Eng_v8.cs:20074
   - type: 'break'

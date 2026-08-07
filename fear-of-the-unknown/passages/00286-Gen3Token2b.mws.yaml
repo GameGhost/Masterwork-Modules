@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Gen3Token2b'
-# ../en-US.restext:2390 | "Rejecting My Fate"
+# ../en-US.restext:2389 | "Rejecting My Fate"
 title: 'restext://Gen3Token2b_001'
 layout: 'narration'
 nodes:
@@ -18,20 +18,20 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31854
 - type: 'text'
-  # ../en-US.restext:2391 | "Yes. For too long I have ..."
+  # ../en-US.restext:2390 | "Yes. For too long I have ..."
   value: 'restext://Gen3Token2b_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31860
 - type: 'let'
   var: '_rnd_Gen3Token2b_0'
-  # ../en-US.restext:2392 | Gen3Token2b_003 | "I will allow my thoughts ..."
-  # ../en-US.restext:2393 | Gen3Token2b_004 | "I will allow the seed of ..."
+  # ../en-US.restext:2391 | Gen3Token2b_003 | "I will allow my thoughts ..."
+  # ../en-US.restext:2392 | Gen3Token2b_004 | "I will allow the seed of ..."
   expr: '["restext://Gen3Token2b_003", "restext://Gen3Token2b_004"].shuffled("Gen3Token2b_0")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31857
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31859
 - type: 'text'
-  # ../en-US.restext:2394 | "My mind is made up. {_rnd..."
+  # ../en-US.restext:2393 | "My mind is made up. {_rnd..."
   value: 'restext://Gen3Token2b_005'
   lets:
   - '_rnd_Gen3Token2b_0'
@@ -192,12 +192,12 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:31936
   - type: 'text'
-    # ../en-US.restext:2395 | "Discard your **Obsession*..."
+    # ../en-US.restext:2394 | "Discard your **Obsession*..."
     value: 'restext://Gen3Token2b_006'
   # ../.source/FearoftheUnknown_Eng_v15.cs:31943
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:31945
   - type: 'text'
-    # ../en-US.restext:2396 | "Draw **4 Compulsion** cards."
+    # ../en-US.restext:2395 | "Draw **4 Compulsion** cards."
     value: 'restext://Gen3Token2b_007'

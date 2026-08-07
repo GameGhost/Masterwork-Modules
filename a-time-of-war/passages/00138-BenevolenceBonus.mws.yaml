@@ -10,18 +10,18 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:15200
   - type: 'text'
-    # ../en-US.restext:1153 | "**Benevolence Bonus**"
+    # ../en-US.restext:1152 | "**Benevolence Bonus**"
     value: 'restext://BenevolenceBonus_002'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:15207
   - type: 'text'
-    # ../en-US.restext:1152 | "**Iron Fist Bonus**"
+    # ../en-US.restext:1151 | "**Iron Fist Bonus**"
     value: 'restext://BenevolenceBonus_001'
 # ../.source/ATimeofWar_Eng_v8.cs:15210
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:15211
 - type: 'text'
-  # ../en-US.restext:1154 | "The player with the most "
+  # ../en-US.restext:1153 | "The player with the most "
   value: 'restext://BenevolenceBonus_003'
 # ../.source/ATimeofWar_Eng_v8.cs:15212
 - type: 'conditional'
@@ -29,16 +29,16 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:15216
   - type: 'text'
-    # ../en-US.restext:1156 | "**Benevolent**"
+    # ../en-US.restext:1155 | "**Benevolent**"
     value: 'restext://BenevolenceBonus_005'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:15223
   - type: 'text'
-    # ../en-US.restext:1155 | "**Iron Fist**"
+    # ../en-US.restext:1154 | "**Iron Fist**"
     value: 'restext://BenevolenceBonus_004'
 # ../.source/ATimeofWar_Eng_v8.cs:15226
 - type: 'text'
-  # ../en-US.restext:1157 | " decrees will now receive..."
+  # ../en-US.restext:1156 | " decrees will now receive..."
   value: 'restext://BenevolenceBonus_006'
 # ../.source/ATimeofWar_Eng_v8.cs:15232
 - type: 'break'
@@ -51,13 +51,13 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:15236
     - type: 'text'
-      # ../en-US.restext:1158 | "{nameA} : {plareigng} Ben..."
+      # ../en-US.restext:1157 | "{nameA} : {plareigng} Ben..."
       value: 'restext://BenevolenceBonus_007'
     # ../.source/ATimeofWar_Eng_v8.cs:15240
     - type: 'break'
     # ../.source/ATimeofWar_Eng_v8.cs:15241
     - type: 'text'
-      # ../en-US.restext:1159 | "{nameB} : {plbreigng} Ben..."
+      # ../en-US.restext:1158 | "{nameB} : {plbreigng} Ben..."
       value: 'restext://BenevolenceBonus_008'
     # ../.source/ATimeofWar_Eng_v8.cs:15245
     - type: 'break'
@@ -67,7 +67,7 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:15248
       - type: 'text'
-        # ../en-US.restext:1160 | "{nameC} : {plcreigng} Ben..."
+        # ../en-US.restext:1159 | "{nameC} : {plcreigng} Ben..."
         value: 'restext://BenevolenceBonus_009'
       # ../.source/ATimeofWar_Eng_v8.cs:15252
       - type: 'break'
@@ -77,7 +77,7 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:15256
       - type: 'text'
-        # ../en-US.restext:1161 | "{nameD} : {pldreigng} Ben..."
+        # ../en-US.restext:1160 | "{nameD} : {pldreigng} Ben..."
         value: 'restext://BenevolenceBonus_010'
       # ../.source/ATimeofWar_Eng_v8.cs:15260
       - type: 'break'
@@ -87,7 +87,7 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:15264
       - type: 'text'
-        # ../en-US.restext:1162 | "{nameE} : {plereigng} Ben..."
+        # ../en-US.restext:1161 | "{nameE} : {plereigng} Ben..."
         value: 'restext://BenevolenceBonus_011'
       # ../.source/ATimeofWar_Eng_v8.cs:15268
       - type: 'break'
@@ -95,13 +95,13 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:15273
     - type: 'text'
-      # ../en-US.restext:1163 | "{nameA} : {plareigne} Iro..."
+      # ../en-US.restext:1162 | "{nameA} : {plareigne} Iro..."
       value: 'restext://BenevolenceBonus_012'
     # ../.source/ATimeofWar_Eng_v8.cs:15277
     - type: 'break'
     # ../.source/ATimeofWar_Eng_v8.cs:15278
     - type: 'text'
-      # ../en-US.restext:1164 | "{nameB} : {plbreigne} Iro..."
+      # ../en-US.restext:1163 | "{nameB} : {plbreigne} Iro..."
       value: 'restext://BenevolenceBonus_013'
     # ../.source/ATimeofWar_Eng_v8.cs:15282
     - type: 'break'
@@ -111,7 +111,7 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:15285
       - type: 'text'
-        # ../en-US.restext:1165 | "{nameC} : {plcreigne} Iro..."
+        # ../en-US.restext:1164 | "{nameC} : {plcreigne} Iro..."
         value: 'restext://BenevolenceBonus_014'
       # ../.source/ATimeofWar_Eng_v8.cs:15289
       - type: 'break'
@@ -121,7 +121,7 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:15293
       - type: 'text'
-        # ../en-US.restext:1166 | "{nameD} : {pldreigne} Iro..."
+        # ../en-US.restext:1165 | "{nameD} : {pldreigne} Iro..."
         value: 'restext://BenevolenceBonus_015'
       # ../.source/ATimeofWar_Eng_v8.cs:15297
       - type: 'break'
@@ -131,7 +131,7 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:15301
       - type: 'text'
-        # ../en-US.restext:1167 | "{nameE} : {plereigne} Iro..."
+        # ../en-US.restext:1166 | "{nameE} : {plereigne} Iro..."
         value: 'restext://BenevolenceBonus_016'
       # ../.source/ATimeofWar_Eng_v8.cs:15305
       - type: 'break'
@@ -141,10 +141,10 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:15312
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:1168 | "Click to continue to Fina..."
+  # ../en-US.restext:1167 | "Click to continue to Fina..."
   label: 'restext://BenevolenceBonus_017'
   target: 'Scoring' # ./00004-Scoring.mws.yaml
-  # ../en-US.restext:286 | "Close"
+  # ../en-US.restext:285 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -155,5 +155,5 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:15330
   - type: 'text'
-    # ../en-US.restext:1169 | "{mostben} gains {decbon}VP."
+    # ../en-US.restext:1168 | "{mostben} gains {decbon}VP."
     value: 'restext://BenevolenceBonus_018'

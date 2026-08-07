@@ -46,6 +46,7 @@ Click_ToMakeRoyalDecree=click here to make a royal decree.
 Click_ToPacifyTimestream=click here to pacify the timestream.
 Click_ToReceiveSpecialBonus=click here to receive a special bonus.
 Click_WheneverVisitTownHall=Click here whenever you visit the Town Hall.
+Common_001=Gift of Silence
 Common_VersionOnePointZero=v1.0
 Countdown_One=1
 Countdown_Reveal=REVEAL
@@ -137,7 +138,6 @@ Heading_DecisionWasEasy_WeShould=**The decision was easy. We should:**
 Heading_DoYouHaveWarwinnerFlag=Do you have a {warwinner} Flag token?
 Heading_EverythingIsAWeapon=**Everything is a Weapon**
 Heading_FateOfTime=**Fate of Time**
-Heading_GiftOfSilence=**Gift of Silence**
 Heading_InMemoriam=**In Memoriam**
 Heading_IngredientBonus=**Ingredient Bonus**
 Heading_Interrogation=**Interrogation**
@@ -176,7 +176,6 @@ Heading_StorybookToken_VisitThePark={icon:storybooktoken} **Visit the Park**
 Heading_StorybookToken_VisitTheTownHall={icon:storybooktoken} **Visit the Town Hall**
 Heading_StorybookToken_WarOnTheWorld={icon:storybooktoken} **War on the World**
 Heading_StorybookToken_WeaponsBonus={icon:storybooktoken} **Weapons Bonus**
-Heading_SuspicionsConfirmed=**Suspicions Confirmed**
 Heading_Technician=**Technician**
 Heading_TheEndQuestion=THE END?
 Heading_ToBattle=**To Battle**
@@ -1384,12 +1383,14 @@ IntroMartial_Separatists_005=However, the influence of the throne was still abso
 IntroMartial_Separatists_006=Ah, to be left to one's own devices or to be famously scrutinized, reviled, and revered in equal measure! The decision weighed upon me so heavily that I could scarcely enjoy my afternoon pastries. Neither could the muffled wailing coming from the cellar laboratory nor the distant clattering of gunfire at night calm my weary mind. What direction should I choose to advance my most important scientific work? 
 
 # passages/00153-RoyalBarnCheck.mws.yaml
+RoyalBarnCheck_001=**Suspicions Confirmed**
 RoyalBarnCheck_002=The Unified Monarchists are furious to discover that one of our family has been consorting with the enemy for over a decade. I am adamant in my disapproval of my father's hidden grudge against the current government and I offer them access to all goods within, free of charge. I am forever a proud citizen of this nation and harbor absolutely no ill-feelings, nor grudges which will spitefully fester in my psyche for the remainder of my years.
 RoyalBarnCheck_003=**The player with the "Suspicious Barn" must flip it face-down until Game End Scoring. It will be scored as an Estate Upgrade, but it's ability can no longer be used.**
 
 # passages/00154-SeparatistBarnCheck.mws.yaml
-SeparatistBarnCheck_001=The Separatists were furious to discover that one of our family had been consorting with the enemy for over a decade. I was adamant in my disapproval of my father's hidden grudge against the current government and I offered them access to all goods within, free of charge. I am forever a proud citizen of this nation and harbor absolutely no ill-feelings nor grudges which could spitefully fester in my psyche for the remainder of my years.
-SeparatistBarnCheck_002=**The player with the "Suspicious Barn" must flip it face-down until Game End Scoring. It will be scored as an Estate Upgrade, but its ability can no longer be used.**
+SeparatistBarnCheck_001=Suspicions Confirmed
+SeparatistBarnCheck_002=The Separatists were furious to discover that one of our family had been consorting with the enemy for over a decade. I was adamant in my disapproval of my father's hidden grudge against the current government and I offered them access to all goods within, free of charge. I am forever a proud citizen of this nation and harbor absolutely no ill-feelings nor grudges which could spitefully fester in my psyche for the remainder of my years.
+SeparatistBarnCheck_003=**The player with the "Suspicious Barn" must flip it face-down until Game End Scoring. It will be scored as an Estate Upgrade, but its ability can no longer be used.**
 
 # passages/00155-1stCrownCons.mws.yaml
 _1stCrownCons_001=The Queen's Ire
@@ -1670,7 +1671,7 @@ TakeEventb_004=Yay. We voted to build a Barracks.
 TakeEventb_005=Nay. We voted ''against''.
 
 # passages/00187-TakeEventFlag.mws.yaml
-TakeEventFlag_001=**Change of Allegiance**
+TakeEventFlag_001=Change of Allegiance
 TakeEventFlag_002=A new flag had been raised at the Town Hall. It was nice to see the town finally listening to reason. Certainly a triumph, but I had no delusions that their attitude towards my ingenious inventions had suddenly transformed.
 TakeEventFlag_003=This small change was only the beginning. Before long they would tremble as I wielded the awesome power of science!
 TakeEventFlag_004=Return the {warloser} Flag card to the Scenario box. Place the {warwinner} Flag card face-up near the Village Chronicle.
@@ -1680,7 +1681,7 @@ TTBarracksPenalty_001=**Barracks Penalty**
 TTBarracksPenalty_002=Any player that does **not** have a piece of their color on the Barracks must **lose 5VP**.
 
 # passages/00189-TSBarracksPenalty.mws.yaml
-TSBarracksPenalty_001=**Lack of Service Penalty**
+TSBarracksPenalty_001=Lack of Service Penalty
 TSBarracksPenalty_002=If any player's Caretaker remains on the Barracks at the End of the Generation, they immediately **lose 5VP**.
 
 # passages/00190-TowardsDev.mws.yaml
@@ -1863,7 +1864,7 @@ MartialSepEventNo_004=Any player that offered at least $1 towards the bribe, **d
 MartialSepEventNo_005=Then, all players return their money to their Quarters.
 
 # passages/00220-BribeDenied.mws.yaml
-BribeDenied_001=**Royal Disinterest**
+BribeDenied_001=Royal Disinterest
 BribeDenied_002=With the royalty expressing less interest in our experimentations, the use of weaponry to aid in the performing of experiments had lost its luster with the passing generation. I perceived this not as a stumbling block, but as an opportunity. Focusing purely on weapons had made my parent's remaining exhibits dull and one-note.
 BribeDenied_003=I, however, would forge a new path. One that would no longer rely on the crutch of warring factions, but would inspire future generations with its innovation!
 BribeDenied_004=**Players are no longer able to substitute a {icon:s3_weapontoken} token for an Ingredient.**
@@ -1876,7 +1877,7 @@ OutpostExplain_004=Pay 3 {icon:s3_weapontoken} tokens to **gain a Knowledge cube
 OutpostExplain_005=Pay 4 {icon:s3_weapontoken} tokens to **Lose 1** {icon:creepy_icon}**.**
 
 # passages/00222-PotentBuyBonus.mws.yaml
-PotentBuyBonus_001=**Significant Investment**
+PotentBuyBonus_001=Significant Investment
 
 # passages/00223-ResistEnd3.mws.yaml
 ResistEnd3_001=Shots Fired
@@ -2008,7 +2009,7 @@ PeaceEventb_004=A vote against will also pacify the people, but provides no othe
 PeaceEventb_005=_(Ties are broken by the player last in turn order this round.)_
 
 # passages/00248-PeaceStick.mws.yaml
-PeaceStick_001=**An Old, Failed Sabotage**
+PeaceStick_001=An Old, Failed Sabotage
 PeaceStick_002=For as long as I could remember, the dusty, misshapen thing sat perched upon the bookshelf. However, it wasn't until I needed an old textbook behind it, that I finally inspected the object thoroughly.
 PeaceStick_003=I discovered a thin circular cut in the top portion of the formless wooden carving. Upon tapping it on the edge of a table, the cut revealed what looked like a stopper and the remains of an old adhesive. With one more solid whack, I stumbled backwards and shielded my eyes as a cloud of black powder burst from the interior. A blasting cap?
 PeaceStick_004=Why some individual would plant an explosive device in a crudely whittled container is beyond my understanding! It was too ancient, of course, to actually cause harm, however, I was able to salvage the well-preserved gunpowder for future use.

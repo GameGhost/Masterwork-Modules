@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'FeverServe1'
-# ../en-US.restext:861 | "Fortuitous Assistance"
+# ../en-US.restext:860 | "Fortuitous Assistance"
 title: 'restext://FeverServe1_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:7916
 - type: 'text'
-  # ../en-US.restext:862 | "The small village certain..."
+  # ../en-US.restext:861 | "The small village certain..."
   value: 'restext://FeverServe1_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:7920
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:7922
 - type: 'text'
-  # ../en-US.restext:863 | "The family was overjoyed ..."
+  # ../en-US.restext:862 | "The family was overjoyed ..."
   value: 'restext://FeverServe1_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:7923
 - type: 'break'
@@ -26,7 +26,7 @@ nodes:
   # ../en-US.restext:39 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'Fever2' # ./00029-Fever2.mws.yaml
-  # ../en-US.restext:356 | "Close"
+  # ../en-US.restext:355 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -37,5 +37,5 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:7944
   - type: 'text'
-    # ../en-US.restext:864 | "Each player **pays $1 and..."
+    # ../en-US.restext:863 | "Each player **pays $1 and..."
     value: 'restext://FeverServe1_004'

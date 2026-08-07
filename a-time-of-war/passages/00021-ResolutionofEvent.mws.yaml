@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ResolutionofEvent'
-# ../en-US.restext:464 | "The Town's Reaction"
+# ../en-US.restext:463 | "The Town's Reaction"
 title: 'restext://ResolutionofEvent_001'
 layout: 'narration'
 nodes:
@@ -12,19 +12,19 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:3390
   - type: 'text'
-    # ../en-US.restext:467 | "I was quite convinced tha..."
+    # ../en-US.restext:466 | "I was quite convinced tha..."
     value: 'restext://ResolutionofEvent_004'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:3429
   - type: 'text'
-    # ../en-US.restext:465 | "For reasons which I canno..."
+    # ../en-US.restext:464 | "For reasons which I canno..."
     value: 'restext://ResolutionofEvent_002'
   # ../.source/ATimeofWar_Eng_v8.cs:3432
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3434
   - type: 'text'
-    # ../en-US.restext:466 | "Could it be that I had un..."
+    # ../en-US.restext:465 | "Could it be that I had un..."
     value: 'restext://ResolutionofEvent_003'
 # ../.source/ATimeofWar_Eng_v8.cs:3440
 - type: 'break'
@@ -35,7 +35,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'TakeEventFlag' # ./00187-TakeEventFlag.mws.yaml
-  # ../en-US.restext:286 | "Close"
+  # ../en-US.restext:285 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -46,7 +46,7 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:3460
   - type: 'text'
-    # ../en-US.restext:468 | "All players who voted to ..."
+    # ../en-US.restext:467 | "All players who voted to ..."
     value: 'restext://ResolutionofEvent_005'
   # ../.source/ATimeofWar_Eng_v8.cs:3464
   - type: 'conditional'
@@ -54,7 +54,7 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:3466
     - type: 'text'
-      # ../en-US.restext:469 | " and **gain 2VP**"
+      # ../en-US.restext:468 | " and **gain 2VP**"
       value: 'restext://ResolutionofEvent_006'
   # ../.source/ATimeofWar_Eng_v8.cs:3472
   - type: 'conditional'
@@ -62,7 +62,7 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:3474
     - type: 'text'
-      # ../en-US.restext:470 | " and **gain 2 Resources o..."
+      # ../en-US.restext:469 | " and **gain 2 Resources o..."
       value: 'restext://ResolutionofEvent_007'
   # ../.source/ATimeofWar_Eng_v8.cs:3480
   - type: 'text'
@@ -72,7 +72,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3489
   - type: 'text'
-    # ../en-US.restext:471 | "All players who voted aga..."
+    # ../en-US.restext:470 | "All players who voted aga..."
     value: 'restext://ResolutionofEvent_008'
   # ../.source/ATimeofWar_Eng_v8.cs:3494
   - type: 'conditional'
@@ -80,7 +80,7 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:3496
     - type: 'text'
-      # ../en-US.restext:470 | " and **gain 2 Resources o..."
+      # ../en-US.restext:469 | " and **gain 2 Resources o..."
       value: 'restext://ResolutionofEvent_007'
   # ../.source/ATimeofWar_Eng_v8.cs:3502
   - type: 'conditional'
@@ -88,7 +88,7 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:3504
     - type: 'text'
-      # ../en-US.restext:469 | " and **gain 2VP**"
+      # ../en-US.restext:468 | " and **gain 2VP**"
       value: 'restext://ResolutionofEvent_006'
   # ../.source/ATimeofWar_Eng_v8.cs:3510
   - type: 'text'

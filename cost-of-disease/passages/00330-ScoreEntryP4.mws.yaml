@@ -12,12 +12,12 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:2678 | "Please enter the final sc..."
+      # ../en-US.restext:2679 | "Please enter the final sc..."
       value: 'restext://ScoreEntryP4_001'
     - type: 'input'
       label: ''
       var: 'scoreD'
-    # ../en-US.restext:358 | "Continue"
+    # ../en-US.restext:357 | "Continue"
     okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'
@@ -27,7 +27,7 @@ nodes:
     target: 'ScoreEntryP4' # ./00330-ScoreEntryP4.mws.yaml
 # ../.source/TheCostofDisease_Eng_v10.cs:33642
 - type: 'text'
-  # ../en-US.restext:2679 | "Thank you for recording t..."
+  # ../en-US.restext:2680 | "Thank you for recording t..."
   value: 'restext://ScoreEntryP4_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:33645
 - type: 'break'

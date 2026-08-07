@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Stasis'
-# ../en-US.restext:706 | "Timeline Stabilized"
+# ../en-US.restext:705 | "Timeline Stabilized"
 title: 'restext://Stasis_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:8095
 - type: 'text'
-  # ../en-US.restext:707 | "I felt the fiber of my be..."
+  # ../en-US.restext:706 | "I felt the fiber of my be..."
   value: 'restext://Stasis_002'
 # ../.source/ATimeofWar_Eng_v8.cs:8097
 - type: 'assign'
@@ -23,21 +23,21 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:8100
 - type: 'text'
-  # ../en-US.restext:708 | "As expected, as soon as t..."
+  # ../en-US.restext:707 | "As expected, as soon as t..."
   value: 'restext://Stasis_003'
 # ../.source/ATimeofWar_Eng_v8.cs:8106
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:8108
 - type: 'text'
-  # ../en-US.restext:709 | "Elderly as they were, the..."
+  # ../en-US.restext:708 | "Elderly as they were, the..."
   value: 'restext://Stasis_004'
 # ../.source/ATimeofWar_Eng_v8.cs:8109
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:8111
 - type: 'text'
-  # ../en-US.restext:710 | "I messaged my cousins, de..."
+  # ../en-US.restext:709 | "I messaged my cousins, de..."
   value: 'restext://Stasis_005'
 # ../.source/ATimeofWar_Eng_v8.cs:8114
 - type: 'break'
@@ -48,7 +48,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 14 ? "Warning2time" : "Warning3time"}' # ./00058-Warning2time.mws.yaml, ./00060-Warning3time.mws.yaml
-  # ../en-US.restext:286 | "Close"
+  # ../en-US.restext:285 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -59,12 +59,12 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:8161
   - type: 'text'
-    # ../en-US.restext:711 | "The player who completed ..."
+    # ../en-US.restext:710 | "The player who completed ..."
     value: 'restext://Stasis_006'
   # ../.source/ATimeofWar_Eng_v8.cs:8167
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:8169
   - type: 'text'
-    # ../en-US.restext:712 | "Each player **gains 1** {..."
+    # ../en-US.restext:711 | "Each player **gains 1** {..."
     value: 'restext://Stasis_007'

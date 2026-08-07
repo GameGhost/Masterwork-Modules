@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ReignIntro'
-# ../en-US.restext:1139 | "Visit with the Royal Advisor"
+# ../en-US.restext:1138 | "Visit with the Royal Advisor"
 title: 'restext://ReignIntro_001'
 layout: 'narration'
 nodes:
@@ -16,26 +16,26 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:14986
   - type: 'text'
-    # ../en-US.restext:1141 | "The new Unified Monarchis..."
+    # ../en-US.restext:1140 | "The new Unified Monarchis..."
     value: 'restext://ReignIntro_003'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:14990
   - type: 'text'
-    # ../en-US.restext:1140 | "The royal advisor had ant..."
+    # ../en-US.restext:1139 | "The royal advisor had ant..."
     value: 'restext://ReignIntro_002'
 # ../.source/ATimeofWar_Eng_v8.cs:14994
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:14996
 - type: 'text'
-  # ../en-US.restext:1142 | "I had sent a brief corres..."
+  # ../en-US.restext:1141 | "I had sent a brief corres..."
   value: 'restext://ReignIntro_004'
 # ../.source/ATimeofWar_Eng_v8.cs:14998
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:15002
 - type: 'text'
-  # ../en-US.restext:134 | "**Please click on your name:**"
+  # ../en-US.restext:135 | "**Please click on your name:**"
   value: 'restext://Heading_ClickOnYourName'
 # ../.source/ATimeofWar_Eng_v8.cs:15004
 - type: 'break'

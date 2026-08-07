@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'GloomyPenalty3'
-# ../en-US.restext:335 | "The Hunter's Tax"
+# ../en-US.restext:334 | "The Hunter's Tax"
 title: 'restext://Title_HuntersTax'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:31760
 - type: 'text'
-  # ../en-US.restext:2525 | "Even in their final years..."
+  # ../en-US.restext:2526 | "Even in their final years..."
   value: 'restext://GloomyPenalty3_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:31762
 - type: 'break'
@@ -19,7 +19,7 @@ nodes:
   # ../en-US.restext:44 | "Click to continue to Fina..."
   label: 'restext://Click_ContinueToFinalScoring'
   target: 'Scoring' # ./00013-Scoring.mws.yaml
-  # ../en-US.restext:356 | "Close"
+  # ../en-US.restext:355 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -30,12 +30,12 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:31783
   - type: 'text'
-    # ../en-US.restext:193 | "Any player that does not ..."
+    # ../en-US.restext:192 | "Any player that does not ..."
     value: 'restext://HuntersRest_PayOrLoseVP_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:31807
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:31809
   - type: 'text'
-    # ../en-US.restext:195 | "Alternatively, any player..."
+    # ../en-US.restext:194 | "Alternatively, any player..."
     value: 'restext://HuntersTax_TokenWaiver'

@@ -6,12 +6,12 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:4697
 - type: 'conditional'
-  # ../en-US.restext:283 | "Unified Monarchists"
+  # ../en-US.restext:282 | "Unified Monarchists"
   if: 'warwinner == "restext://Title_UnifiedMonarchists"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:4702
   - type: 'text'
-    # ../en-US.restext:241 | "**Carefully give this Sto..."
+    # ../en-US.restext:240 | "**Carefully give this Sto..."
     value: 'restext://Storybook_GiveDeviceToFigureHolder'
   # ../.source/ATimeofWar_Eng_v8.cs:4706
   - type: 'break'
@@ -21,26 +21,26 @@ nodes:
     # ../en-US.restext:40 | "Once you are ready, click..."
     label: 'restext://Click_RevealSecretConversation'
     layout: 'reveal'
-    # ../en-US.restext:286 | "Close"
+    # ../en-US.restext:285 | "Close"
     cancel: 'restext://UIButton_Close'
     snapshot: true
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:4733
     - type: 'text'
-      # ../en-US.restext:533 | "**A Fortuitous Letter**"
+      # ../en-US.restext:532 | "**A Fortuitous Letter**"
       value: 'restext://AMessenger2_002'
     # ../.source/ATimeofWar_Eng_v8.cs:4735
     - type: 'break'
     # ../.source/ATimeofWar_Eng_v8.cs:4736
     - type: 'text'
-      # ../en-US.restext:534 | "One morning, as I conside..."
+      # ../en-US.restext:533 | "One morning, as I conside..."
       value: 'restext://AMessenger2_003'
     # ../.source/ATimeofWar_Eng_v8.cs:4739
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:4741
     - type: 'text'
-      # ../en-US.restext:190 | "\"Which flag do you fly?\..."
+      # ../en-US.restext:189 | "\"Which flag do you fly?\..."
       value: 'restext://Heading_WhichFlagDoYouFly'
     # ../.source/ATimeofWar_Eng_v8.cs:4746
     - type: 'break'

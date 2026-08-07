@@ -7,41 +7,41 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:10549
 - type: 'let'
   var: '_rnd_InfinityClick2_0'
-  # ../en-US.restext:1096 | InfinityClick2_001 | "Secret to"
-  # ../en-US.restext:1097 | InfinityClick2_002 | "Marvelous"
-  # ../en-US.restext:1098 | InfinityClick2_003 | "Discovering"
-  # ../en-US.restext:1099 | InfinityClick2_004 | "Forward to"
+  # ../en-US.restext:1095 | InfinityClick2_001 | "Secret to"
+  # ../en-US.restext:1096 | InfinityClick2_002 | "Marvelous"
+  # ../en-US.restext:1097 | InfinityClick2_003 | "Discovering"
+  # ../en-US.restext:1098 | InfinityClick2_004 | "Forward to"
   expr: '["restext://InfinityClick2_001", "restext://InfinityClick2_002", "restext://InfinityClick2_003", "restext://InfinityClick2_004"].shuffled("InfinityClick2_0")[0]'
 # ../.source/TheCostofDisease_Eng_v10.cs:10548
 - type: 'text'
-  # ../en-US.restext:1100 | "**The {_rnd_InfinityClick..."
+  # ../en-US.restext:1099 | "**The {_rnd_InfinityClick..."
   value: 'restext://InfinityClick2_005'
   lets:
   - '_rnd_InfinityClick2_0'
 # ../.source/TheCostofDisease_Eng_v10.cs:10557
 - type: 'let'
   var: '_rnd_InfinityClick2_1'
-  # ../en-US.restext:1101 | InfinityClick2_006 | "immaculate brain"
-  # ../en-US.restext:1102 | InfinityClick2_007 | "inestimable mind"
+  # ../en-US.restext:1100 | InfinityClick2_006 | "immaculate brain"
+  # ../en-US.restext:1101 | InfinityClick2_007 | "inestimable mind"
   expr: '["restext://InfinityClick2_006", "restext://InfinityClick2_007"].shuffled("InfinityClick2_1")[0]'
 # ../.source/TheCostofDisease_Eng_v10.cs:10559
 - type: 'let'
   var: '_rnd_InfinityClick2_2'
-  # ../en-US.restext:1103 | InfinityClick2_008 | "I have surely unlocked a ..."
-  # ../en-US.restext:1104 | InfinityClick2_009 | "the world will tremble at..."
+  # ../en-US.restext:1102 | InfinityClick2_008 | "I have surely unlocked a ..."
+  # ../en-US.restext:1103 | InfinityClick2_009 | "the world will tremble at..."
   expr: '["restext://InfinityClick2_008", "restext://InfinityClick2_009"].shuffled("InfinityClick2_2")[0]'
 # ../.source/TheCostofDisease_Eng_v10.cs:10564
 - type: 'let'
   var: '_rnd_InfinityClick2_3'
-  # ../en-US.restext:1105 | InfinityClick2_010 | "infinite"
-  # ../en-US.restext:1106 | InfinityClick2_011 | "future"
+  # ../en-US.restext:1104 | InfinityClick2_010 | "infinite"
+  # ../en-US.restext:1105 | InfinityClick2_011 | "future"
   expr: '["restext://InfinityClick2_010", "restext://InfinityClick2_011"].shuffled("InfinityClick2_3")[0]'
 # ../.source/TheCostofDisease_Eng_v10.cs:10554
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:10556
 - type: 'text'
-  # ../en-US.restext:1107 | "There is no doubt in my {..."
+  # ../en-US.restext:1106 | "There is no doubt in my {..."
   value: 'restext://InfinityClick2_012'
   lets:
   - '_rnd_InfinityClick2_1'
@@ -56,7 +56,7 @@ nodes:
   # ../en-US.restext:39 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'ImmortalityMWUpdate' # ./00251-ImmortalityMWUpdate.mws.yaml
-  # ../en-US.restext:356 | "Close"
+  # ../en-US.restext:355 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -71,12 +71,12 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:10590
     - type: 'text'
-      # ../en-US.restext:1108 | "Retrieve the **Immortalit..."
+      # ../en-US.restext:1107 | "Retrieve the **Immortalit..."
       value: 'restext://InfinityClick2_013'
   # ../.source/TheCostofDisease_Eng_v10.cs:10597
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:10601
   - type: 'text'
-    # ../en-US.restext:1109 | "**Draw 2 Immortality card..."
+    # ../en-US.restext:1108 | "**Draw 2 Immortality card..."
     value: 'restext://InfinityClick2_014'

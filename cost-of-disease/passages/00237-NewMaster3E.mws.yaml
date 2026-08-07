@@ -8,29 +8,29 @@ nodes:
 - type: 'switch'
   on: 'costE'
   cases:
-  # ../en-US.restext:125 | "Biology"
+  # ../en-US.restext:126 | "Biology"
   - match: 'restext://Focus_Biology'
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:26133
     - type: 'assign'
       var: 'cost2E'
-      # ../en-US.restext:223 | "Animal"
+      # ../en-US.restext:222 | "Animal"
       expr: '"restext://Masterwork_Type_Animal"'
-  # ../en-US.restext:131 | "Engineering"
+  # ../en-US.restext:132 | "Engineering"
   - match: 'restext://Focus_Engineering'
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:26137
     - type: 'assign'
       var: 'cost2E'
-      # ../en-US.restext:228 | "Gear"
+      # ../en-US.restext:227 | "Gear"
       expr: '"restext://Masterwork_Type_Gear"'
-  # ../en-US.restext:128 | "Chemistry"
+  # ../en-US.restext:129 | "Chemistry"
   - match: 'restext://Focus_Chemistry'
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:26141
     - type: 'assign'
       var: 'cost2E'
-      # ../en-US.restext:224 | "Bottle"
+      # ../en-US.restext:223 | "Bottle"
       expr: '"restext://Masterwork_Type_Bottle"'
 # ../.source/TheCostofDisease_Eng_v10.cs:26145
 - type: 'conditional'
@@ -40,12 +40,12 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:221 | "Give your creation a new,..."
+      # ../en-US.restext:220 | "Give your creation a new,..."
       value: 'restext://Masterwork_NamePrompt'
     - type: 'input'
       label: ''
       var: 'creationE'
-    # ../en-US.restext:358 | "Continue"
+    # ../en-US.restext:357 | "Continue"
     okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'
@@ -56,21 +56,21 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:26161
 - type: 'let'
   var: '_rnd_NewMaster3E_0'
-  # ../en-US.restext:203 | Masterwork_Adjective_Infamous | "Infamous"
-  # ../en-US.restext:212 | Masterwork_Adjective_Transcendent | "Transcendent"
-  # ../en-US.restext:207 | Masterwork_Adjective_Monumental | "Monumental"
-  # ../en-US.restext:208 | Masterwork_Adjective_Nefarious | "Nefarious"
-  # ../en-US.restext:213 | Masterwork_Adjective_Unspeakable | "Unspeakable"
-  # ../en-US.restext:205 | Masterwork_Adjective_Legendary | "Legendary"
-  # ../en-US.restext:209 | Masterwork_Adjective_Noble | "Noble"
-  # ../en-US.restext:210 | Masterwork_Adjective_Phenomenal | "Phenomenal"
-  # ../en-US.restext:211 | Masterwork_Adjective_Stunning | "Stunning"
-  # ../en-US.restext:206 | Masterwork_Adjective_Masterful | "Masterful"
-  # ../en-US.restext:204 | Masterwork_Adjective_Insidious | "Insidious"
+  # ../en-US.restext:202 | Masterwork_Adjective_Infamous | "Infamous"
+  # ../en-US.restext:211 | Masterwork_Adjective_Transcendent | "Transcendent"
+  # ../en-US.restext:206 | Masterwork_Adjective_Monumental | "Monumental"
+  # ../en-US.restext:207 | Masterwork_Adjective_Nefarious | "Nefarious"
+  # ../en-US.restext:212 | Masterwork_Adjective_Unspeakable | "Unspeakable"
+  # ../en-US.restext:204 | Masterwork_Adjective_Legendary | "Legendary"
+  # ../en-US.restext:208 | Masterwork_Adjective_Noble | "Noble"
+  # ../en-US.restext:209 | Masterwork_Adjective_Phenomenal | "Phenomenal"
+  # ../en-US.restext:210 | Masterwork_Adjective_Stunning | "Stunning"
+  # ../en-US.restext:205 | Masterwork_Adjective_Masterful | "Masterful"
+  # ../en-US.restext:203 | Masterwork_Adjective_Insidious | "Insidious"
   expr: '["restext://Masterwork_Adjective_Infamous", "restext://Masterwork_Adjective_Transcendent", "restext://Masterwork_Adjective_Monumental", "restext://Masterwork_Adjective_Nefarious", "restext://Masterwork_Adjective_Unspeakable", "restext://Masterwork_Adjective_Legendary", "restext://Masterwork_Adjective_Noble", "restext://Masterwork_Adjective_Phenomenal", "restext://Masterwork_Adjective_Stunning", "restext://Masterwork_Adjective_Masterful", "restext://Masterwork_Adjective_Insidious"].shuffled("NewMaster3E_0")[0]'
 # ../.source/TheCostofDisease_Eng_v10.cs:26160
 - type: 'text'
-  # ../en-US.restext:2078 | "**The {_rnd_NewMaster3E_0..."
+  # ../en-US.restext:2077 | "**The {_rnd_NewMaster3E_0..."
   value: 'restext://NewMaster3E_001'
   lets:
   - '_rnd_NewMaster3E_0'
@@ -85,14 +85,14 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:26170
 - type: 'text'
-  # ../en-US.restext:246 | "With my own destiny deter..."
+  # ../en-US.restext:245 | "With my own destiny deter..."
   value: 'restext://Narrative_ForgeNewPath'
 # ../.source/TheCostofDisease_Eng_v10.cs:26172
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:26176
 - type: 'text'
-  # ../en-US.restext:214 | "**You may check the cost ..."
+  # ../en-US.restext:213 | "**You may check the cost ..."
   value: 'restext://Masterwork_CheckCostHint'
 # ../.source/TheCostofDisease_Eng_v10.cs:26179
 - type: 'break'

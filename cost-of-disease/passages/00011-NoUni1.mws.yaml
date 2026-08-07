@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'NoUni1'
-# ../en-US.restext:348 | "THE CRAWL"
+# ../en-US.restext:347 | "THE CRAWL"
 title: 'restext://Title_TheCrawl'
-# ../en-US.restext:331 | "Early Years"
+# ../en-US.restext:330 | "Early Years"
 subtitle: 'restext://Title_EarlyYears'
 tags:
 - 'HUB'
@@ -21,7 +21,7 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:2724
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:355 | "Accept"
+    # ../en-US.restext:354 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/TheCostofDisease_Eng_v10.cs:2728
@@ -31,13 +31,13 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:2730
     - type: 'text'
-      # ../en-US.restext:469 | "Turn to **page 8** of the..."
+      # ../en-US.restext:468 | "Turn to **page 8** of the..."
       value: 'restext://NoUni1_002'
     # ../.source/TheCostofDisease_Eng_v10.cs:2740
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:2741
     - type: 'text'
-      # ../en-US.restext:98 | "Place the Suspicion Marke..."
+      # ../en-US.restext:99 | "Place the Suspicion Marke..."
       value: 'restext://Directive_PlaceSuspicionMarker_Lead'
     # ../.source/TheCostofDisease_Eng_v10.cs:2744
     - type: 'switch'
@@ -47,34 +47,34 @@ nodes:
         nodes:
         # ../.source/TheCostofDisease_Eng_v10.cs:2746
         - type: 'text'
-          # ../en-US.restext:470 | "**5**"
+          # ../en-US.restext:469 | "**5**"
           value: 'restext://NoUni1_004'
       - match: 3
         nodes:
         # ../.source/TheCostofDisease_Eng_v10.cs:2750
         - type: 'text'
-          # ../en-US.restext:471 | "**6**"
+          # ../en-US.restext:470 | "**6**"
           value: 'restext://NoUni1_005'
       - match: 4
         nodes:
         # ../.source/TheCostofDisease_Eng_v10.cs:2754
         - type: 'text'
-          # ../en-US.restext:472 | "**7**"
+          # ../en-US.restext:471 | "**7**"
           value: 'restext://NoUni1_006'
       - match: 5
         nodes:
         # ../.source/TheCostofDisease_Eng_v10.cs:2758
         - type: 'text'
-          # ../en-US.restext:473 | "**8**"
+          # ../en-US.restext:472 | "**8**"
           value: 'restext://NoUni1_007'
       default:
       # ../.source/TheCostofDisease_Eng_v10.cs:2762
       - type: 'text'
-        # ../en-US.restext:470 | "**5**"
+        # ../en-US.restext:469 | "**5**"
         value: 'restext://NoUni1_004'
     # ../.source/TheCostofDisease_Eng_v10.cs:2765
     - type: 'text'
-      # ../en-US.restext:474 | " and the {icon:angrymob_i..."
+      # ../en-US.restext:473 | " and the {icon:angrymob_i..."
       value: 'restext://NoUni1_008'
     # ../.source/TheCostofDisease_Eng_v10.cs:2770
     - type: 'conditional'
@@ -82,7 +82,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:2772
       - type: 'text'
-        # ../en-US.restext:77 | "Then, since this is a 3-p..."
+        # ../en-US.restext:78 | "Then, since this is a 3-p..."
         value: 'restext://Directive_3Player_PassMarker_B'
 # ../.source/TheCostofDisease_Eng_v10.cs:2777
 - type: 'break'
@@ -95,7 +95,7 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:2792
   - type: 'text'
-    # ../en-US.restext:286 | "If your token is overtake..."
+    # ../en-US.restext:285 | "If your token is overtake..."
     value: 'restext://Pub_ResetCreepy_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:2808
   - type: 'link'
@@ -114,7 +114,7 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:2822
   - type: 'text'
-    # ../en-US.restext:219 | "A Masterwork can be compl..."
+    # ../en-US.restext:218 | "A Masterwork can be compl..."
     value: 'restext://Masterwork_CompleteRule'
 # ../.source/TheCostofDisease_Eng_v10.cs:2825
 - type: 'break'
@@ -127,7 +127,7 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:2839
   - type: 'text'
-    # ../en-US.restext:215 | "To check your Masterwork ..."
+    # ../en-US.restext:214 | "To check your Masterwork ..."
     value: 'restext://Masterwork_CheckCost_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:2840
   - type: 'link'
@@ -146,7 +146,7 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:2856
   - type: 'text'
-    # ../en-US.restext:220 | "If you are completing a M..."
+    # ../en-US.restext:219 | "If you are completing a M..."
     value: 'restext://Masterwork_Completing_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:2857
   - type: 'link'
@@ -165,7 +165,7 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:2872
   - type: 'text'
-    # ../en-US.restext:299 | "At the end of each round,..."
+    # ../en-US.restext:298 | "At the end of each round,..."
     value: 'restext://Resource_KnowledgeMovesCreepyTrack_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:2881
   - type: 'break'
@@ -176,7 +176,7 @@ nodes:
     # ../en-US.restext:49 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
     target: 'roundEndKnowledge' # ./00261-roundEndKnowledge.mws.yaml
-    # ../en-US.restext:360 | "End of Round"
+    # ../en-US.restext:359 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -185,10 +185,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:306 | "The Early Years of the Th..."
+      # ../en-US.restext:305 | "The Early Years of the Th..."
       value: 'restext://Round_GenerationIII_EarlyEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:313 | "Then, perform all Start o..."
+      # ../en-US.restext:312 | "Then, perform all Start o..."
       value: 'restext://Round_StartMiddleYears_Rule'

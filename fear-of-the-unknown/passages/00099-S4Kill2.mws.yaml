@@ -15,7 +15,7 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12842
 - type: 'text'
-  # ../en-US.restext:137 | "Each player takes a votin..."
+  # ../en-US.restext:138 | "Each player takes a votin..."
   value: 'restext://Directive_VotingTokenRevealVotes'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12844
 - type: 'break'
@@ -63,22 +63,22 @@ nodes:
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:64 | "3"
+      # ../en-US.restext:65 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:65 | "2"
+      # ../en-US.restext:66 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:62 | "1"
+      # ../en-US.restext:63 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:63 | "REVEAL"
+      # ../en-US.restext:64 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:63 | "REVEAL"
+    # ../en-US.restext:64 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: 'S4Kill3' # ./00208-S4Kill3.mws.yaml
     snapshot: false

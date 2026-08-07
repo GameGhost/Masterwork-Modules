@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: '2PLiberalEvent'
-# ../en-US.restext:150 | "BID"
+# ../en-US.restext:151 | "BID"
 title: 'restext://Heading_BidCaps'
 layout: 'narration'
 nodes:
@@ -15,35 +15,35 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36326
 - type: 'text'
-  # ../en-US.restext:72 | "Both players take all the..."
+  # ../en-US.restext:73 | "Both players take all the..."
   value: 'restext://Directive_BothPlayersBidMoney'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36328
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36330
 - type: 'text'
-  # ../en-US.restext:124 | "Once both players are rea..."
+  # ../en-US.restext:125 | "Once both players are rea..."
   value: 'restext://Directive_RevealAmountsBidSimultaneously_Plural'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36331
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36334
 - type: 'text'
-  # ../en-US.restext:2683 | "Players are bidding for t..."
+  # ../en-US.restext:2682 | "Players are bidding for t..."
   value: 'restext://_2PLiberalEvent_001'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36340
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36344
 - type: 'text'
-  # ../en-US.restext:2684 | "**Increased Taxes** - Thi..."
+  # ../en-US.restext:2683 | "**Increased Taxes** - Thi..."
   value: 'restext://_2PLiberalEvent_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36348
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36352
 - type: 'text'
-  # ../en-US.restext:2685 | "**Stricter Citizenship an..."
+  # ../en-US.restext:2684 | "**Stricter Citizenship an..."
   value: 'restext://_2PLiberalEvent_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36364
 - type: 'break'
@@ -57,14 +57,14 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36376
 - type: 'text'
-  # ../en-US.restext:127 | "_(Ties are broken by the ..."
+  # ../en-US.restext:128 | "_(Ties are broken by the ..."
   value: 'restext://Directive_TieBreak_LastThisRound'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36379
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36381
 - type: 'text'
-  # ../en-US.restext:81 | "Only the player who wins ..."
+  # ../en-US.restext:82 | "Only the player who wins ..."
   value: 'restext://Directive_ElectionWinnerPaysBid'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36383
 - type: 'break'
@@ -92,22 +92,22 @@ nodes:
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:64 | "3"
+      # ../en-US.restext:65 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:65 | "2"
+      # ../en-US.restext:66 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:62 | "1"
+      # ../en-US.restext:63 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:63 | "REVEAL"
+      # ../en-US.restext:64 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:63 | "REVEAL"
+    # ../en-US.restext:64 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: '2PLiberalEvent1' # ./00348-2PLiberalEvent1.mws.yaml
     snapshot: false

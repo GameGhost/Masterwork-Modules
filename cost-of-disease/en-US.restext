@@ -65,6 +65,7 @@ Click_StorybookMessage=click here for a Storybook message.
 Click_TabulateScores=Click to tabulate scores for posterity...
 Click_VotedCleanse=Click here if you voted to Cleanse.
 Click_VotedNay=Click here if you voted Nay.
+Common_001=Whispers Abate
 Common_Gentleman=gentleman
 Common_Gentlewoman=gentlewoman
 Common_Private_Decision_Warning=**Do not allow the other players to see the Storybook while making the decision below.**
@@ -133,7 +134,6 @@ Focus_Engineering_Lower=engineering
 Focus_Engineering_Period=Engineering.
 Focus_Occult_Lower=occult
 Focus_Occult_Period=Occult.
-Heading_AbsentParent=**Absent Parent**
 Heading_Acceptance=**Acceptance**
 Heading_AngryMob={icon:storybook} **Angry Mob**
 Heading_AttractingAttention={icon:storybook} **Attracting Attention**
@@ -184,7 +184,6 @@ Heading_ThePanacea={icon:storybook} **The Panacea**
 Heading_UniversitySymposium=**University Symposium**
 Heading_VictoryAhead={icon:storybook} **Victory Ahead**
 Heading_Vote=**VOTE**
-Heading_WhispersAbate=**Whispers Abate**
 Hospital_ChurchExpansion_Rule=The church can no longer handle the influx of the diseased and needs to expand their facilities. Each time a player visits the church, they may donate funds and assistance towards building a new Hospital by paying money to the supply. Depending on the amount spent ($0, $1, or $2), the player will receive 1, 2, or 3 {icon:s1_hearttoken} and lose 1, 2, or 3 {icon:creepy_icon}. _You do not pay extra ($) for placing a piece if another player has already placed at the church._
 Hospital_FirstVisit_Lead=The **first time** you visit the Hospital with your Self,
 Hospital_MustVisit_Rule=All players MUST place their Self on the Hospital space in town once this generation. _(If, for any reason, you have not visited the Hospital by the end of this Generation, lose 6VP and an Estate Upgrade of your choice, if possible.)_
@@ -2502,10 +2501,12 @@ Gen1Creepy_AgreedReturn_006=The man peered out from under his cloth hood, his ey
 Gen1Creepy_AgreedReturn_007=It seemed that decision of their parent had finally come to fruition. The gentlemen were kind enough to offer {gen1creep} II a choice of debt repayment.
 
 # passages/00302-Gen1Insanity-Yes.mws.yaml
+Gen1Insanity_Yes_001=**Absent Parent**
 Gen1Insanity_Yes_003=An investment in a summer home meant time away from the estate, and these increasingly frequent visits to rekindle sanity meant {gen1sane} II's childhood guidance came more from the servants around the home than from their parental figures. This left an unfortunate void in their psychological development, one that affected their actions for the remainder of their life.
 
 # passages/00303-Gen1Insanity-Yes2.mws.yaml
-Gen1Insanity_Yes2_001=An investment in a summer home may have calmed their parent's nerves during times of stress, but it also meant time away from the Estate. These increasingly frequent visits to rekindle sanity meant {gen1sane} II's childhood guidance came more from the servants around the home than from their parental figures. This left an unfortunate void in their psychological development, one that affected their actions for the remainder of their life.
+Gen1Insanity_Yes2_001=Absent Parent
+Gen1Insanity_Yes2_002=An investment in a summer home may have calmed their parent's nerves during times of stress, but it also meant time away from the Estate. These increasingly frequent visits to rekindle sanity meant {gen1sane} II's childhood guidance came more from the servants around the home than from their parental figures. This left an unfortunate void in their psychological development, one that affected their actions for the remainder of their life.
 
 # passages/00304-Gen1Insanity-NoExtraAction.mws.yaml
 Gen1Insanity_NoExtraAction_003=And so this matter of administrative duties was handled with the utmost brevity, allowing them to focus on the monumental task at hand.
@@ -2821,7 +2822,7 @@ ResolveCharityWolves_003=There was not a day that went by with a friendly set of
 ResolveCharityWolves_004={charity} may **gain a Servant from Lost** (if possible) and **returns their**{icon:creepy_icon}**token to the start of the**{icon:creepy_icon}**Track.**
 
 # passages/00355-MayorLibraryEvil.mws.yaml
-MayorLibraryEvil_001=**Detestable Education**
+MayorLibraryEvil_001=Detestable Education
 MayorLibraryEvil_002=It was impossible for {mayor} III to convince them otherwise; for the new leaders of {townname}, access to untamed knowledge had poisoned the pure minds of the citizens. They were well aware that it was {mayor}'s ancestry that had brought this blight of terrible cognition to this fair town.
 MayorLibraryEvil_003=For with knowledge came a way to overcome the fears inhabiting the hearts of all men - a fear that could be manipulated. And they bore a deep grudge against anyone that sook to quell that primal urge.
 MayorLibraryEvil_004=For with knowledge came a lack of faith; a propensity to question authority and cause unwanted friction. It made them look upon {mayor} III the same way they looked upon the beasts they hunted in the wild.
@@ -2841,7 +2842,7 @@ HospitalVisitReject_003=Was it madness that drove them to it or a deep obsession
 HospitalVisitReject_004=Gain 1 {icon:creepy_icon}.
 
 # passages/00359-WolvesBankMayorGood.mws.yaml
-WolvesBankMayorGood_001=**The Stench of Man's Avarice**
+WolvesBankMayorGood_001=The Stench of Man's Avarice
 WolvesBankMayorGood_002=These beastly apparitions may have squashed their hirsute forms into makeshift suits and summer dresses - photographs of which degrade the very silver they were impressed upon - but when the subject of money was discussed, they sneered in disgust.
 WolvesBankMayorGood_003=For they abhored all forms of numismatic pursuits, only abiding them as a necessity in their brief business dealings with the outside world. {mayor} III's family lineage bore the golden mark of this shameful greed, and set their noses twitching every time they entered {townname}'s limits.
 WolvesBankMayorGood_004={mayor} gains 1 {icon:creepy_icon} and loses **2VP**. Then, return the **Commemorative Mayoral Coin** to the scenario box.

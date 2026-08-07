@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'PackingHeat1a'
-# ../en-US.restext:1114 | "Attracting Attentions"
+# ../en-US.restext:1113 | "Attracting Attentions"
 title: 'restext://PackingHeat1a_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:14535
 - type: 'text'
-  # ../en-US.restext:1115 | "While the {warwinner} wer..."
+  # ../en-US.restext:1114 | "While the {warwinner} wer..."
   value: 'restext://PackingHeat1a_002'
 # ../.source/ATimeofWar_Eng_v8.cs:14544
 - type: 'break'
@@ -18,7 +18,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   layout: 'reveal'
-  # ../en-US.restext:286 | "Close"
+  # ../en-US.restext:285 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -46,7 +46,7 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:288 | "Continue"
+        # ../en-US.restext:287 | "Continue"
         label: 'restext://UIButton_Continue'
         target: 'Martial1' # ./00023-Martial1.mws.yaml
         snapshot: true
@@ -65,7 +65,7 @@ nodes:
         style: 'panel'
         content: []
       - type: 'link'
-        # ../en-US.restext:288 | "Continue"
+        # ../en-US.restext:287 | "Continue"
         label: 'restext://UIButton_Continue'
         target: 'Martial2' # ./00024-Martial2.mws.yaml
         snapshot: true
@@ -83,19 +83,19 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:288 | "Continue"
+      # ../en-US.restext:287 | "Continue"
       label: 'restext://UIButton_Continue'
       target: 'Martial3' # ./00036-Martial3.mws.yaml
       snapshot: true
   # ../.source/ATimeofWar_Eng_v8.cs:14615
   - type: 'let'
     var: '_rnd_PackingHeat1a_0'
-    # ../en-US.restext:1116 | PackingHeat1a_003 | "1 <sprite=\"Creepy_Icon\"..."
-    # ../en-US.restext:1117 | PackingHeat1a_004 | "1 Resource of their choic..."
+    # ../en-US.restext:1115 | PackingHeat1a_003 | "1 <sprite=\"Creepy_Icon\"..."
+    # ../en-US.restext:1116 | PackingHeat1a_004 | "1 Resource of their choic..."
     expr: '["restext://PackingHeat1a_003", "restext://PackingHeat1a_004"].shuffled("PackingHeat1a_0")[0]'
   # ../.source/ATimeofWar_Eng_v8.cs:14612
   - type: 'text'
-    # ../en-US.restext:1118 | "{heat} gains {_rnd_Packin..."
+    # ../en-US.restext:1117 | "{heat} gains {_rnd_Packin..."
     value: 'restext://PackingHeat1a_005'
     lets:
     - '_rnd_PackingHeat1a_0'
@@ -104,5 +104,5 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:14619
   - type: 'text'
-    # ../en-US.restext:1119 | "If they have not already ..."
+    # ../en-US.restext:1118 | "If they have not already ..."
     value: 'restext://PackingHeat1a_006'

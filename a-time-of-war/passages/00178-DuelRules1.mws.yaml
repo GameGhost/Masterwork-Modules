@@ -2,41 +2,41 @@
 ---
 format: 'mws/0.4'
 passage_id: 'DuelRules1'
-# ../en-US.restext:1577 | "Rules of the Duel"
+# ../en-US.restext:1578 | "Rules of the Duel"
 title: 'restext://DuelRules1_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:19115
 - type: 'text'
-  # ../en-US.restext:1578 | "Over the next few days, I..."
+  # ../en-US.restext:1579 | "Over the next few days, I..."
   value: 'restext://DuelRules1_002'
 # ../.source/ATimeofWar_Eng_v8.cs:19130
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:19132
 - type: 'text'
-  # ../en-US.restext:1579 | "A scientific duel would b..."
+  # ../en-US.restext:1580 | "A scientific duel would b..."
   value: 'restext://DuelRules1_003'
 # ../.source/ATimeofWar_Eng_v8.cs:19133
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:19135
 - type: 'text'
-  # ../en-US.restext:1580 | "A duel with pistols would..."
+  # ../en-US.restext:1581 | "A duel with pistols would..."
   value: 'restext://DuelRules1_004'
 # ../.source/ATimeofWar_Eng_v8.cs:19137
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:19141
 - type: 'text'
-  # ../en-US.restext:135 | "**The decision was clear ..."
+  # ../en-US.restext:136 | "**The decision was clear ..."
   value: 'restext://Heading_DecisionWasClear'
 # ../.source/ATimeofWar_Eng_v8.cs:19143
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:19146
 - type: 'link'
-  # ../en-US.restext:1581 | "I chose a battle of wits."
+  # ../en-US.restext:1582 | "I chose a battle of wits."
   label: 'restext://DuelRules1_005'
   target: 'AcceptDuel1' # ./00180-AcceptDuel1.mws.yaml
   snapshot: true
@@ -51,7 +51,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:19150
 - type: 'link'
-  # ../en-US.restext:1582 | "I chose pistols at dawn."
+  # ../en-US.restext:1583 | "I chose pistols at dawn."
   label: 'restext://DuelRules1_007'
   target: 'AcceptDuel1' # ./00180-AcceptDuel1.mws.yaml
   snapshot: true
@@ -59,18 +59,18 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:19168
   - type: 'assign'
     var: 'dueltype'
-    # ../en-US.restext:1583 | "pistols"
+    # ../en-US.restext:1584 | "pistols"
     expr: '"restext://DuelRules1_008"'
 # ../.source/ATimeofWar_Eng_v8.cs:19151
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:19153
 - type: 'text'
-  # ../en-US.restext:1584 | "Or perhaps, I chose to re..."
+  # ../en-US.restext:1585 | "Or perhaps, I chose to re..."
   value: 'restext://DuelRules1_009'
 # ../.source/ATimeofWar_Eng_v8.cs:19154
 - type: 'link'
-  # ../en-US.restext:1585 | "send them a strongly-word..."
+  # ../en-US.restext:1586 | "send them a strongly-word..."
   label: 'restext://DuelRules1_010'
   target: 'DuelDenounce1' # ./00179-DuelDenounce1.mws.yaml
   snapshot: true

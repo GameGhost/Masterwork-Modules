@@ -12,7 +12,7 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:89 | "Please enter the epic nam..."
+      # ../en-US.restext:90 | "Please enter the epic nam..."
       value: 'restext://Directive_EnterWarriorName'
     - type: 'input'
       label: ''
@@ -37,32 +37,32 @@ nodes:
     expr: 'warriorA.replace("_1", "")'
   # ../.source/FearoftheUnknown_Eng_v15.cs:25695
   - type: 'text'
-    # ../en-US.restext:1896 | "**{_rpl_Player1Statsfin_0}**"
+    # ../en-US.restext:1895 | "**{_rpl_Player1Statsfin_0}**"
     value: 'restext://Player1Statsfin_002'
     lets:
     - '_rpl_Player1Statsfin_0'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25696
 - type: 'text'
-  # ../en-US.restext:160 | " **Complete**"
+  # ../en-US.restext:161 | " **Complete**"
   value: 'restext://Heading_Complete_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25699
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25701
 - type: 'text'
-  # ../en-US.restext:1897 | "Agility: **{agiA}**"
+  # ../en-US.restext:1896 | "Agility: **{agiA}**"
   value: 'restext://Player1Statsfin_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25706
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25707
 - type: 'text'
-  # ../en-US.restext:1898 | "Strength: **{strA}**"
+  # ../en-US.restext:1897 | "Strength: **{strA}**"
   value: 'restext://Player1Statsfin_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25712
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25713
 - type: 'text'
-  # ../en-US.restext:1899 | "Life: **{hitA}**"
+  # ../en-US.restext:1898 | "Life: **{hitA}**"
   value: 'restext://Player1Statsfin_006'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25718
 - type: 'break'
@@ -76,7 +76,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25726
 - type: 'text'
-  # ../en-US.restext:95 | "If this is correct, please "
+  # ../en-US.restext:96 | "If this is correct, please "
   value: 'restext://Directive_IfCorrectPlease_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25727
 - type: 'link'
@@ -89,7 +89,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25731
 - type: 'text'
-  # ../en-US.restext:96 | "If this is in error, please "
+  # ../en-US.restext:97 | "If this is in error, please "
   value: 'restext://Directive_IfErrorPlease_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25732
 - type: 'link'

@@ -2,60 +2,60 @@
 ---
 format: 'mws/0.4'
 passage_id: '2PCoWEvent'
-# ../en-US.restext:128 | "BID"
+# ../en-US.restext:129 | "BID"
 title: 'restext://Heading_BidCaps'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:25892
 - type: 'text'
-  # ../en-US.restext:240 | "Special Event"
+  # ../en-US.restext:239 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/ATimeofWar_Eng_v8.cs:25893
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:25894
 - type: 'text'
-  # ../en-US.restext:59 | "Both players take all the..."
+  # ../en-US.restext:60 | "Both players take all the..."
   value: 'restext://Directive_BothPlayersBidMoney_Then'
 # ../.source/ATimeofWar_Eng_v8.cs:25896
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:25898
 - type: 'text'
-  # ../en-US.restext:2140 | "Once both players are rea..."
+  # ../en-US.restext:2141 | "Once both players are rea..."
   value: 'restext://_2PCoWEvent_003'
 # ../.source/ATimeofWar_Eng_v8.cs:25917
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:25921
 - type: 'text'
-  # ../en-US.restext:2141 | "**Benevolence** will rewa..."
+  # ../en-US.restext:2142 | "**Benevolence** will rewa..."
   value: 'restext://_2PCoWEvent_004'
 # ../.source/ATimeofWar_Eng_v8.cs:25928
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:25931
 - type: 'text'
-  # ../en-US.restext:2142 | "**Iron Fist** will reward..."
+  # ../en-US.restext:2143 | "**Iron Fist** will reward..."
   value: 'restext://_2PCoWEvent_005'
 # ../.source/ATimeofWar_Eng_v8.cs:25938
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:25940
 - type: 'text'
-  # ../en-US.restext:2143 | "This will provide a **{de..."
+  # ../en-US.restext:2144 | "This will provide a **{de..."
   value: 'restext://_2PCoWEvent_006'
 # ../.source/ATimeofWar_Eng_v8.cs:25961
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:25964
 - type: 'text'
-  # ../en-US.restext:2144 | "_A tied vote will result ..."
+  # ../en-US.restext:2145 | "_A tied vote will result ..."
   value: 'restext://_2PCoWEvent_007'
 # ../.source/ATimeofWar_Eng_v8.cs:25972
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:25974
 - type: 'text'
-  # ../en-US.restext:71 | "Only the player who wins ..."
+  # ../en-US.restext:72 | "Only the player who wins ..."
   value: 'restext://Directive_ElectionWinnerPaysBid'
 # ../.source/ATimeofWar_Eng_v8.cs:25976
 - type: 'break'
@@ -63,7 +63,7 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:25980
 - type: 'popup'
   layout: 'countdown_instructions'
-  # ../en-US.restext:2145 | "Click to complete the bid..."
+  # ../en-US.restext:2146 | "Click to complete the bid..."
   label: 'restext://_2PCoWEvent_009'
   content:
   - type: 'text'
@@ -83,22 +83,22 @@ nodes:
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:52 | "3"
+      # ../en-US.restext:53 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:53 | "2"
+      # ../en-US.restext:54 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:50 | "1"
+      # ../en-US.restext:51 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:51 | "REVEAL"
+      # ../en-US.restext:52 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:51 | "REVEAL"
+    # ../en-US.restext:52 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: '2PCoWRes' # ./00265-2PCoWRes.mws.yaml
     snapshot: false

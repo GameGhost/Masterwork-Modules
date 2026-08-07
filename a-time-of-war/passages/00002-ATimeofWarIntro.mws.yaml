@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ATimeofWarIntro'
-# ../en-US.restext:305 | "Taking Sides"
+# ../en-US.restext:304 | "Taking Sides"
 title: 'restext://ATimeofWarIntro_001'
-# ../en-US.restext:306 | "GENERATION I"
+# ../en-US.restext:305 | "GENERATION I"
 subtitle: 'restext://ATimeofWarIntro_002'
 tags:
 - 'INTRO'
@@ -12,49 +12,49 @@ layout: 'introduction'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:1294
 - type: 'text'
-  # ../en-US.restext:307 | "My father was a genius! I..."
+  # ../en-US.restext:306 | "My father was a genius! I..."
   value: 'restext://ATimeofWarIntro_003'
 # ../.source/ATimeofWar_Eng_v8.cs:1295
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:1297
 - type: 'text'
-  # ../en-US.restext:308 | "When I first arrived at m..."
+  # ../en-US.restext:307 | "When I first arrived at m..."
   value: 'restext://ATimeofWarIntro_004'
 # ../.source/ATimeofWar_Eng_v8.cs:1298
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:1300
 - type: 'text'
-  # ../en-US.restext:309 | "But, it was this same dar..."
+  # ../en-US.restext:308 | "But, it was this same dar..."
   value: 'restext://ATimeofWarIntro_005'
 # ../.source/ATimeofWar_Eng_v8.cs:1301
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:1303
 - type: 'text'
-  # ../en-US.restext:310 | "Yet even after the disqui..."
+  # ../en-US.restext:309 | "Yet even after the disqui..."
   value: 'restext://ATimeofWarIntro_006'
 # ../.source/ATimeofWar_Eng_v8.cs:1304
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:1306
 - type: 'text'
-  # ../en-US.restext:311 | "It was my spouse, using m..."
+  # ../en-US.restext:310 | "It was my spouse, using m..."
   value: 'restext://ATimeofWarIntro_007'
 # ../.source/ATimeofWar_Eng_v8.cs:1307
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:1309
 - type: 'text'
-  # ../en-US.restext:312 | "I began to realize the po..."
+  # ../en-US.restext:311 | "I began to realize the po..."
   value: 'restext://ATimeofWarIntro_008'
 # ../.source/ATimeofWar_Eng_v8.cs:1310
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:1312
 - type: 'text'
-  # ../en-US.restext:313 | "I would not repeat this e..."
+  # ../en-US.restext:312 | "I would not repeat this e..."
   value: 'restext://ATimeofWarIntro_009'
 # ../.source/ATimeofWar_Eng_v8.cs:1313
 - type: 'break'
@@ -76,48 +76,48 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:1319
 - type: 'assign'
   var: 'warwinner'
-  # ../en-US.restext:273 | Title_Separatists | "Separatists"
-  # ../en-US.restext:283 | Title_UnifiedMonarchists | "Unified Monarchists"
+  # ../en-US.restext:272 | Title_Separatists | "Separatists"
+  # ../en-US.restext:282 | Title_UnifiedMonarchists | "Unified Monarchists"
   expr: '["restext://Title_Separatists", "restext://Title_UnifiedMonarchists"].shuffled("ATimeofWarIntro_1")[0]'
 # ../.source/ATimeofWar_Eng_v8.cs:1320
 - type: 'conditional'
-  # ../en-US.restext:273 | "Separatists"
+  # ../en-US.restext:272 | "Separatists"
   if: 'warwinner == "restext://Title_Separatists"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:1322
   - type: 'assign'
     var: 'crest'
-    # ../en-US.restext:315 | "Sickle"
+    # ../en-US.restext:314 | "Sickle"
     expr: '"restext://ATimeofWarIntro_014"'
   # ../.source/ATimeofWar_Eng_v8.cs:1323
   - type: 'assign'
     var: 'warloser'
-    # ../en-US.restext:283 | "Unified Monarchists"
+    # ../en-US.restext:282 | "Unified Monarchists"
     expr: '"restext://Title_UnifiedMonarchists"'
   # ../.source/ATimeofWar_Eng_v8.cs:1324
   - type: 'assign'
     var: 'figure'
-    # ../en-US.restext:314 | "Shield"
+    # ../en-US.restext:313 | "Shield"
     expr: '"restext://ATimeofWarIntro_013"'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:1328
   - type: 'assign'
     var: 'crest'
-    # ../en-US.restext:314 | "Shield"
+    # ../en-US.restext:313 | "Shield"
     expr: '"restext://ATimeofWarIntro_013"'
   # ../.source/ATimeofWar_Eng_v8.cs:1329
   - type: 'assign'
     var: 'warloser'
-    # ../en-US.restext:273 | "Separatists"
+    # ../en-US.restext:272 | "Separatists"
     expr: '"restext://Title_Separatists"'
   # ../.source/ATimeofWar_Eng_v8.cs:1330
   - type: 'assign'
     var: 'figure'
-    # ../en-US.restext:315 | "Sickle"
+    # ../en-US.restext:314 | "Sickle"
     expr: '"restext://ATimeofWarIntro_014"'
 # ../.source/ATimeofWar_Eng_v8.cs:1333
 - type: 'conditional'
-  # ../en-US.restext:273 | "Separatists"
+  # ../en-US.restext:272 | "Separatists"
   if: 'warwinner == "restext://Title_Separatists"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:1335

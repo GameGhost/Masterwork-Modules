@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'DetEffect3'
-# ../en-US.restext:339 | "Minor Deleterious Effect"
+# ../en-US.restext:338 | "Minor Deleterious Effect"
 title: 'restext://Title_MinorDeleteriousEffect'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:10447
 - type: 'text'
-  # ../en-US.restext:1087 | "All and all, the continue..."
+  # ../en-US.restext:1086 | "All and all, the continue..."
   value: 'restext://DetEffect3_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:10448
 - type: 'break'
@@ -19,7 +19,7 @@ nodes:
   # ../en-US.restext:39 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'DeteriorationHub' # ./00090-DeteriorationHub.mws.yaml
-  # ../en-US.restext:356 | "Close"
+  # ../en-US.restext:355 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -38,7 +38,7 @@ nodes:
     expr: 'rand_between(1, 2, "DetEffect3_0")'
   # ../.source/TheCostofDisease_Eng_v10.cs:10475
   - type: 'text'
-    # ../en-US.restext:1088 | "Any player with an **Immo..."
+    # ../en-US.restext:1087 | "Any player with an **Immo..."
     value: 'restext://DetEffect3_002'
     lets:
     - '_rnd_DetEffect3_0'

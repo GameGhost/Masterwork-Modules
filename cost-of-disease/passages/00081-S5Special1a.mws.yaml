@@ -2,52 +2,52 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S5Special1a'
-# ../en-US.restext:954 | "A Bid for Mayor"
+# ../en-US.restext:953 | "A Bid for Mayor"
 title: 'restext://S5Special1a_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:9270
 - type: 'text'
-  # ../en-US.restext:315 | "Special Event"
+  # ../en-US.restext:314 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/TheCostofDisease_Eng_v10.cs:9272
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:9276
 - type: 'text'
-  # ../en-US.restext:955 | "**SPECIAL EVENT**"
+  # ../en-US.restext:954 | "**SPECIAL EVENT**"
   value: 'restext://S5Special1a_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:9278
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:9279
 - type: 'text'
-  # ../en-US.restext:956 | "All players take all thei..."
+  # ../en-US.restext:955 | "All players take all thei..."
   value: 'restext://S5Special1a_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:9281
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:9283
 - type: 'text'
-  # ../en-US.restext:957 | "Once all players are read..."
+  # ../en-US.restext:956 | "Once all players are read..."
   value: 'restext://S5Special1a_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:9290
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:9292
 - type: 'text'
-  # ../en-US.restext:116 | "Only the player that wins..."
+  # ../en-US.restext:117 | "Only the player that wins..."
   value: 'restext://Election_WinnerPaysBid_Rule'
 # ../.source/TheCostofDisease_Eng_v10.cs:9294
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:9298
 - type: 'text'
-  # ../en-US.restext:958 | "**Once you are ready,** "
+  # ../en-US.restext:957 | "**Once you are ready,** "
   value: 'restext://S5Special1a_007'
 # ../.source/TheCostofDisease_Eng_v10.cs:9301
 - type: 'popup'
   layout: 'countdown_instructions'
-  # ../en-US.restext:959 | "click to start the bid..."
+  # ../en-US.restext:958 | "click to start the bid..."
   label: 'restext://S5Special1a_008'
   content:
   - type: 'text'
@@ -67,22 +67,22 @@ nodes:
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:74 | "3"
+      # ../en-US.restext:75 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:75 | "2"
+      # ../en-US.restext:76 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:72 | "1"
+      # ../en-US.restext:73 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:73 | "REVEAL"
+      # ../en-US.restext:74 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:73 | "REVEAL"
+    # ../en-US.restext:74 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: 'S5Special1b' # ./00065-S5Special1b.mws.yaml
     snapshot: false

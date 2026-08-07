@@ -12,12 +12,12 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:1152 | "Enter the secret password..."
+      # ../en-US.restext:1151 | "Enter the secret password..."
       value: 'restext://EnvPasscode_001'
     - type: 'input'
       label: ''
       var: 'password'
-    # ../en-US.restext:358 | "Continue"
+    # ../en-US.restext:357 | "Continue"
     okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'

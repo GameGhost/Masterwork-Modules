@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Warning2time'
-# ../en-US.restext:269 | "Not Again"
+# ../en-US.restext:268 | "Not Again"
 title: 'restext://Title_NotAgain'
-# ../en-US.restext:264 | "Middle Years"
+# ../en-US.restext:263 | "Middle Years"
 subtitle: 'restext://Title_MiddleYears'
 tags:
 - 'HUB'
@@ -21,7 +21,7 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:7552
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:285 | "Accept"
+    # ../en-US.restext:284 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/ATimeofWar_Eng_v8.cs:7556
@@ -31,7 +31,7 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:7558
     - type: 'text'
-      # ../en-US.restext:109 | "Turn to page **16** of th..."
+      # ../en-US.restext:110 | "Turn to page **16** of th..."
       value: 'restext://Directive_TurnToPage16'
   # ../.source/ATimeofWar_Eng_v8.cs:7565
   - type: 'break'
@@ -48,7 +48,7 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:7580
     - type: 'text'
-      # ../en-US.restext:692 | "When a player completes a..."
+      # ../en-US.restext:691 | "When a player completes a..."
       value: 'restext://Warning2time_002'
     # ../.source/ATimeofWar_Eng_v8.cs:7581
     - type: 'link'
@@ -67,7 +67,7 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:7596
   - type: 'text'
-    # ../en-US.restext:107 | "With the timeline somewha..."
+    # ../en-US.restext:108 | "With the timeline somewha..."
     value: 'restext://Directive_TimelineStabilizedUtopianBonus'
   # ../.source/ATimeofWar_Eng_v8.cs:7608
   - type: 'break'
@@ -78,7 +78,7 @@ nodes:
     # ../en-US.restext:31 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
     target: '${rumor2 == "visited" ? "OldManToken" : "Warning3time"}' # ./00099-OldManToken.mws.yaml, ./00060-Warning3time.mws.yaml
-    # ../en-US.restext:289 | "End of Round"
+    # ../en-US.restext:288 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -87,10 +87,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:234 | "The Middle Years of the T..."
+      # ../en-US.restext:233 | "The Middle Years of the T..."
       value: 'restext://Round_GenerationIII_MiddleEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:236 | "Then, perform all Start o..."
+      # ../en-US.restext:235 | "Then, perform all Start o..."
       value: 'restext://Round_StartLateYears_Rule'

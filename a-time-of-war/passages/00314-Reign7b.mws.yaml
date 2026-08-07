@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Reign7b'
-# ../en-US.restext:2393 | "Delayed Thanks"
+# ../en-US.restext:2394 | "Delayed Thanks"
 title: 'restext://Reign7b_001'
 tags:
 - 'revised'
@@ -10,7 +10,7 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:28925
 - type: 'text'
-  # ../en-US.restext:2394 | "The advisor, when he resu..."
+  # ../en-US.restext:2395 | "The advisor, when he resu..."
   value: 'restext://Reign7b_002'
 # ../.source/ATimeofWar_Eng_v8.cs:28928
 - type: 'break'
@@ -21,7 +21,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 16 ? "MonarchReign1" : round == 17 ? "MonarchReign2" : "MonarchReign3"}' # ./00043-MonarchReign1.mws.yaml, ./00068-MonarchReign2.mws.yaml, ./00069-MonarchReign3.mws.yaml
-  # ../en-US.restext:286 | "Close"
+  # ../en-US.restext:285 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -32,12 +32,12 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:28962
   - type: 'text'
-    # ../en-US.restext:63 | "{crownL} {ch1}"
+    # ../en-US.restext:64 | "{crownL} {ch1}"
     value: 'restext://Directive_CrownLCh1'
   # ../.source/ATimeofWar_Eng_v8.cs:28965
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:28969
   - type: 'text'
-    # ../en-US.restext:65 | "_Reminder: The {icon:s3_c..."
+    # ../en-US.restext:66 | "_Reminder: The {icon:s3_c..."
     value: 'restext://Directive_CrownTokenMovementReminder'

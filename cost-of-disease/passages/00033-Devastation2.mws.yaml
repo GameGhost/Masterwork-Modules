@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Devastation2'
-# ../en-US.restext:330 | "Devastation"
+# ../en-US.restext:329 | "Devastation"
 title: 'restext://Title_Devastation'
-# ../en-US.restext:338 | "Middle Years"
+# ../en-US.restext:337 | "Middle Years"
 subtitle: 'restext://Title_MiddleYears'
 tags:
 - 'HUB'
@@ -21,7 +21,7 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:4617
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:355 | "Accept"
+    # ../en-US.restext:354 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/TheCostofDisease_Eng_v10.cs:4621
@@ -31,40 +31,40 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:4623
     - type: 'text'
-      # ../en-US.restext:621 | "Turn to page **14** of th..."
+      # ../en-US.restext:620 | "Turn to page **14** of th..."
       value: 'restext://Devastation2_001'
     # ../.source/TheCostofDisease_Eng_v10.cs:4636
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:4638
     - type: 'text'
-      # ../en-US.restext:622 | "Place a storybook token o..."
+      # ../en-US.restext:621 | "Place a storybook token o..."
       value: 'restext://Devastation2_002'
     # ../.source/TheCostofDisease_Eng_v10.cs:4645
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:4647
     - type: 'text'
-      # ../en-US.restext:623 | "Place the Building marked..."
+      # ../en-US.restext:622 | "Place the Building marked..."
       value: 'restext://Devastation2_003'
     # ../.source/TheCostofDisease_Eng_v10.cs:4654
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:4655
     - type: 'text'
-      # ../en-US.restext:624 | "Place the Building marked..."
+      # ../en-US.restext:623 | "Place the Building marked..."
       value: 'restext://Devastation2_004'
     # ../.source/TheCostofDisease_Eng_v10.cs:4662
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:4663
     - type: 'text'
-      # ../en-US.restext:625 | "Place the Building marked..."
+      # ../en-US.restext:624 | "Place the Building marked..."
       value: 'restext://Devastation2_005'
     # ../.source/TheCostofDisease_Eng_v10.cs:4670
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:4672
     - type: 'text'
-      # ../en-US.restext:626 | "Return the remaining tile..."
+      # ../en-US.restext:625 | "Return the remaining tile..."
       value: 'restext://Devastation2_006'
 # ../.source/TheCostofDisease_Eng_v10.cs:4675
 - type: 'break'
@@ -77,14 +77,14 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:4689
   - type: 'text'
-    # ../en-US.restext:200 | "When a player visits one ..."
+    # ../en-US.restext:199 | "When a player visits one ..."
     value: 'restext://Investigate_SuspiciousLocation_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:4690
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:4693
   - type: 'link'
-    # ../en-US.restext:197 | "Investigate {ba}"
+    # ../en-US.restext:196 | "Investigate {ba}"
     label: 'restext://Investigate_A'
     target: 'BuildingSignin' # ./00111-BuildingSignin.mws.yaml
     snapshot: true
@@ -98,7 +98,7 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:4697
   - type: 'link'
-    # ../en-US.restext:198 | "Investigate {bb}"
+    # ../en-US.restext:197 | "Investigate {bb}"
     label: 'restext://Investigate_B'
     target: 'BuildingSignin' # ./00111-BuildingSignin.mws.yaml
     snapshot: true
@@ -112,7 +112,7 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:4701
   - type: 'link'
-    # ../en-US.restext:199 | "Investigate {bc}"
+    # ../en-US.restext:198 | "Investigate {bc}"
     label: 'restext://Investigate_C'
     target: 'BuildingSignin' # ./00111-BuildingSignin.mws.yaml
     snapshot: true
@@ -139,14 +139,14 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:4732
   - type: 'text'
-    # ../en-US.restext:112 | "A \"Hereditary Disease\" ..."
+    # ../en-US.restext:113 | "A \"Hereditary Disease\" ..."
     value: 'restext://Disease_HereditaryExperiment_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:4741
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:4743
   - type: 'text'
-    # ../en-US.restext:111 | "When a player completes t..."
+    # ../en-US.restext:112 | "When a player completes t..."
     value: 'restext://Disease_HereditaryExperiment_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:4744
   - type: 'link'
@@ -165,7 +165,7 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:4760
   - type: 'text'
-    # ../en-US.restext:316 | "When a player visits the ..."
+    # ../en-US.restext:315 | "When a player visits the ..."
     value: 'restext://Stables_VisitLead'
   # ../.source/TheCostofDisease_Eng_v10.cs:4761
   - type: 'link'
@@ -175,7 +175,7 @@ nodes:
     snapshot: true
   # ../.source/TheCostofDisease_Eng_v10.cs:4762
   - type: 'text'
-    # ../en-US.restext:120 | " _If you have joined a fa..."
+    # ../en-US.restext:121 | " _If you have joined a fa..."
     value: 'restext://Faction_NoEffectIfJoined'
   # ../.source/TheCostofDisease_Eng_v10.cs:4767
   - type: 'break'
@@ -183,10 +183,10 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:4771
   - type: 'popup'
     layout: 'end_of_round'
-    # ../en-US.restext:627 | "Click here at the end of ..."
+    # ../en-US.restext:626 | "Click here at the end of ..."
     label: 'restext://Devastation2_007'
     target: 'DevEventCure' # ./00101-DevEventCure.mws.yaml
-    # ../en-US.restext:360 | "End of Round"
+    # ../en-US.restext:359 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -195,10 +195,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:311 | "The Middle Years of the S..."
+      # ../en-US.restext:310 | "The Middle Years of the S..."
       value: 'restext://Round_GenerationII_MiddleEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:312 | "Then, perform all Start o..."
+      # ../en-US.restext:311 | "Then, perform all Start o..."
       value: 'restext://Round_StartLateYears_Rule'

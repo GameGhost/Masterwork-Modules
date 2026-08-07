@@ -2,68 +2,68 @@
 ---
 format: 'mws/0.4'
 passage_id: '2p-FrenzyALT'
-# ../en-US.restext:2699 | "Frenzy Decision"
+# ../en-US.restext:2700 | "Frenzy Decision"
 title: 'restext://_2p_FrenzyALT_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:33791
 - type: 'text'
-  # ../en-US.restext:315 | "Special Event"
+  # ../en-US.restext:314 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/TheCostofDisease_Eng_v10.cs:33792
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:33793
 - type: 'text'
-  # ../en-US.restext:251 | "The Order suggested a sin..."
+  # ../en-US.restext:250 | "The Order suggested a sin..."
   value: 'restext://Narrative_FrenzyProposal'
 # ../.source/TheCostofDisease_Eng_v10.cs:33794
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:33796
 - type: 'text'
-  # ../en-US.restext:238 | "Given the scientific expe..."
+  # ../en-US.restext:237 | "Given the scientific expe..."
   value: 'restext://Narrative_ConsultedCousins'
 # ../.source/TheCostofDisease_Eng_v10.cs:33799
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:33803
 - type: 'text'
-  # ../en-US.restext:2700 | "**BID**"
+  # ../en-US.restext:2701 | "**BID**"
   value: 'restext://_2p_FrenzyALT_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:33805
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:33806
 - type: 'text'
-  # ../en-US.restext:2701 | "All players take all of t..."
+  # ../en-US.restext:2702 | "All players take all of t..."
   value: 'restext://_2p_FrenzyALT_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:33808
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:33812
 - type: 'text'
-  # ../en-US.restext:2702 | "**Encouraging** the Frenz..."
+  # ../en-US.restext:2703 | "**Encouraging** the Frenz..."
   value: 'restext://_2p_FrenzyALT_006'
 # ../.source/TheCostofDisease_Eng_v10.cs:33817
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:33821
 - type: 'text'
-  # ../en-US.restext:2703 | "**Not encouraging** the F..."
+  # ../en-US.restext:2704 | "**Not encouraging** the F..."
   value: 'restext://_2p_FrenzyALT_007'
 # ../.source/TheCostofDisease_Eng_v10.cs:33825
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:33827
 - type: 'text'
-  # ../en-US.restext:2704 | "Once all players are read..."
+  # ../en-US.restext:2705 | "Once all players are read..."
   value: 'restext://_2p_FrenzyALT_008'
 # ../.source/TheCostofDisease_Eng_v10.cs:33839
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:33841
 - type: 'text'
-  # ../en-US.restext:116 | "Only the player that wins..."
+  # ../en-US.restext:117 | "Only the player that wins..."
   value: 'restext://Election_WinnerPaysBid_Rule'
 # ../.source/TheCostofDisease_Eng_v10.cs:33843
 - type: 'break'
@@ -91,22 +91,22 @@ nodes:
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:74 | "3"
+      # ../en-US.restext:75 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:75 | "2"
+      # ../en-US.restext:76 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:72 | "1"
+      # ../en-US.restext:73 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:73 | "REVEAL"
+      # ../en-US.restext:74 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:73 | "REVEAL"
+    # ../en-US.restext:74 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: '2p-FrenzyALTb' # ./00344-2p-FrenzyALTb.mws.yaml
     snapshot: false

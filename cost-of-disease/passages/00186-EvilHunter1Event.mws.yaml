@@ -2,25 +2,25 @@
 ---
 format: 'mws/0.4'
 passage_id: 'EvilHunter1Event'
-# ../en-US.restext:1672 | "Preposterous"
+# ../en-US.restext:1671 | "Preposterous"
 title: 'restext://EvilHunter1Event_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:21714
 - type: 'text'
-  # ../en-US.restext:315 | "Special Event"
+  # ../en-US.restext:314 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/TheCostofDisease_Eng_v10.cs:21715
 - type: 'text'
-  # ../en-US.restext:1673 | "And how could they be sur..."
+  # ../en-US.restext:1672 | "And how could they be sur..."
   value: 'restext://EvilHunter1Event_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:21720
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:21722
 - type: 'text'
-  # ../en-US.restext:1674 | "But, perhaps a sense of s..."
+  # ../en-US.restext:1673 | "But, perhaps a sense of s..."
   value: 'restext://EvilHunter1Event_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:21723
 - type: 'break'
@@ -33,27 +33,27 @@ nodes:
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:21730
 - type: 'text'
-  # ../en-US.restext:1675 | "All players take their Vo..."
+  # ../en-US.restext:1674 | "All players take their Vo..."
   value: 'restext://EvilHunter1Event_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:21733
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:21735
 - type: 'text'
-  # ../en-US.restext:1676 | "A **Yay** vote is a vote ..."
+  # ../en-US.restext:1675 | "A **Yay** vote is a vote ..."
   value: 'restext://EvilHunter1Event_006'
 # ../.source/TheCostofDisease_Eng_v10.cs:21748
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:21749
 - type: 'text'
-  # ../en-US.restext:1677 | "A **Nay** vote is a vote ..."
+  # ../en-US.restext:1676 | "A **Nay** vote is a vote ..."
   value: 'restext://EvilHunter1Event_007'
 # ../.source/TheCostofDisease_Eng_v10.cs:21761
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:21763
 - type: 'text'
-  # ../en-US.restext:373 | "When all players have cho..."
+  # ../en-US.restext:372 | "When all players have cho..."
   value: 'restext://Vote_TallyRule_A'
 # ../.source/TheCostofDisease_Eng_v10.cs:21769
 - type: 'break'
@@ -65,7 +65,7 @@ nodes:
   label: 'restext://Click_StartVote'
   content:
   - type: 'text'
-    # ../en-US.restext:378 | "Click on the 'Start Votin..."
+    # ../en-US.restext:377 | "Click on the 'Start Votin..."
     value: 'restext://Voting_Instructions'
   - type: 'break'
     style: 'paragraph'
@@ -76,27 +76,27 @@ nodes:
     style: 'paragraph'
   - type: 'popup'
     layout: 'countdown_action'
-    # ../en-US.restext:379 | "Start Voting"
+    # ../en-US.restext:378 | "Start Voting"
     label: 'restext://Voting_StartButton'
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:74 | "3"
+      # ../en-US.restext:75 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:75 | "2"
+      # ../en-US.restext:76 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:72 | "1"
+      # ../en-US.restext:73 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:73 | "REVEAL"
+      # ../en-US.restext:74 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:73 | "REVEAL"
+    # ../en-US.restext:74 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: 'EvilHunter1Event2' # ./00351-EvilHunter1Event2.mws.yaml
     snapshot: false

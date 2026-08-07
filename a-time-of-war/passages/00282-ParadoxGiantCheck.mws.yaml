@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ParadoxGiantCheck'
-# ../en-US.restext:2174 | "Giant Masterwork Check"
+# ../en-US.restext:2175 | "Giant Masterwork Check"
 title: 'restext://ParadoxGiantCheck_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:26325
 - type: 'text'
-  # ../en-US.restext:2175 | "How many players complete..."
+  # ../en-US.restext:2176 | "How many players complete..."
   value: 'restext://ParadoxGiantCheck_002'
 # ../.source/ATimeofWar_Eng_v8.cs:26331
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:26334
 - type: 'link'
-  # ../en-US.restext:2176 | "0"
+  # ../en-US.restext:2177 | "0"
   label: 'restext://ParadoxGiantCheck_003'
   target: 'ParadoxEvent' # ./00074-ParadoxEvent.mws.yaml
   snapshot: true
@@ -29,7 +29,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:26338
 - type: 'link'
-  # ../en-US.restext:50 | "1"
+  # ../en-US.restext:51 | "1"
   label: 'restext://Countdown_One'
   target: 'ParadoxEvent' # ./00074-ParadoxEvent.mws.yaml
   snapshot: true
@@ -43,7 +43,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:26342
 - type: 'link'
-  # ../en-US.restext:53 | "2"
+  # ../en-US.restext:54 | "2"
   label: 'restext://Countdown_Two'
   target: 'ParadoxEvent' # ./00074-ParadoxEvent.mws.yaml
   snapshot: true
@@ -61,7 +61,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:26348
   - type: 'link'
-    # ../en-US.restext:52 | "3"
+    # ../en-US.restext:53 | "3"
     label: 'restext://Countdown_Three'
     target: 'ParadoxEvent' # ./00074-ParadoxEvent.mws.yaml
     snapshot: true
@@ -79,7 +79,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:26355
   - type: 'link'
-    # ../en-US.restext:2177 | "4"
+    # ../en-US.restext:2178 | "4"
     label: 'restext://ParadoxGiantCheck_004'
     target: 'ParadoxEvent' # ./00074-ParadoxEvent.mws.yaml
     snapshot: true
@@ -97,7 +97,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:26362
   - type: 'link'
-    # ../en-US.restext:2178 | "5"
+    # ../en-US.restext:2179 | "5"
     label: 'restext://ParadoxGiantCheck_005'
     target: 'ParadoxEvent' # ./00074-ParadoxEvent.mws.yaml
     snapshot: true
