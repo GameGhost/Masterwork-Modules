@@ -47,6 +47,7 @@ Click_ToPacifyTimestream=click here to pacify the timestream.
 Click_ToReceiveSpecialBonus=click here to receive a special bonus.
 Click_WheneverVisitTownHall=Click here whenever you visit the Town Hall.
 Common_001=Gift of Silence
+Common_002=Suspicions Confirmed
 Common_VersionOnePointZero=v1.0
 Countdown_One=1
 Countdown_Reveal=REVEAL
@@ -160,7 +161,6 @@ Heading_ScienceAtAnyCost=**Science At any Cost**
 Heading_ScienceIsStressful=**Science is Stressful**
 Heading_SecondRoundPledgeOfSupport=**Second Round - Pledge of Support**
 Heading_SeparatistAllegiance=**Separatist Allegiance**
-Heading_ServiceRequired=**Service Required**
 Heading_StorybookToken_ParadoxExplanation={icon:storybooktoken} **Paradox Explanation**
 Heading_StorybookToken_ParadoxicalMendingReward={icon:storybooktoken} **Paradoxical Mending Reward**
 Heading_StorybookToken_RepairTimeMachine={icon:storybooktoken} **Repair the Time Machine**
@@ -470,7 +470,7 @@ ResolutionofEvent_007= and **gain 2 Resources of their choice**
 ResolutionofEvent_008=All players who voted against building the Barracks receive a Flag token and flip it {warloser} side up
 
 # passages/00022-AMessenger.mws.yaml
-AMessenger_001=**A Messenger Arrives**
+AMessenger_001=A Messenger Arrives
 AMessenger_003=On a Saturday afternoon, I was hustled to the entryway by my caretaker. A young messenger was nervously tapping her leather boots against the stone. In her left hand was a small figurine in the shape of a {crest}, which I had left by the windowsill. Her eyes were scanning the room and she was visibly startled by our speedy return. The caretaker muttered his apologies, calling her a thief, but I calmed his nerves quickly.
 AMessenger_004=**The messenger turned and spoke to the player with the {crest} token.**
 
@@ -573,11 +573,9 @@ ResistSides_006=In turn order, each player who built at least **{_rnd_ResistSide
 ResistSides_007=Once all players have chosen, 
 
 # passages/00040-ResistEnd.mws.yaml
-ResistEnd_001=**Resistance Quashed**
-ResistEnd_002=With **so few buildings destroyed**, the message was clear that the resistance was weak. My final years confirmed a return to normalcy as the efforts of the resisting faction within the region were suppressed and the {warwinner} remained vigilant and victorious.
-ResistEnd_003=It was just as I had planned. What a tragedy that mortality dims our eyes just as the dawn's light crests the hills of innovation. I only wish that the next generation knew how I suffered to ensure their triumph.
-ResistEnd_006=**Victory for the Resistance**
-ResistEnd_007=With **{wardestroy} buildings destroyed**, the message was clear that they were not wanted. Driven by the will of the people and undoubtedly terrified by the enormity of my scientific contributions, the bloodied and beaten faction that had controlled the town limped into the distance leaving the {warloser} to celebrate their victory.
+ResistEnd_001=With **so few buildings destroyed**, the message was clear that the resistance was weak. My final years confirmed a return to normalcy as the efforts of the resisting faction within the region were suppressed and the {warwinner} remained vigilant and victorious.
+ResistEnd_002=It was just as I had planned. What a tragedy that mortality dims our eyes just as the dawn's light crests the hills of innovation. I only wish that the next generation knew how I suffered to ensure their triumph.
+ResistEnd_005=With **{wardestroy} buildings destroyed**, the message was clear that they were not wanted. Driven by the will of the people and undoubtedly terrified by the enormity of my scientific contributions, the bloodied and beaten faction that had controlled the town limped into the distance leaving the {warloser} to celebrate their victory.
 
 # passages/00041-MonarchReignIntro.mws.yaml
 MonarchReignIntro_001=Heavy is the Crown
@@ -910,7 +908,7 @@ ParadoxFirst_003=I decided to improve upon them, and I knew just the thing that 
 ParadoxFirst_004=Retrieve the **Giant Masterwork** Experiments. Each player retrieves the matching Giant version of their Masterwork and returns their original Masterwork to the box. Any newly drawn Masterworks will now be chosen from their Giant versions.
 
 # passages/00094-Weapons.mws.yaml
-Weapons_001=**Weapon Cache**
+Weapons_001=Weapon Cache
 Weapons_002=If you have any {icon:s3_weapontoken} tokens remaining, **gain 1VP for each** {icon:s3_weapontoken} **token.**
 
 # passages/00095-OUTDATEDFirstPara.mws.yaml
@@ -1013,7 +1011,7 @@ MilitaryNo_006=**Draw 2 Experiments** from the deck(s) of your choice.
 MilitaryNo_007=Then, **gain a** {icon:s3_paradoxtoken} **token** and place it on one of your completed Experiments. _This Experiment counts as an incomplete Experiment and follows the_ {icon:s3_paradoxtoken} _token rules._
 
 # passages/00112-Warwarn.mws.yaml
-Warwarn_001=**WARNING**
+Warwarn_001=WARNING
 Warwarn_002=Remove all player pieces from the board when performing the End of the Generation as normal, but do **NOT** discard your completed Experiments. You will still choose a completed Experiment to Store, but keep all your other completed Experiments nearby. 
 
 # passages/00113-TimeWarp2.mws.yaml
@@ -1229,7 +1227,7 @@ RumorD6Confirm_004=From the azalea blossoms to the diversity of species found at
 RumorD6Confirm_005=Nothing could be more direct as an alluring investment than **money**. My family would not readily part with it without struggle, but to display it proudly as an advertisement for the locals was certainly an agreeable proposition.
 
 # passages/00145-GunsAnnouncement.mws.yaml
-GunsAnnouncement_001=**An Investment in {townname}**
+GunsAnnouncement_001=An Investment in {townname}
 GunsAnnouncement_002=Due to the influence of a member of our illustrious family, the town had decided on a sensible initiative to inflate their importance in the eyes of the monarchy. They determined that an effusive display of 
 GunsAnnouncement_003=the scholarly **knowledge**
 GunsAnnouncement_004=the bountiful **resources**
@@ -1383,14 +1381,12 @@ IntroMartial_Separatists_005=However, the influence of the throne was still abso
 IntroMartial_Separatists_006=Ah, to be left to one's own devices or to be famously scrutinized, reviled, and revered in equal measure! The decision weighed upon me so heavily that I could scarcely enjoy my afternoon pastries. Neither could the muffled wailing coming from the cellar laboratory nor the distant clattering of gunfire at night calm my weary mind. What direction should I choose to advance my most important scientific work? 
 
 # passages/00153-RoyalBarnCheck.mws.yaml
-RoyalBarnCheck_001=**Suspicions Confirmed**
 RoyalBarnCheck_002=The Unified Monarchists are furious to discover that one of our family has been consorting with the enemy for over a decade. I am adamant in my disapproval of my father's hidden grudge against the current government and I offer them access to all goods within, free of charge. I am forever a proud citizen of this nation and harbor absolutely no ill-feelings, nor grudges which will spitefully fester in my psyche for the remainder of my years.
 RoyalBarnCheck_003=**The player with the "Suspicious Barn" must flip it face-down until Game End Scoring. It will be scored as an Estate Upgrade, but it's ability can no longer be used.**
 
 # passages/00154-SeparatistBarnCheck.mws.yaml
-SeparatistBarnCheck_001=Suspicions Confirmed
-SeparatistBarnCheck_002=The Separatists were furious to discover that one of our family had been consorting with the enemy for over a decade. I was adamant in my disapproval of my father's hidden grudge against the current government and I offered them access to all goods within, free of charge. I am forever a proud citizen of this nation and harbor absolutely no ill-feelings nor grudges which could spitefully fester in my psyche for the remainder of my years.
-SeparatistBarnCheck_003=**The player with the "Suspicious Barn" must flip it face-down until Game End Scoring. It will be scored as an Estate Upgrade, but its ability can no longer be used.**
+SeparatistBarnCheck_001=The Separatists were furious to discover that one of our family had been consorting with the enemy for over a decade. I was adamant in my disapproval of my father's hidden grudge against the current government and I offered them access to all goods within, free of charge. I am forever a proud citizen of this nation and harbor absolutely no ill-feelings nor grudges which could spitefully fester in my psyche for the remainder of my years.
+SeparatistBarnCheck_002=**The player with the "Suspicious Barn" must flip it face-down until Game End Scoring. It will be scored as an Estate Upgrade, but its ability can no longer be used.**
 
 # passages/00155-1stCrownCons.mws.yaml
 _1stCrownCons_001=The Queen's Ire
@@ -1407,8 +1403,8 @@ RoyalDecreeExplain_013=Anytime you visit the **Royal Advisor** and pay $1, you w
 RoyalDecreeExplain_014=The player who performs the **most Decrees** will receive a bonus at the End of the Generation.
 
 # passages/00157-BarracksSimple1.mws.yaml
-BarracksSimple1_005=gains **{_rnd_BarracksSimple1_0}**{icon:creepy_icon}.
-BarracksSimple1_007=**must** immediately lose **{_rnd_BarracksSimple1_1}VP**.
+BarracksSimple1_004=gains **{_rnd_BarracksSimple1_0}**{icon:creepy_icon}.
+BarracksSimple1_006=**must** immediately lose **{_rnd_BarracksSimple1_1}VP**.
 
 # passages/00158-BarracksSimple2.mws.yaml
 BarracksSimple2_001=gains **{_rnd_BarracksSimple2_0}**{icon:creepy_icon}.
@@ -1619,35 +1615,32 @@ DuelResolution1_006=Click to begin the duel...
 DuelResolution1_010=Occult
 
 # passages/00183-DuelResolution1a.mws.yaml
-DuelResolution1a_001=**The Moment of Truth**
+DuelResolution1a_001={dueltype == "science" ? "{duelsci}" : "The Moment of Truth"}
 DuelResolution1a_002=At a distance of twenty paces, I turned and fired. I heard the report of two shots before a cloud of smoke blurred my vision. In my shocked state, I could not determine if this was two clear shots or the single bullet from my own chamber and the echo of its blast shattering the stillness of the morning.
-DuelResolution1a_003=**{duelsci}**
-DuelResolution1a_004=The scientific duel will be **{duelsci}**.
-DuelResolution1a_005={sabotagee1} and {playersabotage1} now count how many Levels they have moved their Journal Track forward in {duelsci}.
-DuelResolution1a_006=They then count how many of their completed Experiments (including stored) are of the type {duelsci}.
-DuelResolution1a_007=Each player adds these two numbers together to determine their total individual scientific prowess. _(For example, Level 1 in {duelsci} plus 2 completed {duelsci} Experiments would equal a total of 3.)_
+DuelResolution1a_003=The scientific duel will be **{duelsci}**.
+DuelResolution1a_004={sabotagee1} and {playersabotage1} now count how many Levels they have moved their Journal Track forward in {duelsci}.
+DuelResolution1a_005=They then count how many of their completed Experiments (including stored) are of the type {duelsci}.
+DuelResolution1a_006=Each player adds these two numbers together to determine their total individual scientific prowess. _(For example, Level 1 in {duelsci} plus 2 completed {duelsci} Experiments would equal a total of 3.)_
 
 # passages/00184-DuelResolution1b.mws.yaml
-DuelResolution1b_001=**Wounded Pride**
-DuelResolution1b_002=I watched as my opponent, {duelloser}
-DuelResolution1b_003= burst into tears. Apparently my bullet had struck their shoulder, causing a rip in the fabric and minor cut. Unable to stomach the pain, they
-DuelResolution1b_004= red-faced, turned to a new page in their occult tome and feigned a paper-cut so egregious that they
-DuelResolution1b_005= suddenly complained of a strained wrist as their pitiful, makeshift contraption grinded to a halt. They
-DuelResolution1b_006= held the side of their arm where a chemical burn had reddened the skin and
-DuelResolution1b_007= grimaced, exposing a deep wound in their forearm as the modified falcon under their care flew far into the distance. They
-DuelResolution1b_008= stumbled to their doctor. While their injuries from the duel were minor, I felt a deep fulfillment in knowing that their insufferable pride had been dealt a cruel blow that morning.
-DuelResolution1b_010={duelloser} loses **3VP**.
-DuelResolution1b_011=**An Unfortunate Death**
-DuelResolution1b_012=Though I felt a tinge of remorse at the sight, my cousin and I were both aware of the fatal risks this bloody confrontation carried with it. I watched spellbound as {duelloser} 
-DuelResolution1b_013=reeled once before crumpling to the mossy ground. The bullet had hit a major artery that could not be sutured before the loss of blood overwhelmed them. On the more matter-of-fact side, the body that remained was otherwise untouched and was returned to the estate within hours.
-DuelResolution1b_014=disappeared into a swirling silver vortex, leaving behind only a single hand that attempted to prevent this occurrence by grabbing onto a nearby metal fixture. It wriggled for a few moments before expiring.
-DuelResolution1b_015=was unceremoniously crushed between two bronze gears. The machine created for this event would need to be disassembled and cleaned before it could be used again.
-DuelResolution1b_016=withered into a rubbery scrap of skin, their blood having been accidentally distilled during the duel. Thankfully, the beakers and pipettes involved in the process could still be used after a proper scrubbing.
-DuelResolution1b_017=was mauled and desecrated into an unrecognizable pile of exposed flesh and muscle. Appreciatively, the experiment used in the duel was docile after feeding and easily recaptured.
-DuelResolution1b_018=As blood pooled beneath them, staining the dueling grounds crimson, I shielded my eyes and fled from the site. The duel had ended in death. The generation would have to continue based solely upon their willed instructions, penned weeks before the lethal event. 
-DuelResolution1b_019={duelloser} must place their **Self** into Lost. This piece cannot be reclaimed for the remainder of this Generation. 
-DuelResolution1b_020={duelloser} gains their Caretaker piece from Lost (if possible). _As outlined in their will, in order to execute actions posthumously in case of their untimely demise._
-DuelResolution1b_021=Also, {duelloser} gains a {icon:bodies_icon}.
+DuelResolution1b_001=I watched as my opponent, {duelloser}
+DuelResolution1b_002= burst into tears. Apparently my bullet had struck their shoulder, causing a rip in the fabric and minor cut. Unable to stomach the pain, they
+DuelResolution1b_003= red-faced, turned to a new page in their occult tome and feigned a paper-cut so egregious that they
+DuelResolution1b_004= suddenly complained of a strained wrist as their pitiful, makeshift contraption grinded to a halt. They
+DuelResolution1b_005= held the side of their arm where a chemical burn had reddened the skin and
+DuelResolution1b_006= grimaced, exposing a deep wound in their forearm as the modified falcon under their care flew far into the distance. They
+DuelResolution1b_007= stumbled to their doctor. While their injuries from the duel were minor, I felt a deep fulfillment in knowing that their insufferable pride had been dealt a cruel blow that morning.
+DuelResolution1b_009={duelloser} loses **3VP**.
+DuelResolution1b_010=Though I felt a tinge of remorse at the sight, my cousin and I were both aware of the fatal risks this bloody confrontation carried with it. I watched spellbound as {duelloser} 
+DuelResolution1b_011=reeled once before crumpling to the mossy ground. The bullet had hit a major artery that could not be sutured before the loss of blood overwhelmed them. On the more matter-of-fact side, the body that remained was otherwise untouched and was returned to the estate within hours.
+DuelResolution1b_012=disappeared into a swirling silver vortex, leaving behind only a single hand that attempted to prevent this occurrence by grabbing onto a nearby metal fixture. It wriggled for a few moments before expiring.
+DuelResolution1b_013=was unceremoniously crushed between two bronze gears. The machine created for this event would need to be disassembled and cleaned before it could be used again.
+DuelResolution1b_014=withered into a rubbery scrap of skin, their blood having been accidentally distilled during the duel. Thankfully, the beakers and pipettes involved in the process could still be used after a proper scrubbing.
+DuelResolution1b_015=was mauled and desecrated into an unrecognizable pile of exposed flesh and muscle. Appreciatively, the experiment used in the duel was docile after feeding and easily recaptured.
+DuelResolution1b_016=As blood pooled beneath them, staining the dueling grounds crimson, I shielded my eyes and fled from the site. The duel had ended in death. The generation would have to continue based solely upon their willed instructions, penned weeks before the lethal event. 
+DuelResolution1b_017={duelloser} must place their **Self** into Lost. This piece cannot be reclaimed for the remainder of this Generation. 
+DuelResolution1b_018={duelloser} gains their Caretaker piece from Lost (if possible). _As outlined in their will, in order to execute actions posthumously in case of their untimely demise._
+DuelResolution1b_019=Also, {duelloser} gains a {icon:bodies_icon}.
 
 # passages/00185-AdvancedWeaponryIntro.mws.yaml
 AdvancedWeaponryIntro_001=A Few Improvements
@@ -1677,7 +1670,7 @@ TakeEventFlag_003=This small change was only the beginning. Before long they wou
 TakeEventFlag_004=Return the {warloser} Flag card to the Scenario box. Place the {warwinner} Flag card face-up near the Village Chronicle.
 
 # passages/00188-TTBarracksPenalty.mws.yaml
-TTBarracksPenalty_001=**Barracks Penalty**
+TTBarracksPenalty_001=Barracks Penalty
 TTBarracksPenalty_002=Any player that does **not** have a piece of their color on the Barracks must **lose 5VP**.
 
 # passages/00189-TSBarracksPenalty.mws.yaml
@@ -1818,7 +1811,7 @@ ATOWSabotageIntro2Sep_002=It was the time to strike while my passions were still
 ATOWSabotageIntro2Sep_003=I chose to sabotage the ''Outpost''.
 
 # passages/00213-Sabotage1Now.mws.yaml
-Sabotage1Now_001=**Cruel Betrayal**
+Sabotage1Now_001=Cruel Betrayal
 Sabotage1Now_002=The exterior wall near the corner of my estate had been struck by an explosive device. I was immediately suspicious of the clear lines of soot at the base, suggesting that the demolition had in fact been calculated to expose a portion of my laboratory.
 Sabotage1Now_003=The papers within my laboratory were scattered about and a small fire had claimed and blackened a portion of the room. Given the frequency of loud noises and odoriferous ingredients emanating from the room, I was not surprised when none in the house noticed anything amiss.
 Sabotage1Now_004=I awoke to discover a section of my estate in shambles! {_rnd_Sabotage1Now_0}

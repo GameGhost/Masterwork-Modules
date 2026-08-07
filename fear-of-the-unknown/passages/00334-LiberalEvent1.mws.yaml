@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'LiberalEvent1'
-# ../en-US.restext:2587 | "VOTE"
+# ../en-US.restext:2581 | "VOTE"
 title: 'restext://LiberalEvent1_001'
 layout: 'narration'
 nodes:
@@ -15,21 +15,21 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:35146
 - type: 'text'
-  # ../en-US.restext:2588 | "Each player retrieves the..."
+  # ../en-US.restext:2582 | "Each player retrieves the..."
   value: 'restext://LiberalEvent1_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:35153
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:35157
 - type: 'text'
-  # ../en-US.restext:2589 | "**YAY** - A vote for **YA..."
+  # ../en-US.restext:2583 | "**YAY** - A vote for **YA..."
   value: 'restext://LiberalEvent1_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:35171
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:35175
 - type: 'text'
-  # ../en-US.restext:2590 | "**NAY** - A vote for **NA..."
+  # ../en-US.restext:2584 | "**NAY** - A vote for **NA..."
   value: 'restext://LiberalEvent1_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:35193
 - type: 'break'
@@ -57,22 +57,22 @@ nodes:
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:65 | "3"
+      # ../en-US.restext:66 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:66 | "2"
+      # ../en-US.restext:67 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:63 | "1"
+      # ../en-US.restext:64 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:64 | "REVEAL"
+      # ../en-US.restext:65 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:64 | "REVEAL"
+    # ../en-US.restext:65 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: 'LiberalEvent1a' # ./00335-LiberalEvent1a.mws.yaml
     snapshot: false

@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S5Fate2'
-# ../en-US.restext:451 | "FATE of the Infected"
+# ../en-US.restext:453 | "FATE of the Infected"
 title: 'restext://S5Fate2_001'
 tags:
 - 'END'
@@ -11,11 +11,11 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:2560
 - type: 'popup'
   layout: 'end_of_generation'
-  # ../en-US.restext:356 | "Confirm"
+  # ../en-US.restext:358 | "Confirm"
   okay: 'restext://UIButton_Confirm'
   content:
   - type: 'text'
-    # ../en-US.restext:89 | "Remove all player pieces ..."
+    # ../en-US.restext:93 | "Remove all player pieces ..."
     value: 'restext://Directive_EndGeneration_DubiousBartering'
   - type: 'let'
     var: 'generation'
@@ -63,7 +63,7 @@ nodes:
   expr: 'heart + _rnd_S5Fate2_0'
 # ../.source/TheCostofDisease_Eng_v10.cs:2585
 - type: 'text'
-  # ../en-US.restext:452 | "The congregation and citi..."
+  # ../en-US.restext:454 | "The congregation and citi..."
   value: 'restext://S5Fate2_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:2588
 - type: 'break'
@@ -74,40 +74,40 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:2594
   - type: 'text'
-    # ../en-US.restext:456 | "**SUCCESS!**"
+    # ../en-US.restext:458 | "**SUCCESS!**"
     value: 'restext://S5Fate2_006'
   # ../.source/TheCostofDisease_Eng_v10.cs:2596
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:2597
   - type: 'text'
-    # ../en-US.restext:457 | "With charitable contribut..."
+    # ../en-US.restext:459 | "With charitable contribut..."
     value: 'restext://S5Fate2_007'
   # ../.source/TheCostofDisease_Eng_v10.cs:2605
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:2607
   - type: 'link'
-    # ../en-US.restext:458 | "Succeeded in Building the..."
+    # ../en-US.restext:460 | "Succeeded in Building the..."
     label: 'restext://S5Fate2_008'
     target: 'Hospitalintro' # ./00012-Hospitalintro.mws.yaml
     snapshot: true
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:2614
   - type: 'text'
-    # ../en-US.restext:453 | "**FAILURE!**"
+    # ../en-US.restext:455 | "**FAILURE!**"
     value: 'restext://S5Fate2_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:2616
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:2617
   - type: 'text'
-    # ../en-US.restext:454 | "With charitable contribut..."
+    # ../en-US.restext:456 | "With charitable contribut..."
     value: 'restext://S5Fate2_004'
   # ../.source/TheCostofDisease_Eng_v10.cs:2626
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:2628
   - type: 'link'
-    # ../en-US.restext:455 | "Failed to Build the Hospital"
+    # ../en-US.restext:457 | "Failed to Build the Hospital"
     label: 'restext://S5Fate2_005'
     target: 'DevastationIntro' # ./00086-DevastationIntro.mws.yaml
     snapshot: true

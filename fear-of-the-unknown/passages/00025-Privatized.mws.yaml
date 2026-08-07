@@ -35,7 +35,7 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:4390
       - type: 'text'
-        # ../en-US.restext:120 | "Retrieve the Hunt tokens ..."
+        # ../en-US.restext:121 | "Retrieve the Hunt tokens ..."
         value: 'restext://Directive_RetrieveHuntTokensFaceUp'
       # ../.source/FearoftheUnknown_Eng_v15.cs:4393
       - type: 'break'
@@ -49,7 +49,7 @@ nodes:
         style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:4401
     - type: 'text'
-      # ../en-US.restext:111 | "Place the Suspicion Marke..."
+      # ../en-US.restext:112 | "Place the Suspicion Marke..."
       value: 'restext://Directive_PlaceSuspicionMarker_Lead'
     # ../.source/FearoftheUnknown_Eng_v15.cs:4404
     - type: 'conditional'
@@ -73,7 +73,7 @@ nodes:
           expr: 'tracker - 1'
     # ../.source/FearoftheUnknown_Eng_v15.cs:4413
     - type: 'text'
-      # ../en-US.restext:131 | "**{tracker}** and the {ic..."
+      # ../en-US.restext:132 | "**{tracker}** and the {ic..."
       value: 'restext://Directive_TrackerAndMobMarkerLeft'
     # ../.source/FearoftheUnknown_Eng_v15.cs:4418
     - type: 'break'
@@ -83,7 +83,7 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:4421
       - type: 'text'
-        # ../en-US.restext:67 | "Then, since this is a 3 p..."
+        # ../en-US.restext:68 | "Then, since this is a 3 p..."
         value: 'restext://Directive_3Player_PassMarker_A'
       # ../.source/FearoftheUnknown_Eng_v15.cs:4422
       - type: 'break'
@@ -128,7 +128,7 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:4491
     - type: 'text'
-      # ../en-US.restext:136 | "Any time a player visits ..."
+      # ../en-US.restext:137 | "Any time a player visits ..."
       value: 'restext://Directive_VisitLocationClaimHuntToken'
     # ../.source/FearoftheUnknown_Eng_v15.cs:4494
     - type: 'break'

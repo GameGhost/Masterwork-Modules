@@ -31,7 +31,7 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:6294
     - type: 'text'
-      # ../en-US.restext:70 | "Each player collects "
+      # ../en-US.restext:71 | "Each player collects "
       value: 'restext://Directive_EachPlayerCollects_Fragment'
     # ../.source/ATimeofWar_Eng_v8.cs:6297
     - type: 'conditional'
@@ -54,20 +54,20 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:6312
       - type: 'text'
-        # ../en-US.restext:71 | "Each player **pays $1** i..."
+        # ../en-US.restext:72 | "Each player **pays $1** i..."
         value: 'restext://Directive_EachPlayerPays1EstateTax'
   # ../.source/ATimeofWar_Eng_v8.cs:6320
   - type: 'break'
     style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:6325
 - type: 'section'
-  # ../en-US.restext:162 | "**Separatist Allegiance**"
+  # ../en-US.restext:163 | "**Separatist Allegiance**"
   title: 'restext://Heading_SeparatistAllegiance'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:6333
   - type: 'text'
-    # ../en-US.restext:88 | "If a player does **NOT** ..."
+    # ../en-US.restext:89 | "If a player does **NOT** ..."
     value: 'restext://Directive_NoSeparatistsFlag_OnceAction'
 # ../.source/ATimeofWar_Eng_v8.cs:6353
 - type: 'break'
@@ -81,13 +81,13 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:6361
   - type: 'section'
-    # ../en-US.restext:139 | "**Everything is a Weapon**"
+    # ../en-US.restext:140 | "**Everything is a Weapon**"
     title: 'restext://Heading_EverythingIsAWeapon'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:6369
     - type: 'text'
-      # ../en-US.restext:107 | "When performing an Experi..."
+      # ../en-US.restext:108 | "When performing an Experi..."
       value: 'restext://Directive_SubstituteWeaponTokenForIngredient'
   # ../.source/ATimeofWar_Eng_v8.cs:6377
   - type: 'break'
@@ -98,20 +98,20 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:6384
   - type: 'section'
-    # ../en-US.restext:610 | "**Office of Public Relations**"
+    # ../en-US.restext:608 | "**Office of Public Relations**"
     title: 'restext://Peace3_001'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:6392
     - type: 'text'
-      # ../en-US.restext:611 | "At the End of the Generat..."
+      # ../en-US.restext:609 | "At the End of the Generat..."
       value: 'restext://Peace3_002'
   # ../.source/ATimeofWar_Eng_v8.cs:6400
   - type: 'break'
     style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:6406
 - type: 'section'
-  # ../en-US.restext:612 | "{icon:storybooktoken} **F..."
+  # ../en-US.restext:610 | "{icon:storybooktoken} **F..."
   title: 'restext://Peace3_003'
   style: 'hub-card'
   content:
@@ -125,7 +125,7 @@ nodes:
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:6419
   - type: 'text'
-    # ../en-US.restext:73 | "The Empire has decided to..."
+    # ../en-US.restext:74 | "The Empire has decided to..."
     value: 'restext://Directive_EmpireAdvancedWeaponryDeck'
   # ../.source/ATimeofWar_Eng_v8.cs:6423
   - type: 'break'
@@ -136,7 +136,7 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:6427
     - type: 'text'
-      # ../en-US.restext:613 | "Due to the general discon..."
+      # ../en-US.restext:611 | "Due to the general discon..."
       value: 'restext://Peace3_004'
     # ../.source/ATimeofWar_Eng_v8.cs:6434
     - type: 'break'
@@ -144,7 +144,7 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:6439
   - type: 'popup'
     layout: 'end_of_round'
-    # ../en-US.restext:614 | "Click here at the End of ..."
+    # ../en-US.restext:612 | "Click here at the End of ..."
     label: 'restext://Peace3_005'
     target: 'FinalBattleTime' # ./00076-FinalBattleTime.mws.yaml
     # ../en-US.restext:288 | "End of Round"

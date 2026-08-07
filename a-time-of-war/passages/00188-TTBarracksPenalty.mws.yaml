@@ -2,21 +2,17 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TTBarracksPenalty'
+# ../en-US.restext:1673 | "Barracks Penalty"
+title: 'restext://TTBarracksPenalty_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:20003
 - type: 'conditional'
   if: 'barracks == "no"'
   then:
-  # ../.source/ATimeofWar_Eng_v8.cs:20007
-  - type: 'text'
-    # ../en-US.restext:1680 | "**Barracks Penalty**"
-    value: 'restext://TTBarracksPenalty_001'
-  # ../.source/ATimeofWar_Eng_v8.cs:20009
-  - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:20010
   - type: 'text'
-    # ../en-US.restext:1681 | "Any player that does **no..."
+    # ../en-US.restext:1674 | "Any player that does **no..."
     value: 'restext://TTBarracksPenalty_002'
   # ../.source/ATimeofWar_Eng_v8.cs:20021
   - type: 'break'

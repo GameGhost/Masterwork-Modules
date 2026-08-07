@@ -57,7 +57,8 @@ Click_StartBid=Click to start the bid...
 Click_StartVote=Click here to start the vote...
 Click_ToBegin=Click to begin...
 Click_ToContinueEllipsis_Lower=click to continue...
-Common_001=For Private Use
+Common_001=A Debt Repaid
+Common_002=For Private Use
 Common_Frequently=Frequently.
 Common_VersionOnePointZero=v1.0
 Countdown_One=1
@@ -143,7 +144,6 @@ Dollar_Two=$2.
 Focus_Biology=Biology
 Focus_Chemistry=Chemistry
 Focus_Engineering=Engineering
-Heading_ADebtRepaid=**A Debt Repaid**
 Heading_AMostUnwelcomeReturn=**A Most Unwelcome Return**
 Heading_ASlyInvestment=**A Sly Investment**
 Heading_AgilityConfirmed=**Agility Confirmed**
@@ -611,7 +611,7 @@ S4GoodCreature_002=I have made peace with the monster, though in so doing I have
 S4GoodCreature_003=So ends the curse upon my family.
 
 # passages/00029-S4BadCreature.mws.yaml
-S4BadCreature_001=**The Creature Exacts Its Revenge**
+S4BadCreature_001=The Creature Exacts Its Revenge
 S4BadCreature_002=I am ruined! Oh how naive I had been to ignore the warnings of my mother and father. They warned me to be vigilant! But I was too proud to believe in superstitious and illogical things such as curses!
 S4BadCreature_003=As I slept last night, my estate was breached by a stealthy and merciless beast! And when I awoke, it was to an empty bed and the sound of screaming. I rushed to the window only to see the Creature with his disfigured face carved into a sinister grin, his hands and clothes stained red. He held a burning torch aloft while his black stallion reared. With a swift pull on the reins, he escaped deep into the forest.
 S4BadCreature_004=Hours later, the pall only darkened as news of my cousins' own tragedies weepingly arrived. A similar fate had befallen their spouses as they were wrenched from the living world by the beast.
@@ -1015,17 +1015,16 @@ SmugConsequence_004=I ask you to disregard the rumors that I have merely investe
 SmugConsequence_005=**Please choose your name and add it to the ledger:**
 
 # passages/00091-S4Con2A.mws.yaml
-S4Con2A_001=**Shameful Display**
-S4Con2A_002=**Letter from {tempid}-** _(Cont.)_
-S4Con2A_003=My representation was easily able to refute the validity of several eyewitness accounts from slipshod drunkards, but the court proceedings dragged on for several months.
-S4Con2A_004=Ultimately, the blasted dullards had not a leg to stand on and were forced to drop the case entirely. While the court costs are minor and the fines insignificant, the time wasted in this extended defense and the indigestion I have endured has caused my work to suffer.
-S4Con2A_005=You **lose {_rnd_S4Con2A_0}VP**.
-S4Con2A_006=**Success**
-S4Con2A_007=Despite circumstantial evidence, the town's courts were unable to reconcile their case with my unusual investment practices. Several witnesses attested to my family's eccentric habits, and while it does not put the courts at ease, the argument is compelling enough for them to drop the charges without fines.
-S4Con2A_008=You should have seen the unsteadiness of the case they brought against me! Several witnesses attested to my connection to the local smuggling ring (absurd), but the bedraggled individuals could not even keep their own stories straight. 
-S4Con2A_009=We are dealing with the simple-minded, however. The judge, in their folly, determined that scant evidence was significant enough to damn me. While the court costs are minor and the fines insignificant, the resulting public backlash will certainly hamper my ability to complete any work in peace.
-S4Con2A_010=You **lose 1VP** and **gain 1** {icon:creepy_icon}.
-S4Con2A_011=**Letter from {tempid} -** _(Cont.)_
+S4Con2A_001=**Letter from {tempid}-** _(Cont.)_
+S4Con2A_002=My representation was easily able to refute the validity of several eyewitness accounts from slipshod drunkards, but the court proceedings dragged on for several months.
+S4Con2A_003=Ultimately, the blasted dullards had not a leg to stand on and were forced to drop the case entirely. While the court costs are minor and the fines insignificant, the time wasted in this extended defense and the indigestion I have endured has caused my work to suffer.
+S4Con2A_004=You **lose {_rnd_S4Con2A_0}VP**.
+S4Con2A_005=Despite circumstantial evidence, the town's courts were unable to reconcile their case with my unusual investment practices. Several witnesses attested to my family's eccentric habits, and while it does not put the courts at ease, the argument is compelling enough for them to drop the charges without fines.
+S4Con2A_006=You should have seen the unsteadiness of the case they brought against me! Several witnesses attested to my connection to the local smuggling ring (absurd), but the bedraggled individuals could not even keep their own stories straight. 
+S4Con2A_007=We are dealing with the simple-minded, however. The judge, in their folly, determined that scant evidence was significant enough to damn me. While the court costs are minor and the fines insignificant, the resulting public backlash will certainly hamper my ability to complete any work in peace.
+S4Con2A_008=You **lose 1VP** and **gain 1** {icon:creepy_icon}.
+S4Con2A_009=**Success**
+S4Con2A_010=**Letter from {tempid} -** _(Cont.)_
 
 # passages/00092-TensionBonus.mws.yaml
 TensionBonus_001=Cabinet of Curiosities
@@ -1185,13 +1184,13 @@ Variable_List_FnP_007={nameA} II (remember to make it the second for Gen 2)
 Variable_List_FnP_008={nameA} III (remember to make it the third for Gen 3)
 
 # passages/00116-WitchIsolationResolution.mws.yaml
-WitchIsolationResolution_001=**Minor Recompense**
+WitchIsolationResolution_001=Minor Recompense
 WitchIsolationResolution_003=The townsfolk are wary of me. As well they should be. While I do not hold grudges against simpletons unworthy of my time, the death of my parent is a wound that festers deep within me and I feel no sense of pride in this place.
 WitchIsolationResolution_004=I am left to my own dark devices, sequestered in my study with dusty tomes and ancient scrolls. My work is my rebellion against their oppression. If the city burns, I will not fan the flames, but I will watch it roast.
 WitchIsolationResolution_005={witch} gains 1 {icon:creepy_icon} and 2 Knowledge of their choice.
 
 # passages/00117-WitchTensionResolution.mws.yaml
-WitchTensionResolution_001=**Reconciliation**
+WitchTensionResolution_001=Reconciliation
 WitchTensionResolution_002=The townsfolk feel a kinship with my family's unnatural suffering. As well they should. The death of my parent is a wound that festers deep within me and I feel no sense of pride in this place. 
 WitchTensionResolution_003=A brief visit to their grave - the mausoleum nestled within our family's cemetery plot - reminds me of this grim distance.
 WitchTensionResolution_004=Yet, it would be unwise of me not to accept their pledge of service, even while the grief still hangs like a sullen fog above the shattered fragments of my tortured soul.
@@ -1848,16 +1847,12 @@ PEWitch2_004=I find with each passing evening that my parent's abhorrent obsessi
 PEWitch2_005=**Retrieve the Obsession cards** _(18 total)_**.**
 
 # passages/00215-PEWitch3.mws.yaml
-PEWitch3_001=**A Calmer Mindset**
-PEWitch3_002=An inclusive economy has reinvigorated the progressive ideals of the populace. Within years, this once guarded village has begun to embrace concepts of the future and to leave behind the ways of old.
-PEWitch3_003=**If you completed your Obsession, draw a Maladjustment for this Generation.**
-PEWitch3_004=**Isolation**
-PEWitch3_005=The xenophobic tendencies of the population marry well with those of an extreme position. Those who display more conventional scientific aptitudes are looked upon with distrust.
-PEWitch3_006=**If you** _did not_ **complete your Obsession, draw a Maladjustment for this Generation.**
-PEWitch3_007=**Exploration**
-PEWitch3_008=The push towards acceptance has allowed the citizens a meager respite from superstition. Some even look upon the advancements of science and technology as curious amusements.
-PEWitch3_009=**Agitation**
-PEWitch3_010=With the failure of government institutions causing a stressful atmosphere in the town, the people are again wary of the things that they cannot fully understand.
+PEWitch3_001=An inclusive economy has reinvigorated the progressive ideals of the populace. Within years, this once guarded village has begun to embrace concepts of the future and to leave behind the ways of old.
+PEWitch3_002=**If you completed your Obsession, draw a Maladjustment for this Generation.**
+PEWitch3_003=The xenophobic tendencies of the population marry well with those of an extreme position. Those who display more conventional scientific aptitudes are looked upon with distrust.
+PEWitch3_004=**If you** _did not_ **complete your Obsession, draw a Maladjustment for this Generation.**
+PEWitch3_005=The push towards acceptance has allowed the citizens a meager respite from superstition. Some even look upon the advancements of science and technology as curious amusements.
+PEWitch3_006=With the failure of government institutions causing a stressful atmosphere in the town, the people are again wary of the things that they cannot fully understand.
 
 # passages/00216-PEWitch3Intro.mws.yaml
 PEWitch3Intro_001=All players who have not resolved their Obsession cards do so now.
@@ -2158,7 +2153,7 @@ CountCureQuestion_005=Place the {icon:storybooktoken} **token** from this Locati
 CountCureQuestion_006=At the End of this Generation, the Count will return. You may decide to cure him by gifting him a **C-Level Occult Experiment** at the End of the Generation.
 
 # passages/00254-RareCreatureBonus.mws.yaml
-RareCreatureBonus_001=**Minor Compassion**
+RareCreatureBonus_001=Minor Compassion
 RareCreatureBonus_002=The Creature was not unrelenting in its vengeance. For upon the next morning, I discovered a heap of torn pages, scraps kept bundled in twine yet perfectly legible after all these years. Though my cousins and I had endured an unbearable hardship, my contribution was not left unrewarded.
 RareCreatureBonus_003=The player with a completed **Puppy** or **Bride** Experiment receives several torn pages from your grandfather's journal.
 RareCreatureBonus_004=They **move one space forward on the Journal Track of their choice** at no cost.
@@ -2268,13 +2263,12 @@ Expedition2_003=The player(s) embarking on the expedition now flips their tokens
 Expedition2_004=Click to resolve the Hunt...
 
 # passages/00272-JailEvent1c.mws.yaml
-JailEvent1c_001=**A Sacrifice is Required**
-JailEvent1c_002=What will I do with this useless addition to my Estate now that the Asylum is no longer in operation? Surely a waste of energy to renovate such a specific extension. Better to dispose of it than to let it decay out of disuse.
-JailEvent1c_003=All players return their {asylumup} tile to the Scenario box.
-JailEvent1c_004=**Merciful Heritage**
-JailEvent1c_005={warden} has made one exception due to the previous generation and my **family's willingness to fund the Asylum**. They will continue to honor this pledge of service when we visit the Junk Palace.
-JailEvent1c_006=**{asylumup} Rule**
-JailEvent1c_007=When a player with the {asylumup} tile visits the Junk Palace, they may activate this ability.
+JailEvent1c_001=What will I do with this useless addition to my Estate now that the Asylum is no longer in operation? Surely a waste of energy to renovate such a specific extension. Better to dispose of it than to let it decay out of disuse.
+JailEvent1c_002=All players return their {asylumup} tile to the Scenario box.
+JailEvent1c_003=**Merciful Heritage**
+JailEvent1c_004={warden} has made one exception due to the previous generation and my **family's willingness to fund the Asylum**. They will continue to honor this pledge of service when we visit the Junk Palace.
+JailEvent1c_005=**{asylumup} Rule**
+JailEvent1c_006=When a player with the {asylumup} tile visits the Junk Palace, they may activate this ability.
 
 # passages/00273-EndtotheCount.mws.yaml
 EndtotheCount_001=An Abrupt End
@@ -2619,7 +2613,7 @@ LiberalEvent2a_003=Once all players have chosen, reveal the coins in your fists.
 LiberalEvent2a_004=Click here to resolve the bribe...
 
 # passages/00339-PrivateCreepPenalty.mws.yaml
-PrivateCreepPenalty_001=**Penalty for Defiance**
+PrivateCreepPenalty_001=Penalty for Defiance
 PrivateCreepPenalty_002={warden} has enacted a penalty for all players who did not reach the end of the {icon:creepy_icon} Track.
 PrivateCreepPenalty_003=**{nameA}** must suffer the penalty below.
 PrivateCreepPenalty_004=**{nameB}** must suffer the penalty below.

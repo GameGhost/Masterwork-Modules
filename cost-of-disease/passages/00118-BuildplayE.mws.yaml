@@ -6,7 +6,7 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:12775
 - type: 'text'
-  # ../en-US.restext:71 | "**Do not allow the other ..."
+  # ../en-US.restext:75 | "**Do not allow the other ..."
   value: 'restext://Common_Private_Decision_Warning'
 # ../.source/TheCostofDisease_Eng_v10.cs:12778
 - type: 'break'
@@ -25,20 +25,20 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:12789
     - type: 'text'
-      # ../en-US.restext:254 | "I arrived at the {ba} und..."
+      # ../en-US.restext:256 | "I arrived at the {ba} und..."
       value: 'restext://Narrative_Investigate_A_Arrival'
   - if: 'inv == bb'
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:12797
     - type: 'text'
-      # ../en-US.restext:255 | "A thick fog shrouded my a..."
+      # ../en-US.restext:257 | "A thick fog shrouded my a..."
       value: 'restext://Narrative_Investigate_B_Arrival'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:12808
   - type: 'let'
     var: '_rnd_BuildplayE_0'
-    # ../en-US.restext:69 | Common_Gentleman | "gentleman"
-    # ../en-US.restext:70 | Common_Gentlewoman | "gentlewoman"
+    # ../en-US.restext:73 | Common_Gentleman | "gentleman"
+    # ../en-US.restext:74 | Common_Gentlewoman | "gentlewoman"
     expr: '["restext://Common_Gentleman", "restext://Common_Gentlewoman"].shuffled("BuildplayE_0")[0]'
   # ../.source/TheCostofDisease_Eng_v10.cs:12807
   - type: 'text'
@@ -51,7 +51,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:12813
 - type: 'text'
-  # ../en-US.restext:256 | "I could either provide ev..."
+  # ../en-US.restext:258 | "I could either provide ev..."
   value: 'restext://Narrative_Investigate_ExposeOrConceal'
 # ../.source/TheCostofDisease_Eng_v10.cs:12832
 - type: 'assign'

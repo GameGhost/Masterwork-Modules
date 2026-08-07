@@ -31,7 +31,7 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:5671
     - type: 'text'
-      # ../en-US.restext:597 | "Turn to page **9** of the..."
+      # ../en-US.restext:595 | "Turn to page **9** of the..."
       value: 'restext://MonarchReign1_002'
     # ../.source/ATimeofWar_Eng_v8.cs:5678
     - type: 'conditional'
@@ -41,7 +41,7 @@ nodes:
       - type: 'break'
       # ../.source/ATimeofWar_Eng_v8.cs:5681
       - type: 'text'
-        # ../en-US.restext:55 | "Then, since this is a 3 p..."
+        # ../en-US.restext:56 | "Then, since this is a 3 p..."
         value: 'restext://Directive_3Player_PassMarker_A'
 # ../.source/ATimeofWar_Eng_v8.cs:5685
 - type: 'break'
@@ -53,25 +53,25 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:5692
     - type: 'section'
-      # ../en-US.restext:149 | "**Monarchist Allegiance**"
+      # ../en-US.restext:150 | "**Monarchist Allegiance**"
       title: 'restext://Heading_MonarchistAllegiance'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:5700
       - type: 'text'
-        # ../en-US.restext:87 | "If a player does **NOT** ..."
+        # ../en-US.restext:88 | "If a player does **NOT** ..."
         value: 'restext://Directive_NoMonarchistFlag_OnceAction'
   - if: 'reignsep == "yes"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:5725
     - type: 'section'
-      # ../en-US.restext:149 | "**Monarchist Allegiance**"
+      # ../en-US.restext:150 | "**Monarchist Allegiance**"
       title: 'restext://Heading_MonarchistAllegiance'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:5733
       - type: 'text'
-        # ../en-US.restext:86 | "If a player does **NOT** ..."
+        # ../en-US.restext:87 | "If a player does **NOT** ..."
         value: 'restext://Directive_NoMonarchistFlag_CannotVisit'
 # ../.source/ATimeofWar_Eng_v8.cs:5746
 - type: 'break'
@@ -84,7 +84,7 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:5761
   - type: 'text'
-    # ../en-US.restext:82 | "The Monarchy is likely to..."
+    # ../en-US.restext:83 | "The Monarchy is likely to..."
     value: 'restext://Directive_MonarchyListensGenerous_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:5769
   - type: 'link'
@@ -97,20 +97,20 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:5776
 - type: 'section'
-  # ../en-US.restext:150 | "**Most Decrees**"
+  # ../en-US.restext:151 | "**Most Decrees**"
   title: 'restext://Heading_MostDecrees'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:5784
   - type: 'text'
-    # ../en-US.restext:598 | "The player who makes the ..."
+    # ../en-US.restext:596 | "The player who makes the ..."
     value: 'restext://MonarchReign1_010'
 # ../.source/ATimeofWar_Eng_v8.cs:5792
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:5797
 - type: 'section'
-  # ../en-US.restext:145 | "**Like a Whispering Shadow**"
+  # ../en-US.restext:146 | "**Like a Whispering Shadow**"
   title: 'restext://Heading_LikeAWhisperingShadow'
   style: 'hub-card'
   content:
@@ -129,7 +129,7 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:5833
   - type: 'text'
-    # ../en-US.restext:90 | "If a player ever overlaps..."
+    # ../en-US.restext:91 | "If a player ever overlaps..."
     value: 'restext://Directive_OverlapsExceedsCrownToken_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:5840
   - type: 'conditional'
@@ -157,13 +157,13 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:5856
   - type: 'section'
-    # ../en-US.restext:158 | "**Royal Eye**"
+    # ../en-US.restext:159 | "**Royal Eye**"
     title: 'restext://Heading_RoyalEye'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:5864
     - type: 'text'
-      # ../en-US.restext:599 | "Any player with a {icon:c..."
+      # ../en-US.restext:597 | "Any player with a {icon:c..."
       value: 'restext://MonarchReign1_017'
   # ../.source/ATimeofWar_Eng_v8.cs:5875
   - type: 'break'
@@ -182,7 +182,7 @@ nodes:
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:5891
       - type: 'text'
-        # ../en-US.restext:116 | "{icon:s3_weapontoken}toke..."
+        # ../en-US.restext:117 | "{icon:s3_weapontoken}toke..."
         value: 'restext://Directive_WeaponTokensSpendLikeMoney'
   - match: 'vp'
     nodes:

@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Huntround2'
-# ../en-US.restext:335 | "In Preparation for the Hunt"
+# ../en-US.restext:337 | "In Preparation for the Hunt"
 title: 'restext://Title_InPreparationForTheHunt'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:33269
 - type: 'text'
-  # ../en-US.restext:2654 | "As the full moon rose aga..."
+  # ../en-US.restext:2644 | "As the full moon rose aga..."
   value: 'restext://Huntround2_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:33279
 - type: 'break'
@@ -19,7 +19,7 @@ nodes:
   # ../en-US.restext:39 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'HuntersChoice2' # ./00320-HuntersChoice2.mws.yaml
-  # ../en-US.restext:355 | "Close"
+  # ../en-US.restext:357 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -30,12 +30,12 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:33300
   - type: 'text'
-    # ../en-US.restext:2655 | "{h2a} III and {h2b} III e..."
+    # ../en-US.restext:2645 | "{h2a} III and {h2b} III e..."
     value: 'restext://Huntround2_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:33306
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:33308
   - type: 'text'
-    # ../en-US.restext:79 | "_If a player cannot perfo..."
+    # ../en-US.restext:83 | "_If a player cannot perfo..."
     value: 'restext://Directive_CannotPerform_LoseVPGainServant'

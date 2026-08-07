@@ -2,6 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ResistEnd'
+title: '{wardestroy >= wardetermine ? "Victory for the Resistance" : "Resistance Quashed"}'
 tags:
 - 'END'
 layout: 'narration'
@@ -10,23 +11,17 @@ nodes:
 - type: 'conditional'
   if: 'wardestroy >= wardetermine'
   then:
-  # ../.source/ATimeofWar_Eng_v8.cs:5416
-  - type: 'text'
-    # ../en-US.restext:579 | "**Victory for the Resistance**"
-    value: 'restext://ResistEnd_006'
-  # ../.source/ATimeofWar_Eng_v8.cs:5418
-  - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:5419
   - type: 'text'
-    # ../en-US.restext:580 | "With **{wardestroy} build..."
-    value: 'restext://ResistEnd_007'
+    # ../en-US.restext:578 | "With **{wardestroy} build..."
+    value: 'restext://ResistEnd_005'
   # ../.source/ATimeofWar_Eng_v8.cs:5428
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:5430
   - type: 'text'
-    # ../en-US.restext:578 | "It was just as I had plan..."
-    value: 'restext://ResistEnd_003'
+    # ../en-US.restext:577 | "It was just as I had plan..."
+    value: 'restext://ResistEnd_002'
   # ../.source/ATimeofWar_Eng_v8.cs:5433
   - type: 'break'
     style: 'paragraph'
@@ -53,7 +48,7 @@ nodes:
         var: 'completedRound'
         expr: '6'
       - type: 'text'
-        # ../en-US.restext:74 | "Remove all player pieces ..."
+        # ../en-US.restext:75 | "Remove all player pieces ..."
         value: 'restext://Directive_EndGeneration_PlayersKeepWeaponTokens'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:5446
@@ -74,26 +69,20 @@ nodes:
         var: 'completedRound'
         expr: '6'
       - type: 'text'
-        # ../en-US.restext:74 | "Remove all player pieces ..."
+        # ../en-US.restext:75 | "Remove all player pieces ..."
         value: 'restext://Directive_EndGeneration_PlayersKeepWeaponTokens'
   else:
-  # ../.source/ATimeofWar_Eng_v8.cs:5454
-  - type: 'text'
-    # ../en-US.restext:576 | "**Resistance Quashed**"
-    value: 'restext://ResistEnd_001'
-  # ../.source/ATimeofWar_Eng_v8.cs:5456
-  - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:5457
   - type: 'text'
-    # ../en-US.restext:577 | "With **so few buildings d..."
-    value: 'restext://ResistEnd_002'
+    # ../en-US.restext:576 | "With **so few buildings d..."
+    value: 'restext://ResistEnd_001'
   # ../.source/ATimeofWar_Eng_v8.cs:5467
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:5469
   - type: 'text'
-    # ../en-US.restext:578 | "It was just as I had plan..."
-    value: 'restext://ResistEnd_003'
+    # ../en-US.restext:577 | "It was just as I had plan..."
+    value: 'restext://ResistEnd_002'
   # ../.source/ATimeofWar_Eng_v8.cs:5472
   - type: 'break'
     style: 'paragraph'
@@ -120,7 +109,7 @@ nodes:
         var: 'completedRound'
         expr: '6'
       - type: 'text'
-        # ../en-US.restext:74 | "Remove all player pieces ..."
+        # ../en-US.restext:75 | "Remove all player pieces ..."
         value: 'restext://Directive_EndGeneration_PlayersKeepWeaponTokens'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:5485
@@ -141,5 +130,5 @@ nodes:
         var: 'completedRound'
         expr: '6'
       - type: 'text'
-        # ../en-US.restext:74 | "Remove all player pieces ..."
+        # ../en-US.restext:75 | "Remove all player pieces ..."
         value: 'restext://Directive_EndGeneration_PlayersKeepWeaponTokens'

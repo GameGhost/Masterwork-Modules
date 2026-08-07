@@ -2,6 +2,8 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Gen1Insanity-NoAction'
+# ../en-US.restext:68 | "More Time Than Ever"
+title: 'restext://Common_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:31582
@@ -13,22 +15,16 @@ nodes:
     # ../en-US.restext:30 | "no"
     if: 'vacation == "restext://Choice_No_Lower"'
     then:
-    # ../.source/TheCostofDisease_Eng_v10.cs:31589
-    - type: 'text'
-      # ../en-US.restext:168 | "**More Time Than Ever**"
-      value: 'restext://Heading_MoreTimeThanEver'
-    # ../.source/TheCostofDisease_Eng_v10.cs:31591
-    - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:31592
     - type: 'text'
-      # ../en-US.restext:251 | "{gen1sane} II's parent ha..."
+      # ../en-US.restext:253 | "{gen1sane} II's parent ha..."
       value: 'restext://Narrative_Gen1Sane_WorkEthic'
     # ../.source/TheCostofDisease_Eng_v10.cs:31597
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:31599
     - type: 'text'
-      # ../en-US.restext:2516 | "And so this matter of wri..."
+      # ../en-US.restext:2506 | "And so this matter of wri..."
       value: 'restext://Gen1Insanity_NoAction_001'
     # ../.source/TheCostofDisease_Eng_v10.cs:31601
     - type: 'break'
@@ -39,7 +35,7 @@ nodes:
       # ../en-US.restext:39 | "Click to continue..."
       label: 'restext://Click_ContinueEllipsis_C'
       target: 'Devastation1' # ./00004-Devastation1.mws.yaml
-      # ../en-US.restext:355 | "Close"
+      # ../en-US.restext:357 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
       header:
@@ -51,20 +47,20 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:31625
       - type: 'assign'
         var: 'vacation'
-        # ../en-US.restext:2517 | "complete"
+        # ../en-US.restext:2507 | "complete"
         expr: '"restext://Gen1Insanity_NoAction_002"'
       # ../.source/TheCostofDisease_Eng_v10.cs:31633
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:31634
       - type: 'text'
-        # ../en-US.restext:2518 | "Return the piece you plac..."
+        # ../en-US.restext:2508 | "Return the piece you plac..."
         value: 'restext://Gen1Insanity_NoAction_003'
       # ../.source/TheCostofDisease_Eng_v10.cs:31636
       - type: 'break'
         style: 'paragraph'
       # ../.source/TheCostofDisease_Eng_v10.cs:31638
       - type: 'text'
-        # ../en-US.restext:2519 | "Also, **gain 1VP**."
+        # ../en-US.restext:2509 | "Also, **gain 1VP**."
         value: 'restext://Gen1Insanity_NoAction_004'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:31609

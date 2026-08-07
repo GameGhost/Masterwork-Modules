@@ -42,14 +42,14 @@ nodes:
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:18637
   - type: 'text'
-    # ../en-US.restext:1424 | "**Retrieval of Property**"
+    # ../en-US.restext:1423 | "**Retrieval of Property**"
     value: 'restext://AsylumMeet_001'
   # ../.source/FearoftheUnknown_Eng_v15.cs:18639
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:18643
   - type: 'text'
-    # ../en-US.restext:1425 | "**{tempas}'s Journal -** "
+    # ../en-US.restext:1424 | "**{tempas}'s Journal -** "
     value: 'restext://AsylumMeet_002'
   # ../.source/FearoftheUnknown_Eng_v15.cs:18647
   - type: 'include_passage'
@@ -59,27 +59,27 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:18652
   - type: 'text'
-    # ../en-US.restext:1426 | "I soon discovered my lost..."
+    # ../en-US.restext:1425 | "I soon discovered my lost..."
     value: 'restext://AsylumMeet_003'
   # ../.source/FearoftheUnknown_Eng_v15.cs:18654
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:18656
   - type: 'text'
-    # ../en-US.restext:1427 | "The alienist on staff des..."
+    # ../en-US.restext:1426 | "The alienist on staff des..."
     value: 'restext://AsylumMeet_004'
   # ../.source/FearoftheUnknown_Eng_v15.cs:18661
   - type: 'let'
     var: '_rnd_AsylumMeet_0'
-    # ../en-US.restext:1428 | AsylumMeet_005 | "We find that many of thes..."
-    # ../en-US.restext:1429 | AsylumMeet_006 | "The cerebellum is especia..."
+    # ../en-US.restext:1427 | AsylumMeet_005 | "We find that many of thes..."
+    # ../en-US.restext:1428 | AsylumMeet_006 | "The cerebellum is especia..."
     expr: '["restext://AsylumMeet_005", "restext://AsylumMeet_006"].shuffled("AsylumMeet_0")[0]'
   # ../.source/FearoftheUnknown_Eng_v15.cs:18657
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:18659
   - type: 'text'
-    # ../en-US.restext:1430 | "\"We can entrust them to ..."
+    # ../en-US.restext:1429 | "\"We can entrust them to ..."
     value: 'restext://AsylumMeet_007'
     lets:
     - '_rnd_AsylumMeet_0'
@@ -107,14 +107,14 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:18689
     - type: 'text'
-      # ../en-US.restext:1431 | "Choose one of the options..."
+      # ../en-US.restext:1430 | "Choose one of the options..."
       value: 'restext://AsylumMeet_008'
     # ../.source/FearoftheUnknown_Eng_v15.cs:18690
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:18694
     - type: 'text'
-      # ../en-US.restext:1432 | "**Pay $1 to gain a Careta..."
+      # ../en-US.restext:1431 | "**Pay $1 to gain a Careta..."
       value: 'restext://AsylumMeet_009'
     # ../.source/FearoftheUnknown_Eng_v15.cs:18696
     - type: 'break'
@@ -126,5 +126,5 @@ nodes:
     - type: 'break'
     # ../.source/FearoftheUnknown_Eng_v15.cs:18701
     - type: 'text'
-      # ../en-US.restext:1433 | "**Gain a Servant from Lost.**"
+      # ../en-US.restext:1432 | "**Gain a Servant from Lost.**"
       value: 'restext://AsylumMeet_011'

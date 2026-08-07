@@ -2,23 +2,18 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S4BadCreature'
+# ../en-US.restext:614 | "The Creature Exacts Its R..."
+title: 'restext://S4BadCreature_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:4892
 - type: 'conditional'
   if: 'creature == 1'
   then:
-  # ../.source/FearoftheUnknown_Eng_v15.cs:4897
-  - type: 'text'
-    # ../en-US.restext:614 | "**The Creature Exacts Its..."
-    value: 'restext://S4BadCreature_001'
   # ../.source/FearoftheUnknown_Eng_v15.cs:4900
   - type: 'assign'
     var: 'revenge'
     expr: '1'
-  # ../.source/FearoftheUnknown_Eng_v15.cs:4899
-  - type: 'break'
-    style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:4902
   - type: 'include_passage'
     target: 'journal1a' # ./00206-journal1a.mws.yaml

@@ -2,40 +2,40 @@
 ---
 format: 'mws/0.4'
 passage_id: 'SymposiumEvent3'
-# ../en-US.restext:814 | "The Fate of the Lecture Series"
+# ../en-US.restext:816 | "The Fate of the Lecture Series"
 title: 'restext://SymposiumEvent3_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:7319
 - type: 'text'
-  # ../en-US.restext:815 | "If it amounted to anythin..."
+  # ../en-US.restext:817 | "If it amounted to anythin..."
   value: 'restext://SymposiumEvent3_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:7320
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:7322
 - type: 'text'
-  # ../en-US.restext:816 | "But, were their efforts e..."
+  # ../en-US.restext:818 | "But, were their efforts e..."
   value: 'restext://SymposiumEvent3_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:7324
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:7328
 - type: 'text'
-  # ../en-US.restext:817 | "**SYMPOSIUM RESULT**"
+  # ../en-US.restext:819 | "**SYMPOSIUM RESULT**"
   value: 'restext://SymposiumEvent3_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:7330
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:7333
 - type: 'text'
-  # ../en-US.restext:818 | "**Add up the total number..."
+  # ../en-US.restext:820 | "**Add up the total number..."
   value: 'restext://SymposiumEvent3_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:7338
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:7340
 - type: 'text'
-  # ../en-US.restext:819 | "If the total is less than..."
+  # ../en-US.restext:821 | "If the total is less than..."
   value: 'restext://SymposiumEvent3_006'
 # ../.source/TheCostofDisease_Eng_v10.cs:7346
 - type: 'link'
@@ -48,11 +48,11 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:7349
 - type: 'text'
-  # ../en-US.restext:820 | "If the total is equal to ..."
+  # ../en-US.restext:822 | "If the total is equal to ..."
   value: 'restext://SymposiumEvent3_007'
 # ../.source/TheCostofDisease_Eng_v10.cs:7355
 - type: 'link'
-  # ../en-US.restext:821 | "click here..."
+  # ../en-US.restext:823 | "click here..."
   label: 'restext://SymposiumEvent3_008'
   target: 'SymposiumMiddle' # ./00231-SymposiumMiddle.mws.yaml
   snapshot: true
@@ -61,7 +61,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:7358
 - type: 'text'
-  # ../en-US.restext:822 | "However, if the total is ..."
+  # ../en-US.restext:824 | "However, if the total is ..."
   value: 'restext://SymposiumEvent3_009'
 # ../.source/TheCostofDisease_Eng_v10.cs:7361
 - type: 'switch'
@@ -71,37 +71,37 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:7363
     - type: 'text'
-      # ../en-US.restext:823 | "**{symp+2}**"
+      # ../en-US.restext:825 | "**{symp+2}**"
       value: 'restext://SymposiumEvent3_010'
   - match: 3
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:7367
     - type: 'text'
-      # ../en-US.restext:823 | "**{symp+2}**"
+      # ../en-US.restext:825 | "**{symp+2}**"
       value: 'restext://SymposiumEvent3_010'
   - match: 4
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:7371
     - type: 'text'
-      # ../en-US.restext:824 | "**{symp+3}**"
+      # ../en-US.restext:826 | "**{symp+3}**"
       value: 'restext://SymposiumEvent3_011'
   - match: 5
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:7375
     - type: 'text'
-      # ../en-US.restext:825 | "**{symp+4}**"
+      # ../en-US.restext:827 | "**{symp+4}**"
       value: 'restext://SymposiumEvent3_012'
   default:
   # ../.source/TheCostofDisease_Eng_v10.cs:7379
   - type: 'text'
-    # ../en-US.restext:823 | "**{symp+2}**"
+    # ../en-US.restext:825 | "**{symp+2}**"
     value: 'restext://SymposiumEvent3_010'
 # ../.source/TheCostofDisease_Eng_v10.cs:7382
 - type: 'text'
   value: ', '
 # ../.source/TheCostofDisease_Eng_v10.cs:7383
 - type: 'link'
-  # ../en-US.restext:826 | "click here instead."
+  # ../en-US.restext:828 | "click here instead."
   label: 'restext://SymposiumEvent3_013'
   target: 'SymposiumSuccess' # ./00023-SymposiumSuccess.mws.yaml
   snapshot: true

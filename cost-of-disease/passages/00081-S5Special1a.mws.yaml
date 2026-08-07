@@ -8,7 +8,7 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:9270
 - type: 'text'
-  # ../en-US.restext:314 | "Special Event"
+  # ../en-US.restext:316 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/TheCostofDisease_Eng_v10.cs:9272
@@ -35,7 +35,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:9292
 - type: 'text'
-  # ../en-US.restext:117 | "Only the player that wins..."
+  # ../en-US.restext:121 | "Only the player that wins..."
   value: 'restext://Election_WinnerPaysBid_Rule'
 # ../.source/TheCostofDisease_Eng_v10.cs:9294
 - type: 'break'
@@ -67,22 +67,22 @@ nodes:
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:75 | "3"
+      # ../en-US.restext:79 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:76 | "2"
+      # ../en-US.restext:80 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:73 | "1"
+      # ../en-US.restext:77 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:74 | "REVEAL"
+      # ../en-US.restext:78 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:74 | "REVEAL"
+    # ../en-US.restext:78 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: 'S5Special1b' # ./00065-S5Special1b.mws.yaml
     snapshot: false

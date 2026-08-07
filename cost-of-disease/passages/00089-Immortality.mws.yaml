@@ -40,7 +40,7 @@ nodes:
   # ../en-US.restext:39 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${(seedy == "no") ? "Gen1Creepy-RefuseBonus" : (seedy == "yes") ? "Gen1Creepy-AgreedReturn" : "Hospital2"}' # ./00300-Gen1Creepy-RefuseBonus.mws.yaml, ./00301-Gen1Creepy-AgreedReturn.mws.yaml, ./00034-Hospital2.mws.yaml
-  # ../en-US.restext:355 | "Close"
+  # ../en-US.restext:357 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -51,12 +51,12 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:10199
   - type: 'text'
-    # ../en-US.restext:93 | "Give each player a {icon:..."
+    # ../en-US.restext:97 | "Give each player a {icon:..."
     value: 'restext://Directive_GiveEachPlayerStorybookToken'
   # ../.source/TheCostofDisease_Eng_v10.cs:10207
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:10209
   - type: 'text'
-    # ../en-US.restext:94 | "Each player chooses an in..."
+    # ../en-US.restext:98 | "Each player chooses an in..."
     value: 'restext://Directive_JournalToken_ThirdLevel'

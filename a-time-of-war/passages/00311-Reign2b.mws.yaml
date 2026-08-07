@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Reign2b'
-# ../en-US.restext:2375 | "A Note of Thanks"
+# ../en-US.restext:2368 | "A Note of Thanks"
 title: 'restext://Reign2b_001'
 tags:
 - 'revised'
@@ -10,7 +10,7 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:28689
 - type: 'text'
-  # ../en-US.restext:2376 | "The advisor thanked me fo..."
+  # ../en-US.restext:2369 | "The advisor thanked me fo..."
   value: 'restext://Reign2b_002'
 # ../.source/ATimeofWar_Eng_v8.cs:28691
 - type: 'switch'
@@ -20,13 +20,13 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:28693
     - type: 'text'
-      # ../en-US.restext:2377 | "The drifters would certai..."
+      # ../en-US.restext:2370 | "The drifters would certai..."
       value: 'restext://Reign2b_003'
   - match: 2
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:28697
     - type: 'text'
-      # ../en-US.restext:2378 | "It was unfortunately not ..."
+      # ../en-US.restext:2371 | "It was unfortunately not ..."
       value: 'restext://Reign2b_004'
 # ../.source/ATimeofWar_Eng_v8.cs:28700
 - type: 'break'
@@ -52,17 +52,17 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:28736
     - type: 'text'
-      # ../en-US.restext:2379 | "{crownL} Then, all player..."
+      # ../en-US.restext:2372 | "{crownL} Then, all player..."
       value: 'restext://Reign2b_005'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:28746
     - type: 'text'
-      # ../en-US.restext:65 | "{crownR} {ch2}"
+      # ../en-US.restext:66 | "{crownR} {ch2}"
       value: 'restext://Directive_CrownRCh2_Bare'
   # ../.source/ATimeofWar_Eng_v8.cs:28750
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:28754
   - type: 'text'
-    # ../en-US.restext:66 | "_Reminder: The {icon:s3_c..."
+    # ../en-US.restext:67 | "_Reminder: The {icon:s3_c..."
     value: 'restext://Directive_CrownTokenMovementReminder'

@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'University1'
-# ../en-US.restext:344 | "SEARCH FOR THE CURE"
+# ../en-US.restext:346 | "SEARCH FOR THE CURE"
 title: 'restext://Title_SearchForTheCure'
-# ../en-US.restext:330 | "Early Years"
+# ../en-US.restext:332 | "Early Years"
 subtitle: 'restext://Title_EarlyYears'
 tags:
 - 'HUB'
@@ -17,7 +17,7 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:27583
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:354 | "Accept"
+  # ../en-US.restext:356 | "Accept"
   okay: 'restext://UIButton_Accept'
   header:
   # ../.source/TheCostofDisease_Eng_v10.cs:27587
@@ -27,13 +27,13 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:27589
   - type: 'text'
-    # ../en-US.restext:2190 | "Turn to page **10** of th..."
+    # ../en-US.restext:2183 | "Turn to page **10** of th..."
     value: 'restext://University1_001'
   # ../.source/TheCostofDisease_Eng_v10.cs:27596
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:27597
   - type: 'text'
-    # ../en-US.restext:99 | "Place the Suspicion Marke..."
+    # ../en-US.restext:103 | "Place the Suspicion Marke..."
     value: 'restext://Directive_PlaceSuspicionMarker_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:27600
   - type: 'conditional'
@@ -65,7 +65,7 @@ nodes:
           expr: 'tracker + 1'
   # ../.source/TheCostofDisease_Eng_v10.cs:27613
   - type: 'text'
-    # ../en-US.restext:2191 | "**{tracker}** and the {ic..."
+    # ../en-US.restext:2184 | "**{tracker}** and the {ic..."
     value: 'restext://University1_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:27620
   - type: 'conditional'
@@ -73,40 +73,40 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:27622
     - type: 'text'
-      # ../en-US.restext:78 | "Then, since this is a 3-p..."
+      # ../en-US.restext:82 | "Then, since this is a 3-p..."
       value: 'restext://Directive_3Player_PassMarker_B'
 # ../.source/TheCostofDisease_Eng_v10.cs:27626
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:27630
 - type: 'section'
-  # ../en-US.restext:169 | "**Nobel Prize in Medicine**"
+  # ../en-US.restext:171 | "**Nobel Prize in Medicine**"
   title: 'restext://Heading_NobelPrizeInMedicine'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:27638
   - type: 'text'
-    # ../en-US.restext:278 | "The scientific world has ..."
+    # ../en-US.restext:280 | "The scientific world has ..."
     value: 'restext://Narrative_ScientificWorldNotices'
   # ../.source/TheCostofDisease_Eng_v10.cs:27647
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:27649
   - type: 'text'
-    # ../en-US.restext:300 | "At the End of the Generat..."
+    # ../en-US.restext:302 | "At the End of the Generat..."
     value: 'restext://Reward_LeastCreepy_NobelPrize_Lose7VP'
 # ../.source/TheCostofDisease_Eng_v10.cs:27662
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:27666
 - type: 'section'
-  # ../en-US.restext:171 | "**Perfect Mental Balance**"
+  # ../en-US.restext:173 | "**Perfect Mental Balance**"
   title: 'restext://Heading_PerfectMentalBalance'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:27674
   - type: 'text'
-    # ../en-US.restext:299 | "At the end of the Generat..."
+    # ../en-US.restext:301 | "At the end of the Generat..."
     value: 'restext://Reward_InsanityTrackSpace_5VP'
   # ../.source/TheCostofDisease_Eng_v10.cs:27686
   - type: 'break'
@@ -117,7 +117,7 @@ nodes:
     # ../en-US.restext:49 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
     target: 'UniEquity1' # ./00202-UniEquity1.mws.yaml
-    # ../en-US.restext:359 | "End of Round"
+    # ../en-US.restext:361 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -126,10 +126,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:305 | "The Early Years of the Th..."
+      # ../en-US.restext:307 | "The Early Years of the Th..."
       value: 'restext://Round_GenerationIII_EarlyEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:312 | "Then, perform all Start o..."
+      # ../en-US.restext:314 | "Then, perform all Start o..."
       value: 'restext://Round_StartMiddleYears_Rule'

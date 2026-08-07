@@ -2,6 +2,8 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Warwarn'
+# ../en-US.restext:1014 | "WARNING"
+title: 'restext://Warwarn_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:13358
@@ -10,15 +12,9 @@ nodes:
   cases:
   - match: 1
     nodes:
-    # ../.source/ATimeofWar_Eng_v8.cs:13362
-    - type: 'text'
-      # ../en-US.restext:1016 | "**WARNING**"
-      value: 'restext://Warwarn_001'
-    # ../.source/ATimeofWar_Eng_v8.cs:13364
-    - type: 'break'
     # ../.source/ATimeofWar_Eng_v8.cs:13365
     - type: 'text'
-      # ../en-US.restext:1017 | "Remove all player pieces ..."
+      # ../en-US.restext:1015 | "Remove all player pieces ..."
       value: 'restext://Warwarn_002'
     # ../.source/ATimeofWar_Eng_v8.cs:13373
     - type: 'break'

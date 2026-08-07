@@ -11,11 +11,11 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:11040
 - type: 'popup'
   layout: 'end_of_generation'
-  # ../en-US.restext:356 | "Confirm"
+  # ../en-US.restext:358 | "Confirm"
   okay: 'restext://UIButton_Confirm'
   content:
   - type: 'text'
-    # ../en-US.restext:90 | "Remove all player pieces ..."
+    # ../en-US.restext:94 | "Remove all player pieces ..."
     value: 'restext://Directive_EndGeneration_JournalTrackTokens'
   - type: 'let'
     var: 'generation'

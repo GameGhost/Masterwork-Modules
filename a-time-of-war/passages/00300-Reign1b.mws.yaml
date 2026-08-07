@@ -11,13 +11,13 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:27600
 - type: 'let'
   var: '_rnd_Reign1b_0'
-  # ../en-US.restext:2288 | Reign1b_002 | "waxing his mustache."
-  # ../en-US.restext:2289 | Reign1b_003 | "adjusting his girdle."
-  # ../en-US.restext:2290 | Reign1b_004 | "sampling wine and cheese."
+  # ../en-US.restext:2281 | Reign1b_002 | "waxing his mustache."
+  # ../en-US.restext:2282 | Reign1b_003 | "adjusting his girdle."
+  # ../en-US.restext:2283 | Reign1b_004 | "sampling wine and cheese."
   expr: '["restext://Reign1b_002", "restext://Reign1b_003", "restext://Reign1b_004"].shuffled("Reign1b_0")[0]'
 # ../.source/ATimeofWar_Eng_v8.cs:27599
 - type: 'text'
-  # ../en-US.restext:2291 | "The advisor thanked me fo..."
+  # ../en-US.restext:2284 | "The advisor thanked me fo..."
   value: 'restext://Reign1b_005'
   lets:
   - '_rnd_Reign1b_0'
@@ -45,17 +45,17 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:27637
     - type: 'text'
-      # ../en-US.restext:64 | "{crownL} {ch1}"
+      # ../en-US.restext:65 | "{crownL} {ch1}"
       value: 'restext://Directive_CrownLCh1'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:27643
     - type: 'text'
-      # ../en-US.restext:65 | "{crownR} {ch2}"
+      # ../en-US.restext:66 | "{crownR} {ch2}"
       value: 'restext://Directive_CrownRCh2_Bare'
   # ../.source/ATimeofWar_Eng_v8.cs:27647
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:27651
   - type: 'text'
-    # ../en-US.restext:66 | "_Reminder: The {icon:s3_c..."
+    # ../en-US.restext:67 | "_Reminder: The {icon:s3_c..."
     value: 'restext://Directive_CrownTokenMovementReminder'

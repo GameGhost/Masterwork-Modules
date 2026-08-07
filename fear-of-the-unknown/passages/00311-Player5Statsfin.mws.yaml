@@ -12,7 +12,7 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:90 | "Please enter the epic nam..."
+      # ../en-US.restext:91 | "Please enter the epic nam..."
       value: 'restext://Directive_EnterWarriorName'
     - type: 'input'
       label: ''
@@ -37,7 +37,7 @@ nodes:
     expr: 'warriorE.replace("_5", "")'
   # ../.source/FearoftheUnknown_Eng_v15.cs:33356
   - type: 'text'
-    # ../en-US.restext:2507 | "**{_rpl_Player5Statsfin_0}**"
+    # ../en-US.restext:2501 | "**{_rpl_Player5Statsfin_0}**"
     value: 'restext://Player5Statsfin_001'
     lets:
     - '_rpl_Player5Statsfin_0'
@@ -50,19 +50,19 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33363
 - type: 'text'
-  # ../en-US.restext:2508 | "Agility: **{agiE}**"
+  # ../en-US.restext:2502 | "Agility: **{agiE}**"
   value: 'restext://Player5Statsfin_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33368
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33369
 - type: 'text'
-  # ../en-US.restext:2509 | "Strength: **{strE}**"
+  # ../en-US.restext:2503 | "Strength: **{strE}**"
   value: 'restext://Player5Statsfin_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33374
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33375
 - type: 'text'
-  # ../en-US.restext:2510 | "Life: **{hitE}**"
+  # ../en-US.restext:2504 | "Life: **{hitE}**"
   value: 'restext://Player5Statsfin_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33380
 - type: 'break'
@@ -76,7 +76,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33388
 - type: 'text'
-  # ../en-US.restext:96 | "If this is correct, please "
+  # ../en-US.restext:97 | "If this is correct, please "
   value: 'restext://Directive_IfCorrectPlease_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33389
 - type: 'link'
@@ -89,7 +89,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33393
 - type: 'text'
-  # ../en-US.restext:97 | "If this is in error, please "
+  # ../en-US.restext:98 | "If this is in error, please "
   value: 'restext://Directive_IfErrorPlease_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33394
 - type: 'link'

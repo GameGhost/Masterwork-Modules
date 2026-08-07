@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: '2PFamineBid'
-# ../en-US.restext:129 | "BID"
+# ../en-US.restext:130 | "BID"
 title: 'restext://Heading_BidCaps'
 layout: 'narration'
 nodes:
@@ -15,41 +15,41 @@ nodes:
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:26481
 - type: 'text'
-  # ../en-US.restext:60 | "Both players take all the..."
+  # ../en-US.restext:61 | "Both players take all the..."
   value: 'restext://Directive_BothPlayersBidMoney_Then'
 # ../.source/ATimeofWar_Eng_v8.cs:26483
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:26485
 - type: 'text'
-  # ../en-US.restext:2189 | "Once both players are rea..."
+  # ../en-US.restext:2182 | "Once both players are rea..."
   value: 'restext://_2PFamineBid_001'
 # ../.source/ATimeofWar_Eng_v8.cs:26498
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:26502
 - type: 'text'
-  # ../en-US.restext:2190 | "**New Meat** will create ..."
+  # ../en-US.restext:2183 | "**New Meat** will create ..."
   value: 'restext://_2PFamineBid_002'
 # ../.source/ATimeofWar_Eng_v8.cs:26506
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:26509
 - type: 'text'
-  # ../en-US.restext:2191 | "**Decline** will ask the ..."
+  # ../en-US.restext:2184 | "**Decline** will ask the ..."
   value: 'restext://_2PFamineBid_003'
 # ../.source/ATimeofWar_Eng_v8.cs:26518
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:26522
 - type: 'text'
-  # ../en-US.restext:2192 | "_(Ties are broken by the ..."
+  # ../en-US.restext:2185 | "_(Ties are broken by the ..."
   value: 'restext://_2PFamineBid_004'
 # ../.source/ATimeofWar_Eng_v8.cs:26524
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:26526
 - type: 'text'
-  # ../en-US.restext:72 | "Only the player who wins ..."
+  # ../en-US.restext:73 | "Only the player who wins ..."
   value: 'restext://Directive_ElectionWinnerPaysBid'
 # ../.source/ATimeofWar_Eng_v8.cs:26528
 - type: 'break'
@@ -57,7 +57,7 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:26532
 - type: 'popup'
   layout: 'countdown_instructions'
-  # ../en-US.restext:2193 | "Click here to start the bid..."
+  # ../en-US.restext:2186 | "Click here to start the bid..."
   label: 'restext://_2PFamineBid_005'
   content:
   - type: 'text'
@@ -77,22 +77,22 @@ nodes:
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:53 | "3"
+      # ../en-US.restext:54 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:54 | "2"
+      # ../en-US.restext:55 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:51 | "1"
+      # ../en-US.restext:52 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:52 | "REVEAL"
+      # ../en-US.restext:53 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:52 | "REVEAL"
+    # ../en-US.restext:53 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: '2pFamineBidRes' # ./00285-2pFamineBidRes.mws.yaml
     snapshot: false

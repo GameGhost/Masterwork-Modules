@@ -13,51 +13,51 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:19172
   - type: 'text'
-    # ../en-US.restext:1478 | "**A Foundation for Science**"
+    # ../en-US.restext:1477 | "**A Foundation for Science**"
     value: 'restext://S5HospA2_004'
   # ../.source/TheCostofDisease_Eng_v10.cs:19174
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:19177
   - type: 'text'
-    # ../en-US.restext:1479 | "**With the University bui..."
+    # ../en-US.restext:1478 | "**With the University bui..."
     value: 'restext://S5HospA2_005'
   # ../.source/TheCostofDisease_Eng_v10.cs:19180
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:19182
   - type: 'link'
-    # ../en-US.restext:1480 | "Click to move to a more m..."
+    # ../en-US.restext:1479 | "Click to move to a more m..."
     label: 'restext://S5HospA2_006'
     target: 'UniversityIntro' # ./00014-UniversityIntro.mws.yaml
     snapshot: true
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:19189
   - type: 'text'
-    # ../en-US.restext:1475 | "**The Foundation Crumbles**"
+    # ../en-US.restext:1474 | "**The Foundation Crumbles**"
     value: 'restext://S5HospA2_001'
   # ../.source/TheCostofDisease_Eng_v10.cs:19191
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:19194
   - type: 'text'
-    # ../en-US.restext:1476 | "**With the University unb..."
+    # ../en-US.restext:1475 | "**With the University unb..."
     value: 'restext://S5HospA2_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:19199
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:19201
   - type: 'link'
-    # ../en-US.restext:1477 | "Click to move to a more d..."
+    # ../en-US.restext:1476 | "Click to move to a more d..."
     label: 'restext://S5HospA2_003'
     target: 'RippedMasterwork' # ./00164-RippedMasterwork.mws.yaml
     snapshot: true
 # ../.source/TheCostofDisease_Eng_v10.cs:19204
 - type: 'popup'
   layout: 'end_of_generation'
-  # ../en-US.restext:356 | "Confirm"
+  # ../en-US.restext:358 | "Confirm"
   okay: 'restext://UIButton_Confirm'
   content:
   - type: 'text'
-    # ../en-US.restext:90 | "Remove all player pieces ..."
+    # ../en-US.restext:94 | "Remove all player pieces ..."
     value: 'restext://Directive_EndGeneration_JournalTrackTokens'
   - type: 'let'
     var: 'generation'

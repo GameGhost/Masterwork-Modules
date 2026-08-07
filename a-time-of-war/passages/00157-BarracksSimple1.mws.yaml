@@ -18,12 +18,6 @@ nodes:
       # ../en-US.restext:282 | "Unified Monarchists"
       if: 'warwinner == "restext://Title_UnifiedMonarchists"'
       then:
-      # ../.source/ATimeofWar_Eng_v8.cs:17179
-      - type: 'text'
-        # ../en-US.restext:163 | "**Service Required**"
-        value: 'restext://Heading_ServiceRequired'
-      # ../.source/ATimeofWar_Eng_v8.cs:17181
-      - type: 'break'
       # ../.source/ATimeofWar_Eng_v8.cs:17182
       - type: 'text'
         # ../en-US.restext:196 | "I was admittedly distress..."
@@ -48,7 +42,7 @@ nodes:
         content:
         # ../.source/ATimeofWar_Eng_v8.cs:17232
         - type: 'text'
-          # ../en-US.restext:67 | "Any player who did not pl..."
+          # ../en-US.restext:68 | "Any player who did not pl..."
           value: 'restext://Directive_DidNotPlaceOnBarracks_Fragment'
         # ../.source/ATimeofWar_Eng_v8.cs:17233
         - type: 'switch'
@@ -62,15 +56,15 @@ nodes:
               expr: 'rand_between(1, 2, "BarracksSimple1_1")'
             # ../.source/ATimeofWar_Eng_v8.cs:17235
             - type: 'text'
-              # ../en-US.restext:1410 | "gains **{_rnd_BarracksSim..."
-              value: 'restext://BarracksSimple1_005'
+              # ../en-US.restext:1406 | "gains **{_rnd_BarracksSim..."
+              value: 'restext://BarracksSimple1_004'
               lets:
               - '_rnd_BarracksSimple1_0'
           - match: 2
             nodes:
             # ../.source/ATimeofWar_Eng_v8.cs:17245
             - type: 'text'
-              # ../en-US.restext:96 | "receives **$1 less** inco..."
+              # ../en-US.restext:97 | "receives **$1 less** inco..."
               value: 'restext://Directive_Receives1LessIncome'
           - match: 3
             nodes:
@@ -80,20 +74,20 @@ nodes:
               expr: 'rand_between(2, 3, "BarracksSimple1_2")'
             # ../.source/ATimeofWar_Eng_v8.cs:17256
             - type: 'text'
-              # ../en-US.restext:1411 | "**must** immediately lose..."
-              value: 'restext://BarracksSimple1_007'
+              # ../en-US.restext:1407 | "**must** immediately lose..."
+              value: 'restext://BarracksSimple1_006'
               lets:
               - '_rnd_BarracksSimple1_1'
           - match: 4
             nodes:
             # ../.source/ATimeofWar_Eng_v8.cs:17270
             - type: 'text'
-              # ../en-US.restext:83 | "**must** flip their Flag ..."
+              # ../en-US.restext:84 | "**must** flip their Flag ..."
               value: 'restext://Directive_MustFlipToSeparatist'
           default:
           # ../.source/ATimeofWar_Eng_v8.cs:17286
           - type: 'text'
-            # ../en-US.restext:79 | "is fortunate as the Monar..."
+            # ../en-US.restext:80 | "is fortunate as the Monar..."
             value: 'restext://Directive_FortunateMonarchyNoPenalty'
       else:
       # ../.source/ATimeofWar_Eng_v8.cs:17190
@@ -106,12 +100,6 @@ nodes:
       # ../en-US.restext:282 | "Unified Monarchists"
       if: 'warwinner == "restext://Title_UnifiedMonarchists"'
       then:
-      # ../.source/ATimeofWar_Eng_v8.cs:17199
-      - type: 'text'
-        # ../en-US.restext:163 | "**Service Required**"
-        value: 'restext://Heading_ServiceRequired'
-      # ../.source/ATimeofWar_Eng_v8.cs:17201
-      - type: 'break'
       # ../.source/ATimeofWar_Eng_v8.cs:17202
       - type: 'text'
         # ../en-US.restext:196 | "I was admittedly distress..."
@@ -136,7 +124,7 @@ nodes:
         content:
         # ../.source/ATimeofWar_Eng_v8.cs:17306
         - type: 'text'
-          # ../en-US.restext:67 | "Any player who did not pl..."
+          # ../en-US.restext:68 | "Any player who did not pl..."
           value: 'restext://Directive_DidNotPlaceOnBarracks_Fragment'
         # ../.source/ATimeofWar_Eng_v8.cs:17307
         - type: 'switch'
@@ -150,15 +138,15 @@ nodes:
               expr: 'rand_between(1, 2, "BarracksSimple1_3")'
             # ../.source/ATimeofWar_Eng_v8.cs:17309
             - type: 'text'
-              # ../en-US.restext:1410 | "gains **{_rnd_BarracksSim..."
-              value: 'restext://BarracksSimple1_005'
+              # ../en-US.restext:1406 | "gains **{_rnd_BarracksSim..."
+              value: 'restext://BarracksSimple1_004'
               lets:
               - '_rnd_BarracksSimple1_0'
           - match: 2
             nodes:
             # ../.source/ATimeofWar_Eng_v8.cs:17319
             - type: 'text'
-              # ../en-US.restext:96 | "receives **$1 less** inco..."
+              # ../en-US.restext:97 | "receives **$1 less** inco..."
               value: 'restext://Directive_Receives1LessIncome'
           - match: 3
             nodes:
@@ -168,20 +156,20 @@ nodes:
               expr: 'rand_between(2, 3, "BarracksSimple1_4")'
             # ../.source/ATimeofWar_Eng_v8.cs:17330
             - type: 'text'
-              # ../en-US.restext:1411 | "**must** immediately lose..."
-              value: 'restext://BarracksSimple1_007'
+              # ../en-US.restext:1407 | "**must** immediately lose..."
+              value: 'restext://BarracksSimple1_006'
               lets:
               - '_rnd_BarracksSimple1_1'
           - match: 4
             nodes:
             # ../.source/ATimeofWar_Eng_v8.cs:17344
             - type: 'text'
-              # ../en-US.restext:83 | "**must** flip their Flag ..."
+              # ../en-US.restext:84 | "**must** flip their Flag ..."
               value: 'restext://Directive_MustFlipToSeparatist'
           default:
           # ../.source/ATimeofWar_Eng_v8.cs:17360
           - type: 'text'
-            # ../en-US.restext:79 | "is fortunate as the Monar..."
+            # ../en-US.restext:80 | "is fortunate as the Monar..."
             value: 'restext://Directive_FortunateMonarchyNoPenalty'
       else:
       # ../.source/ATimeofWar_Eng_v8.cs:17210

@@ -2,6 +2,8 @@
 ---
 format: 'mws/0.4'
 passage_id: 'RoyalBarnCheck'
+# ../en-US.restext:50 | "Suspicions Confirmed"
+title: 'restext://Common_002'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:16845
@@ -13,15 +15,9 @@ nodes:
   - type: 'conditional'
     if: 'barn == "yes"'
     then:
-    # ../.source/ATimeofWar_Eng_v8.cs:16851
-    - type: 'text'
-      # ../en-US.restext:1386 | "**Suspicions Confirmed**"
-      value: 'restext://RoyalBarnCheck_001'
-    # ../.source/ATimeofWar_Eng_v8.cs:16853
-    - type: 'break'
     # ../.source/ATimeofWar_Eng_v8.cs:16854
     - type: 'text'
-      # ../en-US.restext:1387 | "The Unified Monarchists a..."
+      # ../en-US.restext:1384 | "The Unified Monarchists a..."
       value: 'restext://RoyalBarnCheck_002'
     # ../.source/ATimeofWar_Eng_v8.cs:16855
     - type: 'break'
@@ -43,7 +39,7 @@ nodes:
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:16887
       - type: 'text'
-        # ../en-US.restext:1388 | "**The player with the \"S..."
+        # ../en-US.restext:1385 | "**The player with the \"S..."
         value: 'restext://RoyalBarnCheck_003'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:16863

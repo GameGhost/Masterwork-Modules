@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'University3'
-# ../en-US.restext:344 | "SEARCH FOR THE CURE"
+# ../en-US.restext:346 | "SEARCH FOR THE CURE"
 title: 'restext://Title_SearchForTheCure'
-# ../en-US.restext:336 | "Late Years"
+# ../en-US.restext:338 | "Late Years"
 subtitle: 'restext://Title_LateYears'
 tags:
 - 'HUB'
@@ -22,7 +22,7 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:5697
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:354 | "Accept"
+    # ../en-US.restext:356 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/TheCostofDisease_Eng_v10.cs:5701
@@ -32,40 +32,40 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:5703
     - type: 'text'
-      # ../en-US.restext:661 | "Turn to page **11**in the..."
+      # ../en-US.restext:663 | "Turn to page **11**in the..."
       value: 'restext://University3_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:5711
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:5715
 - type: 'section'
-  # ../en-US.restext:169 | "**Nobel Prize in Medicine**"
+  # ../en-US.restext:171 | "**Nobel Prize in Medicine**"
   title: 'restext://Heading_NobelPrizeInMedicine'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5723
   - type: 'text'
-    # ../en-US.restext:278 | "The scientific world has ..."
+    # ../en-US.restext:280 | "The scientific world has ..."
     value: 'restext://Narrative_ScientificWorldNotices'
   # ../.source/TheCostofDisease_Eng_v10.cs:5731
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:5733
   - type: 'text'
-    # ../en-US.restext:300 | "At the End of the Generat..."
+    # ../en-US.restext:302 | "At the End of the Generat..."
     value: 'restext://Reward_LeastCreepy_NobelPrize_Lose7VP'
 # ../.source/TheCostofDisease_Eng_v10.cs:5746
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:5750
 - type: 'section'
-  # ../en-US.restext:171 | "**Perfect Mental Balance**"
+  # ../en-US.restext:173 | "**Perfect Mental Balance**"
   title: 'restext://Heading_PerfectMentalBalance'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5758
   - type: 'text'
-    # ../en-US.restext:299 | "At the end of the Generat..."
+    # ../en-US.restext:301 | "At the end of the Generat..."
     value: 'restext://Reward_InsanityTrackSpace_5VP'
   # ../.source/TheCostofDisease_Eng_v10.cs:5771
   - type: 'assign'
@@ -80,7 +80,7 @@ nodes:
     # ../en-US.restext:47 | "Click here at the end of ..."
     label: 'restext://Click_EndGeneration_FinalScoringFateOfTown'
     target: 'SanityCheck' # ./00026-SanityCheck.mws.yaml
-    # ../en-US.restext:359 | "End of Round"
+    # ../en-US.restext:361 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -89,10 +89,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:306 | "The Late Years of the Thi..."
+      # ../en-US.restext:308 | "The Late Years of the Thi..."
       value: 'restext://Round_GenerationIII_LateEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:304 | "Perform any End of Round ..."
+      # ../en-US.restext:306 | "Perform any End of Round ..."
       value: 'restext://Round_EndOfRoundActions_Rule'

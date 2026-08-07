@@ -2,39 +2,39 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S5SpecialVote'
-# ../en-US.restext:2373 | "VOTE"
+# ../en-US.restext:2366 | "VOTE"
 title: 'restext://S5SpecialVote_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:29096
 - type: 'text'
-  # ../en-US.restext:314 | "Special Event"
+  # ../en-US.restext:316 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/TheCostofDisease_Eng_v10.cs:29097
 - type: 'text'
-  # ../en-US.restext:2374 | "Retrieve the Voting token..."
+  # ../en-US.restext:2367 | "Retrieve the Voting token..."
   value: 'restext://S5SpecialVote_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:29100
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:29104
 - type: 'text'
-  # ../en-US.restext:2375 | "**Yay** is a vote to faci..."
+  # ../en-US.restext:2368 | "**Yay** is a vote to faci..."
   value: 'restext://S5SpecialVote_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:29119
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:29123
 - type: 'text'
-  # ../en-US.restext:2376 | "**Nay** is vote to reject..."
+  # ../en-US.restext:2369 | "**Nay** is vote to reject..."
   value: 'restext://S5SpecialVote_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:29127
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:29131
 - type: 'text'
-  # ../en-US.restext:375 | "_(Ties are broken, by the..."
+  # ../en-US.restext:377 | "_(Ties are broken, by the..."
   value: 'restext://Vote_TieBreakNote_A'
 # ../.source/TheCostofDisease_Eng_v10.cs:29133
 - type: 'break'
@@ -46,7 +46,7 @@ nodes:
   label: 'restext://Click_StartVote'
   content:
   - type: 'text'
-    # ../en-US.restext:377 | "Click on the 'Start Votin..."
+    # ../en-US.restext:379 | "Click on the 'Start Votin..."
     value: 'restext://Voting_Instructions'
   - type: 'break'
     style: 'paragraph'
@@ -57,27 +57,27 @@ nodes:
     style: 'paragraph'
   - type: 'popup'
     layout: 'countdown_action'
-    # ../en-US.restext:378 | "Start Voting"
+    # ../en-US.restext:380 | "Start Voting"
     label: 'restext://Voting_StartButton'
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:75 | "3"
+      # ../en-US.restext:79 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:76 | "2"
+      # ../en-US.restext:80 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:73 | "1"
+      # ../en-US.restext:77 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:74 | "REVEAL"
+      # ../en-US.restext:78 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:74 | "REVEAL"
+    # ../en-US.restext:78 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: 'S5SpecialVote2' # ./00346-S5SpecialVote2.mws.yaml
     snapshot: false

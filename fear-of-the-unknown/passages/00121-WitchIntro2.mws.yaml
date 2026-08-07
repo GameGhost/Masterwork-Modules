@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'WitchIntro2'
-# ../en-US.restext:1251 | "A Game of Hexes"
+# ../en-US.restext:1250 | "A Game of Hexes"
 title: 'restext://WitchIntro2_001'
 layout: 'narration'
 nodes:
@@ -13,20 +13,20 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:14649
     - type: 'text'
-      # ../en-US.restext:1252 | "**One of the players may ..."
+      # ../en-US.restext:1251 | "**One of the players may ..."
       value: 'restext://WitchIntro2_002'
   - if: 'players >= 4'
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:14649
     - type: 'text'
-      # ../en-US.restext:1253 | "**One of the players has ..."
+      # ../en-US.restext:1252 | "**One of the players has ..."
       value: 'restext://WitchIntro2_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14660
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14662
 - type: 'text'
-  # ../en-US.restext:1254 | "To test the theory and at..."
+  # ../en-US.restext:1253 | "To test the theory and at..."
   value: 'restext://WitchIntro2_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14671
 - type: 'conditional'
@@ -34,14 +34,14 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:14673
   - type: 'text'
-    # ../en-US.restext:1255 | "or if the {wsuspect} is s..."
+    # ../en-US.restext:1254 | "or if the {wsuspect} is s..."
     value: 'restext://WitchIntro2_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14679
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14681
 - type: 'text'
-  # ../en-US.restext:1256 | "How droll!"
+  # ../en-US.restext:1255 | "How droll!"
   value: 'restext://WitchIntro2_006'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14682
 - type: 'break'
@@ -67,10 +67,10 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:14705
     - type: 'text'
-      # ../en-US.restext:1258 | "Turn to page **12** of th..."
+      # ../en-US.restext:1257 | "Turn to page **12** of th..."
       value: 'restext://WitchIntro2_008'
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:14714
     - type: 'text'
-      # ../en-US.restext:1257 | "Turn to page **13** of th..."
+      # ../en-US.restext:1256 | "Turn to page **13** of th..."
       value: 'restext://WitchIntro2_007'

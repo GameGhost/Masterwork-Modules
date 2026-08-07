@@ -2,6 +2,8 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Gen1Insanity-NoExtraAction'
+# ../en-US.restext:68 | "More Time Than Ever"
+title: 'restext://Common_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:31457
@@ -13,22 +15,16 @@ nodes:
     # ../en-US.restext:30 | "no"
     if: 'vacation == "restext://Choice_No_Lower"'
     then:
-    # ../.source/TheCostofDisease_Eng_v10.cs:31464
-    - type: 'text'
-      # ../en-US.restext:168 | "**More Time Than Ever**"
-      value: 'restext://Heading_MoreTimeThanEver'
-    # ../.source/TheCostofDisease_Eng_v10.cs:31466
-    - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:31467
     - type: 'text'
-      # ../en-US.restext:251 | "{gen1sane} II's parent ha..."
+      # ../en-US.restext:253 | "{gen1sane} II's parent ha..."
       value: 'restext://Narrative_Gen1Sane_WorkEthic'
     # ../.source/TheCostofDisease_Eng_v10.cs:31472
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:31474
     - type: 'text'
-      # ../en-US.restext:2512 | "And so this matter of adm..."
+      # ../en-US.restext:2502 | "And so this matter of adm..."
       value: 'restext://Gen1Insanity_NoExtraAction_003'
     # ../.source/TheCostofDisease_Eng_v10.cs:31476
     - type: 'break'
@@ -39,7 +35,7 @@ nodes:
       # ../en-US.restext:39 | "Click to continue..."
       label: 'restext://Click_ContinueEllipsis_C'
       target: '${round == 7 ? "Hospital1" : round == 8 ? "Hospital2" : "Hospital3"}' # ./00003-Hospital1.mws.yaml, ./00034-Hospital2.mws.yaml, ./00035-Hospital3.mws.yaml
-      # ../en-US.restext:355 | "Close"
+      # ../en-US.restext:357 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
       header:
@@ -50,7 +46,7 @@ nodes:
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:31541
       - type: 'text'
-        # ../en-US.restext:2513 | "You may immediately retur..."
+        # ../en-US.restext:2503 | "You may immediately retur..."
         value: 'restext://Gen1Insanity_NoExtraAction_004'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:31485

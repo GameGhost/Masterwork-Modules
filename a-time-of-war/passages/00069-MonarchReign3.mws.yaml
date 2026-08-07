@@ -20,17 +20,17 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:9282
   - type: 'section'
-    # ../en-US.restext:774 | "{icon:storybooktoken} **C..."
+    # ../en-US.restext:772 | "{icon:storybooktoken} **C..."
     title: 'restext://MonarchReign3_001'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:9291
     - type: 'text'
-      # ../en-US.restext:775 | "When any player visits th..."
+      # ../en-US.restext:773 | "When any player visits th..."
       value: 'restext://MonarchReign3_002'
     # ../.source/ATimeofWar_Eng_v8.cs:9292
     - type: 'link'
-      # ../en-US.restext:776 | "click here to gain the be..."
+      # ../en-US.restext:774 | "click here to gain the be..."
       label: 'restext://MonarchReign3_003'
       target: 'CommemorativeSignIn' # ./00166-CommemorativeSignIn.mws.yaml
       snapshot: true
@@ -39,19 +39,19 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:9298
   - type: 'section'
-    # ../en-US.restext:777 | "**Church**"
+    # ../en-US.restext:775 | "**Church**"
     title: 'restext://MonarchReign3_004'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:9306
     - type: 'link'
-      # ../en-US.restext:778 | "Click here"
+      # ../en-US.restext:776 | "Click here"
       label: 'restext://MonarchReign3_005'
       target: 'ATOW-Church' # ./00297-ATOW-Church.mws.yaml
       snapshot: true
     # ../.source/ATimeofWar_Eng_v8.cs:9307
     - type: 'text'
-      # ../en-US.restext:779 | "for an explanation of the..."
+      # ../en-US.restext:777 | "for an explanation of the..."
       value: 'restext://MonarchReign3_006'
   # ../.source/ATimeofWar_Eng_v8.cs:9310
   - type: 'break'
@@ -63,25 +63,25 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:9320
     - type: 'section'
-      # ../en-US.restext:149 | "**Monarchist Allegiance**"
+      # ../en-US.restext:150 | "**Monarchist Allegiance**"
       title: 'restext://Heading_MonarchistAllegiance'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:9329
       - type: 'text'
-        # ../en-US.restext:87 | "If a player does **NOT** ..."
+        # ../en-US.restext:88 | "If a player does **NOT** ..."
         value: 'restext://Directive_NoMonarchistFlag_OnceAction'
   - if: 'reignsep == "yes"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:9354
     - type: 'section'
-      # ../en-US.restext:149 | "**Monarchist Allegiance**"
+      # ../en-US.restext:150 | "**Monarchist Allegiance**"
       title: 'restext://Heading_MonarchistAllegiance'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:9363
       - type: 'text'
-        # ../en-US.restext:86 | "If a player does **NOT** ..."
+        # ../en-US.restext:87 | "If a player does **NOT** ..."
         value: 'restext://Directive_NoMonarchistFlag_CannotVisit'
 # ../.source/ATimeofWar_Eng_v8.cs:9376
 - type: 'break'
@@ -94,7 +94,7 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:9390
   - type: 'text'
-    # ../en-US.restext:82 | "The Monarchy is likely to..."
+    # ../en-US.restext:83 | "The Monarchy is likely to..."
     value: 'restext://Directive_MonarchyListensGenerous_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:9398
   - type: 'link'
@@ -107,13 +107,13 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:9404
 - type: 'section'
-  # ../en-US.restext:150 | "**Most Decrees**"
+  # ../en-US.restext:151 | "**Most Decrees**"
   title: 'restext://Heading_MostDecrees'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:9413
   - type: 'text'
-    # ../en-US.restext:95 | "The player who makes the most "
+    # ../en-US.restext:96 | "The player who makes the most "
     value: 'restext://Directive_PlayerWhoMakesTheMost_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:9416
   - type: 'conditional'
@@ -137,7 +137,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:9441
 - type: 'section'
-  # ../en-US.restext:145 | "**Like a Whispering Shadow**"
+  # ../en-US.restext:146 | "**Like a Whispering Shadow**"
   title: 'restext://Heading_LikeAWhisperingShadow'
   style: 'hub-card'
   content:
@@ -156,7 +156,7 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:9477
   - type: 'text'
-    # ../en-US.restext:90 | "If a player ever overlaps..."
+    # ../en-US.restext:91 | "If a player ever overlaps..."
     value: 'restext://Directive_OverlapsExceedsCrownToken_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:9484
   - type: 'conditional'
@@ -184,13 +184,13 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:9500
   - type: 'section'
-    # ../en-US.restext:158 | "**Royal Eye**"
+    # ../en-US.restext:159 | "**Royal Eye**"
     title: 'restext://Heading_RoyalEye'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:9509
     - type: 'text'
-      # ../en-US.restext:63 | "Any player with a {icon:c..."
+      # ../en-US.restext:64 | "Any player with a {icon:c..."
       value: 'restext://Directive_CreepyMarkerOnScoreTrackLose1VP'
   # ../.source/ATimeofWar_Eng_v8.cs:9520
   - type: 'break'
@@ -209,7 +209,7 @@ nodes:
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:9535
       - type: 'text'
-        # ../en-US.restext:116 | "{icon:s3_weapontoken}toke..."
+        # ../en-US.restext:117 | "{icon:s3_weapontoken}toke..."
         value: 'restext://Directive_WeaponTokensSpendLikeMoney'
   - match: 'vp'
     nodes:

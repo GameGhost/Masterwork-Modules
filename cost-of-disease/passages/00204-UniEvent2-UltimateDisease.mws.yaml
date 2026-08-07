@@ -2,18 +2,18 @@
 ---
 format: 'mws/0.4'
 passage_id: 'UniEvent2-UltimateDisease'
-# ../en-US.restext:1838 | "The Ultimate Disease"
+# ../en-US.restext:1835 | "The Ultimate Disease"
 title: 'restext://UniEvent2_UltimateDisease_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:23183
 - type: 'text'
-  # ../en-US.restext:314 | "Special Event"
+  # ../en-US.restext:316 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/TheCostofDisease_Eng_v10.cs:23184
 - type: 'text'
-  # ../en-US.restext:1839 | "As the oppressive sunshin..."
+  # ../en-US.restext:1836 | "As the oppressive sunshin..."
   value: 'restext://UniEvent2_UltimateDisease_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:23185
 - type: 'switch'
@@ -27,7 +27,7 @@ nodes:
       expr: '[nameA, nameB].shuffled("UniEvent2-UltimateDisease_0")[0]'
     # ../.source/TheCostofDisease_Eng_v10.cs:23187
     - type: 'text'
-      # ../en-US.restext:1841 | "{_rnd_UniEvent2_UltimateD..."
+      # ../en-US.restext:1838 | "{_rnd_UniEvent2_UltimateD..."
       value: 'restext://UniEvent2_UltimateDisease_004'
       lets:
       - '_rnd_UniEvent2_UltimateDisease_0'
@@ -39,7 +39,7 @@ nodes:
       expr: '[nameA, nameB, nameC].shuffled("UniEvent2-UltimateDisease_1")[0]'
     # ../.source/TheCostofDisease_Eng_v10.cs:23192
     - type: 'text'
-      # ../en-US.restext:1842 | "{_rnd_UniEvent2_UltimateD..."
+      # ../en-US.restext:1839 | "{_rnd_UniEvent2_UltimateD..."
       value: 'restext://UniEvent2_UltimateDisease_005'
       lets:
       - '_rnd_UniEvent2_UltimateDisease_1'
@@ -51,7 +51,7 @@ nodes:
       expr: '[nameA, nameB, nameC, nameD].shuffled("UniEvent2-UltimateDisease_2")[0]'
     # ../.source/TheCostofDisease_Eng_v10.cs:23197
     - type: 'text'
-      # ../en-US.restext:1843 | "{_rnd_UniEvent2_UltimateD..."
+      # ../en-US.restext:1840 | "{_rnd_UniEvent2_UltimateD..."
       value: 'restext://UniEvent2_UltimateDisease_006'
       lets:
       - '_rnd_UniEvent2_UltimateDisease_2'
@@ -63,7 +63,7 @@ nodes:
       expr: '[nameA, nameB, nameC, nameD, nameE].shuffled("UniEvent2-UltimateDisease_3")[0]'
     # ../.source/TheCostofDisease_Eng_v10.cs:23202
     - type: 'text'
-      # ../en-US.restext:1844 | "{_rnd_UniEvent2_UltimateD..."
+      # ../en-US.restext:1841 | "{_rnd_UniEvent2_UltimateD..."
       value: 'restext://UniEvent2_UltimateDisease_007'
       lets:
       - '_rnd_UniEvent2_UltimateDisease_3'
@@ -74,53 +74,53 @@ nodes:
     expr: '[nameA, nameB].shuffled("UniEvent2-UltimateDisease_4")[0]'
   # ../.source/TheCostofDisease_Eng_v10.cs:23207
   - type: 'text'
-    # ../en-US.restext:1840 | "{_rnd_UniEvent2_UltimateD..."
+    # ../en-US.restext:1837 | "{_rnd_UniEvent2_UltimateD..."
     value: 'restext://UniEvent2_UltimateDisease_003'
     lets:
     - '_rnd_UniEvent2_UltimateDisease_4'
 # ../.source/TheCostofDisease_Eng_v10.cs:23210
 - type: 'text'
-  # ../en-US.restext:1845 | "III, the cousins assemble..."
+  # ../en-US.restext:1842 | "III, the cousins assemble..."
   value: 'restext://UniEvent2_UltimateDisease_008'
 # ../.source/TheCostofDisease_Eng_v10.cs:23211
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:23213
 - type: 'text'
-  # ../en-US.restext:1846 | "Some, however, were more ..."
+  # ../en-US.restext:1843 | "Some, however, were more ..."
   value: 'restext://UniEvent2_UltimateDisease_009'
 # ../.source/TheCostofDisease_Eng_v10.cs:23214
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:23218
 - type: 'text'
-  # ../en-US.restext:186 | "**VOTE**"
+  # ../en-US.restext:188 | "**VOTE**"
   value: 'restext://Heading_Vote'
 # ../.source/TheCostofDisease_Eng_v10.cs:23220
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:23221
 - type: 'text'
-  # ../en-US.restext:1847 | "Players will now vote to ..."
+  # ../en-US.restext:1844 | "Players will now vote to ..."
   value: 'restext://UniEvent2_UltimateDisease_010'
 # ../.source/TheCostofDisease_Eng_v10.cs:23222
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:23224
 - type: 'text'
-  # ../en-US.restext:1848 | "A **Yay** vote is a vote ..."
+  # ../en-US.restext:1845 | "A **Yay** vote is a vote ..."
   value: 'restext://UniEvent2_UltimateDisease_011'
 # ../.source/TheCostofDisease_Eng_v10.cs:23236
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:23237
 - type: 'text'
-  # ../en-US.restext:1849 | "A **Nay** vote is a vote ..."
+  # ../en-US.restext:1846 | "A **Nay** vote is a vote ..."
   value: 'restext://UniEvent2_UltimateDisease_012'
 # ../.source/TheCostofDisease_Eng_v10.cs:23244
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:23246
 - type: 'text'
-  # ../en-US.restext:1850 | "When all players have cho..."
+  # ../en-US.restext:1847 | "When all players have cho..."
   value: 'restext://UniEvent2_UltimateDisease_013'
 # ../.source/TheCostofDisease_Eng_v10.cs:23255
 - type: 'break'
@@ -132,7 +132,7 @@ nodes:
   label: 'restext://Click_StartVote'
   content:
   - type: 'text'
-    # ../en-US.restext:377 | "Click on the 'Start Votin..."
+    # ../en-US.restext:379 | "Click on the 'Start Votin..."
     value: 'restext://Voting_Instructions'
   - type: 'break'
     style: 'paragraph'
@@ -143,27 +143,27 @@ nodes:
     style: 'paragraph'
   - type: 'popup'
     layout: 'countdown_action'
-    # ../en-US.restext:378 | "Start Voting"
+    # ../en-US.restext:380 | "Start Voting"
     label: 'restext://Voting_StartButton'
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:75 | "3"
+      # ../en-US.restext:79 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:76 | "2"
+      # ../en-US.restext:80 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:73 | "1"
+      # ../en-US.restext:77 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:74 | "REVEAL"
+      # ../en-US.restext:78 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:74 | "REVEAL"
+    # ../en-US.restext:78 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: 'UniEvent2-UltimateDisease2' # ./00348-UniEvent2-UltimateDisease2.mws.yaml
     snapshot: false

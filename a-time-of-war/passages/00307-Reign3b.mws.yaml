@@ -10,7 +10,7 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:28308
 - type: 'text'
-  # ../en-US.restext:2348 | "The advisor thanked me fo..."
+  # ../en-US.restext:2341 | "The advisor thanked me fo..."
   value: 'restext://Reign3b_002'
 # ../.source/ATimeofWar_Eng_v8.cs:28310
 - type: 'conditional'
@@ -18,7 +18,7 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:28312
   - type: 'text'
-    # ../en-US.restext:2349 | "As expected, open season ..."
+    # ../en-US.restext:2342 | "As expected, open season ..."
     value: 'restext://Reign3b_003'
 # ../.source/ATimeofWar_Eng_v8.cs:28315
 - type: 'break'
@@ -44,17 +44,17 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:28351
     - type: 'text'
-      # ../en-US.restext:2350 | "{crownL} Choose one **ani..."
+      # ../en-US.restext:2343 | "{crownL} Choose one **ani..."
       value: 'restext://Reign3b_004'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:28362
     - type: 'text'
-      # ../en-US.restext:65 | "{crownR} {ch2}"
+      # ../en-US.restext:66 | "{crownR} {ch2}"
       value: 'restext://Directive_CrownRCh2_Bare'
   # ../.source/ATimeofWar_Eng_v8.cs:28366
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:28370
   - type: 'text'
-    # ../en-US.restext:66 | "_Reminder: The {icon:s3_c..."
+    # ../en-US.restext:67 | "_Reminder: The {icon:s3_c..."
     value: 'restext://Directive_CrownTokenMovementReminder'

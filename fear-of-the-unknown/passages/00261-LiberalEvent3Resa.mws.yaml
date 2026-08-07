@@ -12,7 +12,7 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:2205 | "Please enter the name of ..."
+      # ../en-US.restext:2200 | "Please enter the name of ..."
       value: 'restext://LiberalEvent3Resa_001'
     - type: 'input'
       label: ''
@@ -29,58 +29,58 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29441
 - type: 'text'
-  # ../en-US.restext:2206 | "**The {menname} Program**"
+  # ../en-US.restext:2201 | "**The {menname} Program**"
   value: 'restext://LiberalEvent3Resa_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29446
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29450
 - type: 'text'
-  # ../en-US.restext:2207 | "**Newsprint - {newspaper}..."
+  # ../en-US.restext:2202 | "**Newsprint - {newspaper}..."
   value: 'restext://LiberalEvent3Resa_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29459
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29461
 - type: 'text'
-  # ../en-US.restext:2208 | "The Asylum has announced ..."
+  # ../en-US.restext:2203 | "The Asylum has announced ..."
   value: 'restext://LiberalEvent3Resa_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29463
 - type: 'switch'
   on: 'mentype'
   cases:
-  # ../en-US.restext:145 | "Engineering"
+  # ../en-US.restext:146 | "Engineering"
   - match: 'restext://Focus_Engineering'
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:29465
     - type: 'text'
-      # ../en-US.restext:2210 | "A new wing of the facilit..."
+      # ../en-US.restext:2205 | "A new wing of the facilit..."
       value: 'restext://LiberalEvent3Resa_006'
-  # ../en-US.restext:144 | "Chemistry"
+  # ../en-US.restext:145 | "Chemistry"
   - match: 'restext://Focus_Chemistry'
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:29469
     - type: 'text'
-      # ../en-US.restext:2211 | "Using new advances in con..."
+      # ../en-US.restext:2206 | "Using new advances in con..."
       value: 'restext://LiberalEvent3Resa_007'
-  # ../en-US.restext:143 | "Biology"
+  # ../en-US.restext:144 | "Biology"
   - match: 'restext://Focus_Biology'
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:29473
     - type: 'text'
-      # ../en-US.restext:2212 | "An entirely rebuilt surgi..."
+      # ../en-US.restext:2207 | "An entirely rebuilt surgi..."
       value: 'restext://LiberalEvent3Resa_008'
   default:
   # ../.source/FearoftheUnknown_Eng_v15.cs:29477
   - type: 'text'
-    # ../en-US.restext:2209 | "While officials remain ti..."
+    # ../en-US.restext:2204 | "While officials remain ti..."
     value: 'restext://LiberalEvent3Resa_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29479
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29481
 - type: 'text'
-  # ../en-US.restext:2213 | "While critics of the hosp..."
+  # ../en-US.restext:2208 | "While critics of the hosp..."
   value: 'restext://LiberalEvent3Resa_009'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29486
 - type: 'break'
@@ -102,14 +102,14 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:29509
   - type: 'text'
-    # ../en-US.restext:2214 | "You gain **3VP**."
+    # ../en-US.restext:2209 | "You gain **3VP**."
     value: 'restext://LiberalEvent3Resa_010'
   # ../.source/FearoftheUnknown_Eng_v15.cs:29515
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:29517
   - type: 'text'
-    # ../en-US.restext:2215 | "Retrieve the **Menagerie*..."
+    # ../en-US.restext:2210 | "Retrieve the **Menagerie*..."
     value: 'restext://LiberalEvent3Resa_011'
   # ../.source/FearoftheUnknown_Eng_v15.cs:29524
   - type: 'conditional'
@@ -117,7 +117,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:29526
     - type: 'text'
-      # ../en-US.restext:2216 | "s."
+      # ../en-US.restext:2211 | "s."
       value: 'restext://LiberalEvent3Resa_012'
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:29530
@@ -128,7 +128,7 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:29534
   - type: 'text'
-    # ../en-US.restext:2217 | "At the End of the Generat..."
+    # ../en-US.restext:2212 | "At the End of the Generat..."
     value: 'restext://LiberalEvent3Resa_013'
   # ../.source/FearoftheUnknown_Eng_v15.cs:29549
   - type: 'conditional'

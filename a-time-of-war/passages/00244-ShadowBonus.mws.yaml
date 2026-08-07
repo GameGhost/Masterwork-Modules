@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ShadowBonus'
-# ../en-US.restext:1990 | "Royal Advisor"
+# ../en-US.restext:1983 | "Royal Advisor"
 title: 'restext://ShadowBonus_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:24323
 - type: 'text'
-  # ../en-US.restext:1991 | "The player(s) closest to ..."
+  # ../en-US.restext:1984 | "The player(s) closest to ..."
   value: 'restext://ShadowBonus_002'
 # ../.source/ATimeofWar_Eng_v8.cs:24339
 - type: 'break'
@@ -50,7 +50,7 @@ nodes:
           # ../.source/ATimeofWar_Eng_v8.cs:24357
           - type: 'assign'
             var: 'mostben'
-            # ../en-US.restext:1992 | "Multiple players are tied..."
+            # ../en-US.restext:1985 | "Multiple players are tied..."
             expr: '"restext://ShadowBonus_003"'
       - match: 3
         nodes:
@@ -79,7 +79,7 @@ nodes:
           # ../.source/ATimeofWar_Eng_v8.cs:24376
           - type: 'assign'
             var: 'mostben'
-            # ../en-US.restext:1992 | "Multiple players are tied..."
+            # ../en-US.restext:1985 | "Multiple players are tied..."
             expr: '"restext://ShadowBonus_003"'
       - match: 4
         nodes:
@@ -114,7 +114,7 @@ nodes:
           # ../.source/ATimeofWar_Eng_v8.cs:24399
           - type: 'assign'
             var: 'mostben'
-            # ../en-US.restext:1992 | "Multiple players are tied..."
+            # ../en-US.restext:1985 | "Multiple players are tied..."
             expr: '"restext://ShadowBonus_003"'
       default:
       # ../.source/ATimeofWar_Eng_v8.cs:24404
@@ -154,7 +154,7 @@ nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:24426
         - type: 'assign'
           var: 'mostben'
-          # ../en-US.restext:1992 | "Multiple players are tied..."
+          # ../en-US.restext:1985 | "Multiple players are tied..."
           expr: '"restext://ShadowBonus_003"'
   - match: 'evil'
     nodes:
@@ -183,7 +183,7 @@ nodes:
           # ../.source/ATimeofWar_Eng_v8.cs:24444
           - type: 'assign'
             var: 'mostben'
-            # ../en-US.restext:1992 | "Multiple players are tied..."
+            # ../en-US.restext:1985 | "Multiple players are tied..."
             expr: '"restext://ShadowBonus_003"'
       - match: 3
         nodes:
@@ -212,7 +212,7 @@ nodes:
           # ../.source/ATimeofWar_Eng_v8.cs:24463
           - type: 'assign'
             var: 'mostben'
-            # ../en-US.restext:1992 | "Multiple players are tied..."
+            # ../en-US.restext:1985 | "Multiple players are tied..."
             expr: '"restext://ShadowBonus_003"'
       - match: 4
         nodes:
@@ -247,7 +247,7 @@ nodes:
           # ../.source/ATimeofWar_Eng_v8.cs:24486
           - type: 'assign'
             var: 'mostben'
-            # ../en-US.restext:1992 | "Multiple players are tied..."
+            # ../en-US.restext:1985 | "Multiple players are tied..."
             expr: '"restext://ShadowBonus_003"'
       default:
       # ../.source/ATimeofWar_Eng_v8.cs:24491
@@ -287,7 +287,7 @@ nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:24513
         - type: 'assign'
           var: 'mostben'
-          # ../en-US.restext:1992 | "Multiple players are tied..."
+          # ../en-US.restext:1985 | "Multiple players are tied..."
           expr: '"restext://ShadowBonus_003"'
 # ../.source/ATimeofWar_Eng_v8.cs:24517
 - type: 'switch'

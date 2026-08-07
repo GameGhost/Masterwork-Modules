@@ -65,7 +65,11 @@ Click_StorybookMessage=click here for a Storybook message.
 Click_TabulateScores=Click to tabulate scores for posterity...
 Click_VotedCleanse=Click here if you voted to Cleanse.
 Click_VotedNay=Click here if you voted Nay.
-Common_001=Whispers Abate
+Common_001=More Time Than Ever
+Common_002=Absent Parent
+Common_003=The Form of the Wolf
+Common_004=Whispers Abate
+Common_005=Immortality
 Common_Gentleman=gentleman
 Common_Gentlewoman=gentlewoman
 Common_Private_Decision_Warning=**Do not allow the other players to see the Storybook while making the decision below.**
@@ -155,7 +159,6 @@ Heading_FraternityOfHunters=**Fraternity of Hunters**
 Heading_GiftOfSpawning=**A Gift of Spawning**
 Heading_HuntersHaven=**Hunter's Haven**
 Heading_HuntersRest=**The Hunter's Rest**
-Heading_Immortality=**Immortality**
 Heading_ItIsWithSincerity=**It is with sincerity that I:**
 Heading_Knowledge=**Knowledge**
 Heading_Library=**LIBRARY**
@@ -165,7 +168,6 @@ Heading_MasterworkCompletion={icon:storybook} **Masterwork Completion**
 Heading_MasterworkRecipe={icon:storybook} **Masterwork Recipe**
 Heading_MessageOfConfirmation=**A Message of Confirmation**
 Heading_MonsterSpawn=**MONSTER SPAWN**
-Heading_MoreTimeThanEver=**More Time Than Ever**
 Heading_NobelPrizeInMedicine=**Nobel Prize in Medicine**
 Heading_OrderOfStHubertus_=**Order of St. Hubertus**
 Heading_PerfectMentalBalance=**Perfect Mental Balance**
@@ -838,17 +840,15 @@ Unicure1_003=**Gain {fevervp}VP.**
 Unicure1_004=Then, move the {icon:angrymob_icon} marker **2 spaces** to the right.
 
 # passages/00064-LosingOrderAid.mws.yaml
-LosingOrderAid_001=**Despite the wolves' Loss**
-LosingOrderAid_002=It was during a period of adjustment to their new surroundings that customary preparations were made to redecorate the west wing of the manor in a more modern style to which they were accustomed. Expecting a delivery of druggets from a Turkish carpeter, instead they were greeted by a strapping young man in a gray cloak. He tipped his fur cap solemnly.
-LosingOrderAid_003="Your family has made a contribution to our Order and we are here to repay that debt through service," the young man stated, pulling back his shirt sleeve to reveal a tattoo of a wolf's head. He then exited to the servant's quarters without further instruction.
-LosingOrderAid_004={nameA} III **immediately gains 1 Servant from Lost and $1**.
-LosingOrderAid_005={nameB} III **immediately gains 1 Servant from Lost and $1**.
-LosingOrderAid_006={nameC} III **immediately gains 1 Servant from Lost and $1**.
-LosingOrderAid_007={nameD} III **immediately gains 1 Servant from Lost and $1**.
-LosingOrderAid_008={nameE} III **immediately gains 1 Servant from Lost and $1**.
-LosingOrderAid_010=**Despite the Hunters' Loss**
-LosingOrderAid_011=It was during a period of adjustment to their new surroundings that customary preparations were made to redecorate the west wing of the manor in a more modern style to which they were accustomed. Expecting a delivery of druggets from a Persian carpeter, instead they were greeted by a strapping young man in a burgundy leather coat. He tipped his wide-brimmed hat solemnly.
-LosingOrderAid_012="Your family has made a contribution to our Fraternity and we are here to repay that debt through service," the young man stated, pulling back his shirt sleeve to reveal a tattoo of a bow and arrow. He then exited to the servant's quarters without further instruction.
+LosingOrderAid_001=It was during a period of adjustment to their new surroundings that customary preparations were made to redecorate the west wing of the manor in a more modern style to which they were accustomed. Expecting a delivery of druggets from a Turkish carpeter, instead they were greeted by a strapping young man in a gray cloak. He tipped his fur cap solemnly.
+LosingOrderAid_002="Your family has made a contribution to our Order and we are here to repay that debt through service," the young man stated, pulling back his shirt sleeve to reveal a tattoo of a wolf's head. He then exited to the servant's quarters without further instruction.
+LosingOrderAid_003={nameA} III **immediately gains 1 Servant from Lost and $1**.
+LosingOrderAid_004={nameB} III **immediately gains 1 Servant from Lost and $1**.
+LosingOrderAid_005={nameC} III **immediately gains 1 Servant from Lost and $1**.
+LosingOrderAid_006={nameD} III **immediately gains 1 Servant from Lost and $1**.
+LosingOrderAid_007={nameE} III **immediately gains 1 Servant from Lost and $1**.
+LosingOrderAid_009=It was during a period of adjustment to their new surroundings that customary preparations were made to redecorate the west wing of the manor in a more modern style to which they were accustomed. Expecting a delivery of druggets from a Persian carpeter, instead they were greeted by a strapping young man in a burgundy leather coat. He tipped his wide-brimmed hat solemnly.
+LosingOrderAid_010="Your family has made a contribution to our Fraternity and we are here to repay that debt through service," the young man stated, pulling back his shirt sleeve to reveal a tattoo of a bow and arrow. He then exited to the servant's quarters without further instruction.
 
 # passages/00065-S5Special1b.mws.yaml
 S5Special1b_001=Humble Beginnings
@@ -1267,7 +1267,6 @@ SanityChoice_011=6
 SanityChoice_012=7
 
 # passages/00128-LycanthropicMessage.mws.yaml
-LycanthropicMessage_001=The Form of the Wolf
 LycanthropicMessage_002=Confirming the existence of individuals with the ability to change into an animal form had remarkable consequences. It is possible that it has even disrupted the studies of one of our kin.
 
 # passages/00129-LycanEvil.mws.yaml
@@ -1292,7 +1291,7 @@ HospitalVisitCheck2_008="This is all wrong. What do they teach in these surgeon 
 HospitalVisitCheck2_009=At this point, {hospsign} had to be escorted by security from the premises. They are barred from any further tours of the facilities.
 
 # passages/00132-HospitalNegative.mws.yaml
-HospitalNegative_001=**Lack of Hospitality**
+HospitalNegative_001=Lack of Hospitality
 HospitalNegative_002=Unfortunately, the lack of participation in the Hospital Board of Trustees needed to be reckoned and any who chose to forgo their obligations felt their business dealings in the local area become even further strained.
 HospitalNegative_003=Dr. {nameA} Jr. must immediately lose 6VP and discard an Estate Upgrade of their choice.
 HospitalNegative_004=Dr. {nameB} Jr. must immediately lose 6VP and discard an Estate Upgrade of their choice.
@@ -1480,7 +1479,7 @@ S5HospA2_005=**With the University built,** the town slowly embraced the advance
 S5HospA2_006=Click to move to a more modern age...
 
 # passages/00166-DetEffectRandom.mws.yaml
-DetEffectRandom_001=**The Effects of Immortality** 
+DetEffectRandom_001=The Effects of Immortality
 DetEffectRandom_002=**- Early Years**
 DetEffectRandom_003=**- Middle Years**
 DetEffectRandom_004=as a spider held by a thread above an all-consuming flame.
@@ -1683,13 +1682,11 @@ WolvesEvil1_004=Making a deal with demons? It was impossible for the young scien
 WolvesEvil1_006=If a player donates, they will receive an immediate bonus based on the level of the Experiment they donate (_higher levels granting higher rewards_).
 
 # passages/00188-DiseaseEffect.mws.yaml
-DiseaseEffect_001=**Not Passed Down**
-DiseaseEffect_002=Twenty years passed without incident. As they were known to state, the only true science was that which one could observe plainly to a most dizzying effect. Surely, there would have been signs of the disease resurfacing in the next generation by then if it were truly a hereditary disease.
-DiseaseEffect_003=Family curse? They dismissed it as simple superstition.
-DiseaseEffect_004=All players who did not complete or store their **Hereditary Disease Experiment** discard them to the scenario box.
-DiseaseEffect_005=**A Continuing Malady**
-DiseaseEffect_006=It appeared that the effects of the disease had been inherited by the next Generation. Without a cure, symptoms of this ailment began to surface at an early age and would carry on through the remainder of their lives.
-DiseaseEffect_007=Any player who did not complete or store their Hereditary Disease Experiment draws a **Maladjustment** card for the next Generation. Then, return that Experiment to the scenario box.
+DiseaseEffect_001=Twenty years passed without incident. As they were known to state, the only true science was that which one could observe plainly to a most dizzying effect. Surely, there would have been signs of the disease resurfacing in the next generation by then if it were truly a hereditary disease.
+DiseaseEffect_002=Family curse? They dismissed it as simple superstition.
+DiseaseEffect_003=All players who did not complete or store their **Hereditary Disease Experiment** discard them to the scenario box.
+DiseaseEffect_004=It appeared that the effects of the disease had been inherited by the next Generation. Without a cure, symptoms of this ailment began to surface at an early age and would carry on through the remainder of their lives.
+DiseaseEffect_005=Any player who did not complete or store their Hereditary Disease Experiment draws a **Maladjustment** card for the next Generation. Then, return that Experiment to the scenario box.
 
 # passages/00189-TaxesEventNoConfrontation.mws.yaml
 TaxesEventNoConfrontation_001=Rising Cost of Living
@@ -1905,8 +1902,7 @@ EquitableValues_008=The **2** players with the fewest VP gain 1 of their Servant
 EquitableValues_009=The player with the most points gains 2 {icon:creepy_icon}.
 
 # passages/00213-LycanMessageGood.mws.yaml
-LycanMessageGood_001=**The Form of the Wolf**
-LycanMessageGood_002=Though the sight had now become commonplace, confirming the existence of persons with the ability to change into an animal form had remarkable consequences. It is possible that it even disrupted the studies of one of our kin.
+LycanMessageGood_001=Though the sight had now become commonplace, confirming the existence of persons with the ability to change into an animal form had remarkable consequences. It is possible that it even disrupted the studies of one of our kin.
 
 # passages/00214-WolvesEco-Friendly.mws.yaml
 WolvesEco_Friendly_001=A Message
@@ -1981,12 +1977,10 @@ Preface_TCOD_006=Dr. Ensign Benwallis
 ImmortalitySetup_001=**To Infinity**
 
 # passages/00225-Diseases2.mws.yaml
-Diseases2_001=**Wasted Potential**
-Diseases2_002=While the disease that plagued the scientists was manageable, the effects were still tiresome. Time spent advancing what they considered "true science" was instead squandered upon practical medical applications to assuage their own afflictions.
-Diseases2_003=All players that have not completed their **Hereditary Disease Experiment** must **lose 2VP**.
-Diseases2_004=**A Cleansing**
-Diseases2_005=When the symptoms grew too fierce, they locked themselves away inside one of the myriad rooms of their estate. This resulted in an unfortunate loss of productivity and an odiferous contamination. When chemicals would not suffice for cleansing, it was deemed necessary to burn the entire room and start again.
-Diseases2_006=All players that have not completed their **Hereditary Disease Experiment** must **discard an Estate Upgrade tile** to the box or **lose 3VP**.
+Diseases2_001=While the disease that plagued the scientists was manageable, the effects were still tiresome. Time spent advancing what they considered "true science" was instead squandered upon practical medical applications to assuage their own afflictions.
+Diseases2_002=All players that have not completed their **Hereditary Disease Experiment** must **lose 2VP**.
+Diseases2_003=When the symptoms grew too fierce, they locked themselves away inside one of the myriad rooms of their estate. This resulted in an unfortunate loss of productivity and an odiferous contamination. When chemicals would not suffice for cleansing, it was deemed necessary to burn the entire room and start again.
+Diseases2_004=All players that have not completed their **Hereditary Disease Experiment** must **discard an Estate Upgrade tile** to the box or **lose 3VP**.
 
 # passages/00226-DiseaseEnd.mws.yaml
 DiseaseEnd_001=Longevity and Clarity
@@ -2017,19 +2011,18 @@ MWTokenResolve_004=It was clear that they would have been much more able to unde
 MWTokenResolve_005=Resolve your Masterwork as normal. Then, for each Experiment under your Masterwork, **lose 4VP**. Discard all cards under your Masterwork.
 
 # passages/00230-Evilsforgive.mws.yaml
-Evilsforgive_001=**Still Wary**
-Evilsforgive_002=For the family members that had aided them in their efforts, they wore wide false-smiles and offered toasts to their continued partnership. But, for those who had plotted against them, they remained wary.
-Evilsforgive_003={nameA} III **immediately gains 1** {icon:creepy_icon}.
-Evilsforgive_004={nameB} III **immediately gains 1** {icon:creepy_icon}.
-Evilsforgive_005={nameC} III **immediately gains 1** {icon:creepy_icon}.
-Evilsforgive_006={nameD} III **immediately gains 1** {icon:creepy_icon}.
-Evilsforgive_007={nameE} III **immediately gains 1** {icon:creepy_icon}.
-Evilsforgive_008=**Forgiveness**
-Evilsforgive_009=The scientists' doubts were put at ease when a werewolf in a brown sack suit took to the podium to preside over a town meeting. A mixture of lycanthropic beings, horned beasts, and those still holding onto their humanity were in attendance outside the school. The force of the wolf's words caused tears to stream down their cheeks.
-Evilsforgive_010="We want to shatter those unfortunate stereotypes. We hold no grudges. We want to work with you all, not against you. The child should not be punished for the sins of the father. You are all welcome." The werewolf blew their cold nose into their handkerchief as a rumbling cheer rose from the crowd.
-Evilsforgive_011=As a token of this myth-shattering event, many handshakes were exchanged that day and a promise was made to press forward into a more modern era; an era where science could improve their lives ten-fold!
-Evilsforgive_012=Retrieve the **Master's Study** Vanity Estate Upgrade tiles.
-Evilsforgive_013=Starting with the player in last place and continuing in ascending order by point total, each player chooses a **Master's Study** tile and adds it to their Estate. No additional cost is paid for a new plot to place this tile. _(Ties are broken by the player that went later in turn order in the previous round.)_
+Evilsforgive_001=For the family members that had aided them in their efforts, they wore wide false-smiles and offered toasts to their continued partnership. But, for those who had plotted against them, they remained wary.
+Evilsforgive_002={nameA} III **immediately gains 1** {icon:creepy_icon}.
+Evilsforgive_003={nameB} III **immediately gains 1** {icon:creepy_icon}.
+Evilsforgive_004={nameC} III **immediately gains 1** {icon:creepy_icon}.
+Evilsforgive_005={nameD} III **immediately gains 1** {icon:creepy_icon}.
+Evilsforgive_006={nameE} III **immediately gains 1** {icon:creepy_icon}.
+Evilsforgive_007=**Forgiveness**
+Evilsforgive_008=The scientists' doubts were put at ease when a werewolf in a brown sack suit took to the podium to preside over a town meeting. A mixture of lycanthropic beings, horned beasts, and those still holding onto their humanity were in attendance outside the school. The force of the wolf's words caused tears to stream down their cheeks.
+Evilsforgive_009="We want to shatter those unfortunate stereotypes. We hold no grudges. We want to work with you all, not against you. The child should not be punished for the sins of the father. You are all welcome." The werewolf blew their cold nose into their handkerchief as a rumbling cheer rose from the crowd.
+Evilsforgive_010=As a token of this myth-shattering event, many handshakes were exchanged that day and a promise was made to press forward into a more modern era; an era where science could improve their lives ten-fold!
+Evilsforgive_011=Retrieve the **Master's Study** Vanity Estate Upgrade tiles.
+Evilsforgive_012=Starting with the player in last place and continuing in ascending order by point total, each player chooses a **Master's Study** tile and adds it to their Estate. No additional cost is paid for a new plot to place this tile. _(Ties are broken by the player that went later in turn order in the previous round.)_
 
 # passages/00231-SymposiumMiddle.mws.yaml
 SymposiumMiddle_001=A Cure for Yellow Fever
@@ -2456,12 +2449,11 @@ Gen1Creepy_RefusalBuild_007=You may choose to immediately retrieve and build the
 Gen1Creepy_RefusalBuild_008=The **Reading Room** acts the same as any other action space in your Estate: On your turn, you may place a Servant or Spouse on this tile to **lose 2** {icon:insanity_icon}.
 
 # passages/00296-Gen1CreepyYes.mws.yaml
-Gen1CreepyYes_001=**Agreed**
-Gen1CreepyYes_002=The representative was appreciative of {gen1creep}'s humble demonstration. As the experiment was performed, they proceeded to take extensive notes which were then sealed up in a leather satchel as they departed soon after. The satchel was conspicuously emblazoned with the insignia of a wolf's head.
-Gen1CreepyYes_003=Perhaps it had been a chance meeting, yet for some reason, the scientist suspected a deeper meaning had yet to be revealed.
-Gen1CreepyYes_004=You may immediately take a **Perform an Experiment** action. Then, return the {icon:storybook} token to the supply.
-Gen1CreepyYes_005=The individual produced a banker's cheque from their overcoat and an ink pen from their breast pocket, signing the note with an extravagant signature. Stamped upon the egg-shell cardstock in golden foil was the insignia of a bow and arrow. The man twirled his handlebar mustache with a deep laugh before exiting by carriage.
-Gen1CreepyYes_006=Gain $2. Then, return the {icon:storybook} token to the supply.
+Gen1CreepyYes_001=The representative was appreciative of {gen1creep}'s humble demonstration. As the experiment was performed, they proceeded to take extensive notes which were then sealed up in a leather satchel as they departed soon after. The satchel was conspicuously emblazoned with the insignia of a wolf's head.
+Gen1CreepyYes_002=Perhaps it had been a chance meeting, yet for some reason, the scientist suspected a deeper meaning had yet to be revealed.
+Gen1CreepyYes_003=You may immediately take a **Perform an Experiment** action. Then, return the {icon:storybook} token to the supply.
+Gen1CreepyYes_004=The individual produced a banker's cheque from their overcoat and an ink pen from their breast pocket, signing the note with an extravagant signature. Stamped upon the egg-shell cardstock in golden foil was the insignia of a bow and arrow. The man twirled his handlebar mustache with a deep laugh before exiting by carriage.
+Gen1CreepyYes_005=Gain $2. Then, return the {icon:storybook} token to the supply.
 
 # passages/00297-Gen1CreepyNo.mws.yaml
 Gen1CreepyNo_001=Ridiculous!
@@ -2501,12 +2493,10 @@ Gen1Creepy_AgreedReturn_006=The man peered out from under his cloth hood, his ey
 Gen1Creepy_AgreedReturn_007=It seemed that decision of their parent had finally come to fruition. The gentlemen were kind enough to offer {gen1creep} II a choice of debt repayment.
 
 # passages/00302-Gen1Insanity-Yes.mws.yaml
-Gen1Insanity_Yes_001=**Absent Parent**
 Gen1Insanity_Yes_003=An investment in a summer home meant time away from the estate, and these increasingly frequent visits to rekindle sanity meant {gen1sane} II's childhood guidance came more from the servants around the home than from their parental figures. This left an unfortunate void in their psychological development, one that affected their actions for the remainder of their life.
 
 # passages/00303-Gen1Insanity-Yes2.mws.yaml
-Gen1Insanity_Yes2_001=Absent Parent
-Gen1Insanity_Yes2_002=An investment in a summer home may have calmed their parent's nerves during times of stress, but it also meant time away from the Estate. These increasingly frequent visits to rekindle sanity meant {gen1sane} II's childhood guidance came more from the servants around the home than from their parental figures. This left an unfortunate void in their psychological development, one that affected their actions for the remainder of their life.
+Gen1Insanity_Yes2_001=An investment in a summer home may have calmed their parent's nerves during times of stress, but it also meant time away from the Estate. These increasingly frequent visits to rekindle sanity meant {gen1sane} II's childhood guidance came more from the servants around the home than from their parental figures. This left an unfortunate void in their psychological development, one that affected their actions for the remainder of their life.
 
 # passages/00304-Gen1Insanity-NoExtraAction.mws.yaml
 Gen1Insanity_NoExtraAction_003=And so this matter of administrative duties was handled with the utmost brevity, allowing them to focus on the monumental task at hand.

@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'DuelResolution1sci'
-# ../en-US.restext:1834 | "Science"
+# ../en-US.restext:1827 | "Science"
 title: 'restext://DuelResolution1sci_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:22064
 - type: 'text'
-  # ../en-US.restext:1835 | "Please choose which playe..."
+  # ../en-US.restext:1828 | "Please choose which playe..."
   value: 'restext://DuelResolution1sci_002'
 # ../.source/ATimeofWar_Eng_v8.cs:22067
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:22070
 - type: 'link'
-  # ../en-US.restext:1836 | "{sabotagee1} had the most."
+  # ../en-US.restext:1829 | "{sabotagee1} had the most."
   label: 'restext://DuelResolution1sci_003'
   target: 'DuelResolution1b' # ./00184-DuelResolution1b.mws.yaml
   snapshot: true
@@ -33,7 +33,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:22075
 - type: 'link'
-  # ../en-US.restext:1837 | "{playersabotage1} had the..."
+  # ../en-US.restext:1830 | "{playersabotage1} had the..."
   label: 'restext://DuelResolution1sci_004'
   target: 'DuelResolution1b' # ./00184-DuelResolution1b.mws.yaml
   snapshot: true
@@ -51,7 +51,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:22079
 - type: 'link'
-  # ../en-US.restext:1838 | "They both had the same."
+  # ../en-US.restext:1831 | "They both had the same."
   label: 'restext://DuelResolution1sci_005'
   target: 'ScienceDuelTiedRes' # ./00216-ScienceDuelTiedRes.mws.yaml
   snapshot: true
@@ -59,10 +59,10 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:22102
   - type: 'assign'
     var: 'duelwinner'
-    # ../en-US.restext:1839 | "tied"
+    # ../en-US.restext:1832 | "tied"
     expr: '"restext://DuelResolution1sci_006"'
   # ../.source/ATimeofWar_Eng_v8.cs:22103
   - type: 'assign'
     var: 'duelloser'
-    # ../en-US.restext:1839 | "tied"
+    # ../en-US.restext:1832 | "tied"
     expr: '"restext://DuelResolution1sci_006"'

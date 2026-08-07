@@ -35,7 +35,7 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:6137
     - type: 'text'
-      # ../en-US.restext:70 | "Each player collects "
+      # ../en-US.restext:71 | "Each player collects "
       value: 'restext://Directive_EachPlayerCollects_Fragment'
     # ../.source/ATimeofWar_Eng_v8.cs:6140
     - type: 'conditional'
@@ -56,20 +56,20 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:6155
       - type: 'text'
-        # ../en-US.restext:71 | "Each player **pays $1** i..."
+        # ../en-US.restext:72 | "Each player **pays $1** i..."
         value: 'restext://Directive_EachPlayerPays1EstateTax'
   # ../.source/ATimeofWar_Eng_v8.cs:6163
   - type: 'break'
     style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:6169
 - type: 'section'
-  # ../en-US.restext:162 | "**Separatist Allegiance**"
+  # ../en-US.restext:163 | "**Separatist Allegiance**"
   title: 'restext://Heading_SeparatistAllegiance'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:6177
   - type: 'text'
-    # ../en-US.restext:88 | "If a player does **NOT** ..."
+    # ../en-US.restext:89 | "If a player does **NOT** ..."
     value: 'restext://Directive_NoSeparatistsFlag_OnceAction'
 # ../.source/ATimeofWar_Eng_v8.cs:6197
 - type: 'break'
@@ -90,7 +90,7 @@ nodes:
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:6213
   - type: 'text'
-    # ../en-US.restext:73 | "The Empire has decided to..."
+    # ../en-US.restext:74 | "The Empire has decided to..."
     value: 'restext://Directive_EmpireAdvancedWeaponryDeck'
 # ../.source/ATimeofWar_Eng_v8.cs:6218
 - type: 'break'
@@ -104,13 +104,13 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:6226
   - type: 'section'
-    # ../en-US.restext:139 | "**Everything is a Weapon**"
+    # ../en-US.restext:140 | "**Everything is a Weapon**"
     title: 'restext://Heading_EverythingIsAWeapon'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:6234
     - type: 'text'
-      # ../en-US.restext:107 | "When performing an Experi..."
+      # ../en-US.restext:108 | "When performing an Experi..."
       value: 'restext://Directive_SubstituteWeaponTokenForIngredient'
   # ../.source/ATimeofWar_Eng_v8.cs:6242
   - type: 'break'
@@ -122,7 +122,7 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:6252
   - type: 'popup'
     layout: 'end_of_round'
-    # ../en-US.restext:607 | "Click here at the end of ..."
+    # ../en-US.restext:605 | "Click here at the end of ..."
     label: 'restext://Peace2_005'
     target: 'PeaceEvent' # ./00047-PeaceEvent.mws.yaml
     # ../en-US.restext:288 | "End of Round"

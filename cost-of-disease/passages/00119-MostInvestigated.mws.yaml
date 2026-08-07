@@ -67,13 +67,13 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:12937
       - type: 'assign'
         var: 'society'
-        # ../en-US.restext:118 | "Fraternity of Hunters"
+        # ../en-US.restext:122 | "Fraternity of Hunters"
         expr: '"restext://Faction_FraternityOfHunters_Plain"'
       else:
       # ../.source/TheCostofDisease_Eng_v10.cs:12941
       - type: 'assign'
         var: 'society'
-        # ../en-US.restext:122 | "Order of St. Hubertus"
+        # ../en-US.restext:126 | "Order of St. Hubertus"
         expr: '"restext://Faction_OrderOfStHubertus_Plain"'
   # ../en-US.restext:29 | "good"
   - match: 'restext://Choice_Good_Lower'
@@ -85,13 +85,13 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:12948
       - type: 'assign'
         var: 'society'
-        # ../en-US.restext:118 | "Fraternity of Hunters"
+        # ../en-US.restext:122 | "Fraternity of Hunters"
         expr: '"restext://Faction_FraternityOfHunters_Plain"'
       else:
       # ../.source/TheCostofDisease_Eng_v10.cs:12952
       - type: 'assign'
         var: 'society'
-        # ../en-US.restext:122 | "Order of St. Hubertus"
+        # ../en-US.restext:126 | "Order of St. Hubertus"
         expr: '"restext://Faction_OrderOfStHubertus_Plain"'
 # ../.source/TheCostofDisease_Eng_v10.cs:12955
 - type: 'conditional'

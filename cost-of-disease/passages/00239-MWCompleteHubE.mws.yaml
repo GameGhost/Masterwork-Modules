@@ -7,16 +7,16 @@ nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:26474
 - type: 'let'
   var: '_rnd_MWCompleteHubE_0'
-  # ../en-US.restext:274 | Narrative_MasterworkExclaim_WorkDone | "The Work is Done"
-  # ../en-US.restext:271 | Narrative_MasterworkExclaim_Impossible | "I Have Done the Impossible"
-  # ../en-US.restext:273 | Narrative_MasterworkExclaim_LegacyEnsured | "My Legacy is Ensured"
-  # ../en-US.restext:272 | Narrative_MasterworkExclaim_Laugh | "AH HA HA HAAAAA!!!"
-  # ../en-US.restext:269 | Narrative_MasterworkExclaim_GloriousCreation | "My Glorious Creation"
-  # ../en-US.restext:270 | Narrative_MasterworkExclaim_GloryForever | "The Glory is Mine Forever!"
+  # ../en-US.restext:276 | Narrative_MasterworkExclaim_WorkDone | "The Work is Done"
+  # ../en-US.restext:273 | Narrative_MasterworkExclaim_Impossible | "I Have Done the Impossible"
+  # ../en-US.restext:275 | Narrative_MasterworkExclaim_LegacyEnsured | "My Legacy is Ensured"
+  # ../en-US.restext:274 | Narrative_MasterworkExclaim_Laugh | "AH HA HA HAAAAA!!!"
+  # ../en-US.restext:271 | Narrative_MasterworkExclaim_GloriousCreation | "My Glorious Creation"
+  # ../en-US.restext:272 | Narrative_MasterworkExclaim_GloryForever | "The Glory is Mine Forever!"
   expr: '["restext://Narrative_MasterworkExclaim_WorkDone", "restext://Narrative_MasterworkExclaim_Impossible", "restext://Narrative_MasterworkExclaim_LegacyEnsured", "restext://Narrative_MasterworkExclaim_Laugh", "restext://Narrative_MasterworkExclaim_GloriousCreation", "restext://Narrative_MasterworkExclaim_GloryForever"].shuffled("MWCompleteHubE_0")[0]'
 # ../.source/TheCostofDisease_Eng_v10.cs:26474
 - type: 'text'
-  # ../en-US.restext:2091 | "**{_rnd_MWCompleteHubE_0}..."
+  # ../en-US.restext:2084 | "**{_rnd_MWCompleteHubE_0}..."
   value: 'restext://MWCompleteHubE_001'
   lets:
   - '_rnd_MWCompleteHubE_0'
@@ -29,46 +29,46 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:26484
     - type: 'text'
-      # ../en-US.restext:267 | "Upon the stroke of midnig..."
+      # ../en-US.restext:269 | "Upon the stroke of midnig..."
       value: 'restext://Narrative_MasterworkCreation_Lightning'
   - if: 'typeE == "power"'
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:26490
     - type: 'text'
-      # ../en-US.restext:2093 | "To see my work in the fle..."
+      # ../en-US.restext:2086 | "To see my work in the fle..."
       value: 'restext://MWCompleteHubE_003'
   - if: 'typeE == "robot"'
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:26498
     - type: 'text'
-      # ../en-US.restext:2094 | "A brief, blinding flash a..."
+      # ../en-US.restext:2087 | "A brief, blinding flash a..."
       value: 'restext://MWCompleteHubE_004'
   - if: 'typeE == "weapon"'
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:26507
     - type: 'text'
-      # ../en-US.restext:268 | "I seized the firing mecha..."
+      # ../en-US.restext:270 | "I seized the firing mecha..."
       value: 'restext://Narrative_MasterworkCreation_Weapon'
   - if: 'typeE == "medicine"'
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:26511
     - type: 'text'
-      # ../en-US.restext:2095 | "I tapped the glass bottle..."
+      # ../en-US.restext:2088 | "I tapped the glass bottle..."
       value: 'restext://MWCompleteHubE_005'
   - if: 'typeE == "drug"'
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:26520
     - type: 'text'
-      # ../en-US.restext:2096 | "I observed the effects as..."
+      # ../en-US.restext:2089 | "I observed the effects as..."
       value: 'restext://MWCompleteHubE_006'
   - if: 'typeD == "demon"'
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:26526
     - type: 'text'
-      # ../en-US.restext:2097 | "The world darkened around..."
+      # ../en-US.restext:2090 | "The world darkened around..."
       value: 'restext://MWCompleteHubE_007'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:26534
   - type: 'text'
-    # ../en-US.restext:2092 | "The preparations proved t..."
+    # ../en-US.restext:2085 | "The preparations proved t..."
     value: 'restext://MWCompleteHubE_002'

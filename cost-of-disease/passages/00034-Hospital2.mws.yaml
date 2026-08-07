@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Hospital2'
-# ../en-US.restext:349 | "THRIVING IN ADVERSITY"
+# ../en-US.restext:351 | "THRIVING IN ADVERSITY"
 title: 'restext://Title_ThrivingInAdversity'
-# ../en-US.restext:337 | "Middle Years"
+# ../en-US.restext:339 | "Middle Years"
 subtitle: 'restext://Title_MiddleYears'
 tags:
 - 'HUB'
@@ -16,20 +16,20 @@ nodes:
   expr: '8'
 # ../.source/TheCostofDisease_Eng_v10.cs:4825
 - type: 'section'
-  # ../en-US.restext:141 | "{icon:storybook} **Board ..."
+  # ../en-US.restext:145 | "{icon:storybook} **Board ..."
   title: 'restext://Heading_BoardOfTrustees'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:4834
   - type: 'text'
-    # ../en-US.restext:189 | "All players MUST place th..."
+    # ../en-US.restext:191 | "All players MUST place th..."
     value: 'restext://Hospital_MustVisit_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:4841
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:4843
   - type: 'text'
-    # ../en-US.restext:188 | "The **first time** you vi..."
+    # ../en-US.restext:190 | "The **first time** you vi..."
     value: 'restext://Hospital_FirstVisit_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:4844
   - type: 'link'
@@ -48,13 +48,13 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:4852
     - type: 'section'
-      # ../en-US.restext:181 | "{icon:storybook} **The Cure**"
+      # ../en-US.restext:183 | "{icon:storybook} **The Cure**"
       title: 'restext://Heading_TheCure'
       style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:4861
       - type: 'text'
-        # ../en-US.restext:115 | "Whenever a player complet..."
+        # ../en-US.restext:119 | "Whenever a player complet..."
         value: 'restext://Disease_YellowFeverInoculation_Lead'
       # ../.source/TheCostofDisease_Eng_v10.cs:4866
       - type: 'link'
@@ -69,13 +69,13 @@ nodes:
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:4875
     - type: 'section'
-      # ../en-US.restext:183 | "{icon:storybook} **The Pa..."
+      # ../en-US.restext:185 | "{icon:storybook} **The Pa..."
       title: 'restext://Heading_ThePanacea'
       style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:4884
       - type: 'text'
-        # ../en-US.restext:114 | "Whenever a player complet..."
+        # ../en-US.restext:118 | "Whenever a player complet..."
         value: 'restext://Disease_PanaceaComplete_Lead'
       # ../.source/TheCostofDisease_Eng_v10.cs:4889
       - type: 'link'
@@ -92,13 +92,13 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:4898
   - type: 'section'
-    # ../en-US.restext:185 | "{icon:storybook} **Victor..."
+    # ../en-US.restext:187 | "{icon:storybook} **Victor..."
     title: 'restext://Heading_VictoryAhead'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:4907
     - type: 'text'
-      # ../en-US.restext:110 | "If a player reaches or pa..."
+      # ../en-US.restext:114 | "If a player reaches or pa..."
       value: 'restext://Directive_VPTrack35_Lead'
     # ../.source/TheCostofDisease_Eng_v10.cs:4909
     - type: 'link'
@@ -114,17 +114,17 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:4918
 - type: 'section'
-  # ../en-US.restext:629 | "{icon:storybook} **The Se..."
+  # ../en-US.restext:631 | "{icon:storybook} **The Se..."
   title: 'restext://Hospital2_003'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:4928
   - type: 'text'
-    # ../en-US.restext:95 | "If any player reaches the..."
+    # ../en-US.restext:99 | "If any player reaches the..."
     value: 'restext://Directive_JournalTrackLevel3_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:4930
   - type: 'link'
-    # ../en-US.restext:630 | "click here for a reward."
+    # ../en-US.restext:632 | "click here for a reward."
     label: 'restext://Hospital2_005'
     target: 'InfinityClick1' # ./00096-InfinityClick1.mws.yaml
     snapshot: true
@@ -137,17 +137,17 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:4938
   - type: 'section'
-    # ../en-US.restext:177 | "{icon:storybook} **Scient..."
+    # ../en-US.restext:179 | "{icon:storybook} **Scient..."
     title: 'restext://Heading_ScientificAdvances'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:4947
     - type: 'text'
-      # ../en-US.restext:111 | "If a player completes a t..."
+      # ../en-US.restext:115 | "If a player completes a t..."
       value: 'restext://Disease_3Experiments_Lead'
     # ../.source/TheCostofDisease_Eng_v10.cs:4950
     - type: 'link'
-      # ../en-US.restext:631 | "Click here for a special ..."
+      # ../en-US.restext:633 | "Click here for a special ..."
       label: 'restext://Hospital2_006'
       target: 'Trigger3Experiments' # ./00123-Trigger3Experiments.mws.yaml
       snapshot: true
@@ -156,13 +156,13 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:4957
 - type: 'section'
-  # ../en-US.restext:184 | "**University Symposium**"
+  # ../en-US.restext:186 | "**University Symposium**"
   title: 'restext://Heading_UniversitySymposium'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:4965
   - type: 'text'
-    # ../en-US.restext:324 | "At the end of the second ..."
+    # ../en-US.restext:326 | "At the end of the second ..."
     value: 'restext://Symposium_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:4979
   - type: 'break'
@@ -170,10 +170,10 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:4983
   - type: 'popup'
     layout: 'end_of_round'
-    # ../en-US.restext:632 | "Click here at the end of ..."
+    # ../en-US.restext:634 | "Click here at the end of ..."
     label: 'restext://Hospital2_007'
     target: 'SymposiumEvent1' # ./00125-SymposiumEvent1.mws.yaml
-    # ../en-US.restext:359 | "End of Round"
+    # ../en-US.restext:361 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -182,10 +182,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:310 | "The Middle Years of the S..."
+      # ../en-US.restext:312 | "The Middle Years of the S..."
       value: 'restext://Round_GenerationII_MiddleEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:311 | "Then, perform all Start o..."
+      # ../en-US.restext:313 | "Then, perform all Start o..."
       value: 'restext://Round_StartLateYears_Rule'

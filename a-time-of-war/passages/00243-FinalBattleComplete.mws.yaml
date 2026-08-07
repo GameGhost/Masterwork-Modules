@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'FinalBattleComplete'
-# ../en-US.restext:1983 | "Campaign Complete"
+# ../en-US.restext:1976 | "Campaign Complete"
 title: 'restext://FinalBattleComplete_001'
 layout: 'narration'
 nodes:
@@ -12,26 +12,26 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:24263
   - type: 'text'
-    # ../en-US.restext:1986 | "Any players with unused {..."
+    # ../en-US.restext:1979 | "Any players with unused {..."
     value: 'restext://FinalBattleComplete_004'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:24281
   - type: 'text'
-    # ../en-US.restext:1984 | "The player with the most ..."
+    # ../en-US.restext:1977 | "The player with the most ..."
     value: 'restext://FinalBattleComplete_002'
   # ../.source/ATimeofWar_Eng_v8.cs:24288
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:24290
   - type: 'text'
-    # ../en-US.restext:1985 | "You must still pay the co..."
+    # ../en-US.restext:1978 | "You must still pay the co..."
     value: 'restext://FinalBattleComplete_003'
 # ../.source/ATimeofWar_Eng_v8.cs:24292
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:24294
 - type: 'link'
-  # ../en-US.restext:1987 | "Click to move to Final Sc..."
+  # ../en-US.restext:1980 | "Click to move to Final Sc..."
   label: 'restext://FinalBattleComplete_005'
   target: 'Scoring' # ./00004-Scoring.mws.yaml
   snapshot: true

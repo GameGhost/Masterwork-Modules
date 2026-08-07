@@ -42,7 +42,7 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:17686
   - type: 'text'
-    # ../en-US.restext:1407 | "{_rnd_BusMeetC_0} \"Donat..."
+    # ../en-US.restext:1406 | "{_rnd_BusMeetC_0} \"Donat..."
     value: 'restext://BusMeetC_005'
     lets:
     - '_rnd_BusMeetC_0'
@@ -109,7 +109,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:17768
     - type: 'link'
-      # ../en-US.restext:141 | "$3."
+      # ../en-US.restext:142 | "$3."
       label: 'restext://Dollar_Three'
       target: 'BusThanks' # ./00154-BusThanks.mws.yaml
       snapshot: true
@@ -131,7 +131,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:17775
     - type: 'link'
-      # ../en-US.restext:142 | "$2."
+      # ../en-US.restext:143 | "$2."
       label: 'restext://Dollar_Two'
       target: 'BusThanks' # ./00154-BusThanks.mws.yaml
       snapshot: true
@@ -153,7 +153,7 @@ nodes:
       style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:17780
   - type: 'link'
-    # ../en-US.restext:140 | "$1."
+    # ../en-US.restext:141 | "$1."
     label: 'restext://Dollar_One'
     target: 'BusThanks' # ./00154-BusThanks.mws.yaml
     snapshot: true
@@ -188,7 +188,7 @@ nodes:
             expr: '["BusBargain", "BusNo"].shuffled("BusMeetC_1")[0]'
       # ../.source/FearoftheUnknown_Eng_v15.cs:17787
       - type: 'text'
-        # ../en-US.restext:93 | "_This option will provide..."
+        # ../en-US.restext:94 | "_This option will provide..."
         value: 'restext://Directive_FiftyPercentChanceImproveDeal'
     - match: 1
       nodes:

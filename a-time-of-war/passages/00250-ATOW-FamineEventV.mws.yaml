@@ -15,27 +15,27 @@ nodes:
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:24942
 - type: 'text'
-  # ../en-US.restext:2024 | "Each player takes a Votin..."
+  # ../en-US.restext:2017 | "Each player takes a Votin..."
   value: 'restext://ATOW_FamineEventV_002'
 # ../.source/ATimeofWar_Eng_v8.cs:24944
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:24948
 - type: 'text'
-  # ../en-US.restext:2025 | "**YAY** is a vote to crea..."
+  # ../en-US.restext:2018 | "**YAY** is a vote to crea..."
   value: 'restext://ATOW_FamineEventV_003'
 # ../.source/ATimeofWar_Eng_v8.cs:24953
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:24956
 - type: 'text'
-  # ../en-US.restext:2026 | "**NAY** is a vote to weat..."
+  # ../en-US.restext:2019 | "**NAY** is a vote to weat..."
   value: 'restext://ATOW_FamineEventV_004'
 # ../.source/ATimeofWar_Eng_v8.cs:24965
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:24967
 - type: 'text'
-  # ../en-US.restext:2027 | "Tally the vote count _(ti..."
+  # ../en-US.restext:2020 | "Tally the vote count _(ti..."
   value: 'restext://ATOW_FamineEventV_005'
 # ../.source/ATimeofWar_Eng_v8.cs:24972
 - type: 'break'
@@ -63,22 +63,22 @@ nodes:
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:53 | "3"
+      # ../en-US.restext:54 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:54 | "2"
+      # ../en-US.restext:55 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:51 | "1"
+      # ../en-US.restext:52 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:52 | "REVEAL"
+      # ../en-US.restext:53 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:52 | "REVEAL"
+    # ../en-US.restext:53 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: 'ATOW-FamineEventRes' # ./00249-ATOW-FamineEventRes.mws.yaml
     snapshot: false

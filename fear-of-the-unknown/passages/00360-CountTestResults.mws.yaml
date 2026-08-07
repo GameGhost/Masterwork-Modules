@@ -17,7 +17,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:37738
     - type: 'text'
-      # ../en-US.restext:2755 | "The patient is perfectly ..."
+      # ../en-US.restext:2749 | "The patient is perfectly ..."
       value: 'restext://CountTestResults_004'
     # ../.source/FearoftheUnknown_Eng_v15.cs:37739
     - type: 'break'
@@ -26,7 +26,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:37745
     - type: 'text'
-      # ../en-US.restext:2756 | "Alas, despite such a **he..."
+      # ../en-US.restext:2750 | "Alas, despite such a **he..."
       value: 'restext://CountTestResults_005'
     # ../.source/FearoftheUnknown_Eng_v15.cs:37759
     - type: 'break'
@@ -34,14 +34,14 @@ nodes:
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:37765
   - type: 'text'
-    # ../en-US.restext:2753 | "Uggh. "
+    # ../en-US.restext:2747 | "Uggh. "
     value: 'restext://CountTestResults_002'
   # ../.source/FearoftheUnknown_Eng_v15.cs:37766
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:37768
   - type: 'text'
-    # ../en-US.restext:2754 | "Perhaps it is unprofessio..."
+    # ../en-US.restext:2748 | "Perhaps it is unprofessio..."
     value: 'restext://CountTestResults_003'
   # ../.source/FearoftheUnknown_Eng_v15.cs:37771
   - type: 'break'
@@ -85,30 +85,30 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:37809
       - type: 'text'
-        # ../en-US.restext:2758 | "You suffer no penalty. _T..."
+        # ../en-US.restext:2752 | "You suffer no penalty. _T..."
         value: 'restext://CountTestResults_008'
     - if: 'test >= 3'
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:37827
       - type: 'text'
-        # ../en-US.restext:2759 | "Immediately place one of ..."
+        # ../en-US.restext:2753 | "Immediately place one of ..."
         value: 'restext://CountTestResults_009'
       # ../.source/FearoftheUnknown_Eng_v15.cs:37834
       - type: 'break'
         style: 'paragraph'
       # ../.source/FearoftheUnknown_Eng_v15.cs:37836
       - type: 'text'
-        # ../en-US.restext:121 | "Then, return your {icon:c..."
+        # ../en-US.restext:122 | "Then, return your {icon:c..."
         value: 'restext://Directive_ReturnCreepyMarkerStart'
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:37851
     - type: 'text'
-      # ../en-US.restext:2757 | "**Lose 1VP.** Then, immed..."
+      # ../en-US.restext:2751 | "**Lose 1VP.** Then, immed..."
       value: 'restext://CountTestResults_006'
     # ../.source/FearoftheUnknown_Eng_v15.cs:37860
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:37862
     - type: 'text'
-      # ../en-US.restext:121 | "Then, return your {icon:c..."
+      # ../en-US.restext:122 | "Then, return your {icon:c..."
       value: 'restext://Directive_ReturnCreepyMarkerStart'
