@@ -104,7 +104,7 @@ nodes:
       layout: 'setup'
       # ../en-US.restext:27 | "Click here to continue..."
       label: 'restext://Click_ContinueEllipsis_B'
-      target: '${_setup_rnd_RumorD1_0}'
+      target: '${["RumorIngredient", "RumorKnowledge", "RumorPitch"].shuffled("RumorD1_1")[0]}' # ./00087-RumorIngredient.mws.yaml, ./00088-RumorKnowledge.mws.yaml, ./00089-RumorPitch.mws.yaml
       # ../en-US.restext:286 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
@@ -120,12 +120,6 @@ nodes:
           asset: 'image://setup/S3_ShieldToken'
           style: 'setup-image'
       content:
-      # ../.source/ATimeofWar_Eng_v8.cs:1960
-      - type: 'assign'
-        var: '_setup_rnd_RumorD1_0'
-        expr: '["RumorIngredient", "RumorKnowledge", "RumorPitch"].shuffled("RumorD1_1")[0]'
-      # ../.source/ATimeofWar_Eng_v8.cs:1968
-      - type: 'break'
       # ../.source/ATimeofWar_Eng_v8.cs:1971
       - type: 'text'
         # ../en-US.restext:362 | "**Gain the {crest} token.**"

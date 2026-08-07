@@ -46,7 +46,7 @@ nodes:
   layout: 'setup'
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
-  target: '${round == 19 ? "LiberalEvent3" : _setup_rnd_EssentialSaltsRes_0}' # ./00258-LiberalEvent3.mws.yaml
+  target: '${round == 19 ? "LiberalEvent3" : ["LiberalEvent", "LiberalTaxes"].shuffled("EssentialSaltsRes_0")[0]}' # ./00258-LiberalEvent3.mws.yaml, ./00054-LiberalEvent.mws.yaml, ./00101-LiberalTaxes.mws.yaml
   # ../en-US.restext:367 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
@@ -56,13 +56,6 @@ nodes:
     asset: 'image://setup/GainCaretakerFromLost'
     style: 'setup-image'
   content:
-  # ../.source/FearoftheUnknown_Eng_v15.cs:14026
-  - type: 'assign'
-    var: '_setup_rnd_EssentialSaltsRes_0'
-    expr: '["LiberalEvent", "LiberalTaxes"].shuffled("EssentialSaltsRes_0")[0]'
-  # ../.source/FearoftheUnknown_Eng_v15.cs:14037
-  - type: 'break'
-    style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:14039
   - type: 'text'
     # ../en-US.restext:1174 | "Any player who chose to p..."
