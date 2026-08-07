@@ -104,7 +104,7 @@ nodes:
       layout: 'setup'
       # ../en-US.restext:27 | "Click here to continue..."
       label: 'restext://Click_ContinueEllipsis_B'
-      target: '${_rnd_RumorD1_0}'
+      target: '${_setup_rnd_RumorD1_0}'
       # ../en-US.restext:286 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
@@ -121,8 +121,8 @@ nodes:
           style: 'setup-image'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:1960
-      - type: 'let'
-        var: '_rnd_RumorD1_0'
+      - type: 'assign'
+        var: '_setup_rnd_RumorD1_0'
         expr: '["RumorIngredient", "RumorKnowledge", "RumorPitch"].shuffled("RumorD1_1")[0]'
       # ../.source/ATimeofWar_Eng_v8.cs:1968
       - type: 'break'
