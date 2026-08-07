@@ -219,3 +219,7 @@ nodes:
         - type: 'let'
           var: 'passageName'
           expr: '"ATOWSabotageIntro2"'
+    # ../.source/ATimeofWar_Eng_v8.cs:4043
+    - type: 'let'
+      var: 'passage'
+      expr: 'warwinner == "Unified Monarchists" ? (rumor2 == "visited" ? ("AMessenger2") : ("AfternoonTea")) : (wardestroy == 1 ? ("ATOWSabotageIntro2Sep") : ("ATOWSabotageIntro2"))'

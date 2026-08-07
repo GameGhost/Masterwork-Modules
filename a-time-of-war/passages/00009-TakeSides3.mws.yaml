@@ -153,8 +153,13 @@ nodes:
   - type: 'link'
     # ../en-US.restext:377 | "Click here at the End of ..."
     label: 'restext://TakeSides3_013'
+    target: '${pass}'
     snapshot: true
     onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:2245
+    - type: 'let'
+      var: 'pass'
+      expr: 'barracks != "yes" ? (gunsbonus == 0 ? (war == 1 ? ("Warwarn") : ("TowardsWar")) : ("SeedGUNS")) : ("TSBarracksPenalty")'
     # ../.source/ATimeofWar_Eng_v8.cs:2246
     - type: 'conditional'
       if: 'pass == "Warwarn"'
@@ -179,24 +184,3 @@ nodes:
     - type: 'assign'
       var: '_ProgressRound'
       expr: '3'
-    # ../.source/ATimeofWar_Eng_v8.cs:2257
-    - type: 'conditional'
-      if: 'barracks != "yes"'
-      then:
-      - type: 'conditional'
-        if: 'gunsbonus == 0'
-        then:
-        - type: 'conditional'
-          if: 'war == 1'
-          then:
-          - type: 'goto'
-            target: 'Warwarn' # ./00112-Warwarn.mws.yaml
-          else:
-          - type: 'goto'
-            target: 'TowardsWar' # ./00014-TowardsWar.mws.yaml
-        else:
-        - type: 'goto'
-          target: 'SeedGUNS' # ./00125-SeedGUNS.mws.yaml
-      else:
-      - type: 'goto'
-        target: 'TSBarracksPenalty' # ./00189-TSBarracksPenalty.mws.yaml

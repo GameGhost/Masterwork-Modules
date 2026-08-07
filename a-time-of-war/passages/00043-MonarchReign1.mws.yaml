@@ -207,18 +207,14 @@ nodes:
   - type: 'link'
     # ../en-US.restext:31 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
+    target: '${psn}'
     snapshot: true
     onclick:
+    # ../.source/ATimeofWar_Eng_v8.cs:5933
+    - type: 'let'
+      var: 'psn'
+      expr: 'crazy == 0 ? ("CoWEvent") : ("Stickfun")'
     # ../.source/ATimeofWar_Eng_v8.cs:5934
     - type: 'assign'
       var: '_ProgressRound'
       expr: '7'
-    # ../.source/ATimeofWar_Eng_v8.cs:5934
-    - type: 'conditional'
-      if: 'crazy == 0'
-      then:
-      - type: 'goto'
-        target: 'CoWEvent' # ./00139-CoWEvent.mws.yaml
-      else:
-      - type: 'goto'
-        target: 'Stickfun' # ./00114-Stickfun.mws.yaml
