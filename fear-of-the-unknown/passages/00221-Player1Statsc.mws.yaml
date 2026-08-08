@@ -12,12 +12,12 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:89 | "Please enter the VP of yo..."
+      # ../en-US.restext:90 | "Please enter the VP of yo..."
       value: 'restext://Directive_EnterChemistryOccultVP_Life'
     - type: 'input'
       label: ''
       var: 'hitA'
-    # ../en-US.restext:369 | "Continue"
+    # ../en-US.restext:370 | "Continue"
     okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'
@@ -29,21 +29,21 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25644
 - type: 'text'
-  # ../en-US.restext:184 | "**Life Total Confirmed**"
+  # ../en-US.restext:185 | "**Life Total Confirmed**"
   value: 'restext://Heading_LifeTotalConfirmed'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25646
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25650
 - type: 'text'
-  # ../en-US.restext:1886 | "**{hitA}** is locked in a..."
+  # ../en-US.restext:1890 | "**{hitA}** is locked in a..."
   value: 'restext://Player1Statsc_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25654
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25656
 - type: 'text'
-  # ../en-US.restext:1887 | "{nameA}'s Warrior is buil..."
+  # ../en-US.restext:1891 | "{nameA}'s Warrior is buil..."
   value: 'restext://Player1Statsc_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25659
 - type: 'break'

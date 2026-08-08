@@ -573,9 +573,11 @@ ResistSides_006=In turn order, each player who built at least **{_rnd_ResistSide
 ResistSides_007=Once all players have chosen, 
 
 # passages/00040-ResistEnd.mws.yaml
-ResistEnd_001=With **so few buildings destroyed**, the message was clear that the resistance was weak. My final years confirmed a return to normalcy as the efforts of the resisting faction within the region were suppressed and the {warwinner} remained vigilant and victorious.
-ResistEnd_002=It was just as I had planned. What a tragedy that mortality dims our eyes just as the dawn's light crests the hills of innovation. I only wish that the next generation knew how I suffered to ensure their triumph.
-ResistEnd_005=With **{wardestroy} buildings destroyed**, the message was clear that they were not wanted. Driven by the will of the people and undoubtedly terrified by the enormity of my scientific contributions, the bloodied and beaten faction that had controlled the town limped into the distance leaving the {warloser} to celebrate their victory.
+ResistEnd_001=Victory for the Resistance
+ResistEnd_002=Resistance Quashed
+ResistEnd_003=With **so few buildings destroyed**, the message was clear that the resistance was weak. My final years confirmed a return to normalcy as the efforts of the resisting faction within the region were suppressed and the {warwinner} remained vigilant and victorious.
+ResistEnd_004=It was just as I had planned. What a tragedy that mortality dims our eyes just as the dawn's light crests the hills of innovation. I only wish that the next generation knew how I suffered to ensure their triumph.
+ResistEnd_007=With **{wardestroy} buildings destroyed**, the message was clear that they were not wanted. Driven by the will of the people and undoubtedly terrified by the enormity of my scientific contributions, the bloodied and beaten faction that had controlled the town limped into the distance leaving the {warloser} to celebrate their victory.
 
 # passages/00041-MonarchReignIntro.mws.yaml
 MonarchReignIntro_001=Heavy is the Crown
@@ -1091,10 +1093,13 @@ GUNSAward_007=Any player with a face-up Flag token matching the {warwinner} gain
 GUNSAward_008=Any player with a face-up Flag token matching the {warloser} gains **2** {icon:s3_weapontoken} **tokens.** 
 
 # passages/00125-SeedGUNS.mws.yaml
-SeedGUNS_001=All players count up the total number of Knowledge cubes remaining in their possession. The player(s) with the most cubes immediately gains a {icon:storybooktoken} **token** and places it in their Quarters.
-SeedGUNS_002=Any player with a {icon:storybooktoken} **token** immediately gains **{_rnd_SeedGUNS_0}VP.**
-SeedGUNS_003=All players count up the total number of Ingredients remaining in their possession. The player(s) with the most Ingredients immediately gains a {icon:storybooktoken} **token** and places it in their Quarters.
-SeedGUNS_004=All players count up the total number of money remaining in their possession. The player(s) with the most money immediately gains a {icon:storybooktoken} **token** and places it in their Quarters.
+SeedGUNS_001=Knowledge Bonus
+SeedGUNS_002=Ingredient Bonus
+SeedGUNS_003=Wealth Bonus
+SeedGUNS_004=All players count up the total number of Knowledge cubes remaining in their possession. The player(s) with the most cubes immediately gains a {icon:storybooktoken} **token** and places it in their Quarters.
+SeedGUNS_005=Any player with a {icon:storybooktoken} **token** immediately gains **{_rnd_SeedGUNS_0}VP.**
+SeedGUNS_006=All players count up the total number of Ingredients remaining in their possession. The player(s) with the most Ingredients immediately gains a {icon:storybooktoken} **token** and places it in their Quarters.
+SeedGUNS_007=All players count up the total number of money remaining in their possession. The player(s) with the most money immediately gains a {icon:storybooktoken} **token** and places it in their Quarters.
 
 # passages/00126-NoteFactions.mws.yaml
 NoteFactions_001=Add a goal.
@@ -1615,32 +1620,35 @@ DuelResolution1_006=Click to begin the duel...
 DuelResolution1_010=Occult
 
 # passages/00183-DuelResolution1a.mws.yaml
-DuelResolution1a_001={dueltype == "science" ? "{duelsci}" : "The Moment of Truth"}
-DuelResolution1a_002=At a distance of twenty paces, I turned and fired. I heard the report of two shots before a cloud of smoke blurred my vision. In my shocked state, I could not determine if this was two clear shots or the single bullet from my own chamber and the echo of its blast shattering the stillness of the morning.
-DuelResolution1a_003=The scientific duel will be **{duelsci}**.
-DuelResolution1a_004={sabotagee1} and {playersabotage1} now count how many Levels they have moved their Journal Track forward in {duelsci}.
-DuelResolution1a_005=They then count how many of their completed Experiments (including stored) are of the type {duelsci}.
-DuelResolution1a_006=Each player adds these two numbers together to determine their total individual scientific prowess. _(For example, Level 1 in {duelsci} plus 2 completed {duelsci} Experiments would equal a total of 3.)_
+DuelResolution1a_001={duelsci}
+DuelResolution1a_002=The Moment of Truth
+DuelResolution1a_003=At a distance of twenty paces, I turned and fired. I heard the report of two shots before a cloud of smoke blurred my vision. In my shocked state, I could not determine if this was two clear shots or the single bullet from my own chamber and the echo of its blast shattering the stillness of the morning.
+DuelResolution1a_004=The scientific duel will be **{duelsci}**.
+DuelResolution1a_005={sabotagee1} and {playersabotage1} now count how many Levels they have moved their Journal Track forward in {duelsci}.
+DuelResolution1a_006=They then count how many of their completed Experiments (including stored) are of the type {duelsci}.
+DuelResolution1a_007=Each player adds these two numbers together to determine their total individual scientific prowess. _(For example, Level 1 in {duelsci} plus 2 completed {duelsci} Experiments would equal a total of 3.)_
 
 # passages/00184-DuelResolution1b.mws.yaml
-DuelResolution1b_001=I watched as my opponent, {duelloser}
-DuelResolution1b_002= burst into tears. Apparently my bullet had struck their shoulder, causing a rip in the fabric and minor cut. Unable to stomach the pain, they
-DuelResolution1b_003= red-faced, turned to a new page in their occult tome and feigned a paper-cut so egregious that they
-DuelResolution1b_004= suddenly complained of a strained wrist as their pitiful, makeshift contraption grinded to a halt. They
-DuelResolution1b_005= held the side of their arm where a chemical burn had reddened the skin and
-DuelResolution1b_006= grimaced, exposing a deep wound in their forearm as the modified falcon under their care flew far into the distance. They
-DuelResolution1b_007= stumbled to their doctor. While their injuries from the duel were minor, I felt a deep fulfillment in knowing that their insufferable pride had been dealt a cruel blow that morning.
-DuelResolution1b_009={duelloser} loses **3VP**.
-DuelResolution1b_010=Though I felt a tinge of remorse at the sight, my cousin and I were both aware of the fatal risks this bloody confrontation carried with it. I watched spellbound as {duelloser} 
-DuelResolution1b_011=reeled once before crumpling to the mossy ground. The bullet had hit a major artery that could not be sutured before the loss of blood overwhelmed them. On the more matter-of-fact side, the body that remained was otherwise untouched and was returned to the estate within hours.
-DuelResolution1b_012=disappeared into a swirling silver vortex, leaving behind only a single hand that attempted to prevent this occurrence by grabbing onto a nearby metal fixture. It wriggled for a few moments before expiring.
-DuelResolution1b_013=was unceremoniously crushed between two bronze gears. The machine created for this event would need to be disassembled and cleaned before it could be used again.
-DuelResolution1b_014=withered into a rubbery scrap of skin, their blood having been accidentally distilled during the duel. Thankfully, the beakers and pipettes involved in the process could still be used after a proper scrubbing.
-DuelResolution1b_015=was mauled and desecrated into an unrecognizable pile of exposed flesh and muscle. Appreciatively, the experiment used in the duel was docile after feeding and easily recaptured.
-DuelResolution1b_016=As blood pooled beneath them, staining the dueling grounds crimson, I shielded my eyes and fled from the site. The duel had ended in death. The generation would have to continue based solely upon their willed instructions, penned weeks before the lethal event. 
-DuelResolution1b_017={duelloser} must place their **Self** into Lost. This piece cannot be reclaimed for the remainder of this Generation. 
-DuelResolution1b_018={duelloser} gains their Caretaker piece from Lost (if possible). _As outlined in their will, in order to execute actions posthumously in case of their untimely demise._
-DuelResolution1b_019=Also, {duelloser} gains a {icon:bodies_icon}.
+DuelResolution1b_001=An Unfortunate Death
+DuelResolution1b_002=Wounded Pride
+DuelResolution1b_003=I watched as my opponent, {duelloser}
+DuelResolution1b_004= burst into tears. Apparently my bullet had struck their shoulder, causing a rip in the fabric and minor cut. Unable to stomach the pain, they
+DuelResolution1b_005= red-faced, turned to a new page in their occult tome and feigned a paper-cut so egregious that they
+DuelResolution1b_006= suddenly complained of a strained wrist as their pitiful, makeshift contraption grinded to a halt. They
+DuelResolution1b_007= held the side of their arm where a chemical burn had reddened the skin and
+DuelResolution1b_008= grimaced, exposing a deep wound in their forearm as the modified falcon under their care flew far into the distance. They
+DuelResolution1b_009= stumbled to their doctor. While their injuries from the duel were minor, I felt a deep fulfillment in knowing that their insufferable pride had been dealt a cruel blow that morning.
+DuelResolution1b_011={duelloser} loses **3VP**.
+DuelResolution1b_012=Though I felt a tinge of remorse at the sight, my cousin and I were both aware of the fatal risks this bloody confrontation carried with it. I watched spellbound as {duelloser} 
+DuelResolution1b_013=reeled once before crumpling to the mossy ground. The bullet had hit a major artery that could not be sutured before the loss of blood overwhelmed them. On the more matter-of-fact side, the body that remained was otherwise untouched and was returned to the estate within hours.
+DuelResolution1b_014=disappeared into a swirling silver vortex, leaving behind only a single hand that attempted to prevent this occurrence by grabbing onto a nearby metal fixture. It wriggled for a few moments before expiring.
+DuelResolution1b_015=was unceremoniously crushed between two bronze gears. The machine created for this event would need to be disassembled and cleaned before it could be used again.
+DuelResolution1b_016=withered into a rubbery scrap of skin, their blood having been accidentally distilled during the duel. Thankfully, the beakers and pipettes involved in the process could still be used after a proper scrubbing.
+DuelResolution1b_017=was mauled and desecrated into an unrecognizable pile of exposed flesh and muscle. Appreciatively, the experiment used in the duel was docile after feeding and easily recaptured.
+DuelResolution1b_018=As blood pooled beneath them, staining the dueling grounds crimson, I shielded my eyes and fled from the site. The duel had ended in death. The generation would have to continue based solely upon their willed instructions, penned weeks before the lethal event. 
+DuelResolution1b_019={duelloser} must place their **Self** into Lost. This piece cannot be reclaimed for the remainder of this Generation. 
+DuelResolution1b_020={duelloser} gains their Caretaker piece from Lost (if possible). _As outlined in their will, in order to execute actions posthumously in case of their untimely demise._
+DuelResolution1b_021=Also, {duelloser} gains a {icon:bodies_icon}.
 
 # passages/00185-AdvancedWeaponryIntro.mws.yaml
 AdvancedWeaponryIntro_001=A Few Improvements

@@ -10,7 +10,7 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:28612
   - type: 'text'
-    # ../en-US.restext:2138 | "**Carefully hand this Sto..."
+    # ../en-US.restext:2142 | "**Carefully hand this Sto..."
     value: 'restext://S4CountCure_001'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28617
   - type: 'break'
@@ -20,20 +20,20 @@ nodes:
     # ../en-US.restext:53 | "Once you are ready, click..."
     label: 'restext://Click_RevealSecretConversation'
     layout: 'reveal'
-    # ../en-US.restext:367 | "Close"
+    # ../en-US.restext:368 | "Close"
     cancel: 'restext://UIButton_Close'
     snapshot: true
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:28650
     - type: 'text'
-      # ../en-US.restext:2139 | "**A Cursed Cure**"
+      # ../en-US.restext:2143 | "**A Cursed Cure**"
       value: 'restext://S4CountCure_002'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28652
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28656
     - type: 'text'
-      # ../en-US.restext:2140 | "**Journal of {cureplayer} -** "
+      # ../en-US.restext:2144 | "**Journal of {cureplayer} -** "
       value: 'restext://S4CountCure_003'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28662
     - type: 'include_passage'
@@ -43,21 +43,21 @@ nodes:
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28667
     - type: 'text'
-      # ../en-US.restext:2141 | "Strange, though expected ..."
+      # ../en-US.restext:2145 | "Strange, though expected ..."
       value: 'restext://S4CountCure_004'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28670
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28672
     - type: 'text'
-      # ../en-US.restext:2142 | "He was cordial, but despe..."
+      # ../en-US.restext:2146 | "He was cordial, but despe..."
       value: 'restext://S4CountCure_005'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28674
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28678
     - type: 'text'
-      # ../en-US.restext:2143 | "**Will you offer a cure t..."
+      # ../en-US.restext:2147 | "**Will you offer a cure t..."
       value: 'restext://S4CountCure_006'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28680
     - type: 'break'
@@ -75,7 +75,7 @@ nodes:
         expr: '"yes"'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28684
     - type: 'text'
-      # ../en-US.restext:2144 | " _(You will donate a comp..."
+      # ../en-US.restext:2148 | " _(You will donate a comp..."
       value: 'restext://S4CountCure_007'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28689
     - type: 'break'
@@ -93,7 +93,7 @@ nodes:
         expr: '"no"'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28693
     - type: 'text'
-      # ../en-US.restext:2145 | " _(You must choose this o..."
+      # ../en-US.restext:2149 | " _(You must choose this o..."
       value: 'restext://S4CountCure_008'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:28627

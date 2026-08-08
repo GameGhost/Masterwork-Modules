@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'SmugConsequence'
-# ../en-US.restext:1011 | "Consequences of Smuggling"
+# ../en-US.restext:1012 | "Consequences of Smuggling"
 title: 'restext://SmugConsequence_001'
 layout: 'narration'
 nodes:
@@ -12,7 +12,7 @@ nodes:
   expr: '1'
 # ../.source/FearoftheUnknown_Eng_v15.cs:11838
 - type: 'text'
-  # ../en-US.restext:182 | "**Letter from {tempid} -** "
+  # ../en-US.restext:183 | "**Letter from {tempid} -** "
   value: 'restext://Heading_LetterFromTempid_Trailing'
 # ../.source/FearoftheUnknown_Eng_v15.cs:11844
 - type: 'include_passage'
@@ -20,9 +20,9 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:11849
 - type: 'let'
   var: '_rnd_SmugConsequence_0'
-  # ../en-US.restext:1012 | SmugConsequence_002 | "This fortified district o..."
-  # ../en-US.restext:1013 | SmugConsequence_003 | "What is this place? It is..."
-  # ../en-US.restext:1014 | SmugConsequence_004 | "I ask you to disregard th..."
+  # ../en-US.restext:1013 | SmugConsequence_002 | "This fortified district o..."
+  # ../en-US.restext:1014 | SmugConsequence_003 | "What is this place? It is..."
+  # ../en-US.restext:1015 | SmugConsequence_004 | "I ask you to disregard th..."
   expr: '["restext://SmugConsequence_002", "restext://SmugConsequence_003", "restext://SmugConsequence_004"].shuffled("SmugConsequence_0")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:11847
 - type: 'break'
@@ -37,7 +37,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:11854
 - type: 'text'
-  # ../en-US.restext:1015 | "**Please choose your name..."
+  # ../en-US.restext:1016 | "**Please choose your name..."
   value: 'restext://SmugConsequence_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:11856
 - type: 'break'

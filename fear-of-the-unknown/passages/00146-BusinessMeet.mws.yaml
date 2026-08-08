@@ -2,19 +2,19 @@
 ---
 format: 'mws/0.4'
 passage_id: 'BusinessMeet'
-# ../en-US.restext:1399 | "Meeting on the Hill"
+# ../en-US.restext:1400 | "Meeting on the Hill"
 title: 'restext://BusinessMeet_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:17522
 - type: 'let'
   var: '_rnd_BusinessMeet_0'
-  # ../en-US.restext:1400 | BusinessMeet_002 | "With distinct gothic styl..."
-  # ../en-US.restext:1401 | BusinessMeet_003 | "I was particularly struck..."
+  # ../en-US.restext:1401 | BusinessMeet_002 | "With distinct gothic styl..."
+  # ../en-US.restext:1402 | BusinessMeet_003 | "I was particularly struck..."
   expr: '["restext://BusinessMeet_002", "restext://BusinessMeet_003"].shuffled("BusinessMeet_0")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:17520
 - type: 'text'
-  # ../en-US.restext:1402 | "The estate on the hill wa..."
+  # ../en-US.restext:1403 | "The estate on the hill wa..."
   value: 'restext://BusinessMeet_004'
   lets:
   - '_rnd_BusinessMeet_0'
@@ -23,7 +23,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:17529
 - type: 'text'
-  # ../en-US.restext:1403 | "Above the door, I noticed..."
+  # ../en-US.restext:1404 | "Above the door, I noticed..."
   value: 'restext://BusinessMeet_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:17535
 - type: 'break'

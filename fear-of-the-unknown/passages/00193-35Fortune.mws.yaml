@@ -2,34 +2,34 @@
 ---
 format: 'mws/0.4'
 passage_id: '35Fortune'
-# ../en-US.restext:1643 | "Fortunate Discovery"
+# ../en-US.restext:1644 | "Fortunate Discovery"
 title: 'restext://_35Fortune_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:22146
 - type: 'text'
-  # ../en-US.restext:153 | "**Brief Journal Entry -**..."
+  # ../en-US.restext:154 | "**Brief Journal Entry -**..."
   value: 'restext://Heading_BriefJournalEntry_Illegible'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22152
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22154
 - type: 'text'
-  # ../en-US.restext:196 | "Quick note:"
+  # ../en-US.restext:197 | "Quick note:"
   value: 'restext://Heading_QuickNote'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22155
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22157
 - type: 'text'
-  # ../en-US.restext:1644 | "A curious thing happened ..."
+  # ../en-US.restext:1645 | "A curious thing happened ..."
   value: 'restext://_35Fortune_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22158
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22160
 - type: 'text'
-  # ../en-US.restext:1645 | "No matter. What a marvelo..."
+  # ../en-US.restext:1646 | "No matter. What a marvelo..."
   value: 'restext://_35Fortune_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:22161
 - type: 'break'
@@ -40,7 +40,7 @@ nodes:
   # ../en-US.restext:51 | "Click to return..."
   label: 'restext://Click_Return'
   target: '${round == 4 ? "Foreign" : round == 5 ? "Foreign2" : "Foreign3"}' # ./00011-Foreign.mws.yaml, ./00039-Foreign2.mws.yaml, ./00040-Foreign3.mws.yaml
-  # ../en-US.restext:367 | "Close"
+  # ../en-US.restext:368 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -61,5 +61,5 @@ nodes:
   - type: 'break'
   # ../.source/FearoftheUnknown_Eng_v15.cs:22184
   - type: 'text'
-    # ../en-US.restext:1646 | "Immediately **move forwar..."
+    # ../en-US.restext:1647 | "Immediately **move forwar..."
     value: 'restext://_35Fortune_006'

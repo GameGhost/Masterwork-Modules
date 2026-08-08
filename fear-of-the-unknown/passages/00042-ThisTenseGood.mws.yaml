@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ThisTenseGood'
-# ../en-US.restext:337 | "Good Neighbors"
+# ../en-US.restext:338 | "Good Neighbors"
 title: 'restext://Title_GoodNeighbors'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:6682
 - type: 'text'
-  # ../en-US.restext:177 | "**Letter from {randomname..."
+  # ../en-US.restext:178 | "**Letter from {randomname..."
   value: 'restext://Heading_LetterFromRandomname_25June1901'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6692
 - type: 'assign'
@@ -19,21 +19,21 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6694
 - type: 'text'
-  # ../en-US.restext:727 | "Peace. The townsfolk use ..."
+  # ../en-US.restext:728 | "Peace. The townsfolk use ..."
   value: 'restext://ThisTenseGood_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6697
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6699
 - type: 'text'
-  # ../en-US.restext:728 | "They have come to an agre..."
+  # ../en-US.restext:729 | "They have come to an agre..."
   value: 'restext://ThisTenseGood_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6700
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6702
 - type: 'text'
-  # ../en-US.restext:729 | "I am glad that they have ..."
+  # ../en-US.restext:730 | "I am glad that they have ..."
   value: 'restext://ThisTenseGood_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6704
 - type: 'break'
@@ -44,7 +44,7 @@ nodes:
   # ../en-US.restext:28 | "Click here to continue..."
   label: 'restext://Click_ContinueEllipsis_B'
   target: 'TenseGoodEvent1' # ./00313-TenseGoodEvent1.mws.yaml
-  # ../en-US.restext:367 | "Close"
+  # ../en-US.restext:368 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -55,5 +55,5 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6726
   - type: 'text'
-    # ../en-US.restext:730 | "Remove the {icon:angrymob..."
+    # ../en-US.restext:731 | "Remove the {icon:angrymob..."
     value: 'restext://ThisTenseGood_007'

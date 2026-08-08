@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S4Con3'
-# ../en-US.restext:644 | "Politics as Usual"
+# ../en-US.restext:645 | "Politics as Usual"
 title: 'restext://S4Con3_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:5267
 - type: 'text'
-  # ../en-US.restext:182 | "**Letter from {tempid} -** "
+  # ../en-US.restext:183 | "**Letter from {tempid} -** "
   value: 'restext://Heading_LetterFromTempid_Trailing'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5273
 - type: 'include_passage'
@@ -18,14 +18,14 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5278
 - type: 'text'
-  # ../en-US.restext:645 | "I will not carry on this ..."
+  # ../en-US.restext:646 | "I will not carry on this ..."
   value: 'restext://S4Con3_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5282
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5284
 - type: 'text'
-  # ../en-US.restext:646 | "It does not matter. The p..."
+  # ../en-US.restext:647 | "It does not matter. The p..."
   value: 'restext://S4Con3_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5287
 - type: 'assign'
@@ -40,7 +40,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 11 ? "Isolation2" : "Isolation3"}' # ./00043-Isolation2.mws.yaml, ./00044-Isolation3.mws.yaml
-  # ../en-US.restext:367 | "Close"
+  # ../en-US.restext:368 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -55,10 +55,10 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:5323
     - type: 'text'
-      # ../en-US.restext:105 | "Nothing happens."
+      # ../en-US.restext:106 | "Nothing happens."
       value: 'restext://Directive_NothingHappens'
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:5328
     - type: 'text'
-      # ../en-US.restext:647 | "Gain 1 {icon:creepy_icon}..."
+      # ../en-US.restext:648 | "Gain 1 {icon:creepy_icon}..."
       value: 'restext://S4Con3_004'

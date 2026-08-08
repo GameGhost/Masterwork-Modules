@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'SmugEventEnd'
-# ../en-US.restext:1085 | "The Rampage Concludes"
+# ../en-US.restext:1086 | "The Rampage Concludes"
 title: 'restext://SmugEventEnd_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:12897
 - type: 'text'
-  # ../en-US.restext:173 | "**Journal of {randomname}..."
+  # ../en-US.restext:174 | "**Journal of {randomname}..."
   value: 'restext://Heading_JournalOfRandomname_Cont'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12906
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12908
 - type: 'text'
-  # ../en-US.restext:1086 | "Disappointingly, the acti..."
+  # ../en-US.restext:1087 | "Disappointingly, the acti..."
   value: 'restext://SmugEventEnd_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12909
 - type: 'switch'
@@ -25,32 +25,32 @@ nodes:
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:12911
     - type: 'text'
-      # ../en-US.restext:1088 | "Our Gorilla, now grown to..."
+      # ../en-US.restext:1089 | "Our Gorilla, now grown to..."
       value: 'restext://SmugEventEnd_004'
   - match: 'chem'
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:12917
     - type: 'text'
-      # ../en-US.restext:1089 | "The Fabric swirled one la..."
+      # ../en-US.restext:1090 | "The Fabric swirled one la..."
       value: 'restext://SmugEventEnd_005'
   default:
   # ../.source/FearoftheUnknown_Eng_v15.cs:12921
   - type: 'text'
-    # ../en-US.restext:1087 | "Our Robot expeled a burst..."
+    # ../en-US.restext:1088 | "Our Robot expeled a burst..."
     value: 'restext://SmugEventEnd_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12925
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12927
 - type: 'text'
-  # ../en-US.restext:1090 | "Our creation settled life..."
+  # ../en-US.restext:1091 | "Our creation settled life..."
   value: 'restext://SmugEventEnd_006'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12928
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12930
 - type: 'text'
-  # ../en-US.restext:1091 | "The townsfolk scrambled t..."
+  # ../en-US.restext:1092 | "The townsfolk scrambled t..."
   value: 'restext://SmugEventEnd_007'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12933
 - type: 'break'
@@ -61,7 +61,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'Caravancheck' # ./00105-Caravancheck.mws.yaml
-  # ../en-US.restext:367 | "Close"
+  # ../en-US.restext:368 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -73,15 +73,15 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:12961
   - type: 'let'
     var: '_rnd_SmugEventEnd_0'
-    # ../en-US.restext:1092 | SmugEventEnd_008 | "1 space"
-    # ../en-US.restext:1093 | SmugEventEnd_009 | "2 spaces"
+    # ../en-US.restext:1093 | SmugEventEnd_008 | "1 space"
+    # ../en-US.restext:1094 | SmugEventEnd_009 | "2 spaces"
     expr: '["restext://SmugEventEnd_008", "restext://SmugEventEnd_009"].shuffled("SmugEventEnd_0")[0]'
   # ../.source/FearoftheUnknown_Eng_v15.cs:12953
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:12955
   - type: 'text'
-    # ../en-US.restext:1094 | "Move the {icon:angrymob_i..."
+    # ../en-US.restext:1095 | "Move the {icon:angrymob_i..."
     value: 'restext://SmugEventEnd_010'
     lets:
     - '_rnd_SmugEventEnd_0'

@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'AsylumTreatmentB'
-# ../en-US.restext:193 | "Patient {question}"
+# ../en-US.restext:194 | "Patient {question}"
 title: 'restext://Heading_PatientQuestion'
-# ../en-US.restext:1540 | "Entry Report"
+# ../en-US.restext:1541 | "Entry Report"
 subtitle: 'restext://AsylumTreatmentB_002'
 layout: 'narration'
 nodes:
@@ -15,14 +15,14 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:20911
 - type: 'let'
   var: '_rnd_AsylumTreatmentB_1'
-  # ../en-US.restext:239 | Letter_A | "A"
-  # ../en-US.restext:240 | Letter_B | "B"
-  # ../en-US.restext:241 | Letter_C | "C"
-  # ../en-US.restext:1541 | AsylumTreatmentB_003 | "<i>illegible</i>"
+  # ../en-US.restext:240 | Letter_A | "A"
+  # ../en-US.restext:241 | Letter_B | "B"
+  # ../en-US.restext:242 | Letter_C | "C"
+  # ../en-US.restext:1542 | AsylumTreatmentB_003 | "<i>illegible</i>"
   expr: '["restext://Letter_A", "restext://Letter_B", "restext://Letter_C", "restext://AsylumTreatmentB_003"].shuffled("AsylumTreatmentB_1")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20908
 - type: 'text'
-  # ../en-US.restext:1542 | "**Case Number: {_rnd_Asyl..."
+  # ../en-US.restext:1543 | "**Case Number: {_rnd_Asyl..."
   value: 'restext://AsylumTreatmentB_004'
   lets:
   - '_rnd_AsylumTreatmentB_0'
@@ -34,25 +34,25 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:20923
 - type: 'let'
   var: '_rnd_AsylumTreatmentB_2'
-  # ../en-US.restext:1543 | AsylumTreatmentB_005 | "Subject shows mild psycho..."
-  # ../en-US.restext:1544 | AsylumTreatmentB_006 | "Subject exhibits compulsi..."
-  # ../en-US.restext:1545 | AsylumTreatmentB_007 | "Subject is obsessed with ..."
-  # ../en-US.restext:1546 | AsylumTreatmentB_008 | "Subject appears to be suf..."
+  # ../en-US.restext:1544 | AsylumTreatmentB_005 | "Subject shows mild psycho..."
+  # ../en-US.restext:1545 | AsylumTreatmentB_006 | "Subject exhibits compulsi..."
+  # ../en-US.restext:1546 | AsylumTreatmentB_007 | "Subject is obsessed with ..."
+  # ../en-US.restext:1547 | AsylumTreatmentB_008 | "Subject appears to be suf..."
   expr: '["restext://AsylumTreatmentB_005", "restext://AsylumTreatmentB_006", "restext://AsylumTreatmentB_007", "restext://AsylumTreatmentB_008"].shuffled("AsylumTreatmentB_2")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20926
 - type: 'let'
   var: '_rnd_AsylumTreatmentB_3'
-  # ../en-US.restext:1547 | AsylumTreatmentB_009 | "Mild sedatives administer..."
-  # ../en-US.restext:1548 | AsylumTreatmentB_010 | "Speaks obsessively about ..."
-  # ../en-US.restext:1549 | AsylumTreatmentB_011 | "Lashed out physically aga..."
-  # ../en-US.restext:1550 | AsylumTreatmentB_012 | "Along with manic episodes..."
+  # ../en-US.restext:1548 | AsylumTreatmentB_009 | "Mild sedatives administer..."
+  # ../en-US.restext:1549 | AsylumTreatmentB_010 | "Speaks obsessively about ..."
+  # ../en-US.restext:1550 | AsylumTreatmentB_011 | "Lashed out physically aga..."
+  # ../en-US.restext:1551 | AsylumTreatmentB_012 | "Along with manic episodes..."
   expr: '["restext://AsylumTreatmentB_009", "restext://AsylumTreatmentB_010", "restext://AsylumTreatmentB_011", "restext://AsylumTreatmentB_012"].shuffled("AsylumTreatmentB_3")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20920
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20923
 - type: 'text'
-  # ../en-US.restext:1551 | "{_rnd_AsylumTreatmentB_2}..."
+  # ../en-US.restext:1552 | "{_rnd_AsylumTreatmentB_2}..."
   value: 'restext://AsylumTreatmentB_013'
   lets:
   - '_rnd_AsylumTreatmentB_2'
@@ -60,9 +60,9 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:20933
 - type: 'let'
   var: '_rnd_AsylumTreatmentB_4'
-  # ../en-US.restext:1552 | AsylumTreatmentB_014 | "Repeated complaints about..."
-  # ../en-US.restext:1553 | AsylumTreatmentB_015 | "Demands to be transferred..."
-  # ../en-US.restext:1554 | AsylumTreatmentB_016 | "Idle threats to crush 'th..."
+  # ../en-US.restext:1553 | AsylumTreatmentB_014 | "Repeated complaints about..."
+  # ../en-US.restext:1554 | AsylumTreatmentB_015 | "Demands to be transferred..."
+  # ../en-US.restext:1555 | AsylumTreatmentB_016 | "Idle threats to crush 'th..."
   expr: '["restext://AsylumTreatmentB_014", "restext://AsylumTreatmentB_015", "restext://AsylumTreatmentB_016"].shuffled("AsylumTreatmentB_4")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20931
 - type: 'break'
@@ -75,10 +75,10 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:20936
 - type: 'let'
   var: '_rnd_AsylumTreatmentB_5'
-  # ../en-US.restext:1555 | AsylumTreatmentB_017 | "Initial evaluation inconc..."
-  # ../en-US.restext:1556 | AsylumTreatmentB_018 | "Subdued and set to physic..."
-  # ../en-US.restext:1557 | AsylumTreatmentB_019 | "Assessment remains ongoin..."
-  # ../en-US.restext:1558 | AsylumTreatmentB_020 | "Patient's behavior is err..."
+  # ../en-US.restext:1556 | AsylumTreatmentB_017 | "Initial evaluation inconc..."
+  # ../en-US.restext:1557 | AsylumTreatmentB_018 | "Subdued and set to physic..."
+  # ../en-US.restext:1558 | AsylumTreatmentB_019 | "Assessment remains ongoin..."
+  # ../en-US.restext:1559 | AsylumTreatmentB_020 | "Patient's behavior is err..."
   expr: '["restext://AsylumTreatmentB_017", "restext://AsylumTreatmentB_018", "restext://AsylumTreatmentB_019", "restext://AsylumTreatmentB_020"].shuffled("AsylumTreatmentB_5")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20936
 - type: 'text'
@@ -90,7 +90,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20942
 - type: 'text'
-  # ../en-US.restext:1559 | "Director "
+  # ../en-US.restext:1560 | "Director "
   value: 'restext://AsylumTreatmentB_021'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20943
 - type: 'conditional'
@@ -98,54 +98,54 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:20945
   - type: 'text'
-    # ../en-US.restext:1560 | "Vlad "
+    # ../en-US.restext:1561 | "Vlad "
     value: 'restext://AsylumTreatmentB_022'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20947
 - type: 'text'
-  # ../en-US.restext:1561 | "intervened."
+  # ../en-US.restext:1562 | "intervened."
   value: 'restext://AsylumTreatmentB_023'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20948
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20950
 - type: 'text'
-  # ../en-US.restext:1562 | "Patient offered the oppor..."
+  # ../en-US.restext:1563 | "Patient offered the oppor..."
   value: 'restext://AsylumTreatmentB_024'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20951
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20955
 - type: 'text'
-  # ../en-US.restext:1563 | "**Choose an offer:**"
+  # ../en-US.restext:1564 | "**Choose an offer:**"
   value: 'restext://AsylumTreatmentB_025'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20957
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20960
 - type: 'link'
-  # ../en-US.restext:1564 | "Patient paid $2 and was d..."
+  # ../en-US.restext:1565 | "Patient paid $2 and was d..."
   label: 'restext://AsylumTreatmentB_026'
   target: 'AsylumTreatmentBPay' # ./00181-AsylumTreatmentBPay.mws.yaml
   snapshot: true
 # ../.source/FearoftheUnknown_Eng_v15.cs:20961
 - type: 'text'
-  # ../en-US.restext:1565 | " _(Pay $2 to return home ..."
+  # ../en-US.restext:1566 | " _(Pay $2 to return home ..."
   value: 'restext://AsylumTreatmentB_027'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20966
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20967
 - type: 'text'
-  # ../en-US.restext:372 | "OR"
+  # ../en-US.restext:373 | "OR"
   value: 'restext://UIButton_Or'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20968
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20969
 - type: 'link'
-  # ../en-US.restext:1566 | "Submit to an alienist eva..."
+  # ../en-US.restext:1567 | "Submit to an alienist eva..."
   label: 'restext://AsylumTreatmentB_028'
   target: 'AsylumInterviewBegin' # ./00361-AsylumInterviewBegin.mws.yaml
   snapshot: true
 # ../.source/FearoftheUnknown_Eng_v15.cs:20970
 - type: 'text'
-  # ../en-US.restext:1567 | " _(This will have undeter..."
+  # ../en-US.restext:1568 | " _(This will have undeter..."
   value: 'restext://AsylumTreatmentB_029'

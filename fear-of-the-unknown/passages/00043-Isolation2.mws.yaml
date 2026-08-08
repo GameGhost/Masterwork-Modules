@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Isolation2'
-# ../en-US.restext:364 | "Walled City"
+# ../en-US.restext:365 | "Walled City"
 title: 'restext://Title_WalledCity'
-# ../en-US.restext:343 | "Middle Years"
+# ../en-US.restext:344 | "Middle Years"
 subtitle: 'restext://Title_MiddleYears'
 tags:
 - 'HUB'
@@ -16,20 +16,20 @@ nodes:
   expr: '11'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6767
 - type: 'section'
-  # ../en-US.restext:228 | "{icon:storybooktoken} **V..."
+  # ../en-US.restext:229 | "{icon:storybooktoken} **V..."
   title: 'restext://Heading_StorybookToken_VerificationOfIdentity'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6778
   - type: 'text'
-    # ../en-US.restext:271 | "As a registered citizen w..."
+    # ../en-US.restext:272 | "As a registered citizen w..."
     value: 'restext://Narrative_RegisteredCitizenBackgroundCheck'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6781
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6783
   - type: 'text'
-    # ../en-US.restext:103 | "You MUST place your **Sel..."
+    # ../en-US.restext:104 | "You MUST place your **Sel..."
     value: 'restext://Directive_MustPlaceSelfTownHall_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6790
   - type: 'link'
@@ -42,20 +42,20 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6796
   - type: 'text'
-    # ../en-US.restext:104 | "_(If you have not verifie..."
+    # ../en-US.restext:105 | "_(If you have not verifie..."
     value: 'restext://Directive_NotVerifiedLose4VP'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6804
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6808
 - type: 'section'
-  # ../en-US.restext:214 | "{icon:storybooktoken} **B..."
+  # ../en-US.restext:215 | "{icon:storybooktoken} **B..."
   title: 'restext://Heading_StorybookToken_BrazenOffer'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6818
   - type: 'text'
-    # ../en-US.restext:127 | "Once per round, each play..."
+    # ../en-US.restext:128 | "Once per round, each play..."
     value: 'restext://Directive_SmugglersDockVisit_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6837
   - type: 'link'
@@ -71,7 +71,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6845
 - type: 'section'
-  # ../en-US.restext:230 | "**The Church**"
+  # ../en-US.restext:231 | "**The Church**"
   title: 'restext://Heading_TheChurch'
   style: 'hub-card'
   content:
@@ -83,20 +83,20 @@ nodes:
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:6854
   - type: 'text'
-    # ../en-US.restext:78 | " for an explanation of th..."
+    # ../en-US.restext:79 | " for an explanation of th..."
     value: 'restext://Directive_ChurchExplanation_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6857
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6861
 - type: 'section'
-  # ../en-US.restext:733 | "**The Experiment**"
+  # ../en-US.restext:734 | "**The Experiment**"
   title: 'restext://Isolation2_004'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6869
   - type: 'text'
-    # ../en-US.restext:734 | "Anytime a player completes "
+    # ../en-US.restext:735 | "Anytime a player completes "
     value: 'restext://Isolation2_005'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6872
   - type: 'switch'
@@ -106,22 +106,22 @@ nodes:
       nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:6874
       - type: 'text'
-        # ../en-US.restext:736 | "**a Biology**"
+        # ../en-US.restext:737 | "**a Biology**"
         value: 'restext://Isolation2_007'
     - match: 'chem'
       nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:6878
       - type: 'text'
-        # ../en-US.restext:737 | "**a Chemistry**"
+        # ../en-US.restext:738 | "**a Chemistry**"
         value: 'restext://Isolation2_008'
     default:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6882
     - type: 'text'
-      # ../en-US.restext:735 | "**an Engineering**"
+      # ../en-US.restext:736 | "**an Engineering**"
       value: 'restext://Isolation2_006'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6884
   - type: 'text'
-    # ../en-US.restext:738 | " **Experiment**, that pla..."
+    # ../en-US.restext:739 | " **Experiment**, that pla..."
     value: 'restext://Isolation2_009'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6890
   - type: 'conditional'
@@ -129,7 +129,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6894
     - type: 'text'
-      # ../en-US.restext:739 | "_Only 1 token can be coll..."
+      # ../en-US.restext:740 | "_Only 1 token can be coll..."
       value: 'restext://Isolation2_010'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6897
   - type: 'conditional'
@@ -137,7 +137,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6899
     - type: 'text'
-      # ../en-US.restext:740 | "The player who gains the ..."
+      # ../en-US.restext:741 | "The player who gains the ..."
       value: 'restext://Isolation2_011'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6912
   - type: 'break'
@@ -148,7 +148,7 @@ nodes:
     # ../en-US.restext:35 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
     target: 'SmugEvent2' # ./00094-SmugEvent2.mws.yaml
-    # ../en-US.restext:371 | "End of Round"
+    # ../en-US.restext:372 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -157,10 +157,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:301 | "The Middle Years of the T..."
+      # ../en-US.restext:302 | "The Middle Years of the T..."
       value: 'restext://Round_GenerationIII_MiddleEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:305 | "Then, perform all Start o..."
+      # ../en-US.restext:306 | "Then, perform all Start o..."
       value: 'restext://Round_StartLateYears_Rule'

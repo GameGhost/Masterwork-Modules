@@ -12,12 +12,12 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:90 | "Please enter the VP of yo..."
+      # ../en-US.restext:91 | "Please enter the VP of yo..."
       value: 'restext://Directive_EnterEngineeringVP_Strength'
     - type: 'input'
       label: ''
       var: 'strA'
-    # ../en-US.restext:369 | "Continue"
+    # ../en-US.restext:370 | "Continue"
     okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'
@@ -29,14 +29,14 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25601
 - type: 'text'
-  # ../en-US.restext:229 | "**Strength Confirmed**"
+  # ../en-US.restext:230 | "**Strength Confirmed**"
   value: 'restext://Heading_StrengthConfirmed'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25603
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25607
 - type: 'text'
-  # ../en-US.restext:1883 | "**{strA}** is locked in a..."
+  # ../en-US.restext:1887 | "**{strA}** is locked in a..."
   value: 'restext://Player1Statsb_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25611
 - type: 'break'

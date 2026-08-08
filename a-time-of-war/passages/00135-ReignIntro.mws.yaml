@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ReignIntro'
-# ../en-US.restext:1136 | "Visit with the Royal Advisor"
+# ../en-US.restext:1141 | "Visit with the Royal Advisor"
 title: 'restext://ReignIntro_001'
 layout: 'narration'
 nodes:
@@ -16,19 +16,19 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:14986
   - type: 'text'
-    # ../en-US.restext:1138 | "The new Unified Monarchis..."
+    # ../en-US.restext:1143 | "The new Unified Monarchis..."
     value: 'restext://ReignIntro_003'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:14990
   - type: 'text'
-    # ../en-US.restext:1137 | "The royal advisor had ant..."
+    # ../en-US.restext:1142 | "The royal advisor had ant..."
     value: 'restext://ReignIntro_002'
 # ../.source/ATimeofWar_Eng_v8.cs:14994
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:14996
 - type: 'text'
-  # ../en-US.restext:1139 | "I had sent a brief corres..."
+  # ../en-US.restext:1144 | "I had sent a brief corres..."
   value: 'restext://ReignIntro_004'
 # ../.source/ATimeofWar_Eng_v8.cs:14998
 - type: 'break'

@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TowardsDev'
-# ../en-US.restext:1681 | "Under Unfortunate Circums..."
+# ../en-US.restext:1689 | "Under Unfortunate Circums..."
 title: 'restext://TowardsDev_001'
 tags:
 - 'END'
@@ -15,14 +15,14 @@ nodes:
   okay: 'restext://UIButton_Confirm'
   content:
   - type: 'text'
-    # ../en-US.restext:1682 | "Perform the End of the Ge..."
+    # ../en-US.restext:1690 | "Perform the End of the Ge..."
     value: 'restext://TowardsDev_002'
   - type: 'let'
     var: 'generation'
     expr: '3'
 # ../.source/ATimeofWar_Eng_v8.cs:20140
 - type: 'text'
-  # ../en-US.restext:1683 | "Today, I write these word..."
+  # ../en-US.restext:1691 | "Today, I write these word..."
   value: 'restext://TowardsDev_003'
 # ../.source/ATimeofWar_Eng_v8.cs:20141
 - type: 'break'
@@ -33,19 +33,19 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:20145
   - type: 'text'
-    # ../en-US.restext:1685 | "Unfortunately, the {warwi..."
+    # ../en-US.restext:1693 | "Unfortunately, the {warwi..."
     value: 'restext://TowardsDev_005'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:20154
   - type: 'text'
-    # ../en-US.restext:1684 | "Without the support of th..."
+    # ../en-US.restext:1692 | "Without the support of th..."
     value: 'restext://TowardsDev_004'
 # ../.source/ATimeofWar_Eng_v8.cs:20159
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:20161
 - type: 'text'
-  # ../en-US.restext:1686 | "But even with my final br..."
+  # ../en-US.restext:1694 | "But even with my final br..."
   value: 'restext://TowardsDev_006'
 # ../.source/ATimeofWar_Eng_v8.cs:20164
 - type: 'break'

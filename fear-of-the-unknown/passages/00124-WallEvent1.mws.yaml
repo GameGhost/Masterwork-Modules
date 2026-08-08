@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'WallEvent1'
-# ../en-US.restext:1278 | "Opportunity"
+# ../en-US.restext:1279 | "Opportunity"
 title: 'restext://WallEvent1_001'
 tags:
 - '2P-Weak'
@@ -10,48 +10,48 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:14932
 - type: 'text'
-  # ../en-US.restext:313 | "Special Event"
+  # ../en-US.restext:314 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14933
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14934
 - type: 'text'
-  # ../en-US.restext:1279 | "Each player is given an o..."
+  # ../en-US.restext:1280 | "Each player is given an o..."
   value: 'restext://WallEvent1_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14958
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14960
 - type: 'text'
-  # ../en-US.restext:1280 | "The Romani cannot offer m..."
+  # ../en-US.restext:1281 | "The Romani cannot offer m..."
   value: 'restext://WallEvent1_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14963
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14968
 - type: 'text'
-  # ../en-US.restext:1281 | "**Monetary VOTE**"
+  # ../en-US.restext:1282 | "**Monetary VOTE**"
   value: 'restext://WallEvent1_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14970
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14971
 - type: 'text'
-  # ../en-US.restext:1282 | "All players take all thei..."
+  # ../en-US.restext:1283 | "All players take all thei..."
   value: 'restext://WallEvent1_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14972
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14976
 - type: 'text'
-  # ../en-US.restext:1283 | "**If they wish to buy a b..."
+  # ../en-US.restext:1284 | "**If they wish to buy a b..."
   value: 'restext://WallEvent1_006'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14981
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14985
 - type: 'text'
-  # ../en-US.restext:1284 | "**If they wish to abstain..."
+  # ../en-US.restext:1285 | "**If they wish to abstain..."
   value: 'restext://WallEvent1_007'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14990
 - type: 'break'
@@ -63,7 +63,7 @@ nodes:
   label: 'restext://Click_StartVote'
   content:
   - type: 'text'
-    # ../en-US.restext:373 | "Click on the 'Start Votin..."
+    # ../en-US.restext:374 | "Click on the 'Start Votin..."
     value: 'restext://Voting_Instructions'
   - type: 'break'
     style: 'paragraph'
@@ -74,27 +74,27 @@ nodes:
     style: 'paragraph'
   - type: 'popup'
     layout: 'countdown_action'
-    # ../en-US.restext:374 | "Start Voting"
+    # ../en-US.restext:375 | "Start Voting"
     label: 'restext://Voting_StartButton'
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:66 | "3"
+      # ../en-US.restext:67 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:67 | "2"
+      # ../en-US.restext:68 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:64 | "1"
+      # ../en-US.restext:65 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:65 | "REVEAL"
+      # ../en-US.restext:66 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:65 | "REVEAL"
+    # ../en-US.restext:66 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: 'WallEvent1b' # ./00240-WallEvent1b.mws.yaml
     snapshot: false

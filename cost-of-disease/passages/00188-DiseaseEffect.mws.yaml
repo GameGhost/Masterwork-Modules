@@ -2,7 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'DiseaseEffect'
-title: '{tempdisease == 1 ? "A Continuing Malady" : "Not Passed Down"}'
+# ../en-US.restext:1685 | DiseaseEffect_001 | "A Continuing Malady"
+# ../en-US.restext:1686 | DiseaseEffect_002 | "Not Passed Down"
+title: '{tempdisease == 1 ? "restext://DiseaseEffect_001" : "restext://DiseaseEffect_002"}'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:21860
@@ -15,8 +17,8 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:21870
   - type: 'text'
-    # ../en-US.restext:1688 | "It appeared that the effe..."
-    value: 'restext://DiseaseEffect_004'
+    # ../en-US.restext:1690 | "It appeared that the effe..."
+    value: 'restext://DiseaseEffect_006'
   # ../.source/TheCostofDisease_Eng_v10.cs:21873
   - type: 'break'
     style: 'paragraph'
@@ -37,20 +39,20 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:21913
     - type: 'text'
-      # ../en-US.restext:1689 | "Any player who did not co..."
-      value: 'restext://DiseaseEffect_005'
+      # ../en-US.restext:1691 | "Any player who did not co..."
+      value: 'restext://DiseaseEffect_007'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:21887
   - type: 'text'
-    # ../en-US.restext:1685 | "Twenty years passed witho..."
-    value: 'restext://DiseaseEffect_001'
+    # ../en-US.restext:1687 | "Twenty years passed witho..."
+    value: 'restext://DiseaseEffect_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:21888
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:21890
   - type: 'text'
-    # ../en-US.restext:1686 | "Family curse? They dismis..."
-    value: 'restext://DiseaseEffect_002'
+    # ../en-US.restext:1688 | "Family curse? They dismis..."
+    value: 'restext://DiseaseEffect_004'
   # ../.source/TheCostofDisease_Eng_v10.cs:21891
   - type: 'break'
     style: 'paragraph'
@@ -71,5 +73,5 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:21942
     - type: 'text'
-      # ../en-US.restext:1687 | "All players who did not c..."
-      value: 'restext://DiseaseEffect_003'
+      # ../en-US.restext:1689 | "All players who did not c..."
+      value: 'restext://DiseaseEffect_005'

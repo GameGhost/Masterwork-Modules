@@ -2,7 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Gen1CreepyYes'
-title: '{hunters == "evil" ? "Agreed" : "Agreed"}'
+# ../en-US.restext:2456 | Gen1CreepyYes_001 | "Agreed"
+# ../en-US.restext:2456 | Gen1CreepyYes_001 | "Agreed"
+title: '{hunters == "evil" ? "restext://Gen1CreepyYes_001" : "restext://Gen1CreepyYes_001"}'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:30457
@@ -12,15 +14,15 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:30464
   - type: 'text'
-    # ../en-US.restext:2455 | "The individual produced a..."
-    value: 'restext://Gen1CreepyYes_004'
+    # ../en-US.restext:2460 | "The individual produced a..."
+    value: 'restext://Gen1CreepyYes_005'
   # ../.source/TheCostofDisease_Eng_v10.cs:30465
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:30467
   - type: 'text'
-    # ../en-US.restext:2453 | "Perhaps it had been a cha..."
-    value: 'restext://Gen1CreepyYes_002'
+    # ../en-US.restext:2458 | "Perhaps it had been a cha..."
+    value: 'restext://Gen1CreepyYes_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:30469
   - type: 'break'
     style: 'paragraph'
@@ -52,20 +54,20 @@ nodes:
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:30516
     - type: 'text'
-      # ../en-US.restext:2456 | "Gain $2. Then, return the..."
-      value: 'restext://Gen1CreepyYes_005'
+      # ../en-US.restext:2461 | "Gain $2. Then, return the..."
+      value: 'restext://Gen1CreepyYes_006'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:30483
   - type: 'text'
-    # ../en-US.restext:2452 | "The representative was ap..."
-    value: 'restext://Gen1CreepyYes_001'
+    # ../en-US.restext:2457 | "The representative was ap..."
+    value: 'restext://Gen1CreepyYes_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:30489
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:30491
   - type: 'text'
-    # ../en-US.restext:2453 | "Perhaps it had been a cha..."
-    value: 'restext://Gen1CreepyYes_002'
+    # ../en-US.restext:2458 | "Perhaps it had been a cha..."
+    value: 'restext://Gen1CreepyYes_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:30493
   - type: 'break'
     style: 'paragraph'
@@ -97,5 +99,5 @@ nodes:
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:30556
     - type: 'text'
-      # ../en-US.restext:2454 | "You may immediately take ..."
-      value: 'restext://Gen1CreepyYes_003'
+      # ../en-US.restext:2459 | "You may immediately take ..."
+      value: 'restext://Gen1CreepyYes_004'

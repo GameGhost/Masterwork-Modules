@@ -2,69 +2,69 @@
 ---
 format: 'mws/0.4'
 passage_id: 'LiberalEvent3b'
-# ../en-US.restext:151 | "BID"
+# ../en-US.restext:152 | "BID"
 title: 'restext://Heading_BidCaps'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:29266
 - type: 'text'
-  # ../en-US.restext:313 | "Special Event"
+  # ../en-US.restext:314 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29267
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29268
 - type: 'text'
-  # ../en-US.restext:70 | "All players take all thei..."
+  # ../en-US.restext:71 | "All players take all thei..."
   value: 'restext://Directive_AllPlayersBidMoney'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29270
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29272
 - type: 'text'
-  # ../en-US.restext:2182 | "Once all players are read..."
+  # ../en-US.restext:2186 | "Once all players are read..."
   value: 'restext://LiberalEvent3b_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29273
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29276
 - type: 'text'
-  # ../en-US.restext:2183 | "Players are bidding for t..."
+  # ../en-US.restext:2187 | "Players are bidding for t..."
   value: 'restext://LiberalEvent3b_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29282
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29286
 - type: 'text'
-  # ../en-US.restext:2184 | "**Choose the scientific d..."
+  # ../en-US.restext:2188 | "**Choose the scientific d..."
   value: 'restext://LiberalEvent3b_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29291
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29295
 - type: 'text'
-  # ../en-US.restext:2185 | "**Name the Program**."
+  # ../en-US.restext:2189 | "**Name the Program**."
   value: 'restext://LiberalEvent3b_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29298
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29302
 - type: 'text'
-  # ../en-US.restext:290 | "**Gain 3VP**."
+  # ../en-US.restext:291 | "**Gain 3VP**."
   value: 'restext://Reward_Gain3VP'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29305
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29309
 - type: 'text'
-  # ../en-US.restext:128 | "_(Ties are broken by the ..."
+  # ../en-US.restext:129 | "_(Ties are broken by the ..."
   value: 'restext://Directive_TieBreak_LastInEarlyYears'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29312
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29314
 - type: 'text'
-  # ../en-US.restext:2186 | "Only the player who wins ..."
+  # ../en-US.restext:2190 | "Only the player who wins ..."
   value: 'restext://LiberalEvent3b_006'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29316
 - type: 'break'
@@ -92,22 +92,22 @@ nodes:
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:66 | "3"
+      # ../en-US.restext:67 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:67 | "2"
+      # ../en-US.restext:68 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:64 | "1"
+      # ../en-US.restext:65 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:65 | "REVEAL"
+      # ../en-US.restext:66 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:65 | "REVEAL"
+    # ../en-US.restext:66 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: 'LiberalEvent3Res' # ./00260-LiberalEvent3Res.mws.yaml
     snapshot: false

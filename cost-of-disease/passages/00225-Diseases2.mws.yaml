@@ -2,7 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Diseases2'
-title: '{disease2 == 1 ? "A Cleansing" : "Wasted Potential"}'
+# ../en-US.restext:1982 | Diseases2_001 | "A Cleansing"
+# ../en-US.restext:1983 | Diseases2_002 | "Wasted Potential"
+title: '{disease2 == 1 ? "restext://Diseases2_001" : "restext://Diseases2_002"}'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:24768
@@ -27,8 +29,8 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:24779
   - type: 'text'
-    # ../en-US.restext:1982 | "When the symptoms grew to..."
-    value: 'restext://Diseases2_003'
+    # ../en-US.restext:1986 | "When the symptoms grew to..."
+    value: 'restext://Diseases2_005'
   # ../.source/TheCostofDisease_Eng_v10.cs:24780
   - type: 'break'
     style: 'paragraph'
@@ -49,13 +51,13 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:24819
     - type: 'text'
-      # ../en-US.restext:1983 | "All players that have not..."
-      value: 'restext://Diseases2_004'
+      # ../en-US.restext:1987 | "All players that have not..."
+      value: 'restext://Diseases2_006'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:24794
   - type: 'text'
-    # ../en-US.restext:1980 | "While the disease that pl..."
-    value: 'restext://Diseases2_001'
+    # ../en-US.restext:1984 | "While the disease that pl..."
+    value: 'restext://Diseases2_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:24798
   - type: 'break'
     style: 'paragraph'
@@ -76,5 +78,5 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:24857
     - type: 'text'
-      # ../en-US.restext:1981 | "All players that have not..."
-      value: 'restext://Diseases2_002'
+      # ../en-US.restext:1985 | "All players that have not..."
+      value: 'restext://Diseases2_004'

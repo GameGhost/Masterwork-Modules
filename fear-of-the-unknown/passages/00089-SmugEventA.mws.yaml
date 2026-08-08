@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'SmugEventA'
-# ../en-US.restext:347 | "Preparations"
+# ../en-US.restext:348 | "Preparations"
 title: 'restext://Title_Preparations'
 layout: 'narration'
 nodes:
@@ -36,7 +36,7 @@ nodes:
       expr: 'rand_between(3, 4, "SmugEventA_1")'
 # ../.source/FearoftheUnknown_Eng_v15.cs:11701
 - type: 'text'
-  # ../en-US.restext:995 | "To properly introduce the..."
+  # ../en-US.restext:996 | "To properly introduce the..."
   value: 'restext://SmugEventA_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:11711
 - type: 'switch'
@@ -46,22 +46,22 @@ nodes:
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:11713
     - type: 'text'
-      # ../en-US.restext:997 | "a Biology"
+      # ../en-US.restext:998 | "a Biology"
       value: 'restext://SmugEventA_004'
   - match: 'chem'
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:11717
     - type: 'text'
-      # ../en-US.restext:998 | "a Chemistry"
+      # ../en-US.restext:999 | "a Chemistry"
       value: 'restext://SmugEventA_005'
   default:
   # ../.source/FearoftheUnknown_Eng_v15.cs:11721
   - type: 'text'
-    # ../en-US.restext:996 | "an Engineering"
+    # ../en-US.restext:997 | "an Engineering"
     value: 'restext://SmugEventA_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:11723
 - type: 'text'
-  # ../en-US.restext:999 | " Experiment. "
+  # ../en-US.restext:1000 | " Experiment. "
   value: 'restext://SmugEventA_006'
 # ../.source/FearoftheUnknown_Eng_v15.cs:11725
 - type: 'conditional'
@@ -69,7 +69,7 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:11727
   - type: 'text'
-    # ../en-US.restext:1000 | "Each player can only gain..."
+    # ../en-US.restext:1001 | "Each player can only gain..."
     value: 'restext://SmugEventA_007'
 # ../.source/FearoftheUnknown_Eng_v15.cs:11736
 - type: 'conditional'
@@ -77,7 +77,7 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:11738
   - type: 'text'
-    # ../en-US.restext:1001 | "The player who gains the ..."
+    # ../en-US.restext:1002 | "The player who gains the ..."
     value: 'restext://SmugEventA_008'
 # ../.source/FearoftheUnknown_Eng_v15.cs:11747
 - type: 'break'
@@ -88,7 +88,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'Isolation2' # ./00043-Isolation2.mws.yaml
-  # ../en-US.restext:367 | "Close"
+  # ../en-US.restext:368 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -99,7 +99,7 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:11768
   - type: 'text'
-    # ../en-US.restext:1002 | "Place the "
+    # ../en-US.restext:1003 | "Place the "
     value: 'restext://SmugEventA_009'
   # ../.source/FearoftheUnknown_Eng_v15.cs:11771
   - type: 'switch'
@@ -109,34 +109,34 @@ nodes:
       nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:11773
       - type: 'text'
-        # ../en-US.restext:1004 | "**Injecting an Agitated G..."
+        # ../en-US.restext:1005 | "**Injecting an Agitated G..."
         value: 'restext://SmugEventA_011'
     - match: 'chem'
       nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:11777
       - type: 'text'
-        # ../en-US.restext:1005 | "**A Fabric That Cannot Be..."
+        # ../en-US.restext:1006 | "**A Fabric That Cannot Be..."
         value: 'restext://SmugEventA_012'
     default:
     # ../.source/FearoftheUnknown_Eng_v15.cs:11781
     - type: 'text'
-      # ../en-US.restext:1003 | "**A Robot Servant That Pr..."
+      # ../en-US.restext:1004 | "**A Robot Servant That Pr..."
       value: 'restext://SmugEventA_010'
   # ../.source/FearoftheUnknown_Eng_v15.cs:11784
   - type: 'text'
-    # ../en-US.restext:1006 | " Experiment face-up on th..."
+    # ../en-US.restext:1007 | " Experiment face-up on th..."
     value: 'restext://SmugEventA_013'
   # ../.source/FearoftheUnknown_Eng_v15.cs:11787
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:11789
   - type: 'text'
-    # ../en-US.restext:1007 | "Then, retrieve **{collab}..."
+    # ../en-US.restext:1008 | "Then, retrieve **{collab}..."
     value: 'restext://SmugEventA_014'
   # ../.source/FearoftheUnknown_Eng_v15.cs:11798
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:11802
   - type: 'text'
-    # ../en-US.restext:1008 | "**WARNING: COMPLETING THI..."
+    # ../en-US.restext:1009 | "**WARNING: COMPLETING THI..."
     value: 'restext://SmugEventA_015'

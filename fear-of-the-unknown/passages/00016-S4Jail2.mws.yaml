@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S4Jail2'
-# ../en-US.restext:518 | "Money Talks"
+# ../en-US.restext:519 | "Money Talks"
 title: 'restext://S4Jail2_001'
 tags:
 - 'END'
@@ -15,11 +15,11 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:3494
 - type: 'popup'
   layout: 'end_of_generation'
-  # ../en-US.restext:368 | "Confirm"
+  # ../en-US.restext:369 | "Confirm"
   okay: 'restext://UIButton_Confirm'
   content:
   - type: 'text'
-    # ../en-US.restext:85 | "Remove all player pieces ..."
+    # ../en-US.restext:86 | "Remove all player pieces ..."
     value: 'restext://Directive_EndGeneration_ReturnAsylumupHouseOnHill'
   - type: 'let'
     var: 'generation'
@@ -30,7 +30,7 @@ nodes:
   expr: '"money"'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3499
 - type: 'text'
-  # ../en-US.restext:157 | "**Collected Letters -** _..."
+  # ../en-US.restext:158 | "**Collected Letters -** _..."
   value: 'restext://Heading_CollectedLetters_ShelleyHerbert'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3505
 - type: 'break'
@@ -41,14 +41,14 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3509
   - type: 'text'
-    # ../en-US.restext:521 | "Is it true they have plan..."
+    # ../en-US.restext:522 | "Is it true they have plan..."
     value: 'restext://S4Jail2_008'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3516
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3518
   - type: 'text'
-    # ../en-US.restext:522 | "Well, I say good riddance..."
+    # ../en-US.restext:523 | "Well, I say good riddance..."
     value: 'restext://S4Jail2_009'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3523
   - type: 'assign'
@@ -66,14 +66,14 @@ nodes:
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3529
   - type: 'text'
-    # ../en-US.restext:519 | "Since your last letter, I..."
+    # ../en-US.restext:520 | "Since your last letter, I..."
     value: 'restext://S4Jail2_005'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3536
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3538
   - type: 'text'
-    # ../en-US.restext:520 | "I say it is a positive th..."
+    # ../en-US.restext:521 | "I say it is a positive th..."
     value: 'restext://S4Jail2_006'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3541
   - type: 'assign'

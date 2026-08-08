@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'RevengePlot35'
-# ../en-US.restext:1625 | "A Small Choice"
+# ../en-US.restext:1626 | "A Small Choice"
 title: 'restext://RevengePlot35_001'
 tags:
 - 'format'
@@ -10,7 +10,7 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:21872
 - type: 'text'
-  # ../en-US.restext:1626 | "**Carefully pick up this ..."
+  # ../en-US.restext:1627 | "**Carefully pick up this ..."
   value: 'restext://RevengePlot35_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21886
 - type: 'break'
@@ -20,63 +20,63 @@ nodes:
   # ../en-US.restext:53 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:367 | "Close"
+  # ../en-US.restext:368 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:21901
   - type: 'text'
-    # ../en-US.restext:1627 | "**Collected Notes -** _10..."
+    # ../en-US.restext:1628 | "**Collected Notes -** _10..."
     value: 'restext://RevengePlot35_003'
   # ../.source/FearoftheUnknown_Eng_v15.cs:21907
   - type: 'break'
   # ../.source/FearoftheUnknown_Eng_v15.cs:21908
   - type: 'text'
-    # ../en-US.restext:1628 | "Perhaps it was fate that ..."
+    # ../en-US.restext:1629 | "Perhaps it was fate that ..."
     value: 'restext://RevengePlot35_004'
   # ../.source/FearoftheUnknown_Eng_v15.cs:21911
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:21915
   - type: 'text'
-    # ../en-US.restext:1629 | "**MAKE A CHOICE:**"
+    # ../en-US.restext:1630 | "**MAKE A CHOICE:**"
     value: 'restext://RevengePlot35_005'
   # ../.source/FearoftheUnknown_Eng_v15.cs:21917
   - type: 'break'
   # ../.source/FearoftheUnknown_Eng_v15.cs:21918
   - type: 'text'
-    # ../en-US.restext:1630 | "A {icon:storybooktoken} t..."
+    # ../en-US.restext:1631 | "A {icon:storybooktoken} t..."
     value: 'restext://RevengePlot35_006'
   # ../.source/FearoftheUnknown_Eng_v15.cs:21929
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:21931
   - type: 'link'
-    # ../en-US.restext:1631 | "Click here to choose Fortune"
+    # ../en-US.restext:1632 | "Click here to choose Fortune"
     label: 'restext://RevengePlot35_007'
     target: 'RevengePlotFortune' # ./00191-RevengePlotFortune.mws.yaml
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:21932
   - type: 'text'
-    # ../en-US.restext:1632 | " - The player will move f..."
+    # ../en-US.restext:1633 | " - The player will move f..."
     value: 'restext://RevengePlot35_008'
   # ../.source/FearoftheUnknown_Eng_v15.cs:21934
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:21936
   - type: 'text'
-    # ../en-US.restext:372 | "OR"
+    # ../en-US.restext:373 | "OR"
     value: 'restext://UIButton_Or'
   # ../.source/FearoftheUnknown_Eng_v15.cs:21937
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:21939
   - type: 'link'
-    # ../en-US.restext:1633 | "Click here to choose Misf..."
+    # ../en-US.restext:1634 | "Click here to choose Misf..."
     label: 'restext://RevengePlot35_009'
     target: 'RevengePlotMisfortune' # ./00192-RevengePlotMisfortune.mws.yaml
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:21940
   - type: 'text'
-    # ../en-US.restext:1634 | " - The player will lose 3..."
+    # ../en-US.restext:1635 | " - The player will lose 3..."
     value: 'restext://RevengePlot35_010'

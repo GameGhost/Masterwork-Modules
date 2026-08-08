@@ -12,12 +12,12 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:88 | "Please enter the VP of yo..."
+      # ../en-US.restext:89 | "Please enter the VP of yo..."
       value: 'restext://Directive_EnterBiologyVP_Agility'
     - type: 'input'
       label: ''
       var: 'agiB'
-    # ../en-US.restext:369 | "Continue"
+    # ../en-US.restext:370 | "Continue"
     okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'
@@ -29,14 +29,14 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25764
 - type: 'text'
-  # ../en-US.restext:149 | "**Agility Confirmed**"
+  # ../en-US.restext:150 | "**Agility Confirmed**"
   value: 'restext://Heading_AgilityConfirmed'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25766
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25770
 - type: 'text'
-  # ../en-US.restext:1896 | "**{agiB}** is locked in a..."
+  # ../en-US.restext:1900 | "**{agiB}** is locked in a..."
   value: 'restext://Player2Stats_001'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25774
 - type: 'break'

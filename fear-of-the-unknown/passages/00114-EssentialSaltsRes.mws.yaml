@@ -2,41 +2,41 @@
 ---
 format: 'mws/0.4'
 passage_id: 'EssentialSaltsRes'
-# ../en-US.restext:326 | "Arise, My Love"
+# ../en-US.restext:327 | "Arise, My Love"
 title: 'restext://Title_AriseMyLove'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:13964
 - type: 'text'
-  # ../en-US.restext:173 | "**Journal of {randomname}..."
+  # ../en-US.restext:174 | "**Journal of {randomname}..."
   value: 'restext://Heading_JournalOfRandomname_Cont'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13973
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13975
 - type: 'text'
-  # ../en-US.restext:261 | "Whether for love or purpo..."
+  # ../en-US.restext:262 | "Whether for love or purpo..."
   value: 'restext://Narrative_MausoleumSpouseSolution'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13983
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13985
 - type: 'text'
-  # ../en-US.restext:1170 | "With a billow of emerald ..."
+  # ../en-US.restext:1171 | "With a billow of emerald ..."
   value: 'restext://EssentialSaltsRes_001'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13987
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13989
 - type: 'text'
-  # ../en-US.restext:1171 | "However, the hideous silh..."
+  # ../en-US.restext:1172 | "However, the hideous silh..."
   value: 'restext://EssentialSaltsRes_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13990
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13992
 - type: 'text'
-  # ../en-US.restext:1172 | "I spoke to them and thoug..."
+  # ../en-US.restext:1173 | "I spoke to them and thoug..."
   value: 'restext://EssentialSaltsRes_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13994
 - type: 'break'
@@ -47,7 +47,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 19 ? "LiberalEvent3" : ["LiberalEvent", "LiberalTaxes"].shuffled("EssentialSaltsRes_0")[0]}' # ./00258-LiberalEvent3.mws.yaml, ./00054-LiberalEvent.mws.yaml, ./00101-LiberalTaxes.mws.yaml
-  # ../en-US.restext:367 | "Close"
+  # ../en-US.restext:368 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -58,12 +58,12 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:14039
   - type: 'text'
-    # ../en-US.restext:1173 | "Any player who chose to p..."
+    # ../en-US.restext:1174 | "Any player who chose to p..."
     value: 'restext://EssentialSaltsRes_004'
   # ../.source/FearoftheUnknown_Eng_v15.cs:14052
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:14056
   - type: 'text'
-    # ../en-US.restext:1174 | "_If you cannot gain a Car..."
+    # ../en-US.restext:1175 | "_If you cannot gain a Car..."
     value: 'restext://EssentialSaltsRes_005'

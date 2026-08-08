@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'EssentialCons'
-# ../en-US.restext:326 | "Arise, My Love"
+# ../en-US.restext:327 | "Arise, My Love"
 title: 'restext://Title_AriseMyLove'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:13804
 - type: 'text'
-  # ../en-US.restext:173 | "**Journal of {randomname}..."
+  # ../en-US.restext:174 | "**Journal of {randomname}..."
   value: 'restext://Heading_JournalOfRandomname_Cont'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13814
 - type: 'assign'
@@ -19,14 +19,14 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13816
 - type: 'text'
-  # ../en-US.restext:261 | "Whether for love or purpo..."
+  # ../en-US.restext:262 | "Whether for love or purpo..."
   value: 'restext://Narrative_MausoleumSpouseSolution'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13824
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13826
 - type: 'text'
-  # ../en-US.restext:1160 | "With a billow of emerald ..."
+  # ../en-US.restext:1161 | "With a billow of emerald ..."
   value: 'restext://EssentialCons_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13828
 - type: 'break'
@@ -37,14 +37,14 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:13832
   - type: 'text'
-    # ../en-US.restext:1164 | "I could scarcely trust my..."
+    # ../en-US.restext:1165 | "I could scarcely trust my..."
     value: 'restext://EssentialCons_007'
   # ../.source/FearoftheUnknown_Eng_v15.cs:13834
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:13836
   - type: 'text'
-    # ../en-US.restext:1165 | "I embraced them, and thou..."
+    # ../en-US.restext:1166 | "I embraced them, and thou..."
     value: 'restext://EssentialCons_008'
   # ../.source/FearoftheUnknown_Eng_v15.cs:13838
   - type: 'break'
@@ -52,21 +52,21 @@ nodes:
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:13843
   - type: 'text'
-    # ../en-US.restext:1161 | "However, I find that thei..."
+    # ../en-US.restext:1162 | "However, I find that thei..."
     value: 'restext://EssentialCons_004'
   # ../.source/FearoftheUnknown_Eng_v15.cs:13846
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:13848
   - type: 'text'
-    # ../en-US.restext:1162 | "I observed in abject horr..."
+    # ../en-US.restext:1163 | "I observed in abject horr..."
     value: 'restext://EssentialCons_005'
   # ../.source/FearoftheUnknown_Eng_v15.cs:13849
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:13851
   - type: 'text'
-    # ../en-US.restext:1163 | "Generally though, they ar..."
+    # ../en-US.restext:1164 | "Generally though, they ar..."
     value: 'restext://EssentialCons_006'
   # ../.source/FearoftheUnknown_Eng_v15.cs:13852
   - type: 'break'
@@ -78,7 +78,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   layout: 'reveal'
-  # ../en-US.restext:367 | "Close"
+  # ../en-US.restext:368 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -96,7 +96,7 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:369 | "Continue"
+      # ../en-US.restext:370 | "Continue"
       label: 'restext://UIButton_Continue'
       target: 'LiberalEvent3' # ./00258-LiberalEvent3.mws.yaml
       snapshot: true
@@ -114,7 +114,7 @@ nodes:
       style: 'panel'
       content: []
     - type: 'link'
-      # ../en-US.restext:369 | "Continue"
+      # ../en-US.restext:370 | "Continue"
       label: 'restext://UIButton_Continue'
       target: '${EssentialConsnextpsg}'
       snapshot: true
@@ -123,7 +123,7 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:13907
   - type: 'text'
-    # ../en-US.restext:1166 | "Any player who chose to p..."
+    # ../en-US.restext:1167 | "Any player who chose to p..."
     value: 'restext://EssentialCons_009'
   # ../.source/FearoftheUnknown_Eng_v15.cs:13914
   - type: 'break'
@@ -134,5 +134,5 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:13918
     - type: 'text'
-      # ../en-US.restext:1167 | "They also **gain 1** {ico..."
+      # ../en-US.restext:1168 | "They also **gain 1** {ico..."
       value: 'restext://EssentialCons_010'

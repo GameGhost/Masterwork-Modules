@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Isolation'
-# ../en-US.restext:364 | "Walled City"
+# ../en-US.restext:365 | "Walled City"
 title: 'restext://Title_WalledCity'
-# ../en-US.restext:332 | "Early Years"
+# ../en-US.restext:333 | "Early Years"
 subtitle: 'restext://Title_EarlyYears'
 tags:
 - 'HUB'
@@ -21,7 +21,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3728
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:366 | "Accept"
+    # ../en-US.restext:367 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:3732
@@ -31,7 +31,7 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:3734
     - type: 'text'
-      # ../en-US.restext:543 | "Turn to page **14** of th..."
+      # ../en-US.restext:544 | "Turn to page **14** of th..."
       value: 'restext://Isolation_002'
     # ../.source/FearoftheUnknown_Eng_v15.cs:3749
     - type: 'break'
@@ -41,7 +41,7 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:3752
       - type: 'text'
-        # ../en-US.restext:68 | "Then, since this is a 3 p..."
+        # ../en-US.restext:69 | "Then, since this is a 3 p..."
         value: 'restext://Directive_3Player_PassMarker_A'
       # ../.source/FearoftheUnknown_Eng_v15.cs:3753
       - type: 'break'
@@ -50,33 +50,33 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3761
 - type: 'section'
-  # ../en-US.restext:544 | "**Rising Prices**"
+  # ../en-US.restext:545 | "**Rising Prices**"
   title: 'restext://Isolation_003'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3769
   - type: 'text'
-    # ../en-US.restext:545 | "With the town's isolation..."
+    # ../en-US.restext:546 | "With the town's isolation..."
     value: 'restext://Isolation_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3784
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3788
 - type: 'section'
-  # ../en-US.restext:228 | "{icon:storybooktoken} **V..."
+  # ../en-US.restext:229 | "{icon:storybooktoken} **V..."
   title: 'restext://Heading_StorybookToken_VerificationOfIdentity'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3799
   - type: 'text'
-    # ../en-US.restext:271 | "As a registered citizen w..."
+    # ../en-US.restext:272 | "As a registered citizen w..."
     value: 'restext://Narrative_RegisteredCitizenBackgroundCheck'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3801
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3803
   - type: 'text'
-    # ../en-US.restext:103 | "You MUST place your **Sel..."
+    # ../en-US.restext:104 | "You MUST place your **Sel..."
     value: 'restext://Directive_MustPlaceSelfTownHall_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3810
   - type: 'link'
@@ -89,14 +89,14 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3815
   - type: 'text'
-    # ../en-US.restext:104 | "_(If you have not verifie..."
+    # ../en-US.restext:105 | "_(If you have not verifie..."
     value: 'restext://Directive_NotVerifiedLose4VP'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3823
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3827
 - type: 'section'
-  # ../en-US.restext:230 | "**The Church**"
+  # ../en-US.restext:231 | "**The Church**"
   title: 'restext://Heading_TheChurch'
   style: 'hub-card'
   content:
@@ -108,7 +108,7 @@ nodes:
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:3836
   - type: 'text'
-    # ../en-US.restext:78 | " for an explanation of th..."
+    # ../en-US.restext:79 | " for an explanation of th..."
     value: 'restext://Directive_ChurchExplanation_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3838
   - type: 'break'
@@ -119,7 +119,7 @@ nodes:
     # ../en-US.restext:35 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
     target: 'Caravancheck' # ./00105-Caravancheck.mws.yaml
-    # ../en-US.restext:371 | "End of Round"
+    # ../en-US.restext:372 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -128,10 +128,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:299 | "The Early Years of the Th..."
+      # ../en-US.restext:300 | "The Early Years of the Th..."
       value: 'restext://Round_GenerationIII_EarlyEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:306 | "Then, perform all Start o..."
+      # ../en-US.restext:307 | "Then, perform all Start o..."
       value: 'restext://Round_StartMiddleYears_Rule'

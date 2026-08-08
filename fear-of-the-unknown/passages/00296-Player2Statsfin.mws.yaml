@@ -12,12 +12,12 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:91 | "Please enter the epic nam..."
+      # ../en-US.restext:92 | "Please enter the epic nam..."
       value: 'restext://Directive_EnterWarriorName'
     - type: 'input'
       label: ''
       var: 'warriorB'
-    # ../en-US.restext:369 | "Continue"
+    # ../en-US.restext:370 | "Continue"
     okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'
@@ -37,46 +37,46 @@ nodes:
     expr: 'warriorB.replace("_2", "")'
   # ../.source/FearoftheUnknown_Eng_v15.cs:32600
   - type: 'text'
-    # ../en-US.restext:2441 | "**{_rpl_Player2Statsfin_0}**"
+    # ../en-US.restext:2445 | "**{_rpl_Player2Statsfin_0}**"
     value: 'restext://Player2Statsfin_001'
     lets:
     - '_rpl_Player2Statsfin_0'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32602
 - type: 'text'
-  # ../en-US.restext:161 | " **Complete**"
+  # ../en-US.restext:162 | " **Complete**"
   value: 'restext://Heading_Complete_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32605
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32607
 - type: 'text'
-  # ../en-US.restext:2442 | "Agility: **{agiB}**"
+  # ../en-US.restext:2446 | "Agility: **{agiB}**"
   value: 'restext://Player2Statsfin_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32612
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32613
 - type: 'text'
-  # ../en-US.restext:2443 | "Strength: **{strB}**"
+  # ../en-US.restext:2447 | "Strength: **{strB}**"
   value: 'restext://Player2Statsfin_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32618
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32619
 - type: 'text'
-  # ../en-US.restext:2444 | "Life: **{hitB}**"
+  # ../en-US.restext:2448 | "Life: **{hitB}**"
   value: 'restext://Player2Statsfin_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32624
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32628
 - type: 'text'
-  # ../en-US.restext:198 | "**You are ready for a tri..."
+  # ../en-US.restext:199 | "**You are ready for a tri..."
   value: 'restext://Heading_ReadyForTrialByCombat'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32630
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32632
 - type: 'text'
-  # ../en-US.restext:97 | "If this is correct, please "
+  # ../en-US.restext:98 | "If this is correct, please "
   value: 'restext://Directive_IfCorrectPlease_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32633
 - type: 'link'
@@ -89,7 +89,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32637
 - type: 'text'
-  # ../en-US.restext:98 | "If this is in error, please "
+  # ../en-US.restext:99 | "If this is in error, please "
   value: 'restext://Directive_IfErrorPlease_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32638
 - type: 'link'

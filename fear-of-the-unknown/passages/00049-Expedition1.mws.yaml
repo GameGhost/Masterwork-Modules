@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Expedition1'
-# ../en-US.restext:358 | "The Hunt"
+# ../en-US.restext:359 | "The Hunt"
 title: 'restext://Title_TheHunt'
 layout: 'narration'
 nodes:
@@ -20,35 +20,35 @@ nodes:
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:7660
     - type: 'text'
-      # ../en-US.restext:762 | "Expedition 1:"
+      # ../en-US.restext:763 | "Expedition 1:"
       value: 'restext://Expedition1_003'
   - match: 19
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:7664
     - type: 'text'
-      # ../en-US.restext:762 | "Expedition 1:"
+      # ../en-US.restext:763 | "Expedition 1:"
       value: 'restext://Expedition1_003'
   - match: 20
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:7668
     - type: 'text'
-      # ../en-US.restext:763 | "Expedition 2:"
+      # ../en-US.restext:764 | "Expedition 2:"
       value: 'restext://Expedition1_004'
   default:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7673
   - type: 'text'
-    # ../en-US.restext:761 | "Expedition 3:"
+    # ../en-US.restext:762 | "Expedition 3:"
     value: 'restext://Expedition1_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7676
 - type: 'let'
   var: '_rnd_Expedition1_0'
-  # ../en-US.restext:764 | Expedition1_005 | "The snow-covered landscap..."
-  # ../en-US.restext:765 | Expedition1_006 | "It took months of prepara..."
-  # ../en-US.restext:766 | Expedition1_007 | "A hard journey lay ahead...."
+  # ../en-US.restext:765 | Expedition1_005 | "The snow-covered landscap..."
+  # ../en-US.restext:766 | Expedition1_006 | "It took months of prepara..."
+  # ../en-US.restext:767 | Expedition1_007 | "A hard journey lay ahead...."
   expr: '["restext://Expedition1_005", "restext://Expedition1_006", "restext://Expedition1_007"].shuffled("Expedition1_0")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7675
 - type: 'text'
-  # ../en-US.restext:767 | " {_rnd_Expedition1_0} How..."
+  # ../en-US.restext:768 | " {_rnd_Expedition1_0} How..."
   value: 'restext://Expedition1_008'
   lets:
   - '_rnd_Expedition1_0'

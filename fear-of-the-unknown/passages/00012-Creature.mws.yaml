@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Creature'
-# ../en-US.restext:357 | "The Creature Re emerges"
+# ../en-US.restext:358 | "The Creature Re emerges"
 title: 'restext://Title_TheCreatureReemerges'
-# ../en-US.restext:332 | "Early Years"
+# ../en-US.restext:333 | "Early Years"
 subtitle: 'restext://Title_EarlyYears'
 tags:
 - 'HUB'
@@ -21,7 +21,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2969
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:366 | "Accept"
+    # ../en-US.restext:367 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2973
@@ -35,16 +35,16 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:2977
       - type: 'text'
-        # ../en-US.restext:473 | "Turn to page **4** of the..."
+        # ../en-US.restext:474 | "Turn to page **4** of the..."
         value: 'restext://Creature_003'
       else:
       # ../.source/FearoftheUnknown_Eng_v15.cs:2987
       - type: 'text'
-        # ../en-US.restext:472 | "Turn to page **5** of the..."
+        # ../en-US.restext:473 | "Turn to page **5** of the..."
         value: 'restext://Creature_002'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2994
     - type: 'text'
-      # ../en-US.restext:474 | " Retrieve the **Puppy** a..."
+      # ../en-US.restext:475 | " Retrieve the **Puppy** a..."
       value: 'restext://Creature_004'
     # ../.source/FearoftheUnknown_Eng_v15.cs:3013
     - type: 'conditional'
@@ -76,7 +76,7 @@ nodes:
             expr: 'tracker + 1'
     # ../.source/FearoftheUnknown_Eng_v15.cs:3026
     - type: 'text'
-      # ../en-US.restext:132 | "**{tracker}** and the {ic..."
+      # ../en-US.restext:133 | "**{tracker}** and the {ic..."
       value: 'restext://Directive_TrackerAndMobMarkerLeft'
     # ../.source/FearoftheUnknown_Eng_v15.cs:3031
     - type: 'break'
@@ -86,7 +86,7 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:3034
       - type: 'text'
-        # ../en-US.restext:68 | "Then, since this is a 3 p..."
+        # ../en-US.restext:69 | "Then, since this is a 3 p..."
         value: 'restext://Directive_3Player_PassMarker_A'
       # ../.source/FearoftheUnknown_Eng_v15.cs:3035
       - type: 'break'
@@ -95,20 +95,20 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3044
 - type: 'section'
-  # ../en-US.restext:216 | "{icon:storybooktoken} **C..."
+  # ../en-US.restext:217 | "{icon:storybooktoken} **C..."
   title: 'restext://Heading_StorybookToken_CreaturesRequests'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3055
   - type: 'text'
-    # ../en-US.restext:475 | "When taking the **Perform..."
+    # ../en-US.restext:476 | "When taking the **Perform..."
     value: 'restext://Creature_006'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3079
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3081
   - type: 'text'
-    # ../en-US.restext:476 | "However, if a player comp..."
+    # ../en-US.restext:477 | "However, if a player comp..."
     value: 'restext://Creature_007'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3082
   - type: 'link'
@@ -121,7 +121,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3091
 - type: 'section'
-  # ../en-US.restext:230 | "**The Church**"
+  # ../en-US.restext:231 | "**The Church**"
   title: 'restext://Heading_TheChurch'
   style: 'hub-card'
   content:
@@ -133,20 +133,20 @@ nodes:
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:3100
   - type: 'text'
-    # ../en-US.restext:78 | " for an explanation of th..."
+    # ../en-US.restext:79 | " for an explanation of th..."
     value: 'restext://Directive_ChurchExplanation_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3103
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3108
 - type: 'section'
-  # ../en-US.restext:477 | "**The Asylum**"
+  # ../en-US.restext:478 | "**The Asylum**"
   title: 'restext://Creature_012'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3116
   - type: 'text'
-    # ../en-US.restext:478 | "The town has resolved to ..."
+    # ../en-US.restext:479 | "The town has resolved to ..."
     value: 'restext://Creature_013'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3120
 - type: 'break'
@@ -161,7 +161,7 @@ nodes:
     # ../en-US.restext:34 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_MoveNextRound'
     target: 'AsylumOpps' # ./00145-AsylumOpps.mws.yaml
-    # ../en-US.restext:371 | "End of Round"
+    # ../en-US.restext:372 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -170,10 +170,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:302 | "The Early Years of the Se..."
+      # ../en-US.restext:303 | "The Early Years of the Se..."
       value: 'restext://Round_GenerationII_EarlyEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:306 | "Then, perform all Start o..."
+      # ../en-US.restext:307 | "Then, perform all Start o..."
       value: 'restext://Round_StartMiddleYears_Rule'

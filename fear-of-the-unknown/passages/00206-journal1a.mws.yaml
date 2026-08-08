@@ -35,14 +35,14 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:23321
 - type: 'let'
   var: '_rnd_journal1a_0'
-  # ../en-US.restext:1784 | journal1a_001 | "Journal Entry - "
-  # ../en-US.restext:1785 | journal1a_002 | "Journal of "
-  # ../en-US.restext:1786 | journal1a_003 | "Collected Notes - "
-  # ../en-US.restext:1787 | journal1a_004 | "Diary Entry - "
+  # ../en-US.restext:1785 | journal1a_001 | "Journal Entry - "
+  # ../en-US.restext:1786 | journal1a_002 | "Journal of "
+  # ../en-US.restext:1787 | journal1a_003 | "Collected Notes - "
+  # ../en-US.restext:1788 | journal1a_004 | "Diary Entry - "
   expr: '["restext://journal1a_001", "restext://journal1a_002", "restext://journal1a_003", "restext://journal1a_004"].shuffled("journal1a_4")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:23321
 - type: 'text'
-  # ../en-US.restext:1788 | "**{_rnd_journal1a_0}**"
+  # ../en-US.restext:1789 | "**{_rnd_journal1a_0}**"
   value: 'restext://journal1a_005'
   lets:
   - '_rnd_journal1a_0'
@@ -200,7 +200,7 @@ nodes:
     var: '_rnd_journal1a_3'
     expr: 'rand_between(912, 922, "journal1a_27")'
 - type: 'text'
-  # ../en-US.restext:1789 | "**{randomname} -** _{_rnd..."
+  # ../en-US.restext:1790 | "**{randomname} -** _{_rnd..."
   value: 'restext://journal1a_006'
   lets:
   - '_rnd_journal1a_3'

@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S4Con1'
-# ../en-US.restext:631 | "Caught in the Act"
+# ../en-US.restext:632 | "Caught in the Act"
 title: 'restext://S4Con1_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:5107
 - type: 'text'
-  # ../en-US.restext:182 | "**Letter from {tempid} -** "
+  # ../en-US.restext:183 | "**Letter from {tempid} -** "
   value: 'restext://Heading_LetterFromTempid_Trailing'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5113
 - type: 'include_passage'
@@ -18,14 +18,14 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5118
 - type: 'text'
-  # ../en-US.restext:632 | "These charlatans have sen..."
+  # ../en-US.restext:633 | "These charlatans have sen..."
   value: 'restext://S4Con1_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5122
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5124
 - type: 'text'
-  # ../en-US.restext:633 | "I have, due to the pressu..."
+  # ../en-US.restext:634 | "I have, due to the pressu..."
   value: 'restext://S4Con1_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5125
 - type: 'break'
@@ -36,7 +36,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 11 ? "Isolation2" : "Isolation3"}' # ./00043-Isolation2.mws.yaml, ./00044-Isolation3.mws.yaml
-  # ../en-US.restext:367 | "Close"
+  # ../en-US.restext:368 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -47,5 +47,5 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:5159
   - type: 'text'
-    # ../en-US.restext:634 | "**Gain 2 {icon:creepy_icon}.**"
+    # ../en-US.restext:635 | "**Gain 2 {icon:creepy_icon}.**"
     value: 'restext://S4Con1_005'

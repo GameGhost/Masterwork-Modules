@@ -2,62 +2,62 @@
 ---
 format: 'mws/0.4'
 passage_id: '2PS4Kill2'
-# ../en-US.restext:151 | "BID"
+# ../en-US.restext:152 | "BID"
 title: 'restext://Heading_BidCaps'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:27261
 - type: 'text'
-  # ../en-US.restext:313 | "Special Event"
+  # ../en-US.restext:314 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27262
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27263
 - type: 'text'
-  # ../en-US.restext:74 | "Both players take all the..."
+  # ../en-US.restext:75 | "Both players take all the..."
   value: 'restext://Directive_BothPlayersBidMoney'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27265
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27267
 - type: 'text'
-  # ../en-US.restext:125 | "Once both players are rea..."
+  # ../en-US.restext:126 | "Once both players are rea..."
   value: 'restext://Directive_RevealAmountBidSimultaneously_Singular'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27268
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27271
 - type: 'text'
-  # ../en-US.restext:2048 | "Players are bidding for t..."
+  # ../en-US.restext:2052 | "Players are bidding for t..."
   value: 'restext://_2PS4Kill2_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27276
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27280
 - type: 'text'
-  # ../en-US.restext:2049 | "**Choose to kill the Butc..."
+  # ../en-US.restext:2053 | "**Choose to kill the Butc..."
   value: 'restext://_2PS4Kill2_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27283
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27287
 - type: 'text'
-  # ../en-US.restext:290 | "**Gain 3VP**."
+  # ../en-US.restext:291 | "**Gain 3VP**."
   value: 'restext://Reward_Gain3VP'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27290
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27294
 - type: 'text'
-  # ../en-US.restext:128 | "_(Ties are broken by the ..."
+  # ../en-US.restext:129 | "_(Ties are broken by the ..."
   value: 'restext://Directive_TieBreak_LastInEarlyYears'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27297
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27299
 - type: 'text'
-  # ../en-US.restext:83 | "Only the player who wins ..."
+  # ../en-US.restext:84 | "Only the player who wins ..."
   value: 'restext://Directive_ElectionWinnerPaysBid'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27301
 - type: 'break'
@@ -85,22 +85,22 @@ nodes:
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:66 | "3"
+      # ../en-US.restext:67 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:67 | "2"
+      # ../en-US.restext:68 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:64 | "1"
+      # ../en-US.restext:65 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:65 | "REVEAL"
+      # ../en-US.restext:66 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:65 | "REVEAL"
+    # ../en-US.restext:66 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: '2PS4Kill2b' # ./00343-2PS4Kill2b.mws.yaml
     snapshot: false

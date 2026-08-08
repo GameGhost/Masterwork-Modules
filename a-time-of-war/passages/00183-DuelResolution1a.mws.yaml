@@ -2,8 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'DuelResolution1a'
-# ../en-US.restext:1618 | "{dueltype == \"science\" ..."
-title: 'restext://DuelResolution1a_001'
+# ../en-US.restext:1623 | DuelResolution1a_001 | "{duelsci}"
+# ../en-US.restext:1624 | DuelResolution1a_002 | "The Moment of Truth"
+title: '{dueltype == "science" ? "restext://DuelResolution1a_001" : "restext://DuelResolution1a_002"}'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:19486
@@ -13,8 +14,8 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:19494
   - type: 'text'
-    # ../en-US.restext:1620 | "The scientific duel will ..."
-    value: 'restext://DuelResolution1a_003'
+    # ../en-US.restext:1626 | "The scientific duel will ..."
+    value: 'restext://DuelResolution1a_004'
   # ../.source/ATimeofWar_Eng_v8.cs:19506
   - type: 'break'
     style: 'paragraph'
@@ -35,27 +36,27 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:19539
     - type: 'text'
-      # ../en-US.restext:1621 | "{sabotagee1} and {players..."
-      value: 'restext://DuelResolution1a_004'
+      # ../en-US.restext:1627 | "{sabotagee1} and {players..."
+      value: 'restext://DuelResolution1a_005'
     # ../.source/ATimeofWar_Eng_v8.cs:19545
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:19547
     - type: 'text'
-      # ../en-US.restext:1622 | "They then count how many ..."
-      value: 'restext://DuelResolution1a_005'
+      # ../en-US.restext:1628 | "They then count how many ..."
+      value: 'restext://DuelResolution1a_006'
     # ../.source/ATimeofWar_Eng_v8.cs:19551
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:19553
     - type: 'text'
-      # ../en-US.restext:1623 | "Each player adds these tw..."
-      value: 'restext://DuelResolution1a_006'
+      # ../en-US.restext:1629 | "Each player adds these tw..."
+      value: 'restext://DuelResolution1a_007'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:19519
   - type: 'text'
-    # ../en-US.restext:1619 | "At a distance of twenty p..."
-    value: 'restext://DuelResolution1a_002'
+    # ../en-US.restext:1625 | "At a distance of twenty p..."
+    value: 'restext://DuelResolution1a_003'
   # ../.source/ATimeofWar_Eng_v8.cs:19520
   - type: 'break'
     style: 'paragraph'

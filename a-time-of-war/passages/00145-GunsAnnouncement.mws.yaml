@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'GunsAnnouncement'
-# ../en-US.restext:1230 | "An Investment in {townname}"
+# ../en-US.restext:1235 | "An Investment in {townname}"
 title: 'restext://GunsAnnouncement_001'
 layout: 'narration'
 nodes:
@@ -12,7 +12,7 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:15882
   - type: 'text'
-    # ../en-US.restext:1231 | "Due to the influence of a..."
+    # ../en-US.restext:1236 | "Due to the influence of a..."
     value: 'restext://GunsAnnouncement_002'
   # ../.source/ATimeofWar_Eng_v8.cs:15885
   - type: 'switch'
@@ -22,30 +22,30 @@ nodes:
       nodes:
       # ../.source/ATimeofWar_Eng_v8.cs:15887
       - type: 'text'
-        # ../en-US.restext:1232 | "the scholarly **knowledge**"
+        # ../en-US.restext:1237 | "the scholarly **knowledge**"
         value: 'restext://GunsAnnouncement_003'
     - match: 2
       nodes:
       # ../.source/ATimeofWar_Eng_v8.cs:15895
       - type: 'text'
-        # ../en-US.restext:1233 | "the bountiful **resources**"
+        # ../en-US.restext:1238 | "the bountiful **resources**"
         value: 'restext://GunsAnnouncement_004'
     - match: 3
       nodes:
       # ../.source/ATimeofWar_Eng_v8.cs:15903
       - type: 'text'
-        # ../en-US.restext:1234 | "the immense **wealth**"
+        # ../en-US.restext:1239 | "the immense **wealth**"
         value: 'restext://GunsAnnouncement_005'
   # ../.source/ATimeofWar_Eng_v8.cs:15909
   - type: 'text'
-    # ../en-US.restext:1235 | " within the region would ..."
+    # ../en-US.restext:1240 | " within the region would ..."
     value: 'restext://GunsAnnouncement_006'
   # ../.source/ATimeofWar_Eng_v8.cs:15912
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:15914
   - type: 'text'
-    # ../en-US.restext:1236 | "While the squabble was me..."
+    # ../en-US.restext:1241 | "While the squabble was me..."
     value: 'restext://GunsAnnouncement_007'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:15919

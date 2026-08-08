@@ -2,27 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: 'FPNo'
-# ../en-US.restext:1345 | "Overambitious"
+# ../en-US.restext:1346 | "Overambitious"
 title: 'restext://FPNo_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:16549
 - type: 'text'
-  # ../en-US.restext:1346 | "**Journal of {tempname} -..."
+  # ../en-US.restext:1347 | "**Journal of {tempname} -..."
   value: 'restext://FPNo_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:16558
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:16560
 - type: 'text'
-  # ../en-US.restext:1347 | "Even having already deter..."
+  # ../en-US.restext:1348 | "Even having already deter..."
   value: 'restext://FPNo_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:16562
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:16564
 - type: 'text'
-  # ../en-US.restext:1348 | "Today, the townspeople wh..."
+  # ../en-US.restext:1349 | "Today, the townspeople wh..."
   value: 'restext://FPNo_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:16565
 - type: 'break'
@@ -33,11 +33,11 @@ nodes:
   # ../en-US.restext:51 | "Click to return..."
   label: 'restext://Click_Return'
   target: '${round == 1 ? "Mania" : round == 2 ? "Mania2" : "Mania3"}' # ./00005-Mania.mws.yaml, ./00036-Mania2.mws.yaml, ./00037-Mania3.mws.yaml
-  # ../en-US.restext:367 | "Close"
+  # ../en-US.restext:368 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:16588
   - type: 'text'
-    # ../en-US.restext:1349 | "**Immediately gain 1** {i..."
+    # ../en-US.restext:1350 | "**Immediately gain 1** {i..."
     value: 'restext://FPNo_005'

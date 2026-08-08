@@ -6,7 +6,7 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:10021
 - type: 'text'
-  # ../en-US.restext:324 | "**Carefully pick up this ..."
+  # ../en-US.restext:325 | "**Carefully pick up this ..."
   value: 'restext://Storybook_PickUpDevicePrivate'
 # ../.source/FearoftheUnknown_Eng_v15.cs:10024
 - type: 'break'
@@ -16,20 +16,20 @@ nodes:
   # ../en-US.restext:53 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:367 | "Close"
+  # ../en-US.restext:368 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:10038
   - type: 'text'
-    # ../en-US.restext:235 | "**The Rumor Is...**"
+    # ../en-US.restext:236 | "**The Rumor Is...**"
     value: 'restext://Heading_TheRumorIs'
   # ../.source/FearoftheUnknown_Eng_v15.cs:10040
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:10042
   - type: 'text'
-    # ../en-US.restext:267 | "Using both my physical ch..."
+    # ../en-US.restext:268 | "Using both my physical ch..."
     value: 'restext://Narrative_PhysicalCharmsFinancialPersuasion_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:10047
   - type: 'switch'
@@ -39,40 +39,40 @@ nodes:
       nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:10049
       - type: 'text'
-        # ../en-US.restext:844 | "**{nameA} hexing the {witA}**"
+        # ../en-US.restext:845 | "**{nameA} hexing the {witA}**"
         value: 'restext://CheckWitches1_006'
     - match: 2
       nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:10055
       - type: 'text'
-        # ../en-US.restext:845 | "**{nameB} hexing the {witB}**"
+        # ../en-US.restext:846 | "**{nameB} hexing the {witB}**"
         value: 'restext://CheckWitches1_007'
     - match: 3
       nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:10061
       - type: 'text'
-        # ../en-US.restext:846 | "**{nameC} hexing the {witC}**"
+        # ../en-US.restext:847 | "**{nameC} hexing the {witC}**"
         value: 'restext://CheckWitches1_008'
     - match: 4
       nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:10067
       - type: 'text'
-        # ../en-US.restext:847 | "**{nameD} hexing the {witD}**"
+        # ../en-US.restext:848 | "**{nameD} hexing the {witD}**"
         value: 'restext://CheckWitches1_009'
     - match: 5
       nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:10073
       - type: 'text'
-        # ../en-US.restext:848 | "**{nameE} hexing the {witE}**"
+        # ../en-US.restext:849 | "**{nameE} hexing the {witE}**"
         value: 'restext://CheckWitches1_010'
     default:
     # ../.source/FearoftheUnknown_Eng_v15.cs:10079
     - type: 'text'
-      # ../en-US.restext:843 | "**{wsuspect} hexing the {..."
+      # ../en-US.restext:844 | "**{wsuspect} hexing the {..."
       value: 'restext://CheckWitches1_005'
   # ../.source/FearoftheUnknown_Eng_v15.cs:10084
   - type: 'text'
-    # ../en-US.restext:256 | " late one evening. I offe..."
+    # ../en-US.restext:257 | " late one evening. I offe..."
     value: 'restext://Narrative_LateOneEvening_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:10087
   - type: 'break'

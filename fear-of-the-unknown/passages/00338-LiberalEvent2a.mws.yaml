@@ -2,27 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: 'LiberalEvent2a'
-# ../en-US.restext:2610 | "BRIBE"
+# ../en-US.restext:2614 | "BRIBE"
 title: 'restext://LiberalEvent2a_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:35509
 - type: 'text'
-  # ../en-US.restext:313 | "Special Event"
+  # ../en-US.restext:314 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/FearoftheUnknown_Eng_v15.cs:35510
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:35511
 - type: 'text'
-  # ../en-US.restext:2611 | "All players take all thei..."
+  # ../en-US.restext:2615 | "All players take all thei..."
   value: 'restext://LiberalEvent2a_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:35512
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:35515
 - type: 'text'
-  # ../en-US.restext:2612 | "Once all players have cho..."
+  # ../en-US.restext:2616 | "Once all players have cho..."
   value: 'restext://LiberalEvent2a_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:35520
 - type: 'break'
@@ -30,7 +30,7 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:35529
 - type: 'popup'
   layout: 'countdown_instructions'
-  # ../en-US.restext:2613 | "Click here to resolve the..."
+  # ../en-US.restext:2617 | "Click here to resolve the..."
   label: 'restext://LiberalEvent2a_004'
   content:
   - type: 'text'
@@ -50,22 +50,22 @@ nodes:
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:66 | "3"
+      # ../en-US.restext:67 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:67 | "2"
+      # ../en-US.restext:68 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:64 | "1"
+      # ../en-US.restext:65 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:65 | "REVEAL"
+      # ../en-US.restext:66 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:65 | "REVEAL"
+    # ../en-US.restext:66 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: 'LiberalEvent2ab' # ./00353-LiberalEvent2ab.mws.yaml
     snapshot: true

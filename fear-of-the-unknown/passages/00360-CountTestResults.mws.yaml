@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'CountTestResults'
-# ../en-US.restext:193 | "Patient {question}"
+# ../en-US.restext:194 | "Patient {question}"
 title: 'restext://Heading_PatientQuestion'
-# ../en-US.restext:150 | "Assessment Results"
+# ../en-US.restext:151 | "Assessment Results"
 subtitle: 'restext://Heading_AssessmentResults'
 tags:
 - 'revised'
@@ -17,7 +17,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:37738
     - type: 'text'
-      # ../en-US.restext:2749 | "The patient is perfectly ..."
+      # ../en-US.restext:2753 | "The patient is perfectly ..."
       value: 'restext://CountTestResults_004'
     # ../.source/FearoftheUnknown_Eng_v15.cs:37739
     - type: 'break'
@@ -26,7 +26,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:37745
     - type: 'text'
-      # ../en-US.restext:2750 | "Alas, despite such a **he..."
+      # ../en-US.restext:2754 | "Alas, despite such a **he..."
       value: 'restext://CountTestResults_005'
     # ../.source/FearoftheUnknown_Eng_v15.cs:37759
     - type: 'break'
@@ -34,14 +34,14 @@ nodes:
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:37765
   - type: 'text'
-    # ../en-US.restext:2747 | "Uggh. "
+    # ../en-US.restext:2751 | "Uggh. "
     value: 'restext://CountTestResults_002'
   # ../.source/FearoftheUnknown_Eng_v15.cs:37766
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:37768
   - type: 'text'
-    # ../en-US.restext:2748 | "Perhaps it is unprofessio..."
+    # ../en-US.restext:2752 | "Perhaps it is unprofessio..."
     value: 'restext://CountTestResults_003'
   # ../.source/FearoftheUnknown_Eng_v15.cs:37771
   - type: 'break'
@@ -55,7 +55,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 19 ? "Liberal" : round == 20 ? "Liberal2" : "Liberal3"}' # ./00026-Liberal.mws.yaml, ./00050-Liberal2.mws.yaml, ./00051-Liberal3.mws.yaml
-  # ../en-US.restext:367 | "Close"
+  # ../en-US.restext:368 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -85,30 +85,30 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:37809
       - type: 'text'
-        # ../en-US.restext:2752 | "You suffer no penalty. _T..."
+        # ../en-US.restext:2756 | "You suffer no penalty. _T..."
         value: 'restext://CountTestResults_008'
     - if: 'test >= 3'
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:37827
       - type: 'text'
-        # ../en-US.restext:2753 | "Immediately place one of ..."
+        # ../en-US.restext:2757 | "Immediately place one of ..."
         value: 'restext://CountTestResults_009'
       # ../.source/FearoftheUnknown_Eng_v15.cs:37834
       - type: 'break'
         style: 'paragraph'
       # ../.source/FearoftheUnknown_Eng_v15.cs:37836
       - type: 'text'
-        # ../en-US.restext:122 | "Then, return your {icon:c..."
+        # ../en-US.restext:123 | "Then, return your {icon:c..."
         value: 'restext://Directive_ReturnCreepyMarkerStart'
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:37851
     - type: 'text'
-      # ../en-US.restext:2751 | "**Lose 1VP.** Then, immed..."
+      # ../en-US.restext:2755 | "**Lose 1VP.** Then, immed..."
       value: 'restext://CountTestResults_006'
     # ../.source/FearoftheUnknown_Eng_v15.cs:37860
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:37862
     - type: 'text'
-      # ../en-US.restext:122 | "Then, return your {icon:c..."
+      # ../en-US.restext:123 | "Then, return your {icon:c..."
       value: 'restext://Directive_ReturnCreepyMarkerStart'

@@ -2,27 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S4Blacksmith'
-# ../en-US.restext:429 | "The Blacksmith is Dead."
+# ../en-US.restext:430 | "The Blacksmith is Dead."
 title: 'restext://S4Blacksmith_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:2176
 - type: 'text'
-  # ../en-US.restext:197 | "**{randomname}'s Journal ..."
+  # ../en-US.restext:198 | "**{randomname}'s Journal ..."
   value: 'restext://Heading_RandomnameJournal_16Sep1850'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2183
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2185
 - type: 'text'
-  # ../en-US.restext:430 | "Though a ghastly event, i..."
+  # ../en-US.restext:431 | "Though a ghastly event, i..."
   value: 'restext://S4Blacksmith_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2188
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2190
 - type: 'text'
-  # ../en-US.restext:431 | "Henriette was exceedingly..."
+  # ../en-US.restext:432 | "Henriette was exceedingly..."
   value: 'restext://S4Blacksmith_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2193
 - type: 'assign'
@@ -41,7 +41,7 @@ nodes:
     # ../en-US.restext:29 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: 'Mania3' # ./00037-Mania3.mws.yaml
-    # ../en-US.restext:367 | "Close"
+    # ../en-US.restext:368 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -52,7 +52,7 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2225
     - type: 'text'
-      # ../en-US.restext:432 | "Each player who voted **N..."
+      # ../en-US.restext:433 | "Each player who voted **N..."
       value: 'restext://S4Blacksmith_007'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2204
