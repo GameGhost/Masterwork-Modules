@@ -80,6 +80,8 @@ nodes:
   # ../en-US.restext:1558 | AsylumTreatmentB_019 | "Assessment remains ongoin..."
   # ../en-US.restext:1559 | AsylumTreatmentB_020 | "Patient's behavior is err..."
   expr: '["restext://AsylumTreatmentB_017", "restext://AsylumTreatmentB_018", "restext://AsylumTreatmentB_019", "restext://AsylumTreatmentB_020"].shuffled("AsylumTreatmentB_5")[0]'
+# ../.source/FearoftheUnknown_Eng_v15.cs:20935
+- type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:20936
 - type: 'text'
   value: '{_rnd_AsylumTreatmentB_5}'

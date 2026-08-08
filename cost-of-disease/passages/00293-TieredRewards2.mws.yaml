@@ -25,6 +25,8 @@ nodes:
     # ../en-US.restext:305 | Reward_NoBonus | "Receives no bonus."
     # ../en-US.restext:370 | VP_Lose1_OrderUnpleased | "Loses 1VP. The Order is u..."
     expr: '["restext://VP_Gain1", "restext://Resource_GainIngredientOfChoice", "restext://Reward_NoBonus", "restext://VP_Lose1_OrderUnpleased"].shuffled("TieredRewards2_0")[0]'
+  # ../.source/TheCostofDisease_Eng_v10.cs:29765
+  - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:29766
   - type: 'text'
     value: '{_rnd_TieredRewards2_0}'
@@ -44,6 +46,8 @@ nodes:
     # ../en-US.restext:293 | Resource_Gain2Dollars | "Gain $2."
     # ../en-US.restext:365 | VP_Gain2 | "Gain 2VP."
     expr: '["restext://Resource_GainKnowledgeOfChoice", "restext://Resource_Gain2Dollars", "restext://VP_Gain2"].shuffled("TieredRewards2_1")[0]'
+  # ../.source/TheCostofDisease_Eng_v10.cs:29775
+  - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:29776
   - type: 'text'
     value: '{_rnd_TieredRewards2_1}'
@@ -62,6 +66,8 @@ nodes:
     # ../en-US.restext:368 | VP_Gain4 | "Gain 4VP."
     # ../en-US.restext:296 | Resource_Gain4Dollars | "Gain $4."
     expr: '["restext://VP_Gain4", "restext://Resource_Gain4Dollars"].shuffled("TieredRewards2_2")[0]'
+  # ../.source/TheCostofDisease_Eng_v10.cs:29785
+  - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:29786
   - type: 'text'
     value: '{_rnd_TieredRewards2_2}'
