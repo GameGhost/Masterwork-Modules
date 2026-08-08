@@ -2,6 +2,10 @@
 ---
 format: 'mws/0.4'
 passage_id: 'SeedResolution'
+# ../en-US.restext:2399 | SeedResolution_001 | "A Place of Knowledge"
+# ../en-US.restext:2400 | SeedResolution_002 | "A Wealth of Goods"
+# ../en-US.restext:2401 | SeedResolution_003 | "An Investor's Paradise"
+title: '{gunsbonus == 1 ? "restext://SeedResolution_001" : gunsbonus == 2 ? "restext://SeedResolution_002" : "restext://SeedResolution_003"}'
 tags:
 - 'revised'
 layout: 'narration'
@@ -12,33 +16,21 @@ nodes:
   cases:
   - match: 1
     nodes:
-    # ../.source/ATimeofWar_Eng_v8.cs:29008
-    - type: 'text'
-      # ../en-US.restext:2402 | "**A Place of Knowledge**"
-      value: 'restext://SeedResolution_004'
-    # ../.source/ATimeofWar_Eng_v8.cs:29010
-    - type: 'break'
     # ../.source/ATimeofWar_Eng_v8.cs:29011
     - type: 'text'
-      # ../en-US.restext:2403 | "I watched from my clandes..."
-      value: 'restext://SeedResolution_005'
+      # ../en-US.restext:2404 | "I watched from my clandes..."
+      value: 'restext://SeedResolution_006'
     # ../.source/ATimeofWar_Eng_v8.cs:29012
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:29014
     - type: 'text'
-      # ../en-US.restext:2404 | "Soon, it was impossible f..."
-      value: 'restext://SeedResolution_006'
+      # ../en-US.restext:2405 | "Soon, it was impossible f..."
+      value: 'restext://SeedResolution_007'
     # ../.source/ATimeofWar_Eng_v8.cs:29017
     - type: 'break'
   - match: 2
     nodes:
-    # ../.source/ATimeofWar_Eng_v8.cs:29023
-    - type: 'text'
-      # ../en-US.restext:2405 | "**A Wealth of Goods**"
-      value: 'restext://SeedResolution_007'
-    # ../.source/ATimeofWar_Eng_v8.cs:29025
-    - type: 'break'
     # ../.source/ATimeofWar_Eng_v8.cs:29026
     - type: 'text'
       # ../en-US.restext:2406 | "Ingredients lay stacked i..."
@@ -53,23 +45,17 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:29032
     - type: 'break'
   default:
-  # ../.source/ATimeofWar_Eng_v8.cs:29038
-  - type: 'text'
-    # ../en-US.restext:2399 | "**An Investor's Paradise**"
-    value: 'restext://SeedResolution_001'
-  # ../.source/ATimeofWar_Eng_v8.cs:29040
-  - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:29041
   - type: 'text'
-    # ../en-US.restext:2400 | "Even in their sunset year..."
-    value: 'restext://SeedResolution_002'
+    # ../en-US.restext:2402 | "Even in their sunset year..."
+    value: 'restext://SeedResolution_004'
   # ../.source/ATimeofWar_Eng_v8.cs:29042
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:29044
   - type: 'text'
-    # ../en-US.restext:2401 | "Soon, it was impossible f..."
-    value: 'restext://SeedResolution_003'
+    # ../en-US.restext:2403 | "Soon, it was impossible f..."
+    value: 'restext://SeedResolution_005'
   # ../.source/ATimeofWar_Eng_v8.cs:29047
   - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:29049
@@ -80,7 +66,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'BlameGameEvent' # ./00049-BlameGameEvent.mws.yaml
-  # ../en-US.restext:285 | "Close"
+  # ../en-US.restext:287 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:

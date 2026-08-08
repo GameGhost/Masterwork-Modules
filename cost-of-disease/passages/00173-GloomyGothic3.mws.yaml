@@ -16,7 +16,7 @@ nodes:
   expr: '12'
 # ../.source/TheCostofDisease_Eng_v10.cs:20194
 - type: 'conditional'
-  # ../en-US.restext:122 | "Fraternity of Hunters"
+  # ../en-US.restext:123 | "Fraternity of Hunters"
   if: 'society == "restext://Faction_FraternityOfHunters_Plain"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:20196
@@ -37,7 +37,7 @@ nodes:
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:20206
       - type: 'text'
-        # ../en-US.restext:1544 | "Temporarily remove all Bu..."
+        # ../en-US.restext:1550 | "Temporarily remove all Bu..."
         value: 'restext://GloomyGothic3_010'
       # ../.source/TheCostofDisease_Eng_v10.cs:20213
       - type: 'break'
@@ -48,7 +48,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:20219
         - type: 'text'
-          # ../en-US.restext:1537 | "_Place the {ba} tile over..."
+          # ../en-US.restext:1543 | "_Place the {ba} tile over..."
           value: 'restext://GloomyGothic3_003'
         # ../.source/TheCostofDisease_Eng_v10.cs:20223
         - type: 'break'
@@ -58,7 +58,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:20229
         - type: 'text'
-          # ../en-US.restext:1538 | "_Place the {bb} tile over..."
+          # ../en-US.restext:1544 | "_Place the {bb} tile over..."
           value: 'restext://GloomyGothic3_004'
         # ../.source/TheCostofDisease_Eng_v10.cs:20233
         - type: 'break'
@@ -68,22 +68,19 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:20239
         - type: 'text'
-          # ../en-US.restext:1539 | "_Place the {bc} tile over..."
+          # ../en-US.restext:1545 | "_Place the {bc} tile over..."
           value: 'restext://GloomyGothic3_005'
         # ../.source/TheCostofDisease_Eng_v10.cs:20243
         - type: 'break'
-    # ../.source/TheCostofDisease_Eng_v10.cs:20246
-    - type: 'break'
-      style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:20250
     - type: 'section'
-      # ../en-US.restext:1545 | "**The Hunter's Haven**"
+      # ../en-US.restext:1551 | "**The Hunter's Haven**"
       title: 'restext://GloomyGothic3_011'
       style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:20257
       - type: 'text'
-        # ../en-US.restext:1546 | "Visiting the remodeled Hu..."
+        # ../en-US.restext:1552 | "Visiting the remodeled Hu..."
         value: 'restext://GloomyGothic3_012'
       # ../.source/TheCostofDisease_Eng_v10.cs:20266
       - type: 'assign'
@@ -95,7 +92,7 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:20269
       - type: 'popup'
         layout: 'end_of_round'
-        # ../en-US.restext:1535 | "Click at the end of the G..."
+        # ../en-US.restext:1541 | "Click at the end of the G..."
         label: 'restext://GloomyGothic3_001'
         target: 'Scoring' # ./00013-Scoring.mws.yaml
         # ../en-US.restext:361 | "End of Round"
@@ -107,46 +104,46 @@ nodes:
         snapshot: true
         content:
         - type: 'text'
-          # ../en-US.restext:308 | "The Late Years of the Thi..."
+          # ../en-US.restext:309 | "The Late Years of the Thi..."
           value: 'restext://Round_GenerationIII_LateEnded'
         - type: 'break'
           style: 'paragraph'
         - type: 'text'
-          # ../en-US.restext:306 | "Perform any End of Round ..."
+          # ../en-US.restext:307 | "Perform any End of Round ..."
           value: 'restext://Round_EndOfRoundActions_Rule'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:20277
     - type: 'section'
-      # ../en-US.restext:177 | "**Safe and Protected**"
+      # ../en-US.restext:178 | "**Safe and Protected**"
       title: 'restext://Heading_SafeAndProtected'
       style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:20285
       - type: 'text'
-        # ../en-US.restext:1541 | "We have decided to believ..."
+        # ../en-US.restext:1547 | "We have decided to believ..."
         value: 'restext://GloomyGothic3_007'
     # ../.source/TheCostofDisease_Eng_v10.cs:20290
     - type: 'section'
-      # ../en-US.restext:161 | "**The Hunter's Rest**"
+      # ../en-US.restext:162 | "**The Hunter's Rest**"
       title: 'restext://Heading_HuntersRest'
       style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:20298
       - type: 'text'
-        # ../en-US.restext:111 | "You may only place a Serv..."
+        # ../en-US.restext:112 | "You may only place a Serv..."
         value: 'restext://Directive_ServantOnlyBuilding_Rule'
     # ../.source/TheCostofDisease_Eng_v10.cs:20302
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:20306
     - type: 'section'
-      # ../en-US.restext:1542 | "**Final Taxation**"
+      # ../en-US.restext:1548 | "**Final Taxation**"
       title: 'restext://GloomyGothic3_008'
       style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:20314
       - type: 'text'
-        # ../en-US.restext:1543 | "At the end of this round,..."
+        # ../en-US.restext:1549 | "At the end of this round,..."
         value: 'restext://GloomyGothic3_009'
       # ../.source/TheCostofDisease_Eng_v10.cs:20323
       - type: 'assign'
@@ -158,7 +155,7 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:20326
       - type: 'popup'
         layout: 'end_of_round'
-        # ../en-US.restext:1535 | "Click at the end of the G..."
+        # ../en-US.restext:1541 | "Click at the end of the G..."
         label: 'restext://GloomyGothic3_001'
         target: 'GloomyPenalty3' # ./00307-GloomyPenalty3.mws.yaml
         # ../en-US.restext:361 | "End of Round"
@@ -170,12 +167,12 @@ nodes:
         snapshot: true
         content:
         - type: 'text'
-          # ../en-US.restext:308 | "The Late Years of the Thi..."
+          # ../en-US.restext:309 | "The Late Years of the Thi..."
           value: 'restext://Round_GenerationIII_LateEnded'
         - type: 'break'
           style: 'paragraph'
         - type: 'text'
-          # ../en-US.restext:306 | "Perform any End of Round ..."
+          # ../en-US.restext:307 | "Perform any End of Round ..."
           value: 'restext://Round_EndOfRoundActions_Rule'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:20334
@@ -196,7 +193,7 @@ nodes:
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:20344
       - type: 'text'
-        # ../en-US.restext:1536 | "Temporarily remove all Bu..."
+        # ../en-US.restext:1542 | "Temporarily remove all Bu..."
         value: 'restext://GloomyGothic3_002'
       # ../.source/TheCostofDisease_Eng_v10.cs:20351
       - type: 'break'
@@ -207,7 +204,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:20357
         - type: 'text'
-          # ../en-US.restext:1537 | "_Place the {ba} tile over..."
+          # ../en-US.restext:1543 | "_Place the {ba} tile over..."
           value: 'restext://GloomyGothic3_003'
         # ../.source/TheCostofDisease_Eng_v10.cs:20361
         - type: 'break'
@@ -217,7 +214,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:20367
         - type: 'text'
-          # ../en-US.restext:1538 | "_Place the {bb} tile over..."
+          # ../en-US.restext:1544 | "_Place the {bb} tile over..."
           value: 'restext://GloomyGothic3_004'
         # ../.source/TheCostofDisease_Eng_v10.cs:20371
         - type: 'break'
@@ -227,33 +224,30 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:20377
         - type: 'text'
-          # ../en-US.restext:1539 | "_Place the {bc} tile over..."
+          # ../en-US.restext:1545 | "_Place the {bc} tile over..."
           value: 'restext://GloomyGothic3_005'
-    # ../.source/TheCostofDisease_Eng_v10.cs:20383
-    - type: 'break'
-      style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:20387
     - type: 'section'
-      # ../en-US.restext:178 | "**School for Hybridized I..."
+      # ../en-US.restext:179 | "**School for Hybridized I..."
       title: 'restext://Heading_SchoolForHybridizedIndividuals'
       style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:20395
       - type: 'text'
-        # ../en-US.restext:1540 | "When visiting this buildi..."
+        # ../en-US.restext:1546 | "When visiting this buildi..."
         value: 'restext://GloomyGothic3_006'
     # ../.source/TheCostofDisease_Eng_v10.cs:20401
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:20405
     - type: 'section'
-      # ../en-US.restext:159 | "**A Gift of Spawning**"
+      # ../en-US.restext:160 | "**A Gift of Spawning**"
       title: 'restext://Heading_GiftOfSpawning'
       style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:20413
       - type: 'text'
-        # ../en-US.restext:304 | "At the end of the Generat..."
+        # ../en-US.restext:305 | "At the end of the Generat..."
         value: 'restext://Reward_MostOccultExperiments_SpawningPods'
       # ../.source/TheCostofDisease_Eng_v10.cs:20426
       - type: 'assign'
@@ -265,7 +259,7 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:20429
       - type: 'popup'
         layout: 'end_of_round'
-        # ../en-US.restext:1535 | "Click at the end of the G..."
+        # ../en-US.restext:1541 | "Click at the end of the G..."
         label: 'restext://GloomyGothic3_001'
         target: 'AwardSpawningPods' # ./00312-AwardSpawningPods.mws.yaml
         # ../en-US.restext:361 | "End of Round"
@@ -277,23 +271,23 @@ nodes:
         snapshot: true
         content:
         - type: 'text'
-          # ../en-US.restext:308 | "The Late Years of the Thi..."
+          # ../en-US.restext:309 | "The Late Years of the Thi..."
           value: 'restext://Round_GenerationIII_LateEnded'
         - type: 'break'
           style: 'paragraph'
         - type: 'text'
-          # ../en-US.restext:306 | "Perform any End of Round ..."
+          # ../en-US.restext:307 | "Perform any End of Round ..."
           value: 'restext://Round_EndOfRoundActions_Rule'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:20437
     - type: 'section'
-      # ../en-US.restext:167 | "{icon:storybook} **Master..."
+      # ../en-US.restext:168 | "{icon:storybook} **Master..."
       title: 'restext://Heading_MasterworkCompletion'
       style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:20446
       - type: 'text'
-        # ../en-US.restext:219 | "When a player completes t..."
+        # ../en-US.restext:220 | "When a player completes t..."
         value: 'restext://Masterwork_CompleteLead'
       # ../.source/TheCostofDisease_Eng_v10.cs:20447
       - type: 'link'
@@ -306,26 +300,26 @@ nodes:
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:20454
     - type: 'section'
-      # ../en-US.restext:170 | "**MONSTER SPAWN**"
+      # ../en-US.restext:171 | "**MONSTER SPAWN**"
       title: 'restext://Heading_MonsterSpawn'
       style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:20462
       - type: 'text'
-        # ../en-US.restext:277 | "The Town Hall of the vill..."
+        # ../en-US.restext:278 | "The Town Hall of the vill..."
         value: 'restext://Narrative_MonsterSpawn_Flavor'
     # ../.source/TheCostofDisease_Eng_v10.cs:20470
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:20474
     - type: 'section'
-      # ../en-US.restext:159 | "**A Gift of Spawning**"
+      # ../en-US.restext:160 | "**A Gift of Spawning**"
       title: 'restext://Heading_GiftOfSpawning'
       style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:20482
       - type: 'text'
-        # ../en-US.restext:304 | "At the end of the Generat..."
+        # ../en-US.restext:305 | "At the end of the Generat..."
         value: 'restext://Reward_MostOccultExperiments_SpawningPods'
       # ../.source/TheCostofDisease_Eng_v10.cs:20495
       - type: 'assign'
@@ -337,7 +331,7 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:20498
       - type: 'popup'
         layout: 'end_of_round'
-        # ../en-US.restext:1535 | "Click at the end of the G..."
+        # ../en-US.restext:1541 | "Click at the end of the G..."
         label: 'restext://GloomyGothic3_001'
         target: 'AwardSpawningPods' # ./00312-AwardSpawningPods.mws.yaml
         # ../en-US.restext:361 | "End of Round"
@@ -349,10 +343,10 @@ nodes:
         snapshot: true
         content:
         - type: 'text'
-          # ../en-US.restext:308 | "The Late Years of the Thi..."
+          # ../en-US.restext:309 | "The Late Years of the Thi..."
           value: 'restext://Round_GenerationIII_LateEnded'
         - type: 'break'
           style: 'paragraph'
         - type: 'text'
-          # ../en-US.restext:306 | "Perform any End of Round ..."
+          # ../en-US.restext:307 | "Perform any End of Round ..."
           value: 'restext://Round_EndOfRoundActions_Rule'

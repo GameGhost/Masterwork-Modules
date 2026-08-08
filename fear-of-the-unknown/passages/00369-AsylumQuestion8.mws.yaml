@@ -2,18 +2,21 @@
 ---
 format: 'mws/0.4'
 passage_id: 'AsylumQuestion8'
-# ../en-US.restext:2810 | "You are selected to recei..."
-title: 'restext://AsylumQuestion8_001'
-# ../en-US.restext:2811 | "which has taken considera..."
-subtitle: 'restext://AsylumQuestion8_002'
 tags:
 - 'revised'
 layout: 'narration'
 nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:37140
+- type: 'text'
+  # ../en-US.restext:2808 | "**You are selected to rec..."
+  value: 'restext://AsylumQuestion8_001'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37144
+- type: 'break'
+  style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:37147
 - type: 'link'
-  # ../en-US.restext:2812 | "I would demand to see thi..."
-  label: 'restext://AsylumQuestion8_003'
+  # ../en-US.restext:2809 | "I would demand to see thi..."
+  label: 'restext://AsylumQuestion8_002'
   target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
   snapshot: true
   onclick:
@@ -30,8 +33,8 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:37151
 - type: 'link'
-  # ../en-US.restext:2813 | "I silently accept it."
-  label: 'restext://AsylumQuestion8_004'
+  # ../en-US.restext:2810 | "I silently accept it."
+  label: 'restext://AsylumQuestion8_003'
   target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
   snapshot: true
   onclick:
@@ -44,8 +47,8 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:37155
 - type: 'link'
-  # ../en-US.restext:2814 | "I do not easily accept praise."
-  label: 'restext://AsylumQuestion8_005'
+  # ../en-US.restext:2811 | "I do not easily accept praise."
+  label: 'restext://AsylumQuestion8_004'
   target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
   snapshot: true
   onclick:
@@ -58,8 +61,8 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:37159
 - type: 'link'
-  # ../en-US.restext:2815 | "Their praise is irrelevant."
-  label: 'restext://AsylumQuestion8_006'
+  # ../en-US.restext:2812 | "Their praise is irrelevant."
+  label: 'restext://AsylumQuestion8_005'
   target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
   snapshot: true
   onclick:

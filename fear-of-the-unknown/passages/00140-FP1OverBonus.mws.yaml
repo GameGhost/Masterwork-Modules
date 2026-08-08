@@ -2,26 +2,26 @@
 ---
 format: 'mws/0.4'
 passage_id: 'FP1OverBonus'
-# ../en-US.restext:1368 | "Over-Achievement"
+# ../en-US.restext:1369 | "Over-Achievement"
 title: 'restext://FP1OverBonus_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:16899
 - type: 'text'
-  # ../en-US.restext:1369 | "**Journal of** _name ille..."
+  # ../en-US.restext:1370 | "**Journal of** _name ille..."
   value: 'restext://FP1OverBonus_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:16911
 - type: 'let'
   var: '_rnd_FP1OverBonus_0'
-  # ../en-US.restext:1370 | FP1OverBonus_003 | "I am nothing if not thorough."
-  # ../en-US.restext:1371 | FP1OverBonus_004 | "I sometimes cannot contai..."
+  # ../en-US.restext:1371 | FP1OverBonus_003 | "I am nothing if not thorough."
+  # ../en-US.restext:1372 | FP1OverBonus_004 | "I sometimes cannot contai..."
   expr: '["restext://FP1OverBonus_003", "restext://FP1OverBonus_004"].shuffled("FP1OverBonus_0")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:16909
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:16911
 - type: 'text'
-  # ../en-US.restext:1372 | "{_rnd_FP1OverBonus_0} Whi..."
+  # ../en-US.restext:1373 | "{_rnd_FP1OverBonus_0} Whi..."
   value: 'restext://FP1OverBonus_005'
   lets:
   - '_rnd_FP1OverBonus_0'
@@ -34,7 +34,7 @@ nodes:
   # ../en-US.restext:51 | "Click to return..."
   label: 'restext://Click_Return'
   target: '${round == 1 ? "Mania" : round == 2 ? "Mania2" : "Mania3"}' # ./00005-Mania.mws.yaml, ./00036-Mania2.mws.yaml, ./00037-Mania3.mws.yaml
-  # ../en-US.restext:368 | "Close"
+  # ../en-US.restext:369 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   content:
@@ -42,10 +42,10 @@ nodes:
   - type: 'assign'
     var: 'onecount'
     expr: 'onecount + 1'
-  # ../.source/FearoftheUnknown_Eng_v15.cs:16927
+  # ../.source/FearoftheUnknown_Eng_v15.cs:16934
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:16938
   - type: 'text'
-    # ../en-US.restext:1373 | "**Immediately Gain 3VP** ..."
+    # ../en-US.restext:1374 | "**Immediately Gain 3VP** ..."
     value: 'restext://FP1OverBonus_006'

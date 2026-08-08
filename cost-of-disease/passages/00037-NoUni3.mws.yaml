@@ -33,9 +33,6 @@ nodes:
     - type: 'text'
       # ../en-US.restext:649 | "Remove all {icon:creepy_i..."
       value: 'restext://NoUni3_001'
-# ../.source/TheCostofDisease_Eng_v10.cs:5384
-- type: 'break'
-  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:5386
 - type: 'switch'
   on: 'peeps'
@@ -97,13 +94,13 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:5463
 - type: 'section'
-  # ../en-US.restext:174 | "{icon:storybook} **PUB**"
+  # ../en-US.restext:175 | "{icon:storybook} **PUB**"
   title: 'restext://Heading_Pub'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5473
   - type: 'text'
-    # ../en-US.restext:287 | "If your token is overtake..."
+    # ../en-US.restext:288 | "If your token is overtake..."
     value: 'restext://Pub_ResetCreepy_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:5489
   - type: 'link'
@@ -116,26 +113,26 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:5495
 - type: 'section'
-  # ../en-US.restext:166 | "**MASTERWORK**"
+  # ../en-US.restext:167 | "**MASTERWORK**"
   title: 'restext://Heading_Masterwork'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5503
   - type: 'text'
-    # ../en-US.restext:220 | "A Masterwork can be compl..."
+    # ../en-US.restext:221 | "A Masterwork can be compl..."
     value: 'restext://Masterwork_CompleteRule'
 # ../.source/TheCostofDisease_Eng_v10.cs:5506
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:5510
 - type: 'section'
-  # ../en-US.restext:168 | "{icon:storybook} **Master..."
+  # ../en-US.restext:169 | "{icon:storybook} **Master..."
   title: 'restext://Heading_MasterworkRecipe'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5520
   - type: 'text'
-    # ../en-US.restext:216 | "To check your Masterwork ..."
+    # ../en-US.restext:217 | "To check your Masterwork ..."
     value: 'restext://Masterwork_CheckCost_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:5521
   - type: 'link'
@@ -148,13 +145,13 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:5527
 - type: 'section'
-  # ../en-US.restext:151 | "{icon:storybook} **Comple..."
+  # ../en-US.restext:152 | "{icon:storybook} **Comple..."
   title: 'restext://Heading_CompletedMasterwork'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5537
   - type: 'text'
-    # ../en-US.restext:221 | "If you are completing a M..."
+    # ../en-US.restext:222 | "If you are completing a M..."
     value: 'restext://Masterwork_Completing_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:5538
   - type: 'link'
@@ -180,10 +177,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:308 | "The Late Years of the Thi..."
+      # ../en-US.restext:309 | "The Late Years of the Thi..."
       value: 'restext://Round_GenerationIII_LateEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:306 | "Perform any End of Round ..."
+      # ../en-US.restext:307 | "Perform any End of Round ..."
       value: 'restext://Round_EndOfRoundActions_Rule'

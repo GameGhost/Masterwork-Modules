@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'AMessenger'
-# ../en-US.restext:473 | "A Messenger Arrives"
+# ../en-US.restext:474 | "A Messenger Arrives"
 title: 'restext://AMessenger_001'
 layout: 'narration'
 nodes:
@@ -12,35 +12,35 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:3539
   - type: 'text'
-    # ../en-US.restext:57 | "**All players may again v..."
+    # ../en-US.restext:58 | "**All players may again v..."
     value: 'restext://Directive_AllPlayersMayViewStorybookAgain'
   # ../.source/ATimeofWar_Eng_v8.cs:3541
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3543
   - type: 'text'
-    # ../en-US.restext:474 | "On a Saturday afternoon, ..."
+    # ../en-US.restext:475 | "On a Saturday afternoon, ..."
     value: 'restext://AMessenger_003'
   # ../.source/ATimeofWar_Eng_v8.cs:3550
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3554
   - type: 'text'
-    # ../en-US.restext:475 | "**The messenger turned an..."
+    # ../en-US.restext:476 | "**The messenger turned an..."
     value: 'restext://AMessenger_004'
   # ../.source/ATimeofWar_Eng_v8.cs:3559
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3561
   - type: 'text'
-    # ../en-US.restext:189 | "\"Which flag do you fly?\..."
+    # ../en-US.restext:191 | "\"Which flag do you fly?\..."
     value: 'restext://Heading_WhichFlagDoYouFly'
   # ../.source/ATimeofWar_Eng_v8.cs:3566
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3568
   - type: 'conditional'
-    # ../en-US.restext:272 | "Separatists"
+    # ../en-US.restext:274 | "Separatists"
     if: 'warwinner == "restext://Title_Separatists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:3570
@@ -117,7 +117,7 @@ nodes:
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:3606
   - type: 'conditional'
-    # ../en-US.restext:282 | "Unified Monarchists"
+    # ../en-US.restext:284 | "Unified Monarchists"
     if: 'warwinner == "restext://Title_UnifiedMonarchists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:3607

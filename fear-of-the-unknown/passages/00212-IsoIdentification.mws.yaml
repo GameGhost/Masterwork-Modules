@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'IsoIdentification'
-# ../en-US.restext:1824 | "Verification Completed"
+# ../en-US.restext:1823 | "Verification Completed"
 title: 'restext://IsoIdentification_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:23805
 - type: 'text'
-  # ../en-US.restext:1825 | "**Journal of {tempid} -** "
+  # ../en-US.restext:1824 | "**Journal of {tempid} -** "
   value: 'restext://IsoIdentification_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:23809
 - type: 'include_passage'
@@ -16,8 +16,8 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:23813
 - type: 'let'
   var: '_rnd_IsoIdentification_0'
-  # ../en-US.restext:1826 | IsoIdentification_003 | "Shoddy. Regrettable. The ..."
-  # ../en-US.restext:1827 | IsoIdentification_004 | "I received no cordial gre..."
+  # ../en-US.restext:1825 | IsoIdentification_003 | "Shoddy. Regrettable. The ..."
+  # ../en-US.restext:1826 | IsoIdentification_004 | "I received no cordial gre..."
   expr: '["restext://IsoIdentification_003", "restext://IsoIdentification_004"].shuffled("IsoIdentification_0")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:23811
 - type: 'break'
@@ -30,8 +30,8 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:23818
 - type: 'let'
   var: '_rnd_IsoIdentification_1'
-  # ../en-US.restext:1828 | IsoIdentification_005 | "Like a mangy hound, I was..."
-  # ../en-US.restext:1829 | IsoIdentification_006 | "The interrogation was len..."
+  # ../en-US.restext:1827 | IsoIdentification_005 | "Like a mangy hound, I was..."
+  # ../en-US.restext:1828 | IsoIdentification_006 | "The interrogation was len..."
   expr: '["restext://IsoIdentification_005", "restext://IsoIdentification_006"].shuffled("IsoIdentification_1")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:23816
 - type: 'break'
@@ -46,7 +46,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:23824
 - type: 'text'
-  # ../en-US.restext:1830 | "After an extended time, I..."
+  # ../en-US.restext:1829 | "After an extended time, I..."
   value: 'restext://IsoIdentification_007'
 # ../.source/FearoftheUnknown_Eng_v15.cs:23827
 - type: 'break'

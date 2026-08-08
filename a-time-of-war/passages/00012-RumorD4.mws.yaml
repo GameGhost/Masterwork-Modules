@@ -6,7 +6,7 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:2445
 - type: 'text'
-  # ../en-US.restext:248 | "**Carefully pick up this ..."
+  # ../en-US.restext:250 | "**Carefully pick up this ..."
   value: 'restext://Storybook_PickUpDevicePrivate'
 # ../.source/ATimeofWar_Eng_v8.cs:2448
 - type: 'break'
@@ -16,32 +16,32 @@ nodes:
   # ../en-US.restext:40 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:285 | "Close"
+  # ../en-US.restext:287 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:2469
   - type: 'text'
-    # ../en-US.restext:391 | "\"Down with the Monarchy!..."
+    # ../en-US.restext:393 | "\"Down with the Monarchy!..."
     value: 'restext://RumorD4_001'
   # ../.source/ATimeofWar_Eng_v8.cs:2472
   - type: 'let'
     var: '_rnd_RumorD4_0'
-    # ../en-US.restext:392 | RumorD4_002 | "My intrusion was met with..."
-    # ../en-US.restext:393 | RumorD4_003 | "I was quick to explain to..."
+    # ../en-US.restext:394 | RumorD4_002 | "My intrusion was met with..."
+    # ../en-US.restext:395 | RumorD4_003 | "I was quick to explain to..."
     expr: '["restext://RumorD4_002", "restext://RumorD4_003"].shuffled("RumorD4_0")[0]'
   # ../.source/ATimeofWar_Eng_v8.cs:2478
   - type: 'let'
     var: '_rnd_RumorD4_1'
-    # ../en-US.restext:394 | RumorD4_004 | "They became especially ex..."
-    # ../en-US.restext:395 | RumorD4_005 | "After a moment of stunned..."
+    # ../en-US.restext:396 | RumorD4_004 | "They became especially ex..."
+    # ../en-US.restext:397 | RumorD4_005 | "After a moment of stunned..."
     expr: '["restext://RumorD4_004", "restext://RumorD4_005"].shuffled("RumorD4_1")[0]'
   # ../.source/ATimeofWar_Eng_v8.cs:2470
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:2472
   - type: 'text'
-    # ../en-US.restext:396 | "{_rnd_RumorD4_0} {_rnd_Ru..."
+    # ../en-US.restext:398 | "{_rnd_RumorD4_0} {_rnd_Ru..."
     value: 'restext://RumorD4_006'
     lets:
     - '_rnd_RumorD4_0'
@@ -51,7 +51,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:2485
   - type: 'text'
-    # ../en-US.restext:397 | "I was able to discern one..."
+    # ../en-US.restext:399 | "I was able to discern one..."
     value: 'restext://RumorD4_007'
   # ../.source/ATimeofWar_Eng_v8.cs:2490
   - type: 'break'
@@ -75,14 +75,14 @@ nodes:
 - type: 'switch'
   on: 'warwinner'
   cases:
-  # ../en-US.restext:272 | "Separatists"
+  # ../en-US.restext:274 | "Separatists"
   - match: 'restext://Title_Separatists'
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:2456
     - type: 'assign'
       var: 'sep'
       expr: '"win"'
-  # ../en-US.restext:282 | "Unified Monarchists"
+  # ../en-US.restext:284 | "Unified Monarchists"
   - match: 'restext://Title_UnifiedMonarchists'
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:2460

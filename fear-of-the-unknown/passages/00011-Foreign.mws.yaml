@@ -25,7 +25,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2672
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:367 | "Accept"
+    # ../en-US.restext:368 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2676
@@ -49,7 +49,7 @@ nodes:
     - type: 'break'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2701
     - type: 'text'
-      # ../en-US.restext:113 | "Place the Suspicion Marke..."
+      # ../en-US.restext:118 | "Place the Suspicion Marke..."
       value: 'restext://Directive_PlaceSuspicionMarker_Lead'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2704
     - type: 'conditional'
@@ -77,7 +77,7 @@ nodes:
             expr: 'tracker + 1'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2716
     - type: 'text'
-      # ../en-US.restext:133 | "**{tracker}** and the {ic..."
+      # ../en-US.restext:138 | "**{tracker}** and the {ic..."
       value: 'restext://Directive_TrackerAndMobMarkerLeft'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2721
     - type: 'break'
@@ -87,7 +87,7 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:2724
       - type: 'text'
-        # ../en-US.restext:69 | "Then, since this is a 3 p..."
+        # ../en-US.restext:74 | "Then, since this is a 3 p..."
         value: 'restext://Directive_3Player_PassMarker_A'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2732
 - type: 'section'
@@ -109,7 +109,7 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2755
   - type: 'section'
-    # ../en-US.restext:225 | "{icon:storybooktoken} **R..."
+    # ../en-US.restext:226 | "{icon:storybooktoken} **R..."
     title: 'restext://Heading_StorybookToken_RumorMill'
     style: 'hub-card'
     content:
@@ -120,13 +120,13 @@ nodes:
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2772
   - type: 'section'
-    # ../en-US.restext:225 | "{icon:storybooktoken} **R..."
+    # ../en-US.restext:226 | "{icon:storybooktoken} **R..."
     title: 'restext://Heading_StorybookToken_RumorMill'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2781
     - type: 'text'
-      # ../en-US.restext:136 | "When you visit the Church, "
+      # ../en-US.restext:141 | "When you visit the Church, "
       value: 'restext://Directive_VisitChurch_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2782
     - type: 'link'
@@ -145,13 +145,13 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2791
 - type: 'section'
-  # ../en-US.restext:228 | "{icon:storybooktoken} **T..."
+  # ../en-US.restext:229 | "{icon:storybooktoken} **T..."
   title: 'restext://Heading_StorybookToken_TownStrength'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2802
   - type: 'text'
-    # ../en-US.restext:103 | "Players may visit the Tow..."
+    # ../en-US.restext:108 | "Players may visit the Tow..."
     value: 'restext://Directive_MemorialBrickPurchase_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2812
   - type: 'link'
@@ -164,7 +164,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2818
 - type: 'section'
-  # ../en-US.restext:176 | "**Key to the City**"
+  # ../en-US.restext:179 | "**Key to the City**"
   title: 'restext://Heading_KeyToTheCity'
   style: 'hub-card'
   content:
@@ -207,7 +207,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2870
 - type: 'section'
-  # ../en-US.restext:207 | "**Second Round Event - Ac..."
+  # ../en-US.restext:208 | "**Second Round Event - Ac..."
   title: 'restext://Heading_SecondRoundEvent_Accusations'
   style: 'hub-card'
   content:
@@ -224,13 +224,13 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2895
   - type: 'section'
-    # ../en-US.restext:223 | "{icon:storybooktoken} **P..."
+    # ../en-US.restext:224 | "{icon:storybooktoken} **P..."
     title: 'restext://Heading_StorybookToken_PressingForward'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2905
     - type: 'text'
-      # ../en-US.restext:101 | "If a player reaches 35VP, "
+      # ../en-US.restext:106 | "If a player reaches 35VP, "
       value: 'restext://Directive_IfPlayerReaches35VP_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2907
     - type: 'conditional'
@@ -260,7 +260,7 @@ nodes:
     # ../en-US.restext:35 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
     target: 'WallEvent' # ./00071-WallEvent.mws.yaml
-    # ../en-US.restext:372 | "End of Round"
+    # ../en-US.restext:373 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'

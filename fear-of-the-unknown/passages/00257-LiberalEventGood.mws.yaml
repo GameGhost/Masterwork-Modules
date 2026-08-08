@@ -2,34 +2,34 @@
 ---
 format: 'mws/0.4'
 passage_id: 'LiberalEventGood'
-# ../en-US.restext:357 | "The Creature Intervenes"
+# ../en-US.restext:358 | "The Creature Intervenes"
 title: 'restext://Title_TheCreatureIntervenes'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:29118
 - type: 'text'
-  # ../en-US.restext:180 | "**Letter from {randomname..."
+  # ../en-US.restext:183 | "**Letter from {randomname..."
   value: 'restext://Heading_LetterFromRandomname_Cont'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29127
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29129
 - type: 'text'
-  # ../en-US.restext:2174 | "Perhaps the world has som..."
+  # ../en-US.restext:2173 | "Perhaps the world has som..."
   value: 'restext://LiberalEventGood_001'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29131
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29133
 - type: 'text'
-  # ../en-US.restext:2175 | "All I received was a brie..."
+  # ../en-US.restext:2174 | "All I received was a brie..."
   value: 'restext://LiberalEventGood_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29136
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29138
 - type: 'text'
-  # ../en-US.restext:2176 | "He signed his letter only..."
+  # ../en-US.restext:2175 | "He signed his letter only..."
   value: 'restext://LiberalEventGood_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:29145
 - type: 'break'
@@ -40,7 +40,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${lib == "taxes" ? "LiberalEventA" : "LiberalEventB"}' # ./00086-LiberalEventA.mws.yaml, ./00087-LiberalEventB.mws.yaml
-  # ../en-US.restext:368 | "Close"
+  # ../en-US.restext:369 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -58,5 +58,5 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:29192
   - type: 'text'
-    # ../en-US.restext:2177 | "Any player who offered mo..."
+    # ../en-US.restext:2176 | "Any player who offered mo..."
     value: 'restext://LiberalEventGood_004'

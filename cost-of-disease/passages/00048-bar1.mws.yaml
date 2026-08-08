@@ -2,6 +2,10 @@
 ---
 format: 'mws/0.4'
 passage_id: 'bar1'
+# ../en-US.restext:73 | "SWORN STATEMENT"
+title: 'restext://Common_006'
+# ../en-US.restext:699 | "Case {_rnd_bar1_0} -HDG- ..."
+subtitle: 'restext://bar1_002'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:6242
@@ -12,20 +16,10 @@ nodes:
 - type: 'let'
   var: '_rnd_bar1_1'
   expr: 'rand_between(1, 999, "bar1_1")'
-# ../.source/TheCostofDisease_Eng_v10.cs:6241
-- type: 'text'
-  # ../en-US.restext:699 | "**SWORN STATEMENT - Case ..."
-  value: 'restext://bar1_001'
-  lets:
-  - '_rnd_bar1_0'
-  - '_rnd_bar1_1'
 # ../.source/TheCostofDisease_Eng_v10.cs:6247
 - type: 'assign'
   var: 'bar1'
   expr: 'rand_between(1, 2, "bar1_2")'
-# ../.source/TheCostofDisease_Eng_v10.cs:6246
-- type: 'break'
-  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:6249
 - type: 'conditional'
   if: 'bar1 == 1'
@@ -33,29 +27,26 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:6251
   - type: 'text'
     # ../en-US.restext:702 | "After a brief excursion t..."
-    value: 'restext://bar1_004'
+    value: 'restext://bar1_005'
   # ../.source/TheCostofDisease_Eng_v10.cs:6258
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:6260
   - type: 'text'
     # ../en-US.restext:703 | "We both decided to disrob..."
-    value: 'restext://bar1_005'
+    value: 'restext://bar1_006'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:6265
   - type: 'text'
     # ../en-US.restext:700 | "After a brief excursion t..."
-    value: 'restext://bar1_002'
+    value: 'restext://bar1_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:6272
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:6274
   - type: 'text'
     # ../en-US.restext:701 | "It was around midnight th..."
-    value: 'restext://bar1_003'
-# ../.source/TheCostofDisease_Eng_v10.cs:6276
-- type: 'break'
-  style: 'paragraph'
+    value: 'restext://bar1_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:6280
 - type: 'popup'
   layout: 'setup'
@@ -70,4 +61,4 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:6286
   - type: 'text'
     # ../en-US.restext:704 | "Place a {icon:creepy_icon..."
-    value: 'restext://bar1_006'
+    value: 'restext://bar1_007'

@@ -40,7 +40,7 @@ nodes:
     expr: 'rand_between(1, 29, "HubertusHunters3_1")'
   # ../.source/TheCostofDisease_Eng_v10.cs:11979
   - type: 'text'
-    # ../en-US.restext:1184 | "**Upon a Secret Meeting -..."
+    # ../en-US.restext:1187 | "**Upon a Secret Meeting -..."
     value: 'restext://HubertusHunters3_001'
     lets:
     - '_rnd_HubertusHunters3_0'
@@ -49,14 +49,14 @@ nodes:
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:11986
   - type: 'text'
-    # ../en-US.restext:263 | "I, {meet}, am writing thi..."
+    # ../en-US.restext:264 | "I, {meet}, am writing thi..."
     value: 'restext://Narrative_Letter_FraternityMeeting'
   # ../.source/TheCostofDisease_Eng_v10.cs:11991
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:11993
   - type: 'text'
-    # ../en-US.restext:267 | "It has been revealed to m..."
+    # ../en-US.restext:268 | "It has been revealed to m..."
     value: 'restext://Narrative_Letter_IntentionsLead'
   # ../.source/TheCostofDisease_Eng_v10.cs:11994
   - type: 'conditional'
@@ -65,37 +65,37 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:11996
     - type: 'text'
-      # ../en-US.restext:261 | "amusingly exploitative. T..."
+      # ../en-US.restext:262 | "amusingly exploitative. T..."
       value: 'restext://Narrative_Letter_FraternityIntentExploitative'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:12006
     - type: 'text'
-      # ../en-US.restext:262 | "good. It was astute for y..."
+      # ../en-US.restext:263 | "good. It was astute for y..."
       value: 'restext://Narrative_Letter_FraternityIntentGood'
   # ../.source/TheCostofDisease_Eng_v10.cs:12013
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:12015
   - type: 'text'
-    # ../en-US.restext:260 | "Being an entrepreneur mys..."
+    # ../en-US.restext:261 | "Being an entrepreneur mys..."
     value: 'restext://Narrative_Letter_EntrepreneurApprehension'
   # ../.source/TheCostofDisease_Eng_v10.cs:12018
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:12022
   - type: 'text'
-    # ../en-US.restext:162 | "**It is with sincerity th..."
+    # ../en-US.restext:163 | "**It is with sincerity th..."
     value: 'restext://Heading_ItIsWithSincerity'
   # ../.source/TheCostofDisease_Eng_v10.cs:12024
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:12026
   - type: 'text'
-    # ../en-US.restext:244 | "...have decided to "
+    # ../en-US.restext:245 | "...have decided to "
     value: 'restext://Narrative_DecidedTo_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:12028
   - type: 'link'
-    # ../en-US.restext:124 | "join and pledge my servic..."
+    # ../en-US.restext:125 | "join and pledge my servic..."
     label: 'restext://Faction_JoinPledgeService'
     target: 'HuntersConfirmation' # ./00343-HuntersConfirmation.mws.yaml
     snapshot: true
@@ -107,7 +107,7 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:11953
       - type: 'assign'
         var: 'allyA'
-        # ../en-US.restext:123 | "hunters"
+        # ../en-US.restext:124 | "hunters"
         expr: '"restext://Faction_Hunters_Lower"'
     # ../.source/TheCostofDisease_Eng_v10.cs:11955
     - type: 'conditional'
@@ -116,7 +116,7 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:11957
       - type: 'assign'
         var: 'allyB'
-        # ../en-US.restext:123 | "hunters"
+        # ../en-US.restext:124 | "hunters"
         expr: '"restext://Faction_Hunters_Lower"'
     # ../.source/TheCostofDisease_Eng_v10.cs:11959
     - type: 'conditional'
@@ -125,7 +125,7 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:11961
       - type: 'assign'
         var: 'allyC'
-        # ../en-US.restext:123 | "hunters"
+        # ../en-US.restext:124 | "hunters"
         expr: '"restext://Faction_Hunters_Lower"'
     # ../.source/TheCostofDisease_Eng_v10.cs:11963
     - type: 'conditional'
@@ -134,7 +134,7 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:11965
       - type: 'assign'
         var: 'allyD'
-        # ../en-US.restext:123 | "hunters"
+        # ../en-US.restext:124 | "hunters"
         expr: '"restext://Faction_Hunters_Lower"'
     # ../.source/TheCostofDisease_Eng_v10.cs:11967
     - type: 'conditional'
@@ -143,18 +143,18 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:11969
       - type: 'assign'
         var: 'allyE'
-        # ../en-US.restext:123 | "hunters"
+        # ../en-US.restext:124 | "hunters"
         expr: '"restext://Faction_Hunters_Lower"'
   # ../.source/TheCostofDisease_Eng_v10.cs:12029
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:12031
   - type: 'text'
-    # ../en-US.restext:244 | "...have decided to "
+    # ../en-US.restext:245 | "...have decided to "
     value: 'restext://Narrative_DecidedTo_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:12032
   - type: 'link'
-    # ../en-US.restext:127 | "refuse this ridiculous offer."
+    # ../en-US.restext:128 | "refuse this ridiculous offer."
     label: 'restext://Faction_RefuseOffer'
     target: 'RefusalHunters' # ./00185-RefusalHunters.mws.yaml
     snapshot: true

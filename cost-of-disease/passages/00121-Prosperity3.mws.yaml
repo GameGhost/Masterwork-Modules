@@ -14,58 +14,58 @@ nodes:
   expr: '15'
 # ../.source/TheCostofDisease_Eng_v10.cs:13557
 - type: 'conditional'
-  # ../en-US.restext:126 | "Order of St. Hubertus"
+  # ../en-US.restext:127 | "Order of St. Hubertus"
   if: 'society == "restext://Faction_OrderOfStHubertus_Plain"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:13561
   - type: 'section'
-    # ../en-US.restext:141 | "**Acceptance**"
+    # ../en-US.restext:142 | "**Acceptance**"
     title: 'restext://Heading_Acceptance'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:13569
     - type: 'text'
-      # ../en-US.restext:84 | "Caretaker pieces can now ..."
+      # ../en-US.restext:85 | "Caretaker pieces can now ..."
       value: 'restext://Directive_CaretakerTownActions_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:13575
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:13579
   - type: 'section'
-    # ../en-US.restext:178 | "**School for Hybridized I..."
+    # ../en-US.restext:179 | "**School for Hybridized I..."
     title: 'restext://Heading_SchoolForHybridizedIndividuals'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:13587
     - type: 'text'
-      # ../en-US.restext:315 | "When a player visits the ..."
+      # ../en-US.restext:316 | "When a player visits the ..."
       value: 'restext://SchoolForHybridizedIndividuals_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:13604
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:13608
   - type: 'section'
-    # ../en-US.restext:156 | "**Experiments are Feared**"
+    # ../en-US.restext:157 | "**Experiments are Feared**"
     title: 'restext://Heading_ExperimentsAreFeared'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:13615
     - type: 'text'
-      # ../en-US.restext:289 | "Anytime a player takes th..."
+      # ../en-US.restext:290 | "Anytime a player takes th..."
       value: 'restext://Resource_ExperimentGainsCreepy_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:13621
   - type: 'section'
-    # ../en-US.restext:157 | "**Farmer's Market**"
+    # ../en-US.restext:158 | "**Farmer's Market**"
     title: 'restext://Heading_FarmersMarket'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:13628
     - type: 'text'
-      # ../en-US.restext:129 | "Due to the associated soc..."
+      # ../en-US.restext:130 | "Due to the associated soc..."
       value: 'restext://FarmersMarket_CreepyRule'
   # ../.source/TheCostofDisease_Eng_v10.cs:13639
   - type: 'section'
-    # ../en-US.restext:142 | "{icon:storybook} **Angry Mob**"
+    # ../en-US.restext:143 | "{icon:storybook} **Angry Mob**"
     title: 'restext://Heading_AngryMob'
     style: 'hub-card'
     content:
@@ -84,13 +84,13 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:13661
   - type: 'section'
-    # ../en-US.restext:1225 | "**Scientific Achievement**"
+    # ../en-US.restext:1228 | "**Scientific Achievement**"
     title: 'restext://Prosperity3_001'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:13669
     - type: 'text'
-      # ../en-US.restext:1226 | "When you gain a Vanity Es..."
+      # ../en-US.restext:1229 | "When you gain a Vanity Es..."
       value: 'restext://Prosperity3_002'
     # ../.source/TheCostofDisease_Eng_v10.cs:13673
     - type: 'assign'
@@ -114,36 +114,36 @@ nodes:
       snapshot: true
       content:
       - type: 'text'
-        # ../en-US.restext:308 | "The Late Years of the Thi..."
+        # ../en-US.restext:309 | "The Late Years of the Thi..."
         value: 'restext://Round_GenerationIII_LateEnded'
       - type: 'break'
         style: 'paragraph'
       - type: 'text'
-        # ../en-US.restext:306 | "Perform any End of Round ..."
+        # ../en-US.restext:307 | "Perform any End of Round ..."
         value: 'restext://Round_EndOfRoundActions_Rule'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:13684
   - type: 'section'
-    # ../en-US.restext:160 | "**Hunter's Haven**"
+    # ../en-US.restext:161 | "**Hunter's Haven**"
     title: 'restext://Heading_HuntersHaven'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:13692
     - type: 'text'
-      # ../en-US.restext:193 | "For each visit to the Hun..."
+      # ../en-US.restext:194 | "For each visit to the Hun..."
       value: 'restext://HuntersHaven_PayKnowledgeLoseInsanity_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:13700
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:13704
   - type: 'section'
-    # ../en-US.restext:1225 | "**Scientific Achievement**"
+    # ../en-US.restext:1228 | "**Scientific Achievement**"
     title: 'restext://Prosperity3_001'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:13712
     - type: 'text'
-      # ../en-US.restext:1226 | "When you gain a Vanity Es..."
+      # ../en-US.restext:1229 | "When you gain a Vanity Es..."
       value: 'restext://Prosperity3_002'
     # ../.source/TheCostofDisease_Eng_v10.cs:13716
     - type: 'assign'
@@ -167,10 +167,10 @@ nodes:
       snapshot: true
       content:
       - type: 'text'
-        # ../en-US.restext:308 | "The Late Years of the Thi..."
+        # ../en-US.restext:309 | "The Late Years of the Thi..."
         value: 'restext://Round_GenerationIII_LateEnded'
       - type: 'break'
         style: 'paragraph'
       - type: 'text'
-        # ../en-US.restext:306 | "Perform any End of Round ..."
+        # ../en-US.restext:307 | "Perform any End of Round ..."
         value: 'restext://Round_EndOfRoundActions_Rule'

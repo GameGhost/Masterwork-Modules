@@ -6,27 +6,27 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:19186
 - type: 'text'
-  # ../en-US.restext:1590 | "**Carefully hand the Stor..."
+  # ../en-US.restext:1591 | "**Carefully hand the Stor..."
   value: 'restext://DuelDenounce1_001'
 # ../.source/ATimeofWar_Eng_v8.cs:19190
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:19194
 - type: 'text'
-  # ../en-US.restext:1591 | "**Firm Rebuke**"
+  # ../en-US.restext:1592 | "**Firm Rebuke**"
   value: 'restext://DuelDenounce1_002'
 # ../.source/ATimeofWar_Eng_v8.cs:19196
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:19197
 - type: 'text'
-  # ../en-US.restext:1592 | "I remember the morning up..."
+  # ../en-US.restext:1593 | "I remember the morning up..."
   value: 'restext://DuelDenounce1_003'
 # ../.source/ATimeofWar_Eng_v8.cs:19198
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:19200
 - type: 'text'
-  # ../en-US.restext:1593 | "Perhaps I had craved the ..."
+  # ../en-US.restext:1594 | "Perhaps I had craved the ..."
   value: 'restext://DuelDenounce1_004'
 # ../.source/ATimeofWar_Eng_v8.cs:19201
 - type: 'break'
@@ -37,7 +37,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 7 ? "Martia1Pre2" : "MartialPre3"}' # ./00294-Martia1Pre2.mws.yaml, ./00295-MartialPre3.mws.yaml
-  # ../en-US.restext:285 | "Close"
+  # ../en-US.restext:287 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -48,5 +48,5 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:19221
   - type: 'text'
-    # ../en-US.restext:1594 | "{playersabotage1} gains *..."
+    # ../en-US.restext:1595 | "{playersabotage1} gains *..."
     value: 'restext://DuelDenounce1_005'

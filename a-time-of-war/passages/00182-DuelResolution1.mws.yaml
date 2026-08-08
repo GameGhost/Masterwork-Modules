@@ -6,21 +6,21 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:19424
 - type: 'text'
-  # ../en-US.restext:1614 | "**This and the subsequent..."
+  # ../en-US.restext:1615 | "**This and the subsequent..."
   value: 'restext://DuelResolution1_001'
 # ../.source/ATimeofWar_Eng_v8.cs:19426
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:19430
 - type: 'text'
-  # ../en-US.restext:1615 | "**The Bloody Business**"
+  # ../en-US.restext:1616 | "**The Bloody Business**"
   value: 'restext://DuelResolution1_002'
 # ../.source/ATimeofWar_Eng_v8.cs:19432
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:19434
 - type: 'text'
-  # ../en-US.restext:1616 | "As quick as the sun rose ..."
+  # ../en-US.restext:1617 | "As quick as the sun rose ..."
   value: 'restext://DuelResolution1_003'
 # ../.source/ATimeofWar_Eng_v8.cs:19438
 - type: 'break'
@@ -32,19 +32,19 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:19442
   - type: 'text'
-    # ../en-US.restext:1618 | "I opened the hatch on my ..."
+    # ../en-US.restext:1619 | "I opened the hatch on my ..."
     value: 'restext://DuelResolution1_005'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:19448
   - type: 'text'
-    # ../en-US.restext:1617 | "I once again checked the ..."
+    # ../en-US.restext:1618 | "I once again checked the ..."
     value: 'restext://DuelResolution1_004'
 # ../.source/ATimeofWar_Eng_v8.cs:19450
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:19452
 - type: 'link'
-  # ../en-US.restext:1619 | "Click to begin the duel..."
+  # ../en-US.restext:1620 | "Click to begin the duel..."
   label: 'restext://DuelResolution1_006'
   target: 'DuelResolution1a' # ./00183-DuelResolution1a.mws.yaml
   snapshot: true
@@ -56,10 +56,10 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:19456
   - type: 'assign'
     var: 'duelsci'
-    # ../en-US.restext:120 | Focus_Engineering | "Engineering"
-    # ../en-US.restext:119 | Focus_Chemistry | "Chemistry"
-    # ../en-US.restext:118 | Focus_Biology | "Biology"
-    # ../en-US.restext:1620 | DuelResolution1_010 | "Occult"
+    # ../en-US.restext:121 | Focus_Engineering | "Engineering"
+    # ../en-US.restext:120 | Focus_Chemistry | "Chemistry"
+    # ../en-US.restext:119 | Focus_Biology | "Biology"
+    # ../en-US.restext:1621 | DuelResolution1_010 | "Occult"
     expr: '["restext://Focus_Engineering", "restext://Focus_Chemistry", "restext://Focus_Biology", "restext://DuelResolution1_010"].shuffled("DuelResolution1_0")[0]'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:19460

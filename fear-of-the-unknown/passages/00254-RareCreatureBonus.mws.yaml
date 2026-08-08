@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'RareCreatureBonus'
-# ../en-US.restext:2160 | "Minor Compassion"
+# ../en-US.restext:2159 | "Minor Compassion"
 title: 'restext://RareCreatureBonus_001'
 layout: 'narration'
 nodes:
@@ -12,7 +12,7 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:28854
   - type: 'text'
-    # ../en-US.restext:2161 | "The Creature was not unre..."
+    # ../en-US.restext:2160 | "The Creature was not unre..."
     value: 'restext://RareCreatureBonus_002'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28855
   - type: 'break'
@@ -23,7 +23,7 @@ nodes:
     # ../en-US.restext:29 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: '${Gen2End == "asylum" ? "LiberalIntro" : "PrivatizedIntro"}' # ./00024-LiberalIntro.mws.yaml, ./00023-PrivatizedIntro.mws.yaml
-    # ../en-US.restext:368 | "Close"
+    # ../en-US.restext:369 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -34,14 +34,14 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:28915
     - type: 'text'
-      # ../en-US.restext:2162 | "The player with a complet..."
+      # ../en-US.restext:2161 | "The player with a complet..."
       value: 'restext://RareCreatureBonus_003'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28928
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:28930
     - type: 'text'
-      # ../en-US.restext:2163 | "They **move one space for..."
+      # ../en-US.restext:2162 | "They **move one space for..."
       value: 'restext://RareCreatureBonus_004'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:28864

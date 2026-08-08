@@ -25,7 +25,8 @@ nodes:
     - type: 'switch'
       on: 'townname'
       cases:
-      - match: 'Paradox'
+      # ../en-US.restext:51 | "Paradox"
+      - match: 'restext://Common_003'
         nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:20080
         - type: 'assign'

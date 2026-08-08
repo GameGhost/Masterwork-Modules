@@ -2,18 +2,21 @@
 ---
 format: 'mws/0.4'
 passage_id: 'AsylumQuestion1'
-# ../en-US.restext:2767 | "Do any of your close rela..."
-title: 'restext://AsylumQuestion1_001'
-# ../en-US.restext:2768 | "Anemia? Hemophilia? Blood..."
-subtitle: 'restext://AsylumQuestion1_002'
 tags:
 - 'revise'
 layout: 'narration'
 nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:36728
+- type: 'text'
+  # ../en-US.restext:2766 | "**Do any of your close re..."
+  value: 'restext://AsylumQuestion1_001'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36731
+- type: 'break'
+  style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36734
 - type: 'link'
-  # ../en-US.restext:2769 | "All of the above."
-  label: 'restext://AsylumQuestion1_003'
+  # ../en-US.restext:2767 | "All of the above."
+  label: 'restext://AsylumQuestion1_002'
   target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
   snapshot: true
   onclick:
@@ -30,8 +33,8 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36738
 - type: 'link'
-  # ../en-US.restext:2770 | "Not that I am aware."
-  label: 'restext://AsylumQuestion1_004'
+  # ../en-US.restext:2768 | "Not that I am aware."
+  label: 'restext://AsylumQuestion1_003'
   target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
   snapshot: true
   onclick:
@@ -44,8 +47,8 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36742
 - type: 'link'
-  # ../en-US.restext:2771 | "I prefer not to answer."
-  label: 'restext://AsylumQuestion1_005'
+  # ../en-US.restext:2769 | "I prefer not to answer."
+  label: 'restext://AsylumQuestion1_004'
   target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
   snapshot: true
   onclick:

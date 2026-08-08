@@ -8,7 +8,7 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:5107
 - type: 'text'
-  # ../en-US.restext:183 | "**Letter from {tempid} -** "
+  # ../en-US.restext:186 | "**Letter from {tempid} -** "
   value: 'restext://Heading_LetterFromTempid_Trailing'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5113
 - type: 'include_passage'
@@ -36,7 +36,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 11 ? "Isolation2" : "Isolation3"}' # ./00043-Isolation2.mws.yaml, ./00044-Isolation3.mws.yaml
-  # ../en-US.restext:368 | "Close"
+  # ../en-US.restext:369 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:

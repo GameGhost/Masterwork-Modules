@@ -24,7 +24,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:22638
 - type: 'conditional'
-  # ../en-US.restext:282 | "Unified Monarchists"
+  # ../en-US.restext:284 | "Unified Monarchists"
   if: 'warwinner == "restext://Title_UnifiedMonarchists"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:22642
@@ -33,19 +33,19 @@ nodes:
     # ../en-US.restext:1887 | "Click here if the {warlos..."
     label: 'restext://ResistEnd3_004'
     target: 'PeaceIntro' # ./00042-PeaceIntro.mws.yaml
-    # ../en-US.restext:285 | "Close"
+    # ../en-US.restext:287 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     content:
     - type: 'let'
       var: 'title'
-      # ../en-US.restext:253 | "End of Generation"
+      # ../en-US.restext:255 | "End of Generation"
       expr: '"restext://Title_EndOfGeneration"'
     - type: 'let'
       var: 'completedRound'
       expr: '6'
     - type: 'text'
-      # ../en-US.restext:75 | "Remove all player pieces ..."
+      # ../en-US.restext:76 | "Remove all player pieces ..."
       value: 'restext://Directive_EndGeneration_PlayersKeepWeaponTokens'
   # ../.source/ATimeofWar_Eng_v8.cs:22644
   - type: 'break'
@@ -56,19 +56,19 @@ nodes:
     # ../en-US.restext:1888 | "Click here if the {warwin..."
     label: 'restext://ResistEnd3_005'
     target: 'MonarchReignIntro' # ./00041-MonarchReignIntro.mws.yaml
-    # ../en-US.restext:285 | "Close"
+    # ../en-US.restext:287 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     content:
     - type: 'let'
       var: 'title'
-      # ../en-US.restext:253 | "End of Generation"
+      # ../en-US.restext:255 | "End of Generation"
       expr: '"restext://Title_EndOfGeneration"'
     - type: 'let'
       var: 'completedRound'
       expr: '6'
     - type: 'text'
-      # ../en-US.restext:75 | "Remove all player pieces ..."
+      # ../en-US.restext:76 | "Remove all player pieces ..."
       value: 'restext://Directive_EndGeneration_PlayersKeepWeaponTokens'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:22655
@@ -77,19 +77,19 @@ nodes:
     # ../en-US.restext:1887 | "Click here if the {warlos..."
     label: 'restext://ResistEnd3_004'
     target: 'MonarchReignIntro' # ./00041-MonarchReignIntro.mws.yaml
-    # ../en-US.restext:285 | "Close"
+    # ../en-US.restext:287 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     content:
     - type: 'let'
       var: 'title'
-      # ../en-US.restext:253 | "End of Generation"
+      # ../en-US.restext:255 | "End of Generation"
       expr: '"restext://Title_EndOfGeneration"'
     - type: 'let'
       var: 'completedRound'
       expr: '6'
     - type: 'text'
-      # ../en-US.restext:75 | "Remove all player pieces ..."
+      # ../en-US.restext:76 | "Remove all player pieces ..."
       value: 'restext://Directive_EndGeneration_PlayersKeepWeaponTokens'
   # ../.source/ATimeofWar_Eng_v8.cs:22657
   - type: 'break'
@@ -100,17 +100,17 @@ nodes:
     # ../en-US.restext:1888 | "Click here if the {warwin..."
     label: 'restext://ResistEnd3_005'
     target: 'PeaceIntro' # ./00042-PeaceIntro.mws.yaml
-    # ../en-US.restext:285 | "Close"
+    # ../en-US.restext:287 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     content:
     - type: 'let'
       var: 'title'
-      # ../en-US.restext:253 | "End of Generation"
+      # ../en-US.restext:255 | "End of Generation"
       expr: '"restext://Title_EndOfGeneration"'
     - type: 'let'
       var: 'completedRound'
       expr: '6'
     - type: 'text'
-      # ../en-US.restext:75 | "Remove all player pieces ..."
+      # ../en-US.restext:76 | "Remove all player pieces ..."
       value: 'restext://Directive_EndGeneration_PlayersKeepWeaponTokens'

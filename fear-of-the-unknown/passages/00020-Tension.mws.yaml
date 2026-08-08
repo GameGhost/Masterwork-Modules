@@ -21,7 +21,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3878
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:367 | "Accept"
+    # ../en-US.restext:368 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:3882
@@ -53,16 +53,13 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:3903
       - type: 'text'
-        # ../en-US.restext:69 | "Then, since this is a 3 p..."
+        # ../en-US.restext:74 | "Then, since this is a 3 p..."
         value: 'restext://Directive_3Player_PassMarker_A'
       # ../.source/FearoftheUnknown_Eng_v15.cs:3904
       - type: 'break'
-  # ../.source/FearoftheUnknown_Eng_v15.cs:3907
-  - type: 'break'
-    style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3911
   - type: 'section'
-    # ../en-US.restext:209 | "**Special Rule**"
+    # ../en-US.restext:210 | "**Special Rule**"
     title: 'restext://Heading_SpecialRule'
     style: 'hub-card'
     content:
@@ -98,20 +95,20 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3965
   - type: 'section'
-    # ../en-US.restext:196 | "**Plot Expansion**"
+    # ../en-US.restext:197 | "**Plot Expansion**"
     title: 'restext://Heading_PlotExpansion'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:3974
     - type: 'text'
-      # ../en-US.restext:76 | "Bricks can now be used to..."
+      # ../en-US.restext:81 | "Bricks can now be used to..."
       value: 'restext://Directive_BricksExpandEstatePlot'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3978
   - type: 'break'
     style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3984
 - type: 'section'
-  # ../en-US.restext:193 | "**Occult Experimentation**"
+  # ../en-US.restext:194 | "**Occult Experimentation**"
   title: 'restext://Heading_OccultExperimentation'
   style: 'hub-card'
   content:
@@ -129,7 +126,7 @@ nodes:
       value: 'restext://Reward_SecondMostExperiments_WithVariant'
   # ../.source/FearoftheUnknown_Eng_v15.cs:4009
   - type: 'text'
-    # ../en-US.restext:131 | " _Ties are broken by the ..."
+    # ../en-US.restext:136 | " _Ties are broken by the ..."
     value: 'restext://Directive_TieBreak_LowestVP_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4015
 - type: 'break'
@@ -148,7 +145,7 @@ nodes:
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:4028
   - type: 'text'
-    # ../en-US.restext:79 | " for an explanation of th..."
+    # ../en-US.restext:84 | " for an explanation of th..."
     value: 'restext://Directive_ChurchExplanation_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:4033
   - type: 'conditional'
@@ -167,7 +164,7 @@ nodes:
     # ../en-US.restext:35 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
     target: '${ten == 0 ? "TenseConfirm" : "ConsequencesTense"}' # ./00128-TenseConfirm.mws.yaml, ./00084-ConsequencesTense.mws.yaml
-    # ../en-US.restext:372 | "End of Round"
+    # ../en-US.restext:373 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'

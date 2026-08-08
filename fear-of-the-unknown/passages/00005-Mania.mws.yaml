@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Mania'
-# ../en-US.restext:366 | "WITCH HUNT"
+# ../en-US.restext:367 | "WITCH HUNT"
 title: 'restext://Title_WitchHuntCaps'
 # ../en-US.restext:333 | "Early Years"
 subtitle: 'restext://Title_EarlyYears'
@@ -21,7 +21,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:1831
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:367 | "Accept"
+    # ../en-US.restext:368 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:1835
@@ -98,13 +98,13 @@ nodes:
       value: 'restext://Mania_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1916
 - type: 'section'
-  # ../en-US.restext:219 | "{icon:storybooktoken} **F..."
+  # ../en-US.restext:220 | "{icon:storybooktoken} **F..."
   title: 'restext://Heading_StorybookToken_FamilyPlot'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:1926
   - type: 'text'
-    # ../en-US.restext:107 | "Any time a player is over..."
+    # ../en-US.restext:112 | "Any time a player is over..."
     value: 'restext://Directive_OvertakenByMob_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:1930
   - type: 'link'
@@ -121,13 +121,13 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:1940
   - type: 'section'
-    # ../en-US.restext:212 | "{icon:storybooktoken} **10VP**"
+    # ../en-US.restext:213 | "{icon:storybooktoken} **10VP**"
     title: 'restext://Heading_StorybookToken_10VP'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:1950
     - type: 'text'
-      # ../en-US.restext:116 | "Whenever a player reaches..."
+      # ../en-US.restext:121 | "Whenever a player reaches..."
       value: 'restext://Directive_Reaches10VP_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:1951
     - type: 'link'
@@ -144,13 +144,13 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:1961
   - type: 'section'
-    # ../en-US.restext:224 | "{icon:storybooktoken} **R..."
+    # ../en-US.restext:225 | "{icon:storybooktoken} **R..."
     title: 'restext://Heading_StorybookToken_ResearchLevel2'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:1972
     - type: 'text'
-      # ../en-US.restext:119 | "Whenever a player reaches..."
+      # ../en-US.restext:124 | "Whenever a player reaches..."
       value: 'restext://Directive_ReachesJournalLevel2_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:1973
     - type: 'link'
@@ -166,13 +166,13 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:1982
   - type: 'section'
-    # ../en-US.restext:222 | "{icon:storybooktoken} **I..."
+    # ../en-US.restext:223 | "{icon:storybooktoken} **I..."
     title: 'restext://Heading_StorybookToken_InsanityOf3'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:1993
     - type: 'text'
-      # ../en-US.restext:118 | "Whenever a player reaches..."
+      # ../en-US.restext:123 | "Whenever a player reaches..."
       value: 'restext://Directive_ReachesInsanitySpace3_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:1996
     - type: 'link'
@@ -188,13 +188,13 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2005
   - type: 'section'
-    # ../en-US.restext:218 | "{icon:storybooktoken} **C..."
+    # ../en-US.restext:219 | "{icon:storybooktoken} **C..."
     title: 'restext://Heading_StorybookToken_Creepy'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2015
     - type: 'text'
-      # ../en-US.restext:117 | "Whenever a player reaches..."
+      # ../en-US.restext:122 | "Whenever a player reaches..."
       value: 'restext://Directive_ReachesCreepySpace3_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2018
     - type: 'link'
@@ -209,7 +209,7 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2028
 - type: 'section'
-  # ../en-US.restext:206 | "**Second Round Event**"
+  # ../en-US.restext:207 | "**Second Round Event**"
   title: 'restext://Heading_SecondRoundEvent'
   style: 'hub-card'
   content:
@@ -225,7 +225,7 @@ nodes:
     # ../en-US.restext:35 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
     target: 'Mania2' # ./00036-Mania2.mws.yaml
-    # ../en-US.restext:372 | "End of Round"
+    # ../en-US.restext:373 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'

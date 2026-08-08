@@ -23,13 +23,13 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:15186
   - type: 'section'
-    # ../en-US.restext:209 | "**Special Rule**"
+    # ../en-US.restext:210 | "**Special Rule**"
     title: 'restext://Heading_SpecialRule'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:15195
     - type: 'text'
-      # ../en-US.restext:74 | "Visiting any Location wit..."
+      # ../en-US.restext:79 | "Visiting any Location wit..."
       value: 'restext://Directive_BlackBorderMovesMobLeft'
   # ../.source/FearoftheUnknown_Eng_v15.cs:15200
   - type: 'break'
@@ -49,7 +49,7 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:15223
     - type: 'text'
-      # ../en-US.restext:96 | "The first time any player..."
+      # ../en-US.restext:101 | "The first time any player..."
       value: 'restext://Directive_FirstTimeReachesCrossroads_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:15231
     - type: 'link'
@@ -67,20 +67,20 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:15241
   - type: 'section'
-    # ../en-US.restext:196 | "**Plot Expansion**"
+    # ../en-US.restext:197 | "**Plot Expansion**"
     title: 'restext://Heading_PlotExpansion'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:15250
     - type: 'text'
-      # ../en-US.restext:76 | "Bricks can now be used to..."
+      # ../en-US.restext:81 | "Bricks can now be used to..."
       value: 'restext://Directive_BricksExpandEstatePlot'
   # ../.source/FearoftheUnknown_Eng_v15.cs:15254
   - type: 'break'
     style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:15259
 - type: 'section'
-  # ../en-US.restext:193 | "**Occult Experimentation**"
+  # ../en-US.restext:194 | "**Occult Experimentation**"
   title: 'restext://Heading_OccultExperimentation'
   style: 'hub-card'
   content:
@@ -98,7 +98,7 @@ nodes:
       value: 'restext://Reward_SecondMostExperiments_WithVariant'
   # ../.source/FearoftheUnknown_Eng_v15.cs:15285
   - type: 'text'
-    # ../en-US.restext:131 | " _Ties are broken by the ..."
+    # ../en-US.restext:136 | " _Ties are broken by the ..."
     value: 'restext://Directive_TieBreak_LowestVP_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:15292
 - type: 'break'
@@ -117,7 +117,7 @@ nodes:
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:15307
   - type: 'text'
-    # ../en-US.restext:79 | " for an explanation of th..."
+    # ../en-US.restext:84 | " for an explanation of th..."
     value: 'restext://Directive_ChurchExplanation_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:15311
 - type: 'break'
@@ -149,7 +149,7 @@ nodes:
     # ../en-US.restext:33 | "Click here at the End of ..."
     label: 'restext://Click_EndGeneration_FinalScoringDetermineFate'
     target: 'TensionBonus' # ./00092-TensionBonus.mws.yaml
-    # ../en-US.restext:372 | "End of Round"
+    # ../en-US.restext:373 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'

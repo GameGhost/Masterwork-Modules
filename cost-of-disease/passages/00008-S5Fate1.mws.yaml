@@ -15,7 +15,7 @@ nodes:
   okay: 'restext://UIButton_Confirm'
   content:
   - type: 'text'
-    # ../en-US.restext:93 | "Remove all player pieces ..."
+    # ../en-US.restext:94 | "Remove all player pieces ..."
     value: 'restext://Directive_EndGeneration_DubiousBartering'
   - type: 'let'
     var: 'generation'
@@ -29,7 +29,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:2507
 - type: 'conditional'
-  # ../en-US.restext:202 | "bank"
+  # ../en-US.restext:203 | "bank"
   if: 'building == "restext://Location_Bank_Lower"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:2509

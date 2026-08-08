@@ -2,27 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: 'HuntersChoice1'
-# ../en-US.restext:2613 | "The First Night of the Hunt"
+# ../en-US.restext:2621 | "The First Night of the Hunt"
 title: 'restext://HuntersChoice1_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:32802
 - type: 'text'
-  # ../en-US.restext:242 | "The horses reared as a bl..."
+  # ../en-US.restext:243 | "The horses reared as a bl..."
   value: 'restext://Narrative_Crossroads_Storm'
 # ../.source/TheCostofDisease_Eng_v10.cs:32803
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:32805
 - type: 'text'
-  # ../en-US.restext:240 | "To the north, a thick fog..."
+  # ../en-US.restext:241 | "To the north, a thick fog..."
   value: 'restext://Narrative_Crossroads_Directions'
 # ../.source/TheCostofDisease_Eng_v10.cs:32806
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:32808
 - type: 'text'
-  # ../en-US.restext:241 | "It was also possible to r..."
+  # ../en-US.restext:242 | "It was also possible to r..."
   value: 'restext://Narrative_Crossroads_ReturnSouth'
 # ../.source/TheCostofDisease_Eng_v10.cs:32814
 - type: 'let'
@@ -33,7 +33,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:32814
 - type: 'text'
-  # ../en-US.restext:2614 | "**{_rnd_HuntersChoice1_0}..."
+  # ../en-US.restext:2622 | "**{_rnd_HuntersChoice1_0}..."
   value: 'restext://HuntersChoice1_005'
   lets:
   - '_rnd_HuntersChoice1_0'
@@ -42,14 +42,14 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:32825
 - type: 'text'
-  # ../en-US.restext:147 | "**CHOOSE**"
+  # ../en-US.restext:148 | "**CHOOSE**"
   value: 'restext://Heading_Choose'
 # ../.source/TheCostofDisease_Eng_v10.cs:32827
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:32830
 - type: 'link'
-  # ../en-US.restext:2615 | "North to the moors. Both ..."
+  # ../en-US.restext:2623 | "North to the moors. Both ..."
   label: 'restext://HuntersChoice1_006'
   target: 'HuntNight1' # ./00321-HuntNight1.mws.yaml
   snapshot: true
@@ -67,7 +67,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:32834
 - type: 'link'
-  # ../en-US.restext:2616 | "East to the dark forest. ..."
+  # ../en-US.restext:2624 | "East to the dark forest. ..."
   label: 'restext://HuntersChoice1_007'
   target: 'HuntNight1' # ./00321-HuntNight1.mws.yaml
   snapshot: true
@@ -85,7 +85,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:32838
 - type: 'link'
-  # ../en-US.restext:2617 | "West to the mountains. Bo..."
+  # ../en-US.restext:2625 | "West to the mountains. Bo..."
   label: 'restext://HuntersChoice1_008'
   target: 'HuntNight1' # ./00321-HuntNight1.mws.yaml
   snapshot: true
@@ -103,7 +103,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:32842
 - type: 'link'
-  # ../en-US.restext:2618 | "South, back to the town. ..."
+  # ../en-US.restext:2626 | "South, back to the town. ..."
   label: 'restext://HuntersChoice1_009'
   target: 'HuntNight1' # ./00321-HuntNight1.mws.yaml
   snapshot: true

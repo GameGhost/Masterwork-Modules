@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Creature2'
-# ../en-US.restext:358 | "The Creature Re emerges"
+# ../en-US.restext:359 | "The Creature Re emerges"
 title: 'restext://Title_TheCreatureReemerges'
 # ../en-US.restext:344 | "Middle Years"
 subtitle: 'restext://Title_MiddleYears'
@@ -29,7 +29,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:19207
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:367 | "Accept"
+    # ../en-US.restext:368 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:19211
@@ -45,23 +45,23 @@ nodes:
         nodes:
         # ../.source/FearoftheUnknown_Eng_v15.cs:19215
         - type: 'text'
-          # ../en-US.restext:1478 | "Turn to page 6 of the Vil..."
+          # ../en-US.restext:1479 | "Turn to page 6 of the Vil..."
           value: 'restext://Creature2_001'
       - match: 'blacksmith'
         nodes:
         # ../.source/FearoftheUnknown_Eng_v15.cs:19219
         - type: 'text'
-          # ../en-US.restext:1479 | "Turn to page 7 of the Vil..."
+          # ../en-US.restext:1480 | "Turn to page 7 of the Vil..."
           value: 'restext://Creature2_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:19227
 - type: 'section'
-  # ../en-US.restext:213 | "{icon:storybooktoken} **A..."
+  # ../en-US.restext:214 | "{icon:storybooktoken} **A..."
   title: 'restext://Heading_StorybookToken_Asylum'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:19237
   - type: 'text'
-    # ../en-US.restext:135 | "Visiting the Asylum allow..."
+    # ../en-US.restext:140 | "Visiting the Asylum allow..."
     value: 'restext://Directive_VisitAsylumLose1Insanity_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:19249
   - type: 'link'
@@ -74,13 +74,13 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:19255
 - type: 'section'
-  # ../en-US.restext:216 | "{icon:storybooktoken} **B..."
+  # ../en-US.restext:217 | "{icon:storybooktoken} **B..."
   title: 'restext://Heading_StorybookToken_BusinessMeeting'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:19265
   - type: 'text'
-    # ../en-US.restext:137 | "Visiting the **House on t..."
+    # ../en-US.restext:142 | "Visiting the **House on t..."
     value: 'restext://Directive_VisitHouseOnHillGain2_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:19282
   - type: 'link'
@@ -93,20 +93,20 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:19289
 - type: 'section'
-  # ../en-US.restext:217 | "{icon:storybooktoken} **C..."
+  # ../en-US.restext:218 | "{icon:storybooktoken} **C..."
   title: 'restext://Heading_StorybookToken_CreaturesRequests'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:19300
   - type: 'text'
-    # ../en-US.restext:115 | "When taking the **Perform..."
+    # ../en-US.restext:120 | "When taking the **Perform..."
     value: 'restext://Directive_PuppyBrideExperimentsAvailable'
   # ../.source/FearoftheUnknown_Eng_v15.cs:19324
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:19326
   - type: 'text'
-    # ../en-US.restext:80 | "When a player completes o..."
+    # ../en-US.restext:85 | "When a player completes o..."
     value: 'restext://Directive_CompletesMonsterExperiment_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:19327
   - type: 'link'
@@ -131,7 +131,7 @@ nodes:
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:19342
   - type: 'text'
-    # ../en-US.restext:79 | " for an explanation of th..."
+    # ../en-US.restext:84 | " for an explanation of th..."
     value: 'restext://Directive_ChurchExplanation_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:19345
 - type: 'break'
@@ -146,7 +146,7 @@ nodes:
     # ../en-US.restext:34 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_MoveNextRound'
     target: 'S4Asylum' # ./00021-S4Asylum.mws.yaml
-    # ../en-US.restext:372 | "End of Round"
+    # ../en-US.restext:373 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'

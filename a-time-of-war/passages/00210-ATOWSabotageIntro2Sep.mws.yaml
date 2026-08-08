@@ -6,7 +6,7 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:21757
 - type: 'text'
-  # ../en-US.restext:241 | "**Carefully hand this Sto..."
+  # ../en-US.restext:243 | "**Carefully hand this Sto..."
   value: 'restext://Storybook_HandDeviceToFigureHolder'
 # ../.source/ATimeofWar_Eng_v8.cs:21762
 - type: 'break'
@@ -16,13 +16,13 @@ nodes:
   # ../en-US.restext:40 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:285 | "Close"
+  # ../en-US.restext:287 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:21793
   - type: 'text'
-    # ../en-US.restext:121 | "**A Time for Sabotage**"
+    # ../en-US.restext:122 | "**A Time for Sabotage**"
     value: 'restext://Heading_ATimeForSabotage'
   # ../.source/ATimeofWar_Eng_v8.cs:21795
   - type: 'break'
@@ -42,7 +42,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:21809
   - type: 'text'
-    # ../en-US.restext:137 | "**The decision was clear ..."
+    # ../en-US.restext:138 | "**The decision was clear ..."
     value: 'restext://Heading_DecisionWasClear'
   # ../.source/ATimeofWar_Eng_v8.cs:21811
   - type: 'break'
@@ -56,11 +56,11 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:21775
     - type: 'assign'
       var: 'bldg2'
-      # ../en-US.restext:269 | "Outpost"
+      # ../en-US.restext:271 | "Outpost"
       expr: '"restext://Title_Outpost"'
     # ../.source/ATimeofWar_Eng_v8.cs:21776
     - type: 'conditional'
-      # ../en-US.restext:249 | "Barracks"
+      # ../en-US.restext:251 | "Barracks"
       if: 'bldg1 == "restext://Title_Barracks"'
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:21778

@@ -2,27 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: 'BusThanks'
-# ../en-US.restext:1444 | "Thanks Are In Order"
+# ../en-US.restext:1445 | "Thanks Are In Order"
 title: 'restext://BusThanks_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:18799
 - type: 'text'
-  # ../en-US.restext:167 | "**Journal Entry of {busm}..."
+  # ../en-US.restext:170 | "**Journal Entry of {busm}..."
   value: 'restext://Heading_JournalEntryOfBusm_Cont'
 # ../.source/FearoftheUnknown_Eng_v15.cs:18808
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:18810
 - type: 'text'
-  # ../en-US.restext:1445 | "The old man stood abruptl..."
+  # ../en-US.restext:1446 | "The old man stood abruptl..."
   value: 'restext://BusThanks_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:18812
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:18814
 - type: 'text'
-  # ../en-US.restext:1446 | "\"Thank you for your cont..."
+  # ../en-US.restext:1447 | "\"Thank you for your cont..."
   value: 'restext://BusThanks_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:18815
 - type: 'conditional'
@@ -30,26 +30,26 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:18817
   - type: 'text'
-    # ../en-US.restext:1449 | "Now, if you'll excuse me,..."
+    # ../en-US.restext:1450 | "Now, if you'll excuse me,..."
     value: 'restext://BusThanks_006'
   # ../.source/FearoftheUnknown_Eng_v15.cs:18819
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:18821
   - type: 'text'
-    # ../en-US.restext:1450 | "I was offered a pastry an..."
+    # ../en-US.restext:1451 | "I was offered a pastry an..."
     value: 'restext://BusThanks_007'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:18825
   - type: 'text'
-    # ../en-US.restext:1447 | "But, if you'll indulge me..."
+    # ../en-US.restext:1448 | "But, if you'll indulge me..."
     value: 'restext://BusThanks_004'
   # ../.source/FearoftheUnknown_Eng_v15.cs:18826
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:18828
   - type: 'text'
-    # ../en-US.restext:1448 | "The old man then smiled i..."
+    # ../en-US.restext:1449 | "The old man then smiled i..."
     value: 'restext://BusThanks_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:18832
 - type: 'assign'
@@ -69,7 +69,7 @@ nodes:
       # ../en-US.restext:29 | "Click to continue..."
       label: 'restext://Click_ContinueEllipsis_C'
       target: '${curecount == "" || curecount == 0 ? "CountCureQuestion" : round == 8 ? "Creature2" : "Creature3"}' # ./00253-CountCureQuestion.mws.yaml, ./00158-Creature2.mws.yaml, ./00045-Creature3.mws.yaml
-      # ../en-US.restext:368 | "Close"
+      # ../en-US.restext:369 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
       header:
@@ -80,7 +80,7 @@ nodes:
       content:
       # ../.source/FearoftheUnknown_Eng_v15.cs:18881
       - type: 'text'
-        # ../en-US.restext:1451 | "Immediately gain the **Ba..."
+        # ../en-US.restext:1452 | "Immediately gain the **Ba..."
         value: 'restext://BusThanks_008'
       # ../.source/FearoftheUnknown_Eng_v15.cs:18887
       - type: 'break'
@@ -95,7 +95,7 @@ nodes:
           expr: 'rand_between(2, 3, "BusThanks_0")'
         # ../.source/FearoftheUnknown_Eng_v15.cs:18893
         - type: 'text'
-          # ../en-US.restext:1452 | "**Immediately gain {_rnd_..."
+          # ../en-US.restext:1453 | "**Immediately gain {_rnd_..."
           value: 'restext://BusThanks_009'
           lets:
           - '_rnd_BusThanks_0'
@@ -107,7 +107,7 @@ nodes:
       # ../en-US.restext:29 | "Click to continue..."
       label: 'restext://Click_ContinueEllipsis_C'
       target: '${!curecount ? "CountCureQuestion" : round == 8 ? "Creature2" : "Creature3"}' # ./00253-CountCureQuestion.mws.yaml, ./00158-Creature2.mws.yaml, ./00045-Creature3.mws.yaml
-      # ../en-US.restext:368 | "Close"
+      # ../en-US.restext:369 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
       header:
@@ -122,7 +122,7 @@ nodes:
         expr: 'rand_between(2, 3, "BusThanks_1")'
       # ../.source/FearoftheUnknown_Eng_v15.cs:18923
       - type: 'text'
-        # ../en-US.restext:1452 | "**Immediately gain {_rnd_..."
+        # ../en-US.restext:1453 | "**Immediately gain {_rnd_..."
         value: 'restext://BusThanks_009'
         lets:
         - '_rnd_BusThanks_0'

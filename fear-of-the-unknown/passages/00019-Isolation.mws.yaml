@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Isolation'
-# ../en-US.restext:365 | "Walled City"
+# ../en-US.restext:366 | "Walled City"
 title: 'restext://Title_WalledCity'
 # ../en-US.restext:333 | "Early Years"
 subtitle: 'restext://Title_EarlyYears'
@@ -21,7 +21,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3728
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:367 | "Accept"
+    # ../en-US.restext:368 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:3732
@@ -41,13 +41,10 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:3752
       - type: 'text'
-        # ../en-US.restext:69 | "Then, since this is a 3 p..."
+        # ../en-US.restext:74 | "Then, since this is a 3 p..."
         value: 'restext://Directive_3Player_PassMarker_A'
       # ../.source/FearoftheUnknown_Eng_v15.cs:3753
       - type: 'break'
-# ../.source/FearoftheUnknown_Eng_v15.cs:3757
-- type: 'break'
-  style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3761
 - type: 'section'
   # ../en-US.restext:545 | "**Rising Prices**"
@@ -63,7 +60,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3788
 - type: 'section'
-  # ../en-US.restext:229 | "{icon:storybooktoken} **V..."
+  # ../en-US.restext:230 | "{icon:storybooktoken} **V..."
   title: 'restext://Heading_StorybookToken_VerificationOfIdentity'
   style: 'hub-card'
   content:
@@ -76,7 +73,7 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3803
   - type: 'text'
-    # ../en-US.restext:104 | "You MUST place your **Sel..."
+    # ../en-US.restext:109 | "You MUST place your **Sel..."
     value: 'restext://Directive_MustPlaceSelfTownHall_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3810
   - type: 'link'
@@ -89,7 +86,7 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3815
   - type: 'text'
-    # ../en-US.restext:105 | "_(If you have not verifie..."
+    # ../en-US.restext:110 | "_(If you have not verifie..."
     value: 'restext://Directive_NotVerifiedLose4VP'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3823
 - type: 'break'
@@ -108,7 +105,7 @@ nodes:
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:3836
   - type: 'text'
-    # ../en-US.restext:79 | " for an explanation of th..."
+    # ../en-US.restext:84 | " for an explanation of th..."
     value: 'restext://Directive_ChurchExplanation_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3838
   - type: 'break'
@@ -119,7 +116,7 @@ nodes:
     # ../en-US.restext:35 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
     target: 'Caravancheck' # ./00105-Caravancheck.mws.yaml
-    # ../en-US.restext:372 | "End of Round"
+    # ../en-US.restext:373 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'

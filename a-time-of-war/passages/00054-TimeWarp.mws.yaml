@@ -2,17 +2,17 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TimeWarp'
-# ../en-US.restext:281 | "Time Shifts"
+# ../en-US.restext:283 | "Time Shifts"
 title: 'restext://Title_TimeShifts'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:6967
 - type: 'let'
   var: '_rnd_TimeWarp_0'
-  # ../en-US.restext:669 | TimeWarp_002 | "I could see a rift - a sh..."
-  # ../en-US.restext:670 | TimeWarp_003 | "After conducting my busin..."
-  # ../en-US.restext:671 | TimeWarp_004 | "A bolt of lightning carve..."
-  # ../en-US.restext:672 | TimeWarp_005 | "My stomach fell. A lump c..."
+  # ../en-US.restext:670 | TimeWarp_002 | "I could see a rift - a sh..."
+  # ../en-US.restext:671 | TimeWarp_003 | "After conducting my busin..."
+  # ../en-US.restext:672 | TimeWarp_004 | "A bolt of lightning carve..."
+  # ../en-US.restext:673 | TimeWarp_005 | "My stomach fell. A lump c..."
   expr: '["restext://TimeWarp_002", "restext://TimeWarp_003", "restext://TimeWarp_004", "restext://TimeWarp_005"].shuffled("TimeWarp_0")[0]'
 # ../.source/ATimeofWar_Eng_v8.cs:6967
 - type: 'text'
@@ -72,7 +72,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:7001
 - type: 'text'
-  # ../en-US.restext:207 | "The sky cast a crimson gl..."
+  # ../en-US.restext:209 | "The sky cast a crimson gl..."
   value: 'restext://Narrative_SkyCrimsonGlowEstate'
 # ../.source/ATimeofWar_Eng_v8.cs:7003
 - type: 'break'
@@ -83,7 +83,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${search >= total ? "WarningEvent2" : round == 14 ? "Warning2" : "Warning3"}' # ./00057-WarningEvent2.mws.yaml, ./00056-Warning2.mws.yaml, ./00059-Warning3.mws.yaml
-  # ../en-US.restext:285 | "Close"
+  # ../en-US.restext:287 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -101,7 +101,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:7064
   - type: 'text'
-    # ../en-US.restext:673 | "**Lost in Time** - All pl..."
+    # ../en-US.restext:674 | "**Lost in Time** - All pl..."
     value: 'restext://TimeWarp_007'
   # ../.source/ATimeofWar_Eng_v8.cs:7074
   - type: 'let'
@@ -112,7 +112,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:7070
   - type: 'text'
-    # ../en-US.restext:674 | "The player who took the a..."
+    # ../en-US.restext:675 | "The player who took the a..."
     value: 'restext://TimeWarp_008'
     lets:
     - '_rnd_TimeWarp_0'

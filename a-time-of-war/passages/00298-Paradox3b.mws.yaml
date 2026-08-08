@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Paradox3b'
-# ../en-US.restext:255 | "Forward to Progress"
+# ../en-US.restext:257 | "Forward to Progress"
 title: 'restext://Title_ForwardToProgress'
-# ../en-US.restext:260 | "Late Years"
+# ../en-US.restext:262 | "Late Years"
 subtitle: 'restext://Title_LateYears'
 tags:
 - 'revised'
@@ -21,31 +21,31 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:27284
   - type: 'section'
-    # ../en-US.restext:160 | "**Science At any Cost**"
+    # ../en-US.restext:161 | "**Science At any Cost**"
     title: 'restext://Heading_ScienceAtAnyCost'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:27292
     - type: 'text'
-      # ../en-US.restext:81 | "Ignore any {icon:angrymob..."
+      # ../en-US.restext:82 | "Ignore any {icon:angrymob..."
       value: 'restext://Directive_IgnoreMobIconsFigureTokenStays_Fragment'
     # ../.source/ATimeofWar_Eng_v8.cs:27305
     - type: 'switch'
       on: 'warwinner'
       cases:
-      # ../en-US.restext:282 | "Unified Monarchists"
+      # ../en-US.restext:284 | "Unified Monarchists"
       - match: 'restext://Title_UnifiedMonarchists'
         nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:27307
         - type: 'text'
-          # ../en-US.restext:228 | "**they may immediately bu..."
+          # ../en-US.restext:230 | "**they may immediately bu..."
           value: 'restext://Reward_MayBuildVanityEstateUpgrade'
-      # ../en-US.restext:272 | "Separatists"
+      # ../en-US.restext:274 | "Separatists"
       - match: 'restext://Title_Separatists'
         nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:27311
         - type: 'text'
-          # ../en-US.restext:229 | "**they may immediately ta..."
+          # ../en-US.restext:231 | "**they may immediately ta..."
           value: 'restext://Reward_MayTakePerformExperimentAction'
     # ../.source/ATimeofWar_Eng_v8.cs:27314
     - type: 'text'
@@ -55,20 +55,20 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:27320
   - type: 'section'
-    # ../en-US.restext:184 | "**Utopian Experiments**"
+    # ../en-US.restext:186 | "**Utopian Experiments**"
     title: 'restext://Heading_UtopianExperiments'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:27328
     - type: 'text'
-      # ../en-US.restext:86 | "A new set of Experiments ..."
+      # ../en-US.restext:87 | "A new set of Experiments ..."
       value: 'restext://Directive_NewExperimentsAvailable_Any'
   # ../.source/ATimeofWar_Eng_v8.cs:27331
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:27335
   - type: 'section'
-    # ../en-US.restext:142 | "**In Memoriam**"
+    # ../en-US.restext:143 | "**In Memoriam**"
     title: 'restext://Heading_InMemoriam'
     style: 'hub-card'
     content:
@@ -92,26 +92,26 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:27374
   - type: 'section'
-    # ../en-US.restext:179 | "**Technician**"
+    # ../en-US.restext:181 | "**Technician**"
     title: 'restext://Heading_Technician'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:27382
     - type: 'text'
-      # ../en-US.restext:113 | "When visiting the **Techn..."
+      # ../en-US.restext:114 | "When visiting the **Techn..."
       value: 'restext://Directive_VisitTechnicianTradeIngredient'
   # ../.source/ATimeofWar_Eng_v8.cs:27394
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:27398
   - type: 'section'
-    # ../en-US.restext:184 | "**Utopian Experiments**"
+    # ../en-US.restext:186 | "**Utopian Experiments**"
     title: 'restext://Heading_UtopianExperiments'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:27406
     - type: 'text'
-      # ../en-US.restext:86 | "A new set of Experiments ..."
+      # ../en-US.restext:87 | "A new set of Experiments ..."
       value: 'restext://Directive_NewExperimentsAvailable_Any'
   # ../.source/ATimeofWar_Eng_v8.cs:27409
   - type: 'break'
@@ -124,7 +124,7 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:27422
     - type: 'text'
-      # ../en-US.restext:112 | "When you visit this locat..."
+      # ../en-US.restext:113 | "When you visit this locat..."
       value: 'restext://Directive_VisitPay1GainCaretaker_Fragment'
     # ../.source/ATimeofWar_Eng_v8.cs:27423
     - type: 'link'
@@ -137,13 +137,13 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:27429
   - type: 'section'
-    # ../en-US.restext:142 | "**In Memoriam**"
+    # ../en-US.restext:143 | "**In Memoriam**"
     title: 'restext://Heading_InMemoriam'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:27437
     - type: 'text'
-      # ../en-US.restext:198 | "With our brand of ethical..."
+      # ../en-US.restext:200 | "With our brand of ethical..."
       value: 'restext://Narrative_EthicallyDubiousScienceMemorial'
     # ../.source/ATimeofWar_Eng_v8.cs:27439
     - type: 'conditional'
@@ -151,16 +151,16 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:27443
       - type: 'text'
-        # ../en-US.restext:155 | "**The player who has move..."
+        # ../en-US.restext:156 | "**The player who has move..."
         value: 'restext://Heading_PlayerFurthestOnInsanityTrack'
       else:
       # ../.source/ATimeofWar_Eng_v8.cs:27452
       - type: 'text'
-        # ../en-US.restext:156 | "**The player with the mos..."
+        # ../en-US.restext:157 | "**The player with the mos..."
         value: 'restext://Heading_PlayerMostUtopianExperiments'
     # ../.source/ATimeofWar_Eng_v8.cs:27455
     - type: 'text'
-      # ../en-US.restext:225 | " at the end of the Genera..."
+      # ../en-US.restext:227 | " at the end of the Genera..."
       value: 'restext://Reward_EndGenerationGainTile_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:27463
   - type: 'break'

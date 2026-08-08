@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'BlameResolve'
-# ../en-US.restext:861 | "Determined Resolution"
+# ../en-US.restext:862 | "Determined Resolution"
 title: 'restext://BlameResolve_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:11014
 - type: 'text'
-  # ../en-US.restext:57 | "**All players may again v..."
+  # ../en-US.restext:58 | "**All players may again v..."
   value: 'restext://Directive_AllPlayersMayViewStorybookAgain'
 # ../.source/ATimeofWar_Eng_v8.cs:11016
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:11018
 - type: 'text'
-  # ../en-US.restext:862 | "Weeks hence, we shared th..."
+  # ../en-US.restext:863 | "Weeks hence, we shared th..."
   value: 'restext://BlameResolve_002'
 # ../.source/ATimeofWar_Eng_v8.cs:11019
 - type: 'break'
@@ -31,7 +31,7 @@ nodes:
       # ../en-US.restext:28 | "Click to continue..."
       label: 'restext://Click_ContinueEllipsis_C'
       target: '${pl1 > pl2 && pl1 > pl3 && pl1 > pl4 && pl1 > pl5 ? "BlameOut1" : pl2 > pl1 && pl2 > pl3 && pl2 > pl4 && pl2 > pl5 ? "BlameOut1" : pl3 > pl1 && pl3 > pl2 && pl3 > pl4 && pl3 > pl5 ? "BlameOut1" : pl4 > pl1 && pl4 > pl2 && pl4 > pl3 && pl4 > pl5 ? "BlameOut1" : pl5 > pl1 && pl5 > pl2 && pl5 > pl3 && pl5 > pl4 ? "BlameOut1" : pl1 + pl2 + pl3 + pl4 + pl5 == 0 ? "TimeTravel3" : "BlameOut2"}' # ./00079-BlameOut1.mws.yaml, ./00018-TimeTravel3.mws.yaml, ./00080-BlameOut2.mws.yaml
-      # ../en-US.restext:285 | "Close"
+      # ../en-US.restext:287 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
       header:
@@ -109,7 +109,7 @@ nodes:
       - type: 'break'
       # ../.source/ATimeofWar_Eng_v8.cs:11139
       - type: 'text'
-        # ../en-US.restext:863 | "The player who chose to p..."
+        # ../en-US.restext:864 | "The player who chose to p..."
         value: 'restext://BlameResolve_003'
   - if: 'buy > 1'
     then:
@@ -119,7 +119,7 @@ nodes:
       # ../en-US.restext:28 | "Click to continue..."
       label: 'restext://Click_ContinueEllipsis_C'
       target: '${pl1 > pl2 && pl1 > pl3 && pl1 > pl4 && pl1 > pl5 ? "BlameOut1" : pl2 > pl1 && pl2 > pl3 && pl2 > pl4 && pl2 > pl5 ? "BlameOut1" : pl3 > pl1 && pl3 > pl2 && pl3 > pl4 && pl3 > pl5 ? "BlameOut1" : pl4 > pl1 && pl4 > pl2 && pl4 > pl3 && pl4 > pl5 ? "BlameOut1" : pl5 > pl1 && pl5 > pl2 && pl5 > pl3 && pl5 > pl4 ? "BlameOut1" : pl1 + pl2 + pl3 + pl4 + pl5 == 0 ? "TimeTravel3" : "BlameOut2"}' # ./00079-BlameOut1.mws.yaml, ./00018-TimeTravel3.mws.yaml, ./00080-BlameOut2.mws.yaml
-      # ../en-US.restext:285 | "Close"
+      # ../en-US.restext:287 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
       header:
@@ -197,7 +197,7 @@ nodes:
       - type: 'break'
       # ../.source/ATimeofWar_Eng_v8.cs:11211
       - type: 'text'
-        # ../en-US.restext:864 | "Any player who chose to p..."
+        # ../en-US.restext:865 | "Any player who chose to p..."
         value: 'restext://BlameResolve_004'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:11038

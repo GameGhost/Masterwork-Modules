@@ -2,19 +2,19 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S4CompareTotals'
-# ../en-US.restext:1436 | "Total Contributions"
+# ../en-US.restext:1437 | "Total Contributions"
 title: 'restext://S4CompareTotals_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:18739
 - type: 'text'
-  # ../en-US.restext:1437 | "The Asylum received a tot..."
+  # ../en-US.restext:1438 | "The Asylum received a tot..."
   value: 'restext://S4CompareTotals_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:18747
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:18748
 - type: 'text'
-  # ../en-US.restext:1438 | "The Count received a tota..."
+  # ../en-US.restext:1439 | "The Count received a tota..."
   value: 'restext://S4CompareTotals_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:18756
 - type: 'break'
@@ -30,7 +30,7 @@ nodes:
       expr: 'asylumcount + 1'
     # ../.source/FearoftheUnknown_Eng_v15.cs:18761
     - type: 'text'
-      # ../en-US.restext:1440 | "The funds offered were eq..."
+      # ../en-US.restext:1441 | "The funds offered were eq..."
       value: 'restext://S4CompareTotals_005'
   - if: 'businesscount > asylumcount'
     then:
@@ -40,7 +40,7 @@ nodes:
       expr: '2'
     # ../.source/FearoftheUnknown_Eng_v15.cs:18766
     - type: 'text'
-      # ../en-US.restext:1441 | "The Count will be pleased."
+      # ../en-US.restext:1442 | "The Count will be pleased."
       value: 'restext://S4CompareTotals_006'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:18770
@@ -49,7 +49,7 @@ nodes:
     expr: '1'
   # ../.source/FearoftheUnknown_Eng_v15.cs:18771
   - type: 'text'
-    # ../en-US.restext:1439 | "Hopefully this support wi..."
+    # ../en-US.restext:1440 | "Hopefully this support wi..."
     value: 'restext://S4CompareTotals_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:18773
 - type: 'break'

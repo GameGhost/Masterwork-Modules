@@ -2,15 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'AsylumQuestion4'
-# ../en-US.restext:2785 | "Do you have difficulty re..."
-title: 'restext://AsylumQuestion4_001'
 tags:
 - 'revised'
 layout: 'narration'
 nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:36900
+- type: 'text'
+  # ../en-US.restext:2783 | "**Do you have difficulty ..."
+  value: 'restext://AsylumQuestion4_001'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36902
+- type: 'break'
+  style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36905
 - type: 'link'
-  # ../en-US.restext:2786 | "They are all imbeciles!"
+  # ../en-US.restext:2784 | "They are all imbeciles!"
   label: 'restext://AsylumQuestion4_002'
   target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
   snapshot: true
@@ -28,7 +33,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36909
 - type: 'link'
-  # ../en-US.restext:2787 | "Occasionally."
+  # ../en-US.restext:2785 | "Occasionally."
   label: 'restext://AsylumQuestion4_003'
   target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
   snapshot: true
@@ -42,7 +47,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36913
 - type: 'link'
-  # ../en-US.restext:2788 | "No one would dare questio..."
+  # ../en-US.restext:2786 | "No one would dare questio..."
   label: 'restext://AsylumQuestion4_004'
   target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
   snapshot: true

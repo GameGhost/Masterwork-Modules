@@ -29,13 +29,13 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6152
 - type: 'section'
-  # ../en-US.restext:225 | "{icon:storybooktoken} **R..."
+  # ../en-US.restext:226 | "{icon:storybooktoken} **R..."
   title: 'restext://Heading_StorybookToken_RumorMill'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6163
   - type: 'text'
-    # ../en-US.restext:136 | "When you visit the Church, "
+    # ../en-US.restext:141 | "When you visit the Church, "
     value: 'restext://Directive_VisitChurch_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6164
   - type: 'link'
@@ -52,13 +52,13 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6173
 - type: 'section'
-  # ../en-US.restext:228 | "{icon:storybooktoken} **T..."
+  # ../en-US.restext:229 | "{icon:storybooktoken} **T..."
   title: 'restext://Heading_StorybookToken_TownStrength'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6185
   - type: 'text'
-    # ../en-US.restext:103 | "Players may visit the Tow..."
+    # ../en-US.restext:108 | "Players may visit the Tow..."
     value: 'restext://Directive_MemorialBrickPurchase_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6195
   - type: 'link'
@@ -71,7 +71,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6202
 - type: 'section'
-  # ../en-US.restext:176 | "**Key to the City**"
+  # ../en-US.restext:179 | "**Key to the City**"
   title: 'restext://Heading_KeyToTheCity'
   style: 'hub-card'
   content:
@@ -92,7 +92,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6234
 - type: 'section'
-  # ../en-US.restext:207 | "**Second Round Event - Ac..."
+  # ../en-US.restext:208 | "**Second Round Event - Ac..."
   title: 'restext://Heading_SecondRoundEvent_Accusations'
   style: 'hub-card'
   content:
@@ -109,13 +109,13 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6260
   - type: 'section'
-    # ../en-US.restext:223 | "{icon:storybooktoken} **P..."
+    # ../en-US.restext:224 | "{icon:storybooktoken} **P..."
     title: 'restext://Heading_StorybookToken_PressingForward'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6270
     - type: 'text'
-      # ../en-US.restext:101 | "If a player reaches 35VP, "
+      # ../en-US.restext:106 | "If a player reaches 35VP, "
       value: 'restext://Directive_IfPlayerReaches35VP_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:6272
     - type: 'conditional'
@@ -145,7 +145,7 @@ nodes:
     # ../en-US.restext:715 | "Click here at the end of ..."
     label: 'restext://Foreign2_004'
     target: 'Witchwolfresolution' # ./00070-Witchwolfresolution.mws.yaml
-    # ../en-US.restext:372 | "End of Round"
+    # ../en-US.restext:373 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'

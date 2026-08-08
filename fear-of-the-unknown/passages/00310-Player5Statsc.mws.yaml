@@ -2,6 +2,8 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Player5Statsc'
+# ../en-US.restext:64 | "Life Total Confirmed"
+title: 'restext://Common_005'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:33291
@@ -12,12 +14,12 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:90 | "Please enter the VP of yo..."
+      # ../en-US.restext:95 | "Please enter the VP of yo..."
       value: 'restext://Directive_EnterChemistryOccultVP_Life'
     - type: 'input'
       label: ''
       var: 'hitE'
-    # ../en-US.restext:370 | "Continue"
+    # ../en-US.restext:371 | "Continue"
     okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'
@@ -25,23 +27,16 @@ nodes:
       expr: 'true'
     snapshot: true
     target: 'Player5Statsc' # ./00310-Player5Statsc.mws.yaml
-# ../.source/FearoftheUnknown_Eng_v15.cs:33305
-- type: 'text'
-  # ../en-US.restext:185 | "**Life Total Confirmed**"
-  value: 'restext://Heading_LifeTotalConfirmed'
-# ../.source/FearoftheUnknown_Eng_v15.cs:33307
-- type: 'break'
-  style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33311
 - type: 'text'
-  # ../en-US.restext:2501 | "**{hitE}** is locked in a..."
+  # ../en-US.restext:2500 | "**{hitE}** is locked in a..."
   value: 'restext://Player5Statsc_001'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33315
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33317
 - type: 'text'
-  # ../en-US.restext:2502 | "{nameE}'s Warrior is buil..."
+  # ../en-US.restext:2501 | "{nameE}'s Warrior is buil..."
   value: 'restext://Player5Statsc_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33320
 - type: 'break'

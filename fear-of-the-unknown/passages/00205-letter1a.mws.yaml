@@ -2,6 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'letter1a'
+title: '{_rnd_letter1a_0}'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:23192
@@ -35,17 +36,11 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:23190
 - type: 'let'
   var: '_rnd_letter1a_0'
-  # ../en-US.restext:1775 | letter1a_001 | "Letter from "
-  # ../en-US.restext:1776 | letter1a_002 | "Noted Letters - "
-  # ../en-US.restext:1777 | letter1a_003 | "Letter Excerpt from "
-  # ../en-US.restext:1778 | letter1a_004 | "Correspondence - "
+  # ../en-US.restext:1776 | letter1a_001 | "Letter from "
+  # ../en-US.restext:1777 | letter1a_002 | "Noted Letters - "
+  # ../en-US.restext:1778 | letter1a_003 | "Letter Excerpt from "
+  # ../en-US.restext:1779 | letter1a_004 | "Correspondence - "
   expr: '["restext://letter1a_001", "restext://letter1a_002", "restext://letter1a_003", "restext://letter1a_004"].shuffled("letter1a_4")[0]'
-# ../.source/FearoftheUnknown_Eng_v15.cs:23190
-- type: 'text'
-  # ../en-US.restext:1779 | "**{_rnd_letter1a_0}**"
-  value: 'restext://letter1a_005'
-  lets:
-  - '_rnd_letter1a_0'
 # ../.source/FearoftheUnknown_Eng_v15.cs:23208
 - type: 'assign'
   var: 'randomname'
@@ -201,17 +196,17 @@ nodes:
     expr: 'rand_between(912, 922, "letter1a_27")'
 - type: 'text'
   # ../en-US.restext:1780 | "**{randomname} -** _{_rnd..."
-  value: 'restext://letter1a_006'
+  value: 'restext://letter1a_005'
   lets:
   - '_rnd_letter1a_3'
 # ../.source/FearoftheUnknown_Eng_v15.cs:23302
 - type: 'let'
   var: '_rnd_letter1a_24'
   # ../en-US.restext:1781 | "Romania."
-  expr: '[" ", "restext://letter1a_007"].shuffled("letter1a_28")[0]'
+  expr: '[" ", "restext://letter1a_006"].shuffled("letter1a_28")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:23301
 - type: 'text'
   # ../en-US.restext:1782 | "_. {_rnd_letter1a_24}_"
-  value: 'restext://letter1a_008'
+  value: 'restext://letter1a_007'
   lets:
   - '_rnd_letter1a_24'

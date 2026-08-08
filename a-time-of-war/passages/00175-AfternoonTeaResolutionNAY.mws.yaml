@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'AfternoonTeaResolutionNAY'
-# ../en-US.restext:1519 | "Conspiracy Failed"
+# ../en-US.restext:1520 | "Conspiracy Failed"
 title: 'restext://AfternoonTeaResolutionNAY_001'
 layout: 'narration'
 nodes:
@@ -12,12 +12,12 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:18778
   - type: 'text'
-    # ../en-US.restext:1521 | "I could not fault my cous..."
+    # ../en-US.restext:1522 | "I could not fault my cous..."
     value: 'restext://AfternoonTeaResolutionNAY_003'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:18784
   - type: 'text'
-    # ../en-US.restext:1520 | "My altruistic nature woul..."
+    # ../en-US.restext:1521 | "My altruistic nature woul..."
     value: 'restext://AfternoonTeaResolutionNAY_002'
 # ../.source/ATimeofWar_Eng_v8.cs:18786
 - type: 'break'
@@ -28,7 +28,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'BarracksSimple2' # ./00158-BarracksSimple2.mws.yaml
-  # ../en-US.restext:285 | "Close"
+  # ../en-US.restext:287 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -43,10 +43,10 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:18810
     - type: 'text'
-      # ../en-US.restext:1523 | "All players who voted **Y..."
+      # ../en-US.restext:1524 | "All players who voted **Y..."
       value: 'restext://AfternoonTeaResolutionNAY_005'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:18832
     - type: 'text'
-      # ../en-US.restext:1522 | "The player who did not wi..."
+      # ../en-US.restext:1523 | "The player who did not wi..."
       value: 'restext://AfternoonTeaResolutionNAY_004'

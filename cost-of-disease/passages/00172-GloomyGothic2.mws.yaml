@@ -16,7 +16,7 @@ nodes:
   expr: '11'
 # ../.source/TheCostofDisease_Eng_v10.cs:19984
 - type: 'conditional'
-  # ../en-US.restext:122 | "Fraternity of Hunters"
+  # ../en-US.restext:123 | "Fraternity of Hunters"
   if: 'society == "restext://Faction_FraternityOfHunters_Plain"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:19986
@@ -26,20 +26,20 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:19990
     - type: 'section'
-      # ../en-US.restext:1530 | "**The Hunt is On**"
+      # ../en-US.restext:1536 | "**The Hunt is On**"
       title: 'restext://GloomyGothic2_004'
       style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:19998
       - type: 'text'
-        # ../en-US.restext:1531 | "At the end of this round,..."
+        # ../en-US.restext:1537 | "At the end of this round,..."
         value: 'restext://GloomyGothic2_005'
       # ../.source/TheCostofDisease_Eng_v10.cs:20007
       - type: 'break'
         style: 'paragraph'
       # ../.source/TheCostofDisease_Eng_v10.cs:20009
       - type: 'text'
-        # ../en-US.restext:1532 | "Also, the player who cont..."
+        # ../en-US.restext:1538 | "Also, the player who cont..."
         value: 'restext://GloomyGothic2_006'
       # ../.source/TheCostofDisease_Eng_v10.cs:20020
       - type: 'break'
@@ -59,49 +59,49 @@ nodes:
         snapshot: true
         content:
         - type: 'text'
-          # ../en-US.restext:309 | "The Middle Years of the T..."
+          # ../en-US.restext:310 | "The Middle Years of the T..."
           value: 'restext://Round_GenerationIII_MiddleEnded'
         - type: 'break'
           style: 'paragraph'
         - type: 'text'
-          # ../en-US.restext:313 | "Then, perform all Start o..."
+          # ../en-US.restext:314 | "Then, perform all Start o..."
           value: 'restext://Round_StartLateYears_Rule'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:20032
     - type: 'section'
-      # ../en-US.restext:177 | "**Safe and Protected**"
+      # ../en-US.restext:178 | "**Safe and Protected**"
       title: 'restext://Heading_SafeAndProtected'
       style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:20040
       - type: 'text'
-        # ../en-US.restext:1529 | "We have decided to believ..."
+        # ../en-US.restext:1535 | "We have decided to believ..."
         value: 'restext://GloomyGothic2_002'
     # ../.source/TheCostofDisease_Eng_v10.cs:20044
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:20048
     - type: 'section'
-      # ../en-US.restext:161 | "**The Hunter's Rest**"
+      # ../en-US.restext:162 | "**The Hunter's Rest**"
       title: 'restext://Heading_HuntersRest'
       style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:20056
       - type: 'text'
-        # ../en-US.restext:111 | "You may only place a Serv..."
+        # ../en-US.restext:112 | "You may only place a Serv..."
         value: 'restext://Directive_ServantOnlyBuilding_Rule'
     # ../.source/TheCostofDisease_Eng_v10.cs:20060
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:20064
     - type: 'section'
-      # ../en-US.restext:182 | "**Taxation**"
+      # ../en-US.restext:183 | "**Taxation**"
       title: 'restext://Heading_Taxation'
       style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:20072
       - type: 'text'
-        # ../en-US.restext:195 | "At the end of each round,..."
+        # ../en-US.restext:196 | "At the end of each round,..."
         value: 'restext://HuntersRest_PenaltyRule'
       # ../.source/TheCostofDisease_Eng_v10.cs:20079
       - type: 'break'
@@ -121,23 +121,23 @@ nodes:
         snapshot: true
         content:
         - type: 'text'
-          # ../en-US.restext:309 | "The Middle Years of the T..."
+          # ../en-US.restext:310 | "The Middle Years of the T..."
           value: 'restext://Round_GenerationIII_MiddleEnded'
         - type: 'break'
           style: 'paragraph'
         - type: 'text'
-          # ../en-US.restext:313 | "Then, perform all Start o..."
+          # ../en-US.restext:314 | "Then, perform all Start o..."
           value: 'restext://Round_StartLateYears_Rule'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:20093
   - type: 'section'
-    # ../en-US.restext:167 | "{icon:storybook} **Master..."
+    # ../en-US.restext:168 | "{icon:storybook} **Master..."
     title: 'restext://Heading_MasterworkCompletion'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:20102
     - type: 'text'
-      # ../en-US.restext:219 | "When a player completes t..."
+      # ../en-US.restext:220 | "When a player completes t..."
       value: 'restext://Masterwork_CompleteLead'
     # ../.source/TheCostofDisease_Eng_v10.cs:20103
     - type: 'link'
@@ -150,26 +150,26 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:20109
   - type: 'section'
-    # ../en-US.restext:170 | "**MONSTER SPAWN**"
+    # ../en-US.restext:171 | "**MONSTER SPAWN**"
     title: 'restext://Heading_MonsterSpawn'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:20117
     - type: 'text'
-      # ../en-US.restext:277 | "The Town Hall of the vill..."
+      # ../en-US.restext:278 | "The Town Hall of the vill..."
       value: 'restext://Narrative_MonsterSpawn_Flavor'
   # ../.source/TheCostofDisease_Eng_v10.cs:20125
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:20129
   - type: 'section'
-    # ../en-US.restext:159 | "**A Gift of Spawning**"
+    # ../en-US.restext:160 | "**A Gift of Spawning**"
     title: 'restext://Heading_GiftOfSpawning'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:20137
     - type: 'text'
-      # ../en-US.restext:304 | "At the end of the Generat..."
+      # ../en-US.restext:305 | "At the end of the Generat..."
       value: 'restext://Reward_MostOccultExperiments_SpawningPods'
     # ../.source/TheCostofDisease_Eng_v10.cs:20148
     - type: 'break'
@@ -189,10 +189,10 @@ nodes:
       snapshot: true
       content:
       - type: 'text'
-        # ../en-US.restext:309 | "The Middle Years of the T..."
+        # ../en-US.restext:310 | "The Middle Years of the T..."
         value: 'restext://Round_GenerationIII_MiddleEnded'
       - type: 'break'
         style: 'paragraph'
       - type: 'text'
-        # ../en-US.restext:313 | "Then, perform all Start o..."
+        # ../en-US.restext:314 | "Then, perform all Start o..."
         value: 'restext://Round_StartLateYears_Rule'

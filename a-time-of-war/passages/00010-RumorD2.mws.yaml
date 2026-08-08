@@ -6,7 +6,7 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:2274
 - type: 'text'
-  # ../en-US.restext:248 | "**Carefully pick up this ..."
+  # ../en-US.restext:250 | "**Carefully pick up this ..."
   value: 'restext://Storybook_PickUpDevicePrivate'
 # ../.source/ATimeofWar_Eng_v8.cs:2277
 - type: 'break'
@@ -16,27 +16,27 @@ nodes:
   # ../en-US.restext:40 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:285 | "Close"
+  # ../en-US.restext:287 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:2308
   - type: 'text'
-    # ../en-US.restext:379 | "No matter how I attempted..."
+    # ../en-US.restext:381 | "No matter how I attempted..."
     value: 'restext://RumorD2_001'
   # ../.source/ATimeofWar_Eng_v8.cs:2311
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:2313
   - type: 'text'
-    # ../en-US.restext:380 | "However, the moment I piv..."
+    # ../en-US.restext:382 | "However, the moment I piv..."
     value: 'restext://RumorD2_002'
   # ../.source/ATimeofWar_Eng_v8.cs:2317
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:2319
   - type: 'text'
-    # ../en-US.restext:381 | "\"Resist.\" He stated wit..."
+    # ../en-US.restext:383 | "\"Resist.\" He stated wit..."
     value: 'restext://RumorD2_003'
   # ../.source/ATimeofWar_Eng_v8.cs:2329
   - type: 'assign'
@@ -51,7 +51,7 @@ nodes:
     # ../en-US.restext:33 | "When you have finished re..."
     label: 'restext://Click_FinishedReadingContinue'
     target: '${RumorD2nextPsg}'
-    # ../en-US.restext:285 | "Close"
+    # ../en-US.restext:287 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -76,5 +76,5 @@ nodes:
         expr: '["RumorIngredient", "RumorKnowledge", "RumorPitch"].shuffled("RumorD2_0")[0]'
     # ../.source/ATimeofWar_Eng_v8.cs:2298
     - type: 'text'
-      # ../en-US.restext:382 | "Gain the {figure} token."
+      # ../en-US.restext:384 | "Gain the {figure} token."
       value: 'restext://RumorD2_005'

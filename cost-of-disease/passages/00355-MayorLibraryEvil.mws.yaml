@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'MayorLibraryEvil'
-# ../en-US.restext:2820 | "Detestable Education"
+# ../en-US.restext:2828 | "Detestable Education"
 title: 'restext://MayorLibraryEvil_001'
 tags:
 - 'revised'
@@ -10,36 +10,36 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:34874
 - type: 'conditional'
-  # ../en-US.restext:203 | "library"
+  # ../en-US.restext:204 | "library"
   if: 'building == "restext://Location_Library_Lower"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:34884
   - type: 'text'
-    # ../en-US.restext:322 | "**Carefully hand the Stor..."
-    value: 'restext://Storybook_HandToMayor'
+    # ../en-US.restext:2829 | "**Carefully hand the Stor..."
+    value: 'restext://MayorLibraryEvil_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:34889
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:34891
   - type: 'text'
-    # ../en-US.restext:2821 | "It was impossible for {ma..."
-    value: 'restext://MayorLibraryEvil_002'
+    # ../en-US.restext:2830 | "It was impossible for {ma..."
+    value: 'restext://MayorLibraryEvil_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:34898
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:34899
   - type: 'conditional'
-    # ../en-US.restext:122 | "Fraternity of Hunters"
+    # ../en-US.restext:123 | "Fraternity of Hunters"
     if: 'society == "restext://Faction_FraternityOfHunters_Plain"'
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:34901
     - type: 'text'
-      # ../en-US.restext:2823 | "For with knowledge came a..."
-      value: 'restext://MayorLibraryEvil_004'
+      # ../en-US.restext:2832 | "For with knowledge came a..."
+      value: 'restext://MayorLibraryEvil_005'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:34907
     - type: 'text'
-      # ../en-US.restext:2822 | "For with knowledge came a..."
-      value: 'restext://MayorLibraryEvil_003'
+      # ../en-US.restext:2831 | "For with knowledge came a..."
+      value: 'restext://MayorLibraryEvil_004'
   # ../.source/TheCostofDisease_Eng_v10.cs:34909
   - type: 'break'
     style: 'paragraph'
@@ -60,12 +60,12 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:34945
     - type: 'text'
-      # ../en-US.restext:2824 | "{mayor} gains 2 {icon:cre..."
-      value: 'restext://MayorLibraryEvil_005'
+      # ../en-US.restext:2833 | "{mayor} gains 2 {icon:cre..."
+      value: 'restext://MayorLibraryEvil_006'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:34919
   - type: 'conditional'
-    # ../en-US.restext:126 | "Order of St. Hubertus"
+    # ../en-US.restext:127 | "Order of St. Hubertus"
     if: 'hcount == 0 && society == "restext://Faction_OrderOfStHubertus_Plain"'
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:34921

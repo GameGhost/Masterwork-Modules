@@ -15,13 +15,10 @@ nodes:
   - type: 'text'
     # ../en-US.restext:724 | "**The Enemy of My Friend ..."
     value: 'restext://Tension2_005'
-  # ../.source/FearoftheUnknown_Eng_v15.cs:6478
-  - type: 'break'
-    style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6482
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:367 | "Accept"
+    # ../en-US.restext:368 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6486
@@ -33,15 +30,18 @@ nodes:
     - type: 'text'
       # ../en-US.restext:725 | "Turn to page **21** of th..."
       value: 'restext://Tension2_006'
+  # ../.source/FearoftheUnknown_Eng_v15.cs:6478
+  - type: 'break'
+    style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6499
   - type: 'section'
-    # ../en-US.restext:209 | "**Special Rule**"
+    # ../en-US.restext:210 | "**Special Rule**"
     title: 'restext://Heading_SpecialRule'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6507
     - type: 'text'
-      # ../en-US.restext:74 | "Visiting any Location wit..."
+      # ../en-US.restext:79 | "Visiting any Location wit..."
       value: 'restext://Directive_BlackBorderMovesMobLeft'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6511
   - type: 'break'
@@ -53,7 +53,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6522
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:367 | "Accept"
+    # ../en-US.restext:368 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6526
@@ -73,7 +73,7 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6547
     - type: 'text'
-      # ../en-US.restext:96 | "The first time any player..."
+      # ../en-US.restext:101 | "The first time any player..."
       value: 'restext://Directive_FirstTimeReachesCrossroads_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:6555
     - type: 'link'
@@ -91,20 +91,20 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6564
   - type: 'section'
-    # ../en-US.restext:196 | "**Plot Expansion**"
+    # ../en-US.restext:197 | "**Plot Expansion**"
     title: 'restext://Heading_PlotExpansion'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6573
     - type: 'text'
-      # ../en-US.restext:76 | "Bricks can now be used to..."
+      # ../en-US.restext:81 | "Bricks can now be used to..."
       value: 'restext://Directive_BricksExpandEstatePlot'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6577
   - type: 'break'
     style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6583
 - type: 'section'
-  # ../en-US.restext:193 | "**Occult Experimentation**"
+  # ../en-US.restext:194 | "**Occult Experimentation**"
   title: 'restext://Heading_OccultExperimentation'
   style: 'hub-card'
   content:
@@ -122,7 +122,7 @@ nodes:
       value: 'restext://Reward_SecondMostExperiments_WithVariant'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6609
   - type: 'text'
-    # ../en-US.restext:131 | " _Ties are broken by the ..."
+    # ../en-US.restext:136 | " _Ties are broken by the ..."
     value: 'restext://Directive_TieBreak_LowestVP_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6616
 - type: 'break'
@@ -141,7 +141,7 @@ nodes:
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:6630
   - type: 'text'
-    # ../en-US.restext:79 | " for an explanation of th..."
+    # ../en-US.restext:84 | " for an explanation of th..."
     value: 'restext://Directive_ChurchExplanation_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6635
 - type: 'assign'
@@ -157,7 +157,7 @@ nodes:
     # ../en-US.restext:35 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
     target: '${tension == "good" ? "Caravancheck" : "TenseEventBad2"}' # ./00105-Caravancheck.mws.yaml, ./00118-TenseEventBad2.mws.yaml
-    # ../en-US.restext:372 | "End of Round"
+    # ../en-US.restext:373 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'

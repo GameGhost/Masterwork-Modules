@@ -2,27 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: 'CommemorativeMAIN'
-# ../en-US.restext:1452 | "Unyielding Inspiration"
+# ../en-US.restext:1453 | "Unyielding Inspiration"
 title: 'restext://CommemorativeMAIN_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:18202
 - type: 'text'
-  # ../en-US.restext:1453 | "Although the craftmanship..."
+  # ../en-US.restext:1454 | "Although the craftmanship..."
   value: 'restext://CommemorativeMAIN_002'
 # ../.source/ATimeofWar_Eng_v8.cs:18205
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:18207
 - type: 'text'
-  # ../en-US.restext:1454 | "The picturesque monument ..."
+  # ../en-US.restext:1455 | "The picturesque monument ..."
   value: 'restext://CommemorativeMAIN_003'
 # ../.source/ATimeofWar_Eng_v8.cs:18209
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:18211
 - type: 'text'
-  # ../en-US.restext:1455 | "What an inspiration! "
+  # ../en-US.restext:1456 | "What an inspiration! "
   value: 'restext://CommemorativeMAIN_004'
 # ../.source/ATimeofWar_Eng_v8.cs:18212
 - type: 'break'
@@ -33,7 +33,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 16 ? "MonarchReign1" : round == 17 ? "MonarchReign2" : "MonarchReign3"}' # ./00043-MonarchReign1.mws.yaml, ./00068-MonarchReign2.mws.yaml, ./00069-MonarchReign3.mws.yaml
-  # ../en-US.restext:285 | "Close"
+  # ../en-US.restext:287 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -44,18 +44,18 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:18233
   - type: 'text'
-    # ../en-US.restext:1456 | "{signincomm} may perform ..."
+    # ../en-US.restext:1457 | "{signincomm} may perform ..."
     value: 'restext://CommemorativeMAIN_005'
   # ../.source/ATimeofWar_Eng_v8.cs:18242
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:18244
   - type: 'text'
-    # ../en-US.restext:1457 | "Lose 2 {icon:insanity_icon}."
+    # ../en-US.restext:1458 | "Lose 2 {icon:insanity_icon}."
     value: 'restext://CommemorativeMAIN_006'
   # ../.source/ATimeofWar_Eng_v8.cs:18247
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:18248
   - type: 'text'
-    # ../en-US.restext:1458 | "Lose 2 {icon:creepy_icon}..."
+    # ../en-US.restext:1459 | "Lose 2 {icon:creepy_icon}..."
     value: 'restext://CommemorativeMAIN_007'

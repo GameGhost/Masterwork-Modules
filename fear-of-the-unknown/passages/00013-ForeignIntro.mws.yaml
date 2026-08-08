@@ -147,13 +147,13 @@ nodes:
 - type: 'assign'
   var: 'witAI'
   # ../en-US.restext:332 | Title_Church | "Church"
-  # ../en-US.restext:363 | Title_TravelingCaravan | "Traveling Caravan"
+  # ../en-US.restext:364 | Title_TravelingCaravan | "Traveling Caravan"
   # ../en-US.restext:340 | Title_LaborersUnion | "Laborer's Union"
   expr: '["restext://Title_Church", "restext://Title_TravelingCaravan", "restext://Title_LaborersUnion"].shuffled("ForeignIntro_9")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3237
 - type: 'assign'
   var: 'witAI2'
-  # ../en-US.restext:345 | Title_Park | "Park"
+  # ../en-US.restext:346 | Title_Park | "Park"
   # ../en-US.restext:330 | Title_BuildersOffice | "Builder's Office"
   # ../en-US.restext:331 | Title_Cemetery | "Cemetery"
   expr: '["restext://Title_Park", "restext://Title_BuildersOffice", "restext://Title_Cemetery"].shuffled("ForeignIntro_10")[0]'

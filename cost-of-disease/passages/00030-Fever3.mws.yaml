@@ -31,11 +31,11 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:4109
     - type: 'text'
-      # ../en-US.restext:112 | "Turn to page "
+      # ../en-US.restext:113 | "Turn to page "
       value: 'restext://Directive_TurnToPage'
     # ../.source/TheCostofDisease_Eng_v10.cs:4110
     - type: 'conditional'
-      # ../en-US.restext:202 | "bank"
+      # ../en-US.restext:203 | "bank"
       if: 'building == "restext://Location_Bank_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:4114
@@ -56,24 +56,21 @@ nodes:
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:4129
     - type: 'conditional'
-      # ../en-US.restext:202 | "bank"
+      # ../en-US.restext:203 | "bank"
       if: 'building == "restext://Location_Bank_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:4131
       - type: 'text'
         # ../en-US.restext:606 | "{mayor} gains 1VP."
         value: 'restext://Fever3_005'
-# ../.source/TheCostofDisease_Eng_v10.cs:4136
-- type: 'break'
-  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:4138
 - type: 'conditional'
-  # ../en-US.restext:202 | "bank"
+  # ../en-US.restext:203 | "bank"
   if: 'building == "restext://Location_Bank_Lower"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:4144
   - type: 'section'
-    # ../en-US.restext:144 | "**BANK**"
+    # ../en-US.restext:145 | "**BANK**"
     title: 'restext://Heading_Bank'
     style: 'hub-card'
     content:
@@ -84,7 +81,7 @@ nodes:
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:4165
   - type: 'section'
-    # ../en-US.restext:164 | "**LIBRARY**"
+    # ../en-US.restext:165 | "**LIBRARY**"
     title: 'restext://Heading_Library'
     style: 'hub-card'
     content:
@@ -97,20 +94,20 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:4189
 - type: 'section'
-  # ../en-US.restext:146 | "**BUILD A HOSPITAL**"
+  # ../en-US.restext:147 | "**BUILD A HOSPITAL**"
   title: 'restext://Heading_BuildHospital'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:4197
   - type: 'text'
-    # ../en-US.restext:189 | "The church can no longer ..."
+    # ../en-US.restext:190 | "The church can no longer ..."
     value: 'restext://Hospital_ChurchExpansion_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:4209
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:4211
   - type: 'text'
-    # ../en-US.restext:303 | "At the end of the Generat..."
+    # ../en-US.restext:304 | "At the end of the Generat..."
     value: 'restext://Reward_MostHeartTokens_5VP'
 # ../.source/TheCostofDisease_Eng_v10.cs:4225
 - type: 'break'
@@ -121,13 +118,13 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:4231
   - type: 'section'
-    # ../en-US.restext:143 | "{icon:storybook} **Attrac..."
+    # ../en-US.restext:144 | "{icon:storybook} **Attrac..."
     title: 'restext://Heading_AttractingAttention'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:4240
     - type: 'text'
-      # ../en-US.restext:288 | "If a player reaches the *..."
+      # ../en-US.restext:289 | "If a player reaches the *..."
       value: 'restext://Resource_CreepyTrack_4thSpace_Lead'
     # ../.source/TheCostofDisease_Eng_v10.cs:4248
     - type: 'link'
@@ -144,13 +141,13 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:4257
   - type: 'section'
-    # ../en-US.restext:165 | "{icon:storybook} **The Ma..."
+    # ../en-US.restext:166 | "{icon:storybook} **The Ma..."
     title: 'restext://Heading_MarkOfGenius'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:4266
     - type: 'text'
-      # ../en-US.restext:299 | "If a player reaches the *..."
+      # ../en-US.restext:300 | "If a player reaches the *..."
       value: 'restext://Resource_InsanityTrack_3rdSpace_Lead'
     # ../.source/TheCostofDisease_Eng_v10.cs:4274
     - type: 'link'
@@ -185,5 +182,5 @@ nodes:
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:306 | "Perform any End of Round ..."
+      # ../en-US.restext:307 | "Perform any End of Round ..."
       value: 'restext://Round_EndOfRoundActions_Rule'

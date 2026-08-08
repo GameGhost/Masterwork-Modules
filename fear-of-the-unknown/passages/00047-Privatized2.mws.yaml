@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Privatized2'
-# ../en-US.restext:349 | "Private Investors"
+# ../en-US.restext:350 | "Private Investors"
 title: 'restext://Title_PrivateInvestors'
 # ../en-US.restext:344 | "Middle Years"
 subtitle: 'restext://Title_MiddleYears'
@@ -21,7 +21,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7310
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:367 | "Accept"
+    # ../en-US.restext:368 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:7314
@@ -35,26 +35,26 @@ nodes:
       value: 'restext://Privatized2_001'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7337
 - type: 'section'
-  # ../en-US.restext:163 | "**Everything You Know is ..."
+  # ../en-US.restext:166 | "**Everything You Know is ..."
   title: 'restext://Heading_EverythingYouKnowIsWrong'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7345
   - type: 'text'
-    # ../en-US.restext:78 | "You cannot place Servants..."
+    # ../en-US.restext:83 | "You cannot place Servants..."
     value: 'restext://Directive_CannotPlaceServantsUntilMobReached'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7354
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7358
 - type: 'section'
-  # ../en-US.restext:221 | "{icon:storybooktoken} **I..."
+  # ../en-US.restext:222 | "{icon:storybooktoken} **I..."
   title: 'restext://Heading_StorybookToken_ImpressingWarden'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7369
   - type: 'text'
-    # ../en-US.restext:81 | "In this town, creepy acti..."
+    # ../en-US.restext:86 | "In this town, creepy acti..."
     value: 'restext://Directive_CreepyActionsRewarded_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:7375
   - type: 'link'
@@ -77,18 +77,18 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:7392
     - type: 'text'
-      # ../en-US.restext:134 | "When a player visits this..."
+      # ../en-US.restext:139 | "When a player visits this..."
       value: 'restext://Directive_VisitActivateAsylumupAbility'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7402
   - type: 'section'
-    # ../en-US.restext:227 | "{icon:storybooktoken} **T..."
+    # ../en-US.restext:228 | "{icon:storybooktoken} **T..."
     title: 'restext://Heading_StorybookToken_TheJunkPalace'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:7411
     - type: 'text'
-      # ../en-US.restext:139 | "When a player visits the ..."
+      # ../en-US.restext:144 | "When a player visits the ..."
       value: 'restext://Directive_VisitsJunkPalace_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:7412
     - type: 'link'
@@ -101,7 +101,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7421
 - type: 'section'
-  # ../en-US.restext:214 | "{icon:storybooktoken} **B..."
+  # ../en-US.restext:215 | "{icon:storybooktoken} **B..."
   title: 'restext://Heading_StorybookToken_BloodInBattledome'
   style: 'hub-card'
   content:
@@ -149,7 +149,7 @@ nodes:
     # ../en-US.restext:34 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_MoveNextRound'
     target: 'CreaturePleased' # ./00201-CreaturePleased.mws.yaml
-    # ../en-US.restext:372 | "End of Round"
+    # ../en-US.restext:373 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'

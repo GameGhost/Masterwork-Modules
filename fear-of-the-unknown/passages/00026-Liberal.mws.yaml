@@ -17,7 +17,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:4566
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:367 | "Accept"
+    # ../en-US.restext:368 | "Accept"
     okay: 'restext://UIButton_Accept'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:4571
@@ -52,7 +52,7 @@ nodes:
           style: 'paragraph'
         # ../.source/FearoftheUnknown_Eng_v15.cs:4594
         - type: 'text'
-          # ../en-US.restext:122 | "Retrieve the Hunt tokens ..."
+          # ../en-US.restext:127 | "Retrieve the Hunt tokens ..."
           value: 'restext://Directive_RetrieveHuntTokensFaceUp'
         # ../.source/FearoftheUnknown_Eng_v15.cs:4597
         - type: 'break'
@@ -69,44 +69,44 @@ nodes:
           then:
           # ../.source/FearoftheUnknown_Eng_v15.cs:4605
           - type: 'text'
-            # ../en-US.restext:69 | "Then, since this is a 3 p..."
+            # ../en-US.restext:74 | "Then, since this is a 3 p..."
             value: 'restext://Directive_3Player_PassMarker_A'
           # ../.source/FearoftheUnknown_Eng_v15.cs:4606
           - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4613
 - type: 'section'
-  # ../en-US.restext:211 | "**Special Servant Rule**"
+  # ../en-US.restext:212 | "**Special Servant Rule**"
   title: 'restext://Heading_SpecialServantRule'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:4622
   - type: 'text'
-    # ../en-US.restext:141 | "Due to the government-fun..."
+    # ../en-US.restext:146 | "Due to the government-fun..."
     value: 'restext://Directive_WorkReintroductionServantsNotLost'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4629
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4632
 - type: 'section'
-  # ../en-US.restext:200 | "**Rehabilitation Token**"
+  # ../en-US.restext:201 | "**Rehabilitation Token**"
   title: 'restext://Heading_RehabilitationToken'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:4641
   - type: 'text'
-    # ../en-US.restext:120 | "The {icon:s2_rehabilitati..."
+    # ../en-US.restext:125 | "The {icon:s2_rehabilitati..."
     value: 'restext://Directive_RehabilitationTokenMovesLikeMob'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4650
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4654
 - type: 'section'
-  # ../en-US.restext:220 | "{icon:storybooktoken} **A..."
+  # ../en-US.restext:221 | "{icon:storybooktoken} **A..."
   title: 'restext://Heading_StorybookToken_FocusOnRehabilitation'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:4665
   - type: 'text'
-    # ../en-US.restext:132 | "When a player's token ove..."
+    # ../en-US.restext:137 | "When a player's token ove..."
     value: 'restext://Directive_TokenOverlapsRehabilitation_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:4674
   - type: 'link'
@@ -123,20 +123,20 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:4683
   - type: 'section'
-    # ../en-US.restext:226 | "{icon:storybooktoken}**Th..."
+    # ../en-US.restext:227 | "{icon:storybooktoken}**Th..."
     title: 'restext://Heading_StorybookToken_TheHuntIsOn_NoSpace'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:4693
     - type: 'text'
-      # ../en-US.restext:138 | "Any time a player visits ..."
+      # ../en-US.restext:143 | "Any time a player visits ..."
       value: 'restext://Directive_VisitLocationClaimHuntToken'
     # ../.source/FearoftheUnknown_Eng_v15.cs:4696
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:4698
     - type: 'text'
-      # ../en-US.restext:94 | "At the end of each round,..."
+      # ../en-US.restext:99 | "At the end of each round,..."
       value: 'restext://Directive_ExpeditionKillCreature_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:4705
     - type: 'link'
@@ -157,7 +157,7 @@ nodes:
     # ../en-US.restext:30 | "Click here to continue to..."
     label: 'restext://Click_ContinueNextRound'
     target: '${creature == 1 && exped == 0 ? "Expedition1" : "LiberalEvent3"}' # ./00049-Expedition1.mws.yaml, ./00258-LiberalEvent3.mws.yaml
-    # ../en-US.restext:372 | "End of Round"
+    # ../en-US.restext:373 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'

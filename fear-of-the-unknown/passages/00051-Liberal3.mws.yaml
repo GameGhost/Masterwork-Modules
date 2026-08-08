@@ -12,13 +12,13 @@ layout: 'hub_late'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:7927
 - type: 'section'
-  # ../en-US.restext:211 | "**Special Servant Rule**"
+  # ../en-US.restext:212 | "**Special Servant Rule**"
   title: 'restext://Heading_SpecialServantRule'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7936
   - type: 'text'
-    # ../en-US.restext:141 | "Due to the government-fun..."
+    # ../en-US.restext:146 | "Due to the government-fun..."
     value: 'restext://Directive_WorkReintroductionServantsNotLost'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7944
 - type: 'break'
@@ -30,20 +30,20 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7956
   - type: 'text'
-    # ../en-US.restext:120 | "The {icon:s2_rehabilitati..."
+    # ../en-US.restext:125 | "The {icon:s2_rehabilitati..."
     value: 'restext://Directive_RehabilitationTokenMovesLikeMob'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7965
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7969
 - type: 'section'
-  # ../en-US.restext:220 | "{icon:storybooktoken} **A..."
+  # ../en-US.restext:221 | "{icon:storybooktoken} **A..."
   title: 'restext://Heading_StorybookToken_FocusOnRehabilitation'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7980
   - type: 'text'
-    # ../en-US.restext:132 | "When a player's token ove..."
+    # ../en-US.restext:137 | "When a player's token ove..."
     value: 'restext://Directive_TokenOverlapsRehabilitation_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:7989
   - type: 'link'
@@ -64,13 +64,13 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:8000
     - type: 'section'
-      # ../en-US.restext:226 | "{icon:storybooktoken}**Th..."
+      # ../en-US.restext:227 | "{icon:storybooktoken}**Th..."
       title: 'restext://Heading_StorybookToken_TheHuntIsOn_NoSpace'
       style: 'hub-card'
       content:
       # ../.source/FearoftheUnknown_Eng_v15.cs:8010
       - type: 'text'
-        # ../en-US.restext:138 | "Any time a player visits ..."
+        # ../en-US.restext:143 | "Any time a player visits ..."
         value: 'restext://Directive_VisitLocationClaimHuntToken'
       # ../.source/FearoftheUnknown_Eng_v15.cs:8013
       - type: 'break'
@@ -126,7 +126,7 @@ nodes:
         # ../en-US.restext:33 | "Click here at the End of ..."
         label: 'restext://Click_EndGeneration_FinalScoringDetermineFate'
         target: 'LiberalBonus' # ./00093-LiberalBonus.mws.yaml
-        # ../en-US.restext:372 | "End of Round"
+        # ../en-US.restext:373 | "End of Round"
         okay: 'restext://UIButton_EndOfRound'
         onclose:
         - type: 'assign'
@@ -149,7 +149,7 @@ nodes:
         # ../en-US.restext:773 | "Click here at the end of ..."
         label: 'restext://Liberal3_003'
         target: 'Expedition1' # ./00049-Expedition1.mws.yaml
-        # ../en-US.restext:372 | "End of Round"
+        # ../en-US.restext:373 | "End of Round"
         okay: 'restext://UIButton_EndOfRound'
         onclose:
         - type: 'assign'
@@ -172,7 +172,7 @@ nodes:
       # ../en-US.restext:33 | "Click here at the End of ..."
       label: 'restext://Click_EndGeneration_FinalScoringDetermineFate'
       target: 'LiberalBonus' # ./00093-LiberalBonus.mws.yaml
-      # ../en-US.restext:372 | "End of Round"
+      # ../en-US.restext:373 | "End of Round"
       okay: 'restext://UIButton_EndOfRound'
       onclose:
       - type: 'assign'

@@ -2,6 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'HuntSuccessCheck'
+# ../en-US.restext:2593 | HuntSuccessCheck_001 | "A {_rnd_HuntSuccessCheck_..."
+# ../en-US.restext:2594 | HuntSuccessCheck_002 | "Overrun By {_rnd_HuntSucc..."
+title: '{huntresult == "success" ? "restext://HuntSuccessCheck_001" : "restext://HuntSuccessCheck_002"}'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:32621
@@ -33,27 +36,19 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:32638
   - type: 'let'
     var: '_rnd_HuntSuccessCheck_0'
-    # ../en-US.restext:2591 | HuntSuccessCheck_009 | "Righteous"
-    # ../en-US.restext:2592 | HuntSuccessCheck_010 | "Wondrous"
-    expr: '["restext://HuntSuccessCheck_009", "restext://HuntSuccessCheck_010"].shuffled("HuntSuccessCheck_1")[0]'
-  # ../.source/TheCostofDisease_Eng_v10.cs:32637
-  - type: 'text'
-    # ../en-US.restext:2593 | "**A {_rnd_HuntSuccessChec..."
-    value: 'restext://HuntSuccessCheck_011'
-    lets:
-    - '_rnd_HuntSuccessCheck_0'
-  # ../.source/TheCostofDisease_Eng_v10.cs:32641
-  - type: 'break'
+    # ../en-US.restext:2600 | HuntSuccessCheck_010 | "Righteous"
+    # ../en-US.restext:2601 | HuntSuccessCheck_011 | "Wondrous"
+    expr: '["restext://HuntSuccessCheck_010", "restext://HuntSuccessCheck_011"].shuffled("HuntSuccessCheck_1")[0]'
   # ../.source/TheCostofDisease_Eng_v10.cs:32642
   - type: 'text'
-    # ../en-US.restext:2594 | "One by one, the steel wea..."
+    # ../en-US.restext:2602 | "One by one, the steel wea..."
     value: 'restext://HuntSuccessCheck_012'
   # ../.source/TheCostofDisease_Eng_v10.cs:32643
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:32645
   - type: 'text'
-    # ../en-US.restext:2595 | "They would remain vigilan..."
+    # ../en-US.restext:2603 | "They would remain vigilan..."
     value: 'restext://HuntSuccessCheck_013'
   # ../.source/TheCostofDisease_Eng_v10.cs:32649
   - type: 'break'
@@ -82,41 +77,33 @@ nodes:
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:32697
     - type: 'text'
-      # ../en-US.restext:2596 | "Retrieve the **Chemistry*..."
+      # ../en-US.restext:2604 | "Retrieve the **Chemistry*..."
       value: 'restext://HuntSuccessCheck_014'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:32661
   - type: 'let'
     var: '_rnd_HuntSuccessCheck_1'
-    # ../en-US.restext:2585 | HuntSuccessCheck_003 | "Demons"
-    # ../en-US.restext:2586 | HuntSuccessCheck_004 | "Monsters"
-    expr: '["restext://HuntSuccessCheck_003", "restext://HuntSuccessCheck_004"].shuffled("HuntSuccessCheck_2")[0]'
-  # ../.source/TheCostofDisease_Eng_v10.cs:32660
-  - type: 'text'
-    # ../en-US.restext:2587 | "**Overrun By {_rnd_HuntSu..."
-    value: 'restext://HuntSuccessCheck_005'
-    lets:
-    - '_rnd_HuntSuccessCheck_1'
-  # ../.source/TheCostofDisease_Eng_v10.cs:32663
-  - type: 'break'
+    # ../en-US.restext:2595 | HuntSuccessCheck_005 | "Demons"
+    # ../en-US.restext:2596 | HuntSuccessCheck_006 | "Monsters"
+    expr: '["restext://HuntSuccessCheck_005", "restext://HuntSuccessCheck_006"].shuffled("HuntSuccessCheck_2")[0]'
   # ../.source/TheCostofDisease_Eng_v10.cs:32664
   - type: 'text'
-    # ../en-US.restext:2588 | "The scud banked across th..."
-    value: 'restext://HuntSuccessCheck_006'
+    # ../en-US.restext:2597 | "The scud banked across th..."
+    value: 'restext://HuntSuccessCheck_007'
   # ../.source/TheCostofDisease_Eng_v10.cs:32666
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:32668
   - type: 'text'
-    # ../en-US.restext:2589 | "The townsfolk had placed ..."
-    value: 'restext://HuntSuccessCheck_007'
+    # ../en-US.restext:2598 | "The townsfolk had placed ..."
+    value: 'restext://HuntSuccessCheck_008'
   # ../.source/TheCostofDisease_Eng_v10.cs:32673
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:32675
   - type: 'text'
-    # ../en-US.restext:2590 | "Embittered by what had be..."
-    value: 'restext://HuntSuccessCheck_008'
+    # ../en-US.restext:2599 | "Embittered by what had be..."
+    value: 'restext://HuntSuccessCheck_009'
   # ../.source/TheCostofDisease_Eng_v10.cs:32678
   - type: 'assign'
     var: 'overrun'

@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Reign4b'
-# ../en-US.restext:276 | "Thanks Are in Order"
+# ../en-US.restext:278 | "Thanks Are in Order"
 title: 'restext://Title_ThanksAreInOrder'
 tags:
 - 'revised'
@@ -37,7 +37,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 16 ? "MonarchReign1" : round == 17 ? "MonarchReign2" : "MonarchReign3"}' # ./00043-MonarchReign1.mws.yaml, ./00068-MonarchReign2.mws.yaml, ./00069-MonarchReign3.mws.yaml
-  # ../en-US.restext:285 | "Close"
+  # ../en-US.restext:287 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -72,5 +72,5 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:28459
   - type: 'text'
-    # ../en-US.restext:67 | "_Reminder: The {icon:s3_c..."
+    # ../en-US.restext:68 | "_Reminder: The {icon:s3_c..."
     value: 'restext://Directive_CrownTokenMovementReminder'

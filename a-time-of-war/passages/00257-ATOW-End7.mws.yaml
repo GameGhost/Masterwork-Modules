@@ -68,15 +68,15 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:25448
 - type: 'let'
   var: '_rnd_ATOW_End7_0'
-  # ../en-US.restext:280 | Title_TigerLauncher | "Tiger Launcher"
-  # ../en-US.restext:270 | Title_PsychicMindbomb | "Psychic Mindbomb"
-  # ../en-US.restext:259 | Title_IrresistibleAphrodisiac | "Irresistible Aphrodisiac"
-  # ../en-US.restext:258 | Title_HelmetMountedFlamethrower | "Helmet-Mounted Flamethrower"
-  # ../en-US.restext:274 | Title_SteamGrenade | "Steam Grenade"
-  # ../en-US.restext:271 | Title_RemoteControlledPlagueRatSwarm | "Remote Controlled Plague ..."
-  # ../en-US.restext:254 | Title_FlamingPitchfork | "Flaming Pitchfork"
-  # ../en-US.restext:262 | Title_MechanizedHumanArmorSuit | "Mechanized Human Armor Suit"
-  # ../en-US.restext:251 | Title_DreamStealer | "Dream Stealer"
+  # ../en-US.restext:282 | Title_TigerLauncher | "Tiger Launcher"
+  # ../en-US.restext:272 | Title_PsychicMindbomb | "Psychic Mindbomb"
+  # ../en-US.restext:261 | Title_IrresistibleAphrodisiac | "Irresistible Aphrodisiac"
+  # ../en-US.restext:260 | Title_HelmetMountedFlamethrower | "Helmet-Mounted Flamethrower"
+  # ../en-US.restext:276 | Title_SteamGrenade | "Steam Grenade"
+  # ../en-US.restext:273 | Title_RemoteControlledPlagueRatSwarm | "Remote Controlled Plague ..."
+  # ../en-US.restext:256 | Title_FlamingPitchfork | "Flaming Pitchfork"
+  # ../en-US.restext:264 | Title_MechanizedHumanArmorSuit | "Mechanized Human Armor Suit"
+  # ../en-US.restext:253 | Title_DreamStealer | "Dream Stealer"
   expr: '["restext://Title_TigerLauncher", "restext://Title_PsychicMindbomb", "restext://Title_IrresistibleAphrodisiac", "restext://Title_HelmetMountedFlamethrower", "restext://Title_SteamGrenade", "restext://Title_RemoteControlledPlagueRatSwarm", "restext://Title_FlamingPitchfork", "restext://Title_MechanizedHumanArmorSuit", "restext://Title_DreamStealer"].shuffled("ATOW-End7_0")[0]'
 # ../.source/ATimeofWar_Eng_v8.cs:25439
 - type: 'break'
@@ -97,5 +97,5 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:25466
 - type: 'text'
-  # ../en-US.restext:180 | "THE END?"
+  # ../en-US.restext:182 | "THE END?"
   value: 'restext://Heading_TheEndQuestion'

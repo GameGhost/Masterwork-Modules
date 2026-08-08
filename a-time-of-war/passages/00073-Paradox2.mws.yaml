@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Paradox2'
-# ../en-US.restext:255 | "Forward to Progress"
+# ../en-US.restext:257 | "Forward to Progress"
 title: 'restext://Title_ForwardToProgress'
-# ../en-US.restext:263 | "Middle Years"
+# ../en-US.restext:265 | "Middle Years"
 subtitle: 'restext://Title_MiddleYears'
 tags:
 - 'HUB'
@@ -16,27 +16,27 @@ nodes:
   expr: '11'
 # ../.source/ATimeofWar_Eng_v8.cs:9835
 - type: 'section'
-  # ../en-US.restext:160 | "**Science At any Cost**"
+  # ../en-US.restext:161 | "**Science At any Cost**"
   title: 'restext://Heading_ScienceAtAnyCost'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:9843
   - type: 'text'
-    # ../en-US.restext:81 | "Ignore any {icon:angrymob..."
+    # ../en-US.restext:82 | "Ignore any {icon:angrymob..."
     value: 'restext://Directive_IgnoreMobIconsFigureTokenStays_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:9859
   - type: 'conditional'
-    # ../en-US.restext:282 | "Unified Monarchists"
+    # ../en-US.restext:284 | "Unified Monarchists"
     if: 'warwinner == "restext://Title_UnifiedMonarchists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:9861
     - type: 'text'
-      # ../en-US.restext:228 | "**they may immediately bu..."
+      # ../en-US.restext:230 | "**they may immediately bu..."
       value: 'restext://Reward_MayBuildVanityEstateUpgrade'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:9865
     - type: 'text'
-      # ../en-US.restext:229 | "**they may immediately ta..."
+      # ../en-US.restext:231 | "**they may immediately ta..."
       value: 'restext://Reward_MayTakePerformExperimentAction'
   # ../.source/ATimeofWar_Eng_v8.cs:9868
   - type: 'text'
@@ -46,39 +46,39 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:9875
 - type: 'section'
-  # ../en-US.restext:179 | "**Technician**"
+  # ../en-US.restext:181 | "**Technician**"
   title: 'restext://Heading_Technician'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:9884
   - type: 'text'
-    # ../en-US.restext:113 | "When visiting the **Techn..."
+    # ../en-US.restext:114 | "When visiting the **Techn..."
     value: 'restext://Directive_VisitTechnicianTradeIngredient'
 # ../.source/ATimeofWar_Eng_v8.cs:9897
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:9901
 - type: 'section'
-  # ../en-US.restext:184 | "**Utopian Experiments**"
+  # ../en-US.restext:186 | "**Utopian Experiments**"
   title: 'restext://Heading_UtopianExperiments'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:9909
   - type: 'text'
-    # ../en-US.restext:86 | "A new set of Experiments ..."
+    # ../en-US.restext:87 | "A new set of Experiments ..."
     value: 'restext://Directive_NewExperimentsAvailable_Any'
 # ../.source/ATimeofWar_Eng_v8.cs:9912
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:9917
 - type: 'section'
-  # ../en-US.restext:170 | "{icon:storybooktoken} **U..."
+  # ../en-US.restext:172 | "{icon:storybooktoken} **U..."
   title: 'restext://Heading_StorybookToken_University'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:9927
   - type: 'text'
-    # ../en-US.restext:112 | "When you visit this locat..."
+    # ../en-US.restext:113 | "When you visit this locat..."
     value: 'restext://Directive_VisitPay1GainCaretaker_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:9928
   - type: 'link'
@@ -91,13 +91,13 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:9934
 - type: 'section'
-  # ../en-US.restext:142 | "**In Memoriam**"
+  # ../en-US.restext:143 | "**In Memoriam**"
   title: 'restext://Heading_InMemoriam'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:9943
   - type: 'text'
-    # ../en-US.restext:198 | "With our brand of ethical..."
+    # ../en-US.restext:200 | "With our brand of ethical..."
     value: 'restext://Narrative_EthicallyDubiousScienceMemorial'
   # ../.source/ATimeofWar_Eng_v8.cs:9945
   - type: 'conditional'
@@ -105,16 +105,16 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:9949
     - type: 'text'
-      # ../en-US.restext:155 | "**The player who has move..."
+      # ../en-US.restext:156 | "**The player who has move..."
       value: 'restext://Heading_PlayerFurthestOnInsanityTrack'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:9958
     - type: 'text'
-      # ../en-US.restext:156 | "**The player with the mos..."
+      # ../en-US.restext:157 | "**The player with the mos..."
       value: 'restext://Heading_PlayerMostUtopianExperiments'
   # ../.source/ATimeofWar_Eng_v8.cs:9961
   - type: 'text'
-    # ../en-US.restext:810 | " at the end of the Genera..."
+    # ../en-US.restext:811 | " at the end of the Genera..."
     value: 'restext://Paradox2_005'
   # ../.source/ATimeofWar_Eng_v8.cs:9968
   - type: 'break'
@@ -129,7 +129,7 @@ nodes:
       # ../en-US.restext:31 | "Click here at the end of ..."
       label: 'restext://Click_EndRound_NextRound'
       target: 'ParadoxRandoEvent' # ./00224-ParadoxRandoEvent.mws.yaml
-      # ../en-US.restext:288 | "End of Round"
+      # ../en-US.restext:290 | "End of Round"
       okay: 'restext://UIButton_EndOfRound'
       onclose:
       - type: 'assign'
@@ -138,12 +138,12 @@ nodes:
       snapshot: true
       content:
       - type: 'text'
-        # ../en-US.restext:233 | "The Middle Years of the T..."
+        # ../en-US.restext:235 | "The Middle Years of the T..."
         value: 'restext://Round_GenerationIII_MiddleEnded'
       - type: 'break'
         style: 'paragraph'
       - type: 'text'
-        # ../en-US.restext:235 | "Then, perform all Start o..."
+        # ../en-US.restext:237 | "Then, perform all Start o..."
         value: 'restext://Round_StartLateYears_Rule'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:9981
@@ -152,7 +152,7 @@ nodes:
       # ../en-US.restext:31 | "Click here at the end of ..."
       label: 'restext://Click_EndRound_NextRound'
       target: 'Paradox3' # ./00075-Paradox3.mws.yaml
-      # ../en-US.restext:288 | "End of Round"
+      # ../en-US.restext:290 | "End of Round"
       okay: 'restext://UIButton_EndOfRound'
       onclose:
       - type: 'assign'
@@ -161,10 +161,10 @@ nodes:
       snapshot: true
       content:
       - type: 'text'
-        # ../en-US.restext:233 | "The Middle Years of the T..."
+        # ../en-US.restext:235 | "The Middle Years of the T..."
         value: 'restext://Round_GenerationIII_MiddleEnded'
       - type: 'break'
         style: 'paragraph'
       - type: 'text'
-        # ../en-US.restext:235 | "Then, perform all Start o..."
+        # ../en-US.restext:237 | "Then, perform all Start o..."
         value: 'restext://Round_StartLateYears_Rule'

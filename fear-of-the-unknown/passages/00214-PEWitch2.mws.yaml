@@ -2,19 +2,15 @@
 ---
 format: 'mws/0.4'
 passage_id: 'PEWitch2'
+# ../en-US.restext:1843 | PEWitch2_001 | "Progression"
+# ../en-US.restext:1844 | PEWitch2_002 | "Regression"
+title: '{path4 == "PECreature" ? "restext://PEWitch2_001" : "restext://PEWitch2_002"}'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:23973
 - type: 'conditional'
   if: 'path4 == "PECreature"'
   then:
-  # ../.source/FearoftheUnknown_Eng_v15.cs:23977
-  - type: 'text'
-    # ../en-US.restext:1846 | "**Progression**"
-    value: 'restext://PEWitch2_003'
-  # ../.source/FearoftheUnknown_Eng_v15.cs:23979
-  - type: 'break'
-    style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:23981
   - type: 'include_passage'
     target: 'letter1a' # ./00205-letter1a.mws.yaml
@@ -23,19 +19,12 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:23984
   - type: 'text'
-    # ../en-US.restext:1847 | "I find with each passing ..."
+    # ../en-US.restext:1846 | "I find with each passing ..."
     value: 'restext://PEWitch2_004'
   # ../.source/FearoftheUnknown_Eng_v15.cs:23985
   - type: 'break'
     style: 'paragraph'
   else:
-  # ../.source/FearoftheUnknown_Eng_v15.cs:23993
-  - type: 'text'
-    # ../en-US.restext:1844 | "**Regression**"
-    value: 'restext://PEWitch2_001'
-  # ../.source/FearoftheUnknown_Eng_v15.cs:23995
-  - type: 'break'
-    style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:23997
   - type: 'include_passage'
     target: 'letter1a' # ./00205-letter1a.mws.yaml
@@ -45,7 +34,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:24000
   - type: 'text'
     # ../en-US.restext:1845 | "The relapse of paranoid d..."
-    value: 'restext://PEWitch2_002'
+    value: 'restext://PEWitch2_003'
   # ../.source/FearoftheUnknown_Eng_v15.cs:24001
   - type: 'break'
     style: 'paragraph'
@@ -55,7 +44,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'PEWitch2PlayerA' # ./00354-PEWitch2PlayerA.mws.yaml
-  # ../en-US.restext:368 | "Close"
+  # ../en-US.restext:369 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -66,5 +55,5 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:24027
   - type: 'text'
-    # ../en-US.restext:1848 | "**Retrieve the Obsession ..."
+    # ../en-US.restext:1847 | "**Retrieve the Obsession ..."
     value: 'restext://PEWitch2_005'

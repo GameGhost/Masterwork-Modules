@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TowardsWar'
-# ../en-US.restext:408 | "A Town Fully Defended"
+# ../en-US.restext:410 | "A Town Fully Defended"
 title: 'restext://TowardsWar_001'
 tags:
 - 'END'
@@ -11,18 +11,18 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:2676
 - type: 'popup'
   layout: 'end_of_generation'
-  # ../en-US.restext:286 | "Confirm"
+  # ../en-US.restext:288 | "Confirm"
   okay: 'restext://UIButton_Confirm'
   content:
   - type: 'text'
-    # ../en-US.restext:409 | "Remove all player pieces ..."
+    # ../en-US.restext:411 | "Remove all player pieces ..."
     value: 'restext://TowardsWar_003'
   - type: 'let'
     var: 'generation'
     expr: '3'
 # ../.source/ATimeofWar_Eng_v8.cs:2678
 - type: 'text'
-  # ../en-US.restext:410 | "The {warwinner} have push..."
+  # ../en-US.restext:412 | "The {warwinner} have push..."
   value: 'restext://TowardsWar_004'
 # ../.source/ATimeofWar_Eng_v8.cs:2683
 - type: 'conditional'
@@ -31,27 +31,27 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:2685
     - type: 'text'
-      # ../en-US.restext:411 | "Against my wishes, the Ba..."
+      # ../en-US.restext:413 | "Against my wishes, the Ba..."
       value: 'restext://TowardsWar_005'
   - if: 'barracks == "yes"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:2693
     - type: 'text'
-      # ../en-US.restext:412 | "True to our instructions,..."
+      # ../en-US.restext:414 | "True to our instructions,..."
       value: 'restext://TowardsWar_006'
 # ../.source/ATimeofWar_Eng_v8.cs:2705
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:2707
 - type: 'text'
-  # ../en-US.restext:413 | "It is fitting that I came..."
+  # ../en-US.restext:415 | "It is fitting that I came..."
   value: 'restext://TowardsWar_007'
 # ../.source/ATimeofWar_Eng_v8.cs:2708
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:2710
 - type: 'conditional'
-  # ../en-US.restext:272 | "Separatists"
+  # ../en-US.restext:274 | "Separatists"
   if: 'warwinner == "restext://Title_Separatists"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:2712

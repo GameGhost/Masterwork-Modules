@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Start2'
-# ../en-US.restext:266 | "MY FATHER'S WORK"
+# ../en-US.restext:268 | "MY FATHER'S WORK"
 title: 'restext://Title_MyFathersWork'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:1236
 - type: 'text'
-  # ../en-US.restext:293 | "**Choose a Scenario** "
+  # ../en-US.restext:295 | "**Choose a Scenario** "
   value: 'restext://Start2_002'
 # ../.source/ATimeofWar_Eng_v8.cs:1237
 - type: 'switch'
@@ -18,32 +18,32 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:1239
     - type: 'text'
-      # ../en-US.restext:294 | "**for 2 players.**"
+      # ../en-US.restext:296 | "**for 2 players.**"
       value: 'restext://Start2_003'
   - match: 3
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:1243
     - type: 'text'
-      # ../en-US.restext:295 | "**for 3 players.**"
+      # ../en-US.restext:297 | "**for 3 players.**"
       value: 'restext://Start2_004'
   - match: 4
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:1247
     - type: 'text'
-      # ../en-US.restext:296 | "**for 4 players.**"
+      # ../en-US.restext:298 | "**for 4 players.**"
       value: 'restext://Start2_005'
   - match: 5
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:1251
     - type: 'text'
-      # ../en-US.restext:297 | "**for 5 players.**"
+      # ../en-US.restext:299 | "**for 5 players.**"
       value: 'restext://Start2_006'
 # ../.source/ATimeofWar_Eng_v8.cs:1254
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:1256
 - type: 'link'
-  # ../en-US.restext:298 | "A Time of War"
+  # ../en-US.restext:300 | "A Time of War"
   label: 'restext://Start2_007'
   target: 'ATOW-Preparations' # ./00260-ATOW-Preparations.mws.yaml
   snapshot: true
@@ -52,20 +52,20 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:1259
 - type: 'text'
-  # ../en-US.restext:299 | "Fear of the Unknown"
+  # ../en-US.restext:301 | "Fear of the Unknown"
   value: 'restext://Start2_008'
 # ../.source/ATimeofWar_Eng_v8.cs:1260
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:1261
 - type: 'text'
-  # ../en-US.restext:300 | "The Cost of Disease"
+  # ../en-US.restext:302 | "The Cost of Disease"
   value: 'restext://Start2_009'
 # ../.source/ATimeofWar_Eng_v8.cs:1262
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:1267
 - type: 'text'
-  # ../en-US.restext:301 | "_For an explanation of ho..."
+  # ../en-US.restext:303 | "_For an explanation of ho..."
   value: 'restext://Start2_010'
 # ../.source/ATimeofWar_Eng_v8.cs:1270
 - type: 'link'

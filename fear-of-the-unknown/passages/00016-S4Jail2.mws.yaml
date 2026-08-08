@@ -15,11 +15,11 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:3494
 - type: 'popup'
   layout: 'end_of_generation'
-  # ../en-US.restext:369 | "Confirm"
+  # ../en-US.restext:370 | "Confirm"
   okay: 'restext://UIButton_Confirm'
   content:
   - type: 'text'
-    # ../en-US.restext:86 | "Remove all player pieces ..."
+    # ../en-US.restext:91 | "Remove all player pieces ..."
     value: 'restext://Directive_EndGeneration_ReturnAsylumupHouseOnHill'
   - type: 'let'
     var: 'generation'
@@ -30,7 +30,7 @@ nodes:
   expr: '"money"'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3499
 - type: 'text'
-  # ../en-US.restext:158 | "**Collected Letters -** _..."
+  # ../en-US.restext:162 | "**Collected Letters -** _..."
   value: 'restext://Heading_CollectedLetters_ShelleyHerbert'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3505
 - type: 'break'

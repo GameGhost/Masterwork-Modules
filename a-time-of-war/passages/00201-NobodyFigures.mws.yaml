@@ -26,7 +26,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'Late2ResA' # ./00195-Late2ResA.mws.yaml
-  # ../en-US.restext:285 | "Close"
+  # ../en-US.restext:287 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -44,21 +44,21 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:20925
   - type: 'text'
-    # ../en-US.restext:78 | "The first time a player's..."
+    # ../en-US.restext:79 | "The first time a player's..."
     value: 'restext://Directive_FirstTimeReachesFigureToken_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:20934
   - type: 'conditional'
-    # ../en-US.restext:282 | "Unified Monarchists"
+    # ../en-US.restext:284 | "Unified Monarchists"
     if: 'warwinner == "restext://Title_UnifiedMonarchists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:20936
     - type: 'text'
-      # ../en-US.restext:228 | "**they may immediately bu..."
+      # ../en-US.restext:230 | "**they may immediately bu..."
       value: 'restext://Reward_MayBuildVanityEstateUpgrade'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:20940
     - type: 'text'
-      # ../en-US.restext:229 | "**they may immediately ta..."
+      # ../en-US.restext:231 | "**they may immediately ta..."
       value: 'restext://Reward_MayTakePerformExperimentAction'
   # ../.source/ATimeofWar_Eng_v8.cs:20943
   - type: 'text'

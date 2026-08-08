@@ -2,6 +2,8 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TimeEnd2'
+# ../en-US.restext:451 | "Fully Repaired"
+title: 'restext://TimeEnd2_001'
 tags:
 - 'END'
 layout: 'narration'
@@ -10,22 +12,16 @@ nodes:
 - type: 'conditional'
   if: 'tmrepair == "yes"'
   then:
-  # ../.source/ATimeofWar_Eng_v8.cs:3288
-  - type: 'text'
-    # ../en-US.restext:458 | "**Fully Repaired**"
-    value: 'restext://TimeEnd2_010'
-  # ../.source/ATimeofWar_Eng_v8.cs:3290
-  - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:3291
   - type: 'text'
-    # ../en-US.restext:459 | "I knew that I had complet..."
+    # ../en-US.restext:460 | "I knew that I had complet..."
     value: 'restext://TimeEnd2_011'
   # ../.source/ATimeofWar_Eng_v8.cs:3298
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3300
   - type: 'text'
-    # ../en-US.restext:460 | "Though my years have adva..."
+    # ../en-US.restext:461 | "Though my years have adva..."
     value: 'restext://TimeEnd2_012'
   # ../.source/ATimeofWar_Eng_v8.cs:3301
   - type: 'break'
@@ -39,29 +35,29 @@ nodes:
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:3309
   - type: 'text'
-    # ../en-US.restext:450 | "**Rusty, But Worth a Try*..."
-    value: 'restext://TimeEnd2_001'
+    # ../en-US.restext:452 | "**Rusty, But Worth a Try*..."
+    value: 'restext://TimeEnd2_002'
   # ../.source/ATimeofWar_Eng_v8.cs:3314
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3316
   - type: 'text'
-    # ../en-US.restext:451 | "I, for one, was ready to ..."
-    value: 'restext://TimeEnd2_002'
+    # ../en-US.restext:453 | "I, for one, was ready to ..."
+    value: 'restext://TimeEnd2_003'
   # ../.source/ATimeofWar_Eng_v8.cs:3318
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3322
   - type: 'text'
-    # ../en-US.restext:452 | "**How many of the** _Time..."
-    value: 'restext://TimeEnd2_003'
+    # ../en-US.restext:454 | "**How many of the** _Time..."
+    value: 'restext://TimeEnd2_004'
   # ../.source/ATimeofWar_Eng_v8.cs:3329
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3332
   - type: 'link'
-    # ../en-US.restext:453 | "Zero."
-    label: 'restext://TimeEnd2_004'
+    # ../en-US.restext:455 | "Zero."
+    label: 'restext://TimeEnd2_005'
     target: 'TimeEnd2b' # ./00194-TimeEnd2b.mws.yaml
     snapshot: true
     onclick:
@@ -75,39 +71,39 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3336
   - type: 'link'
-    # ../en-US.restext:454 | "One."
-    label: 'restext://TimeEnd2_006'
+    # ../en-US.restext:456 | "One."
+    label: 'restext://TimeEnd2_007'
     target: 'TimeEnd2b' # ./00194-TimeEnd2b.mws.yaml
     snapshot: true
     onclick:
     # ../.source/ATimeofWar_Eng_v8.cs:3361
     - type: 'assign'
       var: 'tmnumber'
-      # ../en-US.restext:455 | "one piece"
-      expr: '"restext://TimeEnd2_007"'
+      # ../en-US.restext:457 | "one piece"
+      expr: '"restext://TimeEnd2_008"'
   # ../.source/ATimeofWar_Eng_v8.cs:3337
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3340
   - type: 'link'
-    # ../en-US.restext:456 | "Two."
-    label: 'restext://TimeEnd2_008'
+    # ../en-US.restext:458 | "Two."
+    label: 'restext://TimeEnd2_009'
     target: 'TimeEnd2b' # ./00194-TimeEnd2b.mws.yaml
     snapshot: true
     onclick:
     # ../.source/ATimeofWar_Eng_v8.cs:3368
     - type: 'assign'
       var: 'tmnumber'
-      # ../en-US.restext:457 | "two pieces"
-      expr: '"restext://TimeEnd2_009"'
+      # ../en-US.restext:459 | "two pieces"
+      expr: '"restext://TimeEnd2_010"'
 # ../.source/ATimeofWar_Eng_v8.cs:3346
 - type: 'popup'
   layout: 'end_of_generation'
-  # ../en-US.restext:286 | "Confirm"
+  # ../en-US.restext:288 | "Confirm"
   okay: 'restext://UIButton_Confirm'
   content:
   - type: 'text'
-    # ../en-US.restext:76 | "Remove all player pieces ..."
+    # ../en-US.restext:77 | "Remove all player pieces ..."
     value: 'restext://Directive_EndGeneration_ReturnMasterworkParadoxToQuarters'
   - type: 'let'
     var: 'generation'

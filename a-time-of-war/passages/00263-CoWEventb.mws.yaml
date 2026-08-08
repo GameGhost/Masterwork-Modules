@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'CoWEventb'
-# ../en-US.restext:185 | "VOTE"
+# ../en-US.restext:187 | "VOTE"
 title: 'restext://Heading_VoteCaps'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:25785
 - type: 'text'
-  # ../en-US.restext:239 | "Special Event"
+  # ../en-US.restext:241 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/ATimeofWar_Eng_v8.cs:25786
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:25787
 - type: 'text'
-  # ../en-US.restext:115 | "Each player takes a Votin..."
+  # ../en-US.restext:116 | "Each player takes a Votin..."
   value: 'restext://Directive_VotingTokenRevealVotes_Capital'
 # ../.source/ATimeofWar_Eng_v8.cs:25789
 - type: 'break'
@@ -55,7 +55,7 @@ nodes:
   label: 'restext://Click_ToBeginVote'
   content:
   - type: 'text'
-    # ../en-US.restext:289 | "Click on the 'Start Votin..."
+    # ../en-US.restext:291 | "Click on the 'Start Votin..."
     value: 'restext://Voting_Instructions'
   - type: 'break'
     style: 'paragraph'
@@ -66,27 +66,27 @@ nodes:
     style: 'paragraph'
   - type: 'popup'
     layout: 'countdown_action'
-    # ../en-US.restext:290 | "Start Voting"
+    # ../en-US.restext:292 | "Start Voting"
     label: 'restext://Voting_StartButton'
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:54 | "3"
+      # ../en-US.restext:55 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:55 | "2"
+      # ../en-US.restext:56 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:52 | "1"
+      # ../en-US.restext:53 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:53 | "REVEAL"
+      # ../en-US.restext:54 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:53 | "REVEAL"
+    # ../en-US.restext:54 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: 'COWRes' # ./00246-COWRes.mws.yaml
     snapshot: false

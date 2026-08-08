@@ -21,9 +21,6 @@ nodes:
   - type: 'text'
     # ../en-US.restext:439 | "{mayor} receives **3VP** ..."
     value: 'restext://S5SpecialSetup1_002'
-# ../.source/TheCostofDisease_Eng_v10.cs:2384
-- type: 'break'
-  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:2391
 - type: 'image'
   asset: 'icon://bank1'
@@ -33,7 +30,7 @@ nodes:
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:2398
 - type: 'text'
-  # ../en-US.restext:144 | "**BANK**"
+  # ../en-US.restext:145 | "**BANK**"
   value: 'restext://Heading_Bank'
 # ../.source/TheCostofDisease_Eng_v10.cs:2400
 - type: 'break'
@@ -53,7 +50,7 @@ nodes:
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:2429
 - type: 'text'
-  # ../en-US.restext:164 | "**LIBRARY**"
+  # ../en-US.restext:165 | "**LIBRARY**"
   value: 'restext://Heading_Library'
 # ../.source/TheCostofDisease_Eng_v10.cs:2431
 - type: 'break'
@@ -81,7 +78,7 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:2462
   - type: 'assign'
     var: 'building'
-    # ../en-US.restext:202 | "bank"
+    # ../en-US.restext:203 | "bank"
     expr: '"restext://Location_Bank_Lower"'
 # ../.source/TheCostofDisease_Eng_v10.cs:2452
 - type: 'break'
@@ -96,5 +93,5 @@ nodes:
   # ../.source/TheCostofDisease_Eng_v10.cs:2469
   - type: 'assign'
     var: 'building'
-    # ../en-US.restext:203 | "library"
+    # ../en-US.restext:204 | "library"
     expr: '"restext://Location_Library_Lower"'

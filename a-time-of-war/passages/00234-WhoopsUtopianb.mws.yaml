@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'WhoopsUtopianb'
-# ../en-US.restext:278 | "The Future of Convenience"
+# ../en-US.restext:280 | "The Future of Convenience"
 title: 'restext://Title_TheFutureOfConvenience'
 layout: 'narration'
 nodes:
@@ -26,7 +26,7 @@ nodes:
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'Warning1' # ./00052-Warning1.mws.yaml
-  # ../en-US.restext:285 | "Close"
+  # ../en-US.restext:287 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -37,12 +37,12 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:23624
   - type: 'text'
-    # ../en-US.restext:103 | "Retrieve the **Advanced I..."
+    # ../en-US.restext:104 | "Retrieve the **Advanced I..."
     value: 'restext://Directive_RetrieveAdvancedIngredientTokens'
   # ../.source/ATimeofWar_Eng_v8.cs:23631
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:23633
   - type: 'text'
-    # ../en-US.restext:113 | "When visiting the **Techn..."
+    # ../en-US.restext:114 | "When visiting the **Techn..."
     value: 'restext://Directive_VisitTechnicianTradeIngredient'

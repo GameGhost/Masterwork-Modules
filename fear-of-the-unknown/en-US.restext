@@ -57,9 +57,14 @@ Click_StartBid=Click to start the bid...
 Click_StartVote=Click here to start the vote...
 Click_ToBegin=Click to begin...
 Click_ToContinueEllipsis_Lower=click to continue...
-Common_001=Isolation
-Common_002=A Debt Repaid
-Common_003=For Private Use
+Common_001=The {menname} Program
+Common_002=Isolation
+Common_003=Agility Confirmed
+Common_004=Strength Confirmed
+Common_005=Life Total Confirmed
+Common_006=Complete
+Common_007=A Debt Repaid
+Common_008=For Private Use
 Common_Frequently=Frequently.
 Common_VersionOnePointZero=v1.0
 Countdown_One=1
@@ -147,7 +152,6 @@ Focus_Chemistry=Chemistry
 Focus_Engineering=Engineering
 Heading_AMostUnwelcomeReturn=**A Most Unwelcome Return**
 Heading_ASlyInvestment=**A Sly Investment**
-Heading_AgilityConfirmed=**Agility Confirmed**
 Heading_AssessmentResults=Assessment Results
 Heading_BidCaps=BID
 Heading_BidComplete=Bid Complete
@@ -159,7 +163,6 @@ Heading_CollectedLetters_ShelleyHerbert=**Collected Letters -** _Shelley, Herber
 Heading_CollectedLetters_StokerVictoria=**Collected Letters -** _Stoker, Victoria - January 1863._
 Heading_CollectedNotes_Oct1862=**Collected Notes (cont.) -** _10 October, 1862._
 Heading_CollectionDay=**Collection Day**
-Heading_Complete_Fragment= **Complete**
 Heading_EverythingYouKnowIsWrong=**Everything You Know is Wrong**
 Heading_HowMuchInvest=**How much would you like to invest?**
 Heading_IDecidedToInvestigate=**I decided to investigate:**
@@ -182,10 +185,8 @@ Heading_LetterFromRandomname_cont_Lower=**Letter from {randomname} -** _(cont.)_
 Heading_LetterFromTempid_Open=**Letter from {tempid} - _**
 Heading_LetterFromTempid_Trailing=**Letter from {tempid} -** 
 Heading_LetterFromTempname_Trailing=**Letter from {tempname} -** 
-Heading_LifeTotalConfirmed=**Life Total Confirmed**
 Heading_MyDearCommaRandomnameII=My dear, {randomname} II,
 Heading_MyDearRandomnameII=My dear {randomname} II,
-Heading_MyFathersWorkCaps=**MY FATHER'S WORK**
 Heading_Need=Need
 Heading_Newsprint_11Oct1861=**Newsprint - {newspaper} -** _11 October, 1861._
 Heading_Newsprint_13Feb1891=**Newsprint - {newspaper} -** _13 February, 1891._
@@ -227,7 +228,6 @@ Heading_StorybookToken_TheHuntIsOn_NoSpace={icon:storybooktoken}**The Hunt is On
 Heading_StorybookToken_TheJunkPalace={icon:storybooktoken} **The Junk Palace**
 Heading_StorybookToken_TownStrength={icon:storybooktoken} **Town Strength**
 Heading_StorybookToken_VerificationOfIdentity={icon:storybooktoken} **Verification of Identity**
-Heading_StrengthConfirmed=**Strength Confirmed**
 Heading_TheChurch=**The Church**
 Heading_TheEndQuestion=THE END?
 Heading_TheHunt=**The Hunt**
@@ -342,6 +342,7 @@ Title_LateYears=Late Years
 Title_Ledger=Ledger
 Title_Mercury=Mercury
 Title_MiddleYears=Middle Years
+Title_MyFathersWork=MY FATHER'S WORK
 Title_Park=Park
 Title_PathOfDestruction=Path of Destruction
 Title_PrematureEnd=Premature End
@@ -402,14 +403,13 @@ TITLE_SCREEN_006=4 Players.
 TITLE_SCREEN_007=5 Players.
 
 # passages/00004-Scoring.mws.yaml
-Scoring_001=**Scoring**
-Scoring_002=Each Estate Upgrade is worth 1VP.
-Scoring_003=Add any additional points from Vanity Estate Upgrades.
-Scoring_004=Score -3VP for any Maladjustments gained at the End of this Generation.
-Scoring_005=**Creature Masterwork**
-Scoring_006=The player with **The Creature** Masterwork loses **5VP** if the experiment is not completed.
-Scoring_007=THE PLAYER WITH THE MOST POINTS IS THE WINNER OF THE GAME.
-Scoring_008=Click to tabulate scores for posterity...
+Scoring_001=Each Estate Upgrade is worth 1VP.
+Scoring_002=Add any additional points from Vanity Estate Upgrades.
+Scoring_003=Score -3VP for any Maladjustments gained at the End of this Generation.
+Scoring_004=**Creature Masterwork**
+Scoring_005=The player with **The Creature** Masterwork loses **5VP** if the experiment is not completed.
+Scoring_006=THE PLAYER WITH THE MOST POINTS IS THE WINNER OF THE GAME.
+Scoring_007=Click to tabulate scores for posterity...
 
 # passages/00005-Mania.mws.yaml
 Mania_004=Turn to the **Fear of the Unknown** section of the Village Chronicle. Then, turn to page **1** _(this is noted by the matching Fear of the Unknown symbol):_ {icon:s2_scenarioicon}. Retrieve the **Family Plot** Vanity Estate Upgrades from the box.
@@ -439,22 +439,22 @@ S4Butcher_004=What an especially eventful dinner party. (Note to self - retrieve
 S4Butcher_005=Each player who voted **YAY** quickly rummages through the Butcher's stand during the chaos and **gains 1** {icon:animal_icon}.
 
 # passages/00009-S4Witch1.mws.yaml
-S4Witch1_001=**Paranoia Fades**
-S4Witch1_002=**Collected Letters -** _Stoker, Victoria - February 1863._
-S4Witch1_004=With your return from university imminent, I thought it best to relay to you the state of affairs in {townname}.
-S4Witch1_005=For a few years, I watched as the village's hostilities softened and the peasantry returned to their quaint ways of living. And as the years continued, the horrible spectacle of **the Blacksmith's execution** soon became a strictly taboo subject. Your scientific efforts and somewhat ignoble deeds were deemed eccentric. Each day, the townspeople grow more accepting of the exotic nature of the world.
-S4Witch1_006=It is a curious thing to observe.
-S4Witch1_007=**Flames of Hysteria**
+S4Witch1_001=Flames of Hysteria
+S4Witch1_002=Paranoia Fades
+S4Witch1_003=**Collected Letters -** _Stoker, Victoria - February 1863._
+S4Witch1_005=With your return from university imminent, I thought it best to relay to you the state of affairs in {townname}.
+S4Witch1_006=For a few years, I watched as the village's hostilities softened and the peasantry returned to their quaint ways of living. And as the years continued, the horrible spectacle of **the Blacksmith's execution** soon became a strictly taboo subject. Your scientific efforts and somewhat ignoble deeds were deemed eccentric. Each day, the townspeople grow more accepting of the exotic nature of the world.
+S4Witch1_007=It is a curious thing to observe.
 S4Witch1_010=For a few years, I watched as the village's hostilities softened and the peasantry returned to their quaint ways of living. But, before long, old rumors of pagan worship and occult manipulations resurfaced. The village has become united in the opinion that the **public execution of the humble Butcher** was a false spectacle, and that insidious characters still lurk within the town limits.
 S4Witch1_011=Unfortunately, the town became further incensed and searched for an alternative solution.
 
 # passages/00010-S4Witch2.mws.yaml
-S4Witch2_001=**A Return to Civility**
-S4Witch2_002=**Collected Letters -** _Stoker, Victoria - February, 1863._
-S4Witch2_003=You must forgive me for not responding sooner, but I must admit that there is not much to tell. While initially I suspected that the softening of the village's hostilities would be brief, indeed, old rumors of pagan worship and occult manipulations resurfaced in the coming years.
-S4Witch2_004=However, these rumors were quelled by the boasts of townsfolk who had removed the evil blight on the land with torches and pitchforks. The **mob had been appeased** and the paranoia so entrenched within the village now appears a distant memory. 
-S4Witch2_005=There is no need to rush home, though we send you warm wishes all the same.
-S4Witch2_006=**More Secrets to Quell**
+S4Witch2_001=More Secrets to Quell
+S4Witch2_002=A Return to Civility
+S4Witch2_003=**Collected Letters -** _Stoker, Victoria - February, 1863._
+S4Witch2_004=You must forgive me for not responding sooner, but I must admit that there is not much to tell. While initially I suspected that the softening of the village's hostilities would be brief, indeed, old rumors of pagan worship and occult manipulations resurfaced in the coming years.
+S4Witch2_005=However, these rumors were quelled by the boasts of townsfolk who had removed the evil blight on the land with torches and pitchforks. The **mob had been appeased** and the paranoia so entrenched within the village now appears a distant memory. 
+S4Witch2_006=There is no need to rush home, though we send you warm wishes all the same.
 S4Witch2_007=You must forgive the lateness of my writing, but as your caretaker, I regret to say that I am not very acquainted with the quill. I have kept your affairs in order to the best of my ability, but I am troubled by recent events in {townname}.
 S4Witch2_008=For a few years, I watched as the village's hostilities softened and the peasantry returned to their quaint ways of living. But, before long, old rumors of pagan worship and occult manipulations resurfaced.
 S4Witch2_009=With **no one overtaken to slake the mob's thirst**, their intense fear of outsiders has surged into a frenzy.
@@ -1016,16 +1016,17 @@ SmugConsequence_004=I ask you to disregard the rumors that I have merely investe
 SmugConsequence_005=**Please choose your name and add it to the ledger:**
 
 # passages/00091-S4Con2A.mws.yaml
-S4Con2A_001=**Letter from {tempid}-** _(Cont.)_
-S4Con2A_002=My representation was easily able to refute the validity of several eyewitness accounts from slipshod drunkards, but the court proceedings dragged on for several months.
-S4Con2A_003=Ultimately, the blasted dullards had not a leg to stand on and were forced to drop the case entirely. While the court costs are minor and the fines insignificant, the time wasted in this extended defense and the indigestion I have endured has caused my work to suffer.
-S4Con2A_004=You **lose {_rnd_S4Con2A_0}VP**.
-S4Con2A_005=Despite circumstantial evidence, the town's courts were unable to reconcile their case with my unusual investment practices. Several witnesses attested to my family's eccentric habits, and while it does not put the courts at ease, the argument is compelling enough for them to drop the charges without fines.
-S4Con2A_006=You should have seen the unsteadiness of the case they brought against me! Several witnesses attested to my connection to the local smuggling ring (absurd), but the bedraggled individuals could not even keep their own stories straight. 
-S4Con2A_007=We are dealing with the simple-minded, however. The judge, in their folly, determined that scant evidence was significant enough to damn me. While the court costs are minor and the fines insignificant, the resulting public backlash will certainly hamper my ability to complete any work in peace.
-S4Con2A_008=You **lose 1VP** and **gain 1** {icon:creepy_icon}.
-S4Con2A_009=**Success**
-S4Con2A_010=**Letter from {tempid} -** _(Cont.)_
+S4Con2A_001=Success
+S4Con2A_002=Shameful Display
+S4Con2A_003=**Letter from {tempid}-** _(Cont.)_
+S4Con2A_004=My representation was easily able to refute the validity of several eyewitness accounts from slipshod drunkards, but the court proceedings dragged on for several months.
+S4Con2A_005=Ultimately, the blasted dullards had not a leg to stand on and were forced to drop the case entirely. While the court costs are minor and the fines insignificant, the time wasted in this extended defense and the indigestion I have endured has caused my work to suffer.
+S4Con2A_006=You **lose {_rnd_S4Con2A_0}VP**.
+S4Con2A_007=Despite circumstantial evidence, the town's courts were unable to reconcile their case with my unusual investment practices. Several witnesses attested to my family's eccentric habits, and while it does not put the courts at ease, the argument is compelling enough for them to drop the charges without fines.
+S4Con2A_008=You should have seen the unsteadiness of the case they brought against me! Several witnesses attested to my connection to the local smuggling ring (absurd), but the bedraggled individuals could not even keep their own stories straight. 
+S4Con2A_009=We are dealing with the simple-minded, however. The judge, in their folly, determined that scant evidence was significant enough to damn me. While the court costs are minor and the fines insignificant, the resulting public backlash will certainly hamper my ability to complete any work in peace.
+S4Con2A_010=You **lose 1VP** and **gain 1** {icon:creepy_icon}.
+S4Con2A_011=**Letter from {tempid} -** _(Cont.)_
 
 # passages/00092-TensionBonus.mws.yaml
 TensionBonus_001=Cabinet of Curiosities
@@ -1034,7 +1035,6 @@ TensionBonus_003= _Ties are broken by the one with the lowest VP. If there is st
 TensionBonus_004=**Also,** any player who has completed their **Occult Journal Track** **gains 3VP**.
 
 # passages/00093-LiberalBonus.mws.yaml
-LiberalBonus_001=The {menname} Program
 LiberalBonus_002=The **Menagerie** Estate Upgrade is now awarded to the player with the most completed {mentype} Experiments. _If there is a tie, the one with lowest VP receives the Upgrade._ 
 LiberalBonus_003=The player who has the second-most Experiments also gains this Upgrade.
 
@@ -1147,7 +1147,7 @@ NameEntryD_001={nameD}.
 NameEntryE_001={nameE}.
 
 # passages/00111-IntroNameEntry.mws.yaml
-IntroNameEntry_005=**Proper Nomenclature**
+IntroNameEntry_001=Proper Nomenclature
 IntroNameEntry_006=As siblings of an influential family of Eastern European descent, the **{playtxt}** of us have received a not insignificant portion of our family's estate.
 IntroNameEntry_007=Before we begin, let us make this historical fiction more engaging by providing our names.
 
@@ -1318,8 +1318,9 @@ FPSanity3_001=Pressing the Boundaries
 FPCreepy3_001=Feared and Misunderstood
 
 # passages/00133-FPYesHub.mws.yaml
-FPYesHub_001=**Destiny Awaits**Your choice has been made.
-FPYesHub_002=**Immediately Gain 1VP.**
+FPYesHub_001=Destiny Awaits
+FPYesHub_002=Your choice has been made.
+FPYesHub_003=**Immediately Gain 1VP.**
 
 # passages/00134-FPResearch2signin.mws.yaml
 FPResearch2signin_001=The New Science
@@ -1421,7 +1422,7 @@ BusMeetD_001={_rnd_BusMeetD_0} "Donate and let's forget this rehabilitation busi
 BusMeetE_001={_rnd_BusMeetE_0} "Donate and let's forget this rehabilitation business. Remember, **you are not obligated to pay now**. We will arrange payment in your **waning years**, I'm sure."
 
 # passages/00152-AsylumMeet.mws.yaml
-AsylumMeet_001=**Retrieval of Property**
+AsylumMeet_001=Retrieval of Property
 AsylumMeet_002=**{tempas}'s Journal -** 
 AsylumMeet_003=I soon discovered my lost servant, clad in a leather device that restricted the movement of their arms, but otherwise enjoying a walk among the grounds.
 AsylumMeet_004=The alienist on staff described symptoms of extreme paranoia and dementia that seemed to coincide with their employment at my estate. "The patient was suffering from minor delusions and frayed nerves," they stated pointedly before offering an intriguing choice.
@@ -1532,8 +1533,8 @@ LiberalIdeaInsert_001=Last place gains points based on notes.
 LiberalIdeaInsert_002=3VP per player ahead of you on the Score Track.
 
 # passages/00179-AsylumTreatment.mws.yaml
-AsylumTreatment_004=D
-AsylumTreatment_005=**Asylum Admittance Log {_rnd_AsylumTreatment_0} {_rnd_AsylumTreatment_1}**
+AsylumTreatment_001=Asylum Admittance Log {_rnd_AsylumTreatment_0} {_rnd_AsylumTreatment_1}
+AsylumTreatment_005=D
 AsylumTreatment_006=_A somewhat faded page lists the entry and exit logs for visitors to the Asylum. The checklist also displays admittance logs for those undergoing psychiatric evaluation._
 AsylumTreatment_007=**The admittance log for this date shows the name:**
 
@@ -1776,18 +1777,16 @@ letter1a_001=Letter from
 letter1a_002=Noted Letters - 
 letter1a_003=Letter Excerpt from 
 letter1a_004=Correspondence - 
-letter1a_005=**{_rnd_letter1a_0}**
-letter1a_006=**{randomname} -** _{_rnd_letter1a_1} {_rnd_letter1a_2}, 1_{_rnd_letter1a_3}
-letter1a_007=Romania.
-letter1a_008=_. {_rnd_letter1a_24}_
+letter1a_005=**{randomname} -** _{_rnd_letter1a_1} {_rnd_letter1a_2}, 1_{_rnd_letter1a_3}
+letter1a_006=Romania.
+letter1a_007=_. {_rnd_letter1a_24}_
 
 # passages/00206-journal1a.mws.yaml
 journal1a_001=Journal Entry - 
 journal1a_002=Journal of 
 journal1a_003=Collected Notes - 
 journal1a_004=Diary Entry - 
-journal1a_005=**{_rnd_journal1a_0}**
-journal1a_006=**{randomname} -** _{_rnd_journal1a_1} {_rnd_journal1a_2}, 1_{_rnd_journal1a_3}_._
+journal1a_005=**{randomname} -** _{_rnd_journal1a_1} {_rnd_journal1a_2}, 1_{_rnd_journal1a_3}_._
 
 # passages/00207-date1a.mws.yaml
 date1a_001={_rnd_date1a_0} {_rnd_date1a_1}, 1{_rnd_date1a_2}.
@@ -1841,9 +1840,9 @@ SmugEvent2ACont_008=The cage in which our great primate was displayed was woeful
 SmugEvent2ACont_009=However, undaunted, the Experiment continued its path of destruction until we were able to subdue it with our hastily prepared antidotal serum.
 
 # passages/00214-PEWitch2.mws.yaml
-PEWitch2_001=**Regression**
-PEWitch2_002=The relapse of paranoid delusion in the rural populace has made life particularly anxious for those who express a scientific aptitude. However, considering that the region's continued hysteria keeps most inhabitants locked within their ashen homes at night, fearful of every shadow that flits across the windowsill, I am reasonably sure that my new obsessions will blend into the macabre scenery unnoticed.
-PEWitch2_003=**Progression**
+PEWitch2_001=Progression
+PEWitch2_002=Regression
+PEWitch2_003=The relapse of paranoid delusion in the rural populace has made life particularly anxious for those who express a scientific aptitude. However, considering that the region's continued hysteria keeps most inhabitants locked within their ashen homes at night, fearful of every shadow that flits across the windowsill, I am reasonably sure that my new obsessions will blend into the macabre scenery unnoticed.
 PEWitch2_004=I find with each passing evening that my parent's abhorrent obsessions boil beneath the surface of my everyday activities. Despite the village's push towards civility and the exploration of mental disabilities, I am unable to resist the clarion call of what could one day define our family's legacy! 
 PEWitch2_005=**Retrieve the Obsession cards** _(18 total)_**.**
 
@@ -1891,7 +1890,7 @@ Player1Statsc_003=**{hitA}** is locked in as your ability to receive damage.
 Player1Statsc_004={nameA}'s Warrior is built and prepared for a battle to the death. Now it only needs a mighty name.
 
 # passages/00222-Player1Statsfin.mws.yaml
-Player1Statsfin_002=**{_rpl_Player1Statsfin_0}**
+Player1Statsfin_001={_rpl_Player1Statsfin_0} Complete
 Player1Statsfin_004=Agility: **{agiA}**
 Player1Statsfin_005=Strength: **{strA}**
 Player1Statsfin_006=Life: **{hitA}**
@@ -2202,18 +2201,17 @@ LiberalEvent3Res_012=Occult
 
 # passages/00261-LiberalEvent3Resa.mws.yaml
 LiberalEvent3Resa_001=Please enter the name of your new rehabilitation program:
-LiberalEvent3Resa_002=**The {menname} Program**
-LiberalEvent3Resa_003=**Newsprint - {newspaper} -** _27 February, 1902._
-LiberalEvent3Resa_004=The Asylum has announced a radical change to their rehabilitative efforts, incorporating the most advanced alienist treatment regimen. 
-LiberalEvent3Resa_005=While officials remain tight-lipped as to the details of the procedure, a bishop of the local diocese has been given residence to perform blessings to those whose will has been overcome by demons. Patients are isolated from stimulation, prescribed a "rest cure," and given a special restorative tonic of local roots and herbs.
-LiberalEvent3Resa_006=A new wing of the facility displays the complex machinery utilized in this fascinating new therapy. Patients with varying degrees of dementia are carefully strapped to a hospital bed, while electrical pulses are concentrated upon different areas of the brain.
-LiberalEvent3Resa_007=Using new advances in concentrated opiates, the doctors are able to administer strong sedatives to alleviate improper reflexes in patients. Through a combination of bloodletting and strong purgatives, the psychotic tendencies of the individual are allowed to exit the body.
-LiberalEvent3Resa_008=An entirely rebuilt surgical stage has been constructed where visiting physicians and the public alike can view the procedures as they are perfected. By removing the offending portions of brain tissue, or by alleviating pressures in the skull, the mentally ill experience a transformative effect which renders them placid and focused.
-LiberalEvent3Resa_009=While critics of the hospital remain outspoken, the progressive organization has embraced this change as proof that {townname} remains the most modern psychiatric refuge in all of Transylvania.
-LiberalEvent3Resa_010=You gain **3VP**.
-LiberalEvent3Resa_011=Retrieve the **Menagerie** Estate Upgrade
-LiberalEvent3Resa_012=s.
-LiberalEvent3Resa_013=At the End of the Generation, the player who has completed the most {mentype} experiments receives the **Menagerie** Upgrade. _Ties are broken by the one with the fewest VP._ 
+LiberalEvent3Resa_002=**Newsprint - {newspaper} -** _27 February, 1902._
+LiberalEvent3Resa_003=The Asylum has announced a radical change to their rehabilitative efforts, incorporating the most advanced alienist treatment regimen. 
+LiberalEvent3Resa_004=While officials remain tight-lipped as to the details of the procedure, a bishop of the local diocese has been given residence to perform blessings to those whose will has been overcome by demons. Patients are isolated from stimulation, prescribed a "rest cure," and given a special restorative tonic of local roots and herbs.
+LiberalEvent3Resa_005=A new wing of the facility displays the complex machinery utilized in this fascinating new therapy. Patients with varying degrees of dementia are carefully strapped to a hospital bed, while electrical pulses are concentrated upon different areas of the brain.
+LiberalEvent3Resa_006=Using new advances in concentrated opiates, the doctors are able to administer strong sedatives to alleviate improper reflexes in patients. Through a combination of bloodletting and strong purgatives, the psychotic tendencies of the individual are allowed to exit the body.
+LiberalEvent3Resa_007=An entirely rebuilt surgical stage has been constructed where visiting physicians and the public alike can view the procedures as they are perfected. By removing the offending portions of brain tissue, or by alleviating pressures in the skull, the mentally ill experience a transformative effect which renders them placid and focused.
+LiberalEvent3Resa_008=While critics of the hospital remain outspoken, the progressive organization has embraced this change as proof that {townname} remains the most modern psychiatric refuge in all of Transylvania.
+LiberalEvent3Resa_009=You gain **3VP**.
+LiberalEvent3Resa_010=Retrieve the **Menagerie** Estate Upgrade
+LiberalEvent3Resa_011=s.
+LiberalEvent3Resa_012=At the End of the Generation, the player who has completed the most {mentype} experiments receives the **Menagerie** Upgrade. _Ties are broken by the one with the fewest VP._ 
 
 # passages/00262-FOTU-End7.mws.yaml
 FOTU_End7_001=Committed
@@ -2267,12 +2265,13 @@ Expedition2_003=The player(s) embarking on the expedition now flips their tokens
 Expedition2_004=Click to resolve the Hunt...
 
 # passages/00272-JailEvent1c.mws.yaml
-JailEvent1c_001=What will I do with this useless addition to my Estate now that the Asylum is no longer in operation? Surely a waste of energy to renovate such a specific extension. Better to dispose of it than to let it decay out of disuse.
-JailEvent1c_002=All players return their {asylumup} tile to the Scenario box.
-JailEvent1c_003=**Merciful Heritage**
-JailEvent1c_004={warden} has made one exception due to the previous generation and my **family's willingness to fund the Asylum**. They will continue to honor this pledge of service when we visit the Junk Palace.
-JailEvent1c_005=**{asylumup} Rule**
-JailEvent1c_006=When a player with the {asylumup} tile visits the Junk Palace, they may activate this ability.
+JailEvent1c_001=Merciful Heritage
+JailEvent1c_002=A Sacrifice is Required
+JailEvent1c_003=What will I do with this useless addition to my Estate now that the Asylum is no longer in operation? Surely a waste of energy to renovate such a specific extension. Better to dispose of it than to let it decay out of disuse.
+JailEvent1c_004=All players return their {asylumup} tile to the Scenario box.
+JailEvent1c_005={warden} has made one exception due to the previous generation and my **family's willingness to fund the Asylum**. They will continue to honor this pledge of service when we visit the Junk Palace.
+JailEvent1c_006=**{asylumup} Rule**
+JailEvent1c_007=When a player with the {asylumup} tile visits the Junk Palace, they may activate this ability.
 
 # passages/00273-EndtotheCount.mws.yaml
 EndtotheCount_001=An Abrupt End
@@ -2442,7 +2441,7 @@ Player2Statsc_001=**{hitB}** is locked in as your ability to receive damage.
 Player2Statsc_002={nameB}'s Warrior is built and prepared for a battle to the death. Now it only needs a mighty name.
 
 # passages/00296-Player2Statsfin.mws.yaml
-Player2Statsfin_001=**{_rpl_Player2Statsfin_0}**
+Player2Statsfin_001={_rpl_Player2Statsfin_0} Complete
 Player2Statsfin_002=Agility: **{agiB}**
 Player2Statsfin_003=Strength: **{strB}**
 Player2Statsfin_004=Life: **{hitB}**
@@ -2462,7 +2461,7 @@ Player3Statsc_001=**{hitC}** is locked in as your ability to receive damage.
 Player3Statsc_002={nameC}'s Warrior is built and prepared for a battle to the death. Now it only needs a mighty name.
 
 # passages/00301-Player3Statsfin.mws.yaml
-Player3Statsfin_001=**{_rpl_Player3Statsfin_0}**
+Player3Statsfin_001={_rpl_Player3Statsfin_0} Complete
 Player3Statsfin_002=Agility: **{agiC}**
 Player3Statsfin_003=Strength: **{strC}**
 Player3Statsfin_004=Life: **{hitC}**
@@ -2482,7 +2481,7 @@ Player4Statsc_001=**{hitD}** is locked in as your ability to receive damage.
 Player4Statsc_002={nameD}'s Warrior is built and prepared for a battle to the death. Now it only needs a mighty name.
 
 # passages/00306-Player4Statsfin.mws.yaml
-Player4Statsfin_001=**{_rpl_Player4Statsfin_0}**
+Player4Statsfin_001={_rpl_Player4Statsfin_0} Complete
 Player4Statsfin_002=Agility: **{agiD}**
 Player4Statsfin_003=Strength: **{strD}**
 Player4Statsfin_004=Life: **{hitD}**
@@ -2502,7 +2501,7 @@ Player5Statsc_001=**{hitE}** is locked in as your ability to receive damage.
 Player5Statsc_002={nameE}'s Warrior is built and prepared for a battle to the death. Now it only needs a mighty name.
 
 # passages/00311-Player5Statsfin.mws.yaml
-Player5Statsfin_001=**{_rpl_Player5Statsfin_0}**
+Player5Statsfin_001={_rpl_Player5Statsfin_0} Complete
 Player5Statsfin_002=Agility: **{agiE}**
 Player5Statsfin_003=Strength: **{strE}**
 Player5Statsfin_004=Life: **{hitE}**
@@ -2764,11 +2763,10 @@ AsylumInterviewBegin_004= to act as a general, psychoanalytical assessment, to a
 AsylumInterviewBegin_005=This test will determine if the patient can be discharged, and if this is not advisable, what therapy they should receive.
 
 # passages/00362-AsylumQuestion1.mws.yaml
-AsylumQuestion1_001=Do any of your close relatives have a history of blood diseases?
-AsylumQuestion1_002=Anemia? Hemophilia? Blood taint from sexual indiscretion?
-AsylumQuestion1_003=All of the above.
-AsylumQuestion1_004=Not that I am aware.
-AsylumQuestion1_005=I prefer not to answer.
+AsylumQuestion1_001=**Do any of your close relatives have a history of blood diseases? - Anemia? Hemophilia? Blood taint from sexual indiscretion?**
+AsylumQuestion1_002=All of the above.
+AsylumQuestion1_003=Not that I am aware.
+AsylumQuestion1_004=I prefer not to answer.
 
 # passages/00363-AsylumQuestion2.mws.yaml
 AsylumQuestion2_001=What is your worst fear?
@@ -2778,41 +2776,40 @@ AsylumQuestion2_004=I have no fears.
 AsylumQuestion2_005=Spiders.
 
 # passages/00364-AsylumQuestion3.mws.yaml
-AsylumQuestion3_001=Do you have pains that appear and disappear without a physical source?
+AsylumQuestion3_001=**Do you have pains that appear and disappear without a physical source?**
 AsylumQuestion3_002=Life... is... pain.
 
 # passages/00365-AsylumQuestion4.mws.yaml
-AsylumQuestion4_001=Do you have difficulty relaying the brilliance of your own ideas to others?
+AsylumQuestion4_001=**Do you have difficulty relaying the brilliance of your own ideas to others?**
 AsylumQuestion4_002=They are all imbeciles!
 AsylumQuestion4_003=Occasionally.
 AsylumQuestion4_004=No one would dare question my authority in these matters.
 
 # passages/00366-AsylumQuestion5.mws.yaml
-AsylumQuestion5_001=It is opening night for a new theatrical performance and you are the star. As the curtains open and the lights go up, you realize that you are completely nude. What is your reaction?
+AsylumQuestion5_001=**It is opening night for a new theatrical performance and you are the star. As the curtains open and the lights go up, you realize that you are completely nude. What is your reaction?**
 AsylumQuestion5_002=The show must go on!
 AsylumQuestion5_003=Shame or Embarassment.
 AsylumQuestion5_004=I feel nothing.
 
 # passages/00367-AsylumQuestion6.mws.yaml
-AsylumQuestion6_001=Are you prone to bouts of sadness that make performing basic daily tasks difficult?
+AsylumQuestion6_001=**Are you prone to bouts of sadness that make performing basic daily tasks difficult?**
 AsylumQuestion6_002=I wouldn't call it 'sadness.' I would call it disgust... at the world.
 AsylumQuestion6_003=My heart is forever heavy.
 AsylumQuestion6_004=Very infrequently.
 AsylumQuestion6_005=I am never sad.
 
 # passages/00368-AsylumQuestion7.mws.yaml
-AsylumQuestion7_001=You are preparing yourself for an upcoming engagement. At this engagement, you know that you will have to make a short speech. If this speech is successful, it could mean a promotion at your place of business. What is your temperament?
+AsylumQuestion7_001=**You are preparing yourself for an upcoming engagement. At this engagement, you know that you will have to make a short speech. If this speech is successful, it could mean a promotion at your place of business. What is your temperament?** 
 AsylumQuestion7_002=I am well-prepared and excited.
 AsylumQuestion7_003=I am nervous or ill-prepared.
 AsylumQuestion7_004=I feel nothing. Human beings are merely tools to an end.
 
 # passages/00369-AsylumQuestion8.mws.yaml
-AsylumQuestion8_001=You are selected to receive an award for a recent achievement of yours
-AsylumQuestion8_002=which has taken considerable effort on your part. A colleague congratulates you for your achievement and offers praise. How do you react to this praise?
-AsylumQuestion8_003=I would demand to see this praise in writing!
-AsylumQuestion8_004=I silently accept it.
-AsylumQuestion8_005=I do not easily accept praise.
-AsylumQuestion8_006=Their praise is irrelevant.
+AsylumQuestion8_001=**You are selected to receive an award for a recent achievement of yours - which has taken considerable effort on your part. A colleague congratulates you for your achievement and offers praise. How do you react to this praise?**
+AsylumQuestion8_002=I would demand to see this praise in writing!
+AsylumQuestion8_003=I silently accept it.
+AsylumQuestion8_004=I do not easily accept praise.
+AsylumQuestion8_005=Their praise is irrelevant.
 
 # passages/00370-CountQuestion2.mws.yaml
 CountQuestion2_001=How would you describe your diet?
@@ -2821,7 +2818,7 @@ CountQuestion2_003=Sensible.
 CountQuestion2_004=Reckless and Self-Indulgent.
 
 # passages/00371-CountQuestion3.mws.yaml
-CountQuestion3_001=What is your favorite color to wear to a moonlit masquerade?
+CountQuestion3_001=**What is your favorite color to wear to a moonlit masquerade?**
 CountQuestion3_002=Crimson.
 CountQuestion3_003=Tan.
 CountQuestion3_004=Blue.
@@ -2832,7 +2829,7 @@ CountQuestion4_001=Are you mentally ill?
 CountQuestion4_002=Perhaps.
 
 # passages/00373-CountQuestion6.mws.yaml
-CountQuestion6_001=Do you ever see, hear, or speak to demons or other spiritual manifestations? And do you enjoy these visitations?
+CountQuestion6_001=**Do you ever see, hear, or speak to demons or other spiritual manifestations? And do you enjoy these visitations?**
 CountQuestion6_002=Sometimes.
 CountQuestion6_003=Infrequently.
 
@@ -2844,16 +2841,16 @@ CountQuestion5_004=Luscious, plump, and delectable.
 CountQuestion5_005=Stout, Average.
 
 # passages/00375-CountQuestion7.mws.yaml
-CountQuestion7_001=Do you ever imagine submitting your mind, body, and soul to a demon on a warm, summer evening?
+CountQuestion7_001=**Do you ever imagine submitting your mind, body, and soul to a demon on a warm, summer evening?**
 CountQuestion7_002=It is what I desire most.
 CountQuestion7_003=No, but I would like to try it.
 
 # passages/00376-CountQuestion8.mws.yaml
-CountQuestion8_001=Do you sometimes feel heavy, as if weighted down by the amount of blood in your body?
+CountQuestion8_001=**Do you sometimes feel heavy, as if weighted down by the amount of blood in your body?**
 CountQuestion8_002=All the time.
 
 # passages/00377-AsylumQuestion9.mws.yaml
-AsylumQuestion9_001=You are presenting your findings to a colleague when your colleague begins to criticize your methods, labeling them as 'unethical'. How do you respond to their criticism?
+AsylumQuestion9_001=**You are presenting your findings to a colleague when your colleague begins to criticize your methods, labeling them as 'unethical'. How do you respond to their criticism?**
 AsylumQuestion9_002=What is this question? How dare you criticize my genius! Take your hands off me this instant.
 AsylumQuestion9_003=I thoughtfully consider their feedback.
 AsylumQuestion9_004=This will never happen.

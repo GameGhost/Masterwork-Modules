@@ -2,6 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S5HospA2'
+# ../en-US.restext:1480 | S5HospA2_001 | "A Foundation for Science"
+# ../en-US.restext:1481 | S5HospA2_002 | "The Foundation Crumbles"
+title: '{uni == "yes" ? "restext://S5HospA2_001" : "restext://S5HospA2_002"}'
 tags:
 - 'END'
 layout: 'narration'
@@ -11,43 +14,31 @@ nodes:
   # ../en-US.restext:34 | "yes"
   if: 'uni == "restext://Choice_Yes_Lower"'
   then:
-  # ../.source/TheCostofDisease_Eng_v10.cs:19172
-  - type: 'text'
-    # ../en-US.restext:1477 | "**A Foundation for Science**"
-    value: 'restext://S5HospA2_004'
-  # ../.source/TheCostofDisease_Eng_v10.cs:19174
-  - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:19177
   - type: 'text'
-    # ../en-US.restext:1478 | "**With the University bui..."
+    # ../en-US.restext:1484 | "**With the University bui..."
     value: 'restext://S5HospA2_005'
   # ../.source/TheCostofDisease_Eng_v10.cs:19180
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:19182
   - type: 'link'
-    # ../en-US.restext:1479 | "Click to move to a more m..."
+    # ../en-US.restext:1485 | "Click to move to a more m..."
     label: 'restext://S5HospA2_006'
     target: 'UniversityIntro' # ./00014-UniversityIntro.mws.yaml
     snapshot: true
   else:
-  # ../.source/TheCostofDisease_Eng_v10.cs:19189
-  - type: 'text'
-    # ../en-US.restext:1474 | "**The Foundation Crumbles**"
-    value: 'restext://S5HospA2_001'
-  # ../.source/TheCostofDisease_Eng_v10.cs:19191
-  - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:19194
   - type: 'text'
-    # ../en-US.restext:1475 | "**With the University unb..."
-    value: 'restext://S5HospA2_002'
+    # ../en-US.restext:1482 | "**With the University unb..."
+    value: 'restext://S5HospA2_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:19199
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:19201
   - type: 'link'
-    # ../en-US.restext:1476 | "Click to move to a more d..."
-    label: 'restext://S5HospA2_003'
+    # ../en-US.restext:1483 | "Click to move to a more d..."
+    label: 'restext://S5HospA2_004'
     target: 'RippedMasterwork' # ./00164-RippedMasterwork.mws.yaml
     snapshot: true
 # ../.source/TheCostofDisease_Eng_v10.cs:19204
@@ -57,7 +48,7 @@ nodes:
   okay: 'restext://UIButton_Confirm'
   content:
   - type: 'text'
-    # ../en-US.restext:94 | "Remove all player pieces ..."
+    # ../en-US.restext:95 | "Remove all player pieces ..."
     value: 'restext://Directive_EndGeneration_JournalTrackTokens'
   - type: 'let'
     var: 'generation'

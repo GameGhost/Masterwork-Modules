@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TITLE SCREEN'
-# ../en-US.restext:266 | "MY FATHER'S WORK"
+# ../en-US.restext:268 | "MY FATHER'S WORK"
 title: 'restext://Title_MyFathersWork'
 tags:
 - 'NOTADDED'
@@ -10,7 +10,7 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:1366
 - type: 'text'
-  # ../en-US.restext:317 | "_A clever game by_ T. C. ..."
+  # ../en-US.restext:319 | "_A clever game by_ T. C. ..."
   value: 'restext://TITLE_SCREEN_001'
 # ../.source/ATimeofWar_Eng_v8.cs:1371
 - type: 'assign'
@@ -21,14 +21,14 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:1377
 - type: 'text'
-  # ../en-US.restext:318 | "How many individuals will..."
+  # ../en-US.restext:320 | "How many individuals will..."
   value: 'restext://TITLE_SCREEN_002'
 # ../.source/ATimeofWar_Eng_v8.cs:1378
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:1381
 - type: 'link'
-  # ../en-US.restext:319 | "2 Players."
+  # ../en-US.restext:321 | "2 Players."
   label: 'restext://TITLE_SCREEN_003'
   target: 'PlayerNameIntro' # ./00115-PlayerNameIntro.mws.yaml
   snapshot: true
@@ -41,7 +41,7 @@ nodes:
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:1384
 - type: 'link'
-  # ../en-US.restext:320 | "3 Players."
+  # ../en-US.restext:322 | "3 Players."
   label: 'restext://TITLE_SCREEN_004'
   target: 'PlayerNameIntro' # ./00115-PlayerNameIntro.mws.yaml
   snapshot: true
@@ -54,7 +54,7 @@ nodes:
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:1387
 - type: 'link'
-  # ../en-US.restext:321 | "4 Players."
+  # ../en-US.restext:323 | "4 Players."
   label: 'restext://TITLE_SCREEN_005'
   target: 'PlayerNameIntro' # ./00115-PlayerNameIntro.mws.yaml
   snapshot: true
@@ -67,7 +67,7 @@ nodes:
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:1390
 - type: 'link'
-  # ../en-US.restext:322 | "5 Players."
+  # ../en-US.restext:324 | "5 Players."
   label: 'restext://TITLE_SCREEN_006'
   target: 'PlayerNameIntro' # ./00115-PlayerNameIntro.mws.yaml
   snapshot: true

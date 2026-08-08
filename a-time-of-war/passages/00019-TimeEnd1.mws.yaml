@@ -2,6 +2,8 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TimeEnd1'
+# ../en-US.restext:51 | "Paradox"
+title: 'restext://Common_003'
 tags:
 - 'END'
 layout: 'narration'
@@ -34,45 +36,39 @@ nodes:
     - type: 'assign'
       var: 'dox'
       expr: 'rand_between(4, 6, "TimeEnd1_3")'
-# ../.source/ATimeofWar_Eng_v8.cs:3205
-- type: 'text'
-  # ../en-US.restext:442 | "**Paradox**"
-  value: 'restext://TimeEnd1_001'
 # ../.source/ATimeofWar_Eng_v8.cs:3231
 - type: 'popup'
   layout: 'end_of_generation'
-  # ../en-US.restext:286 | "Confirm"
+  # ../en-US.restext:288 | "Confirm"
   okay: 'restext://UIButton_Confirm'
   content:
   - type: 'text'
-    # ../en-US.restext:76 | "Remove all player pieces ..."
+    # ../en-US.restext:77 | "Remove all player pieces ..."
     value: 'restext://Directive_EndGeneration_ReturnMasterworkParadoxToQuarters'
   - type: 'let'
     var: 'generation'
     expr: '6'
-# ../.source/ATimeofWar_Eng_v8.cs:3233
-- type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:3234
 - type: 'text'
-  # ../en-US.restext:443 | "Time continued on as norm..."
+  # ../en-US.restext:444 | "Time continued on as norm..."
   value: 'restext://TimeEnd1_003'
 # ../.source/ATimeofWar_Eng_v8.cs:3236
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:3240
 - type: 'text'
-  # ../en-US.restext:444 | "**Count the total number ..."
+  # ../en-US.restext:445 | "**Count the total number ..."
   value: 'restext://TimeEnd1_004'
 # ../.source/ATimeofWar_Eng_v8.cs:3245
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:3247
 - type: 'text'
-  # ../en-US.restext:445 | "If the number is **{dox}*..."
+  # ../en-US.restext:446 | "If the number is **{dox}*..."
   value: 'restext://TimeEnd1_005'
 # ../.source/ATimeofWar_Eng_v8.cs:3254
 - type: 'link'
-  # ../en-US.restext:446 | "Click here to continue"
+  # ../en-US.restext:447 | "Click here to continue"
   label: 'restext://TimeEnd1_006'
   target: 'WarningIntro' # ./00050-WarningIntro.mws.yaml
   snapshot: true
@@ -81,7 +77,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:3257
 - type: 'text'
-  # ../en-US.restext:447 | "If the number of {icon:s3..."
+  # ../en-US.restext:448 | "If the number of {icon:s3..."
   value: 'restext://TimeEnd1_007'
 # ../.source/ATimeofWar_Eng_v8.cs:3261
 - type: 'link'

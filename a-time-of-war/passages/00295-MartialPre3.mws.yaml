@@ -10,7 +10,7 @@ nodes:
 - type: 'popup'
   layout: 'end_of_round'
   target: 'Martial3' # ./00036-Martial3.mws.yaml
-  # ../en-US.restext:288 | "End of Round"
+  # ../en-US.restext:290 | "End of Round"
   okay: 'restext://UIButton_EndOfRound'
   onclose:
   - type: 'assign'
@@ -24,5 +24,5 @@ nodes:
   - type: 'break'
     style: 'paragraph'
   - type: 'text'
-    # ../en-US.restext:63 | "Complete all End of Round..."
+    # ../en-US.restext:64 | "Complete all End of Round..."
     value: 'restext://Directive_CompleteEndOfRoundActionsNow'

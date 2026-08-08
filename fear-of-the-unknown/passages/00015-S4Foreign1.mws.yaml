@@ -15,11 +15,11 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3390
   - type: 'popup'
     layout: 'end_of_generation'
-    # ../en-US.restext:369 | "Confirm"
+    # ../en-US.restext:370 | "Confirm"
     okay: 'restext://UIButton_Confirm'
     content:
     - type: 'text'
-      # ../en-US.restext:87 | "Remove all player pieces ..."
+      # ../en-US.restext:92 | "Remove all player pieces ..."
       value: 'restext://Directive_EndGeneration_ReturnStorybookSpace35'
     - type: 'let'
       var: 'generation'
@@ -28,18 +28,18 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3395
   - type: 'popup'
     layout: 'end_of_generation'
-    # ../en-US.restext:369 | "Confirm"
+    # ../en-US.restext:370 | "Confirm"
     okay: 'restext://UIButton_Confirm'
     content:
     - type: 'text'
-      # ../en-US.restext:85 | "Remove all player pieces ..."
+      # ../en-US.restext:90 | "Remove all player pieces ..."
       value: 'restext://Directive_EndGeneration_Bare'
     - type: 'let'
       var: 'generation'
       expr: '6'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3400
 - type: 'text'
-  # ../en-US.restext:191 | "**Newsprint - {newspaper}..."
+  # ../en-US.restext:192 | "**Newsprint - {newspaper}..."
   value: 'restext://Heading_Newsprint_13Feb1891'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3410
 - type: 'assign'
@@ -71,7 +71,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3428
 - type: 'text'
-  # ../en-US.restext:100 | "If "
+  # ../en-US.restext:105 | "If "
   value: 'restext://Directive_IfFragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3431
 - type: 'switch'

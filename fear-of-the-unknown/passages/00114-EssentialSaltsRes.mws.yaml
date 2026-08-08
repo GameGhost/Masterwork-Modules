@@ -8,7 +8,7 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:13964
 - type: 'text'
-  # ../en-US.restext:174 | "**Journal of {randomname}..."
+  # ../en-US.restext:177 | "**Journal of {randomname}..."
   value: 'restext://Heading_JournalOfRandomname_Cont'
 # ../.source/FearoftheUnknown_Eng_v15.cs:13973
 - type: 'break'
@@ -47,7 +47,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 19 ? "LiberalEvent3" : ["LiberalEvent", "LiberalTaxes"].shuffled("EssentialSaltsRes_0")[0]}' # ./00258-LiberalEvent3.mws.yaml, ./00054-LiberalEvent.mws.yaml, ./00101-LiberalTaxes.mws.yaml
-  # ../en-US.restext:368 | "Close"
+  # ../en-US.restext:369 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:

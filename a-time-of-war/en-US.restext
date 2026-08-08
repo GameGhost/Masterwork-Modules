@@ -48,6 +48,7 @@ Click_ToReceiveSpecialBonus=click here to receive a special bonus.
 Click_WheneverVisitTownHall=Click here whenever you visit the Town Hall.
 Common_001=Gift of Silence
 Common_002=Suspicions Confirmed
+Common_003=Paradox
 Common_VersionOnePointZero=v1.0
 Countdown_One=1
 Countdown_Reveal=REVEAL
@@ -161,6 +162,7 @@ Heading_ScienceAtAnyCost=**Science At any Cost**
 Heading_ScienceIsStressful=**Science is Stressful**
 Heading_SecondRoundPledgeOfSupport=**Second Round - Pledge of Support**
 Heading_SeparatistAllegiance=**Separatist Allegiance**
+Heading_ServiceRequired=**Service Required**
 Heading_StorybookToken_ParadoxExplanation={icon:storybooktoken} **Paradox Explanation**
 Heading_StorybookToken_ParadoxicalMendingReward={icon:storybooktoken} **Paradoxical Mending Reward**
 Heading_StorybookToken_RepairTimeMachine={icon:storybooktoken} **Repair the Time Machine**
@@ -439,7 +441,6 @@ TimeTravel3_002=Before the end of the Generation, all players must take an actio
 TimeTravel3_003=If you do not have a piece of your color on the Barracks at the End of the Generation, you will **lose 5VP**.
 
 # passages/00019-TimeEnd1.mws.yaml
-TimeEnd1_001=**Paradox**
 TimeEnd1_003=Time continued on as normal. However, I was unclear as to whether meddling with divine absolutes had altered the reality that I once knew.
 TimeEnd1_004=**Count the total number of {icon:s3_paradoxtoken} markers left on all players' Experiments:** 
 TimeEnd1_005=If the number is **{dox}** or more, there is a chance that the timeline has been altered. 
@@ -447,15 +448,15 @@ TimeEnd1_006=Click here to continue
 TimeEnd1_007=If the number of {icon:s3_paradoxtoken} tokens remaining is fewer, the timeline appears normal. 
 
 # passages/00020-TimeEnd2.mws.yaml
-TimeEnd2_001=**Rusty, But Worth a Try**Forced to confront the spectre of mortality in my final years, I knew that without swift, decisive action, I might never have the opportunity to see the results of my journey through time.
-TimeEnd2_002=I, for one, was ready to busk it. Though the machine that bore us was left incomplete, perhaps it was stout enough to risk a second voyage.
-TimeEnd2_003=**How many of the** _Time Machine Repairs_ **Experiments have you repaired in total?**
-TimeEnd2_004=Zero.
-TimeEnd2_006=One.
-TimeEnd2_007=one piece
-TimeEnd2_008=Two.
-TimeEnd2_009=two pieces
-TimeEnd2_010=**Fully Repaired**
+TimeEnd2_001=Fully Repaired
+TimeEnd2_002=**Rusty, But Worth a Try**Forced to confront the spectre of mortality in my final years, I knew that without swift, decisive action, I might never have the opportunity to see the results of my journey through time.
+TimeEnd2_003=I, for one, was ready to busk it. Though the machine that bore us was left incomplete, perhaps it was stout enough to risk a second voyage.
+TimeEnd2_004=**How many of the** _Time Machine Repairs_ **Experiments have you repaired in total?**
+TimeEnd2_005=Zero.
+TimeEnd2_007=One.
+TimeEnd2_008=one piece
+TimeEnd2_009=Two.
+TimeEnd2_010=two pieces
 TimeEnd2_011=I knew that I had completed the infernal **Time Machine** to the utmost of my ability, meticulously inspecting each individual part, many of which were far more advanced than anything the world had thus far envisioned.
 TimeEnd2_012=Though my years have advanced and my vigor has left me, it is my hope that this final act will ensure the lustrous future which war had wrenched from me so long ago. Once more I venture into this box so my eyes will witness what I have wrought. Whether it is my coffin or my ship to sail amongst the cosmos, I welcome what fate lies in store for me.
 
@@ -810,12 +811,12 @@ BattleTime_007=Click to begin the battle...
 Paradox2_005= at the end of the Generation will gain this tile at no cost. _If there is a tie, the one with the fewest VP receives the tile._
 
 # passages/00074-ParadoxEvent.mws.yaml
-ParadoxEvent_001=**Monument to Progress**
-ParadoxEvent_002=The town offered a token of their appreciation for setting their trajectory towards a Utopian future.
-ParadoxEvent_003=The player with the most completed Utopian Experiments **gains the In Memoriam** Estate Upgrade.
-ParadoxEvent_004=The player who has moved the furthest along the {icon:insanity_icon} Track **gains the In Memoriam** Estate Upgrade.
-ParadoxEvent_005= _If there is a tie, the one with the fewest VP receives the tile. If still tied, the tile is discarded._ This upgrade can be placed into a new slot at no expansion cost.
-ParadoxEvent_006=**Rebuilding**
+ParadoxEvent_001=Monument to Progress
+ParadoxEvent_002=Rebuilding
+ParadoxEvent_003=The town offered a token of their appreciation for setting their trajectory towards a Utopian future.
+ParadoxEvent_004=The player with the most completed Utopian Experiments **gains the In Memoriam** Estate Upgrade.
+ParadoxEvent_005=The player who has moved the furthest along the {icon:insanity_icon} Track **gains the In Memoriam** Estate Upgrade.
+ParadoxEvent_006= _If there is a tie, the one with the fewest VP receives the tile. If still tied, the tile is discarded._ This upgrade can be placed into a new slot at no expansion cost.
 ParadoxEvent_007=With no monument built, the remaining people in the region set to the unfortunate task of reconstructing a landscape torn apart by time paradoxes and interdimensional beings.
 ParadoxEvent_008=It was a bitter pill to swallow. I had done so much; given so much of myself. To receive no reward for offering the gift of time travel to the world - despite the total and utter chaos it affected - tainted my otherwise impeccable reputation.
 
@@ -1408,8 +1409,8 @@ RoyalDecreeExplain_013=Anytime you visit the **Royal Advisor** and pay $1, you w
 RoyalDecreeExplain_014=The player who performs the **most Decrees** will receive a bonus at the End of the Generation.
 
 # passages/00157-BarracksSimple1.mws.yaml
-BarracksSimple1_004=gains **{_rnd_BarracksSimple1_0}**{icon:creepy_icon}.
-BarracksSimple1_006=**must** immediately lose **{_rnd_BarracksSimple1_1}VP**.
+BarracksSimple1_005=gains **{_rnd_BarracksSimple1_0}**{icon:creepy_icon}.
+BarracksSimple1_007=**must** immediately lose **{_rnd_BarracksSimple1_1}VP**.
 
 # passages/00158-BarracksSimple2.mws.yaml
 BarracksSimple2_001=gains **{_rnd_BarracksSimple2_0}**{icon:creepy_icon}.
@@ -1620,13 +1621,12 @@ DuelResolution1_006=Click to begin the duel...
 DuelResolution1_010=Occult
 
 # passages/00183-DuelResolution1a.mws.yaml
-DuelResolution1a_001={duelsci}
-DuelResolution1a_002=The Moment of Truth
-DuelResolution1a_003=At a distance of twenty paces, I turned and fired. I heard the report of two shots before a cloud of smoke blurred my vision. In my shocked state, I could not determine if this was two clear shots or the single bullet from my own chamber and the echo of its blast shattering the stillness of the morning.
-DuelResolution1a_004=The scientific duel will be **{duelsci}**.
-DuelResolution1a_005={sabotagee1} and {playersabotage1} now count how many Levels they have moved their Journal Track forward in {duelsci}.
-DuelResolution1a_006=They then count how many of their completed Experiments (including stored) are of the type {duelsci}.
-DuelResolution1a_007=Each player adds these two numbers together to determine their total individual scientific prowess. _(For example, Level 1 in {duelsci} plus 2 completed {duelsci} Experiments would equal a total of 3.)_
+DuelResolution1a_001=The Moment of Truth
+DuelResolution1a_002=At a distance of twenty paces, I turned and fired. I heard the report of two shots before a cloud of smoke blurred my vision. In my shocked state, I could not determine if this was two clear shots or the single bullet from my own chamber and the echo of its blast shattering the stillness of the morning.
+DuelResolution1a_003=The scientific duel will be **{duelsci}**.
+DuelResolution1a_004={sabotagee1} and {playersabotage1} now count how many Levels they have moved their Journal Track forward in {duelsci}.
+DuelResolution1a_005=They then count how many of their completed Experiments (including stored) are of the type {duelsci}.
+DuelResolution1a_006=Each player adds these two numbers together to determine their total individual scientific prowess. _(For example, Level 1 in {duelsci} plus 2 completed {duelsci} Experiments would equal a total of 3.)_
 
 # passages/00184-DuelResolution1b.mws.yaml
 DuelResolution1b_001=An Unfortunate Death
@@ -1765,7 +1765,7 @@ NobodyFigures_003=While the masses could never fully appreciate the breadth of s
 NobodyFigures_004=Remove the Suspicion Marker and {icon:angrymob_icon} Marker from the {icon:creepy_icon} Track. Retrieve the {figure} token and place it on space **{accolade}** of the {icon:creepy_icon} Track.
 
 # passages/00202-SecretParadoxBonus.mws.yaml
-SecretParadoxBonus_001=**Chaos Theory**
+SecretParadoxBonus_001=Chaos Theory
 SecretParadoxBonus_002=Sometimes, resistance carried with it hidden rewards. By studying the effects of rifts in time, I unlocked a new understanding of fourth-dimensional forces that others would never dare to discover. Only the boldest and brightest flames survive the winds of chaos, and I would blaze forward until my last breath!
 SecretParadoxBonus_003=The player(s) with the most {icon:s3_paradoxtoken} tokens remaining on their Experiments gains **4VP** and may immediately advance their lowest Journal Track 1 space at no cost (_if multiple tracks are lowest, they may choose_).
 SecretParadoxBonus_004=You must have at least 1 {icon:s3_paradoxtoken} token to gain this bonus.
@@ -1935,15 +1935,15 @@ WhoopsUtopianb_002=If one could procure the additional materials required to cre
 ATOW_CommonCode_001=**Carefully hand this storybook device to {nameA} and do not allow any other players to see the screen.**
 
 # passages/00236-BattleCompleteReturn.mws.yaml
-BattleCompleteReturn_001=Engagement
-BattleCompleteReturn_002=Campaign
-BattleCompleteReturn_003=**{_rnd_BattleCompleteReturn_0} Complete**
+BattleCompleteReturn_001={_rnd_BattleCompleteReturn_0} Complete
+BattleCompleteReturn_002=Engagement
+BattleCompleteReturn_003=Campaign
 BattleCompleteReturn_004=All players return their unused {icon:s3_weapontoken} tokens to their Quarters. Return the Occult cube to the upper-most available square on the World Conquest card.
 BattleCompleteReturn_005=Click to move to the next round...
 
 # passages/00237-ATOW-FamineEventYes.mws.yaml
-ATOW_FamineEventYes_001=Carefully pass the Storybook to the player who won the bid. Please enter the name of the new meat product:
-ATOW_FamineEventYes_002=**A Modest Proposal**
+ATOW_FamineEventYes_001=A Modest Proposal
+ATOW_FamineEventYes_002=Carefully pass the Storybook to the player who won the bid. Please enter the name of the new meat product:
 ATOW_FamineEventYes_003=The riots ceased and a calm set in across the valley. With an influx of fresh, surprisingly tender cuts of **{newmeat}** and the introduction of salted, canned **{newmeat}** rations, the effort at home and abroad was bolstered immeasurably. Faced with the prospect of starvation, it was startling how readily individuals would not question how a famine could provide such a bounteous wintry season. 
 ATOW_FamineEventYes_004=All players **gain 2** {icon:insanity_icon}. 
 
@@ -2194,9 +2194,9 @@ _2PFamineBid_004=_(Ties are broken by the player who went last during the Early 
 _2PFamineBid_005=Click here to start the bid...
 
 # passages/00285-2pFamineBidRes.mws.yaml
-_2pFamineBidRes_001=The player who bid the most coins pays them to supply and **gains 4VP.** _(Ties are broken by the player who went last during the Early Years)._
-_2pFamineBidRes_002=They then make the following choice. 
-_2pFamineBidRes_003=**Bid Outcome**
+_2pFamineBidRes_001=Bid Outcome
+_2pFamineBidRes_002=The player who bid the most coins pays them to supply and **gains 4VP.** _(Ties are broken by the player who went last during the Early Years)._
+_2pFamineBidRes_003=They then make the following choice. 
 _2pFamineBidRes_004=**Please choose whether to release the new meat product:**
 
 # passages/00286-CommemorativeStatueEventb.mws.yaml
@@ -2396,13 +2396,13 @@ Reign7b_001=Delayed Thanks
 Reign7b_002=The advisor, when he resumed consciousness, thanked me for the assistance. I informed him that the business was secured and the people would be overjoyed with his decisiveness. 
 
 # passages/00315-SeedResolution.mws.yaml
-SeedResolution_001=**An Investor's Paradise**
-SeedResolution_002=Even in their sunset years, my parents operated their business interests with a voracity - and veracity - that could only be seen to be believed. If I can be perfectly quaint, the glitter of coin held little interest to me, yet the wondrous things which I could procure with it certainly reignited the fires of ambition within me as my hair grew ever ashen.
-SeedResolution_003=Soon, it was impossible for {townname}to ignore the genius that existed just outside its very limits. The region would be celebrated for the **money** my family had brought to it, and I savored the victory from the shadows, knowing I would reap all the benefits.
-SeedResolution_004=**A Place of Knowledge**
-SeedResolution_005=I watched from my clandestine position as a singular corner in the secret laboratory became a storage place for various notes and torn pages from old manuscripts. With each passing evening, this obsessive collection of knowledge spilled onto the stone floors and tacked up on the walls like an artist's studio, spreading across the room like brown leaves on a brilliant vine. Such a wealth of knowledge, the likes of which I had never witnessed in all of my years at university.
-SeedResolution_006=Soon, it was impossible for {townname}to ignore the genius that existed just outside its very limits. The region would be celebrated for the **knowledge** my family had brought to it, and I savored the victory from the shadows, knowing I would reap all the benefits.
-SeedResolution_007=**A Wealth of Goods**
+SeedResolution_001=A Place of Knowledge
+SeedResolution_002=A Wealth of Goods
+SeedResolution_003=An Investor's Paradise
+SeedResolution_004=Even in their sunset years, my parents operated their business interests with a voracity - and veracity - that could only be seen to be believed. If I can be perfectly quaint, the glitter of coin held little interest to me, yet the wondrous things which I could procure with it certainly reignited the fires of ambition within me as my hair grew ever ashen.
+SeedResolution_005=Soon, it was impossible for {townname}to ignore the genius that existed just outside its very limits. The region would be celebrated for the **money** my family had brought to it, and I savored the victory from the shadows, knowing I would reap all the benefits.
+SeedResolution_006=I watched from my clandestine position as a singular corner in the secret laboratory became a storage place for various notes and torn pages from old manuscripts. With each passing evening, this obsessive collection of knowledge spilled onto the stone floors and tacked up on the walls like an artist's studio, spreading across the room like brown leaves on a brilliant vine. Such a wealth of knowledge, the likes of which I had never witnessed in all of my years at university.
+SeedResolution_007=Soon, it was impossible for {townname}to ignore the genius that existed just outside its very limits. The region would be celebrated for the **knowledge** my family had brought to it, and I savored the victory from the shadows, knowing I would reap all the benefits.
 SeedResolution_008=Ingredients lay stacked in haphazard piles along the stone floor of the laboratory. The estate grounds were well-grazed by the exotic display of zoological treats my parents collected. It was difficult to maintain my secretive ruse as an oblivious family member with such a wealth of potential hiding just below my feet. It was a magnificent sight.
 SeedResolution_009=Soon, it was impossible for {townname}to ignore the genius that existed just outside its very limits. The region would be celebrated for the **goods** my family had brought to it, and I savored the victory from the shadows, knowing I would reap all the benefits.
 SeedResolution_010=The player with the Storybook token on their Estate gains **gains $2** and **gains a Compulsion**. Then, return the Storybook token to the supply.

@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TenseEventBad2b'
-# ../en-US.restext:2516 | "Conspiracy to Purloin"
+# ../en-US.restext:2515 | "Conspiracy to Purloin"
 title: 'restext://TenseEventBad2b_001'
 layout: 'narration'
 nodes:
@@ -15,28 +15,28 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33551
 - type: 'text'
-  # ../en-US.restext:140 | "Each player takes a votin..."
+  # ../en-US.restext:145 | "Each player takes a votin..."
   value: 'restext://Directive_VotingTokenRevealVotes'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33553
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33557
 - type: 'text'
-  # ../en-US.restext:2517 | "**YAY:** Vote to steal **..."
+  # ../en-US.restext:2516 | "**YAY:** Vote to steal **..."
   value: 'restext://TenseEventBad2b_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33587
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33591
 - type: 'text'
-  # ../en-US.restext:2518 | "**NAY:** Vote to acquire ..."
+  # ../en-US.restext:2517 | "**NAY:** Vote to acquire ..."
   value: 'restext://TenseEventBad2b_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33595
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33597
 - type: 'text'
-  # ../en-US.restext:2519 | "Then, tally the vote coun..."
+  # ../en-US.restext:2518 | "Then, tally the vote coun..."
   value: 'restext://TenseEventBad2b_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33602
 - type: 'break'
@@ -48,7 +48,7 @@ nodes:
   label: 'restext://Click_StartVote'
   content:
   - type: 'text'
-    # ../en-US.restext:374 | "Click on the 'Start Votin..."
+    # ../en-US.restext:375 | "Click on the 'Start Votin..."
     value: 'restext://Voting_Instructions'
   - type: 'break'
     style: 'paragraph'
@@ -59,27 +59,27 @@ nodes:
     style: 'paragraph'
   - type: 'popup'
     layout: 'countdown_action'
-    # ../en-US.restext:375 | "Start Voting"
+    # ../en-US.restext:376 | "Start Voting"
     label: 'restext://Voting_StartButton'
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:67 | "3"
+      # ../en-US.restext:72 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:68 | "2"
+      # ../en-US.restext:73 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:65 | "1"
+      # ../en-US.restext:70 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:66 | "REVEAL"
+      # ../en-US.restext:71 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:66 | "REVEAL"
+    # ../en-US.restext:71 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: 'TenseEventBad2Res' # ./00342-TenseEventBad2Res.mws.yaml
     snapshot: false

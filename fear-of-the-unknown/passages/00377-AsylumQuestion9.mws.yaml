@@ -2,15 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'AsylumQuestion9'
-# ../en-US.restext:2856 | "You are presenting your f..."
-title: 'restext://AsylumQuestion9_001'
 tags:
 - 'revised'
 layout: 'narration'
 nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:37601
+- type: 'text'
+  # ../en-US.restext:2853 | "**You are presenting your..."
+  value: 'restext://AsylumQuestion9_001'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37605
+- type: 'break'
+  style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:37608
 - type: 'link'
-  # ../en-US.restext:2857 | "What is this question? Ho..."
+  # ../en-US.restext:2854 | "What is this question? Ho..."
   label: 'restext://AsylumQuestion9_002'
   target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
   snapshot: true
@@ -28,7 +33,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:37613
 - type: 'link'
-  # ../en-US.restext:2858 | "I thoughtfully consider t..."
+  # ../en-US.restext:2855 | "I thoughtfully consider t..."
   label: 'restext://AsylumQuestion9_003'
   target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
   snapshot: true
@@ -42,7 +47,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:37617
 - type: 'link'
-  # ../en-US.restext:2859 | "This will never happen."
+  # ../en-US.restext:2856 | "This will never happen."
   label: 'restext://AsylumQuestion9_004'
   target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
   snapshot: true
@@ -60,7 +65,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:37621
 - type: 'link'
-  # ../en-US.restext:2860 | "Kill them and replace the..."
+  # ../en-US.restext:2857 | "Kill them and replace the..."
   label: 'restext://AsylumQuestion9_005'
   target: 'AsylumTest1' # ./00379-AsylumTest1.mws.yaml
   snapshot: true

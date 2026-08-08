@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'DetEffectRandom'
-# ../en-US.restext:1482 | "The Effects of Immortality"
+# ../en-US.restext:1488 | "The Effects of Immortality"
 title: 'restext://DetEffectRandom_001'
 layout: 'narration'
 nodes:
@@ -23,27 +23,27 @@ nodes:
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:19231
       - type: 'text'
-        # ../en-US.restext:1483 | "**- Early Years**"
+        # ../en-US.restext:1489 | "**- Early Years**"
         value: 'restext://DetEffectRandom_002'
     - match: 17
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:19236
       - type: 'text'
-        # ../en-US.restext:1484 | "**- Middle Years**"
+        # ../en-US.restext:1490 | "**- Middle Years**"
         value: 'restext://DetEffectRandom_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:19248
   - type: 'let'
     var: '_rnd_DetEffectRandom_0'
-    # ../en-US.restext:1485 | DetEffectRandom_004 | "as a spider held by a thr..."
-    # ../en-US.restext:1486 | DetEffectRandom_005 | "as a candle flame amongst..."
-    # ../en-US.restext:1487 | DetEffectRandom_006 | "as a pendulous dagger per..."
+    # ../en-US.restext:1491 | DetEffectRandom_004 | "as a spider held by a thr..."
+    # ../en-US.restext:1492 | DetEffectRandom_005 | "as a candle flame amongst..."
+    # ../en-US.restext:1493 | DetEffectRandom_006 | "as a pendulous dagger per..."
     expr: '["restext://DetEffectRandom_004", "restext://DetEffectRandom_005", "restext://DetEffectRandom_006"].shuffled("DetEffectRandom_0")[0]'
   # ../.source/TheCostofDisease_Eng_v10.cs:19239
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:19247
   - type: 'text'
-    # ../en-US.restext:1488 | "It cannot be overstated: ..."
+    # ../en-US.restext:1494 | "It cannot be overstated: ..."
     value: 'restext://DetEffectRandom_007'
     lets:
     - '_rnd_DetEffectRandom_0'
@@ -52,7 +52,7 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:19251
   - type: 'link'
-    # ../en-US.restext:1489 | "Click to see the effects..."
+    # ../en-US.restext:1495 | "Click to see the effects..."
     label: 'restext://DetEffectRandom_008'
     target: 'EffectRandomizer' # ./00279-EffectRandomizer.mws.yaml
     snapshot: true

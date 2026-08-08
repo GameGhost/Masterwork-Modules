@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'BattleTime'
-# ../en-US.restext:801 | "Glory and Recognition"
+# ../en-US.restext:802 | "Glory and Recognition"
 title: 'restext://BattleTime_001'
 layout: 'narration'
 nodes:
@@ -31,9 +31,9 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:9772
 - type: 'let'
   var: '_rnd_BattleTime_1'
-  # ../en-US.restext:802 | BattleTime_002 | "I alone deserved recognit..."
-  # ../en-US.restext:803 | BattleTime_003 | "The fate of the world res..."
-  # ../en-US.restext:804 | BattleTime_004 | "Fame meant little to me i..."
+  # ../en-US.restext:803 | BattleTime_002 | "I alone deserved recognit..."
+  # ../en-US.restext:804 | BattleTime_003 | "The fate of the world res..."
+  # ../en-US.restext:805 | BattleTime_004 | "Fame meant little to me i..."
   expr: '["restext://BattleTime_002", "restext://BattleTime_003", "restext://BattleTime_004"].shuffled("BattleTime_4")[0]'
 # ../.source/ATimeofWar_Eng_v8.cs:9772
 - type: 'text'
@@ -45,41 +45,41 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:9777
 - type: 'text'
-  # ../en-US.restext:181 | "**To Battle**"
+  # ../en-US.restext:183 | "**To Battle**"
   value: 'restext://Heading_ToBattle'
 # ../.source/ATimeofWar_Eng_v8.cs:9779
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:9780
 - type: 'text'
-  # ../en-US.restext:805 | "All players take all thei..."
+  # ../en-US.restext:806 | "All players take all thei..."
   value: 'restext://BattleTime_005'
 # ../.source/ATimeofWar_Eng_v8.cs:9784
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:9786
 - type: 'text'
-  # ../en-US.restext:806 | "The player(s) who reveale..."
+  # ../en-US.restext:807 | "The player(s) who reveale..."
   value: 'restext://BattleTime_006'
 # ../.source/ATimeofWar_Eng_v8.cs:9796
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:9798
 - type: 'text'
-  # ../en-US.restext:101 | "This process is then repe..."
+  # ../en-US.restext:102 | "This process is then repe..."
   value: 'restext://Directive_RepeatOccultCubeNextSquare'
 # ../.source/ATimeofWar_Eng_v8.cs:9800
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:9804
 - type: 'text'
-  # ../en-US.restext:105 | "_You must reveal at least..."
+  # ../en-US.restext:106 | "_You must reveal at least..."
   value: 'restext://Directive_RevealAtLeast1TokenForPoints'
 # ../.source/ATimeofWar_Eng_v8.cs:9807
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:9809
 - type: 'link'
-  # ../en-US.restext:807 | "Click to begin the battle..."
+  # ../en-US.restext:808 | "Click to begin the battle..."
   label: 'restext://BattleTime_007'
   target: 'BattleCompleteReturn' # ./00236-BattleCompleteReturn.mws.yaml
   snapshot: true

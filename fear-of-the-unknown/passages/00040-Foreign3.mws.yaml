@@ -33,13 +33,13 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6348
 - type: 'section'
-  # ../en-US.restext:228 | "{icon:storybooktoken} **T..."
+  # ../en-US.restext:229 | "{icon:storybooktoken} **T..."
   title: 'restext://Heading_StorybookToken_TownStrength'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6360
   - type: 'text'
-    # ../en-US.restext:103 | "Players may visit the Tow..."
+    # ../en-US.restext:108 | "Players may visit the Tow..."
     value: 'restext://Directive_MemorialBrickPurchase_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6370
   - type: 'link'
@@ -52,7 +52,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6377
 - type: 'section'
-  # ../en-US.restext:176 | "**Key to the City**"
+  # ../en-US.restext:179 | "**Key to the City**"
   title: 'restext://Heading_KeyToTheCity'
   style: 'hub-card'
   content:
@@ -77,13 +77,13 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6413
   - type: 'section'
-    # ../en-US.restext:223 | "{icon:storybooktoken} **P..."
+    # ../en-US.restext:224 | "{icon:storybooktoken} **P..."
     title: 'restext://Heading_StorybookToken_PressingForward'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6422
     - type: 'text'
-      # ../en-US.restext:101 | "If a player reaches 35VP, "
+      # ../en-US.restext:106 | "If a player reaches 35VP, "
       value: 'restext://Directive_IfPlayerReaches35VP_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:6424
     - type: 'conditional'
@@ -113,7 +113,7 @@ nodes:
     # ../en-US.restext:32 | "Click here at the End of ..."
     label: 'restext://Click_EndGeneration_DetermineFate'
     target: 'S4IsoBrick' # ./00035-S4IsoBrick.mws.yaml
-    # ../en-US.restext:372 | "End of Round"
+    # ../en-US.restext:373 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'

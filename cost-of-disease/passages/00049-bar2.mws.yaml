@@ -2,6 +2,10 @@
 ---
 format: 'mws/0.4'
 passage_id: 'bar2'
+# ../en-US.restext:73 | "SWORN STATEMENT"
+title: 'restext://Common_006'
+# ../en-US.restext:707 | "Case {_rnd_bar2_0}-HDG-{_..."
+subtitle: 'restext://bar2_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:6324
@@ -12,20 +16,10 @@ nodes:
 - type: 'let'
   var: '_rnd_bar2_1'
   expr: 'rand_between(1, 999, "bar2_1")'
-# ../.source/TheCostofDisease_Eng_v10.cs:6323
-- type: 'text'
-  # ../en-US.restext:707 | "**SWORN STATEMENT - Case ..."
-  value: 'restext://bar2_001'
-  lets:
-  - '_rnd_bar2_0'
-  - '_rnd_bar2_1'
 # ../.source/TheCostofDisease_Eng_v10.cs:6329
 - type: 'assign'
   var: 'bar2'
   expr: 'rand_between(1, 2, "bar2_2")'
-# ../.source/TheCostofDisease_Eng_v10.cs:6328
-- type: 'break'
-  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:6331
 - type: 'conditional'
   if: 'bar2 == 1'
@@ -67,9 +61,6 @@ nodes:
   - type: 'text'
     # ../en-US.restext:710 | "Despite my personal objec..."
     value: 'restext://bar2_004'
-# ../.source/TheCostofDisease_Eng_v10.cs:6366
-- type: 'break'
-  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:6370
 - type: 'popup'
   layout: 'setup'

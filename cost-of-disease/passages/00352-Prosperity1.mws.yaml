@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Prosperity1'
-# ../en-US.restext:2798 | "The Good Fight"
+# ../en-US.restext:2806 | "The Good Fight"
 title: 'restext://Prosperity1_001'
 # ../en-US.restext:332 | "Early Years"
 subtitle: 'restext://Title_EarlyYears'
@@ -14,7 +14,7 @@ nodes:
   expr: '13'
 # ../.source/TheCostofDisease_Eng_v10.cs:13007
 - type: 'conditional'
-  # ../en-US.restext:126 | "Order of St. Hubertus"
+  # ../en-US.restext:127 | "Order of St. Hubertus"
   if: 'society == "restext://Faction_OrderOfStHubertus_Plain"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:13009
@@ -38,7 +38,7 @@ nodes:
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:13018
       - type: 'text'
-        # ../en-US.restext:2801 | "Turn to page **17** of th..."
+        # ../en-US.restext:2809 | "Turn to page **17** of th..."
         value: 'restext://Prosperity1_004'
       # ../.source/TheCostofDisease_Eng_v10.cs:13027
       - type: 'conditional'
@@ -70,7 +70,7 @@ nodes:
               expr: 'tracker - 1'
       # ../.source/TheCostofDisease_Eng_v10.cs:13040
       - type: 'text'
-        # ../en-US.restext:2802 | "**{tracker}** and the {ic..."
+        # ../en-US.restext:2810 | "**{tracker}** and the {ic..."
         value: 'restext://Prosperity1_005'
       # ../.source/TheCostofDisease_Eng_v10.cs:13050
       - type: 'conditional'
@@ -78,14 +78,14 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:13052
         - type: 'text'
-          # ../en-US.restext:81 | "Then, since this is a 3 p..."
+          # ../en-US.restext:82 | "Then, since this is a 3 p..."
           value: 'restext://Directive_3Player_PassMarker_A'
       # ../.source/TheCostofDisease_Eng_v10.cs:13055
       - type: 'break'
         style: 'paragraph'
       # ../.source/TheCostofDisease_Eng_v10.cs:13057
       - type: 'text'
-        # ../en-US.restext:2803 | "Place a {icon:storybook} ..."
+        # ../en-US.restext:2811 | "Place a {icon:storybook} ..."
         value: 'restext://Prosperity1_006'
       # ../.source/TheCostofDisease_Eng_v10.cs:13062
       - type: 'break'
@@ -96,7 +96,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:13073
         - type: 'text'
-          # ../en-US.restext:104 | "Place the {ba} tile over ..."
+          # ../en-US.restext:105 | "Place the {ba} tile over ..."
           value: 'restext://Directive_PlaceTile_A'
         # ../.source/TheCostofDisease_Eng_v10.cs:13076
         - type: 'break'
@@ -106,7 +106,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:13080
         - type: 'text'
-          # ../en-US.restext:105 | "Place the {bb} tile over ..."
+          # ../en-US.restext:106 | "Place the {bb} tile over ..."
           value: 'restext://Directive_PlaceTile_B'
         # ../.source/TheCostofDisease_Eng_v10.cs:13083
         - type: 'break'
@@ -116,7 +116,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:13087
         - type: 'text'
-          # ../en-US.restext:2800 | "Place the {bc} tile over ..."
+          # ../en-US.restext:2808 | "Place the {bc} tile over ..."
           value: 'restext://Prosperity1_003'
         # ../.source/TheCostofDisease_Eng_v10.cs:13090
         - type: 'break'
@@ -124,56 +124,53 @@ nodes:
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:13093
       - type: 'text'
-        # ../en-US.restext:108 | "Return all other Exposed ..."
+        # ../en-US.restext:109 | "Return all other Exposed ..."
         value: 'restext://Directive_ReturnExposedBuildingTiles'
-  # ../.source/TheCostofDisease_Eng_v10.cs:13096
-  - type: 'break'
-    style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:13100
   - type: 'section'
-    # ../en-US.restext:141 | "**Acceptance**"
+    # ../en-US.restext:142 | "**Acceptance**"
     title: 'restext://Heading_Acceptance'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:13108
     - type: 'text'
-      # ../en-US.restext:84 | "Caretaker pieces can now ..."
+      # ../en-US.restext:85 | "Caretaker pieces can now ..."
       value: 'restext://Directive_CaretakerTownActions_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:13114
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:13118
   - type: 'section'
-    # ../en-US.restext:178 | "**School for Hybridized I..."
+    # ../en-US.restext:179 | "**School for Hybridized I..."
     title: 'restext://Heading_SchoolForHybridizedIndividuals'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:13126
     - type: 'text'
-      # ../en-US.restext:315 | "When a player visits the ..."
+      # ../en-US.restext:316 | "When a player visits the ..."
       value: 'restext://SchoolForHybridizedIndividuals_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:13143
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:13147
   - type: 'section'
-    # ../en-US.restext:156 | "**Experiments are Feared**"
+    # ../en-US.restext:157 | "**Experiments are Feared**"
     title: 'restext://Heading_ExperimentsAreFeared'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:13154
     - type: 'text'
-      # ../en-US.restext:289 | "Anytime a player takes th..."
+      # ../en-US.restext:290 | "Anytime a player takes th..."
       value: 'restext://Resource_ExperimentGainsCreepy_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:13160
   - type: 'section'
-    # ../en-US.restext:142 | "{icon:storybook} **Angry Mob**"
+    # ../en-US.restext:143 | "{icon:storybook} **Angry Mob**"
     title: 'restext://Heading_AngryMob'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:13170
     - type: 'text'
-      # ../en-US.restext:2804 | "Any time the {icon:angrym..."
+      # ../en-US.restext:2812 | "Any time the {icon:angrym..."
       value: 'restext://Prosperity1_007'
     # ../.source/TheCostofDisease_Eng_v10.cs:13175
     - type: 'link'
@@ -199,12 +196,12 @@ nodes:
       snapshot: true
       content:
       - type: 'text'
-        # ../en-US.restext:307 | "The Early Years of the Th..."
+        # ../en-US.restext:308 | "The Early Years of the Th..."
         value: 'restext://Round_GenerationIII_EarlyEnded'
       - type: 'break'
         style: 'paragraph'
       - type: 'text'
-        # ../en-US.restext:314 | "Then, perform all Start o..."
+        # ../en-US.restext:315 | "Then, perform all Start o..."
         value: 'restext://Round_StartMiddleYears_Rule'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:13188
@@ -224,7 +221,7 @@ nodes:
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:13197
       - type: 'text'
-        # ../en-US.restext:2799 | "Turn to page **15** of th..."
+        # ../en-US.restext:2807 | "Turn to page **15** of th..."
         value: 'restext://Prosperity1_002'
       # ../.source/TheCostofDisease_Eng_v10.cs:13216
       - type: 'conditional'
@@ -232,7 +229,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:13218
         - type: 'text'
-          # ../en-US.restext:82 | "Then, since this is a 3-p..."
+          # ../en-US.restext:83 | "Then, since this is a 3-p..."
           value: 'restext://Directive_3Player_PassMarker_B'
       # ../.source/TheCostofDisease_Eng_v10.cs:13221
       - type: 'break'
@@ -243,7 +240,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:13225
         - type: 'text'
-          # ../en-US.restext:104 | "Place the {ba} tile over ..."
+          # ../en-US.restext:105 | "Place the {ba} tile over ..."
           value: 'restext://Directive_PlaceTile_A'
         # ../.source/TheCostofDisease_Eng_v10.cs:13228
         - type: 'break'
@@ -253,7 +250,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:13232
         - type: 'text'
-          # ../en-US.restext:105 | "Place the {bb} tile over ..."
+          # ../en-US.restext:106 | "Place the {bb} tile over ..."
           value: 'restext://Directive_PlaceTile_B'
         # ../.source/TheCostofDisease_Eng_v10.cs:13235
         - type: 'break'
@@ -263,7 +260,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:13239
         - type: 'text'
-          # ../en-US.restext:2800 | "Place the {bc} tile over ..."
+          # ../en-US.restext:2808 | "Place the {bc} tile over ..."
           value: 'restext://Prosperity1_003'
         # ../.source/TheCostofDisease_Eng_v10.cs:13242
         - type: 'break'
@@ -271,46 +268,43 @@ nodes:
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:13245
       - type: 'text'
-        # ../en-US.restext:108 | "Return all other Exposed ..."
+        # ../en-US.restext:109 | "Return all other Exposed ..."
         value: 'restext://Directive_ReturnExposedBuildingTiles'
-  # ../.source/TheCostofDisease_Eng_v10.cs:13248
-  - type: 'break'
-    style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:13252
   - type: 'section'
-    # ../en-US.restext:160 | "**Hunter's Haven**"
+    # ../en-US.restext:161 | "**Hunter's Haven**"
     title: 'restext://Heading_HuntersHaven'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:13260
     - type: 'text'
-      # ../en-US.restext:193 | "For each visit to the Hun..."
+      # ../en-US.restext:194 | "For each visit to the Hun..."
       value: 'restext://HuntersHaven_PayKnowledgeLoseInsanity_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:13268
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:13272
   - type: 'section'
-    # ../en-US.restext:155 | "**Engineering Achievement**"
+    # ../en-US.restext:156 | "**Engineering Achievement**"
     title: 'restext://Heading_EngineeringAchievement'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:13280
     - type: 'text'
-      # ../en-US.restext:95 | "When you gain a Vanity Es..."
+      # ../en-US.restext:96 | "When you gain a Vanity Es..."
       value: 'restext://Directive_EngineeringMastersStudy_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:13288
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:13292
   - type: 'section'
-    # ../en-US.restext:154 | "**Endless Hunt**"
+    # ../en-US.restext:155 | "**Endless Hunt**"
     title: 'restext://Heading_EndlessHunt'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:13300
     - type: 'text'
-      # ../en-US.restext:192 | "At the end of the round, ..."
+      # ../en-US.restext:193 | "At the end of the round, ..."
       value: 'restext://Hunt_NightOfTheHunt_Selection'
     # ../.source/TheCostofDisease_Eng_v10.cs:13307
     - type: 'break'
@@ -330,10 +324,10 @@ nodes:
       snapshot: true
       content:
       - type: 'text'
-        # ../en-US.restext:307 | "The Early Years of the Th..."
+        # ../en-US.restext:308 | "The Early Years of the Th..."
         value: 'restext://Round_GenerationIII_EarlyEnded'
       - type: 'break'
         style: 'paragraph'
       - type: 'text'
-        # ../en-US.restext:314 | "Then, perform all Start o..."
+        # ../en-US.restext:315 | "Then, perform all Start o..."
         value: 'restext://Round_StartMiddleYears_Rule'
