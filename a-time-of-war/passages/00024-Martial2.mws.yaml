@@ -180,8 +180,9 @@ nodes:
     layout: 'end_of_generation'
     # ../en-US.restext:31 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
-    # ../en-US.restext:286 | "Confirm"
-    okay: 'restext://UIButton_Confirm'
+    target: '${warwinner == "Unified Monarchists" ? (rumor2 == "visited" ? ("AMessenger2") : ("AfternoonTea")) : (wardestroy == 1 ? ("ATOWSabotageIntro2Sep") : ("ATOWSabotageIntro2"))}' # ./00033-AMessenger2.mws.yaml, ./00134-AfternoonTea.mws.yaml, ./00210-ATOWSabotageIntro2Sep.mws.yaml, ./00206-ATOWSabotageIntro2.mws.yaml
+    # ../en-US.restext:285 | "Close"
+    okay: 'restext://UIButton_Close'
     snapshot: true
     content:
     - type: 'let'
