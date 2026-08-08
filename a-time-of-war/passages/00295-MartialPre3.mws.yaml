@@ -7,17 +7,22 @@ tags:
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:27188
-- type: 'section'
-  style: 'panel'
+- type: 'popup'
+  layout: 'end_of_round'
+  target: 'Martial3' # ./00036-Martial3.mws.yaml
+  # ../en-US.restext:288 | "End of Round"
+  okay: 'restext://UIButton_EndOfRound'
+  onclose:
+  - type: 'assign'
+    var: '_ProgressRound'
+    expr: '5'
+  snapshot: true
   content:
   - type: 'text'
     # ../en-US.restext:2257 | "The Middle Years of the S..."
     value: 'restext://MartialPre3_001'
-- type: 'checkpoint'
-  id: 'round_5_complete'
-  display: 'Round 5'
-- type: 'link'
-  # ../en-US.restext:63 | "Complete all End of Round..."
-  label: 'restext://Directive_CompleteEndOfRoundActionsNow'
-  target: 'Martial3' # ./00036-Martial3.mws.yaml
-  snapshot: true
+  - type: 'break'
+    style: 'paragraph'
+  - type: 'text'
+    # ../en-US.restext:63 | "Complete all End of Round..."
+    value: 'restext://Directive_CompleteEndOfRoundActionsNow'
