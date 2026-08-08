@@ -36,11 +36,12 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:8154
 - type: 'popup'
+  layout: 'setup'
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
-  layout: 'reveal'
+  target: '${round == 16 ? "JailEventA" : round == 19 ? "EssentialSalts" : round == 20 ? "EssentialSalts" : "LiberalBonus"}' # ./00290-JailEventA.mws.yaml, ./00112-EssentialSalts.mws.yaml, ./00093-LiberalBonus.mws.yaml
   # ../en-US.restext:368 | "Close"
-  cancel: 'restext://UIButton_Close'
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/FearoftheUnknown_Eng_v15.cs:8222
@@ -52,63 +53,16 @@ nodes:
   - type: 'assign'
     var: 'exped'
     expr: '1'
-  # ../.source/FearoftheUnknown_Eng_v15.cs:8191
-  - type: 'switch'
-    on: 'round'
-    cases:
-    - match: 16
-      nodes:
-      # ../.source/FearoftheUnknown_Eng_v15.cs:8195
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:370 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'JailEventA' # ./00290-JailEventA.mws.yaml
-        snapshot: true
-    - match: 19
-      nodes:
-      # ../.source/FearoftheUnknown_Eng_v15.cs:8201
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:370 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'EssentialSalts' # ./00112-EssentialSalts.mws.yaml
-        snapshot: true
-    - match: 20
-      nodes:
-      # ../.source/FearoftheUnknown_Eng_v15.cs:8207
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:370 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'EssentialSalts' # ./00112-EssentialSalts.mws.yaml
-        snapshot: true
-    default:
-    # ../.source/FearoftheUnknown_Eng_v15.cs:8214
-    - type: 'section'
-      style: 'panel'
-      content: []
-    - type: 'link'
-      # ../en-US.restext:370 | "Continue"
-      label: 'restext://UIButton_Continue'
-      target: 'LiberalBonus' # ./00093-LiberalBonus.mws.yaml
-      snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:8223
   - type: 'break'
   # ../.source/FearoftheUnknown_Eng_v15.cs:8224
   - type: 'text'
     # ../en-US.restext:781 | "Each player on the succes..."
-    value: 'restext://ExpYes_007'
+    value: 'restext://ExpYes_006'
   # ../.source/FearoftheUnknown_Eng_v15.cs:8229
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:8231
   - type: 'text'
     # ../en-US.restext:782 | "Collect and return all Hu..."
-    value: 'restext://ExpYes_008'
+    value: 'restext://ExpYes_007'

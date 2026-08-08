@@ -22,11 +22,12 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:11921
 - type: 'popup'
+  layout: 'setup'
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
-  layout: 'reveal'
+  target: '${crazy > 0 ? ParadoxFirstnextPsg : "MonumentVote"}' # ./00200-MonumentVote.mws.yaml
   # ../en-US.restext:285 | "Close"
-  cancel: 'restext://UIButton_Close'
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:11960
@@ -46,25 +47,7 @@ nodes:
       - type: 'assign'
         var: 'ParadoxFirstnextPsg'
         expr: '["FutureStick", "CostStick1"].shuffled("ParadoxFirst_0")[0]'
-    # ../.source/ATimeofWar_Eng_v8.cs:11944
-    - type: 'section'
-      style: 'panel'
-      content: []
-    - type: 'link'
-      # ../en-US.restext:287 | "Continue"
-      label: 'restext://UIButton_Continue'
-      target: '${ParadoxFirstnextPsg}'
-      snapshot: true
-    else:
-    # ../.source/ATimeofWar_Eng_v8.cs:11950
-    - type: 'section'
-      style: 'panel'
-      content: []
-    - type: 'link'
-      # ../en-US.restext:287 | "Continue"
-      label: 'restext://UIButton_Continue'
-      target: 'MonumentVote' # ./00200-MonumentVote.mws.yaml
-      snapshot: true
+    else: []
   # ../.source/ATimeofWar_Eng_v8.cs:11961
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:11962

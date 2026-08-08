@@ -15,11 +15,12 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:14548
 - type: 'popup'
+  layout: 'setup'
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
-  layout: 'reveal'
+  target: '${round == 7 ? "Martial1" : round == 8 ? "Martial2" : "Martial3"}' # ./00023-Martial1.mws.yaml, ./00024-Martial2.mws.yaml, ./00036-Martial3.mws.yaml
   # ../en-US.restext:285 | "Close"
-  cancel: 'restext://UIButton_Close'
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:14610
@@ -41,15 +42,6 @@ nodes:
       - type: 'assign'
         var: 'martial'
         expr: '1'
-      # ../.source/ATimeofWar_Eng_v8.cs:14583
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:287 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'Martial1' # ./00023-Martial1.mws.yaml
-        snapshot: true
     - match: 8
       nodes:
       # ../.source/ATimeofWar_Eng_v8.cs:14589
@@ -60,15 +52,6 @@ nodes:
       - type: 'assign'
         var: 'martial'
         expr: '2'
-      # ../.source/ATimeofWar_Eng_v8.cs:14591
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:287 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'Martial2' # ./00024-Martial2.mws.yaml
-        snapshot: true
     default:
     # ../.source/ATimeofWar_Eng_v8.cs:14598
     - type: 'assign'
@@ -78,15 +61,6 @@ nodes:
     - type: 'assign'
       var: 'martial'
       expr: '3'
-    # ../.source/ATimeofWar_Eng_v8.cs:14600
-    - type: 'section'
-      style: 'panel'
-      content: []
-    - type: 'link'
-      # ../en-US.restext:287 | "Continue"
-      label: 'restext://UIButton_Continue'
-      target: 'Martial3' # ./00036-Martial3.mws.yaml
-      snapshot: true
   # ../.source/ATimeofWar_Eng_v8.cs:14615
   - type: 'let'
     var: '_rnd_PackingHeat1a_0'

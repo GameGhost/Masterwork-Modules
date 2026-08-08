@@ -40,11 +40,12 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31869
 - type: 'popup'
+  layout: 'setup'
   # ../en-US.restext:51 | "Click to return..."
   label: 'restext://Click_Return'
-  layout: 'reveal'
+  target: '${round == 10 ? "Isolation" : round == 11 ? "Isolation2" : round == 12 ? "Isolation3" : round == 13 ? "Tension" : round == 14 ? "Tension2" : round == 15 ? "Tension3" : round == 16 ? "Privatized" : round == 17 ? "Privatized2" : round == 18 ? "Privatized3" : round == 19 ? "Liberal" : round == 20 ? "Liberal2" : "Liberal3"}' # ./00019-Isolation.mws.yaml, ./00043-Isolation2.mws.yaml, ./00044-Isolation3.mws.yaml, ./00020-Tension.mws.yaml, ./00041-Tension2.mws.yaml, ./00127-Tension3.mws.yaml, ./00025-Privatized.mws.yaml, ./00047-Privatized2.mws.yaml, ./00048-Privatized3.mws.yaml, ./00026-Liberal.mws.yaml, ./00050-Liberal2.mws.yaml, ./00051-Liberal3.mws.yaml
   # ../en-US.restext:368 | "Close"
-  cancel: 'restext://UIButton_Close'
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/FearoftheUnknown_Eng_v15.cs:31933
@@ -52,144 +53,6 @@ nodes:
     asset: 'image://setup/CompulsionBack'
     style: 'setup-image'
   content:
-  # ../.source/FearoftheUnknown_Eng_v15.cs:31877
-  - type: 'switch'
-    on: 'round'
-    cases:
-    - match: 10
-      nodes:
-      # ../.source/FearoftheUnknown_Eng_v15.cs:31879
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:370 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'Isolation' # ./00019-Isolation.mws.yaml
-        snapshot: true
-    - match: 11
-      nodes:
-      # ../.source/FearoftheUnknown_Eng_v15.cs:31883
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:370 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'Isolation2' # ./00043-Isolation2.mws.yaml
-        snapshot: true
-    - match: 12
-      nodes:
-      # ../.source/FearoftheUnknown_Eng_v15.cs:31887
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:370 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'Isolation3' # ./00044-Isolation3.mws.yaml
-        snapshot: true
-    - match: 13
-      nodes:
-      # ../.source/FearoftheUnknown_Eng_v15.cs:31891
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:370 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'Tension' # ./00020-Tension.mws.yaml
-        snapshot: true
-    - match: 14
-      nodes:
-      # ../.source/FearoftheUnknown_Eng_v15.cs:31895
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:370 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'Tension2' # ./00041-Tension2.mws.yaml
-        snapshot: true
-    - match: 15
-      nodes:
-      # ../.source/FearoftheUnknown_Eng_v15.cs:31899
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:370 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'Tension3' # ./00127-Tension3.mws.yaml
-        snapshot: true
-    - match: 16
-      nodes:
-      # ../.source/FearoftheUnknown_Eng_v15.cs:31903
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:370 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'Privatized' # ./00025-Privatized.mws.yaml
-        snapshot: true
-    - match: 17
-      nodes:
-      # ../.source/FearoftheUnknown_Eng_v15.cs:31907
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:370 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'Privatized2' # ./00047-Privatized2.mws.yaml
-        snapshot: true
-    - match: 18
-      nodes:
-      # ../.source/FearoftheUnknown_Eng_v15.cs:31911
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:370 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'Privatized3' # ./00048-Privatized3.mws.yaml
-        snapshot: true
-    - match: 19
-      nodes:
-      # ../.source/FearoftheUnknown_Eng_v15.cs:31915
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:370 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'Liberal' # ./00026-Liberal.mws.yaml
-        snapshot: true
-    - match: 20
-      nodes:
-      # ../.source/FearoftheUnknown_Eng_v15.cs:31919
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:370 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'Liberal2' # ./00050-Liberal2.mws.yaml
-        snapshot: true
-    default:
-    # ../.source/FearoftheUnknown_Eng_v15.cs:31924
-    - type: 'section'
-      style: 'panel'
-      content: []
-    - type: 'link'
-      # ../en-US.restext:370 | "Continue"
-      label: 'restext://UIButton_Continue'
-      target: 'Liberal3' # ./00051-Liberal3.mws.yaml
-      snapshot: true
-  # ../.source/FearoftheUnknown_Eng_v15.cs:31934
-  - type: 'break'
-    style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:31936
   - type: 'text'
     # ../en-US.restext:2392 | "Discard your **Obsession*..."

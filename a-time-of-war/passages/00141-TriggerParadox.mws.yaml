@@ -22,11 +22,12 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:15522
 - type: 'popup'
+  layout: 'setup'
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
-  layout: 'reveal'
+  target: '${round == 4 ? "TimeTravel" : round == 5 ? "TimeTravel2" : "TimeTravel3"}' # ./00017-TimeTravel.mws.yaml, ./00032-TimeTravel2.mws.yaml, ./00018-TimeTravel3.mws.yaml
   # ../en-US.restext:285 | "Close"
-  cancel: 'restext://UIButton_Close'
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:15584
@@ -48,30 +49,12 @@ nodes:
       - type: 'assign'
         var: 'ttset'
         expr: '1'
-      # ../.source/ATimeofWar_Eng_v8.cs:15558
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:287 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'TimeTravel' # ./00017-TimeTravel.mws.yaml
-        snapshot: true
     - match: 5
       nodes:
       # ../.source/ATimeofWar_Eng_v8.cs:15564
       - type: 'assign'
         var: 'ttset'
         expr: '1'
-      # ../.source/ATimeofWar_Eng_v8.cs:15565
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:287 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'TimeTravel2' # ./00032-TimeTravel2.mws.yaml
-        snapshot: true
     default:
     # ../.source/ATimeofWar_Eng_v8.cs:15572
     - type: 'assign'
@@ -81,15 +64,6 @@ nodes:
     - type: 'assign'
       var: 'ttset'
       expr: '1'
-    # ../.source/ATimeofWar_Eng_v8.cs:15574
-    - type: 'section'
-      style: 'panel'
-      content: []
-    - type: 'link'
-      # ../en-US.restext:287 | "Continue"
-      label: 'restext://UIButton_Continue'
-      target: 'TimeTravel3' # ./00018-TimeTravel3.mws.yaml
-      snapshot: true
   # ../.source/ATimeofWar_Eng_v8.cs:15589
   - type: 'let'
     var: '_rnd_TriggerParadox_0'

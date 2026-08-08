@@ -33,11 +33,12 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:8292
   - type: 'popup'
+    layout: 'setup'
     # ../en-US.restext:29 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
-    layout: 'reveal'
+    target: '${round == 16 ? "JailEventA" : round == 19 ? "LiberalEvent3" : round == 20 ? exponextpsg : "LiberalBonus"}' # ./00290-JailEventA.mws.yaml, ./00258-LiberalEvent3.mws.yaml, ./00093-LiberalBonus.mws.yaml
     # ../en-US.restext:368 | "Close"
-    cancel: 'restext://UIButton_Close'
+    okay: 'restext://UIButton_Close'
     snapshot: true
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:8366
@@ -50,27 +51,9 @@ nodes:
       on: 'round'
       cases:
       - match: 16
-        nodes:
-        # ../.source/FearoftheUnknown_Eng_v15.cs:8333
-        - type: 'section'
-          style: 'panel'
-          content: []
-        - type: 'link'
-          # ../en-US.restext:370 | "Continue"
-          label: 'restext://UIButton_Continue'
-          target: 'JailEventA' # ./00290-JailEventA.mws.yaml
-          snapshot: true
+        nodes: []
       - match: 19
-        nodes:
-        # ../.source/FearoftheUnknown_Eng_v15.cs:8339
-        - type: 'section'
-          style: 'panel'
-          content: []
-        - type: 'link'
-          # ../en-US.restext:370 | "Continue"
-          label: 'restext://UIButton_Continue'
-          target: 'LiberalEvent3' # ./00258-LiberalEvent3.mws.yaml
-          snapshot: true
+        nodes: []
       - match: 20
         nodes:
         # ../.source/FearoftheUnknown_Eng_v15.cs:8345
@@ -81,25 +64,7 @@ nodes:
           - type: 'assign'
             var: 'exponextpsg'
             expr: '["LiberalEvent", "LiberalTaxes"].shuffled("ExpNo_0")[0]'
-        # ../.source/FearoftheUnknown_Eng_v15.cs:8349
-        - type: 'section'
-          style: 'panel'
-          content: []
-        - type: 'link'
-          # ../en-US.restext:370 | "Continue"
-          label: 'restext://UIButton_Continue'
-          target: '${exponextpsg}'
-          snapshot: true
-      default:
-      # ../.source/FearoftheUnknown_Eng_v15.cs:8356
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:370 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'LiberalBonus' # ./00093-LiberalBonus.mws.yaml
-        snapshot: true
+      default: []
     # ../.source/FearoftheUnknown_Eng_v15.cs:8367
     - type: 'break'
     # ../.source/FearoftheUnknown_Eng_v15.cs:8368
@@ -109,11 +74,12 @@ nodes:
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:8298
   - type: 'popup'
+    layout: 'setup'
     # ../en-US.restext:29 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
-    layout: 'reveal'
+    target: '${round == 16 ? "JailEventA" : round == 19 ? "LiberalEvent3" : round == 20 ? exponextpsg : "LiberalBonus"}' # ./00290-JailEventA.mws.yaml, ./00258-LiberalEvent3.mws.yaml, ./00093-LiberalBonus.mws.yaml
     # ../en-US.restext:368 | "Close"
-    cancel: 'restext://UIButton_Close'
+    okay: 'restext://UIButton_Close'
     snapshot: true
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:8444
@@ -126,27 +92,9 @@ nodes:
       on: 'round'
       cases:
       - match: 16
-        nodes:
-        # ../.source/FearoftheUnknown_Eng_v15.cs:8410
-        - type: 'section'
-          style: 'panel'
-          content: []
-        - type: 'link'
-          # ../en-US.restext:370 | "Continue"
-          label: 'restext://UIButton_Continue'
-          target: 'JailEventA' # ./00290-JailEventA.mws.yaml
-          snapshot: true
+        nodes: []
       - match: 19
-        nodes:
-        # ../.source/FearoftheUnknown_Eng_v15.cs:8416
-        - type: 'section'
-          style: 'panel'
-          content: []
-        - type: 'link'
-          # ../en-US.restext:370 | "Continue"
-          label: 'restext://UIButton_Continue'
-          target: 'LiberalEvent3' # ./00258-LiberalEvent3.mws.yaml
-          snapshot: true
+        nodes: []
       - match: 20
         nodes:
         # ../.source/FearoftheUnknown_Eng_v15.cs:8422
@@ -157,25 +105,7 @@ nodes:
           - type: 'assign'
             var: 'exponextpsg'
             expr: '["LiberalEvent", "LiberalTaxes"].shuffled("ExpNo_1")[0]'
-        # ../.source/FearoftheUnknown_Eng_v15.cs:8426
-        - type: 'section'
-          style: 'panel'
-          content: []
-        - type: 'link'
-          # ../en-US.restext:370 | "Continue"
-          label: 'restext://UIButton_Continue'
-          target: '${exponextpsg}'
-          snapshot: true
-      default:
-      # ../.source/FearoftheUnknown_Eng_v15.cs:8434
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:370 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'LiberalBonus' # ./00093-LiberalBonus.mws.yaml
-        snapshot: true
+      default: []
     # ../.source/FearoftheUnknown_Eng_v15.cs:8445
     - type: 'break'
     # ../.source/FearoftheUnknown_Eng_v15.cs:8446

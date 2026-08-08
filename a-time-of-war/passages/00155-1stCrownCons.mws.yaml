@@ -26,11 +26,12 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:17003
 - type: 'popup'
+  layout: 'setup'
   # ../en-US.restext:28 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
-  layout: 'reveal'
+  target: '${round == 16 ? "MonarchReign1" : round == 17 ? "MonarchReign2" : "MonarchReign3"}' # ./00043-MonarchReign1.mws.yaml, ./00068-MonarchReign2.mws.yaml, ./00069-MonarchReign3.mws.yaml
   # ../en-US.restext:285 | "Close"
-  cancel: 'restext://UIButton_Close'
+  okay: 'restext://UIButton_Close'
   snapshot: true
   header:
   # ../.source/ATimeofWar_Eng_v8.cs:17061
@@ -46,42 +47,6 @@ nodes:
   - type: 'assign'
     var: 'crowncount'
     expr: 'crowncount + 1'
-  # ../.source/ATimeofWar_Eng_v8.cs:17036
-  - type: 'switch'
-    on: 'round'
-    cases:
-    - match: 16
-      nodes:
-      # ../.source/ATimeofWar_Eng_v8.cs:17038
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:287 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'MonarchReign1' # ./00043-MonarchReign1.mws.yaml
-        snapshot: true
-    - match: 17
-      nodes:
-      # ../.source/ATimeofWar_Eng_v8.cs:17044
-      - type: 'section'
-        style: 'panel'
-        content: []
-      - type: 'link'
-        # ../en-US.restext:287 | "Continue"
-        label: 'restext://UIButton_Continue'
-        target: 'MonarchReign2' # ./00068-MonarchReign2.mws.yaml
-        snapshot: true
-    default:
-    # ../.source/ATimeofWar_Eng_v8.cs:17051
-    - type: 'section'
-      style: 'panel'
-      content: []
-    - type: 'link'
-      # ../en-US.restext:287 | "Continue"
-      label: 'restext://UIButton_Continue'
-      target: 'MonarchReign3' # ./00069-MonarchReign3.mws.yaml
-      snapshot: true
   # ../.source/ATimeofWar_Eng_v8.cs:17062
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:17065
