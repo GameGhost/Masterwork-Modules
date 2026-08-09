@@ -4,9 +4,17 @@
 # on top of en-US.restext with the same add/override-by-key semantics as passage overrides),
 # not a hand-appended tail on the extractor-owned en-US.restext (which used to be where these
 # lived — silently wiped by the next re-extraction, since that file has no such exemption).
+#
+# Common_YouHaveUnlockedEnding is also hand-added here, for the "Ending Unlocked" popup shared by
+# every *-End*.mws.yaml override — a single localizable sentence with the ending name spliced in
+# via {ending_text} (a let variable each override sets from its own passage-specific title key),
+# rather than three separately-styled TextNode fragments assembled at the MWS level, which isn't
+# something a translator working from just this file could reorder for a different language's
+# grammar.
 
 Common_Close=Close
 Common_Continue=Continue
+Common_YouHaveUnlockedEnding=You have unlocked **{ending_text}** ending.
 Scoring_Entry_HeaderScore=Score
 Scoring_Entry_Title=Score Entry
 Scoring_Header_Player=Player
