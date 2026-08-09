@@ -19,8 +19,7 @@ nodes:
     layout: 'setup'
     # ../en-US.restext:370 | "Accept"
     okay: 'restext://UIButton_Accept'
-    content:
-    # ../.source/FearoftheUnknown_Eng_v15.cs:4571
+    header:
     - type: 'switch'
       on: 'creature'
       cases:
@@ -30,6 +29,18 @@ nodes:
         - type: 'image'
           asset: 'image://setup/VillageChronicleCover'
           style: 'setup-image'
+      - match: 1
+        nodes:
+        # ../.source/FearoftheUnknown_Eng_v15.cs:4585
+        - type: 'image'
+          asset: 'image://setup/S2_HuntTokenFRONT'
+          style: 'setup-image'
+    content:
+    - type: 'switch'
+      on: 'creature'
+      cases:
+      - match: 2
+        nodes:
         # ../.source/FearoftheUnknown_Eng_v15.cs:4574
         - type: 'text'
           # ../en-US.restext:599 | "Turn to page **10** of th..."
@@ -39,10 +50,6 @@ nodes:
           style: 'paragraph'
       - match: 1
         nodes:
-        # ../.source/FearoftheUnknown_Eng_v15.cs:4585
-        - type: 'image'
-          asset: 'image://setup/S2_HuntTokenFRONT'
-          style: 'setup-image'
         # ../.source/FearoftheUnknown_Eng_v15.cs:4586
         - type: 'text'
           # ../en-US.restext:600 | "Turn to page **11** of th..."

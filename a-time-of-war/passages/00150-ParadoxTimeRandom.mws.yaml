@@ -194,8 +194,7 @@ nodes:
   # ../en-US.restext:287 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
-  content:
-  # ../.source/ATimeofWar_Eng_v8.cs:16559
+  header:
   - type: 'switch'
     on: 'timemistake'
     cases:
@@ -205,56 +204,84 @@ nodes:
       - type: 'image'
         asset: 'image://setup/ExperimentCFront'
         style: 'setup-image'
-      # ../.source/ATimeofWar_Eng_v8.cs:16568
-      - type: 'text'
-        # ../en-US.restext:1357 | "All players **draw a C-le..."
-        value: 'restext://ParadoxTimeRandom_030'
     - match: 2
       nodes:
       # ../.source/ATimeofWar_Eng_v8.cs:16587
       - type: 'image'
         asset: 'image://setup/CompulsionBack'
         style: 'setup-image'
-      # ../.source/ATimeofWar_Eng_v8.cs:16590
-      - type: 'text'
-        # ../en-US.restext:1358 | "All players immediately m..."
-        value: 'restext://ParadoxTimeRandom_031'
     - match: 3
       nodes:
       # ../.source/ATimeofWar_Eng_v8.cs:16600
       - type: 'image'
         asset: 'image://setup/ScoreTrackMarker'
         style: 'setup-image'
-      # ../.source/ATimeofWar_Eng_v8.cs:16603
-      - type: 'text'
-        # ../en-US.restext:1359 | "Each player immediately *..."
-        value: 'restext://ParadoxTimeRandom_032'
     - match: 4
       nodes:
       # ../.source/ATimeofWar_Eng_v8.cs:16616
       - type: 'image'
         asset: 'image://setup/MFWlogo'
         style: 'setup-image'
-      # ../.source/ATimeofWar_Eng_v8.cs:16619
-      - type: 'text'
-        # ../en-US.restext:1360 | "Nothing happens. However,..."
-        value: 'restext://ParadoxTimeRandom_033'
     - match: 5
       nodes:
       # ../.source/ATimeofWar_Eng_v8.cs:16628
       - type: 'image'
         asset: 'image://setup/LoseCreepy'
         style: 'setup-image'
-      # ../.source/ATimeofWar_Eng_v8.cs:16631
-      - type: 'text'
-        # ../en-US.restext:1361 | "All players **lose** 1 {i..."
-        value: 'restext://ParadoxTimeRandom_034'
     - match: 6
       nodes:
       # ../.source/ATimeofWar_Eng_v8.cs:16654
       - type: 'image'
         asset: 'image://setup/AngryMob_Icon'
         style: 'setup-image'
+    - match: 7
+      nodes:
+      # ../.source/ATimeofWar_Eng_v8.cs:16677
+      - type: 'image'
+        asset: 'image://setup/S3_CardBack'
+        style: 'setup-image'
+    - match: 8
+      nodes:
+      # ../.source/ATimeofWar_Eng_v8.cs:16726
+      - type: 'image'
+        asset: 'image://setup/VillageChronicleCover'
+        style: 'setup-image'
+  content:
+  - type: 'switch'
+    on: 'timemistake'
+    cases:
+    - match: 1
+      nodes:
+      # ../.source/ATimeofWar_Eng_v8.cs:16568
+      - type: 'text'
+        # ../en-US.restext:1357 | "All players **draw a C-le..."
+        value: 'restext://ParadoxTimeRandom_030'
+    - match: 2
+      nodes:
+      # ../.source/ATimeofWar_Eng_v8.cs:16590
+      - type: 'text'
+        # ../en-US.restext:1358 | "All players immediately m..."
+        value: 'restext://ParadoxTimeRandom_031'
+    - match: 3
+      nodes:
+      # ../.source/ATimeofWar_Eng_v8.cs:16603
+      - type: 'text'
+        # ../en-US.restext:1359 | "Each player immediately *..."
+        value: 'restext://ParadoxTimeRandom_032'
+    - match: 4
+      nodes:
+      # ../.source/ATimeofWar_Eng_v8.cs:16619
+      - type: 'text'
+        # ../en-US.restext:1360 | "Nothing happens. However,..."
+        value: 'restext://ParadoxTimeRandom_033'
+    - match: 5
+      nodes:
+      # ../.source/ATimeofWar_Eng_v8.cs:16631
+      - type: 'text'
+        # ../en-US.restext:1361 | "All players **lose** 1 {i..."
+        value: 'restext://ParadoxTimeRandom_034'
+    - match: 6
+      nodes:
       # ../.source/ATimeofWar_Eng_v8.cs:16657
       - type: 'text'
         # ../en-US.restext:1362 | "Retrieve the Angry Mob ma..."
@@ -268,10 +295,6 @@ nodes:
         value: 'restext://ParadoxTimeRandom_036'
     - match: 7
       nodes:
-      # ../.source/ATimeofWar_Eng_v8.cs:16677
-      - type: 'image'
-        asset: 'image://setup/S3_CardBack'
-        style: 'setup-image'
       # ../.source/ATimeofWar_Eng_v8.cs:16680
       - type: 'conditional'
         if: 'platm == "yes"'
@@ -330,10 +353,6 @@ nodes:
         value: 'restext://ParadoxTimeRandom_042'
     - match: 8
       nodes:
-      # ../.source/ATimeofWar_Eng_v8.cs:16726
-      - type: 'image'
-        asset: 'image://setup/VillageChronicleCover'
-        style: 'setup-image'
       # ../.source/ATimeofWar_Eng_v8.cs:16729
       - type: 'text'
         # ../en-US.restext:1370 | "Turn to page **22** of th..."
