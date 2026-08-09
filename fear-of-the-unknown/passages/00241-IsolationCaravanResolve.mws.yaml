@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'IsolationCaravanResolve'
-# ../en-US.restext:2078 | "Neglected by the Caravan"
+# ../en-US.restext:2076 | "Neglected by the Caravan"
 title: 'restext://IsolationCaravanResolve_001'
 layout: 'narration'
 nodes:
@@ -12,14 +12,14 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:27607
   - type: 'text'
-    # ../en-US.restext:193 | "**Newsprint - {newspaper}..."
+    # ../en-US.restext:195 | "**Newsprint - {newspaper}..."
     value: 'restext://Heading_Newsprint_9Sep1924'
   # ../.source/FearoftheUnknown_Eng_v15.cs:27617
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:27619
   - type: 'text'
-    # ../en-US.restext:264 | "{newspaper} regrets to re..."
+    # ../en-US.restext:266 | "{newspaper} regrets to re..."
     value: 'restext://Narrative_NewspaperRegretsNoRomaniCaravan'
   # ../.source/FearoftheUnknown_Eng_v15.cs:27627
   - type: 'break'
@@ -30,7 +30,7 @@ nodes:
     # ../en-US.restext:29 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: 'IsoVerify' # ./00282-IsoVerify.mws.yaml
-    # ../en-US.restext:369 | "Close"
+    # ../en-US.restext:371 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -41,7 +41,7 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:27654
     - type: 'text'
-      # ../en-US.restext:107 | "Any player who has a **Ma..."
+      # ../en-US.restext:109 | "Any player who has a **Ma..."
       value: 'restext://Directive_MarketTokenTradeIngredients'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:27635

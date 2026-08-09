@@ -14,12 +14,12 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:95 | "Please enter the VP of yo..."
+      # ../en-US.restext:97 | "Please enter the VP of yo..."
       value: 'restext://Directive_EnterChemistryOccultVP_Life'
     - type: 'input'
       label: ''
       var: 'hitD'
-    # ../en-US.restext:371 | "Continue"
+    # ../en-US.restext:373 | "Continue"
     okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'
@@ -29,14 +29,14 @@ nodes:
     target: 'Player4Statsc' # ./00305-Player4Statsc.mws.yaml
 # ../.source/FearoftheUnknown_Eng_v15.cs:33057
 - type: 'text'
-  # ../en-US.restext:2482 | "**{hitD}** is locked in a..."
+  # ../en-US.restext:2480 | "**{hitD}** is locked in a..."
   value: 'restext://Player4Statsc_001'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33061
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33063
 - type: 'text'
-  # ../en-US.restext:2483 | "{nameD}'s Warrior is buil..."
+  # ../en-US.restext:2481 | "{nameD}'s Warrior is buil..."
   value: 'restext://Player4Statsc_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33066
 - type: 'break'

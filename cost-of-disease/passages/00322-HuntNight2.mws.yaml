@@ -2,18 +2,14 @@
 ---
 format: 'mws/0.4'
 passage_id: 'HuntNight2'
+# ../en-US.restext:2642 | "{huntreward2}."
+title: 'restext://HuntNight2_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:33089
 - type: 'include_passage'
   target: '${direction}'
 # ../.source/TheCostofDisease_Eng_v10.cs:33090
-- type: 'break'
-# ../.source/TheCostofDisease_Eng_v10.cs:33093
-- type: 'text'
-  # ../en-US.restext:2642 | "**{huntreward2}.**"
-  value: 'restext://HuntNight2_001'
-# ../.source/TheCostofDisease_Eng_v10.cs:33096
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:33100

@@ -7,23 +7,12 @@ tags:
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:14450
-- type: 'section'
-  style: 'panel'
-  content: []
-- type: 'link'
-  # ../en-US.restext:359 | "Continue"
-  label: 'restext://UIButton_Continue'
-  target: 'GloomyGothic1' # ./00171-GloomyGothic1.mws.yaml
-  snapshot: true
 # ../.source/TheCostofDisease_Eng_v10.cs:14451
 - type: 'assign'
   var: 'gen3pg'
   expr: '0'
-# ../.source/TheCostofDisease_Eng_v10.cs:14454
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:356 | "Accept"
-  okay: 'restext://UIButton_Accept'
   header:
   # ../.source/TheCostofDisease_Eng_v10.cs:14459
   - type: 'image'
@@ -41,3 +30,7 @@ nodes:
   - type: 'text'
     # ../en-US.restext:2837 | "_When a player completes ..."
     value: 'restext://WolvesSetupGen3_002'
+  # ../en-US.restext:356 | "Accept"
+  okay: 'restext://UIButton_Accept'
+  target: 'GloomyGothic1' # ./00171-GloomyGothic1.mws.yaml
+  snapshot: true

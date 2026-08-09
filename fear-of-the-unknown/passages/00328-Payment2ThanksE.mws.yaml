@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Payment2ThanksE'
-# ../en-US.restext:196 | "Payment Received"
+# ../en-US.restext:198 | "Payment Received"
 title: 'restext://Heading_PaymentReceived'
 tags:
 - 'format'
@@ -10,14 +10,14 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:34718
 - type: 'text'
-  # ../en-US.restext:2556 | "**Journal Entry - {nameE}..."
+  # ../en-US.restext:2554 | "**Journal Entry - {nameE}..."
   value: 'restext://Payment2ThanksE_001'
 # ../.source/FearoftheUnknown_Eng_v15.cs:34727
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:34729
 - type: 'text'
-  # ../en-US.restext:246 | "The dark-cloaked fiends t..."
+  # ../en-US.restext:248 | "The dark-cloaked fiends t..."
   value: 'restext://Narrative_DarkCloakedFiendsPayment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:34732
 - type: 'break'
@@ -28,7 +28,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'Payment2Hub' # ./00316-Payment2Hub.mws.yaml
-  # ../en-US.restext:369 | "Close"
+  # ../en-US.restext:371 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -39,5 +39,5 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:34756
   - type: 'text'
-    # ../en-US.restext:117 | "**Immediately pay ${Econt..."
+    # ../en-US.restext:119 | "**Immediately pay ${Econt..."
     value: 'restext://Directive_PayContToSupply_E'

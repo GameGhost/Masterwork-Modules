@@ -40,7 +40,7 @@ nodes:
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:3876
       - type: 'text'
-        # ../en-US.restext:63 | "One of the buildings in t..."
+        # ../en-US.restext:64 | "One of the buildings in t..."
         value: 'restext://Directive_BuildingTargetedTurnToSabpage'
 # ../.source/ATimeofWar_Eng_v8.cs:3891
 - type: 'section'
@@ -50,7 +50,7 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:3899
   - type: 'text'
-    # ../en-US.restext:117 | "The {warloser} are desper..."
+    # ../en-US.restext:118 | "The {warloser} are desper..."
     value: 'restext://Directive_WarloserDesperateAdvancedWeaponry_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:3908
   - type: 'conditional'
@@ -68,7 +68,7 @@ nodes:
       value: 'restext://Reward_Gain2FromSupply'
   # ../.source/ATimeofWar_Eng_v8.cs:3922
   - type: 'text'
-    # ../en-US.restext:61 | " as a gift from the {warl..."
+    # ../en-US.restext:62 | " as a gift from the {warl..."
     value: 'restext://Directive_AsGiftFromWarloser_Fragment'
 # ../.source/ATimeofWar_Eng_v8.cs:3927
 - type: 'break'
@@ -85,7 +85,7 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:3943
     - type: 'text'
-      # ../en-US.restext:78 | "The first player to compl..."
+      # ../en-US.restext:79 | "The first player to compl..."
       value: 'restext://Directive_FirstPlayerComplete2AdvancedWeaponry_Fragment'
     # ../.source/ATimeofWar_Eng_v8.cs:3949
     - type: 'link'
@@ -110,7 +110,7 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:3960
       - type: 'section'
-        # ../en-US.restext:149 | "**Military Demands - Barr..."
+        # ../en-US.restext:150 | "**Military Demands - Barr..."
         title: 'restext://Heading_MilitaryDemandsBarracks'
         style: 'hub-card'
         content:
@@ -123,7 +123,7 @@ nodes:
           style: 'paragraph'
         # ../.source/ATimeofWar_Eng_v8.cs:3974
         - type: 'text'
-          # ../en-US.restext:95 | "When placing a piece on t..."
+          # ../en-US.restext:96 | "When placing a piece on t..."
           value: 'restext://Directive_PlaceOnBarracksNoBonus'
   # ../en-US.restext:274 | "Separatists"
   - match: 'restext://Title_Separatists'
@@ -141,7 +141,7 @@ nodes:
         content:
         # ../.source/ATimeofWar_Eng_v8.cs:3997
         - type: 'text'
-          # ../en-US.restext:107 | "The Separatists urge citi..."
+          # ../en-US.restext:108 | "The Separatists urge citi..."
           value: 'restext://Directive_SeparatistsUrgeRallyReward'
         # ../.source/ATimeofWar_Eng_v8.cs:4000
         - type: 'break'
@@ -155,13 +155,13 @@ nodes:
       style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:4017
 - type: 'section'
-  # ../en-US.restext:154 | "**Outpost**"
+  # ../en-US.restext:155 | "**Outpost**"
   title: 'restext://Heading_OutpostBold'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:4025
   - type: 'text'
-    # ../en-US.restext:91 | "An Outpost is open in tow..."
+    # ../en-US.restext:92 | "An Outpost is open in tow..."
     value: 'restext://Directive_OutpostOpenForTrading_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:4029
   - type: 'link'
@@ -190,7 +190,7 @@ nodes:
       var: 'completedRound'
       expr: '-1'
     - type: 'text'
-      # ../en-US.restext:70 | "Do NOT perform the End of..."
+      # ../en-US.restext:71 | "Do NOT perform the End of..."
       value: 'restext://Directive_DoNotPerformEndOfRoundYet'
     - type: 'conditional'
       # ../en-US.restext:284 | "Unified Monarchists"

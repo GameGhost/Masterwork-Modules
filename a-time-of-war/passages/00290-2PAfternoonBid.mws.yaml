@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: '2PAfternoonBid'
-# ../en-US.restext:131 | "BID"
+# ../en-US.restext:132 | "BID"
 title: 'restext://Heading_BidCaps'
 layout: 'narration'
 nodes:
@@ -15,7 +15,7 @@ nodes:
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:26919
 - type: 'text'
-  # ../en-US.restext:62 | "Both players take all the..."
+  # ../en-US.restext:63 | "Both players take all the..."
   value: 'restext://Directive_BothPlayersBidMoney_Then'
 # ../.source/ATimeofWar_Eng_v8.cs:26921
 - type: 'break'
@@ -36,7 +36,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:26948
 - type: 'text'
-  # ../en-US.restext:74 | "Only the player who wins ..."
+  # ../en-US.restext:75 | "Only the player who wins ..."
   value: 'restext://Directive_ElectionWinnerPaysBid'
 # ../.source/ATimeofWar_Eng_v8.cs:26950
 - type: 'break'
@@ -64,22 +64,22 @@ nodes:
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:55 | "3"
+      # ../en-US.restext:56 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:56 | "2"
+      # ../en-US.restext:57 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:53 | "1"
+      # ../en-US.restext:54 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:54 | "REVEAL"
+      # ../en-US.restext:55 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:54 | "REVEAL"
+    # ../en-US.restext:55 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: '2PAfternoonBidRes' # ./00292-2PAfternoonBidRes.mws.yaml
     snapshot: false

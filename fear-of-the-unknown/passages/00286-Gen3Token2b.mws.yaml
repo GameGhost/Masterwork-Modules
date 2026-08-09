@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Gen3Token2b'
-# ../en-US.restext:2388 | "Rejecting My Fate"
+# ../en-US.restext:2386 | "Rejecting My Fate"
 title: 'restext://Gen3Token2b_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:31845
 - type: 'text'
-  # ../en-US.restext:185 | "**Letter from {tempid} - _**"
+  # ../en-US.restext:187 | "**Letter from {tempid} - _**"
   value: 'restext://Heading_LetterFromTempid_Open'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31849
 - type: 'include_passage'
@@ -18,20 +18,20 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31854
 - type: 'text'
-  # ../en-US.restext:2389 | "Yes. For too long I have ..."
+  # ../en-US.restext:2387 | "Yes. For too long I have ..."
   value: 'restext://Gen3Token2b_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31860
 - type: 'let'
   var: '_rnd_Gen3Token2b_0'
-  # ../en-US.restext:2390 | Gen3Token2b_003 | "I will allow my thoughts ..."
-  # ../en-US.restext:2391 | Gen3Token2b_004 | "I will allow the seed of ..."
+  # ../en-US.restext:2388 | Gen3Token2b_003 | "I will allow my thoughts ..."
+  # ../en-US.restext:2389 | Gen3Token2b_004 | "I will allow the seed of ..."
   expr: '["restext://Gen3Token2b_003", "restext://Gen3Token2b_004"].shuffled("Gen3Token2b_0")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31857
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:31859
 - type: 'text'
-  # ../en-US.restext:2392 | "My mind is made up. {_rnd..."
+  # ../en-US.restext:2390 | "My mind is made up. {_rnd..."
   value: 'restext://Gen3Token2b_005'
   lets:
   - '_rnd_Gen3Token2b_0'
@@ -44,7 +44,7 @@ nodes:
   # ../en-US.restext:51 | "Click to return..."
   label: 'restext://Click_Return'
   target: '${round == 10 ? "Isolation" : round == 11 ? "Isolation2" : round == 12 ? "Isolation3" : round == 13 ? "Tension" : round == 14 ? "Tension2" : round == 15 ? "Tension3" : round == 16 ? "Privatized" : round == 17 ? "Privatized2" : round == 18 ? "Privatized3" : round == 19 ? "Liberal" : round == 20 ? "Liberal2" : "Liberal3"}' # ./00019-Isolation.mws.yaml, ./00043-Isolation2.mws.yaml, ./00044-Isolation3.mws.yaml, ./00020-Tension.mws.yaml, ./00041-Tension2.mws.yaml, ./00127-Tension3.mws.yaml, ./00025-Privatized.mws.yaml, ./00047-Privatized2.mws.yaml, ./00048-Privatized3.mws.yaml, ./00026-Liberal.mws.yaml, ./00050-Liberal2.mws.yaml, ./00051-Liberal3.mws.yaml
-  # ../en-US.restext:369 | "Close"
+  # ../en-US.restext:371 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -55,12 +55,12 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:31936
   - type: 'text'
-    # ../en-US.restext:2393 | "Discard your **Obsession*..."
+    # ../en-US.restext:2391 | "Discard your **Obsession*..."
     value: 'restext://Gen3Token2b_006'
   # ../.source/FearoftheUnknown_Eng_v15.cs:31943
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:31945
   - type: 'text'
-    # ../en-US.restext:2394 | "Draw **4 Compulsion** cards."
+    # ../en-US.restext:2392 | "Draw **4 Compulsion** cards."
     value: 'restext://Gen3Token2b_007'

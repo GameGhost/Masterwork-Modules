@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Payment1ThanksB'
-# ../en-US.restext:357 | "The Count's Payment Received"
+# ../en-US.restext:359 | "The Count's Payment Received"
 title: 'restext://Title_TheCountsPaymentReceived'
 tags:
 - 'format'
@@ -10,14 +10,14 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:19864
 - type: 'text'
-  # ../en-US.restext:173 | "**Journal of {nameB} -** ..."
+  # ../en-US.restext:175 | "**Journal of {nameB} -** ..."
   value: 'restext://Heading_JournalOfNameB_1892Romania'
 # ../.source/FearoftheUnknown_Eng_v15.cs:19873
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:19875
 - type: 'text'
-  # ../en-US.restext:263 | "The men were pleased with..."
+  # ../en-US.restext:265 | "The men were pleased with..."
   value: 'restext://Narrative_MenPleasedGenerousDecision'
 # ../.source/FearoftheUnknown_Eng_v15.cs:19879
 - type: 'break'
@@ -28,7 +28,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${players > 2 ? "Payment1C" : players == 2 ? "Payment1Hub" : ""}' # ./00167-Payment1C.mws.yaml, ./00164-Payment1Hub.mws.yaml
-  # ../en-US.restext:369 | "Close"
+  # ../en-US.restext:371 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -45,7 +45,7 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:19926
   - type: 'text'
-    # ../en-US.restext:114 | "**Immediately pay ${Bcont..."
+    # ../en-US.restext:116 | "**Immediately pay ${Bcont..."
     value: 'restext://Directive_PayContToSupply_B'
   # ../.source/FearoftheUnknown_Eng_v15.cs:19932
   - type: 'assign'

@@ -2,23 +2,11 @@
 ---
 format: 'mws/0.4'
 passage_id: 'BenevolenceBonus'
+# ../en-US.restext:1155 | BenevolenceBonus_001 | "Benevolence Bonus"
+# ../en-US.restext:1156 | BenevolenceBonus_002 | "Iron Fist Bonus"
+title: '{benevolent == "good" ? "restext://BenevolenceBonus_001" : "restext://BenevolenceBonus_002"}'
 layout: 'narration'
 nodes:
-# ../.source/ATimeofWar_Eng_v8.cs:15196
-- type: 'conditional'
-  if: 'benevolent == "good"'
-  then:
-  # ../.source/ATimeofWar_Eng_v8.cs:15200
-  - type: 'text'
-    # ../en-US.restext:1156 | "**Benevolence Bonus**"
-    value: 'restext://BenevolenceBonus_002'
-  else:
-  # ../.source/ATimeofWar_Eng_v8.cs:15207
-  - type: 'text'
-    # ../en-US.restext:1155 | "**Iron Fist Bonus**"
-    value: 'restext://BenevolenceBonus_001'
-# ../.source/ATimeofWar_Eng_v8.cs:15210
-- type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:15211
 - type: 'text'
   # ../en-US.restext:1157 | "The player with the most "

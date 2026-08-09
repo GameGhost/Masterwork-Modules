@@ -6,7 +6,7 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:17816
 - type: 'text'
-  # ../en-US.restext:325 | "**Carefully pick up this ..."
+  # ../en-US.restext:327 | "**Carefully pick up this ..."
   value: 'restext://Storybook_PickUpDevicePrivate'
 # ../.source/FearoftheUnknown_Eng_v15.cs:17819
 - type: 'break'
@@ -16,33 +16,33 @@ nodes:
   # ../en-US.restext:53 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:369 | "Close"
+  # ../en-US.restext:371 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:17869
   - type: 'text'
-    # ../en-US.restext:154 | "**A Sly Investment**"
+    # ../en-US.restext:156 | "**A Sly Investment**"
     value: 'restext://Heading_ASlyInvestment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:17871
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:17875
   - type: 'text'
-    # ../en-US.restext:170 | "**Journal Entry of {busm}..."
+    # ../en-US.restext:172 | "**Journal Entry of {busm}..."
     value: 'restext://Heading_JournalEntryOfBusm_Cont'
   # ../.source/FearoftheUnknown_Eng_v15.cs:17886
   - type: 'let'
     var: '_rnd_BusMeetB_0'
-    # ../en-US.restext:251 | Narrative_FineHairsOnPalm | "I could distinctly see fi..."
-    # ../en-US.restext:258 | Narrative_LeanedForwardCoarseWhisper | "He leaned forward, speaki..."
+    # ../en-US.restext:253 | Narrative_FineHairsOnPalm | "I could distinctly see fi..."
+    # ../en-US.restext:260 | Narrative_LeanedForwardCoarseWhisper | "He leaned forward, speaki..."
     expr: '["restext://Narrative_FineHairsOnPalm", "restext://Narrative_LeanedForwardCoarseWhisper"].shuffled("BusMeetB_0")[0]'
   # ../.source/FearoftheUnknown_Eng_v15.cs:17884
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:17886
   - type: 'text'
-    # ../en-US.restext:1411 | "{_rnd_BusMeetB_0} \"Donat..."
+    # ../en-US.restext:1409 | "{_rnd_BusMeetB_0} \"Donat..."
     value: 'restext://BusMeetB_001'
     lets:
     - '_rnd_BusMeetB_0'
@@ -55,14 +55,14 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:17905
     - type: 'text'
-      # ../en-US.restext:261 | "The man smiled once again..."
+      # ../en-US.restext:263 | "The man smiled once again..."
       value: 'restext://Narrative_ManSmiledSecondTime'
     # ../.source/FearoftheUnknown_Eng_v15.cs:17906
     - type: 'break'
       style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:17909
   - type: 'text'
-    # ../en-US.restext:252 | "\"**For $1**, you have my..."
+    # ../en-US.restext:254 | "\"**For $1**, you have my..."
     value: 'restext://Narrative_ForOneDollarNewServant'
   # ../.source/FearoftheUnknown_Eng_v15.cs:17922
   - type: 'break'
@@ -73,7 +73,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:17928
     - type: 'text'
-      # ../en-US.restext:254 | "**\"For $2**, I will guar..."
+      # ../en-US.restext:256 | "**\"For $2**, I will guar..."
       value: 'restext://Narrative_ForTwoDollarsBallChain'
     # ../.source/FearoftheUnknown_Eng_v15.cs:17936
     - type: 'break'
@@ -84,21 +84,21 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:17943
     - type: 'text'
-      # ../en-US.restext:253 | "**\"For $3**, I will offe..."
+      # ../en-US.restext:255 | "**\"For $3**, I will offe..."
       value: 'restext://Narrative_ForThreeDollarsDeed'
   # ../.source/FearoftheUnknown_Eng_v15.cs:17953
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:17955
   - type: 'text'
-    # ../en-US.restext:265 | "I was admittedly not impr..."
+    # ../en-US.restext:267 | "I was admittedly not impr..."
     value: 'restext://Narrative_NotImpressedByOffer'
   # ../.source/FearoftheUnknown_Eng_v15.cs:17957
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:17961
   - type: 'text'
-    # ../en-US.restext:167 | "**How much would you like..."
+    # ../en-US.restext:169 | "**How much would you like..."
     value: 'restext://Heading_HowMuchInvest'
   # ../.source/FearoftheUnknown_Eng_v15.cs:17963
   - type: 'break'
@@ -109,7 +109,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:17968
     - type: 'link'
-      # ../en-US.restext:148 | "$3."
+      # ../en-US.restext:150 | "$3."
       label: 'restext://Dollar_Three'
       target: 'BusThanks' # ./00154-BusThanks.mws.yaml
       snapshot: true
@@ -131,7 +131,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:17975
     - type: 'link'
-      # ../en-US.restext:149 | "$2."
+      # ../en-US.restext:151 | "$2."
       label: 'restext://Dollar_Two'
       target: 'BusThanks' # ./00154-BusThanks.mws.yaml
       snapshot: true
@@ -153,7 +153,7 @@ nodes:
       style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:17980
   - type: 'link'
-    # ../en-US.restext:147 | "$1."
+    # ../en-US.restext:149 | "$1."
     label: 'restext://Dollar_One'
     target: 'BusThanks' # ./00154-BusThanks.mws.yaml
     snapshot: true
@@ -188,7 +188,7 @@ nodes:
             expr: '["BusBargain", "BusNo"].shuffled("BusMeetB_1")[0]'
       # ../.source/FearoftheUnknown_Eng_v15.cs:17987
       - type: 'text'
-        # ../en-US.restext:100 | "_This option will provide..."
+        # ../en-US.restext:102 | "_This option will provide..."
         value: 'restext://Directive_FiftyPercentChanceImproveDeal'
     - match: 1
       nodes:

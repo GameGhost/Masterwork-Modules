@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'GainFamilyPlot'
-# ../en-US.restext:1748 | "A Separate Plot"
+# ../en-US.restext:1746 | "A Separate Plot"
 title: 'restext://GainFamilyPlot_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:23051
 - type: 'text'
-  # ../en-US.restext:1749 | "**Letter from {tempplot} -** "
+  # ../en-US.restext:1747 | "**Letter from {tempplot} -** "
   value: 'restext://GainFamilyPlot_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:23057
 - type: 'include_passage'
@@ -18,13 +18,13 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:23062
 - type: 'text'
-  # ../en-US.restext:1750 | "You have seen how they st..."
+  # ../en-US.restext:1748 | "You have seen how they st..."
   value: 'restext://GainFamilyPlot_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:23067
 - type: 'let'
   var: '_rnd_GainFamilyPlot_0'
-  # ../en-US.restext:1751 | GainFamilyPlot_004 | "I have planned for a grav..."
-  # ../en-US.restext:1752 | GainFamilyPlot_005 | "I refuse to mend bridges ..."
+  # ../en-US.restext:1749 | GainFamilyPlot_004 | "I have planned for a grav..."
+  # ../en-US.restext:1750 | GainFamilyPlot_005 | "I refuse to mend bridges ..."
   expr: '["restext://GainFamilyPlot_004", "restext://GainFamilyPlot_005"].shuffled("GainFamilyPlot_0")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:23065
 - type: 'break'
@@ -39,7 +39,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:23072
 - type: 'text'
-  # ../en-US.restext:1753 | "**At the End of the Gener..."
+  # ../en-US.restext:1751 | "**At the End of the Gener..."
   value: 'restext://GainFamilyPlot_006'
 # ../.source/FearoftheUnknown_Eng_v15.cs:23074
 - type: 'break'

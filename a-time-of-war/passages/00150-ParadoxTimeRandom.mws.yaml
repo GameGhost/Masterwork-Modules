@@ -2,6 +2,15 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ParadoxTimeRandom'
+# ../en-US.restext:1328 | ParadoxTimeRandom_001 | "A Surge of Productivity"
+# ../en-US.restext:1329 | ParadoxTimeRandom_002 | "A Clarity of Purpose"
+# ../en-US.restext:1330 | ParadoxTimeRandom_003 | "None Left Behind"
+# ../en-US.restext:1331 | ParadoxTimeRandom_004 | "Future Notes"
+# ../en-US.restext:1332 | ParadoxTimeRandom_005 | "Trust and Benevolence"
+# ../en-US.restext:1333 | ParadoxTimeRandom_006 | "A Return to Suspicion"
+# ../en-US.restext:1334 | ParadoxTimeRandom_007 | "Targeted"
+# ../en-US.restext:1335 | ParadoxTimeRandom_008 | "Utter Catastrophe"
+title: '{timemistake == 1 ? "restext://ParadoxTimeRandom_001" : timemistake == 2 ? "restext://ParadoxTimeRandom_002" : timemistake == 3 ? "restext://ParadoxTimeRandom_003" : timemistake == 4 ? "restext://ParadoxTimeRandom_004" : timemistake == 5 ? "restext://ParadoxTimeRandom_005" : timemistake == 6 ? "restext://ParadoxTimeRandom_006" : timemistake == 7 ? "restext://ParadoxTimeRandom_007" : timemistake == 8 ? "restext://ParadoxTimeRandom_008" : ""}'
 tags:
 - 'Incomplete'
 layout: 'narration'
@@ -12,201 +21,146 @@ nodes:
   cases:
   - match: 1
     nodes:
-    # ../.source/ATimeofWar_Eng_v8.cs:16383
-    - type: 'text'
-      # ../en-US.restext:1328 | "**A Surge of Productivity**"
-      value: 'restext://ParadoxTimeRandom_001'
-    # ../.source/ATimeofWar_Eng_v8.cs:16385
-    - type: 'break'
-      style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:16387
     - type: 'text'
-      # ../en-US.restext:1329 | "The time device proved to..."
-      value: 'restext://ParadoxTimeRandom_002'
+      # ../en-US.restext:1336 | "The time device proved to..."
+      value: 'restext://ParadoxTimeRandom_009'
     # ../.source/ATimeofWar_Eng_v8.cs:16388
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:16390
     - type: 'text'
-      # ../en-US.restext:1330 | "One flick of an electrica..."
-      value: 'restext://ParadoxTimeRandom_003'
+      # ../en-US.restext:1337 | "One flick of an electrica..."
+      value: 'restext://ParadoxTimeRandom_010'
     # ../.source/ATimeofWar_Eng_v8.cs:16391
     - type: 'break'
       style: 'paragraph'
   - match: 2
     nodes:
-    # ../.source/ATimeofWar_Eng_v8.cs:16399
-    - type: 'text'
-      # ../en-US.restext:1331 | "**A Clarity of Purpose**"
-      value: 'restext://ParadoxTimeRandom_004'
-    # ../.source/ATimeofWar_Eng_v8.cs:16401
-    - type: 'break'
-      style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:16403
     - type: 'text'
-      # ../en-US.restext:1332 | "Technological advancement..."
-      value: 'restext://ParadoxTimeRandom_005'
+      # ../en-US.restext:1338 | "Technological advancement..."
+      value: 'restext://ParadoxTimeRandom_011'
     # ../.source/ATimeofWar_Eng_v8.cs:16404
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:16406
     - type: 'text'
-      # ../en-US.restext:1333 | "While I was somewhat disa..."
-      value: 'restext://ParadoxTimeRandom_006'
+      # ../en-US.restext:1339 | "While I was somewhat disa..."
+      value: 'restext://ParadoxTimeRandom_012'
     # ../.source/ATimeofWar_Eng_v8.cs:16407
     - type: 'break'
       style: 'paragraph'
   - match: 3
     nodes:
-    # ../.source/ATimeofWar_Eng_v8.cs:16415
-    - type: 'text'
-      # ../en-US.restext:1334 | "**None Left Behind**"
-      value: 'restext://ParadoxTimeRandom_007'
-    # ../.source/ATimeofWar_Eng_v8.cs:16417
-    - type: 'break'
     # ../.source/ATimeofWar_Eng_v8.cs:16418
     - type: 'text'
-      # ../en-US.restext:1335 | "If I were to forgo humili..."
-      value: 'restext://ParadoxTimeRandom_008'
+      # ../en-US.restext:1340 | "If I were to forgo humili..."
+      value: 'restext://ParadoxTimeRandom_013'
     # ../.source/ATimeofWar_Eng_v8.cs:16419
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:16421
     - type: 'text'
-      # ../en-US.restext:1336 | "I cannot recollect the mo..."
-      value: 'restext://ParadoxTimeRandom_009'
+      # ../en-US.restext:1341 | "I cannot recollect the mo..."
+      value: 'restext://ParadoxTimeRandom_014'
     # ../.source/ATimeofWar_Eng_v8.cs:16422
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:16424
     - type: 'text'
-      # ../en-US.restext:1337 | "And though I abhorred the..."
-      value: 'restext://ParadoxTimeRandom_010'
+      # ../en-US.restext:1342 | "And though I abhorred the..."
+      value: 'restext://ParadoxTimeRandom_015'
     # ../.source/ATimeofWar_Eng_v8.cs:16426
     - type: 'break'
       style: 'paragraph'
   - match: 4
     nodes:
-    # ../.source/ATimeofWar_Eng_v8.cs:16434
-    - type: 'text'
-      # ../en-US.restext:1338 | "**Future Notes**"
-      value: 'restext://ParadoxTimeRandom_011'
-    # ../.source/ATimeofWar_Eng_v8.cs:16436
-    - type: 'break'
-      style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:16438
     - type: 'text'
-      # ../en-US.restext:1339 | "There are narrative conse..."
-      value: 'restext://ParadoxTimeRandom_012'
+      # ../en-US.restext:1343 | "There are narrative conse..."
+      value: 'restext://ParadoxTimeRandom_016'
     # ../.source/ATimeofWar_Eng_v8.cs:16446
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:16448
     - type: 'text'
-      # ../en-US.restext:1340 | "It is better to write the..."
-      value: 'restext://ParadoxTimeRandom_013'
+      # ../en-US.restext:1344 | "It is better to write the..."
+      value: 'restext://ParadoxTimeRandom_017'
     # ../.source/ATimeofWar_Eng_v8.cs:16449
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:16451
     - type: 'text'
-      # ../en-US.restext:1341 | "Perhaps history will no l..."
-      value: 'restext://ParadoxTimeRandom_014'
+      # ../en-US.restext:1345 | "Perhaps history will no l..."
+      value: 'restext://ParadoxTimeRandom_018'
     # ../.source/ATimeofWar_Eng_v8.cs:16454
     - type: 'break'
       style: 'paragraph'
   - match: 5
     nodes:
-    # ../.source/ATimeofWar_Eng_v8.cs:16462
-    - type: 'text'
-      # ../en-US.restext:1342 | "**Trust and Benevolence**"
-      value: 'restext://ParadoxTimeRandom_015'
-    # ../.source/ATimeofWar_Eng_v8.cs:16464
-    - type: 'break'
-      style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:16466
     - type: 'text'
-      # ../en-US.restext:1343 | "The people have developed..."
-      value: 'restext://ParadoxTimeRandom_016'
+      # ../en-US.restext:1346 | "The people have developed..."
+      value: 'restext://ParadoxTimeRandom_019'
     # ../.source/ATimeofWar_Eng_v8.cs:16467
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:16469
     - type: 'text'
-      # ../en-US.restext:1344 | "My beautifully macabre es..."
-      value: 'restext://ParadoxTimeRandom_017'
+      # ../en-US.restext:1347 | "My beautifully macabre es..."
+      value: 'restext://ParadoxTimeRandom_020'
     # ../.source/ATimeofWar_Eng_v8.cs:16470
     - type: 'break'
       style: 'paragraph'
   - match: 6
     nodes:
-    # ../.source/ATimeofWar_Eng_v8.cs:16478
-    - type: 'text'
-      # ../en-US.restext:1345 | "**A Return to Suspicion**"
-      value: 'restext://ParadoxTimeRandom_018'
-    # ../.source/ATimeofWar_Eng_v8.cs:16480
-    - type: 'break'
-      style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:16482
     - type: 'text'
-      # ../en-US.restext:1346 | "How could they accuse us ..."
-      value: 'restext://ParadoxTimeRandom_019'
+      # ../en-US.restext:1348 | "How could they accuse us ..."
+      value: 'restext://ParadoxTimeRandom_021'
     # ../.source/ATimeofWar_Eng_v8.cs:16484
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:16486
     - type: 'text'
-      # ../en-US.restext:1347 | "Do we blame Prometheus fo..."
-      value: 'restext://ParadoxTimeRandom_020'
+      # ../en-US.restext:1349 | "Do we blame Prometheus fo..."
+      value: 'restext://ParadoxTimeRandom_022'
     # ../.source/ATimeofWar_Eng_v8.cs:16487
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:16489
     - type: 'text'
-      # ../en-US.restext:1348 | "It is absurd that a corre..."
-      value: 'restext://ParadoxTimeRandom_021'
+      # ../en-US.restext:1350 | "It is absurd that a corre..."
+      value: 'restext://ParadoxTimeRandom_023'
     # ../.source/ATimeofWar_Eng_v8.cs:16491
     - type: 'break'
       style: 'paragraph'
   - match: 7
     nodes:
-    # ../.source/ATimeofWar_Eng_v8.cs:16499
-    - type: 'text'
-      # ../en-US.restext:1349 | "**Targeted**"
-      value: 'restext://ParadoxTimeRandom_022'
-    # ../.source/ATimeofWar_Eng_v8.cs:16501
-    - type: 'break'
-      style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:16503
     - type: 'text'
-      # ../en-US.restext:1350 | "They discovered who did i..."
-      value: 'restext://ParadoxTimeRandom_023'
+      # ../en-US.restext:1351 | "They discovered who did i..."
+      value: 'restext://ParadoxTimeRandom_024'
     # ../.source/ATimeofWar_Eng_v8.cs:16504
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:16506
     - type: 'text'
-      # ../en-US.restext:1351 | "Perhaps it was easy to di..."
-      value: 'restext://ParadoxTimeRandom_024'
+      # ../en-US.restext:1352 | "Perhaps it was easy to di..."
+      value: 'restext://ParadoxTimeRandom_025'
     # ../.source/ATimeofWar_Eng_v8.cs:16507
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:16509
     - type: 'text'
-      # ../en-US.restext:1352 | "My family's decision to d..."
-      value: 'restext://ParadoxTimeRandom_025'
+      # ../en-US.restext:1353 | "My family's decision to d..."
+      value: 'restext://ParadoxTimeRandom_026'
     # ../.source/ATimeofWar_Eng_v8.cs:16510
     - type: 'break'
       style: 'paragraph'
   - match: 8
     nodes:
-    # ../.source/ATimeofWar_Eng_v8.cs:16518
-    - type: 'text'
-      # ../en-US.restext:1353 | "**Utter Catastrophe**"
-      value: 'restext://ParadoxTimeRandom_026'
-    # ../.source/ATimeofWar_Eng_v8.cs:16520
-    - type: 'break'
-      style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:16522
     - type: 'text'
       # ../en-US.restext:1354 | "There is always a cycle o..."

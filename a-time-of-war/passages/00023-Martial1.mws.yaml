@@ -37,7 +37,7 @@ nodes:
     - type: 'break'
     # ../.source/ATimeofWar_Eng_v8.cs:3656
     - type: 'text'
-      # ../en-US.restext:96 | "Place the Suspicion Marke..."
+      # ../en-US.restext:97 | "Place the Suspicion Marke..."
       value: 'restext://Directive_PlaceSuspicionMarker_Lead'
     # ../.source/ATimeofWar_Eng_v8.cs:3659
     - type: 'conditional'
@@ -67,7 +67,7 @@ nodes:
           expr: 'tracker - _rnd_Martial1_0'
     # ../.source/ATimeofWar_Eng_v8.cs:3671
     - type: 'text'
-      # ../en-US.restext:111 | "**{tracker}** and the {ic..."
+      # ../en-US.restext:112 | "**{tracker}** and the {ic..."
       value: 'restext://Directive_TrackerAndMobMarkerLeft'
     # ../.source/ATimeofWar_Eng_v8.cs:3676
     - type: 'conditional'
@@ -77,7 +77,7 @@ nodes:
       - type: 'break'
       # ../.source/ATimeofWar_Eng_v8.cs:3679
       - type: 'text'
-        # ../en-US.restext:57 | "Then, since this is a 3 p..."
+        # ../en-US.restext:58 | "Then, since this is a 3 p..."
         value: 'restext://Directive_3Player_PassMarker_A'
 # ../.source/ATimeofWar_Eng_v8.cs:3688
 - type: 'section'
@@ -122,7 +122,7 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:3747
     - type: 'text'
-      # ../en-US.restext:78 | "The first player to compl..."
+      # ../en-US.restext:79 | "The first player to compl..."
       value: 'restext://Directive_FirstPlayerComplete2AdvancedWeaponry_Fragment'
     # ../.source/ATimeofWar_Eng_v8.cs:3753
     - type: 'link'
@@ -142,33 +142,33 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:3762
     - type: 'section'
-      # ../en-US.restext:149 | "**Military Demands - Barr..."
+      # ../en-US.restext:150 | "**Military Demands - Barr..."
       title: 'restext://Heading_MilitaryDemandsBarracks'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:3770
       - type: 'text'
-        # ../en-US.restext:83 | "The Monarchy demands a co..."
+        # ../en-US.restext:84 | "The Monarchy demands a co..."
         value: 'restext://Directive_MonarchyDemandsServiceBarracksPenalty'
       # ../.source/ATimeofWar_Eng_v8.cs:3774
       - type: 'break'
         style: 'paragraph'
       # ../.source/ATimeofWar_Eng_v8.cs:3776
       - type: 'text'
-        # ../en-US.restext:95 | "When placing a piece on t..."
+        # ../en-US.restext:96 | "When placing a piece on t..."
         value: 'restext://Directive_PlaceOnBarracksNoBonus'
   # ../en-US.restext:274 | "Separatists"
   - match: 'restext://Title_Separatists'
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:3788
     - type: 'section'
-      # ../en-US.restext:150 | "**Military Incentive - Ba..."
+      # ../en-US.restext:151 | "**Military Incentive - Ba..."
       title: 'restext://Heading_MilitaryIncentiveBarracks'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:3796
       - type: 'text'
-        # ../en-US.restext:107 | "The Separatists urge citi..."
+        # ../en-US.restext:108 | "The Separatists urge citi..."
         value: 'restext://Directive_SeparatistsUrgeRallyReward'
       # ../.source/ATimeofWar_Eng_v8.cs:3799
       - type: 'break'
@@ -182,13 +182,13 @@ nodes:
       style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:3814
 - type: 'section'
-  # ../en-US.restext:154 | "**Outpost**"
+  # ../en-US.restext:155 | "**Outpost**"
   title: 'restext://Heading_OutpostBold'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:3822
   - type: 'text'
-    # ../en-US.restext:91 | "An Outpost is open in tow..."
+    # ../en-US.restext:92 | "An Outpost is open in tow..."
     value: 'restext://Directive_OutpostOpenForTrading_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:3826
   - type: 'link'
@@ -217,5 +217,5 @@ nodes:
       var: 'completedRound'
       expr: '-1'
     - type: 'text'
-      # ../en-US.restext:70 | "Do NOT perform the End of..."
+      # ../en-US.restext:71 | "Do NOT perform the End of..."
       value: 'restext://Directive_DoNotPerformEndOfRoundYet'

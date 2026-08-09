@@ -8,7 +8,7 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:11398
 - type: 'text'
-  # ../en-US.restext:183 | "**Letter from {randomname..."
+  # ../en-US.restext:185 | "**Letter from {randomname..."
   value: 'restext://Heading_LetterFromRandomname_Cont'
 # ../.source/FearoftheUnknown_Eng_v15.cs:11407
 - type: 'break'
@@ -19,12 +19,12 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:11411
   - type: 'text'
-    # ../en-US.restext:243 | "To our chagrin, the choic..."
+    # ../en-US.restext:245 | "To our chagrin, the choic..."
     value: 'restext://Narrative_ChagrinDemocraticProcess'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:11416
   - type: 'text'
-    # ../en-US.restext:244 | "We are happy to see that ..."
+    # ../en-US.restext:246 | "We are happy to see that ..."
     value: 'restext://Narrative_ContributionsHoldSway'
 # ../.source/FearoftheUnknown_Eng_v15.cs:11418
 - type: 'break'
@@ -42,7 +42,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'PaymentOrDeathA' # ./00265-PaymentOrDeathA.mws.yaml
-  # ../en-US.restext:369 | "Close"
+  # ../en-US.restext:371 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:

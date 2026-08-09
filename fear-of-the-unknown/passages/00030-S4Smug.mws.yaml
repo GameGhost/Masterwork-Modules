@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S4Smug'
-# ../en-US.restext:624 | "Barely Legal Importation"
+# ../en-US.restext:626 | "Barely Legal Importation"
 title: 'restext://S4Smug_001'
 layout: 'narration'
 nodes:
@@ -14,27 +14,27 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5012
 - type: 'text'
-  # ../en-US.restext:625 | "I am unsure as to how to ..."
+  # ../en-US.restext:627 | "I am unsure as to how to ..."
   value: 'restext://S4Smug_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5016
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5018
 - type: 'text'
-  # ../en-US.restext:626 | "The smuggling business is..."
+  # ../en-US.restext:628 | "The smuggling business is..."
   value: 'restext://S4Smug_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5027
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5031
 - type: 'text'
-  # ../en-US.restext:627 | "**Accepting the Offer**"
+  # ../en-US.restext:629 | "**Accepting the Offer**"
   value: 'restext://S4Smug_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5033
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5034
 - type: 'text'
-  # ../en-US.restext:628 | "Once per round, each play..."
+  # ../en-US.restext:630 | "Once per round, each play..."
   value: 'restext://S4Smug_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5046
 - type: 'break'
@@ -42,10 +42,10 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:5050
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:372 | "Continue..."
+  # ../en-US.restext:374 | "Continue..."
   label: 'restext://UIButton_ContinueEllipsis'
   target: 'SmugEvent' # ./00088-SmugEvent.mws.yaml
-  # ../en-US.restext:369 | "Close"
+  # ../en-US.restext:371 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -56,5 +56,5 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:5068
   - type: 'text'
-    # ../en-US.restext:629 | "Turn to page **15** in th..."
+    # ../en-US.restext:631 | "Turn to page **15** in th..."
     value: 'restext://S4Smug_006'

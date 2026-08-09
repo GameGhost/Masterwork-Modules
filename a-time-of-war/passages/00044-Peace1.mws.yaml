@@ -39,14 +39,14 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:5974
       - type: 'text'
-        # ../en-US.restext:73 | "Each player **pays $1** i..."
+        # ../en-US.restext:74 | "Each player **pays $1** i..."
         value: 'restext://Directive_EachPlayerPays1EstateTax'
     # ../.source/ATimeofWar_Eng_v8.cs:5981
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:5983
     - type: 'text'
-      # ../en-US.restext:96 | "Place the Suspicion Marke..."
+      # ../en-US.restext:97 | "Place the Suspicion Marke..."
       value: 'restext://Directive_PlaceSuspicionMarker_Lead'
     # ../.source/ATimeofWar_Eng_v8.cs:5986
     - type: 'conditional'
@@ -78,7 +78,7 @@ nodes:
             expr: 'tracker + 2'
     # ../.source/ATimeofWar_Eng_v8.cs:5999
     - type: 'text'
-      # ../en-US.restext:111 | "**{tracker}** and the {ic..."
+      # ../en-US.restext:112 | "**{tracker}** and the {ic..."
       value: 'restext://Directive_TrackerAndMobMarkerLeft'
     # ../.source/ATimeofWar_Eng_v8.cs:6004
     - type: 'conditional'
@@ -88,17 +88,17 @@ nodes:
       - type: 'break'
       # ../.source/ATimeofWar_Eng_v8.cs:6007
       - type: 'text'
-        # ../en-US.restext:57 | "Then, since this is a 3 p..."
+        # ../en-US.restext:58 | "Then, since this is a 3 p..."
         value: 'restext://Directive_3Player_PassMarker_A'
 # ../.source/ATimeofWar_Eng_v8.cs:6015
 - type: 'section'
-  # ../en-US.restext:164 | "**Separatist Allegiance**"
+  # ../en-US.restext:165 | "**Separatist Allegiance**"
   title: 'restext://Heading_SeparatistAllegiance'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:6023
   - type: 'text'
-    # ../en-US.restext:90 | "If a player does **NOT** ..."
+    # ../en-US.restext:91 | "If a player does **NOT** ..."
     value: 'restext://Directive_NoSeparatistsFlag_OnceAction'
 # ../.source/ATimeofWar_Eng_v8.cs:6043
 - type: 'break'
@@ -130,13 +130,13 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:6070
   - type: 'section'
-    # ../en-US.restext:141 | "**Everything is a Weapon**"
+    # ../en-US.restext:142 | "**Everything is a Weapon**"
     title: 'restext://Heading_EverythingIsAWeapon'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:6078
     - type: 'text'
-      # ../en-US.restext:109 | "When performing an Experi..."
+      # ../en-US.restext:110 | "When performing an Experi..."
       value: 'restext://Directive_SubstituteWeaponTokenForIngredient'
 # ../.source/ATimeofWar_Eng_v8.cs:6087
 - type: 'break'

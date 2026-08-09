@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Tension'
-# ../en-US.restext:549 | "Tensions Increase in Peac..."
+# ../en-US.restext:551 | "Tensions Increase in Peac..."
 title: 'restext://Tension_001'
-# ../en-US.restext:333 | "Early Years"
+# ../en-US.restext:335 | "Early Years"
 subtitle: 'restext://Title_EarlyYears'
 tags:
 - 'HUB'
@@ -21,7 +21,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3878
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:368 | "Accept"
+    # ../en-US.restext:370 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:3882
@@ -31,7 +31,7 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:3884
     - type: 'text'
-      # ../en-US.restext:550 | "Turn to page **19** of th..."
+      # ../en-US.restext:552 | "Turn to page **19** of th..."
       value: 'restext://Tension_002'
     # ../.source/FearoftheUnknown_Eng_v15.cs:3890
     - type: 'conditional'
@@ -39,11 +39,11 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:3892
       - type: 'text'
-        # ../en-US.restext:551 | "Return all bricks to the box. "
+        # ../en-US.restext:553 | "Return all bricks to the box. "
         value: 'restext://Tension_003'
     # ../.source/FearoftheUnknown_Eng_v15.cs:3894
     - type: 'text'
-      # ../en-US.restext:552 | "Retrieve the **Cabinet of..."
+      # ../en-US.restext:554 | "Retrieve the **Cabinet of..."
       value: 'restext://Tension_004'
     # ../.source/FearoftheUnknown_Eng_v15.cs:3900
     - type: 'break'
@@ -53,36 +53,36 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:3903
       - type: 'text'
-        # ../en-US.restext:74 | "Then, since this is a 3 p..."
+        # ../en-US.restext:76 | "Then, since this is a 3 p..."
         value: 'restext://Directive_3Player_PassMarker_A'
       # ../.source/FearoftheUnknown_Eng_v15.cs:3904
       - type: 'break'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3911
   - type: 'section'
-    # ../en-US.restext:210 | "**Special Rule**"
+    # ../en-US.restext:212 | "**Special Rule**"
     title: 'restext://Heading_SpecialRule'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:3919
     - type: 'text'
-      # ../en-US.restext:553 | "Visiting any location wit..."
+      # ../en-US.restext:555 | "Visiting any location wit..."
       value: 'restext://Tension_006'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3937
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3941
   - type: 'section'
-    # ../en-US.restext:554 | "{icon:storybooktoken}**Sp..."
+    # ../en-US.restext:556 | "{icon:storybooktoken}**Sp..."
     title: 'restext://Tension_007'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:3951
     - type: 'text'
-      # ../en-US.restext:555 | "If the {icon:angrymob_ico..."
+      # ../en-US.restext:557 | "If the {icon:angrymob_ico..."
       value: 'restext://Tension_008'
     # ../.source/FearoftheUnknown_Eng_v15.cs:3956
     - type: 'link'
-      # ../en-US.restext:556 | "click here to resolve the..."
+      # ../en-US.restext:558 | "click here to resolve the..."
       label: 'restext://Tension_009'
       target: 'TenseConfirm' # ./00128-TenseConfirm.mws.yaml
       snapshot: true
@@ -95,26 +95,26 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3965
   - type: 'section'
-    # ../en-US.restext:197 | "**Plot Expansion**"
+    # ../en-US.restext:199 | "**Plot Expansion**"
     title: 'restext://Heading_PlotExpansion'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:3974
     - type: 'text'
-      # ../en-US.restext:81 | "Bricks can now be used to..."
+      # ../en-US.restext:83 | "Bricks can now be used to..."
       value: 'restext://Directive_BricksExpandEstatePlot'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3978
   - type: 'break'
     style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3984
 - type: 'section'
-  # ../en-US.restext:194 | "**Occult Experimentation**"
+  # ../en-US.restext:196 | "**Occult Experimentation**"
   title: 'restext://Heading_OccultExperimentation'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3992
   - type: 'text'
-    # ../en-US.restext:295 | "At the End of the Generat..."
+    # ../en-US.restext:297 | "At the End of the Generat..."
     value: 'restext://Reward_MostOccultExperiments_CabinetOfCuriosities'
   # ../.source/FearoftheUnknown_Eng_v15.cs:4005
   - type: 'conditional'
@@ -122,18 +122,18 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:4007
     - type: 'text'
-      # ../en-US.restext:298 | "The player with the secon..."
+      # ../en-US.restext:300 | "The player with the secon..."
       value: 'restext://Reward_SecondMostExperiments_WithVariant'
   # ../.source/FearoftheUnknown_Eng_v15.cs:4009
   - type: 'text'
-    # ../en-US.restext:136 | " _Ties are broken by the ..."
+    # ../en-US.restext:138 | " _Ties are broken by the ..."
     value: 'restext://Directive_TieBreak_LowestVP_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4015
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4019
 - type: 'section'
-  # ../en-US.restext:231 | "**The Church**"
+  # ../en-US.restext:233 | "**The Church**"
   title: 'restext://Heading_TheChurch'
   style: 'hub-card'
   content:
@@ -145,7 +145,7 @@ nodes:
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:4028
   - type: 'text'
-    # ../en-US.restext:84 | " for an explanation of th..."
+    # ../en-US.restext:86 | " for an explanation of th..."
     value: 'restext://Directive_ChurchExplanation_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:4033
   - type: 'conditional'
@@ -164,7 +164,7 @@ nodes:
     # ../en-US.restext:35 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
     target: '${ten == 0 ? "TenseConfirm" : "ConsequencesTense"}' # ./00128-TenseConfirm.mws.yaml, ./00084-ConsequencesTense.mws.yaml
-    # ../en-US.restext:373 | "End of Round"
+    # ../en-US.restext:375 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -173,10 +173,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:300 | "The Early Years of the Th..."
+      # ../en-US.restext:302 | "The Early Years of the Th..."
       value: 'restext://Round_GenerationIII_EarlyEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:307 | "Then, perform all Start o..."
+      # ../en-US.restext:309 | "Then, perform all Start o..."
       value: 'restext://Round_StartMiddleYears_Rule'

@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Mania3'
-# ../en-US.restext:367 | "WITCH HUNT"
+# ../en-US.restext:369 | "WITCH HUNT"
 title: 'restext://Title_WitchHuntCaps'
-# ../en-US.restext:341 | "Late Years"
+# ../en-US.restext:343 | "Late Years"
 subtitle: 'restext://Title_LateYears'
 tags:
 - 'HUB'
@@ -27,7 +27,7 @@ nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:5746
       - type: 'popup'
         layout: 'setup'
-        # ../en-US.restext:368 | "Accept"
+        # ../en-US.restext:370 | "Accept"
         okay: 'restext://UIButton_Accept'
         header:
         # ../.source/FearoftheUnknown_Eng_v15.cs:5750
@@ -37,14 +37,14 @@ nodes:
         content:
         # ../.source/FearoftheUnknown_Eng_v15.cs:5752
         - type: 'text'
-          # ../en-US.restext:668 | "Turn to page **2** of the..."
+          # ../en-US.restext:670 | "Turn to page **2** of the..."
           value: 'restext://Mania3_002'
     - match: 'blacksmith'
       nodes:
       # ../.source/FearoftheUnknown_Eng_v15.cs:5765
       - type: 'popup'
         layout: 'setup'
-        # ../en-US.restext:368 | "Accept"
+        # ../en-US.restext:370 | "Accept"
         okay: 'restext://UIButton_Accept'
         header:
         # ../.source/FearoftheUnknown_Eng_v15.cs:5769
@@ -54,30 +54,30 @@ nodes:
         content:
         # ../.source/FearoftheUnknown_Eng_v15.cs:5771
         - type: 'text'
-          # ../en-US.restext:669 | "Turn to page **3** of the..."
+          # ../en-US.restext:671 | "Turn to page **3** of the..."
           value: 'restext://Mania3_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5784
 - type: 'section'
-  # ../en-US.restext:670 | "**PARANOIA - Town Hall**"
+  # ../en-US.restext:672 | "**PARANOIA - Town Hall**"
   title: 'restext://Mania3_004'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:5793
   - type: 'text'
-    # ../en-US.restext:671 | "By visiting the Town Hall..."
+    # ../en-US.restext:673 | "By visiting the Town Hall..."
     value: 'restext://Mania3_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5805
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5809
 - type: 'section'
-  # ../en-US.restext:220 | "{icon:storybooktoken} **F..."
+  # ../en-US.restext:222 | "{icon:storybooktoken} **F..."
   title: 'restext://Heading_StorybookToken_FamilyPlot'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:5819
   - type: 'text'
-    # ../en-US.restext:112 | "Any time a player is over..."
+    # ../en-US.restext:114 | "Any time a player is over..."
     value: 'restext://Directive_OvertakenByMob_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:5823
   - type: 'link'
@@ -94,13 +94,13 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:5833
   - type: 'section'
-    # ../en-US.restext:213 | "{icon:storybooktoken} **10VP**"
+    # ../en-US.restext:215 | "{icon:storybooktoken} **10VP**"
     title: 'restext://Heading_StorybookToken_10VP'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:5842
     - type: 'text'
-      # ../en-US.restext:121 | "Whenever a player reaches..."
+      # ../en-US.restext:123 | "Whenever a player reaches..."
       value: 'restext://Directive_Reaches10VP_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:5843
     - type: 'link'
@@ -117,13 +117,13 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:5853
   - type: 'section'
-    # ../en-US.restext:225 | "{icon:storybooktoken} **R..."
+    # ../en-US.restext:227 | "{icon:storybooktoken} **R..."
     title: 'restext://Heading_StorybookToken_ResearchLevel2'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:5862
     - type: 'text'
-      # ../en-US.restext:124 | "Whenever a player reaches..."
+      # ../en-US.restext:126 | "Whenever a player reaches..."
       value: 'restext://Directive_ReachesJournalLevel2_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:5863
     - type: 'link'
@@ -140,13 +140,13 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:5873
   - type: 'section'
-    # ../en-US.restext:223 | "{icon:storybooktoken} **I..."
+    # ../en-US.restext:225 | "{icon:storybooktoken} **I..."
     title: 'restext://Heading_StorybookToken_InsanityOf3'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:5883
     - type: 'text'
-      # ../en-US.restext:123 | "Whenever a player reaches..."
+      # ../en-US.restext:125 | "Whenever a player reaches..."
       value: 'restext://Directive_ReachesInsanitySpace3_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:5886
     - type: 'link'
@@ -163,17 +163,17 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:5896
   - type: 'section'
-    # ../en-US.restext:219 | "{icon:storybooktoken} **C..."
+    # ../en-US.restext:221 | "{icon:storybooktoken} **C..."
     title: 'restext://Heading_StorybookToken_Creepy'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:5906
     - type: 'text'
-      # ../en-US.restext:122 | "Whenever a player reaches..."
+      # ../en-US.restext:124 | "Whenever a player reaches..."
       value: 'restext://Directive_ReachesCreepySpace3_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:5909
     - type: 'link'
-      # ../en-US.restext:672 | "click here…"
+      # ../en-US.restext:674 | "click here…"
       label: 'restext://Mania3_006'
       target: 'FPCreepy3' # ./00132-FPCreepy3.mws.yaml
       snapshot: true
@@ -190,10 +190,10 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:5923
   - type: 'popup'
     layout: 'end_of_round'
-    # ../en-US.restext:673 | "Click here at the End of ..."
+    # ../en-US.restext:675 | "Click here at the End of ..."
     label: 'restext://Mania3_007'
     target: 'FPFateHub' # ./00138-FPFateHub.mws.yaml
-    # ../en-US.restext:373 | "End of Round"
+    # ../en-US.restext:375 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -202,10 +202,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:674 | "The Late Years of the Fir..."
+      # ../en-US.restext:676 | "The Late Years of the Fir..."
       value: 'restext://Mania3_008'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:299 | "Perform any End of Round ..."
+      # ../en-US.restext:301 | "Perform any End of Round ..."
       value: 'restext://Round_EndOfRoundActions_Rule'

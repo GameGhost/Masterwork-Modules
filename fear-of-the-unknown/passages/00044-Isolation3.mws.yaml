@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Isolation3'
-# ../en-US.restext:366 | "Walled City"
+# ../en-US.restext:368 | "Walled City"
 title: 'restext://Title_WalledCity'
-# ../en-US.restext:341 | "Late Years"
+# ../en-US.restext:343 | "Late Years"
 subtitle: 'restext://Title_LateYears'
 tags:
 - 'HUB'
@@ -25,7 +25,7 @@ nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6952
     - type: 'popup'
       layout: 'setup'
-      # ../en-US.restext:368 | "Accept"
+      # ../en-US.restext:370 | "Accept"
       okay: 'restext://UIButton_Accept'
       header:
       # ../.source/FearoftheUnknown_Eng_v15.cs:6956
@@ -43,20 +43,20 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6973
   - type: 'section'
-    # ../en-US.restext:230 | "{icon:storybooktoken} **V..."
+    # ../en-US.restext:232 | "{icon:storybooktoken} **V..."
     title: 'restext://Heading_StorybookToken_VerificationOfIdentity'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6982
     - type: 'text'
-      # ../en-US.restext:272 | "As a registered citizen w..."
+      # ../en-US.restext:274 | "As a registered citizen w..."
       value: 'restext://Narrative_RegisteredCitizenBackgroundCheck'
     # ../.source/FearoftheUnknown_Eng_v15.cs:6984
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:6986
     - type: 'text'
-      # ../en-US.restext:109 | "You MUST place your **Sel..."
+      # ../en-US.restext:111 | "You MUST place your **Sel..."
       value: 'restext://Directive_MustPlaceSelfTownHall_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:6992
     - type: 'link'
@@ -69,14 +69,14 @@ nodes:
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:6997
     - type: 'text'
-      # ../en-US.restext:110 | "_(If you have not verifie..."
+      # ../en-US.restext:112 | "_(If you have not verifie..."
       value: 'restext://Directive_NotVerifiedLose4VP'
   # ../.source/FearoftheUnknown_Eng_v15.cs:7005
   - type: 'break'
     style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7010
 - type: 'section'
-  # ../en-US.restext:231 | "**The Church**"
+  # ../en-US.restext:233 | "**The Church**"
   title: 'restext://Heading_TheChurch'
   style: 'hub-card'
   content:
@@ -88,20 +88,20 @@ nodes:
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:7020
   - type: 'text'
-    # ../en-US.restext:84 | " for an explanation of th..."
+    # ../en-US.restext:86 | " for an explanation of th..."
     value: 'restext://Directive_ChurchExplanation_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7025
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7029
 - type: 'section'
-  # ../en-US.restext:216 | "{icon:storybooktoken} **B..."
+  # ../en-US.restext:218 | "{icon:storybooktoken} **B..."
   title: 'restext://Heading_StorybookToken_BrazenOffer'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7039
   - type: 'text'
-    # ../en-US.restext:133 | "Once per round, each play..."
+    # ../en-US.restext:135 | "Once per round, each play..."
     value: 'restext://Directive_SmugglersDockVisit_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:7059
   - type: 'link'
@@ -121,7 +121,7 @@ nodes:
     # ../en-US.restext:33 | "Click here at the End of ..."
     label: 'restext://Click_EndGeneration_FinalScoringDetermineFate'
     target: 'IsolationCaravanResolve' # ./00241-IsolationCaravanResolve.mws.yaml
-    # ../en-US.restext:373 | "End of Round"
+    # ../en-US.restext:375 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -130,10 +130,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:301 | "The Late Years of the Thi..."
+      # ../en-US.restext:303 | "The Late Years of the Thi..."
       value: 'restext://Round_GenerationIII_LateEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:299 | "Perform any End of Round ..."
+      # ../en-US.restext:301 | "Perform any End of Round ..."
       value: 'restext://Round_EndOfRoundActions_Rule'

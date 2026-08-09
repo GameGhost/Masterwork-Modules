@@ -14,12 +14,12 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:96 | "Please enter the VP of yo..."
+      # ../en-US.restext:98 | "Please enter the VP of yo..."
       value: 'restext://Directive_EnterEngineeringVP_Strength'
     - type: 'input'
       label: ''
       var: 'strE'
-    # ../en-US.restext:371 | "Continue"
+    # ../en-US.restext:373 | "Continue"
     okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'
@@ -29,7 +29,7 @@ nodes:
     target: 'Player5Statsb' # ./00309-Player5Statsb.mws.yaml
 # ../.source/FearoftheUnknown_Eng_v15.cs:33267
 - type: 'text'
-  # ../en-US.restext:2499 | "**{strE}** is locked in a..."
+  # ../en-US.restext:2497 | "**{strE}** is locked in a..."
   value: 'restext://Player5Statsb_001'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33271
 - type: 'break'

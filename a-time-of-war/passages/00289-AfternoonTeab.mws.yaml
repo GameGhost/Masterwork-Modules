@@ -15,7 +15,7 @@ nodes:
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:26843
 - type: 'text'
-  # ../en-US.restext:116 | "Each player takes a Votin..."
+  # ../en-US.restext:117 | "Each player takes a Votin..."
   value: 'restext://Directive_VotingTokenRevealVotes_Capital'
 # ../.source/ATimeofWar_Eng_v8.cs:26845
 - type: 'break'
@@ -68,22 +68,22 @@ nodes:
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:55 | "3"
+      # ../en-US.restext:56 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:56 | "2"
+      # ../en-US.restext:57 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:53 | "1"
+      # ../en-US.restext:54 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:54 | "REVEAL"
+      # ../en-US.restext:55 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:54 | "REVEAL"
+    # ../en-US.restext:55 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: 'AfternoonTeaRes' # ./00291-AfternoonTeaRes.mws.yaml
     snapshot: false

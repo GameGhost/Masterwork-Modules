@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'FPSanity3signin'
-# ../en-US.restext:1333 | "Dedication Should Not Be ..."
+# ../en-US.restext:1331 | "Dedication Should Not Be ..."
 title: 'restext://FPSanity3signin_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:16369
 - type: 'text'
-  # ../en-US.restext:1334 | "**Anonymous Editorial - {..."
+  # ../en-US.restext:1332 | "**Anonymous Editorial - {..."
   value: 'restext://FPSanity3signin_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:16380
 - type: 'assign'
@@ -19,21 +19,21 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:16382
 - type: 'text'
-  # ../en-US.restext:1335 | "The level of paranoia I h..."
+  # ../en-US.restext:1333 | "The level of paranoia I h..."
   value: 'restext://FPSanity3signin_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:16383
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:16385
 - type: 'text'
-  # ../en-US.restext:1336 | "Who are we to judge a per..."
+  # ../en-US.restext:1334 | "Who are we to judge a per..."
   value: 'restext://FPSanity3signin_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:16386
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:16388
 - type: 'text'
-  # ../en-US.restext:1337 | "A person should be judged..."
+  # ../en-US.restext:1335 | "A person should be judged..."
   value: 'restext://FPSanity3signin_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:16390
 - type: 'break'
@@ -44,7 +44,7 @@ nodes:
   # ../en-US.restext:51 | "Click to return..."
   label: 'restext://Click_Return'
   target: '${round == 1 ? "Mania" : round == 2 ? "Mania2" : "Mania3"}' # ./00005-Mania.mws.yaml, ./00036-Mania2.mws.yaml, ./00037-Mania3.mws.yaml
-  # ../en-US.restext:369 | "Close"
+  # ../en-US.restext:371 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -61,12 +61,12 @@ nodes:
   - type: 'break'
   # ../.source/FearoftheUnknown_Eng_v15.cs:16412
   - type: 'text'
-    # ../en-US.restext:130 | "Return the{icon:storybook..."
+    # ../en-US.restext:132 | "Return the{icon:storybook..."
     value: 'restext://Directive_ReturnStorybookTokenToBox_NoSpaces'
   # ../.source/FearoftheUnknown_Eng_v15.cs:16413
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:16417
   - type: 'text'
-    # ../en-US.restext:292 | "**Immediately gain 1VP.**"
+    # ../en-US.restext:294 | "**Immediately gain 1VP.**"
     value: 'restext://Reward_ImmediatelyGain1VP'

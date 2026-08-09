@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Privatized3'
-# ../en-US.restext:350 | "Private Investors"
+# ../en-US.restext:352 | "Private Investors"
 title: 'restext://Title_PrivateInvestors'
-# ../en-US.restext:341 | "Late Years"
+# ../en-US.restext:343 | "Late Years"
 subtitle: 'restext://Title_LateYears'
 tags:
 - 'HUB'
@@ -16,26 +16,26 @@ nodes:
   expr: '18'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7498
 - type: 'section'
-  # ../en-US.restext:166 | "**Everything You Know is ..."
+  # ../en-US.restext:168 | "**Everything You Know is ..."
   title: 'restext://Heading_EverythingYouKnowIsWrong'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7506
   - type: 'text'
-    # ../en-US.restext:83 | "You cannot place Servants..."
+    # ../en-US.restext:85 | "You cannot place Servants..."
     value: 'restext://Directive_CannotPlaceServantsUntilMobReached'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7515
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7519
 - type: 'section'
-  # ../en-US.restext:222 | "{icon:storybooktoken} **I..."
+  # ../en-US.restext:224 | "{icon:storybooktoken} **I..."
   title: 'restext://Heading_StorybookToken_ImpressingWarden'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7530
   - type: 'text'
-    # ../en-US.restext:86 | "In this town, creepy acti..."
+    # ../en-US.restext:88 | "In this town, creepy acti..."
     value: 'restext://Directive_CreepyActionsRewarded_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:7536
   - type: 'link'
@@ -52,24 +52,24 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7544
   - type: 'section'
-    # ../en-US.restext:234 | "**The Junk Palace**"
+    # ../en-US.restext:236 | "**The Junk Palace**"
     title: 'restext://Heading_TheJunkPalace'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:7553
     - type: 'text'
-      # ../en-US.restext:139 | "When a player visits this..."
+      # ../en-US.restext:141 | "When a player visits this..."
       value: 'restext://Directive_VisitActivateAsylumupAbility'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:7563
   - type: 'section'
-    # ../en-US.restext:228 | "{icon:storybooktoken} **T..."
+    # ../en-US.restext:230 | "{icon:storybooktoken} **T..."
     title: 'restext://Heading_StorybookToken_TheJunkPalace'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:7573
     - type: 'text'
-      # ../en-US.restext:144 | "When a player visits the ..."
+      # ../en-US.restext:146 | "When a player visits the ..."
       value: 'restext://Directive_VisitsJunkPalace_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:7574
     - type: 'link'
@@ -82,7 +82,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7581
 - type: 'section'
-  # ../en-US.restext:215 | "{icon:storybooktoken} **B..."
+  # ../en-US.restext:217 | "{icon:storybooktoken} **B..."
   title: 'restext://Heading_StorybookToken_BloodInBattledome'
   style: 'hub-card'
   content:
@@ -109,13 +109,13 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:7605
     - type: 'section'
-      # ../en-US.restext:233 | "**The Hunt**"
+      # ../en-US.restext:235 | "**The Hunt**"
       title: 'restext://Heading_TheHunt'
       style: 'hub-card'
       content:
       # ../.source/FearoftheUnknown_Eng_v15.cs:7613
       - type: 'text'
-        # ../en-US.restext:256 | "With the land changed, th..."
+        # ../en-US.restext:258 | "With the land changed, th..."
         value: 'restext://Narrative_LandChangedHuntAbandoned'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7617
 - type: 'break'
@@ -130,7 +130,7 @@ nodes:
     # ../en-US.restext:759 | "Click here at the End of ..."
     label: 'restext://Privatized3_002'
     target: 'PrivateCreepPenalty' # ./00339-PrivateCreepPenalty.mws.yaml
-    # ../en-US.restext:373 | "End of Round"
+    # ../en-US.restext:375 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -139,10 +139,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:301 | "The Late Years of the Thi..."
+      # ../en-US.restext:303 | "The Late Years of the Thi..."
       value: 'restext://Round_GenerationIII_LateEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:299 | "Perform any End of Round ..."
+      # ../en-US.restext:301 | "Perform any End of Round ..."
       value: 'restext://Round_EndOfRoundActions_Rule'

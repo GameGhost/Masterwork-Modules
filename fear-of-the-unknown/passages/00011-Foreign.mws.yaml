@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Foreign'
-# ../en-US.restext:329 | "Blame it on the Foreigners"
+# ../en-US.restext:331 | "Blame it on the Foreigners"
 title: 'restext://Title_BlameItOnForeigners'
-# ../en-US.restext:333 | "Early Years"
+# ../en-US.restext:335 | "Early Years"
 subtitle: 'restext://Title_EarlyYears'
 tags:
 - 'HUB'
@@ -25,7 +25,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2672
   - type: 'popup'
     layout: 'setup'
-    # ../en-US.restext:368 | "Accept"
+    # ../en-US.restext:370 | "Accept"
     okay: 'restext://UIButton_Accept'
     header:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2676
@@ -35,7 +35,7 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2678
     - type: 'text'
-      # ../en-US.restext:464 | "Retrieve the **Memorial B..."
+      # ../en-US.restext:466 | "Retrieve the **Memorial B..."
       value: 'restext://Foreign_002'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2689
     - type: 'conditional'
@@ -43,13 +43,13 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:2691
       - type: 'text'
-        # ../en-US.restext:465 | "For {playtxt} players, yo..."
+        # ../en-US.restext:467 | "For {playtxt} players, yo..."
         value: 'restext://Foreign_003'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2700
     - type: 'break'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2701
     - type: 'text'
-      # ../en-US.restext:118 | "Place the Suspicion Marke..."
+      # ../en-US.restext:120 | "Place the Suspicion Marke..."
       value: 'restext://Directive_PlaceSuspicionMarker_Lead'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2704
     - type: 'conditional'
@@ -77,7 +77,7 @@ nodes:
             expr: 'tracker + 1'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2716
     - type: 'text'
-      # ../en-US.restext:138 | "**{tracker}** and the {ic..."
+      # ../en-US.restext:140 | "**{tracker}** and the {ic..."
       value: 'restext://Directive_TrackerAndMobMarkerLeft'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2721
     - type: 'break'
@@ -87,46 +87,46 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:2724
       - type: 'text'
-        # ../en-US.restext:74 | "Then, since this is a 3 p..."
+        # ../en-US.restext:76 | "Then, since this is a 3 p..."
         value: 'restext://Directive_3Player_PassMarker_A'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2732
 - type: 'section'
-  # ../en-US.restext:239 | "**Witching Hour**"
+  # ../en-US.restext:241 | "**Witching Hour**"
   title: 'restext://Heading_WitchingHour'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2741
   - type: 'text'
-    # ../en-US.restext:466 | "The **{witch1}** has been..."
+    # ../en-US.restext:468 | "The **{witch1}** has been..."
     value: 'restext://Foreign_008'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2749
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2751
 - type: 'conditional'
-  # ../en-US.restext:332 | "Church"
+  # ../en-US.restext:334 | "Church"
   if: 'witch1 == "restext://Title_Church"'
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2755
   - type: 'section'
-    # ../en-US.restext:226 | "{icon:storybooktoken} **R..."
+    # ../en-US.restext:228 | "{icon:storybooktoken} **R..."
     title: 'restext://Heading_StorybookToken_RumorMill'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2764
     - type: 'text'
-      # ../en-US.restext:468 | "With the Church placed un..."
+      # ../en-US.restext:470 | "With the Church placed un..."
       value: 'restext://Foreign_013'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2772
   - type: 'section'
-    # ../en-US.restext:226 | "{icon:storybooktoken} **R..."
+    # ../en-US.restext:228 | "{icon:storybooktoken} **R..."
     title: 'restext://Heading_StorybookToken_RumorMill'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2781
     - type: 'text'
-      # ../en-US.restext:141 | "When you visit the Church, "
+      # ../en-US.restext:143 | "When you visit the Church, "
       value: 'restext://Directive_VisitChurch_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2782
     - type: 'link'
@@ -138,20 +138,20 @@ nodes:
     - type: 'break'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2784
     - type: 'text'
-      # ../en-US.restext:467 | "This will allow you to se..."
+      # ../en-US.restext:469 | "This will allow you to se..."
       value: 'restext://Foreign_012'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2787
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2791
 - type: 'section'
-  # ../en-US.restext:229 | "{icon:storybooktoken} **T..."
+  # ../en-US.restext:231 | "{icon:storybooktoken} **T..."
   title: 'restext://Heading_StorybookToken_TownStrength'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2802
   - type: 'text'
-    # ../en-US.restext:108 | "Players may visit the Tow..."
+    # ../en-US.restext:110 | "Players may visit the Tow..."
     value: 'restext://Directive_MemorialBrickPurchase_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2812
   - type: 'link'
@@ -164,13 +164,13 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2818
 - type: 'section'
-  # ../en-US.restext:179 | "**Key to the City**"
+  # ../en-US.restext:181 | "**Key to the City**"
   title: 'restext://Heading_KeyToTheCity'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2826
   - type: 'text'
-    # ../en-US.restext:293 | "At the End of the Generat..."
+    # ../en-US.restext:295 | "At the End of the Generat..."
     value: 'restext://Reward_MostBricks_KeyToCity'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2838
   - type: 'conditional'
@@ -178,20 +178,20 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2840
     - type: 'text'
-      # ../en-US.restext:296 | "The player who has the se..."
+      # ../en-US.restext:298 | "The player who has the se..."
       value: 'restext://Reward_SecondMostBricks'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2844
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2849
 - type: 'section'
-  # ../en-US.restext:469 | "{icon:storybooktoken} **B..."
+  # ../en-US.restext:471 | "{icon:storybooktoken} **B..."
   title: 'restext://Foreign_019'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2860
   - type: 'text'
-    # ../en-US.restext:470 | "The only signs of moderni..."
+    # ../en-US.restext:472 | "The only signs of moderni..."
     value: 'restext://Foreign_020'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2862
   - type: 'link'
@@ -207,13 +207,13 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2870
 - type: 'section'
-  # ../en-US.restext:208 | "**Second Round Event - Ac..."
+  # ../en-US.restext:210 | "**Second Round Event - Ac..."
   title: 'restext://Heading_SecondRoundEvent_Accusations'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2879
   - type: 'text'
-    # ../en-US.restext:255 | "With a hideous hex upon t..."
+    # ../en-US.restext:257 | "With a hideous hex upon t..."
     value: 'restext://Narrative_HideousHexSacrificeCousin'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2889
 - type: 'break'
@@ -224,13 +224,13 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2895
   - type: 'section'
-    # ../en-US.restext:224 | "{icon:storybooktoken} **P..."
+    # ../en-US.restext:226 | "{icon:storybooktoken} **P..."
     title: 'restext://Heading_StorybookToken_PressingForward'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2905
     - type: 'text'
-      # ../en-US.restext:106 | "If a player reaches 35VP, "
+      # ../en-US.restext:108 | "If a player reaches 35VP, "
       value: 'restext://Directive_IfPlayerReaches35VP_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2907
     - type: 'conditional'
@@ -260,7 +260,7 @@ nodes:
     # ../en-US.restext:35 | "Click here at the end of ..."
     label: 'restext://Click_EndRound_NextRound'
     target: 'WallEvent' # ./00071-WallEvent.mws.yaml
-    # ../en-US.restext:373 | "End of Round"
+    # ../en-US.restext:375 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -269,10 +269,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:303 | "The Early Years of the Se..."
+      # ../en-US.restext:305 | "The Early Years of the Se..."
       value: 'restext://Round_GenerationII_EarlyEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:307 | "Then, perform all Start o..."
+      # ../en-US.restext:309 | "Then, perform all Start o..."
       value: 'restext://Round_StartMiddleYears_Rule'

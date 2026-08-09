@@ -2,18 +2,15 @@
 ---
 format: 'mws/0.4'
 passage_id: 'MonuRes'
+# ../en-US.restext:1907 | MonuRes_001 | "A Bend Towards Chaos"
+# ../en-US.restext:1908 | MonuRes_002 | "A Secure Future"
+title: '{release >= 1 ? "restext://MonuRes_001" : "restext://MonuRes_002"}'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:23080
 - type: 'conditional'
   if: 'release >= 1'
   then:
-  # ../.source/ATimeofWar_Eng_v8.cs:23084
-  - type: 'text'
-    # ../en-US.restext:1909 | "**A Bend Towards Chaos**"
-    value: 'restext://MonuRes_003'
-  # ../.source/ATimeofWar_Eng_v8.cs:23086
-  - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:23087
   - type: 'text'
     # ../en-US.restext:1910 | "To hell with academia! I ..."
@@ -26,16 +23,10 @@ nodes:
     # ../en-US.restext:1911 | "Publishing the means to c..."
     value: 'restext://MonuRes_005'
   else:
-  # ../.source/ATimeofWar_Eng_v8.cs:23096
-  - type: 'text'
-    # ../en-US.restext:1907 | "**A Secure Future**"
-    value: 'restext://MonuRes_001'
-  # ../.source/ATimeofWar_Eng_v8.cs:23098
-  - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:23099
   - type: 'text'
-    # ../en-US.restext:1908 | "Bold as it would have bee..."
-    value: 'restext://MonuRes_002'
+    # ../en-US.restext:1909 | "Bold as it would have bee..."
+    value: 'restext://MonuRes_003'
 # ../.source/ATimeofWar_Eng_v8.cs:23101
 - type: 'break'
   style: 'paragraph'

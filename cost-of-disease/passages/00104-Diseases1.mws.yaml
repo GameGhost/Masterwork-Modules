@@ -2,6 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Diseases1'
+# ../en-US.restext:1160 | Diseases1_001 | "A Year of Sickness"
+# ../en-US.restext:1161 | Diseases1_002 | "Rest and Time"
+title: '{disease1 == 1 ? "restext://Diseases1_001" : disease1 == 2 ? "restext://Diseases1_002" : ""}'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:11337
@@ -14,16 +17,10 @@ nodes:
   cases:
   - match: 1
     nodes:
-    # ../.source/TheCostofDisease_Eng_v10.cs:11342
-    - type: 'text'
-      # ../en-US.restext:1160 | "**A Year of Sickness**"
-      value: 'restext://Diseases1_001'
-    # ../.source/TheCostofDisease_Eng_v10.cs:11344
-    - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:11345
     - type: 'text'
-      # ../en-US.restext:1161 | "Even the most agile mind ..."
-      value: 'restext://Diseases1_002'
+      # ../en-US.restext:1162 | "Even the most agile mind ..."
+      value: 'restext://Diseases1_003'
     # ../.source/TheCostofDisease_Eng_v10.cs:11348
     - type: 'break'
       style: 'paragraph'
@@ -44,16 +41,10 @@ nodes:
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:11387
       - type: 'text'
-        # ../en-US.restext:1162 | "All players that have not..."
-        value: 'restext://Diseases1_003'
+        # ../en-US.restext:1163 | "All players that have not..."
+        value: 'restext://Diseases1_004'
   - match: 2
     nodes:
-    # ../.source/TheCostofDisease_Eng_v10.cs:11358
-    - type: 'text'
-      # ../en-US.restext:1163 | "**Rest and Time**"
-      value: 'restext://Diseases1_004'
-    # ../.source/TheCostofDisease_Eng_v10.cs:11360
-    - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:11361
     - type: 'text'
       # ../en-US.restext:1164 | "It seemed that the cousin..."

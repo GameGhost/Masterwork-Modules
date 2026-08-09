@@ -8,14 +8,14 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:12840
 - type: 'text'
-  # ../en-US.restext:314 | "Special Event"
+  # ../en-US.restext:316 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12841
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12842
 - type: 'text'
-  # ../en-US.restext:145 | "Each player takes a votin..."
+  # ../en-US.restext:147 | "Each player takes a votin..."
   value: 'restext://Directive_VotingTokenRevealVotes'
 # ../.source/FearoftheUnknown_Eng_v15.cs:12844
 - type: 'break'
@@ -47,7 +47,7 @@ nodes:
   label: 'restext://S4Kill2_007'
   content:
   - type: 'text'
-    # ../en-US.restext:375 | "Click on the 'Start Votin..."
+    # ../en-US.restext:377 | "Click on the 'Start Votin..."
     value: 'restext://Voting_Instructions'
   - type: 'break'
     style: 'paragraph'
@@ -58,27 +58,27 @@ nodes:
     style: 'paragraph'
   - type: 'popup'
     layout: 'countdown_action'
-    # ../en-US.restext:376 | "Start Voting"
+    # ../en-US.restext:378 | "Start Voting"
     label: 'restext://Voting_StartButton'
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:72 | "3"
+      # ../en-US.restext:74 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:73 | "2"
+      # ../en-US.restext:75 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:70 | "1"
+      # ../en-US.restext:72 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:71 | "REVEAL"
+      # ../en-US.restext:73 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:71 | "REVEAL"
+    # ../en-US.restext:73 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: 'S4Kill3' # ./00208-S4Kill3.mws.yaml
     snapshot: false

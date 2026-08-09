@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S4Con2'
-# ../en-US.restext:638 | "The Trial"
+# ../en-US.restext:640 | "The Trial"
 title: 'restext://S4Con2_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:5194
 - type: 'text'
-  # ../en-US.restext:186 | "**Letter from {tempid} -** "
+  # ../en-US.restext:188 | "**Letter from {tempid} -** "
   value: 'restext://Heading_LetterFromTempid_Trailing'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5200
 - type: 'include_passage'
@@ -18,14 +18,14 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5205
 - type: 'text'
-  # ../en-US.restext:639 | "I have been served a noti..."
+  # ../en-US.restext:641 | "I have been served a noti..."
   value: 'restext://S4Con2_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5206
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5210
 - type: 'text'
-  # ../en-US.restext:159 | "**Choose:**"
+  # ../en-US.restext:161 | "**Choose:**"
   value: 'restext://Heading_ChooseColon'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5217
 - type: 'let'
@@ -35,7 +35,7 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5213
 - type: 'text'
-  # ../en-US.restext:640 | "You may pay **${_rnd_S4Co..."
+  # ../en-US.restext:642 | "You may pay **${_rnd_S4Co..."
   value: 'restext://S4Con2_004'
   lets:
   - '_rnd_S4Con2_0'
@@ -44,7 +44,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5225
 - type: 'link'
-  # ../en-US.restext:641 | "Pay the $ to the supply a..."
+  # ../en-US.restext:643 | "Pay the $ to the supply a..."
   label: 'restext://S4Con2_005'
   target: 'S4Con2A' # ./00091-S4Con2A.mws.yaml
   snapshot: true
@@ -58,7 +58,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:5229
 - type: 'link'
-  # ../en-US.restext:642 | "Accept the Outcome."
+  # ../en-US.restext:644 | "Accept the Outcome."
   label: 'restext://S4Con2_006'
   target: 'S4Con2A' # ./00091-S4Con2A.mws.yaml
   snapshot: true

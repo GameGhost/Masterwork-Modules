@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TITLE SCREEN'
-# ../en-US.restext:345 | "MY FATHER'S WORK"
+# ../en-US.restext:347 | "MY FATHER'S WORK"
 title: 'restext://Title_MyFathersWork'
 tags:
 - 'NOTADDED'
@@ -10,13 +10,13 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:1693
 - type: 'section'
-  # ../en-US.restext:249 | "ERROR!"
+  # ../en-US.restext:251 | "ERROR!"
   title: 'restext://Narrative_ErrorExclaim'
   style: 'hub-card'
   content: []
 # ../.source/FearoftheUnknown_Eng_v15.cs:1697
 - type: 'text'
-  # ../en-US.restext:398 | "_A clever game by_ T. C. ..."
+  # ../en-US.restext:400 | "_A clever game by_ T. C. ..."
   value: 'restext://TITLE_SCREEN_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1702
 - type: 'assign'
@@ -27,14 +27,14 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1708
 - type: 'text'
-  # ../en-US.restext:399 | "How many individuals will..."
+  # ../en-US.restext:401 | "How many individuals will..."
   value: 'restext://TITLE_SCREEN_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1709
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1712
 - type: 'link'
-  # ../en-US.restext:400 | "2 Players."
+  # ../en-US.restext:402 | "2 Players."
   label: 'restext://TITLE_SCREEN_004'
   target: 'IntroNameEntry' # ./00111-IntroNameEntry.mws.yaml
   snapshot: true
@@ -47,7 +47,7 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1715
 - type: 'link'
-  # ../en-US.restext:401 | "3 Players."
+  # ../en-US.restext:403 | "3 Players."
   label: 'restext://TITLE_SCREEN_005'
   target: 'IntroNameEntry' # ./00111-IntroNameEntry.mws.yaml
   snapshot: true
@@ -60,7 +60,7 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1718
 - type: 'link'
-  # ../en-US.restext:402 | "4 Players."
+  # ../en-US.restext:404 | "4 Players."
   label: 'restext://TITLE_SCREEN_006'
   target: 'IntroNameEntry' # ./00111-IntroNameEntry.mws.yaml
   snapshot: true
@@ -73,7 +73,7 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1721
 - type: 'link'
-  # ../en-US.restext:403 | "5 Players."
+  # ../en-US.restext:405 | "5 Players."
   label: 'restext://TITLE_SCREEN_007'
   target: 'IntroNameEntry' # ./00111-IntroNameEntry.mws.yaml
   snapshot: true

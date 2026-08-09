@@ -2,6 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'NoteonDracula'
+# ../en-US.restext:2110 | NoteonDracula_001 | "The Count Gains a Foothold"
+# ../en-US.restext:2111 | NoteonDracula_002 | "The Count Vanishes"
+title: '{businesscount > asylumcount ? "restext://NoteonDracula_001" : "restext://NoteonDracula_002"}'
 tags:
 - 'NOTE'
 layout: 'narration'
@@ -10,42 +13,28 @@ nodes:
 - type: 'conditional'
   if: 'businesscount > asylumcount'
   then:
-  # ../.source/FearoftheUnknown_Eng_v15.cs:28162
-  - type: 'text'
-    # ../en-US.restext:2114 | "**The Count Gains a Foothold**"
-    value: 'restext://NoteonDracula_003'
-  # ../.source/FearoftheUnknown_Eng_v15.cs:28164
-  - type: 'break'
-    style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28166
   - type: 'text'
-    # ../en-US.restext:2115 | "I have money. I am not mo..."
+    # ../en-US.restext:2113 | "I have money. I am not mo..."
     value: 'restext://NoteonDracula_004'
   else:
-  # ../.source/FearoftheUnknown_Eng_v15.cs:28176
-  - type: 'text'
-    # ../en-US.restext:2112 | "**The Count Vanishes**"
-    value: 'restext://NoteonDracula_001'
-  # ../.source/FearoftheUnknown_Eng_v15.cs:28178
-  - type: 'break'
-    style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28180
   - type: 'text'
-    # ../en-US.restext:2113 | "I have no use for such th..."
-    value: 'restext://NoteonDracula_002'
+    # ../en-US.restext:2112 | "I have no use for such th..."
+    value: 'restext://NoteonDracula_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28183
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28185
 - type: 'text'
-  # ../en-US.restext:2116 | "SPLIT"
+  # ../en-US.restext:2114 | "SPLIT"
   value: 'restext://NoteonDracula_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28186
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28188
 - type: 'text'
-  # ../en-US.restext:2117 | "BLOODSMITH"
+  # ../en-US.restext:2115 | "BLOODSMITH"
   value: 'restext://NoteonDracula_006'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28189
 - type: 'break'
@@ -55,12 +44,12 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:28192
   - type: 'text'
-    # ../en-US.restext:2119 | "Happy until the 2nd round..."
+    # ../en-US.restext:2117 | "Happy until the 2nd round..."
     value: 'restext://NoteonDracula_008'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:28201
   - type: 'text'
-    # ../en-US.restext:2118 | "Becomes the Asylum Owner/..."
+    # ../en-US.restext:2116 | "Becomes the Asylum Owner/..."
     value: 'restext://NoteonDracula_007'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28203
 - type: 'break'
@@ -85,30 +74,30 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:28217
     - type: 'text'
-      # ../en-US.restext:2121 | "penalty to the {cureplayer}"
+      # ../en-US.restext:2119 | "penalty to the {cureplayer}"
       value: 'restext://NoteonDracula_010'
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:28224
     - type: 'text'
-      # ../en-US.restext:2120 | "thanks to the {cureplayer}"
+      # ../en-US.restext:2118 | "thanks to the {cureplayer}"
       value: 'restext://NoteonDracula_009'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28228
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28231
 - type: 'text'
-  # ../en-US.restext:2122 | "House"
+  # ../en-US.restext:2120 | "House"
   value: 'restext://NoteonDracula_011'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28232
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28233
 - type: 'text'
-  # ../en-US.restext:2123 | "{bhome} gains **The House..."
+  # ../en-US.restext:2121 | "{bhome} gains **The House..."
   value: 'restext://NoteonDracula_012'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28242
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28246
 - type: 'text'
-  # ../en-US.restext:2124 | "**The House on the Hill**..."
+  # ../en-US.restext:2122 | "**The House on the Hill**..."
   value: 'restext://NoteonDracula_013'

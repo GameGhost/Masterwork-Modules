@@ -2,6 +2,8 @@
 ---
 format: 'mws/0.4'
 passage_id: 'BarracksSimple2'
+# ../en-US.restext:49 | "Service Required"
+title: 'restext://Common_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:17379
@@ -18,12 +20,6 @@ nodes:
       # ../en-US.restext:284 | "Unified Monarchists"
       if: 'warwinner == "restext://Title_UnifiedMonarchists"'
       then:
-      # ../.source/ATimeofWar_Eng_v8.cs:17386
-      - type: 'text'
-        # ../en-US.restext:165 | "**Service Required**"
-        value: 'restext://Heading_ServiceRequired'
-      # ../.source/ATimeofWar_Eng_v8.cs:17388
-      - type: 'break'
       # ../.source/ATimeofWar_Eng_v8.cs:17389
       - type: 'text'
         # ../en-US.restext:198 | "I was admittedly distress..."
@@ -48,7 +44,7 @@ nodes:
         content:
         # ../.source/ATimeofWar_Eng_v8.cs:17439
         - type: 'text'
-          # ../en-US.restext:69 | "Any player who did not pl..."
+          # ../en-US.restext:70 | "Any player who did not pl..."
           value: 'restext://Directive_DidNotPlaceOnBarracks_Fragment'
         # ../.source/ATimeofWar_Eng_v8.cs:17440
         - type: 'switch'
@@ -70,7 +66,7 @@ nodes:
             nodes:
             # ../.source/ATimeofWar_Eng_v8.cs:17452
             - type: 'text'
-              # ../en-US.restext:98 | "receives **$1 less** inco..."
+              # ../en-US.restext:99 | "receives **$1 less** inco..."
               value: 'restext://Directive_Receives1LessIncome'
           - match: 3
             nodes:
@@ -88,12 +84,12 @@ nodes:
             nodes:
             # ../.source/ATimeofWar_Eng_v8.cs:17477
             - type: 'text'
-              # ../en-US.restext:85 | "**must** flip their Flag ..."
+              # ../en-US.restext:86 | "**must** flip their Flag ..."
               value: 'restext://Directive_MustFlipToSeparatist'
           default:
           # ../.source/ATimeofWar_Eng_v8.cs:17493
           - type: 'text'
-            # ../en-US.restext:81 | "is fortunate as the Monar..."
+            # ../en-US.restext:82 | "is fortunate as the Monar..."
             value: 'restext://Directive_FortunateMonarchyNoPenalty'
       else:
       # ../.source/ATimeofWar_Eng_v8.cs:17397
@@ -106,12 +102,6 @@ nodes:
       # ../en-US.restext:284 | "Unified Monarchists"
       if: 'warwinner == "restext://Title_UnifiedMonarchists"'
       then:
-      # ../.source/ATimeofWar_Eng_v8.cs:17406
-      - type: 'text'
-        # ../en-US.restext:165 | "**Service Required**"
-        value: 'restext://Heading_ServiceRequired'
-      # ../.source/ATimeofWar_Eng_v8.cs:17408
-      - type: 'break'
       # ../.source/ATimeofWar_Eng_v8.cs:17409
       - type: 'text'
         # ../en-US.restext:198 | "I was admittedly distress..."
@@ -136,7 +126,7 @@ nodes:
         content:
         # ../.source/ATimeofWar_Eng_v8.cs:17514
         - type: 'text'
-          # ../en-US.restext:69 | "Any player who did not pl..."
+          # ../en-US.restext:70 | "Any player who did not pl..."
           value: 'restext://Directive_DidNotPlaceOnBarracks_Fragment'
         # ../.source/ATimeofWar_Eng_v8.cs:17515
         - type: 'switch'
@@ -158,7 +148,7 @@ nodes:
             nodes:
             # ../.source/ATimeofWar_Eng_v8.cs:17527
             - type: 'text'
-              # ../en-US.restext:98 | "receives **$1 less** inco..."
+              # ../en-US.restext:99 | "receives **$1 less** inco..."
               value: 'restext://Directive_Receives1LessIncome'
           - match: 3
             nodes:
@@ -176,12 +166,12 @@ nodes:
             nodes:
             # ../.source/ATimeofWar_Eng_v8.cs:17552
             - type: 'text'
-              # ../en-US.restext:85 | "**must** flip their Flag ..."
+              # ../en-US.restext:86 | "**must** flip their Flag ..."
               value: 'restext://Directive_MustFlipToSeparatist'
           default:
           # ../.source/ATimeofWar_Eng_v8.cs:17568
           - type: 'text'
-            # ../en-US.restext:81 | "is fortunate as the Monar..."
+            # ../en-US.restext:82 | "is fortunate as the Monar..."
             value: 'restext://Directive_FortunateMonarchyNoPenalty'
       else:
       # ../.source/ATimeofWar_Eng_v8.cs:17417

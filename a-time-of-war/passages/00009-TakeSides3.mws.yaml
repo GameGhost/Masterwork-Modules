@@ -46,7 +46,7 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:2102
     - type: 'section'
-      # ../en-US.restext:148 | "**Military Demands**"
+      # ../en-US.restext:149 | "**Military Demands**"
       title: 'restext://Heading_MilitaryDemands'
       style: 'hub-card'
       content:
@@ -102,7 +102,7 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:2176
     - type: 'section'
-      # ../en-US.restext:146 | "**Knowledge Bonus**"
+      # ../en-US.restext:147 | "**Knowledge Bonus**"
       title: 'restext://Heading_KnowledgeBonus'
       style: 'hub-card'
       content:
@@ -116,7 +116,7 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:2196
     - type: 'section'
-      # ../en-US.restext:144 | "**Ingredient Bonus**"
+      # ../en-US.restext:145 | "**Ingredient Bonus**"
       title: 'restext://Heading_IngredientBonus'
       style: 'hub-card'
       content:
@@ -165,8 +165,8 @@ nodes:
       - type: 'switch'
         on: 'townname'
         cases:
-        # ../en-US.restext:51 | "Paradox"
-        - match: 'restext://Common_003'
+        # ../en-US.restext:52 | "Paradox"
+        - match: 'restext://Common_004'
           nodes:
           # ../.source/ATimeofWar_Eng_v8.cs:2250
           - type: 'assign'

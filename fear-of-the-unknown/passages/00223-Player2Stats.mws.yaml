@@ -14,12 +14,12 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:94 | "Please enter the VP of yo..."
+      # ../en-US.restext:96 | "Please enter the VP of yo..."
       value: 'restext://Directive_EnterBiologyVP_Agility'
     - type: 'input'
       label: ''
       var: 'agiB'
-    # ../en-US.restext:371 | "Continue"
+    # ../en-US.restext:373 | "Continue"
     okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'
@@ -29,7 +29,7 @@ nodes:
     target: 'Player2Stats' # ./00223-Player2Stats.mws.yaml
 # ../.source/FearoftheUnknown_Eng_v15.cs:25770
 - type: 'text'
-  # ../en-US.restext:1901 | "**{agiB}** is locked in a..."
+  # ../en-US.restext:1899 | "**{agiB}** is locked in a..."
   value: 'restext://Player2Stats_001'
 # ../.source/FearoftheUnknown_Eng_v15.cs:25774
 - type: 'break'

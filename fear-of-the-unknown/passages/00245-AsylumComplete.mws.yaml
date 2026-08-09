@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'AsylumComplete'
-# ../en-US.restext:2096 | "Perhaps Stubborn, Perhaps..."
+# ../en-US.restext:2094 | "Perhaps Stubborn, Perhaps..."
 title: 'restext://AsylumComplete_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:27998
 - type: 'text'
-  # ../en-US.restext:2097 | "**Collected Letters - {te..."
+  # ../en-US.restext:2095 | "**Collected Letters - {te..."
   value: 'restext://AsylumComplete_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28004
 - type: 'include_passage'
@@ -18,21 +18,21 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28009
 - type: 'text'
-  # ../en-US.restext:2098 | "The most unusual thing ha..."
+  # ../en-US.restext:2096 | "The most unusual thing ha..."
   value: 'restext://AsylumComplete_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28011
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28013
 - type: 'text'
-  # ../en-US.restext:2099 | "I decided to visit the ne..."
+  # ../en-US.restext:2097 | "I decided to visit the ne..."
   value: 'restext://AsylumComplete_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28014
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28016
 - type: 'text'
-  # ../en-US.restext:2100 | "Suddenly it came back to ..."
+  # ../en-US.restext:2098 | "Suddenly it came back to ..."
   value: 'restext://AsylumComplete_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:28019
 - type: 'break'
@@ -43,7 +43,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${round == 8 ? "Creature2" : "Creature3"}' # ./00158-Creature2.mws.yaml, ./00045-Creature3.mws.yaml
-  # ../en-US.restext:369 | "Close"
+  # ../en-US.restext:371 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -54,5 +54,5 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:28041
   - type: 'text'
-    # ../en-US.restext:2101 | "{tempas} loses **1VP** _a..."
+    # ../en-US.restext:2099 | "{tempas} loses **1VP** _a..."
     value: 'restext://AsylumComplete_006'

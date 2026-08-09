@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Foreign2'
-# ../en-US.restext:329 | "Blame it on the Foreigners"
+# ../en-US.restext:331 | "Blame it on the Foreigners"
 title: 'restext://Title_BlameItOnForeigners'
-# ../en-US.restext:344 | "Middle Years"
+# ../en-US.restext:346 | "Middle Years"
 subtitle: 'restext://Title_MiddleYears'
 tags:
 - 'HUB'
@@ -16,26 +16,26 @@ nodes:
   expr: '5'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6129
 - type: 'section'
-  # ../en-US.restext:239 | "**Witching Hour**"
+  # ../en-US.restext:241 | "**Witching Hour**"
   title: 'restext://Heading_WitchingHour'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6138
   - type: 'text'
-    # ../en-US.restext:712 | "The **{witch2}** has been..."
+    # ../en-US.restext:714 | "The **{witch2}** has been..."
     value: 'restext://Foreign2_001'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6147
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6152
 - type: 'section'
-  # ../en-US.restext:226 | "{icon:storybooktoken} **R..."
+  # ../en-US.restext:228 | "{icon:storybooktoken} **R..."
   title: 'restext://Heading_StorybookToken_RumorMill'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6163
   - type: 'text'
-    # ../en-US.restext:141 | "When you visit the Church, "
+    # ../en-US.restext:143 | "When you visit the Church, "
     value: 'restext://Directive_VisitChurch_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6164
   - type: 'link'
@@ -45,20 +45,20 @@ nodes:
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:6165
   - type: 'text'
-    # ../en-US.restext:713 | " This will allow you to s..."
+    # ../en-US.restext:715 | " This will allow you to s..."
     value: 'restext://Foreign2_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6169
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6173
 - type: 'section'
-  # ../en-US.restext:229 | "{icon:storybooktoken} **T..."
+  # ../en-US.restext:231 | "{icon:storybooktoken} **T..."
   title: 'restext://Heading_StorybookToken_TownStrength'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6185
   - type: 'text'
-    # ../en-US.restext:108 | "Players may visit the Tow..."
+    # ../en-US.restext:110 | "Players may visit the Tow..."
     value: 'restext://Directive_MemorialBrickPurchase_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6195
   - type: 'link'
@@ -71,13 +71,13 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6202
 - type: 'section'
-  # ../en-US.restext:179 | "**Key to the City**"
+  # ../en-US.restext:181 | "**Key to the City**"
   title: 'restext://Heading_KeyToTheCity'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6211
   - type: 'text'
-    # ../en-US.restext:293 | "At the End of the Generat..."
+    # ../en-US.restext:295 | "At the End of the Generat..."
     value: 'restext://Reward_MostBricks_KeyToCity'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6223
   - type: 'conditional'
@@ -85,20 +85,20 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6225
     - type: 'text'
-      # ../en-US.restext:714 | "The player who has the se..."
+      # ../en-US.restext:716 | "The player who has the se..."
       value: 'restext://Foreign2_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6230
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6234
 - type: 'section'
-  # ../en-US.restext:208 | "**Second Round Event - Ac..."
+  # ../en-US.restext:210 | "**Second Round Event - Ac..."
   title: 'restext://Heading_SecondRoundEvent_Accusations'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6243
   - type: 'text'
-    # ../en-US.restext:255 | "With a hideous hex upon t..."
+    # ../en-US.restext:257 | "With a hideous hex upon t..."
     value: 'restext://Narrative_HideousHexSacrificeCousin'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6253
 - type: 'break'
@@ -109,13 +109,13 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6260
   - type: 'section'
-    # ../en-US.restext:224 | "{icon:storybooktoken} **P..."
+    # ../en-US.restext:226 | "{icon:storybooktoken} **P..."
     title: 'restext://Heading_StorybookToken_PressingForward'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6270
     - type: 'text'
-      # ../en-US.restext:106 | "If a player reaches 35VP, "
+      # ../en-US.restext:108 | "If a player reaches 35VP, "
       value: 'restext://Directive_IfPlayerReaches35VP_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:6272
     - type: 'conditional'
@@ -142,10 +142,10 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6285
   - type: 'popup'
     layout: 'end_of_round'
-    # ../en-US.restext:715 | "Click here at the end of ..."
+    # ../en-US.restext:717 | "Click here at the end of ..."
     label: 'restext://Foreign2_004'
     target: 'Witchwolfresolution' # ./00070-Witchwolfresolution.mws.yaml
-    # ../en-US.restext:373 | "End of Round"
+    # ../en-US.restext:375 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -154,10 +154,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:305 | "The Middle Years of the S..."
+      # ../en-US.restext:307 | "The Middle Years of the S..."
       value: 'restext://Round_GenerationII_MiddleEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:306 | "Then, perform all Start o..."
+      # ../en-US.restext:308 | "Then, perform all Start o..."
       value: 'restext://Round_StartLateYears_Rule'

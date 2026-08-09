@@ -2,27 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TenseEventBad2Yes'
-# ../en-US.restext:2631 | "Goods Procured"
+# ../en-US.restext:2629 | "Goods Procured"
 title: 'restext://TenseEventBad2Yes_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:35783
 - type: 'text'
-  # ../en-US.restext:183 | "**Letter from {randomname..."
+  # ../en-US.restext:185 | "**Letter from {randomname..."
   value: 'restext://Heading_LetterFromRandomname_Cont'
 # ../.source/FearoftheUnknown_Eng_v15.cs:35792
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:35794
 - type: 'text'
-  # ../en-US.restext:2632 | "There is nothing more par..."
+  # ../en-US.restext:2630 | "There is nothing more par..."
   value: 'restext://TenseEventBad2Yes_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:35795
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:35797
 - type: 'text'
-  # ../en-US.restext:2633 | "But, I know that I will n..."
+  # ../en-US.restext:2631 | "But, I know that I will n..."
   value: 'restext://TenseEventBad2Yes_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:35798
 - type: 'break'
@@ -33,7 +33,7 @@ nodes:
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'Caravancheck' # ./00105-Caravancheck.mws.yaml
-  # ../en-US.restext:369 | "Close"
+  # ../en-US.restext:371 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -44,7 +44,7 @@ nodes:
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:35820
   - type: 'text'
-    # ../en-US.restext:2634 | "All players may now **gai..."
+    # ../en-US.restext:2632 | "All players may now **gai..."
     value: 'restext://TenseEventBad2Yes_004'
   # ../.source/FearoftheUnknown_Eng_v15.cs:35827
   - type: 'conditional'
@@ -52,7 +52,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:35829
     - type: 'text'
-      # ../en-US.restext:2635 | "The player who won the bi..."
+      # ../en-US.restext:2633 | "The player who won the bi..."
       value: 'restext://TenseEventBad2Yes_005'
   # ../.source/FearoftheUnknown_Eng_v15.cs:35831
   - type: 'break'
@@ -63,5 +63,5 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:35835
     - type: 'text'
-      # ../en-US.restext:2636 | "Any player who voted **NA..."
+      # ../en-US.restext:2634 | "Any player who voted **NA..."
       value: 'restext://TenseEventBad2Yes_006'

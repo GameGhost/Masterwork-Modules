@@ -14,12 +14,12 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:94 | "Please enter the VP of yo..."
+      # ../en-US.restext:96 | "Please enter the VP of yo..."
       value: 'restext://Directive_EnterBiologyVP_Agility'
     - type: 'input'
       label: ''
       var: 'agiE'
-    # ../en-US.restext:371 | "Continue"
+    # ../en-US.restext:373 | "Continue"
     okay: 'restext://UIButton_Continue'
     onclose:
     - type: 'assign'
@@ -29,7 +29,7 @@ nodes:
     target: 'Player5Stats' # ./00308-Player5Stats.mws.yaml
 # ../.source/FearoftheUnknown_Eng_v15.cs:33221
 - type: 'text'
-  # ../en-US.restext:2496 | "**{agiE}** is locked in a..."
+  # ../en-US.restext:2494 | "**{agiE}** is locked in a..."
   value: 'restext://Player5Stats_001'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33225
 - type: 'break'
