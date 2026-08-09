@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Player2Statsfin'
-# ../en-US.restext:2444 | Player2Statsfin_001 | "{_rpl_Player2Statsfin_0} ..."
+# ../en-US.restext:2446 | Player2Statsfin_001 | "{_rpl_Player2Statsfin_0} ..."
 # ../en-US.restext:65 | Common_006 | "Complete"
 title: '{warriorB ? "restext://Player2Statsfin_001" : "restext://Common_006"}'
 layout: 'narration'
@@ -38,19 +38,19 @@ nodes:
     expr: 'warriorB.replace("_2", "")'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32607
 - type: 'text'
-  # ../en-US.restext:2445 | "Agility: **{agiB}**"
+  # ../en-US.restext:2447 | "Agility: **{agiB}**"
   value: 'restext://Player2Statsfin_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32612
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32613
 - type: 'text'
-  # ../en-US.restext:2446 | "Strength: **{strB}**"
+  # ../en-US.restext:2448 | "Strength: **{strB}**"
   value: 'restext://Player2Statsfin_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32618
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32619
 - type: 'text'
-  # ../en-US.restext:2447 | "Life: **{hitB}**"
+  # ../en-US.restext:2449 | "Life: **{hitB}**"
   value: 'restext://Player2Statsfin_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32624
 - type: 'break'

@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Player5Statsfin'
-# ../en-US.restext:2504 | Player5Statsfin_001 | "{_rpl_Player5Statsfin_0} ..."
+# ../en-US.restext:2506 | Player5Statsfin_001 | "{_rpl_Player5Statsfin_0} ..."
 # ../en-US.restext:65 | Common_006 | "Complete"
 title: '{warriorE ? "restext://Player5Statsfin_001" : "restext://Common_006"}'
 layout: 'narration'
@@ -38,19 +38,19 @@ nodes:
     expr: 'warriorE.replace("_5", "")'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33363
 - type: 'text'
-  # ../en-US.restext:2505 | "Agility: **{agiE}**"
+  # ../en-US.restext:2507 | "Agility: **{agiE}**"
   value: 'restext://Player5Statsfin_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33368
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33369
 - type: 'text'
-  # ../en-US.restext:2506 | "Strength: **{strE}**"
+  # ../en-US.restext:2508 | "Strength: **{strE}**"
   value: 'restext://Player5Statsfin_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33374
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33375
 - type: 'text'
-  # ../en-US.restext:2507 | "Life: **{hitE}**"
+  # ../en-US.restext:2509 | "Life: **{hitE}**"
   value: 'restext://Player5Statsfin_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33380
 - type: 'break'

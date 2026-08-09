@@ -2,8 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'DuelResolution1a'
-# ../en-US.restext:1624 | "The Moment of Truth"
-title: '{dueltype == "science" ? duelsci : "restext://DuelResolution1a_001"}'
+# ../en-US.restext:20 | Choice_Science | "science"
+# ../en-US.restext:1624 | DuelResolution1a_001 | "The Moment of Truth"
+title: '{dueltype == "restext://Choice_Science" ? duelsci : "restext://DuelResolution1a_001"}'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:19486

@@ -2,9 +2,10 @@
 ---
 format: 'mws/0.4'
 passage_id: 'S5HospA2'
-# ../en-US.restext:1480 | S5HospA2_001 | "A Foundation for Science"
-# ../en-US.restext:1481 | S5HospA2_002 | "The Foundation Crumbles"
-title: '{uni == "yes" ? "restext://S5HospA2_001" : "restext://S5HospA2_002"}'
+# ../en-US.restext:34 | Choice_Yes_Lower | "yes"
+# ../en-US.restext:1477 | S5HospA2_001 | "A Foundation for Science"
+# ../en-US.restext:1478 | S5HospA2_002 | "The Foundation Crumbles"
+title: '{uni == "restext://Choice_Yes_Lower" ? "restext://S5HospA2_001" : "restext://S5HospA2_002"}'
 tags:
 - 'END'
 layout: 'narration'
@@ -16,28 +17,28 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:19177
   - type: 'text'
-    # ../en-US.restext:1484 | "**With the University bui..."
+    # ../en-US.restext:1481 | "**With the University bui..."
     value: 'restext://S5HospA2_005'
   # ../.source/TheCostofDisease_Eng_v10.cs:19180
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:19182
   - type: 'link'
-    # ../en-US.restext:1485 | "Click to move to a more m..."
+    # ../en-US.restext:1482 | "Click to move to a more m..."
     label: 'restext://S5HospA2_006'
     target: 'UniversityIntro' # ./00014-UniversityIntro.mws.yaml
     snapshot: true
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:19194
   - type: 'text'
-    # ../en-US.restext:1482 | "**With the University unb..."
+    # ../en-US.restext:1479 | "**With the University unb..."
     value: 'restext://S5HospA2_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:19199
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:19201
   - type: 'link'
-    # ../en-US.restext:1483 | "Click to move to a more d..."
+    # ../en-US.restext:1480 | "Click to move to a more d..."
     label: 'restext://S5HospA2_004'
     target: 'RippedMasterwork' # ./00164-RippedMasterwork.mws.yaml
     snapshot: true

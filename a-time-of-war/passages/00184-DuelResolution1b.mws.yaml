@@ -2,9 +2,10 @@
 ---
 format: 'mws/0.4'
 passage_id: 'DuelResolution1b'
+# ../en-US.restext:53 | Countdown_One | "1"
 # ../en-US.restext:1632 | DuelResolution1b_001 | "An Unfortunate Death"
 # ../en-US.restext:1633 | DuelResolution1b_002 | "Wounded Pride"
-title: '{duelresult == "1" ? "restext://DuelResolution1b_001" : "restext://DuelResolution1b_002"}'
+title: '{duelresult == "restext://Countdown_One" ? "restext://DuelResolution1b_001" : "restext://DuelResolution1b_002"}'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:19578

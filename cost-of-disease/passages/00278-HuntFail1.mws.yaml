@@ -2,29 +2,29 @@
 ---
 format: 'mws/0.4'
 passage_id: 'HuntFail1'
-# ../en-US.restext:2348 | "{_rnd_HuntFail1_0} Failure!"
+# ../en-US.restext:2345 | "{_rnd_HuntFail1_0} Failure!"
 title: 'restext://HuntFail1_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:28866
 - type: 'let'
   var: '_rnd_HuntFail1_0'
-  # ../en-US.restext:2349 | HuntFail1_002 | "Miserable"
-  # ../en-US.restext:2350 | HuntFail1_003 | "Woeful"
-  # ../en-US.restext:2351 | HuntFail1_004 | "Dismal"
-  # ../en-US.restext:2352 | HuntFail1_005 | "Pathetic"
-  # ../en-US.restext:2353 | HuntFail1_006 | "Grim"
+  # ../en-US.restext:2346 | HuntFail1_002 | "Miserable"
+  # ../en-US.restext:2347 | HuntFail1_003 | "Woeful"
+  # ../en-US.restext:2348 | HuntFail1_004 | "Dismal"
+  # ../en-US.restext:2349 | HuntFail1_005 | "Pathetic"
+  # ../en-US.restext:2350 | HuntFail1_006 | "Grim"
   expr: '["restext://HuntFail1_002", "restext://HuntFail1_003", "restext://HuntFail1_004", "restext://HuntFail1_005", "restext://HuntFail1_006"].shuffled("HuntFail1_0")[0]'
 # ../.source/TheCostofDisease_Eng_v10.cs:28876
 - type: 'let'
   var: '_rnd_HuntFail1_1'
-  # ../en-US.restext:2354 | HuntFail1_007 | "seemed to cackle to itself"
-  # ../en-US.restext:2355 | HuntFail1_008 | "issued a triumphant wail"
-  # ../en-US.restext:2356 | HuntFail1_009 | "smiled with an unsettling grin"
+  # ../en-US.restext:2351 | HuntFail1_007 | "seemed to cackle to itself"
+  # ../en-US.restext:2352 | HuntFail1_008 | "issued a triumphant wail"
+  # ../en-US.restext:2353 | HuntFail1_009 | "smiled with an unsettling grin"
   expr: '["restext://HuntFail1_007", "restext://HuntFail1_008", "restext://HuntFail1_009"].shuffled("HuntFail1_1")[0]'
 # ../.source/TheCostofDisease_Eng_v10.cs:28872
 - type: 'text'
-  # ../en-US.restext:2357 | "It had all occurred so qu..."
+  # ../en-US.restext:2354 | "It had all occurred so qu..."
   value: 'restext://HuntFail1_010'
   lets:
   - '_rnd_HuntFail1_1'
@@ -48,5 +48,5 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:28905
   - type: 'text'
-    # ../en-US.restext:2358 | "All players participating..."
+    # ../en-US.restext:2355 | "All players participating..."
     value: 'restext://HuntFail1_011'

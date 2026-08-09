@@ -2,33 +2,33 @@
 ---
 format: 'mws/0.4'
 passage_id: 'EndtotheCount'
-# ../en-US.restext:2277 | "An Abrupt End"
+# ../en-US.restext:2279 | "An Abrupt End"
 title: 'restext://EndtotheCount_001'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:30778
 - type: 'text'
-  # ../en-US.restext:2278 | "**A Cryptic Letter -** _C..."
+  # ../en-US.restext:2280 | "**A Cryptic Letter -** _C..."
   value: 'restext://EndtotheCount_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:30784
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:30787
 - type: 'text'
-  # ../en-US.restext:2279 | "Due to recent events whic..."
+  # ../en-US.restext:2281 | "Due to recent events whic..."
   value: 'restext://EndtotheCount_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:30788
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:30792
 - type: 'text'
-  # ../en-US.restext:2280 | "Love and Sincere Thanks,"
+  # ../en-US.restext:2282 | "Love and Sincere Thanks,"
   value: 'restext://EndtotheCount_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:30793
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:30794
 - type: 'text'
-  # ../en-US.restext:2281 | "Vlad III"
+  # ../en-US.restext:2283 | "Vlad III"
   value: 'restext://EndtotheCount_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:30795
 - type: 'break'
@@ -51,8 +51,8 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:30818
   - type: 'let'
     var: '_rnd_EndtotheCount_0'
-    # ../en-US.restext:2282 | EndtotheCount_006 | "There is no bonus Servant..."
-    # ../en-US.restext:2283 | EndtotheCount_007 | "Each player ''gains 1 Res..."
+    # ../en-US.restext:2284 | EndtotheCount_006 | "There is no bonus Servant..."
+    # ../en-US.restext:2285 | EndtotheCount_007 | "Each player ''gains 1 Res..."
     expr: '["restext://EndtotheCount_006", "restext://EndtotheCount_007"].shuffled("EndtotheCount_0")[0]'
   # ../.source/FearoftheUnknown_Eng_v15.cs:30816
   - type: 'break'

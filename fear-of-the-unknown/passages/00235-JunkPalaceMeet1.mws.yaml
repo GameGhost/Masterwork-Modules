@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'JunkPalaceMeet1'
-# ../en-US.restext:2022 | "The Meeting at the Junk Palace"
+# ../en-US.restext:2024 | "The Meeting at the Junk Palace"
 title: 'restext://JunkPalaceMeet1_001'
 tags:
 - 'Creep'
@@ -25,26 +25,26 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:26982
   - type: 'text'
-    # ../en-US.restext:2024 | "{warden} stood and wiped ..."
+    # ../en-US.restext:2026 | "{warden} stood and wiped ..."
     value: 'restext://JunkPalaceMeet1_004'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:26989
   - type: 'text'
-    # ../en-US.restext:2023 | "{warden} stood up from th..."
+    # ../en-US.restext:2025 | "{warden} stood up from th..."
     value: 'restext://JunkPalaceMeet1_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26995
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:26997
 - type: 'text'
-  # ../en-US.restext:2025 | "{warden} spoke. \"Since y..."
+  # ../en-US.restext:2027 | "{warden} spoke. \"Since y..."
   value: 'restext://JunkPalaceMeet1_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27002
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27004
 - type: 'text'
-  # ../en-US.restext:2026 | "As you no doubt have real..."
+  # ../en-US.restext:2028 | "As you no doubt have real..."
   value: 'restext://JunkPalaceMeet1_006'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27015
 - type: 'break'
@@ -58,7 +58,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27024
 - type: 'link'
-  # ../en-US.restext:2027 | "I kindly declined the offer."
+  # ../en-US.restext:2029 | "I kindly declined the offer."
   label: 'restext://JunkPalaceMeet1_007'
   target: 'JunkPalaceMeetb' # ./00236-JunkPalaceMeetb.mws.yaml
   snapshot: true
@@ -73,7 +73,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27028
 - type: 'link'
-  # ../en-US.restext:2028 | "$1. (to gain 1 Creepy)"
+  # ../en-US.restext:2030 | "$1. (to gain 1 Creepy)"
   label: 'restext://JunkPalaceMeet1_008'
   target: 'JunkPalaceMeetb' # ./00236-JunkPalaceMeetb.mws.yaml
   snapshot: true
@@ -81,14 +81,14 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:27051
   - type: 'assign'
     var: 'tempcreep'
-    # ../en-US.restext:2029 | "Pay $1. Gain 1 Creepy."
+    # ../en-US.restext:2031 | "Pay $1. Gain 1 Creepy."
     expr: '"restext://JunkPalaceMeet1_009"'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27029
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27032
 - type: 'link'
-  # ../en-US.restext:2030 | "$2. (to gain 2 Creepy)"
+  # ../en-US.restext:2032 | "$2. (to gain 2 Creepy)"
   label: 'restext://JunkPalaceMeet1_010'
   target: 'JunkPalaceMeetb' # ./00236-JunkPalaceMeetb.mws.yaml
   snapshot: true
@@ -96,14 +96,14 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:27058
   - type: 'assign'
     var: 'tempcreep'
-    # ../en-US.restext:2031 | "Pay $2. Gain 2 Creepy."
+    # ../en-US.restext:2033 | "Pay $2. Gain 2 Creepy."
     expr: '"restext://JunkPalaceMeet1_011"'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27033
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27036
 - type: 'link'
-  # ../en-US.restext:2032 | "$3. (to gain 3 Creepy)"
+  # ../en-US.restext:2034 | "$3. (to gain 3 Creepy)"
   label: 'restext://JunkPalaceMeet1_012'
   target: 'JunkPalaceMeetb' # ./00236-JunkPalaceMeetb.mws.yaml
   snapshot: true
@@ -111,5 +111,5 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:27065
   - type: 'assign'
     var: 'tempcreep'
-    # ../en-US.restext:2033 | "Pay $3. Gain 3 Creepy."
+    # ../en-US.restext:2035 | "Pay $3. Gain 3 Creepy."
     expr: '"restext://JunkPalaceMeet1_013"'

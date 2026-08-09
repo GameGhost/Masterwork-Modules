@@ -2,9 +2,10 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Evilsforgive'
-# ../en-US.restext:2025 | Evilsforgive_001 | "Forgiveness"
-# ../en-US.restext:2026 | Evilsforgive_002 | "Still Wary"
-title: '{society == "Order of St. Hubertus" ? "restext://Evilsforgive_001" : "restext://Evilsforgive_002"}'
+# ../en-US.restext:127 | Faction_OrderOfStHubertus_Plain | "Order of St. Hubertus"
+# ../en-US.restext:2022 | Evilsforgive_001 | "Forgiveness"
+# ../en-US.restext:2023 | Evilsforgive_002 | "Still Wary"
+title: '{society == "restext://Faction_OrderOfStHubertus_Plain" ? "restext://Evilsforgive_001" : "restext://Evilsforgive_002"}'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:25445
@@ -14,21 +15,21 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:25452
   - type: 'text'
-    # ../en-US.restext:2033 | "The scientists' doubts we..."
+    # ../en-US.restext:2030 | "The scientists' doubts we..."
     value: 'restext://Evilsforgive_009'
   # ../.source/TheCostofDisease_Eng_v10.cs:25453
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:25455
   - type: 'text'
-    # ../en-US.restext:2034 | "\"We want to shatter thos..."
+    # ../en-US.restext:2031 | "\"We want to shatter thos..."
     value: 'restext://Evilsforgive_010'
   # ../.source/TheCostofDisease_Eng_v10.cs:25456
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:25458
   - type: 'text'
-    # ../en-US.restext:2035 | "As a token of this myth-s..."
+    # ../en-US.restext:2032 | "As a token of this myth-s..."
     value: 'restext://Evilsforgive_011'
   # ../.source/TheCostofDisease_Eng_v10.cs:25461
   - type: 'break'
@@ -50,7 +51,7 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:25512
     - type: 'text'
-      # ../en-US.restext:2036 | "Retrieve the **Master's S..."
+      # ../en-US.restext:2033 | "Retrieve the **Master's S..."
       value: 'restext://Evilsforgive_012'
     # ../.source/TheCostofDisease_Eng_v10.cs:25518
     - type: 'break'
@@ -63,7 +64,7 @@ nodes:
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:25525
     - type: 'text'
-      # ../en-US.restext:2037 | "Starting with the player ..."
+      # ../en-US.restext:2034 | "Starting with the player ..."
       value: 'restext://Evilsforgive_013'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:25470
@@ -83,7 +84,7 @@ nodes:
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:25484
     - type: 'text'
-      # ../en-US.restext:2027 | "For the family members th..."
+      # ../en-US.restext:2024 | "For the family members th..."
       value: 'restext://Evilsforgive_003'
     # ../.source/TheCostofDisease_Eng_v10.cs:25487
     - type: 'break'
@@ -110,7 +111,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25561
         - type: 'text'
-          # ../en-US.restext:2028 | "{nameA} III **immediately..."
+          # ../en-US.restext:2025 | "{nameA} III **immediately..."
           value: 'restext://Evilsforgive_004'
         # ../.source/TheCostofDisease_Eng_v10.cs:25569
         - type: 'break'
@@ -121,7 +122,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25573
         - type: 'text'
-          # ../en-US.restext:2029 | "{nameB} III **immediately..."
+          # ../en-US.restext:2026 | "{nameB} III **immediately..."
           value: 'restext://Evilsforgive_005'
         # ../.source/TheCostofDisease_Eng_v10.cs:25581
         - type: 'break'
@@ -132,7 +133,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25585
         - type: 'text'
-          # ../en-US.restext:2030 | "{nameC} III **immediately..."
+          # ../en-US.restext:2027 | "{nameC} III **immediately..."
           value: 'restext://Evilsforgive_006'
         # ../.source/TheCostofDisease_Eng_v10.cs:25593
         - type: 'break'
@@ -143,7 +144,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25597
         - type: 'text'
-          # ../en-US.restext:2031 | "{nameD} III **immediately..."
+          # ../en-US.restext:2028 | "{nameD} III **immediately..."
           value: 'restext://Evilsforgive_007'
         # ../.source/TheCostofDisease_Eng_v10.cs:25605
         - type: 'break'
@@ -154,7 +155,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25609
         - type: 'text'
-          # ../en-US.restext:2032 | "{nameE} III **immediately..."
+          # ../en-US.restext:2029 | "{nameE} III **immediately..."
           value: 'restext://Evilsforgive_008'
       # ../.source/TheCostofDisease_Eng_v10.cs:25618
       - type: 'conditional'
@@ -167,5 +168,5 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25620
         - type: 'text'
-          # ../en-US.restext:2028 | "{nameA} III **immediately..."
+          # ../en-US.restext:2025 | "{nameA} III **immediately..."
           value: 'restext://Evilsforgive_004'

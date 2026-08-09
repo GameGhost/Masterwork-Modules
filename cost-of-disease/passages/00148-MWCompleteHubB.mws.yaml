@@ -2,9 +2,6 @@
 ---
 format: 'mws/0.4'
 passage_id: 'MWCompleteHubB'
-title: '{_rnd_MWCompleteHubB_0}'
-# ../en-US.restext:1375 | "{nameB} - Journal Entry E..."
-subtitle: 'restext://MWCompleteHubB_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:17282
@@ -17,6 +14,14 @@ nodes:
   # ../en-US.restext:272 | Narrative_MasterworkExclaim_GloriousCreation | "My Glorious Creation"
   # ../en-US.restext:273 | Narrative_MasterworkExclaim_GloryForever | "The Glory is Mine Forever!"
   expr: '["restext://Narrative_MasterworkExclaim_WorkDone", "restext://Narrative_MasterworkExclaim_Impossible", "restext://Narrative_MasterworkExclaim_LegacyEnsured", "restext://Narrative_MasterworkExclaim_Laugh", "restext://Narrative_MasterworkExclaim_GloriousCreation", "restext://Narrative_MasterworkExclaim_GloryForever"].shuffled("MWCompleteHubB_0")[0]'
+# ../.source/TheCostofDisease_Eng_v10.cs:17282
+- type: 'text'
+  # ../en-US.restext:1372 | "**{_rnd_MWCompleteHubB_0}..."
+  value: 'restext://MWCompleteHubB_001'
+  lets:
+  - '_rnd_MWCompleteHubB_0'
+# ../.source/TheCostofDisease_Eng_v10.cs:17289
+- type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:17290
 - type: 'switch'
   on: 'typeB'
@@ -31,13 +36,13 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:17298
     - type: 'text'
-      # ../en-US.restext:1377 | "To see my work in the fle..."
+      # ../en-US.restext:1374 | "To see my work in the fle..."
       value: 'restext://MWCompleteHubB_003'
   - match: 'robot'
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:17306
     - type: 'text'
-      # ../en-US.restext:1378 | "A brief, blinding flash a..."
+      # ../en-US.restext:1375 | "A brief, blinding flash a..."
       value: 'restext://MWCompleteHubB_004'
   - match: 'weapon'
     nodes:
@@ -49,22 +54,22 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:17319
     - type: 'text'
-      # ../en-US.restext:1379 | "I tapped the glass bottle..."
+      # ../en-US.restext:1376 | "I tapped the glass bottle..."
       value: 'restext://MWCompleteHubB_005'
   - match: 'drug'
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:17328
     - type: 'text'
-      # ../en-US.restext:1380 | "I observed the effects as..."
+      # ../en-US.restext:1377 | "I observed the effects as..."
       value: 'restext://MWCompleteHubB_006'
   - match: 'demon'
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:17334
     - type: 'text'
-      # ../en-US.restext:1381 | "The world darkened around..."
+      # ../en-US.restext:1378 | "The world darkened around..."
       value: 'restext://MWCompleteHubB_007'
   default:
   # ../.source/TheCostofDisease_Eng_v10.cs:17342
   - type: 'text'
-    # ../en-US.restext:1376 | "The preparations proved t..."
+    # ../en-US.restext:1373 | "The preparations proved t..."
     value: 'restext://MWCompleteHubB_002'

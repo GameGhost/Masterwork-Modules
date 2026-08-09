@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Player3Statsfin'
-# ../en-US.restext:2464 | Player3Statsfin_001 | "{_rpl_Player3Statsfin_0} ..."
+# ../en-US.restext:2466 | Player3Statsfin_001 | "{_rpl_Player3Statsfin_0} ..."
 # ../en-US.restext:65 | Common_006 | "Complete"
 title: '{warriorC ? "restext://Player3Statsfin_001" : "restext://Common_006"}'
 layout: 'narration'
@@ -38,19 +38,19 @@ nodes:
     expr: 'warriorC.replace("_3", "")'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32858
 - type: 'text'
-  # ../en-US.restext:2465 | "Agility: **{agiC}**"
+  # ../en-US.restext:2467 | "Agility: **{agiC}**"
   value: 'restext://Player3Statsfin_002'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32863
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32864
 - type: 'text'
-  # ../en-US.restext:2466 | "Strength: **{strC}**"
+  # ../en-US.restext:2468 | "Strength: **{strC}**"
   value: 'restext://Player3Statsfin_003'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32869
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32870
 - type: 'text'
-  # ../en-US.restext:2467 | "Life: **{hitC}**"
+  # ../en-US.restext:2469 | "Life: **{hitC}**"
   value: 'restext://Player3Statsfin_004'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32875
 - type: 'break'

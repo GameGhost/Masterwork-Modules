@@ -2,9 +2,10 @@
 ---
 format: 'mws/0.4'
 passage_id: 'LosingOrderAid'
+# ../en-US.restext:127 | Faction_OrderOfStHubertus_Plain | "Order of St. Hubertus"
 # ../en-US.restext:844 | LosingOrderAid_001 | "Despite the Hunters' Loss"
 # ../en-US.restext:845 | LosingOrderAid_002 | "Despite the wolves' Loss"
-title: '{society == "Order of St. Hubertus" ? "restext://LosingOrderAid_001" : "restext://LosingOrderAid_002"}'
+title: '{society == "restext://Faction_OrderOfStHubertus_Plain" ? "restext://LosingOrderAid_001" : "restext://LosingOrderAid_002"}'
 tags:
 - 'code'
 layout: 'narration'

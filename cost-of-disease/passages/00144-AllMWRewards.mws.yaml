@@ -2,47 +2,6 @@
 ---
 format: 'mws/0.4'
 passage_id: 'AllMWRewards'
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-# ../en-US.restext:1355 | AllMWRewards_001 | "Reward"
-title: '{tempcomp == nameA ? typeA == "creature" ? "restext://AllMWRewards_001" : typeA == "power" ? "restext://AllMWRewards_001" : typeA == "robot" ? "restext://AllMWRewards_001" : typeA == "weapon" ? "restext://AllMWRewards_001" : typeA == "medicine" ? "restext://AllMWRewards_001" : typeA == "drug" ? "restext://AllMWRewards_001" : typeA == "demon" ? "restext://AllMWRewards_001" : "restext://AllMWRewards_001" : tempcomp == nameB ? typeB == "creature" ? "restext://AllMWRewards_001" : typeB == "power" ? "restext://AllMWRewards_001" : typeB == "robot" ? "restext://AllMWRewards_001" : typeB == "weapon" ? "restext://AllMWRewards_001" : typeB == "medicine" ? "restext://AllMWRewards_001" : typeB == "drug" ? "restext://AllMWRewards_001" : typeB == "demon" ? "restext://AllMWRewards_001" : "restext://AllMWRewards_001" : tempcomp == nameC ? typeC == "creature" ? "restext://AllMWRewards_001" : typeC == "power" ? "restext://AllMWRewards_001" : typeC == "robot" ? "restext://AllMWRewards_001" : typeC == "weapon" ? "restext://AllMWRewards_001" : typeC == "medicine" ? "restext://AllMWRewards_001" : typeC == "drug" ? "restext://AllMWRewards_001" : typeC == "demon" ? "restext://AllMWRewards_001" : "restext://AllMWRewards_001" : tempcomp == nameD ? typeD == "creature" ? "restext://AllMWRewards_001" : typeD == "power" ? "restext://AllMWRewards_001" : typeD == "robot" ? "restext://AllMWRewards_001" : typeD == "weapon" ? "restext://AllMWRewards_001" : typeD == "medicine" ? "restext://AllMWRewards_001" : typeD == "drug" ? "restext://AllMWRewards_001" : typeD == "demon" ? "restext://AllMWRewards_001" : "restext://AllMWRewards_001" : tempcomp == nameE ? typeE == "creature" ? "restext://AllMWRewards_001" : typeE == "power" ? "restext://AllMWRewards_001" : typeE == "robot" ? "restext://AllMWRewards_001" : typeE == "weapon" ? "restext://AllMWRewards_001" : typeE == "medicine" ? "restext://AllMWRewards_001" : typeE == "drug" ? "restext://AllMWRewards_001" : typeE == "demon" ? "restext://AllMWRewards_001" : "restext://AllMWRewards_001" : ""}'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:16130
@@ -55,6 +14,12 @@ nodes:
     cases:
     - match: 'creature'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16136
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
+      # ../.source/TheCostofDisease_Eng_v10.cs:16138
+      - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16139
       - type: 'text'
         # ../en-US.restext:366 | "Gain 20VP."
@@ -69,6 +34,12 @@ nodes:
       - type: 'break'
     - match: 'power'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16154
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
+      # ../.source/TheCostofDisease_Eng_v10.cs:16156
+      - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16157
       - type: 'text'
         # ../en-US.restext:364 | "Gain 19VP."
@@ -83,6 +54,12 @@ nodes:
       - type: 'break'
     - match: 'robot'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16170
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
+      # ../.source/TheCostofDisease_Eng_v10.cs:16172
+      - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16173
       - type: 'text'
         # ../en-US.restext:366 | "Gain 20VP."
@@ -97,6 +74,12 @@ nodes:
       - type: 'break'
     - match: 'weapon'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16186
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
+      # ../.source/TheCostofDisease_Eng_v10.cs:16188
+      - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16189
       - type: 'text'
         # ../en-US.restext:364 | "Gain 19VP."
@@ -111,6 +94,12 @@ nodes:
       - type: 'break'
     - match: 'medicine'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16202
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
+      # ../.source/TheCostofDisease_Eng_v10.cs:16204
+      - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16205
       - type: 'text'
         # ../en-US.restext:367 | "Gain 21VP."
@@ -125,6 +114,12 @@ nodes:
       - type: 'break'
     - match: 'drug'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16218
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
+      # ../.source/TheCostofDisease_Eng_v10.cs:16220
+      - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16221
       - type: 'text'
         # ../en-US.restext:364 | "Gain 19VP."
@@ -139,6 +134,12 @@ nodes:
       - type: 'break'
     - match: 'demon'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16234
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
+      # ../.source/TheCostofDisease_Eng_v10.cs:16236
+      - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16237
       - type: 'text'
         # ../en-US.restext:367 | "Gain 21VP."
@@ -152,6 +153,12 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:16242
       - type: 'break'
     default:
+    # ../.source/TheCostofDisease_Eng_v10.cs:16248
+    - type: 'text'
+      # ../en-US.restext:177 | "**Reward:**"
+      value: 'restext://Heading_Reward'
+    # ../.source/TheCostofDisease_Eng_v10.cs:16250
+    - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:16251
     - type: 'text'
       # ../en-US.restext:366 | "Gain 20VP."
@@ -174,6 +181,10 @@ nodes:
     cases:
     - match: 'creature'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16269
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16271
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16272
@@ -190,6 +201,10 @@ nodes:
       - type: 'break'
     - match: 'power'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16287
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16289
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16290
@@ -206,6 +221,10 @@ nodes:
       - type: 'break'
     - match: 'robot'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16303
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16305
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16306
@@ -222,6 +241,10 @@ nodes:
       - type: 'break'
     - match: 'weapon'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16319
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16321
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16322
@@ -238,6 +261,10 @@ nodes:
       - type: 'break'
     - match: 'medicine'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16335
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16337
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16338
@@ -254,6 +281,10 @@ nodes:
       - type: 'break'
     - match: 'drug'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16351
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16353
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16354
@@ -270,6 +301,10 @@ nodes:
       - type: 'break'
     - match: 'demon'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16367
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16369
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16370
@@ -285,6 +320,10 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:16375
       - type: 'break'
     default:
+    # ../.source/TheCostofDisease_Eng_v10.cs:16381
+    - type: 'text'
+      # ../en-US.restext:177 | "**Reward:**"
+      value: 'restext://Heading_Reward'
     # ../.source/TheCostofDisease_Eng_v10.cs:16383
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:16384
@@ -309,6 +348,10 @@ nodes:
     cases:
     - match: 'creature'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16402
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16404
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16405
@@ -325,6 +368,10 @@ nodes:
       - type: 'break'
     - match: 'power'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16420
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16422
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16423
@@ -341,6 +388,10 @@ nodes:
       - type: 'break'
     - match: 'robot'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16436
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16438
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16439
@@ -357,6 +408,10 @@ nodes:
       - type: 'break'
     - match: 'weapon'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16452
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16454
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16455
@@ -373,6 +428,10 @@ nodes:
       - type: 'break'
     - match: 'medicine'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16468
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16470
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16471
@@ -389,6 +448,10 @@ nodes:
       - type: 'break'
     - match: 'drug'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16484
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16486
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16487
@@ -405,6 +468,10 @@ nodes:
       - type: 'break'
     - match: 'demon'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16500
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16502
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16503
@@ -420,6 +487,10 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:16508
       - type: 'break'
     default:
+    # ../.source/TheCostofDisease_Eng_v10.cs:16514
+    - type: 'text'
+      # ../en-US.restext:177 | "**Reward:**"
+      value: 'restext://Heading_Reward'
     # ../.source/TheCostofDisease_Eng_v10.cs:16516
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:16517
@@ -444,6 +515,10 @@ nodes:
     cases:
     - match: 'creature'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16535
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16537
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16538
@@ -460,6 +535,10 @@ nodes:
       - type: 'break'
     - match: 'power'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16553
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16555
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16556
@@ -476,6 +555,10 @@ nodes:
       - type: 'break'
     - match: 'robot'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16569
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16571
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16572
@@ -492,6 +575,10 @@ nodes:
       - type: 'break'
     - match: 'weapon'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16585
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16587
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16588
@@ -508,6 +595,10 @@ nodes:
       - type: 'break'
     - match: 'medicine'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16601
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16603
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16604
@@ -524,6 +615,10 @@ nodes:
       - type: 'break'
     - match: 'drug'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16617
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16619
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16620
@@ -540,6 +635,10 @@ nodes:
       - type: 'break'
     - match: 'demon'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16633
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16635
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16636
@@ -555,6 +654,10 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:16641
       - type: 'break'
     default:
+    # ../.source/TheCostofDisease_Eng_v10.cs:16647
+    - type: 'text'
+      # ../en-US.restext:177 | "**Reward:**"
+      value: 'restext://Heading_Reward'
     # ../.source/TheCostofDisease_Eng_v10.cs:16649
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:16650
@@ -579,6 +682,10 @@ nodes:
     cases:
     - match: 'creature'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16668
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16670
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16671
@@ -593,6 +700,10 @@ nodes:
         value: 'restext://Resource_Gain1Insanity2Creepy_MoveMob'
     - match: 'power'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16686
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16688
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16689
@@ -607,6 +718,10 @@ nodes:
         value: 'restext://Resource_Gain1Insanity2Creepy'
     - match: 'robot'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16702
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16704
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16705
@@ -621,6 +736,10 @@ nodes:
         value: 'restext://Resource_Gain1Insanity2Creepy'
     - match: 'weapon'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16718
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16720
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16721
@@ -635,6 +754,10 @@ nodes:
         value: 'restext://Resource_Gain2Insanity1Creepy'
     - match: 'medicine'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16734
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16736
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16737
@@ -649,6 +772,10 @@ nodes:
         value: 'restext://Resource_Gain2Insanity2Creepy'
     - match: 'drug'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16750
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16752
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16753
@@ -663,6 +790,10 @@ nodes:
         value: 'restext://Resource_Gain1Insanity2Creepy'
     - match: 'demon'
       nodes:
+      # ../.source/TheCostofDisease_Eng_v10.cs:16766
+      - type: 'text'
+        # ../en-US.restext:177 | "**Reward:**"
+        value: 'restext://Heading_Reward'
       # ../.source/TheCostofDisease_Eng_v10.cs:16768
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:16769
@@ -676,6 +807,10 @@ nodes:
         # ../en-US.restext:293 | "Gain 2 {icon:creepy_icon}."
         value: 'restext://Resource_Gain2Creepy'
     default:
+    # ../.source/TheCostofDisease_Eng_v10.cs:16780
+    - type: 'text'
+      # ../en-US.restext:177 | "**Reward:**"
+      value: 'restext://Heading_Reward'
     # ../.source/TheCostofDisease_Eng_v10.cs:16782
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:16783
