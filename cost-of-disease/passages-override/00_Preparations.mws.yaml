@@ -7,12 +7,36 @@
 ---
 format: 'mws/0.4'
 passage_id: '00_Preparations'
-title: 'Setup - Scenario Box'
+title: 'restext://Preparations_TCOD_001'
 layout: 'narration'
 nodes:
-- type: 'text'
-  value: 'restext://Preparations_TCOD_001'
-- type: 'break'
+- type: 'switch'
+  on: 'players'
+  cases:
+  - match: 2
+    nodes:
+    - type: 'assign'
+      var: 'playtxt'
+      expr: '"restext://Number_Two_Lower"'
+  - match: 3
+    nodes:
+    - type: 'assign'
+      var: 'playtxt'
+      expr: '"restext://Number_Three_Lower"'
+  - match: 4
+    nodes:
+    - type: 'assign'
+      var: 'playtxt'
+      expr: '"restext://Number_Four_Lower"'
+  - match: 5
+    nodes:
+    - type: 'assign'
+      var: 'playtxt'
+      expr: '"restext://Number_Five_Lower"'
+  default:
+  - type: 'assign'
+    var: 'playtxt'
+    expr: '"restext://Number_Two_Lower"'
 - type: 'text'
   value: 'restext://Preparations_TCOD_002'
 - type: 'break'

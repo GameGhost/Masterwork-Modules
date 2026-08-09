@@ -7,7 +7,7 @@
 ---
 format: 'mws/0.4'
 passage_id: '00_Preparations'
-title: 'restext://Heading_CollectedLetters_StokerVictoria'
+title: 'restext://Title_Preparations'
 layout: 'narration'
 nodes:
 - type: 'switch'
@@ -17,26 +17,26 @@ nodes:
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      expr: '"restext://Directive_IfPlayerReaches35VP_Fragment"'
+      expr: '"restext://Number_Two_Lower"'
   - match: 3
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      expr: '"restext://Round_GenerationII_EarlyEnded"'
+      expr: '"restext://Number_Three_Lower"'
   - match: 4
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      expr: '"restext://Heading_LetterFromTempid_Open"'
+      expr: '"restext://Number_Four_Lower"'
   - match: 5
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      expr: '"restext://Number_Two_Lower"'
+      expr: '"restext://Number_Five_Lower"'
   default:
   - type: 'assign'
     var: 'playtxt'
-    expr: '"restext://Directive_IfPlayerReaches35VP_Fragment"'
+    expr: '"restext://Number_Two_Lower"'
 - type: 'text'
   value: 'restext://ScenarioBox_FOTU_001'
 - type: 'break'

@@ -17,26 +17,26 @@ nodes:
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      expr: '"restext://Round_GenerationIII_LateEnded"'
+      expr: '"restext://Number_Two_Lower"'
   - match: 3
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      expr: '"restext://Click_StartVote"'
+      expr: '"restext://Number_Three_Lower"'
   - match: 4
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      expr: '"restext://Narrative_IWould_Fragment"'
+      expr: '"restext://Number_Four_Lower"'
   - match: 5
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      expr: '"restext://Number_Two_Lower"'
+      expr: '"restext://Number_Five_Lower"'
   default:
   - type: 'assign'
     var: 'playtxt'
-    expr: '"restext://Round_GenerationIII_LateEnded"'
+    expr: '"restext://Number_Two_Lower"'
 - type: 'text'
   value: 'restext://ATOW_Preparations_002'
 - type: 'break'
