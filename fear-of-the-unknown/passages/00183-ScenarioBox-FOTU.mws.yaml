@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ScenarioBox-FOTU'
-# ../en-US.restext:351 | "Preparations"
+# ../en-US.restext:349 | "Preparations"
 title: 'restext://Title_Preparations'
 tags:
 - 'Begins-Here'
@@ -56,30 +56,30 @@ nodes:
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:285 | "two"
+      # ../en-US.restext:275 | "two"
       expr: '"restext://Number_Two_Lower"'
   - match: 3
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:284 | "three"
+      # ../en-US.restext:274 | "three"
       expr: '"restext://Number_Three_Lower"'
   - match: 4
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:283 | "four"
+      # ../en-US.restext:273 | "four"
       expr: '"restext://Number_Four_Lower"'
   - match: 5
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:282 | "five"
+      # ../en-US.restext:272 | "five"
       expr: '"restext://Number_Five_Lower"'
   default:
   - type: 'assign'
     var: 'playtxt'
-    # ../en-US.restext:285 | "two"
+    # ../en-US.restext:275 | "two"
     expr: '"restext://Number_Two_Lower"'
 # ../.source/FearoftheUnknown_Eng_v15.cs:21165
 - type: 'text'

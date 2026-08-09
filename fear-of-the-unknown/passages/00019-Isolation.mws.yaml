@@ -4,7 +4,7 @@ format: 'mws/0.4'
 passage_id: 'Isolation'
 # ../en-US.restext:368 | "Walled City"
 title: 'restext://Title_WalledCity'
-# ../en-US.restext:335 | "Early Years"
+# ../en-US.restext:329 | "Early Years"
 subtitle: 'restext://Title_EarlyYears'
 tags:
 - 'HUB'
@@ -41,7 +41,7 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:3752
       - type: 'text'
-        # ../en-US.restext:76 | "Then, since this is a 3 p..."
+        # ../en-US.restext:66 | "Then, since this is a 3 p..."
         value: 'restext://Directive_3Player_PassMarker_A'
       # ../.source/FearoftheUnknown_Eng_v15.cs:3753
       - type: 'break'
@@ -60,20 +60,20 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3788
 - type: 'section'
-  # ../en-US.restext:232 | "{icon:storybooktoken} **V..."
+  # ../en-US.restext:222 | "{icon:storybooktoken} **V..."
   title: 'restext://Heading_StorybookToken_VerificationOfIdentity'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3799
   - type: 'text'
-    # ../en-US.restext:274 | "As a registered citizen w..."
+    # ../en-US.restext:264 | "As a registered citizen w..."
     value: 'restext://Narrative_RegisteredCitizenBackgroundCheck'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3801
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3803
   - type: 'text'
-    # ../en-US.restext:111 | "You MUST place your **Sel..."
+    # ../en-US.restext:101 | "You MUST place your **Sel..."
     value: 'restext://Directive_MustPlaceSelfTownHall_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3810
   - type: 'link'
@@ -86,14 +86,14 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3815
   - type: 'text'
-    # ../en-US.restext:112 | "_(If you have not verifie..."
+    # ../en-US.restext:102 | "_(If you have not verifie..."
     value: 'restext://Directive_NotVerifiedLose4VP'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3823
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3827
 - type: 'section'
-  # ../en-US.restext:233 | "**The Church**"
+  # ../en-US.restext:223 | "**The Church**"
   title: 'restext://Heading_TheChurch'
   style: 'hub-card'
   content:
@@ -105,7 +105,7 @@ nodes:
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:3836
   - type: 'text'
-    # ../en-US.restext:86 | " for an explanation of th..."
+    # ../en-US.restext:76 | " for an explanation of th..."
     value: 'restext://Directive_ChurchExplanation_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3838
   - type: 'break'
@@ -125,10 +125,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:302 | "The Early Years of the Th..."
+      # ../en-US.restext:292 | "The Early Years of the Th..."
       value: 'restext://Round_GenerationIII_EarlyEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:309 | "Then, perform all Start o..."
+      # ../en-US.restext:299 | "Then, perform all Start o..."
       value: 'restext://Round_StartMiddleYears_Rule'

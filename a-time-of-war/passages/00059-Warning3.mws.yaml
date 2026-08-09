@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Warning3'
-# ../en-US.restext:270 | "Not Again"
+# ../en-US.restext:267 | "Not Again"
 title: 'restext://Title_NotAgain'
-# ../en-US.restext:262 | "Late Years"
+# ../en-US.restext:259 | "Late Years"
 subtitle: 'restext://Title_LateYears'
 tags:
 - 'HUB'
@@ -37,26 +37,26 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:7671
     - type: 'section'
-      # ../en-US.restext:156 | "**Peaceful Green**"
+      # ../en-US.restext:152 | "**Peaceful Green**"
       title: 'restext://Heading_PeacefulGreen'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:7679
       - type: 'text'
-        # ../en-US.restext:218 | "While some of the village..."
+        # ../en-US.restext:214 | "While some of the village..."
         value: 'restext://Narrative_VillageRuinMossyFloor'
     # ../.source/ATimeofWar_Eng_v8.cs:7687
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:7691
     - type: 'section'
-      # ../en-US.restext:177 | "{icon:storybooktoken} **V..."
+      # ../en-US.restext:173 | "{icon:storybooktoken} **V..."
       title: 'restext://Heading_StorybookToken_VisitThePark'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:7700
       - type: 'text'
-        # ../en-US.restext:128 | "When a player completes a..."
+        # ../en-US.restext:124 | "When a player completes a..."
         value: 'restext://Heading_ActionAtParkLocation'
       # ../.source/ATimeofWar_Eng_v8.cs:7706
       - type: 'break'
@@ -76,19 +76,19 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:7717
     - type: 'section'
-      # ../en-US.restext:134 | "**Breaking the 4th Wall**"
+      # ../en-US.restext:130 | "**Breaking the 4th Wall**"
       title: 'restext://Heading_BreakingThe4thWall'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:7725
       - type: 'text'
-        # ../en-US.restext:220 | "The world has changed aga..."
+        # ../en-US.restext:216 | "The world has changed aga..."
         value: 'restext://Narrative_WorldChangedUnfinishedPage'
       # ../.source/ATimeofWar_Eng_v8.cs:7728
       - type: 'let'
         var: '_rnd_Warning3_0'
-        # ../en-US.restext:217 | Narrative_UnfinishedPage_GameDesignerWeight | "We feel the emotional wei..."
-        # ../en-US.restext:216 | Narrative_UnfinishedPage_EmptyPageVoid | "I think an empty page is ..."
+        # ../en-US.restext:213 | Narrative_UnfinishedPage_GameDesignerWeight | "We feel the emotional wei..."
+        # ../en-US.restext:212 | Narrative_UnfinishedPage_EmptyPageVoid | "I think an empty page is ..."
         expr: '["restext://Narrative_UnfinishedPage_GameDesignerWeight", "restext://Narrative_UnfinishedPage_EmptyPageVoid"].shuffled("Warning3_0")[0]'
       # ../.source/ATimeofWar_Eng_v8.cs:7726
       - type: 'break'
@@ -103,13 +103,13 @@ nodes:
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:7736
     - type: 'section'
-      # ../en-US.restext:173 | "{icon:storybooktoken} **V..."
+      # ../en-US.restext:169 | "{icon:storybooktoken} **V..."
       title: 'restext://Heading_StorybookToken_VisitTheBank'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:7746
       - type: 'text'
-        # ../en-US.restext:124 | "When a player completes a..."
+        # ../en-US.restext:120 | "When a player completes a..."
         value: 'restext://Heading_ActionAtBank'
       # ../.source/ATimeofWar_Eng_v8.cs:7752
       - type: 'break'
@@ -129,7 +129,7 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:7762
     - type: 'section'
-      # ../en-US.restext:184 | "**Too Perfect**"
+      # ../en-US.restext:180 | "**Too Perfect**"
       title: 'restext://Heading_TooPerfect'
       style: 'hub-card'
       content:
@@ -142,7 +142,7 @@ nodes:
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:7776
     - type: 'section'
-      # ../en-US.restext:163 | "**Science is Stressful**"
+      # ../en-US.restext:159 | "**Science is Stressful**"
       title: 'restext://Heading_ScienceIsStressful'
       style: 'hub-card'
       content:
@@ -155,13 +155,13 @@ nodes:
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:7801
     - type: 'section'
-      # ../en-US.restext:176 | "{icon:storybooktoken} **V..."
+      # ../en-US.restext:172 | "{icon:storybooktoken} **V..."
       title: 'restext://Heading_StorybookToken_VisitTheChurch'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:7810
       - type: 'text'
-        # ../en-US.restext:127 | "When a player completes a..."
+        # ../en-US.restext:123 | "When a player completes a..."
         value: 'restext://Heading_ActionAtChurchLocation'
       # ../.source/ATimeofWar_Eng_v8.cs:7816
       - type: 'break'
@@ -181,26 +181,26 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:7827
     - type: 'section'
-      # ../en-US.restext:133 | "**Big Brother**"
+      # ../en-US.restext:129 | "**Big Brother**"
       title: 'restext://Heading_BigBrother'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:7835
       - type: 'text'
-        # ../en-US.restext:214 | "Everyone in the town was ..."
+        # ../en-US.restext:210 | "Everyone in the town was ..."
         value: 'restext://Narrative_TownJovialModernSociety'
     # ../.source/ATimeofWar_Eng_v8.cs:7837
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:7842
     - type: 'section'
-      # ../en-US.restext:178 | "{icon:storybooktoken} **V..."
+      # ../en-US.restext:174 | "{icon:storybooktoken} **V..."
       title: 'restext://Heading_StorybookToken_VisitTheTownHall'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:7851
       - type: 'text'
-        # ../en-US.restext:129 | "When a player completes a..."
+        # ../en-US.restext:125 | "When a player completes a..."
         value: 'restext://Heading_ActionAtTownHallLocation'
       # ../.source/ATimeofWar_Eng_v8.cs:7857
       - type: 'break'
@@ -220,26 +220,26 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:7867
     - type: 'section'
-      # ../en-US.restext:131 | "**Amphibious**"
+      # ../en-US.restext:127 | "**Amphibious**"
       title: 'restext://Heading_Amphibious'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:7875
       - type: 'text'
-        # ../en-US.restext:215 | "We arrived at an astonish..."
+        # ../en-US.restext:211 | "We arrived at an astonish..."
         value: 'restext://Narrative_UnderwaterVillageInsects'
     # ../.source/ATimeofWar_Eng_v8.cs:7877
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:7881
     - type: 'section'
-      # ../en-US.restext:174 | "{icon:storybooktoken} **V..."
+      # ../en-US.restext:170 | "{icon:storybooktoken} **V..."
       title: 'restext://Heading_StorybookToken_VisitTheBlacksmith'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:7890
       - type: 'text'
-        # ../en-US.restext:125 | "When a player completes a..."
+        # ../en-US.restext:121 | "When a player completes a..."
         value: 'restext://Heading_ActionAtBlacksmith'
       # ../.source/ATimeofWar_Eng_v8.cs:7896
       - type: 'break'
@@ -259,13 +259,13 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:7906
     - type: 'section'
-      # ../en-US.restext:130 | "**Age of the Dinosaurs**"
+      # ../en-US.restext:126 | "**Age of the Dinosaurs**"
       title: 'restext://Heading_AgeOfTheDinosaurs'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:7914
       - type: 'text'
-        # ../en-US.restext:206 | "We were immediately accos..."
+        # ../en-US.restext:202 | "We were immediately accos..."
         value: 'restext://Narrative_MoldyLeatheryStenchTown'
       # ../.source/ATimeofWar_Eng_v8.cs:7915
       - type: 'break'
@@ -286,13 +286,13 @@ nodes:
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:7928
     - type: 'section'
-      # ../en-US.restext:175 | "{icon:storybooktoken} **V..."
+      # ../en-US.restext:171 | "{icon:storybooktoken} **V..."
       title: 'restext://Heading_StorybookToken_VisitTheBunker'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:7937
       - type: 'text'
-        # ../en-US.restext:126 | "When a player completes a..."
+        # ../en-US.restext:122 | "When a player completes a..."
         value: 'restext://Heading_ActionAtBunker'
       # ../.source/ATimeofWar_Eng_v8.cs:7943
       - type: 'break'
@@ -312,13 +312,13 @@ nodes:
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:7952
 - type: 'section'
-  # ../en-US.restext:186 | "**Utopian Experiments**"
+  # ../en-US.restext:182 | "**Utopian Experiments**"
   title: 'restext://Heading_UtopianExperiments'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:7960
   - type: 'text'
-    # ../en-US.restext:87 | "A new set of Experiments ..."
+    # ../en-US.restext:83 | "A new set of Experiments ..."
     value: 'restext://Directive_NewExperimentsAvailable_An'
   # ../.source/ATimeofWar_Eng_v8.cs:7962
   - type: 'break'
@@ -338,10 +338,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:234 | "The Late Years of the Thi..."
+      # ../en-US.restext:230 | "The Late Years of the Thi..."
       value: 'restext://Round_GenerationIII_LateEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:232 | "Perform any End of Round ..."
+      # ../en-US.restext:228 | "Perform any End of Round ..."
       value: 'restext://Round_EndOfRoundActions_Rule'

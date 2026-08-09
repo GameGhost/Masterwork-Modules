@@ -4,7 +4,7 @@ format: 'mws/0.4'
 passage_id: 'Tension'
 # ../en-US.restext:551 | "Tensions Increase in Peac..."
 title: 'restext://Tension_001'
-# ../en-US.restext:335 | "Early Years"
+# ../en-US.restext:329 | "Early Years"
 subtitle: 'restext://Title_EarlyYears'
 tags:
 - 'HUB'
@@ -53,13 +53,13 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:3903
       - type: 'text'
-        # ../en-US.restext:76 | "Then, since this is a 3 p..."
+        # ../en-US.restext:66 | "Then, since this is a 3 p..."
         value: 'restext://Directive_3Player_PassMarker_A'
       # ../.source/FearoftheUnknown_Eng_v15.cs:3904
       - type: 'break'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3911
   - type: 'section'
-    # ../en-US.restext:212 | "**Special Rule**"
+    # ../en-US.restext:202 | "**Special Rule**"
     title: 'restext://Heading_SpecialRule'
     style: 'hub-card'
     content:
@@ -95,26 +95,26 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3965
   - type: 'section'
-    # ../en-US.restext:199 | "**Plot Expansion**"
+    # ../en-US.restext:189 | "**Plot Expansion**"
     title: 'restext://Heading_PlotExpansion'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:3974
     - type: 'text'
-      # ../en-US.restext:83 | "Bricks can now be used to..."
+      # ../en-US.restext:73 | "Bricks can now be used to..."
       value: 'restext://Directive_BricksExpandEstatePlot'
   # ../.source/FearoftheUnknown_Eng_v15.cs:3978
   - type: 'break'
     style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3984
 - type: 'section'
-  # ../en-US.restext:196 | "**Occult Experimentation**"
+  # ../en-US.restext:186 | "**Occult Experimentation**"
   title: 'restext://Heading_OccultExperimentation'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:3992
   - type: 'text'
-    # ../en-US.restext:297 | "At the End of the Generat..."
+    # ../en-US.restext:287 | "At the End of the Generat..."
     value: 'restext://Reward_MostOccultExperiments_CabinetOfCuriosities'
   # ../.source/FearoftheUnknown_Eng_v15.cs:4005
   - type: 'conditional'
@@ -122,18 +122,18 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:4007
     - type: 'text'
-      # ../en-US.restext:300 | "The player with the secon..."
+      # ../en-US.restext:290 | "The player with the secon..."
       value: 'restext://Reward_SecondMostExperiments_WithVariant'
   # ../.source/FearoftheUnknown_Eng_v15.cs:4009
   - type: 'text'
-    # ../en-US.restext:138 | " _Ties are broken by the ..."
+    # ../en-US.restext:128 | " _Ties are broken by the ..."
     value: 'restext://Directive_TieBreak_LowestVP_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4015
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4019
 - type: 'section'
-  # ../en-US.restext:233 | "**The Church**"
+  # ../en-US.restext:223 | "**The Church**"
   title: 'restext://Heading_TheChurch'
   style: 'hub-card'
   content:
@@ -145,7 +145,7 @@ nodes:
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:4028
   - type: 'text'
-    # ../en-US.restext:86 | " for an explanation of th..."
+    # ../en-US.restext:76 | " for an explanation of th..."
     value: 'restext://Directive_ChurchExplanation_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:4033
   - type: 'conditional'
@@ -173,10 +173,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:302 | "The Early Years of the Th..."
+      # ../en-US.restext:292 | "The Early Years of the Th..."
       value: 'restext://Round_GenerationIII_EarlyEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:309 | "Then, perform all Start o..."
+      # ../en-US.restext:299 | "Then, perform all Start o..."
       value: 'restext://Round_StartMiddleYears_Rule'

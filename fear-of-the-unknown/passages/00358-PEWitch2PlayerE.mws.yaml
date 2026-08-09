@@ -25,7 +25,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:24896
     - type: 'text'
-      # ../en-US.restext:262 | "My lust for fame knows no..."
+      # ../en-US.restext:252 | "My lust for fame knows no..."
       value: 'restext://Narrative_LustForFame'
     # ../.source/FearoftheUnknown_Eng_v15.cs:24897
     - type: 'break'
@@ -34,7 +34,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:24903
     - type: 'text'
-      # ../en-US.restext:277 | "My thirst for knowledge i..."
+      # ../en-US.restext:267 | "My thirst for knowledge i..."
       value: 'restext://Narrative_ThirstForKnowledge'
     # ../.source/FearoftheUnknown_Eng_v15.cs:24906
     - type: 'break'
@@ -43,7 +43,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:24912
     - type: 'text'
-      # ../en-US.restext:249 | "I have spent days upon da..."
+      # ../en-US.restext:239 | "I have spent days upon da..."
       value: 'restext://Narrative_DaysLockedAwayLaboratory'
     # ../.source/FearoftheUnknown_Eng_v15.cs:24913
     - type: 'break'
@@ -52,7 +52,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:24919
     - type: 'text'
-      # ../en-US.restext:275 | "I am surrounded by simple..."
+      # ../en-US.restext:265 | "I am surrounded by simple..."
       value: 'restext://Narrative_SurroundedBySimpleMindedFilth'
     # ../.source/FearoftheUnknown_Eng_v15.cs:24922
     - type: 'break'
@@ -61,7 +61,7 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:24928
     - type: 'text'
-      # ../en-US.restext:280 | "I will not suffer fools. ..."
+      # ../en-US.restext:270 | "I will not suffer fools. ..."
       value: 'restext://Narrative_WillNotSufferFools'
     # ../.source/FearoftheUnknown_Eng_v15.cs:24936
     - type: 'break'
@@ -69,7 +69,7 @@ nodes:
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:24942
   - type: 'text'
-    # ../en-US.restext:271 | "I find pleasure in the si..."
+    # ../en-US.restext:261 | "I find pleasure in the si..."
     value: 'restext://Narrative_PleasureInExperimentation'
   # ../.source/FearoftheUnknown_Eng_v15.cs:24943
   - type: 'break'
@@ -128,31 +128,31 @@ nodes:
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:24970
       - type: 'text'
-        # ../en-US.restext:286 | "**{fate1} receives the FO..."
+        # ../en-US.restext:276 | "**{fate1} receives the FO..."
         value: 'restext://Obsession_Fate1Fame'
     - if: 'nameE == fate2'
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:24987
       - type: 'text'
-        # ../en-US.restext:287 | "**{fate2} gains the FOR K..."
+        # ../en-US.restext:277 | "**{fate2} gains the FOR K..."
         value: 'restext://Obsession_Fate2Knowledge'
     - if: 'nameE == fate3'
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:25004
       - type: 'text'
-        # ../en-US.restext:288 | "**{fate3} gains the FOR S..."
+        # ../en-US.restext:278 | "**{fate3} gains the FOR S..."
         value: 'restext://Obsession_Fate3Science'
     - if: 'nameE == fate4'
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:25021
       - type: 'text'
-        # ../en-US.restext:289 | "**{fate4} gains the FOR R..."
+        # ../en-US.restext:279 | "**{fate4} gains the FOR R..."
         value: 'restext://Obsession_Fate4Revenge'
     - if: 'nameE == fate5'
       then:
       # ../.source/FearoftheUnknown_Eng_v15.cs:25038
       - type: 'text'
-        # ../en-US.restext:290 | "**{fate5} gains the FOR R..."
+        # ../en-US.restext:280 | "**{fate5} gains the FOR R..."
         value: 'restext://Obsession_Fate5Respect'
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:25055

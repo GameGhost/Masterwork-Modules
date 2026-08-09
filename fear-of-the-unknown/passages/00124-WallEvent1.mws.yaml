@@ -10,7 +10,7 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:14932
 - type: 'text'
-  # ../en-US.restext:316 | "Special Event"
+  # ../en-US.restext:306 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/FearoftheUnknown_Eng_v15.cs:14933
@@ -79,22 +79,22 @@ nodes:
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:74 | "3"
+      # ../en-US.restext:64 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:75 | "2"
+      # ../en-US.restext:65 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:72 | "1"
+      # ../en-US.restext:62 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:73 | "REVEAL"
+      # ../en-US.restext:63 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:73 | "REVEAL"
+    # ../en-US.restext:63 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: 'WallEvent1b' # ./00240-WallEvent1b.mws.yaml
     snapshot: false

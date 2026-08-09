@@ -4,7 +4,7 @@ format: 'mws/0.4'
 passage_id: 'Fever1'
 # ../en-US.restext:355 | "YELLOW FEVER"
 title: 'restext://Title_YellowFever'
-# ../en-US.restext:332 | "Early Years"
+# ../en-US.restext:327 | "Early Years"
 subtitle: 'restext://Title_EarlyYears'
 tags:
 - 'HUB'
@@ -76,13 +76,13 @@ nodes:
       - '_rnd_Fever1_0'
 # ../.source/TheCostofDisease_Eng_v10.cs:1696
 - type: 'section'
-  # ../en-US.restext:147 | "**BUILD A HOSPITAL**"
+  # ../en-US.restext:141 | "**BUILD A HOSPITAL**"
   title: 'restext://Heading_BuildHospital'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:1704
   - type: 'text'
-    # ../en-US.restext:190 | "The church can no longer ..."
+    # ../en-US.restext:184 | "The church can no longer ..."
     value: 'restext://Hospital_ChurchExpansion_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:1714
   - type: 'break'
@@ -100,13 +100,13 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:1736
   - type: 'section'
-    # ../en-US.restext:144 | "{icon:storybook} **Attrac..."
+    # ../en-US.restext:138 | "{icon:storybook} **Attrac..."
     title: 'restext://Heading_AttractingAttention'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:1745
     - type: 'text'
-      # ../en-US.restext:289 | "If a player reaches the *..."
+      # ../en-US.restext:283 | "If a player reaches the *..."
       value: 'restext://Resource_CreepyTrack_4thSpace_Lead'
     # ../.source/TheCostofDisease_Eng_v10.cs:1753
     - type: 'link'
@@ -123,13 +123,13 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:1762
   - type: 'section'
-    # ../en-US.restext:166 | "{icon:storybook} **The Ma..."
+    # ../en-US.restext:160 | "{icon:storybook} **The Ma..."
     title: 'restext://Heading_MarkOfGenius'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:1771
     - type: 'text'
-      # ../en-US.restext:300 | "If a player reaches the *..."
+      # ../en-US.restext:294 | "If a player reaches the *..."
       value: 'restext://Resource_InsanityTrack_3rdSpace_Lead'
     # ../.source/TheCostofDisease_Eng_v10.cs:1779
     - type: 'link'
@@ -142,13 +142,13 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:1786
 - type: 'section'
-  # ../en-US.restext:154 | "**Second round Event - El..."
+  # ../en-US.restext:148 | "**Second round Event - El..."
   title: 'restext://Heading_ElectionSeason'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:1794
   - type: 'text'
-    # ../en-US.restext:121 | "Political pandering may r..."
+    # ../en-US.restext:115 | "Political pandering may r..."
     value: 'restext://Election_PanderingFlavor'
   # ../.source/TheCostofDisease_Eng_v10.cs:1797
   - type: 'break'
@@ -173,5 +173,5 @@ nodes:
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:315 | "Then, perform all Start o..."
+      # ../en-US.restext:309 | "Then, perform all Start o..."
       value: 'restext://Round_StartMiddleYears_Rule'

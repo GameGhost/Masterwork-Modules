@@ -8,28 +8,28 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:33873
 - type: 'text'
-  # ../en-US.restext:317 | "Special Event"
+  # ../en-US.restext:311 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/TheCostofDisease_Eng_v10.cs:33874
 - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:33875
 - type: 'text'
-  # ../en-US.restext:253 | "The Order suggested a sin..."
+  # ../en-US.restext:247 | "The Order suggested a sin..."
   value: 'restext://Narrative_FrenzyProposal'
 # ../.source/TheCostofDisease_Eng_v10.cs:33876
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:33878
 - type: 'text'
-  # ../en-US.restext:240 | "Given the scientific expe..."
+  # ../en-US.restext:234 | "Given the scientific expe..."
   value: 'restext://Narrative_ConsultedCousins'
 # ../.source/TheCostofDisease_Eng_v10.cs:33881
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:33885
 - type: 'text'
-  # ../en-US.restext:189 | "**VOTE**"
+  # ../en-US.restext:183 | "**VOTE**"
   value: 'restext://Heading_Vote'
 # ../.source/TheCostofDisease_Eng_v10.cs:33887
 - type: 'break'
@@ -83,22 +83,22 @@ nodes:
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:80 | "3"
+      # ../en-US.restext:74 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:81 | "2"
+      # ../en-US.restext:75 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:78 | "1"
+      # ../en-US.restext:72 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:79 | "REVEAL"
+      # ../en-US.restext:73 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:79 | "REVEAL"
+    # ../en-US.restext:73 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: 'GoodFrenzyEvent2b' # ./00345-GoodFrenzyEvent2b.mws.yaml
     snapshot: false

@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'DuelResolution1b'
-# ../en-US.restext:54 | Countdown_One | "1"
+# ../en-US.restext:50 | Countdown_One | "1"
 # ../en-US.restext:1632 | DuelResolution1b_001 | "An Unfortunate Death"
 # ../en-US.restext:1633 | DuelResolution1b_002 | "Wounded Pride"
 title: '{duelresult == "restext://Countdown_One" ? "restext://DuelResolution1b_001" : "restext://DuelResolution1b_002"}'
@@ -14,7 +14,7 @@ nodes:
   expr: 'rand_between(1, 5, "DuelResolution1b_0")'
 # ../.source/ATimeofWar_Eng_v8.cs:19579
 - type: 'conditional'
-  # ../en-US.restext:54 | "1"
+  # ../en-US.restext:50 | "1"
   if: 'duelresult == "restext://Countdown_One"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:19586
@@ -30,21 +30,21 @@ nodes:
     - type: 'switch'
       on: 'duelsci'
       cases:
-      # ../en-US.restext:122 | "Engineering"
+      # ../en-US.restext:118 | "Engineering"
       - match: 'restext://Focus_Engineering'
         nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:19595
         - type: 'text'
           # ../en-US.restext:1645 | "was unceremoniously crush..."
           value: 'restext://DuelResolution1b_015'
-      # ../en-US.restext:121 | "Chemistry"
+      # ../en-US.restext:117 | "Chemistry"
       - match: 'restext://Focus_Chemistry'
         nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:19601
         - type: 'text'
           # ../en-US.restext:1646 | "withered into a rubbery s..."
           value: 'restext://DuelResolution1b_016'
-      # ../en-US.restext:120 | "Biology"
+      # ../en-US.restext:116 | "Biology"
       - match: 'restext://Focus_Biology'
         nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:19607
@@ -73,7 +73,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:19627
   - type: 'text'
-    # ../en-US.restext:194 | "As required in the code d..."
+    # ../en-US.restext:190 | "As required in the code d..."
     value: 'restext://Narrative_CodeDuelloMatterComplete'
   # ../.source/ATimeofWar_Eng_v8.cs:19630
   - type: 'break'
@@ -129,21 +129,21 @@ nodes:
     - type: 'switch'
       on: 'duelsci'
       cases:
-      # ../en-US.restext:122 | "Engineering"
+      # ../en-US.restext:118 | "Engineering"
       - match: 'restext://Focus_Engineering'
         nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:19650
         - type: 'text'
           # ../en-US.restext:1637 | " suddenly complained of a..."
           value: 'restext://DuelResolution1b_006'
-      # ../en-US.restext:121 | "Chemistry"
+      # ../en-US.restext:117 | "Chemistry"
       - match: 'restext://Focus_Chemistry'
         nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:19654
         - type: 'text'
           # ../en-US.restext:1638 | " held the side of their a..."
           value: 'restext://DuelResolution1b_007'
-      # ../en-US.restext:120 | "Biology"
+      # ../en-US.restext:116 | "Biology"
       - match: 'restext://Focus_Biology'
         nodes:
         # ../.source/ATimeofWar_Eng_v8.cs:19658
@@ -169,7 +169,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:19674
   - type: 'text'
-    # ../en-US.restext:194 | "As required in the code d..."
+    # ../en-US.restext:190 | "As required in the code d..."
     value: 'restext://Narrative_CodeDuelloMatterComplete'
   # ../.source/ATimeofWar_Eng_v8.cs:19677
   - type: 'break'

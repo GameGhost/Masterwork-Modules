@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Hospital3'
-# ../en-US.restext:351 | "THRIVING IN ADVERSITY"
+# ../en-US.restext:350 | "THRIVING IN ADVERSITY"
 title: 'restext://Title_ThrivingInAdversity'
-# ../en-US.restext:338 | "Late Years"
+# ../en-US.restext:334 | "Late Years"
 subtitle: 'restext://Title_LateYears'
 tags:
 - 'HUB'
@@ -36,7 +36,7 @@ nodes:
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:5026
       - type: 'conditional'
-        # ../en-US.restext:203 | "bank"
+        # ../en-US.restext:197 | "bank"
         if: 'building == "restext://Location_Bank_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:5028
@@ -50,20 +50,20 @@ nodes:
           value: 'restext://Hospital3_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:5052
 - type: 'section'
-  # ../en-US.restext:146 | "{icon:storybook} **Board ..."
+  # ../en-US.restext:140 | "{icon:storybook} **Board ..."
   title: 'restext://Heading_BoardOfTrustees'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5062
   - type: 'text'
-    # ../en-US.restext:192 | "All players MUST place th..."
+    # ../en-US.restext:186 | "All players MUST place th..."
     value: 'restext://Hospital_MustVisit_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:5069
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:5071
   - type: 'text'
-    # ../en-US.restext:191 | "The **first time** you vi..."
+    # ../en-US.restext:185 | "The **first time** you vi..."
     value: 'restext://Hospital_FirstVisit_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:5072
   - type: 'link'
@@ -82,13 +82,13 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:5080
     - type: 'section'
-      # ../en-US.restext:184 | "{icon:storybook} **The Cure**"
+      # ../en-US.restext:178 | "{icon:storybook} **The Cure**"
       title: 'restext://Heading_TheCure'
       style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:5089
       - type: 'text'
-        # ../en-US.restext:120 | "Whenever a player complet..."
+        # ../en-US.restext:114 | "Whenever a player complet..."
         value: 'restext://Disease_YellowFeverInoculation_Lead'
       # ../.source/TheCostofDisease_Eng_v10.cs:5094
       - type: 'link'
@@ -100,7 +100,7 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:5101
     - type: 'section'
-      # ../en-US.restext:186 | "{icon:storybook} **The Pa..."
+      # ../en-US.restext:180 | "{icon:storybook} **The Pa..."
       title: 'restext://Heading_ThePanacea'
       style: 'hub-card'
       content:
@@ -123,13 +123,13 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:5125
   - type: 'section'
-    # ../en-US.restext:188 | "{icon:storybook} **Victor..."
+    # ../en-US.restext:182 | "{icon:storybook} **Victor..."
     title: 'restext://Heading_VictoryAhead'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:5134
     - type: 'text'
-      # ../en-US.restext:115 | "If a player reaches or pa..."
+      # ../en-US.restext:109 | "If a player reaches or pa..."
       value: 'restext://Directive_VPTrack35_Lead'
     # ../.source/TheCostofDisease_Eng_v10.cs:5136
     - type: 'link'
@@ -149,13 +149,13 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:5147
   - type: 'section'
-    # ../en-US.restext:180 | "{icon:storybook} **Scient..."
+    # ../en-US.restext:174 | "{icon:storybook} **Scient..."
     title: 'restext://Heading_ScientificAdvances'
     style: 'hub-card'
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:5156
     - type: 'text'
-      # ../en-US.restext:116 | "If a player completes a t..."
+      # ../en-US.restext:110 | "If a player completes a t..."
       value: 'restext://Disease_3Experiments_Lead'
     # ../.source/TheCostofDisease_Eng_v10.cs:5159
     - type: 'link'
@@ -174,7 +174,7 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5178
   - type: 'text'
-    # ../en-US.restext:100 | "If any player reaches the..."
+    # ../en-US.restext:94 | "If any player reaches the..."
     value: 'restext://Directive_JournalTrackLevel3_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:5180
   - type: 'link'
@@ -200,10 +200,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:312 | "The Late Years of the Sec..."
+      # ../en-US.restext:306 | "The Late Years of the Sec..."
       value: 'restext://Round_GenerationII_LateEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:307 | "Perform any End of Round ..."
+      # ../en-US.restext:301 | "Perform any End of Round ..."
       value: 'restext://Round_EndOfRoundActions_Rule'

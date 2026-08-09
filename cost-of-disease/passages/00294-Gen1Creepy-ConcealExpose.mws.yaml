@@ -6,7 +6,7 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:29826
 - type: 'text'
-  # ../en-US.restext:321 | "**Carefully hand this sto..."
+  # ../en-US.restext:315 | "**Carefully hand this sto..."
   value: 'restext://Storybook_HandToGen1Creep_Private'
 # ../.source/TheCostofDisease_Eng_v10.cs:29831
 - type: 'break'
@@ -37,7 +37,7 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:29856
     - type: 'text'
-      # ../en-US.restext:127 | "Order of St. Hubertus"
+      # ../en-US.restext:121 | "Order of St. Hubertus"
       value: 'restext://Faction_OrderOfStHubertus_Plain'
   # ../.source/TheCostofDisease_Eng_v10.cs:29858
   - type: 'conditional'
@@ -46,7 +46,7 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:29860
     - type: 'text'
-      # ../en-US.restext:123 | "Fraternity of Hunters"
+      # ../en-US.restext:117 | "Fraternity of Hunters"
       value: 'restext://Faction_FraternityOfHunters_Plain'
   # ../.source/TheCostofDisease_Eng_v10.cs:29862
   - type: 'text'
@@ -66,7 +66,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:29874
       - type: 'conditional'
-        # ../en-US.restext:124 | "hunters"
+        # ../en-US.restext:118 | "hunters"
         if: 'allyA == "restext://Faction_Hunters_Lower" || !allyA'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:29876
@@ -90,7 +90,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:29891
       - type: 'conditional'
-        # ../en-US.restext:124 | "hunters"
+        # ../en-US.restext:118 | "hunters"
         if: 'allyB == "restext://Faction_Hunters_Lower" || !allyB'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:29893
@@ -114,7 +114,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:29908
       - type: 'conditional'
-        # ../en-US.restext:124 | "hunters"
+        # ../en-US.restext:118 | "hunters"
         if: 'allyC == "restext://Faction_Hunters_Lower" || !allyC'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:29910
@@ -138,7 +138,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:29925
       - type: 'conditional'
-        # ../en-US.restext:124 | "hunters"
+        # ../en-US.restext:118 | "hunters"
         if: 'allyD == "restext://Faction_Hunters_Lower" || !allyD'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:29927
@@ -162,7 +162,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:29942
       - type: 'conditional'
-        # ../en-US.restext:124 | "hunters"
+        # ../en-US.restext:118 | "hunters"
         if: 'allyE == "restext://Faction_Hunters_Lower" || !allyE'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:29944
@@ -191,7 +191,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:29962
       - type: 'conditional'
-        # ../en-US.restext:129 | "wolves"
+        # ../en-US.restext:123 | "wolves"
         if: 'allyA == "restext://Faction_Wolves_Lower" || !allyA'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:29964
@@ -215,7 +215,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:29979
       - type: 'conditional'
-        # ../en-US.restext:129 | "wolves"
+        # ../en-US.restext:123 | "wolves"
         if: 'allyB == "restext://Faction_Wolves_Lower" || !allyB'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:29981
@@ -239,7 +239,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:29996
       - type: 'conditional'
-        # ../en-US.restext:129 | "wolves"
+        # ../en-US.restext:123 | "wolves"
         if: 'allyC == "restext://Faction_Wolves_Lower" || !allyC'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:29998
@@ -263,7 +263,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:30013
       - type: 'conditional'
-        # ../en-US.restext:129 | "wolves"
+        # ../en-US.restext:123 | "wolves"
         if: 'allyD == "restext://Faction_Wolves_Lower" || !allyD'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:30015
@@ -287,7 +287,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:30030
       - type: 'conditional'
-        # ../en-US.restext:129 | "wolves"
+        # ../en-US.restext:123 | "wolves"
         if: 'allyE == "restext://Faction_Wolves_Lower" || !allyE'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:30032
@@ -320,7 +320,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:30052
         - type: 'conditional'
-          # ../en-US.restext:124 | "hunters"
+          # ../en-US.restext:118 | "hunters"
           if: 'allyA == "restext://Faction_Hunters_Lower" || !allyA'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:30055
@@ -350,7 +350,7 @@ nodes:
               - type: 'break'
               # ../.source/TheCostofDisease_Eng_v10.cs:30192
               - type: 'text'
-                # ../en-US.restext:89 | "Discard a **completed Exp..."
+                # ../en-US.restext:83 | "Discard a **completed Exp..."
                 value: 'restext://Directive_DiscardExperimentOrUpgrade'
               # ../.source/TheCostofDisease_Eng_v10.cs:30203
               - type: 'break'
@@ -393,7 +393,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:30064
         - type: 'conditional'
-          # ../en-US.restext:124 | "hunters"
+          # ../en-US.restext:118 | "hunters"
           if: 'allyB == "restext://Faction_Hunters_Lower" || !allyB'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:30067
@@ -423,7 +423,7 @@ nodes:
               - type: 'break'
               # ../.source/TheCostofDisease_Eng_v10.cs:30192
               - type: 'text'
-                # ../en-US.restext:89 | "Discard a **completed Exp..."
+                # ../en-US.restext:83 | "Discard a **completed Exp..."
                 value: 'restext://Directive_DiscardExperimentOrUpgrade'
               # ../.source/TheCostofDisease_Eng_v10.cs:30203
               - type: 'break'
@@ -466,7 +466,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:30076
         - type: 'conditional'
-          # ../en-US.restext:124 | "hunters"
+          # ../en-US.restext:118 | "hunters"
           if: 'allyC == "restext://Faction_Hunters_Lower" || !allyC'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:30079
@@ -496,7 +496,7 @@ nodes:
               - type: 'break'
               # ../.source/TheCostofDisease_Eng_v10.cs:30192
               - type: 'text'
-                # ../en-US.restext:89 | "Discard a **completed Exp..."
+                # ../en-US.restext:83 | "Discard a **completed Exp..."
                 value: 'restext://Directive_DiscardExperimentOrUpgrade'
               # ../.source/TheCostofDisease_Eng_v10.cs:30203
               - type: 'break'
@@ -539,7 +539,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:30088
         - type: 'conditional'
-          # ../en-US.restext:124 | "hunters"
+          # ../en-US.restext:118 | "hunters"
           if: 'allyD == "restext://Faction_Hunters_Lower" || !allyD'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:30091
@@ -569,7 +569,7 @@ nodes:
               - type: 'break'
               # ../.source/TheCostofDisease_Eng_v10.cs:30192
               - type: 'text'
-                # ../en-US.restext:89 | "Discard a **completed Exp..."
+                # ../en-US.restext:83 | "Discard a **completed Exp..."
                 value: 'restext://Directive_DiscardExperimentOrUpgrade'
               # ../.source/TheCostofDisease_Eng_v10.cs:30203
               - type: 'break'
@@ -611,7 +611,7 @@ nodes:
       else:
       # ../.source/TheCostofDisease_Eng_v10.cs:30100
       - type: 'conditional'
-        # ../en-US.restext:124 | "hunters"
+        # ../en-US.restext:118 | "hunters"
         if: 'allyE == "restext://Faction_Hunters_Lower" || !allyE'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:30103
@@ -641,7 +641,7 @@ nodes:
             - type: 'break'
             # ../.source/TheCostofDisease_Eng_v10.cs:30192
             - type: 'text'
-              # ../en-US.restext:89 | "Discard a **completed Exp..."
+              # ../en-US.restext:83 | "Discard a **completed Exp..."
               value: 'restext://Directive_DiscardExperimentOrUpgrade'
             # ../.source/TheCostofDisease_Eng_v10.cs:30203
             - type: 'break'
@@ -688,7 +688,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:30115
         - type: 'conditional'
-          # ../en-US.restext:129 | "wolves"
+          # ../en-US.restext:123 | "wolves"
           if: 'allyA == "restext://Faction_Wolves_Lower" || !allyA'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:30118
@@ -718,7 +718,7 @@ nodes:
               - type: 'break'
               # ../.source/TheCostofDisease_Eng_v10.cs:30192
               - type: 'text'
-                # ../en-US.restext:89 | "Discard a **completed Exp..."
+                # ../en-US.restext:83 | "Discard a **completed Exp..."
                 value: 'restext://Directive_DiscardExperimentOrUpgrade'
               # ../.source/TheCostofDisease_Eng_v10.cs:30203
               - type: 'break'
@@ -761,7 +761,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:30127
         - type: 'conditional'
-          # ../en-US.restext:129 | "wolves"
+          # ../en-US.restext:123 | "wolves"
           if: 'allyB == "restext://Faction_Wolves_Lower" || !allyB'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:30130
@@ -791,7 +791,7 @@ nodes:
               - type: 'break'
               # ../.source/TheCostofDisease_Eng_v10.cs:30192
               - type: 'text'
-                # ../en-US.restext:89 | "Discard a **completed Exp..."
+                # ../en-US.restext:83 | "Discard a **completed Exp..."
                 value: 'restext://Directive_DiscardExperimentOrUpgrade'
               # ../.source/TheCostofDisease_Eng_v10.cs:30203
               - type: 'break'
@@ -834,7 +834,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:30139
         - type: 'conditional'
-          # ../en-US.restext:129 | "wolves"
+          # ../en-US.restext:123 | "wolves"
           if: 'allyC == "restext://Faction_Wolves_Lower" || !allyC'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:30142
@@ -864,7 +864,7 @@ nodes:
               - type: 'break'
               # ../.source/TheCostofDisease_Eng_v10.cs:30192
               - type: 'text'
-                # ../en-US.restext:89 | "Discard a **completed Exp..."
+                # ../en-US.restext:83 | "Discard a **completed Exp..."
                 value: 'restext://Directive_DiscardExperimentOrUpgrade'
               # ../.source/TheCostofDisease_Eng_v10.cs:30203
               - type: 'break'
@@ -907,7 +907,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:30151
         - type: 'conditional'
-          # ../en-US.restext:129 | "wolves"
+          # ../en-US.restext:123 | "wolves"
           if: 'allyD == "restext://Faction_Wolves_Lower" || !allyD'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:30154
@@ -937,7 +937,7 @@ nodes:
               - type: 'break'
               # ../.source/TheCostofDisease_Eng_v10.cs:30192
               - type: 'text'
-                # ../en-US.restext:89 | "Discard a **completed Exp..."
+                # ../en-US.restext:83 | "Discard a **completed Exp..."
                 value: 'restext://Directive_DiscardExperimentOrUpgrade'
               # ../.source/TheCostofDisease_Eng_v10.cs:30203
               - type: 'break'
@@ -979,7 +979,7 @@ nodes:
       else:
       # ../.source/TheCostofDisease_Eng_v10.cs:30163
       - type: 'conditional'
-        # ../en-US.restext:129 | "wolves"
+        # ../en-US.restext:123 | "wolves"
         if: 'allyE == "restext://Faction_Wolves_Lower" || !allyE'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:30166
@@ -1009,7 +1009,7 @@ nodes:
             - type: 'break'
             # ../.source/TheCostofDisease_Eng_v10.cs:30192
             - type: 'text'
-              # ../en-US.restext:89 | "Discard a **completed Exp..."
+              # ../en-US.restext:83 | "Discard a **completed Exp..."
               value: 'restext://Directive_DiscardExperimentOrUpgrade'
             # ../.source/TheCostofDisease_Eng_v10.cs:30203
             - type: 'break'

@@ -4,7 +4,7 @@ format: 'mws/0.4'
 passage_id: 'PrivatizedIntro'
 # ../en-US.restext:573 | "Conducting Business"
 title: 'restext://PrivatizedIntro_001'
-# ../en-US.restext:339 | "GENERATION III"
+# ../en-US.restext:334 | "GENERATION III"
 subtitle: 'restext://Title_GenerationIII'
 tags:
 - 'INTRO'
@@ -44,7 +44,7 @@ nodes:
   expr: 'randomplayer'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4212
 - type: 'text'
-  # ../en-US.restext:184 | "**Letter from** **{random..."
+  # ../en-US.restext:174 | "**Letter from** **{random..."
   value: 'restext://Heading_LetterFromRandomname_9Feb1892'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4239
 - type: 'break'
@@ -108,7 +108,7 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:4265
   - type: 'text'
-    # ../en-US.restext:71 | "v1.0"
+    # ../en-US.restext:61 | "v1.0"
     value: 'restext://Common_VersionOnePointZero'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4267
 - type: 'conditional'
@@ -117,7 +117,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:4269
   - type: 'assign'
     var: 'warden'
-    # ../en-US.restext:355 | "The Butcher"
+    # ../en-US.restext:354 | "The Butcher"
     expr: '"restext://Title_TheButcher"'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:4274

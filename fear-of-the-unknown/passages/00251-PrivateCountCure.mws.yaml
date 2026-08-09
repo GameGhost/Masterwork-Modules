@@ -2,8 +2,8 @@
 ---
 format: 'mws/0.4'
 passage_id: 'PrivateCountCure'
-# ../en-US.restext:66 | "A Debt Repaid"
-title: 'restext://Common_007'
+# ../en-US.restext:318 | "A Debt Repaid"
+title: 'restext://Title_ADebtRepaid'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:28517
@@ -12,14 +12,14 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:28527
   - type: 'text'
-    # ../en-US.restext:182 | "**Letter from {cureplayer..."
+    # ../en-US.restext:172 | "**Letter from {cureplayer..."
     value: 'restext://Heading_LetterFromCureplayer_1April1892'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28533
   - type: 'break'
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28535
   - type: 'text'
-    # ../en-US.restext:268 | "An ominous note appeared ..."
+    # ../en-US.restext:258 | "An ominous note appeared ..."
     value: 'restext://Narrative_OminousNoteDebtRepaid'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28536
   - type: 'break'
@@ -33,7 +33,7 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28544
   - type: 'text'
-    # ../en-US.restext:247 | "What a curious blessing!"
+    # ../en-US.restext:237 | "What a curious blessing!"
     value: 'restext://Narrative_CuriousBlessing'
   # ../.source/FearoftheUnknown_Eng_v15.cs:28545
   - type: 'break'
@@ -55,7 +55,7 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:28573
     - type: 'text'
-      # ../en-US.restext:128 | "Retrieve the **Blessing o..."
+      # ../en-US.restext:118 | "Retrieve the **Blessing o..."
       value: 'restext://Directive_RetrieveBlessingOfStrigoi'
   else:
   # ../.source/FearoftheUnknown_Eng_v15.cs:28553

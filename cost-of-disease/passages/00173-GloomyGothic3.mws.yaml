@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'GloomyGothic3'
-# ../en-US.restext:348 | "A Taste of Evil"
+# ../en-US.restext:346 | "A Taste of Evil"
 title: 'restext://Title_TasteOfEvil'
-# ../en-US.restext:338 | "Late Years"
+# ../en-US.restext:334 | "Late Years"
 subtitle: 'restext://Title_LateYears'
 tags:
 - 'HUB'
@@ -16,7 +16,7 @@ nodes:
   expr: '12'
 # ../.source/TheCostofDisease_Eng_v10.cs:20194
 - type: 'conditional'
-  # ../en-US.restext:123 | "Fraternity of Hunters"
+  # ../en-US.restext:117 | "Fraternity of Hunters"
   if: 'society == "restext://Faction_FraternityOfHunters_Plain"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:20196
@@ -104,17 +104,17 @@ nodes:
         snapshot: true
         content:
         - type: 'text'
-          # ../en-US.restext:309 | "The Late Years of the Thi..."
+          # ../en-US.restext:303 | "The Late Years of the Thi..."
           value: 'restext://Round_GenerationIII_LateEnded'
         - type: 'break'
           style: 'paragraph'
         - type: 'text'
-          # ../en-US.restext:307 | "Perform any End of Round ..."
+          # ../en-US.restext:301 | "Perform any End of Round ..."
           value: 'restext://Round_EndOfRoundActions_Rule'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:20277
     - type: 'section'
-      # ../en-US.restext:178 | "**Safe and Protected**"
+      # ../en-US.restext:172 | "**Safe and Protected**"
       title: 'restext://Heading_SafeAndProtected'
       style: 'hub-card'
       content:
@@ -124,13 +124,13 @@ nodes:
         value: 'restext://GloomyGothic3_007'
     # ../.source/TheCostofDisease_Eng_v10.cs:20290
     - type: 'section'
-      # ../en-US.restext:162 | "**The Hunter's Rest**"
+      # ../en-US.restext:156 | "**The Hunter's Rest**"
       title: 'restext://Heading_HuntersRest'
       style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:20298
       - type: 'text'
-        # ../en-US.restext:112 | "You may only place a Serv..."
+        # ../en-US.restext:106 | "You may only place a Serv..."
         value: 'restext://Directive_ServantOnlyBuilding_Rule'
     # ../.source/TheCostofDisease_Eng_v10.cs:20302
     - type: 'break'
@@ -167,12 +167,12 @@ nodes:
         snapshot: true
         content:
         - type: 'text'
-          # ../en-US.restext:309 | "The Late Years of the Thi..."
+          # ../en-US.restext:303 | "The Late Years of the Thi..."
           value: 'restext://Round_GenerationIII_LateEnded'
         - type: 'break'
           style: 'paragraph'
         - type: 'text'
-          # ../en-US.restext:307 | "Perform any End of Round ..."
+          # ../en-US.restext:301 | "Perform any End of Round ..."
           value: 'restext://Round_EndOfRoundActions_Rule'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:20334
@@ -228,7 +228,7 @@ nodes:
           value: 'restext://GloomyGothic3_005'
     # ../.source/TheCostofDisease_Eng_v10.cs:20387
     - type: 'section'
-      # ../en-US.restext:179 | "**School for Hybridized I..."
+      # ../en-US.restext:173 | "**School for Hybridized I..."
       title: 'restext://Heading_SchoolForHybridizedIndividuals'
       style: 'hub-card'
       content:
@@ -241,13 +241,13 @@ nodes:
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:20405
     - type: 'section'
-      # ../en-US.restext:160 | "**A Gift of Spawning**"
+      # ../en-US.restext:154 | "**A Gift of Spawning**"
       title: 'restext://Heading_GiftOfSpawning'
       style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:20413
       - type: 'text'
-        # ../en-US.restext:305 | "At the end of the Generat..."
+        # ../en-US.restext:299 | "At the end of the Generat..."
         value: 'restext://Reward_MostOccultExperiments_SpawningPods'
       # ../.source/TheCostofDisease_Eng_v10.cs:20426
       - type: 'assign'
@@ -271,23 +271,23 @@ nodes:
         snapshot: true
         content:
         - type: 'text'
-          # ../en-US.restext:309 | "The Late Years of the Thi..."
+          # ../en-US.restext:303 | "The Late Years of the Thi..."
           value: 'restext://Round_GenerationIII_LateEnded'
         - type: 'break'
           style: 'paragraph'
         - type: 'text'
-          # ../en-US.restext:307 | "Perform any End of Round ..."
+          # ../en-US.restext:301 | "Perform any End of Round ..."
           value: 'restext://Round_EndOfRoundActions_Rule'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:20437
     - type: 'section'
-      # ../en-US.restext:168 | "{icon:storybook} **Master..."
+      # ../en-US.restext:162 | "{icon:storybook} **Master..."
       title: 'restext://Heading_MasterworkCompletion'
       style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:20446
       - type: 'text'
-        # ../en-US.restext:220 | "When a player completes t..."
+        # ../en-US.restext:214 | "When a player completes t..."
         value: 'restext://Masterwork_CompleteLead'
       # ../.source/TheCostofDisease_Eng_v10.cs:20447
       - type: 'link'
@@ -300,26 +300,26 @@ nodes:
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:20454
     - type: 'section'
-      # ../en-US.restext:171 | "**MONSTER SPAWN**"
+      # ../en-US.restext:165 | "**MONSTER SPAWN**"
       title: 'restext://Heading_MonsterSpawn'
       style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:20462
       - type: 'text'
-        # ../en-US.restext:278 | "The Town Hall of the vill..."
+        # ../en-US.restext:272 | "The Town Hall of the vill..."
         value: 'restext://Narrative_MonsterSpawn_Flavor'
     # ../.source/TheCostofDisease_Eng_v10.cs:20470
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:20474
     - type: 'section'
-      # ../en-US.restext:160 | "**A Gift of Spawning**"
+      # ../en-US.restext:154 | "**A Gift of Spawning**"
       title: 'restext://Heading_GiftOfSpawning'
       style: 'hub-card'
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:20482
       - type: 'text'
-        # ../en-US.restext:305 | "At the end of the Generat..."
+        # ../en-US.restext:299 | "At the end of the Generat..."
         value: 'restext://Reward_MostOccultExperiments_SpawningPods'
       # ../.source/TheCostofDisease_Eng_v10.cs:20495
       - type: 'assign'
@@ -343,10 +343,10 @@ nodes:
         snapshot: true
         content:
         - type: 'text'
-          # ../en-US.restext:309 | "The Late Years of the Thi..."
+          # ../en-US.restext:303 | "The Late Years of the Thi..."
           value: 'restext://Round_GenerationIII_LateEnded'
         - type: 'break'
           style: 'paragraph'
         - type: 'text'
-          # ../en-US.restext:307 | "Perform any End of Round ..."
+          # ../en-US.restext:301 | "Perform any End of Round ..."
           value: 'restext://Round_EndOfRoundActions_Rule'

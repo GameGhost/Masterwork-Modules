@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Evilsforgive'
-# ../en-US.restext:127 | Faction_OrderOfStHubertus_Plain | "Order of St. Hubertus"
+# ../en-US.restext:121 | Faction_OrderOfStHubertus_Plain | "Order of St. Hubertus"
 # ../en-US.restext:2022 | Evilsforgive_001 | "Forgiveness"
 # ../en-US.restext:2023 | Evilsforgive_002 | "Still Wary"
 title: '{society == "restext://Faction_OrderOfStHubertus_Plain" ? "restext://Evilsforgive_001" : "restext://Evilsforgive_002"}'
@@ -10,7 +10,7 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:25445
 - type: 'conditional'
-  # ../en-US.restext:127 | "Order of St. Hubertus"
+  # ../en-US.restext:121 | "Order of St. Hubertus"
   if: 'society == "restext://Faction_OrderOfStHubertus_Plain"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:25452
@@ -58,7 +58,7 @@ nodes:
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:25522
     - type: 'text'
-      # ../en-US.restext:149 | "**Choose:**"
+      # ../en-US.restext:143 | "**Choose:**"
       value: 'restext://Heading_ChooseColon'
     # ../.source/TheCostofDisease_Eng_v10.cs:25524
     - type: 'break'
@@ -77,7 +77,7 @@ nodes:
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:25481
     - type: 'text'
-      # ../en-US.restext:252 | "In the evenings, the Frat..."
+      # ../en-US.restext:246 | "In the evenings, the Frat..."
       value: 'restext://Narrative_FraternityRevelry'
     # ../.source/TheCostofDisease_Eng_v10.cs:25482
     - type: 'break'
@@ -106,7 +106,7 @@ nodes:
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:25559
       - type: 'conditional'
-        # ../en-US.restext:129 | "wolves"
+        # ../en-US.restext:123 | "wolves"
         if: 'allyA == "restext://Faction_Wolves_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25561
@@ -117,7 +117,7 @@ nodes:
         - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:25571
       - type: 'conditional'
-        # ../en-US.restext:129 | "wolves"
+        # ../en-US.restext:123 | "wolves"
         if: 'allyB == "restext://Faction_Wolves_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25573
@@ -128,7 +128,7 @@ nodes:
         - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:25583
       - type: 'conditional'
-        # ../en-US.restext:129 | "wolves"
+        # ../en-US.restext:123 | "wolves"
         if: 'allyC == "restext://Faction_Wolves_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25585
@@ -139,7 +139,7 @@ nodes:
         - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:25595
       - type: 'conditional'
-        # ../en-US.restext:129 | "wolves"
+        # ../en-US.restext:123 | "wolves"
         if: 'allyD == "restext://Faction_Wolves_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25597
@@ -150,7 +150,7 @@ nodes:
         - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:25607
       - type: 'conditional'
-        # ../en-US.restext:129 | "wolves"
+        # ../en-US.restext:123 | "wolves"
         if: 'allyE == "restext://Faction_Wolves_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25609
@@ -159,11 +159,11 @@ nodes:
           value: 'restext://Evilsforgive_008'
       # ../.source/TheCostofDisease_Eng_v10.cs:25618
       - type: 'conditional'
-        # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-        # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-        # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-        # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-        # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
         if: '!(allyA == "restext://Faction_Wolves_Lower" && allyB == "restext://Faction_Wolves_Lower" && allyC == "restext://Faction_Wolves_Lower" && allyD == "restext://Faction_Wolves_Lower" && allyE == "restext://Faction_Wolves_Lower")'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25620

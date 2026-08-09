@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Peace2'
-# ../en-US.restext:285 | "World Conquest"
+# ../en-US.restext:284 | "World Conquest"
 title: 'restext://Title_WorldConquest'
-# ../en-US.restext:265 | "Middle Years"
+# ../en-US.restext:262 | "Middle Years"
 subtitle: 'restext://Title_MiddleYears'
 tags:
 - 'HUB'
@@ -35,7 +35,7 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:6137
     - type: 'text'
-      # ../en-US.restext:73 | "Each player collects "
+      # ../en-US.restext:69 | "Each player collects "
       value: 'restext://Directive_EachPlayerCollects_Fragment'
     # ../.source/ATimeofWar_Eng_v8.cs:6140
     - type: 'conditional'
@@ -43,12 +43,12 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:6142
       - type: 'text'
-        # ../en-US.restext:239 | "**1 {icon:s3_weapontoken}..."
+        # ../en-US.restext:235 | "**1 {icon:s3_weapontoken}..."
         value: 'restext://Score_OneWeaponToken'
       else:
       # ../.source/ATimeofWar_Eng_v8.cs:6148
       - type: 'text'
-        # ../en-US.restext:240 | "**2 {icon:s3_weapontoken}..."
+        # ../en-US.restext:236 | "**2 {icon:s3_weapontoken}..."
         value: 'restext://Score_TwoWeaponTokens'
     # ../.source/ATimeofWar_Eng_v8.cs:6153
     - type: 'conditional'
@@ -56,24 +56,24 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:6155
       - type: 'text'
-        # ../en-US.restext:74 | "Each player **pays $1** i..."
+        # ../en-US.restext:70 | "Each player **pays $1** i..."
         value: 'restext://Directive_EachPlayerPays1EstateTax'
 # ../.source/ATimeofWar_Eng_v8.cs:6169
 - type: 'section'
-  # ../en-US.restext:165 | "**Separatist Allegiance**"
+  # ../en-US.restext:161 | "**Separatist Allegiance**"
   title: 'restext://Heading_SeparatistAllegiance'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:6177
   - type: 'text'
-    # ../en-US.restext:91 | "If a player does **NOT** ..."
+    # ../en-US.restext:87 | "If a player does **NOT** ..."
     value: 'restext://Directive_NoSeparatistsFlag_OnceAction'
 # ../.source/ATimeofWar_Eng_v8.cs:6197
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:6201
 - type: 'section'
-  # ../en-US.restext:179 | "{icon:storybooktoken} **W..."
+  # ../en-US.restext:175 | "{icon:storybooktoken} **W..."
   title: 'restext://Heading_StorybookToken_WarOnTheWorld'
   style: 'hub-card'
   content:
@@ -87,7 +87,7 @@ nodes:
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:6213
   - type: 'text'
-    # ../en-US.restext:76 | "The Empire has decided to..."
+    # ../en-US.restext:72 | "The Empire has decided to..."
     value: 'restext://Directive_EmpireAdvancedWeaponryDeck'
 # ../.source/ATimeofWar_Eng_v8.cs:6218
 - type: 'break'
@@ -101,13 +101,13 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:6226
   - type: 'section'
-    # ../en-US.restext:142 | "**Everything is a Weapon**"
+    # ../en-US.restext:138 | "**Everything is a Weapon**"
     title: 'restext://Heading_EverythingIsAWeapon'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:6234
     - type: 'text'
-      # ../en-US.restext:110 | "When performing an Experi..."
+      # ../en-US.restext:106 | "When performing an Experi..."
       value: 'restext://Directive_SubstituteWeaponTokenForIngredient'
   # ../.source/ATimeofWar_Eng_v8.cs:6242
   - type: 'break'
@@ -131,10 +131,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:235 | "The Middle Years of the T..."
+      # ../en-US.restext:231 | "The Middle Years of the T..."
       value: 'restext://Round_GenerationIII_MiddleEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:237 | "Then, perform all Start o..."
+      # ../en-US.restext:233 | "Then, perform all Start o..."
       value: 'restext://Round_StartLateYears_Rule'

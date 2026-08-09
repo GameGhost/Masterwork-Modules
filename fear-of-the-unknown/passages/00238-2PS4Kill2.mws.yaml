@@ -2,27 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: '2PS4Kill2'
-# ../en-US.restext:158 | "BID"
+# ../en-US.restext:148 | "BID"
 title: 'restext://Heading_BidCaps'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:27261
 - type: 'text'
-  # ../en-US.restext:316 | "Special Event"
+  # ../en-US.restext:306 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27262
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27263
 - type: 'text'
-  # ../en-US.restext:82 | "Both players take all the..."
+  # ../en-US.restext:72 | "Both players take all the..."
   value: 'restext://Directive_BothPlayersBidMoney'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27265
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27267
 - type: 'text'
-  # ../en-US.restext:133 | "Once both players are rea..."
+  # ../en-US.restext:123 | "Once both players are rea..."
   value: 'restext://Directive_RevealAmountBidSimultaneously_Singular'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27268
 - type: 'break'
@@ -43,21 +43,21 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27287
 - type: 'text'
-  # ../en-US.restext:293 | "**Gain 3VP**."
+  # ../en-US.restext:283 | "**Gain 3VP**."
   value: 'restext://Reward_Gain3VP'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27290
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27294
 - type: 'text'
-  # ../en-US.restext:136 | "_(Ties are broken by the ..."
+  # ../en-US.restext:126 | "_(Ties are broken by the ..."
   value: 'restext://Directive_TieBreak_LastInEarlyYears'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27297
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27299
 - type: 'text'
-  # ../en-US.restext:91 | "Only the player who wins ..."
+  # ../en-US.restext:81 | "Only the player who wins ..."
   value: 'restext://Directive_ElectionWinnerPaysBid'
 # ../.source/FearoftheUnknown_Eng_v15.cs:27301
 - type: 'break'
@@ -85,22 +85,22 @@ nodes:
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:74 | "3"
+      # ../en-US.restext:64 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:75 | "2"
+      # ../en-US.restext:65 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:72 | "1"
+      # ../en-US.restext:62 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:73 | "REVEAL"
+      # ../en-US.restext:63 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:73 | "REVEAL"
+    # ../en-US.restext:63 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: '2PS4Kill2b' # ./00343-2PS4Kill2b.mws.yaml
     snapshot: false

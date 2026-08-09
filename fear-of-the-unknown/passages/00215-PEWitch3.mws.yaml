@@ -2,11 +2,11 @@
 ---
 format: 'mws/0.4'
 passage_id: 'PEWitch3'
-# ../en-US.restext:61 | Common_002 | "Isolation"
+# ../en-US.restext:336 | Title_Isolation | "Isolation"
 # ../en-US.restext:1850 | PEWitch3_002 | "Exploration"
 # ../en-US.restext:1851 | PEWitch3_003 | "Agitation"
 # ../en-US.restext:1852 | PEWitch3_004 | "A Calmer Mindset"
-title: '{path4 == "PEIsolation" ? "restext://Common_002" : path4 == "PETension" ? "restext://PEWitch3_002" : path4 == "PEPrivatized" ? "restext://PEWitch3_003" : "restext://PEWitch3_004"}'
+title: '{path4 == "PEIsolation" ? "restext://Title_Isolation" : path4 == "PETension" ? "restext://PEWitch3_002" : path4 == "PEPrivatized" ? "restext://PEWitch3_003" : "restext://PEWitch3_004"}'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:25075

@@ -15,14 +15,14 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:29759
   - type: 'text'
-    # ../en-US.restext:91 | "Any player that donated a..."
+    # ../en-US.restext:85 | "Any player that donated a..."
     value: 'restext://Directive_DonatedAExperiment_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:29766
   - type: 'let'
     var: '_rnd_TieredRewards2_0'
     # ../en-US.restext:363 | VP_Gain1 | "Gain 1VP."
-    # ../en-US.restext:298 | Resource_GainIngredientOfChoice | "Gain an ingredient of you..."
-    # ../en-US.restext:306 | Reward_NoBonus | "Receives no bonus."
+    # ../en-US.restext:292 | Resource_GainIngredientOfChoice | "Gain an ingredient of you..."
+    # ../en-US.restext:300 | Reward_NoBonus | "Receives no bonus."
     # ../en-US.restext:370 | VP_Lose1_OrderUnpleased | "Loses 1VP. The Order is u..."
     expr: '["restext://VP_Gain1", "restext://Resource_GainIngredientOfChoice", "restext://Reward_NoBonus", "restext://VP_Lose1_OrderUnpleased"].shuffled("TieredRewards2_0")[0]'
   # ../.source/TheCostofDisease_Eng_v10.cs:29765
@@ -37,13 +37,13 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:29769
   - type: 'text'
-    # ../en-US.restext:92 | "Any player that donated a..."
+    # ../en-US.restext:86 | "Any player that donated a..."
     value: 'restext://Directive_DonatedBExperiment_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:29776
   - type: 'let'
     var: '_rnd_TieredRewards2_1'
-    # ../en-US.restext:299 | Resource_GainKnowledgeOfChoice | "Gain a Knowledge of your ..."
-    # ../en-US.restext:294 | Resource_Gain2Dollars | "Gain $2."
+    # ../en-US.restext:293 | Resource_GainKnowledgeOfChoice | "Gain a Knowledge of your ..."
+    # ../en-US.restext:288 | Resource_Gain2Dollars | "Gain $2."
     # ../en-US.restext:365 | VP_Gain2 | "Gain 2VP."
     expr: '["restext://Resource_GainKnowledgeOfChoice", "restext://Resource_Gain2Dollars", "restext://VP_Gain2"].shuffled("TieredRewards2_1")[0]'
   # ../.source/TheCostofDisease_Eng_v10.cs:29775
@@ -58,13 +58,13 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:29779
   - type: 'text'
-    # ../en-US.restext:93 | "Any player that donated a..."
+    # ../en-US.restext:87 | "Any player that donated a..."
     value: 'restext://Directive_DonatedCExperiment_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:29786
   - type: 'let'
     var: '_rnd_TieredRewards2_2'
     # ../en-US.restext:368 | VP_Gain4 | "Gain 4VP."
-    # ../en-US.restext:297 | Resource_Gain4Dollars | "Gain $4."
+    # ../en-US.restext:291 | Resource_Gain4Dollars | "Gain $4."
     expr: '["restext://VP_Gain4", "restext://Resource_Gain4Dollars"].shuffled("TieredRewards2_2")[0]'
   # ../.source/TheCostofDisease_Eng_v10.cs:29785
   - type: 'break'

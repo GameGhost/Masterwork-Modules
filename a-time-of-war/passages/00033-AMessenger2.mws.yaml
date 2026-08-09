@@ -6,12 +6,12 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:4697
 - type: 'conditional'
-  # ../en-US.restext:284 | "Unified Monarchists"
+  # ../en-US.restext:283 | "Unified Monarchists"
   if: 'warwinner == "restext://Title_UnifiedMonarchists"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:4702
   - type: 'text'
-    # ../en-US.restext:242 | "**Carefully give this Sto..."
+    # ../en-US.restext:238 | "**Carefully give this Sto..."
     value: 'restext://Storybook_GiveDeviceToFigureHolder'
   # ../.source/ATimeofWar_Eng_v8.cs:4706
   - type: 'break'
@@ -40,7 +40,7 @@ nodes:
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:4741
     - type: 'text'
-      # ../en-US.restext:191 | "\"Which flag do you fly?\..."
+      # ../en-US.restext:187 | "\"Which flag do you fly?\..."
       value: 'restext://Heading_WhichFlagDoYouFly'
     # ../.source/ATimeofWar_Eng_v8.cs:4746
     - type: 'break'

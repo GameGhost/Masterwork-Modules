@@ -8,12 +8,12 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:19499
 - type: 'conditional'
-  # ../en-US.restext:123 | "Fraternity of Hunters"
+  # ../en-US.restext:117 | "Fraternity of Hunters"
   if: 'society == "restext://Faction_FraternityOfHunters_Plain"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:19501
   - type: 'text'
-    # ../en-US.restext:252 | "In the evenings, the Frat..."
+    # ../en-US.restext:246 | "In the evenings, the Frat..."
     value: 'restext://Narrative_FraternityRevelry'
   # ../.source/TheCostofDisease_Eng_v10.cs:19502
   - type: 'break'
@@ -39,25 +39,25 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:19521
 - type: 'conditional'
-  # ../en-US.restext:123 | "Fraternity of Hunters"
+  # ../en-US.restext:117 | "Fraternity of Hunters"
   if: 'society == "restext://Faction_FraternityOfHunters_Plain"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:19524
   - type: 'conditional'
-    # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-    # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-    # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-    # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-    # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-    # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-    # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-    # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-    # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-    # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-    # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-    # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-    # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-    # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
+    # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+    # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+    # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+    # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+    # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+    # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+    # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+    # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+    # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+    # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+    # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+    # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+    # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+    # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
     if: "players > 4 ? allyA == \"restext://Faction_Hunters_Lower\" && allyB == \"restext://Faction_Hunters_Lower\" && allyC == \"restext://Faction_Hunters_Lower\" && allyD == \"restext://Faction_Hunters_Lower\" && allyE == \"restext://Faction_Hunters_Lower\" :\r\n                    players > 3 ? allyA == \"restext://Faction_Hunters_Lower\" && allyB == \"restext://Faction_Hunters_Lower\" && allyC == \"restext://Faction_Hunters_Lower\" && allyD == \"restext://Faction_Hunters_Lower\" :\r\n                    players > 2 ? allyA == \"restext://Faction_Hunters_Lower\" && allyB == \"restext://Faction_Hunters_Lower\" && allyC == \"restext://Faction_Hunters_Lower\" :\r\n                    allyA == \"restext://Faction_Hunters_Lower\" && allyB == \"restext://Faction_Hunters_Lower\""
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:19529
@@ -84,7 +84,7 @@ nodes:
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:19569
       - type: 'conditional'
-        # ../en-US.restext:124 | "hunters"
+        # ../en-US.restext:118 | "hunters"
         if: 'allyA != "restext://Faction_Hunters_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:19571
@@ -95,7 +95,7 @@ nodes:
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:19577
       - type: 'conditional'
-        # ../en-US.restext:124 | "hunters"
+        # ../en-US.restext:118 | "hunters"
         if: 'allyB != "restext://Faction_Hunters_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:19579
@@ -110,7 +110,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:19587
         - type: 'conditional'
-          # ../en-US.restext:124 | "hunters"
+          # ../en-US.restext:118 | "hunters"
           if: 'allyC != "restext://Faction_Hunters_Lower"'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:19589
@@ -125,7 +125,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:19598
         - type: 'conditional'
-          # ../en-US.restext:124 | "hunters"
+          # ../en-US.restext:118 | "hunters"
           if: 'allyD != "restext://Faction_Hunters_Lower"'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:19600
@@ -140,7 +140,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:19609
         - type: 'conditional'
-          # ../en-US.restext:124 | "hunters"
+          # ../en-US.restext:118 | "hunters"
           if: 'allyE != "restext://Faction_Hunters_Lower"'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:19611
@@ -151,20 +151,20 @@ nodes:
         - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:19618
       - type: 'conditional'
-        # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-        # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-        # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-        # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-        # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-        # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-        # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-        # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-        # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-        # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-        # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-        # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-        # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
-        # ../en-US.restext:124 | Faction_Hunters_Lower | "hunters"
+        # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+        # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+        # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+        # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+        # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+        # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+        # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+        # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+        # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+        # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+        # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+        # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+        # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+        # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
         if: "players > 4 ? allyA == \"restext://Faction_Hunters_Lower\" && allyB == \"restext://Faction_Hunters_Lower\" && allyC == \"restext://Faction_Hunters_Lower\" && allyD == \"restext://Faction_Hunters_Lower\" && allyE == \"restext://Faction_Hunters_Lower\" :\r\n                    players > 3 ? allyA == \"restext://Faction_Hunters_Lower\" && allyB == \"restext://Faction_Hunters_Lower\" && allyC == \"restext://Faction_Hunters_Lower\" && allyD == \"restext://Faction_Hunters_Lower\" :\r\n                    players > 2 ? allyA == \"restext://Faction_Hunters_Lower\" && allyB == \"restext://Faction_Hunters_Lower\" && allyC == \"restext://Faction_Hunters_Lower\" :\r\n                    allyA == \"restext://Faction_Hunters_Lower\" && allyB == \"restext://Faction_Hunters_Lower\""
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:19623
@@ -174,20 +174,20 @@ nodes:
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:19541
   - type: 'conditional'
-    # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-    # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-    # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-    # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-    # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-    # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-    # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-    # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-    # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-    # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-    # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-    # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-    # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-    # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+    # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
     if: "players > 4 ? allyA == \"restext://Faction_Wolves_Lower\" && allyB == \"restext://Faction_Wolves_Lower\" && allyC == \"restext://Faction_Wolves_Lower\" && allyD == \"restext://Faction_Wolves_Lower\" && allyE == \"restext://Faction_Wolves_Lower\" :\r\n                    players > 3 ? allyA == \"restext://Faction_Wolves_Lower\" && allyB == \"restext://Faction_Wolves_Lower\" && allyC == \"restext://Faction_Wolves_Lower\" && allyD == \"restext://Faction_Wolves_Lower\" :\r\n                    players > 2 ? allyA == \"restext://Faction_Wolves_Lower\" && allyB == \"restext://Faction_Wolves_Lower\" && allyC == \"restext://Faction_Wolves_Lower\" :\r\n                    allyA == \"restext://Faction_Wolves_Lower\" && allyB == \"restext://Faction_Wolves_Lower\""
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:19546
@@ -214,7 +214,7 @@ nodes:
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:19652
       - type: 'conditional'
-        # ../en-US.restext:129 | "wolves"
+        # ../en-US.restext:123 | "wolves"
         if: 'allyA != "restext://Faction_Wolves_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:19654
@@ -225,7 +225,7 @@ nodes:
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:19660
       - type: 'conditional'
-        # ../en-US.restext:129 | "wolves"
+        # ../en-US.restext:123 | "wolves"
         if: 'allyB != "restext://Faction_Wolves_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:19662
@@ -240,7 +240,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:19670
         - type: 'conditional'
-          # ../en-US.restext:129 | "wolves"
+          # ../en-US.restext:123 | "wolves"
           if: 'allyC != "restext://Faction_Wolves_Lower"'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:19672
@@ -255,7 +255,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:19681
         - type: 'conditional'
-          # ../en-US.restext:129 | "wolves"
+          # ../en-US.restext:123 | "wolves"
           if: 'allyD != "restext://Faction_Wolves_Lower"'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:19683
@@ -270,7 +270,7 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:19692
         - type: 'conditional'
-          # ../en-US.restext:129 | "wolves"
+          # ../en-US.restext:123 | "wolves"
           if: 'allyE != "restext://Faction_Wolves_Lower"'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:19694
@@ -281,20 +281,20 @@ nodes:
         - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:19701
       - type: 'conditional'
-        # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-        # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-        # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-        # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-        # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-        # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-        # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-        # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-        # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-        # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-        # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-        # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-        # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
-        # ../en-US.restext:129 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
         if: "players > 4 ? allyA == \"restext://Faction_Wolves_Lower\" && allyB == \"restext://Faction_Wolves_Lower\" && allyC == \"restext://Faction_Wolves_Lower\" && allyD == \"restext://Faction_Wolves_Lower\" && allyE == \"restext://Faction_Wolves_Lower\" :\r\n                    players > 3 ? allyA == \"restext://Faction_Wolves_Lower\" && allyB == \"restext://Faction_Wolves_Lower\" && allyC == \"restext://Faction_Wolves_Lower\" && allyD == \"restext://Faction_Wolves_Lower\" :\r\n                    players > 2 ? allyA == \"restext://Faction_Wolves_Lower\" && allyB == \"restext://Faction_Wolves_Lower\" && allyC == \"restext://Faction_Wolves_Lower\" :\r\n                    allyA == \"restext://Faction_Wolves_Lower\" && allyB == \"restext://Faction_Wolves_Lower\""
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:19706

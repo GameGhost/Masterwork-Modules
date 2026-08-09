@@ -42,14 +42,14 @@ nodes:
 - type: 'switch'
   on: 'sci3'
   cases:
-  # ../en-US.restext:131 | "Biology"
+  # ../en-US.restext:125 | "Biology"
   - match: 'restext://Focus_Biology'
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:27459
     - type: 'text'
       # ../en-US.restext:2180 | "biologists"
       value: 'restext://SymposiumEvent2_004'
-  # ../en-US.restext:134 | "Chemistry"
+  # ../en-US.restext:128 | "Chemistry"
   - match: 'restext://Focus_Chemistry'
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:27463

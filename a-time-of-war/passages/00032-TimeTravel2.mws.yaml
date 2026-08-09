@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TimeTravel2'
-# ../en-US.restext:281 | "Tides of War 2"
+# ../en-US.restext:280 | "Tides of War 2"
 title: 'restext://Title_TidesOfWar2'
-# ../en-US.restext:265 | "Middle Years"
+# ../en-US.restext:262 | "Middle Years"
 subtitle: 'restext://Title_MiddleYears'
 tags:
 - 'HUB'
@@ -20,20 +20,20 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:4579
   - type: 'section'
-    # ../en-US.restext:168 | "{icon:storybooktoken} **R..."
+    # ../en-US.restext:164 | "{icon:storybooktoken} **R..."
     title: 'restext://Heading_StorybookToken_RepairTimeMachine'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:4588
     - type: 'text'
-      # ../en-US.restext:95 | "When taking the **Perform..."
+      # ../en-US.restext:91 | "When taking the **Perform..."
       value: 'restext://Directive_PerformExperimentTimeMachineRepairs'
     # ../.source/ATimeofWar_Eng_v8.cs:4599
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:4601
     - type: 'text'
-      # ../en-US.restext:61 | "Once all **three** Repair..."
+      # ../en-US.restext:57 | "Once all **three** Repair..."
       value: 'restext://Directive_AllThreeRepairsCompleted_Fragment'
     # ../.source/ATimeofWar_Eng_v8.cs:4607
     - type: 'link'
@@ -46,13 +46,13 @@ nodes:
     style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:4614
 - type: 'section'
-  # ../en-US.restext:166 | "{icon:storybooktoken} **P..."
+  # ../en-US.restext:162 | "{icon:storybooktoken} **P..."
   title: 'restext://Heading_StorybookToken_ParadoxExplanation'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:4624
   - type: 'text'
-    # ../en-US.restext:94 | "For more detailed rules o..."
+    # ../en-US.restext:90 | "For more detailed rules o..."
     value: 'restext://Directive_ParadoxTokenRulesExplanation_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:4628
   - type: 'link'
@@ -69,13 +69,13 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:4636
   - type: 'section'
-    # ../en-US.restext:167 | "{icon:storybooktoken} **P..."
+    # ../en-US.restext:163 | "{icon:storybooktoken} **P..."
     title: 'restext://Heading_StorybookToken_ParadoxicalMendingReward'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:4646
     - type: 'text'
-      # ../en-US.restext:81 | "Fixing the timestream has..."
+      # ../en-US.restext:77 | "Fixing the timestream has..."
       value: 'restext://Directive_FixTimestreamZeroParadox_Fragment'
     # ../.source/ATimeofWar_Eng_v8.cs:4654
     - type: 'link'
@@ -87,7 +87,7 @@ nodes:
     - type: 'break'
     # ../.source/ATimeofWar_Eng_v8.cs:4658
     - type: 'text'
-      # ../en-US.restext:102 | "_You must remove at least..."
+      # ../en-US.restext:98 | "_You must remove at least..."
       value: 'restext://Directive_RemoveParadoxTokenForBonus'
   # ../.source/ATimeofWar_Eng_v8.cs:4663
   - type: 'break'
@@ -116,5 +116,5 @@ nodes:
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:237 | "Then, perform all Start o..."
+      # ../en-US.restext:233 | "Then, perform all Start o..."
       value: 'restext://Round_StartLateYears_Rule'

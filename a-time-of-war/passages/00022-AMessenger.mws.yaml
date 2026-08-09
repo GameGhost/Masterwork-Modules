@@ -12,7 +12,7 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:3539
   - type: 'text'
-    # ../en-US.restext:59 | "**All players may again v..."
+    # ../en-US.restext:55 | "**All players may again v..."
     value: 'restext://Directive_AllPlayersMayViewStorybookAgain'
   # ../.source/ATimeofWar_Eng_v8.cs:3541
   - type: 'break'
@@ -33,14 +33,14 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3561
   - type: 'text'
-    # ../en-US.restext:191 | "\"Which flag do you fly?\..."
+    # ../en-US.restext:187 | "\"Which flag do you fly?\..."
     value: 'restext://Heading_WhichFlagDoYouFly'
   # ../.source/ATimeofWar_Eng_v8.cs:3566
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:3568
   - type: 'conditional'
-    # ../en-US.restext:274 | "Separatists"
+    # ../en-US.restext:271 | "Separatists"
     if: 'warwinner == "restext://Title_Separatists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:3570
@@ -117,7 +117,7 @@ nodes:
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:3606
   - type: 'conditional'
-    # ../en-US.restext:284 | "Unified Monarchists"
+    # ../en-US.restext:283 | "Unified Monarchists"
     if: 'warwinner == "restext://Title_UnifiedMonarchists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:3607

@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'LiberalIntro'
-# ../en-US.restext:328 | "Acceptance"
+# ../en-US.restext:320 | "Acceptance"
 title: 'restext://Title_Acceptance'
-# ../en-US.restext:339 | "GENERATION III"
+# ../en-US.restext:334 | "GENERATION III"
 subtitle: 'restext://Title_GenerationIII'
 tags:
 - 'INTRO'
@@ -44,7 +44,7 @@ nodes:
   expr: 'randomplayer'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4302
 - type: 'text'
-  # ../en-US.restext:184 | "**Letter from** **{random..."
+  # ../en-US.restext:174 | "**Letter from** **{random..."
   value: 'restext://Heading_LetterFromRandomname_9Feb1892'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4329
 - type: 'break'
@@ -112,5 +112,5 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:4355
   - type: 'text'
-    # ../en-US.restext:71 | "v1.0"
+    # ../en-US.restext:61 | "v1.0"
     value: 'restext://Common_VersionOnePointZero'

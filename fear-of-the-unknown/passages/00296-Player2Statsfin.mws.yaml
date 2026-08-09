@@ -3,8 +3,8 @@
 format: 'mws/0.4'
 passage_id: 'Player2Statsfin'
 # ../en-US.restext:2444 | Player2Statsfin_001 | "{_rpl_Player2Statsfin_0} ..."
-# ../en-US.restext:65 | Common_006 | "Complete"
-title: '{warriorB ? "restext://Player2Statsfin_001" : "restext://Common_006"}'
+# ../en-US.restext:328 | Title_Complete | "Complete"
+title: '{warriorB ? "restext://Player2Statsfin_001" : "restext://Title_Complete"}'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:32583
@@ -15,7 +15,7 @@ nodes:
     layout: 'prompt'
     content:
     - type: 'text'
-      # ../en-US.restext:99 | "Please enter the epic nam..."
+      # ../en-US.restext:89 | "Please enter the epic nam..."
       value: 'restext://Directive_EnterWarriorName'
     - type: 'input'
       label: ''
@@ -57,14 +57,14 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32628
 - type: 'text'
-  # ../en-US.restext:202 | "**You are ready for a tri..."
+  # ../en-US.restext:192 | "**You are ready for a tri..."
   value: 'restext://Heading_ReadyForTrialByCombat'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32630
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32632
 - type: 'text'
-  # ../en-US.restext:105 | "If this is correct, please "
+  # ../en-US.restext:95 | "If this is correct, please "
   value: 'restext://Directive_IfCorrectPlease_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32633
 - type: 'link'
@@ -77,7 +77,7 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32637
 - type: 'text'
-  # ../en-US.restext:106 | "If this is in error, please "
+  # ../en-US.restext:96 | "If this is in error, please "
   value: 'restext://Directive_IfErrorPlease_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:32638
 - type: 'link'

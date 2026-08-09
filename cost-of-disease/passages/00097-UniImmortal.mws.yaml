@@ -2,8 +2,8 @@
 ---
 format: 'mws/0.4'
 passage_id: 'UniImmortal'
-# ../en-US.restext:72 | "Immortality"
-title: 'restext://Common_005'
+# ../en-US.restext:332 | "Immortality"
+title: 'restext://Title_Immortality'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:10733
@@ -16,14 +16,14 @@ nodes:
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:10745
   - type: 'text'
-    # ../en-US.restext:255 | "Claiming an inheritance w..."
+    # ../en-US.restext:249 | "Claiming an inheritance w..."
     value: 'restext://Narrative_ImmortalityInheritance'
   # ../.source/TheCostofDisease_Eng_v10.cs:10746
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:10748
   - type: 'text'
-    # ../en-US.restext:256 | "For those whose parents h..."
+    # ../en-US.restext:250 | "For those whose parents h..."
     value: 'restext://Narrative_ImmortalityNoSecrets'
   # ../.source/TheCostofDisease_Eng_v10.cs:10750
   - type: 'break'
@@ -117,5 +117,5 @@ nodes:
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10809
     - type: 'text'
-      # ../en-US.restext:198 | "Any player who did not re..."
+      # ../en-US.restext:192 | "Any player who did not re..."
       value: 'restext://Immortality_NoCaretakerPenalty_Rule'

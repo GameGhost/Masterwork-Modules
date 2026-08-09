@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Martial2'
-# ../en-US.restext:263 | "Martial Law"
+# ../en-US.restext:260 | "Martial Law"
 title: 'restext://Title_MartialLaw'
-# ../en-US.restext:265 | "Middle Years"
+# ../en-US.restext:262 | "Middle Years"
 subtitle: 'restext://Title_MiddleYears'
 tags:
 - 'HUB'
@@ -40,35 +40,35 @@ nodes:
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:3876
       - type: 'text'
-        # ../en-US.restext:64 | "One of the buildings in t..."
+        # ../en-US.restext:60 | "One of the buildings in t..."
         value: 'restext://Directive_BuildingTargetedTurnToSabpage'
 # ../.source/ATimeofWar_Eng_v8.cs:3891
 - type: 'section'
-  # ../en-US.restext:185 | "**Turn the Tide**"
+  # ../en-US.restext:181 | "**Turn the Tide**"
   title: 'restext://Heading_TurnTheTide'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:3899
   - type: 'text'
-    # ../en-US.restext:118 | "The {warloser} are desper..."
+    # ../en-US.restext:114 | "The {warloser} are desper..."
     value: 'restext://Directive_WarloserDesperateAdvancedWeaponry_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:3908
   - type: 'conditional'
-    # ../en-US.restext:274 | "Separatists"
+    # ../en-US.restext:271 | "Separatists"
     if: 'warloser == "restext://Title_Separatists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:3912
     - type: 'text'
-      # ../en-US.restext:229 | "**gain a Knowledge of you..."
+      # ../en-US.restext:225 | "**gain a Knowledge of you..."
       value: 'restext://Reward_GainKnowledgeChoiceFromSupply'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:3919
     - type: 'text'
-      # ../en-US.restext:228 | "**gain $2 from the supply**"
+      # ../en-US.restext:224 | "**gain $2 from the supply**"
       value: 'restext://Reward_Gain2FromSupply'
   # ../.source/ATimeofWar_Eng_v8.cs:3922
   - type: 'text'
-    # ../en-US.restext:62 | " as a gift from the {warl..."
+    # ../en-US.restext:58 | " as a gift from the {warl..."
     value: 'restext://Directive_AsGiftFromWarloser_Fragment'
 # ../.source/ATimeofWar_Eng_v8.cs:3927
 - type: 'break'
@@ -79,13 +79,13 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:3933
   - type: 'section'
-    # ../en-US.restext:180 | "{icon:storybooktoken} **W..."
+    # ../en-US.restext:176 | "{icon:storybooktoken} **W..."
     title: 'restext://Heading_StorybookToken_WeaponsBonus'
     style: 'hub-card'
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:3943
     - type: 'text'
-      # ../en-US.restext:79 | "The first player to compl..."
+      # ../en-US.restext:75 | "The first player to compl..."
       value: 'restext://Directive_FirstPlayerComplete2AdvancedWeaponry_Fragment'
     # ../.source/ATimeofWar_Eng_v8.cs:3949
     - type: 'link'
@@ -100,17 +100,17 @@ nodes:
 - type: 'switch'
   on: 'warwinner'
   cases:
-  # ../en-US.restext:284 | "Unified Monarchists"
+  # ../en-US.restext:283 | "Unified Monarchists"
   - match: 'restext://Title_UnifiedMonarchists'
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:3956
     - type: 'conditional'
-      # ../en-US.restext:251 | "Barracks"
+      # ../en-US.restext:247 | "Barracks"
       if: 'bldg1 != "restext://Title_Barracks"'
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:3960
       - type: 'section'
-        # ../en-US.restext:150 | "**Military Demands - Barr..."
+        # ../en-US.restext:146 | "**Military Demands - Barr..."
         title: 'restext://Heading_MilitaryDemandsBarracks'
         style: 'hub-card'
         content:
@@ -123,14 +123,14 @@ nodes:
           style: 'paragraph'
         # ../.source/ATimeofWar_Eng_v8.cs:3974
         - type: 'text'
-          # ../en-US.restext:96 | "When placing a piece on t..."
+          # ../en-US.restext:92 | "When placing a piece on t..."
           value: 'restext://Directive_PlaceOnBarracksNoBonus'
-  # ../en-US.restext:274 | "Separatists"
+  # ../en-US.restext:271 | "Separatists"
   - match: 'restext://Title_Separatists'
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:3985
     - type: 'conditional'
-      # ../en-US.restext:251 | "Barracks"
+      # ../en-US.restext:247 | "Barracks"
       if: 'bldg1 != "restext://Title_Barracks"'
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:3989
@@ -141,7 +141,7 @@ nodes:
         content:
         # ../.source/ATimeofWar_Eng_v8.cs:3997
         - type: 'text'
-          # ../en-US.restext:108 | "The Separatists urge citi..."
+          # ../en-US.restext:104 | "The Separatists urge citi..."
           value: 'restext://Directive_SeparatistsUrgeRallyReward'
         # ../.source/ATimeofWar_Eng_v8.cs:4000
         - type: 'break'
@@ -155,13 +155,13 @@ nodes:
       style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:4017
 - type: 'section'
-  # ../en-US.restext:155 | "**Outpost**"
+  # ../en-US.restext:151 | "**Outpost**"
   title: 'restext://Heading_OutpostBold'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:4025
   - type: 'text'
-    # ../en-US.restext:92 | "An Outpost is open in tow..."
+    # ../en-US.restext:88 | "An Outpost is open in tow..."
     value: 'restext://Directive_OutpostOpenForTrading_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:4029
   - type: 'link'
@@ -184,16 +184,16 @@ nodes:
     content:
     - type: 'let'
       var: 'title'
-      # ../en-US.restext:275 | "Special Setup"
+      # ../en-US.restext:273 | "Special Setup"
       expr: '"restext://Title_SpecialSetup"'
     - type: 'let'
       var: 'completedRound'
       expr: '-1'
     - type: 'text'
-      # ../en-US.restext:71 | "Do NOT perform the End of..."
+      # ../en-US.restext:67 | "Do NOT perform the End of..."
       value: 'restext://Directive_DoNotPerformEndOfRoundYet'
     - type: 'conditional'
-      # ../en-US.restext:284 | "Unified Monarchists"
+      # ../en-US.restext:283 | "Unified Monarchists"
       if: 'warwinner == "restext://Title_UnifiedMonarchists"'
       then:
       - type: 'conditional'

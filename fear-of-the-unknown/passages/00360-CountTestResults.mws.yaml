@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'CountTestResults'
-# ../en-US.restext:197 | "Patient {question}"
+# ../en-US.restext:187 | "Patient {question}"
 title: 'restext://Heading_PatientQuestion'
-# ../en-US.restext:157 | "Assessment Results"
+# ../en-US.restext:147 | "Assessment Results"
 subtitle: 'restext://Heading_AssessmentResults'
 tags:
 - 'revised'
@@ -98,7 +98,7 @@ nodes:
         style: 'paragraph'
       # ../.source/FearoftheUnknown_Eng_v15.cs:37836
       - type: 'text'
-        # ../en-US.restext:130 | "Then, return your {icon:c..."
+        # ../en-US.restext:120 | "Then, return your {icon:c..."
         value: 'restext://Directive_ReturnCreepyMarkerStart'
     else:
     # ../.source/FearoftheUnknown_Eng_v15.cs:37851
@@ -110,5 +110,5 @@ nodes:
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:37862
     - type: 'text'
-      # ../en-US.restext:130 | "Then, return your {icon:c..."
+      # ../en-US.restext:120 | "Then, return your {icon:c..."
       value: 'restext://Directive_ReturnCreepyMarkerStart'

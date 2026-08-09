@@ -44,21 +44,21 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:20925
   - type: 'text'
-    # ../en-US.restext:80 | "The first time a player's..."
+    # ../en-US.restext:76 | "The first time a player's..."
     value: 'restext://Directive_FirstTimeReachesFigureToken_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:20934
   - type: 'conditional'
-    # ../en-US.restext:284 | "Unified Monarchists"
+    # ../en-US.restext:283 | "Unified Monarchists"
     if: 'warwinner == "restext://Title_UnifiedMonarchists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:20936
     - type: 'text'
-      # ../en-US.restext:230 | "**they may immediately bu..."
+      # ../en-US.restext:226 | "**they may immediately bu..."
       value: 'restext://Reward_MayBuildVanityEstateUpgrade'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:20940
     - type: 'text'
-      # ../en-US.restext:231 | "**they may immediately ta..."
+      # ../en-US.restext:227 | "**they may immediately ta..."
       value: 'restext://Reward_MayTakePerformExperimentAction'
   # ../.source/ATimeofWar_Eng_v8.cs:20943
   - type: 'text'

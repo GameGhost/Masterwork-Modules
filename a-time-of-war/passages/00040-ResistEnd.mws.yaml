@@ -29,7 +29,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:5435
   - type: 'conditional'
-    # ../en-US.restext:284 | "Unified Monarchists"
+    # ../en-US.restext:283 | "Unified Monarchists"
     if: 'warwinner == "restext://Title_UnifiedMonarchists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:5439
@@ -44,13 +44,13 @@ nodes:
       content:
       - type: 'let'
         var: 'title'
-        # ../en-US.restext:255 | "End of Generation"
+        # ../en-US.restext:251 | "End of Generation"
         expr: '"restext://Title_EndOfGeneration"'
       - type: 'let'
         var: 'completedRound'
         expr: '6'
       - type: 'text'
-        # ../en-US.restext:77 | "Remove all player pieces ..."
+        # ../en-US.restext:73 | "Remove all player pieces ..."
         value: 'restext://Directive_EndGeneration_PlayersKeepWeaponTokens'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:5446
@@ -65,13 +65,13 @@ nodes:
       content:
       - type: 'let'
         var: 'title'
-        # ../en-US.restext:255 | "End of Generation"
+        # ../en-US.restext:251 | "End of Generation"
         expr: '"restext://Title_EndOfGeneration"'
       - type: 'let'
         var: 'completedRound'
         expr: '6'
       - type: 'text'
-        # ../en-US.restext:77 | "Remove all player pieces ..."
+        # ../en-US.restext:73 | "Remove all player pieces ..."
         value: 'restext://Directive_EndGeneration_PlayersKeepWeaponTokens'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:5457
@@ -90,7 +90,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:5474
   - type: 'conditional'
-    # ../en-US.restext:284 | "Unified Monarchists"
+    # ../en-US.restext:283 | "Unified Monarchists"
     if: 'warwinner == "restext://Title_UnifiedMonarchists"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:5478
@@ -105,13 +105,13 @@ nodes:
       content:
       - type: 'let'
         var: 'title'
-        # ../en-US.restext:255 | "End of Generation"
+        # ../en-US.restext:251 | "End of Generation"
         expr: '"restext://Title_EndOfGeneration"'
       - type: 'let'
         var: 'completedRound'
         expr: '6'
       - type: 'text'
-        # ../en-US.restext:77 | "Remove all player pieces ..."
+        # ../en-US.restext:73 | "Remove all player pieces ..."
         value: 'restext://Directive_EndGeneration_PlayersKeepWeaponTokens'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:5485
@@ -126,11 +126,11 @@ nodes:
       content:
       - type: 'let'
         var: 'title'
-        # ../en-US.restext:255 | "End of Generation"
+        # ../en-US.restext:251 | "End of Generation"
         expr: '"restext://Title_EndOfGeneration"'
       - type: 'let'
         var: 'completedRound'
         expr: '6'
       - type: 'text'
-        # ../en-US.restext:77 | "Remove all player pieces ..."
+        # ../en-US.restext:73 | "Remove all player pieces ..."
         value: 'restext://Directive_EndGeneration_PlayersKeepWeaponTokens'

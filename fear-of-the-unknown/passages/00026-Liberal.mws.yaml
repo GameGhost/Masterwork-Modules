@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Liberal'
-# ../en-US.restext:328 | "Acceptance"
+# ../en-US.restext:320 | "Acceptance"
 title: 'restext://Title_Acceptance'
-# ../en-US.restext:335 | "Early Years"
+# ../en-US.restext:329 | "Early Years"
 subtitle: 'restext://Title_EarlyYears'
 tags:
 - 'HUB'
@@ -52,7 +52,7 @@ nodes:
           style: 'paragraph'
         # ../.source/FearoftheUnknown_Eng_v15.cs:4594
         - type: 'text'
-          # ../en-US.restext:129 | "Retrieve the Hunt tokens ..."
+          # ../en-US.restext:119 | "Retrieve the Hunt tokens ..."
           value: 'restext://Directive_RetrieveHuntTokensFaceUp'
         # ../.source/FearoftheUnknown_Eng_v15.cs:4597
         - type: 'break'
@@ -69,44 +69,44 @@ nodes:
           then:
           # ../.source/FearoftheUnknown_Eng_v15.cs:4605
           - type: 'text'
-            # ../en-US.restext:76 | "Then, since this is a 3 p..."
+            # ../en-US.restext:66 | "Then, since this is a 3 p..."
             value: 'restext://Directive_3Player_PassMarker_A'
           # ../.source/FearoftheUnknown_Eng_v15.cs:4606
           - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4613
 - type: 'section'
-  # ../en-US.restext:214 | "**Special Servant Rule**"
+  # ../en-US.restext:204 | "**Special Servant Rule**"
   title: 'restext://Heading_SpecialServantRule'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:4622
   - type: 'text'
-    # ../en-US.restext:148 | "Due to the government-fun..."
+    # ../en-US.restext:138 | "Due to the government-fun..."
     value: 'restext://Directive_WorkReintroductionServantsNotLost'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4629
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4632
 - type: 'section'
-  # ../en-US.restext:203 | "**Rehabilitation Token**"
+  # ../en-US.restext:193 | "**Rehabilitation Token**"
   title: 'restext://Heading_RehabilitationToken'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:4641
   - type: 'text'
-    # ../en-US.restext:127 | "The {icon:s2_rehabilitati..."
+    # ../en-US.restext:117 | "The {icon:s2_rehabilitati..."
     value: 'restext://Directive_RehabilitationTokenMovesLikeMob'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4650
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4654
 - type: 'section'
-  # ../en-US.restext:223 | "{icon:storybooktoken} **A..."
+  # ../en-US.restext:213 | "{icon:storybooktoken} **A..."
   title: 'restext://Heading_StorybookToken_FocusOnRehabilitation'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:4665
   - type: 'text'
-    # ../en-US.restext:139 | "When a player's token ove..."
+    # ../en-US.restext:129 | "When a player's token ove..."
     value: 'restext://Directive_TokenOverlapsRehabilitation_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:4674
   - type: 'link'
@@ -123,20 +123,20 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:4683
   - type: 'section'
-    # ../en-US.restext:229 | "{icon:storybooktoken}**Th..."
+    # ../en-US.restext:219 | "{icon:storybooktoken}**Th..."
     title: 'restext://Heading_StorybookToken_TheHuntIsOn_NoSpace'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:4693
     - type: 'text'
-      # ../en-US.restext:145 | "Any time a player visits ..."
+      # ../en-US.restext:135 | "Any time a player visits ..."
       value: 'restext://Directive_VisitLocationClaimHuntToken'
     # ../.source/FearoftheUnknown_Eng_v15.cs:4696
     - type: 'break'
       style: 'paragraph'
     # ../.source/FearoftheUnknown_Eng_v15.cs:4698
     - type: 'text'
-      # ../en-US.restext:101 | "At the end of each round,..."
+      # ../en-US.restext:91 | "At the end of each round,..."
       value: 'restext://Directive_ExpeditionKillCreature_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:4705
     - type: 'link'
@@ -166,12 +166,12 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:302 | "The Early Years of the Th..."
+      # ../en-US.restext:292 | "The Early Years of the Th..."
       value: 'restext://Round_GenerationIII_EarlyEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:309 | "Then, perform all Start o..."
+      # ../en-US.restext:299 | "Then, perform all Start o..."
       value: 'restext://Round_StartMiddleYears_Rule'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4737
 - type: 'assign'

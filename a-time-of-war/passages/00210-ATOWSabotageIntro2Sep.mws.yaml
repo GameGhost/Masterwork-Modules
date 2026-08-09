@@ -6,7 +6,7 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:21757
 - type: 'text'
-  # ../en-US.restext:243 | "**Carefully hand this Sto..."
+  # ../en-US.restext:239 | "**Carefully hand this Sto..."
   value: 'restext://Storybook_HandDeviceToFigureHolder'
 # ../.source/ATimeofWar_Eng_v8.cs:21762
 - type: 'break'
@@ -22,7 +22,7 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:21793
   - type: 'text'
-    # ../en-US.restext:123 | "**A Time for Sabotage**"
+    # ../en-US.restext:119 | "**A Time for Sabotage**"
     value: 'restext://Heading_ATimeForSabotage'
   # ../.source/ATimeofWar_Eng_v8.cs:21795
   - type: 'break'
@@ -42,7 +42,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:21809
   - type: 'text'
-    # ../en-US.restext:139 | "**The decision was clear ..."
+    # ../en-US.restext:135 | "**The decision was clear ..."
     value: 'restext://Heading_DecisionWasClear'
   # ../.source/ATimeofWar_Eng_v8.cs:21811
   - type: 'break'
@@ -56,11 +56,11 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:21775
     - type: 'assign'
       var: 'bldg2'
-      # ../en-US.restext:271 | "Outpost"
+      # ../en-US.restext:268 | "Outpost"
       expr: '"restext://Title_Outpost"'
     # ../.source/ATimeofWar_Eng_v8.cs:21776
     - type: 'conditional'
-      # ../en-US.restext:251 | "Barracks"
+      # ../en-US.restext:247 | "Barracks"
       if: 'bldg1 == "restext://Title_Barracks"'
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:21778

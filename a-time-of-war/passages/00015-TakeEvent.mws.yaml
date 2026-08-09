@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TakeEvent'
-# ../en-US.restext:266 | "Military Protection"
+# ../en-US.restext:263 | "Military Protection"
 title: 'restext://Title_MilitaryProtection'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:2738
 - type: 'text'
-  # ../en-US.restext:241 | "Special Event"
+  # ../en-US.restext:237 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/ATimeofWar_Eng_v8.cs:2739
@@ -83,22 +83,22 @@ nodes:
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:56 | "3"
+      # ../en-US.restext:52 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:57 | "2"
+      # ../en-US.restext:53 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:54 | "1"
+      # ../en-US.restext:50 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:55 | "REVEAL"
+      # ../en-US.restext:51 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:55 | "REVEAL"
+    # ../en-US.restext:51 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: 'TakeEventb' # ./00186-TakeEventb.mws.yaml
     snapshot: false

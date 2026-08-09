@@ -2,11 +2,11 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Tension2'
-# ../en-US.restext:68 | Common_009 | "The Enemy of My Friend"
-# ../en-US.restext:69 | Common_010 | "A Peace Through Generations"
-title: '{tension == "bad" ? "restext://Common_009" : "restext://Common_010"}'
-# ../en-US.restext:346 | Title_MiddleYears | "Middle Years"
-# ../en-US.restext:346 | Title_MiddleYears | "Middle Years"
+# ../en-US.restext:361 | Title_TheEnemyOfMyFriend | "The Enemy of My Friend"
+# ../en-US.restext:319 | Title_APeaceThroughGenerations | "A Peace Through Generations"
+title: '{tension == "bad" ? "restext://Title_TheEnemyOfMyFriend" : "restext://Title_APeaceThroughGenerations"}'
+# ../en-US.restext:344 | Title_MiddleYears | "Middle Years"
+# ../en-US.restext:344 | Title_MiddleYears | "Middle Years"
 subtitle: '{tension == "bad" ? "restext://Title_MiddleYears" : "restext://Title_MiddleYears"}'
 tags:
 - 'format'
@@ -34,13 +34,13 @@ nodes:
       value: 'restext://Tension2_006'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6499
   - type: 'section'
-    # ../en-US.restext:212 | "**Special Rule**"
+    # ../en-US.restext:202 | "**Special Rule**"
     title: 'restext://Heading_SpecialRule'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6507
     - type: 'text'
-      # ../en-US.restext:81 | "Visiting any Location wit..."
+      # ../en-US.restext:71 | "Visiting any Location wit..."
       value: 'restext://Directive_BlackBorderMovesMobLeft'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6511
   - type: 'break'
@@ -68,7 +68,7 @@ nodes:
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6547
     - type: 'text'
-      # ../en-US.restext:103 | "The first time any player..."
+      # ../en-US.restext:93 | "The first time any player..."
       value: 'restext://Directive_FirstTimeReachesCrossroads_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:6555
     - type: 'link'
@@ -86,26 +86,26 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6564
   - type: 'section'
-    # ../en-US.restext:199 | "**Plot Expansion**"
+    # ../en-US.restext:189 | "**Plot Expansion**"
     title: 'restext://Heading_PlotExpansion'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6573
     - type: 'text'
-      # ../en-US.restext:83 | "Bricks can now be used to..."
+      # ../en-US.restext:73 | "Bricks can now be used to..."
       value: 'restext://Directive_BricksExpandEstatePlot'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6577
   - type: 'break'
     style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6583
 - type: 'section'
-  # ../en-US.restext:196 | "**Occult Experimentation**"
+  # ../en-US.restext:186 | "**Occult Experimentation**"
   title: 'restext://Heading_OccultExperimentation'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:6592
   - type: 'text'
-    # ../en-US.restext:297 | "At the End of the Generat..."
+    # ../en-US.restext:287 | "At the End of the Generat..."
     value: 'restext://Reward_MostOccultExperiments_CabinetOfCuriosities'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6605
   - type: 'conditional'
@@ -113,18 +113,18 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:6607
     - type: 'text'
-      # ../en-US.restext:300 | "The player with the secon..."
+      # ../en-US.restext:290 | "The player with the secon..."
       value: 'restext://Reward_SecondMostExperiments_WithVariant'
   # ../.source/FearoftheUnknown_Eng_v15.cs:6609
   - type: 'text'
-    # ../en-US.restext:138 | " _Ties are broken by the ..."
+    # ../en-US.restext:128 | " _Ties are broken by the ..."
     value: 'restext://Directive_TieBreak_LowestVP_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6616
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6620
 - type: 'section'
-  # ../en-US.restext:233 | "**The Church**"
+  # ../en-US.restext:223 | "**The Church**"
   title: 'restext://Heading_TheChurch'
   style: 'hub-card'
   content:
@@ -136,7 +136,7 @@ nodes:
     snapshot: true
   # ../.source/FearoftheUnknown_Eng_v15.cs:6630
   - type: 'text'
-    # ../en-US.restext:86 | " for an explanation of th..."
+    # ../en-US.restext:76 | " for an explanation of th..."
     value: 'restext://Directive_ChurchExplanation_Fragment'
 # ../.source/FearoftheUnknown_Eng_v15.cs:6635
 - type: 'assign'
@@ -161,10 +161,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:304 | "The Middle Years of the T..."
+      # ../en-US.restext:294 | "The Middle Years of the T..."
       value: 'restext://Round_GenerationIII_MiddleEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:308 | "Then, perform all Start o..."
+      # ../en-US.restext:298 | "Then, perform all Start o..."
       value: 'restext://Round_StartLateYears_Rule'

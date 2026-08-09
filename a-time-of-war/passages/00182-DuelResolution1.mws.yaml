@@ -56,9 +56,9 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:19456
   - type: 'assign'
     var: 'duelsci'
-    # ../en-US.restext:122 | Focus_Engineering | "Engineering"
-    # ../en-US.restext:121 | Focus_Chemistry | "Chemistry"
-    # ../en-US.restext:120 | Focus_Biology | "Biology"
+    # ../en-US.restext:118 | Focus_Engineering | "Engineering"
+    # ../en-US.restext:117 | Focus_Chemistry | "Chemistry"
+    # ../en-US.restext:116 | Focus_Biology | "Biology"
     # ../en-US.restext:1621 | DuelResolution1_010 | "Occult"
     expr: '["restext://Focus_Engineering", "restext://Focus_Chemistry", "restext://Focus_Biology", "restext://DuelResolution1_010"].shuffled("DuelResolution1_0")[0]'
   else:

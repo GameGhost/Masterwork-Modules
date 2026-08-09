@@ -31,7 +31,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:11814
 - type: 'conditional'
-  # ../en-US.restext:284 | "Unified Monarchists"
+  # ../en-US.restext:283 | "Unified Monarchists"
   if: 'warwinner == "restext://Title_UnifiedMonarchists"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:11817
@@ -46,13 +46,13 @@ nodes:
     content:
     - type: 'let'
       var: 'title'
-      # ../en-US.restext:255 | "End of Generation"
+      # ../en-US.restext:251 | "End of Generation"
       expr: '"restext://Title_EndOfGeneration"'
     - type: 'let'
       var: 'completedRound'
       expr: '6'
     - type: 'text'
-      # ../en-US.restext:77 | "Remove all player pieces ..."
+      # ../en-US.restext:73 | "Remove all player pieces ..."
       value: 'restext://Directive_EndGeneration_PlayersKeepWeaponTokens'
   # ../.source/ATimeofWar_Eng_v8.cs:11820
   - type: 'break'
@@ -69,13 +69,13 @@ nodes:
     content:
     - type: 'let'
       var: 'title'
-      # ../en-US.restext:255 | "End of Generation"
+      # ../en-US.restext:251 | "End of Generation"
       expr: '"restext://Title_EndOfGeneration"'
     - type: 'let'
       var: 'completedRound'
       expr: '6'
     - type: 'text'
-      # ../en-US.restext:77 | "Remove all player pieces ..."
+      # ../en-US.restext:73 | "Remove all player pieces ..."
       value: 'restext://Directive_EndGeneration_PlayersKeepWeaponTokens'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:11831
@@ -90,13 +90,13 @@ nodes:
     content:
     - type: 'let'
       var: 'title'
-      # ../en-US.restext:255 | "End of Generation"
+      # ../en-US.restext:251 | "End of Generation"
       expr: '"restext://Title_EndOfGeneration"'
     - type: 'let'
       var: 'completedRound'
       expr: '6'
     - type: 'text'
-      # ../en-US.restext:77 | "Remove all player pieces ..."
+      # ../en-US.restext:73 | "Remove all player pieces ..."
       value: 'restext://Directive_EndGeneration_PlayersKeepWeaponTokens'
   # ../.source/ATimeofWar_Eng_v8.cs:11833
   - type: 'break'
@@ -113,11 +113,11 @@ nodes:
     content:
     - type: 'let'
       var: 'title'
-      # ../en-US.restext:255 | "End of Generation"
+      # ../en-US.restext:251 | "End of Generation"
       expr: '"restext://Title_EndOfGeneration"'
     - type: 'let'
       var: 'completedRound'
       expr: '6'
     - type: 'text'
-      # ../en-US.restext:77 | "Remove all player pieces ..."
+      # ../en-US.restext:73 | "Remove all player pieces ..."
       value: 'restext://Directive_EndGeneration_PlayersKeepWeaponTokens'

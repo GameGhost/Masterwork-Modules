@@ -8,7 +8,7 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:21714
 - type: 'text'
-  # ../en-US.restext:317 | "Special Event"
+  # ../en-US.restext:311 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/TheCostofDisease_Eng_v10.cs:21715
@@ -27,7 +27,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:21727
 - type: 'text'
-  # ../en-US.restext:189 | "**VOTE**"
+  # ../en-US.restext:183 | "**VOTE**"
   value: 'restext://Heading_Vote'
 # ../.source/TheCostofDisease_Eng_v10.cs:21729
 - type: 'break'
@@ -81,22 +81,22 @@ nodes:
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:80 | "3"
+      # ../en-US.restext:74 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:81 | "2"
+      # ../en-US.restext:75 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:78 | "1"
+      # ../en-US.restext:72 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:79 | "REVEAL"
+      # ../en-US.restext:73 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:79 | "REVEAL"
+    # ../en-US.restext:73 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: 'EvilHunter1Event2' # ./00351-EvilHunter1Event2.mws.yaml
     snapshot: false

@@ -13,7 +13,7 @@ nodes:
     target: 'FailedMeeting' # ./00313-FailedMeeting.mws.yaml
 # ../.source/TheCostofDisease_Eng_v10.cs:11454
 - type: 'text'
-  # ../en-US.restext:325 | "**Carefully pick up the s..."
+  # ../en-US.restext:319 | "**Carefully pick up the s..."
   value: 'restext://Storybook_PickUpPrivate_Plain'
 # ../.source/TheCostofDisease_Eng_v10.cs:11457
 - type: 'break'
@@ -49,14 +49,14 @@ nodes:
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:11503
   - type: 'text'
-    # ../en-US.restext:267 | "I, {meet}, am writing thi..."
+    # ../en-US.restext:261 | "I, {meet}, am writing thi..."
     value: 'restext://Narrative_Letter_HubertusMeeting'
   # ../.source/TheCostofDisease_Eng_v10.cs:11508
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:11510
   - type: 'text'
-    # ../en-US.restext:268 | "It has been revealed to m..."
+    # ../en-US.restext:262 | "It has been revealed to m..."
     value: 'restext://Narrative_Letter_IntentionsLead'
   # ../.source/TheCostofDisease_Eng_v10.cs:11511
   - type: 'conditional'
@@ -65,37 +65,37 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:11513
     - type: 'text'
-      # ../en-US.restext:265 | "nefarious. The malevolent..."
+      # ../en-US.restext:259 | "nefarious. The malevolent..."
       value: 'restext://Narrative_Letter_HubertusIntentNefarious'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:11526
     - type: 'text'
-      # ../en-US.restext:266 | "demonstrably positive. Th..."
+      # ../en-US.restext:260 | "demonstrably positive. Th..."
       value: 'restext://Narrative_Letter_HubertusIntentPositive'
   # ../.source/TheCostofDisease_Eng_v10.cs:11533
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:11535
   - type: 'text'
-    # ../en-US.restext:269 | "Being intimately familiar..."
+    # ../en-US.restext:263 | "Being intimately familiar..."
     value: 'restext://Narrative_Letter_OccultFamiliarity'
   # ../.source/TheCostofDisease_Eng_v10.cs:11538
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:11542
   - type: 'text'
-    # ../en-US.restext:163 | "**It is with sincerity th..."
+    # ../en-US.restext:157 | "**It is with sincerity th..."
     value: 'restext://Heading_ItIsWithSincerity'
   # ../.source/TheCostofDisease_Eng_v10.cs:11544
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:11546
   - type: 'text'
-    # ../en-US.restext:245 | "...have decided to "
+    # ../en-US.restext:239 | "...have decided to "
     value: 'restext://Narrative_DecidedTo_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:11548
   - type: 'link'
-    # ../en-US.restext:125 | "join and pledge my servic..."
+    # ../en-US.restext:119 | "join and pledge my servic..."
     label: 'restext://Faction_JoinPledgeService'
     target: 'HubertusConfirmation' # ./00342-HubertusConfirmation.mws.yaml
     snapshot: true
@@ -107,7 +107,7 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:11470
       - type: 'assign'
         var: 'allyA'
-        # ../en-US.restext:129 | "wolves"
+        # ../en-US.restext:123 | "wolves"
         expr: '"restext://Faction_Wolves_Lower"'
     # ../.source/TheCostofDisease_Eng_v10.cs:11472
     - type: 'conditional'
@@ -116,7 +116,7 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:11474
       - type: 'assign'
         var: 'allyB'
-        # ../en-US.restext:129 | "wolves"
+        # ../en-US.restext:123 | "wolves"
         expr: '"restext://Faction_Wolves_Lower"'
     # ../.source/TheCostofDisease_Eng_v10.cs:11476
     - type: 'conditional'
@@ -125,7 +125,7 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:11478
       - type: 'assign'
         var: 'allyC'
-        # ../en-US.restext:129 | "wolves"
+        # ../en-US.restext:123 | "wolves"
         expr: '"restext://Faction_Wolves_Lower"'
     # ../.source/TheCostofDisease_Eng_v10.cs:11480
     - type: 'conditional'
@@ -134,7 +134,7 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:11482
       - type: 'assign'
         var: 'allyD'
-        # ../en-US.restext:129 | "wolves"
+        # ../en-US.restext:123 | "wolves"
         expr: '"restext://Faction_Wolves_Lower"'
     # ../.source/TheCostofDisease_Eng_v10.cs:11484
     - type: 'conditional'
@@ -143,18 +143,18 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:11486
       - type: 'assign'
         var: 'allyE'
-        # ../en-US.restext:129 | "wolves"
+        # ../en-US.restext:123 | "wolves"
         expr: '"restext://Faction_Wolves_Lower"'
   # ../.source/TheCostofDisease_Eng_v10.cs:11549
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:11551
   - type: 'text'
-    # ../en-US.restext:245 | "...have decided to "
+    # ../en-US.restext:239 | "...have decided to "
     value: 'restext://Narrative_DecidedTo_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:11552
   - type: 'link'
-    # ../en-US.restext:128 | "refuse this ridiculous offer."
+    # ../en-US.restext:122 | "refuse this ridiculous offer."
     label: 'restext://Faction_RefuseOffer'
     target: 'RefusalWolves' # ./00184-RefusalWolves.mws.yaml
     snapshot: true

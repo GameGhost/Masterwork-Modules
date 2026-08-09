@@ -2,8 +2,8 @@
 ---
 format: 'mws/0.4'
 passage_id: 'LiberalEvent3Resa'
-# ../en-US.restext:60 | "The {menname} Program"
-title: 'restext://Common_001'
+# ../en-US.restext:342 | "The {menname} Program"
+title: 'restext://Title_MennameProgram'
 layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:29426
@@ -42,21 +42,21 @@ nodes:
 - type: 'switch'
   on: 'mentype'
   cases:
-  # ../en-US.restext:154 | "Engineering"
+  # ../en-US.restext:144 | "Engineering"
   - match: 'restext://Focus_Engineering'
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:29465
     - type: 'text'
       # ../en-US.restext:2207 | "A new wing of the facilit..."
       value: 'restext://LiberalEvent3Resa_005'
-  # ../en-US.restext:153 | "Chemistry"
+  # ../en-US.restext:143 | "Chemistry"
   - match: 'restext://Focus_Chemistry'
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:29469
     - type: 'text'
       # ../en-US.restext:2208 | "Using new advances in con..."
       value: 'restext://LiberalEvent3Resa_006'
-  # ../en-US.restext:152 | "Biology"
+  # ../en-US.restext:142 | "Biology"
   - match: 'restext://Focus_Biology'
     nodes:
     # ../.source/FearoftheUnknown_Eng_v15.cs:29473
@@ -129,5 +129,5 @@ nodes:
     then:
     # ../.source/FearoftheUnknown_Eng_v15.cs:29551
     - type: 'text'
-      # ../en-US.restext:299 | "The player who has the se..."
+      # ../en-US.restext:289 | "The player who has the se..."
       value: 'restext://Reward_SecondMostExperiments_HasVariant'

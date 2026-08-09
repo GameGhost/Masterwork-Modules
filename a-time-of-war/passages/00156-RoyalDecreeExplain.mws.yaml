@@ -9,19 +9,19 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:17124
 - type: 'let'
   var: '_rnd_RoyalDecreeExplain_0'
-  # ../en-US.restext:282 | Title_TigerLauncher | "Tiger Launcher"
-  # ../en-US.restext:272 | Title_PsychicMindbomb | "Psychic Mindbomb"
-  # ../en-US.restext:261 | Title_IrresistibleAphrodisiac | "Irresistible Aphrodisiac"
-  # ../en-US.restext:260 | Title_HelmetMountedFlamethrower | "Helmet-Mounted Flamethrower"
+  # ../en-US.restext:281 | Title_TigerLauncher | "Tiger Launcher"
+  # ../en-US.restext:269 | Title_PsychicMindbomb | "Psychic Mindbomb"
+  # ../en-US.restext:258 | Title_IrresistibleAphrodisiac | "Irresistible Aphrodisiac"
+  # ../en-US.restext:257 | Title_HelmetMountedFlamethrower | "Helmet-Mounted Flamethrower"
   expr: '["restext://Title_TigerLauncher", "restext://Title_PsychicMindbomb", "restext://Title_IrresistibleAphrodisiac", "restext://Title_HelmetMountedFlamethrower"].shuffled("RoyalDecreeExplain_0")[0]'
 # ../.source/ATimeofWar_Eng_v8.cs:17127
 - type: 'let'
   var: '_rnd_RoyalDecreeExplain_1'
-  # ../en-US.restext:276 | Title_SteamGrenade | "Steam Grenade"
-  # ../en-US.restext:273 | Title_RemoteControlledPlagueRatSwarm | "Remote Controlled Plague ..."
-  # ../en-US.restext:256 | Title_FlamingPitchfork | "Flaming Pitchfork"
-  # ../en-US.restext:264 | Title_MechanizedHumanArmorSuit | "Mechanized Human Armor Suit"
-  # ../en-US.restext:253 | Title_DreamStealer | "Dream Stealer"
+  # ../en-US.restext:274 | Title_SteamGrenade | "Steam Grenade"
+  # ../en-US.restext:270 | Title_RemoteControlledPlagueRatSwarm | "Remote Controlled Plague ..."
+  # ../en-US.restext:252 | Title_FlamingPitchfork | "Flaming Pitchfork"
+  # ../en-US.restext:261 | Title_MechanizedHumanArmorSuit | "Mechanized Human Armor Suit"
+  # ../en-US.restext:249 | Title_DreamStealer | "Dream Stealer"
   expr: '["restext://Title_SteamGrenade", "restext://Title_RemoteControlledPlagueRatSwarm", "restext://Title_FlamingPitchfork", "restext://Title_MechanizedHumanArmorSuit", "restext://Title_DreamStealer"].shuffled("RoyalDecreeExplain_1")[0]'
 # ../.source/ATimeofWar_Eng_v8.cs:17123
 - type: 'text'

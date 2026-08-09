@@ -6,7 +6,7 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:2354
 - type: 'text'
-  # ../en-US.restext:250 | "**Carefully pick up this ..."
+  # ../en-US.restext:246 | "**Carefully pick up this ..."
   value: 'restext://Storybook_PickUpDevicePrivate'
 # ../.source/ATimeofWar_Eng_v8.cs:2357
 - type: 'break'
@@ -75,14 +75,14 @@ nodes:
 - type: 'switch'
   on: 'warwinner'
   cases:
-  # ../en-US.restext:274 | "Separatists"
+  # ../en-US.restext:271 | "Separatists"
   - match: 'restext://Title_Separatists'
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:2366
     - type: 'assign'
       var: 'mon'
       expr: '"lose"'
-  # ../en-US.restext:284 | "Unified Monarchists"
+  # ../en-US.restext:283 | "Unified Monarchists"
   - match: 'restext://Title_UnifiedMonarchists'
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:2370

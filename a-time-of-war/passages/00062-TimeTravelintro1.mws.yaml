@@ -4,7 +4,7 @@ format: 'mws/0.4'
 passage_id: 'TimeTravelintro1'
 # ../en-US.restext:715 | "A Return to Devastation"
 title: 'restext://TimeTravelintro1_001'
-# ../en-US.restext:258 | "GENERATION II"
+# ../en-US.restext:254 | "GENERATION II"
 subtitle: 'restext://Title_GenerationII'
 tags:
 - 'INTRO'
@@ -62,40 +62,40 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:8227
   - type: 'conditional'
     conditions:
-    # ../en-US.restext:274 | "Separatists"
+    # ../en-US.restext:271 | "Separatists"
     - if: 'warwinner == "restext://Title_Separatists"'
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:8229
       - type: 'assign'
         var: 'warwinner'
-        # ../en-US.restext:284 | "Unified Monarchists"
+        # ../en-US.restext:283 | "Unified Monarchists"
         expr: '"restext://Title_UnifiedMonarchists"'
-    # ../en-US.restext:284 | "Unified Monarchists"
+    # ../en-US.restext:283 | "Unified Monarchists"
     - if: 'warwinner == "restext://Title_UnifiedMonarchists"'
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:8233
       - type: 'assign'
         var: 'warwinner'
-        # ../en-US.restext:274 | "Separatists"
+        # ../en-US.restext:271 | "Separatists"
         expr: '"restext://Title_Separatists"'
   # ../.source/ATimeofWar_Eng_v8.cs:8235
   - type: 'conditional'
     conditions:
-    # ../en-US.restext:274 | "Separatists"
+    # ../en-US.restext:271 | "Separatists"
     - if: 'warloser == "restext://Title_Separatists"'
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:8237
       - type: 'assign'
         var: 'warloser'
-        # ../en-US.restext:284 | "Unified Monarchists"
+        # ../en-US.restext:283 | "Unified Monarchists"
         expr: '"restext://Title_UnifiedMonarchists"'
-    # ../en-US.restext:284 | "Unified Monarchists"
+    # ../en-US.restext:283 | "Unified Monarchists"
     - if: 'warloser == "restext://Title_UnifiedMonarchists"'
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:8241
       - type: 'assign'
         var: 'warloser'
-        # ../en-US.restext:274 | "Separatists"
+        # ../en-US.restext:271 | "Separatists"
         expr: '"restext://Title_Separatists"'
 # ../.source/ATimeofWar_Eng_v8.cs:8244
 - type: 'assign'

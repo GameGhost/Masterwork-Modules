@@ -10,9 +10,9 @@ nodes:
 - type: 'let'
   var: '_rnd_HuntSuccess1_0'
   # ../en-US.restext:2332 | HuntSuccess1_002 | "Majestic"
-  # ../en-US.restext:213 | Masterwork_Adjective_Stunning | "Stunning"
+  # ../en-US.restext:207 | Masterwork_Adjective_Stunning | "Stunning"
   # ../en-US.restext:2333 | HuntSuccess1_003 | "Grand"
-  # ../en-US.restext:209 | Masterwork_Adjective_Monumental | "Monumental"
+  # ../en-US.restext:203 | Masterwork_Adjective_Monumental | "Monumental"
   # ../en-US.restext:2334 | HuntSuccess1_004 | "Extraordinary"
   expr: '["restext://HuntSuccess1_002", "restext://Masterwork_Adjective_Stunning", "restext://HuntSuccess1_003", "restext://Masterwork_Adjective_Monumental", "restext://HuntSuccess1_004"].shuffled("HuntSuccess1_0")[0]'
 # ../.source/TheCostofDisease_Eng_v10.cs:28785

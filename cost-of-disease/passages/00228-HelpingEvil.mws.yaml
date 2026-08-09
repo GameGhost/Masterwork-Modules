@@ -43,12 +43,12 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:25093
   - type: 'conditional'
-    # ../en-US.restext:123 | "Fraternity of Hunters"
+    # ../en-US.restext:117 | "Fraternity of Hunters"
     if: 'society == "restext://Faction_FraternityOfHunters_Plain"'
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:25095
     - type: 'conditional'
-      # ../en-US.restext:124 | "hunters"
+      # ../en-US.restext:118 | "hunters"
       if: 'allyA == "restext://Faction_Hunters_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:25097
@@ -60,7 +60,7 @@ nodes:
         style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:25109
     - type: 'conditional'
-      # ../en-US.restext:124 | "hunters"
+      # ../en-US.restext:118 | "hunters"
       if: 'allyB == "restext://Faction_Hunters_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:25111
@@ -76,7 +76,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:25125
       - type: 'conditional'
-        # ../en-US.restext:124 | "hunters"
+        # ../en-US.restext:118 | "hunters"
         if: 'allyC == "restext://Faction_Hunters_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25127
@@ -92,7 +92,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:25142
       - type: 'conditional'
-        # ../en-US.restext:124 | "hunters"
+        # ../en-US.restext:118 | "hunters"
         if: 'allyD == "restext://Faction_Hunters_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25144
@@ -108,7 +108,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:25159
       - type: 'conditional'
-        # ../en-US.restext:124 | "hunters"
+        # ../en-US.restext:118 | "hunters"
         if: 'allyE == "restext://Faction_Hunters_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25161
@@ -118,7 +118,7 @@ nodes:
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:25178
     - type: 'conditional'
-      # ../en-US.restext:129 | "wolves"
+      # ../en-US.restext:123 | "wolves"
       if: 'allyA == "restext://Faction_Wolves_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:25180
@@ -130,7 +130,7 @@ nodes:
         style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:25192
     - type: 'conditional'
-      # ../en-US.restext:129 | "wolves"
+      # ../en-US.restext:123 | "wolves"
       if: 'allyB == "restext://Faction_Wolves_Lower"'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:25194
@@ -146,7 +146,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:25208
       - type: 'conditional'
-        # ../en-US.restext:129 | "wolves"
+        # ../en-US.restext:123 | "wolves"
         if: 'allyC == "restext://Faction_Wolves_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25210
@@ -162,7 +162,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:25225
       - type: 'conditional'
-        # ../en-US.restext:129 | "wolves"
+        # ../en-US.restext:123 | "wolves"
         if: 'allyD == "restext://Faction_Wolves_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25227
@@ -178,7 +178,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:25242
       - type: 'conditional'
-        # ../en-US.restext:129 | "wolves"
+        # ../en-US.restext:123 | "wolves"
         if: 'allyE == "restext://Faction_Wolves_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25244

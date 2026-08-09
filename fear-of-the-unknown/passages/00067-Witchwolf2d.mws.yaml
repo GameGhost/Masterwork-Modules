@@ -13,14 +13,14 @@ nodes:
     target: 'Witchwolf2Hex' # ./00069-Witchwolf2Hex.mws.yaml
 # ../.source/FearoftheUnknown_Eng_v15.cs:9590
 - type: 'text'
-  # ../en-US.restext:325 | "**Carefully pick up this ..."
+  # ../en-US.restext:315 | "**Carefully pick up this ..."
   value: 'restext://Storybook_PickUpDeviceHandToNameD'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9594
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9596
 - type: 'text'
-  # ../en-US.restext:171 | "I would like to hex:"
+  # ../en-US.restext:161 | "I would like to hex:"
   value: 'restext://Heading_IWouldLikeToHex'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9597
 - type: 'break'
@@ -35,14 +35,14 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:9615
   - type: 'assign'
     var: 'witD2'
-    # ../en-US.restext:348 | "Park"
+    # ../en-US.restext:346 | "Park"
     expr: '"restext://Title_Park"'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9601
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9604
 - type: 'link'
-  # ../en-US.restext:354 | "The Builder's Office"
+  # ../en-US.restext:353 | "The Builder's Office"
   label: 'restext://Title_TheBuildersOffice'
   target: 'Witchwolf2e' # ./00068-Witchwolf2e.mws.yaml
   snapshot: true
@@ -50,14 +50,14 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:9622
   - type: 'assign'
     var: 'witD2'
-    # ../en-US.restext:332 | "Builder's Office"
+    # ../en-US.restext:325 | "Builder's Office"
     expr: '"restext://Title_BuildersOffice"'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9605
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9608
 - type: 'link'
-  # ../en-US.restext:356 | "The Cemetery"
+  # ../en-US.restext:355 | "The Cemetery"
   label: 'restext://Title_TheCemetery'
   target: 'Witchwolf2e' # ./00068-Witchwolf2e.mws.yaml
   snapshot: true
@@ -65,5 +65,5 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:9629
   - type: 'assign'
     var: 'witD2'
-    # ../en-US.restext:333 | "Cemetery"
+    # ../en-US.restext:326 | "Cemetery"
     expr: '"restext://Title_Cemetery"'

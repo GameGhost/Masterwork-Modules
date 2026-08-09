@@ -15,7 +15,7 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2521
   - type: 'text'
-    # ../en-US.restext:165 | "**Collected Letters -** _..."
+    # ../en-US.restext:155 | "**Collected Letters -** _..."
     value: 'restext://Heading_CollectedLetters_StokerVictoria'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2531
   - type: 'switch'
@@ -54,7 +54,7 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2529
   - type: 'text'
-    # ../en-US.restext:191 | "My dear {randomname} II,"
+    # ../en-US.restext:181 | "My dear {randomname} II,"
     value: 'restext://Heading_MyDearRandomnameII'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2550
   - type: 'break'
@@ -128,7 +128,7 @@ nodes:
     style: 'paragraph'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2593
   - type: 'text'
-    # ../en-US.restext:190 | "My dear, {randomname} II,"
+    # ../en-US.restext:180 | "My dear, {randomname} II,"
     value: 'restext://Heading_MyDearCommaRandomnameII'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2614
   - type: 'break'
@@ -164,7 +164,7 @@ nodes:
   okay: 'restext://UIButton_Confirm'
   content:
   - type: 'text'
-    # ../en-US.restext:95 | "Remove all player pieces ..."
+    # ../en-US.restext:85 | "Remove all player pieces ..."
     value: 'restext://Directive_EndGeneration_ReturnUnusedStorybookTokens'
   - type: 'let'
     var: 'generation'

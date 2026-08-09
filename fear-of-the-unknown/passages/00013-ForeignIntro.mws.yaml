@@ -4,7 +4,7 @@ format: 'mws/0.4'
 passage_id: 'ForeignIntro'
 # ../en-US.restext:484 | "Hexes and Hysteria"
 title: 'restext://ForeignIntro_001'
-# ../en-US.restext:338 | "GENERATION II"
+# ../en-US.restext:333 | "GENERATION II"
 subtitle: 'restext://Title_GenerationII'
 tags:
 - 'INTRO'
@@ -146,16 +146,16 @@ nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:3236
 - type: 'assign'
   var: 'witAI'
-  # ../en-US.restext:334 | Title_Church | "Church"
+  # ../en-US.restext:327 | Title_Church | "Church"
   # ../en-US.restext:366 | Title_TravelingCaravan | "Traveling Caravan"
-  # ../en-US.restext:342 | Title_LaborersUnion | "Laborer's Union"
+  # ../en-US.restext:338 | Title_LaborersUnion | "Laborer's Union"
   expr: '["restext://Title_Church", "restext://Title_TravelingCaravan", "restext://Title_LaborersUnion"].shuffled("ForeignIntro_9")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3237
 - type: 'assign'
   var: 'witAI2'
-  # ../en-US.restext:348 | Title_Park | "Park"
-  # ../en-US.restext:332 | Title_BuildersOffice | "Builder's Office"
-  # ../en-US.restext:333 | Title_Cemetery | "Cemetery"
+  # ../en-US.restext:346 | Title_Park | "Park"
+  # ../en-US.restext:325 | Title_BuildersOffice | "Builder's Office"
+  # ../en-US.restext:326 | Title_Cemetery | "Cemetery"
   expr: '["restext://Title_Park", "restext://Title_BuildersOffice", "restext://Title_Cemetery"].shuffled("ForeignIntro_10")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3238
 - type: 'conditional'
@@ -176,7 +176,7 @@ nodes:
         - type: 'assign'
           var: 'hexAI'
           # ../en-US.restext:493 | ForeignIntro_018 | "Farmer's Apprentice"
-          # ../en-US.restext:342 | Title_LaborersUnion | "Laborer's Union"
+          # ../en-US.restext:338 | Title_LaborersUnion | "Laborer's Union"
           expr: '["restext://ForeignIntro_018", "restext://Title_LaborersUnion"].shuffled("ForeignIntro_12")[0]'
       - match: 'Blacksmith\''s Apprentice'
         nodes:
@@ -184,7 +184,7 @@ nodes:
         - type: 'assign'
           var: 'hexAI'
           # ../en-US.restext:492 | ForeignIntro_011 | "Blacksmith's Apprentice"
-          # ../en-US.restext:342 | Title_LaborersUnion | "Laborer's Union"
+          # ../en-US.restext:338 | Title_LaborersUnion | "Laborer's Union"
           expr: '["restext://ForeignIntro_011", "restext://Title_LaborersUnion"].shuffled("ForeignIntro_13")[0]'
   - if: 'players == 3'
     then:
@@ -202,7 +202,7 @@ nodes:
         - type: 'assign'
           var: 'hexAI'
           # ../en-US.restext:493 | ForeignIntro_018 | "Farmer's Apprentice"
-          # ../en-US.restext:342 | Title_LaborersUnion | "Laborer's Union"
+          # ../en-US.restext:338 | Title_LaborersUnion | "Laborer's Union"
           expr: '["restext://ForeignIntro_018", "restext://Title_LaborersUnion"].shuffled("ForeignIntro_15")[0]'
       - match: 'Blacksmith\''s Apprentice'
         nodes:
@@ -210,7 +210,7 @@ nodes:
         - type: 'assign'
           var: 'hexAI'
           # ../en-US.restext:492 | ForeignIntro_011 | "Blacksmith's Apprentice"
-          # ../en-US.restext:342 | Title_LaborersUnion | "Laborer's Union"
+          # ../en-US.restext:338 | Title_LaborersUnion | "Laborer's Union"
           expr: '["restext://ForeignIntro_011", "restext://Title_LaborersUnion"].shuffled("ForeignIntro_16")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3262
 - type: 'assign'

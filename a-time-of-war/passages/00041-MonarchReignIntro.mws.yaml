@@ -4,7 +4,7 @@ format: 'mws/0.4'
 passage_id: 'MonarchReignIntro'
 # ../en-US.restext:584 | "Heavy is the Crown"
 title: 'restext://MonarchReignIntro_001'
-# ../en-US.restext:259 | "GENERATION III"
+# ../en-US.restext:255 | "GENERATION III"
 subtitle: 'restext://Title_GenerationIII'
 tags:
 - 'INTRO'
@@ -52,7 +52,7 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:5546
   - type: 'text'
-    # ../en-US.restext:53 | "v1.0"
+    # ../en-US.restext:49 | "v1.0"
     value: 'restext://Common_VersionOnePointZero'
 # ../.source/ATimeofWar_Eng_v8.cs:5548
 - type: 'conditional'
@@ -80,7 +80,7 @@ nodes:
   expr: 'rand_between(5, 8, "MonarchReignIntro_0")'
 # ../.source/ATimeofWar_Eng_v8.cs:5558
 - type: 'conditional'
-  # ../en-US.restext:284 | "Unified Monarchists"
+  # ../en-US.restext:283 | "Unified Monarchists"
   if: 'warloser == "restext://Title_UnifiedMonarchists"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:5560

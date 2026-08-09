@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'MonarchReign1'
-# ../en-US.restext:267 | "Monarchy Reigns"
+# ../en-US.restext:264 | "Monarchy Reigns"
 title: 'restext://Title_MonarchyReigns'
-# ../en-US.restext:254 | "Early Years"
+# ../en-US.restext:250 | "Early Years"
 subtitle: 'restext://Title_EarlyYears'
 tags:
 - 'format'
@@ -41,7 +41,7 @@ nodes:
       - type: 'break'
       # ../.source/ATimeofWar_Eng_v8.cs:5681
       - type: 'text'
-        # ../en-US.restext:58 | "Then, since this is a 3 p..."
+        # ../en-US.restext:54 | "Then, since this is a 3 p..."
         value: 'restext://Directive_3Player_PassMarker_A'
 # ../.source/ATimeofWar_Eng_v8.cs:5688
 - type: 'conditional'
@@ -50,38 +50,38 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:5692
     - type: 'section'
-      # ../en-US.restext:152 | "**Monarchist Allegiance**"
+      # ../en-US.restext:148 | "**Monarchist Allegiance**"
       title: 'restext://Heading_MonarchistAllegiance'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:5700
       - type: 'text'
-        # ../en-US.restext:90 | "If a player does **NOT** ..."
+        # ../en-US.restext:86 | "If a player does **NOT** ..."
         value: 'restext://Directive_NoMonarchistFlag_OnceAction'
   - if: 'reignsep == "yes"'
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:5725
     - type: 'section'
-      # ../en-US.restext:152 | "**Monarchist Allegiance**"
+      # ../en-US.restext:148 | "**Monarchist Allegiance**"
       title: 'restext://Heading_MonarchistAllegiance'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:5733
       - type: 'text'
-        # ../en-US.restext:89 | "If a player does **NOT** ..."
+        # ../en-US.restext:85 | "If a player does **NOT** ..."
         value: 'restext://Directive_NoMonarchistFlag_CannotVisit'
 # ../.source/ATimeofWar_Eng_v8.cs:5746
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:5751
 - type: 'section'
-  # ../en-US.restext:169 | "{icon:storybooktoken} **R..."
+  # ../en-US.restext:165 | "{icon:storybooktoken} **R..."
   title: 'restext://Heading_StorybookToken_RoyalDecree'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:5761
   - type: 'text'
-    # ../en-US.restext:85 | "The Monarchy is likely to..."
+    # ../en-US.restext:81 | "The Monarchy is likely to..."
     value: 'restext://Directive_MonarchyListensGenerous_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:5769
   - type: 'link'
@@ -94,7 +94,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:5776
 - type: 'section'
-  # ../en-US.restext:153 | "**Most Decrees**"
+  # ../en-US.restext:149 | "**Most Decrees**"
   title: 'restext://Heading_MostDecrees'
   style: 'hub-card'
   content:
@@ -107,26 +107,26 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:5797
 - type: 'section'
-  # ../en-US.restext:148 | "**Like a Whispering Shadow**"
+  # ../en-US.restext:144 | "**Like a Whispering Shadow**"
   title: 'restext://Heading_LikeAWhisperingShadow'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:5805
   - type: 'text'
-    # ../en-US.restext:225 | "At the End of the Generat..."
+    # ../en-US.restext:221 | "At the End of the Generat..."
     value: 'restext://Reward_ClosestToCrownToken_Gain6VP'
 # ../.source/ATimeofWar_Eng_v8.cs:5818
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:5823
 - type: 'section'
-  # ../en-US.restext:170 | "{icon:storybooktoken} **R..."
+  # ../en-US.restext:166 | "{icon:storybooktoken} **R..."
   title: 'restext://Heading_StorybookToken_RoyalsTakeNotice'
   style: 'hub-card'
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:5833
   - type: 'text'
-    # ../en-US.restext:93 | "If a player ever overlaps..."
+    # ../en-US.restext:89 | "If a player ever overlaps..."
     value: 'restext://Directive_OverlapsExceedsCrownToken_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:5840
   - type: 'conditional'
@@ -154,7 +154,7 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:5856
   - type: 'section'
-    # ../en-US.restext:161 | "**Royal Eye**"
+    # ../en-US.restext:157 | "**Royal Eye**"
     title: 'restext://Heading_RoyalEye'
     style: 'hub-card'
     content:
@@ -173,25 +173,25 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:5883
     - type: 'section'
-      # ../en-US.restext:190 | "**Weapon Token Bonus**"
+      # ../en-US.restext:186 | "**Weapon Token Bonus**"
       title: 'restext://Heading_WeaponTokenBonus'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:5891
       - type: 'text'
-        # ../en-US.restext:119 | "{icon:s3_weapontoken}toke..."
+        # ../en-US.restext:115 | "{icon:s3_weapontoken}toke..."
         value: 'restext://Directive_WeaponTokensSpendLikeMoney'
   - match: 'vp'
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:5898
     - type: 'section'
-      # ../en-US.restext:190 | "**Weapon Token Bonus**"
+      # ../en-US.restext:186 | "**Weapon Token Bonus**"
       title: 'restext://Heading_WeaponTokenBonus'
       style: 'hub-card'
       content:
       # ../.source/ATimeofWar_Eng_v8.cs:5906
       - type: 'text'
-        # ../en-US.restext:192 | "While our attempt to infl..."
+        # ../en-US.restext:188 | "While our attempt to infl..."
         value: 'restext://Narrative_AttemptInfluenceMilitaryUnsuccessful'
 # ../.source/ATimeofWar_Eng_v8.cs:5916
 - type: 'break'

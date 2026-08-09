@@ -8,14 +8,14 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:33549
 - type: 'text'
-  # ../en-US.restext:316 | "Special Event"
+  # ../en-US.restext:306 | "Special Event"
   value: 'restext://SpecialEvent_Title'
   style: 'special-event'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33550
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33551
 - type: 'text'
-  # ../en-US.restext:147 | "Each player takes a votin..."
+  # ../en-US.restext:137 | "Each player takes a votin..."
   value: 'restext://Directive_VotingTokenRevealVotes'
 # ../.source/FearoftheUnknown_Eng_v15.cs:33553
 - type: 'break'
@@ -64,22 +64,22 @@ nodes:
     style: 'countdown-trigger'
     content:
     - type: 'text'
-      # ../en-US.restext:74 | "3"
+      # ../en-US.restext:64 | "3"
       value: 'restext://Countdown_Three'
       style: 'countdown-3'
     - type: 'text'
-      # ../en-US.restext:75 | "2"
+      # ../en-US.restext:65 | "2"
       value: 'restext://Countdown_Two'
       style: 'countdown-2'
     - type: 'text'
-      # ../en-US.restext:72 | "1"
+      # ../en-US.restext:62 | "1"
       value: 'restext://Countdown_One'
       style: 'countdown-1'
     - type: 'text'
-      # ../en-US.restext:73 | "REVEAL"
+      # ../en-US.restext:63 | "REVEAL"
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    # ../en-US.restext:73 | "REVEAL"
+    # ../en-US.restext:63 | "REVEAL"
     okay: 'restext://Countdown_Reveal'
     target: 'TenseEventBad2Res' # ./00342-TenseEventBad2Res.mws.yaml
     snapshot: false

@@ -56,30 +56,30 @@ nodes:
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:224 | "two"
+      # ../en-US.restext:220 | "two"
       expr: '"restext://Number_Two_Lower"'
   - match: 3
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:223 | "three"
+      # ../en-US.restext:219 | "three"
       expr: '"restext://Number_Three_Lower"'
   - match: 4
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:222 | "four"
+      # ../en-US.restext:218 | "four"
       expr: '"restext://Number_Four_Lower"'
   - match: 5
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      # ../en-US.restext:221 | "five"
+      # ../en-US.restext:217 | "five"
       expr: '"restext://Number_Five_Lower"'
   default:
   - type: 'assign'
     var: 'playtxt'
-    # ../en-US.restext:224 | "two"
+    # ../en-US.restext:220 | "two"
     expr: '"restext://Number_Two_Lower"'
 # ../.source/ATimeofWar_Eng_v8.cs:25598
 - type: 'text'

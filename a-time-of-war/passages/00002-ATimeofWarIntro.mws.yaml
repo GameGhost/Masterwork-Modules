@@ -76,12 +76,12 @@ nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:1319
 - type: 'assign'
   var: 'warwinner'
-  # ../en-US.restext:274 | Title_Separatists | "Separatists"
-  # ../en-US.restext:284 | Title_UnifiedMonarchists | "Unified Monarchists"
+  # ../en-US.restext:271 | Title_Separatists | "Separatists"
+  # ../en-US.restext:283 | Title_UnifiedMonarchists | "Unified Monarchists"
   expr: '["restext://Title_Separatists", "restext://Title_UnifiedMonarchists"].shuffled("ATimeofWarIntro_1")[0]'
 # ../.source/ATimeofWar_Eng_v8.cs:1320
 - type: 'conditional'
-  # ../en-US.restext:274 | "Separatists"
+  # ../en-US.restext:271 | "Separatists"
   if: 'warwinner == "restext://Title_Separatists"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:1322
@@ -92,7 +92,7 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:1323
   - type: 'assign'
     var: 'warloser'
-    # ../en-US.restext:284 | "Unified Monarchists"
+    # ../en-US.restext:283 | "Unified Monarchists"
     expr: '"restext://Title_UnifiedMonarchists"'
   # ../.source/ATimeofWar_Eng_v8.cs:1324
   - type: 'assign'
@@ -108,7 +108,7 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:1329
   - type: 'assign'
     var: 'warloser'
-    # ../en-US.restext:274 | "Separatists"
+    # ../en-US.restext:271 | "Separatists"
     expr: '"restext://Title_Separatists"'
   # ../.source/ATimeofWar_Eng_v8.cs:1330
   - type: 'assign'
@@ -117,7 +117,7 @@ nodes:
     expr: '"restext://ATimeofWarIntro_014"'
 # ../.source/ATimeofWar_Eng_v8.cs:1333
 - type: 'conditional'
-  # ../en-US.restext:274 | "Separatists"
+  # ../en-US.restext:271 | "Separatists"
   if: 'warwinner == "restext://Title_Separatists"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:1335

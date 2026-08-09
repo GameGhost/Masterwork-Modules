@@ -10,7 +10,7 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:34874
 - type: 'conditional'
-  # ../en-US.restext:204 | "library"
+  # ../en-US.restext:198 | "library"
   if: 'building == "restext://Location_Library_Lower"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:34884
@@ -28,7 +28,7 @@ nodes:
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:34899
   - type: 'conditional'
-    # ../en-US.restext:123 | "Fraternity of Hunters"
+    # ../en-US.restext:117 | "Fraternity of Hunters"
     if: 'society == "restext://Faction_FraternityOfHunters_Plain"'
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:34901
@@ -65,7 +65,7 @@ nodes:
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:34919
   - type: 'conditional'
-    # ../en-US.restext:127 | "Order of St. Hubertus"
+    # ../en-US.restext:121 | "Order of St. Hubertus"
     if: 'hcount == 0 && society == "restext://Faction_OrderOfStHubertus_Plain"'
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:34921

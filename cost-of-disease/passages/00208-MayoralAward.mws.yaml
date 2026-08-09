@@ -6,12 +6,12 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:23551
 - type: 'conditional'
-  # ../en-US.restext:204 | "library"
+  # ../en-US.restext:198 | "library"
   if: 'building == "restext://Location_Library_Lower"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:23556
   - type: 'text'
-    # ../en-US.restext:323 | "**Carefully hand the Stor..."
+    # ../en-US.restext:317 | "**Carefully hand the Stor..."
     value: 'restext://Storybook_HandToMayor_ReadAloud'
   # ../.source/TheCostofDisease_Eng_v10.cs:23561
   - type: 'break'

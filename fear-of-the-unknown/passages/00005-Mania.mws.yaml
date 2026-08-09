@@ -4,7 +4,7 @@ format: 'mws/0.4'
 passage_id: 'Mania'
 # ../en-US.restext:369 | "WITCH HUNT"
 title: 'restext://Title_WitchHuntCaps'
-# ../en-US.restext:335 | "Early Years"
+# ../en-US.restext:329 | "Early Years"
 subtitle: 'restext://Title_EarlyYears'
 tags:
 - 'HUB'
@@ -98,13 +98,13 @@ nodes:
       value: 'restext://Mania_005'
 # ../.source/FearoftheUnknown_Eng_v15.cs:1916
 - type: 'section'
-  # ../en-US.restext:222 | "{icon:storybooktoken} **F..."
+  # ../en-US.restext:212 | "{icon:storybooktoken} **F..."
   title: 'restext://Heading_StorybookToken_FamilyPlot'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:1926
   - type: 'text'
-    # ../en-US.restext:114 | "Any time a player is over..."
+    # ../en-US.restext:104 | "Any time a player is over..."
     value: 'restext://Directive_OvertakenByMob_Fragment'
   # ../.source/FearoftheUnknown_Eng_v15.cs:1930
   - type: 'link'
@@ -121,13 +121,13 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:1940
   - type: 'section'
-    # ../en-US.restext:215 | "{icon:storybooktoken} **10VP**"
+    # ../en-US.restext:205 | "{icon:storybooktoken} **10VP**"
     title: 'restext://Heading_StorybookToken_10VP'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:1950
     - type: 'text'
-      # ../en-US.restext:123 | "Whenever a player reaches..."
+      # ../en-US.restext:113 | "Whenever a player reaches..."
       value: 'restext://Directive_Reaches10VP_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:1951
     - type: 'link'
@@ -144,13 +144,13 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:1961
   - type: 'section'
-    # ../en-US.restext:227 | "{icon:storybooktoken} **R..."
+    # ../en-US.restext:217 | "{icon:storybooktoken} **R..."
     title: 'restext://Heading_StorybookToken_ResearchLevel2'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:1972
     - type: 'text'
-      # ../en-US.restext:126 | "Whenever a player reaches..."
+      # ../en-US.restext:116 | "Whenever a player reaches..."
       value: 'restext://Directive_ReachesJournalLevel2_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:1973
     - type: 'link'
@@ -166,13 +166,13 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:1982
   - type: 'section'
-    # ../en-US.restext:225 | "{icon:storybooktoken} **I..."
+    # ../en-US.restext:215 | "{icon:storybooktoken} **I..."
     title: 'restext://Heading_StorybookToken_InsanityOf3'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:1993
     - type: 'text'
-      # ../en-US.restext:125 | "Whenever a player reaches..."
+      # ../en-US.restext:115 | "Whenever a player reaches..."
       value: 'restext://Directive_ReachesInsanitySpace3_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:1996
     - type: 'link'
@@ -188,13 +188,13 @@ nodes:
   then:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2005
   - type: 'section'
-    # ../en-US.restext:221 | "{icon:storybooktoken} **C..."
+    # ../en-US.restext:211 | "{icon:storybooktoken} **C..."
     title: 'restext://Heading_StorybookToken_Creepy'
     style: 'hub-card'
     content:
     # ../.source/FearoftheUnknown_Eng_v15.cs:2015
     - type: 'text'
-      # ../en-US.restext:124 | "Whenever a player reaches..."
+      # ../en-US.restext:114 | "Whenever a player reaches..."
       value: 'restext://Directive_ReachesCreepySpace3_Fragment'
     # ../.source/FearoftheUnknown_Eng_v15.cs:2018
     - type: 'link'
@@ -209,13 +209,13 @@ nodes:
 - type: 'break'
 # ../.source/FearoftheUnknown_Eng_v15.cs:2028
 - type: 'section'
-  # ../en-US.restext:209 | "**Second Round Event**"
+  # ../en-US.restext:199 | "**Second Round Event**"
   title: 'restext://Heading_SecondRoundEvent'
   style: 'hub-card'
   content:
   # ../.source/FearoftheUnknown_Eng_v15.cs:2037
   - type: 'text'
-    # ../en-US.restext:276 | "As tensions rise and accu..."
+    # ../en-US.restext:266 | "As tensions rise and accu..."
     value: 'restext://Narrative_TensionsRiseAngryMob'
   # ../.source/FearoftheUnknown_Eng_v15.cs:2039
   - type: 'break'
@@ -239,5 +239,5 @@ nodes:
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:309 | "Then, perform all Start o..."
+      # ../en-US.restext:299 | "Then, perform all Start o..."
       value: 'restext://Round_StartMiddleYears_Rule'

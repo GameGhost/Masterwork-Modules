@@ -6,7 +6,7 @@ layout: 'narration'
 nodes:
 # ../.source/FearoftheUnknown_Eng_v15.cs:9351
 - type: 'text'
-  # ../en-US.restext:326 | "**Carefully pick up this ..."
+  # ../en-US.restext:316 | "**Carefully pick up this ..."
   value: 'restext://Storybook_PickUpDeviceHandToNameE'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9356
 - type: 'conditional'
@@ -20,14 +20,14 @@ nodes:
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9361
 - type: 'text'
-  # ../en-US.restext:171 | "I would like to hex:"
+  # ../en-US.restext:161 | "I would like to hex:"
   value: 'restext://Heading_IWouldLikeToHex'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9362
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9365
 - type: 'link'
-  # ../en-US.restext:357 | "The Church"
+  # ../en-US.restext:356 | "The Church"
   label: 'restext://Title_TheChurch'
   target: 'Witchwolf1Hex' # ./00058-Witchwolf1Hex.mws.yaml
   snapshot: true
@@ -35,7 +35,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:9380
   - type: 'assign'
     var: 'witE'
-    # ../en-US.restext:334 | "Church"
+    # ../en-US.restext:327 | "Church"
     expr: '"restext://Title_Church"'
 # ../.source/FearoftheUnknown_Eng_v15.cs:9366
 - type: 'break'
@@ -65,5 +65,5 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:9394
   - type: 'assign'
     var: 'witE'
-    # ../en-US.restext:342 | "Laborer's Union"
+    # ../en-US.restext:338 | "Laborer's Union"
     expr: '"restext://Title_LaborersUnion"'

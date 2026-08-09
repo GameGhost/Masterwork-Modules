@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'SeparatistBarnCheck'
-# ../en-US.restext:51 | "Suspicions Confirmed"
-title: 'restext://Common_003'
+# ../en-US.restext:275 | "Suspicions Confirmed"
+title: 'restext://Title_SuspicionsConfirmed'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:16914
 - type: 'conditional'
-  # ../en-US.restext:274 | "Separatists"
+  # ../en-US.restext:271 | "Separatists"
   if: 'warloser == "restext://Title_Separatists"'
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:16916

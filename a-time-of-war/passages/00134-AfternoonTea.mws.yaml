@@ -13,17 +13,17 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:14926
   - type: 'assign'
     var: 'teaopt'
-    # ../en-US.restext:251 | "Barracks"
+    # ../en-US.restext:247 | "Barracks"
     expr: '"restext://Title_Barracks"'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:14930
   - type: 'assign'
     var: 'teaopt'
-    # ../en-US.restext:271 | "Outpost"
+    # ../en-US.restext:268 | "Outpost"
     expr: '"restext://Title_Outpost"'
 # ../.source/ATimeofWar_Eng_v8.cs:14935
 - type: 'text'
-  # ../en-US.restext:59 | "**All players may again v..."
+  # ../en-US.restext:55 | "**All players may again v..."
   value: 'restext://Directive_AllPlayersMayViewStorybookAgain'
 # ../.source/ATimeofWar_Eng_v8.cs:14937
 - type: 'break'
