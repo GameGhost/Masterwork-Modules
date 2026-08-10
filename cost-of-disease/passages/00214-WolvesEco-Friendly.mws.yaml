@@ -2,41 +2,41 @@
 ---
 format: 'mws/0.4'
 passage_id: 'WolvesEco-Friendly'
-# ../en-US.restext:1914 | "A Message"
+# ../en-US.restext:1913 | "A Message"
 title: 'restext://WolvesEco_Friendly_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:24075
 - type: 'text'
-  # ../en-US.restext:1915 | "As the new decade began, ..."
+  # ../en-US.restext:1914 | "As the new decade began, ..."
   value: 'restext://WolvesEco_Friendly_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:24076
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:24078
 - type: 'text'
-  # ../en-US.restext:1916 | "For most, however, this n..."
+  # ../en-US.restext:1915 | "For most, however, this n..."
   value: 'restext://WolvesEco_Friendly_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:24081
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:24083
 - type: 'text'
-  # ../en-US.restext:1917 | "\"Our brethren; abused, s..."
+  # ../en-US.restext:1916 | "\"Our brethren; abused, s..."
   value: 'restext://WolvesEco_Friendly_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:24085
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:24087
 - type: 'text'
-  # ../en-US.restext:1918 | "Most had adopted a Pythag..."
+  # ../en-US.restext:1917 | "Most had adopted a Pythag..."
   value: 'restext://WolvesEco_Friendly_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:24088
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:24090
 - type: 'text'
-  # ../en-US.restext:1919 | "Yet still roiling beneath..."
+  # ../en-US.restext:1918 | "Yet still roiling beneath..."
   value: 'restext://WolvesEco_Friendly_006'
 # ../.source/TheCostofDisease_Eng_v10.cs:24092
 - type: 'break'
@@ -47,7 +47,7 @@ nodes:
   # ../en-US.restext:39 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: '${building == "library" ? "MayoralAward" : "WolvesBankMayorGood"}' # ./00208-MayoralAward.mws.yaml, ./00359-WolvesBankMayorGood.mws.yaml
-  # ../en-US.restext:357 | "Close"
+  # ../en-US.restext:356 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -58,5 +58,5 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:24113
   - type: 'text'
-    # ../en-US.restext:1920 | "Put a {icon:creepy_icon} ..."
+    # ../en-US.restext:1919 | "Put a {icon:creepy_icon} ..."
     value: 'restext://WolvesEco_Friendly_007'

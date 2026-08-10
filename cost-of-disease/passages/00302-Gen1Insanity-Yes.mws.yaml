@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Gen1Insanity-Yes'
-# ../en-US.restext:322 | "Absent Parent"
+# ../en-US.restext:325 | "Absent Parent"
 title: 'restext://Title_AbsentParent'
 layout: 'narration'
 nodes:
@@ -17,7 +17,7 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:31289
   - type: 'text'
-    # ../en-US.restext:316 | "**Carefully hand this sto..."
+    # ../en-US.restext:320 | "**Carefully hand this sto..."
     value: 'restext://Storybook_HandToGen1Sane'
   # ../.source/TheCostofDisease_Eng_v10.cs:31302
   - type: 'conditional'
@@ -32,7 +32,7 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:31295
   - type: 'text'
-    # ../en-US.restext:2506 | "An investment in a summer..."
+    # ../en-US.restext:2505 | "An investment in a summer..."
     value: 'restext://Gen1Insanity_Yes_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:31306
   - type: 'assign'
@@ -47,7 +47,7 @@ nodes:
     # ../en-US.restext:39 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: 'Devastation1' # ./00004-Devastation1.mws.yaml
-    # ../en-US.restext:357 | "Close"
+    # ../en-US.restext:356 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -71,14 +71,14 @@ nodes:
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:31334
       - type: 'text'
-        # ../en-US.restext:91 | "Gain a Maladjustment card..."
+        # ../en-US.restext:95 | "Gain a Maladjustment card..."
         value: 'restext://Directive_GainMaladjustmentCard'
       else:
       # ../.source/TheCostofDisease_Eng_v10.cs:31341
       - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:31342
       - type: 'text'
-        # ../en-US.restext:371 | "Lose 3VP."
+        # ../en-US.restext:370 | "Lose 3VP."
         value: 'restext://VP_Lose3'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:31315

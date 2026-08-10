@@ -2,34 +2,34 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Evilsforgive'
-# ../en-US.restext:121 | Faction_OrderOfStHubertus_Plain | "Order of St. Hubertus"
-# ../en-US.restext:2022 | Evilsforgive_001 | "Forgiveness"
-# ../en-US.restext:2023 | Evilsforgive_002 | "Still Wary"
+# ../en-US.restext:125 | Faction_OrderOfStHubertus_Plain | "Order of St. Hubertus"
+# ../en-US.restext:2021 | Evilsforgive_001 | "Forgiveness"
+# ../en-US.restext:2022 | Evilsforgive_002 | "Still Wary"
 title: '{society == "restext://Faction_OrderOfStHubertus_Plain" ? "restext://Evilsforgive_001" : "restext://Evilsforgive_002"}'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:25445
 - type: 'conditional'
-  # ../en-US.restext:121 | "Order of St. Hubertus"
+  # ../en-US.restext:125 | "Order of St. Hubertus"
   if: 'society == "restext://Faction_OrderOfStHubertus_Plain"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:25452
   - type: 'text'
-    # ../en-US.restext:2030 | "The scientists' doubts we..."
+    # ../en-US.restext:2029 | "The scientists' doubts we..."
     value: 'restext://Evilsforgive_009'
   # ../.source/TheCostofDisease_Eng_v10.cs:25453
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:25455
   - type: 'text'
-    # ../en-US.restext:2031 | "\"We want to shatter thos..."
+    # ../en-US.restext:2030 | "\"We want to shatter thos..."
     value: 'restext://Evilsforgive_010'
   # ../.source/TheCostofDisease_Eng_v10.cs:25456
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:25458
   - type: 'text'
-    # ../en-US.restext:2032 | "As a token of this myth-s..."
+    # ../en-US.restext:2031 | "As a token of this myth-s..."
     value: 'restext://Evilsforgive_011'
   # ../.source/TheCostofDisease_Eng_v10.cs:25461
   - type: 'break'
@@ -40,7 +40,7 @@ nodes:
     # ../en-US.restext:39 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: 'EquitableValues' # ./00212-EquitableValues.mws.yaml
-    # ../en-US.restext:357 | "Close"
+    # ../en-US.restext:356 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -51,20 +51,20 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:25512
     - type: 'text'
-      # ../en-US.restext:2033 | "Retrieve the **Master's S..."
+      # ../en-US.restext:2032 | "Retrieve the **Master's S..."
       value: 'restext://Evilsforgive_012'
     # ../.source/TheCostofDisease_Eng_v10.cs:25518
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:25522
     - type: 'text'
-      # ../en-US.restext:143 | "**Choose:**"
+      # ../en-US.restext:147 | "**Choose:**"
       value: 'restext://Heading_ChooseColon'
     # ../.source/TheCostofDisease_Eng_v10.cs:25524
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:25525
     - type: 'text'
-      # ../en-US.restext:2034 | "Starting with the player ..."
+      # ../en-US.restext:2033 | "Starting with the player ..."
       value: 'restext://Evilsforgive_013'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:25470
@@ -77,14 +77,14 @@ nodes:
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:25481
     - type: 'text'
-      # ../en-US.restext:246 | "In the evenings, the Frat..."
+      # ../en-US.restext:250 | "In the evenings, the Frat..."
       value: 'restext://Narrative_FraternityRevelry'
     # ../.source/TheCostofDisease_Eng_v10.cs:25482
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:25484
     - type: 'text'
-      # ../en-US.restext:2024 | "For the family members th..."
+      # ../en-US.restext:2023 | "For the family members th..."
       value: 'restext://Evilsforgive_003'
     # ../.source/TheCostofDisease_Eng_v10.cs:25487
     - type: 'break'
@@ -95,7 +95,7 @@ nodes:
       # ../en-US.restext:39 | "Click to continue..."
       label: 'restext://Click_ContinueEllipsis_C'
       target: 'EquitableValues' # ./00212-EquitableValues.mws.yaml
-      # ../en-US.restext:357 | "Close"
+      # ../en-US.restext:356 | "Close"
       okay: 'restext://UIButton_Close'
       snapshot: true
       header:
@@ -106,67 +106,67 @@ nodes:
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:25559
       - type: 'conditional'
-        # ../en-US.restext:123 | "wolves"
+        # ../en-US.restext:127 | "wolves"
         if: 'allyA == "restext://Faction_Wolves_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25561
         - type: 'text'
-          # ../en-US.restext:2025 | "{nameA} III **immediately..."
+          # ../en-US.restext:2024 | "{nameA} III **immediately..."
           value: 'restext://Evilsforgive_004'
         # ../.source/TheCostofDisease_Eng_v10.cs:25569
         - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:25571
       - type: 'conditional'
-        # ../en-US.restext:123 | "wolves"
+        # ../en-US.restext:127 | "wolves"
         if: 'allyB == "restext://Faction_Wolves_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25573
         - type: 'text'
-          # ../en-US.restext:2026 | "{nameB} III **immediately..."
+          # ../en-US.restext:2025 | "{nameB} III **immediately..."
           value: 'restext://Evilsforgive_005'
         # ../.source/TheCostofDisease_Eng_v10.cs:25581
         - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:25583
       - type: 'conditional'
-        # ../en-US.restext:123 | "wolves"
+        # ../en-US.restext:127 | "wolves"
         if: 'allyC == "restext://Faction_Wolves_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25585
         - type: 'text'
-          # ../en-US.restext:2027 | "{nameC} III **immediately..."
+          # ../en-US.restext:2026 | "{nameC} III **immediately..."
           value: 'restext://Evilsforgive_006'
         # ../.source/TheCostofDisease_Eng_v10.cs:25593
         - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:25595
       - type: 'conditional'
-        # ../en-US.restext:123 | "wolves"
+        # ../en-US.restext:127 | "wolves"
         if: 'allyD == "restext://Faction_Wolves_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25597
         - type: 'text'
-          # ../en-US.restext:2028 | "{nameD} III **immediately..."
+          # ../en-US.restext:2027 | "{nameD} III **immediately..."
           value: 'restext://Evilsforgive_007'
         # ../.source/TheCostofDisease_Eng_v10.cs:25605
         - type: 'break'
       # ../.source/TheCostofDisease_Eng_v10.cs:25607
       - type: 'conditional'
-        # ../en-US.restext:123 | "wolves"
+        # ../en-US.restext:127 | "wolves"
         if: 'allyE == "restext://Faction_Wolves_Lower"'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25609
         - type: 'text'
-          # ../en-US.restext:2029 | "{nameE} III **immediately..."
+          # ../en-US.restext:2028 | "{nameE} III **immediately..."
           value: 'restext://Evilsforgive_008'
       # ../.source/TheCostofDisease_Eng_v10.cs:25618
       - type: 'conditional'
-        # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
-        # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
-        # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
-        # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
-        # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:127 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:127 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:127 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:127 | Faction_Wolves_Lower | "wolves"
+        # ../en-US.restext:127 | Faction_Wolves_Lower | "wolves"
         if: '!(allyA == "restext://Faction_Wolves_Lower" && allyB == "restext://Faction_Wolves_Lower" && allyC == "restext://Faction_Wolves_Lower" && allyD == "restext://Faction_Wolves_Lower" && allyE == "restext://Faction_Wolves_Lower")'
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:25620
         - type: 'text'
-          # ../en-US.restext:2025 | "{nameA} III **immediately..."
+          # ../en-US.restext:2024 | "{nameA} III **immediately..."
           value: 'restext://Evilsforgive_004'

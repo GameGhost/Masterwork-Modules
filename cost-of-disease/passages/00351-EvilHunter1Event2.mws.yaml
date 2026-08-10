@@ -2,27 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: 'EvilHunter1Event2'
-# ../en-US.restext:352 | "Vote Outcome"
+# ../en-US.restext:351 | "Vote Outcome"
 title: 'restext://Title_VoteOutcome_Mixed'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:34661
 - type: 'text'
-  # ../en-US.restext:376 | "Tally all the votes and t..."
+  # ../en-US.restext:375 | "Tally all the votes and t..."
   value: 'restext://Vote_TallyRule_C'
 # ../.source/TheCostofDisease_Eng_v10.cs:34666
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:34670
 - type: 'text'
-  # ../en-US.restext:145 | "**Click on the result of ..."
+  # ../en-US.restext:149 | "**Click on the result of ..."
   value: 'restext://Heading_ClickOnResultOfYourVote'
 # ../.source/TheCostofDisease_Eng_v10.cs:34672
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:34675
 - type: 'link'
-  # ../en-US.restext:2799 | "Click here if you voted t..."
+  # ../en-US.restext:2798 | "Click here if you voted t..."
   label: 'restext://EvilHunter1Event2_001'
   target: 'EvilHunter1EventYes' # ./00191-EvilHunter1EventYes.mws.yaml
   snapshot: true
@@ -37,7 +37,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:34679
 - type: 'link'
-  # ../en-US.restext:2800 | "Click here if you voted t..."
+  # ../en-US.restext:2799 | "Click here if you voted t..."
   label: 'restext://EvilHunter1Event2_002'
   target: 'GloomyGothic2' # ./00172-GloomyGothic2.mws.yaml
   snapshot: true

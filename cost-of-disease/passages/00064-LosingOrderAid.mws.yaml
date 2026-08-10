@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'LosingOrderAid'
-# ../en-US.restext:121 | Faction_OrderOfStHubertus_Plain | "Order of St. Hubertus"
-# ../en-US.restext:844 | LosingOrderAid_001 | "Despite the Hunters' Loss"
-# ../en-US.restext:845 | LosingOrderAid_002 | "Despite the wolves' Loss"
+# ../en-US.restext:125 | Faction_OrderOfStHubertus_Plain | "Order of St. Hubertus"
+# ../en-US.restext:843 | LosingOrderAid_001 | "Despite the Hunters' Loss"
+# ../en-US.restext:844 | LosingOrderAid_002 | "Despite the wolves' Loss"
 title: '{society == "restext://Faction_OrderOfStHubertus_Plain" ? "restext://LosingOrderAid_001" : "restext://LosingOrderAid_002"}'
 tags:
 - 'code'
@@ -12,7 +12,7 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:7553
 - type: 'conditional'
-  # ../en-US.restext:121 | "Order of St. Hubertus"
+  # ../en-US.restext:125 | "Order of St. Hubertus"
   if: 'society == "restext://Faction_OrderOfStHubertus_Plain"'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:7555
@@ -25,24 +25,24 @@ nodes:
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:7566
     - type: 'text'
-      # ../en-US.restext:853 | "It was during a period of..."
+      # ../en-US.restext:852 | "It was during a period of..."
       value: 'restext://LosingOrderAid_011'
     # ../.source/TheCostofDisease_Eng_v10.cs:7567
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:7569
     - type: 'text'
-      # ../en-US.restext:854 | "\"Your family has made a ..."
+      # ../en-US.restext:853 | "\"Your family has made a ..."
       value: 'restext://LosingOrderAid_012'
     # ../.source/TheCostofDisease_Eng_v10.cs:7570
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:7573
     - type: 'conditional'
-      # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
-      # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
-      # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
-      # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+      # ../en-US.restext:122 | Faction_Hunters_Lower | "hunters"
+      # ../en-US.restext:122 | Faction_Hunters_Lower | "hunters"
+      # ../en-US.restext:122 | Faction_Hunters_Lower | "hunters"
+      # ../en-US.restext:122 | Faction_Hunters_Lower | "hunters"
       if: '(allyA != "restext://Faction_Hunters_Lower") && (allyB != "restext://Faction_Hunters_Lower") && (allyC != "restext://Faction_Hunters_Lower") && (allyD != "restext://Faction_Hunters_Lower")'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:7575
@@ -58,7 +58,7 @@ nodes:
         # ../en-US.restext:39 | "Click to continue..."
         label: 'restext://Click_ContinueEllipsis_C'
         target: 'EvilWolvesEventStart' # ./00259-EvilWolvesEventStart.mws.yaml
-        # ../en-US.restext:357 | "Close"
+        # ../en-US.restext:356 | "Close"
         okay: 'restext://UIButton_Close'
         snapshot: true
         header:
@@ -69,70 +69,70 @@ nodes:
         content:
         # ../.source/TheCostofDisease_Eng_v10.cs:7631
         - type: 'conditional'
-          # ../en-US.restext:118 | "hunters"
+          # ../en-US.restext:122 | "hunters"
           if: 'allyA == "restext://Faction_Hunters_Lower"'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:7633
           - type: 'text'
-            # ../en-US.restext:848 | "{nameA} III **immediately..."
+            # ../en-US.restext:847 | "{nameA} III **immediately..."
             value: 'restext://LosingOrderAid_005'
           # ../.source/TheCostofDisease_Eng_v10.cs:7640
           - type: 'break'
         # ../.source/TheCostofDisease_Eng_v10.cs:7642
         - type: 'conditional'
-          # ../en-US.restext:118 | "hunters"
+          # ../en-US.restext:122 | "hunters"
           if: 'allyB == "restext://Faction_Hunters_Lower"'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:7644
           - type: 'text'
-            # ../en-US.restext:849 | "{nameB} III **immediately..."
+            # ../en-US.restext:848 | "{nameB} III **immediately..."
             value: 'restext://LosingOrderAid_006'
           # ../.source/TheCostofDisease_Eng_v10.cs:7651
           - type: 'break'
         # ../.source/TheCostofDisease_Eng_v10.cs:7653
         - type: 'conditional'
-          # ../en-US.restext:118 | "hunters"
+          # ../en-US.restext:122 | "hunters"
           if: 'allyC == "restext://Faction_Hunters_Lower"'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:7655
           - type: 'text'
-            # ../en-US.restext:850 | "{nameC} III **immediately..."
+            # ../en-US.restext:849 | "{nameC} III **immediately..."
             value: 'restext://LosingOrderAid_007'
           # ../.source/TheCostofDisease_Eng_v10.cs:7662
           - type: 'break'
         # ../.source/TheCostofDisease_Eng_v10.cs:7664
         - type: 'conditional'
-          # ../en-US.restext:118 | "hunters"
+          # ../en-US.restext:122 | "hunters"
           if: 'allyD == "restext://Faction_Hunters_Lower"'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:7666
           - type: 'text'
-            # ../en-US.restext:851 | "{nameD} III **immediately..."
+            # ../en-US.restext:850 | "{nameD} III **immediately..."
             value: 'restext://LosingOrderAid_008'
           # ../.source/TheCostofDisease_Eng_v10.cs:7673
           - type: 'break'
         # ../.source/TheCostofDisease_Eng_v10.cs:7675
         - type: 'conditional'
-          # ../en-US.restext:118 | "hunters"
+          # ../en-US.restext:122 | "hunters"
           if: 'allyE == "restext://Faction_Hunters_Lower"'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:7677
           - type: 'text'
-            # ../en-US.restext:852 | "{nameE} III **immediately..."
+            # ../en-US.restext:851 | "{nameE} III **immediately..."
             value: 'restext://LosingOrderAid_009'
           # ../.source/TheCostofDisease_Eng_v10.cs:7684
           - type: 'break'
         # ../.source/TheCostofDisease_Eng_v10.cs:7686
         - type: 'conditional'
-          # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
-          # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
-          # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
-          # ../en-US.restext:118 | Faction_Hunters_Lower | "hunters"
+          # ../en-US.restext:122 | Faction_Hunters_Lower | "hunters"
+          # ../en-US.restext:122 | Faction_Hunters_Lower | "hunters"
+          # ../en-US.restext:122 | Faction_Hunters_Lower | "hunters"
+          # ../en-US.restext:122 | Faction_Hunters_Lower | "hunters"
           if: '(allyA != "restext://Faction_Hunters_Lower") && (allyB != "restext://Faction_Hunters_Lower") && (allyC != "restext://Faction_Hunters_Lower") && (allyD != "restext://Faction_Hunters_Lower")'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:7688
           - type: 'text'
-            # ../en-US.restext:848 | "{nameA} III **immediately..."
+            # ../en-US.restext:847 | "{nameA} III **immediately..."
             value: 'restext://LosingOrderAid_005'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:7587
@@ -145,24 +145,24 @@ nodes:
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:7598
     - type: 'text'
-      # ../en-US.restext:846 | "It was during a period of..."
+      # ../en-US.restext:845 | "It was during a period of..."
       value: 'restext://LosingOrderAid_003'
     # ../.source/TheCostofDisease_Eng_v10.cs:7599
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:7601
     - type: 'text'
-      # ../en-US.restext:847 | "\"Your family has made a ..."
+      # ../en-US.restext:846 | "\"Your family has made a ..."
       value: 'restext://LosingOrderAid_004'
     # ../.source/TheCostofDisease_Eng_v10.cs:7602
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:7605
     - type: 'conditional'
-      # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
-      # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
-      # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
-      # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+      # ../en-US.restext:127 | Faction_Wolves_Lower | "wolves"
+      # ../en-US.restext:127 | Faction_Wolves_Lower | "wolves"
+      # ../en-US.restext:127 | Faction_Wolves_Lower | "wolves"
+      # ../en-US.restext:127 | Faction_Wolves_Lower | "wolves"
       if: '(allyA != "restext://Faction_Wolves_Lower") && (allyB != "restext://Faction_Wolves_Lower") && (allyC != "restext://Faction_Wolves_Lower") && (allyD != "restext://Faction_Wolves_Lower")'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:7607
@@ -178,7 +178,7 @@ nodes:
         # ../en-US.restext:39 | "Click to continue..."
         label: 'restext://Click_ContinueEllipsis_C'
         target: 'TaxesEventStart' # ./00190-TaxesEventStart.mws.yaml
-        # ../en-US.restext:357 | "Close"
+        # ../en-US.restext:356 | "Close"
         okay: 'restext://UIButton_Close'
         snapshot: true
         header:
@@ -189,68 +189,68 @@ nodes:
         content:
         # ../.source/TheCostofDisease_Eng_v10.cs:7720
         - type: 'conditional'
-          # ../en-US.restext:123 | "wolves"
+          # ../en-US.restext:127 | "wolves"
           if: 'allyA == "restext://Faction_Wolves_Lower"'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:7722
           - type: 'text'
-            # ../en-US.restext:848 | "{nameA} III **immediately..."
+            # ../en-US.restext:847 | "{nameA} III **immediately..."
             value: 'restext://LosingOrderAid_005'
           # ../.source/TheCostofDisease_Eng_v10.cs:7729
           - type: 'break'
         # ../.source/TheCostofDisease_Eng_v10.cs:7731
         - type: 'conditional'
-          # ../en-US.restext:123 | "wolves"
+          # ../en-US.restext:127 | "wolves"
           if: 'allyB == "restext://Faction_Wolves_Lower"'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:7733
           - type: 'text'
-            # ../en-US.restext:849 | "{nameB} III **immediately..."
+            # ../en-US.restext:848 | "{nameB} III **immediately..."
             value: 'restext://LosingOrderAid_006'
           # ../.source/TheCostofDisease_Eng_v10.cs:7740
           - type: 'break'
         # ../.source/TheCostofDisease_Eng_v10.cs:7742
         - type: 'conditional'
-          # ../en-US.restext:123 | "wolves"
+          # ../en-US.restext:127 | "wolves"
           if: 'allyC == "restext://Faction_Wolves_Lower"'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:7744
           - type: 'text'
-            # ../en-US.restext:850 | "{nameC} III **immediately..."
+            # ../en-US.restext:849 | "{nameC} III **immediately..."
             value: 'restext://LosingOrderAid_007'
           # ../.source/TheCostofDisease_Eng_v10.cs:7751
           - type: 'break'
         # ../.source/TheCostofDisease_Eng_v10.cs:7753
         - type: 'conditional'
-          # ../en-US.restext:123 | "wolves"
+          # ../en-US.restext:127 | "wolves"
           if: 'allyD == "restext://Faction_Wolves_Lower"'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:7755
           - type: 'text'
-            # ../en-US.restext:851 | "{nameD} III **immediately..."
+            # ../en-US.restext:850 | "{nameD} III **immediately..."
             value: 'restext://LosingOrderAid_008'
           # ../.source/TheCostofDisease_Eng_v10.cs:7762
           - type: 'break'
         # ../.source/TheCostofDisease_Eng_v10.cs:7764
         - type: 'conditional'
-          # ../en-US.restext:123 | "wolves"
+          # ../en-US.restext:127 | "wolves"
           if: 'allyE == "restext://Faction_Wolves_Lower"'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:7766
           - type: 'text'
-            # ../en-US.restext:852 | "{nameE} III **immediately..."
+            # ../en-US.restext:851 | "{nameE} III **immediately..."
             value: 'restext://LosingOrderAid_009'
           # ../.source/TheCostofDisease_Eng_v10.cs:7773
           - type: 'break'
         # ../.source/TheCostofDisease_Eng_v10.cs:7775
         - type: 'conditional'
-          # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
-          # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
-          # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
-          # ../en-US.restext:123 | Faction_Wolves_Lower | "wolves"
+          # ../en-US.restext:127 | Faction_Wolves_Lower | "wolves"
+          # ../en-US.restext:127 | Faction_Wolves_Lower | "wolves"
+          # ../en-US.restext:127 | Faction_Wolves_Lower | "wolves"
+          # ../en-US.restext:127 | Faction_Wolves_Lower | "wolves"
           if: '(allyA != "restext://Faction_Wolves_Lower") && (allyB != "restext://Faction_Wolves_Lower") && (allyC != "restext://Faction_Wolves_Lower") && (allyD != "restext://Faction_Wolves_Lower")'
           then:
           # ../.source/TheCostofDisease_Eng_v10.cs:7777
           - type: 'text'
-            # ../en-US.restext:848 | "{nameA} III **immediately..."
+            # ../en-US.restext:847 | "{nameA} III **immediately..."
             value: 'restext://LosingOrderAid_005'

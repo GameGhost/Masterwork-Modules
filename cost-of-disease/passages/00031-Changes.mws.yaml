@@ -2,27 +2,27 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Changes'
-# ../en-US.restext:612 | "A Return to Civility"
+# ../en-US.restext:611 | "A Return to Civility"
 title: 'restext://Changes_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:4319
 - type: 'text'
-  # ../en-US.restext:613 | "Though the decayed trails..."
+  # ../en-US.restext:612 | "Though the decayed trails..."
   value: 'restext://Changes_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:4320
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:4322
 - type: 'text'
-  # ../en-US.restext:614 | "It was upon these morning..."
+  # ../en-US.restext:613 | "It was upon these morning..."
   value: 'restext://Changes_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:4323
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:4325
 - type: 'text'
-  # ../en-US.restext:615 | "Armed with an inimitable ..."
+  # ../en-US.restext:614 | "Armed with an inimitable ..."
   value: 'restext://Changes_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:4328
 - type: 'assign'
@@ -37,7 +37,7 @@ nodes:
   # ../en-US.restext:39 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'Diseases1' # ./00104-Diseases1.mws.yaml
-  # ../en-US.restext:357 | "Close"
+  # ../en-US.restext:356 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -48,7 +48,7 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:4348
   - type: 'text'
-    # ../en-US.restext:616 | "All players discard their..."
+    # ../en-US.restext:615 | "All players discard their..."
     value: 'restext://Changes_005'
   # ../.source/TheCostofDisease_Eng_v10.cs:4354
   - type: 'assign'
@@ -56,7 +56,7 @@ nodes:
     expr: '[1, 2, 3, 4, 5]'
   # ../.source/TheCostofDisease_Eng_v10.cs:4355
   - type: 'conditional'
-    # ../en-US.restext:197 | "bank"
+    # ../en-US.restext:201 | "bank"
     if: 'building == "restext://Location_Bank_Lower"'
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:4357
@@ -84,14 +84,14 @@ nodes:
   - type: 'switch'
     on: 'building'
     cases:
-    # ../en-US.restext:197 | "bank"
+    # ../en-US.restext:201 | "bank"
     - match: 'restext://Location_Bank_Lower'
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:4369
       - type: 'assign'
         var: 'buildC'
         expr: '2'
-    # ../en-US.restext:198 | "library"
+    # ../en-US.restext:202 | "library"
     - match: 'restext://Location_Library_Lower'
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:4373

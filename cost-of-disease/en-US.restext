@@ -65,6 +65,10 @@ Click_StorybookMessage=click here for a Storybook message.
 Click_TabulateScores=Click to tabulate scores for posterity...
 Click_VotedCleanse=Click here if you voted to Cleanse.
 Click_VotedNay=Click here if you voted Nay.
+Common_001=**A Beast Amongst the Stony Crags**
+Common_002=**The Pathway Was Blocked**
+Common_003=**A Monster Emerges from the Forest**
+Common_004=**A Town Encounter**
 Common_Gentleman=gentleman
 Common_Gentlewoman=gentlewoman
 Common_Private_Decision_Warning=**Do not allow the other players to see the Storybook while making the decision below.**
@@ -318,10 +322,8 @@ Storybook_HandToMayor_ReadAloud=**Carefully hand the Storybook to {mayor} III. T
 Storybook_PickUpPrivate_Bold=**Carefully pick up the Storybook and do not allow any other players to see the screen.**
 Storybook_PickUpPrivate_Plain=**Carefully pick up the storybook and do not allow any other players to see the screen.**
 Symposium_Rule=At the end of the second round, a Symposium in the field of {sci3} will be held to determine the fate of a **University** in town in the spot where the Traveling Caravan resides. Success will be determined by our combined dedication to completing {sci3} Experiments.
-Title_ATownEncounter=A Town Encounter
 Title_AbsentParent=Absent Parent
 Title_AdvancementsIn=Advancements in {sci3}
-Title_BeastAmongstStonyCrags=A Beast Amongst the Stony Crags
 Title_CharitableChurch=Charitable Church
 Title_Devastation=Devastation
 Title_EarlyYears=Early Years
@@ -334,15 +336,12 @@ Title_InPreparationForTheHunt=In Preparation for the Hunt
 Title_LateYears=Late Years
 Title_MiddleYears=Middle Years
 Title_MinorDeleteriousEffect=Minor Deleterious Effect
-Title_MonsterEmergesFromForest=A Monster Emerges from the Forest
 Title_MoreTimeThanEver=More Time Than Ever
 Title_MovingForward=Moving Forward
 Title_MyFathersWork=MY FATHER'S WORK
 Title_OrderRevealed=The Order Revealed
-Title_PathwayWasBlocked=The Pathway Was Blocked
 Title_SearchForTheCure=SEARCH FOR THE CURE
 Title_StrengthCanBeMine=Strength Can Be Mine
-Title_SwornStatement=SWORN STATEMENT
 Title_TasteOfEvil=A Taste of Evil
 Title_TheCrawl=THE CRAWL
 Title_TheFormOfTheWolf=The Form of the Wolf
@@ -696,15 +695,15 @@ CureMoonSick1_006=They wrote of torn clothing, strange awakenings half-naked in 
 CureMoonSick1_007=When they discovered the eviscerated body of one of their servants skewered upon the metal fence that lined the grounds, the bestial teeth and claw marks told a new story. They steeled their mind against the distraction, recommitting themselves with deadly focus to the task at hand.
 
 # passages/00048-bar1.mws.yaml
-bar1_002=Case {_rnd_bar1_0} -HDG- {_rnd_bar1_1}
-bar1_003=After a brief excursion to the local pub, I happened to engage in a spirited conversation with the **Blacksmith’s** daughter. While I am unable to discern the reasoning behind my actions, I have since apologized for my repeated comments besmirching her virtuous nature; comments which apparently resulted in a minor altercation with a gentlemen or two at the fine establishment.
-bar1_004=It was around midnight that I decided to make a quiet exit, in order to properly avoid any further antagonism. My clothes, soiled and bloodied by the ensuing brawl, were found discarded along the muddy trek to the Blacksmith's forge. While I have no recollection of the ensuing events, multiple witnesses attest that I then proceeded to brand the blacksmith's dog and passed out naked in the slack tub. Our family’s reputation was certainly sullied at the Blacksmith and I resolved to avoid it in the future.
-bar1_005=After a brief excursion to the local pub, I happened to engage in a spirited conversation with the **Blacksmith’s** son. Being slightly out of my wits, his slightly improper offer to accompany him home to his chateau for further libations appealed. We engaged in a delightful conversation, so intriguing in fact, that I accepted his generous offer of temporary lodging for the evening. I will spare the details of our respectable and entirely benign conversation.
-bar1_006=We both decided to disrobe as any person would when making nightly preparations for sleep. Regrettably, though I cannot recollect how it occurred, the Blacksmith was unpleased to discover us similarly nude and entwined in this state the next morning, surrounded by several defiled tools from the forge. Our family’s reputation was certainly sullied at the Blacksmith and I resolved to avoid it in the future.
-bar1_007=Place a {icon:creepy_icon} token on the **Blacksmith**. When a player takes an action at this location, they **gain 1** {icon:creepy_icon} for every {icon:creepy_icon} token on that location.
+bar1_001=**SWORN STATEMENT - Case {_rnd_bar1_0} -HDG- {_rnd_bar1_1}**
+bar1_002=After a brief excursion to the local pub, I happened to engage in a spirited conversation with the **Blacksmith’s** daughter. While I am unable to discern the reasoning behind my actions, I have since apologized for my repeated comments besmirching her virtuous nature; comments which apparently resulted in a minor altercation with a gentlemen or two at the fine establishment.
+bar1_003=It was around midnight that I decided to make a quiet exit, in order to properly avoid any further antagonism. My clothes, soiled and bloodied by the ensuing brawl, were found discarded along the muddy trek to the Blacksmith's forge. While I have no recollection of the ensuing events, multiple witnesses attest that I then proceeded to brand the blacksmith's dog and passed out naked in the slack tub. Our family’s reputation was certainly sullied at the Blacksmith and I resolved to avoid it in the future.
+bar1_004=After a brief excursion to the local pub, I happened to engage in a spirited conversation with the **Blacksmith’s** son. Being slightly out of my wits, his slightly improper offer to accompany him home to his chateau for further libations appealed. We engaged in a delightful conversation, so intriguing in fact, that I accepted his generous offer of temporary lodging for the evening. I will spare the details of our respectable and entirely benign conversation.
+bar1_005=We both decided to disrobe as any person would when making nightly preparations for sleep. Regrettably, though I cannot recollect how it occurred, the Blacksmith was unpleased to discover us similarly nude and entwined in this state the next morning, surrounded by several defiled tools from the forge. Our family’s reputation was certainly sullied at the Blacksmith and I resolved to avoid it in the future.
+bar1_006=Place a {icon:creepy_icon} token on the **Blacksmith**. When a player takes an action at this location, they **gain 1** {icon:creepy_icon} for every {icon:creepy_icon} token on that location.
 
 # passages/00049-bar2.mws.yaml
-bar2_001=Case {_rnd_bar2_0}-HDG-{_rnd_bar2_1}
+bar2_001=**SWORN STATEMENT - Case {_rnd_bar2_0}-HDG-{_rnd_bar2_1}**
 bar2_002=I find the accusations toward my conduct and character most disturbing. To insinuate that I was openly consorting with individuals of ill-repute and offered compensation for illicit activities, why it is as absurd as the other charges against me from that evening.
 bar2_003=While I admit to having a few additional libations, it is most presumptuous to believe that just because I was found near the open door of my carriage in the buff, covered in tomato paste, with lipstick impressions across the entirety of my form, that I would be held responsible for the debasing of a bushel of cherry tomatoes and several other vegetable stocks.
 bar2_004=Despite my personal objections, I have summarily reimbursed the stall owner for their produce and discretion in the matter. Our family’s reputation was certainly sullied at the **Farmer’s Market** and I resolved to avoid it in the future.
@@ -714,7 +713,7 @@ bar2_007=I would also like to note that the charges of public nudity against me 
 bar2_008=Place a {icon:creepy_icon} token on the **Farmer's Market**. When a player takes an action at this location, they **gain 1** {icon:creepy_icon} for every {icon:creepy_icon} token on that location.
 
 # passages/00050-bar3.mws.yaml
-bar3_001=Case {_rnd_bar3_0}-HDG-{_rnd_bar3_1}
+bar3_001=**SWORN STATEMENT - Case {_rnd_bar3_0}-HDG-{_rnd_bar3_1}**
 bar3_002=During a spirited conversation at the local pub, I was informed of a fine establishment with premium snuff and tobacco on the outskirts of town. While I cannot recall if I partook, I was made aware that this establishment promoted opium use, which is a vile indulgence indeed. Sadly, I admit poor judgement in not exiting the premises immediately upon this discovery and my subsequent refusal to leave after four hours had elapsed.
 bar3_003=An exchange of bitter words may have occurred, which resulted in myself yelling expletives and unfortunate ethnic slurs which I would dare not repeat. At some point my clothes had vanished, so I was at a distinct physical disadvantage when I was swiftly removed from the area, not without sustaining several bruises from the scuffle (which, to note, I have not pressed charges for). Our family’s reputation was certainly sullied at the **Fortune Teller** and I resolved to avoid it in the future.
 bar3_004=It was very much in poor taste for a **fortune teller** to summarily dismiss my romantic advances given my current social status and level of wealth. However, I admit that my inebriated reaction to steal and destroy her Tarot deck was highly juvenile. And the public defiling of said Tarot cards afterwards was certainly not in keeping with the standards of my aristocratic upbringing.
@@ -722,7 +721,7 @@ bar3_005=I have since reimbursed the Fortune Teller for her ruined Tarot cards, 
 bar3_006=Place a {icon:creepy_icon} token on the **Fortune Teller**. When a player takes an action at this location, they **gain 1** {icon:creepy_icon} for every {icon:creepy_icon} token on that location.
 
 # passages/00051-bar4.mws.yaml
-bar4_001=Case {_rnd_bar4_0}-HDG-{_rnd_bar4_1}
+bar4_001=**SWORN STATEMENT - Case {_rnd_bar4_0}-HDG-{_rnd_bar4_1}**
 bar4_002=The celebration had been exceedingly rowdy. I could not recall whose birthday or anniversary was being celebrated, but I could remember my celebratory stilted walk to the **General Store** near midnight. In my admittedly intoxicated state, I required sustenance.
 bar4_003=Unfortunately, my hunger pangs may have overtaken my sensibilities. A rock may have been plunged through the front window, and I may have been discovered the next morning by the constabulary, passed out naked on the wooden floor, surrounded by several empty cartons of canned sardines, the contents of which may have been returned to the same general area in a more semi-digested form. Our family’s reputation was certainly sullied at the General Store and I resolved to avoid it in the future.
 bar4_004=The proprietors of the General Store, Hagen and Mabel Varga, are respectable, upstanding citizens of whom I have a deep respect. Their fine emporium of quality products is a grand example of successful private business ownership that positively serves the community.
@@ -731,7 +730,7 @@ bar4_006=I regret that my nude form was discovered curled up at their doorstep b
 bar4_007=Place a {icon:creepy_icon} token on the **General Store**. When a player takes an action at this location, they **gain 1** {icon:creepy_icon} for every {icon:creepy_icon} token on that location.
 
 # passages/00052-bar5.mws.yaml
-bar5_001=Case {_rnd_bar5_0}-HDG-{_rnd_bar5_1}
+bar5_001=**SWORN STATEMENT - Case {_rnd_bar5_0}-HDG-{_rnd_bar5_1}**
 bar5_002=I vaguely remember the phrase that began the argument, but the stitches above my left eye from a shattered glass mug jogged my recollection of the ensuing brawl. A quick nightcap turned into an extended stay of tumbled barstools, belligerence, and wild accusations. My injuries must have been extensive as my memory ceased soon after.
 bar5_003=My displeased spouse informed me that I was currently the height of gossip within the town. First-hand accounts - of which I cannot confirm given my state of awareness - described how I spat blood in a nurse’s face, tore off my leggings (and undergarments), tried to punch the vicar thrice, and defiled myself in the lobby. Our family’s reputation was certainly sullied at the **Hospital** and I resolved to avoid it in the future.
 bar5_004=I should not have attempted to perform a surgical procedure in my state. Nor should I have locked myself in the surgical arena with a patient, barred the door, and undressed, dousing myself in a carbolic acid solution for the purposes of sterilization. However, my honor had been questioned at the pub and I deemed it only necessary to demonstrate my surgical prowess.
@@ -739,13 +738,13 @@ bar5_005=The demonstration of my experimentation capabilities - which are normal
 bar5_006=Place a {icon:creepy_icon} token on the **Hospital**. When a player takes an action at this location, they **gain 1** {icon:creepy_icon} for every {icon:creepy_icon} token on that location.
 
 # passages/00053-bar6.mws.yaml
-bar6_001=Case {_rnd_bar6_0}-HDG-{_rnd_bar6_1}
+bar6_001=**SWORN STATEMENT - Case {_rnd_bar6_0}-HDG-{_rnd_bar6_1}**
 bar6_002=Although witnesses claim that I had carried a makeshift torch several blocks to the destination, my ignition of nearby gasoline reserves was entirely accidental. My intent, of course, was a comical reenactment of the wiles of recent angry mobs; clearly satirical in nature. A vaudevillian parody. However, the French performance art overtones due to my regrettable nudity were not considered with high regard. The resulting blaze that consumed over half of the Laborer’s Union building that night was also not met with the warmest of receptions.
 bar6_003=Honestly, the Laborer’s Union building had not been updated for years. It was overdue for renovations. However, our family’s reputation was certainly sullied at the **Laborer’s Union** and I resolved to avoid it in the future.
 bar6_004=Place a {icon:creepy_icon} token on the **Laborer's Union**. When a player takes an action at this location, they **gain 1** {icon:creepy_icon} for every {icon:creepy_icon} token on that location.
 
 # passages/00054-bar7.mws.yaml
-bar7_001=Case {_rnd_bar7_0}-HDG-{_rnd_bar7_1}
+bar7_001=**SWORN STATEMENT - Case {_rnd_bar7_0}-HDG-{_rnd_bar7_1}**
 bar7_002=While the cemetery has certainly been a crucial source of ingredients for my experiments - acquired by pruning local flora and herbs - calling attention to this fact very loudly while inside the local pub was probably a mistake. Openly inviting all patrons to join me in the cemetery to kick over headstones and then running directly to said location to do so was a clear error of judgement. My alleged indecent exposure whilst doing so, also unfortunate.
 bar7_003=After being treated for a sprained ankle, I spent a night half-remembered in the local police station. Our family’s reputation was certainly sullied at the **Cemetery** and I resolved to avoid it in the future.
 bar7_004=Place a {icon:creepy_icon} token on the **Cemetery**. When a player takes an action at this location, they **gain 1** {icon:creepy_icon} for every {icon:creepy_icon} token on that location.

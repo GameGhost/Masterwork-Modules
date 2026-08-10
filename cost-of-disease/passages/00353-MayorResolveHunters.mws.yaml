@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'MayorResolveHunters'
-# ../en-US.restext:2812 | "Recompense for Past Leadership"
+# ../en-US.restext:2811 | "Recompense for Past Leadership"
 title: 'restext://MayorResolveHunters_001'
 tags:
 - 'revised'
@@ -10,21 +10,21 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:34715
 - type: 'text'
-  # ../en-US.restext:317 | "**Carefully hand the Stor..."
+  # ../en-US.restext:321 | "**Carefully hand the Stor..."
   value: 'restext://Storybook_HandToMayor_ReadAloud'
 # ../.source/TheCostofDisease_Eng_v10.cs:34720
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:34722
 - type: 'text'
-  # ../en-US.restext:2813 | "Though memories of the pa..."
+  # ../en-US.restext:2812 | "Though memories of the pa..."
   value: 'restext://MayorResolveHunters_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:34729
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:34731
 - type: 'text'
-  # ../en-US.restext:2814 | "{mayor}'s family legacy, ..."
+  # ../en-US.restext:2813 | "{mayor}'s family legacy, ..."
   value: 'restext://MayorResolveHunters_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:34734
 - type: 'break'
@@ -35,7 +35,7 @@ nodes:
   # ../en-US.restext:39 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
   target: 'Huntround2' # ./00324-Huntround2.mws.yaml
-  # ../en-US.restext:357 | "Close"
+  # ../en-US.restext:356 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true
   header:
@@ -50,7 +50,7 @@ nodes:
     expr: 'rand_between(1, 2, "MayorResolveHunters_0")'
   # ../.source/TheCostofDisease_Eng_v10.cs:34755
   - type: 'text'
-    # ../en-US.restext:2815 | "{mayor} gains **{_rnd_May..."
+    # ../en-US.restext:2814 | "{mayor} gains **{_rnd_May..."
     value: 'restext://MayorResolveHunters_004'
     lets:
     - '_rnd_MayorResolveHunters_0'
@@ -59,5 +59,5 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:34768
   - type: 'text'
-    # ../en-US.restext:2816 | "Return the **Commemorativ..."
+    # ../en-US.restext:2815 | "Return the **Commemorativ..."
     value: 'restext://MayorResolveHunters_005'

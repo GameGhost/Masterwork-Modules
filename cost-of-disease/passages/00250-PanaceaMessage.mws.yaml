@@ -6,7 +6,7 @@ layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:27042
 - type: 'text'
-  # ../en-US.restext:318 | "**Carefully pick up the S..."
+  # ../en-US.restext:322 | "**Carefully pick up the S..."
   value: 'restext://Storybook_PickUpPrivate_Bold'
 # ../.source/TheCostofDisease_Eng_v10.cs:27045
 - type: 'break'
@@ -16,53 +16,53 @@ nodes:
   # ../en-US.restext:56 | "Once you are ready, click..."
   label: 'restext://Click_RevealSecretConversation'
   layout: 'reveal'
-  # ../en-US.restext:357 | "Close"
+  # ../en-US.restext:356 | "Close"
   cancel: 'restext://UIButton_Close'
   snapshot: true
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:27090
   - type: 'text'
-    # ../en-US.restext:2145 | "**Unintended Results**"
+    # ../en-US.restext:2144 | "**Unintended Results**"
     value: 'restext://PanaceaMessage_001'
   # ../.source/TheCostofDisease_Eng_v10.cs:27092
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:27093
   - type: 'text'
-    # ../en-US.restext:2146 | "The dedication to the tas..."
+    # ../en-US.restext:2145 | "The dedication to the tas..."
     value: 'restext://PanaceaMessage_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:27094
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:27096
   - type: 'text'
-    # ../en-US.restext:2147 | "While technically the res..."
+    # ../en-US.restext:2146 | "While technically the res..."
     value: 'restext://PanaceaMessage_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:27100
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:27102
   - type: 'text'
-    # ../en-US.restext:2148 | "A concoction such as this..."
+    # ../en-US.restext:2147 | "A concoction such as this..."
     value: 'restext://PanaceaMessage_004'
   # ../.source/TheCostofDisease_Eng_v10.cs:27105
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:27109
   - type: 'text'
-    # ../en-US.restext:144 | "**CHOOSE:**"
+    # ../en-US.restext:148 | "**CHOOSE:**"
     value: 'restext://Heading_ChooseColon_Caps'
   # ../.source/TheCostofDisease_Eng_v10.cs:27111
   - type: 'break'
   # ../.source/TheCostofDisease_Eng_v10.cs:27114
   - type: 'text'
-    # ../en-US.restext:2149 | "**Do you wish to publish ..."
+    # ../en-US.restext:2148 | "**Do you wish to publish ..."
     value: 'restext://PanaceaMessage_005'
   # ../.source/TheCostofDisease_Eng_v10.cs:27117
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:27120
   - type: 'link'
-    # ../en-US.restext:2150 | "Publish my findings for fame."
+    # ../en-US.restext:2149 | "Publish my findings for fame."
     label: 'restext://PanaceaMessage_006'
     target: 'Panacea1' # ./00058-Panacea1.mws.yaml
     snapshot: true
@@ -86,7 +86,7 @@ nodes:
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:27126
       - type: 'link'
-        # ../en-US.restext:2151 | "Unleash my creation!"
+        # ../en-US.restext:2150 | "Unleash my creation!"
         label: 'restext://PanaceaMessage_008'
         target: 'Hospital1' # ./00003-Hospital1.mws.yaml
         snapshot: true
@@ -103,7 +103,7 @@ nodes:
       nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:27131
       - type: 'link'
-        # ../en-US.restext:2151 | "Unleash my creation!"
+        # ../en-US.restext:2150 | "Unleash my creation!"
         label: 'restext://PanaceaMessage_008'
         target: 'Hospital2' # ./00034-Hospital2.mws.yaml
         snapshot: true
@@ -119,7 +119,7 @@ nodes:
     default:
     # ../.source/TheCostofDisease_Eng_v10.cs:27136
     - type: 'link'
-      # ../en-US.restext:2151 | "Unleash my creation!"
+      # ../en-US.restext:2150 | "Unleash my creation!"
       label: 'restext://PanaceaMessage_008'
       target: 'PanaceaTooOld' # ./00059-PanaceaTooOld.mws.yaml
       snapshot: true

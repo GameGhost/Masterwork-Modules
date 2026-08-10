@@ -1,11 +1,8 @@
 ﻿# ../.source/TheCostofDisease_Eng_v10.cs:6319
+# include_passage target — spliced into other passages' bodies at render time; never displays its own title
 ---
 format: 'mws/0.4'
 passage_id: 'bar2'
-# ../en-US.restext:345 | "SWORN STATEMENT"
-title: 'restext://Title_SwornStatement'
-# ../en-US.restext:707 | "Case {_rnd_bar2_0}-HDG-{_..."
-subtitle: 'restext://bar2_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:6324
@@ -16,55 +13,65 @@ nodes:
 - type: 'let'
   var: '_rnd_bar2_1'
   expr: 'rand_between(1, 999, "bar2_1")'
+# ../.source/TheCostofDisease_Eng_v10.cs:6323
+- type: 'text'
+  # ../en-US.restext:706 | "**SWORN STATEMENT - Case ..."
+  value: 'restext://bar2_001'
+  lets:
+  - '_rnd_bar2_0'
+  - '_rnd_bar2_1'
 # ../.source/TheCostofDisease_Eng_v10.cs:6329
 - type: 'assign'
   var: 'bar2'
   expr: 'rand_between(1, 2, "bar2_2")'
+# ../.source/TheCostofDisease_Eng_v10.cs:6328
+- type: 'break'
+  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:6331
 - type: 'conditional'
   if: 'bar2 == 1'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:6333
   - type: 'text'
-    # ../en-US.restext:711 | "While many first-hand acc..."
+    # ../en-US.restext:710 | "While many first-hand acc..."
     value: 'restext://bar2_005'
   # ../.source/TheCostofDisease_Eng_v10.cs:6334
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:6336
   - type: 'text'
-    # ../en-US.restext:712 | "I awoke in the stables be..."
+    # ../en-US.restext:711 | "I awoke in the stables be..."
     value: 'restext://bar2_006'
   # ../.source/TheCostofDisease_Eng_v10.cs:6339
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:6341
   - type: 'text'
-    # ../en-US.restext:713 | "I would also like to note..."
+    # ../en-US.restext:712 | "I would also like to note..."
     value: 'restext://bar2_007'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:6351
   - type: 'text'
-    # ../en-US.restext:708 | "I find the accusations to..."
+    # ../en-US.restext:707 | "I find the accusations to..."
     value: 'restext://bar2_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:6352
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:6354
   - type: 'text'
-    # ../en-US.restext:709 | "While I admit to having a..."
+    # ../en-US.restext:708 | "While I admit to having a..."
     value: 'restext://bar2_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:6355
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:6357
   - type: 'text'
-    # ../en-US.restext:710 | "Despite my personal objec..."
+    # ../en-US.restext:709 | "Despite my personal objec..."
     value: 'restext://bar2_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:6370
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:356 | "Accept"
+  # ../en-US.restext:355 | "Accept"
   okay: 'restext://UIButton_Accept'
   header:
   # ../.source/TheCostofDisease_Eng_v10.cs:6374
@@ -74,5 +81,5 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:6376
   - type: 'text'
-    # ../en-US.restext:714 | "Place a {icon:creepy_icon..."
+    # ../en-US.restext:713 | "Place a {icon:creepy_icon..."
     value: 'restext://bar2_008'

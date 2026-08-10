@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'NoUni2'
-# ../en-US.restext:347 | "THE CRAWL"
+# ../en-US.restext:346 | "THE CRAWL"
 title: 'restext://Title_TheCrawl'
-# ../en-US.restext:335 | "Middle Years"
+# ../en-US.restext:337 | "Middle Years"
 subtitle: 'restext://Title_MiddleYears'
 tags:
 - 'HUB'
@@ -16,13 +16,13 @@ nodes:
   expr: '17'
 # ../.source/TheCostofDisease_Eng_v10.cs:5216
 - type: 'section'
-  # ../en-US.restext:169 | "{icon:storybook} **PUB**"
+  # ../en-US.restext:173 | "{icon:storybook} **PUB**"
   title: 'restext://Heading_Pub'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5226
   - type: 'text'
-    # ../en-US.restext:282 | "If your token is overtake..."
+    # ../en-US.restext:286 | "If your token is overtake..."
     value: 'restext://Pub_ResetCreepy_Rule'
   # ../.source/TheCostofDisease_Eng_v10.cs:5242
   - type: 'link'
@@ -35,26 +35,26 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:5248
 - type: 'section'
-  # ../en-US.restext:161 | "**MASTERWORK**"
+  # ../en-US.restext:165 | "**MASTERWORK**"
   title: 'restext://Heading_Masterwork'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5256
   - type: 'text'
-    # ../en-US.restext:215 | "A Masterwork can be compl..."
+    # ../en-US.restext:219 | "A Masterwork can be compl..."
     value: 'restext://Masterwork_CompleteRule'
 # ../.source/TheCostofDisease_Eng_v10.cs:5259
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:5263
 - type: 'section'
-  # ../en-US.restext:163 | "{icon:storybook} **Master..."
+  # ../en-US.restext:167 | "{icon:storybook} **Master..."
   title: 'restext://Heading_MasterworkRecipe'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5273
   - type: 'text'
-    # ../en-US.restext:211 | "To check your Masterwork ..."
+    # ../en-US.restext:215 | "To check your Masterwork ..."
     value: 'restext://Masterwork_CheckCost_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:5274
   - type: 'link'
@@ -67,13 +67,13 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:5280
 - type: 'section'
-  # ../en-US.restext:146 | "{icon:storybook} **Comple..."
+  # ../en-US.restext:150 | "{icon:storybook} **Comple..."
   title: 'restext://Heading_CompletedMasterwork'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5290
   - type: 'text'
-    # ../en-US.restext:216 | "If you are completing a M..."
+    # ../en-US.restext:220 | "If you are completing a M..."
     value: 'restext://Masterwork_Completing_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:5291
   - type: 'link'
@@ -86,30 +86,30 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:5298
 - type: 'section'
-  # ../en-US.restext:158 | "**Knowledge**"
+  # ../en-US.restext:162 | "**Knowledge**"
   title: 'restext://Heading_Knowledge'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5306
   - type: 'text'
-    # ../en-US.restext:295 | "At the end of each round,..."
+    # ../en-US.restext:299 | "At the end of each round,..."
     value: 'restext://Resource_KnowledgeMovesCreepyTrack_Rule'
 # ../.source/TheCostofDisease_Eng_v10.cs:5316
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:5320
 - type: 'section'
-  # ../en-US.restext:645 | "{icon:storybook} **Second..."
+  # ../en-US.restext:644 | "{icon:storybook} **Second..."
   title: 'restext://NoUni2_001'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:5332
   - type: 'popup'
     layout: 'end_of_round'
-    # ../en-US.restext:646 | "Click here at the end of ..."
+    # ../en-US.restext:645 | "Click here at the end of ..."
     label: 'restext://NoUni2_002'
     target: 'roundEndKnowledge' # ./00261-roundEndKnowledge.mws.yaml
-    # ../en-US.restext:361 | "End of Round"
+    # ../en-US.restext:360 | "End of Round"
     okay: 'restext://UIButton_EndOfRound'
     onclose:
     - type: 'assign'
@@ -118,10 +118,10 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:304 | "The Middle Years of the T..."
+      # ../en-US.restext:308 | "The Middle Years of the T..."
       value: 'restext://Round_GenerationIII_MiddleEnded'
     - type: 'break'
       style: 'paragraph'
     - type: 'text'
-      # ../en-US.restext:308 | "Then, perform all Start o..."
+      # ../en-US.restext:312 | "Then, perform all Start o..."
       value: 'restext://Round_StartLateYears_Rule'

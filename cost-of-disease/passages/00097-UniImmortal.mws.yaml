@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'UniImmortal'
-# ../en-US.restext:332 | "Immortality"
+# ../en-US.restext:334 | "Immortality"
 title: 'restext://Title_Immortality'
 layout: 'narration'
 nodes:
@@ -16,14 +16,14 @@ nodes:
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:10745
   - type: 'text'
-    # ../en-US.restext:249 | "Claiming an inheritance w..."
+    # ../en-US.restext:253 | "Claiming an inheritance w..."
     value: 'restext://Narrative_ImmortalityInheritance'
   # ../.source/TheCostofDisease_Eng_v10.cs:10746
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:10748
   - type: 'text'
-    # ../en-US.restext:250 | "For those whose parents h..."
+    # ../en-US.restext:254 | "For those whose parents h..."
     value: 'restext://Narrative_ImmortalityNoSecrets'
   # ../.source/TheCostofDisease_Eng_v10.cs:10750
   - type: 'break'
@@ -34,7 +34,7 @@ nodes:
     # ../en-US.restext:39 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: 'UniEquity' # ./00201-UniEquity.mws.yaml
-    # ../en-US.restext:357 | "Close"
+    # ../en-US.restext:356 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -50,7 +50,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10774
       - type: 'text'
-        # ../en-US.restext:1124 | "{nameA} retrieves a Caret..."
+        # ../en-US.restext:1123 | "{nameA} retrieves a Caret..."
         value: 'restext://UniImmortal_004'
       # ../.source/TheCostofDisease_Eng_v10.cs:10776
       - type: 'break'
@@ -61,7 +61,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10780
       - type: 'text'
-        # ../en-US.restext:1125 | "{nameB} retrieves a Caret..."
+        # ../en-US.restext:1124 | "{nameB} retrieves a Caret..."
         value: 'restext://UniImmortal_005'
       # ../.source/TheCostofDisease_Eng_v10.cs:10782
       - type: 'break'
@@ -72,7 +72,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10786
       - type: 'text'
-        # ../en-US.restext:1126 | "{nameC} retrieves a Caret..."
+        # ../en-US.restext:1125 | "{nameC} retrieves a Caret..."
         value: 'restext://UniImmortal_006'
       # ../.source/TheCostofDisease_Eng_v10.cs:10788
       - type: 'break'
@@ -83,7 +83,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10792
       - type: 'text'
-        # ../en-US.restext:1127 | "{nameD} retrieves a Caret..."
+        # ../en-US.restext:1126 | "{nameD} retrieves a Caret..."
         value: 'restext://UniImmortal_007'
       # ../.source/TheCostofDisease_Eng_v10.cs:10794
       - type: 'break'
@@ -94,7 +94,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10798
       - type: 'text'
-        # ../en-US.restext:1128 | "{nameE} retrieves a Caret..."
+        # ../en-US.restext:1127 | "{nameE} retrieves a Caret..."
         value: 'restext://UniImmortal_008'
       # ../.source/TheCostofDisease_Eng_v10.cs:10800
       - type: 'break'
@@ -109,7 +109,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:10804
       - type: 'text'
-        # ../en-US.restext:1124 | "{nameA} retrieves a Caret..."
+        # ../en-US.restext:1123 | "{nameA} retrieves a Caret..."
         value: 'restext://UniImmortal_004'
       # ../.source/TheCostofDisease_Eng_v10.cs:10806
       - type: 'break'
@@ -117,5 +117,5 @@ nodes:
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:10809
     - type: 'text'
-      # ../en-US.restext:192 | "Any player who did not re..."
+      # ../en-US.restext:196 | "Any player who did not re..."
       value: 'restext://Immortality_NoCaretakerPenalty_Rule'

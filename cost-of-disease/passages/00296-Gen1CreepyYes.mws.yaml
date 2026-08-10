@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Gen1CreepyYes'
-# ../en-US.restext:2461 | "Agreed"
+# ../en-US.restext:2460 | "Agreed"
 title: 'restext://Gen1CreepyYes_001'
 layout: 'narration'
 nodes:
@@ -13,14 +13,14 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:30464
   - type: 'text'
-    # ../en-US.restext:2465 | "The individual produced a..."
+    # ../en-US.restext:2464 | "The individual produced a..."
     value: 'restext://Gen1CreepyYes_005'
   # ../.source/TheCostofDisease_Eng_v10.cs:30465
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:30467
   - type: 'text'
-    # ../en-US.restext:2463 | "Perhaps it had been a cha..."
+    # ../en-US.restext:2462 | "Perhaps it had been a cha..."
     value: 'restext://Gen1CreepyYes_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:30469
   - type: 'break'
@@ -31,7 +31,7 @@ nodes:
     # ../en-US.restext:39 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: '${round == 1 ? "Fever1" : round == 2 ? "Fever2" : "Fever3"}' # ./00002-Fever1.mws.yaml, ./00029-Fever2.mws.yaml, ./00030-Fever3.mws.yaml
-    # ../en-US.restext:357 | "Close"
+    # ../en-US.restext:356 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -53,19 +53,19 @@ nodes:
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:30516
     - type: 'text'
-      # ../en-US.restext:2466 | "Gain $2. Then, return the..."
+      # ../en-US.restext:2465 | "Gain $2. Then, return the..."
       value: 'restext://Gen1CreepyYes_006'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:30483
   - type: 'text'
-    # ../en-US.restext:2462 | "The representative was ap..."
+    # ../en-US.restext:2461 | "The representative was ap..."
     value: 'restext://Gen1CreepyYes_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:30489
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:30491
   - type: 'text'
-    # ../en-US.restext:2463 | "Perhaps it had been a cha..."
+    # ../en-US.restext:2462 | "Perhaps it had been a cha..."
     value: 'restext://Gen1CreepyYes_003'
   # ../.source/TheCostofDisease_Eng_v10.cs:30493
   - type: 'break'
@@ -76,7 +76,7 @@ nodes:
     # ../en-US.restext:39 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
     target: '${round == 1 ? "Fever1" : round == 2 ? "Fever2" : "Fever3"}' # ./00002-Fever1.mws.yaml, ./00029-Fever2.mws.yaml, ./00030-Fever3.mws.yaml
-    # ../en-US.restext:357 | "Close"
+    # ../en-US.restext:356 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
     header:
@@ -98,5 +98,5 @@ nodes:
     - type: 'break'
     # ../.source/TheCostofDisease_Eng_v10.cs:30556
     - type: 'text'
-      # ../en-US.restext:2464 | "You may immediately take ..."
+      # ../en-US.restext:2463 | "You may immediately take ..."
       value: 'restext://Gen1CreepyYes_004'

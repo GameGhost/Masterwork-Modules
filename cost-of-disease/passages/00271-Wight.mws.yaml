@@ -1,14 +1,19 @@
 ﻿# ../.source/TheCostofDisease_Eng_v10.cs:28552
+# include_passage target — spliced into other passages' bodies at render time; never displays its own title
 ---
 format: 'mws/0.4'
 passage_id: 'Wight'
-# ../en-US.restext:342 | "The Pathway Was Blocked"
-title: 'restext://Title_PathwayWasBlocked'
 layout: 'narration'
 nodes:
+# ../.source/TheCostofDisease_Eng_v10.cs:28556
+- type: 'text'
+  # ../en-US.restext:69 | "**The Pathway Was Blocked**"
+  value: 'restext://Common_002'
+# ../.source/TheCostofDisease_Eng_v10.cs:28558
+- type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:28559
 - type: 'text'
-  # ../en-US.restext:2302 | "The stifling mist dissolv..."
+  # ../en-US.restext:2301 | "The stifling mist dissolv..."
   value: 'restext://Wight_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:28573
 - type: 'assign'
@@ -19,5 +24,5 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:28575
 - type: 'text'
-  # ../en-US.restext:2303 | "The **Shambling Wight** r..."
+  # ../en-US.restext:2302 | "The **Shambling Wight** r..."
   value: 'restext://Wight_002'

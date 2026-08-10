@@ -1,11 +1,8 @@
 ﻿# ../.source/TheCostofDisease_Eng_v10.cs:6491
+# include_passage target — spliced into other passages' bodies at render time; never displays its own title
 ---
 format: 'mws/0.4'
 passage_id: 'bar4'
-# ../en-US.restext:345 | "SWORN STATEMENT"
-title: 'restext://Title_SwornStatement'
-# ../en-US.restext:725 | "Case {_rnd_bar4_0}-HDG-{_..."
-subtitle: 'restext://bar4_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:6496
@@ -16,10 +13,20 @@ nodes:
 - type: 'let'
   var: '_rnd_bar4_1'
   expr: 'rand_between(1, 999, "bar4_1")'
+# ../.source/TheCostofDisease_Eng_v10.cs:6495
+- type: 'text'
+  # ../en-US.restext:724 | "**SWORN STATEMENT - Case ..."
+  value: 'restext://bar4_001'
+  lets:
+  - '_rnd_bar4_0'
+  - '_rnd_bar4_1'
 # ../.source/TheCostofDisease_Eng_v10.cs:6501
 - type: 'assign'
   var: 'bar4'
   expr: 'rand_between(1, 2, "bar4_2")'
+# ../.source/TheCostofDisease_Eng_v10.cs:6500
+- type: 'break'
+  style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:6503
 - type: 'switch'
   on: 'bar4'
@@ -28,39 +35,39 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:6505
     - type: 'text'
-      # ../en-US.restext:726 | "The celebration had been ..."
+      # ../en-US.restext:725 | "The celebration had been ..."
       value: 'restext://bar4_002'
     # ../.source/TheCostofDisease_Eng_v10.cs:6513
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:6515
     - type: 'text'
-      # ../en-US.restext:727 | "Unfortunately, my hunger ..."
+      # ../en-US.restext:726 | "Unfortunately, my hunger ..."
       value: 'restext://bar4_003'
   - match: 2
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:6519
     - type: 'text'
-      # ../en-US.restext:728 | "The proprietors of the Ge..."
+      # ../en-US.restext:727 | "The proprietors of the Ge..."
       value: 'restext://bar4_004'
     # ../.source/TheCostofDisease_Eng_v10.cs:6520
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:6522
     - type: 'text'
-      # ../en-US.restext:729 | "My unfortunate public sta..."
+      # ../en-US.restext:728 | "My unfortunate public sta..."
       value: 'restext://bar4_005'
     # ../.source/TheCostofDisease_Eng_v10.cs:6523
     - type: 'break'
       style: 'paragraph'
     # ../.source/TheCostofDisease_Eng_v10.cs:6525
     - type: 'text'
-      # ../en-US.restext:730 | "I regret that my nude for..."
+      # ../en-US.restext:729 | "I regret that my nude for..."
       value: 'restext://bar4_006'
 # ../.source/TheCostofDisease_Eng_v10.cs:6533
 - type: 'popup'
   layout: 'setup'
-  # ../en-US.restext:356 | "Accept"
+  # ../en-US.restext:355 | "Accept"
   okay: 'restext://UIButton_Accept'
   header:
   # ../.source/TheCostofDisease_Eng_v10.cs:6537
@@ -70,5 +77,5 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:6539
   - type: 'text'
-    # ../en-US.restext:731 | "Place a {icon:creepy_icon..."
+    # ../en-US.restext:730 | "Place a {icon:creepy_icon..."
     value: 'restext://bar4_007'
