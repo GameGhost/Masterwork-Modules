@@ -1,13 +1,19 @@
 ﻿# ../.source/FearoftheUnknown_Eng_v15.cs:36778
+# include_passage target — spliced into other passages' bodies at render time; never displays its own title
 ---
 format: 'mws/0.4'
 passage_id: 'AsylumQuestion2'
-# ../en-US.restext:2772 | "What is your worst fear?"
-title: 'restext://AsylumQuestion2_001'
 tags:
 - 'revised'
 layout: 'narration'
 nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:36782
+- type: 'text'
+  # ../en-US.restext:2772 | "**What is your worst fear?**"
+  value: 'restext://AsylumQuestion2_001'
+# ../.source/FearoftheUnknown_Eng_v15.cs:36784
+- type: 'break'
+  style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:36787
 - type: 'link'
   # ../en-US.restext:2773 | "Failure."

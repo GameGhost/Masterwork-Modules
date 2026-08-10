@@ -1,13 +1,19 @@
 ﻿# ../.source/FearoftheUnknown_Eng_v15.cs:37202
+# include_passage target — spliced into other passages' bodies at render time; never displays its own title
 ---
 format: 'mws/0.4'
 passage_id: 'CountQuestion2'
-# ../en-US.restext:2815 | "How would you describe yo..."
-title: 'restext://CountQuestion2_001'
 tags:
 - 'revised'
 layout: 'narration'
 nodes:
+# ../.source/FearoftheUnknown_Eng_v15.cs:37206
+- type: 'text'
+  # ../en-US.restext:2815 | "**How would you describe ..."
+  value: 'restext://CountQuestion2_001'
+# ../.source/FearoftheUnknown_Eng_v15.cs:37208
+- type: 'break'
+  style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:37211
 - type: 'link'
   # ../en-US.restext:2816 | "Frugal and Lean."
