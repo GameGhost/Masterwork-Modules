@@ -40,16 +40,16 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:4114
       - type: 'text'
-        # ../en-US.restext:603 | "**2**"
+        # ../en-US.restext:602 | "**2**"
         value: 'restext://Fever3_003'
       else:
       # ../.source/TheCostofDisease_Eng_v10.cs:4122
       - type: 'text'
-        # ../en-US.restext:602 | "**3**"
+        # ../en-US.restext:601 | "**3**"
         value: 'restext://Fever3_002'
     # ../.source/TheCostofDisease_Eng_v10.cs:4125
     - type: 'text'
-      # ../en-US.restext:604 | " of the Village Chronicle."
+      # ../en-US.restext:603 | " of the Village Chronicle."
       value: 'restext://Fever3_004'
     # ../.source/TheCostofDisease_Eng_v10.cs:4127
     - type: 'break'
@@ -61,7 +61,7 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:4131
       - type: 'text'
-        # ../en-US.restext:605 | "{mayor} gains 1VP."
+        # ../en-US.restext:604 | "{mayor} gains 1VP."
         value: 'restext://Fever3_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:4138
 - type: 'conditional'
@@ -76,7 +76,7 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:4152
     - type: 'text'
-      # ../en-US.restext:607 | "A new Bank has been built..."
+      # ../en-US.restext:606 | "A new Bank has been built..."
       value: 'restext://Fever3_007'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:4165
@@ -87,7 +87,7 @@ nodes:
     content:
     # ../.source/TheCostofDisease_Eng_v10.cs:4173
     - type: 'text'
-      # ../en-US.restext:606 | "A new Library has been bu..."
+      # ../en-US.restext:605 | "A new Library has been bu..."
       value: 'restext://Fever3_006'
 # ../.source/TheCostofDisease_Eng_v10.cs:4185
 - type: 'break'
@@ -177,7 +177,7 @@ nodes:
     snapshot: true
     content:
     - type: 'text'
-      # ../en-US.restext:608 | "The Late Years of the Fir..."
+      # ../en-US.restext:607 | "The Late Years of the Fir..."
       value: 'restext://Fever3_009'
     - type: 'break'
       style: 'paragraph'

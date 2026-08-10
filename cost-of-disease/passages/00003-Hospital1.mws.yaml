@@ -113,8 +113,8 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:1922
   - type: 'text'
-    # ../en-US.restext:406 | "The **first time** you vi..."
-    value: 'restext://Hospital1_011'
+    # ../en-US.restext:189 | "The **first time** you vi..."
+    value: 'restext://Hospital_FirstVisit_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:1929
   - type: 'link'
     # ../en-US.restext:37 | "click here to confirm."
@@ -126,20 +126,20 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:1935
   - type: 'text'
-    # ../en-US.restext:407 | "_(If, for any reason, you..."
+    # ../en-US.restext:406 | "_(If, for any reason, you..."
     value: 'restext://Hospital1_013'
 # ../.source/TheCostofDisease_Eng_v10.cs:1939
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:1943
 - type: 'section'
-  # ../en-US.restext:408 | "**Hospital**"
+  # ../en-US.restext:407 | "**Hospital**"
   title: 'restext://Hospital1_014'
   style: 'hub-card'
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:1951
   - type: 'text'
-    # ../en-US.restext:409 | "For an explanation of the..."
+    # ../en-US.restext:408 | "For an explanation of the..."
     value: 'restext://Hospital1_015'
   # ../.source/TheCostofDisease_Eng_v10.cs:1952
   - type: 'link'
@@ -209,7 +209,7 @@ nodes:
       value: 'restext://Disease_3Experiments_Lead'
     # ../.source/TheCostofDisease_Eng_v10.cs:2017
     - type: 'link'
-      # ../en-US.restext:410 | "click here for a special ..."
+      # ../en-US.restext:409 | "click here for a special ..."
       label: 'restext://Hospital1_024'
       target: 'Trigger3Experiments' # ./00123-Trigger3Experiments.mws.yaml
       snapshot: true

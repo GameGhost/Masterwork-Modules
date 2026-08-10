@@ -2,19 +2,19 @@
 ---
 format: 'mws/0.4'
 passage_id: 'SymposiumFail'
-# ../en-US.restext:547 | "Symposium Failure"
+# ../en-US.restext:546 | "Symposium Failure"
 title: 'restext://SymposiumFail_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:3382
 - type: 'let'
   var: '_rnd_SymposiumFail_0'
-  # ../en-US.restext:548 | SymposiumFail_002 | "Then, we were treated to ..."
-  # ../en-US.restext:549 | SymposiumFail_003 | "Steam shot from the abomi..."
+  # ../en-US.restext:547 | SymposiumFail_002 | "Then, we were treated to ..."
+  # ../en-US.restext:548 | SymposiumFail_003 | "Steam shot from the abomi..."
   expr: '["restext://SymposiumFail_002", "restext://SymposiumFail_003"].shuffled("SymposiumFail_0")[0]'
 # ../.source/TheCostofDisease_Eng_v10.cs:3380
 - type: 'text'
-  # ../en-US.restext:550 | "\"Preposterous. A vaudevi..."
+  # ../en-US.restext:549 | "\"Preposterous. A vaudevi..."
   value: 'restext://SymposiumFail_004'
   lets:
   - '_rnd_SymposiumFail_0'
@@ -23,14 +23,14 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:3389
 - type: 'text'
-  # ../en-US.restext:551 | "A professional scolding s..."
+  # ../en-US.restext:550 | "A professional scolding s..."
   value: 'restext://SymposiumFail_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:3395
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:3397
 - type: 'text'
-  # ../en-US.restext:552 | "The family returned home,..."
+  # ../en-US.restext:551 | "The family returned home,..."
   value: 'restext://SymposiumFail_006'
 # ../.source/TheCostofDisease_Eng_v10.cs:3402
 - type: 'assign'

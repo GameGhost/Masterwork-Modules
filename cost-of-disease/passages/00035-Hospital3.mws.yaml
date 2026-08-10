@@ -41,12 +41,12 @@ nodes:
         then:
         # ../.source/TheCostofDisease_Eng_v10.cs:5028
         - type: 'text'
-          # ../en-US.restext:637 | "Turn to page **6** of the..."
+          # ../en-US.restext:636 | "Turn to page **6** of the..."
           value: 'restext://Hospital3_002'
         else:
         # ../.source/TheCostofDisease_Eng_v10.cs:5038
         - type: 'text'
-          # ../en-US.restext:636 | "Turn to page **7** of the..."
+          # ../en-US.restext:635 | "Turn to page **7** of the..."
           value: 'restext://Hospital3_001'
 # ../.source/TheCostofDisease_Eng_v10.cs:5052
 - type: 'section'
@@ -106,7 +106,7 @@ nodes:
       content:
       # ../.source/TheCostofDisease_Eng_v10.cs:5110
       - type: 'text'
-        # ../en-US.restext:638 | "Whenever a player complet..."
+        # ../en-US.restext:637 | "Whenever a player complet..."
         value: 'restext://Hospital3_003'
       # ../.source/TheCostofDisease_Eng_v10.cs:5115
       - type: 'link'
@@ -159,7 +159,7 @@ nodes:
       value: 'restext://Disease_3Experiments_Lead'
     # ../.source/TheCostofDisease_Eng_v10.cs:5159
     - type: 'link'
-      # ../en-US.restext:639 | "Click here for a special ..."
+      # ../en-US.restext:638 | "Click here for a special ..."
       label: 'restext://Hospital3_004'
       target: 'Trigger3Experiments' # ./00123-Trigger3Experiments.mws.yaml
       snapshot: true
@@ -168,7 +168,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:5168
 - type: 'section'
-  # ../en-US.restext:640 | "{icon:storybook} **The Se..."
+  # ../en-US.restext:639 | "{icon:storybook} **The Se..."
   title: 'restext://Hospital3_005'
   style: 'hub-card'
   content:
@@ -178,7 +178,7 @@ nodes:
     value: 'restext://Directive_JournalTrackLevel3_Lead'
   # ../.source/TheCostofDisease_Eng_v10.cs:5180
   - type: 'link'
-    # ../en-US.restext:641 | "click here for a reward..."
+    # ../en-US.restext:640 | "click here for a reward..."
     label: 'restext://Hospital3_006'
     target: 'InfinityClick1' # ./00096-InfinityClick1.mws.yaml
     snapshot: true
