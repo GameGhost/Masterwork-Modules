@@ -23,14 +23,12 @@ nodes:
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:35613
-- type: 'popup'
+- type: 'link'
   # ../en-US.restext:2714 | "Click here if the bribe s..."
   label: 'restext://LiberalEvent2ab_003'
-  layout: 'reveal'
-  # ../en-US.restext:371 | "Close"
-  cancel: 'restext://UIButton_Close'
+  target: '__UNREACHABLE__'
   snapshot: true
-  content:
+  onclick:
   # ../.source/FearoftheUnknown_Eng_v15.cs:35624
   - type: 'assign'
     var: 'bribe'

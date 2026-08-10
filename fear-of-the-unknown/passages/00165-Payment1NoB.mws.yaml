@@ -24,14 +24,12 @@ nodes:
 - type: 'break'
   style: 'paragraph'
 # ../.source/FearoftheUnknown_Eng_v15.cs:19827
-- type: 'popup'
+- type: 'link'
   # ../en-US.restext:29 | "Click to continue..."
   label: 'restext://Click_ContinueEllipsis_C'
-  layout: 'reveal'
-  # ../en-US.restext:371 | "Close"
-  cancel: 'restext://UIButton_Close'
+  target: '__UNREACHABLE__'
   snapshot: true
-  content:
+  onclick:
   # ../.source/FearoftheUnknown_Eng_v15.cs:19834
   - type: 'assign'
     var: 'Bcont'

@@ -25,13 +25,11 @@ nodes:
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:23748
-- type: 'popup'
+- type: 'link'
   label: '{nameA}'
-  layout: 'reveal'
-  # ../en-US.restext:356 | "Close"
-  cancel: 'restext://UIButton_Close'
+  target: '__UNREACHABLE__'
   snapshot: true
-  content:
+  onclick:
   # ../.source/TheCostofDisease_Eng_v10.cs:23781
   - type: 'conditional'
     if: '!allyA'
@@ -51,17 +49,18 @@ nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:23789
     - type: 'goto'
       target: 'JoinedAlready' # ./00211-JoinedAlready.mws.yaml
+  # ../.source/TheCostofDisease_Eng_v10.cs:23780
+  - type: 'break'
+    style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:23749
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:23752
-- type: 'popup'
+- type: 'link'
   label: '{nameB}'
-  layout: 'reveal'
-  # ../en-US.restext:356 | "Close"
-  cancel: 'restext://UIButton_Close'
+  target: '__UNREACHABLE__'
   snapshot: true
-  content:
+  onclick:
   # ../.source/TheCostofDisease_Eng_v10.cs:23798
   - type: 'conditional'
     if: '!allyB'
@@ -81,6 +80,9 @@ nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:23806
     - type: 'goto'
       target: 'JoinedAlready' # ./00211-JoinedAlready.mws.yaml
+  # ../.source/TheCostofDisease_Eng_v10.cs:23797
+  - type: 'break'
+    style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:23753
 - type: 'break'
   style: 'paragraph'
@@ -89,13 +91,11 @@ nodes:
   if: 'players > 2'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:23758
-  - type: 'popup'
+  - type: 'link'
     label: '{nameC}'
-    layout: 'reveal'
-    # ../en-US.restext:356 | "Close"
-    cancel: 'restext://UIButton_Close'
+    target: '__UNREACHABLE__'
     snapshot: true
-    content:
+    onclick:
     # ../.source/TheCostofDisease_Eng_v10.cs:23815
     - type: 'conditional'
       if: '!allyC'
@@ -115,6 +115,9 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:23823
       - type: 'goto'
         target: 'JoinedAlready' # ./00211-JoinedAlready.mws.yaml
+    # ../.source/TheCostofDisease_Eng_v10.cs:23814
+    - type: 'break'
+      style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:23759
   - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:23761
@@ -124,13 +127,11 @@ nodes:
   if: 'players > 3'
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:23765
-  - type: 'popup'
+  - type: 'link'
     label: '{nameD}'
-    layout: 'reveal'
-    # ../en-US.restext:356 | "Close"
-    cancel: 'restext://UIButton_Close'
+    target: '__UNREACHABLE__'
     snapshot: true
-    content:
+    onclick:
     # ../.source/TheCostofDisease_Eng_v10.cs:23832
     - type: 'conditional'
       if: '!allyD'
@@ -150,6 +151,9 @@ nodes:
       # ../.source/TheCostofDisease_Eng_v10.cs:23840
       - type: 'goto'
         target: 'JoinedAlready' # ./00211-JoinedAlready.mws.yaml
+    # ../.source/TheCostofDisease_Eng_v10.cs:23831
+    - type: 'break'
+      style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:23766
   - type: 'break'
 # ../.source/TheCostofDisease_Eng_v10.cs:23768
