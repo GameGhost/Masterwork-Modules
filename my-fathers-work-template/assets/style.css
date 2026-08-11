@@ -406,7 +406,6 @@ body {
     inset: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 1;
     pointer-events: none;
     box-sizing: border-box;
     border-style: solid;
@@ -1549,6 +1548,16 @@ body {
     overflow-y: auto;
     color: #2b2016;
     padding-left: 9rem;
+}
+
+/* Narrow: same "pinned near the top, 94vw-wide" treatment as `note`'s identical breakpoint above —
+   see that rule's own comment for why (position doesn't jump around as content length changes). */
+@media (max-width: 45.99rem) {
+    .mws-popup-overlay.layout-setup > .mws-popup-container > .mws-popup-content {
+        max-height: 88vh;
+        padding-left: 0rem;
+        padding-top: 6rem;
+    }
 }
 
 .mws-popup-overlay.layout-setup > .mws-popup-container > .mws-popup-footer,
@@ -2929,7 +2938,8 @@ body {
    inside of anymore. */
 @media (max-width: 45.99rem) {
     .mws-play-chrome {
-        padding: 44px 10px 0 10px;
+        padding: 10px 10px 0 10px;
+        justify-content: space-between;
     }
 }
 
@@ -2977,7 +2987,7 @@ body {
     .mws-passage.layout-hub_late .mws-passage-header,
     .mws-passage.layout-score_panel .mws-passage-header,
     .mws-passage.layout-ranking .mws-passage-header {
-        padding: 0 105px;
+        padding: 0 10px;
     }
 }
 
