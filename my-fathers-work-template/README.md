@@ -12,7 +12,7 @@ pulled out into a shared asset-pack dependency (see the `dependencies: []` TODO 
 dotnet run --project src/Masterwork.App.Web
 ```
 
-from the code repo (`c:\Projects\Masterwork`), then install `my-fathers-work-template.mwm`
+from the code repo ([Masterwork](https://github.com/GameGhost/Masterwork), a sibling of this repo), then install `my-fathers-work-template.mwm`
 (rebuild it first with `..\Masterwork-Modules\scripts\repack.ps1 -Module my-fathers-work-template`
 if you've changed anything) via the app's "Upload Module" flow. Play through 2-player setup —
 any names/town will do — and you'll land on the **Layout Showcase**, a hub screen linking to one
@@ -126,8 +126,8 @@ the layout catalog exercises *visual* chrome, this exercises MWS *logic and expr
 
 This set mirrors what the Masterwork app's own former built-in demo module exercised end-to-end,
 before that app-level concept was retired in favor of real, playable module content — see
-`Masterwork.Tests/FixtureModuleTests.cs` in the code repo for the same coverage, ported to an
-inline test fixture. `scripts/apply-template.ps1` does **not** copy these passages into target
+[`src/Masterwork.Tests/FixtureModuleTests.cs`](https://github.com/GameGhost/Masterwork/blob/main/src/Masterwork.Tests/FixtureModuleTests.cs)
+in the Masterwork repo for the same coverage, ported to an inline test fixture. `scripts/apply-template.ps1` does **not** copy these passages into target
 modules (it only maps setup + scoring) — they're template-only, same as the layout catalog itself.
 
 ## Font scaling / responsive design

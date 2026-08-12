@@ -4,9 +4,9 @@
 # to this fixed passage id (see PassageBodyVisitor's ChangeView handling). Gathers each player's
 # final score into the existing (previously dead) scoreA-D session variables, then routes
 # straight to Ranking if there's a single top score, or TieBreaker1 if two or more players are
-# tied for it — matching ViewScoreEntry.OnContinueButton's own branch. See
-# Masterwork-Design/Reference/Screenshots/Score and Ending/ for the reference layout this and
-# _TieBreaker1.mws.yaml/_TieBreaker2.mws.yaml (sharing the score_panel layout) are modeled on.
+# tied for it — matching ViewScoreEntry.OnContinueButton's own branch. See the reference
+# screenshots this and _TieBreaker1.mws.yaml/_TieBreaker2.mws.yaml (sharing the score_panel
+# layout) are modeled on.
 #
 # Each player row is a `section style: 'score-row'` (Scoring-01-Score-Entry.png shows a highlighted
 # brush-stroke band behind Player/Score per row) instead of a flat text/input sequence — see

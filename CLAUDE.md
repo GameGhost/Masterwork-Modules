@@ -4,29 +4,36 @@
 
 Holds extracted, playable MWS modules for the Masterwork project — the *build output* of the
 extraction pipeline, plus everything hand-authored on top of it (overrides, layout chrome,
-per-module assets, packaged `.mwm` bundles). **Not the code repo, not the design/reference repo.**
-Sibling of both:
+per-module assets, packaged `.mwm` bundles). **Not the code repo.**
 
-- Code repo: `c:\Projects\Masterwork` — the extractor, engine, and app that read/write this repo's content.
-- Design repo: `c:\Projects\Masterwork-Design` — Unity reference assets (`Reference/UnityOriginalApp/`)
-  that extraction still reads sprite/progress data *from*. Its `Reference/ScriptsComplete/` and
-  `Reference/ScriptsPartial/` (the raw Cradle C# source) are now **historical reference only** — see
-  Extraction below. See `Masterwork-Design/CLAUDE.md` for that repo's own instructions.
+- Code repo: `<Masterwork>` (a sibling of this repo, checked out alongside it) — the extractor, engine, and app that read/write this repo's content.
+- Extraction also reads sprite/progress data from the original Unity project's reference assets
+  (a private local reference workspace, not tracked in any public repo — see `docs/extractor.md`'s
+  `--sprite-map`/`--progress-map` options in the code repo). Every scenario now holds its own copy
+  of the Cradle C# source it's extracted from directly in this repo (`.source/`, see Extraction
+  below), so extraction no longer needs to reach outside this repo for source content at all —
+  only for the Unity sprite/progress data above.
 
-This repo used to be `Masterwork-Design/Modules/`; it moved into its own git repo once module
-content needed real version control independent of the design/reference material. Canonical module
-building now happens entirely within this repo, including holding each module's own copy of the
-Cradle source it's extracted from (`.source/`, see Module Layout below) — extraction no longer reads
-`.cs` files from `Masterwork-Design` at all.
+This repo used to be part of that private local reference workspace; it moved into its own git repo
+once module content needed real version control independent of local design/reference material.
+Canonical module building now happens entirely within this repo, including holding each module's
+own copy of the Cradle source it's extracted from (`.source/`, see Module Layout below).
 
-Layout at the repo root:
+**All four modules are here and fully modularized** — the three official scenarios (each with its
+own `.source/` Cradle copy) plus `my-fathers-work-template` (fully hand-authored, no `.source/` at
+all). Layout at the repo root:
 
 ```
 Masterwork-Modules/
-├── progress-map.json          — shared --progress-map input (see below), used by cost-of-disease
-├── cost-of-disease/           — one folder per module
-├── cost-of-disease.mwm        — packaged bundle (built from cost-of-disease/, see Bundling below)
-└── ...                        — future modules (fear-of-the-unknown, a-time-of-war) land here too
+├── progress-map.json           — shared --progress-map input (see below), used by all three official scenarios
+├── a-time-of-war/               ─┐
+├── cost-of-disease/              │ one folder per module
+├── fear-of-the-unknown/          │
+├── my-fathers-work-template/    ─┘ (hand-authored, no extraction step)
+├── a-time-of-war.mwm            ─┐
+├── cost-of-disease.mwm           │ packaged bundles (built from each module/, see Bundling below)
+├── fear-of-the-unknown.mwm       │
+└── my-fathers-work-template.mwm ─┘
 ```
 
 ---
@@ -40,9 +47,9 @@ against Renegade Game Studios' own Cradle source. The one exception is each modu
 own community-resources release for *My Father's Work* (the same release, same archive/link, that
 `Masterwork/src/Masterwork.App.Theme.MyFathersWork/NOTICE.md` documents for the app's theme
 assets) — see this repo's own `NOTICE.md` for the full citation. Per that release, individual files
-may be copied and modified as needed. Still: **never commit `.source/*.cs` (or anything else drawn
-from `Masterwork-Design/Reference/` beyond that specific release) to the `Masterwork` code repo** —
-that repo's own licensing rule is narrower and doesn't carry this exception.
+may be copied and modified as needed. Still: **never commit `.source/*.cs` (or any other CC BY-NC-SA
+reference material, beyond that specific release) to the `Masterwork` code repo** — that repo's own
+licensing rule is narrower and doesn't carry this exception.
 
 ---
 
@@ -70,16 +77,15 @@ a module directory is hand-maintained and safe from being overwritten by a re-ru
 
 ## Extraction
 
-Run from `c:\Projects\Masterwork` (the code repo) after building the extractor. `$base` points at
-this module's own `.source/` copy, not at `Masterwork-Design` — `Reference/ScriptsComplete/` and
-`Reference/ScriptsPartial/` there are historical only now that canonical module building happens
-here:
+Run from `<Masterwork>` (the code repo, a sibling of this one) after building the extractor. `$base`
+points at this module's own `.source/` copy — canonical module building happens entirely within this
+repo now. `<Masterwork-Modules>` below is the path to this repo's own local clone:
 
 ```powershell
-$base        = "c:\Projects\Masterwork-Modules\cost-of-disease\.source"
-$spritemap   = "c:\Projects\Masterwork-Design\Reference\UnityOriginalApp\Assets\Resources\TheCostOfDisease_ItemObtain.json"
-$progressmap = "c:\Projects\Masterwork-Modules\progress-map.json"
-$modules     = "c:\Projects\Masterwork-Modules"
+$base        = "<Masterwork-Modules>/cost-of-disease/.source"
+$spritemap   = "<path to a local copy of the Unity project's Assets/Resources/TheCostOfDisease_ItemObtain.json>"
+$progressmap = "<Masterwork-Modules>/progress-map.json"
+$modules     = "<Masterwork-Modules>"
 
 # The Cost of Disease — passages go into the module's passages/ subfolder; _variables.yaml and
 # en-US.restext go into the module root, next to manifest.yaml and passages-override/.
@@ -100,14 +106,14 @@ dotnet run --project src/Masterwork.Extractor -- `
 `$base\TheCostofDisease_Eng_v10.cs` being inside `cost-of-disease/.source/` (not `passages-out-dir`)
 is also why the "# {path}:{line}" source comments each passage carries resolve to
 `../.source/TheCostofDisease_Eng_v10.cs` — a path valid within this repo, unlike a comment pointing
-back into `Masterwork-Design`.
+back to an external reference location.
 
-Fear of the Unknown and A Time of War haven't been modularized into this repo yet — their extraction
-still outputs flat into `Masterwork-Design\Reference\ScriptsComplete\{fear-of-the-unknown,
-a-time-of-war}\`, reading from `Reference/ScriptsComplete/` there since no `Masterwork-Modules/`
-copy of their source exists yet (see `Masterwork-Design/CLAUDE.md`). When they do get modularized,
-copy their source into a `.source/` folder here first, following the same shape as Cost of
-Disease's above.
+Fear of the Unknown and A Time of War are fully modularized here too, following the identical
+pattern (`{module}/.source/`, `--variables-out`/`--restext-out` pointed at the module root,
+`{module}/passages` as the passages-out-dir) — see `docs/extractor.md` (code repo) for all three
+scenarios' exact current commands side by side. Fear of the Unknown doesn't need `--sprite-map` (Cost
+of Disease-only); A Time of War needs `--module-title` for the same auto-capitalization reason Cost
+of Disease does.
 
 See `docs/extractor.md` (code repo) for the full CLI flag reference, and
 `docs/mws-format-latest.md` for the format spec.
@@ -115,9 +121,10 @@ See `docs/extractor.md` (code repo) for the full CLI flag reference, and
 ### `progress-map.json`
 
 Shared at the repo root (not nested under a single module) since it's keyed by passage name and
-could in principle cover more than one module — currently only Cost of Disease uses it. Derived
-from `Masterwork-Design/Reference/UnityOriginalApp/Assets/Scenes/Main.unity`'s `PassageTracker`
-MonoBehaviour. Drives two things per hub passage:
+covers more than one module — all three official scenarios' hub passages are in it today, not just
+Cost of Disease. Derived from the original Unity project's `Main.unity` scene's `PassageTracker`
+MonoBehaviour (see `Masterwork.App.Theme.MyFathersWork/NOTICE.md` in the code repo for asset
+provenance). Drives two things per hub passage:
 
 - **`layout`** — overrides tag-based layout inference with `hub_early`/`hub_middle`/`hub_late`.
 - **`progress`** (1-9) plus **`end_of_round_body`/`end_of_round_body2`** — at the matching
@@ -152,15 +159,15 @@ is the inverse, returning a `ModulePackageContents` record the app loads via
 `ModuleLoader.LoadFromSources`. Bundling is a pure repackaging step — it doesn't re-run extraction
 or validate content, so re-bundle after every content change you want reflected in the `.mwm`.
 
-`cost-of-disease.mwm` at the repo root is the packaged build of `cost-of-disease/` — treat it as a
-build artifact (safe to regenerate any time from the folder), not a hand-maintained file.
+Each `{module}.mwm` at the repo root is the packaged build of its own `{module}/` folder — treat
+them as build artifacts (safe to regenerate any time from the folder), not hand-maintained files.
+All four modules (three official scenarios plus `my-fathers-work-template`) ship a bundle this way.
 
 ---
 
 ## Documentation Cross-Reference
 
-- `c:\Projects\Masterwork\docs\mws-format-latest.md` — current authoritative MWS format spec
-- `c:\Projects\Masterwork\docs\extractor.md` — extractor usage guide, including the full
+- `<Masterwork>/docs/mws-format-latest.md` — current authoritative MWS format spec
+- `<Masterwork>/docs/engine.md` — session/timeline model, seeded randomness, popup sandbox transactions
+- `<Masterwork>/docs/extractor.md` — extractor usage guide, including the full
   `--progress-map`/`--sprite-map`/`--common-restext` flag reference
-- `Masterwork-Design/CLAUDE.md` — source file provenance, design doc versioning, licensing for
-  `Reference/`

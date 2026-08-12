@@ -5,8 +5,8 @@
 # kept since it's a real derived value, not a global-sourced one. Continues to the original,
 # unmodified Preface-TCOD — the existing module content takes over from there.
 #
-# layout: 'narration', not 'setup_scenario' — confirmed against the real reference screenshot
-# (Masterwork-Design/Reference/Screenshots/Module-01A-Preparations.png): visually identical to any
+# layout: 'narration', not 'setup_scenario' — confirmed against the real reference screenshot:
+# visually identical to any
 # other narration passage (same border/parchment/progress-bar chrome, "I-1" shown in the footer),
 # just with a slightly larger title. `setup_scenario` is a real, distinct layout id elsewhere (see
 # cost-of-disease/layouts/setup_scenario.mws.yaml) but was never the right one for this specific
