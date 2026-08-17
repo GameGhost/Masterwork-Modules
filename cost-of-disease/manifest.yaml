@@ -1,5 +1,5 @@
 id: 'renegade.cost_of_disease'
-version: '0.4.1'
+version: '0.5.0'
 languages:
   - 'en-US'
 title: 
@@ -30,6 +30,32 @@ style: 'assets/style.css'
 # applied by direct copy (see README.md's Layout table) rather than a runtime dependency.
 dependencies: []
 
-# TODO (Milestone C/D, not yet parsed by ManifestParser.cs): types, variables, achievements, popups
+# Module-wide default background music and SFX — see docs/mws-format-latest.md §9 (Audio) in the
+# code repo. Real audio, sourced from Renegade Game Studios' own community-resources release for
+# *My Father's Work* — see NOTICE.md's "Audio assets" section for full provenance. Applies to every
+# passage/popup/link in this module that doesn't declare its own audio: override.
+#
+# music.default_tracks (Phase 5 Milestone 6.2): a shared 4-track sequence playlist, template-
+# canonical (assets/audio/bgm/, propagated via scripts/apply-template.ps1) and identical across all
+# three official modules — in the original app this same set (Chronicle Part One/Two/Three plus
+# this module's own theme track) played together as ViewGenerationEnding's own end-of-generation
+# playlist; used here as the general module-wide default instead, not scoped to any one popup type.
+audio:
+  music:
+    default_tracks:
+    - 'audio://bgm/cost_of_disease_theme'
+    - 'audio://bgm/chronicle_part_1'
+    - 'audio://bgm/chronicle_part_2'
+    - 'audio://bgm/chronicle_part_3'
+    order: 'sequence'
+  sfx:
+    popup_open:
+    - 'audio://sfx/popup_open'
+    popup_close:
+    - 'audio://sfx/popup_close'
+    click:
+    - 'audio://sfx/click'
+
+# TODO (Milestone C/D, not yet parsed by ManifestParser.cs): types, achievements, popups
 # per docs/mws-format-latest.md §9/§8. Fill these in as each feature actually gets built — don't
 # pre-write a schema this module can't yet load.
