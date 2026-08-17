@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'EquitableValues'
-# ../en-US.restext:1898 | "Deplorable Equity"
+# ../en-US.restext:1899 | "Deplorable Equity"
 title: 'restext://EquitableValues_001'
 layout: 'narration'
 nodes:
@@ -12,7 +12,7 @@ nodes:
   expr: '0'
 # ../.source/TheCostofDisease_Eng_v10.cs:23925
 - type: 'text'
-  # ../en-US.restext:1899 | "For the first time in dec..."
+  # ../en-US.restext:1900 | "For the first time in dec..."
   value: 'restext://EquitableValues_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:23927
 - type: 'conditional'
@@ -21,26 +21,26 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:23929
   - type: 'text'
-    # ../en-US.restext:1901 | "The Order of St. Hubertus..."
+    # ../en-US.restext:1902 | "The Order of St. Hubertus..."
     value: 'restext://EquitableValues_004'
   else:
   # ../.source/TheCostofDisease_Eng_v10.cs:23936
   - type: 'text'
-    # ../en-US.restext:1900 | "While members of the Frat..."
+    # ../en-US.restext:1901 | "While members of the Frat..."
     value: 'restext://EquitableValues_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:23940
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:23942
 - type: 'text'
-  # ../en-US.restext:1902 | "Unlike previous generatio..."
+  # ../en-US.restext:1903 | "Unlike previous generatio..."
   value: 'restext://EquitableValues_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:23943
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:23945
 - type: 'text'
-  # ../en-US.restext:1903 | "While they would never ad..."
+  # ../en-US.restext:1904 | "While they would never ad..."
   value: 'restext://EquitableValues_006'
 # ../.source/TheCostofDisease_Eng_v10.cs:23947
 - type: 'break'
@@ -67,18 +67,18 @@ nodes:
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:23969
       - type: 'text'
-        # ../en-US.restext:1904 | "The player with the fewes..."
+        # ../en-US.restext:1905 | "The player with the fewes..."
         value: 'restext://EquitableValues_007'
     - if: 'players >= 4'
       then:
       # ../.source/TheCostofDisease_Eng_v10.cs:23969
       - type: 'text'
-        # ../en-US.restext:1905 | "The **2** players with th..."
+        # ../en-US.restext:1906 | "The **2** players with th..."
         value: 'restext://EquitableValues_008'
   # ../.source/TheCostofDisease_Eng_v10.cs:23988
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:23990
   - type: 'text'
-    # ../en-US.restext:1906 | "The player with the most ..."
+    # ../en-US.restext:1907 | "The player with the most ..."
     value: 'restext://EquitableValues_009'

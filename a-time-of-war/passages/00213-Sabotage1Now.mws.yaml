@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Sabotage1Now'
-# ../en-US.restext:1822 | "Cruel Betrayal"
+# ../en-US.restext:1823 | "Cruel Betrayal"
 title: 'restext://Sabotage1Now_001'
 layout: 'narration'
 nodes:
@@ -26,12 +26,12 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:21963
   - type: 'let'
     var: '_rnd_Sabotage1Now_0'
-    # ../en-US.restext:1823 | Sabotage1Now_002 | "The exterior wall near th..."
-    # ../en-US.restext:1824 | Sabotage1Now_003 | "The papers within my labo..."
+    # ../en-US.restext:1824 | Sabotage1Now_002 | "The exterior wall near th..."
+    # ../en-US.restext:1825 | Sabotage1Now_003 | "The papers within my labo..."
     expr: '["restext://Sabotage1Now_002", "restext://Sabotage1Now_003"].shuffled("Sabotage1Now_0")[0]'
   # ../.source/ATimeofWar_Eng_v8.cs:21962
   - type: 'text'
-    # ../en-US.restext:1825 | "I awoke to discover a sec..."
+    # ../en-US.restext:1826 | "I awoke to discover a sec..."
     value: 'restext://Sabotage1Now_004'
     lets:
     - '_rnd_Sabotage1Now_0'
@@ -40,7 +40,7 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:21966
   - type: 'text'
-    # ../en-US.restext:1826 | "Though the repairs would ..."
+    # ../en-US.restext:1827 | "Though the repairs would ..."
     value: 'restext://Sabotage1Now_005'
   # ../.source/ATimeofWar_Eng_v8.cs:21969
   - type: 'break'
@@ -63,14 +63,14 @@ nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:22000
     - type: 'let'
       var: '_rnd_Sabotage1Now_0'
-      # ../en-US.restext:1827 | "and must **discard 1 Expe..."
+      # ../en-US.restext:1828 | "and must **discard 1 Expe..."
       expr: '[".", "restext://Sabotage1Now_006"].shuffled("Sabotage1Now_1")[0]'
     # ../.source/ATimeofWar_Eng_v8.cs:21992
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:21994
     - type: 'text'
-      # ../en-US.restext:1828 | "{sabotagee1} **loses 3VP*..."
+      # ../en-US.restext:1829 | "{sabotagee1} **loses 3VP*..."
       value: 'restext://Sabotage1Now_007'
       lets:
       - '_rnd_Sabotage1Now_0'

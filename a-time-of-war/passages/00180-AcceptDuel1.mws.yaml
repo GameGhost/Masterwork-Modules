@@ -6,7 +6,7 @@ layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:19269
 - type: 'text'
-  # ../en-US.restext:1598 | "**Carefully hand this Sto..."
+  # ../en-US.restext:1599 | "**Carefully hand this Sto..."
   value: 'restext://AcceptDuel1_001'
 # ../.source/ATimeofWar_Eng_v8.cs:19273
 - type: 'break'
@@ -22,20 +22,20 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:19286
   - type: 'text'
-    # ../en-US.restext:1599 | "**Code Duello**"
+    # ../en-US.restext:1600 | "**Code Duello**"
     value: 'restext://AcceptDuel1_002'
   # ../.source/ATimeofWar_Eng_v8.cs:19288
   - type: 'break'
   # ../.source/ATimeofWar_Eng_v8.cs:19289
   - type: 'text'
-    # ../en-US.restext:1600 | "I remember the morning up..."
+    # ../en-US.restext:1601 | "I remember the morning up..."
     value: 'restext://AcceptDuel1_003'
   # ../.source/ATimeofWar_Eng_v8.cs:19297
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:19299
   - type: 'text'
-    # ../en-US.restext:1601 | "This duel of **{dueltype}..."
+    # ../en-US.restext:1602 | "This duel of **{dueltype}..."
     value: 'restext://AcceptDuel1_004'
   # ../.source/ATimeofWar_Eng_v8.cs:19306
   - type: 'conditional'
@@ -44,19 +44,19 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:19308
     - type: 'text'
-      # ../en-US.restext:1603 | "compare our Journal Track..."
+      # ../en-US.restext:1604 | "compare our Journal Track..."
       value: 'restext://AcceptDuel1_006'
     else:
     # ../.source/ATimeofWar_Eng_v8.cs:19313
     - type: 'text'
-      # ../en-US.restext:1602 | "randomly determine a vict..."
+      # ../en-US.restext:1603 | "randomly determine a vict..."
       value: 'restext://AcceptDuel1_005'
   # ../.source/ATimeofWar_Eng_v8.cs:19315
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:19319
   - type: 'text'
-    # ../en-US.restext:1604 | "**With little deliberatio..."
+    # ../en-US.restext:1605 | "**With little deliberatio..."
     value: 'restext://AcceptDuel1_007'
   # ../.source/ATimeofWar_Eng_v8.cs:19321
   - type: 'break'
@@ -67,7 +67,7 @@ nodes:
     value: 'restext://Narrative_IWould_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:19324
   - type: 'link'
-    # ../en-US.restext:1605 | "accept this duel."
+    # ../en-US.restext:1606 | "accept this duel."
     label: 'restext://AcceptDuel1_008'
     target: 'AcceptDuel1b' # ./00205-AcceptDuel1b.mws.yaml
     snapshot: true
@@ -83,7 +83,7 @@ nodes:
     value: 'restext://Narrative_IWould_Fragment'
   # ../.source/ATimeofWar_Eng_v8.cs:19329
   - type: 'link'
-    # ../en-US.restext:1606 | "decline this duel."
+    # ../en-US.restext:1607 | "decline this duel."
     label: 'restext://AcceptDuel1_009'
     target: 'DuelDecline1' # ./00181-DuelDecline1.mws.yaml
     snapshot: true

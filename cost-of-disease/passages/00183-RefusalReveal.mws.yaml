@@ -22,7 +22,7 @@ nodes:
   content:
   # ../.source/TheCostofDisease_Eng_v10.cs:21516
   - type: 'text'
-    # ../en-US.restext:1659 | "\"You do well to proceed ..."
+    # ../en-US.restext:1660 | "\"You do well to proceed ..."
     value: 'restext://RefusalReveal_001'
   # ../.source/TheCostofDisease_Eng_v10.cs:21522
   - type: 'break'
@@ -34,12 +34,12 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:21526
     - type: 'text'
-      # ../en-US.restext:1661 | "\"The Order wants the vil..."
+      # ../en-US.restext:1662 | "\"The Order wants the vil..."
       value: 'restext://RefusalReveal_003'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:21543
     - type: 'text'
-      # ../en-US.restext:1660 | "\"The Order - not sure wh..."
+      # ../en-US.restext:1661 | "\"The Order - not sure wh..."
       value: 'restext://RefusalReveal_002'
   # ../.source/TheCostofDisease_Eng_v10.cs:21558
   - type: 'conditional'
@@ -48,37 +48,37 @@ nodes:
     then:
     # ../.source/TheCostofDisease_Eng_v10.cs:21560
     - type: 'text'
-      # ../en-US.restext:1663 | "\" The Fraternity; the us..."
+      # ../en-US.restext:1664 | "\" The Fraternity; the us..."
       value: 'restext://RefusalReveal_005'
     else:
     # ../.source/TheCostofDisease_Eng_v10.cs:21577
     - type: 'text'
-      # ../en-US.restext:1662 | "\" **Money**, power, infl..."
+      # ../en-US.restext:1663 | "\" **Money**, power, infl..."
       value: 'restext://RefusalReveal_004'
   # ../.source/TheCostofDisease_Eng_v10.cs:21590
   - type: 'text'
-    # ../en-US.restext:1664 | " He punctuated his final ..."
+    # ../en-US.restext:1665 | " He punctuated his final ..."
     value: 'restext://RefusalReveal_006'
   # ../.source/TheCostofDisease_Eng_v10.cs:21592
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:21594
   - type: 'text'
-    # ../en-US.restext:1665 | "{meet} was fascinated by ..."
+    # ../en-US.restext:1666 | "{meet} was fascinated by ..."
     value: 'restext://RefusalReveal_007'
   # ../.source/TheCostofDisease_Eng_v10.cs:21602
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:21606
   - type: 'text'
-    # ../en-US.restext:1666 | "**You may choose to:**"
+    # ../en-US.restext:1667 | "**You may choose to:**"
     value: 'restext://RefusalReveal_008'
   # ../.source/TheCostofDisease_Eng_v10.cs:21608
   - type: 'break'
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:21611
   - type: 'link'
-    # ../en-US.restext:1667 | "Join the Order of St. Hub..."
+    # ../en-US.restext:1668 | "Join the Order of St. Hub..."
     label: 'restext://RefusalReveal_009'
     target: 'WolfJoin' # ./00227-WolfJoin.mws.yaml
     snapshot: true
@@ -87,7 +87,7 @@ nodes:
     style: 'paragraph'
   # ../.source/TheCostofDisease_Eng_v10.cs:21615
   - type: 'link'
-    # ../en-US.restext:1668 | "Join the Fraternity of Hu..."
+    # ../en-US.restext:1669 | "Join the Fraternity of Hu..."
     label: 'restext://RefusalReveal_010'
     target: 'HunterJoin' # ./00209-HunterJoin.mws.yaml
     snapshot: true
@@ -106,13 +106,13 @@ nodes:
     if: 'round == 5'
     then:
     - type: 'link'
-      # ../en-US.restext:1669 | "Leave and do Nothing."
+      # ../en-US.restext:1670 | "Leave and do Nothing."
       label: 'restext://RefusalReveal_011'
       target: 'Devastation2' # ./00033-Devastation2.mws.yaml
       snapshot: true
     else:
     - type: 'link'
-      # ../en-US.restext:1669 | "Leave and do Nothing."
+      # ../en-US.restext:1670 | "Leave and do Nothing."
       label: 'restext://RefusalReveal_011'
       target: 'Devastation3' # ./00032-Devastation3.mws.yaml
       snapshot: true

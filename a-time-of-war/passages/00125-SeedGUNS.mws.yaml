@@ -2,10 +2,10 @@
 ---
 format: 'mws/0.4'
 passage_id: 'SeedGUNS'
-# ../en-US.restext:1097 | SeedGUNS_001 | "Knowledge Bonus"
-# ../en-US.restext:1098 | SeedGUNS_002 | "Ingredient Bonus"
-# ../en-US.restext:1099 | SeedGUNS_003 | "Wealth Bonus"
-# ../en-US.restext:1097 | SeedGUNS_001 | "Knowledge Bonus"
+# ../en-US.restext:1098 | SeedGUNS_001 | "Knowledge Bonus"
+# ../en-US.restext:1099 | SeedGUNS_002 | "Ingredient Bonus"
+# ../en-US.restext:1100 | SeedGUNS_003 | "Wealth Bonus"
+# ../en-US.restext:1098 | SeedGUNS_001 | "Knowledge Bonus"
 title: '{gunsbonus == 1 ? "restext://SeedGUNS_001" : gunsbonus == 2 ? "restext://SeedGUNS_002" : gunsbonus == 3 ? "restext://SeedGUNS_003" : "restext://SeedGUNS_001"}'
 layout: 'narration'
 nodes:
@@ -34,7 +34,7 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:14208
     - type: 'text'
-      # ../en-US.restext:1100 | "All players count up the ..."
+      # ../en-US.restext:1101 | "All players count up the ..."
       value: 'restext://SeedGUNS_004'
     # ../.source/ATimeofWar_Eng_v8.cs:14216
     - type: 'break'
@@ -60,7 +60,7 @@ nodes:
         expr: 'rand_between(2, 3, "SeedGUNS_0")'
       # ../.source/ATimeofWar_Eng_v8.cs:14305
       - type: 'text'
-        # ../en-US.restext:1101 | "Any player with a {icon:s..."
+        # ../en-US.restext:1102 | "Any player with a {icon:s..."
         value: 'restext://SeedGUNS_005'
         lets:
         - '_rnd_SeedGUNS_0'
@@ -68,7 +68,7 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:14230
     - type: 'text'
-      # ../en-US.restext:1102 | "All players count up the ..."
+      # ../en-US.restext:1103 | "All players count up the ..."
       value: 'restext://SeedGUNS_006'
     # ../.source/ATimeofWar_Eng_v8.cs:14238
     - type: 'break'
@@ -94,7 +94,7 @@ nodes:
         expr: 'rand_between(2, 3, "SeedGUNS_1")'
       # ../.source/ATimeofWar_Eng_v8.cs:14339
       - type: 'text'
-        # ../en-US.restext:1101 | "Any player with a {icon:s..."
+        # ../en-US.restext:1102 | "Any player with a {icon:s..."
         value: 'restext://SeedGUNS_005'
         lets:
         - '_rnd_SeedGUNS_0'
@@ -102,7 +102,7 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:14252
     - type: 'text'
-      # ../en-US.restext:1103 | "All players count up the ..."
+      # ../en-US.restext:1104 | "All players count up the ..."
       value: 'restext://SeedGUNS_007'
     # ../.source/ATimeofWar_Eng_v8.cs:14260
     - type: 'break'
@@ -128,14 +128,14 @@ nodes:
         expr: 'rand_between(2, 3, "SeedGUNS_2")'
       # ../.source/ATimeofWar_Eng_v8.cs:14373
       - type: 'text'
-        # ../en-US.restext:1101 | "Any player with a {icon:s..."
+        # ../en-US.restext:1102 | "Any player with a {icon:s..."
         value: 'restext://SeedGUNS_005'
         lets:
         - '_rnd_SeedGUNS_0'
   default:
   # ../.source/ATimeofWar_Eng_v8.cs:14274
   - type: 'text'
-    # ../en-US.restext:1100 | "All players count up the ..."
+    # ../en-US.restext:1101 | "All players count up the ..."
     value: 'restext://SeedGUNS_004'
   # ../.source/ATimeofWar_Eng_v8.cs:14282
   - type: 'break'
@@ -161,7 +161,7 @@ nodes:
       expr: 'rand_between(2, 3, "SeedGUNS_3")'
     # ../.source/ATimeofWar_Eng_v8.cs:14305
     - type: 'text'
-      # ../en-US.restext:1101 | "Any player with a {icon:s..."
+      # ../en-US.restext:1102 | "Any player with a {icon:s..."
       value: 'restext://SeedGUNS_005'
       lets:
       - '_rnd_SeedGUNS_0'

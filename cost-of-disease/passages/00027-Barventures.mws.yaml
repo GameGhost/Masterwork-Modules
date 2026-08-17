@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'Barventures'
-# ../en-US.restext:584 | "Bar-venture"
+# ../en-US.restext:585 | "Bar-venture"
 title: 'restext://Barventures_001'
 layout: 'narration'
 nodes:
@@ -22,25 +22,25 @@ nodes:
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:3680
     - type: 'text'
-      # ../en-US.restext:589 | "_Local records from this ..."
+      # ../en-US.restext:590 | "_Local records from this ..."
       value: 'restext://Barventures_006'
   - match: 2
     nodes:
     # ../.source/TheCostofDisease_Eng_v10.cs:3689
     - type: 'text'
-      # ../en-US.restext:590 | "_As your historical curat..."
+      # ../en-US.restext:591 | "_As your historical curat..."
       value: 'restext://Barventures_007'
   default:
   # ../.source/TheCostofDisease_Eng_v10.cs:3701
   - type: 'let'
     var: '_rnd_Barventures_0'
-    # ../en-US.restext:585 | Barventures_002 | "historical"
-    # ../en-US.restext:586 | Barventures_003 | "comical"
-    # ../en-US.restext:587 | Barventures_004 | "scientific"
+    # ../en-US.restext:586 | Barventures_002 | "historical"
+    # ../en-US.restext:587 | Barventures_003 | "comical"
+    # ../en-US.restext:588 | Barventures_004 | "scientific"
     expr: '["restext://Barventures_002", "restext://Barventures_003", "restext://Barventures_004"].shuffled("Barventures_1")[0]'
   # ../.source/TheCostofDisease_Eng_v10.cs:3699
   - type: 'text'
-    # ../en-US.restext:588 | "_It is in the interest of..."
+    # ../en-US.restext:589 | "_It is in the interest of..."
     value: 'restext://Barventures_005'
     lets:
     - '_rnd_Barventures_0'

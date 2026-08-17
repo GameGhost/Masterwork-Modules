@@ -2,32 +2,32 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ResistSides'
-# ../en-US.restext:568 | "Alliances Are Set"
+# ../en-US.restext:569 | "Alliances Are Set"
 title: 'restext://ResistSides_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:5350
 - type: 'text'
-  # ../en-US.restext:569 | "Given the intensity of th..."
+  # ../en-US.restext:570 | "Given the intensity of th..."
   value: 'restext://ResistSides_002'
 # ../.source/ATimeofWar_Eng_v8.cs:5353
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:5357
 - type: 'text'
-  # ../en-US.restext:570 | "**Choose Sides**"
+  # ../en-US.restext:571 | "**Choose Sides**"
   value: 'restext://ResistSides_003'
 # ../.source/ATimeofWar_Eng_v8.cs:5363
 - type: 'let'
   var: '_rnd_ResistSides_0'
-  # ../en-US.restext:571 | ResistSides_004 | "1 Advanced Weaponry Experiment"
-  # ../en-US.restext:572 | ResistSides_005 | "2 Advanced Weaponry Exper..."
+  # ../en-US.restext:572 | ResistSides_004 | "1 Advanced Weaponry Experiment"
+  # ../en-US.restext:573 | ResistSides_005 | "2 Advanced Weaponry Exper..."
   expr: '["restext://ResistSides_004", "restext://ResistSides_005"].shuffled("ResistSides_0")[0]'
 # ../.source/ATimeofWar_Eng_v8.cs:5359
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:5360
 - type: 'text'
-  # ../en-US.restext:573 | "In turn order, each playe..."
+  # ../en-US.restext:574 | "In turn order, each playe..."
   value: 'restext://ResistSides_006'
   lets:
   - '_rnd_ResistSides_0'
@@ -36,7 +36,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:5369
 - type: 'text'
-  # ../en-US.restext:574 | "Once all players have chosen, "
+  # ../en-US.restext:575 | "Once all players have chosen, "
   value: 'restext://ResistSides_007'
 # ../.source/ATimeofWar_Eng_v8.cs:5370
 - type: 'conditional'

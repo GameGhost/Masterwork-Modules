@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'PackingHeat1a'
-# ../en-US.restext:1117 | "Attracting Attentions"
+# ../en-US.restext:1118 | "Attracting Attentions"
 title: 'restext://PackingHeat1a_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:14535
 - type: 'text'
-  # ../en-US.restext:1118 | "While the {warwinner} wer..."
+  # ../en-US.restext:1119 | "While the {warwinner} wer..."
   value: 'restext://PackingHeat1a_002'
 # ../.source/ATimeofWar_Eng_v8.cs:14544
 - type: 'break'
@@ -64,12 +64,12 @@ nodes:
   # ../.source/ATimeofWar_Eng_v8.cs:14615
   - type: 'let'
     var: '_rnd_PackingHeat1a_0'
-    # ../en-US.restext:1119 | PackingHeat1a_003 | "1 {icon:creepy_icon} and ..."
-    # ../en-US.restext:1120 | PackingHeat1a_004 | "1 Resource of their choic..."
+    # ../en-US.restext:1120 | PackingHeat1a_003 | "1 {icon:creepy_icon} and ..."
+    # ../en-US.restext:1121 | PackingHeat1a_004 | "1 Resource of their choic..."
     expr: '["restext://PackingHeat1a_003", "restext://PackingHeat1a_004"].shuffled("PackingHeat1a_0")[0]'
   # ../.source/ATimeofWar_Eng_v8.cs:14612
   - type: 'text'
-    # ../en-US.restext:1121 | "{heat} gains {_rnd_Packin..."
+    # ../en-US.restext:1122 | "{heat} gains {_rnd_Packin..."
     value: 'restext://PackingHeat1a_005'
     lets:
     - '_rnd_PackingHeat1a_0'
@@ -78,5 +78,5 @@ nodes:
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:14619
   - type: 'text'
-    # ../en-US.restext:1122 | "If they have not already ..."
+    # ../en-US.restext:1123 | "If they have not already ..."
     value: 'restext://PackingHeat1a_006'

@@ -2,13 +2,13 @@
 ---
 format: 'mws/0.4'
 passage_id: 'HospitalVisitCheck'
-# ../en-US.restext:1277 | "A Compulsory Visitation"
+# ../en-US.restext:1278 | "A Compulsory Visitation"
 title: 'restext://HospitalVisitCheck_001'
 layout: 'narration'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:14501
 - type: 'text'
-  # ../en-US.restext:1278 | "The {townname} General Ho..."
+  # ../en-US.restext:1279 | "The {townname} General Ho..."
   value: 'restext://HospitalVisitCheck_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:14509
 - type: 'assign'
@@ -19,7 +19,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:14511
 - type: 'text'
-  # ../en-US.restext:1279 | "On the day of the visit, ..."
+  # ../en-US.restext:1280 | "On the day of the visit, ..."
   value: 'restext://HospitalVisitCheck_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:14513
 - type: 'conditional'
@@ -28,7 +28,7 @@ nodes:
   then:
   # ../.source/TheCostofDisease_Eng_v10.cs:14515
   - type: 'text'
-    # ../en-US.restext:1280 | " and using the innoculati..."
+    # ../en-US.restext:1281 | " and using the innoculati..."
     value: 'restext://HospitalVisitCheck_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:14517
 - type: 'text'
@@ -38,7 +38,7 @@ nodes:
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:14520
 - type: 'text'
-  # ../en-US.restext:1281 | "Click on the name of the ..."
+  # ../en-US.restext:1282 | "Click on the name of the ..."
   value: 'restext://HospitalVisitCheck_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:14527
 - type: 'break'

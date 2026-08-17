@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'IntroMartial-Separatists'
-# ../en-US.restext:1382 | "Down with the Monarchy"
+# ../en-US.restext:1383 | "Down with the Monarchy"
 title: 'restext://IntroMartial_Separatists_001'
 # ../en-US.restext:254 | "GENERATION II"
 subtitle: 'restext://Title_GenerationII'
@@ -12,27 +12,27 @@ layout: 'introduction'
 nodes:
 - type: 'audio_track'
   asset: '${narrationVoice == "female" ? "audio://vo/intromartialseparatists_f" : "audio://vo/intromartialseparatists_m"}'
-  # ../en-US.restext:1382 | "Down with the Monarchy"
+  # ../en-US.restext:1383 | "Down with the Monarchy"
   title: 'restext://IntroMartial_Separatists_001'
   autoplay: true
   bgm_behavior: 'pause'
 # ../.source/ATimeofWar_Eng_v8.cs:16812
 - type: 'text'
-  # ../en-US.restext:1383 | "The length and difficulty..."
+  # ../en-US.restext:1384 | "The length and difficulty..."
   value: 'restext://IntroMartial_Separatists_002'
 # ../.source/ATimeofWar_Eng_v8.cs:16813
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:16815
 - type: 'text'
-  # ../en-US.restext:1384 | "Peasants-turned-soldiers ..."
+  # ../en-US.restext:1385 | "Peasants-turned-soldiers ..."
   value: 'restext://IntroMartial_Separatists_003'
 # ../.source/ATimeofWar_Eng_v8.cs:16816
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:16818
 - type: 'text'
-  # ../en-US.restext:1385 | "It was both in spite of a..."
+  # ../en-US.restext:1386 | "It was both in spite of a..."
   value: 'restext://IntroMartial_Separatists_004'
 # ../.source/ATimeofWar_Eng_v8.cs:16819
 - type: 'break'
@@ -43,14 +43,14 @@ nodes:
 - type: 'break'
 # ../.source/ATimeofWar_Eng_v8.cs:16822
 - type: 'text'
-  # ../en-US.restext:1386 | "However, the influence of..."
+  # ../en-US.restext:1387 | "However, the influence of..."
   value: 'restext://IntroMartial_Separatists_005'
 # ../.source/ATimeofWar_Eng_v8.cs:16823
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:16825
 - type: 'text'
-  # ../en-US.restext:1387 | "Ah, to be left to one's o..."
+  # ../en-US.restext:1388 | "Ah, to be left to one's o..."
   value: 'restext://IntroMartial_Separatists_006'
 # ../.source/ATimeofWar_Eng_v8.cs:16827
 - type: 'assign'

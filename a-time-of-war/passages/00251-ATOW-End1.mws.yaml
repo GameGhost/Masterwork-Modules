@@ -2,20 +2,20 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ATOW-End1'
-# ../en-US.restext:2031 | "A Giant Success"
+# ../en-US.restext:2032 | "A Giant Success"
 title: 'restext://ATOW_End1_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:25004
 - type: 'text'
-  # ../en-US.restext:2032 | "And so it is that this ch..."
+  # ../en-US.restext:2033 | "And so it is that this ch..."
   value: 'restext://ATOW_End1_002'
 # ../.source/ATimeofWar_Eng_v8.cs:25014
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:25016
 - type: 'text'
-  # ../en-US.restext:2033 | "But damn it all, I swear ..."
+  # ../en-US.restext:2034 | "But damn it all, I swear ..."
   value: 'restext://ATOW_End1_003'
 # ../.source/ATimeofWar_Eng_v8.cs:25021
 - type: 'break'
@@ -26,21 +26,21 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:25025
   - type: 'text'
-    # ../en-US.restext:2034 | "Releasing the Time Machin..."
+    # ../en-US.restext:2035 | "Releasing the Time Machin..."
     value: 'restext://ATOW_End1_004'
 # ../.source/ATimeofWar_Eng_v8.cs:25032
 - type: 'let'
   var: '_rnd_ATOW_End1_0'
-  # ../en-US.restext:2035 | ATOW_End1_005 | "Giant Spider Chariot"
-  # ../en-US.restext:2036 | ATOW_End1_006 | "Giant Love Potion"
-  # ../en-US.restext:2037 | ATOW_End1_007 | "Giant Teleportation Device"
+  # ../en-US.restext:2036 | ATOW_End1_005 | "Giant Spider Chariot"
+  # ../en-US.restext:2037 | ATOW_End1_006 | "Giant Love Potion"
+  # ../en-US.restext:2038 | ATOW_End1_007 | "Giant Teleportation Device"
   expr: '["restext://ATOW_End1_005", "restext://ATOW_End1_006", "restext://ATOW_End1_007"].shuffled("ATOW-End1_0")[0]'
 # ../.source/ATimeofWar_Eng_v8.cs:25027
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:25031
 - type: 'text'
-  # ../en-US.restext:2038 | "What could be more innova..."
+  # ../en-US.restext:2039 | "What could be more innova..."
   value: 'restext://ATOW_End1_008'
   lets:
   - '_rnd_ATOW_End1_0'
@@ -49,7 +49,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:25036
 - type: 'text'
-  # ../en-US.restext:2039 | "This is not the end; it i..."
+  # ../en-US.restext:2040 | "This is not the end; it i..."
   value: 'restext://ATOW_End1_009'
 # ../.source/ATimeofWar_Eng_v8.cs:25039
 - type: 'break'

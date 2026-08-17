@@ -2,9 +2,9 @@
 ---
 format: 'mws/0.4'
 passage_id: 'SeedResolution'
-# ../en-US.restext:2399 | SeedResolution_001 | "A Place of Knowledge"
-# ../en-US.restext:2400 | SeedResolution_002 | "A Wealth of Goods"
-# ../en-US.restext:2401 | SeedResolution_003 | "An Investor's Paradise"
+# ../en-US.restext:2400 | SeedResolution_001 | "A Place of Knowledge"
+# ../en-US.restext:2401 | SeedResolution_002 | "A Wealth of Goods"
+# ../en-US.restext:2402 | SeedResolution_003 | "An Investor's Paradise"
 title: '{gunsbonus == 1 ? "restext://SeedResolution_001" : gunsbonus == 2 ? "restext://SeedResolution_002" : "restext://SeedResolution_003"}'
 tags:
 - 'revised'
@@ -18,14 +18,14 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:29011
     - type: 'text'
-      # ../en-US.restext:2404 | "I watched from my clandes..."
+      # ../en-US.restext:2405 | "I watched from my clandes..."
       value: 'restext://SeedResolution_006'
     # ../.source/ATimeofWar_Eng_v8.cs:29012
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:29014
     - type: 'text'
-      # ../en-US.restext:2405 | "Soon, it was impossible f..."
+      # ../en-US.restext:2406 | "Soon, it was impossible f..."
       value: 'restext://SeedResolution_007'
     # ../.source/ATimeofWar_Eng_v8.cs:29017
     - type: 'break'
@@ -33,28 +33,28 @@ nodes:
     nodes:
     # ../.source/ATimeofWar_Eng_v8.cs:29026
     - type: 'text'
-      # ../en-US.restext:2406 | "Ingredients lay stacked i..."
+      # ../en-US.restext:2407 | "Ingredients lay stacked i..."
       value: 'restext://SeedResolution_008'
     # ../.source/ATimeofWar_Eng_v8.cs:29027
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:29029
     - type: 'text'
-      # ../en-US.restext:2407 | "Soon, it was impossible f..."
+      # ../en-US.restext:2408 | "Soon, it was impossible f..."
       value: 'restext://SeedResolution_009'
     # ../.source/ATimeofWar_Eng_v8.cs:29032
     - type: 'break'
   default:
   # ../.source/ATimeofWar_Eng_v8.cs:29041
   - type: 'text'
-    # ../en-US.restext:2402 | "Even in their sunset year..."
+    # ../en-US.restext:2403 | "Even in their sunset year..."
     value: 'restext://SeedResolution_004'
   # ../.source/ATimeofWar_Eng_v8.cs:29042
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:29044
   - type: 'text'
-    # ../en-US.restext:2403 | "Soon, it was impossible f..."
+    # ../en-US.restext:2404 | "Soon, it was impossible f..."
     value: 'restext://SeedResolution_005'
   # ../.source/ATimeofWar_Eng_v8.cs:29047
   - type: 'break'
@@ -83,16 +83,16 @@ nodes:
       nodes:
       # ../.source/ATimeofWar_Eng_v8.cs:29064
       - type: 'text'
-        # ../en-US.restext:2409 | "The player with the Story..."
+        # ../en-US.restext:2410 | "The player with the Story..."
         value: 'restext://SeedResolution_011'
     - match: 2
       nodes:
       # ../.source/ATimeofWar_Eng_v8.cs:29069
       - type: 'text'
-        # ../en-US.restext:2410 | "The player with the Story..."
+        # ../en-US.restext:2411 | "The player with the Story..."
         value: 'restext://SeedResolution_012'
     default:
     # ../.source/ATimeofWar_Eng_v8.cs:29073
     - type: 'text'
-      # ../en-US.restext:2408 | "The player with the Story..."
+      # ../en-US.restext:2409 | "The player with the Story..."
       value: 'restext://SeedResolution_010'

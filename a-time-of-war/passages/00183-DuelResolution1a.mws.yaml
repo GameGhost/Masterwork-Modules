@@ -3,7 +3,7 @@
 format: 'mws/0.4'
 passage_id: 'DuelResolution1a'
 # ../en-US.restext:20 | Choice_Science | "science"
-# ../en-US.restext:1624 | DuelResolution1a_001 | "The Moment of Truth"
+# ../en-US.restext:1625 | DuelResolution1a_001 | "The Moment of Truth"
 title: '{dueltype == "restext://Choice_Science" ? duelsci : "restext://DuelResolution1a_001"}'
 layout: 'narration'
 nodes:
@@ -14,7 +14,7 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:19494
   - type: 'text'
-    # ../en-US.restext:1626 | "The scientific duel will ..."
+    # ../en-US.restext:1627 | "The scientific duel will ..."
     value: 'restext://DuelResolution1a_003'
   # ../.source/ATimeofWar_Eng_v8.cs:19506
   - type: 'break'
@@ -36,26 +36,26 @@ nodes:
     content:
     # ../.source/ATimeofWar_Eng_v8.cs:19539
     - type: 'text'
-      # ../en-US.restext:1627 | "{sabotagee1} and {players..."
+      # ../en-US.restext:1628 | "{sabotagee1} and {players..."
       value: 'restext://DuelResolution1a_004'
     # ../.source/ATimeofWar_Eng_v8.cs:19545
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:19547
     - type: 'text'
-      # ../en-US.restext:1628 | "They then count how many ..."
+      # ../en-US.restext:1629 | "They then count how many ..."
       value: 'restext://DuelResolution1a_005'
     # ../.source/ATimeofWar_Eng_v8.cs:19551
     - type: 'break'
       style: 'paragraph'
     # ../.source/ATimeofWar_Eng_v8.cs:19553
     - type: 'text'
-      # ../en-US.restext:1629 | "Each player adds these tw..."
+      # ../en-US.restext:1630 | "Each player adds these tw..."
       value: 'restext://DuelResolution1a_006'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:19519
   - type: 'text'
-    # ../en-US.restext:1625 | "At a distance of twenty p..."
+    # ../en-US.restext:1626 | "At a distance of twenty p..."
     value: 'restext://DuelResolution1a_002'
   # ../.source/ATimeofWar_Eng_v8.cs:19520
   - type: 'break'

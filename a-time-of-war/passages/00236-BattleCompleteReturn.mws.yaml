@@ -2,19 +2,19 @@
 ---
 format: 'mws/0.4'
 passage_id: 'BattleCompleteReturn'
-# ../en-US.restext:1938 | "{_rnd_BattleCompleteRetur..."
+# ../en-US.restext:1939 | "{_rnd_BattleCompleteRetur..."
 title: 'restext://BattleCompleteReturn_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:23793
 - type: 'let'
   var: '_rnd_BattleCompleteReturn_0'
-  # ../en-US.restext:1939 | BattleCompleteReturn_002 | "Engagement"
-  # ../en-US.restext:1940 | BattleCompleteReturn_003 | "Campaign"
+  # ../en-US.restext:1940 | BattleCompleteReturn_002 | "Engagement"
+  # ../en-US.restext:1941 | BattleCompleteReturn_003 | "Campaign"
   expr: '["restext://BattleCompleteReturn_002", "restext://BattleCompleteReturn_003"].shuffled("BattleCompleteReturn_0")[0]'
 # ../.source/ATimeofWar_Eng_v8.cs:23799
 - type: 'text'
-  # ../en-US.restext:1941 | "All players return their ..."
+  # ../en-US.restext:1942 | "All players return their ..."
   value: 'restext://BattleCompleteReturn_004'
 # ../.source/ATimeofWar_Eng_v8.cs:23804
 - type: 'break'
@@ -25,14 +25,14 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:23808
   - type: 'link'
-    # ../en-US.restext:1942 | "Click to move to the next..."
+    # ../en-US.restext:1943 | "Click to move to the next..."
     label: 'restext://BattleCompleteReturn_005'
     target: 'Peace2' # ./00045-Peace2.mws.yaml
     snapshot: true
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:23813
   - type: 'link'
-    # ../en-US.restext:1942 | "Click to move to the next..."
+    # ../en-US.restext:1943 | "Click to move to the next..."
     label: 'restext://BattleCompleteReturn_005'
     target: 'Peace3' # ./00046-Peace3.mws.yaml
     snapshot: true

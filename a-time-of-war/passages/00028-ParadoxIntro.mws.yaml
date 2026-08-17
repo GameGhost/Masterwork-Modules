@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ParadoxIntro'
-# ../en-US.restext:509 | "You Cant Stop Progress"
+# ../en-US.restext:510 | "You Cant Stop Progress"
 title: 'restext://ParadoxIntro_001'
 # ../en-US.restext:255 | "GENERATION III"
 subtitle: 'restext://Title_GenerationIII'
@@ -12,13 +12,13 @@ layout: 'introduction'
 nodes:
 - type: 'audio_track'
   asset: '${narrationVoice == "female" ? "audio://vo/paradoxintro_f" : "audio://vo/paradoxintro_m"}'
-  # ../en-US.restext:509 | "You Cant Stop Progress"
+  # ../en-US.restext:510 | "You Cant Stop Progress"
   title: 'restext://ParadoxIntro_001'
   autoplay: true
   bgm_behavior: 'pause'
 # ../.source/ATimeofWar_Eng_v8.cs:4262
 - type: 'text'
-  # ../en-US.restext:510 | "**A Brighter Future**"
+  # ../en-US.restext:511 | "**A Brighter Future**"
   value: 'restext://ParadoxIntro_003'
 # ../.source/ATimeofWar_Eng_v8.cs:4264
 - type: 'break'
@@ -31,7 +31,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:4268
 - type: 'text'
-  # ../en-US.restext:511 | "I remember being stunned ..."
+  # ../en-US.restext:512 | "I remember being stunned ..."
   value: 'restext://ParadoxIntro_005'
 # ../.source/ATimeofWar_Eng_v8.cs:4269
 - type: 'break'
@@ -45,7 +45,7 @@ nodes:
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:4274
 - type: 'text'
-  # ../en-US.restext:512 | "When I spoke of my family..."
+  # ../en-US.restext:513 | "When I spoke of my family..."
   value: 'restext://ParadoxIntro_007'
 # ../.source/ATimeofWar_Eng_v8.cs:4275
 - type: 'break'

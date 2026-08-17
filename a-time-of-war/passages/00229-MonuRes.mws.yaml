@@ -2,8 +2,8 @@
 ---
 format: 'mws/0.4'
 passage_id: 'MonuRes'
-# ../en-US.restext:1907 | MonuRes_001 | "A Bend Towards Chaos"
-# ../en-US.restext:1908 | MonuRes_002 | "A Secure Future"
+# ../en-US.restext:1908 | MonuRes_001 | "A Bend Towards Chaos"
+# ../en-US.restext:1909 | MonuRes_002 | "A Secure Future"
 title: '{release >= 1 ? "restext://MonuRes_001" : "restext://MonuRes_002"}'
 layout: 'narration'
 nodes:
@@ -13,26 +13,26 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:23087
   - type: 'text'
-    # ../en-US.restext:1910 | "To hell with academia! I ..."
+    # ../en-US.restext:1911 | "To hell with academia! I ..."
     value: 'restext://MonuRes_004'
   # ../.source/ATimeofWar_Eng_v8.cs:23088
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:23090
   - type: 'text'
-    # ../en-US.restext:1911 | "Publishing the means to c..."
+    # ../en-US.restext:1912 | "Publishing the means to c..."
     value: 'restext://MonuRes_005'
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:23099
   - type: 'text'
-    # ../en-US.restext:1909 | "Bold as it would have bee..."
+    # ../en-US.restext:1910 | "Bold as it would have bee..."
     value: 'restext://MonuRes_003'
 # ../.source/ATimeofWar_Eng_v8.cs:23101
 - type: 'break'
   style: 'paragraph'
 # ../.source/ATimeofWar_Eng_v8.cs:23103
 - type: 'text'
-  # ../en-US.restext:1912 | "Because of our decision, ..."
+  # ../en-US.restext:1913 | "Because of our decision, ..."
   value: 'restext://MonuRes_006'
 # ../.source/ATimeofWar_Eng_v8.cs:23105
 - type: 'break'
@@ -54,7 +54,7 @@ nodes:
   content:
   # ../.source/ATimeofWar_Eng_v8.cs:23129
   - type: 'text'
-    # ../en-US.restext:1913 | "Retrieve the **In Memoria..."
+    # ../en-US.restext:1914 | "Retrieve the **In Memoria..."
     value: 'restext://MonuRes_007'
   # ../.source/ATimeofWar_Eng_v8.cs:23136
   - type: 'break'
@@ -69,7 +69,7 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:23142
       - type: 'text'
-        # ../en-US.restext:1914 | "{nameA} gains 3VP."
+        # ../en-US.restext:1915 | "{nameA} gains 3VP."
         value: 'restext://MonuRes_008'
       # ../.source/ATimeofWar_Eng_v8.cs:23144
       - type: 'break'
@@ -79,7 +79,7 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:23148
       - type: 'text'
-        # ../en-US.restext:1915 | "{nameB} gains 3VP."
+        # ../en-US.restext:1916 | "{nameB} gains 3VP."
         value: 'restext://MonuRes_009'
       # ../.source/ATimeofWar_Eng_v8.cs:23150
       - type: 'break'
@@ -89,7 +89,7 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:23154
       - type: 'text'
-        # ../en-US.restext:1916 | "{nameC} gains 3VP."
+        # ../en-US.restext:1917 | "{nameC} gains 3VP."
         value: 'restext://MonuRes_010'
       # ../.source/ATimeofWar_Eng_v8.cs:23156
       - type: 'break'
@@ -99,7 +99,7 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:23160
       - type: 'text'
-        # ../en-US.restext:1917 | "{nameD} gains 3VP."
+        # ../en-US.restext:1918 | "{nameD} gains 3VP."
         value: 'restext://MonuRes_011'
       # ../.source/ATimeofWar_Eng_v8.cs:23162
       - type: 'break'
@@ -109,7 +109,7 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:23166
       - type: 'text'
-        # ../en-US.restext:1918 | "{nameE} gains 3VP."
+        # ../en-US.restext:1919 | "{nameE} gains 3VP."
         value: 'restext://MonuRes_012'
       # ../.source/ATimeofWar_Eng_v8.cs:23168
       - type: 'break'
@@ -123,7 +123,7 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:23175
       - type: 'text'
-        # ../en-US.restext:1919 | "{nameA} gains a Compulsion."
+        # ../en-US.restext:1920 | "{nameA} gains a Compulsion."
         value: 'restext://MonuRes_013'
       # ../.source/ATimeofWar_Eng_v8.cs:23177
       - type: 'break'
@@ -133,7 +133,7 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:23181
       - type: 'text'
-        # ../en-US.restext:1920 | "{nameB} gains a Compulsion."
+        # ../en-US.restext:1921 | "{nameB} gains a Compulsion."
         value: 'restext://MonuRes_014'
       # ../.source/ATimeofWar_Eng_v8.cs:23183
       - type: 'break'
@@ -143,7 +143,7 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:23187
       - type: 'text'
-        # ../en-US.restext:1921 | "{nameC} gains a Compulsion."
+        # ../en-US.restext:1922 | "{nameC} gains a Compulsion."
         value: 'restext://MonuRes_015'
       # ../.source/ATimeofWar_Eng_v8.cs:23189
       - type: 'break'
@@ -153,7 +153,7 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:23193
       - type: 'text'
-        # ../en-US.restext:1922 | "{nameD} gains a Compulsion."
+        # ../en-US.restext:1923 | "{nameD} gains a Compulsion."
         value: 'restext://MonuRes_016'
       # ../.source/ATimeofWar_Eng_v8.cs:23195
       - type: 'break'
@@ -163,7 +163,7 @@ nodes:
       then:
       # ../.source/ATimeofWar_Eng_v8.cs:23199
       - type: 'text'
-        # ../en-US.restext:1923 | "{nameE} gains a Compulsion."
+        # ../en-US.restext:1924 | "{nameE} gains a Compulsion."
         value: 'restext://MonuRes_017'
       # ../.source/ATimeofWar_Eng_v8.cs:23201
       - type: 'break'
@@ -174,7 +174,7 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:23209
     - type: 'text'
-      # ../en-US.restext:1924 | "{nameA} draws 1 Utopian E..."
+      # ../en-US.restext:1925 | "{nameA} draws 1 Utopian E..."
       value: 'restext://MonuRes_018'
     # ../.source/ATimeofWar_Eng_v8.cs:23213
     - type: 'break'
@@ -184,7 +184,7 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:23217
     - type: 'text'
-      # ../en-US.restext:1925 | "{nameB} draws 1 Utopian E..."
+      # ../en-US.restext:1926 | "{nameB} draws 1 Utopian E..."
       value: 'restext://MonuRes_019'
     # ../.source/ATimeofWar_Eng_v8.cs:23221
     - type: 'break'
@@ -194,7 +194,7 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:23225
     - type: 'text'
-      # ../en-US.restext:1926 | "{nameC} draws 1 Utopian E..."
+      # ../en-US.restext:1927 | "{nameC} draws 1 Utopian E..."
       value: 'restext://MonuRes_020'
     # ../.source/ATimeofWar_Eng_v8.cs:23229
     - type: 'break'
@@ -204,7 +204,7 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:23233
     - type: 'text'
-      # ../en-US.restext:1927 | "{nameD} draws 1 Utopian E..."
+      # ../en-US.restext:1928 | "{nameD} draws 1 Utopian E..."
       value: 'restext://MonuRes_021'
     # ../.source/ATimeofWar_Eng_v8.cs:23237
     - type: 'break'
@@ -214,5 +214,5 @@ nodes:
     then:
     # ../.source/ATimeofWar_Eng_v8.cs:23241
     - type: 'text'
-      # ../en-US.restext:1928 | "{nameE} draws 1 Utopian E..."
+      # ../en-US.restext:1929 | "{nameE} draws 1 Utopian E..."
       value: 'restext://MonuRes_022'

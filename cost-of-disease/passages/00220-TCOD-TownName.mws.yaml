@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'TCOD-TownName'
-# ../en-US.restext:1959 | "The Village"
+# ../en-US.restext:1960 | "The Village"
 title: 'restext://TCOD_TownName_001'
 tags:
 - 'ck'
@@ -10,14 +10,14 @@ layout: 'hub'
 nodes:
 # ../.source/TheCostofDisease_Eng_v10.cs:24523
 - type: 'text'
-  # ../en-US.restext:1960 | "Now that our given names ..."
+  # ../en-US.restext:1961 | "Now that our given names ..."
   value: 'restext://TCOD_TownName_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:24524
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:24526
 - type: 'link'
-  # ../en-US.restext:1961 | "Click here to name the vi..."
+  # ../en-US.restext:1962 | "Click here to name the vi..."
   label: 'restext://TCOD_TownName_003'
   target: 'NameEntryTownConfirm' # ./00221-NameEntryTownConfirm.mws.yaml
   snapshot: true

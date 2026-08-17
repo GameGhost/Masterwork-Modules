@@ -2,8 +2,8 @@
 ---
 format: 'mws/0.4'
 passage_id: 'ResistEnd'
-# ../en-US.restext:577 | ResistEnd_001 | "Victory for the Resistance"
-# ../en-US.restext:578 | ResistEnd_002 | "Resistance Quashed"
+# ../en-US.restext:578 | ResistEnd_001 | "Victory for the Resistance"
+# ../en-US.restext:579 | ResistEnd_002 | "Resistance Quashed"
 title: '{wardestroy >= wardetermine ? "restext://ResistEnd_001" : "restext://ResistEnd_002"}'
 tags:
 - 'END'
@@ -15,14 +15,14 @@ nodes:
   then:
   # ../.source/ATimeofWar_Eng_v8.cs:5419
   - type: 'text'
-    # ../en-US.restext:581 | "With **{wardestroy} build..."
+    # ../en-US.restext:582 | "With **{wardestroy} build..."
     value: 'restext://ResistEnd_007'
   # ../.source/ATimeofWar_Eng_v8.cs:5428
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:5430
   - type: 'text'
-    # ../en-US.restext:580 | "It was just as I had plan..."
+    # ../en-US.restext:581 | "It was just as I had plan..."
     value: 'restext://ResistEnd_004'
   # ../.source/ATimeofWar_Eng_v8.cs:5433
   - type: 'break'
@@ -76,14 +76,14 @@ nodes:
   else:
   # ../.source/ATimeofWar_Eng_v8.cs:5457
   - type: 'text'
-    # ../en-US.restext:579 | "With **so few buildings d..."
+    # ../en-US.restext:580 | "With **so few buildings d..."
     value: 'restext://ResistEnd_003'
   # ../.source/ATimeofWar_Eng_v8.cs:5467
   - type: 'break'
     style: 'paragraph'
   # ../.source/ATimeofWar_Eng_v8.cs:5469
   - type: 'text'
-    # ../en-US.restext:580 | "It was just as I had plan..."
+    # ../en-US.restext:581 | "It was just as I had plan..."
     value: 'restext://ResistEnd_004'
   # ../.source/ATimeofWar_Eng_v8.cs:5472
   - type: 'break'

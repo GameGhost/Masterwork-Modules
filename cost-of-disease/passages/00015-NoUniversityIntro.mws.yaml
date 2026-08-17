@@ -2,7 +2,7 @@
 ---
 format: 'mws/0.4'
 passage_id: 'NoUniversityIntro'
-# ../en-US.restext:498 | "DROWN YOUR SORROWS"
+# ../en-US.restext:499 | "DROWN YOUR SORROWS"
 title: 'restext://NoUniversityIntro_001'
 # ../en-US.restext:332 | "GENERATION III"
 subtitle: 'restext://Title_GenerationIII'
@@ -12,34 +12,34 @@ layout: 'introduction'
 nodes:
 - type: 'audio_track'
   asset: '${narrationVoice == "female" ? "audio://vo/nouniversityintro_f" : "audio://vo/nouniversityintro_m"}'
-  # ../en-US.restext:498 | "DROWN YOUR SORROWS"
+  # ../en-US.restext:499 | "DROWN YOUR SORROWS"
   title: 'restext://NoUniversityIntro_001'
   autoplay: true
   bgm_behavior: 'pause'
 # ../.source/TheCostofDisease_Eng_v10.cs:3097
 - type: 'text'
-  # ../en-US.restext:499 | "They arrived by coach on ..."
+  # ../en-US.restext:500 | "They arrived by coach on ..."
   value: 'restext://NoUniversityIntro_002'
 # ../.source/TheCostofDisease_Eng_v10.cs:3098
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:3100
 - type: 'text'
-  # ../en-US.restext:500 | "Not much is written about..."
+  # ../en-US.restext:501 | "Not much is written about..."
   value: 'restext://NoUniversityIntro_003'
 # ../.source/TheCostofDisease_Eng_v10.cs:3101
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:3103
 - type: 'text'
-  # ../en-US.restext:501 | "In fact, several public h..."
+  # ../en-US.restext:502 | "In fact, several public h..."
   value: 'restext://NoUniversityIntro_004'
 # ../.source/TheCostofDisease_Eng_v10.cs:3104
 - type: 'break'
   style: 'paragraph'
 # ../.source/TheCostofDisease_Eng_v10.cs:3106
 - type: 'text'
-  # ../en-US.restext:502 | "There was an emptiness in..."
+  # ../en-US.restext:503 | "There was an emptiness in..."
   value: 'restext://NoUniversityIntro_005'
 # ../.source/TheCostofDisease_Eng_v10.cs:3109
 - type: 'assign'

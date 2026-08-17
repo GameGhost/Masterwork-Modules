@@ -2,15 +2,15 @@
 ---
 format: 'mws/0.4'
 passage_id: 'AcceptDuel1b'
-# ../en-US.restext:1790 | "Duel Accepted"
+# ../en-US.restext:1791 | "Duel Accepted"
 title: 'restext://AcceptDuel1b_001'
 layout: 'narration'
 nodes:
 # ../.source/ATimeofWar_Eng_v8.cs:21182
 - type: 'let'
   var: '_rnd_AcceptDuel1b_0'
-  # ../en-US.restext:1791 | AcceptDuel1b_002 | "Though I perceived my bod..."
-  # ../en-US.restext:1792 | AcceptDuel1b_003 | "I decided that honor was ..."
+  # ../en-US.restext:1792 | AcceptDuel1b_002 | "Though I perceived my bod..."
+  # ../en-US.restext:1793 | AcceptDuel1b_003 | "I decided that honor was ..."
   expr: '["restext://AcceptDuel1b_002", "restext://AcceptDuel1b_003"].shuffled("AcceptDuel1b_0")[0]'
 # ../.source/ATimeofWar_Eng_v8.cs:21182
 - type: 'text'
