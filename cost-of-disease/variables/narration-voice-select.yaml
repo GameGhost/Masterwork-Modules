@@ -1,0 +1,8 @@
+# Backs the ${narrationVoice == "female" ? ... : ...} ternary pattern on Hospitalintro's audio_track
+# narration (passages-override/Hospitalintro.mws.yaml) — see docs/mws-format-latest.md §6 in the
+# code repo. Not discovered by extraction (the original app selected VO gender through its own
+# Options UI, never a story variable), so it lives here rather than _variables.yaml.
+variables:
+  narrationVoice:
+    type: 'string'
+    default: 'male'

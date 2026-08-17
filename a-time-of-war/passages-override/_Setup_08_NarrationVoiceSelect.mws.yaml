@@ -1,0 +1,33 @@
+# Masterwork-authored onboarding passage (not extractor output) — see Modules/cost-of-disease/README.md.
+# Narration-voice picker for gendered audio_track narration (${narrationVoice == "female" ? ... : ...}
+# — see docs/mws-format-latest.md §6 "Audio" and the --audio-map extractor option in the code repo).
+# narrationVoice already has a real declared default ('male', variables/narration-voice-select.yaml),
+# so this input's radio group shows pre-selected and already valid on first arrival — the player can
+# continue immediately, or switch to Female first (docs/mws-format-latest.md's `input` section,
+# "Options" — pre-selection from an existing default). Spliced between town-name entry and
+# Preparations: this is now Setup_07_TownNameEntry's confirm popup's own target (see that file).
+---
+format: 'mws/0.4'
+passage_id: 'Setup_08_NarrationVoiceSelect'
+title: 'restext://Setup_NarrationVoice_Title'
+layout: 'player_setup'
+# Setup-passage background music — see Setup_01_PlayerCountSelect's own comment.
+audio:
+  music: 'audio://bgm/setup_theme'
+nodes:
+- type: 'text'
+  value: 'restext://Setup_NarrationVoice_Prompt'
+- type: 'break'
+  style: 'paragraph'
+- type: 'input'
+  var: 'narrationVoice'
+  options:
+  - value: 'male'
+    label: 'restext://Setup_NarrationVoice_Male'
+  - value: 'female'
+    label: 'restext://Setup_NarrationVoice_Female'
+- type: 'link'
+  label: 'restext://Common_Continue'
+  style: 'btn-brown'
+  target: '00_Preparations'
+  snapshot: true

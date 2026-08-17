@@ -10,6 +10,12 @@ tags:
 - 'INTRO'
 layout: 'introduction'
 nodes:
+- type: 'audio_track'
+  asset: '${narrationVoice == "female" ? "audio://vo/peaceintro_f" : "audio://vo/peaceintro_m"}'
+  # ../en-US.restext:591 | "Peace Through War"
+  title: 'restext://PeaceIntro_001'
+  autoplay: true
+  bgm_behavior: 'pause'
 # ../.source/ATimeofWar_Eng_v8.cs:5614
 - type: 'text'
   # ../en-US.restext:592 | "I arrived just in time fo..."

@@ -10,6 +10,12 @@ tags:
 - 'INTRO'
 layout: 'introduction'
 nodes:
+- type: 'audio_track'
+  asset: '${narrationVoice == "female" ? "audio://vo/universityintro_f" : "audio://vo/universityintro_m"}'
+  # ../en-US.restext:491 | "The University Advances"
+  title: 'restext://UniversityIntro_001'
+  autoplay: true
+  bgm_behavior: 'pause'
 # ../.source/TheCostofDisease_Eng_v10.cs:3057
 - type: 'assign'
   var: 'theme'

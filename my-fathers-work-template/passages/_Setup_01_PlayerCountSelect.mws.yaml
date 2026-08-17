@@ -8,6 +8,12 @@ title: 'restext://Setup_PlayerCount_Title'
 tags:
 - 'Begins-Here'
 layout: 'player_setup'
+# Setup-passage background music (Phase 5 Milestone 6.2) — shared across all onboarding passages
+# regardless of module, since none of them are scenario-specific content yet. Same source file as
+# the app theme's own main-menu music (Assets/SFX/Fathers work Title theme.ogg), copied separately
+# here since module audio:// resolution never reaches into the app theme project's own assets.
+audio:
+  music: 'audio://bgm/setup_theme'
 nodes:
 - type: 'text'
   value: 'restext://Setup_PlayerCount_Prompt'

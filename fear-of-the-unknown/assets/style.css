@@ -1893,6 +1893,64 @@ body {
     background-position: 1em -0.05em, 0;
 }
 
+/* Radio-group input (format spec: `options:` field on `input`, orthogonal to var's declared type)
+   — first real consumer of radio_selected.png/radio_unselected.png, sitting unused in every
+   module's inputs/ folder since the original app-parity survey (see the layout-choice comment
+   above: "the format doesn't have an input type for [a radio group] anyway" — now resolved).
+   Whole-image swap rather than checkbox's layered outline+checkmark technique, since these two
+   assets are already complete checked/unchecked renders on their own. */
+.mws-input-options {
+    background: none;
+    border: none;
+    padding: 0;
+    /* width: fit-content shrinks the fieldset down to its widest child (the widest option row, or
+       the legend) instead of stretching block-level to the full passage width; auto side margins
+       then center that shrunk box — legend and every option row stay left-aligned against each
+       other (mws-input-option's own flex row is unaffected), only the group as a whole centers. */
+    width: fit-content;
+    margin: 0.75em auto;
+}
+
+.mws-input-options legend {
+    color: #e8dcc8;
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    padding: 0;
+}
+
+.mws-input-option {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    padding: 0.3em 0;
+    color: #e8c9a0;
+    font-size: 1.05em;
+    cursor: pointer;
+}
+
+.mws-input-option input[type="radio"] {
+    appearance: none;
+    width: 1.75rem;
+    height: 1.75rem;
+    flex-shrink: 0;
+    background-image: url(image://inputs/radio_unselected);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.mws-input-option input[type="radio"]:checked {
+    background-image: url(image://inputs/radio_selected);
+}
+
+.mws-input-option input[type="radio"]:disabled {
+    cursor: default;
+    opacity: 0.6;
+}
+
 /* ── countdown_instructions / countdown_action popups (replace the bespoke voting/bidding
    component) ─ Module-09/10A/10B: ONE continuous-looking parchment note stays on screen the whole
    time — instructions never disappear or change. Built as a genuinely NESTED popup (see
@@ -3307,5 +3365,165 @@ body {
 
 .mws-mute-label {
     color: #e8c9a0;
+    font-size: 0.9em;
+}
+
+/* ── audio_track playback element ──────────────────────────────────────────
+ * Phase 4 shipped this node type with only app.css's bare structural hooks — first real theme pass.
+ * Play/pause are whole-icon swaps (button_forward_orange.png / pause.png, both already-available
+ * inputs/ assets — the survey that produced this milestone found no Pause icon anywhere in the
+ * theme's asset set, but a real generic two-bar pause glyph (pause.png) was sitting unused in every
+ * module's own inputs/ folder the whole time, so the CSS-only pseudo-element fallback the original
+ * plan proposed turned out not to be needed). Scrubber reuses the Options dialog's own
+ * slider_base.png/slider_button.png range-input technique verbatim (.mws-options-input[type="range"]
+ * further up this file) — same asset, same visual language, just a second consumer. */
+.mws-audio-track {
+    padding: 0.75em 1em;
+    margin: 0.75em 0;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 0.4rem;
+}
+
+/* Visually hidden, not removed — the title is redundant here (it duplicates the passage/section
+   heading directly above it in every real occurrence so far) but stays readable to screen readers
+   rather than display:none, which would drop it from the accessibility tree too. Same clip
+   technique as app.css's own .mws-visually-hidden (duplicated rather than referenced — this is a
+   separate module stylesheet, no shared class available to apply from here). */
+.mws-audio-track-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.mws-audio-track-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+}
+
+/* app.css's own bare-fallback rule for this same selector (used when no module theme is loaded at
+   all) sets `height: 2rem`, `border-radius: 50%`, and a disabled `background: #888` shorthand.
+   The module <style> block always loads after app.css (moduleStyle.js appends it to <head> at
+   runtime), so for any property THIS rule doesn't also redeclare, the equal-specificity selector
+   in app.css still wins the cascade per-property — it isn't "replaced" just because this rule
+   exists. That's exactly what caused the reported bug: only `width`/`padding` were redeclared
+   here, leaving app.css's own `height: 2rem` fighting this rule's `aspect-ratio: 1` (aspect-ratio
+   never overrides an already-definite height from another rule — it only fills in a *missing*
+   dimension) and stretching the box to 2.25rem × 2rem, and leaving app.css's `border-radius: 50%`
+   applied to that non-square box, reading as a rounded/pill shape instead of the icon's own edges.
+   Explicit height + border-radius: 0 below close both gaps — every box-shape property this
+   selector cares about is now owned here, not left to app.css's leftovers. */
+.mws-audio-track-play,
+.mws-audio-track-pause {
+    appearance: none;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 0;
+    /* A bare <button> keeps the UA stylesheet's own default padding even under appearance: none
+       (that only strips native theming, not box-model properties) — zeroed here the same way
+       .mws-pause-nav-button already does for its own icon-only buttons. */
+    padding: 0;
+    flex-shrink: 0;
+    background-color: transparent;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.mws-audio-track-play {
+    background-image: url(image://inputs/button_forward_orange);
+}
+
+.mws-audio-track-pause {
+    background-image: url(image://inputs/pause);
+}
+
+/* app.css's own `:disabled` rule (same selector, same specificity, loads first) sets a plain
+   `background: #888` shorthand — that resets background-image/-size/-repeat to their shorthand
+   defaults too, not just background-color, so without redeclaring all of them here the disabled
+   icon was fully replaced by a flat grey fill instead of just being desaturated by the filter
+   below. Each button's own image is re-specified per-selector (not the combined selector) so
+   play/pause keep their own distinct disabled icon rather than sharing one. */
+.mws-audio-track-play:disabled {
+    background-image: url(image://inputs/button_forward_orange);
+}
+
+.mws-audio-track-pause:disabled {
+    background-image: url(image://inputs/pause);
+}
+
+.mws-audio-track-play:disabled,
+.mws-audio-track-pause:disabled {
+    background-color: transparent;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+    cursor: default;
+}
+
+/* Same asset-swap range-input technique as .mws-options-input[type="range"] further up this file
+   (slider_base.png track, slider_button.png thumb) — see that rule's own comment for why both
+   -webkit/-moz thumb pseudo-elements are needed. */
+.mws-audio-track-scrubber {
+    appearance: none;
+    -webkit-appearance: none;
+    flex: 1 1 auto;
+    height: 22px;
+    background-image: url(image://inputs/slider_base);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.mws-audio-track-scrubber::-webkit-slider-runnable-track,
+.mws-audio-track-scrubber::-moz-range-track {
+    height: 22px;
+    background: transparent;
+    border: none;
+}
+
+.mws-audio-track-scrubber::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 22px;
+    height: 22px;
+    background-image: url(image://inputs/slider_button);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mws-audio-track-scrubber::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+    background-image: url(image://inputs/slider_button);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mws-audio-track-scrubber:disabled {
+    filter: grayscale(1);
+    cursor: default;
+}
+
+.mws-audio-track-time {
+    flex: none;
+    color: #e8c9a0;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
     font-size: 0.9em;
 }

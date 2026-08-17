@@ -10,6 +10,12 @@ tags:
 - 'INTRO'
 layout: 'introduction'
 nodes:
+- type: 'audio_track'
+  asset: '${narrationVoice == "female" ? "audio://vo/intromartialseparatists_f" : "audio://vo/intromartialseparatists_m"}'
+  # ../en-US.restext:1382 | "Down with the Monarchy"
+  title: 'restext://IntroMartial_Separatists_001'
+  autoplay: true
+  bgm_behavior: 'pause'
 # ../.source/ATimeofWar_Eng_v8.cs:16812
 - type: 'text'
   # ../en-US.restext:1383 | "The length and difficulty..."

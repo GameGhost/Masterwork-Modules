@@ -8,6 +8,12 @@ tags:
 - 'INTRO'
 layout: 'introduction'
 nodes:
+- type: 'audio_track'
+  asset: '${narrationVoice == "female" ? "audio://vo/warningevent_f" : "audio://vo/warningevent_m"}'
+  # ../en-US.restext:656 | "The Time Travelers Appear"
+  title: 'restext://WarningEvent_001'
+  autoplay: true
+  bgm_behavior: 'pause'
 # ../.source/ATimeofWar_Eng_v8.cs:6907
 - type: 'text'
   # ../en-US.restext:657 | "In a brief instant, the t..."

@@ -5,13 +5,16 @@
 
 .DESCRIPTION
     Template-canonical, mirror-copied (overwrite on collision, existing target-only files are never
-    deleted): assets/audio/sfx/, assets/fonts/, assets/icons/ (combines with the target's own —
+    deleted): assets/audio/sfx/, assets/audio/bgm/ (Phase 5 Milestone 6.2 — the setup-passage theme
+    and the shared 4-track ending-sequence playlist; a target module can still have its own
+    additional module-specific bgm files alongside these, they're just never deleted or overwritten
+    unless the filename collides), assets/fonts/, assets/icons/ (combines with the target's own —
     template wins only on a filename collision, the target's unique icons are left alone),
     assets/images/{backgrounds,borders,inputs,popup,progress}/, assets/style.css, and every
-    layouts/*.mws.yaml. Never touches assets/audio/bgm|vo, images directly under assets/images/, or
+    layouts/*.mws.yaml. Never touches assets/audio/vo, images directly under assets/images/, or
     images/setup/ — those are the target module's own scenario-specific content.
 
-    Also copies the template's _Setup_01..07/_Scoring_01..04 passages verbatim (same filenames) into
+    Also copies the template's _Setup_01..08/_Scoring_01..04 passages verbatim (same filenames) into
     the target's passages-override/, the variables/players.yaml and variables/scoring.yaml
     declarations backing them (under a template-owned filename, so an existing same-concern file in
     the target is never overwritten — see that copy step's own comment for why a module without
@@ -126,6 +129,7 @@ function Copy-TrackedDirectory {
 # ── Template-canonical assets ────────────────────────────────────────────────
 $canonicalDirs = @(
     'assets/audio/sfx',
+    'assets/audio/bgm',
     'assets/fonts',
     'assets/icons',
     'assets/images/backgrounds',
@@ -195,6 +199,7 @@ $overridePassages = @(
     '_Setup_05_PlayerNameC.mws.yaml',
     '_Setup_06_PlayerNameD.mws.yaml',
     '_Setup_07_TownNameEntry.mws.yaml',
+    '_Setup_08_NarrationVoiceSelect.mws.yaml',
     '_Scoring_01_ScoreEntry.mws.yaml',
     '_Scoring_02_TieBreaker1.mws.yaml',
     '_Scoring_03_TieBreaker2.mws.yaml',

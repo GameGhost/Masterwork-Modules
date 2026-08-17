@@ -10,6 +10,12 @@ tags:
 - 'INTRO'
 layout: 'introduction'
 nodes:
+- type: 'audio_track'
+  asset: '${narrationVoice == "female" ? "audio://vo/scenario5start_f" : "audio://vo/scenario5start_m"}'
+  # ../en-US.restext:422 | "Yellow Fever"
+  title: 'restext://Scenario5Start_001'
+  autoplay: true
+  bgm_behavior: 'pause'
 # ../.source/TheCostofDisease_Eng_v10.cs:2254
 - type: 'text'
   # ../en-US.restext:424 | "The siblings' arrival to ..."

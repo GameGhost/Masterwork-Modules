@@ -6,6 +6,9 @@ format: 'mws/0.4'
 passage_id: 'Setup_07_TownNameEntry'
 title: 'restext://Setup_TownName_Title'
 layout: 'player_setup'
+# Setup-passage background music — see Setup_01_PlayerCountSelect's own comment.
+audio:
+  music: 'audio://bgm/setup_theme'
 nodes:
 - type: 'conditional'
   if: 'townname == ""'
@@ -38,8 +41,10 @@ nodes:
     - type: 'text'
       value: 'restext://Setup_TownName_ConfirmBody2'
     okay: 'restext://Common_Continue'
-    # Every real module's own hand-maintained 00_Preparations.mws.yaml override is the canonical
-    # landing point here (each game's raw extracted Preparations-equivalent passage redirects to it
-    # via its own override rather than duplicating its content) — not a placeholder.
-    target: '00_Preparations'
+    # Hands off to the narration-voice picker (Setup_08_NarrationVoiceSelect) rather than straight
+    # to 00_Preparations. That passage's own Continue link is what actually reaches 00_Preparations
+    # now — every real module's own hand-maintained 00_Preparations.mws.yaml override is still the
+    # canonical landing point there (each game's raw extracted Preparations-equivalent passage
+    # redirects to it via its own override rather than duplicating its content) — not a placeholder.
+    target: 'Setup_08_NarrationVoiceSelect'
     snapshot: true

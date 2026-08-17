@@ -1,0 +1,9 @@
+# Backs Setup_08_NarrationVoiceSelect's radio-group input and the
+# ${narrationVoice == "female" ? ... : ...} ternary pattern any module's own audio_track narration
+# uses (see docs/mws-format-latest.md §6 in the code repo). Not discovered by extraction (the
+# original app selected VO gender through its own Options UI, never a story variable), so it lives
+# here rather than a module's own _variables.yaml.
+variables:
+  narrationVoice:
+    type: 'string'
+    default: 'male'

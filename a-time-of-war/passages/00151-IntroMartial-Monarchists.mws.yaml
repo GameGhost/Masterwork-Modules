@@ -10,6 +10,12 @@ tags:
 - 'INTRO'
 layout: 'introduction'
 nodes:
+- type: 'audio_track'
+  asset: '${narrationVoice == "female" ? "audio://vo/intromartialmonarchists_f" : "audio://vo/intromartialmonarchists_m"}'
+  # ../en-US.restext:1374 | "Plagued by Conflict"
+  title: 'restext://IntroMartial_Monarchists_001'
+  autoplay: true
+  bgm_behavior: 'pause'
 # ../.source/ATimeofWar_Eng_v8.cs:16774
 - type: 'text'
   # ../en-US.restext:1375 | "If one can call the prosp..."

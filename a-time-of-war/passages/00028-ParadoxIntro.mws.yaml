@@ -10,6 +10,12 @@ tags:
 - 'INTRO'
 layout: 'introduction'
 nodes:
+- type: 'audio_track'
+  asset: '${narrationVoice == "female" ? "audio://vo/paradoxintro_f" : "audio://vo/paradoxintro_m"}'
+  # ../en-US.restext:509 | "You Cant Stop Progress"
+  title: 'restext://ParadoxIntro_001'
+  autoplay: true
+  bgm_behavior: 'pause'
 # ../.source/ATimeofWar_Eng_v8.cs:4262
 - type: 'text'
   # ../en-US.restext:510 | "**A Brighter Future**"

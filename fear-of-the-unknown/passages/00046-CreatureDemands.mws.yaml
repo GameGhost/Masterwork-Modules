@@ -8,6 +8,12 @@ tags:
 - 'INTRO'
 layout: 'introduction'
 nodes:
+- type: 'audio_track'
+  asset: '${narrationVoice == "female" ? "audio://vo/creaturedemands_f" : "audio://vo/creaturedemands_m"}'
+  # ../en-US.restext:747 | "The Creature's Demands"
+  title: 'restext://CreatureDemands_001'
+  autoplay: true
+  bgm_behavior: 'pause'
 # ../.source/FearoftheUnknown_Eng_v15.cs:7257
 - type: 'text'
   # ../en-US.restext:175 | "**Letter from {randomname..."

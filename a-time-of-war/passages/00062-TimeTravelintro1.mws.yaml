@@ -10,6 +10,12 @@ tags:
 - 'INTRO'
 layout: 'introduction'
 nodes:
+- type: 'audio_track'
+  asset: '${narrationVoice == "female" ? "audio://vo/timetravelintro1_f" : "audio://vo/timetravelintro1_m"}'
+  # ../en-US.restext:715 | "A Return to Devastation"
+  title: 'restext://TimeTravelintro1_001'
+  autoplay: true
+  bgm_behavior: 'pause'
 # ../.source/ATimeofWar_Eng_v8.cs:8207
 - type: 'text'
   # ../en-US.restext:716 | "I hope you will indulge m..."

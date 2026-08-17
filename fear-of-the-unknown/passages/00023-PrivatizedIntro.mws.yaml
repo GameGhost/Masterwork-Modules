@@ -10,6 +10,12 @@ tags:
 - 'INTRO'
 layout: 'introduction'
 nodes:
+- type: 'audio_track'
+  asset: '${narrationVoice == "female" ? "audio://vo/privatizedintro_f" : "audio://vo/privatizedintro_m"}'
+  # ../en-US.restext:573 | "Conducting Business"
+  title: 'restext://PrivatizedIntro_001'
+  autoplay: true
+  bgm_behavior: 'pause'
 # ../.source/FearoftheUnknown_Eng_v15.cs:4214
 - type: 'switch'
   on: 'players'

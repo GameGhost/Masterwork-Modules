@@ -10,6 +10,12 @@ tags:
 - 'INTRO'
 layout: 'introduction'
 nodes:
+- type: 'audio_track'
+  asset: '${narrationVoice == "female" ? "audio://vo/tensionintro_f" : "audio://vo/tensionintro_m"}'
+  # ../en-US.restext:537 | "Old Habits"
+  title: 'restext://TensionIntro_001'
+  autoplay: true
+  bgm_behavior: 'pause'
 # ../.source/FearoftheUnknown_Eng_v15.cs:3647
 - type: 'switch'
   on: 'players'

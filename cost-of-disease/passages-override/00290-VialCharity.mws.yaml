@@ -1,0 +1,53 @@
+# Override of passages/00290-VialCharity.mws.yaml — adds real popup SFX (Phase 4 Milestone C
+# pilot content). The outer ("reveal") popup gets its own open override (a real node-level
+# override, distinct from the module's generic popup_open default) but no cancel override, so
+# Cancel falls through to the module's popup_close default — the inner ("setup") popup has no
+# audio: of its own at all, so its Okay also falls through to that same module default. Between
+# the two, open/okay/cancel are all exercised with real audio, mixing node override and module
+# fallback exactly as a real module would. Every other node is unchanged from the extracted
+# original; see that file for the extraction source comments this override intentionally drops.
+---
+format: 'mws/0.5'
+passage_id: 'VialCharity'
+layout: 'narration'
+nodes:
+- type: 'text'
+  value: 'restext://VialCharity_001'
+- type: 'break'
+  style: 'paragraph'
+- type: 'popup'
+  label: 'restext://Click_RevealSecretConversation'
+  layout: 'reveal'
+  cancel: 'restext://UIButton_Close'
+  snapshot: true
+  audio:
+    open: 'audio://sfx/reveal'
+  content:
+  - type: 'text'
+    value: 'restext://VialCharity_002'
+  - type: 'break'
+  - type: 'text'
+    value: 'restext://VialCharity_003'
+  - type: 'break'
+    style: 'paragraph'
+  - type: 'text'
+    value: 'restext://VialCharity_004'
+  - type: 'break'
+    style: 'paragraph'
+  - type: 'popup'
+    layout: 'setup'
+    label: 'restext://Click_ContinueEllipsis_C'
+    target: 'LycanthropicMessage'
+    okay: 'restext://UIButton_Close'
+    snapshot: true
+    header:
+    - type: 'image'
+      asset: 'image://setup/S1_VialToken'
+      style: 'setup-image'
+    content:
+    - type: 'text'
+      value: 'restext://VialCharity_005'
+    - type: 'break'
+      style: 'paragraph'
+    - type: 'text'
+      value: 'restext://Directive_ReturnHeartToken'

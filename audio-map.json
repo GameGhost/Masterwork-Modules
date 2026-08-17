@@ -1,0 +1,36 @@
+{
+  "_comment": "Passage name -> gendered VO asset slugs + narration title, consumed by Masterwork.Extractor's --audio-map option (see docs/extractor.md in the code repo). Each entry synthesizes an audio_track node prepended to the matching passage's node list, with asset '${narrationVoice == \"female\" ? \"audio://vo/<female>\" : \"audio://vo/<male>\"}'. Slugs resolve against the target module's own assets/audio/vo/<slug>.ogg. Built from Masterwork-Design/Design/audio-inventory.md §5's full 28-entry male/female tables, cross-checked against the real extracted passages in this repo. title is each passage's own real extracted title text (not invented) -- see masterwork-plan-rev23.md's Phase 5 M6 notes.",
+
+  "_comment_GloomyWolvesIntro": "Q33 (masterwork-plan-rev23.md), resolved: the female entry is deliberately mapped to a slug with NO real audio file backing it (gloomywolvesintro_f) -- not the anomalous file-in-wrong-folder mapping the original inventory found, and not carried-forward/guessed-at either. This exercises AssetResolver's real graceful-degrade path (logs a warning, resolves null; RenderedAudioTrackView shows disabled controls + 0:00/0:00 rather than nothing) live, rather than simply omitting the passage from this map.",
+
+  "ATimeofWarIntro": { "male": "atimeofwarintro_m", "female": "atimeofwarintro_f", "title": "Taking Sides" },
+  "IntroMartial-Monarchists": { "male": "intromartialmonarchists_m", "female": "intromartialmonarchists_f", "title": "Plagued by Conflict" },
+  "IntroMartial-Separatists": { "male": "intromartialseparatists_m", "female": "intromartialseparatists_f", "title": "Down with the Monarchy" },
+  "MonarchReignIntro": { "male": "monarchreignintro_m", "female": "monarchreignintro_f", "title": "Heavy is the Crown" },
+  "ParadoxIntro": { "male": "paradoxintro_m", "female": "paradoxintro_f", "title": "You Cant Stop Progress" },
+  "PeaceIntro": { "male": "peaceintro_m", "female": "peaceintro_f", "title": "Peace Through War" },
+  "TimeTravelintro1": { "male": "timetravelintro1_m", "female": "timetravelintro1_f", "title": "A Return to Devastation" },
+  "TimeTravelIntro2": { "male": "timetravelintro2_m", "female": "timetravelintro2_f", "title": "A Well Timed Discovery" },
+  "TTIntro3": { "male": "ttintro3_m", "female": "ttintro3_f", "title": "To the Past" },
+  "WarningEvent": { "male": "warningevent_m", "female": "warningevent_f", "title": "The Time Travelers Appear" },
+  "WarningIntro": { "male": "warningintro_m", "female": "warningintro_f", "title": "Future Consequences" },
+
+  "DevastationIntro": { "male": "devastationintro_m", "female": "devastationintro_f", "title": "The Epidemic Strikes" },
+  "GloomyHunterIntro": { "male": "gloomyhunterintro_m", "female": "gloomyhunterintro_f", "title": "The Fraternity of Hunters" },
+  "GloomyWolvesIntro": { "male": "gloomywolvesintro_m", "female": "gloomywolvesintro_f", "title": "The Order Revealed" },
+  "Hospitalintro": { "male": "hospitalintro_m", "female": "hospitalintro_f", "title": "Thriving in Adversity" },
+  "NoUniversityIntro": { "male": "nouniversityintro_m", "female": "nouniversityintro_f", "title": "DROWN YOUR SORROWS" },
+  "ProsperityHunterIntro": { "male": "prosperityhunterintro_m", "female": "prosperityhunterintro_f", "title": "The Fraternity of Hunters" },
+  "ProsperityWolvesIntro": { "male": "prosperitywolvesintro_m", "female": "prosperitywolvesintro_f", "title": "The Order Revealed" },
+  "Scenario5Start": { "male": "scenario5start_m", "female": "scenario5start_f", "title": "Yellow Fever" },
+  "UniversityIntro": { "male": "universityintro_m", "female": "universityintro_f", "title": "The University Advances" },
+
+  "CreatureDemands": { "male": "creaturedemands_m", "female": "creaturedemands_f", "title": "The Creature's Demands" },
+  "CreatureIntro": { "male": "creatureintro_m", "female": "creatureintro_f", "title": "Towards Civility" },
+  "FearoftheUnknownStart": { "male": "fearoftheunknownstart_m", "female": "fearoftheunknownstart_f", "title": "Fear of the Unknown" },
+  "ForeignIntro": { "male": "foreignintro_m", "female": "foreignintro_f", "title": "Hexes and Hysteria" },
+  "IsolationIntro": { "male": "isolationintro_m", "female": "isolationintro_f", "title": "Isolation and Ignorance" },
+  "LiberalIntro": { "male": "liberalintro_m", "female": "liberalintro_f", "title": "Acceptance" },
+  "PrivatizedIntro": { "male": "privatizedintro_m", "female": "privatizedintro_f", "title": "Conducting Business" },
+  "TensionIntro": { "male": "tensionintro_m", "female": "tensionintro_f", "title": "Old Habits" }
+}

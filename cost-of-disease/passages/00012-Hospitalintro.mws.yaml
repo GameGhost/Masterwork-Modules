@@ -10,6 +10,12 @@ tags:
 - 'INTRO'
 layout: 'introduction'
 nodes:
+- type: 'audio_track'
+  asset: '${narrationVoice == "female" ? "audio://vo/hospitalintro_f" : "audio://vo/hospitalintro_m"}'
+  # ../en-US.restext:476 | "Thriving in Adversity"
+  title: 'restext://Hospitalintro_001'
+  autoplay: true
+  bgm_behavior: 'pause'
 # ../.source/TheCostofDisease_Eng_v10.cs:2917
 - type: 'text'
   # ../en-US.restext:477 | "It is said that springtim..."

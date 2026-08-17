@@ -85,13 +85,16 @@ repo now. `<Masterwork-Modules>` below is the path to this repo's own local clon
 $base        = "<Masterwork-Modules>/cost-of-disease/.source"
 $spritemap   = "<path to a local copy of the Unity project's Assets/Resources/TheCostOfDisease_ItemObtain.json>"
 $progressmap = "<Masterwork-Modules>/progress-map.json"
+$audiomap    = "<Masterwork-Modules>/audio-map.json"
 $modules     = "<Masterwork-Modules>"
 
 # The Cost of Disease — passages go into the module's passages/ subfolder; _variables.yaml and
 # en-US.restext go into the module root, next to manifest.yaml and passages-override/.
 # --common-restext gives stable IDs to Common strings (cost-of-disease/.source/en-US.common.restext);
 # --progress-map gives hub_early/hub_middle/hub_late layout overrides + end_of_round popups at the
-# reference app's real progress-bar checkpoints (progress-map.json, see below).
+# reference app's real progress-bar checkpoints (progress-map.json, see below); --audio-map
+# synthesizes gendered audio_track VO narration nodes at this scenario's own intro passages
+# (audio-map.json, shared by all three official scenarios — see its own header comment).
 dotnet run --project src/Masterwork.Extractor -- `
   "$base\TheCostofDisease_Eng_v10.cs" `
   "$modules\cost-of-disease\passages" `
@@ -100,7 +103,8 @@ dotnet run --project src/Masterwork.Extractor -- `
   --module-title "The Cost of Disease" `
   --sprite-map $spritemap `
   --common-restext "$base\en-US.common.restext" `
-  --progress-map $progressmap
+  --progress-map $progressmap `
+  --audio-map $audiomap
 ```
 
 `$base\TheCostofDisease_Eng_v10.cs` being inside `cost-of-disease/.source/` (not `passages-out-dir`)

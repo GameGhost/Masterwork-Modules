@@ -10,6 +10,12 @@ tags:
 - 'INTRO'
 layout: 'introduction'
 nodes:
+- type: 'audio_track'
+  asset: '${narrationVoice == "female" ? "audio://vo/monarchreignintro_f" : "audio://vo/monarchreignintro_m"}'
+  # ../en-US.restext:584 | "Heavy is the Crown"
+  title: 'restext://MonarchReignIntro_001'
+  autoplay: true
+  bgm_behavior: 'pause'
 # ../.source/ATimeofWar_Eng_v8.cs:5528
 - type: 'text'
   # ../en-US.restext:585 | "Influence is gained in tw..."

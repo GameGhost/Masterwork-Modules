@@ -8,6 +8,12 @@ tags:
 - 'INTRO'
 layout: 'introduction'
 nodes:
+- type: 'audio_track'
+  asset: '${narrationVoice == "female" ? "audio://vo/timetravelintro2_f" : "audio://vo/timetravelintro2_m"}'
+  # ../en-US.restext:522 | "A Well Timed Discovery"
+  title: 'restext://TimeTravelIntro2_001'
+  autoplay: true
+  bgm_behavior: 'pause'
 # ../.source/ATimeofWar_Eng_v8.cs:4528
 - type: 'text'
   # ../en-US.restext:523 | "If you disbelieve the nex..."

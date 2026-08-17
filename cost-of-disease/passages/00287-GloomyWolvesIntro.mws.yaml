@@ -10,6 +10,12 @@ tags:
 - 'INTRO'
 layout: 'introduction'
 nodes:
+- type: 'audio_track'
+  asset: '${narrationVoice == "female" ? "audio://vo/gloomywolvesintro_f" : "audio://vo/gloomywolvesintro_m"}'
+  # ../en-US.restext:342 | "The Order Revealed"
+  title: 'restext://Title_OrderRevealed'
+  autoplay: true
+  bgm_behavior: 'pause'
 # ../.source/TheCostofDisease_Eng_v10.cs:29375
 - type: 'text'
   # ../en-US.restext:278 | "I will attempt to relay t..."

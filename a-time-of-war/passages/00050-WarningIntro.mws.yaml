@@ -10,6 +10,12 @@ tags:
 - 'INTRO'
 layout: 'introduction'
 nodes:
+- type: 'audio_track'
+  asset: '${narrationVoice == "female" ? "audio://vo/warningintro_f" : "audio://vo/warningintro_m"}'
+  # ../en-US.restext:638 | "Future Consequences"
+  title: 'restext://WarningIntro_001'
+  autoplay: true
+  bgm_behavior: 'pause'
 # ../.source/ATimeofWar_Eng_v8.cs:6633
 - type: 'text'
   # ../en-US.restext:639 | "**A Modern Future**"

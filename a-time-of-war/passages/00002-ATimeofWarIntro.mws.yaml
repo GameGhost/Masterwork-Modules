@@ -10,6 +10,12 @@ tags:
 - 'INTRO'
 layout: 'introduction'
 nodes:
+- type: 'audio_track'
+  asset: '${narrationVoice == "female" ? "audio://vo/atimeofwarintro_f" : "audio://vo/atimeofwarintro_m"}'
+  # ../en-US.restext:306 | "Taking Sides"
+  title: 'restext://ATimeofWarIntro_001'
+  autoplay: true
+  bgm_behavior: 'pause'
 # ../.source/ATimeofWar_Eng_v8.cs:1294
 - type: 'text'
   # ../en-US.restext:308 | "My father was a genius! I..."

@@ -10,6 +10,12 @@ tags:
 - 'INTRO'
 layout: 'introduction'
 nodes:
+- type: 'audio_track'
+  asset: '${narrationVoice == "female" ? "audio://vo/prosperityhunterintro_f" : "audio://vo/prosperityhunterintro_m"}'
+  # ../en-US.restext:348 | "The Fraternity of Hunters"
+  title: 'restext://Title_TheFraternityOfHunters'
+  autoplay: true
+  bgm_behavior: 'pause'
 # ../.source/TheCostofDisease_Eng_v10.cs:9383
 - type: 'text'
   # ../en-US.restext:247 | "The disease had revealed ..."

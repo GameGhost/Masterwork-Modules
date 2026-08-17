@@ -10,6 +10,12 @@ tags:
 - 'INTRO'
 layout: 'introduction'
 nodes:
+- type: 'audio_track'
+  asset: '${narrationVoice == "female" ? "audio://vo/nouniversityintro_f" : "audio://vo/nouniversityintro_m"}'
+  # ../en-US.restext:498 | "DROWN YOUR SORROWS"
+  title: 'restext://NoUniversityIntro_001'
+  autoplay: true
+  bgm_behavior: 'pause'
 # ../.source/TheCostofDisease_Eng_v10.cs:3097
 - type: 'text'
   # ../en-US.restext:499 | "They arrived by coach on ..."
