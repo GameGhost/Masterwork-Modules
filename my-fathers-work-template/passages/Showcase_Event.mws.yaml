@@ -5,11 +5,10 @@
 # mechanism. This demo hand-authors that same node shape directly, matching what extraction would
 # now produce for a real "ck2" passage.
 #
-# Phase 5 addendum: the extractor also now synthesizes the passage-level audio.on_display override
-# below whenever it detects this marker node (V2Serializer.HasSpecialEventMarker) — the real Unity
-# app fires an SFX (ViewSpecialEvent.clip, via SoundManager.Instance.OnOpenPopupPlayAudio) the
-# instant this overlay appears, a gap the original audio-inventory.md survey missed entirely (see
-# audio-survey-new-sfx.md). Hand-authored here to match, same reasoning as the node shape above.
+# The extractor also now synthesizes the passage-level audio.on_display override below whenever it
+# detects this marker node (V2Serializer.HasSpecialEventMarker) — the real Unity app fires an SFX
+# (ViewSpecialEvent.clip, via SoundManager.Instance.OnOpenPopupPlayAudio) the instant this overlay
+# appears. Hand-authored here to match, same reasoning as the node shape above.
 format: 'mws/0.4'
 passage_id: 'Showcase_Event'
 title: 'A Bid for Mayor'
