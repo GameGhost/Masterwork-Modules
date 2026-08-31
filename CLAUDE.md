@@ -25,15 +25,17 @@ all). Layout at the repo root:
 
 ```
 Masterwork-Modules/
-├── progress-map.json           — shared --progress-map input (see below), used by all three official scenarios
-├── a-time-of-war/               ─┐
-├── cost-of-disease/              │ one folder per module
-├── fear-of-the-unknown/          │
-├── my-fathers-work-template/    ─┘ (hand-authored, no extraction step)
-├── a-time-of-war.mwm            ─┐
-├── cost-of-disease.mwm           │ packaged bundles (built from each module/, see Bundling below)
-├── fear-of-the-unknown.mwm       │
-└── my-fathers-work-template.mwm ─┘
+├── progress-map.json             — shared --progress-map input (see below), used by all three official scenarios
+├── a-time-of-war/                 ─┐
+├── cost-of-disease/                │ one folder per module
+├── fear-of-the-unknown/            │
+├── my-fathers-work-template/      ─┘ (hand-authored, no extraction step)
+├── mwf-common-assets/             — shared asset pack (.mwassets), depended on by all four modules above
+├── a-time-of-war.mwm              ─┐
+├── cost-of-disease.mwm             │ packaged bundles (build artifacts, gitignored — built from
+├── fear-of-the-unknown.mwm         │ each module/ or asset-pack dir, see Bundling below)
+├── my-fathers-work-template.mwm   ─┘
+└── mwf-common-assets.mwassets
 ```
 
 ---
@@ -62,9 +64,9 @@ Each module directory (e.g. `cost-of-disease/`) follows the same shape:
 | `manifest.yaml` | hand-maintained | Module id/title/description, thumbnail, player count/playtime, entry passage, `passages`/`passages_override` path overrides, `style` stylesheet reference |
 | `passages/` | extractor-owned | One `{NNN}-{PassageId}.mws.yaml` per passage — overwritten wholesale on every re-extraction. Never hand-edit files here |
 | `passages-override/` | hand-maintained | `.mws.yaml` files applied after `passages/` at module load time (`ModuleLoader.LoadFromDirectory`) — a matching `passage_id` replaces the extracted version, a new one is simply added. Never touched by extraction, so it survives re-extraction, but can drift stale against the current MWS format version since nothing re-checks it automatically |
-| `layouts/` | hand-authored | Layout-chrome files (`layouts/{layout_id}.mws.yaml`) rendered around passages/popups sharing that `layout` value — see `docs/mws-format-latest.md` §8 in the code repo |
+| `layouts/` | hand-authored | Layout-chrome files (`layouts/{layout_id}.mws.yaml`) rendered around passages/popups sharing that `layout` value — see `docs/mws-format-latest.md` §8 in the code repo. Normally **absent entirely** — every shared layout (`choice`, `note`, `prompt`, `ranking`, the score/setup popups, `narration`/`introduction`/`hub_early`/`hub_middle`/`hub_late` with roundNum already derived from `_ProgressRound`, ...) lives in `mwf-common-assets/layouts/` instead, reached via this module's own `dependencies:` entry. A file only appears here if this module's own `--progress-map` extraction assigns a *different* progress variable name than the shared default (see `scripts/apply-template.ps1 -ProgressVariable`) — none of the three official scenarios currently need this |
 | `variables/` | hand-authored | Zero or more `.yaml` files declaring session variables the module needs that aren't discovered by extraction (e.g. bookkeeping variables for hand-authored passages) — same `variables:` schema as `_variables.yaml`, loaded after it with the same add/override-by-key semantics as `passages-override/`. See `docs/mws-format-latest.md` §9 in the code repo |
-| `assets/` | hand-authored | `style.css` plus `audio/`, `fonts/`, `icons/`, `images/` — the app only emits structural `layout-{value}`/`style-{value}` CSS class hooks, everything they actually look like lives here |
+| `assets/` | hand-authored | This module's own scenario-specific content only — VO audio (`audio/vo/`), module-specific icons/images, `images/setup/`. `style.css`, `fonts/`, shared icons/images, and `audio/sfx`/`audio/bgm` all moved to `mwf-common-assets/assets/` — the app only emits structural `layout-{value}`/`style-{value}` CSS class hooks, everything they actually look like lives in whichever of these two places actually has the file |
 | `_variables.yaml` | extractor-owned | All session variables discovered during extraction, with inferred types/defaults |
 | `en-US.restext` | extractor-owned | Extracted locale strings (`Key=Value`). `Common_NNN` keys can renumber between runs — see `.source/en-US.common.restext` |
 | `.source/*.cs` | extraction input | The canonical Cradle complete-class C# source this module is extracted from — from RGS's community-resources release, see Licensing above and `NOTICE.md` |
@@ -152,20 +154,41 @@ the code repo); when the format advances, update overrides before the next modul
 
 ---
 
-## Bundling (`.mwm` packages)
+## Bundling (`.mwm`/`.mwassets` packages)
 
-`Masterwork.ModuleFormat.ModulePackage` (code repo) reads/writes a module directory as a `.mwm` zip
-— `ModulePackage.WriteToBytes(moduleDir)` bundles a module folder's `passages/`,
-`passages-override/`, `layouts/`, `variables/`, `assets/`, `manifest.yaml`, `_variables.yaml`, and
-`{locale}.restext` files directly into the archive (explicitly excluding `.source/` and a root
-`README.md`, neither of which belongs in a distributable bundle); `ModulePackage.ReadFromBytes(bytes)`
-is the inverse, returning a `ModulePackageContents` record the app loads via
-`ModuleLoader.LoadFromSources`. Bundling is a pure repackaging step — it doesn't re-run extraction
-or validate content, so re-bundle after every content change you want reflected in the `.mwm`.
+`Masterwork.ModulePacker` (code repo) is the CLI that does the actual zipping, in three modes —
+`scripts/repack.ps1` (`-Mode module|asset|standalone`, see its own `Get-Help` for the full
+parameter/example reference) is the normal way to invoke it from this repo:
 
-Each `{module}.mwm` at the repo root is the packaged build of its own `{module}/` folder — treat
-them as build artifacts (safe to regenerate any time from the folder), not hand-maintained files.
-All four modules (three official scenarios plus `my-fathers-work-template`) ship a bundle this way.
+- **module** (default) — `ModulePackage.WriteToBytes(moduleDir)` bundles a module folder's
+  `passages/`, `passages-override/`, `layouts/`, `variables/`, `assets/`, `manifest.yaml`,
+  `_variables.yaml`, and `{locale}.restext` files into a `.mwm` (excluding `.source/` and a root
+  `README.md`, neither of which belongs in a distributable bundle). `dependencies:` is left exactly
+  as declared — this is what a real release ships. `ModulePackage.ReadFromBytes(bytes)` is the
+  inverse, returning a `ModulePackageContents` record the app loads via `ModuleLoader.LoadFromSources`.
+- **asset** — `AssetPackPackage.WriteToBytes(sourceDir)` bundles an asset-pack directory (no
+  passages/passage-overrides, so its shape is narrower: `manifest.yaml`, an optional
+  `_variables.yaml`, root-level `{locale}.restext` files, and `layouts/`/`assets/`) into a
+  `.mwassets`.
+- **standalone** — `ModulePackage.WriteStandaloneToBytes(moduleDir, assetPackDirs)` packs a module
+  the same way **module** does, but also merges every listed asset pack's own `layouts/`/`assets/`/
+  `_variables.yaml`/`{locale}.restext` directly into the same `.mwm` (a module-owned file wins on an
+  exact path collision) and blanks `dependencies:` to `[]` in the packaged manifest. Loads correctly
+  with nothing else installed — use it for manual-install testing, not for a real release artifact.
+  `repack.ps1` resolves each module's declared dependency ids against this repo's own asset-pack
+  directories automatically; it errors if a dependency's source isn't here to merge in.
+
+Every `.mwm`/`.mwassets` at the repo root — including any `{name}.standalone.mwm` — is a build
+artifact (gitignored, safe to regenerate any time from its source directory), not a hand-maintained
+file. All four modules (three official scenarios plus `my-fathers-work-template`) plus
+`mwf-common-assets` ship this way; bundling never re-runs extraction or validates content, so
+re-bundle after every content change you want reflected in the packaged file.
+
+Each of the four modules declares `mwf-common-assets` as a `dependencies:` entry in its own
+`manifest.yaml` (`id: 'renegade.mwf_common_assets'` + exact pinned `version`) and no longer keeps a
+local copy of the content that moved there — a **module**-mode bundle only loads correctly once the
+asset pack is installed too (or use **standalone** mode instead); until then `ModuleWarnings`'
+`missing_dependency` note is the only symptom of it being absent, not a load failure.
 
 ---
 

@@ -10,10 +10,11 @@
 # other narration passage (same border/parchment/progress-bar chrome, "I-1" shown in the footer),
 # just with a slightly larger title. `setup_scenario` is a real, distinct layout id elsewhere (see
 # cost-of-disease/layouts/setup_scenario.mws.yaml) but was never the right one for this specific
-# passage — VIEW-REQUIREMENTS.md's own narration entry already said as much. roundNum is hardcoded
-# to 1 (matching the reference screenshot's own footer) rather than derived from demoRoundNum like
-# the Showcase_* narration demos — this passage is reached before Example_Entry ever initializes
-# that variable, upstream of the round selector entirely.
+# passage — VIEW-REQUIREMENTS.md's own narration entry already said as much. _ProgressRound is
+# hardcoded to 0 (roundNum = min(0 + 1, 9) = 1, matching the reference screenshot's own footer)
+# rather than derived from demoRoundNum like the Showcase_* narration demos — this passage is
+# reached before Example_Entry ever initializes that variable, upstream of the round selector
+# entirely.
 #
 # Also doubles as the one live example of `image` node `size`/`align` (format spec §6) — the
 # reference screenshot shows the scenario box art centered and modestly sized mid-paragraph;
@@ -27,8 +28,8 @@ title: 'Preparations'
 layout: 'narration'
 nodes:
 - type: 'assign'
-  var: 'roundNum'
-  expr: '1'
+  var: '_ProgressRound'
+  expr: '0'
 - type: 'text'
   value: 'Complete the standard setup for the chosen player count as shown in the rulebook.'
 - type: 'break'

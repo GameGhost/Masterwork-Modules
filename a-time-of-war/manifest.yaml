@@ -1,5 +1,5 @@
 id: 'renegade.a_time_of_war'
-version: '0.3.0'
+version: '0.4.0'
 languages:
   - 'en-US'
 title:
@@ -25,10 +25,14 @@ passages_override: 'passages-override'
 # (layout-{value}, style-{value}); everything those hooks actually look like lives here.
 style: 'assets/style.css'
 
-# Standalone module — no dependencies field/mechanism exists yet for a real shared asset pack. For
-# now, my-fathers-work-template's layouts/style.css/fonts/etc. are applied by direct copy (see
-# scripts/apply-template.ps1) rather than a runtime dependency.
-dependencies: []
+# mwf-common-assets.mwassets must be installed (manually, or via a future catalog) — style.css,
+# fonts, shared icons/images, sfx/bgm, and most layout chrome (choice/note/prompt/ranking/setup/...)
+# all live there now, not in this module's own assets/layouts/. A module-mode .mwm needs it
+# installed to render correctly; a standalone-mode .mwm (scripts/repack.ps1 -Mode standalone) merges
+# it in directly instead. See CLAUDE.md's Bundling section.
+dependencies:
+- id: 'renegade.mwf_common_assets'
+  version: '0.1.0'
 
 # Module-wide default background music and SFX — see docs/mws-format-latest.md §9 (Audio) in the
 # code repo. Real audio, sourced from Renegade Game Studios' own community-resources release for

@@ -17,8 +17,8 @@ audio:
   on_display: 'audio://sfx/special_event'
 nodes:
 - type: 'assign'
-  var: 'roundNum'
-  expr: 'demoRoundNum'
+  var: '_ProgressRound'
+  expr: 'demoRoundNum - 1'
 - type: 'text'
   value: 'Special Event'
   style: 'special-event'

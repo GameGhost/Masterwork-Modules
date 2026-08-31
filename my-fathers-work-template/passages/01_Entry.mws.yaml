@@ -18,21 +18,22 @@ nodes:
   - type: 'assign'
     var: 'demoRoundNum'
     expr: '1'
-# This passage's own layout (hub_early) switches its footer's progress bar on `roundNum`, same as
-# every other demo — without this assign, `roundNum` keeps whatever stale value a previous demo
-# passage last set it to, so the round-selector's onclick links (below) visibly update
-# `demoRoundNum`/the "Currently previewing round N" text but the progress bar looked stuck (it
-# wasn't a stale-render bug — RenderInPlace re-evaluates chrome fresh on every navigation — the
+# This passage's own layout (hub_early) switches its footer's progress bar on `roundNum`, which
+# mwf-common-assets' shared chrome derives from `_ProgressRound` (min(_ProgressRound + 1, 9) —
+# same as every real module) — without this assign, `_ProgressRound` keeps whatever stale value a
+# previous demo passage last set it to, so the round-selector's onclick links (below) visibly
+# update `demoRoundNum`/the "Currently previewing round N" text but the progress bar looked stuck
+# (it wasn't a stale-render bug — RenderInPlace re-evaluates chrome fresh on every navigation — the
 # chrome was just switching on a variable this passage never re-derived).
 - type: 'assign'
-  var: 'roundNum'
-  expr: 'demoRoundNum'
+  var: '_ProgressRound'
+  expr: 'demoRoundNum - 1'
 - type: 'text'
   value: 'Jump into any layout below to see it styled for real. Each demo links back here.'
 - type: 'break'
   style: 'paragraph'
 # Drives the progress bar shown by every narration/introduction/hub_*-layout demo below — each one
-# reads demoRoundNum for its own roundNum assign, so picking a round here carries through to
+# reads demoRoundNum for its own _ProgressRound assign, so picking a round here carries through to
 # whichever demo you open next. Plain standard nodes in a hub-card section, same as any other hub
 # content — this is a manual-testing aid, not real content, so no dedicated styling of its own.
 - type: 'section'
