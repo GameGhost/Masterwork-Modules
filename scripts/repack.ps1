@@ -12,7 +12,7 @@
     Three modes, matching Masterwork.ModulePacker's own three packing modes:
     - 'module' (default): standard .mwm — a module's own content only, `dependencies:` left as
       declared in its manifest.yaml. This is what a real release ships.
-    - 'asset': .mwassets — packs a directory with no `passages/` subfolder (an asset pack, e.g.
+    - 'asset': .mwassets — packs a directory whose manifest.yaml declares `type: 'assets'` (e.g.
       mwf-common-assets) instead of a module.
     - 'standalone': .mwm with every declared asset-pack dependency's own layouts/assets/variables
       merged directly in, and `dependencies:` blanked out in the packaged manifest — loads with
@@ -88,21 +88,41 @@ if (-not (Test-Path $packerProject)) {
     throw "Masterwork.ModulePacker project not found at '$packerProject'. Pass -CodeRepoPath if the code repo isn't a sibling of this one."
 }
 
+# Absence of `type:` means a module (ManifestParser.ModuleType's own default, 'module') -- only an
+# asset pack declares `type: 'assets'` explicitly. Reads the manifest directly rather than inferring
+# from directory shape (e.g. a passages/ folder), so a directory's own layout can't misclassify it.
+function Get-ManifestType {
+    param([string]$ManifestPath)
+    $text = Get-Content -Raw -LiteralPath $ManifestPath
+    if ($text -match "(?m)^type:\s*['`"](?<type>[^'`"]+)['`"]") {
+        return $Matches['type']
+    }
+    return 'module'
+}
+
 function Test-IsModuleDirectory {
     param([string]$Dir)
-    return (Test-Path (Join-Path $Dir 'manifest.yaml')) -and (Test-Path (Join-Path $Dir 'passages'))
+    $manifestPath = Join-Path $Dir 'manifest.yaml'
+    if (-not (Test-Path $manifestPath)) {
+        return $false
+    }
+    return (Get-ManifestType $manifestPath) -ne 'assets'
 }
 
 function Test-IsAssetPackDirectory {
     param([string]$Dir)
-    return (Test-Path (Join-Path $Dir 'manifest.yaml')) -and -not (Test-Path (Join-Path $Dir 'passages'))
+    $manifestPath = Join-Path $Dir 'manifest.yaml'
+    if (-not (Test-Path $manifestPath)) {
+        return $false
+    }
+    return (Get-ManifestType $manifestPath) -eq 'assets'
 }
 
 function Get-ModuleDirectories {
     if ($Module) {
         $dir = Join-Path $repoRoot $Module
         if (-not (Test-IsModuleDirectory $dir)) {
-            throw "No module directory (manifest.yaml + passages/) found at '$dir'."
+            throw "No module directory (manifest.yaml without type: 'assets') found at '$dir'."
         }
         return , (Get-Item -LiteralPath $dir)
     }
@@ -118,7 +138,7 @@ function Get-AssetPackDirectories {
     if ($Module -and -not $All) {
         $dir = Join-Path $repoRoot $Module
         if (-not (Test-IsAssetPackDirectory $dir)) {
-            throw "No asset-pack directory (manifest.yaml, no passages/) found at '$dir'."
+            throw "No asset-pack directory (manifest.yaml with type: 'assets') found at '$dir'."
         }
         return , (Get-Item -LiteralPath $dir)
     }
