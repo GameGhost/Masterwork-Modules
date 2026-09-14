@@ -178,6 +178,15 @@ parameter/example reference) is the normal way to invoke it from this repo:
   `repack.ps1` resolves each module's declared dependency ids against this repo's own asset-pack
   directories automatically; it errors if a dependency's source isn't here to merge in.
 
+### Signing
+
+Packages are unsigned by default. Pass `-SignWith <path-to.pfx>` (password via `-SignPassword`, or
+the `MASTERWORK_SIGNING_PASSWORD` environment variable) and every bundle that run produces is signed
+in place afterwards, via the packer's own `sign` mode. An unsigned bundle still installs — the app
+shows a one-time "unsigned content" prompt — so ordinary dev repacks need no key and nothing extra;
+sign anything actually being distributed. `ModulePacker verify <package-file>` reports a bundle's
+signature state (`Unsigned`/`Valid`/`Invalid`) and, when signed, the signer and thumbprint.
+
 Every `.mwm`/`.mwassets` at the repo root — including any `{name}.standalone.mwm` — is a build
 artifact (gitignored, safe to regenerate any time from its source directory), not a hand-maintained
 file. All four modules (three official scenarios plus `my-fathers-work-template`) plus

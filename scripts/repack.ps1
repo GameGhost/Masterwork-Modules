@@ -35,6 +35,16 @@
     is never what you want. Not valid with -Mode standalone (it repacks from the module's own
     manifest as-is; bump the module itself in 'module' mode instead).
 
+.PARAMETER SignWith
+    Path to a .pfx holding the signing certificate and its private key. When given, every package
+    this run produces is signed in place after packing. Omitted by default: an unsigned package
+    still installs, behind a one-time "unsigned content" prompt, which is the right trade for
+    ordinary dev repacks — no key needed, nothing extra to run. Pass it for anything distributed.
+
+.PARAMETER SignPassword
+    Password for -SignWith's .pfx. Falls back to the MASTERWORK_SIGNING_PASSWORD environment
+    variable, which is preferable — a password passed here lands in PowerShell's command history.
+
 .PARAMETER CodeRepoPath
     Path to the Masterwork code repo (holds Masterwork.ModulePacker). Defaults to the sibling-repo
     layout documented in this repo's CLAUDE.md ('..\Masterwork' relative to this repo's root).
@@ -57,10 +67,19 @@
     Bumps cost-of-disease's version (e.g. 0.1.0 -> 0.1.1) and repacks it (module mode).
 
 .EXAMPLE
+    $env:MASTERWORK_SIGNING_PASSWORD = '...'
+    .\scripts\repack.ps1 -SignWith C:\keys\masterwork-signing.pfx
+    Repacks every module and signs each resulting .mwm with that certificate.
+
+.EXAMPLE
     .\scripts\repack.ps1 -Module my-fathers-work-template -WhatIf
     Previews what would happen without writing anything.
 #>
 [CmdletBinding(SupportsShouldProcess)]
+# A SecureString would buy nothing here: the packer CLI takes the password as a plain argument, so it
+# would be converted straight back. MASTERWORK_SIGNING_PASSWORD is the way to keep it off the command
+# line.
+[Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSAvoidUsingPlainTextForPassword', 'SignPassword')]
 param(
     [ValidateSet('module', 'asset', 'standalone')]
     [string]$Mode = 'module',
@@ -69,6 +88,10 @@ param(
 
     [ValidateSet('major', 'minor', 'patch')]
     [string]$IncrementVersion,
+
+    [string]$SignWith,
+
+    [string]$SignPassword,
 
     [string]$CodeRepoPath = (Join-Path $PSScriptRoot '..' '..' 'Masterwork')
 )
@@ -86,6 +109,36 @@ if ($IncrementVersion -and $Mode -eq 'standalone') {
 
 if (-not (Test-Path $packerProject)) {
     throw "Masterwork.ModulePacker project not found at '$packerProject'. Pass -CodeRepoPath if the code repo isn't a sibling of this one."
+}
+
+$signingPfx = $null
+$signingPassword = $null
+if ($SignWith) {
+    if (-not (Test-Path -LiteralPath $SignWith)) {
+        throw "Signing certificate not found at '$SignWith'."
+    }
+    $signingPfx = (Resolve-Path -LiteralPath $SignWith).Path
+
+    $signingPassword = if ($SignPassword) { $SignPassword } else { $env:MASTERWORK_SIGNING_PASSWORD }
+    if (-not $signingPassword) {
+        throw "-SignWith needs the .pfx password: pass -SignPassword, or set MASTERWORK_SIGNING_PASSWORD."
+    }
+}
+
+# Signs in place, after packing. The signature covers every other entry in the finished bundle, so
+# it can only be added once that bundle exists -- not woven in during packing. No ShouldProcess of
+# its own: every caller already sits inside the enclosing pack's, so -WhatIf never reaches here.
+function Add-PackageSignature {
+    param([string]$PackagePath)
+
+    if (-not $signingPfx) {
+        return
+    }
+
+    & dotnet run --project $packerProject -- sign $PackagePath $signingPfx $signingPassword
+    if ($LASTEXITCODE -ne 0) {
+        throw "Signing failed for $PackagePath."
+    }
 }
 
 # Absence of `type:` means a module (ManifestParser.ModuleType's own default, 'module') -- only an
@@ -222,6 +275,7 @@ switch ($Mode) {
                 if ($LASTEXITCODE -ne 0) {
                     throw "Packing failed for $($dir.Name)."
                 }
+                Add-PackageSignature -PackagePath $outputPath
             }
         }
     }
@@ -240,6 +294,7 @@ switch ($Mode) {
                 if ($LASTEXITCODE -ne 0) {
                     throw "Packing failed for $($dir.Name)."
                 }
+                Add-PackageSignature -PackagePath $outputPath
             }
         }
     }
@@ -282,6 +337,7 @@ switch ($Mode) {
                 if ($LASTEXITCODE -ne 0) {
                     throw "Standalone packing failed for $($dir.Name)."
                 }
+                Add-PackageSignature -PackagePath $outputPath
             }
         }
     }
