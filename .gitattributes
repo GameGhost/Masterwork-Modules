@@ -2,3 +2,12 @@
 *.png filter=lfs diff=lfs merge=lfs -text
 *.ogg filter=lfs diff=lfs merge=lfs -text
 *.woff2 filter=lfs diff=lfs merge=lfs -text
+
+# Published catalog thumbnails are deliberately NOT LFS. raw.githubusercontent.com serves an LFS
+# pointer file rather than the object, so an LFS-tracked thumbnail would reach the app as ~130 bytes
+# of text instead of an image. These are small, change rarely, and git dedupes an unchanged blob
+# between releases.
+.catalog/thumbnails/*.png -filter -diff -merge -text
+.catalog/thumbnails/*.jpg -filter -diff -merge -text
+.catalog/thumbnails/*.jpeg -filter -diff -merge -text
+.catalog/thumbnails/*.webp -filter -diff -merge -text
