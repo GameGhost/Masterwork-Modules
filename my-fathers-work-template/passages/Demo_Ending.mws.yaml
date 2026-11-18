@@ -1,7 +1,7 @@
 # A real terminal passage — no outgoing links except the one the game_complete popup itself
 # provides, reached only via Demo_Hub's gated "Confront what waits in the well" link
 # (demoWellVisits >= 3). Mirrors 02_Ending.mws.yaml's own real-ending pattern exactly: `narration`
-# with both title and subtitle set, a fixed roundNum (the round-tracker footer fully filled, same as
+# with both title and subtitle set, a fixed _ProgressRound (the round-tracker footer fully filled, same as
 # the real ending — there's no dedicated "ending" layout_id, this narration+game_complete pairing
 # *is* the ending pattern), and a `game_complete` popup whose Okay resolves to the `app::gameover`
 # sentinel target (see docs/mws-format-latest.md §"app::gameover" in the code repo) — this actually
@@ -17,7 +17,7 @@ subtitle: 'A Demo Ending'
 layout: 'narration'
 nodes:
 - type: 'assign'
-  var: 'roundNum'
+  var: '_ProgressRound'
   expr: '9'
 - type: 'assign'
   var: 'demoEnding'

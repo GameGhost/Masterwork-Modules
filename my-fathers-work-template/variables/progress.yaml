@@ -1,7 +1,11 @@
 # Purely decorative for this template — no real round-by-round game state being simulated here.
-# roundNum: read by narration/introduction/hub_early/hub_middle/hub_late's real progress-bar
-# chrome (layouts/narration.mws.yaml et al.) — an integer 1-9, "reached" rounds are 1..roundNum.
-# Each demo passage reads demoRoundNum — see variables/showcase.yaml — so the showcase hub's round
-# selector can drive every layout's progress bar live.
+# _ProgressRound: mirrors the real extractor-synthesized variable a --progress-map-extracted module
+# assigns (see progress-map.json's own _comment in the repo root) — a 0-based "rounds completed so
+# far" count. mwf-common-assets/layouts/{narration,introduction,hub_early,hub_middle,hub_late} all
+# derive their real progress-bar chrome's roundNum (1-9) from this directly (`let roundNum =
+# min(_ProgressRound + 1, 9)`), same as every real module, so the template needs no layout override
+# of its own for them. Each demo passage assigns it from demoRoundNum - 1 — see
+# variables/showcase.yaml — so the showcase hub's round selector can drive every layout's progress
+# bar live.
 variables:
-  roundNum: int
+  _ProgressRound: int

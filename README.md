@@ -8,15 +8,15 @@ Extracted and hand-authored MWS (Masterwork Script) modules for
 
 | Path | What it is |
 |---|---|
-| `cost-of-disease/` | The first fully modularized scenario — converted from Renegade's own Cradle script into the MWS format. |
+| `cost-of-disease/`, `fear-of-the-unknown/`, `a-time-of-war/` | The three official scenarios — converted from Renegade's own Cradle scripts into the MWS format. |
 | `my-fathers-work-template/` | A design workbench, not a playable scenario — exercises every layout/popup shape the app supports, so new visual treatment can be built and screenshotted here before being copied into a real module. |
-| `fear-of-the-unknown/`, `a-time-of-war/` | Not yet modularized into this repo's own layout — Cradle source only for now. |
+| `mwf-common-assets/` | A shared asset pack (`.mwassets`, id `renegade.mwf_common_assets`) — the style/fonts/icons/images/audio and layout chrome all four modules above have in common, split out of `my-fathers-work-template`. Each module declares it as a `dependencies:` entry in its own `manifest.yaml`. |
 | `progress-map.json` | Shared hub-progress data (from the reference app's own `PassageTracker`) used by extraction — see `CLAUDE.md`. |
 | `scripts/` | PowerShell helpers, e.g. `apply-template.ps1` for pulling the template's shared styling/chrome into a real module. |
 
-Packaged `.mwm` bundles — the zip format the app actually loads — are build artifacts and aren't
-committed to this repo. Check this repo's [Releases](../../releases) for the latest packaged
-builds, or build your own (below).
+Packaged `.mwm`/`.mwassets` bundles — the zip formats the app actually loads — are build artifacts
+and aren't committed to this repo. Check this repo's [Releases](../../releases) for the latest
+packaged builds, or build your own (below).
 
 ## Building a module
 
@@ -25,14 +25,17 @@ this one (i.e. as a sibling directory, `../Masterwork`).
 
 1. Extract a module's own passages from its Cradle source — see that module's own `README.md` (e.g.
    `cost-of-disease/README.md`) for its exact extraction command.
-2. Bundle the module folder into a `.mwm`:
+2. Bundle the module folder into a `.mwm`, and `mwf-common-assets/` into a `.mwassets` (a module
+   depends on it — see `CLAUDE.md`'s Bundling section for the other packing modes, including a
+   standalone bundle that needs no separate asset-pack install):
 
    ```powershell
-   dotnet run --project ../Masterwork/src/Masterwork.ModulePacker -- cost-of-disease cost-of-disease.mwm
+   .\scripts\repack.ps1 -Module cost-of-disease
+   .\scripts\repack.ps1 -Mode asset -Module mwf-common-assets
    ```
 
-3. Load the `.mwm` into the app — via its own module-upload flow (Start New Game), or by dropping it
-   into the app's module folder directly.
+3. Load both `.mwm`/`.mwassets` files into the app — via its own module-upload flow (Start New
+   Game), or by dropping them into the app's module folder directly.
 
 ## Module format
 

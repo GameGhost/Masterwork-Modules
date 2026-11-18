@@ -4,15 +4,20 @@
     module, matching the ownership split documented in this repo's CLAUDE.md.
 
 .DESCRIPTION
-    Template-canonical, mirror-copied (overwrite on collision, existing target-only files are never
-    deleted): assets/audio/sfx/, assets/audio/bgm/ (Phase 5 Milestone 6.2 — the setup-passage theme
-    and the shared 4-track ending-sequence playlist; a target module can still have its own
-    additional module-specific bgm files alongside these, they're just never deleted or overwritten
-    unless the filename collides), assets/fonts/, assets/icons/ (combines with the target's own —
-    template wins only on a filename collision, the target's unique icons are left alone),
-    assets/images/{backgrounds,borders,inputs,popup,progress}/, assets/style.css, and every
-    layouts/*.mws.yaml. Never touches assets/audio/vo, images directly under assets/images/, or
-    images/setup/ — those are the target module's own scenario-specific content.
+    style.css/fonts/icons/images/audio-sfx-bgm and every layout every module shares — including, as
+    of this script's own -ProgressVariable rework, narration/introduction/hub_early/hub_middle/
+    hub_late's roundNum-deriving version — no longer live in the template at all. They moved into
+    mwf-common-assets/, a real .mwassets asset pack every module (template included) depends on via
+    its own manifest.yaml `dependencies:` entry. This script copies none of that; see this repo's
+    CLAUDE.md for the asset pack's own layout and how a module declares the dependency.
+
+    What's left to mirror-copy (overwrite on collision, existing target-only files are never
+    deleted) is content that can't be a plain shared file: a per-module layout override, generated
+    only if -ProgressVariable is given and differs from mwf-common-assets' own baked-in progress
+    variable (see -ProgressVariable below — none of the three official scenarios currently need
+    this), and the Setup/Scoring passages below. Never touches assets/audio/vo, images directly
+    under assets/images/, or images/setup/ — those are the target module's own scenario-specific
+    content.
 
     Also copies the template's _Setup_01..08/_Scoring_01..04 passages verbatim (same filenames) into
     the target's passages-override/, the variables/players.yaml and variables/scoring.yaml
@@ -28,13 +33,16 @@
 
     -ProgressVariable handles a real integration gap this repo's own progress-bar layouts have: they
     read a 1-based `roundNum` (1-9), but a module extracted with --progress-map support instead sets
-    an extractor-synthesized 0-based "rounds completed so far" variable (cost-of-disease's own is
-    _ProgressRound — see progress-map.json's _comment). When given, this inserts one
-    `let roundNum = min(<ProgressVariable> + 1, 9)` node as the first header entry of
-    narration/introduction/hub_early/hub_middle/hub_late's freshly-copied layout files, right after
-    every re-run's fresh copy from the template (so template-side edits to those layouts keep
-    flowing through — this patch is reapplied on top each time, never hand-maintained separately).
-    Omit if the target module will supply roundNum directly (or doesn't use the round-progress bar).
+    an extractor-synthesized 0-based "rounds completed so far" variable. mwf-common-assets' own
+    shared copies of narration/introduction/hub_early/hub_middle/hub_late already derive roundNum
+    this way from _ProgressRound (see progress-map.json's _comment) — every official scenario uses
+    that exact variable name, so none of them need -ProgressVariable at all and just rely on the
+    asset-pack dependency directly. Pass -ProgressVariable only for a module whose own extraction
+    assigns a *different* variable name: this then mirror-copies the template's own (unpatched)
+    layouts/*.mws.yaml into the target and inserts one
+    `let roundNum = min(<ProgressVariable> + 1, 9)` node as the first header entry of each,
+    overriding the shared asset-pack version for just this module. Omit if the target module already
+    matches the shared default (or doesn't use the round-progress bar).
 
     This is the mechanical half of "harvest the template's design back into a real module" — a
     `git diff` + manual reconciliation inside the target module is still expected afterward:
@@ -126,40 +134,43 @@ function Copy-TrackedDirectory {
     }
 }
 
-# ── Template-canonical assets ────────────────────────────────────────────────
-$canonicalDirs = @(
-    'assets/audio/sfx',
-    'assets/audio/bgm',
-    'assets/fonts',
-    'assets/icons',
-    'assets/images/backgrounds',
-    'assets/images/borders',
-    'assets/images/inputs',
-    'assets/images/popup',
-    'assets/images/progress',
-    'layouts'
-)
-foreach ($dir in $canonicalDirs) {
-    Copy-TrackedDirectory $dir
+# ── Per-module layout override (only if this module's own progress variable differs) ──────────
+# narration/introduction/hub_early/hub_middle/hub_late's shared, asset-pack copy already derives
+# roundNum from mwf-common-assets' own baked-in variable (read below, from its narration.mws.yaml —
+# the template itself relies on this shared copy too, same as every real module, so there's no
+# unpatched local source left to copy from). A module using that same variable name needs no
+# override at all and relies on the dependency directly. Only a module whose own --progress-map
+# extraction assigns a *different* variable name gets a patched local copy here, sourced directly
+# from mwf-common-assets' own copy with its baked-in derivation swapped out for this module's own.
+function Get-SharedProgressVariable {
+    $path = Join-Path $repoRoot 'mwf-common-assets' 'layouts' 'narration.mws.yaml'
+    if (-not (Test-Path $path)) {
+        return $null
+    }
+    $text = Get-Content -Raw -LiteralPath $path
+    if ($text -match "expr:\s*'min\((?<var>\w+) \+ 1, 9\)'") {
+        return $Matches['var']
+    }
+    return $null
 }
-Copy-TrackedFile 'assets/style.css'
 
-# ── roundNum derivation patch ─────────────────────────────────────────────────
-# Runs after the fresh layouts/ copy above, so it's always reapplied on top of whatever the
-# template's own copy of these files currently looks like — never hand-maintained separately.
-if ($ProgressVariable) {
+$sharedProgressVariable = Get-SharedProgressVariable
+if ($ProgressVariable -and $ProgressVariable -ne $sharedProgressVariable) {
     $roundNumLayouts = @('narration', 'introduction', 'hub_early', 'hub_middle', 'hub_late')
+    # Matches exactly the comment+let block mwf-common-assets' own copies carry (see this repo's
+    # CLAUDE.md Bundling section) -- stripped before re-inserting this module's own version below,
+    # so a module needing its own override doesn't end up with two competing 'let roundNum' nodes.
+    $sharedBlockPattern = [regex]::new("(?ms)^# Derives roundNum \(1-9\) from $sharedProgressVariable.*?expr: 'min\($sharedProgressVariable \+ 1, 9\)'\r?\n")
     # The comment is baked into the patch itself (not left for a human to re-add after every
     # re-run, which is what earlier invocations of this script did) — it's regenerated fresh each
     # time alongside the code it explains, so it can never drift stale.
     $letBlock = @"
-header:
-# $TargetModule-specific: the template's own copy of this layout assumes a module already supplies
-# roundNum (1-9) directly. This module's extractor-synthesized progress tracking (progress-map.json,
-# --progress-map) instead sets $ProgressVariable, a 0-based "rounds completed so far" count (0 while
-# playing round 1, ..., 8 while playing round 9, reaching 9 only once round 9's hub has been left) --
-# so roundNum is derived here rather than being a real module variable. min(..., 9) clamps the
-# ending/scoring narration (rendered after $ProgressVariable reaches 9) to a full bar instead of an
+# $TargetModule-specific: mwf-common-assets' own shared copy of this layout derives roundNum from
+# $sharedProgressVariable, but this module's own --progress-map extraction instead assigns
+# $ProgressVariable, a 0-based "rounds completed so far" count (0 while playing round 1, ..., 8
+# while playing round 9, reaching 9 only once round 9's hub has been left) -- so roundNum is
+# overridden here instead of relying on the shared asset pack's version. min(..., 9) clamps
+# post-game narration (rendered once $ProgressVariable reaches 9) to a full bar instead of an
 # out-of-range 10th case the switch below has no match for. Reproduced by
 # scripts/apply-template.ps1 -ProgressVariable $ProgressVariable (see that script's own
 # .DESCRIPTION) -- re-running it regenerates this exact block, so hand-edits here don't need to
@@ -167,27 +178,41 @@ header:
 - type: 'let'
   var: 'roundNum'
   expr: 'min($ProgressVariable + 1, 9)'
+
 "@
     foreach ($layout in $roundNumLayouts) {
-        $path = Join-Path $dst "layouts/$layout.mws.yaml"
-        if (-not (Test-Path $path)) {
-            Write-Warning "Skipping roundNum patch (layout not present): $layout"
+        $sourcePath = Join-Path $repoRoot 'mwf-common-assets' 'layouts' "$layout.mws.yaml"
+        if (-not (Test-Path $sourcePath)) {
+            Write-Warning "Skipping roundNum patch (not present in mwf-common-assets): $layout"
             continue
         }
-        $text = Get-Content -LiteralPath $path -Raw
-        if ($text -notmatch '(?m)^header:') {
-            Write-Warning "Skipping roundNum patch (no 'header:' key found): $layout"
+        $text = Get-Content -LiteralPath $sourcePath -Raw
+        if (-not $sharedBlockPattern.IsMatch($text)) {
+            Write-Warning "Skipping roundNum patch (mwf-common-assets' own $layout.mws.yaml doesn't carry the expected roundNum <- $sharedProgressVariable block): $layout"
             continue
         }
-        if ($PSCmdlet.ShouldProcess($path, "Insert roundNum <- $ProgressVariable derivation")) {
+
+        $destPath = Join-Path $dst "layouts/$layout.mws.yaml"
+        if ($PSCmdlet.ShouldProcess($destPath, "Copy from mwf-common-assets and override roundNum <- $ProgressVariable")) {
+            $toDir = Split-Path -Parent $destPath
+            if (-not (Test-Path $toDir)) {
+                New-Item -ItemType Directory -Path $toDir -Force | Out-Null
+            }
+
             # MatchEvaluator (not a replacement-pattern string) so $letBlock's own literal '$' text
             # (inside the 'expr' string) is never misread as a regex backreference.
             $evaluator = [System.Text.RegularExpressions.MatchEvaluator] { param($m) $letBlock }
-            $patched = [regex]::new('(?m)^header:').Replace($text, $evaluator, 1)
-            Set-Content -LiteralPath $path -Value $patched -NoNewline
-            Write-Host "Patched layouts/$layout.mws.yaml (roundNum <- $ProgressVariable)"
+            $patched = $sharedBlockPattern.Replace($text, $evaluator, 1)
+            Set-Content -LiteralPath $destPath -Value $patched -NoNewline
+            Write-Host "Wrote layouts/$layout.mws.yaml (roundNum <- $ProgressVariable, overriding the shared asset-pack version)"
         }
     }
+}
+elseif ($ProgressVariable) {
+    Write-Host "ProgressVariable '$ProgressVariable' already matches mwf-common-assets' own shared roundNum derivation -- no per-module layout override needed."
+}
+else {
+    Write-Host "No -ProgressVariable given -- relying on mwf-common-assets' shared narration/introduction/hub_* layouts (roundNum <- $sharedProgressVariable)."
 }
 
 # ── Setup + Scoring override passages ─────────────────────────────────────────

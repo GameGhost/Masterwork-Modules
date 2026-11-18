@@ -132,7 +132,8 @@ modules (it only maps setup + scoring) — they're template-only, same as the la
 
 ## Font scaling / responsive design
 
-Read the comment block at the top of `assets/style.css` before adding rules. Short version: the
+Read the comment block at the top of `mwf-common-assets/assets/style.css` (moved out of this
+module, see below) before adding rules. Short version: the
 app's only font-scaling mechanism (`--mws-text-scale`, applied to `body`'s own font-size) does
 **not** propagate to `rem`-sized descendants — only `em` does. This module's own rules use `em`
 for anything sizing actual reading text, and `rem` only for chrome that should stay fixed
@@ -151,8 +152,15 @@ Two scripts live in this repo's `scripts/` folder:
 .\scripts\apply-template.ps1 -TargetModule cost-of-disease
 ```
 
-This copies `assets/style.css`, `assets/fonts/`, every `layouts/*.mws.yaml` file, and the setup +
-scoring passages (mapped into the target's `passages-override/` folder, e.g.
+`assets/style.css`, `assets/fonts/`, and every `layouts/*.mws.yaml` file — including the
+`narration`/`introduction`/`hub_early`/`hub_middle`/`hub_late` set, which already derives `roundNum`
+from `_ProgressRound` — no longer live in this module at all. They moved into `mwf-common-assets/`,
+a real `.mwassets` asset pack this module (and every real scenario) depends on via `manifest.yaml`'s
+own `dependencies:` entry, so there's nothing left for this script to copy by default. The only
+thing `-ProgressVariable` still copies+patches is a per-module override of those five layouts, and
+only when the target's own progress variable genuinely differs from the shared default — see the
+script's own `.DESCRIPTION` (none of the three official scenarios need this today). What it always
+copies is the setup + scoring passages (mapped into the target's `passages-override/` folder, e.g.
 `Scoring_01_ScoreEntry.mws.yaml` → `_ScoreEntry.mws.yaml` — see the script's own comments for the
 full name mapping). It never touches `passages/`, `_variables.yaml`, `en-US.restext`,
 `manifest.yaml`, or `.source/` — those are extractor-owned or per-module identity, per this repo's
