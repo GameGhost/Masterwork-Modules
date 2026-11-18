@@ -8,7 +8,7 @@ name: Redeploy the app sites
 
 on:
   push:
-    branches: [main, phase6]
+    branches: [main]
     paths:
       - ".catalog/**"
   workflow_dispatch:
