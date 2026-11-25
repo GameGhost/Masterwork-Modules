@@ -4,29 +4,30 @@
 
 .DESCRIPTION
     Stages, each agent stage one headless `claude -p` call per passage (or per group of app strings):
-        terms     (scenario only, once) mine the scenario's own term list from its official aligned pairs
-        forward   write French for drafts and missing strings, a whole passage at a time
+        terms     (scenario only, once) mine the scenario's own term list from its existing translation
+        forward   translate drafts and missing strings, a whole passage at a time
         checks    `Masterwork.ModulePacker checktranslation --fix`: typography, integrity, terms
-        back      blind back-translation: the French, its passage and the reversed term base only
-        judge     English vs back-translation vs French: a verdict and a minimal fix for each string
+        back      blind back-translation: the translation, its passage and the reversed term base only
+        judge     English vs back-translation vs translation: a verdict and a minimal fix for each string
         revision  fixes re-checked; meaning and term fixes back-translated and judged once more
         write     the locale file with `# origin:` comments, and the report
     Every agent answer is stored under -WorkDir with a hash of its request, so a rerun resumes where
     the last one stopped. See README.md.
 
 .PARAMETER Module
-    A scenario directory (en-US.restext, the reconciled <Locale>.restext, passages/).
+    A scenario directory (en-US.restext, passages/, and any existing <Locale>.restext).
 .PARAMETER Resx
     The app's English AppStrings.resx. The translation is AppStrings.<Locale>.resx beside it.
 .PARAMETER Locale
-    Target locale. Needs terms.<Locale>.yaml and style.<Locale>.md beside this script.
+    Target locale, such as fr-CA. Needs terms.<Locale>.yaml and style.<Locale>.md beside this script.
 .PARAMETER WorkDir
     Stage outputs. Default: .translate-verify/<module or app>/<Locale> at the repo root (gitignored).
 .PARAMETER Report
     Default: <Module>/.source/_translate-report.<Locale>.md, or report.md in -WorkDir for the app.
-.PARAMETER UnityDrafts
-    JSON object of key -> Unity app French, used as drafts for missing strings.
-    Default: <Module>/.source/unity-drafts.<Locale>.json when it exists.
+.PARAMETER Drafts
+    Earlier translations from another source, revised for strings the locale file lacks:
+    { "origin": "unity", "description": "the Unity app's French", "strings": { "<key>": "<text>" } }.
+    A revised one gets the origin "<origin>, revised". Default: <Module>/.source/drafts.<Locale>.json when it exists.
 .PARAMETER CodeRepoPath
     The Masterwork checkout whose checktranslation runs the checks. Default: the sibling of this repo.
 .PARAMETER NoBuild
@@ -43,15 +44,15 @@
     terms: stop once the scenario term list is written, to review it. forward: stop after the drafts.
 
 .EXAMPLE
-    ./tools/translate-verify/translate-verify.ps1 -Module a-time-of-war -StopAfter terms
+    ./tools/translate-verify/translate-verify.ps1 -Module a-time-of-war -Locale fr-CA -StopAfter terms
     Mines A Time of War's term list into a-time-of-war/.source/terms.fr-CA.yaml for review.
 
 .EXAMPLE
-    ./tools/translate-verify/translate-verify.ps1 -Module a-time-of-war
+    ./tools/translate-verify/translate-verify.ps1 -Module a-time-of-war -Locale fr-CA
     The whole pass. Run it again after an interruption to resume.
 
 .EXAMPLE
-    ./tools/translate-verify/translate-verify.ps1 -Resx ../Masterwork/src/Masterwork.App.Shared/Resources/AppStrings.resx
+    ./tools/translate-verify/translate-verify.ps1 -Resx ../Masterwork/src/Masterwork.App.Shared/Resources/AppStrings.resx -Locale fr-CA
     Verifies AppStrings.fr-CA.resx and adds its missing strings.
 #>
 #Requires -Version 7.2
@@ -59,10 +60,10 @@
 param(
     [Parameter(Mandatory, ParameterSetName = 'Module')][string]$Module,
     [Parameter(Mandatory, ParameterSetName = 'Resx')][string]$Resx,
-    [string]$Locale = 'fr-CA',
+    [Parameter(Mandatory)][string]$Locale,
     [string]$WorkDir,
     [string]$Report,
-    [string]$UnityDrafts,
+    [string]$Drafts,
     [string]$CodeRepoPath = (Join-Path $PSScriptRoot '..' '..' '..' 'Masterwork'),
     [switch]$NoBuild,
     [string[]]$Agent = @('claude'),
@@ -83,14 +84,19 @@ foreach ($f in $sharedTerms, $styleFile) { if (-not (Test-Path $f)) { throw "No 
 $language = [Globalization.CultureInfo]::GetCultureInfo($Locale).EnglishName
 
 # --- Scope -------------------------------------------------------------------------------------
+$draftSet = @{ Origin = $null; Description = ''; Strings = @{} }
 if ($PSCmdlet.ParameterSetName -eq 'Module') {
     $Module = (Resolve-Path $Module).Path
     $name = Split-Path -Leaf $Module
     $scenarioTerms = Join-Path $Module ".source/terms.$Locale.yaml"
-    if (-not $UnityDrafts -and (Test-Path (Join-Path $Module ".source/unity-drafts.$Locale.json"))) { $UnityDrafts = Join-Path $Module ".source/unity-drafts.$Locale.json" }
-    $unity = if ($UnityDrafts) { Get-Content $UnityDrafts -Raw -Encoding utf8 | ConvertFrom-Json -AsHashtable } else { @{} }
+    if (-not $Drafts -and (Test-Path (Join-Path $Module ".source/drafts.$Locale.json"))) { $Drafts = Join-Path $Module ".source/drafts.$Locale.json" }
+    if ($Drafts) {
+        $d = Get-Content $Drafts -Raw -Encoding utf8 | ConvertFrom-Json -AsHashtable
+        if (-not ($d['origin'] -and $d['strings'] -is [hashtable])) { throw "${Drafts}: needs an 'origin' and a 'strings' object of key -> text." }
+        $draftSet = @{ Origin = $d.origin; Description = "$($d['description'])"; Strings = $d.strings }
+    }
     if (-not (Test-Path (Join-Path $Module "$Locale.restext"))) { Write-Warning "No $Locale.restext in $Module; every string is translated from scratch." }
-    $scope = Get-ModuleScope $Module $Locale $unity
+    $scope = Get-ModuleScope $Module $Locale $draftSet.Strings
     $title = $name
     $manifest = Join-Path $Module 'manifest.yaml'
     if ((Test-Path $manifest) -and (Get-Content $manifest -Raw) -match "(?m)^title:\s*['`"]?(.*?)['`"]?\s*$") {
@@ -152,11 +158,12 @@ function New-AgentJob([string]$Stage, [string]$Template, $Unit, [hashtable]$Valu
 # --- Term base ---------------------------------------------------------------------------------
 $layers = @(@{ Title = 'Game terms (shared)'; Base = (Read-TermBase $sharedTerms); Path = (Resolve-Path $sharedTerms).Path })
 if ($scenarioTerms -and -not (Test-Path $scenarioTerms)) {
-    $pairs = @($strings.Values | Where-Object { $_.Bucket -eq 'verify' -and $_.Origin -eq 'official' } | ForEach-Object { [ordered]@{ key = $_.Key; en = $_.En; fr = $_.Fr } })
+    # Pairs a person translated: official, or an existing translation with no origin comments.
+    $pairs = @($strings.Values | Where-Object { $_.Bucket -eq 'verify' -and $_.Origin -in 'official', $null } | ForEach-Object { [ordered]@{ key = $_.Key; en = $_.En; translation = $_.Input } })
     $n = 0
     $jobs = foreach ($chunk in @(Split-Chunks $pairs 150)) {
         New-AgentJob 'mine-terms' 'mine-terms.md' @{ Id = 'chunk-{0:d3}' -f (++$n) } @{
-            TITLE = $title; LANGUAGE = $language; LOCALE = $Locale; TERMS = (Format-TermTable $layers); STRINGS = (ConvertTo-PromptJson $chunk) } $null 'terms'
+            TITLE = $title; LANGUAGE = $language; LOCALE = $Locale; TERMS = (Format-TermTable $layers $language); STRINGS = (ConvertTo-PromptJson $chunk) } $null 'terms'
     }
     $mined = Invoke-Stage 'terms' $jobs
     $terms = @(Merge-MinedTerms @($mined.Values | ForEach-Object { $_.items }) $layers[0].Base)
@@ -168,8 +175,9 @@ if ($scenarioTerms -and (Test-Path $scenarioTerms)) {
     $layers += @{ Title = "Scenario terms ($title)"; Base = (Read-TermBase $scenarioTerms); Path = (Resolve-Path $scenarioTerms).Path }
 }
 $termPaths = @($layers | ForEach-Object Path)
-$common = @{ LANGUAGE = $language; LOCALE = $Locale; STYLE = [IO.File]::ReadAllText($styleFile); TERMS = (Format-TermTable $layers)
-    FORBIDDEN = (Format-Forbidden $layers); REVERSED_TERMS = (Format-TermTable $layers -Reversed) }
+$common = @{ LANGUAGE = $language; LOCALE = $Locale; STYLE = [IO.File]::ReadAllText($styleFile); TERMS = (Format-TermTable $layers $language)
+    FORBIDDEN = (Format-Forbidden $layers); REVERSED_TERMS = (Format-TermTable $layers $language -Reversed)
+    DRAFT_SOURCE = $(if ($draftSet.Description) { " ($($draftSet.Description))" } else { '' }) }
 function Get-Subject($Unit) {
     if ($scope.Kind -eq 'resx') { "the $($Unit.Name) of the app's own interface" } else { "the passage ``$($Unit.Name)`` of the scenario *$title*" }
 }
@@ -189,31 +197,31 @@ $jobs = foreach ($unit in $units) {
     if (-not $todo) { continue }
     $items = foreach ($k in $unit.Context) {
         $rec = $strings[$k]
-        $i = [ordered]@{ key = $k; status = (Get-Status $rec); en = $rec.En; fr = $rec.Fr; translate = ($k -cin $todo) }
-        if ($i.translate -and $rec.Unity) { $i.unityDraft = $rec.Unity }
+        $i = [ordered]@{ key = $k; status = (Get-Status $rec); en = $rec.En; translation = $rec.Input; translate = ($k -cin $todo) }
+        if ($i.translate -and $rec.PriorDraft) { $i.priorDraft = $rec.PriorDraft }
         if ($i.translate -and $rec.Passages.Count -gt 1) { $i.alsoUsedIn = @($rec.Passages | Select-Object -Skip 1) }
         $i
     }
     New-AgentJob 'forward' 'forward.md' $unit (Merge-Values @{ SUBJECT = (Get-Subject $unit); STRINGS = (ConvertTo-PromptJson $items) }) $todo
 }
 $answers = Invoke-Stage 'forward' @($jobs)
-foreach ($a in $answers.Values) { foreach ($i in $a.items) { $strings[$i.key].Forward = $i.fr; $strings[$i.key].ForwardNote = $i.note } }
+foreach ($a in $answers.Values) { foreach ($i in $a.items) { $strings[$i.key].Forward = $i.translation; $strings[$i.key].ForwardNote = $i.note } }
 if ($StopAfter -eq 'forward') { return }
 
 # --- Checks ------------------------------------------------------------------------------------
 # Checks every record's $Field and returns key -> result; a string the checker didn't report fails.
 function Invoke-CheckRound([string]$Name, $Recs, [string]$Field) {
-    $pairs = @($Recs | ForEach-Object { @{ Key = $_.Key; En = $_.En; Fr = $_[$Field] } })
+    $pairs = @($Recs | ForEach-Object { @{ Key = $_.Key; En = $_.En; Text = $_[$Field] } })
     Write-Host "Stage: checks ($Name)"
     $checks = Invoke-Checks -Name $Name -Kind $scope.Kind -Locale $Locale -Pairs $pairs -TermBases $termPaths -WorkDir $WorkDir -Checker $checker
     foreach ($p in $pairs) {
-        if (-not $checks.ContainsKey($p.Key)) { $checks[$p.Key] = @{ Fr = $p.Fr; Fixed = $false; Failures = @('missing: no candidate'); Flags = @() } }
+        if (-not $checks.ContainsKey($p.Key)) { $checks[$p.Key] = @{ Text = $p.Text; Fixed = $false; Failures = @('missing: no candidate'); Flags = @() } }
     }
     $checks
 }
-foreach ($rec in $strings.Values) { $rec.Cand1 = if ($rec.Bucket -eq 'verify') { $rec.Fr } else { $rec.Forward } }
+foreach ($rec in $strings.Values) { $rec.Cand1 = if ($rec.Bucket -eq 'verify') { $rec.Input } else { $rec.Forward } }
 $checks = Invoke-CheckRound 'first' @($strings.Values) 'Cand1'
-foreach ($rec in $strings.Values) { $rec.Checks1 = $checks[$rec.Key]; $rec.Cand1 = $rec.Checks1.Fr }
+foreach ($rec in $strings.Values) { $rec.Checks1 = $checks[$rec.Key]; $rec.Cand1 = $rec.Checks1.Text }
 
 # --- Back-translation and judge ----------------------------------------------------------------
 function Get-BackJobs([int]$Round, [string[]]$Keys) {
@@ -221,8 +229,8 @@ function Get-BackJobs([int]$Round, [string[]]$Keys) {
         $todo = @($unit.Keys | Where-Object { $_ -cin $Keys -and $null -ne ($strings[$_].Cand2 ?? $strings[$_].Cand1) })
         if (-not $todo) { continue }
         $items = foreach ($k in $unit.Context) {
-            $fr = $strings[$k].Cand2 ?? $strings[$k].Cand1
-            if ($null -ne $fr) { [ordered]@{ key = $k; fr = $fr; translate = ($k -cin $todo) } }
+            $text = $strings[$k].Cand2 ?? $strings[$k].Cand1
+            if ($null -ne $text) { [ordered]@{ key = $k; translation = $text; translate = ($k -cin $todo) } }
         }
         $values = @{ SUBJECT = (Get-Subject $unit); REVERSED_TERMS = $common.REVERSED_TERMS; LANGUAGE = $language; ROUND = "<!-- round: $Round -->"; STRINGS = (ConvertTo-PromptJson $items) }
         New-AgentJob "back" 'backtranslate.md' $unit $values $todo $(if ($Round -eq 2) { 'back2' } else { 'back' })
@@ -234,13 +242,13 @@ function Get-JudgeJobs([int]$Round, [string[]]$Keys) {
         if (-not $todo) { continue }
         $items = foreach ($k in $unit.Context) {
             $rec = $strings[$k]
-            if ($k -cnotin $todo) { [ordered]@{ key = $k; en = $rec.En; fr = ($rec.Cand2 ?? $rec.Cand1); translate = $false }; continue }
+            if ($k -cnotin $todo) { [ordered]@{ key = $k; en = $rec.En; translation = ($rec.Cand2 ?? $rec.Cand1); translate = $false }; continue }
             $checksN = if ($Round -eq 2) { $rec.Checks2 } else { $rec.Checks1 }
-            $i = [ordered]@{ key = $k; status = (Get-Status $rec); en = $rec.En; fr = $(if ($Round -eq 2) { $rec.Cand2 } else { $rec.Cand1 })
+            $i = [ordered]@{ key = $k; status = (Get-Status $rec); en = $rec.En; translation = $(if ($Round -eq 2) { $rec.Cand2 } else { $rec.Cand1 })
                 backTranslation = $(if ($Round -eq 2) { $rec.Back2 } else { $rec.Back1 }); backTranslatorNote = $(if ($Round -eq 2) { $rec.BackNote2 } else { $rec.BackNote1 })
                 checks = [ordered]@{ failures = @($checksN.Failures); flags = @($checksN.Flags) }; translate = $true }
-            if ($rec.Bucket -eq 'draft') { $i.officialInput = $rec.Fr }
-            if ($rec.Unity) { $i.unityDraft = $rec.Unity }
+            if ($rec.Bucket -eq 'draft') { $i.draftInput = $rec.Input }
+            if ($rec.PriorDraft) { $i.priorDraft = $rec.PriorDraft }
             if ($rec.ForwardNote) { $i.translatorNote = $rec.ForwardNote }
             if ($Round -eq 2) { $i.previousAttempt = $rec.Cand1; $i.previousVerdict = "$($rec.Judge1.verdict): $($rec.Judge1.reason)" }
             $i
@@ -269,7 +277,7 @@ foreach ($rec in $strings.Values) {
 $revised = @($strings.Values | Where-Object { $null -ne $_.Fix })
 if ($revised) {
     $checks = Invoke-CheckRound 'revision' $revised 'Fix'
-    foreach ($rec in $revised) { $rec.Checks2 = $checks[$rec.Key]; $rec.Cand2 = $rec.Checks2.Fr }
+    foreach ($rec in $revised) { $rec.Checks2 = $checks[$rec.Key]; $rec.Cand2 = $rec.Checks2.Text }
     foreach ($rec in $revised | Where-Object { $_.Judge1.verdict -in 'fail: typo', 'fail: integrity' }) {
         if ($rec.Checks2.Failures.Count) { $rec.Status = 'unresolved'; $rec.Problem = 'The fix fails the hard checks.' } else { $rec.Status = 'revised' }
     }
@@ -302,14 +310,14 @@ foreach ($rec in $strings.Values) {
     if ($null -eq $rec.Final) {
         # No clean attempt: keep the input. Verified text keeps its typography normalization, which is mechanical.
         $rec.KeptInput = $true
-        $rec.Written = if ($rec.Bucket -eq 'verify') { $rec.Cand1 } else { $rec.Fr }
+        $rec.Written = if ($rec.Bucket -eq 'verify') { $rec.Cand1 } else { $rec.Input }
         $rec.FinalOrigin = $rec.Origin
         continue
     }
     $rec.Written = $rec.Final
     $rec.FinalOrigin = switch ($rec.Bucket) {
         'draft' { 'official, revised' }
-        'gap' { if ($rec.Unity) { 'unity, revised' } else { 'agent' } }
+        'gap' { if ($rec.PriorDraft) { "$($draftSet.Origin), revised" } else { 'agent' } }
         default { if ($rec.Origin -eq 'official' -and $rec.Final -cne $rec.Cand1) { 'official, revised' } else { $rec.Origin } }
     }
 }
@@ -328,8 +336,8 @@ if ($scope.Kind -eq 'restext') {
         $target[$rec.Key] = @{ Value = $rec.Written; Origin = $rec.FinalOrigin }
     }
     $header = @("# Masterwork locale file — $Locale", '# Format: Key=Value  (one string per line)',
-        '# Each key''s "# origin:" is one of official | official, revised | unity, revised | agent,',
-        '# or draft (official French still awaiting the agent pass). Verified by tools/translate-verify.')
+        '# Each key''s "# origin:" says where its string came from (docs/mws-format-latest.md in Masterwork);',
+        '# draft marks text still awaiting revision. Verified by tools/translate-verify.')
     [IO.File]::WriteAllText((Join-Path $Module "$Locale.restext"), (Format-Restext $scope.MainLayout $main $header), $Utf8)
     if ($over.Count -or $scope.HasOverrides) {
         [IO.File]::WriteAllText((Join-Path $Module "$Locale.overrides.restext"), (Format-Restext $scope.OverridesLayout $over $header), $Utf8)
@@ -337,7 +345,7 @@ if ($scope.Kind -eq 'restext') {
 }
 else {
     $values = @{}
-    foreach ($rec in $strings.Values) { if ($null -ne $rec.Written -and $rec.Written -cne $rec.Fr) { $values[$rec.Key] = $rec.Written } }
+    foreach ($rec in $strings.Values) { if ($null -ne $rec.Written -and $rec.Written -cne $rec.Input) { $values[$rec.Key] = $rec.Written } }
     if (Test-Path $localeResx) {
         $bytes = [IO.File]::ReadAllBytes($localeResx)
         $bom = $bytes.Length -ge 3 -and $bytes[0] -eq 0xEF -and $bytes[1] -eq 0xBB -and $bytes[2] -eq 0xBF

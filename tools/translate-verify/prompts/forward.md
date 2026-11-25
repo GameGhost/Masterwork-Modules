@@ -5,17 +5,20 @@ You are translating {{SUBJECT}} from English into {{LANGUAGE}}. It belongs to th
 the board game *My Father's Work*, which narrates a family of mad scientists across three
 generations and tells the players what to do on the board.
 
-Below is the whole passage in reading order. Each string has a key, its English, its current French
-(`fr`, `null` when there is none) and a `status`:
+Below is the whole passage in reading order. Each string has a key, its English, its current
+{{LANGUAGE}} (`translation`, `null` when there is none) and a `status`:
 
-- `official`: official French from the published French edition of the app. Context only.
-- `draft`: official French that couldn't be paired with this key one to one. The `fr` is the
-  official text for the whole line it sat in, so it may also cover neighbouring keys, miss part of
-  this key, or be one of several wordings of a shared key. Cut and adapt it so this key says exactly
-  what its English says, keeping the official wording wherever it fits. Write what's missing in the
-  same register. Fix plain errors in the official text (a typo, a wrong icon placeholder, a wrong
-  gender agreement) and say so in your note.
-- `missing`: no French. Write it. A `unityDraft` is the Unity app's French for it: revise that.
+- `official`: the publisher's own translation. Context only.
+- `existing`: a translation already in use, such as a community translation. Context only.
+- `draft`: a translation that still needs revising, often official text that couldn't be paired
+  with this key one to one. Then it is the text for the whole line it sat in, so it may also cover
+  neighbouring keys, miss part of this key, or be one of several wordings of a shared key. Cut and
+  adapt it so this key says exactly what its English says, keeping its wording wherever it fits.
+  Write what's missing in the same register. Fix plain errors in it (a typo, a wrong icon
+  placeholder, a wrong agreement) and say so in your note.
+- `missing`: no translation. Write it. A `priorDraft` is an earlier translation of it from another
+  source{{DRAFT_SOURCE}}: revise that.
+- Any other status (`official, revised`, `agent`, …): text already verified. Context only.
 
 Write a string for every item marked `"translate": true`, and only for those. Items marked
 `false` are context: read them so each string fits the sentence it sits in, since one sentence can
@@ -41,8 +44,8 @@ Each string is shown on its own, one line, and spliced together with its neighbo
 
 ## Term base
 
-Use these renderings. A scenario's own list comes from its official French: use it for names of
-cards, places and people.
+Use these renderings. A scenario's own list comes from its existing translation: use it for names
+of cards, places and people.
 
 {{TERMS}}
 
@@ -57,6 +60,6 @@ Never write:
 {{STRINGS}}
 ```
 
-Answer with one item per key marked `"translate": true`: the `key`, your French in `fr`, and a `note`
-for anything a reviewer should know (an official error you fixed, a term you weren't sure of, text
-you cut or added). Leave `note` empty when there's nothing to say.
+Answer with one item per key marked `"translate": true`: the `key`, your {{LANGUAGE}} in
+`translation`, and a `note` for anything a reviewer should know (an error you fixed, a term you
+weren't sure of, text you cut or added). Leave `note` empty when there's nothing to say.

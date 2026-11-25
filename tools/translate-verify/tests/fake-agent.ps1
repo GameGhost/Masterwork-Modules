@@ -28,10 +28,10 @@ function Canned($key, [hashtable]$default) {
 
 $out = switch ($stage) {
     'forward' {
-        foreach ($i in $items | Where-Object { $_.key -in $keys }) { Canned $i.key @{ key = $i.key; fr = "FR $($i.en)"; note = '' } }
+        foreach ($i in $items | Where-Object { $_.key -in $keys }) { Canned $i.key @{ key = $i.key; translation = "FR $($i.en)"; note = '' } }
     }
     'back' {
-        foreach ($i in $items | Where-Object { $_.key -in $keys }) { Canned $i.key @{ key = $i.key; en = "BACK $($i.fr)"; note = '' } }
+        foreach ($i in $items | Where-Object { $_.key -in $keys }) { Canned $i.key @{ key = $i.key; en = "BACK $($i.translation)"; note = '' } }
     }
     'judge' {
         foreach ($k in $keys) { Canned $k @{ key = $k; verdict = 'pass'; reason = ''; fix = '' } }

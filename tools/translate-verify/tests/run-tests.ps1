@@ -99,7 +99,7 @@ nodes:
     Set-Content "$mod/.source/terms.fr-CA.yaml" -Encoding utf8 -Value @'
 terms:
   - en: 'Hall'
-    fr: 'salle'
+    translation: 'salle'
     source: '\bhall\b'
     target: 'salle'
 '@
@@ -110,7 +110,7 @@ function Invoke-Runner($Fixture, [hashtable]$Script = @{}, [hashtable]$Extra = @
     $Script | ConvertTo-Json -Depth 6 | Set-Content $Fixture.Script -Encoding utf8
     $env:TV_FAKE_SCRIPT = $Fixture.Script
     $env:TV_FAKE_LOG = $Fixture.Log
-    $params = @{ Module = $Fixture.Module; WorkDir = $Fixture.Work; CodeRepoPath = $CodeRepoPath; NoBuild = $true; Parallel = 2
+    $params = @{ Module = $Fixture.Module; Locale = 'fr-CA'; WorkDir = $Fixture.Work; CodeRepoPath = $CodeRepoPath; NoBuild = $true; Parallel = 2
         Agent = @('pwsh', '-NoProfile', '-File', $fake) }
     foreach ($k in $Extra.Keys) { $params[$k] = $Extra[$k] }
     & $runner @params | Out-Null
@@ -132,9 +132,9 @@ function Read-Written([string]$Path) {
 }
 
 $goodForward = @{ forward = @{
-        Hall_002 = @{ fr = 'Gagnez **3 PV** et un {icon:creepy_icon}.'; note = 'Cut the button text.' }
-        Hall_003 = @{ fr = 'Continuer' }
-        Setup_Title = @{ fr = 'Le Village' }
+        Hall_002 = @{ translation = 'Gagnez **3 PV** et un {icon:creepy_icon}.'; note = 'Cut the button text.' }
+        Hall_003 = @{ translation = 'Continuer' }
+        Setup_Title = @{ translation = 'Le Village' }
     } }
 
 Test 'a clean run writes every string with its origin' {
@@ -178,12 +178,12 @@ Test 'an edited string reruns only the passage it belongs to' {
     (Get-Content "$($f.Module)/en-US.overrides.restext" -Raw) -replace 'The Village', 'The Hamlet' | Set-Content "$($f.Module)/en-US.overrides.restext" -Encoding utf8
     Invoke-Runner $f $goodForward
     $new = @(Get-Calls $f | Select-Object -Skip $before)
-    # The French didn't change, so its back-translation stands; the judge sees the new English.
+    # The translation didn't change, so its back-translation stands; the judge sees the new English.
     AssertEqual 'forward,judge' (($new | ForEach-Object stage) -join ',') 'stages rerun'
     Assert (-not ($new | Where-Object { $_.keys -contains 'Hall_001' })) 'the Hall passage is not rerun'
 }
 
-Test 'the back-translator sees only French and the reversed term base' {
+Test 'the back-translator sees only the translation and the reversed term base' {
     $f = New-Fixture
     Invoke-Runner $f $goodForward
     $back = @(Get-Calls $f | Where-Object stage -eq 'back')
@@ -194,9 +194,9 @@ Test 'the back-translator sees only French and the reversed term base' {
         }
     }
     $hall = @($back | Where-Object { $_.keys -contains 'Hall_001' })[0]
-    Assert ($hall.prompt -match '\| salle \| Hall \|') 'scenario terms are reversed (French | English)'
+    Assert ($hall.prompt -match '\| salle \| Hall \|') 'scenario terms are reversed (translation | English)'
     Assert ($hall.prompt -match '\| Le Secret de mon père \|') 'shared terms are reversed'
-    Assert ($hall.prompt.Contains('Bienvenue dans la salle!')) 'the passage French is there'
+    Assert ($hall.prompt.Contains('Bienvenue dans la salle!')) 'the passage translation is there'
 }
 
 Test 'a typo fix is re-checked deterministically only' {
@@ -224,14 +224,14 @@ Test 'a meaning fix is back-translated and judged again, and a second fail ships
     AssertEqual 'Quitter' $fr.Shared_Close.Value 'a revision that passes ships'
     AssertEqual 'official, revised' $fr.Shared_Close.Origin 'revised official'
     $report = Get-Content "$($f.Module)/.source/_translate-report.fr-CA.md" -Raw
-    Assert ($report.IndexOf('### `Hall_003`: No French, unresolved') -lt $report.IndexOf('### `Shared_Close`: Official, revised')) 'unresolved strings come first'
+    Assert ($report.IndexOf('### `Hall_003`: No translation, unresolved') -lt $report.IndexOf('### `Shared_Close`: Official, revised')) 'unresolved strings come first'
     Assert ($report.IndexOf('### `Shared_Close`') -lt $report.IndexOf('## Passed with wording unchanged')) 'changed strings come before passed ones'
-    Assert ($report -match '\| No French \| 2 \| 1 \| 0 \| 1 \| 0 \| 0 \|') 'bucket counts'
+    Assert ($report -match '\| No translation \| 2 \| 1 \| 0 \| 1 \| 0 \| 0 \|') 'bucket counts'
 }
 
 Test 'a fix that breaks a placeholder falls back to the last clean attempt or the input' {
     $f = New-Fixture
-    $s = @{ forward = @{ Hall_002 = @{ fr = 'Gagnez **3 PV** et un.' }; Hall_003 = @{ fr = 'Continuer' }; Setup_Title = @{ fr = 'Le Village' } }
+    $s = @{ forward = @{ Hall_002 = @{ translation = 'Gagnez **3 PV** et un.' }; Hall_003 = @{ translation = 'Continuer' }; Setup_Title = @{ translation = 'Le Village' } }
         judge = @{
             Hall_002 = @{ verdict = 'fail: integrity'; reason = 'icon lost'; fix = 'Gagnez **3 PV**.' }
             Hall_001 = @{ verdict = 'fail: integrity'; reason = 'test'; fix = 'Bienvenue {x}!' }
@@ -244,27 +244,45 @@ Test 'a fix that breaks a placeholder falls back to the last clean attempt or th
     AssertEqual 'official' $fr.Hall_001.Origin 'unchanged official'
 }
 
-Test 'a Unity draft makes a missing string unity, revised' {
+Test 'a prior draft makes a missing string <origin>, revised' {
     $f = New-Fixture
-    '{ "Setup_Title": "Le village" }' | Set-Content "$($f.Module)/.source/unity-drafts.fr-CA.json" -Encoding utf8
+    '{ "origin": "unity", "description": "the Unity app''s French", "strings": { "Setup_Title": "Le village" } }' | Set-Content "$($f.Module)/.source/drafts.fr-CA.json" -Encoding utf8
     Invoke-Runner $f $goodForward
     $forward = @(Get-Calls $f | Where-Object { $_.stage -eq 'forward' -and $_.keys -contains 'Setup_Title' })[0]
-    Assert ($forward.prompt.Contains('"unityDraft": "Le village"')) 'the forward agent gets the Unity draft'
+    Assert ($forward.prompt.Contains('"priorDraft": "Le village"')) 'the forward agent gets the prior draft'
+    Assert ($forward.prompt.Contains("source (the Unity app's French)")) 'and where it comes from'
     AssertEqual 'unity, revised' (Read-Written "$($f.Module)/fr-CA.overrides.restext").Setup_Title.Origin 'origin'
+}
+
+Test 'a translation without origin comments is verified as an existing one and mined for terms' {
+    $f = New-Fixture
+    Set-Content "$($f.Module)/fr-CA.restext" -Encoding utf8 -Value "Hall_001=Bienvenue dans la salle !`nShared_Close=Fermer"
+    Remove-Item "$($f.Module)/.source/terms.fr-CA.yaml"
+    Invoke-Runner $f ($goodForward + @{ 'mine-terms' = @{ '*' = @(@{ en = 'Hall'; translation = 'salle'; note = '' }) } })
+    $mine = @(Get-Calls $f | Where-Object stage -eq 'mine-terms')
+    AssertEqual 1 $mine.Count 'the existing pairs are mined'
+    Assert ($mine[0].prompt.Contains('"translation": "Bienvenue dans la salle !"')) 'with their text'
+    $judge = @(Get-Calls $f | Where-Object { $_.stage -eq 'judge' -and $_.keys -contains 'Hall_001' })[0]
+    Assert ($judge.prompt -match '"status": "existing"') 'the judge treats it as an existing translation'
+    $tr = Read-Written "$($f.Module)/fr-CA.restext"
+    AssertEqual 'Bienvenue dans la salle!' $tr.Hall_001.Value 'verified string'
+    AssertEqual '' "$($tr.Hall_001.Origin)" 'no origin is invented'
+    AssertEqual 'agent' $tr.Hall_003.Origin 'a new string is agent'
+    Assert ((Get-Content "$($f.Module)/.source/_translate-report.fr-CA.md" -Raw).Contains('### `Hall_001`: Existing, pass')) 'report label'
 }
 
 Test 'the scenario term list is mined once and the run can stop to review it' {
     $f = New-Fixture
     Remove-Item "$($f.Module)/.source/terms.fr-CA.yaml"
     $s = @{ 'mine-terms' = @{ '*' = @(
-                @{ en = 'Great Hall'; fr = 'Grande salle'; note = '' },
-                @{ en = 'Great Hall'; fr = 'grand hall'; note = '' },
-                @{ en = 'Great Hall'; fr = 'Grande salle'; note = 'f.' },
-                @{ en = 'Round'; fr = 'manche'; note = 'already shared' },
-                @{ en = 'Masterworks'; fr = "Chefs-d'œuvre"; note = 'a shared pattern covers it' }) } }
+                @{ en = 'Great Hall'; translation = 'Grande salle'; note = '' },
+                @{ en = 'Great Hall'; translation = 'grand hall'; note = '' },
+                @{ en = 'Great Hall'; translation = 'Grande salle'; note = 'f.' },
+                @{ en = 'Round'; translation = 'manche'; note = 'already shared' },
+                @{ en = 'Masterworks'; translation = "Chefs-d'œuvre"; note = 'a shared pattern covers it' }) } }
     Invoke-Runner $f $s @{ StopAfter = 'terms' }
     $yaml = Get-Content "$($f.Module)/.source/terms.fr-CA.yaml" -Raw
-    Assert ($yaml.Contains("fr: 'Grande salle'")) 'the most frequent French wins'
+    Assert ($yaml.Contains("translation: 'Grande salle'")) 'the most frequent translation wins'
     Assert ($yaml.Contains('also seen: grand hall')) 'variants are noted'
     Assert (-not $yaml.Contains("'Round'")) 'shared terms are skipped'
     Assert (-not $yaml.Contains("'Masterworks'")) 'terms a shared pattern covers are skipped'
@@ -295,9 +313,9 @@ Test 'the app resx is verified and missing keys are added' {
 </root>
 '@
     $f = [pscustomobject]@{ Root = $root; Work = "$root/work"; Log = "$root/agent-log"; Script = "$root/script.json" }
-    @{ forward = @{ Help_Title = @{ fr = 'Comment jouer' } } } | ConvertTo-Json -Depth 5 | Set-Content $f.Script -Encoding utf8
+    @{ forward = @{ Help_Title = @{ translation = 'Comment jouer' } } } | ConvertTo-Json -Depth 5 | Set-Content $f.Script -Encoding utf8
     $env:TV_FAKE_SCRIPT = $f.Script; $env:TV_FAKE_LOG = $f.Log
-    & $runner -Resx $enResx -WorkDir $f.Work -CodeRepoPath $CodeRepoPath -NoBuild -Agent pwsh, -NoProfile, -File, $fake | Out-Null
+    & $runner -Resx $enResx -Locale fr-CA -WorkDir $f.Work -CodeRepoPath $CodeRepoPath -NoBuild -Agent pwsh, -NoProfile, -File, $fake | Out-Null
     $text = Get-Content (Join-Path $root 'AppStrings.fr-CA.resx') -Raw
     Assert ($text.Contains('<value>&lt;b&gt;Aide&lt;/b&gt; pour {0}?</value>')) "typography normalized and markup kept:`n$text"
     Assert ($text.Contains('<data name="Help_Title" xml:space="preserve"><value>Comment jouer</value></data>')) 'missing key added'

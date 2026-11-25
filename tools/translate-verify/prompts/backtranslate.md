@@ -9,16 +9,16 @@ the board.
 Translate every string marked `"translate": true` back into English. The other strings are
 context: one sentence can run across several strings, so read them, but don't answer for them.
 
-- Translate what the French says, not what you think it was meant to say. Keep its tense, its
+- Translate what the {{LANGUAGE}} says, not what you think it was meant to say. Keep its tense, its
   mood, its tone and its exact game instructions. A reviewer compares your English with the
   original to find meaning errors, so don't smooth anything over.
-- Don't correct mistakes. If the French has a typo, a wrong word, a broken agreement or a sentence
+- Don't correct mistakes. If a string has a typo, a wrong word, a broken agreement or a sentence
   that doesn't make sense, translate it as it is and describe the problem in `note`.
 - Copy placeholders (`{nameA}`, `{icon:creepy_icon}`, `{0}`), markup (`**`, `_`, `//`) and leading
   or trailing spaces into your English as they are.
-- Spacing around punctuation is normalized on purpose (no space before `?` `!` `;`, a
-  non-breaking space before `:`). Don't report it.
-- Use the game's English terms from this glossary for its French terms:
+- Typography (spacing around punctuation, quotation marks) has been normalized to {{LANGUAGE}}
+  conventions on purpose. Don't report it.
+- Use the game's English terms from this glossary for its {{LANGUAGE}} terms:
 
 {{REVERSED_TERMS}}
 
@@ -28,4 +28,4 @@ context: one sentence can run across several strings, so read them, but don't an
 ```
 
 Answer with one item per key marked `"translate": true`: the `key`, your English in `en`, and a
-`note` describing any error you noticed in the French (empty when there's none).
+`note` describing any error you noticed in the {{LANGUAGE}} (empty when there's none).

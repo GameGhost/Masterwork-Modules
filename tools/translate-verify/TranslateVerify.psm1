@@ -155,18 +155,19 @@ function New-UnitId([int]$Index, [string]$Name) {
 }
 
 # Every string a scenario run covers, grouped into units of work (one per passage).
-# Bucket: verify (has French), draft (reconcile's `draft`), gap (no French).
-function Get-ModuleScope([string]$ModuleDir, [string]$Locale, [hashtable]$UnityDrafts) {
+# Bucket: verify (has a translation), draft (origin `draft`), gap (no translation).
+# PriorDrafts: key -> earlier translation from another source, for gap keys.
+function Get-ModuleScope([string]$ModuleDir, [string]$Locale, [hashtable]$PriorDrafts) {
     $enMain = Read-Restext (Join-Path $ModuleDir 'en-US.restext')
     $enOv = Read-Restext (Join-Path $ModuleDir 'en-US.overrides.restext')
-    $frMain = Read-Restext (Join-Path $ModuleDir "$Locale.restext")
-    $frOv = Read-Restext (Join-Path $ModuleDir "$Locale.overrides.restext")
+    $trMain = Read-Restext (Join-Path $ModuleDir "$Locale.restext")
+    $trOv = Read-Restext (Join-Path $ModuleDir "$Locale.overrides.restext")
 
     $en = [ordered]@{}; $file = @{}
     foreach ($k in $enMain.Values.Keys) { $en[$k] = $enMain.Values[$k]; $file[$k] = 'main' }
     foreach ($k in $enOv.Values.Keys) { $en[$k] = $enOv.Values[$k]; $file[$k] = 'overrides' }
-    $fr = @{}; $frOrigin = @{}
-    foreach ($src in $frMain, $frOv) { foreach ($k in $src.Values.Keys) { $fr[$k] = $src.Values[$k]; $frOrigin[$k] = $src.Origins[$k] } }
+    $tr = @{}; $trOrigin = @{}
+    foreach ($src in $trMain, $trOv) { foreach ($k in $src.Values.Keys) { $tr[$k] = $src.Values[$k]; $trOrigin[$k] = $src.Origins[$k] } }
 
     $passages = Get-Passages $ModuleDir
     $usedBy = @{}; $usedAny = @{}
@@ -199,14 +200,14 @@ function Get-ModuleScope([string]$ModuleDir, [string]$Locale, [hashtable]$UnityD
     $preserved = @{}
     foreach ($k in $en.Keys) {
         if (-not $unitOf.ContainsKey($k)) {
-            if ($fr.ContainsKey($k)) { $preserved[$k] = @{ Value = $fr[$k]; Origin = $frOrigin[$k]; File = $file[$k] } }
+            if ($tr.ContainsKey($k)) { $preserved[$k] = @{ Value = $tr[$k]; Origin = $trOrigin[$k]; File = $file[$k] } }
             continue
         }
-        $origin = $frOrigin[$k]
-        $bucket = if (-not $fr.ContainsKey($k)) { 'gap' } elseif ($origin -eq 'draft') { 'draft' } else { 'verify' }
+        $origin = $trOrigin[$k]
+        $bucket = if (-not $tr.ContainsKey($k)) { 'gap' } elseif ($origin -eq 'draft') { 'draft' } else { 'verify' }
         $records[$k] = @{
-            Key = $k; En = $en[$k]; Fr = $fr[$k]; Origin = $origin; Bucket = $bucket; File = $file[$k]; Unit = $unitOf[$k]
-            Unity = if ($bucket -eq 'gap' -and $UnityDrafts -and $UnityDrafts.ContainsKey($k)) { $UnityDrafts[$k] } else { $null }
+            Key = $k; En = $en[$k]; Input = $tr[$k]; Origin = $origin; Bucket = $bucket; File = $file[$k]; Unit = $unitOf[$k]
+            PriorDraft = if ($bucket -eq 'gap' -and $PriorDrafts -and $PriorDrafts.ContainsKey($k)) { $PriorDrafts[$k] } else { $null }
             Passages = @(if ($usedBy.ContainsKey($k)) { $usedBy[$k] })
         }
     }
@@ -217,7 +218,7 @@ function Get-ModuleScope([string]$ModuleDir, [string]$Locale, [hashtable]$UnityD
 # The app UI: one unit per key prefix (MainMenu_, Help_, …), split into chunks.
 function Get-ResxScope([string]$EnglishPath, [string]$LocalePath) {
     $en = Read-Resx $EnglishPath
-    $fr = Read-Resx $LocalePath
+    $tr = Read-Resx $LocalePath
     $groups = [ordered]@{}
     foreach ($k in $en.Keys) {
         $prefix = ($k -split '_', 2)[0]
@@ -231,8 +232,8 @@ function Get-ResxScope([string]$EnglishPath, [string]$LocalePath) {
             $id = New-UnitId ($units.Count + 1) $prefix
             $units.Add(@{ Id = $id; Name = "app strings $prefix*"; Keys = $chunk; Context = $chunk })
             foreach ($k in $chunk) {
-                $records[$k] = @{ Key = $k; En = $en[$k]; Fr = $fr[$k]; Origin = $null; Bucket = $(if ($fr.Contains($k)) { 'verify' } else { 'gap' })
-                    File = 'resx'; Unit = $id; Unity = $null; Passages = @() }
+                $records[$k] = @{ Key = $k; En = $en[$k]; Input = $tr[$k]; Origin = $null; Bucket = $(if ($tr.Contains($k)) { 'verify' } else { 'gap' })
+                    File = 'resx'; Unit = $id; PriorDraft = $null; Passages = @() }
             }
         }
     }
@@ -250,7 +251,7 @@ function ConvertFrom-YamlScalar([string]$s) {
     ($s -replace '\s+#.*$', '').Trim()
 }
 
-# Reads the fields the agents use (en, fr, note) from a term-base YAML file written in this tool's
+# Reads the fields the agents use (en, translation, note) from a term-base YAML file written in this tool's
 # shape: `terms:` entries of `key: scalar` lines, and a `forbidden:` list. The checks read the
 # same file's `source`/`target` patterns themselves.
 function Read-TermBase([string]$Path) {
@@ -266,25 +267,25 @@ function Read-TermBase([string]$Path) {
         if ($entry -and $line -match '^\s+(\w+):\s*(.*)$') { $entry[$Matches[1]] = ConvertFrom-YamlScalar $Matches[2]; continue }
         throw "${Path}: can't read line: $line"
     }
-    foreach ($t in $terms) { if (-not ($t['en'] -and $t['fr'])) { throw "${Path}: every term needs 'en' and 'fr' for the agents (entry with source '$($t['source'])')." } }
+    foreach ($t in $terms) { if (-not ($t['en'] -and $t['translation'])) { throw "${Path}: every term needs 'en' and 'translation' for the agents (entry with source '$($t['source'])')." } }
     @{ Terms = $terms; Forbidden = $forbidden }
 }
 
 function ConvertTo-MarkdownCell([string]$s) { ($s -replace '\|', '\|').Trim() }
 
-# Term tables for the prompts. Reversed (French → English) for the blind back-translator.
-function Format-TermTable($Layers, [switch]$Reversed) {
+# Term tables for the prompts. Reversed (translation → English) for the blind back-translator.
+function Format-TermTable($Layers, [string]$Language, [switch]$Reversed) {
     $lines = [Collections.Generic.List[string]]::new()
     foreach ($layer in $Layers) {
         if (-not $layer.Base.Terms.Count) { continue }
         $lines.Add("### $($layer.Title)"); $lines.Add('')
         if ($Reversed) {
-            $lines.Add('| French | English |'); $lines.Add('|---|---|')
-            foreach ($t in $layer.Base.Terms) { $lines.Add("| $(ConvertTo-MarkdownCell $t.fr) | $(ConvertTo-MarkdownCell $t.en) |") }
+            $lines.Add("| $Language | English |"); $lines.Add('|---|---|')
+            foreach ($t in $layer.Base.Terms) { $lines.Add("| $(ConvertTo-MarkdownCell $t.translation) | $(ConvertTo-MarkdownCell $t.en) |") }
         }
         else {
-            $lines.Add('| English | French | Notes |'); $lines.Add('|---|---|---|')
-            foreach ($t in $layer.Base.Terms) { $lines.Add("| $(ConvertTo-MarkdownCell $t.en) | $(ConvertTo-MarkdownCell $t.fr) | $(ConvertTo-MarkdownCell ($t['note'] ?? '')) |") }
+            $lines.Add("| English | $Language | Notes |"); $lines.Add('|---|---|---|')
+            foreach ($t in $layer.Base.Terms) { $lines.Add("| $(ConvertTo-MarkdownCell $t.en) | $(ConvertTo-MarkdownCell $t.translation) | $(ConvertTo-MarkdownCell ($t['note'] ?? '')) |") }
         }
         $lines.Add('')
     }
@@ -301,46 +302,46 @@ function Format-Forbidden($Layers) {
 function ConvertTo-YamlQuoted([string]$s) { "'" + $s.Replace("'", "''") + "'" }
 function ConvertTo-RegexLiteral([string]$s) { [regex]::Replace($s, '[\\.*+?()\[\]{}|^$#]', '\$0') }
 
-# Merges the mined terms: one entry per English term (its most frequent French), skipping terms
-# the shared base already has.
+# Merges the mined terms: one entry per English term (its most frequent translation), skipping
+# terms the shared base already has.
 function Merge-MinedTerms($Items, $Shared) {
     $known = @{}
     foreach ($t in $Shared.Terms) { $known[$t.en.ToLowerInvariant()] = $true }
     $sharedSources = @($Shared.Terms | Where-Object { $_['source'] } | ForEach-Object { [regex]::new($_.source, 'IgnoreCase') })
     $byEn = [ordered]@{}
     foreach ($i in $Items) {
-        $en = "$($i.en)".Trim(); $fr = "$($i.fr)".Trim()
-        if (-not $en -or -not $fr -or $known.ContainsKey($en.ToLowerInvariant())) { continue }
+        $en = "$($i.en)".Trim(); $tr = "$($i.translation)".Trim()
+        if (-not $en -or -not $tr -or $known.ContainsKey($en.ToLowerInvariant())) { continue }
         # A shared term's own pattern covers it ("Masterwork", "VP", "Round"), whatever its label says.
         if ($sharedSources | Where-Object { $_.Match($en).Value -eq $en }) { continue }
         $k = $en.ToLowerInvariant()
-        if (-not $byEn.Contains($k)) { $byEn[$k] = @{ En = $en; Fr = @{}; Note = '' } }
-        $byEn[$k].Fr[$fr] = 1 + ($byEn[$k].Fr[$fr] ?? 0)
+        if (-not $byEn.Contains($k)) { $byEn[$k] = @{ En = $en; Seen = @{}; Note = '' } }
+        $byEn[$k].Seen[$tr] = 1 + ($byEn[$k].Seen[$tr] ?? 0)
         if (-not $byEn[$k].Note -and $i['note']) { $byEn[$k].Note = "$($i.note)".Trim() }
     }
     foreach ($e in $byEn.Values | Sort-Object { $_.En }) {
-        $fr = ($e.Fr.GetEnumerator() | Sort-Object Value -Descending | Select-Object -First 1).Key
-        $others = @($e.Fr.Keys | Where-Object { $_ -cne $fr })
+        $tr = ($e.Seen.GetEnumerator() | Sort-Object Value -Descending | Select-Object -First 1).Key
+        $others = @($e.Seen.Keys | Where-Object { $_ -cne $tr })
         $note = (@($e.Note) + @($others | ForEach-Object { "also seen: $_" }) | Where-Object { $_ }) -join '; '
-        @{ en = $e.En; fr = $fr; note = $note }
+        @{ en = $e.En; translation = $tr; note = $note }
     }
 }
 
 function Format-MinedTermBase($Terms, [string]$Title, [string]$Locale) {
     $lines = [Collections.Generic.List[string]]::new()
     $lines.Add("# Per-scenario $Locale term base: $Title. Mined by tools/translate-verify from the scenario's")
-    $lines.Add('# official aligned pairs: card, place and character names the agents would otherwise invent.')
+    $lines.Add('# existing translation: card, place and character names the agents would otherwise invent.')
     $lines.Add('# Review it before the forward stage. The shared game terms are in tools/translate-verify.')
     $lines.Add('terms:')
     foreach ($t in $Terms) {
         $edgeL = if ($t.en -match '^\w') { '\b' } else { '' }
         $edgeR = if ($t.en -match '\w$') { '\b' } else { '' }
         $lines.Add("  - en: $(ConvertTo-YamlQuoted $t.en)")
-        $lines.Add("    fr: $(ConvertTo-YamlQuoted $t.fr)")
+        $lines.Add("    translation: $(ConvertTo-YamlQuoted $t.translation)")
         if ($t.note) { $lines.Add("    note: $(ConvertTo-YamlQuoted $t.note)") }
         $lines.Add("    from: 'mined'")
         $lines.Add("    source: $(ConvertTo-YamlQuoted "$edgeL$(ConvertTo-RegexLiteral $t.en)$edgeR")")
-        $lines.Add("    target: $(ConvertTo-YamlQuoted (ConvertTo-RegexLiteral $t.fr))")
+        $lines.Add("    target: $(ConvertTo-YamlQuoted (ConvertTo-RegexLiteral $t.translation))")
     }
     if (-not $Terms) { $lines[$lines.Count - 1] = 'terms: []' }
     ($lines -join "`n") + "`n"
@@ -440,27 +441,28 @@ function Invoke-AgentJobs {
 
 #region Checks
 
-# Runs `checktranslation --fix` over candidate strings. Returns key -> @{ Fr (fixed); Fixed; Failures; Flags }.
+# Runs `checktranslation --fix` over candidate strings. Pairs: @{ Key; En; Text }.
+# Returns key -> @{ Text (fixed); Fixed; Failures; Flags }.
 function Invoke-Checks {
     param([string]$Name, [string]$Kind, [string]$Locale, $Pairs, [string[]]$TermBases, [string]$WorkDir, [string[]]$Checker)
     $dir = Join-Path $WorkDir "checks/$Name"
     New-Item -ItemType Directory -Force $dir | Out-Null
     $result = @{}
-    $en = [ordered]@{}; $fr = [ordered]@{}
+    $en = [ordered]@{}; $tr = [ordered]@{}
     foreach ($p in $Pairs) {
         $en[$p.Key] = $p.En
-        if ($p.Fr -match '[\r\n]') { $result[$p.Key] = @{ Fr = $p.Fr; Fixed = $false; Failures = @('multi-line: the translation has a line break'); Flags = @() } }
-        elseif ($null -ne $p.Fr) { $fr[$p.Key] = $p.Fr }
+        if ($p.Text -match '[\r\n]') { $result[$p.Key] = @{ Text = $p.Text; Fixed = $false; Failures = @('multi-line: the translation has a line break'); Flags = @() } }
+        elseif ($null -ne $p.Text) { $tr[$p.Key] = $p.Text }
     }
     if ($Kind -eq 'resx') {
         $src = Join-Path $dir 'AppStrings.resx'; $tgt = Join-Path $dir "AppStrings.$Locale.resx"
         [IO.File]::WriteAllText($src, (Format-ResxFile $en), $script:Utf8)
-        [IO.File]::WriteAllText($tgt, (Format-ResxFile $fr), $script:Utf8)
+        [IO.File]::WriteAllText($tgt, (Format-ResxFile $tr), $script:Utf8)
     }
     else {
         $src = Join-Path $dir 'en-US.restext'; $tgt = Join-Path $dir "$Locale.restext"
         [IO.File]::WriteAllText($src, (($en.Keys | ForEach-Object { "$_=$($en[$_])`n" }) -join ''), $script:Utf8)
-        [IO.File]::WriteAllText($tgt, (($fr.Keys | ForEach-Object { "$_=$($fr[$_])`n" }) -join ''), $script:Utf8)
+        [IO.File]::WriteAllText($tgt, (($tr.Keys | ForEach-Object { "$_=$($tr[$_])`n" }) -join ''), $script:Utf8)
     }
     $json = Join-Path $dir 'report.json'
     $checkArgs = @('checktranslation', $src, $tgt, '--locale', $Locale, '--fix', '--json', $json)
@@ -472,7 +474,7 @@ function Invoke-Checks {
     foreach ($s in $report.strings) {
         if ($result.ContainsKey($s.key) -or $null -eq $s.target) { continue }
         $result[$s.key] = @{
-            Fr = $s.target; Fixed = [bool]$s.fixed
+            Text = $s.target; Fixed = [bool]$s.fixed
             Failures = @($s.failures | ForEach-Object { "$($_.check): $($_.detail)" })
             Flags = @($s.flags | ForEach-Object { "$($_.check): $($_.detail)" })
         }
@@ -493,10 +495,10 @@ function Format-Prompt([string]$Template, [hashtable]$Values) {
 function ConvertTo-PromptJson($Items) { ConvertTo-Json -InputObject @($Items) -Depth 6 }
 
 $script:Schemas = @{
-    forward = '{"type":"object","properties":{"items":{"type":"array","items":{"type":"object","properties":{"key":{"type":"string"},"fr":{"type":"string"},"note":{"type":"string"}},"required":["key","fr","note"]}}},"required":["items"]}'
+    forward = '{"type":"object","properties":{"items":{"type":"array","items":{"type":"object","properties":{"key":{"type":"string"},"translation":{"type":"string"},"note":{"type":"string"}},"required":["key","translation","note"]}}},"required":["items"]}'
     back    = '{"type":"object","properties":{"items":{"type":"array","items":{"type":"object","properties":{"key":{"type":"string"},"en":{"type":"string"},"note":{"type":"string"}},"required":["key","en","note"]}}},"required":["items"]}'
     judge   = '{"type":"object","properties":{"items":{"type":"array","items":{"type":"object","properties":{"key":{"type":"string"},"verdict":{"type":"string","enum":["pass","fail: meaning","fail: typo","fail: term","fail: integrity"]},"reason":{"type":"string"},"fix":{"type":"string"}},"required":["key","verdict","reason","fix"]}}},"required":["items"]}'
-    mine    = '{"type":"object","properties":{"items":{"type":"array","items":{"type":"object","properties":{"en":{"type":"string"},"fr":{"type":"string"},"note":{"type":"string"}},"required":["en","fr","note"]}}},"required":["items"]}'
+    mine    = '{"type":"object","properties":{"items":{"type":"array","items":{"type":"object","properties":{"en":{"type":"string"},"translation":{"type":"string"},"note":{"type":"string"}},"required":["en","translation","note"]}}},"required":["items"]}'
 }
 function Get-Schema([string]$Stage) { $script:Schemas[$Stage] }
 
@@ -513,8 +515,8 @@ function Format-ReportText($s) {
 function Get-BucketLabel($Rec, [string]$Kind) {
     switch ($Rec.Bucket) {
         'draft' { 'Draft' }
-        'gap' { if ($Rec.Unity) { 'No French, Unity draft' } else { 'No French' } }
-        default { if ($Kind -eq 'resx') { 'Existing' } elseif ($Rec.Origin -eq 'official' -or -not $Rec.Origin) { 'Official' } else { "Verified ($($Rec.Origin))" } }
+        'gap' { if ($Rec.PriorDraft) { 'No translation, prior draft' } else { 'No translation' } }
+        default { if (-not $Rec.Origin) { 'Existing' } elseif ($Rec.Origin -eq 'official') { 'Official' } else { "Verified ($($Rec.Origin))" } }
     }
 }
 
@@ -559,9 +561,9 @@ function Format-Report {
             if ($r.Passages.Count) { $lines.Add("- **Passage:** $($r.Passages -join ', ')") }
             if ($Kind -ne 'resx') { $lines.Add("- **Origin:** $($r.FinalOrigin ?? 'not written')") }
             $lines.Add("- **English:** $(Format-ReportText $r.En)")
-            if ($r.Bucket -ne 'verify' -and $null -ne $r.Fr) { $lines.Add("- **Official French (input):** $(Format-ReportText $r.Fr)") }
-            if ($r.Unity) { $lines.Add("- **Unity draft:** $(Format-ReportText $r.Unity)") }
-            $lines.Add("- **French:** $(Format-ReportText $r.Cand1)")
+            if ($r.Bucket -ne 'verify' -and $null -ne $r.Input) { $lines.Add("- **Input:** $(Format-ReportText $r.Input)") }
+            if ($r.PriorDraft) { $lines.Add("- **Prior draft:** $(Format-ReportText $r.PriorDraft)") }
+            $lines.Add("- **Translation:** $(Format-ReportText $r.Cand1)")
             $lines.Add("- **Back-translation:** $(Format-ReportText $r.Back1)$(if ($r.BackNote1) { " ($($r.BackNote1))" })")
             $lines.Add("- **Verdict:** $($r.Judge1.verdict)$(if ($r.Judge1.reason) { " — $($r.Judge1.reason)" })")
             $lines.Add("- **Checks:** $(Format-Checks $r.Checks1)")
