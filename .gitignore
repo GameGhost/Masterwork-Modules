@@ -11,3 +11,6 @@ _extraction-report.md
 ## never committed. Back it up outside git.
 *.pfx
 *.p12
+
+## translate-verify stage outputs (tools/translate-verify -WorkDir default) — resumable scratch, not source
+.translate-verify/

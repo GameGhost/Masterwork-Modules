@@ -69,6 +69,10 @@ Each module directory (e.g. `cost-of-disease/`) follows the same shape:
 | `assets/` | hand-authored | This module's own scenario-specific content only — VO audio (`audio/vo/`), module-specific icons/images, `images/setup/`. `style.css`, `fonts/`, shared icons/images, and `audio/sfx`/`audio/bgm` all moved to `mwf-common-assets/assets/` — the app only emits structural `layout-{value}`/`style-{value}` CSS class hooks, everything they actually look like lives in whichever of these two places actually has the file |
 | `_variables.yaml` | extractor-owned | All session variables discovered during extraction, with inferred types/defaults |
 | `en-US.restext` | extractor-owned | Extracted locale strings (`Key=Value`). `Common_NNN` keys can renumber between runs — see `.source/en-US.common.restext` |
+| `{locale}.restext`, `{locale}.overrides.restext` | translate-verify-owned | Translated strings, each with a `# origin:` comment. Started by `Masterwork.Extractor reconcile` (official French) or by hand (a community translation), then rewritten wholesale by `tools/translate-verify` (see Translation below) |
+| `.source/terms.{locale}.yaml` | generated, then hand-reviewed | The scenario's own term list, mined once by `tools/translate-verify` from its existing translation |
+| `.source/drafts.{locale}.json` | hand-maintained (optional) | Earlier translations from another source (the Unity app's French, say), with their origin; revised for strings the locale file lacks |
+| `.source/_reconcile-report.{locale}.md`, `.source/_translate-report.{locale}.md` | generated | Reconciliation and translate-verify reports |
 | `.source/*.cs` | extraction input | The canonical Cradle complete-class C# source this module is extracted from — from RGS's community-resources release, see Licensing above and `NOTICE.md` |
 | `.source/en-US.common.restext` | hand-maintained | Curated `Key=Value` file giving *stable* names to strings that would otherwise get an auto-renumbered `Common_NNN` id (fed to `--common-restext`). Any override passage referencing a Common string should use one of these curated names. Lives in `.source/` because, like the Cradle source itself, it's an extraction *input*, not output — but unlike the `.cs` file it's hand-maintained, original content |
 
@@ -198,6 +202,20 @@ Each of the four modules declares `mwf-common-assets` as a `dependencies:` entry
 local copy of the content that moved there — a **module**-mode bundle only loads correctly once the
 asset pack is installed too (or use **standalone** mode instead); until then `ModuleWarnings`'
 `missing_dependency` note is the only symptom of it being absent, not a load failure.
+
+---
+
+## Translation (`tools/translate-verify/`)
+
+`tools/translate-verify/translate-verify.ps1` is the agent translate-and-verify pass for any locale:
+forward drafts per passage, blind back-translation and a judge, with `checktranslation` (code repo)
+between stages. It rewrites a scenario's `{locale}.restext`/`{locale}.overrides.restext` with
+`# origin:` comments and writes `.source/_translate-report.{locale}.md`. Its prompts and code are
+language-neutral: everything specific to one language is in the shared term base and style guide
+beside it (`terms.{locale}.yaml`, `style.{locale}.md`; fr-CA exists today), and each scenario's
+mined term list is `.source/terms.{locale}.yaml`. The input can be the reconciled official French, a
+community translation or nothing at all. Stage outputs go to the gitignored `.translate-verify/` and
+make runs resumable. See its `README.md`; its tests are `tools/translate-verify/tests/run-tests.ps1`.
 
 ---
 
