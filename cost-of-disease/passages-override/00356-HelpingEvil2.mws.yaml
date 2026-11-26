@@ -1,0 +1,27 @@
+﻿# Override — extracted content unchanged, except that society is compared by restext key rather
+# than by its English text.
+# ../.source/TheCostofDisease_Eng_v10.cs:25308
+---
+format: 'mws/0.4'
+passage_id: 'HelpingEvil2'
+tags:
+- 'revised'
+layout: 'narration'
+nodes:
+# ../.source/TheCostofDisease_Eng_v10.cs:25310
+- type: 'popup'
+  layout: 'setup'
+  header:
+  # ../.source/TheCostofDisease_Eng_v10.cs:25315
+  - type: 'image'
+    asset: 'image://setup/S1_EstateUpgradeBACK'
+    style: 'setup-image'
+  content:
+  # ../.source/TheCostofDisease_Eng_v10.cs:25321
+  - type: 'text'
+    # ../en-US.restext:2832 | "Then, starting with the p..."
+    value: 'restext://HelpingEvil2_001'
+  # ../en-US.restext:355 | "Accept"
+  okay: 'restext://UIButton_Accept'
+  target: '${society == "restext://Faction_FraternityOfHunters_Plain" ? "GloomyHunterIntro" : "GloomyWolvesIntro"}' # ./00169-GloomyHunterIntro.mws.yaml, ./00287-GloomyWolvesIntro.mws.yaml
+  snapshot: true

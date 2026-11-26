@@ -1,0 +1,38 @@
+﻿# Override — extracted content unchanged, except that seedy is compared by restext key rather than
+# by its English text.
+# ../.source/TheCostofDisease_Eng_v10.cs:24675
+---
+format: 'mws/0.4'
+passage_id: 'ImmortalitySetup'
+layout: 'narration'
+nodes:
+# ../.source/TheCostofDisease_Eng_v10.cs:24678
+- type: 'popup'
+  layout: 'setup'
+  header:
+  # ../.source/TheCostofDisease_Eng_v10.cs:24689
+  - type: 'image'
+    asset: 'image://setup/StorybookToken'
+    style: 'setup-image'
+  content:
+  # ../.source/TheCostofDisease_Eng_v10.cs:24683
+  - type: 'text'
+    # ../en-US.restext:1982 | "**To Infinity**"
+    value: 'restext://ImmortalitySetup_001'
+  # ../.source/TheCostofDisease_Eng_v10.cs:24690
+  - type: 'break'
+  # ../.source/TheCostofDisease_Eng_v10.cs:24691
+  - type: 'text'
+    # ../en-US.restext:96 | "Give each player a {icon:..."
+    value: 'restext://Directive_GiveEachPlayerStorybookToken'
+  # ../.source/TheCostofDisease_Eng_v10.cs:24699
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/TheCostofDisease_Eng_v10.cs:24701
+  - type: 'text'
+    # ../en-US.restext:97 | "Each player chooses an in..."
+    value: 'restext://Directive_JournalToken_ThirdLevel'
+  # ../en-US.restext:355 | "Accept"
+  okay: 'restext://UIButton_Accept'
+  target: '${(seedy == "restext://Choice_No_Lower") ? "Gen1Creepy-RefuseBonus" : (seedy == "restext://Choice_Yes_Lower") ? "Gen1Creepy-AgreedReturn" : "Hospital2"}' # ./00300-Gen1Creepy-RefuseBonus.mws.yaml, ./00301-Gen1Creepy-AgreedReturn.mws.yaml, ./00034-Hospital2.mws.yaml
+  snapshot: true

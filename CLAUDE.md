@@ -73,6 +73,7 @@ Each module directory (e.g. `cost-of-disease/`) follows the same shape:
 | `.source/terms.{locale}.yaml` | generated, then hand-reviewed | The scenario's own term list, mined once by `tools/translate-verify` from its existing translation |
 | `.source/drafts.{locale}.json` | hand-maintained (optional) | Earlier translations from another source (the Unity app's French, say), with their origin; revised for strings the locale file lacks |
 | `.source/_reconcile-report.{locale}.md`, `.source/_translate-report.{locale}.md` | generated | Reconciliation and translate-verify reports |
+| `logic-lint.allowlist.yaml` | hand-maintained (optional) | Exemptions for the packer's compare-by-key lint (`docs/mws-format-latest.md`, "Comparing by key", in the code repo): literals in logic that equal a restext value without comparing displayed text, such as passage ids. One trailing `#` comment per entry gives its reason. Never packaged |
 | `.source/*.cs` | extraction input | The canonical Cradle complete-class C# source this module is extracted from — from RGS's community-resources release, see Licensing above and `NOTICE.md` |
 | `.source/en-US.common.restext` | hand-maintained | Curated `Key=Value` file giving *stable* names to strings that would otherwise get an auto-renumbered `Common_NNN` id (fed to `--common-restext`). Any override passage referencing a Common string should use one of these curated names. Lives in `.source/` because, like the Cradle source itself, it's an extraction *input*, not output — but unlike the `.cs` file it's hand-maintained, original content |
 
@@ -166,8 +167,10 @@ parameter/example reference) is the normal way to invoke it from this repo:
 
 - **module** (default) — `ModulePackage.WriteToBytes(moduleDir)` bundles a module folder's
   `passages/`, `passages-override/`, `layouts/`, `variables/`, `assets/`, `manifest.yaml`,
-  `_variables.yaml`, and `{locale}.restext` files into a `.mwm` (excluding `.source/` and a root
-  `README.md`, neither of which belongs in a distributable bundle). `dependencies:` is left exactly
+  `_variables.yaml`, and `{locale}.restext` files into a `.mwm` (excluding `.source/`, a root
+  `README.md` and `logic-lint.allowlist.yaml`, none of which belongs in a distributable bundle). It
+  refuses to pack a module that fails the compare-by-key lint (also in **standalone** mode); the
+  failure names each site and the allowlist entry that would exempt it. `dependencies:` is left exactly
   as declared — this is what a real release ships. `ModulePackage.ReadFromBytes(bytes)` is the
   inverse, returning a `ModulePackageContents` record the app loads via `ModuleLoader.LoadFromSources`.
 - **asset** — `AssetPackPackage.WriteToBytes(sourceDir)` bundles an asset-pack directory (no

@@ -37,7 +37,7 @@ nodes:
   expr: 'players_raw.toSorted("descending", "points")'
 - type: 'assign'
   var: 'winner'
-  expr: 'winnerCount > 1 ? "The family" : players_ranked[0].player_name'
+  expr: 'winnerCount > 1 ? "restext://Scoring_Winner_TheFamily" : players_ranked[0].player_name'
 - type: 'let'
   var: 'top_score'
   expr: 'players_ranked[0].points'

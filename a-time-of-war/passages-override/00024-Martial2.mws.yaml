@@ -1,0 +1,225 @@
+﻿# Override — extracted content unchanged, except that warwinner is compared by restext key rather
+# than by its English text.
+# ../.source/ATimeofWar_Eng_v8.cs:3854
+---
+format: 'mws/0.4'
+passage_id: 'Martial2'
+# ../en-US.restext:260 | "Martial Law"
+title: 'restext://Title_MartialLaw'
+# ../en-US.restext:262 | "Middle Years"
+subtitle: 'restext://Title_MiddleYears'
+tags:
+- 'HUB'
+layout: 'hub_middle'
+nodes:
+# ../.source/ATimeofWar_Eng_v8.cs:3861
+- type: 'assign'
+  var: 'round'
+  expr: '8'
+# ../.source/ATimeofWar_Eng_v8.cs:3862
+- type: 'assign'
+  var: 'sabotagee1'
+  # ../en-US.restext:16 | "none"
+  expr: '"restext://Choice_None"'
+# ../.source/ATimeofWar_Eng_v8.cs:3864
+- type: 'conditional'
+  if: 'martial <= 1'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:3866
+  - type: 'conditional'
+    if: 'wardestroy == 1'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:3870
+    - type: 'popup'
+      layout: 'setup'
+      # ../en-US.restext:286 | "Accept"
+      okay: 'restext://UIButton_Accept'
+      header:
+      # ../.source/ATimeofWar_Eng_v8.cs:3874
+      - type: 'image'
+        asset: 'image://setup/VillageChronicleCover'
+        style: 'setup-image'
+      content:
+      # ../.source/ATimeofWar_Eng_v8.cs:3876
+      - type: 'text'
+        # ../en-US.restext:60 | "One of the buildings in t..."
+        value: 'restext://Directive_BuildingTargetedTurnToSabpage'
+# ../.source/ATimeofWar_Eng_v8.cs:3891
+- type: 'section'
+  # ../en-US.restext:181 | "**Turn the Tide**"
+  title: 'restext://Heading_TurnTheTide'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:3899
+  - type: 'text'
+    # ../en-US.restext:114 | "The {warloser} are desper..."
+    value: 'restext://Directive_WarloserDesperateAdvancedWeaponry_Fragment'
+  # ../.source/ATimeofWar_Eng_v8.cs:3908
+  - type: 'conditional'
+    # ../en-US.restext:271 | "Separatists"
+    if: 'warloser == "restext://Title_Separatists"'
+    then:
+    # ../.source/ATimeofWar_Eng_v8.cs:3912
+    - type: 'text'
+      # ../en-US.restext:225 | "**gain a Knowledge of you..."
+      value: 'restext://Reward_GainKnowledgeChoiceFromSupply'
+    else:
+    # ../.source/ATimeofWar_Eng_v8.cs:3919
+    - type: 'text'
+      # ../en-US.restext:224 | "**gain $2 from the supply**"
+      value: 'restext://Reward_Gain2FromSupply'
+  # ../.source/ATimeofWar_Eng_v8.cs:3922
+  - type: 'text'
+    # ../en-US.restext:58 | " as a gift from the {warl..."
+    value: 'restext://Directive_AsGiftFromWarloser_Fragment'
+# ../.source/ATimeofWar_Eng_v8.cs:3927
+- type: 'break'
+  style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:3929
+- type: 'conditional'
+  if: 'martweapons == 0'
+  then:
+  # ../.source/ATimeofWar_Eng_v8.cs:3933
+  - type: 'section'
+    # ../en-US.restext:176 | "{icon:storybooktoken} **W..."
+    title: 'restext://Heading_StorybookToken_WeaponsBonus'
+    style: 'hub-card'
+    content:
+    # ../.source/ATimeofWar_Eng_v8.cs:3943
+    - type: 'text'
+      # ../en-US.restext:75 | "The first player to compl..."
+      value: 'restext://Directive_FirstPlayerComplete2AdvancedWeaponry_Fragment'
+    # ../.source/ATimeofWar_Eng_v8.cs:3949
+    - type: 'link'
+      # ../en-US.restext:26 | "clicks here for a special..."
+      label: 'restext://Click_ClicksHereSpecialBonus_Typo'
+      target: 'PackingHeat1' # ./00127-PackingHeat1.mws.yaml
+      snapshot: true
+  # ../.source/ATimeofWar_Eng_v8.cs:3951
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:3954
+- type: 'switch'
+  on: 'warwinner'
+  cases:
+  # ../en-US.restext:283 | "Unified Monarchists"
+  - match: 'restext://Title_UnifiedMonarchists'
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:3956
+    - type: 'conditional'
+      # ../en-US.restext:247 | "Barracks"
+      if: 'bldg1 != "restext://Title_Barracks"'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:3960
+      - type: 'section'
+        # ../en-US.restext:146 | "**Military Demands - Barr..."
+        title: 'restext://Heading_MilitaryDemandsBarracks'
+        style: 'hub-card'
+        content:
+        # ../.source/ATimeofWar_Eng_v8.cs:3968
+        - type: 'text'
+          # ../en-US.restext:488 | "The Monarchy demands a co..."
+          value: 'restext://Martial2_007'
+        # ../.source/ATimeofWar_Eng_v8.cs:3972
+        - type: 'break'
+          style: 'paragraph'
+        # ../.source/ATimeofWar_Eng_v8.cs:3974
+        - type: 'text'
+          # ../en-US.restext:92 | "When placing a piece on t..."
+          value: 'restext://Directive_PlaceOnBarracksNoBonus'
+  # ../en-US.restext:271 | "Separatists"
+  - match: 'restext://Title_Separatists'
+    nodes:
+    # ../.source/ATimeofWar_Eng_v8.cs:3985
+    - type: 'conditional'
+      # ../en-US.restext:247 | "Barracks"
+      if: 'bldg1 != "restext://Title_Barracks"'
+      then:
+      # ../.source/ATimeofWar_Eng_v8.cs:3989
+      - type: 'section'
+        # ../en-US.restext:489 | "**NEW Incentive - Barracks**"
+        title: 'restext://Martial2_008'
+        style: 'hub-card'
+        content:
+        # ../.source/ATimeofWar_Eng_v8.cs:3997
+        - type: 'text'
+          # ../en-US.restext:104 | "The Separatists urge citi..."
+          value: 'restext://Directive_SeparatistsUrgeRallyReward'
+        # ../.source/ATimeofWar_Eng_v8.cs:4000
+        - type: 'break'
+          style: 'paragraph'
+        # ../.source/ATimeofWar_Eng_v8.cs:4002
+        - type: 'text'
+          # ../en-US.restext:490 | "When placing a piece on t..."
+          value: 'restext://Martial2_009'
+    # ../.source/ATimeofWar_Eng_v8.cs:4009
+    - type: 'break'
+      style: 'paragraph'
+# ../.source/ATimeofWar_Eng_v8.cs:4017
+- type: 'section'
+  # ../en-US.restext:151 | "**Outpost**"
+  title: 'restext://Heading_OutpostBold'
+  style: 'hub-card'
+  content:
+  # ../.source/ATimeofWar_Eng_v8.cs:4025
+  - type: 'text'
+    # ../en-US.restext:88 | "An Outpost is open in tow..."
+    value: 'restext://Directive_OutpostOpenForTrading_Fragment'
+  # ../.source/ATimeofWar_Eng_v8.cs:4029
+  - type: 'link'
+    # ../en-US.restext:36 | "Click here for an explana..."
+    label: 'restext://Click_HereForOutpostExplanation'
+    target: 'OutpostExplain' # ./00221-OutpostExplain.mws.yaml
+    snapshot: true
+  # ../.source/ATimeofWar_Eng_v8.cs:4030
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/ATimeofWar_Eng_v8.cs:4034
+  - type: 'popup'
+    layout: 'end_of_generation'
+    # ../en-US.restext:31 | "Click here at the end of ..."
+    label: 'restext://Click_EndRound_NextRound'
+    target: '${warwinner == "restext://Title_UnifiedMonarchists" ? (rumor2 == "visited" ? ("AMessenger2") : ("AfternoonTea")) : (wardestroy == 1 ? ("ATOWSabotageIntro2Sep") : ("ATOWSabotageIntro2"))}' # ./00033-AMessenger2.mws.yaml, ./00134-AfternoonTea.mws.yaml, ./00210-ATOWSabotageIntro2Sep.mws.yaml, ./00206-ATOWSabotageIntro2.mws.yaml
+    # ../en-US.restext:287 | "Close"
+    okay: 'restext://UIButton_Close'
+    snapshot: true
+    content:
+    - type: 'let'
+      var: 'title'
+      # ../en-US.restext:273 | "Special Setup"
+      expr: '"restext://Title_SpecialSetup"'
+    - type: 'let'
+      var: 'completedRound'
+      expr: '-1'
+    - type: 'text'
+      # ../en-US.restext:67 | "Do NOT perform the End of..."
+      value: 'restext://Directive_DoNotPerformEndOfRoundYet'
+    - type: 'conditional'
+      # ../en-US.restext:283 | "Unified Monarchists"
+      if: 'warwinner == "restext://Title_UnifiedMonarchists"'
+      then:
+      - type: 'conditional'
+        if: 'rumor2 == "visited"'
+        then:
+        - type: 'let'
+          var: 'passageName'
+          expr: '"AMessenger2"'
+        else:
+        - type: 'let'
+          var: 'passageName'
+          expr: '"AfternoonTea"'
+      else:
+      - type: 'conditional'
+        if: 'wardestroy == 1'
+        then:
+        - type: 'let'
+          var: 'passageName'
+          expr: '"ATOWSabotageIntro2Sep"'
+        else:
+        - type: 'let'
+          var: 'passageName'
+          expr: '"ATOWSabotageIntro2"'
+    # ../.source/ATimeofWar_Eng_v8.cs:4043
+    - type: 'let'
+      var: 'passage'
+      expr: 'warwinner == "restext://Title_UnifiedMonarchists" ? (rumor2 == "visited" ? ("AMessenger2") : ("AfternoonTea")) : (wardestroy == 1 ? ("ATOWSabotageIntro2Sep") : ("ATOWSabotageIntro2"))'

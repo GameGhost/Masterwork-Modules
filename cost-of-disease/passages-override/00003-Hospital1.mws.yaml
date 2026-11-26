@@ -1,0 +1,277 @@
+﻿# Override — extracted content unchanged, except that seedy is compared by restext key rather than
+# by its English text.
+# ../.source/TheCostofDisease_Eng_v10.cs:1822
+---
+format: 'mws/0.4'
+passage_id: 'Hospital1'
+# ../en-US.restext:349 | "THRIVING IN ADVERSITY"
+title: 'restext://Title_ThrivingInAdversity'
+# ../en-US.restext:329 | "Early Years"
+subtitle: 'restext://Title_EarlyYears'
+tags:
+- 'HUB'
+layout: 'hub_early'
+nodes:
+# ../.source/TheCostofDisease_Eng_v10.cs:1829
+- type: 'assign'
+  var: 'round'
+  expr: '7'
+# ../.source/TheCostofDisease_Eng_v10.cs:1831
+- type: 'conditional'
+  if: '!twopage'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:1835
+  - type: 'popup'
+    layout: 'setup'
+    # ../en-US.restext:355 | "Accept"
+    okay: 'restext://UIButton_Accept'
+    header:
+    - type: 'conditional'
+      if: 'seedy == "restext://Choice_Yes_Lower"'
+      then:
+      # ../.source/TheCostofDisease_Eng_v10.cs:1841
+      - type: 'image'
+        asset: 'image://setup/AngryMobSetup2'
+        style: 'setup-image'
+      else:
+      # ../.source/TheCostofDisease_Eng_v10.cs:1846
+      - type: 'image'
+        asset: 'image://setup/AngryMobSetup1'
+        style: 'setup-image'
+    content:
+    # ../.source/TheCostofDisease_Eng_v10.cs:1850
+    - type: 'conditional'
+      # ../en-US.restext:201 | "bank"
+      if: 'building == "restext://Location_Bank_Lower"'
+      then:
+      # ../.source/TheCostofDisease_Eng_v10.cs:1852
+      - type: 'text'
+        # ../en-US.restext:402 | "Turn to page 4 of the Vil..."
+        value: 'restext://Hospital1_003'
+      else:
+      # ../.source/TheCostofDisease_Eng_v10.cs:1857
+      - type: 'text'
+        # ../en-US.restext:401 | "Turn to page 5 of the Vil..."
+        value: 'restext://Hospital1_002'
+    # ../.source/TheCostofDisease_Eng_v10.cs:1863
+    - type: 'conditional'
+      if: 'players > 3 && (!Hospital1)'
+      then:
+      # ../.source/TheCostofDisease_Eng_v10.cs:1865
+      - type: 'assign'
+        var: 'Hospital1'
+        expr: '1'
+      # ../.source/TheCostofDisease_Eng_v10.cs:1866
+      - type: 'assign'
+        var: 'tracker'
+        expr: 'tracker - 1'
+    # ../.source/TheCostofDisease_Eng_v10.cs:1859
+    - type: 'break'
+    # ../.source/TheCostofDisease_Eng_v10.cs:1860
+    - type: 'text'
+      # ../en-US.restext:403 | "Place the Suspicion marke..."
+      value: 'restext://Hospital1_004'
+    # ../.source/TheCostofDisease_Eng_v10.cs:1875
+    - type: 'conditional'
+      # ../en-US.restext:34 | "yes"
+      if: 'seedy == "restext://Choice_Yes_Lower"'
+      then:
+      # ../.source/TheCostofDisease_Eng_v10.cs:1879
+      - type: 'text'
+        # ../en-US.restext:100 | "**two** spaces to the lef..."
+        value: 'restext://Directive_MoveTwoSpacesLeft_Seedy'
+      else:
+      # ../.source/TheCostofDisease_Eng_v10.cs:1885
+      - type: 'text'
+        # ../en-US.restext:99 | "one space to the left."
+        value: 'restext://Directive_MoveOneSpaceLeft'
+    # ../.source/TheCostofDisease_Eng_v10.cs:1887
+    - type: 'break'
+      style: 'paragraph'
+    # ../.source/TheCostofDisease_Eng_v10.cs:1889
+    - type: 'text'
+      # ../en-US.restext:404 | "Then, place a {icon:story..."
+      value: 'restext://Hospital1_007'
+    # ../.source/TheCostofDisease_Eng_v10.cs:1899
+    - type: 'conditional'
+      if: 'players == 3'
+      then:
+      # ../.source/TheCostofDisease_Eng_v10.cs:1901
+      - type: 'text'
+        # ../en-US.restext:80 | "Then, since this is a 3 p..."
+        value: 'restext://Directive_3Player_PassMarker_A'
+# ../.source/TheCostofDisease_Eng_v10.cs:1910
+- type: 'section'
+  # ../en-US.restext:144 | "{icon:storybook} **Board ..."
+  title: 'restext://Heading_BoardOfTrustees'
+  style: 'hub-card'
+  content:
+  # ../.source/TheCostofDisease_Eng_v10.cs:1919
+  - type: 'text'
+    # ../en-US.restext:405 | "Due to the efforts of you..."
+    value: 'restext://Hospital1_010'
+  # ../.source/TheCostofDisease_Eng_v10.cs:1920
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/TheCostofDisease_Eng_v10.cs:1922
+  - type: 'text'
+    # ../en-US.restext:189 | "The **first time** you vi..."
+    value: 'restext://Hospital_FirstVisit_Lead'
+  # ../.source/TheCostofDisease_Eng_v10.cs:1929
+  - type: 'link'
+    # ../en-US.restext:37 | "click here to confirm."
+    label: 'restext://Click_Confirm'
+    target: 'HospitalVisitCheck' # ./00130-HospitalVisitCheck.mws.yaml
+    snapshot: true
+  # ../.source/TheCostofDisease_Eng_v10.cs:1931
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/TheCostofDisease_Eng_v10.cs:1935
+  - type: 'text'
+    # ../en-US.restext:406 | "_(If, for any reason, you..."
+    value: 'restext://Hospital1_013'
+# ../.source/TheCostofDisease_Eng_v10.cs:1939
+- type: 'break'
+  style: 'paragraph'
+# ../.source/TheCostofDisease_Eng_v10.cs:1943
+- type: 'section'
+  # ../en-US.restext:407 | "**Hospital**"
+  title: 'restext://Hospital1_014'
+  style: 'hub-card'
+  content:
+  # ../.source/TheCostofDisease_Eng_v10.cs:1951
+  - type: 'text'
+    # ../en-US.restext:408 | "For an explanation of the..."
+    value: 'restext://Hospital1_015'
+  # ../.source/TheCostofDisease_Eng_v10.cs:1952
+  - type: 'link'
+    # ../en-US.restext:51 | "click here."
+    label: 'restext://Click_Here_Period'
+    target: 'HospitalDefine' # ./00085-HospitalDefine.mws.yaml
+    snapshot: true
+# ../.source/TheCostofDisease_Eng_v10.cs:1954
+- type: 'break'
+  style: 'paragraph'
+# ../.source/TheCostofDisease_Eng_v10.cs:1956
+- type: 'switch'
+  on: 'cured'
+  cases:
+  - match: 0
+    nodes:
+    # ../.source/TheCostofDisease_Eng_v10.cs:1960
+    - type: 'section'
+      # ../en-US.restext:182 | "{icon:storybook} **The Cure**"
+      title: 'restext://Heading_TheCure'
+      style: 'hub-card'
+      content:
+      # ../.source/TheCostofDisease_Eng_v10.cs:1969
+      - type: 'text'
+        # ../en-US.restext:118 | "Whenever a player complet..."
+        value: 'restext://Disease_YellowFeverInoculation_Lead'
+      # ../.source/TheCostofDisease_Eng_v10.cs:1974
+      - type: 'link'
+        # ../en-US.restext:58 | "click here for a special ..."
+        label: 'restext://Click_SpecialMessage_Generic1'
+        target: 'YellowFeverCureSignin' # ./00241-YellowFeverCureSignin.mws.yaml
+        snapshot: true
+  - match: 1
+    nodes:
+    # ../.source/TheCostofDisease_Eng_v10.cs:1982
+    - type: 'section'
+      # ../en-US.restext:184 | "{icon:storybook} **The Pa..."
+      title: 'restext://Heading_ThePanacea'
+      style: 'hub-card'
+      content:
+      # ../.source/TheCostofDisease_Eng_v10.cs:1991
+      - type: 'text'
+        # ../en-US.restext:117 | "Whenever a player complet..."
+        value: 'restext://Disease_PanaceaComplete_Lead'
+      # ../.source/TheCostofDisease_Eng_v10.cs:1996
+      - type: 'link'
+        # ../en-US.restext:59 | "click here for a special ..."
+        label: 'restext://Click_SpecialMessage_Generic2'
+        target: 'Panacea' # ./00057-Panacea.mws.yaml
+        snapshot: true
+# ../.source/TheCostofDisease_Eng_v10.cs:1999
+- type: 'break'
+  style: 'paragraph'
+# ../.source/TheCostofDisease_Eng_v10.cs:2001
+- type: 'conditional'
+  if: 'sciadv == 0'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:2005
+  - type: 'section'
+    # ../en-US.restext:178 | "{icon:storybook} **Scient..."
+    title: 'restext://Heading_ScientificAdvances'
+    style: 'hub-card'
+    content:
+    # ../.source/TheCostofDisease_Eng_v10.cs:2014
+    - type: 'text'
+      # ../en-US.restext:114 | "If a player completes a t..."
+      value: 'restext://Disease_3Experiments_Lead'
+    # ../.source/TheCostofDisease_Eng_v10.cs:2017
+    - type: 'link'
+      # ../en-US.restext:409 | "click here for a special ..."
+      label: 'restext://Hospital1_024'
+      target: 'Trigger3Experiments' # ./00123-Trigger3Experiments.mws.yaml
+      snapshot: true
+  # ../.source/TheCostofDisease_Eng_v10.cs:2019
+  - type: 'break'
+    style: 'paragraph'
+# ../.source/TheCostofDisease_Eng_v10.cs:2023
+- type: 'conditional'
+  if: 'trigger35 == 0'
+  then:
+  # ../.source/TheCostofDisease_Eng_v10.cs:2027
+  - type: 'section'
+    # ../en-US.restext:186 | "{icon:storybook} **Victor..."
+    title: 'restext://Heading_VictoryAhead'
+    style: 'hub-card'
+    content:
+    # ../.source/TheCostofDisease_Eng_v10.cs:2036
+    - type: 'text'
+      # ../en-US.restext:113 | "If a player reaches or pa..."
+      value: 'restext://Directive_VPTrack35_Lead'
+    # ../.source/TheCostofDisease_Eng_v10.cs:2038
+    - type: 'link'
+      # ../en-US.restext:60 | "click here for a special ..."
+      label: 'restext://Click_SpecialMessage_Generic3'
+      target: 'Trigger35Points' # ./00122-Trigger35Points.mws.yaml
+      snapshot: true
+# ../.source/TheCostofDisease_Eng_v10.cs:2043
+- type: 'break'
+# ../.source/TheCostofDisease_Eng_v10.cs:2046
+- type: 'section'
+  # ../en-US.restext:185 | "**University Symposium**"
+  title: 'restext://Heading_UniversitySymposium'
+  style: 'hub-card'
+  content:
+  # ../.source/TheCostofDisease_Eng_v10.cs:2054
+  - type: 'text'
+    # ../en-US.restext:324 | "At the end of the second ..."
+    value: 'restext://Symposium_Rule'
+  # ../.source/TheCostofDisease_Eng_v10.cs:2068
+  - type: 'break'
+    style: 'paragraph'
+  # ../.source/TheCostofDisease_Eng_v10.cs:2072
+  - type: 'popup'
+    layout: 'end_of_round'
+    # ../en-US.restext:49 | "Click here at the end of ..."
+    label: 'restext://Click_EndRound_NextRound'
+    target: 'Immortality' # ./00089-Immortality.mws.yaml
+    # ../en-US.restext:360 | "End of Round"
+    okay: 'restext://UIButton_EndOfRound'
+    onclose:
+    - type: 'assign'
+      var: '_ProgressRound'
+      expr: '4'
+    snapshot: true
+    content:
+    - type: 'text'
+      # ../en-US.restext:309 | "The Early Years of the Se..."
+      value: 'restext://Round_GenerationII_EarlyEnded'
+    - type: 'break'
+      style: 'paragraph'
+    - type: 'text'
+      # ../en-US.restext:313 | "Then, perform all Start o..."
+      value: 'restext://Round_StartMiddleYears_Rule'
