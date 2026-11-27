@@ -21,28 +21,28 @@
 # engine timer, since both the visible countdown and the button's enable run off the same duration.
 format: 'mws/0.4'
 passage_id: 'Showcase_Popup_RevealCountdown'
-title: 'Reveal Countdown Popup'
+title: 'restext://Showcase_Countdown_Title'
 layout: 'narration'
 nodes:
 - type: 'text'
-  value: 'A genuinely nested popup: the outer note holds the instructions and never closes on its own — the inner popup''s own trigger button sits inline in its content, and its Okay button is invisible and full-screen until a CSS countdown finishes.'
+  value: 'restext://Showcase_Countdown_Intro'
 - type: 'break'
   style: 'paragraph'
 - type: 'popup'
   layout: 'countdown_instructions'
-  label: 'click to start the bid...'
+  label: 'restext://Showcase_Countdown_Label'
   content:
   - type: 'text'
-    value: "Click on the 'Start Bidding' button to start the bid. This will start a 3-second countdown."
+    value: 'restext://Showcase_Countdown_Body1'
   - type: 'break'
     style: 'paragraph'
   - type: 'text'
-    value: "When you see the word 'REVEAL' on the screen, simultaneously show everyone your bid."
+    value: 'restext://Showcase_Countdown_Body2'
   - type: 'break'
     style: 'paragraph'
   - type: 'popup'
     layout: 'countdown_action'
-    label: 'Start Bidding'
+    label: 'restext://Showcase_Countdown_StartBidding'
     style: 'countdown-trigger'
     # Four stacked text nodes, not a single CSS `content`-cycling pseudo-element (the earlier cut)
     # — REVEAL (and the digits, for the same reason a real Cradle extraction would restext them
@@ -62,8 +62,8 @@ nodes:
     - type: 'text'
       value: 'restext://Countdown_Reveal'
       style: 'countdown-reveal'
-    okay: 'Reveal'
+    okay: 'restext://Countdown_RevealButton'
     target: 'Example_Entry'
 - type: 'link'
-  label: '← Back to Showcase'
+  label: 'restext://Common_BackToShowcase'
   target: 'Example_Entry'

@@ -1,13 +1,11 @@
 # MasterWork locale file — en-US
 # Format: Key=Value  (one string per line)
 #
-# Hand-authored setup + scoring passage strings for my-fathers-work-template. These are the
-# template's own keys — the setup/scoring passages used to borrow keys from cost-of-disease's
-# extracted restext (TCOD_TownName_*, PlayerNameIntro_*, NameEntryTownConfirm_*, Number_*_Lower),
-# which was never appropriate for shared template content. Copy this file alongside the
-# passages/layouts when integrating the template into a real module (see
-# scripts/apply-template.ps1) — a target module's own extracted en-US.restext is a separate file
-# and these keys are namespaced (Setup_/Scoring_/Common_/Countdown_) to avoid colliding with it.
+# Every player-facing string in my-fathers-work-template's passages, so translating the template
+# needs only a new {locale}.restext. Passages reference these as restext:// keys; none carries
+# inline display text. scripts/apply-template.ps1 copies the keys its Setup/Scoring passages use
+# into a target module's en-US.overrides.restext. Keys are namespaced (Setup_/Scoring_/Common_/
+# Countdown_/Showcase_/Demo_/Ending_/Preparations_) to avoid colliding with a module's own keys.
 #
 # Countdown_* backs the countdown_action popup's own digit/REVEAL text (Showcase_Popup_
 # RevealCountdown.mws.yaml) — these are displayed via CSS-timed opacity, not markdown/template
@@ -82,3 +80,187 @@ Countdown_Three=3
 Countdown_Two=2
 Countdown_One=1
 Countdown_Reveal=REVEAL
+
+Common_Accept=Accept
+Common_Cancel=Cancel
+Common_Confirm=Confirm
+Common_TheEnd=The End
+Common_BackToShowcase=← Back to Showcase
+Countdown_RevealButton=Reveal
+SpecialEvent_Title=Special Event
+
+Preparations_Title=Preparations
+Preparations_Body1=Complete the standard setup for the chosen player count as shown in the rulebook.
+Preparations_BoxImage=The Cost of Disease scenario box
+Preparations_Body2=Then retrieve the scenario box, which contains all components needed for this story. Keep it nearby — the Storybook will ask you to put items into play from it as the story progresses.
+Preparations_Continue=Click here to continue...
+
+Showcase_Entry_Title=Layout Showcase
+Showcase_Entry_Intro=Jump into any layout below to see it styled for real. Each demo links back here.
+Showcase_Entry_Continue=Continue →
+Showcase_RoundSelector_Title=Round Selector (testing only)
+Showcase_RoundSelector_Current=Currently previewing round {demoRoundNum}. Pick a different one:
+Showcase_Story_Title=Story Passages
+Showcase_Story_Body=Full-frame narration, introduction, and special-event content.
+Showcase_Story_NarrationShort=Narration — short
+Showcase_Story_NarrationLong=Narration — long (scroll test)
+Showcase_Story_Introduction=Introduction
+Showcase_Story_Event=Event
+Showcase_Hubs_Title=Hub Passages
+Showcase_Hubs_Body=The per-generation location hub — card stack, blue links, real progress bar.
+Showcase_Hubs_Early=Hub — early years
+Showcase_Hubs_Middle=Hub — middle years
+Showcase_Hubs_Late=Hub — late years (scroll test)
+Showcase_Popups_Title=Popups
+Showcase_Popups_Body=Triggered right here on the hub — Okay just closes and you stay put (target: Example_Entry, snapshot: false), so there's nothing to navigate back from. Okay-only and Okay+Cancel variants sit side by side so both button counts can be checked against the same layout.
+Showcase_Popups_OkayOnly=Okay only
+Showcase_Popups_OkayCancel=Okay + Cancel
+Showcase_Popups_SetupHeading=Setup (instructional popup):
+Showcase_Popups_SetupImage=Dubious Bartering card
+Showcase_Popups_SetupBody=Retrieve the Dubious Bartering cards from the scenario box. Shuffle them and give each player a card. This card is placed face-up near their Estate and is activated each time the listed action is taken.
+Showcase_Popups_EndOfRoundHeading=End of round:
+Showcase_Popups_EndOfRoundTitle=End of Round
+Showcase_Popups_EndOfRoundBody=The Early Years of the First Generation has ended. Perform all End of Round actions. Then, perform all Start of Round actions for the Middle Years before continuing.
+Showcase_Popups_EndOfGenerationHeading=End of generation:
+Showcase_Popups_EndOfGenerationTitle=End of Generation
+Showcase_Popups_EndOfGenerationBody=The First Generation has drawn to a close. Remove all player pieces from the board and perform the End of a Generation. Return any remaining tokens to the supply.
+Showcase_Popups_PromptHeading=Input prompt (fixed-size field):
+Showcase_Popups_PromptBody=Count up all the heart tokens collected by ALL players. Please enter the total number here.
+Showcase_Popups_ChoiceHeading=Choice (generic bordered popup — not a real requirement on its own; exercises the checkbox input style scoring needs):
+Showcase_Popups_ChoiceTitle=Choose Audio Voice
+Showcase_Popups_ChoiceFeminine=Feminine
+Showcase_Popups_CountdownHeading=Reveal countdown needs its own passage (a nested popup inside a popup), so it stays a separate demo:
+Showcase_Popups_CountdownLink=Popup — reveal countdown
+Showcase_Popups_RevealHeading=Reveal (hidden text) needs long enough content to test scrolling, so it also stays a separate demo:
+Showcase_Popups_RevealLink=Popup — reveal (hidden text)
+Showcase_DemoModule_Title=Demo Module
+Showcase_DemoModule_Body=A small self-contained scenario exercising MWS logic and expression capability beyond layouts — gated conditionals, random/shuffled draws, a checkpoint, input, foreach, and a real terminal passage. Not part of the layout catalog above; see Demo_Hub.mws.yaml.
+Showcase_DemoModule_Link=Enter the Demo Module
+
+Showcase_EarlyYears=Early Years
+Showcase_MiddleYears=Middle Years
+Showcase_LateYears=Late Years
+Showcase_HandDevice=Carefully hand this storybook device to the reader and do not allow any other players to see the screen.
+
+Showcase_NarrationShort_Title=A Quiet Morning
+Showcase_NarrationShort_Body1=The fog lifted from Laurelton just after dawn, revealing rooftops still slick with the night's rain.
+Showcase_NarrationShort_Body2=It was, by all accounts, an unremarkable start to what would become a very remarkable day.
+
+Showcase_NarrationLong_Title=The Correspondence
+Showcase_Letter_Arrival=The letter arrived on a Tuesday, though the postmark suggested it had wandered through at least three cities before finding its way to Laurelton. Its author, an old university colleague, wrote with the particular enthusiasm of someone who had not yet learned the cost of ambition.
+Showcase_Letter_Recall="You will recall," the letter began, "our conversations in the amphitheatre, before the faculty grew tiresome of our methods. I write now not out of nostalgia, but out of necessity — I have found something in the old records that I believe belongs to your particular expertise, and to no one else's."
+Showcase_Letter_Fragments=What followed was three pages of dense, cramped handwriting, describing a set of experiments abandoned decades prior by a researcher whose name had been carefully struck from every surviving record. The colleague had found only fragments: a single page of notation, a sketch of an apparatus no longer extant, and a warning, underlined twice, that the work should never be resumed by anyone lacking a very particular kind of patience.
+Showcase_Letter_NotIgnored=It was, in other words, exactly the sort of correspondence that could not be ignored.
+Showcase_Letter_Accustomed=The household had grown accustomed to such letters by now — invitations to obscurity dressed up as academic curiosity, forwarded from one estranged colleague to the next until they found a family willing to entertain them. Most were discarded within the hour. This one was not.
+Showcase_Letter_Evening=By evening, the notation had been transcribed twice, cross-referenced against the family's own considerable library, and pinned to the wall of the study alongside a dozen other threads that had, over the years, refused to resolve into anything resembling an answer. Whether this one would prove different remained, as always, a matter for the coming weeks to decide.
+Showcase_Letter_Cost=What could be said with some confidence was this: the letter had cost nothing to receive, and everything to answer.
+
+Showcase_Introduction_Title=The First Generation
+Showcase_Introduction_Body1=Every household begins somewhere. For this one, it began with a deed, a debt, and a great deal more ambition than sense.
+Showcase_Introduction_Body2=What follows over the next three years will decide whether that ambition was warranted.
+
+Showcase_Event_Title=A Bid for Mayor
+Showcase_Event_Body1=All players take all their money into their hands. They then secretly choose any amount to place into their right hand to bid on becoming Mayor.
+Showcase_Event_Body2=Once all players are ready, reveal the amounts simultaneously. The player that bid the most wins the election. (In the event of a tie, the tied player who went last in turn order the previous round wins the bid.)
+Showcase_Event_Body3=Only the player that wins the election must pay their bid to supply. All others return their money to their Estates.
+
+Showcase_Hub_Title=Laurelton
+Showcase_Hub_Continue=Click here at the end of the round to continue...
+Showcase_Hub_Hospital=The Hospital
+Showcase_Hub_Library=The Library
+Showcase_Hub_BuildHospital=Build a Hospital
+Showcase_Hub_SecondRoundEvent=Second Round Event
+Showcase_Hub_AngryMob=The Angry Mob
+Showcase_Hub_Relief=Relief from Disease
+Showcase_Hub_MayorsOffice=The Mayor's Office
+Showcase_HubEarly_HospitalBody=A visit here may reveal the source of the fever, at some cost to your composure.
+Showcase_HubEarly_LibraryBody=Knowledge awaits those patient enough to read every dusty volume.
+Showcase_HubMiddle_BuildHospitalBody=The church can no longer handle the influx of the diseased. Each visit may fund a new wing, at a cost.
+Showcase_HubMiddle_SecondRoundEventBody=Political pandering may require extra capital on hand, should the need arise.
+Showcase_HubMiddle_AngryMobBody=Suspicion has taken root among the townsfolk. Left unaddressed, it will not stay quiet for long.
+Showcase_HubLate_LibraryBody=A new Library has been built in town. For each visit, gain one Knowledge of your choice.
+Showcase_HubLate_BuildHospitalBody=The church can no longer handle the influx of the diseased and needs to expand its facilities.
+Showcase_HubLate_AngryMobBody=Clandestine meetings continue in the old mill. When a player reveals their Sealed Envelope card, click here for a special secret message.
+Showcase_HubLate_ReliefBody=A completed Experiment can be used to ignore all ill effects from Disease between rounds.
+Showcase_HubLate_MayorsOfficeBody=The election looms. Whoever bids the most will hold the office until the family's work is done — or undone.
+
+Showcase_Reveal_Title=Reveal Popup
+Showcase_Reveal_Label=Once you are ready, click here to reveal your secret conversation.
+Showcase_Reveal_Heading=**A Seedy Arrangement**
+Showcase_Reveal_Recall="You will recall," the letter began, "our conversations in the amphitheatre, before the faculty grew tiresome of our methods. I write now not out of nostalgia, but out of necessity -- I have found something in the old records that I believe belongs to your particular expertise, and to no one else's."
+Showcase_Reveal_Accustomed=The household had grown accustomed to such letters by now -- invitations to obscurity dressed up as academic curiosity, forwarded from one estranged colleague to the next until they found a family willing to entertain them. Most were discarded within the hour. This one was not.
+Showcase_Reveal_Evening=By evening, the notation had been transcribed twice, cross-referenced against the family's own considerable library, and pinned to the wall of the study alongside a dozen other threads that had, over the years, refused to resolve into anything resembling an answer.
+Showcase_Reveal_Representative=A representative arrived within the week, unannounced, and was received all the same. Their mannerisms were especially secretive and plotting, though their offer -- once made -- was plain enough: support, substantial and immediate, in exchange for nothing more than a favor to be named later. It was, they noted with an unsettling grin, always easier to ask a friend than a stranger.
+Showcase_Reveal_Choose=**CHOOSE:**
+Showcase_Reveal_Accept=Accept the offer.
+Showcase_Reveal_AcceptNote=(To gain $2.)
+Showcase_Reveal_Or=OR
+Showcase_Reveal_Refuse=Refuse the offer.
+Showcase_Reveal_RefuseNote=(To avoid a debt in the future.)
+
+Showcase_Countdown_Title=Reveal Countdown Popup
+Showcase_Countdown_Intro=A genuinely nested popup: the outer note holds the instructions and never closes on its own — the inner popup's own trigger button sits inline in its content, and its Okay button is invisible and full-screen until a CSS countdown finishes.
+Showcase_Countdown_Label=click to start the bid...
+Showcase_Countdown_Body1=Click on the 'Start Bidding' button to start the bid. This will start a 3-second countdown.
+Showcase_Countdown_Body2=When you see the word 'REVEAL' on the screen, simultaneously show everyone your bid.
+Showcase_Countdown_StartBidding=Start Bidding
+
+Ending_Title=Editor's Note
+Ending_Subtitle=August 1923
+Ending_Winner={winner} has won the day.
+Ending_SharedGlory=There were {winnerCount} siblings who will share the glory.
+Ending_UnlockedPrefix=You have unlocked the
+Ending_Name="There Could Never Be Peace"
+Ending_UnlockedSuffix=ending.
+Ending_CloseHint=Close this popup to end the game.
+
+Demo_BackToSquare=← Back to the square
+Demo_TakeSurvey=Take the survey
+
+Demo_Hub_Title=Town Square
+Demo_Hub_Welcome=Welcome to {townname}, home of this small logic-and-expression demo.
+Demo_Hub_Crest=The town crest bears the mark of {icon:storybook} — and, on this old copy, a faded {icon:nonexistent_test_icon} nobody can identify anymore (an unresolved icon reference, shown here as the engine's own fallback).
+Demo_Hub_Well0=The old well at the square has been quiet for as long as anyone remembers.
+Demo_Hub_Well1=Villagers murmur about strange sounds from the well after your last visit.
+Demo_Hub_Well2=The murmurs have turned to whispers. Something is stirring beneath {townname}.
+Demo_Hub_Well3=The town is on edge. Whatever lives in the well is close to the surface now.
+Demo_Hub_VisitWell=Visit the old well
+Demo_Hub_Rumors=Listen to the rumors
+Demo_Hub_Confront=Confront what waits in the well
+
+Demo_Well_Title=The Old Well
+Demo_Well_Flavor1=The water is ice cold tonight.
+Demo_Well_Flavor2=A frog watches you from the mossy rim.
+Demo_Well_Flavor3=The echo takes far too long to return.
+Demo_Well_Encounter1=The bucket comes up empty, but the rope is oddly warm.
+Demo_Well_Encounter2=A coin glints at the bottom of the well. You toss in another for luck.
+Demo_Well_Encounter3=Something brushes against the bucket in the dark water below.
+Demo_Well_Silent=The well is silent today.
+Demo_Well_Checkpoint=Visited the well
+
+Demo_Rumors_Title=Whispers in Town
+Demo_Rumor1=They say the mayor never sleeps.
+Demo_Rumor2=Someone heard laughter from the empty chapel.
+Demo_Rumor3=The miller swears his flour has gone missing again.
+
+Demo_Survey_Title=A Quick Survey
+Demo_Survey_Intro=Before we continue, a quick survey.
+Demo_Survey_Question=How many people are in your group?
+Demo_Survey_Submit=Submit
+
+Demo_SurveyResult_Title=Thanks!
+Demo_SurveyResult_Body=Thanks! You said there are {demoSurveyCount} people in your group.
+Demo_SurveyResult_NextLabel=What happens next?
+Demo_SurveyResult_GotIt=Got it
+Demo_SurveyResult_GenericBody=This is a generic popup with no named layout — just its content nodes and a dismiss button.
+Demo_SurveyResult_VoteLabel=Cast your vote
+Demo_SurveyResult_VoteBody1=Everyone secretly decide who to vote for. When ready, press "Reveal Votes" — this starts a 3-second countdown.
+Demo_SurveyResult_VoteBody2=When you see the word 'REVEAL', show your vote simultaneously.
+Demo_SurveyResult_RevealVotes=Reveal Votes
+
+Demo_Ending_Title=What Waits Below
+Demo_Ending_Subtitle=A Demo Ending
+Demo_Ending_Body=You lower a lantern into the well and finally see it — pale eyes, patient and old, staring back from the depths beneath {townname}.
+Demo_Ending_Name=END-WellDepths
+Demo_Ending_NameQuoted="{demoEnding}"
+Demo_Ending_CloseHint=Close this popup to end this demo playthrough.
