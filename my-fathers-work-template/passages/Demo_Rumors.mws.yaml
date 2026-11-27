@@ -3,7 +3,7 @@
 # logic/expression showcase — see Demo_Hub.mws.yaml.
 format: 'mws/0.4'
 passage_id: 'Demo_Rumors'
-title: 'Whispers in Town'
+title: 'restext://Demo_Rumors_Title'
 layout: 'narration'
 nodes:
 - type: 'assign'
@@ -11,7 +11,7 @@ nodes:
   expr: 'demoRoundNum - 1'
 - type: 'let'
   var: 'demoRumorList'
-  expr: '["They say the mayor never sleeps.", "Someone heard laughter from the empty chapel.", "The miller swears his flour has gone missing again."].shuffled("demo_rumor_order")'
+  expr: '["restext://Demo_Rumors_Rumor1", "restext://Demo_Rumors_Rumor2", "restext://Demo_Rumors_Rumor3"].shuffled("demo_rumor_order")'
 - type: 'foreach'
   var: 'rumor'
   in: 'demoRumorList'
@@ -22,6 +22,6 @@ nodes:
 - type: 'break'
   style: 'paragraph'
 - type: 'link'
-  label: '← Back to the square'
+  label: 'restext://Demo_BackToSquare'
   target: 'Demo_Hub'
   snapshot: true
