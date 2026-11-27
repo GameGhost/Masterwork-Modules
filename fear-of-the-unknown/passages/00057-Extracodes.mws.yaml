@@ -13,7 +13,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:8594
   - type: 'assign'
     var: 'them'
-    expr: '["Player A", "Player B"].shuffled("Extracodes_0")[0]'
+    expr: '["restext://Player_Label_A", "restext://Player_Label_B"].shuffled("Extracodes_0")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:8597
 - type: 'conditional'
   if: 'players == 3'
@@ -21,7 +21,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:8599
   - type: 'assign'
     var: 'them'
-    expr: '["Player A", "Player B", "Player C"].shuffled("Extracodes_1")[0]'
+    expr: '["restext://Player_Label_A", "restext://Player_Label_B", "restext://Player_Label_C"].shuffled("Extracodes_1")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:8602
 - type: 'conditional'
   if: 'players == 4'
@@ -29,7 +29,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:8604
   - type: 'assign'
     var: 'them'
-    expr: '["Player A", "Player B", "Player C", "Player D"].shuffled("Extracodes_2")[0]'
+    expr: '["restext://Player_Label_A", "restext://Player_Label_B", "restext://Player_Label_C", "restext://Player_Label_D"].shuffled("Extracodes_2")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:8607
 - type: 'conditional'
   if: 'players == 5'
@@ -37,7 +37,7 @@ nodes:
   # ../.source/FearoftheUnknown_Eng_v15.cs:8609
   - type: 'assign'
     var: 'them'
-    expr: '["Player A", "Player B", "Player C", "Player D", "Player E"].shuffled("Extracodes_3")[0]'
+    expr: '["restext://Player_Label_A", "restext://Player_Label_B", "restext://Player_Label_C", "restext://Player_Label_D", "restext://Player_Label_E"].shuffled("Extracodes_3")[0]'
 # ../.source/FearoftheUnknown_Eng_v15.cs:8616
 - type: 'conditional'
   if: 'players >= 3'

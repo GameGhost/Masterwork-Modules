@@ -2,9 +2,10 @@
 
 ## This Repository
 
-Holds extracted, playable MWS modules for the Masterwork project — the *build output* of the
-extraction pipeline, plus everything hand-authored on top of it (overrides, layout chrome,
-per-module assets, packaged `.mwm` bundles). **Not the code repo.**
+Holds the playable MWS modules for the Masterwork project, their layout chrome, per-module assets
+and packaged `.mwm` bundles. **Not the code repo.** The three official scenarios were extracted once
+from their Cradle C# source and are now maintained by hand, like the hand-authored template:
+extraction is frozen (`docs/adr/0006-extraction-freeze.md` in the code repo).
 
 - Code repo: `<Masterwork>` (a sibling of this repo, checked out alongside it) — the extractor, engine, and app that read/write this repo's content.
 - Extraction also reads sprite/progress data from the original Unity project's reference assets
@@ -62,26 +63,32 @@ Each module directory (e.g. `cost-of-disease/`) follows the same shape:
 | Path | Owner | Purpose |
 |---|---|---|
 | `manifest.yaml` | hand-maintained | Module id/title/description, thumbnail, player count/playtime, entry passage, `passages`/`passages_override` path overrides, `style` stylesheet reference |
-| `passages/` | extractor-owned | One `{NNN}-{PassageId}.mws.yaml` per passage — overwritten wholesale on every re-extraction. Never hand-edit files here |
-| `passages-override/` | hand-maintained | `.mws.yaml` files applied after `passages/` at module load time (`ModuleLoader.LoadFromDirectory`) — a matching `passage_id` replaces the extracted version, a new one is simply added. Never touched by extraction, so it survives re-extraction, but can drift stale against the current MWS format version since nothing re-checks it automatically |
+| `passages/` | extracted, then hand-maintained | One `{NNN}-{PassageId}.mws.yaml` per passage. Fix or change an extracted passage here, in place, so the change shows as a plain diff against the extracted text. Don't copy it into `passages-override/` |
+| `passages-override/` | hand-maintained | `.mws.yaml` files applied after `passages/` at module load time (`ModuleLoader.LoadFromDirectory`) — a matching `passage_id` replaces the extracted version, a new one is simply added. Holds the hand-authored passages with no extracted equivalent (the `_Setup_*`/`_Scoring_*` flows, endings) and the replacements made before extraction was frozen. Nothing re-checks these against the current MWS format version, so they can drift stale |
 | `layouts/` | hand-authored | Layout-chrome files (`layouts/{layout_id}.mws.yaml`) rendered around passages/popups sharing that `layout` value — see `docs/mws-format-latest.md` §8 in the code repo. Normally **absent entirely** — every shared layout (`choice`, `note`, `prompt`, `ranking`, the score/setup popups, `narration`/`introduction`/`hub_early`/`hub_middle`/`hub_late` with roundNum already derived from `_ProgressRound`, ...) lives in `mwf-common-assets/layouts/` instead, reached via this module's own `dependencies:` entry. A file only appears here if this module's own `--progress-map` extraction assigns a *different* progress variable name than the shared default (see `scripts/apply-template.ps1 -ProgressVariable`) — none of the three official scenarios currently need this |
 | `variables/` | hand-authored | Zero or more `.yaml` files declaring session variables the module needs that aren't discovered by extraction (e.g. bookkeeping variables for hand-authored passages) — same `variables:` schema as `_variables.yaml`, loaded after it with the same add/override-by-key semantics as `passages-override/`. See `docs/mws-format-latest.md` §9 in the code repo |
 | `assets/` | hand-authored | This module's own scenario-specific content only — VO audio (`audio/vo/`), module-specific icons/images, `images/setup/`. `style.css`, `fonts/`, shared icons/images, and `audio/sfx`/`audio/bgm` all moved to `mwf-common-assets/assets/` — the app only emits structural `layout-{value}`/`style-{value}` CSS class hooks, everything they actually look like lives in whichever of these two places actually has the file |
-| `_variables.yaml` | extractor-owned | All session variables discovered during extraction, with inferred types/defaults |
-| `en-US.restext` | extractor-owned | Extracted locale strings (`Key=Value`). `Common_NNN` keys can renumber between runs — see `.source/en-US.common.restext` |
+| `_variables.yaml` | extracted, then hand-maintained | All session variables discovered during extraction, with inferred types/defaults |
+| `en-US.restext` | extracted — leave as is | Extracted English strings (`Key=Value`). Keep it exactly as extracted until the official French has been reconciled (Masterwork-Modules#13): `reconcile` relies on a fresh English extraction reproducing this file |
+| `en-US.overrides.restext` | hand-maintained | English strings added or replaced by hand, on top of `en-US.restext` |
 | `{locale}.restext`, `{locale}.overrides.restext` | translate-verify-owned | Translated strings, each with a `# origin:` comment. Started by `Masterwork.Extractor reconcile` (official French) or by hand (a community translation), then rewritten wholesale by `tools/translate-verify` (see Translation below) |
 | `.source/terms.{locale}.yaml` | generated, then hand-reviewed | The scenario's own term list, mined once by `tools/translate-verify` from its existing translation |
 | `.source/drafts.{locale}.json` | hand-maintained (optional) | Earlier translations from another source (the Unity app's French, say), with their origin; revised for strings the locale file lacks |
 | `.source/_reconcile-report.{locale}.md`, `.source/_translate-report.{locale}.md` | generated | Reconciliation and translate-verify reports |
+| `logic-lint.allowlist.yaml` | hand-maintained (optional) | Exemptions for the packer's compare-by-key lint (`docs/mws-format-latest.md`, "Comparing by key", in the code repo): literals in logic that equal a restext value without comparing displayed text, such as passage ids. One trailing `#` comment per entry gives its reason. Never packaged |
 | `.source/*.cs` | extraction input | The canonical Cradle complete-class C# source this module is extracted from — from RGS's community-resources release, see Licensing above and `NOTICE.md` |
 | `.source/en-US.common.restext` | hand-maintained | Curated `Key=Value` file giving *stable* names to strings that would otherwise get an auto-renumbered `Common_NNN` id (fed to `--common-restext`). Any override passage referencing a Common string should use one of these curated names. Lives in `.source/` because, like the Cradle source itself, it's an extraction *input*, not output — but unlike the `.cs` file it's hand-maintained, original content |
 
-Extraction only ever writes `passages/`, `_variables.yaml`, and `en-US.restext` — everything else in
-a module directory is hand-maintained and safe from being overwritten by a re-run.
+Extraction only ever writes `passages/`, `_variables.yaml`, and `en-US.restext`, and all three are
+hand-edited now, so a re-run would overwrite real changes.
 
 ---
 
 ## Extraction
+
+Extraction is frozen. Never re-extract into a module: write the output to a scratch folder and diff
+and merge it by hand, which is also how `reconcile` uses a fresh extraction (see Translation below).
+The commands below are kept for those cases and for an extraction bug found in real play.
 
 Run from `<Masterwork>` (the code repo, a sibling of this one) after building the extractor. `$base`
 points at this module's own `.source/` copy — canonical module building happens entirely within this
@@ -150,11 +157,14 @@ popup/variable — the extractor logs a warning for every `CheckProgress` call s
 
 ### Module overrides
 
-Hand-authored passages are never accepted by the extractor at extraction time — they live in each
-module's own `passages-override/` folder instead, applied at **module load time** (see the Module
-Layout table above). Keep overrides in **current MWS format** (matching `mws-format-latest.md` in
-the code repo); when the format advances, update overrides before the next module load. See
-`docs/extractor.md` § Module Overrides (code repo) for the full mechanism.
+`passages-override/` is applied at **module load time** (see the Module Layout table above). It
+holds the hand-authored passages that have no extracted counterpart, and the replacements made
+while re-extraction was still routine. Since the freeze, a change to an extracted passage, a bug fix
+included, is made in `passages/` directly, so it shows up as a plain diff. Folding the older
+replacements back into `passages/` is part of GameGhost/Masterwork#16. Keep overrides in **current
+MWS format** (matching `mws-format-latest.md` in the code repo); when the format advances, update
+overrides before the next module load. See `docs/extractor.md` § Module Overrides (code repo) for
+the full mechanism.
 
 ---
 
@@ -166,8 +176,10 @@ parameter/example reference) is the normal way to invoke it from this repo:
 
 - **module** (default) — `ModulePackage.WriteToBytes(moduleDir)` bundles a module folder's
   `passages/`, `passages-override/`, `layouts/`, `variables/`, `assets/`, `manifest.yaml`,
-  `_variables.yaml`, and `{locale}.restext` files into a `.mwm` (excluding `.source/` and a root
-  `README.md`, neither of which belongs in a distributable bundle). `dependencies:` is left exactly
+  `_variables.yaml`, and `{locale}.restext` files into a `.mwm` (excluding `.source/`, a root
+  `README.md` and `logic-lint.allowlist.yaml`, none of which belongs in a distributable bundle). It
+  refuses to pack a module that fails the compare-by-key lint (also in **standalone** mode); the
+  failure names each site and the allowlist entry that would exempt it. `dependencies:` is left exactly
   as declared — this is what a real release ships. `ModulePackage.ReadFromBytes(bytes)` is the
   inverse, returning a `ModulePackageContents` record the app loads via `ModuleLoader.LoadFromSources`.
 - **asset** — `AssetPackPackage.WriteToBytes(sourceDir)` bundles an asset-pack directory (no

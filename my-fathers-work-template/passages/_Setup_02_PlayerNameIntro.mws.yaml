@@ -16,17 +16,17 @@ nodes:
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      expr: '"restext://Setup_Number_Two"'
+      expr: '"restext://Number_Two_Lower"'
   - match: 3
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      expr: '"restext://Setup_Number_Three"'
+      expr: '"restext://Number_Three_Lower"'
   - match: 4
     nodes:
     - type: 'assign'
       var: 'playtxt'
-      expr: '"restext://Setup_Number_Four"'
+      expr: '"restext://Number_Four_Lower"'
 # Torn-parchment note popup (screenshot: Setup-02) — auto-displays (no `label`) over the empty
 # `setup`-layout passage beneath it, matching Module-04B's "auto-show over empty passage" pattern.
 - type: 'popup'

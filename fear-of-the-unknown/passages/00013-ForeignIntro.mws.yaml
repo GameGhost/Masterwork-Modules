@@ -176,7 +176,7 @@ nodes:
     - type: 'switch'
       on: 'wsuspect'
       cases:
-      - match: 'Butcher\''s Apprentice'
+      - match: 'restext://ForeignIntro_010'
         nodes:
         # ../.source/FearoftheUnknown_Eng_v15.cs:3243
         - type: 'assign'
@@ -184,7 +184,7 @@ nodes:
           # ../en-US.restext:493 | ForeignIntro_018 | "Farmer's Apprentice"
           # ../en-US.restext:338 | Title_LaborersUnion | "Laborer's Union"
           expr: '["restext://ForeignIntro_018", "restext://Title_LaborersUnion"].shuffled("ForeignIntro_12")[0]'
-      - match: 'Blacksmith\''s Apprentice'
+      - match: 'restext://ForeignIntro_011'
         nodes:
         # ../.source/FearoftheUnknown_Eng_v15.cs:3247
         - type: 'assign'
@@ -202,7 +202,7 @@ nodes:
     - type: 'switch'
       on: 'wsuspect'
       cases:
-      - match: 'Butcher\''s Apprentice'
+      - match: 'restext://ForeignIntro_010'
         nodes:
         # ../.source/FearoftheUnknown_Eng_v15.cs:3255
         - type: 'assign'
@@ -210,7 +210,7 @@ nodes:
           # ../en-US.restext:493 | ForeignIntro_018 | "Farmer's Apprentice"
           # ../en-US.restext:338 | Title_LaborersUnion | "Laborer's Union"
           expr: '["restext://ForeignIntro_018", "restext://Title_LaborersUnion"].shuffled("ForeignIntro_15")[0]'
-      - match: 'Blacksmith\''s Apprentice'
+      - match: 'restext://ForeignIntro_011'
         nodes:
         # ../.source/FearoftheUnknown_Eng_v15.cs:3259
         - type: 'assign'

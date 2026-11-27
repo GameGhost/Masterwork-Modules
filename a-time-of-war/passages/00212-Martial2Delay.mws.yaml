@@ -19,5 +19,5 @@ nodes:
     value: 'restext://Directive_DoNotPerformEndOfRoundYet'
   # ../en-US.restext:286 | "Accept"
   okay: 'restext://UIButton_Accept'
-  target: "${warwinner == \"Unified Monarchists\" ? rumor2 == \"visited\" ? \"AMessenger2\" : \"AfternoonTea\" :\r\n            wardestroy == 1 ? \"ATOWSabotageIntro2Sep\" : \"ATOWSabotageIntro2\"}" # ./00033-AMessenger2.mws.yaml, ./00134-AfternoonTea.mws.yaml, ./00210-ATOWSabotageIntro2Sep.mws.yaml, ./00206-ATOWSabotageIntro2.mws.yaml
+  target: "${warwinner == \"restext://Title_UnifiedMonarchists\" ? rumor2 == \"visited\" ? \"AMessenger2\" : \"AfternoonTea\" :\r\n            wardestroy == 1 ? \"ATOWSabotageIntro2Sep\" : \"ATOWSabotageIntro2\"}" # ./00033-AMessenger2.mws.yaml, ./00134-AfternoonTea.mws.yaml, ./00210-ATOWSabotageIntro2Sep.mws.yaml, ./00206-ATOWSabotageIntro2.mws.yaml
   snapshot: true

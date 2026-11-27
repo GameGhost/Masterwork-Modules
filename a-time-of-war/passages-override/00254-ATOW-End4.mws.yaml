@@ -81,7 +81,7 @@ nodes:
 #   id: 'endings_discovered'
 - type: 'popup'
   layout: 'game_complete'
-  label: 'The End'
+  label: 'restext://Common_TheEnd'
   style: 'btn-forward'
   header:
   - type: 'image'
@@ -95,5 +95,5 @@ nodes:
     style: 'popup-title'
     lets:
     - 'ending_text'
-  okay: 'Close'
+  okay: 'restext://Common_Close'
   target: 'app::gameover'

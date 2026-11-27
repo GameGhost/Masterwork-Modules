@@ -25,7 +25,7 @@ nodes:
   layout: 'setup'
   # ../en-US.restext:27 | "Click here to continue..."
   label: 'restext://Click_ContinueEllipsis_B'
-  target: '${warwinner == "Unified Monarchists" ? "BarracksSimple1" : "Sabotage1Now"}' # ./00157-BarracksSimple1.mws.yaml, ./00213-Sabotage1Now.mws.yaml
+  target: '${warwinner == "restext://Title_UnifiedMonarchists" ? "BarracksSimple1" : "Sabotage1Now"}' # ./00157-BarracksSimple1.mws.yaml, ./00213-Sabotage1Now.mws.yaml
   # ../en-US.restext:287 | "Close"
   okay: 'restext://UIButton_Close'
   snapshot: true

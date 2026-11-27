@@ -39,7 +39,7 @@ nodes:
     layout: 'setup'
     # ../en-US.restext:39 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
-    target: '${seedy == "yes" ? "Gen1Creepy-ConcealExpose" : "Devastation3"}' # ./00294-Gen1Creepy-ConcealExpose.mws.yaml, ./00032-Devastation3.mws.yaml
+    target: '${seedy == "restext://Choice_Yes_Lower" ? "Gen1Creepy-ConcealExpose" : "Devastation3"}' # ./00294-Gen1Creepy-ConcealExpose.mws.yaml, ./00032-Devastation3.mws.yaml
     # ../en-US.restext:356 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
@@ -66,7 +66,7 @@ nodes:
     layout: 'setup'
     # ../en-US.restext:39 | "Click to continue..."
     label: 'restext://Click_ContinueEllipsis_C'
-    target: '${seedy == "yes" ? "Gen1Creepy-ConcealExpose" : "Devastation3"}' # ./00294-Gen1Creepy-ConcealExpose.mws.yaml, ./00032-Devastation3.mws.yaml
+    target: '${seedy == "restext://Choice_Yes_Lower" ? "Gen1Creepy-ConcealExpose" : "Devastation3"}' # ./00294-Gen1Creepy-ConcealExpose.mws.yaml, ./00032-Devastation3.mws.yaml
     # ../en-US.restext:356 | "Close"
     okay: 'restext://UIButton_Close'
     snapshot: true
