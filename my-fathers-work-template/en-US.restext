@@ -2,10 +2,11 @@
 # Format: Key=Value  (one string per line)
 #
 # Every player-facing string in my-fathers-work-template's passages, so translating the template
-# needs only a new {locale}.restext. Passages reference these as restext:// keys; none carries
-# inline display text. scripts/apply-template.ps1 copies the keys its Setup/Scoring passages use
-# into a target module's en-US.overrides.restext. Keys are namespaced (Setup_/Scoring_/Common_/
-# Countdown_/Showcase_/Demo_/Ending_/Preparations_) to avoid colliding with a module's own keys.
+# needs only a new {locale}.restext. Passages reference these as restext:// keys; the only inline
+# display text left is language-neutral (round numerals, "?"). scripts/apply-template.ps1 copies the
+# keys its Setup/Scoring passages use into a target module's en-US.overrides.restext. Keys are
+# namespaced by passage group (Setup_, Scoring_, Showcase_, Demo_, ...) to avoid colliding with a
+# module's own keys; Common_TheEnd and SpecialEvent_Title deliberately match the scenarios' keys.
 #
 # Countdown_* backs the countdown_action popup's own digit/REVEAL text (Showcase_Popup_
 # RevealCountdown.mws.yaml) — these are displayed via CSS-timed opacity, not markdown/template
@@ -80,13 +81,12 @@ Countdown_Three=3
 Countdown_Two=2
 Countdown_One=1
 Countdown_Reveal=REVEAL
+Countdown_RevealButton=Reveal
 
 Common_Accept=Accept
 Common_Cancel=Cancel
 Common_Confirm=Confirm
 Common_TheEnd=The End
-Common_BackToShowcase=← Back to Showcase
-Countdown_RevealButton=Reveal
 SpecialEvent_Title=Special Event
 
 Preparations_Title=Preparations
@@ -141,6 +141,7 @@ Showcase_EarlyYears=Early Years
 Showcase_MiddleYears=Middle Years
 Showcase_LateYears=Late Years
 Showcase_HandDevice=Carefully hand this storybook device to the reader and do not allow any other players to see the screen.
+Showcase_Back=← Back to Showcase
 
 Showcase_NarrationShort_Title=A Quiet Morning
 Showcase_NarrationShort_Body1=The fog lifted from Laurelton just after dawn, revealing rooftops still slick with the night's rain.
@@ -239,9 +240,9 @@ Demo_Well_Silent=The well is silent today.
 Demo_Well_Checkpoint=Visited the well
 
 Demo_Rumors_Title=Whispers in Town
-Demo_Rumor1=They say the mayor never sleeps.
-Demo_Rumor2=Someone heard laughter from the empty chapel.
-Demo_Rumor3=The miller swears his flour has gone missing again.
+Demo_Rumors_Rumor1=They say the mayor never sleeps.
+Demo_Rumors_Rumor2=Someone heard laughter from the empty chapel.
+Demo_Rumors_Rumor3=The miller swears his flour has gone missing again.
 
 Demo_Survey_Title=A Quick Survey
 Demo_Survey_Intro=Before we continue, a quick survey.

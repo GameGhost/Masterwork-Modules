@@ -11,7 +11,7 @@ nodes:
   expr: 'demoRoundNum - 1'
 - type: 'let'
   var: 'demoRumorList'
-  expr: '["restext://Demo_Rumor1", "restext://Demo_Rumor2", "restext://Demo_Rumor3"].shuffled("demo_rumor_order")'
+  expr: '["restext://Demo_Rumors_Rumor1", "restext://Demo_Rumors_Rumor2", "restext://Demo_Rumors_Rumor3"].shuffled("demo_rumor_order")'
 - type: 'foreach'
   var: 'rumor'
   in: 'demoRumorList'
