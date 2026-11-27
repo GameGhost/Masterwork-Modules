@@ -53,7 +53,7 @@ nodes:
       snapshot: true
       header:
       - type: 'conditional'
-        if: 'crest == "Sickle"'
+        if: 'crest == "restext://ATimeofWarIntro_014"'
         then:
         - type: 'image'
           asset: 'image://setup/S3_SickleToken'
@@ -110,7 +110,7 @@ nodes:
       snapshot: true
       header:
       - type: 'conditional'
-        if: 'crest == "Sickle"'
+        if: 'crest == "restext://ATimeofWarIntro_014"'
         then:
         - type: 'image'
           asset: 'image://setup/S3_SickleToken'

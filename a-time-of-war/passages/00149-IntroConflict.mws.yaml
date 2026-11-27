@@ -31,7 +31,7 @@ nodes:
   snapshot: true
   header:
   - type: 'conditional'
-    if: 'warwinner == "Separatists"'
+    if: 'warwinner == "restext://Title_Separatists"'
     then:
     - type: 'image'
       asset: 'image://setup/S3_FlagSeparatists'

@@ -24,7 +24,7 @@ nodes:
   snapshot: true
   header:
   - type: 'conditional'
-    if: 'society == "Fraternity of Hunters"'
+    if: 'society == "restext://Faction_FraternityOfHunters_Plain"'
     then:
     - type: 'image'
       asset: 'image://setup/S1_HunterToken'

@@ -45,7 +45,7 @@ nodes:
   snapshot: true
   header:
   - type: 'conditional'
-    if: 'figure == "Sickle"'
+    if: 'figure == "restext://ATimeofWarIntro_014"'
     then:
     - type: 'image'
       asset: 'image://setup/S3_SickleToken'
